@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/S" android:textColor="@color/gray60" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontFamily="@font/supercell_text_android_md" textKey="account_profile_wizard_choose_avatar" />
+    <Space android:layout_width="0.0dip" android:layout_height="5.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:orientation="horizontal" android:id="@id/avatar_images" android:paddingLeft="@dimen/profile_image_editor_image_padding_horizontal" android:paddingRight="@dimen/profile_image_editor_image_padding_horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0" app:forceInsetSystemWindow="true" app:insetSystemWindow="end" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" style="@style/SupercellIdTheme.ScrollView" />
+    <Space android:layout_width="0.0dip" android:layout_height="12.0dip" />
+    <TextView android:textSize="@dimen/S" android:textColor="@color/gray60" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontFamily="@font/supercell_text_android_md" textKey="account_profile_wizard_choose_background" />
+    <Space android:layout_width="0.0dip" android:layout_height="5.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/avatar_backgrounds" android:paddingLeft="@dimen/profile_image_editor_background_padding_horizontal" android:paddingRight="@dimen/profile_image_editor_background_padding_horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="9.0" app:forceInsetSystemWindow="true" app:insetSystemWindow="end" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" style="@style/SupercellIdTheme.ScrollView" />
+</LinearLayout>

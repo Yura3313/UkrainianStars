@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/kakao_game_login_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"> android:layout_alignParentTop="true" >
+        android:layout_alignParentRight="true" > <ImageView android:id="@id/kakao_game_login_close" android:layout_width="@dimen/sdk_login_exit_size" android:layout_height="@dimen/sdk_login_exit_size" android:layout_marginTop="@dimen/sdk_login_exit_side_margin_top" android:layout_marginRight="@dimen/sdk_login_exit_side_margin_right" android:src="@drawable/login_ico_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/sdk_login_big_title_text_size" android:textStyle="normal" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/kakao_game_login_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sdk_login_title_bottom_margin" />
+        <LinearLayout android:orientation="vertical" android:id="@id/kakao_game_login_idp_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sdk_login_port_button_side_margin" android:layout_marginRight="@dimen/sdk_login_port_button_side_margin" android:layout_marginBottom="@dimen/sdk_login_port_bottom_margin" />
+    </LinearLayout>
+</RelativeLayout>

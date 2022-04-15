@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.supercell.id.view.RootFrameLayout android:id="@id/root_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/dimmer" android:background="@color/blackTranslucent60" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/close_panel" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/panel" app:layout_constraintTop_toBottomOf="@id/navigation" />
+        <include android:layout_gravity="right" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/panel_landscape" />
+        <FrameLayout android:id="@id/navigation" android:layout_width="fill_parent" android:layout_height="wrap_content" app:insetSystemWindow="end|left|right|start|top" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.supercell.id.view.RootFrameLayout>

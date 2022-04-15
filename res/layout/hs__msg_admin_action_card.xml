@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hs__chatBubbleMargin" android:layout_marginTop="@dimen/hs__listPreferredItemPaddingTop" android:layout_marginStart="@dimen/hs__chatBubbleMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/action_card_cardview" android:background="?hs__chatBubbleMediaBackgroundColor" android:layout_width="200.0dip" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/hs__actionCardCornerRadius" app:cardElevation="2.0dip" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/action_card_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/action_card_imageview_container" android:layout_width="fill_parent" android:layout_height="150.0dip">
+                <ImageView android:id="@id/action_card_imageview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/hs__placeholder_image" android:scaleType="centerCrop" android:alpha="1.0" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/download_progressbar" android:visibility="gone" android:layout_width="@dimen/hs__download_icon_preview_size" android:layout_height="@dimen/hs__download_icon_preview_size" android:indeterminate="true" />
+            </FrameLayout>
+            <com.helpshift.views.HSTextView android:id="@id/action_card_title" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Helpshift.Style.ActionCardTitle" />
+            <View android:id="@id/action_card_separator" android:background="?hs__contentSeparatorColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.helpshift.views.HSButton android:id="@id/action_card_action" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Helpshift.Style.ActionCardActionTitle" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <com.helpshift.views.HSTextView android:id="@id/admin_date_text" style="@style/Helpshift.Style.AdminMessageDate" />
+</LinearLayout>

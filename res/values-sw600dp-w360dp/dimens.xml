@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="notification_button_width_max">92.0dip</dimen>
+    <dimen name="notification_button_width_min">86.0dip</dimen>
+    <dimen name="row_button_horizontal_padding">15.0dip</dimen>
+    <dimen name="row_button_max_width">120.0dip</dimen>
+    <dimen name="row_button_min_height">44.0dip</dimen>
+    <dimen name="row_button_min_width">86.0dip</dimen>
+</resources>

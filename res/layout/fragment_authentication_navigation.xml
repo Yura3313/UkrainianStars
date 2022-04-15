@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/navigation_back_button" android:background="@null" android:visibility="gone" android:layout_width="54.0dip" android:layout_height="64.0dip" android:scaleType="centerInside" android:tint="@color/white" android:scaleX="@integer/locale_mirror_flip" app:audioEffect="BUTTON_01" app:srcPathDrawable="back_arrow" />
+        <ImageView android:id="@id/navigation_logo" android:layout_width="wrap_content" android:layout_height="64.0dip" android:layout_marginLeft="21.0dip" android:layout_marginRight="0.0dip" android:scaleType="centerInside" android:layout_marginStart="21.0dip" android:layout_marginEnd="0.0dip" srcKey="supercell_logo_white.png" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <Button android:textColor="@color/white" android:id="@id/faqButton" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dip" style="@style/SupercellIdButtonBorderless" textKey="start_faq_btn" />
+        <View android:id="@id/faqButtonDivider" android:background="@color/whiteTranslucent85" android:layout_width="1.0dip" android:layout_height="22.0dip" />
+        <ImageButton android:id="@id/navigation_close_button" android:background="@null" android:layout_width="57.0dip" android:layout_height="64.0dip" android:scaleType="centerInside" android:tint="@color/white" app:audioEffect="BUTTON_01" app:srcPathDrawable="cross" />
+    </LinearLayout>
+    <View android:id="@id/navigation_divider" android:background="@color/whiteTranslucent85" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="21.0dip" android:layout_marginRight="21.0dip" />
+</LinearLayout>

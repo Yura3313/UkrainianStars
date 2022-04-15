@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@null" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/landscape_navigation_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton android:layout_gravity="start|center" android:id="@id/navigation_back_button" android:background="@drawable/white_circle" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_margin="20.0dip" android:scaleType="centerInside" android:tint="@color/black" android:scaleX="@integer/locale_mirror_flip" app:animateOnPress="SCALE" app:audioEffect="BUTTON_01" app:dropShadow="true" app:dropShadowBlur="8.0dip" app:dropShadowCornerRadius="22.0dip" app:dropShadowDY="3.0dip" app:srcPathDrawable="back_arrow" />
+</FrameLayout>

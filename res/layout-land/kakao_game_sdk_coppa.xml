@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:theme="@style/DialogTheme" android:orientation="vertical" android:background="@color/zinny_sdk_coppa_background" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sdk_coppa_title_text_size" android:textStyle="bold" android:textColor="@color/zinny_sdk_coppa_text" android:id="@id/kakao_game_coppa_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kakao_game_sdk_coppa_title" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/sdk_coppa_desc_text_size" android:textColor="@color/zinny_sdk_coppa_text" android:id="@id/kakao_game_coppa_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sdk_coppa_text_margin" android:text="@string/kakao_game_sdk_coppa_game_desc" android:layout_below="@id/kakao_game_coppa_title" android:layout_centerHorizontal="true" />
+    <DatePicker android:id="@id/kakao_game_coppa_datePicker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/kakao_game_coppa_desc" android:layout_alignParentLeft="true" android:calendarViewShown="false" />
+    <Button android:id="@id/kakao_game_coppa_button" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kakao_game_sdk_next" android:layout_toLeftOf="@id/kakao_game_coppa_datePicker" android:layout_alignBottom="@id/kakao_game_coppa_datePicker" android:layout_alignParentRight="true" />
+</RelativeLayout>

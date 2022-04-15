@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sdk_invitation_landscape_reward_height">252.0dip</dimen>
+    <dimen name="sdk_invitation_landscape_reward_width">288.0dip</dimen>
+    <dimen name="sdk_invitation_landscape_share_height">276.0dip</dimen>
+    <dimen name="sdk_invitation_landscape_share_width">480.0dip</dimen>
+    <dimen name="sdk_invitation_portrait_reward_height">252.0dip</dimen>
+    <dimen name="sdk_invitation_portrait_reward_width">288.0dip</dimen>
+    <dimen name="sdk_invitation_portrait_share_height">492.0dip</dimen>
+    <dimen name="sdk_invitation_portrait_share_width">288.0dip</dimen>
+    <dimen name="sdk_login_big_title_text_size">21.0sp</dimen>
+    <dimen name="sdk_login_button_bottom_margin">14.0dip</dimen>
+    <dimen name="sdk_login_exit_side_margin">9.0dip</dimen>
+    <dimen name="sdk_login_exit_side_margin_right">33.0dip</dimen>
+    <dimen name="sdk_login_exit_side_margin_top">66.0dip</dimen>
+    <dimen name="sdk_login_exit_size">26.0dip</dimen>
+    <dimen name="sdk_login_idp_icon_margin">16.0dip</dimen>
+    <dimen name="sdk_login_idp_icon_size">26.0dip</dimen>
+    <dimen name="sdk_login_idp_item_bottom_padding">9.0dip</dimen>
+    <dimen name="sdk_login_idp_item_right_margin">18.0dip</dimen>
+    <dimen name="sdk_login_idp_name_text_padding">14.0dip</dimen>
+    <dimen name="sdk_login_idp_name_text_size">18.0sp</dimen>
+    <dimen name="sdk_login_land_ryan_height">155.0dip</dimen>
+    <dimen name="sdk_login_land_ryan_width">180.0dip</dimen>
+    <dimen name="sdk_login_land_side_margin">24.0dip</dimen>
+    <dimen name="sdk_login_middle_title_text_size">12.0sp</dimen>
+    <dimen name="sdk_login_port_button_side_margin">66.0dip</dimen>
+    <dimen name="sdk_login_port_ryan_height">100.0dip</dimen>
+    <dimen name="sdk_login_port_ryan_width">142.0dip</dimen>
+    <dimen name="sdk_login_port_title_top_margin">66.0dip</dimen>
+    <dimen name="sdk_login_title_bottom_margin">21.0dip</dimen>
+    <dimen name="sdk_logout_button_text_size">13.0sp</dimen>
+    <dimen name="sdk_logout_dialog_width">300.0dip</dimen>
+    <dimen name="sdk_logout_idp_icon_margin_right">6.0dip</dimen>
+    <dimen name="sdk_logout_title_text_size">22.0sp</dimen>
+    <dimen name="sdk_login_button_bottom_margin_lgview">30.0dip</dimen>
+</resources>

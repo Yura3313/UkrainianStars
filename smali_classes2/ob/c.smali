@@ -1,0 +1,305 @@
+.class public Lob/c;
+.super Ljava/lang/Object;
+.source "DeflateDecompressor.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a(Lob/b;Lob/b;)V
+    .locals 9
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lob/i;
+        }
+    .end annotation
+
+    const/4 v0, 0x1
+
+    new-array v1, v0, [I
+
+    const/4 v2, 0x0
+
+    aput v2, v1, v2
+
+    .line 1
+    :goto_0
+    aget v3, v1, v2
+
+    invoke-virtual {p0, v3}, Lob/b;->c(I)Z
+
+    move-result v3
+
+    .line 2
+    aget v4, v1, v2
+
+    add-int/2addr v4, v0
+
+    aput v4, v1, v2
+
+    const/4 v4, 0x2
+
+    .line 3
+    invoke-virtual {p0, v1, v4}, Lob/b;->f([II)I
+
+    move-result v5
+
+    if-eqz v5, :cond_2
+
+    if-eq v5, v0, :cond_1
+
+    if-ne v5, v4, :cond_0
+
+    new-array v4, v4, [Lob/k;
+
+    .line 4
+    invoke-static {p0, v1, v4}, Lob/d;->c(Lob/b;[I[Lob/k;)V
+
+    .line 5
+    aget-object v5, v4, v2
+
+    aget-object v4, v4, v0
+
+    invoke-static {p0, v1, p1, v5, v4}, Lob/c;->b(Lob/b;[ILob/b;Lob/k;Lob/k;)V
+
+    goto :goto_1
+
+    :cond_0
+    new-array p0, v4, [Ljava/lang/Object;
+
+    .line 6
+    const-class p1, Lob/c;
+
+    .line 7
+    invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object p1
+
+    aput-object p1, p0, v2
+
+    aget p1, v1, v2
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    aput-object p1, p0, v0
+
+    const-string p1, "[%s] Bad compression type \'11\' at the bit index \'%d\'."
+
+    .line 8
+    invoke-static {p1, p0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 9
+    new-instance p1, Lob/i;
+
+    invoke-direct {p1, p0}, Lob/i;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 10
+    :cond_1
+    sget-object v4, Lob/h;->e:Lob/h;
+
+    .line 11
+    sget-object v5, Lob/g;->e:Lob/g;
+
+    .line 12
+    invoke-static {p0, v1, p1, v4, v5}, Lob/c;->b(Lob/b;[ILob/b;Lob/k;Lob/k;)V
+
+    goto :goto_1
+
+    .line 13
+    :cond_2
+    aget v4, v1, v2
+
+    add-int/lit8 v4, v4, 0x7
+
+    and-int/lit8 v4, v4, -0x8
+
+    .line 14
+    div-int/lit8 v4, v4, 0x8
+
+    .line 15
+    invoke-virtual {p0, v4}, Lob/b;->b(I)B
+
+    move-result v5
+
+    and-int/lit16 v5, v5, 0xff
+
+    add-int/lit8 v6, v4, 0x1
+
+    invoke-virtual {p0, v6}, Lob/b;->b(I)B
+
+    move-result v6
+
+    and-int/lit16 v6, v6, 0xff
+
+    mul-int/lit16 v6, v6, 0x100
+
+    add-int/2addr v6, v5
+
+    add-int/lit8 v4, v4, 0x4
+
+    .line 16
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 17
+    iget-object v5, p0, Lob/b;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v5}, Ljava/nio/ByteBuffer;->array()[B
+
+    move-result-object v5
+
+    .line 18
+    iget-object v7, p1, Lob/b;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v7}, Ljava/nio/ByteBuffer;->capacity()I
+
+    move-result v7
+
+    iget v8, p1, Lob/b;->b:I
+
+    add-int/2addr v8, v6
+
+    if-ge v7, v8, :cond_3
+
+    add-int/lit16 v8, v8, 0x400
+
+    .line 19
+    invoke-virtual {p1, v8}, Lob/b;->a(I)V
+
+    .line 20
+    :cond_3
+    iget-object v7, p1, Lob/b;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v7, v5, v4, v6}, Ljava/nio/ByteBuffer;->put([BII)Ljava/nio/ByteBuffer;
+
+    .line 21
+    iget v5, p1, Lob/b;->b:I
+
+    add-int/2addr v5, v6
+
+    iput v5, p1, Lob/b;->b:I
+
+    add-int/2addr v4, v6
+
+    mul-int/lit8 v4, v4, 0x8
+
+    aput v4, v1, v2
+
+    .line 22
+    :goto_1
+    iget v4, p0, Lob/b;->b:I
+
+    .line 23
+    aget v5, v1, v2
+
+    div-int/lit8 v5, v5, 0x8
+
+    if-gt v4, v5, :cond_4
+
+    const/4 v3, 0x1
+
+    :cond_4
+    xor-int/2addr v3, v0
+
+    if-eqz v3, :cond_5
+
+    goto/16 :goto_0
+
+    :cond_5
+    return-void
+.end method
+
+.method public static b(Lob/b;[ILob/b;Lob/k;Lob/k;)V
+    .locals 7
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lob/i;
+        }
+    .end annotation
+
+    .line 1
+    :goto_0
+    invoke-virtual {p3, p0, p1}, Lob/k;->a(Lob/b;[I)I
+
+    move-result v0
+
+    const/16 v1, 0x100
+
+    if-ne v0, v1, :cond_0
+
+    return-void
+
+    :cond_0
+    if-ltz v0, :cond_1
+
+    const/16 v1, 0xff
+
+    if-gt v0, v1, :cond_1
+
+    .line 2
+    invoke-virtual {p2, v0}, Lob/b;->d(I)V
+
+    goto :goto_0
+
+    .line 3
+    :cond_1
+    invoke-static {p0, p1, v0}, Lob/d;->d(Lob/b;[II)I
+
+    move-result v0
+
+    .line 4
+    invoke-static {p0, p1, p4}, Lob/d;->b(Lob/b;[ILob/k;)I
+
+    move-result v1
+
+    .line 5
+    iget v2, p2, Lob/b;->b:I
+
+    .line 6
+    new-array v3, v0, [B
+
+    sub-int v1, v2, v1
+
+    const/4 v4, 0x0
+
+    move v5, v1
+
+    :goto_1
+    if-ge v4, v0, :cond_3
+
+    if-gt v2, v5, :cond_2
+
+    move v5, v1
+
+    .line 7
+    :cond_2
+    invoke-virtual {p2, v5}, Lob/b;->b(I)B
+
+    move-result v6
+
+    aput-byte v6, v3, v4
+
+    add-int/lit8 v4, v4, 0x1
+
+    add-int/lit8 v5, v5, 0x1
+
+    goto :goto_1
+
+    .line 8
+    :cond_3
+    invoke-virtual {p2, v3}, Lob/b;->e([B)V
+
+    goto :goto_0
+.end method

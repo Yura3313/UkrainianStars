@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="abc_config_activityDefaultDur">220</integer>
+    <integer name="abc_config_activityShortDur">150</integer>
+    <integer name="app_bar_elevation_anim_duration">150</integer>
+    <integer name="bottom_sheet_slide_duration">150</integer>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="config_tooltipAnimTime">150</integer>
+    <integer name="design_snackbar_text_max_lines">2</integer>
+    <integer name="design_tab_indicator_anim_duration_ms">300</integer>
+    <integer name="fb_exclamation_mark_angle">135</integer>
+    <integer name="google_play_services_version">12451000</integer>
+    <integer name="hide_password_duration">320</integer>
+    <integer name="hs__chat_max_lines">4</integer>
+    <integer name="hs__conversation_detail_lines">1</integer>
+    <integer name="hs__faqs_list_item_max_lines">3</integer>
+    <integer name="hs__issue_description_max_lines">12</integer>
+    <integer name="hs__issue_description_min_chars">1</integer>
+    <integer name="hs__max_userreply_length">100000</integer>
+    <item type="integer" name="hs_animation_duration">@android:integer/config_shortAnimTime</item>
+    <item type="integer" name="id_icon_scale">1.0</item>
+    <integer name="locale_mirror_flip">1</integer>
+    <integer name="locale_mirror_flip_negative">-1</integer>
+    <integer name="mtrl_badge_max_character_count">4</integer>
+    <integer name="mtrl_btn_anim_delay_ms">100</integer>
+    <integer name="mtrl_btn_anim_duration_ms">100</integer>
+    <integer name="mtrl_calendar_header_orientation">1</integer>
+    <integer name="mtrl_calendar_selection_text_lines">1</integer>
+    <integer name="mtrl_calendar_year_selector_span">3</integer>
+    <integer name="mtrl_card_anim_delay_ms">75</integer>
+    <integer name="mtrl_card_anim_duration_ms">120</integer>
+    <integer name="mtrl_chip_anim_duration">100</integer>
+    <integer name="mtrl_tab_indicator_anim_duration_ms">250</integer>
+    <integer name="online_indicator_angle">135</integer>
+    <integer name="primary_button_shadowDy">1</integer>
+    <item type="integer" name="public_profile_status_button_vertical_bias">0.75</item>
+    <integer name="show_password_duration">200</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+    <item type="integer" name="tab_icon_scale">0.63</item>
+    <integer name="unseen_ingame_friend_indicator_angle">45</integer>
+</resources>

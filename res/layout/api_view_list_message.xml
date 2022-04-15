@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/api_view_list_message_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/api_view_list_message_button" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/api_view_list_message_button_next" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="Next" android:layout_weight="1.0" />
+        <Button android:id="@id/api_view_list_message_button_close" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="Close" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ListView android:id="@id/api_view_list_message_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/api_view_list_message_button" android:layout_below="@id/api_view_list_message_title" />
+</RelativeLayout>

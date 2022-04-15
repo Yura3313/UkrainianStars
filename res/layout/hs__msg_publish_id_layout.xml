@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="?android:windowBackground" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.helpshift.views.HSTextView android:textSize="@dimen/hs__textSizeExtraSmall" android:textColor="?android:textColorSecondary" android:layout_gravity="center_horizontal" android:id="@id/issue_publish_id_label" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

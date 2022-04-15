@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tab_icon" android:clipChildren="false" android:layout_width="63.0dip" android:layout_height="36.0dip" android:scaleX="@integer/tab_icon_scale" android:scaleY="@integer/tab_icon_scale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.supercell.id.view.EdgeAntialiasingImageView android:id="@id/tab_icon_right" android:layout_width="35.0dip" android:layout_height="33.0dip" android:layout_marginTop="0.25dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.75dip" android:layout_alignParentRight="true" android:rotation="15.0" />
+    <com.supercell.id.view.EdgeAntialiasingImageView android:id="@id/tab_icon_left" android:layout_width="35.0dip" android:layout_height="33.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="0.25dip" android:layout_marginBottom="2.75dip" android:layout_alignParentLeft="true" android:rotation="-15.0" />
+</RelativeLayout>

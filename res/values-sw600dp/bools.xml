@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="isSmallScreen">true</bool>
+    <bool name="isSortOfATablet">true</bool>
+    <bool name="is_screen_large">true</bool>
+</resources>

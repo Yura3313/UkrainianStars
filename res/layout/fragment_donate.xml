@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray95" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@color/gray95" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar_tabs">
+        <com.supercell.id.view.ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" />
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/friendsList" android:paddingBottom="@dimen/list_padding_vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:insetSystemWindow="right|bottom" app:insetSystemWindowUsingParent="@id/body" style="@style/SupercellIdTheme.ScrollView" />
+    </FrameLayout>
+    <com.supercell.id.view.SubPageTabLayout android:id="@id/toolbar_tabs" style="@style/SupercellIdSubPageTabBar" />
+    <View android:id="@id/toolbar_shadow" android:background="@drawable/toolbar_shadow" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_below="@id/toolbar_tabs" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/container" android:background="@drawable/error_background" android:paddingLeft="@dimen/list_padding_vertical" android:paddingTop="@dimen/list_padding_vertical" android:paddingRight="@dimen/list_padding_vertical" android:paddingBottom="@dimen/list_padding_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/list_padding_vertical" android:minWidth="350.0dip">
+        <TextView android:textSize="@dimen/XL" android:textColor="@color/black" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/custom_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/S" android:textColor="@color/gray40" android:gravity="center" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="275.0dip" android:minWidth="275.0dip" />
+        <com.supercell.id.view.WidthAdjustingMultilineButton android:layout_gravity="center_horizontal" android:id="@id/button" android:layout_width="wrap_content" android:layout_marginTop="@dimen/list_padding_vertical" android:minWidth="160.0dip" style="@style/SupercellIdButtonSecondary" />
+    </LinearLayout>
+</FrameLayout>

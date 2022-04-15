@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff272727" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/zinny_sdk_promotion_start_popup_bottom" android:layout_width="wrap_content" android:layout_height="@dimen/sdk_starting_promotion_bottom_bar_height" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/zinny_sdk_promotion_start_popup_close" android:layout_width="@dimen/sdk_starting_promotion_bottom_bar_height" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/sdk_starting_promotion_close_size" android:layout_height="@dimen/sdk_starting_promotion_close_size" android:src="@drawable/popup_promotion_btn_close" />
+        </FrameLayout>
+        <LinearLayout android:id="@id/zinny_sdk_promotion_start_popup_check" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/zinny_sdk_promotion_start_popup_check_image" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="@dimen/sdk_starting_promotion_check_margin_left" android:layout_marginRight="@dimen/sdk_starting_promotion_check_margin_right" android:src="@drawable/popup_promotion_btn_check" />
+            <TextView android:textSize="@dimen/sdk_starting_promotion_donotshow_desc_text_size" android:textColor="#ff787878" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zinny_sdk_promotion_starting_popup_check" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/zinny_sdk_promotion_start_popup_bottom">
+        <ImageView android:id="@id/zinny_sdk_promotion_start_popup_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/zinny_sdk_promotion_start_popup_progress" android:layout_width="@dimen/sdk_starting_promotion_progress" android:layout_height="@dimen/sdk_starting_promotion_progress" android:src="@drawable/loading" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

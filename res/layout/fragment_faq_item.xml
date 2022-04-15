@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/rowSeparator" android:background="@color/gray95" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/titleRow" android:layout_width="fill_parent" android:layout_height="wrap_content" app:animateOnPress="ALPHA" app:audioEffect="BUTTON_01">
+        <TextView android:textSize="@dimen/M" android:textColor="@color/text_blue" android:gravity="start" android:id="@id/titleTextView" android:paddingTop="24.0dip" android:paddingBottom="24.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAlignment="viewStart" />
+        <Space android:layout_width="24.0dip" android:layout_height="0.0dip" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/titleArrow" android:layout_width="15.0dip" android:layout_height="15.0dip" android:rotation="90.0" app:srcPathDrawable="arrow" />
+    </LinearLayout>
+    <com.supercell.id.view.ExpandableFrameLayout android:id="@id/descriptionContainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/M" android:textColor="@color/gray40" android:textColorLink="@color/gray40" android:gravity="start" android:id="@id/descriptionTextView" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+    </com.supercell.id.view.ExpandableFrameLayout>
+</LinearLayout>

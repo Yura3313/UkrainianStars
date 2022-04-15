@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zinny_sdk_popup_bg" android:layout_width="294.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffbcbcbc" android:gravity="center" android:layout_gravity="center" android:layout_width="274.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="10.0dip" android:text="@string/zinny_sdk_promotion_ending_popup_title" />
+    <RelativeLayout android:id="@id/zinny_sdk_promotion_ending_popup_content" android:layout_width="fill_parent" android:layout_height="103.32999dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="14.0dip">
+        <ImageView android:id="@id/zinny_sdk_promotion_ending_popup_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/zinny_sdk_promotion_ending_popup_progress" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/loading" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/zinny_sdk_popup_bottom_bg" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginTop="14.0dip">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/zinny_sdk_promotion_ending_popup_ok" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zinny_sdk_common_button_ok" android:layout_weight="1.0" />
+        <View android:background="#ff272727" android:layout_width="4.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/zinny_sdk_promotion_ending_popup_cancel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zinny_sdk_common_button_cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

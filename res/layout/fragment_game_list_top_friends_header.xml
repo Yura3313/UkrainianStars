@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingBottom="@dimen/list_padding_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:insetSystemWindow="end|right" app:insetSystemWindowUsingParent="@id/body"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_padding_horizontal" android:layout_marginRight="@dimen/list_padding_horizontal">
+        <View android:background="@color/gray80" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/S" android:textColor="@color/gray60" android:id="@id/top_friends_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="11.0dip" android:layout_marginBottom="3.0dip" android:textAllCaps="true" textKey="account_game_top_friends" />
+        <View android:background="@color/gray80" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

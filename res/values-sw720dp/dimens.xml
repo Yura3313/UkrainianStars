@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hs__fragmentContainerPaddingBottom">0.0dip</dimen>
+    <dimen name="hs__fragmentContainerPaddingLeft">0.0dip</dimen>
+    <dimen name="hs__fragmentContainerPaddingRight">0.0dip</dimen>
+    <dimen name="hs__fragmentContainerPaddingTop">0.0dip</dimen>
+    <item type="dimen" name="hs__screen_to_conversation_view_ratio">0.75</item>
+</resources>

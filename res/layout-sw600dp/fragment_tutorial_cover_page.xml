@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:forceInsetSystemWindow="true" app:insetSystemWindow="bottom|top"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:padding="@dimen/tutorial_image_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="65.0dip" android:scaleType="centerInside" android:layout_weight="1.0" srcKey="tutorial_1.png" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent" android:layout_height="35.0dip" android:scaleType="centerInside" srcKey="supercell_id_logo_black.png" />
+        <TextView android:textSize="@dimen/S" android:textColor="@color/gray40" android:gravity="center" android:id="@id/cover_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="36.0dip" android:lineSpacingMultiplier="1.2" textKey="tutorial_title_cover" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tutorial_button_margin_vertical" android:layout_marginBottom="@dimen/tutorial_button_margin_vertical" style="@style/SupercellIdButtonBorderless" textKey="tutorial_action_btn_cover" />
+        <Space android:layout_width="fill_parent" android:layout_height="26.0dip" />
+    </LinearLayout>
+</LinearLayout>

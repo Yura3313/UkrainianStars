@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.supercell.id.view.RootFrameLayout android:id="@id/root_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/dimmer" android:background="@color/blackTranslucent60" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_gravity="right" android:layout_width="@dimen/tablet_panel_width" android:layout_height="fill_parent" layout="@layout/panel" />
+</com.supercell.id.view.RootFrameLayout>

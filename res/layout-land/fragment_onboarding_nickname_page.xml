@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:insetSystemWindow="end" app:insetSystemWindowUsingParent="@id/body"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/nickname_title_view" android:layout_marginTop="0.0dip" android:layout_marginBottom="32.0dip" android:maxWidth="320.0dip" style="@style/SupercellIdOnboardingTitle" textKey="onboarding_nickname_title" />
+    <TextView android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:maxWidth="320.0dip" style="@style/SupercellIdOnboardingText" textKey="onboarding_nickname_subtitle" />
+    <FrameLayout android:background="@color/gray95" android:layout_width="320.0dip" android:layout_height="@dimen/input_height" android:layout_marginTop="24.0dip" app:innerShadow="true">
+        <EditText android:textSize="@dimen/L" android:textColor="@color/black" android:gravity="center" android:id="@id/nickname_edit_text" android:layout_width="fill_parent" android:inputType="text" android:imeOptions="flagNoExtractUi" android:textAlignment="center" app:fontFamily="@font/supercell_text_android_md" hintKey="account_settings_edit_nickname_placeholder" style="@style/SupercellIdTextField.Landscape" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/XS" android:textColor="@color/gray60" android:textColorLink="@color/gray40" android:id="@id/fair_play_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_padding_horizontal" app:fontFamily="@font/supercell_text_android_md" app:layout_constraintVertical_chainStyle="packed" />
+    <com.supercell.id.view.WidthAdjustingMultilineButton android:id="@id/nickname_continue_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:minWidth="165.0dip" style="@style/SupercellIdButtonPrimary" textKey="onboarding_continue" />
+</LinearLayout>

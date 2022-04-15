@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/tab_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/profile_container">
+        <androidx.viewpager.widget.FlowPager android:id="@id/tab_pager" android:background="@color/gray95" android:layout_width="fill_parent" android:layout_height="fill_parent" app:transitionDuration="200" style="@style/SupercellIdTheme.ViewPager" />
+    </FrameLayout>
+    <View android:id="@id/profile_container_shadow" android:background="@drawable/toolbar_shadow" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_below="@id/profile_container" />
+    <View android:id="@id/profile_container_background" android:background="@drawable/sub_page_tab_bar_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignBottom="@id/profile_container" />
+    <include android:id="@id/profile_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/profile_margin_top" layout="@layout/public_profile_top" />
+    <FrameLayout android:id="@id/public_profile_progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:insetSystemWindow="end|top" app:insetSystemWindowUsingParent="@id/body">
+        <com.supercell.id.view.ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

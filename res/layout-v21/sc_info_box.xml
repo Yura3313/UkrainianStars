@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/InfoBox" android:background="@drawable/info_box_bg" android:padding="12.0dip" android:clipToPadding="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:backgroundTint="#ff000000"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ffffffff" android:id="@id/infoBoxText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hello, I am a TextView" />
+    <Button android:id="@id/infoBoxButton" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

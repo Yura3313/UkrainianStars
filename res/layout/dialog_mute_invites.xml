@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_layout" android:background="@color/blackTranslucent60" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:id="@id/dialogContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:maxWidth="340.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/toolbar" android:background="@drawable/ingame_dialog_toolbar_background" android:layout_width="0.0dip" android:layout_height="84.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/content" app:layout_constraintTop_toTopOf="parent">
+            <Space android:layout_width="17.0dip" android:layout_height="0.0dip" />
+            <ImageView android:layout_gravity="center" android:id="@id/logoImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <Space android:layout_width="10.0dip" android:layout_height="0.0dip" />
+            <TextView android:textSize="@dimen/S" android:textColor="@color/black" android:gravity="start|center" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:lines="1" android:singleLine="true" android:layout_weight="1.0" android:textAllCaps="true" android:textAlignment="viewStart" style="@style/SupercellEllipsizeTextView" />
+            <ImageButton android:layout_gravity="end" android:id="@id/closeButton" android:background="@null" android:layout_width="57.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" android:tint="@color/black" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/content" android:background="@drawable/ingame_dialog_content_background" android:clipChildren="false" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+            <LinearLayout android:orientation="vertical" android:id="@id/rowsContainer" android:background="@drawable/list_container" android:paddingBottom="@dimen/floating_element_thickness" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip">
+                <include layout="@layout/dialog_mute_invites_row" />
+                <View android:background="@color/gray91" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <include layout="@layout/dialog_mute_invites_row" />
+                <View android:background="@color/gray91" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <include layout="@layout/dialog_mute_invites_row" />
+            </LinearLayout>
+            <View android:background="@drawable/drop_shadow" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

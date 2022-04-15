@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/ypLoginIntroView" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:insetSystemWindow="right|bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/illustrationImageView" srcKey="login_intro_illustration.png" style="@style/SupercellIdFlowPageIllustration" />
+        <TextView android:id="@id/titleTextView" style="@style/SupercellIdFlowPageTitle" textKey="young_player_log_in_intro_heading" />
+        <TextView android:id="@id/subtitleTextView" style="@style/SupercellIdFlowPageSubtitle" textKey="young_player_log_in_intro_description" />
+        <LinearLayout style="@style/SupercellIdFlowPageButtonContainer">
+            <com.supercell.id.view.WidthAdjustingMultilineButton android:id="@id/cancelButton" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/SupercellIdButtonCancel" textKey="young_player_log_in_intro_btn_cancel" />
+            <Space android:layout_width="12.0dip" android:layout_height="0.0dip" />
+            <com.supercell.id.view.WidthAdjustingMultilineButton android:id="@id/okButton" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/SupercellIdButtonPrimary" textKey="young_player_log_in_intro_btn_ok" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

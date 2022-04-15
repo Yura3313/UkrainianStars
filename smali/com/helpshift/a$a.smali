@@ -1,0 +1,14 @@
+.class public interface abstract Lcom/helpshift/a$a;
+.super Ljava/lang/Object;
+.source "Core.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/helpshift/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "a"
+.end annotation

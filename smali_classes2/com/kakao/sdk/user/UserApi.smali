@@ -1,0 +1,191 @@
+.class public interface abstract Lcom/kakao/sdk/user/UserApi;
+.super Ljava/lang/Object;
+.source "UserApi.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/kakao/sdk/user/UserApi$DefaultImpls;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract accessTokenInfo()Lxe/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lxe/b<",
+            "Lcom/kakao/sdk/user/model/AccessTokenInfo;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Lze/f;
+        value = "/v1/user/access_token_info"
+    .end annotation
+.end method
+
+.method public abstract logout()Lxe/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lxe/b<",
+            "Lbe/n;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Lze/o;
+        value = "/v1/user/logout"
+    .end annotation
+.end method
+
+.method public abstract me(ZLjava/lang/String;)Lxe/b;
+    .param p1    # Z
+        .annotation runtime Lze/t;
+            value = "secure_resource"
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation runtime Lze/t;
+            value = "propertyKeys"
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z",
+            "Ljava/lang/String;",
+            ")",
+            "Lxe/b<",
+            "Lcom/kakao/sdk/user/model/User;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Lze/f;
+        value = "/v2/user/me"
+    .end annotation
+.end method
+
+.method public abstract serviceTerms()Lxe/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lxe/b<",
+            "Lcom/kakao/sdk/user/model/UserServiceTerms;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Lze/f;
+        value = "/v1/user/service/terms"
+    .end annotation
+.end method
+
+.method public abstract shippingAddresses(Ljava/lang/Long;Ljava/util/Date;Ljava/lang/Integer;)Lxe/b;
+    .param p1    # Ljava/lang/Long;
+        .annotation runtime Lze/t;
+            value = "address_id"
+        .end annotation
+    .end param
+    .param p2    # Ljava/util/Date;
+        .annotation runtime Lcom/kakao/sdk/common/json/IntDate;
+        .end annotation
+
+        .annotation runtime Lze/t;
+            value = "from_updated_at"
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/Integer;
+        .annotation runtime Lze/t;
+            value = "page_size"
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Long;",
+            "Ljava/util/Date;",
+            "Ljava/lang/Integer;",
+            ")",
+            "Lxe/b<",
+            "Lcom/kakao/sdk/user/model/UserShippingAddresses;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Lze/f;
+        value = "/v1/user/shipping_address"
+    .end annotation
+.end method
+
+.method public abstract signup(Ljava/util/Map;)Lxe/b;
+    .param p1    # Ljava/util/Map;
+        .annotation runtime Lze/c;
+            value = "properties"
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)",
+            "Lxe/b<",
+            "Lbe/n;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Lze/e;
+    .end annotation
+
+    .annotation runtime Lze/o;
+        value = "/v1/user/signup"
+    .end annotation
+.end method
+
+.method public abstract unlink()Lxe/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lxe/b<",
+            "Lbe/n;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Lze/o;
+        value = "/v1/user/unlink"
+    .end annotation
+.end method
+
+.method public abstract updateProfile(Ljava/util/Map;)Lxe/b;
+    .param p1    # Ljava/util/Map;
+        .annotation runtime Lze/c;
+            value = "properties"
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)",
+            "Lxe/b<",
+            "Lbe/n;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Lze/e;
+    .end annotation
+
+    .annotation runtime Lze/o;
+        value = "/v1/user/update_profile"
+    .end annotation
+.end method

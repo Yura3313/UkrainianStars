@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="arrow_margin">29.0dip</dimen>
+    <dimen name="fab_padding">24.0dip</dimen>
+    <dimen name="flat_tab_icon_size">32.0dip</dimen>
+    <dimen name="flow_page_illustration_margin_start">30.0dip</dimen>
+    <dimen name="flow_page_illustration_width">180.0dip</dimen>
+    <dimen name="friend_list_bottom_padding">112.0dip</dimen>
+    <dimen name="list_padding_horizontal">17.0dip</dimen>
+    <dimen name="list_padding_vertical">17.0dip</dimen>
+    <dimen name="logo_subtitle_width">240.0dip</dimen>
+    <dimen name="onboarding_content_margin_horizontal">40.0dip</dimen>
+    <dimen name="onboarding_image_size">146.0dip</dimen>
+    <dimen name="search_input_height">45.0dip</dimen>
+    <dimen name="search_input_margin_vertical">18.0dip</dimen>
+    <dimen name="title_spacing">10.0dip</dimen>
+</resources>

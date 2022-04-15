@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:exitFadeDuration="200"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:drawable="@drawable/online_status_indicator_enabled" />
+    <item android:drawable="@drawable/online_status_indicator_disabled" />
+</selector>

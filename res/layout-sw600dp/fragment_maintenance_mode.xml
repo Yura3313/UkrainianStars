@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/maintenance_mode" android:layout_width="fill_parent" android:layout_height="fill_parent" app:insetSystemWindow="bottom|top"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/maintenance_mode_image_margin_top" android:scaleType="centerInside" android:layout_weight="1.0" srcKey="wallbreaker.png" />
+    <TextView android:textSize="@dimen/XL" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/maintenance_mode_title_margin_top" android:lineSpacingMultiplier="1.2" textKey="maintenance_mode_heading" />
+    <TextView android:textSize="@dimen/M" android:textColor="@color/gray40" android:gravity="center_horizontal" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="36.0dip" android:lineSpacingMultiplier="1.2" textKey="maintenance_mode_description" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/button" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="@dimen/maintenance_mode_button_margin_bottom" style="@style/SupercellIdButtonPrimary" textKey="maintenance_mode_btn" />
+</LinearLayout>

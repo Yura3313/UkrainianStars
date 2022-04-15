@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/dialog_container" android:background="@drawable/error_background" android:padding="30.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+        <TextView android:textSize="@dimen/L" android:textColor="@color/black" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:maxWidth="275.0dip" android:minWidth="275.0dip" textKey="account_settings_edit_nickname_title" />
+        <TextView android:textSize="@dimen/XS" android:textColor="@color/gray40" android:gravity="center" android:id="@id/ingress_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:maxWidth="275.0dip" android:minWidth="275.0dip" textKey="account_settings_edit_nickname_ingress" />
+        <FrameLayout android:background="@color/gray95" android:layout_width="fill_parent" android:layout_height="@dimen/input_height" app:innerShadow="true">
+            <EditText android:textSize="@dimen/L" android:textColor="@color/black" android:gravity="center" android:id="@id/nickname_edit_text" android:layout_width="fill_parent" android:maxWidth="275.0dip" android:inputType="text" android:imeOptions="flagNoExtractUi" android:textAlignment="center" app:fontFamily="@font/supercell_text_android_md" hintKey="account_settings_edit_nickname_placeholder" style="@style/SupercellIdTextField.Landscape" />
+        </FrameLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+            <com.supercell.id.view.WidthAdjustingMultilineButton android:id="@id/cancel_button" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/SupercellIdButtonCancel" textKey="account_settings_edit_nickname_cancel" />
+            <Space android:layout_width="20.0dip" android:layout_height="0.0dip" />
+            <com.supercell.id.view.WidthAdjustingMultilineButton android:id="@id/continue_button" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/SupercellIdButtonPrimary" textKey="account_settings_edit_nickname_continue" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

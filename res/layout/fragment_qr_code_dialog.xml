@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/dialogContainer" android:background="@drawable/info_dialog_background" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" app:dropShadow="true">
+        <FrameLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/info_dialog_content" android:background="@drawable/info_dialog_background2" android:padding="20.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.supercell.id.view.WidthAdjustingMultilineTextView android:ellipsize="end" android:gravity="start|center" android:layout_gravity="start" android:id="@id/qr_code_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:drawablePadding="@dimen/title_spacing" android:textAlignment="viewStart" style="@style/SupercellIdListContainerTitle" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/qr_code_view" android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_marginTop="45.0dip" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

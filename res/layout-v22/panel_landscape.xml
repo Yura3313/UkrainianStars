@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/panel" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toEndOf="@id/head" />
+        <FrameLayout android:id="@id/body" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toEndOf="@id/head">
+            <View android:id="@id/body_dimmer" android:background="@color/blackTranslucent60" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <View android:id="@id/head_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignStart="@id/head" android:layout_alignEnd="@id/head" />
+        <FrameLayout android:id="@id/head" android:clipChildren="false" android:clipToPadding="false" android:layout_width="100.0dip" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/S" android:textColor="#ffff0000" android:gravity="start" android:layout_gravity="start" android:id="@id/envTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="staging" android:textAlignment="viewStart" android:layout_marginHorizontal="4.0dip" app:insetSystemWindow="start|top" />
+</FrameLayout>

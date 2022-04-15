@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/my_friends" android:background="@color/gray95" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:insetSystemWindow="end|bottom|top" app:insetSystemWindowUsingParent="@id/body">
+        <com.supercell.id.view.ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/friendsList" android:paddingBottom="@dimen/friend_list_bottom_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:insetSystemWindow="end|bottom|top" app:insetSystemWindowUsingParent="@id/body" style="@style/SupercellIdTheme.ScrollView" />
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mtrl_calendar_bottom_padding">4.0dip</dimen>
+    <dimen name="mtrl_calendar_day_corner">18.0dip</dimen>
+    <dimen name="mtrl_calendar_day_height">40.0dip</dimen>
+    <dimen name="mtrl_calendar_day_horizontal_padding">2.0dip</dimen>
+    <dimen name="mtrl_calendar_day_vertical_padding">2.0dip</dimen>
+    <dimen name="mtrl_calendar_day_width">40.0dip</dimen>
+    <dimen name="mtrl_calendar_days_of_week_height">40.0dip</dimen>
+    <dimen name="mtrl_calendar_month_horizontal_padding">4.0dip</dimen>
+    <dimen name="notification_button_width_max">92.0dip</dimen>
+    <dimen name="notification_button_width_min">86.0dip</dimen>
+    <dimen name="row_button_horizontal_padding">15.0dip</dimen>
+    <dimen name="row_button_max_width">120.0dip</dimen>
+    <dimen name="row_button_min_height">44.0dip</dimen>
+    <dimen name="row_button_min_width">86.0dip</dimen>
+</resources>

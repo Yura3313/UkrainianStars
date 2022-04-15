@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/addAllFriendsView" android:background="@drawable/list_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_padding_horizontal" android:layout_marginRight="@dimen/list_padding_horizontal" android:layout_marginBottom="@dimen/list_padding_vertical" android:minHeight="@dimen/list_item_row_height" app:dropShadow="true">
+        <Space android:layout_width="@dimen/list_padding_horizontal" android:layout_height="0.0dip" />
+        <TextView android:textSize="@dimen/L" android:textColor="@color/black" android:gravity="start" android:id="@id/friendsToAddView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAlignment="viewStart" textKey="account_ingame_friend_add_all_title" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/row_button_horizontal_padding" android:layout_marginRight="@dimen/list_padding_horizontal" android:layout_marginStart="@dimen/row_button_horizontal_padding" android:layout_marginEnd="@dimen/list_padding_horizontal">
+            <ImageView android:layout_gravity="end|center" android:id="@id/allSentIconView" android:visibility="invisible" android:layout_width="@dimen/input_valid_size" android:layout_height="@dimen/input_valid_size" android:scaleType="centerInside" app:srcPathDrawable="checkmarkcircle" />
+            <com.supercell.id.view.WidthAdjustingMultilineButton android:layout_gravity="end|center" android:id="@id/addAllFriendsButton" style="@style/SupercellIdButtonPrimary.Row" textKey="account_ingame_friend_btn_add_all" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

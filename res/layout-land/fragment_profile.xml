@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/profile_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.viewpager.widget.FlowPager android:id="@id/tab_pager" android:background="@color/gray95" android:layout_width="fill_parent" android:layout_height="fill_parent" app:transitionDuration="200" style="@style/SupercellIdTheme.ViewPager" />
+        <FrameLayout android:layout_gravity="end|bottom|center" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:insetSystemWindow="end|bottom" app:insetSystemWindowUsingParent="@id/body">
+            <include android:layout_gravity="end" android:id="@id/addFriendsButton" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_margin="@dimen/fab_padding" layout="@layout/button_add_friends" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/profile_progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:insetSystemWindow="end|top" app:insetSystemWindowUsingParent="@id/body">
+        <com.supercell.id.view.ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

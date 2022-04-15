@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?hs__composeBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.helpshift.views.HSTextView android:textSize="@dimen/hs__textSizeSmall" android:textColor="?android:textColorSecondary" android:gravity="center" android:id="@id/txtAttachmentLabel" android:layout_width="wrap_content" android:layout_height="@dimen/hs__dimen_24" android:layout_margin="@dimen/activity_horizontal_margin_medium" android:text="@string/hs__attach_file" />
+    <ListView android:id="@id/picker_list" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0.0dip" />
+</LinearLayout>

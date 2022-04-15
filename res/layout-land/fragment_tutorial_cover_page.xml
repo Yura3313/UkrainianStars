@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:forceInsetSystemWindow="true" app:insetSystemWindow="end|bottom|top"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/navigation_logo" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginBottom="12.0dip" android:scaleType="centerInside" srcKey="supercell_id_logo_black.png" />
+    <TextView android:textSize="@dimen/S" android:textColor="@color/gray40" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/cover_title" android:layout_width="@dimen/tutorial_text_width" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:lineSpacingMultiplier="1.2" textKey="tutorial_title_cover" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tutorial_button_margin_vertical" android:layout_marginBottom="@dimen/tutorial_button_margin_bottom" style="@style/SupercellIdButtonBorderless" textKey="tutorial_action_btn_cover" />
+    <Space android:layout_width="fill_parent" android:layout_height="26.0dip" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton android:layout_gravity="start" android:id="@id/navigation_close_button" android:background="@null" android:layout_width="57.0dip" android:layout_height="@dimen/landscape_navigation_height" android:scaleType="centerInside" app:audioEffect="BUTTON_01" app:srcPathDrawable="cross" />
+</FrameLayout>

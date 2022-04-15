@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.helpshift.views.HSTextView android:id="@id/hs__smart_intent_text_View" android:paddingLeft="@dimen/activity_horizontal_margin_medium" android:paddingTop="16.0dip" android:paddingRight="@dimen/activity_horizontal_margin_medium" android:paddingBottom="16.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/activity_horizontal_margin_medium" android:paddingEnd="@dimen/activity_horizontal_margin_medium" style="@style/Helpshift.Style.SmartIntentText" />
+</LinearLayout>

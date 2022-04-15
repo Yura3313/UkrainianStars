@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/hs__listPreferredItemPaddingTop" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="start" android:id="@id/agent_screenshot_request_message_layout" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hs__chatBubbleMargin" android:layout_weight="4.0" android:layout_marginStart="@dimen/hs__chatBubbleMargin">
+        <com.helpshift.views.CircleImageView android:id="@id/avatar_image_view" android:layout_below="@id/admin_date_text" style="@style/Helpshift.Style.AvatarImageView" />
+        <LinearLayout android:id="@id/admin_message" android:layout_toRightOf="@id/avatar_image_view" android:layout_below="@id/admin_date_text" style="@style/Helpshift.Style.AdminTextMessageContainer">
+            <com.helpshift.views.HSTextView android:id="@id/admin_attachment_request_text" style="@style/Helpshift.Style.AdminTextMessage" />
+            <com.helpshift.views.HSButton android:id="@id/admin_attach_screenshot_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="-8.0dip" android:text="@string/hs__attach_screenshot_btn" android:layout_marginStart="4.0dip" style="@style/Helpshift.Style.BorderlessButton" />
+        </LinearLayout>
+        <com.helpshift.views.HSTextView android:id="@id/admin_date_text" android:layout_toRightOf="@id/avatar_image_view" android:layout_alignParentTop="true" style="@style/Helpshift.Style.AdminMessageDate" />
+    </RelativeLayout>
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" />
+</LinearLayout>

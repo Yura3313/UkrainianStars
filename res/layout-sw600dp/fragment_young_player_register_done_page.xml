@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:insetSystemWindow="right|bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/illustrationImageView" srcKey="register_done_illustration.png" style="@style/SupercellIdFlowPageIllustration" />
+        <TextView android:id="@id/titleTextView" style="@style/SupercellIdFlowPageTitle" textKey="young_player_register_done_heading" />
+        <TextView android:id="@id/subtitleTextView" style="@style/SupercellIdFlowPageSubtitle" textKey="young_player_register_done_description" />
+        <FrameLayout style="@style/SupercellIdFlowPageButtonContainer">
+            <Button android:layout_gravity="center_horizontal" android:id="@id/okButton" android:layout_width="wrap_content" android:minWidth="160.0dip" style="@style/SupercellIdButtonPrimary" textKey="young_player_register_done_btn_ok" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

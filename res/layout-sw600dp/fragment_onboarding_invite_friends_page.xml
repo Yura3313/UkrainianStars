@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:insetSystemWindow="bottom" app:insetSystemWindowUsingParent="@id/body"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.supercell.id.view.ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" />
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/friends_list" android:paddingBottom="@dimen/list_padding_vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/SupercellIdTheme.ScrollView" />
+        <LinearLayout android:orientation="vertical" android:id="@id/sticky_header_container" android:visibility="invisible" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_gravity="center_horizontal" android:id="@id/friends_title_view" android:layout_marginTop="@dimen/onboarding_title_margin" android:layout_marginBottom="@dimen/list_padding_horizontal" style="@style/SupercellIdOnboardingTitle" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/friends_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_padding_horizontal" android:layout_marginRight="@dimen/list_padding_horizontal" android:layout_marginBottom="12.0dip" android:minHeight="@dimen/list_item_row_height_slim">
+                <Space android:layout_width="@dimen/list_padding_horizontal" android:layout_height="0.0dip" />
+                <TextView android:textSize="@dimen/L" android:textColor="@color/black" android:gravity="start|center" android:id="@id/friends_selected_text_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAlignment="viewStart" textKey="account_ingame_friend_add_all_title" />
+                <com.supercell.id.view.WidthAdjustingMultilineButton android:id="@id/all_friends_button" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SupercellIdButtonBorderless" textKey="onboarding_invite_friends_select_all" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <View android:layout_gravity="bottom" android:background="@color/gray91" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.supercell.id.view.WidthAdjustingMultilineButton android:layout_gravity="center_horizontal" android:id="@id/profile_continue_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/onboarding_continue_margin" android:layout_marginBottom="@dimen/onboarding_continue_margin" android:minWidth="165.0dip" style="@style/SupercellIdButtonPrimary" textKey="onboarding_skip" />
+</LinearLayout>

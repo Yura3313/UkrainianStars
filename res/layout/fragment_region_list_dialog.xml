@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.supercell.id.view.RootFrameLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:forceInsetSystemWindow="true" app:insetSystemWindow="end">
+        <FrameLayout android:background="@color/gray95" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="@dimen/search_input_margin_vertical" android:layout_marginRight="18.0dip" android:layout_marginBottom="@dimen/search_input_margin_vertical" app:innerShadow="true">
+            <EditText android:gravity="start|center" android:id="@id/searchField" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/search_input_height" android:drawablePadding="8.0dip" android:inputType="textFilter" android:imeOptions="actionSearch|flagNoExtractUi" android:textAlignment="viewStart" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" hintKey="region_selection_search_placeholder" style="@style/SupercellIdTextField" />
+        </FrameLayout>
+        <View android:background="@color/gray91" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.supercell.id.view.TouchInterceptingFrameLayout android:id="@id/touchInterceptor" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:forceInsetSystemWindow="true" app:insetSystemWindow="bottom" style="@style/SupercellIdTheme.ScrollView" />
+            <include android:id="@id/region_header_title_sticky" android:visibility="invisible" layout="@layout/fragment_region_list_dialog_header" />
+            <FrameLayout android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="fill_parent" app:forceInsetSystemWindow="true" app:insetSystemWindow="bottom">
+                <com.supercell.id.view.FastScroll android:id="@id/fastscroll" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </com.supercell.id.view.TouchInterceptingFrameLayout>
+    </LinearLayout>
+</com.supercell.id.view.RootFrameLayout>

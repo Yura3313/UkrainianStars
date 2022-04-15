@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray95" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/progressBar" android:paddingTop="@dimen/landscape_navigation_height" android:layout_width="fill_parent" android:layout_height="fill_parent" app:insetSystemWindow="end|bottom|top" app:insetSystemWindowUsingParent="@id/body">
+        <com.supercell.id.view.ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/friendsList" android:paddingTop="@dimen/landscape_navigation_height" android:paddingBottom="@dimen/list_padding_vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:insetSystemWindow="end|bottom|top" app:insetSystemWindowUsingParent="@id/body" style="@style/SupercellIdTheme.ScrollView" />
+    <RelativeLayout android:id="@id/toolbar_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/toolbar_background" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignBottom="@id/toolbar_container" android:alpha="0.0" />
+        <FrameLayout android:id="@id/toolbar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:insetSystemWindow="end|top" app:insetSystemWindowUsingParent="@id/body">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/landscape_navigation_height">
+                <TextView android:id="@id/toolbar_title" android:layout_marginLeft="@dimen/list_padding_horizontal" android:layout_marginRight="@dimen/list_padding_horizontal" android:maxLines="2" style="@style/SupercellIdToolbarTitleLandscape" />
+            </FrameLayout>
+        </FrameLayout>
+        <View android:id="@id/toolbar_shadow" android:background="@drawable/toolbar_shadow" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_below="@id/toolbar_background" android:alpha="0.0" />
+    </RelativeLayout>
+</RelativeLayout>

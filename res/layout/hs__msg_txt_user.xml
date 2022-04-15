@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end" android:orientation="vertical" android:id="@id/user_text_message_layout" android:paddingRight="@dimen/hs__chatBubbleMargin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/hs__chatBubbleMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.helpshift.views.HSTextView android:id="@id/user_date_text" style="@style/Helpshift.Style.UserMessageDate" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hs__user_msg_left_margin" android:layout_marginBottom="4.0dip">
+        <ImageView android:id="@id/user_message_retry_button" android:padding="4.0dip" android:visibility="gone" android:layout_width="@dimen/hs__download_icon_preview_size" android:layout_height="@dimen/hs__download_icon_preview_size" android:layout_marginLeft="-36.0dip" android:src="@drawable/hs_action_retry" android:scaleType="fitCenter" android:tint="?colorAccent" android:layout_alignLeft="@id/user_message_container" android:contentDescription="@string/hs__retry_button_voice_over" />
+        <FrameLayout android:gravity="end" android:id="@id/user_message_container" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/Helpshift.Style.UserTextMessageContainer">
+            <com.helpshift.views.HSTextView android:id="@id/user_message_text" style="@style/Helpshift.Style.UserTextMessage" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="1.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/gray95" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/list_padding_horizontal" android:layout_marginTop="-1.0dip" android:layout_marginRight="@dimen/list_padding_horizontal" />
+    <TextView android:textSize="@dimen/M" android:textColor="@color/black_disableable" android:gravity="start|center" android:layout_gravity="center_vertical" android:id="@id/titleTextView" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_padding_horizontal" android:layout_marginRight="62.0dip" android:minHeight="70.0dip" android:textAlignment="viewStart" android:layout_marginStart="@dimen/list_padding_horizontal" android:layout_marginEnd="62.0dip" />
+    <com.supercell.id.view.Checkbox android:layout_gravity="end|center" android:id="@id/consentCheckBox" android:padding="19.0dip" android:layout_width="72.0dip" android:layout_height="70.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" app:audioEffect="BUTTON_01" app:tint="@color/black_disableable" />
+</FrameLayout>

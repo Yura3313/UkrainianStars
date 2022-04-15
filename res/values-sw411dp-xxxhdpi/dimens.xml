@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sdk_screenshot_dialog_camera_height">82.0dip</dimen>
+    <dimen name="sdk_screenshot_dialog_camera_margin_right">7.0dip</dimen>
+    <dimen name="sdk_screenshot_dialog_camera_padding">6.0dip</dimen>
+    <dimen name="sdk_screenshot_dialog_camera_width">75.0dip</dimen>
+    <dimen name="sdk_screenshot_dialog_close_height">53.0dip</dimen>
+    <dimen name="sdk_screenshot_dialog_close_padding">5.0dip</dimen>
+    <dimen name="sdk_screenshot_dialog_close_width">50.0dip</dimen>
+    <dimen name="sdk_screenshot_dialog_crop_height">62.0dip</dimen>
+    <dimen name="sdk_screenshot_dialog_crop_margin_bottom">9.0dip</dimen>
+    <dimen name="sdk_screenshot_dialog_crop_width">56.0dip</dimen>
+</resources>

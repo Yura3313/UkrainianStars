@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/kakao_game_sdk_screenshot_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/kakao_game_sdk_screenshot_result_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/kakao_game_sdk_bound" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/kakao_game_sdk_bound_top_left" android:background="@color/translucence_black_60" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <ImageView android:layout_gravity="center" android:id="@id/kakao_game_sdk_screenshot_watermark_crop_image" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="103.0dip" android:src="@drawable/kakao_game_sdk_watermark_img" android:layout_below="@id/kakao_game_sdk_bound_top_left" android:layout_alignParentLeft="true" />
+        <View android:id="@id/kakao_game_sdk_bound_bottomn_right" android:background="@color/translucence_black_60" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/kakao_game_sdk_screenshot_watermark_image" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="103.0dip" android:src="@drawable/kakao_game_sdk_watermark_img" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <com.kakaogame.promotion.share.KGAnimationButton android:id="@id/kakao_game_sdk_dialog_topbar_close" android:padding="@dimen/sdk_screenshot_dialog_close_padding" android:layout_width="@dimen/sdk_screenshot_dialog_close_width" android:layout_height="@dimen/sdk_screenshot_dialog_close_height" android:layout_alignParentRight="true">
+        <ImageView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/kakao_game_sdk_close_icon" />
+    </com.kakaogame.promotion.share.KGAnimationButton>
+    <com.kakaogame.promotion.share.KGAnimationButton android:id="@id/kakao_game_sdk_screenshot_camera" android:padding="@dimen/sdk_screenshot_dialog_camera_padding" android:layout_width="@dimen/sdk_screenshot_dialog_camera_width" android:layout_height="@dimen/sdk_screenshot_dialog_camera_height" android:layout_marginRight="@dimen/sdk_screenshot_dialog_camera_margin_right" android:layout_marginBottom="@dimen/sdk_screenshot_dialog_camera_margin_bottom" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/kakao_game_screenshot_icon" />
+    </com.kakaogame.promotion.share.KGAnimationButton>
+    <com.kakaogame.promotion.share.KGAnimationButton android:id="@id/kakao_game_sdk_screenshot_crop" android:padding="@dimen/sdk_screenshot_dialog_crop_padding" android:layout_width="@dimen/sdk_screenshot_dialog_crop_width" android:layout_height="@dimen/sdk_screenshot_dialog_crop_height" android:layout_marginBottom="@dimen/sdk_screenshot_dialog_crop_margin_bottom" android:layout_toLeftOf="@id/kakao_game_sdk_screenshot_camera" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center" android:id="@id/kakao_game_sdk_screenshot_crop_type" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/kakao_game_screenshot_rectangle" />
+    </com.kakaogame.promotion.share.KGAnimationButton>
+    <FrameLayout android:id="@id/kakao_game_sdk_screenshot_watermark" android:padding="5.0dip" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center" android:id="@id/kakao_game_sdk_screenshot_watermark_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/kakao_game_sdk_on_icon" />
+    </FrameLayout>
+</RelativeLayout>

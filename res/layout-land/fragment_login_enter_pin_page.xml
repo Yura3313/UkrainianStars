@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:forceInsetSystemWindow="true" app:insetSystemWindow="end|bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/illustrationImageView" srcKey="login_pin_illustration.png" style="@style/SupercellIdFlowPageIllustrationLandscape" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/titleTextView" style="@style/SupercellIdFlowPageTitle" textKey="log_in_pin_heading" />
+            <TextView android:id="@id/subtitleTextView" style="@style/SupercellIdFlowPageSubtitle" />
+            <com.supercell.id.view.PinEntryView android:id="@id/pinEditText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="32.0dip" android:layout_marginRight="17.0dip" />
+            <LinearLayout style="@style/SupercellIdFlowPageButtonContainer">
+                <com.supercell.id.view.WidthAdjustingMultilineButton android:id="@id/cancelButton" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/SupercellIdButtonCancel" textKey="log_in_pin_btn_cancel" />
+                <Space android:layout_width="12.0dip" android:layout_height="0.0dip" />
+                <com.supercell.id.view.WidthAdjustingMultilineButton android:id="@id/okButton" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/SupercellIdButtonPrimary" textKey="log_in_pin_btn_submit" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

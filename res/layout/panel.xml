@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/panel" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/head_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignBottom="@id/head" />
+        <FrameLayout android:id="@id/head" android:layout_width="fill_parent" android:layout_height="100.0dip" app:insetSystemWindow="right|top" />
+        <TextView android:textSize="@dimen/S" android:textColor="#ffff0000" android:id="@id/envTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="staging" android:layout_alignTop="@id/head" android:layout_centerHorizontal="true" app:insetSystemWindow="top" />
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/head" />
+        <FrameLayout android:id="@id/body" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/head">
+            <View android:id="@id/body_dimmer" android:background="@color/blackTranslucent60" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/navigation" android:layout_width="fill_parent" android:layout_height="wrap_content" app:insetSystemWindow="right|top" />
+</FrameLayout>

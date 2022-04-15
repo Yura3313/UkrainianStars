@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/dialogContainer" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="320.0dip" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="start" android:background="@drawable/info_dialog_background" android:layout_width="fill_parent" android:layout_height="fill_parent" app:dropShadow="true" />
+        <ImageView android:layout_gravity="center|top" android:id="@id/dialogTail" android:layout_width="28.0dip" android:layout_height="15.0dip" android:layout_marginTop="-12.0dip" android:scaleX="@integer/locale_mirror_flip" app:srcPathDrawable="info_dialog_triangle_top" />
+        <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/info_dialog_content" android:background="@drawable/info_dialog_background2" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/button_show_qr_code" layout="@layout/fragment_report_drop_down_button_qr_code" />
+            <include android:id="@id/separator_1" layout="@layout/fragment_report_drop_down_separator" />
+            <include android:id="@id/button_share_link" layout="@layout/fragment_report_drop_down_button_share_link" />
+            <include android:id="@id/separator_2" layout="@layout/fragment_report_drop_down_separator" />
+            <include android:id="@id/button_report_name" layout="@layout/fragment_report_drop_down_button_report_name" />
+            <include android:id="@id/separator_3" layout="@layout/fragment_report_drop_down_separator" />
+            <include android:id="@id/button_report_image" layout="@layout/fragment_report_drop_down_button_report_image" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

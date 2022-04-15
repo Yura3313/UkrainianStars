@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="36.0dip" android:scaleType="centerInside" srcKey="supercell_id_logo_white.png" />
+    </FrameLayout>
+</FrameLayout>

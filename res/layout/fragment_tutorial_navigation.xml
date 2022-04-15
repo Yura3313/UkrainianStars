@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:layout_gravity="start" android:id="@id/navigation_back_button" android:background="@null" android:visibility="gone" android:layout_width="54.0dip" android:layout_height="64.0dip" android:scaleType="centerInside" android:tint="@color/black" android:scaleX="@integer/locale_mirror_flip" app:audioEffect="BUTTON_01" app:srcPathDrawable="back_arrow" />
+        <ImageView android:id="@id/navigation_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="64.0dip" android:layout_marginLeft="21.0dip" android:layout_marginRight="0.0dip" android:scaleType="centerInside" android:layout_marginStart="21.0dip" android:layout_marginEnd="0.0dip" srcKey="supercell_logo_black.png" />
+        <Button android:textColor="@color/black" android:layout_gravity="end" android:id="@id/skip_button" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="64.0dip" android:minWidth="0.0dip" app:audioEffect="BUTTON_01" style="@style/SupercellIdButtonBorderless" textKey="tutorial_action_skip" />
+        <ImageButton android:layout_gravity="end" android:id="@id/navigation_close_button" android:background="@null" android:visibility="gone" android:layout_width="57.0dip" android:layout_height="64.0dip" android:scaleType="centerInside" android:tint="@color/black" app:audioEffect="BUTTON_01" app:srcPathDrawable="cross" />
+    </FrameLayout>
+    <View android:id="@id/navigation_divider" android:background="@color/gray95" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="21.0dip" android:layout_marginRight="21.0dip" />
+</LinearLayout>

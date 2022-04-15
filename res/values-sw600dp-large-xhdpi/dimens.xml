@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sdk_invitation_landscape_reward_height">337.0dip</dimen>
+    <dimen name="sdk_invitation_landscape_reward_width">383.0dip</dimen>
+    <dimen name="sdk_invitation_landscape_share_height">372.0dip</dimen>
+    <dimen name="sdk_invitation_landscape_share_width">640.0dip</dimen>
+    <dimen name="sdk_invitation_portrait_reward_height">342.0dip</dimen>
+    <dimen name="sdk_invitation_portrait_reward_width">389.0dip</dimen>
+    <dimen name="sdk_invitation_portrait_share_height">660.0dip</dimen>
+    <dimen name="sdk_invitation_portrait_share_width">389.0dip</dimen>
+</resources>

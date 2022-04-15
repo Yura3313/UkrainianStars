@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/generalScrollView" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:insetSystemWindow="right|bottom" style="@style/SupercellIdTheme.ScrollView"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:paddingLeft="@dimen/list_padding_horizontal" android:paddingTop="@dimen/list_padding_vertical" android:paddingRight="@dimen/list_padding_horizontal" android:paddingBottom="24.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/fragment_settings_general_content" />
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

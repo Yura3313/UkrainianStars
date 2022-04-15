@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="64.0dip" android:paddingRight="64.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="39.0dip" android:layout_height="35.0dip" srcKey="id_logo.png" />
+    <Space android:layout_width="10.0dip" android:layout_height="0.0dip" />
+    <com.supercell.id.view.WidthAdjustingMultilineTextView android:textSize="@dimen/XL" android:textColor="@color/white" android:gravity="start" android:id="@id/my_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:textAlignment="viewStart" style="@style/SupercellEllipsizeTextView" />
+</LinearLayout>

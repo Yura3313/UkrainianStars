@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/gray95" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/public_profile_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.viewpager.widget.FlowPager android:id="@id/tab_pager" android:background="@color/gray95" android:layout_width="fill_parent" android:layout_height="fill_parent" app:transitionDuration="200" style="@style/SupercellIdTheme.ViewPager" />
+        <RelativeLayout android:id="@id/toolbar_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@drawable/sub_page_tab_bar_background" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignBottom="@id/toolbar_container" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" />
+            <FrameLayout android:id="@id/toolbar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:insetSystemWindow="end|top" app:insetSystemWindowUsingParent="@id/body">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" layout="@layout/public_profile_top" />
+            </FrameLayout>
+            <View android:id="@id/toolbar_shadow" android:background="@drawable/toolbar_shadow" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_below="@id/toolbar_container" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/public_profile_progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:insetSystemWindow="end|top" app:insetSystemWindowUsingParent="@id/body">
+        <com.supercell.id.view.ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

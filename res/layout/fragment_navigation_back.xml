@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:layout_gravity="start" android:id="@id/navigation_back_button" android:background="@null" android:layout_width="54.0dip" android:layout_height="64.0dip" android:scaleType="centerInside" android:tint="@color/white" android:scaleX="@integer/locale_mirror_flip" app:audioEffect="BUTTON_01" app:srcPathDrawable="back_arrow" />
+        <ImageButton android:layout_gravity="end" android:id="@id/navigation_close_button" android:background="@null" android:layout_width="57.0dip" android:layout_height="64.0dip" android:scaleType="centerInside" android:tint="@color/white" app:audioEffect="BUTTON_01" app:srcPathDrawable="cross" />
+    </FrameLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

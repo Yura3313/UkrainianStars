@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.RtlViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/SupercellIdTheme.ViewPager" />
+    <FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" app:insetSystemWindow="bottom">
+        <com.google.android.material.tabs.TabLayout android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_marginBottom="18.0dip" app:tabBackground="@drawable/indicator_dot" app:tabGravity="center" app:tabIndicatorHeight="0.0dip" app:tabRippleColor="@null" />
+    </FrameLayout>
+    <FrameLayout android:background="@color/blackTranslucent60" android:layout_width="fill_parent" android:layout_height="wrap_content" app:insetSystemWindow="top" />
+</FrameLayout>

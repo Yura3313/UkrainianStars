@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hs__listPreferredItemPaddingTop" android:layout_marginRight="@dimen/hs__chatBubbleMargin" android:layout_marginEnd="@dimen/hs__chatBubbleMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/user_attachment_container" android:background="?hs__chatBubbleMediaBackgroundColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hs__user_msg_left_margin" android:layout_below="@id/date" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" app:cardCornerRadius="16.0dip" app:cardElevation="2.0dip" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/user_attachment_message_layout" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/hs__msgPreferredItemPaddingLeft" android:layout_weight="1.0" android:layout_marginEnd="@dimen/hs__msgPreferredItemPaddingLeft">
+                <com.helpshift.views.HSTextView android:textSize="@dimen/hs__textSizeSmall" android:textColor="?android:textColorPrimary" android:ellipsize="middle" android:id="@id/attachment_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <com.helpshift.views.HSTextView android:textSize="12.0sp" android:textColor="?android:textColorSecondary" android:id="@id/attachment_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="@dimen/hs__download_icon_preview_size" android:layout_height="@dimen/hs__download_icon_preview_size">
+                <include layout="@layout/hs__action_download_layout" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:indeterminate="true" />
+                <ImageView android:layout_gravity="center" android:id="@id/attachment_icon" android:visibility="gone" android:layout_width="@dimen/hs__dimen_24" android:layout_height="@dimen/hs__dimen_24" android:src="@drawable/hs__attach_screenshot_action_button" android:scaleType="fitCenter" android:tint="?colorAccent" />
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <com.helpshift.views.HSTextView android:id="@id/date" android:visibility="gone" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/Helpshift.Style.UserMessageDate" />
+    <ImageView android:id="@id/user_message_retry_button" android:padding="4.0dip" android:visibility="gone" android:layout_width="@dimen/hs__download_icon_preview_size" android:layout_height="@dimen/hs__download_icon_preview_size" android:layout_marginLeft="-36.0dip" android:src="@drawable/hs_action_retry" android:scaleType="fitCenter" android:tint="?colorAccent" android:layout_alignLeft="@id/user_attachment_container" android:contentDescription="@string/hs__retry_button_voice_over" />
+</RelativeLayout>

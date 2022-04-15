@@ -1,0 +1,62 @@
+{
+	"title" : "접근 권한을 허용해 주세요.",
+	"summary" : "원활한 게임 플레이를 위하여 아래 권한을 필요로 합니다.",
+	"prefix_essential" : "필수",
+	"prefix_optional" : "선택",
+	"list": [
+		{
+			"key" : "storage",
+			"name" : "저장공간",
+			"permissions" : [ "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE" ],
+			"desc" : "게임 설정과 캐시 저장, 1:1 문의 응대 지원을 위해 사진, 미디어, 파일 및 외부 저장소 접근이 필요합니다."
+		},
+		{
+			"key" : "contracts",
+			"name" : "주소록",
+			"permissions" : [ "android.permission.GET_ACCOUNTS", "android.permission.USE_CREDENTIALS", "android.permission.READ_CONTACTS", "android.permission.WRITE_CONTACTS", "android.permission.READ_PROFILE", "android.permission.WRITE_PROFILE" ],
+			"desc" : "고객님의 주소록 기능에는 영향을 주지 않으니 안심하세요.\n이 권한은 각종 알림 푸시 발송에 필요합니다."
+		},
+		{
+			"key" : "phone",
+			"name" : "전화",
+			"permissions" : [ "android.permission.READ_PHONE_STATE", "android.permission.CALL_PHONE", "android.permission.READ_CALL_LOG", " android.permission.WRITE_CALL_LOG", "com.android.voicemail.permission.ADD_VOICEMAIL", "android.permission.USE_SIP", "android.permission.PROCESS_OUTGOING_CALLS" ],
+			"desc" : "고객님의 전화번호를 수집하거나 전화를 걸지는 않으니 걱정하지 마세요. \n어뷰징 예방 및 통계 처리를 위한 기기 고유 식별값(Android ID) 확인에 필요합니다."
+		},
+		{
+			"key" : "microphone",
+			"name" : "마이크",
+			"permissions" : [ "android.permission.READ_AUDIO" , "android.permission.RECORD_AUDIO" ],
+			"desc" : "고객님의 마이크 기능에는 영향을 주지 않으니 안심하세요.\n이 권한은 게임 내 마이크를 활용하는 컨텐츠에 필요합니다."
+		},
+		{
+			"key" : "camera",
+			"name" : "카메라",
+			"permissions" : [ "android.permission.CAMERA" ],
+			"desc" : "고객님의 카메라 기능에는 영향을 주지 않으니 안심하세요.\n이 권한은 게임 내 카메라를 활용하는 컨텐츠에 필요합니다."
+		},
+		{
+			"key" : "location",
+			"name" : "위치",
+			"permissions" : [ "android.permission.ACCESS_FINE_LOCATION", " android.permission.ACCESS_COARSE_LOCATION" ],
+			"desc" : "고객님의 위치 정보에는 영향을 주지 않으니 안심하세요.\n이 권한은 게임 내 기기 위치를 활용한 컨텐츠에 필요합니다."
+		},
+		{
+			"key" : "sms",
+			"name" : "SMS",
+			"permissions" : [ "android.permission.SEND_SMS", "android.permission.RECEIVE_SMS", "android.permission.READ_SMS", "android.permission.RECEIVE_WAP_PUSH", "android.permission.RECEIVE_MMS", "android.permission.READ_CELL_BROADCASTS" ],
+			"desc" : "고객님의 SMS 발송 기능에는 영향을 주지 않으니 안심하세요.\n이 권한은 인증 문자 메시지의 인증 번호를 자동으로 입력하기 위해 필요합니다."
+		},
+		{
+			"key" : "calendar",
+			"name" : "캘린더",
+			"permissions" : [ "android.permission.READ_CALENDAR", "android.permission.WRITE_CALENDAR" ],
+			"desc" : "고객님의 캘린더 기능에는 영향을 주지 않으니 안심하세요.\n이 권한은 캘린더에서 일정을 확인하거나 기록하기 위해 필요합니다."
+		},
+		{
+			"key" : "sensors",
+			"name" : "신체 센서",
+			"permissions" : [ "android.permission.BODY_SENSORS", "android.permission.USE_FINGERPRINT" ],
+			"desc" : "고객님의 신체 센서 기능에는 영향을 주지 않으니 안심하세요.\n이 권한은 결제시 지문 인식 기능을 사용하기 위해 필요합니다."
+		}
+	]
+}

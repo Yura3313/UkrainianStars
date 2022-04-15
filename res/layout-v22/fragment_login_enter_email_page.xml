@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/loginEnterEmailScrollView" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:insetSystemWindow="right|bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/illustrationImageView" srcKey="login_email_illustration.png" style="@style/SupercellIdFlowPageIllustration" />
+        <TextView android:id="@id/titleTextView" style="@style/SupercellIdFlowPageTitle" textKey="log_in_start_heading" />
+        <TextView android:id="@id/subtitleTextView" style="@style/SupercellIdFlowPageSubtitle" textKey="log_in_start_description" />
+        <FrameLayout android:background="@color/gray95" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="@dimen/flow_page_login_input_email_margin_top" android:layout_marginRight="21.0dip" app:innerShadow="true">
+            <EditText android:gravity="start|center" android:id="@id/emailEditText" android:paddingLeft="10.0dip" android:paddingRight="@dimen/input_valid_padding_end" android:layout_width="fill_parent" android:inputType="textEmailAddress" android:imeOptions="actionDone|flagNoExtractUi" android:nextFocusForward="@id/okButton" android:textAlignment="viewStart" android:paddingStart="10.0dip" android:paddingEnd="@dimen/input_valid_padding_end" android:autofillHints="emailAddress" hintKey="log_in_start_input" style="@style/SupercellIdTextField" />
+            <ImageView android:layout_gravity="end|center" android:id="@id/validImageView" android:layout_width="@dimen/input_valid_size" android:layout_height="@dimen/input_valid_size" android:layout_marginLeft="0.0dip" android:layout_marginRight="@dimen/input_padding_horizontal" android:scaleType="centerInside" android:layout_marginStart="0.0dip" android:layout_marginEnd="@dimen/input_padding_horizontal" app:srcPathDrawable="checkmarkcircle" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="@dimen/flow_page_input_margin_top" android:layout_marginRight="21.0dip">
+            <LinearLayout android:layout_gravity="start" android:id="@id/rememberCheckBoxRow" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="@dimen/checkbox_height" android:layout_marginStart="0.0dip" android:layout_marginEnd="@dimen/checkbox_height" app:audioEffect="BUTTON_01">
+                <com.supercell.id.view.Checkbox android:layout_gravity="start" android:id="@id/rememberCheckBox" android:padding="0.0dip" android:focusable="false" android:clickable="false" android:layout_width="@dimen/checkbox_width" android:layout_height="@dimen/checkbox_height" />
+                <TextView android:textSize="@dimen/XXS" android:textColor="@color/gray40" android:gravity="start|center" android:layout_gravity="start|center" android:id="@id/rememberTextView" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/checkbox_height" android:textAlignment="viewStart" textKey="log_in_start_label" />
+            </LinearLayout>
+            <ImageButton android:layout_gravity="end" android:id="@id/rememberInfoButton" android:background="@drawable/info_button_background" android:layout_width="@dimen/info_button_size" android:layout_height="@dimen/info_button_size" android:scaleType="centerInside" app:animateOnPress="SCALE" app:audioEffect="BUTTON_01" app:srcPathDrawable="info_button_i" />
+        </FrameLayout>
+        <LinearLayout style="@style/SupercellIdFlowPageButtonContainer">
+            <com.supercell.id.view.WidthAdjustingMultilineButton android:id="@id/cancelButton" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/SupercellIdButtonCancel" textKey="log_in_start_btn_cancel" />
+            <Space android:layout_width="12.0dip" android:layout_height="0.0dip" />
+            <com.supercell.id.view.WidthAdjustingMultilineButton android:id="@id/okButton" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/SupercellIdButtonPrimary" textKey="log_in_start_btn_log_in" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

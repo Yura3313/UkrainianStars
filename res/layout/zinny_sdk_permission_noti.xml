@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/zinny_sdk_notification" android:background="@android:color/transparent" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:minHeight="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip">
+        <ImageView android:id="@id/zinny_sdk_permission_noti_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0sp" android:textColor="@android:color/white" android:id="@id/zinny_sdk_permission_noti_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/zinny_sdk_permission_noti_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/zinny_sdk_terms_agree_not_text" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ScrollView android:id="@id/zinny_sdk_permission_noti_scrollview" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/zinny_sdk_permission_noti_content" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <View android:background="@color/zinny_sdk_terms_agree_not_text" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

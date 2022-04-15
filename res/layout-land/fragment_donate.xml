@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray95" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/progressBar" android:paddingTop="@dimen/landscape_navigation_height" android:layout_width="fill_parent" android:layout_height="fill_parent" app:insetSystemWindow="end|bottom|top" app:insetSystemWindowUsingParent="@id/body">
+        <com.supercell.id.view.ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/friendsList" android:paddingTop="@dimen/landscape_navigation_height" android:paddingBottom="@dimen/list_padding_vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:insetSystemWindow="end|bottom|top" app:insetSystemWindowUsingParent="@id/body" style="@style/SupercellIdTheme.ScrollView" />
+    <FrameLayout android:orientation="vertical" android:id="@id/toolbar_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/toolbar_container" android:background="@drawable/sub_page_tab_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/list_padding_vertical" app:insetSystemWindow="end|top" app:insetSystemWindowUsingParent="@id/body">
+            <com.supercell.id.view.SubPageTabLayout android:id="@id/toolbar_tabs" style="@style/SupercellIdSubPageTabBar" />
+        </FrameLayout>
+        <View android:id="@id/toolbar_shadow" android:background="@drawable/toolbar_shadow" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_marginTop="@dimen/landscape_navigation_height" />
+    </FrameLayout>
+</RelativeLayout>

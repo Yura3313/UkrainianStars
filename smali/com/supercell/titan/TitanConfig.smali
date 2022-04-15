@@ -1,0 +1,14 @@
+.class public final Lcom/supercell/titan/TitanConfig;
+.super Ljava/lang/Object;
+.source "TitanConfig.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

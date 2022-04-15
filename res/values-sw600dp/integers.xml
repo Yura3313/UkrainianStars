@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="design_snackbar_text_max_lines">1</integer>
+    <item type="integer" name="id_icon_scale">1.0</item>
+    <item type="integer" name="public_profile_status_button_vertical_bias">0.75</item>
+    <item type="integer" name="tab_icon_scale">0.63</item>
+</resources>

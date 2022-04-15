@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/hs__picker_collapsed_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/hs__picker_top_shadow_height" />
+    <FrameLayout android:gravity="center" android:id="@id/hs__picker_header_container" android:background="?hs__composeBackgroundColor" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/hs__picker_header_container_height">
+        <include layout="@layout/hs__collapsed_picker_header" />
+        <include layout="@layout/hs__expanded_picker_header" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/hs__empty_picker_view" android:background="?hs__composeBackgroundColor" android:paddingTop="@dimen/hs__picker_empty_view_top_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.helpshift.views.HSTextView android:textSize="@dimen/hs__textSizeSmall" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hs__picker_no_results" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/hs__optionsList" android:background="?hs__composeBackgroundColor" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:isScrollContainer="true" />
+</LinearLayout>

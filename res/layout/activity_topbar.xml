@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:id="@id/activity_topbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <FrameLayout android:id="@id/activity_topbar_home" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip">
+            <ImageView android:layout_gravity="center" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/ic_home_black_48dp" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/activity_topbar_info" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip">
+            <ImageView android:layout_gravity="center" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/ic_info_outline_black_48dp" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

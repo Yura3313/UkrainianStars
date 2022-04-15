@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="fb_exclamation_mark_angle">225</integer>
+    <integer name="locale_mirror_flip">-1</integer>
+    <integer name="locale_mirror_flip_negative">1</integer>
+    <integer name="online_indicator_angle">225</integer>
+    <integer name="unseen_ingame_friend_indicator_angle">315</integer>
+</resources>

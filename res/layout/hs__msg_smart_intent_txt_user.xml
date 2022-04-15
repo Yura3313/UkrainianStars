@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/smart_intent_user_message_layout" android:paddingRight="@dimen/hs__chatBubbleMargin" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hs__listPreferredItemPaddingTop" android:paddingEnd="@dimen/hs__chatBubbleMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="end" android:id="@id/user_message_container" android:focusable="true" android:layout_marginLeft="@dimen/hs__user_msg_left_margin" android:layout_below="@id/user_date_text" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/Helpshift.Style.UserTextMessageContainer">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.helpshift.views.HSTextView android:textSize="@dimen/hs__textSizeExtraSmall" android:ellipsize="end" android:id="@id/smart_intent_root_label" android:paddingBottom="2.0dip" android:focusable="true" android:maxLines="2" android:alpha="0.7" android:textAllCaps="true" style="@style/Helpshift.Style.UserTextMessage" />
+            <com.helpshift.views.HSTextView android:id="@id/smart_intent_leaf_label" android:paddingTop="2.0dip" android:focusable="true" style="@style/Helpshift.Style.UserTextMessage" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.helpshift.views.HSTextView android:id="@id/user_date_text" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/Helpshift.Style.UserMessageDate" />
+    <ImageView android:id="@id/user_message_retry_button" android:padding="4.0dip" android:visibility="gone" android:layout_width="@dimen/hs__download_icon_preview_size" android:layout_height="@dimen/hs__download_icon_preview_size" android:layout_marginLeft="-36.0dip" android:src="@drawable/hs_action_retry" android:scaleType="fitCenter" android:tint="?colorAccent" android:layout_alignLeft="@id/user_message_container" android:contentDescription="@string/hs__retry_button_voice_over" />
+</RelativeLayout>

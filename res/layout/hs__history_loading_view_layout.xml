@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/history_loading_layout_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loading_state_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/loading_progressbar" android:layout_width="@dimen/hs__load_more_messages_spinner_size" android:layout_height="@dimen/hs__load_more_messages_spinner_size" android:indeterminate="true" />
+        <com.helpshift.views.HSTextView android:textSize="@dimen/hs__textSizeSmall" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/hs__messages_loading_text" android:alpha="0.87" android:layout_marginStart="4.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/loading_error_state_view" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.helpshift.views.HSTextView android:textSize="@dimen/hs__textSizeSmall" android:textColor="?android:textColorPrimary" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hs__messages_loading_error_text" />
+        <com.helpshift.views.HSTextView android:textSize="@dimen/hs__textSizeSmall" android:textColor="?colorAccent" android:id="@id/loading_error_tap_to_retry" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/hs__tap_to_retry" android:layout_marginStart="2.0dip" />
+    </LinearLayout>
+</LinearLayout>

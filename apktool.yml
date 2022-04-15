@@ -1,0 +1,1554 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: bs_v42_349.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- png
+- jpg
+- ogg
+- assets/sentry-debug-meta.properties
+- assets/badge/default.edges
+- assets/sc/background_basic.sc
+- assets/sc/background_basic_tex.sc
+- assets/sc/background_biodome.sc
+- assets/sc/background_biodome_tex.sc
+- assets/sc/background_easter22.sc
+- assets/sc/background_easter22_tex.sc
+- assets/sc/background_lny22.sc
+- assets/sc/background_lny22_tex.sc
+- assets/sc/background_ramadan22.sc
+- assets/sc/background_ramadan22_tex.sc
+- assets/sc/events.sc
+- assets/sc/events_tex.sc
+- assets/sc/loading.sc
+- assets/sc/loading_tex.sc
+- assets/sc/supercell_id.sc
+- assets/sc/supercell_id_tex.sc
+- assets/sc3d/8bit_classic_geo.scw
+- assets/sc3d/8bit_classic_tex.ktx
+- assets/sc3d/8bit_geo.scw
+- assets/sc3d/8bit_gold_tex.ktx
+- assets/sc3d/8bit_piano_geo.glb
+- assets/sc3d/8bit_piano_lose.glb
+- assets/sc3d/8bit_piano_tex.ktx
+- assets/sc3d/8bit_piano_win.glb
+- assets/sc3d/8bit_retropolis_geo.glb
+- assets/sc3d/8bit_retropolis_tex.ktx
+- assets/sc3d/8bit_silver_tex.ktx
+- assets/sc3d/8bit_tex.ktx
+- assets/sc3d/8bit_virus_geo.scw
+- assets/sc3d/8bit_virus_tex.ktx
+- assets/sc3d/8bit_virus_win.scw
+- assets/sc3d/amber_geo.scw
+- assets/sc3d/amber_gold_tex.ktx
+- assets/sc3d/amber_masked_geo.glb
+- assets/sc3d/amber_masked_lose.glb
+- assets/sc3d/amber_masked_tex.ktx
+- assets/sc3d/amber_masked_win.glb
+- assets/sc3d/amber_silver_tex.ktx
+- assets/sc3d/amber_tex.ktx
+- assets/sc3d/amber_win.scw
+- assets/sc3d/ash_geo.glb
+- assets/sc3d/ash_ninja_geo.glb
+- assets/sc3d/ash_ninja_lose.glb
+- assets/sc3d/ash_ninja_tex.ktx
+- assets/sc3d/ash_ninja_win.glb
+- assets/sc3d/ash_tex.ktx
+- assets/sc3d/ash_win.glb
+- assets/sc3d/ball_tex.ktx
+- assets/sc3d/barkeep_geo.scw
+- assets/sc3d/barley_banker_geo.scw
+- assets/sc3d/barley_banker_tex.ktx
+- assets/sc3d/barley_drunkenmaster_geo.glb
+- assets/sc3d/barley_drunkenmaster_lose.glb
+- assets/sc3d/barley_drunkenmaster_win.glb
+- assets/sc3d/barley_drunken_master_tex.ktx
+- assets/sc3d/barley_gold_tex.ktx
+- assets/sc3d/barley_lumberjack_geo.scw
+- assets/sc3d/barley_lumberjack_tex.ktx
+- assets/sc3d/barley_ms_geo.scw
+- assets/sc3d/barley_ms_tex.ktx
+- assets/sc3d/barley_silver_tex.ktx
+- assets/sc3d/barley_tex.ktx
+- assets/sc3d/barley_unicornknight_geo.glb
+- assets/sc3d/barley_unicornknight_lose.glb
+- assets/sc3d/barley_unicornknight_tex.ktx
+- assets/sc3d/barley_unicornknight_win.glb
+- assets/sc3d/barley_wizard_geo.scw
+- assets/sc3d/barley_wizard_tex.ktx
+- assets/sc3d/bbox_11.scw
+- assets/sc3d/bbox_12.scw
+- assets/sc3d/bbox_l.ktx
+- assets/sc3d/bbox_m.ktx
+- assets/sc3d/bear_koala_geo.scw
+- assets/sc3d/bear_reindeer_geo.scw
+- assets/sc3d/bear_shiba_geo.scw
+- assets/sc3d/bea_archvillain_geo.glb
+- assets/sc3d/bea_archvillain_tex.ktx
+- assets/sc3d/bea_archvillain_win.glb
+- assets/sc3d/bea_bug_geo.glb
+- assets/sc3d/bea_bug_lose.glb
+- assets/sc3d/bea_bug_tex.ktx
+- assets/sc3d/bea_bug_win.glb
+- assets/sc3d/bea_geo.scw
+- assets/sc3d/bea_goldcat_geo.glb
+- assets/sc3d/bea_goldcat_tex.ktx
+- assets/sc3d/bea_gold_tex.ktx
+- assets/sc3d/bea_ladybug_geo.scw
+- assets/sc3d/bea_ladybug_tex.ktx
+- assets/sc3d/bea_luckycat_geo.glb
+- assets/sc3d/bea_luckycat_lose.glb
+- assets/sc3d/bea_luckycat_tex.ktx
+- assets/sc3d/bea_luckycat_win.glb
+- assets/sc3d/bea_silver_tex.ktx
+- assets/sc3d/bea_tex.ktx
+- assets/sc3d/belle_boss_geo.glb
+- assets/sc3d/belle_boss_lose.glb
+- assets/sc3d/belle_boss_tex.ktx
+- assets/sc3d/belle_boss_win.glb
+- assets/sc3d/belle_geo.glb
+- assets/sc3d/belle_lose.glb
+- assets/sc3d/belle_planthunter_geo.glb
+- assets/sc3d/belle_planthunter_lose.glb
+- assets/sc3d/belle_planthunter_tex.ktx
+- assets/sc3d/belle_planthunter_win.glb
+- assets/sc3d/belle_tex.ktx
+- assets/sc3d/belle_win.glb
+- assets/sc3d/bgr_arcade.ktx
+- assets/sc3d/bgr_arcade.scw
+- assets/sc3d/bgr_bazaar.ktx
+- assets/sc3d/bgr_bazaar.scw
+- assets/sc3d/bgr_bazaar_ground.scw
+- assets/sc3d/bgr_beach.ktx
+- assets/sc3d/bgr_beach_brawl_ball.scw
+- assets/sc3d/bgr_beach_brawl_ball_ground.scw
+- assets/sc3d/bgr_biodome.ktx
+- assets/sc3d/bgr_biodome.scw
+- assets/sc3d/bgr_canyon.scw
+- assets/sc3d/bgr_canyon_cactus.ktx
+- assets/sc3d/bgr_canyon_showdown.scw
+- assets/sc3d/bgr_canyon_showdown_ground.scw
+- assets/sc3d/bgr_canyon_terrain.ktx
+- assets/sc3d/bgr_fighting_game.ktx
+- assets/sc3d/bgr_fighting_game.scw
+- assets/sc3d/bgr_grassfield.scw
+- assets/sc3d/bgr_jungle_terrain.ktx
+- assets/sc3d/bgr_mine.scw
+- assets/sc3d/bgr_mine_ground.scw
+- assets/sc3d/bgr_mine_ground_tracks_1.scw
+- assets/sc3d/bgr_mine_terrain.ktx
+- assets/sc3d/bgr_mine_tracks_1.scw
+- assets/sc3d/bgr_mortuary.ktx
+- assets/sc3d/bgr_mortuary.scw
+- assets/sc3d/bgr_mortuary_showdown.scw
+- assets/sc3d/bgr_mortuary_showdown_ground.scw
+- assets/sc3d/bgr_old_town.ktx
+- assets/sc3d/bgr_scrapyard.ktx
+- assets/sc3d/bgr_scrapyard.scw
+- assets/sc3d/bgr_tutorial.scw
+- assets/sc3d/bgr_tutorial_ground.scw
+- assets/sc3d/bgr_warehouse.ktx
+- assets/sc3d/bibi_gamer_geo.scw
+- assets/sc3d/bibi_gamer_tex.ktx
+- assets/sc3d/bibi_gamer_win.scw
+- assets/sc3d/bibi_geo.scw
+- assets/sc3d/bibi_gold_tex.ktx
+- assets/sc3d/bibi_silver_tex.ktx
+- assets/sc3d/bibi_tex.ktx
+- assets/sc3d/bibi_vigilante_geo.glb
+- assets/sc3d/bibi_vigilante_tex.ktx
+- assets/sc3d/bibi_vigilante_win.glb
+- assets/sc3d/bibi_warrior_geo.glb
+- assets/sc3d/bibi_warrior_tex.ktx
+- assets/sc3d/bibi_warrior_win.glb
+- assets/sc3d/bibi_zombibi_geo.scw
+- assets/sc3d/bibi_zombibi_tex.ktx
+- assets/sc3d/bossbot_geo.scw
+- assets/sc3d/bossbot_tex.ktx
+- assets/sc3d/bo_demonic_geo.scw
+- assets/sc3d/bo_demonic_tex.ktx
+- assets/sc3d/bo_demonic_win.scw
+- assets/sc3d/bo_falcon_geo.scw
+- assets/sc3d/bo_falcon_lose.scw
+- assets/sc3d/bo_falcon_tex.ktx
+- assets/sc3d/bo_falcon_win.scw
+- assets/sc3d/bo_geo.scw
+- assets/sc3d/bo_gold_tex.ktx
+- assets/sc3d/bo_mecha_geo.scw
+- assets/sc3d/bo_santa_geo.glb
+- assets/sc3d/bo_santa_lose.glb
+- assets/sc3d/bo_santa_tex.ktx
+- assets/sc3d/bo_santa_win.glb
+- assets/sc3d/bo_siler_tex.ktx
+- assets/sc3d/bo_tex.ktx
+- assets/sc3d/bo_warrior_geo.scw
+- assets/sc3d/bo_warrior_tex.ktx
+- assets/sc3d/bo_wasp_geo.glb
+- assets/sc3d/bo_wasp_lose.glb
+- assets/sc3d/bo_wasp_tex.ktx
+- assets/sc3d/bo_wasp_win.glb
+- assets/sc3d/brock_beach_geo.scw
+- assets/sc3d/brock_beach_tex.ktx
+- assets/sc3d/brock_boombox_geo.scw
+- assets/sc3d/brock_boombox_tex.ktx
+- assets/sc3d/brock_cny_geo.scw
+- assets/sc3d/brock_cny_tex.ktx
+- assets/sc3d/brock_geo.scw
+- assets/sc3d/brock_gold_tex.ktx
+- assets/sc3d/brock_hotrod_geo.scw
+- assets/sc3d/brock_hotrod_tex.ktx
+- assets/sc3d/brock_ranger_geo.glb
+- assets/sc3d/brock_ranger_tex.ktx
+- assets/sc3d/brock_redux_geo.scw
+- assets/sc3d/brock_redux_tex.ktx
+- assets/sc3d/brock_silver_tex.ktx
+- assets/sc3d/brock_tex.ktx
+- assets/sc3d/bull_barbking_geo.scw
+- assets/sc3d/bull_barbking_tex.ktx
+- assets/sc3d/bull_bullfasa_lose.glb
+- assets/sc3d/bull_bullfasa_win.glb
+- assets/sc3d/bull_footbull_geo.scw
+- assets/sc3d/bull_footbull_tex.ktx
+- assets/sc3d/bull_geo.scw
+- assets/sc3d/bull_gold_tex.ktx
+- assets/sc3d/bull_lion_geo.glb
+- assets/sc3d/bull_lion_lose.glb
+- assets/sc3d/bull_lion_tex.ktx
+- assets/sc3d/bull_lion_win.glb
+- assets/sc3d/bull_ox_geo.scw
+- assets/sc3d/bull_ox_tex.ktx
+- assets/sc3d/bull_silver_tex.ktx
+- assets/sc3d/bull_terminator_geo.glb
+- assets/sc3d/bull_terminator_lose.glb
+- assets/sc3d/bull_terminator_tex.ktx
+- assets/sc3d/bull_termina_bull_lose.glb
+- assets/sc3d/bull_termina_bull_portrait.glb
+- assets/sc3d/bull_termina_bull_win.glb
+- assets/sc3d/bull_termina_portrait.glb
+- assets/sc3d/bull_tex_01.ktx
+- assets/sc3d/bull_viking_geo.scw
+- assets/sc3d/bull_viking_tex.ktx
+- assets/sc3d/buzz_director_geo.glb
+- assets/sc3d/buzz_director_lose.glb
+- assets/sc3d/buzz_director_tex.ktx
+- assets/sc3d/buzz_director_win.glb
+- assets/sc3d/buzz_geo.glb
+- assets/sc3d/buzz_gold_tex.ktx
+- assets/sc3d/buzz_punk_geo.glb
+- assets/sc3d/buzz_punk_lose.glb
+- assets/sc3d/buzz_punk_sing_loop.glb
+- assets/sc3d/buzz_punk_tex.ktx
+- assets/sc3d/buzz_punk_win.glb
+- assets/sc3d/buzz_silver_tex.ktx
+- assets/sc3d/buzz_tex.ktx
+- assets/sc3d/buzz_win.glb
+- assets/sc3d/byron_geo.scw
+- assets/sc3d/byron_tex.ktx
+- assets/sc3d/byron_wizard_geo.glb
+- assets/sc3d/byron_wizard_lose.glb
+- assets/sc3d/byron_wizard_tex.ktx
+- assets/sc3d/byron_wizard_win.glb
+- assets/sc3d/carl_geo.scw
+- assets/sc3d/carl_gold_tex.ktx
+- assets/sc3d/carl_hogrider_geo.scw
+- assets/sc3d/carl_hogrider_tex.ktx
+- assets/sc3d/carl_hotrod_geo.scw
+- assets/sc3d/carl_hotrod_tex.ktx
+- assets/sc3d/carl_leonard_geo.scw
+- assets/sc3d/carl_leonard_tex.ktx
+- assets/sc3d/carl_pirate_geo.scw
+- assets/sc3d/carl_pirate_tex.ktx
+- assets/sc3d/carl_silver_tex.ktx
+- assets/sc3d/carl_surfer_geo.glb
+- assets/sc3d/carl_surfer_lose.glb
+- assets/sc3d/carl_surfer_tex.ktx
+- assets/sc3d/carl_surfer_win.glb
+- assets/sc3d/carl_tex.ktx
+- assets/sc3d/colette_crew_geo.scw
+- assets/sc3d/colette_crew_tex.ktx
+- assets/sc3d/colette_crew_win.scw
+- assets/sc3d/colette_demon_lose.scw
+- assets/sc3d/colette_demon_win.scw
+- assets/sc3d/colette_geo.scw
+- assets/sc3d/colette_gladiator_geo.glb
+- assets/sc3d/colette_gladiator_lose.glb
+- assets/sc3d/colette_gladiator_tex.ktx
+- assets/sc3d/colette_gladiator_win.glb
+- assets/sc3d/colette_gold_tex.ktx
+- assets/sc3d/colette_silver_tex.ktx
+- assets/sc3d/colette_tex.ktx
+- assets/sc3d/colette_trixie_geo.scw
+- assets/sc3d/colette_trixie_tex.ktx
+- assets/sc3d/colette_win.scw
+- assets/sc3d/colt_badass_geo.glb
+- assets/sc3d/colt_badass_tex.ktx
+- assets/sc3d/colt_badass_win.glb
+- assets/sc3d/colt_footbrawl_america_tex.ktx
+- assets/sc3d/colt_footbrawl_buenosaires_tex.ktx
+- assets/sc3d/colt_footbrawl_geo.glb
+- assets/sc3d/colt_footbrawl_medellin_tex.ktx
+- assets/sc3d/colt_footbrawl_paraguay_tex.ktx
+- assets/sc3d/colt_geo.scw
+- assets/sc3d/colt_gold_tex.ktx
+- assets/sc3d/colt_hanbok_geo.scw
+- assets/sc3d/colt_hanbok_tex.ktx
+- assets/sc3d/colt_heist_geo.glb
+- assets/sc3d/colt_heist_lose.glb
+- assets/sc3d/colt_heist_tex.ktx
+- assets/sc3d/colt_heist_win.glb
+- assets/sc3d/colt_outlaw_tex.ktx
+- assets/sc3d/colt_pirate_geo.scw
+- assets/sc3d/colt_pirate_tex.ktx
+- assets/sc3d/colt_player_geo.scw
+- assets/sc3d/colt_player_lose.scw
+- assets/sc3d/colt_player_tex.ktx
+- assets/sc3d/colt_rockstar_geo.scw
+- assets/sc3d/colt_rockstar_tex.ktx
+- assets/sc3d/colt_silver_tex.ktx
+- assets/sc3d/colt_tex.ktx
+- assets/sc3d/crow_geo.glb
+- assets/sc3d/crow_gold_tex.ktx
+- assets/sc3d/crow_lose.glb
+- assets/sc3d/crow_mecha_geo.scw
+- assets/sc3d/crow_pheonix_geo.scw
+- assets/sc3d/crow_pheonix_tex.ktx
+- assets/sc3d/crow_silver_tex.ktx
+- assets/sc3d/crow_superhero_geo.glb
+- assets/sc3d/crow_superhero_lose.glb
+- assets/sc3d/crow_superhero_tex.ktx
+- assets/sc3d/crow_superhero_win.glb
+- assets/sc3d/crow_tex.ktx
+- assets/sc3d/crow_white_geo.glb
+- assets/sc3d/crow_white_tex.ktx
+- assets/sc3d/crow_win.glb
+- assets/sc3d/darryl_cny_geo.scw
+- assets/sc3d/darryl_cny_tex.ktx
+- assets/sc3d/darryl_droid_geo.scw
+- assets/sc3d/darryl_droid_tex.ktx
+- assets/sc3d/darryl_fb_geo.scw
+- assets/sc3d/darryl_fb_tex.ktx
+- assets/sc3d/darryl_geo.scw
+- assets/sc3d/darryl_gold_tex.ktx
+- assets/sc3d/darryl_megabox_geo.glb
+- assets/sc3d/darryl_megabox_tex.ktx
+- assets/sc3d/darryl_silver_tex.ktx
+- assets/sc3d/darryl_tex.ktx
+- assets/sc3d/dogturret.ktx
+- assets/sc3d/dogturret_gold_tex.ktx
+- assets/sc3d/dogturret_silver_tex.ktx
+- assets/sc3d/drums_geo.glb
+- assets/sc3d/dynamike_chef_geo.scw
+- assets/sc3d/dynamike_chef_tex.ktx
+- assets/sc3d/dynamike_coach_geo.scw
+- assets/sc3d/dynamike_coach_lose.scw
+- assets/sc3d/dynamike_coach_tex.ktx
+- assets/sc3d/dynamike_footbrawl_chivas_tex.ktx
+- assets/sc3d/dynamike_footbrawl_flamengo_tex.ktx
+- assets/sc3d/dynamike_footbrawl_geo.glb
+- assets/sc3d/dynamike_footbrawl_quito_tex.ktx
+- assets/sc3d/dynamike_geo.scw
+- assets/sc3d/dynamike_gold_tex.ktx
+- assets/sc3d/dynamike_groom_geo.scw
+- assets/sc3d/dynamike_groom_tex.ktx
+- assets/sc3d/dynamike_mecha_geo.scw
+- assets/sc3d/dynamike_mecha_tex.ktx
+- assets/sc3d/dynamike_psg_tex.ktx
+- assets/sc3d/dynamike_retro_anim_win.glb
+- assets/sc3d/dynamike_retro_geo.glb
+- assets/sc3d/dynamike_retro_rig.glb
+- assets/sc3d/dynamike_retro_tex.ktx
+- assets/sc3d/dynamike_santa_geo.scw
+- assets/sc3d/dynamike_santa_rope_geo.scw
+- assets/sc3d/dynamike_santa_tex.ktx
+- assets/sc3d/dynamike_silver_tex.ktx
+- assets/sc3d/dynamike_tex.ktx
+- assets/sc3d/dynamike_toxic_geo.glb
+- assets/sc3d/dynamike_toxic_lose.glb
+- assets/sc3d/dynamike_toxic_tex.ktx
+- assets/sc3d/dynamike_toxic_win.glb
+- assets/sc3d/edgar_duelist_attack.glb
+- assets/sc3d/edgar_duelist_geo.glb
+- assets/sc3d/edgar_duelist_lose.glb
+- assets/sc3d/edgar_duelist_super.glb
+- assets/sc3d/edgar_duelist_tex.ktx
+- assets/sc3d/edgar_duelist_win.glb
+- assets/sc3d/edgar_geo.scw
+- assets/sc3d/edgar_plant_attack.glb
+- assets/sc3d/edgar_plant_geo.glb
+- assets/sc3d/edgar_plant_lose.glb
+- assets/sc3d/edgar_plant_super.glb
+- assets/sc3d/edgar_plant_tex.ktx
+- assets/sc3d/edgar_plant_win.glb
+- assets/sc3d/edgar_serpent_geo.glb
+- assets/sc3d/edgar_serpent_lose.glb
+- assets/sc3d/edgar_serpent_win.glb
+- assets/sc3d/edgar_snakelord_tex.ktx
+- assets/sc3d/edgar_tex.ktx
+- assets/sc3d/edgar_win.scw
+- assets/sc3d/emz_college_geo.scw
+- assets/sc3d/emz_college_tex.ktx
+- assets/sc3d/emz_geo.scw
+- assets/sc3d/emz_giftshop_geo.scw
+- assets/sc3d/emz_giftshop_tex.ktx
+- assets/sc3d/emz_gold_tex.ktx
+- assets/sc3d/emz_silver_tex.ktx
+- assets/sc3d/emz_tex.ktx
+- assets/sc3d/evee_lose_01.glb
+- assets/sc3d/eve_geo.glb
+- assets/sc3d/eve_lose.glb
+- assets/sc3d/eve_space_cactus_geo.glb
+- assets/sc3d/eve_space_cactus_lose.glb
+- assets/sc3d/eve_space_cactus_tex.ktx
+- assets/sc3d/eve_space_cactus_win.glb
+- assets/sc3d/eve_tex.ktx
+- assets/sc3d/eve_win.glb
+- assets/sc3d/fang_fireball_geo.glb
+- assets/sc3d/fang_fireball_lose.glb
+- assets/sc3d/fang_fireball_tex.ktx
+- assets/sc3d/fang_fireball_win.glb
+- assets/sc3d/fang_geo.glb
+- assets/sc3d/fang_lose.glb
+- assets/sc3d/fang_tex.ktx
+- assets/sc3d/fang_win.glb
+- assets/sc3d/fastmeleebot_tex.ktx
+- assets/sc3d/fence_biodome.scw
+- assets/sc3d/frank_caveman_01.ktx
+- assets/sc3d/frank_caveman_geo.scw
+- assets/sc3d/frank_dj_geo.scw
+- assets/sc3d/frank_dj_tex.ktx
+- assets/sc3d/frank_geo.scw
+- assets/sc3d/frank_gold_tex.ktx
+- assets/sc3d/frank_mortuary_env_loop.scw
+- assets/sc3d/frank_silver_tex.ktx
+- assets/sc3d/frank_tex.ktx
+- assets/sc3d/frank_xmasparty_tex.ktx
+- assets/sc3d/frank_xmas_geo.scw
+- assets/sc3d/frank_xmas_lose.scw
+- assets/sc3d/frank_xmas_win.scw
+- assets/sc3d/gale_geo.scw
+- assets/sc3d/gale_gold_tex.ktx
+- assets/sc3d/gale_nutcracker_geo.scw
+- assets/sc3d/gale_nutcracker_tex.ktx
+- assets/sc3d/gale_silver_tex.ktx
+- assets/sc3d/gale_squeakbuster_geo.glb
+- assets/sc3d/gale_squeakbuster_lose.glb
+- assets/sc3d/gale_squeakbuster_tex.ktx
+- assets/sc3d/gale_squeakbuster_win.glb
+- assets/sc3d/gale_tex.ktx
+- assets/sc3d/gale_trader_geo.scw
+- assets/sc3d/gale_trader_tex.ktx
+- assets/sc3d/gale_trader_win.scw
+- assets/sc3d/gale_win.scw
+- assets/sc3d/gene_dark_geo.scw
+- assets/sc3d/gene_dark_tex.ktx
+- assets/sc3d/gene_geo.glb
+- assets/sc3d/gene_gold_tex.ktx
+- assets/sc3d/gene_pirate_geo.scw
+- assets/sc3d/gene_pirate_tex.ktx
+- assets/sc3d/gene_silver_tex.ktx
+- assets/sc3d/gene_swamp_geo.glb
+- assets/sc3d/gene_swamp_lose.glb
+- assets/sc3d/gene_swamp_portrait.glb
+- assets/sc3d/gene_swamp_tex.ktx
+- assets/sc3d/gene_swamp_win.glb
+- assets/sc3d/gene_tex.ktx
+- assets/sc3d/griff_geo.glb
+- assets/sc3d/griff_sled_geo.glb
+- assets/sc3d/griff_sled_lose.glb
+- assets/sc3d/griff_sled_tex.ktx
+- assets/sc3d/griff_sled_win.glb
+- assets/sc3d/griff_tex.ktx
+- assets/sc3d/griff_win.glb
+- assets/sc3d/grom_easter_geo.glb
+- assets/sc3d/grom_easter_lose.glb
+- assets/sc3d/grom_easter_tex.ktx
+- assets/sc3d/grom_easter_win.glb
+- assets/sc3d/grom_geo.glb
+- assets/sc3d/grom_tex.ktx
+- assets/sc3d/heist_safe.ktx
+- assets/sc3d/jacky_constructor_geo.scw
+- assets/sc3d/jacky_constructor_tex.ktx
+- assets/sc3d/jacky_driller_geo.glb
+- assets/sc3d/jacky_driller_lose.glb
+- assets/sc3d/jacky_driller_tex.ktx
+- assets/sc3d/jacky_driller_win.glb
+- assets/sc3d/jacky_geo.scw
+- assets/sc3d/jacky_gift_express_geo.glb
+- assets/sc3d/jacky_gift_express_tex.ktx
+- assets/sc3d/jacky_gift_express_win.glb
+- assets/sc3d/jacky_gold_tex.ktx
+- assets/sc3d/jacky_jetski_geo.glb
+- assets/sc3d/jacky_jetski_lose.glb
+- assets/sc3d/jacky_jetski_tex.ktx
+- assets/sc3d/jacky_jetski_win.glb
+- assets/sc3d/jacky_silver_tex.ktx
+- assets/sc3d/jacky_tex.ktx
+- assets/sc3d/jessiejessie_thief_lose.glb
+- assets/sc3d/jessiejessie_thief_win.glb
+- assets/sc3d/jessie_geo.glb
+- assets/sc3d/jessie_geo.scw
+- assets/sc3d/jessie_gold_tex.ktx
+- assets/sc3d/jessie_knight_geo.scw
+- assets/sc3d/jessie_knight_tex.ktx
+- assets/sc3d/jessie_red-dragon_tex.ktx
+- assets/sc3d/jessie_red-dragon_turret_tex.ktx
+- assets/sc3d/jessie_red_dragon_geo.scw
+- assets/sc3d/jessie_silver_tex.ktx
+- assets/sc3d/jessie_summertime_geo.scw
+- assets/sc3d/jessie_summertime_tex.ktx
+- assets/sc3d/jessie_tanuki_geo.scw
+- assets/sc3d/jessie_tanuki_tex.ktx
+- assets/sc3d/jessie_tex.ktx
+- assets/sc3d/jessie_thief_geo.glb
+- assets/sc3d/jessie_thief_lose.glb
+- assets/sc3d/jessie_thief_tex.ktx
+- assets/sc3d/jessie_thief_win.glb
+- assets/sc3d/jessie_turret_geo.glb
+- assets/sc3d/jessie_win.glb
+- assets/sc3d/kaiju_boss_geo.glb
+- assets/sc3d/kaiju_boss_tex.ktx
+- assets/sc3d/king_lou_geo.scw
+- assets/sc3d/leon_dino_geo.glb
+- assets/sc3d/leon_dino_lose.glb
+- assets/sc3d/leon_dino_tex.ktx
+- assets/sc3d/leon_dino_win.glb
+- assets/sc3d/leon_geo.scw
+- assets/sc3d/leon_gold_tex.ktx
+- assets/sc3d/leon_sally_geo.scw
+- assets/sc3d/leon_sally_tex.ktx
+- assets/sc3d/leon_silver_tex.ktx
+- assets/sc3d/leon_tex.ktx
+- assets/sc3d/leon_wolf_geo.scw
+- assets/sc3d/leon_wolf_tex.ktx
+- assets/sc3d/leon_wolf_win.scw
+- assets/sc3d/lolla_chola_geo.glb
+- assets/sc3d/lolla_chola_lose.glb
+- assets/sc3d/lolla_chola_tex.astc
+- assets/sc3d/lolla_chola_tex.ktx
+- assets/sc3d/lolla_chola_win.glb
+- assets/sc3d/lolla_geo.glb
+- assets/sc3d/lolla_tex.ktx
+- assets/sc3d/lolla_win.glb
+- assets/sc3d/lou_burger_geo.glb
+- assets/sc3d/lou_burger_tex.ktx
+- assets/sc3d/lou_burger_win.glb
+- assets/sc3d/lou_crooner_geo.scw
+- assets/sc3d/lou_crooner_tex.ktx
+- assets/sc3d/lou_geo.scw
+- assets/sc3d/lou_gold_tex.ktx
+- assets/sc3d/lou_king_geo.scw
+- assets/sc3d/lou_king_tex.ktx
+- assets/sc3d/lou_silver_tex.ktx
+- assets/sc3d/lou_tex.ktx
+- assets/sc3d/mari_geo.scw
+- assets/sc3d/mari_tex.ktx
+- assets/sc3d/max_cony_geo.scw
+- assets/sc3d/max_cony_tex.ktx
+- assets/sc3d/max_geo.scw
+- assets/sc3d/max_gold_tex.ktx
+- assets/sc3d/max_gt_tex.ktx
+- assets/sc3d/max_hermes_geo.glb
+- assets/sc3d/max_hermes_lose.glb
+- assets/sc3d/max_hermes_tex.ktx
+- assets/sc3d/max_hermes_win.glb
+- assets/sc3d/max_silver_tex.ktx
+- assets/sc3d/max_tex.ktx
+- assets/sc3d/max_tracksuit_geo.glb
+- assets/sc3d/max_tracksuit_lose.glb
+- assets/sc3d/max_tracksuit_tex.ktx
+- assets/sc3d/max_tracksuit_win.glb
+- assets/sc3d/meg_beetle_geo.glb
+- assets/sc3d/meg_beetle_lose.glb
+- assets/sc3d/meg_beetle_mecha_geo.glb
+- assets/sc3d/meg_beetle_tex.ktx
+- assets/sc3d/meg_beetle_win.glb
+- assets/sc3d/meg_geo.glb
+- assets/sc3d/meg_mecha_beetle_tex.ktx
+- assets/sc3d/meg_mecha_geo.glb
+- assets/sc3d/meg_mecha_tex.ktx
+- assets/sc3d/meg_tex.ktx
+- assets/sc3d/meg_win.glb
+- assets/sc3d/meleebot_geo.scw
+- assets/sc3d/meleebot_tex.ktx
+- assets/sc3d/mine_gem_spawn.ktx
+- assets/sc3d/mist_1.ktx
+- assets/sc3d/mortis_beach_geo.glb
+- assets/sc3d/mortis_beach_tex.ktx
+- assets/sc3d/mortis_dark_geo.scw
+- assets/sc3d/mortis_dark_lose.scw
+- assets/sc3d/mortis_dark_tex.ktx
+- assets/sc3d/mortis_geo.scw
+- assets/sc3d/mortis_gold_tex.ktx
+- assets/sc3d/mortis_greaser_geo.scw
+- assets/sc3d/mortis_greaser_tex_02.ktx
+- assets/sc3d/mortis_nightwitch_geo.scw
+- assets/sc3d/mortis_nightwitch_tex.ktx
+- assets/sc3d/mortis_silver_tex.ktx
+- assets/sc3d/mortis_v2_tex.ktx
+- assets/sc3d/mrp_agentp_geo.scw
+- assets/sc3d/mrp_agentp_tex.ktx
+- assets/sc3d/mrp_count_pengula_geo.glb
+- assets/sc3d/mrp_count_pengula_lose.glb
+- assets/sc3d/mrp_count_pengula_tex.ktx
+- assets/sc3d/mrp_count_pengula_win.glb
+- assets/sc3d/mrp_fly_geo.glb
+- assets/sc3d/mrp_fly_lose.glb
+- assets/sc3d/mrp_fly_spawner_tex.ktx
+- assets/sc3d/mrp_fly_spawner_tex_face.ktx
+- assets/sc3d/mrp_fly_tex.ktx
+- assets/sc3d/mrp_fly_win.glb
+- assets/sc3d/mrp_geo.scw
+- assets/sc3d/mrp_gold_tex.ktx
+- assets/sc3d/mrp_silver_tex.ktx
+- assets/sc3d/mrp_spawner_gold_tex.ktx
+- assets/sc3d/mrp_spawner_silver_tex.ktx
+- assets/sc3d/mrp_tex.ktx
+- assets/sc3d/multi_bumper_car.scw
+- assets/sc3d/nani_geo.scw
+- assets/sc3d/nani_gold_tex.ktx
+- assets/sc3d/nani_line_friends_geo.scw
+- assets/sc3d/nani_line_friends_tex.ktx
+- assets/sc3d/nani_retro_geo.scw
+- assets/sc3d/nani_retro_tex.ktx
+- assets/sc3d/nani_silver_tex.ktx
+- assets/sc3d/nani_tex.ktx
+- assets/sc3d/nita_bear_geo.scw
+- assets/sc3d/nita_bear_gold.ktx
+- assets/sc3d/nita_bear_gold_tex.ktx
+- assets/sc3d/nita_bear_make_geo.glb
+- assets/sc3d/nita_bear_make_tex.ktx
+- assets/sc3d/nita_bear_nian_geo.glb
+- assets/sc3d/nita_bear_nian_tex.ktx
+- assets/sc3d/nita_bear_panda_tex.ktx
+- assets/sc3d/nita_bear_reindeer_tex.ktx
+- assets/sc3d/nita_bear_shiba_tex.ktx
+- assets/sc3d/nita_bear_silver.ktx
+- assets/sc3d/nita_bear_silver_tex.ktx
+- assets/sc3d/nita_bear_tex.ktx
+- assets/sc3d/nita_geo.scw
+- assets/sc3d/nita_gold_tex.ktx
+- assets/sc3d/nita_koala_bear_tex.ktx
+- assets/sc3d/nita_koala_geo.scw
+- assets/sc3d/nita_koala_tex.ktx
+- assets/sc3d/nita_make_geo.glb
+- assets/sc3d/nita_make_lose.glb
+- assets/sc3d/nita_make_tex.ktx
+- assets/sc3d/nita_make_win.glb
+- assets/sc3d/nita_nian_geo.glb
+- assets/sc3d/nita_nian_tex.ktx
+- assets/sc3d/nita_panda_tex.ktx
+- assets/sc3d/nita_reindeer_geo.scw
+- assets/sc3d/nita_reindeer_tex.ktx
+- assets/sc3d/nita_shiba_geo.scw
+- assets/sc3d/nita_shiba_tex.ktx
+- assets/sc3d/nita_silver_tex.ktx
+- assets/sc3d/nita_tex.ktx
+- assets/sc3d/pam_geo.scw
+- assets/sc3d/pam_gold_tex.ktx
+- assets/sc3d/pam_gun_gold_tex.ktx
+- assets/sc3d/pam_gun_silver_tex.ktx
+- assets/sc3d/pam_gun_tex.ktx
+- assets/sc3d/pam_queen_dragon_tex.ktx
+- assets/sc3d/pam_queen_geo.glb
+- assets/sc3d/pam_queen_gun_tex.ktx
+- assets/sc3d/pam_queen_lose.glb
+- assets/sc3d/pam_queen_tex.ktx
+- assets/sc3d/pam_queen_turret_geo.glb
+- assets/sc3d/pam_queen_win.glb
+- assets/sc3d/pam_silver_tex.ktx
+- assets/sc3d/pam_summer_geo.scw
+- assets/sc3d/pam_summer_gun_tex.ktx
+- assets/sc3d/pam_summer_tex.ktx
+- assets/sc3d/pam_summer_turret_geo.scw
+- assets/sc3d/pam_tex.ktx
+- assets/sc3d/pam_turret_blue_tex.ktx
+- assets/sc3d/pam_turret_red_tex.ktx
+- assets/sc3d/pam_win.scw
+- assets/sc3d/peep_line_friends_geo.scw
+- assets/sc3d/penny_bunnydark_tex.ktx
+- assets/sc3d/penny_bunny_geo.scw
+- assets/sc3d/penny_bunny_tex.ktx
+- assets/sc3d/penny_darkbunny_geo.scw
+- assets/sc3d/penny_elf_geo.scw
+- assets/sc3d/penny_elf_tex.ktx
+- assets/sc3d/penny_gold_tex.ktx
+- assets/sc3d/penny_silver_tex.ktx
+- assets/sc3d/penny_smuggler_geo.glb
+- assets/sc3d/penny_smuggler_tex.ktx
+- assets/sc3d/piper_geo.scw
+- assets/sc3d/piper_gold_tex.ktx
+- assets/sc3d/piper_line_friends_geo.scw
+- assets/sc3d/piper_line_friends_tex.ktx
+- assets/sc3d/piper_lunar_geo.glb
+- assets/sc3d/piper_lunar_lose.glb
+- assets/sc3d/piper_lunar_tex.ktx
+- assets/sc3d/piper_lunar_win.glb
+- assets/sc3d/piper_pink_tex.ktx
+- assets/sc3d/piper_rose.scw
+- assets/sc3d/piper_rose_geo.scw
+- assets/sc3d/piper_rose_tex.ktx
+- assets/sc3d/piper_silver_tex.ktx
+- assets/sc3d/piper_tex.ktx
+- assets/sc3d/piper_valentines_geo.scw
+- assets/sc3d/piper_valentines_tex.ktx
+- assets/sc3d/piper_valentines_win.scw
+- assets/sc3d/piper_win.scw
+- assets/sc3d/poco_geo.scw
+- assets/sc3d/poco_gold_tex.ktx
+- assets/sc3d/poco_pirate_geo.scw
+- assets/sc3d/poco_pirate_tex.ktx
+- assets/sc3d/poco_punk_geo.glb
+- assets/sc3d/poco_punk_lose.glb
+- assets/sc3d/poco_punk_portrait.glb
+- assets/sc3d/poco_punk_tex.ktx
+- assets/sc3d/poco_punk_win.glb
+- assets/sc3d/poco_silver_tex.ktx
+- assets/sc3d/poco_starr_geo.scw
+- assets/sc3d/poco_starr_tex.ktx
+- assets/sc3d/poco_tex.ktx
+- assets/sc3d/poco_valentine_geo.scw
+- assets/sc3d/poco_valentine_tex.ktx
+- assets/sc3d/primo_atomico_tex.ktx
+- assets/sc3d/primo_brown_geo.scw
+- assets/sc3d/primo_brown_tex.ktx
+- assets/sc3d/primo_corazon_geo.glb
+- assets/sc3d/primo_corazon_tex.ktx
+- assets/sc3d/primo_corazon_win.glb
+- assets/sc3d/primo_dragon_chroma_01_tex.ktx
+- assets/sc3d/primo_dragon_geo.glb
+- assets/sc3d/primo_dragon_lose.glb
+- assets/sc3d/primo_dragon_tex.ktx
+- assets/sc3d/primo_dragon_win.glb
+- assets/sc3d/primo_elrey_geo.scw
+- assets/sc3d/primo_elrey_tex.ktx
+- assets/sc3d/primo_elrudo_geo.scw
+- assets/sc3d/primo_elrudo_tex.ktx
+- assets/sc3d/primo_footbrawl_brazil_tex.ktx
+- assets/sc3d/primo_footbrawl_geo.glb
+- assets/sc3d/primo_footbrawl_peru_tex.ktx
+- assets/sc3d/primo_footbrawl_uruguay_tex.ktx
+- assets/sc3d/primo_geo.scw
+- assets/sc3d/primo_gold_tex.ktx
+- assets/sc3d/primo_silver_tex.ktx
+- assets/sc3d/primo_tex.ktx
+- assets/sc3d/primo_tiger_geo.glb
+- assets/sc3d/primo_tiger_lose.glb
+- assets/sc3d/primo_tiger_win.glb
+- assets/sc3d/primo_tigro_tex.ktx
+- assets/sc3d/rangedbot_geo.scw
+- assets/sc3d/rangedbot_tex.ktx
+- assets/sc3d/rico_chicken_geo.glb
+- assets/sc3d/rico_chicken_idle.glb
+- assets/sc3d/rico_chicken_lose.glb
+- assets/sc3d/rico_chicken_tex.ktx
+- assets/sc3d/rico_chicken_win.glb
+- assets/sc3d/rico_dark.ktx
+- assets/sc3d/rico_dark_geo.scw
+- assets/sc3d/rico_dark_lose.glb
+- assets/sc3d/rico_firefly_geo.glb
+- assets/sc3d/rico_firefly_idle.glb
+- assets/sc3d/rico_firefly_lose.glb
+- assets/sc3d/rico_firefly_tex.ktx
+- assets/sc3d/rico_firefly_win.glb
+- assets/sc3d/rico_geo.scw
+- assets/sc3d/rico_gold_geo.scw
+- assets/sc3d/rico_gold_tex.ktx
+- assets/sc3d/rico_og_geo.scw
+- assets/sc3d/rico_og_tex.ktx
+- assets/sc3d/rico_popcorn_geo.scw
+- assets/sc3d/rico_popcorn_tex.ktx
+- assets/sc3d/rico_silver_tex.ktx
+- assets/sc3d/rico_tex.ktx
+- assets/sc3d/rico_truegold_tex.ktx
+- assets/sc3d/rosa_brawloween_geo.scw
+- assets/sc3d/rosa_brawloween_tex.ktx
+- assets/sc3d/rosa_coco_geo.glb
+- assets/sc3d/rosa_coco_lose.glb
+- assets/sc3d/rosa_coco_tex.ktx
+- assets/sc3d/rosa_coco_transform_tex.ktx
+- assets/sc3d/rosa_coco_win.glb
+- assets/sc3d/rosa_geo.scw
+- assets/sc3d/rosa_gold_tex.ktx
+- assets/sc3d/rosa_mantis_detransform.glb
+- assets/sc3d/rosa_mantis_geo.glb
+- assets/sc3d/rosa_mantis_lose.glb
+- assets/sc3d/rosa_mantis_tex.ktx
+- assets/sc3d/rosa_mantis_transform_tex.ktx
+- assets/sc3d/rosa_mantis_ult.glb
+- assets/sc3d/rosa_mantis_win.glb
+- assets/sc3d/rosa_sergeant_attack.glb
+- assets/sc3d/rosa_sergeant_attack_transform.glb
+- assets/sc3d/rosa_sergeant_detransform.glb
+- assets/sc3d/rosa_sergeant_geo.glb
+- assets/sc3d/rosa_sergeant_idle.glb
+- assets/sc3d/rosa_sergeant_idle_transform.glb
+- assets/sc3d/rosa_sergeant_lose.glb
+- assets/sc3d/rosa_sergeant_tex.ktx
+- assets/sc3d/rosa_sergeant_ult.glb
+- assets/sc3d/rosa_sergeant_walk.glb
+- assets/sc3d/rosa_sergeant_win.glb
+- assets/sc3d/rosa_silver_tex.ktx
+- assets/sc3d/rosa_tex.ktx
+- assets/sc3d/rosa_win.scw
+- assets/sc3d/ruffs_geo.scw
+- assets/sc3d/ruffs_gold_tex.ktx
+- assets/sc3d/ruffs_marshal_geo.glb
+- assets/sc3d/ruffs_marshal_tex.ktx
+- assets/sc3d/ruffs_marshal_win.glb
+- assets/sc3d/ruffs_rohin_geo.scw
+- assets/sc3d/ruffs_ronin_tex.ktx
+- assets/sc3d/ruffs_silver_tex.ktx
+- assets/sc3d/ruffs_tex.ktx
+- assets/sc3d/sandy_geo.scw
+- assets/sc3d/sandy_gold_tex.ktx
+- assets/sc3d/sandy_lantern_geo.glb
+- assets/sc3d/sandy_lantern_idle.glb
+- assets/sc3d/sandy_lantern_lose.glb
+- assets/sc3d/sandy_lantern_tex.ktx
+- assets/sc3d/sandy_lantern_win.glb
+- assets/sc3d/sandy_silver_tex.ktx
+- assets/sc3d/sandy_sugar_addict_geo.scw
+- assets/sc3d/sandy_sugar_addict_tex.ktx
+- assets/sc3d/sandy_tex.ktx
+- assets/sc3d/shark_leon_geo.scw
+- assets/sc3d/shark_leon_tex.ktx
+- assets/sc3d/shelly_bandita_geo.scw
+- assets/sc3d/shelly_bandita_tex.ktx
+- assets/sc3d/shelly_fb_geo.scw
+- assets/sc3d/shelly_fb_tex.ktx
+- assets/sc3d/shelly_footbrawl_argentina_tex.ktx
+- assets/sc3d/shelly_footbrawl_chile_tex.ktx
+- assets/sc3d/shelly_footbrawl_chili_tex.ktx
+- assets/sc3d/shelly_footbrawl_colombia_tex.ktx
+- assets/sc3d/shelly_footbrawl_geo.glb
+- assets/sc3d/shelly_geo.scw
+- assets/sc3d/shelly_gold_tex.ktx
+- assets/sc3d/shelly_prereg_01.ktx
+- assets/sc3d/shelly_prereg_geo.scw
+- assets/sc3d/shelly_princess_geo.glb
+- assets/sc3d/shelly_princess_lose.glb
+- assets/sc3d/shelly_princess_tex.ktx
+- assets/sc3d/shelly_princess_win.glb
+- assets/sc3d/shelly_silver_tex.ktx
+- assets/sc3d/shelly_v2_01.ktx
+- assets/sc3d/shelly_winloop_extended.glb
+- assets/sc3d/shelly_witch_geo.scw
+- assets/sc3d/shelly_witch_tex.ktx
+- assets/sc3d/shelly_witch_win.scw
+- assets/sc3d/siege_base.scw
+- assets/sc3d/sleepy_sandy.scw
+- assets/sc3d/sleepy_sandy_tex.ktx
+- assets/sc3d/sniper_geo.scw
+- assets/sc3d/spike_blossom_geo.scw
+- assets/sc3d/spike_blossom_tex.ktx
+- assets/sc3d/spike_geo.scw
+- assets/sc3d/spike_gold_tex.ktx
+- assets/sc3d/spike_log_geo.glb
+- assets/sc3d/spike_log_lose.glb
+- assets/sc3d/spike_log_tex.ktx
+- assets/sc3d/spike_log_win.glb
+- assets/sc3d/spike_log_win_idlebreaker.glb
+- assets/sc3d/spike_lord_geo.scw
+- assets/sc3d/spike_lord_tex.ktx
+- assets/sc3d/spike_lord_win.scw
+- assets/sc3d/spike_mask_geo.scw
+- assets/sc3d/spike_mask_tex.ktx
+- assets/sc3d/spike_mecha_geo.scw
+- assets/sc3d/spike_mecha_tex.ktx
+- assets/sc3d/spike_silver_tex.ktx
+- assets/sc3d/spike_tex.ktx
+- assets/sc3d/sprout_geo.scw
+- assets/sc3d/sprout_gold_tex.ktx
+- assets/sc3d/sprout_hawaii_geo.scw
+- assets/sc3d/sprout_hawaii_tex.ktx
+- assets/sc3d/sprout_hawaii_win.scw
+- assets/sc3d/sprout_moon_geo.scw
+- assets/sc3d/sprout_moon_tex.ktx
+- assets/sc3d/sprout_prince_chroma_01_tex.ktx
+- assets/sc3d/sprout_prince_geo.glb
+- assets/sc3d/sprout_prince_tex.ktx
+- assets/sc3d/sprout_prince_win.glb
+- assets/sc3d/sprout_silver_tex.ktx
+- assets/sc3d/sprout_tex.ktx
+- assets/sc3d/sprout_weird_plant_geo.glb
+- assets/sc3d/sprout_weird_plant_idle.glb
+- assets/sc3d/sprout_weird_plant_lose.glb
+- assets/sc3d/sprout_weird_plant_tex.ktx
+- assets/sc3d/sprout_weird_plant_win.glb
+- assets/sc3d/sprout_win.scw
+- assets/sc3d/squeak_geo.glb
+- assets/sc3d/squeak_ghost_geo.glb
+- assets/sc3d/squeak_ghost_lose.glb
+- assets/sc3d/squeak_ghost_portrait.glb
+- assets/sc3d/squeak_ghost_tex.ktx
+- assets/sc3d/squeak_ghost_win.glb
+- assets/sc3d/squeak_lose.glb
+- assets/sc3d/squeak_potato_geo.glb
+- assets/sc3d/squeak_potato_lose.glb
+- assets/sc3d/squeak_potato_tex.ktx
+- assets/sc3d/squeak_potato_win.glb
+- assets/sc3d/squeak_tex.ktx
+- assets/sc3d/squeak_win.glb
+- assets/sc3d/stu_geo.glb
+- assets/sc3d/stu_headless_geo.glb
+- assets/sc3d/stu_headless_goe.glb
+- assets/sc3d/stu_headless_lose.glb
+- assets/sc3d/stu_headless_portrait.glb
+- assets/sc3d/stu_headless_tex.ktx
+- assets/sc3d/stu_headless_win.glb
+- assets/sc3d/stu_lose.glb
+- assets/sc3d/stu_punk_geo.glb
+- assets/sc3d/stu_punk_lose.glb
+- assets/sc3d/stu_punk_tex.ktx
+- assets/sc3d/stu_punk_win.glb
+- assets/sc3d/stu_tex.ktx
+- assets/sc3d/stu_white_tex.ktx
+- assets/sc3d/stu_win.glb
+- assets/sc3d/surge_diy_geo.glb
+- assets/sc3d/surge_diy_tex.ktx
+- assets/sc3d/surge_geo.glb
+- assets/sc3d/surge_gold_tex.ktx
+- assets/sc3d/surge_knight_geo.glb
+- assets/sc3d/surge_knight_lose.glb
+- assets/sc3d/surge_knight_tex.ktx
+- assets/sc3d/surge_knight_win.glb
+- assets/sc3d/surge_kong_geo.glb
+- assets/sc3d/surge_kong_lose.glb
+- assets/sc3d/surge_kong_portrait.glb
+- assets/sc3d/surge_kong_tex.ktx
+- assets/sc3d/surge_kong_win.glb
+- assets/sc3d/surge_lose.glb
+- assets/sc3d/surge_silver_tex.ktx
+- assets/sc3d/surge_super.glb
+- assets/sc3d/surge_tex.ktx
+- assets/sc3d/surge_win.glb
+- assets/sc3d/tara_blue_geo.scw
+- assets/sc3d/tara_blue_tex.ktx
+- assets/sc3d/tara_geo.scw
+- assets/sc3d/tara_gold_tex.ktx
+- assets/sc3d/tara_misfortune_geo.glb
+- assets/sc3d/tara_misfortune_lose.glb
+- assets/sc3d/tara_misfortune_tex.ktx
+- assets/sc3d/tara_misfortune_win.glb
+- assets/sc3d/tara_silver_tex.ktx
+- assets/sc3d/tara_streetninja_geo.scw
+- assets/sc3d/tara_streetninja_tex.ktx
+- assets/sc3d/tara_tex.ktx
+- assets/sc3d/termina_bull_lose.glb
+- assets/sc3d/termina_bull_portrait.glb
+- assets/sc3d/tick_crab_geo.glb
+- assets/sc3d/tick_crab_tex.ktx
+- assets/sc3d/tick_crab_win.glb
+- assets/sc3d/tick_geo.scw
+- assets/sc3d/tick_gold_tex.ktx
+- assets/sc3d/tick_silver_tex.ktx
+- assets/sc3d/tick_snowman_geo.scw
+- assets/sc3d/tick_snowman_tex.ktx
+- assets/sc3d/tick_tex.ktx
+- assets/sc3d/turret_dragon_tex.ktx
+- assets/sc3d/turret_jessie_tanuki_tex.ktx
+- assets/sc3d/turret_summertime_tex.ktx
+- assets/sc3d/wally_wall.scw
+- assets/sc3d/wally_wall_weird.scw
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '18'
+  targetSdkVersion: '30'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  androidsupportmultidexversion.txt: '0'
+  billing.properties: '8'
+  build-data.properties: '8'
+  firebase-analytics-impl.properties: '8'
+  firebase-analytics.properties: '8'
+  firebase-common.properties: '8'
+  firebase-core.properties: '8'
+  firebase-iid-interop.properties: '8'
+  firebase-iid.properties: '8'
+  firebase-measurement-connector-impl.properties: '8'
+  firebase-measurement-connector.properties: '8'
+  firebase-messaging.properties: '8'
+  play-services-ads-base.properties: '8'
+  play-services-ads-identifier.properties: '8'
+  play-services-ads-lite.properties: '8'
+  play-services-ads.properties: '8'
+  play-services-auth-api-phone.properties: '8'
+  play-services-auth-base.properties: '8'
+  play-services-auth.properties: '8'
+  play-services-base.properties: '8'
+  play-services-basement.properties: '8'
+  play-services-drive.properties: '8'
+  play-services-games.properties: '8'
+  play-services-gass.properties: '8'
+  play-services-instantapps.properties: '8'
+  play-services-measurement-api.properties: '8'
+  play-services-measurement-base.properties: '8'
+  play-services-measurement-sdk-api.properties: '8'
+  play-services-stats.properties: '8'
+  play-services-tasks.properties: '8'
+  stamp-cert-sha256: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_255: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_27: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_30: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_31: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_34: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_350: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_351: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_352: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_358: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_359: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_36: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_372: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_373: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_375: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_380: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_381: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_385: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_39: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_43: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_44: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_49: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_505: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_506: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_52: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_54: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_55: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_58: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_595: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_61: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_62: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_63: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_64: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_66: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_675: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_676: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_679: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_7: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_81: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_84: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_855: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_856: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_90: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_91: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_94: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_95: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_971: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_972: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_995: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_800: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_808: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_870: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_878: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_881: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_882: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_883: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_888: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_979: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AC: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AD: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AF: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AL: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AS: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AU: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AW: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AX: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BB: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BD: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BF: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BH: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BJ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BL: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BQ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BS: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BW: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BY: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CC: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CD: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CF: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CH: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CL: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CU: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CV: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CW: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CX: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CY: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_DE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_DJ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_DK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_DM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_DO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_DZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_EC: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_EE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_EG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_EH: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ER: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ES: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ET: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_FI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_FJ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_FK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_FM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_FO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_FR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GB: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GD: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GF: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GH: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GL: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GP: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GQ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GU: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GW: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GY: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_HK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_HN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_HR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_HT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_HU: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ID: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_IE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_IL: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_IM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_IN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_IO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_IQ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_IR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_IS: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_IT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_JE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_JM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_JO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_JP: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KH: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KP: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KW: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KY: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LB: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LC: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LS: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LU: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LV: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LY: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MC: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MD: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ME: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MF: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MH: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ML: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MP: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MQ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MS: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MU: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MV: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MW: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MX: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MY: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NC: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NF: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NL: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NP: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NU: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_OM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PF: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PH: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PL: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PS: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PW: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PY: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_QA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_RE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_RO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_RS: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_RU: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_RW: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SB: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SC: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SD: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SH: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SJ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SL: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SS: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ST: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SV: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SX: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SY: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TC: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TD: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TH: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TJ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TL: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TV: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TW: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_UA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_UG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_US: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_UY: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_UZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_VA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_VC: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_VE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_VG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_VI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_VN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_VU: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_WF: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_WS: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_XK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_YE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_YT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ZA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ZM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ZW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AC: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AD: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AF: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AL: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AS: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AU: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AX: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BB: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BD: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BF: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BH: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BJ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BL: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BQ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BS: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BY: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CC: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CD: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CF: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CH: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CK: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CL: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CU: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CV: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CX: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CY: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_DE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_DJ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_DK: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_DM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_DO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_DZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_EC: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_EE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_EG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_EH: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ER: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ES: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ET: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_FI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_FJ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_FK: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_FM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_FO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_FR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GB: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GD: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GF: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GH: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GL: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GP: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GU: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GY: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_HK: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_HN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_HR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_HT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_HU: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ID: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_IE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_IL: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_IM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_IN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_IQ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_IR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_IS: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_IT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_JE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_JM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_JO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_JP: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KH: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KP: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KY: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LB: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LC: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LK: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LS: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LU: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LV: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LY: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MC: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MD: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ME: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MF: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MH: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MK: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ML: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MP: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MQ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MS: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MU: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MV: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MX: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MY: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NC: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NF: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NL: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NP: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NU: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_OM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PF: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PH: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PK: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PL: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PS: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PY: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_QA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_RE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_RO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_RS: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_RU: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_RW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SB: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SC: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SD: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SH: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SJ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SK: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SL: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ST: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SV: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SX: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SY: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TC: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TD: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TH: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TJ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TL: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TV: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_UA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_UG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_US: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_UY: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_UZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_VA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_VC: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_VE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_VG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_VI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_VN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_VU: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_WF: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_WS: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_XK: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_YE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_YT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ZA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ZM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ZW: '8'
+  google/protobuf/any.proto: '8'
+  google/protobuf/api.proto: '8'
+  google/protobuf/duration.proto: '8'
+  google/protobuf/empty.proto: '8'
+  google/protobuf/field_mask.proto: '8'
+  google/protobuf/source_context.proto: '8'
+  google/protobuf/struct.proto: '8'
+  google/protobuf/timestamp.proto: '8'
+  google/protobuf/type.proto: '8'
+  google/protobuf/wrappers.proto: '8'
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '0'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.5.0
+versionInfo:
+  versionCode: '42333'
+  versionName: '42.333'

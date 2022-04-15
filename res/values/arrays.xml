@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="facebook_read_pemissions">
+        <item>user_posts</item>
+    </string-array>
+    <array name="google_pemissions" />
+    <array name="kakao_game_android_permissions" />
+</resources>

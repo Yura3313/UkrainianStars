@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="@dimen/hs__listPreferredItemPaddingTop" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="start" android:id="@id/admin_review_message_layout" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hs__chatBubbleMargin" android:layout_weight="4.0" android:layout_marginStart="@dimen/hs__chatBubbleMargin">
+        <com.helpshift.views.CircleImageView android:id="@id/avatar_image_view" android:layout_below="@id/review_request_date" style="@style/Helpshift.Style.AvatarImageView" />
+        <LinearLayout android:id="@id/review_request_message_container" android:layout_toRightOf="@id/avatar_image_view" android:layout_below="@id/review_request_date" style="@style/Helpshift.Style.AdminTextMessageContainer">
+            <com.helpshift.views.HSTextView android:id="@id/review_request_message" style="@style/Helpshift.Style.AdminTextMessage" />
+            <com.helpshift.views.HSButton android:id="@id/review_request_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip" android:text="@string/hs__app_review_button" android:contentDescription="@string/hs__review_title" style="@style/Helpshift.Style.BorderlessButton" />
+        </LinearLayout>
+        <com.helpshift.views.HSTextView android:id="@id/review_request_date" android:layout_toRightOf="@id/avatar_image_view" android:layout_alignParentTop="true" style="@style/Helpshift.Style.AdminMessageDate" />
+    </RelativeLayout>
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" />
+</LinearLayout>

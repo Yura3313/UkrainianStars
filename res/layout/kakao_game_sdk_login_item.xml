@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingBottom="@dimen/sdk_login_idp_item_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/kakao_game_login_idp_item" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/kakao_game_login_idp_item_icon" android:layout_width="@dimen/sdk_login_idp_icon_size" android:layout_height="@dimen/sdk_login_idp_icon_size" android:layout_marginLeft="@dimen/sdk_login_idp_icon_margin" android:layout_marginTop="@dimen/sdk_login_idp_icon_margin" android:layout_marginBottom="@dimen/sdk_login_idp_icon_margin" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textStyle="normal" android:textColor="@color/kakao_sdk_login_idp_name_text_color" android:gravity="center" android:id="@id/kakao_game_login_idp_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sdk_login_idp_icon_margin" android:layout_toRightOf="@id/kakao_game_login_idp_item_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

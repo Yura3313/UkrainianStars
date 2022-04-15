@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="integer" name="id_icon_scale">1.0</item>
+    <item type="integer" name="tab_icon_scale">0.9</item>
+</resources>

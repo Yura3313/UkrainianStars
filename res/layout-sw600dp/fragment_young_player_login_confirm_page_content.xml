@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/titleTextView" style="@style/SupercellIdFlowPageTitle" />
+    <TextView android:id="@id/subtitleTextView" style="@style/SupercellIdFlowPageSubtitle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/gameAccountContainer" android:background="@drawable/border_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="@dimen/flow_page_subtitle_margin_top" android:layout_marginRight="17.0dip" app:dropShadow="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_row_height">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/systemImageView" android:layout_width="@dimen/connected_game_icon_size" android:layout_height="@dimen/connected_game_icon_size" android:layout_marginLeft="@dimen/list_item_image_horizontal_margin" android:layout_marginRight="@dimen/list_item_image_horizontal_margin" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/M" android:textColor="@color/black" android:layout_gravity="start" android:id="@id/systemNameLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/XXS" android:textColor="@color/gray60" android:gravity="start|center" android:layout_gravity="start" android:id="@id/systemNicknameLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:textAlignment="viewStart" />
+                <TextView android:textSize="@dimen/XXS" android:textColor="@color/gray60" android:layout_gravity="start" android:id="@id/systemLevelLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <Space android:layout_width="@dimen/list_padding_horizontal" android:layout_height="0.0dip" />
+        </LinearLayout>
+        <View android:background="@color/gray91" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_row_height">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/connected_game_icon_size" android:layout_height="@dimen/connected_game_icon_size" android:layout_marginLeft="@dimen/list_item_image_horizontal_margin" android:layout_marginRight="@dimen/list_item_image_horizontal_margin" srcKey="AccountIconBig.png" />
+            <TextView android:textSize="@dimen/M" android:textColor="@color/black" android:gravity="start" android:layout_gravity="center_vertical" android:id="@id/contactDetailLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" android:textAlignment="viewStart" />
+            <Space android:layout_width="@dimen/list_padding_horizontal" android:layout_height="0.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/S" android:textColor="@color/gray40" android:gravity="center" android:id="@id/infoTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="@dimen/flow_page_check_mark_margin_top" android:layout_marginRight="17.0dip" android:textAlignment="center" />
+    <LinearLayout style="@style/SupercellIdFlowPageButtonContainer">
+        <com.supercell.id.view.WidthAdjustingMultilineButton android:id="@id/cancelButton" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/SupercellIdButtonCancel" />
+        <Space android:layout_width="12.0dip" android:layout_height="0.0dip" />
+        <com.supercell.id.view.WidthAdjustingMultilineButton android:id="@id/okButton" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/SupercellIdButtonPrimary" />
+    </LinearLayout>
+</merge>

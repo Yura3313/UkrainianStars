@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:forceInsetSystemWindow="true" app:insetSystemWindow="right|bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:id="@id/loginButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="160.0dip" android:layout_centerInParent="true" style="@style/SupercellIdButtonPrimary" textKey="start_btn_log_in" />
+        <TextView android:textSize="@dimen/L" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_above="@id/loginButton" android:layout_centerHorizontal="true" textKey="start_log_in_description" />
+        <TextView android:textSize="@dimen/S" android:textColor="@color/black" android:gravity="center" android:id="@id/register" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/loginButton" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAlignment="gravity" />
+    </RelativeLayout>
+</FrameLayout>
