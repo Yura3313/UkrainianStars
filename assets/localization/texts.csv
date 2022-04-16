@@ -479,7 +479,7 @@ TID_RESPAWNING,Повернення через:\n<n1>
 TID_TEAMS_POPUP_TITLE,КОМАНДИ
 TID_TEAMS_POPUP_SUBTITLE_IN_CLAN,Клуб і Друзі
 TID_TEAMS_POPUP_SUBTITLE_NOT_IN_CLAN,"ПРИЄДНУЙТЕСЬ ДО КЛУБУ, ЩОБ ДИВИТИСЯ АКТИВНІ БИТВИ ТУТ"
-TID_TEAMS_POPUP_SEARCH,
+TID_TEAMS_POPUP_SEARCH,ПРИЄДНАТИСЯ ЗА КОДОМ
 TID_TEAMS_POPUP_CREATE,СТВОРИТИ КОМАНДУ
 TID_TEAM_SEARCH_POPUP_TITLE,ПРИЄДНАТИСЯ З КОДОМ
 TID_TEAM_SEARCH_POPUP_SEARCH,ПРИЄДНАТИСЯ З КОДОМ
@@ -721,7 +721,7 @@ TID_RANK_POPUP_COLLECT,ЗІБРАТИ
 TID_RANK_POPUP_SEASON_END_REWARD,НАГОРОДА ЗА ЛІГУ ТРОФЕЇВ
 TID_RANK_POPUP_SEASON_END_REWARD_OWN,<cffff00>ТВОЯ НАГОРОДА ЗА ЛІГУ ТРОФЕЇВ</c>
 TID_RANK_POPUP_TOTAL_INFO,"Збирайтеся за загальними трофеями, щоб отримати нагороди та досягти нових ліг!\nЗагальні трофеї — це комбінація всіх індивідуальних трофеїв ваших бравлерів."
-TID_RANK_POPUP_SEASON_END_TITLE,ЛІГА TROPHY ЗАКІНЧУЄТЬСЯ ЗА
+TID_RANK_POPUP_SEASON_END_TITLE,ЛІГА ТРОФЕЇВ ЗАКІНЧУЄТЬСЯ ЗА
 TID_RANK_POPUP_SEASON_END_INFO,"Коли Ліга трофеїв закінчиться, ваші бійці, які мають більше ніж <DECAYSTART> трофеїв, втратять частину своїх трофеїв. Ця втрата буде компенсована зірковими балами, які ви зможете витратити в Магазині."
 TID_RANK_POPUP_HILITE_CAPTION_3,РОЗБЛОКУВАТИ: <HERO>
 TID_RANK_POPUP_HILITE_CAPTION_4,РОЗБЛОКУВАТИ: <SKIN>
@@ -836,9 +836,9 @@ TID_GAME_MODE_6_COMBINED,ЗІТКНЕННЯ
 TID_GAME_MODE_6_DESC,"Знищте інших дев’ятьох і будьте останнім, хто залишиться у грі. Користуйтеся всіма необхідними засобами, адже у вас лише одне життя."
 TID_GAME_MODE_6_DESC_COMBINED,"Знищте всіх інших і станьте останнім, хто залишится. Грайте на одинці або в команді з двох."
 TID_GAME_MODE_5,БРАВЛ БОЛ
-TID_GAME_MODE_5_DESC,"Take the ball to the opposing team's goal to score! Match ends when one team scores two goals, or at full time."
+TID_GAME_MODE_5_DESC,"Відведіть м'яч до воріт команди суперника, щоб забити! Матч закінчується, коли одна команда заб’є два м’ячі, або в повний час."
 TID_GAME_MODE_3_OG,ЗНИЩЕННЯ
-TID_GAME_MODE_3_OG_DESC,"Collect Stars for your team by defeating players on the enemy team. Every time you defeat an enemy, the bounty on your head increases by one Star, up to seven Stars. Don't give them to the enemy!\n\nThe team that has more Stars when the clock runs out wins."
+TID_GAME_MODE_3_OG_DESC,"Збирайте зірки для своєї команди, перемагаючи гравців ворожої команди. Кожного разу, коли ви перемагаєте ворога, нагорода за вашу голову збільшується на одну зірку, до семи зірок. Не віддавайте їх ворогу!\n\nПеремагає та команда, яка має більше зірочок, коли таймер закінчується."
 TID_GAME_MODE_11,Робо-бій
 TID_GAME_MODE_11_DESC,"Besiege and destroy the enemy's IKE assembly turret! Your team also has an IKE: feed it bolts, and it will assemble a powerful Siege Robot to fight for you. Bolts appear randomly around the middle of the map. Grab a bolt and hold it for a few seconds to feed it to your IKE.\n\nThere are up to three Sieges during each match. The team that has more bolts at the start of each Siege builds a Siege Robot. The more bolts, the stronger the robot.\nWatch out, IKEs have powerful ballistic defenses - don't get too close to the enemy base without a Siege Robot to help you!"
 TID_BATTLE_END_GAIN_LABEL_FIRST_WIN,Зоряний токен
@@ -1068,8 +1068,8 @@ TID_CLAN_JOIN_REQUEST_DEFAULT_MESSAGE,Я хотів би приєднатися 
 TID_CLAN_JOIN_REQUEST_ENTRY_TITLE,Прийняти цього гравця до Клубу?
 TID_CLAN_JOIN_REQUEST_ENTRY_ACCEPT,Прийняти
 TID_CLAN_JOIN_REQUEST_ENTRY_REJECT,Відхилити
-TID_CLAN_JOIN_REQUEST_ENTRY_ACCEPTED_BY,Прийнято <NAME>
-TID_CLAN_JOIN_REQUEST_ENTRY_REJECTED_BY,Відхилено <NAME>
+TID_CLAN_JOIN_REQUEST_ENTRY_ACCEPTED_BY,Прийнято <name>
+TID_CLAN_JOIN_REQUEST_ENTRY_REJECTED_BY,Відхилено <name>
 TID_HINT_DRAG_TO_AIM,"Перетягніть, щоб прицілитися"
 TID_HINT_RELEASE_TO_SHOOT,"Відпустіть, щоб стріляти"
 TID_HINT_ACTIVATE_ULTI,Тягни <cff9900>Жовтий джойстик</c> щоб прицілити свою суператаку!
@@ -1674,7 +1674,7 @@ TID_COOP_2,Сталеві з'єднання
 TID_BOSS_2,Зал Короля Кротів
 TID_BEAR_DAMAGE,Шкода ведмедя
 TID_BEAR_HEALTH,Здоров'я ведмедя
-TID_EVENT_POPUP_GMV_LABEL_BATTLE_ROYALE_TEAM,Teams of two
+TID_EVENT_POPUP_GMV_LABEL_BATTLE_ROYALE_TEAM,Команда двох
 TID_SPEC_ABI_PUSHBACK_SELF,ДІНО-СТРИБОК
 TID_VIEW_PROFILE_BUTTON,Подивитися Профіль
 TID_REPORT_PLAYER_BUTTON,ДОПОВІД
@@ -2015,8 +2015,8 @@ TID_SKIN_RARITY_2,<c0070dd>Rare</c>
 TID_SKIN_RARITY_3,<ca335ee>Epic</c>
 TID_SKIN_RARITY_4,<cff8000>Legendary</c>
 TID_BANKHEIST_7,Cactus Corridor
-TID_BATTLE_ROYALE_9,West Wind
-TID_BATTLE_ROYALE_10,Dune Drift
+TID_BATTLE_ROYALE_9,Східний вітер
+TID_BATTLE_ROYALE_10,Дрейф дюн
 TID_NO_FRIENDS_GO_TO_FRIENDS,Go to Friends
 TID_EVENT_MODIFIER_1,ENERGY DRINK
 TID_EVENT_MODIFIER_2,ANGRY ROBO
@@ -2027,7 +2027,7 @@ TID_EVENT_MODIFIER_14,FAST BRAWLERS
 TID_EVENT_MODIFIER_DESC_1,"If you're lonely, an ED might appear nearby. Grab it to boost your Brawler's damage and speed for a short while!"
 TID_EVENT_MODIFIER_DESC_2,An angry robot will randomly show up and attack the nearest Brawler. Watch out!
 TID_EVENT_MODIFIER_DESC_3,"This is not a meteor shower that you want to stop and admire. Watch out for big, falling rocks!"
-TID_BALL_4,Sneaky Fields
+TID_BALL_4,Підступні поля
 TID_EVENT_MODIFIER_DESC_4,"You lose health constantly, but dealing damage to enemy Brawlers will restore some of your health. Defeating a Brawler will restore you to full health! All healing abilities have reduced effectiveness."
 TID_EVENT_MODIFIER_DESC_13,Super charges much faster!
 TID_EVENT_MODIFIER_DESC_14,All Brawlers move faster!
@@ -2037,9 +2037,9 @@ TID_EVENT_MODIFIER_16,PEEK-A-BOO
 TID_EVENT_MODIFIER_DESC_16,"Every now and then, all brawlers go invisible!"
 TID_EVENT_MODIFIER_17,BURNING BALL
 TID_EVENT_MODIFIER_DESC_17,"Amber has been careless with her fire fluid and has set the ball on fire! Not only does it deal damage to anyone who touches it, the ball also breaks walls now! So much heat!"
-TID_BALL_5,BB Fort
-TID_BALL_6,Super Beach
-TID_BALL_7,Puddle Splash
+TID_BALL_5,Форт ББ
+TID_BALL_6,Супер Пляж
+TID_BALL_7,Сплеск калюж
 TID_BANKHEIST_8,Bone Tunnel
 TID_EVENT_MODIFIER_DESC_3_SD,Gathering close with your friends can be dangerous when huge rocks are falling from the sky!
 TID_DEFEATED_SHOWDOWN,Defeated
@@ -2050,16 +2050,16 @@ TID_HOOK,ДЖИН
 TID_STAR_KEY_INFO_EXTENSION,\n\nStar Tokens are used to open Big Boxes.
 TID_TEAM_OWNER_TEXT,<NAME>'s team
 TID_SPECTATE_AUTO,Automatic
-TID_BATTLE_ROYALE_11,Bow Wow
+TID_BATTLE_ROYALE_11,Переможний лук
 TID_FRIEND_POPOVER_INVITE,INVITE TO TEAM
 TID_TEAM_ERROR_ALREADY_IN_ROOM,Player is already in your team!
 TID_TEAM_ERROR_ALREADY_INVITED,Player is already invited!
-TID_BATTLE_ROYALE_D2,Stormy Plains
+TID_BATTLE_ROYALE_D2,Бурхливі рівнини
 TID_UNDERTAKER_GREASER_SKIN,РОКЗІРКА МОРТІС
 TID_COMMUNITY_PROPS,Community map!\n\nConcept by:\n<cff8000><CREDIT></c>
 TID_PLAYER_MAP_PROPS,Player map by:\n<cff8000><CREDIT></c>
 TID_PLAYER_MAP_WINNER_SLOT_PROPS,WINNER OF THE DAY!\n\nConcept by:\n<cff8000><CREDIT></c>
-TID_BATTLE_ROYALE_12,Hot Maze
+TID_BATTLE_ROYALE_12,Гарячий лабіринт
 TID_TEAM_INVITE_ALREADY_IN_TEAM,Player is already in a team!
 TID_HINT_38,A rotating blue circle under a Brawler means their Super is ready!
 TID_HINT_39,A rotating yellow circle under a Brawler means they are currently targeting their Super!
@@ -2069,8 +2069,8 @@ TID_SHOP_NOT_AVAILABLE,not available
 TID_UNDERTAKER_GREASER_SKIN_SHOP,ROCKABILLY\nMORTIS
 TID_HINT_40,Connect to Supercell ID from the settings screen to keep your account safe and play with multiple devices. You also get a free skin by doing this!
 TID_GACHA_VIDEO_REWARD_RECEIVED,Extra rewards added!
-TID_BUTTON_NAVI_SHOP,SHOP
-TID_BUTTON_NAVI_SOCIAL,SOCIAL
+TID_BUTTON_NAVI_SHOP,МАГАЗИН
+TID_BUTTON_NAVI_SOCIAL,СОЦІАЛ
 TID_BUTTON_NAVI_BRAWLERS,BRAWLERS
 TID_BUTTON_NAVI_ESPORTS,ESPORTS
 TID_BRAWL_TICKETS_BUTTON,PLAY
@@ -2081,7 +2081,7 @@ TID_GOAL,<name> scored!
 TID_EVENT_MODIFIER_5,HEALING MUSHROOMS
 TID_EVENT_MODIFIER_DESC_5,Healing mushrooms appear randomly! They will heal everything close to them for a while.
 TID_EVENT_MODIFIER_DESC_5_SD,Healing mushrooms appear randomly! Gathering close with your friends will prevent the mushrooms from growing.
-TID_NINJA,LEON
+TID_NINJA,ЛЕОН
 TID_ROSA,РОЗА
 TID_HINT_42,"When not attacking or taking damage for a while, your Brawler starts to heal up."
 TID_HOOK_SHORT_DESC,ПІДТРИМКА
@@ -2162,10 +2162,10 @@ TID_TEAM_MEMBER_STATUS_NEW_12,LOOKING FOR A MEMBER
 TID_TEAM_MEMBER_STATUS_NEW_13,BROWSING QUESTS
 TID_TEAM_MEMBER_STATUS_NEW_READY,READY
 TID_BUTTON_SPECTATE,SPECTATE
-TID_NEW_EVENT_IN,New Event in: <TIME>
+TID_NEW_EVENT_IN,Зміна через: <TIME>
 TID_NEW_EVENT_NOW,NEW EVENT AVAILABLE!
 TID_NEW_EVENT_ICON_PREFIX,Next:
-TID_NEW_EVENT_ICON_SUFFIX,in <TIME>
+TID_NEW_EVENT_ICON_SUFFIX,Через <TIME>
 TID_SHOP_TITLE,SHOP
 TID_SELECT_EVENT_TITLE,CHOOSE EVENT
 TID_HERO_LIST_LABEL_NEW,BRAWLERS <c53C5F7><COUNT>/<TOTAL></c>
@@ -2232,7 +2232,7 @@ TID_GOLDRUSH_XMAS_8,Frozen Lake
 TID_GOLDRUSH_XMAS_9,Frosty Crystals
 TID_GOLDRUSH_XMAS_10,Treasure Hunt
 TID_RAID_BOSS_DIFFICULTY_CAP,"Your Difficulty level has been lowered to match those of your Team. While the difficulty is lowered, completing the level will not grant progress towards your Quest."
-TID_RAID_BOSS_DIFFICULTY,Challenge:
+TID_RAID_BOSS_DIFFICULTY,Челенж: 
 TID_BOSS_3,Chew Out
 TID_BOSS_4,Team Day
 TID_BOSS_5,Table Flip
@@ -2262,8 +2262,8 @@ TID_TEAM_REQEST_JOIN_FAIL_TEAM_FULL,Cannot send join request. Your team is full
 TID_EVENT_ENDS_IN,Event Ends in: <TIME>
 TID_EVENT_LOCKED_CAN_CLAIM_WARNING,Unlock Event from the Trophy Road screen
 TID_EVENT_LOCKED_CAN_CLAIM,Congratulations! You can now unlock the Event from the Trophy Road screen
-TID_BATTLE_ROYALE_3D,Death Valley
-TID_BATTLE_ROYALE_7D,Rocky Valley
+TID_BATTLE_ROYALE_3D,Долина Смерті
+TID_BATTLE_ROYALE_7D,Скеляста долина
 TID_WANTED_4D,Death Cap
 TID_GOLDRUSH_3D,Mushroom Cave
 TID_WEEKEND_OFFER,Weekend Offer
@@ -2307,9 +2307,9 @@ TID_SKIN_INFO_CAMPAIGN_5_NOT_AVAILABLE,Lunar Brawl skin
 TID_SKIN_INFO_CAMPAIGN_LUNAR_BRAWL_2019,Lunar Brawl 2019 skin
 TID_SKIN_INFO_CAMPAIGN_LUNAR_BRAWL_2020,Lunar Brawl 2020 skin
 TID_SKIN_INFO_CAMPAIGN_LUNAR_BRAWL_2021,Lunar Brawl 2021 skin
-TID_CACTUS_PINK_SKIN,SAKURA SPIKE
-TID_CACTUS_PINK_SKIN_SHOP,SAKURA\nSPIKE
-TID_TRICKSHOT_DUDE,RICO
+TID_CACTUS_PINK_SKIN,САКУРА СПАЙК.
+TID_CACTUS_PINK_SKIN_SHOP,САКУРА\nСПАЙК.
+TID_TRICKSHOT_DUDE,РІКО
 TID_TRICKSHOT_GOLD_SKIN,ЗАРЯДЖЕНИЙ РІКО
 TID_TRICKSHOT_GOLD_SKIN_SHOP,ЗАРЯДЖЕНИЙ\nРІКО
 TID_SKIN_POPCORN_RICO,ПОПКОРНОВИЙ РІКО
@@ -2421,16 +2421,16 @@ TID_GOLDRUSH_15,Hop Skip
 TID_GOLDRUSH_16,Countdown
 TID_GOLDRUSH_17,Escape Velocity
 TID_GOLDRUSH_18,Deep Link
-TID_BATTLE_ROYALE_13,Ghost Point
-TID_BATTLE_ROYALE_14,Courtyard
-TID_BATTLE_ROYALE_15,Sundial
-TID_BATTLE_ROYALE_16,Superstar
-TID_BATTLE_ROYALE_17,Dark Passage
-TID_BATTLE_ROYALE_18,Clockwork
-TID_BALL_8,Bank Shot
-TID_BALL_9,Playbox
-TID_BALL_10,Penalty Kick
-TID_BALL_11,Substitute
+TID_BATTLE_ROYALE_13,Привидна точка
+TID_BATTLE_ROYALE_14,Внутрішнє подвір'я
+TID_BATTLE_ROYALE_15,Сонячний годинник
+TID_BATTLE_ROYALE_16,Суперзірка
+TID_BATTLE_ROYALE_17,Темний прохід
+TID_BATTLE_ROYALE_18,Годинниковий механізм
+TID_BALL_8,Банківський постріл
+TID_BALL_9,Відтворення
+TID_BALL_10,Штрафний удар
+TID_BALL_11,Замінник
 TID_BANKHEIST_14,Royal Tribute
 TID_HERO_DISABLED_CURRENTLY_PRINT,This Brawler is temporarily not available. Try again later!
 TID_NEXT_ROBO_IN,Next Siege in:
@@ -2441,20 +2441,20 @@ TID_HERO_COMING_SOON,Brawler arriving soon!
 TID_NO_ROBOS_SPAWNED,Tie! No SIEGE
 TID_LAST_ROBO_IN,Last Siege in:
 TID_ROBO_LEVEL,SIEGE BOT LVL: <num>
-TID_BATTLE_ROYALE_19,Erratic Blocks
-TID_BATTLE_ROYALE_20,Fallen Star
-TID_BATTLE_ROYALE_21,Eye of the Storm
-TID_BATTLE_ROYALE_22,Flood Plains
-TID_BATTLE_ROYALE_23,River Rush
-TID_BATTLE_ROYALE_24,Double Cross
-TID_BATTLE_ROYALE_25,Walled Garden
-TID_BATTLE_ROYALE_26,Old Bailey
-TID_BATTLE_ROYALE_27,Sooty Snow
-TID_BALL_12,Happy Feet
-TID_BALL_13,Square Off
-TID_BALL_14,Slot Machine
-TID_BALL_15,Pinball Dreams
-TID_BALL_16,Barrel Vault
+TID_BATTLE_ROYALE_19,Хибні блоки
+TID_BATTLE_ROYALE_20,Впала зірка
+TID_BATTLE_ROYALE_21,Око бурі
+TID_BATTLE_ROYALE_22,Заплави
+TID_BATTLE_ROYALE_23,Річкова лихоманка
+TID_BATTLE_ROYALE_24,Подвійний перетин
+TID_BATTLE_ROYALE_25,Огороджений сад
+TID_BATTLE_ROYALE_26,Старий Бейлі
+TID_BATTLE_ROYALE_27,Закопчений сніг
+TID_BALL_12,Щасливі ноги
+TID_BALL_13,Без квадратне
+TID_BALL_14,Ігровий автомат
+TID_BALL_15,Мрії про пінбол
+TID_BALL_16,Бочковий сховище
 TID_GOLDRUSH_19,Spring Trap
 TID_GOLDRUSH_20,Bishop to King 4
 TID_GOLDRUSH_21,Cross Cut
@@ -2512,8 +2512,8 @@ TID_BUTTON_BRAWLTV,BRAWL TV
 TID_BUTTON_NEWS,NEWS
 TID_BRAWL_TV_LIVE,LIVE
 TID_BUTTON_TEST_HERO,TRY
-TID_CONTENT_UPDATE,Downloading Content...
-TID_BATTLE_ROYALE_28,Flying Fantasies
+TID_CONTENT_UPDATE,Завантажуємо оновлення...
+TID_BATTLE_ROYALE_28,Літаючі фантазії
 TID_SHAMAN_SHIBA_SKIN,ШІБА НІТА
 TID_PENNY_BUNNY_SKIN,ЗАЙЧИК ПЕННІ
 TID_SHAMAN_SHIBA_SKIN_SHOP,ШІБА НІТА
@@ -2539,16 +2539,16 @@ TID_ROBO_WARS_11,Sparring Match
 TID_ROBO_WARS_12,Robo Highway
 TID_ROBO_WARS_13,Junk Park
 TID_ROBO_WARS_14,Danger Zone
-TID_BATTLE_ROYALE_29,Gold Rush
-TID_BATTLE_ROYALE_30,Beach Brawl
-TID_BATTLE_ROYALE_31,Royal Runway
-TID_BATTLE_ROYALE_32,Rainbow Islands
-TID_BATTLE_ROYALE_33,Bullseye
-TID_BALL_17,Center Stage
-TID_BALL_18,Getting Messy
-TID_BALL_19,Sure Shot
-TID_BALL_20,Sunday Showdown
-TID_BALL_21,Curveball
+TID_BATTLE_ROYALE_29,Золота лихоманка
+TID_BATTLE_ROYALE_30,Пляжна бійка
+TID_BATTLE_ROYALE_31,Королівська злітна смуга
+TID_BATTLE_ROYALE_32,Веселкові острови
+TID_BATTLE_ROYALE_33,Яблучко
+TID_BALL_17,Центральна сцена
+TID_BALL_18,Заплутатися
+TID_BALL_19,Впевнений постріл
+TID_BALL_20,Недільні розборки
+TID_BALL_21,Кривий м'яч
 TID_SUPPORT_CREATOR_BUTTON,Support a Creator
 TID_SUPPORT_CREATOR_LABEL,Supported: <NAME>
 TID_SUPPORT_CREATOR_POPUP_TITLE,CONTENT CREATOR BOOST
@@ -2716,10 +2716,10 @@ TID_BANKHEIST_16,Beachcombers
 TID_BANKHEIST_17,Gift Gems
 TID_BANKHEIST_18,Hot Potato
 TID_BANKHEIST_18B,Figure 8
-TID_BALL_22,Beach Ball
-TID_BALL_23,Sunny Soccer
-TID_BALL_24,Barefoot Brawl
-TID_BALL_25,Summer Play
+TID_BALL_22,Пляжний м'яч
+TID_BALL_23,Сонячний футбол
+TID_BALL_24,Боротьба босоніж
+TID_BALL_25,Літня гра
 TID_STARPOINTSGAINED,<TOTALDECAY> Trophies were converted to <STARPOINTSGAINED> Star Points
 TID_TROPHIES_LOST,Total trophies lost: <AMOUNT>
 TID_TROPHIES_CONVERTED,Lost trophies converted to: <AMOUNT> Star Points
@@ -2770,13 +2770,13 @@ TID_REGION_CUSTOM3,
 TID_REGION_CUSTOM4,
 TID_REGION_CUSTOM5,
 TID_DIAMONDS,Gems
-TID_BATTLE_ROYALE_22A,Deserted Vertex
-TID_BATTLE_ROYALE_23A,Outrageous Outback
-TID_BATTLE_ROYALE_24A,Barren Badlands
+TID_BATTLE_ROYALE_22A,Пустельна вершина
+TID_BATTLE_ROYALE_23A,Епатажна глибинка
+TID_BATTLE_ROYALE_24A,Безплідні землі
 TID_GOLDRUSH_24A,Royal Flush
 TID_WANTED_17A,Overgrown Oasis
-TID_BALL_14A,Field Goal
-TID_BALL_15A,Post Haste
+TID_BALL_14A,Гол з поля
+TID_BALL_15A,Поспішність
 TID_SHOP_LABEL_BEST_VALUE,BEST VALUE
 TID_SHOP_LABEL_MOST_POPULAR,MOST POPULAR
 TID_SHOP_LABEL_EXCLUSIVE_OFFER,EXCLUSIVE OFFER
@@ -2795,14 +2795,14 @@ TID_8BIT_CLASSIC_SKIN,КЛАСИЧНИЙ 8-БІТ
 TID_8BIT_CLASSIC_SKIN_SHOP,КЛАСИЧНИЙ\n8-БІТ
 TID_LEON_SHARK_SKIN,АКУЛА ЛЕОН
 TID_LEON_SHARK_SKIN_SHOP,АКУЛА\nЛЕОН
-TID_BATTLE_ROYALE_29A,Perilous Paradise
-TID_BATTLE_ROYALE_30A,Critical Crossing
-TID_BATTLE_ROYALE_31A,Even Spread
-TID_BALL_16A,Slalom Slam
-TID_BALL_17A,Coarse Course
-TID_BALL_18A,Power Shot
-TID_BALL_19A,Flyball
-TID_BALL_20A,Flashkick
+TID_BATTLE_ROYALE_29A,Небезпечний рай
+TID_BATTLE_ROYALE_30A,Критичне перетин
+TID_BATTLE_ROYALE_31A,Навіть поширення
+TID_BALL_16A,Слаломний шолом
+TID_BALL_17A,Грубий курс
+TID_BALL_18A,Енергетичний постріл
+TID_BALL_19A,Флайбол
+TID_BALL_20A,Спалах
 TID_IAP_INFO_MORE_INFO_BTN,자세히보기
 TID_SANDSTORM,СЕНДІ
 TID_GAME_MODE_14,TAKEDOWN
@@ -2995,32 +2995,32 @@ TID_SPEC_ABI_SPEEDY_1_DESC,Max now charges her Super while moving.
 TID_SPEC_ABI_SPEEDY_2,RUN N GUN
 TID_SPEC_ABI_SPEEDY_2_DESC,Max reloads faster while moving.
 TID_SPEEDY_ULTI_STAT,Speed Boost
-TID_QUICK_MESSAGE_CHOOSE_BRAWLER,We need brawler...
-TID_QUICK_MESSAGE_CHOOSE_MODE,Let's play...
-TID_QUICK_MESSAGE_CHOOSE_FRIENDLY_LOCATION,Let's play...
-TID_QUICK_MESSAGE_CHANGE_BRAWLERS,Let's change brawlers!
-TID_QUICK_MESSAGE_GOOD_GAME,Good game!
-TID_QUICK_MESSAGE_PLAY_AGAIN,Play again?
-TID_QUICK_MESSAGE_WELL_PLAYED,Well played!
-TID_QUICK_MESSAGE_WOW,Wow!
-TID_QUICK_MESSAGE_OK,Ok!
-TID_QUICK_MESSAGE_GOTTA_GO,Gotta go. Have fun!
-TID_QUICK_MESSAGE_CHANGE_MODE,Let's change game mode!
-TID_QUICK_MESSAGE_BYE,Bye!
-TID_QUICK_MESSAGE_CLOSE_MATCH,That was close!
-TID_QUICK_MESSAGE_READY,Ready?
-TID_QUICK_MESSAGE_READY_GO,Ready? Let's go!
-TID_QUICK_MESSAGE_HI,Hi!
-TID_QUICK_MESSAGE_NEED_BREAK,I need a break!
-TID_QUICK_MESSAGE_NEED_TO_GO,I need to run. Have fun guys!
-TID_QUICK_MESSAGE_THANKS,Thanks!
-TID_QUICK_MESSAGE_SORRY,Sorry!
-TID_QUICK_MESSAGE_OOPS,Oops
+TID_QUICK_MESSAGE_CHOOSE_BRAWLER,Нам потрібен бравлер...
+TID_QUICK_MESSAGE_CHOOSE_MODE,Давай зіграємо...
+TID_QUICK_MESSAGE_CHOOSE_FRIENDLY_LOCATION,Давай зіграємо...
+TID_QUICK_MESSAGE_CHANGE_BRAWLERS,Давай змінимо бравлерів...
+TID_QUICK_MESSAGE_GOOD_GAME,Хороша гра!
+TID_QUICK_MESSAGE_PLAY_AGAIN,Граємо щераз?
+TID_QUICK_MESSAGE_WELL_PLAYED,Гарно зіграно
+TID_QUICK_MESSAGE_WOW,Вау!
+TID_QUICK_MESSAGE_OK,Ок!
+TID_QUICK_MESSAGE_GOTTA_GO,"Маю йти, повеселися!"
+TID_QUICK_MESSAGE_CHANGE_MODE,Давайте змінимо режим гри!
+TID_QUICK_MESSAGE_BYE,До побачення!
+TID_QUICK_MESSAGE_CLOSE_MATCH,Це було близько!
+TID_QUICK_MESSAGE_READY,Готовий?
+TID_QUICK_MESSAGE_READY_GO,Готовий? Давай!
+TID_QUICK_MESSAGE_HI,Привіт!
+TID_QUICK_MESSAGE_NEED_BREAK,Мені потрібна перерва!
+TID_QUICK_MESSAGE_NEED_TO_GO,Мені потрібно бігти. Веселіться народ!
+TID_QUICK_MESSAGE_THANKS,Спасибі!
+TID_QUICK_MESSAGE_SORRY,Вибачте!
+TID_QUICK_MESSAGE_OOPS,Ой
 TID_QUICK_MESSAGE_SUGGEST_BRAWLER,Can you play as <c<COLOR>><NAME></c>?
 TID_QUICK_MESSAGE_SUGGEST_STARPOWER,Can you use <c<COLOR>><NAME></c>?
 TID_QUICK_MESSAGE_SUGGEST_MODE,Let's play <c<COLOR>><NAME></c>!
-TID_QUICK_MESSAGE_ASK_BRAWLER,Which brawler should I pick?
-TID_QUICK_MESSAGE_ASK_MODE,What event should we play?
+TID_QUICK_MESSAGE_ASK_BRAWLER,Якого мені  взяти бравлера
+TID_QUICK_MESSAGE_ASK_MODE,Який режим заграємо
 TID_PLAYER_CTX_SUGGEST_BRAWLER_SHORT,SUGGEST
 TID_PLAYER_CTX_SUGGEST_CANCEL,CANCEL SUGGESTION
 TID_SUGGEST_BRAWLER_TITLE_SHORT,SUGGEST A BRAWLER
@@ -3044,33 +3044,33 @@ TID_MAINTENANCE_DEEP_LINKS_NOT_AVAILABLE,Not available during maintenance
 TID_NATIVE_DIALOG_VERSION_NOT_UP_TO_DATE_STORE_NOT_READY_TITLE,Updating to new version
 TID_NATIVE_DIALOG_VERSION_NOT_UP_TO_DATE_STORE_NOT_READY_MESSAGE,We are updating to a new version of the game. Please check back in a short while!
 TID_NATIVE_DIALOG_VERSION_NOT_UP_TO_DATE_STORE_NOT_READY_BUTTON,Ok
-TID_CONTEXT_MENU_PROFILE,PROFILE
-TID_CONTEXT_MENU_SPECTATE,SPECTATE
-TID_CONTEXT_MENU_KICK,KICK
-TID_CONTEXT_MENU_SWAP,SWAP SIDE
-TID_CONTEXT_MENU_REMOVE,REMOVE
-TID_CONTEXT_MENU_JOIN,JOIN TEAM
-TID_CONTEXT_MENU_INVITE,INVITE TO TEAM
-TID_CONTEXT_MENU_REPORT,REPORT
-TID_CONTEXT_MENU_SUGGEST_BRAWLER,SUGGEST BRAWLER
-TID_CONTEXT_MENU_SUGGEST_STAR_POWER,SUGGEST\nSTAR POWER
-TID_CONTEXT_MENU_CLAN_PROMOTE,PROMOTE
-TID_CONTEXT_MENU_CLAN_DEMOTE,DEMOTE
-TID_CONTEXT_MENU_CLAN_KICK,KICK
-TID_CONTEXT_MENU_SEE_PLAYING_TEAMS,SHOW TEAMS
-TID_TEAM_CHAT_TAB_MESSAGE,CHAT
-TID_TEAM_CHAT_TAB_LOG,LOG
-TID_TEAM_CHAT_TAB_SAY,SAY...
-TID_TEAM_CHAT_TAB_CHAT,CHAT
-TID_BUTTON_NAVI_FRIENDS,FRIENDS
-TID_BUTTON_NAVI_CLAN,CLUB
-TID_CLAN_POPUP_TITLE,CLUB
-TID_CLAN_SEARCH_POPUP_TITLE,SEARCH CLUBS
+TID_CONTEXT_MENU_PROFILE,ПРОФІЛЬ
+TID_CONTEXT_MENU_SPECTATE,СЛІДКУВАННЯ
+TID_CONTEXT_MENU_KICK,ВИГНАТИ
+TID_CONTEXT_MENU_SWAP,ЗМІНИТИ СТОРОНУ
+TID_CONTEXT_MENU_REMOVE,ВИЛУЧИТИ
+TID_CONTEXT_MENU_JOIN,ПРИЄДНАТИСЯ
+TID_CONTEXT_MENU_INVITE,ЗАПРОСИТИ ДО КОМАНДИ
+TID_CONTEXT_MENU_REPORT,ЗВІСТИТИ
+TID_CONTEXT_MENU_SUGGEST_BRAWLER,ЗАПРОПОНУВА БРАВЛЕРА
+TID_CONTEXT_MENU_SUGGEST_STAR_POWER,ПРОПОНУВАТИ\nПАСІВКУ
+TID_CONTEXT_MENU_CLAN_PROMOTE,ПІДВИЩИТИ
+TID_CONTEXT_MENU_CLAN_DEMOTE,ПОНИЗИТИ
+TID_CONTEXT_MENU_CLAN_KICK,ВИГНАТИ
+TID_CONTEXT_MENU_SEE_PLAYING_TEAMS,ПОКАЗАТИ КОМАНДИ
+TID_TEAM_CHAT_TAB_MESSAGE,ЧАТ
+TID_TEAM_CHAT_TAB_LOG,ЛОГ
+TID_TEAM_CHAT_TAB_SAY,СКАЗАТИ...
+TID_TEAM_CHAT_TAB_CHAT,КЛУБ
+TID_BUTTON_NAVI_FRIENDS,ДРУЗІ
+TID_BUTTON_NAVI_CLAN,КЛУБ
+TID_CLAN_POPUP_TITLE,КЛУБ
+TID_CLAN_SEARCH_POPUP_TITLE,ПОШУК КЛУБІВ
 TID_CLAN_JOIN_POPUP_TITLE,JOIN A CLUB
 TID_CLAN_POPUP_TAB_CHAT,CHAT
 TID_BUTTON_SCID,SUPERCELL ID
-TID_BUTTON_NAVI_CHAT,CHAT
-TID_BUTTON_NAVI_TEAM,TEAM
+TID_BUTTON_NAVI_CHAT,ЧАТ
+TID_BUTTON_NAVI_TEAM,КОМАНДА
 TID_GAME_MODE_16,TROPHY THIEVES
 TID_GAME_MODE_16_DESC,"Grab trophies from the opposing team and bring them to your base! Match ends when one team has captured two trophies, or when time runs out."
 TID_CTF_INTRO_TEXT,Grab two trophies to win!
@@ -3111,16 +3111,16 @@ TID_WANTED_23,Deeper Danger
 TID_WANTED_24,Easy Impact
 TID_WANTED_25,Cozy Cannons
 TID_WANTED_26,Egress
-TID_BATTLE_ROYALE_34,Safety Center
-TID_BATTLE_ROYALE_35,Circular Canyon
-TID_BATTLE_ROYALE_36,Cactus Party
-TID_BATTLE_ROYALE_37,Core Crumble
-TID_BATTLE_ROYALE_38,Treasure Hunt
-TID_BATTLE_ROYALE_39,Course Change
-TID_BATTLE_ROYALE_40,Rocky Blocks
-TID_BATTLE_ROYALE_41,Point of View
-TID_BATTLE_ROYALE_42,Ballistic Bash
-TID_BATTLE_ROYALE_43,Stocky Stockades
+TID_BATTLE_ROYALE_34,Центр безпеки
+TID_BATTLE_ROYALE_35,Круговий каньйон
+TID_BATTLE_ROYALE_36,Кактусова вечірка
+TID_BATTLE_ROYALE_37,Ядро Крамбл
+TID_BATTLE_ROYALE_38,Полювання за скарбами
+TID_BATTLE_ROYALE_39,Зміна курсу
+TID_BATTLE_ROYALE_40,Скелясті блоки
+TID_BATTLE_ROYALE_41,Точка зору
+TID_BATTLE_ROYALE_42,Балістичний удар
+TID_BATTLE_ROYALE_43,Стойкий частокол
 TID_RICO_CLASSIC_SKIN,КЛАСИЧНИЙ РІКО
 TID_RICO_CLASSIC_SKIN_SHOP,КЛАСИЧНИЙ\nРІКО
 TID_RICO_BETA_SKIN,РИКОШЕТ
@@ -3223,10 +3223,10 @@ TID_KING_OF_HILL_12,Coin Op
 TID_KING_OF_HILL_13,Game Over
 TID_KING_OF_HILL_14,Cheat Code
 TID_KING_OF_HILL_15,Marble Brawler
-TID_BALL_26,Flip Flop
-TID_BALL_27,Bicycle Kick
-TID_BALL_28,Slavic Blocks
-TID_BALL_29,Friendly Match
+TID_BALL_26,Фліп-флоп
+TID_BALL_27,Велосипедний удар
+TID_BALL_28,Слов'янські блоки
+TID_BALL_29,Товариський матч
 TID_HERO_INFO_MEDIUM,MEDIUM
 TID_HERO_INFO_AVERAGE,AVERAGE
 TID_HERO_UPGRADE_TITLE_LEVEL,UPGRADE TO POWER LEVEL <LVL>?
@@ -3287,12 +3287,12 @@ TID_NOTIFICATION_NEW_BRAWLER,<PARAM> has arrived! Come check it out!
 TID_NOTIFICATION_DOUBLE_TOKENS_STARTED,DOUBLE TOKEN event has started!
 TID_NOTIFICATION_DOUBLE_COINS_STARTED,COIN SHOWER event has started! Battle to earn Coins!
 TID_A_OUT_OF_B,<VALUE_A>/<VALUE_B>
-TID_ENTER_AGE_PROMPT,Please tell us your age
-TID_ENTER_AGE_CONTINUE,CONFIRM
-TID_ENTER_AGE_GAMEPLAY,This will not affect gameplay
-TID_ENTER_AGE_TIP,Use the slider to set your age.
-TID_ENTER_AGE_TITLE,Welcome to Brawl Stars!
-TID_ENTER_AGE_LEGAL,By tapping CONFIRM you accept our <TOS> and <PP>
+TID_ENTER_AGE_PROMPT,Будь ласка скажи нам свій вік
+TID_ENTER_AGE_CONTINUE,ПІДТВЕРДИТИ
+TID_ENTER_AGE_GAMEPLAY,This will not affect gameplay\nВід перекладачів: насправді якщо тобі нижче 18 ти не зможеш спілкуватися чатом
+TID_ENTER_AGE_TIP,Використай слайдер щоб вказати свій вік
+TID_ENTER_AGE_TITLE,Вітаємо до Бравл Старсу!
+TID_ENTER_AGE_LEGAL,Якщо натиснеш на ПРИЙНЯТИ ти приймаєш <TOS> та <PP>
 TID_CHALLENGE_WON_TITLE,CHALLENGE WON!
 TID_CHALLENGE_REWARD_CLAIM,CLAIM
 TID_BUTTON_INVITE_SNS,TEAM INVITE
@@ -3457,12 +3457,12 @@ TID_IAP_APRIL20_0,"WELCOME, APRIL!"
 TID_IAP_GOLDENWEEK20,GOLDEN WEEK
 TID_IAP_APRIL20_1,SMALL IS BEAUTIFUL
 TID_IAP_APRIL20_2,"COINS, COINS, COINS"
-TID_BALL_30,Galaxy Arena
-TID_BALL_31,Shoulder Bash
-TID_BALL_32,Well Cut
-TID_BALL_33,Center Field
-TID_BALL_34,Warped Beach
-TID_BATTLE_ROYALE_44,Thousand Lakes
+TID_BALL_30,Галактика Арена
+TID_BALL_31,Удар плечима
+TID_BALL_32,Добре вирізане
+TID_BALL_33,Центральне поле
+TID_BALL_34,Викривлений пляж
+TID_BATTLE_ROYALE_44,Тисяча озер
 TID_ACCESSORY_BLOCKED_PORTER_ALREADY_PROMOTED,Porter already buffed!
 TID_ACCESSORY_BLOCKED_TARGET_ALREADY_ACTIVE,Target already active!
 TID_ACCESSORY_BLOCKED_FULL_AMMO,Already at full ammo!
@@ -3501,7 +3501,7 @@ TID_BUTTON_CONFLICTING_ACCOUNT_YES,"Yes, switch to current account."
 TID_BUTTON_CONFLICTING_ACCOUNT_NO,"No, use the original account."
 TID_TENCENT_AUTH_EXPIRED,"The authorization has expired, please login again."
 TID_BLOWER,ГЕЙЛ
-TID_BLOWER_SHORT_DESC,HYBRID
+TID_BLOWER_SHORT_DESC,
 TID_BLOWER_DESC,"Gale is a tireless handyman who gets no rest. With his blower, he blasts foes with a wide shot of wind and snow, while his Super pushes them back with a forceful blizzard!"
 TID_BLOWER_WEAPON,POLAR VORTEX
 TID_BLOWER_WEAPON_DESC,Gale blasts a large snow ball wall at his enemies!
@@ -3561,7 +3561,7 @@ TID_SETTINGS_QQ_LOGGED_IN,Logged in to QQ
 TID_SETTINGS_BUTTON_WECHAT_LOGOUT,Log out
 TID_SETTINGS_BUTTON_QQ_LOGOUT,Log out
 TID_SETTINGS_WECHAT_NOT_INSTALLED,You haven't installed WeChat yet
-TID_BRAWL_PASS_BUTTON,BRAWL PASS
+TID_BRAWL_PASS_BUTTON,БРАВЛ ПАС
 TID_ACCESSORY_BLOCKED_INVALID_SPAWN_POSITION,Can't drop Gadget here!
 TID_TENCENT_MULTIPLE_LOGINS,You can only log in to one account at a time. Please log out first.
 TID_TENCENT_CONFIRM_LOG_OUT_TITLE,Log out
@@ -3607,8 +3607,8 @@ TID_BRAWL_PASS_SEASON_0,TARA'S BAZAAR
 TID_BRAWL_PASS_TAB_REWARDS,REWARDS
 TID_BRAWL_PASS_TAB_QUESTS,QUESTS
 TID_BRAWL_PASS_TAB_PAST_REWARDS,PREVIOUS SEASON
-TID_BRAWL_PASS_PREMIUM,BRAWL PASS
-TID_BRAWL_PASS_FREE,FREE
+TID_BRAWL_PASS_PREMIUM,БРАВЛ ПАС
+TID_BRAWL_PASS_FREE,\n\nDaily Box purchases done: <AMOUNT>. Limited to <MAX>.
 TID_BRAWL_PASS_BUY,ACTIVATE
 TID_BRAWL_PASS_SEASON_HEADER,BRAWL PASS SEASON
 TID_QUEST_NEW_BATCH_IN,New Quests will unlock in:
@@ -3688,9 +3688,9 @@ TID_QUESTS_SEASON,SEASON QUESTS
 TID_QUESTS_SPECIAL,SPECIAL EVENT QUESTS
 TID_QUESTS_CHRONOS,SPECIAL QUESTS
 TID_QUESTS_LVL,LVL: <NUM>
-TID_CONTEXT_MENU_INVITE_ONLINE,INVITE ONLINE
-TID_CONTEXT_MENU_INVITE_TO_TEAM,INVITE TO TEAM
-TID_TENCENT_INVITE_TO_TEAM_TITLE,INVITE TO TEAM
+TID_CONTEXT_MENU_INVITE_ONLINE,ЗАПРОСИТИ ОНЛАЙН
+TID_CONTEXT_MENU_INVITE_TO_TEAM,ЗАПРОСИТИ ДО КОМАНДИ
+TID_TENCENT_INVITE_TO_TEAM_TITLE,ЗАПРОСИТИ ДО КОМАНДИ
 TID_TENCENT_INVITE_TO_TEAM,Would you like to invite <c<COLOR>><NAME></c> to play in your team?
 TID_TENCENT_INVITE_FRIENDS,INVITE FRIENDS
 TID_TENCENT_INVITE_WECHAT_FRIENDS,INVITE WECHAT FRIENDS
@@ -3811,15 +3811,15 @@ TID_SUPER_RANGER_BROCK_SKIN,СУПЕР РЕНДЖЕР БРОК
 TID_SUPER_RANGER_BROCK_SKIN_SHOP,СУПЕР РЕНДЖЕР\nБРОК
 TID_SKIN_INFO_CAMPAIGN_13_NOT_AVAILABLE,True Silver skin
 TID_SKIN_INFO_CAMPAIGN_14_NOT_AVAILABLE,True Gold skin
-TID_BATTLE_ROYALE_45,nruhC nrevaC
-TID_BATTLE_ROYALE_46,Clash Colosseum
-TID_BATTLE_ROYALE_47,Riverside Ring
-TID_BATTLE_ROYALE_48,Four Clovers
-TID_BATTLE_ROYALE_49,Shadow Spirits
-TID_BATTLE_ROYALE_50,Eggshell
-TID_BATTLE_ROYALE_51,Will of the Wisp
-TID_BATTLE_ROYALE_52,Victor Valley
-TID_BATTLE_ROYALE_53,Grassy Gorge
+TID_BATTLE_ROYALE_45,нрухЦ нреваЦ
+TID_BATTLE_ROYALE_46,Зіткнення Колізей
+TID_BATTLE_ROYALE_47,Річне кільце
+TID_BATTLE_ROYALE_48,Чотири конюшини
+TID_BATTLE_ROYALE_49,Тіньові духи
+TID_BATTLE_ROYALE_50,Яєчна шкаралупа
+TID_BATTLE_ROYALE_51,Воля Вісп
+TID_BATTLE_ROYALE_52,Долина Віктора
+TID_BATTLE_ROYALE_53,Трав'яна ущелина
 TID_GOLDRUSH_54,Tiny Town
 TID_GOLDRUSH_55,Massive Attack
 TID_GOLDRUSH_56,Escapade
@@ -4085,54 +4085,54 @@ TID_KING_OF_HILL_31,Sizzling Surprise
 TID_PLAYER_MAP_SLOT_CREATE_NEW_TITLE,CREATE NEW!
 TID_PLAYER_MAP_SLOT_CREATE_NEW_DESC,Map Maker
 TID_KING_OF_HILL_20F,Dueling Beetles
-TID_CONTEXT_MENU_EDIT,EDIT
-TID_CONTEXT_MENU_RENAME,RENAME
-TID_CONTEXT_MENU_DELETE,DELETE
-TID_CONTEXT_MENU_SUBMIT,SUBMIT
-TID_MAP_EDITOR_RENAME_MAP_TITLE,RENAME MAP
-TID_MAP_EDITOR_PENDING,"Operation pending, please try again later"
-TID_MAP_EDITOR_RENAME_OK,Map renamed
-TID_MAP_EDITOR_UNAVAILABLE_TROPHY_LIMIT,You need to have <NUM> Trophies to use the Map Maker
-TID_MAP_EDITOR_NAME_ERROR,Map renaming failed
-TID_MAP_EDITOR_NAME_EMPTY_NAME,Map name cannot be empty
-TID_MAP_EDITOR_NAME_SHORT_NAME,Map name is too short
-TID_MAP_EDITOR_NAME_LONG_NAME,Map name is too long
-TID_MAP_EDITOR_NAME_INVALID_NAME,Map name not accepted
-TID_MAP_EDITOR_NAME_OK,Map has been renamed
-TID_MAP_EDITOR_MAP_DELETE_TITLE,DELETE MAP
-TID_MAP_EDITOR_MAP_DELETE_TEXT,Are you sure you want to delete\n<NAME>
-TID_MAP_EDITOR_MAP_DELETE_OK,Map deleted
-TID_MAP_EDITOR_MAP_DELETE_ERROR,Error deleting map
-TID_MAP_EDITOR_QUIT_TITLE,Quit Map Maker?
-TID_MAP_EDITOR_QUIT_TEXT,"If you quit now, you will lose your unsaved changes."
-TID_MAP_EDITOR_PLACEMENT_MODE_NORMAL,Placement mode: Single
-TID_MAP_EDITOR_PLACEMENT_MODE_MIRROR_X,Placement mode: Mirror horizontal
-TID_MAP_EDITOR_PLACEMENT_MODE_MIRROR_Y,Placement mode: Mirror vertical
-TID_MAP_EDITOR_PLACEMENT_MODE_MIRROR_DIAGONAL,Placement mode: Mirror diagonal
-TID_MAP_EDITOR_PLACEMENT_MODE_MIRROR_BOTH,Placement mode: Mirror all
-TID_MAP_EDITOR_BUTTON_QUIT,Quit
-TID_MAP_EDITOR_BUTTON_UNDO,Undo
-TID_MAP_EDITOR_BUTTON_REDO,Redo
-TID_MAP_EDITOR_BUTTON_LOAD,Load
-TID_MAP_EDITOR_BUTTON_SAVE,Save
-TID_MAP_EDITOR_BUTTON_CLEAR_ALL,Clear All
-TID_MAP_EDITOR_BUTTON_GRID,Grid
-TID_MAP_EDITOR_BUTTON_MODIFIERS,Modifiers
-TID_MAP_EDITOR_CANNOT_SAVE,Cannot save map. Illegal tile placement.
-TID_MAP_EDITOR_CANNOT_SAVE_BLOCK_SPACING,Gap between objects is too small.
-TID_MAP_EDITOR_CANNOT_SAVE_WATER,Cannot have single water blocks.
-TID_MAP_EDITOR_CANNOT_SAVE_CLOSED_AREA,Cannot have closed areas.
-TID_MAP_EDITOR_CANNOT_SAVE_RESTRICTED_AREA,Cannot place objects here.
-TID_MAP_EDITOR_CANNOT_SAVE_MAX_OBJECTS,Maximum number of these objects placed.
-TID_MAP_EDITOR_SAVE_ERROR,Error saving map
-TID_MAP_EDITOR_SAVE_OK,Map has been saved
-TID_MAP_EDITOR_HEIST_SAFE,Each team must have a Safe on their side of the map.
-TID_MAP_EDITOR_SECOND_TELEPORT,Second Teleport is missing.
-TID_MAP_EDITOR_SECOND_SPAWN_POINT,Invalid spawn point placement
-TID_MAP_EDITOR_BUTTON_REMOVE,REMOVE
-TID_MAP_EDITOR_HOT_ZONE_AREA,You must place some Hot Zone areas
-TID_MAP_EDITOR_SIEGE_BOLT,You must place some Bolt locations
-TID_MAP_EDITOR_MODIFIERS_TITLE,Modifiers
+TID_CONTEXT_MENU_EDIT,РЕДАГУВАТИ
+TID_CONTEXT_MENU_RENAME,ПЕРЕЙМЕНУВАТИ
+TID_CONTEXT_MENU_DELETE,ВИДАЛИТИ
+TID_CONTEXT_MENU_SUBMIT,НАДІСЛАТИ
+TID_MAP_EDITOR_RENAME_MAP_TITLE,ПЕРЕЙМЕНУВАТИ КАРТУ
+TID_MAP_EDITOR_PENDING,Операція очікує на розгляд. Спробуйте пізніше
+TID_MAP_EDITOR_RENAME_OK,Карту перейменовано
+TID_MAP_EDITOR_UNAVAILABLE_TROPHY_LIMIT,"Щоб використовувати розробник карт, потрібно мати <NUM> трофеїв"
+TID_MAP_EDITOR_NAME_ERROR,Не вдалося перейменувати карту
+TID_MAP_EDITOR_NAME_EMPTY_NAME,Назва карти не може бути пустою
+TID_MAP_EDITOR_NAME_SHORT_NAME,Назва карти закоротка
+TID_MAP_EDITOR_NAME_LONG_NAME,Назва карти задовга
+TID_MAP_EDITOR_NAME_INVALID_NAME,Назва карти не приймається
+TID_MAP_EDITOR_NAME_OK,Карта була перейменована
+TID_MAP_EDITOR_MAP_DELETE_TITLE,ВИДАЛИТИ КАРТУ
+TID_MAP_EDITOR_MAP_DELETE_TEXT,"Ви впевнені, що хочете видалити\n<NAME>"
+TID_MAP_EDITOR_MAP_DELETE_OK,Карта видалена
+TID_MAP_EDITOR_MAP_DELETE_ERROR,Помилка видалення карти
+TID_MAP_EDITOR_QUIT_TITLE,Вийти з Map Maker?
+TID_MAP_EDITOR_QUIT_TEXT,"Якщо ви вийдете зараз, ви втратите незбережені зміни."
+TID_MAP_EDITOR_PLACEMENT_MODE_NORMAL,Режим розміщення: Одиночний
+TID_MAP_EDITOR_PLACEMENT_MODE_MIRROR_X,Режим розміщення: Дзеркально по горизонталі
+TID_MAP_EDITOR_PLACEMENT_MODE_MIRROR_Y,Режим розміщення: Дзеркально по вертикалі
+TID_MAP_EDITOR_PLACEMENT_MODE_MIRROR_DIAGONAL,Режим розміщення: Дзеркально по діагоналі
+TID_MAP_EDITOR_PLACEMENT_MODE_MIRROR_BOTH,Режим розміщення: Дзеркально у всі сторони
+TID_MAP_EDITOR_BUTTON_QUIT,Вийти
+TID_MAP_EDITOR_BUTTON_UNDO,Назад
+TID_MAP_EDITOR_BUTTON_REDO,Вперед
+TID_MAP_EDITOR_BUTTON_LOAD,Завантажити
+TID_MAP_EDITOR_BUTTON_SAVE,Зберегти
+TID_MAP_EDITOR_BUTTON_CLEAR_ALL,Очистити усе
+TID_MAP_EDITOR_BUTTON_GRID,Сітка
+TID_MAP_EDITOR_BUTTON_MODIFIERS,Модифікації
+TID_MAP_EDITOR_CANNOT_SAVE,Не вдається зберегти карту. Незаконне розміщення плитки.
+TID_MAP_EDITOR_CANNOT_SAVE_BLOCK_SPACING,Проміжок між об’єктами занадто малий.
+TID_MAP_EDITOR_CANNOT_SAVE_WATER,Не може бути одиничних водяних блоків.
+TID_MAP_EDITOR_CANNOT_SAVE_CLOSED_AREA,Не може бути закритих зон.
+TID_MAP_EDITOR_CANNOT_SAVE_RESTRICTED_AREA,Не можна розміщувати тут об’єкти.
+TID_MAP_EDITOR_CANNOT_SAVE_MAX_OBJECTS,Максимальна кількість розміщених об’єктів.
+TID_MAP_EDITOR_SAVE_ERROR,Помилка збереження карти
+TID_MAP_EDITOR_SAVE_OK,Карта збережена
+TID_MAP_EDITOR_HEIST_SAFE,Кожна команда повинна мати сейф на своїй стороні карти.
+TID_MAP_EDITOR_SECOND_TELEPORT,Другий телепорт відсутній.
+TID_MAP_EDITOR_SECOND_SPAWN_POINT,Недійсне розташування точки спавну
+TID_MAP_EDITOR_BUTTON_REMOVE,ВИДАЛИТИ
+TID_MAP_EDITOR_HOT_ZONE_AREA,Ви повинні розмістити деякі зони гарячої зони
+TID_MAP_EDITOR_SIEGE_BOLT,Ви повинні розмістити кілька місць для болтів
+TID_MAP_EDITOR_MODIFIERS_TITLE,Модифікації
 TID_PLAYER_MAP_SLOT_MAPS_MADE,Maps made: <NUM>/<MAX>
 TID_PLAYER_MAP_SLOT_DRAFT_MAPS,Draft maps: <NUM>/<MAX>
 TID_PLAYER_MAP_SLOT_STATUS,Status: <STATUS>
@@ -4166,8 +4166,8 @@ TID_PLAYER_MAP_CREATE_POPUP_SELECT_MODE_WARNING,Choose the game mode first!
 TID_PLAYER_MAP_CREATE_POPUP_SELECT_ENVIRONMENT,SELECT ENVIRONMENT
 TID_PLAYER_MAP_CREATE_POPUP_SELECT_ENVIRONMENT_WARNING,Choose the environment first!
 TID_PLAYER_MAP_CREATE_POPUP_BUTTON_CREATE,CREATE
-TID_BUTTON_MAP_EDITOR,MAP MAKER
-TID_PLAYER_MAP_LIST_TITLE,MAP MAKER
+TID_BUTTON_MAP_EDITOR,РОЗРОБНИК КАРТ
+TID_PLAYER_MAP_LIST_TITLE,РОЗРОБНИК КАРТ
 TID_PLAYER_MAP_UNNAMED,Unnamed
 TID_CREATE_MAP_ERROR_INTERNAL,"Internal error creating map, please try again later."
 TID_CREATE_MAP_ERROR_MISSING_NAME,Map name missing
@@ -4210,52 +4210,52 @@ TID_UNDERWORLD_BO_SKIN,НИЖНЬО-СВІТНИЙ БО
 TID_UNDERWORLD_BO_SKIN_SHOP,НИЖНЬО-СВІТНИЙ\nБО
 TID_BRAWLOWEEN_ROSA_SKIN,БРАВЛ-О-ВІН РОЗА
 TID_BRAWLOWEEN_ROSA_SKIN_SHOP,БРАВЛ-О-ВІН\nРОЗА
-TID_ENVIRONMENT_MINE,Mine
-TID_ENVIRONMENT_DEFAULT,Desert
-TID_ENVIRONMENT_OLDTOWN,Old Town
-TID_ENVIRONMENT_WAREHOUSE,Warehouse
-TID_ENVIRONMENT_OASIS,Oasis
-TID_ENVIRONMENT_MORTUARY,Mortis' Mortuary
-TID_ENVIRONMENT_GRASSFIELD,Grass Field
-TID_ENVIRONMENT_BEACHBALL,Beach Ball
-TID_ENVIRONMENT_ARCADE,Arcade
-TID_ENVIRONMENT_BBARENA,Brawl Ball Arena
-TID_ENVIRONMENT_BAZAAR,Tara's Bazaar
-TID_ENVIRONMENT_MINICITY,Mini City
-TID_ENVIRONMENT_GIFTSHOP,Gift Shop
-TID_ENVIRONMENT_SCRAPYARD,Scrapyard
+TID_ENVIRONMENT_MINE,Шахта
+TID_ENVIRONMENT_DEFAULT,Пустеля
+TID_ENVIRONMENT_OLDTOWN,Старе Місто
+TID_ENVIRONMENT_WAREHOUSE,Склад
+TID_ENVIRONMENT_OASIS,Оазис
+TID_ENVIRONMENT_MORTUARY,Цвинтар Мортіса
+TID_ENVIRONMENT_GRASSFIELD,Трав'яне поле
+TID_ENVIRONMENT_BEACHBALL,Пляжний Бол
+TID_ENVIRONMENT_ARCADE,Аркада
+TID_ENVIRONMENT_BBARENA,Арена Бравл Бол
+TID_ENVIRONMENT_BAZAAR,Базар Тари
+TID_ENVIRONMENT_MINICITY,Міні Місто
+TID_ENVIRONMENT_GIFTSHOP,Сувенірна лавка
+TID_ENVIRONMENT_SCRAPYARD,Сміттєзбірник
 TID_PERCENT_DAMAGE_STAT_DESC,<PERCENT>% (min <MIN_DAMAGE>)
-TID_VOTE_MAP_TO_CONTINUE,VOTE TO CONTINUE
-TID_VOTE_MAP_TO_CONTINUE_2,VOTE TO\nCONTINUE
-TID_VOTE_PLAYED_MAP_TITLE,CANDIDATE MAP COMPLETED!
-TID_VOTE_PLAYED_MAP_TITLE_2,MAP TEST COMPLETE!
-TID_VOTE_PLAYED_MAP_DESC,How did you like this map?
-TID_VOTE_PLAYED_MAP_DESC_2,Was the map good?
+TID_VOTE_MAP_TO_CONTINUE,ПРОГОЛОСУЙ ЩОБ ПРОДОВЖИТИ
+TID_VOTE_MAP_TO_CONTINUE_2,ПРОГОЛОСУЙ ЩОБ\nПРОДОВЖИТИ
+TID_VOTE_PLAYED_MAP_TITLE,КАРТА КАНДИДАТА ЗАВЕРШЕНА!
+TID_VOTE_PLAYED_MAP_TITLE_2,ТЕСТ КАРТИ ЗАВЕРШЕНО!
+TID_VOTE_PLAYED_MAP_DESC,Чи сподобалась вам ця карта?
+TID_VOTE_PLAYED_MAP_DESC_2,Карта була хорошою?
 TID_VOTE_MAP_REWARD_LABEL,
-TID_BATTLE_END_MAP_TEST_COMPLETE,MAP TEST\nCOMPLETE
-TID_BATTLE_END_MAP_TEST_CREATOR_DESC,by <NAME>
-TID_PLAYER_MAP_SLOT_COMPETITION_ENTRY,CANDIDATES OF THE DAY
-TID_PLAYER_MAP_SLOT_COMPETITION_ENTRY_2,TEST AND VOTE A MAP!
-TID_PLAYER_MAP_SLOT_COMPETITION_ENTRY_3,EXPERIMENTAL RIDES
-TID_PLAYER_MAP_SLOT_COMPETITION_ENTRY_DESC,Play this map to vote for it in the map competition!
-TID_PLAYER_MAP_SLOT_COMPETITION_ENTRY_DESC_2,Test and vote maps!
-TID_PLAYER_MAP_SLOT_COMPETITION_ENTRY_DESC_3,Play and vote on maps made by players!
-TID_PLAYER_MAP_SLOT_COMPETITION_WINNER,WINNER OF THE DAY
-TID_PLAYER_MAP_SLOT_COMPETITION_WINNER_MODE,<MODE> WINNER MAP
-TID_PLAYER_MAP_SLOT_COMPETITION_WINNER_DESC,This map won the previous competition!
-TID_PLAYER_MAP_SLOT_COMPETITION_WINNER_DESC_2,Play maps that have won the most votes!
-TID_PLAYER_MAP_SLOT_COMPETITION_WINNER_MODE_DESC,Winner of <MODE> map competition
-TID_PLAYER_MAP_SLOT_COMING_SOON,COMING SOON
-TID_PLAYER_MAP_FRIENDLY_REQUIRES_GREENLIGHT,Map must be greenlit before playing with friends
-TID_PLAYER_MAP_FRIENDLY_INVITE_REQUIRES_GREENLIGHT,Selected map must get greenlit before inviting friends.
-TID_PLAYER_MAP_TAG_BETA,BETA
-TID_DRAFT_MAP_WATERMARK,UNPUBLISHED MAP OF PLAYER <TAG>
+TID_BATTLE_END_MAP_TEST_COMPLETE,ТЕСТ КАРТИ\nЗАВЕРШЕНО
+TID_BATTLE_END_MAP_TEST_CREATOR_DESC,Зроблено: <NAME>
+TID_PLAYER_MAP_SLOT_COMPETITION_ENTRY,КАНДИДАТИ ДНЯ
+TID_PLAYER_MAP_SLOT_COMPETITION_ENTRY_2,ТЕСТУЙТЕ ТА ГОЛОСУВАЙТЕ КАРТУ!
+TID_PLAYER_MAP_SLOT_COMPETITION_ENTRY_3,ЕКСПЕРИМЕНТАЛЬНІ ПОЇЗДКИ
+TID_PLAYER_MAP_SLOT_COMPETITION_ENTRY_DESC,"Грайте на цю карту, щоб проголосувати за неї в конкурсі карт!"
+TID_PLAYER_MAP_SLOT_COMPETITION_ENTRY_DESC_2,Тестуйте та голосуйте карти!
+TID_PLAYER_MAP_SLOT_COMPETITION_ENTRY_DESC_3,"Грайте та голосуйте за карти, створені гравцями!"
+TID_PLAYER_MAP_SLOT_COMPETITION_WINNER,ПЕРЕМОЖЕЦЬ ДНЯ
+TID_PLAYER_MAP_SLOT_COMPETITION_WINNER_MODE,<MODE> КАРТА ПЕРЕМОЖЦЯ
+TID_PLAYER_MAP_SLOT_COMPETITION_WINNER_DESC,Ця карта перемогла у попередньому конкурсі!
+TID_PLAYER_MAP_SLOT_COMPETITION_WINNER_DESC_2,"Грайте в карти, які набрали найбільше голосів!"
+TID_PLAYER_MAP_SLOT_COMPETITION_WINNER_MODE_DESC,Переможець конкурсу карт <MODE>
+TID_PLAYER_MAP_SLOT_COMING_SOON,НЕЗАБАРОМ
+TID_PLAYER_MAP_FRIENDLY_REQUIRES_GREENLIGHT,"Перед тим, як грати з друзями, карта повинна мати зелене освітлення"
+TID_PLAYER_MAP_FRIENDLY_INVITE_REQUIRES_GREENLIGHT,"Вибрана карта має отримати зелене світло, перш ніж запросити друзів."
+TID_PLAYER_MAP_TAG_BETA,БЕТА
+TID_DRAFT_MAP_WATERMARK,НЕПУБЛІКУВАНА КАРТА ГРАВЦЯ <TAG>
 TID_SKIN_INFO_CAMPAIGN_15_NOT_AVAILABLE,World Finals 2020 skin
-TID_CONTEXT_MENU_PUBLISH,PUBLISH
-TID_CONTEXT_MENU_INFO,INFO
-TID_CONTEXT_MENU_REPORT_MAP,REPORT MAP
-TID_CONTEXT_MENU_STATUS_INFO,STATUS INFO
-TID_CONTEXT_MENU_FRIENDLY_GAME,FRIENDLY BATTLE
+TID_CONTEXT_MENU_PUBLISH,ПУБЛІКУВАТИ
+TID_CONTEXT_MENU_INFO,ІНФОРМАЦІЯ
+TID_CONTEXT_MENU_REPORT_MAP,ЗВІТ ПРО КАРТУ
+TID_CONTEXT_MENU_STATUS_INFO,ІНФОРМАЦІЯ ПРО СТАТУС
+TID_CONTEXT_MENU_FRIENDLY_GAME,ДРУЖНИЙ БІЙ
 TID_SUBMIT_MAP_TITLE,Submit map?
 TID_SUBMIT_MAP_DESC,"Submitted maps must be approved by other players in Friendly battles. If the map gets enough approvals, you can publish it. Do you want to submit the current '<NAME>' map?"
 TID_SUBMIT_MAP_DESC_AUTOREVIEW,"Submitted maps must wait to get greenlit for publication while they are checked for inappropriate content. If the map gets greenlit, you can publish it. Do you want to submit the current '<NAME>' map?"
@@ -4265,30 +4265,30 @@ TID_SUBMIT_MAP_ERROR_GENERIC,This map cannot be submitted right now
 TID_SUBMIT_MAP_ERROR_NUM_LIMIT,Maximum amount of submitted maps reached
 TID_SUBMIT_MAP_ERROR_GREENLIT_NUM_LIMIT,Greenlit map needs to be published first!
 TID_FEATURE_NOT_AVAILABLE_TO_UNDERAGE,Not available to underage players
-TID_SUBMIT_MAP_ERROR_NOT_ENOUGH_TROPHY,You need <TROPHIES> trophies to submit a map
-TID_PUBLISH_MAP_TITLE,Publish map?
-TID_PUBLISH_MAP_DESC,Do you want to publish the map '<NAME>'?
-TID_PUBLISH_MAP_ERROR_GENERIC,This map cannot be published right now
-TID_PUBLISH_MAP_ERROR_NOT_GREENLIGHTED,Only greenlit maps can be published
-TID_PUBLISH_MAP_ERROR_NUM_LIMIT,Maximum amount of maps reached
-TID_MAP_EDITOR_UNAVAILABLE,Map Maker is currently unavailable
-TID_MAP_EDITOR_BLOCKED_WITH_GUEST_LOGIN,Map Maker is not available to guest accounts.
-TID_MAP_EDITOR_MENU_BLOCKED_IN_HOMESCREEN_TEAM,Map Maker is not available while teaming up
-TID_MAP_EDITOR_MENU_BLOCKED_IN_FRIENDLY_TEAM_OWNER,Use the event selection to access maps in friendly team!
-TID_MAP_EDITOR_MENU_BLOCKED_IN_FRIENDLY_TEAM,Map Maker is not available while playing in friendly team!
-TID_MAP_FEATURE_UNAVAILABLE,This feature is currently unavailable
-TID_MAP_SUBMITTED_INFO_TITLE,Map submitted
-TID_MAP_SUBMITTED_INFO,Your map '<NAME>' has been submitted!
-TID_MAP_GREENLIGHTED_INFO_TITLE,Map approved
-TID_MAP_GREENLIGHTED_INFO,Your map '<NAME>' has been approved for publication!
-TID_MAP_PUBLISHED_INFO_TITLE,Map published
-TID_MAP_PUBLISHED_INFO,Your map '<NAME>' has been published!
-TID_MAP_WINNER_INFO_TITLE,Map has won!
-TID_MAP_WINNER_INFO,Your map '<NAME>' has won the map vote!
-TID_MAP_BANNED_INFO_TITLE,Map banned
-TID_MAP_BANNED_INFO,Your map '<NAME>' has been banned
-TID_SIGNOFF_MAP_TITLE,Approve map publication?
-TID_SIGNOFF_MAP_DESC,Do you approve that the map '<NAME>' you played should be published to all players?
+TID_SUBMIT_MAP_ERROR_NOT_ENOUGH_TROPHY,"Щоб надіслати карту, вам потрібні трофеї <TROPHIES>"
+TID_PUBLISH_MAP_TITLE,Опублікувати карту?
+TID_PUBLISH_MAP_DESC,"Опублікувати карту ""<NAME>""?"
+TID_PUBLISH_MAP_ERROR_GENERIC,Цю карту зараз не можна опублікувати
+TID_PUBLISH_MAP_ERROR_NOT_GREENLIGHTED,Можна публікувати лише карти із зеленим освітленням
+TID_PUBLISH_MAP_ERROR_NUM_LIMIT,Досягнуто максимальної кількості карт
+TID_MAP_EDITOR_UNAVAILABLE,Розробка карт наразі недоступна
+TID_MAP_EDITOR_BLOCKED_WITH_GUEST_LOGIN,Розробник карт недоступний для облікових записів гостей.
+TID_MAP_EDITOR_MENU_BLOCKED_IN_HOMESCREEN_TEAM,Картограф недоступний під час об’єднання
+TID_MAP_EDITOR_MENU_BLOCKED_IN_FRIENDLY_TEAM_OWNER,"Використовуйте вибір подій, щоб отримати доступ до карт у дружній команді!"
+TID_MAP_EDITOR_MENU_BLOCKED_IN_FRIENDLY_TEAM,Розробник карт недоступний під час гри в дружній команді!
+TID_MAP_FEATURE_UNAVAILABLE,Ця функція наразі недоступна
+TID_MAP_SUBMITTED_INFO_TITLE,Карта надіслана
+TID_MAP_SUBMITTED_INFO,Вашу карту «<NAME>» надіслано!
+TID_MAP_GREENLIGHTED_INFO_TITLE,Карта схвалена
+TID_MAP_GREENLIGHTED_INFO,Вашу карту «<NAME>» схвалено до публікації!
+TID_MAP_PUBLISHED_INFO_TITLE,Карта опублікована
+TID_MAP_PUBLISHED_INFO,"Ваша карта ""<NAME>"" опублікована!"
+TID_MAP_WINNER_INFO_TITLE,Карта перемогла!
+TID_MAP_WINNER_INFO,"Ваша карта ""<NAME>"" виграла голосування за карту!"
+TID_MAP_BANNED_INFO_TITLE,Карта заблокована
+TID_MAP_BANNED_INFO,Вашу карту '<NAME>' забанено
+TID_SIGNOFF_MAP_TITLE,Схвалити публікацію карти?
+TID_SIGNOFF_MAP_DESC,"Чи погоджуєтесь ви, що карта '<NAME>', у яку ви грали, повинна бути опублікована для всіх гравців?"
 TID_SIGNOFF_MAP_BUTTON_YES,YES
 TID_SIGNOFF_MAP_BUTTON_NO,NO
 TID_SIGNOFF_MAP_BUTTON_REPORT,REPORT CONTENT
@@ -4318,7 +4318,7 @@ TID_TEAM_MEMBER_STATUS_NEW_14,MAP MAKER
 TID_FRIEND_STATUS_MAP_MAKER,Map Maker
 TID_CLAN_MEMBER_ONLINE_STATUS_14,MAP MAKER
 TID_ICE_DUDE,ЛУ
-TID_ICE_DUDE_SHORT_DESC,HYBRID
+TID_ICE_DUDE_SHORT_DESC,
 TID_ICE_DUDE_DESC,"Lou is a cool guy, literally! He can dole out all kinds of chill stuff. But watch your step on the ice, and be careful not to get brain freeze!"
 TID_ICE_DUDE_WEAPON,BRAIN FREEZE
 TID_ICE_DUDE_WEAPON_DESC,"Barraging opponents with snow cones, Lou can eventually freeze them in place for <accumulatedStun> seconds."
@@ -4390,7 +4390,7 @@ TID_SPEC_ABI_SNAKE_OIL_2,INJECTION
 TID_SPEC_ABI_SNAKE_OIL_2_DESC,Every <c00cc00><VALUE1></c> seconds the next basic attack will pierce through targets.
 TID_ACCESSORY_SNAKE_OIL_HEAL,SHOT IN THE ARM
 TID_ACCESSORY_SNAKE_OIL_HEAL_DESC,Byron uses one of his shots to heal himself <c00cc00><VALUE1></c> per second for <c00cc00><VALUE2></c> seconds.
-TID_ENRAGER,EDGAR
+TID_ENRAGER,Едгар
 TID_ENRAGER_SHORT_DESC,ВБИВЦЯ
 TID_ENRAGER_DESC,"Edgy and with a hands-off attitude, Edgar prefers to throw punches with his scarf. With his Super, Edgar jumps into the fray swinging his scarf around himself."
 TID_ENRAGER_WEAPON,FIGHT CLUB
@@ -5039,26 +5039,26 @@ TID_WHALEWATCH_NITA_SKIN,ДОГЛЯДАЧКА КИТІВ НІТА
 TID_WHALEWATCH_NITA_SKIN_SHOP,ДОГЛЯДАЧКА КИТІВ\nНІТА
 TID_BEACHTIME_MORTIS_SKIN,ПЛЯЖНИЙ МОРТІС
 TID_BEACHTIME_MORTIS_SKIN_SHOP,ПЛЯЖНИЙ\nМОРТІС
-TID_SD_JUNE21_1,Dark Fantasies
-TID_SD_JUNE21_2,Grand Arches
-TID_SD_JUNE21_3,Risky Cliffs
-TID_SD_JUNE21_4,Ignition
-TID_SD_JUNE21_5,Mystic Touch
-TID_SD_JUNE21_6,Trap Map
-TID_SD_JUNE21_7,Poisoned Tree
+TID_SD_JUNE21_1,Темні фантазії
+TID_SD_JUNE21_2,Великі арки
+TID_SD_JUNE21_3,Ризиковані скелі
+TID_SD_JUNE21_4,Запалювання
+TID_SD_JUNE21_5,Містичне дотик
+TID_SD_JUNE21_6,Карта пастки
+TID_SD_JUNE21_7,Отруєне дерево
 TID_GG_JUNE21_1,Stardust Storm
 TID_GG_JUNE21_2,Cotton Candy Dreams
 TID_GG_JUNE21_3,Twisted Torpedo
 TID_GG_JUNE21_4,Gem Bash
 TID_GG_JUNE21_5,Molasses
 TID_GG_JUNE21_6,Waterslide
-TID_BB_JUNE21_1,Side Strike
-TID_BB_JUNE21_2,Wavedash
-TID_BB_JUNE21_3,Retina
-TID_BB_JUNE21_4,Turtle Shell
-TID_BB_JUNE21_5,Sticky Notes
-TID_BB_JUNE21_6,Striker's Dream
-TID_BB_JUNE21_7,Last Second Save
+TID_BB_JUNE21_1,Бічний удар
+TID_BB_JUNE21_2,Вейведаш
+TID_BB_JUNE21_3,Сітківка
+TID_BB_JUNE21_4,Черепашачий панцир
+TID_BB_JUNE21_5,Ліпкі нотатки
+TID_BB_JUNE21_6,Мрія нападника
+TID_BB_JUNE21_7,Збереження в останню секунду
 TID_HEIST_JUNE21_1,Cover Crowd
 TID_HEIST_JUNE21_2,Bandit Hook
 TID_HEIST_JUNE21_3,Spring Onions
