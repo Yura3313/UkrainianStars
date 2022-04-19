@@ -4,7 +4,7 @@ TID_BATTLE_END_QUESTS_COMPLETED,Квестів виконано: <NUM>
 TID_BATTLE_END_QUESTS_PROGRESSED,Квестів прогресовано: <NUM>
 TID_TICKET_COMPENSATION_TITLE,Сповіщення оновлення
 TID_TICKET_COMPENSATION_INFO,От вам кілька кристалів! Ми забрали квитки тому дали вам компенсацію в кристалах
-TID_TICKET_COMPENSATION_CLAIM,ОТРИМАТИ!
+TID_TICKET_COMPENSATION_CLAIM,ЗАБРАТИ
 TID_BRAWL_PASS_OLD_BOXES_TITLE,ВІДКРИТИ РЕШТУ ЯЩИКІВ
 TID_BRAWL_PASS_QUESTS_LABEL,КВЕСТ
 TID_BRAWL_PASS_QUESTS_INFO_LOCKED,Досягни <TROPHIES> Трофеїв щоб відкрити Квести!
@@ -203,7 +203,7 @@ TID_BATTLE_LOG_FRIENDLY,ДРУЖНІЙ
 TID_BATTLE_LOG_TOURNAMENT,ТУРНІР
 TID_BATTLE_LOG_PVP,РАНГ
 TID_BATTLE_LOG_PRO_LEAGUE,СИЛОВА ГРА
-TID_BATTLE_LOG_RANKED,СИЛОВА ЛІГА
+TID_BATTLE_LOG_RANKED,ПАВЕР ЛІГА
 TID_BATTLE_LOG_NO_ENTRIES,БЕЗ ВХОДІВ
 TID_BATTLE_LOG_THIS_IS_A_BOT,Це є бот
 TID_BATTLE_LOG_REPLAY_INFO_REPLAYS_DISABLED,Наразі відтворення вимкнено
@@ -853,7 +853,7 @@ TID_BATTLE_END_GAIN_LABEL_COIN_DOUBLER,Залишилося токенів:
 TID_BATTLE_END_COIN_REWARDS,ВИНАГОРОДИ ТОКЕНІВ
 TID_BATTLE_END_MVP,ЗІРКОВИЙ ГРАВЕЦЬ
 TID_BATTLE_END_DEFEAT_INFO,Удачі наступного разу!
-TID_TUTORIAL_1,Привіт я Шеллі!! Давай зберемо ці всі <c50d050>Енергетики</c>! <c0066ff>тягни</c> <c0066ff>Синій джойстик</c> своїм лівим пальцем
+TID_TUTORIAL_1,Привіт я Шеллі!! Давай зберемо ці всі <c50d050>Енергетики</c>! <c0066ff>тягни</c> <c0066ff>Синій джойстик</> своїм лівим пальцем
 TID_TUTORIAL_2,Gotta collect them all! These <c50d050>POWER CUBES</c> are mine!
 TID_TUTORIAL_3,"Роботи! <ccc0033>Потягни</c><ccc0033>Червоний джойстик</c> Своїм правим пальцем щоб прицілитися, і відпусти щоб стрельнути. Знищ роботів!"
 TID_TUTORIAL_GOOD_JOB_1,Хороша робота!
@@ -2006,7 +2006,7 @@ TID_BIND_TO_NEW_GOOGLE_SERVICE_ACCOUNT_TITLE,New Google Play login
 TID_BIND_TO_NEW_GOOGLE_SERVICE_ACCOUNT,Do you want to save your current game on this Google Play account?
 TID_SHOWDOWN_END,SHOWDOWN!
 TID_SETTINGS_FIXES_JOYSTICK,
-TID_SETTINGS_SC_ID,СУПЕРСЕЛ ІД
+TID_SETTINGS_SC_ID,SUPERCELL ID
 TID_LANGUAGE_LOCALIZED_NAME,English
 TID_POPUP_CHANGE_LANGUAGE_TITLE,Change language?
 TID_POPUP_CHANGE_LANGUAGE,Are you sure you want to change the language?
@@ -2045,7 +2045,7 @@ TID_EVENT_MODIFIER_DESC_3_SD,Gathering close with your friends can be dangerous 
 TID_DEFEATED_SHOWDOWN,Defeated
 TID_OFFER_WATCH_AD,WATCH
 TID_ERROR_REPLAY_DISABLED,Replay is not available
-TID_WANTED_9,Canal Grande
+TID_WANTED_9,Канал Гранде
 TID_HOOK,ДЖИН
 TID_STAR_KEY_INFO_EXTENSION,\n\nStar Tokens are used to open Big Boxes.
 TID_TEAM_OWNER_TEXT,<NAME>'s team
@@ -2264,7 +2264,7 @@ TID_EVENT_LOCKED_CAN_CLAIM_WARNING,Unlock Event from the Trophy Road screen
 TID_EVENT_LOCKED_CAN_CLAIM,Congratulations! You can now unlock the Event from the Trophy Road screen
 TID_BATTLE_ROYALE_3D,Долина Смерті
 TID_BATTLE_ROYALE_7D,Скеляста долина
-TID_WANTED_4D,Death Cap
+TID_WANTED_4D,Смертельна Брехня
 TID_GOLDRUSH_3D,Mushroom Cave
 TID_WEEKEND_OFFER,Weekend Offer
 TID_EXCLUSIVE_OFFER,Exclusive Offer
@@ -2329,11 +2329,11 @@ TID_BANKHEIST_10,Rolling Rumble
 TID_BANKHEIST_11,Twist and Shoot
 TID_BANKHEIST_12,Bridge Too Far
 TID_BANKHEIST_13,Corner Case
-TID_WANTED_10,Pool Party
-TID_WANTED_11,Bull Pen
-TID_WANTED_12,Excel
-TID_WANTED_13,Layer Cake
-TID_WANTED_14,Dry Season
+TID_WANTED_10,Вечірка біля басейну
+TID_WANTED_11,Булова ручка
+TID_WANTED_12,Ексель
+TID_WANTED_13,Шаровий торт
+TID_WANTED_14,Сезон засухи
 TID_NOT_ENOUGH_LEGENDARY_TROPHIES,Not enough Star Points!
 TID_NOT_ENOUGH_CLUB_COINS,Not enough Club Coins!
 TID_NOT_ENOUGH_GOLD_TITLE,Not enough Coins!
@@ -2506,12 +2506,12 @@ TID_SKIN_INFO_FX_SOUND,- Custom Brawler model\n- Custom effects\n- Custom sounds
 TID_SKIN_INFO_SOUND,- Custom Brawler model\n- Custom sounds
 TID_GOLDRUSH_27,Trolly Train
 TID_BUTTON_SETTINGS,НАЛАШТУВАННЯ
-TID_BUTTON_BATTLELOG,BATTLE LOG
-TID_BUTTON_LEADERBOARD,LEADERBOARDS
-TID_BUTTON_BRAWLTV,BRAWL TV
-TID_BUTTON_NEWS,NEWS
-TID_BRAWL_TV_LIVE,LIVE
-TID_BUTTON_TEST_HERO,TRY
+TID_BUTTON_BATTLELOG,ЖУРНАЛ БОЇВ
+TID_BUTTON_LEADERBOARD,ТАБЛИЦІ ЛІДЕРІВ
+TID_BUTTON_BRAWLTV,БРАВЛ ТВ
+TID_BUTTON_NEWS,НОВИНИ
+TID_BRAWL_TV_LIVE,ЕФІР
+TID_BUTTON_TEST_HERO,СПРОБУВАТИ
 TID_CONTENT_UPDATE,Завантажуємо оновлення...
 TID_BATTLE_ROYALE_28,Літаючі фантазії
 TID_SHAMAN_SHIBA_SKIN,ШІБА НІТА
@@ -2710,8 +2710,8 @@ TID_CARL_HOG_RIDER_SKIN_SHOP,НАЇЗНИК\nКАРЛ
 TID_SKIN_INFO_ANIM_SOUND_FX_VOICE,- Custom Brawler model\n- Custom effects\n- Custom animations\n- Custom sounds\n- Custom voice
 TID_SHOP_OFFER_STAR_SKIN_LABEL,STAR SKIN
 TID_WANTED_15,Beach Bounty
-TID_WANTED_16,Sunstroke
-TID_WANTED_17,Burning Sands
+TID_WANTED_16,Сонячний удар
+TID_WANTED_17,Палаючі піски
 TID_BANKHEIST_16,Beachcombers
 TID_BANKHEIST_17,Gift Gems
 TID_BANKHEIST_18,Hot Potato
@@ -2774,7 +2774,7 @@ TID_BATTLE_ROYALE_22A,Пустельна вершина
 TID_BATTLE_ROYALE_23A,Епатажна глибинка
 TID_BATTLE_ROYALE_24A,Безплідні землі
 TID_GOLDRUSH_24A,Royal Flush
-TID_WANTED_17A,Overgrown Oasis
+TID_WANTED_17A,Зарослий оазис
 TID_BALL_14A,Гол з поля
 TID_BALL_15A,Поспішність
 TID_SHOP_LABEL_BEST_VALUE,BEST VALUE
@@ -3102,15 +3102,15 @@ TID_BANKHEIST_23,Bandit Cove
 TID_BANKHEIST_24,Roiling Seas
 TID_BANKHEIST_25,Rich Takings
 TID_BANKHEIST_26,Brilliant Burglary
-TID_WANTED_18,Twisting Tides
-TID_WANTED_19,Semaphore Signal
-TID_WANTED_20,Land Ahoy
-TID_WANTED_21,Chain Reaction
-TID_WANTED_22,Mirage
-TID_WANTED_23,Deeper Danger
-TID_WANTED_24,Easy Impact
-TID_WANTED_25,Cozy Cannons
-TID_WANTED_26,Egress
+TID_WANTED_18,Звивисті припливи
+TID_WANTED_19,Семафорний сигнал
+TID_WANTED_20,Земля Ахой
+TID_WANTED_21,Ланцюгова реакція
+TID_WANTED_22,Міраж
+TID_WANTED_23,Глибша небезпека
+TID_WANTED_24,Легкий вплив
+TID_WANTED_25,Затишні гармати
+TID_WANTED_26,Виїзд
 TID_BATTLE_ROYALE_34,Центр безпеки
 TID_BATTLE_ROYALE_35,Круговий каньйон
 TID_BATTLE_ROYALE_36,Кактусова вечірка
@@ -3243,7 +3243,7 @@ TID_QUICK_MESSAGE_ASK_STAR_TOKEN_HELP,Could you help me get the star token?
 TID_HERO_SORTING_LATEST,Latest Brawlers
 TID_IAP_BUNDLE_OFFER,Special Offer
 TID_WALLY,СПРАУТ
-TID_SETTINGS_FIND_FRIENDS,ГРАЙТЕ З ДРУЗЯМИ
+TID_SETTINGS_FIND_FRIENDS,PLAY WITH FRIENDS
 TID_KAKAO_ACCOUNT_BIND_INFO_TITLE,Connect KakaoTalk
 TID_KAKAO_ACCOUNT_BIND_INFO,"Connecting your account to KakaoTalk allows you to see your KakaoTalk friends' Brawl Stars accounts in the Friends list. They'll also be able to see your Brawl Stars account, your online status, and invite you to battles. Connect now?"
 TID_HERO_SCREEN_ITEM,GADGET
@@ -3468,7 +3468,7 @@ TID_ACCESSORY_BLOCKED_TARGET_ALREADY_ACTIVE,Target already active!
 TID_ACCESSORY_BLOCKED_FULL_AMMO,Already at full ammo!
 TID_ENTER_BIRTHDAY_BUTTON,Enter Birthday
 TID_FREE_TEXT_CHAT_MUTED_OTHER,Another player has text chat muted
-TID_FREE_TEXT_CHAT_MUTED_LFG,Text chat is muted when using Шукає команду
+TID_FREE_TEXT_CHAT_MUTED_LFG,Text chat is muted when using Looking for a Team
 TID_FREE_TEXT_CHAT_MUTED_YOU,You have muted text chat. Go to Online Players menu to unmute it.
 TID_SKIN_INFO_CAMPAIGN_6_NOT_AVAILABLE,PSG skin
 TID_KAKAO_TEAM_INVITED,INVITED
@@ -3536,7 +3536,7 @@ TID_YOOZOO_LOGIN_UA,User Agreement
 TID_YOOZOO_LOGIN_PP,Privacy Policy
 TID_YOOZOO_LOGIN_BUTTON,Log in
 TID_YOOZOO_LOGIN_DESC,本网络游戏适合年满12周岁以上的用户使用，\n请您确认已如实进行实名认证。为了您的健康，请合理控制游戏时间。\n健康游戏忠告 抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当\n适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活
-TID_SETTINGS_LOGOUT_BUTTON,Вийти
+TID_SETTINGS_LOGOUT_BUTTON,Log Out
 TID_ACCESSORY_BLOWER_TRAMPOLINE,SPRING EJECTOR
 TID_ACCESSORY_BLOWER_TRAMPOLINE_DESC,"Gale drops a bounce pad underfoot, launching friend and foe alike into the air."
 TID_ACCESSORY_CONTROLLER_EXPLODE,WARP BLAST
@@ -3553,7 +3553,7 @@ TID_ANTIADDICTION_ADULTHOOD_NOT_FULFILLED_15MIN_WARNING,"Since you are underage,
 TID_ANTIADDICTION_WARNING_TITLE,Warning
 TID_SETTINGS_SOCIAL_TITLE_YOOZOO,YOOZOO
 TID_SETTINGS_SOCIAL_TITLE_TENCENT,SOCIAL
-TID_SETTINGS_BUTTON_YOOZOO_LOGOUT,Вийти
+TID_SETTINGS_BUTTON_YOOZOO_LOGOUT,Log out
 TID_SETTINGS_BUTTON_QQ_LOGIN,QQ Login
 TID_SETTINGS_BUTTON_WECHAT_LOGIN,WeChat Login
 TID_SETTINGS_WECHAT_LOGGED_IN,Logged in to WeChat
@@ -3649,8 +3649,8 @@ TID_EMOTE_DROP_CHANCE_INFO_2,"This Pin Pack contains <NUM> Common Pins and one S
 TID_ROBO_WARS_15,Crated Factory
 TID_ROBO_WARS_16,Fenced In
 TID_ROBO_WARS_17,Olive Branch
-TID_WANTED_27,Heat Wave
-TID_WANTED_28,Cobweb
+TID_WANTED_27,Теплова хвиля
+TID_WANTED_28,Павутиння
 TID_BANKHEIST_27,Traffic Jam
 TID_BANKHEIST_28,Crossroads
 TID_EMOTE_RARITY_NAME_0,Common
@@ -3823,8 +3823,8 @@ TID_BATTLE_ROYALE_53,Трав'яна ущелина
 TID_GOLDRUSH_54,Tiny Town
 TID_GOLDRUSH_55,Massive Attack
 TID_GOLDRUSH_56,Escapade
-TID_WANTED_29,Smooth Sailing
-TID_WANTED_30,Hide and Seek
+TID_WANTED_29,Плавне плавання
+TID_WANTED_30,Хованки
 TID_BANKHEIST_29,Full View
 TID_BANKHEIST_30,Escalade
 TID_KING_OF_HILL_16,Barricaded Backdoor
@@ -4075,7 +4075,7 @@ TID_KING_OF_HILL_16F,Ring of Fire
 TID_KING_OF_HILL_17F,Pain Point
 TID_KING_OF_HILL_18F,The Funnel
 TID_KING_OF_HILL_19F,Checkpoint
-TID_WANTED_30T,Quick Skip
+TID_WANTED_30T,Швидкий пропуск
 TID_BANKHEIST_29T,Turnaround
 TID_EMOTE_BUNDLE_ROSALLOWEEN,BRAWL-O-WEEN ROSA PINS
 TID_EMOTE_BUNDLE_WF,WORLD FINALS PINS
@@ -4346,9 +4346,9 @@ TID_SALLY_NANI_SKIN,САЛЛІ НАНІ
 TID_SALLY_NANI_SHOP,САЛЛІ\nНАНІ
 TID_CONY_MAX_SKIN,КОННІ МАКС
 TID_CONY_MAX_SKIN_SHOP,КОННІ\nМАКС
-TID_WANTED_17B,Overgrown Canyon
+TID_WANTED_17B,Зарослий каньйон
 TID_BANKHEIST_17B,Twisted Gems
-TID_WANTED_3B,Gem Fort
+TID_WANTED_3B,Фортеця гемів
 TID_BOSS_7,Lit Match
 TID_BOSS_8,Open Season
 TID_COOP_7,Full On
@@ -4524,9 +4524,9 @@ TID_SECTION_HEADER_6,POWER LEAGUE
 TID_SECTION_HEADER_OWN,YOUR MAPS
 TID_SECTION_HEADER_CLUB_LEAGUE,CLUB LEAGUE
 TID_SECTION_SHORTCUT_CLUB_LEAGUE,CLUB LEAGUE
-TID_RANKED2_ROUNDS_HEADER,Brawl Rounds
-TID_RANKED2_ROUNDS_INFO,The first team that wins <NUM> battles wins the match!
-TID_RANKED2_ROUNDS_NEXT_TIMER,Round <NUM> starts in:
+TID_RANKED2_ROUNDS_HEADER,БРАВЛ РАУНДИ
+TID_RANKED2_ROUNDS_INFO,"Перша команда, яка виграє <NUM> боїв, виграє матч!"
+TID_RANKED2_ROUNDS_NEXT_TIMER,Раунд <NUM> починається через:
 TID_RANKED2_ROUNDS_NEXT_TIMER_TIME,<SECONDS>
 TID_RONIN_RUFFS_SKIN,РОНІН РАФС
 TID_RONIN_RUFFS_SKIN_SHOP,РОНІН\nРАФС
@@ -4589,103 +4589,103 @@ TID_SPEC_ABI_ROLLER_2,GASO-HEAL
 TID_SPEC_ABI_ROLLER_2_DESC,Using his Nitro Boost Super restores <c00cc00><VALUE1></c> of Stu's health.
 TID_ACCESSORY_ROLLER_SPEED,SPEED ZONE
 TID_ACCESSORY_ROLLER_SPEED_DESC,"Stu drops a booster that makes himself, his teammates and other allies move faster while inside its area of effect."
-TID_RANKED2_PICK_NEXT,NEXT
-TID_RANKED2_BAN,BAN
-TID_RANKED2_BANNED,BANNED
-TID_RANKED2_BAN_QUESTION,BAN?
-TID_RANKED2_COIN_FLIP_HEADER,Which team starts with Brawler selection?
-TID_RANKED2_COIN_FLIP_TITLE,COIN FLIP
-TID_RANKED2_CON_FLIP_RED,RED TEAM STARTS
-TID_RANKED2_CON_FLIP_BLUE,BLUE TEAM STARTS
-TID_EVENT_NAME_POWER_LEAGUE,POWER LEAGUE
-TID_EVENT_LOCATION_POWER_LEAGUE,3v3 Events
-TID_RANKED_SOLO,SOLO
-TID_RANKED_TEAM,TEAM
-TID_RANKED_LEADERBOARDS_POPUP_LEADERBOARDS_LABEL,LEADERBOARDS
-TID_RANKED_LEADERBOARDS_POPUP_TITLE,POWER LEAGUE LEADERBOARDS
-TID_RANKED_LEADERBOARDS_POPUP_INFO,Put your skills to the test in POWER LEAGUE! Rise up the ranks and become a Brawl Stars master!
-TID_RANKED_LEADERBOARDS_POPUP_CURRENT_SEASON,CURRENT LEAGUE
-TID_RANKED_LEADERBOARDS_POPUP_PREVIOUS_SEASON,PREVIOUS LEAGUE
-TID_RANKED_LEADERBOARDS_POPUP_SOLO,SOLO
-TID_RANKED_LEADERBOARDS_POPUP_TEAM,TEAM
-TID_RANKED_SOLO_MODE,Solo Mode
-TID_RANKED_TEAM_MODE,Team Mode
-TID_BATTLE_END_RANKED_RANK_UP_TITLE,POWER LEAGUE
-TID_BATTLE_END_RANKED_RANK_UP_TITLE_NEW_HIGH,POWER LEAGUE - <cFFEF49>NEW HIGHEST RANK!</c>
-TID_BATTLE_END_RANKED_RANK_UP,RANK UP!
-TID_RANKED_EVENT_GAMEMODE_INFO,POWER LEAGUE
-TID_RANKED_EVENT_LOCATION_INFO,Random Game Mode and Map
-TID_RANKED_EVENT_DESC_1,Compete in 3vs3 battles with your own team or with other players of your similar level.
-TID_RANKED_EVENT_DESC_2,The first team to win two battles wins the match.
-TID_RANKED_EVENT_DESC_3,"Game modes and maps rotate randomly and frequently, be ready!"
-TID_RANKED_EVENT_DESC_4,"When the season ends, you get rewards based on your highest rank reached during the season."
-TID_RANKED_CLUB_LEAGUE_EVENT_GAMEMODE_INFO,POWER MATCH
-TID_RANKED_CLUB_LEAGUE_EVENT_LOCATION_INFO,Random Game Mode and Map
-TID_RANKED_CLUB_LEAGUE_EVENT_DESC_1,Compete in 3vs3 battles in a Team or with other players at a similar skill level to your own.
-TID_RANKED_CLUB_LEAGUE_EVENT_DESC_2,The first team to win two battles wins the match.
-TID_RANKED_CLUB_LEAGUE_EVENT_DESC_3,"Game modes and maps rotate randomly and frequently, be ready!"
-TID_RANKED_CLUB_LEAGUE_EVENT_DESC_4,"When the season ends, you get rewards based on how many Tickets you played and how your Club ranked in the season."
-TID_RANKED_EVENT_SEASON_REWARDS_BUTTON,SEASON REWARDS
-TID_RANKED_EVENT_SOLO,POWER LEAGUE
-TID_RANKED_EVENT_TEAMS,POWER LEAGUE
-TID_RANKED_BUTTON_WARNING_TEAMS,Team Match: need three players Teamed up
-TID_RANKED_BUTTON_WARNING_SOLO,Solo Match: single player only
-TID_RANKED_START_MATCH_WARNING_TEXT_SOLO,SOLO Matches can't be played in a Team!
-TID_RANKED_START_MATCH_WARNING_TEXT_TEAMS,TEAM Matches require a full Team of three players!
-TID_GAME_INTRO_ROUND,ROUND <NUM>
-TID_RANKED_LOOKING_FOR_EVENT,Selecting Event
-TID_GACHA_HERO_DROP_NEW_BRAWLER,NEW BRAWLER!
+TID_RANKED2_PICK_NEXT,ДАЛІ
+TID_RANKED2_BAN,ЗАБОРОНИТИ
+TID_RANKED2_BANNED,ЗАБОРОНЕНО
+TID_RANKED2_BAN_QUESTION,ЗАБОРОНИТИ?
+TID_RANKED2_COIN_FLIP_HEADER,Яка команда починає вибір бравлерів?
+TID_RANKED2_COIN_FLIP_TITLE,ПІДКИДАННЯ МОНЕТИ
+TID_RANKED2_CON_FLIP_RED,ЧЕРВОНА КОМАНДА ПОЧИНАЄ
+TID_RANKED2_CON_FLIP_BLUE,СИНЯ КОМАНДА ПОЧИНАЄ
+TID_EVENT_NAME_POWER_LEAGUE,ПАВЕР ЛІГА
+TID_EVENT_LOCATION_POWER_LEAGUE,3проти3
+TID_RANKED_SOLO,СОЛО
+TID_RANKED_TEAM,КОМАНДА
+TID_RANKED_LEADERBOARDS_POPUP_LEADERBOARDS_LABEL,ТАБЛИЦІ ЛІДЕРІВ
+TID_RANKED_LEADERBOARDS_POPUP_TITLE,ТАБЛИЦІ ЛІДЕРІВ ПАВЕР ЛІГИ
+TID_RANKED_LEADERBOARDS_POPUP_INFO,Перевірте свої навички в ПАВЕР ЛІЗІ! Підніміться вгору і станьте майстром Бравл Старсу!
+TID_RANKED_LEADERBOARDS_POPUP_CURRENT_SEASON,ПОТОЧНА ЛІГА
+TID_RANKED_LEADERBOARDS_POPUP_PREVIOUS_SEASON,ПОПЕРЕДНЯ ЛІГА
+TID_RANKED_LEADERBOARDS_POPUP_SOLO,СОЛО
+TID_RANKED_LEADERBOARDS_POPUP_TEAM,КОМАНДА
+TID_RANKED_SOLO_MODE,Соло режим
+TID_RANKED_TEAM_MODE,Командний режим
+TID_BATTLE_END_RANKED_RANK_UP_TITLE,ПАВЕР ЛІГА
+TID_BATTLE_END_RANKED_RANK_UP_TITLE_NEW_HIGH,ПАВЕР ЛІГА - <cFFEF49>НОВИЙ НАЙВИЩИЙ РАНГ!</c>
+TID_BATTLE_END_RANKED_RANK_UP,ПІДНІМАЙТЕ РАНГ!
+TID_RANKED_EVENT_GAMEMODE_INFO,ПАВЕР ЛІГА
+TID_RANKED_EVENT_LOCATION_INFO,Випадковий режим гри та карта
+TID_RANKED_EVENT_DESC_1,Змагайтеся в боях 3 на 3 зі своєю командою або з іншими гравцями вашого рівня.
+TID_RANKED_EVENT_DESC_2,"Виграє матч та команда, яка перша досягне дві перемоги."
+TID_RANKED_EVENT_DESC_3,"Ігрові режими та карти вибираються випадковим чином і часто, будьте готові!"
+TID_RANKED_EVENT_DESC_4,"Коли сезон закінчується, ви отримуєте нагороди на основі вашого найвищого рангу, досягнутого протягом сезону."
+TID_RANKED_CLUB_LEAGUE_EVENT_GAMEMODE_INFO,ПАВЕР МАТЧ
+TID_RANKED_CLUB_LEAGUE_EVENT_LOCATION_INFO,Випадковий режим гри та карта
+TID_RANKED_CLUB_LEAGUE_EVENT_DESC_1,"Змагайтеся в битвах 3 на 3 в команді або з іншими гравцями на тому ж рівні навичок, що і ваш."
+TID_RANKED_CLUB_LEAGUE_EVENT_DESC_2,"Виграє матч та команда, яка першою виграє дві битви."
+TID_RANKED_CLUB_LEAGUE_EVENT_DESC_3,"Ігрові режими та карти обертаються випадковим чином і часто, будьте готові!"
+TID_RANKED_CLUB_LEAGUE_EVENT_DESC_4,"Коли сезон закінчується, ви отримуєте винагороди на основі того, скільки квитків ви зіграли та рейтинг вашого клубу в сезоні."
+TID_RANKED_EVENT_SEASON_REWARDS_BUTTON,СЕЗОННІ НАГОРОДИ
+TID_RANKED_EVENT_SOLO,ПАВЕР ЛІГА
+TID_RANKED_EVENT_TEAMS,ПАВЕР ЛІГА
+TID_RANKED_BUTTON_WARNING_TEAMS,Командний матч: потрібні об’єднання трьох гравців
+TID_RANKED_BUTTON_WARNING_SOLO,Одиночний матч: тільки один гравець
+TID_RANKED_START_MATCH_WARNING_TEXT_SOLO,Соло матчі не можна грати в команді!
+TID_RANKED_START_MATCH_WARNING_TEXT_TEAMS,Командні матчі вимагають повної команди з трьох гравців!
+TID_GAME_INTRO_ROUND,Раунд <NUM>
+TID_RANKED_LOOKING_FOR_EVENT,Вибір події
+TID_GACHA_HERO_DROP_NEW_BRAWLER,НОВИЙ БРАВЛЕР!
 TID_GACHA_HERO_DROP_NEW_SKIN,НОВИЙ СКІН!
-TID_RANKED_SEASON_ENDS_IN,Season Ends in: <TIME>
-TID_RANKED_SEASON_END_POPUP_TITLE,POWER LEAGUE SEASON ENDED
-TID_RANKED_SEASON_END_POPUP_HIGHEST_RANK,HIGHEST RANK THIS SEASON
-TID_RANKED_SEASON_END_POPUP_CLAIM,CLAIM
-TID_RANKED_SEASON_END_NOTIFICATION,POWER LEAGUE SEASON END REWARD: <AMOUNT> <cff00ff>Star Points</c> gained!
-TID_RANKED_SEASON_END_REWARD_DESC,YOUR END OF SEASON REWARD
-TID_RANKED_MIDSEASON_REWARD_POPUP_TITLE,POWER LEAGUE REWARD
-TID_RANKED_MIDSEASON_REWARD_POPUP_CLAIM,CLAIM
-TID_RANKED_MIDSEASON_REWARD_POPUP_SHOW_OFFER,SHOW OFFER
-TID_RANKED_MIDSEASON_NOTIFICATION_RANK,POWER LEAGUE REWARD FOR REACHING RANK <RANK>
-TID_RANKED_MIDSEASON_NOTIFICATION,POWER LEAGUE REWARD
-TID_RANKED_MIDSEASON_REWARD_NEEDS_BRAWLER,You need to unlock <BRAWLER> first!
+TID_RANKED_SEASON_ENDS_IN,Сезон закінчується через: <TIME>
+TID_RANKED_SEASON_END_POPUP_TITLE,ЗАВЕРШЕНИЙ СЕЗОН ПАВЕР ЛІГИ
+TID_RANKED_SEASON_END_POPUP_HIGHEST_RANK,НАЙВИЩИЙ РАНГ ЦЬОГО СЕЗОНУ
+TID_RANKED_SEASON_END_POPUP_CLAIM,ЗАБРАТИ
+TID_RANKED_SEASON_END_NOTIFICATION,НАГОРОДА ЗА КІНЕЦЬ СЕЗОНУ ПАВЕР ЛІГИ: <AMOUNT> <cff00ff>зіркових очків</c> отримано!
+TID_RANKED_SEASON_END_REWARD_DESC,ВАША НАГОРОДА ЗА КІНЕЦЬ СЕЗОНУ
+TID_RANKED_MIDSEASON_REWARD_POPUP_TITLE,НАГОРОДА ПАВЕР ЛІГИ
+TID_RANKED_MIDSEASON_REWARD_POPUP_CLAIM,ЗАБРАТИ
+TID_RANKED_MIDSEASON_REWARD_POPUP_SHOW_OFFER,ПОКАЗАТИ ПРОПОЗИЦІЮ
+TID_RANKED_MIDSEASON_NOTIFICATION_RANK,НАГОРОДА ПАВЕР ЛІГИ ЗА ДОСЯГНЕННЯ РАНУ <RANK>
+TID_RANKED_MIDSEASON_NOTIFICATION,НАГОРОДА ПАВЕР ЛІГИ
+TID_RANKED_MIDSEASON_REWARD_NEEDS_BRAWLER,Спочатку потрібно розблокувати <BRAWLER>!
 TID_RANKED_QUEST_PROGRESS,
-TID_RANKED_REWARD_QUEST_DESC_26,SKIN PURCHASE OPTION
-TID_REWARD_DESC_PURCHASE_OPTION_SKIN,EXCLUSIVE SKIN PURCHASE OPTION
-TID_REWARD_DESC_PURCHASE_OPTION,EXCLUSIVE PURCHASE OPTION
-TID_REWARD_DESC_PLAYER_ICON,EXCLUSIVE PLAYER ICON
-TID_RANKED_GOAL_REWARD_NEW,NEW!
-TID_SKIN_INFO_CAMPAIGN_RANKED,Power League skin
-TID_RANKED_MATCH_VICTORY,VICTORY!
-TID_RANKED_BRONZE_I,BRONZE I
-TID_RANKED_BRONZE_II,BRONZE II
-TID_RANKED_BRONZE_III,BRONZE III
-TID_RANKED_SILVER_I,SILVER I
-TID_RANKED_SILVER_II,SILVER II
-TID_RANKED_SILVER_III,SILVER III
-TID_RANKED_GOLD_I,GOLD I
-TID_RANKED_GOLD_II,GOLD II
-TID_RANKED_GOLD_III,GOLD III
-TID_RANKED_DIAMOND_I,DIAMOND I
-TID_RANKED_DIAMOND_II,DIAMOND II
-TID_RANKED_DIAMOND_III,DIAMOND III
-TID_RANKED_MYTHIC_I,MYTHIC I
-TID_RANKED_MYTHIC_II,MYTHIC II
-TID_RANKED_MYTHIC_III,MYTHIC III
-TID_RANKED_LEGENDARY_I,LEGENDARY I
-TID_RANKED_LEGENDARY_II,LEGENDARY II
-TID_RANKED_LEGENDARY_III,LEGENDARY III
-TID_RANKED_MASTERS,MASTERS
-TID_RANKED_GOAL_PLAY_MATCHES,PLAY <NUM> MATCHES THIS SEASON
-TID_RANKED_GOAL_REACH_RANK,REACH <RANK> RANK THIS SEASON
-TID_RANKED_GOAL_WIN_MATCHES,WIN <NUM> MATCHES THIS SEASON
-TID_RANKED_GOAL_WIN_BATTLES,WIN <NUM> ROUNDS THIS SEASON
-TID_RANKED_GET_READY_TURN,GET READY!
-TID_RANKED_BAN_TURN,<cfcbc21>TEAM LEADERS BAN</c> TURN
-TID_RANKED_YOU_BAN_TURN,<cfcbc21>BAN A BRAWLER</c> TURN
-TID_RANKED_OWN_TEAM_PICK_TURN,<c94d7f4><PLAYER> PICK</c> TURN
-TID_RANKED_ENEMY_TEAM_PICK_TURN,<cf75252><PLAYER> PICK</c> TURN
-TID_RANKED_OWN_PICK_TURN,<cffffff>YOUR PICK</c> TURN
-TID_RANKED_FINAL_TURN,<cffffff>FINAL PREPARATION</c>
+TID_RANKED_REWARD_QUEST_DESC_26,ОПЦІЯ КУПІВЛІ СКІНА
+TID_REWARD_DESC_PURCHASE_OPTION_SKIN,ЕКСКЛЮЗИВНИЙ ВАРІАНТ КУПІВЛІ СКІНА
+TID_REWARD_DESC_PURCHASE_OPTION,ЕКСКЛЮЗИВНИЙ ВАРІАНТ КУПІВЛІ
+TID_REWARD_DESC_PLAYER_ICON,ЕКСКЛЮЗИВНА КАРТИНКА
+TID_RANKED_GOAL_REWARD_NEW,НОВИНКА!
+TID_SKIN_INFO_CAMPAIGN_RANKED,Скін ПАВЕР ЛІГИ
+TID_RANKED_MATCH_VICTORY,ПЕРЕМОГА!
+TID_RANKED_BRONZE_I,БРОНЗА І
+TID_RANKED_BRONZE_II,БРОНЗА II
+TID_RANKED_BRONZE_III,БРОНЗА III
+TID_RANKED_SILVER_I,Срібло І
+TID_RANKED_SILVER_II,Срібло II
+TID_RANKED_SILVER_III,СРІБЛО III
+TID_RANKED_GOLD_I,ЗОЛОТО І
+TID_RANKED_GOLD_II,ЗОЛОТО II
+TID_RANKED_GOLD_III,ЗОЛОТО III
+TID_RANKED_DIAMOND_I,ДІАМАНТ І
+TID_RANKED_DIAMOND_II,ДІАМАНТ II
+TID_RANKED_DIAMOND_III,ДІАМАНТ III
+TID_RANKED_MYTHIC_I,МІФІЧНИЙ I
+TID_RANKED_MYTHIC_II,МІФІЧНИЙ II
+TID_RANKED_MYTHIC_III,МІФІЧНИЙ III
+TID_RANKED_LEGENDARY_I,ЛЕГЕНДАРНИЙ І
+TID_RANKED_LEGENDARY_II,ЛЕГЕНДАРНИЙ II
+TID_RANKED_LEGENDARY_III,ЛЕГЕНДАРНИЙ III
+TID_RANKED_MASTERS,МАЙСТЕР 69
+TID_RANKED_GOAL_PLAY_MATCHES,ГРАТИ <NUM> МАТЧІВ ЦЬОГО СЕЗОНУ
+TID_RANKED_GOAL_REACH_RANK,ДОСЯГНУТИ РАНГУ <RANK> ЦЬОГО СЕЗОНУ
+TID_RANKED_GOAL_WIN_MATCHES,ПЕРЕМОГА <NUM> МАЧІВ ЦЬОГО СЕЗОНУ
+TID_RANKED_GOAL_WIN_BATTLES,Виграти <NUM> РАУНДІВ ЦЬОГО СЕЗОНУ
+TID_RANKED_GET_READY_TURN,ГОТУЙСЯ!
+TID_RANKED_BAN_TURN,<cfcbc21>ЛІДЕРИ КОМАНДИ БАНУВАЮТЬ ПЕРЕДАЧУ</c>
+TID_RANKED_YOU_BAN_TURN,<cfcbc21>ЗАБРАНУВАТИ БЕШУЩИКУ</c> ПЕРЕВОРИТИ
+TID_RANKED_OWN_TEAM_PICK_TURN,<c94d7f4><PLAYER>ВИБИРАЄ</c> ХІД
+TID_RANKED_ENEMY_TEAM_PICK_TURN,<cf75252><PLAYER>ВИБИРАЄ</c> ХІД
+TID_RANKED_OWN_PICK_TURN,<cffffff>ТИ ВИБИРАЄШ</c> ХІД
+TID_RANKED_FINAL_TURN,<cffffff>ОСТАНЯ ПІДГОТОВКА</c>
 TID_ELECTRO_SNIPER,БЕЛЛЬ
 TID_ELECTRO_SNIPER_SHORT_DESC,ВОЇН
 TID_ELECTRO_SNIPER_DESC,"Belle inspires adoration in her gang, while her Electo-Rifle brings shock and awe to any opponent!"
@@ -4712,21 +4712,21 @@ TID_SPEC_ABI_STICKY_BOMB_2,SUPER STICKY
 TID_SPEC_ABI_STICKY_BOMB_2_DESC,Secondary Sticky Blomb explosions from Squeak's Super also slow down opponents for <c00cc00><VALUE2></c> seconds.
 TID_ACCESSORY_STICKY_BOMB_RANGE,WINDUP
 TID_ACCESSORY_STICKY_BOMB_RANGE_DESC,Squeak's next Sticky Blomb has its range increased by <c00cc00><VALUE1>%</c>.
-TID_RANKED2_CONFIRM_QUESTION,PICK?
-TID_RANKED_PICK_ERROR_BRAWLER_NOT_OWNED,You don't own this Brawler!
-TID_RANKED_PICK_ERROR_BRAWLER_BANNED,"This Brawler has been banned, pick another one!"
-TID_RANKED_PICK_ERROR_BRAWLER_PICKED,"This Brawler has been already picked, pick another one!"
-TID_RANKED_PICK_ERROR_BRAWLER_UNRELEASED,"This Brawler is not yet available in Power League, pick another one!"
-TID_RANKED_PICK_ERROR_BRAWLER_UNRELEASED_CLUB_LEAGUE,This Brawler isn't available yet in Power Matches. Select another Brawler!
-TID_RANKED_HERO_POWER,POWER <NUM>
-TID_RANKED_REWARD_POPUP_SEASON,SEASON <SEASON>
-TID_RANKED_REWARDS_TOOL_TIP,"POWER LEAGUE has two 3v3 modes:\n\n- Solo mode, where you join two random players of similar league level to yours.\n\n- Team mode, where you first create a team of three to start a match.\n\nYour POWER LEAGUE rewards will be based on the highest rank reached during the season in either mode."
-TID_BUTTON_LEADERBOARDS,LEADERBOARDS
-TID_MSG_RANKED_ELO_DECAYED,You have been inactive for <INACTIVE_DAYS> days in <RANKED_MODE> of POWER LEAGUE Season <SEASON_ID> and your score has decreased. Keep playing to keep your score!
+TID_RANKED2_CONFIRM_QUESTION,ВИБРАТИ?
+TID_RANKED_PICK_ERROR_BRAWLER_NOT_OWNED,Ви не володієте цим бравлером!
+TID_RANKED_PICK_ERROR_BRAWLER_BANNED,"Цього бравлера заборонили, виберіть іншого!"
+TID_RANKED_PICK_ERROR_BRAWLER_PICKED,"Цього бравлера уже вибрано, виберіть іншого!"
+TID_RANKED_PICK_ERROR_BRAWLER_UNRELEASED,"Цей бравлер ще недоступний у ПАВЕР ЛІЗІ, виберіть іншого!"
+TID_RANKED_PICK_ERROR_BRAWLER_UNRELEASED_CLUB_LEAGUE,Цей бравлер ще не доступний у ПАВЕР ЛІЗІ. Виберіть іншого бравлера!
+TID_RANKED_HERO_POWER,<NUM> СИЛА
+TID_RANKED_REWARD_POPUP_SEASON,СЕЗОН <SEASON>
+TID_RANKED_REWARDS_TOOL_TIP,"ПАВЕР ЛІГА має два режими 3 на 3:\n\n- Одиночний режим, де ви приєднуєтеся до двох випадкових гравців подібного до вашого рівня ліги.\n\n Командний режим, де ви спочатку створюєте команду з трьох, щоб почати матч.\ n\nВаші нагороди ПАВЕР ЛІГА залежатимуть від найвищого рангу, досягнутого протягом сезону в будь-якому режимі."
+TID_BUTTON_LEADERBOARDS,ТАБЛИЦЯ ЛІДЕРІВ
+TID_MSG_RANKED_ELO_DECAYED,"Ви були неактивними протягом <INACTIVE_DAYS> днів у <RANKED_MODE> сезону POWER LEAGUE <SEASON_ID>, і ваш рахунок зменшився. Продовжуйте грати, щоб зберегти свій рахунок!"
 TID_CHALLENGE_SKIN_PRIZE,<NUM> GEM SKIN
 TID_CHALLENGE_HERO_PRIZE,<NUM> GEM BRAWLER
 TID_CHALLENGE_SKIN_PRIZE_TITLE,Challenge\nCompletion Reward
-TID_RANKED_GOAL_REWARD_PROFILE_PICTURE,EXCLUSIVE PLAYER ICON
+TID_RANKED_GOAL_REWARD_PROFILE_PICTURE,ЕКСКЛЮЗИВНА КАРТИНКА
 TID_BIBILANTE_SKIN,БІБІЛАНТЕ
 TID_BIBILANTE_SKIN_SHOP,БІБІЛАНТЕ
 TID_SMUGGLER_PENNY_SKIN,БАНДИТКА ПЕННІ
@@ -4738,66 +4738,66 @@ TID_PSG_MIKE_SKIN_SHOP,ПСЖ МАЙК
 TID_ATT_PREPROMPT_TITLE,FACEBOOK LOGIN UPDATE
 TID_ATT_PREPROMPT_TEXT,"Facebook social features require \qBrawl Stars\q to share your data with Facebook. Facebook uses this data for their own purposes, including advertising and tracking.\n\nAllow - If you want to share your data with Facebook and enable Facebook social features.\n\nAsk App not to Track - If you do not want to share your data with Facebook, which will remove Facebook social features from \qBrawl Stars\q. Check out Supercell ID for privacy-friendly social features!"
 TID_ATT_PREPROMPT_BUTTON,PROCEED
-TID_RANKED_SP_REWARD_TRACK_OVERLAY,Reach <RANK> to get this as your Power League Season End Reward!
-TID_RANKED_SP_REWARD_TRACK_OVERLAY_CURRENT,This is your current Power League Season End Reward.
-TID_RANKED_PARTICIPATION_REWARD_TRACK_OVERLAY,Play <NUM> Matches this season to unlock this Reward.
-TID_RANKED_MILESTONE_REWARD_TRACK_OVERLAY,Reach <RANK> Rank this season to unlock this Reward.
-TID_CHALLENGE_BUY_LIVES_REMAINING,Purchases remaining: <NUM>
-TID_RANKED_TEAM_SELECT_ERROR_BAN_NOT_LEADER,Only Team Leaders can ban a Brawler
-TID_RANKED_TEAM_SELECT_ERROR_BAN_ALREADY_DONE,You have selected your ban already
-TID_RANKED_TEAM_SELECT_ERROR_PICK_ALREADY_DONE,You have picked your Brawler already
-TID_RANKED_TEAM_SELECT_ERROR_PICK_NOT_YOUR_TURN,It's not your turn to pick
-TID_RANKED_TEAM_SELECT_ERROR_BAN_NOT_BANNING,It's not currently ban turn
-TID_RANKED_TEAM_SELECT_ERROR_BAN_GENERIC,"Banning failed (<CODE>), please try again!"
-TID_RANKED_TEAM_SELECT_ERROR_BAN_NOT_IN_TEAM,"Banning failed (<CODE>), please try again!"
-TID_RANKED_TEAM_SELECT_ERROR_BAN_INVALID_INPUT,"Banning failed (<CODE>), please try again!"
-TID_RANKED_TEAM_SELECT_ERROR_GENERIC_1,"Banning failed (<CODE>), please try again!"
-TID_RANKED_TEAM_SELECT_ERROR_GENERIC_2,"Banning failed (<CODE>), please try again!"
-TID_RANKED_TEAM_SELECT_ERROR_PICK_GENERIC,"Picking Brawler failed (<CODE>), please try again"
-TID_RANKED_TEAM_SELECT_ERROR_NOT_OWNED,"You don't own this Brawler, try another one!"
-TID_RANKED_TEAM_SELECT_ERROR_PICK_GENERIC_1,"Picking Brawler failed (<CODE>), please try again"
-TID_RANKED_TEAM_SELECT_ERROR_PICK_GENERIC_2,"Picking Brawler failed (<CODE>), please try again"
-TID_MSG_RANKED_SEASON_END,Congratulations! You reached <RANK> in POWER LEAGUE Season <SEASON_ID>.
-TID_MATCHMAKE_FAILED_20,Matchmaking failed: still on cooldown. Please try again later.
-TID_MATCHMAKE_FAILED_21,Matchmaking failed: still on cooldown due to recent idling or disconnection during match
-TID_RANKED_MATCH_TERMINATED_REASON_GENERIC,Match terminated (<CODE>). Please try again.
-TID_RANKED_MATCH_TERMINATED_REASON_1,Match terminated: <NAME> disconnected
-TID_RANKED_MATCH_TERMINATED_REASON_2,Match terminated: <NAME> not responding
-TID_RANKED_MATCH_TERMINATED_REASON_3,Match terminated: season ended
-TID_RANKED_MATCH_TERMINATED_REASON_4,Match terminated (<CODE>). Please try again.
-TID_RANKED_GOAL_REWARD_PURCHASE_OPTION_SKIN,EXCLUSIVE SKIN PURCHASE OPTION
-TID_RANKED_MATCH_TERMINATED_NAME_PLAYER,a player
-TID_RANKED2_CONFIRM_PICKED,PICKED
+TID_RANKED_SP_REWARD_TRACK_OVERLAY,"Досягніть <RANK>, щоб отримати це як нагороду в кінці сезону Power League!"
+TID_RANKED_SP_REWARD_TRACK_OVERLAY_CURRENT,Це ваша поточна нагорода в кінці сезону Павер Ліги.
+TID_RANKED_PARTICIPATION_REWARD_TRACK_OVERLAY,"Зіграйте <NUM> матчів цього сезону, щоб отримати цю нагороду."
+TID_RANKED_MILESTONE_REWARD_TRACK_OVERLAY,"Досягніть <RANK> рангу цього сезону, щоб отримати цю нагороду."
+TID_CHALLENGE_BUY_LIVES_REMAINING,Залишилося покупок: <NUM>
+TID_RANKED_TEAM_SELECT_ERROR_BAN_NOT_LEADER,Лише керівники команд можуть забанити Бравлера
+TID_RANKED_TEAM_SELECT_ERROR_BAN_ALREADY_DONE,Ви вже вибрали свою заборону
+TID_RANKED_TEAM_SELECT_ERROR_PICK_ALREADY_DONE,Ви вже вибрали свого Бравлера
+TID_RANKED_TEAM_SELECT_ERROR_PICK_NOT_YOUR_TURN,Не ваша черга вибирати
+TID_RANKED_TEAM_SELECT_ERROR_BAN_NOT_BANNING,Наразі це не черга заборони
+TID_RANKED_TEAM_SELECT_ERROR_BAN_GENERIC,"Помилка блокування (<CODE>), будь ласка, спробуйте ще раз!"
+TID_RANKED_TEAM_SELECT_ERROR_BAN_NOT_IN_TEAM,"Помилка блокування (<CODE>), будь ласка, спробуйте ще раз!"
+TID_RANKED_TEAM_SELECT_ERROR_BAN_INVALID_INPUT,"Помилка блокування (<CODE>), будь ласка, спробуйте ще раз!"
+TID_RANKED_TEAM_SELECT_ERROR_GENERIC_1,"Помилка блокування (<CODE>), будь ласка, спробуйте ще раз!"
+TID_RANKED_TEAM_SELECT_ERROR_GENERIC_2,"Помилка блокування (<CODE>), будь ласка, спробуйте ще раз!"
+TID_RANKED_TEAM_SELECT_ERROR_PICK_GENERIC,"Не вдалося вибрати Бравлера (<CODE>), будь ласка, спробуйте ще раз"
+TID_RANKED_TEAM_SELECT_ERROR_NOT_OWNED,"Ви не володієте цим Бравлера, спробуйте інший!"
+TID_RANKED_TEAM_SELECT_ERROR_PICK_GENERIC_1,"Не вдалося вибрати Бравлера (<CODE>), будь ласка, спробуйте ще раз"
+TID_RANKED_TEAM_SELECT_ERROR_PICK_GENERIC_2,"Не вдалося вибрати Бравлера (<CODE>), будь ласка, спробуйте ще раз"
+TID_MSG_RANKED_SEASON_END,Вітаю! Ви досягли <RANK> у сезоні POWER LEAGUE <SEASON_ID>.
+TID_MATCHMAKE_FAILED_20,Сватання не вдалося: все ще на перезарядці. Будь-ласка спробуйте пізніше.
+TID_MATCHMAKE_FAILED_21,Помилка підбору матчів: все ще перезавантажується через нещодавнє простоювання або відключення під час матчу
+TID_RANKED_MATCH_TERMINATED_REASON_GENERIC,Матч припинено (<CODE>). Будь ласка спробуйте ще раз.
+TID_RANKED_MATCH_TERMINATED_REASON_1,Матч завершено: <NAME> відключено
+TID_RANKED_MATCH_TERMINATED_REASON_2,Матч припинено: <NAME> не відповідає
+TID_RANKED_MATCH_TERMINATED_REASON_3,Матч завершено: сезон закінчився
+TID_RANKED_MATCH_TERMINATED_REASON_4,Матч припинено (<CODE>). Будь ласка спробуйте ще раз.
+TID_RANKED_GOAL_REWARD_PURCHASE_OPTION_SKIN,ЕКСКЛЮЗИВНИЙ ВАРІАНТ КУПІВКИ ШКІРИ
+TID_RANKED_MATCH_TERMINATED_NAME_PLAYER,гравець
+TID_RANKED2_CONFIRM_PICKED,ОБРАНО
 TID_ATT_NOT_GIVEN_PRINT,Facebook social features is disabled due to your privacy preference.
 TID_CHALLENGE_LIVES_PURCHASE_ERROR_3,Cannot purchase more Challenge attempts while you still have some left.
 TID_CHALLENGE_LIVES_PURCHASE_ERROR_4,"Sorry, this Challenge is no longer active!"
 TID_CHALLENGE_LIVES_PURCHASE_ERROR_GENERIC,Cannot purchase Challenge attempts right now. Try again later!
-TID_RANKED_COOLDOWN_FLOATER,Can't start match. You are suspended from POWER LEAGUE for <TIME>.
-TID_RANKED_COOLDOWN_WARNING,Suspended for: <TIME>
-TID_RANKED_ENEMY_P1,Red 1
-TID_RANKED_ENEMY_P2,Red 2
-TID_RANKED_ENEMY_P3,Red 3
-TID_NOTIFICATION_RANKED_SEASON_STARTED,New POWER LEAGUE season has started!
-TID_NOTIFICATION_RANKED_SEASON_ENDING,The POWER LEAGUE season is ending soon. Keep on pushing!
+TID_RANKED_COOLDOWN_FLOATER,Не вдається почати матч. Вас відсторонено від ПАВЕР ЛІГИ на <TIME>.
+TID_RANKED_COOLDOWN_WARNING,Призупинено на: <TIME>
+TID_RANKED_ENEMY_P1,Червоний 1
+TID_RANKED_ENEMY_P2,Червоний 2
+TID_RANKED_ENEMY_P3,Червоний 3
+TID_NOTIFICATION_RANKED_SEASON_STARTED,Новий сезон ПАВЕР ЛІГИ розпочався!
+TID_NOTIFICATION_RANKED_SEASON_ENDING,Незабаром завершується сезон ПАВЕР ЛІГИ. Продовжуйте штовхатися!
 TID_POWER_LEAGUE_SEASON,POWER LEAGUE
 TID_STARTING_SOON,Starting soon...
-TID_RANKED_TEAM_SELECT_HINT_PICK,Pick your Brawler
-TID_RANKED_TEAM_SELECT_HINT_BAN,Ban a Brawler
-TID_RANKED_TEAM_SELECT_HINT_SP,Select your Star Power
-TID_RANKED_TEAM_SELECT_HINT_SP_GADGET,Select your Star Power and Gadget
-TID_RANKED_TEAM_SELECT_HINT_GADGET,Select your Gadget
-TID_RANKED_TEAM_SELECT_HINT_NO_SP_NO_GADGET,GET READY!
-TID_MSG_RANKED_ABANDON_MATCH,You left a POWER LEAGUE match before it ended. Doing so repeatedly will result in a temporary suspension from playing POWER LEAGUE!
-TID_RANKED_REWARDS_QUALIFY,YOU HAVE TO PLAY ONE MATCH TO QUALIFY FOR REWARDS
-TID_FRIEND_STATUS_RANKED,Power League
+TID_RANKED_TEAM_SELECT_HINT_PICK,Виберіть свого бравлера
+TID_RANKED_TEAM_SELECT_HINT_BAN,Забаніть бравлера
+TID_RANKED_TEAM_SELECT_HINT_SP,Виберіть свою пасівку
+TID_RANKED_TEAM_SELECT_HINT_SP_GADGET,Виберіть свою пасівку та гаджет
+TID_RANKED_TEAM_SELECT_HINT_GADGET,Виберіть свій гаджет
+TID_RANKED_TEAM_SELECT_HINT_NO_SP_NO_GADGET,ГОТУЙТЕСЯ!
+TID_MSG_RANKED_ABANDON_MATCH,"Ви залишили матч ПАВЕР ЛІГИ до того, як він закінчився. Повторні дії призведуть до тимчасового відсторонення від ПАВЕР ЛІГИ!"
+TID_RANKED_REWARDS_QUALIFY,"ЩОБ ПРОЙТИ КВАЛІФІКАЦІЮ НА НАГОРОДИ, ВИ МАЄТЕ ЗІГРАТИ ОДИН МАТЧ"
+TID_FRIEND_STATUS_RANKED,Силова ліга
 TID_CLAN_MEMBER_ONLINE_STATUS_15,<cff1e00>POWER LEAGUE</c>
 TID_TEAM_MEMBER_STATUS_15,<cff1e00>POWER LEAGUE</c>
 TID_TEAM_MEMBER_STATUS_NEW_15,POWER LEAGUE
-TID_RANKED_TEAM_SELECT_PICK_BAN_TURN,PICK AND BAN STARTS IN
-TID_RANKED_TEAM_MODE_NOT_UNLOCKED,A player in the team has not unlocked this mode!
-TID_BATTLE_LOG_REPLAY_INFO_REPLAYS_RANKED,Reach <RANK> Rank to unlock Power League replays
-TID_TEAM_ERROR_RANKED_NOT_UNLOCKED,POWER LEAGUE not unlocked yet
-TID_RANKED_COINFLIP_LEADER_HEADER,Team Leader
+TID_RANKED_TEAM_SELECT_PICK_BAN_TURN,БАНИ І ВИБИРАННЯ ПОЧИНАЄТЬСЯ ЗА
+TID_RANKED_TEAM_MODE_NOT_UNLOCKED,Гравець у команді ще не розблокував цей режим!
+TID_BATTLE_LOG_REPLAY_INFO_REPLAYS_RANKED,"Досягніть рангу <RANK>, щоб розблокувати повтори Power League"
+TID_TEAM_ERROR_RANKED_NOT_UNLOCKED,ПАВЕР ЛІГУ ще не розблоковано
+TID_RANKED_COINFLIP_LEADER_HEADER,Лідер команди
 TID_ROUND_OVER,Round over
 TID_GAME_OVER_KNOCKOUT_BLUE,Round lost!\nMatch over
 TID_GAME_OVER_KNOCKOUT_RED,Round won!\nMatch over
@@ -4807,12 +4807,12 @@ TID_GAME_MODE_20,KNOCKOUT
 TID_GAME_MODE_20_DESC,"Defeat the opposing team in a best of three Knockout round contest! Be careful: defeated Brawlers stay out for the rest of each round. After a while, poison clouds will seep in from the edges, so make sure to act quickly!\n\nThe first team to win two rounds wins the match."
 TID_KNOCKOUT_INTRO_TEXT,Defeat opposing Brawlers!
 TID_INBOX_CAPTION_72_28,DONATION: ICON
-TID_RANKED_YOUR_TURN,YOUR TURN!
-TID_RANKED_BAN_YOUR_TURN,YOUR BAN!
-TID_RANKED_PICK_YOUR_TURN,YOUR PICK!
+TID_RANKED_YOUR_TURN,ТВОЯ ЧЕРГА!
+TID_RANKED_BAN_YOUR_TURN,ТВІЙ БАН!
+TID_RANKED_PICK_YOUR_TURN,ТВІЙ ВИБІР!
 TID_KNOCKOUT_TIEBREAK_BAR,Tiebreak damage
-TID_HOMESCREEN_INFO_RANKED_SOLO,Win Power League Battles to reach higher Ranks and earn better rewards.\n\nCurrent SOLO RANK:\n<RANK>
-TID_HOMESCREEN_INFO_RANKED_TEAM,Win Power League Battles to reach higher Ranks and earn better rewards.\n\nCurrent TEAM RANK:\n<RANK>
+TID_HOMESCREEN_INFO_RANKED_SOLO,"Вигравайте битви ПАВЕР ЛІГИ, щоб досягти вищих рангів і отримати кращі нагороди.\n\nПоточний СОЛО РАНГ:\n<RANK>"
+TID_HOMESCREEN_INFO_RANKED_TEAM,"Вигравайте битви ПАВЕР ЛІГИ, щоб досягти вищих рангів і отримати кращі нагороди.\n\nПоточний КОМАНДНИЙ РАНГ:\n<RANK>"
 TID_NAME_TECHNICAL_ERROR_TRY_AGAIN,Name check failed due to technical error - please try again later
 TID_NOTIFICATION_KNOCKOUT,New KNOCKOUT map is available! Time to win new Rewards!
 TID_HERO_AND_SKIN_PREVIEW_BP_HERO,BRAWL PASS BRAWLER
@@ -4820,8 +4820,8 @@ TID_HERO_AND_SKIN_PREVIEW_BP_SKIN,BRAWL PASS EXCLUSIVE SKIN
 TID_HERO_AND_SKIN_PREVIEW_TR_HERO,TROPHY ROAD BRAWLER
 TID_HERO_AND_SKIN_PREVIEW_PL_SKIN,POWER LEAGUE EXCLUSIVE SKIN
 TID_HERO_AND_SKIN_PREVIEW_CHALLENGE_SKIN,CHALLENGE VICTORY SKIN
-TID_MSG_RANKED_ABANDON_MATCH_BANNED,You have been temporarily suspended from playing POWER LEAGUE due to leaving too many matches.\n\nRepeated offenses will incur longer suspensions and decrease your Rank score.
-TID_MSG_RANKED_ABANDON_MATCH_BANNED_ELO,"You have been temporarily suspended from playing POWER LEAGUE, and your Rank score has been decreased due to leaving too many matches.\n\nContinued offenses will incur longer suspensions and a larger decrease of your Rank score."
+TID_MSG_RANKED_ABANDON_MATCH_BANNED,"Вас тимчасово призупинили від участі в ПАВЕР ЛІГИ через те, що ви залишили забагато матчів.\n\nПовторні порушення призведуть до триваліших дискваліфікацій та знизять ваш рейтинг."
+TID_MSG_RANKED_ABANDON_MATCH_BANNED_ELO,"Вас тимчасово призупинили від участі в ПАВЕР ЛІГИ, а ваш рейтинг рейтингу був знижений через те, що ви залишили забагато матчів.\n\nПродовження порушень призведе до триваліших дискваліфікацій та більшого зниження рейтингу."
 TID_BRAWL_PASS_SEASON_5,THE GOLDARM GANG
 TID_ARCHVILLAIN_BEA_SKIN,АРХЛИХОДІЙ БЕА
 TID_ARCHVILLAIN_BEA_SKIN_SHOP,АРХЛИДІЙ\nБЕА
@@ -5209,9 +5209,9 @@ TID_SKIN_NOT_AVAILABLE,Skin not available currently
 TID_DND_DISABLED_LOOKING_FOR_TEAM,Cannot change this setting while Looking For Team is enabled!
 TID_DND_DISABLED_LOOKING_FOR_PLAYERS,Cannot change this setting while you have enabled Looking For Players!
 TID_LFT_DISABLED_LOOKING_FOR_TEAM,Cannot change this setting while in a Team!
-TID_ONLINE_LOOKING_FOR_A_TEAM,Шукає команду
+TID_ONLINE_LOOKING_FOR_A_TEAM,Looking for a Team
 TID_ONLINE_LOOKING_FOR_PLAYERS,Looking for players
-TID_ONLINE_LOOKING_FOR_A_TEAM_SETTING,Шукає команду:
+TID_ONLINE_LOOKING_FOR_A_TEAM_SETTING,Looking for a Team:
 TID_ONLINE_LOOKING_FOR_PLAYERS_SETTING,Looking for players:
 TID_CHINA_LOGIN_AA_POPUP_DESC_TENCENT,1）本游戏是一款多人实时对战类游戏，适用于年满12周岁及以上的用户，\n建议未成年人在家长监护下使用游戏产品。\n\n2）游戏无明显背景，需要玩家操作各种英雄与队友配合取得胜利，\n游戏有丰富多样的玩法，包含角色养成、竞技等，需要投入一定的时间和精力。\n游戏中存在基于文字的陌生人社交系统，且社交系统的管理遵循相关法律法规。\n\n3）根据国家相关要求，游戏中有用户实名认证系统，未通过实名认证的用户不可进入游戏；\n认证为未成年人的用户除周五、周六、周日及法定节假日每日20时至21时外其他时间均不可进入游戏。游戏中部分玩法和道具需要付费。根据腾讯健康系统管理规定，认证为未成年人的用户将接受以下管理：未满12周岁的用户不能付费；12周岁以上未满16周岁的未成年人用户，单次充值金额不得超过50元人民币，每月充值金额累计不得超过200元人民币；16周岁以上的未成年人用户，单次充值金额不得超过100元人民币，每月充值金额累计不得超过400元人民币。\n\n4）游戏以竞技为主题，画面精美，玩法多样，能够带给玩家轻松愉悦的游戏氛围，\n游戏中的排位赛有助于调动玩家的积极情绪，在比赛中获胜能够提升玩家的自信心。\n游戏提供了丰富的社交系统，包括战队、好友等，玩家之间可以互相交流，互相配合，\n共同完成游戏任务，有助于促进玩家的社会交流，维持良好的社群关系。
 TID_CHINA_LOGIN_AA_POPUP_DESC_YOOZOO,1）本游戏是一款多人实时对战类游戏，适用于年满12周岁及以上的用户，\n建议未成年人在家长监护下使用游戏产品。\n\n2）游戏无明显背景，需要玩家操作各种英雄与队友配合取得胜利，\n游戏有丰富多样的玩法，包含角色养成、竞技等，需要投入一定的时间和精力。\n游戏中存在基于文字的陌生人社交系统，且社交系统的管理遵循相关法律法规。\n\n3）本游戏中有用户实名认证系统，认证为未成年人的用户将接受以下管理：\n游戏中部分玩法和道具需要付费。未满8周岁的用户不能付费：8周岁以上未满16周岁的未成年人用户，单次充值不得超过50元人民币，每月充值金额累计不得超过200元人民币；16周岁以上的未成年人用户，单次充值金额不得超过100元人民币，每月充值金额累计不得超过400元人民币。未成年人仅可在周五、周六、周日和法定节假日每日20时至21时体检1小时网络游戏服务。\n\n4）游戏以竞技为主题，画面精美，玩法多样，能够带给玩家轻松愉悦的游戏氛围，\n游戏中的排位赛有助于调动玩家的积极情绪，在比赛中获胜能够提升玩家的自信心。\n游戏提供了丰富的社交系统，包括战队、好友等，玩家之间可以互相交流，互相配合，\n共同完成游戏任务，有助于促进玩家的社会交流，维持良好的社群关系。
@@ -5305,7 +5305,7 @@ TID_GLADIATOR_COLETTE_SKIN_SHOP,ГЛАДІАТОР\nКОЛЕТ
 TID_V8-BIT_SKIN,V8-БІТ
 TID_V8-BIT_SKIN_SHOP,V8-БІТ
 TID_TEAM_LOOKING_2,Team is looking for players:
-TID_TEAM_PLAYER_2,I'm Шукає команду:
+TID_TEAM_PLAYER_2,I'm looking for a team:
 TID_TEAM_INVITE_TEAM_UP,<NAME> wants to team up with you!
 TID_TEAM_INVITE_API,You have been invited to join a tournament match!
 TID_SHOWDOWN_63,Dried Up River
@@ -5337,7 +5337,7 @@ TID_CLUB_LEAGUES_BUTTON_NEXT_EVENTS,NEXT EVENTS
 TID_CLUB_LEAGUES_BUTTON_RACE_COOLDOWN_DESC,Next Event Day in:
 TID_CLUB_LEAGUES_BUTTON_SEASON_COOLDOWN_DESC,Next Season starts in:
 TID_CLUB_LEAGUES_BUTTON_SEASON_RANK,Season rank: <RANK>
-TID_CLUB_LEAGUES_BUTTON_SEASON_RANK_NOT_RANKED,Not ranked in Season
+TID_CLUB_LEAGUES_BUTTON_SEASON_RANK_NOT_RANKED,Не рейтинговані в сезоні
 TID_CLUB_LEAGUES_BUTTON_JOIN_CLUB_DESC,Join a Club to play
 TID_CLUB_LEAGUES_BUTTON_REGISTRATION_CLOSED,Registration closed
 TID_CLUB_LEAGUE_EVENT_TIME_LEFT,<TIME> left
@@ -5409,7 +5409,7 @@ TID_CLUB_LEAGUE_SHOP_BUTTON_DESC,BOOST YOUR PROGRESS & BUY EXCLUSIVE SKINS:
 TID_CLUB_LEAGUE_BUTTON_VISIT_CLUB_SHOP,VISIT CLUB SHOP
 TID_CLUB_LEAGUE_SEASON_END_REWARD_DESC,YOUR END OF SEASON REWARD
 TID_CLUB_LEAGUE_SEASON_END_REWARD_CLAIMED,CLAIMED
-TID_CLUB_LEAGUE_NOT_YET_RANKED,NOT YET RANKED
+TID_CLUB_LEAGUE_NOT_YET_RANKED,ЩЕ НЕ РАНГОВАНО
 TID_CLUB_LEAGUE_SEASON_REGISTRATION_CLOSED,SEASON REGISTRATION CLOSED
 TID_CLUB_LEAGUE_SPECTATE_THIS_SEASON,SPECTATE THIS SEASON
 TID_CLUB_LEAGUE_WAIT_NEXT_SEASON,Wait for the next season to play!
@@ -5563,7 +5563,7 @@ TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_SUBTITLE,Play all your Tickets in a season t
 TID_CLUB_LEAGUE_SEASON_REWARD_MAX,MAX
 TID_CLUB_LEAGUE_SEASON_PROMOTING_DESC,Promoting to higher League
 TID_CLUB_LEAGUE_SEASON_DEMOTING_DESC,Demoting to lower League
-TID_CLUB_LEAGUE_LOOKING_FOR_TEAM,Шукає команду:
+TID_CLUB_LEAGUE_LOOKING_FOR_TEAM,Looking for a Team:
 TID_CLUB_LEAGUE_LOOKING_FOR_PLAYERS,Looking for Players:
 TID_CLUB_INFO_TAB_PLAYER_RANKS,PLAYER RANKS
 TID_CLUB_INFO_TAB_LEAGUE_SEASON,CLUB LEAGUE SEASON
@@ -5712,7 +5712,7 @@ TID_FIRST_GEAR_TUTORIAL_BUTTON_NEXT,LET'S GO!
 TID_FIRST_GEAR_TUTORIAL_BUTTON_COLLECT,COLLECT!
 TID_FIRST_GEAR_TUTORIAL_UNLOCK_POWER,POWER
 TID_FIRST_GEAR_TUTORIAL_UNLOCK_POWER_AMOUNT,10
-TID_SETTINGS_HAPTICS,ВІБРАЦІЯ
+TID_SETTINGS_HAPTICS,HAPTIC FEEDBACK
 TID_HERO_INFO_GEAR_BLOCKED,Power up <HERONAME> with Gear! This Gear slot is available after reaching Power Level <LEVEL>.
 TID_BRAWL_PASS_SEASON_8,BRAWLYWOOD
 TID_CHOLLA_SKIN,БУНТАРИЦЯ ЛОЛА
@@ -5731,7 +5731,7 @@ TID_CLUB_LEAGUE_MIGRATION_NEW_CLUB_LEADER,"Due to the recent downsizing of Clubs
 TID_CLUB_LEAGUE_MIGRATION_NEW_CLUB_MEMBER,"Due to the recent downsizing of Clubs, you have been moved to a new one. You aren't alone, some of your old Club mates have also moved with you. You don't need to commit to this change, and are free to leave and search for a new Club."
 TID_CLUB_LEAGUE_MIGRATION_KICKED,"Due to the recent downsizing of Clubs you have been kicked for inactivity. If you want to participate in Club League, search for a new Club and we'll find you a new home!"
 TID_CLUB_LEAGUE_MIGRATION_NO_CLUB_FOUND,"Oof, we couldn't find a suitable Club for you. If you want to play in Club League, your best option is to use the search to find a new Club."
-TID_LOOKING_TOGGLE_LOOKING_FOR_A_TEAM,You are now shown as Шукає команду to others online
+TID_LOOKING_TOGGLE_LOOKING_FOR_A_TEAM,You are now shown as LOOKING FOR A TEAM to others online
 TID_LOOKING_TOGGLE_LOOKING_FOR_PLAYERS,Your Team is now shown as LOOKING FOR PLAYERS to others online
 TID_CLUB_JOIN_FAIL_FEATURE_LOCKED,Cannot join club. Clubs unlock at <NUM> trophies.
 TID_CLUB_LEAGUE_LEAGUES_POPUP_CURRENT_LEAGUE,CURRENT LEAGUE
@@ -5804,7 +5804,7 @@ TID_SHORT_ORDINAL_7,7th
 TID_SHORT_ORDINAL_8,8th
 TID_SHORT_ORDINAL_9,9th
 TID_SHORT_ORDINAL_10,10th
-TID_RANKED_TEAM_SELECT_HINT_SP_GADGET_GEAR,"Select your Star Power, Gadget and Gears"
+TID_RANKED_TEAM_SELECT_HINT_SP_GADGET_GEAR,"Виберіть свою пасівку, гаджет і шестерню"
 TID_CLUB_LEAGUE_SEASON_END_PROMOTION_INBOX,Congratulations! your Club has been promoted up <CLUBTIERS> Leagues for achieving RANK <POSITION> at the end of the Club League season.
 TID_EMOTE_BUNDLE_LNY2022_PACK,Lunar Brawl Skins Pin Set
 TID_POWER_LEVEL_INFO,"Power Levels increase a Brawler's Damage output and Health. Upgrade Brawlers using Power Points and Coins.\n\nReach Power Level 7 to unlock Gadgets, Power Level 9 to unlock Star Powers and Power Level 10 & 11 to unlock Gears."
@@ -5832,20 +5832,20 @@ TID_NIAN_NITA_SKIN,НЯН НІТА
 TID_NIAN_NITA_SKIN_SHOP,НЯН\nНІТА
 TID_ROSA_MILITARY_SKIN,МАЙОР РОЗА
 TID_ROSA_MILITARY_SKIN_SHOP,МАЙОР\nРОСА
-TID_RANKED_FRIENDLY_TOGGLE_TITLE,POWER MATCH
-TID_RANKED_FRIENDLY_TOGGLE_DESC,Use the same format as Power League with Picks/Bans for Brawlers and multiple rounds
-TID_RANKED_FRIENDLY_BEST_OF_TITLE,NUMBER OF ROUNDS
-TID_RANKED_FRIENDLY_BEST_OF_DESC,Change the number of battles to play
-TID_RANKED_FRIENDLY_TIMER_TITLE,PREPARATION TIMERS
-TID_RANKED_FRIENDLY_TIMER_DESC,Change the duration for picking Brawlers
-TID_RANKED_FRIENDLY_BEST_OF_3,Best of 3
-TID_RANKED_FRIENDLY_BEST_OF_5,Best of 5
-TID_RANKED_FRIENDLY_BEST_OF_7,Best of 7
-TID_RANKED_FRIENDLY_SWAP_BRAWLER_TITLE,SWAP BRAWLER?
-TID_RANKED_FRIENDLY_SWAP_BRAWLER_DESC,Play with:
-TID_RANKED_FRIENDLY_TIMER_NORMAL,NORMAL
-TID_RANKED_FRIENDLY_TIMER_LONG,x1.5
-TID_RANKED_FRIENDLY_TIMER_VERY_LONG,x2
+TID_RANKED_FRIENDLY_TOGGLE_TITLE,ПАВЕР МАТЧІ
+TID_RANKED_FRIENDLY_TOGGLE_DESC,"Використовуйте той самий формат, що й ПАВЕР ЛІГА з виборами/банами для бійців та кількома раундами"
+TID_RANKED_FRIENDLY_BEST_OF_TITLE,КІЛЬКІСТЬ РАУНДІВ
+TID_RANKED_FRIENDLY_BEST_OF_DESC,Змініть кількість битв для гри
+TID_RANKED_FRIENDLY_TIMER_TITLE,ТАЙМЕРИ ПІДГОТОВКИ
+TID_RANKED_FRIENDLY_TIMER_DESC,Змінити тривалість для вибору бравлерів
+TID_RANKED_FRIENDLY_BEST_OF_3,Найкраще з 3
+TID_RANKED_FRIENDLY_BEST_OF_5,Найкраще з 5
+TID_RANKED_FRIENDLY_BEST_OF_7,Найкраще з 7
+TID_RANKED_FRIENDLY_SWAP_BRAWLER_TITLE,ПОМІНЯТИ БРАВЛЕРА?
+TID_RANKED_FRIENDLY_SWAP_BRAWLER_DESC,Грати з:
+TID_RANKED_FRIENDLY_TIMER_NORMAL,НОРМАЛЬНИЙ
+TID_RANKED_FRIENDLY_TIMER_LONG,"х1,5"
+TID_RANKED_FRIENDLY_TIMER_VERY_LONG,х2
 TID_SHOP_LNY22_SKINS,Lunar Brawl Skins
 TID_SHOP_LNY22_TITLE,LUNAR BRAWL
 TID_SHOP_LNY22_INFO,Skin Set
@@ -5976,8 +5976,8 @@ TID_LOGIN_CALENDAR_REWARD_DESC_GADGET_CHOICE,Choose a Gadget for <VALUE>. Gadget
 TID_LOGIN_CALENDAR_REWARD_DESC_PIN_X2,This reward gives you 2 NEW PINS
 TID_LOGIN_CALENDAR_REWARD_DESC_STARPOWER_CHOICE,Choose a Star Power for <VALUE>. Star Powers are extra passive abilities for you brawler.
 TID_LOGIN_CALENDAR_ERROR_REWARD_EXPIRED,Reward has expired
-TID_CHINA_PRIVACY_SETTINGS_BUTTON,настройки приватності
-TID_CHINA_PRIVACY_SETTINGS_TITLE,НАСТРОЙКИ ПРИВАТНОСТІ
+TID_CHINA_PRIVACY_SETTINGS_BUTTON,Privacy Settings
+TID_CHINA_PRIVACY_SETTINGS_TITLE,PRIVACY SETTINGS
 TID_CHINA_PRIVACY_HIDE_IN_LEADERBOARDS,HIDE IN LEADERBOARDS
 TID_ACCESSORY_CROSS_BOMBER_BURST,RADIO CHECK
 TID_ACCESSORY_CROSS_BOMBER_BURST_DESC,Grom's next attack throws <c00cc00><VALUE1></c> Buds in rapid succession.
