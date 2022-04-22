@@ -32,13 +32,13 @@ TID_BRAWL_PASS_POPUP_TITLE,БРАВЛ ПАСС
 TID_BRAWL_PASS_POPUP_INFO,СЕЗОН <SEASON>
 TID_BRAWL_PASS_BACK_TO_CURRENT_SEASON,НАЗАД ДО МИНУЛОГО СЕЗОНА
 TID_BRAWL_PASS_PREVIOUS_SEASON,МИНУЛИЙ СЕЗЕОН
-TID_BRAWL_PASS_PREVIOUS_SEASON_INFO,НАТИСНИ СЮДИ ЩОБ ЗАБРАТИ НАГОРОДУ!
+TID_BRAWL_PASS_PREVIOUS_SEASON_INFO,НАТИСНИ СЮДИ ЩОБ ЗАБРАТИ НАГОРОДИ!
 TID_BRAWL_PASS_UNLOCK_INFO,Преміумні нагороди
 TID_BRAWL_PASS_UNLOCK_LABEL,Дістаньте нагороди і додаткові квести
 TID_BRAWLPASS_PURCHASE_ERROR_3,Цей сезон бравл паса уже куплений
 TID_BRAWLPASS_PURCHASE_ERROR_4,Вибачте цей сезон бравл паса уже недоступний
 TID_BRAWLPASS_PURCHASE_ERROR_5,Неможливо купити збір бравл паса бо ви вже дістали усі нагороди
-TID_BRAWLPASS_PURCHASE_ERROR_6,Неможна купити бравл пас з негативним балансом гемів
+TID_BRAWLPASS_PURCHASE_ERROR_6,Не можна купити бравл пас з негативним балансом гемів
 TID_PURCHASE_BRAWL_PASS_PROGRESS_TITLE,Купити ячейку?
 TID_PURCHASE_BRAWL_PASS_PROGRESS_INFO,Купити <NUM> токенів щоб перейти на наступну ячейку бравл паса
 TID_PURCHASE_BRAWL_PASS_TITLE,ДІСТАТИ БРАВЛ ПАСС
@@ -483,7 +483,7 @@ TID_TEAMS_POPUP_SEARCH,ПРИЄДНАТИСЯ ЗА КОДОМ
 TID_TEAMS_POPUP_CREATE,СТВОРИТИ КОМАНДУ
 TID_TEAM_SEARCH_POPUP_TITLE,ПРИЄДНАТИСЯ З КОДОМ
 TID_TEAM_SEARCH_POPUP_SEARCH,ПРИЄДНАТИСЯ З КОДОМ
-TID_TEAM_JOIN_ROOM_CODE,ПИШИ КОД ТУТ... 
+TID_TEAM_JOIN_ROOM_CODE,ПИШИ КОД ТУТ...
 TID_TEAM_CHANGE_MAP,ЗМІНИТИ
 TID_TEAM_TYPE_INFO_0,Рангований
 TID_TEAM_TYPE_INFO_1,Дружній
@@ -936,7 +936,7 @@ TID_WANTED_1,Руїни храму
 TID_BATTLE_ROYALE_1,Крик Черепа
 TID_GOLDRUSH_2,Кристальна аркада
 TID_BANKHEIST_2,Бумовий Каньйон
-TID_WANTED_2,розбійницький табір
+TID_WANTED_2,Розбійницький табір
 TID_BATTLE_ROYALE_2,Припечений Камінь
 TID_GOLDRUSH_3,Печера Смертника
 TID_BANKHEIST_3,Безпечне Місце
@@ -2232,7 +2232,7 @@ TID_GOLDRUSH_XMAS_8,Frozen Lake
 TID_GOLDRUSH_XMAS_9,Frosty Crystals
 TID_GOLDRUSH_XMAS_10,Treasure Hunt
 TID_RAID_BOSS_DIFFICULTY_CAP,"Your Difficulty level has been lowered to match those of your Team. While the difficulty is lowered, completing the level will not grant progress towards your Quest."
-TID_RAID_BOSS_DIFFICULTY,Челенж: 
+TID_RAID_BOSS_DIFFICULTY,Челенж:
 TID_BOSS_3,Chew Out
 TID_BOSS_4,Team Day
 TID_BOSS_5,Table Flip
@@ -2709,7 +2709,7 @@ TID_CARL_HOG_RIDER_SKIN,НАЇЗНИК КАРЛ
 TID_CARL_HOG_RIDER_SKIN_SHOP,НАЇЗНИК\nКАРЛ
 TID_SKIN_INFO_ANIM_SOUND_FX_VOICE,- Custom Brawler model\n- Custom effects\n- Custom animations\n- Custom sounds\n- Custom voice
 TID_SHOP_OFFER_STAR_SKIN_LABEL,STAR SKIN
-TID_WANTED_15,Beach Bounty
+TID_WANTED_15,Пляжний Баунті
 TID_WANTED_16,Сонячний удар
 TID_WANTED_17,Палаючі піски
 TID_BANKHEIST_16,Beachcombers
@@ -3019,7 +3019,7 @@ TID_QUICK_MESSAGE_OOPS,Ой
 TID_QUICK_MESSAGE_SUGGEST_BRAWLER,Can you play as <c<COLOR>><NAME></c>?
 TID_QUICK_MESSAGE_SUGGEST_STARPOWER,Can you use <c<COLOR>><NAME></c>?
 TID_QUICK_MESSAGE_SUGGEST_MODE,Let's play <c<COLOR>><NAME></c>!
-TID_QUICK_MESSAGE_ASK_BRAWLER,Якого мені  взяти бравлера
+TID_QUICK_MESSAGE_ASK_BRAWLER,Якого мені взяти бравлера
 TID_QUICK_MESSAGE_ASK_MODE,Який режим заграємо
 TID_PLAYER_CTX_SUGGEST_BRAWLER_SHORT,SUGGEST
 TID_PLAYER_CTX_SUGGEST_CANCEL,CANCEL SUGGESTION
@@ -4947,7 +4947,7 @@ TID_LDU_QUITO_MIKE_SKIN,ЛДУ КІТО МАЙК
 TID_CHIVAS_MIKE_SKIN,ЧІВАС МАЙК
 TID_UNIVERSITARIO_PRIMO_SKIN,УНІВЕРСАЛЬНИЙ ЕЛЬ ПРІМО
 TID_NACIONAL_PRIMO_SKIN,НАЦІОНАЛЬНИЙ ЕЛЬ ПРІМО
-TID_CORINTHIANS_PRIMO_SKIN,КОРІНТІАНС ЕЛЬ ПРІМО 
+TID_CORINTHIANS_PRIMO_SKIN,КОРІНТІАНС ЕЛЬ ПРІМО
 TID_BOCA_SHELLY_SKIN,БОКА ЮНІОРС ШЕЛЛІ
 TID_AMERICA_SHELLY_SKIN,АМЕРИКАНСЬКА ШЕЛЛІ
 TID_UDC_SHELLY_SKIN,У ДЕ ЧІЛІ ШЕЛЛІ
