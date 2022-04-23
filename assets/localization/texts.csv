@@ -2144,8 +2144,8 @@ TID_RAID_BOSS_DIFFICULTY_17,Insane XIV
 TID_RAID_BOSS_DIFFICULTY_18,Insane XV
 TID_RAID_BOSS_DIFFICULTY_19,Insane XVI
 TID_RAID_BOSS_DIFFICULTY_20,YOU GUYS ROCK!
-TID_MODES_NEW_EVENT,NEW EVENT!
-TID_MODES_NEW_EVENTS,NEW EVENTS!
+TID_MODES_NEW_EVENT,НОВА ПОДІЯ!
+TID_MODES_NEW_EVENTS,НОВІ ПОДІЇ!
 TID_TEAM_MEMBER_STATUS_NEW_0,<c999999>OFFLINE</c>
 TID_TEAM_MEMBER_STATUS_NEW_1,BATTLING
 TID_TEAM_MEMBER_STATUS_NEW_2,AWAY
@@ -2163,7 +2163,7 @@ TID_TEAM_MEMBER_STATUS_NEW_13,BROWSING QUESTS
 TID_TEAM_MEMBER_STATUS_NEW_READY,READY
 TID_BUTTON_SPECTATE,SPECTATE
 TID_NEW_EVENT_IN,Зміна через: <TIME>
-TID_NEW_EVENT_NOW,NEW EVENT AVAILABLE!
+TID_NEW_EVENT_NOW,ДОСТУПНА НОВА ПОДІЯ!
 TID_NEW_EVENT_ICON_PREFIX,Next:
 TID_NEW_EVENT_ICON_SUFFIX,Через <TIME>
 TID_SHOP_TITLE,SHOP
@@ -2217,7 +2217,7 @@ TID_EVENT_POPUP_GAME_MODE_6_SOLO_DUO,Survive the Arena
 TID_GAME_MODE_6_SOLO_DUO_DESC,"Go alone or with a partner to fight in the Showdown Arena! Whoever's still standing at the end wins.\n\nCollect Power Cubes to increase your Health and Attack damage. There are poison clouds closing in, so keep moving!"
 TID_GAME_MODE_6_SOLO_DUO_DESC_PRC,Go alone or with a partner to fight in the Showdown Arena!\n\nCollect Power Cubes to increase your Health and Attack damage.
 TID_GAME_MODE_6_SOLO_ONLY_DESC_PRC,Prepare to battle in the Showdown Arena!\n\nCollect Power Cubes to increase your Health and Attack damage.
-TID_GAME_MODE_20_DESC_PRC,Defeat the opposing team in a best of three Knockout round contest! Be careful: defeated Brawlers stay out for the rest of each round.\n\nThe first team to win two rounds wins the match.
+TID_GAME_MODE_20_DESC_PRC,"Перемагайте команду суперника в змаганні за найкращий з трьох раундів на вибування! Будьте обережні: переможені бравлери залишаються поза грою до кінця кожного раунду. Через деякий час з країв просочиться отруйна хмара, тому дійте швидко!\n\nПерша команда, яка виграє два раунди, виграє матч."
 TID_INVITE_PENDING,INVITING
 TID_JOIN_REQUEST_PENDING,JOINING
 TID_GOAL_MATCH_OVER,<name> scored!\nMatch over
@@ -4779,8 +4779,8 @@ TID_RANKED_ENEMY_P2,Червоний 2
 TID_RANKED_ENEMY_P3,Червоний 3
 TID_NOTIFICATION_RANKED_SEASON_STARTED,Новий сезон ПАВЕР ЛІГИ розпочався!
 TID_NOTIFICATION_RANKED_SEASON_ENDING,Незабаром завершується сезон ПАВЕР ЛІГИ. Продовжуйте штовхатися!
-TID_POWER_LEAGUE_SEASON,POWER LEAGUE
-TID_STARTING_SOON,Starting soon...
+TID_POWER_LEAGUE_SEASON,ПАВЕР ЛІГА
+TID_STARTING_SOON,Скоро починається...
 TID_RANKED_TEAM_SELECT_HINT_PICK,Виберіть свого бравлера
 TID_RANKED_TEAM_SELECT_HINT_BAN,Забаніть бравлера
 TID_RANKED_TEAM_SELECT_HINT_SP,Виберіть свою пасівку
@@ -4799,22 +4799,22 @@ TID_BATTLE_LOG_REPLAY_INFO_REPLAYS_RANKED,"Досягніть рангу <RANK>,
 TID_TEAM_ERROR_RANKED_NOT_UNLOCKED,ПАВЕР ЛІГУ ще не розблоковано
 TID_RANKED_COINFLIP_LEADER_HEADER,Лідер команди
 TID_ROUND_OVER,Round over
-TID_GAME_OVER_KNOCKOUT_BLUE,Round lost!\nMatch over
-TID_GAME_OVER_KNOCKOUT_RED,Round won!\nMatch over
-TID_KNOCKOUT_BLUE,Round lost!
-TID_KNOCKOUT_RED,Round won!
-TID_GAME_MODE_20,KNOCKOUT
-TID_GAME_MODE_20_DESC,"Defeat the opposing team in a best of three Knockout round contest! Be careful: defeated Brawlers stay out for the rest of each round. After a while, poison clouds will seep in from the edges, so make sure to act quickly!\n\nThe first team to win two rounds wins the match."
-TID_KNOCKOUT_INTRO_TEXT,Defeat opposing Brawlers!
+TID_GAME_OVER_KNOCKOUT_BLUE,Раунд програно!\nМатч закінчився
+TID_GAME_OVER_KNOCKOUT_RED,Раунд виграно!\nМатч закінчився
+TID_KNOCKOUT_BLUE,Раунд програв!
+TID_KNOCKOUT_RED,Виграв раунд!
+TID_GAME_MODE_20,НОКАУТ
+TID_GAME_MODE_20_DESC,"Перемагайте команду суперника в змаганні за найкращий з трьох раундів на вибування! Будьте обережні: переможені бравлери залишаються поза грою до кінця кожного раунду. Через деякий час з країв просочиться отруйна хмара, тому дійте швидко!\n\nПерша команда, яка виграє два раунди, виграє матч."
+TID_KNOCKOUT_INTRO_TEXT,Перемагайте ворожих бравлерів!
 TID_INBOX_CAPTION_72_28,DONATION: ICON
 TID_RANKED_YOUR_TURN,ТВОЯ ЧЕРГА!
 TID_RANKED_BAN_YOUR_TURN,ТВІЙ БАН!
 TID_RANKED_PICK_YOUR_TURN,ТВІЙ ВИБІР!
-TID_KNOCKOUT_TIEBREAK_BAR,Tiebreak damage
+TID_KNOCKOUT_TIEBREAK_BAR,тай-брейк
 TID_HOMESCREEN_INFO_RANKED_SOLO,"Вигравайте битви ПАВЕР ЛІГИ, щоб досягти вищих рангів і отримати кращі нагороди.\n\nПоточний СОЛО РАНГ:\n<RANK>"
 TID_HOMESCREEN_INFO_RANKED_TEAM,"Вигравайте битви ПАВЕР ЛІГИ, щоб досягти вищих рангів і отримати кращі нагороди.\n\nПоточний КОМАНДНИЙ РАНГ:\n<RANK>"
 TID_NAME_TECHNICAL_ERROR_TRY_AGAIN,Name check failed due to technical error - please try again later
-TID_NOTIFICATION_KNOCKOUT,New KNOCKOUT map is available! Time to win new Rewards!
+TID_NOTIFICATION_KNOCKOUT,Нова карта НОКАУТ доступна! Час вигравати нові нагороди!
 TID_HERO_AND_SKIN_PREVIEW_BP_HERO,BRAWL PASS BRAWLER
 TID_HERO_AND_SKIN_PREVIEW_BP_SKIN,BRAWL PASS EXCLUSIVE SKIN
 TID_HERO_AND_SKIN_PREVIEW_TR_HERO,TROPHY ROAD BRAWLER
@@ -4861,13 +4861,13 @@ TID_MAR2021MAPS_11,Skullpass
 TID_MAR2021MAPS_12,Clear City
 TID_MAR2021MAPS_13,Highsprings
 TID_MAR2021MAPS_14,Goldarm Gulch
-TID_KNOCKOUT_01,Ends Meet
-TID_KNOCKOUT_02,Middle Ground
-TID_KNOCKOUT_03,Close Call
-TID_KNOCKOUT_04,Zip Zap
-TID_KNOCKOUT_05,Double Bluff
-TID_KNOCKOUT_06,Snake Out
-TID_KNOCKOUT_07,Split Difference
+TID_KNOCKOUT_01,Кінці зустрічаються
+TID_KNOCKOUT_02,Середня земля
+TID_KNOCKOUT_03,Близький виклик
+TID_KNOCKOUT_04,Зіп-зап
+TID_KNOCKOUT_05,Подвійний блеф
+TID_KNOCKOUT_06,Змія виходить
+TID_KNOCKOUT_07,Розділена різниця
 TID_TRUE_GOLD_NITA_SKIN,СПРАВЖНЯ ЗОЛОТА НІТА
 TID_TRUE_GOLD_NITA_SKIN_SHOP,СПРАВЖНЯ ЗОЛОТА\nНІТА
 TID_TRUE_GOLD_SPIKE,СПРАВЖНІЙ ЗОЛОТИЙ СПАЙК
@@ -5310,8 +5310,8 @@ TID_TEAM_INVITE_TEAM_UP,<NAME> wants to team up with you!
 TID_TEAM_INVITE_API,You have been invited to join a tournament match!
 TID_SHOWDOWN_63,Dried Up River
 TID_SHOWDOWN_66,Ruins
-TID_KNOCKOUT_13,Luis' Revenge
-TID_KNOCKOUT_15,Flaring Phoenix
+TID_KNOCKOUT_13,Помста Луїса
+TID_KNOCKOUT_15,Палаючий фенікс
 TID_GEMGRAB_45,Pierced
 TID_GEMGRAB_46,Gem Source
 TID_BOUNTY_23,Electric Zone
