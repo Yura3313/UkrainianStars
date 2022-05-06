@@ -16,13 +16,13 @@
 
 
 # instance fields
-.field public final a:J
+.field public final g:J
 
-.field public final b:J
-
-.field public final h:Lcom/google/android/gms/games/PlayerLevel;
+.field public final h:J
 
 .field public final i:Lcom/google/android/gms/games/PlayerLevel;
+
+.field public final j:Lcom/google/android/gms/games/PlayerLevel;
 
 
 # direct methods
@@ -69,16 +69,16 @@
     if-eqz p6, :cond_1
 
     .line 3
-    iput-wide p1, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->a:J
+    iput-wide p1, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->g:J
 
     .line 4
-    iput-wide p3, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->b:J
+    iput-wide p3, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->h:J
 
     .line 5
-    iput-object p5, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->h:Lcom/google/android/gms/games/PlayerLevel;
+    iput-object p5, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->i:Lcom/google/android/gms/games/PlayerLevel;
 
     .line 6
-    iput-object p6, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->i:Lcom/google/android/gms/games/PlayerLevel;
+    iput-object p6, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->j:Lcom/google/android/gms/games/PlayerLevel;
 
     return-void
 
@@ -125,13 +125,13 @@
     check-cast p1, Lcom/google/android/gms/games/PlayerLevelInfo;
 
     .line 3
-    iget-wide v2, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->a:J
+    iget-wide v2, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->g:J
 
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v2
 
-    iget-wide v3, p1, Lcom/google/android/gms/games/PlayerLevelInfo;->a:J
+    iget-wide v3, p1, Lcom/google/android/gms/games/PlayerLevelInfo;->g:J
 
     invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -143,30 +143,19 @@
 
     if-eqz v2, :cond_2
 
-    iget-wide v2, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->b:J
+    iget-wide v2, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->h:J
 
     .line 4
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v2
 
-    iget-wide v3, p1, Lcom/google/android/gms/games/PlayerLevelInfo;->b:J
+    iget-wide v3, p1, Lcom/google/android/gms/games/PlayerLevelInfo;->h:J
 
     invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    iget-object v2, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->h:Lcom/google/android/gms/games/PlayerLevel;
-
-    iget-object v3, p1, Lcom/google/android/gms/games/PlayerLevelInfo;->h:Lcom/google/android/gms/games/PlayerLevel;
-
-    .line 5
     invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
@@ -175,7 +164,18 @@
 
     iget-object v2, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->i:Lcom/google/android/gms/games/PlayerLevel;
 
-    iget-object p1, p1, Lcom/google/android/gms/games/PlayerLevelInfo;->i:Lcom/google/android/gms/games/PlayerLevel;
+    iget-object v3, p1, Lcom/google/android/gms/games/PlayerLevelInfo;->i:Lcom/google/android/gms/games/PlayerLevel;
+
+    .line 5
+    invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    iget-object v2, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->j:Lcom/google/android/gms/games/PlayerLevel;
+
+    iget-object p1, p1, Lcom/google/android/gms/games/PlayerLevelInfo;->j:Lcom/google/android/gms/games/PlayerLevel;
 
     .line 6
     invoke-static {v2, p1}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -198,7 +198,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-wide v1, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->a:J
+    iget-wide v1, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->g:J
 
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -208,7 +208,7 @@
 
     aput-object v1, v0, v2
 
-    iget-wide v1, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->b:J
+    iget-wide v1, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->h:J
 
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -218,13 +218,13 @@
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->h:Lcom/google/android/gms/games/PlayerLevel;
+    iget-object v1, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->i:Lcom/google/android/gms/games/PlayerLevel;
 
     const/4 v2, 0x2
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->i:Lcom/google/android/gms/games/PlayerLevel;
+    iget-object v1, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->j:Lcom/google/android/gms/games/PlayerLevel;
 
     const/4 v2, 0x3
 
@@ -251,7 +251,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-wide v2, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->a:J
+    iget-wide v2, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->g:J
 
     const/16 v4, 0x8
 
@@ -264,7 +264,7 @@
     const/4 v1, 0x2
 
     .line 5
-    iget-wide v2, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->b:J
+    iget-wide v2, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->h:J
 
     .line 6
     invoke-static {p1, v1, v4}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -275,7 +275,7 @@
     const/4 v1, 0x3
 
     .line 8
-    iget-object v2, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->h:Lcom/google/android/gms/games/PlayerLevel;
+    iget-object v2, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->i:Lcom/google/android/gms/games/PlayerLevel;
 
     const/4 v3, 0x0
 
@@ -285,7 +285,7 @@
     const/4 v1, 0x4
 
     .line 10
-    iget-object v2, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->i:Lcom/google/android/gms/games/PlayerLevel;
+    iget-object v2, p0, Lcom/google/android/gms/games/PlayerLevelInfo;->j:Lcom/google/android/gms/games/PlayerLevel;
 
     .line 11
     invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V

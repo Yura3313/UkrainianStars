@@ -27,14 +27,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment$a;->a:Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment$a;->g:Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;
 
     const/4 p1, 0x0
 
@@ -49,9 +49,9 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment$a;->a:Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment$a;->g:Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;
 
-    invoke-static {v0}, Lb0/g;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-static {v0}, Lrc/b;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v0
 
@@ -60,7 +60,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-boolean v0, v0, Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment$BackStackEntry;->h:Z
+    iget-boolean v0, v0, Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment$BackStackEntry;->i:Z
 
     goto :goto_0
 

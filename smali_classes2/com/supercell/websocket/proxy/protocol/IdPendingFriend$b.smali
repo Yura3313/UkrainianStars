@@ -3,7 +3,7 @@
 .source "IdPendingFriend.java"
 
 # interfaces
-.implements Lyd/a;
+.implements Lxd/a;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Lcom/supercell/websocket/proxy/protocol/IdPendingFriend;",
         "Lcom/supercell/websocket/proxy/protocol/IdPendingFriend$b;",
         ">;",
-        "Lyd/a;"
+        "Lxd/a;"
     }
 .end annotation
 

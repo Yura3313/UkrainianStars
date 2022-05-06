@@ -78,7 +78,7 @@
     .line 3
     iget-object v2, p0, Le5/i;->a:Ll5/x0;
 
-    invoke-virtual {v2}, Ll5/x0;->x()Ljava/lang/String;
+    invoke-virtual {v2}, Ll5/x0;->w()Ljava/lang/String;
 
     move-result-object v2
 
@@ -197,7 +197,7 @@
     .line 9
     iget-object v1, p0, Le5/i;->a:Ll5/x0;
 
-    invoke-virtual {v1}, Ll5/x0;->x()Ljava/lang/String;
+    invoke-virtual {v1}, Ll5/x0;->w()Ljava/lang/String;
 
     move-result-object v1
 

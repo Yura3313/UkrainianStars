@@ -3,7 +3,7 @@
 .source "Job.kt"
 
 # interfaces
-.implements Lse/o0;
+.implements Lse/m0;
 
 
 # virtual methods

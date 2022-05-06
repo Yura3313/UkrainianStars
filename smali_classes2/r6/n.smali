@@ -137,7 +137,7 @@
     aput v5, v4, v9
 
     .line 12
-    iget v9, v2, Lj6/a;->b:I
+    iget v9, v2, Lj6/a;->h:I
 
     .line 13
     aget v10, v3, v7
@@ -260,7 +260,7 @@
     invoke-direct {v4, v9}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 24
-    sget-object v9, Lc6/k;->ISSUE_NUMBER:Lc6/k;
+    sget-object v9, Lc6/k;->j:Lc6/k;
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
 
@@ -302,7 +302,7 @@
 
     aput-object v3, v8, v7
 
-    sget-object v1, Lc6/a;->UPC_EAN_EXTENSION:Lc6/a;
+    sget-object v1, Lc6/a;->w:Lc6/a;
 
     invoke-direct {v9, v2, v6, v8, v1}, Lc6/j;-><init>(Ljava/lang/String;[B[Lc6/l;Lc6/a;)V
 
@@ -316,14 +316,14 @@
 
     .line 27
     :cond_6
-    sget-object v1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 28
     throw v1
 
     .line 29
     :cond_7
-    sget-object v1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 30
     goto :goto_4

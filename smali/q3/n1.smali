@@ -6,7 +6,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<MessageType::",
-        "Lq3/i3;",
+        "Lq3/f3;",
         ">",
         "Ljava/lang/Object;"
     }
@@ -18,7 +18,7 @@
     .locals 0
 
     .line 1
-    invoke-static {}, Lq3/x1;->a()Lq3/x1;
+    invoke-static {}, Lq3/v1;->a()Lq3/v1;
 
     return-void
 .end method

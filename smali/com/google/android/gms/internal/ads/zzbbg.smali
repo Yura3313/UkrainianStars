@@ -16,15 +16,15 @@
 
 
 # instance fields
-.field public a:Ljava/lang/String;
-
-.field public b:I
+.field public g:Ljava/lang/String;
 
 .field public h:I
 
-.field public i:Z
+.field public i:I
 
 .field public j:Z
+
+.field public k:Z
 
 
 # direct methods
@@ -32,9 +32,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lj3/hd;
+    new-instance v0, Lj3/ld;
 
-    invoke-direct {v0}, Lj3/hd;-><init>()V
+    invoke-direct {v0}, Lj3/ld;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzbbg;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -108,19 +108,19 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 4
-    iput-object p4, p0, Lcom/google/android/gms/internal/ads/zzbbg;->a:Ljava/lang/String;
+    iput-object p4, p0, Lcom/google/android/gms/internal/ads/zzbbg;->g:Ljava/lang/String;
 
     .line 5
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->b:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->h:I
 
     .line 6
-    iput p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->h:I
+    iput p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->i:I
 
     .line 7
-    iput-boolean p3, p0, Lcom/google/android/gms/internal/ads/zzbbg;->i:Z
+    iput-boolean p3, p0, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
 
     .line 8
-    iput-boolean p5, p0, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
+    iput-boolean p5, p0, Lcom/google/android/gms/internal/ads/zzbbg;->k:Z
 
     return-void
 .end method
@@ -132,24 +132,24 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 10
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->g:Ljava/lang/String;
 
     .line 11
-    iput p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->b:I
+    iput p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->h:I
 
     .line 12
-    iput p3, p0, Lcom/google/android/gms/internal/ads/zzbbg;->h:I
+    iput p3, p0, Lcom/google/android/gms/internal/ads/zzbbg;->i:I
 
     .line 13
-    iput-boolean p4, p0, Lcom/google/android/gms/internal/ads/zzbbg;->i:Z
+    iput-boolean p4, p0, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
 
     .line 14
-    iput-boolean p5, p0, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
+    iput-boolean p5, p0, Lcom/google/android/gms/internal/ads/zzbbg;->k:Z
 
     return-void
 .end method
 
-.method public static x2()Lcom/google/android/gms/internal/ads/zzbbg;
+.method public static z2()Lcom/google/android/gms/internal/ads/zzbbg;
     .locals 3
 
     .line 1
@@ -179,7 +179,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->g:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -188,7 +188,7 @@
     const/4 v0, 0x3
 
     .line 3
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->b:I
+    iget v1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->h:I
 
     const/4 v2, 0x4
 
@@ -199,7 +199,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 6
-    iget v0, p0, Lcom/google/android/gms/internal/ads/zzbbg;->h:I
+    iget v0, p0, Lcom/google/android/gms/internal/ads/zzbbg;->i:I
 
     .line 7
     invoke-static {p1, v2, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -210,7 +210,7 @@
     const/4 v0, 0x5
 
     .line 9
-    iget-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->i:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
 
     .line 10
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -221,7 +221,7 @@
     const/4 v0, 0x6
 
     .line 12
-    iget-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->k:Z
 
     .line 13
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V

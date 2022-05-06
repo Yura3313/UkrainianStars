@@ -3,22 +3,22 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/kl;
+.implements Lj3/ml;
 
 
 # instance fields
-.field public a:Lj3/qa;
+.field public a:Lj3/ua;
 
 
 # direct methods
-.method public constructor <init>(Lj3/qa;)V
+.method public constructor <init>(Lj3/ua;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj3/ll;->a:Lj3/qa;
+    iput-object p1, p0, Lj3/ll;->a:Lj3/ua;
 
     return-void
 .end method
@@ -38,9 +38,9 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lj3/ll;->a:Lj3/qa;
+    iget-object v0, p0, Lj3/ll;->a:Lj3/ua;
 
-    const-string v1, "content_vertical_opted_out"
+    const-string v1, "content_url_opted_out"
 
     .line 2
     invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -54,7 +54,7 @@
     move-result p1
 
     .line 3
-    invoke-interface {v0, p1}, Lj3/qa;->q(Z)V
+    invoke-interface {v0, p1}, Lj3/ua;->q(Z)V
 
     return-void
 .end method

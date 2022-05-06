@@ -21,21 +21,21 @@
         "Lle/j;",
         "Lke/l<",
         "Ljava/lang/String;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/ref/WeakReference;
+.field public final synthetic g:Ljava/lang/ref/WeakReference;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/ref/WeakReference;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$c;->a:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$c;->g:Ljava/lang/ref/WeakReference;
 
     const/4 p1, 0x1
 
@@ -57,7 +57,7 @@
     if-eqz p1, :cond_2
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$c;->a:Ljava/lang/ref/WeakReference;
+    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$c;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -86,17 +86,17 @@
 
     if-eqz v2, :cond_0
 
-    new-array v7, v5, [Lbe/g;
+    new-array v7, v5, [Lae/d;
 
     .line 4
-    new-instance v8, Lbe/g;
+    new-instance v8, Lae/d;
 
-    invoke-direct {v8, v3, p1}, Lbe/g;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v8, v3, p1}, Lae/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     aput-object v8, v7, v4
 
     .line 5
-    invoke-static {v2, v6, v7, v0}, Lqd/e0;->j(Landroid/widget/TextView;Ljava/lang/String;[Lbe/g;Lke/l;)V
+    invoke-static {v2, v6, v7, v0}, Lpd/d0;->k(Landroid/widget/TextView;Ljava/lang/String;[Lae/d;Lke/l;)V
 
     .line 6
     :cond_0
@@ -108,21 +108,21 @@
 
     check-cast v0, Lcom/supercell/id/view/SubPageTabLayout;
 
-    new-array v1, v5, [Lbe/g;
+    new-array v1, v5, [Lae/d;
 
     .line 7
-    new-instance v2, Lbe/g;
+    new-instance v2, Lae/d;
 
-    invoke-direct {v2, v3, p1}, Lbe/g;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v2, v3, p1}, Lae/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     aput-object v2, v1, v4
 
     .line 8
-    invoke-static {v0, v6, v1}, Lwd/y1;->b(Landroid/view/View;Ljava/lang/String;[Lbe/g;)V
+    invoke-static {v0, v6, v1}, Lvd/z1;->b(Landroid/view/View;Ljava/lang/String;[Lae/d;)V
 
     .line 9
     :cond_1
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -130,7 +130,7 @@
     const-string p1, "it"
 
     .line 10
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

@@ -789,7 +789,7 @@
 
     .line 3
     :cond_0
-    new-instance v0, Lp0/k;
+    new-instance v0, Lp0/i;
 
     .line 4
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
@@ -802,7 +802,7 @@
 
     const-string v3, "android.media.session.MediaController"
 
-    invoke-direct {v0, v3, v1, v2}, Lp0/k;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v3, v1, v2}, Lp0/i;-><init>(Ljava/lang/String;II)V
 
     .line 5
     iget-object v1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase$MediaSessionStub;->this$0:Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;

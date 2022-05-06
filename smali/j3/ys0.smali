@@ -1,439 +1,504 @@
 .class public final Lj3/ys0;
-.super Lj3/hq0;
+.super Ljava/util/LinkedHashMap;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
-
-# interfaces
-.implements Ljava/util/RandomAccess;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<E:",
+        "<K:",
+        "Ljava/lang/Object;",
+        "V:",
         "Ljava/lang/Object;",
         ">",
-        "Lj3/hq0<",
-        "TE;>;",
-        "Ljava/util/RandomAccess;"
+        "Ljava/util/LinkedHashMap<",
+        "TK;TV;>;"
     }
 .end annotation
 
 
 # static fields
-.field public static final i:Lj3/ys0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/ys0<",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final h:Lj3/ys0;
 
 
 # instance fields
-.field public b:[Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "[TE;"
-        }
-    .end annotation
-.end field
-
-.field public h:I
+.field public g:Z
 
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 3
-
-    .line 1
-    new-instance v0, Lj3/ys0;
-
-    const/4 v1, 0x0
-
-    new-array v2, v1, [Ljava/lang/Object;
-
-    invoke-direct {v0, v2, v1}, Lj3/ys0;-><init>([Ljava/lang/Object;I)V
-
-    .line 2
-    sput-object v0, Lj3/ys0;->i:Lj3/ys0;
-
-    .line 3
-    iput-boolean v1, v0, Lj3/hq0;->a:Z
-
-    return-void
-.end method
-
-.method public constructor <init>([Ljava/lang/Object;I)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "([TE;I)V"
-        }
-    .end annotation
-
-    .line 1
-    invoke-direct {p0}, Lj3/hq0;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lj3/ys0;->b:[Ljava/lang/Object;
-
-    .line 3
-    iput p2, p0, Lj3/ys0;->h:I
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final synthetic D(I)Lj3/tr0;
     .locals 2
 
     .line 1
-    iget v0, p0, Lj3/ys0;->h:I
-
-    if-lt p1, v0, :cond_0
-
-    .line 2
-    iget-object v0, p0, Lj3/ys0;->b:[Ljava/lang/Object;
-
-    invoke-static {v0, p1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
-
-    move-result-object p1
-
-    .line 3
     new-instance v0, Lj3/ys0;
 
-    iget v1, p0, Lj3/ys0;->h:I
+    invoke-direct {v0}, Lj3/ys0;-><init>()V
 
-    invoke-direct {v0, p1, v1}, Lj3/ys0;-><init>([Ljava/lang/Object;I)V
+    .line 2
+    sput-object v0, Lj3/ys0;->h:Lj3/ys0;
 
-    return-object v0
+    const/4 v1, 0x0
 
-    .line 4
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
+    .line 3
+    iput-boolean v1, v0, Lj3/ys0;->g:Z
 
-    invoke-direct {p1}, Ljava/lang/IllegalArgumentException;-><init>()V
-
-    throw p1
+    return-void
 .end method
 
-.method public final add(ILjava/lang/Object;)V
-    .locals 5
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/util/LinkedHashMap;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 2
+    iput-boolean v0, p0, Lj3/ys0;->g:Z
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/Map;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(ITE;)V"
+            "(",
+            "Ljava/util/Map<",
+            "TK;TV;>;)V"
         }
     .end annotation
 
-    .line 8
-    invoke-virtual {p0}, Lj3/hq0;->a()V
+    .line 3
+    invoke-direct {p0, p1}, Ljava/util/LinkedHashMap;-><init>(Ljava/util/Map;)V
 
-    if-ltz p1, :cond_1
+    const/4 p1, 0x1
 
-    .line 9
-    iget v0, p0, Lj3/ys0;->h:I
+    .line 4
+    iput-boolean p1, p0, Lj3/ys0;->g:Z
 
-    if-gt p1, v0, :cond_1
+    return-void
+.end method
 
-    .line 10
-    iget-object v1, p0, Lj3/ys0;->b:[Ljava/lang/Object;
+.method public static a(Ljava/lang/Object;)I
+    .locals 5
 
-    array-length v2, v1
+    .line 1
+    instance-of v0, p0, [B
 
-    if-ge v0, v2, :cond_0
+    if-eqz v0, :cond_2
 
-    add-int/lit8 v2, p1, 0x1
+    .line 2
+    check-cast p0, [B
 
-    sub-int/2addr v0, p1
+    sget-object v0, Lj3/bs0;->a:Ljava/nio/charset/Charset;
 
-    .line 11
-    invoke-static {v1, p1, v1, v2, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    .line 3
+    array-length v0, p0
+
+    const/4 v1, 0x0
+
+    move v3, v0
+
+    const/4 v2, 0x0
+
+    :goto_0
+    add-int v4, v1, v0
+
+    if-ge v2, v4, :cond_0
+
+    mul-int/lit8 v3, v3, 0x1f
+
+    .line 4
+    aget-byte v4, p0, v2
+
+    add-int/2addr v3, v4
+
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
     :cond_0
-    const/4 v2, 0x3
-
-    const/4 v3, 0x2
-
-    const/4 v4, 0x1
-
-    invoke-static {v0, v2, v3, v4}, Landroid/support/v4/media/a;->a(IIII)I
-
-    move-result v0
-
-    .line 12
-    new-array v0, v0, [Ljava/lang/Object;
-
-    const/4 v2, 0x0
-
-    .line 13
-    invoke-static {v1, v2, v0, v2, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 14
-    iget-object v1, p0, Lj3/ys0;->b:[Ljava/lang/Object;
-
-    add-int/lit8 v2, p1, 0x1
-
-    iget v3, p0, Lj3/ys0;->h:I
-
-    sub-int/2addr v3, p1
-
-    invoke-static {v1, p1, v0, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 15
-    iput-object v0, p0, Lj3/ys0;->b:[Ljava/lang/Object;
-
-    .line 16
-    :goto_0
-    iget-object v0, p0, Lj3/ys0;->b:[Ljava/lang/Object;
-
-    aput-object p2, v0, p1
-
-    .line 17
-    iget p1, p0, Lj3/ys0;->h:I
-
-    add-int/lit8 p1, p1, 0x1
-
-    iput p1, p0, Lj3/ys0;->h:I
-
-    .line 18
-    iget p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    add-int/lit8 p1, p1, 0x1
-
-    iput p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    return-void
-
-    .line 19
-    :cond_1
-    new-instance p2, Ljava/lang/IndexOutOfBoundsException;
-
-    invoke-virtual {p0, p1}, Lj3/ys0;->c(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p2, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
-
-    throw p2
-.end method
-
-.method public final add(Ljava/lang/Object;)Z
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TE;)Z"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Lj3/hq0;->a()V
-
-    .line 2
-    iget v0, p0, Lj3/ys0;->h:I
-
-    iget-object v1, p0, Lj3/ys0;->b:[Ljava/lang/Object;
-
-    array-length v2, v1
+    if-nez v3, :cond_1
 
     const/4 v3, 0x1
 
-    if-ne v0, v2, :cond_0
-
-    mul-int/lit8 v0, v0, 0x3
-
-    .line 3
-    div-int/lit8 v0, v0, 0x2
-
-    add-int/2addr v0, v3
-
-    .line 4
-    invoke-static {v1, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
-
-    move-result-object v0
+    :cond_1
+    return v3
 
     .line 5
-    iput-object v0, p0, Lj3/ys0;->b:[Ljava/lang/Object;
+    :cond_2
+    instance-of v0, p0, Lj3/ds0;
+
+    if-nez v0, :cond_3
 
     .line 6
-    :cond_0
-    iget-object v0, p0, Lj3/ys0;->b:[Ljava/lang/Object;
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
-    iget v1, p0, Lj3/ys0;->h:I
+    move-result p0
 
-    add-int/lit8 v2, v1, 0x1
-
-    iput v2, p0, Lj3/ys0;->h:I
-
-    aput-object p1, v0, v1
+    return p0
 
     .line 7
-    iget p1, p0, Ljava/util/AbstractList;->modCount:I
+    :cond_3
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
-    add-int/2addr p1, v3
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    iput p1, p0, Ljava/util/AbstractList;->modCount:I
+    goto :goto_2
 
-    return v3
+    :goto_1
+    throw p0
+
+    :goto_2
+    goto :goto_1
 .end method
 
-.method public final b(I)V
+
+# virtual methods
+.method public final b()V
     .locals 1
 
-    if-ltz p1, :cond_0
-
     .line 1
-    iget v0, p0, Lj3/ys0;->h:I
+    iget-boolean v0, p0, Lj3/ys0;->g:Z
 
-    if-ge p1, v0, :cond_0
+    if-eqz v0, :cond_0
 
     return-void
 
     .line 2
     :cond_0
-    new-instance v0, Ljava/lang/IndexOutOfBoundsException;
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    invoke-virtual {p0, p1}, Lj3/ys0;->c(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     throw v0
 .end method
 
-.method public final c(I)Ljava/lang/String;
+.method public final clear()V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Lj3/ys0;->b()V
+
+    .line 2
+    invoke-super {p0}, Ljava/util/LinkedHashMap;->clear()V
+
+    return-void
+.end method
+
+.method public final entrySet()Ljava/util/Set;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Set<",
+            "Ljava/util/Map$Entry<",
+            "TK;TV;>;>;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Ljava/util/LinkedHashMap;->isEmpty()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_0
+    invoke-super {p0}, Ljava/util/LinkedHashMap;->entrySet()Ljava/util/Set;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 6
+
+    .line 1
+    instance-of v0, p1, Ljava/util/Map;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_5
+
+    check-cast p1, Ljava/util/Map;
+
+    const/4 v0, 0x1
+
+    if-eq p0, p1, :cond_4
+
+    .line 2
+    invoke-virtual {p0}, Ljava/util/HashMap;->size()I
+
+    move-result v2
+
+    invoke-interface {p1}, Ljava/util/Map;->size()I
+
+    move-result v3
+
+    if-eq v2, v3, :cond_0
+
+    :goto_0
+    const/4 p1, 0x0
+
+    goto :goto_2
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0}, Lj3/ys0;->entrySet()Ljava/util/Set;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :cond_1
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_4
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/util/Map$Entry;
+
+    .line 4
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v4
+
+    invoke-interface {p1, v4}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_2
+
+    goto :goto_0
+
+    .line 5
+    :cond_2
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v4
+
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-interface {p1, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    .line 6
+    instance-of v5, v4, [B
+
+    if-eqz v5, :cond_3
+
+    instance-of v5, v3, [B
+
+    if-eqz v5, :cond_3
+
+    .line 7
+    check-cast v4, [B
+
+    check-cast v3, [B
+
+    invoke-static {v4, v3}, Ljava/util/Arrays;->equals([B[B)Z
+
+    move-result v3
+
+    goto :goto_1
+
+    .line 8
+    :cond_3
+    invoke-virtual {v4, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    :goto_1
+    if-nez v3, :cond_1
+
+    goto :goto_0
+
+    :cond_4
+    const/4 p1, 0x1
+
+    :goto_2
+    if-eqz p1, :cond_5
+
+    return v0
+
+    :cond_5
+    return v1
+.end method
+
+.method public final hashCode()I
     .locals 4
 
     .line 1
-    iget v0, p0, Lj3/ys0;->h:I
+    invoke-virtual {p0}, Lj3/ys0;->entrySet()Ljava/util/Set;
 
-    const/16 v1, 0x23
+    move-result-object v0
 
-    const-string v2, "Index:"
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    const-string v3, ", Size:"
+    move-result-object v0
 
-    invoke-static {v1, v2, p1, v3, v0}, Ld2/a;->a(ILjava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
+    const/4 v1, 0x0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/util/Map$Entry;
+
+    .line 2
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lj3/ys0;->a(Ljava/lang/Object;)I
+
+    move-result v3
+
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lj3/ys0;->a(Ljava/lang/Object;)I
+
+    move-result v2
+
+    xor-int/2addr v2, v3
+
+    add-int/2addr v1, v2
+
+    goto :goto_0
+
+    :cond_0
+    return v1
+.end method
+
+.method public final put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TK;TV;)TV;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lj3/ys0;->b()V
+
+    .line 2
+    sget-object v0, Lj3/bs0;->a:Ljava/nio/charset/Charset;
+
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 5
+    invoke-super {p0, p1, p2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final get(I)Ljava/lang/Object;
-    .locals 1
+.method public final putAll(Ljava/util/Map;)V
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(I)TE;"
+            "(",
+            "Ljava/util/Map<",
+            "+TK;+TV;>;)V"
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Lj3/ys0;->b(I)V
+    invoke-virtual {p0}, Lj3/ys0;->b()V
 
     .line 2
-    iget-object v0, p0, Lj3/ys0;->b:[Ljava/lang/Object;
+    invoke-interface {p1}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
-    aget-object p1, v0, p1
+    move-result-object v0
 
-    return-object p1
-.end method
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-.method public final remove(I)Ljava/lang/Object;
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I)TE;"
-        }
-    .end annotation
+    move-result-object v0
 
-    .line 1
-    invoke-virtual {p0}, Lj3/hq0;->a()V
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 2
-    invoke-virtual {p0, p1}, Lj3/ys0;->b(I)V
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
 
     .line 3
-    iget-object v0, p0, Lj3/ys0;->b:[Ljava/lang/Object;
-
-    aget-object v1, v0, p1
+    sget-object v2, Lj3/bs0;->a:Ljava/nio/charset/Charset;
 
     .line 4
-    iget v2, p0, Lj3/ys0;->h:I
-
-    add-int/lit8 v3, v2, -0x1
-
-    if-ge p1, v3, :cond_0
-
-    add-int/lit8 v3, p1, 0x1
-
-    sub-int/2addr v2, p1
-
-    add-int/lit8 v2, v2, -0x1
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 5
-    invoke-static {v0, v3, v0, p1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
 
     .line 6
-    :cond_0
-    iget p1, p0, Lj3/ys0;->h:I
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    add-int/lit8 p1, p1, -0x1
-
-    iput p1, p0, Lj3/ys0;->h:I
+    goto :goto_0
 
     .line 7
-    iget p1, p0, Ljava/util/AbstractList;->modCount:I
+    :cond_0
+    invoke-super {p0, p1}, Ljava/util/LinkedHashMap;->putAll(Ljava/util/Map;)V
 
-    add-int/lit8 p1, p1, 0x1
-
-    iput p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    return-object v1
+    return-void
 .end method
 
-.method public final set(ILjava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final remove(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(ITE;)TE;"
+            "(",
+            "Ljava/lang/Object;",
+            ")TV;"
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lj3/hq0;->a()V
+    invoke-virtual {p0}, Lj3/ys0;->b()V
 
     .line 2
-    invoke-virtual {p0, p1}, Lj3/ys0;->b(I)V
+    invoke-super {p0, p1}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
-    iget-object v0, p0, Lj3/ys0;->b:[Ljava/lang/Object;
+    move-result-object p1
 
-    aget-object v1, v0, p1
-
-    .line 4
-    aput-object p2, v0, p1
-
-    .line 5
-    iget p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    add-int/lit8 p1, p1, 0x1
-
-    iput p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    return-object v1
-.end method
-
-.method public final size()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lj3/ys0;->h:I
-
-    return v0
+    return-object p1
 .end method

@@ -1,136 +1,206 @@
 .class public Lra/n;
-.super Ljava/lang/Object;
-.source "AdminSuggestionsMessageViewDataBinder.java"
+.super Landroidx/recyclerview/widget/RecyclerView$e;
+.source "SmartIntentsListAdapter.java"
 
-# interfaces
-.implements Landroid/view/View$OnClickListener;
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lra/n$c;,
+        Lra/n$b;,
+        Lra/n$a;,
+        Lra/n$d;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroidx/recyclerview/widget/RecyclerView$e<",
+        "Lra/n$d;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:Lm8/u;
+.field public c:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "La9/a;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final synthetic b:Lm8/u$a;
-
-.field public final synthetic h:Lra/p;
+.field public d:Lra/n$c;
 
 
 # direct methods
-.method public constructor <init>(Lra/p;Lm8/u;Lm8/u$a;)V
+.method public constructor <init>(Ljava/util/List;Lra/n$c;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "La9/a;",
+            ">;",
+            "Lra/n$c;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    iput-object p1, p0, Lra/n;->h:Lra/p;
+    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$e;-><init>()V
 
-    iput-object p2, p0, Lra/n;->a:Lm8/u;
+    .line 2
+    iput-object p1, p0, Lra/n;->c:Ljava/util/List;
 
-    iput-object p3, p0, Lra/n;->b:Lm8/u$a;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 3
+    iput-object p2, p0, Lra/n;->d:Lra/n$c;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 7
+.method public b()I
+    .locals 1
 
     .line 1
-    iget-object p1, p0, Lra/n;->h:Lra/p;
+    iget-object v0, p0, Lra/n;->c:Ljava/util/List;
 
-    iget-object p1, p1, Lra/v;->b:Lra/v$a;
+    invoke-interface {v0}, Ljava/util/List;->size()I
 
-    iget-object v0, p0, Lra/n;->a:Lm8/u;
+    move-result v0
 
-    iget-object v1, p0, Lra/n;->b:Lm8/u$a;
+    return v0
+.end method
 
-    iget-object v2, v1, Lm8/u$a;->b:Ljava/lang/String;
+.method public d(I)I
+    .locals 1
 
-    iget-object v1, v1, Lm8/u$a;->h:Ljava/lang/String;
+    .line 1
+    iget-object v0, p0, Lra/n;->c:Ljava/util/List;
 
-    .line 2
-    check-cast p1, Lqa/p0;
-
-    .line 3
-    iget-object p1, p1, Lqa/p0;->e:Lra/y;
-
-    if-eqz p1, :cond_0
-
-    .line 4
-    check-cast p1, Lqa/k;
-
-    .line 5
-    invoke-virtual {p1}, Lqa/b;->b1()Lpa/b;
-
-    move-result-object v3
-
-    iget-object v4, v0, Lm8/u;->C:Ljava/lang/String;
-
-    new-instance v5, Lqa/h;
-
-    invoke-direct {v5, p1, v0, v2}, Lqa/h;-><init>(Lqa/k;Lm8/u;Ljava/lang/String;)V
-
-    .line 6
-    iget-object p1, v3, Lpa/b;->a:Landroid/content/Context;
-
-    invoke-static {p1}, Lib/f;->d(Landroid/content/Context;)Z
-
-    move-result p1
-
-    .line 7
-    iget-object v0, v3, Lpa/b;->c:Landroid/os/Bundle;
-
-    const-string v6, "questionPublishId"
-
-    invoke-virtual {v0, v6, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 8
-    iget-object v0, v3, Lpa/b;->c:Landroid/os/Bundle;
-
-    const-string v2, "questionLanguage"
-
-    invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 9
-    iget-object v0, v3, Lpa/b;->c:Landroid/os/Bundle;
-
-    const-string v1, "questionSource"
-
-    invoke-virtual {v0, v1, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 10
-    new-instance v0, Landroid/os/Bundle;
-
-    iget-object v1, v3, Lpa/b;->c:Landroid/os/Bundle;
-
-    invoke-direct {v0, v1}, Landroid/os/Bundle;-><init>(Landroid/os/Bundle;)V
-
-    const/4 v1, 0x1
-
-    const-string v2, "decomp"
-
-    .line 11
-    invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-
-    .line 12
-    iget-object v1, v3, Lpa/b;->d:Landroidx/fragment/app/FragmentManager;
-
-    sget v2, Lcom/helpshift/R$id;->flow_fragment_container:I
-
-    const/4 v3, 0x3
-
-    .line 13
-    invoke-static {v0, v3, p1, v5}, Lbb/o;->c1(Landroid/os/Bundle;IZLbb/o$b;)Lbb/o;
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
-    const/4 v0, 0x0
+    check-cast p1, La9/a;
 
-    const/4 v3, 0x0
+    .line 2
+    invoke-virtual {p1}, La9/a;->a()I
 
-    .line 14
-    invoke-static {v1, v2, p1, v0, v3}, Lcom/google/android/gms/ads/s;->y(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;Z)V
+    move-result p1
+
+    invoke-static {p1}, Lp/g;->b(I)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public f(Landroidx/recyclerview/widget/RecyclerView$z;I)V
+    .locals 1
+
+    .line 1
+    check-cast p1, Lra/n$d;
+
+    .line 2
+    iget-object v0, p0, Lra/n;->c:Ljava/util/List;
+
+    invoke-interface {v0, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, La9/a;
+
+    .line 3
+    iget-object v0, p0, Lra/n;->d:Lra/n$c;
+
+    invoke-virtual {p1, p2, v0}, Lra/n$d;->w(La9/a;Lra/n$c;)V
+
+    return-void
+.end method
+
+.method public g(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$z;
+    .locals 3
+
+    .line 1
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    if-nez p2, :cond_0
+
+    .line 2
+    new-instance p2, Lra/n$a;
+
+    sget v2, Lcom/helpshift/R$layout;->hs__list_item_smart_intent:I
+
+    invoke-virtual {v0, v2, p1, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p1
+
+    invoke-direct {p2, p0, p1}, Lra/n$a;-><init>(Lra/n;Landroid/view/View;)V
+
+    goto :goto_0
 
     :cond_0
-    return-void
+    const/4 v2, 0x1
+
+    if-ne p2, v2, :cond_1
+
+    .line 3
+    new-instance p2, Lra/n$d;
+
+    sget v2, Lcom/helpshift/R$layout;->hs__list_item_leaf_intent:I
+
+    invoke-virtual {v0, v2, p1, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p1
+
+    invoke-direct {p2, p0, p1}, Lra/n$d;-><init>(Lra/n;Landroid/view/View;)V
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v2, 0x2
+
+    if-ne p2, v2, :cond_2
+
+    .line 4
+    new-instance p2, Lra/n$b;
+
+    sget v2, Lcom/helpshift/R$layout;->hs__list_item_search_intent:I
+
+    invoke-virtual {v0, v2, p1, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p1
+
+    invoke-direct {p2, p0, p1}, Lra/n$b;-><init>(Lra/n;Landroid/view/View;)V
+
+    :goto_0
+    return-object p2
+
+    .line 5
+    :cond_2
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string v0, "Unknown smart intent type : "
+
+    invoke-static {v0, p2}, Landroid/support/v4/media/c;->a(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method

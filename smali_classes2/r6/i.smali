@@ -30,7 +30,7 @@
 
     .line 2
     :cond_0
-    sget-object v0, Lc6/d;->POSSIBLE_FORMATS:Lc6/d;
+    sget-object v0, Lc6/d;->i:Lc6/d;
 
     .line 3
     invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -48,7 +48,7 @@
     if-eqz p1, :cond_4
 
     .line 5
-    sget-object v1, Lc6/a;->EAN_13:Lc6/a;
+    sget-object v1, Lc6/a;->n:Lc6/a;
 
     invoke-interface {p1, v1}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
@@ -67,7 +67,7 @@
 
     .line 7
     :cond_1
-    sget-object v1, Lc6/a;->UPC_A:Lc6/a;
+    sget-object v1, Lc6/a;->u:Lc6/a;
 
     invoke-interface {p1, v1}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
@@ -85,7 +85,7 @@
     .line 9
     :cond_2
     :goto_1
-    sget-object v1, Lc6/a;->EAN_8:Lc6/a;
+    sget-object v1, Lc6/a;->m:Lc6/a;
 
     invoke-interface {p1, v1}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
@@ -102,7 +102,7 @@
 
     .line 11
     :cond_3
-    sget-object v1, Lc6/a;->UPC_E:Lc6/a;
+    sget-object v1, Lc6/a;->v:Lc6/a;
 
     invoke-interface {p1, v1}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
@@ -168,7 +168,7 @@
 
 # virtual methods
 .method public c(ILj6/a;Ljava/util/Map;)Lc6/j;
-    .locals 11
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -187,157 +187,147 @@
     .end annotation
 
     .line 1
+    sget-object v0, Lc6/a;->u:Lc6/a;
+
     invoke-static {p2}, Lr6/o;->n(Lj6/a;)[I
 
-    move-result-object v0
+    move-result-object v1
 
     .line 2
-    iget-object v1, p0, Lr6/i;->a:[Lr6/o;
+    iget-object v2, p0, Lr6/i;->a:[Lr6/o;
 
-    array-length v2, v1
-
-    const/4 v3, 0x0
+    array-length v3, v2
 
     const/4 v4, 0x0
 
-    :goto_0
-    if-ge v4, v2, :cond_5
+    const/4 v5, 0x0
 
-    aget-object v5, v1, v4
+    :goto_0
+    if-ge v5, v3, :cond_5
+
+    aget-object v6, v2, v5
 
     .line 3
     :try_start_0
-    invoke-virtual {v5, p1, p2, v0, p3}, Lr6/o;->l(ILj6/a;[ILjava/util/Map;)Lc6/j;
+    invoke-virtual {v6, p1, p2, v1, p3}, Lr6/o;->l(ILj6/a;[ILjava/util/Map;)Lc6/j;
 
-    move-result-object v5
+    move-result-object p1
+    :try_end_0
+    .catch Lcom/google/zxing/ReaderException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 4
-    iget-object v6, v5, Lc6/j;->d:Lc6/a;
+    iget-object p2, p1, Lc6/j;->d:Lc6/a;
 
     .line 5
-    sget-object v7, Lc6/a;->EAN_13:Lc6/a;
+    sget-object v1, Lc6/a;->n:Lc6/a;
 
-    const/4 v8, 0x1
+    const/4 v2, 0x1
 
-    if-ne v6, v7, :cond_0
+    if-ne p2, v1, :cond_0
 
     .line 6
-    iget-object v6, v5, Lc6/j;->a:Ljava/lang/String;
+    iget-object p2, p1, Lc6/j;->a:Ljava/lang/String;
 
     .line 7
-    invoke-virtual {v6, v3}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {p2, v4}, Ljava/lang/String;->charAt(I)C
 
-    move-result v6
+    move-result p2
 
-    const/16 v7, 0x30
+    const/16 v1, 0x30
 
-    if-ne v6, v7, :cond_0
+    if-ne p2, v1, :cond_0
 
-    const/4 v6, 0x1
+    const/4 p2, 0x1
 
     goto :goto_1
 
     :cond_0
-    const/4 v6, 0x0
+    const/4 p2, 0x0
 
     :goto_1
     if-nez p3, :cond_1
 
-    const/4 v7, 0x0
+    const/4 p3, 0x0
 
     goto :goto_2
 
     .line 8
     :cond_1
-    sget-object v7, Lc6/d;->POSSIBLE_FORMATS:Lc6/d;
+    sget-object v1, Lc6/d;->i:Lc6/d;
 
     .line 9
-    invoke-interface {p3, v7}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p3, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v7
+    move-result-object p3
 
-    check-cast v7, Ljava/util/Collection;
+    check-cast p3, Ljava/util/Collection;
 
     :goto_2
-    if-eqz v7, :cond_3
+    if-eqz p3, :cond_2
 
     .line 10
-    sget-object v9, Lc6/a;->UPC_A:Lc6/a;
+    invoke-interface {p3, v0}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
-    invoke-interface {v7, v9}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
+    move-result p3
 
-    move-result v7
-
-    if-eqz v7, :cond_2
-
-    goto :goto_3
+    if-eqz p3, :cond_3
 
     :cond_2
-    const/4 v7, 0x0
-
-    goto :goto_4
+    const/4 v4, 0x1
 
     :cond_3
-    :goto_3
-    const/4 v7, 0x1
+    if-eqz p2, :cond_4
 
-    :goto_4
-    if-eqz v6, :cond_4
-
-    if-eqz v7, :cond_4
+    if-eqz v4, :cond_4
 
     .line 11
-    new-instance v6, Lc6/j;
+    new-instance p2, Lc6/j;
 
     .line 12
-    iget-object v7, v5, Lc6/j;->a:Ljava/lang/String;
+    iget-object p3, p1, Lc6/j;->a:Ljava/lang/String;
 
     .line 13
-    invoke-virtual {v7, v8}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    invoke-virtual {p3, v2}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object p3
 
     .line 14
-    iget-object v8, v5, Lc6/j;->b:[B
+    iget-object v1, p1, Lc6/j;->b:[B
 
     .line 15
-    iget-object v9, v5, Lc6/j;->c:[Lc6/l;
+    iget-object v2, p1, Lc6/j;->c:[Lc6/l;
 
     .line 16
-    sget-object v10, Lc6/a;->UPC_A:Lc6/a;
-
-    invoke-direct {v6, v7, v8, v9, v10}, Lc6/j;-><init>(Ljava/lang/String;[B[Lc6/l;Lc6/a;)V
+    invoke-direct {p2, p3, v1, v2, v0}, Lc6/j;-><init>(Ljava/lang/String;[B[Lc6/l;Lc6/a;)V
 
     .line 17
-    iget-object v5, v5, Lc6/j;->e:Ljava/util/Map;
+    iget-object p1, p1, Lc6/j;->e:Ljava/util/Map;
 
     .line 18
-    invoke-virtual {v6, v5}, Lc6/j;->a(Ljava/util/Map;)V
-    :try_end_0
-    .catch Lcom/google/zxing/ReaderException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p2, p1}, Lc6/j;->a(Ljava/util/Map;)V
 
-    return-object v6
+    return-object p2
 
     :cond_4
-    return-object v5
+    return-object p1
 
     :catch_0
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v5, v5, 0x1
 
     goto :goto_0
 
     .line 19
     :cond_5
-    sget-object p1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 20
-    goto :goto_6
+    goto :goto_4
 
-    :goto_5
+    :goto_3
     throw p1
 
-    :goto_6
-    goto :goto_5
+    :goto_4
+    goto :goto_3
 .end method
 
 .method public reset()V

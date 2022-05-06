@@ -15,10 +15,10 @@
 
 
 # virtual methods
-.method public abstract a(Lp/g;)V
+.method public abstract a(Lp/h;)V
 .end method
 
-.method public abstract b(Lp/d;[Z)Lp/g;
+.method public abstract b(Lp/d;[Z)Lp/h;
 .end method
 
 .method public abstract clear()V

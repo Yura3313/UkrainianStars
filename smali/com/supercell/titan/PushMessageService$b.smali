@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/titan/PushMessageService;
+.field public final synthetic g:Lcom/supercell/titan/PushMessageService;
 
-.field public final synthetic b:Ljava/util/Map;
+.field public final synthetic h:Ljava/util/Map;
 
 
 # direct methods
@@ -28,9 +28,9 @@
     .locals 0
 
     .line 1
-    iput-object p2, p0, Lcom/supercell/titan/PushMessageService$b;->a:Lcom/supercell/titan/PushMessageService;
+    iput-object p2, p0, Lcom/supercell/titan/PushMessageService$b;->g:Lcom/supercell/titan/PushMessageService;
 
-    iput-object p3, p0, Lcom/supercell/titan/PushMessageService$b;->b:Ljava/util/Map;
+    iput-object p3, p0, Lcom/supercell/titan/PushMessageService$b;->h:Ljava/util/Map;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,9 +43,9 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/PushMessageService$b;->a:Lcom/supercell/titan/PushMessageService;
+    iget-object v0, p0, Lcom/supercell/titan/PushMessageService$b;->g:Lcom/supercell/titan/PushMessageService;
 
-    iget-object v1, p0, Lcom/supercell/titan/PushMessageService$b;->b:Ljava/util/Map;
+    iget-object v1, p0, Lcom/supercell/titan/PushMessageService$b;->h:Ljava/util/Map;
 
     if-eqz v1, :cond_2
 

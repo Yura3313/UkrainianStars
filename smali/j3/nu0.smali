@@ -1,29 +1,23 @@
 .class public final Lj3/nu0;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
+.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 # interfaces
-.implements Lj3/qr0;
+.implements Ljava/security/PrivilegedExceptionAction;
 
 
-# static fields
-.field public static final a:Lj3/qr0;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/security/PrivilegedExceptionAction<",
+        "Lsun/misc/Unsafe;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lj3/nu0;
-
-    invoke-direct {v0}, Lj3/nu0;-><init>()V
-
-    sput-object v0, Lj3/nu0;->a:Lj3/qr0;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
     .locals 0
 
@@ -35,22 +29,64 @@
 
 
 # virtual methods
-.method public final a(I)Z
-    .locals 0
+.method public final synthetic run()Ljava/lang/Object;
+    .locals 7
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
 
     .line 1
-    invoke-static {p1}, Lj3/lu0;->zzht(I)Lj3/lu0;
+    const-class v0, Lsun/misc/Unsafe;
 
-    move-result-object p1
+    .line 2
+    invoke-virtual {v0}, Ljava/lang/Class;->getDeclaredFields()[Ljava/lang/reflect/Field;
 
-    if-eqz p1, :cond_0
+    move-result-object v1
 
-    const/4 p1, 0x1
+    array-length v2, v1
 
-    return p1
+    const/4 v3, 0x0
+
+    :goto_0
+    const/4 v4, 0x0
+
+    if-ge v3, v2, :cond_1
+
+    aget-object v5, v1, v3
+
+    const/4 v6, 0x1
+
+    .line 3
+    invoke-virtual {v5, v6}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+
+    .line 4
+    invoke-virtual {v5, v4}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    .line 5
+    invoke-virtual {v0, v4}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    .line 6
+    invoke-virtual {v0, v4}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lsun/misc/Unsafe;
+
+    return-object v0
 
     :cond_0
-    const/4 p1, 0x0
+    add-int/lit8 v3, v3, 0x1
 
-    return p1
+    goto :goto_0
+
+    :cond_1
+    return-object v4
 .end method

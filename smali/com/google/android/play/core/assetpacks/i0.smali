@@ -3,13 +3,13 @@
 
 
 # instance fields
-.field public a:[B
+.field public g:[B
 
-.field public b:J
-
-.field public h:Z
+.field public h:J
 
 .field public i:Z
+
+.field public j:Z
 
 
 # direct methods
@@ -22,13 +22,13 @@
 
     new-array p1, p1, [B
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/i0;->a:[B
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/i0;->g:[B
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/google/android/play/core/assetpacks/i0;->h:Z
-
     iput-boolean p1, p0, Lcom/google/android/play/core/assetpacks/i0;->i:Z
+
+    iput-boolean p1, p0, Lcom/google/android/play/core/assetpacks/i0;->j:Z
 
     return-void
 .end method
@@ -64,7 +64,7 @@
         }
     .end annotation
 
-    iget-wide v0, p0, Lcom/google/android/play/core/assetpacks/i0;->b:J
+    iget-wide v0, p0, Lcom/google/android/play/core/assetpacks/i0;->h:J
 
     const/4 v2, 0x0
 
@@ -75,7 +75,7 @@
     if-lez v5, :cond_1
 
     :cond_0
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/i0;->a:[B
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/i0;->g:[B
 
     array-length v1, v0
 
@@ -88,15 +88,15 @@
     if-ne v0, v1, :cond_0
 
     :cond_1
-    iget-boolean v0, p0, Lcom/google/android/play/core/assetpacks/i0;->h:Z
-
-    if-nez v0, :cond_9
-
     iget-boolean v0, p0, Lcom/google/android/play/core/assetpacks/i0;->i:Z
 
     if-nez v0, :cond_9
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/i0;->a:[B
+    iget-boolean v0, p0, Lcom/google/android/play/core/assetpacks/i0;->j:Z
+
+    if-nez v0, :cond_9
+
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/i0;->g:[B
 
     const/16 v1, 0x1e
 
@@ -119,7 +119,7 @@
     goto :goto_0
 
     :cond_2
-    iput-boolean v0, p0, Lcom/google/android/play/core/assetpacks/i0;->h:Z
+    iput-boolean v0, p0, Lcom/google/android/play/core/assetpacks/i0;->i:Z
 
     const/4 v5, 0x0
 
@@ -139,7 +139,7 @@
 
     :cond_3
     :goto_0
-    iget-object v3, p0, Lcom/google/android/play/core/assetpacks/i0;->a:[B
+    iget-object v3, p0, Lcom/google/android/play/core/assetpacks/i0;->g:[B
 
     invoke-static {v3, v2}, Lcom/google/android/play/core/assetpacks/m1;->d([BI)J
 
@@ -151,7 +151,7 @@
 
     if-eqz v7, :cond_4
 
-    iput-boolean v0, p0, Lcom/google/android/play/core/assetpacks/i0;->i:Z
+    iput-boolean v0, p0, Lcom/google/android/play/core/assetpacks/i0;->j:Z
 
     const/4 v5, 0x0
 
@@ -170,7 +170,7 @@
     return-object v0
 
     :cond_4
-    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/i0;->a:[B
+    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/i0;->g:[B
 
     const/16 v3, 0x12
 
@@ -184,7 +184,7 @@
 
     if-eqz v2, :cond_8
 
-    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/i0;->a:[B
+    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/i0;->g:[B
 
     const/16 v4, 0x8
 
@@ -192,7 +192,7 @@
 
     move-result v9
 
-    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/i0;->a:[B
+    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/i0;->g:[B
 
     const/16 v4, 0x1a
 
@@ -206,7 +206,7 @@
 
     invoke-virtual {p0, v5, v6}, Lcom/google/android/play/core/assetpacks/i0;->d(J)V
 
-    iget-object v5, p0, Lcom/google/android/play/core/assetpacks/i0;->a:[B
+    iget-object v5, p0, Lcom/google/android/play/core/assetpacks/i0;->g:[B
 
     invoke-virtual {p0, v5, v1, v2}, Lcom/google/android/play/core/assetpacks/i0;->a([BII)I
 
@@ -227,7 +227,7 @@
     goto :goto_1
 
     :cond_5
-    iput-boolean v0, p0, Lcom/google/android/play/core/assetpacks/i0;->h:Z
+    iput-boolean v0, p0, Lcom/google/android/play/core/assetpacks/i0;->i:Z
 
     const/4 v0, 0x0
 
@@ -249,11 +249,11 @@
     :goto_1
     new-instance v6, Ljava/lang/String;
 
-    iget-object v5, p0, Lcom/google/android/play/core/assetpacks/i0;->a:[B
+    iget-object v5, p0, Lcom/google/android/play/core/assetpacks/i0;->g:[B
 
     invoke-direct {v6, v5, v1, v2}, Ljava/lang/String;-><init>([BII)V
 
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/i0;->a:[B
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/i0;->g:[B
 
     const/16 v2, 0x1c
 
@@ -267,7 +267,7 @@
 
     invoke-virtual {p0, v10, v11}, Lcom/google/android/play/core/assetpacks/i0;->d(J)V
 
-    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/i0;->a:[B
+    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/i0;->g:[B
 
     invoke-virtual {p0, v2, v4, v1}, Lcom/google/android/play/core/assetpacks/i0;->a([BII)I
 
@@ -285,7 +285,7 @@
 
     if-nez v1, :cond_7
 
-    iput-boolean v0, p0, Lcom/google/android/play/core/assetpacks/i0;->h:Z
+    iput-boolean v0, p0, Lcom/google/android/play/core/assetpacks/i0;->i:Z
 
     const/4 v0, 0x1
 
@@ -302,13 +302,13 @@
     return-object v0
 
     :cond_7
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/i0;->a:[B
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/i0;->g:[B
 
     invoke-static {v0, v3}, Lcom/google/android/play/core/assetpacks/m1;->d([BI)J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/google/android/play/core/assetpacks/i0;->b:J
+    iput-wide v0, p0, Lcom/google/android/play/core/assetpacks/i0;->h:J
 
     const/4 v10, 0x0
 
@@ -341,11 +341,11 @@
     const/4 v8, 0x0
 
     .line 1
-    new-instance v0, Lcom/google/android/play/core/assetpacks/f0;
+    new-instance v0, Lcom/google/android/play/core/assetpacks/g0;
 
     move-object v2, v0
 
-    invoke-direct/range {v2 .. v8}, Lcom/google/android/play/core/assetpacks/f0;-><init>(Ljava/lang/String;JIZ[B)V
+    invoke-direct/range {v2 .. v8}, Lcom/google/android/play/core/assetpacks/g0;-><init>(Ljava/lang/String;JIZ[B)V
 
     return-object v0
 .end method
@@ -353,14 +353,14 @@
 .method public final c(ILjava/lang/String;JIZ)Lcom/google/android/play/core/assetpacks/g2;
     .locals 8
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/i0;->a:[B
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/i0;->g:[B
 
     invoke-static {v0, p1}, Ljava/util/Arrays;->copyOf([BI)[B
 
     move-result-object v7
 
     .line 1
-    new-instance p1, Lcom/google/android/play/core/assetpacks/f0;
+    new-instance p1, Lcom/google/android/play/core/assetpacks/g0;
 
     move-object v1, p1
 
@@ -372,7 +372,7 @@
 
     move v6, p6
 
-    invoke-direct/range {v1 .. v7}, Lcom/google/android/play/core/assetpacks/f0;-><init>(Ljava/lang/String;JIZ[B)V
+    invoke-direct/range {v1 .. v7}, Lcom/google/android/play/core/assetpacks/g0;-><init>(Ljava/lang/String;JIZ[B)V
 
     return-object p1
 .end method
@@ -380,7 +380,7 @@
 .method public final d(J)V
     .locals 4
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/i0;->a:[B
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/i0;->g:[B
 
     array-length v0, v0
 
@@ -399,13 +399,13 @@
 
     if-ltz v3, :cond_0
 
-    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/i0;->a:[B
+    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/i0;->g:[B
 
     invoke-static {p1, v0}, Ljava/util/Arrays;->copyOf([BI)[B
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/i0;->a:[B
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/i0;->g:[B
 
     :cond_1
     return-void
@@ -419,7 +419,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/i0;->a:[B
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/i0;->g:[B
 
     invoke-virtual {p0, v0, p1, p2}, Lcom/google/android/play/core/assetpacks/i0;->a([BII)I
 
@@ -440,7 +440,7 @@
 .method public final f()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/google/android/play/core/assetpacks/i0;->h:Z
+    iget-boolean v0, p0, Lcom/google/android/play/core/assetpacks/i0;->i:Z
 
     return v0
 .end method
@@ -448,7 +448,7 @@
 .method public final g()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/google/android/play/core/assetpacks/i0;->i:Z
+    iget-boolean v0, p0, Lcom/google/android/play/core/assetpacks/i0;->j:Z
 
     return v0
 .end method
@@ -456,7 +456,7 @@
 .method public final h()J
     .locals 2
 
-    iget-wide v0, p0, Lcom/google/android/play/core/assetpacks/i0;->b:J
+    iget-wide v0, p0, Lcom/google/android/play/core/assetpacks/i0;->h:J
 
     return-wide v0
 .end method
@@ -488,7 +488,7 @@
         }
     .end annotation
 
-    iget-wide v0, p0, Lcom/google/android/play/core/assetpacks/i0;->b:J
+    iget-wide v0, p0, Lcom/google/android/play/core/assetpacks/i0;->h:J
 
     const-wide/16 v2, 0x0
 
@@ -496,7 +496,7 @@
 
     if-lez v4, :cond_1
 
-    iget-boolean v2, p0, Lcom/google/android/play/core/assetpacks/i0;->h:Z
+    iget-boolean v2, p0, Lcom/google/android/play/core/assetpacks/i0;->i:Z
 
     if-nez v2, :cond_1
 
@@ -520,19 +520,19 @@
     move-result p1
 
     .line 2
-    iget-wide v0, p0, Lcom/google/android/play/core/assetpacks/i0;->b:J
+    iget-wide v0, p0, Lcom/google/android/play/core/assetpacks/i0;->h:J
 
     int-to-long v2, p1
 
     sub-long/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/google/android/play/core/assetpacks/i0;->b:J
+    iput-wide v0, p0, Lcom/google/android/play/core/assetpacks/i0;->h:J
 
     if-nez p1, :cond_0
 
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Lcom/google/android/play/core/assetpacks/i0;->h:Z
+    iput-boolean p1, p0, Lcom/google/android/play/core/assetpacks/i0;->i:Z
 
     return p2
 

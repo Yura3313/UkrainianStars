@@ -1,33 +1,55 @@
 .class public Ld8/f;
-.super Ld8/h;
-.source "POSTRequest.java"
+.super Ljava/lang/Object;
+.source "AndroidHSNetworkMetadataDAO.java"
 
 
 # instance fields
-.field public final e:Ljava/lang/String;
+.field public final a:Lm9/c;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;I)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/util/List<",
-            "Ld8/c;",
-            ">;I)V"
-        }
-    .end annotation
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 2
 
     .line 1
-    sget-object v0, Ld8/d;->POST:Ld8/d;
-
-    invoke-direct {p0, v0, p1, p3, p4}, Ld8/h;-><init>(Ld8/d;Ljava/lang/String;Ljava/util/List;I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p2, p0, Ld8/f;->e:Ljava/lang/String;
+    const-class v0, Lm9/c;
+
+    monitor-enter v0
+
+    .line 3
+    :try_start_0
+    sget-object v1, Lm9/c;->h:Lm9/c;
+
+    if-nez v1, :cond_0
+
+    .line 4
+    new-instance v1, Lm9/c;
+
+    invoke-direct {v1, p1}, Lm9/c;-><init>(Landroid/content/Context;)V
+
+    sput-object v1, Lm9/c;->h:Lm9/c;
+
+    .line 5
+    :cond_0
+    sget-object p1, Lm9/c;->h:Lm9/c;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit v0
+
+    .line 6
+    iput-object p1, p0, Ld8/f;->a:Lm9/c;
 
     return-void
+
+    :catchall_0
+    move-exception p1
+
+    .line 7
+    monitor-exit v0
+
+    throw p1
 .end method

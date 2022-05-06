@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/authentication/AuthenticationFragment$b;
-.super Luc/g1;
+.super Lrc/g1;
 .source "AuthenticationFragment.kt"
 
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public o0:Ljava/util/HashMap;
+.field public p0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lce/z;->j(Ljava/lang/Object;)Ljava/util/Set;
+    invoke-static {v0}, Lbe/x;->d(Ljava/lang/Object;)Ljava/util/Set;
 
     return-void
 .end method
@@ -38,7 +38,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Luc/g1;-><init>()V
+    invoke-direct {p0}, Lrc/g1;-><init>()V
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 .method public W0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$b;->o0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$b;->p0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -78,7 +78,7 @@
     const-string p1, "inflater"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -88,7 +88,7 @@
 .method public synthetic i0()V
     .locals 0
 
-    invoke-super {p0}, Luc/g1;->i0()V
+    invoke-super {p0}, Lrc/g1;->i0()V
 
     invoke-virtual {p0}, Lcom/supercell/id/ui/authentication/AuthenticationFragment$b;->W0()V
 
@@ -148,7 +148,7 @@
     aput-object v1, p1, v0
 
     .line 2
-    invoke-static {p1}, Lce/g;->h([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p1}, Lbe/f;->d([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -180,7 +180,7 @@
 
     invoke-direct {v1, v0, p0}, Lcom/supercell/id/ui/authentication/AuthenticationFragment$b$a;-><init>(Landroid/view/View;Lcom/supercell/id/ui/authentication/AuthenticationFragment$b;)V
 
-    invoke-static {v0, v1}, Lwd/f2;->a(Landroid/view/View;Lke/l;)V
+    invoke-static {v0, v1}, Lvd/g2;->a(Landroid/view/View;Lke/l;)V
 
     goto :goto_0
 
@@ -198,9 +198,9 @@
 
     const-string v2, "resources"
 
-    invoke-static {v0, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0}, Landroidx/savedstate/d;->o(Landroid/content/res/Resources;)Z
+    invoke-static {v0}, Lcom/android/billingclient/api/a0;->i(Landroid/content/res/Resources;)Z
 
     move-result v0
 
@@ -214,7 +214,7 @@
     const-wide/16 v2, 0x1f4
 
     :goto_1
-    sget-object v0, Lwd/f2;->a:Lbe/c;
+    sget-object v0, Lvd/g2;->a:Lae/c;
 
     .line 7
     invoke-virtual {p1, v1}, Landroid/view/View;->setScaleY(F)V
@@ -223,11 +223,11 @@
     invoke-virtual {p1, v1}, Landroid/view/View;->setScaleX(F)V
 
     .line 9
-    new-instance v0, Lwd/h2;
+    new-instance v0, Lvd/g2$i;
 
-    invoke-direct {v0, p1, v2, v3}, Lwd/h2;-><init>(Landroid/view/View;J)V
+    invoke-direct {v0, p1, v2, v3}, Lvd/g2$i;-><init>(Landroid/view/View;J)V
 
-    invoke-static {p1, v0}, Lwd/f2;->a(Landroid/view/View;Lke/l;)V
+    invoke-static {p1, v0}, Lvd/g2;->a(Landroid/view/View;Lke/l;)V
 
     :cond_2
     return-void
@@ -254,7 +254,7 @@
     if-eqz p1, :cond_4
 
     .line 1
-    invoke-static {p0}, Lb0/g;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-static {p0}, Lrc/b;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v0
 
@@ -265,7 +265,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-boolean v0, v0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$BackStackEntry;->i:Z
+    iget-boolean v0, v0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$BackStackEntry;->j:Z
 
     goto :goto_0
 
@@ -284,7 +284,7 @@
 
     const-string v4, "navigation_back_button"
 
-    invoke-static {v3, v4}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 v4, 0x8
 
@@ -311,9 +311,9 @@
 
     invoke-direct {v5, p0}, Lcom/supercell/id/ui/authentication/AuthenticationFragment$b$b;-><init>(Lcom/supercell/id/ui/authentication/AuthenticationFragment$b;)V
 
-    new-instance v6, Lvc/a;
+    new-instance v6, Lsc/a;
 
-    invoke-direct {v6, v5}, Lvc/a;-><init>(Lke/l;)V
+    invoke-direct {v6, v5}, Lsc/a;-><init>(Lke/l;)V
 
     invoke-virtual {v3, v6}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -328,7 +328,7 @@
 
     const-string v6, "navigation_logo"
 
-    invoke-static {v5, v6}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz v0, :cond_2
 
@@ -418,15 +418,15 @@
 
     aput-object v1, v5, v0
 
-    invoke-static {v5}, Landroidx/savedstate/d;->x([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v5}, Lb5/m;->o([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
     .line 8
-    iput-object v0, p0, Luc/g1;->m0:Ljava/util/Collection;
+    iput-object v0, p0, Lrc/g1;->n0:Ljava/util/Collection;
 
     .line 9
-    invoke-super {p0, p1, p2}, Luc/g1;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lrc/g1;->s0(Landroid/view/View;Landroid/os/Bundle;)V
 
     return-void
 
@@ -434,7 +434,7 @@
     const-string p1, "view"
 
     .line 10
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -444,7 +444,7 @@
 .method public u1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$b;->o0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$b;->p0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -452,10 +452,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$b;->o0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$b;->p0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$b;->o0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$b;->p0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -470,7 +470,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -484,7 +484,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$b;->o0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$b;->p0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

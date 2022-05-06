@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/titan/KeyboardDialog;
+.field public final synthetic g:Lcom/supercell/titan/KeyboardDialog;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/titan/KeyboardDialog$b;->a:Lcom/supercell/titan/KeyboardDialog;
+    iput-object p1, p0, Lcom/supercell/titan/KeyboardDialog$b;->g:Lcom/supercell/titan/KeyboardDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,10 +39,10 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog$b;->a:Lcom/supercell/titan/KeyboardDialog;
+    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog$b;->g:Lcom/supercell/titan/KeyboardDialog;
 
     .line 2
-    iget-object p1, p1, Lcom/supercell/titan/KeyboardDialog;->a:Lcom/supercell/titan/GameApp;
+    iget-object p1, p1, Lcom/supercell/titan/KeyboardDialog;->g:Lcom/supercell/titan/GameApp;
 
     .line 3
     new-instance v0, Lcom/supercell/titan/KeyboardDialog$b$a;

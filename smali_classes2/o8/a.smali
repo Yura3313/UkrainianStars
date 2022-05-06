@@ -1,100 +1,115 @@
 .class public Lo8/a;
-.super Ljava/lang/Object;
-.source "Action.java"
+.super Lo8/b;
+.source "CSATRatingsInput.java"
 
 # interfaces
 .implements Lcom/helpshift/util/j;
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lo8/a$a;
+    }
+.end annotation
+
+
 # instance fields
-.field public a:Ljava/lang/Long;
-
-.field public final b:Ljava/lang/String;
-
-.field public final h:Ljava/lang/String;
-
-.field public final i:Ljava/util/Map;
+.field public final k:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
+            "Ljava/util/List<",
+            "Lo8/a$a;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final j:Lo8/c;
+.field public final l:I
+
+.field public final m:Ljava/lang/String;
+
+.field public final n:Ljava/lang/String;
+
+.field public final o:Z
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Lo8/c;Ljava/util/Map;)V
+.method public constructor <init>(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/util/List;I)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Lo8/c;",
-            "Ljava/util/Map<",
+            "Z",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            ">;)V"
+            "Ljava/lang/String;",
+            "Z",
+            "Ljava/lang/String;",
+            "Ljava/util/List<",
+            "Lo8/a$a;",
+            ">;",
+            "Ljava/lang/Object;",
+            ")V"
         }
     .end annotation
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, p2, p3, p4}, Lo8/b;-><init>(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)V
 
     .line 2
-    iput-object p2, p0, Lo8/a;->b:Ljava/lang/String;
+    iput-object p8, p0, Lo8/a;->k:Ljava/util/List;
 
     .line 3
-    iput-object p1, p0, Lo8/a;->h:Ljava/lang/String;
+    iput p9, p0, Lo8/a;->l:I
 
     .line 4
-    iput-object p4, p0, Lo8/a;->i:Ljava/util/Map;
+    iput-object p5, p0, Lo8/a;->m:Ljava/lang/String;
 
     .line 5
-    iput-object p3, p0, Lo8/a;->j:Lo8/c;
+    iput-boolean p6, p0, Lo8/a;->o:Z
+
+    .line 6
+    iput-object p7, p0, Lo8/a;->n:Ljava/lang/String;
 
     return-void
 .end method
 
 .method public constructor <init>(Lo8/a;)V
-    .locals 2
-
-    .line 6
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .locals 1
 
     .line 7
-    iget-object v0, p1, Lo8/a;->b:Ljava/lang/String;
-
-    iput-object v0, p0, Lo8/a;->b:Ljava/lang/String;
+    invoke-direct {p0, p1}, Lo8/b;-><init>(Lo8/b;)V
 
     .line 8
-    iget-object v0, p1, Lo8/a;->h:Ljava/lang/String;
+    iget-object v0, p1, Lo8/a;->k:Ljava/util/List;
 
-    iput-object v0, p0, Lo8/a;->h:Ljava/lang/String;
+    invoke-static {v0}, Lcom/helpshift/util/g;->a(Ljava/util/List;)Ljava/util/ArrayList;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lo8/a;->k:Ljava/util/List;
 
     .line 9
-    new-instance v0, Ljava/util/HashMap;
+    iget v0, p1, Lo8/a;->l:I
 
-    iget-object v1, p1, Lo8/a;->i:Ljava/util/Map;
-
-    invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
-
-    iput-object v0, p0, Lo8/a;->i:Ljava/util/Map;
+    iput v0, p0, Lo8/a;->l:I
 
     .line 10
-    iget-object v0, p1, Lo8/a;->j:Lo8/c;
+    iget-object v0, p1, Lo8/a;->m:Ljava/lang/String;
 
-    iput-object v0, p0, Lo8/a;->j:Lo8/c;
+    iput-object v0, p0, Lo8/a;->m:Ljava/lang/String;
 
     .line 11
-    iget-object p1, p1, Lo8/a;->a:Ljava/lang/Long;
+    iget-object v0, p1, Lo8/a;->n:Ljava/lang/String;
 
-    iput-object p1, p0, Lo8/a;->a:Ljava/lang/Long;
+    iput-object v0, p0, Lo8/a;->n:Ljava/lang/String;
+
+    .line 12
+    iget-boolean p1, p1, Lo8/a;->o:Z
+
+    iput-boolean p1, p0, Lo8/a;->o:Z
 
     return-void
 .end method
@@ -110,45 +125,4 @@
     invoke-direct {v0, p0}, Lo8/a;-><init>(Lo8/a;)V
 
     return-object v0
-.end method
-
-.method public equals(Ljava/lang/Object;)Z
-    .locals 1
-
-    if-ne p1, p0, :cond_0
-
-    const/4 p1, 0x1
-
-    return p1
-
-    :cond_0
-    if-eqz p1, :cond_2
-
-    .line 1
-    instance-of v0, p1, Lo8/a;
-
-    if-nez v0, :cond_1
-
-    goto :goto_0
-
-    .line 2
-    :cond_1
-    check-cast p1, Lo8/a;
-
-    .line 3
-    iget-object p1, p1, Lo8/a;->b:Ljava/lang/String;
-
-    iget-object v0, p0, Lo8/a;->b:Ljava/lang/String;
-
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    return p1
-
-    :cond_2
-    :goto_0
-    const/4 p1, 0x0
-
-    return p1
 .end method

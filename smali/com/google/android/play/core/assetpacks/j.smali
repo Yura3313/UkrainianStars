@@ -14,7 +14,7 @@
 
 
 # instance fields
-.field public final a:Lcom/google/android/play/core/tasks/i;
+.field public final g:Lcom/google/android/play/core/tasks/i;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/android/play/core/tasks/i<",
@@ -23,7 +23,7 @@
     .end annotation
 .end field
 
-.field public final synthetic b:Lcom/google/android/play/core/assetpacks/o;
+.field public final synthetic h:Lcom/google/android/play/core/assetpacks/o;
 
 
 # direct methods
@@ -37,11 +37,11 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/j;->b:Lcom/google/android/play/core/assetpacks/o;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
 
     invoke-direct {p0}, Lcom/google/android/play/core/internal/t;-><init>()V
 
-    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/j;->a:Lcom/google/android/play/core/tasks/i;
+    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/tasks/i;
 
     return-void
 .end method
@@ -50,11 +50,11 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/j;->b:Lcom/google/android/play/core/assetpacks/o;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
 
     invoke-direct {p0}, Lcom/google/android/play/core/internal/t;-><init>()V
 
-    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/j;->a:Lcom/google/android/play/core/tasks/i;
+    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/tasks/i;
 
     return-void
 .end method
@@ -63,11 +63,11 @@
     .locals 0
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/j;->b:Lcom/google/android/play/core/assetpacks/o;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
 
     invoke-direct {p0}, Lcom/google/android/play/core/internal/t;-><init>()V
 
-    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/j;->a:Lcom/google/android/play/core/tasks/i;
+    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/tasks/i;
 
     return-void
 .end method
@@ -76,18 +76,18 @@
     .locals 0
 
     .line 3
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/j;->b:Lcom/google/android/play/core/assetpacks/o;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
 
     invoke-direct {p0}, Lcom/google/android/play/core/internal/t;-><init>()V
 
-    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/j;->a:Lcom/google/android/play/core/tasks/i;
+    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/tasks/i;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public X3(Landroid/os/Bundle;Landroid/os/Bundle;)V
+.method public Y3(Landroid/os/Bundle;Landroid/os/Bundle;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -95,7 +95,7 @@
         }
     .end annotation
 
-    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/j;->b:Lcom/google/android/play/core/assetpacks/o;
+    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
 
     .line 1
     iget-object p1, p1, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/l;
@@ -120,10 +120,10 @@
     return-void
 .end method
 
-.method public g(Landroid/os/Bundle;)V
+.method public h(Landroid/os/Bundle;)V
     .locals 4
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j;->b:Lcom/google/android/play/core/assetpacks/o;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
 
     .line 1
     iget-object v0, v0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/l;
@@ -161,7 +161,7 @@
     invoke-virtual {v0, v2, v3, v1}, Ly4/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 6
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j;->a:Lcom/google/android/play/core/tasks/i;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/tasks/i;
 
     new-instance v1, Lcom/google/android/play/core/assetpacks/AssetPackException;
 
@@ -172,10 +172,10 @@
     return-void
 .end method
 
-.method public s0(Landroid/os/Bundle;Landroid/os/Bundle;)V
+.method public t0(Landroid/os/Bundle;Landroid/os/Bundle;)V
     .locals 2
 
-    iget-object p2, p0, Lcom/google/android/play/core/assetpacks/j;->b:Lcom/google/android/play/core/assetpacks/o;
+    iget-object p2, p0, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
 
     .line 1
     iget-object p2, p2, Lcom/google/android/play/core/assetpacks/o;->d:Ly4/l;
@@ -215,7 +215,7 @@
     return-void
 .end method
 
-.method public u(Ljava/util/List;)V
+.method public v(Ljava/util/List;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -226,7 +226,7 @@
         }
     .end annotation
 
-    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/j;->b:Lcom/google/android/play/core/assetpacks/o;
+    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
 
     .line 1
     iget-object p1, p1, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/l;

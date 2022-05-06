@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/MainActivity;->u(Z)V
+    value = Lcom/supercell/id/ui/MainActivity;->v(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,14 +22,14 @@
         "Lke/p<",
         "Lcom/supercell/id/ui/MainActivity;",
         "Ljava/lang/Exception;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/ui/MainActivity$d;
+.field public static final g:Lcom/supercell/id/ui/MainActivity$d;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/MainActivity$d;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/MainActivity$d;->a:Lcom/supercell/id/ui/MainActivity$d;
+    sput-object v0, Lcom/supercell/id/ui/MainActivity$d;->g:Lcom/supercell/id/ui/MainActivity$d;
 
     return-void
 .end method
@@ -72,12 +72,12 @@
     if-eqz p2, :cond_0
 
     .line 2
-    sget-object v0, Lcom/supercell/id/ui/a;->a:Lcom/supercell/id/ui/a;
+    sget-object v0, Lcom/supercell/id/ui/a;->g:Lcom/supercell/id/ui/a;
 
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->E(Ljava/lang/Exception;Lke/l;)V
+    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->F(Ljava/lang/Exception;Lke/l;)V
 
     .line 3
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -85,14 +85,14 @@
     const-string p1, "it"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_1
     const-string p1, "$receiver"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

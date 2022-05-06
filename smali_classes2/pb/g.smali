@@ -1,52 +1,59 @@
 .class public Lpb/g;
-.super Lpb/a;
-.source "MutableBaseViewState.java"
+.super Ljava/lang/Object;
+.source "CameraSurface.java"
+
+
+# instance fields
+.field public a:Landroid/view/SurfaceHolder;
+
+.field public b:Landroid/graphics/SurfaceTexture;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public constructor <init>(Landroid/graphics/SurfaceTexture;)V
+    .locals 1
 
-    .line 1
-    invoke-direct {p0}, Lpb/a;-><init>()V
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    if-eqz p1, :cond_0
+
+    .line 5
+    iput-object p1, p0, Lpb/g;->b:Landroid/graphics/SurfaceTexture;
 
     return-void
+
+    .line 6
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string v0, "surfaceTexture may not be null"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method
 
-
-# virtual methods
-.method public d(Z)V
+.method public constructor <init>(Landroid/view/SurfaceHolder;)V
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lpb/a;->c:Z
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    if-eq p1, v0, :cond_0
-
-    .line 2
-    iput-boolean p1, p0, Lpb/a;->c:Z
-
-    .line 3
-    invoke-virtual {p0, p0}, Lpb/c;->a(Ljava/lang/Object;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public e(Z)V
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lpb/a;->d:Z
-
-    if-eq p1, v0, :cond_0
+    if-eqz p1, :cond_0
 
     .line 2
-    iput-boolean p1, p0, Lpb/a;->d:Z
+    iput-object p1, p0, Lpb/g;->a:Landroid/view/SurfaceHolder;
+
+    return-void
 
     .line 3
-    invoke-virtual {p0, p0}, Lpb/c;->a(Ljava/lang/Object;)V
-
     :cond_0
-    return-void
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string v0, "surfaceHolder may not be null"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method

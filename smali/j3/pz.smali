@@ -3,79 +3,49 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/x2;
+.implements Landroid/view/View$OnTouchListener;
 
 
 # instance fields
-.field public final a:Lj3/hz;
-
-.field public final b:Lj3/ch;
+.field public final g:Lj3/mz;
 
 
 # direct methods
-.method public constructor <init>(Lj3/hz;Lj3/ch;)V
+.method public constructor <init>(Lj3/mz;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj3/pz;->a:Lj3/hz;
-
-    iput-object p2, p0, Lj3/pz;->b:Lj3/ch;
+    iput-object p1, p0, Lj3/pz;->g:Lj3/mz;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Ljava/lang/Object;Ljava/util/Map;)V
-    .locals 3
+.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    .locals 1
 
-    iget-object p2, p0, Lj3/pz;->a:Lj3/hz;
-
-    iget-object v0, p0, Lj3/pz;->b:Lj3/ch;
-
-    check-cast p1, Lj3/ch;
+    iget-object p1, p0, Lj3/pz;->g:Lj3/mz;
 
     .line 1
-    iget-object p1, p2, Lj3/hz;->h:Lj3/cm;
+    iget-object p2, p1, Lj3/mz;->i:Lh1/a;
+
+    const/4 v0, 0x1
 
     .line 2
-    monitor-enter p1
+    iput-boolean v0, p2, Lh1/a;->b:Z
 
     .line 3
-    :try_start_0
-    iget-object p2, p1, Lj3/cm;->h:Ljava/util/Set;
+    iget-object p1, p1, Lj3/mz;->k:Lj3/j9;
 
-    invoke-interface {p2, v0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+    if-eqz p1, :cond_0
 
     .line 4
-    iget-object p2, p1, Lj3/cm;->a:Lj3/tl;
+    invoke-interface {p1}, Lj3/j9;->g()V
 
-    .line 5
-    iget-object v1, p2, Lj3/tl;->e:Lj3/x2;
+    :cond_0
+    const/4 p1, 0x0
 
-    const-string v2, "/updateActiveView"
-
-    invoke-interface {v0, v2, v1}, Lj3/ch;->g(Ljava/lang/String;Lj3/x2;)V
-
-    .line 6
-    iget-object p2, p2, Lj3/tl;->f:Lj3/x2;
-
-    const-string v1, "/untrackActiveViewUnit"
-
-    invoke-interface {v0, v1, p2}, Lj3/ch;->g(Ljava/lang/String;Lj3/x2;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 7
-    monitor-exit p1
-
-    return-void
-
-    :catchall_0
-    move-exception p2
-
-    monitor-exit p1
-
-    throw p2
+    return p1
 .end method

@@ -1,54 +1,59 @@
-.class public Lqe/i;
-.super Lqe/g;
-.source "_SequencesJvm.kt"
+.class public final Lqe/i;
+.super Ljava/lang/Object;
+.source "Iterables.kt"
+
+# interfaces
+.implements Ljava/lang/Iterable;
+.implements Lme/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/lang/Iterable<",
+        "Ljava/lang/Object;",
+        ">;",
+        "Lme/a;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic g:Lqe/d;
 
 
 # direct methods
-.method public static final f(Ljava/util/Iterator;)Lqe/d;
-    .locals 1
+.method public constructor <init>(Lqe/d;)V
+    .locals 0
+
+    iput-object p1, p0, Lqe/i;->g:Lqe/d;
 
     .line 1
-    new-instance v0, Lqe/h;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {v0, p0}, Lqe/h;-><init>(Ljava/util/Iterator;)V
-
-    .line 2
-    instance-of p0, v0, Lqe/a;
-
-    if-eqz p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    new-instance p0, Lqe/a;
-
-    invoke-direct {p0, v0}, Lqe/a;-><init>(Lqe/d;)V
-
-    move-object v0, p0
-
-    :goto_0
-    return-object v0
+    return-void
 .end method
 
-.method public static final g(Lke/a;Lke/l;)Lqe/d;
-    .locals 1
 
-    if-eqz p1, :cond_0
+# virtual methods
+.method public iterator()Ljava/util/Iterator;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Iterator<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    new-instance v0, Lqe/c;
+    iget-object v0, p0, Lqe/i;->g:Lqe/d;
 
-    invoke-direct {v0, p0, p1}, Lqe/c;-><init>(Lke/a;Lke/l;)V
+    invoke-interface {v0}, Lqe/d;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
 
     return-object v0
-
-    :cond_0
-    const-string p0, "nextFunction"
-
-    .line 2
-    invoke-static {p0}, Ly4/x;->k(Ljava/lang/String;)V
-
-    const/4 p0, 0x0
-
-    throw p0
 .end method

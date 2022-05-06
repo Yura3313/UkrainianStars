@@ -1,40 +1,83 @@
-.class public final Lq3/w1;
+.class public abstract Lq3/w1;
 .super Ljava/lang/Object;
 
 
-# static fields
-.field public static final a:Ljava/lang/Class;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/Class<",
-            "*>;"
-        }
-    .end annotation
-.end field
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T::",
+        "Lq3/c2<",
+        "TT;>;>",
+        "Ljava/lang/Object;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    :try_start_0
-    const-string v0, "com.google.protobuf.ExtensionRegistry"
+.method public constructor <init>()V
+    .locals 0
 
     .line 1
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v0
-    :try_end_0
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    const/4 v0, 0x0
-
-    .line 2
-    :goto_0
-    sput-object v0, Lq3/w1;->a:Ljava/lang/Class;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
+.end method
+
+
+# virtual methods
+.method public abstract a(Ljava/util/Map$Entry;)I
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map$Entry<",
+            "**>;)I"
+        }
+    .end annotation
+.end method
+
+.method public abstract b(Lq3/x4;Ljava/util/Map$Entry;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lq3/x4;",
+            "Ljava/util/Map$Entry<",
+            "**>;)V"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
+
+.method public abstract c(Ljava/lang/Object;)Lq3/a2;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            ")",
+            "Lq3/a2<",
+            "TT;>;"
+        }
+    .end annotation
+.end method
+
+.method public abstract d(Ljava/lang/Object;)Lq3/a2;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            ")",
+            "Lq3/a2<",
+            "TT;>;"
+        }
+    .end annotation
+.end method
+
+.method public abstract e(Ljava/lang/Object;)V
+.end method
+
+.method public abstract f(Lq3/f3;)Z
 .end method

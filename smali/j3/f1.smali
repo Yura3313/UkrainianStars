@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
-.field public final synthetic b:J
+.field public final synthetic h:J
 
-.field public final synthetic h:Lj3/a;
+.field public final synthetic i:Lj3/a;
 
 
 # direct methods
@@ -19,11 +19,11 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lj3/f1;->h:Lj3/a;
+    iput-object p1, p0, Lj3/f1;->i:Lj3/a;
 
-    iput-object p2, p0, Lj3/f1;->a:Ljava/lang/String;
+    iput-object p2, p0, Lj3/f1;->g:Ljava/lang/String;
 
-    iput-wide p3, p0, Lj3/f1;->b:J
+    iput-wide p3, p0, Lj3/f1;->h:J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,30 +36,30 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lj3/f1;->h:Lj3/a;
+    iget-object v0, p0, Lj3/f1;->i:Lj3/a;
 
     .line 2
-    iget-object v0, v0, Lj3/a;->a:Lj3/h7$a;
+    iget-object v0, v0, Lj3/a;->g:Lj3/j7$a;
 
     .line 3
-    iget-object v1, p0, Lj3/f1;->a:Ljava/lang/String;
+    iget-object v1, p0, Lj3/f1;->g:Ljava/lang/String;
 
-    iget-wide v2, p0, Lj3/f1;->b:J
+    iget-wide v2, p0, Lj3/f1;->h:J
 
-    invoke-virtual {v0, v1, v2, v3}, Lj3/h7$a;->a(Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v2, v3}, Lj3/j7$a;->a(Ljava/lang/String;J)V
 
     .line 4
-    iget-object v0, p0, Lj3/f1;->h:Lj3/a;
+    iget-object v0, p0, Lj3/f1;->i:Lj3/a;
 
     .line 5
-    iget-object v1, v0, Lj3/a;->a:Lj3/h7$a;
+    iget-object v1, v0, Lj3/a;->g:Lj3/j7$a;
 
     .line 6
     invoke-virtual {v0}, Lj3/a;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Lj3/h7$a;->b(Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, Lj3/j7$a;->b(Ljava/lang/String;)V
 
     return-void
 .end method

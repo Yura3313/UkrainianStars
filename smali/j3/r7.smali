@@ -1,18 +1,40 @@
-.class public interface abstract Lj3/r7;
+.class public final Lj3/r7;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lj3/s7;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
 
 # virtual methods
-.method public abstract a(Landroid/content/Context;)Lj3/yl0;
+.method public final a()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final b(Landroid/content/Context;Ljava/util/List;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
-            ")",
-            "Lj3/yl0<",
-            "Landroid/os/Bundle;",
-            ">;"
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;)V"
         }
     .end annotation
+
+    return-void
 .end method

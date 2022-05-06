@@ -5,7 +5,7 @@
 
 # annotations
 .annotation build Landroid/annotation/TargetApi;
-    value = 0x1a
+    value = 0x12
 .end annotation
 
 
@@ -21,42 +21,95 @@
 
 
 # virtual methods
-.method public final g(Landroid/content/Context;Landroid/telephony/TelephonyManager;)Lj3/b41;
+.method public b(Landroid/view/View;)Z
     .locals 1
 
     .line 1
-    sget-object v0, Lh1/o;->B:Lh1/o;
+    invoke-super {p0, p1}, Lj3/eb;->b(Landroid/view/View;)Z
 
-    iget-object v0, v0, Lh1/o;->c:Lj3/xa;
+    move-result v0
 
-    const-string v0, "android.permission.ACCESS_NETWORK_STATE"
+    if-nez v0, :cond_1
 
-    .line 2
-    invoke-static {p1, v0}, Lj3/xa;->F(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-virtual {p1}, Landroid/view/View;->getWindowId()Landroid/view/WindowId;
 
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    .line 3
-    invoke-virtual {p2}, Landroid/telephony/TelephonyManager;->isDataEnabled()Z
-
-    move-result p1
+    move-result-object p1
 
     if-eqz p1, :cond_0
 
-    sget-object p1, Lj3/b41;->zzcbl:Lj3/b41;
-
-    return-object p1
+    goto :goto_0
 
     :cond_0
-    sget-object p1, Lj3/b41;->zzcbk:Lj3/b41;
+    const/4 p1, 0x0
 
-    return-object p1
+    return p1
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public final o()I
+    .locals 1
+
+    const/16 v0, 0xe
+
+    return v0
+.end method
+
+.method public final s()J
+    .locals 4
+
+    .line 1
+    sget-object v0, Lj3/n;->w1:Lj3/f;
+
+    .line 2
+    sget-object v1, Lj3/t51;->j:Lj3/t51;
+
+    iget-object v1, v1, Lj3/t51;->f:Lj3/l;
+
+    .line 3
+    invoke-virtual {v1, v0}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+
+    move-result-object v0
 
     .line 4
-    :cond_1
-    sget-object p1, Lj3/b41;->zzcbk:Lj3/b41;
+    check-cast v0, Ljava/lang/Boolean;
 
-    return-object p1
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    const-wide/16 v0, -0x1
+
+    return-wide v0
+
+    .line 5
+    :cond_0
+    new-instance v0, Landroid/os/StatFs;
+
+    invoke-static {}, Landroid/os/Environment;->getDataDirectory()Ljava/io/File;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/os/StatFs;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    invoke-virtual {v0}, Landroid/os/StatFs;->getAvailableBytes()J
+
+    move-result-wide v0
+
+    const-wide/16 v2, 0x400
+
+    div-long/2addr v0, v2
+
+    return-wide v0
 .end method

@@ -3,56 +3,63 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lj3/bv0<",
-        "Lj3/rt<",
-        "Lj3/j21;",
-        ">;>;"
-    }
-.end annotation
+.implements Lj3/rv0;
 
 
 # instance fields
-.field public final a:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/eo;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic a:I
+
+.field public final b:Lj3/vv0;
+
+.field public final c:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lj3/ym;Lj3/fv0;Lj3/fv0;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/ym;",
-            "Lj3/fv0<",
-            "Lj3/eo;",
-            ">;",
-            "Lj3/fv0<",
-            "Ljava/util/concurrent/Executor;",
-            ">;)V"
-        }
-    .end annotation
+.method public constructor <init>(Lj3/vv0;Lj3/vv0;)V
+    .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x2
+
+    iput v0, p0, Lj3/mn;->a:I
 
     .line 2
-    iput-object p2, p0, Lj3/mn;->a:Lj3/fv0;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iput-object p1, p0, Lj3/mn;->b:Lj3/vv0;
+
+    .line 4
+    iput-object p2, p0, Lj3/mn;->c:Ljava/lang/Object;
 
     return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/lang/Object;Lj3/vv0;I)V
+    .locals 0
+
+    .line 1
+    iput p3, p0, Lj3/mn;->a:I
+
+    iput-object p1, p0, Lj3/mn;->c:Ljava/lang/Object;
+
+    iput-object p2, p0, Lj3/mn;->b:Lj3/vv0;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a(Lj3/bq0;Lj3/vv0;)Lj3/mn;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lj3/mn;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, p0, p1, v1}, Lj3/mn;-><init>(Ljava/lang/Object;Lj3/vv0;I)V
+
+    return-object v0
 .end method
 
 
@@ -60,24 +67,95 @@
 .method public final get()Ljava/lang/Object;
     .locals 3
 
-    .line 1
-    iget-object v0, p0, Lj3/mn;->a:Lj3/fv0;
+    iget v0, p0, Lj3/mn;->a:I
 
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
+
+    .line 1
+    :pswitch_0
+    iget-object v0, p0, Lj3/mn;->b:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lj3/eo;
+    check-cast v0, Lj3/dq;
 
     .line 2
-    invoke-static {}, Lj3/fp;->b()Lj3/am0;
+    new-instance v1, Lj3/yt;
+
+    .line 3
+    sget-object v2, Lj3/kd;->f:Lj3/km0;
+
+    .line 4
+    invoke-direct {v1, v0, v2}, Lj3/yt;-><init>(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
+
+    return-object v1
+
+    .line 5
+    :pswitch_1
+    iget-object v0, p0, Lj3/mn;->b:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lj3/do;
+
+    .line 6
+    new-instance v1, Lj3/yt;
+
+    .line 7
+    sget-object v2, Lj3/kd;->f:Lj3/km0;
+
+    .line 8
+    invoke-direct {v1, v0, v2}, Lj3/yt;-><init>(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
+
+    invoke-static {v1}, Ljava/util/Collections;->singleton(Ljava/lang/Object;)Ljava/util/Set;
+
+    move-result-object v0
+
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+
+    .line 9
+    invoke-static {v0, v1}, Lj3/u6;->h(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    return-object v0
+
+    .line 10
+    :goto_0
+    iget-object v0, p0, Lj3/mn;->b:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lj3/x00;
+
+    iget-object v1, p0, Lj3/mn;->c:Ljava/lang/Object;
+
+    check-cast v1, Lj3/vv0;
+
+    invoke-interface {v1}, Lj3/vv0;->get()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 3
-    new-instance v2, Lj3/rt;
+    check-cast v1, Ljava/util/concurrent/Executor;
 
-    invoke-direct {v2, v0, v1}, Lj3/rt;-><init>(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
+    .line 11
+    new-instance v2, Lj3/u00;
+
+    invoke-direct {v2, v0, v1}, Lj3/u00;-><init>(Lj3/x00;Ljava/util/concurrent/Executor;)V
 
     return-object v2
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

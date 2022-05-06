@@ -1,97 +1,294 @@
-.class public final synthetic Lj3/tx;
+.class public final Lj3/tx;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/gl0;
+.implements Lj3/rv0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj3/rv0<",
+        "Lj3/jx;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Lj3/ux;
+.field public final a:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Landroid/content/Context;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final b:Lorg/json/JSONObject;
+.field public final b:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/fx;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/nr0;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final d:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lcom/google/android/gms/internal/ads/zzbbg;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final e:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lh1/b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final f:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lcom/google/android/gms/internal/ads/q7;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final g:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/wg0;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final h:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/yx;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final i:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Ljava/util/concurrent/ScheduledExecutorService;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lj3/ux;Lorg/json/JSONObject;)V
+.method public constructor <init>(Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/vv0<",
+            "Landroid/content/Context;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/fx;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/nr0;",
+            ">;",
+            "Lj3/vv0<",
+            "Lcom/google/android/gms/internal/ads/zzbbg;",
+            ">;",
+            "Lj3/vv0<",
+            "Lh1/b;",
+            ">;",
+            "Lj3/vv0<",
+            "Lcom/google/android/gms/internal/ads/q7;",
+            ">;",
+            "Lj3/vv0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/wg0;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/yx;",
+            ">;",
+            "Lj3/vv0<",
+            "Ljava/util/concurrent/ScheduledExecutorService;",
+            ">;)V"
+        }
+    .end annotation
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj3/tx;->a:Lj3/ux;
+    .line 2
+    iput-object p1, p0, Lj3/tx;->a:Lj3/vv0;
 
-    iput-object p2, p0, Lj3/tx;->b:Lorg/json/JSONObject;
+    .line 3
+    iput-object p2, p0, Lj3/tx;->b:Lj3/vv0;
+
+    .line 4
+    iput-object p3, p0, Lj3/tx;->c:Lj3/vv0;
+
+    .line 5
+    iput-object p4, p0, Lj3/tx;->d:Lj3/vv0;
+
+    .line 6
+    iput-object p5, p0, Lj3/tx;->e:Lj3/vv0;
+
+    .line 7
+    iput-object p6, p0, Lj3/tx;->f:Lj3/vv0;
+
+    .line 8
+    iput-object p8, p0, Lj3/tx;->g:Lj3/vv0;
+
+    .line 9
+    iput-object p9, p0, Lj3/tx;->h:Lj3/vv0;
+
+    .line 10
+    iput-object p10, p0, Lj3/tx;->i:Lj3/vv0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lj3/yl0;
-    .locals 6
-
-    iget-object v0, p0, Lj3/tx;->a:Lj3/ux;
-
-    iget-object v1, p0, Lj3/tx;->b:Lorg/json/JSONObject;
-
-    check-cast p1, Lj3/ch;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 12
 
     .line 1
-    new-instance v2, Lj3/nd;
+    iget-object v0, p0, Lj3/tx;->a:Lj3/vv0;
 
-    invoke-direct {v2, p1}, Lj3/nd;-><init>(Ljava/lang/Object;)V
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v2, v0
+
+    check-cast v2, Landroid/content/Context;
+
+    iget-object v0, p0, Lj3/tx;->b:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v3, v0
+
+    check-cast v3, Lj3/fx;
+
+    iget-object v0, p0, Lj3/tx;->c:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v4, v0
+
+    check-cast v4, Lj3/nr0;
+
+    iget-object v0, p0, Lj3/tx;->d:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v5, v0
+
+    check-cast v5, Lcom/google/android/gms/internal/ads/zzbbg;
+
+    iget-object v0, p0, Lj3/tx;->e:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v6, v0
+
+    check-cast v6, Lh1/b;
+
+    iget-object v0, p0, Lj3/tx;->f:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v7, v0
+
+    check-cast v7, Lcom/google/android/gms/internal/ads/q7;
 
     .line 2
-    iget-object v3, v0, Lj3/ux;->a:Lj3/pg0;
+    invoke-static {}, Lj3/gi0;->a()Lj3/km0;
 
-    iget-object v3, v3, Lj3/pg0;->c:Lcom/google/android/gms/internal/ads/zzair;
-
-    const/4 v4, 0x0
-
-    if-eqz v3, :cond_0
+    move-result-object v8
 
     .line 3
-    new-instance v3, Lj3/li;
+    iget-object v0, p0, Lj3/tx;->g:Lj3/vv0;
 
-    const/4 v5, 0x5
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    invoke-direct {v3, v5, v4, v4}, Lj3/li;-><init>(III)V
+    move-result-object v0
+
+    move-object v9, v0
+
+    check-cast v9, Lj3/wg0;
+
+    iget-object v0, p0, Lj3/tx;->h:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v10, v0
+
+    check-cast v10, Lj3/yx;
+
+    iget-object v0, p0, Lj3/tx;->i:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v11, v0
+
+    check-cast v11, Ljava/util/concurrent/ScheduledExecutorService;
 
     .line 4
-    invoke-interface {p1, v3}, Lj3/ch;->s0(Lj3/li;)V
+    new-instance v0, Lj3/jx;
 
-    goto :goto_0
+    move-object v1, v0
 
-    .line 5
-    :cond_0
-    new-instance v3, Lj3/li;
+    invoke-direct/range {v1 .. v11}, Lj3/jx;-><init>(Landroid/content/Context;Lj3/fx;Lj3/nr0;Lcom/google/android/gms/internal/ads/zzbbg;Lh1/b;Lcom/google/android/gms/internal/ads/q7;Ljava/util/concurrent/Executor;Lj3/wg0;Lj3/yx;Ljava/util/concurrent/ScheduledExecutorService;)V
 
-    const/4 v5, 0x4
-
-    invoke-direct {v3, v5, v4, v4}, Lj3/li;-><init>(III)V
-
-    .line 6
-    invoke-interface {p1, v3}, Lj3/ch;->s0(Lj3/li;)V
-
-    .line 7
-    :goto_0
-    invoke-interface {p1}, Lj3/ch;->Q()Lj3/fi;
-
-    move-result-object v3
-
-    new-instance v4, Lj3/zx;
-
-    invoke-direct {v4, v0, p1, v2}, Lj3/zx;-><init>(Lj3/ux;Lj3/ch;Lj3/nd;)V
-
-    .line 8
-    invoke-interface {v3, v4}, Lj3/fi;->f(Lj3/ii;)V
-
-    const-string v0, "google.afma.nativeAds.renderVideo"
-
-    .line 9
-    invoke-interface {p1, v0, v1}, Lj3/p4;->U(Ljava/lang/String;Lorg/json/JSONObject;)V
-
-    return-object v2
+    return-object v0
 .end method

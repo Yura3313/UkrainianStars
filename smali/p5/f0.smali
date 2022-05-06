@@ -81,7 +81,7 @@
     move-result-object p2
 
     .line 2
-    invoke-static {p2, p1}, Lp5/i;->b([B[B)Z
+    invoke-static {p2, p1}, Lp5/j;->b([B[B)Z
 
     move-result p1
 

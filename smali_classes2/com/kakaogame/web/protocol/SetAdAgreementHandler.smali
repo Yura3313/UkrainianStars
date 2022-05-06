@@ -61,7 +61,7 @@
     const-string v0, "SetAdAgreementHandler"
 
     .line 2
-    invoke-static {p2, p1, v0}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p2, p1, v0}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :try_start_0
     const-string p2, "true"

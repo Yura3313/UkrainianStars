@@ -3,20 +3,20 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/x2;
+.implements Lj3/y2;
 
 
 # instance fields
-.field public final a:Lj3/gw;
+.field public final g:Lj3/jw;
 
 
 # direct methods
-.method public constructor <init>(Lj3/gw;)V
+.method public constructor <init>(Lj3/jw;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj3/kw;->a:Lj3/gw;
+    iput-object p1, p0, Lj3/kw;->g:Lj3/jw;
 
     return-void
 .end method
@@ -24,30 +24,16 @@
 
 # virtual methods
 .method public final b(Ljava/lang/Object;Ljava/util/Map;)V
-    .locals 1
+    .locals 0
 
-    iget-object p2, p0, Lj3/kw;->a:Lj3/gw;
+    iget-object p2, p0, Lj3/kw;->g:Lj3/jw;
 
-    check-cast p1, Lj3/ch;
-
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast p1, Lj3/gh;
 
     .line 1
-    invoke-interface {p1}, Lj3/ch;->getView()Landroid/view/View;
+    iget-object p1, p2, Lj3/jw;->d:Lj3/yv;
 
-    move-result-object p1
-
-    const/16 v0, 0x8
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
-
-    .line 2
-    iget-object p1, p2, Lj3/gw;->c:Lj3/km;
-
-    const/4 p2, 0x0
-
-    .line 3
-    iput-boolean p2, p1, Lj3/km;->k:Z
+    invoke-interface {p1}, Lj3/yv;->o()V
 
     return-void
 .end method

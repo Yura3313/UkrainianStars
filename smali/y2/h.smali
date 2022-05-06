@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method public final U0()V
+.method public final V0()V
     .locals 3
 
     .line 1
@@ -40,7 +40,7 @@
     invoke-direct {v0, v1, v2}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;)V
 
     .line 2
-    iget-object v1, p0, Ly2/g$a;->a:La2/d;
+    iget-object v1, p0, Ly2/g$a;->g:La2/d;
 
     invoke-interface {v1, v0}, La2/d;->a(Ljava/lang/Object;)V
 

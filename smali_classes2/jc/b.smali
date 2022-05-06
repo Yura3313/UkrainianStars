@@ -1,8 +1,8 @@
 .class public interface abstract Ljc/b;
 .super Ljava/lang/Object;
-.source "ImageLoadingProgressListener.java"
+.source "JSONAware.java"
 
 
 # virtual methods
-.method public abstract a(Ljava/lang/String;Landroid/view/View;II)V
+.method public abstract toJSONString()Ljava/lang/String;
 .end method

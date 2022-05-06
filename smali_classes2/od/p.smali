@@ -1,6 +1,6 @@
 .class public final Lod/p;
 .super Lle/j;
-.source "PublicProfileFragment.kt"
+.source "RegisterEnterPinPageFragment.kt"
 
 # interfaces
 .implements Lke/p;
@@ -11,16 +11,16 @@
     value = {
         "Lle/j;",
         "Lke/p<",
-        "Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;",
-        "Ltc/r;",
-        "Lbe/n;",
+        "Lod/q;",
+        "Ljava/lang/Exception;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lod/p;
+.field public static final g:Lod/p;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Lod/p;-><init>()V
 
-    sput-object v0, Lod/p;->a:Lod/p;
+    sput-object v0, Lod/p;->g:Lod/p;
 
     return-void
 .end method
@@ -49,12 +49,12 @@
 
 # virtual methods
 .method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+    .locals 2
 
     .line 1
-    check-cast p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    check-cast p1, Lod/q;
 
-    check-cast p2, Ltc/r;
+    check-cast p2, Ljava/lang/Exception;
 
     const/4 v0, 0x0
 
@@ -63,55 +63,35 @@
     if-eqz p2, :cond_1
 
     .line 2
-    iget-object v0, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->m0:Lod/m;
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 3
-    instance-of v1, v0, Lod/m$c;
-
-    if-eqz v1, :cond_0
+    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->F(Ljava/lang/Exception;Lke/l;)V
 
     .line 4
-    new-instance v1, Lod/m$c;
-
-    new-instance v2, Lod/m$b;
-
-    invoke-direct {v2, p2}, Lod/m$b;-><init>(Ltc/r;)V
-
-    invoke-virtual {v0}, Lod/m;->h()Lcom/supercell/id/model/IdRelationshipStatus;
-
-    move-result-object p2
-
-    invoke-direct {v1, v2, p2}, Lod/m$c;-><init>(Lod/m;Lcom/supercell/id/model/IdRelationshipStatus;)V
-
-    goto :goto_0
-
-    .line 5
     :cond_0
-    new-instance v1, Lod/m$b;
-
-    invoke-direct {v1, p2}, Lod/m$b;-><init>(Ltc/r;)V
-
-    .line 6
-    :goto_0
-    invoke-virtual {p1, v1}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->t1(Lod/m;)V
-
-    .line 7
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
     :cond_1
     const-string p1, "it"
 
-    .line 8
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    .line 5
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_2
     const-string p1, "$receiver"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

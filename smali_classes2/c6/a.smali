@@ -14,41 +14,41 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lc6/a;
+.field public static final enum g:Lc6/a;
 
-.field public static final enum AZTEC:Lc6/a;
+.field public static final enum h:Lc6/a;
 
-.field public static final enum CODABAR:Lc6/a;
+.field public static final enum i:Lc6/a;
 
-.field public static final enum CODE_128:Lc6/a;
+.field public static final enum j:Lc6/a;
 
-.field public static final enum CODE_39:Lc6/a;
+.field public static final enum k:Lc6/a;
 
-.field public static final enum CODE_93:Lc6/a;
+.field public static final enum l:Lc6/a;
 
-.field public static final enum DATA_MATRIX:Lc6/a;
+.field public static final enum m:Lc6/a;
 
-.field public static final enum EAN_13:Lc6/a;
+.field public static final enum n:Lc6/a;
 
-.field public static final enum EAN_8:Lc6/a;
+.field public static final enum o:Lc6/a;
 
-.field public static final enum ITF:Lc6/a;
+.field public static final enum p:Lc6/a;
 
-.field public static final enum MAXICODE:Lc6/a;
+.field public static final enum q:Lc6/a;
 
-.field public static final enum PDF_417:Lc6/a;
+.field public static final enum r:Lc6/a;
 
-.field public static final enum QR_CODE:Lc6/a;
+.field public static final enum s:Lc6/a;
 
-.field public static final enum RSS_14:Lc6/a;
+.field public static final enum t:Lc6/a;
 
-.field public static final enum RSS_EXPANDED:Lc6/a;
+.field public static final enum u:Lc6/a;
 
-.field public static final enum UPC_A:Lc6/a;
+.field public static final enum v:Lc6/a;
 
-.field public static final enum UPC_E:Lc6/a;
+.field public static final enum w:Lc6/a;
 
-.field public static final enum UPC_EAN_EXTENSION:Lc6/a;
+.field public static final synthetic x:[Lc6/a;
 
 
 # direct methods
@@ -64,7 +64,7 @@
 
     invoke-direct {v0, v1, v2}, Lc6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lc6/a;->AZTEC:Lc6/a;
+    sput-object v0, Lc6/a;->g:Lc6/a;
 
     .line 2
     new-instance v1, Lc6/a;
@@ -75,7 +75,7 @@
 
     invoke-direct {v1, v3, v4}, Lc6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lc6/a;->CODABAR:Lc6/a;
+    sput-object v1, Lc6/a;->h:Lc6/a;
 
     .line 3
     new-instance v3, Lc6/a;
@@ -86,7 +86,7 @@
 
     invoke-direct {v3, v5, v6}, Lc6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Lc6/a;->CODE_39:Lc6/a;
+    sput-object v3, Lc6/a;->i:Lc6/a;
 
     .line 4
     new-instance v5, Lc6/a;
@@ -97,7 +97,7 @@
 
     invoke-direct {v5, v7, v8}, Lc6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v5, Lc6/a;->CODE_93:Lc6/a;
+    sput-object v5, Lc6/a;->j:Lc6/a;
 
     .line 5
     new-instance v7, Lc6/a;
@@ -108,7 +108,7 @@
 
     invoke-direct {v7, v9, v10}, Lc6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v7, Lc6/a;->CODE_128:Lc6/a;
+    sput-object v7, Lc6/a;->k:Lc6/a;
 
     .line 6
     new-instance v9, Lc6/a;
@@ -119,7 +119,7 @@
 
     invoke-direct {v9, v11, v12}, Lc6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v9, Lc6/a;->DATA_MATRIX:Lc6/a;
+    sput-object v9, Lc6/a;->l:Lc6/a;
 
     .line 7
     new-instance v11, Lc6/a;
@@ -130,7 +130,7 @@
 
     invoke-direct {v11, v13, v14}, Lc6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v11, Lc6/a;->EAN_8:Lc6/a;
+    sput-object v11, Lc6/a;->m:Lc6/a;
 
     .line 8
     new-instance v13, Lc6/a;
@@ -141,7 +141,7 @@
 
     invoke-direct {v13, v15, v14}, Lc6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v13, Lc6/a;->EAN_13:Lc6/a;
+    sput-object v13, Lc6/a;->n:Lc6/a;
 
     .line 9
     new-instance v15, Lc6/a;
@@ -152,7 +152,7 @@
 
     invoke-direct {v15, v14, v12}, Lc6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v15, Lc6/a;->ITF:Lc6/a;
+    sput-object v15, Lc6/a;->o:Lc6/a;
 
     .line 10
     new-instance v14, Lc6/a;
@@ -163,7 +163,7 @@
 
     invoke-direct {v14, v12, v10}, Lc6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v14, Lc6/a;->MAXICODE:Lc6/a;
+    sput-object v14, Lc6/a;->p:Lc6/a;
 
     .line 11
     new-instance v12, Lc6/a;
@@ -174,7 +174,7 @@
 
     invoke-direct {v12, v10, v8}, Lc6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v12, Lc6/a;->PDF_417:Lc6/a;
+    sput-object v12, Lc6/a;->q:Lc6/a;
 
     .line 12
     new-instance v10, Lc6/a;
@@ -185,7 +185,7 @@
 
     invoke-direct {v10, v8, v6}, Lc6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v10, Lc6/a;->QR_CODE:Lc6/a;
+    sput-object v10, Lc6/a;->r:Lc6/a;
 
     .line 13
     new-instance v8, Lc6/a;
@@ -196,7 +196,7 @@
 
     invoke-direct {v8, v6, v4}, Lc6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v8, Lc6/a;->RSS_14:Lc6/a;
+    sput-object v8, Lc6/a;->s:Lc6/a;
 
     .line 14
     new-instance v6, Lc6/a;
@@ -207,7 +207,7 @@
 
     invoke-direct {v6, v4, v2}, Lc6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v6, Lc6/a;->RSS_EXPANDED:Lc6/a;
+    sput-object v6, Lc6/a;->t:Lc6/a;
 
     .line 15
     new-instance v4, Lc6/a;
@@ -220,7 +220,7 @@
 
     invoke-direct {v4, v2, v6}, Lc6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v4, Lc6/a;->UPC_A:Lc6/a;
+    sput-object v4, Lc6/a;->u:Lc6/a;
 
     .line 16
     new-instance v2, Lc6/a;
@@ -233,7 +233,7 @@
 
     invoke-direct {v2, v6, v4}, Lc6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v2, Lc6/a;->UPC_E:Lc6/a;
+    sput-object v2, Lc6/a;->v:Lc6/a;
 
     .line 17
     new-instance v6, Lc6/a;
@@ -246,7 +246,7 @@
 
     invoke-direct {v6, v4, v2}, Lc6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v6, Lc6/a;->UPC_EAN_EXTENSION:Lc6/a;
+    sput-object v6, Lc6/a;->w:Lc6/a;
 
     const/16 v4, 0x11
 
@@ -319,12 +319,12 @@
     aput-object v6, v4, v2
 
     .line 18
-    sput-object v4, Lc6/a;->$VALUES:[Lc6/a;
+    sput-object v4, Lc6/a;->x:[Lc6/a;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;I)V
+.method public constructor <init>(Ljava/lang/String;I)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -357,7 +357,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lc6/a;->$VALUES:[Lc6/a;
+    sget-object v0, Lc6/a;->x:[Lc6/a;
 
     invoke-virtual {v0}, [Lc6/a;->clone()Ljava/lang/Object;
 

@@ -57,7 +57,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -89,13 +89,13 @@
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    sget-object p0, Lde/g;->a:Lde/g;
+    sget-object p0, Lde/g;->g:Lde/g;
 
     :cond_0
     return-object p0

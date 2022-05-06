@@ -1,177 +1,65 @@
-.class public final Lj3/sv;
-.super Lj3/rv;
+.class public final synthetic Lj3/sv;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final b:Lorg/json/JSONObject;
+.field public final g:Lj3/pv;
 
-.field public final c:Z
-
-.field public final d:Z
-
-.field public final e:Z
-
-.field public final f:Z
+.field public final h:Z
 
 
 # direct methods
-.method public constructor <init>(Lj3/eg0;Lorg/json/JSONObject;)V
-    .locals 4
+.method public constructor <init>(Lj3/pv;Z)V
+    .locals 0
 
-    .line 1
-    invoke-direct {p0, p1}, Lj3/rv;-><init>(Lj3/eg0;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 p1, 0x2
+    iput-object p1, p0, Lj3/sv;->g:Lj3/pv;
 
-    new-array v0, p1, [Ljava/lang/String;
-
-    const/4 v1, 0x0
-
-    const-string v2, "tracking_urls_and_actions"
-
-    aput-object v2, v0, v1
-
-    const/4 v2, 0x1
-
-    const-string v3, "active_view"
-
-    aput-object v3, v0, v2
-
-    .line 2
-    invoke-static {p2, v0}, Lj3/jc;->d(Lorg/json/JSONObject;[Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lj3/sv;->b:Lorg/json/JSONObject;
-
-    new-array v0, v2, [Ljava/lang/String;
-
-    const-string v3, "allow_pub_owned_ad_view"
-
-    aput-object v3, v0, v1
-
-    .line 3
-    invoke-static {p2, v0}, Lj3/jc;->h(Lorg/json/JSONObject;[Ljava/lang/String;)Z
-
-    move-result v0
-
-    iput-boolean v0, p0, Lj3/sv;->c:Z
-
-    new-array p1, p1, [Ljava/lang/String;
-
-    const-string v0, "attribution"
-
-    aput-object v0, p1, v1
-
-    const-string v0, "allow_pub_rendering"
-
-    aput-object v0, p1, v2
-
-    .line 4
-    invoke-static {p2, p1}, Lj3/jc;->h(Lorg/json/JSONObject;[Ljava/lang/String;)Z
-
-    move-result p1
-
-    iput-boolean p1, p0, Lj3/sv;->d:Z
-
-    new-array p1, v2, [Ljava/lang/String;
-
-    const-string v0, "enable_omid"
-
-    aput-object v0, p1, v1
-
-    .line 5
-    invoke-static {p2, p1}, Lj3/jc;->h(Lorg/json/JSONObject;[Ljava/lang/String;)Z
-
-    move-result p1
-
-    iput-boolean p1, p0, Lj3/sv;->e:Z
-
-    if-eqz p2, :cond_0
-
-    const-string p1, "overlay"
-
-    .line 6
-    invoke-virtual {p2, p1}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    const/4 v1, 0x1
-
-    :cond_0
-    iput-boolean v1, p0, Lj3/sv;->f:Z
+    iput-boolean p2, p0, Lj3/sv;->h:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Z
-    .locals 1
+.method public final run()V
+    .locals 5
+
+    iget-object v0, p0, Lj3/sv;->g:Lj3/pv;
+
+    iget-boolean v1, p0, Lj3/sv;->h:Z
 
     .line 1
-    iget-boolean v0, p0, Lj3/sv;->e:Z
+    iget-object v2, v0, Lj3/pv;->j:Lj3/yv;
 
-    return v0
-.end method
-
-.method public final b()Lorg/json/JSONObject;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lj3/sv;->b:Lorg/json/JSONObject;
-
-    if-eqz v0, :cond_0
-
-    return-object v0
+    iget-object v3, v0, Lj3/pv;->s:Lj3/ww;
 
     .line 2
-    :cond_0
-    :try_start_0
-    new-instance v0, Lorg/json/JSONObject;
+    invoke-interface {v3}, Lj3/ww;->j5()Landroid/view/View;
 
-    iget-object v1, p0, Lj3/rv;->a:Lj3/eg0;
+    move-result-object v3
 
-    iget-object v1, v1, Lj3/eg0;->y:Ljava/lang/String;
+    iget-object v4, v0, Lj3/pv;->s:Lj3/ww;
 
-    invoke-direct {v0, v1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+    .line 3
+    invoke-interface {v4}, Lj3/ww;->O3()Ljava/util/Map;
 
-    return-object v0
+    move-result-object v4
 
-    :catch_0
-    const/4 v0, 0x0
+    iget-object v0, v0, Lj3/pv;->s:Lj3/ww;
 
-    return-object v0
-.end method
+    .line 4
+    invoke-interface {v0}, Lj3/ww;->N4()Ljava/util/Map;
 
-.method public final c()Z
-    .locals 1
+    move-result-object v0
 
-    .line 1
-    iget-boolean v0, p0, Lj3/sv;->f:Z
+    .line 5
+    invoke-interface {v2, v3, v4, v0, v1}, Lj3/yv;->n(Landroid/view/View;Ljava/util/Map;Ljava/util/Map;Z)V
 
-    return v0
-.end method
-
-.method public final d()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lj3/sv;->c:Z
-
-    return v0
-.end method
-
-.method public final e()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lj3/sv;->d:Z
-
-    return v0
+    return-void
 .end method

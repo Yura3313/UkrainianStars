@@ -480,7 +480,7 @@
 
     const-string p2, "captureChildView: parameter must be a descendant of the ViewDragHelper\'s tracked parent view ("
 
-    invoke-static {p2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
@@ -1034,7 +1034,7 @@
     .line 7
     iget-object v4, p0, Lj0/c;->s:Landroid/view/View;
 
-    invoke-static {v4, v8}, Lf0/s;->s(Landroid/view/View;I)V
+    invoke-static {v4, v8}, Lf0/r;->s(Landroid/view/View;I)V
 
     :cond_0
     if-eqz v9, :cond_1
@@ -1042,7 +1042,7 @@
     .line 8
     iget-object v4, p0, Lj0/c;->s:Landroid/view/View;
 
-    invoke-static {v4, v9}, Lf0/s;->t(Landroid/view/View;I)V
+    invoke-static {v4, v9}, Lf0/r;->t(Landroid/view/View;I)V
 
     :cond_1
     if-nez v8, :cond_2
@@ -1829,7 +1829,7 @@
 
     sub-int v7, v2, v4
 
-    invoke-static {v6, v7}, Lf0/s;->s(Landroid/view/View;I)V
+    invoke-static {v6, v7}, Lf0/r;->s(Landroid/view/View;I)V
 
     :cond_d
     move v10, v2
@@ -1850,7 +1850,7 @@
 
     sub-int v6, v3, v5
 
-    invoke-static {v2, v6}, Lf0/s;->t(Landroid/view/View;I)V
+    invoke-static {v2, v6}, Lf0/r;->t(Landroid/view/View;I)V
 
     :cond_e
     move v11, v3

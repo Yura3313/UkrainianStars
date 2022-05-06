@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/titan/GameApp;
+.field public final synthetic g:Lcom/supercell/titan/GameApp;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/titan/GameApp$b;->a:Lcom/supercell/titan/GameApp;
+    iput-object p1, p0, Lcom/supercell/titan/GameApp$b;->g:Lcom/supercell/titan/GameApp;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,9 +39,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/GameApp$b;->a:Lcom/supercell/titan/GameApp;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp$b;->g:Lcom/supercell/titan/GameApp;
 
-    iget-object v0, v0, Lcom/supercell/titan/GameApp;->K:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, v0, Lcom/supercell/titan/GameApp;->L:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->tryLock()Z
 
@@ -50,10 +50,10 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/titan/GameApp$b;->a:Lcom/supercell/titan/GameApp;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp$b;->g:Lcom/supercell/titan/GameApp;
 
     .line 3
-    iget-object v1, v0, Lcom/supercell/titan/GameApp;->m:Lcom/supercell/titan/GL2JNISurfaceView;
+    iget-object v1, v0, Lcom/supercell/titan/GameApp;->n:Lcom/supercell/titan/GL2JNISurfaceView;
 
     .line 4
     invoke-virtual {v1}, Landroid/view/SurfaceView;->getHeight()I
@@ -65,12 +65,12 @@
     move-result v1
 
     .line 5
-    iput v1, v0, Lcom/supercell/titan/GameApp;->I:F
+    iput v1, v0, Lcom/supercell/titan/GameApp;->J:F
 
     .line 6
-    iget-object v0, p0, Lcom/supercell/titan/GameApp$b;->a:Lcom/supercell/titan/GameApp;
+    iget-object v0, p0, Lcom/supercell/titan/GameApp$b;->g:Lcom/supercell/titan/GameApp;
 
-    iget-object v0, v0, Lcom/supercell/titan/GameApp;->K:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, v0, Lcom/supercell/titan/GameApp;->L:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 

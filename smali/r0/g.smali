@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field public final a:Ljava/io/File;
+.field public final g:Ljava/io/File;
 
-.field public final b:J
+.field public final h:J
 
-.field public final h:Ljava/io/File;
+.field public final i:Ljava/io/File;
 
-.field public final i:Ljava/io/RandomAccessFile;
+.field public final j:Ljava/io/RandomAccessFile;
 
-.field public final j:Ljava/nio/channels/FileChannel;
+.field public final k:Ljava/nio/channels/FileChannel;
 
-.field public final k:Ljava/nio/channels/FileLock;
+.field public final l:Ljava/nio/channels/FileLock;
 
 
 # direct methods
@@ -46,17 +46,17 @@
     invoke-virtual {p2}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     .line 3
-    iput-object p1, p0, Lr0/g;->a:Ljava/io/File;
+    iput-object p1, p0, Lr0/g;->g:Ljava/io/File;
 
     .line 4
-    iput-object p2, p0, Lr0/g;->h:Ljava/io/File;
+    iput-object p2, p0, Lr0/g;->i:Ljava/io/File;
 
     .line 5
     invoke-static {p1}, Lr0/g;->c(Ljava/io/File;)J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lr0/g;->b:J
+    iput-wide v0, p0, Lr0/g;->h:J
 
     .line 6
     new-instance p1, Ljava/io/File;
@@ -72,7 +72,7 @@
 
     invoke-direct {p2, p1, v0}, Ljava/io/RandomAccessFile;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object p2, p0, Lr0/g;->i:Ljava/io/RandomAccessFile;
+    iput-object p2, p0, Lr0/g;->j:Ljava/io/RandomAccessFile;
 
     .line 8
     :try_start_0
@@ -80,7 +80,7 @@
 
     move-result-object p2
 
-    iput-object p2, p0, Lr0/g;->j:Ljava/nio/channels/FileChannel;
+    iput-object p2, p0, Lr0/g;->k:Ljava/nio/channels/FileChannel;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_6
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_5
@@ -95,7 +95,7 @@
 
     move-result-object p2
 
-    iput-object p2, p0, Lr0/g;->k:Ljava/nio/channels/FileLock;
+    iput-object p2, p0, Lr0/g;->l:Ljava/nio/channels/FileLock;
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_2
     .catch Ljava/lang/RuntimeException; {:try_start_1 .. :try_end_1} :catch_1
@@ -122,7 +122,7 @@
 
     .line 12
     :goto_0
-    iget-object p2, p0, Lr0/g;->j:Ljava/nio/channels/FileChannel;
+    iget-object p2, p0, Lr0/g;->k:Ljava/nio/channels/FileChannel;
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_6
     .catch Ljava/lang/RuntimeException; {:try_start_2 .. :try_end_2} :catch_5
@@ -160,7 +160,7 @@
 
     .line 15
     :goto_1
-    iget-object p2, p0, Lr0/g;->i:Ljava/io/RandomAccessFile;
+    iget-object p2, p0, Lr0/g;->j:Ljava/io/RandomAccessFile;
 
     .line 16
     :try_start_5
@@ -190,7 +190,7 @@
     const-string v0, "tmp-"
 
     .line 2
-    invoke-static {v0, p3}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p3}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p3
 
@@ -693,7 +693,7 @@
 
     move-result-object p5
 
-    iget-wide v0, p4, Lr0/g$a;->a:J
+    iget-wide v0, p4, Lr0/g$a;->g:J
 
     invoke-interface {p0, p5, v0, v1}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
 
@@ -742,17 +742,17 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lr0/g;->k:Ljava/nio/channels/FileLock;
+    iget-object v0, p0, Lr0/g;->l:Ljava/nio/channels/FileLock;
 
     invoke-virtual {v0}, Ljava/nio/channels/FileLock;->release()V
 
     .line 2
-    iget-object v0, p0, Lr0/g;->j:Ljava/nio/channels/FileChannel;
+    iget-object v0, p0, Lr0/g;->k:Ljava/nio/channels/FileChannel;
 
     invoke-virtual {v0}, Ljava/nio/channels/FileChannel;->close()V
 
     .line 3
-    iget-object v0, p0, Lr0/g;->i:Ljava/io/RandomAccessFile;
+    iget-object v0, p0, Lr0/g;->j:Ljava/io/RandomAccessFile;
 
     invoke-virtual {v0}, Ljava/io/RandomAccessFile;->close()V
 
@@ -785,12 +785,12 @@
     move-object/from16 v2, p2
 
     .line 1
-    iget-object v1, v0, Lr0/g;->a:Ljava/io/File;
+    iget-object v1, v0, Lr0/g;->g:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     .line 2
-    iget-object v1, v0, Lr0/g;->k:Ljava/nio/channels/FileLock;
+    iget-object v1, v0, Lr0/g;->l:Ljava/nio/channels/FileLock;
 
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->isValid()Z
 
@@ -801,9 +801,9 @@
     if-nez p3, :cond_2
 
     .line 3
-    iget-object v1, v0, Lr0/g;->a:Ljava/io/File;
+    iget-object v1, v0, Lr0/g;->g:Ljava/io/File;
 
-    iget-wide v3, v0, Lr0/g;->b:J
+    iget-wide v3, v0, Lr0/g;->h:J
 
     const/4 v5, 0x4
 
@@ -899,13 +899,13 @@
     move-result-object v8
 
     .line 9
-    iget-object v1, v0, Lr0/g;->a:Ljava/io/File;
+    iget-object v1, v0, Lr0/g;->g:Ljava/io/File;
 
     invoke-static {v1}, Lr0/g;->b(Ljava/io/File;)J
 
     move-result-wide v3
 
-    iget-wide v5, v0, Lr0/g;->b:J
+    iget-wide v5, v0, Lr0/g;->h:J
 
     move-object v1, p1
 
@@ -927,13 +927,13 @@
     move-result-object v8
 
     .line 11
-    iget-object v1, v0, Lr0/g;->a:Ljava/io/File;
+    iget-object v1, v0, Lr0/g;->g:Ljava/io/File;
 
     invoke-static {v1}, Lr0/g;->b(Ljava/io/File;)J
 
     move-result-wide v3
 
-    iget-wide v5, v0, Lr0/g;->b:J
+    iget-wide v5, v0, Lr0/g;->h:J
 
     move-object v1, p1
 
@@ -992,7 +992,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v3, v0, Lr0/g;->a:Ljava/io/File;
+    iget-object v3, v0, Lr0/g;->g:Ljava/io/File;
 
     invoke-virtual {v3}, Ljava/io/File;->getName()Ljava/lang/String;
 
@@ -1055,14 +1055,14 @@
     const-string v7, ".zip"
 
     .line 5
-    invoke-static {v2, v6, v7}, Lb0/c;->c(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v6, v7}, Lb0/c;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
 
     .line 6
     new-instance v8, Lr0/g$a;
 
-    iget-object v9, v0, Lr0/g;->h:Ljava/io/File;
+    iget-object v9, v0, Lr0/g;->i:Ljava/io/File;
 
     invoke-direct {v8, v9, v7}, Lr0/g$a;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -1078,7 +1078,7 @@
 
     move-result-wide v9
 
-    iput-wide v9, v8, Lr0/g$a;->a:J
+    iput-wide v9, v8, Lr0/g$a;->g:J
 
     .line 9
     new-instance v7, Ljava/lang/StringBuilder;
@@ -1138,7 +1138,7 @@
     move-object/from16 p1, v3
 
     .line 12
-    iget-wide v2, v8, Lr0/g$a;->a:J
+    iget-wide v2, v8, Lr0/g$a;->g:J
 
     cmp-long v15, v11, v2
 
@@ -1197,7 +1197,7 @@
 
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v4, v8, Lr0/g$a;->a:J
+    iget-wide v4, v8, Lr0/g$a;->g:J
 
     invoke-virtual {v3, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -1215,7 +1215,7 @@
 
     const-string v2, "Missing extracted secondary dex file \'"
 
-    invoke-static {v2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -1264,7 +1264,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lr0/g;->a:Ljava/io/File;
+    iget-object v1, p0, Lr0/g;->g:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
 
@@ -1281,7 +1281,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lr0/g;->h:Ljava/io/File;
+    iget-object v1, p0, Lr0/g;->i:Ljava/io/File;
 
     new-instance v2, Lr0/f;
 
@@ -1296,7 +1296,7 @@
     if-nez v1, :cond_0
 
     .line 3
-    iget-object v1, p0, Lr0/g;->h:Ljava/io/File;
+    iget-object v1, p0, Lr0/g;->i:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->getPath()Ljava/lang/String;
 
@@ -1350,7 +1350,7 @@
     .line 11
     new-instance v3, Ljava/util/zip/ZipFile;
 
-    iget-object v4, p0, Lr0/g;->a:Ljava/io/File;
+    iget-object v4, p0, Lr0/g;->g:Ljava/io/File;
 
     invoke-direct {v3, v4}, Ljava/util/zip/ZipFile;-><init>(Ljava/io/File;)V
 
@@ -1387,7 +1387,7 @@
     .line 14
     new-instance v7, Lr0/g$a;
 
-    iget-object v8, p0, Lr0/g;->h:Ljava/io/File;
+    iget-object v8, p0, Lr0/g;->i:Ljava/io/File;
 
     invoke-direct {v7, v8, v6}, Lr0/g$a;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -1422,7 +1422,7 @@
 
     move-result-wide v8
 
-    iput-wide v8, v7, Lr0/g$a;->a:J
+    iput-wide v8, v7, Lr0/g$a;->g:J
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0

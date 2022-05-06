@@ -3,48 +3,64 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/gl0;
+.implements Ljava/util/concurrent/Callable;
 
 
-# static fields
-.field public static final a:Lj3/gl0;
+# instance fields
+.field public final a:Lj3/tb0;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lj3/wb0;
-
-    invoke-direct {v0}, Lj3/wb0;-><init>()V
-
-    sput-object v0, Lj3/wb0;->a:Lj3/gl0;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lj3/tb0;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lj3/wb0;->a:Lj3/tb0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lj3/yl0;
-    .locals 0
+.method public final call()Ljava/lang/Object;
+    .locals 3
+
+    iget-object v0, p0, Lj3/wb0;->a:Lj3/tb0;
 
     .line 1
-    check-cast p1, Ljava/lang/Throwable;
+    iget-object v1, v0, Lj3/tb0;->b:Lj3/wg0;
 
-    const/4 p1, 0x0
+    iget-object v1, v1, Lj3/wg0;->g:Ljava/util/ArrayList;
+
+    if-nez v1, :cond_0
 
     .line 2
-    invoke-static {p1}, Lj3/ul0;->i(Ljava/lang/Object;)Lj3/yl0;
+    sget-object v0, Lj3/vb0;->a:Lj3/ub0;
 
-    move-result-object p1
+    goto :goto_0
 
-    return-object p1
+    .line 3
+    :cond_0
+    invoke-virtual {v1}, Ljava/util/ArrayList;->isEmpty()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 4
+    sget-object v0, Lj3/yb0;->a:Lj3/ub0;
+
+    goto :goto_0
+
+    .line 5
+    :cond_1
+    new-instance v2, Lj3/xb0;
+
+    invoke-direct {v2, v0, v1}, Lj3/xb0;-><init>(Lj3/tb0;Ljava/util/ArrayList;)V
+
+    move-object v0, v2
+
+    :goto_0
+    return-object v0
 .end method

@@ -48,7 +48,7 @@
     sput-object v0, Lj3/q5;->b:Lj3/r5;
 
     .line 3
-    sget-object v0, Lb4/i;->a:Lj3/p5;
+    sget-object v0, Lj3/t5;->g:Lj3/p5;
 
     sput-object v0, Lj3/q5;->c:Lj3/p5;
 

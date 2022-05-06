@@ -1,90 +1,82 @@
 .class public final Lj3/ae;
-.super Ljava/lang/Object;
+.super Lj3/de;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/ViewTreeObserver$OnScrollChangedListener;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final b:Ljava/lang/Object;
+.field public final h:Ljava/lang/ref/WeakReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/ref/WeakReference<",
+            "Landroid/view/ViewTreeObserver$OnScrollChangedListener;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method public constructor <init>(Landroid/view/View;Landroid/view/ViewTreeObserver$OnScrollChangedListener;)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lj3/ae;->a:I
+    invoke-direct {p0, p1}, Lj3/de;-><init>(Landroid/view/View;)V
 
-    iput-object p1, p0, Lj3/ae;->b:Ljava/lang/Object;
+    .line 2
+    new-instance p1, Ljava/lang/ref/WeakReference;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p1, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Lj3/ae;->h:Ljava/lang/ref/WeakReference;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
-
-    iget v0, p0, Lj3/ae;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
+.method public final d(Landroid/view/ViewTreeObserver;)V
+    .locals 0
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/ae;->b:Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Landroid/view/ViewTreeObserver;->addOnScrollChangedListener(Landroid/view/ViewTreeObserver$OnScrollChangedListener;)V
 
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzdhl;
+    return-void
+.end method
+
+.method public final e(Landroid/view/ViewTreeObserver;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1, p0}, Landroid/view/ViewTreeObserver;->removeOnScrollChangedListener(Landroid/view/ViewTreeObserver$OnScrollChangedListener;)V
+
+    return-void
+.end method
+
+.method public final onScrollChanged()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/ae;->h:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/ViewTreeObserver$OnScrollChangedListener;
+
+    if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/zzdhl;->y7()V
+    invoke-interface {v0}, Landroid/view/ViewTreeObserver$OnScrollChangedListener;->onScrollChanged()V
 
     return-void
 
     .line 3
-    :pswitch_1
-    iget-object v0, p0, Lj3/ae;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/yd;
-
-    .line 4
-    iget-object v0, v0, Lj3/yd;->s:Lj3/ie;
-
-    if-eqz v0, :cond_0
-
-    .line 5
-    check-cast v0, Lj3/me;
-
-    invoke-virtual {v0}, Lj3/me;->d()V
-
     :cond_0
-    return-void
-
-    .line 6
-    :goto_0
-    iget-object v0, p0, Lj3/ae;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/f21;
-
-    const/4 v1, 0x3
-
-    .line 7
-    invoke-virtual {v0, v1}, Lj3/f21;->c(I)V
+    invoke-virtual {p0}, Lj3/de;->b()V
 
     return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

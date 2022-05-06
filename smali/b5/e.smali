@@ -389,7 +389,7 @@
         value = {
             "()",
             "Ljava/util/Set<",
-            "Lb5/q;",
+            "Lb5/o;",
             ">;"
         }
     .end annotation

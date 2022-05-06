@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final a:J
+.field public final g:J
 
-.field public final b:J
+.field public final h:J
 
 
 # direct methods
@@ -41,10 +41,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-wide p1, p0, Lcom/google/android/gms/drive/zzh;->a:J
+    iput-wide p1, p0, Lcom/google/android/gms/drive/zzh;->g:J
 
     .line 3
-    iput-wide p3, p0, Lcom/google/android/gms/drive/zzh;->b:J
+    iput-wide p3, p0, Lcom/google/android/gms/drive/zzh;->h:J
 
     return-void
 .end method
@@ -64,7 +64,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iget-wide v1, p0, Lcom/google/android/gms/drive/zzh;->a:J
+    iget-wide v1, p0, Lcom/google/android/gms/drive/zzh;->g:J
 
     const/16 v3, 0x8
 
@@ -77,7 +77,7 @@
     const/4 v0, 0x3
 
     .line 5
-    iget-wide v1, p0, Lcom/google/android/gms/drive/zzh;->b:J
+    iget-wide v1, p0, Lcom/google/android/gms/drive/zzh;->h:J
 
     .line 6
     invoke-static {p1, v0, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V

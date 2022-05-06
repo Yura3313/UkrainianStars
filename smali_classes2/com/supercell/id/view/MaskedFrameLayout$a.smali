@@ -21,15 +21,15 @@
         "Ljava/lang/Object;",
         "Lke/p<",
         "Landroid/graphics/drawable/Drawable;",
-        "Lqd/g;",
-        "Lbe/n;",
+        "Lpd/g;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/ref/WeakReference;
+.field public final synthetic g:Ljava/lang/ref/WeakReference;
 
 
 # direct methods
@@ -37,7 +37,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/id/view/MaskedFrameLayout$a;->a:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lcom/supercell/id/view/MaskedFrameLayout$a;->g:Ljava/lang/ref/WeakReference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,7 +52,7 @@
     .line 1
     check-cast p1, Landroid/graphics/drawable/Drawable;
 
-    check-cast p2, Lqd/g;
+    check-cast p2, Lpd/g;
 
     const/4 v0, 0x0
 
@@ -61,7 +61,7 @@
     if-eqz p2, :cond_1
 
     .line 2
-    iget-object p2, p0, Lcom/supercell/id/view/MaskedFrameLayout$a;->a:Ljava/lang/ref/WeakReference;
+    iget-object p2, p0, Lcom/supercell/id/view/MaskedFrameLayout$a;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -76,7 +76,7 @@
 
     .line 4
     :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -84,14 +84,14 @@
     const-string p1, "assetLocation"
 
     .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_2
     const-string p1, "drawable"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

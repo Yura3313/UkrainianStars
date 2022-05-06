@@ -1,6 +1,6 @@
-.class public synthetic Lp5/t$a;
+.class public Lp5/t$a;
 .super Ljava/lang/Object;
-.source "Ed25519Constants.java"
+.source "Ed25519.java"
 
 
 # annotations
@@ -9,6 +9,127 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1009
-    name = null
+    accessFlags = 0x9
+    name = "a"
 .end annotation
+
+
+# instance fields
+.field public final a:[J
+
+.field public final b:[J
+
+.field public final c:[J
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    const/16 v0, 0xa
+
+    new-array v1, v0, [J
+
+    new-array v2, v0, [J
+
+    new-array v0, v0, [J
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object v1, p0, Lp5/t$a;->a:[J
+
+    .line 3
+    iput-object v2, p0, Lp5/t$a;->b:[J
+
+    .line 4
+    iput-object v0, p0, Lp5/t$a;->c:[J
+
+    return-void
+.end method
+
+.method public constructor <init>(Lp5/t$a;)V
+    .locals 2
+
+    .line 9
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 10
+    iget-object v0, p1, Lp5/t$a;->a:[J
+
+    const/16 v1, 0xa
+
+    invoke-static {v0, v1}, Ljava/util/Arrays;->copyOf([JI)[J
+
+    move-result-object v0
+
+    iput-object v0, p0, Lp5/t$a;->a:[J
+
+    .line 11
+    iget-object v0, p1, Lp5/t$a;->b:[J
+
+    invoke-static {v0, v1}, Ljava/util/Arrays;->copyOf([JI)[J
+
+    move-result-object v0
+
+    iput-object v0, p0, Lp5/t$a;->b:[J
+
+    .line 12
+    iget-object p1, p1, Lp5/t$a;->c:[J
+
+    invoke-static {p1, v1}, Ljava/util/Arrays;->copyOf([JI)[J
+
+    move-result-object p1
+
+    iput-object p1, p0, Lp5/t$a;->c:[J
+
+    return-void
+.end method
+
+.method public constructor <init>([J[J[J)V
+    .locals 0
+
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    iput-object p1, p0, Lp5/t$a;->a:[J
+
+    .line 7
+    iput-object p2, p0, Lp5/t$a;->b:[J
+
+    .line 8
+    iput-object p3, p0, Lp5/t$a;->c:[J
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lp5/t$a;I)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lp5/t$a;->a:[J
+
+    iget-object v1, p1, Lp5/t$a;->a:[J
+
+    invoke-static {v0, v1, p2}, Lcom/google/android/play/core/assetpacks/u2;->b([J[JI)V
+
+    .line 2
+    iget-object v0, p0, Lp5/t$a;->b:[J
+
+    iget-object v1, p1, Lp5/t$a;->b:[J
+
+    invoke-static {v0, v1, p2}, Lcom/google/android/play/core/assetpacks/u2;->b([J[JI)V
+
+    .line 3
+    iget-object v0, p0, Lp5/t$a;->c:[J
+
+    iget-object p1, p1, Lp5/t$a;->c:[J
+
+    invoke-static {v0, p1, p2}, Lcom/google/android/play/core/assetpacks/u2;->b([J[JI)V
+
+    return-void
+.end method

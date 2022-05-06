@@ -1,14 +1,11 @@
-.class public Lxb/b;
-.super Lxb/a;
-.source "UnlimitedDiskCache.java"
+.class public interface abstract Lxb/b;
+.super Ljava/lang/Object;
+.source "MemoryCache.java"
 
 
-# direct methods
-.method public constructor <init>(Ljava/io/File;Ljava/io/File;Lr4/e;)V
-    .locals 0
+# virtual methods
+.method public abstract a(Ljava/lang/String;)Landroid/graphics/Bitmap;
+.end method
 
-    .line 1
-    invoke-direct {p0, p1, p2, p3}, Lxb/a;-><init>(Ljava/io/File;Ljava/io/File;Lr4/e;)V
-
-    return-void
+.method public abstract b(Ljava/lang/String;Landroid/graphics/Bitmap;)Z
 .end method

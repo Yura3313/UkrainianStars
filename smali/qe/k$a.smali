@@ -1,14 +1,15 @@
 .class public final Lqe/k$a;
-.super Lle/j;
-.source "_Sequences.kt"
+.super Ljava/lang/Object;
+.source "Sequences.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Ljava/util/Iterator;
+.implements Lme/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lqe/k;->i(Lqe/d;)Lqe/d;
+    value = Lqe/k;->iterator()Ljava/util/Iterator;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,60 +19,105 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "TT;",
-        "Ljava/lang/Boolean;",
-        ">;"
+        "Ljava/lang/Object;",
+        "Ljava/util/Iterator<",
+        "TR;>;",
+        "Lme/a;"
     }
 .end annotation
 
 
-# static fields
-.field public static final a:Lqe/k$a;
+# instance fields
+.field public final g:Ljava/util/Iterator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Iterator<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+.field public final synthetic h:Lqe/k;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lqe/k;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
-    new-instance v0, Lqe/k$a;
+    .line 1
+    iput-object p1, p0, Lqe/k$a;->h:Lqe/k;
 
-    invoke-direct {v0}, Lqe/k$a;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lqe/k$a;->a:Lqe/k$a;
+    .line 2
+    iget-object p1, p1, Lqe/k;->a:Lqe/d;
 
-    return-void
-.end method
+    .line 3
+    invoke-interface {p1}, Lqe/d;->iterator()Ljava/util/Iterator;
 
-.method public constructor <init>()V
-    .locals 1
+    move-result-object p1
 
-    const/4 v0, 0x1
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    iput-object p1, p0, Lqe/k$a;->g:Ljava/util/Iterator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public hasNext()Z
+    .locals 1
 
-    if-nez p1, :cond_0
+    .line 1
+    iget-object v0, p0, Lqe/k$a;->g:Ljava/util/Iterator;
 
-    const/4 p1, 0x1
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    goto :goto_0
+    move-result v0
 
-    :cond_0
-    const/4 p1, 0x0
+    return v0
+.end method
 
-    :goto_0
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+.method public next()Ljava/lang/Object;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TR;"
+        }
+    .end annotation
 
-    move-result-object p1
+    .line 1
+    iget-object v0, p0, Lqe/k$a;->h:Lqe/k;
 
-    return-object p1
+    .line 2
+    iget-object v0, v0, Lqe/k;->b:Lke/l;
+
+    .line 3
+    iget-object v1, p0, Lqe/k$a;->g:Ljava/util/Iterator;
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Lke/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public remove()V
+    .locals 2
+
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    const-string v1, "Operation is not supported for read-only collection"
+
+    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw v0
 .end method

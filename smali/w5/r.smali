@@ -1,203 +1,551 @@
 .class public final Lw5/r;
 .super Ljava/lang/Object;
 
-
-# static fields
-.field public static final d:J
-
-.field public static final synthetic e:I
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:J
 
-.field public final b:Ljava/lang/String;
+.field public final h:Landroid/os/PowerManager$WakeLock;
 
-.field public final c:J
+.field public final i:Lcom/google/firebase/iid/FirebaseInstanceId;
+
+.field public final j:Lw5/t;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
-
-    .line 1
-    sget-object v0, Ljava/util/concurrent/TimeUnit;->DAYS:Ljava/util/concurrent/TimeUnit;
-
-    const-wide/16 v1, 0x7
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
-
-    move-result-wide v0
-
-    sput-wide v0, Lw5/r;->d:J
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;J)V
+.method public constructor <init>(Lcom/google/firebase/iid/FirebaseInstanceId;Lw5/t;J)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lw5/r;->a:Ljava/lang/String;
+    iput-object p1, p0, Lw5/r;->i:Lcom/google/firebase/iid/FirebaseInstanceId;
 
     .line 3
-    iput-object p2, p0, Lw5/r;->b:Ljava/lang/String;
+    iput-object p2, p0, Lw5/r;->j:Lw5/t;
 
     .line 4
-    iput-wide p3, p0, Lw5/r;->c:J
+    iput-wide p3, p0, Lw5/r;->g:J
+
+    .line 5
+    invoke-virtual {p0}, Lw5/r;->a()Landroid/content/Context;
+
+    move-result-object p1
+
+    const-string p2, "power"
+
+    invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/os/PowerManager;
+
+    const/4 p2, 0x1
+
+    const-string p3, "fiid-sync"
+
+    .line 6
+    invoke-virtual {p1, p2, p3}, Landroid/os/PowerManager;->newWakeLock(ILjava/lang/String;)Landroid/os/PowerManager$WakeLock;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lw5/r;->h:Landroid/os/PowerManager$WakeLock;
+
+    const/4 p2, 0x0
+
+    .line 7
+    invoke-virtual {p1, p2}, Landroid/os/PowerManager$WakeLock;->setReferenceCounted(Z)V
 
     return-void
 .end method
 
-.method public static a(Lw5/r;)Ljava/lang/String;
-    .locals 0
 
-    if-nez p0, :cond_0
-
-    const/4 p0, 0x0
-
-    return-object p0
+# virtual methods
+.method public final a()Landroid/content/Context;
+    .locals 1
 
     .line 1
-    :cond_0
-    iget-object p0, p0, Lw5/r;->a:Ljava/lang/String;
+    iget-object v0, p0, Lw5/r;->i:Lcom/google/firebase/iid/FirebaseInstanceId;
 
-    return-object p0
+    .line 2
+    iget-object v0, v0, Lcom/google/firebase/iid/FirebaseInstanceId;->b:Lr5/b;
+
+    .line 3
+    invoke-virtual {v0}, Lr5/b;->f()V
+
+    .line 4
+    iget-object v0, v0, Lr5/b;->a:Landroid/content/Context;
+
+    return-object v0
 .end method
 
-.method public static b(Ljava/lang/String;)Lw5/r;
+.method public final b()Z
     .locals 6
 
     .line 1
-    invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    iget-object v0, p0, Lw5/r;->i:Lcom/google/firebase/iid/FirebaseInstanceId;
+
+    invoke-virtual {v0}, Lcom/google/firebase/iid/FirebaseInstanceId;->l()Lw5/q;
+
+    move-result-object v0
+
+    .line 2
+    iget-object v1, p0, Lw5/r;->i:Lcom/google/firebase/iid/FirebaseInstanceId;
+
+    .line 3
+    iget-object v1, v1, Lcom/google/firebase/iid/FirebaseInstanceId;->d:Lw5/b;
+
+    invoke-interface {v1}, Lw5/b;->d()Z
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    if-nez v1, :cond_0
+
+    .line 4
+    iget-object v1, p0, Lw5/r;->i:Lcom/google/firebase/iid/FirebaseInstanceId;
+
+    invoke-virtual {v1, v0}, Lcom/google/firebase/iid/FirebaseInstanceId;->h(Lw5/q;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    return v2
+
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 5
+    :try_start_0
+    iget-object v3, p0, Lw5/r;->i:Lcom/google/firebase/iid/FirebaseInstanceId;
+
+    invoke-virtual {v3}, Lcom/google/firebase/iid/FirebaseInstanceId;->m()Ljava/lang/String;
+
+    move-result-object v3
+
+    if-nez v3, :cond_1
+
+    return v1
+
+    :cond_1
+    if-eqz v0, :cond_2
+
+    .line 6
+    iget-object v0, v0, Lw5/q;->a:Ljava/lang/String;
+
+    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    const/4 v1, 0x0
+    if-nez v0, :cond_3
+
+    .line 7
+    :cond_2
+    invoke-virtual {p0}, Lw5/r;->a()Landroid/content/Context;
+
+    move-result-object v0
+
+    .line 8
+    new-instance v4, Landroid/content/Intent;
+
+    const-string v5, "com.google.firebase.messaging.NEW_TOKEN"
+
+    invoke-direct {v4, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string v5, "token"
+
+    .line 9
+    invoke-virtual {v4, v5, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    const-string v3, "com.google.firebase.MESSAGING_EVENT"
+
+    .line 10
+    invoke-static {v0, v3, v4}, Lw5/o;->a(Landroid/content/Context;Ljava/lang/String;Landroid/content/Intent;)Landroid/content/Intent;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v3}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+
+    .line 11
+    new-instance v3, Landroid/content/Intent;
+
+    const-string v4, "com.google.firebase.iid.TOKEN_REFRESH"
+
+    invoke-direct {v3, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string v4, "com.google.firebase.INSTANCE_ID_EVENT"
+
+    .line 12
+    invoke-static {v0, v4, v3}, Lw5/o;->a(Landroid/content/Context;Ljava/lang/String;Landroid/content/Intent;)Landroid/content/Intent;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v3}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :cond_3
+    return v2
+
+    :catch_0
+    move-exception v0
+
+    goto :goto_0
+
+    :catch_1
+    move-exception v0
+
+    .line 13
+    :goto_0
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    const-string v2, "Token retrieval failed: "
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    :cond_4
+    return v1
+.end method
+
+.method public final c()Z
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Lw5/r;->a()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string v1, "connectivity"
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/net/ConnectivityManager;
 
     if-eqz v0, :cond_0
 
-    return-object v1
+    .line 2
+    invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
+
+    move-result-object v0
+
+    goto :goto_0
 
     :cond_0
-    const-string v0, "{"
+    const/4 v0, 0x0
 
-    .line 2
-    invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    :goto_0
+    if-eqz v0, :cond_1
+
+    .line 3
+    invoke-virtual {v0}, Landroid/net/NetworkInfo;->isConnected()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 3
-    :try_start_0
-    new-instance v0, Lorg/json/JSONObject;
+    const/4 v0, 0x1
 
-    invoke-direct {v0, p0}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+    return v0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final run()V
+    .locals 5
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "Wakelock"
+        }
+    .end annotation
+
+    .line 1
+    :try_start_0
+    invoke-static {}, Lw5/o;->b()Lw5/o;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Lw5/r;->a()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lw5/o;->c(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lw5/r;->h:Landroid/os/PowerManager$WakeLock;
+
+    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->acquire()V
+
+    .line 3
+    :cond_0
+    iget-object v0, p0, Lw5/r;->i:Lcom/google/firebase/iid/FirebaseInstanceId;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Lcom/google/firebase/iid/FirebaseInstanceId;->g(Z)V
 
     .line 4
-    new-instance p0, Lw5/r;
-
-    const-string v2, "token"
+    iget-object v0, p0, Lw5/r;->i:Lcom/google/firebase/iid/FirebaseInstanceId;
 
     .line 5
-    invoke-virtual {v0, v2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+    iget-object v0, v0, Lcom/google/firebase/iid/FirebaseInstanceId;->d:Lw5/b;
 
-    move-result-object v2
+    invoke-interface {v0}, Lw5/b;->e()Z
 
-    const-string v3, "appVersion"
+    move-result v0
+
+    const/4 v2, 0x0
+
+    if-nez v0, :cond_2
 
     .line 6
-    invoke-virtual {v0, v3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+    iget-object v0, p0, Lw5/r;->i:Lcom/google/firebase/iid/FirebaseInstanceId;
+
+    invoke-virtual {v0, v2}, Lcom/google/firebase/iid/FirebaseInstanceId;->g(Z)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 7
+    invoke-static {}, Lw5/o;->b()Lw5/o;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Lw5/r;->a()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lw5/o;->c(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 8
+    iget-object v0, p0, Lw5/r;->h:Landroid/os/PowerManager$WakeLock;
+
+    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
+
+    :cond_1
+    return-void
+
+    .line 9
+    :cond_2
+    :try_start_1
+    invoke-static {}, Lw5/o;->b()Lw5/o;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Lw5/r;->a()Landroid/content/Context;
 
     move-result-object v3
 
-    const-string v4, "timestamp"
+    .line 10
+    iget-object v4, v0, Lw5/o;->c:Ljava/lang/Boolean;
 
-    .line 7
-    invoke-virtual {v0, v4}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
+    if-nez v4, :cond_4
 
-    move-result-wide v4
+    const-string v4, "android.permission.ACCESS_NETWORK_STATE"
 
-    invoke-direct {p0, v2, v3, v4, v5}, Lw5/r;-><init>(Ljava/lang/String;Ljava/lang/String;J)V
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+    .line 11
+    invoke-virtual {v3, v4}, Landroid/content/Context;->checkCallingOrSelfPermission(Ljava/lang/String;)I
 
-    return-object p0
+    move-result v3
 
-    :catch_0
-    move-exception p0
-
-    .line 8
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
-
-    move-result p0
-
-    add-int/lit8 p0, p0, 0x17
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0, p0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    return-object v1
-
-    .line 9
-    :cond_1
-    new-instance v0, Lw5/r;
-
-    const-wide/16 v2, 0x0
-
-    invoke-direct {v0, p0, v1, v2, v3}, Lw5/r;-><init>(Ljava/lang/String;Ljava/lang/String;J)V
-
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public final c(Ljava/lang/String;)Z
-    .locals 6
-
-    .line 1
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v0
-
-    iget-wide v2, p0, Lw5/r;->c:J
-
-    sget-wide v4, Lw5/r;->d:J
-
-    add-long/2addr v2, v4
-
-    cmp-long v4, v0, v2
-
-    if-gtz v4, :cond_1
-
-    iget-object v0, p0, Lw5/r;->b:Ljava/lang/String;
-
-    .line 2
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_0
+    if-nez v3, :cond_3
 
     goto :goto_0
 
-    :cond_0
-    const/4 p1, 0x0
+    :cond_3
+    const/4 v1, 0x0
 
-    return p1
-
-    :cond_1
     :goto_0
-    const/4 p1, 0x1
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    return p1
+    move-result-object v1
+
+    iput-object v1, v0, Lw5/o;->c:Ljava/lang/Boolean;
+
+    .line 12
+    :cond_4
+    iget-object v1, v0, Lw5/o;->b:Ljava/lang/Boolean;
+
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 13
+    iget-object v0, v0, Lw5/o;->c:Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    .line 14
+    invoke-virtual {p0}, Lw5/r;->c()Z
+
+    move-result v0
+
+    if-nez v0, :cond_6
+
+    .line 15
+    new-instance v0, Lw5/s;
+
+    invoke-direct {v0, p0}, Lw5/s;-><init>(Lw5/r;)V
+
+    .line 16
+    invoke-static {}, Lcom/google/firebase/iid/FirebaseInstanceId;->n()Z
+
+    .line 17
+    new-instance v1, Landroid/content/IntentFilter;
+
+    const-string v2, "android.net.conn.CONNECTIVITY_CHANGE"
+
+    invoke-direct {v1, v2}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
+
+    .line 18
+    iget-object v2, v0, Lw5/s;->a:Lw5/r;
+
+    invoke-virtual {v2}, Lw5/r;->a()Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0, v1}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 19
+    invoke-static {}, Lw5/o;->b()Lw5/o;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Lw5/r;->a()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lw5/o;->c(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    .line 20
+    iget-object v0, p0, Lw5/r;->h:Landroid/os/PowerManager$WakeLock;
+
+    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
+
+    :cond_5
+    return-void
+
+    .line 21
+    :cond_6
+    :try_start_2
+    invoke-virtual {p0}, Lw5/r;->b()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    iget-object v0, p0, Lw5/r;->j:Lw5/t;
+
+    iget-object v1, p0, Lw5/r;->i:Lcom/google/firebase/iid/FirebaseInstanceId;
+
+    invoke-virtual {v0, v1}, Lw5/t;->c(Lcom/google/firebase/iid/FirebaseInstanceId;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    .line 22
+    iget-object v0, p0, Lw5/r;->i:Lcom/google/firebase/iid/FirebaseInstanceId;
+
+    invoke-virtual {v0, v2}, Lcom/google/firebase/iid/FirebaseInstanceId;->g(Z)V
+
+    goto :goto_1
+
+    .line 23
+    :cond_7
+    iget-object v0, p0, Lw5/r;->i:Lcom/google/firebase/iid/FirebaseInstanceId;
+
+    iget-wide v1, p0, Lw5/r;->g:J
+
+    invoke-virtual {v0, v1, v2}, Lcom/google/firebase/iid/FirebaseInstanceId;->e(J)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 24
+    :goto_1
+    invoke-static {}, Lw5/o;->b()Lw5/o;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Lw5/r;->a()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lw5/o;->c(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_8
+
+    .line 25
+    iget-object v0, p0, Lw5/r;->h:Landroid/os/PowerManager$WakeLock;
+
+    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
+
+    :cond_8
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    .line 26
+    invoke-static {}, Lw5/o;->b()Lw5/o;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lw5/r;->a()Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lw5/o;->c(Landroid/content/Context;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_9
+
+    .line 27
+    iget-object v1, p0, Lw5/r;->h:Landroid/os/PowerManager$WakeLock;
+
+    invoke-virtual {v1}, Landroid/os/PowerManager$WakeLock;->release()V
+
+    :cond_9
+    throw v0
 .end method

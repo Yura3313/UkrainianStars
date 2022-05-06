@@ -32,7 +32,7 @@
 
     const-string v2, "throwableClass.methods"
 
-    invoke-static {v1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     array-length v2, v1
 
@@ -50,7 +50,7 @@
     const-string v7, "it"
 
     .line 3
-    invoke-static {v6, v7}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v6, v7}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v6}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
 
@@ -58,7 +58,7 @@
 
     const-string v8, "addSuppressed"
 
-    invoke-static {v7, v8}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v7, v8}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v7
 
@@ -72,7 +72,7 @@
 
     const-string v9, "it.parameterTypes"
 
-    invoke-static {v7, v9}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v7, v9}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 4
     array-length v9, v7
@@ -83,7 +83,7 @@
 
     .line 5
     :cond_0
-    invoke-static {v5, v0}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v5, v0}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 

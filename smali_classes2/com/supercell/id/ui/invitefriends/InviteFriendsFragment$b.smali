@@ -20,27 +20,27 @@
     value = {
         "Lle/j;",
         "Lke/l<",
-        "Lwd/k<",
+        "Lvd/k<",
         "+",
-        "Ltc/f;",
+        "Lqc/j;",
         "+",
         "Lcom/supercell/id/util/NormalizedError;",
         ">;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$b;->a:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$b;->g:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
 
     const/4 p1, 0x1
 
@@ -55,31 +55,31 @@
     .locals 1
 
     .line 1
-    check-cast p1, Lwd/k;
+    check-cast p1, Lvd/k;
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$b;->a:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$b;->g:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
 
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lwd/r;->i()Lxd/e0;
+    invoke-virtual {v0}, Lvd/r;->i()Lwd/z;
 
     move-result-object v0
 
     .line 3
-    iget-object v0, v0, Lxd/z0;->a:Ljava/lang/Object;
+    iget-object v0, v0, Lwd/u0;->a:Ljava/lang/Object;
 
     .line 4
-    check-cast v0, Lxd/b0;
+    check-cast v0, Lwd/x;
 
-    invoke-static {p1, v0}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->p1(Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;Lxd/b0;)V
+    invoke-static {p1, v0}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->p1(Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;Lwd/x;)V
 
     .line 5
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method

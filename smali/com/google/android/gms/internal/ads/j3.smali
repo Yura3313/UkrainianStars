@@ -1,141 +1,96 @@
-.class public final Lcom/google/android/gms/internal/ads/j3;
-.super Lj3/zd;
+.class public final synthetic Lcom/google/android/gms/internal/ads/j3;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lj3/zd;"
-    }
-.end annotation
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/h3;Ljava/lang/Class;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    invoke-direct {p0, p2}, Lj3/zd;-><init>(Ljava/lang/Class;)V
+    invoke-static {}, Lcom/google/android/gms/internal/ads/v5$e;->a()[I
 
+    move-result-object v0
+
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    sput-object v0, Lcom/google/android/gms/internal/ads/j3;->a:[I
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x3
+
+    :try_start_0
+    aput v1, v0, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    const/4 v0, 0x2
+
+    const/4 v3, 0x4
+
+    :try_start_1
+    sget-object v4, Lcom/google/android/gms/internal/ads/j3;->a:[I
+
+    aput v0, v4, v3
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
+    :try_start_2
+    sget-object v4, Lcom/google/android/gms/internal/ads/j3;->a:[I
+
+    aput v2, v4, v0
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
+    const/4 v0, 0x5
+
+    :try_start_3
+    sget-object v2, Lcom/google/android/gms/internal/ads/j3;->a:[I
+
+    aput v3, v2, v0
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    :catch_3
+    const/4 v2, 0x6
+
+    :try_start_4
+    sget-object v3, Lcom/google/android/gms/internal/ads/j3;->a:[I
+
+    aput v0, v3, v2
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
+    :try_start_5
+    sget-object v0, Lcom/google/android/gms/internal/ads/j3;->a:[I
+
+    const/4 v3, 0x0
+
+    aput v2, v0, v3
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    :catch_5
+    :try_start_6
+    sget-object v0, Lcom/google/android/gms/internal/ads/j3;->a:[I
+
+    const/4 v2, 0x7
+
+    aput v2, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    :catch_6
     return-void
-.end method
-
-
-# virtual methods
-.method public final bridge synthetic f(Lj3/os0;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
-
-    .line 1
-    check-cast p1, Lcom/google/android/gms/internal/ads/k6;
-
-    return-void
-.end method
-
-.method public final g(Lj3/os0;)Ljava/lang/Object;
-    .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
-
-    .line 1
-    check-cast p1, Lcom/google/android/gms/internal/ads/k6;
-
-    .line 2
-    invoke-static {}, Lcom/google/android/gms/internal/ads/j6;->B()Lcom/google/android/gms/internal/ads/j6$a;
-
-    move-result-object p1
-
-    .line 3
-    iget-boolean v0, p1, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
-    .line 4
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/q6$b;->m()V
-
-    .line 5
-    iput-boolean v1, p1, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
-
-    .line 6
-    :cond_0
-    iget-object v0, p1, Lcom/google/android/gms/internal/ads/q6$b;->b:Lcom/google/android/gms/internal/ads/q6;
-
-    check-cast v0, Lcom/google/android/gms/internal/ads/j6;
-
-    invoke-static {v0, v1}, Lcom/google/android/gms/internal/ads/j6;->y(Lcom/google/android/gms/internal/ads/j6;I)V
-
-    const/16 v0, 0x20
-
-    .line 7
-    invoke-static {v0}, Lj3/tp0;->a(I)[B
-
-    move-result-object v0
-
-    .line 8
-    array-length v2, v0
-
-    invoke-static {v0, v1, v2}, Lj3/lq0;->y([BII)Lj3/lq0;
-
-    move-result-object v0
-
-    .line 9
-    iget-boolean v2, p1, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
-
-    if-eqz v2, :cond_1
-
-    .line 10
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/q6$b;->m()V
-
-    .line 11
-    iput-boolean v1, p1, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
-
-    .line 12
-    :cond_1
-    iget-object v1, p1, Lcom/google/android/gms/internal/ads/q6$b;->b:Lcom/google/android/gms/internal/ads/q6;
-
-    check-cast v1, Lcom/google/android/gms/internal/ads/j6;
-
-    invoke-static {v1, v0}, Lcom/google/android/gms/internal/ads/j6;->z(Lcom/google/android/gms/internal/ads/j6;Lj3/lq0;)V
-
-    .line 13
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/q6$b;->i()Lj3/os0;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/google/android/gms/internal/ads/q6;
-
-    check-cast p1, Lcom/google/android/gms/internal/ads/j6;
-
-    return-object p1
-.end method
-
-.method public final synthetic h(Lj3/lq0;)Lj3/os0;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/android/gms/internal/ads/zzegz;
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {}, Lcom/google/android/gms/internal/ads/o6;->a()Lcom/google/android/gms/internal/ads/o6;
-
-    move-result-object v0
-
-    .line 2
-    invoke-static {p1, v0}, Lcom/google/android/gms/internal/ads/k6;->y(Lj3/lq0;Lcom/google/android/gms/internal/ads/o6;)Lcom/google/android/gms/internal/ads/k6;
-
-    move-result-object p1
-
-    return-object p1
 .end method

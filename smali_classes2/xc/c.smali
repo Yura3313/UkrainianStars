@@ -1,123 +1,74 @@
 .class public final Lxc/c;
-.super Ljava/lang/Object;
-.source "FaqFragment.kt"
+.super Lle/j;
+.source "IngameAddFriendsFragment.kt"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lke/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lle/j;",
+        "Lke/l<",
+        "Lcom/supercell/id/view/WidthAdjustingMultilineTextView;",
+        "Lae/i;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:Landroidx/core/widget/NestedScrollView;
+.field public final synthetic g:Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
 
-.field public final synthetic b:Landroid/view/View;
-
-.field public final synthetic h:I
-
-.field public final synthetic i:F
+.field public final synthetic h:Landroid/graphics/drawable/BitmapDrawable;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/core/widget/NestedScrollView;Landroid/view/View;IF)V
+.method public constructor <init>(Lcom/supercell/id/view/WidthAdjustingMultilineTextView;Landroid/graphics/drawable/BitmapDrawable;)V
     .locals 0
 
-    iput-object p1, p0, Lxc/c;->a:Landroidx/core/widget/NestedScrollView;
+    iput-object p1, p0, Lxc/c;->g:Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
 
-    iput-object p2, p0, Lxc/c;->b:Landroid/view/View;
+    iput-object p2, p0, Lxc/c;->h:Landroid/graphics/drawable/BitmapDrawable;
 
-    iput p3, p0, Lxc/c;->h:I
+    const/4 p1, 0x1
 
-    iput p4, p0, Lxc/c;->i:F
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 6
+.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    new-instance v0, Landroid/graphics/Rect;
+    check-cast p1, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
 
-    iget-object v1, p0, Lxc/c;->b:Landroid/view/View;
+    const/4 v0, 0x0
 
-    invoke-virtual {v1}, Landroid/view/View;->getHeight()I
-
-    move-result v1
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v2, v2, v2, v1}, Landroid/graphics/Rect;-><init>(IIII)V
+    if-eqz p1, :cond_0
 
     .line 2
-    iget-object v1, p0, Lxc/c;->a:Landroidx/core/widget/NestedScrollView;
+    iget-object p1, p0, Lxc/c;->g:Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
 
-    iget-object v3, p0, Lxc/c;->b:Landroid/view/View;
-
-    invoke-virtual {v1, v3, v0}, Landroid/widget/FrameLayout;->offsetDescendantRectToMyCoords(Landroid/view/View;Landroid/graphics/Rect;)V
+    iget-object v1, p0, Lxc/c;->h:Landroid/graphics/drawable/BitmapDrawable;
 
     .line 3
-    iget v0, v0, Landroid/graphics/Rect;->bottom:I
-
-    iget v1, p0, Lxc/c;->h:I
-
-    add-int/2addr v0, v1
+    invoke-virtual {p1, v1, v0, v0, v0}, Landroidx/appcompat/widget/AppCompatTextView;->setCompoundDrawablesRelative(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     .line 4
-    iget-object v1, p0, Lxc/c;->a:Landroidx/core/widget/NestedScrollView;
+    sget-object p1, Lae/i;->a:Lae/i;
 
-    invoke-virtual {v1}, Landroid/widget/FrameLayout;->getHeight()I
-
-    move-result v1
-
-    sub-int/2addr v0, v1
-
-    .line 5
-    iget-object v1, p0, Lxc/c;->a:Landroidx/core/widget/NestedScrollView;
-
-    invoke-virtual {v1}, Landroid/widget/FrameLayout;->getScrollY()I
-
-    move-result v1
-
-    if-le v0, v1, :cond_0
-
-    .line 6
-    iget-object v1, p0, Lxc/c;->a:Landroidx/core/widget/NestedScrollView;
-
-    invoke-virtual {v1}, Landroid/widget/FrameLayout;->getScrollY()I
-
-    move-result v3
-
-    .line 7
-    sget-object v4, Lrc/a;->f:Landroid/view/animation/Interpolator;
-
-    .line 8
-    iget v5, p0, Lxc/c;->i:F
-
-    invoke-interface {v4, v5}, Landroid/view/animation/Interpolator;->getInterpolation(F)F
-
-    move-result v4
-
-    int-to-float v5, v3
-
-    sub-int/2addr v0, v3
-
-    int-to-float v0, v0
-
-    mul-float v0, v0, v4
-
-    add-float/2addr v0, v5
-
-    .line 9
-    invoke-static {v0}, Lc2/n0;->e(F)I
-
-    move-result v0
-
-    .line 10
-    invoke-virtual {v1, v2, v0}, Landroidx/core/widget/NestedScrollView;->scrollTo(II)V
+    return-object p1
 
     :cond_0
-    return-void
+    const-string p1, "it"
+
+    .line 5
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
 .end method

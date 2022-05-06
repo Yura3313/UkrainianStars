@@ -358,10 +358,10 @@
     .line 15
     iget-object v4, v4, Landroidx/recyclerview/widget/y;->a:Landroidx/recyclerview/widget/RecyclerView;
 
-    iput-boolean v5, v4, Landroidx/recyclerview/widget/RecyclerView;->o0:Z
+    iput-boolean v5, v4, Landroidx/recyclerview/widget/RecyclerView;->p0:Z
 
     .line 16
-    iget-object v4, v4, Landroidx/recyclerview/widget/RecyclerView;->l0:Landroidx/recyclerview/widget/RecyclerView$w;
+    iget-object v4, v4, Landroidx/recyclerview/widget/RecyclerView;->m0:Landroidx/recyclerview/widget/RecyclerView$w;
 
     iget v5, v4, Landroidx/recyclerview/widget/RecyclerView$w;->c:I
 
@@ -670,10 +670,10 @@
     .line 8
     iget-object p2, v0, Landroidx/recyclerview/widget/y;->a:Landroidx/recyclerview/widget/RecyclerView;
 
-    iput-boolean v2, p2, Landroidx/recyclerview/widget/RecyclerView;->o0:Z
+    iput-boolean v2, p2, Landroidx/recyclerview/widget/RecyclerView;->p0:Z
 
     .line 9
-    iget-object p2, p2, Landroidx/recyclerview/widget/RecyclerView;->l0:Landroidx/recyclerview/widget/RecyclerView$w;
+    iget-object p2, p2, Landroidx/recyclerview/widget/RecyclerView;->m0:Landroidx/recyclerview/widget/RecyclerView$w;
 
     iget v0, p2, Landroidx/recyclerview/widget/RecyclerView$w;->c:I
 
@@ -944,7 +944,7 @@
     .line 8
     iget-object p1, v0, Landroidx/recyclerview/widget/y;->a:Landroidx/recyclerview/widget/RecyclerView;
 
-    iput-boolean v1, p1, Landroidx/recyclerview/widget/RecyclerView;->o0:Z
+    iput-boolean v1, p1, Landroidx/recyclerview/widget/RecyclerView;->p0:Z
 
     goto :goto_0
 

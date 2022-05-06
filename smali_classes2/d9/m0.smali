@@ -1,5 +1,5 @@
 .class public Ld9/m0;
-.super Ly7/g;
+.super Lz7/g;
 .source "MessageListVM.java"
 
 
@@ -18,7 +18,7 @@
 
     iput-object p2, p0, Ld9/m0;->b:Ljava/util/List;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -42,14 +42,14 @@
     sub-int/2addr v1, v2
 
     .line 2
-    invoke-virtual {v0, v1}, Ld9/q0;->l(I)Lm8/a0;
+    invoke-virtual {v0, v1}, Ld9/q0;->l(I)Ln8/w;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
     .line 3
-    iget-wide v0, v0, Lm8/a0;->w:J
+    iget-wide v0, v0, Ln8/w;->x:J
 
     .line 4
     iget-object v3, p0, Ld9/m0;->b:Ljava/util/List;
@@ -60,10 +60,10 @@
 
     move-result-object v3
 
-    check-cast v3, Lm8/a0;
+    check-cast v3, Ln8/w;
 
     .line 5
-    iget-wide v3, v3, Lm8/a0;->w:J
+    iget-wide v3, v3, Ln8/w;->x:J
 
     cmp-long v5, v0, v3
 
@@ -96,10 +96,10 @@
 
     move-result-object v2
 
-    check-cast v2, Lm8/a0;
+    check-cast v2, Ln8/w;
 
     .line 9
-    invoke-virtual {v0, v2}, Ld9/q0;->p(Lm8/a0;)V
+    invoke-virtual {v0, v2}, Ld9/q0;->p(Ln8/w;)V
 
     goto :goto_0
 
@@ -126,12 +126,12 @@
     add-int/lit8 v4, v3, -0x1
 
     .line 13
-    invoke-virtual {v0, v4}, Ld9/q0;->l(I)Lm8/a0;
+    invoke-virtual {v0, v4}, Ld9/q0;->l(I)Ln8/w;
 
     move-result-object v5
 
     .line 14
-    invoke-virtual {v0, v1, v5, v2}, Ld9/q0;->o(Ljava/util/List;Lm8/a0;Z)Ljava/util/List;
+    invoke-virtual {v0, v1, v5, v2}, Ld9/q0;->o(Ljava/util/List;Ln8/w;Z)Ljava/util/List;
 
     move-result-object v1
 

@@ -36,11 +36,11 @@
 
 
 # instance fields
-.field public a:I
+.field public g:I
 
-.field public b:Z
+.field public h:Z
 
-.field public h:Landroid/os/Bundle;
+.field public i:Landroid/os/Bundle;
 
 
 # direct methods
@@ -66,7 +66,7 @@
     return-void
 .end method
 
-.method public static h(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState$SavedState;
+.method public static b(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState$SavedState;
     .locals 3
 
     .line 1
@@ -79,7 +79,7 @@
 
     move-result v1
 
-    iput v1, v0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState$SavedState;->a:I
+    iput v1, v0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState$SavedState;->g:I
 
     .line 3
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
@@ -96,7 +96,7 @@
     const/4 v2, 0x0
 
     :goto_0
-    iput-boolean v2, v0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState$SavedState;->b:Z
+    iput-boolean v2, v0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState$SavedState;->h:Z
 
     if-eqz v2, :cond_1
 
@@ -105,7 +105,7 @@
 
     move-result-object p0
 
-    iput-object p0, v0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState$SavedState;->h:Landroid/os/Bundle;
+    iput-object p0, v0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState$SavedState;->i:Landroid/os/Bundle;
 
     :cond_1
     return-object v0
@@ -125,22 +125,22 @@
     .locals 0
 
     .line 1
-    iget p2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState$SavedState;->a:I
+    iget p2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState$SavedState;->g:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 2
-    iget-boolean p2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState$SavedState;->b:Z
+    iget-boolean p2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState$SavedState;->h:Z
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 3
-    iget-boolean p2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState$SavedState;->b:Z
+    iget-boolean p2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState$SavedState;->h:Z
 
     if-eqz p2, :cond_0
 
     .line 4
-    iget-object p2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState$SavedState;->h:Landroid/os/Bundle;
+    iget-object p2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$PanelFeatureState$SavedState;->i:Landroid/os/Bundle;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeBundle(Landroid/os/Bundle;)V
 

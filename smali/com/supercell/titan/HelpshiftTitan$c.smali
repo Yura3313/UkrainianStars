@@ -42,7 +42,7 @@
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
     .line 3
-    invoke-static {}, Lcom/helpshift/util/r;->b()Z
+    invoke-static {}, Lcom/helpshift/util/q;->c()Z
 
     move-result v2
 
@@ -52,17 +52,17 @@
 
     .line 4
     :cond_0
-    sget-object v2, Llb/b;->a:Llb/a;
+    sget-object v2, Ljb/b;->a:Ljb/a;
 
     .line 5
-    new-instance v3, Lla/w;
+    new-instance v3, Lja/w;
 
-    invoke-direct {v3, v0, v1}, Lla/w;-><init>(Landroid/os/Handler;Landroid/os/Handler;)V
+    invoke-direct {v3, v0, v1}, Lja/w;-><init>(Landroid/os/Handler;Landroid/os/Handler;)V
 
-    check-cast v2, Llb/c;
+    check-cast v2, Ljb/c;
 
     .line 6
-    iget-object v0, v2, Llb/c;->c:Landroid/os/Handler;
+    iget-object v0, v2, Ljb/c;->c:Landroid/os/Handler;
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
     :try_end_0

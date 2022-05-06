@@ -121,7 +121,7 @@
     if-lez p5, :cond_1
 
     .line 5
-    sget-object v3, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v3, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 6
     invoke-virtual {v2}, Landroid/view/View;->getFitsSystemWindows()Z
@@ -131,19 +131,19 @@
     if-eqz v3, :cond_2
 
     .line 7
-    invoke-virtual {p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->getLastWindowInsets()Lf0/a0;
+    invoke-virtual {p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->getLastWindowInsets()Lf0/z;
 
     move-result-object v3
 
     if-eqz v3, :cond_2
 
     .line 8
-    invoke-virtual {v3}, Lf0/a0;->g()I
+    invoke-virtual {v3}, Lf0/z;->g()I
 
     move-result v4
 
     .line 9
-    invoke-virtual {v3}, Lf0/a0;->d()I
+    invoke-virtual {v3}, Lf0/z;->d()I
 
     move-result v3
 
@@ -296,14 +296,14 @@
     invoke-virtual {v5, v2, v3, v4, v7}, Landroid/graphics/Rect;->set(IIII)V
 
     .line 10
-    invoke-virtual {p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->getLastWindowInsets()Lf0/a0;
+    invoke-virtual {p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->getLastWindowInsets()Lf0/z;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
     .line 11
-    sget-object v3, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v3, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 12
     invoke-virtual {p1}, Landroid/view/View;->getFitsSystemWindows()Z
@@ -322,7 +322,7 @@
     .line 14
     iget p1, v5, Landroid/graphics/Rect;->left:I
 
-    invoke-virtual {v2}, Lf0/a0;->e()I
+    invoke-virtual {v2}, Lf0/z;->e()I
 
     move-result v3
 
@@ -333,7 +333,7 @@
     .line 15
     iget p1, v5, Landroid/graphics/Rect;->right:I
 
-    invoke-virtual {v2}, Lf0/a0;->f()I
+    invoke-virtual {v2}, Lf0/z;->f()I
 
     move-result v2
 
@@ -461,7 +461,7 @@
 
     float-to-int p1, p1
 
-    invoke-static {p1, v1, v0}, La0/a;->c(III)I
+    invoke-static {p1, v1, v0}, La0/a;->b(III)I
 
     move-result v1
 

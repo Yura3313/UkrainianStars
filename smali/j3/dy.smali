@@ -1,118 +1,74 @@
-.class public final Lj3/dy;
+.class public final synthetic Lj3/dy;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
+.implements Lj3/mi;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final g:Lj3/yx;
 
-.field public final b:Lj3/fv0;
+.field public final h:Lj3/gh;
 
-.field public final c:Lj3/fv0;
-
-.field public final d:Lj3/fv0;
+.field public final i:Lj3/rd;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lj3/fv0;Lj3/fv0;Lj3/fv0;I)V
+.method public constructor <init>(Lj3/yx;Lj3/gh;Lj3/rd;)V
     .locals 0
 
-    .line 1
-    iput p4, p0, Lj3/dy;->a:I
-
-    iput-object p1, p0, Lj3/dy;->b:Lj3/fv0;
-
-    iput-object p2, p0, Lj3/dy;->c:Lj3/fv0;
-
-    iput-object p3, p0, Lj3/dy;->d:Lj3/fv0;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lj3/dy;->g:Lj3/yx;
+
+    iput-object p2, p0, Lj3/dy;->h:Lj3/gh;
+
+    iput-object p3, p0, Lj3/dy;->i:Lj3/rd;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic get()Ljava/lang/Object;
-    .locals 4
+.method public final c(Z)V
+    .locals 3
 
-    iget v0, p0, Lj3/dy;->a:I
+    iget-object p1, p0, Lj3/dy;->g:Lj3/yx;
 
-    packed-switch v0, :pswitch_data_0
+    iget-object v0, p0, Lj3/dy;->h:Lj3/gh;
 
-    goto :goto_0
+    iget-object v1, p0, Lj3/dy;->i:Lj3/rd;
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/dy;->b:Lj3/fv0;
+    iget-object v2, p1, Lj3/yx;->a:Lj3/wg0;
 
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
+    iget-object v2, v2, Lj3/wg0;->b:Lcom/google/android/gms/internal/ads/zzaac;
 
-    move-result-object v0
+    if-eqz v2, :cond_0
 
-    check-cast v0, Ljava/util/concurrent/Executor;
-
-    iget-object v1, p0, Lj3/dy;->c:Lj3/fv0;
-
-    invoke-interface {v1}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lj3/km;
-
-    iget-object v2, p0, Lj3/dy;->d:Lj3/fv0;
-
-    invoke-interface {v2}, Lj3/fv0;->get()Ljava/lang/Object;
+    invoke-interface {v0}, Lj3/gh;->h()Lcom/google/android/gms/internal/ads/zzbgk;
 
     move-result-object v2
 
-    check-cast v2, Lj3/qt;
+    if-eqz v2, :cond_0
 
     .line 2
-    new-instance v3, Lj3/yx;
-
-    invoke-direct {v3, v0, v1, v2}, Lj3/yx;-><init>(Ljava/util/concurrent/Executor;Lj3/km;Lj3/qt;)V
-
-    return-object v3
-
-    .line 3
-    :goto_0
-    iget-object v0, p0, Lj3/dy;->b:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
+    invoke-interface {v0}, Lj3/gh;->h()Lcom/google/android/gms/internal/ads/zzbgk;
 
     move-result-object v0
 
-    check-cast v0, Lj3/r7;
+    iget-object p1, p1, Lj3/yx;->a:Lj3/wg0;
 
-    iget-object v1, p0, Lj3/dy;->c:Lj3/fv0;
+    iget-object p1, p1, Lj3/wg0;->b:Lcom/google/android/gms/internal/ads/zzaac;
 
-    invoke-interface {v1}, Lj3/fv0;->get()Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/ads/zzbgk;->B7(Lcom/google/android/gms/internal/ads/zzaac;)V
 
-    move-result-object v1
+    .line 3
+    :cond_0
+    iget-object p1, v1, Lj3/rd;->h:Ljava/lang/Object;
 
-    check-cast v1, Ljava/util/concurrent/ScheduledExecutorService;
+    invoke-virtual {v1, p1}, Lj3/qd;->b(Ljava/lang/Object;)Z
 
-    iget-object v2, p0, Lj3/dy;->d:Lj3/fv0;
-
-    invoke-interface {v2}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Landroid/content/Context;
-
-    .line 4
-    new-instance v3, Lj3/je0;
-
-    invoke-direct {v3, v0, v1, v2}, Lj3/je0;-><init>(Lj3/r7;Ljava/util/concurrent/ScheduledExecutorService;Landroid/content/Context;)V
-
-    return-object v3
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/scancode/ScanCodeFragment$a;
-.super Luc/g1;
+.super Lrc/g1;
 .source "ScanCodeFragment.kt"
 
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public o0:Ljava/util/HashMap;
+.field public p0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Luc/g1;-><init>()V
+    invoke-direct {p0}, Lrc/g1;-><init>()V
 
     return-void
 .end method
@@ -33,7 +33,7 @@
 .method public W0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$a;->o0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$a;->p0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -49,7 +49,7 @@
     if-eqz p2, :cond_1
 
     .line 1
-    invoke-super {p0, p1, p2, p3}, Luc/g1;->Z0(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment$b;Z)V
+    invoke-super {p0, p1, p2, p3}, Lrc/g1;->Z0(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment$b;Z)V
 
     .line 2
     invoke-virtual {p0}, Lcom/supercell/id/ui/scancode/ScanCodeFragment$a;->q1()Landroid/view/View;
@@ -84,7 +84,7 @@
 
     invoke-direct {p3, p1, p2, p0}, Lcom/supercell/id/ui/scancode/ScanCodeFragment$a$a;-><init>(Landroid/view/View;FLcom/supercell/id/ui/scancode/ScanCodeFragment$a;)V
 
-    invoke-static {p1, p3}, Lwd/f2;->a(Landroid/view/View;Lke/l;)V
+    invoke-static {p1, p3}, Lvd/g2;->a(Landroid/view/View;Lke/l;)V
 
     :cond_0
     return-void
@@ -93,7 +93,7 @@
     const-string p1, "animation"
 
     .line 7
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -120,7 +120,7 @@
     const-string p1, "inflater"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -130,7 +130,7 @@
 .method public synthetic i0()V
     .locals 0
 
-    invoke-super {p0}, Luc/g1;->i0()V
+    invoke-super {p0}, Lrc/g1;->i0()V
 
     invoke-virtual {p0}, Lcom/supercell/id/ui/scancode/ScanCodeFragment$a;->W0()V
 
@@ -144,7 +144,7 @@
     sget v0, Lcom/supercell/id/R$id;->navigation_back_button:I
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$a;->o0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$a;->p0:Ljava/util/HashMap;
 
     if-nez v1, :cond_0
 
@@ -152,10 +152,10 @@
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$a;->o0:Ljava/util/HashMap;
+    iput-object v1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$a;->p0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$a;->o0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$a;->p0:Ljava/util/HashMap;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -170,7 +170,7 @@
     if-nez v1, :cond_2
 
     .line 3
-    iget-object v1, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v1, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v1, :cond_1
 
@@ -184,7 +184,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$a;->o0:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$a;->p0:Ljava/util/HashMap;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -212,15 +212,15 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Landroidx/savedstate/d;->w(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lb5/m;->n(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
     .line 2
-    iput-object v0, p0, Luc/g1;->m0:Ljava/util/Collection;
+    iput-object v0, p0, Lrc/g1;->n0:Ljava/util/Collection;
 
     .line 3
-    invoke-super {p0, p1, p2}, Luc/g1;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lrc/g1;->s0(Landroid/view/View;Landroid/os/Bundle;)V
 
     return-void
 
@@ -228,7 +228,7 @@
     const-string p1, "view"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

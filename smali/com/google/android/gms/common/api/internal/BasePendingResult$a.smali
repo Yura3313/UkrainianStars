@@ -62,7 +62,7 @@
     const-string v1, "Don\'t know how to handle message: "
 
     .line 2
-    invoke-static {p1, v1, v0}, Lb0/c;->b(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {p1, v1, v0}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
@@ -83,7 +83,7 @@
     check-cast p1, Lcom/google/android/gms/common/api/internal/BasePendingResult;
 
     .line 4
-    sget-object v0, Lcom/google/android/gms/common/api/Status;->n:Lcom/google/android/gms/common/api/Status;
+    sget-object v0, Lcom/google/android/gms/common/api/Status;->o:Lcom/google/android/gms/common/api/Status;
 
     invoke-virtual {p1, v0}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->e(Lcom/google/android/gms/common/api/Status;)V
 

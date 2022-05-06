@@ -177,7 +177,7 @@
     return-object v0
 .end method
 
-.method public getCurrentControllerInfo()Lp0/k;
+.method public getCurrentControllerInfo()Lp0/i;
     .locals 1
 
     const/4 v0, 0x0
@@ -397,7 +397,7 @@
     return-void
 .end method
 
-.method public setCurrentControllerInfo(Lp0/k;)V
+.method public setCurrentControllerInfo(Lp0/i;)V
     .locals 0
 
     return-void
@@ -541,7 +541,7 @@
     return-void
 .end method
 
-.method public setPlaybackToRemote(Lp0/o;)V
+.method public setPlaybackToRemote(Lp0/m;)V
     .locals 0
 
     const/4 p1, 0x0

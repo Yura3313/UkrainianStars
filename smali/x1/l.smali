@@ -57,7 +57,7 @@
     iget-object p1, p1, Lx1/f;->B:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
     .line 4
-    invoke-interface {v0, v1, p1}, Lcom/google/android/gms/auth/api/signin/internal/zzt;->h5(Lcom/google/android/gms/auth/api/signin/internal/zzr;Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;)V
+    invoke-interface {v0, v1, p1}, Lcom/google/android/gms/auth/api/signin/internal/zzt;->i5(Lcom/google/android/gms/auth/api/signin/internal/zzr;Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;)V
 
     return-void
 .end method

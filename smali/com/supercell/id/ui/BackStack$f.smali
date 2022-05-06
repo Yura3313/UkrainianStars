@@ -20,7 +20,7 @@
     value = {
         "Lle/i;",
         "Lke/a<",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
@@ -79,7 +79,7 @@
     invoke-interface {v0}, Lcom/supercell/id/ui/BackStack$b;->b()V
 
     .line 3
-    sget-object v0, Lbe/n;->a:Lbe/n;
+    sget-object v0, Lae/i;->a:Lae/i;
 
     return-object v0
 .end method

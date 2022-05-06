@@ -1,27 +1,35 @@
-.class public final Lf1/i;
+.class public synthetic Lf1/i;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 # interfaces
-.implements Landroid/os/Parcelable$Creator;
+.implements Lp1/a;
+.implements Lj3/bm0;
+.implements Lj3/zf0;
+.implements Lj3/nf0;
+.implements Lj3/mi;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public g:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public synthetic constructor <init>()V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/lang/Object;)V
     .locals 0
 
     .line 1
+    iput-object p1, p0, Lf1/i;->g:Ljava/lang/Object;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,97 +37,133 @@
 
 
 # virtual methods
-.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 7
+.method public a(Ljava/lang/Throwable;)V
+    .locals 3
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    sget-object v0, Lh1/o;->B:Lh1/o;
 
-    move-result v0
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    move-object v2, v1
-
-    const/4 v3, 0x0
+    iget-object v0, v0, Lh1/o;->g:Lj3/ia;
 
     .line 2
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+    iget-object v1, p0, Lf1/i;->g:Ljava/lang/Object;
 
-    move-result v4
-
-    if-ge v4, v0, :cond_3
+    check-cast v1, Ljava/lang/String;
 
     .line 3
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+    iget-object v2, v0, Lj3/ia;->e:Landroid/content/Context;
 
-    move-result v4
+    iget-object v0, v0, Lj3/ia;->f:Lcom/google/android/gms/internal/ads/zzbbg;
 
-    const v5, 0xffff
+    invoke-static {v2, v0}, Lj3/w7;->c(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzbbg;)Lj3/a8;
 
-    and-int/2addr v5, v4
-
-    const/4 v6, 0x1
-
-    if-eq v5, v6, :cond_2
-
-    const/4 v6, 0x2
-
-    if-eq v5, v6, :cond_1
-
-    const/4 v6, 0x3
-
-    if-eq v5, v6, :cond_0
+    move-result-object v0
 
     .line 4
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    invoke-interface {v0, p1, v1}, Lj3/a8;->a(Ljava/lang/Throwable;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public b(Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lf1/i;->g:Ljava/lang/Object;
+
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzvl;
+
+    check-cast p1, Lcom/google/android/gms/internal/ads/zzya;
+
+    .line 2
+    invoke-interface {p1, v0}, Lcom/google/android/gms/internal/ads/zzya;->F5(Lcom/google/android/gms/internal/ads/zzvl;)V
+
+    return-void
+.end method
+
+.method public c(Z)V
+    .locals 0
+
+    .line 1
+    iget-object p1, p0, Lf1/i;->g:Ljava/lang/Object;
+
+    check-cast p1, Lcom/google/android/gms/ads/internal/overlay/zzc;
+
+    .line 2
+    iget-object p1, p1, Lcom/google/android/gms/ads/internal/overlay/zzc;->j:Lj3/gh;
+
+    if-eqz p1, :cond_0
+
+    .line 3
+    invoke-interface {p1}, Lj3/gh;->e0()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public d(Lcom/google/android/gms/ads/l;)V
+    .locals 2
+
+    iget-object v0, p0, Lf1/i;->g:Ljava/lang/Object;
+
+    check-cast v0, Lcom/google/android/gms/ads/formats/UnifiedNativeAdView;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 1
+    :try_start_0
+    instance-of v1, p1, Lj3/f61;
+
+    if-eqz v1, :cond_0
+
+    .line 2
+    iget-object v0, v0, Lcom/google/android/gms/ads/formats/UnifiedNativeAdView;->h:Lcom/google/android/gms/internal/ads/zzaea;
+
+    check-cast p1, Lj3/f61;
+
+    .line 3
+    iget-object p1, p1, Lj3/f61;->a:Lcom/google/android/gms/internal/ads/zzadr;
+
+    .line 4
+    invoke-interface {v0, p1}, Lcom/google/android/gms/internal/ads/zzaea;->v4(Lcom/google/android/gms/internal/ads/zzadr;)V
 
     goto :goto_0
+
+    :cond_0
+    if-nez p1, :cond_1
 
     .line 5
-    :cond_0
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->q(Landroid/os/Parcel;I)Landroid/os/IBinder;
+    iget-object p1, v0, Lcom/google/android/gms/ads/formats/UnifiedNativeAdView;->h:Lcom/google/android/gms/internal/ads/zzaea;
 
-    move-result-object v2
+    const/4 v0, 0x0
 
-    goto :goto_0
+    invoke-interface {p1, v0}, Lcom/google/android/gms/internal/ads/zzaea;->v4(Lcom/google/android/gms/internal/ads/zzadr;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 6
+    :catch_0
     :cond_1
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->q(Landroid/os/Parcel;I)Landroid/os/IBinder;
+    :goto_0
+    return-void
+.end method
 
-    move-result-object v1
+.method public f(Lj3/wf0;)Lj3/qq;
+    .locals 1
 
-    goto :goto_0
+    iget-object v0, p0, Lf1/i;->g:Ljava/lang/Object;
 
-    .line 7
-    :cond_2
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+    check-cast v0, Lcom/google/android/gms/internal/ads/a1;
 
-    move-result v3
+    .line 1
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/ads/a1;->b(Lj3/wf0;)Lj3/dk;
 
-    goto :goto_0
-
-    .line 8
-    :cond_3
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
-
-    .line 9
-    new-instance p1, Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;
-
-    invoke-direct {p1, v3, v1, v2}, Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;-><init>(ZLandroid/os/IBinder;Landroid/os/IBinder;)V
+    move-result-object p1
 
     return-object p1
 .end method
 
-.method public final synthetic newArray(I)[Ljava/lang/Object;
+.method public onSuccess(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
-    new-array p1, p1, [Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;
-
-    return-object p1
+    return-void
 .end method

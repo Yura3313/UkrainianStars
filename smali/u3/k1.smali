@@ -1,25 +1,25 @@
 .class public final Lu3/k1;
-.super Lu3/j1;
+.super Lu3/i1;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lu3/j1<",
-        "Ljava/lang/Long;",
+        "Lu3/i1<",
+        "Ljava/lang/Integer;",
         ">;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(Lu3/p1;Ljava/lang/String;Ljava/lang/Long;)V
+.method public constructor <init>(Lu3/o1;Ljava/lang/String;Ljava/lang/Integer;)V
     .locals 1
 
     const/4 v0, 0x0
 
     .line 1
-    invoke-direct {p0, p1, p2, p3, v0}, Lu3/j1;-><init>(Lu3/p1;Ljava/lang/String;Ljava/lang/Object;Lu3/k1;)V
+    invoke-direct {p0, p1, p2, p3, v0}, Lu3/i1;-><init>(Lu3/o1;Ljava/lang/String;Ljava/lang/Object;Lu3/j1;)V
 
     return-void
 .end method
@@ -30,32 +30,51 @@
     .locals 2
 
     .line 1
-    instance-of v0, p1, Ljava/lang/Long;
+    instance-of v0, p1, Ljava/lang/Integer;
 
     if-eqz v0, :cond_0
 
     .line 2
-    check-cast p1, Ljava/lang/Long;
+    check-cast p1, Ljava/lang/Integer;
 
     goto :goto_0
 
     .line 3
     :cond_0
-    instance-of v0, p1, Ljava/lang/String;
+    instance-of v0, p1, Ljava/lang/Long;
 
     if-eqz v0, :cond_1
 
     .line 4
+    check-cast p1, Ljava/lang/Long;
+
+    invoke-virtual {p1}, Ljava/lang/Long;->intValue()I
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    goto :goto_0
+
+    .line 5
+    :cond_1
+    instance-of v0, p1, Ljava/lang/String;
+
+    if-eqz v0, :cond_2
+
+    .line 6
     :try_start_0
     move-object v0, p1
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-static {v0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+    invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
-    move-result-wide v0
+    move-result v0
 
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
     :try_end_0
@@ -63,10 +82,10 @@
 
     goto :goto_0
 
-    .line 5
+    .line 7
     :catch_0
-    :cond_1
-    invoke-virtual {p0}, Lu3/j1;->e()Ljava/lang/String;
+    :cond_2
+    invoke-virtual {p0}, Lu3/i1;->e()Ljava/lang/String;
 
     move-result-object v0
 
@@ -74,9 +93,9 @@
 
     move-result-object p1
 
-    const/16 v1, 0x19
+    const/16 v1, 0x18
 
-    invoke-static {v0, v1}, Ly/b;->a(Ljava/lang/String;I)I
+    invoke-static {v0, v1}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v0
 

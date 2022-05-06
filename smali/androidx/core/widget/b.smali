@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final c:Z
+.field public static final a:Z
 
 
 # direct methods
@@ -26,7 +26,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    sput-boolean v0, Landroidx/core/widget/b;->c:Z
+    sput-boolean v0, Landroidx/core/widget/b;->a:Z
 
     return-void
 .end method

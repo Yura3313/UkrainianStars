@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/internal/ads/zzza;
+.field public final g:Lcom/google/android/gms/internal/ads/zzza;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     invoke-direct {v0}, Lcom/google/android/gms/internal/ads/zzza;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->a:Lcom/google/android/gms/internal/ads/zzza;
+    iput-object v0, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Lcom/google/android/gms/internal/ads/zzza;
 
     return-void
 .end method
@@ -30,7 +30,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->a:Lcom/google/android/gms/internal/ads/zzza;
+    iget-object v0, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Lcom/google/android/gms/internal/ads/zzza;
 
     invoke-virtual {v0, p1, p2}, Lcom/google/android/gms/internal/ads/zzza;->attachInfo(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V
 
@@ -41,7 +41,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->a:Lcom/google/android/gms/internal/ads/zzza;
+    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Lcom/google/android/gms/internal/ads/zzza;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -54,7 +54,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->a:Lcom/google/android/gms/internal/ads/zzza;
+    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Lcom/google/android/gms/internal/ads/zzza;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -67,7 +67,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->a:Lcom/google/android/gms/internal/ads/zzza;
+    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Lcom/google/android/gms/internal/ads/zzza;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -80,7 +80,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->a:Lcom/google/android/gms/internal/ads/zzza;
+    iget-object v0, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Lcom/google/android/gms/internal/ads/zzza;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -93,7 +93,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->a:Lcom/google/android/gms/internal/ads/zzza;
+    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Lcom/google/android/gms/internal/ads/zzza;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -106,7 +106,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->a:Lcom/google/android/gms/internal/ads/zzza;
+    iget-object p1, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Lcom/google/android/gms/internal/ads/zzza;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 

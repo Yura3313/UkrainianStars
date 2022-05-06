@@ -19,7 +19,7 @@
 
 
 # static fields
-.field public static final b:Lre/g;
+.field public static final h:Lre/g;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     invoke-direct {v0}, Lre/g;-><init>()V
 
-    sput-object v0, Lre/g;->b:Lre/g;
+    sput-object v0, Lre/g;->h:Lre/g;
 
     return-void
 .end method
@@ -94,7 +94,7 @@
     const-string p1, "p1"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

@@ -19,20 +19,20 @@
 
 .field public static final SUCCESS:I
 
-.field public static final j:Lcom/google/android/gms/common/ConnectionResult;
+.field public static final k:Lcom/google/android/gms/common/ConnectionResult;
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 .end field
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final b:I
+.field public final h:I
 
-.field public final h:Landroid/app/PendingIntent;
+.field public final i:Landroid/app/PendingIntent;
 
-.field public final i:Ljava/lang/String;
+.field public final j:Ljava/lang/String;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v1}, Lcom/google/android/gms/common/ConnectionResult;-><init>(I)V
 
-    sput-object v0, Lcom/google/android/gms/common/ConnectionResult;->j:Lcom/google/android/gms/common/ConnectionResult;
+    sput-object v0, Lcom/google/android/gms/common/ConnectionResult;->k:Lcom/google/android/gms/common/ConnectionResult;
 
     .line 2
     new-instance v0, Ly1/i;
@@ -67,18 +67,18 @@
     const/4 v0, 0x1
 
     .line 2
-    iput v0, p0, Lcom/google/android/gms/common/ConnectionResult;->a:I
+    iput v0, p0, Lcom/google/android/gms/common/ConnectionResult;->g:I
 
     .line 3
-    iput p1, p0, Lcom/google/android/gms/common/ConnectionResult;->b:I
+    iput p1, p0, Lcom/google/android/gms/common/ConnectionResult;->h:I
 
     const/4 p1, 0x0
 
     .line 4
-    iput-object p1, p0, Lcom/google/android/gms/common/ConnectionResult;->h:Landroid/app/PendingIntent;
+    iput-object p1, p0, Lcom/google/android/gms/common/ConnectionResult;->i:Landroid/app/PendingIntent;
 
     .line 5
-    iput-object p1, p0, Lcom/google/android/gms/common/ConnectionResult;->i:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/common/ConnectionResult;->j:Ljava/lang/String;
 
     return-void
 .end method
@@ -90,16 +90,16 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 7
-    iput p1, p0, Lcom/google/android/gms/common/ConnectionResult;->a:I
+    iput p1, p0, Lcom/google/android/gms/common/ConnectionResult;->g:I
 
     .line 8
-    iput p2, p0, Lcom/google/android/gms/common/ConnectionResult;->b:I
+    iput p2, p0, Lcom/google/android/gms/common/ConnectionResult;->h:I
 
     .line 9
-    iput-object p3, p0, Lcom/google/android/gms/common/ConnectionResult;->h:Landroid/app/PendingIntent;
+    iput-object p3, p0, Lcom/google/android/gms/common/ConnectionResult;->i:Landroid/app/PendingIntent;
 
     .line 10
-    iput-object p4, p0, Lcom/google/android/gms/common/ConnectionResult;->i:Ljava/lang/String;
+    iput-object p4, p0, Lcom/google/android/gms/common/ConnectionResult;->j:Ljava/lang/String;
 
     return-void
 .end method
@@ -113,18 +113,18 @@
     const/4 v0, 0x1
 
     .line 12
-    iput v0, p0, Lcom/google/android/gms/common/ConnectionResult;->a:I
+    iput v0, p0, Lcom/google/android/gms/common/ConnectionResult;->g:I
 
     .line 13
-    iput p1, p0, Lcom/google/android/gms/common/ConnectionResult;->b:I
+    iput p1, p0, Lcom/google/android/gms/common/ConnectionResult;->h:I
 
     .line 14
-    iput-object p2, p0, Lcom/google/android/gms/common/ConnectionResult;->h:Landroid/app/PendingIntent;
+    iput-object p2, p0, Lcom/google/android/gms/common/ConnectionResult;->i:Landroid/app/PendingIntent;
 
     const/4 p1, 0x0
 
     .line 15
-    iput-object p1, p0, Lcom/google/android/gms/common/ConnectionResult;->i:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/common/ConnectionResult;->j:Ljava/lang/String;
 
     return-void
 .end method
@@ -138,23 +138,23 @@
     const/4 p2, 0x1
 
     .line 17
-    iput p2, p0, Lcom/google/android/gms/common/ConnectionResult;->a:I
+    iput p2, p0, Lcom/google/android/gms/common/ConnectionResult;->g:I
 
     .line 18
-    iput p1, p0, Lcom/google/android/gms/common/ConnectionResult;->b:I
+    iput p1, p0, Lcom/google/android/gms/common/ConnectionResult;->h:I
 
     const/4 p1, 0x0
 
     .line 19
-    iput-object p1, p0, Lcom/google/android/gms/common/ConnectionResult;->h:Landroid/app/PendingIntent;
+    iput-object p1, p0, Lcom/google/android/gms/common/ConnectionResult;->i:Landroid/app/PendingIntent;
 
     .line 20
-    iput-object p3, p0, Lcom/google/android/gms/common/ConnectionResult;->i:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/common/ConnectionResult;->j:Ljava/lang/String;
 
     return-void
 .end method
 
-.method public static z2(I)Ljava/lang/String;
+.method public static B2(I)Ljava/lang/String;
     .locals 2
 
     const/16 v0, 0x63
@@ -359,6 +359,24 @@
 
 
 # virtual methods
+.method public final A2()Z
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/gms/common/ConnectionResult;->h:I
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
 .method public final equals(Ljava/lang/Object;)Z
     .locals 4
 
@@ -383,15 +401,15 @@
     check-cast p1, Lcom/google/android/gms/common/ConnectionResult;
 
     .line 3
-    iget v1, p0, Lcom/google/android/gms/common/ConnectionResult;->b:I
+    iget v1, p0, Lcom/google/android/gms/common/ConnectionResult;->h:I
 
-    iget v3, p1, Lcom/google/android/gms/common/ConnectionResult;->b:I
+    iget v3, p1, Lcom/google/android/gms/common/ConnectionResult;->h:I
 
     if-ne v1, v3, :cond_2
 
-    iget-object v1, p0, Lcom/google/android/gms/common/ConnectionResult;->h:Landroid/app/PendingIntent;
+    iget-object v1, p0, Lcom/google/android/gms/common/ConnectionResult;->i:Landroid/app/PendingIntent;
 
-    iget-object v3, p1, Lcom/google/android/gms/common/ConnectionResult;->h:Landroid/app/PendingIntent;
+    iget-object v3, p1, Lcom/google/android/gms/common/ConnectionResult;->i:Landroid/app/PendingIntent;
 
     .line 4
     invoke-static {v1, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -400,9 +418,9 @@
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/google/android/gms/common/ConnectionResult;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/ConnectionResult;->j:Ljava/lang/String;
 
-    iget-object p1, p1, Lcom/google/android/gms/common/ConnectionResult;->i:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/common/ConnectionResult;->j:Ljava/lang/String;
 
     .line 5
     invoke-static {v1, p1}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -425,7 +443,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget v1, p0, Lcom/google/android/gms/common/ConnectionResult;->b:I
+    iget v1, p0, Lcom/google/android/gms/common/ConnectionResult;->h:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -435,13 +453,13 @@
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/common/ConnectionResult;->h:Landroid/app/PendingIntent;
+    iget-object v1, p0, Lcom/google/android/gms/common/ConnectionResult;->i:Landroid/app/PendingIntent;
 
     const/4 v2, 0x1
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/common/ConnectionResult;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/ConnectionResult;->j:Ljava/lang/String;
 
     const/4 v2, 0x2
 
@@ -468,10 +486,10 @@
     invoke-direct {v0, p0, v1}, Lc2/f$a;-><init>(Ljava/lang/Object;Lc2/n0;)V
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/common/ConnectionResult;->b:I
+    iget v1, p0, Lcom/google/android/gms/common/ConnectionResult;->h:I
 
     .line 3
-    invoke-static {v1}, Lcom/google/android/gms/common/ConnectionResult;->z2(I)Ljava/lang/String;
+    invoke-static {v1}, Lcom/google/android/gms/common/ConnectionResult;->B2(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -479,14 +497,14 @@
 
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
-    iget-object v1, p0, Lcom/google/android/gms/common/ConnectionResult;->h:Landroid/app/PendingIntent;
+    iget-object v1, p0, Lcom/google/android/gms/common/ConnectionResult;->i:Landroid/app/PendingIntent;
 
     const-string v2, "resolution"
 
     .line 4
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
-    iget-object v1, p0, Lcom/google/android/gms/common/ConnectionResult;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/ConnectionResult;->j:Ljava/lang/String;
 
     const-string v2, "message"
 
@@ -514,14 +532,14 @@
     move-result v0
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/common/ConnectionResult;->a:I
+    iget v1, p0, Lcom/google/android/gms/common/ConnectionResult;->g:I
 
     const/4 v2, 0x1
 
     invoke-static {p1, v2, v1}, Ld2/b;->g(Landroid/os/Parcel;II)V
 
     .line 3
-    iget v1, p0, Lcom/google/android/gms/common/ConnectionResult;->b:I
+    iget v1, p0, Lcom/google/android/gms/common/ConnectionResult;->h:I
 
     const/4 v2, 0x2
 
@@ -529,7 +547,7 @@
     invoke-static {p1, v2, v1}, Ld2/b;->g(Landroid/os/Parcel;II)V
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/gms/common/ConnectionResult;->h:Landroid/app/PendingIntent;
+    iget-object v1, p0, Lcom/google/android/gms/common/ConnectionResult;->i:Landroid/app/PendingIntent;
 
     const/4 v2, 0x3
 
@@ -539,7 +557,7 @@
     invoke-static {p1, v2, v1, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 7
-    iget-object p2, p0, Lcom/google/android/gms/common/ConnectionResult;->i:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/common/ConnectionResult;->j:Ljava/lang/String;
 
     const/4 v1, 0x4
 
@@ -552,35 +570,17 @@
     return-void
 .end method
 
-.method public final x2()Z
+.method public final z2()Z
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/gms/common/ConnectionResult;->b:I
+    iget v0, p0, Lcom/google/android/gms/common/ConnectionResult;->h:I
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/gms/common/ConnectionResult;->h:Landroid/app/PendingIntent;
+    iget-object v0, p0, Lcom/google/android/gms/common/ConnectionResult;->i:Landroid/app/PendingIntent;
 
     if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final y2()Z
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/gms/common/ConnectionResult;->b:I
-
-    if-nez v0, :cond_0
 
     const/4 v0, 0x1
 

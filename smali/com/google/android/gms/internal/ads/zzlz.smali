@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Throwable;Lj3/dl;)V
+.method public constructor <init>(Ljava/lang/Throwable;Lj3/jx0;)V
     .locals 0
 
     const-string p2, "Failed to query underlying media codecs"

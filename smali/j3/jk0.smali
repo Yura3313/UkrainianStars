@@ -1,78 +1,198 @@
 .class public final Lj3/jk0;
-.super Lj3/xj0;
+.super Lj3/yk0;
 .source "com.google.android.gms:play-services-gass@@19.3.0"
 
 
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<E:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lj3/yk0<",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+
 # instance fields
-.field public final synthetic h:Lj3/gk0;
+.field public final g:I
+
+.field public h:I
+
+.field public final i:Lj3/ik0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/ik0<",
+            "TE;>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lj3/gk0;)V
-    .locals 0
+.method public constructor <init>(Lj3/ik0;I)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/ik0<",
+            "TE;>;I)V"
+        }
+    .end annotation
 
     .line 1
-    iput-object p1, p0, Lj3/jk0;->h:Lj3/gk0;
+    invoke-virtual {p1}, Ljava/util/AbstractCollection;->size()I
 
-    invoke-direct {p0}, Lj3/xj0;-><init>()V
+    move-result v0
+
+    .line 2
+    invoke-direct {p0}, Lj3/yk0;-><init>()V
+
+    .line 3
+    invoke-static {p2, v0}, Lj3/ck0;->f(II)I
+
+    .line 4
+    iput v0, p0, Lj3/jk0;->g:I
+
+    .line 5
+    iput p2, p0, Lj3/jk0;->h:I
+
+    .line 6
+    iput-object p1, p0, Lj3/jk0;->i:Lj3/ik0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final g()Z
-    .locals 1
+.method public final hasNext()Z
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lj3/jk0;->h:I
+
+    iget v1, p0, Lj3/jk0;->g:I
+
+    if-ge v0, v1, :cond_0
 
     const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public final hasPrevious()Z
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lj3/jk0;->h:I
+
+    if-lez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public final next()Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Lj3/jk0;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget v0, p0, Lj3/jk0;->h:I
+
+    add-int/lit8 v1, v0, 0x1
+
+    iput v1, p0, Lj3/jk0;->h:I
+
+    .line 3
+    iget-object v1, p0, Lj3/jk0;->i:Lj3/ik0;
+
+    invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+
+    .line 4
+    :cond_0
+    new-instance v0, Ljava/util/NoSuchElementException;
+
+    invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
+
+    throw v0
+.end method
+
+.method public final nextIndex()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lj3/jk0;->h:I
 
     return v0
 .end method
 
-.method public final synthetic get(I)Ljava/lang/Object;
+.method public final previous()Ljava/lang/Object;
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lj3/jk0;->h:Lj3/gk0;
+    invoke-virtual {p0}, Lj3/jk0;->hasPrevious()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
 
     .line 2
-    iget v0, v0, Lj3/gk0;->k:I
+    iget v0, p0, Lj3/jk0;->h:I
+
+    add-int/lit8 v0, v0, -0x1
+
+    iput v0, p0, Lj3/jk0;->h:I
 
     .line 3
-    invoke-static {p1, v0}, Lj3/qj0;->e(II)I
+    iget-object v1, p0, Lj3/jk0;->i:Lj3/ik0;
 
-    .line 4
-    iget-object v0, p0, Lj3/jk0;->h:Lj3/gk0;
+    invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    .line 5
-    iget-object v0, v0, Lj3/gk0;->j:[Ljava/lang/Object;
-
-    mul-int/lit8 p1, p1, 0x2
-
-    .line 6
-    aget-object v1, v0, p1
-
-    add-int/lit8 p1, p1, 0x1
-
-    .line 7
-    aget-object p1, v0, p1
-
-    .line 8
-    new-instance v0, Ljava/util/AbstractMap$SimpleImmutableEntry;
-
-    invoke-direct {v0, v1, p1}, Ljava/util/AbstractMap$SimpleImmutableEntry;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    move-result-object v0
 
     return-object v0
+
+    .line 4
+    :cond_0
+    new-instance v0, Ljava/util/NoSuchElementException;
+
+    invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
+
+    throw v0
 .end method
 
-.method public final size()I
+.method public final previousIndex()I
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lj3/jk0;->h:Lj3/gk0;
+    iget v0, p0, Lj3/jk0;->h:I
 
-    .line 2
-    iget v0, v0, Lj3/gk0;->k:I
+    add-int/lit8 v0, v0, -0x1
 
     return v0
 .end method

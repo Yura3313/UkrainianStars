@@ -1,64 +1,58 @@
-.class public final Lj3/h51;
-.super Lcom/google/android/gms/dynamic/RemoteCreator;
+.class public final synthetic Lj3/h51;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
+# interfaces
+.implements Ljava/util/Comparator;
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lcom/google/android/gms/dynamic/RemoteCreator<",
-        "Lcom/google/android/gms/internal/ads/zzxp;",
-        ">;"
-    }
-.end annotation
+
+# static fields
+.field public static final g:Ljava/util/Comparator;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    const-string v0, "com.google.android.gms.ads.MobileAdsSettingManagerCreatorImpl"
+    new-instance v0, Lj3/h51;
 
-    .line 1
-    invoke-direct {p0, v0}, Lcom/google/android/gms/dynamic/RemoteCreator;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0}, Lj3/h51;-><init>()V
+
+    sput-object v0, Lj3/h51;->g:Ljava/util/Comparator;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic a(Landroid/os/IBinder;)Ljava/lang/Object;
-    .locals 2
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 1
 
-    if-nez p1, :cond_0
+    check-cast p1, Ljava/lang/String;
 
-    const/4 p1, 0x0
-
-    return-object p1
-
-    :cond_0
-    const-string v0, "com.google.android.gms.ads.internal.client.IMobileAdsSettingManagerCreator"
+    check-cast p2, Ljava/lang/String;
 
     .line 1
-    invoke-interface {p1, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+    sget-object v0, Lcom/google/android/gms/ads/n;->b:Ljava/util/List;
 
-    move-result-object v0
+    invoke-interface {v0, p1}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
+
+    move-result p1
 
     .line 2
-    instance-of v1, v0, Lcom/google/android/gms/internal/ads/zzxp;
+    invoke-interface {v0, p2}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
 
-    if-eqz v1, :cond_1
+    move-result p2
 
-    .line 3
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzxp;
+    sub-int/2addr p1, p2
 
-    return-object v0
-
-    .line 4
-    :cond_1
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzxo;
-
-    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzxo;-><init>(Landroid/os/IBinder;)V
-
-    return-object v0
+    return p1
 .end method

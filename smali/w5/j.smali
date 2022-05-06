@@ -16,10 +16,10 @@
 # instance fields
 .field public final a:I
 
-.field public final b:La4/g;
+.field public final b:Lb4/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "La4/g<",
+            "Lb4/g<",
             "TT;>;"
         }
     .end annotation
@@ -38,11 +38,11 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v0, La4/g;
+    new-instance v0, Lb4/g;
 
-    invoke-direct {v0}, La4/g;-><init>()V
+    invoke-direct {v0}, Lb4/g;-><init>()V
 
-    iput-object v0, p0, Lw5/j;->b:La4/g;
+    iput-object v0, p0, Lw5/j;->b:Lb4/g;
 
     .line 3
     iput p1, p0, Lw5/j;->a:I
@@ -104,12 +104,12 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw5/j;->b:La4/g;
+    iget-object v0, p0, Lw5/j;->b:Lb4/g;
 
     .line 4
-    iget-object v0, v0, La4/g;->a:La4/y;
+    iget-object v0, v0, Lb4/g;->a:Lb4/y;
 
-    invoke-virtual {v0, p1}, La4/y;->o(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Lb4/y;->o(Ljava/lang/Object;)V
 
     return-void
 .end method
@@ -155,12 +155,12 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw5/j;->b:La4/g;
+    iget-object v0, p0, Lw5/j;->b:Lb4/g;
 
     .line 4
-    iget-object v0, v0, La4/g;->a:La4/y;
+    iget-object v0, v0, Lb4/g;->a:Lb4/y;
 
-    invoke-virtual {v0, p1}, La4/y;->n(Ljava/lang/Exception;)V
+    invoke-virtual {v0, p1}, Lb4/y;->n(Ljava/lang/Exception;)V
 
     return-void
 .end method

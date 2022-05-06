@@ -14,15 +14,7 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lpe/l;
-
-.field public static final enum INTERNAL:Lpe/l;
-
-.field public static final enum PRIVATE:Lpe/l;
-
-.field public static final enum PROTECTED:Lpe/l;
-
-.field public static final enum PUBLIC:Lpe/l;
+.field public static final synthetic g:[Lpe/l;
 
 
 # direct methods
@@ -41,8 +33,6 @@
 
     invoke-direct {v1, v2, v3}, Lpe/l;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lpe/l;->PUBLIC:Lpe/l;
-
     aput-object v1, v0, v3
 
     new-instance v1, Lpe/l;
@@ -52,8 +42,6 @@
     const/4 v3, 0x1
 
     invoke-direct {v1, v2, v3}, Lpe/l;-><init>(Ljava/lang/String;I)V
-
-    sput-object v1, Lpe/l;->PROTECTED:Lpe/l;
 
     aput-object v1, v0, v3
 
@@ -65,8 +53,6 @@
 
     invoke-direct {v1, v2, v3}, Lpe/l;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lpe/l;->INTERNAL:Lpe/l;
-
     aput-object v1, v0, v3
 
     new-instance v1, Lpe/l;
@@ -77,16 +63,14 @@
 
     invoke-direct {v1, v2, v3}, Lpe/l;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lpe/l;->PRIVATE:Lpe/l;
-
     aput-object v1, v0, v3
 
-    sput-object v0, Lpe/l;->$VALUES:[Lpe/l;
+    sput-object v0, Lpe/l;->g:[Lpe/l;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;I)V
+.method public constructor <init>(Ljava/lang/String;I)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -117,7 +101,7 @@
 .method public static values()[Lpe/l;
     .locals 1
 
-    sget-object v0, Lpe/l;->$VALUES:[Lpe/l;
+    sget-object v0, Lpe/l;->g:[Lpe/l;
 
     invoke-virtual {v0}, [Lpe/l;->clone()Ljava/lang/Object;
 

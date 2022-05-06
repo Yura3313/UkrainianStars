@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->t1(Lod/m;)V
+    value = Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->t1(Lnd/m;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
-.field public final synthetic b:Lod/m;
+.field public final synthetic h:Lnd/m;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;Lod/m;)V
+.method public constructor <init>(Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;Lnd/m;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->a:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->b:Lod/m;
+    iput-object p2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->h:Lnd/m;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,13 +44,13 @@
     move-object/from16 v0, p0
 
     .line 1
-    iget-object v1, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->b:Lod/m;
+    iget-object v1, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->h:Lnd/m;
 
     const/4 v2, 0x0
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {v1}, Lod/m;->h()Lcom/supercell/id/model/IdRelationshipStatus;
+    invoke-virtual {v1}, Lnd/m;->i()Lcom/supercell/id/model/IdRelationshipStatus;
 
     move-result-object v1
 
@@ -68,12 +68,12 @@
     .line 3
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v1
 
     .line 4
-    iget-object v2, v1, Lwd/r;->m:La2/a;
+    iget-object v2, v1, Lvd/r;->m:Lcom/supercell/titan/h;
 
     const/4 v6, 0x0
 
@@ -88,10 +88,10 @@
     const-string v5, "Add friend"
 
     .line 5
-    invoke-static/range {v2 .. v8}, La2/a;->b(La2/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static/range {v2 .. v8}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
 
     .line 6
-    iget-object v1, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->a:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iget-object v1, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
     invoke-static {v1}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->p1(Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;)V
 
@@ -124,12 +124,12 @@
     .line 8
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v1
 
     .line 9
-    iget-object v13, v1, Lwd/r;->m:La2/a;
+    iget-object v13, v1, Lvd/r;->m:Lcom/supercell/titan/h;
 
     const/16 v17, 0x0
 
@@ -144,29 +144,29 @@
     const-string v16, "Delete pending request"
 
     .line 10
-    invoke-static/range {v13 .. v19}, La2/a;->b(La2/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static/range {v13 .. v19}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
 
     .line 11
-    iget-object v1, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->a:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iget-object v1, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
-    invoke-static {v1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v1
 
     if-eqz v1, :cond_6
 
-    iget-object v3, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->a:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iget-object v3, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
     .line 12
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 13
-    new-instance v13, Luc/p;
+    new-instance v13, Lrc/p;
 
-    invoke-direct {v13}, Luc/p;-><init>()V
+    invoke-direct {v13}, Lrc/p;-><init>()V
 
     .line 14
-    iget-object v14, v13, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v14, v13, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz v14, :cond_2
 
@@ -210,18 +210,18 @@
     invoke-virtual {v13, v14}, Landroidx/fragment/app/Fragment;->J0(Landroid/os/Bundle;)V
 
     .line 24
-    new-instance v2, Lod/s;
+    new-instance v2, Lnd/r;
 
-    invoke-direct {v2, v3}, Lod/s;-><init>(Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;)V
+    invoke-direct {v2, v3}, Lnd/r;-><init>(Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;)V
 
     .line 25
-    iput-object v2, v13, Luc/p;->x0:Lke/l;
+    iput-object v2, v13, Lrc/p;->y0:Lke/l;
 
     .line 26
-    sget-object v2, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v2, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 27
-    invoke-virtual {v1, v13, v4}, Lcom/supercell/id/ui/MainActivity;->H(Luc/d;Ljava/lang/String;)V
+    invoke-virtual {v1, v13, v4}, Lcom/supercell/id/ui/MainActivity;->I(Lrc/e;Ljava/lang/String;)V
 
     goto/16 :goto_3
 
@@ -234,12 +234,12 @@
     .line 29
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v1
 
     .line 30
-    iget-object v13, v1, Lwd/r;->m:La2/a;
+    iget-object v13, v1, Lvd/r;->m:Lcom/supercell/titan/h;
 
     const/16 v17, 0x0
 
@@ -254,29 +254,29 @@
     const-string v16, "Remove friend"
 
     .line 31
-    invoke-static/range {v13 .. v19}, La2/a;->b(La2/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static/range {v13 .. v19}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
 
     .line 32
-    iget-object v1, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->a:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iget-object v1, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
-    invoke-static {v1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v1
 
     if-eqz v1, :cond_6
 
-    iget-object v3, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->a:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iget-object v3, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
     .line 33
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 34
-    new-instance v13, Luc/p;
+    new-instance v13, Lrc/p;
 
-    invoke-direct {v13}, Luc/p;-><init>()V
+    invoke-direct {v13}, Lrc/p;-><init>()V
 
     .line 35
-    iget-object v14, v13, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v14, v13, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz v14, :cond_4
 
@@ -320,18 +320,18 @@
     invoke-virtual {v13, v14}, Landroidx/fragment/app/Fragment;->J0(Landroid/os/Bundle;)V
 
     .line 45
-    new-instance v2, Lod/t;
+    new-instance v2, Lnd/s;
 
-    invoke-direct {v2, v3}, Lod/t;-><init>(Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;)V
+    invoke-direct {v2, v3}, Lnd/s;-><init>(Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;)V
 
     .line 46
-    iput-object v2, v13, Luc/p;->x0:Lke/l;
+    iput-object v2, v13, Lrc/p;->y0:Lke/l;
 
     .line 47
-    sget-object v2, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v2, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 48
-    invoke-virtual {v1, v13, v4}, Lcom/supercell/id/ui/MainActivity;->H(Luc/d;Ljava/lang/String;)V
+    invoke-virtual {v1, v13, v4}, Lcom/supercell/id/ui/MainActivity;->I(Lrc/e;Ljava/lang/String;)V
 
     goto :goto_3
 
@@ -344,12 +344,12 @@
     .line 50
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v1
 
     .line 51
-    iget-object v2, v1, Lwd/r;->m:La2/a;
+    iget-object v2, v1, Lvd/r;->m:Lcom/supercell/titan/h;
 
     const/4 v6, 0x0
 
@@ -364,18 +364,18 @@
     const-string v5, "Respond to friend request"
 
     .line 52
-    invoke-static/range {v2 .. v8}, La2/a;->b(La2/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static/range {v2 .. v8}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
 
     .line 53
-    iget-object v1, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->a:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iget-object v1, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
-    invoke-static {v1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v1
 
     if-eqz v1, :cond_6
 
-    iget-object v2, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->a:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iget-object v2, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$j;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
     .line 54
     invoke-virtual {v2, v1}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->s1(Lcom/supercell/id/ui/MainActivity;)V

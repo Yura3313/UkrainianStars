@@ -4,6 +4,10 @@
 
 
 # static fields
+.field public static final SENTRY_FRAGMENT_INTEGRATION_CLASS_NAME:Ljava/lang/String; = "io.sentry.android.fragment.FragmentLifecycleIntegration"
+
+.field public static final SENTRY_TIMBER_INTEGRATION_CLASS_NAME:Ljava/lang/String; = "io.sentry.android.timber.SentryTimberIntegration"
+
 .field private static final appStart:J
 
 .field private static final appStartTime:Ljava/util/Date;
@@ -52,6 +56,147 @@
 
     invoke-static {p0, p1, p2, p3}, Lio/sentry/android/core/SentryAndroid;->lambda$init$1(Landroid/content/Context;Lio/sentry/ILogger;Lio/sentry/Sentry$OptionsConfiguration;Lio/sentry/android/core/SentryAndroidOptions;)V
 
+    return-void
+.end method
+
+.method private static deduplicateIntegrations(Lio/sentry/SentryOptions;ZZ)V
+    .locals 5
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 2
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    .line 3
+    invoke-virtual {p0}, Lio/sentry/SentryOptions;->getIntegrations()Ljava/util/List;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :cond_0
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lio/sentry/Integration;
+
+    if-eqz p1, :cond_1
+
+    .line 4
+    instance-of v4, v3, Lio/sentry/android/fragment/FragmentLifecycleIntegration;
+
+    if-eqz v4, :cond_1
+
+    .line 5
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :cond_1
+    if-eqz p2, :cond_0
+
+    .line 6
+    instance-of v4, v3, Lio/sentry/android/timber/SentryTimberIntegration;
+
+    if-eqz v4, :cond_0
+
+    .line 7
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    .line 8
+    :cond_2
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+
+    move-result p1
+
+    const/4 p2, 0x0
+
+    const/4 v2, 0x1
+
+    if-le p1, v2, :cond_3
+
+    const/4 p1, 0x0
+
+    .line 9
+    :goto_1
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+
+    move-result v3
+
+    sub-int/2addr v3, v2
+
+    if-ge p1, v3, :cond_3
+
+    .line 10
+    invoke-virtual {v1, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lio/sentry/Integration;
+
+    .line 11
+    invoke-virtual {p0}, Lio/sentry/SentryOptions;->getIntegrations()Ljava/util/List;
+
+    move-result-object v4
+
+    invoke-interface {v4, v3}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
+
+    add-int/lit8 p1, p1, 0x1
+
+    goto :goto_1
+
+    .line 12
+    :cond_3
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result p1
+
+    if-le p1, v2, :cond_4
+
+    .line 13
+    :goto_2
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result p1
+
+    sub-int/2addr p1, v2
+
+    if-ge p2, p1, :cond_4
+
+    .line 14
+    invoke-virtual {v0, p2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lio/sentry/Integration;
+
+    .line 15
+    invoke-virtual {p0}, Lio/sentry/SentryOptions;->getIntegrations()Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-interface {v1, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
+
+    add-int/lit8 p2, p2, 0x1
+
+    goto :goto_2
+
+    :cond_4
     return-void
 .end method
 
@@ -255,13 +400,35 @@
 .end method
 
 .method private static synthetic lambda$init$1(Landroid/content/Context;Lio/sentry/ILogger;Lio/sentry/Sentry$OptionsConfiguration;Lio/sentry/android/core/SentryAndroidOptions;)V
-    .locals 0
+    .locals 3
 
     .line 1
-    invoke-static {p3, p0, p1}, Lio/sentry/android/core/AndroidOptionsInitializer;->init(Lio/sentry/android/core/SentryAndroidOptions;Landroid/content/Context;Lio/sentry/ILogger;)V
+    new-instance v0, Lio/sentry/android/core/LoadClass;
+
+    invoke-direct {v0}, Lio/sentry/android/core/LoadClass;-><init>()V
+
+    const-string v1, "io.sentry.android.fragment.FragmentLifecycleIntegration"
 
     .line 2
+    invoke-virtual {v0, v1, p3}, Lio/sentry/android/core/LoadClass;->isClassAvailable(Ljava/lang/String;Lio/sentry/SentryOptions;)Z
+
+    move-result v1
+
+    const-string v2, "io.sentry.android.timber.SentryTimberIntegration"
+
+    .line 3
+    invoke-virtual {v0, v2, p3}, Lio/sentry/android/core/LoadClass;->isClassAvailable(Ljava/lang/String;Lio/sentry/SentryOptions;)Z
+
+    move-result v0
+
+    .line 4
+    invoke-static {p3, p0, p1, v1, v0}, Lio/sentry/android/core/AndroidOptionsInitializer;->init(Lio/sentry/android/core/SentryAndroidOptions;Landroid/content/Context;Lio/sentry/ILogger;ZZ)V
+
+    .line 5
     invoke-interface {p2, p3}, Lio/sentry/Sentry$OptionsConfiguration;->configure(Lio/sentry/SentryOptions;)V
+
+    .line 6
+    invoke-static {p3, v1, v0}, Lio/sentry/android/core/SentryAndroid;->deduplicateIntegrations(Lio/sentry/SentryOptions;ZZ)V
 
     return-void
 .end method

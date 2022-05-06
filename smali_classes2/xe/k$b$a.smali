@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lxe/k$b;->m0(Lxe/d;)V
+    value = Lxe/k$b;->b0(Lxe/d;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -62,7 +62,7 @@
     .line 1
     iget-object p1, p0, Lxe/k$b$a;->b:Lxe/k$b;
 
-    iget-object p1, p1, Lxe/k$b;->a:Ljava/util/concurrent/Executor;
+    iget-object p1, p1, Lxe/k$b;->g:Ljava/util/concurrent/Executor;
 
     new-instance v0, Lxe/k$b$a$b;
 
@@ -88,7 +88,7 @@
     .line 1
     iget-object p1, p0, Lxe/k$b$a;->b:Lxe/k$b;
 
-    iget-object p1, p1, Lxe/k$b;->a:Ljava/util/concurrent/Executor;
+    iget-object p1, p1, Lxe/k$b;->g:Ljava/util/concurrent/Executor;
 
     new-instance v0, Lxe/k$b$a$a;
 

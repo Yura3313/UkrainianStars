@@ -1,93 +1,97 @@
-.class public final Lj3/wo0;
-.super Lj3/vo0;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
+.class public final synthetic Lj3/wo0;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
 
 
 # direct methods
-.method public constructor <init>([BI)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/InvalidKeyException;
-        }
-    .end annotation
+.method public static a()[I
+    .locals 1
+
+    const/4 v0, 0x6
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lj3/vo0;-><init>([BI)V
+    invoke-static {v0}, Lp/g;->c(I)[I
 
-    return-void
-.end method
-
-
-# virtual methods
-.method public final f([II)[I
-    .locals 3
-
-    .line 1
-    array-length v0, p1
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x3
-
-    if-ne v0, v2, :cond_0
-
-    const/16 v0, 0x10
-
-    new-array v0, v0, [I
-
-    .line 2
-    iget-object v2, p0, Lj3/vo0;->a:[I
-
-    invoke-static {v0, v2}, Lj3/vo0;->e([I[I)V
-
-    const/16 v2, 0xc
-
-    aput p2, v0, v2
-
-    const/16 p2, 0xd
-
-    .line 3
-    array-length v2, p1
-
-    invoke-static {p1, v1, v0, p2, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    move-result-object v0
 
     return-object v0
+.end method
 
-    .line 4
-    :cond_0
-    new-instance p2, Ljava/lang/IllegalArgumentException;
+.method public static synthetic b(I)Ljava/lang/String;
+    .locals 1
 
     const/4 v0, 0x1
 
-    new-array v0, v0, [Ljava/lang/Object;
+    if-ne p0, v0, :cond_0
 
-    array-length p1, p1
+    const-string p0, "five_star"
 
-    shl-int/lit8 p1, p1, 0x5
+    return-object p0
 
-    .line 5
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    :cond_0
+    const/4 p0, 0x0
 
-    move-result-object p1
-
-    aput-object p1, v0, v1
-
-    const-string p1, "ChaCha20 uses 96-bit nonces, but got a %d-bit nonce"
-
-    invoke-static {p1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p2
+    throw p0
 .end method
 
-.method public final g()I
+.method public static synthetic c(I)Ljava/lang/String;
     .locals 1
 
-    const/16 v0, 0xc
+    const/4 v0, 0x1
 
-    return v0
+    if-ne p0, v0, :cond_0
+
+    const-string p0, "UNKNOWN_CURVE"
+
+    return-object p0
+
+    :cond_0
+    const/4 v0, 0x2
+
+    if-ne p0, v0, :cond_1
+
+    const-string p0, "NIST_P256"
+
+    return-object p0
+
+    :cond_1
+    const/4 v0, 0x3
+
+    if-ne p0, v0, :cond_2
+
+    const-string p0, "NIST_P384"
+
+    return-object p0
+
+    :cond_2
+    const/4 v0, 0x4
+
+    if-ne p0, v0, :cond_3
+
+    const-string p0, "NIST_P521"
+
+    return-object p0
+
+    :cond_3
+    const/4 v0, 0x5
+
+    if-ne p0, v0, :cond_4
+
+    const-string p0, "CURVE25519"
+
+    return-object p0
+
+    :cond_4
+    const/4 v0, 0x6
+
+    if-ne p0, v0, :cond_5
+
+    const-string p0, "UNRECOGNIZED"
+
+    return-object p0
+
+    :cond_5
+    const-string p0, "null"
+
+    return-object p0
 .end method

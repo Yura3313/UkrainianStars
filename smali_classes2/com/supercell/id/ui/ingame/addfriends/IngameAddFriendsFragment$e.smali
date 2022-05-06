@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$e;->a:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$e;->g:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,12 +40,12 @@
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
     .line 2
-    iget-object v1, v0, Lwd/r;->m:La2/a;
+    iget-object v1, v0, Lvd/r;->m:Lcom/supercell/titan/h;
 
     const/4 v5, 0x0
 
@@ -60,12 +60,12 @@
     const-string v4, "My QR code info"
 
     .line 3
-    invoke-static/range {v1 .. v7}, La2/a;->b(La2/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static/range {v1 .. v7}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$e;->a:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$e;->g:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
 
-    invoke-static {v0}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v0}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
@@ -73,12 +73,12 @@
 
     const-string v1, "it"
 
-    invoke-static {p1, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 5
-    sget-object v1, Luc/w;->y0:Luc/w$a;
+    sget-object v1, Lrc/x;->z0:Lrc/x$a;
 
-    invoke-static {p1}, Lwd/f2;->b(Landroid/view/View;)Landroid/graphics/Rect;
+    invoke-static {p1}, Lvd/g2;->b(Landroid/view/View;)Landroid/graphics/Rect;
 
     move-result-object p1
 
@@ -90,22 +90,22 @@
 
     const-string v4, "resources"
 
-    invoke-static {v3, v4}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v3}, Landroidx/savedstate/d;->o(Landroid/content/res/Resources;)Z
+    invoke-static {v3}, Lcom/android/billingclient/api/a0;->i(Landroid/content/res/Resources;)Z
 
     move-result v3
 
-    invoke-virtual {v1, p1, v2, v3}, Luc/w$a;->a(Landroid/graphics/Rect;IZ)Luc/w;
+    invoke-virtual {v1, p1, v2, v3}, Lrc/x$a;->a(Landroid/graphics/Rect;IZ)Lrc/x;
 
     move-result-object p1
 
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const-string v1, "popupDialog"
 
     .line 6
-    invoke-virtual {v0, p1, v1}, Lcom/supercell/id/ui/MainActivity;->H(Luc/d;Ljava/lang/String;)V
+    invoke-virtual {v0, p1, v1}, Lcom/supercell/id/ui/MainActivity;->I(Lrc/e;Ljava/lang/String;)V
 
     :cond_0
     return-void

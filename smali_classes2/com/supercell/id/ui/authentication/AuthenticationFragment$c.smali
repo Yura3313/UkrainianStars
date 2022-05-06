@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/authentication/AuthenticationFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$c;->a:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$c;->g:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,9 +38,9 @@
     .locals 3
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$c;->a:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$c;->g:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
 
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -52,12 +52,12 @@
 
     const/4 v2, 0x0
 
-    invoke-static {p1, v2, v0, v1}, Lcom/supercell/id/ui/MainActivity;->x(Lcom/supercell/id/ui/MainActivity;Lcom/supercell/id/IdLoginDetails;ZI)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-static {p1, v2, v0, v1}, Lcom/supercell/id/ui/MainActivity;->y(Lcom/supercell/id/ui/MainActivity;Lcom/supercell/id/IdLoginDetails;ZI)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v0
 
     .line 2
-    invoke-virtual {p1, v0, v2}, Lcom/supercell/id/ui/MainActivity;->y(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
+    invoke-virtual {p1, v0, v2}, Lcom/supercell/id/ui/MainActivity;->z(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
 
     :cond_0
     return-void

@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final a:[Lde/f;
+.field public final g:[Lde/f;
 
 
 # direct methods
@@ -28,7 +28,7 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lde/c$a;->a:[Lde/f;
+    iput-object p1, p0, Lde/c$a;->g:[Lde/f;
 
     return-void
 .end method
@@ -37,9 +37,9 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lde/c$a;->a:[Lde/f;
+    iget-object v0, p0, Lde/c$a;->g:[Lde/f;
 
-    sget-object v1, Lde/g;->a:Lde/g;
+    sget-object v1, Lde/g;->g:Lde/g;
 
     .line 2
     array-length v2, v0

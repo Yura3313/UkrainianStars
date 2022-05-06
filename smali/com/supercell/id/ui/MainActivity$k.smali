@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/MainActivity;
+.field public final synthetic g:Lcom/supercell/id/ui/MainActivity;
 
-.field public final synthetic b:Z
+.field public final synthetic h:Z
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/MainActivity;Z)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/MainActivity$k;->a:Lcom/supercell/id/ui/MainActivity;
+    iput-object p1, p0, Lcom/supercell/id/ui/MainActivity$k;->g:Lcom/supercell/id/ui/MainActivity;
 
-    iput-boolean p2, p0, Lcom/supercell/id/ui/MainActivity$k;->b:Z
+    iput-boolean p2, p0, Lcom/supercell/id/ui/MainActivity$k;->h:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity$k;->a:Lcom/supercell/id/ui/MainActivity;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity$k;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-static {v0}, Lcom/supercell/id/ui/MainActivity;->b(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BackStack;
 
@@ -55,7 +55,7 @@
     instance-of v0, v0, Lcom/supercell/id/ui/MaintenanceModeFragment$BackStackEntry;
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity$k;->a:Lcom/supercell/id/ui/MainActivity;
+    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity$k;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-static {v1}, Lcom/supercell/id/ui/MainActivity;->b(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BackStack;
 
@@ -71,7 +71,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {v1}, Lcom/supercell/id/ui/BackStack$Entry;->R()Z
+    invoke-virtual {v1}, Lcom/supercell/id/ui/BackStack$Entry;->M()Z
 
     move-result v1
 
@@ -86,7 +86,7 @@
 
     .line 3
     :goto_0
-    iget-boolean v4, p0, Lcom/supercell/id/ui/MainActivity$k;->b:Z
+    iget-boolean v4, p0, Lcom/supercell/id/ui/MainActivity$k;->h:Z
 
     if-eqz v4, :cond_1
 
@@ -95,7 +95,7 @@
     if-nez v1, :cond_1
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity$k;->a:Lcom/supercell/id/ui/MainActivity;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity$k;->g:Lcom/supercell/id/ui/MainActivity;
 
     new-array v1, v3, [Lcom/supercell/id/ui/BackStack$Entry;
 
@@ -105,7 +105,7 @@
 
     aput-object v3, v1, v2
 
-    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/MainActivity;->C([Lcom/supercell/id/ui/BackStack$Entry;)V
+    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/MainActivity;->D([Lcom/supercell/id/ui/BackStack$Entry;)V
 
     goto :goto_1
 
@@ -115,7 +115,7 @@
     if-eqz v0, :cond_2
 
     .line 5
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity$k;->a:Lcom/supercell/id/ui/MainActivity;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity$k;->g:Lcom/supercell/id/ui/MainActivity;
 
     .line 6
     invoke-virtual {v0}, Lcom/supercell/id/ui/MainActivity;->g()[Lcom/supercell/id/ui/BackStack$Entry;
@@ -131,7 +131,7 @@
 
     check-cast v1, [Lcom/supercell/id/ui/BackStack$Entry;
 
-    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/MainActivity;->C([Lcom/supercell/id/ui/BackStack$Entry;)V
+    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/MainActivity;->D([Lcom/supercell/id/ui/BackStack$Entry;)V
 
     :cond_2
     :goto_1

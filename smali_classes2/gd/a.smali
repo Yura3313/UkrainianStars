@@ -1,98 +1,196 @@
 .class public final Lgd/a;
-.super Lle/j;
-.source "InviteFriendsFragment.kt"
+.super Ljava/lang/Object;
+.source "IngameFriendsFragment.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Lvd/j1;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;",
-        "Landroid/graphics/Bitmap;",
-        "Lbe/n;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final a:I
 
+.field public final b:I
 
-# static fields
-.field public static final a:Lgd/a;
+.field public final c:Z
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(IZ)V
+    .locals 0
 
-    new-instance v0, Lgd/a;
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {v0}, Lgd/a;-><init>()V
+    iput p1, p0, Lgd/a;->b:I
 
-    sput-object v0, Lgd/a;->a:Lgd/a;
+    iput-boolean p2, p0, Lgd/a;->c:Z
 
-    return-void
-.end method
+    .line 2
+    sget p1, Lcom/supercell/id/R$layout;->fragment_ingame_friends_list_item_invite_all:I
 
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    iput p1, p0, Lgd/a;->a:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    check-cast p1, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
-
-    check-cast p2, Landroid/graphics/Bitmap;
-
-    const/4 v0, 0x0
+.method public a(Lvd/j1;)Z
+    .locals 3
 
     if-eqz p1, :cond_2
 
-    if-eqz p2, :cond_1
+    .line 1
+    instance-of v0, p1, Lgd/a;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
 
     .line 2
-    sget v0, Lcom/supercell/id/R$id;->qr_code:I
+    :cond_0
+    iget v0, p0, Lgd/a;->b:I
 
-    invoke-virtual {p1, v0}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->o1(I)Landroid/view/View;
+    check-cast p1, Lgd/a;
 
-    move-result-object p1
+    iget v2, p1, Lgd/a;->b:I
 
-    check-cast p1, Landroid/widget/ImageView;
+    if-ne v0, v2, :cond_1
+
+    iget-boolean v0, p0, Lgd/a;->c:Z
+
+    iget-boolean p1, p1, Lgd/a;->c:Z
+
+    if-ne v0, p1, :cond_1
+
+    const/4 v1, 0x1
+
+    :cond_1
+    return v1
+
+    :cond_2
+    const-string p1, "other"
+
+    .line 3
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public c()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lgd/a;->a:I
+
+    return v0
+.end method
+
+.method public d(Lvd/j1;)Z
+    .locals 0
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+    .line 1
+    instance-of p1, p1, Lgd/a;
 
-    .line 3
+    return p1
+
     :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    const-string p1, "other"
 
-    return-object p1
+    .line 2
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    if-eq p0, p1, :cond_1
+
+    instance-of v0, p1, Lgd/a;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lgd/a;
+
+    iget v0, p0, Lgd/a;->b:I
+
+    iget v1, p1, Lgd/a;->b:I
+
+    if-ne v0, v1, :cond_0
+
+    iget-boolean v0, p0, Lgd/a;->c:Z
+
+    iget-boolean p1, p1, Lgd/a;->c:Z
+
+    if-ne v0, p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
 
     :cond_1
-    const-string p1, "it"
+    :goto_0
+    const/4 p1, 0x1
 
-    .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    return p1
+.end method
 
-    throw v0
+.method public hashCode()I
+    .locals 2
 
-    :cond_2
-    const-string p1, "$receiver"
+    iget v0, p0, Lgd/a;->b:I
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    mul-int/lit8 v0, v0, 0x1f
 
-    throw v0
+    iget-boolean v1, p0, Lgd/a;->c:Z
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, 0x1
+
+    :cond_0
+    add-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 3
+
+    const-string v0, "AddAllRow(friendsCount="
+
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget v1, p0, Lgd/a;->b:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", friendsDidExist="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v1, p0, Lgd/a;->c:Z
+
+    const-string v2, ")"
+
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/i;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

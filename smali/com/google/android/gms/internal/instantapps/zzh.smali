@@ -15,19 +15,19 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final b:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
-.field public final h:[Ljava/lang/String;
+.field public final i:[Ljava/lang/String;
 
-.field public final i:[I
+.field public final j:[I
 
-.field public final j:I
+.field public final k:I
 
-.field public final k:[B
+.field public final l:[B
 
-.field public final l:Z
+.field public final m:Z
 
 
 # direct methods
@@ -51,25 +51,25 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/instantapps/zzh;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/instantapps/zzh;->g:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/instantapps/zzh;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/internal/instantapps/zzh;->h:Ljava/lang/String;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/instantapps/zzh;->h:[Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/internal/instantapps/zzh;->i:[Ljava/lang/String;
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/gms/internal/instantapps/zzh;->i:[I
+    iput-object p4, p0, Lcom/google/android/gms/internal/instantapps/zzh;->j:[I
 
     .line 6
-    iput p5, p0, Lcom/google/android/gms/internal/instantapps/zzh;->j:I
+    iput p5, p0, Lcom/google/android/gms/internal/instantapps/zzh;->k:I
 
     .line 7
-    iput-object p6, p0, Lcom/google/android/gms/internal/instantapps/zzh;->k:[B
+    iput-object p6, p0, Lcom/google/android/gms/internal/instantapps/zzh;->l:[B
 
     .line 8
-    iput-boolean p7, p0, Lcom/google/android/gms/internal/instantapps/zzh;->l:Z
+    iput-boolean p7, p0, Lcom/google/android/gms/internal/instantapps/zzh;->m:Z
 
     return-void
 .end method
@@ -87,7 +87,7 @@
     move-result p2
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzh;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzh;->g:Ljava/lang/String;
 
     const/4 v1, 0x2
 
@@ -97,7 +97,7 @@
     invoke-static {p1, v1, v0, v2}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzh;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzh;->h:Ljava/lang/String;
 
     const/4 v1, 0x4
 
@@ -105,7 +105,7 @@
     invoke-static {p1, v1, v0, v2}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 6
-    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzh;->h:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzh;->i:[Ljava/lang/String;
 
     const/4 v3, 0x5
 
@@ -113,7 +113,7 @@
     invoke-static {p1, v3, v0, v2}, Ld2/b;->n(Landroid/os/Parcel;I[Ljava/lang/String;Z)V
 
     .line 8
-    iget v0, p0, Lcom/google/android/gms/internal/instantapps/zzh;->j:I
+    iget v0, p0, Lcom/google/android/gms/internal/instantapps/zzh;->k:I
 
     const/4 v3, 0x6
 
@@ -124,7 +124,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 11
-    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzh;->k:[B
+    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzh;->l:[B
 
     const/4 v3, 0x7
 
@@ -132,7 +132,7 @@
     invoke-static {p1, v3, v0, v2}, Ld2/b;->e(Landroid/os/Parcel;I[BZ)V
 
     .line 13
-    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzh;->i:[I
+    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzh;->j:[I
 
     if-nez v0, :cond_0
 
@@ -156,7 +156,7 @@
     const/16 v0, 0x9
 
     .line 17
-    iget-boolean v2, p0, Lcom/google/android/gms/internal/instantapps/zzh;->l:Z
+    iget-boolean v2, p0, Lcom/google/android/gms/internal/instantapps/zzh;->m:Z
 
     .line 18
     invoke-static {p1, v0, v1}, Ld2/b;->s(Landroid/os/Parcel;II)V

@@ -46,7 +46,7 @@
     .line 2
     iget-object p1, p1, Landroidx/fragment/app/u;->a:Landroidx/fragment/app/w;
 
-    iget-object v0, p1, Landroidx/fragment/app/w;->i:Landroidx/fragment/app/FragmentManager;
+    iget-object v0, p1, Landroidx/fragment/app/w;->j:Landroidx/fragment/app/FragmentManager;
 
     const/4 v1, 0x0
 
@@ -86,7 +86,7 @@
     if-eqz v1, :cond_0
 
     .line 8
-    iget-object v0, v0, Landroidx/fragment/app/w;->i:Landroidx/fragment/app/FragmentManager;
+    iget-object v0, v0, Landroidx/fragment/app/w;->j:Landroidx/fragment/app/FragmentManager;
 
     invoke-virtual {v0, p1}, Landroidx/fragment/app/FragmentManager;->f0(Landroid/os/Parcelable;)V
 

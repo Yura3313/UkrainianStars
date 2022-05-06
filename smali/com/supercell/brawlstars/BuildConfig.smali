@@ -20,9 +20,9 @@
 
 .field public static final UNBOTIFY_LABEL:I = 0x0
 
-.field public static final VERSION_CODE:I = 0xa55d
+.field public static final VERSION_CODE:I = 0xa8dd
 
-.field public static final VERSION_NAME:Ljava/lang/String; = "42.333"
+.field public static final VERSION_NAME:Ljava/lang/String; = "43.229"
 
 
 # direct methods

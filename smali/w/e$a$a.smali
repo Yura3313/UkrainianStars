@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic a:Landroid/graphics/Typeface;
+.field public final synthetic g:Landroid/graphics/Typeface;
 
-.field public final synthetic b:Lw/e$a;
+.field public final synthetic h:Lw/e$a;
 
 
 # direct methods
@@ -28,9 +28,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lw/e$a$a;->b:Lw/e$a;
+    iput-object p1, p0, Lw/e$a$a;->h:Lw/e$a;
 
-    iput-object p2, p0, Lw/e$a$a;->a:Landroid/graphics/Typeface;
+    iput-object p2, p0, Lw/e$a$a;->g:Landroid/graphics/Typeface;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,9 +43,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lw/e$a$a;->b:Lw/e$a;
+    iget-object v0, p0, Lw/e$a$a;->h:Lw/e$a;
 
-    iget-object v1, p0, Lw/e$a$a;->a:Landroid/graphics/Typeface;
+    iget-object v1, p0, Lw/e$a$a;->g:Landroid/graphics/Typeface;
 
     invoke-virtual {v0, v1}, Lw/e$a;->d(Landroid/graphics/Typeface;)V
 

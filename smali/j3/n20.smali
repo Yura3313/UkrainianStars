@@ -3,38 +3,53 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/gl0;
+.implements Lj3/ql0;
 
 
-# instance fields
-.field public final a:Lj3/u5;
+# static fields
+.field public static final a:Lj3/ql0;
 
 
 # direct methods
-.method public constructor <init>(Lj3/u5;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lj3/n20;
+
+    invoke-direct {v0}, Lj3/n20;-><init>()V
+
+    sput-object v0, Lj3/n20;->a:Lj3/ql0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lj3/n20;->a:Lj3/u5;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lj3/yl0;
+.method public final a(Ljava/lang/Object;)Lj3/im0;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lj3/n20;->a:Lj3/u5;
-
-    check-cast p1, Lorg/json/JSONObject;
+    check-cast p1, Ljava/util/concurrent/TimeoutException;
 
     .line 2
-    invoke-virtual {v0, p1}, Lj3/u5;->b(Ljava/lang/Object;)Lj3/yl0;
+    new-instance p1, Lcom/google/android/gms/internal/ads/zzcmt;
 
-    move-result-object p1
+    const/4 v0, 0x5
 
-    return-object p1
+    invoke-direct {p1, v0}, Lcom/google/android/gms/internal/ads/zzcmt;-><init>(I)V
+
+    .line 3
+    new-instance v0, Lj3/gm0$a;
+
+    invoke-direct {v0, p1}, Lj3/gm0$a;-><init>(Ljava/lang/Throwable;)V
+
+    return-object v0
 .end method

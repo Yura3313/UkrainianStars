@@ -42,6 +42,8 @@
 
 .field private final root:Lio/sentry/Span;
 
+.field private traceState:Lio/sentry/TraceState;
+
 .field private final transactionFinishedCallback:Lio/sentry/TransactionFinishedCallback;
 
 .field private final waitForChildren:Z
@@ -169,7 +171,15 @@
     return-void
 .end method
 
-.method public static synthetic a(Lio/sentry/SentryTracer;Lio/sentry/Scope;Lio/sentry/ITransaction;)V
+.method public static synthetic a(Ljava/util/concurrent/atomic/AtomicReference;Lio/sentry/Scope;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Lio/sentry/SentryTracer;->lambda$traceState$3(Ljava/util/concurrent/atomic/AtomicReference;Lio/sentry/Scope;)V
+
+    return-void
+.end method
+
+.method public static synthetic b(Lio/sentry/SentryTracer;Lio/sentry/Scope;Lio/sentry/ITransaction;)V
     .locals 0
 
     invoke-direct {p0, p1, p2}, Lio/sentry/SentryTracer;->lambda$finish$1(Lio/sentry/Scope;Lio/sentry/ITransaction;)V
@@ -177,18 +187,10 @@
     return-void
 .end method
 
-.method public static synthetic b(Lio/sentry/SentryTracer;Lio/sentry/Scope;)V
+.method public static synthetic c(Lio/sentry/SentryTracer;Lio/sentry/Scope;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lio/sentry/SentryTracer;->lambda$finish$2(Lio/sentry/Scope;)V
-
-    return-void
-.end method
-
-.method public static synthetic c(Lio/sentry/SentryTracer;Lio/sentry/Span;)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lio/sentry/SentryTracer;->lambda$createChild$0(Lio/sentry/Span;)V
 
     return-void
 .end method
@@ -209,31 +211,48 @@
 .method private createChild(Lio/sentry/SpanId;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Lio/sentry/ISpan;
     .locals 9
 
+    .line 2
+    iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
+
+    invoke-virtual {v0}, Lio/sentry/Span;->isFinished()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    invoke-static {}, Lio/sentry/NoOpSpan;->getInstance()Lio/sentry/NoOpSpan;
+
+    move-result-object p1
+
+    return-object p1
+
+    :cond_0
     const-string v0, "parentSpanId is required"
 
-    .line 2
+    .line 4
     invoke-static {p1, v0}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "operation is required"
 
-    .line 3
+    .line 5
     invoke-static {p2, v0}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 4
+    .line 6
     new-instance v0, Lio/sentry/Span;
 
     iget-object v1, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
-    .line 5
+    .line 7
     invoke-virtual {v1}, Lio/sentry/Span;->getTraceId()Lio/sentry/protocol/SentryId;
 
     move-result-object v2
 
     iget-object v6, p0, Lio/sentry/SentryTracer;->hub:Lio/sentry/IHub;
 
-    new-instance v8, Lio/sentry/c0;
+    new-instance v8, Lio/sentry/d0;
 
-    invoke-direct {v8, p0}, Lio/sentry/c0;-><init>(Lio/sentry/SentryTracer;)V
+    invoke-direct {v8, p0}, Lio/sentry/d0;-><init>(Lio/sentry/SentryTracer;)V
 
     move-object v1, v0
 
@@ -247,10 +266,10 @@
 
     invoke-direct/range {v1 .. v8}, Lio/sentry/Span;-><init>(Lio/sentry/protocol/SentryId;Lio/sentry/SpanId;Lio/sentry/SentryTracer;Ljava/lang/String;Lio/sentry/IHub;Ljava/util/Date;Lio/sentry/SpanFinishedCallback;)V
 
-    .line 6
+    .line 8
     invoke-virtual {v0, p3}, Lio/sentry/Span;->setDescription(Ljava/lang/String;)V
 
-    .line 7
+    .line 9
     iget-object p1, p0, Lio/sentry/SentryTracer;->children:Ljava/util/List;
 
     invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -261,7 +280,24 @@
 .method private createChild(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Lio/sentry/ISpan;
     .locals 3
 
-    .line 8
+    .line 10
+    iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
+
+    invoke-virtual {v0}, Lio/sentry/Span;->isFinished()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 11
+    invoke-static {}, Lio/sentry/NoOpSpan;->getInstance()Lio/sentry/NoOpSpan;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 12
+    :cond_0
     iget-object v0, p0, Lio/sentry/SentryTracer;->children:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -278,9 +314,9 @@
 
     move-result v1
 
-    if-ge v0, v1, :cond_0
+    if-ge v0, v1, :cond_1
 
-    .line 9
+    .line 13
     iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
     invoke-virtual {v0, p1, p2, p3}, Lio/sentry/Span;->startChild(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Lio/sentry/ISpan;
@@ -289,15 +325,15 @@
 
     return-object p1
 
-    .line 10
-    :cond_0
+    .line 14
+    :cond_1
     iget-object p3, p0, Lio/sentry/SentryTracer;->hub:Lio/sentry/IHub;
 
     invoke-interface {p3}, Lio/sentry/IHub;->getOptions()Lio/sentry/SentryOptions;
 
     move-result-object p3
 
-    .line 11
+    .line 15
     invoke-virtual {p3}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
 
     move-result-object p3
@@ -318,15 +354,23 @@
 
     const-string p1, "Span operation: %s, description: %s dropped due to limit reached. Returning NoOpSpan."
 
-    .line 12
+    .line 16
     invoke-interface {p3, v0, p1, v1}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 13
+    .line 17
     invoke-static {}, Lio/sentry/NoOpSpan;->getInstance()Lio/sentry/NoOpSpan;
 
     move-result-object p1
 
     return-object p1
+.end method
+
+.method public static synthetic d(Lio/sentry/SentryTracer;Lio/sentry/Span;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lio/sentry/SentryTracer;->lambda$createChild$0(Lio/sentry/Span;)V
+
+    return-void
 .end method
 
 .method private hasAllChildrenFinished()Z
@@ -430,6 +474,19 @@
     return-void
 .end method
 
+.method private static synthetic lambda$traceState$3(Ljava/util/concurrent/atomic/AtomicReference;Lio/sentry/Scope;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Lio/sentry/Scope;->getUser()Lio/sentry/protocol/User;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
 
 # virtual methods
 .method public finish()V
@@ -446,7 +503,7 @@
 .end method
 
 .method public finish(Lio/sentry/SpanStatus;)V
-    .locals 1
+    .locals 4
 
     .line 2
     invoke-static {p1}, Lio/sentry/SentryTracer$FinishStatus;->finishing(Lio/sentry/SpanStatus;)Lio/sentry/SentryTracer$FinishStatus;
@@ -462,7 +519,7 @@
 
     move-result p1
 
-    if-nez p1, :cond_2
+    if-nez p1, :cond_5
 
     iget-boolean p1, p0, Lio/sentry/SentryTracer;->waitForChildren:Z
 
@@ -472,7 +529,7 @@
 
     move-result p1
 
-    if-eqz p1, :cond_2
+    if-eqz p1, :cond_5
 
     .line 4
     :cond_0
@@ -487,6 +544,102 @@
     invoke-virtual {p1, v0}, Lio/sentry/Span;->finish(Lio/sentry/SpanStatus;)V
 
     .line 5
+    iget-object p1, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
+
+    invoke-virtual {p1}, Lio/sentry/Span;->getTimestamp()Ljava/util/Date;
+
+    move-result-object p1
+
+    if-nez p1, :cond_1
+
+    .line 6
+    iget-object p1, p0, Lio/sentry/SentryTracer;->hub:Lio/sentry/IHub;
+
+    invoke-interface {p1}, Lio/sentry/IHub;->getOptions()Lio/sentry/SentryOptions;
+
+    move-result-object p1
+
+    .line 7
+    invoke-virtual {p1}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
+
+    move-result-object p1
+
+    sget-object v0, Lio/sentry/SentryLevel;->WARNING:Lio/sentry/SentryLevel;
+
+    const/4 v1, 0x2
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    const/4 v2, 0x0
+
+    iget-object v3, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
+
+    .line 8
+    invoke-virtual {v3}, Lio/sentry/Span;->getOperation()Ljava/lang/String;
+
+    move-result-object v3
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x1
+
+    iget-object v3, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
+
+    .line 9
+    invoke-virtual {v3}, Lio/sentry/Span;->getDescription()Ljava/lang/String;
+
+    move-result-object v3
+
+    aput-object v3, v1, v2
+
+    const-string v2, "Root span - op: %s, description: %s - has no timestamp set, when finishing unfinished spans."
+
+    .line 10
+    invoke-interface {p1, v0, v2, v1}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 11
+    invoke-static {}, Lio/sentry/DateUtils;->getCurrentDateTime()Ljava/util/Date;
+
+    move-result-object p1
+
+    .line 12
+    :cond_1
+    iget-object v0, p0, Lio/sentry/SentryTracer;->children:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_2
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lio/sentry/Span;
+
+    .line 13
+    invoke-virtual {v1}, Lio/sentry/Span;->isFinished()Z
+
+    move-result v2
+
+    if-nez v2, :cond_2
+
+    .line 14
+    sget-object v2, Lio/sentry/SpanStatus;->DEADLINE_EXCEEDED:Lio/sentry/SpanStatus;
+
+    invoke-virtual {v1, v2, p1}, Lio/sentry/Span;->finish(Lio/sentry/SpanStatus;Ljava/util/Date;)V
+
+    goto :goto_0
+
+    .line 15
+    :cond_3
     iget-object p1, p0, Lio/sentry/SentryTracer;->hub:Lio/sentry/IHub;
 
     new-instance v0, Lio/sentry/b0;
@@ -495,26 +648,30 @@
 
     invoke-interface {p1, v0}, Lio/sentry/IHub;->configureScope(Lio/sentry/ScopeCallback;)V
 
-    .line 6
+    .line 16
     new-instance p1, Lio/sentry/protocol/SentryTransaction;
 
     invoke-direct {p1, p0}, Lio/sentry/protocol/SentryTransaction;-><init>(Lio/sentry/SentryTracer;)V
 
-    .line 7
+    .line 17
     iget-object v0, p0, Lio/sentry/SentryTracer;->transactionFinishedCallback:Lio/sentry/TransactionFinishedCallback;
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_4
 
-    .line 8
+    .line 18
     invoke-interface {v0, p0}, Lio/sentry/TransactionFinishedCallback;->execute(Lio/sentry/ITransaction;)V
 
-    .line 9
-    :cond_1
+    .line 19
+    :cond_4
     iget-object v0, p0, Lio/sentry/SentryTracer;->hub:Lio/sentry/IHub;
 
-    invoke-interface {v0, p1}, Lio/sentry/IHub;->captureTransaction(Lio/sentry/protocol/SentryTransaction;)Lio/sentry/protocol/SentryId;
+    invoke-virtual {p0}, Lio/sentry/SentryTracer;->traceState()Lio/sentry/TraceState;
 
-    :cond_2
+    move-result-object v1
+
+    invoke-interface {v0, p1, v1}, Lio/sentry/IHub;->captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;)Lio/sentry/protocol/SentryId;
+
+    :cond_5
     return-void
 .end method
 
@@ -545,6 +702,41 @@
 
     .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->contexts:Lio/sentry/protocol/Contexts;
+
+    return-object v0
+.end method
+
+.method public getData(Ljava/lang/String;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
+
+    invoke-virtual {v0, p1}, Lio/sentry/Span;->getData(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public getData()Ljava/util/Map;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .line 2
+    iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
+
+    invoke-virtual {v0}, Lio/sentry/Span;->getData()Ljava/util/Map;
+
+    move-result-object v0
 
     return-object v0
 .end method
@@ -797,10 +989,45 @@
     return-object v0
 .end method
 
+.method public setData(Ljava/lang/String;Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
+
+    invoke-virtual {v0}, Lio/sentry/Span;->isFinished()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
+    iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
+
+    invoke-virtual {v0, p1, p2}, Lio/sentry/Span;->setData(Ljava/lang/String;Ljava/lang/Object;)V
+
+    return-void
+.end method
+
 .method public setDescription(Ljava/lang/String;)V
     .locals 1
 
     .line 1
+    iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
+
+    invoke-virtual {v0}, Lio/sentry/Span;->isFinished()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
     iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
     invoke-virtual {v0, p1}, Lio/sentry/Span;->setDescription(Ljava/lang/String;)V
@@ -809,9 +1036,21 @@
 .end method
 
 .method public setName(Ljava/lang/String;)V
-    .locals 0
+    .locals 1
 
     .line 1
+    iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
+
+    invoke-virtual {v0}, Lio/sentry/Span;->isFinished()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
     iput-object p1, p0, Lio/sentry/SentryTracer;->name:Ljava/lang/String;
 
     return-void
@@ -823,13 +1062,25 @@
     .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
+    invoke-virtual {v0}, Lio/sentry/Span;->isFinished()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
+    iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
+
     invoke-virtual {v0, p1}, Lio/sentry/Span;->setOperation(Ljava/lang/String;)V
 
     return-void
 .end method
 
 .method public setRequest(Lio/sentry/protocol/Request;)V
-    .locals 0
+    .locals 1
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -837,6 +1088,18 @@
     .end annotation
 
     .line 1
+    iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
+
+    invoke-virtual {v0}, Lio/sentry/Span;->isFinished()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
     iput-object p1, p0, Lio/sentry/SentryTracer;->request:Lio/sentry/protocol/Request;
 
     return-void
@@ -846,6 +1109,18 @@
     .locals 1
 
     .line 1
+    iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
+
+    invoke-virtual {v0}, Lio/sentry/Span;->isFinished()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
     iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
     invoke-virtual {v0, p1}, Lio/sentry/Span;->setStatus(Lio/sentry/SpanStatus;)V
@@ -859,6 +1134,18 @@
     .line 1
     iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
+    invoke-virtual {v0}, Lio/sentry/Span;->isFinished()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
+    iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
+
     invoke-virtual {v0, p1, p2}, Lio/sentry/Span;->setTag(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -868,6 +1155,18 @@
     .locals 1
 
     .line 1
+    iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
+
+    invoke-virtual {v0}, Lio/sentry/Span;->isFinished()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
     iget-object v0, p0, Lio/sentry/SentryTracer;->root:Lio/sentry/Span;
 
     invoke-virtual {v0, p1}, Lio/sentry/Span;->setThrowable(Ljava/lang/Throwable;)V
@@ -946,6 +1245,146 @@
     invoke-virtual {v0}, Lio/sentry/Span;->toSentryTrace()Lio/sentry/SentryTraceHeader;
 
     move-result-object v0
+
+    return-object v0
+.end method
+
+.method public toTraceStateHeader()Lio/sentry/TraceStateHeader;
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Lio/sentry/SentryTracer;->traceState()Lio/sentry/TraceState;
+
+    move-result-object v0
+
+    .line 2
+    iget-object v1, p0, Lio/sentry/SentryTracer;->hub:Lio/sentry/IHub;
+
+    invoke-interface {v1}, Lio/sentry/IHub;->getOptions()Lio/sentry/SentryOptions;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lio/sentry/SentryOptions;->isTraceSampling()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    iget-object v1, p0, Lio/sentry/SentryTracer;->hub:Lio/sentry/IHub;
+
+    .line 4
+    invoke-interface {v1}, Lio/sentry/IHub;->getOptions()Lio/sentry/SentryOptions;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lio/sentry/SentryOptions;->getSerializer()Lio/sentry/ISerializer;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lio/sentry/SentryTracer;->hub:Lio/sentry/IHub;
+
+    invoke-interface {v2}, Lio/sentry/IHub;->getOptions()Lio/sentry/SentryOptions;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
+
+    move-result-object v2
+
+    .line 5
+    invoke-static {v0, v1, v2}, Lio/sentry/TraceStateHeader;->fromTraceState(Lio/sentry/TraceState;Lio/sentry/ISerializer;Lio/sentry/ILogger;)Lio/sentry/TraceStateHeader;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public traceState()Lio/sentry/TraceState;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/SentryTracer;->hub:Lio/sentry/IHub;
+
+    invoke-interface {v0}, Lio/sentry/IHub;->getOptions()Lio/sentry/SentryOptions;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lio/sentry/SentryOptions;->isTraceSampling()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 2
+    monitor-enter p0
+
+    .line 3
+    :try_start_0
+    iget-object v0, p0, Lio/sentry/SentryTracer;->traceState:Lio/sentry/TraceState;
+
+    if-nez v0, :cond_0
+
+    .line 4
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    .line 5
+    iget-object v1, p0, Lio/sentry/SentryTracer;->hub:Lio/sentry/IHub;
+
+    new-instance v2, Lio/sentry/c0;
+
+    invoke-direct {v2, v0}, Lio/sentry/c0;-><init>(Ljava/util/concurrent/atomic/AtomicReference;)V
+
+    invoke-interface {v1, v2}, Lio/sentry/IHub;->configureScope(Lio/sentry/ScopeCallback;)V
+
+    .line 6
+    new-instance v1, Lio/sentry/TraceState;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lio/sentry/protocol/User;
+
+    iget-object v2, p0, Lio/sentry/SentryTracer;->hub:Lio/sentry/IHub;
+
+    invoke-interface {v2}, Lio/sentry/IHub;->getOptions()Lio/sentry/SentryOptions;
+
+    move-result-object v2
+
+    invoke-direct {v1, p0, v0, v2}, Lio/sentry/TraceState;-><init>(Lio/sentry/ITransaction;Lio/sentry/protocol/User;Lio/sentry/SentryOptions;)V
+
+    iput-object v1, p0, Lio/sentry/SentryTracer;->traceState:Lio/sentry/TraceState;
+
+    .line 7
+    :cond_0
+    iget-object v0, p0, Lio/sentry/SentryTracer;->traceState:Lio/sentry/TraceState;
+
+    monitor-exit p0
+
+    return-object v0
+
+    :catchall_0
+    move-exception v0
+
+    .line 8
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+
+    :cond_1
+    const/4 v0, 0x0
 
     return-object v0
 .end method

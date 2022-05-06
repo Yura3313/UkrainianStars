@@ -40,7 +40,7 @@
 .end method
 
 .method public static h(Ll5/h;)V
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/GeneralSecurityException;
@@ -48,39 +48,39 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Ll5/h;->u()I
+    invoke-virtual {p0}, Ll5/h;->t()I
 
     move-result v0
 
     invoke-static {v0}, Lp5/m0;->a(I)V
 
     .line 2
-    invoke-virtual {p0}, Ll5/h;->v()Ll5/o0;
+    invoke-virtual {p0}, Ll5/h;->u()Ll5/o0;
 
     move-result-object v0
 
-    sget-object v1, Ll5/o0;->UNKNOWN_HASH:Ll5/o0;
+    sget-object v1, Ll5/o0;->h:Ll5/o0;
 
     if-eq v0, v1, :cond_9
 
     .line 3
-    invoke-virtual {p0}, Ll5/h;->w()Ll5/u0;
+    invoke-virtual {p0}, Ll5/h;->v()Ll5/u0;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ll5/u0;->t()Ll5/o0;
+    invoke-virtual {v0}, Ll5/u0;->s()Ll5/o0;
 
     move-result-object v0
 
     if-eq v0, v1, :cond_8
 
     .line 4
-    invoke-virtual {p0}, Ll5/h;->w()Ll5/u0;
+    invoke-virtual {p0}, Ll5/h;->v()Ll5/u0;
 
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, Ll5/u0;->u()I
+    invoke-virtual {v0}, Ll5/u0;->t()I
 
     move-result v1
 
@@ -89,34 +89,30 @@
     if-lt v1, v2, :cond_7
 
     .line 6
-    sget-object v1, Lo5/a$c;->a:[I
+    invoke-virtual {v0}, Ll5/u0;->s()Ll5/o0;
 
-    invoke-virtual {v0}, Ll5/u0;->t()Ll5/o0;
+    move-result-object v1
 
-    move-result-object v2
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    aget v1, v1, v2
+    move-result v1
 
     const/4 v2, 0x1
 
     const-string v3, "tag size too big"
 
-    const/4 v4, 0x2
-
     if-eq v1, v2, :cond_4
 
-    if-eq v1, v4, :cond_2
-
     const/4 v2, 0x3
+
+    if-eq v1, v2, :cond_2
+
+    const/4 v2, 0x4
 
     if-ne v1, v2, :cond_1
 
     .line 7
-    invoke-virtual {v0}, Ll5/u0;->u()I
+    invoke-virtual {v0}, Ll5/u0;->t()I
 
     move-result v0
 
@@ -146,7 +142,7 @@
 
     .line 10
     :cond_2
-    invoke-virtual {v0}, Ll5/u0;->u()I
+    invoke-virtual {v0}, Ll5/u0;->t()I
 
     move-result v0
 
@@ -166,7 +162,7 @@
 
     .line 12
     :cond_4
-    invoke-virtual {v0}, Ll5/u0;->u()I
+    invoke-virtual {v0}, Ll5/u0;->t()I
 
     move-result v0
 
@@ -176,27 +172,27 @@
 
     .line 13
     :goto_0
-    invoke-virtual {p0}, Ll5/h;->s()I
+    invoke-virtual {p0}, Ll5/h;->r()I
 
     move-result v0
 
     .line 14
-    invoke-virtual {p0}, Ll5/h;->u()I
+    invoke-virtual {p0}, Ll5/h;->t()I
 
     move-result v1
 
     .line 15
-    invoke-virtual {p0}, Ll5/h;->w()Ll5/u0;
+    invoke-virtual {p0}, Ll5/h;->v()Ll5/u0;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Ll5/u0;->u()I
+    invoke-virtual {p0}, Ll5/u0;->t()I
 
     move-result p0
 
     add-int/2addr p0, v1
 
-    add-int/2addr p0, v4
+    add-int/lit8 p0, p0, 0x2
 
     add-int/lit8 p0, p0, 0x7
 
@@ -289,7 +285,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Ll5/v0$c;->SYMMETRIC:Ll5/v0$c;
+    sget-object v0, Ll5/v0$c;->i:Ll5/v0$c;
 
     return-object v0
 .end method
@@ -307,7 +303,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Ll5/f;->z(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/f;
+    invoke-static {p1, v0}, Ll5/f;->y(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/f;
 
     move-result-object p1
 
@@ -326,7 +322,7 @@
     check-cast p1, Ll5/f;
 
     .line 2
-    invoke-virtual {p1}, Ll5/f;->x()I
+    invoke-virtual {p1}, Ll5/f;->w()I
 
     move-result v0
 
@@ -335,7 +331,7 @@
     invoke-static {v0, v1}, Lp5/m0;->e(II)V
 
     .line 3
-    invoke-virtual {p1}, Ll5/f;->v()Lm5/c;
+    invoke-virtual {p1}, Ll5/f;->u()Lm5/c;
 
     move-result-object v0
 
@@ -348,7 +344,7 @@
     if-lt v0, v1, :cond_1
 
     .line 4
-    invoke-virtual {p1}, Ll5/f;->v()Lm5/c;
+    invoke-virtual {p1}, Ll5/f;->u()Lm5/c;
 
     move-result-object v0
 
@@ -356,18 +352,18 @@
 
     move-result v0
 
-    invoke-virtual {p1}, Ll5/f;->w()Ll5/h;
+    invoke-virtual {p1}, Ll5/f;->v()Ll5/h;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Ll5/h;->u()I
+    invoke-virtual {v1}, Ll5/h;->t()I
 
     move-result v1
 
     if-lt v0, v1, :cond_0
 
     .line 5
-    invoke-virtual {p1}, Ll5/f;->w()Ll5/h;
+    invoke-virtual {p1}, Ll5/f;->v()Ll5/h;
 
     move-result-object p1
 

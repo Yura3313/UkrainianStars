@@ -42,7 +42,7 @@
     check-cast p1, Landroidx/appcompat/widget/SwitchCompat;
 
     .line 2
-    iget p1, p1, Landroidx/appcompat/widget/SwitchCompat;->C:F
+    iget p1, p1, Landroidx/appcompat/widget/SwitchCompat;->D:F
 
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 

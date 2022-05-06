@@ -24,16 +24,16 @@
 
 
 # virtual methods
-.method public final U0()V
+.method public final V0()V
     .locals 2
 
     .line 1
     iget-object v0, p0, La2/w;->a:La2/f$a;
 
-    iget-object v0, v0, La2/f$a;->r:La2/f;
+    iget-object v0, v0, La2/f$a;->s:La2/f;
 
     .line 2
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     .line 3
     new-instance v1, La2/x;

@@ -20,22 +20,22 @@
     value = {
         "Lle/j;",
         "Lke/l<",
-        "Luc/d;",
-        "Lbe/n;",
+        "Lrc/e;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/game/donate/DonateFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/game/donate/DonateFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/game/donate/DonateFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$e;->a:Lcom/supercell/id/ui/game/donate/DonateFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$e;->g:Lcom/supercell/id/ui/game/donate/DonateFragment;
 
     const/4 p1, 0x1
 
@@ -50,14 +50,14 @@
     .locals 0
 
     .line 1
-    check-cast p1, Luc/d;
+    check-cast p1, Lrc/e;
 
     if-eqz p1, :cond_1
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$e;->a:Lcom/supercell/id/ui/game/donate/DonateFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$e;->g:Lcom/supercell/id/ui/game/donate/DonateFragment;
 
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -67,7 +67,7 @@
 
     .line 3
     :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -75,7 +75,7 @@
     const-string p1, "it"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

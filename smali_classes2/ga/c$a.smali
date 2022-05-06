@@ -1,67 +1,76 @@
-.class public synthetic Lga/c$a;
-.super Ljava/lang/Object;
-.source "HSBelowNConnectivityManager.java"
+.class public Lga/c$a;
+.super Lz7/g;
+.source "RedactionManager.java"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lga/c;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lga/c;->b(Lga/d;Lga/d;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1009
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final synthetic b:Lga/d;
+
+.field public final synthetic c:Lga/d;
+
+.field public final synthetic d:Lga/c;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Lga/c;Lga/d;Lga/d;)V
+    .locals 0
 
     .line 1
-    invoke-static {}, Lga/e;->values()[Lga/e;
+    iput-object p1, p0, Lga/c$a;->d:Lga/c;
+
+    iput-object p2, p0, Lga/c$a;->b:Lga/d;
+
+    iput-object p3, p0, Lga/c$a;->c:Lga/d;
+
+    invoke-direct {p0}, Lz7/g;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lga/c$a;->d:Lga/c;
+
+    .line 2
+    iget-object v0, v0, Lga/c;->d:Ljava/lang/ref/WeakReference;
+
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    array-length v0, v0
+    check-cast v0, Lga/c$b;
 
-    new-array v0, v0, [I
+    if-eqz v0, :cond_0
 
-    sput-object v0, Lga/c$a;->a:[I
+    .line 4
+    iget-object v1, p0, Lga/c$a;->d:Lga/c;
 
-    :try_start_0
-    sget-object v1, Lga/e;->CONNECTED:Lga/e;
+    .line 5
+    iget-object v1, v1, Lga/c;->b:Lg7/c;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    .line 6
+    iget-object v2, p0, Lga/c$a;->b:Lga/d;
 
-    move-result v1
+    iget-object v3, p0, Lga/c$a;->c:Lga/d;
 
-    const/4 v2, 0x1
+    invoke-interface {v0, v1, v2, v3}, Lga/c$b;->d(Lg7/c;Lga/d;Lga/d;)V
 
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :try_start_1
-    sget-object v0, Lga/c$a;->a:[I
-
-    sget-object v1, Lga/e;->NOT_CONNECTED:Lga/e;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
+    :cond_0
     return-void
 .end method

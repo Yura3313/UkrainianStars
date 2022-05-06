@@ -1,21 +1,30 @@
-.class public final Lj3/g9;
+.class public final synthetic Lj3/g9;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/vs;
+.implements Lj3/yj0;
 
 
-# instance fields
-.field public a:Ljava/lang/Object;
+# static fields
+.field public static final a:Lj3/yj0;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    .line 1
-    iput-object p1, p0, Lj3/g9;->a:Ljava/lang/Object;
+    new-instance v0, Lj3/g9;
+
+    invoke-direct {v0}, Lj3/g9;-><init>()V
+
+    sput-object v0, Lj3/g9;->a:Lj3/yj0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -24,18 +33,14 @@
 
 
 # virtual methods
-.method public e(Ljava/lang/Object;)V
-    .locals 1
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
-    .line 1
-    iget-object v0, p0, Lj3/g9;->a:Ljava/lang/Object;
+    check-cast p1, Ljava/lang/String;
 
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzasp;
+    sget-object p1, Lcom/google/android/gms/internal/ads/a;->n:Ljava/util/List;
 
-    check-cast p1, Lj3/ds;
+    const/4 p1, 0x0
 
-    .line 2
-    invoke-interface {p1, v0}, Lj3/ds;->C0(Lcom/google/android/gms/internal/ads/zzasp;)V
-
-    return-void
+    return-object p1
 .end method

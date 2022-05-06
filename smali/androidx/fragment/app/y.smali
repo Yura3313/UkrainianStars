@@ -121,7 +121,7 @@
     iget-object v1, v0, Landroidx/fragment/app/FragmentManager;->q:Landroidx/fragment/app/w;
 
     .line 3
-    iget-object v1, v1, Landroidx/fragment/app/w;->b:Landroid/content/Context;
+    iget-object v1, v1, Landroidx/fragment/app/w;->h:Landroid/content/Context;
 
     .line 4
     iget-object v0, v0, Landroidx/fragment/app/FragmentManager;->s:Landroidx/fragment/app/Fragment;
@@ -447,7 +447,7 @@
     iget-object v1, v0, Landroidx/fragment/app/FragmentManager;->q:Landroidx/fragment/app/w;
 
     .line 3
-    iget-object v1, v1, Landroidx/fragment/app/w;->b:Landroid/content/Context;
+    iget-object v1, v1, Landroidx/fragment/app/w;->h:Landroid/content/Context;
 
     .line 4
     iget-object v0, v0, Landroidx/fragment/app/FragmentManager;->s:Landroidx/fragment/app/Fragment;

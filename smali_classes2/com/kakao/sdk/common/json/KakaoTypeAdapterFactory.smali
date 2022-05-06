@@ -49,7 +49,7 @@
     .line 2
     const-class p2, Ljava/util/Date;
 
-    invoke-static {p1, p2}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, p2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p2
 
@@ -94,14 +94,14 @@
     const-string p1, "type"
 
     .line 7
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_4
     const-string p1, "gson"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

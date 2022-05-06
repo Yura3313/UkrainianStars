@@ -221,7 +221,7 @@
     const-string v0, "JSONException: "
 
     .line 3
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -427,7 +427,7 @@
     const-string v2, "JSONException: "
 
     .line 21
-    invoke-static {v2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -466,11 +466,11 @@
     .line 2
     :cond_0
     :try_start_0
-    invoke-static {p0}, Lmc/e;->b(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p0}, Ljc/e;->b(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
 
-    check-cast p0, Lmc/c;
+    check-cast p0, Ljc/c;
 
     .line 3
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
@@ -682,7 +682,7 @@
     const-string p1, "JSONException: "
 
     .line 6
-    invoke-static {p1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -760,7 +760,7 @@
     const-string p1, "JSONException: "
 
     .line 6
-    invoke-static {p1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -782,13 +782,13 @@
     return-void
 .end method
 
-.method private static toFriendJSONObject(Lcom/kakao/sdk/partner/talk/model/PartnerFriend;)Lmc/c;
+.method private static toFriendJSONObject(Lcom/kakao/sdk/partner/talk/model/PartnerFriend;)Ljc/c;
     .locals 4
 
     .line 1
-    new-instance v0, Lmc/c;
+    new-instance v0, Ljc/c;
 
-    invoke-direct {v0}, Lmc/c;-><init>()V
+    invoke-direct {v0}, Ljc/c;-><init>()V
 
     :try_start_0
     const-string v1, "id"
@@ -956,7 +956,7 @@
     const-string v1, "Exception: "
 
     .line 19
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -993,9 +993,9 @@
 
     .line 1
     :try_start_0
-    new-instance v0, Lmc/c;
+    new-instance v0, Ljc/c;
 
-    invoke-direct {v0}, Lmc/c;-><init>()V
+    invoke-direct {v0}, Ljc/c;-><init>()V
 
     .line 2
     invoke-interface {p0}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -1026,7 +1026,7 @@
 
     check-cast v3, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;
 
-    invoke-static {v3}, Lcom/kakaogame/kakao/KakaoCache;->toFriendJSONObject(Lcom/kakao/sdk/partner/talk/model/PartnerFriend;)Lmc/c;
+    invoke-static {v3}, Lcom/kakaogame/kakao/KakaoCache;->toFriendJSONObject(Lcom/kakao/sdk/partner/talk/model/PartnerFriend;)Ljc/c;
 
     move-result-object v3
 
@@ -1036,7 +1036,7 @@
 
     .line 4
     :cond_0
-    invoke-virtual {v0}, Lmc/c;->toJSONString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljc/c;->toJSONString()Ljava/lang/String;
 
     move-result-object p0
     :try_end_0
@@ -1057,9 +1057,9 @@
 
     .line 1
     :try_start_0
-    new-instance v1, Lmc/c;
+    new-instance v1, Ljc/c;
 
-    invoke-direct {v1}, Lmc/c;-><init>()V
+    invoke-direct {v1}, Ljc/c;-><init>()V
 
     const-string v2, "id"
 
@@ -1259,7 +1259,7 @@
 
     .line 22
     :goto_4
-    invoke-virtual {v1}, Lmc/c;->toJSONString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljc/c;->toJSONString()Ljava/lang/String;
 
     move-result-object p0
     :try_end_5

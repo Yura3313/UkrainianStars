@@ -14,7 +14,7 @@
     const-string v0, "kotlinx.coroutines.scheduler"
 
     .line 1
-    invoke-static {v0}, Lqe/g;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lp5/c0;->o(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -123,7 +123,7 @@
     move-result-object p0
 
     .line 2
-    sget-boolean p1, Lse/e0;->a:Z
+    sget-boolean p1, Lse/c0;->a:Z
 
     if-eqz p1, :cond_0
 
@@ -131,7 +131,7 @@
     new-instance p1, Lse/y;
 
     .line 4
-    sget-object v0, Lse/e0;->c:Ljava/util/concurrent/atomic/AtomicLong;
+    sget-object v0, Lse/c0;->c:Ljava/util/concurrent/atomic/AtomicLong;
 
     .line 5
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->incrementAndGet()J
@@ -151,7 +151,7 @@
 
     .line 6
     :goto_0
-    sget-object v0, Lse/n0;->a:Lse/w;
+    sget-object v0, Lse/l0;->a:Lse/w;
 
     if-eq p0, v0, :cond_1
 

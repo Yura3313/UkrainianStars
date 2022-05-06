@@ -2,155 +2,109 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lj3/rv0;
 
-# static fields
-.field public static final a:Lj3/lj;
 
-.field public static final b:Lj3/al;
+# instance fields
+.field public final synthetic a:I
+
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 2
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lj3/lj;
+    iput p2, p0, Lj3/oj;->a:I
 
-    const/4 v1, 0x0
+    iput-object p1, p0, Lj3/oj;->b:Ljava/lang/Object;
 
-    invoke-direct {v0, v1}, Lj3/lj;-><init>(I)V
-
-    sput-object v0, Lj3/oj;->a:Lj3/lj;
-
-    .line 2
-    new-instance v0, Lj3/al;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, v1}, Lj3/al;-><init>(I)V
-
-    sput-object v0, Lj3/oj;->b:Lj3/al;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static final a(Landroid/view/View;Landroid/view/View;)V
-    .locals 4
+.method public static a(Lj3/vv0;)Lj3/oj;
+    .locals 2
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
-
-    move-result v0
-
-    int-to-float v0, v0
+    new-instance v0, Lj3/oj;
 
     const/4 v1, 0x1
 
-    invoke-static {v1}, Lc5/i;->c(I)F
+    invoke-direct {v0, p0, v1}, Lj3/oj;-><init>(Ljava/lang/Object;I)V
 
-    move-result v1
+    return-object v0
+.end method
 
-    div-float/2addr v0, v1
 
-    const v1, 0x40533333    # 3.3f
+# virtual methods
+.method public final get()Ljava/lang/Object;
+    .locals 3
 
-    div-float/2addr v0, v1
+    iget v0, p0, Lj3/oj;->a:I
 
-    const/high16 v1, 0x41600000    # 14.0f
-
-    .line 2
-    invoke-static {v0, v1}, Ljava/lang/Float;->compare(FF)I
-
-    move-result v1
-
-    const/high16 v2, 0x41c00000    # 24.0f
-
-    if-gez v1, :cond_0
-
-    const/high16 v0, 0x41600000    # 14.0f
+    packed-switch v0, :pswitch_data_0
 
     goto :goto_0
 
-    :cond_0
-    invoke-static {v0, v2}, Ljava/lang/Float;->compare(FF)I
+    .line 1
+    :pswitch_0
+    iget-object v0, p0, Lj3/oj;->b:Ljava/lang/Object;
 
-    move-result v1
+    check-cast v0, Lj3/ej;
 
-    if-lez v1, :cond_1
-
-    const/high16 v0, 0x41c00000    # 24.0f
+    .line 2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    :cond_1
-    :goto_0
-    sget v1, Lc5/i;->a:F
+    sget-object v1, Lh1/o;->B:Lh1/o;
 
-    mul-float v0, v0, v1
+    iget-object v1, v1, Lh1/o;->c:Lj3/bb;
 
     .line 4
-    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
+    iget-object v2, v0, Lj3/ej;->b:Landroid/content/Context;
 
-    move-result p1
+    iget-object v0, v0, Lj3/ej;->a:Lcom/google/android/gms/internal/ads/zzbbg;
 
-    div-int/lit8 p1, p1, 0x2
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/zzbbg;->g:Ljava/lang/String;
+
+    invoke-virtual {v1, v2, v0}, Lj3/bb;->G(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 5
-    invoke-virtual {p0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-static {v0, v1}, Lj3/u6;->h(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    move-result-object v1
-
-    instance-of v2, v1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
-
-    const/4 v3, 0x0
-
-    if-nez v2, :cond_2
-
-    move-object v1, v3
-
-    :cond_2
-    check-cast v1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
-
-    if-eqz v1, :cond_3
+    return-object v0
 
     .line 6
-    iget v2, v1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->n:I
+    :goto_0
+    iget-object v0, p0, Lj3/oj;->b:Ljava/lang/Object;
 
-    if-ne p1, v2, :cond_3
+    check-cast v0, Lj3/vv0;
 
-    return-void
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    :cond_3
-    if-eqz v1, :cond_4
+    move-result-object v0
+
+    check-cast v0, Ljava/util/Map;
 
     .line 7
-    invoke-static {v0}, Lc2/n0;->e(F)I
+    new-instance v1, Lj3/lo;
 
-    move-result v2
+    invoke-direct {v1, v0}, Lj3/lo;-><init>(Ljava/util/Map;)V
 
-    iput v2, v1, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
+    return-object v1
 
-    .line 8
-    invoke-static {v0}, Lc2/n0;->e(F)I
+    nop
 
-    move-result v0
-
-    iput v0, v1, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
-
-    .line 9
-    iput p1, v1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->n:I
-
-    move-object v3, v1
-
-    .line 10
-    :cond_4
-    invoke-virtual {p0, v3}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 11
-    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
-
-    move-result-object p0
-
-    invoke-interface {p0}, Landroid/view/ViewParent;->requestLayout()V
-
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

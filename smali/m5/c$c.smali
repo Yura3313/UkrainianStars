@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final j:I
-
 .field public final k:I
+
+.field public final l:I
 
 
 # direct methods
@@ -32,13 +32,13 @@
     .line 2
     array-length p1, p1
 
-    invoke-static {p2, v0, p1}, Lm5/c;->b(III)I
+    invoke-static {p2, v0, p1}, Lm5/c;->c(III)I
 
     .line 3
-    iput p2, p0, Lm5/c$c;->j:I
+    iput p2, p0, Lm5/c$c;->k:I
 
     .line 4
-    iput p3, p0, Lm5/c$c;->k:I
+    iput p3, p0, Lm5/c$c;->l:I
 
     return-void
 .end method
@@ -67,7 +67,7 @@
     .locals 4
 
     .line 1
-    iget v0, p0, Lm5/c$c;->k:I
+    iget v0, p0, Lm5/c$c;->l:I
 
     add-int/lit8 v1, p1, 0x1
 
@@ -100,7 +100,7 @@
 
     const-string v3, ", "
 
-    invoke-static {v2, p1, v3, v0}, Landroidx/appcompat/app/i;->a(Ljava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v2, p1, v3, v0}, Landroid/support/v4/media/a;->b(Ljava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
@@ -110,9 +110,9 @@
 
     .line 4
     :cond_1
-    iget-object v0, p0, Lm5/c$f;->i:[B
+    iget-object v0, p0, Lm5/c$f;->j:[B
 
-    iget v1, p0, Lm5/c$c;->j:I
+    iget v1, p0, Lm5/c$c;->k:I
 
     add-int/2addr v1, p1
 
@@ -121,14 +121,14 @@
     return p1
 .end method
 
-.method public e([BIII)V
+.method public f([BIII)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lm5/c$f;->i:[B
+    iget-object v0, p0, Lm5/c$f;->j:[B
 
     .line 2
-    iget v1, p0, Lm5/c$c;->j:I
+    iget v1, p0, Lm5/c$c;->k:I
 
     add-int/2addr v1, p2
 
@@ -138,13 +138,13 @@
     return-void
 .end method
 
-.method public f(I)B
+.method public g(I)B
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lm5/c$f;->i:[B
+    iget-object v0, p0, Lm5/c$f;->j:[B
 
-    iget v1, p0, Lm5/c$c;->j:I
+    iget v1, p0, Lm5/c$c;->k:I
 
     add-int/2addr v1, p1
 
@@ -157,7 +157,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lm5/c$c;->j:I
+    iget v0, p0, Lm5/c$c;->k:I
 
     return v0
 .end method
@@ -166,7 +166,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lm5/c$c;->k:I
+    iget v0, p0, Lm5/c$c;->l:I
 
     return v0
 .end method
@@ -175,7 +175,7 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lm5/c;->n()[B
+    invoke-virtual {p0}, Lm5/c;->m()[B
 
     move-result-object v0
 

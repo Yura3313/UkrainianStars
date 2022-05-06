@@ -58,7 +58,7 @@
     const-string p1, "Basic "
 
     .line 4
-    invoke-static {p1, p0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 

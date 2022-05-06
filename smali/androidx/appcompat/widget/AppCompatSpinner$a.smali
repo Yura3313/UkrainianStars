@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/appcompat/widget/AppCompatSpinner;
+.field public final synthetic g:Landroidx/appcompat/widget/AppCompatSpinner;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$a;->a:Landroidx/appcompat/widget/AppCompatSpinner;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$a;->g:Landroidx/appcompat/widget/AppCompatSpinner;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$a;->a:Landroidx/appcompat/widget/AppCompatSpinner;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$a;->g:Landroidx/appcompat/widget/AppCompatSpinner;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/AppCompatSpinner;->getInternalPopup()Landroidx/appcompat/widget/AppCompatSpinner$e;
 
@@ -52,13 +52,13 @@
     if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$a;->a:Landroidx/appcompat/widget/AppCompatSpinner;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$a;->g:Landroidx/appcompat/widget/AppCompatSpinner;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/AppCompatSpinner;->b()V
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$a;->a:Landroidx/appcompat/widget/AppCompatSpinner;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$a;->g:Landroidx/appcompat/widget/AppCompatSpinner;
 
     invoke-virtual {v0}, Landroid/widget/Spinner;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 

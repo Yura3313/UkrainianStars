@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final b:Ljava/util/List;
+.field public final h:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -57,12 +57,12 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/auth/AccountChangeEventsResponse;->a:I
+    iput p1, p0, Lcom/google/android/gms/auth/AccountChangeEventsResponse;->g:I
 
     if-eqz p2, :cond_0
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/auth/AccountChangeEventsResponse;->b:Ljava/util/List;
+    iput-object p2, p0, Lcom/google/android/gms/auth/AccountChangeEventsResponse;->h:Ljava/util/List;
 
     return-void
 
@@ -92,7 +92,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/auth/AccountChangeEventsResponse;->a:I
+    iget v1, p0, Lcom/google/android/gms/auth/AccountChangeEventsResponse;->g:I
 
     const/4 v2, 0x4
 
@@ -105,7 +105,7 @@
     const/4 v0, 0x2
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/gms/auth/AccountChangeEventsResponse;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/auth/AccountChangeEventsResponse;->h:Ljava/util/List;
 
     const/4 v2, 0x0
 

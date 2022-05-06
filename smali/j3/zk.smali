@@ -3,43 +3,30 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
+.implements Lj3/rv0;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final b:Lj3/fv0;
+.field public final b:Lj3/vv0;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lj3/fv0;I)V
+.method public synthetic constructor <init>(Lj3/vv0;I)V
     .locals 0
 
     .line 1
     iput p2, p0, Lj3/zk;->a:I
 
-    iput-object p1, p0, Lj3/zk;->b:Lj3/fv0;
+    iput-object p1, p0, Lj3/zk;->b:Lj3/vv0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static a(Lj3/fv0;)Lj3/zk;
-    .locals 2
-
-    .line 1
-    new-instance v0, Lj3/zk;
-
-    const/4 v1, 0x2
-
-    invoke-direct {v0, p0, v1}, Lj3/zk;-><init>(Lj3/fv0;I)V
-
-    return-object v0
-.end method
-
-.method public static b(Lj3/fv0;)Lj3/zk;
+.method public static a(Lj3/vv0;)Lj3/zk;
     .locals 2
 
     .line 1
@@ -47,7 +34,7 @@
 
     const/4 v1, 0x1
 
-    invoke-direct {v0, p0, v1}, Lj3/zk;-><init>(Lj3/fv0;I)V
+    invoke-direct {v0, p0, v1}, Lj3/zk;-><init>(Lj3/vv0;I)V
 
     return-object v0
 .end method
@@ -65,58 +52,51 @@
 
     .line 1
     :pswitch_0
-    iget-object v0, p0, Lj3/zk;->b:Lj3/fv0;
+    iget-object v0, p0, Lj3/zk;->b:Lj3/vv0;
 
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Ljava/util/Set;
+    check-cast v0, Landroid/content/Context;
 
     .line 2
-    new-instance v1, Lj3/hs;
+    new-instance v1, Lj3/gc;
 
-    invoke-direct {v1, v0}, Lj3/hs;-><init>(Ljava/util/Set;)V
+    invoke-direct {v1, v0}, Lj3/gc;-><init>(Landroid/content/Context;)V
 
     return-object v1
 
     .line 3
-    :pswitch_1
-    iget-object v0, p0, Lj3/zk;->b:Lj3/fv0;
+    :goto_0
+    iget-object v0, p0, Lj3/zk;->b:Lj3/vv0;
 
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Ljava/lang/String;
+    check-cast v0, Lj3/lg0;
 
     .line 4
-    new-instance v1, Lj3/fd;
+    :try_start_0
+    new-instance v1, Lorg/json/JSONObject;
 
-    invoke-direct {v1, v0}, Lj3/fd;-><init>(Ljava/lang/String;)V
+    iget-object v0, v0, Lj3/lg0;->y:Ljava/lang/String;
 
-    return-object v1
+    invoke-direct {v1, v0}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 5
-    :goto_0
-    iget-object v0, p0, Lj3/zk;->b:Lj3/fv0;
+    goto :goto_1
 
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
+    :catch_0
+    const/4 v1, 0x0
 
-    move-result-object v0
-
-    check-cast v0, Lj3/y30;
-
-    .line 6
-    new-instance v1, Lj3/z30;
-
-    invoke-direct {v1, v0}, Lj3/z30;-><init>(Lj3/y30;)V
-
+    :goto_1
     return-object v1
 
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

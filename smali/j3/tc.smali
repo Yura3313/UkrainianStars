@@ -1,136 +1,102 @@
 .class public final Lj3/tc;
-.super Landroid/content/BroadcastReceiver;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # instance fields
-.field public final synthetic a:Lj3/uc;
+.field public a:J
+
+.field public b:J
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "lock"
+    .end annotation
+.end field
+
+.field public final c:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lj3/uc;)V
-    .locals 0
+.method public constructor <init>(J)V
+    .locals 2
 
     .line 1
-    iput-object p1, p0, Lj3/tc;->a:Lj3/uc;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+    const-wide/high16 v0, -0x8000000000000000L
+
+    .line 2
+    iput-wide v0, p0, Lj3/tc;->b:J
+
+    .line 3
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v0, p0, Lj3/tc;->c:Ljava/lang/Object;
+
+    .line 4
+    iput-wide p1, p0, Lj3/tc;->a:J
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 6
+.method public final a()Z
+    .locals 7
 
     .line 1
-    iget-object v0, p0, Lj3/tc;->a:Lj3/uc;
+    iget-object v0, p0, Lj3/tc;->c:Ljava/lang/Object;
 
-    .line 2
     monitor-enter v0
 
-    .line 3
+    .line 2
     :try_start_0
-    new-instance v1, Ljava/util/ArrayList;
+    sget-object v1, Lh1/o;->B:Lh1/o;
 
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+    iget-object v1, v1, Lh1/o;->j:Lk2/c;
+
+    .line 3
+    invoke-interface {v1}, Lk2/c;->b()J
+
+    move-result-wide v1
 
     .line 4
-    iget-object v2, v0, Lj3/uc;->b:Ljava/util/Map;
+    iget-wide v3, p0, Lj3/tc;->b:J
 
-    invoke-interface {v2}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+    iget-wide v5, p0, Lj3/tc;->a:J
 
-    move-result-object v2
+    add-long/2addr v3, v5
 
-    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    cmp-long v5, v3, v1
 
-    move-result-object v2
+    if-lez v5, :cond_0
 
-    :cond_0
-    :goto_0
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ljava/util/Map$Entry;
+    const/4 v1, 0x0
 
     .line 5
-    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    monitor-exit v0
 
-    move-result-object v4
-
-    check-cast v4, Landroid/content/IntentFilter;
-
-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v5}, Landroid/content/IntentFilter;->hasAction(Ljava/lang/String;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_0
+    return v1
 
     .line 6
-    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    :cond_0
+    iput-wide v1, p0, Lj3/tc;->b:J
 
-    move-result-object v3
-
-    check-cast v3, Landroid/content/BroadcastReceiver;
-
-    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
+    const/4 v1, 0x1
 
     .line 7
-    :cond_1
-    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+    monitor-exit v0
 
-    move-result v2
+    return v1
 
-    const/4 v3, 0x0
-
-    :goto_1
-    if-ge v3, v2, :cond_2
-
-    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    add-int/lit8 v3, v3, 0x1
-
-    check-cast v4, Landroid/content/BroadcastReceiver;
+    :catchall_0
+    move-exception v1
 
     .line 8
-    invoke-virtual {v4, p1, p2}, Landroid/content/BroadcastReceiver;->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    goto :goto_1
-
-    .line 9
-    :cond_2
-    monitor-exit v0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit v0
-
-    goto :goto_3
-
-    :goto_2
-    throw p1
-
-    :goto_3
-    goto :goto_2
+    throw v1
 .end method

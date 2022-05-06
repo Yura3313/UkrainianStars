@@ -30,9 +30,9 @@
 
 
 # instance fields
-.field public final a:Z
+.field public final g:Z
 
-.field public final b:Ljava/lang/Class;
+.field public final h:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -43,7 +43,7 @@
     .end annotation
 .end field
 
-.field public final h:Z
+.field public final i:Z
 
 
 # direct methods
@@ -79,17 +79,17 @@
     .line 1
     invoke-direct {p0}, Lcom/supercell/id/ui/BackStack$Entry;-><init>()V
 
-    iput-boolean p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->h:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->i:Z
 
     const/4 p1, 0x1
 
     .line 2
-    iput-boolean p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->a:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->g:Z
 
     .line 3
     const-class p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->b:Ljava/lang/Class;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->h:Ljava/lang/Class;
 
     return-void
 .end method
@@ -112,7 +112,7 @@
 
 
 # virtual methods
-.method public A(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+.method public B(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -137,14 +137,14 @@
     const-string p1, "mainActivity"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public D(Lcom/supercell/id/ui/MainActivity;III)I
+.method public E(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 0
 
     if-eqz p1, :cond_0
@@ -160,18 +160,18 @@
     const-string p1, "mainActivity"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public R()Z
+.method public M()Z
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->a:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->g:Z
 
     return v0
 .end method
@@ -195,9 +195,9 @@
 
     check-cast p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->h:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->i:Z
 
-    iget-boolean p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->h:Z
+    iget-boolean p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->i:Z
 
     if-ne v0, p1, :cond_0
 
@@ -218,7 +218,7 @@
 .method public hashCode()I
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->h:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->i:Z
 
     if-eqz v0, :cond_0
 
@@ -228,7 +228,7 @@
     return v0
 .end method
 
-.method public j()Ljava/lang/Class;
+.method public i()Ljava/lang/Class;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -241,32 +241,12 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->b:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->h:Ljava/lang/Class;
 
     return-object v0
 .end method
 
-.method public toString()Ljava/lang/String;
-    .locals 3
-
-    const-string v0, "BackStackEntry(isForcedLogin="
-
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget-boolean v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->h:Z
-
-    const-string v2, ")"
-
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/i;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public w()Z
+.method public t()Z
     .locals 1
 
     const/4 v0, 0x0
@@ -274,31 +254,27 @@
     return v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
-    .locals 0
+.method public toString()Ljava/lang/String;
+    .locals 3
 
-    if-eqz p1, :cond_0
+    const-string v0, "BackStackEntry(isForcedLogin="
 
-    .line 1
-    iget-boolean p2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->h:Z
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+    move-result-object v0
 
-    return-void
+    iget-boolean v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->i:Z
 
-    :cond_0
-    const-string p1, "dest"
+    const-string v2, ")"
 
-    .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/i;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
-    const/4 p1, 0x0
+    move-result-object v0
 
-    throw p1
+    return-object v0
 .end method
 
-.method public z0(Lcom/supercell/id/ui/MainActivity;)Z
+.method public w0(Lcom/supercell/id/ui/MainActivity;)Z
     .locals 0
 
     if-eqz p1, :cond_0
@@ -311,7 +287,31 @@
     const-string p1, "mainActivity"
 
     .line 1
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public writeToParcel(Landroid/os/Parcel;I)V
+    .locals 0
+
+    if-eqz p1, :cond_0
+
+    .line 1
+    iget-boolean p2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->i:Z
+
+    .line 2
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+
+    return-void
+
+    :cond_0
+    const-string p1, "dest"
+
+    .line 3
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

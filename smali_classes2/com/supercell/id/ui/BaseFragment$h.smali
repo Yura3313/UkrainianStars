@@ -54,15 +54,15 @@
 
     move-result v1
 
-    invoke-static {v1}, Lc2/n0;->e(F)I
+    invoke-static {v1}, Lb5/m;->r(F)I
 
     move-result v1
 
-    invoke-static {v0, v1}, Lwd/h1;->a(Landroidx/recyclerview/widget/RecyclerView;I)I
+    invoke-static {v0, v1}, Lvd/h1;->a(Landroidx/recyclerview/widget/RecyclerView;I)I
 
     move-result v0
 
-    invoke-static {p1, p2, v0, p3}, Lcom/supercell/id/ui/BaseFragment;->Y0(Lcom/supercell/id/ui/BaseFragment;Landroid/view/View;II)V
+    invoke-static {p1, p2, v0, p3}, Lcom/supercell/id/ui/BaseFragment;->X0(Lcom/supercell/id/ui/BaseFragment;Landroid/view/View;II)V
 
     return-void
 .end method

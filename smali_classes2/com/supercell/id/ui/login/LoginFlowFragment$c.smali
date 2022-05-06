@@ -20,14 +20,14 @@
     value = {
         "Lle/j;",
         "Lke/a<",
-        "Luc/v;",
+        "Lrc/w;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/ui/login/LoginFlowFragment$c;
+.field public static final g:Lcom/supercell/id/ui/login/LoginFlowFragment$c;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/login/LoginFlowFragment$c;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/login/LoginFlowFragment$c;->a:Lcom/supercell/id/ui/login/LoginFlowFragment$c;
+    sput-object v0, Lcom/supercell/id/ui/login/LoginFlowFragment$c;->g:Lcom/supercell/id/ui/login/LoginFlowFragment$c;
 
     return-void
 .end method
@@ -61,28 +61,28 @@
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lwd/h;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lvd/h;
 
     move-result-object v0
 
-    sget-object v1, Lwd/i1;->SMS_ENABLED:Lwd/i1;
+    const/16 v1, 0xf
 
-    invoke-virtual {v0, v1}, Lwd/h;->a(Lwd/i1;)Z
+    invoke-virtual {v0, v1}, Lvd/h;->a(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Lid/f;
+    new-instance v0, Lhd/f;
 
-    invoke-direct {v0}, Lid/f;-><init>()V
+    invoke-direct {v0}, Lhd/f;-><init>()V
 
     goto :goto_0
 
     :cond_0
-    new-instance v0, Lid/j;
+    new-instance v0, Lhd/j;
 
-    invoke-direct {v0}, Lid/j;-><init>()V
+    invoke-direct {v0}, Lhd/j;-><init>()V
 
     :goto_0
     return-object v0

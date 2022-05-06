@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/game/GameFragment$a;->i(Lwd/k1$a;ILwd/j1;)V
+    value = Lcom/supercell/id/ui/game/GameFragment$a;->i(Lvd/k1$a;ILvd/j1;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,25 +22,25 @@
         "Lke/p<",
         "Ljava/util/Observable;",
         "Ljava/lang/Object;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/game/GameFragment$a;
+.field public final synthetic g:Lcom/supercell/id/ui/game/GameFragment$a;
 
-.field public final synthetic b:Landroid/view/View;
+.field public final synthetic h:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/game/GameFragment$a;Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$h;->a:Lcom/supercell/id/ui/game/GameFragment$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$h;->g:Lcom/supercell/id/ui/game/GameFragment$a;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/game/GameFragment$a$h;->b:Landroid/view/View;
+    iput-object p2, p0, Lcom/supercell/id/ui/game/GameFragment$a$h;->h:Landroid/view/View;
 
     const/4 p1, 0x2
 
@@ -58,7 +58,7 @@
     check-cast p1, Ljava/util/Observable;
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$h;->b:Landroid/view/View;
+    iget-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$a$h;->h:Landroid/view/View;
 
     sget p2, Lcom/supercell/id/R$id;->systemImageView:I
 
@@ -70,24 +70,24 @@
 
     const-string p2, "containerView.systemImageView"
 
-    invoke-static {p1, p2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object p2, p0, Lcom/supercell/id/ui/game/GameFragment$a$h;->a:Lcom/supercell/id/ui/game/GameFragment$a;
+    iget-object p2, p0, Lcom/supercell/id/ui/game/GameFragment$a$h;->g:Lcom/supercell/id/ui/game/GameFragment$a;
 
     .line 3
-    iget-object p2, p2, Lwd/q;->f:Landroidx/fragment/app/Fragment;
+    iget-object p2, p2, Lvd/q;->f:Landroidx/fragment/app/Fragment;
 
     .line 4
     check-cast p2, Lcom/supercell/id/ui/game/GameFragment;
 
     .line 5
-    iget p2, p2, Lcom/supercell/id/ui/game/GameFragment;->x0:F
+    iget p2, p2, Lcom/supercell/id/ui/game/GameFragment;->y0:F
 
     .line 6
     invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setAlpha(F)V
 
     .line 7
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method

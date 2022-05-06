@@ -3,9 +3,9 @@
 
 
 # static fields
-.field public static final view_tree_saved_state_registry_owner:I = 0x7f0a048f
+.field public static final view_tree_saved_state_registry_owner:I = 0x7f0a04b4
 
-.field public static final view_tree_view_model_store_owner:I = 0x7f0a0490
+.field public static final view_tree_view_model_store_owner:I = 0x7f0a04b5
 
 
 # direct methods

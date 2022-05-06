@@ -55,14 +55,14 @@
     const-string p0, "accessToken"
 
     .line 5
-    invoke-static {p0}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_1
     const-string p0, "$this$withAccessToken"
 
-    invoke-static {p0}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

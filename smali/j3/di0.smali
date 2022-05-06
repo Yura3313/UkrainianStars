@@ -2,209 +2,60 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lj3/yl0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<E:",
-        "Ljava/lang/Object;",
-        "V:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Lj3/yl0<",
-        "TV;>;"
-    }
-.end annotation
-
 
 # instance fields
-.field public final a:Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TE;"
-        }
-    .end annotation
-.end field
+.field public final a:J
 
-.field public final b:Ljava/lang/String;
+.field public final b:Lj3/ci0;
 
-.field public final h:Lj3/yl0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/yl0<",
-            "TV;>;"
-        }
-    .end annotation
-.end field
+.field public c:J
+
+.field public d:I
+
+.field public e:I
+
+.field public f:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;Ljava/lang/String;Lj3/yl0;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TE;",
-            "Ljava/lang/String;",
-            "Lj3/yl0<",
-            "TV;>;)V"
-        }
-    .end annotation
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj3/di0;->a:Ljava/lang/Object;
+    new-instance v0, Lj3/ci0;
+
+    invoke-direct {v0}, Lj3/ci0;-><init>()V
+
+    iput-object v0, p0, Lj3/di0;->b:Lj3/ci0;
+
+    const/4 v0, 0x0
 
     .line 3
-    iput-object p2, p0, Lj3/di0;->b:Ljava/lang/String;
+    iput v0, p0, Lj3/di0;->d:I
 
     .line 4
-    iput-object p3, p0, Lj3/di0;->h:Lj3/yl0;
+    iput v0, p0, Lj3/di0;->e:I
+
+    .line 5
+    iput v0, p0, Lj3/di0;->f:I
+
+    .line 6
+    sget-object v0, Lh1/o;->B:Lh1/o;
+
+    iget-object v0, v0, Lh1/o;->j:Lk2/c;
+
+    .line 7
+    invoke-interface {v0}, Lk2/c;->a()J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Lj3/di0;->a:J
+
+    .line 8
+    iput-wide v0, p0, Lj3/di0;->c:J
 
     return-void
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lj3/di0;->h:Lj3/yl0;
-
-    invoke-interface {v0, p1, p2}, Lj3/yl0;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
-
-    return-void
-.end method
-
-.method public final cancel(Z)Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lj3/di0;->h:Lj3/yl0;
-
-    invoke-interface {v0, p1}, Ljava/util/concurrent/Future;->cancel(Z)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final get()Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TV;"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/InterruptedException;,
-            Ljava/util/concurrent/ExecutionException;
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lj3/di0;->h:Lj3/yl0;
-
-    invoke-interface {v0}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(J",
-            "Ljava/util/concurrent/TimeUnit;",
-            ")TV;"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/InterruptedException;,
-            Ljava/util/concurrent/ExecutionException;,
-            Ljava/util/concurrent/TimeoutException;
-        }
-    .end annotation
-
-    .line 2
-    iget-object v0, p0, Lj3/di0;->h:Lj3/yl0;
-
-    invoke-interface {v0, p1, p2, p3}, Ljava/util/concurrent/Future;->get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final isCancelled()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lj3/di0;->h:Lj3/yl0;
-
-    invoke-interface {v0}, Ljava/util/concurrent/Future;->isCancelled()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final isDone()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lj3/di0;->h:Lj3/yl0;
-
-    invoke-interface {v0}, Ljava/util/concurrent/Future;->isDone()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lj3/di0;->b:Ljava/lang/String;
-
-    invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
-
-    move-result v1
-
-    const/16 v2, 0xc
-
-    invoke-static {v0, v2}, Ly/b;->a(Ljava/lang/String;I)I
-
-    move-result v2
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3, v2}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, "@"
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
 .end method

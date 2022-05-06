@@ -1,82 +1,147 @@
 .class public final Ldd/c;
-.super Ljava/lang/Object;
-.source "Comparisons.kt"
+.super Lle/j;
+.source "DonationReceivedDialog.kt"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Lke/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "TT;>;"
+        "Lle/j;",
+        "Lke/p<",
+        "Landroid/app/Activity;",
+        "Lqc/y;",
+        "Lae/i;",
+        ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Ljava/util/Comparator;
+.field public final synthetic g:Ldd/e;
+
+.field public final synthetic h:Lqc/n$i$c;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Comparator;)V
+.method public constructor <init>(Ldd/e;Lqc/n$i$c;)V
     .locals 0
 
-    iput-object p1, p0, Ldd/c;->a:Ljava/util/Comparator;
+    iput-object p1, p0, Ldd/c;->g:Ldd/e;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p2, p0, Ldd/c;->h:Lqc/n$i$c;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;TT;)I"
-        }
-    .end annotation
+.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    iget-object v0, p0, Ldd/c;->a:Ljava/util/Comparator;
+    check-cast p1, Landroid/app/Activity;
 
-    check-cast p1, Ldd/b;
+    check-cast p2, Lqc/y;
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_1
+
+    if-eqz p2, :cond_0
 
     .line 2
-    iget-object p1, p1, Ldd/b;->b:Ljava/lang/String;
+    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    const-string v1, ""
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
-    if-eqz p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    move-object p1, v1
+    move-result-object p1
 
     .line 3
-    :goto_0
-    check-cast p2, Ldd/b;
+    iget-object p1, p1, Lvd/r;->w:Lvd/a0;
 
     .line 4
-    iget-object p2, p2, Ldd/b;->b:Ljava/lang/String;
-
-    if-eqz p2, :cond_1
-
-    move-object v1, p2
+    iget-object p2, p0, Ldd/c;->g:Ldd/e;
 
     .line 5
+    iget-object p2, p2, Ldd/e;->i:Ldd/w;
+
+    .line 6
+    iget-object p2, p2, Ldd/w;->k:Landroid/app/Activity;
+
+    .line 7
+    new-instance v0, Lqc/n$i$g;
+
+    .line 8
+    iget-object v1, p0, Ldd/c;->h:Lqc/n$i$c;
+
+    .line 9
+    iget-object v1, v1, Lqc/n$i$c;->g:Lqc/y;
+
+    const-string v2, "pass_"
+
+    .line 10
+    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    iget-object v3, p0, Ldd/c;->h:Lqc/n$i$c;
+
+    .line 11
+    iget-object v3, v3, Lqc/n$i$c;->g:Lqc/y;
+
+    .line 12
+    iget-object v3, v3, Lqc/y;->d:Ljava/util/List;
+
+    .line 13
+    invoke-static {v3}, Lbe/k;->D(Ljava/util/List;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
+
+    const-string v4, ".png"
+
+    invoke-static {v2, v3, v4}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 14
+    new-instance v3, Lqc/n$a;
+
+    iget-object v4, p0, Ldd/c;->h:Lqc/n$i$c;
+
+    invoke-direct {v3, v4}, Lqc/n$a;-><init>(Lqc/n;)V
+
+    .line 15
+    invoke-direct {v0, v1, v2, v3}, Lqc/n$i$g;-><init>(Lqc/y;Ljava/lang/String;Lqc/n$a;)V
+
+    .line 16
+    invoke-virtual {p1, p2, v0}, Lvd/a0;->d(Landroid/app/Activity;Lqc/n;)V
+
+    .line 17
+    sget-object p1, Lae/i;->a:Lae/i;
+
+    return-object p1
+
+    :cond_0
+    const-string p1, "it"
+
+    .line 18
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
+
     :cond_1
-    invoke-interface {v0, p1, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    const-string p1, "$receiver"
 
-    move-result p1
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    return p1
+    throw v0
 .end method

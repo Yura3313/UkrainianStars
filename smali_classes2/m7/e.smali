@@ -4,23 +4,23 @@
 
 
 # instance fields
-.field public j:Landroid/content/Context;
+.field public k:Landroid/content/Context;
 
-.field public k:Ln7/b;
+.field public l:Ln7/b;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Ll7/b;Ln7/b;Ll7/c;Ll7/e;Ll7/d;)V
+.method public constructor <init>(Landroid/content/Context;Lj3/h70;Ln7/b;Ll7/a;Ll7/c;Ll7/b;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p2, p4, p5, p6}, Lm7/a;-><init>(Ll7/b;Ll7/c;Ll7/e;Ll7/d;)V
+    invoke-direct {p0, p2, p4, p5, p6}, Lm7/a;-><init>(Lj3/h70;Ll7/a;Ll7/c;Ll7/b;)V
 
     .line 2
-    iput-object p1, p0, Lm7/e;->j:Landroid/content/Context;
+    iput-object p1, p0, Lm7/e;->k:Landroid/content/Context;
 
     .line 3
-    iput-object p3, p0, Lm7/e;->k:Ln7/b;
+    iput-object p3, p0, Lm7/e;->l:Ln7/b;
 
     return-void
 .end method
@@ -36,7 +36,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lm7/e;->k:Ln7/b;
+    iget-object v1, p0, Lm7/e;->l:Ln7/b;
 
     invoke-virtual {v1}, Ln7/b;->l()V
 
@@ -47,7 +47,7 @@
     .line 3
     :cond_0
     :try_start_0
-    iget-object v1, p0, Lm7/e;->j:Landroid/content/Context;
+    iget-object v1, p0, Lm7/e;->k:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -70,7 +70,7 @@
     const-string v2, "Error when deleting a file via uri"
 
     .line 5
-    invoke-static {v1, v2, v0}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, v0}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0
     return-void
@@ -92,7 +92,7 @@
 
     .line 2
     :try_start_0
-    iget-object v4, p0, Lm7/e;->j:Landroid/content/Context;
+    iget-object v4, p0, Lm7/e;->k:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -141,7 +141,7 @@
     const-string v5, "Exception while getting file size via Uri"
 
     .line 6
-    invoke-static {v4, v5, v0}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v4, v5, v0}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -222,7 +222,7 @@
     const-string v5, "Support_"
 
     .line 4
-    invoke-static {v5}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v5}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
@@ -232,9 +232,11 @@
 
     invoke-virtual {v5, v11, v12}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    iget-object v11, v1, Lm7/a;->a:Ll7/b;
+    iget-object v11, v1, Lm7/a;->g:Lj3/h70;
 
-    iget-object v11, v11, Ll7/b;->a:Ljava/lang/String;
+    iget-object v11, v11, Lj3/h70;->b:Ljava/lang/Object;
+
+    check-cast v11, Ljava/lang/String;
 
     const-string v12, "/"
 
@@ -255,9 +257,11 @@
     move-result-object v5
 
     .line 5
-    iget-object v6, v1, Lm7/a;->a:Ll7/b;
+    iget-object v6, v1, Lm7/a;->g:Lj3/h70;
 
-    iget-object v6, v6, Ll7/b;->c:Ljava/lang/String;
+    iget-object v6, v6, Lj3/h70;->c:Ljava/lang/Object;
+
+    check-cast v6, Ljava/lang/String;
 
     .line 6
     sget v11, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -275,7 +279,7 @@
     invoke-direct {v8}, Landroid/content/ContentValues;-><init>()V
 
     .line 8
-    iget-object v11, v1, Lm7/e;->j:Landroid/content/Context;
+    iget-object v11, v1, Lm7/e;->k:Landroid/content/Context;
 
     invoke-virtual {v11}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -343,22 +347,24 @@
 
     .line 20
     :cond_3
-    iget-object v7, v1, Lm7/e;->k:Ln7/b;
+    iget-object v7, v1, Lm7/e;->l:Ln7/b;
 
     invoke-virtual {v5}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object v8
 
     .line 21
-    iget-object v11, v7, Ln7/b;->b:Ll7/b;
+    iget-object v11, v7, Ln7/b;->b:Lj3/h70;
 
-    iget-object v11, v11, Ll7/b;->a:Ljava/lang/String;
+    iget-object v11, v11, Lj3/h70;->b:Ljava/lang/Object;
+
+    check-cast v11, Ljava/lang/String;
 
     invoke-virtual {v7, v11, v8}, Ln7/a;->i(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 22
     :try_start_0
-    iget-object v7, v1, Lm7/e;->j:Landroid/content/Context;
+    iget-object v7, v1, Lm7/e;->k:Landroid/content/Context;
 
     invoke-virtual {v7}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -459,16 +465,18 @@
     long-to-int v6, v14
 
     .line 29
-    iget-object v12, v1, Lm7/a;->h:Ll7/e;
+    iget-object v12, v1, Lm7/a;->i:Ll7/c;
 
     if-eqz v12, :cond_6
 
     .line 30
-    iget-object v13, v1, Lm7/a;->a:Ll7/b;
+    iget-object v13, v1, Lm7/a;->g:Lj3/h70;
 
-    iget-object v13, v13, Ll7/b;->a:Ljava/lang/String;
+    iget-object v13, v13, Lj3/h70;->b:Ljava/lang/Object;
 
-    invoke-interface {v12, v13, v6}, Ll7/e;->a(Ljava/lang/String;I)V
+    check-cast v13, Ljava/lang/String;
+
+    invoke-interface {v12, v13, v6}, Ll7/c;->a(Ljava/lang/String;I)V
 
     :cond_6
     move-wide v12, v14
@@ -494,9 +502,11 @@
 
     .line 32
     :cond_9
-    iget-object v3, v1, Lm7/a;->a:Ll7/b;
+    iget-object v3, v1, Lm7/a;->g:Lj3/h70;
 
-    iget-object v3, v3, Ll7/b;->c:Ljava/lang/String;
+    iget-object v3, v3, Lj3/h70;->c:Ljava/lang/Object;
+
+    check-cast v3, Ljava/lang/String;
 
     .line 33
     sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -543,7 +553,7 @@
 
     .line 38
     :goto_3
-    iget-object v3, v1, Lm7/e;->j:Landroid/content/Context;
+    iget-object v3, v1, Lm7/e;->k:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -555,7 +565,7 @@
 
     .line 39
     :goto_4
-    iget-object v3, v1, Lm7/e;->k:Ln7/b;
+    iget-object v3, v1, Lm7/e;->l:Ln7/b;
 
     invoke-virtual {v3}, Ln7/b;->l()V
 
@@ -570,9 +580,11 @@
 
     invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v6, v1, Lm7/a;->a:Ll7/b;
+    iget-object v6, v1, Lm7/a;->g:Lj3/h70;
 
-    iget-object v6, v6, Ll7/b;->a:Ljava/lang/String;
+    iget-object v6, v6, Lj3/h70;->b:Ljava/lang/Object;
+
+    check-cast v6, Ljava/lang/String;
 
     invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -589,7 +601,7 @@
     const/4 v6, 0x0
 
     .line 41
-    invoke-static {v3, v4, v6, v6}, Lce/z;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v4, v6, v6}, Lie/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     const/4 v3, 0x1
 
@@ -658,12 +670,14 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lm7/e;->k:Ln7/b;
+    iget-object v0, p0, Lm7/e;->l:Ln7/b;
 
     .line 2
-    iget-object v1, v0, Ln7/b;->b:Ll7/b;
+    iget-object v1, v0, Ln7/b;->b:Lj3/h70;
 
-    iget-object v1, v1, Ll7/b;->a:Ljava/lang/String;
+    iget-object v1, v1, Lj3/h70;->b:Ljava/lang/Object;
+
+    check-cast v1, Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ln7/a;->g(Ljava/lang/String;)Ljava/lang/String;
 
@@ -682,9 +696,9 @@
 
     .line 4
     :cond_0
-    iget-object v1, p0, Lm7/e;->j:Landroid/content/Context;
+    iget-object v1, p0, Lm7/e;->k:Landroid/content/Context;
 
-    invoke-static {v1, v0}, Lu0/b;->a(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {v1, v0}, Lcom/helpshift/util/s;->a(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -711,7 +725,7 @@
     const-string v3, "Error while converting filePath to uri"
 
     .line 6
-    invoke-static {v1, v3, v0}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v3, v0}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0
     move-object v0, v2
@@ -723,7 +737,7 @@
 
     .line 7
     :cond_2
-    iget-object v0, p0, Lm7/e;->k:Ln7/b;
+    iget-object v0, p0, Lm7/e;->l:Ln7/b;
 
     invoke-virtual {v0}, Ln7/b;->l()V
 
@@ -775,7 +789,7 @@
     const-string v2, "Error when check image mime type"
 
     .line 5
-    invoke-static {v0, v2, p1}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v2, p1}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0
     return v1

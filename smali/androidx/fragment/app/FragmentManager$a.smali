@@ -67,10 +67,10 @@
 
     .line 3
     :cond_0
-    iget-object v1, v0, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->a:Ljava/lang/String;
+    iget-object v1, v0, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->g:Ljava/lang/String;
 
     .line 4
-    iget v0, v0, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->b:I
+    iget v0, v0, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->h:I
 
     .line 5
     iget-object v2, p0, Landroidx/fragment/app/FragmentManager$a;->a:Landroidx/fragment/app/FragmentManager;
@@ -89,10 +89,10 @@
 
     .line 8
     :cond_1
-    iget v2, p1, Landroidx/activity/result/ActivityResult;->a:I
+    iget v2, p1, Landroidx/activity/result/ActivityResult;->g:I
 
     .line 9
-    iget-object p1, p1, Landroidx/activity/result/ActivityResult;->b:Landroid/content/Intent;
+    iget-object p1, p1, Landroidx/activity/result/ActivityResult;->h:Landroid/content/Intent;
 
     .line 10
     invoke-virtual {v1, v0, v2, p1}, Landroidx/fragment/app/Fragment;->b0(IILandroid/content/Intent;)V

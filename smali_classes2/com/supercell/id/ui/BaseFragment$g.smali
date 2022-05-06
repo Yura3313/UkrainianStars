@@ -48,7 +48,7 @@
 
     sub-int p4, p3, p5
 
-    invoke-static {p1, p2, p3, p4}, Lcom/supercell/id/ui/BaseFragment;->Y0(Lcom/supercell/id/ui/BaseFragment;Landroid/view/View;II)V
+    invoke-static {p1, p2, p3, p4}, Lcom/supercell/id/ui/BaseFragment;->X0(Lcom/supercell/id/ui/BaseFragment;Landroid/view/View;II)V
 
     return-void
 .end method

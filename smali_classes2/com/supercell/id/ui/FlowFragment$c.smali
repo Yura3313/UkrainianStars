@@ -49,7 +49,7 @@
     .line 1
     iget-object p3, p0, Lcom/supercell/id/ui/FlowFragment$c;->a:Lcom/supercell/id/ui/FlowFragment;
 
-    sget v0, Lcom/supercell/id/ui/FlowFragment;->j0:I
+    sget v0, Lcom/supercell/id/ui/FlowFragment;->k0:I
 
     .line 2
     invoke-virtual {p3}, Lcom/supercell/id/ui/FlowFragment;->q1()Lcom/supercell/id/ui/FlowFragment$b;
@@ -94,7 +94,7 @@
 
     move-result-object p1
 
-    check-cast p1, Luc/v;
+    check-cast p1, Lrc/w;
 
     goto :goto_0
 
@@ -105,7 +105,7 @@
     if-eqz p1, :cond_1
 
     .line 3
-    invoke-virtual {p1}, Luc/v;->c1()V
+    invoke-virtual {p1}, Lrc/w;->c1()V
 
     :cond_1
     return-void

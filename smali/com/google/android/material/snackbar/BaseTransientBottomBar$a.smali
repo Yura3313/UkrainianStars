@@ -90,7 +90,7 @@
     move-result-object v2
 
     .line 7
-    sget-object v3, Lb4/a;->a:Landroid/animation/TimeInterpolator;
+    sget-object v3, Lc4/a;->a:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {v2, v3}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -138,7 +138,7 @@
     invoke-virtual {v3, v4}, Landroid/animation/ValueAnimator;->setIntValues([I)V
 
     .line 14
-    sget-object v2, Lb4/a;->b:Landroid/animation/TimeInterpolator;
+    sget-object v2, Lc4/a;->b:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {v3, v2}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -265,7 +265,7 @@
     :cond_5
     iget-object v0, p1, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->c:Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;
 
-    invoke-static {v0}, Lf0/s;->p(Landroid/view/View;)Z
+    invoke-static {v0}, Lf0/r;->p(Landroid/view/View;)Z
 
     move-result v0
 

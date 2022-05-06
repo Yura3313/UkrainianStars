@@ -11,11 +11,11 @@
 
 .field public final synthetic b:Landroid/view/ViewGroup;
 
-.field public final synthetic c:Landroidx/fragment/app/c$c;
+.field public final synthetic c:Landroidx/fragment/app/c$b;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/c;Landroid/view/View;Landroid/view/ViewGroup;Landroidx/fragment/app/c$c;)V
+.method public constructor <init>(Landroidx/fragment/app/c;Landroid/view/View;Landroid/view/ViewGroup;Landroidx/fragment/app/c$b;)V
     .locals 0
 
     .line 1
@@ -23,7 +23,7 @@
 
     iput-object p3, p0, Landroidx/fragment/app/g;->b:Landroid/view/ViewGroup;
 
-    iput-object p4, p0, Landroidx/fragment/app/g;->c:Landroidx/fragment/app/c$c;
+    iput-object p4, p0, Landroidx/fragment/app/g;->c:Landroidx/fragment/app/c$b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,9 +48,9 @@
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->endViewTransition(Landroid/view/View;)V
 
     .line 3
-    iget-object v0, p0, Landroidx/fragment/app/g;->c:Landroidx/fragment/app/c$c;
+    iget-object v0, p0, Landroidx/fragment/app/g;->c:Landroidx/fragment/app/c$b;
 
-    invoke-virtual {v0}, Landroidx/fragment/app/c$d;->a()V
+    invoke-virtual {v0}, Landroidx/fragment/app/c$c;->a()V
 
     return-void
 .end method

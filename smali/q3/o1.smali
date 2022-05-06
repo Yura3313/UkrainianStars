@@ -2,7 +2,7 @@
 .super Ljava/util/AbstractList;
 
 # interfaces
-.implements Lq3/n2;
+.implements Lq3/k2;
 
 
 # annotations
@@ -13,14 +13,14 @@
         ">",
         "Ljava/util/AbstractList<",
         "TE;>;",
-        "Lq3/n2<",
+        "Lq3/k2<",
         "TE;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public a:Z
+.field public g:Z
 
 
 # direct methods
@@ -33,20 +33,20 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Lq3/o1;->a:Z
+    iput-boolean v0, p0, Lq3/o1;->g:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final E1()V
+.method public final H1()V
     .locals 1
 
     const/4 v0, 0x0
 
     .line 1
-    iput-boolean v0, p0, Lq3/o1;->a:Z
+    iput-boolean v0, p0, Lq3/o1;->g:Z
 
     return-void
 .end method
@@ -55,7 +55,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lq3/o1;->a:Z
+    iget-boolean v0, p0, Lq3/o1;->g:Z
 
     if-eqz v0, :cond_0
 
@@ -143,15 +143,6 @@
     return-void
 .end method
 
-.method public e1()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lq3/o1;->a:Z
-
-    return v0
-.end method
-
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
 
@@ -231,6 +222,15 @@
     goto :goto_0
 
     :cond_5
+    return v0
+.end method
+
+.method public g1()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lq3/o1;->g:Z
+
     return v0
 .end method
 

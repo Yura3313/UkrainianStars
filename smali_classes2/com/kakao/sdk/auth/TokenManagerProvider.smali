@@ -14,7 +14,7 @@
 # static fields
 .field public static final Companion:Lcom/kakao/sdk/auth/TokenManagerProvider$Companion;
 
-.field private static final instance$delegate:Lbe/c;
+.field private static final instance$delegate:Lae/c;
 
 
 # instance fields
@@ -36,11 +36,11 @@
     .line 1
     sget-object v0, Lcom/kakao/sdk/auth/TokenManagerProvider$Companion$instance$2;->INSTANCE:Lcom/kakao/sdk/auth/TokenManagerProvider$Companion$instance$2;
 
-    invoke-static {v0}, Lbe/e;->f(Lke/a;)Lbe/c;
+    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
 
     move-result-object v0
 
-    sput-object v0, Lcom/kakao/sdk/auth/TokenManagerProvider;->instance$delegate:Lbe/c;
+    sput-object v0, Lcom/kakao/sdk/auth/TokenManagerProvider;->instance$delegate:Lae/c;
 
     return-void
 .end method
@@ -73,7 +73,7 @@
     const-string p1, "manager"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -100,11 +100,11 @@
     return-void
 .end method
 
-.method public static final synthetic access$getInstance$cp()Lbe/c;
+.method public static final synthetic access$getInstance$cp()Lae/c;
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/kakao/sdk/auth/TokenManagerProvider;->instance$delegate:Lbe/c;
+    sget-object v0, Lcom/kakao/sdk/auth/TokenManagerProvider;->instance$delegate:Lae/c;
 
     return-object v0
 .end method
@@ -146,7 +146,7 @@
     const-string p1, "<set-?>"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

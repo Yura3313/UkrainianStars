@@ -127,7 +127,7 @@
     return-void
 .end method
 
-.method public t0(Lq/e;Lq/e$b;ILq/e$b;I)V
+.method public t0(Lq/e;Lq/e$a;ILq/e$a;I)V
     .locals 2
 
     .line 1
@@ -156,10 +156,10 @@
     :cond_0
     iget-object v1, p0, Lq/l;->S0:Lr/b$a;
 
-    iput-object p2, v1, Lr/b$a;->a:Lq/e$b;
+    iput-object p2, v1, Lr/b$a;->a:Lq/e$a;
 
     .line 7
-    iput-object p4, v1, Lr/b$a;->b:Lq/e$b;
+    iput-object p4, v1, Lr/b$a;->b:Lq/e$a;
 
     .line 8
     iput p3, v1, Lr/b$a;->c:I
@@ -168,9 +168,9 @@
     iput p5, v1, Lr/b$a;->d:I
 
     .line 10
-    check-cast v0, Landroidx/constraintlayout/widget/ConstraintLayout$b;
+    check-cast v0, Landroidx/constraintlayout/widget/ConstraintLayout$a;
 
-    invoke-virtual {v0, p1, v1}, Landroidx/constraintlayout/widget/ConstraintLayout$b;->c(Lq/e;Lr/b$a;)V
+    invoke-virtual {v0, p1, v1}, Landroidx/constraintlayout/widget/ConstraintLayout$a;->c(Lq/e;Lr/b$a;)V
 
     .line 11
     iget-object p2, p0, Lq/l;->S0:Lr/b$a;

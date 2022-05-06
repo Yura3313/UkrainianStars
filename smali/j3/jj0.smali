@@ -1,34 +1,27 @@
-.class public Lj3/jj0;
-.super Landroid/os/Handler;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
+.class public final synthetic Lj3/jj0;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
 
 
 # direct methods
-.method public constructor <init>(Landroid/os/Looper;)V
-    .locals 0
+.method public static synthetic a(I)I
+    .locals 1
 
-    .line 1
-    invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+    const/4 v0, 0x1
 
-    return-void
-.end method
+    if-ne p0, v0, :cond_0
 
+    return v0
 
-# virtual methods
-.method public a(Landroid/os/Message;)V
-    .locals 0
+    :cond_0
+    const/4 v0, 0x2
 
-    .line 1
-    invoke-super {p0, p1}, Landroid/os/Handler;->dispatchMessage(Landroid/os/Message;)V
+    if-ne p0, v0, :cond_1
 
-    return-void
-.end method
+    return v0
 
-.method public final dispatchMessage(Landroid/os/Message;)V
-    .locals 0
+    :cond_1
+    const/4 p0, 0x0
 
-    .line 1
-    invoke-virtual {p0, p1}, Lj3/jj0;->a(Landroid/os/Message;)V
-
-    return-void
+    throw p0
 .end method

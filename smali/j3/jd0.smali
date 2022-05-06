@@ -1,71 +1,91 @@
-.class public final synthetic Lj3/jd0;
+.class public final Lj3/jd0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/mj0;
+.implements Lj3/ed0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj3/ed0<",
+        "Lj3/hd0;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Lj3/hd0;
+.field public final a:Lj3/km0;
+
+.field public final b:Landroid/content/Context;
 
 
 # direct methods
-.method public constructor <init>(Lj3/hd0;)V
+.method public constructor <init>(Lj3/km0;Landroid/content/Context;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj3/jd0;->a:Lj3/hd0;
+    .line 2
+    iput-object p1, p0, Lj3/jd0;->a:Lj3/km0;
+
+    .line 3
+    iput-object p2, p0, Lj3/jd0;->b:Landroid/content/Context;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+.method public static b(Landroid/content/pm/PackageManager;Ljava/lang/String;)Landroid/content/pm/ResolveInfo;
     .locals 2
 
-    iget-object v0, p0, Lj3/jd0;->a:Lj3/hd0;
-
-    check-cast p1, Ljava/lang/Throwable;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 1
-    sget-object p1, Lj3/w41;->j:Lj3/w41;
+    new-instance v0, Landroid/content/Intent;
 
-    iget-object p1, p1, Lj3/w41;->a:Lj3/xc;
+    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object p1
+
+    const-string v1, "android.intent.action.VIEW"
+
+    invoke-direct {v0, v1, p1}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+
+    const/high16 p1, 0x10000
 
     .line 2
-    iget-object p1, v0, Lj3/hd0;->b:Landroid/content/Context;
+    invoke-virtual {p0, v0, p1}, Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
 
-    .line 3
-    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    move-result-object p0
 
-    move-result-object p1
+    return-object p0
+.end method
 
-    const/4 v0, 0x0
 
-    if-nez p1, :cond_0
+# virtual methods
+.method public final a()Lj3/im0;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lj3/im0<",
+            "Lj3/hd0;",
+            ">;"
+        }
+    .end annotation
 
-    move-object p1, v0
+    .line 1
+    iget-object v0, p0, Lj3/jd0;->a:Lj3/km0;
 
-    goto :goto_0
+    new-instance v1, Lj3/id0;
 
-    :cond_0
-    const-string v1, "android_id"
+    invoke-direct {v1, p0}, Lj3/id0;-><init>(Lj3/jd0;)V
 
-    .line 4
-    invoke-static {p1, v1}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v1}, Lj3/km0;->c(Ljava/util/concurrent/Callable;)Lj3/im0;
 
-    move-result-object p1
+    move-result-object v0
 
-    .line 5
-    :goto_0
-    new-instance v1, Lj3/fd0;
-
-    invoke-direct {v1, v0, p1}, Lj3/fd0;-><init>(Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;Ljava/lang/String;)V
-
-    return-object v1
+    return-object v0
 .end method

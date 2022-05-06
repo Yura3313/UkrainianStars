@@ -45,7 +45,7 @@
     invoke-direct {v0}, Lcom/supercell/id/ui/FlowFragment$b;-><init>()V
 
     .line 2
-    iget-object v3, v0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v3, v0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz v3, :cond_0
 
@@ -81,12 +81,12 @@
 
     .line 9
     :cond_1
-    invoke-static {v2}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {v2}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_2
-    invoke-static {v1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

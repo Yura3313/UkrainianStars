@@ -3,7 +3,7 @@
 .source "GoogleServiceClient.java"
 
 # interfaces
-.implements La4/e;
+.implements Lb4/e;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La4/e<",
+        "Lb4/e<",
         "Landroid/content/Intent;",
         ">;"
     }
@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroid/app/Activity;
+.field public final synthetic g:Landroid/app/Activity;
 
 
 # direct methods
@@ -35,7 +35,7 @@
     .locals 0
 
     .line 1
-    iput-object p2, p0, Lcom/supercell/titan/GoogleServiceClient$f;->a:Landroid/app/Activity;
+    iput-object p2, p0, Lcom/supercell/titan/GoogleServiceClient$f;->g:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,7 +51,7 @@
     check-cast p1, Landroid/content/Intent;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/titan/GoogleServiceClient$f;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/supercell/titan/GoogleServiceClient$f;->g:Landroid/app/Activity;
 
     const v1, 0x10c90b
 

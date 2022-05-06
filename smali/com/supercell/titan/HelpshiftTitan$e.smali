@@ -18,13 +18,13 @@
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/String;
-
-.field public final synthetic b:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
 .field public final synthetic h:Ljava/lang/String;
 
 .field public final synthetic i:Ljava/lang/String;
+
+.field public final synthetic j:Ljava/lang/String;
 
 
 # direct methods
@@ -32,13 +32,13 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/titan/HelpshiftTitan$e;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/titan/HelpshiftTitan$e;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/titan/HelpshiftTitan$e;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/titan/HelpshiftTitan$e;->h:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/supercell/titan/HelpshiftTitan$e;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/supercell/titan/HelpshiftTitan$e;->i:Ljava/lang/String;
 
-    iput-object p4, p0, Lcom/supercell/titan/HelpshiftTitan$e;->i:Ljava/lang/String;
+    iput-object p4, p0, Lcom/supercell/titan/HelpshiftTitan$e;->j:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,19 +54,19 @@
     :try_start_0
     new-instance v0, Lcom/helpshift/f$b;
 
-    iget-object v1, p0, Lcom/supercell/titan/HelpshiftTitan$e;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/titan/HelpshiftTitan$e;->g:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/supercell/titan/HelpshiftTitan$e;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/titan/HelpshiftTitan$e;->h:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2}, Lcom/helpshift/f$b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/supercell/titan/HelpshiftTitan$e;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/titan/HelpshiftTitan$e;->i:Ljava/lang/String;
 
     .line 2
     iput-object v1, v0, Lcom/helpshift/f$b;->c:Ljava/lang/String;
 
     .line 3
-    iget-object v1, p0, Lcom/supercell/titan/HelpshiftTitan$e;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/titan/HelpshiftTitan$e;->j:Ljava/lang/String;
 
     .line 4
     iput-object v1, v0, Lcom/helpshift/f$b;->d:Ljava/lang/String;
@@ -77,7 +77,7 @@
     move-result-object v0
 
     .line 6
-    invoke-static {}, Lcom/helpshift/util/r;->b()Z
+    invoke-static {}, Lcom/helpshift/util/q;->c()Z
 
     move-result v1
 
@@ -87,17 +87,17 @@
 
     .line 7
     :cond_0
-    sget-object v1, Llb/b;->a:Llb/a;
+    sget-object v1, Ljb/b;->a:Ljb/a;
 
     .line 8
     new-instance v2, Lcom/helpshift/e;
 
     invoke-direct {v2, v0}, Lcom/helpshift/e;-><init>(Lcom/helpshift/f;)V
 
-    check-cast v1, Llb/c;
+    check-cast v1, Ljb/c;
 
     .line 9
-    iget-object v0, v1, Llb/c;->c:Landroid/os/Handler;
+    iget-object v0, v1, Ljb/c;->c:Landroid/os/Handler;
 
     invoke-virtual {v0, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
     :try_end_0

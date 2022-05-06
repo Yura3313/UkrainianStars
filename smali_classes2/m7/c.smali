@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public k:Landroid/content/Context;
+.field public l:Landroid/content/Context;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Ll7/b;Ln7/b;Ll7/c;Ll7/e;Ll7/d;)V
+.method public constructor <init>(Landroid/content/Context;Lj3/h70;Ln7/b;Ll7/a;Ll7/c;Ll7/b;)V
     .locals 6
 
     move-object v0, p0
@@ -24,10 +24,10 @@
     move-object v5, p6
 
     .line 1
-    invoke-direct/range {v0 .. v5}, Lm7/g;-><init>(Ll7/b;Ln7/b;Ll7/c;Ll7/e;Ll7/d;)V
+    invoke-direct/range {v0 .. v5}, Lm7/g;-><init>(Lj3/h70;Ln7/b;Ll7/a;Ll7/c;Ll7/b;)V
 
     .line 2
-    iput-object p1, p0, Lm7/c;->k:Landroid/content/Context;
+    iput-object p1, p0, Lm7/c;->l:Landroid/content/Context;
 
     return-void
 .end method
@@ -38,7 +38,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lm7/c;->k:Landroid/content/Context;
+    iget-object v0, p0, Lm7/c;->l:Landroid/content/Context;
 
     const/4 v1, 0x0
 

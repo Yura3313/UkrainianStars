@@ -7,10 +7,10 @@
 
 
 # virtual methods
-.method public abstract q0(Lm5/c;)V
+.method public abstract B(I)Ljava/lang/Object;
 .end method
 
-.method public abstract r()Ljava/util/List;
+.method public abstract t()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -20,8 +20,8 @@
     .end annotation
 .end method
 
-.method public abstract w()Lm5/i;
+.method public abstract t0(Lm5/c;)V
 .end method
 
-.method public abstract z(I)Ljava/lang/Object;
+.method public abstract y()Lm5/i;
 .end method

@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$g;->a:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$g;->g:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,10 +38,10 @@
     .locals 8
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$g;->a:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$g;->g:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
 
     .line 2
-    iget-boolean p1, p1, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->l0:Z
+    iget-boolean p1, p1, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->m0:Z
 
     if-eqz p1, :cond_0
 
@@ -51,12 +51,12 @@
     :cond_0
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
     .line 4
-    iget-object v1, v0, Lwd/r;->m:La2/a;
+    iget-object v1, v0, Lvd/r;->m:Lcom/supercell/titan/h;
 
     const/4 v5, 0x0
 
@@ -71,26 +71,26 @@
     const-string v4, "Share invite"
 
     .line 5
-    invoke-static/range {v1 .. v7}, La2/a;->b(La2/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static/range {v1 .. v7}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
 
     .line 6
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lwd/r;->i()Lxd/e0;
+    invoke-virtual {v0}, Lvd/r;->i()Lwd/z;
 
     move-result-object v0
 
     .line 7
-    iget-object v0, v0, Lxd/z0;->a:Ljava/lang/Object;
+    iget-object v0, v0, Lwd/u0;->a:Ljava/lang/Object;
 
     .line 8
-    check-cast v0, Lxd/b0;
+    check-cast v0, Lwd/x;
 
     if-eqz v0, :cond_3
 
-    invoke-virtual {v0}, Lxd/b0;->a()Lcom/supercell/id/model/IdProfile;
+    invoke-virtual {v0}, Lwd/x;->a()Lcom/supercell/id/model/IdProfile;
 
     move-result-object v0
 
@@ -102,15 +102,15 @@
     if-eqz v0, :cond_3
 
     .line 10
-    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$g;->a:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
+    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$g;->g:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
 
     const/4 v2, 0x1
 
     .line 11
-    iput-boolean v2, v1, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->l0:Z
+    iput-boolean v2, v1, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;->m0:Z
 
     .line 12
-    invoke-static {v1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v1
 
@@ -171,17 +171,17 @@
     invoke-virtual {v3, v2}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 21
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object p1
 
     .line 22
-    iget-object p1, p1, Lwd/r;->s:Lqd/j;
+    iget-object p1, p1, Lvd/r;->s:Lpd/i;
 
     const-string v2, "account_invite_friends_share_title"
 
     .line 23
-    invoke-virtual {p1, v2}, Lqd/j;->g(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v2}, Lpd/i;->g(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

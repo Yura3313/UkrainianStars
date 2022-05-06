@@ -12,27 +12,6 @@
 
 
 # direct methods
-.method private static synthetic $closeResource(Ljava/lang/Throwable;Ljava/lang/AutoCloseable;)V
-    .locals 0
-
-    if-eqz p0, :cond_0
-
-    .line 1
-    :try_start_0
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
-
-    :catchall_0
-    :goto_0
-    return-void
-.end method
-
 .method public static constructor <clinit>()V
     .locals 1
 
@@ -86,7 +65,7 @@
 
     invoke-direct {v1, p0, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     .line 3
     :try_start_1
@@ -103,7 +82,6 @@
 
     sput-object p0, Lio/sentry/android/core/Installation;->deviceId:Ljava/lang/String;
     :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 5
@@ -120,12 +98,11 @@
 
     sput-object p0, Lio/sentry/android/core/Installation;->deviceId:Ljava/lang/String;
     :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception p0
 
     .line 7
@@ -141,13 +118,13 @@
     :goto_0
     sget-object p0, Lio/sentry/android/core/Installation;->deviceId:Ljava/lang/String;
     :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     monitor-exit v0
 
     return-object p0
 
-    :catchall_0
+    :catchall_1
     move-exception p0
 
     monitor-exit v0
@@ -190,42 +167,23 @@
 
     invoke-direct {v1, p0, v2}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 5
-    :try_start_1
-    invoke-interface {v0}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    invoke-virtual {v0}, Ljava/io/RandomAccessFile;->close()V
 
     return-object v1
 
     :catchall_0
     move-exception p0
 
-    throw p0
+    .line 6
+    :try_start_1
+    invoke-virtual {v0}, Ljava/io/RandomAccessFile;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     :catchall_1
-    move-exception p0
-
-    .line 6
-    :try_start_2
-    throw p0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_2
-
-    :catchall_2
-    move-exception v1
-
-    .line 7
-    :try_start_3
-    invoke-interface {v0}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_3
-
-    throw v1
-
-    :catchall_3
     throw p0
 .end method
 
@@ -264,41 +222,22 @@
     .line 4
     invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 5
-    :try_start_1
-    invoke-interface {v0}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
 
     return-object p0
 
     :catchall_0
     move-exception p0
 
-    throw p0
+    .line 6
+    :try_start_1
+    invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     :catchall_1
-    move-exception p0
-
-    .line 6
-    :try_start_2
-    throw p0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_2
-
-    :catchall_2
-    move-exception v1
-
-    .line 7
-    :try_start_3
-    invoke-interface {v0}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_3
-
-    throw v1
-
-    :catchall_3
     throw p0
 .end method

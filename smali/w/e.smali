@@ -176,13 +176,13 @@
 
     .line 7
     :cond_0
-    sget-object v1, Lx/d;->b:Lm/f;
+    sget-object v1, Lx/d;->b:Lm/e;
 
     invoke-static {v2, p1, v4}, Lx/d;->c(Landroid/content/res/Resources;II)Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-virtual {v1, v3}, Lm/f;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v3}, Lm/e;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -306,7 +306,7 @@
 
     const-string v1, "Font resource ID #0x"
 
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -339,7 +339,7 @@
 
     const-string v3, "Resource \""
 
-    invoke-static {v3}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 

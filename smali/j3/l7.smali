@@ -1,643 +1,718 @@
 .class public final Lj3/l7;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
+.super Lj3/m7;
+.source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Lj3/y2;
 
 
-# static fields
-.field public static final b:Ljava/lang/Object;
-
-.field public static c:Z
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "lock"
-    .end annotation
-.end field
-
-.field public static d:Z
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "lock"
-    .end annotation
-.end field
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lj3/m7;",
+        "Lj3/y2<",
+        "Lj3/gh;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public a:Lcom/google/android/gms/internal/ads/zzdpt;
+.field public final j:Lj3/gh;
+
+.field public final k:Landroid/content/Context;
+
+.field public final l:Landroid/view/WindowManager;
+
+.field public final m:Lj3/d;
+
+.field public n:Landroid/util/DisplayMetrics;
+
+.field public o:F
+
+.field public p:I
+
+.field public q:I
+
+.field public r:I
+
+.field public s:I
+
+.field public t:I
+
+.field public u:I
+
+.field public v:I
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method public constructor <init>(Lj3/gh;Landroid/content/Context;Lj3/d;)V
     .locals 1
 
     .line 1
-    new-instance v0, Ljava/lang/Object;
+    invoke-direct {p0, p1}, Lj3/m7;-><init>(Lj3/gh;)V
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, -0x1
 
-    sput-object v0, Lj3/l7;->b:Ljava/lang/Object;
+    .line 2
+    iput v0, p0, Lj3/l7;->p:I
 
-    return-void
-.end method
+    .line 3
+    iput v0, p0, Lj3/l7;->q:I
 
-.method public constructor <init>()V
-    .locals 0
+    .line 4
+    iput v0, p0, Lj3/l7;->s:I
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 5
+    iput v0, p0, Lj3/l7;->t:I
+
+    .line 6
+    iput v0, p0, Lj3/l7;->u:I
+
+    .line 7
+    iput v0, p0, Lj3/l7;->v:I
+
+    .line 8
+    iput-object p1, p0, Lj3/l7;->j:Lj3/gh;
+
+    .line 9
+    iput-object p2, p0, Lj3/l7;->k:Landroid/content/Context;
+
+    .line 10
+    iput-object p3, p0, Lj3/l7;->m:Lj3/d;
+
+    const-string p1, "window"
+
+    .line 11
+    invoke-virtual {p2, p1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/WindowManager;
+
+    iput-object p1, p0, Lj3/l7;->l:Landroid/view/WindowManager;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/gms/dynamic/IObjectWrapper;
-    .locals 11
+.method public final b(Ljava/lang/Object;Ljava/util/Map;)V
+    .locals 8
 
     .line 1
-    sget-object v1, Lj3/l7;->b:Ljava/lang/Object;
-
-    monitor-enter v1
+    check-cast p1, Lj3/gh;
 
     .line 2
-    :try_start_0
-    sget-object v0, Lj3/n;->s2:Lj3/f;
+    new-instance p1, Landroid/util/DisplayMetrics;
+
+    invoke-direct {p1}, Landroid/util/DisplayMetrics;-><init>()V
+
+    iput-object p1, p0, Lj3/l7;->n:Landroid/util/DisplayMetrics;
 
     .line 3
-    sget-object v2, Lj3/w41;->j:Lj3/w41;
+    iget-object p1, p0, Lj3/l7;->l:Landroid/view/WindowManager;
 
-    iget-object v2, v2, Lj3/w41;->f:Lj3/l;
+    invoke-interface {p1}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
-    .line 4
-    invoke-virtual {v2, v0}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    .line 5
-    check-cast v0, Ljava/lang/Boolean;
-
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    const/4 v2, 0x0
-
-    if-eqz v0, :cond_1
-
-    sget-boolean v0, Lj3/l7;->c:Z
-
-    if-nez v0, :cond_0
-
-    goto :goto_1
-
-    .line 6
-    :cond_0
-    monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    move-object v3, p0
-
-    .line 7
-    :try_start_1
-    iget-object v4, v3, Lj3/l7;->a:Lcom/google/android/gms/internal/ads/zzdpt;
-
-    .line 8
-    new-instance v6, Lcom/google/android/gms/dynamic/ObjectWrapper;
-
-    move-object v0, p2
-
-    invoke-direct {v6, p2}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
-
-    move-object v5, p1
-
-    move-object v7, p3
-
-    move-object v8, p4
-
-    move-object/from16 v9, p5
-
-    move-object/from16 v10, p6
-
-    .line 9
-    invoke-interface/range {v4 .. v10}, Lcom/google/android/gms/internal/ads/zzdpt;->y3(Ljava/lang/String;Lcom/google/android/gms/dynamic/IObjectWrapper;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/gms/dynamic/IObjectWrapper;
-
-    move-result-object v0
-    :try_end_1
-    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Ljava/lang/NullPointerException; {:try_start_1 .. :try_end_1} :catch_0
-
-    return-object v0
-
-    :catch_0
-    move-exception v0
-
-    goto :goto_0
-
-    :catch_1
-    move-exception v0
-
-    :goto_0
-    const-string v1, "#007 Could not call remote method."
-
-    .line 10
-    invoke-static {v1, v0}, Lp0/d;->f(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    return-object v2
-
-    :cond_1
-    :goto_1
-    move-object v3, p0
-
-    .line 11
-    :try_start_2
-    monitor-exit v1
-
-    return-object v2
-
-    :catchall_0
-    move-exception v0
-
-    move-object v3, p0
-
-    .line 12
-    :goto_2
-    monitor-exit v1
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    throw v0
-
-    :catchall_1
-    move-exception v0
-
-    goto :goto_2
-.end method
-
-.method public final b(Lcom/google/android/gms/dynamic/IObjectWrapper;Landroid/view/View;)V
-    .locals 3
-
-    .line 1
-    sget-object v0, Lj3/l7;->b:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    .line 2
-    :try_start_0
-    sget-object v1, Lj3/n;->s2:Lj3/f;
-
-    .line 3
-    sget-object v2, Lj3/w41;->j:Lj3/w41;
-
-    iget-object v2, v2, Lj3/w41;->f:Lj3/l;
+    move-result-object p1
 
     .line 4
-    invoke-virtual {v2, v1}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+    iget-object p2, p0, Lj3/l7;->n:Landroid/util/DisplayMetrics;
 
-    move-result-object v1
-
-    .line 5
-    check-cast v1, Ljava/lang/Boolean;
-
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    sget-boolean v1, Lj3/l7;->c:Z
-
-    if-nez v1, :cond_0
-
-    goto :goto_1
-
-    .line 6
-    :cond_0
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 7
-    :try_start_1
-    iget-object v0, p0, Lj3/l7;->a:Lcom/google/android/gms/internal/ads/zzdpt;
-
-    .line 8
-    new-instance v1, Lcom/google/android/gms/dynamic/ObjectWrapper;
-
-    invoke-direct {v1, p2}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
-
-    .line 9
-    invoke-interface {v0, p1, v1}, Lcom/google/android/gms/internal/ads/zzdpt;->u2(Lcom/google/android/gms/dynamic/IObjectWrapper;Lcom/google/android/gms/dynamic/IObjectWrapper;)V
-    :try_end_1
-    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Ljava/lang/NullPointerException; {:try_start_1 .. :try_end_1} :catch_0
-
-    return-void
-
-    :catch_0
-    move-exception p1
-
-    goto :goto_0
-
-    :catch_1
-    move-exception p1
-
-    :goto_0
-    const-string p2, "#007 Could not call remote method."
-
-    .line 10
-    invoke-static {p2, p1}, Lp0/d;->f(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    return-void
-
-    .line 11
-    :cond_1
-    :goto_1
-    :try_start_2
-    monitor-exit v0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    .line 12
-    monitor-exit v0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    throw p1
-.end method
-
-.method public final c(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
-    .locals 3
-
-    .line 1
-    sget-object v0, Lj3/l7;->b:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    .line 2
-    :try_start_0
-    sget-object v1, Lj3/n;->s2:Lj3/f;
-
-    .line 3
-    sget-object v2, Lj3/w41;->j:Lj3/w41;
-
-    iget-object v2, v2, Lj3/w41;->f:Lj3/l;
-
-    .line 4
-    invoke-virtual {v2, v1}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
-
-    move-result-object v1
+    invoke-virtual {p1, p2}, Landroid/view/Display;->getMetrics(Landroid/util/DisplayMetrics;)V
 
     .line 5
-    check-cast v1, Ljava/lang/Boolean;
+    iget-object p2, p0, Lj3/l7;->n:Landroid/util/DisplayMetrics;
 
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+    iget p2, p2, Landroid/util/DisplayMetrics;->density:F
 
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    sget-boolean v1, Lj3/l7;->c:Z
-
-    if-nez v1, :cond_0
-
-    goto :goto_1
+    iput p2, p0, Lj3/l7;->o:F
 
     .line 6
-    :cond_0
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 7
-    :try_start_1
-    iget-object v0, p0, Lj3/l7;->a:Lcom/google/android/gms/internal/ads/zzdpt;
-
-    invoke-interface {v0, p1}, Lcom/google/android/gms/internal/ads/zzdpt;->q7(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
-    :try_end_1
-    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Ljava/lang/NullPointerException; {:try_start_1 .. :try_end_1} :catch_0
-
-    return-void
-
-    :catch_0
-    move-exception p1
-
-    goto :goto_0
-
-    :catch_1
-    move-exception p1
-
-    :goto_0
-    const-string v0, "#007 Could not call remote method."
-
-    .line 8
-    invoke-static {v0, p1}, Lp0/d;->f(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    return-void
-
-    .line 9
-    :cond_1
-    :goto_1
-    :try_start_2
-    monitor-exit v0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    .line 10
-    monitor-exit v0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    throw p1
-.end method
-
-.method public final d(Landroid/content/Context;)Z
-    .locals 4
-
-    .line 1
-    sget-object v0, Lj3/l7;->b:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    .line 2
-    :try_start_0
-    sget-object v1, Lj3/n;->s2:Lj3/f;
-
-    .line 3
-    sget-object v2, Lj3/w41;->j:Lj3/w41;
-
-    iget-object v2, v2, Lj3/w41;->f:Lj3/l;
-
-    .line 4
-    invoke-virtual {v2, v1}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    .line 5
-    check-cast v1, Ljava/lang/Boolean;
-
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v1
-
-    const/4 v2, 0x0
-
-    if-nez v1, :cond_0
-
-    .line 6
-    monitor-exit v0
-
-    return v2
-
-    .line 7
-    :cond_0
-    sget-boolean v1, Lj3/l7;->c:Z
-
-    if-eqz v1, :cond_1
-
-    const/4 p1, 0x1
-
-    .line 8
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    return p1
-
-    .line 9
-    :cond_1
-    :try_start_1
-    invoke-virtual {p0, p1}, Lj3/l7;->e(Landroid/content/Context;)V
-
-    .line 10
-    iget-object v1, p0, Lj3/l7;->a:Lcom/google/android/gms/internal/ads/zzdpt;
-
-    .line 11
-    new-instance v3, Lcom/google/android/gms/dynamic/ObjectWrapper;
-
-    invoke-direct {v3, p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
-
-    .line 12
-    invoke-interface {v1, v3}, Lcom/google/android/gms/internal/ads/zzdpt;->Z5(Lcom/google/android/gms/dynamic/IObjectWrapper;)Z
+    invoke-virtual {p1}, Landroid/view/Display;->getRotation()I
 
     move-result p1
 
-    .line 13
-    sput-boolean p1, Lj3/l7;->c:Z
-    :try_end_1
-    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Ljava/lang/NullPointerException; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    iput p1, p0, Lj3/l7;->r:I
 
-    :try_start_2
-    monitor-exit v0
+    .line 7
+    sget-object p1, Lj3/t51;->j:Lj3/t51;
 
-    return p1
+    iget-object p1, p1, Lj3/t51;->a:Lj3/bd;
 
-    :catch_0
-    move-exception p1
+    .line 8
+    iget-object p1, p0, Lj3/l7;->n:Landroid/util/DisplayMetrics;
 
-    goto :goto_0
+    iget p2, p1, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    :catch_1
-    move-exception p1
+    invoke-static {p1, p2}, Lj3/bd;->e(Landroid/util/DisplayMetrics;I)I
 
-    :goto_0
-    const-string v1, "#007 Could not call remote method."
+    move-result p1
 
-    .line 14
-    invoke-static {v1, p1}, Lp0/d;->f(Ljava/lang/String;Ljava/lang/Throwable;)V
+    iput p1, p0, Lj3/l7;->p:I
 
-    .line 15
-    monitor-exit v0
+    .line 9
+    sget-object p1, Lj3/t51;->j:Lj3/t51;
 
-    return v2
+    iget-object p1, p1, Lj3/t51;->a:Lj3/bd;
 
-    :catchall_0
-    move-exception p1
+    .line 10
+    iget-object p1, p0, Lj3/l7;->n:Landroid/util/DisplayMetrics;
 
-    .line 16
-    monitor-exit v0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    iget p2, p1, Landroid/util/DisplayMetrics;->heightPixels:I
 
-    throw p1
-.end method
+    invoke-static {p1, p2}, Lj3/bd;->e(Landroid/util/DisplayMetrics;I)I
 
-.method public final e(Landroid/content/Context;)V
-    .locals 4
+    move-result p1
 
-    .line 1
-    sget-object v0, Lj3/l7;->b:Ljava/lang/Object;
+    iput p1, p0, Lj3/l7;->q:I
 
-    monitor-enter v0
+    .line 11
+    iget-object p1, p0, Lj3/l7;->j:Lj3/gh;
 
-    .line 2
-    :try_start_0
-    sget-object v1, Lj3/n;->s2:Lj3/f;
+    invoke-interface {p1}, Lj3/gh;->a()Landroid/app/Activity;
 
-    .line 3
-    sget-object v2, Lj3/w41;->j:Lj3/w41;
+    move-result-object p1
 
-    iget-object v2, v2, Lj3/w41;->f:Lj3/l;
+    const/4 p2, 0x1
 
-    .line 4
-    invoke-virtual {v2, v1}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_1
+
+    .line 12
+    invoke-virtual {p1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
-    .line 5
-    check-cast v1, Ljava/lang/Boolean;
+    if-nez v1, :cond_0
 
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+    goto :goto_0
+
+    .line 13
+    :cond_0
+    sget-object v1, Lh1/o;->B:Lh1/o;
+
+    iget-object v1, v1, Lh1/o;->c:Lj3/bb;
+
+    .line 14
+    invoke-static {p1}, Lj3/bb;->v(Landroid/app/Activity;)[I
+
+    move-result-object p1
+
+    .line 15
+    sget-object v1, Lj3/t51;->j:Lj3/t51;
+
+    iget-object v1, v1, Lj3/t51;->a:Lj3/bd;
+
+    .line 16
+    iget-object v1, p0, Lj3/l7;->n:Landroid/util/DisplayMetrics;
+
+    aget v2, p1, v0
+
+    invoke-static {v1, v2}, Lj3/bd;->e(Landroid/util/DisplayMetrics;I)I
 
     move-result v1
 
-    if-eqz v1, :cond_2
+    iput v1, p0, Lj3/l7;->s:I
 
-    sget-boolean v1, Lj3/l7;->d:Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .line 17
+    sget-object v1, Lj3/t51;->j:Lj3/t51;
 
-    if-nez v1, :cond_2
+    iget-object v1, v1, Lj3/t51;->a:Lj3/bd;
 
-    const/4 v1, 0x1
+    .line 18
+    iget-object v1, p0, Lj3/l7;->n:Landroid/util/DisplayMetrics;
 
-    .line 6
-    :try_start_1
-    sput-boolean v1, Lj3/l7;->d:Z
+    aget p1, p1, p2
 
-    const-string v1, "com.google.android.gms.ads.omid.DynamiteOmid"
-    :try_end_1
-    .catch Lcom/google/android/gms/internal/ads/zzbbe; {:try_start_1 .. :try_end_1} :catch_2
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    invoke-static {v1, p1}, Lj3/bd;->e(Landroid/util/DisplayMetrics;I)I
 
-    .line 7
-    :try_start_2
-    sget-object v2, Lcom/google/android/gms/dynamite/DynamiteModule;->j:Lcom/google/android/gms/dynamite/DynamiteModule$a;
+    move-result p1
 
-    const-string v3, "com.google.android.gms.ads.dynamite"
-
-    invoke-static {p1, v2, v3}, Lcom/google/android/gms/dynamite/DynamiteModule;->d(Landroid/content/Context;Lcom/google/android/gms/dynamite/DynamiteModule$a;Ljava/lang/String;)Lcom/google/android/gms/dynamite/DynamiteModule;
-
-    move-result-object p1
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    .line 8
-    :try_start_3
-    invoke-virtual {p1, v1}, Lcom/google/android/gms/dynamite/DynamiteModule;->c(Ljava/lang/String;)Landroid/os/IBinder;
-
-    move-result-object p1
-
-    .line 9
-    sget v1, Lcom/google/android/gms/internal/ads/zzdpw;->a:I
-
-    if-nez p1, :cond_0
-
-    const/4 p1, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    const-string v1, "com.google.android.gms.ads.omid.IOmid"
-
-    .line 10
-    invoke-interface {p1, v1}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
-
-    move-result-object v1
-
-    .line 11
-    instance-of v2, v1, Lcom/google/android/gms/internal/ads/zzdpt;
-
-    if-eqz v2, :cond_1
-
-    .line 12
-    move-object p1, v1
-
-    check-cast p1, Lcom/google/android/gms/internal/ads/zzdpt;
-
-    goto :goto_0
-
-    :catch_0
-    move-exception p1
+    iput p1, p0, Lj3/l7;->t:I
 
     goto :goto_1
 
-    .line 13
+    .line 19
     :cond_1
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzdpv;
-
-    invoke-direct {v1, p1}, Lcom/google/android/gms/internal/ads/zzdpv;-><init>(Landroid/os/IBinder;)V
-    :try_end_3
-    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    move-object p1, v1
-
-    .line 14
     :goto_0
-    :try_start_4
-    iput-object p1, p0, Lj3/l7;->a:Lcom/google/android/gms/internal/ads/zzdpt;
-    :try_end_4
-    .catch Lcom/google/android/gms/internal/ads/zzbbe; {:try_start_4 .. :try_end_4} :catch_2
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+    iget p1, p0, Lj3/l7;->p:I
+
+    iput p1, p0, Lj3/l7;->s:I
+
+    .line 20
+    iget p1, p0, Lj3/l7;->q:I
+
+    iput p1, p0, Lj3/l7;->t:I
+
+    .line 21
+    :goto_1
+    iget-object p1, p0, Lj3/l7;->j:Lj3/gh;
+
+    invoke-interface {p1}, Lj3/gh;->c()Lj3/pi;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lj3/pi;->b()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    .line 22
+    iget p1, p0, Lj3/l7;->p:I
+
+    iput p1, p0, Lj3/l7;->u:I
+
+    .line 23
+    iget p1, p0, Lj3/l7;->q:I
+
+    iput p1, p0, Lj3/l7;->v:I
 
     goto :goto_2
 
+    .line 24
+    :cond_2
+    iget-object p1, p0, Lj3/l7;->j:Lj3/gh;
+
+    invoke-interface {p1, v0, v0}, Lj3/gh;->measure(II)V
+
+    .line 25
+    :goto_2
+    iget v2, p0, Lj3/l7;->p:I
+
+    iget v3, p0, Lj3/l7;->q:I
+
+    iget v4, p0, Lj3/l7;->s:I
+
+    iget v5, p0, Lj3/l7;->t:I
+
+    iget v6, p0, Lj3/l7;->o:F
+
+    iget v7, p0, Lj3/l7;->r:I
+
+    move-object v1, p0
+
+    invoke-virtual/range {v1 .. v7}, Lj3/m7;->j(IIIIFI)V
+
+    .line 26
+    iget-object p1, p0, Lj3/l7;->m:Lj3/d;
+
+    .line 27
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 28
+    new-instance v1, Landroid/content/Intent;
+
+    const-string v2, "android.intent.action.DIAL"
+
+    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string v2, "tel:"
+
+    .line 29
+    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    .line 30
+    invoke-virtual {p1, v1}, Lj3/d;->a(Landroid/content/Intent;)Z
+
+    move-result p1
+
+    .line 31
+    iget-object v1, p0, Lj3/l7;->m:Lj3/d;
+
+    .line 32
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 33
+    new-instance v2, Landroid/content/Intent;
+
+    const-string v3, "android.intent.action.VIEW"
+
+    invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string v3, "sms:"
+
+    .line 34
+    invoke-static {v3}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    .line 35
+    invoke-virtual {v1, v2}, Lj3/d;->a(Landroid/content/Intent;)Z
+
+    move-result v1
+
+    .line 36
+    iget-object v2, p0, Lj3/l7;->m:Lj3/d;
+
+    .line 37
+    invoke-virtual {v2}, Lj3/d;->c()Z
+
+    move-result v2
+
+    iget-object v3, p0, Lj3/l7;->m:Lj3/d;
+
+    .line 38
+    invoke-virtual {v3}, Lj3/d;->b()Z
+
+    move-result v3
+
+    .line 39
+    iget-object v4, p0, Lj3/l7;->j:Lj3/gh;
+
+    .line 40
+    :try_start_0
+    new-instance v5, Lorg/json/JSONObject;
+
+    invoke-direct {v5}, Lorg/json/JSONObject;-><init>()V
+
+    const-string v6, "sms"
+
+    .line 41
+    invoke-virtual {v5, v6, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    move-result-object v1
+
+    const-string v5, "tel"
+
+    .line 42
+    invoke-virtual {v1, v5, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    move-result-object p1
+
+    const-string v1, "calendar"
+
+    .line 43
+    invoke-virtual {p1, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    move-result-object p1
+
+    const-string v1, "storePicture"
+
+    .line 44
+    invoke-virtual {p1, v1, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    move-result-object p1
+
+    const-string v1, "inlineVideo"
+
+    .line 45
+    invoke-virtual {p1, v1, p2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    move-result-object p1
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_3
+
+    :catch_0
+    const/4 p1, 0x0
+
+    :goto_3
+    const-string v1, "onDeviceFeaturesReceived"
+
+    .line 46
+    invoke-interface {v4, v1, p1}, Lj3/a4;->i(Ljava/lang/String;Lorg/json/JSONObject;)V
+
+    const/4 p1, 0x2
+
+    new-array p1, p1, [I
+
+    .line 47
+    iget-object v1, p0, Lj3/l7;->j:Lj3/gh;
+
+    invoke-interface {v1, p1}, Lj3/gh;->getLocationOnScreen([I)V
+
+    .line 48
+    sget-object v1, Lj3/t51;->j:Lj3/t51;
+
+    iget-object v1, v1, Lj3/t51;->a:Lj3/bd;
+
+    .line 49
+    iget-object v2, p0, Lj3/l7;->k:Landroid/content/Context;
+
+    aget v0, p1, v0
+
+    invoke-virtual {v1, v2, v0}, Lj3/bd;->d(Landroid/content/Context;I)I
+
+    move-result v0
+
+    .line 50
+    sget-object v1, Lj3/t51;->j:Lj3/t51;
+
+    iget-object v1, v1, Lj3/t51;->a:Lj3/bd;
+
+    .line 51
+    iget-object v2, p0, Lj3/l7;->k:Landroid/content/Context;
+
+    aget p1, p1, p2
+
+    invoke-virtual {v1, v2, p1}, Lj3/bd;->d(Landroid/content/Context;I)I
+
+    move-result p1
+
+    .line 52
+    invoke-virtual {p0, v0, p1}, Lj3/l7;->p(II)V
+
+    .line 53
+    iget-object p1, p0, Lj3/l7;->j:Lj3/gh;
+
+    invoke-interface {p1}, Lj3/gh;->b()Lcom/google/android/gms/internal/ads/zzbbg;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzbbg;->g:Ljava/lang/String;
+
+    .line 54
+    :try_start_1
+    new-instance p2, Lorg/json/JSONObject;
+
+    invoke-direct {p2}, Lorg/json/JSONObject;-><init>()V
+
+    const-string v0, "js"
+
+    invoke-virtual {p2, v0, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    move-result-object p1
+
+    .line 55
+    iget-object p2, p0, Lj3/m7;->h:Ljava/lang/Object;
+
+    check-cast p2, Lj3/gh;
+
+    const-string v0, "onReadyEventReceived"
+
+    invoke-interface {p2, v0, p1}, Lj3/a4;->i(Ljava/lang/String;Lorg/json/JSONObject;)V
+    :try_end_1
+    .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_1
+
     :catch_1
-    move-exception p1
+    return-void
+.end method
+
+.method public final p(II)V
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lj3/l7;->k:Landroid/content/Context;
+
+    instance-of v1, v0, Landroid/app/Activity;
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_0
+
+    .line 2
+    sget-object v1, Lh1/o;->B:Lh1/o;
+
+    iget-object v1, v1, Lh1/o;->c:Lj3/bb;
+
+    .line 3
+    check-cast v0, Landroid/app/Activity;
+
+    invoke-virtual {v1, v0}, Lj3/bb;->A(Landroid/app/Activity;)[I
+
+    move-result-object v0
+
+    aget v2, v0, v2
+
+    .line 4
+    :cond_0
+    iget-object v0, p0, Lj3/l7;->j:Lj3/gh;
+
+    invoke-interface {v0}, Lj3/gh;->c()Lj3/pi;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lj3/l7;->j:Lj3/gh;
+
+    invoke-interface {v0}, Lj3/gh;->c()Lj3/pi;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lj3/pi;->b()Z
+
+    move-result v0
+
+    if-nez v0, :cond_4
+
+    .line 5
+    :cond_1
+    iget-object v0, p0, Lj3/l7;->j:Lj3/gh;
+
+    invoke-interface {v0}, Lj3/gh;->getWidth()I
+
+    move-result v0
+
+    .line 6
+    iget-object v1, p0, Lj3/l7;->j:Lj3/gh;
+
+    invoke-interface {v1}, Lj3/gh;->getHeight()I
+
+    move-result v1
+
+    .line 7
+    sget-object v3, Lj3/n;->I:Lj3/f;
+
+    .line 8
+    sget-object v4, Lj3/t51;->j:Lj3/t51;
+
+    iget-object v4, v4, Lj3/t51;->f:Lj3/l;
+
+    .line 9
+    invoke-virtual {v4, v3}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    .line 10
+    check-cast v3, Ljava/lang/Boolean;
+
+    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    if-nez v0, :cond_2
+
+    .line 11
+    iget-object v3, p0, Lj3/l7;->j:Lj3/gh;
+
+    invoke-interface {v3}, Lj3/gh;->c()Lj3/pi;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_2
+
+    .line 12
+    iget-object v0, p0, Lj3/l7;->j:Lj3/gh;
+
+    invoke-interface {v0}, Lj3/gh;->c()Lj3/pi;
+
+    move-result-object v0
+
+    iget v0, v0, Lj3/pi;->c:I
+
+    :cond_2
+    if-nez v1, :cond_3
+
+    .line 13
+    iget-object v3, p0, Lj3/l7;->j:Lj3/gh;
+
+    invoke-interface {v3}, Lj3/gh;->c()Lj3/pi;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_3
+
+    .line 14
+    iget-object v1, p0, Lj3/l7;->j:Lj3/gh;
+
+    invoke-interface {v1}, Lj3/gh;->c()Lj3/pi;
+
+    move-result-object v1
+
+    iget v1, v1, Lj3/pi;->b:I
 
     .line 15
-    :try_start_5
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzbbe;
+    :cond_3
+    sget-object v3, Lj3/t51;->j:Lj3/t51;
 
-    invoke-direct {v1, p1}, Lcom/google/android/gms/internal/ads/zzbbe;-><init>(Ljava/lang/Throwable;)V
-
-    throw v1
-    :try_end_5
-    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_0
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+    iget-object v3, v3, Lj3/t51;->a:Lj3/bd;
 
     .line 16
-    :goto_1
-    :try_start_6
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzbbe;
+    iget-object v4, p0, Lj3/l7;->k:Landroid/content/Context;
 
-    invoke-direct {v1, p1}, Lcom/google/android/gms/internal/ads/zzbbe;-><init>(Ljava/lang/Throwable;)V
+    invoke-virtual {v3, v4, v0}, Lj3/bd;->d(Landroid/content/Context;I)I
 
-    throw v1
-    :try_end_6
-    .catch Lcom/google/android/gms/internal/ads/zzbbe; {:try_start_6 .. :try_end_6} :catch_2
-    .catchall {:try_start_6 .. :try_end_6} :catchall_0
+    move-result v0
 
-    :catch_2
-    move-exception p1
-
-    :try_start_7
-    const-string v1, "#007 Could not call remote method."
+    iput v0, p0, Lj3/l7;->u:I
 
     .line 17
-    invoke-static {v1, p1}, Lp0/d;->f(Ljava/lang/String;Ljava/lang/Throwable;)V
+    sget-object v0, Lj3/t51;->j:Lj3/t51;
+
+    iget-object v0, v0, Lj3/t51;->a:Lj3/bd;
 
     .line 18
-    :cond_2
-    :goto_2
-    monitor-exit v0
+    iget-object v3, p0, Lj3/l7;->k:Landroid/content/Context;
+
+    invoke-virtual {v0, v3, v1}, Lj3/bd;->d(Landroid/content/Context;I)I
+
+    move-result v0
+
+    iput v0, p0, Lj3/l7;->v:I
+
+    :cond_4
+    sub-int v0, p2, v2
+
+    .line 19
+    iget v1, p0, Lj3/l7;->u:I
+
+    iget v2, p0, Lj3/l7;->v:I
+
+    .line 20
+    :try_start_0
+    new-instance v3, Lorg/json/JSONObject;
+
+    invoke-direct {v3}, Lorg/json/JSONObject;-><init>()V
+
+    const-string v4, "x"
+
+    .line 21
+    invoke-virtual {v3, v4, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v3
+
+    const-string v4, "y"
+
+    invoke-virtual {v3, v4, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v0
+
+    const-string v3, "width"
+
+    invoke-virtual {v0, v3, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v0
+
+    const-string v1, "height"
+
+    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v0
+
+    .line 22
+    iget-object v1, p0, Lj3/m7;->h:Ljava/lang/Object;
+
+    check-cast v1, Lj3/gh;
+
+    const-string v2, "onDefaultPositionReceived"
+
+    invoke-interface {v1, v2, v0}, Lj3/a4;->i(Ljava/lang/String;Lorg/json/JSONObject;)V
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 23
+    :catch_0
+    iget-object v0, p0, Lj3/l7;->j:Lj3/gh;
+
+    invoke-interface {v0}, Lj3/gh;->Q()Lj3/ji;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1, p2}, Lj3/ji;->e(II)V
 
     return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit v0
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_0
-
-    throw p1
 .end method

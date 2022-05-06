@@ -30,7 +30,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lle/c$a;->a:Lle/c$a;
+    sget-object v0, Lle/c$a;->g:Lle/c$a;
 
     sput-object v0, Lle/c;->NO_RECEIVER:Ljava/lang/Object;
 

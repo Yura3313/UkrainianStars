@@ -1,10 +1,14 @@
-.class public final Lie/a;
+.class public Lie/a;
 .super Ljava/lang/Object;
 .source "IOStreams.kt"
 
+# interfaces
+.implements Ly4/p;
+.implements Ly4/o0;
+
 
 # static fields
-.field public static a:Ljava/util/concurrent/ThreadPoolExecutor;
+.field public static g:Lw9/c;
 
 
 # direct methods
@@ -15,83 +19,6 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
-.end method
-
-.method public static a()Ljava/util/concurrent/Executor;
-    .locals 9
-
-    sget-object v0, Lie/a;->a:Ljava/util/concurrent/ThreadPoolExecutor;
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Ljava/util/concurrent/ThreadPoolExecutor;
-
-    sget-object v6, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
-
-    new-instance v7, Ljava/util/concurrent/LinkedBlockingQueue;
-
-    invoke-direct {v7}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
-
-    new-instance v8, Lb5/d;
-
-    invoke-direct {v8}, Lb5/d;-><init>()V
-
-    const/4 v2, 0x1
-
-    const/4 v3, 0x1
-
-    const-wide/16 v4, 0xa
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v8}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
-
-    sput-object v0, Lie/a;->a:Ljava/util/concurrent/ThreadPoolExecutor;
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Ljava/util/concurrent/ThreadPoolExecutor;->allowCoreThreadTimeOut(Z)V
-
-    :cond_0
-    sget-object v0, Lie/a;->a:Ljava/util/concurrent/ThreadPoolExecutor;
-
-    return-object v0
-.end method
-
-.method public static b(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
-
-    if-eqz p0, :cond_0
-
-    return-void
-
-    :cond_0
-    new-instance p0, Ljava/lang/NullPointerException;
-
-    check-cast p1, Ljava/lang/String;
-
-    invoke-direct {p0, p1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-.end method
-
-.method public static c(ZLjava/lang/Object;)V
-    .locals 0
-
-    if-eqz p0, :cond_0
-
-    return-void
-
-    :cond_0
-    new-instance p0, Ljava/lang/IllegalStateException;
-
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p0
 .end method
 
 .method public static d(Ljava/io/InputStream;Ljava/io/OutputStream;II)J
@@ -137,76 +64,198 @@
     return-wide v0
 .end method
 
-.method public static final varargs e([Lbe/g;)Ljava/util/Map;
-    .locals 6
+.method public static e(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
+
+    const/4 v0, 0x0
 
     .line 1
-    new-instance v0, Ljava/util/ArrayList;
+    invoke-static {p0, p1, v0, v0}, Lie/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    return-void
+.end method
 
-    .line 2
-    array-length v1, p0
+.method public static varargs f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
+    .locals 2
 
-    const/4 v2, 0x0
+    const/4 v0, 0x1
 
-    :goto_0
-    if-ge v2, v1, :cond_2
+    new-array v0, v0, [Ljava/lang/Throwable;
 
-    aget-object v3, p0, v2
+    const/4 v1, 0x0
 
-    .line 3
-    iget-object v4, v3, Lbe/g;->b:Ljava/lang/Object;
+    aput-object p2, v0, v1
 
-    if-eqz v4, :cond_0
+    const/4 p2, 0x2
 
-    .line 4
-    iget-object v3, v3, Lbe/g;->a:Ljava/lang/Object;
+    .line 1
+    invoke-static {p2, p0, p1, v0, p3}, Lie/a;->k(ILjava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Ly9/a;)V
 
-    .line 5
-    new-instance v5, Lbe/g;
+    return-void
+.end method
 
-    invoke-direct {v5, v3, v4}, Lbe/g;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public static g(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
 
-    goto :goto_1
+    const/16 v0, 0x8
+
+    const/4 v1, 0x0
+
+    .line 1
+    invoke-static {v0, p0, p1, v1, v1}, Lie/a;->k(ILjava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Ly9/a;)V
+
+    return-void
+.end method
+
+.method public static h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    .locals 2
+
+    const/4 v0, 0x1
+
+    new-array v0, v0, [Ljava/lang/Throwable;
+
+    const/4 v1, 0x0
+
+    aput-object p2, v0, v1
+
+    const/16 p2, 0x8
+
+    const/4 v1, 0x0
+
+    .line 1
+    invoke-static {p2, p0, p1, v0, v1}, Lie/a;->k(ILjava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Ly9/a;)V
+
+    return-void
+.end method
+
+.method public static varargs i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
+    .locals 2
+
+    const/4 v0, 0x1
+
+    new-array v0, v0, [Ljava/lang/Throwable;
+
+    const/4 v1, 0x0
+
+    aput-object p2, v0, v1
+
+    const/16 p2, 0x8
+
+    .line 1
+    invoke-static {p2, p0, p1, v0, p3}, Lie/a;->k(ILjava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Ly9/a;)V
+
+    return-void
+.end method
+
+.method public static varargs j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
+    .locals 2
+
+    const/4 v0, 0x1
+
+    new-array v0, v0, [Ljava/lang/Throwable;
+
+    const/4 v1, 0x0
+
+    aput-object p2, v0, v1
+
+    const/16 p2, 0x10
+
+    .line 1
+    invoke-static {p2, p0, p1, v0, p3}, Lie/a;->k(ILjava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Ly9/a;)V
+
+    return-void
+.end method
+
+.method public static varargs k(ILjava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Ly9/a;)V
+    .locals 2
+
+    .line 1
+    sget-object v0, Lie/a;->g:Lw9/c;
+
+    if-nez v0, :cond_0
+
+    return-void
 
     :cond_0
-    const/4 v5, 0x0
+    const/4 v1, 0x2
 
-    :goto_1
-    if-eqz v5, :cond_1
+    if-eq p0, v1, :cond_4
 
-    .line 6
-    invoke-interface {v0, v5}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    const/4 v1, 0x4
 
-    :cond_1
-    add-int/lit8 v2, v2, 0x1
+    if-eq p0, v1, :cond_3
+
+    const/16 v1, 0x8
+
+    if-eq p0, v1, :cond_2
+
+    const/16 v1, 0x10
+
+    if-eq p0, v1, :cond_1
 
     goto :goto_0
 
-    .line 7
+    .line 2
+    :cond_1
+    invoke-interface {v0, p1, p2, p3, p4}, Lw9/c;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Ly9/a;)V
+
+    goto :goto_0
+
+    .line 3
     :cond_2
-    invoke-static {v0}, Lce/v;->m(Ljava/lang/Iterable;)Ljava/util/Map;
+    invoke-interface {v0, p1, p2, p3, p4}, Lw9/c;->e(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Ly9/a;)V
 
-    move-result-object p0
+    goto :goto_0
 
-    return-object p0
+    .line 4
+    :cond_3
+    invoke-interface {v0, p1, p2, p3, p4}, Lw9/c;->c(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Ly9/a;)V
+
+    goto :goto_0
+
+    .line 5
+    :cond_4
+    invoke-interface {v0, p1, p2, p3, p4}, Lw9/c;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Ly9/a;)V
+
+    :goto_0
+    return-void
 .end method
 
-.method public static final f(Ljava/util/Map;Ljava/util/Map;)Ljava/util/Map;
+
+# virtual methods
+.method public a()Ljava/lang/Object;
     .locals 1
 
-    if-eqz p1, :cond_0
+    .line 1
+    new-instance v0, Lcom/google/android/play/core/assetpacks/r0;
+
+    invoke-direct {v0}, Lcom/google/android/play/core/assetpacks/r0;-><init>()V
+
+    return-object v0
+.end method
+
+.method public b(Ljava/lang/ClassLoader;Ljava/util/Set;)V
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/util/LinkedHashMap;
+    new-instance v0, Lbe/x;
 
-    invoke-direct {v0, p0}, Ljava/util/LinkedHashMap;-><init>(Ljava/util/Map;)V
+    invoke-direct {v0}, Lbe/x;-><init>()V
 
-    invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->putAll(Ljava/util/Map;)V
+    .line 2
+    invoke-static {p1, p2, v0}, Lp5/h;->e(Ljava/lang/ClassLoader;Ljava/util/Set;Ly4/w;)V
 
-    move-object p0, v0
+    return-void
+.end method
 
-    :cond_0
-    return-object p0
+.method public c(Ljava/lang/ClassLoader;Ljava/io/File;Ljava/io/File;Z)Z
+    .locals 1
+
+    const-string v0, "zip"
+
+    invoke-static {p1, p2, p3, p4, v0}, Lp5/h;->f(Ljava/lang/ClassLoader;Ljava/io/File;Ljava/io/File;ZLjava/lang/String;)Z
+
+    move-result p1
+
+    return p1
 .end method

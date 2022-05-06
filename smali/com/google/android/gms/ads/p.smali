@@ -98,7 +98,7 @@
 
     invoke-direct {v3, p1}, Lcom/google/android/gms/internal/ads/zzzz;-><init>(Lcom/google/android/gms/ads/p$a;)V
 
-    invoke-interface {v2, v3}, Lcom/google/android/gms/internal/ads/zzyg;->A2(Lcom/google/android/gms/internal/ads/zzyl;)V
+    invoke-interface {v2, v3}, Lcom/google/android/gms/internal/ads/zzyg;->B2(Lcom/google/android/gms/internal/ads/zzyl;)V
     :try_end_2
     .catch Landroid/os/RemoteException; {:try_start_2 .. :try_end_2} :catch_0
     .catchall {:try_start_2 .. :try_end_2} :catchall_0

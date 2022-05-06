@@ -12,7 +12,7 @@
         "Lte/o;",
         "Lke/l<",
         "Ljava/lang/Throwable;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation

@@ -90,14 +90,14 @@
 
     move-result-object v3
 
-    check-cast v3, Landroidx/lifecycle/w;
+    check-cast v3, Landroidx/lifecycle/x;
 
     .line 8
     invoke-interface {p1}, Landroidx/lifecycle/j;->getLifecycle()Landroidx/lifecycle/f;
 
     move-result-object v4
 
-    invoke-static {v3, v1, v4}, Landroidx/lifecycle/SavedStateHandleController;->b(Landroidx/lifecycle/w;Landroidx/savedstate/a;Landroidx/lifecycle/f;)V
+    invoke-static {v3, v1, v4}, Landroidx/lifecycle/SavedStateHandleController;->b(Landroidx/lifecycle/x;Landroidx/savedstate/a;Landroidx/lifecycle/f;)V
 
     goto :goto_0
 

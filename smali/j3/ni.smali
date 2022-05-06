@@ -1,128 +1,103 @@
-.class public final synthetic Lj3/ni;
-.super Ljava/lang/Object;
+.class public final Lj3/ni;
+.super Landroid/content/MutableContextWrapper;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public a:Landroid/app/Activity;
 
-.field public final b:Ljava/lang/Object;
+.field public b:Landroid/content/Context;
+
+.field public c:Landroid/content/Context;
 
 
 # direct methods
-.method public constructor <init>(Lj3/ki;)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Lj3/ni;->a:I
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lj3/ni;->b:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lj3/zr;Lj3/rq;)V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    const/4 p2, 0x1
-
-    iput p2, p0, Lj3/ni;->a:I
+    .line 1
+    invoke-direct {p0, p1}, Landroid/content/MutableContextWrapper;-><init>(Landroid/content/Context;)V
 
     .line 2
-    iput p2, p0, Lj3/ni;->a:I
-
-    .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    new-instance p2, Ljava/lang/ref/WeakReference;
-
-    invoke-direct {p2, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
-
-    iput-object p2, p0, Lj3/ni;->b:Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lj3/ni;->setBaseContext(Landroid/content/Context;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 3
+.method public final getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    .locals 1
 
-    iget v0, p0, Lj3/ni;->a:I
+    .line 1
+    iget-object v0, p0, Lj3/ni;->c:Landroid/content/Context;
 
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {v0, p1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final setBaseContext(Landroid/content/Context;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lj3/ni;->b:Landroid/content/Context;
+
+    .line 2
+    instance-of v1, p1, Landroid/app/Activity;
+
+    if-eqz v1, :cond_0
+
+    move-object v1, p1
+
+    check-cast v1, Landroid/app/Activity;
 
     goto :goto_0
 
-    .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/ni;->b:Ljava/lang/Object;
+    :cond_0
+    const/4 v1, 0x0
 
-    check-cast v0, Lj3/ki;
-
-    .line 2
-    iget-object v1, v0, Lj3/ki;->d:Lj3/ch;
-
-    invoke-interface {v1}, Lj3/ch;->O()V
+    :goto_0
+    iput-object v1, p0, Lj3/ni;->a:Landroid/app/Activity;
 
     .line 3
-    iget-object v0, v0, Lj3/ki;->d:Lj3/ch;
+    iput-object p1, p0, Lj3/ni;->c:Landroid/content/Context;
 
-    invoke-interface {v0}, Lj3/ch;->r0()Lcom/google/android/gms/ads/internal/overlay/zzc;
+    .line 4
+    invoke-super {p0, v0}, Landroid/content/MutableContextWrapper;->setBaseContext(Landroid/content/Context;)V
 
-    move-result-object v0
+    return-void
+.end method
+
+.method public final startActivity(Landroid/content/Intent;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/ni;->a:Landroid/app/Activity;
 
     if-eqz v0, :cond_0
 
-    .line 4
-    iget-object v1, v0, Lcom/google/android/gms/ads/internal/overlay/zzc;->q:Li1/f;
+    .line 2
+    invoke-virtual {v0, p1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
-    iget-object v2, v0, Lcom/google/android/gms/ads/internal/overlay/zzc;->k:Li1/m;
-
-    invoke-virtual {v1, v2}, Landroid/widget/RelativeLayout;->removeView(Landroid/view/View;)V
-
-    const/4 v1, 0x1
-
-    .line 5
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/ads/internal/overlay/zzc;->B7(Z)V
+    return-void
 
     :cond_0
+    const/high16 v0, 0x10000000
+
+    .line 3
+    invoke-virtual {p1, v0}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+
+    .line 4
+    iget-object v0, p0, Lj3/ni;->b:Landroid/content/Context;
+
+    invoke-virtual {v0, p1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
     return-void
-
-    .line 6
-    :goto_0
-    iget-object v0, p0, Lj3/ni;->b:Ljava/lang/Object;
-
-    check-cast v0, Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lj3/zr;
-
-    if-eqz v0, :cond_1
-
-    .line 7
-    sget-object v1, Lj3/yi;->i:Lj3/vs;
-
-    invoke-virtual {v0, v1}, Lj3/ts;->E0(Lj3/vs;)V
-
-    :cond_1
-    return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

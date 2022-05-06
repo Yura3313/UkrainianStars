@@ -3,94 +3,134 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/kl;
+.implements Lj3/rv0;
 
 
 # instance fields
-.field public final a:Lj3/cg0;
+.field public final synthetic a:I
+
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lj3/cg0;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, Lj3/ol;->a:I
 
-    .line 2
-    iput-object p1, p0, Lj3/ol;->a:Lj3/cg0;
+    iput-object p1, p0, Lj3/ol;->b:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(Ljava/util/Map;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
-
-    const-string v0, "render_in_browser"
+.method public static a(Lj3/vv0;)Lj3/ol;
+    .locals 2
 
     .line 1
-    invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    new-instance v0, Lj3/ol;
 
-    move-result-object p1
+    const/4 v1, 0x0
 
-    check-cast p1, Ljava/lang/String;
+    invoke-direct {v0, p0, v1}, Lj3/ol;-><init>(Ljava/lang/Object;I)V
 
-    .line 2
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    return-object v0
+.end method
 
-    move-result v0
+.method public static b(Lj3/vv0;)Lj3/ol;
+    .locals 2
 
-    if-nez v0, :cond_1
-
-    .line 3
-    :try_start_0
-    iget-object v0, p0, Lj3/ol;->a:Lj3/cg0;
-
-    invoke-static {p1}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
-
-    move-result p1
+    .line 1
+    new-instance v0, Lj3/ol;
 
     const/4 v1, 0x1
 
-    const/4 v2, 0x2
+    invoke-direct {v0, p0, v1}, Lj3/ol;-><init>(Ljava/lang/Object;I)V
 
-    if-eqz p1, :cond_0
+    return-object v0
+.end method
 
-    .line 4
-    invoke-virtual {v0, v1, v2}, Lj3/cg0;->b(II)V
+
+# virtual methods
+.method public final get()Ljava/lang/Object;
+    .locals 2
+
+    iget v0, p0, Lj3/ol;->a:I
+
+    packed-switch v0, :pswitch_data_0
 
     goto :goto_0
 
-    .line 5
-    :cond_0
-    invoke-virtual {v0, v2, v1}, Lj3/cg0;->b(II)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .line 1
+    :pswitch_0
+    iget-object v0, p0, Lj3/ol;->b:Ljava/lang/Object;
 
+    check-cast v0, Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/Set;
+
+    .line 2
+    new-instance v1, Lj3/gr;
+
+    invoke-direct {v1, v0}, Lj3/gr;-><init>(Ljava/util/Set;)V
+
+    return-object v1
+
+    .line 3
+    :pswitch_1
+    iget-object v0, p0, Lj3/ol;->b:Ljava/lang/Object;
+
+    check-cast v0, Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lj3/ua;
+
+    .line 4
+    new-instance v1, Lj3/ll;
+
+    invoke-direct {v1, v0}, Lj3/ll;-><init>(Lj3/ua;)V
+
+    return-object v1
+
+    .line 5
     :goto_0
-    return-void
+    iget-object v0, p0, Lj3/ol;->b:Ljava/lang/Object;
+
+    check-cast v0, Lj3/pu;
 
     .line 6
-    :catch_0
-    new-instance p1, Ljava/lang/IllegalStateException;
+    iget-object v0, v0, Lj3/pu;->b:Ljava/lang/Object;
 
-    const-string v0, "Invalid render_in_browser state"
+    check-cast v0, Lj3/gh;
 
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    if-nez v0, :cond_0
 
-    throw p1
+    const/4 v0, 0x0
 
-    :cond_1
-    return-void
+    goto :goto_1
+
+    :cond_0
+    invoke-interface {v0}, Lj3/gh;->getWebView()Landroid/webkit/WebView;
+
+    move-result-object v0
+
+    :goto_1
+    return-object v0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -88,7 +88,7 @@
     .line 2
     iget-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$f;->E:Landroidx/viewpager2/widget/ViewPager2;
 
-    iget-object p1, p1, Landroidx/viewpager2/widget/ViewPager2;->y:Landroidx/viewpager2/widget/ViewPager2$d;
+    iget-object p1, p1, Landroidx/viewpager2/widget/ViewPager2;->z:Landroidx/viewpager2/widget/ViewPager2$d;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -101,7 +101,7 @@
     .line 1
     iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$f;->E:Landroidx/viewpager2/widget/ViewPager2;
 
-    iget-object v0, v0, Landroidx/viewpager2/widget/ViewPager2;->y:Landroidx/viewpager2/widget/ViewPager2$d;
+    iget-object v0, v0, Landroidx/viewpager2/widget/ViewPager2;->z:Landroidx/viewpager2/widget/ViewPager2$d;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 

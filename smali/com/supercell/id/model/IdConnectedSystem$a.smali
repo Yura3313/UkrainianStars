@@ -117,7 +117,7 @@
 
     .line 8
     :cond_2
-    invoke-static {}, Ly4/x;->j()V
+    invoke-static {}, Ls3/b;->g()V
 
     throw v0
 
@@ -125,7 +125,7 @@
     const-string p1, "source"
 
     .line 9
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

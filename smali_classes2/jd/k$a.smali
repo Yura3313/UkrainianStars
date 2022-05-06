@@ -1,6 +1,6 @@
 .class public final Ljd/k$a;
 .super Lle/j;
-.source "MessagesTabFriendsFragment.kt"
+.source "OnboardingNicknamePageFragment.kt"
 
 # interfaces
 .implements Lke/p;
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljd/k;->a(Landroid/widget/TextView;Ltc/x;Landroid/graphics/drawable/BitmapDrawable;)V
+    value = Ljd/k;->Z0()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,27 +20,37 @@
     value = {
         "Lle/j;",
         "Lke/p<",
-        "Landroid/widget/TextView;",
+        "Ljd/k;",
         "Ljava/lang/String;",
-        "Landroid/text/SpannableStringBuilder;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic a:Landroid/graphics/drawable/BitmapDrawable;
+# static fields
+.field public static final g:Ljd/k$a;
 
 
 # direct methods
-.method public constructor <init>(Landroid/graphics/drawable/BitmapDrawable;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Ljd/k$a;->a:Landroid/graphics/drawable/BitmapDrawable;
+    new-instance v0, Ljd/k$a;
 
-    const/4 p1, 0x2
+    invoke-direct {v0}, Ljd/k$a;-><init>()V
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    sput-object v0, Ljd/k$a;->g:Ljd/k$a;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
 
     return-void
 .end method
@@ -50,39 +60,69 @@
 .method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    check-cast p1, Landroid/widget/TextView;
+    .line 1
+    check-cast p1, Ljd/k;
 
     check-cast p2, Ljava/lang/String;
 
     const/4 v0, 0x0
 
-    if-eqz p1, :cond_1
+    if-eqz p1, :cond_3
 
-    if-eqz p2, :cond_0
+    if-eqz p2, :cond_2
 
-    .line 1
-    new-instance v0, Ljd/j;
+    .line 2
+    iget-object v0, p1, Ljd/k;->d0:Ljava/lang/String;
 
-    invoke-direct {v0, p0, p1}, Ljd/j;-><init>(Ljd/k$a;Landroid/widget/TextView;)V
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
 
-    invoke-static {p2, v0}, Lqd/e0;->c(Ljava/lang/CharSequence;Lke/p;)Landroid/text/SpannableStringBuilder;
+    move-result v0
 
-    move-result-object p1
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-eqz v0, :cond_1
+
+    .line 4
+    sget v0, Lcom/supercell/id/R$id;->nickname_edit_text:I
+
+    invoke-virtual {p1, v0}, Ljd/k;->e1(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/EditText;
+
+    invoke-virtual {v0, p2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
+
+    .line 5
+    invoke-virtual {p1}, Ljd/k;->g1()V
+
+    .line 6
+    :cond_1
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
-    :cond_0
-    const-string p1, "value"
+    :cond_2
+    const-string p1, "name"
 
-    .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    .line 7
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
-    :cond_1
-    const-string p1, "view"
+    :cond_3
+    const-string p1, "$receiver"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

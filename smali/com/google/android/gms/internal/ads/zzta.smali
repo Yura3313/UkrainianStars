@@ -16,21 +16,21 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final b:J
-
-.field public final h:Ljava/lang/String;
+.field public final h:J
 
 .field public final i:Ljava/lang/String;
 
 .field public final j:Ljava/lang/String;
 
-.field public final k:Landroid/os/Bundle;
+.field public final k:Ljava/lang/String;
 
-.field public final l:Z
+.field public final l:Landroid/os/Bundle;
 
-.field public m:J
+.field public final m:Z
+
+.field public n:J
 
 
 # direct methods
@@ -38,9 +38,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lj3/o31;
+    new-instance v0, Lj3/h41;
 
-    invoke-direct {v0}, Lj3/o31;-><init>()V
+    invoke-direct {v0}, Lj3/h41;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzta;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -54,10 +54,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzta;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzta;->g:Ljava/lang/String;
 
     .line 3
-    iput-wide p2, p0, Lcom/google/android/gms/internal/ads/zzta;->b:J
+    iput-wide p2, p0, Lcom/google/android/gms/internal/ads/zzta;->h:J
 
     const-string p1, ""
 
@@ -70,7 +70,7 @@
 
     .line 4
     :goto_0
-    iput-object p4, p0, Lcom/google/android/gms/internal/ads/zzta;->h:Ljava/lang/String;
+    iput-object p4, p0, Lcom/google/android/gms/internal/ads/zzta;->i:Ljava/lang/String;
 
     if-eqz p5, :cond_1
 
@@ -81,7 +81,7 @@
 
     .line 5
     :goto_1
-    iput-object p5, p0, Lcom/google/android/gms/internal/ads/zzta;->i:Ljava/lang/String;
+    iput-object p5, p0, Lcom/google/android/gms/internal/ads/zzta;->j:Ljava/lang/String;
 
     if-eqz p6, :cond_2
 
@@ -92,7 +92,7 @@
 
     .line 6
     :goto_2
-    iput-object p6, p0, Lcom/google/android/gms/internal/ads/zzta;->j:Ljava/lang/String;
+    iput-object p6, p0, Lcom/google/android/gms/internal/ads/zzta;->k:Ljava/lang/String;
 
     if-eqz p7, :cond_3
 
@@ -105,18 +105,18 @@
     invoke-direct {p7}, Landroid/os/Bundle;-><init>()V
 
     :goto_3
-    iput-object p7, p0, Lcom/google/android/gms/internal/ads/zzta;->k:Landroid/os/Bundle;
+    iput-object p7, p0, Lcom/google/android/gms/internal/ads/zzta;->l:Landroid/os/Bundle;
 
     .line 8
-    iput-boolean p8, p0, Lcom/google/android/gms/internal/ads/zzta;->l:Z
+    iput-boolean p8, p0, Lcom/google/android/gms/internal/ads/zzta;->m:Z
 
     .line 9
-    iput-wide p9, p0, Lcom/google/android/gms/internal/ads/zzta;->m:J
+    iput-wide p9, p0, Lcom/google/android/gms/internal/ads/zzta;->n:J
 
     return-void
 .end method
 
-.method public static x2(Landroid/net/Uri;)Lcom/google/android/gms/internal/ads/zzta;
+.method public static z2(Landroid/net/Uri;)Lcom/google/android/gms/internal/ads/zzta;
     .locals 14
 
     const/4 v0, 0x0
@@ -235,7 +235,7 @@
     .line 13
     sget-object v1, Lh1/o;->B:Lh1/o;
 
-    iget-object v1, v1, Lh1/o;->e:Lj3/ab;
+    iget-object v1, v1, Lh1/o;->e:Lj3/eb;
 
     .line 14
     invoke-virtual {p0}, Landroid/net/Uri;->getQueryParameterNames()Ljava/util/Set;
@@ -321,7 +321,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzta;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzta;->g:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -330,7 +330,7 @@
     const/4 v0, 0x3
 
     .line 3
-    iget-wide v3, p0, Lcom/google/android/gms/internal/ads/zzta;->b:J
+    iget-wide v3, p0, Lcom/google/android/gms/internal/ads/zzta;->h:J
 
     const/16 v1, 0x8
 
@@ -341,7 +341,7 @@
     invoke-virtual {p1, v3, v4}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 6
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzta;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzta;->i:Ljava/lang/String;
 
     const/4 v3, 0x4
 
@@ -350,26 +350,26 @@
     const/4 v0, 0x5
 
     .line 7
-    iget-object v4, p0, Lcom/google/android/gms/internal/ads/zzta;->i:Ljava/lang/String;
+    iget-object v4, p0, Lcom/google/android/gms/internal/ads/zzta;->j:Ljava/lang/String;
 
     invoke-static {p1, v0, v4, v2}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     const/4 v0, 0x6
 
     .line 8
-    iget-object v4, p0, Lcom/google/android/gms/internal/ads/zzta;->j:Ljava/lang/String;
+    iget-object v4, p0, Lcom/google/android/gms/internal/ads/zzta;->k:Ljava/lang/String;
 
     invoke-static {p1, v0, v4, v2}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     const/4 v0, 0x7
 
     .line 9
-    iget-object v4, p0, Lcom/google/android/gms/internal/ads/zzta;->k:Landroid/os/Bundle;
+    iget-object v4, p0, Lcom/google/android/gms/internal/ads/zzta;->l:Landroid/os/Bundle;
 
     invoke-static {p1, v0, v4, v2}, Ld2/b;->d(Landroid/os/Parcel;ILandroid/os/Bundle;Z)V
 
     .line 10
-    iget-boolean v0, p0, Lcom/google/android/gms/internal/ads/zzta;->l:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/ads/zzta;->m:Z
 
     .line 11
     invoke-static {p1, v1, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -380,7 +380,7 @@
     const/16 v0, 0x9
 
     .line 13
-    iget-wide v2, p0, Lcom/google/android/gms/internal/ads/zzta;->m:J
+    iget-wide v2, p0, Lcom/google/android/gms/internal/ads/zzta;->n:J
 
     .line 14
     invoke-static {p1, v0, v1}, Ld2/b;->s(Landroid/os/Parcel;II)V

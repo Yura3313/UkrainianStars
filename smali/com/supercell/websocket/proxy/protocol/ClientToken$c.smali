@@ -16,12 +16,6 @@
     name = "c"
 .end annotation
 
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/supercell/websocket/proxy/protocol/ClientToken$c$b;
-    }
-.end annotation
-
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Enum<",
@@ -33,75 +27,24 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
+.field public static final enum h:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
 
-.field public static final enum ANDROID:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
+.field public static final enum i:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
 
-.field public static final ANDROID_VALUE:I = 0x1
+.field public static final enum j:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
 
-.field public static final enum IOS:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
+.field public static final enum k:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
 
-.field public static final IOS_VALUE:I = 0x2
-
-.field public static final enum UNKNOWN:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
-
-.field public static final UNKNOWN_VALUE:I
-
-.field public static final enum UNRECOGNIZED:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
-
-.field private static final internalValueMap:Lcom/google/protobuf/a0$d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/google/protobuf/a0$d<",
-            "Lcom/supercell/websocket/proxy/protocol/ClientToken$c;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final synthetic l:[Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
 
 
 # instance fields
-.field private final value:I
+.field public final g:I
 
 
 # direct methods
-.method private static synthetic $values()[Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
-    .locals 3
-
-    const/4 v0, 0x4
-
-    new-array v0, v0, [Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
-
-    .line 1
-    sget-object v1, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->UNKNOWN:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->ANDROID:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->IOS:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
-
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->UNRECOGNIZED:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
-
-    const/4 v2, 0x3
-
-    aput-object v1, v0, v2
-
-    return-object v0
-.end method
-
 .method public static constructor <clinit>()V
-    .locals 4
+    .locals 10
 
     .line 1
     new-instance v0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
@@ -112,61 +55,62 @@
 
     invoke-direct {v0, v1, v2, v2}, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->UNKNOWN:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
+    sput-object v0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->h:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
 
     .line 2
-    new-instance v0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
+    new-instance v1, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
 
-    const-string v1, "ANDROID"
+    const-string v3, "ANDROID"
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v2, v2}, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v3, v4, v4}, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->ANDROID:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
+    sput-object v1, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->i:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
 
     .line 3
-    new-instance v0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
+    new-instance v3, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
 
-    const-string v1, "IOS"
+    const-string v5, "IOS"
 
-    const/4 v2, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v2, v2}, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v3, v5, v6, v6}, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->IOS:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
+    sput-object v3, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->j:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
 
     .line 4
-    new-instance v0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
+    new-instance v5, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
 
-    const-string v1, "UNRECOGNIZED"
+    const-string v7, "UNRECOGNIZED"
 
-    const/4 v2, 0x3
+    const/4 v8, 0x3
 
-    const/4 v3, -0x1
+    const/4 v9, -0x1
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v5, v7, v8, v9}, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->UNRECOGNIZED:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
+    sput-object v5, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->k:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
+
+    const/4 v7, 0x4
+
+    new-array v7, v7, [Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
+
+    aput-object v0, v7, v2
+
+    aput-object v1, v7, v4
+
+    aput-object v3, v7, v6
+
+    aput-object v5, v7, v8
 
     .line 5
-    invoke-static {}, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->$values()[Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->$VALUES:[Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
-
-    .line 6
-    new-instance v0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c$a;
-
-    invoke-direct {v0}, Lcom/supercell/websocket/proxy/protocol/ClientToken$c$a;-><init>()V
-
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->internalValueMap:Lcom/google/protobuf/a0$d;
+    sput-object v7, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->l:[Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;II)V
+.method public constructor <init>(Ljava/lang/String;II)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -178,12 +122,12 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput p3, p0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->value:I
+    iput p3, p0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->g:I
 
     return-void
 .end method
 
-.method public static forNumber(I)Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
+.method public static a(I)Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
     .locals 1
 
     if-eqz p0, :cond_2
@@ -202,58 +146,19 @@
 
     .line 1
     :cond_0
-    sget-object p0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->IOS:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
+    sget-object p0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->j:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
 
     return-object p0
 
     .line 2
     :cond_1
-    sget-object p0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->ANDROID:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
+    sget-object p0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->i:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
 
     return-object p0
 
     .line 3
     :cond_2
-    sget-object p0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->UNKNOWN:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
-
-    return-object p0
-.end method
-
-.method public static internalGetValueMap()Lcom/google/protobuf/a0$d;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lcom/google/protobuf/a0$d<",
-            "Lcom/supercell/websocket/proxy/protocol/ClientToken$c;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->internalValueMap:Lcom/google/protobuf/a0$d;
-
-    return-object v0
-.end method
-
-.method public static internalGetVerifier()Lcom/google/protobuf/a0$e;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c$b;->a:Lcom/google/protobuf/a0$e;
-
-    return-object v0
-.end method
-
-.method public static valueOf(I)Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
-    .locals 0
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    .line 2
-    invoke-static {p0}, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->forNumber(I)Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
-
-    move-result-object p0
+    sget-object p0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->h:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
 
     return-object p0
 .end method
@@ -277,7 +182,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->$VALUES:[Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->l:[Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
 
     invoke-virtual {v0}, [Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->clone()Ljava/lang/Object;
 
@@ -290,16 +195,16 @@
 
 
 # virtual methods
-.method public final getNumber()I
+.method public final b()I
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->UNRECOGNIZED:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->k:Lcom/supercell/websocket/proxy/protocol/ClientToken$c;
 
     if-eq p0, v0, :cond_0
 
     .line 2
-    iget v0, p0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->value:I
+    iget v0, p0, Lcom/supercell/websocket/proxy/protocol/ClientToken$c;->g:I
 
     return v0
 

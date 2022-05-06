@@ -433,7 +433,7 @@
     iget-object v1, p0, Lcom/google/android/material/textfield/h;->h:Lcom/google/android/material/textfield/TextInputLayout$g;
 
     .line 24
-    iget-object v0, v0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Ljava/util/LinkedHashSet;
+    iget-object v0, v0, Lcom/google/android/material/textfield/TextInputLayout;->l0:Ljava/util/LinkedHashSet;
 
     invoke-virtual {v0, v1}, Ljava/util/LinkedHashSet;->add(Ljava/lang/Object;)Z
 
@@ -450,7 +450,7 @@
     move-result-object v1
 
     .line 27
-    sget-object v2, Lb4/a;->a:Landroid/animation/TimeInterpolator;
+    sget-object v2, Lc4/a;->a:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {v1, v2}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -511,7 +511,7 @@
     .line 38
     iget-object v1, p0, Lcom/google/android/material/textfield/m;->c:Lcom/google/android/material/internal/CheckableImageButton;
 
-    invoke-static {v1, v0}, Lf0/s;->D(Landroid/view/View;I)V
+    invoke-static {v1, v0}, Lf0/r;->D(Landroid/view/View;I)V
 
     .line 39
     iget-object v0, p0, Lcom/google/android/material/textfield/m;->b:Landroid/content/Context;
@@ -589,7 +589,7 @@
     iget-object p2, p0, Lcom/google/android/material/textfield/m;->b:Landroid/content/Context;
 
     .line 8
-    sget-object v0, Lr4/g;->B:Landroid/graphics/Paint;
+    sget-object v0, Lr4/g;->C:Landroid/graphics/Paint;
 
     .line 9
     sget v0, Lcom/google/android/material/R$attr;->colorSurface:I
@@ -612,13 +612,13 @@
     invoke-direct {v1}, Lr4/g;-><init>()V
 
     .line 13
-    iget-object v2, v1, Lr4/g;->a:Lr4/g$b;
+    iget-object v2, v1, Lr4/g;->g:Lr4/g$b;
 
-    new-instance v3, Lj4/a;
+    new-instance v3, Lk4/a;
 
-    invoke-direct {v3, p2}, Lj4/a;-><init>(Landroid/content/Context;)V
+    invoke-direct {v3, p2}, Lk4/a;-><init>(Landroid/content/Context;)V
 
-    iput-object v3, v2, Lr4/g$b;->b:Lj4/a;
+    iput-object v3, v2, Lr4/g$b;->b:Lk4/a;
 
     .line 14
     invoke-virtual {v1}, Lr4/g;->C()V
@@ -631,7 +631,7 @@
     invoke-virtual {v1, p2}, Lr4/g;->q(Landroid/content/res/ColorStateList;)V
 
     .line 16
-    iget-object p2, v1, Lr4/g;->a:Lr4/g$b;
+    iget-object p2, v1, Lr4/g;->g:Lr4/g$b;
 
     iget v0, p2, Lr4/g$b;->o:F
 
@@ -647,7 +647,7 @@
 
     .line 19
     :cond_0
-    iget-object p2, v1, Lr4/g;->a:Lr4/g$b;
+    iget-object p2, v1, Lr4/g;->g:Lr4/g$b;
 
     iput-object p1, p2, Lr4/g$b;->a:Lr4/k;
 
@@ -655,7 +655,7 @@
     invoke-virtual {v1}, Lr4/g;->invalidateSelf()V
 
     .line 21
-    iget-object p1, v1, Lr4/g;->a:Lr4/g$b;
+    iget-object p1, v1, Lr4/g;->g:Lr4/g$b;
 
     iget-object p2, p1, Lr4/g$b;->i:Landroid/graphics/Rect;
 
@@ -670,7 +670,7 @@
 
     .line 23
     :cond_1
-    iget-object p1, v1, Lr4/g;->a:Lr4/g$b;
+    iget-object p1, v1, Lr4/g;->g:Lr4/g$b;
 
     iget-object p1, p1, Lr4/g$b;->i:Landroid/graphics/Rect;
 

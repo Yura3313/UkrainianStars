@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic a:Landroid/location/Location;
+.field public final synthetic g:Landroid/location/Location;
 
-.field public final synthetic b:Lcom/supercell/titan/LocationService;
+.field public final synthetic h:Lcom/supercell/titan/LocationService;
 
 
 # direct methods
@@ -28,9 +28,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/titan/LocationService$d;->b:Lcom/supercell/titan/LocationService;
+    iput-object p1, p0, Lcom/supercell/titan/LocationService$d;->h:Lcom/supercell/titan/LocationService;
 
-    iput-object p2, p0, Lcom/supercell/titan/LocationService$d;->a:Landroid/location/Location;
+    iput-object p2, p0, Lcom/supercell/titan/LocationService$d;->g:Landroid/location/Location;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,19 +43,19 @@
     .locals 7
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/LocationService$d;->b:Lcom/supercell/titan/LocationService;
+    iget-object v0, p0, Lcom/supercell/titan/LocationService$d;->h:Lcom/supercell/titan/LocationService;
 
     .line 2
     iget-wide v1, v0, Lcom/supercell/titan/LocationService;->d:J
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/titan/LocationService$d;->a:Landroid/location/Location;
+    iget-object v0, p0, Lcom/supercell/titan/LocationService$d;->g:Landroid/location/Location;
 
     invoke-virtual {v0}, Landroid/location/Location;->getLatitude()D
 
     move-result-wide v3
 
-    iget-object v0, p0, Lcom/supercell/titan/LocationService$d;->a:Landroid/location/Location;
+    iget-object v0, p0, Lcom/supercell/titan/LocationService$d;->g:Landroid/location/Location;
 
     invoke-virtual {v0}, Landroid/location/Location;->getLongitude()D
 

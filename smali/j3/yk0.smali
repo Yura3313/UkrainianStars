@@ -1,85 +1,71 @@
-.class public final Lj3/yk0;
-.super Lj3/wk0;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
+.class public abstract Lj3/yk0;
+.super Lj3/zk0;
+.source "com.google.android.gms:play-services-gass@@19.3.0"
+
+# interfaces
+.implements Ljava/util/ListIterator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<I:",
-        "Ljava/lang/Object;",
-        "O:",
+        "<E:",
         "Ljava/lang/Object;",
         ">",
-        "Lj3/wk0<",
-        "TI;TO;",
-        "Lj3/mj0<",
-        "-TI;+TO;>;TO;>;"
+        "Lj3/zk0<",
+        "TE;>;",
+        "Ljava/util/ListIterator<",
+        "TE;>;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(Lj3/yl0;Lj3/mj0;)V
+.method public constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/yl0<",
-            "+TI;>;",
-            "Lj3/mj0<",
-            "-TI;+TO;>;)V"
-        }
-    .end annotation
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lj3/wk0;-><init>(Lj3/yl0;Ljava/lang/Object;)V
+    invoke-direct {p0}, Lj3/zk0;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final w(Ljava/lang/Object;)V
+.method public final add(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(TO;)V"
+            "(TE;)V"
         }
     .end annotation
 
-    .line 1
-    invoke-virtual {p0, p1}, Lj3/uk0;->i(Ljava/lang/Object;)Z
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
-    return-void
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p1
 .end method
 
-.method public final synthetic x(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final set(Ljava/lang/Object;)V
     .locals 0
-    .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
-    .annotation system Ldalvik/annotation/Throws;
+    .annotation system Ldalvik/annotation/Signature;
         value = {
-            Ljava/lang/Exception;
+            "(TE;)V"
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
     .line 1
-    check-cast p1, Lj3/mj0;
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    .line 2
-    invoke-interface {p1, p2}, Lj3/mj0;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    move-result-object p1
-
-    return-object p1
+    throw p1
 .end method

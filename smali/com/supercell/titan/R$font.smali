@@ -14,9 +14,13 @@
 
 
 # static fields
-.field public static final supercell_text_android_bd:I = 0x7f090000
+.field public static final supercell_text_android_a_rg:I = 0x7f090000
 
-.field public static final supercell_text_android_md:I = 0x7f090001
+.field public static final supercell_text_android_bd:I = 0x7f090001
+
+.field public static final supercell_text_android_md:I = 0x7f090002
+
+.field public static final supercellheadline_heavy:I = 0x7f090003
 
 
 # direct methods

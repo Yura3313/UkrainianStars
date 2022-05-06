@@ -23,5 +23,5 @@
 .method public abstract getMetadata()Lcom/google/android/gms/games/snapshot/SnapshotMetadata;
 .end method
 
-.method public abstract s2()Lcom/google/android/gms/games/snapshot/SnapshotContents;
+.method public abstract u2()Lcom/google/android/gms/games/snapshot/SnapshotContents;
 .end method

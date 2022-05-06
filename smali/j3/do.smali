@@ -3,156 +3,178 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
+.implements Lj3/ur;
+.implements Lj3/c31;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final g:Lj3/lg0;
 
-.field public final b:Lj3/fv0;
+.field public final h:Lj3/gr;
+
+.field public final i:Lj3/wr;
+
+.field public final j:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+.field public final k:Ljava/util/concurrent/atomic/AtomicBoolean;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lj3/fv0;I)V
-    .locals 0
+.method public constructor <init>(Lj3/lg0;Lj3/gr;Lj3/wr;)V
+    .locals 1
 
     .line 1
-    iput p2, p0, Lj3/do;->a:I
-
-    iput-object p1, p0, Lj3/do;->b:Lj3/fv0;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
+
+    iput-object v0, p0, Lj3/do;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 3
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
+
+    iput-object v0, p0, Lj3/do;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 4
+    iput-object p1, p0, Lj3/do;->g:Lj3/lg0;
+
+    .line 5
+    iput-object p2, p0, Lj3/do;->h:Lj3/gr;
+
+    .line 6
+    iput-object p3, p0, Lj3/do;->i:Lj3/wr;
 
     return-void
 .end method
 
-.method public static a(Lj3/fv0;)Lj3/do;
-    .locals 2
+
+# virtual methods
+.method public final declared-synchronized G()V
+    .locals 3
+
+    monitor-enter p0
 
     .line 1
-    new-instance v0, Lj3/do;
+    :try_start_0
+    iget-object v0, p0, Lj3/do;->g:Lj3/lg0;
+
+    iget v0, v0, Lj3/lg0;->e:I
 
     const/4 v1, 0x1
 
-    invoke-direct {v0, p0, v1}, Lj3/do;-><init>(Lj3/fv0;I)V
+    if-eq v0, v1, :cond_0
 
-    return-object v0
+    .line 2
+    iget-object v0, p0, Lj3/do;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v2, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    iget-object v0, p0, Lj3/do;->h:Lj3/gr;
+
+    invoke-virtual {v0}, Lj3/gr;->J()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 4
+    :cond_0
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
 .end method
 
-.method public static b(Lj3/fv0;)Lj3/do;
-    .locals 2
+.method public final K(Lj3/z21;)V
+    .locals 3
 
     .line 1
-    new-instance v0, Lj3/do;
+    iget-object v0, p0, Lj3/do;->g:Lj3/lg0;
 
-    const/4 v1, 0x2
+    iget v0, v0, Lj3/lg0;->e:I
 
-    invoke-direct {v0, p0, v1}, Lj3/do;-><init>(Lj3/fv0;I)V
+    const/4 v1, 0x0
 
-    return-object v0
-.end method
+    const/4 v2, 0x1
 
+    if-ne v0, v2, :cond_0
 
-# virtual methods
-.method public final synthetic get()Ljava/lang/Object;
-    .locals 2
+    iget-boolean v0, p1, Lj3/z21;->j:Z
 
-    iget v0, p0, Lj3/do;->a:I
+    if-eqz v0, :cond_0
 
-    packed-switch v0, :pswitch_data_0
+    .line 2
+    iget-object v0, p0, Lj3/do;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    iget-object v0, p0, Lj3/do;->h:Lj3/gr;
+
+    invoke-virtual {v0}, Lj3/gr;->J()V
+
+    .line 4
+    :cond_0
+    iget-boolean p1, p1, Lj3/z21;->j:Z
+
+    if-eqz p1, :cond_1
+
+    .line 5
+    iget-object p1, p0, Lj3/do;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {p1, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    .line 6
+    iget-object p1, p0, Lj3/do;->i:Lj3/wr;
+
+    .line 7
+    monitor-enter p1
+
+    .line 8
+    :try_start_0
+    sget-object v0, Lj3/aq0;->g:Lj3/ct;
+
+    invoke-virtual {p1, v0}, Lj3/at;->E0(Lj3/ct;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 9
+    monitor-exit p1
 
     goto :goto_0
 
-    .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/do;->b:Lj3/fv0;
+    :catchall_0
+    move-exception v0
 
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
+    monitor-exit p1
 
-    move-result-object v0
+    throw v0
 
-    check-cast v0, Ljava/util/Set;
-
-    .line 2
-    new-instance v1, Lj3/zt;
-
-    invoke-direct {v1, v0}, Lj3/zt;-><init>(Ljava/util/Set;)V
-
-    return-object v1
-
-    .line 3
-    :pswitch_1
-    iget-object v0, p0, Lj3/do;->b:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/Set;
-
-    .line 4
-    new-instance v1, Lj3/ls;
-
-    invoke-direct {v1, v0}, Lj3/ls;-><init>(Ljava/util/Set;)V
-
-    return-object v1
-
-    .line 5
-    :pswitch_2
-    iget-object v0, p0, Lj3/do;->b:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/Set;
-
-    .line 6
-    new-instance v1, Lj3/sq;
-
-    invoke-direct {v1, v0}, Lj3/sq;-><init>(Ljava/util/Set;)V
-
-    return-object v1
-
-    .line 7
-    :pswitch_3
-    iget-object v0, p0, Lj3/do;->b:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lj3/l9;
-
-    .line 8
-    new-instance v1, Lj3/eo;
-
-    invoke-direct {v1, v0}, Lj3/eo;-><init>(Lj3/l9;)V
-
-    return-object v1
-
-    .line 9
+    :cond_1
     :goto_0
-    iget-object v0, p0, Lj3/do;->b:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/concurrent/Executor;
-
-    .line 10
-    new-instance v1, Lj3/r70;
-
-    invoke-direct {v1, v0}, Lj3/r70;-><init>(Ljava/util/concurrent/Executor;)V
-
-    return-object v1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

@@ -14,11 +14,11 @@
 
 .field public final e:Ljava/lang/String;
 
-.field public final f:Le7/b;
+.field public final f:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Le7/b;)V
+.method public constructor <init>(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 0
 
     .line 1
@@ -40,7 +40,7 @@
     iput-object p5, p0, Lg7/a;->e:Ljava/lang/String;
 
     .line 7
-    iput-object p6, p0, Lg7/a;->f:Le7/b;
+    iput p6, p0, Lg7/a;->f:I
 
     return-void
 .end method

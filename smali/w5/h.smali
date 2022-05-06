@@ -122,7 +122,7 @@
     if-eqz v0, :cond_1
 
     .line 4
-    invoke-virtual {v0, p1}, Lcom/google/firebase/iid/zzl;->j(Landroid/os/Message;)V
+    invoke-virtual {v0, p1}, Lcom/google/firebase/iid/zzl;->i(Landroid/os/Message;)V
 
     return-void
 

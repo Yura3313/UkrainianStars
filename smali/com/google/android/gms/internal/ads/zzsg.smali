@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method public final w7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method public final x7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -87,10 +87,10 @@
     check-cast p2, Lcom/google/android/gms/internal/ads/zzbne;
 
     .line 7
-    iget-object p2, p2, Lcom/google/android/gms/internal/ads/zzbne;->a:Lj3/tm;
+    iget-object p2, p2, Lcom/google/android/gms/internal/ads/zzbne;->g:Lj3/wm;
 
     .line 8
-    iput-object p1, p2, Lj3/tm;->m:Lcom/google/android/gms/internal/ads/zzsj;
+    iput-object p1, p2, Lj3/wm;->m:Lcom/google/android/gms/internal/ads/zzsj;
 
     .line 9
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
@@ -104,13 +104,13 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzbne;
 
     .line 11
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzbne;->b:Lcom/google/android/gms/internal/ads/zzwu;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzbne;->h:Lcom/google/android/gms/internal/ads/zzwu;
 
     .line 12
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
     .line 13
-    invoke-static {p3, p1}, Lj3/wv0;->b(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    invoke-static {p3, p1}, Lj3/mw0;->b(Landroid/os/Parcel;Landroid/os/IInterface;)V
 
     :goto_1
     const/4 p1, 0x1

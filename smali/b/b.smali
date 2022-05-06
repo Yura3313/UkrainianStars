@@ -108,7 +108,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v0, v6, v8}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v8}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     if-nez v7, :cond_2
 

@@ -3,159 +3,211 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# static fields
-.field public static final d:Lj3/d01;
-
-
 # instance fields
-.field public final a:I
+.field public final a:[Lj3/hy0;
 
-.field public final b:[Lj3/e01;
+.field public final b:Lj3/jy0;
 
-.field public c:I
+.field public c:Lj3/hy0;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Lj3/d01;
-
-    const/4 v1, 0x0
-
-    new-array v1, v1, [Lj3/e01;
-
-    invoke-direct {v0, v1}, Lj3/d01;-><init>([Lj3/e01;)V
-
-    sput-object v0, Lj3/d01;->d:Lj3/d01;
-
-    return-void
-.end method
-
-.method public varargs constructor <init>([Lj3/e01;)V
+.method public constructor <init>([Lj3/hy0;Lj3/jy0;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj3/d01;->b:[Lj3/e01;
+    iput-object p1, p0, Lj3/d01;->a:[Lj3/hy0;
 
     .line 3
-    array-length p1, p1
-
-    iput p1, p0, Lj3/d01;->a:I
+    iput-object p2, p0, Lj3/d01;->b:Lj3/jy0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lj3/e01;)I
-    .locals 2
-
-    const/4 v0, 0x0
+.method public final a(Lj3/ky0;Landroid/net/Uri;)Lj3/hy0;
+    .locals 6
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Ljava/lang/InterruptedException;
+        }
+    .end annotation
 
     .line 1
-    :goto_0
-    iget v1, p0, Lj3/d01;->a:I
+    iget-object v0, p0, Lj3/d01;->c:Lj3/hy0;
 
-    if-ge v0, v1, :cond_1
+    if-eqz v0, :cond_0
+
+    return-object v0
 
     .line 2
-    iget-object v1, p0, Lj3/d01;->b:[Lj3/e01;
-
-    aget-object v1, v1, v0
-
-    if-ne v1, p1, :cond_0
-
-    return v0
-
     :cond_0
-    add-int/lit8 v0, v0, 0x1
+    iget-object v0, p0, Lj3/d01;->a:[Lj3/hy0;
+
+    array-length v1, v0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    :goto_0
+    if-ge v3, v1, :cond_2
+
+    aget-object v4, v0, v3
+
+    .line 3
+    :try_start_0
+    invoke-interface {v4, p1}, Lj3/hy0;->b(Lj3/ky0;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1
+
+    .line 4
+    iput-object v4, p0, Lj3/d01;->c:Lj3/hy0;
+    :try_end_0
+    .catch Ljava/io/EOFException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 5
+    check-cast p1, Lj3/iy0;
+
+    .line 6
+    iput v2, p1, Lj3/iy0;->e:I
+
+    goto :goto_2
+
+    .line 7
+    :cond_1
+    move-object v4, p1
+
+    check-cast v4, Lj3/iy0;
+
+    .line 8
+    iput v2, v4, Lj3/iy0;->e:I
+
+    goto :goto_1
+
+    :catchall_0
+    move-exception p2
+
+    .line 9
+    check-cast p1, Lj3/iy0;
+
+    .line 10
+    iput v2, p1, Lj3/iy0;->e:I
+
+    .line 11
+    throw p2
+
+    .line 12
+    :catch_0
+    move-object v4, p1
+
+    check-cast v4, Lj3/iy0;
+
+    .line 13
+    iput v2, v4, Lj3/iy0;->e:I
+
+    :goto_1
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    :cond_1
-    const/4 p1, -0x1
+    .line 14
+    :cond_2
+    :goto_2
+    iget-object p1, p0, Lj3/d01;->c:Lj3/hy0;
 
-    return p1
-.end method
+    if-nez p1, :cond_5
 
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+    .line 15
+    new-instance p1, Lcom/google/android/gms/internal/ads/zzns;
 
-    const/4 v0, 0x1
+    iget-object v0, p0, Lj3/d01;->a:[Lj3/hy0;
 
-    if-ne p0, p1, :cond_0
+    .line 16
+    sget v1, Lj3/g21;->a:I
 
-    return v0
+    .line 17
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    :cond_0
-    const/4 v1, 0x0
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    if-eqz p1, :cond_2
+    .line 18
+    :goto_3
+    array-length v3, v0
 
-    .line 1
-    const-class v2, Lj3/d01;
+    if-ge v2, v3, :cond_4
 
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 19
+    aget-object v3, v0, v2
+
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v3
 
-    if-eq v2, v3, :cond_1
+    invoke-virtual {v3}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    goto :goto_0
+    move-result-object v3
 
-    .line 2
-    :cond_1
-    check-cast p1, Lj3/d01;
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 3
-    iget v2, p0, Lj3/d01;->a:I
+    .line 20
+    array-length v3, v0
 
-    iget v3, p1, Lj3/d01;->a:I
+    add-int/lit8 v3, v3, -0x1
 
-    if-ne v2, v3, :cond_2
+    if-ge v2, v3, :cond_3
 
-    iget-object v2, p0, Lj3/d01;->b:[Lj3/e01;
+    const-string v3, ", "
 
-    iget-object p1, p1, Lj3/d01;->b:[Lj3/e01;
+    .line 21
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v2, p1}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
+    :cond_3
+    add-int/lit8 v2, v2, 0x1
 
-    move-result p1
+    goto :goto_3
 
-    if-eqz p1, :cond_2
+    .line 22
+    :cond_4
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    return v0
+    move-result-object v0
 
-    :cond_2
-    :goto_0
-    return v1
-.end method
+    const/16 v1, 0x3a
 
-.method public final hashCode()I
-    .locals 1
+    .line 23
+    invoke-static {v0, v1}, La1/e;->a(Ljava/lang/String;I)I
 
-    .line 1
-    iget v0, p0, Lj3/d01;->c:I
+    move-result v1
 
-    if-nez v0, :cond_0
+    const-string v2, "None of the available extractors ("
 
-    .line 2
-    iget-object v0, p0, Lj3/d01;->b:[Lj3/e01;
+    const-string v3, ") could read the stream."
 
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+    invoke-static {v1, v2, v0, v3}, Lh1/i;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    move-result v0
+    move-result-object v0
 
-    iput v0, p0, Lj3/d01;->c:I
+    invoke-direct {p1, v0, p2}, Lcom/google/android/gms/internal/ads/zzns;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 3
-    :cond_0
-    iget v0, p0, Lj3/d01;->c:I
+    throw p1
 
-    return v0
+    .line 24
+    :cond_5
+    iget-object p2, p0, Lj3/d01;->b:Lj3/jy0;
+
+    invoke-interface {p1, p2}, Lj3/hy0;->c(Lj3/jy0;)V
+
+    .line 25
+    iget-object p1, p0, Lj3/d01;->c:Lj3/hy0;
+
+    return-object p1
 .end method

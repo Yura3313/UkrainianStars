@@ -1,27 +1,27 @@
 .class public final Lu3/k;
-.super Lu3/w4$a;
+.super Lu3/u4$a;
 .source "com.google.android.gms:play-services-measurement-sdk-api@@17.1.0"
 
 
 # instance fields
-.field public final synthetic j:Lcom/google/android/gms/internal/measurement/zzk;
+.field public final synthetic k:Lcom/google/android/gms/internal/measurement/zzk;
 
-.field public final synthetic k:Lu3/w4;
+.field public final synthetic l:Lu3/u4;
 
 
 # direct methods
-.method public constructor <init>(Lu3/w4;Lcom/google/android/gms/internal/measurement/zzk;)V
+.method public constructor <init>(Lu3/u4;Lcom/google/android/gms/internal/measurement/zzk;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lu3/k;->k:Lu3/w4;
+    iput-object p1, p0, Lu3/k;->l:Lu3/u4;
 
-    iput-object p2, p0, Lu3/k;->j:Lcom/google/android/gms/internal/measurement/zzk;
+    iput-object p2, p0, Lu3/k;->k:Lcom/google/android/gms/internal/measurement/zzk;
 
     const/4 p2, 0x1
 
     .line 2
-    invoke-direct {p0, p1, p2}, Lu3/w4$a;-><init>(Lu3/w4;Z)V
+    invoke-direct {p0, p1, p2}, Lu3/u4$a;-><init>(Lu3/u4;Z)V
 
     return-void
 .end method
@@ -37,13 +37,13 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lu3/k;->k:Lu3/w4;
+    iget-object v0, p0, Lu3/k;->l:Lu3/u4;
 
     .line 2
-    iget-object v0, v0, Lu3/w4;->f:Lcom/google/android/gms/internal/measurement/zzm;
+    iget-object v0, v0, Lu3/u4;->f:Lcom/google/android/gms/internal/measurement/zzm;
 
     .line 3
-    iget-object v1, p0, Lu3/k;->j:Lcom/google/android/gms/internal/measurement/zzk;
+    iget-object v1, p0, Lu3/k;->k:Lcom/google/android/gms/internal/measurement/zzk;
 
     invoke-interface {v0, v1}, Lcom/google/android/gms/internal/measurement/zzm;->getCurrentScreenClass(Lcom/google/android/gms/internal/measurement/zzn;)V
 
@@ -54,7 +54,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lu3/k;->j:Lcom/google/android/gms/internal/measurement/zzk;
+    iget-object v0, p0, Lu3/k;->k:Lcom/google/android/gms/internal/measurement/zzk;
 
     const/4 v1, 0x0
 

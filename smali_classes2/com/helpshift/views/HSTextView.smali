@@ -11,7 +11,7 @@
     invoke-direct {p0, p1, p2}, Landroidx/appcompat/widget/AppCompatTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 2
-    invoke-static {p0}, Lmb/a;->b(Landroid/widget/TextView;)V
+    invoke-static {p0}, Lkb/a;->b(Landroid/widget/TextView;)V
 
     return-void
 .end method
@@ -23,7 +23,7 @@
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 4
-    invoke-static {p0}, Lmb/a;->b(Landroid/widget/TextView;)V
+    invoke-static {p0}, Lkb/a;->b(Landroid/widget/TextView;)V
 
     return-void
 .end method
@@ -42,7 +42,7 @@
 
     .line 2
     :cond_0
-    invoke-static {}, Lmb/a;->d()Lmb/c;
+    invoke-static {}, Lkb/a;->d()Lkb/c;
 
     move-result-object v0
 

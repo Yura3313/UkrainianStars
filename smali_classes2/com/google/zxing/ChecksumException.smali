@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final h:Lcom/google/zxing/ChecksumException;
+.field public static final i:Lcom/google/zxing/ChecksumException;
 
 
 # direct methods
@@ -17,9 +17,9 @@
     invoke-direct {v0}, Lcom/google/zxing/ChecksumException;-><init>()V
 
     .line 2
-    sput-object v0, Lcom/google/zxing/ChecksumException;->h:Lcom/google/zxing/ChecksumException;
+    sput-object v0, Lcom/google/zxing/ChecksumException;->i:Lcom/google/zxing/ChecksumException;
 
-    sget-object v1, Lcom/google/zxing/ReaderException;->b:[Ljava/lang/StackTraceElement;
+    sget-object v1, Lcom/google/zxing/ReaderException;->h:[Ljava/lang/StackTraceElement;
 
     invoke-virtual {v0, v1}, Ljava/lang/Exception;->setStackTrace([Ljava/lang/StackTraceElement;)V
 
@@ -39,7 +39,7 @@
     .locals 1
 
     .line 1
-    sget-boolean v0, Lcom/google/zxing/ReaderException;->a:Z
+    sget-boolean v0, Lcom/google/zxing/ReaderException;->g:Z
 
     if-eqz v0, :cond_0
 
@@ -50,7 +50,7 @@
     return-object v0
 
     :cond_0
-    sget-object v0, Lcom/google/zxing/ChecksumException;->h:Lcom/google/zxing/ChecksumException;
+    sget-object v0, Lcom/google/zxing/ChecksumException;->i:Lcom/google/zxing/ChecksumException;
 
     return-object v0
 .end method

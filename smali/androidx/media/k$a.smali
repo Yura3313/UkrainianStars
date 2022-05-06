@@ -1,5 +1,5 @@
 .class public Landroidx/media/k$a;
-.super Lp0/i;
+.super Lp0/g;
 .source "MediaBrowserServiceCompatApi26.java"
 
 
@@ -19,7 +19,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lp0/i;-><init>(Landroid/content/Context;Lp0/j;)V
+    invoke-direct {p0, p1, p2}, Lp0/g;-><init>(Landroid/content/Context;Lp0/h;)V
 
     return-void
 .end method
@@ -45,7 +45,7 @@
     invoke-static {p3}, Landroid/support/v4/media/session/MediaSessionCompat;->ensureClassLoader(Landroid/os/Bundle;)V
 
     .line 2
-    iget-object v0, p0, Lp0/f;->a:Lp0/h;
+    iget-object v0, p0, Lp0/d;->g:Lp0/f;
 
     check-cast v0, Landroidx/media/k$c;
 

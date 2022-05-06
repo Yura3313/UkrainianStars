@@ -15,31 +15,31 @@
 
 
 # static fields
-.field public static final q:I
+.field public static final r:I
 
 
 # instance fields
-.field public final a:Lr4/l;
-
-.field public final b:Landroid/graphics/RectF;
+.field public final g:Lr4/l;
 
 .field public final h:Landroid/graphics/RectF;
 
-.field public final i:Landroid/graphics/Paint;
+.field public final i:Landroid/graphics/RectF;
 
 .field public final j:Landroid/graphics/Paint;
 
-.field public final k:Landroid/graphics/Path;
+.field public final k:Landroid/graphics/Paint;
 
-.field public l:Landroid/content/res/ColorStateList;
+.field public final l:Landroid/graphics/Path;
 
-.field public m:Lr4/k;
+.field public m:Landroid/content/res/ColorStateList;
 
-.field public n:F
+.field public n:Lr4/k;
 
-.field public o:Landroid/graphics/Path;
+.field public o:F
 
-.field public final p:Lr4/g;
+.field public p:Landroid/graphics/Path;
+
+.field public final q:Lr4/g;
 
 
 # direct methods
@@ -49,7 +49,7 @@
     .line 1
     sget v0, Lcom/google/android/material/R$style;->Widget_MaterialComponents_ShapeableImageView:I
 
-    sput v0, Lcom/google/android/material/imageview/ShapeableImageView;->q:I
+    sput v0, Lcom/google/android/material/imageview/ShapeableImageView;->r:I
 
     return-void
 .end method
@@ -69,7 +69,7 @@
     .locals 5
 
     .line 2
-    sget v0, Lcom/google/android/material/imageview/ShapeableImageView;->q:I
+    sget v0, Lcom/google/android/material/imageview/ShapeableImageView;->r:I
 
     invoke-static {p1, p2, p3, v0}, Lt4/a;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
 
@@ -82,14 +82,14 @@
 
     invoke-direct {p1}, Lr4/l;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->a:Lr4/l;
+    iput-object p1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->g:Lr4/l;
 
     .line 4
     new-instance p1, Landroid/graphics/Path;
 
     invoke-direct {p1}, Landroid/graphics/Path;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->k:Landroid/graphics/Path;
+    iput-object p1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->l:Landroid/graphics/Path;
 
     .line 5
     invoke-virtual {p0}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
@@ -101,7 +101,7 @@
 
     invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->j:Landroid/graphics/Paint;
+    iput-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->k:Landroid/graphics/Paint;
 
     const/4 v2, 0x1
 
@@ -127,21 +127,21 @@
 
     invoke-direct {v1}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->b:Landroid/graphics/RectF;
+    iput-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->h:Landroid/graphics/RectF;
 
     .line 11
     new-instance v1, Landroid/graphics/RectF;
 
     invoke-direct {v1}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->h:Landroid/graphics/RectF;
+    iput-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->i:Landroid/graphics/RectF;
 
     .line 12
     new-instance v1, Landroid/graphics/Path;
 
     invoke-direct {v1}, Landroid/graphics/Path;-><init>()V
 
-    iput-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->o:Landroid/graphics/Path;
+    iput-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->p:Landroid/graphics/Path;
 
     .line 13
     sget-object v1, Lcom/google/android/material/R$styleable;->ShapeableImageView:[I
@@ -159,7 +159,7 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/google/android/material/imageview/ShapeableImageView;->l:Landroid/content/res/ColorStateList;
+    iput-object v3, p0, Lcom/google/android/material/imageview/ShapeableImageView;->m:Landroid/content/res/ColorStateList;
 
     .line 17
     sget v3, Lcom/google/android/material/R$styleable;->ShapeableImageView_strokeWidth:I
@@ -172,14 +172,14 @@
 
     int-to-float v1, v1
 
-    iput v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->n:F
+    iput v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->o:F
 
     .line 18
     new-instance v1, Landroid/graphics/Paint;
 
     invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->i:Landroid/graphics/Paint;
+    iput-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->j:Landroid/graphics/Paint;
 
     .line 19
     sget-object v3, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
@@ -198,16 +198,16 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->m:Lr4/k;
+    iput-object p1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->n:Lr4/k;
 
     .line 22
     new-instance p1, Lr4/g;
 
-    iget-object p2, p0, Lcom/google/android/material/imageview/ShapeableImageView;->m:Lr4/k;
+    iget-object p2, p0, Lcom/google/android/material/imageview/ShapeableImageView;->n:Lr4/k;
 
     invoke-direct {p1, p2}, Lr4/g;-><init>(Lr4/k;)V
 
-    iput-object p1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->p:Lr4/g;
+    iput-object p1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->q:Lr4/g;
 
     .line 23
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -233,7 +233,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->b:Landroid/graphics/RectF;
+    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->h:Landroid/graphics/RectF;
 
     .line 2
     invoke-virtual {p0}, Landroid/widget/ImageView;->getPaddingLeft()I
@@ -268,32 +268,32 @@
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/RectF;->set(FFFF)V
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->a:Lr4/l;
+    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->g:Lr4/l;
 
-    iget-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->m:Lr4/k;
+    iget-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->n:Lr4/k;
 
-    iget-object v2, p0, Lcom/google/android/material/imageview/ShapeableImageView;->b:Landroid/graphics/RectF;
+    iget-object v2, p0, Lcom/google/android/material/imageview/ShapeableImageView;->h:Landroid/graphics/RectF;
 
-    iget-object v3, p0, Lcom/google/android/material/imageview/ShapeableImageView;->k:Landroid/graphics/Path;
+    iget-object v3, p0, Lcom/google/android/material/imageview/ShapeableImageView;->l:Landroid/graphics/Path;
 
     const/high16 v4, 0x3f800000    # 1.0f
 
     invoke-virtual {v0, v1, v4, v2, v3}, Lr4/l;->c(Lr4/k;FLandroid/graphics/RectF;Landroid/graphics/Path;)V
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->o:Landroid/graphics/Path;
+    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->p:Landroid/graphics/Path;
 
     invoke-virtual {v0}, Landroid/graphics/Path;->rewind()V
 
     .line 6
-    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->o:Landroid/graphics/Path;
+    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->p:Landroid/graphics/Path;
 
-    iget-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->k:Landroid/graphics/Path;
+    iget-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->l:Landroid/graphics/Path;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Path;->addPath(Landroid/graphics/Path;)V
 
     .line 7
-    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->h:Landroid/graphics/RectF;
+    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->i:Landroid/graphics/RectF;
 
     int-to-float p1, p1
 
@@ -304,9 +304,9 @@
     invoke-virtual {v0, v1, v1, p1, p2}, Landroid/graphics/RectF;->set(FFFF)V
 
     .line 8
-    iget-object p1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->o:Landroid/graphics/Path;
+    iget-object p1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->p:Landroid/graphics/Path;
 
-    iget-object p2, p0, Lcom/google/android/material/imageview/ShapeableImageView;->h:Landroid/graphics/RectF;
+    iget-object p2, p0, Lcom/google/android/material/imageview/ShapeableImageView;->i:Landroid/graphics/RectF;
 
     sget-object v0, Landroid/graphics/Path$Direction;->CCW:Landroid/graphics/Path$Direction;
 
@@ -319,7 +319,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->m:Lr4/k;
+    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->n:Lr4/k;
 
     return-object v0
 .end method
@@ -328,7 +328,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->l:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->m:Landroid/content/res/ColorStateList;
 
     return-object v0
 .end method
@@ -337,7 +337,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->n:F
+    iget v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->o:F
 
     return v0
 .end method
@@ -381,14 +381,14 @@
     invoke-super {p0, p1}, Landroid/widget/ImageView;->onDraw(Landroid/graphics/Canvas;)V
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->o:Landroid/graphics/Path;
+    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->p:Landroid/graphics/Path;
 
-    iget-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->j:Landroid/graphics/Paint;
+    iget-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->k:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->l:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->m:Landroid/content/res/ColorStateList;
 
     if-nez v0, :cond_0
 
@@ -396,21 +396,21 @@
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->i:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->j:Landroid/graphics/Paint;
 
-    iget v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->n:F
+    iget v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->o:F
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->l:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->m:Landroid/content/res/ColorStateList;
 
     .line 6
     invoke-virtual {p0}, Landroid/widget/ImageView;->getDrawableState()[I
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/google/android/material/imageview/ShapeableImageView;->l:Landroid/content/res/ColorStateList;
+    iget-object v2, p0, Lcom/google/android/material/imageview/ShapeableImageView;->m:Landroid/content/res/ColorStateList;
 
     invoke-virtual {v2}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 
@@ -421,7 +421,7 @@
     move-result v0
 
     .line 7
-    iget v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->n:F
+    iget v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->o:F
 
     const/4 v2, 0x0
 
@@ -432,14 +432,14 @@
     if-eqz v0, :cond_1
 
     .line 8
-    iget-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->i:Landroid/graphics/Paint;
+    iget-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->j:Landroid/graphics/Paint;
 
     invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 9
-    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->k:Landroid/graphics/Path;
+    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->l:Landroid/graphics/Path;
 
-    iget-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->i:Landroid/graphics/Paint;
+    iget-object v1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->j:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
@@ -464,10 +464,10 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->m:Lr4/k;
+    iput-object p1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->n:Lr4/k;
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->p:Lr4/g;
+    iget-object v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->q:Lr4/g;
 
     invoke-virtual {v0, p1}, Lr4/g;->setShapeAppearanceModel(Lr4/k;)V
 
@@ -492,7 +492,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->l:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->m:Landroid/content/res/ColorStateList;
 
     .line 2
     invoke-virtual {p0}, Landroid/widget/ImageView;->invalidate()V
@@ -521,14 +521,14 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->n:F
+    iget v0, p0, Lcom/google/android/material/imageview/ShapeableImageView;->o:F
 
     cmpl-float v0, v0, p1
 
     if-eqz v0, :cond_0
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->n:F
+    iput p1, p0, Lcom/google/android/material/imageview/ShapeableImageView;->o:F
 
     .line 3
     invoke-virtual {p0}, Landroid/widget/ImageView;->invalidate()V

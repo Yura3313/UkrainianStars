@@ -16,9 +16,9 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final b:Landroid/os/Bundle;
+.field public final h:Landroid/os/Bundle;
 
 
 # direct methods
@@ -26,9 +26,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lj3/u3;
+    new-instance v0, Lj3/v3;
 
-    invoke-direct {v0}, Lj3/u3;-><init>()V
+    invoke-direct {v0}, Lj3/v3;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzaip;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -42,10 +42,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzaip;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzaip;->g:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzaip;->b:Landroid/os/Bundle;
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzaip;->h:Landroid/os/Bundle;
 
     return-void
 .end method
@@ -65,7 +65,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzaip;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzaip;->g:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -74,7 +74,7 @@
     const/4 v0, 0x2
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzaip;->b:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzaip;->h:Landroid/os/Bundle;
 
     invoke-static {p1, v0, v1, v2}, Ld2/b;->d(Landroid/os/Parcel;ILandroid/os/Bundle;Z)V
 

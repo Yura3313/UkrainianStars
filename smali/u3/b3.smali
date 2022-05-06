@@ -1,38 +1,41 @@
-.class public interface abstract Lu3/b3;
-.super Ljava/lang/Object;
-
-# interfaces
-.implements Ljava/util/List;
-.implements Ljava/util/RandomAccess;
+.class public final Lu3/b3;
+.super Lu3/e3;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<E:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/List<",
-        "TE;>;",
-        "Ljava/util/RandomAccess;"
-    }
-.end annotation
+# static fields
+.field public static final synthetic c:I
 
 
 # virtual methods
-.method public abstract C()V
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 1
+    new-instance p1, Ljava/lang/NoSuchMethodError;
+
+    invoke-direct {p1}, Ljava/lang/NoSuchMethodError;-><init>()V
+
+    throw p1
 .end method
 
-.method public abstract R(I)Lu3/b3;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I)",
-            "Lu3/b3<",
-            "TE;>;"
-        }
-    .end annotation
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/NoSuchMethodError;
+
+    invoke-direct {v0}, Ljava/lang/NoSuchMethodError;-><init>()V
+
+    throw v0
 .end method
 
-.method public abstract V0()Z
+.method public final toString()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/NoSuchMethodError;
+
+    invoke-direct {v0}, Ljava/lang/NoSuchMethodError;-><init>()V
+
+    throw v0
 .end method

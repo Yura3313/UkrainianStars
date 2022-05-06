@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$d;->a:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$d;->g:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,12 +40,12 @@
     .line 1
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object p1
 
     .line 2
-    iget-object v0, p1, Lwd/r;->m:La2/a;
+    iget-object v0, p1, Lvd/r;->m:Lcom/supercell/titan/h;
 
     const/4 v4, 0x0
 
@@ -60,12 +60,12 @@
     const-string v3, "Cancel"
 
     .line 3
-    invoke-static/range {v0 .. v6}, La2/a;->b(La2/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static/range {v0 .. v6}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
 
     .line 4
-    iget-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$d;->a:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$d;->g:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 

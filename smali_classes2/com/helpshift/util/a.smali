@@ -92,7 +92,7 @@
     const-string v3, "Helpshift_AppUtil"
 
     .line 5
-    invoke-static {v3, v0, v2, v1}, Lce/z;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v0, v2, v1}, Lie/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     :goto_0
     if-eqz v1, :cond_1

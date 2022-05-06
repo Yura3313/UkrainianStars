@@ -3,7 +3,7 @@
 .source "CameraPreview.java"
 
 # interfaces
-.implements Lqb/l;
+.implements Lob/l;
 
 
 # annotations

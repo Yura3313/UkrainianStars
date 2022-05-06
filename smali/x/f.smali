@@ -346,9 +346,13 @@
     .line 8
     :cond_2
     :try_start_2
-    new-instance v9, Ljava/io/FileInputStream;
+    new-instance v0, Ljava/io/FileInputStream;
 
-    invoke-direct {v9, v7}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+    invoke-direct {v0, v7}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+
+    invoke-static {v0, v7}, Lio/sentry/instrumentation/file/SentryFileInputStream$Factory;->create(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
+
+    move-result-object v9
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
@@ -487,9 +491,9 @@
 
     .line 2
     :cond_0
-    new-instance v3, Lm/h;
+    new-instance v3, Lm/g;
 
-    invoke-direct {v3}, Lm/h;-><init>()V
+    invoke-direct {v3}, Lm/g;-><init>()V
 
     .line 3
     array-length v4, p3
@@ -503,7 +507,7 @@
     iget-object v6, v5, Lc0/e$c;->a:Landroid/net/Uri;
 
     .line 5
-    invoke-virtual {v3, v6}, Lm/h;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v6}, Lm/g;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v7
 
@@ -517,7 +521,7 @@
     move-result-object v7
 
     .line 7
-    invoke-virtual {v3, v6, v7}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v6, v7}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_1
     if-nez v7, :cond_2

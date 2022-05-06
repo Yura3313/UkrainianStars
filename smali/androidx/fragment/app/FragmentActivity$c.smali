@@ -33,7 +33,7 @@
 
 
 # instance fields
-.field public final synthetic j:Landroidx/fragment/app/FragmentActivity;
+.field public final synthetic k:Landroidx/fragment/app/FragmentActivity;
 
 
 # direct methods
@@ -41,7 +41,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/fragment/app/FragmentActivity$c;->j:Landroidx/fragment/app/FragmentActivity;
+    iput-object p1, p0, Landroidx/fragment/app/FragmentActivity$c;->k:Landroidx/fragment/app/FragmentActivity;
 
     .line 2
     invoke-direct {p0, p1}, Landroidx/fragment/app/w;-><init>(Landroidx/fragment/app/FragmentActivity;)V
@@ -55,7 +55,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Landroidx/fragment/app/FragmentActivity$c;->j:Landroidx/fragment/app/FragmentActivity;
+    iget-object p1, p0, Landroidx/fragment/app/FragmentActivity$c;->k:Landroidx/fragment/app/FragmentActivity;
 
     invoke-virtual {p1, p2}, Landroidx/fragment/app/FragmentActivity;->onAttachFragment(Landroidx/fragment/app/Fragment;)V
 
@@ -66,7 +66,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->j:Landroidx/fragment/app/FragmentActivity;
+    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->k:Landroidx/fragment/app/FragmentActivity;
 
     invoke-virtual {v0}, Landroidx/activity/ComponentActivity;->getActivityResultRegistry()Landroidx/activity/result/ActivityResultRegistry;
 
@@ -79,7 +79,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->j:Landroidx/fragment/app/FragmentActivity;
+    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->k:Landroidx/fragment/app/FragmentActivity;
 
     iget-object v0, v0, Landroidx/fragment/app/FragmentActivity;->mFragmentLifecycleRegistry:Landroidx/lifecycle/k;
 
@@ -90,7 +90,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->j:Landroidx/fragment/app/FragmentActivity;
+    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->k:Landroidx/fragment/app/FragmentActivity;
 
     invoke-virtual {v0}, Landroidx/activity/ComponentActivity;->getOnBackPressedDispatcher()Landroidx/activity/OnBackPressedDispatcher;
 
@@ -103,7 +103,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->j:Landroidx/fragment/app/FragmentActivity;
+    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->k:Landroidx/fragment/app/FragmentActivity;
 
     invoke-virtual {v0}, Landroidx/activity/ComponentActivity;->getViewModelStore()Landroidx/lifecycle/c0;
 
@@ -116,7 +116,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->j:Landroidx/fragment/app/FragmentActivity;
+    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->k:Landroidx/fragment/app/FragmentActivity;
 
     invoke-virtual {v0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -129,7 +129,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->j:Landroidx/fragment/app/FragmentActivity;
+    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->k:Landroidx/fragment/app/FragmentActivity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -159,7 +159,7 @@
     .locals 1
 
     .line 1
-    iget-object p2, p0, Landroidx/fragment/app/FragmentActivity$c;->j:Landroidx/fragment/app/FragmentActivity;
+    iget-object p2, p0, Landroidx/fragment/app/FragmentActivity$c;->k:Landroidx/fragment/app/FragmentActivity;
 
     const/4 v0, 0x0
 
@@ -172,7 +172,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->j:Landroidx/fragment/app/FragmentActivity;
+    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->k:Landroidx/fragment/app/FragmentActivity;
 
     return-object v0
 .end method
@@ -181,13 +181,13 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->j:Landroidx/fragment/app/FragmentActivity;
+    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->k:Landroidx/fragment/app/FragmentActivity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    iget-object v1, p0, Landroidx/fragment/app/FragmentActivity$c;->j:Landroidx/fragment/app/FragmentActivity;
+    iget-object v1, p0, Landroidx/fragment/app/FragmentActivity$c;->k:Landroidx/fragment/app/FragmentActivity;
 
     invoke-virtual {v0, v1}, Landroid/view/LayoutInflater;->cloneInContext(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
@@ -200,7 +200,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Landroidx/fragment/app/FragmentActivity$c;->j:Landroidx/fragment/app/FragmentActivity;
+    iget-object p1, p0, Landroidx/fragment/app/FragmentActivity$c;->k:Landroidx/fragment/app/FragmentActivity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->isFinishing()Z
 
@@ -215,7 +215,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->j:Landroidx/fragment/app/FragmentActivity;
+    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->k:Landroidx/fragment/app/FragmentActivity;
 
     invoke-static {v0, p1}, Lu/a;->i(Landroid/app/Activity;Ljava/lang/String;)Z
 
@@ -228,7 +228,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->j:Landroidx/fragment/app/FragmentActivity;
+    iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$c;->k:Landroidx/fragment/app/FragmentActivity;
 
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentActivity;->supportInvalidateOptionsMenu()V
 

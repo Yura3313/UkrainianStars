@@ -86,7 +86,7 @@
     .end param
 
     .line 1
-    invoke-virtual {p1}, Lcom/google/android/gms/common/api/Status;->x2()Z
+    invoke-virtual {p1}, Lcom/google/android/gms/common/api/Status;->z2()Z
 
     move-result v0
 

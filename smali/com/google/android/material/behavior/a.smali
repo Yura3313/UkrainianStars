@@ -39,7 +39,7 @@
     if-eqz p2, :cond_6
 
     .line 2
-    sget-object p2, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object p2, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 3
     invoke-virtual {p1}, Landroid/view/View;->getLayoutDirection()I
@@ -87,7 +87,7 @@
 
     .line 6
     :cond_4
-    invoke-static {p1, p2}, Lf0/s;->s(Landroid/view/View;I)V
+    invoke-static {p1, p2}, Lf0/r;->s(Landroid/view/View;I)V
 
     const/4 p2, 0x0
 

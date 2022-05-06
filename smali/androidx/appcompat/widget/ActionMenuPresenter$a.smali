@@ -54,12 +54,12 @@
     if-nez p2, :cond_1
 
     .line 6
-    iget-object p2, p1, Landroidx/appcompat/widget/ActionMenuPresenter;->o:Landroidx/appcompat/widget/ActionMenuPresenter$d;
+    iget-object p2, p1, Landroidx/appcompat/widget/ActionMenuPresenter;->p:Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
     if-nez p2, :cond_0
 
     .line 7
-    iget-object p2, p1, Landroidx/appcompat/view/menu/a;->m:Landroidx/appcompat/view/menu/j;
+    iget-object p2, p1, Landroidx/appcompat/view/menu/a;->n:Landroidx/appcompat/view/menu/j;
 
     .line 8
     check-cast p2, Landroid/view/View;
@@ -70,7 +70,7 @@
 
     .line 10
     :cond_1
-    iget-object p1, p1, Landroidx/appcompat/widget/ActionMenuPresenter;->C:Landroidx/appcompat/widget/ActionMenuPresenter$f;
+    iget-object p1, p1, Landroidx/appcompat/widget/ActionMenuPresenter;->D:Landroidx/appcompat/widget/ActionMenuPresenter$f;
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/view/menu/h;->d(Landroidx/appcompat/view/menu/i$a;)V
 
@@ -87,12 +87,12 @@
 
     const/4 v1, 0x0
 
-    iput-object v1, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->z:Landroidx/appcompat/widget/ActionMenuPresenter$a;
+    iput-object v1, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->A:Landroidx/appcompat/widget/ActionMenuPresenter$a;
 
     const/4 v1, 0x0
 
     .line 2
-    iput v1, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->D:I
+    iput v1, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->E:I
 
     .line 3
     invoke-super {p0}, Landroidx/appcompat/view/menu/h;->c()V

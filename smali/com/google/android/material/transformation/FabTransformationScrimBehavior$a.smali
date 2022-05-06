@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final synthetic a:Z
+.field public final synthetic g:Z
 
-.field public final synthetic b:Landroid/view/View;
+.field public final synthetic h:Landroid/view/View;
 
 
 # direct methods
@@ -25,9 +25,9 @@
     .locals 0
 
     .line 1
-    iput-boolean p2, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->a:Z
+    iput-boolean p2, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->g:Z
 
-    iput-object p3, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->b:Landroid/view/View;
+    iput-object p3, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->h:Landroid/view/View;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -40,12 +40,12 @@
     .locals 1
 
     .line 1
-    iget-boolean p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->a:Z
+    iget-boolean p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->g:Z
 
     if-nez p1, :cond_0
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->b:Landroid/view/View;
+    iget-object p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->h:Landroid/view/View;
 
     const/4 v0, 0x4
 
@@ -59,12 +59,12 @@
     .locals 1
 
     .line 1
-    iget-boolean p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->a:Z
+    iget-boolean p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->g:Z
 
     if-eqz p1, :cond_0
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->b:Landroid/view/View;
+    iget-object p1, p0, Lcom/google/android/material/transformation/FabTransformationScrimBehavior$a;->h:Landroid/view/View;
 
     const/4 v0, 0x0
 

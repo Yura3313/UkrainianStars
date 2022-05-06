@@ -1,3 +1,3 @@
-.class public final Lu/k;
+.class public abstract Lu/k;
 .super Ljava/lang/Object;
-.source "RemoteInput.java"
+.source "SharedElementCallback.java"

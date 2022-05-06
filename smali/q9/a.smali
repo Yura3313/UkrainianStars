@@ -14,15 +14,11 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lq9/a;
+.field public static final enum g:Lq9/a;
 
-.field public static final enum AUTH_TOKEN_NOT_PROVIDED:Lq9/a;
+.field public static final enum h:Lq9/a;
 
-.field public static final enum INVALID_AUTH_TOKEN:Lq9/a;
-
-
-# instance fields
-.field private value:I
+.field public static final synthetic i:[Lq9/a;
 
 
 # direct methods
@@ -38,7 +34,7 @@
 
     invoke-direct {v0, v1, v2, v2}, Lq9/a;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lq9/a;->AUTH_TOKEN_NOT_PROVIDED:Lq9/a;
+    sput-object v0, Lq9/a;->g:Lq9/a;
 
     .line 2
     new-instance v1, Lq9/a;
@@ -49,7 +45,7 @@
 
     invoke-direct {v1, v3, v4, v4}, Lq9/a;-><init>(Ljava/lang/String;II)V
 
-    sput-object v1, Lq9/a;->INVALID_AUTH_TOKEN:Lq9/a;
+    sput-object v1, Lq9/a;->h:Lq9/a;
 
     const/4 v3, 0x2
 
@@ -60,12 +56,12 @@
     aput-object v1, v3, v4
 
     .line 3
-    sput-object v3, Lq9/a;->$VALUES:[Lq9/a;
+    sput-object v3, Lq9/a;->i:[Lq9/a;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;II)V
+.method public constructor <init>(Ljava/lang/String;II)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -75,9 +71,6 @@
 
     .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    iput p3, p0, Lq9/a;->value:I
 
     return-void
 .end method
@@ -101,7 +94,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lq9/a;->$VALUES:[Lq9/a;
+    sget-object v0, Lq9/a;->i:[Lq9/a;
 
     invoke-virtual {v0}, [Lq9/a;->clone()Ljava/lang/Object;
 
@@ -110,15 +103,4 @@
     check-cast v0, [Lq9/a;
 
     return-object v0
-.end method
-
-
-# virtual methods
-.method public getValue()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lq9/a;->value:I
-
-    return v0
 .end method

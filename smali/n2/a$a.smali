@@ -14,11 +14,11 @@
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/common/data/DataHolder;
-
-.field public final b:I
+.field public final g:Lcom/google/android/gms/common/data/DataHolder;
 
 .field public final h:I
+
+.field public final i:I
 
 
 # direct methods
@@ -29,17 +29,17 @@
     invoke-direct {p0}, La2/a0;-><init>()V
 
     .line 2
-    iput-object p1, p0, Ln2/a$a;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iput-object p1, p0, Ln2/a$a;->g:Lcom/google/android/gms/common/data/DataHolder;
 
     .line 3
-    iput p2, p0, Ln2/a$a;->b:I
+    iput p2, p0, Ln2/a$a;->h:I
 
     .line 4
-    invoke-virtual {p1, p2}, Lcom/google/android/gms/common/data/DataHolder;->C2(I)I
+    invoke-virtual {p1, p2}, Lcom/google/android/gms/common/data/DataHolder;->E2(I)I
 
     move-result p1
 
-    iput p1, p0, Ln2/a$a;->h:I
+    iput p1, p0, Ln2/a$a;->i:I
 
     return-void
 .end method

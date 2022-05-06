@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p2, p0, Lcom/supercell/titan/Kakao$d$b;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/titan/Kakao$d$b;->g:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/Kakao$d$b;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/titan/Kakao$d$b;->g:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/supercell/titan/Kakao;->loginFailed(Ljava/lang/String;)V
 

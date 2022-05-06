@@ -2,25 +2,25 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Ly4/m0;
+.implements Ly4/o0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Ly4/m0<",
-        "Lc5/l;",
+        "Ly4/o0<",
+        "Ljava/lang/String;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Ly4/m0;
+.field public final g:Ly4/o0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ly4/m0<",
+            "Ly4/o0<",
             "Landroid/content/Context;",
             ">;"
         }
@@ -29,12 +29,12 @@
 
 
 # direct methods
-.method public constructor <init>(Ly4/m0;)V
+.method public constructor <init>(Ly4/o0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ly4/m0<",
+            "Ly4/o0<",
             "Landroid/content/Context;",
             ">;)V"
         }
@@ -42,7 +42,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/q2;->a:Ly4/m0;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/q2;->g:Ly4/o0;
 
     return-void
 .end method
@@ -50,9 +50,9 @@
 
 # virtual methods
 .method public final bridge synthetic a()Ljava/lang/Object;
-    .locals 3
+    .locals 1
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/q2;->a:Ly4/m0;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/q2;->g:Ly4/o0;
 
     check-cast v0, Lcom/google/android/play/core/assetpacks/p2;
 
@@ -60,13 +60,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lc5/l;
+    invoke-static {v0}, Lcom/google/android/play/core/assetpacks/m2;->a(Landroid/content/Context;)Ljava/lang/String;
 
-    invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object v2
-
-    invoke-direct {v1, v0, v2}, Lc5/l;-><init>(Landroid/content/Context;Ljava/lang/String;)V
-
-    return-object v1
+    return-object v0
 .end method

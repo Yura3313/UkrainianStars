@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public j:Ljava/util/HashMap;
+.field public k:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -42,7 +42,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Li/a;->j:Ljava/util/HashMap;
+    iput-object v0, p0, Li/a;->k:Ljava/util/HashMap;
 
     return-void
 .end method
@@ -60,7 +60,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Li/a;->j:Ljava/util/HashMap;
+    iget-object v0, p0, Li/a;->k:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -80,7 +80,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Li/a;->j:Ljava/util/HashMap;
+    iget-object v0, p0, Li/a;->k:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -89,7 +89,7 @@
     return p1
 .end method
 
-.method public d(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public e(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -98,7 +98,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Li/a;->j:Ljava/util/HashMap;
+    iget-object v0, p0, Li/a;->k:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -109,15 +109,15 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object p1, v0, Li/b$c;->b:Ljava/lang/Object;
+    iget-object p1, v0, Li/b$c;->h:Ljava/lang/Object;
 
     return-object p1
 
     .line 3
     :cond_0
-    iget-object v0, p0, Li/a;->j:Ljava/util/HashMap;
+    iget-object v0, p0, Li/a;->k:Ljava/util/HashMap;
 
-    invoke-virtual {p0, p1, p2}, Li/b;->c(Ljava/lang/Object;Ljava/lang/Object;)Li/b$c;
+    invoke-virtual {p0, p1, p2}, Li/b;->d(Ljava/lang/Object;Ljava/lang/Object;)Li/b$c;
 
     move-result-object p2
 
@@ -128,7 +128,7 @@
     return-object p1
 .end method
 
-.method public e(Ljava/lang/Object;)Ljava/lang/Object;
+.method public f(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -137,12 +137,12 @@
     .end annotation
 
     .line 1
-    invoke-super {p0, p1}, Li/b;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-super {p0, p1}, Li/b;->f(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Li/a;->j:Ljava/util/HashMap;
+    iget-object v1, p0, Li/a;->k:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 

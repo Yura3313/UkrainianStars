@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/fragment/app/l;
+.field public final synthetic g:Landroidx/fragment/app/l;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/fragment/app/l$c;->a:Landroidx/fragment/app/l;
+    iput-object p1, p0, Landroidx/fragment/app/l$c;->g:Landroidx/fragment/app/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,10 +44,10 @@
     .end annotation
 
     .line 1
-    iget-object p1, p0, Landroidx/fragment/app/l$c;->a:Landroidx/fragment/app/l;
+    iget-object p1, p0, Landroidx/fragment/app/l$c;->g:Landroidx/fragment/app/l;
 
     .line 2
-    iget-object v0, p1, Landroidx/fragment/app/l;->m0:Landroid/app/Dialog;
+    iget-object v0, p1, Landroidx/fragment/app/l;->n0:Landroid/app/Dialog;
 
     if-eqz v0, :cond_0
 

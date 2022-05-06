@@ -2,66 +2,63 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lj3/wc0;
-
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/lang/Object;",
-        "Lj3/wc0<",
-        "Lj3/za0;",
-        ">;"
+        "<S::",
+        "Lj3/cd0<",
+        "*>;>",
+        "Ljava/lang/Object;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Landroid/content/Context;
+.field public final a:Lj3/im0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/im0<",
+            "TS;>;"
+        }
+    .end annotation
+.end field
 
-.field public final b:Lj3/am0;
+.field public final b:J
+
+.field public final c:Lk2/c;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lj3/am0;)V
-    .locals 0
+.method public constructor <init>(Lj3/im0;JLk2/c;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/im0<",
+            "TS;>;J",
+            "Lk2/c;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj3/wa0;->a:Landroid/content/Context;
+    iput-object p1, p0, Lj3/wa0;->a:Lj3/im0;
 
     .line 3
-    iput-object p2, p0, Lj3/wa0;->b:Lj3/am0;
+    iput-object p4, p0, Lj3/wa0;->c:Lk2/c;
+
+    .line 4
+    invoke-interface {p4}, Lk2/c;->b()J
+
+    move-result-wide v0
+
+    add-long/2addr v0, p2
+
+    iput-wide v0, p0, Lj3/wa0;->b:J
 
     return-void
-.end method
-
-
-# virtual methods
-.method public final a()Lj3/yl0;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lj3/yl0<",
-            "Lj3/za0;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lj3/wa0;->b:Lj3/am0;
-
-    new-instance v1, Lj3/ya0;
-
-    invoke-direct {v1, p0}, Lj3/ya0;-><init>(Lj3/wa0;)V
-
-    invoke-interface {v0, v1}, Lj3/am0;->a(Ljava/util/concurrent/Callable;)Lj3/yl0;
-
-    move-result-object v0
-
-    return-object v0
 .end method

@@ -1,5 +1,5 @@
 .class public Lt9/c;
-.super Ly7/g;
+.super Lz7/g;
 .source "FaqsDM.java"
 
 
@@ -30,7 +30,7 @@
 
     iput-object p5, p0, Lt9/c;->e:Lcom/helpshift/util/h;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -64,15 +64,15 @@
     :cond_0
     iget-object v3, p0, Lt9/c;->f:Lt9/e;
 
-    iget-object v3, v3, Lt9/e;->a:Ly7/f;
+    iget-object v3, v3, Lt9/e;->a:Lz7/f;
 
     .line 5
-    iget-object v3, v3, Ly7/f;->f:Lh8/b;
+    iget-object v3, v3, Lz7/f;->f:Li8/b;
 
     const-string v4, "defaultFallbackLanguageEnable"
 
     .line 6
-    invoke-virtual {v3, v4}, Lh8/b;->c(Ljava/lang/String;)Z
+    invoke-virtual {v3, v4}, Li8/b;->c(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -108,54 +108,54 @@
     move-result-object v3
 
     .line 9
-    new-instance v4, Ld8/i;
+    new-instance v4, Lj3/lk;
 
-    invoke-direct {v4, v1}, Ld8/i;-><init>(Ljava/util/Map;)V
+    invoke-direct {v4, v1}, Lj3/lk;-><init>(Ljava/util/Map;)V
 
     .line 10
     iget-object v1, p0, Lt9/c;->f:Lt9/e;
 
-    invoke-virtual {v1, v4, v2}, Lt9/e;->d(Ld8/i;Ljava/lang/String;)V
+    invoke-virtual {v1, v4, v2}, Lt9/e;->d(Lj3/lk;Ljava/lang/String;)V
 
     .line 11
     iget-object v1, p0, Lt9/c;->f:Lt9/e;
 
-    invoke-virtual {v1, v3}, Lt9/e;->a(Ljava/lang/String;)La8/i;
+    invoke-virtual {v1, v3}, Lt9/e;->a(Ljava/lang/String;)Lb8/i;
 
     move-result-object v1
 
     .line 12
-    check-cast v1, La8/d;
+    check-cast v1, Lj3/v6;
 
-    invoke-virtual {v1, v4}, La8/d;->c(Ld8/i;)Ld8/j;
+    invoke-virtual {v1, v4}, Lj3/v6;->e(Lj3/lk;)Le8/i;
 
     move-result-object v1
 
     .line 13
     iget-object v2, p0, Lt9/c;->f:Lt9/e;
 
-    iget-object v2, v2, Lt9/e;->b:Lc8/o;
+    iget-object v2, v2, Lt9/e;->b:Ld8/r;
 
-    check-cast v2, Lc8/i;
+    check-cast v2, Ld8/j;
 
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
-    new-instance v2, Lc8/j;
+    new-instance v2, Ld8/k;
 
-    invoke-direct {v2}, Lc8/j;-><init>()V
+    invoke-direct {v2}, Ld8/k;-><init>()V
 
     .line 15
-    iget-object v1, v1, Ld8/j;->b:Ljava/lang/String;
+    iget-object v1, v1, Le8/i;->b:Ljava/lang/String;
 
-    invoke-virtual {v2, v1}, Lc8/j;->Q(Ljava/lang/String;)Lt9/a;
+    invoke-virtual {v2, v1}, Ld8/k;->Q(Ljava/lang/String;)Lt9/a;
 
     move-result-object v1
 
     .line 16
     iget-object v2, p0, Lt9/c;->e:Lcom/helpshift/util/h;
 
-    invoke-interface {v2, v1}, Lcom/helpshift/util/h;->f(Ljava/lang/Object;)V
+    invoke-interface {v2, v1}, Lcom/helpshift/util/h;->e(Ljava/lang/Object;)V
     :try_end_0
     .catch Lcom/helpshift/common/exception/RootAPIException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -165,9 +165,9 @@
     move-exception v1
 
     .line 17
-    iget-object v2, v1, Lcom/helpshift/common/exception/RootAPIException;->h:Lb8/a;
+    iget-object v2, v1, Lcom/helpshift/common/exception/RootAPIException;->i:Lc8/a;
 
-    sget-object v3, Lb8/b;->CONTENT_UNCHANGED:Lb8/b;
+    sget-object v3, Lc8/b;->C:Lc8/b;
 
     if-eq v2, v3, :cond_5
 
@@ -177,7 +177,7 @@
     move-result v1
 
     .line 19
-    sget-object v2, La8/j;->e:Ljava/lang/Integer;
+    sget-object v2, Lb8/j;->e:Ljava/lang/Integer;
 
     invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
 
@@ -185,7 +185,7 @@
 
     if-eq v1, v2, :cond_1
 
-    sget-object v2, La8/j;->f:Ljava/lang/Integer;
+    sget-object v2, Lb8/j;->f:Ljava/lang/Integer;
 
     invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
 
@@ -202,11 +202,11 @@
     .line 21
     iget-object v2, p0, Lt9/c;->f:Lt9/e;
 
-    iget-object v2, v2, Lt9/e;->b:Lc8/o;
+    iget-object v2, v2, Lt9/e;->b:Ld8/r;
 
-    check-cast v2, Lc8/i;
+    check-cast v2, Ld8/j;
 
-    invoke-virtual {v2}, Lc8/i;->f()Lq8/b;
+    invoke-virtual {v2}, Ld8/j;->f()Lr8/b;
 
     move-result-object v2
 
@@ -214,10 +214,10 @@
 
     iget-object v4, p0, Lt9/c;->b:Ljava/lang/String;
 
-    check-cast v2, Lc8/a;
+    check-cast v2, Ld8/a;
 
     .line 22
-    iget-object v2, v2, Lc8/a;->a:Lw7/a;
+    iget-object v2, v2, Ld8/a;->a:Lx7/a;
 
     .line 23
     monitor-enter v2
@@ -252,7 +252,7 @@
     aput-object v4, v6, v0
 
     .line 25
-    iget-object v0, v2, Lw7/a;->a:Lg9/a;
+    iget-object v0, v2, Lx7/a;->a:Lg9/a;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -277,7 +277,7 @@
     const-string v4, "Error in removeAdminFAQSuggestion"
 
     .line 27
-    invoke-static {v3, v4, v0}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v3, v4, v0}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
@@ -300,7 +300,7 @@
     const-string v0, "/faqs/"
 
     .line 29
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -315,19 +315,19 @@
     .line 30
     iget-object v2, p0, Lt9/c;->f:Lt9/e;
 
-    iget-object v2, v2, Lt9/e;->b:Lc8/o;
+    iget-object v2, v2, Lt9/e;->b:Ld8/r;
 
-    check-cast v2, Lc8/i;
+    check-cast v2, Ld8/j;
 
-    invoke-virtual {v2}, Lc8/i;->a()Ld8/e;
+    invoke-virtual {v2}, Ld8/j;->a()Le8/e;
 
     move-result-object v2
 
     const-string v3, ""
 
-    check-cast v2, Lj3/k7;
+    check-cast v2, Ld8/i;
 
-    invoke-virtual {v2, v0, v3}, Lj3/k7;->h(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v0, v3}, Ld8/i;->f(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 31
     :cond_4

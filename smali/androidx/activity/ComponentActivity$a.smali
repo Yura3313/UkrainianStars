@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/activity/ComponentActivity;
+.field public final synthetic g:Landroidx/activity/ComponentActivity;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/activity/ComponentActivity$a;->a:Landroidx/activity/ComponentActivity;
+    iput-object p1, p0, Landroidx/activity/ComponentActivity$a;->g:Landroidx/activity/ComponentActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,7 +40,7 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Landroidx/activity/ComponentActivity$a;->a:Landroidx/activity/ComponentActivity;
+    iget-object v0, p0, Landroidx/activity/ComponentActivity$a;->g:Landroidx/activity/ComponentActivity;
 
     invoke-static {v0}, Landroidx/activity/ComponentActivity;->access$001(Landroidx/activity/ComponentActivity;)V
     :try_end_0

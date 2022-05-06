@@ -14,31 +14,31 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lcom/google/protobuf/b0;
+.field public static final enum i:Lcom/google/protobuf/b0;
 
-.field public static final enum BOOLEAN:Lcom/google/protobuf/b0;
+.field public static final enum j:Lcom/google/protobuf/b0;
 
-.field public static final enum BYTE_STRING:Lcom/google/protobuf/b0;
+.field public static final enum k:Lcom/google/protobuf/b0;
 
-.field public static final enum DOUBLE:Lcom/google/protobuf/b0;
+.field public static final enum l:Lcom/google/protobuf/b0;
 
-.field public static final enum ENUM:Lcom/google/protobuf/b0;
+.field public static final enum m:Lcom/google/protobuf/b0;
 
-.field public static final enum FLOAT:Lcom/google/protobuf/b0;
+.field public static final enum n:Lcom/google/protobuf/b0;
 
-.field public static final enum INT:Lcom/google/protobuf/b0;
+.field public static final enum o:Lcom/google/protobuf/b0;
 
-.field public static final enum LONG:Lcom/google/protobuf/b0;
+.field public static final enum p:Lcom/google/protobuf/b0;
 
-.field public static final enum MESSAGE:Lcom/google/protobuf/b0;
+.field public static final enum q:Lcom/google/protobuf/b0;
 
-.field public static final enum STRING:Lcom/google/protobuf/b0;
+.field public static final enum r:Lcom/google/protobuf/b0;
 
-.field public static final enum VOID:Lcom/google/protobuf/b0;
+.field public static final synthetic s:[Lcom/google/protobuf/b0;
 
 
 # instance fields
-.field private final boxedType:Ljava/lang/Class;
+.field public final g:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -47,16 +47,7 @@
     .end annotation
 .end field
 
-.field private final defaultDefault:Ljava/lang/Object;
-
-.field private final type:Ljava/lang/Class;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/Class<",
-            "*>;"
-        }
-    .end annotation
-.end field
+.field public final h:Ljava/lang/Object;
 
 
 # direct methods
@@ -80,7 +71,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v6, Lcom/google/protobuf/b0;->VOID:Lcom/google/protobuf/b0;
+    sput-object v6, Lcom/google/protobuf/b0;->i:Lcom/google/protobuf/b0;
 
     .line 2
     new-instance v0, Lcom/google/protobuf/b0;
@@ -103,7 +94,7 @@
 
     invoke-direct/range {v7 .. v12}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v0, Lcom/google/protobuf/b0;->INT:Lcom/google/protobuf/b0;
+    sput-object v0, Lcom/google/protobuf/b0;->j:Lcom/google/protobuf/b0;
 
     .line 3
     new-instance v3, Lcom/google/protobuf/b0;
@@ -126,7 +117,7 @@
 
     invoke-direct/range {v13 .. v18}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v3, Lcom/google/protobuf/b0;->LONG:Lcom/google/protobuf/b0;
+    sput-object v3, Lcom/google/protobuf/b0;->k:Lcom/google/protobuf/b0;
 
     .line 4
     new-instance v4, Lcom/google/protobuf/b0;
@@ -149,7 +140,7 @@
 
     invoke-direct/range {v7 .. v12}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v4, Lcom/google/protobuf/b0;->FLOAT:Lcom/google/protobuf/b0;
+    sput-object v4, Lcom/google/protobuf/b0;->l:Lcom/google/protobuf/b0;
 
     .line 5
     new-instance v5, Lcom/google/protobuf/b0;
@@ -172,7 +163,7 @@
 
     invoke-direct/range {v13 .. v18}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v5, Lcom/google/protobuf/b0;->DOUBLE:Lcom/google/protobuf/b0;
+    sput-object v5, Lcom/google/protobuf/b0;->m:Lcom/google/protobuf/b0;
 
     .line 6
     new-instance v13, Lcom/google/protobuf/b0;
@@ -191,7 +182,7 @@
 
     invoke-direct/range {v7 .. v12}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v13, Lcom/google/protobuf/b0;->BOOLEAN:Lcom/google/protobuf/b0;
+    sput-object v13, Lcom/google/protobuf/b0;->n:Lcom/google/protobuf/b0;
 
     .line 7
     new-instance v20, Lcom/google/protobuf/b0;
@@ -210,7 +201,7 @@
 
     invoke-direct/range {v14 .. v19}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v20, Lcom/google/protobuf/b0;->STRING:Lcom/google/protobuf/b0;
+    sput-object v20, Lcom/google/protobuf/b0;->o:Lcom/google/protobuf/b0;
 
     .line 8
     new-instance v14, Lcom/google/protobuf/b0;
@@ -219,7 +210,7 @@
 
     const-class v11, Lcom/google/protobuf/i;
 
-    sget-object v12, Lcom/google/protobuf/i;->b:Lcom/google/protobuf/i;
+    sget-object v12, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
 
     const-string v8, "BYTE_STRING"
 
@@ -229,7 +220,7 @@
 
     invoke-direct/range {v7 .. v12}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v14, Lcom/google/protobuf/b0;->BYTE_STRING:Lcom/google/protobuf/b0;
+    sput-object v14, Lcom/google/protobuf/b0;->p:Lcom/google/protobuf/b0;
 
     .line 9
     new-instance v15, Lcom/google/protobuf/b0;
@@ -248,7 +239,7 @@
 
     invoke-direct/range {v7 .. v12}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v15, Lcom/google/protobuf/b0;->ENUM:Lcom/google/protobuf/b0;
+    sput-object v15, Lcom/google/protobuf/b0;->q:Lcom/google/protobuf/b0;
 
     .line 10
     new-instance v1, Lcom/google/protobuf/b0;
@@ -267,7 +258,7 @@
 
     invoke-direct/range {v21 .. v26}, Lcom/google/protobuf/b0;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v1, Lcom/google/protobuf/b0;->MESSAGE:Lcom/google/protobuf/b0;
+    sput-object v1, Lcom/google/protobuf/b0;->r:Lcom/google/protobuf/b0;
 
     const/16 v7, 0xa
 
@@ -312,12 +303,12 @@
     aput-object v1, v7, v0
 
     .line 11
-    sput-object v7, Lcom/google/protobuf/b0;->$VALUES:[Lcom/google/protobuf/b0;
+    sput-object v7, Lcom/google/protobuf/b0;->s:[Lcom/google/protobuf/b0;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
+.method public constructor <init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -335,13 +326,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput-object p3, p0, Lcom/google/protobuf/b0;->type:Ljava/lang/Class;
+    iput-object p4, p0, Lcom/google/protobuf/b0;->g:Ljava/lang/Class;
 
     .line 3
-    iput-object p4, p0, Lcom/google/protobuf/b0;->boxedType:Ljava/lang/Class;
-
-    .line 4
-    iput-object p5, p0, Lcom/google/protobuf/b0;->defaultDefault:Ljava/lang/Object;
+    iput-object p5, p0, Lcom/google/protobuf/b0;->h:Ljava/lang/Object;
 
     return-void
 .end method
@@ -365,7 +353,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/google/protobuf/b0;->$VALUES:[Lcom/google/protobuf/b0;
+    sget-object v0, Lcom/google/protobuf/b0;->s:[Lcom/google/protobuf/b0;
 
     invoke-virtual {v0}, [Lcom/google/protobuf/b0;->clone()Ljava/lang/Object;
 
@@ -374,67 +362,4 @@
     check-cast v0, [Lcom/google/protobuf/b0;
 
     return-object v0
-.end method
-
-
-# virtual methods
-.method public getBoxedType()Ljava/lang/Class;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/lang/Class<",
-            "*>;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lcom/google/protobuf/b0;->boxedType:Ljava/lang/Class;
-
-    return-object v0
-.end method
-
-.method public getDefaultDefault()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/protobuf/b0;->defaultDefault:Ljava/lang/Object;
-
-    return-object v0
-.end method
-
-.method public getType()Ljava/lang/Class;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/lang/Class<",
-            "*>;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lcom/google/protobuf/b0;->type:Ljava/lang/Class;
-
-    return-object v0
-.end method
-
-.method public isValidType(Ljava/lang/Class;)Z
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Class<",
-            "*>;)Z"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lcom/google/protobuf/b0;->type:Ljava/lang/Class;
-
-    invoke-virtual {v0, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
-
-    move-result p1
-
-    return p1
 .end method

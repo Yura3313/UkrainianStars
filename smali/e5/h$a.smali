@@ -47,11 +47,11 @@
     check-cast p1, Ll5/b1;
 
     .line 2
-    invoke-virtual {p1}, Ll5/b1;->u()Ll5/c1;
+    invoke-virtual {p1}, Ll5/b1;->t()Ll5/c1;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Ll5/c1;->t()Ljava/lang/String;
+    invoke-virtual {p1}, Ll5/c1;->s()Ljava/lang/String;
 
     move-result-object p1
 

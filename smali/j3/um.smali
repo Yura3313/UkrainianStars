@@ -1,21 +1,22 @@
-.class public Lj3/um;
+.class public final Lj3/um;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# instance fields
-.field public final a:Landroid/view/ViewGroup;
+# static fields
+.field public static final a:Lcom/google/android/gms/internal/ads/h;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/ViewGroup;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lcom/google/android/gms/internal/ads/h;
 
-    .line 2
-    iput-object p1, p0, Lj3/um;->a:Landroid/view/ViewGroup;
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/h;-><init>()V
+
+    sput-object v0, Lj3/um;->a:Lcom/google/android/gms/internal/ads/h;
 
     return-void
 .end method

@@ -3,23 +3,28 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/util/concurrent/Callable;
+.implements Lj3/ql0;
 
 
-# instance fields
-.field public final synthetic a:I
-
-.field public final b:Ljava/lang/Object;
+# static fields
+.field public static final a:Lj3/ql0;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lj3/x10;
+
+    invoke-direct {v0}, Lj3/x10;-><init>()V
+
+    sput-object v0, Lj3/x10;->a:Lj3/ql0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
-
-    .line 1
-    iput p2, p0, Lj3/x10;->a:I
-
-    iput-object p1, p0, Lj3/x10;->b:Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,72 +33,20 @@
 
 
 # virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 3
-
-    iget v0, p0, Lj3/x10;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_1
+.method public final a(Ljava/lang/Object;)Lj3/im0;
+    .locals 0
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/x10;->b:Ljava/lang/Object;
-
-    check-cast v0, Landroid/webkit/CookieManager;
-
-    if-nez v0, :cond_0
-
-    const-string v0, ""
-
-    goto :goto_0
+    check-cast p1, Ljava/util/concurrent/ExecutionException;
 
     .line 2
-    :cond_0
-    sget-object v1, Lj3/n;->m0:Lj3/f;
+    invoke-virtual {p1}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;
 
-    .line 3
-    sget-object v2, Lj3/w41;->j:Lj3/w41;
+    move-result-object p1
 
-    iget-object v2, v2, Lj3/w41;->f:Lj3/l;
+    invoke-static {p1}, Lj3/em0;->e(Ljava/lang/Throwable;)Lj3/im0;
 
-    .line 4
-    invoke-virtual {v2, v1}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+    move-result-object p1
 
-    move-result-object v1
-
-    .line 5
-    check-cast v1, Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Landroid/webkit/CookieManager;->getCookie(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    :goto_0
-    return-object v0
-
-    .line 6
-    :goto_1
-    iget-object v0, p0, Lj3/x10;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/xb0;
-
-    .line 7
-    new-instance v1, Lj3/j90;
-
-    iget-object v0, v0, Lj3/xb0;->b:Landroid/os/Bundle;
-
-    const/4 v2, 0x1
-
-    invoke-direct {v1, v0, v2}, Lj3/j90;-><init>(Ljava/lang/Object;I)V
-
-    return-object v1
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object p1
 .end method

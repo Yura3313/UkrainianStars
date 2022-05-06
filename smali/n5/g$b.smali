@@ -53,16 +53,16 @@
     check-cast p1, Ll5/h1;
 
     .line 2
-    invoke-virtual {p1}, Ll5/h1;->t()Ll5/i1;
+    invoke-virtual {p1}, Ll5/h1;->s()Ll5/i1;
 
     move-result-object v0
 
     .line 3
-    sget-object v1, Lp5/x;->i:Lp5/x;
+    sget-object v1, Lp5/z;->i:Lp5/z;
 
     const-string v2, "RSA"
 
-    invoke-virtual {v1, v2}, Lp5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Lp5/z;->a(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -72,18 +72,18 @@
     new-instance v2, Ljava/security/spec/RSAKeyGenParameterSpec;
 
     .line 5
-    invoke-virtual {p1}, Ll5/h1;->s()I
+    invoke-virtual {p1}, Ll5/h1;->r()I
 
     move-result v3
 
     new-instance v4, Ljava/math/BigInteger;
 
     .line 6
-    invoke-virtual {p1}, Ll5/h1;->u()Lm5/c;
+    invoke-virtual {p1}, Ll5/h1;->t()Lm5/c;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lm5/c;->n()[B
+    invoke-virtual {p1}, Lm5/c;->m()[B
 
     move-result-object p1
 
@@ -116,7 +116,7 @@
     check-cast p1, Ljava/security/interfaces/RSAPrivateCrtKey;
 
     .line 11
-    invoke-static {}, Ll5/k1;->B()Ll5/k1$b;
+    invoke-static {}, Ll5/k1;->A()Ll5/k1$b;
 
     move-result-object v2
 
@@ -129,23 +129,23 @@
     invoke-virtual {v2}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 14
-    iget-object v3, v2, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object v3, v2, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast v3, Ll5/k1;
 
     const/4 v4, 0x0
 
-    invoke-static {v3, v4}, Ll5/k1;->s(Ll5/k1;I)V
+    invoke-static {v3, v4}, Ll5/k1;->r(Ll5/k1;I)V
 
     .line 15
     invoke-virtual {v2}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 16
-    iget-object v3, v2, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object v3, v2, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast v3, Ll5/k1;
 
-    invoke-static {v3, v0}, Ll5/k1;->t(Ll5/k1;Ll5/i1;)V
+    invoke-static {v3, v0}, Ll5/k1;->s(Ll5/k1;Ll5/i1;)V
 
     .line 17
     invoke-interface {v1}, Ljava/security/interfaces/RSAPublicKey;->getPublicExponent()Ljava/math/BigInteger;
@@ -156,7 +156,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lm5/c;->c([B)Lm5/c;
+    invoke-static {v0}, Lm5/c;->d([B)Lm5/c;
 
     move-result-object v0
 
@@ -164,11 +164,11 @@
     invoke-virtual {v2}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 19
-    iget-object v3, v2, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object v3, v2, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast v3, Ll5/k1;
 
-    invoke-static {v3, v0}, Ll5/k1;->v(Ll5/k1;Lm5/c;)V
+    invoke-static {v3, v0}, Ll5/k1;->u(Ll5/k1;Lm5/c;)V
 
     .line 20
     invoke-interface {v1}, Ljava/security/interfaces/RSAPublicKey;->getModulus()Ljava/math/BigInteger;
@@ -179,7 +179,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lm5/c;->c([B)Lm5/c;
+    invoke-static {v0}, Lm5/c;->d([B)Lm5/c;
 
     move-result-object v0
 
@@ -187,11 +187,11 @@
     invoke-virtual {v2}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 22
-    iget-object v1, v2, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object v1, v2, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast v1, Ll5/k1;
 
-    invoke-static {v1, v0}, Ll5/k1;->u(Ll5/k1;Lm5/c;)V
+    invoke-static {v1, v0}, Ll5/k1;->t(Ll5/k1;Lm5/c;)V
 
     .line 23
     invoke-virtual {v2}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->c()Lcom/google/crypto/tink/shaded/protobuf/o;
@@ -201,7 +201,7 @@
     check-cast v0, Ll5/k1;
 
     .line 24
-    invoke-static {}, Ll5/j1;->I()Ll5/j1$b;
+    invoke-static {}, Ll5/j1;->H()Ll5/j1$b;
 
     move-result-object v1
 
@@ -214,21 +214,21 @@
     invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 27
-    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast v2, Ll5/j1;
 
-    invoke-static {v2, v4}, Ll5/j1;->s(Ll5/j1;I)V
+    invoke-static {v2, v4}, Ll5/j1;->r(Ll5/j1;I)V
 
     .line 28
     invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 29
-    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast v2, Ll5/j1;
 
-    invoke-static {v2, v0}, Ll5/j1;->x(Ll5/j1;Ll5/k1;)V
+    invoke-static {v2, v0}, Ll5/j1;->w(Ll5/j1;Ll5/k1;)V
 
     .line 30
     invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateCrtKey;->getPrivateExponent()Ljava/math/BigInteger;
@@ -239,7 +239,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lm5/c;->c([B)Lm5/c;
+    invoke-static {v0}, Lm5/c;->d([B)Lm5/c;
 
     move-result-object v0
 
@@ -247,11 +247,11 @@
     invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 32
-    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast v2, Ll5/j1;
 
-    invoke-static {v2, v0}, Ll5/j1;->y(Ll5/j1;Lm5/c;)V
+    invoke-static {v2, v0}, Ll5/j1;->x(Ll5/j1;Lm5/c;)V
 
     .line 33
     invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateCrtKey;->getPrimeP()Ljava/math/BigInteger;
@@ -262,7 +262,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lm5/c;->c([B)Lm5/c;
+    invoke-static {v0}, Lm5/c;->d([B)Lm5/c;
 
     move-result-object v0
 
@@ -270,11 +270,11 @@
     invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 35
-    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast v2, Ll5/j1;
 
-    invoke-static {v2, v0}, Ll5/j1;->z(Ll5/j1;Lm5/c;)V
+    invoke-static {v2, v0}, Ll5/j1;->y(Ll5/j1;Lm5/c;)V
 
     .line 36
     invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateCrtKey;->getPrimeQ()Ljava/math/BigInteger;
@@ -285,7 +285,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lm5/c;->c([B)Lm5/c;
+    invoke-static {v0}, Lm5/c;->d([B)Lm5/c;
 
     move-result-object v0
 
@@ -293,11 +293,11 @@
     invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 38
-    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast v2, Ll5/j1;
 
-    invoke-static {v2, v0}, Ll5/j1;->t(Ll5/j1;Lm5/c;)V
+    invoke-static {v2, v0}, Ll5/j1;->s(Ll5/j1;Lm5/c;)V
 
     .line 39
     invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateCrtKey;->getPrimeExponentP()Ljava/math/BigInteger;
@@ -308,7 +308,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lm5/c;->c([B)Lm5/c;
+    invoke-static {v0}, Lm5/c;->d([B)Lm5/c;
 
     move-result-object v0
 
@@ -316,11 +316,11 @@
     invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 41
-    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast v2, Ll5/j1;
 
-    invoke-static {v2, v0}, Ll5/j1;->u(Ll5/j1;Lm5/c;)V
+    invoke-static {v2, v0}, Ll5/j1;->t(Ll5/j1;Lm5/c;)V
 
     .line 42
     invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateCrtKey;->getPrimeExponentQ()Ljava/math/BigInteger;
@@ -331,7 +331,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lm5/c;->c([B)Lm5/c;
+    invoke-static {v0}, Lm5/c;->d([B)Lm5/c;
 
     move-result-object v0
 
@@ -339,11 +339,11 @@
     invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 44
-    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast v2, Ll5/j1;
 
-    invoke-static {v2, v0}, Ll5/j1;->v(Ll5/j1;Lm5/c;)V
+    invoke-static {v2, v0}, Ll5/j1;->u(Ll5/j1;Lm5/c;)V
 
     .line 45
     invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateCrtKey;->getCrtCoefficient()Ljava/math/BigInteger;
@@ -354,7 +354,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Lm5/c;->c([B)Lm5/c;
+    invoke-static {p1}, Lm5/c;->d([B)Lm5/c;
 
     move-result-object p1
 
@@ -362,11 +362,11 @@
     invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 47
-    iget-object v0, v1, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object v0, v1, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast v0, Ll5/j1;
 
-    invoke-static {v0, p1}, Ll5/j1;->w(Ll5/j1;Lm5/c;)V
+    invoke-static {v0, p1}, Ll5/j1;->v(Ll5/j1;Lm5/c;)V
 
     .line 48
     invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->c()Lcom/google/crypto/tink/shaded/protobuf/o;
@@ -391,7 +391,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Ll5/h1;->v(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/h1;
+    invoke-static {p1, v0}, Ll5/h1;->u(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/h1;
 
     move-result-object p1
 
@@ -410,14 +410,14 @@
     check-cast p1, Ll5/h1;
 
     .line 2
-    invoke-virtual {p1}, Ll5/h1;->t()Ll5/i1;
+    invoke-virtual {p1}, Ll5/h1;->s()Ll5/i1;
 
     move-result-object v0
 
     invoke-static {v0}, Ln5/k;->e(Ll5/i1;)V
 
     .line 3
-    invoke-virtual {p1}, Ll5/h1;->s()I
+    invoke-virtual {p1}, Ll5/h1;->r()I
 
     move-result p1
 

@@ -88,7 +88,7 @@
     :cond_0
     const-string p0, "resultReceiver"
 
-    invoke-static {p0}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {p0}, Ls3/b;->i(Ljava/lang/String;)V
 
     const/4 p0, 0x0
 
@@ -133,7 +133,7 @@
     :cond_0
     const-string p1, "resultReceiver"
 
-    invoke-static {p1}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->i(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -345,7 +345,7 @@
     const-string v4, "access_denied"
 
     .line 10
-    invoke-static {p3, v4}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p3, v4}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -457,7 +457,7 @@
     const-string p1, "resultReceiver"
 
     .line 23
-    invoke-static {p1}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->i(Ljava/lang/String;)V
 
     throw v1
 
@@ -516,7 +516,7 @@
 
     const-string v1, "intent"
 
-    invoke-static {p1, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -720,14 +720,14 @@
 
     const-string v4, "keySet()"
 
-    invoke-static {v2, v4}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 16
     new-instance v4, Ljava/util/ArrayList;
 
     const/16 v5, 0xa
 
-    invoke-static {v2, v5}, Lce/h;->E(Ljava/lang/Iterable;I)I
+    invoke-static {v2, v5}, Lbe/g;->v(Ljava/lang/Iterable;I)I
 
     move-result v5
 

@@ -1,54 +1,79 @@
-.class public final synthetic Lj3/h90;
+.class public final Lj3/h90;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/gl0;
+.implements Lj3/ed0;
 
 
-# static fields
-.field public static final a:Lj3/gl0;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj3/ed0<",
+        "Lj3/i90;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Lj3/km0;
+
+.field public final b:Landroid/content/Context;
+
+.field public final c:Lj3/wg0;
+
+.field public final d:Landroid/view/View;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lj3/h90;
-
-    invoke-direct {v0}, Lj3/h90;-><init>()V
-
-    sput-object v0, Lj3/h90;->a:Lj3/gl0;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lj3/km0;Landroid/content/Context;Lj3/wg0;Landroid/view/ViewGroup;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lj3/h90;->a:Lj3/km0;
+
+    .line 3
+    iput-object p2, p0, Lj3/h90;->b:Landroid/content/Context;
+
+    .line 4
+    iput-object p3, p0, Lj3/h90;->c:Lj3/wg0;
+
+    .line 5
+    iput-object p4, p0, Lj3/h90;->d:Landroid/view/View;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lj3/yl0;
-    .locals 2
+.method public final a()Lj3/im0;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lj3/im0<",
+            "Lj3/i90;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    check-cast p1, Ljava/lang/String;
+    iget-object v0, p0, Lj3/h90;->a:Lj3/km0;
 
-    .line 2
-    new-instance v0, Lj3/j90;
+    new-instance v1, Lj3/k90;
 
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
-    invoke-direct {v0, p1, v1}, Lj3/j90;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, p0, v2}, Lj3/k90;-><init>(Ljava/lang/Object;I)V
 
-    invoke-static {v0}, Lj3/ul0;->i(Ljava/lang/Object;)Lj3/yl0;
+    invoke-interface {v0, v1}, Lj3/km0;->c(Ljava/util/concurrent/Callable;)Lj3/im0;
 
-    move-result-object p1
+    move-result-object v0
 
-    return-object p1
+    return-object v0
 .end method

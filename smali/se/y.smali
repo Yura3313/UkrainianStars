@@ -3,7 +3,7 @@
 .source "CoroutineContext.kt"
 
 # interfaces
-.implements Lse/q1;
+.implements Lse/p1;
 
 
 # annotations
@@ -16,7 +16,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lde/a;",
-        "Lse/q1<",
+        "Lse/p1<",
         "Ljava/lang/String;",
         ">;"
     }
@@ -24,11 +24,11 @@
 
 
 # static fields
-.field public static final b:Lse/y$a;
+.field public static final h:Lse/y$a;
 
 
 # instance fields
-.field public final a:J
+.field public final g:J
 
 
 # direct methods
@@ -41,7 +41,7 @@
 
     invoke-direct {v0, v1}, Lse/y$a;-><init>(Lle/g;)V
 
-    sput-object v0, Lse/y;->b:Lse/y$a;
+    sput-object v0, Lse/y;->h:Lse/y$a;
 
     return-void
 .end method
@@ -50,24 +50,24 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lse/y;->b:Lse/y$a;
+    sget-object v0, Lse/y;->h:Lse/y$a;
 
     invoke-direct {p0, v0}, Lde/a;-><init>(Lde/f$c;)V
 
-    iput-wide p1, p0, Lse/y;->a:J
+    iput-wide p1, p0, Lse/y;->g:J
 
     return-void
 .end method
 
 
 # virtual methods
-.method public c(Lde/f;)Ljava/lang/Object;
+.method public d(Lde/f;)Ljava/lang/Object;
     .locals 6
 
     if-eqz p1, :cond_1
 
     .line 1
-    sget-object v0, Lse/z;->a:Lse/z$a;
+    sget-object v0, Lse/z;->g:Lse/z$a;
 
     invoke-interface {p1, v0}, Lde/f;->get(Lde/f$c;)Lde/f$b;
 
@@ -83,7 +83,7 @@
     const-string v0, "currentThread"
 
     .line 3
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Ljava/lang/Thread;->getName()Ljava/lang/String;
 
@@ -92,7 +92,7 @@
     const-string v1, "oldName"
 
     .line 4
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v1, 0x6
 
@@ -100,7 +100,7 @@
 
     const/4 v3, 0x0
 
-    invoke-static {v0, v2, v3, v3, v1}, Lre/s;->A(Ljava/lang/CharSequence;Ljava/lang/String;IZI)I
+    invoke-static {v0, v2, v3, v3, v1}, Lre/r;->u(Ljava/lang/CharSequence;Ljava/lang/String;IZI)I
 
     move-result v1
 
@@ -130,7 +130,7 @@
 
     const-string v3, "(this as java.lang.Strin\u2026ing(startIndex, endIndex)"
 
-    invoke-static {v1, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -148,7 +148,7 @@
     invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 11
-    iget-wide v1, p0, Lse/y;->a:J
+    iget-wide v1, p0, Lse/y;->g:J
 
     invoke-virtual {v5, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -159,7 +159,7 @@
 
     const-string v2, "StringBuilder(capacity).\u2026builderAction).toString()"
 
-    invoke-static {v1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v1}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
@@ -169,7 +169,7 @@
     const-string p1, "context"
 
     .line 13
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -191,9 +191,9 @@
 
     check-cast p1, Lse/y;
 
-    iget-wide v3, p0, Lse/y;->a:J
+    iget-wide v3, p0, Lse/y;->g:J
 
-    iget-wide v5, p1, Lse/y;->a:J
+    iget-wide v5, p1, Lse/y;->g:J
 
     cmp-long p1, v3, v5
 
@@ -246,7 +246,7 @@
     const-string p1, "operation"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -272,7 +272,7 @@
 
     const-string v0, "Thread.currentThread()"
 
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, p2}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
@@ -282,14 +282,14 @@
     const-string p1, "oldState"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_1
     const-string p1, "context"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -319,7 +319,7 @@
     const-string p1, "key"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -329,7 +329,7 @@
 .method public hashCode()I
     .locals 4
 
-    iget-wide v0, p0, Lse/y;->a:J
+    iget-wide v0, p0, Lse/y;->g:J
 
     const/16 v2, 0x20
 
@@ -366,7 +366,7 @@
     const-string p1, "key"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -389,7 +389,7 @@
     const-string p1, "context"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -402,11 +402,11 @@
     const-string v0, "CoroutineId("
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-wide v1, p0, Lse/y;->a:J
+    iget-wide v1, p0, Lse/y;->g:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 

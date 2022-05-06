@@ -1,6 +1,6 @@
 .class public final Lrd/d;
 .super Lle/j;
-.source "SettingsGeneralTabFragment.kt"
+.source "TokenLoginConfirmPageFragment.kt"
 
 # interfaces
 .implements Lke/p;
@@ -11,16 +11,16 @@
     value = {
         "Lle/j;",
         "Lke/p<",
-        "Lcom/supercell/id/ui/MainActivity;",
+        "Lrd/e;",
         "Ljava/lang/Exception;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lrd/d;
+.field public static final g:Lrd/d;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Lrd/d;-><init>()V
 
-    sput-object v0, Lrd/d;->a:Lrd/d;
+    sput-object v0, Lrd/d;->g:Lrd/d;
 
     return-void
 .end method
@@ -52,39 +52,46 @@
     .locals 2
 
     .line 1
-    check-cast p1, Lcom/supercell/id/ui/MainActivity;
+    check-cast p1, Lrd/e;
 
     check-cast p2, Ljava/lang/Exception;
 
     const/4 v0, 0x0
 
-    if-eqz p1, :cond_1
+    if-eqz p1, :cond_2
 
-    if-eqz p2, :cond_0
+    if-eqz p2, :cond_1
 
     .line 2
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 3
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->E(Ljava/lang/Exception;Lke/l;)V
+    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->F(Ljava/lang/Exception;Lke/l;)V
 
     .line 4
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    :cond_0
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
-    :cond_0
+    :cond_1
     const-string p1, "it"
 
     .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
-    :cond_1
+    :cond_2
     const-string p1, "$receiver"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

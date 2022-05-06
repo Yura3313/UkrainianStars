@@ -111,7 +111,7 @@
 
     const-string v0, "adjust.preinstall."
 
-    invoke-static {v0, p0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -223,7 +223,7 @@
 
     const-string v0, "adjust.preinstall."
 
-    invoke-static {v0, p0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -1025,11 +1025,15 @@
     new-instance v4, Ljava/io/FileInputStream;
 
     invoke-direct {v4, v0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+
+    invoke-static {v3, v0}, Lio/sentry/instrumentation/file/SentryFileInputStream$Factory;->create(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
+
+    move-result-object v0
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
     :try_start_2
-    invoke-virtual {v4, v3}, Ljava/io/FileInputStream;->read([B)I
+    invoke-virtual {v4, v4}, Ljava/io/FileInputStream;->read([B)I
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
@@ -1046,37 +1050,37 @@
     return-object v0
 
     :catchall_0
-    move-exception v0
+    move-exception v3
 
     goto :goto_0
 
     :catch_0
-    move-exception v0
+    move-exception v3
 
-    const-string v3, "Exception read file input stream error [%s]"
+    const-string v4, "Exception read file input stream error [%s]"
 
     :try_start_4
     new-array v5, p0, [Ljava/lang/Object;
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v3
 
-    aput-object v0, v5, v2
+    aput-object v3, v5, v2
 
-    invoke-interface {p1, v3, v5}, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p1, v4, v5}, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String;[Ljava/lang/Object;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     :try_start_5
-    invoke-virtual {v4}, Ljava/io/FileInputStream;->close()V
+    invoke-virtual {v0}, Ljava/io/FileInputStream;->close()V
 
     return-object v1
 
     :goto_0
-    invoke-virtual {v4}, Ljava/io/FileInputStream;->close()V
+    invoke-virtual {v0}, Ljava/io/FileInputStream;->close()V
 
-    throw v0
+    throw v3
     :try_end_5
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_1
 

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public a:Landroidx/lifecycle/k;
+.field public g:Landroidx/lifecycle/k;
 
-.field public b:Landroidx/savedstate/b;
+.field public h:Landroidx/savedstate/b;
 
 
 # direct methods
@@ -22,10 +22,10 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-object v0, p0, Landroidx/fragment/app/s0;->a:Landroidx/lifecycle/k;
+    iput-object v0, p0, Landroidx/fragment/app/s0;->g:Landroidx/lifecycle/k;
 
     .line 3
-    iput-object v0, p0, Landroidx/fragment/app/s0;->b:Landroidx/savedstate/b;
+    iput-object v0, p0, Landroidx/fragment/app/s0;->h:Landroidx/savedstate/b;
 
     return-void
 .end method
@@ -36,7 +36,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/s0;->a:Landroidx/lifecycle/k;
+    iget-object v0, p0, Landroidx/fragment/app/s0;->g:Landroidx/lifecycle/k;
 
     const-string v1, "handleLifecycleEvent"
 
@@ -44,7 +44,7 @@
     invoke-virtual {v0, v1}, Landroidx/lifecycle/k;->d(Ljava/lang/String;)V
 
     .line 3
-    invoke-virtual {p1}, Landroidx/lifecycle/f$b;->getTargetState()Landroidx/lifecycle/f$c;
+    invoke-virtual {p1}, Landroidx/lifecycle/f$b;->a()Landroidx/lifecycle/f$c;
 
     move-result-object p1
 
@@ -57,7 +57,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/s0;->a:Landroidx/lifecycle/k;
+    iget-object v0, p0, Landroidx/fragment/app/s0;->g:Landroidx/lifecycle/k;
 
     if-nez v0, :cond_0
 
@@ -66,7 +66,7 @@
 
     invoke-direct {v0, p0}, Landroidx/lifecycle/k;-><init>(Landroidx/lifecycle/j;)V
 
-    iput-object v0, p0, Landroidx/fragment/app/s0;->a:Landroidx/lifecycle/k;
+    iput-object v0, p0, Landroidx/fragment/app/s0;->g:Landroidx/lifecycle/k;
 
     .line 3
     new-instance v0, Landroidx/savedstate/b;
@@ -74,11 +74,11 @@
     invoke-direct {v0, p0}, Landroidx/savedstate/b;-><init>(Landroidx/savedstate/c;)V
 
     .line 4
-    iput-object v0, p0, Landroidx/fragment/app/s0;->b:Landroidx/savedstate/b;
+    iput-object v0, p0, Landroidx/fragment/app/s0;->h:Landroidx/savedstate/b;
 
     .line 5
     :cond_0
-    iget-object v0, p0, Landroidx/fragment/app/s0;->a:Landroidx/lifecycle/k;
+    iget-object v0, p0, Landroidx/fragment/app/s0;->g:Landroidx/lifecycle/k;
 
     return-object v0
 .end method
@@ -87,7 +87,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/s0;->b:Landroidx/savedstate/b;
+    iget-object v0, p0, Landroidx/fragment/app/s0;->h:Landroidx/savedstate/b;
 
     .line 2
     iget-object v0, v0, Landroidx/savedstate/b;->b:Landroidx/savedstate/a;

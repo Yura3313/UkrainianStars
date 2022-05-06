@@ -22,7 +22,7 @@
         value = {
             "Ljava/util/Map<",
             "Lu3/i2$a;",
-            "Lu3/v2$d<",
+            "Lu3/u2$d<",
             "**>;>;"
         }
     .end annotation

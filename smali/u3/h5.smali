@@ -1,5 +1,5 @@
 .class public final Lu3/h5;
-.super Lu3/x1;
+.super Lu3/w1;
 
 
 # direct methods
@@ -7,499 +7,1305 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lu3/x1;-><init>()V
+    invoke-direct {p0}, Lu3/w1;-><init>()V
 
     return-void
+.end method
+
+.method public static g([BIJI)I
+    .locals 3
+
+    const/4 v0, -0x1
+
+    const/16 v1, -0xc
+
+    if-eqz p4, :cond_4
+
+    const/4 v2, 0x1
+
+    if-eq p4, v2, :cond_1
+
+    const/4 v0, 0x2
+
+    if-ne p4, v0, :cond_0
+
+    .line 1
+    invoke-static {p0, p2, p3}, Lu3/b5;->a([BJ)B
+
+    move-result p4
+
+    const-wide/16 v0, 0x1
+
+    add-long/2addr p2, v0
+
+    invoke-static {p0, p2, p3}, Lu3/b5;->a([BJ)B
+
+    move-result p0
+
+    .line 2
+    invoke-static {p1, p4, p0}, Lu3/d5;->d(III)I
+
+    move-result p0
+
+    return p0
+
+    .line 3
+    :cond_0
+    new-instance p0, Ljava/lang/AssertionError;
+
+    invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
+
+    throw p0
+
+    .line 4
+    :cond_1
+    invoke-static {p0, p2, p3}, Lu3/b5;->a([BJ)B
+
+    move-result p0
+
+    sget-object p2, Lu3/d5;->a:Lu3/w1;
+
+    if-gt p1, v1, :cond_3
+
+    const/16 p2, -0x41
+
+    if-le p0, p2, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    shl-int/lit8 p0, p0, 0x8
+
+    xor-int v0, p1, p0
+
+    :cond_3
+    :goto_0
+    return v0
+
+    .line 5
+    :cond_4
+    sget-object p0, Lu3/d5;->a:Lu3/w1;
+
+    if-le p1, v1, :cond_5
+
+    const/4 p1, -0x1
+
+    :cond_5
+    return p1
 .end method
 
 
 # virtual methods
 .method public final b(I[BII)I
-    .locals 6
+    .locals 15
 
-    :goto_0
-    if-ge p3, p4, :cond_0
+    move-object/from16 v0, p2
+
+    move/from16 v1, p3
+
+    move/from16 v2, p4
+
+    or-int v3, v1, v2
 
     .line 1
-    aget-byte p1, p2, p3
+    array-length v4, v0
 
-    if-ltz p1, :cond_0
+    sub-int/2addr v4, v2
 
-    add-int/lit8 p3, p3, 0x1
+    or-int/2addr v3, v4
 
-    goto :goto_0
+    const/4 v4, 0x2
 
-    :cond_0
-    const/4 p1, 0x0
+    const/4 v5, 0x3
 
-    if-lt p3, p4, :cond_1
+    const/4 v6, 0x0
 
-    return p1
+    if-ltz v3, :cond_12
 
-    :cond_1
-    :goto_1
-    if-lt p3, p4, :cond_2
+    int-to-long v7, v1
 
-    return p1
+    int-to-long v1, v2
 
-    :cond_2
-    add-int/lit8 v0, p3, 0x1
+    sub-long/2addr v1, v7
 
-    .line 2
-    aget-byte p3, p2, p3
+    long-to-int v2, v1
 
-    if-gez p3, :cond_d
+    const/16 v1, 0x10
 
-    const/16 v1, -0x20
+    const-wide/16 v9, 0x1
 
-    const/4 v2, -0x1
+    if-ge v2, v1, :cond_0
 
-    const/16 v3, -0x41
-
-    if-ge p3, v1, :cond_5
-
-    if-lt v0, p4, :cond_3
-
-    return p3
-
-    :cond_3
-    const/16 v1, -0x3e
-
-    if-lt p3, v1, :cond_4
-
-    add-int/lit8 p3, v0, 0x1
-
-    .line 3
-    aget-byte v0, p2, v0
-
-    if-le v0, v3, :cond_1
-
-    :cond_4
-    return v2
-
-    :cond_5
-    const/16 v4, -0x10
-
-    if-ge p3, v4, :cond_a
-
-    add-int/lit8 v4, p4, -0x1
-
-    if-lt v0, v4, :cond_6
-
-    .line 4
-    invoke-static {p2, v0, p4}, Lu3/f5;->e([BII)I
-
-    move-result p1
-
-    return p1
-
-    :cond_6
-    add-int/lit8 v4, v0, 0x1
-
-    .line 5
-    aget-byte v0, p2, v0
-
-    if-gt v0, v3, :cond_9
-
-    const/16 v5, -0x60
-
-    if-ne p3, v1, :cond_7
-
-    if-lt v0, v5, :cond_9
-
-    :cond_7
-    const/16 v1, -0x13
-
-    if-ne p3, v1, :cond_8
-
-    if-ge v0, v5, :cond_9
-
-    :cond_8
-    add-int/lit8 p3, v4, 0x1
-
-    aget-byte v0, p2, v4
-
-    if-le v0, v3, :cond_1
-
-    :cond_9
-    return v2
-
-    :cond_a
-    add-int/lit8 v1, p4, -0x2
-
-    if-lt v0, v1, :cond_b
-
-    .line 6
-    invoke-static {p2, v0, p4}, Lu3/f5;->e([BII)I
-
-    move-result p1
-
-    return p1
-
-    :cond_b
-    add-int/lit8 v1, v0, 0x1
-
-    .line 7
-    aget-byte v0, p2, v0
-
-    if-gt v0, v3, :cond_c
-
-    shl-int/lit8 p3, p3, 0x1c
-
-    add-int/lit8 v0, v0, 0x70
-
-    add-int/2addr v0, p3
-
-    shr-int/lit8 p3, v0, 0x1e
-
-    if-nez p3, :cond_c
-
-    add-int/lit8 p3, v1, 0x1
-
-    aget-byte v0, p2, v1
-
-    if-gt v0, v3, :cond_c
-
-    add-int/lit8 v0, p3, 0x1
-
-    aget-byte p3, p2, p3
-
-    if-le p3, v3, :cond_d
-
-    :cond_c
-    return v2
-
-    :cond_d
-    move p3, v0
+    const/4 v1, 0x0
 
     goto :goto_1
-.end method
 
-.method public final c(Ljava/lang/CharSequence;[BII)I
-    .locals 7
-
-    .line 1
-    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
-
-    move-result v0
-
-    add-int/2addr p4, p3
+    :cond_0
+    move-wide v11, v7
 
     const/4 v1, 0x0
 
     :goto_0
-    const/16 v2, 0x80
+    if-ge v1, v2, :cond_2
 
-    if-ge v1, v0, :cond_0
-
-    add-int v3, v1, p3
-
-    if-ge v3, p4, :cond_0
+    add-long v13, v11, v9
 
     .line 2
-    invoke-interface {p1, v1}, Ljava/lang/CharSequence;->charAt(I)C
+    invoke-static {v0, v11, v12}, Lu3/b5;->a([BJ)B
 
-    move-result v4
+    move-result v3
 
-    if-ge v4, v2, :cond_0
+    if-gez v3, :cond_1
 
-    int-to-byte v2, v4
+    goto :goto_1
+
+    :cond_1
+    add-int/lit8 v1, v1, 0x1
+
+    move-wide v11, v13
+
+    goto :goto_0
+
+    :cond_2
+    move v1, v2
+
+    :goto_1
+    sub-int/2addr v2, v1
+
+    int-to-long v11, v1
+
+    add-long/2addr v7, v11
+
+    :cond_3
+    :goto_2
+    const/4 v1, 0x0
+
+    :goto_3
+    if-lez v2, :cond_5
+
+    add-long v11, v7, v9
 
     .line 3
-    aput-byte v2, p2, v3
+    invoke-static {v0, v7, v8}, Lu3/b5;->a([BJ)B
 
-    add-int/lit8 v1, v1, 0x1
+    move-result v1
+
+    if-ltz v1, :cond_4
+
+    add-int/lit8 v2, v2, -0x1
+
+    move-wide v7, v11
+
+    goto :goto_3
+
+    :cond_4
+    move-wide v7, v11
+
+    :cond_5
+    if-nez v2, :cond_6
+
+    return v6
+
+    :cond_6
+    add-int/lit8 v2, v2, -0x1
+
+    const/16 v3, -0x20
+
+    const/16 v11, -0x41
+
+    const/4 v12, -0x1
+
+    if-ge v1, v3, :cond_a
+
+    if-nez v2, :cond_7
+
+    return v1
+
+    :cond_7
+    add-int/lit8 v2, v2, -0x1
+
+    const/16 v3, -0x3e
+
+    if-lt v1, v3, :cond_9
+
+    add-long v13, v7, v9
+
+    .line 4
+    invoke-static {v0, v7, v8}, Lu3/b5;->a([BJ)B
+
+    move-result v1
+
+    if-le v1, v11, :cond_8
+
+    goto :goto_4
+
+    :cond_8
+    move-wide v7, v13
+
+    goto :goto_2
+
+    :cond_9
+    :goto_4
+    return v12
+
+    :cond_a
+    const/16 v13, -0x10
+
+    if-ge v1, v13, :cond_f
+
+    if-ge v2, v4, :cond_b
+
+    .line 5
+    invoke-static {v0, v1, v7, v8, v2}, Lu3/h5;->g([BIJI)I
+
+    move-result v0
+
+    return v0
+
+    :cond_b
+    add-int/lit8 v2, v2, -0x2
+
+    add-long v13, v7, v9
+
+    .line 6
+    invoke-static {v0, v7, v8}, Lu3/b5;->a([BJ)B
+
+    move-result v7
+
+    if-gt v7, v11, :cond_e
+
+    const/16 v8, -0x60
+
+    if-ne v1, v3, :cond_c
+
+    if-lt v7, v8, :cond_e
+
+    :cond_c
+    const/16 v3, -0x13
+
+    if-ne v1, v3, :cond_d
+
+    if-ge v7, v8, :cond_e
+
+    :cond_d
+    add-long v7, v13, v9
+
+    .line 7
+    invoke-static {v0, v13, v14}, Lu3/b5;->a([BJ)B
+
+    move-result v1
+
+    if-le v1, v11, :cond_3
+
+    :cond_e
+    return v12
+
+    :cond_f
+    if-ge v2, v5, :cond_10
+
+    .line 8
+    invoke-static {v0, v1, v7, v8, v2}, Lu3/h5;->g([BIJI)I
+
+    move-result v0
+
+    return v0
+
+    :cond_10
+    add-int/lit8 v2, v2, -0x3
+
+    add-long v13, v7, v9
+
+    .line 9
+    invoke-static {v0, v7, v8}, Lu3/b5;->a([BJ)B
+
+    move-result v3
+
+    if-gt v3, v11, :cond_11
+
+    shl-int/lit8 v1, v1, 0x1c
+
+    add-int/lit8 v3, v3, 0x70
+
+    add-int/2addr v3, v1
+
+    shr-int/lit8 v1, v3, 0x1e
+
+    if-nez v1, :cond_11
+
+    add-long v7, v13, v9
+
+    .line 10
+    invoke-static {v0, v13, v14}, Lu3/b5;->a([BJ)B
+
+    move-result v1
+
+    if-gt v1, v11, :cond_11
+
+    add-long v13, v7, v9
+
+    .line 11
+    invoke-static {v0, v7, v8}, Lu3/b5;->a([BJ)B
+
+    move-result v1
+
+    if-le v1, v11, :cond_8
+
+    :cond_11
+    return v12
+
+    .line 12
+    :cond_12
+    new-instance v3, Ljava/lang/ArrayIndexOutOfBoundsException;
+
+    new-array v5, v5, [Ljava/lang/Object;
+
+    array-length v0, v0
+
+    .line 13
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    aput-object v0, v5, v6
+
+    invoke-static/range {p3 .. p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    aput-object v0, v5, v1
+
+    invoke-static/range {p4 .. p4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    aput-object v0, v5, v4
+
+    const-string v0, "Array length=%d, index=%d, limit=%d"
+
+    invoke-static {v0, v5}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v3, v0}, Ljava/lang/ArrayIndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    goto :goto_6
+
+    :goto_5
+    throw v3
+
+    :goto_6
+    goto :goto_5
+.end method
+
+.method public final c(Ljava/lang/CharSequence;[BII)I
+    .locals 22
+
+    move-object/from16 v0, p1
+
+    move-object/from16 v1, p2
+
+    move/from16 v2, p3
+
+    move/from16 v3, p4
+
+    int-to-long v4, v2
+
+    int-to-long v6, v3
+
+    add-long/2addr v6, v4
+
+    .line 1
+    invoke-interface/range {p1 .. p1}, Ljava/lang/CharSequence;->length()I
+
+    move-result v8
+
+    const-string v9, " at index "
+
+    const-string v10, "Failed writing "
+
+    if-gt v8, v3, :cond_c
+
+    .line 2
+    array-length v11, v1
+
+    sub-int/2addr v11, v3
+
+    if-lt v11, v2, :cond_c
+
+    const/4 v2, 0x0
+
+    :goto_0
+    const/16 v3, 0x80
+
+    const-wide/16 v11, 0x1
+
+    if-ge v2, v8, :cond_0
+
+    .line 3
+    invoke-interface {v0, v2}, Ljava/lang/CharSequence;->charAt(I)C
+
+    move-result v13
+
+    if-ge v13, v3, :cond_0
+
+    add-long/2addr v11, v4
+
+    int-to-byte v3, v13
+
+    .line 4
+    invoke-static {v1, v4, v5, v3}, Lu3/b5;->h([BJB)V
+
+    add-int/lit8 v2, v2, 0x1
+
+    move-wide v4, v11
 
     goto :goto_0
 
     :cond_0
-    if-ne v1, v0, :cond_1
+    if-ne v2, v8, :cond_1
 
-    add-int/2addr p3, v0
+    long-to-int v0, v4
 
-    return p3
+    return v0
 
     :cond_1
-    add-int/2addr p3, v1
-
     :goto_1
-    if-ge v1, v0, :cond_b
-
-    .line 4
-    invoke-interface {p1, v1}, Ljava/lang/CharSequence;->charAt(I)C
-
-    move-result v3
-
-    if-ge v3, v2, :cond_2
-
-    if-ge p3, p4, :cond_2
-
-    add-int/lit8 v4, p3, 0x1
-
-    int-to-byte v3, v3
+    if-ge v2, v8, :cond_b
 
     .line 5
-    aput-byte v3, p2, p3
+    invoke-interface {v0, v2}, Ljava/lang/CharSequence;->charAt(I)C
+
+    move-result v13
+
+    if-ge v13, v3, :cond_2
+
+    cmp-long v14, v4, v6
+
+    if-gez v14, :cond_2
+
+    add-long v14, v4, v11
+
+    int-to-byte v13, v13
+
+    .line 6
+    invoke-static {v1, v4, v5, v13}, Lu3/b5;->h([BJB)V
+
+    move-wide v4, v11
+
+    move-wide v12, v14
 
     :goto_2
-    move p3, v4
+    const/16 v11, 0x80
 
     goto/16 :goto_3
 
     :cond_2
-    const/16 v4, 0x800
+    const/16 v14, 0x800
 
-    if-ge v3, v4, :cond_3
+    if-ge v13, v14, :cond_3
 
-    add-int/lit8 v4, p4, -0x2
+    const-wide/16 v14, 0x2
 
-    if-gt p3, v4, :cond_3
+    sub-long v14, v6, v14
 
-    add-int/lit8 v4, p3, 0x1
+    cmp-long v16, v4, v14
 
-    ushr-int/lit8 v5, v3, 0x6
+    if-gtz v16, :cond_3
 
-    or-int/lit16 v5, v5, 0x3c0
+    add-long v14, v4, v11
 
-    int-to-byte v5, v5
+    ushr-int/lit8 v3, v13, 0x6
 
-    .line 6
-    aput-byte v5, p2, p3
-
-    add-int/lit8 p3, v4, 0x1
-
-    and-int/lit8 v3, v3, 0x3f
-
-    or-int/2addr v3, v2
+    or-int/lit16 v3, v3, 0x3c0
 
     int-to-byte v3, v3
 
     .line 7
-    aput-byte v3, p2, v4
+    invoke-static {v1, v4, v5, v3}, Lu3/b5;->h([BJB)V
 
-    goto :goto_3
+    add-long v3, v14, v11
 
-    :cond_3
-    const v4, 0xdfff
+    and-int/lit8 v5, v13, 0x3f
 
-    const v5, 0xd800
+    const/16 v13, 0x80
 
-    if-lt v3, v5, :cond_4
-
-    if-ge v4, v3, :cond_5
-
-    :cond_4
-    add-int/lit8 v6, p4, -0x3
-
-    if-gt p3, v6, :cond_5
-
-    add-int/lit8 v4, p3, 0x1
-
-    ushr-int/lit8 v5, v3, 0xc
-
-    or-int/lit16 v5, v5, 0x1e0
+    or-int/2addr v5, v13
 
     int-to-byte v5, v5
 
     .line 8
-    aput-byte v5, p2, p3
+    invoke-static {v1, v14, v15, v5}, Lu3/b5;->h([BJB)V
 
-    add-int/lit8 p3, v4, 0x1
+    move-wide/from16 v20, v11
 
-    ushr-int/lit8 v5, v3, 0x6
+    const/16 v11, 0x80
 
-    and-int/lit8 v5, v5, 0x3f
+    move-wide v12, v3
 
-    or-int/2addr v5, v2
+    move-wide/from16 v4, v20
 
-    int-to-byte v5, v5
+    goto/16 :goto_3
 
-    .line 9
-    aput-byte v5, p2, v4
+    :cond_3
+    const v3, 0xdfff
 
-    add-int/lit8 v4, p3, 0x1
+    const v14, 0xd800
 
-    and-int/lit8 v3, v3, 0x3f
+    if-lt v13, v14, :cond_4
 
-    or-int/2addr v3, v2
+    if-ge v3, v13, :cond_5
+
+    :cond_4
+    const-wide/16 v15, 0x3
+
+    sub-long v15, v6, v15
+
+    cmp-long v17, v4, v15
+
+    if-gtz v17, :cond_5
+
+    add-long v14, v4, v11
+
+    ushr-int/lit8 v3, v13, 0xc
+
+    or-int/lit16 v3, v3, 0x1e0
 
     int-to-byte v3, v3
 
+    .line 9
+    invoke-static {v1, v4, v5, v3}, Lu3/b5;->h([BJB)V
+
+    add-long v3, v14, v11
+
+    ushr-int/lit8 v5, v13, 0x6
+
+    and-int/lit8 v5, v5, 0x3f
+
+    const/16 v11, 0x80
+
+    or-int/2addr v5, v11
+
+    int-to-byte v5, v5
+
     .line 10
-    aput-byte v3, p2, p3
+    invoke-static {v1, v14, v15, v5}, Lu3/b5;->h([BJB)V
+
+    const-wide/16 v14, 0x1
+
+    add-long v18, v3, v14
+
+    and-int/lit8 v5, v13, 0x3f
+
+    or-int/2addr v5, v11
+
+    int-to-byte v5, v5
+
+    .line 11
+    invoke-static {v1, v3, v4, v5}, Lu3/b5;->h([BJB)V
+
+    move-wide/from16 v12, v18
+
+    const-wide/16 v4, 0x1
 
     goto :goto_2
 
     :cond_5
-    add-int/lit8 v6, p4, -0x4
+    const-wide/16 v11, 0x4
 
-    if-gt p3, v6, :cond_8
+    sub-long v11, v6, v11
 
-    add-int/lit8 v4, v1, 0x1
+    cmp-long v15, v4, v11
 
-    .line 11
-    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
+    if-gtz v15, :cond_8
 
-    move-result v5
+    add-int/lit8 v3, v2, 0x1
 
-    if-eq v4, v5, :cond_7
-
-    invoke-interface {p1, v4}, Ljava/lang/CharSequence;->charAt(I)C
-
-    move-result v1
-
-    invoke-static {v3, v1}, Ljava/lang/Character;->isSurrogatePair(CC)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_6
+    if-eq v3, v8, :cond_7
 
     .line 12
-    invoke-static {v3, v1}, Ljava/lang/Character;->toCodePoint(CC)I
+    invoke-interface {v0, v3}, Ljava/lang/CharSequence;->charAt(I)C
 
-    move-result v1
+    move-result v2
 
-    add-int/lit8 v3, p3, 0x1
+    invoke-static {v13, v2}, Ljava/lang/Character;->isSurrogatePair(CC)Z
 
-    ushr-int/lit8 v5, v1, 0x12
+    move-result v11
 
-    or-int/lit16 v5, v5, 0xf0
-
-    int-to-byte v5, v5
+    if-eqz v11, :cond_6
 
     .line 13
-    aput-byte v5, p2, p3
+    invoke-static {v13, v2}, Ljava/lang/Character;->toCodePoint(CC)I
 
-    add-int/lit8 p3, v3, 0x1
+    move-result v2
 
-    ushr-int/lit8 v5, v1, 0xc
+    const-wide/16 v11, 0x1
 
-    and-int/lit8 v5, v5, 0x3f
+    add-long v13, v4, v11
 
-    or-int/2addr v5, v2
+    ushr-int/lit8 v15, v2, 0x12
 
-    int-to-byte v5, v5
+    or-int/lit16 v15, v15, 0xf0
+
+    int-to-byte v15, v15
 
     .line 14
-    aput-byte v5, p2, v3
+    invoke-static {v1, v4, v5, v15}, Lu3/b5;->h([BJB)V
 
-    add-int/lit8 v3, p3, 0x1
+    add-long v4, v13, v11
 
-    ushr-int/lit8 v5, v1, 0x6
+    ushr-int/lit8 v15, v2, 0xc
 
-    and-int/lit8 v5, v5, 0x3f
+    and-int/lit8 v15, v15, 0x3f
 
-    or-int/2addr v5, v2
+    const/16 v11, 0x80
 
-    int-to-byte v5, v5
+    or-int/lit16 v12, v15, 0x80
+
+    int-to-byte v12, v12
 
     .line 15
-    aput-byte v5, p2, p3
+    invoke-static {v1, v13, v14, v12}, Lu3/b5;->h([BJB)V
 
-    add-int/lit8 p3, v3, 0x1
+    const-wide/16 v12, 0x1
 
-    and-int/lit8 v1, v1, 0x3f
+    add-long v14, v4, v12
 
-    or-int/2addr v1, v2
+    ushr-int/lit8 v16, v2, 0x6
 
-    int-to-byte v1, v1
+    and-int/lit8 v12, v16, 0x3f
+
+    or-int/2addr v12, v11
+
+    int-to-byte v12, v12
 
     .line 16
-    aput-byte v1, p2, v3
+    invoke-static {v1, v4, v5, v12}, Lu3/b5;->h([BJB)V
 
-    move v1, v4
+    const-wide/16 v4, 0x1
+
+    add-long v12, v14, v4
+
+    and-int/lit8 v2, v2, 0x3f
+
+    or-int/2addr v2, v11
+
+    int-to-byte v2, v2
+
+    .line 17
+    invoke-static {v1, v14, v15, v2}, Lu3/b5;->h([BJB)V
+
+    move v2, v3
 
     :goto_3
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v2, v2, 0x1
+
+    const/16 v3, 0x80
+
+    move-wide/from16 v20, v4
+
+    move-wide v4, v12
+
+    move-wide/from16 v11, v20
 
     goto/16 :goto_1
 
     :cond_6
-    move v1, v4
-
-    .line 17
-    :cond_7
-    new-instance p1, Lu3/i5;
-
-    add-int/lit8 v1, v1, -0x1
-
-    invoke-direct {p1, v1, v0}, Lu3/i5;-><init>(II)V
-
-    throw p1
-
-    :cond_8
-    if-gt v5, v3, :cond_a
-
-    if-gt v3, v4, :cond_a
-
-    add-int/lit8 p2, v1, 0x1
+    move v2, v3
 
     .line 18
-    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
+    :cond_7
+    new-instance v0, Lu3/g5;
 
-    move-result p4
+    add-int/lit8 v2, v2, -0x1
 
-    if-eq p2, p4, :cond_9
+    invoke-direct {v0, v2, v8}, Lu3/g5;-><init>(II)V
 
-    invoke-interface {p1, p2}, Ljava/lang/CharSequence;->charAt(I)C
+    throw v0
 
-    move-result p1
+    :cond_8
+    if-gt v14, v13, :cond_a
 
-    invoke-static {v3, p1}, Ljava/lang/Character;->isSurrogatePair(CC)Z
+    if-gt v13, v3, :cond_a
 
-    move-result p1
+    add-int/lit8 v1, v2, 0x1
 
-    if-nez p1, :cond_a
+    if-eq v1, v8, :cond_9
 
     .line 19
-    :cond_9
-    new-instance p1, Lu3/i5;
+    invoke-interface {v0, v1}, Ljava/lang/CharSequence;->charAt(I)C
 
-    invoke-direct {p1, v1, v0}, Lu3/i5;-><init>(II)V
+    move-result v0
 
-    throw p1
+    invoke-static {v13, v0}, Ljava/lang/Character;->isSurrogatePair(CC)Z
+
+    move-result v0
+
+    if-nez v0, :cond_a
 
     .line 20
+    :cond_9
+    new-instance v0, Lu3/g5;
+
+    invoke-direct {v0, v2, v8}, Lu3/g5;-><init>(II)V
+
+    throw v0
+
+    .line 21
     :cond_a
-    new-instance p1, Ljava/lang/ArrayIndexOutOfBoundsException;
+    new-instance v0, Ljava/lang/ArrayIndexOutOfBoundsException;
 
-    const/16 p2, 0x25
+    const/16 v1, 0x2e
 
-    new-instance p4, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p4, p2}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    const-string p2, "Failed writing "
+    invoke-virtual {v2, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v13}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p4, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string p2, " at index "
+    invoke-virtual {v2, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {p4, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    invoke-virtual {p4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {v0, v1}, Ljava/lang/ArrayIndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
 
-    move-result-object p2
-
-    invoke-direct {p1, p2}, Ljava/lang/ArrayIndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
-
-    throw p1
+    throw v0
 
     :cond_b
-    return p3
+    long-to-int v0, v4
+
+    return v0
+
+    .line 22
+    :cond_c
+    new-instance v1, Ljava/lang/ArrayIndexOutOfBoundsException;
+
+    add-int/lit8 v8, v8, -0x1
+
+    .line 23
+    invoke-interface {v0, v8}, Ljava/lang/CharSequence;->charAt(I)C
+
+    move-result v0
+
+    add-int/2addr v2, v3
+
+    const/16 v3, 0x25
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4, v3}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    invoke-virtual {v4, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v1, v0}, Ljava/lang/ArrayIndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    goto :goto_5
+
+    :goto_4
+    throw v1
+
+    :goto_5
+    goto :goto_4
 .end method
 
 .method public final d(Ljava/lang/CharSequence;Ljava/nio/ByteBuffer;)V
-    .locals 0
+    .locals 23
+
+    move-object/from16 v0, p1
+
+    move-object/from16 v1, p2
 
     .line 1
-    invoke-static {p1, p2}, Lu3/x1;->e(Ljava/lang/CharSequence;Ljava/nio/ByteBuffer;)V
+    sget-object v2, Lu3/b5;->d:Lu3/b5$d;
+
+    sget-wide v3, Lu3/b5;->h:J
+
+    invoke-virtual {v2, v1, v3, v4}, Lu3/b5$d;->j(Ljava/lang/Object;J)J
+
+    move-result-wide v2
+
+    .line 2
+    invoke-virtual/range {p2 .. p2}, Ljava/nio/ByteBuffer;->position()I
+
+    move-result v4
+
+    int-to-long v4, v4
+
+    add-long/2addr v4, v2
+
+    .line 3
+    invoke-virtual/range {p2 .. p2}, Ljava/nio/ByteBuffer;->limit()I
+
+    move-result v6
+
+    int-to-long v6, v6
+
+    add-long/2addr v6, v2
+
+    .line 4
+    invoke-interface/range {p1 .. p1}, Ljava/lang/CharSequence;->length()I
+
+    move-result v8
+
+    int-to-long v9, v8
+
+    sub-long v11, v6, v4
+
+    const-string v13, " at index "
+
+    const-string v14, "Failed writing "
+
+    cmp-long v15, v9, v11
+
+    if-gtz v15, :cond_c
+
+    const/4 v9, 0x0
+
+    :goto_0
+    const-wide/16 v10, 0x1
+
+    const/16 v12, 0x80
+
+    if-ge v9, v8, :cond_0
+
+    .line 5
+    invoke-interface {v0, v9}, Ljava/lang/CharSequence;->charAt(I)C
+
+    move-result v15
+
+    if-ge v15, v12, :cond_0
+
+    add-long/2addr v10, v4
+
+    int-to-byte v12, v15
+
+    .line 6
+    sget-object v15, Lu3/b5;->d:Lu3/b5$d;
+
+    invoke-virtual {v15, v4, v5, v12}, Lu3/b5$d;->a(JB)V
+
+    add-int/lit8 v9, v9, 0x1
+
+    move-wide v4, v10
+
+    goto :goto_0
+
+    :cond_0
+    if-ne v9, v8, :cond_1
+
+    sub-long/2addr v4, v2
+
+    long-to-int v0, v4
+
+    .line 7
+    invoke-virtual {v1, v0}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     return-void
+
+    :cond_1
+    :goto_1
+    if-ge v9, v8, :cond_b
+
+    .line 8
+    invoke-interface {v0, v9}, Ljava/lang/CharSequence;->charAt(I)C
+
+    move-result v15
+
+    if-ge v15, v12, :cond_2
+
+    cmp-long v16, v4, v6
+
+    if-gez v16, :cond_2
+
+    add-long v16, v4, v10
+
+    int-to-byte v15, v15
+
+    .line 9
+    sget-object v12, Lu3/b5;->d:Lu3/b5$d;
+
+    invoke-virtual {v12, v4, v5, v15}, Lu3/b5$d;->a(JB)V
+
+    move-wide/from16 v18, v6
+
+    move v1, v9
+
+    move-wide/from16 v4, v16
+
+    const/16 v9, 0x80
+
+    move-wide/from16 v16, v2
+
+    goto/16 :goto_2
+
+    :cond_2
+    const/16 v12, 0x800
+
+    if-ge v15, v12, :cond_3
+
+    const-wide/16 v16, 0x2
+
+    sub-long v16, v6, v16
+
+    cmp-long v12, v4, v16
+
+    if-gtz v12, :cond_3
+
+    move-wide/from16 v16, v2
+
+    add-long v1, v4, v10
+
+    ushr-int/lit8 v3, v15, 0x6
+
+    or-int/lit16 v3, v3, 0x3c0
+
+    int-to-byte v3, v3
+
+    .line 10
+    sget-object v12, Lu3/b5;->d:Lu3/b5$d;
+
+    invoke-virtual {v12, v4, v5, v3}, Lu3/b5$d;->a(JB)V
+
+    add-long v3, v1, v10
+
+    and-int/lit8 v5, v15, 0x3f
+
+    const/16 v15, 0x80
+
+    or-int/2addr v5, v15
+
+    int-to-byte v5, v5
+
+    .line 11
+    invoke-virtual {v12, v1, v2, v5}, Lu3/b5$d;->a(JB)V
+
+    move-wide v4, v3
+
+    move-wide/from16 v18, v6
+
+    move v1, v9
+
+    const/16 v9, 0x80
+
+    goto/16 :goto_2
+
+    :cond_3
+    move-wide/from16 v16, v2
+
+    const v1, 0xdfff
+
+    const v2, 0xd800
+
+    if-lt v15, v2, :cond_4
+
+    if-ge v1, v15, :cond_5
+
+    :cond_4
+    const-wide/16 v19, 0x3
+
+    sub-long v19, v6, v19
+
+    cmp-long v3, v4, v19
+
+    if-gtz v3, :cond_5
+
+    add-long v1, v4, v10
+
+    ushr-int/lit8 v3, v15, 0xc
+
+    or-int/lit16 v3, v3, 0x1e0
+
+    int-to-byte v3, v3
+
+    .line 12
+    sget-object v12, Lu3/b5;->d:Lu3/b5$d;
+
+    invoke-virtual {v12, v4, v5, v3}, Lu3/b5$d;->a(JB)V
+
+    add-long v3, v1, v10
+
+    ushr-int/lit8 v5, v15, 0x6
+
+    and-int/lit8 v5, v5, 0x3f
+
+    const/16 v10, 0x80
+
+    or-int/2addr v5, v10
+
+    int-to-byte v5, v5
+
+    .line 13
+    invoke-virtual {v12, v1, v2, v5}, Lu3/b5$d;->a(JB)V
+
+    const-wide/16 v1, 0x1
+
+    add-long v21, v3, v1
+
+    and-int/lit8 v1, v15, 0x3f
+
+    or-int/2addr v1, v10
+
+    int-to-byte v1, v1
+
+    .line 14
+    invoke-virtual {v12, v3, v4, v1}, Lu3/b5$d;->a(JB)V
+
+    move-wide/from16 v18, v6
+
+    move v1, v9
+
+    move-wide/from16 v4, v21
+
+    const/16 v9, 0x80
+
+    const-wide/16 v10, 0x1
+
+    goto :goto_2
+
+    :cond_5
+    const-wide/16 v10, 0x4
+
+    sub-long v10, v6, v10
+
+    cmp-long v3, v4, v10
+
+    if-gtz v3, :cond_8
+
+    add-int/lit8 v1, v9, 0x1
+
+    if-eq v1, v8, :cond_7
+
+    .line 15
+    invoke-interface {v0, v1}, Ljava/lang/CharSequence;->charAt(I)C
+
+    move-result v2
+
+    invoke-static {v15, v2}, Ljava/lang/Character;->isSurrogatePair(CC)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_6
+
+    .line 16
+    invoke-static {v15, v2}, Ljava/lang/Character;->toCodePoint(CC)I
+
+    move-result v2
+
+    const-wide/16 v9, 0x1
+
+    add-long v11, v4, v9
+
+    ushr-int/lit8 v3, v2, 0x12
+
+    or-int/lit16 v3, v3, 0xf0
+
+    int-to-byte v3, v3
+
+    .line 17
+    sget-object v15, Lu3/b5;->d:Lu3/b5$d;
+
+    invoke-virtual {v15, v4, v5, v3}, Lu3/b5$d;->a(JB)V
+
+    add-long v3, v11, v9
+
+    ushr-int/lit8 v5, v2, 0xc
+
+    and-int/lit8 v5, v5, 0x3f
+
+    const/16 v9, 0x80
+
+    or-int/2addr v5, v9
+
+    int-to-byte v5, v5
+
+    .line 18
+    invoke-virtual {v15, v11, v12, v5}, Lu3/b5$d;->a(JB)V
+
+    move-wide/from16 v18, v6
+
+    const-wide/16 v10, 0x1
+
+    add-long v5, v3, v10
+
+    ushr-int/lit8 v7, v2, 0x6
+
+    and-int/lit8 v7, v7, 0x3f
+
+    or-int/2addr v7, v9
+
+    int-to-byte v7, v7
+
+    .line 19
+    invoke-virtual {v15, v3, v4, v7}, Lu3/b5$d;->a(JB)V
+
+    add-long v3, v5, v10
+
+    and-int/lit8 v2, v2, 0x3f
+
+    or-int/2addr v2, v9
+
+    int-to-byte v2, v2
+
+    .line 20
+    invoke-virtual {v15, v5, v6, v2}, Lu3/b5$d;->a(JB)V
+
+    move-wide v4, v3
+
+    :goto_2
+    add-int/lit8 v1, v1, 0x1
+
+    move v9, v1
+
+    move-wide/from16 v2, v16
+
+    move-wide/from16 v6, v18
+
+    const/16 v12, 0x80
+
+    move-object/from16 v1, p2
+
+    goto/16 :goto_1
+
+    :cond_6
+    move v9, v1
+
+    .line 21
+    :cond_7
+    new-instance v0, Lu3/g5;
+
+    add-int/lit8 v9, v9, -0x1
+
+    invoke-direct {v0, v9, v8}, Lu3/g5;-><init>(II)V
+
+    throw v0
+
+    :cond_8
+    if-gt v2, v15, :cond_a
+
+    if-gt v15, v1, :cond_a
+
+    add-int/lit8 v1, v9, 0x1
+
+    if-eq v1, v8, :cond_9
+
+    .line 22
+    invoke-interface {v0, v1}, Ljava/lang/CharSequence;->charAt(I)C
+
+    move-result v0
+
+    invoke-static {v15, v0}, Ljava/lang/Character;->isSurrogatePair(CC)Z
+
+    move-result v0
+
+    if-nez v0, :cond_a
+
+    .line 23
+    :cond_9
+    new-instance v0, Lu3/g5;
+
+    invoke-direct {v0, v9, v8}, Lu3/g5;-><init>(II)V
+
+    throw v0
+
+    .line 24
+    :cond_a
+    new-instance v0, Ljava/lang/ArrayIndexOutOfBoundsException;
+
+    const/16 v1, 0x2e
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    invoke-virtual {v2, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v15}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/ArrayIndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_b
+    move-wide/from16 v16, v2
+
+    sub-long v4, v4, v16
+
+    long-to-int v0, v4
+
+    move-object/from16 v1, p2
+
+    .line 25
+    invoke-virtual {v1, v0}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+
+    return-void
+
+    .line 26
+    :cond_c
+    new-instance v2, Ljava/lang/ArrayIndexOutOfBoundsException;
+
+    add-int/lit8 v8, v8, -0x1
+
+    .line 27
+    invoke-interface {v0, v8}, Ljava/lang/CharSequence;->charAt(I)C
+
+    move-result v0
+
+    invoke-virtual/range {p2 .. p2}, Ljava/nio/ByteBuffer;->limit()I
+
+    move-result v1
+
+    const/16 v3, 0x25
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4, v3}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    invoke-virtual {v4, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v2, v0}, Ljava/lang/ArrayIndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    goto :goto_4
+
+    :goto_3
+    throw v2
+
+    :goto_4
+    goto :goto_3
 .end method
 
 .method public final f([BII)Ljava/lang/String;
@@ -537,11 +1343,15 @@
     :goto_0
     if-ge p2, v0, :cond_0
 
+    int-to-long v4, p2
+
     .line 3
-    aget-byte v4, p1, p2
+    invoke-static {p1, v4, v5}, Lu3/b5;->a([BJ)B
+
+    move-result v4
 
     .line 4
-    invoke-static {v4}, Lu3/g5;->e(B)Z
+    invoke-static {v4}, Lu3/e5;->e(B)Z
 
     move-result v5
 
@@ -569,11 +1379,15 @@
 
     add-int/lit8 v3, p2, 0x1
 
+    int-to-long v4, p2
+
     .line 6
-    aget-byte p2, p1, p2
+    invoke-static {p1, v4, v5}, Lu3/b5;->a([BJ)B
+
+    move-result p2
 
     .line 7
-    invoke-static {p2}, Lu3/g5;->e(B)Z
+    invoke-static {p2}, Lu3/e5;->e(B)Z
 
     move-result v4
 
@@ -593,11 +1407,15 @@
 
     if-ge p2, v0, :cond_1
 
+    int-to-long v3, p2
+
     .line 9
-    aget-byte v3, p1, p2
+    invoke-static {p1, v3, v4}, Lu3/b5;->a([BJ)B
+
+    move-result v3
 
     .line 10
-    invoke-static {v3}, Lu3/g5;->e(B)Z
+    invoke-static {v3}, Lu3/e5;->e(B)Z
 
     move-result v4
 
@@ -633,12 +1451,17 @@
 
     add-int/lit8 v4, v3, 0x1
 
+    int-to-long v5, v3
+
     .line 12
-    aget-byte v3, p1, v3
+    invoke-static {p1, v5, v6}, Lu3/b5;->a([BJ)B
+
+    move-result v3
 
     add-int/lit8 v5, v8, 0x1
 
-    invoke-static {p2, v3, p3, v8}, Lu3/g5;->c(BB[CI)V
+    .line 13
+    invoke-static {p2, v3, p3, v8}, Lu3/e5;->c(BB[CI)V
 
     move p2, v4
 
@@ -646,7 +1469,7 @@
 
     goto :goto_1
 
-    .line 13
+    .line 14
     :cond_4
     invoke-static {}, Lcom/google/android/gms/internal/measurement/zzuv;->g()Lcom/google/android/gms/internal/measurement/zzuv;
 
@@ -675,16 +1498,26 @@
 
     add-int/lit8 v4, v3, 0x1
 
-    .line 14
-    aget-byte v3, p1, v3
+    int-to-long v5, v3
+
+    .line 15
+    invoke-static {p1, v5, v6}, Lu3/b5;->a([BJ)B
+
+    move-result v3
 
     add-int/lit8 v5, v4, 0x1
 
-    aget-byte v4, p1, v4
+    int-to-long v6, v4
+
+    .line 16
+    invoke-static {p1, v6, v7}, Lu3/b5;->a([BJ)B
+
+    move-result v4
 
     add-int/lit8 v6, v8, 0x1
 
-    invoke-static {p2, v3, v4, p3, v8}, Lu3/g5;->b(BBB[CI)V
+    .line 17
+    invoke-static {p2, v3, v4, p3, v8}, Lu3/e5;->b(BBB[CI)V
 
     move p2, v5
 
@@ -692,7 +1525,7 @@
 
     goto :goto_1
 
-    .line 15
+    .line 18
     :cond_7
     invoke-static {}, Lcom/google/android/gms/internal/measurement/zzuv;->g()Lcom/google/android/gms/internal/measurement/zzuv;
 
@@ -707,16 +1540,30 @@
 
     add-int/lit8 v4, v3, 0x1
 
-    .line 16
-    aget-byte v5, p1, v3
+    int-to-long v5, v3
+
+    .line 19
+    invoke-static {p1, v5, v6}, Lu3/b5;->a([BJ)B
+
+    move-result v5
 
     add-int/lit8 v3, v4, 0x1
 
-    aget-byte v6, p1, v4
+    int-to-long v6, v4
+
+    .line 20
+    invoke-static {p1, v6, v7}, Lu3/b5;->a([BJ)B
+
+    move-result v6
 
     add-int/lit8 v9, v3, 0x1
 
-    aget-byte v7, p1, v3
+    int-to-long v3, v3
+
+    .line 21
+    invoke-static {p1, v3, v4}, Lu3/b5;->a([BJ)B
+
+    move-result v7
 
     add-int/lit8 v10, v8, 0x1
 
@@ -730,7 +1577,8 @@
 
     move-object v7, p3
 
-    invoke-static/range {v3 .. v8}, Lu3/g5;->a(BBBB[CI)V
+    .line 22
+    invoke-static/range {v3 .. v8}, Lu3/e5;->a(BBBB[CI)V
 
     add-int/lit8 v8, v10, 0x1
 
@@ -738,7 +1586,7 @@
 
     goto/16 :goto_1
 
-    .line 17
+    .line 23
     :cond_9
     invoke-static {}, Lcom/google/android/gms/internal/measurement/zzuv;->g()Lcom/google/android/gms/internal/measurement/zzuv;
 
@@ -746,7 +1594,7 @@
 
     throw p1
 
-    .line 18
+    .line 24
     :cond_a
     new-instance p1, Ljava/lang/String;
 
@@ -754,7 +1602,7 @@
 
     return-object p1
 
-    .line 19
+    .line 25
     :cond_b
     new-instance v0, Ljava/lang/ArrayIndexOutOfBoundsException;
 
@@ -764,7 +1612,7 @@
 
     array-length p1, p1
 
-    .line 20
+    .line 26
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1

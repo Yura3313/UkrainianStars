@@ -299,7 +299,7 @@
     iget-object p4, p0, Landroidx/appcompat/view/menu/h;->f:Landroid/view/View;
 
     .line 4
-    sget-object v1, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 5
     invoke-virtual {p4}, Landroid/view/View;->getLayoutDirection()I
@@ -370,11 +370,11 @@
     invoke-direct {p4, v1, v2, p1, p2}, Landroid/graphics/Rect;-><init>(IIII)V
 
     .line 12
-    iput-object p4, v0, Lg/d;->a:Landroid/graphics/Rect;
+    iput-object p4, v0, Lg/d;->g:Landroid/graphics/Rect;
 
     .line 13
     :cond_1
-    invoke-interface {v0}, Lg/f;->L()V
+    invoke-interface {v0}, Lg/f;->M()V
 
     return-void
 .end method

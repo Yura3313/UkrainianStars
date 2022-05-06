@@ -19,6 +19,16 @@
 
 
 # virtual methods
+.method public abstract b0(Lxe/d;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lxe/d<",
+            "TT;>;)V"
+        }
+    .end annotation
+.end method
+
 .method public abstract cancel()V
 .end method
 
@@ -49,16 +59,6 @@
 .end method
 
 .method public abstract isCanceled()Z
-.end method
-
-.method public abstract m0(Lxe/d;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lxe/d<",
-            "TT;>;)V"
-        }
-    .end annotation
 .end method
 
 .method public abstract request()Lokhttp3/Request;

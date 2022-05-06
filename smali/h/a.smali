@@ -4,11 +4,11 @@
 
 
 # static fields
-.field public static volatile b:Lh/a;
+.field public static volatile h:Lh/a;
 
 
 # instance fields
-.field public a:Landroidx/fragment/app/t;
+.field public g:Landroidx/fragment/app/t;
 
 
 # direct methods
@@ -24,7 +24,7 @@
     invoke-direct {v0}, Lh/b;-><init>()V
 
     .line 3
-    iput-object v0, p0, Lh/a;->a:Landroidx/fragment/app/t;
+    iput-object v0, p0, Lh/a;->g:Landroidx/fragment/app/t;
 
     return-void
 .end method
@@ -33,12 +33,12 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lh/a;->b:Lh/a;
+    sget-object v0, Lh/a;->h:Lh/a;
 
     if-eqz v0, :cond_0
 
     .line 2
-    sget-object v0, Lh/a;->b:Lh/a;
+    sget-object v0, Lh/a;->h:Lh/a;
 
     return-object v0
 
@@ -50,7 +50,7 @@
 
     .line 4
     :try_start_0
-    sget-object v1, Lh/a;->b:Lh/a;
+    sget-object v1, Lh/a;->h:Lh/a;
 
     if-nez v1, :cond_1
 
@@ -59,7 +59,7 @@
 
     invoke-direct {v1}, Lh/a;-><init>()V
 
-    sput-object v1, Lh/a;->b:Lh/a;
+    sput-object v1, Lh/a;->h:Lh/a;
 
     .line 6
     :cond_1
@@ -68,7 +68,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 7
-    sget-object v0, Lh/a;->b:Lh/a;
+    sget-object v0, Lh/a;->h:Lh/a;
 
     return-object v0
 
@@ -90,7 +90,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lh/a;->a:Landroidx/fragment/app/t;
+    iget-object v0, p0, Lh/a;->g:Landroidx/fragment/app/t;
 
     invoke-virtual {v0}, Landroidx/fragment/app/t;->h()Z
 
@@ -103,7 +103,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lh/a;->a:Landroidx/fragment/app/t;
+    iget-object v0, p0, Lh/a;->g:Landroidx/fragment/app/t;
 
     invoke-virtual {v0, p1}, Landroidx/fragment/app/t;->k(Ljava/lang/Runnable;)V
 

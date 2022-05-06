@@ -45,7 +45,7 @@
     .locals 2
 
     .line 1
-    sget-object p3, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object p3, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 2
     invoke-virtual {p1}, Landroid/view/View;->getLayoutDirection()I
@@ -343,7 +343,7 @@
     if-eqz v3, :cond_6
 
     .line 3
-    sget-object v3, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v3, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 4
     invoke-virtual {p1}, Landroid/view/View;->getLayoutDirection()I
@@ -503,7 +503,7 @@
 
     invoke-direct {p2, p3, p1, v1}, Lcom/google/android/material/behavior/SwipeDismissBehavior$c;-><init>(Lcom/google/android/material/behavior/SwipeDismissBehavior;Landroid/view/View;Z)V
 
-    sget-object p3, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object p3, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 13
     invoke-virtual {p1, p2}, Landroid/view/View;->postOnAnimation(Ljava/lang/Runnable;)V

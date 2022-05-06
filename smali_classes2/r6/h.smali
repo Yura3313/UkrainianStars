@@ -30,7 +30,7 @@
 
     .line 2
     :cond_0
-    sget-object v0, Lc6/d;->POSSIBLE_FORMATS:Lc6/d;
+    sget-object v0, Lc6/d;->i:Lc6/d;
 
     .line 3
     invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -45,7 +45,7 @@
     if-eqz p1, :cond_1
 
     .line 4
-    sget-object v2, Lc6/d;->ASSUME_CODE_39_CHECK_DIGIT:Lc6/d;
+    sget-object v2, Lc6/d;->m:Lc6/d;
 
     .line 5
     invoke-interface {p1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -70,7 +70,7 @@
     if-eqz v0, :cond_a
 
     .line 7
-    sget-object v4, Lc6/a;->EAN_13:Lc6/a;
+    sget-object v4, Lc6/a;->n:Lc6/a;
 
     invoke-interface {v0, v4}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
@@ -78,7 +78,7 @@
 
     if-nez v4, :cond_2
 
-    sget-object v4, Lc6/a;->UPC_A:Lc6/a;
+    sget-object v4, Lc6/a;->u:Lc6/a;
 
     .line 8
     invoke-interface {v0, v4}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
@@ -87,7 +87,7 @@
 
     if-nez v4, :cond_2
 
-    sget-object v4, Lc6/a;->EAN_8:Lc6/a;
+    sget-object v4, Lc6/a;->m:Lc6/a;
 
     .line 9
     invoke-interface {v0, v4}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
@@ -96,7 +96,7 @@
 
     if-nez v4, :cond_2
 
-    sget-object v4, Lc6/a;->UPC_E:Lc6/a;
+    sget-object v4, Lc6/a;->v:Lc6/a;
 
     .line 10
     invoke-interface {v0, v4}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
@@ -115,7 +115,7 @@
 
     .line 12
     :cond_3
-    sget-object v4, Lc6/a;->CODE_39:Lc6/a;
+    sget-object v4, Lc6/a;->i:Lc6/a;
 
     invoke-interface {v0, v4}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
@@ -132,7 +132,7 @@
 
     .line 14
     :cond_4
-    sget-object v2, Lc6/a;->CODE_93:Lc6/a;
+    sget-object v2, Lc6/a;->j:Lc6/a;
 
     invoke-interface {v0, v2}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
@@ -149,7 +149,7 @@
 
     .line 16
     :cond_5
-    sget-object v2, Lc6/a;->CODE_128:Lc6/a;
+    sget-object v2, Lc6/a;->k:Lc6/a;
 
     invoke-interface {v0, v2}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
@@ -166,7 +166,7 @@
 
     .line 18
     :cond_6
-    sget-object v2, Lc6/a;->ITF:Lc6/a;
+    sget-object v2, Lc6/a;->o:Lc6/a;
 
     invoke-interface {v0, v2}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
@@ -183,7 +183,7 @@
 
     .line 20
     :cond_7
-    sget-object v2, Lc6/a;->CODABAR:Lc6/a;
+    sget-object v2, Lc6/a;->h:Lc6/a;
 
     invoke-interface {v0, v2}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
@@ -200,7 +200,7 @@
 
     .line 22
     :cond_8
-    sget-object v2, Lc6/a;->RSS_14:Lc6/a;
+    sget-object v2, Lc6/a;->s:Lc6/a;
 
     invoke-interface {v0, v2}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
@@ -217,7 +217,7 @@
 
     .line 24
     :cond_9
-    sget-object v2, Lc6/a;->RSS_EXPANDED:Lc6/a;
+    sget-object v2, Lc6/a;->t:Lc6/a;
 
     invoke-interface {v0, v2}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
@@ -367,7 +367,7 @@
 
     .line 3
     :cond_0
-    sget-object p1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 4
     goto :goto_2

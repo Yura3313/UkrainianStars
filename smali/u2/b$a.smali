@@ -25,19 +25,19 @@
 
 
 # instance fields
-.field public final a:Z
+.field public final g:Z
 
-.field public final b:Z
+.field public final h:Z
 
-.field public final h:I
+.field public final i:I
 
-.field public final i:Z
+.field public final j:Z
 
-.field public final j:I
+.field public final k:I
 
-.field public final k:Ljava/lang/String;
+.field public final l:Ljava/lang/String;
 
-.field public final l:Ljava/util/ArrayList;
+.field public final m:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -47,17 +47,17 @@
     .end annotation
 .end field
 
-.field public final m:Z
-
 .field public final n:Z
 
-.field public final o:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+.field public final o:Z
 
-.field public final p:Ljava/lang/String;
+.field public final p:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
-.field public final q:I
+.field public final q:Ljava/lang/String;
 
 .field public final r:I
+
+.field public final s:I
 
 
 # direct methods
@@ -68,54 +68,54 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-boolean p1, p0, Lu2/b$a;->a:Z
+    iput-boolean p1, p0, Lu2/b$a;->g:Z
 
     .line 3
-    iput-boolean p2, p0, Lu2/b$a;->b:Z
+    iput-boolean p2, p0, Lu2/b$a;->h:Z
 
     .line 4
-    iput p3, p0, Lu2/b$a;->h:I
+    iput p3, p0, Lu2/b$a;->i:I
 
     .line 5
-    iput-boolean p4, p0, Lu2/b$a;->i:Z
+    iput-boolean p4, p0, Lu2/b$a;->j:Z
 
     .line 6
-    iput p5, p0, Lu2/b$a;->j:I
+    iput p5, p0, Lu2/b$a;->k:I
 
     .line 7
-    iput-object p6, p0, Lu2/b$a;->k:Ljava/lang/String;
+    iput-object p6, p0, Lu2/b$a;->l:Ljava/lang/String;
 
     .line 8
-    iput-object p7, p0, Lu2/b$a;->l:Ljava/util/ArrayList;
+    iput-object p7, p0, Lu2/b$a;->m:Ljava/util/ArrayList;
 
     .line 9
-    iput-boolean p8, p0, Lu2/b$a;->m:Z
+    iput-boolean p8, p0, Lu2/b$a;->n:Z
 
     .line 10
-    iput-boolean p9, p0, Lu2/b$a;->n:Z
+    iput-boolean p9, p0, Lu2/b$a;->o:Z
 
     .line 11
-    iput-object p10, p0, Lu2/b$a;->o:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    iput-object p10, p0, Lu2/b$a;->p:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     .line 12
-    iput-object p11, p0, Lu2/b$a;->p:Ljava/lang/String;
+    iput-object p11, p0, Lu2/b$a;->q:Ljava/lang/String;
 
     .line 13
-    iput p12, p0, Lu2/b$a;->q:I
+    iput p12, p0, Lu2/b$a;->r:I
 
     .line 14
-    iput p13, p0, Lu2/b$a;->r:I
+    iput p13, p0, Lu2/b$a;->s:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final M0()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+.method public final P0()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lu2/b$a;->o:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    iget-object v0, p0, Lu2/b$a;->p:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     return-object v0
 .end method
@@ -144,48 +144,48 @@
     check-cast p1, Lu2/b$a;
 
     .line 3
-    iget-boolean v1, p0, Lu2/b$a;->a:Z
+    iget-boolean v1, p0, Lu2/b$a;->g:Z
 
-    iget-boolean v3, p1, Lu2/b$a;->a:Z
-
-    if-ne v1, v3, :cond_4
-
-    iget-boolean v1, p0, Lu2/b$a;->b:Z
-
-    iget-boolean v3, p1, Lu2/b$a;->b:Z
+    iget-boolean v3, p1, Lu2/b$a;->g:Z
 
     if-ne v1, v3, :cond_4
 
-    iget v1, p0, Lu2/b$a;->h:I
+    iget-boolean v1, p0, Lu2/b$a;->h:Z
 
-    iget v3, p1, Lu2/b$a;->h:I
-
-    if-ne v1, v3, :cond_4
-
-    iget-boolean v1, p0, Lu2/b$a;->i:Z
-
-    iget-boolean v3, p1, Lu2/b$a;->i:Z
+    iget-boolean v3, p1, Lu2/b$a;->h:Z
 
     if-ne v1, v3, :cond_4
 
-    iget v1, p0, Lu2/b$a;->j:I
+    iget v1, p0, Lu2/b$a;->i:I
 
-    iget v3, p1, Lu2/b$a;->j:I
+    iget v3, p1, Lu2/b$a;->i:I
 
     if-ne v1, v3, :cond_4
 
-    iget-object v1, p0, Lu2/b$a;->k:Ljava/lang/String;
+    iget-boolean v1, p0, Lu2/b$a;->j:Z
+
+    iget-boolean v3, p1, Lu2/b$a;->j:Z
+
+    if-ne v1, v3, :cond_4
+
+    iget v1, p0, Lu2/b$a;->k:I
+
+    iget v3, p1, Lu2/b$a;->k:I
+
+    if-ne v1, v3, :cond_4
+
+    iget-object v1, p0, Lu2/b$a;->l:Ljava/lang/String;
 
     if-nez v1, :cond_2
 
-    iget-object v1, p1, Lu2/b$a;->k:Ljava/lang/String;
+    iget-object v1, p1, Lu2/b$a;->l:Ljava/lang/String;
 
     if-nez v1, :cond_4
 
     goto :goto_0
 
     :cond_2
-    iget-object v3, p1, Lu2/b$a;->k:Ljava/lang/String;
+    iget-object v3, p1, Lu2/b$a;->l:Ljava/lang/String;
 
     .line 4
     invoke-virtual {v1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -195,9 +195,9 @@
     if-eqz v1, :cond_4
 
     :goto_0
-    iget-object v1, p0, Lu2/b$a;->l:Ljava/util/ArrayList;
+    iget-object v1, p0, Lu2/b$a;->m:Ljava/util/ArrayList;
 
-    iget-object v3, p1, Lu2/b$a;->l:Ljava/util/ArrayList;
+    iget-object v3, p1, Lu2/b$a;->m:Ljava/util/ArrayList;
 
     .line 5
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->equals(Ljava/lang/Object;)Z
@@ -206,30 +206,30 @@
 
     if-eqz v1, :cond_4
 
-    iget-boolean v1, p0, Lu2/b$a;->m:Z
-
-    iget-boolean v3, p1, Lu2/b$a;->m:Z
-
-    if-ne v1, v3, :cond_4
-
     iget-boolean v1, p0, Lu2/b$a;->n:Z
 
     iget-boolean v3, p1, Lu2/b$a;->n:Z
 
     if-ne v1, v3, :cond_4
 
-    iget-object v1, p0, Lu2/b$a;->o:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    iget-boolean v1, p0, Lu2/b$a;->o:Z
+
+    iget-boolean v3, p1, Lu2/b$a;->o:Z
+
+    if-ne v1, v3, :cond_4
+
+    iget-object v1, p0, Lu2/b$a;->p:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     if-nez v1, :cond_3
 
-    iget-object v1, p1, Lu2/b$a;->o:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    iget-object v1, p1, Lu2/b$a;->p:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     if-nez v1, :cond_4
 
     goto :goto_1
 
     :cond_3
-    iget-object v3, p1, Lu2/b$a;->o:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    iget-object v3, p1, Lu2/b$a;->p:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     .line 6
     invoke-virtual {v1, v3}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->equals(Ljava/lang/Object;)Z
@@ -239,9 +239,9 @@
     if-eqz v1, :cond_4
 
     :goto_1
-    iget-object v1, p0, Lu2/b$a;->p:Ljava/lang/String;
+    iget-object v1, p0, Lu2/b$a;->q:Ljava/lang/String;
 
-    iget-object v3, p1, Lu2/b$a;->p:Ljava/lang/String;
+    iget-object v3, p1, Lu2/b$a;->q:Ljava/lang/String;
 
     .line 7
     invoke-static {v1, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
@@ -250,15 +250,15 @@
 
     if-eqz v1, :cond_4
 
-    iget v1, p0, Lu2/b$a;->q:I
+    iget v1, p0, Lu2/b$a;->r:I
 
-    iget v3, p1, Lu2/b$a;->q:I
+    iget v3, p1, Lu2/b$a;->r:I
 
     if-ne v1, v3, :cond_4
 
-    iget v1, p0, Lu2/b$a;->r:I
+    iget v1, p0, Lu2/b$a;->s:I
 
-    iget p1, p1, Lu2/b$a;->r:I
+    iget p1, p1, Lu2/b$a;->s:I
 
     if-ne v1, p1, :cond_4
 
@@ -272,42 +272,42 @@
     .locals 3
 
     .line 1
-    iget-boolean v0, p0, Lu2/b$a;->a:Z
+    iget-boolean v0, p0, Lu2/b$a;->g:Z
 
     add-int/lit16 v0, v0, 0x20f
 
     mul-int/lit8 v0, v0, 0x1f
 
     .line 2
-    iget-boolean v1, p0, Lu2/b$a;->b:Z
+    iget-boolean v1, p0, Lu2/b$a;->h:Z
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
     .line 3
-    iget v1, p0, Lu2/b$a;->h:I
+    iget v1, p0, Lu2/b$a;->i:I
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
     .line 4
-    iget-boolean v1, p0, Lu2/b$a;->i:Z
+    iget-boolean v1, p0, Lu2/b$a;->j:Z
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
     .line 5
-    iget v1, p0, Lu2/b$a;->j:I
+    iget v1, p0, Lu2/b$a;->k:I
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
     .line 6
-    iget-object v1, p0, Lu2/b$a;->k:Ljava/lang/String;
+    iget-object v1, p0, Lu2/b$a;->l:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -328,7 +328,7 @@
     mul-int/lit8 v0, v0, 0x1f
 
     .line 7
-    iget-object v1, p0, Lu2/b$a;->l:Ljava/util/ArrayList;
+    iget-object v1, p0, Lu2/b$a;->m:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->hashCode()I
 
@@ -339,21 +339,21 @@
     mul-int/lit8 v1, v1, 0x1f
 
     .line 8
-    iget-boolean v0, p0, Lu2/b$a;->m:Z
-
-    add-int/2addr v1, v0
-
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 9
     iget-boolean v0, p0, Lu2/b$a;->n:Z
 
     add-int/2addr v1, v0
 
     mul-int/lit8 v1, v1, 0x1f
 
+    .line 9
+    iget-boolean v0, p0, Lu2/b$a;->o:Z
+
+    add-int/2addr v1, v0
+
+    mul-int/lit8 v1, v1, 0x1f
+
     .line 10
-    iget-object v0, p0, Lu2/b$a;->o:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    iget-object v0, p0, Lu2/b$a;->p:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     if-nez v0, :cond_1
 
@@ -372,7 +372,7 @@
     mul-int/lit8 v1, v1, 0x1f
 
     .line 11
-    iget-object v0, p0, Lu2/b$a;->p:Ljava/lang/String;
+    iget-object v0, p0, Lu2/b$a;->q:Ljava/lang/String;
 
     if-nez v0, :cond_2
 
@@ -389,14 +389,14 @@
     mul-int/lit8 v1, v1, 0x1f
 
     .line 12
-    iget v0, p0, Lu2/b$a;->q:I
+    iget v0, p0, Lu2/b$a;->r:I
 
     add-int/2addr v1, v0
 
     mul-int/lit8 v1, v1, 0x1f
 
     .line 13
-    iget v0, p0, Lu2/b$a;->r:I
+    iget v0, p0, Lu2/b$a;->s:I
 
     add-int/2addr v1, v0
 

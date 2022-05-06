@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/google/android/play/core/assetpacks/s2;
+.implements Lcom/google/android/play/core/assetpacks/t2;
 
 
 # static fields
@@ -12,16 +12,16 @@
 # instance fields
 .field public final a:Ljava/lang/String;
 
-.field public final b:Lcom/google/android/play/core/assetpacks/s;
+.field public final b:Lcom/google/android/play/core/assetpacks/t;
 
 .field public final c:Landroid/content/Context;
 
 .field public final d:Lcom/google/android/play/core/assetpacks/u1;
 
-.field public final e:Ly4/j0;
+.field public final e:Ly4/l0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ly4/j0<",
+            "Ly4/l0<",
             "Ljava/util/concurrent/Executor;",
             ">;"
         }
@@ -52,17 +52,17 @@
     return-void
 .end method
 
-.method public constructor <init>(Ljava/io/File;Lcom/google/android/play/core/assetpacks/s;Lcom/google/android/play/core/assetpacks/r0;Landroid/content/Context;Lcom/google/android/play/core/assetpacks/u1;Ly4/j0;)V
+.method public constructor <init>(Ljava/io/File;Lcom/google/android/play/core/assetpacks/t;Lcom/google/android/play/core/assetpacks/r0;Landroid/content/Context;Lcom/google/android/play/core/assetpacks/u1;Ly4/l0;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/io/File;",
-            "Lcom/google/android/play/core/assetpacks/s;",
+            "Lcom/google/android/play/core/assetpacks/t;",
             "Lcom/google/android/play/core/assetpacks/r0;",
             "Landroid/content/Context;",
             "Lcom/google/android/play/core/assetpacks/u1;",
-            "Ly4/j0<",
+            "Ly4/l0<",
             "Ljava/util/concurrent/Executor;",
             ">;)V"
         }
@@ -86,13 +86,13 @@
 
     iput-object p1, p0, Lcom/google/android/play/core/assetpacks/k1;->a:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/k1;->b:Lcom/google/android/play/core/assetpacks/s;
+    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/k1;->b:Lcom/google/android/play/core/assetpacks/t;
 
     iput-object p4, p0, Lcom/google/android/play/core/assetpacks/k1;->c:Landroid/content/Context;
 
     iput-object p5, p0, Lcom/google/android/play/core/assetpacks/k1;->d:Lcom/google/android/play/core/assetpacks/u1;
 
-    iput-object p6, p0, Lcom/google/android/play/core/assetpacks/k1;->e:Ly4/j0;
+    iput-object p6, p0, Lcom/google/android/play/core/assetpacks/k1;->e:Ly4/l0;
 
     return-void
 .end method
@@ -183,9 +183,9 @@
     invoke-virtual {v0, v2, v3, v1}, Ly4/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/k1;->e:Ly4/j0;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/k1;->e:Ly4/l0;
 
-    invoke-interface {v0}, Ly4/j0;->a()Ljava/lang/Object;
+    invoke-interface {v0}, Ly4/l0;->a()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -249,7 +249,7 @@
 
     const-string p1, "slice_ids"
 
-    invoke-static {p1, p2}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -257,7 +257,7 @@
 
     const-string p1, "pack_version"
 
-    invoke-static {p1, p2}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -273,7 +273,7 @@
 
     const-string p1, "status"
 
-    invoke-static {p1, p2}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -281,7 +281,7 @@
 
     const-string p1, "error_code"
 
-    invoke-static {p1, p2}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -289,7 +289,7 @@
 
     const-string p1, "bytes_downloaded"
 
-    invoke-static {p1, p2}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -301,7 +301,7 @@
 
     const-string v1, "total_bytes_to_download"
 
-    invoke-static {v1, p2}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p2}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -394,7 +394,7 @@
 
     const-string v11, "chunk_intents"
 
-    invoke-static {v11, p2, v10}, Ly4/p0;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v11, p2, v10}, Ly4/r0;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v11
 
@@ -402,7 +402,7 @@
 
     const-string v9, "uncompressed_hash_sha256"
 
-    invoke-static {v9, p2, v10}, Ly4/p0;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v9, p2, v10}, Ly4/r0;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v9
 
@@ -428,7 +428,7 @@
 
     const-string v7, "uncompressed_size"
 
-    invoke-static {v7, p2, v10}, Ly4/p0;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v7, p2, v10}, Ly4/r0;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -619,7 +619,7 @@
     goto :goto_1
 .end method
 
-.method public final f0()V
+.method public final g0()V
     .locals 4
 
     sget-object v0, Lcom/google/android/play/core/assetpacks/k1;->g:Ly4/b;
@@ -638,7 +638,7 @@
     return-void
 .end method
 
-.method public final u(Ljava/util/List;)V
+.method public final v(Ljava/util/List;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -669,7 +669,7 @@
     return-void
 .end method
 
-.method public final w0(I)V
+.method public final x0(I)V
     .locals 3
 
     sget-object p1, Lcom/google/android/play/core/assetpacks/k1;->g:Ly4/b;
@@ -688,7 +688,7 @@
     return-void
 .end method
 
-.method public final x0(ILjava/lang/String;Ljava/lang/String;I)Lcom/google/android/play/core/tasks/Task;
+.method public final y0(ILjava/lang/String;Ljava/lang/String;I)Lcom/google/android/play/core/tasks/Task;
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -851,7 +851,7 @@
     return-object p1
 .end method
 
-.method public final y0(ILjava/lang/String;Ljava/lang/String;I)V
+.method public final z0(ILjava/lang/String;Ljava/lang/String;I)V
     .locals 0
 
     sget-object p1, Lcom/google/android/play/core/assetpacks/k1;->g:Ly4/b;

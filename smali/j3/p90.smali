@@ -3,42 +3,45 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/wc0;
+.implements Lj3/ed0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lj3/wc0<",
-        "Lj3/uc0<",
-        "Landroid/os/Bundle;",
-        ">;>;"
+        "Lj3/ed0<",
+        "Ljava/lang/Object;",
+        ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Ljava/util/Set;
+.field public final a:Lj3/im0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/Set<",
+            "Lj3/im0<",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
 .end field
 
+.field public final b:Ljava/util/concurrent/Executor;
+
 
 # direct methods
-.method public constructor <init>(Ljava/util/Set;)V
+.method public constructor <init>(Lj3/im0;Ljava/util/concurrent/Executor;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljava/util/Set<",
+            "Lj3/im0<",
             "Ljava/lang/String;",
-            ">;)V"
+            ">;",
+            "Ljava/util/concurrent/Executor;",
+            ")V"
         }
     .end annotation
 
@@ -46,64 +49,35 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj3/p90;->a:Ljava/util/Set;
+    iput-object p1, p0, Lj3/p90;->a:Lj3/im0;
+
+    .line 3
+    iput-object p2, p0, Lj3/p90;->b:Ljava/util/concurrent/Executor;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lj3/yl0;
+.method public final a()Lj3/im0;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lj3/yl0<",
-            "Lj3/uc0<",
-            "Landroid/os/Bundle;",
-            ">;>;"
+            "Lj3/im0<",
+            "Ljava/lang/Object;",
+            ">;"
         }
     .end annotation
 
     .line 1
-    new-instance v0, Ljava/util/ArrayList;
+    iget-object v0, p0, Lj3/p90;->a:Lj3/im0;
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    sget-object v1, Lj3/o90;->a:Lj3/ql0;
 
-    .line 2
-    iget-object v1, p0, Lj3/p90;->a:Ljava/util/Set;
+    iget-object v2, p0, Lj3/p90;->b:Ljava/util/concurrent/Executor;
 
-    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    .line 3
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    new-instance v1, Lj3/o90;
-
-    const/4 v2, 0x0
-
-    invoke-direct {v1, v0, v2}, Lj3/o90;-><init>(Ljava/lang/Object;I)V
-
-    invoke-static {v1}, Lj3/ul0;->i(Ljava/lang/Object;)Lj3/yl0;
+    invoke-static {v0, v1, v2}, Lj3/em0;->l(Lj3/im0;Lj3/ql0;Ljava/util/concurrent/Executor;)Lj3/im0;
 
     move-result-object v0
 

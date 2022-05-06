@@ -38,52 +38,52 @@
 .method public constructor <init>(Lio/sentry/SpanContext;)V
     .locals 1
 
-    .line 10
+    .line 13
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 11
+    .line 14
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
     iput-object v0, p0, Lio/sentry/SpanContext;->tags:Ljava/util/Map;
 
-    .line 12
+    .line 15
     iget-object v0, p1, Lio/sentry/SpanContext;->traceId:Lio/sentry/protocol/SentryId;
 
     iput-object v0, p0, Lio/sentry/SpanContext;->traceId:Lio/sentry/protocol/SentryId;
 
-    .line 13
+    .line 16
     iget-object v0, p1, Lio/sentry/SpanContext;->spanId:Lio/sentry/SpanId;
 
     iput-object v0, p0, Lio/sentry/SpanContext;->spanId:Lio/sentry/SpanId;
 
-    .line 14
+    .line 17
     iget-object v0, p1, Lio/sentry/SpanContext;->parentSpanId:Lio/sentry/SpanId;
 
     iput-object v0, p0, Lio/sentry/SpanContext;->parentSpanId:Lio/sentry/SpanId;
 
-    .line 15
+    .line 18
     iget-object v0, p1, Lio/sentry/SpanContext;->sampled:Ljava/lang/Boolean;
 
     iput-object v0, p0, Lio/sentry/SpanContext;->sampled:Ljava/lang/Boolean;
 
-    .line 16
+    .line 19
     iget-object v0, p1, Lio/sentry/SpanContext;->op:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/SpanContext;->op:Ljava/lang/String;
 
-    .line 17
+    .line 20
     iget-object v0, p1, Lio/sentry/SpanContext;->description:Ljava/lang/String;
 
     iput-object v0, p0, Lio/sentry/SpanContext;->description:Ljava/lang/String;
 
-    .line 18
+    .line 21
     iget-object v0, p1, Lio/sentry/SpanContext;->status:Lio/sentry/SpanStatus;
 
     iput-object v0, p0, Lio/sentry/SpanContext;->status:Lio/sentry/SpanStatus;
 
-    .line 19
+    .line 22
     iget-object p1, p1, Lio/sentry/SpanContext;->tags:Ljava/util/Map;
 
     invoke-static {p1}, Lio/sentry/util/CollectionUtils;->newConcurrentHashMap(Ljava/util/Map;)Ljava/util/Map;
@@ -92,20 +92,22 @@
 
     if-eqz p1, :cond_0
 
-    .line 20
+    .line 23
     iput-object p1, p0, Lio/sentry/SpanContext;->tags:Ljava/util/Map;
 
     :cond_0
     return-void
 .end method
 
-.method public constructor <init>(Lio/sentry/protocol/SentryId;Lio/sentry/SpanId;Ljava/lang/String;Lio/sentry/SpanId;Ljava/lang/Boolean;)V
+.method public constructor <init>(Lio/sentry/protocol/SentryId;Lio/sentry/SpanId;Lio/sentry/SpanId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lio/sentry/SpanStatus;)V
     .locals 1
-
-    .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
+    .end annotation
 
     .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
@@ -114,7 +116,7 @@
 
     const-string v0, "traceId is required"
 
-    .line 5
+    .line 6
     invoke-static {p1, v0}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -125,7 +127,7 @@
 
     const-string p1, "spanId is required"
 
-    .line 6
+    .line 7
     invoke-static {p2, p1}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -136,8 +138,8 @@
 
     const-string p1, "operation is required"
 
-    .line 7
-    invoke-static {p3, p1}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    .line 8
+    invoke-static {p4, p1}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -145,11 +147,42 @@
 
     iput-object p1, p0, Lio/sentry/SpanContext;->op:Ljava/lang/String;
 
-    .line 8
-    iput-object p4, p0, Lio/sentry/SpanContext;->parentSpanId:Lio/sentry/SpanId;
-
     .line 9
-    iput-object p5, p0, Lio/sentry/SpanContext;->sampled:Ljava/lang/Boolean;
+    iput-object p3, p0, Lio/sentry/SpanContext;->parentSpanId:Lio/sentry/SpanId;
+
+    .line 10
+    iput-object p6, p0, Lio/sentry/SpanContext;->sampled:Ljava/lang/Boolean;
+
+    .line 11
+    iput-object p5, p0, Lio/sentry/SpanContext;->description:Ljava/lang/String;
+
+    .line 12
+    iput-object p7, p0, Lio/sentry/SpanContext;->status:Lio/sentry/SpanStatus;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lio/sentry/protocol/SentryId;Lio/sentry/SpanId;Ljava/lang/String;Lio/sentry/SpanId;Ljava/lang/Boolean;)V
+    .locals 8
+
+    const/4 v5, 0x0
+
+    const/4 v7, 0x0
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v3, p4
+
+    move-object v4, p3
+
+    move-object v6, p5
+
+    .line 3
+    invoke-direct/range {v0 .. v7}, Lio/sentry/SpanContext;-><init>(Lio/sentry/protocol/SentryId;Lio/sentry/SpanId;Lio/sentry/SpanId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lio/sentry/SpanStatus;)V
 
     return-void
 .end method
@@ -315,6 +348,8 @@
 
 .method public setSampled(Ljava/lang/Boolean;)V
     .locals 0
+    .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
+    .end annotation
 
     .line 1
     iput-object p1, p0, Lio/sentry/SpanContext;->sampled:Ljava/lang/Boolean;

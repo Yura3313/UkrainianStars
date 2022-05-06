@@ -22,18 +22,18 @@
     return-void
 .end method
 
-.method public static A(Ljava/lang/StringBuilder;Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;Ljava/lang/Object;)V
+.method public static B(Ljava/lang/StringBuilder;Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;Ljava/lang/Object;)V
     .locals 2
 
     .line 1
-    iget v0, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->b:I
+    iget v0, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->h:I
 
     const/16 v1, 0xb
 
     if-ne v0, v1, :cond_0
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->m:Ljava/lang/Class;
+    iget-object p1, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->n:Ljava/lang/Class;
 
     .line 3
     invoke-static {p1}, Lc2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
@@ -84,7 +84,7 @@
     return-void
 .end method
 
-.method public static z(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;Ljava/lang/Object;)Ljava/lang/Object;
+.method public static y(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p0    # Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -108,7 +108,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->p:Lcom/google/android/gms/common/server/response/FastJsonResponse$a;
+    iget-object v0, p0, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->q:Lcom/google/android/gms/common/server/response/FastJsonResponse$a;
 
     if-eqz v0, :cond_0
 
@@ -116,7 +116,7 @@
     invoke-static {v0}, Lc2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
-    iget-object p0, p0, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->p:Lcom/google/android/gms/common/server/response/FastJsonResponse$a;
+    iget-object p0, p0, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->q:Lcom/google/android/gms/common/server/response/FastJsonResponse$a;
 
     check-cast p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;
 
@@ -126,7 +126,7 @@
     check-cast p1, Ljava/lang/Integer;
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->h:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->i:Landroid/util/SparseArray;
 
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
@@ -141,7 +141,7 @@
     if-nez p1, :cond_0
 
     .line 6
-    iget-object p0, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->b:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->h:Ljava/util/HashMap;
 
     const-string v0, "gms_unknown"
 
@@ -159,7 +159,7 @@
 
 
 # virtual methods
-.method public abstract h()Ljava/util/Map;
+.method public abstract b()Ljava/util/Map;
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 
@@ -174,7 +174,7 @@
     .end annotation
 .end method
 
-.method public j(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Ljava/lang/Object;
+.method public i(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Ljava/lang/Object;
     .locals 5
     .param p1    # Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -184,15 +184,15 @@
     .end annotation
 
     .line 1
-    iget-object v0, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->k:Ljava/lang/String;
+    iget-object v0, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->l:Ljava/lang/String;
 
     .line 2
-    iget-object v1, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->m:Ljava/lang/Class;
+    iget-object v1, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->n:Ljava/lang/Class;
 
     if-eqz v1, :cond_1
 
     .line 3
-    invoke-virtual {p0, v0}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->m(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->k(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -213,7 +213,7 @@
     new-array v4, v2, [Ljava/lang/Object;
 
     .line 4
-    iget-object p1, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->k:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->l:Ljava/lang/String;
 
     aput-object p1, v4, v3
 
@@ -295,14 +295,14 @@
 
     .line 9
     :cond_1
-    invoke-virtual {p0, v0}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->m(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->k(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public abstract m(Ljava/lang/String;)Ljava/lang/Object;
+.method public abstract k(Ljava/lang/String;)Ljava/lang/Object;
     .param p1    # Ljava/lang/String;
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
@@ -311,7 +311,7 @@
     .end annotation
 .end method
 
-.method public r(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Z
+.method public o(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Z
     .locals 2
     .param p1    # Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -319,14 +319,14 @@
     .end param
 
     .line 1
-    iget v0, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->i:I
+    iget v0, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->j:I
 
     const/16 v1, 0xb
 
     if-ne v0, v1, :cond_1
 
     .line 2
-    iget-boolean p1, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->j:Z
+    iget-boolean p1, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->k:Z
 
     if-eqz p1, :cond_0
 
@@ -351,14 +351,21 @@
 
     .line 5
     :cond_1
-    iget-object p1, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->k:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->l:Ljava/lang/String;
 
     .line 6
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->w(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->t(Ljava/lang/String;)Z
 
     move-result p1
 
     return p1
+.end method
+
+.method public abstract t(Ljava/lang/String;)Z
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -367,7 +374,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->h()Ljava/util/Map;
+    invoke-virtual {p0}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->b()Ljava/util/Map;
 
     move-result-object v0
 
@@ -409,19 +416,19 @@
     check-cast v4, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
 
     .line 5
-    invoke-virtual {p0, v4}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->r(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Z
+    invoke-virtual {p0, v4}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->o(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Z
 
     move-result v5
 
     if-eqz v5, :cond_0
 
     .line 6
-    invoke-virtual {p0, v4}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->j(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Ljava/lang/Object;
+    invoke-virtual {p0, v4}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->i(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;)Ljava/lang/Object;
 
     move-result-object v5
 
     .line 7
-    invoke-static {v4, v5}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->z(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v4, v5}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->y(Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -468,12 +475,12 @@
 
     .line 13
     :cond_2
-    iget v3, v4, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->i:I
+    iget v3, v4, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->j:I
 
     packed-switch v3, :pswitch_data_0
 
     .line 14
-    iget-boolean v3, v4, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->h:Z
+    iget-boolean v3, v4, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->i:Z
 
     if-eqz v3, :cond_6
 
@@ -552,7 +559,7 @@
     if-eqz v8, :cond_4
 
     .line 24
-    invoke-static {v1, v4, v8}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->A(Ljava/lang/StringBuilder;Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;Ljava/lang/Object;)V
+    invoke-static {v1, v4, v8}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->B(Ljava/lang/StringBuilder;Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;Ljava/lang/Object;)V
 
     :cond_4
     add-int/lit8 v3, v3, 0x1
@@ -569,7 +576,7 @@
 
     .line 26
     :cond_6
-    invoke-static {v1, v4, v5}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->A(Ljava/lang/StringBuilder;Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;Ljava/lang/Object;)V
+    invoke-static {v1, v4, v5}, Lcom/google/android/gms/common/server/response/FastJsonResponse;->B(Ljava/lang/StringBuilder;Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;Ljava/lang/Object;)V
 
     goto/16 :goto_0
 
@@ -610,11 +617,4 @@
         :pswitch_1
         :pswitch_0
     .end packed-switch
-.end method
-
-.method public abstract w(Ljava/lang/String;)Z
-    .param p1    # Ljava/lang/String;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
 .end method

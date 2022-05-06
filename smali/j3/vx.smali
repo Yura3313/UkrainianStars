@@ -3,82 +3,73 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/gl0;
+.implements Lj3/yj0;
 
 
-# instance fields
-.field public final a:Lj3/ux;
+# static fields
+.field public static final a:Lj3/yj0;
 
 
 # direct methods
-.method public constructor <init>(Lj3/ux;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lj3/vx;
+
+    invoke-direct {v0}, Lj3/vx;-><init>()V
+
+    sput-object v0, Lj3/vx;->a:Lj3/yj0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lj3/vx;->a:Lj3/ux;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lj3/yl0;
-    .locals 3
-
-    iget-object p1, p0, Lj3/vx;->a:Lj3/ux;
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget-object v0, p1, Lj3/ux;->c:Lj3/fz;
+    check-cast p1, Ljava/util/List;
 
-    invoke-static {}, Lcom/google/android/gms/internal/ads/zzvj;->y2()Lcom/google/android/gms/internal/ads/zzvj;
+    .line 2
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 3
+    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :cond_0
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    const/4 v2, 0x0
+    check-cast v1, Lj3/wx;
 
-    .line 2
-    invoke-virtual {v0, v1, v2}, Lj3/fz;->a(Lcom/google/android/gms/internal/ads/zzvj;Z)Lj3/ch;
-
-    move-result-object v0
-
-    .line 3
-    new-instance v1, Lj3/nd;
-
-    invoke-direct {v1, v0}, Lj3/nd;-><init>(Ljava/lang/Object;)V
+    if-eqz v1, :cond_0
 
     .line 4
-    invoke-virtual {p1, v0}, Lj3/ux;->a(Lj3/ch;)V
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 5
-    invoke-interface {v0}, Lj3/ch;->Q()Lj3/fi;
+    goto :goto_0
 
-    move-result-object p1
-
-    new-instance v2, Lm1/b;
-
-    invoke-direct {v2, v1}, Lm1/b;-><init>(Ljava/lang/Object;)V
-
-    .line 6
-    invoke-interface {p1, v2}, Lj3/fi;->d(Lj3/hi;)V
-
-    .line 7
-    sget-object p1, Lj3/n;->z1:Lj3/f;
-
-    .line 8
-    sget-object v2, Lj3/w41;->j:Lj3/w41;
-
-    iget-object v2, v2, Lj3/w41;->f:Lj3/l;
-
-    .line 9
-    invoke-virtual {v2, p1}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    .line 10
-    check-cast p1, Ljava/lang/String;
-
-    invoke-interface {v0, p1}, Lj3/ch;->loadUrl(Ljava/lang/String;)V
-
-    return-object v1
+    :cond_1
+    return-object v0
 .end method

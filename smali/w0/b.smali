@@ -16,13 +16,13 @@
 
 
 # instance fields
-.field public b:Lw0/b$b;
+.field public h:Lw0/b$b;
 
-.field public h:Landroid/content/Context;
+.field public i:Landroid/content/Context;
 
-.field public i:Landroid/animation/ArgbEvaluator;
+.field public j:Landroid/animation/ArgbEvaluator;
 
-.field public final j:Landroid/graphics/drawable/Drawable$Callback;
+.field public final k:Landroid/graphics/drawable/Drawable$Callback;
 
 
 # direct methods
@@ -46,24 +46,24 @@
     const/4 p2, 0x0
 
     .line 3
-    iput-object p2, p0, Lw0/b;->i:Landroid/animation/ArgbEvaluator;
+    iput-object p2, p0, Lw0/b;->j:Landroid/animation/ArgbEvaluator;
 
     .line 4
     new-instance p3, Lw0/b$a;
 
     invoke-direct {p3, p0}, Lw0/b$a;-><init>(Lw0/b;)V
 
-    iput-object p3, p0, Lw0/b;->j:Landroid/graphics/drawable/Drawable$Callback;
+    iput-object p3, p0, Lw0/b;->k:Landroid/graphics/drawable/Drawable$Callback;
 
     .line 5
-    iput-object p1, p0, Lw0/b;->h:Landroid/content/Context;
+    iput-object p1, p0, Lw0/b;->i:Landroid/content/Context;
 
     .line 6
     new-instance p1, Lw0/b$b;
 
     invoke-direct {p1, p2, p3, p2}, Lw0/b$b;-><init>(Lw0/b$b;Landroid/graphics/drawable/Drawable$Callback;Landroid/content/res/Resources;)V
 
-    iput-object p1, p0, Lw0/b;->b:Lw0/b$b;
+    iput-object p1, p0, Lw0/b;->h:Lw0/b$b;
 
     return-void
 .end method
@@ -145,7 +145,7 @@
 
     .line 9
     :cond_1
-    iget-object v0, p0, Lw0/b;->i:Landroid/animation/ArgbEvaluator;
+    iget-object v0, p0, Lw0/b;->j:Landroid/animation/ArgbEvaluator;
 
     if-nez v0, :cond_2
 
@@ -154,11 +154,11 @@
 
     invoke-direct {v0}, Landroid/animation/ArgbEvaluator;-><init>()V
 
-    iput-object v0, p0, Lw0/b;->i:Landroid/animation/ArgbEvaluator;
+    iput-object v0, p0, Lw0/b;->j:Landroid/animation/ArgbEvaluator;
 
     .line 11
     :cond_2
-    iget-object v0, p0, Lw0/b;->i:Landroid/animation/ArgbEvaluator;
+    iget-object v0, p0, Lw0/b;->j:Landroid/animation/ArgbEvaluator;
 
     invoke-virtual {p1, v0}, Landroid/animation/ObjectAnimator;->setEvaluator(Landroid/animation/TypeEvaluator;)V
 
@@ -170,7 +170,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -192,7 +192,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -221,7 +221,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -232,14 +232,14 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->b:Lw0/h;
 
     invoke-virtual {v0, p1}, Lw0/h;->draw(Landroid/graphics/Canvas;)V
 
     .line 4
-    iget-object p1, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object p1, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object p1, p1, Lw0/b$b;->c:Landroid/animation/AnimatorSet;
 
@@ -260,7 +260,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_1
 
@@ -286,7 +286,7 @@
 
     .line 4
     :cond_1
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->b:Lw0/h;
 
@@ -301,7 +301,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -318,7 +318,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v1, p0, Lw0/b;->h:Lw0/b$b;
 
     iget v1, v1, Lw0/b$b;->a:I
 
@@ -331,7 +331,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_1
 
@@ -357,7 +357,7 @@
 
     .line 4
     :cond_1
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->b:Lw0/h;
 
@@ -372,7 +372,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -385,7 +385,7 @@
     .line 2
     new-instance v0, Lw0/b$c;
 
-    iget-object v1, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1}, Landroid/graphics/drawable/Drawable;->getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
 
@@ -405,7 +405,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -418,7 +418,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->b:Lw0/h;
 
@@ -433,7 +433,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -446,7 +446,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->b:Lw0/h;
 
@@ -461,7 +461,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -474,7 +474,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->b:Lw0/h;
 
@@ -522,7 +522,7 @@
     move-object/from16 v4, p4
 
     .line 1
-    iget-object v5, v1, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v5, v1, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     const/16 v6, 0x15
 
@@ -615,7 +615,7 @@
     if-eqz v10, :cond_7
 
     .line 13
-    sget-object v14, Lw0/h;->o:Landroid/graphics/PorterDuff$Mode;
+    sget-object v14, Lw0/h;->p:Landroid/graphics/PorterDuff$Mode;
 
     .line 14
     sget v14, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -632,12 +632,12 @@
 
     move-result-object v10
 
-    iput-object v10, v9, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iput-object v10, v9, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     .line 17
     new-instance v10, Lw0/h$i;
 
-    iget-object v11, v9, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v11, v9, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     .line 18
     invoke-virtual {v11}, Landroid/graphics/drawable/Drawable;->getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
@@ -700,15 +700,15 @@
 
     .line 24
     :goto_3
-    iput-boolean v13, v9, Lw0/h;->k:Z
+    iput-boolean v13, v9, Lw0/h;->l:Z
 
     .line 25
-    iget-object v10, v1, Lw0/b;->j:Landroid/graphics/drawable/Drawable$Callback;
+    iget-object v10, v1, Lw0/b;->k:Landroid/graphics/drawable/Drawable$Callback;
 
     invoke-virtual {v9, v10}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
 
     .line 26
-    iget-object v10, v1, Lw0/b;->b:Lw0/b$b;
+    iget-object v10, v1, Lw0/b;->h:Lw0/b$b;
 
     iget-object v10, v10, Lw0/b$b;->b:Lw0/h;
 
@@ -719,7 +719,7 @@
 
     .line 28
     :cond_6
-    iget-object v10, v1, Lw0/b;->b:Lw0/b$b;
+    iget-object v10, v1, Lw0/b;->h:Lw0/b$b;
 
     iput-object v9, v10, Lw0/b$b;->b:Lw0/h;
 
@@ -760,7 +760,7 @@
     if-eqz v10, :cond_e
 
     .line 35
-    iget-object v13, v1, Lw0/b;->h:Landroid/content/Context;
+    iget-object v13, v1, Lw0/b;->i:Landroid/content/Context;
 
     if-eqz v13, :cond_d
 
@@ -831,19 +831,19 @@
 
     .line 42
     :goto_4
-    iget-object v8, v1, Lw0/b;->b:Lw0/b$b;
+    iget-object v8, v1, Lw0/b;->h:Lw0/b$b;
 
     iget-object v8, v8, Lw0/b$b;->b:Lw0/h;
 
     .line 43
-    iget-object v8, v8, Lw0/h;->b:Lw0/h$h;
+    iget-object v8, v8, Lw0/h;->h:Lw0/h$h;
 
     iget-object v8, v8, Lw0/h$h;->b:Lw0/h$g;
 
     iget-object v8, v8, Lw0/h$g;->p:Lm/a;
 
     .line 44
-    invoke-virtual {v8, v9, v12}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v9, v12}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v8
 
@@ -859,7 +859,7 @@
 
     .line 47
     :cond_a
-    iget-object v6, v1, Lw0/b;->b:Lw0/b$b;
+    iget-object v6, v1, Lw0/b;->h:Lw0/b$b;
 
     iget-object v11, v6, Lw0/b$b;->d:Ljava/util/ArrayList;
 
@@ -873,7 +873,7 @@
     iput-object v11, v6, Lw0/b$b;->d:Ljava/util/ArrayList;
 
     .line 49
-    iget-object v6, v1, Lw0/b;->b:Lw0/b$b;
+    iget-object v6, v1, Lw0/b;->h:Lw0/b$b;
 
     new-instance v11, Lm/a;
 
@@ -883,18 +883,18 @@
 
     .line 50
     :cond_b
-    iget-object v6, v1, Lw0/b;->b:Lw0/b$b;
+    iget-object v6, v1, Lw0/b;->h:Lw0/b$b;
 
     iget-object v6, v6, Lw0/b$b;->d:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 51
-    iget-object v6, v1, Lw0/b;->b:Lw0/b$b;
+    iget-object v6, v1, Lw0/b;->h:Lw0/b$b;
 
     iget-object v6, v6, Lw0/b$b;->e:Lm/a;
 
-    invoke-virtual {v6, v10, v9}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v6, v10, v9}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_9
 
@@ -1042,7 +1042,7 @@
 
     .line 66
     :cond_10
-    iget-object v0, v1, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, v1, Lw0/b;->h:Lw0/b$b;
 
     .line 67
     iget-object v2, v0, Lw0/b$b;->c:Landroid/animation/AnimatorSet;
@@ -1071,7 +1071,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -1084,7 +1084,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->b:Lw0/h;
 
@@ -1099,7 +1099,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -1114,7 +1114,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->c:Landroid/animation/AnimatorSet;
 
@@ -1129,7 +1129,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -1142,7 +1142,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->b:Lw0/h;
 
@@ -1157,7 +1157,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -1172,7 +1172,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -1183,7 +1183,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->b:Lw0/h;
 
@@ -1196,7 +1196,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -1209,7 +1209,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->b:Lw0/h;
 
@@ -1224,7 +1224,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -1237,7 +1237,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->b:Lw0/h;
 
@@ -1252,7 +1252,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -1263,7 +1263,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->b:Lw0/h;
 
@@ -1276,7 +1276,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -1287,12 +1287,12 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->b:Lw0/h;
 
     .line 4
-    iget-object v1, v0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v1, v0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v1, :cond_1
 
@@ -1303,7 +1303,7 @@
 
     .line 6
     :cond_1
-    iget-object v0, v0, Lw0/h;->b:Lw0/h$h;
+    iget-object v0, v0, Lw0/h;->h:Lw0/h$h;
 
     iput-boolean p1, v0, Lw0/h$h;->e:Z
 
@@ -1315,7 +1315,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -1326,12 +1326,12 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->b:Lw0/h;
 
     .line 4
-    iget-object v1, v0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v1, v0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v1, :cond_1
 
@@ -1342,7 +1342,7 @@
 
     .line 6
     :cond_1
-    iput-object p1, v0, Lw0/h;->i:Landroid/graphics/ColorFilter;
+    iput-object p1, v0, Lw0/h;->j:Landroid/graphics/ColorFilter;
 
     .line 7
     invoke-virtual {v0}, Lw0/h;->invalidateSelf()V
@@ -1355,7 +1355,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -1366,7 +1366,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->b:Lw0/h;
 
@@ -1379,7 +1379,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -1390,7 +1390,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->b:Lw0/h;
 
@@ -1403,7 +1403,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -1414,7 +1414,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->b:Lw0/h;
 
@@ -1427,7 +1427,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -1440,7 +1440,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->b:Lw0/h;
 
@@ -1458,7 +1458,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -1471,7 +1471,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->c:Landroid/animation/AnimatorSet;
 
@@ -1485,7 +1485,7 @@
 
     .line 4
     :cond_1
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->c:Landroid/animation/AnimatorSet;
 
@@ -1501,7 +1501,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -1514,7 +1514,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lw0/b;->b:Lw0/b$b;
+    iget-object v0, p0, Lw0/b;->h:Lw0/b$b;
 
     iget-object v0, v0, Lw0/b$b;->c:Landroid/animation/AnimatorSet;
 

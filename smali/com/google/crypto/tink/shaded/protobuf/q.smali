@@ -6,7 +6,6 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/crypto/tink/shaded/protobuf/q$d;,
         Lcom/google/crypto/tink/shaded/protobuf/q$c;,
         Lcom/google/crypto/tink/shaded/protobuf/q$b;,
         Lcom/google/crypto/tink/shaded/protobuf/q$a;
@@ -107,7 +106,7 @@
     check-cast p0, Lcom/google/crypto/tink/shaded/protobuf/o$a;
 
     .line 3
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/o$a;->a:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/o$a;->g:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     .line 4
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -130,7 +129,7 @@
     invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 8
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     invoke-virtual {p0, v0, p1}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->g(Lcom/google/crypto/tink/shaded/protobuf/o;Lcom/google/crypto/tink/shaded/protobuf/o;)V
 

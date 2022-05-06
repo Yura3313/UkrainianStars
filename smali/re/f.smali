@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field public final synthetic a:Lre/e;
+.field public final synthetic g:Lre/e;
 
-.field public final synthetic b:Ljava/lang/CharSequence;
+.field public final synthetic h:Ljava/lang/CharSequence;
 
-.field public final synthetic h:I
+.field public final synthetic i:I
 
 
 # direct methods
 .method public constructor <init>(Lre/e;Ljava/lang/CharSequence;I)V
     .locals 0
 
-    iput-object p1, p0, Lre/f;->a:Lre/e;
+    iput-object p1, p0, Lre/f;->g:Lre/e;
 
-    iput-object p2, p0, Lre/f;->b:Ljava/lang/CharSequence;
+    iput-object p2, p0, Lre/f;->h:Ljava/lang/CharSequence;
 
-    iput p3, p0, Lre/f;->h:I
+    iput p3, p0, Lre/f;->i:I
 
     const/4 p1, 0x0
 
@@ -48,18 +48,18 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lre/f;->a:Lre/e;
+    iget-object v0, p0, Lre/f;->g:Lre/e;
 
-    iget-object v1, p0, Lre/f;->b:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lre/f;->h:Ljava/lang/CharSequence;
 
-    iget v2, p0, Lre/f;->h:I
+    iget v2, p0, Lre/f;->i:I
 
     const/4 v3, 0x0
 
     if-eqz v1, :cond_1
 
     .line 2
-    iget-object v0, v0, Lre/e;->a:Ljava/util/regex/Pattern;
+    iget-object v0, v0, Lre/e;->g:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, v1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -67,7 +67,7 @@
 
     const-string v4, "nativePattern.matcher(input)"
 
-    invoke-static {v0, v4}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     invoke-virtual {v0, v2}, Ljava/util/regex/Matcher;->find(I)Z
@@ -90,7 +90,7 @@
     const-string v0, "input"
 
     .line 4
-    invoke-static {v0}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {v0}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v3
 .end method

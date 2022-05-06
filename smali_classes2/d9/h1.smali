@@ -1,5 +1,5 @@
 .class public Ld9/h1;
-.super Ly7/g;
+.super Lz7/g;
 .source "SmartIntentVM.java"
 
 
@@ -14,7 +14,7 @@
     .line 1
     iput-object p1, p0, Ld9/h1;->b:Ld9/i1;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -41,13 +41,13 @@
     check-cast v0, Ld9/i;
 
     .line 5
-    iget-object v1, v0, Ld9/i;->o:Ly7/f;
+    iget-object v1, v0, Ld9/i;->o:Lz7/f;
 
     new-instance v2, Ld9/s;
 
     invoke-direct {v2, v0}, Ld9/s;-><init>(Ld9/i;)V
 
-    invoke-virtual {v1, v2}, Ly7/f;->g(Ly7/g;)V
+    invoke-virtual {v1, v2}, Lz7/f;->h(Lz7/g;)V
 
     return-void
 .end method

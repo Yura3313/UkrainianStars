@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Ljava/util/List;
+.field public final g:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -51,7 +51,7 @@
     invoke-direct {p0, v0}, Lcom/google/firebase/components/DependencyException;-><init>(Ljava/lang/String;)V
 
     .line 2
-    iput-object p1, p0, Lcom/google/firebase/components/DependencyCycleException;->a:Ljava/util/List;
+    iput-object p1, p0, Lcom/google/firebase/components/DependencyCycleException;->g:Ljava/util/List;
 
     return-void
 .end method

@@ -19,17 +19,17 @@
 
 
 # instance fields
-.field public final a:Landroid/view/View;
+.field public final g:Landroid/view/View;
 
-.field public final b:I
+.field public final h:I
 
-.field public final h:Landroid/view/ViewGroup;
+.field public final i:Landroid/view/ViewGroup;
 
-.field public final i:Z
-
-.field public j:Z
+.field public final j:Z
 
 .field public k:Z
+
+.field public l:Z
 
 
 # direct methods
@@ -42,13 +42,13 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Landroidx/transition/Visibility$a;->k:Z
+    iput-boolean v0, p0, Landroidx/transition/Visibility$a;->l:Z
 
     .line 3
-    iput-object p1, p0, Landroidx/transition/Visibility$a;->a:Landroid/view/View;
+    iput-object p1, p0, Landroidx/transition/Visibility$a;->g:Landroid/view/View;
 
     .line 4
-    iput p2, p0, Landroidx/transition/Visibility$a;->b:I
+    iput p2, p0, Landroidx/transition/Visibility$a;->h:I
 
     .line 5
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
@@ -57,10 +57,10 @@
 
     check-cast p1, Landroid/view/ViewGroup;
 
-    iput-object p1, p0, Landroidx/transition/Visibility$a;->h:Landroid/view/ViewGroup;
+    iput-object p1, p0, Landroidx/transition/Visibility$a;->i:Landroid/view/ViewGroup;
 
     .line 6
-    iput-boolean p3, p0, Landroidx/transition/Visibility$a;->i:Z
+    iput-boolean p3, p0, Landroidx/transition/Visibility$a;->j:Z
 
     const/4 p1, 0x1
 
@@ -96,7 +96,7 @@
     invoke-virtual {p0}, Landroidx/transition/Visibility$a;->f()V
 
     .line 2
-    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->w(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
+    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->x(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
 
     return-void
 .end method
@@ -122,14 +122,14 @@
     .locals 3
 
     .line 1
-    iget-boolean v0, p0, Landroidx/transition/Visibility$a;->k:Z
+    iget-boolean v0, p0, Landroidx/transition/Visibility$a;->l:Z
 
     if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Landroidx/transition/Visibility$a;->a:Landroid/view/View;
+    iget-object v0, p0, Landroidx/transition/Visibility$a;->g:Landroid/view/View;
 
-    iget v1, p0, Landroidx/transition/Visibility$a;->b:I
+    iget v1, p0, Landroidx/transition/Visibility$a;->h:I
 
     .line 3
     sget-object v2, Lv0/x;->a:Lv0/d0;
@@ -137,7 +137,7 @@
     invoke-virtual {v2, v0, v1}, Lv0/d0;->g(Landroid/view/View;I)V
 
     .line 4
-    iget-object v0, p0, Landroidx/transition/Visibility$a;->h:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroidx/transition/Visibility$a;->i:Landroid/view/ViewGroup;
 
     if-eqz v0, :cond_0
 
@@ -157,20 +157,20 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Landroidx/transition/Visibility$a;->i:Z
+    iget-boolean v0, p0, Landroidx/transition/Visibility$a;->j:Z
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Landroidx/transition/Visibility$a;->j:Z
+    iget-boolean v0, p0, Landroidx/transition/Visibility$a;->k:Z
 
     if-eq v0, p1, :cond_0
 
-    iget-object v0, p0, Landroidx/transition/Visibility$a;->h:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroidx/transition/Visibility$a;->i:Landroid/view/ViewGroup;
 
     if-eqz v0, :cond_0
 
     .line 2
-    iput-boolean p1, p0, Landroidx/transition/Visibility$a;->j:Z
+    iput-boolean p1, p0, Landroidx/transition/Visibility$a;->k:Z
 
     .line 3
     invoke-static {v0, p1}, Lv0/w;->b(Landroid/view/ViewGroup;Z)V
@@ -185,7 +185,7 @@
     const/4 p1, 0x1
 
     .line 1
-    iput-boolean p1, p0, Landroidx/transition/Visibility$a;->k:Z
+    iput-boolean p1, p0, Landroidx/transition/Visibility$a;->l:Z
 
     return-void
 .end method
@@ -203,14 +203,14 @@
     .locals 2
 
     .line 1
-    iget-boolean p1, p0, Landroidx/transition/Visibility$a;->k:Z
+    iget-boolean p1, p0, Landroidx/transition/Visibility$a;->l:Z
 
     if-nez p1, :cond_0
 
     .line 2
-    iget-object p1, p0, Landroidx/transition/Visibility$a;->a:Landroid/view/View;
+    iget-object p1, p0, Landroidx/transition/Visibility$a;->g:Landroid/view/View;
 
-    iget v0, p0, Landroidx/transition/Visibility$a;->b:I
+    iget v0, p0, Landroidx/transition/Visibility$a;->h:I
 
     .line 3
     sget-object v1, Lv0/x;->a:Lv0/d0;
@@ -231,12 +231,12 @@
     .locals 2
 
     .line 1
-    iget-boolean p1, p0, Landroidx/transition/Visibility$a;->k:Z
+    iget-boolean p1, p0, Landroidx/transition/Visibility$a;->l:Z
 
     if-nez p1, :cond_0
 
     .line 2
-    iget-object p1, p0, Landroidx/transition/Visibility$a;->a:Landroid/view/View;
+    iget-object p1, p0, Landroidx/transition/Visibility$a;->g:Landroid/view/View;
 
     const/4 v0, 0x0
 

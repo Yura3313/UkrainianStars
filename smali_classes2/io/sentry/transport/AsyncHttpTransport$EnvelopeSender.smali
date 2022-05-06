@@ -349,7 +349,6 @@
 
     invoke-interface {v4, v5, v6, v7}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 4
@@ -403,11 +402,6 @@
     :catchall_0
     move-exception v4
 
-    goto :goto_0
-
-    :catch_0
-    move-exception v4
-
     .line 9
     :try_start_1
     iget-object v5, p0, Lio/sentry/transport/AsyncHttpTransport$EnvelopeSender;->this$0:Lio/sentry/transport/AsyncHttpTransport;
@@ -431,10 +425,12 @@
     .line 10
     throw v4
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    :catchall_1
+    move-exception v4
 
     .line 11
-    :goto_0
     iget-object v5, p0, Lio/sentry/transport/AsyncHttpTransport$EnvelopeSender;->hint:Ljava/lang/Object;
 
     instance-of v5, v5, Lio/sentry/hints/SubmissionResult;
@@ -481,6 +477,7 @@
 
     invoke-interface {v0, v1}, Lio/sentry/hints/SubmissionResult;->setResult(Z)V
 
+    .line 16
     :cond_1
     throw v4
 .end method

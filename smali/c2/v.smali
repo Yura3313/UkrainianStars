@@ -9,19 +9,19 @@
 # instance fields
 .field public final synthetic a:Lz1/c;
 
-.field public final synthetic b:La4/g;
+.field public final synthetic b:Lb4/g;
 
 .field public final synthetic c:Lc2/g$a;
 
 
 # direct methods
-.method public constructor <init>(Lz1/c;La4/g;Lc2/g$a;Lc2/g$b;)V
+.method public constructor <init>(Lz1/c;Lb4/g;Lc2/g$a;Lc2/g$b;)V
     .locals 0
 
     .line 1
     iput-object p1, p0, Lc2/v;->a:Lz1/c;
 
-    iput-object p2, p0, Lc2/v;->b:La4/g;
+    iput-object p2, p0, Lc2/v;->b:Lb4/g;
 
     iput-object p3, p0, Lc2/v;->c:Lc2/g$a;
 
@@ -36,7 +36,7 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p1}, Lcom/google/android/gms/common/api/Status;->x2()Z
+    invoke-virtual {p1}, Lcom/google/android/gms/common/api/Status;->z2()Z
 
     move-result v0
 
@@ -54,7 +54,7 @@
     move-result-object p1
 
     .line 3
-    iget-object v0, p0, Lc2/v;->b:La4/g;
+    iget-object v0, p0, Lc2/v;->b:Lb4/g;
 
     iget-object v1, p0, Lc2/v;->c:Lc2/g$a;
 
@@ -63,15 +63,15 @@
     move-result-object p1
 
     .line 4
-    iget-object v0, v0, La4/g;->a:La4/y;
+    iget-object v0, v0, Lb4/g;->a:Lb4/y;
 
-    invoke-virtual {v0, p1}, La4/y;->o(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Lb4/y;->o(Ljava/lang/Object;)V
 
     return-void
 
     .line 5
     :cond_0
-    iget-object v0, p0, Lc2/v;->b:La4/g;
+    iget-object v0, p0, Lc2/v;->b:Lb4/g;
 
     .line 6
     invoke-static {p1}, Lc2/a;->a(Lcom/google/android/gms/common/api/Status;)Lcom/google/android/gms/common/api/ApiException;
@@ -79,9 +79,9 @@
     move-result-object p1
 
     .line 7
-    iget-object v0, v0, La4/g;->a:La4/y;
+    iget-object v0, v0, Lb4/g;->a:Lb4/y;
 
-    invoke-virtual {v0, p1}, La4/y;->n(Ljava/lang/Exception;)V
+    invoke-virtual {v0, p1}, Lb4/y;->n(Ljava/lang/Exception;)V
 
     return-void
 .end method

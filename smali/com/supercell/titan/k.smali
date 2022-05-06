@@ -1,148 +1,67 @@
 .class public Lcom/supercell/titan/k;
-.super Ljava/lang/Object;
-.source "LocationService.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field public final synthetic a:Lcom/supercell/titan/LocationService;
-
-.field public final synthetic b:Lcom/supercell/titan/LocationService;
+.super Landroid/widget/RelativeLayout;
+.source "KeyboardDialog.java"
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/titan/LocationService;Lcom/supercell/titan/LocationService;)V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/titan/k;->b:Lcom/supercell/titan/LocationService;
-
-    iput-object p2, p0, Lcom/supercell/titan/k;->a:Lcom/supercell/titan/LocationService;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 7
+.method public dispatchKeyEventPreIme(Landroid/view/KeyEvent;)Z
+    .locals 4
 
     .line 1
-    :try_start_0
-    iget-object v0, p0, Lcom/supercell/titan/k;->b:Lcom/supercell/titan/LocationService;
-
-    .line 2
-    iget-object v1, v0, Lcom/supercell/titan/LocationService;->b:Landroid/location/LocationManager;
-
-    const-string v2, "network"
-
-    invoke-virtual {v1, v2}, Landroid/location/LocationManager;->getLastKnownLocation(Ljava/lang/String;)Landroid/location/Location;
-
-    move-result-object v1
-
-    .line 3
-    iget-object v2, v0, Lcom/supercell/titan/LocationService;->b:Landroid/location/LocationManager;
-
-    const-string v3, "gps"
-
-    invoke-virtual {v2, v3}, Landroid/location/LocationManager;->getLastKnownLocation(Ljava/lang/String;)Landroid/location/Location;
-
-    move-result-object v2
-
-    .line 4
-    sget-object v3, Lcom/supercell/titan/LocationService;->f:Landroid/location/Location;
-
-    invoke-virtual {v0, v2, v3}, Lcom/supercell/titan/LocationService;->a(Landroid/location/Location;Landroid/location/Location;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    .line 5
-    sput-object v2, Lcom/supercell/titan/LocationService;->f:Landroid/location/Location;
-
-    .line 6
-    :cond_0
-    sget-object v2, Lcom/supercell/titan/LocationService;->f:Landroid/location/Location;
-
-    invoke-virtual {v0, v1, v2}, Lcom/supercell/titan/LocationService;->a(Landroid/location/Location;Landroid/location/Location;)Z
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    const/4 v1, 0x4
 
-    .line 7
-    sput-object v1, Lcom/supercell/titan/LocationService;->f:Landroid/location/Location;
+    if-ne v0, v1, :cond_1
 
-    .line 8
-    :cond_1
-    sget-object v0, Lcom/supercell/titan/LocationService;->f:Landroid/location/Location;
+    invoke-virtual {p1}, Landroid/view/KeyEvent;->getAction()I
 
-    if-eqz v0, :cond_2
-
-    .line 9
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 10
-    iget-object v1, p0, Lcom/supercell/titan/k;->b:Lcom/supercell/titan/LocationService;
-
-    invoke-virtual {v1, v0}, Lcom/supercell/titan/LocationService;->onLocationChanged(Landroid/location/Location;)V
-
-    .line 11
-    :cond_2
-    new-instance v0, Landroid/location/Criteria;
-
-    invoke-direct {v0}, Landroid/location/Criteria;-><init>()V
+    move-result v0
 
     const/4 v1, 0x1
 
-    .line 12
-    invoke-virtual {v0, v1}, Landroid/location/Criteria;->setAccuracy(I)V
+    if-ne v0, v1, :cond_1
 
-    .line 13
-    iget-object v2, p0, Lcom/supercell/titan/k;->b:Lcom/supercell/titan/LocationService;
+    .line 2
+    sget-object v0, Lcom/supercell/titan/VirtualKeyboardHandler;->d:Lcom/supercell/titan/KeyboardDialog;
 
-    .line 14
-    iget-object v3, v2, Lcom/supercell/titan/LocationService;->b:Landroid/location/LocationManager;
+    const/4 v2, 0x0
 
-    .line 15
-    invoke-virtual {v3, v0, v1}, Landroid/location/LocationManager;->getBestProvider(Landroid/location/Criteria;Z)Ljava/lang/String;
+    if-eqz v0, :cond_0
+
+    .line 3
+    invoke-static {}, Lcom/supercell/titan/GameApp;->getInstance()Lcom/supercell/titan/GameApp;
 
     move-result-object v0
 
-    .line 16
-    iput-object v0, v2, Lcom/supercell/titan/LocationService;->e:Ljava/lang/String;
+    new-instance v3, Lcom/supercell/titan/n0;
 
-    .line 17
-    iget-object v0, p0, Lcom/supercell/titan/k;->b:Lcom/supercell/titan/LocationService;
+    invoke-direct {v3, v1, v2}, Lcom/supercell/titan/n0;-><init>(ZZ)V
 
-    .line 18
-    iget-object v2, v0, Lcom/supercell/titan/LocationService;->e:Ljava/lang/String;
+    invoke-virtual {v0, v3}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    if-nez v2, :cond_3
+    .line 4
+    :cond_0
+    sput-boolean v2, Lcom/supercell/titan/VirtualKeyboardHandler;->a:Z
 
-    goto :goto_0
+    .line 5
+    :cond_1
+    invoke-super {p0, p1}, Landroid/widget/RelativeLayout;->dispatchKeyEventPreIme(Landroid/view/KeyEvent;)Z
 
-    .line 19
-    :cond_3
-    iget-object v1, v0, Lcom/supercell/titan/LocationService;->b:Landroid/location/LocationManager;
+    move-result p1
 
-    const-wide/16 v3, 0x3e8
-
-    const/high16 v5, 0x41200000    # 10.0f
-
-    .line 20
-    iget-object v6, p0, Lcom/supercell/titan/k;->a:Lcom/supercell/titan/LocationService;
-
-    invoke-virtual/range {v1 .. v6}, Landroid/location/LocationManager;->requestLocationUpdates(Ljava/lang/String;JFLandroid/location/LocationListener;)V
-    :try_end_0
-    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :goto_0
-    return-void
+    return p1
 .end method

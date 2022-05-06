@@ -72,7 +72,7 @@
     iget-object v0, p0, La2/n0;->b:Lcom/google/android/gms/common/api/internal/a;
 
     .line 2
-    iget-object p1, p1, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object p1, p1, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -192,7 +192,7 @@
 
     add-int/lit8 v2, v2, 0x2
 
-    invoke-static {p1, v2}, Ly/b;->a(Ljava/lang/String;I)I
+    invoke-static {p1, v2}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v2
 

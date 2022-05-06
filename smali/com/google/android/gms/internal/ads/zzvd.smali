@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Lo1/a;
+.field public final g:Lo1/a;
 
 
 # direct methods
@@ -15,18 +15,18 @@
     invoke-direct {p0}, Lcom/google/android/gms/internal/ads/zzxa;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzvd;->a:Lo1/a;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzvd;->g:Lo1/a;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final C0()V
+.method public final D0()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzvd;->a:Lo1/a;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzvd;->g:Lo1/a;
 
     if-eqz v0, :cond_0
 

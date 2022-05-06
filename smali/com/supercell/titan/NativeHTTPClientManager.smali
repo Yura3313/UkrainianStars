@@ -126,7 +126,7 @@
 
     sput p1, Lcom/supercell/titan/NativeHTTPClientManager;->d:I
 
-    iput p0, v1, Lcom/supercell/titan/NativeHTTPConnection;->a:I
+    iput p0, v1, Lcom/supercell/titan/NativeHTTPConnection;->g:I
 
     .line 7
     iget-object p0, v0, Lcom/supercell/titan/NativeHTTPClientManager;->b:Ljava/util/concurrent/ExecutorService;
@@ -134,7 +134,7 @@
     invoke-interface {p0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
 
     .line 8
-    iget p0, v1, Lcom/supercell/titan/NativeHTTPConnection;->a:I
+    iget p0, v1, Lcom/supercell/titan/NativeHTTPConnection;->g:I
 
     return p0
 .end method
@@ -168,7 +168,7 @@
 
     sput p1, Lcom/supercell/titan/NativeHTTPClientManager;->d:I
 
-    iput p0, v1, Lcom/supercell/titan/NativeHTTPConnection;->a:I
+    iput p0, v1, Lcom/supercell/titan/NativeHTTPConnection;->g:I
 
     .line 7
     iget-object p0, v0, Lcom/supercell/titan/NativeHTTPClientManager;->b:Ljava/util/concurrent/ExecutorService;
@@ -176,7 +176,7 @@
     invoke-interface {p0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
 
     .line 8
-    iget p0, v1, Lcom/supercell/titan/NativeHTTPConnection;->a:I
+    iget p0, v1, Lcom/supercell/titan/NativeHTTPConnection;->g:I
 
     return p0
 .end method
@@ -214,7 +214,7 @@
 
     move-result-object v4
 
-    sget-object v5, Lcom/supercell/titan/NativeHTTPConnection$Status;->OK:Lcom/supercell/titan/NativeHTTPConnection$Status;
+    sget-object v5, Lcom/supercell/titan/NativeHTTPConnection$Status;->j:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
     if-ne v4, v5, :cond_0
 
@@ -227,7 +227,7 @@
 
     .line 4
     :goto_1
-    iget v5, v3, Lcom/supercell/titan/NativeHTTPConnection;->a:I
+    iget v5, v3, Lcom/supercell/titan/NativeHTTPConnection;->g:I
 
     .line 5
     invoke-virtual {v3}, Lcom/supercell/titan/NativeHTTPConnection;->getReceivedData()[B
@@ -239,7 +239,7 @@
 
     move-result-object v7
 
-    sget-object v8, Lcom/supercell/titan/NativeHTTPConnection$Method;->GET:Lcom/supercell/titan/NativeHTTPConnection$Method;
+    sget-object v8, Lcom/supercell/titan/NativeHTTPConnection$Method;->g:Lcom/supercell/titan/NativeHTTPConnection$Method;
 
     if-ne v7, v8, :cond_1
 

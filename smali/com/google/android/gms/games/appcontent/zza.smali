@@ -20,13 +20,13 @@
 
 
 # virtual methods
-.method public abstract J1()Lcom/google/android/gms/games/appcontent/zzc;
+.method public abstract M1()Lcom/google/android/gms/games/appcontent/zzc;
 .end method
 
-.method public abstract O()Ljava/lang/String;
+.method public abstract Q()Ljava/lang/String;
 .end method
 
-.method public abstract e()Ljava/lang/String;
+.method public abstract f()Ljava/lang/String;
 .end method
 
 .method public abstract getExtras()Landroid/os/Bundle;
@@ -38,7 +38,7 @@
 .method public abstract getType()Ljava/lang/String;
 .end method
 
-.method public abstract q()Ljava/util/List;
+.method public abstract s()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",

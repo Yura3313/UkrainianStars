@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/android/billingclient/api/t;
+.field public final synthetic g:Lcom/android/billingclient/api/u;
 
-.field public final synthetic b:Lcom/android/billingclient/api/n;
+.field public final synthetic h:Lcom/android/billingclient/api/n;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/billingclient/api/n;Lcom/android/billingclient/api/t;)V
+.method public constructor <init>(Lcom/android/billingclient/api/n;Lcom/android/billingclient/api/u;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/billingclient/api/m;->b:Lcom/android/billingclient/api/n;
+    iput-object p1, p0, Lcom/android/billingclient/api/m;->h:Lcom/android/billingclient/api/n;
 
-    iput-object p2, p0, Lcom/android/billingclient/api/m;->a:Lcom/android/billingclient/api/t;
+    iput-object p2, p0, Lcom/android/billingclient/api/m;->g:Lcom/android/billingclient/api/u;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,17 +30,17 @@
 .method public final run()V
     .locals 4
 
-    iget-object v0, p0, Lcom/android/billingclient/api/m;->b:Lcom/android/billingclient/api/n;
+    iget-object v0, p0, Lcom/android/billingclient/api/m;->h:Lcom/android/billingclient/api/n;
 
     iget-object v0, v0, Lcom/android/billingclient/api/n;->c:Lcom/android/billingclient/api/j;
 
-    iget-object v1, p0, Lcom/android/billingclient/api/m;->a:Lcom/android/billingclient/api/t;
+    iget-object v1, p0, Lcom/android/billingclient/api/m;->g:Lcom/android/billingclient/api/u;
 
     .line 1
-    iget v2, v1, Lcom/android/billingclient/api/t;->b:I
+    iget v2, v1, Lcom/android/billingclient/api/u;->b:I
 
     .line 2
-    iget-object v1, v1, Lcom/android/billingclient/api/t;->c:Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/billingclient/api/u;->c:Ljava/lang/String;
 
     .line 3
     new-instance v3, Lcom/android/billingclient/api/e;
@@ -54,10 +54,10 @@
     iput-object v1, v3, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
 
     .line 6
-    iget-object v1, p0, Lcom/android/billingclient/api/m;->a:Lcom/android/billingclient/api/t;
+    iget-object v1, p0, Lcom/android/billingclient/api/m;->g:Lcom/android/billingclient/api/u;
 
     .line 7
-    iget-object v1, v1, Lcom/android/billingclient/api/t;->a:Ljava/util/List;
+    iget-object v1, v1, Lcom/android/billingclient/api/u;->a:Ljava/util/List;
 
     .line 8
     check-cast v0, Lcom/supercell/titan/PurchaseManagerGoogle$b;

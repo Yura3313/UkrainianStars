@@ -3,316 +3,467 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/util/concurrent/Callable;
+.implements Lj3/ol0;
 
 
 # instance fields
-.field public final a:Lj3/jc0;
+.field public final synthetic a:I
+
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lj3/jc0;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    iput p2, p0, Lj3/lc0;->a:I
 
-    iput-object p1, p0, Lj3/lc0;->a:Lj3/jc0;
+    iput-object p1, p0, Lj3/lc0;->b:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 10
+.method public final a()Lj3/im0;
+    .locals 9
 
-    iget-object v0, p0, Lj3/lc0;->a:Lj3/jc0;
+    iget v0, p0, Lj3/lc0;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto/16 :goto_7
 
     .line 1
-    iget-object v1, v0, Lj3/jc0;->a:Lj3/o9;
+    :pswitch_0
+    iget-object v0, p0, Lj3/lc0;->b:Ljava/lang/Object;
 
-    iget-object v2, v0, Lj3/jc0;->c:Landroid/content/Context;
-
-    invoke-virtual {v1, v2}, Lj3/o9;->h(Landroid/content/Context;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
+    check-cast v0, Lj3/mc0;
 
     .line 2
-    new-instance v0, Lj3/kc0;
+    iget-object v1, v0, Lj3/mc0;->c:Lj3/x70;
 
-    const/4 v3, 0x0
+    iget-object v2, v0, Lj3/mc0;->g:Ljava/lang/String;
 
-    const/4 v4, 0x0
+    iget-object v3, v0, Lj3/mc0;->e:Lj3/wg0;
 
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    move-object v2, v0
-
-    invoke-direct/range {v2 .. v7}, Lj3/kc0;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)V
-
-    goto/16 :goto_5
+    iget-object v3, v3, Lj3/wg0;->f:Ljava/lang/String;
 
     .line 3
-    :cond_0
-    iget-object v1, v0, Lj3/jc0;->a:Lj3/o9;
-
-    iget-object v2, v0, Lj3/jc0;->c:Landroid/content/Context;
-
-    invoke-virtual {v1, v2}, Lj3/o9;->j(Landroid/content/Context;)Ljava/lang/String;
-
-    move-result-object v1
-
-    if-nez v1, :cond_1
-
-    const-string v1, ""
-
-    :cond_1
-    move-object v3, v1
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
-    iget-object v1, v0, Lj3/jc0;->a:Lj3/o9;
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    iget-object v2, v0, Lj3/jc0;->c:Landroid/content/Context;
+    move-result v4
 
-    invoke-virtual {v1, v2}, Lj3/o9;->k(Landroid/content/Context;)Ljava/lang/String;
+    if-nez v4, :cond_a
 
-    move-result-object v1
+    invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    if-nez v1, :cond_2
+    move-result v4
 
-    const-string v1, ""
+    if-eqz v4, :cond_0
 
-    :cond_2
-    move-object v4, v1
+    goto/16 :goto_3
 
     .line 5
-    iget-object v1, v0, Lj3/jc0;->a:Lj3/o9;
+    :cond_0
+    iget-object v4, v1, Lj3/x70;->b:Ljava/util/Map;
 
-    iget-object v2, v0, Lj3/jc0;->c:Landroid/content/Context;
+    invoke-interface {v4, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {v1, v2}, Lj3/o9;->l(Landroid/content/Context;)Ljava/lang/String;
+    move-result-object v4
+
+    check-cast v4, Ljava/util/Map;
+
+    if-nez v4, :cond_1
+
+    .line 6
+    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object v1
 
-    if-nez v1, :cond_3
-
-    const-string v1, ""
-
-    :cond_3
-    move-object v5, v1
-
-    .line 6
-    iget-object v1, v0, Lj3/jc0;->a:Lj3/o9;
-
-    iget-object v0, v0, Lj3/jc0;->c:Landroid/content/Context;
+    goto/16 :goto_4
 
     .line 7
-    invoke-virtual {v1, v0}, Lj3/o9;->h(Landroid/content/Context;)Z
+    :cond_1
+    invoke-interface {v4, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result v2
+    move-result-object v5
 
-    const/4 v6, 0x0
+    check-cast v5, Ljava/util/List;
 
-    if-nez v2, :cond_4
-
-    move-object v7, v6
-
-    goto :goto_2
+    if-nez v5, :cond_7
 
     .line 8
-    :cond_4
-    iget-object v2, v1, Lj3/o9;->b:Ljava/lang/Object;
-
-    monitor-enter v2
+    iget-object v1, v1, Lj3/x70;->d:Lorg/json/JSONObject;
 
     .line 9
-    :try_start_0
-    iget-object v7, v1, Lj3/o9;->d:Ljava/lang/String;
-
-    if-eqz v7, :cond_5
+    sget-object v5, Lj3/n;->N0:Lj3/f;
 
     .line 10
-    monitor-exit v2
+    sget-object v6, Lj3/t51;->j:Lj3/t51;
 
-    goto :goto_2
+    iget-object v6, v6, Lj3/t51;->f:Lj3/l;
 
     .line 11
-    :cond_5
-    invoke-static {v0}, Lj3/o9;->i(Landroid/content/Context;)Z
+    invoke-virtual {v6, v5}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
 
-    move-result v0
-
-    if-eqz v0, :cond_7
-
-    const-string v0, "getAppIdOrigin"
+    move-result-object v5
 
     .line 12
-    iget-object v7, v1, Lj3/o9;->d:Ljava/lang/String;
+    check-cast v5, Ljava/lang/Boolean;
 
-    .line 13
-    iget-object v8, v1, Lj3/o9;->j:Ljava/util/concurrent/atomic/AtomicReference;
+    invoke-virtual {v5}, Ljava/lang/Boolean;->booleanValue()Z
 
-    monitor-enter v8
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+    move-result v5
 
-    .line 14
-    :try_start_1
-    iget-object v9, v1, Lj3/o9;->j:Ljava/util/concurrent/atomic/AtomicReference;
+    const-string v6, ""
 
-    invoke-virtual {v9}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
-
-    move-result-object v9
-
-    check-cast v9, Lcom/google/android/gms/internal/ads/zzbib;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    if-eqz v9, :cond_6
-
-    .line 15
-    :try_start_2
-    iget-object v9, v1, Lj3/o9;->j:Ljava/util/concurrent/atomic/AtomicReference;
-
-    invoke-virtual {v9}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
-
-    move-result-object v9
-
-    check-cast v9, Lcom/google/android/gms/internal/ads/zzbib;
-
-    .line 16
-    invoke-interface {v9}, Lcom/google/android/gms/internal/ads/zzbib;->O4()Ljava/lang/String;
-
-    move-result-object v7
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    .line 17
-    :try_start_3
-    monitor-exit v8
-
-    goto :goto_0
-
-    :catch_0
-    const/4 v9, 0x0
-
-    .line 18
-    invoke-virtual {v1, v0, v9}, Lj3/o9;->f(Ljava/lang/String;Z)V
-
-    .line 19
-    :cond_6
-    monitor-exit v8
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    .line 20
-    :goto_0
-    :try_start_4
-    iput-object v7, v1, Lj3/o9;->d:Ljava/lang/String;
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_1
+    if-nez v5, :cond_2
 
     goto :goto_1
 
-    :catchall_0
-    move-exception v0
+    :cond_2
+    if-nez v1, :cond_3
 
-    .line 21
-    :try_start_5
-    monitor-exit v8
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+    goto :goto_1
 
-    :try_start_6
-    throw v0
-
-    :cond_7
-    const-string v0, "fa"
-
-    .line 22
-    iput-object v0, v1, Lj3/o9;->d:Ljava/lang/String;
-
-    .line 23
-    :goto_1
-    iget-object v7, v1, Lj3/o9;->d:Ljava/lang/String;
-
-    monitor-exit v2
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_1
-
-    :goto_2
-    if-nez v7, :cond_8
-
-    const-string v0, ""
-
-    goto :goto_3
-
-    :cond_8
-    move-object v0, v7
-
-    :goto_3
-    const-string v1, "TIME_OUT"
-
-    .line 24
-    invoke-virtual {v1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_9
-
-    .line 25
-    sget-object v1, Lj3/n;->W:Lj3/f;
-
-    .line 26
-    sget-object v2, Lj3/w41;->j:Lj3/w41;
-
-    iget-object v2, v2, Lj3/w41;->f:Lj3/l;
-
-    .line 27
-    invoke-virtual {v2, v1}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+    .line 13
+    :cond_3
+    invoke-virtual {v1, v2}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v1
 
-    .line 28
-    check-cast v1, Ljava/lang/Long;
+    if-nez v1, :cond_4
 
-    move-object v7, v1
+    goto :goto_1
+
+    :cond_4
+    const/4 v2, 0x0
+
+    .line 14
+    :goto_0
+    invoke-virtual {v1}, Lorg/json/JSONArray;->length()I
+
+    move-result v5
+
+    if-ge v2, v5, :cond_6
+
+    .line 15
+    invoke-virtual {v1, v2}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object v5
+
+    if-eqz v5, :cond_5
+
+    const-string v7, "including"
+
+    .line 16
+    invoke-virtual {v5, v7}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object v7
+
+    const-string v8, "excluding"
+
+    .line 17
+    invoke-virtual {v5, v8}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object v8
+
+    .line 18
+    invoke-static {v7, v3}, Lj3/jx0;->a(Lorg/json/JSONArray;Ljava/lang/String;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_5
+
+    invoke-static {v8, v3}, Lj3/jx0;->a(Lorg/json/JSONArray;Ljava/lang/String;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_5
+
+    const-string v1, "effective_ad_unit_id"
+
+    .line 19
+    invoke-virtual {v5, v1, v6}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    goto :goto_1
+
+    :cond_5
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    .line 20
+    :cond_6
+    :goto_1
+    invoke-interface {v4, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v5, v1
+
+    check-cast v5, Ljava/util/List;
+
+    :cond_7
+    if-nez v5, :cond_8
+
+    .line 21
+    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
+
+    move-result-object v1
 
     goto :goto_4
 
+    .line 22
+    :cond_8
+    new-instance v1, Ljava/util/HashMap;
+
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+
+    .line 23
+    invoke-interface {v5}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_2
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_b
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lj3/y70;
+
+    .line 24
+    iget-object v4, v3, Lj3/y70;->a:Ljava/lang/String;
+
+    .line 25
+    invoke-virtual {v1, v4}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-nez v5, :cond_9
+
+    .line 26
+    new-instance v5, Ljava/util/ArrayList;
+
+    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
+
+    invoke-virtual {v1, v4, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 27
     :cond_9
-    move-object v7, v6
+    invoke-virtual {v1, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    .line 28
+    iget-object v3, v3, Lj3/y70;->b:Landroid/os/Bundle;
+
+    invoke-interface {v4, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_2
 
     .line 29
-    :goto_4
-    new-instance v1, Lj3/kc0;
+    :cond_a
+    :goto_3
+    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
-    move-object v2, v1
-
-    move-object v6, v0
-
-    invoke-direct/range {v2 .. v7}, Lj3/kc0;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)V
-
-    move-object v0, v1
-
-    :goto_5
-    return-object v0
-
-    :catchall_1
-    move-exception v0
+    move-result-object v1
 
     .line 30
-    :try_start_7
-    monitor-exit v2
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_1
+    :cond_b
+    :goto_4
+    new-instance v2, Ljava/util/ArrayList;
 
-    throw v0
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+
+    .line 31
+    invoke-interface {v1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_5
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_d
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/util/Map$Entry;
+
+    .line 32
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/String;
+
+    .line 33
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/util/List;
+
+    .line 34
+    iget-object v5, v0, Lj3/mc0;->e:Lj3/wg0;
+
+    iget-object v5, v5, Lj3/wg0;->d:Lcom/google/android/gms/internal/ads/zzvc;
+
+    iget-object v5, v5, Lcom/google/android/gms/internal/ads/zzvc;->s:Landroid/os/Bundle;
+
+    if-eqz v5, :cond_c
+
+    .line 35
+    invoke-virtual {v5, v4}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
+
+    move-result-object v5
+
+    goto :goto_6
+
+    :cond_c
+    const/4 v5, 0x0
+
+    .line 36
+    :goto_6
+    new-instance v6, Lj3/oc0;
+
+    invoke-direct {v6, v0, v4, v3, v5}, Lj3/oc0;-><init>(Lj3/mc0;Ljava/lang/String;Ljava/util/List;Landroid/os/Bundle;)V
+
+    iget-object v3, v0, Lj3/mc0;->a:Lj3/km0;
+
+    .line 37
+    invoke-static {v6, v3}, Lj3/em0;->f(Lj3/ol0;Ljava/util/concurrent/Executor;)Lj3/im0;
+
+    move-result-object v3
+
+    .line 38
+    invoke-static {v3}, Lj3/wl0;->v(Lj3/im0;)Lj3/wl0;
+
+    move-result-object v3
+
+    sget-object v5, Lj3/n;->K0:Lj3/f;
+
+    .line 39
+    sget-object v6, Lj3/t51;->j:Lj3/t51;
+
+    iget-object v6, v6, Lj3/t51;->f:Lj3/l;
+
+    .line 40
+    invoke-virtual {v6, v5}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    .line 41
+    check-cast v5, Ljava/lang/Long;
+
+    invoke-virtual {v5}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v5
+
+    sget-object v7, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    iget-object v8, v0, Lj3/mc0;->b:Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 42
+    invoke-virtual {v3, v5, v6, v7, v8}, Lj3/wl0;->s(JLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/ScheduledExecutorService;)Lj3/wl0;
+
+    move-result-object v3
+
+    const-class v5, Ljava/lang/Throwable;
+
+    new-instance v6, Lj3/nc0;
+
+    invoke-direct {v6, v4}, Lj3/nc0;-><init>(Ljava/lang/String;)V
+
+    iget-object v4, v0, Lj3/mc0;->a:Lj3/km0;
+
+    .line 43
+    new-instance v7, Lj3/gl0;
+
+    invoke-direct {v7, v3, v5, v6}, Lj3/gl0;-><init>(Lj3/im0;Ljava/lang/Class;Lj3/yj0;)V
+
+    .line 44
+    invoke-static {v4, v7}, Lj3/u4;->e(Ljava/util/concurrent/Executor;Lj3/fl0;)Ljava/util/concurrent/Executor;
+
+    move-result-object v4
+
+    invoke-interface {v3, v7, v4}, Lj3/im0;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+
+    .line 45
+    invoke-virtual {v2, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_5
+
+    .line 46
+    :cond_d
+    invoke-static {v2}, Lj3/ik0;->m(Ljava/lang/Iterable;)Lj3/ik0;
+
+    move-result-object v1
+
+    .line 47
+    new-instance v3, Lj3/qc0;
+
+    invoke-direct {v3, v2}, Lj3/qc0;-><init>(Ljava/util/List;)V
+
+    iget-object v0, v0, Lj3/mc0;->a:Lj3/km0;
+
+    .line 48
+    new-instance v2, Lj3/ul0;
+
+    const/4 v4, 0x1
+
+    invoke-direct {v2, v1, v4, v0, v3}, Lj3/ul0;-><init>(Lj3/hk0;ZLjava/util/concurrent/Executor;Ljava/util/concurrent/Callable;)V
+
+    return-object v2
+
+    .line 49
+    :goto_7
+    iget-object v0, p0, Lj3/lc0;->b:Ljava/lang/Object;
+
+    check-cast v0, Lj3/zd0;
+
+    .line 50
+    iget-object v1, v0, Lj3/zd0;->a:Lj3/ea;
+
+    iget-object v2, v0, Lj3/zd0;->c:Landroid/content/Context;
+
+    iget v0, v0, Lj3/zd0;->b:I
+
+    invoke-interface {v1, v2, v0}, Lj3/ea;->b(Landroid/content/Context;I)Lj3/im0;
+
+    move-result-object v0
+
+    return-object v0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

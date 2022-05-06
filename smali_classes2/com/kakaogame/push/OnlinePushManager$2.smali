@@ -44,14 +44,14 @@
 
     .line 1
     :try_start_0
-    new-instance v0, Lu/g$c;
+    new-instance v0, Lu/f$c;
 
     iget-object v1, p0, Lcom/kakaogame/push/OnlinePushManager$2;->val$activity:Landroid/app/Activity;
 
     const/4 v2, 0x0
 
     .line 2
-    invoke-direct {v0, v1, v2}, Lu/g$c;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Lu/f$c;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 3
     iget-object v1, p0, Lcom/kakaogame/push/OnlinePushManager$2;->val$activity:Landroid/app/Activity;
@@ -60,25 +60,25 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lu/g$c;->e(Ljava/lang/CharSequence;)Lu/g$c;
+    invoke-virtual {v0, v1}, Lu/f$c;->e(Ljava/lang/CharSequence;)Lu/f$c;
 
     .line 4
     iget-object v1, p0, Lcom/kakaogame/push/OnlinePushManager$2;->val$message:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lu/g$c;->d(Ljava/lang/CharSequence;)Lu/g$c;
+    invoke-virtual {v0, v1}, Lu/f$c;->d(Ljava/lang/CharSequence;)Lu/f$c;
 
     .line 5
     iget-object v1, p0, Lcom/kakaogame/push/OnlinePushManager$2;->val$message:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lu/g$c;->j(Ljava/lang/CharSequence;)Lu/g$c;
+    invoke-virtual {v0, v1}, Lu/f$c;->j(Ljava/lang/CharSequence;)Lu/f$c;
 
     const/4 v1, 0x2
 
     .line 6
-    iput v1, v0, Lu/g$c;->h:I
+    iput v1, v0, Lu/f$c;->h:I
 
     .line 7
-    invoke-virtual {v0, v1}, Lu/g$c;->f(I)Lu/g$c;
+    invoke-virtual {v0, v1}, Lu/f$c;->f(I)Lu/f$c;
 
     .line 8
     iget-object v1, p0, Lcom/kakaogame/push/OnlinePushManager$2;->val$activity:Landroid/app/Activity;
@@ -104,7 +104,7 @@
     iget v1, v1, Landroid/content/pm/ApplicationInfo;->icon:I
 
     .line 11
-    iget-object v2, v0, Lu/g$c;->q:Landroid/app/Notification;
+    iget-object v2, v0, Lu/f$c;->q:Landroid/app/Notification;
 
     iput v1, v2, Landroid/app/Notification;->icon:I
 
@@ -118,11 +118,11 @@
     if-eqz v1, :cond_0
 
     .line 13
-    invoke-virtual {v0, v1}, Lu/g$c;->g(Landroid/graphics/Bitmap;)Lu/g$c;
+    invoke-virtual {v0, v1}, Lu/f$c;->g(Landroid/graphics/Bitmap;)Lu/f$c;
 
     .line 14
     :cond_0
-    invoke-virtual {v0}, Lu/g$c;->a()Landroid/app/Notification;
+    invoke-virtual {v0}, Lu/f$c;->a()Landroid/app/Notification;
 
     move-result-object v0
 

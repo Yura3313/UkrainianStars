@@ -7,20 +7,16 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/titan/TitanWebView$TitanWebViewClient;
-
-.field public final synthetic b:Ljava/lang/String;
+.field public final synthetic g:Lcom/supercell/titan/TitanWebView$TitanWebViewClient;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/supercell/titan/TitanWebView$TitanWebViewClient;Ljava/lang/String;)V
+.method public synthetic constructor <init>(Lcom/supercell/titan/TitanWebView$TitanWebViewClient;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/titan/h0;->a:Lcom/supercell/titan/TitanWebView$TitanWebViewClient;
-
-    iput-object p2, p0, Lcom/supercell/titan/h0;->b:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/titan/h0;->g:Lcom/supercell/titan/TitanWebView$TitanWebViewClient;
 
     return-void
 .end method
@@ -30,14 +26,21 @@
 .method public final run()V
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/titan/h0;->a:Lcom/supercell/titan/TitanWebView$TitanWebViewClient;
-
-    iget-object v1, p0, Lcom/supercell/titan/h0;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/titan/h0;->g:Lcom/supercell/titan/TitanWebView$TitanWebViewClient;
 
     .line 1
-    iget-object v0, v0, Lcom/supercell/titan/TitanWebView$TitanWebViewClient;->a:Lcom/supercell/titan/TitanWebView;
+    iget-object v0, v0, Lcom/supercell/titan/TitanWebView$TitanWebViewClient;->b:Lcom/supercell/titan/TitanWebView;
 
-    invoke-virtual {v0, v1}, Lcom/supercell/titan/TitanWebView;->onPageStarted(Ljava/lang/String;)V
+    .line 2
+    iget-object v1, v0, Lcom/supercell/titan/TitanWebView;->e:Landroid/webkit/WebView;
+
+    .line 3
+    invoke-virtual {v1}, Landroid/webkit/WebView;->canGoBack()Z
+
+    move-result v1
+
+    .line 4
+    iput-boolean v1, v0, Lcom/supercell/titan/TitanWebView;->a:Z
 
     return-void
 .end method

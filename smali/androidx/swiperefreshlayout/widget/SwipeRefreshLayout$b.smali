@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
+.field public final synthetic g:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$b;->a:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
+    iput-object p1, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$b;->g:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
     invoke-direct {p0}, Landroid/view/animation/Animation;-><init>()V
 
@@ -36,7 +36,7 @@
     .locals 1
 
     .line 1
-    iget-object p2, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$b;->a:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
+    iget-object p2, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$b;->g:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
     const/high16 v0, 0x3f800000    # 1.0f
 

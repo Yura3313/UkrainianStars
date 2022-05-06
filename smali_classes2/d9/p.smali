@@ -1,12 +1,12 @@
 .class public Ld9/p;
-.super Ly7/g;
+.super Lz7/g;
 .source "ConversationalVM.java"
 
 
 # instance fields
 .field public final synthetic b:Ljava/lang/Long;
 
-.field public final synthetic c:Lm8/u;
+.field public final synthetic c:Ln8/r;
 
 .field public final synthetic d:Ljava/lang/String;
 
@@ -16,7 +16,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ld9/i;Ljava/lang/Long;Lm8/u;Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(Ld9/i;Ljava/lang/Long;Ln8/r;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -24,13 +24,13 @@
 
     iput-object p2, p0, Ld9/p;->b:Ljava/lang/Long;
 
-    iput-object p3, p0, Ld9/p;->c:Lm8/u;
+    iput-object p3, p0, Ld9/p;->c:Ln8/r;
 
     iput-object p4, p0, Ld9/p;->d:Ljava/lang/String;
 
     iput-object p5, p0, Ld9/p;->e:Ljava/lang/String;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -43,9 +43,9 @@
     .line 1
     iget-object v0, p0, Ld9/p;->f:Ld9/i;
 
-    iget-object v0, v0, Ld9/i;->k:Ll8/p;
+    iget-object v0, v0, Ld9/i;->k:Lm8/r;
 
-    invoke-virtual {v0}, Ll8/p;->d()Ljava/util/List;
+    invoke-virtual {v0}, Lm8/r;->d()Ljava/util/List;
 
     move-result-object v0
 
@@ -65,10 +65,10 @@
 
     move-result-object v1
 
-    check-cast v1, Lo8/d;
+    check-cast v1, Lp8/d;
 
     .line 3
-    iget-object v2, v1, Lo8/d;->b:Ljava/lang/Long;
+    iget-object v2, v1, Lp8/d;->h:Ljava/lang/Long;
 
     iget-object v3, p0, Ld9/p;->b:Ljava/lang/Long;
 
@@ -91,9 +91,9 @@
     .line 4
     iget-object v0, p0, Ld9/p;->f:Ld9/i;
 
-    iget-object v0, v0, Ld9/i;->s:Ll8/c;
+    iget-object v0, v0, Ld9/i;->s:Lm8/h;
 
-    iget-object v4, p0, Ld9/p;->c:Lm8/u;
+    iget-object v4, p0, Ld9/p;->c:Ln8/r;
 
     iget-object v6, p0, Ld9/p;->d:Ljava/lang/String;
 
@@ -103,15 +103,15 @@
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 6
-    new-instance v1, Ll8/f;
+    new-instance v1, Lm8/f;
 
     move-object v2, v1
 
     move-object v3, v0
 
-    invoke-direct/range {v2 .. v7}, Ll8/f;-><init>(Ll8/c;Lm8/u;Lo8/d;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v2 .. v7}, Lm8/f;-><init>(Lm8/h;Ln8/r;Lp8/d;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Ll8/c;->D(Ly7/g;)V
+    invoke-virtual {v0, v1}, Lm8/h;->C(Lz7/g;)V
 
     :cond_2
     return-void

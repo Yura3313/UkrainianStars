@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/IdConfiguration;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JJZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/String;Z)V
+    value = Lcom/supercell/id/IdConfiguration;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JJZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZLjava/lang/String;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,14 +27,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/IdConfiguration;
+.field public final synthetic g:Lcom/supercell/id/IdConfiguration;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/IdConfiguration;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/IdConfiguration$b;->a:Lcom/supercell/id/IdConfiguration;
+    iput-object p1, p0, Lcom/supercell/id/IdConfiguration$b;->g:Lcom/supercell/id/IdConfiguration;
 
     const/4 p1, 0x0
 
@@ -49,7 +49,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/IdConfiguration$b;->a:Lcom/supercell/id/IdConfiguration;
+    iget-object v0, p0, Lcom/supercell/id/IdConfiguration$b;->g:Lcom/supercell/id/IdConfiguration;
 
     invoke-virtual {v0}, Lcom/supercell/id/IdConfiguration;->getLocale()Ljava/util/Locale;
 

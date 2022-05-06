@@ -50,7 +50,7 @@
     .line 3
     iget-object v0, p0, Lo4/d$a;->a:La2/a0;
 
-    invoke-virtual {v0, p1}, La2/a0;->h(I)V
+    invoke-virtual {v0, p1}, La2/a0;->b(I)V
 
     return-void
 .end method
@@ -87,7 +87,7 @@
     const/4 v1, 0x0
 
     .line 7
-    invoke-virtual {v0, p1, v1}, La2/a0;->j(Landroid/graphics/Typeface;Z)V
+    invoke-virtual {v0, p1, v1}, La2/a0;->i(Landroid/graphics/Typeface;Z)V
 
     return-void
 .end method

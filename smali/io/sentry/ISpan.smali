@@ -10,6 +10,9 @@
 .method public abstract finish(Lio/sentry/SpanStatus;)V
 .end method
 
+.method public abstract getData(Ljava/lang/String;)Ljava/lang/Object;
+.end method
+
 .method public abstract getDescription()Ljava/lang/String;
 .end method
 
@@ -29,6 +32,9 @@
 .end method
 
 .method public abstract isFinished()Z
+.end method
+
+.method public abstract setData(Ljava/lang/String;Ljava/lang/Object;)V
 .end method
 
 .method public abstract setDescription(Ljava/lang/String;)V
@@ -58,4 +64,14 @@
 .end method
 
 .method public abstract toSentryTrace()Lio/sentry/SentryTraceHeader;
+.end method
+
+.method public abstract toTraceStateHeader()Lio/sentry/TraceStateHeader;
+    .annotation build Lorg/jetbrains/annotations/ApiStatus$Experimental;
+    .end annotation
+.end method
+
+.method public abstract traceState()Lio/sentry/TraceState;
+    .annotation build Lorg/jetbrains/annotations/ApiStatus$Experimental;
+    .end annotation
 .end method

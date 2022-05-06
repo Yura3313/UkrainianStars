@@ -16,15 +16,15 @@
     .end annotation
 .end field
 
-.field public static final b:Lcom/google/android/gms/drive/DriveSpace;
-
 .field public static final h:Lcom/google/android/gms/drive/DriveSpace;
 
 .field public static final i:Lcom/google/android/gms/drive/DriveSpace;
 
+.field public static final j:Lcom/google/android/gms/drive/DriveSpace;
+
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
 
 # direct methods
@@ -45,7 +45,7 @@
 
     invoke-direct {v0, v1}, Lcom/google/android/gms/drive/DriveSpace;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/google/android/gms/drive/DriveSpace;->b:Lcom/google/android/gms/drive/DriveSpace;
+    sput-object v0, Lcom/google/android/gms/drive/DriveSpace;->h:Lcom/google/android/gms/drive/DriveSpace;
 
     .line 3
     new-instance v1, Lcom/google/android/gms/drive/DriveSpace;
@@ -54,7 +54,7 @@
 
     invoke-direct {v1, v2}, Lcom/google/android/gms/drive/DriveSpace;-><init>(Ljava/lang/String;)V
 
-    sput-object v1, Lcom/google/android/gms/drive/DriveSpace;->h:Lcom/google/android/gms/drive/DriveSpace;
+    sput-object v1, Lcom/google/android/gms/drive/DriveSpace;->i:Lcom/google/android/gms/drive/DriveSpace;
 
     .line 4
     new-instance v2, Lcom/google/android/gms/drive/DriveSpace;
@@ -63,14 +63,14 @@
 
     invoke-direct {v2, v3}, Lcom/google/android/gms/drive/DriveSpace;-><init>(Ljava/lang/String;)V
 
-    sput-object v2, Lcom/google/android/gms/drive/DriveSpace;->i:Lcom/google/android/gms/drive/DriveSpace;
+    sput-object v2, Lcom/google/android/gms/drive/DriveSpace;->j:Lcom/google/android/gms/drive/DriveSpace;
 
     const/4 v3, 0x3
 
     const/4 v4, 0x0
 
     .line 5
-    invoke-static {v3, v4}, Lk2/d;->g(IZ)Ljava/util/Set;
+    invoke-static {v3, v4}, Lk2/d;->a(IZ)Ljava/util/Set;
 
     move-result-object v3
 
@@ -114,7 +114,7 @@
     if-eqz p1, :cond_0
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/drive/DriveSpace;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/drive/DriveSpace;->g:Ljava/lang/String;
 
     return-void
 
@@ -149,11 +149,11 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lcom/google/android/gms/drive/DriveSpace;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/drive/DriveSpace;->g:Ljava/lang/String;
 
     check-cast p1, Lcom/google/android/gms/drive/DriveSpace;
 
-    iget-object p1, p1, Lcom/google/android/gms/drive/DriveSpace;->a:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/drive/DriveSpace;->g:Ljava/lang/String;
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -172,7 +172,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/drive/DriveSpace;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/drive/DriveSpace;->g:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
@@ -189,7 +189,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/drive/DriveSpace;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/drive/DriveSpace;->g:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -207,7 +207,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/drive/DriveSpace;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/drive/DriveSpace;->g:Ljava/lang/String;
 
     const/4 v2, 0x0
 

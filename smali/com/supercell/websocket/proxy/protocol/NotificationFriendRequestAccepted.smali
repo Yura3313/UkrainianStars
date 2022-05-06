@@ -159,7 +159,7 @@
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$b;->d()V
 
     .line 7
-    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$b;->b:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$b;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     invoke-virtual {v0, v1, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->g(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/GeneratedMessageLite;)V
 
@@ -491,13 +491,9 @@
     .locals 0
 
     .line 1
-    sget-object p2, Lcom/supercell/websocket/proxy/protocol/NotificationFriendRequestAccepted$a;->a:[I
-
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
     move-result p1
-
-    aget p1, p2, p1
 
     const/4 p2, 0x1
 
@@ -612,14 +608,14 @@
     return-object p1
 
     :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
+    .packed-switch 0x0
         :pswitch_1
         :pswitch_0
+        :pswitch_4
+        :pswitch_6
+        :pswitch_5
+        :pswitch_3
+        :pswitch_2
     .end packed-switch
 .end method
 

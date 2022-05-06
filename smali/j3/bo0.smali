@@ -1,33 +1,54 @@
 .class public final Lj3/bo0;
-.super Lj3/xm0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lj3/bn0;
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lj3/xm0<",
-        "Lj3/an0;",
-        "Lcom/google/android/gms/internal/ads/h5;",
-        ">;"
-    }
-.end annotation
+
+# static fields
+.field public static final c:[B
+
+
+# instance fields
+.field public final a:Lcom/google/android/gms/internal/ads/v4;
+
+.field public final b:Lj3/bn0;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Class;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    new-array v0, v0, [B
+
+    .line 1
+    sput-object v0, Lj3/bo0;->c:[B
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/v4;Lj3/bn0;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lj3/xm0;-><init>(Ljava/lang/Class;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lj3/bo0;->a:Lcom/google/android/gms/internal/ads/v4;
+
+    .line 3
+    iput-object p2, p0, Lj3/bo0;->b:Lj3/bn0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+.method public final a([B[B)[B
+    .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/GeneralSecurityException;
@@ -35,99 +56,93 @@
     .end annotation
 
     .line 1
-    check-cast p1, Lcom/google/android/gms/internal/ads/h5;
+    iget-object v0, p0, Lj3/bo0;->a:Lcom/google/android/gms/internal/ads/v4;
+
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/z1;->i(Lcom/google/android/gms/internal/ads/v4;)Lj3/dt0;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lj3/dt0;->a()[B
+
+    move-result-object v0
 
     .line 2
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/h5;->C()Lcom/google/android/gms/internal/ads/l5;
+    iget-object v1, p0, Lj3/bo0;->b:Lj3/bn0;
 
-    move-result-object v0
+    sget-object v2, Lj3/bo0;->c:[B
 
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/l5;->y()Lj3/io0;
+    invoke-interface {v1, v0, v2}, Lj3/bn0;->a([B[B)[B
 
-    move-result-object v0
+    move-result-object v1
 
     .line 3
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/h5;->B()Lj3/lq0;
+    iget-object v2, p0, Lj3/bo0;->a:Lcom/google/android/gms/internal/ads/v4;
 
-    move-result-object v1
+    invoke-virtual {v2}, Lcom/google/android/gms/internal/ads/v4;->y()Ljava/lang/String;
 
-    invoke-virtual {v1}, Lj3/lq0;->a()[B
+    move-result-object v2
 
-    move-result-object v1
+    const-class v3, Lj3/bn0;
 
     .line 4
-    new-instance v2, Ljavax/crypto/spec/SecretKeySpec;
-
-    const-string v3, "HMAC"
-
-    invoke-direct {v2, v1, v3}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
+    sget-object v4, Lj3/ar0;->h:Lj3/ar0;
 
     .line 5
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/h5;->C()Lcom/google/android/gms/internal/ads/l5;
+    array-length v4, v0
+
+    const/4 v5, 0x0
+
+    invoke-static {v0, v5, v4}, Lj3/ar0;->x([BII)Lj3/ar0;
+
+    move-result-object v0
+
+    .line 6
+    invoke-static {v2, v0, v3}, Lcom/google/android/gms/internal/ads/z1;->b(Ljava/lang/String;Lj3/ar0;Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lj3/bn0;
+
+    .line 8
+    invoke-interface {v0, p1, p2}, Lj3/bn0;->a([B[B)[B
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/l5;->x()I
-
-    move-result p1
-
-    .line 6
-    sget-object v1, Lj3/co0;->a:[I
-
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v0
-
-    aget v0, v1, v0
-
-    const/4 v1, 0x1
-
-    if-eq v0, v1, :cond_2
-
-    const/4 v1, 0x2
-
-    if-eq v0, v1, :cond_1
-
-    const/4 v1, 0x3
-
-    if-ne v0, v1, :cond_0
-
-    .line 7
-    new-instance v0, Lj3/rp0;
-
-    const-string v1, "HMACSHA512"
-
-    invoke-direct {v0, v1, v2, p1}, Lj3/rp0;-><init>(Ljava/lang/String;Ljava/security/Key;I)V
-
-    return-object v0
-
-    .line 8
-    :cond_0
-    new-instance p1, Ljava/security/GeneralSecurityException;
-
-    const-string v0, "unknown hash"
-
-    invoke-direct {p1, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
     .line 9
-    :cond_1
-    new-instance v0, Lj3/rp0;
+    array-length p2, v1
 
-    const-string v1, "HMACSHA256"
+    add-int/lit8 p2, p2, 0x4
 
-    invoke-direct {v0, v1, v2, p1}, Lj3/rp0;-><init>(Ljava/lang/String;Ljava/security/Key;I)V
+    array-length v0, p1
 
-    return-object v0
+    add-int/2addr p2, v0
+
+    invoke-static {p2}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
+
+    move-result-object p2
+
+    array-length v0, v1
 
     .line 10
-    :cond_2
-    new-instance v0, Lj3/rp0;
+    invoke-virtual {p2, v0}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
 
-    const-string v1, "HMACSHA1"
+    move-result-object p2
 
-    invoke-direct {v0, v1, v2, p1}, Lj3/rp0;-><init>(Ljava/lang/String;Ljava/security/Key;I)V
+    .line 11
+    invoke-virtual {p2, v1}, Ljava/nio/ByteBuffer;->put([B)Ljava/nio/ByteBuffer;
 
-    return-object v0
+    move-result-object p2
+
+    .line 12
+    invoke-virtual {p2, p1}, Ljava/nio/ByteBuffer;->put([B)Ljava/nio/ByteBuffer;
+
+    move-result-object p1
+
+    .line 13
+    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->array()[B
+
+    move-result-object p1
+
+    return-object p1
 .end method

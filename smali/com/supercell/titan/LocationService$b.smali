@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/titan/LocationService;
+.field public final synthetic g:Lcom/supercell/titan/LocationService;
 
-.field public final synthetic b:Lcom/supercell/titan/LocationService;
+.field public final synthetic h:Lcom/supercell/titan/LocationService;
 
 
 # direct methods
@@ -28,9 +28,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/titan/LocationService$b;->b:Lcom/supercell/titan/LocationService;
+    iput-object p1, p0, Lcom/supercell/titan/LocationService$b;->h:Lcom/supercell/titan/LocationService;
 
-    iput-object p2, p0, Lcom/supercell/titan/LocationService$b;->a:Lcom/supercell/titan/LocationService;
+    iput-object p2, p0, Lcom/supercell/titan/LocationService$b;->g:Lcom/supercell/titan/LocationService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,24 +44,24 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lcom/supercell/titan/LocationService$b;->b:Lcom/supercell/titan/LocationService;
+    iget-object v0, p0, Lcom/supercell/titan/LocationService$b;->h:Lcom/supercell/titan/LocationService;
 
     .line 2
     iget-object v0, v0, Lcom/supercell/titan/LocationService;->b:Landroid/location/LocationManager;
 
     .line 3
-    iget-object v1, p0, Lcom/supercell/titan/LocationService$b;->a:Lcom/supercell/titan/LocationService;
+    iget-object v1, p0, Lcom/supercell/titan/LocationService$b;->g:Lcom/supercell/titan/LocationService;
 
     invoke-virtual {v0, v1}, Landroid/location/LocationManager;->removeUpdates(Landroid/location/LocationListener;)V
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/titan/LocationService$b;->b:Lcom/supercell/titan/LocationService;
+    iget-object v0, p0, Lcom/supercell/titan/LocationService$b;->h:Lcom/supercell/titan/LocationService;
 
     .line 5
     iget-object v0, v0, Lcom/supercell/titan/LocationService;->c:Lcom/supercell/titan/GameApp;
 
     .line 6
-    iget-object v1, p0, Lcom/supercell/titan/LocationService$b;->a:Lcom/supercell/titan/LocationService;
+    iget-object v1, p0, Lcom/supercell/titan/LocationService$b;->g:Lcom/supercell/titan/LocationService;
 
     invoke-virtual {v0, v1}, Lcom/supercell/titan/GameApp;->removeActivityEventListener(Lcom/supercell/titan/GameApp$ActivityEventListener;)V
     :try_end_0

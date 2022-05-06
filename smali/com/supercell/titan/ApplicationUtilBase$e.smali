@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:[Ljava/lang/String;
+.field public final synthetic g:[Ljava/lang/String;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/titan/ApplicationUtilBase$e;->a:[Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/titan/ApplicationUtilBase$e;->g:[Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
 
     .line 1
     :try_start_0
-    iget-object v1, p0, Lcom/supercell/titan/ApplicationUtilBase$e;->a:[Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/titan/ApplicationUtilBase$e;->g:[Ljava/lang/String;
 
     invoke-static {}, Lcom/supercell/titan/GameApp;->getInstance()Lcom/supercell/titan/GameApp;
 
@@ -60,7 +60,7 @@
 
     .line 2
     :catch_0
-    iget-object v1, p0, Lcom/supercell/titan/ApplicationUtilBase$e;->a:[Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/titan/ApplicationUtilBase$e;->g:[Ljava/lang/String;
 
     const-string v2, "User agent not available"
 

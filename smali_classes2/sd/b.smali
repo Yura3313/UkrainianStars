@@ -1,97 +1,125 @@
 .class public final Lsd/b;
-.super Lle/j;
-.source "TokenLoginConfirmPageFragment.kt"
-
-# interfaces
-.implements Lke/p;
+.super Lsd/d;
+.source "TutorialPageFragment.kt"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lsd/e;",
-        "Ljava/lang/Exception;",
-        "Lbe/n;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final a:Lsd/b;
+# instance fields
+.field public g0:Ljava/util/HashMap;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lsd/b;
-
-    invoke-direct {v0}, Lsd/b;-><init>()V
-
-    sput-object v0, Lsd/b;->a:Lsd/b;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    .line 1
+    invoke-direct {p0}, Lsd/d;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public W0()V
+    .locals 1
+
+    iget-object v0, p0, Lsd/b;->g0:Ljava/util/HashMap;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public c1(I)Landroid/view/View;
     .locals 2
 
-    .line 1
-    check-cast p1, Lsd/e;
+    iget-object v0, p0, Lsd/b;->g0:Ljava/util/HashMap;
 
-    check-cast p2, Ljava/lang/Exception;
+    if-nez v0, :cond_0
 
-    const/4 v0, 0x0
+    new-instance v0, Ljava/util/HashMap;
 
-    if-eqz p1, :cond_2
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    if-eqz p2, :cond_1
+    iput-object v0, p0, Lsd/b;->g0:Ljava/util/HashMap;
 
-    .line 2
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
-
-    .line 3
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->E(Ljava/lang/Exception;Lke/l;)V
-
-    .line 4
     :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    iget-object v0, p0, Lsd/b;->g0:Ljava/util/HashMap;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/View;
+
+    if-nez v0, :cond_2
+
+    .line 1
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
+
+    if-nez v0, :cond_1
+
+    const/4 p1, 0x0
 
     return-object p1
 
+    .line 2
     :cond_1
-    const-string p1, "it"
+    invoke-virtual {v0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    move-result-object v0
 
-    throw v0
+    iget-object v1, p0, Lsd/b;->g0:Ljava/util/HashMap;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_2
-    const-string p1, "$receiver"
+    return-object v0
+.end method
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+.method public g0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    .locals 1
 
-    throw v0
+    if-eqz p1, :cond_0
+
+    .line 1
+    sget p3, Lcom/supercell/id/R$layout;->fragment_tutorial_cover_page:I
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p1
+
+    return-object p1
+
+    :cond_0
+    const-string p1, "inflater"
+
+    .line 2
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public synthetic i0()V
+    .locals 0
+
+    invoke-super {p0}, Lsd/d;->i0()V
+
+    invoke-virtual {p0}, Lsd/b;->W0()V
+
+    return-void
 .end method

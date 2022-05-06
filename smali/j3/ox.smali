@@ -1,26 +1,37 @@
-.class public final Lj3/ox;
+.class public final synthetic Lj3/ox;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-
-# instance fields
-.field public final a:Ljava/util/concurrent/Executor;
-
-.field public final b:Lj3/fx;
+# interfaces
+.implements Lj3/ql0;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/Executor;Lj3/fx;)V
+.method public constructor <init>(Ljava/lang/Object;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Object;)Lj3/im0;
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    check-cast p1, Ljava/lang/Exception;
 
     .line 2
-    iput-object p1, p0, Lj3/ox;->a:Ljava/util/concurrent/Executor;
+    invoke-static {}, Lj3/cj;->l()Z
+
+    const/4 p1, 0x0
 
     .line 3
-    iput-object p2, p0, Lj3/ox;->b:Lj3/fx;
+    invoke-static {p1}, Lj3/em0;->j(Ljava/lang/Object;)Lj3/im0;
 
-    return-void
+    move-result-object p1
+
+    return-object p1
 .end method

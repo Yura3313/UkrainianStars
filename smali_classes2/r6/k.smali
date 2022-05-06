@@ -61,7 +61,7 @@
     iget-object p0, p0, Lc6/j;->c:[Lc6/l;
 
     .line 5
-    sget-object v3, Lc6/a;->UPC_A:Lc6/a;
+    sget-object v3, Lc6/a;->u:Lc6/a;
 
     invoke-direct {v1, v0, v2, p0, v3}, Lc6/j;-><init>(Ljava/lang/String;[B[Lc6/l;Lc6/a;)V
 
@@ -228,7 +228,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lc6/a;->UPC_A:Lc6/a;
+    sget-object v0, Lc6/a;->u:Lc6/a;
 
     return-object v0
 .end method

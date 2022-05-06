@@ -10,7 +10,7 @@
 
 .field public static final LIBRARY_PACKAGE_NAME:Ljava/lang/String; = "io.sentry.android.ndk"
 
-.field public static final VERSION_NAME:Ljava/lang/String; = "5.1.2"
+.field public static final VERSION_NAME:Ljava/lang/String; = "5.7.1"
 
 
 # direct methods

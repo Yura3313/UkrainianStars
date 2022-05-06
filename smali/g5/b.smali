@@ -25,14 +25,14 @@
     invoke-direct {v0}, Lg5/a;-><init>()V
 
     .line 2
-    invoke-static {}, Ll5/g1;->t()Ll5/g1;
+    invoke-static {}, Ll5/g1;->s()Ll5/g1;
 
     move-result-object v0
 
     sput-object v0, Lg5/b;->a:Ll5/g1;
 
     .line 3
-    invoke-static {}, Ll5/g1;->t()Ll5/g1;
+    invoke-static {}, Ll5/g1;->s()Ll5/g1;
 
     move-result-object v0
 

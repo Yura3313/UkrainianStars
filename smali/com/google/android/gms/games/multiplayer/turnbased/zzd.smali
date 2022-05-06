@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public final I1()Ljava/util/ArrayList;
+.method public final L1()Ljava/util/ArrayList;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -28,57 +28,19 @@
     return-object v0
 .end method
 
-.method public final R0()I
+.method public final S0()I
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "version"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->z2(Ljava/lang/String;II)I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final T0()Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
-
-    iget v1, p0, Lb2/d;->b:I
-
-    iget v2, p0, Lb2/d;->h:I
-
-    const-string v3, "last_updater_external"
-
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final T1()I
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
-
-    iget v1, p0, Lb2/d;->b:I
-
-    iget v2, p0, Lb2/d;->h:I
-
-    const-string v3, "match_number"
-
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->z2(Ljava/lang/String;II)I
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)I
 
     move-result v0
 
@@ -89,79 +51,117 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
+
+    const-string v3, "last_updater_external"
+
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final V0()Ljava/lang/String;
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
+
+    iget v1, p0, Lb2/d;->h:I
+
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "external_match_id"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final W0()Ljava/lang/String;
+.method public final W1()I
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
-    const-string v3, "rematch_id"
+    const-string v3, "match_number"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final X0()[B
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
-
-    iget v1, p0, Lb2/d;->b:I
-
-    iget v2, p0, Lb2/d;->h:I
-
-    const-string v3, "data"
-
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->y2(Ljava/lang/String;II)[B
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final Z1()Z
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
-
-    iget v1, p0, Lb2/d;->b:I
-
-    iget v2, p0, Lb2/d;->h:I
-
-    const-string v3, "upsync_required"
-
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->x2(Ljava/lang/String;II)Z
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final b()Lcom/google/android/gms/games/Game;
+.method public final X0()Ljava/lang/String;
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
+
+    iget v1, p0, Lb2/d;->h:I
+
+    iget v2, p0, Lb2/d;->i:I
+
+    const-string v3, "rematch_id"
+
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final Y0()[B
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
+
+    iget v1, p0, Lb2/d;->h:I
+
+    iget v2, p0, Lb2/d;->i:I
+
+    const-string v3, "data"
+
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->A2(Ljava/lang/String;II)[B
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final b2()Z
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
+
+    iget v1, p0, Lb2/d;->h:I
+
+    iget v2, p0, Lb2/d;->i:I
+
+    const-string v3, "upsync_required"
+
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->z2(Ljava/lang/String;II)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final c()Lcom/google/android/gms/games/Game;
     .locals 1
 
     const/4 v0, 0x0
@@ -169,53 +169,23 @@
     return-object v0
 .end method
 
-.method public final c()J
+.method public final d()J
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "creation_timestamp"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->A2(Ljava/lang/String;II)J
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->C2(Ljava/lang/String;II)J
 
     move-result-wide v0
 
     return-wide v0
-.end method
-
-.method public final synthetic c2()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    new-instance v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;
-
-    invoke-direct {v0, p0}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;-><init>(Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;)V
-
-    return-object v0
-.end method
-
-.method public final d()I
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
-
-    iget v1, p0, Lb2/d;->b:I
-
-    iget v2, p0, Lb2/d;->h:I
-
-    const-string v3, "variant"
-
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->z2(Ljava/lang/String;II)I
-
-    move-result v0
-
-    return v0
 .end method
 
 .method public final describeContents()I
@@ -226,11 +196,41 @@
     return v0
 .end method
 
+.method public final e()I
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
+
+    iget v1, p0, Lb2/d;->h:I
+
+    iget v2, p0, Lb2/d;->i:I
+
+    const-string v3, "variant"
+
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final synthetic e2()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;
+
+    invoke-direct {v0, p0}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;-><init>(Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;)V
+
+    return-object v0
+.end method
+
 .method public final equals(Ljava/lang/Object;)Z
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->y2(Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->A2(Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -241,15 +241,15 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "description"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -260,15 +260,15 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "status"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->z2(Ljava/lang/String;II)I
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)I
 
     move-result v0
 
@@ -279,64 +279,75 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->x2(Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;)I
+    invoke-static {p0}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->z2(Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final l()Ljava/lang/String;
+.method public final n()Ljava/lang/String;
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "creator_external"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final o1()I
+.method public final q1()I
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "user_match_status"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->z2(Ljava/lang/String;II)I
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final s()Landroid/os/Bundle;
+.method public final toString()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {p0}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->B2(Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final u()Landroid/os/Bundle;
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "has_automatch_criteria"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->x2(Ljava/lang/String;II)Z
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->z2(Ljava/lang/String;II)Z
 
     move-result v0
 
@@ -348,41 +359,41 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "automatch_min_players"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->z2(Ljava/lang/String;II)I
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)I
 
     move-result v0
 
     .line 3
-    iget-object v1, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v1, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v2, p0, Lb2/d;->b:I
+    iget v2, p0, Lb2/d;->h:I
 
-    iget v3, p0, Lb2/d;->h:I
+    iget v3, p0, Lb2/d;->i:I
 
     const-string v4, "automatch_max_players"
 
-    invoke-virtual {v1, v4, v2, v3}, Lcom/google/android/gms/common/data/DataHolder;->z2(Ljava/lang/String;II)I
+    invoke-virtual {v1, v4, v2, v3}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)I
 
     move-result v1
 
     .line 4
-    iget-object v2, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v2, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v3, p0, Lb2/d;->b:I
+    iget v3, p0, Lb2/d;->h:I
 
-    iget v4, p0, Lb2/d;->h:I
+    iget v4, p0, Lb2/d;->i:I
 
     const-string v5, "automatch_bit_mask"
 
-    invoke-virtual {v2, v5, v3, v4}, Lcom/google/android/gms/common/data/DataHolder;->A2(Ljava/lang/String;II)J
+    invoke-virtual {v2, v5, v3, v4}, Lcom/google/android/gms/common/data/DataHolder;->C2(Ljava/lang/String;II)J
 
     move-result-wide v2
 
@@ -409,19 +420,19 @@
     return-object v4
 .end method
 
-.method public final t()I
+.method public final v()I
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "has_automatch_criteria"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->x2(Ljava/lang/String;II)Z
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->z2(Ljava/lang/String;II)Z
 
     move-result v0
 
@@ -433,83 +444,72 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "automatch_max_players"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->z2(Ljava/lang/String;II)I
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final t1()Ljava/lang/String;
+.method public final v1()Ljava/lang/String;
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "pending_participant_external"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->z2(Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final u()J
+.method public final w()J
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "last_updated_timestamp"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->A2(Ljava/lang/String;II)J
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->C2(Ljava/lang/String;II)J
 
     move-result-wide v0
 
     return-wide v0
 .end method
 
-.method public final u1()[B
+.method public final w1()[B
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "previous_match_data"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->y2(Ljava/lang/String;II)[B
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->A2(Ljava/lang/String;II)[B
 
     move-result-object v0
 
@@ -530,19 +530,19 @@
     return-void
 .end method
 
-.method public final x1()Ljava/lang/String;
+.method public final z1()Ljava/lang/String;
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "description_participant_id"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v0
 

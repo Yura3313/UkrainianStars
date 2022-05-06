@@ -65,7 +65,7 @@
     move-result p3
 
     .line 4
-    invoke-virtual {p2}, Landroidx/transition/Transition;->n()Landroid/graphics/Rect;
+    invoke-virtual {p2}, Landroidx/transition/Transition;->o()Landroid/graphics/Rect;
 
     move-result-object v5
 
@@ -212,7 +212,7 @@
     div-float/2addr p3, p1
 
     .line 17
-    iget-wide p1, p2, Landroidx/transition/Transition;->h:J
+    iget-wide p1, p2, Landroidx/transition/Transition;->i:J
 
     cmp-long v2, p1, v0
 

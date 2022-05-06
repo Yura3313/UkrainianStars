@@ -148,6 +148,10 @@
     .end annotation
 .end field
 
+.field private printUncaughtStackTrace:Ljava/lang/Boolean;
+
+.field private proguardUuid:Ljava/lang/String;
+
 .field private proxy:Lio/sentry/SentryOptions$Proxy;
 
 .field private readTimeoutMillis:I
@@ -183,9 +187,21 @@
     .end annotation
 .end field
 
+.field private traceSampling:Z
+
 .field private tracesSampleRate:Ljava/lang/Double;
 
 .field private tracesSampler:Lio/sentry/SentryOptions$TracesSamplerCallback;
+
+.field private final tracingOrigins:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field private transportFactory:Lio/sentry/ITransportFactory;
 
@@ -344,6 +360,11 @@
     iput-object v3, p0, Lio/sentry/SentryOptions;->enableUncaughtExceptionHandler:Ljava/lang/Boolean;
 
     .line 25
+    sget-object v4, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    iput-object v4, p0, Lio/sentry/SentryOptions;->printUncaughtStackTrace:Ljava/lang/Boolean;
+
+    .line 26
     invoke-static {}, Lio/sentry/NoOpSentryExecutorService;->getInstance()Lio/sentry/ISentryExecutorService;
 
     move-result-object v4
@@ -352,13 +373,13 @@
 
     const/16 v4, 0x1388
 
-    .line 26
+    .line 27
     iput v4, p0, Lio/sentry/SentryOptions;->connectionTimeoutMillis:I
 
-    .line 27
+    .line 28
     iput v4, p0, Lio/sentry/SentryOptions;->readTimeoutMillis:I
 
-    .line 28
+    .line 29
     invoke-static {}, Lio/sentry/transport/NoOpEnvelopeCache;->getInstance()Lio/sentry/transport/NoOpEnvelopeCache;
 
     move-result-object v4
@@ -367,17 +388,17 @@
 
     const/4 v4, 0x0
 
-    .line 29
+    .line 30
     iput-boolean v4, p0, Lio/sentry/SentryOptions;->sendDefaultPii:Z
 
-    .line 30
+    .line 31
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v4, p0, Lio/sentry/SentryOptions;->observers:Ljava/util/List;
 
-    .line 31
+    .line 32
     new-instance v4, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {v4}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
@@ -386,75 +407,97 @@
 
     const-wide/32 v4, 0x1400000
 
-    .line 32
+    .line 33
     iput-wide v4, p0, Lio/sentry/SentryOptions;->maxAttachmentSize:J
 
-    .line 33
+    .line 34
     iput-object v3, p0, Lio/sentry/SentryOptions;->enableDeduplication:Ljava/lang/Boolean;
 
     const/16 v3, 0x3e8
 
-    .line 34
+    .line 35
     iput v3, p0, Lio/sentry/SentryOptions;->maxSpans:I
 
-    .line 35
+    .line 36
     iput-boolean v2, p0, Lio/sentry/SentryOptions;->enableShutdownHook:Z
 
-    .line 36
+    .line 37
     sget-object v2, Lio/sentry/SentryOptions$RequestSize;->NONE:Lio/sentry/SentryOptions$RequestSize;
 
     iput-object v2, p0, Lio/sentry/SentryOptions;->maxRequestBodySize:Lio/sentry/SentryOptions$RequestSize;
 
-    if-nez p1, :cond_0
+    .line 38
+    new-instance v2, Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    .line 37
+    invoke-direct {v2}, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
+
+    iput-object v2, p0, Lio/sentry/SentryOptions;->tracingOrigins:Ljava/util/List;
+
+    if-nez p1, :cond_1
+
+    .line 39
     new-instance p1, Lio/sentry/SentryExecutorService;
 
     invoke-direct {p1}, Lio/sentry/SentryExecutorService;-><init>()V
 
     iput-object p1, p0, Lio/sentry/SentryOptions;->executorService:Lio/sentry/ISentryExecutorService;
 
-    .line 38
+    .line 40
     new-instance p1, Lio/sentry/UncaughtExceptionHandlerIntegration;
 
     invoke-direct {p1}, Lio/sentry/UncaughtExceptionHandlerIntegration;-><init>()V
 
     invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 39
+    .line 41
     new-instance p1, Lio/sentry/ShutdownHookIntegration;
 
     invoke-direct {p1}, Lio/sentry/ShutdownHookIntegration;-><init>()V
 
     invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 40
+    .line 42
     new-instance p1, Lio/sentry/MainEventProcessor;
 
     invoke-direct {p1, p0}, Lio/sentry/MainEventProcessor;-><init>(Lio/sentry/SentryOptions;)V
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 41
+    .line 43
     new-instance p1, Lio/sentry/DuplicateEventDetectionEventProcessor;
 
     invoke-direct {p1, p0}, Lio/sentry/DuplicateEventDetectionEventProcessor;-><init>(Lio/sentry/SentryOptions;)V
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    const-string p1, "sentry.java/5.1.2"
+    .line 44
+    invoke-static {}, Lio/sentry/util/Platform;->isJvm()Z
 
-    .line 42
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 45
+    new-instance p1, Lio/sentry/SentryRuntimeEventProcessor;
+
+    invoke-direct {p1}, Lio/sentry/SentryRuntimeEventProcessor;-><init>()V
+
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :cond_0
+    const-string p1, "sentry.java/5.7.1"
+
+    .line 46
     invoke-virtual {p0, p1}, Lio/sentry/SentryOptions;->setSentryClientName(Ljava/lang/String;)V
 
-    .line 43
+    .line 47
     invoke-direct {p0}, Lio/sentry/SentryOptions;->createSdkVersion()Lio/sentry/protocol/SdkVersion;
 
     move-result-object p1
 
     invoke-virtual {p0, p1}, Lio/sentry/SentryOptions;->setSdkVersion(Lio/sentry/protocol/SdkVersion;)V
 
-    :cond_0
+    :cond_1
     return-void
 .end method
 
@@ -466,7 +509,7 @@
 
     const-string v1, "sentry.java"
 
-    const-string v2, "5.1.2"
+    const-string v2, "5.7.1"
 
     invoke-direct {v0, v1, v2}, Lio/sentry/protocol/SdkVersion;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -557,9 +600,19 @@
     .line 8
     invoke-virtual {v0, v1}, Lio/sentry/SentryOptions;->setEnableUncaughtExceptionHandler(Ljava/lang/Boolean;)V
 
-    const-string v1, "traces-sample-rate"
+    const-string v1, "uncaught.handler.print-stacktrace"
 
     .line 9
+    invoke-interface {p0, v1}, Lio/sentry/config/PropertiesProvider;->getBooleanProperty(Ljava/lang/String;)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    .line 10
+    invoke-virtual {v0, v1}, Lio/sentry/SentryOptions;->setPrintUncaughtStackTrace(Ljava/lang/Boolean;)V
+
+    const-string v1, "traces-sample-rate"
+
+    .line 11
     invoke-interface {p0, v1}, Lio/sentry/config/PropertiesProvider;->getDoubleProperty(Ljava/lang/String;)Ljava/lang/Double;
 
     move-result-object v1
@@ -568,7 +621,7 @@
 
     const-string v1, "debug"
 
-    .line 10
+    .line 12
     invoke-interface {p0, v1}, Lio/sentry/config/PropertiesProvider;->getBooleanProperty(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v1
@@ -577,7 +630,7 @@
 
     const-string v1, "enable-deduplication"
 
-    .line 11
+    .line 13
     invoke-interface {p0, v1}, Lio/sentry/config/PropertiesProvider;->getBooleanProperty(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v1
@@ -586,17 +639,17 @@
 
     const-string v1, "max-request-body-size"
 
-    .line 12
+    .line 14
     invoke-interface {p0, v1}, Lio/sentry/config/PropertiesProvider;->getProperty(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 13
+    .line 15
     sget-object v2, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
 
-    .line 14
+    .line 16
     invoke-virtual {v1, v2}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
 
     move-result-object v1
@@ -605,18 +658,18 @@
 
     move-result-object v1
 
-    .line 15
+    .line 17
     invoke-virtual {v0, v1}, Lio/sentry/SentryOptions;->setMaxRequestBodySize(Lio/sentry/SentryOptions$RequestSize;)V
 
     :cond_0
     const-string v1, "tags"
 
-    .line 16
+    .line 18
     invoke-interface {p0, v1}, Lio/sentry/config/PropertiesProvider;->getMap(Ljava/lang/String;)Ljava/util/Map;
 
     move-result-object v1
 
-    .line 17
+    .line 19
     invoke-interface {v1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v1
@@ -638,7 +691,7 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 18
+    .line 20
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
@@ -658,21 +711,21 @@
     :cond_1
     const-string v1, "proxy.host"
 
-    .line 19
+    .line 21
     invoke-interface {p0, v1}, Lio/sentry/config/PropertiesProvider;->getProperty(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     const-string v2, "proxy.user"
 
-    .line 20
+    .line 22
     invoke-interface {p0, v2}, Lio/sentry/config/PropertiesProvider;->getProperty(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     const-string v3, "proxy.pass"
 
-    .line 21
+    .line 23
     invoke-interface {p0, v3}, Lio/sentry/config/PropertiesProvider;->getProperty(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
@@ -681,14 +734,14 @@
 
     const-string v5, "80"
 
-    .line 22
+    .line 24
     invoke-interface {p0, v4, v5}, Lio/sentry/config/PropertiesProvider;->getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
     if-eqz v1, :cond_2
 
-    .line 23
+    .line 25
     new-instance v5, Lio/sentry/SentryOptions$Proxy;
 
     invoke-direct {v5, v1, v4, v2, v3}, Lio/sentry/SentryOptions$Proxy;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
@@ -698,7 +751,7 @@
     :cond_2
     const-string v1, "in-app-includes"
 
-    .line 24
+    .line 26
     invoke-interface {p0, v1}, Lio/sentry/config/PropertiesProvider;->getList(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v1
@@ -720,7 +773,7 @@
 
     check-cast v2, Ljava/lang/String;
 
-    .line 25
+    .line 27
     invoke-virtual {v0, v2}, Lio/sentry/SentryOptions;->addInAppInclude(Ljava/lang/String;)V
 
     goto :goto_1
@@ -728,7 +781,7 @@
     :cond_3
     const-string v1, "in-app-excludes"
 
-    .line 26
+    .line 28
     invoke-interface {p0, v1}, Lio/sentry/config/PropertiesProvider;->getList(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v1
@@ -750,15 +803,54 @@
 
     check-cast v2, Ljava/lang/String;
 
-    .line 27
+    .line 29
     invoke-virtual {v0, v2}, Lio/sentry/SentryOptions;->addInAppExclude(Ljava/lang/String;)V
 
     goto :goto_2
 
     :cond_4
+    const-string v1, "tracing-origins"
+
+    .line 30
+    invoke-interface {p0, v1}, Lio/sentry/config/PropertiesProvider;->getList(Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_3
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_5
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    .line 31
+    invoke-virtual {v0, v2}, Lio/sentry/SentryOptions;->addTracingOrigin(Ljava/lang/String;)V
+
+    goto :goto_3
+
+    :cond_5
+    const-string v1, "proguard-uuid"
+
+    .line 32
+    invoke-interface {p0, v1}, Lio/sentry/config/PropertiesProvider;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lio/sentry/SentryOptions;->setProguardUuid(Ljava/lang/String;)V
+
     const-string v1, "ignored-exceptions-for-type"
 
-    .line 28
+    .line 33
     invoke-interface {p0, v1}, Lio/sentry/config/PropertiesProvider;->getList(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object p0
@@ -767,12 +859,12 @@
 
     move-result-object p0
 
-    :goto_3
+    :goto_4
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
-    if-eqz v1, :cond_6
+    if-eqz v1, :cond_7
 
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -786,28 +878,28 @@
 
     const/4 v4, 0x2
 
-    .line 29
+    .line 34
     :try_start_0
     invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v5
 
-    .line 30
+    .line 35
     const-class v6, Ljava/lang/Throwable;
 
     invoke-virtual {v6, v5}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
 
     move-result v6
 
-    if-eqz v6, :cond_5
+    if-eqz v6, :cond_6
 
-    .line 31
+    .line 36
     invoke-virtual {v0, v5}, Lio/sentry/SentryOptions;->addIgnoredExceptionForType(Ljava/lang/Class;)V
 
-    goto :goto_3
+    goto :goto_4
 
-    .line 32
-    :cond_5
+    .line 37
+    :cond_6
     sget-object v5, Lio/sentry/SentryLevel;->WARNING:Lio/sentry/SentryLevel;
 
     const-string v6, "Skipping setting %s as ignored-exception-for-type. Reason: %s does not extend Throwable"
@@ -822,9 +914,9 @@
     :try_end_0
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_3
+    goto :goto_4
 
-    .line 33
+    .line 38
     :catch_0
     sget-object v5, Lio/sentry/SentryLevel;->WARNING:Lio/sentry/SentryLevel;
 
@@ -838,9 +930,9 @@
 
     invoke-interface {p1, v5, v1, v4}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    goto :goto_3
+    goto :goto_4
 
-    :cond_6
+    :cond_7
     return-object v0
 .end method
 
@@ -933,6 +1025,17 @@
 
     .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->observers:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+.method public addTracingOrigin(Ljava/lang/String;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/SentryOptions;->tracingOrigins:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -1299,6 +1402,24 @@
     return-object v0
 .end method
 
+.method public getPrintUncaughtStackTrace()Ljava/lang/Boolean;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/SentryOptions;->printUncaughtStackTrace:Ljava/lang/Boolean;
+
+    return-object v0
+.end method
+
+.method public getProguardUuid()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/SentryOptions;->proguardUuid:Ljava/lang/String;
+
+    return-object v0
+.end method
+
 .method public getProxy()Lio/sentry/SentryOptions$Proxy;
     .locals 1
 
@@ -1447,6 +1568,23 @@
 
     .line 1
     iget-object v0, p0, Lio/sentry/SentryOptions;->tracesSampler:Lio/sentry/SentryOptions$TracesSamplerCallback;
+
+    return-object v0
+.end method
+
+.method public getTracingOrigins()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/SentryOptions;->tracingOrigins:Ljava/util/List;
 
     return-object v0
 .end method
@@ -1600,11 +1738,37 @@
     return v0
 .end method
 
+.method public isPrintUncaughtStackTrace()Z
+    .locals 2
+
+    .line 1
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    iget-object v1, p0, Lio/sentry/SentryOptions;->printUncaughtStackTrace:Ljava/lang/Boolean;
+
+    invoke-virtual {v0, v1}, Ljava/lang/Boolean;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public isSendDefaultPii()Z
     .locals 1
 
     .line 1
     iget-boolean v0, p0, Lio/sentry/SentryOptions;->sendDefaultPii:Z
+
+    return v0
+.end method
+
+.method public isTraceSampling()Z
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/ApiStatus$Experimental;
+    .end annotation
+
+    .line 1
+    iget-boolean v0, p0, Lio/sentry/SentryOptions;->traceSampling:Z
 
     return v0
 .end method
@@ -1749,51 +1913,66 @@
 
     .line 15
     :cond_6
-    invoke-virtual {p1}, Lio/sentry/SentryOptions;->getTracesSampleRate()Ljava/lang/Double;
+    invoke-virtual {p1}, Lio/sentry/SentryOptions;->getPrintUncaughtStackTrace()Ljava/lang/Boolean;
 
     move-result-object v0
 
     if-eqz v0, :cond_7
 
     .line 16
-    invoke-virtual {p1}, Lio/sentry/SentryOptions;->getTracesSampleRate()Ljava/lang/Double;
+    invoke-virtual {p1}, Lio/sentry/SentryOptions;->getPrintUncaughtStackTrace()Ljava/lang/Boolean;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lio/sentry/SentryOptions;->setTracesSampleRate(Ljava/lang/Double;)V
+    invoke-virtual {p0, v0}, Lio/sentry/SentryOptions;->setPrintUncaughtStackTrace(Ljava/lang/Boolean;)V
 
     .line 17
     :cond_7
-    invoke-direct {p1}, Lio/sentry/SentryOptions;->getDebug()Ljava/lang/Boolean;
+    invoke-virtual {p1}, Lio/sentry/SentryOptions;->getTracesSampleRate()Ljava/lang/Double;
 
     move-result-object v0
 
     if-eqz v0, :cond_8
 
     .line 18
-    invoke-direct {p1}, Lio/sentry/SentryOptions;->getDebug()Ljava/lang/Boolean;
+    invoke-virtual {p1}, Lio/sentry/SentryOptions;->getTracesSampleRate()Ljava/lang/Double;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lio/sentry/SentryOptions;->setDebug(Ljava/lang/Boolean;)V
+    invoke-virtual {p0, v0}, Lio/sentry/SentryOptions;->setTracesSampleRate(Ljava/lang/Double;)V
 
     .line 19
     :cond_8
-    invoke-direct {p1}, Lio/sentry/SentryOptions;->getEnableDeduplication()Ljava/lang/Boolean;
+    invoke-direct {p1}, Lio/sentry/SentryOptions;->getDebug()Ljava/lang/Boolean;
 
     move-result-object v0
 
     if-eqz v0, :cond_9
 
     .line 20
+    invoke-direct {p1}, Lio/sentry/SentryOptions;->getDebug()Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lio/sentry/SentryOptions;->setDebug(Ljava/lang/Boolean;)V
+
+    .line 21
+    :cond_9
+    invoke-direct {p1}, Lio/sentry/SentryOptions;->getEnableDeduplication()Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_a
+
+    .line 22
     invoke-direct {p1}, Lio/sentry/SentryOptions;->getEnableDeduplication()Ljava/lang/Boolean;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lio/sentry/SentryOptions;->setEnableDeduplication(Ljava/lang/Boolean;)V
 
-    .line 21
-    :cond_9
+    .line 23
+    :cond_a
     new-instance v0, Ljava/util/HashMap;
 
     invoke-virtual {p1}, Lio/sentry/SentryOptions;->getTags()Ljava/util/Map;
@@ -1802,7 +1981,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
 
-    .line 22
+    .line 24
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v0
@@ -1816,7 +1995,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_a
+    if-eqz v1, :cond_b
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -1824,7 +2003,7 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 23
+    .line 25
     iget-object v2, p0, Lio/sentry/SentryOptions;->tags:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -1843,8 +2022,8 @@
 
     goto :goto_0
 
-    .line 24
-    :cond_a
+    .line 26
+    :cond_b
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Lio/sentry/SentryOptions;->getInAppIncludes()Ljava/util/List;
@@ -1853,45 +2032,12 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 25
+    .line 27
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
     :goto_1
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_b
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/String;
-
-    .line 26
-    invoke-virtual {p0, v1}, Lio/sentry/SentryOptions;->addInAppInclude(Ljava/lang/String;)V
-
-    goto :goto_1
-
-    .line 27
-    :cond_b
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-virtual {p1}, Lio/sentry/SentryOptions;->getInAppExcludes()Ljava/util/List;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
-
-    .line 28
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_2
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
@@ -1904,44 +2050,125 @@
 
     check-cast v1, Ljava/lang/String;
 
+    .line 28
+    invoke-virtual {p0, v1}, Lio/sentry/SentryOptions;->addInAppInclude(Ljava/lang/String;)V
+
+    goto :goto_1
+
     .line 29
+    :cond_c
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-virtual {p1}, Lio/sentry/SentryOptions;->getInAppExcludes()Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    .line 30
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_2
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_d
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/String;
+
+    .line 31
     invoke-virtual {p0, v1}, Lio/sentry/SentryOptions;->addInAppExclude(Ljava/lang/String;)V
 
     goto :goto_2
 
-    .line 30
-    :cond_c
+    .line 32
+    :cond_d
     new-instance v0, Ljava/util/HashSet;
 
     invoke-virtual {p1}, Lio/sentry/SentryOptions;->getIgnoredExceptionsForType()Ljava/util/Set;
 
-    move-result-object p1
+    move-result-object v1
 
-    invoke-direct {v0, p1}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+    invoke-direct {v0, v1}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
     invoke-virtual {v0}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
 
-    move-result-object p1
-
-    :goto_3
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_d
-
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     move-result-object v0
 
-    check-cast v0, Ljava/lang/Class;
+    :goto_3
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 31
-    invoke-virtual {p0, v0}, Lio/sentry/SentryOptions;->addIgnoredExceptionForType(Ljava/lang/Class;)V
+    move-result v1
+
+    if-eqz v1, :cond_e
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Class;
+
+    .line 33
+    invoke-virtual {p0, v1}, Lio/sentry/SentryOptions;->addIgnoredExceptionForType(Ljava/lang/Class;)V
 
     goto :goto_3
 
-    :cond_d
+    .line 34
+    :cond_e
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-virtual {p1}, Lio/sentry/SentryOptions;->getTracingOrigins()Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    .line 35
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_4
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_f
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/String;
+
+    .line 36
+    invoke-virtual {p0, v1}, Lio/sentry/SentryOptions;->addTracingOrigin(Ljava/lang/String;)V
+
+    goto :goto_4
+
+    .line 37
+    :cond_f
+    invoke-virtual {p1}, Lio/sentry/SentryOptions;->getProguardUuid()Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_10
+
+    .line 38
+    invoke-virtual {p1}, Lio/sentry/SentryOptions;->getProguardUuid()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lio/sentry/SentryOptions;->setProguardUuid(Ljava/lang/String;)V
+
+    :cond_10
     return-void
 .end method
 
@@ -2312,6 +2539,24 @@
     return-void
 .end method
 
+.method public setPrintUncaughtStackTrace(Ljava/lang/Boolean;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lio/sentry/SentryOptions;->printUncaughtStackTrace:Ljava/lang/Boolean;
+
+    return-void
+.end method
+
+.method public setProguardUuid(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lio/sentry/SentryOptions;->proguardUuid:Ljava/lang/String;
+
+    return-void
+.end method
+
 .method public setProxy(Lio/sentry/SentryOptions$Proxy;)V
     .locals 0
 
@@ -2492,6 +2737,17 @@
     iget-object v0, p0, Lio/sentry/SentryOptions;->tags:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public setTraceSampling(Z)V
+    .locals 0
+    .annotation build Lorg/jetbrains/annotations/ApiStatus$Experimental;
+    .end annotation
+
+    .line 1
+    iput-boolean p1, p0, Lio/sentry/SentryOptions;->traceSampling:Z
 
     return-void
 .end method

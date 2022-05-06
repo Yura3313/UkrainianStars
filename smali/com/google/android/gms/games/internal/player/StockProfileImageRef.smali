@@ -22,30 +22,19 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "image_url"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
-.end method
-
-.method public final v()Landroid/net/Uri;
-    .locals 1
-
-    .line 1
-    new-instance v0, Ljava/lang/NoSuchMethodError;
-
-    invoke-direct {v0}, Ljava/lang/NoSuchMethodError;-><init>()V
-
-    throw v0
 .end method
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
@@ -57,4 +46,15 @@
     invoke-direct {p1}, Ljava/lang/NoSuchMethodError;-><init>()V
 
     throw p1
+.end method
+
+.method public final x()Landroid/net/Uri;
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/NoSuchMethodError;
+
+    invoke-direct {v0}, Ljava/lang/NoSuchMethodError;-><init>()V
+
+    throw v0
 .end method

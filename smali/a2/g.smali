@@ -167,7 +167,7 @@
     iput-object v0, p0, La2/g;->a:Ljava/lang/String;
 
     .line 19
-    sget-object p1, Lcom/google/android/gms/common/api/Status;->k:Lcom/google/android/gms/common/api/Status;
+    sget-object p1, Lcom/google/android/gms/common/api/Status;->l:Lcom/google/android/gms/common/api/Status;
 
     iput-object p1, p0, La2/g;->b:Lcom/google/android/gms/common/api/Status;
 

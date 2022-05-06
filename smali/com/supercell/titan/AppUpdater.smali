@@ -28,13 +28,13 @@
     move-result-object v0
 
     .line 2
-    new-instance v1, Lcom/google/android/play/core/appupdate/f;
+    new-instance v1, Lcom/google/android/play/core/appupdate/g;
 
     new-instance v2, Lcom/google/android/play/core/appupdate/m;
 
     invoke-direct {v2, v0}, Lcom/google/android/play/core/appupdate/m;-><init>(Landroid/content/Context;)V
 
-    invoke-direct {v1, v2, v0}, Lcom/google/android/play/core/appupdate/f;-><init>(Lcom/google/android/play/core/appupdate/m;Landroid/content/Context;)V
+    invoke-direct {v1, v2, v0}, Lcom/google/android/play/core/appupdate/g;-><init>(Lcom/google/android/play/core/appupdate/m;Landroid/content/Context;)V
 
     .line 3
     sput-object v1, Lcom/supercell/titan/AppUpdater;->a:Lcom/google/android/play/core/appupdate/c;
@@ -47,9 +47,9 @@
     sput-object v0, Lcom/supercell/titan/AppUpdater;->b:Lw4/b;
 
     .line 5
-    iget-object v0, v1, Lcom/google/android/play/core/appupdate/f;->a:Lcom/google/android/play/core/appupdate/m;
+    iget-object v0, v1, Lcom/google/android/play/core/appupdate/g;->a:Lcom/google/android/play/core/appupdate/m;
 
-    iget-object v1, v1, Lcom/google/android/play/core/appupdate/f;->c:Landroid/content/Context;
+    iget-object v1, v1, Lcom/google/android/play/core/appupdate/g;->c:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -110,7 +110,7 @@
     invoke-virtual {v0, v1}, Lcom/google/android/play/core/tasks/Task;->addOnSuccessListener(Lcom/google/android/play/core/tasks/OnSuccessListener;)Lcom/google/android/play/core/tasks/Task;
 
     .line 10
-    sget-object p0, Landroidx/fragment/app/a;->a:Landroidx/fragment/app/a;
+    sget-object p0, Lcom/supercell/titan/a;->a:Lcom/supercell/titan/a;
 
     invoke-virtual {v0, p0}, Lcom/google/android/play/core/tasks/Task;->addOnFailureListener(Lcom/google/android/play/core/tasks/OnFailureListener;)Lcom/google/android/play/core/tasks/Task;
 

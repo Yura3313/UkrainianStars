@@ -2,115 +2,94 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
-# instance fields
-.field public final a:Z
 
-.field public final b:Z
-
-.field public final c:Ljava/lang/String;
-
-.field public final d:Z
-
-.field public final e:Z
-
-.field public final f:Z
-
-.field public final g:Ljava/lang/String;
-
-.field public final h:Ljava/lang/String;
-
-.field public final i:Ljava/lang/String;
-
-.field public final j:I
-
-.field public final k:I
-
-.field public final l:F
-
-.field public final m:I
-
-.field public final n:I
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/internal/ads/zzasr;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(IZZLjava/lang/String;Ljava/lang/String;ZZZZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIIIIFIIDZZILjava/lang/String;ZLjava/lang/String;)V
-    .locals 2
-
-    move-object v0, p0
+.method public constructor <init>()V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move v1, p2
+    return-void
+.end method
+
+
+# virtual methods
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 5
+
+    .line 1
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+
+    move-result v0
+
+    const/4 v1, 0x0
 
     .line 2
-    iput-boolean v1, v0, Lj3/j8;->a:Z
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    move v1, p3
+    move-result v2
+
+    if-ge v2, v0, :cond_1
 
     .line 3
-    iput-boolean v1, v0, Lj3/j8;->b:Z
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    move-object v1, p5
+    move-result v2
+
+    const v3, 0xffff
+
+    and-int/2addr v3, v2
+
+    const/4 v4, 0x2
+
+    if-eq v3, v4, :cond_0
 
     .line 4
-    iput-object v1, v0, Lj3/j8;->c:Ljava/lang/String;
+    invoke-static {p1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
 
-    move v1, p6
+    goto :goto_0
 
     .line 5
-    iput-boolean v1, v0, Lj3/j8;->d:Z
+    :cond_0
+    invoke-static {p1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    move v1, p7
+    move-result-object v1
+
+    goto :goto_0
 
     .line 6
-    iput-boolean v1, v0, Lj3/j8;->e:Z
-
-    move v1, p8
+    :cond_1
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
 
     .line 7
-    iput-boolean v1, v0, Lj3/j8;->f:Z
+    new-instance p1, Lcom/google/android/gms/internal/ads/zzasr;
 
-    move-object v1, p11
+    invoke-direct {p1, v1}, Lcom/google/android/gms/internal/ads/zzasr;-><init>(Ljava/lang/String;)V
 
-    .line 8
-    iput-object v1, v0, Lj3/j8;->g:Ljava/lang/String;
+    return-object p1
+.end method
 
-    move-object v1, p12
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
 
-    .line 9
-    iput-object v1, v0, Lj3/j8;->h:Ljava/lang/String;
+    .line 1
+    new-array p1, p1, [Lcom/google/android/gms/internal/ads/zzasr;
 
-    move/from16 v1, p15
-
-    .line 10
-    iput v1, v0, Lj3/j8;->j:I
-
-    move/from16 v1, p16
-
-    .line 11
-    iput v1, v0, Lj3/j8;->k:I
-
-    move/from16 v1, p20
-
-    .line 12
-    iput v1, v0, Lj3/j8;->l:F
-
-    move/from16 v1, p21
-
-    .line 13
-    iput v1, v0, Lj3/j8;->m:I
-
-    move/from16 v1, p22
-
-    .line 14
-    iput v1, v0, Lj3/j8;->n:I
-
-    move-object v1, p13
-
-    .line 15
-    iput-object v1, v0, Lj3/j8;->i:Ljava/lang/String;
-
-    return-void
+    return-object p1
 .end method

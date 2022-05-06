@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public a:Lcom/helpshift/util/s;
+.field public a:Lbb/a;
 
 
 # direct methods
-.method public constructor <init>(Lcom/helpshift/util/s;)V
+.method public constructor <init>(Lbb/a;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lp9/a;->a:Lcom/helpshift/util/s;
+    iput-object p1, p0, Lp9/a;->a:Lbb/a;
 
     return-void
 .end method
@@ -34,7 +34,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lp9/a;->a:Lcom/helpshift/util/s;
+    iget-object v0, p0, Lp9/a;->a:Lbb/a;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 

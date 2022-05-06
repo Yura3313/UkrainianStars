@@ -11,14 +11,14 @@
     value = {
         "Lle/j;",
         "Lke/a<",
-        "Lkd/k;",
+        "Ljd/k;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/ui/onboarding/b;
+.field public static final g:Lcom/supercell/id/ui/onboarding/b;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/onboarding/b;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/onboarding/b;->a:Lcom/supercell/id/ui/onboarding/b;
+    sput-object v0, Lcom/supercell/id/ui/onboarding/b;->g:Lcom/supercell/id/ui/onboarding/b;
 
     return-void
 .end method
@@ -50,9 +50,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lkd/k;
+    new-instance v0, Ljd/k;
 
-    invoke-direct {v0}, Lkd/k;-><init>()V
+    invoke-direct {v0}, Ljd/k;-><init>()V
 
     return-object v0
 .end method

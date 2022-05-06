@@ -1,401 +1,516 @@
-.class public final Lj3/rq0;
-.super Ljava/io/OutputStream;
+.class public abstract Lj3/rq0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
+# interfaces
+.implements Lj3/dt0;
 
-# static fields
-.field public static final k:[B
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<MessageType:",
+        "Lj3/rq0<",
+        "TMessageType;TBuilderType;>;BuilderType:",
+        "Lj3/qq0<",
+        "TMessageType;TBuilderType;>;>",
+        "Ljava/lang/Object;",
+        "Lj3/dt0;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:I
-
-.field public final b:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Lj3/lq0;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public h:I
-
-.field public i:[B
-
-.field public j:I
+.field public zziaq:I
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method public constructor <init>()V
     .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    new-array v0, v0, [B
-
-    .line 1
-    sput-object v0, Lj3/rq0;->k:[B
+    .line 2
+    iput v0, p0, Lj3/rq0;->zziaq:I
 
     return-void
 .end method
 
-.method public constructor <init>()V
-    .locals 2
+.method public static h(Ljava/lang/Iterable;Ljava/util/List;)V
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/lang/Iterable<",
+            "TT;>;",
+            "Ljava/util/List<",
+            "-TT;>;)V"
+        }
+    .end annotation
 
     .line 1
-    invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
-
-    const/16 v0, 0x80
+    sget-object v0, Lj3/bs0;->a:Ljava/nio/charset/Charset;
 
     .line 2
-    iput v0, p0, Lj3/rq0;->a:I
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    new-instance v1, Ljava/util/ArrayList;
+    instance-of v0, p0, Lj3/qs0;
 
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+    const-string v1, " is null."
 
-    iput-object v1, p0, Lj3/rq0;->b:Ljava/util/ArrayList;
+    const-string v2, "Element at index "
 
-    new-array v0, v0, [B
+    const/16 v3, 0x25
+
+    if-eqz v0, :cond_4
 
     .line 4
-    iput-object v0, p0, Lj3/rq0;->i:[B
+    check-cast p0, Lj3/qs0;
 
+    invoke-interface {p0}, Lj3/qs0;->B0()Ljava/util/List;
+
+    move-result-object p0
+
+    .line 5
+    move-object v0, p1
+
+    check-cast v0, Lj3/qs0;
+
+    .line 6
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result p1
+
+    .line 7
+    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object p0
+
+    :goto_0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    if-nez v4, :cond_1
+
+    .line 8
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result p0
+
+    sub-int/2addr p0, p1
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4, v3}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 9
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    :goto_1
+    add-int/lit8 v1, v1, -0x1
+
+    if-lt v1, p1, :cond_0
+
+    .line 10
+    invoke-interface {v0, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
+
+    goto :goto_1
+
+    .line 11
+    :cond_0
+    new-instance p1, Ljava/lang/NullPointerException;
+
+    invoke-direct {p1, p0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 12
+    :cond_1
+    instance-of v5, v4, Lj3/ar0;
+
+    if-eqz v5, :cond_2
+
+    .line 13
+    check-cast v4, Lj3/ar0;
+
+    invoke-interface {v0, v4}, Lj3/qs0;->C0(Lj3/ar0;)V
+
+    goto :goto_0
+
+    .line 14
+    :cond_2
+    check-cast v4, Ljava/lang/String;
+
+    invoke-interface {v0, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    :cond_3
+    return-void
+
+    .line 15
+    :cond_4
+    instance-of v0, p0, Lj3/lt0;
+
+    if-eqz v0, :cond_5
+
+    .line 16
+    check-cast p0, Ljava/util/Collection;
+
+    invoke-interface {p1, p0}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+
+    return-void
+
+    .line 17
+    :cond_5
+    instance-of v0, p1, Ljava/util/ArrayList;
+
+    if-eqz v0, :cond_6
+
+    instance-of v0, p0, Ljava/util/Collection;
+
+    if-eqz v0, :cond_6
+
+    .line 18
+    move-object v0, p1
+
+    check-cast v0, Ljava/util/ArrayList;
+
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result v4
+
+    move-object v5, p0
+
+    check-cast v5, Ljava/util/Collection;
+
+    invoke-interface {v5}, Ljava/util/Collection;->size()I
+
+    move-result v5
+
+    add-int/2addr v5, v4
+
+    invoke-virtual {v0, v5}, Ljava/util/ArrayList;->ensureCapacity(I)V
+
+    .line 19
+    :cond_6
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    .line 20
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p0
+
+    :goto_2
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_9
+
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    if-nez v4, :cond_8
+
+    .line 21
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result p0
+
+    sub-int/2addr p0, v0
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4, v3}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 22
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    :goto_3
+    add-int/lit8 v1, v1, -0x1
+
+    if-lt v1, v0, :cond_7
+
+    .line 23
+    invoke-interface {p1, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
+
+    goto :goto_3
+
+    .line 24
+    :cond_7
+    new-instance p1, Ljava/lang/NullPointerException;
+
+    invoke-direct {p1, p0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 25
+    :cond_8
+    invoke-interface {p1, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_2
+
+    :cond_9
     return-void
 .end method
 
 
 # virtual methods
-.method public final declared-synchronized a()Lj3/lq0;
-    .locals 5
-
-    monitor-enter p0
+.method public final a()[B
+    .locals 7
 
     .line 1
     :try_start_0
-    iget v0, p0, Lj3/rq0;->j:I
+    move-object v0, p0
 
-    iget-object v1, p0, Lj3/rq0;->i:[B
+    check-cast v0, Lcom/google/android/gms/internal/ads/v5;
 
-    array-length v2, v1
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/v5;->d()I
 
-    const/4 v3, 0x0
+    move-result v1
 
-    if-ge v0, v2, :cond_0
-
-    if-lez v0, :cond_1
+    new-array v2, v1, [B
 
     .line 2
-    new-array v2, v0, [B
+    sget-object v3, Lcom/google/android/gms/internal/ads/zzefz;->b:Ljava/util/logging/Logger;
 
     .line 3
-    array-length v4, v1
+    new-instance v3, Lcom/google/android/gms/internal/ads/zzefz$a;
 
-    invoke-static {v4, v0}, Ljava/lang/Math;->min(II)I
+    invoke-direct {v3, v2, v1}, Lcom/google/android/gms/internal/ads/zzefz$a;-><init>([BI)V
+
+    .line 4
+    invoke-virtual {v0, v3}, Lcom/google/android/gms/internal/ads/v5;->c(Lcom/google/android/gms/internal/ads/zzefz;)V
+
+    .line 5
+    invoke-virtual {v3}, Lcom/google/android/gms/internal/ads/zzefz$a;->J()I
 
     move-result v0
 
-    invoke-static {v1, v3, v2, v3, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    if-nez v0, :cond_0
 
-    .line 4
-    iget-object v0, p0, Lj3/rq0;->b:Ljava/util/ArrayList;
-
-    new-instance v1, Lj3/sq0;
-
-    invoke-direct {v1, v2}, Lj3/sq0;-><init>([B)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
-
-    .line 5
-    :cond_0
-    iget-object v0, p0, Lj3/rq0;->b:Ljava/util/ArrayList;
-
-    new-instance v1, Lj3/sq0;
-
-    iget-object v2, p0, Lj3/rq0;->i:[B
-
-    invoke-direct {v1, v2}, Lj3/sq0;-><init>([B)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    return-object v2
 
     .line 6
-    sget-object v0, Lj3/rq0;->k:[B
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
 
-    iput-object v0, p0, Lj3/rq0;->i:[B
+    const-string v1, "Did not write as much data as expected."
 
-    .line 7
-    :cond_1
-    :goto_0
-    iget v0, p0, Lj3/rq0;->h:I
-
-    iget v1, p0, Lj3/rq0;->j:I
-
-    add-int/2addr v0, v1
-
-    iput v0, p0, Lj3/rq0;->h:I
-
-    .line 8
-    iput v3, p0, Lj3/rq0;->j:I
-
-    .line 9
-    iget-object v0, p0, Lj3/rq0;->b:Ljava/util/ArrayList;
-
-    invoke-static {v0}, Lj3/lq0;->B(Ljava/lang/Iterable;)Lj3/lq0;
-
-    move-result-object v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return-object v0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw v0
-.end method
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-.method public final b(I)V
-    .locals 3
+    :catch_0
+    move-exception v0
 
-    .line 1
-    iget-object v0, p0, Lj3/rq0;->b:Ljava/util/ArrayList;
+    .line 7
+    new-instance v1, Ljava/lang/RuntimeException;
 
-    new-instance v1, Lj3/sq0;
-
-    iget-object v2, p0, Lj3/rq0;->i:[B
-
-    invoke-direct {v1, v2}, Lj3/sq0;-><init>([B)V
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 2
-    iget v0, p0, Lj3/rq0;->h:I
-
-    iget-object v1, p0, Lj3/rq0;->i:[B
-
-    array-length v1, v1
-
-    add-int/2addr v0, v1
-
-    iput v0, p0, Lj3/rq0;->h:I
-
-    .line 3
-    iget v1, p0, Lj3/rq0;->a:I
-
-    ushr-int/lit8 v0, v0, 0x1
-
-    invoke-static {p1, v0}, Ljava/lang/Math;->max(II)I
-
-    move-result p1
-
-    invoke-static {v1, p1}, Ljava/lang/Math;->max(II)I
-
-    move-result p1
-
-    .line 4
-    new-array p1, p1, [B
-
-    iput-object p1, p0, Lj3/rq0;->i:[B
-
-    const/4 p1, 0x0
-
-    .line 5
-    iput p1, p0, Lj3/rq0;->j:I
-
-    return-void
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 4
-
-    const-string v0, "<ByteString.Output@%s size=%d>"
-
-    const/4 v1, 0x2
-
-    new-array v1, v1, [Ljava/lang/Object;
-
-    .line 1
-    invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
-
-    move-result v2
-
-    invoke-static {v2}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+    .line 8
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v2
 
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    .line 2
-    monitor-enter p0
-
-    .line 3
-    :try_start_0
-    iget v2, p0, Lj3/rq0;->h:I
-
-    iget v3, p0, Lj3/rq0;->j:I
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    add-int/2addr v2, v3
-
-    monitor-exit p0
-
-    .line 4
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v2
 
-    const/4 v3, 0x1
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
 
-    aput-object v2, v1, v3
+    move-result v3
 
-    .line 5
-    invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    add-int/lit8 v3, v3, 0x3e
 
-    move-result-object v0
+    add-int/lit8 v3, v3, 0xa
 
-    return-object v0
+    const-string v4, "Serializing "
 
-    :catchall_0
-    move-exception v0
+    const-string v5, " to a "
 
-    .line 6
-    monitor-exit p0
+    const-string v6, "byte array"
 
-    throw v0
+    invoke-static {v3, v4, v2, v5, v6}, Lq1/a;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, " threw an IOException (should never happen)."
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 9
+    invoke-direct {v1, v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v1
 .end method
 
-.method public final declared-synchronized write(I)V
-    .locals 3
-
-    monitor-enter p0
+.method public final f()Lj3/ar0;
+    .locals 7
 
     .line 1
     :try_start_0
-    iget v0, p0, Lj3/rq0;->j:I
+    move-object v0, p0
 
-    iget-object v1, p0, Lj3/rq0;->i:[B
+    check-cast v0, Lcom/google/android/gms/internal/ads/v5;
 
-    array-length v1, v1
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/v5;->d()I
 
-    if-ne v0, v1, :cond_0
+    move-result v1
 
-    const/4 v0, 0x1
+    sget-object v2, Lj3/ar0;->h:Lj3/ar0;
 
     .line 2
-    invoke-virtual {p0, v0}, Lj3/rq0;->b(I)V
+    new-array v2, v1, [B
 
     .line 3
-    :cond_0
-    iget-object v0, p0, Lj3/rq0;->i:[B
-
-    iget v1, p0, Lj3/rq0;->j:I
-
-    add-int/lit8 v2, v1, 0x1
-
-    iput v2, p0, Lj3/rq0;->j:I
-
-    int-to-byte p1, p1
-
-    aput-byte p1, v0, v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    sget-object v3, Lcom/google/android/gms/internal/ads/zzefz;->b:Ljava/util/logging/Logger;
 
     .line 4
-    monitor-exit p0
+    new-instance v3, Lcom/google/android/gms/internal/ads/zzefz$a;
 
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
-.end method
-
-.method public final declared-synchronized write([BII)V
-    .locals 3
-
-    monitor-enter p0
+    invoke-direct {v3, v2, v1}, Lcom/google/android/gms/internal/ads/zzefz$a;-><init>([BI)V
 
     .line 5
-    :try_start_0
-    iget-object v0, p0, Lj3/rq0;->i:[B
-
-    array-length v1, v0
-
-    iget v2, p0, Lj3/rq0;->j:I
-
-    sub-int/2addr v1, v2
-
-    if-gt p3, v1, :cond_0
+    invoke-virtual {v0, v3}, Lcom/google/android/gms/internal/ads/v5;->c(Lcom/google/android/gms/internal/ads/zzefz;)V
 
     .line 6
-    invoke-static {p1, p2, v0, v2, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-virtual {v3}, Lcom/google/android/gms/internal/ads/zzefz;->J()I
+
+    move-result v0
+
+    if-nez v0, :cond_0
 
     .line 7
-    iget p1, p0, Lj3/rq0;->j:I
+    new-instance v0, Lj3/ir0;
 
-    add-int/2addr p1, p3
+    invoke-direct {v0, v2}, Lj3/ir0;-><init>([B)V
 
-    iput p1, p0, Lj3/rq0;->j:I
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return-void
+    return-object v0
 
     .line 8
     :cond_0
-    :try_start_1
-    array-length v1, v0
+    new-instance v0, Ljava/lang/IllegalStateException;
 
-    sub-int/2addr v1, v2
+    const-string v1, "Did not write as much data as expected."
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    move-exception v0
 
     .line 9
-    invoke-static {p1, p2, v0, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    new-instance v1, Ljava/lang/RuntimeException;
 
-    add-int/2addr p2, v1
-
-    sub-int/2addr p3, v1
+    const-string v2, "ByteString"
 
     .line 10
-    invoke-virtual {p0, p3}, Lj3/rq0;->b(I)V
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/String;->length()I
+
+    move-result v4
+
+    add-int/lit8 v4, v4, 0x3e
+
+    add-int/lit8 v4, v4, 0xa
+
+    const-string v5, "Serializing "
+
+    const-string v6, " to a "
+
+    invoke-static {v4, v5, v3, v6, v2}, Lq1/a;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, " threw an IOException (should never happen)."
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
 
     .line 11
-    iget-object v0, p0, Lj3/rq0;->i:[B
+    invoke-direct {v1, v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    const/4 v1, 0x0
+    throw v1
+.end method
 
-    invoke-static {p1, p2, v0, v1, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+.method public j()I
+    .locals 1
 
-    .line 12
-    iput p3, p0, Lj3/rq0;->j:I
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    .line 1
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    .line 13
-    monitor-exit p0
+    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    return-void
+    throw v0
+.end method
 
-    :catchall_0
-    move-exception p1
+.method public k(I)V
+    .locals 0
 
-    monitor-exit p0
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     throw p1
 .end method

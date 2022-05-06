@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public transient b:Lde/d;
+.field public transient h:Lde/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lde/d<",
@@ -14,7 +14,7 @@
     .end annotation
 .end field
 
-.field public final h:Lde/f;
+.field public final i:Lde/f;
 
 
 # direct methods
@@ -45,7 +45,7 @@
     :goto_0
     invoke-direct {p0, p1}, Lfe/a;-><init>(Lde/d;)V
 
-    iput-object v0, p0, Lfe/c;->h:Lde/f;
+    iput-object v0, p0, Lfe/c;->i:Lde/f;
 
     return-void
 .end method
@@ -66,7 +66,7 @@
     .line 1
     invoke-direct {p0, p1}, Lfe/a;-><init>(Lde/d;)V
 
-    iput-object p2, p0, Lfe/c;->h:Lde/f;
+    iput-object p2, p0, Lfe/c;->i:Lde/f;
 
     return-void
 .end method
@@ -77,7 +77,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lfe/c;->b:Lde/d;
+    iget-object v0, p0, Lfe/c;->h:Lde/d;
 
     if-eqz v0, :cond_1
 
@@ -88,7 +88,7 @@
 
     move-result-object v1
 
-    sget v2, Lde/e;->e:I
+    sget v2, Lde/e;->c:I
 
     sget-object v2, Lde/e$a;->a:Lde/e$a;
 
@@ -105,7 +105,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-static {}, Ly4/x;->j()V
+    invoke-static {}, Ls3/b;->g()V
 
     const/4 v0, 0x0
 
@@ -114,9 +114,9 @@
     .line 3
     :cond_1
     :goto_0
-    sget-object v0, Lfe/b;->a:Lfe/b;
+    sget-object v0, Lfe/b;->g:Lfe/b;
 
-    iput-object v0, p0, Lfe/c;->b:Lde/d;
+    iput-object v0, p0, Lfe/c;->h:Lde/d;
 
     return-void
 .end method
@@ -125,14 +125,14 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lfe/c;->h:Lde/f;
+    iget-object v0, p0, Lfe/c;->i:Lde/f;
 
     if-eqz v0, :cond_0
 
     return-object v0
 
     :cond_0
-    invoke-static {}, Ly4/x;->j()V
+    invoke-static {}, Ls3/b;->g()V
 
     const/4 v0, 0x0
 

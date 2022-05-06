@@ -12,11 +12,11 @@
 
 
 # static fields
-.field public static final a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
-
-.field public static final b:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+.field public static final g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
 .field public static final h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+
+.field public static final i:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
 
 # instance fields
@@ -41,7 +41,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lte/o;->a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sput-object v2, Lte/o;->g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     const-string v2, "_prev"
 
@@ -49,7 +49,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lte/o;->b:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sput-object v2, Lte/o;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     const-string v2, "_removedRef"
 
@@ -57,7 +57,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lte/o;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sput-object v0, Lte/o;->i:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     return-void
 .end method
@@ -118,28 +118,43 @@
     :cond_2
     instance-of v2, v1, Lte/u;
 
-    if-eqz v2, :cond_4
+    if-eqz v2, :cond_6
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_5
 
     .line 5
     invoke-virtual {p1}, Lte/o;->h()Lte/o;
 
     .line 6
-    sget-object p2, Lte/o;->a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sget-object v2, Lte/o;->g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     check-cast v1, Lte/u;
 
     iget-object v1, v1, Lte/u;->a:Lte/o;
 
-    invoke-virtual {p2, v0, p1, v1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
+    :cond_3
+    invoke-virtual {v2, v0, p1, v1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    move-result p2
+
+    if-eqz p2, :cond_4
+
+    goto :goto_2
+
+    :cond_4
+    invoke-virtual {v2, v0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    if-eq p2, p1, :cond_3
+
+    :goto_2
     move-object p1, v0
 
     goto :goto_0
 
     .line 7
-    :cond_3
+    :cond_5
     iget-object p1, p1, Lte/o;->_prev:Ljava/lang/Object;
 
     invoke-static {p1}, Lte/n;->a(Ljava/lang/Object;)Lte/o;
@@ -149,20 +164,20 @@
     goto :goto_1
 
     .line 8
-    :cond_4
+    :cond_6
     iget-object v2, p0, Lte/o;->_prev:Ljava/lang/Object;
 
     .line 9
     instance-of v3, v2, Lte/u;
 
-    if-eqz v3, :cond_5
+    if-eqz v3, :cond_7
 
     return-object p2
 
-    :cond_5
-    if-eq v1, p0, :cond_7
+    :cond_7
+    if-eq v1, p0, :cond_9
 
-    if-eqz v1, :cond_6
+    if-eqz v1, :cond_8
 
     .line 10
     move-object v0, v1
@@ -177,7 +192,7 @@
 
     goto :goto_1
 
-    :cond_6
+    :cond_8
     new-instance p1, Lkotlin/TypeCastException;
 
     const-string p2, "null cannot be cast to non-null type kotlinx.coroutines.internal.Node /* = kotlinx.coroutines.internal.LockFreeLinkedListNode */"
@@ -186,19 +201,36 @@
 
     throw p1
 
-    :cond_7
-    if-ne v2, p1, :cond_8
+    :cond_9
+    if-ne v2, p1, :cond_a
 
     return-object p2
 
     .line 11
-    :cond_8
-    sget-object v1, Lte/o;->b:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    :cond_a
+    sget-object v1, Lte/o;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
+    :cond_b
     invoke-virtual {v1, p0, v2, p1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v3
 
+    if-eqz v3, :cond_c
+
+    const/4 v1, 0x1
+
+    goto :goto_3
+
+    :cond_c
+    invoke-virtual {v1, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    if-eq v3, v2, :cond_b
+
+    const/4 v1, 0x0
+
+    :goto_3
     if-eqz v1, :cond_0
 
     .line 12
@@ -212,7 +244,7 @@
 .end method
 
 .method public final d(Lte/o;)V
-    .locals 2
+    .locals 3
 
     .line 1
     :cond_0
@@ -221,7 +253,7 @@
     .line 2
     instance-of v1, v0, Lte/u;
 
-    if-nez v1, :cond_3
+    if-nez v1, :cond_5
 
     invoke-virtual {p0}, Lte/o;->e()Ljava/lang/Object;
 
@@ -229,16 +261,33 @@
 
     if-eq v1, p1, :cond_1
 
-    goto :goto_0
+    goto :goto_1
 
     .line 3
     :cond_1
-    sget-object v1, Lte/o;->b:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sget-object v1, Lte/o;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
+    :cond_2
     invoke-virtual {v1, p1, v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v2
 
+    if-eqz v2, :cond_3
+
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :cond_3
+    invoke-virtual {v1, p1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    if-eq v2, v0, :cond_2
+
+    const/4 v1, 0x0
+
+    :goto_0
     if-eqz v1, :cond_0
 
     .line 4
@@ -248,9 +297,9 @@
 
     instance-of v1, v1, Lte/u;
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_5
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_4
 
     .line 5
     check-cast v0, Lte/o;
@@ -259,9 +308,9 @@
 
     invoke-virtual {p1, v0, v1}, Lte/o;->c(Lte/o;Lte/t;)Lte/o;
 
-    goto :goto_0
+    goto :goto_1
 
-    :cond_2
+    :cond_4
     new-instance p1, Lkotlin/TypeCastException;
 
     const-string v0, "null cannot be cast to non-null type kotlinx.coroutines.internal.Node /* = kotlinx.coroutines.internal.LockFreeLinkedListNode */"
@@ -270,8 +319,8 @@
 
     throw p1
 
-    :cond_3
-    :goto_0
+    :cond_5
+    :goto_1
     return-void
 .end method
 
@@ -407,12 +456,12 @@
     move-result-object v1
 
     .line 5
-    sget-boolean v2, Lse/e0;->a:Z
+    sget-boolean v2, Lse/c0;->a:Z
 
     goto :goto_0
 
     :cond_3
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_7
 
     .line 6
     move-object v1, v0
@@ -434,18 +483,35 @@
 
     invoke-direct {v2, v1}, Lte/u;-><init>(Lte/o;)V
 
-    sget-object v3, Lte/o;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sget-object v3, Lte/o;->i:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     invoke-virtual {v3, v1, v2}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->lazySet(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 8
     :goto_2
-    sget-object v1, Lte/o;->b:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sget-object v1, Lte/o;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
+    :cond_5
     invoke-virtual {v1, p0, v0, v2}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v3
 
+    if-eqz v3, :cond_6
+
+    const/4 v1, 0x1
+
+    goto :goto_3
+
+    :cond_6
+    invoke-virtual {v1, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    if-eq v3, v0, :cond_5
+
+    const/4 v1, 0x0
+
+    :goto_3
     if-eqz v1, :cond_0
 
     check-cast v0, Lte/o;
@@ -453,24 +519,24 @@
     return-object v0
 
     .line 9
-    :cond_5
+    :cond_7
     new-instance v0, Lkotlin/TypeCastException;
 
     const-string v1, "null cannot be cast to non-null type kotlinx.coroutines.internal.Node /* = kotlinx.coroutines.internal.LockFreeLinkedListNode */"
 
     invoke-direct {v0, v1}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_4
-
-    :goto_3
-    throw v0
+    goto :goto_5
 
     :goto_4
-    goto :goto_3
+    throw v0
+
+    :goto_5
+    goto :goto_4
 .end method
 
 .method public i()Z
-    .locals 9
+    .locals 11
 
     .line 1
     :cond_0
@@ -495,39 +561,58 @@
     :cond_2
     const-string v1, "null cannot be cast to non-null type kotlinx.coroutines.internal.Node /* = kotlinx.coroutines.internal.LockFreeLinkedListNode */"
 
-    if-eqz v0, :cond_c
+    if-eqz v0, :cond_12
 
     .line 3
-    move-object v2, v0
+    move-object v3, v0
 
-    check-cast v2, Lte/o;
+    check-cast v3, Lte/o;
 
     .line 4
-    iget-object v3, v2, Lte/o;->_removedRef:Ljava/lang/Object;
+    iget-object v4, v3, Lte/o;->_removedRef:Ljava/lang/Object;
 
-    check-cast v3, Lte/u;
+    check-cast v4, Lte/u;
 
-    if-eqz v3, :cond_3
+    if-eqz v4, :cond_3
 
     goto :goto_0
 
     :cond_3
-    new-instance v3, Lte/u;
+    new-instance v4, Lte/u;
 
-    invoke-direct {v3, v2}, Lte/u;-><init>(Lte/o;)V
+    invoke-direct {v4, v3}, Lte/u;-><init>(Lte/o;)V
 
-    sget-object v4, Lte/o;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sget-object v5, Lte/o;->i:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    invoke-virtual {v4, v2, v3}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->lazySet(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-virtual {v5, v3, v4}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->lazySet(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 5
     :goto_0
-    sget-object v4, Lte/o;->a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sget-object v5, Lte/o;->g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    invoke-virtual {v4, p0, v0, v3}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
+    :cond_4
+    invoke-virtual {v5, p0, v0, v4}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v0
+    move-result v6
 
+    const/4 v7, 0x1
+
+    if-eqz v6, :cond_5
+
+    const/4 v0, 0x1
+
+    goto :goto_1
+
+    :cond_5
+    invoke-virtual {v5, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    if-eq v6, v0, :cond_4
+
+    const/4 v0, 0x0
+
+    :goto_1
     if-eqz v0, :cond_0
 
     .line 6
@@ -536,108 +621,123 @@
     move-result-object v0
 
     .line 7
-    iget-object v3, p0, Lte/o;->_next:Ljava/lang/Object;
+    iget-object v4, p0, Lte/o;->_next:Ljava/lang/Object;
 
-    if-eqz v3, :cond_b
+    if-eqz v4, :cond_11
 
-    check-cast v3, Lte/u;
+    check-cast v4, Lte/u;
 
-    iget-object v3, v3, Lte/u;->a:Lte/o;
+    iget-object v4, v4, Lte/u;->a:Lte/o;
 
-    :goto_1
-    const/4 v4, 0x0
+    :goto_2
+    const/4 v5, 0x0
 
-    move-object v5, v3
+    move-object v6, v4
 
-    move-object v3, v4
+    move-object v4, v5
 
     .line 8
-    :cond_4
-    :goto_2
-    invoke-virtual {v5}, Lte/o;->e()Ljava/lang/Object;
+    :cond_6
+    :goto_3
+    invoke-virtual {v6}, Lte/o;->e()Ljava/lang/Object;
 
-    move-result-object v6
+    move-result-object v8
 
     .line 9
-    instance-of v7, v6, Lte/u;
+    instance-of v9, v8, Lte/u;
 
-    if-eqz v7, :cond_5
+    if-eqz v9, :cond_7
 
     .line 10
-    invoke-virtual {v5}, Lte/o;->h()Lte/o;
+    invoke-virtual {v6}, Lte/o;->h()Lte/o;
 
     .line 11
-    check-cast v6, Lte/u;
+    check-cast v8, Lte/u;
 
-    iget-object v5, v6, Lte/u;->a:Lte/o;
+    iget-object v6, v8, Lte/u;->a:Lte/o;
 
-    goto :goto_2
+    goto :goto_3
 
     .line 12
-    :cond_5
+    :cond_7
     invoke-virtual {v0}, Lte/o;->e()Ljava/lang/Object;
 
-    move-result-object v6
+    move-result-object v8
 
     .line 13
-    instance-of v7, v6, Lte/u;
+    instance-of v9, v8, Lte/u;
 
-    if-eqz v7, :cond_7
+    if-eqz v9, :cond_b
 
-    if-eqz v3, :cond_6
+    if-eqz v4, :cond_a
 
     .line 14
     invoke-virtual {v0}, Lte/o;->h()Lte/o;
 
     .line 15
-    sget-object v4, Lte/o;->a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sget-object v9, Lte/o;->g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    check-cast v6, Lte/u;
+    check-cast v8, Lte/u;
 
-    iget-object v6, v6, Lte/u;->a:Lte/o;
+    iget-object v8, v8, Lte/u;->a:Lte/o;
 
-    invoke-virtual {v4, v3, v0, v6}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
+    :cond_8
+    invoke-virtual {v9, v4, v0, v8}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-object v0, v3
+    move-result v5
 
-    move-object v3, v5
+    if-eqz v5, :cond_9
 
-    goto :goto_1
+    goto :goto_4
+
+    :cond_9
+    invoke-virtual {v9, v4}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    if-eq v5, v0, :cond_8
+
+    :goto_4
+    move-object v0, v4
+
+    move-object v4, v6
+
+    goto :goto_2
 
     .line 16
-    :cond_6
+    :cond_a
     iget-object v0, v0, Lte/o;->_prev:Ljava/lang/Object;
 
     invoke-static {v0}, Lte/n;->a(Ljava/lang/Object;)Lte/o;
 
     move-result-object v0
 
-    goto :goto_2
+    goto :goto_3
 
-    :cond_7
-    if-eq v6, p0, :cond_a
+    :cond_b
+    if-eq v8, p0, :cond_e
 
-    if-eqz v6, :cond_9
+    if-eqz v8, :cond_d
 
     .line 17
-    move-object v3, v6
+    move-object v4, v8
 
-    check-cast v3, Lte/o;
+    check-cast v4, Lte/o;
 
-    if-ne v3, v5, :cond_8
+    if-ne v4, v6, :cond_c
+
+    goto :goto_6
+
+    :cond_c
+    move-object v10, v4
+
+    move-object v4, v0
+
+    move-object v0, v10
 
     goto :goto_3
 
-    :cond_8
-    move-object v8, v3
-
-    move-object v3, v0
-
-    move-object v0, v8
-
-    goto :goto_2
-
-    :cond_9
+    :cond_d
     new-instance v0, Lkotlin/TypeCastException;
 
     invoke-direct {v0, v1}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
@@ -645,31 +745,46 @@
     throw v0
 
     .line 18
-    :cond_a
-    sget-object v6, Lte/o;->a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    :cond_e
+    sget-object v8, Lte/o;->g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    invoke-virtual {v6, v0, p0, v5}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
+    :cond_f
+    invoke-virtual {v8, v0, p0, v6}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v6
+    move-result v9
 
-    if-eqz v6, :cond_4
+    if-eqz v9, :cond_10
+
+    const/4 v8, 0x1
+
+    goto :goto_5
+
+    :cond_10
+    invoke-virtual {v8, v0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v9
+
+    if-eq v9, p0, :cond_f
+
+    const/4 v8, 0x0
+
+    :goto_5
+    if-eqz v8, :cond_6
 
     .line 19
-    :goto_3
+    :goto_6
     iget-object v0, p0, Lte/o;->_prev:Ljava/lang/Object;
 
     invoke-static {v0}, Lte/n;->a(Ljava/lang/Object;)Lte/o;
 
     move-result-object v0
 
-    invoke-virtual {v2, v0, v4}, Lte/o;->c(Lte/o;Lte/t;)Lte/o;
+    invoke-virtual {v3, v0, v5}, Lte/o;->c(Lte/o;Lte/t;)Lte/o;
 
-    const/4 v0, 0x1
-
-    return v0
+    return v7
 
     .line 20
-    :cond_b
+    :cond_11
     new-instance v0, Lkotlin/TypeCastException;
 
     const-string v1, "null cannot be cast to non-null type kotlinx.coroutines.internal.Removed"
@@ -679,18 +794,18 @@
     throw v0
 
     .line 21
-    :cond_c
+    :cond_12
     new-instance v0, Lkotlin/TypeCastException;
 
     invoke-direct {v0, v1}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_5
+    goto :goto_8
 
-    :goto_4
+    :goto_7
     throw v0
 
-    :goto_5
-    goto :goto_4
+    :goto_8
+    goto :goto_7
 .end method
 
 .method public toString()Ljava/lang/String;

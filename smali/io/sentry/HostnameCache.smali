@@ -16,6 +16,8 @@
 
 .field private static final HOSTNAME_CACHE_DURATION:J
 
+.field private static INSTANCE:Lio/sentry/HostnameCache;
+
 
 # instance fields
 .field private final cacheDuration:J
@@ -68,7 +70,7 @@
     return-void
 .end method
 
-.method public constructor <init>()V
+.method private constructor <init>()V
     .locals 2
 
     .line 1
@@ -167,6 +169,28 @@
     return-object v0
 .end method
 
+.method public static getInstance()Lio/sentry/HostnameCache;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lio/sentry/HostnameCache;->INSTANCE:Lio/sentry/HostnameCache;
+
+    if-nez v0, :cond_0
+
+    .line 2
+    new-instance v0, Lio/sentry/HostnameCache;
+
+    invoke-direct {v0}, Lio/sentry/HostnameCache;-><init>()V
+
+    sput-object v0, Lio/sentry/HostnameCache;->INSTANCE:Lio/sentry/HostnameCache;
+
+    .line 3
+    :cond_0
+    sget-object v0, Lio/sentry/HostnameCache;->INSTANCE:Lio/sentry/HostnameCache;
+
+    return-object v0
+.end method
+
 .method private handleCacheUpdateFailure()V
     .locals 5
 
@@ -261,6 +285,7 @@
 
     invoke-virtual {v2, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
+    .line 4
     throw v1
 .end method
 
@@ -317,6 +342,17 @@
 
 
 # virtual methods
+.method public close()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/HostnameCache;->executorService:Ljava/util/concurrent/ExecutorService;
+
+    invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->shutdown()V
+
+    return-void
+.end method
+
 .method public getHostname()Ljava/lang/String;
     .locals 5
 
@@ -352,4 +388,17 @@
     iget-object v0, p0, Lio/sentry/HostnameCache;->hostname:Ljava/lang/String;
 
     return-object v0
+.end method
+
+.method public isClosed()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/HostnameCache;->executorService:Ljava/util/concurrent/ExecutorService;
+
+    invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->isShutdown()Z
+
+    move-result v0
+
+    return v0
 .end method

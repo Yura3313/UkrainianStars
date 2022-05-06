@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public a:I
+.field public g:I
 
-.field public final synthetic b:Lcom/google/android/material/slider/BaseSlider;
+.field public final synthetic h:Lcom/google/android/material/slider/BaseSlider;
 
 
 # direct methods
@@ -28,14 +28,14 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/slider/BaseSlider$b;->b:Lcom/google/android/material/slider/BaseSlider;
+    iput-object p1, p0, Lcom/google/android/material/slider/BaseSlider$b;->h:Lcom/google/android/material/slider/BaseSlider;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, -0x1
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/slider/BaseSlider$b;->a:I
+    iput p1, p0, Lcom/google/android/material/slider/BaseSlider$b;->g:I
 
     return-void
 .end method
@@ -46,13 +46,13 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/slider/BaseSlider$b;->b:Lcom/google/android/material/slider/BaseSlider;
+    iget-object v0, p0, Lcom/google/android/material/slider/BaseSlider$b;->h:Lcom/google/android/material/slider/BaseSlider;
 
     .line 2
-    iget-object v0, v0, Lcom/google/android/material/slider/BaseSlider;->l:Lcom/google/android/material/slider/BaseSlider$c;
+    iget-object v0, v0, Lcom/google/android/material/slider/BaseSlider;->m:Lcom/google/android/material/slider/BaseSlider$c;
 
     .line 3
-    iget v1, p0, Lcom/google/android/material/slider/BaseSlider$b;->a:I
+    iget v1, p0, Lcom/google/android/material/slider/BaseSlider$b;->g:I
 
     const/4 v2, 0x4
 

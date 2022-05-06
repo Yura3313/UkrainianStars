@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field public i0:Ljava/util/HashMap;
+.field public j0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 .method public W0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/MaintenanceModeFragment;->i0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/MaintenanceModeFragment;->j0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -61,7 +61,7 @@
     const-string p1, "inflater"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -74,7 +74,7 @@
     invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->i0()V
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/MaintenanceModeFragment;->i0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/MaintenanceModeFragment;->j0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -87,7 +87,7 @@
 .method public o1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/MaintenanceModeFragment;->i0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/MaintenanceModeFragment;->j0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -95,10 +95,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/MaintenanceModeFragment;->i0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/MaintenanceModeFragment;->j0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/MaintenanceModeFragment;->i0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/MaintenanceModeFragment;->j0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -113,7 +113,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -127,7 +127,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/MaintenanceModeFragment;->i0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/MaintenanceModeFragment;->j0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -156,13 +156,13 @@
     if-eqz v0, :cond_2
 
     .line 2
-    invoke-static {p0}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p0}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {v1}, Lcom/supercell/id/ui/MainActivity;->i()I
+    invoke-virtual {v1}, Lcom/supercell/id/ui/MainActivity;->j()I
 
     move-result v1
 
@@ -205,7 +205,7 @@
 
     check-cast p1, Landroid/widget/Button;
 
-    sget-object p2, Lcom/supercell/id/ui/MaintenanceModeFragment$c;->a:Lcom/supercell/id/ui/MaintenanceModeFragment$c;
+    sget-object p2, Lcom/supercell/id/ui/MaintenanceModeFragment$c;->g:Lcom/supercell/id/ui/MaintenanceModeFragment$c;
 
     invoke-virtual {p1, p2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -215,7 +215,7 @@
     const-string p1, "view"
 
     .line 7
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

@@ -1,22 +1,25 @@
-.class public final Lj3/i01;
-.super Lj3/f01;
+.class public interface abstract Lj3/i01;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# direct methods
-.method public constructor <init>(Lj3/e01;I)V
-    .locals 2
+# virtual methods
+.method public abstract b(Lj3/h01;)V
+.end method
 
-    const/4 v0, 0x1
+.method public abstract c()V
+.end method
 
-    new-array v0, v0, [I
+.method public abstract d(ILj3/s11;)Lj3/h01;
+.end method
 
-    const/4 v1, 0x0
+.method public abstract e(Lj3/tw0;ZLj3/m01;)V
+.end method
 
-    aput p2, v0, v1
-
-    .line 1
-    invoke-direct {p0, p1, v0}, Lj3/f01;-><init>(Lj3/e01;[I)V
-
-    return-void
+.method public abstract f()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 .end method

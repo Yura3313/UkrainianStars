@@ -1,103 +1,129 @@
-.class public final synthetic Lj3/my;
+.class public final Lj3/my;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/gl0;
+.implements Lj3/y2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj3/y2<",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Lj3/ly;
+.field public final g:Lcom/google/android/gms/internal/ads/zzafc;
 
-.field public final b:Ljava/lang/String;
+.field public final h:Lj3/qy;
 
-.field public final c:Lorg/json/JSONObject;
+.field public final i:Lj3/nv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/nv0<",
+            "Lcom/google/android/gms/internal/ads/zzcgw;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lj3/ly;Ljava/lang/String;Lorg/json/JSONObject;)V
+.method public constructor <init>(Lj3/zv;Lj3/uv;Lj3/qy;Lj3/nv0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/zv;",
+            "Lj3/uv;",
+            "Lj3/qy;",
+            "Lj3/nv0<",
+            "Lcom/google/android/gms/internal/ads/zzcgw;",
+            ">;)V"
+        }
+    .end annotation
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj3/my;->a:Lj3/ly;
+    .line 2
+    invoke-virtual {p2}, Lj3/uv;->c()Ljava/lang/String;
 
-    iput-object p2, p0, Lj3/my;->b:Ljava/lang/String;
+    move-result-object p2
 
-    iput-object p3, p0, Lj3/my;->c:Lorg/json/JSONObject;
+    invoke-virtual {p1, p2}, Lj3/zv;->a(Ljava/lang/String;)Lcom/google/android/gms/internal/ads/zzafc;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lj3/my;->g:Lcom/google/android/gms/internal/ads/zzafc;
+
+    .line 3
+    iput-object p3, p0, Lj3/my;->h:Lj3/qy;
+
+    .line 4
+    iput-object p4, p0, Lj3/my;->i:Lj3/nv0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lj3/yl0;
-    .locals 6
+.method public final b(Ljava/lang/Object;Ljava/util/Map;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
 
-    iget-object v0, p0, Lj3/my;->a:Lj3/ly;
-
-    iget-object v1, p0, Lj3/my;->b:Ljava/lang/String;
-
-    iget-object v2, p0, Lj3/my;->c:Lorg/json/JSONObject;
-
-    check-cast p1, Lj3/ch;
+    const-string p1, "asset"
 
     .line 1
-    iget-object v0, v0, Lj3/ly;->g:Lj3/d3;
+    invoke-interface {p2, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/String;
 
     .line 2
-    new-instance v3, Lj3/md;
-
-    invoke-direct {v3}, Lj3/md;-><init>()V
-
-    .line 3
-    sget-object v4, Lh1/o;->B:Lh1/o;
-
-    iget-object v4, v4, Lh1/o;->c:Lj3/xa;
-
-    .line 4
-    invoke-static {}, Lj3/xa;->I()Ljava/lang/String;
-
-    move-result-object v4
-
-    .line 5
-    new-instance v5, Lj3/g3;
-
-    invoke-direct {v5, v3}, Lj3/g3;-><init>(Lj3/md;)V
-
-    invoke-virtual {v0, v4, v5}, Lj3/d3;->a(Ljava/lang/String;Lj3/f3;)V
-
-    .line 6
     :try_start_0
-    new-instance v0, Lorg/json/JSONObject;
+    iget-object p2, p0, Lj3/my;->g:Lcom/google/android/gms/internal/ads/zzafc;
 
-    invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
+    iget-object v0, p0, Lj3/my;->i:Lj3/nv0;
 
-    const-string v5, "id"
+    invoke-interface {v0}, Lj3/nv0;->get()Ljava/lang/Object;
 
-    .line 7
-    invoke-virtual {v0, v5, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    move-result-object v0
 
-    const-string v4, "args"
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzaes;
 
-    .line 8
-    invoke-virtual {v0, v4, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-
-    .line 9
-    invoke-interface {p1, v1, v0}, Lj3/p4;->U(Ljava/lang/String;Lorg/json/JSONObject;)V
+    invoke-interface {p2, v0, p1}, Lcom/google/android/gms/internal/ads/zzafc;->X0(Lcom/google/android/gms/internal/ads/zzaes;Ljava/lang/String;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
+    return-void
 
     :catch_0
-    move-exception p1
+    const/16 p2, 0x28
 
-    .line 10
-    invoke-virtual {v3, p1}, Lj3/md;->c(Ljava/lang/Throwable;)Z
+    .line 3
+    invoke-static {p1, p2}, La1/e;->a(Ljava/lang/String;I)I
 
-    :goto_0
-    return-object v3
+    move-result p1
+
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2, p1}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    return-void
 .end method

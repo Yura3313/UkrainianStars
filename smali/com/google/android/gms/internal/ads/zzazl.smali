@@ -16,9 +16,9 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final b:I
+.field public final h:I
 
 
 # direct methods
@@ -26,9 +26,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lj3/yb;
+    new-instance v0, Lj3/cc;
 
-    invoke-direct {v0}, Lj3/yb;-><init>()V
+    invoke-direct {v0}, Lj3/cc;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzazl;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -47,10 +47,10 @@
 
     .line 2
     :cond_0
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzazl;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzazl;->g:Ljava/lang/String;
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/internal/ads/zzazl;->b:I
+    iput p2, p0, Lcom/google/android/gms/internal/ads/zzazl;->h:I
 
     return-void
 .end method
@@ -70,7 +70,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzazl;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzazl;->g:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -79,7 +79,7 @@
     const/4 v0, 0x2
 
     .line 3
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzazl;->b:I
+    iget v1, p0, Lcom/google/android/gms/internal/ads/zzazl;->h:I
 
     const/4 v2, 0x4
 

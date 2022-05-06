@@ -52,7 +52,7 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Lr5/b;->e()V
+    invoke-virtual {p0}, Lr5/b;->f()V
 
     .line 2
     iget-object v0, p0, Lr5/b;->c:Lr5/c;
@@ -66,7 +66,7 @@
 
     .line 4
     :cond_0
-    invoke-virtual {p0}, Lr5/b;->e()V
+    invoke-virtual {p0}, Lr5/b;->f()V
 
     .line 5
     iget-object p0, p0, Lr5/b;->c:Lr5/c;

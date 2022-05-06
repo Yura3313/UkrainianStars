@@ -53,12 +53,12 @@
     check-cast p1, Ll5/s;
 
     .line 2
-    invoke-static {}, Ll5/r;->w()Ll5/r$b;
+    invoke-static {}, Ll5/r;->v()Ll5/r$b;
 
     move-result-object v0
 
     .line 3
-    invoke-virtual {p1}, Ll5/s;->t()I
+    invoke-virtual {p1}, Ll5/s;->s()I
 
     move-result p1
 
@@ -71,7 +71,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {p1, v2, v1}, Lm5/c;->d([BII)Lm5/c;
+    invoke-static {p1, v2, v1}, Lm5/c;->e([BII)Lm5/c;
 
     move-result-object p1
 
@@ -79,11 +79,11 @@
     invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 6
-    iget-object v1, v0, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object v1, v0, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast v1, Ll5/r;
 
-    invoke-static {v1, p1}, Ll5/r;->t(Ll5/r;Lm5/c;)V
+    invoke-static {v1, p1}, Ll5/r;->s(Ll5/r;Lm5/c;)V
 
     .line 7
     iget-object p1, p0, Le5/f$b;->b:Le5/f;
@@ -95,11 +95,11 @@
     invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 10
-    iget-object p1, v0, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object p1, v0, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast p1, Ll5/r;
 
-    invoke-static {p1, v2}, Ll5/r;->s(Ll5/r;I)V
+    invoke-static {p1, v2}, Ll5/r;->r(Ll5/r;I)V
 
     .line 11
     invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->c()Lcom/google/crypto/tink/shaded/protobuf/o;
@@ -124,7 +124,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Ll5/s;->v(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/s;
+    invoke-static {p1, v0}, Ll5/s;->u(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/s;
 
     move-result-object p1
 
@@ -143,7 +143,7 @@
     check-cast p1, Ll5/s;
 
     .line 2
-    invoke-virtual {p1}, Ll5/s;->t()I
+    invoke-virtual {p1}, Ll5/s;->s()I
 
     move-result p1
 

@@ -3,7 +3,7 @@
 
 
 # virtual methods
-.method public abstract d(Ljava/lang/ClassLoader;Ljava/util/Set;)V
+.method public abstract b(Ljava/lang/ClassLoader;Ljava/util/Set;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -15,5 +15,5 @@
     .end annotation
 .end method
 
-.method public abstract e(Ljava/lang/ClassLoader;Ljava/io/File;Ljava/io/File;Z)Z
+.method public abstract c(Ljava/lang/ClassLoader;Ljava/io/File;Ljava/io/File;Z)Z
 .end method

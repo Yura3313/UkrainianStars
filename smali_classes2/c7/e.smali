@@ -1,5 +1,5 @@
 .class public Lc7/e;
-.super Ly7/g;
+.super Lz7/g;
 .source "JavaCore.java"
 
 
@@ -14,7 +14,7 @@
     .line 1
     iput-object p1, p0, Lc7/e;->b:Lc7/h;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -30,19 +30,19 @@
     iget-object v1, v0, Lc7/h;->b:Li7/a;
 
     .line 2
-    iget-object v0, v0, Lc7/h;->g:Lg7/e;
+    iget-object v0, v0, Lc7/h;->g:Lg7/d;
 
     .line 3
-    invoke-virtual {v0}, Lg7/e;->f()Lg7/c;
+    invoke-virtual {v0}, Lg7/d;->f()Lg7/c;
 
     move-result-object v0
 
     .line 4
-    iget-object v2, v1, Li7/a;->f:Lh8/b;
+    iget-object v2, v1, Li7/a;->f:Li8/b;
 
     const-string v3, "disableAppLaunchEvent"
 
-    invoke-virtual {v2, v3}, Lh8/b;->c(Ljava/lang/String;)Z
+    invoke-virtual {v2, v3}, Li8/b;->c(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -54,16 +54,16 @@
     :cond_0
     iget-object v2, v1, Li7/a;->e:Ljava/util/List;
 
-    invoke-static {v2}, Lid/g;->a(Ljava/util/List;)Z
+    invoke-static {v2}, Lk2/h;->a(Ljava/util/List;)Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
     .line 6
-    iget-object v2, v1, Li7/a;->d:Lhb/a;
+    iget-object v2, v1, Li7/a;->d:Lfb/a;
 
-    invoke-virtual {v2}, Lhb/a;->b()Ljava/util/List;
+    invoke-virtual {v2}, Lfb/a;->b()Ljava/util/List;
 
     move-result-object v2
 
@@ -97,6 +97,8 @@
 
     invoke-static {v4, v5}, Ljava/lang/Double;->isNaN(D)Z
 
+    invoke-static {v4, v5}, Ljava/lang/Double;->isNaN(D)Z
+
     div-double/2addr v4, v6
 
     invoke-virtual {v3, v4, v5}, Ljava/text/DecimalFormat;->format(D)Ljava/lang/String;
@@ -106,11 +108,11 @@
     .line 10
     new-instance v4, Lj7/a;
 
-    sget-object v5, Lh7/a;->APP_START:Lh7/a;
+    const/4 v5, 0x0
 
-    const/4 v6, 0x0
+    const/4 v6, 0x1
 
-    invoke-direct {v4, v2, v5, v6, v3}, Lj7/a;-><init>(Ljava/lang/String;Lh7/a;Ljava/util/Map;Ljava/lang/String;)V
+    invoke-direct {v4, v2, v6, v5, v3}, Lj7/a;-><init>(Ljava/lang/String;ILjava/util/Map;Ljava/lang/String;)V
 
     .line 11
     iget-object v2, v1, Li7/a;->e:Ljava/util/List;
@@ -122,10 +124,10 @@
 
     move-result-wide v2
 
-    iget-object v5, v1, Li7/a;->f:Lh8/b;
+    iget-object v5, v1, Li7/a;->f:Li8/b;
 
     .line 13
-    iget-object v5, v5, Lh8/b;->c:Lj3/rd;
+    iget-object v5, v5, Li8/b;->c:Lj3/g50;
 
     const-wide/16 v6, 0x0
 
@@ -135,7 +137,7 @@
 
     const-string v9, "lastSuccessfulAppLaunchEventTime"
 
-    invoke-virtual {v5, v9, v8}, Lj3/rd;->f(Ljava/lang/String;Ljava/lang/Long;)Ljava/lang/Long;
+    invoke-virtual {v5, v9, v8}, Lj3/g50;->f(Ljava/lang/String;Ljava/lang/Long;)Ljava/lang/Long;
 
     move-result-object v5
 
@@ -151,14 +153,14 @@
 
     move-result-wide v2
 
-    iget-object v5, v1, Li7/a;->f:Lh8/b;
+    iget-object v5, v1, Li7/a;->f:Li8/b;
 
     .line 16
-    iget-object v5, v5, Lh8/b;->c:Lj3/rd;
+    iget-object v5, v5, Li8/b;->c:Lj3/g50;
 
     const-string v8, "periodicSyncAppLaunchEventInterval"
 
-    invoke-static {v6, v7, v5, v8}, Lc7/d;->a(JLj3/rd;Ljava/lang/String;)J
+    invoke-static {v6, v7, v5, v8}, Lc7/d;->d(JLj3/g50;Ljava/lang/String;)J
 
     move-result-wide v10
 
@@ -177,12 +179,12 @@
 
     .line 17
     :goto_0
-    iget-object v3, v1, Li7/a;->f:Lh8/b;
+    iget-object v3, v1, Li7/a;->f:Li8/b;
 
     .line 18
-    iget-object v3, v3, Lh8/b;->c:Lj3/rd;
+    iget-object v3, v3, Li8/b;->c:Lj3/g50;
 
-    invoke-static {v6, v7, v3, v9}, Lc7/d;->a(JLj3/rd;Ljava/lang/String;)J
+    invoke-static {v6, v7, v3, v9}, Lc7/d;->d(JLj3/g50;Ljava/lang/String;)J
 
     move-result-wide v6
 
@@ -209,16 +211,16 @@
     xor-int/lit8 v3, v5, 0x1
 
     .line 22
-    iget-object v5, v1, Li7/a;->f:Lh8/b;
+    iget-object v5, v1, Li7/a;->f:Li8/b;
 
     .line 23
-    iget-object v5, v5, Lh8/b;->c:Lj3/rd;
+    iget-object v5, v5, Li8/b;->c:Lj3/g50;
 
     sget-object v6, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     const-string v7, "activelySyncAppLaunchEvent"
 
-    invoke-virtual {v5, v7, v6}, Lj3/rd;->a(Ljava/lang/String;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+    invoke-virtual {v5, v7, v6}, Lj3/g50;->b(Ljava/lang/String;Ljava/lang/Boolean;)Ljava/lang/Boolean;
 
     move-result-object v5
 
@@ -236,10 +238,10 @@
 
     .line 24
     :cond_4
-    iget-object v0, v1, Li7/a;->d:Lhb/a;
+    iget-object v0, v1, Li7/a;->d:Lfb/a;
 
     .line 25
-    invoke-virtual {v0}, Lhb/a;->b()Ljava/util/List;
+    invoke-virtual {v0}, Lfb/a;->b()Ljava/util/List;
 
     move-result-object v1
 
@@ -261,19 +263,19 @@
     invoke-virtual {v2, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 29
-    iget-object v0, v0, Lhb/a;->a:Lj3/rd;
+    iget-object v0, v0, Lfb/a;->a:Lj3/g50;
 
     const-string v1, "unsent_app_launch_analytics_events"
 
     .line 30
-    invoke-virtual {v0, v1, v2}, Lj3/rd;->j(Ljava/lang/String;Ljava/io/Serializable;)V
+    invoke-virtual {v0, v1, v2}, Lj3/g50;->j(Ljava/lang/String;Ljava/io/Serializable;)V
 
     goto :goto_2
 
     .line 31
     :cond_5
     :goto_1
-    invoke-virtual {v1, v0}, Li7/a;->g(Lg7/c;)V
+    invoke-virtual {v1, v0}, Li7/a;->f(Lg7/c;)V
 
     :cond_6
     :goto_2

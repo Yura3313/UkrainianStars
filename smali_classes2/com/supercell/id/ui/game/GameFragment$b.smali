@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final i0:Lbe/c;
+.field public final j0:Lae/c;
 
 
 # direct methods
@@ -30,11 +30,11 @@
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/game/GameFragment$b$a;-><init>(Lcom/supercell/id/ui/game/GameFragment$b;)V
 
-    invoke-static {v0}, Lbe/e;->f(Lke/a;)Lbe/c;
+    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$b;->i0:Lbe/c;
+    iput-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$b;->j0:Lae/c;
 
     return-void
 .end method
@@ -67,7 +67,7 @@
     const-string p1, "inflater"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -101,7 +101,7 @@
 
     const-string p2, "view.head_logo"
 
-    invoke-static {p1, p2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -112,9 +112,9 @@
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$b;->i0:Lbe/c;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$b;->j0:Lae/c;
 
-    invoke-interface {v0}, Lbe/c;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Lae/c;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -134,7 +134,7 @@
     const/4 v0, 0x1
 
     .line 5
-    invoke-static {p1, p2, v0}, Lqd/e0;->g(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    invoke-static {p1, p2, v0}, Lpd/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
 
     return-void
 
@@ -142,7 +142,7 @@
     const-string p1, "view"
 
     .line 6
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

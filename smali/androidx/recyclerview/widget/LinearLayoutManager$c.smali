@@ -106,7 +106,7 @@
 
     check-cast v4, Landroidx/recyclerview/widget/RecyclerView$z;
 
-    iget-object v4, v4, Landroidx/recyclerview/widget/RecyclerView$z;->a:Landroid/view/View;
+    iget-object v4, v4, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
     .line 3
     invoke-virtual {v4}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -244,7 +244,7 @@
 
     check-cast v0, Landroidx/recyclerview/widget/RecyclerView$z;
 
-    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView$z;->a:Landroid/view/View;
+    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
     .line 4
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -300,7 +300,7 @@
 
     move-result-object p1
 
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->a:Landroid/view/View;
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
     .line 10
     iget v0, p0, Landroidx/recyclerview/widget/LinearLayoutManager$c;->d:I

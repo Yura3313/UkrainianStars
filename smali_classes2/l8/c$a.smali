@@ -1,47 +1,36 @@
-.class public Ll8/c$a;
+.class public final Ll8/c$a;
 .super Ljava/lang/Object;
-.source "ConversationManager.java"
+.source "ConversationUtil.java"
 
 # interfaces
-.implements Lcom/helpshift/util/f;
+.implements Ljava/util/Comparator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ll8/c;->w(Lo8/d;Lm8/s0;)V
+    value = Ll8/c;->h(Ljava/util/List;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1
+    accessFlags = 0x9
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lcom/helpshift/util/f<",
-        "Ljava/lang/Void;",
-        "Lcom/helpshift/common/exception/RootAPIException;",
+        "Ljava/util/Comparator<",
+        "Ln8/w;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic a:Lo8/d;
-
-.field public final synthetic b:Ll8/c;
-
-
 # direct methods
-.method public constructor <init>(Ll8/c;Lo8/d;)V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Ll8/c$a;->b:Ll8/c;
-
-    iput-object p2, p0, Ll8/c$a;->a:Lo8/d;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -49,70 +38,40 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Object;)V
-    .locals 2
+.method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 3
 
     .line 1
-    check-cast p1, Lcom/helpshift/common/exception/RootAPIException;
+    check-cast p1, Ln8/w;
+
+    check-cast p2, Ln8/w;
 
     .line 2
-    iget-object p1, p1, Lcom/helpshift/common/exception/RootAPIException;->h:Lb8/a;
-
-    sget-object v0, Lb8/b;->CONVERSATION_REOPEN_EXPIRED:Lb8/b;
-
-    if-ne p1, v0, :cond_0
+    iget-wide v0, p1, Ln8/w;->x:J
 
     .line 3
-    iget-object p1, p0, Ll8/c$a;->b:Ll8/c;
+    iget-wide p1, p2, Ln8/w;->x:J
 
-    iget-object v0, p0, Ll8/c$a;->a:Lo8/d;
+    cmp-long v2, v0, p1
 
-    invoke-virtual {p1, v0}, Ll8/c;->r(Lo8/d;)V
+    if-lez v2, :cond_0
+
+    const/4 p1, 0x1
 
     goto :goto_0
 
-    .line 4
     :cond_0
-    sget-object v0, Lb8/b;->CONVERSATION_ARCHIVED:Lb8/b;
+    cmp-long v2, v0, p1
 
-    if-ne p1, v0, :cond_1
+    if-gez v2, :cond_1
 
-    .line 5
-    iget-object p1, p0, Ll8/c$a;->b:Ll8/c;
+    const/4 p1, -0x1
 
-    iget-object v0, p0, Ll8/c$a;->a:Lo8/d;
-
-    sget-object v1, Ls8/e;->ARCHIVED:Ls8/e;
-
-    invoke-virtual {p1, v0, v1}, Ll8/c;->R(Lo8/d;Ls8/e;)V
+    goto :goto_0
 
     :cond_1
+    const/4 p1, 0x0
+
     :goto_0
-    return-void
-.end method
-
-.method public onSuccess(Ljava/lang/Object;)V
-    .locals 2
-
-    .line 1
-    check-cast p1, Ljava/lang/Void;
-
-    .line 2
-    iget-object p1, p0, Ll8/c$a;->a:Lo8/d;
-
-    iget-object v0, p1, Lo8/d;->l:Ls8/e;
-
-    sget-object v1, Ls8/e;->RESOLUTION_REJECTED:Ls8/e;
-
-    if-ne v0, v1, :cond_0
-
-    .line 3
-    iget-object v0, p0, Ll8/c$a;->b:Ll8/c;
-
-    sget-object v1, Ls8/e;->WAITING_FOR_AGENT:Ls8/e;
-
-    invoke-virtual {v0, p1, v1}, Ll8/c;->R(Lo8/d;Ls8/e;)V
-
-    :cond_0
-    return-void
+    return p1
 .end method

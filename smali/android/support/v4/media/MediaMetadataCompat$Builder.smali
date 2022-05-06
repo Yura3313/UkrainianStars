@@ -211,7 +211,7 @@
     sget-object v0, Landroid/support/v4/media/MediaMetadataCompat;->METADATA_KEYS_TYPE:Lm/a;
 
     .line 2
-    invoke-virtual {v0, p1}, Lm/h;->e(Ljava/lang/Object;)I
+    invoke-virtual {v0, p1}, Lm/g;->e(Ljava/lang/Object;)I
 
     move-result v1
 
@@ -230,7 +230,7 @@
     const/4 v1, 0x0
 
     .line 3
-    invoke-virtual {v0, p1, v1}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -255,7 +255,7 @@
 
     const-string v1, " key cannot be used to put a Bitmap"
 
-    invoke-static {v0, p1, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, v1}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -280,7 +280,7 @@
     sget-object v0, Landroid/support/v4/media/MediaMetadataCompat;->METADATA_KEYS_TYPE:Lm/a;
 
     .line 2
-    invoke-virtual {v0, p1}, Lm/h;->e(Ljava/lang/Object;)I
+    invoke-virtual {v0, p1}, Lm/g;->e(Ljava/lang/Object;)I
 
     move-result v1
 
@@ -299,7 +299,7 @@
     const/4 v1, 0x0
 
     .line 3
-    invoke-virtual {v0, p1, v1}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -322,7 +322,7 @@
 
     const-string v0, " key cannot be used to put a long"
 
-    invoke-static {p3, p1, v0}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p3, p1, v0}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -347,7 +347,7 @@
     sget-object v0, Landroid/support/v4/media/MediaMetadataCompat;->METADATA_KEYS_TYPE:Lm/a;
 
     .line 2
-    invoke-virtual {v0, p1}, Lm/h;->e(Ljava/lang/Object;)I
+    invoke-virtual {v0, p1}, Lm/g;->e(Ljava/lang/Object;)I
 
     move-result v1
 
@@ -366,7 +366,7 @@
     const/4 v1, 0x0
 
     .line 3
-    invoke-virtual {v0, p1, v1}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -391,7 +391,7 @@
 
     const-string v1, " key cannot be used to put a Rating"
 
-    invoke-static {v0, p1, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, v1}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -438,7 +438,7 @@
     sget-object v0, Landroid/support/v4/media/MediaMetadataCompat;->METADATA_KEYS_TYPE:Lm/a;
 
     .line 2
-    invoke-virtual {v0, p1}, Lm/h;->e(Ljava/lang/Object;)I
+    invoke-virtual {v0, p1}, Lm/g;->e(Ljava/lang/Object;)I
 
     move-result v1
 
@@ -459,7 +459,7 @@
     const/4 v1, 0x0
 
     .line 3
-    invoke-virtual {v0, p1, v1}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -482,7 +482,7 @@
 
     const-string v1, " key cannot be used to put a String"
 
-    invoke-static {v0, p1, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, v1}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -507,7 +507,7 @@
     sget-object v0, Landroid/support/v4/media/MediaMetadataCompat;->METADATA_KEYS_TYPE:Lm/a;
 
     .line 2
-    invoke-virtual {v0, p1}, Lm/h;->e(Ljava/lang/Object;)I
+    invoke-virtual {v0, p1}, Lm/g;->e(Ljava/lang/Object;)I
 
     move-result v1
 
@@ -528,7 +528,7 @@
     const/4 v1, 0x0
 
     .line 3
-    invoke-virtual {v0, p1, v1}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -551,7 +551,7 @@
 
     const-string v1, " key cannot be used to put a CharSequence"
 
-    invoke-static {v0, p1, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, v1}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

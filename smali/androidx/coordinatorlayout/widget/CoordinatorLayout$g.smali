@@ -47,12 +47,12 @@
     check-cast p2, Landroid/view/View;
 
     .line 2
-    invoke-static {p1}, Lf0/s;->n(Landroid/view/View;)F
+    invoke-static {p1}, Lf0/r;->n(Landroid/view/View;)F
 
     move-result p1
 
     .line 3
-    invoke-static {p2}, Lf0/s;->n(Landroid/view/View;)F
+    invoke-static {p2}, Lf0/r;->n(Landroid/view/View;)F
 
     move-result p2
 

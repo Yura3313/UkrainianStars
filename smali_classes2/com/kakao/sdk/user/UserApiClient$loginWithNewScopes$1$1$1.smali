@@ -22,7 +22,7 @@
         "Lke/p<",
         "Lcom/kakao/sdk/auth/model/OAuthToken;",
         "Ljava/lang/Throwable;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
@@ -57,7 +57,7 @@
 
     invoke-virtual {p0, p1, p2}, Lcom/kakao/sdk/user/UserApiClient$loginWithNewScopes$1$1$1;->invoke(Lcom/kakao/sdk/auth/model/OAuthToken;Ljava/lang/Throwable;)V
 
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method

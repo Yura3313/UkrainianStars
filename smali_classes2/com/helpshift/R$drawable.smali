@@ -175,165 +175,165 @@
 
 .field public static final avd_show_password:I = 0x7f08005d
 
-.field public static final design_bottom_navigation_item_background:I = 0x7f080088
+.field public static final design_bottom_navigation_item_background:I = 0x7f08008b
 
-.field public static final design_fab_background:I = 0x7f080089
+.field public static final design_fab_background:I = 0x7f08008c
 
-.field public static final design_ic_visibility:I = 0x7f08008a
+.field public static final design_ic_visibility:I = 0x7f08008d
 
-.field public static final design_ic_visibility_off:I = 0x7f08008b
+.field public static final design_ic_visibility_off:I = 0x7f08008e
 
-.field public static final design_password_eye:I = 0x7f08008c
+.field public static final design_password_eye:I = 0x7f08008f
 
-.field public static final design_snackbar_background:I = 0x7f08008d
+.field public static final design_snackbar_background:I = 0x7f080090
 
-.field public static final hs___star_filled:I = 0x7f08009d
+.field public static final hs___star_filled:I = 0x7f0800a2
 
-.field public static final hs___star_hollow:I = 0x7f08009e
+.field public static final hs___star_hollow:I = 0x7f0800a3
 
-.field public static final hs__action_download:I = 0x7f08009f
+.field public static final hs__action_download:I = 0x7f0800a4
 
-.field public static final hs__action_download_background:I = 0x7f0800a0
+.field public static final hs__action_download_background:I = 0x7f0800a5
 
-.field public static final hs__action_no:I = 0x7f0800a1
+.field public static final hs__action_no:I = 0x7f0800a6
 
-.field public static final hs__action_search:I = 0x7f0800a2
+.field public static final hs__action_search:I = 0x7f0800a7
 
-.field public static final hs__action_yes:I = 0x7f0800a3
+.field public static final hs__action_yes:I = 0x7f0800a8
 
-.field public static final hs__actionbar_compat_shadow:I = 0x7f0800a4
+.field public static final hs__actionbar_compat_shadow:I = 0x7f0800a9
 
-.field public static final hs__admin_image_background:I = 0x7f0800a5
+.field public static final hs__admin_image_background:I = 0x7f0800aa
 
-.field public static final hs__attach_screenshot_action_button:I = 0x7f0800a6
+.field public static final hs__attach_screenshot_action_button:I = 0x7f0800ab
 
-.field public static final hs__attachment_icon:I = 0x7f0800a7
+.field public static final hs__attachment_icon:I = 0x7f0800ac
 
-.field public static final hs__attachment_progressbar_background:I = 0x7f0800a8
+.field public static final hs__attachment_progressbar_background:I = 0x7f0800ad
 
-.field public static final hs__back:I = 0x7f0800a9
+.field public static final hs__back:I = 0x7f0800ae
 
-.field public static final hs__button_with_border:I = 0x7f0800aa
+.field public static final hs__button_with_border:I = 0x7f0800af
 
-.field public static final hs__chat_bubble_admin:I = 0x7f0800ab
+.field public static final hs__chat_bubble_admin:I = 0x7f0800b0
 
-.field public static final hs__chat_bubble_rounded:I = 0x7f0800ac
+.field public static final hs__chat_bubble_rounded:I = 0x7f0800b1
 
-.field public static final hs__chat_bubble_user:I = 0x7f0800ad
+.field public static final hs__chat_bubble_user:I = 0x7f0800b2
 
-.field public static final hs__chat_notif:I = 0x7f0800ae
+.field public static final hs__chat_notif:I = 0x7f0800b3
 
-.field public static final hs__circle:I = 0x7f0800af
+.field public static final hs__circle:I = 0x7f0800b4
 
-.field public static final hs__circle_shape_scroll_jump:I = 0x7f0800b0
+.field public static final hs__circle_shape_scroll_jump:I = 0x7f0800b5
 
-.field public static final hs__close:I = 0x7f0800b1
+.field public static final hs__close:I = 0x7f0800b6
 
-.field public static final hs__collapse:I = 0x7f0800b2
+.field public static final hs__collapse:I = 0x7f0800b7
 
-.field public static final hs__default_agent_avatar:I = 0x7f0800b3
+.field public static final hs__default_agent_avatar:I = 0x7f0800b8
 
-.field public static final hs__default_bot_avatar:I = 0x7f0800b4
+.field public static final hs__default_bot_avatar:I = 0x7f0800b9
 
-.field public static final hs__default_support_avatar:I = 0x7f0800b5
+.field public static final hs__default_support_avatar:I = 0x7f0800ba
 
-.field public static final hs__disclosure:I = 0x7f0800b6
+.field public static final hs__disclosure:I = 0x7f0800bb
 
-.field public static final hs__document_picker_icon:I = 0x7f0800b7
+.field public static final hs__document_picker_icon:I = 0x7f0800bc
 
-.field public static final hs__error_icon:I = 0x7f0800b8
+.field public static final hs__error_icon:I = 0x7f0800bd
 
-.field public static final hs__expand:I = 0x7f0800b9
+.field public static final hs__expand:I = 0x7f0800be
 
-.field public static final hs__file_preview_icon:I = 0x7f0800ba
+.field public static final hs__file_preview_icon:I = 0x7f0800bf
 
-.field public static final hs__image_picker_icon:I = 0x7f0800bb
+.field public static final hs__image_picker_icon:I = 0x7f0800c0
 
-.field public static final hs__logo:I = 0x7f0800bc
+.field public static final hs__logo:I = 0x7f0800c1
 
-.field public static final hs__network_error:I = 0x7f0800bd
+.field public static final hs__network_error:I = 0x7f0800c2
 
-.field public static final hs__picker_search:I = 0x7f0800be
+.field public static final hs__picker_search:I = 0x7f0800c3
 
-.field public static final hs__pill:I = 0x7f0800bf
+.field public static final hs__pill:I = 0x7f0800c4
 
-.field public static final hs__pill_small:I = 0x7f0800c0
+.field public static final hs__pill_small:I = 0x7f0800c5
 
-.field public static final hs__placeholder_image:I = 0x7f0800c1
+.field public static final hs__placeholder_image:I = 0x7f0800c6
 
-.field public static final hs__plus_icon:I = 0x7f0800c2
+.field public static final hs__plus_icon:I = 0x7f0800c7
 
-.field public static final hs__rating_bar:I = 0x7f0800c3
+.field public static final hs__rating_bar:I = 0x7f0800c8
 
-.field public static final hs__ratingbar_full_empty:I = 0x7f0800c4
+.field public static final hs__ratingbar_full_empty:I = 0x7f0800c9
 
-.field public static final hs__ratingbar_full_filled:I = 0x7f0800c5
+.field public static final hs__ratingbar_full_filled:I = 0x7f0800ca
 
-.field public static final hs__report_issue:I = 0x7f0800c6
+.field public static final hs__report_issue:I = 0x7f0800cb
 
-.field public static final hs__ring:I = 0x7f0800c7
+.field public static final hs__ring:I = 0x7f0800cc
 
-.field public static final hs__rounded_corner_filled_rectangle_user_option_selection:I = 0x7f0800c8
+.field public static final hs__rounded_corner_filled_rectangle_user_option_selection:I = 0x7f0800cd
 
-.field public static final hs__rounded_corner_rectangle:I = 0x7f0800c9
+.field public static final hs__rounded_corner_rectangle:I = 0x7f0800ce
 
-.field public static final hs__rounded_corner_rectangle_user_option_selection:I = 0x7f0800ca
+.field public static final hs__rounded_corner_rectangle_user_option_selection:I = 0x7f0800cf
 
-.field public static final hs__screenshot_clear:I = 0x7f0800cb
+.field public static final hs__screenshot_clear:I = 0x7f0800d0
 
-.field public static final hs__scroll_jump_indicator:I = 0x7f0800cc
+.field public static final hs__scroll_jump_indicator:I = 0x7f0800d1
 
-.field public static final hs__search_on_conversation_done:I = 0x7f0800cd
+.field public static final hs__search_on_conversation_done:I = 0x7f0800d2
 
-.field public static final hs__send:I = 0x7f0800ce
+.field public static final hs__send:I = 0x7f0800d3
 
-.field public static final hs__send_button_with_border:I = 0x7f0800cf
+.field public static final hs__send_button_with_border:I = 0x7f0800d4
 
-.field public static final hs__si_close_search:I = 0x7f0800d0
+.field public static final hs__si_close_search:I = 0x7f0800d5
 
-.field public static final hs__skip_pill_background:I = 0x7f0800d1
+.field public static final hs__skip_pill_background:I = 0x7f0800d6
 
-.field public static final hs__video_picker_icon:I = 0x7f0800d2
+.field public static final hs__video_picker_icon:I = 0x7f0800d7
 
-.field public static final hs_action_retry:I = 0x7f0800d3
+.field public static final hs_action_retry:I = 0x7f0800d8
 
-.field public static final ic_mtrl_chip_checked_black:I = 0x7f0800dd
+.field public static final ic_mtrl_chip_checked_black:I = 0x7f0800e2
 
-.field public static final ic_mtrl_chip_checked_circle:I = 0x7f0800de
+.field public static final ic_mtrl_chip_checked_circle:I = 0x7f0800e3
 
-.field public static final ic_mtrl_chip_close_circle:I = 0x7f0800df
+.field public static final ic_mtrl_chip_close_circle:I = 0x7f0800e4
 
-.field public static final mtrl_tabs_default_indicator:I = 0x7f080131
+.field public static final mtrl_tabs_default_indicator:I = 0x7f080136
 
-.field public static final navigation_empty_icon:I = 0x7f080132
+.field public static final navigation_empty_icon:I = 0x7f080137
 
-.field public static final notification_action_background:I = 0x7f080136
+.field public static final notification_action_background:I = 0x7f08013b
 
-.field public static final notification_bg:I = 0x7f080137
+.field public static final notification_bg:I = 0x7f08013c
 
-.field public static final notification_bg_low:I = 0x7f080138
+.field public static final notification_bg_low:I = 0x7f08013d
 
-.field public static final notification_bg_low_normal:I = 0x7f080139
+.field public static final notification_bg_low_normal:I = 0x7f08013e
 
-.field public static final notification_bg_low_pressed:I = 0x7f08013a
+.field public static final notification_bg_low_pressed:I = 0x7f08013f
 
-.field public static final notification_bg_normal:I = 0x7f08013b
+.field public static final notification_bg_normal:I = 0x7f080140
 
-.field public static final notification_bg_normal_pressed:I = 0x7f08013c
+.field public static final notification_bg_normal_pressed:I = 0x7f080141
 
-.field public static final notification_icon_background:I = 0x7f08013d
+.field public static final notification_icon_background:I = 0x7f080142
 
-.field public static final notification_template_icon_bg:I = 0x7f08013e
+.field public static final notification_template_icon_bg:I = 0x7f080143
 
-.field public static final notification_template_icon_low_bg:I = 0x7f08013f
+.field public static final notification_template_icon_low_bg:I = 0x7f080144
 
-.field public static final notification_tile_bg:I = 0x7f080140
+.field public static final notification_tile_bg:I = 0x7f080145
 
-.field public static final notify_panel_notification_icon_bg:I = 0x7f080141
+.field public static final notify_panel_notification_icon_bg:I = 0x7f080146
 
-.field public static final tooltip_frame_dark:I = 0x7f080160
+.field public static final tooltip_frame_dark:I = 0x7f080167
 
-.field public static final tooltip_frame_light:I = 0x7f080161
+.field public static final tooltip_frame_light:I = 0x7f080168
 
 
 # direct methods

@@ -27,10 +27,10 @@
 
 
 # instance fields
-.field public final a:Lm/h;
+.field public final a:Lm/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lm/h<",
+            "Lm/g<",
             "Ll0/a$b;",
             "Ljava/lang/Long;",
             ">;"
@@ -78,11 +78,11 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v0, Lm/h;
+    new-instance v0, Lm/g;
 
-    invoke-direct {v0}, Lm/h;-><init>()V
+    invoke-direct {v0}, Lm/g;-><init>()V
 
-    iput-object v0, p0, Ll0/a;->a:Lm/h;
+    iput-object v0, p0, Ll0/a;->a:Lm/g;
 
     .line 3
     new-instance v0, Ljava/util/ArrayList;

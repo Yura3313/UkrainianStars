@@ -1,139 +1,271 @@
-.class public final Ly1/v;
+.class public Ly1/v;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-basement@@17.5.0"
 
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
-
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/common/zzq;",
-        ">;"
-    }
+.annotation runtime Ljavax/annotation/CheckReturnValue;
 .end annotation
 
 
+# static fields
+.field public static final d:Ly1/v;
+
+
+# instance fields
+.field public final a:Z
+
+.field public final b:Ljava/lang/String;
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+.end field
+
+.field public final c:Ljava/lang/Throwable;
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+.end field
+
+
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Ly1/v;
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2, v2}, Ly1/v;-><init>(ZLjava/lang/String;Ljava/lang/Throwable;)V
+
+    sput-object v0, Ly1/v;->d:Ly1/v;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 8
+.method public constructor <init>(ZLjava/lang/String;Ljava/lang/Throwable;)V
+    .locals 0
+    .param p2    # Ljava/lang/String;
+        .annotation runtime Ljavax/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/Throwable;
+        .annotation runtime Ljavax/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result v0
+    .line 2
+    iput-boolean p1, p0, Ly1/v;->a:Z
+
+    .line 3
+    iput-object p2, p0, Ly1/v;->b:Ljava/lang/String;
+
+    .line 4
+    iput-object p3, p0, Ly1/v;->c:Ljava/lang/Throwable;
+
+    return-void
+.end method
+
+.method public static a(Ljava/lang/String;Ly1/l;ZZ)Ljava/lang/String;
+    .locals 3
+
+    if-eqz p3, :cond_0
+
+    const-string p3, "debug cert rejected"
+
+    goto :goto_0
+
+    :cond_0
+    const-string p3, "not allowed"
+
+    :goto_0
+    const/4 v0, 0x5
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    const/4 v1, 0x0
+
+    aput-object p3, v0, v1
+
+    const/4 p3, 0x1
+
+    aput-object p0, v0, p3
+
+    const-string p0, "SHA-1"
+
+    :goto_1
+    const/4 p3, 0x2
+
+    if-ge v1, p3, :cond_2
+
+    .line 1
+    :try_start_0
+    invoke-static {p0}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v2
+    :try_end_0
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-eqz v2, :cond_1
+
+    goto :goto_2
+
+    :catch_0
+    :cond_1
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_1
+
+    :cond_2
+    const/4 v2, 0x0
+
+    .line 2
+    :goto_2
+    invoke-static {v2}, Lc2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-object p0, v2
+
+    check-cast p0, Ljava/security/MessageDigest;
+
+    invoke-virtual {p1}, Ly1/l;->Q0()[B
+
+    move-result-object p0
+
+    invoke-virtual {v2, p0}, Ljava/security/MessageDigest;->digest([B)[B
+
+    move-result-object p0
+
+    .line 3
+    invoke-static {p0}, Lk2/i;->a([B)Ljava/lang/String;
+
+    move-result-object p0
+
+    aput-object p0, v0, p3
+
+    const/4 p0, 0x3
+
+    .line 4
+    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    aput-object p1, v0, p0
+
+    const/4 p0, 0x4
+
+    const-string p1, "12451000.false"
+
+    aput-object p1, v0, p0
+
+    const-string p0, "%s: pkg=%s, sha1=%s, atk=%s, ver=%s"
+
+    .line 5
+    invoke-static {p0, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static b(Ljava/lang/String;)Ly1/v;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ly1/v;
 
     const/4 v1, 0x0
 
     const/4 v2, 0x0
 
-    move-object v3, v2
+    invoke-direct {v0, v1, p0, v2}, Ly1/v;-><init>(ZLjava/lang/String;Ljava/lang/Throwable;)V
 
-    move-object v4, v3
-
-    const/4 v2, 0x0
-
-    .line 2
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
-
-    move-result v5
-
-    if-ge v5, v0, :cond_4
-
-    .line 3
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    move-result v5
-
-    const v6, 0xffff
-
-    and-int/2addr v6, v5
-
-    const/4 v7, 0x1
-
-    if-eq v6, v7, :cond_3
-
-    const/4 v7, 0x2
-
-    if-eq v6, v7, :cond_2
-
-    const/4 v7, 0x3
-
-    if-eq v6, v7, :cond_1
-
-    const/4 v7, 0x4
-
-    if-eq v6, v7, :cond_0
-
-    .line 4
-    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
-
-    goto :goto_0
-
-    .line 5
-    :cond_0
-    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
-
-    move-result v2
-
-    goto :goto_0
-
-    .line 6
-    :cond_1
-    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
-
-    move-result v1
-
-    goto :goto_0
-
-    .line 7
-    :cond_2
-    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->q(Landroid/os/Parcel;I)Landroid/os/IBinder;
-
-    move-result-object v4
-
-    goto :goto_0
-
-    .line 8
-    :cond_3
-    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
-
-    move-result-object v3
-
-    goto :goto_0
-
-    .line 9
-    :cond_4
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
-
-    .line 10
-    new-instance p1, Lcom/google/android/gms/common/zzq;
-
-    invoke-direct {p1, v3, v4, v1, v2}, Lcom/google/android/gms/common/zzq;-><init>(Ljava/lang/String;Landroid/os/IBinder;ZZ)V
-
-    return-object p1
+    return-object v0
 .end method
 
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
+.method public static c(Ljava/lang/String;Ljava/lang/Throwable;)Ly1/v;
+    .locals 2
 
     .line 1
-    new-array p1, p1, [Lcom/google/android/gms/common/zzq;
+    new-instance v0, Ly1/v;
 
-    return-object p1
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1, p0, p1}, Ly1/v;-><init>(ZLjava/lang/String;Ljava/lang/Throwable;)V
+
+    return-object v0
+.end method
+
+.method public static d(Ljava/util/concurrent/Callable;)Ly1/v;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/concurrent/Callable<",
+            "Ljava/lang/String;",
+            ">;)",
+            "Ly1/v;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ly1/w;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Ly1/w;-><init>(Ljava/util/concurrent/Callable;Lod/c;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public e()Ljava/lang/String;
+    .locals 1
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Ly1/v;->b:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final f()V
+    .locals 2
+
+    .line 1
+    iget-boolean v0, p0, Ly1/v;->a:Z
+
+    if-nez v0, :cond_1
+
+    const/4 v0, 0x3
+
+    const-string v1, "GoogleCertificatesRslt"
+
+    invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 2
+    iget-object v0, p0, Ly1/v;->c:Ljava/lang/Throwable;
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    invoke-virtual {p0}, Ly1/v;->e()Ljava/lang/String;
+
+    return-void
+
+    .line 4
+    :cond_0
+    invoke-virtual {p0}, Ly1/v;->e()Ljava/lang/String;
+
+    :cond_1
+    return-void
 .end method

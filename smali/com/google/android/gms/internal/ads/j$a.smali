@@ -17,13 +17,13 @@
 # instance fields
 .field public a:Landroid/content/Context;
 
-.field public b:Lj3/pg0;
+.field public b:Lj3/wg0;
 
 .field public c:Landroid/os/Bundle;
 
 .field public d:Ljava/lang/String;
 
-.field public e:Lj3/mg0;
+.field public e:Lj3/tg0;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/google/android/gms/internal/ads/j;-><init>(Lcom/google/android/gms/internal/ads/j$a;Lj3/zb;)V
+    invoke-direct {v0, p0, v1}, Lcom/google/android/gms/internal/ads/j;-><init>(Lcom/google/android/gms/internal/ads/j$a;Lj3/dc;)V
 
     return-object v0
 .end method

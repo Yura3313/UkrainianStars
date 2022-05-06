@@ -1,135 +1,91 @@
-.class public final Lj3/o60;
+.class public final synthetic Lj3/o60;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/e40;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lj3/e40<",
-        "Lj3/ug0;",
-        "Lcom/google/android/gms/internal/ads/zzcsn;",
-        ">;"
-    }
-.end annotation
+.implements Lj3/bv;
 
 
 # instance fields
-.field public final a:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Lj3/f40<",
-            "Lj3/ug0;",
-            "Lcom/google/android/gms/internal/ads/zzcsn;",
-            ">;>;"
-        }
-    .end annotation
-
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "this"
-    .end annotation
-.end field
-
-.field public final b:Lj3/yz;
+.field public final a:Lj3/j40;
 
 
 # direct methods
-.method public constructor <init>(Lj3/yz;)V
-    .locals 1
+.method public constructor <init>(Lj3/j40;)V
+    .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Lj3/o60;->a:Ljava/util/Map;
-
-    .line 3
-    iput-object p1, p0, Lj3/o60;->b:Lj3/yz;
+    iput-object p1, p0, Lj3/o60;->a:Lj3/j40;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;Lorg/json/JSONObject;)Lj3/f40;
+.method public final a(ZLandroid/content/Context;)V
     .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Lorg/json/JSONObject;",
-            ")",
-            "Lj3/f40<",
-            "Lj3/ug0;",
-            "Lcom/google/android/gms/internal/ads/zzcsn;",
-            ">;"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/android/gms/internal/ads/zzdlr;
-        }
-    .end annotation
 
     .line 1
-    monitor-enter p0
+    iget-object v0, p0, Lj3/o60;->a:Lj3/j40;
 
     .line 2
     :try_start_0
-    iget-object v0, p0, Lj3/o60;->a:Ljava/util/Map;
+    iget-object v1, v0, Lj3/j40;->b:Ljava/lang/Object;
 
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast v1, Lj3/bh0;
 
-    move-result-object v0
-
-    check-cast v0, Lj3/f40;
-
-    if-nez v0, :cond_0
+    invoke-virtual {v1, p1}, Lj3/bh0;->b(Z)V
 
     .line 3
-    iget-object v0, p0, Lj3/o60;->b:Lj3/yz;
+    iget-object p1, v0, Lj3/j40;->b:Ljava/lang/Object;
 
-    invoke-virtual {v0, p1, p2}, Lj3/yz;->a(Ljava/lang/String;Lorg/json/JSONObject;)Lj3/ug0;
+    check-cast p1, Lj3/bh0;
 
-    move-result-object p2
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :try_end_0
+    .catch Lcom/google/android/gms/internal/ads/zzdlr; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 4
-    new-instance v0, Lj3/f40;
-
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzcsn;
-
-    invoke-direct {v1}, Lcom/google/android/gms/internal/ads/zzcsn;-><init>()V
-
-    invoke-direct {v0, p2, v1, p1}, Lj3/f40;-><init>(Ljava/lang/Object;Lj3/lr;Ljava/lang/String;)V
+    :try_start_1
+    iget-object p1, p1, Lj3/bh0;->a:Lcom/google/android/gms/internal/ads/zzamv;
 
     .line 5
-    iget-object p2, p0, Lj3/o60;->a:Ljava/util/Map;
+    new-instance v0, Lcom/google/android/gms/dynamic/ObjectWrapper;
 
-    invoke-interface {p2, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-direct {v0, p2}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
 
     .line 6
-    :cond_0
-    monitor-exit p0
+    invoke-interface {p1, v0}, Lcom/google/android/gms/internal/ads/zzamv;->R6(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    return-object v0
+    return-void
 
     :catchall_0
     move-exception p1
 
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .line 7
+    :try_start_2
+    new-instance p2, Lcom/google/android/gms/internal/ads/zzdlr;
 
-    throw p1
+    invoke-direct {p2, p1}, Lcom/google/android/gms/internal/ads/zzdlr;-><init>(Ljava/lang/Throwable;)V
+
+    throw p2
+    :try_end_2
+    .catch Lcom/google/android/gms/internal/ads/zzdlr; {:try_start_2 .. :try_end_2} :catch_0
+
+    :catch_0
+    move-exception p1
+
+    .line 8
+    new-instance p2, Lcom/google/android/gms/internal/ads/zzcbc;
+
+    invoke-virtual {p1}, Ljava/lang/Exception;->getCause()Ljava/lang/Throwable;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Lcom/google/android/gms/internal/ads/zzcbc;-><init>(Ljava/lang/Throwable;)V
+
+    throw p2
 .end method

@@ -1,5 +1,5 @@
 .class public Landroidx/appcompat/widget/y$c;
-.super Lm/f;
+.super Lm/e;
 .source "ResourceManagerInternal.java"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lm/f<",
+        "Lm/e<",
         "Ljava/lang/Integer;",
         "Landroid/graphics/PorterDuffColorFilter;",
         ">;"
@@ -28,7 +28,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lm/f;-><init>(I)V
+    invoke-direct {p0, p1}, Lm/e;-><init>(I)V
 
     return-void
 .end method

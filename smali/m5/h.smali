@@ -14,31 +14,31 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lm5/h;
+.field public static final enum i:Lm5/h;
 
-.field public static final enum BOOLEAN:Lm5/h;
+.field public static final enum j:Lm5/h;
 
-.field public static final enum BYTE_STRING:Lm5/h;
+.field public static final enum k:Lm5/h;
 
-.field public static final enum DOUBLE:Lm5/h;
+.field public static final enum l:Lm5/h;
 
-.field public static final enum ENUM:Lm5/h;
+.field public static final enum m:Lm5/h;
 
-.field public static final enum FLOAT:Lm5/h;
+.field public static final enum n:Lm5/h;
 
-.field public static final enum INT:Lm5/h;
+.field public static final enum o:Lm5/h;
 
-.field public static final enum LONG:Lm5/h;
+.field public static final enum p:Lm5/h;
 
-.field public static final enum MESSAGE:Lm5/h;
+.field public static final enum q:Lm5/h;
 
-.field public static final enum STRING:Lm5/h;
+.field public static final enum r:Lm5/h;
 
-.field public static final enum VOID:Lm5/h;
+.field public static final synthetic s:[Lm5/h;
 
 
 # instance fields
-.field private final boxedType:Ljava/lang/Class;
+.field public final g:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -47,16 +47,7 @@
     .end annotation
 .end field
 
-.field private final defaultDefault:Ljava/lang/Object;
-
-.field private final type:Ljava/lang/Class;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/Class<",
-            "*>;"
-        }
-    .end annotation
-.end field
+.field public final h:Ljava/lang/Object;
 
 
 # direct methods
@@ -80,7 +71,7 @@
 
     invoke-direct/range {v0 .. v5}, Lm5/h;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v6, Lm5/h;->VOID:Lm5/h;
+    sput-object v6, Lm5/h;->i:Lm5/h;
 
     .line 2
     new-instance v0, Lm5/h;
@@ -103,7 +94,7 @@
 
     invoke-direct/range {v7 .. v12}, Lm5/h;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v0, Lm5/h;->INT:Lm5/h;
+    sput-object v0, Lm5/h;->j:Lm5/h;
 
     .line 3
     new-instance v3, Lm5/h;
@@ -126,7 +117,7 @@
 
     invoke-direct/range {v13 .. v18}, Lm5/h;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v3, Lm5/h;->LONG:Lm5/h;
+    sput-object v3, Lm5/h;->k:Lm5/h;
 
     .line 4
     new-instance v4, Lm5/h;
@@ -149,7 +140,7 @@
 
     invoke-direct/range {v7 .. v12}, Lm5/h;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v4, Lm5/h;->FLOAT:Lm5/h;
+    sput-object v4, Lm5/h;->l:Lm5/h;
 
     .line 5
     new-instance v5, Lm5/h;
@@ -172,7 +163,7 @@
 
     invoke-direct/range {v13 .. v18}, Lm5/h;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v5, Lm5/h;->DOUBLE:Lm5/h;
+    sput-object v5, Lm5/h;->m:Lm5/h;
 
     .line 6
     new-instance v13, Lm5/h;
@@ -191,7 +182,7 @@
 
     invoke-direct/range {v7 .. v12}, Lm5/h;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v13, Lm5/h;->BOOLEAN:Lm5/h;
+    sput-object v13, Lm5/h;->n:Lm5/h;
 
     .line 7
     new-instance v20, Lm5/h;
@@ -210,7 +201,7 @@
 
     invoke-direct/range {v14 .. v19}, Lm5/h;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v20, Lm5/h;->STRING:Lm5/h;
+    sput-object v20, Lm5/h;->o:Lm5/h;
 
     .line 8
     new-instance v14, Lm5/h;
@@ -219,7 +210,7 @@
 
     const-class v11, Lm5/c;
 
-    sget-object v12, Lm5/c;->b:Lm5/c;
+    sget-object v12, Lm5/c;->h:Lm5/c;
 
     const-string v8, "BYTE_STRING"
 
@@ -229,7 +220,7 @@
 
     invoke-direct/range {v7 .. v12}, Lm5/h;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v14, Lm5/h;->BYTE_STRING:Lm5/h;
+    sput-object v14, Lm5/h;->p:Lm5/h;
 
     .line 9
     new-instance v15, Lm5/h;
@@ -248,7 +239,7 @@
 
     invoke-direct/range {v7 .. v12}, Lm5/h;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v15, Lm5/h;->ENUM:Lm5/h;
+    sput-object v15, Lm5/h;->q:Lm5/h;
 
     .line 10
     new-instance v1, Lm5/h;
@@ -267,7 +258,7 @@
 
     invoke-direct/range {v21 .. v26}, Lm5/h;-><init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    sput-object v1, Lm5/h;->MESSAGE:Lm5/h;
+    sput-object v1, Lm5/h;->r:Lm5/h;
 
     const/16 v7, 0xa
 
@@ -312,12 +303,12 @@
     aput-object v1, v7, v0
 
     .line 11
-    sput-object v7, Lm5/h;->$VALUES:[Lm5/h;
+    sput-object v7, Lm5/h;->s:[Lm5/h;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
+.method public constructor <init>(Ljava/lang/String;ILjava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -335,13 +326,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput-object p3, p0, Lm5/h;->type:Ljava/lang/Class;
+    iput-object p4, p0, Lm5/h;->g:Ljava/lang/Class;
 
     .line 3
-    iput-object p4, p0, Lm5/h;->boxedType:Ljava/lang/Class;
-
-    .line 4
-    iput-object p5, p0, Lm5/h;->defaultDefault:Ljava/lang/Object;
+    iput-object p5, p0, Lm5/h;->h:Ljava/lang/Object;
 
     return-void
 .end method
@@ -365,7 +353,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lm5/h;->$VALUES:[Lm5/h;
+    sget-object v0, Lm5/h;->s:[Lm5/h;
 
     invoke-virtual {v0}, [Lm5/h;->clone()Ljava/lang/Object;
 
@@ -374,67 +362,4 @@
     check-cast v0, [Lm5/h;
 
     return-object v0
-.end method
-
-
-# virtual methods
-.method public getBoxedType()Ljava/lang/Class;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/lang/Class<",
-            "*>;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lm5/h;->boxedType:Ljava/lang/Class;
-
-    return-object v0
-.end method
-
-.method public getDefaultDefault()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lm5/h;->defaultDefault:Ljava/lang/Object;
-
-    return-object v0
-.end method
-
-.method public getType()Ljava/lang/Class;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/lang/Class<",
-            "*>;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lm5/h;->type:Ljava/lang/Class;
-
-    return-object v0
-.end method
-
-.method public isValidType(Ljava/lang/Class;)Z
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Class<",
-            "*>;)Z"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lm5/h;->type:Ljava/lang/Class;
-
-    invoke-virtual {v0, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
-
-    move-result p1
-
-    return p1
 .end method

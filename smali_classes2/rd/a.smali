@@ -1,428 +1,94 @@
 .class public final Lrd/a;
-.super Luc/d;
-.source "EditNicknameDialogFragment.kt"
+.super Lle/j;
+.source "TokenLoginConfirmPageFragment.kt"
+
+# interfaces
+.implements Lke/p;
 
 
-# instance fields
-.field public v0:Lke/q;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lke/q<",
-            "-",
-            "Lrd/a;",
-            "-",
-            "Luc/r;",
-            "-",
-            "Ljava/lang/String;",
-            "Lbe/n;",
-            ">;"
-        }
-    .end annotation
-.end field
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lle/j;",
+        "Lke/p<",
+        "Lrd/e;",
+        "Ljava/lang/String;",
+        "Lae/i;",
+        ">;"
+    }
+.end annotation
 
-.field public w0:Ljava/util/HashMap;
+
+# static fields
+.field public static final g:Lrd/a;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    .line 1
-    invoke-direct {p0}, Luc/d;-><init>()V
+    new-instance v0, Lrd/a;
+
+    invoke-direct {v0}, Lrd/a;-><init>()V
+
+    sput-object v0, Lrd/a;->g:Lrd/a;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public d1()V
+.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-
-    iget-object v0, p0, Lrd/a;->w0:Ljava/util/HashMap;
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public g0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 1
-
-    if-eqz p1, :cond_0
 
     .line 1
-    sget p3, Lcom/supercell/id/R$layout;->fragment_edit_nickname_dialog:I
+    check-cast p1, Lrd/e;
+
+    check-cast p2, Ljava/lang/String;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    if-eqz p1, :cond_2
+
+    if-eqz p2, :cond_1
+
+    .line 2
+    invoke-virtual {p1}, Lrd/f;->f1()Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
 
     move-result-object p1
 
-    return-object p1
+    if-eqz p1, :cond_0
 
-    :cond_0
-    const-string p1, "inflater"
-
-    .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public h1(I)Landroid/view/View;
-    .locals 2
-
-    iget-object v0, p0, Lrd/a;->w0:Ljava/util/HashMap;
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Lrd/a;->w0:Ljava/util/HashMap;
-
-    :cond_0
-    iget-object v0, p0, Lrd/a;->w0:Ljava/util/HashMap;
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/view/View;
-
-    if-nez v0, :cond_2
-
-    .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
-
-    if-nez v0, :cond_1
-
-    const/4 p1, 0x0
-
-    return-object p1
-
-    .line 2
-    :cond_1
-    invoke-virtual {v0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lrd/a;->w0:Ljava/util/HashMap;
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p1
-
-    invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    :cond_2
-    return-object v0
-.end method
-
-.method public i0()V
-    .locals 1
-
-    invoke-super {p0}, Luc/d;->i0()V
-
-    .line 1
-    iget-object v0, p0, Lrd/a;->w0:Ljava/util/HashMap;
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public s0(Landroid/view/View;Landroid/os/Bundle;)V
-    .locals 8
-
-    const/4 p2, 0x0
-
-    if-eqz p1, :cond_5
-
-    .line 1
-    sget-object p1, Lwd/a1;->b:Lwd/a1;
-
-    .line 2
-    sget-object v0, Lwd/a1;->a:Ljava/lang/Integer;
-
-    const/4 v1, 0x0
-
-    const-string v2, "nickname_edit_text"
-
-    const/4 v3, 0x1
-
-    if-eqz v0, :cond_0
+    invoke-virtual {p1}, Lcom/supercell/id/ui/FlowFragment;->s1()V
 
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
-
-    move-result v0
-
-    .line 4
-    sget v4, Lcom/supercell/id/R$id;->nickname_edit_text:I
-
-    invoke-virtual {p0, v4}, Lrd/a;->h1(I)Landroid/view/View;
-
-    move-result-object v4
-
-    check-cast v4, Landroid/widget/EditText;
-
-    invoke-static {v4, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v4}, Landroid/widget/EditText;->getFilters()[Landroid/text/InputFilter;
-
-    move-result-object v5
-
-    new-array v6, v3, [Landroid/text/InputFilter$LengthFilter;
-
-    new-instance v7, Landroid/text/InputFilter$LengthFilter;
-
-    invoke-direct {v7, v0}, Landroid/text/InputFilter$LengthFilter;-><init>(I)V
-
-    aput-object v7, v6, v1
-
-    invoke-static {v5, v6}, Lce/g;->n([Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, [Landroid/text/InputFilter;
-
-    invoke-virtual {v4, v0}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
-
-    .line 5
     :cond_0
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    sget-object p1, Lae/i;->a:Lae/i;
 
-    if-eqz v0, :cond_1
-
-    const-string p2, "currentNicknameKey"
-
-    .line 6
-    invoke-virtual {v0, p2}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p2
+    return-object p1
 
     :cond_1
-    if-eqz p2, :cond_2
+    const-string p1, "it"
 
-    .line 7
-    sget v0, Lcom/supercell/id/R$id;->nickname_edit_text:I
+    .line 4
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v0}, Lrd/a;->h1(I)Landroid/view/View;
+    throw v0
 
-    move-result-object v4
-
-    check-cast v4, Landroid/widget/EditText;
-
-    invoke-virtual {v4, p2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
-
-    .line 8
-    invoke-virtual {p0, v0}, Lrd/a;->h1(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/EditText;
-
-    invoke-virtual {p2}, Ljava/lang/String;->length()I
-
-    move-result v4
-
-    invoke-virtual {v0, v4}, Landroid/widget/EditText;->setSelection(I)V
-
-    .line 9
     :cond_2
-    sget v0, Lcom/supercell/id/R$id;->cancel_button:I
+    const-string p1, "$receiver"
 
-    invoke-virtual {p0, v0}, Lrd/a;->h1(I)Landroid/view/View;
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    move-result-object v0
-
-    check-cast v0, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
-
-    new-instance v4, Lrd/a$a;
-
-    invoke-direct {v4, p0}, Lrd/a$a;-><init>(Lrd/a;)V
-
-    invoke-virtual {v0, v4}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 10
-    sget v0, Lcom/supercell/id/R$id;->nickname_edit_text:I
-
-    invoke-virtual {p0, v0}, Lrd/a;->h1(I)Landroid/view/View;
-
-    move-result-object v4
-
-    check-cast v4, Landroid/widget/EditText;
-
-    invoke-static {v4, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v4}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 11
-    sget v4, Lcom/supercell/id/R$id;->continue_button:I
-
-    invoke-virtual {p0, v4}, Lrd/a;->h1(I)Landroid/view/View;
-
-    move-result-object v5
-
-    check-cast v5, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
-
-    const-string v6, "continue_button"
-
-    invoke-static {v5, v6}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v2, p2}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v6
-
-    if-nez v6, :cond_3
-
-    invoke-virtual {p1, v2}, Lwd/a1;->c(Ljava/lang/String;)Lcom/supercell/id/api/ApiError;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_4
-
-    :cond_3
-    const/4 v1, 0x1
-
-    :cond_4
-    invoke-static {v5, v1}, Lwd/f2;->l(Landroidx/appcompat/widget/AppCompatButton;Z)V
-
-    .line 12
-    invoke-virtual {p0, v4}, Lrd/a;->h1(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
-
-    new-instance v1, Lrd/a$b;
-
-    invoke-direct {v1, p0, p2}, Lrd/a$b;-><init>(Lrd/a;Ljava/lang/String;)V
-
-    invoke-virtual {p1, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 13
-    invoke-virtual {p0, v0}, Lrd/a;->h1(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/widget/EditText;
-
-    new-instance v0, Lrd/a$c;
-
-    invoke-direct {v0, p0, p2}, Lrd/a$c;-><init>(Lrd/a;Ljava/lang/String;)V
-
-    invoke-virtual {p1, v0}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
-
-    .line 14
-    sget p1, Lcom/supercell/id/R$id;->dialog_container:I
-
-    invoke-virtual {p0, p1}, Lrd/a;->h1(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/widget/LinearLayout;
-
-    const-string p2, "it"
-
-    .line 15
-    invoke-static {p1, p2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const p2, 0x3f4ccccd    # 0.8f
-
-    invoke-virtual {p1, p2}, Landroid/widget/LinearLayout;->setScaleX(F)V
-
-    .line 16
-    invoke-virtual {p1, p2}, Landroid/widget/LinearLayout;->setScaleY(F)V
-
-    .line 17
-    new-instance p2, Ll0/d;
-
-    sget-object v0, Ll0/b;->k:Ll0/b$k;
-
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    invoke-direct {p2, p1, v0, v1}, Ll0/d;-><init>(Ljava/lang/Object;Ll0/c;F)V
-
-    .line 18
-    iget-object v0, p2, Ll0/d;->q:Ll0/e;
-
-    const-string v2, "spring"
-
-    .line 19
-    invoke-static {v0, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const v3, 0x3e99999a    # 0.3f
-
-    invoke-virtual {v0, v3}, Ll0/e;->a(F)Ll0/e;
-
-    .line 20
-    iget-object v0, p2, Ll0/d;->q:Ll0/e;
-
-    .line 21
-    invoke-static {v0, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/high16 v4, 0x43c80000    # 400.0f
-
-    invoke-virtual {v0, v4}, Ll0/e;->b(F)Ll0/e;
-
-    .line 22
-    invoke-virtual {p2}, Ll0/d;->e()V
-
-    .line 23
-    new-instance p2, Ll0/d;
-
-    sget-object v0, Ll0/b;->l:Ll0/b$k;
-
-    invoke-direct {p2, p1, v0, v1}, Ll0/d;-><init>(Ljava/lang/Object;Ll0/c;F)V
-
-    .line 24
-    iget-object p1, p2, Ll0/d;->q:Ll0/e;
-
-    .line 25
-    invoke-static {p1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p1, v3}, Ll0/e;->a(F)Ll0/e;
-
-    .line 26
-    iget-object p1, p2, Ll0/d;->q:Ll0/e;
-
-    .line 27
-    invoke-static {p1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p1, v4}, Ll0/e;->b(F)Ll0/e;
-
-    .line 28
-    invoke-virtual {p2}, Ll0/d;->e()V
-
-    return-void
-
-    :cond_5
-    const-string p1, "view"
-
-    .line 29
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw p2
+    throw v0
 .end method

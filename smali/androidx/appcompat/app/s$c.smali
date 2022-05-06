@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public a:Z
+.field public g:Z
 
-.field public final synthetic b:Landroidx/appcompat/app/s;
+.field public final synthetic h:Landroidx/appcompat/app/s;
 
 
 # direct methods
@@ -28,7 +28,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/app/s$c;->b:Landroidx/appcompat/app/s;
+    iput-object p1, p0, Landroidx/appcompat/app/s$c;->h:Landroidx/appcompat/app/s;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,7 +41,7 @@
     .locals 1
 
     .line 1
-    iget-boolean p2, p0, Landroidx/appcompat/app/s$c;->a:Z
+    iget-boolean p2, p0, Landroidx/appcompat/app/s$c;->g:Z
 
     if-eqz p2, :cond_0
 
@@ -51,17 +51,17 @@
     const/4 p2, 0x1
 
     .line 2
-    iput-boolean p2, p0, Landroidx/appcompat/app/s$c;->a:Z
+    iput-boolean p2, p0, Landroidx/appcompat/app/s$c;->g:Z
 
     .line 3
-    iget-object p2, p0, Landroidx/appcompat/app/s$c;->b:Landroidx/appcompat/app/s;
+    iget-object p2, p0, Landroidx/appcompat/app/s$c;->h:Landroidx/appcompat/app/s;
 
     iget-object p2, p2, Landroidx/appcompat/app/s;->a:Landroidx/appcompat/widget/q;
 
     invoke-interface {p2}, Landroidx/appcompat/widget/q;->h()V
 
     .line 4
-    iget-object p2, p0, Landroidx/appcompat/app/s$c;->b:Landroidx/appcompat/app/s;
+    iget-object p2, p0, Landroidx/appcompat/app/s$c;->h:Landroidx/appcompat/app/s;
 
     iget-object p2, p2, Landroidx/appcompat/app/s;->c:Landroid/view/Window$Callback;
 
@@ -76,7 +76,7 @@
     const/4 p1, 0x0
 
     .line 6
-    iput-boolean p1, p0, Landroidx/appcompat/app/s$c;->a:Z
+    iput-boolean p1, p0, Landroidx/appcompat/app/s$c;->g:Z
 
     return-void
 .end method
@@ -85,7 +85,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/s$c;->b:Landroidx/appcompat/app/s;
+    iget-object v0, p0, Landroidx/appcompat/app/s$c;->h:Landroidx/appcompat/app/s;
 
     iget-object v0, v0, Landroidx/appcompat/app/s;->c:Landroid/view/Window$Callback;
 

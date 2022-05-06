@@ -20,7 +20,7 @@
     const-string p0, "$this$project"
 
     .line 2
-    invoke-static {p0}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p0, 0x0
 

@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final a:Lpe/d;
-
-.field public final b:Ljava/lang/String;
+.field public final g:Lpe/d;
 
 .field public final h:Ljava/lang/String;
+
+.field public final i:Ljava/lang/String;
 
 
 # direct methods
@@ -19,13 +19,13 @@
     invoke-direct {p0}, Lle/n;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lle/o;->a:Lpe/d;
+    iput-object p1, p0, Lle/o;->g:Lpe/d;
 
     .line 3
-    iput-object p2, p0, Lle/o;->b:Ljava/lang/String;
+    iput-object p2, p0, Lle/o;->h:Ljava/lang/String;
 
     .line 4
-    iput-object p3, p0, Lle/o;->h:Ljava/lang/String;
+    iput-object p3, p0, Lle/o;->i:Ljava/lang/String;
 
     return-void
 .end method
@@ -36,7 +36,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lle/o;->b:Ljava/lang/String;
+    iget-object v0, p0, Lle/o;->h:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -45,7 +45,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lle/o;->a:Lpe/d;
+    iget-object v0, p0, Lle/o;->g:Lpe/d;
 
     return-object v0
 .end method
@@ -54,7 +54,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lle/o;->h:Ljava/lang/String;
+    iget-object v0, p0, Lle/o;->i:Ljava/lang/String;
 
     return-object v0
 .end method

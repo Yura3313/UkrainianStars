@@ -49,11 +49,11 @@
     .line 2
     new-instance v0, Lp5/g;
 
-    invoke-virtual {p1}, Ll5/t;->u()Lm5/c;
+    invoke-virtual {p1}, Ll5/t;->t()Lm5/c;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lm5/c;->n()[B
+    invoke-virtual {p1}, Lm5/c;->m()[B
 
     move-result-object p1
 

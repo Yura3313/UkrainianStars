@@ -4,11 +4,20 @@
 
 
 # virtual methods
-.method public abstract N(Lcom/google/android/gms/internal/ads/zzcbc;)V
+.method public abstract A()V
 .end method
 
-.method public abstract n0(Lcom/google/android/gms/internal/ads/zzuw;)V
+.method public abstract D()V
 .end method
 
-.method public abstract v()V
+.method public abstract P()V
+.end method
+
+.method public abstract d(Lcom/google/android/gms/internal/ads/zzatj;Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract f0()V
+.end method
+
+.method public abstract h0()V
 .end method

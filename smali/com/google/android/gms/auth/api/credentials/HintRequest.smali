@@ -19,21 +19,21 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final b:Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
-
-.field public final h:Z
+.field public final h:Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
 
 .field public final i:Z
 
-.field public final j:[Ljava/lang/String;
+.field public final j:Z
 
-.field public final k:Z
+.field public final k:[Ljava/lang/String;
 
-.field public final l:Ljava/lang/String;
+.field public final l:Z
 
 .field public final m:Ljava/lang/String;
+
+.field public final n:Ljava/lang/String;
 
 
 # direct methods
@@ -41,9 +41,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lt1/e;
+    new-instance v0, Lt1/d;
 
-    invoke-direct {v0}, Lt1/e;-><init>()V
+    invoke-direct {v0}, Lt1/d;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -57,25 +57,25 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->a:I
+    iput p1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->g:I
 
     const-string v0, "null reference"
 
     if-eqz p2, :cond_2
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->b:Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+    iput-object p2, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->h:Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
 
     .line 4
-    iput-boolean p3, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->h:Z
+    iput-boolean p3, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->i:Z
 
     .line 5
-    iput-boolean p4, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->i:Z
+    iput-boolean p4, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->j:Z
 
     if-eqz p5, :cond_1
 
     .line 6
-    iput-object p5, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->j:[Ljava/lang/String;
+    iput-object p5, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->k:[Ljava/lang/String;
 
     const/4 p2, 0x2
 
@@ -84,27 +84,27 @@
     const/4 p1, 0x1
 
     .line 7
-    iput-boolean p1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->k:Z
+    iput-boolean p1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->l:Z
 
     const/4 p1, 0x0
 
     .line 8
-    iput-object p1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->l:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->m:Ljava/lang/String;
 
     .line 9
-    iput-object p1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->m:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->n:Ljava/lang/String;
 
     return-void
 
     .line 10
     :cond_0
-    iput-boolean p6, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->k:Z
+    iput-boolean p6, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->l:Z
 
     .line 11
-    iput-object p7, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->l:Ljava/lang/String;
+    iput-object p7, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->m:Ljava/lang/String;
 
     .line 12
-    iput-object p8, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->m:Ljava/lang/String;
+    iput-object p8, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->n:Ljava/lang/String;
 
     return-void
 
@@ -140,7 +140,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->b:Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+    iget-object v2, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->h:Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
 
     const/4 v3, 0x0
 
@@ -150,7 +150,7 @@
     const/4 p2, 0x2
 
     .line 4
-    iget-boolean v1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->h:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->i:Z
 
     const/4 v2, 0x4
 
@@ -163,7 +163,7 @@
     const/4 p2, 0x3
 
     .line 7
-    iget-boolean v1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->i:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->j:Z
 
     .line 8
     invoke-static {p1, p2, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -172,7 +172,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 10
-    iget-object p2, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->j:[Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->k:[Ljava/lang/String;
 
     .line 11
     invoke-static {p1, v2, p2, v3}, Ld2/b;->n(Landroid/os/Parcel;I[Ljava/lang/String;Z)V
@@ -180,7 +180,7 @@
     const/4 p2, 0x5
 
     .line 12
-    iget-boolean v1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->k:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->l:Z
 
     .line 13
     invoke-static {p1, p2, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -191,7 +191,7 @@
     const/4 p2, 0x6
 
     .line 15
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->l:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->m:Ljava/lang/String;
 
     .line 16
     invoke-static {p1, p2, v1, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
@@ -199,7 +199,7 @@
     const/4 p2, 0x7
 
     .line 17
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->m:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->n:Ljava/lang/String;
 
     .line 18
     invoke-static {p1, p2, v1, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
@@ -207,7 +207,7 @@
     const/16 p2, 0x3e8
 
     .line 19
-    iget v1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->a:I
+    iget v1, p0, Lcom/google/android/gms/auth/api/credentials/HintRequest;->g:I
 
     .line 20
     invoke-static {p1, p2, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V

@@ -3,9 +3,9 @@
 .source "Job.kt"
 
 # interfaces
-.implements Lse/d1;
+.implements Lse/b1;
 
 
 # virtual methods
-.method public abstract p(Lse/n1;)V
+.method public abstract p(Lse/m1;)V
 .end method

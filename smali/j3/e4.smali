@@ -1,56 +1,68 @@
 .class public final Lj3/e4;
-.super Ljava/lang/Object;
+.super Lj3/zi;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Lj3/od;
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
+.field public final synthetic d:Lj3/z3;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lj3/g4;Lf0/h;)V
+.method public constructor <init>(Lj3/z3;Lj3/lc;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lj3/e4;->a:Ljava/lang/Object;
+    iput-object p1, p0, Lj3/e4;->d:Lj3/z3;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(Ljava/lang/Object;)V
-    .locals 0
-
-    .line 2
-    iput-object p1, p0, Lj3/e4;->a:Ljava/lang/Object;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lj3/zi;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 3
+.method public final p(Lj3/yi;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lj3/e4;->a:Ljava/lang/Object;
-
-    check-cast v0, Lj3/md;
+    iget-object p1, p0, Lj3/e4;->d:Lj3/z3;
 
     .line 2
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzalj;
+    iget-object p1, p1, Lj3/z3;->j:Lj3/w4;
 
-    const-string v2, "Cannot get Javascript Engine"
+    if-eqz p1, :cond_0
 
-    invoke-direct {v1, v2}, Lcom/google/android/gms/internal/ads/zzalj;-><init>(Ljava/lang/String;)V
+    .line 3
+    invoke-virtual {p1}, Lj3/w4;->b()V
 
-    invoke-virtual {v0, v1}, Lj3/md;->c(Ljava/lang/Throwable;)Z
+    :cond_0
+    return-void
+.end method
+
+.method public final q(Lj3/yi;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/e4;->d:Lj3/z3;
+
+    iget-object p1, p1, Lj3/yi;->b:Landroid/net/Uri;
+
+    invoke-virtual {v0, p1}, Lj3/j4;->k(Landroid/net/Uri;)Z
 
     return-void
+.end method
+
+.method public final r(Lj3/yi;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/e4;->d:Lj3/z3;
+
+    iget-object p1, p1, Lj3/yi;->b:Landroid/net/Uri;
+
+    invoke-virtual {v0, p1}, Lj3/j4;->k(Landroid/net/Uri;)Z
+
+    move-result p1
+
+    return p1
 .end method

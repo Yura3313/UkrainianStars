@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/drive/DriveId;
+.field public final g:Lcom/google/android/gms/drive/DriveId;
 
-.field public final b:Ljava/lang/String;
-
-.field public final h:Landroid/os/ParcelFileDescriptor;
+.field public final h:Ljava/lang/String;
 
 .field public final i:Landroid/os/ParcelFileDescriptor;
 
-.field public final j:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+.field public final j:Landroid/os/ParcelFileDescriptor;
 
-.field public final k:Ljava/util/List;
+.field public final k:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+
+.field public final l:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -38,9 +38,9 @@
     .end annotation
 .end field
 
-.field public final l:I
+.field public final m:I
 
-.field public final m:Landroid/os/IBinder;
+.field public final n:Landroid/os/IBinder;
 
 
 # direct methods
@@ -88,28 +88,28 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->a:Lcom/google/android/gms/drive/DriveId;
+    iput-object p1, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->g:Lcom/google/android/gms/drive/DriveId;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->h:Ljava/lang/String;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->h:Landroid/os/ParcelFileDescriptor;
+    iput-object p3, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->i:Landroid/os/ParcelFileDescriptor;
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->i:Landroid/os/ParcelFileDescriptor;
+    iput-object p4, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->j:Landroid/os/ParcelFileDescriptor;
 
     .line 6
-    iput-object p5, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->j:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+    iput-object p5, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->k:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
     .line 7
-    iput-object p6, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->k:Ljava/util/List;
+    iput-object p6, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->l:Ljava/util/List;
 
     .line 8
-    iput p7, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->l:I
+    iput p7, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->m:I
 
     .line 9
-    iput-object p8, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->m:Landroid/os/IBinder;
+    iput-object p8, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->n:Landroid/os/IBinder;
 
     return-void
 .end method
@@ -128,7 +128,7 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->k:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->l:Ljava/util/List;
 
     const/4 v1, 0x2
 
@@ -145,7 +145,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Ly/b;->a(Ljava/lang/String;I)I
+    invoke-static {v0, v1}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v2
 
@@ -165,13 +165,13 @@
 
     const/4 v4, 0x0
 
-    iget-object v5, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->a:Lcom/google/android/gms/drive/DriveId;
+    iget-object v5, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->g:Lcom/google/android/gms/drive/DriveId;
 
     aput-object v5, v3, v4
 
     const/4 v4, 0x1
 
-    iget v5, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->l:I
+    iget v5, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->m:I
 
     .line 3
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -207,7 +207,7 @@
     const/4 v1, 0x2
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->a:Lcom/google/android/gms/drive/DriveId;
+    iget-object v2, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->g:Lcom/google/android/gms/drive/DriveId;
 
     const/4 v3, 0x0
 
@@ -216,12 +216,12 @@
     const/4 v1, 0x3
 
     .line 3
-    iget-object v2, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->h:Ljava/lang/String;
 
     invoke-static {p1, v1, v2, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->h:Landroid/os/ParcelFileDescriptor;
+    iget-object v1, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->i:Landroid/os/ParcelFileDescriptor;
 
     const/4 v2, 0x4
 
@@ -230,28 +230,28 @@
     const/4 v1, 0x5
 
     .line 5
-    iget-object v4, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->i:Landroid/os/ParcelFileDescriptor;
+    iget-object v4, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->j:Landroid/os/ParcelFileDescriptor;
 
     invoke-static {p1, v1, v4, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     const/4 v1, 0x6
 
     .line 6
-    iget-object v4, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->j:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+    iget-object v4, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->k:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
     invoke-static {p1, v1, v4, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     const/4 p2, 0x7
 
     .line 7
-    iget-object v1, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->k:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->l:Ljava/util/List;
 
     invoke-static {p1, p2, v1, v3}, Ld2/b;->o(Landroid/os/Parcel;ILjava/util/List;Z)V
 
     const/16 p2, 0x8
 
     .line 8
-    iget v1, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->l:I
+    iget v1, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->m:I
 
     .line 9
     invoke-static {p1, p2, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -262,7 +262,7 @@
     const/16 p2, 0x9
 
     .line 11
-    iget-object v1, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->m:Landroid/os/IBinder;
+    iget-object v1, p0, Lcom/google/android/gms/drive/events/CompletionEvent;->n:Landroid/os/IBinder;
 
     invoke-static {p1, p2, v1, v3}, Ld2/b;->f(Landroid/os/Parcel;ILandroid/os/IBinder;Z)V
 

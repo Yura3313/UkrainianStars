@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public final Y1()V
+.method public final Z1()V
     .locals 1
 
     const/4 v0, 0x0

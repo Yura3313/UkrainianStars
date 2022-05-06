@@ -72,7 +72,7 @@
     if-eqz v0, :cond_1a
 
     .line 1
-    sget-object v1, Lc6/d;->PURE_BARCODE:Lc6/d;
+    sget-object v1, Lc6/d;->h:Lc6/d;
 
     invoke-interface {v0, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -86,10 +86,10 @@
     move-result-object v0
 
     .line 3
-    iget v1, v0, Lj6/b;->a:I
+    iget v1, v0, Lj6/b;->g:I
 
     .line 4
-    iget v2, v0, Lj6/b;->b:I
+    iget v2, v0, Lj6/b;->h:I
 
     const/4 v3, -0x1
 
@@ -101,7 +101,7 @@
 
     .line 5
     :goto_0
-    iget v7, v0, Lj6/b;->b:I
+    iget v7, v0, Lj6/b;->h:I
 
     const/16 v8, 0x1f
 
@@ -111,12 +111,12 @@
 
     .line 6
     :goto_1
-    iget v9, v0, Lj6/b;->h:I
+    iget v9, v0, Lj6/b;->i:I
 
     if-ge v7, v9, :cond_6
 
     .line 7
-    iget-object v10, v0, Lj6/b;->i:[I
+    iget-object v10, v0, Lj6/b;->j:[I
 
     mul-int v9, v9, v6
 
@@ -365,7 +365,7 @@
     if-ge v5, v11, :cond_10
 
     .line 20
-    sget-object v7, Lgc/a;->b:[[I
+    sget-object v7, Lj3/u6;->i:[[I
 
     aget-object v7, v7, v5
 
@@ -590,7 +590,7 @@
     const/16 v2, 0x4d
 
     .line 35
-    invoke-static {v1, v10, v2}, Lf0/h;->d([BII)Ljava/lang/String;
+    invoke-static {v1, v10, v2}, Lj3/u4;->c([BII)Ljava/lang/String;
 
     move-result-object v2
 
@@ -602,7 +602,7 @@
     const/16 v2, 0x5d
 
     .line 36
-    invoke-static {v1, v10, v2}, Lf0/h;->d([BII)Ljava/lang/String;
+    invoke-static {v1, v10, v2}, Lj3/u4;->c([BII)Ljava/lang/String;
 
     move-result-object v2
 
@@ -620,7 +620,7 @@
     .line 37
     fill-array-data v6, :array_0
 
-    invoke-static {v1, v6}, Lf0/h;->c([B[B)I
+    invoke-static {v1, v6}, Lj3/u4;->b([B[B)I
 
     move-result v6
 
@@ -632,7 +632,7 @@
     .line 39
     fill-array-data v2, :array_1
 
-    invoke-static {v1, v2}, Lf0/h;->c([B[B)I
+    invoke-static {v1, v2}, Lj3/u4;->b([B[B)I
 
     move-result v2
 
@@ -658,7 +658,7 @@
     new-array v8, v2, [C
 
     .line 42
-    sget-object v11, Lf0/h;->b:[Ljava/lang/String;
+    sget-object v11, Lj3/u4;->i:[Ljava/lang/String;
 
     aget-object v12, v11, v4
 
@@ -667,7 +667,7 @@
     fill-array-data v13, :array_2
 
     .line 43
-    invoke-static {v1, v13}, Lf0/h;->c([B[B)I
+    invoke-static {v1, v13}, Lj3/u4;->b([B[B)I
 
     move-result v13
 
@@ -684,7 +684,7 @@
     fill-array-data v13, :array_3
 
     .line 44
-    invoke-static {v1, v13}, Lf0/h;->c([B[B)I
+    invoke-static {v1, v13}, Lj3/u4;->b([B[B)I
 
     move-result v13
 
@@ -701,7 +701,7 @@
     fill-array-data v12, :array_4
 
     .line 45
-    invoke-static {v1, v12}, Lf0/h;->c([B[B)I
+    invoke-static {v1, v12}, Lj3/u4;->b([B[B)I
 
     move-result v12
 
@@ -718,7 +718,7 @@
     fill-array-data v10, :array_5
 
     .line 46
-    invoke-static {v1, v10}, Lf0/h;->c([B[B)I
+    invoke-static {v1, v10}, Lj3/u4;->b([B[B)I
 
     move-result v10
 
@@ -737,7 +737,7 @@
     fill-array-data v10, :array_6
 
     .line 47
-    invoke-static {v1, v10}, Lf0/h;->c([B[B)I
+    invoke-static {v1, v10}, Lj3/u4;->b([B[B)I
 
     move-result v10
 
@@ -756,7 +756,7 @@
     fill-array-data v2, :array_7
 
     .line 48
-    invoke-static {v1, v2}, Lf0/h;->c([B[B)I
+    invoke-static {v1, v2}, Lj3/u4;->b([B[B)I
 
     move-result v2
 
@@ -784,7 +784,7 @@
     .line 51
     fill-array-data v8, :array_8
 
-    invoke-static {v1, v8}, Lf0/h;->c([B[B)I
+    invoke-static {v1, v8}, Lj3/u4;->b([B[B)I
 
     move-result v8
 
@@ -800,7 +800,7 @@
     .line 53
     fill-array-data v9, :array_9
 
-    invoke-static {v1, v9}, Lf0/h;->c([B[B)I
+    invoke-static {v1, v9}, Lj3/u4;->b([B[B)I
 
     move-result v9
 
@@ -814,7 +814,7 @@
     const/16 v9, 0x54
 
     .line 55
-    invoke-static {v1, v7, v9}, Lf0/h;->d([BII)Ljava/lang/String;
+    invoke-static {v1, v7, v9}, Lj3/u4;->c([BII)Ljava/lang/String;
 
     move-result-object v7
 
@@ -901,14 +901,14 @@
 
     sget-object v5, Lp6/a;->b:[Lc6/l;
 
-    sget-object v6, Lc6/a;->MAXICODE:Lc6/a;
+    sget-object v6, Lc6/a;->p:Lc6/a;
 
     invoke-direct {v4, v2, v1, v5, v6}, Lc6/j;-><init>(Ljava/lang/String;[B[Lc6/l;Lc6/a;)V
 
     if-eqz v3, :cond_18
 
     .line 61
-    sget-object v1, Lc6/k;->ERROR_CORRECTION_LEVEL:Lc6/k;
+    sget-object v1, Lc6/k;->i:Lc6/k;
 
     invoke-virtual {v4, v1, v3}, Lc6/j;->b(Lc6/k;Ljava/lang/Object;)V
 
@@ -919,7 +919,7 @@
     move-object/from16 v0, p0
 
     .line 62
-    sget-object v1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 63
     throw v1
@@ -928,7 +928,7 @@
     move-object/from16 v0, p0
 
     .line 64
-    sget-object v1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 65
     goto :goto_f

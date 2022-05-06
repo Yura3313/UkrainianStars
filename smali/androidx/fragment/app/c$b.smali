@@ -1,88 +1,96 @@
 .class public Landroidx/fragment/app/c$b;
-.super Ljava/lang/Object;
+.super Landroidx/fragment/app/c$c;
 .source "DefaultSpecialEffectsController.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/fragment/app/c;->b(Ljava/util/List;Z)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/fragment/app/c;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1
-    name = null
+    accessFlags = 0x9
+    name = "b"
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Ljava/util/List;
+.field public c:Z
 
-.field public final synthetic b:Landroidx/fragment/app/u0$e;
+.field public d:Z
 
-.field public final synthetic h:Landroidx/fragment/app/c;
+.field public e:Landroidx/fragment/app/s$a;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/c;Ljava/util/List;Landroidx/fragment/app/u0$e;)V
+.method public constructor <init>(Landroidx/fragment/app/u0$d;Lb0/a;Z)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/fragment/app/c$b;->h:Landroidx/fragment/app/c;
+    invoke-direct {p0, p1, p2}, Landroidx/fragment/app/c$c;-><init>(Landroidx/fragment/app/u0$d;Lb0/a;)V
 
-    iput-object p2, p0, Landroidx/fragment/app/c$b;->a:Ljava/util/List;
+    const/4 p1, 0x0
 
-    iput-object p3, p0, Landroidx/fragment/app/c$b;->b:Landroidx/fragment/app/u0$e;
+    .line 2
+    iput-boolean p1, p0, Landroidx/fragment/app/c$b;->d:Z
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 3
+    iput-boolean p3, p0, Landroidx/fragment/app/c$b;->c:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 2
+.method public c(Landroid/content/Context;)Landroidx/fragment/app/s$a;
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/c$b;->a:Ljava/util/List;
-
-    iget-object v1, p0, Landroidx/fragment/app/c$b;->b:Landroidx/fragment/app/u0$e;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
-
-    move-result v0
+    iget-boolean v0, p0, Landroidx/fragment/app/c$b;->d:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Landroidx/fragment/app/c$b;->a:Ljava/util/List;
+    iget-object p1, p0, Landroidx/fragment/app/c$b;->e:Landroidx/fragment/app/s$a;
 
-    iget-object v1, p0, Landroidx/fragment/app/c$b;->b:Landroidx/fragment/app/u0$e;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
+    return-object p1
 
     .line 3
-    iget-object v0, p0, Landroidx/fragment/app/c$b;->h:Landroidx/fragment/app/c;
-
-    iget-object v1, p0, Landroidx/fragment/app/c$b;->b:Landroidx/fragment/app/u0$e;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :cond_0
+    iget-object v0, p0, Landroidx/fragment/app/c$c;->a:Landroidx/fragment/app/u0$d;
 
     .line 4
-    iget-object v0, v1, Landroidx/fragment/app/u0$e;->c:Landroidx/fragment/app/Fragment;
+    iget-object v1, v0, Landroidx/fragment/app/u0$d;->c:Landroidx/fragment/app/Fragment;
 
     .line 5
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, v0, Landroidx/fragment/app/u0$d;->a:Landroidx/fragment/app/u0$d$c;
 
     .line 6
-    iget-object v1, v1, Landroidx/fragment/app/u0$e;->a:Landroidx/fragment/app/u0$e$c;
+    sget-object v2, Landroidx/fragment/app/u0$d$c;->h:Landroidx/fragment/app/u0$d$c;
+
+    const/4 v3, 0x1
+
+    if-ne v0, v2, :cond_1
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    :goto_0
+    iget-boolean v2, p0, Landroidx/fragment/app/c$b;->c:Z
 
     .line 7
-    invoke-virtual {v1, v0}, Landroidx/fragment/app/u0$e$c;->applyState(Landroid/view/View;)V
+    invoke-static {p1, v1, v0, v2}, Landroidx/fragment/app/s;->a(Landroid/content/Context;Landroidx/fragment/app/Fragment;ZZ)Landroidx/fragment/app/s$a;
 
-    :cond_0
-    return-void
+    move-result-object p1
+
+    iput-object p1, p0, Landroidx/fragment/app/c$b;->e:Landroidx/fragment/app/s$a;
+
+    .line 8
+    iput-boolean v3, p0, Landroidx/fragment/app/c$b;->d:Z
+
+    return-object p1
 .end method

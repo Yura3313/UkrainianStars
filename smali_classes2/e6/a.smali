@@ -3,14 +3,6 @@
 .source "Decoder.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Le6/a$b;
-    }
-.end annotation
-
-
 # static fields
 .field public static final b:[Ljava/lang/String;
 
@@ -832,15 +824,15 @@
     iput-object v0, v1, Le6/a;->a:Ld6/a;
 
     .line 2
-    iget-object v2, v0, La2/x0;->a:Ljava/lang/Object;
+    iget-object v2, v0, Lj3/pc;->a:Ljava/lang/Object;
 
     check-cast v2, Lj6/b;
 
     .line 3
-    iget-boolean v3, v0, Ld6/a;->h:Z
+    iget-boolean v3, v0, Ld6/a;->c:Z
 
     .line 4
-    iget v0, v0, Ld6/a;->j:I
+    iget v0, v0, Ld6/a;->e:I
 
     if-eqz v3, :cond_0
 
@@ -1123,7 +1115,7 @@
     iget-object v0, v1, Le6/a;->a:Ld6/a;
 
     .line 22
-    iget v2, v0, Ld6/a;->j:I
+    iget v2, v0, Ld6/a;->e:I
 
     const/4 v3, 0x6
 
@@ -1168,7 +1160,7 @@
 
     .line 27
     :goto_7
-    iget v0, v0, Ld6/a;->i:I
+    iget v0, v0, Ld6/a;->d:I
 
     .line 28
     div-int v5, v7, v14
@@ -1398,86 +1390,82 @@
 
     .line 44
     :cond_17
-    sget-object v0, Le6/a$b;->UPPER:Le6/a$b;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 45
-    new-instance v6, Ljava/lang/StringBuilder;
+    const/16 v6, 0x14
 
-    const/16 v8, 0x14
+    invoke-direct {v0, v6}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    invoke-direct {v6, v8}, Ljava/lang/StringBuilder;-><init>(I)V
+    const/4 v6, 0x1
 
-    move-object v8, v0
+    const/4 v8, 0x1
 
     const/4 v9, 0x0
 
     :goto_11
     if-ge v9, v2, :cond_29
 
-    .line 46
-    sget-object v10, Le6/a$b;->BINARY:Le6/a$b;
+    const/4 v10, 0x5
 
-    const/4 v11, 0x5
+    if-ne v6, v3, :cond_1b
 
-    if-ne v0, v10, :cond_1b
+    sub-int v6, v2, v9
 
-    sub-int v0, v2, v9
+    if-lt v6, v10, :cond_29
 
-    if-lt v0, v11, :cond_29
+    .line 45
+    invoke-static {v7, v9, v10}, Le6/a;->b([ZII)I
 
-    .line 47
-    invoke-static {v7, v9, v11}, Le6/a;->b([ZII)I
-
-    move-result v0
+    move-result v6
 
     add-int/lit8 v9, v9, 0x5
 
-    if-nez v0, :cond_18
+    if-nez v6, :cond_18
 
-    sub-int v0, v2, v9
+    sub-int v6, v2, v9
 
-    const/16 v12, 0xb
+    const/16 v11, 0xb
 
-    if-lt v0, v12, :cond_29
+    if-lt v6, v11, :cond_29
 
-    .line 48
-    invoke-static {v7, v9, v12}, Le6/a;->b([ZII)I
+    .line 46
+    invoke-static {v7, v9, v11}, Le6/a;->b([ZII)I
 
-    move-result v0
+    move-result v6
 
-    add-int/lit8 v0, v0, 0x1f
+    add-int/lit8 v6, v6, 0x1f
 
     add-int/lit8 v9, v9, 0xb
 
     goto :goto_12
 
     :cond_18
-    const/16 v12, 0xb
+    const/16 v11, 0xb
 
     :goto_12
     const/4 v10, 0x0
 
     :goto_13
-    if-ge v10, v0, :cond_1a
+    if-ge v10, v6, :cond_1a
 
-    sub-int v11, v2, v9
+    sub-int v12, v2, v9
 
-    if-ge v11, v4, :cond_19
+    if-ge v12, v4, :cond_19
 
     move v9, v2
 
     goto :goto_14
 
-    .line 49
+    .line 47
     :cond_19
     invoke-static {v7, v9, v4}, Le6/a;->b([ZII)I
 
-    move-result v11
+    move-result v12
 
-    int-to-char v11, v11
+    int-to-char v12, v12
 
-    .line 50
-    invoke-virtual {v6, v11}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    .line 48
+    invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     add-int/lit8 v9, v9, 0x8
 
@@ -1487,72 +1475,65 @@
 
     :cond_1a
     :goto_14
-    move-object v0, v8
+    move v6, v8
 
     goto :goto_11
 
     :cond_1b
-    const/16 v12, 0xb
+    const/16 v11, 0xb
 
-    .line 51
-    sget-object v13, Le6/a$b;->DIGIT:Le6/a$b;
+    const/4 v12, 0x4
 
-    const/4 v14, 0x4
+    if-ne v6, v12, :cond_1c
 
-    if-ne v0, v13, :cond_1c
-
-    const/4 v15, 0x4
+    const/4 v13, 0x4
 
     goto :goto_15
 
     :cond_1c
-    const/4 v15, 0x5
+    const/4 v13, 0x5
 
     :goto_15
-    sub-int v4, v2, v9
+    sub-int v14, v2, v9
 
-    if-lt v4, v15, :cond_29
+    if-lt v14, v13, :cond_29
 
-    .line 52
-    invoke-static {v7, v9, v15}, Le6/a;->b([ZII)I
+    .line 49
+    invoke-static {v7, v9, v13}, Le6/a;->b([ZII)I
 
-    move-result v4
+    move-result v14
 
-    add-int/2addr v9, v15
+    add-int/2addr v9, v13
 
-    .line 53
-    sget-object v15, Le6/a$a;->a:[I
+    .line 50
+    invoke-static {v6}, Lp/g;->b(I)I
 
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+    move-result v13
 
-    move-result v17
+    const/4 v15, 0x3
 
-    aget v15, v15, v17
+    if-eqz v13, :cond_21
 
-    const/4 v12, 0x1
+    const/4 v4, 0x1
 
-    if-eq v15, v12, :cond_21
+    if-eq v13, v4, :cond_20
 
-    const/4 v12, 0x2
+    const/4 v4, 0x2
 
-    if-eq v15, v12, :cond_20
+    if-eq v13, v4, :cond_1f
 
-    const/4 v12, 0x3
+    if-eq v13, v15, :cond_1e
 
-    if-eq v15, v12, :cond_1f
+    if-ne v13, v12, :cond_1d
 
-    if-eq v15, v14, :cond_1e
+    .line 51
+    sget-object v13, Le6/a;->e:[Ljava/lang/String;
 
-    if-ne v15, v11, :cond_1d
-
-    .line 54
-    sget-object v12, Le6/a;->f:[Ljava/lang/String;
-
-    aget-object v4, v12, v4
+    aget-object v13, v13, v14
 
     goto :goto_16
 
-    .line 55
+    .line 52
     :cond_1d
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -1562,148 +1543,148 @@
 
     throw v0
 
-    .line 56
+    .line 53
     :cond_1e
-    sget-object v12, Le6/a;->e:[Ljava/lang/String;
+    sget-object v13, Le6/a;->f:[Ljava/lang/String;
 
-    aget-object v4, v12, v4
+    aget-object v13, v13, v14
 
     goto :goto_16
 
-    .line 57
+    .line 54
     :cond_1f
-    sget-object v12, Le6/a;->d:[Ljava/lang/String;
+    sget-object v13, Le6/a;->d:[Ljava/lang/String;
 
-    aget-object v4, v12, v4
+    aget-object v13, v13, v14
 
     goto :goto_16
 
-    .line 58
     :cond_20
-    sget-object v12, Le6/a;->c:[Ljava/lang/String;
+    const/4 v4, 0x2
 
-    aget-object v4, v12, v4
+    .line 55
+    sget-object v13, Le6/a;->c:[Ljava/lang/String;
+
+    aget-object v13, v13, v14
 
     goto :goto_16
 
-    .line 59
     :cond_21
-    sget-object v12, Le6/a;->b:[Ljava/lang/String;
+    const/4 v4, 0x2
 
-    aget-object v4, v12, v4
+    .line 56
+    sget-object v13, Le6/a;->b:[Ljava/lang/String;
+
+    aget-object v13, v13, v14
 
     :goto_16
-    const-string v12, "CTRL_"
+    const-string v14, "CTRL_"
 
-    .line 60
-    invoke-virtual {v4, v12}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    .line 57
+    invoke-virtual {v13, v14}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
-    move-result v12
+    move-result v14
 
-    if-eqz v12, :cond_28
+    if-eqz v14, :cond_28
 
-    .line 61
-    invoke-virtual {v4, v11}, Ljava/lang/String;->charAt(I)C
+    .line 58
+    invoke-virtual {v13, v10}, Ljava/lang/String;->charAt(I)C
 
     move-result v8
 
-    const/16 v11, 0x42
+    const/16 v14, 0x42
 
-    const/16 v12, 0x4c
+    const/16 v4, 0x4c
 
-    if-eq v8, v11, :cond_26
+    if-eq v8, v14, :cond_26
 
-    const/16 v10, 0x44
+    const/16 v14, 0x44
 
-    if-eq v8, v10, :cond_25
+    if-eq v8, v14, :cond_25
 
-    const/16 v10, 0x50
+    const/16 v12, 0x50
 
-    if-eq v8, v10, :cond_24
+    if-eq v8, v12, :cond_24
 
-    if-eq v8, v12, :cond_23
+    if-eq v8, v4, :cond_23
 
     const/16 v10, 0x4d
 
     if-eq v8, v10, :cond_22
 
-    .line 62
-    sget-object v8, Le6/a$b;->UPPER:Le6/a$b;
+    const/4 v8, 0x1
 
     goto :goto_17
 
-    .line 63
     :cond_22
-    sget-object v8, Le6/a$b;->MIXED:Le6/a$b;
+    const/4 v8, 0x3
 
     goto :goto_17
 
-    .line 64
     :cond_23
-    sget-object v8, Le6/a$b;->LOWER:Le6/a$b;
+    const/4 v8, 0x2
 
     goto :goto_17
 
-    .line 65
     :cond_24
-    sget-object v8, Le6/a$b;->PUNCT:Le6/a$b;
+    const/4 v8, 0x5
 
     goto :goto_17
 
     :cond_25
-    move-object v8, v13
+    const/4 v8, 0x4
 
     goto :goto_17
 
     :cond_26
-    move-object v8, v10
+    const/4 v8, 0x6
 
-    .line 66
+    .line 59
     :goto_17
-    invoke-virtual {v4, v3}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {v13, v3}, Ljava/lang/String;->charAt(I)C
 
-    move-result v4
+    move-result v10
 
-    if-ne v4, v12, :cond_27
+    if-ne v10, v4, :cond_27
 
     goto :goto_18
 
     :cond_27
     const/16 v4, 0x8
 
-    move-object/from16 v21, v8
+    move/from16 v21, v8
 
-    move-object v8, v0
+    move v8, v6
 
-    move-object/from16 v0, v21
+    move/from16 v6, v21
 
     goto/16 :goto_11
 
-    .line 67
+    .line 60
     :cond_28
-    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :goto_18
-    move-object v0, v8
+    move v6, v8
 
     const/16 v4, 0x8
 
     goto/16 :goto_11
 
-    .line 68
+    .line 61
     :cond_29
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 69
+    .line 62
     new-instance v3, Lj6/e;
 
     const/4 v4, 0x0
 
     invoke-direct {v3, v5, v0, v4, v4}, Lj6/e;-><init>([BLjava/lang/String;Ljava/util/List;Ljava/lang/String;)V
 
-    .line 70
+    .line 63
     iput v2, v3, Lj6/e;->b:I
 
     return-object v3
@@ -1711,8 +1692,8 @@
     :catch_0
     move-exception v0
 
-    .line 71
-    sget-boolean v2, Lcom/google/zxing/ReaderException;->a:Z
+    .line 64
+    sget-boolean v2, Lcom/google/zxing/ReaderException;->g:Z
 
     if-eqz v2, :cond_2a
 
@@ -1723,13 +1704,13 @@
     goto :goto_19
 
     :cond_2a
-    sget-object v2, Lcom/google/zxing/FormatException;->h:Lcom/google/zxing/FormatException;
+    sget-object v2, Lcom/google/zxing/FormatException;->i:Lcom/google/zxing/FormatException;
 
-    .line 72
+    .line 65
     :goto_19
     throw v2
 
-    .line 73
+    .line 66
     :cond_2b
     invoke-static {}, Lcom/google/zxing/FormatException;->a()Lcom/google/zxing/FormatException;
 

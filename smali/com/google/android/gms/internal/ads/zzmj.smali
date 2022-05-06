@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
 
 # direct methods
@@ -21,7 +21,7 @@
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzmj;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzmj;->g:Ljava/lang/String;
 
     return-void
 .end method

@@ -1,49 +1,16 @@
-.class public final Lj3/kj0;
+.class public interface abstract Lj3/kj0;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
+.source "com.google.android.gms:play-services-gass@@19.3.0"
 
 
-# static fields
-.field public static final a:Ljava/nio/charset/Charset;
+# virtual methods
+.method public abstract a()Lcom/google/android/gms/internal/ads/a0;
+.end method
 
-
-# direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    const-string v0, "US-ASCII"
-
-    .line 1
-    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
-
-    const-string v0, "ISO-8859-1"
-
-    .line 2
-    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
-
-    const-string v0, "UTF-8"
-
-    .line 3
-    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
-
-    move-result-object v0
-
-    sput-object v0, Lj3/kj0;->a:Ljava/nio/charset/Charset;
-
-    const-string v0, "UTF-16BE"
-
-    .line 4
-    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
-
-    const-string v0, "UTF-16LE"
-
-    .line 5
-    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
-
-    const-string v0, "UTF-16"
-
-    .line 6
-    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
-
-    return-void
+.method public abstract b(Landroid/content/Context;)Lcom/google/android/gms/internal/ads/a0;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
 .end method

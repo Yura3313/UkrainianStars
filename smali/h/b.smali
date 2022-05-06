@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
+.field public final g:Ljava/lang/Object;
 
-.field public final b:Ljava/util/concurrent/ExecutorService;
+.field public final h:Ljava/util/concurrent/ExecutorService;
 
-.field public volatile h:Landroid/os/Handler;
+.field public volatile i:Landroid/os/Handler;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lh/b;->a:Ljava/lang/Object;
+    iput-object v0, p0, Lh/b;->g:Ljava/lang/Object;
 
     .line 3
     new-instance v0, Lh/b$a;
@@ -36,7 +36,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lh/b;->b:Ljava/util/concurrent/ExecutorService;
+    iput-object v0, p0, Lh/b;->h:Ljava/util/concurrent/ExecutorService;
 
     return-void
 .end method
@@ -167,18 +167,18 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lh/b;->h:Landroid/os/Handler;
+    iget-object v0, p0, Lh/b;->i:Landroid/os/Handler;
 
     if-nez v0, :cond_1
 
     .line 2
-    iget-object v0, p0, Lh/b;->a:Ljava/lang/Object;
+    iget-object v0, p0, Lh/b;->g:Ljava/lang/Object;
 
     monitor-enter v0
 
     .line 3
     :try_start_0
-    iget-object v1, p0, Lh/b;->h:Landroid/os/Handler;
+    iget-object v1, p0, Lh/b;->i:Landroid/os/Handler;
 
     if-nez v1, :cond_0
 
@@ -191,7 +191,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lh/b;->h:Landroid/os/Handler;
+    iput-object v1, p0, Lh/b;->i:Landroid/os/Handler;
 
     .line 5
     :cond_0
@@ -211,7 +211,7 @@
     .line 6
     :cond_1
     :goto_0
-    iget-object v0, p0, Lh/b;->h:Landroid/os/Handler;
+    iget-object v0, p0, Lh/b;->i:Landroid/os/Handler;
 
     invoke-virtual {v0, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

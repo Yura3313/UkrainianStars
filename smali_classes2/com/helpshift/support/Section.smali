@@ -19,11 +19,11 @@
 
 
 # instance fields
-.field public a:Ljava/lang/String;
-
-.field public b:Ljava/lang/String;
+.field public g:Ljava/lang/String;
 
 .field public h:Ljava/lang/String;
+
+.field public i:Ljava/lang/String;
 
 
 # direct methods
@@ -49,13 +49,13 @@
     const-string v0, ""
 
     .line 2
-    iput-object v0, p0, Lcom/helpshift/support/Section;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/helpshift/support/Section;->g:Ljava/lang/String;
 
     .line 3
-    iput-object v0, p0, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
+    iput-object v0, p0, Lcom/helpshift/support/Section;->i:Ljava/lang/String;
 
     .line 4
-    iput-object v0, p0, Lcom/helpshift/support/Section;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
 
     return-void
 .end method
@@ -67,13 +67,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 6
-    iput-object p3, p0, Lcom/helpshift/support/Section;->a:Ljava/lang/String;
+    iput-object p3, p0, Lcom/helpshift/support/Section;->g:Ljava/lang/String;
 
     .line 7
-    iput-object p4, p0, Lcom/helpshift/support/Section;->b:Ljava/lang/String;
+    iput-object p4, p0, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
 
     .line 8
-    iput-object p5, p0, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
+    iput-object p5, p0, Lcom/helpshift/support/Section;->i:Ljava/lang/String;
 
     return-void
 .end method
@@ -89,21 +89,21 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/helpshift/support/Section;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/helpshift/support/Section;->g:Ljava/lang/String;
 
     .line 11
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/helpshift/support/Section;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
 
     .line 12
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
+    iput-object p1, p0, Lcom/helpshift/support/Section;->i:Ljava/lang/String;
 
     return-void
 .end method
@@ -132,9 +132,9 @@
 
     .line 2
     :cond_0
-    iget-object v1, p0, Lcom/helpshift/support/Section;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
 
-    iget-object v2, p1, Lcom/helpshift/support/Section;->b:Ljava/lang/String;
+    iget-object v2, p1, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -142,9 +142,9 @@
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/helpshift/support/Section;->i:Ljava/lang/String;
 
-    iget-object v2, p1, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
+    iget-object v2, p1, Lcom/helpshift/support/Section;->i:Ljava/lang/String;
 
     .line 3
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -153,9 +153,9 @@
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/helpshift/support/Section;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/helpshift/support/Section;->g:Ljava/lang/String;
 
-    iget-object p1, p1, Lcom/helpshift/support/Section;->a:Ljava/lang/String;
+    iget-object p1, p1, Lcom/helpshift/support/Section;->g:Ljava/lang/String;
 
     .line 4
     invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -174,7 +174,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/helpshift/support/Section;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -183,17 +183,17 @@
     .locals 0
 
     .line 1
-    iget-object p2, p0, Lcom/helpshift/support/Section;->a:Ljava/lang/String;
+    iget-object p2, p0, Lcom/helpshift/support/Section;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 2
-    iget-object p2, p0, Lcom/helpshift/support/Section;->b:Ljava/lang/String;
+    iget-object p2, p0, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 3
-    iget-object p2, p0, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
+    iget-object p2, p0, Lcom/helpshift/support/Section;->i:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 

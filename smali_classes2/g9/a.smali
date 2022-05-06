@@ -7,14 +7,14 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lg9/b;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/helpshift/util/s;)V
     .locals 0
 
     .line 1
     invoke-direct {p0, p1, p2}, Lf9/a;-><init>(Landroid/content/Context;Lf9/b;)V
 
     .line 2
-    iput-object p0, p0, Lf9/a;->b:Lf9/a$a;
+    iput-object p0, p0, Lf9/a;->h:Lf9/a$a;
 
     return-void
 .end method

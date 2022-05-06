@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method public final f2()V
+.method public final g2()V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -29,14 +29,14 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->E0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->F0()Landroid/os/Parcel;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
     .line 2
-    invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->X0(ILandroid/os/Parcel;)V
+    invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->Y0(ILandroid/os/Parcel;)V
 
     return-void
 .end method

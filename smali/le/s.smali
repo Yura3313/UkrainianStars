@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field public a:Ljava/lang/Object;
+.field public g:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TT;"
@@ -44,7 +44,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lle/s;->a:Ljava/lang/Object;
+    iget-object v0, p0, Lle/s;->g:Ljava/lang/Object;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 

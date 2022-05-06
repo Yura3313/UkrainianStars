@@ -1,110 +1,55 @@
-.class public final Ls0/b;
+.class public final synthetic Ls0/b;
 .super Ljava/lang/Object;
-.source "MasterKey.java"
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Ls0/b$b;,
-        Ls0/b$c;
-    }
-.end annotation
-
-
-# instance fields
-.field public final a:Ljava/lang/String;
+.source "R8$$SyntheticClass"
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/Object;)V
-    .locals 1
+.method public static a(I)I
+    .locals 2
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x1
 
-    .line 2
-    iput-object p1, p0, Ls0/b;->a:Ljava/lang/String;
+    if-eqz p0, :cond_5
 
-    .line 3
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
+    const/4 v1, 0x2
 
-    const/16 v0, 0x17
+    if-eq p0, v0, :cond_4
 
-    if-lt p1, v0, :cond_0
+    const/4 v0, 0x3
 
-    .line 4
-    check-cast p2, Landroid/security/keystore/KeyGenParameterSpec;
+    if-eq p0, v1, :cond_3
 
-    :cond_0
-    return-void
-.end method
+    const/4 v1, 0x4
 
+    if-eq p0, v0, :cond_2
 
-# virtual methods
-.method public toString()Ljava/lang/String;
-    .locals 4
+    const/4 v0, 0x5
 
-    const-string v0, "MasterKey{keyAlias="
+    if-eq p0, v1, :cond_1
 
-    .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eq p0, v0, :cond_0
 
-    move-result-object v0
+    const/4 p0, 0x0
 
-    iget-object v1, p0, Ls0/b;->a:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", isKeyStoreBacked="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 2
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/4 v2, 0x0
-
-    const/16 v3, 0x17
-
-    if-ge v1, v3, :cond_0
-
-    goto :goto_0
+    return p0
 
     :cond_0
-    :try_start_0
-    const-string v1, "AndroidKeyStore"
+    const/4 p0, 0x6
 
-    .line 3
-    invoke-static {v1}, Ljava/security/KeyStore;->getInstance(Ljava/lang/String;)Ljava/security/KeyStore;
+    return p0
 
-    move-result-object v1
+    :cond_1
+    return v0
 
-    const/4 v3, 0x0
+    :cond_2
+    return v1
 
-    .line 4
-    invoke-virtual {v1, v3}, Ljava/security/KeyStore;->load(Ljava/security/KeyStore$LoadStoreParameter;)V
+    :cond_3
+    return v0
 
-    .line 5
-    iget-object v3, p0, Ls0/b;->a:Ljava/lang/String;
+    :cond_4
+    return v1
 
-    invoke-virtual {v1, v3}, Ljava/security/KeyStore;->containsAlias(Ljava/lang/String;)Z
-
-    move-result v2
-    :try_end_0
-    .catch Ljava/security/KeyStoreException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/security/cert/CertificateException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :goto_0
-    const-string v1, "}"
-
-    .line 6
-    invoke-static {v0, v2, v1}, Landroidx/appcompat/app/i;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    :cond_5
+    return v0
 .end method

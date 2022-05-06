@@ -1,147 +1,85 @@
 .class public final Lj3/mc;
-.super Ljava/lang/Object;
+.super Ljava/io/FilterInputStream;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # instance fields
-.field public a:Landroid/os/HandlerThread;
+.field public final g:J
 
-.field public b:Landroid/os/Handler;
-
-.field public c:I
-
-.field public final d:Ljava/lang/Object;
+.field public h:J
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Ljava/io/InputStream;J)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x0
+    invoke-direct {p0, p1}, Ljava/io/FilterInputStream;-><init>(Ljava/io/InputStream;)V
 
     .line 2
-    iput-object v0, p0, Lj3/mc;->a:Landroid/os/HandlerThread;
-
-    .line 3
-    iput-object v0, p0, Lj3/mc;->b:Landroid/os/Handler;
-
-    const/4 v0, 0x0
-
-    .line 4
-    iput v0, p0, Lj3/mc;->c:I
-
-    .line 5
-    new-instance v0, Ljava/lang/Object;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    iput-object v0, p0, Lj3/mc;->d:Ljava/lang/Object;
+    iput-wide p2, p0, Lj3/mc;->g:J
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Landroid/os/Looper;
-    .locals 3
+.method public final read()I
+    .locals 5
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
     .line 1
-    iget-object v0, p0, Lj3/mc;->d:Ljava/lang/Object;
+    invoke-super {p0}, Ljava/io/FilterInputStream;->read()I
 
-    monitor-enter v0
+    move-result v0
+
+    const/4 v1, -0x1
+
+    if-eq v0, v1, :cond_0
 
     .line 2
-    :try_start_0
-    iget v1, p0, Lj3/mc;->c:I
+    iget-wide v1, p0, Lj3/mc;->h:J
 
-    if-nez v1, :cond_1
+    const-wide/16 v3, 0x1
+
+    add-long/2addr v1, v3
+
+    iput-wide v1, p0, Lj3/mc;->h:J
+
+    :cond_0
+    return v0
+.end method
+
+.method public final read([BII)I
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
     .line 3
-    iget-object v1, p0, Lj3/mc;->a:Landroid/os/HandlerThread;
+    invoke-super {p0, p1, p2, p3}, Ljava/io/FilterInputStream;->read([BII)I
 
-    if-nez v1, :cond_0
+    move-result p1
+
+    const/4 p2, -0x1
+
+    if-eq p1, p2, :cond_0
 
     .line 4
-    invoke-static {}, Lp0/d;->i()Z
+    iget-wide p2, p0, Lj3/mc;->h:J
 
-    .line 5
-    new-instance v1, Landroid/os/HandlerThread;
+    int-to-long v0, p1
 
-    const-string v2, "LooperProvider"
+    add-long/2addr p2, v0
 
-    invoke-direct {v1, v2}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
+    iput-wide p2, p0, Lj3/mc;->h:J
 
-    iput-object v1, p0, Lj3/mc;->a:Landroid/os/HandlerThread;
-
-    .line 6
-    invoke-virtual {v1}, Landroid/os/HandlerThread;->start()V
-
-    .line 7
-    new-instance v1, Lj3/jj0;
-
-    iget-object v2, p0, Lj3/mc;->a:Landroid/os/HandlerThread;
-
-    invoke-virtual {v2}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
-
-    move-result-object v2
-
-    invoke-direct {v1, v2}, Lj3/jj0;-><init>(Landroid/os/Looper;)V
-
-    iput-object v1, p0, Lj3/mc;->b:Landroid/os/Handler;
-
-    .line 8
-    invoke-static {}, Lp0/d;->i()Z
-
-    goto :goto_0
-
-    .line 9
     :cond_0
-    invoke-static {}, Lp0/d;->i()Z
-
-    .line 10
-    iget-object v1, p0, Lj3/mc;->d:Ljava/lang/Object;
-
-    invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
-
-    goto :goto_0
-
-    .line 11
-    :cond_1
-    iget-object v1, p0, Lj3/mc;->a:Landroid/os/HandlerThread;
-
-    const-string v2, "Invalid state: mHandlerThread should already been initialized."
-
-    invoke-static {v1, v2}, Lc2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 12
-    :goto_0
-    iget v1, p0, Lj3/mc;->c:I
-
-    add-int/lit8 v1, v1, 0x1
-
-    iput v1, p0, Lj3/mc;->c:I
-
-    .line 13
-    iget-object v1, p0, Lj3/mc;->a:Landroid/os/HandlerThread;
-
-    invoke-virtual {v1}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
-
-    move-result-object v1
-
-    monitor-exit v0
-
-    return-object v1
-
-    :catchall_0
-    move-exception v1
-
-    .line 14
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v1
+    return p1
 .end method

@@ -153,9 +153,9 @@
     invoke-direct {v0, p1, p2, v1}, Lu5/a$b;-><init>(Ljava/lang/Class;[Ljava/lang/Class;B)V
 
     .line 2
-    new-instance p1, Lu5/e;
+    new-instance p1, Lj3/j5;
 
-    invoke-direct {p1, p0}, Lu5/e;-><init>(Ljava/lang/Object;)V
+    invoke-direct {p1, p0}, Lj3/j5;-><init>(Ljava/lang/Object;)V
 
     .line 3
     iput-object p1, v0, Lu5/a$b;->d:Lu5/b;

@@ -16,13 +16,13 @@
 
 
 # instance fields
-.field public a:Landroid/os/Bundle;
+.field public g:Landroid/os/Bundle;
 
-.field public b:[Lcom/google/android/gms/common/Feature;
+.field public h:[Lcom/google/android/gms/common/Feature;
 
-.field public h:I
+.field public i:I
 
-.field public i:Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;
+.field public j:Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;
 
 
 # direct methods
@@ -55,16 +55,16 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/zzc;->a:Landroid/os/Bundle;
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/zzc;->g:Landroid/os/Bundle;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/common/internal/zzc;->b:[Lcom/google/android/gms/common/Feature;
+    iput-object p2, p0, Lcom/google/android/gms/common/internal/zzc;->h:[Lcom/google/android/gms/common/Feature;
 
     .line 4
-    iput p3, p0, Lcom/google/android/gms/common/internal/zzc;->h:I
+    iput p3, p0, Lcom/google/android/gms/common/internal/zzc;->i:I
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/gms/common/internal/zzc;->i:Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;
+    iput-object p4, p0, Lcom/google/android/gms/common/internal/zzc;->j:Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;
 
     return-void
 .end method
@@ -80,7 +80,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzc;->a:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzc;->g:Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -89,21 +89,21 @@
     invoke-static {p1, v2, v1, v3}, Ld2/b;->d(Landroid/os/Parcel;ILandroid/os/Bundle;Z)V
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzc;->b:[Lcom/google/android/gms/common/Feature;
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzc;->h:[Lcom/google/android/gms/common/Feature;
 
     const/4 v2, 0x2
 
     invoke-static {p1, v2, v1, p2, v3}, Ld2/b;->p(Landroid/os/Parcel;I[Landroid/os/Parcelable;IZ)V
 
     .line 4
-    iget v1, p0, Lcom/google/android/gms/common/internal/zzc;->h:I
+    iget v1, p0, Lcom/google/android/gms/common/internal/zzc;->i:I
 
     const/4 v2, 0x3
 
     invoke-static {p1, v2, v1}, Ld2/b;->g(Landroid/os/Parcel;II)V
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzc;->i:Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzc;->j:Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;
 
     const/4 v2, 0x4
 

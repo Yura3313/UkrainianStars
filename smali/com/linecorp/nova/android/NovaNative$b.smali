@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:J
+.field public final synthetic g:J
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-wide p1, p0, Lcom/linecorp/nova/android/NovaNative$b;->a:J
+    iput-wide p1, p0, Lcom/linecorp/nova/android/NovaNative$b;->g:J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +46,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-wide v0, p0, Lcom/linecorp/nova/android/NovaNative$b;->a:J
+    iget-wide v0, p0, Lcom/linecorp/nova/android/NovaNative$b;->g:J
 
     invoke-static {v0, v1}, Lcom/linecorp/nova/android/NovaNative;->access$100(J)V
 

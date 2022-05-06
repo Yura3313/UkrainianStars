@@ -12,7 +12,7 @@
 
     check-cast p2, Ljava/lang/Throwable;
 
-    invoke-interface {p0, p1, p2}, Lcom/kakaogame/idp/KGKakao2Auth$LoginCallback;->invoke(Lcom/kakao/sdk/auth/model/OAuthToken;Ljava/lang/Throwable;)Lbe/n;
+    invoke-interface {p0, p1, p2}, Lcom/kakaogame/idp/KGKakao2Auth$LoginCallback;->invoke(Lcom/kakao/sdk/auth/model/OAuthToken;Ljava/lang/Throwable;)Lae/i;
 
     move-result-object p0
 

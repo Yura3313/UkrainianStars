@@ -15,15 +15,15 @@
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic g:I
 
-.field public final synthetic b:Landroid/widget/TextView;
+.field public final synthetic h:Landroid/widget/TextView;
 
-.field public final synthetic h:I
+.field public final synthetic i:I
 
-.field public final synthetic i:Landroid/widget/TextView;
+.field public final synthetic j:Landroid/widget/TextView;
 
-.field public final synthetic j:Lcom/google/android/material/textfield/n;
+.field public final synthetic k:Lcom/google/android/material/textfield/n;
 
 
 # direct methods
@@ -31,15 +31,15 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/n$a;->j:Lcom/google/android/material/textfield/n;
+    iput-object p1, p0, Lcom/google/android/material/textfield/n$a;->k:Lcom/google/android/material/textfield/n;
 
-    iput p2, p0, Lcom/google/android/material/textfield/n$a;->a:I
+    iput p2, p0, Lcom/google/android/material/textfield/n$a;->g:I
 
-    iput-object p3, p0, Lcom/google/android/material/textfield/n$a;->b:Landroid/widget/TextView;
+    iput-object p3, p0, Lcom/google/android/material/textfield/n$a;->h:Landroid/widget/TextView;
 
-    iput p4, p0, Lcom/google/android/material/textfield/n$a;->h:I
+    iput p4, p0, Lcom/google/android/material/textfield/n$a;->i:I
 
-    iput-object p5, p0, Lcom/google/android/material/textfield/n$a;->i:Landroid/widget/TextView;
+    iput-object p5, p0, Lcom/google/android/material/textfield/n$a;->j:Landroid/widget/TextView;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -52,9 +52,9 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->j:Lcom/google/android/material/textfield/n;
+    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->k:Lcom/google/android/material/textfield/n;
 
-    iget v0, p0, Lcom/google/android/material/textfield/n$a;->a:I
+    iget v0, p0, Lcom/google/android/material/textfield/n$a;->g:I
 
     .line 2
     iput v0, p1, Lcom/google/android/material/textfield/n;->i:I
@@ -65,7 +65,7 @@
     iput-object v0, p1, Lcom/google/android/material/textfield/n;->g:Landroid/animation/Animator;
 
     .line 4
-    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->b:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->h:Landroid/widget/TextView;
 
     if-eqz p1, :cond_0
 
@@ -75,13 +75,13 @@
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 6
-    iget p1, p0, Lcom/google/android/material/textfield/n$a;->h:I
+    iget p1, p0, Lcom/google/android/material/textfield/n$a;->i:I
 
     const/4 v1, 0x1
 
     if-ne p1, v1, :cond_0
 
-    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->j:Lcom/google/android/material/textfield/n;
+    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->k:Lcom/google/android/material/textfield/n;
 
     .line 7
     iget-object p1, p1, Lcom/google/android/material/textfield/n;->m:Landroid/widget/TextView;
@@ -93,7 +93,7 @@
 
     .line 9
     :cond_0
-    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->i:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->j:Landroid/widget/TextView;
 
     if-eqz p1, :cond_1
 
@@ -103,7 +103,7 @@
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTranslationY(F)V
 
     .line 11
-    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->i:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->j:Landroid/widget/TextView;
 
     const/high16 v0, 0x3f800000    # 1.0f
 
@@ -117,7 +117,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->i:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/google/android/material/textfield/n$a;->j:Landroid/widget/TextView;
 
     if-eqz p1, :cond_0
 

@@ -18,6 +18,14 @@ TID_QUEST_DESC_3,RICHT <AMOUNT> SCHADE AAN
 TID_QUEST_DESC_4,HERSTEL <AMOUNT> LEVENSPUNTEN
 TID_QUEST_DESC_5,MAAK <NUM> KEER GEBRUIK VAN 'OPNIEUW SPELEN'
 TID_QUEST_DESC_6,SPEEL <NUM> GEVECHTEN IN EEN TEAM
+TID_QUEST_DESC_7_MODE_0,HOUD <LIMIT> OF MEER EDELSTENEN VAST VOOR <AMOUNT> SECONDEN
+TID_QUEST_DESC_7_MODE_2,BRENG <AMOUNT> SCHADE TOE AAN KLUIZEN
+TID_QUEST_DESC_7_MODE_3,VOLTOOI <AMOUNT> WEDSTRIJDEN MET <LIMIT> OF MEER STERREN
+TID_QUEST_DESC_7_MODE_5,PASS DE BAL <AMOUNT> KEER
+TID_QUEST_DESC_7_MODE_6,VERZAMEL <AMOUNT> KRACHTKUBUSSEN
+TID_QUEST_DESC_7_MODE_9,VERZAMEL <AMOUNT> KRACHTKUBUSSEN TERWIJL BEIDE SPELERS ACTIEF ZIJN
+TID_QUEST_DESC_7_MODE_17,VEROVER ZONES GEDURENDE <AMOUNT> SECONDEN
+TID_QUEST_DESC_7_MODE_20,BLIJF ONVERSLAGEN GEDURENDE <AMOUNT> RONDES
 TID_QUEST_DESC_1_LEVELED,VOLTOOI EEN LEVEL
 TID_QUEST_DESC_1_BIG_GAME,WIN <AMOUNT> GEVECHTEN
 TID_QUEST_DESC_1_BIG_GAME_SINGLE,WIN <AMOUNT> GEVECHT
@@ -44,7 +52,7 @@ TID_PURCHASE_BRAWL_PASS_PROGRESS_INFO,Wil je <NUM> tokens kopen en doorgaan naar
 TID_PURCHASE_BRAWL_PASS_TITLE,KOOP DE BRAWL PASS!
 TID_PURCHASE_BRAWL_PASS_TITLE_PLAIN,BRAWL PASS
 TID_PURCHASE_BRAWL_PASS_TITLE_BUNDLE,BRAWL PASS-BUNDEL
-TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,Ontgrendel de beloningen en extra opdrachten van de Brawl Pass
+TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,"Ontgrendel Brawl Pass-beloningen, extra opdrachten en 2 extra opdrachtwissels per week."
 TID_PURCHASE_BRAWL_PASS_INFO_BUNDLE,BRAWL PASS + <NUM> DREMPELS
 TID_BRAWL_PASS_CANNOT_PURCHASE_BRAWL_PASS_FOR_PAST_SEASON,Het is niet mogelijk om een Brawl Pass uit een voorgaand seizoen te kopen.
 TID_BRAWL_PASS_CANNOT_PURCHASE_NO_SEASON_FOUND,De Brawl Pass voor het huidige seizoen kan niet worden gevonden. Probeer het later opnieuw.
@@ -763,6 +771,8 @@ TID_GATCHA_SCREEN_HERO_POWER_LEVEL_UP_UNLOCKED,Upgrade ontgrendeld!
 TID_GATCHA_SCREEN_HERO_POWER_LEVEL_UP_AVAILABLE,Upgrade beschikbaar!
 TID_GATCHA_SCREEN_VANITY_ITEM_DROP_TITLE_52,REACTIE
 TID_GATCHA_SCREEN_VANITY_ITEM_DROP_DESC_52,Uit jezelf met verzamelbare reacties!
+TID_GATCHA_SCREEN_VANITY_ITEM_DROP_TITLE_68,SPRAY
+TID_GATCHA_SCREEN_VANITY_ITEM_DROP_DESC_68,Uit jezelf met verzamelbare sprays!
 TID_GATCHA_SCREEN_BOX_COUNTER_BONUS,BONUS
 TID_GATCHA_SCREEN_STAR_POINT_DROP_TITLE,STERPUNTEN
 TID_GATCHA_SCREEN_STAR_POINT_DROP_DESC,Gebruik sterpunten om speciale items te kopen in de winkel.
@@ -1303,6 +1313,10 @@ TID_SHOP_OFFER_TITLE_21,REACTIEPAKKET
 TID_SHOP_OFFER_TITLE_22,REACTIEPAKKET VOOR
 TID_SHOP_OFFER_TITLE_23,REACTIE (<RARITY>)
 TID_SHOP_OFFER_TITLE_27,<RARITY> REACTIEPAKKET
+TID_SHOP_OFFER_TITLE_35,NIEUWE SPRAY
+TID_SHOP_OFFER_TITLE_36,SPRAYS
+TID_SHOP_OFFER_INFO_36,Uit jezelf tijdens gevechten met sprays!
+TID_SHOP_OFFER_TITLE_37,EXTRA SPRAYVAK
 TID_EMOTE_RARITY_0,GEWOON
 TID_EMOTE_RARITY_1,ZELDZAAM
 TID_EMOTE_RARITY_2,EPISCH
@@ -1347,6 +1361,8 @@ TID_SHOP_OFFER_INFO_30,Ontgrendel een nieuwe knokker van level <LVL>!
 TID_SHOP_OFFER_INFO_31,Ontgrendel een knokker van level <LVL> van de volgende zeldzaamheid: <RARITY>!
 TID_SHOP_OFFER_INFO_32,Gebruik uitrustingstokens om uitrustingen te maken en te upgraden.
 TID_SHOP_OFFER_INFO_33,Gebruik schroot om uitrustingen te maken en te upgraden.
+TID_SHOP_OFFER_INFO_35,Gebruik sprays om levels te versieren!
+TID_SHOP_OFFER_INFO_37,Een extra sprayvak!
 TID_SHOP_OFFER_HOR_NEW,NIEUW
 TID_SHOP_OFFER_HOR_RARITY,<c<COLOR>><NAME></c>
 TID_SHOP_OFFER_HOR_BRAWLER,KNOKKER
@@ -3199,6 +3215,7 @@ TID_MRP_AGENT_SKIN,AGENT P
 TID_MRP_AGENT_SKIN_SHOP,AGENT P
 TID_HERO_INFO_ATTACK_DAMAGE_MULTIPLIER,<AMMO> x <DAMAGE>
 TID_HERO_INFO_DURATION,Duur
+TID_HERO_INFO_CHANGE_CHARACTER_DURATION,Tijdsduur transformatie
 TID_HERO_INFO_DAMAGE_REDUCTION,Schadevermindering
 TID_HERO_INFO_LIFE_STEAL,Schade omgezet in gezondheid
 TID_SPAWN_BUILDING_HEALTH,Gezondheid van thuisbasis
@@ -3604,6 +3621,7 @@ TID_BRAWL_PASS_TAB_PAST_REWARDS,VORIGE SEIZOEN
 TID_BRAWL_PASS_PREMIUM,BRAWL PASS
 TID_BRAWL_PASS_FREE,GRATIS
 TID_BRAWL_PASS_BUY,ACTIVEREN
+TID_BRAWL_PASS_UNLOCK_ITEM_AT_TIER,ONTGRENDEL HET VOLGENDE OP DREMPEL <NUM>: <ITEM>
 TID_BRAWL_PASS_SEASON_HEADER,BRAWL PASS-SEIZOEN
 TID_QUEST_NEW_BATCH_IN,Nieuwe opdrachten worden ontgrendeld over:
 TID_QUEST_NEW_DAILY_IN,Dagelijkse opdrachten worden vernieuwd over:
@@ -3613,8 +3631,10 @@ TID_BRAWL_PASS_TIER_SHORTCUT,DREMPEL <NUM>: <REWARD>
 TID_BRAWL_PASS_TAIL_TITLE,Extra grote doos!
 TID_BRAWL_PASS_TAIL_INFO,"Nadat je de Brawl Pass voltooit, krijg je een grote doos voor elke <NUM> tokens die je verdient!"
 TID_BRAWL_PASS_PURCHASE_OR,OF
-TID_EMOTES_POPUP_TITLE,GEVECHTSREACTIES
+TID_EMOTES_POPUP_TITLE,REACTIES
 TID_EMOTES_POPUP_TEXT,Kies de reacties die je tijdens gevechten wilt gebruiken.
+TID_SPRAYS_POPUP_TITLE,SPRAYS
+TID_SPRAYS_POPUP_TEXT,Kies de sprays die je tijdens gevechten wilt gebruiken.
 TID_BRAWL_PASS_INFO_TITLE_0,INBEGREPEN BIJ DE BRAWL PASS
 TID_BRAWL_PASS_INFO_TEXT_0,"Verdien een heleboel extra beloningen, inclusief:\n\nGALE, de nieuwe chromatische knokker!\n\nExclusieve skin: KOOPMAN-GALE!\n\nExclusieve reacties en andere coole reacties voor GALE\n\n<NUM> megadozen!\n\nMunten en krachtpunten!\n\n\nVersnel je Brawl Pass-voortgang met extra opdrachten!"
 TID_EVIL_GENE_SKIN,KWAADAARDIGE GENE
@@ -3693,9 +3713,10 @@ TID_REGION_CHINA,China
 TID_QUALIFIED_TITLE_CHINA,线上资格赛已解锁！
 TID_QUALIFIED_INFO_CHINA,您已成功完成全球锦标赛挑战，真棒！\n您可以前往<cFFE400><URL></c>，通过引导完成赛事报名，继续荒野乱斗全球锦标赛之旅！
 TID_CHINA_REAL_NAME_REGULATION,Geregistreerd met echte naam
+TID_CHINA_LOGIN_DESC,本公司积极履行《网络游戏行业防沉迷自律公约》抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》、《关于进一步严格管理切实防止未成年人沉迷网络游戏的通知》，所有网络游戏用户均需使用有效身份信息完成账号实名注册后方可进入游戏，认证为未成年的玩家将受到防沉迷功能限制。沪网文【2018】8544-517号、新出网证（沪）字33号 著作权人：SUPERCELL OY 出版单位：上海游族信息技术有限公司 运营单位：上海游族信息技术有限公司 国新出审【2020】552号 出版物号：ISBN 978-7-498-07472-0
 TID_POWER_LEVELER,SURGE
 TID_POWER_LEVELER_SHORT_DESC,BESCHADIGER
-TID_POWER_LEVELER_DESC,"Beschermheer van feestjes en brenger van plezier. Surge bestookt vijanden met krachtige stralen energiedrank die in tweeën splitsen bij impact. Zijn super verbetert zijn statistieken in drie fases, waarbij hij telkens een coole transformatie ondergaat!"
+TID_POWER_LEVELER_DESC,"Beschermheer van feestjes en brenger van plezier. Surge bestookt vijanden met krachtige stralen energiedrank die in tweeën splitsen bij impact. Zijn super verbetert zijn statistieken in drie fases, waarbij hij coole transformaties ondergaat!"
 TID_POWER_LEVELER_WEAPON,STRAFFEND SAP
 TID_POWER_LEVELER_WEAPON_DESC,Surge schiet een straal sap af die in tweeën splitst wanneer een vijand wordt geraakt.
 TID_POWER_LEVELER_ULTI,FEESTTRUCJES
@@ -3761,10 +3782,21 @@ TID_EMOTE_CATEGORY_4,VAK 1
 TID_EMOTE_CATEGORY_5,VAK 2
 TID_EMOTE_CATEGORY_BRAWLER_PINS,REACTIES VAN <BRAWLER>
 TID_EMOTE_CATEGORY_PLAYER_PINS,SPELERREACTIES
+TID_SPRAY_CATEGORY_BRAWLER,SPRAY VAN <BRAWLER>
+TID_SPRAY_CATEGORY_SHARED,GEDEELDE SPRAYS
+TID_SPRAY_CATEGORY_1,VAK 1
+TID_SPRAY_CATEGORY_2,VAK 1
+TID_SPRAY_CATEGORY_3,VAK 2
+TID_SPRAY_CATEGORY_4,VAK 3
+TID_SPRAY_CATEGORY_5,VAK 4
+TID_SPRAY_EQUIP_NOT_OWNED,Je hebt deze spray nog niet ontgrendeld!
+TID_SPRAY_BRAWLER_EQUIP_NOT_OWNED,Je vindt deze spray in de winkel!
+TID_SPRAY_SLOT_LOCKED,Dit sprayvak wordt ontgrendeld bij <NUM> trofeeën!
 TID_EDIT_MUTE_EMOTES,Schakel reacties uit tijdens gevechten
 TID_ACCESSORY_BLOCKED_INVISIBILITY_ALREADY_ACTIVE,Je bent al onzichtbaar!
 TID_ACCESSORY_BLOCKED_SHIELD_ALREADY_ACTIVE,Schild is al actief!
 TID_ACCESSORY_BLOCKED_ALREADY_ACTIVE,Gadget is al actief!
+TID_ACCESSORY_BLOCKED_ALREADY_MAX_LEVEL,Maximumlevel al bereikt!
 TID_SETTINGS_PLAYER_ID,Speler-ID: <ID>
 TID_NAME_COLOR_REQUIRES_BRAWL_PASS,Koop de BRAWL PASS om het hele seizoen een chromatische naam te krijgen!
 TID_RANK_COLLECT_PREVIOUS_REWARD_SPECIFIC,Haal eerst de vorige beloning op!
@@ -3968,7 +4000,7 @@ TID_BRAWL_PASS_INFO_TEXT_2,"Verdien tal van extra beloningen, waaronder:\n\n<BRA
 TID_BRAWL_PASS_SEASON_3,WINTERUITJE
 TID_BRAWL_PASS_INFO_TEXT_3,"Verdien tal van extra beloningen, waaronder:\n\n<BRAWLER>, de nieuwe chromatische knokker!\n\nEXCLUSIEVE SKIN: <SKIN_1>!\n\nEXCLUSIEVE SKIN: <SKIN_2>!\n\nEXCLUSIEVE en COOLE REACTIES voor <BRAWLER>!\n\n<NUM> MEGADOZEN!\n\nEXTRA MUNTEN en KRACHTPUNTEN!\n\n\nEXTRA OPDRACHTEN om je Brawl Pass sneller te voltooien!\n\nEXCLUSIEVE CHROMATISCHE NAAM tijdens het hele seizoen!"
 TID_BRAWL_PASS_SEASON_4,STARR FORCE!
-TID_BRAWL_PASS_INFO_TEXT_GENERIC,"Verdien tal van extra beloningen, waaronder:\n\n<BRAWLER>, de nieuwe chromatische knokker!\n\nEXCLUSIEVE SKIN: <SKIN_1>!\n\nEXCLUSIEVE SKIN: <SKIN_2>!\n\nEXCLUSIEVE en COOLE REACTIES voor <BRAWLER>!\n\n<NUM> MEGADOZEN!\n\nEXTRA MUNTEN en KRACHTPUNTEN!\n\n\nEXTRA OPDRACHTEN om je Brawl Pass sneller te voltooien!\n\nEXCLUSIEVE CHROMATISCHE NAAM tijdens het hele seizoen!"
+TID_BRAWL_PASS_INFO_TEXT_GENERIC,"Verdien tal van extra beloningen, waaronder:\n\n<BRAWLER>, de nieuwe chromatische knokker!\n\nTIJDELIJKE EXCLUSIEVE SKIN: <SKIN_1>!\n\nTIJDELIJKE EXCLUSIEVE SKIN: <SKIN_2>!\n\nTIJDELIJKE EXCLUSIEVE en COOLE REACTIES voor <BRAWLER>!\n\nTIJDELIJKE EXCLUSIEVE SPRAYS!\n\n<NUM>MEGADOZEN!\n\nEXTRA MUNTEN en KRACHTPUNTEN!\n\n\nEXTRA OPDRACHTEN om je Brawl Pass sneller te voltooien!\n\n<NUM>EXTRA OPDRACHTWISSELS PER WEEK!\n\nEXCLUSIEVE CHROMATISCHE NAAM tijdens het hele seizoen!"
 TID_QUESTS_MORE,Alle opdrachten tonen
 TID_QUESTS_MORE_NEXT_SEASON,Je hebt alle opdrachten van seizoen <THIS_SEASON> voltooid. Er komen nieuwe opdrachten beschikbaar wanneer seizoen <NEXT_SEASON> begint.
 TID_BRAWL_PASS_AUTOCOLLECT_TITLE,Beloningen van seizoen <NUM>
@@ -4073,6 +4105,7 @@ TID_BANKHEIST_29T,Ommekeer
 TID_EMOTE_BUNDLE_ROSALLOWEEN,REACTIES VOOR BRAWL-O-WEEN-ROSA
 TID_EMOTE_BUNDLE_WF,WERELDFINALEREACTIES
 TID_EMOTE_PLAYERS,VOOR SPELERS
+TID_SPRAY_PLAYERS,SPRAY
 TID_KING_OF_HILL_30,Opgepast
 TID_KING_OF_HILL_31,Verbazende verrassing
 TID_PLAYER_MAP_SLOT_CREATE_NEW_TITLE,NIEUWE KAART MAKEN
@@ -4315,11 +4348,11 @@ TID_ICE_DUDE_DESC,Lou houdt altijd het hoofd koel en heeft allerlei koude kunstj
 TID_ICE_DUDE_WEAPON,KOUDE DOUCHE
 TID_ICE_DUDE_WEAPON_DESC,"Lou bestookt zijn tegenstanders met ijsjes. Als hij ze vaak genoeg raakt, worden ze <accumulatedStun> seconden lang bevroren."
 TID_ICE_DUDE_ULTI,GLAD IJS
-TID_ICE_DUDE_ULTI_DESC,"Lou gooit een fles met ijskoude siroop op de grond waardoor een ijzig, glibberig gebied wordt gevormd. Zelfs de meest behendige knokkers zullen moeite hebben om overeind te blijven!"
+TID_ICE_DUDE_ULTI_DESC,"Lou gooit een fles met ijskoude siroop op de grond waardoor een ijzig, glibberig gebied wordt gevormd dat vijanden langzaam bevriest. Zelfs de meest behendige knokkers zullen moeite hebben om overeind te blijven!"
 TID_SPEC_ABI_ICE_DUDE_1,SUPERKOEL
-TID_SPEC_ABI_ICE_DUDE_1_DESC,"Tegenstanders die in het effectgebied van Lou's super staan, bevriezen geleidelijk aan, zoals bij zijn hoofdaanval."
+TID_SPEC_ABI_ICE_DUDE_1_DESC,"Tegenstanders die zich in het supergebied van Lou bevinden, worden <c00cc00><VALUE1>%</c> sneller bevroren."
 TID_SPEC_ABI_ICE_DUDE_2,HYPOTHERMIE
-TID_SPEC_ABI_ICE_DUDE_2_DESC,"Tegenstanders verliezen maximaal <c00cc00><VALUE1>%</c> van hun herlaadsnelheid, afhankelijk van hoe bevroren ze zijn door Lou's aanvallen."
+TID_SPEC_ABI_ICE_DUDE_2_DESC,"Tegenstanders verliezen maximaal <c00cc00><VALUE1>%</c> van hun aanvalsschade, afhankelijk van hoe bevroren ze zijn door Lou's aanvallen."
 TID_ACCESSORY_ICE_DUDE_GADGET,IJSBLOK
 TID_ACCESSORY_ICE_DUDE_GADGET_DESC,Lou hult zichzelf in ijs en wordt <c00cc00><VALUE1></c> seconde(n) lang onkwetsbaar.
 TID_INVITE_CLAN_TOKEN_ERROR_FULL,Uitnodigen mislukt. Je club zit vol.
@@ -4702,7 +4735,7 @@ TID_SPEC_ABI_STICKY_BOMB_1_DESC,Elke tegenstander binnen het explosiebereik van 
 TID_SPEC_ABI_STICKY_BOMB_2,SUPERKLEVERIG
 TID_SPEC_ABI_STICKY_BOMB_2_DESC,"Secundaire kleefbommen die exploderen als gevolg van Squeaks super, vertragen tegenstanders gedurende <c00cc00><VALUE2></c> seconden."
 TID_ACCESSORY_STICKY_BOMB_RANGE,KATAPULT
-TID_ACCESSORY_STICKY_BOMB_RANGE_DESC,Squeaks volgende kleefbom heeft een <c00cc00><VALUE1>%</c> groter bereik.
+TID_ACCESSORY_STICKY_BOMB_RANGE_DESC,Squeaks volgende hoofdaanval richt <c00cc00><VALUE2>%</c> meer schade aan en heeft <c00cc00><VALUE1>%</c> meer bereik.
 TID_RANKED2_CONFIRM_QUESTION,KIEZEN?
 TID_RANKED_PICK_ERROR_BRAWLER_NOT_OWNED,Je hebt deze knokker nog niet ontgrendeld!
 TID_RANKED_PICK_ERROR_BRAWLER_BANNED,Deze knokker is geblokkeerd. Kies een andere knokker.
@@ -5224,7 +5257,7 @@ TID_GEAR_TOKEN_SHIELD,Schildtokens
 TID_GEAR_TOKEN_SPEED,Snelheidstokens
 TID_GEAR_TOKEN_TYPE_DAMAGE,SCHADE
 TID_GEAR_TOKEN_TYPE_HEAL,GEZONDHEID
-TID_GEAR_TOKEN_TYPE_RESISTANCE,WEERSTAND
+TID_GEAR_TOKEN_TYPE_VISION,ZICHT
 TID_GEAR_TOKEN_TYPE_SHIELD,SCHILD
 TID_GEAR_TOKEN_TYPE_SPEED,SNELHEID
 TID_GEAR_TOKEN,Uitrustingstoken
@@ -5238,22 +5271,22 @@ TID_GEAR_UPGRADE_BUTTON,UPGRADEN
 TID_GEAR_FOREST_SPEED_TITLE,SNELHEID
 TID_GEAR_STANDING_HEAL_TITLE,GEZONDHEID
 TID_GEAR_LOW_HEALTH_DAMAGE_TITLE,SCHADE
-TID_GEAR_SLOW_RESISTANCE_TITLE,WEERSTAND
+TID_GEAR_VISION_TITLE,ZICHT
 TID_GEAR_SHIELD_TITLE,SCHILD
 TID_GEAR_FOREST_SPEED_INFO,Verhoog je bewegingssnelheid met <NUM>% wanneer je je in een bosje bevindt.
-TID_GEAR_STANDING_HEAL_INFO,Herstel gezondheid <NUM>% sneller.
-TID_GEAR_LOW_HEALTH_DAMAGE_INFO,Richt <NUM>% extra schade aan wanneer je minder dan 50% gezondheid hebt.
-TID_GEAR_SLOW_RESISTANCE_INFO,Verminder de duur van verdovingseffecten en de impact van vertragingseffecten met <NUM>%.
-TID_GEAR_SHIELD_INFO,Krijg <NUM> extra levenspunten in de vorm van een schild. Het schild herstelt zich in 10 seconden wanneer je gezondheidsbalk vol is.
-TID_GEAR_FOREST_SPEED_UPGRADE_INFO,Verhoogde bewegingssnelheid in bosjes
-TID_GEAR_STANDING_HEAL_UPGRADE_INFO,Herstel gezondheid wanneer je stilstaat
-TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_INFO,Richt extra schade aan wanneer je minder dan 50% gezondheid hebt.
-TID_GEAR_SLOW_RESISTANCE_UPGRADE_INFO,Verminder de duur van verdoving en de impact van vertraging
-TID_GEAR_SHIELD_UPGRADE_INFO,Krijg extra levenspunten in de vorm van een schild
+TID_GEAR_STANDING_HEAL_INFO,HERSTEL GEZONDHEID <NUM>% effectiever.
+TID_GEAR_LOW_HEALTH_DAMAGE_INFO,Richt <NUM>% EXTRA SCHADE aan wanneer je minder dan 50% gezondheid hebt.
+TID_GEAR_VISION_INFO,ONTHUL tegenstanders gedurende <NUM> seconden nadat je ze schade hebt toegebracht.
+TID_GEAR_SHIELD_INFO,Krijg <NUM> extra levenspunten in de vorm van een SCHILD. Het schild herstelt zich in 10 seconden wanneer je gezondheidsbalk vol is.
+TID_GEAR_FOREST_SPEED_UPGRADE_INFO,VERHOOGDE BEWEGINGSSNELHEID in bosjes.
+TID_GEAR_STANDING_HEAL_UPGRADE_INFO,HERSTEL GEZONDHEID effectiever.
+TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_INFO,Richt extra SCHADE aan wanneer je minder dan 50% gezondheid hebt.
+TID_GEAR_VISION_UPGRADE_INFO,ONTHUL tegenstanders nadat je ze schade hebt toegebracht.
+TID_GEAR_SHIELD_UPGRADE_INFO,Krijg extra LEVENSPUNTEN in de vorm van een SCHILD.
 TID_GEAR_FOREST_SPEED_UPGRADE_TARGET,VERHOOGDE SNELHEID
-TID_GEAR_STANDING_HEAL_UPGRADE_TARGET,HERSTEL GEZONDHEID
+TID_GEAR_STANDING_HEAL_UPGRADE_TARGET,HERSTELBONUS
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_TARGET,EXTRA SCHADE
-TID_GEAR_SLOW_RESISTANCE_UPGRADE_TARGET,WEERSTAND
+TID_GEAR_VISION_UPGRADE_TARGET,DUUR VAN ONTHULLING
 TID_GEAR_SHIELD_UPGRADE_TARGET,SCHILD
 TID_GEAR_UPGRADED,UITRUSTING GEÜPGRADED!
 TID_GEAR_TITLE,UITRUSTING
@@ -5748,7 +5781,7 @@ TID_KICKER_DUDE_WEAPON_DESC,"Fang kan met zijn snelle schop een mooi trucje uitv
 TID_KICKER_DUDE_ULTI,KUNGFUTRAP
 TID_KICKER_DUDE_ULTI_DESC,Fang voert een vliegende trap uit waarmee hij vier opeenvolgende vijanden kan raken.
 TID_SPEC_ABI_KICKER_DUDE_1,SUPERSNEAKERS
-TID_SPEC_ABI_KICKER_DUDE_1_DESC,"Als Fang een vijand verslaat met zijn superaanval, wordt de super volledig opgeladen en kan hij deze meteen weer gebruiken."
+TID_SPEC_ABI_KICKER_DUDE_1_DESC,"Als Fang een vijandelijke knokker verslaat met zijn superaanval, wordt de super volledig opgeladen en kan hij deze meteen weer gebruiken."
 TID_SPEC_ABI_KICKER_DUDE_2,AFWEERTECHNIEK
 TID_SPEC_ABI_KICKER_DUDE_2_DESC,Fang loopt elke <c00cc00><VALUE1></c> seconden <c00cc00><VALUE2></c> schade minder op als hij wordt aangevallen. De maximale vermindering is <c00cc00><VALUE3>%</c> van de opgelopen schade.
 TID_ACCESSORY_KICKER_DUDE_GADGET,POPCORN-FU
@@ -5925,7 +5958,7 @@ TID_GAME_MODE_25_DESC,"Verzamel punten door tegenstanders te verslaan. Het eerst
 TID_DEATHMATCH_INTRO_TEXT,Versla tegenstanders!
 TID_NOTIFICATION_DEATHMATCH,Nieuwe kaart voor KLOPJACHT beschikbaar! Tijd om nieuwe beloningen te winnen!
 TID_GAME_MODE_26,LADING
-TID_GAME_MODE_26_DESC,"Blijf in de buurt van het mijnkarretje (?) van je team om het voort te duwen. Het team dat als eerste met het mijnkarretje het doelgebied bereikt, wint de wedstrijd. Door in de buurt van het mijnkarretje van de tegenstander te blijven, zal het langzamer bewegen. Als de tijd om is, wint het team dat het verst is gekomen."
+TID_GAME_MODE_26_DESC,"Blijf in de buurt van het mijnkarretje van je team om het voort te duwen. Het team dat als eerste met het mijnkarretje het doelgebied bereikt, wint de wedstrijd. Door in de buurt van het mijnkarretje van de tegenstander te blijven, zal het langzamer bewegen. Als de tijd om is, wint het team dat het verst is gekomen."
 TID_PAYLOAD_INTRO_TEXT,Duw het mijnkarretje!
 TID_NOTIFICATION_PAYLOAD,Nieuwe kaart voor LADING beschikbaar! Tijd om nieuwe beloningen te winnen!
 TID_ACCESSORY_PERCENTER_LIFESTEAL,RENTEHEFFING
@@ -5942,8 +5975,8 @@ TID_OPPONENT_ONE_POINT_FROM_VICTORY,NOG ÉÉN UITSCHAKELING VERWIJDERD VAN EEN N
 TID_VICTORY_MATCH_OVER,GEWONNEN!
 TID_LOSS_MATCH_OVER,VERSLAGEN!
 TID_SKIN_INFO_CAMPAIGN_LUNAR_BRAWL_2022,Lunaire knokskin 2022
-TID_LOGIN_CALENDAR_LEFT_TITLE,DAGELIJKSE BELONINGEN
-TID_LOGIN_CALENDAR_LEFT_SUBTITLE,Meld je <cfffc11>15 dagen achter elkaar</c> aan en verdien elke dag <cfffc11>GRATIS beloningen</c>.
+TID_LOGIN_CALENDAR_LEFT_TITLE,REEKS VAN DAGELIJKSE CADEAUS
+TID_LOGIN_CALENDAR_LEFT_SUBTITLE,<cfffc11>MELD JE 15 DAGEN LANG ELKE DAG AAN</c> om je <cfffc11>GRATIS CADEAUS</c> op te halen! <cfffc11>MIS GEEN ENKELE DAG</c> of je reeks is voorbij!
 TID_LOGIN_CALENDAR_RIGHT_TITLE,BELONINGEN VAN VANDAAG
 TID_LOGIN_CALENDAR_BUTTON_CLAIM,OPHALEN
 TID_LOGIN_CALENDAR_BUTTON_CLOSE,SLUITEN
@@ -5952,14 +5985,14 @@ TID_LOGIN_CALENDAR_CARD_DAY_NUM,DAG <NUM>
 TID_LOGIN_CALENDAR_CARD_AVAILABLE_IN_TIMER,Beschikbaar over: <TIME>
 TID_LOGIN_CALENDAR_CARD_TIME_TO_CLAIM,Resterende tijd om op te halen: <TIME>
 TID_LOGIN_CALENDAR_REWARD_BRAWLER_CHOICE,KIES EEN KNOKKER
-TID_LOGIN_CALENDAR_REWARD_LEVEL_UPGRADE,UPGRADE EEN KNOKKER
+TID_LOGIN_CALENDAR_REWARD_LEVEL_UPGRADE,UPGRADE\nVOOR KNOKKER
 TID_LOGIN_CALENDAR_REWARD_PIN,NIEUWE REACTIE
 TID_LOGIN_CALENDAR_REWARD_SKIN,NIEUWE SKIN
 TID_LOGIN_CALENDAR_REWARD_GADGET_CHOICE,KIES EEN GADGET
 TID_LOGIN_CALENDAR_REWARD_PIN_X2,2 NIEUWE REACTIES
 TID_LOGIN_CALENDAR_REWARD_STARPOWER_CHOICE,KIES EEN STERRENKRACHT
 TID_LOGIN_CALENDAR_REWARD_DESC_BRAWLER_CHOICE,Kies of je <HERONAME1> of <HERONAME2> wilt ontgrendelen.
-TID_LOGIN_CALENDAR_REWARD_DESC_LEVEL_UPGRADE,Upgrade <HERONAME> naar krachtlevel <VALUE>.
+TID_LOGIN_CALENDAR_REWARD_DESC_LEVEL_UPGRADE,Upgrade <HERONAME> naar KRACHTLEVEL <VALUE>.
 TID_LOGIN_CALENDAR_REWARD_DESC_PIN,Reactie: <VALUE1> (<VALUE2>/<VALUE3>). Gebruik reacties om te communiceren tijdens het gevecht.
 TID_LOGIN_CALENDAR_REWARD_DESC_SKIN,Pas <VALUE> aan met deze nieuwe skin!
 TID_LOGIN_CALENDAR_REWARD_DESC_GADGET_CHOICE,Kies een gadget voor <VALUE>. Gadgets zijn extra vaardigheden die je maximaal 3 keer per gevecht kunt gebruiken.
@@ -5975,7 +6008,7 @@ TID_ACCESSORY_SNAKE_OIL_SPREAD,BOOSTERSHOTS
 TID_ACCESSORY_SNAKE_OIL_SPREAD_DESC,Byron schiet met zijn volgende aanval <c00cc00><VALUE1></c> darts in plaats van een enkele dart. Elke dart richt <ccc0000><VALUE2>%</c> minder schade aan en geneest <ccc0000><VALUE3>%</c> minder.
 TID_GEMGRAB_48,Saffiervelden
 TID_ACCESSORY_STICKY_BOMB_VISION,RESIDU
-TID_ACCESSORY_STICKY_BOMB_VISION_DESC,Squeaks volgende exploderende klodders geven zijn bondgenoten de mogelijkheid om <c00cc00><VALUE1></c> seconden lang in bosjes te kijken.
+TID_ACCESSORY_STICKY_BOMB_VISION_DESC,Na de ontploffing van Squeaks volgende hoofdaanval blijft een residugebied liggen dat vijanden vertraagt en bondgenoten de mogelijkheid geeft om gedurende <c00cc00><VALUE1></c> seconden in struiken te kijken.
 TID_ACCESSORY_ELECTRO_SNIPER_BOUNCE,OMGEKEERDE POLARITEIT
 TID_ACCESSORY_ELECTRO_SNIPER_BOUNCE_DESC,Belles volgende elektroschicht kaatst tegen muren.
 TID_TUTORIAL_SD_FIRSTBATTLE,"De laatste knokker die overeind blijft, is de winnaar! Verzamel krachtkubussen uit dozen om je kracht te verhogen. Er komen gifwolken aan, dus blijf in beweging!"
@@ -6010,8 +6043,8 @@ TID_LOGIN_CALENDAR_TIP_SKINS,Gebruik de skinknop wanneer je Shelly selecteert om
 TID_LOGIN_CALENDAR_TIP_PINS,Gebruik reacties om te communiceren tijdens het gevecht.
 TID_LOGIN_CALENDAR_TIP_GADGET,Gadgets zijn extra vaardigheden die je maximaal 3 keer per gevecht kunt gebruiken.
 TID_LOGIN_CALENDAR_TIP_STAR_POWER,Sterrenkrachten zijn extra passieve vaardigheden voor je knokker.
-TID_LOGIN_CALENDAR_PINS_DESCRIPTION,Volgende reactie beschikbaar op dag <VALUE>.\nBlijf je dagelijks aanmelden om deze verzameling te voltooien.
-TID_LOGIN_CALENDAR_BUTTON_TITLE,BELONING VOOR DAG <VALUE> OVER:
+TID_LOGIN_CALENDAR_PINS_DESCRIPTION,Volgende reactie beschikbaar op DAG <VALUE>.\nBlijf je dagelijks aanmelden om deze verzameling te voltooien.
+TID_LOGIN_CALENDAR_BUTTON_TITLE,VOLGENDE DAGELIJKSE CADEAU OVER:
 TID_LOGIN_CALENDAR_REMINDER_1_TITLE,GRATIS beloningen voor <HERONAME> gedurende 14 dagen
 TID_LOGIN_CALENDAR_REMINDER_1_DESCRIPTION,Boost de voortgang van <HERONAME> en verzamel fantastische aanpassingsitems door je elke dag aan te melden!
 TID_LOGIN_CALENDAR_REMINDER_1_BUTTON,VOLGENDE
@@ -6041,7 +6074,7 @@ TID_SAVAGE_BULL_SKIN_SHOP,LEEUW-BULL
 TID_WASP_BO_SKIN,WESP-BO
 TID_WASP_BO_SKIN_SHOP,WESP-BO
 TID_MR_FLY_SKIN,MENEER VLIEG
-TID_MR_FLY_SKIN_SHOP,MENEER VLIEG
+TID_MR_FLY_SKIN_SHOP,MENEER\nVLIEG
 TID_BUNNY_GROM_SKIN,KONIJN-GROM
 TID_BUNNY_GROM_SKIN_SHOP,KONIJN-GROM
 TID_MANTIS_ROSA_SKIN,SPRINKHAAN-ROSA
@@ -6098,13 +6131,248 @@ TID_SHOWDOWN_69,Ravijnrivieren
 TID_SHOWDOWN_70,Het mortuarium
 TID_RANKED_BATTLE_END_EPIC,Epische overwinning!
 TID_RANKED_BATTLE_END_CLOSE,Op het nippertje!
+TID_JETPACK_GIRL,JANET
+TID_JETPACK_GIRL_SHORT_DESC,BESCHADIGER
+TID_JETPACK_GIRL_DESC,"Janet is de ster van de show en iedereen mag het weten, want schuw is ze niet.\n\nBleef haar zus Bonnie nu enkel eens uit de problemen..."
+TID_JETPACK_GIRL_WEAPON,HOGE NOOT
+TID_JETPACK_GIRL_WEAPON_DESC,"Janet zingt een hoge noot. Hoe langer ze de noot aanhoudt, hoe nauwer de straal wordt en hoe verder de noot zal vliegen."
+TID_JETPACK_GIRL_ULTI,CRESCENDO
+TID_JETPACK_GIRL_ULTI_DESC,Janet gebruikt haar jetpack om op te stijgen en haar tegenstanders van bovenaf aan te vallen voor de volledige duur van haar super.
+TID_SPEC_ABI_JETPACK_GIRL_1,ACHTER DE SCHERMEN
+TID_SPEC_ABI_JETPACK_GIRL_1_DESC,"Terwijl ze door de lucht vliegt met haar jetpack, onthult Janet een groot gebied van struiken om haar heen."
+TID_SPEC_ABI_JETPACK_GIRL_2,STEMTEST
+TID_SPEC_ABI_JETPACK_GIRL_2_DESC,De straal van Janets aanval zal <c00cc00><VALUE1>%</c> sneller nauwer worden.
+TID_ACCESSORY_JETPACK_GIRL_GADGET_1,EXTRA BAS
+TID_ACCESSORY_JETPACK_GIRL_GADGET_1_DESC,Janet plaatst een luidspreker die <c00cc00><VALUE1></c> schade per seconde toebrengt aan alle nabije vijanden tot deze verwoest wordt.
+TID_ACCESSORY_JETPACK_GIRL_GADGET_2,BACKSTAGEPAS
+TID_ACCESSORY_JETPACK_GIRL_GADGET_2_DESC,"Janets volgende hoge noot duwt haar naar achteren, waarbij ze zelfs over muren heen kan vliegen. Hoe gerichter haar aanval, hoe verder ze naar achteren gaat."
+TID_CANNON_GIRL,BONNIE
+TID_CANNON_GIRL_SHORT_DESC,HYBRIDE
+TID_CANNON_GIRL_DESC,Bonnie en haar kanon 'Clyde' halen graag kattenkwaad uit. Wie had er gedacht dat zo'n lief klein meisje zoveel chaos kon teweegbrengen?
+TID_CANNON_GIRL_WEAPON,LOSSE TAND
+TID_CANNON_GIRL_WEAPON_DESC,Bonnie vuurt met Clyde een enorme tand af naar haar vijanden.
+TID_CANNON_GIRL_ULTI,KANONSKOGEL
+TID_CANNON_GIRL_ULTI_DESC,Clyde lanceert Bonnie de lucht in. Ze kan zo over obstakels heen gaan en brengt schade toe aan nabije vijanden bij haar landing.
+TID_CANNON_GIRL_SMALL_WEAPON,BOMBERJACK
+TID_CANNON_GIRL_SMALL_WEAPON_DESC,Bonnie werpt een aantal kleine granaten vanuit haar mouwen.
+TID_CANNON_GIRL_SMALL_ULTI,CLYDE
+TID_CANNON_GIRL_SMALL_ULTI_DESC,"Bonnie roept Clyde en springt erin, waarbij ze de controle overneemt van het kanon."
+TID_SPEC_ABI_CANNON_GIRL_1,BUSKRUIT
+TID_SPEC_ABI_CANNON_GIRL_1_DESC,Het bereik van Bonnies superaanval neemt toe met <c00cc00><VALUE1>%</c>.
+TID_SPEC_ABI_CANNON_GIRL_2,VERSTANDSKIES
+TID_SPEC_ABI_CANNON_GIRL_2_DESC,"De losse tand verpulvert bij impact, waarbij <c00cc00><VALUE1>%</c> extra schade wordt toegebracht aan nabije vijanden."
+TID_ACCESSORY_CANNON_GIRL_SPEED,ZOETEKAUW
+TID_ACCESSORY_CANNON_GIRL_SPEED_DESC,Clydes bewegings- en herlaadsnelheid nemen toe met <c00cc00><VALUE1>%</c> gedurende <c00cc00><VALUE2></c> seconden.
+TID_ACCESSORY_CANNON_GIRL_DASH,CRASHTEST
+TID_ACCESSORY_CANNON_GIRL_DASH_DESC,"Bonnie sprint vooruit, waarbij ze vijanden terugduwt en <c00cc00><VALUE1></c> schade per treffer toebrengt."
+TID_ACCESSORY_BLOCKED_REQUIRES_CANNON,Clyde vereist!
+TID_ACCESSORY_BLOCKED_REQUIRES_ASSASSIN,Bonnie vereist!
+TID_LOGIN_CALENDAR_MISSED,Je hebt de resterende aanmeldingsbeloningen gemist.
+TID_ACCESSORY_POWER_LEVELER_EXTRA_LEVELS,STROOMSTORING
+TID_ACCESSORY_POWER_LEVELER_EXTRA_LEVELS_DESC,"Surge laat zijn stroomcircuits overbelast worden, waardoor zijn upgradelevel gedurende <c00cc00><VALUE2></c> seconden met <c00cc00><VALUE1></c> toeneemt."
+TID_ACCESSORY_POWER_LEVELER_SHIELD,KRACHTSCHILD
+TID_ACCESSORY_POWER_LEVELER_SHIELD_DESC,"Gedurende de volgende <c00cc00><VALUE1></c> seconden absorbeert Surge <c00cc00><VALUE2>%</c> van de schade van de volgende inkomende treffer, waarvan hij de energie omzet in <c00cc00><VALUE3></c> munitie."
+TID_GAME_MODE_27,ROBOTINVASIE
+TID_GAME_MODE_27_DESC,"Verdedig jezelf tegen de robotinvasie! Vernietig robots en verzamel bouten. Het eerste team dat <MAX_SCORE> bouten verzamelt, wint de wedstrijd!"
+TID_INVASION_INTRO_TEXT,Vernietig de robots!
+TID_NOTIFICATION_INVASION,Nieuwe kaart voor ROBOTINVASIE beschikbaar! Tijd om nieuwe beloningen te winnen!
+TID_INVASION_1,Devolutie
+TID_INVASION_2,Verdeeld
+TID_INVASION_3,Val Verde
+TID_INVASION_4,Kwadranten
+TID_INVASION_5,Oorlog der Knokkers
+TID_INVASION_6,Gevaarlijke zone
+TID_INVASION_7,In de roos
+TID_INVASION_8,Kiekeboe
+TID_INVASION_9,Robotaanval!
+TID_INVASION_10,Lineaire blokken
+TID_INVASION_11,Gangpaden
+TID_INVASION_12,Aan de oever
+TID_INVASION_13,Vertrek
+TID_INVASION_14,Forten
+TID_INVASION_15,De robot
+TID_INVASION_16,Een luide plek
+TID_SPRAYS_TUTORIAL_TITLE,SPRAYS
+TID_SPRAYS_TUTORIAL_HEADER,UIT JEZELF TIJDENS GEVECHTEN!
+TID_BRAWL_PASS_CANCEL_QUEST_REROLL,WISSEL ANNULEREN
+TID_BRAWL_PASS_REROLL_QUEST,OPDRACHT WISSELEN
+TID_BRAWL_PASS_QUEST_REROLL_COUNT,<num>/<max> wissels beschikbaar
+TID_BRAWL_PASS_QUEST_REROLL_REFRESH_TIME,Nieuwe over <time>
+TID_YOU_HAVE_USED_ALL_REROLLS,Je hebt al je wissels gebruikt! Verkrijg er meer met de Brawl Pass.
+TID_YOU_HAVE_USED_ALL_REROLLS_HAS_PREMIUM,Je hebt alle beschikbare wissels gebruikt!
+TID_QUEST_REROLL_INTRO,KIES EEN OPDRACHT OM TE WISSELEN
+TID_QUEST_REROLL_ACCEPT,ACCEPTEREN
+TID_QUEST_REROLL_REJECT,AFWIJZEN
+TID_REROLL_NOT_POSSIBLE_FOR_ITEM,Dit item kan niet gewisseld worden.
+TID_CONFIRM_QUEST_REROLL,OPDRACHT WISSELEN?
+TID_CONFIRM_QUEST_REROLL_DESC,Je nieuwe opdracht zal niet meer het volgende vereisen: <char> of <type>.\nResterende wissels: <rerolls>
+TID_CONFIRM_QUEST_REROLL_DESC_ONLY_TYPE,Je nieuwe opdracht zal niet meer het volgende vereisen:\n<type>.\nResterende wissels: <rerolls>
+TID_QUEST_TYPE_REQ_WIN,OVERWINNING
+TID_QUEST_TYPE_REQ_KILL,VERSLA VIJANDEN
+TID_QUEST_TYPE_REQ_DEAL_DAMAGE,SCHADE
+TID_QUEST_TYPE_REQ_HEAL,GENEZING
+TID_QUEST_TYPE_REQ_PLAY_AGAIN,OPNIEUW SPELEN
+TID_QUEST_TYPE_REQ_TEAM_PLAY,TEAMSPEL
+TID_QUEST_TYPE_REQ_MODE_SPECIFIC,MODUS-SPECIFIEK
+TID_CHINA_PRIVACY_SHOW_IN_LEADERBOARDS,WEERGEVEN IN KLASSEMENTEN
+TID_CHINA_PRIVACY_SHOW_PLAYER_PROFILE,SPELERSPROFIEL WEERGEVEN
+TID_CHINA_PRIVACY_SHOW_CLUB_DETAILS,CLUBINFORMATIE WEERGEVEN
+TID_CHINA_PRIVACY_ALLOW_SPECTATE,TOEKIJKEN TOESTAAN
+TID_CHINA_PRIVACY_INFO_OLD_PLAYERS_TITLE,Belangrijk bericht
+TID_CHINA_PRIVACY_INFO_OLD_PLAYERS_DESC,"Beste knokker,\nwe hebben enkele privacyinstellingen toegevoegd aan het spel die standaard zijn ingeschakeld. Je kunt deze instellingen aanpassen via de spelinstellingen > Privacyinstellingen."
+TID_CHINA_PRIVACY_INFO_NEW_PLAYERS_TITLE,Belangrijk bericht
+TID_CHINA_PRIVACY_INFO_NEW_PLAYERS_DESC,"Beste knokker,\nwe hebben enkele privacyinstellingen toegevoegd aan het spel die standaard zijn ingeschakeld. Sta je het spel toe om de instellingen in te schakelen?"
+TID_CHINA_PRIVACY_INFO_NEW_PLAYERS_BUTTON_ACCEPT,ACCEPTEREN
+TID_CHAT_JUST_DISABLED,Andere spelers hebben je gerapporteerd vanwege ongepaste opmerkingen. Je chat is uitgeschakeld voor <TIME>.
+TID_CHAT_UNAVAILABLE,Chat uitgeschakeld voor <TIME>.
+TID_CHAT_BANNED_REASON,Andere spelers hebben je gerapporteerd vanwege ongepaste opmerkingen.
+TID_CHAT_BANNED_PERIOD_OF,Je bent gedempt in de wereldwijde chat voor:
+TID_CHAT_FAIL_BANNED,Je bent gedempt voor <TIME>.
+TID_CHAT_JUST_BANNED,Andere spelers hebben je gerapporteerd vanwege ongepaste opmerkingen. Je bent gedempt voor <TIME>.
+TID_TENCENT_CUSTOMER_SUPPORT,Klantenondersteuning van Tencent
+TID_SELF_SERVICE_BUTTON,Zelfbediening
+TID_REPORT_CLUB_CONFIRMATION_TITLE,<NAME> rapporteren?
+TID_REPORT_CLUB_CONFIRMATION,Weet je zeker dat je <NAME> wilt rapporteren voor ongepast gedrag?
+TID_REPORT_PLAYER_CONFIRMATION_TITLE,<NAME> rapporteren?
+TID_REPORT_PLAYER_CONFIRMATION,Weet je zeker dat je <NAME> wilt rapporteren voor ongepast gedrag?
+TID_REPORT_BATTLE_PLAYER_CONFIRMATION_TITLE,<NAME> rapporteren?
+TID_REPORT_BATTLE_PLAYER_CONFIRMATION,Weet je zeker dat je <NAME> wilt rapporteren voor ongepast gedrag?
+TID_DELETE_ACCOUNT_TITLE,Mijn account verwijderen
+TID_UGC_INPUT_FEATURE_UNAVAILABLE,Deze functie is momenteel niet beschikbaar.
+TID_PLAYER_PROFILE_PRIVATE,Het profiel van deze speler is privé.
+TID_PLAYER_CLUB_INFO_PRIVATE,De clubinfo van deze speler is privé.
+TID_CLAN_RESPONSE_111,Deze functie is momenteel niet beschikbaar.
+TID_CLAN_RESPONSE_120,Deze beschrijving is niet toegestaan. Gelieve iets anders te proberen.
+TID_CHINA_LOGIN_DESC_YOOZOO,本公司积极履行《网络游戏行业防沉迷自律公约》抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》、《关于进一步严格管理切实防止未成年人沉迷网络游戏的通知》，所有网络游戏用户均需使用有效身份信息完成账号实名注册后方可进入游戏，认证为未成年的玩家将受到防沉迷功能限制。沪网文【2018】8544-517号、新出网证（沪）字33号 著作权人：SUPERCELL OY 出版单位：上海游族信息技术有限公司 运营单位：上海游族信息技术有限公司 批准文号：国新出审【2020】552号 出版物号：ISBN 978-7-498-07472-0
+TID_YOOZOO_LOGIN_AGREEMENTS,"Ik heb de <TOS>, het <PP>, de <CHILDREN> en de <THIRDPARTY> zorgvuldig gelezen en ga ermee akkoord."
+TID_YOOZOO_TERMS_CHILDREN,Richtlijnen betreffende de privacybescherming van kinderen van Yoozoo
+TID_TERMS_CHILDREN_BUTTON_YOOZOO,Richtlijnen betreffende de privacybescherming van kinderen van Yoozoo
+TID_YOOZOO_THIRDPARTY_INFO,Lijst van gedeelde info met derden
+TID_THIRD_PARTY_SHARING_BUTTON_YOOZOO,Lijst van gedeelde info met derden
+TID_YOOZOO_SYSTEM_SETTINGS_BUTTON,Systeeminstellingen
+TID_SKIN_PIN_INCLUDED,+ exclusieve reactie!
+TID_SKIN_PINS_INCLUDED,+ exclusief reactiepakket!
+TID_OWN_TEAM_BANS,BLOKKERINGEN TEAM BLAUW
+TID_ENEMY_TEAM_BANS,BLOKKERINGEN TEAM ROOD
+TID_PRE_PICK_YOUR_BRAWLER,KIES EERST JOUW KNOKKER
+TID_PRE_PICK,KIES EERST
+TID_CANCEL,ANNULEREN
+TID_WANTS_TO_PLAY,WIL SPELEN
+TID_WANT_TO_PLAY,WILLEN SPELEN
+TID_WANTS_TO_PLAY_MULTIPLE_TEAMMATES,<num> TEAMGENOTEN
+TID_BRAWL_PASS_SEASON_11,DE STUNTSHOW
+TID_SHOP_STUNTSHOW_SKINS,Stuntshowskins
+TID_SHOP_STUNTSHOW_TITLE,STUNTSHOW
+TID_SHOP_STUNTSHOW_INFO,Set van skins
+TID_SKIN_INFO_CAMPAIGN_STUNTSHOW,Stuntshowskin
+TID_EMOTE_BUNDLE_STUNTSHOW_PACK,Skinreacties van de stuntshow
+TID_EMOTE_BUNDLE_GOLDENWEEK_PACK,Skinreacties van de gouden week
+TID_SKIN_INFO_CAMPAIGN_GOLDENWEEK,Gouden-weekskin
+TID_SHOP_GOLDENWEEK_SKINS,Gouden-weekskins
+TID_SHOP_GOLDENWEEK_TITLE,GOUDEN WEEK
+TID_SHOP_GOLDENWEEK_INFO,Set van skins
+TID_SPRAY_BRAWLER_COMING_SOON,Knokkerspray binnenkort verwacht
+TID_SHOP_VILLAINS_SKINS,Skin van de clandestiene bende
+TID_SHOP_VILLAINS_TITLE,DE CLANDESTIENE BENDE
+TID_SHOP_VILLAINS_INFO,Set van skins
+TID_EMOTE_BUNDLE_VILLAINS_PACK,Skinreacties van de clandestiene bende
+TID_SKIN_INFO_CAMPAIGN_VILLAINS,Skin van de clandestiene bende
+TID_HOTZONE_33,Open zone
+TID_KNOCKOUT_18,Nieuw perspectief
+TID_TRUE_GOLD_BELLE_SKIN,MASSIEF GOUDEN BELLE
+TID_TRUE_GOLD_BELLE_SKIN_SHOP,MASSIEF GOUDEN\nBELLE
+TID_TRUE_SILVER_BELLE_SKIN,MASSIEF ZILVEREN BELLE
+TID_TRUE_SILVER_BELLE_SKIN_SHOP,MASSIEF ZILVEREN\nBELLE
+TID_TRUE_GOLD_STU_SKIN,MASSIEF GOUDEN STU
+TID_TRUE_GOLD_STU_SKIN_SHOP,MASSIEF GOUDEN\nSTU
+TID_TRUE_SILVER_STU_SKIN,MASSIEF ZILVEREN STU
+TID_TRUE_SILVER_STU_SKIN_SHOP,MASSIEF ZILVEREN\nSTU
+TID_TRUE_GOLD_ASH_SKIN,MASSIEF GOUDEN ASH
+TID_TRUE_GOLD_ASH_SKIN_SHOP,MASSIEF GOUDEN\nASH
+TID_TRUE_SILVER_ASH_SKIN,MASSIEF ZILVEREN ASH
+TID_TRUE_SILVER_ASH_SKIN_SHOP,MASSIEF ZILVEREN\nASH
+TID_TRUE_GOLD_MEG_SKIN,MASSIEF GOUDEN MEG
+TID_TRUE_GOLD_MEG_SKIN_SHOP,MASSIEF GOUDEN\nMEG
+TID_TRUE_SILVER_MEG_SKIN,MASSIEF ZILVEREN MEG
+TID_TRUE_SILVER_MEG_SKIN_SHOP,MASSIEF ZILVEREN\nMEG
+TID_TRUE_GOLD_LOLA_SKIN,MASSIEF GOUDEN LOLA
+TID_TRUE_GOLD_LOLA_SKIN_SHOP,MASSIEF GOUDEN\nLOLA
+TID_TRUE_SILVER_LOLA_SKIN,MASSIEF ZILVEREN LOLA
+TID_TRUE_SILVER_LOLA_SKIN_SHOP,MASSIEF ZILVEREN\nLOLA
+TID_CRASH_TEST_DARRYL_SKIN,CRASHTEST-DARRYL
+TID_CRASH_TEST_DARRYL_SKIN_SHOP,CRASHTEST-\nDARRYL
+TID_BIKER_CARL_SKIN,BIKER-CARL
+TID_BIKER_CARL_SKIN_SHOP,BIKER-CARL
+TID_PYRO_SPIKE_SKIN,PYRO-SPIKE
+TID_PYRO_SPIKE_SKIN_SHOP,PYRO-SPIKE
+TID_MONSTER_TRUCK_MEG_SKIN,MONSTERTRUCK-MEG
+TID_MONSTER_TRUCK_MEG_SKIN_SHOP,MONSTERTRUCK-\nMEG
+TID_OVERLORD_BYRON_SKIN,OPPERHEER BYRON
+TID_OVERLORD_BYRON_SKIN_SHOP,OPPERHEER\nBYRON
+TID_GALAXY_STORM_LOLA_SKIN,INTERSTELLAIRE LOLA
+TID_GALAXY_STORM_LOLA_SKIN_SHOP,INTERSTELLAIRE\nLOLA
+TID_EMPRESS_BONNIE_SKIN,KEIZERIN BONNIE
+TID_EMPRESS_BONNIE_SKIN_SHOP,KEIZERIN\nBONNIE
+TID_TEMPEST_TARA_SKIN,STORMWIND-TARA
+TID_TEMPEST_TARA_SKIN_SHOP,STORMWIND-\nTARA
+TID_VALKYRIE_JANET_SKIN,VALKYRIE-JANET
+TID_VALKYRIE_JANET_SKIN_SHOP,VALKYRIE-\nJANET
+TID_DARUMA_MRP_SKIN,DARUMA-MENEER P
+TID_DARUMA_MRP_SKIN_SHOP,DARUMA-\nMENEER P
+TID_SKIN_INFO_CAMPAIGN_LANTERN,Lantaarnseizoenskin
+TID_ACCESSORY_DRILLER_REBUILD,REPAREREN
+TID_ACCESSORY_DRILLER_REBUILD_DESC,Jacky repareert de omgeving binnen een klein gebied om haar heen.
+TID_ACCESSORY_ASSAULT_SHOTGUN_PROJECTILES,MUNTENREGEN
+TID_ACCESSORY_ASSAULT_SHOTGUN_PROJECTILES_DESC,"De volgende keer dat Griff zijn hoofdaanval gebruikt, schiet hij <c00cc00><VALUE1>%</c> meer munten."
+TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD,DANSENDE VLAMMEN
+TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD_DESC,Amber vuurt <c00cc00><VALUE3></c> vlammen af die rond haar blijven cirkelen en <c00cc00><VALUE1></c> schade per treffer aanrichten gedurende <c00cc00><VALUE2></c> seconden.
+TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD,GEREEDSCHAPSKIST
+TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD_DESC,Meg laat haar gereedschapskist achter waarmee de herlaadsnelheid van haar bondgenoten met <c00cc00><VALUE1>%</c> toeneemt totdat de kist vernietigd wordt.
+TID_ACCESSORY_ROPE_DUDE_VISION,X-RAYZONNEBRIL
+TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz kan in alle struiken kijken gedurende <c00cc00><VALUE1></c> seconden.
+TID_LOGIN_CALENDAR_ALREADY_HAVE_BRAWLER,Je hebt deze knokker al.
+TID_LOGIN_CALENDAR_ALREADY_HAVE_GADGET,Je hebt deze gadget al.
+TID_LOGIN_CALENDAR_ALREADY_HAVE_STAR_POWER,Je hebt deze sterrenkracht al.
+TID_LOGIN_CALENDAR_FINAL_REWARD_MESSAGE,GRATIS <cFF92F9>EPISCHE</c> KNOKKER OP DAG 15
+TID_LOGIN_CALENDAR_WARNING_MESSAGE,<cFFB820>MIS GEEN ENKELE DAG</c> of je resterende cadeaus zullen verdwijnen!
+TID_POWER_LEAGUE_BRAWLER_REQUIREMENT_SELECT,Je moet minstens 12 knokkers ontgrendelen om dit evenement te kunnen spelen.
+TID_TEAM_ERROR_134,Je moet minstens 12 knokkers ontgrendelen om dit evenement te kunnen spelen.
+TID_MATCHMAKE_FAILED_25,Je moet minstens 12 knokkers ontgrendelen om dit evenement te kunnen spelen.
+TID_POWER_LEAGUE_BRAWLER_REQUIREMENT_INVITE,Deze speler heeft onvoldoende knokkers ontgrendeld om dit evenement te kunnen spelen.
+TID_TEAM_ERROR_133,Deze speler heeft onvoldoende knokkers ontgrendeld om dit evenement te kunnen spelen.
+TID_REWARD_SPRAY_SLOT,EXTRA SPRAYVAK
+TID_SPRAY_SLOT_TITLE,SPRAYVAK
+TID_KNOCKOUT_19,X-markering
+TID_BANKHEIST_31,Stratego
+TID_LOGIN_CALENDAR_FINAL_REWARD,GRATIS <cFF92F9>EPISCHE</c> KNOKKER
+TID_LOGIN_CALENDAR_OR,OF
+TID_LOGIN_CALENDAR_BRAWLER_UPGRADED,KNOKKER GEÜPGRADED!
+TID_LOGIN_CALENDAR_TOOLTIP_SKIN,"Ontgrendel deze nieuwe knokkerskin.\n\nWanneer je ten minste één skin van een knokker ontgrendeld hebt, selecteer je die knokker via de knokkerpagina en tik je vervolgens op de knop met de kleerhanger om de skin uit te rusten."
+TID_LOGIN_CALENDAR_TOOLTIP_CHOOSE_BRAWLER,Kies welke knokker je als volgende wilt ontgrendelen!
+TID_LOGIN_CALENDAR_TOOLTIP_UPGRADE_BRAWLER,"Upgrade je knokkers! Verbeter hun gezondheid, aanvalsschade en superschade bij elk nieuw krachtlevel. Het gadgetvak van een knokker ontgrendelt op krachtlevel 7 en hun sterrenkrachtvak ontgrendelt op krachtlevel 9."
+TID_LOGIN_CALENDAR_TOOLTIP_PIN_1,Gebruik reacties om te communiceren tijdens gevechten. Reacties kunnen uitgerust worden via de knokkerpagina van elke knokker.
+TID_LOGIN_CALENDAR_TOOLTIP_PIN_2,Gebruik reacties om te communiceren tijdens gevechten. Reacties kunnen uitgerust worden via de knokkerpagina van elke knokker.
+TID_LOGIN_CALENDAR_TOOLTIP_GADGETS,Kies een gadget voor je knokker. Gadgets zijn een extra vaardigheid die je maximaal 3 keer per gevecht kunt gebruiken. Alle knokkers hebben hun eigen unieke gadgets.
+TID_LOGIN_CALENDAR_TOOLTIP_STAR_POWER,Kies een sterrenkracht voor je knokker. Sterrenkrachten zijn een extra passieve vaardigheid voor je knokker. Alle knokkers hebben hun eigen unieke sterrenkrachten.
+TID_LOGIN_CALENDAR_TUTORIAL_TOOLTIP,Je eerste dagelijkse cadeau wacht op je!\Tik om het te VERZAMELEN.
+TID_BRAWL_PASS_INFO_TEXT_10,"Verdien tal van extra beloningen, waaronder:\n\n<BRAWLER>, de nieuwe chromatische knokker!\n\nEXCLUSIEVE SKIN: <SKIN_1>!\n\nEXCLUSIEVE SKIN: <SKIN_2>!\n\nEXCLUSIEVE en COOLE REACTIES voor <BRAWLER>!\n\n<NUM> MEGADOZEN!\n\nEXTRA MUNTEN en KRACHTPUNTEN!\n\n\nEXTRA OPDRACHTEN om je Brawl Pass sneller te voltooien!\n\n<NUM> EXTRA OPDRACHTWISSELS PER WEEK!\n\nEXCLUSIEVE CHROMATISCHE NAAM tijdens het hele seizoen!"
+TID_LOGIN_CALENDAR_STARR_PARK,STARR PARK
+TID_LOGIN_CALENDAR_LOYALTY_PROGRAM,LOYALITEITSPROGRAMMA
+TID_LOGIN_CALENDAR_TITLE,LOYALITEITSPROGRAMMA VAN STARR PARK
+TID_REWARD_DESC_PLAYER_ICON_REGULAR,SPELERPICTOGRAM
+TID_CLUB_LEAGUE_CLUB_COINS_HOW_TO_GET,Verdien clubmunten door deel te nemen aan de clubcompetitie.
+TID_SHOP_OFFER_INFO_25,Een nieuw spelerpictogram!
+TID_LOGIN_CALENDAR_TUTORIAL_COME_BACK,"<cFFB820>KOM MORGEN TERUG</c> om dit cadeau OP TE HALEN, anders is je reeks voorbij!"
+TID_BRAWLBALL_49,Harde stuiter
+TID_BRAWLBALL_50,Op volle toeren
+TID_BRAWLBALL_51,Topscore
+TID_BRAWLBALL_52,Pingpong
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,
 TID_REGION_CUSTOM4,
 TID_REGION_CUSTOM5,
 TID_HERO_INFO_GENERICS_HEADER,
-TID_CHINA_LOGIN_DESC,
 TID_VOTE_MAP_REWARD_LABEL,
 TID_RANKED_QUEST_PROGRESS,
 TID_ONLINE_CL_TEAMS,

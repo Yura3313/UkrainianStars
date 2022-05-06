@@ -22,11 +22,11 @@
     .end annotation
 .end field
 
-.field public b:Ly7/f;
+.field public b:Lz7/f;
 
 
 # direct methods
-.method public constructor <init>(Ly7/f;)V
+.method public constructor <init>(Lz7/f;)V
     .locals 1
 
     .line 1
@@ -40,18 +40,18 @@
     iput-object v0, p0, Ld7/a;->a:Ljava/util/List;
 
     .line 3
-    iput-object p1, p0, Ld7/a;->b:Ly7/f;
+    iput-object p1, p0, Ld7/a;->b:Lz7/f;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lg7/c;Lb8/a;)V
+.method public a(Lg7/c;Lc8/a;)V
     .locals 4
 
     .line 1
-    iget-boolean v0, p1, Lg7/c;->k:Z
+    iget-boolean v0, p1, Lg7/c;->l:Z
 
     if-nez v0, :cond_0
 
@@ -61,23 +61,23 @@
     const/4 v0, 0x0
 
     .line 2
-    sget-object v1, Lb8/b;->AUTH_TOKEN_NOT_PROVIDED:Lb8/b;
+    sget-object v1, Lc8/b;->z:Lc8/b;
 
     if-ne p2, v1, :cond_1
 
     .line 3
-    sget-object v0, Lq9/a;->AUTH_TOKEN_NOT_PROVIDED:Lq9/a;
+    sget-object v0, Lq9/a;->g:Lq9/a;
 
     goto :goto_0
 
     .line 4
     :cond_1
-    sget-object v1, Lb8/b;->INVALID_AUTH_TOKEN:Lb8/b;
+    sget-object v1, Lc8/b;->y:Lc8/b;
 
     if-ne p2, v1, :cond_2
 
     .line 5
-    sget-object v0, Lq9/a;->INVALID_AUTH_TOKEN:Lq9/a;
+    sget-object v0, Lq9/a;->h:Lq9/a;
 
     :cond_2
     :goto_0
@@ -116,10 +116,10 @@
 
     .line 8
     :cond_5
-    iget-object p2, p0, Ld7/a;->b:Ly7/f;
+    iget-object p2, p0, Ld7/a;->b:Lz7/f;
 
     .line 9
-    iget-object p2, p2, Ly7/f;->j:Lq9/h;
+    iget-object p2, p2, Lz7/f;->j:Lq9/h;
 
     .line 10
     iget-object v1, p2, Lq9/h;->b:Lq9/b;
@@ -127,7 +127,7 @@
     if-eqz v1, :cond_8
 
     .line 11
-    iget-boolean v1, p1, Lg7/c;->k:Z
+    iget-boolean v1, p1, Lg7/c;->l:Z
 
     if-nez v1, :cond_6
 
@@ -140,7 +140,7 @@
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 13
-    iget-object v2, p1, Lg7/c;->a:Ljava/lang/Long;
+    iget-object v2, p1, Lg7/c;->g:Ljava/lang/Long;
 
     .line 14
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -150,7 +150,7 @@
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 15
-    iget-object v2, p1, Lg7/c;->n:Ljava/lang/String;
+    iget-object v2, p1, Lg7/c;->o:Ljava/lang/String;
 
     .line 16
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -196,22 +196,22 @@
     new-instance v1, Lcom/helpshift/f$b;
 
     .line 20
-    iget-object v2, p1, Lg7/c;->b:Ljava/lang/String;
+    iget-object v2, p1, Lg7/c;->h:Ljava/lang/String;
 
     .line 21
-    iget-object v3, p1, Lg7/c;->h:Ljava/lang/String;
+    iget-object v3, p1, Lg7/c;->i:Ljava/lang/String;
 
     .line 22
     invoke-direct {v1, v2, v3}, Lcom/helpshift/f$b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 23
-    iget-object v2, p1, Lg7/c;->i:Ljava/lang/String;
+    iget-object v2, p1, Lg7/c;->j:Ljava/lang/String;
 
     .line 24
     iput-object v2, v1, Lcom/helpshift/f$b;->c:Ljava/lang/String;
 
     .line 25
-    iget-object p1, p1, Lg7/c;->n:Ljava/lang/String;
+    iget-object p1, p1, Lg7/c;->o:Ljava/lang/String;
 
     .line 26
     iput-object p1, v1, Lcom/helpshift/f$b;->d:Ljava/lang/String;
@@ -222,13 +222,13 @@
     move-result-object p1
 
     .line 28
-    iget-object v1, p2, Lq9/h;->a:Ly7/f;
+    iget-object v1, p2, Lq9/h;->a:Lz7/f;
 
     new-instance v2, Lq9/l;
 
     invoke-direct {v2, p2, p1, v0}, Lq9/l;-><init>(Lq9/h;Lcom/helpshift/f;Lq9/a;)V
 
-    invoke-virtual {v1, v2}, Ly7/f;->g(Ly7/g;)V
+    invoke-virtual {v1, v2}, Lz7/f;->h(Lz7/g;)V
 
     :cond_8
     :goto_2

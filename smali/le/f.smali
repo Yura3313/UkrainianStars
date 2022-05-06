@@ -126,7 +126,7 @@
 
     const-string v1, "Arrays.copyOf(result, newSize)"
 
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_4
 
@@ -145,7 +145,7 @@
 
     const-string v0, "Arrays.copyOf(result, size)"
 
-    invoke-static {p0, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     :goto_3
     return-object p0
@@ -302,7 +302,7 @@
 
     const-string v1, "Arrays.copyOf(result, newSize)"
 
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_3
 
@@ -329,7 +329,7 @@
 
     const-string p0, "Arrays.copyOf(result, size)"
 
-    invoke-static {p1, p0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     :cond_8
     :goto_2

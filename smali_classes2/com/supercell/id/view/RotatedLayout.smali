@@ -34,7 +34,7 @@
     const-string p1, "context"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -52,7 +52,7 @@
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
     .line 2
-    sget-object v0, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 3
     invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
@@ -112,7 +112,7 @@
     const-string p1, "canvas"
 
     .line 7
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

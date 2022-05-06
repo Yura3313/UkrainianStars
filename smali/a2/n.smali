@@ -17,7 +17,7 @@
 
 
 # virtual methods
-.method public abstract b(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public abstract d(Ljava/lang/Object;Ljava/lang/Object;)V
     .param p1    # Ljava/lang/Object;
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation

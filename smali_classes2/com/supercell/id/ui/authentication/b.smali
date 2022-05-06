@@ -12,25 +12,25 @@
         "Lle/j;",
         "Lke/l<",
         "Ljava/lang/String;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
+.field public final synthetic g:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
 
-.field public final synthetic b:Ljava/lang/String;
+.field public final synthetic h:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/authentication/b;->a:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
+    iput-object p1, p0, Lcom/supercell/id/ui/authentication/b;->g:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/authentication/b;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/id/ui/authentication/b;->h:Ljava/lang/String;
 
     const/4 p1, 0x1
 
@@ -52,9 +52,9 @@
     if-eqz p1, :cond_1
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/ui/authentication/b;->a:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
+    iget-object v1, p0, Lcom/supercell/id/ui/authentication/b;->g:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
 
-    iget-object v1, v1, Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;->b:Ljava/lang/ref/WeakReference;
+    iget-object v1, v1, Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;->h:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -77,7 +77,7 @@
     invoke-direct {v3}, Landroid/text/SpannableStringBuilder;-><init>()V
 
     .line 5
-    iget-object v4, p0, Lcom/supercell/id/ui/authentication/b;->b:Ljava/lang/String;
+    iget-object v4, p0, Lcom/supercell/id/ui/authentication/b;->h:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
@@ -101,7 +101,7 @@
 
     const-string v6, "(this as java.lang.Strin\u2026replace(oldChar, newChar)"
 
-    invoke-static {v5, v6}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 8
     invoke-virtual {v3, v5}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
@@ -152,7 +152,7 @@
     invoke-virtual {v3, v4, v0, v5, v6}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
     .line 14
-    invoke-static {v2}, Lce/f;->g(Landroid/content/Context;)Landroid/graphics/Bitmap;
+    invoke-static {v2}, Lp5/c0;->g(Landroid/content/Context;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
@@ -209,7 +209,7 @@
 
     .line 24
     :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -217,7 +217,7 @@
     const-string p1, "buttonText"
 
     .line 25
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

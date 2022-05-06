@@ -1,95 +1,180 @@
-.class public abstract Lwd/t;
-.super Ljava/lang/Object;
-.source "ViewUtil.kt"
+.class public final Lwd/t;
+.super Lle/j;
+.source "IdFriendsStorage.kt"
 
 # interfaces
-.implements Lcom/supercell/id/view/RootFrameLayout$a;
-.implements Landroid/view/View$OnAttachStateChangeListener;
+.implements Lke/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lle/j;",
+        "Lke/l<",
+        "Lqc/t;",
+        "Lae/i;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public a:Lcom/supercell/id/view/RootFrameLayout;
+.field public final synthetic g:Lwd/s;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lwd/s;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lwd/t;->g:Lwd/s;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onViewAttachedToWindow(Landroid/view/View;)V
-    .locals 1
-
-    if-eqz p1, :cond_1
+.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    invoke-static {p1}, Lwd/f2;->g(Landroid/view/View;)Lcom/supercell/id/view/RootFrameLayout;
+    check-cast p1, Lqc/t;
+
+    const-string v0, "profileInfo"
+
+    const/4 v1, 0x0
+
+    if-eqz p1, :cond_3
+
+    .line 2
+    iget-object v0, p0, Lwd/t;->g:Lwd/s;
+
+    .line 3
+    iget-object p1, p1, Lqc/t;->n:Ljava/util/List;
+
+    if-eqz p1, :cond_2
+
+    .line 4
+    iget-object v1, v0, Lwd/u0;->b:Ljava/util/concurrent/ConcurrentHashMap;
+
+    monitor-enter v1
+
+    .line 5
+    :try_start_0
+    iget-object v2, v0, Lwd/u0;->a:Ljava/lang/Object;
+
+    .line 6
+    check-cast v2, Lwd/r;
+
+    .line 7
+    new-instance v2, Lwd/r;
+
+    const/4 v3, 0x1
+
+    invoke-direct {v2, p1, v3}, Lwd/r;-><init>(Ljava/util/List;Z)V
+
+    .line 8
+    iput-object v2, v0, Lwd/u0;->a:Ljava/lang/Object;
+
+    .line 9
+    iget-object p1, v0, Lwd/u0;->b:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p1
 
-    .line 2
-    iput-object p1, p0, Lwd/t;->a:Lcom/supercell/id/view/RootFrameLayout;
+    invoke-interface {p1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    if-eqz p1, :cond_0
+    move-result-object p1
 
-    .line 3
-    iget-object v0, p1, Lcom/supercell/id/view/RootFrameLayout;->b:Ljava/util/List;
+    .line 10
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
-    invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    move-result v2
 
-    .line 4
-    iget-object p1, p1, Lcom/supercell/id/view/RootFrameLayout;->a:Landroid/graphics/Rect;
+    if-eqz v2, :cond_1
 
-    invoke-interface {p0, p1}, Lcom/supercell/id/view/RootFrameLayout$a;->a(Landroid/graphics/Rect;)V
+    .line 11
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    move-result-object v2
+
+    check-cast v2, Ljava/util/Map$Entry;
+
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lke/l;
+
+    if-eqz v2, :cond_0
+
+    .line 12
+    iget-object v3, v0, Lwd/u0;->a:Ljava/lang/Object;
+
+    invoke-interface {v2, v3}, Lke/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_0
+
+    .line 13
     :cond_0
-    return-void
+    invoke-interface {p1}, Ljava/util/Iterator;->remove()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    goto :goto_0
+
+    .line 14
     :cond_1
-    const-string p1, "v"
+    monitor-exit v1
 
-    .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    .line 15
+    new-instance p1, Lwd/u0$a;
 
-    const/4 p1, 0x0
+    invoke-direct {p1, v0}, Lwd/u0$a;-><init>(Lwd/u0;)V
+
+    invoke-static {p1}, Lvd/c2;->a(Lke/a;)V
+
+    .line 16
+    sget-object p1, Lae/i;->a:Lae/i;
+
+    return-object p1
+
+    :catchall_0
+    move-exception p1
+
+    .line 17
+    monitor-exit v1
 
     throw p1
-.end method
 
-.method public onViewDetachedFromWindow(Landroid/view/View;)V
-    .locals 1
+    :cond_2
+    const-string p1, "friends"
 
-    const/4 v0, 0x0
+    .line 18
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    if-eqz p1, :cond_1
+    throw v1
 
-    .line 1
-    iget-object p1, p0, Lwd/t;->a:Lcom/supercell/id/view/RootFrameLayout;
+    .line 19
+    :cond_3
+    invoke-static {v0}, Ls3/b;->h(Ljava/lang/String;)V
 
-    if-eqz p1, :cond_0
+    goto :goto_2
 
-    .line 2
-    iget-object p1, p1, Lcom/supercell/id/view/RootFrameLayout;->b:Ljava/util/List;
+    :goto_1
+    throw v1
 
-    invoke-interface {p1, p0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
-
-    .line 3
-    :cond_0
-    iput-object v0, p0, Lwd/t;->a:Lcom/supercell/id/view/RootFrameLayout;
-
-    return-void
-
-    :cond_1
-    const-string p1, "v"
-
-    .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
+    :goto_2
+    goto :goto_1
 .end method

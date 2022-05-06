@@ -26,7 +26,7 @@
     return-void
 .end method
 
-.method public static d(Ljava/lang/Object;J)Lcom/google/crypto/tink/shaded/protobuf/q$d;
+.method public static d(Ljava/lang/Object;J)Lcom/google/crypto/tink/shaded/protobuf/q$c;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -35,17 +35,17 @@
             ">(",
             "Ljava/lang/Object;",
             "J)",
-            "Lcom/google/crypto/tink/shaded/protobuf/q$d<",
+            "Lcom/google/crypto/tink/shaded/protobuf/q$c<",
             "TE;>;"
         }
     .end annotation
 
     .line 1
-    invoke-static {p0, p1, p2}, Lm5/b0;->n(Ljava/lang/Object;J)Ljava/lang/Object;
+    invoke-static {p0, p1, p2}, Lm5/a0;->n(Ljava/lang/Object;J)Ljava/lang/Object;
 
     move-result-object p0
 
-    check-cast p0, Lcom/google/crypto/tink/shaded/protobuf/q$d;
+    check-cast p0, Lcom/google/crypto/tink/shaded/protobuf/q$c;
 
     return-object p0
 .end method
@@ -56,12 +56,12 @@
     .locals 0
 
     .line 1
-    invoke-static {p1, p2, p3}, Lcom/google/crypto/tink/shaded/protobuf/u$c;->d(Ljava/lang/Object;J)Lcom/google/crypto/tink/shaded/protobuf/q$d;
+    invoke-static {p1, p2, p3}, Lcom/google/crypto/tink/shaded/protobuf/u$c;->d(Ljava/lang/Object;J)Lcom/google/crypto/tink/shaded/protobuf/q$c;
 
     move-result-object p1
 
     .line 2
-    invoke-interface {p1}, Lcom/google/crypto/tink/shaded/protobuf/q$d;->j()V
+    invoke-interface {p1}, Lcom/google/crypto/tink/shaded/protobuf/q$c;->k()V
 
     return-void
 .end method
@@ -80,12 +80,12 @@
     .end annotation
 
     .line 1
-    invoke-static {p1, p3, p4}, Lcom/google/crypto/tink/shaded/protobuf/u$c;->d(Ljava/lang/Object;J)Lcom/google/crypto/tink/shaded/protobuf/q$d;
+    invoke-static {p1, p3, p4}, Lcom/google/crypto/tink/shaded/protobuf/u$c;->d(Ljava/lang/Object;J)Lcom/google/crypto/tink/shaded/protobuf/q$c;
 
     move-result-object v0
 
     .line 2
-    invoke-static {p2, p3, p4}, Lcom/google/crypto/tink/shaded/protobuf/u$c;->d(Ljava/lang/Object;J)Lcom/google/crypto/tink/shaded/protobuf/q$d;
+    invoke-static {p2, p3, p4}, Lcom/google/crypto/tink/shaded/protobuf/u$c;->d(Ljava/lang/Object;J)Lcom/google/crypto/tink/shaded/protobuf/q$c;
 
     move-result-object p2
 
@@ -104,7 +104,7 @@
     if-lez v2, :cond_1
 
     .line 5
-    invoke-interface {v0}, Lcom/google/crypto/tink/shaded/protobuf/q$d;->A()Z
+    invoke-interface {v0}, Lcom/google/crypto/tink/shaded/protobuf/q$c;->C()Z
 
     move-result v3
 
@@ -113,7 +113,7 @@
     add-int/2addr v2, v1
 
     .line 6
-    invoke-interface {v0, v2}, Lcom/google/crypto/tink/shaded/protobuf/q$d;->m(I)Lcom/google/crypto/tink/shaded/protobuf/q$d;
+    invoke-interface {v0, v2}, Lcom/google/crypto/tink/shaded/protobuf/q$c;->o(I)Lcom/google/crypto/tink/shaded/protobuf/q$c;
 
     move-result-object v0
 
@@ -128,9 +128,9 @@
 
     .line 8
     :cond_2
-    sget-object v0, Lm5/b0;->f:Lm5/b0$e;
+    sget-object v0, Lm5/a0;->f:Lm5/a0$e;
 
-    invoke-virtual {v0, p1, p3, p4, p2}, Lm5/b0$e;->q(Ljava/lang/Object;JLjava/lang/Object;)V
+    invoke-virtual {v0, p1, p3, p4, p2}, Lm5/a0$e;->q(Ljava/lang/Object;JLjava/lang/Object;)V
 
     return-void
 .end method
@@ -152,12 +152,12 @@
     .end annotation
 
     .line 1
-    invoke-static {p1, p2, p3}, Lcom/google/crypto/tink/shaded/protobuf/u$c;->d(Ljava/lang/Object;J)Lcom/google/crypto/tink/shaded/protobuf/q$d;
+    invoke-static {p1, p2, p3}, Lcom/google/crypto/tink/shaded/protobuf/u$c;->d(Ljava/lang/Object;J)Lcom/google/crypto/tink/shaded/protobuf/q$c;
 
     move-result-object v0
 
     .line 2
-    invoke-interface {v0}, Lcom/google/crypto/tink/shaded/protobuf/q$d;->A()Z
+    invoke-interface {v0}, Lcom/google/crypto/tink/shaded/protobuf/q$c;->C()Z
 
     move-result v1
 
@@ -179,14 +179,14 @@
 
     .line 4
     :goto_0
-    invoke-interface {v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/q$d;->m(I)Lcom/google/crypto/tink/shaded/protobuf/q$d;
+    invoke-interface {v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/q$c;->o(I)Lcom/google/crypto/tink/shaded/protobuf/q$c;
 
     move-result-object v0
 
     .line 5
-    sget-object v1, Lm5/b0;->f:Lm5/b0$e;
+    sget-object v1, Lm5/a0;->f:Lm5/a0$e;
 
-    invoke-virtual {v1, p1, p2, p3, v0}, Lm5/b0$e;->q(Ljava/lang/Object;JLjava/lang/Object;)V
+    invoke-virtual {v1, p1, p2, p3, v0}, Lm5/a0$e;->q(Ljava/lang/Object;JLjava/lang/Object;)V
 
     :cond_1
     return-object v0

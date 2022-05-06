@@ -35,13 +35,13 @@
     iput-object p1, p0, Lk6/a;->a:Lj6/b;
 
     .line 3
-    iget v0, p1, Lj6/b;->b:I
+    iget v0, p1, Lj6/b;->h:I
 
     .line 4
     iput v0, p0, Lk6/a;->b:I
 
     .line 5
-    iget p1, p1, Lj6/b;->a:I
+    iget p1, p1, Lj6/b;->g:I
 
     .line 6
     iput p1, p0, Lk6/a;->c:I
@@ -81,7 +81,7 @@
 
     .line 12
     :cond_0
-    sget-object p1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 13
     throw p1
@@ -643,35 +643,35 @@
 
     .line 28
     :cond_1b
-    sget-object v0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 29
     throw v0
 
     .line 30
     :cond_1c
-    sget-object v0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 31
     throw v0
 
     .line 32
     :cond_1d
-    sget-object v0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 33
     throw v0
 
     .line 34
     :cond_1e
-    sget-object v0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 35
     throw v0
 
     .line 36
     :cond_1f
-    sget-object v0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 37
     goto :goto_d
@@ -687,11 +687,11 @@
     .locals 5
 
     .line 1
-    invoke-static {p1, p2, p3, p4}, Landroidx/lifecycle/a0;->c(FFFF)F
+    invoke-static {p1, p2, p3, p4}, Ldc/a;->c(FFFF)F
 
     move-result v0
 
-    invoke-static {v0}, Landroidx/lifecycle/a0;->e(F)I
+    invoke-static {v0}, Ldc/a;->h(F)I
 
     move-result v0
 
@@ -717,7 +717,7 @@
     add-float/2addr v3, p1
 
     .line 2
-    invoke-static {v3}, Landroidx/lifecycle/a0;->e(F)I
+    invoke-static {v3}, Ldc/a;->h(F)I
 
     move-result v3
 
@@ -726,7 +726,7 @@
     add-float/2addr v2, p2
 
     .line 3
-    invoke-static {v2}, Landroidx/lifecycle/a0;->e(F)I
+    invoke-static {v2}, Ldc/a;->h(F)I
 
     move-result v2
 

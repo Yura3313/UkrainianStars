@@ -1,93 +1,56 @@
 .class public final Li1/e;
-.super Ljava/lang/Object;
+.super Landroid/widget/RelativeLayout;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # instance fields
-.field public final a:I
+.field public g:Lj3/pb;
 
-.field public final b:Landroid/view/ViewGroup$LayoutParams;
-
-.field public final c:Landroid/view/ViewGroup;
-
-.field public final d:Landroid/content/Context;
+.field public h:Z
 
 
 # direct methods
-.method public constructor <init>(Lj3/ch;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Li1/d;
-        }
-    .end annotation
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
 
     .line 2
-    invoke-interface {p1}, Lj3/ch;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v0
-
-    iput-object v0, p0, Li1/e;->b:Landroid/view/ViewGroup$LayoutParams;
+    new-instance v0, Lj3/pb;
 
     .line 3
-    invoke-interface {p1}, Lj3/ch;->getParent()Landroid/view/ViewParent;
-
-    move-result-object v0
+    invoke-direct {v0, p1}, Lj3/pb;-><init>(Landroid/content/Context;)V
 
     .line 4
-    invoke-interface {p1}, Lj3/ch;->s()Landroid/content/Context;
-
-    move-result-object v1
-
-    iput-object v1, p0, Li1/e;->d:Landroid/content/Context;
-
-    if-eqz v0, :cond_0
+    iput-object p2, v0, Lj3/pb;->b:Ljava/lang/String;
 
     .line 5
-    instance-of v1, v0, Landroid/view/ViewGroup;
-
-    if-eqz v1, :cond_0
+    iput-object v0, p0, Li1/e;->g:Lj3/pb;
 
     .line 6
-    check-cast v0, Landroid/view/ViewGroup;
-
-    iput-object v0, p0, Li1/e;->c:Landroid/view/ViewGroup;
-
-    .line 7
-    invoke-interface {p1}, Lj3/ch;->getView()Landroid/view/View;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
-
-    move-result v1
-
-    iput v1, p0, Li1/e;->a:I
-
-    .line 8
-    invoke-interface {p1}, Lj3/ch;->getView()Landroid/view/View;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
-
-    const/4 v0, 0x1
-
-    .line 9
-    invoke-interface {p1, v0}, Lj3/ch;->w0(Z)V
+    iput-object p3, v0, Lj3/pb;->d:Ljava/lang/String;
 
     return-void
+.end method
 
-    .line 10
+
+# virtual methods
+.method public final onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Li1/e;->h:Z
+
+    if-nez v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Li1/e;->g:Lj3/pb;
+
+    invoke-virtual {v0, p1}, Lj3/pb;->c(Landroid/view/MotionEvent;)V
+
     :cond_0
-    new-instance p1, Li1/d;
+    const/4 p1, 0x0
 
-    const-string v0, "Could not get the parent of the WebView for an overlay."
-
-    invoke-direct {p1, v0}, Li1/d;-><init>(Ljava/lang/String;)V
-
-    throw p1
+    return p1
 .end method

@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static i:Ljava/util/WeakHashMap;
+.field public static j:Ljava/util/WeakHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/WeakHashMap<",
@@ -21,7 +21,7 @@
 
 
 # instance fields
-.field public a:Ljava/util/Map;
+.field public g:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -32,9 +32,9 @@
     .end annotation
 .end field
 
-.field public b:I
+.field public h:I
 
-.field public h:Landroid/os/Bundle;
+.field public i:Landroid/os/Bundle;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
 
-    sput-object v0, La2/c1;->i:Ljava/util/WeakHashMap;
+    sput-object v0, La2/c1;->j:Ljava/util/WeakHashMap;
 
     return-void
 .end method
@@ -67,62 +67,23 @@
 
     move-result-object v0
 
-    iput-object v0, p0, La2/c1;->a:Ljava/util/Map;
+    iput-object v0, p0, La2/c1;->g:Ljava/util/Map;
 
     const/4 v0, 0x0
 
     .line 4
-    iput v0, p0, La2/c1;->b:I
+    iput v0, p0, La2/c1;->h:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1, p2, p3, p4}, Landroid/app/Fragment;->dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
-
-    .line 2
-    iget-object p1, p0, La2/c1;->a:Ljava/util/Map;
-
-    invoke-interface {p1}, Ljava/util/Map;->values()Ljava/util/Collection;
-
-    move-result-object p1
-
-    invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
-
-    move-result-object p1
-
-    :goto_0
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result p2
-
-    if-eqz p2, :cond_0
-
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object p2
-
-    check-cast p2, Lcom/google/android/gms/common/api/internal/LifecycleCallback;
-
-    .line 3
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    goto :goto_0
-
-    :cond_0
-    return-void
-.end method
-
-.method public final e(Ljava/lang/String;Lcom/google/android/gms/common/api/internal/LifecycleCallback;)V
+.method public final d(Ljava/lang/String;Lcom/google/android/gms/common/api/internal/LifecycleCallback;)V
     .locals 3
 
     .line 1
-    iget-object v0, p0, La2/c1;->a:Ljava/util/Map;
+    iget-object v0, p0, La2/c1;->g:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -131,12 +92,12 @@
     if-nez v0, :cond_1
 
     .line 2
-    iget-object v0, p0, La2/c1;->a:Ljava/util/Map;
+    iget-object v0, p0, La2/c1;->g:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
-    iget v0, p0, La2/c1;->b:I
+    iget v0, p0, La2/c1;->h:I
 
     if-lez v0, :cond_0
 
@@ -182,7 +143,46 @@
     throw p2
 .end method
 
-.method public final i(Ljava/lang/String;Ljava/lang/Class;)Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+.method public final dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/app/Fragment;->dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+
+    .line 2
+    iget-object p1, p0, La2/c1;->g:Ljava/util/Map;
+
+    invoke-interface {p1}, Ljava/util/Map;->values()Ljava/util/Collection;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result p2
+
+    if-eqz p2, :cond_0
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+
+    .line 3
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method
+
+.method public final g(Ljava/lang/String;Ljava/lang/Class;)Lcom/google/android/gms/common/api/internal/LifecycleCallback;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -196,7 +196,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, La2/c1;->a:Ljava/util/Map;
+    iget-object v0, p0, La2/c1;->g:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -211,7 +211,7 @@
     return-object p1
 .end method
 
-.method public final j()Landroid/app/Activity;
+.method public final i()Landroid/app/Activity;
     .locals 1
 
     .line 1
@@ -229,7 +229,7 @@
     invoke-super {p0, p1, p2, p3}, Landroid/app/Fragment;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 2
-    iget-object v0, p0, La2/c1;->a:Ljava/util/Map;
+    iget-object v0, p0, La2/c1;->g:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -270,13 +270,13 @@
     const/4 v0, 0x1
 
     .line 2
-    iput v0, p0, La2/c1;->b:I
+    iput v0, p0, La2/c1;->h:I
 
     .line 3
-    iput-object p1, p0, La2/c1;->h:Landroid/os/Bundle;
+    iput-object p1, p0, La2/c1;->i:Landroid/os/Bundle;
 
     .line 4
-    iget-object v0, p0, La2/c1;->a:Ljava/util/Map;
+    iget-object v0, p0, La2/c1;->g:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -343,10 +343,10 @@
     const/4 v0, 0x5
 
     .line 2
-    iput v0, p0, La2/c1;->b:I
+    iput v0, p0, La2/c1;->h:I
 
     .line 3
-    iget-object v0, p0, La2/c1;->a:Ljava/util/Map;
+    iget-object v0, p0, La2/c1;->g:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -387,10 +387,10 @@
     const/4 v0, 0x3
 
     .line 2
-    iput v0, p0, La2/c1;->b:I
+    iput v0, p0, La2/c1;->h:I
 
     .line 3
-    iget-object v0, p0, La2/c1;->a:Ljava/util/Map;
+    iget-object v0, p0, La2/c1;->g:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -434,7 +434,7 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, La2/c1;->a:Ljava/util/Map;
+    iget-object v0, p0, La2/c1;->g:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -495,10 +495,10 @@
     const/4 v0, 0x2
 
     .line 2
-    iput v0, p0, La2/c1;->b:I
+    iput v0, p0, La2/c1;->h:I
 
     .line 3
-    iget-object v0, p0, La2/c1;->a:Ljava/util/Map;
+    iget-object v0, p0, La2/c1;->g:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -539,10 +539,10 @@
     const/4 v0, 0x4
 
     .line 2
-    iput v0, p0, La2/c1;->b:I
+    iput v0, p0, La2/c1;->h:I
 
     .line 3
-    iget-object v0, p0, La2/c1;->a:Ljava/util/Map;
+    iget-object v0, p0, La2/c1;->g:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 

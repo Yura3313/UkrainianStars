@@ -1,20 +1,26 @@
-.class public interface abstract Lj3/q7;
+.class public final Lj3/q7;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# virtual methods
-.method public abstract a()V
-.end method
+# instance fields
+.field public final a:Z
 
-.method public abstract b(Landroid/content/Context;Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/content/Context;",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
+.field public final b:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(ZLjava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-boolean p1, p0, Lj3/q7;->a:Z
+
+    .line 3
+    iput-object p2, p0, Lj3/q7;->b:Ljava/lang/String;
+
+    return-void
 .end method

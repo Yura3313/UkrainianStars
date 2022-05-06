@@ -656,7 +656,7 @@
 
     move-result-object v6
 
-    invoke-static {v6}, Landroid/support/v4/media/a;->b(Ljava/lang/Object;)V
+    invoke-static {v6}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
 
     .line 17
     :cond_5

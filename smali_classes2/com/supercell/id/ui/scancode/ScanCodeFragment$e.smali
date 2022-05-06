@@ -20,22 +20,22 @@
     value = {
         "Lle/j;",
         "Lke/l<",
-        "Luc/p;",
-        "Lbe/n;",
+        "Lrc/p;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/MainActivity;
+.field public final synthetic g:Lcom/supercell/id/ui/MainActivity;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/MainActivity;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$e;->a:Lcom/supercell/id/ui/MainActivity;
+    iput-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$e;->g:Lcom/supercell/id/ui/MainActivity;
 
     const/4 p1, 0x1
 
@@ -50,7 +50,7 @@
     .locals 8
 
     .line 1
-    check-cast p1, Luc/p;
+    check-cast p1, Lrc/p;
 
     const/4 v0, 0x0
 
@@ -59,12 +59,12 @@
     .line 2
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object p1
 
     .line 3
-    iget-object v1, p1, Lwd/r;->m:La2/a;
+    iget-object v1, p1, Lvd/r;->m:Lcom/supercell/titan/h;
 
     const/4 v5, 0x0
 
@@ -79,10 +79,10 @@
     const-string v4, "Settings"
 
     .line 4
-    invoke-static/range {v1 .. v7}, La2/a;->b(La2/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static/range {v1 .. v7}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
 
     .line 5
-    iget-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$e;->a:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$e;->g:Lcom/supercell/id/ui/MainActivity;
 
     .line 6
     new-instance v1, Landroid/content/Intent;
@@ -111,7 +111,7 @@
     invoke-virtual {p1, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
     .line 10
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -119,7 +119,7 @@
     const-string p1, "it"
 
     .line 11
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

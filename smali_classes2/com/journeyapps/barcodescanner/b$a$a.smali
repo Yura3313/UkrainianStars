@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/journeyapps/barcodescanner/b$a;->b(Lqb/b;)V
+    value = Lcom/journeyapps/barcodescanner/b$a;->a(Lob/b;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,19 +18,19 @@
 
 
 # instance fields
-.field public final synthetic a:Lqb/b;
+.field public final synthetic g:Lob/b;
 
-.field public final synthetic b:Lcom/journeyapps/barcodescanner/b$a;
+.field public final synthetic h:Lcom/journeyapps/barcodescanner/b$a;
 
 
 # direct methods
-.method public constructor <init>(Lcom/journeyapps/barcodescanner/b$a;Lqb/b;)V
+.method public constructor <init>(Lcom/journeyapps/barcodescanner/b$a;Lob/b;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/journeyapps/barcodescanner/b$a$a;->b:Lcom/journeyapps/barcodescanner/b$a;
+    iput-object p1, p0, Lcom/journeyapps/barcodescanner/b$a$a;->h:Lcom/journeyapps/barcodescanner/b$a;
 
-    iput-object p2, p0, Lcom/journeyapps/barcodescanner/b$a$a;->a:Lqb/b;
+    iput-object p2, p0, Lcom/journeyapps/barcodescanner/b$a$a;->g:Lob/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,11 +43,11 @@
     .locals 15
 
     .line 1
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/b$a$a;->b:Lcom/journeyapps/barcodescanner/b$a;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/b$a$a;->h:Lcom/journeyapps/barcodescanner/b$a;
 
     iget-object v0, v0, Lcom/journeyapps/barcodescanner/b$a;->a:Lcom/journeyapps/barcodescanner/b;
 
-    iget-object v1, p0, Lcom/journeyapps/barcodescanner/b$a$a;->a:Lqb/b;
+    iget-object v1, p0, Lcom/journeyapps/barcodescanner/b$a$a;->g:Lob/b;
 
     .line 2
     iget-boolean v2, v0, Lcom/journeyapps/barcodescanner/b;->d:Z
@@ -59,13 +59,13 @@
     if-eqz v2, :cond_3
 
     .line 3
-    iget-object v2, v1, Lqb/b;->b:Lqb/p;
+    iget-object v2, v1, Lob/b;->b:Lob/p;
 
     .line 4
-    iget-object v5, v2, Lqb/p;->f:Landroid/graphics/Rect;
+    iget-object v5, v2, Lob/p;->f:Landroid/graphics/Rect;
 
     .line 5
-    iget v6, v2, Lqb/p;->e:I
+    iget v6, v2, Lob/p;->e:I
 
     rem-int/lit16 v6, v6, 0xb4
 
@@ -100,13 +100,13 @@
     :cond_1
     new-instance v12, Landroid/graphics/YuvImage;
 
-    iget-object v7, v2, Lqb/p;->a:[B
+    iget-object v7, v2, Lob/p;->a:[B
 
-    iget v8, v2, Lqb/p;->d:I
+    iget v8, v2, Lob/p;->d:I
 
-    iget v9, v2, Lqb/p;->b:I
+    iget v9, v2, Lob/p;->b:I
 
-    iget v10, v2, Lqb/p;->c:I
+    iget v10, v2, Lob/p;->c:I
 
     const/4 v11, 0x0
 
@@ -147,7 +147,7 @@
     move-result-object v8
 
     .line 14
-    iget v5, v2, Lqb/p;->e:I
+    iget v5, v2, Lob/p;->e:I
 
     if-eqz v5, :cond_2
 
@@ -157,7 +157,7 @@
     invoke-direct {v13}, Landroid/graphics/Matrix;-><init>()V
 
     .line 16
-    iget v2, v2, Lqb/p;->e:I
+    iget v2, v2, Lob/p;->e:I
 
     int-to-float v2, v2
 
@@ -204,6 +204,10 @@
 
     invoke-direct {v5, v2}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
+    invoke-static {v5, v2}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;)Ljava/io/FileOutputStream;
+
+    move-result-object v5
+
     .line 20
     sget-object v6, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
 
@@ -246,7 +250,7 @@
     invoke-virtual {v5, v6}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 26
-    iget-object v6, v1, Lqb/b;->a:Lc6/j;
+    iget-object v6, v1, Lob/b;->a:Lc6/j;
 
     .line 27
     iget-object v6, v6, Lc6/j;->a:Ljava/lang/String;
@@ -257,7 +261,7 @@
     invoke-virtual {v5, v7, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 29
-    iget-object v6, v1, Lqb/b;->a:Lc6/j;
+    iget-object v6, v1, Lob/b;->a:Lc6/j;
 
     .line 30
     iget-object v6, v6, Lc6/j;->d:Lc6/a;
@@ -272,7 +276,7 @@
     invoke-virtual {v5, v7, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 32
-    iget-object v6, v1, Lqb/b;->a:Lc6/j;
+    iget-object v6, v1, Lob/b;->a:Lc6/j;
 
     .line 33
     iget-object v6, v6, Lc6/j;->b:[B
@@ -291,7 +295,7 @@
 
     .line 36
     :cond_4
-    iget-object v1, v1, Lqb/b;->a:Lc6/j;
+    iget-object v1, v1, Lob/b;->a:Lc6/j;
 
     .line 37
     iget-object v1, v1, Lc6/j;->e:Ljava/util/Map;
@@ -299,7 +303,7 @@
     if-eqz v1, :cond_8
 
     .line 38
-    sget-object v6, Lc6/k;->UPC_EAN_EXTENSION:Lc6/k;
+    sget-object v6, Lc6/k;->m:Lc6/k;
 
     invoke-interface {v1, v6}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -323,7 +327,7 @@
 
     .line 41
     :cond_5
-    sget-object v6, Lc6/k;->ORIENTATION:Lc6/k;
+    sget-object v6, Lc6/k;->g:Lc6/k;
 
     invoke-interface {v1, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -344,7 +348,7 @@
 
     .line 43
     :cond_6
-    sget-object v6, Lc6/k;->ERROR_CORRECTION_LEVEL:Lc6/k;
+    sget-object v6, Lc6/k;->i:Lc6/k;
 
     invoke-interface {v1, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -361,7 +365,7 @@
 
     .line 45
     :cond_7
-    sget-object v6, Lc6/k;->BYTE_SEGMENTS:Lc6/k;
+    sget-object v6, Lc6/k;->h:Lc6/k;
 
     invoke-interface {v1, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

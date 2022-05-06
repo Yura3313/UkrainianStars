@@ -3,55 +3,50 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/util/concurrent/Callable;
+.implements Lj3/yj0;
 
 
-# instance fields
-.field public final a:Lj3/pd0;
+# static fields
+.field public static final a:Lj3/yj0;
 
 
 # direct methods
-.method public constructor <init>(Lj3/pd0;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lj3/od0;
+
+    invoke-direct {v0}, Lj3/od0;-><init>()V
+
+    sput-object v0, Lj3/od0;->a:Lj3/yj0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lj3/od0;->a:Lj3/pd0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 4
-
-    iget-object v0, p0, Lj3/od0;->a:Lj3/pd0;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    new-instance v1, Lorg/json/JSONObject;
-
-    invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
+    check-cast p1, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;
 
     .line 2
-    iget-object v2, v0, Lj3/pd0;->a:Lj3/i8;
+    new-instance v0, Lj3/nd0;
 
-    if-eqz v2, :cond_0
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 3
-    iget-object v3, v0, Lj3/pd0;->b:Landroid/content/Context;
+    const/4 v1, 0x0
 
-    iget-object v0, v0, Lj3/pd0;->c:Ljava/lang/String;
-
-    invoke-interface {v2, v3, v0, v1}, Lj3/i8;->a(Landroid/content/Context;Ljava/lang/String;Lorg/json/JSONObject;)V
-
-    .line 4
-    :cond_0
-    new-instance v0, Lj3/md0;
-
-    invoke-direct {v0, v1}, Lj3/md0;-><init>(Lorg/json/JSONObject;)V
+    invoke-direct {v0, p1, v1}, Lj3/nd0;-><init>(Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;Ljava/lang/String;)V
 
     return-object v0
 .end method

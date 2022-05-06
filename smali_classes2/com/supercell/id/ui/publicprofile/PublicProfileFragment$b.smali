@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$b;
-.super Luc/g1;
+.super Lrc/g1;
 .source "PublicProfileFragment.kt"
 
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public o0:Ljava/util/HashMap;
+.field public p0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lce/z;->j(Ljava/lang/Object;)Ljava/util/Set;
+    invoke-static {v0}, Lbe/x;->d(Ljava/lang/Object;)Ljava/util/Set;
 
     return-void
 .end method
@@ -38,7 +38,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Luc/g1;-><init>()V
+    invoke-direct {p0}, Lrc/g1;-><init>()V
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 .method public W0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$b;->o0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$b;->p0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -78,7 +78,7 @@
     const-string p1, "inflater"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -88,7 +88,7 @@
 .method public synthetic i0()V
     .locals 0
 
-    invoke-super {p0}, Luc/g1;->i0()V
+    invoke-super {p0}, Lrc/g1;->i0()V
 
     invoke-virtual {p0}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$b;->W0()V
 
@@ -106,7 +106,7 @@
     sget v1, Lcom/supercell/id/R$id;->ingame_head_separator:I
 
     .line 2
-    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$b;->o0:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$b;->p0:Ljava/util/HashMap;
 
     if-nez v2, :cond_0
 
@@ -114,10 +114,10 @@
 
     invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$b;->o0:Ljava/util/HashMap;
+    iput-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$b;->p0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$b;->o0:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$b;->p0:Ljava/util/HashMap;
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -132,7 +132,7 @@
     if-nez v2, :cond_2
 
     .line 3
-    iget-object v2, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v2, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v2, :cond_1
 
@@ -144,7 +144,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$b;->o0:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$b;->p0:Ljava/util/HashMap;
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -159,15 +159,15 @@
 
     .line 5
     :goto_0
-    invoke-static {v0}, Landroidx/savedstate/d;->w(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lb5/m;->n(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
     .line 6
-    iput-object v0, p0, Luc/g1;->m0:Ljava/util/Collection;
+    iput-object v0, p0, Lrc/g1;->n0:Ljava/util/Collection;
 
     .line 7
-    invoke-super {p0, p1, p2}, Luc/g1;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lrc/g1;->s0(Landroid/view/View;Landroid/os/Bundle;)V
 
     return-void
 
@@ -175,7 +175,7 @@
     const-string p1, "view"
 
     .line 8
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

@@ -1,48 +1,60 @@
-.class public final synthetic Lj3/k40;
+.class public interface abstract Lj3/k40;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lj3/er;
 
-
-# instance fields
-.field public final a:Lj3/ch;
-
-
-# direct methods
-.method public constructor <init>(Lj3/ch;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lj3/k40;->a:Lj3/ch;
-
-    return-void
-.end method
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<AdT:",
+        "Ljava/lang/Object;",
+        "AdapterT:",
+        "Ljava/lang/Object;",
+        "ListenerT::Lj3/qr;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
 
 
 # virtual methods
-.method public final I()V
-    .locals 2
+.method public abstract a(Lj3/ug0;Lj3/lg0;Lj3/j40;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/ug0;",
+            "Lj3/lg0;",
+            "Lj3/j40<",
+            "TAdapterT;T",
+            "ListenerT;",
+            ">;)V"
+        }
+    .end annotation
 
-    .line 1
-    iget-object v0, p0, Lj3/k40;->a:Lj3/ch;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzdlr;
+        }
+    .end annotation
+.end method
 
-    .line 2
-    invoke-interface {v0}, Lj3/ch;->Q()Lj3/fi;
+.method public abstract b(Lj3/ug0;Lj3/lg0;Lj3/j40;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/ug0;",
+            "Lj3/lg0;",
+            "Lj3/j40<",
+            "TAdapterT;T",
+            "ListenerT;",
+            ">;)TAdT;"
+        }
+    .end annotation
 
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    .line 3
-    invoke-interface {v0}, Lj3/ch;->Q()Lj3/fi;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Lj3/fi;->n()V
-
-    :cond_0
-    return-void
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzdlr;,
+            Lcom/google/android/gms/internal/ads/zzcuh;
+        }
+    .end annotation
 .end method

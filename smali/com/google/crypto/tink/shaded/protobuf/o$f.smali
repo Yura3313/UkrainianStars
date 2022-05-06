@@ -23,21 +23,21 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lcom/google/crypto/tink/shaded/protobuf/o$f;
+.field public static final enum g:Lcom/google/crypto/tink/shaded/protobuf/o$f;
 
-.field public static final enum BUILD_MESSAGE_INFO:Lcom/google/crypto/tink/shaded/protobuf/o$f;
+.field public static final enum h:Lcom/google/crypto/tink/shaded/protobuf/o$f;
 
-.field public static final enum GET_DEFAULT_INSTANCE:Lcom/google/crypto/tink/shaded/protobuf/o$f;
+.field public static final enum i:Lcom/google/crypto/tink/shaded/protobuf/o$f;
 
-.field public static final enum GET_MEMOIZED_IS_INITIALIZED:Lcom/google/crypto/tink/shaded/protobuf/o$f;
+.field public static final enum j:Lcom/google/crypto/tink/shaded/protobuf/o$f;
 
-.field public static final enum GET_PARSER:Lcom/google/crypto/tink/shaded/protobuf/o$f;
+.field public static final enum k:Lcom/google/crypto/tink/shaded/protobuf/o$f;
 
-.field public static final enum NEW_BUILDER:Lcom/google/crypto/tink/shaded/protobuf/o$f;
+.field public static final enum l:Lcom/google/crypto/tink/shaded/protobuf/o$f;
 
-.field public static final enum NEW_MUTABLE_INSTANCE:Lcom/google/crypto/tink/shaded/protobuf/o$f;
+.field public static final enum m:Lcom/google/crypto/tink/shaded/protobuf/o$f;
 
-.field public static final enum SET_MEMOIZED_IS_INITIALIZED:Lcom/google/crypto/tink/shaded/protobuf/o$f;
+.field public static final synthetic n:[Lcom/google/crypto/tink/shaded/protobuf/o$f;
 
 
 # direct methods
@@ -53,7 +53,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/google/crypto/tink/shaded/protobuf/o$f;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/crypto/tink/shaded/protobuf/o$f;->GET_MEMOIZED_IS_INITIALIZED:Lcom/google/crypto/tink/shaded/protobuf/o$f;
+    sput-object v0, Lcom/google/crypto/tink/shaded/protobuf/o$f;->g:Lcom/google/crypto/tink/shaded/protobuf/o$f;
 
     .line 2
     new-instance v1, Lcom/google/crypto/tink/shaded/protobuf/o$f;
@@ -64,7 +64,7 @@
 
     invoke-direct {v1, v3, v4}, Lcom/google/crypto/tink/shaded/protobuf/o$f;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/google/crypto/tink/shaded/protobuf/o$f;->SET_MEMOIZED_IS_INITIALIZED:Lcom/google/crypto/tink/shaded/protobuf/o$f;
+    sput-object v1, Lcom/google/crypto/tink/shaded/protobuf/o$f;->h:Lcom/google/crypto/tink/shaded/protobuf/o$f;
 
     .line 3
     new-instance v3, Lcom/google/crypto/tink/shaded/protobuf/o$f;
@@ -75,7 +75,7 @@
 
     invoke-direct {v3, v5, v6}, Lcom/google/crypto/tink/shaded/protobuf/o$f;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Lcom/google/crypto/tink/shaded/protobuf/o$f;->BUILD_MESSAGE_INFO:Lcom/google/crypto/tink/shaded/protobuf/o$f;
+    sput-object v3, Lcom/google/crypto/tink/shaded/protobuf/o$f;->i:Lcom/google/crypto/tink/shaded/protobuf/o$f;
 
     .line 4
     new-instance v5, Lcom/google/crypto/tink/shaded/protobuf/o$f;
@@ -86,7 +86,7 @@
 
     invoke-direct {v5, v7, v8}, Lcom/google/crypto/tink/shaded/protobuf/o$f;-><init>(Ljava/lang/String;I)V
 
-    sput-object v5, Lcom/google/crypto/tink/shaded/protobuf/o$f;->NEW_MUTABLE_INSTANCE:Lcom/google/crypto/tink/shaded/protobuf/o$f;
+    sput-object v5, Lcom/google/crypto/tink/shaded/protobuf/o$f;->j:Lcom/google/crypto/tink/shaded/protobuf/o$f;
 
     .line 5
     new-instance v7, Lcom/google/crypto/tink/shaded/protobuf/o$f;
@@ -97,7 +97,7 @@
 
     invoke-direct {v7, v9, v10}, Lcom/google/crypto/tink/shaded/protobuf/o$f;-><init>(Ljava/lang/String;I)V
 
-    sput-object v7, Lcom/google/crypto/tink/shaded/protobuf/o$f;->NEW_BUILDER:Lcom/google/crypto/tink/shaded/protobuf/o$f;
+    sput-object v7, Lcom/google/crypto/tink/shaded/protobuf/o$f;->k:Lcom/google/crypto/tink/shaded/protobuf/o$f;
 
     .line 6
     new-instance v9, Lcom/google/crypto/tink/shaded/protobuf/o$f;
@@ -108,7 +108,7 @@
 
     invoke-direct {v9, v11, v12}, Lcom/google/crypto/tink/shaded/protobuf/o$f;-><init>(Ljava/lang/String;I)V
 
-    sput-object v9, Lcom/google/crypto/tink/shaded/protobuf/o$f;->GET_DEFAULT_INSTANCE:Lcom/google/crypto/tink/shaded/protobuf/o$f;
+    sput-object v9, Lcom/google/crypto/tink/shaded/protobuf/o$f;->l:Lcom/google/crypto/tink/shaded/protobuf/o$f;
 
     .line 7
     new-instance v11, Lcom/google/crypto/tink/shaded/protobuf/o$f;
@@ -119,7 +119,7 @@
 
     invoke-direct {v11, v13, v14}, Lcom/google/crypto/tink/shaded/protobuf/o$f;-><init>(Ljava/lang/String;I)V
 
-    sput-object v11, Lcom/google/crypto/tink/shaded/protobuf/o$f;->GET_PARSER:Lcom/google/crypto/tink/shaded/protobuf/o$f;
+    sput-object v11, Lcom/google/crypto/tink/shaded/protobuf/o$f;->m:Lcom/google/crypto/tink/shaded/protobuf/o$f;
 
     const/4 v13, 0x7
 
@@ -140,12 +140,12 @@
     aput-object v11, v13, v14
 
     .line 8
-    sput-object v13, Lcom/google/crypto/tink/shaded/protobuf/o$f;->$VALUES:[Lcom/google/crypto/tink/shaded/protobuf/o$f;
+    sput-object v13, Lcom/google/crypto/tink/shaded/protobuf/o$f;->n:[Lcom/google/crypto/tink/shaded/protobuf/o$f;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;I)V
+.method public constructor <init>(Ljava/lang/String;I)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -178,7 +178,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/o$f;->$VALUES:[Lcom/google/crypto/tink/shaded/protobuf/o$f;
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/o$f;->n:[Lcom/google/crypto/tink/shaded/protobuf/o$f;
 
     invoke-virtual {v0}, [Lcom/google/crypto/tink/shaded/protobuf/o$f;->clone()Ljava/lang/Object;
 

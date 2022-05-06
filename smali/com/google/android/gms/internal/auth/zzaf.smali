@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final b:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
-.field public final h:[B
+.field public final i:[B
 
 
 # direct methods
@@ -45,19 +45,19 @@
     const/4 v0, 0x1
 
     .line 2
-    iput v0, p0, Lcom/google/android/gms/internal/auth/zzaf;->a:I
+    iput v0, p0, Lcom/google/android/gms/internal/auth/zzaf;->g:I
 
     const-string v0, "null reference"
 
     if-eqz p1, :cond_1
 
     .line 3
-    iput-object p1, p0, Lcom/google/android/gms/internal/auth/zzaf;->b:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/auth/zzaf;->h:Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
     .line 4
-    iput-object p2, p0, Lcom/google/android/gms/internal/auth/zzaf;->h:[B
+    iput-object p2, p0, Lcom/google/android/gms/internal/auth/zzaf;->i:[B
 
     return-void
 
@@ -93,7 +93,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/internal/auth/zzaf;->a:I
+    iget v1, p0, Lcom/google/android/gms/internal/auth/zzaf;->g:I
 
     const/4 v2, 0x4
 
@@ -106,7 +106,7 @@
     const/4 v0, 0x2
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/gms/internal/auth/zzaf;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/auth/zzaf;->h:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -115,7 +115,7 @@
     const/4 v0, 0x3
 
     .line 6
-    iget-object v1, p0, Lcom/google/android/gms/internal/auth/zzaf;->h:[B
+    iget-object v1, p0, Lcom/google/android/gms/internal/auth/zzaf;->i:[B
 
     invoke-static {p1, v0, v1, v2}, Ld2/b;->e(Landroid/os/Parcel;I[BZ)V
 

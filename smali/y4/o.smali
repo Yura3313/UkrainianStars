@@ -9,7 +9,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lb5/e;Lie/a;)V
+.method public constructor <init>(Landroid/content/Context;Lb5/e;Ls3/g;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -176,7 +176,7 @@
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_4
 
     :try_start_4
-    invoke-static {v5}, Ly4/p0;->h(Ljava/lang/String;)[[Ljava/security/cert/X509Certificate;
+    invoke-static {v5}, Ly4/r0;->h(Ljava/lang/String;)[[Ljava/security/cert/X509Certificate;
 
     move-result-object v6
     :try_end_4

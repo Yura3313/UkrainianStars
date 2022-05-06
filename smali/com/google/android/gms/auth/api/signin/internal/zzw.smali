@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method public final X5(Lcom/google/android/gms/auth/api/signin/internal/zzr;Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;)V
+.method public final Y5(Lcom/google/android/gms/auth/api/signin/internal/zzr;Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -29,7 +29,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/auth-api/zzd;->E0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/auth-api/zzd;->F0()Landroid/os/Parcel;
 
     move-result-object v0
 
@@ -42,12 +42,12 @@
     const/16 p1, 0x66
 
     .line 4
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/auth-api/zzd;->P0(ILandroid/os/Parcel;)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/auth-api/zzd;->Q0(ILandroid/os/Parcel;)V
 
     return-void
 .end method
 
-.method public final h5(Lcom/google/android/gms/auth/api/signin/internal/zzr;Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;)V
+.method public final i5(Lcom/google/android/gms/auth/api/signin/internal/zzr;Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -56,7 +56,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/auth-api/zzd;->E0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/auth-api/zzd;->F0()Landroid/os/Parcel;
 
     move-result-object v0
 
@@ -69,12 +69,12 @@
     const/16 p1, 0x67
 
     .line 4
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/auth-api/zzd;->P0(ILandroid/os/Parcel;)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/auth-api/zzd;->Q0(ILandroid/os/Parcel;)V
 
     return-void
 .end method
 
-.method public final q3(Lcom/google/android/gms/auth/api/signin/internal/zzr;Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;)V
+.method public final r3(Lcom/google/android/gms/auth/api/signin/internal/zzr;Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -83,7 +83,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/auth-api/zzd;->E0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/auth-api/zzd;->F0()Landroid/os/Parcel;
 
     move-result-object v0
 
@@ -96,7 +96,7 @@
     const/16 p1, 0x65
 
     .line 4
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/auth-api/zzd;->P0(ILandroid/os/Parcel;)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/auth-api/zzd;->Q0(ILandroid/os/Parcel;)V
 
     return-void
 .end method

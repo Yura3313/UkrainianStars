@@ -69,7 +69,7 @@
     throw p0
 .end method
 
-.method public n()V
+.method public o()V
     .locals 0
 
     return-void

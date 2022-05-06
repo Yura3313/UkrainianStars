@@ -23,7 +23,7 @@
 
 
 # static fields
-.field public static final d:Lcom/google/android/gms/common/api/a$d$c;
+.field public static final b:Lcom/google/android/gms/common/api/a$d$c;
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 .end field
@@ -38,9 +38,9 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/google/android/gms/common/api/a$d$c;-><init>(Lcom/google/android/play/core/assetpacks/u;)V
+    invoke-direct {v0, v1}, Lcom/google/android/gms/common/api/a$d$c;-><init>(Lce/a;)V
 
-    sput-object v0, Lcom/google/android/gms/common/api/a$d;->d:Lcom/google/android/gms/common/api/a$d$c;
+    sput-object v0, Lcom/google/android/gms/common/api/a$d;->b:Lcom/google/android/gms/common/api/a$d$c;
 
     return-void
 .end method

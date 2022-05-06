@@ -3,7 +3,7 @@
 .source "GeneratedMessageLite.java"
 
 # interfaces
-.implements Lcom/google/crypto/tink/shaded/protobuf/m$b;
+.implements Lcom/google/crypto/tink/shaded/protobuf/m$a;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lcom/google/crypto/tink/shaded/protobuf/m$b<",
+        "Lcom/google/crypto/tink/shaded/protobuf/m$a<",
         "Lcom/google/crypto/tink/shaded/protobuf/o$d;",
         ">;"
     }
@@ -27,7 +27,15 @@
 
 
 # virtual methods
-.method public C(Lcom/google/crypto/tink/shaded/protobuf/a0$a;Lcom/google/crypto/tink/shaded/protobuf/a0;)Lcom/google/crypto/tink/shaded/protobuf/a0$a;
+.method public B()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public I(Lcom/google/crypto/tink/shaded/protobuf/a0$a;Lcom/google/crypto/tink/shaded/protobuf/a0;)Lcom/google/crypto/tink/shaded/protobuf/a0$a;
     .locals 0
 
     .line 1
@@ -38,6 +46,14 @@
     invoke-virtual {p1, p2}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->f(Lcom/google/crypto/tink/shaded/protobuf/o;)Lcom/google/crypto/tink/shaded/protobuf/o$a;
 
     return-object p1
+.end method
+
+.method public b()I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
 .end method
 
 .method public compareTo(Ljava/lang/Object;)I
@@ -54,7 +70,7 @@
     return p1
 .end method
 
-.method public getNumber()I
+.method public k()Z
     .locals 1
 
     const/4 v0, 0x0
@@ -62,23 +78,7 @@
     return v0
 .end method
 
-.method public h()Z
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public isPacked()Z
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public j()Lm5/d0;
+.method public o()Lm5/b0;
     .locals 1
 
     const/4 v0, 0x0
@@ -86,7 +86,7 @@
     return-object v0
 .end method
 
-.method public r()Lm5/e0;
+.method public y()Lm5/c0;
     .locals 1
 
     const/4 v0, 0x0

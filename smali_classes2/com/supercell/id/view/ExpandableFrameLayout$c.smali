@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/view/ExpandableFrameLayout;
+.field public final synthetic g:Lcom/supercell/id/view/ExpandableFrameLayout;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/ExpandableFrameLayout;I)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout$c;->a:Lcom/supercell/id/view/ExpandableFrameLayout;
+    iput-object p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout$c;->g:Lcom/supercell/id/view/ExpandableFrameLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,11 +38,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout$c;->a:Lcom/supercell/id/view/ExpandableFrameLayout;
+    iget-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout$c;->g:Lcom/supercell/id/view/ExpandableFrameLayout;
 
     const-string v1, "valueAnimator"
 
-    invoke-static {p1, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 

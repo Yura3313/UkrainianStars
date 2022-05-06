@@ -23,7 +23,7 @@
     const-string v1, " of "
 
     .line 1
-    invoke-static {v0, p1, v1, p2}, Landroidx/appcompat/app/i;->a(Ljava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, p1, v1, p2}, Landroid/support/v4/media/a;->b(Ljava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 

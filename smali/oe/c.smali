@@ -12,9 +12,9 @@
 
 
 # static fields
-.field public static final i:Loe/c;
-
 .field public static final j:Loe/c;
+
+.field public static final k:Loe/c;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     invoke-direct {v0, v1, v2}, Loe/c;-><init>(II)V
 
-    sput-object v0, Loe/c;->i:Loe/c;
+    sput-object v0, Loe/c;->j:Loe/c;
 
     return-void
 .end method
@@ -74,20 +74,20 @@
 
     .line 2
     :cond_0
-    iget v0, p0, Loe/a;->a:I
+    iget v0, p0, Loe/a;->g:I
 
     .line 3
     check-cast p1, Loe/c;
 
     .line 4
-    iget v1, p1, Loe/a;->a:I
+    iget v1, p1, Loe/a;->g:I
 
     if-ne v0, v1, :cond_2
 
     .line 5
-    iget v0, p0, Loe/a;->b:I
+    iget v0, p0, Loe/a;->h:I
 
-    iget p1, p1, Loe/a;->b:I
+    iget p1, p1, Loe/a;->h:I
 
     if-ne v0, p1, :cond_2
 
@@ -119,12 +119,12 @@
 
     .line 2
     :cond_0
-    iget v0, p0, Loe/a;->a:I
+    iget v0, p0, Loe/a;->g:I
 
     mul-int/lit8 v0, v0, 0x1f
 
     .line 3
-    iget v1, p0, Loe/a;->b:I
+    iget v1, p0, Loe/a;->h:I
 
     add-int/2addr v0, v1
 
@@ -136,10 +136,10 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Loe/a;->a:I
+    iget v0, p0, Loe/a;->g:I
 
     .line 2
-    iget v1, p0, Loe/a;->b:I
+    iget v1, p0, Loe/a;->h:I
 
     if-le v0, v1, :cond_0
 
@@ -163,7 +163,7 @@
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 2
-    iget v1, p0, Loe/a;->a:I
+    iget v1, p0, Loe/a;->g:I
 
     .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -173,7 +173,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 4
-    iget v1, p0, Loe/a;->b:I
+    iget v1, p0, Loe/a;->h:I
 
     .line 5
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;

@@ -2,71 +2,79 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lh1/g;
+
 
 # instance fields
-.field public final a:Ljava/util/concurrent/ConcurrentHashMap;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/concurrent/ConcurrentHashMap<",
-            "Ljava/lang/String;",
-            "Lcom/google/android/gms/internal/ads/zzapa;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic g:Lj3/qd;
 
-.field public final b:Lj3/yz;
+.field public final synthetic h:Lj3/ug0;
+
+.field public final synthetic i:Lj3/lg0;
+
+.field public final synthetic j:Lj3/t70;
+
+.field public final synthetic k:Lj3/o70;
 
 
 # direct methods
-.method public constructor <init>(Lj3/yz;)V
-    .locals 1
+.method public constructor <init>(Lj3/o70;Lj3/qd;Lj3/ug0;Lj3/lg0;Lj3/t70;)V
+    .locals 0
 
     .line 1
+    iput-object p1, p0, Lj3/q70;->k:Lj3/o70;
+
+    iput-object p2, p0, Lj3/q70;->g:Lj3/qd;
+
+    iput-object p3, p0, Lj3/q70;->h:Lj3/ug0;
+
+    iput-object p4, p0, Lj3/q70;->i:Lj3/lg0;
+
+    iput-object p5, p0, Lj3/q70;->j:Lj3/t70;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
-
-    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
-
-    iput-object v0, p0, Lj3/q70;->a:Ljava/util/concurrent/ConcurrentHashMap;
-
-    .line 3
-    iput-object p1, p0, Lj3/q70;->b:Lj3/yz;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;)Lcom/google/android/gms/internal/ads/zzapa;
-    .locals 1
-    .annotation runtime Ljavax/annotation/CheckForNull;
-    .end annotation
+.method public final b()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final d()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final e(Landroid/view/View;)V
+    .locals 5
 
     .line 1
-    iget-object v0, p0, Lj3/q70;->a:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lj3/q70;->g:Lj3/qd;
 
-    invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
+    iget-object v1, p0, Lj3/q70;->k:Lj3/o70;
 
     .line 2
-    iget-object v0, p0, Lj3/q70;->a:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object v1, v1, Lj3/o70;->d:Lj3/p70;
 
-    invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 3
+    iget-object v2, p0, Lj3/q70;->h:Lj3/ug0;
+
+    iget-object v3, p0, Lj3/q70;->i:Lj3/lg0;
+
+    iget-object v4, p0, Lj3/q70;->j:Lj3/t70;
+
+    invoke-interface {v1, v2, v3, p1, v4}, Lj3/p70;->a(Lj3/ug0;Lj3/lg0;Landroid/view/View;Lj3/t70;)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lcom/google/android/gms/internal/ads/zzapa;
+    invoke-virtual {v0, p1}, Lj3/qd;->b(Ljava/lang/Object;)Z
 
-    return-object p1
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return-object p1
+    return-void
 .end method

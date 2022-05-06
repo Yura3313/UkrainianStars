@@ -50,7 +50,7 @@
     iget-object v1, v1, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 4
-    sget-object v2, Landroidx/lifecycle/f$c;->INITIALIZED:Landroidx/lifecycle/f$c;
+    sget-object v2, Landroidx/lifecycle/f$c;->h:Landroidx/lifecycle/f$c;
 
     if-ne v1, v2, :cond_2
 
@@ -144,7 +144,7 @@
     iget-object v0, v0, Landroidx/savedstate/a;->a:Li/b;
 
     .line 6
-    invoke-virtual {v0}, Li/b;->b()Li/b$d;
+    invoke-virtual {v0}, Li/b;->c()Li/b$d;
 
     move-result-object v0
 

@@ -79,7 +79,7 @@
 
     if-nez v0, :cond_4
 
-    invoke-static {p0}, Lf0/s;->p(Landroid/view/View;)Z
+    invoke-static {p0}, Lf0/r;->p(Landroid/view/View;)Z
 
     move-result v0
 
@@ -97,7 +97,7 @@
 
     .line 4
     :cond_0
-    invoke-virtual {p1}, Landroidx/transition/Transition;->j()Landroidx/transition/Transition;
+    invoke-virtual {p1}, Landroidx/transition/Transition;->k()Landroidx/transition/Transition;
 
     move-result-object p1
 
@@ -109,7 +109,7 @@
     const/4 v1, 0x0
 
     .line 6
-    invoke-virtual {v0, p0, v1}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -144,7 +144,7 @@
     check-cast v2, Landroidx/transition/Transition;
 
     .line 10
-    invoke-virtual {v2, p0}, Landroidx/transition/Transition;->v(Landroid/view/View;)V
+    invoke-virtual {v2, p0}, Landroidx/transition/Transition;->w(Landroid/view/View;)V
 
     goto :goto_0
 

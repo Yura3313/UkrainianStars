@@ -23,122 +23,91 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Ls0/a$c;
+.field public static final enum h:Ls0/a$c;
 
-.field public static final enum BOOLEAN:Ls0/a$c;
-
-.field public static final enum FLOAT:Ls0/a$c;
-
-.field public static final enum INT:Ls0/a$c;
-
-.field public static final enum LONG:Ls0/a$c;
-
-.field public static final enum STRING:Ls0/a$c;
-
-.field public static final enum STRING_SET:Ls0/a$c;
+.field public static final synthetic i:[Ls0/a$c;
 
 
 # instance fields
-.field private final mId:I
+.field public final g:Ld5/h;
 
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 13
+    .locals 5
 
     .line 1
     new-instance v0, Ls0/a$c;
 
-    const-string v1, "STRING"
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v2, v2}, Ls0/a$c;-><init>(Ljava/lang/String;II)V
-
-    sput-object v0, Ls0/a$c;->STRING:Ls0/a$c;
-
     .line 2
-    new-instance v1, Ls0/a$c;
+    invoke-static {}, Ll5/s;->t()Ll5/s$b;
 
-    const-string v3, "STRING_SET"
-
-    const/4 v4, 0x1
-
-    invoke-direct {v1, v3, v4, v4}, Ls0/a$c;-><init>(Ljava/lang/String;II)V
-
-    sput-object v1, Ls0/a$c;->STRING_SET:Ls0/a$c;
+    move-result-object v1
 
     .line 3
-    new-instance v3, Ls0/a$c;
-
-    const-string v5, "INT"
-
-    const/4 v6, 0x2
-
-    invoke-direct {v3, v5, v6, v6}, Ls0/a$c;-><init>(Ljava/lang/String;II)V
-
-    sput-object v3, Ls0/a$c;->INT:Ls0/a$c;
+    invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 4
-    new-instance v5, Ls0/a$c;
+    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
-    const-string v7, "LONG"
+    check-cast v2, Ll5/s;
 
-    const/4 v8, 0x3
+    const/16 v3, 0x20
 
-    invoke-direct {v5, v7, v8, v8}, Ls0/a$c;-><init>(Ljava/lang/String;II)V
-
-    sput-object v5, Ls0/a$c;->LONG:Ls0/a$c;
+    invoke-static {v2, v3}, Ll5/s;->r(Ll5/s;I)V
 
     .line 5
-    new-instance v7, Ls0/a$c;
+    invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->c()Lcom/google/crypto/tink/shaded/protobuf/o;
 
-    const-string v9, "FLOAT"
+    move-result-object v1
 
-    const/4 v10, 0x4
-
-    invoke-direct {v7, v9, v10, v10}, Ls0/a$c;-><init>(Ljava/lang/String;II)V
-
-    sput-object v7, Ls0/a$c;->FLOAT:Ls0/a$c;
+    check-cast v1, Ll5/s;
 
     .line 6
-    new-instance v9, Ls0/a$c;
+    new-instance v2, Le5/f;
 
-    const-string v11, "BOOLEAN"
-
-    const/4 v12, 0x5
-
-    invoke-direct {v9, v11, v12, v12}, Ls0/a$c;-><init>(Ljava/lang/String;II)V
-
-    sput-object v9, Ls0/a$c;->BOOLEAN:Ls0/a$c;
-
-    const/4 v11, 0x6
-
-    new-array v11, v11, [Ls0/a$c;
-
-    aput-object v0, v11, v2
-
-    aput-object v1, v11, v4
-
-    aput-object v3, v11, v6
-
-    aput-object v5, v11, v8
-
-    aput-object v7, v11, v10
-
-    aput-object v9, v11, v12
+    invoke-direct {v2}, Le5/f;-><init>()V
 
     .line 7
-    sput-object v11, Ls0/a$c;->$VALUES:[Ls0/a$c;
+    invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/a;->a()[B
+
+    move-result-object v1
+
+    const-string v2, "type.googleapis.com/google.crypto.tink.AesGcmKey"
+
+    const/4 v3, 0x1
+
+    .line 8
+    invoke-static {v2, v1, v3}, Ld5/h;->a(Ljava/lang/String;[BI)Ld5/h;
+
+    move-result-object v1
+
+    const-string v2, "AES256_GCM"
+
+    const/4 v4, 0x0
+
+    .line 9
+    invoke-direct {v0, v2, v4, v1}, Ls0/a$c;-><init>(Ljava/lang/String;ILd5/h;)V
+
+    sput-object v0, Ls0/a$c;->h:Ls0/a$c;
+
+    new-array v1, v3, [Ls0/a$c;
+
+    aput-object v0, v1, v4
+
+    .line 10
+    sput-object v1, Ls0/a$c;->i:[Ls0/a$c;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;II)V
+.method public constructor <init>(Ljava/lang/String;ILd5/h;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(I)V"
+            "(",
+            "Ld5/h;",
+            ")V"
         }
     .end annotation
 
@@ -146,75 +115,9 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput p3, p0, Ls0/a$c;->mId:I
+    iput-object p3, p0, Ls0/a$c;->g:Ld5/h;
 
     return-void
-.end method
-
-.method public static fromId(I)Ls0/a$c;
-    .locals 1
-
-    if-eqz p0, :cond_5
-
-    const/4 v0, 0x1
-
-    if-eq p0, v0, :cond_4
-
-    const/4 v0, 0x2
-
-    if-eq p0, v0, :cond_3
-
-    const/4 v0, 0x3
-
-    if-eq p0, v0, :cond_2
-
-    const/4 v0, 0x4
-
-    if-eq p0, v0, :cond_1
-
-    const/4 v0, 0x5
-
-    if-eq p0, v0, :cond_0
-
-    const/4 p0, 0x0
-
-    return-object p0
-
-    .line 1
-    :cond_0
-    sget-object p0, Ls0/a$c;->BOOLEAN:Ls0/a$c;
-
-    return-object p0
-
-    .line 2
-    :cond_1
-    sget-object p0, Ls0/a$c;->FLOAT:Ls0/a$c;
-
-    return-object p0
-
-    .line 3
-    :cond_2
-    sget-object p0, Ls0/a$c;->LONG:Ls0/a$c;
-
-    return-object p0
-
-    .line 4
-    :cond_3
-    sget-object p0, Ls0/a$c;->INT:Ls0/a$c;
-
-    return-object p0
-
-    .line 5
-    :cond_4
-    sget-object p0, Ls0/a$c;->STRING_SET:Ls0/a$c;
-
-    return-object p0
-
-    .line 6
-    :cond_5
-    sget-object p0, Ls0/a$c;->STRING:Ls0/a$c;
-
-    return-object p0
 .end method
 
 .method public static valueOf(Ljava/lang/String;)Ls0/a$c;
@@ -236,7 +139,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Ls0/a$c;->$VALUES:[Ls0/a$c;
+    sget-object v0, Ls0/a$c;->i:[Ls0/a$c;
 
     invoke-virtual {v0}, [Ls0/a$c;->clone()Ljava/lang/Object;
 
@@ -245,15 +148,4 @@
     check-cast v0, [Ls0/a$c;
 
     return-object v0
-.end method
-
-
-# virtual methods
-.method public getId()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Ls0/a$c;->mId:I
-
-    return v0
 .end method

@@ -216,13 +216,13 @@
     aget-object v5, p2, v2
 
     .line 13
-    const-class v6, Landroidx/lifecycle/p;
+    const-class v6, Landroidx/lifecycle/q;
 
     invoke-virtual {v5, v6}, Ljava/lang/reflect/Method;->getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
 
     move-result-object v6
 
-    check-cast v6, Landroidx/lifecycle/p;
+    check-cast v6, Landroidx/lifecycle/q;
 
     const/4 v7, 0x1
 
@@ -271,7 +271,7 @@
 
     .line 18
     :goto_4
-    invoke-interface {v6}, Landroidx/lifecycle/p;->value()Landroidx/lifecycle/f$b;
+    invoke-interface {v6}, Landroidx/lifecycle/q;->value()Landroidx/lifecycle/f$b;
 
     move-result-object v6
 
@@ -468,7 +468,7 @@
 
     const-string v1, "Method "
 
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 

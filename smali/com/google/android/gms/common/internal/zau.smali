@@ -16,15 +16,15 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public b:Landroid/os/IBinder;
+.field public h:Landroid/os/IBinder;
 
-.field public h:Lcom/google/android/gms/common/ConnectionResult;
-
-.field public i:Z
+.field public i:Lcom/google/android/gms/common/ConnectionResult;
 
 .field public j:Z
+
+.field public k:Z
 
 
 # direct methods
@@ -48,19 +48,19 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/common/internal/zau;->a:I
+    iput p1, p0, Lcom/google/android/gms/common/internal/zau;->g:I
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/common/internal/zau;->b:Landroid/os/IBinder;
+    iput-object p2, p0, Lcom/google/android/gms/common/internal/zau;->h:Landroid/os/IBinder;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/common/internal/zau;->h:Lcom/google/android/gms/common/ConnectionResult;
+    iput-object p3, p0, Lcom/google/android/gms/common/internal/zau;->i:Lcom/google/android/gms/common/ConnectionResult;
 
     .line 5
-    iput-boolean p4, p0, Lcom/google/android/gms/common/internal/zau;->i:Z
+    iput-boolean p4, p0, Lcom/google/android/gms/common/internal/zau;->j:Z
 
     .line 6
-    iput-boolean p5, p0, Lcom/google/android/gms/common/internal/zau;->j:Z
+    iput-boolean p5, p0, Lcom/google/android/gms/common/internal/zau;->k:Z
 
     return-void
 .end method
@@ -96,9 +96,9 @@
     check-cast p1, Lcom/google/android/gms/common/internal/zau;
 
     .line 3
-    iget-object v2, p0, Lcom/google/android/gms/common/internal/zau;->h:Lcom/google/android/gms/common/ConnectionResult;
+    iget-object v2, p0, Lcom/google/android/gms/common/internal/zau;->i:Lcom/google/android/gms/common/ConnectionResult;
 
-    iget-object v3, p1, Lcom/google/android/gms/common/internal/zau;->h:Lcom/google/android/gms/common/ConnectionResult;
+    iget-object v3, p1, Lcom/google/android/gms/common/internal/zau;->i:Lcom/google/android/gms/common/ConnectionResult;
 
     invoke-virtual {v2, v3}, Lcom/google/android/gms/common/ConnectionResult;->equals(Ljava/lang/Object;)Z
 
@@ -107,11 +107,11 @@
     if-eqz v2, :cond_3
 
     .line 4
-    invoke-virtual {p0}, Lcom/google/android/gms/common/internal/zau;->x2()Lcom/google/android/gms/common/internal/IAccountAccessor;
+    invoke-virtual {p0}, Lcom/google/android/gms/common/internal/zau;->z2()Lcom/google/android/gms/common/internal/IAccountAccessor;
 
     move-result-object v2
 
-    invoke-virtual {p1}, Lcom/google/android/gms/common/internal/zau;->x2()Lcom/google/android/gms/common/internal/IAccountAccessor;
+    invoke-virtual {p1}, Lcom/google/android/gms/common/internal/zau;->z2()Lcom/google/android/gms/common/internal/IAccountAccessor;
 
     move-result-object p1
 
@@ -140,7 +140,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget v2, p0, Lcom/google/android/gms/common/internal/zau;->a:I
+    iget v2, p0, Lcom/google/android/gms/common/internal/zau;->g:I
 
     const/4 v3, 0x4
 
@@ -153,7 +153,7 @@
     const/4 v1, 0x2
 
     .line 5
-    iget-object v2, p0, Lcom/google/android/gms/common/internal/zau;->b:Landroid/os/IBinder;
+    iget-object v2, p0, Lcom/google/android/gms/common/internal/zau;->h:Landroid/os/IBinder;
 
     const/4 v4, 0x0
 
@@ -162,13 +162,13 @@
     const/4 v1, 0x3
 
     .line 6
-    iget-object v2, p0, Lcom/google/android/gms/common/internal/zau;->h:Lcom/google/android/gms/common/ConnectionResult;
+    iget-object v2, p0, Lcom/google/android/gms/common/internal/zau;->i:Lcom/google/android/gms/common/ConnectionResult;
 
     .line 7
     invoke-static {p1, v1, v2, p2, v4}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 8
-    iget-boolean p2, p0, Lcom/google/android/gms/common/internal/zau;->i:Z
+    iget-boolean p2, p0, Lcom/google/android/gms/common/internal/zau;->j:Z
 
     .line 9
     invoke-static {p1, v3, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -179,7 +179,7 @@
     const/4 p2, 0x5
 
     .line 11
-    iget-boolean v1, p0, Lcom/google/android/gms/common/internal/zau;->j:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/common/internal/zau;->k:Z
 
     .line 12
     invoke-static {p1, p2, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -193,11 +193,11 @@
     return-void
 .end method
 
-.method public final x2()Lcom/google/android/gms/common/internal/IAccountAccessor;
+.method public final z2()Lcom/google/android/gms/common/internal/IAccountAccessor;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/internal/zau;->b:Landroid/os/IBinder;
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zau;->h:Landroid/os/IBinder;
 
     if-nez v0, :cond_0
 
@@ -207,7 +207,7 @@
 
     .line 2
     :cond_0
-    invoke-static {v0}, Lcom/google/android/gms/common/internal/IAccountAccessor$Stub;->P0(Landroid/os/IBinder;)Lcom/google/android/gms/common/internal/IAccountAccessor;
+    invoke-static {v0}, Lcom/google/android/gms/common/internal/IAccountAccessor$Stub;->Q0(Landroid/os/IBinder;)Lcom/google/android/gms/common/internal/IAccountAccessor;
 
     move-result-object v0
 

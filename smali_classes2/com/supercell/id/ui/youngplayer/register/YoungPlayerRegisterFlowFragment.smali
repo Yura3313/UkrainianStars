@@ -12,20 +12,20 @@
 
 
 # instance fields
-.field public k0:Ljava/lang/String;
+.field public l0:Ljava/lang/String;
 
-.field public final l0:[Lke/a;
+.field public final m0:[Lke/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "[",
             "Lke/a<",
-            "Luc/v;",
+            "Lrc/w;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public m0:Ljava/util/HashMap;
+.field public n0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -40,35 +40,35 @@
     new-array v0, v0, [Lke/a;
 
     .line 2
-    sget-object v1, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$a;->a:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$a;
+    sget-object v1, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$a;->g:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$a;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
     .line 3
-    sget-object v1, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$b;->a:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$b;
+    sget-object v1, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$b;->g:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$b;
 
     const/4 v2, 0x1
 
     aput-object v1, v0, v2
 
     .line 4
-    sget-object v1, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;->a:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;
+    sget-object v1, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;->g:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;
 
     const/4 v2, 0x2
 
     aput-object v1, v0, v2
 
     .line 5
-    sget-object v1, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$d;->a:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$d;
+    sget-object v1, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$d;->g:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$d;
 
     const/4 v2, 0x3
 
     aput-object v1, v0, v2
 
     .line 6
-    iput-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->l0:[Lke/a;
+    iput-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->m0:[Lke/a;
 
     return-void
 .end method
@@ -78,7 +78,7 @@
 .method public W0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->m0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->n0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -97,7 +97,7 @@
     if-nez p1, :cond_3
 
     .line 2
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -147,7 +147,7 @@
 
     const-string v0, "flowPager"
 
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x2
 
@@ -169,7 +169,7 @@
 
     .line 2
     :cond_0
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     :goto_0
     if-eqz p1, :cond_1
@@ -187,7 +187,7 @@
     const/4 p1, 0x0
 
     :goto_1
-    iput-object p1, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->k0:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->l0:Ljava/lang/String;
 
     return-void
 .end method
@@ -205,7 +205,7 @@
 .method public o1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->m0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->n0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -213,10 +213,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->m0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->n0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->m0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->n0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -231,7 +231,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -245,7 +245,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->m0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->n0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -263,7 +263,7 @@
     if-eqz p1, :cond_1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->k0:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->l0:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
@@ -281,7 +281,7 @@
     const-string p1, "outState"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -294,13 +294,13 @@
         value = {
             "()[",
             "Lke/a<",
-            "Luc/v;",
+            "Lrc/w;",
             ">;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->l0:[Lke/a;
+    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->m0:[Lke/a;
 
     return-object v0
 .end method

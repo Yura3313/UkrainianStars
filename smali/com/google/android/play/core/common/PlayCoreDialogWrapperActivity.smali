@@ -3,11 +3,11 @@
 
 
 # static fields
-.field public static final synthetic b:I
+.field public static final synthetic h:I
 
 
 # instance fields
-.field public a:Landroid/os/ResultReceiver;
+.field public g:Landroid/os/ResultReceiver;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     if-nez p1, :cond_1
 
-    iget-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->a:Landroid/os/ResultReceiver;
+    iget-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->g:Landroid/os/ResultReceiver;
 
     if-eqz p1, :cond_1
 
@@ -84,7 +84,7 @@
 
     check-cast p1, Landroid/os/ResultReceiver;
 
-    iput-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->a:Landroid/os/ResultReceiver;
+    iput-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->g:Landroid/os/ResultReceiver;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
@@ -128,7 +128,7 @@
     :catch_0
     nop
 
-    iget-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->a:Landroid/os/ResultReceiver;
+    iget-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->g:Landroid/os/ResultReceiver;
 
     if-eqz p1, :cond_0
 
@@ -152,7 +152,7 @@
 
     check-cast p1, Landroid/os/ResultReceiver;
 
-    iput-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->a:Landroid/os/ResultReceiver;
+    iput-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->g:Landroid/os/ResultReceiver;
 
     return-void
 .end method
@@ -160,7 +160,7 @@
 .method public final onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->a:Landroid/os/ResultReceiver;
+    iget-object v0, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->g:Landroid/os/ResultReceiver;
 
     const-string v1, "result_receiver"
 

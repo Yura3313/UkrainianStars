@@ -25,13 +25,13 @@
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$PasswordRequestOptions;
+.field public final g:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$PasswordRequestOptions;
 
-.field public final b:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$GoogleIdTokenRequestOptions;
+.field public final h:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$GoogleIdTokenRequestOptions;
 
-.field public final h:Ljava/lang/String;
+.field public final i:Ljava/lang/String;
 
-.field public final i:Z
+.field public final j:Z
 
 
 # direct methods
@@ -59,18 +59,18 @@
     if-eqz p1, :cond_1
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->a:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$PasswordRequestOptions;
+    iput-object p1, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->g:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$PasswordRequestOptions;
 
     if-eqz p2, :cond_0
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->b:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$GoogleIdTokenRequestOptions;
+    iput-object p2, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->h:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$GoogleIdTokenRequestOptions;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->i:Ljava/lang/String;
 
     .line 5
-    iput-boolean p4, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->i:Z
+    iput-boolean p4, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->j:Z
 
     return-void
 
@@ -110,9 +110,9 @@
     check-cast p1, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->a:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$PasswordRequestOptions;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->g:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$PasswordRequestOptions;
 
-    iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->a:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$PasswordRequestOptions;
+    iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->g:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$PasswordRequestOptions;
 
     invoke-static {v0, v2}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -120,9 +120,9 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->b:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$GoogleIdTokenRequestOptions;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->h:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$GoogleIdTokenRequestOptions;
 
-    iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->b:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$GoogleIdTokenRequestOptions;
+    iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->h:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$GoogleIdTokenRequestOptions;
 
     .line 4
     invoke-static {v0, v2}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -131,9 +131,9 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->i:Ljava/lang/String;
 
-    iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->h:Ljava/lang/String;
+    iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->i:Ljava/lang/String;
 
     .line 5
     invoke-static {v0, v2}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -142,9 +142,9 @@
 
     if-eqz v0, :cond_1
 
-    iget-boolean v0, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->i:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->j:Z
 
-    iget-boolean p1, p1, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->i:Z
+    iget-boolean p1, p1, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->j:Z
 
     if-ne v0, p1, :cond_1
 
@@ -164,25 +164,25 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->a:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$PasswordRequestOptions;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->g:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$PasswordRequestOptions;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->b:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$GoogleIdTokenRequestOptions;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->h:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$GoogleIdTokenRequestOptions;
 
     const/4 v2, 0x1
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->i:Ljava/lang/String;
 
     const/4 v2, 0x2
 
     aput-object v1, v0, v2
 
-    iget-boolean v1, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->i:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->j:Z
 
     .line 2
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -214,7 +214,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->a:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$PasswordRequestOptions;
+    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->g:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$PasswordRequestOptions;
 
     const/4 v3, 0x0
 
@@ -224,7 +224,7 @@
     const/4 v1, 0x2
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->b:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$GoogleIdTokenRequestOptions;
+    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->h:Lcom/google/android/gms/auth/api/identity/BeginSignInRequest$GoogleIdTokenRequestOptions;
 
     .line 5
     invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
@@ -232,13 +232,13 @@
     const/4 p2, 0x3
 
     .line 6
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->i:Ljava/lang/String;
 
     .line 7
     invoke-static {p1, p2, v1, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 8
-    iget-boolean p2, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->i:Z
+    iget-boolean p2, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInRequest;->j:Z
 
     const/4 v1, 0x4
 

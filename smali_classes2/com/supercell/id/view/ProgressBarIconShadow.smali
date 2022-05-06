@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final a:Landroid/graphics/Paint;
+.field public final g:Landroid/graphics/Paint;
 
-.field public final b:Landroid/graphics/RectF;
+.field public final h:Landroid/graphics/RectF;
 
 
 # direct methods
@@ -44,14 +44,14 @@
     invoke-virtual {p2, p1}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 5
-    iput-object p2, p0, Lcom/supercell/id/view/ProgressBarIconShadow;->a:Landroid/graphics/Paint;
+    iput-object p2, p0, Lcom/supercell/id/view/ProgressBarIconShadow;->g:Landroid/graphics/Paint;
 
     .line 6
     new-instance p1, Landroid/graphics/RectF;
 
     invoke-direct {p1}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/view/ProgressBarIconShadow;->b:Landroid/graphics/RectF;
+    iput-object p1, p0, Lcom/supercell/id/view/ProgressBarIconShadow;->h:Landroid/graphics/RectF;
 
     return-void
 
@@ -59,7 +59,7 @@
     const-string p1, "context"
 
     .line 7
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -123,7 +123,7 @@
     div-float/2addr v3, v2
 
     .line 5
-    iget-object v2, p0, Lcom/supercell/id/view/ProgressBarIconShadow;->b:Landroid/graphics/RectF;
+    iget-object v2, p0, Lcom/supercell/id/view/ProgressBarIconShadow;->h:Landroid/graphics/RectF;
 
     const/4 v4, 0x0
 
@@ -170,7 +170,7 @@
     iput v1, v2, Landroid/graphics/RectF;->top:F
 
     .line 10
-    iget-object v1, p0, Lcom/supercell/id/view/ProgressBarIconShadow;->a:Landroid/graphics/Paint;
+    iget-object v1, p0, Lcom/supercell/id/view/ProgressBarIconShadow;->g:Landroid/graphics/Paint;
 
     .line 11
     invoke-virtual {p1, v2, v0, v0, v1}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V

@@ -114,7 +114,7 @@
     iget-object v1, p0, Lcom/google/android/material/textfield/a;->g:Lcom/google/android/material/textfield/TextInputLayout$g;
 
     .line 10
-    iget-object v0, v0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Ljava/util/LinkedHashSet;
+    iget-object v0, v0, Lcom/google/android/material/textfield/TextInputLayout;->l0:Ljava/util/LinkedHashSet;
 
     invoke-virtual {v0, v1}, Ljava/util/LinkedHashSet;->add(Ljava/lang/Object;)Z
 
@@ -130,7 +130,7 @@
     move-result-object v1
 
     .line 12
-    sget-object v2, Lb4/a;->d:Landroid/animation/TimeInterpolator;
+    sget-object v2, Lc4/a;->d:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {v1, v2}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -157,7 +157,7 @@
     move-result-object v2
 
     .line 17
-    sget-object v3, Lb4/a;->a:Landroid/animation/TimeInterpolator;
+    sget-object v3, Lc4/a;->a:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {v2, v3}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 

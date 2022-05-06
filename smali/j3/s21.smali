@@ -2,49 +2,39 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-
-# annotations
-.annotation runtime Ljavax/annotation/ParametersAreNonnullByDefault;
-.end annotation
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final a:F
-
-.field public final b:F
-
-.field public final c:F
-
-.field public final d:F
-
-.field public final e:I
+.field public final synthetic g:Lj3/q21;
 
 
 # direct methods
-.method public constructor <init>(FFFFI)V
+.method public constructor <init>(Lj3/q21;Ljava/lang/String;JJ)V
     .locals 0
 
     .line 1
+    iput-object p1, p0, Lj3/s21;->g:Lj3/q21;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/s21;->g:Lj3/q21;
+
     .line 2
-    iput p1, p0, Lj3/s21;->a:F
+    iget-object v0, v0, Lj3/q21;->b:Lj3/xf;
 
     .line 3
-    iput p2, p0, Lj3/s21;->b:F
-
-    add-float/2addr p1, p3
-
-    .line 4
-    iput p1, p0, Lj3/s21;->c:F
-
-    add-float/2addr p2, p4
-
-    .line 5
-    iput p2, p0, Lj3/s21;->d:F
-
-    .line 6
-    iput p5, p0, Lj3/s21;->e:I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     return-void
 .end method

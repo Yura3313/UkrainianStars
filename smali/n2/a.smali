@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field public b:Ln2/a$a;
+.field public h:Ln2/a$a;
 
 
 # virtual methods
@@ -27,12 +27,12 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Ln2/a;->b:Ln2/a$a;
+    iget-object v0, p0, Ln2/a;->h:Ln2/a$a;
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget v1, v0, Ln2/a$a;->b:I
+    iget v1, v0, Ln2/a$a;->h:I
 
     if-eq v1, p1, :cond_1
 
@@ -40,12 +40,12 @@
     :cond_0
     new-instance v0, Ln2/a$a;
 
-    iget-object v1, p0, Lb2/a;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v1, p0, Lb2/a;->g:Lcom/google/android/gms/common/data/DataHolder;
 
     invoke-direct {v0, v1, p1}, Ln2/a$a;-><init>(Lcom/google/android/gms/common/data/DataHolder;I)V
 
     .line 4
-    iput-object v0, p0, Ln2/a;->b:Ln2/a$a;
+    iput-object v0, p0, Ln2/a;->h:Ln2/a$a;
 
     :cond_1
     return-object v0
@@ -55,7 +55,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lb2/a;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/a;->g:Lcom/google/android/gms/common/data/DataHolder;
 
     if-eqz v0, :cond_0
 

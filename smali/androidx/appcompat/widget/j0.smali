@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final a:Lg/a;
+.field public final g:Lg/a;
 
-.field public final synthetic b:Landroidx/appcompat/widget/k0;
+.field public final synthetic h:Landroidx/appcompat/widget/k0;
 
 
 # direct methods
@@ -17,7 +17,7 @@
     .locals 7
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/j0;->b:Landroidx/appcompat/widget/k0;
+    iput-object p1, p0, Landroidx/appcompat/widget/j0;->h:Landroidx/appcompat/widget/k0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
 
     invoke-direct/range {v0 .. v5}, Lg/a;-><init>(Landroid/content/Context;IIILjava/lang/CharSequence;)V
 
-    iput-object v6, p0, Landroidx/appcompat/widget/j0;->a:Lg/a;
+    iput-object v6, p0, Landroidx/appcompat/widget/j0;->g:Lg/a;
 
     return-void
 .end method
@@ -53,7 +53,7 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/j0;->b:Landroidx/appcompat/widget/k0;
+    iget-object p1, p0, Landroidx/appcompat/widget/j0;->h:Landroidx/appcompat/widget/k0;
 
     iget-object v0, p1, Landroidx/appcompat/widget/k0;->l:Landroid/view/Window$Callback;
 
@@ -66,7 +66,7 @@
     const/4 p1, 0x0
 
     .line 2
-    iget-object v1, p0, Landroidx/appcompat/widget/j0;->a:Lg/a;
+    iget-object v1, p0, Landroidx/appcompat/widget/j0;->g:Lg/a;
 
     invoke-interface {v0, p1, v1}, Landroid/view/Window$Callback;->onMenuItemSelected(ILandroid/view/MenuItem;)Z
 

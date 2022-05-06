@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/drive/query/internal/zzx;
+.field public final g:Lcom/google/android/gms/drive/query/internal/zzx;
 
-.field public final b:Ljava/util/List;
+.field public final h:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -33,9 +33,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Ls2/i;
+    new-instance v0, Ls2/j;
 
-    invoke-direct {v0}, Ls2/i;-><init>()V
+    invoke-direct {v0}, Ls2/j;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/drive/query/internal/zzr;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -58,24 +58,24 @@
     invoke-direct {p0}, Lcom/google/android/gms/drive/query/internal/zza;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzr;->a:Lcom/google/android/gms/drive/query/internal/zzx;
+    iput-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzr;->g:Lcom/google/android/gms/drive/query/internal/zzx;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/drive/query/internal/zzr;->b:Ljava/util/List;
+    iput-object p2, p0, Lcom/google/android/gms/drive/query/internal/zzr;->h:Ljava/util/List;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final Y1(Li1/o;)Ljava/lang/Object;
+.method public final B1(Lj3/y1;)Ljava/lang/Object;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Li1/o;",
+            "Lj3/y1;",
             ")TT;"
         }
     .end annotation
@@ -86,7 +86,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/drive/query/internal/zzr;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/drive/query/internal/zzr;->h:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -106,10 +106,10 @@
     check-cast v2, Lcom/google/android/gms/drive/query/internal/FilterHolder;
 
     .line 3
-    iget-object v2, v2, Lcom/google/android/gms/drive/query/internal/FilterHolder;->o:Lcom/google/android/gms/drive/query/Filter;
+    iget-object v2, v2, Lcom/google/android/gms/drive/query/internal/FilterHolder;->p:Lcom/google/android/gms/drive/query/Filter;
 
     .line 4
-    invoke-interface {v2, p1}, Lcom/google/android/gms/drive/query/Filter;->Y1(Li1/o;)Ljava/lang/Object;
+    invoke-interface {v2, p1}, Lcom/google/android/gms/drive/query/Filter;->B1(Lj3/y1;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -119,7 +119,7 @@
 
     .line 5
     :cond_0
-    iget-object v1, p0, Lcom/google/android/gms/drive/query/internal/zzr;->a:Lcom/google/android/gms/drive/query/internal/zzx;
+    iget-object v1, p0, Lcom/google/android/gms/drive/query/internal/zzr;->g:Lcom/google/android/gms/drive/query/internal/zzx;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -127,7 +127,7 @@
     new-instance p1, Ljava/lang/StringBuilder;
 
     .line 7
-    iget-object v1, v1, Lcom/google/android/gms/drive/query/internal/zzx;->a:Ljava/lang/String;
+    iget-object v1, v1, Lcom/google/android/gms/drive/query/internal/zzx;->g:Ljava/lang/String;
 
     .line 8
     invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -198,7 +198,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/drive/query/internal/zzr;->a:Lcom/google/android/gms/drive/query/internal/zzx;
+    iget-object v2, p0, Lcom/google/android/gms/drive/query/internal/zzr;->g:Lcom/google/android/gms/drive/query/internal/zzx;
 
     const/4 v3, 0x0
 
@@ -207,7 +207,7 @@
     const/4 p2, 0x2
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/drive/query/internal/zzr;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/drive/query/internal/zzr;->h:Ljava/util/List;
 
     invoke-static {p1, p2, v1, v3}, Ld2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
 

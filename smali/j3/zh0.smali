@@ -2,56 +2,52 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lj3/bv0;
-
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/lang/Object;",
-        "Lj3/bv0<",
-        "Lj3/am0;",
-        ">;"
+        "<AdT:",
+        "Lj3/io;",
+        ">",
+        "Ljava/lang/Object;"
     }
 .end annotation
 
 
+# instance fields
+.field public final a:Lj3/ph0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/ph0<",
+            "TAdT;>;"
+        }
+    .end annotation
+.end field
+
+.field public final b:Lj3/bi0;
+
+
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lj3/ph0;Lj3/bi0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/ph0<",
+            "TAdT;>;",
+            "Lj3/bi0;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-void
-.end method
-
-.method public static a()Lj3/am0;
-    .locals 2
-
-    .line 1
-    sget-object v0, Lj3/gd;->b:Lj3/am0;
-
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
-
     .line 2
-    invoke-static {v0, v1}, Lj3/zo0;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    iput-object p1, p0, Lj3/zh0;->a:Lj3/ph0;
 
-    check-cast v0, Lj3/am0;
+    .line 3
+    iput-object p2, p0, Lj3/zh0;->b:Lj3/bi0;
 
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public final synthetic get()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    invoke-static {}, Lj3/zh0;->a()Lj3/am0;
-
-    move-result-object v0
-
-    return-object v0
+    return-void
 .end method

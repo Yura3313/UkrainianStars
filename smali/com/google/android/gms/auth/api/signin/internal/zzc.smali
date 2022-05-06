@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public b2(Lcom/google/android/gms/common/api/Status;)V
+.method public c2(Lcom/google/android/gms/common/api/Status;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -31,7 +31,7 @@
     throw p1
 .end method
 
-.method public f3(Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;Lcom/google/android/gms/common/api/Status;)V
+.method public g3(Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;Lcom/google/android/gms/common/api/Status;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -47,7 +47,7 @@
     throw p1
 .end method
 
-.method public r1(Lcom/google/android/gms/common/api/Status;)V
+.method public s1(Lcom/google/android/gms/common/api/Status;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {

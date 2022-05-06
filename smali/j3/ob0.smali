@@ -1,42 +1,60 @@
-.class public final synthetic Lj3/ob0;
+.class public final Lj3/ob0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/nb0;
+.implements Lj3/ed0;
 
 
-# static fields
-.field public static final a:Lj3/nb0;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj3/ed0<",
+        "Lj3/ga0;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Lj3/km0;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lj3/ob0;
-
-    invoke-direct {v0}, Lj3/ob0;-><init>()V
-
-    sput-object v0, Lj3/ob0;->a:Lj3/nb0;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lj3/km0;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lj3/ob0;->a:Lj3/km0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Ljava/lang/Object;)V
-    .locals 0
+.method public final a()Lj3/im0;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lj3/im0<",
+            "Lj3/ga0;",
+            ">;"
+        }
+    .end annotation
 
-    check-cast p1, Landroid/os/Bundle;
+    .line 1
+    iget-object v0, p0, Lj3/ob0;->a:Lj3/km0;
 
-    return-void
+    sget-object v1, Lj3/pb0;->a:Ljava/util/concurrent/Callable;
+
+    invoke-interface {v0, v1}, Lj3/km0;->c(Ljava/util/concurrent/Callable;)Lj3/im0;
+
+    move-result-object v0
+
+    return-object v0
 .end method

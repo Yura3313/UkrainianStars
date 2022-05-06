@@ -1,105 +1,95 @@
 .class public final Lwd/c;
-.super Ljava/lang/Object;
-.source "ProfileUtil.kt"
+.super Lle/j;
+.source "ClientStateStorage.kt"
+
+# interfaces
+.implements Lke/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lle/j;",
+        "Lke/a<",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:I
-
-.field public final b:I
+.field public final synthetic g:Landroid/content/Context;
 
 
 # direct methods
-.method public constructor <init>(II)V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lwd/c;->g:Landroid/content/Context;
 
-    iput p1, p0, Lwd/c;->a:I
+    const/4 p1, 0x0
 
-    iput p2, p0, Lwd/c;->b:I
+    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public equals(Ljava/lang/Object;)Z
-    .locals 2
+.method public final invoke()Ljava/lang/Object;
+    .locals 3
 
-    if-eq p0, p1, :cond_1
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    instance-of v0, p1, Lwd/c;
+    const-string v1, "ClientState"
 
-    if-eqz v0, :cond_0
+    const/16 v2, 0x18
 
-    check-cast p1, Lwd/c;
+    if-lt v0, v2, :cond_0
 
-    iget v0, p0, Lwd/c;->a:I
+    .line 2
+    iget-object v0, p0, Lwd/c;->g:Landroid/content/Context;
 
-    iget v1, p1, Lwd/c;->a:I
+    invoke-virtual {v0, v1}, Landroid/content/Context;->deleteSharedPreferences(Ljava/lang/String;)Z
 
-    if-ne v0, v1, :cond_0
+    move-result v0
 
-    iget v0, p0, Lwd/c;->b:I
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    iget p1, p1, Lwd/c;->b:I
-
-    if-ne v0, p1, :cond_0
+    move-result-object v0
 
     goto :goto_0
 
+    .line 3
     :cond_0
-    const/4 p1, 0x0
+    iget-object v0, p0, Lwd/c;->g:Landroid/content/Context;
 
-    return p1
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    .line 4
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->clear()Landroid/content/SharedPreferences$Editor;
+
+    .line 5
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    goto :goto_0
 
     :cond_1
+    const/4 v0, 0x0
+
     :goto_0
-    const/4 p1, 0x1
-
-    return p1
-.end method
-
-.method public hashCode()I
-    .locals 2
-
-    iget v0, p0, Lwd/c;->a:I
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget v1, p0, Lwd/c;->b:I
-
-    add-int/2addr v0, v1
-
-    return v0
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 3
-
-    const-string v0, "AvatarBackground(startColor="
-
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget v1, p0, Lwd/c;->a:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, ", endColor="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lwd/c;->b:I
-
-    const-string v2, ")"
-
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/d;->b(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
     return-object v0
 .end method

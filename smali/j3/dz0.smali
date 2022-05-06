@@ -3,106 +3,94 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/cz0;
-
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0x15
-.end annotation
+.implements Lj3/bz0;
 
 
 # instance fields
 .field public final a:I
 
-.field public b:[Landroid/media/MediaCodecInfo;
+.field public final b:I
+
+.field public final c:Lj3/d21;
 
 
 # direct methods
-.method public constructor <init>(Z)V
-    .locals 0
+.method public constructor <init>(Lj3/yy0;)V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput p1, p0, Lj3/dz0;->a:I
+    iget-object p1, p1, Lj3/yy0;->P0:Lj3/d21;
+
+    iput-object p1, p0, Lj3/dz0;->c:Lj3/d21;
+
+    const/16 v0, 0xc
+
+    .line 3
+    invoke-virtual {p1, v0}, Lj3/d21;->h(I)V
+
+    .line 4
+    invoke-virtual {p1}, Lj3/d21;->o()I
+
+    move-result v0
+
+    iput v0, p0, Lj3/dz0;->a:I
+
+    .line 5
+    invoke-virtual {p1}, Lj3/d21;->o()I
+
+    move-result p1
+
+    iput p1, p0, Lj3/dz0;->b:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(I)Landroid/media/MediaCodecInfo;
+.method public final a()I
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lj3/dz0;->e()V
+    iget v0, p0, Lj3/dz0;->b:I
 
-    .line 2
-    iget-object v0, p0, Lj3/dz0;->b:[Landroid/media/MediaCodecInfo;
-
-    aget-object p1, v0, p1
-
-    return-object p1
+    return v0
 .end method
 
-.method public final b()Z
+.method public final b()I
     .locals 1
+
+    .line 1
+    iget v0, p0, Lj3/dz0;->a:I
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lj3/dz0;->c:Lj3/d21;
+
+    invoke-virtual {v0}, Lj3/d21;->o()I
+
+    move-result v0
+
+    :cond_0
+    return v0
+.end method
+
+.method public final c()Z
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lj3/dz0;->a:I
+
+    if-eqz v0, :cond_0
 
     const/4 v0, 0x1
 
     return v0
-.end method
-
-.method public final c()I
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lj3/dz0;->e()V
-
-    .line 2
-    iget-object v0, p0, Lj3/dz0;->b:[Landroid/media/MediaCodecInfo;
-
-    array-length v0, v0
-
-    return v0
-.end method
-
-.method public final d(Ljava/lang/String;Landroid/media/MediaCodecInfo$CodecCapabilities;)Z
-    .locals 0
-
-    const-string p1, "secure-playback"
-
-    .line 1
-    invoke-virtual {p2, p1}, Landroid/media/MediaCodecInfo$CodecCapabilities;->isFeatureSupported(Ljava/lang/String;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final e()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lj3/dz0;->b:[Landroid/media/MediaCodecInfo;
-
-    if-nez v0, :cond_0
-
-    .line 2
-    new-instance v0, Landroid/media/MediaCodecList;
-
-    iget v1, p0, Lj3/dz0;->a:I
-
-    invoke-direct {v0, v1}, Landroid/media/MediaCodecList;-><init>(I)V
-
-    invoke-virtual {v0}, Landroid/media/MediaCodecList;->getCodecInfos()[Landroid/media/MediaCodecInfo;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lj3/dz0;->b:[Landroid/media/MediaCodecInfo;
 
     :cond_0
-    return-void
+    const/4 v0, 0x0
+
+    return v0
 .end method

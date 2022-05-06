@@ -36,54 +36,15 @@
 
 # virtual methods
 .method public a(Landroid/view/View;)V
-    .locals 1
+    .locals 0
 
     .line 1
     iget-object p1, p0, Lcom/supercell/titan/ScInfoBox$a$b;->a:Lcom/supercell/titan/ScInfoBox$a;
 
-    iget-object p1, p1, Lcom/supercell/titan/ScInfoBox$a;->b:Lcom/supercell/titan/ScInfoBox;
+    iget-object p1, p1, Lcom/supercell/titan/ScInfoBox$a;->h:Lcom/supercell/titan/ScInfoBox;
 
-    .line 2
-    iget-object p1, p1, Lcom/supercell/titan/ScInfoBox;->e:Landroid/widget/LinearLayout;
+    invoke-virtual {p1}, Lcom/supercell/titan/ScInfoBox;->dismiss()V
 
-    .line 3
-    invoke-virtual {p1}, Landroid/widget/LinearLayout;->getParent()Landroid/view/ViewParent;
-
-    move-result-object p1
-
-    check-cast p1, Landroidx/coordinatorlayout/widget/CoordinatorLayout;
-
-    if-eqz p1, :cond_0
-
-    .line 4
-    iget-object v0, p0, Lcom/supercell/titan/ScInfoBox$a$b;->a:Lcom/supercell/titan/ScInfoBox$a;
-
-    iget-object v0, v0, Lcom/supercell/titan/ScInfoBox$a;->b:Lcom/supercell/titan/ScInfoBox;
-
-    .line 5
-    iget-object v0, v0, Lcom/supercell/titan/ScInfoBox;->e:Landroid/widget/LinearLayout;
-
-    .line 6
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
-
-    .line 7
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 8
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getParent()Landroid/view/ViewParent;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/view/ViewGroup;
-
-    .line 9
-    invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
-
-    :cond_0
     return-void
 .end method
 

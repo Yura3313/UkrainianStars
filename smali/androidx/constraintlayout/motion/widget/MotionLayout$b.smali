@@ -1,5 +1,5 @@
-.class public synthetic Landroidx/constraintlayout/motion/widget/MotionLayout$b;
-.super Ljava/lang/Object;
+.class public Landroidx/constraintlayout/motion/widget/MotionLayout$b;
+.super Lo/q;
 .source "MotionLayout.java"
 
 
@@ -9,91 +9,146 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1009
-    name = null
+    accessFlags = 0x1
+    name = "b"
 .end annotation
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public a:F
+
+.field public b:F
+
+.field public c:F
+
+.field public final synthetic d:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Landroidx/constraintlayout/motion/widget/MotionLayout;)V
+    .locals 0
 
     .line 1
-    invoke-static {}, Landroidx/constraintlayout/motion/widget/MotionLayout$j;->values()[Landroidx/constraintlayout/motion/widget/MotionLayout$j;
+    iput-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$b;->d:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
-    move-result-object v0
+    invoke-direct {p0}, Lo/q;-><init>()V
 
-    array-length v0, v0
+    const/4 p1, 0x0
 
-    new-array v0, v0, [I
+    .line 2
+    iput p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$b;->a:F
 
-    sput-object v0, Landroidx/constraintlayout/motion/widget/MotionLayout$b;->a:[I
+    .line 3
+    iput p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$b;->b:F
 
-    :try_start_0
-    sget-object v1, Landroidx/constraintlayout/motion/widget/MotionLayout$j;->UNDEFINED:Landroidx/constraintlayout/motion/widget/MotionLayout$j;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :try_start_1
-    sget-object v0, Landroidx/constraintlayout/motion/widget/MotionLayout$b;->a:[I
-
-    sget-object v1, Landroidx/constraintlayout/motion/widget/MotionLayout$j;->SETUP:Landroidx/constraintlayout/motion/widget/MotionLayout$j;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
-    :try_start_2
-    sget-object v0, Landroidx/constraintlayout/motion/widget/MotionLayout$b;->a:[I
-
-    sget-object v1, Landroidx/constraintlayout/motion/widget/MotionLayout$j;->MOVING:Landroidx/constraintlayout/motion/widget/MotionLayout$j;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x3
-
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    :catch_2
-    :try_start_3
-    sget-object v0, Landroidx/constraintlayout/motion/widget/MotionLayout$b;->a:[I
-
-    sget-object v1, Landroidx/constraintlayout/motion/widget/MotionLayout$j;->FINISHED:Landroidx/constraintlayout/motion/widget/MotionLayout$j;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x4
-
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    :catch_3
     return-void
+.end method
+
+
+# virtual methods
+.method public a()F
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$b;->d:Landroidx/constraintlayout/motion/widget/MotionLayout;
+
+    iget v0, v0, Landroidx/constraintlayout/motion/widget/MotionLayout;->B:F
+
+    return v0
+.end method
+
+.method public getInterpolation(F)F
+    .locals 5
+
+    .line 1
+    iget v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$b;->a:F
+
+    const/high16 v1, 0x40000000    # 2.0f
+
+    const/4 v2, 0x0
+
+    cmpl-float v2, v0, v2
+
+    if-lez v2, :cond_1
+
+    .line 2
+    iget v2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$b;->c:F
+
+    div-float v3, v0, v2
+
+    cmpg-float v3, v3, p1
+
+    if-gez v3, :cond_0
+
+    div-float p1, v0, v2
+
+    .line 3
+    :cond_0
+    iget-object v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$b;->d:Landroidx/constraintlayout/motion/widget/MotionLayout;
+
+    mul-float v4, v2, p1
+
+    sub-float v4, v0, v4
+
+    iput v4, v3, Landroidx/constraintlayout/motion/widget/MotionLayout;->B:F
+
+    mul-float v0, v0, p1
+
+    mul-float v2, v2, p1
+
+    mul-float v2, v2, p1
+
+    div-float/2addr v2, v1
+
+    sub-float/2addr v0, v2
+
+    .line 4
+    iget p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$b;->b:F
+
+    add-float/2addr v0, p1
+
+    return v0
+
+    :cond_1
+    neg-float v2, v0
+
+    .line 5
+    iget v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$b;->c:F
+
+    div-float/2addr v2, v3
+
+    cmpg-float v2, v2, p1
+
+    if-gez v2, :cond_2
+
+    neg-float p1, v0
+
+    div-float/2addr p1, v3
+
+    .line 6
+    :cond_2
+    iget-object v2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$b;->d:Landroidx/constraintlayout/motion/widget/MotionLayout;
+
+    mul-float v4, v3, p1
+
+    add-float/2addr v4, v0
+
+    iput v4, v2, Landroidx/constraintlayout/motion/widget/MotionLayout;->B:F
+
+    mul-float v0, v0, p1
+
+    mul-float v3, v3, p1
+
+    mul-float v3, v3, p1
+
+    div-float/2addr v3, v1
+
+    add-float/2addr v3, v0
+
+    .line 7
+    iget p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$b;->b:F
+
+    add-float/2addr v3, p1
+
+    return v3
 .end method

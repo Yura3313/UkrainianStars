@@ -1,5 +1,5 @@
 .class public Ld9/v0;
-.super Ly7/g;
+.super Lz7/g;
 .source "NewConversationVM.java"
 
 
@@ -18,7 +18,7 @@
 
     iput-boolean p2, p0, Ld9/v0;->b:Z
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -31,12 +31,12 @@
     .line 1
     iget-object v0, p0, Ld9/v0;->c:Ld9/t0;
 
-    iget-object v0, v0, Ld9/t0;->c:Lr8/b;
+    iget-object v0, v0, Ld9/t0;->c:Ls8/b;
 
     iget-boolean v1, p0, Ld9/v0;->b:Z
 
     .line 2
-    iput-boolean v1, v0, Lr8/b;->o:Z
+    iput-boolean v1, v0, Ls8/b;->o:Z
 
     return-void
 .end method

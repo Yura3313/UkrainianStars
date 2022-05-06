@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public constructor <init>(ILjava/util/Map;Lj3/x01;)V
+.method public constructor <init>(ILjava/util/Map;Lj3/q11;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -14,7 +14,7 @@
             "Ljava/util/List<",
             "Ljava/lang/String;",
             ">;>;",
-            "Lj3/x01;",
+            "Lj3/q11;",
             ")V"
         }
     .end annotation
@@ -24,11 +24,11 @@
     const-string v0, "Response code: "
 
     .line 1
-    invoke-static {p2, v0, p1}, Lb0/c;->b(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {p2, v0, p1}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-direct {p0, p1, p3}, Lcom/google/android/gms/internal/ads/zzos;-><init>(Ljava/lang/String;Lj3/x01;)V
+    invoke-direct {p0, p1, p3}, Lcom/google/android/gms/internal/ads/zzos;-><init>(Ljava/lang/String;Lj3/q11;)V
 
     return-void
 .end method

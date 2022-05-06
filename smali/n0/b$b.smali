@@ -3,7 +3,7 @@
 .source "LoaderManagerImpl.java"
 
 # interfaces
-.implements Landroidx/lifecycle/o;
+.implements Landroidx/lifecycle/p;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Landroidx/lifecycle/o<",
+        "Landroidx/lifecycle/p<",
         "TD;>;"
     }
 .end annotation

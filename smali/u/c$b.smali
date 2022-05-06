@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic a:Landroid/app/Application;
+.field public final synthetic g:Landroid/app/Application;
 
-.field public final synthetic b:Lu/c$c;
+.field public final synthetic h:Lu/c$c;
 
 
 # direct methods
@@ -28,9 +28,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lu/c$b;->a:Landroid/app/Application;
+    iput-object p1, p0, Lu/c$b;->g:Landroid/app/Application;
 
-    iput-object p2, p0, Lu/c$b;->b:Lu/c$c;
+    iput-object p2, p0, Lu/c$b;->h:Lu/c$c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,9 +43,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lu/c$b;->a:Landroid/app/Application;
+    iget-object v0, p0, Lu/c$b;->g:Landroid/app/Application;
 
-    iget-object v1, p0, Lu/c$b;->b:Lu/c$c;
+    iget-object v1, p0, Lu/c$b;->h:Lu/c$c;
 
     invoke-virtual {v0, v1}, Landroid/app/Application;->unregisterActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
 

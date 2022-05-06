@@ -22,34 +22,34 @@
 
 
 # virtual methods
-.method public abstract R0()I
-.end method
-
-.method public abstract T0()Ljava/lang/String;
-.end method
-
-.method public abstract T1()I
+.method public abstract S0()I
 .end method
 
 .method public abstract U0()Ljava/lang/String;
 .end method
 
-.method public abstract W0()Ljava/lang/String;
+.method public abstract V0()Ljava/lang/String;
 .end method
 
-.method public abstract X0()[B
+.method public abstract W1()I
 .end method
 
-.method public abstract Z1()Z
+.method public abstract X0()Ljava/lang/String;
 .end method
 
-.method public abstract b()Lcom/google/android/gms/games/Game;
+.method public abstract Y0()[B
 .end method
 
-.method public abstract c()J
+.method public abstract b2()Z
 .end method
 
-.method public abstract d()I
+.method public abstract c()Lcom/google/android/gms/games/Game;
+.end method
+
+.method public abstract d()J
+.end method
+
+.method public abstract e()I
 .end method
 
 .method public abstract getDescription()Ljava/lang/String;
@@ -58,26 +58,26 @@
 .method public abstract getStatus()I
 .end method
 
-.method public abstract l()Ljava/lang/String;
+.method public abstract n()Ljava/lang/String;
 .end method
 
-.method public abstract o1()I
+.method public abstract q1()I
 .end method
 
-.method public abstract s()Landroid/os/Bundle;
+.method public abstract u()Landroid/os/Bundle;
 .end method
 
-.method public abstract t()I
+.method public abstract v()I
 .end method
 
-.method public abstract t1()Ljava/lang/String;
+.method public abstract v1()Ljava/lang/String;
 .end method
 
-.method public abstract u()J
+.method public abstract w()J
 .end method
 
-.method public abstract u1()[B
+.method public abstract w1()[B
 .end method
 
-.method public abstract x1()Ljava/lang/String;
+.method public abstract z1()Ljava/lang/String;
 .end method

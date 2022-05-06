@@ -21,11 +21,11 @@
 
 
 # static fields
-.field public static final k0:Lcom/supercell/id/ui/FlowFragment$b$a;
+.field public static final l0:Lcom/supercell/id/ui/FlowFragment$b$a;
 
 
 # instance fields
-.field public i0:Ljava/util/List;
+.field public j0:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -36,7 +36,7 @@
     .end annotation
 .end field
 
-.field public j0:Ljava/util/HashMap;
+.field public k0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -49,7 +49,7 @@
 
     invoke-direct {v0, v1}, Lcom/supercell/id/ui/FlowFragment$b$a;-><init>(Lle/g;)V
 
-    sput-object v0, Lcom/supercell/id/ui/FlowFragment$b;->k0:Lcom/supercell/id/ui/FlowFragment$b$a;
+    sput-object v0, Lcom/supercell/id/ui/FlowFragment$b;->l0:Lcom/supercell/id/ui/FlowFragment$b$a;
 
     return-void
 .end method
@@ -61,9 +61,9 @@
     invoke-direct {p0}, Lcom/supercell/id/ui/BaseFragment;-><init>()V
 
     .line 2
-    sget-object v0, Lce/n;->a:Lce/n;
+    sget-object v0, Lbe/m;->g:Lbe/m;
 
-    iput-object v0, p0, Lcom/supercell/id/ui/FlowFragment$b;->i0:Ljava/util/List;
+    iput-object v0, p0, Lcom/supercell/id/ui/FlowFragment$b;->j0:Ljava/util/List;
 
     return-void
 .end method
@@ -73,7 +73,7 @@
 .method public W0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment$b;->j0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment$b;->k0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -100,7 +100,7 @@
     move-result-object p1
 
     .line 2
-    iget-object p2, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p2, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz p2, :cond_0
 
@@ -118,7 +118,7 @@
 
     .line 4
     :goto_0
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz v0, :cond_1
 
@@ -136,7 +136,7 @@
 
     .line 6
     :goto_1
-    iget-object v2, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v2, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz v2, :cond_2
 
@@ -158,7 +158,7 @@
     if-nez v2, :cond_4
 
     .line 8
-    invoke-static {p1, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v4, Lcom/supercell/id/R$id;->flowProgressTitle1:I
 
@@ -194,7 +194,7 @@
     new-array v5, v4, [Landroid/widget/TextView;
 
     .line 10
-    invoke-static {p1, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v3, Lcom/supercell/id/R$id;->flowProgressTitle0:I
 
@@ -230,11 +230,11 @@
 
     aput-object v3, v5, v7
 
-    invoke-static {v5}, Landroidx/savedstate/d;->x([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v5}, Lb5/m;->o([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/supercell/id/ui/FlowFragment$b;->i0:Ljava/util/List;
+    iput-object v3, p0, Lcom/supercell/id/ui/FlowFragment$b;->j0:Ljava/util/List;
 
     new-array v3, v4, [Ljava/lang/String;
 
@@ -245,12 +245,12 @@
     aput-object v2, v3, v7
 
     .line 11
-    invoke-static {v3}, Landroidx/savedstate/d;->v([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v3}, Lb5/m;->m([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p2
 
     .line 12
-    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment$b;->i0:Ljava/util/List;
+    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment$b;->j0:Ljava/util/List;
 
     .line 13
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -275,7 +275,7 @@
     check-cast v2, Landroid/widget/TextView;
 
     .line 14
-    invoke-static {p2, v1}, Lce/l;->R(Ljava/util/List;I)Ljava/lang/Object;
+    invoke-static {p2, v1}, Lbe/k;->G(Ljava/util/List;I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -284,7 +284,7 @@
     if-eqz v1, :cond_5
 
     .line 15
-    invoke-static {v2, v1, p3}, Lqd/e0;->i(Landroid/widget/TextView;Ljava/lang/String;Lke/p;)V
+    invoke-static {v2, v1, p3}, Lpd/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lke/p;)V
 
     :cond_5
     move v1, v3
@@ -293,7 +293,7 @@
 
     .line 16
     :cond_6
-    invoke-static {}, Landroidx/savedstate/d;->C()V
+    invoke-static {}, Lb5/m;->t()V
 
     throw p3
 
@@ -304,7 +304,7 @@
     const-string p1, "inflater"
 
     .line 17
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     goto :goto_5
 
@@ -322,12 +322,12 @@
     invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->i0()V
 
     .line 2
-    sget-object v0, Lce/n;->a:Lce/n;
+    sget-object v0, Lbe/m;->g:Lbe/m;
 
-    iput-object v0, p0, Lcom/supercell/id/ui/FlowFragment$b;->i0:Ljava/util/List;
+    iput-object v0, p0, Lcom/supercell/id/ui/FlowFragment$b;->j0:Ljava/util/List;
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment$b;->j0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment$b;->k0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -341,7 +341,7 @@
     .locals 8
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment$b;->i0:Ljava/util/List;
+    iget-object v0, p0, Lcom/supercell/id/ui/FlowFragment$b;->j0:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -362,7 +362,7 @@
     move-result v0
 
     .line 2
-    iget-object v3, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v3, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz v3, :cond_1
 
@@ -407,12 +407,12 @@
     .line 5
     :cond_2
     :goto_0
-    invoke-static {p1}, Lc2/n0;->e(F)I
+    invoke-static {p1}, Lb5/m;->r(F)I
 
     move-result v1
 
     .line 6
-    iget-object v3, p0, Lcom/supercell/id/ui/FlowFragment$b;->i0:Ljava/util/List;
+    iget-object v3, p0, Lcom/supercell/id/ui/FlowFragment$b;->j0:Ljava/util/List;
 
     const/4 v4, 0x0
 
@@ -459,7 +459,7 @@
 
     .line 9
     :cond_4
-    invoke-static {}, Landroidx/savedstate/d;->C()V
+    invoke-static {}, Lb5/m;->t()V
 
     throw v6
 
@@ -468,7 +468,7 @@
     sget v1, Lcom/supercell/id/R$id;->flowProgressBar:I
 
     .line 11
-    iget-object v2, p0, Lcom/supercell/id/ui/FlowFragment$b;->j0:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/supercell/id/ui/FlowFragment$b;->k0:Ljava/util/HashMap;
 
     if-nez v2, :cond_6
 
@@ -476,10 +476,10 @@
 
     invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v2, p0, Lcom/supercell/id/ui/FlowFragment$b;->j0:Ljava/util/HashMap;
+    iput-object v2, p0, Lcom/supercell/id/ui/FlowFragment$b;->k0:Ljava/util/HashMap;
 
     :cond_6
-    iget-object v2, p0, Lcom/supercell/id/ui/FlowFragment$b;->j0:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/supercell/id/ui/FlowFragment$b;->k0:Ljava/util/HashMap;
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -494,7 +494,7 @@
     if-nez v2, :cond_8
 
     .line 12
-    iget-object v2, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v2, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v2, :cond_7
 
@@ -506,7 +506,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/supercell/id/ui/FlowFragment$b;->j0:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/supercell/id/ui/FlowFragment$b;->k0:Ljava/util/HashMap;
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -552,7 +552,7 @@
     const-string p1, "view"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

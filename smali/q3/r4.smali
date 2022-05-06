@@ -1,494 +1,421 @@
-.class public final Lq3/r4;
-.super La2/a0;
+.class public enum Lq3/r4;
+.super Ljava/lang/Enum;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Lq3/r4;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final synthetic A:[Lq3/r4;
+
+.field public static final enum i:Lq3/r4;
+
+.field public static final enum j:Lq3/r4;
+
+.field public static final enum k:Lq3/r4;
+
+.field public static final enum l:Lq3/r4;
+
+.field public static final enum m:Lq3/r4;
+
+.field public static final enum n:Lq3/r4;
+
+.field public static final enum o:Lq3/r4;
+
+.field public static final enum p:Lq3/r4;
+
+.field public static final enum q:Lq3/r4;
+
+.field public static final enum r:Lq3/r4;
+
+.field public static final enum s:Lq3/r4;
+
+.field public static final enum t:Lq3/r4;
+
+.field public static final enum u:Lq3/r4;
+
+.field public static final enum v:Lq3/r4;
+
+.field public static final enum w:Lq3/r4;
+
+.field public static final enum x:Lq3/r4;
+
+.field public static final enum y:Lq3/r4;
+
+.field public static final enum z:Lq3/r4;
+
+
+# instance fields
+.field public final g:Lq3/w4;
+
+.field public final h:I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 22
 
     .line 1
-    invoke-direct {p0}, La2/a0;-><init>()V
+    new-instance v0, Lq3/r4;
+
+    sget-object v1, Lq3/w4;->k:Lq3/w4;
+
+    const-string v2, "DOUBLE"
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x1
+
+    invoke-direct {v0, v2, v3, v1, v4}, Lq3/r4;-><init>(Ljava/lang/String;ILq3/w4;I)V
+
+    sput-object v0, Lq3/r4;->i:Lq3/r4;
+
+    .line 2
+    new-instance v1, Lq3/r4;
+
+    sget-object v2, Lq3/w4;->j:Lq3/w4;
+
+    const-string v5, "FLOAT"
+
+    const/4 v6, 0x5
+
+    invoke-direct {v1, v5, v4, v2, v6}, Lq3/r4;-><init>(Ljava/lang/String;ILq3/w4;I)V
+
+    sput-object v1, Lq3/r4;->j:Lq3/r4;
+
+    .line 3
+    new-instance v2, Lq3/r4;
+
+    sget-object v5, Lq3/w4;->i:Lq3/w4;
+
+    const-string v7, "INT64"
+
+    const/4 v8, 0x2
+
+    invoke-direct {v2, v7, v8, v5, v3}, Lq3/r4;-><init>(Ljava/lang/String;ILq3/w4;I)V
+
+    sput-object v2, Lq3/r4;->k:Lq3/r4;
+
+    .line 4
+    new-instance v7, Lq3/r4;
+
+    const-string v9, "UINT64"
+
+    const/4 v10, 0x3
+
+    invoke-direct {v7, v9, v10, v5, v3}, Lq3/r4;-><init>(Ljava/lang/String;ILq3/w4;I)V
+
+    sput-object v7, Lq3/r4;->l:Lq3/r4;
+
+    .line 5
+    new-instance v9, Lq3/r4;
+
+    sget-object v11, Lq3/w4;->h:Lq3/w4;
+
+    const-string v12, "INT32"
+
+    const/4 v13, 0x4
+
+    invoke-direct {v9, v12, v13, v11, v3}, Lq3/r4;-><init>(Ljava/lang/String;ILq3/w4;I)V
+
+    sput-object v9, Lq3/r4;->m:Lq3/r4;
+
+    .line 6
+    new-instance v12, Lq3/r4;
+
+    const-string v14, "FIXED64"
+
+    invoke-direct {v12, v14, v6, v5, v4}, Lq3/r4;-><init>(Ljava/lang/String;ILq3/w4;I)V
+
+    sput-object v12, Lq3/r4;->n:Lq3/r4;
+
+    .line 7
+    new-instance v14, Lq3/r4;
+
+    const-string v15, "FIXED32"
+
+    const/4 v13, 0x6
+
+    invoke-direct {v14, v15, v13, v11, v6}, Lq3/r4;-><init>(Ljava/lang/String;ILq3/w4;I)V
+
+    sput-object v14, Lq3/r4;->o:Lq3/r4;
+
+    .line 8
+    new-instance v15, Lq3/r4;
+
+    sget-object v13, Lq3/w4;->l:Lq3/w4;
+
+    const-string v10, "BOOL"
+
+    const/4 v8, 0x7
+
+    invoke-direct {v15, v10, v8, v13, v3}, Lq3/r4;-><init>(Ljava/lang/String;ILq3/w4;I)V
+
+    sput-object v15, Lq3/r4;->p:Lq3/r4;
+
+    .line 9
+    new-instance v10, Lq3/s4;
+
+    sget-object v13, Lq3/w4;->m:Lq3/w4;
+
+    const-string v8, "STRING"
+
+    invoke-direct {v10, v8, v13}, Lq3/s4;-><init>(Ljava/lang/String;Lq3/w4;)V
+
+    sput-object v10, Lq3/r4;->q:Lq3/r4;
+
+    .line 10
+    new-instance v8, Lq3/t4;
+
+    sget-object v13, Lq3/w4;->p:Lq3/w4;
+
+    const-string v4, "GROUP"
+
+    invoke-direct {v8, v4, v13}, Lq3/t4;-><init>(Ljava/lang/String;Lq3/w4;)V
+
+    sput-object v8, Lq3/r4;->r:Lq3/r4;
+
+    .line 11
+    new-instance v4, Lq3/u4;
+
+    const-string v6, "MESSAGE"
+
+    invoke-direct {v4, v6, v13}, Lq3/u4;-><init>(Ljava/lang/String;Lq3/w4;)V
+
+    sput-object v4, Lq3/r4;->s:Lq3/r4;
+
+    .line 12
+    new-instance v6, Lq3/v4;
+
+    sget-object v13, Lq3/w4;->n:Lq3/w4;
+
+    const-string v3, "BYTES"
+
+    invoke-direct {v6, v3, v13}, Lq3/v4;-><init>(Ljava/lang/String;Lq3/w4;)V
+
+    sput-object v6, Lq3/r4;->t:Lq3/r4;
+
+    .line 13
+    new-instance v3, Lq3/r4;
+
+    const-string v13, "UINT32"
+
+    move-object/from16 v16, v6
+
+    const/16 v6, 0xc
+
+    move-object/from16 v17, v4
+
+    const/4 v4, 0x0
+
+    invoke-direct {v3, v13, v6, v11, v4}, Lq3/r4;-><init>(Ljava/lang/String;ILq3/w4;I)V
+
+    sput-object v3, Lq3/r4;->u:Lq3/r4;
+
+    .line 14
+    new-instance v13, Lq3/r4;
+
+    sget-object v6, Lq3/w4;->o:Lq3/w4;
+
+    move-object/from16 v18, v3
+
+    const-string v3, "ENUM"
+
+    move-object/from16 v19, v8
+
+    const/16 v8, 0xd
+
+    invoke-direct {v13, v3, v8, v6, v4}, Lq3/r4;-><init>(Ljava/lang/String;ILq3/w4;I)V
+
+    sput-object v13, Lq3/r4;->v:Lq3/r4;
+
+    .line 15
+    new-instance v3, Lq3/r4;
+
+    const-string v4, "SFIXED32"
+
+    const/16 v6, 0xe
+
+    const/4 v8, 0x5
+
+    invoke-direct {v3, v4, v6, v11, v8}, Lq3/r4;-><init>(Ljava/lang/String;ILq3/w4;I)V
+
+    sput-object v3, Lq3/r4;->w:Lq3/r4;
+
+    .line 16
+    new-instance v4, Lq3/r4;
+
+    const-string v8, "SFIXED64"
+
+    const/16 v6, 0xf
+
+    move-object/from16 v20, v3
+
+    const/4 v3, 0x1
+
+    invoke-direct {v4, v8, v6, v5, v3}, Lq3/r4;-><init>(Ljava/lang/String;ILq3/w4;I)V
+
+    sput-object v4, Lq3/r4;->x:Lq3/r4;
+
+    .line 17
+    new-instance v3, Lq3/r4;
+
+    const-string v8, "SINT32"
+
+    const/16 v6, 0x10
+
+    move-object/from16 v21, v4
+
+    const/4 v4, 0x0
+
+    invoke-direct {v3, v8, v6, v11, v4}, Lq3/r4;-><init>(Ljava/lang/String;ILq3/w4;I)V
+
+    sput-object v3, Lq3/r4;->y:Lq3/r4;
+
+    .line 18
+    new-instance v8, Lq3/r4;
+
+    const-string v11, "SINT64"
+
+    const/16 v6, 0x11
+
+    invoke-direct {v8, v11, v6, v5, v4}, Lq3/r4;-><init>(Ljava/lang/String;ILq3/w4;I)V
+
+    sput-object v8, Lq3/r4;->z:Lq3/r4;
+
+    const/16 v5, 0x12
+
+    new-array v5, v5, [Lq3/r4;
+
+    aput-object v0, v5, v4
+
+    const/4 v0, 0x1
+
+    aput-object v1, v5, v0
+
+    const/4 v0, 0x2
+
+    aput-object v2, v5, v0
+
+    const/4 v0, 0x3
+
+    aput-object v7, v5, v0
+
+    const/4 v0, 0x4
+
+    aput-object v9, v5, v0
+
+    const/4 v0, 0x5
+
+    aput-object v12, v5, v0
+
+    const/4 v0, 0x6
+
+    aput-object v14, v5, v0
+
+    const/4 v0, 0x7
+
+    aput-object v15, v5, v0
+
+    const/16 v0, 0x8
+
+    aput-object v10, v5, v0
+
+    const/16 v0, 0x9
+
+    aput-object v19, v5, v0
+
+    const/16 v0, 0xa
+
+    aput-object v17, v5, v0
+
+    const/16 v0, 0xb
+
+    aput-object v16, v5, v0
+
+    const/16 v0, 0xc
+
+    aput-object v18, v5, v0
+
+    const/16 v0, 0xd
+
+    aput-object v13, v5, v0
+
+    const/16 v0, 0xe
+
+    aput-object v20, v5, v0
+
+    const/16 v0, 0xf
+
+    aput-object v21, v5, v0
+
+    const/16 v0, 0x10
+
+    aput-object v3, v5, v0
+
+    aput-object v8, v5, v6
+
+    .line 19
+    sput-object v5, Lq3/r4;->A:[Lq3/r4;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final A(Ljava/lang/CharSequence;[BII)I
-    .locals 7
+.method public constructor <init>(Ljava/lang/String;ILq3/w4;I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lq3/w4;",
+            "I)V"
+        }
+    .end annotation
 
     .line 1
-    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
-
-    move-result v0
-
-    add-int/2addr p4, p3
-
-    const/4 v1, 0x0
-
-    :goto_0
-    const/16 v2, 0x80
-
-    if-ge v1, v0, :cond_0
-
-    add-int v3, v1, p3
-
-    if-ge v3, p4, :cond_0
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    invoke-interface {p1, v1}, Ljava/lang/CharSequence;->charAt(I)C
-
-    move-result v4
-
-    if-ge v4, v2, :cond_0
-
-    int-to-byte v2, v4
+    iput-object p3, p0, Lq3/r4;->g:Lq3/w4;
 
     .line 3
-    aput-byte v2, p2, v3
+    iput p4, p0, Lq3/r4;->h:I
 
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    if-ne v1, v0, :cond_1
-
-    add-int/2addr p3, v0
-
-    return p3
-
-    :cond_1
-    add-int/2addr p3, v1
-
-    :goto_1
-    if-ge v1, v0, :cond_b
-
-    .line 4
-    invoke-interface {p1, v1}, Ljava/lang/CharSequence;->charAt(I)C
-
-    move-result v3
-
-    if-ge v3, v2, :cond_2
-
-    if-ge p3, p4, :cond_2
-
-    add-int/lit8 v4, p3, 0x1
-
-    int-to-byte v3, v3
-
-    .line 5
-    aput-byte v3, p2, p3
-
-    :goto_2
-    move p3, v4
-
-    goto/16 :goto_3
-
-    :cond_2
-    const/16 v4, 0x800
-
-    if-ge v3, v4, :cond_3
-
-    add-int/lit8 v4, p4, -0x2
-
-    if-gt p3, v4, :cond_3
-
-    add-int/lit8 v4, p3, 0x1
-
-    ushr-int/lit8 v5, v3, 0x6
-
-    or-int/lit16 v5, v5, 0x3c0
-
-    int-to-byte v5, v5
-
-    .line 6
-    aput-byte v5, p2, p3
-
-    add-int/lit8 p3, v4, 0x1
-
-    and-int/lit8 v3, v3, 0x3f
-
-    or-int/2addr v3, v2
-
-    int-to-byte v3, v3
-
-    .line 7
-    aput-byte v3, p2, v4
-
-    goto :goto_3
-
-    :cond_3
-    const v4, 0xdfff
-
-    const v5, 0xd800
-
-    if-lt v3, v5, :cond_4
-
-    if-ge v4, v3, :cond_5
-
-    :cond_4
-    add-int/lit8 v6, p4, -0x3
-
-    if-gt p3, v6, :cond_5
-
-    add-int/lit8 v4, p3, 0x1
-
-    ushr-int/lit8 v5, v3, 0xc
-
-    or-int/lit16 v5, v5, 0x1e0
-
-    int-to-byte v5, v5
-
-    .line 8
-    aput-byte v5, p2, p3
-
-    add-int/lit8 p3, v4, 0x1
-
-    ushr-int/lit8 v5, v3, 0x6
-
-    and-int/lit8 v5, v5, 0x3f
-
-    or-int/2addr v5, v2
-
-    int-to-byte v5, v5
-
-    .line 9
-    aput-byte v5, p2, v4
-
-    add-int/lit8 v4, p3, 0x1
-
-    and-int/lit8 v3, v3, 0x3f
-
-    or-int/2addr v3, v2
-
-    int-to-byte v3, v3
-
-    .line 10
-    aput-byte v3, p2, p3
-
-    goto :goto_2
-
-    :cond_5
-    add-int/lit8 v6, p4, -0x4
-
-    if-gt p3, v6, :cond_8
-
-    add-int/lit8 v4, v1, 0x1
-
-    .line 11
-    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
-
-    move-result v5
-
-    if-eq v4, v5, :cond_7
-
-    invoke-interface {p1, v4}, Ljava/lang/CharSequence;->charAt(I)C
-
-    move-result v1
-
-    invoke-static {v3, v1}, Ljava/lang/Character;->isSurrogatePair(CC)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_6
-
-    .line 12
-    invoke-static {v3, v1}, Ljava/lang/Character;->toCodePoint(CC)I
-
-    move-result v1
-
-    add-int/lit8 v3, p3, 0x1
-
-    ushr-int/lit8 v5, v1, 0x12
-
-    or-int/lit16 v5, v5, 0xf0
-
-    int-to-byte v5, v5
-
-    .line 13
-    aput-byte v5, p2, p3
-
-    add-int/lit8 p3, v3, 0x1
-
-    ushr-int/lit8 v5, v1, 0xc
-
-    and-int/lit8 v5, v5, 0x3f
-
-    or-int/2addr v5, v2
-
-    int-to-byte v5, v5
-
-    .line 14
-    aput-byte v5, p2, v3
-
-    add-int/lit8 v3, p3, 0x1
-
-    ushr-int/lit8 v5, v1, 0x6
-
-    and-int/lit8 v5, v5, 0x3f
-
-    or-int/2addr v5, v2
-
-    int-to-byte v5, v5
-
-    .line 15
-    aput-byte v5, p2, p3
-
-    add-int/lit8 p3, v3, 0x1
-
-    and-int/lit8 v1, v1, 0x3f
-
-    or-int/2addr v1, v2
-
-    int-to-byte v1, v1
-
-    .line 16
-    aput-byte v1, p2, v3
-
-    move v1, v4
-
-    :goto_3
-    add-int/lit8 v1, v1, 0x1
-
-    goto/16 :goto_1
-
-    :cond_6
-    move v1, v4
-
-    .line 17
-    :cond_7
-    new-instance p1, Lq3/s4;
-
-    add-int/lit8 v1, v1, -0x1
-
-    invoke-direct {p1, v1, v0}, Lq3/s4;-><init>(II)V
-
-    throw p1
-
-    :cond_8
-    if-gt v5, v3, :cond_a
-
-    if-gt v3, v4, :cond_a
-
-    add-int/lit8 p2, v1, 0x1
-
-    .line 18
-    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
-
-    move-result p4
-
-    if-eq p2, p4, :cond_9
-
-    invoke-interface {p1, p2}, Ljava/lang/CharSequence;->charAt(I)C
-
-    move-result p1
-
-    invoke-static {v3, p1}, Ljava/lang/Character;->isSurrogatePair(CC)Z
-
-    move-result p1
-
-    if-nez p1, :cond_a
-
-    .line 19
-    :cond_9
-    new-instance p1, Lq3/s4;
-
-    invoke-direct {p1, v1, v0}, Lq3/s4;-><init>(II)V
-
-    throw p1
-
-    .line 20
-    :cond_a
-    new-instance p1, Ljava/lang/ArrayIndexOutOfBoundsException;
-
-    const/16 p2, 0x25
-
-    new-instance p4, Ljava/lang/StringBuilder;
-
-    invoke-direct {p4, p2}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string p2, "Failed writing "
-
-    invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p4, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    const-string p2, " at index "
-
-    invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p4, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-direct {p1, p2}, Ljava/lang/ArrayIndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_b
-    return p3
+    return-void
 .end method
 
-.method public final z(I[BII)I
-    .locals 6
-
-    :goto_0
-    if-ge p3, p4, :cond_0
-
-    .line 1
-    aget-byte p1, p2, p3
-
-    if-ltz p1, :cond_0
-
-    add-int/lit8 p3, p3, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    if-lt p3, p4, :cond_1
-
-    return p1
-
-    :cond_1
-    :goto_1
-    if-lt p3, p4, :cond_2
-
-    return p1
-
-    :cond_2
-    add-int/lit8 v0, p3, 0x1
-
-    .line 2
-    aget-byte p3, p2, p3
-
-    if-gez p3, :cond_d
-
-    const/16 v1, -0x20
-
-    const/4 v2, -0x1
-
-    const/16 v3, -0x41
-
-    if-ge p3, v1, :cond_5
-
-    if-lt v0, p4, :cond_3
-
-    return p3
-
-    :cond_3
-    const/16 v1, -0x3e
-
-    if-lt p3, v1, :cond_4
-
-    add-int/lit8 p3, v0, 0x1
-
-    .line 3
-    aget-byte v0, p2, v0
-
-    if-le v0, v3, :cond_1
-
-    :cond_4
-    return v2
-
-    :cond_5
-    const/16 v4, -0x10
-
-    if-ge p3, v4, :cond_a
-
-    add-int/lit8 v4, p4, -0x1
-
-    if-lt v0, v4, :cond_6
+.method public constructor <init>(Ljava/lang/String;ILq3/w4;ILj3/u6;)V
+    .locals 0
 
     .line 4
-    invoke-static {p2, v0, p4}, Lq3/q4;->c([BII)I
-
-    move-result p1
-
-    return p1
-
-    :cond_6
-    add-int/lit8 v4, v0, 0x1
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 5
-    aget-byte v0, p2, v0
-
-    if-gt v0, v3, :cond_9
-
-    const/16 v5, -0x60
-
-    if-ne p3, v1, :cond_7
-
-    if-lt v0, v5, :cond_9
-
-    :cond_7
-    const/16 v1, -0x13
-
-    if-ne p3, v1, :cond_8
-
-    if-ge v0, v5, :cond_9
-
-    :cond_8
-    add-int/lit8 p3, v4, 0x1
-
-    aget-byte v0, p2, v4
-
-    if-le v0, v3, :cond_1
-
-    :cond_9
-    return v2
-
-    :cond_a
-    add-int/lit8 v1, p4, -0x2
-
-    if-lt v0, v1, :cond_b
+    iput-object p3, p0, Lq3/r4;->g:Lq3/w4;
 
     .line 6
-    invoke-static {p2, v0, p4}, Lq3/q4;->c([BII)I
+    iput p4, p0, Lq3/r4;->h:I
 
-    move-result p1
+    return-void
+.end method
 
-    return p1
+.method public static values()[Lq3/r4;
+    .locals 1
 
-    :cond_b
-    add-int/lit8 v1, v0, 0x1
+    .line 1
+    sget-object v0, Lq3/r4;->A:[Lq3/r4;
 
-    .line 7
-    aget-byte v0, p2, v0
+    invoke-virtual {v0}, [Lq3/r4;->clone()Ljava/lang/Object;
 
-    if-gt v0, v3, :cond_c
+    move-result-object v0
 
-    shl-int/lit8 p3, p3, 0x1c
+    check-cast v0, [Lq3/r4;
 
-    add-int/lit8 v0, v0, 0x70
-
-    add-int/2addr v0, p3
-
-    shr-int/lit8 p3, v0, 0x1e
-
-    if-nez p3, :cond_c
-
-    add-int/lit8 p3, v1, 0x1
-
-    aget-byte v0, p2, v1
-
-    if-gt v0, v3, :cond_c
-
-    add-int/lit8 v0, p3, 0x1
-
-    aget-byte p3, p2, p3
-
-    if-le p3, v3, :cond_d
-
-    :cond_c
-    return v2
-
-    :cond_d
-    move p3, v0
-
-    goto :goto_1
+    return-object v0
 .end method

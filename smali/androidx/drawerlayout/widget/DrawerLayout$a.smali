@@ -55,10 +55,10 @@
 
     .line 3
     :goto_0
-    iput-object p2, p1, Landroidx/drawerlayout/widget/DrawerLayout;->C:Ljava/lang/Object;
+    iput-object p2, p1, Landroidx/drawerlayout/widget/DrawerLayout;->D:Ljava/lang/Object;
 
     .line 4
-    iput-boolean v0, p1, Landroidx/drawerlayout/widget/DrawerLayout;->D:Z
+    iput-boolean v0, p1, Landroidx/drawerlayout/widget/DrawerLayout;->E:Z
 
     if-nez v0, :cond_1
 

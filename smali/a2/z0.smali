@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final k:Lm/c;
+.field public final l:Lm/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lm/c<",
@@ -14,7 +14,7 @@
     .end annotation
 .end field
 
-.field public final l:La2/f;
+.field public final m:La2/f;
 
 
 # direct methods
@@ -38,15 +38,15 @@
     invoke-direct {v0, v1}, Lm/c;-><init>(I)V
 
     .line 5
-    iput-object v0, p0, La2/z0;->k:Lm/c;
+    iput-object v0, p0, La2/z0;->l:Lm/c;
 
     .line 6
-    iput-object p2, p0, La2/z0;->l:La2/f;
+    iput-object p2, p0, La2/z0;->m:La2/f;
 
     const-string p2, "ConnectionlessLifecycleHelper"
 
     .line 7
-    invoke-interface {p1, p2, p0}, La2/i;->e(Ljava/lang/String;Lcom/google/android/gms/common/api/internal/LifecycleCallback;)V
+    invoke-interface {p1, p2, p0}, La2/i;->d(Ljava/lang/String;Lcom/google/android/gms/common/api/internal/LifecycleCallback;)V
 
     return-void
 .end method
@@ -57,7 +57,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, La2/z0;->k:Lm/c;
+    iget-object v0, p0, La2/z0;->l:Lm/c;
 
     invoke-virtual {v0}, Lm/c;->isEmpty()Z
 
@@ -66,7 +66,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, La2/z0;->l:La2/f;
+    iget-object v0, p0, La2/z0;->m:La2/f;
 
     invoke-virtual {v0, p0}, La2/f;->b(La2/z0;)V
 
@@ -80,10 +80,10 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, La2/s0;->b:Z
+    iput-boolean v0, p0, La2/s0;->h:Z
 
     .line 2
-    iget-object v0, p0, La2/z0;->k:Lm/c;
+    iget-object v0, p0, La2/z0;->l:Lm/c;
 
     invoke-virtual {v0}, Lm/c;->isEmpty()Z
 
@@ -92,7 +92,7 @@
     if-nez v0, :cond_0
 
     .line 3
-    iget-object v0, p0, La2/z0;->l:La2/f;
+    iget-object v0, p0, La2/z0;->m:La2/f;
 
     invoke-virtual {v0, p0}, La2/f;->b(La2/z0;)V
 
@@ -106,31 +106,31 @@
     const/4 v0, 0x0
 
     .line 1
-    iput-boolean v0, p0, La2/s0;->b:Z
+    iput-boolean v0, p0, La2/s0;->h:Z
 
     .line 2
-    iget-object v0, p0, La2/z0;->l:La2/f;
+    iget-object v0, p0, La2/z0;->m:La2/f;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    sget-object v1, La2/f;->w:Ljava/lang/Object;
+    sget-object v1, La2/f;->x:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 4
     :try_start_0
-    iget-object v2, v0, La2/f;->p:La2/z0;
+    iget-object v2, v0, La2/f;->q:La2/z0;
 
     if-ne v2, p0, :cond_0
 
     const/4 v2, 0x0
 
     .line 5
-    iput-object v2, v0, La2/f;->p:La2/z0;
+    iput-object v2, v0, La2/f;->q:La2/z0;
 
     .line 6
-    iget-object v0, v0, La2/f;->q:Ljava/util/Set;
+    iget-object v0, v0, La2/f;->r:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->clear()V
 

@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract getNumber()I
+.method public abstract b()I
 .end method

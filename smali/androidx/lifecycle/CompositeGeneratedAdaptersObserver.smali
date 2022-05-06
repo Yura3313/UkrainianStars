@@ -29,9 +29,9 @@
     .locals 6
 
     .line 1
-    new-instance v0, La0/a;
+    new-instance v0, Landroidx/lifecycle/n;
 
-    invoke-direct {v0}, La0/a;-><init>()V
+    invoke-direct {v0}, Landroidx/lifecycle/n;-><init>()V
 
     .line 2
     iget-object v1, p0, Landroidx/lifecycle/CompositeGeneratedAdaptersObserver;->a:[Landroidx/lifecycle/e;
@@ -48,7 +48,7 @@
     aget-object v5, v1, v4
 
     .line 3
-    invoke-interface {v5, p1, p2, v3, v0}, Landroidx/lifecycle/e;->a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;ZLa0/a;)V
+    invoke-interface {v5, p1, p2, v3, v0}, Landroidx/lifecycle/e;->a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;ZLandroidx/lifecycle/n;)V
 
     add-int/lit8 v4, v4, 0x1
 
@@ -68,7 +68,7 @@
     const/4 v5, 0x1
 
     .line 5
-    invoke-interface {v4, p1, p2, v5, v0}, Landroidx/lifecycle/e;->a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;ZLa0/a;)V
+    invoke-interface {v4, p1, p2, v5, v0}, Landroidx/lifecycle/e;->a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;ZLandroidx/lifecycle/n;)V
 
     add-int/lit8 v3, v3, 0x1
 

@@ -53,7 +53,7 @@
     iget-object p1, p0, Landroidx/core/app/JobIntentService$a;->a:Landroidx/core/app/JobIntentService;
 
     .line 3
-    iget-object v0, p1, Landroidx/core/app/JobIntentService;->a:Landroidx/core/app/JobIntentService$b;
+    iget-object v0, p1, Landroidx/core/app/JobIntentService;->g:Landroidx/core/app/JobIntentService$b;
 
     const/4 v1, 0x0
 
@@ -124,13 +124,13 @@
 
     .line 13
     :cond_1
-    iget-object v0, p1, Landroidx/core/app/JobIntentService;->j:Ljava/util/ArrayList;
+    iget-object v0, p1, Landroidx/core/app/JobIntentService;->k:Ljava/util/ArrayList;
 
     monitor-enter v0
 
     .line 14
     :try_start_2
-    iget-object v2, p1, Landroidx/core/app/JobIntentService;->j:Ljava/util/ArrayList;
+    iget-object v2, p1, Landroidx/core/app/JobIntentService;->k:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -139,7 +139,7 @@
     if-lez v2, :cond_2
 
     .line 15
-    iget-object p1, p1, Landroidx/core/app/JobIntentService;->j:Ljava/util/ArrayList;
+    iget-object p1, p1, Landroidx/core/app/JobIntentService;->k:Ljava/util/ArrayList;
 
     const/4 v2, 0x0
 

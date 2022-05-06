@@ -3,146 +3,219 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lj3/ua;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public a:Lj3/ua;
 
-.field public final synthetic b:Ljava/lang/Object;
-
-.field public final synthetic h:Ljava/lang/Object;
+.field public b:Lj3/ua;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+.method public constructor <init>(Lj3/ua;Lj3/ua;)V
     .locals 0
 
     .line 1
-    iput p3, p0, Lj3/ya;->a:I
-
-    iput-object p1, p0, Lj3/ya;->h:Ljava/lang/Object;
-
-    iput-object p2, p0, Lj3/ya;->b:Ljava/lang/Object;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lj3/ya;->a:Lj3/ua;
+
+    .line 3
+    iput-object p2, p0, Lj3/ya;->b:Lj3/ua;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 4
-
-    iget v0, p0, Lj3/ya;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_1
+.method public final b()Z
+    .locals 1
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/ya;->h:Ljava/lang/Object;
+    iget-object v0, p0, Lj3/ya;->b:Lj3/ua;
 
-    check-cast v0, Lj3/xa;
+    invoke-interface {v0}, Lj3/ua;->b()Z
 
-    .line 2
-    iget-object v0, v0, Lj3/xa;->d:Ljava/lang/Object;
+    move-result v0
 
-    .line 3
-    monitor-enter v0
+    return v0
+.end method
 
-    .line 4
-    :try_start_0
-    iget-object v1, p0, Lj3/ya;->h:Ljava/lang/Object;
+.method public final c()V
+    .locals 1
 
-    check-cast v1, Lj3/xa;
+    .line 1
+    iget-object v0, p0, Lj3/ya;->a:Lj3/ua;
 
-    iget-object v2, p0, Lj3/ya;->b:Ljava/lang/Object;
-
-    check-cast v2, Landroid/content/Context;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    .line 5
-    :try_start_1
-    new-instance v3, Landroid/webkit/WebView;
-
-    invoke-direct {v3, v2}, Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V
-
-    invoke-virtual {v3}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/webkit/WebSettings;->getUserAgentString()Ljava/lang/String;
-
-    move-result-object v2
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    goto :goto_0
-
-    .line 6
-    :catchall_0
-    :try_start_2
-    invoke-static {}, Lj3/xa;->H()Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 7
-    :goto_0
-    iput-object v2, v1, Lj3/xa;->e:Ljava/lang/String;
-
-    .line 8
-    iget-object v1, p0, Lj3/ya;->h:Ljava/lang/Object;
-
-    check-cast v1, Lj3/xa;
-
-    .line 9
-    iget-object v1, v1, Lj3/xa;->d:Ljava/lang/Object;
-
-    .line 10
-    invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
-
-    .line 11
-    monitor-exit v0
+    invoke-interface {v0}, Lj3/ua;->c()V
 
     return-void
+.end method
 
-    :catchall_1
-    move-exception v1
+.method public final d(I)V
+    .locals 1
 
-    monitor-exit v0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+    .line 1
+    iget-object v0, p0, Lj3/ya;->a:Lj3/ua;
 
-    throw v1
-
-    .line 12
-    :goto_1
-    iget-object v0, p0, Lj3/ya;->h:Ljava/lang/Object;
-
-    check-cast v0, Lj3/fi0;
-
-    .line 13
-    iget-object v0, v0, Lj3/fi0;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/tw0;
-
-    .line 14
-    iget-object v1, p0, Lj3/ya;->b:Ljava/lang/Object;
-
-    check-cast v1, Lcom/google/android/gms/internal/ads/zzho;
-
-    invoke-interface {v0, v1}, Lj3/tw0;->a(Lcom/google/android/gms/internal/ads/zzho;)V
+    invoke-interface {v0, p1}, Lj3/ua;->d(I)V
 
     return-void
+.end method
 
-    nop
+.method public final e(Ljava/lang/String;Ljava/lang/String;Z)V
+    .locals 1
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 1
+    iget-object v0, p0, Lj3/ya;->a:Lj3/ua;
+
+    invoke-interface {v0, p1, p2, p3}, Lj3/ua;->e(Ljava/lang/String;Ljava/lang/String;Z)V
+
+    return-void
+.end method
+
+.method public final f(J)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/ya;->b:Lj3/ua;
+
+    invoke-interface {v0, p1, p2}, Lj3/ua;->f(J)V
+
+    return-void
+.end method
+
+.method public final g()Lorg/json/JSONObject;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/ya;->a:Lj3/ua;
+
+    invoke-interface {v0}, Lj3/ua;->g()Lorg/json/JSONObject;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final h()J
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lj3/ya;->b:Lj3/ua;
+
+    invoke-interface {v0}, Lj3/ua;->h()J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public final i(J)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/ya;->b:Lj3/ua;
+
+    invoke-interface {v0, p1, p2}, Lj3/ua;->i(J)V
+
+    return-void
+.end method
+
+.method public final j()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/ya;->b:Lj3/ua;
+
+    invoke-interface {v0}, Lj3/ua;->j()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final k(Z)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/ya;->a:Lj3/ua;
+
+    invoke-interface {v0, p1}, Lj3/ua;->k(Z)V
+
+    return-void
+.end method
+
+.method public final l()J
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lj3/ya;->b:Lj3/ua;
+
+    invoke-interface {v0}, Lj3/ua;->l()J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public final m(Z)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/ya;->b:Lj3/ua;
+
+    invoke-interface {v0, p1}, Lj3/ua;->m(Z)V
+
+    return-void
+.end method
+
+.method public final n()Lj3/ja;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/ya;->a:Lj3/ua;
+
+    invoke-interface {v0}, Lj3/ua;->n()Lj3/ja;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final o(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/ya;->b:Lj3/ua;
+
+    invoke-interface {v0, p1}, Lj3/ua;->o(I)V
+
+    return-void
+.end method
+
+.method public final p()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/ya;->a:Lj3/ua;
+
+    invoke-interface {v0}, Lj3/ua;->p()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final q(Z)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/ya;->a:Lj3/ua;
+
+    invoke-interface {v0, p1}, Lj3/ua;->q(Z)V
+
+    return-void
 .end method

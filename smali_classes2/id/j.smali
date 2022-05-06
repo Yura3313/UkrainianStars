@@ -1,591 +1,196 @@
 .class public final Lid/j;
-.super Lid/u;
-.source "LoginEnterEmailPageFragment.kt"
+.super Lle/j;
+.source "MessagesTabFriendsFragment.kt"
 
 # interfaces
-.implements Luc/t;
+.implements Lke/p;
 
 
-# static fields
-.field public static final synthetic f0:I
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lle/j;",
+        "Lke/p<",
+        "Ljava/lang/String;",
+        "Landroid/text/SpannableStringBuilder;",
+        "Lae/i;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public c0:Ljava/lang/String;
+.field public final synthetic g:Lid/k$a;
 
-.field public d0:Z
-
-.field public e0:Ljava/util/HashMap;
+.field public final synthetic h:Landroid/widget/TextView;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Lid/k$a;Landroid/widget/TextView;)V
+    .locals 0
 
-    .line 1
-    invoke-direct {p0}, Lid/u;-><init>()V
+    iput-object p1, p0, Lid/j;->g:Lid/k$a;
 
-    const-string v0, ""
+    iput-object p2, p0, Lid/j;->h:Landroid/widget/TextView;
 
-    .line 2
-    iput-object v0, p0, Lid/j;->c0:Ljava/lang/String;
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public W0()V
-    .locals 1
+.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 7
 
-    iget-object v0, p0, Lid/j;->e0:Ljava/util/HashMap;
+    check-cast p1, Ljava/lang/String;
 
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public Z0()V
-    .locals 4
-
-    .line 1
-    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
-
-    move-result-object v0
-
-    .line 2
-    iget-object v0, v0, Lwd/r;->m:La2/a;
-
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 4
-    invoke-virtual {p0}, Lid/u;->i1()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    sget v0, Lcom/supercell/id/R$id;->rememberCheckBox:I
-
-    invoke-virtual {p0, v0}, Lid/j;->m1(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/supercell/id/view/Checkbox;
-
-    const-string v2, "rememberCheckBox"
-
-    invoke-static {v1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 5
-    iget-boolean v1, v1, Lcom/supercell/id/view/Checkbox;->i:Z
-
-    if-nez v1, :cond_0
-
-    .line 6
-    invoke-virtual {p0, v0}, Lid/j;->m1(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/supercell/id/view/Checkbox;
-
-    new-instance v1, Lid/j$a;
-
-    invoke-direct {v1, p0}, Lid/j$a;-><init>(Lid/j;)V
-
-    const-wide/16 v2, 0x1f4
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/widget/ImageButton;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    :cond_0
-    return-void
-.end method
-
-.method public g0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 1
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    sget p3, Lcom/supercell/id/R$layout;->fragment_login_enter_email_page:I
+    check-cast p2, Landroid/text/SpannableStringBuilder;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    if-eqz p1, :cond_2
 
-    move-result-object p1
-
-    return-object p1
-
-    :cond_0
-    const-string p1, "inflater"
-
-    .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public i0()V
-    .locals 1
+    if-eqz p2, :cond_1
 
     .line 1
-    invoke-super {p0}, Lid/u;->i0()V
+    new-instance v0, Landroid/text/SpannableStringBuilder;
+
+    invoke-direct {v0}, Landroid/text/SpannableStringBuilder;-><init>()V
 
     .line 2
-    invoke-static {p0}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    iget-object v1, p0, Lid/j;->g:Lid/k$a;
 
-    move-result-object v0
+    iget-object v1, v1, Lid/k$a;->g:Landroid/graphics/drawable/BitmapDrawable;
 
-    if-eqz v0, :cond_0
+    const-string v2, "\u00a0"
 
-    invoke-virtual {v0, p0}, Lcom/supercell/id/ui/MainActivity;->I(Luc/t;)V
+    const/16 v3, 0x21
+
+    const-string v4, " "
+
+    if-eqz v1, :cond_0
 
     .line 3
-    :cond_0
-    invoke-virtual {p0}, Lid/j;->W0()V
+    new-instance v5, Landroid/text/SpannableStringBuilder;
 
-    return-void
-.end method
+    invoke-direct {v5}, Landroid/text/SpannableStringBuilder;-><init>()V
 
-.method public m1(I)Landroid/view/View;
-    .locals 2
+    new-instance v6, Lvd/g;
 
-    iget-object v0, p0, Lid/j;->e0:Ljava/util/HashMap;
+    invoke-direct {v6, v1}, Lvd/g;-><init>(Landroid/graphics/drawable/Drawable;)V
 
-    if-nez v0, :cond_0
+    invoke-static {v5, v4, v6, v3}, Landroidx/lifecycle/e0;->b(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;Ljava/lang/Object;I)Landroid/text/SpannableStringBuilder;
 
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Lid/j;->e0:Ljava/util/HashMap;
-
-    :cond_0
-    iget-object v0, p0, Lid/j;->e0:Ljava/util/HashMap;
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {v5, v2}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    if-eqz v1, :cond_0
 
-    move-result-object v0
+    goto :goto_0
 
-    check-cast v0, Landroid/view/View;
-
-    if-nez v0, :cond_2
-
-    .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
-
-    if-nez v0, :cond_1
-
-    const/4 p1, 0x0
-
-    return-object p1
-
-    .line 2
-    :cond_1
-    invoke-virtual {v0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lid/j;->e0:Ljava/util/HashMap;
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p1
-
-    invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    :cond_2
-    return-object v0
-.end method
-
-.method public final n1()V
-    .locals 6
-
-    .line 1
-    sget v0, Lcom/supercell/id/R$id;->emailEditText:I
-
-    invoke-virtual {p0, v0}, Lid/j;->m1(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/EditText;
-
-    if-nez v1, :cond_0
-
-    return-void
-
-    .line 2
     :cond_0
-    invoke-virtual {p0, v0}, Lid/j;->m1(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/EditText;
-
-    const-string v1, "emailEditText"
-
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_3
-
-    invoke-static {v0}, Lre/s;->L(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lid/j;->c0:Ljava/lang/String;
-
-    .line 3
-    sget-object v1, Lwd/l;->b:Lwd/l;
-
-    invoke-static {v0}, Lwd/l;->a(Ljava/lang/String;)Z
-
-    move-result v0
-
-    iput-boolean v0, p0, Lid/j;->d0:Z
+    const-string v1, ""
 
     .line 4
-    sget v0, Lcom/supercell/id/R$id;->validImageView:I
+    :goto_0
+    invoke-virtual {v0, v1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    invoke-virtual {p0, v0}, Lid/j;->m1(I)Landroid/view/View;
+    move-result-object v0
 
-    move-result-object v1
+    const-string v1, "SpannableStringBuilder()\u2026                 } ?: \"\")"
 
-    check-cast v1, Landroid/widget/ImageView;
-
-    const-string v2, "validImageView"
-
-    invoke-static {v1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v1}, Landroid/widget/ImageView;->getVisibility()I
-
-    move-result v1
-
-    const/16 v3, 0x8
-
-    if-ne v1, v3, :cond_1
-
-    iget-boolean v1, p0, Lid/j;->d0:Z
-
-    if-eqz v1, :cond_1
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 5
-    invoke-virtual {p0, v0}, Lid/j;->m1(I)Landroid/view/View;
+    sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v1
-
-    check-cast v1, Landroid/widget/ImageView;
-
-    invoke-static {v1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v4, 0x0
-
-    invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setScaleX(F)V
 
     .line 6
-    invoke-virtual {p0, v0}, Lid/j;->m1(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/ImageView;
-
-    invoke-static {v1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setScaleY(F)V
+    iget-object v1, v1, Lvd/r;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 7
-    invoke-virtual {p0, v0}, Lid/j;->m1(I)Landroid/view/View;
+    invoke-virtual {v1}, Lcom/supercell/id/IdConfiguration;->getLocale()Ljava/util/Locale;
 
     move-result-object v1
 
-    check-cast v1, Landroid/widget/ImageView;
+    invoke-virtual {p1, v1}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
 
-    invoke-virtual {v1}, Landroid/widget/ImageView;->animate()Landroid/view/ViewPropertyAnimator;
+    move-result-object p1
 
-    move-result-object v1
+    const-string v1, "(this as java.lang.String).toUpperCase(locale)"
 
-    const/high16 v4, 0x3f800000    # 1.0f
+    invoke-static {p1, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v1, v4}, Landroid/view/ViewPropertyAnimator;->scaleX(F)Landroid/view/ViewPropertyAnimator;
+    const/4 v1, 0x4
 
-    move-result-object v1
+    const/4 v5, 0x0
 
-    invoke-virtual {v1, v4}, Landroid/view/ViewPropertyAnimator;->scaleY(F)Landroid/view/ViewPropertyAnimator;
+    invoke-static {p1, v4, v2, v5, v1}, Lre/n;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZI)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object p1
 
-    const-wide/16 v4, 0x12c
+    const/4 v1, 0x1
 
-    invoke-virtual {v1, v4, v5}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object v1
+    new-array v1, v1, [Lae/d;
 
     .line 8
-    sget-object v4, Lrc/a;->h:Landroid/view/animation/Interpolator;
+    new-instance v2, Landroid/text/style/ForegroundColorSpan;
+
+    iget-object v4, p0, Lid/j;->h:Landroid/widget/TextView;
+
+    invoke-virtual {v4}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    sget v6, Lcom/supercell/id/R$color;->text_gold:I
+
+    invoke-static {v4, v6}, Lv/a;->b(Landroid/content/Context;I)I
+
+    move-result v4
+
+    invoke-direct {v2, v4}, Landroid/text/style/ForegroundColorSpan;-><init>(I)V
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
 
     .line 9
-    invoke-virtual {v1, v4}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
+    new-instance v4, Lae/d;
 
-    move-result-object v1
+    invoke-direct {v4, v2, v3}, Lae/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    invoke-virtual {v1}, Landroid/view/ViewPropertyAnimator;->start()V
+    aput-object v4, v1, v5
 
     .line 10
-    :cond_1
-    invoke-virtual {p0, v0}, Lid/j;->m1(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/ImageView;
-
-    invoke-static {v0, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    iget-boolean v1, p0, Lid/j;->d0:Z
-
-    if-eqz v1, :cond_2
-
-    const/4 v3, 0x0
-
-    :cond_2
-    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-static {v0, p1, v1}, Landroidx/lifecycle/e0;->c(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;[Lae/d;)Landroid/text/SpannableStringBuilder;
 
     .line 11
-    sget v0, Lcom/supercell/id/R$id;->okButton:I
-
-    invoke-virtual {p0, v0}, Lid/j;->m1(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
-
-    const-string v1, "okButton"
-
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    iget-boolean v1, p0, Lid/j;->d0:Z
-
-    xor-int/lit8 v1, v1, 0x1
-
-    invoke-static {v0, v1}, Lwd/f2;->l(Landroidx/appcompat/widget/AppCompatButton;Z)V
-
-    return-void
+    invoke-virtual {p2, v0}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
     .line 12
-    :cond_3
-    new-instance v0, Lkotlin/TypeCastException;
+    sget-object p1, Lae/i;->a:Lae/i;
 
-    const-string v1, "null cannot be cast to non-null type kotlin.CharSequence"
-
-    invoke-direct {v0, v1}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public o(Luc/d;)V
-    .locals 2
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    sget p1, Lcom/supercell/id/R$id;->okButton:I
-
-    invoke-virtual {p0, p1}, Lid/j;->m1(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
-
-    const-string v0, "okButton"
-
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v0, 0x1
-
-    invoke-virtual {p1, v0}, Landroid/widget/Button;->setEnabled(Z)V
-
-    .line 2
-    sget p1, Lcom/supercell/id/R$id;->cancelButton:I
-
-    invoke-virtual {p0, p1}, Lid/j;->m1(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
-
-    const-string v1, "cancelButton"
-
-    invoke-static {p1, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p1, v0}, Landroid/widget/Button;->setEnabled(Z)V
-
-    return-void
-
-    :cond_0
-    const-string p1, "dialog"
-
-    .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public s0(Landroid/view/View;Landroid/os/Bundle;)V
-    .locals 1
-
-    if-eqz p1, :cond_1
-
-    .line 1
-    invoke-super {p0, p1, p2}, Luc/v;->s0(Landroid/view/View;Landroid/os/Bundle;)V
-
-    .line 2
-    invoke-static {p0}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    invoke-virtual {p1, p0}, Lcom/supercell/id/ui/MainActivity;->z(Luc/t;)V
-
-    .line 3
-    :cond_0
-    sget p1, Lcom/supercell/id/R$id;->emailEditText:I
-
-    invoke-virtual {p0, p1}, Lid/j;->m1(I)Landroid/view/View;
-
-    move-result-object p2
-
-    check-cast p2, Landroid/widget/EditText;
-
-    invoke-virtual {p0}, Lid/u;->e1()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p2, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
-
-    .line 4
-    invoke-virtual {p0}, Lid/j;->n1()V
-
-    .line 5
-    invoke-virtual {p0, p1}, Lid/j;->m1(I)Landroid/view/View;
-
-    move-result-object p2
-
-    check-cast p2, Landroid/widget/EditText;
-
-    new-instance v0, Lid/j$b;
-
-    invoke-direct {v0, p0}, Lid/j$b;-><init>(Lid/j;)V
-
-    invoke-virtual {p2, v0}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
-
-    .line 6
-    invoke-virtual {p0, p1}, Lid/j;->m1(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/widget/EditText;
-
-    new-instance p2, Lid/j$c;
-
-    invoke-direct {p2, p0}, Lid/j$c;-><init>(Lid/j;)V
-
-    invoke-virtual {p1, p2}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
-
-    .line 7
-    sget p1, Lcom/supercell/id/R$id;->rememberCheckBoxRow:I
-
-    invoke-virtual {p0, p1}, Lid/j;->m1(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/widget/LinearLayout;
-
-    new-instance p2, Lid/j$d;
-
-    invoke-direct {p2, p0}, Lid/j$d;-><init>(Lid/j;)V
-
-    invoke-virtual {p1, p2}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 8
-    sget p1, Lcom/supercell/id/R$id;->rememberInfoButton:I
-
-    invoke-virtual {p0, p1}, Lid/j;->m1(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/widget/ImageButton;
-
-    new-instance p2, Lid/j$e;
-
-    invoke-direct {p2, p0}, Lid/j$e;-><init>(Lid/j;)V
-
-    invoke-virtual {p1, p2}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 9
-    sget p1, Lcom/supercell/id/R$id;->cancelButton:I
-
-    invoke-virtual {p0, p1}, Lid/j;->m1(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
-
-    new-instance p2, Lid/j$f;
-
-    invoke-direct {p2, p0}, Lid/j$f;-><init>(Lid/j;)V
-
-    invoke-virtual {p1, p2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 10
-    sget p1, Lcom/supercell/id/R$id;->okButton:I
-
-    invoke-virtual {p0, p1}, Lid/j;->m1(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
-
-    new-instance p2, Lid/j$g;
-
-    invoke-direct {p2, p0}, Lid/j$g;-><init>(Lid/j;)V
-
-    invoke-virtual {p1, p2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    return-void
+    return-object p1
 
     :cond_1
-    const-string p1, "view"
+    const-string p1, "result"
 
-    .line 11
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    .line 13
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    const/4 p1, 0x0
+    throw v0
 
-    throw p1
+    :cond_2
+    const-string p1, "text"
+
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
 .end method

@@ -124,7 +124,7 @@
 
     const-string p3, "unexpected invocation exception: "
 
-    invoke-static {p3}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p3
 

@@ -83,12 +83,12 @@
 
     .line 6
     :cond_0
-    iget-object v8, v0, Ll0/a;->a:Lm/h;
+    iget-object v8, v0, Ll0/a;->a:Lm/g;
 
     const/4 v9, 0x0
 
     .line 7
-    invoke-virtual {v8, v7, v9}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v7, v9}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v8
 
@@ -110,9 +110,9 @@
     if-gez v10, :cond_2
 
     .line 10
-    iget-object v8, v0, Ll0/a;->a:Lm/h;
+    iget-object v8, v0, Ll0/a;->a:Lm/g;
 
-    invoke-virtual {v8, v7}, Lm/h;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v7}, Lm/g;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_1
     const/4 v8, 0x1

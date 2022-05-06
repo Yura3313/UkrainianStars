@@ -42,11 +42,11 @@
 .method public abstract e()Z
 .end method
 
-.method public abstract f()Lse/h0;
+.method public abstract f()Lse/f0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lse/h0<",
+            "Lse/f0<",
             "*>;"
         }
     .end annotation

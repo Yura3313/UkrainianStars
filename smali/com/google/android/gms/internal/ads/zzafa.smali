@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method public final w7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method public final x7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -77,7 +77,7 @@
 
     check-cast p2, Lcom/google/android/gms/internal/ads/zzagf;
 
-    invoke-virtual {p2, p1}, Lcom/google/android/gms/internal/ads/zzagf;->Q2(Lcom/google/android/gms/internal/ads/zzaeo;)V
+    invoke-virtual {p2, p1}, Lcom/google/android/gms/internal/ads/zzagf;->R2(Lcom/google/android/gms/internal/ads/zzaeo;)V
 
     .line 7
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V

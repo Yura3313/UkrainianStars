@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/Runnable;
+.field public final g:Ljava/lang/Runnable;
 
 
 # direct methods
@@ -18,7 +18,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Ll2/b;->a:Ljava/lang/Runnable;
+    iput-object p1, p0, Ll2/b;->g:Ljava/lang/Runnable;
 
     return-void
 .end method
@@ -34,7 +34,7 @@
     invoke-static {v0}, Landroid/os/Process;->setThreadPriority(I)V
 
     .line 2
-    iget-object v0, p0, Ll2/b;->a:Ljava/lang/Runnable;
+    iget-object v0, p0, Ll2/b;->g:Ljava/lang/Runnable;
 
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 

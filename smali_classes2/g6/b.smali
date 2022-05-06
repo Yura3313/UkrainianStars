@@ -7,37 +7,37 @@
 
 
 # instance fields
-.field public a:Lrb/e;
+.field public g:Lpb/e;
 
-.field public b:Lrb/f;
+.field public h:Lpb/f;
 
-.field public h:Landroid/content/Context;
+.field public i:Landroid/content/Context;
 
-.field public i:Landroid/os/Handler;
+.field public j:Landroid/os/Handler;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lrb/e;Lrb/f;)V
+.method public constructor <init>(Landroid/content/Context;Lpb/e;Lpb/f;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lg6/b;->h:Landroid/content/Context;
+    iput-object p1, p0, Lg6/b;->i:Landroid/content/Context;
 
     .line 3
-    iput-object p2, p0, Lg6/b;->a:Lrb/e;
+    iput-object p2, p0, Lg6/b;->g:Lpb/e;
 
     .line 4
-    iput-object p3, p0, Lg6/b;->b:Lrb/f;
+    iput-object p3, p0, Lg6/b;->h:Lpb/f;
 
     .line 5
     new-instance p1, Landroid/os/Handler;
 
     invoke-direct {p1}, Landroid/os/Handler;-><init>()V
 
-    iput-object p1, p0, Lg6/b;->i:Landroid/os/Handler;
+    iput-object p1, p0, Lg6/b;->j:Landroid/os/Handler;
 
     return-void
 .end method
@@ -61,7 +61,7 @@
     aget p1, p1, v0
 
     .line 2
-    iget-object v1, p0, Lg6/b;->a:Lrb/e;
+    iget-object v1, p0, Lg6/b;->g:Lpb/e;
 
     if-eqz v1, :cond_1
 
@@ -74,7 +74,7 @@
     const/4 p1, 0x1
 
     .line 3
-    iget-object v0, p0, Lg6/b;->i:Landroid/os/Handler;
+    iget-object v0, p0, Lg6/b;->j:Landroid/os/Handler;
 
     new-instance v1, Lg6/a;
 
@@ -92,7 +92,7 @@
     if-ltz p1, :cond_1
 
     .line 4
-    iget-object p1, p0, Lg6/b;->i:Landroid/os/Handler;
+    iget-object p1, p0, Lg6/b;->j:Landroid/os/Handler;
 
     new-instance v1, Lg6/a;
 

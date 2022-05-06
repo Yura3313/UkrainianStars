@@ -31,7 +31,7 @@
         value = {
             "La2/n<",
             "TA;",
-            "La4/g<",
+            "Lb4/g<",
             "TResultT;>;>;"
         }
     .end annotation
@@ -43,7 +43,7 @@
 
 
 # direct methods
-.method public constructor <init>(Le0/f;)V
+.method public constructor <init>(Lb5/m;)V
     .locals 0
 
     .line 1

@@ -31,7 +31,7 @@
     if-eqz p0, :cond_0
 
     .line 1
-    invoke-virtual {p0}, Ll5/z0;->v()I
+    invoke-virtual {p0}, Ll5/z0;->u()I
 
     move-result v0
 
@@ -73,12 +73,12 @@
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Ll5/n0;->w([BLcom/google/crypto/tink/shaded/protobuf/j;)Ll5/n0;
+    invoke-static {p0, v0}, Ll5/n0;->v([BLcom/google/crypto/tink/shaded/protobuf/j;)Ll5/n0;
 
     move-result-object p0
 
     .line 2
-    invoke-virtual {p0}, Ll5/n0;->u()Lm5/c;
+    invoke-virtual {p0}, Ll5/n0;->t()Lm5/c;
 
     move-result-object v0
 
@@ -95,11 +95,11 @@
 
     .line 4
     :try_start_0
-    invoke-virtual {p0}, Ll5/n0;->u()Lm5/c;
+    invoke-virtual {p0}, Ll5/n0;->t()Lm5/c;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lm5/c;->n()[B
+    invoke-virtual {p0}, Lm5/c;->m()[B
 
     move-result-object p0
 
@@ -118,12 +118,12 @@
     move-result-object p1
 
     .line 7
-    invoke-static {p0, p1}, Ll5/z0;->z([BLcom/google/crypto/tink/shaded/protobuf/j;)Ll5/z0;
+    invoke-static {p0, p1}, Ll5/z0;->y([BLcom/google/crypto/tink/shaded/protobuf/j;)Ll5/z0;
 
     move-result-object p0
 
     .line 8
-    invoke-virtual {p0}, Ll5/z0;->v()I
+    invoke-virtual {p0}, Ll5/z0;->u()I
 
     move-result p1
     :try_end_0
@@ -190,95 +190,95 @@
     sget-object v0, Ld5/y;->a:Ljava/util/logging/Logger;
 
     .line 2
-    iget-object v0, p0, Ld5/j;->a:Ll5/z0;
+    sget-object v0, Ll5/w0;->i:Ll5/w0;
+
+    iget-object v1, p0, Ld5/j;->a:Ll5/z0;
 
     .line 3
-    sget v1, Ld5/a0;->a:I
+    sget v2, Ld5/a0;->a:I
 
     .line 4
-    invoke-virtual {v0}, Ll5/z0;->x()I
+    invoke-virtual {v1}, Ll5/z0;->w()I
 
-    move-result v1
+    move-result v2
 
     .line 5
-    invoke-virtual {v0}, Ll5/z0;->w()Ljava/util/List;
+    invoke-virtual {v1}, Ll5/z0;->v()Ljava/util/List;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    move-result-object v0
+    move-result-object v1
 
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
-    const/4 v3, 0x1
-
-    const/4 v4, 0x0
+    const/4 v4, 0x1
 
     const/4 v5, 0x0
 
-    const/4 v6, 0x1
+    const/4 v6, 0x0
+
+    const/4 v7, 0x1
 
     :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v7
+    move-result v8
 
-    if-eqz v7, :cond_7
+    if-eqz v8, :cond_7
 
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v7
-
-    check-cast v7, Ll5/z0$c;
-
-    .line 6
-    invoke-virtual {v7}, Ll5/z0$c;->z()Ll5/w0;
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v8
 
-    sget-object v9, Ll5/w0;->ENABLED:Ll5/w0;
+    check-cast v8, Ll5/z0$c;
 
-    if-eq v8, v9, :cond_0
+    .line 6
+    invoke-virtual {v8}, Ll5/z0$c;->y()Ll5/w0;
+
+    move-result-object v9
+
+    if-eq v9, v0, :cond_0
 
     goto :goto_0
 
     .line 7
     :cond_0
-    invoke-virtual {v7}, Ll5/z0$c;->A()Z
+    invoke-virtual {v8}, Ll5/z0$c;->z()Z
 
-    move-result v8
+    move-result v9
 
-    if-eqz v8, :cond_6
+    if-eqz v9, :cond_6
 
     .line 8
-    invoke-virtual {v7}, Ll5/z0$c;->y()Ll5/f1;
+    invoke-virtual {v8}, Ll5/z0$c;->x()Ll5/f1;
 
-    move-result-object v8
+    move-result-object v9
 
-    sget-object v9, Ll5/f1;->UNKNOWN_PREFIX:Ll5/f1;
+    sget-object v10, Ll5/f1;->h:Ll5/f1;
 
-    if-eq v8, v9, :cond_5
+    if-eq v9, v10, :cond_5
 
     .line 9
-    invoke-virtual {v7}, Ll5/z0$c;->z()Ll5/w0;
+    invoke-virtual {v8}, Ll5/z0$c;->y()Ll5/w0;
 
-    move-result-object v8
+    move-result-object v9
 
-    sget-object v9, Ll5/w0;->UNKNOWN_STATUS:Ll5/w0;
+    sget-object v10, Ll5/w0;->h:Ll5/w0;
 
-    if-eq v8, v9, :cond_4
+    if-eq v9, v10, :cond_4
 
     .line 10
-    invoke-virtual {v7}, Ll5/z0$c;->x()I
+    invoke-virtual {v8}, Ll5/z0$c;->w()I
 
-    move-result v8
+    move-result v9
 
-    if-ne v8, v1, :cond_2
+    if-ne v9, v2, :cond_2
 
-    if-nez v5, :cond_1
+    if-nez v6, :cond_1
 
-    const/4 v5, 0x1
+    const/4 v6, 0x1
 
     goto :goto_1
 
@@ -295,22 +295,22 @@
     .line 12
     :cond_2
     :goto_1
-    invoke-virtual {v7}, Ll5/z0$c;->w()Ll5/v0;
+    invoke-virtual {v8}, Ll5/z0$c;->v()Ll5/v0;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-virtual {v7}, Ll5/v0;->w()Ll5/v0$c;
+    invoke-virtual {v8}, Ll5/v0;->v()Ll5/v0$c;
 
-    move-result-object v7
+    move-result-object v8
 
-    sget-object v8, Ll5/v0$c;->ASYMMETRIC_PUBLIC:Ll5/v0$c;
+    sget-object v9, Ll5/v0$c;->k:Ll5/v0$c;
 
-    if-eq v7, v8, :cond_3
+    if-eq v8, v9, :cond_3
 
-    const/4 v6, 0x0
+    const/4 v7, 0x0
 
     :cond_3
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v5, v5, 0x1
 
     goto :goto_0
 
@@ -318,10 +318,10 @@
     :cond_4
     new-instance p1, Ljava/security/GeneralSecurityException;
 
-    new-array v0, v3, [Ljava/lang/Object;
+    new-array v0, v4, [Ljava/lang/Object;
 
     .line 14
-    invoke-virtual {v7}, Ll5/z0$c;->x()I
+    invoke-virtual {v8}, Ll5/z0$c;->w()I
 
     move-result v1
 
@@ -329,7 +329,7 @@
 
     move-result-object v1
 
-    aput-object v1, v0, v2
+    aput-object v1, v0, v3
 
     const-string v1, "key %d has unknown status"
 
@@ -345,10 +345,10 @@
     :cond_5
     new-instance p1, Ljava/security/GeneralSecurityException;
 
-    new-array v0, v3, [Ljava/lang/Object;
+    new-array v0, v4, [Ljava/lang/Object;
 
     .line 16
-    invoke-virtual {v7}, Ll5/z0$c;->x()I
+    invoke-virtual {v8}, Ll5/z0$c;->w()I
 
     move-result v1
 
@@ -356,7 +356,7 @@
 
     move-result-object v1
 
-    aput-object v1, v0, v2
+    aput-object v1, v0, v3
 
     const-string v1, "key %d has unknown prefix"
 
@@ -372,9 +372,9 @@
     :cond_6
     new-instance p1, Ljava/security/GeneralSecurityException;
 
-    new-array v0, v3, [Ljava/lang/Object;
+    new-array v0, v4, [Ljava/lang/Object;
 
-    invoke-virtual {v7}, Ll5/z0$c;->x()I
+    invoke-virtual {v8}, Ll5/z0$c;->w()I
 
     move-result v1
 
@@ -382,7 +382,7 @@
 
     move-result-object v1
 
-    aput-object v1, v0, v2
+    aput-object v1, v0, v3
 
     const-string v1, "key %d has no key data"
 
@@ -395,11 +395,11 @@
     throw p1
 
     :cond_7
-    if-eqz v4, :cond_14
+    if-eqz v5, :cond_15
 
-    if-nez v5, :cond_9
+    if-nez v6, :cond_9
 
-    if-eqz v6, :cond_8
+    if-eqz v7, :cond_8
 
     goto :goto_2
 
@@ -416,93 +416,87 @@
     .line 19
     :cond_9
     :goto_2
-    new-instance v0, Ld5/p;
+    new-instance v1, Ld5/p;
 
-    invoke-direct {v0, p1}, Ld5/p;-><init>(Ljava/lang/Class;)V
+    invoke-direct {v1, p1}, Ld5/p;-><init>(Ljava/lang/Class;)V
 
     .line 20
-    iget-object v1, p0, Ld5/j;->a:Ll5/z0;
+    iget-object v2, p0, Ld5/j;->a:Ll5/z0;
 
     .line 21
-    invoke-virtual {v1}, Ll5/z0;->w()Ljava/util/List;
+    invoke-virtual {v2}, Ll5/z0;->v()Ljava/util/List;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    move-result-object v1
+    move-result-object v2
 
     :cond_a
     :goto_3
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v4
+    move-result v5
 
-    if-eqz v4, :cond_12
+    if-eqz v5, :cond_13
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v5
 
-    check-cast v4, Ll5/z0$c;
+    check-cast v5, Ll5/z0$c;
 
     .line 22
-    invoke-virtual {v4}, Ll5/z0$c;->z()Ll5/w0;
+    invoke-virtual {v5}, Ll5/z0$c;->y()Ll5/w0;
 
-    move-result-object v5
+    move-result-object v6
 
-    sget-object v6, Ll5/w0;->ENABLED:Ll5/w0;
-
-    if-ne v5, v6, :cond_a
+    if-ne v6, v0, :cond_a
 
     .line 23
-    invoke-virtual {v4}, Ll5/z0$c;->w()Ll5/v0;
+    invoke-virtual {v5}, Ll5/z0$c;->v()Ll5/v0;
 
-    move-result-object v5
+    move-result-object v6
 
-    invoke-virtual {v5}, Ll5/v0;->x()Ljava/lang/String;
+    invoke-virtual {v6}, Ll5/v0;->w()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v6
 
-    invoke-virtual {v4}, Ll5/z0$c;->w()Ll5/v0;
+    invoke-virtual {v5}, Ll5/z0$c;->v()Ll5/v0;
 
     move-result-object v7
 
-    invoke-virtual {v7}, Ll5/v0;->y()Lm5/c;
+    invoke-virtual {v7}, Ll5/v0;->x()Lm5/c;
 
     move-result-object v7
 
     .line 24
-    invoke-static {v5, v7, p1}, Ld5/y;->d(Ljava/lang/String;Lm5/c;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-static {v6, v7, p1}, Ld5/y;->d(Ljava/lang/String;Lm5/c;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v9
 
     .line 25
-    invoke-virtual {v4}, Ll5/z0$c;->z()Ll5/w0;
+    invoke-virtual {v5}, Ll5/z0$c;->y()Ll5/w0;
 
-    move-result-object v5
+    move-result-object v6
 
-    if-ne v5, v6, :cond_11
+    if-ne v6, v0, :cond_12
 
     .line 26
-    new-instance v5, Ld5/p$a;
+    new-instance v6, Ld5/p$a;
 
     .line 27
-    sget-object v7, Ld5/b$a;->a:[I
+    invoke-virtual {v5}, Ll5/z0$c;->x()Ll5/f1;
 
-    invoke-virtual {v4}, Ll5/z0$c;->y()Ll5/f1;
+    move-result-object v7
 
-    move-result-object v8
+    invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
 
-    invoke-virtual {v8}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v8
-
-    aget v7, v7, v8
+    move-result v7
 
     const/4 v8, 0x5
 
-    if-eq v7, v3, :cond_d
+    if-eq v7, v4, :cond_e
 
     const/4 v10, 0x2
 
@@ -512,16 +506,13 @@
 
     if-eq v7, v10, :cond_c
 
-    const/4 v8, 0x4
+    const/4 v10, 0x4
 
-    if-ne v7, v8, :cond_b
-
-    .line 28
-    sget-object v7, Ld5/b;->a:[B
+    if-ne v7, v10, :cond_b
 
     goto :goto_4
 
-    .line 29
+    .line 28
     :cond_b
     new-instance p1, Ljava/security/GeneralSecurityException;
 
@@ -531,8 +522,15 @@
 
     throw p1
 
-    .line 30
+    .line 29
     :cond_c
+    sget-object v7, Ld5/b;->a:[B
+
+    goto :goto_5
+
+    .line 30
+    :cond_d
+    :goto_4
     invoke-static {v8}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v7
@@ -543,7 +541,7 @@
     move-result-object v7
 
     .line 32
-    invoke-virtual {v4}, Ll5/z0$c;->x()I
+    invoke-virtual {v5}, Ll5/z0$c;->w()I
 
     move-result v8
 
@@ -556,21 +554,21 @@
 
     move-result-object v7
 
-    goto :goto_4
+    goto :goto_5
 
     .line 34
-    :cond_d
+    :cond_e
     invoke-static {v8}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v7
 
     .line 35
-    invoke-virtual {v7, v2}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
+    invoke-virtual {v7, v4}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
 
     move-result-object v7
 
     .line 36
-    invoke-virtual {v4}, Ll5/z0$c;->x()I
+    invoke-virtual {v5}, Ll5/z0$c;->w()I
 
     move-result v8
 
@@ -583,25 +581,25 @@
 
     move-result-object v7
 
-    :goto_4
+    :goto_5
     move-object v10, v7
 
     .line 38
-    invoke-virtual {v4}, Ll5/z0$c;->z()Ll5/w0;
+    invoke-virtual {v5}, Ll5/z0$c;->y()Ll5/w0;
 
     move-result-object v11
 
     .line 39
-    invoke-virtual {v4}, Ll5/z0$c;->y()Ll5/f1;
+    invoke-virtual {v5}, Ll5/z0$c;->x()Ll5/f1;
 
     move-result-object v12
 
     .line 40
-    invoke-virtual {v4}, Ll5/z0$c;->x()I
+    invoke-virtual {v5}, Ll5/z0$c;->w()I
 
     move-result v13
 
-    move-object v8, v5
+    move-object v8, v6
 
     invoke-direct/range {v8 .. v13}, Ld5/p$a;-><init>(Ljava/lang/Object;[BLl5/w0;Ll5/f1;I)V
 
@@ -611,12 +609,12 @@
     invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
 
     .line 42
-    invoke-interface {v7, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v7, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 43
     new-instance v8, Ljava/lang/String;
 
-    invoke-virtual {v5}, Ld5/p$a;->a()[B
+    invoke-virtual {v6}, Ld5/p$a;->a()[B
 
     move-result-object v9
 
@@ -625,7 +623,7 @@
     invoke-direct {v8, v9, v10}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
 
     .line 44
-    iget-object v9, v0, Ld5/p;->a:Ljava/util/concurrent/ConcurrentMap;
+    iget-object v9, v1, Ld5/p;->a:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-static {v7}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
@@ -637,7 +635,7 @@
 
     check-cast v7, Ljava/util/List;
 
-    if-eqz v7, :cond_e
+    if-eqz v7, :cond_f
 
     .line 45
     new-instance v9, Ljava/util/ArrayList;
@@ -648,10 +646,10 @@
     invoke-interface {v9, v7}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     .line 47
-    invoke-interface {v9, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v9, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 48
-    iget-object v7, v0, Ld5/p;->a:Ljava/util/concurrent/ConcurrentMap;
+    iget-object v7, v1, Ld5/p;->a:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-static {v9}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
@@ -660,49 +658,49 @@
     invoke-interface {v7, v8, v9}, Ljava/util/concurrent/ConcurrentMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 49
-    :cond_e
-    invoke-virtual {v4}, Ll5/z0$c;->x()I
+    :cond_f
+    invoke-virtual {v5}, Ll5/z0$c;->w()I
 
-    move-result v4
+    move-result v5
 
     .line 50
     iget-object v7, p0, Ld5/j;->a:Ll5/z0;
 
     .line 51
-    invoke-virtual {v7}, Ll5/z0;->x()I
+    invoke-virtual {v7}, Ll5/z0;->w()I
 
     move-result v7
 
-    if-ne v4, v7, :cond_a
+    if-ne v5, v7, :cond_a
 
     .line 52
-    iget-object v4, v5, Ld5/p$a;->c:Ll5/w0;
+    iget-object v5, v6, Ld5/p$a;->c:Ll5/w0;
 
-    if-ne v4, v6, :cond_10
+    if-ne v5, v0, :cond_11
 
     .line 53
-    invoke-virtual {v5}, Ld5/p$a;->a()[B
+    invoke-virtual {v6}, Ld5/p$a;->a()[B
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v0, v4}, Ld5/p;->a([B)Ljava/util/List;
+    invoke-virtual {v1, v5}, Ld5/p;->a([B)Ljava/util/List;
 
-    move-result-object v4
+    move-result-object v5
 
     .line 54
-    invoke-interface {v4}, Ljava/util/List;->isEmpty()Z
+    invoke-interface {v5}, Ljava/util/List;->isEmpty()Z
 
-    move-result v4
+    move-result v5
 
-    if-nez v4, :cond_f
+    if-nez v5, :cond_10
 
     .line 55
-    iput-object v5, v0, Ld5/p;->b:Ld5/p$a;
+    iput-object v6, v1, Ld5/p;->b:Ld5/p$a;
 
     goto/16 :goto_3
 
     .line 56
-    :cond_f
+    :cond_10
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     const-string v0, "the primary entry cannot be set to an entry which is not held by this primitive set"
@@ -712,7 +710,7 @@
     throw p1
 
     .line 57
-    :cond_10
+    :cond_11
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     const-string v0, "the primary entry has to be ENABLED"
@@ -722,7 +720,7 @@
     throw p1
 
     .line 58
-    :cond_11
+    :cond_12
     new-instance p1, Ljava/security/GeneralSecurityException;
 
     const-string v0, "only ENABLED key is allowed"
@@ -732,49 +730,49 @@
     throw p1
 
     .line 59
-    :cond_12
+    :cond_13
     sget-object p1, Ld5/y;->e:Ljava/util/concurrent/ConcurrentMap;
 
     .line 60
-    iget-object v1, v0, Ld5/p;->c:Ljava/lang/Class;
+    iget-object v0, v1, Ld5/p;->c:Ljava/lang/Class;
 
     .line 61
-    invoke-interface {p1, v1}, Ljava/util/concurrent/ConcurrentMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v0}, Ljava/util/concurrent/ConcurrentMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Ld5/q;
 
-    if-eqz p1, :cond_13
+    if-eqz p1, :cond_14
 
     .line 62
-    invoke-interface {p1, v0}, Ld5/q;->a(Ld5/p;)Ljava/lang/Object;
+    invoke-interface {p1, v1}, Ld5/q;->a(Ld5/p;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 
     .line 63
-    :cond_13
+    :cond_14
     new-instance p1, Ljava/security/GeneralSecurityException;
 
-    const-string v1, "No wrapper found for "
+    const-string v0, "No wrapper found for "
 
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    .line 64
-    iget-object v0, v0, Ld5/p;->c:Ljava/lang/Class;
-
-    .line 65
-    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 64
+    iget-object v1, v1, Ld5/p;->c:Ljava/lang/Class;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 65
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -783,20 +781,20 @@
     throw p1
 
     .line 66
-    :cond_14
+    :cond_15
     new-instance p1, Ljava/security/GeneralSecurityException;
 
     const-string v0, "keyset must contain at least one ENABLED key"
 
     invoke-direct {p1, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_6
-
-    :goto_5
-    throw p1
+    goto :goto_7
 
     :goto_6
-    goto :goto_5
+    throw p1
+
+    :goto_7
+    goto :goto_6
 .end method
 
 .method public toString()Ljava/lang/String;

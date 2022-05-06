@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final a:Landroid/view/MenuItem$OnMenuItemClickListener;
+.field public final g:Landroid/view/MenuItem$OnMenuItemClickListener;
 
-.field public final synthetic b:Lg/c;
+.field public final synthetic h:Lg/c;
 
 
 # direct methods
@@ -28,12 +28,12 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lg/c$e;->b:Lg/c;
+    iput-object p1, p0, Lg/c$e;->h:Lg/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p2, p0, Lg/c$e;->a:Landroid/view/MenuItem$OnMenuItemClickListener;
+    iput-object p2, p0, Lg/c$e;->g:Landroid/view/MenuItem$OnMenuItemClickListener;
 
     return-void
 .end method
@@ -44,9 +44,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lg/c$e;->a:Landroid/view/MenuItem$OnMenuItemClickListener;
+    iget-object v0, p0, Lg/c$e;->g:Landroid/view/MenuItem$OnMenuItemClickListener;
 
-    iget-object v1, p0, Lg/c$e;->b:Lg/c;
+    iget-object v1, p0, Lg/c$e;->h:Lg/c;
 
     invoke-virtual {v1, p1}, Lg/b;->c(Landroid/view/MenuItem;)Landroid/view/MenuItem;
 

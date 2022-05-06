@@ -18,7 +18,7 @@
 
 .field public final b:Lr6/n;
 
-.field public final c:Lj3/lc;
+.field public final c:Lj3/w6;
 
 
 # direct methods
@@ -307,13 +307,11 @@
     iput-object v0, p0, Lr6/o;->b:Lr6/n;
 
     .line 4
-    new-instance v0, Lj3/lc;
+    new-instance v0, Lj3/w6;
 
-    const/4 v1, 0x1
+    invoke-direct {v0}, Lj3/w6;-><init>()V
 
-    invoke-direct {v0, v1}, Lj3/lc;-><init>(I)V
-
-    iput-object v0, p0, Lr6/o;->c:Lj3/lc;
+    iput-object v0, p0, Lr6/o;->c:Lj3/w6;
 
     return-void
 .end method
@@ -371,7 +369,7 @@
 
     .line 5
     :cond_2
-    sget-object p0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 6
     goto :goto_2
@@ -384,7 +382,7 @@
 .end method
 
 .method public static m(Lj6/a;IZ[I[I)[I
-    .locals 9
+    .locals 10
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/zxing/NotFoundException;
@@ -392,7 +390,7 @@
     .end annotation
 
     .line 1
-    iget v0, p0, Lj6/a;->b:I
+    iget v0, p0, Lj6/a;->h:I
 
     if-eqz p2, :cond_0
 
@@ -428,9 +426,11 @@
 
     move-result v5
 
+    xor-int/2addr v5, v3
+
     const/4 v6, 0x1
 
-    if-eq v5, v3, :cond_1
+    if-eqz v5, :cond_1
 
     .line 5
     aget v5, p4, v4
@@ -446,22 +446,22 @@
 
     if-ne v4, v5, :cond_3
 
-    const v5, 0x3f333333    # 0.7f
+    const v7, 0x3f333333    # 0.7f
 
     .line 6
-    invoke-static {p4, p3, v5}, Lr6/j;->e([I[IF)F
+    invoke-static {p4, p3, v7}, Lr6/j;->e([I[IF)F
 
-    move-result v5
+    move-result v7
 
-    const v7, 0x3ef5c28f    # 0.48f
+    const v8, 0x3ef5c28f    # 0.48f
 
-    const/4 v8, 0x2
+    const/4 v9, 0x2
 
-    cmpg-float v5, v5, v7
+    cmpg-float v7, v7, v8
 
-    if-gez v5, :cond_2
+    if-gez v7, :cond_2
 
-    new-array p0, v8, [I
+    new-array p0, v9, [I
 
     aput p2, p0, v2
 
@@ -471,26 +471,26 @@
 
     .line 7
     :cond_2
-    aget v5, p4, v2
+    aget v7, p4, v2
 
-    aget v7, p4, v6
+    aget v8, p4, v6
 
-    add-int/2addr v5, v7
+    add-int/2addr v7, v8
 
-    add-int/2addr p2, v5
+    add-int/2addr p2, v7
 
-    add-int/lit8 v5, v4, -0x1
+    add-int/lit8 v7, v1, -0x2
 
     .line 8
-    invoke-static {p4, v8, p4, v2, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {p4, v9, p4, v2, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 9
-    aput v2, p4, v5
+    aput v2, p4, v7
 
     .line 10
-    aput v2, p4, v4
+    aput v2, p4, v5
 
-    move v4, v5
+    add-int/lit8 v4, v4, -0x1
 
     goto :goto_2
 
@@ -510,7 +510,7 @@
 
     .line 12
     :cond_4
-    sget-object p0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 13
     goto :goto_5
@@ -624,7 +624,7 @@
 .end method
 
 .method public h(Ljava/lang/String;)Z
-    .locals 9
+    .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/zxing/FormatException;
@@ -643,58 +643,33 @@
     goto :goto_2
 
     :cond_0
-    const/4 v2, 0x1
+    add-int/lit8 v2, v0, -0x2
 
-    sub-int/2addr v0, v2
-
-    .line 2
-    invoke-virtual {p1, v0}, Ljava/lang/String;->charAt(I)C
-
-    move-result v3
-
-    const/16 v4, 0xa
-
-    invoke-static {v3, v4}, Ljava/lang/Character;->digit(CI)I
-
-    move-result v3
-
-    .line 3
-    invoke-virtual {p1, v1, v0}, Ljava/lang/String;->subSequence(II)Ljava/lang/CharSequence;
-
-    move-result-object p1
-
-    .line 4
-    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
-
-    move-result v0
-
-    add-int/lit8 v5, v0, -0x1
-
-    const/4 v6, 0x0
+    const/4 v3, 0x0
 
     :goto_0
-    const/16 v7, 0x9
+    const/16 v4, 0x9
 
-    if-ltz v5, :cond_2
+    if-ltz v2, :cond_2
 
-    .line 5
-    invoke-interface {p1, v5}, Ljava/lang/CharSequence;->charAt(I)C
+    .line 2
+    invoke-virtual {p1, v2}, Ljava/lang/String;->charAt(I)C
 
-    move-result v8
+    move-result v5
 
-    add-int/lit8 v8, v8, -0x30
+    add-int/lit8 v5, v5, -0x30
 
-    if-ltz v8, :cond_1
+    if-ltz v5, :cond_1
 
-    if-gt v8, v7, :cond_1
+    if-gt v5, v4, :cond_1
 
-    add-int/2addr v6, v8
+    add-int/2addr v3, v5
 
-    add-int/lit8 v5, v5, -0x2
+    add-int/lit8 v2, v2, -0x2
 
     goto :goto_0
 
-    .line 6
+    .line 3
     :cond_1
     invoke-static {}, Lcom/google/zxing/FormatException;->a()Lcom/google/zxing/FormatException;
 
@@ -703,15 +678,17 @@
     throw p1
 
     :cond_2
-    mul-int/lit8 v6, v6, 0x3
+    mul-int/lit8 v3, v3, 0x3
+
+    const/4 v2, 0x1
+
+    sub-int/2addr v0, v2
 
     :goto_1
-    add-int/lit8 v0, v0, -0x2
-
     if-ltz v0, :cond_4
 
-    .line 7
-    invoke-interface {p1, v0}, Ljava/lang/CharSequence;->charAt(I)C
+    .line 4
+    invoke-virtual {p1, v0}, Ljava/lang/String;->charAt(I)C
 
     move-result v5
 
@@ -719,13 +696,15 @@
 
     if-ltz v5, :cond_3
 
-    if-gt v5, v7, :cond_3
+    if-gt v5, v4, :cond_3
 
-    add-int/2addr v6, v5
+    add-int/2addr v3, v5
+
+    add-int/lit8 v0, v0, -0x2
 
     goto :goto_1
 
-    .line 8
+    .line 5
     :cond_3
     invoke-static {}, Lcom/google/zxing/FormatException;->a()Lcom/google/zxing/FormatException;
 
@@ -733,13 +712,11 @@
 
     throw p1
 
+    .line 6
     :cond_4
-    rsub-int p1, v6, 0x3e8
+    rem-int/lit8 v3, v3, 0xa
 
-    .line 9
-    rem-int/2addr p1, v4
-
-    if-ne p1, v3, :cond_5
+    if-nez v3, :cond_5
 
     const/4 v1, 0x1
 
@@ -813,7 +790,7 @@
 
     .line 1
     :cond_0
-    sget-object v1, Lc6/d;->NEED_RESULT_POINT_CALLBACK:Lc6/d;
+    sget-object v1, Lc6/d;->p:Lc6/d;
 
     .line 2
     invoke-interface {p4, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -914,7 +891,7 @@
     add-int/2addr v7, v1
 
     .line 12
-    iget v8, p2, Lj6/a;->b:I
+    iget v8, p2, Lj6/a;->h:I
 
     if-ge v7, v8, :cond_13
 
@@ -1007,7 +984,7 @@
     move-result-object p1
 
     .line 22
-    sget-object p2, Lc6/k;->UPC_EAN_EXTENSION:Lc6/k;
+    sget-object p2, Lc6/k;->m:Lc6/k;
 
     .line 23
     iget-object p3, p1, Lc6/j;->a:Ljava/lang/String;
@@ -1092,7 +1069,7 @@
 
     .line 37
     :cond_6
-    sget-object p2, Lc6/d;->ALLOWED_EAN_EXTENSIONS:Lc6/d;
+    sget-object p2, Lc6/d;->q:Lc6/d;
 
     .line 38
     invoke-interface {p4, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1135,7 +1112,7 @@
 
     .line 40
     :cond_9
-    sget-object p1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 41
     throw p1
@@ -1143,20 +1120,20 @@
     .line 42
     :cond_a
     :goto_6
-    sget-object p1, Lc6/a;->EAN_13:Lc6/a;
+    sget-object p1, Lc6/a;->n:Lc6/a;
 
     if-eq v2, p1, :cond_b
 
-    sget-object p1, Lc6/a;->UPC_A:Lc6/a;
+    sget-object p1, Lc6/a;->u:Lc6/a;
 
     if-ne v2, p1, :cond_10
 
     .line 43
     :cond_b
-    iget-object p1, p0, Lr6/o;->c:Lj3/lc;
+    iget-object p1, p0, Lr6/o;->c:Lj3/w6;
 
     .line 44
-    invoke-virtual {p1}, Lj3/lc;->b()V
+    invoke-virtual {p1}, Lj3/w6;->c()V
 
     const/4 p2, 0x3
 
@@ -1170,7 +1147,7 @@
     move-result p2
 
     .line 46
-    iget-object p3, p1, Lj3/lc;->a:Ljava/lang/Object;
+    iget-object p3, p1, Lj3/w6;->g:Ljava/lang/Object;
 
     check-cast p3, Ljava/util/List;
 
@@ -1184,7 +1161,7 @@
     if-ge p4, p3, :cond_f
 
     .line 47
-    iget-object v1, p1, Lj3/lc;->a:Ljava/lang/Object;
+    iget-object v1, p1, Lj3/w6;->g:Ljava/lang/Object;
 
     check-cast v1, Ljava/util/List;
 
@@ -1216,7 +1193,7 @@
     if-gt p2, v2, :cond_e
 
     .line 50
-    iget-object p1, p1, Lj3/lc;->b:Ljava/lang/Object;
+    iget-object p1, p1, Lj3/w6;->h:Ljava/lang/Object;
 
     check-cast p1, Ljava/util/List;
 
@@ -1240,7 +1217,7 @@
     if-eqz v0, :cond_10
 
     .line 51
-    sget-object p1, Lc6/k;->POSSIBLE_COUNTRY:Lc6/k;
+    sget-object p1, Lc6/k;->l:Lc6/k;
 
     invoke-virtual {v7, p1, v0}, Lc6/j;->b(Lc6/k;Ljava/lang/Object;)V
 
@@ -1265,7 +1242,7 @@
 
     .line 54
     :cond_13
-    sget-object p1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 55
     goto :goto_b

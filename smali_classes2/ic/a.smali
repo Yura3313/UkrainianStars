@@ -1,29 +1,42 @@
-.class public interface abstract Lic/a;
+.class public final Lic/a;
 .super Ljava/lang/Object;
-.source "ImageAware.java"
+.source "ImageSizeUtils.java"
 
 
-# virtual methods
-.method public abstract a(Landroid/graphics/drawable/Drawable;)Z
-.end method
+# static fields
+.field public static a:Lac/d;
 
-.method public abstract b()Landroid/view/View;
-.end method
 
-.method public abstract c()Z
-.end method
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 3
 
-.method public abstract d()Ldc/h;
-.end method
+    const/4 v0, 0x1
 
-.method public abstract e(Landroid/graphics/Bitmap;)Z
-.end method
+    new-array v0, v0, [I
 
-.method public abstract getHeight()I
-.end method
+    const/16 v1, 0xd33
 
-.method public abstract getId()I
-.end method
+    const/4 v2, 0x0
 
-.method public abstract getWidth()I
+    .line 1
+    invoke-static {v1, v0, v2}, Landroid/opengl/GLES10;->glGetIntegerv(I[II)V
+
+    .line 2
+    aget v0, v0, v2
+
+    const/16 v1, 0x800
+
+    invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
+
+    move-result v0
+
+    .line 3
+    new-instance v1, Lac/d;
+
+    invoke-direct {v1, v0, v0}, Lac/d;-><init>(II)V
+
+    sput-object v1, Lic/a;->a:Lac/d;
+
+    return-void
 .end method

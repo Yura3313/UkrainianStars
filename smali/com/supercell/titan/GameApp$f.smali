@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Ljava/lang/String;
+.field public final synthetic g:I
 
 .field public final synthetic h:Ljava/lang/String;
+
+.field public final synthetic i:Ljava/lang/String;
 
 
 # direct methods
@@ -30,11 +30,11 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Lcom/supercell/titan/GameApp$f;->a:I
+    iput p1, p0, Lcom/supercell/titan/GameApp$f;->g:I
 
-    iput-object p2, p0, Lcom/supercell/titan/GameApp$f;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/titan/GameApp$f;->h:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/supercell/titan/GameApp$f;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/supercell/titan/GameApp$f;->i:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,11 +70,11 @@
     if-nez v0, :cond_0
 
     .line 2
-    iget v0, p0, Lcom/supercell/titan/GameApp$f;->a:I
+    iget v0, p0, Lcom/supercell/titan/GameApp$f;->g:I
 
-    iget-object v1, p0, Lcom/supercell/titan/GameApp$f;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/titan/GameApp$f;->h:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/supercell/titan/GameApp$f;->h:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/titan/GameApp$f;->i:Ljava/lang/String;
 
     invoke-static {v0, v1, v2}, Lcom/supercell/titan/GameApp;->setPushNotificationValues(ILjava/lang/String;Ljava/lang/String;)V
 

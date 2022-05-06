@@ -3,33 +3,26 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/x2;
+.implements Lj3/y2;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lj3/x2<",
-        "Ljava/lang/Object;",
+        "Lj3/y2<",
+        "Lj3/gh;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final a:Landroid/content/Context;
-
-
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lj3/z2;->a:Landroid/content/Context;
 
     return-void
 .end method
@@ -37,170 +30,105 @@
 
 # virtual methods
 .method public final b(Ljava/lang/Object;Ljava/util/Map;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Object;",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
+    .locals 5
 
     .line 1
-    sget-object p1, Lh1/o;->B:Lh1/o;
-
-    iget-object p1, p1, Lh1/o;->x:Lj3/o9;
+    check-cast p1, Lj3/gh;
 
     .line 2
-    iget-object v0, p0, Lj3/z2;->a:Landroid/content/Context;
-
-    invoke-virtual {p1, v0}, Lj3/o9;->h(Landroid/content/Context;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_0
-
-    return-void
-
-    :cond_0
-    const-string p1, "eventName"
-
-    .line 3
-    invoke-interface {p2, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/String;
-
-    const-string v0, "eventId"
-
-    .line 4
-    invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1}, Lj3/gh;->getContext()Landroid/content/Context;
 
     move-result-object p2
 
-    check-cast p2, Ljava/lang/String;
+    const-string v0, "window"
+
+    invoke-virtual {p2, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/view/WindowManager;
+
+    .line 3
+    sget-object v0, Lh1/o;->B:Lh1/o;
+
+    iget-object v0, v0, Lh1/o;->c:Lj3/bb;
+
+    .line 4
+    move-object v0, p1
+
+    check-cast v0, Landroid/view/View;
 
     .line 5
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p2}, Lj3/bb;->b(Landroid/view/WindowManager;)Landroid/util/DisplayMetrics;
 
-    const/4 v0, -0x1
-
-    invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
-
-    move-result v1
-
-    const-string v2, "_aa"
-
-    sparse-switch v1, :sswitch_data_0
-
-    goto :goto_0
-
-    :sswitch_0
-    const-string v1, "_ai"
-
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v0, 0x2
-
-    goto :goto_0
-
-    :sswitch_1
-    const-string v1, "_ac"
-
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_2
-
-    goto :goto_0
-
-    :cond_2
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :sswitch_2
-    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_3
-
-    goto :goto_0
-
-    :cond_3
-    const/4 v0, 0x0
-
-    :goto_0
-    packed-switch v0, :pswitch_data_0
-
-    return-void
+    move-result-object p2
 
     .line 6
-    :pswitch_0
-    sget-object p1, Lh1/o;->B:Lh1/o;
-
-    iget-object p1, p1, Lh1/o;->x:Lj3/o9;
+    iget v1, p2, Landroid/util/DisplayMetrics;->widthPixels:I
 
     .line 7
-    iget-object v0, p0, Lj3/z2;->a:Landroid/content/Context;
+    iget p2, p2, Landroid/util/DisplayMetrics;->heightPixels:I
 
-    invoke-virtual {p1, v0, p2}, Lj3/o9;->n(Landroid/content/Context;Ljava/lang/String;)V
+    const/4 v2, 0x2
 
-    return-void
+    new-array v2, v2, [I
 
     .line 8
-    :pswitch_1
-    sget-object p1, Lh1/o;->B:Lh1/o;
+    new-instance v3, Ljava/util/HashMap;
 
-    iget-object p1, p1, Lh1/o;->x:Lj3/o9;
+    invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
     .line 9
-    iget-object v0, p0, Lj3/z2;->a:Landroid/content/Context;
+    invoke-virtual {v0, v2}, Landroid/view/View;->getLocationInWindow([I)V
 
-    invoke-virtual {p1, v0, p2}, Lj3/o9;->m(Landroid/content/Context;Ljava/lang/String;)V
-
-    return-void
+    const/4 v0, 0x0
 
     .line 10
-    :pswitch_2
-    sget-object p1, Lh1/o;->B:Lh1/o;
+    aget v0, v2, v0
 
-    iget-object p1, p1, Lh1/o;->x:Lj3/o9;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const-string v4, "xInPixels"
+
+    invoke-virtual {v3, v4, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v0, 0x1
 
     .line 11
-    iget-object v0, p0, Lj3/z2;->a:Landroid/content/Context;
+    aget v0, v2, v0
 
-    const/4 v1, 0x0
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const-string v2, "yInPixels"
+
+    invoke-virtual {v3, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 12
-    invoke-virtual {p1, v0, v2, p2, v1}, Lj3/o9;->c(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const-string v1, "windowWidthInPixels"
+
+    invoke-virtual {v3, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 13
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p2
+
+    const-string v0, "windowHeightInPixels"
+
+    invoke-virtual {v3, v0, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string p2, "locationReady"
+
+    .line 14
+    invoke-interface {p1, p2, v3}, Lj3/a4;->o(Ljava/lang/String;Ljava/util/Map;)V
 
     return-void
-
-    :sswitch_data_0
-    .sparse-switch
-        0x170bf -> :sswitch_2
-        0x170c1 -> :sswitch_1
-        0x170c7 -> :sswitch_0
-    .end sparse-switch
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

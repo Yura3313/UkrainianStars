@@ -1,6 +1,6 @@
-.class public abstract Ld/b$c;
-.super Landroid/graphics/drawable/Drawable$ConstantState;
-.source "DrawableContainer.java"
+.class public Ld/b$c;
+.super Ld/e$a;
+.source "AnimatedStateListDrawableCompat.java"
 
 
 # annotations
@@ -9,1364 +9,228 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x409
+    accessFlags = 0x9
     name = "c"
 .end annotation
 
 
 # instance fields
-.field public A:I
-
-.field public B:I
-
-.field public C:Z
-
-.field public D:Landroid/graphics/ColorFilter;
-
-.field public E:Z
-
-.field public F:Landroid/content/res/ColorStateList;
-
-.field public G:Landroid/graphics/PorterDuff$Mode;
-
-.field public H:Z
-
-.field public I:Z
-
-.field public final a:Ld/b;
-
-.field public b:Landroid/content/res/Resources;
-
-.field public c:I
-
-.field public d:I
-
-.field public e:I
-
-.field public f:Landroid/util/SparseArray;
+.field public K:Lm/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroid/util/SparseArray<",
-            "Landroid/graphics/drawable/Drawable$ConstantState;",
+            "Lm/d<",
+            "Ljava/lang/Long;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public g:[Landroid/graphics/drawable/Drawable;
-
-.field public h:I
-
-.field public i:Z
-
-.field public j:Z
-
-.field public k:Landroid/graphics/Rect;
-
-.field public l:Z
-
-.field public m:Z
-
-.field public n:I
-
-.field public o:I
-
-.field public p:I
-
-.field public q:I
-
-.field public r:Z
-
-.field public s:I
-
-.field public t:Z
-
-.field public u:Z
-
-.field public v:Z
-
-.field public w:Z
-
-.field public x:Z
-
-.field public y:Z
-
-.field public z:I
+.field public L:Lm/h;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lm/h<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
 .method public constructor <init>(Ld/b$c;Ld/b;Landroid/content/res/Resources;)V
-    .locals 4
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroid/graphics/drawable/Drawable$ConstantState;-><init>()V
+    invoke-direct {p0, p1, p2, p3}, Ld/e$a;-><init>(Ld/e$a;Ld/e;Landroid/content/res/Resources;)V
 
-    const/16 v0, 0xa0
+    if-eqz p1, :cond_0
 
     .line 2
-    iput v0, p0, Ld/b$c;->c:I
+    iget-object p2, p1, Ld/b$c;->K:Lm/d;
 
-    const/4 v1, 0x0
+    iput-object p2, p0, Ld/b$c;->K:Lm/d;
 
     .line 3
-    iput-boolean v1, p0, Ld/b$c;->i:Z
+    iget-object p1, p1, Ld/b$c;->L:Lm/h;
+
+    iput-object p1, p0, Ld/b$c;->L:Lm/h;
+
+    goto :goto_0
 
     .line 4
-    iput-boolean v1, p0, Ld/b$c;->l:Z
+    :cond_0
+    new-instance p1, Lm/d;
 
-    const/4 v2, 0x1
+    invoke-direct {p1}, Lm/d;-><init>()V
+
+    iput-object p1, p0, Ld/b$c;->K:Lm/d;
 
     .line 5
-    iput-boolean v2, p0, Ld/b$c;->x:Z
+    new-instance p1, Lm/h;
 
-    .line 6
-    iput v1, p0, Ld/b$c;->A:I
+    invoke-direct {p1}, Lm/h;-><init>()V
 
-    .line 7
-    iput v1, p0, Ld/b$c;->B:I
-
-    .line 8
-    iput-object p2, p0, Ld/b$c;->a:Ld/b;
-
-    if-eqz p3, :cond_0
-
-    move-object p2, p3
-
-    goto :goto_0
-
-    :cond_0
-    if-eqz p1, :cond_1
-
-    .line 9
-    iget-object p2, p1, Ld/b$c;->b:Landroid/content/res/Resources;
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p2, 0x0
+    iput-object p1, p0, Ld/b$c;->L:Lm/h;
 
     :goto_0
-    iput-object p2, p0, Ld/b$c;->b:Landroid/content/res/Resources;
-
-    if-eqz p1, :cond_2
-
-    .line 10
-    iget p2, p1, Ld/b$c;->c:I
-
-    goto :goto_1
-
-    :cond_2
-    const/4 p2, 0x0
-
-    :goto_1
-    sget v3, Ld/b;->r:I
-
-    if-nez p3, :cond_3
-
-    goto :goto_2
-
-    .line 11
-    :cond_3
-    invoke-virtual {p3}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
-
-    move-result-object p2
-
-    iget p2, p2, Landroid/util/DisplayMetrics;->densityDpi:I
-
-    :goto_2
-    if-nez p2, :cond_4
-
-    goto :goto_3
-
-    :cond_4
-    move v0, p2
-
-    .line 12
-    :goto_3
-    iput v0, p0, Ld/b$c;->c:I
-
-    if-eqz p1, :cond_c
-
-    .line 13
-    iget p2, p1, Ld/b$c;->d:I
-
-    iput p2, p0, Ld/b$c;->d:I
-
-    .line 14
-    iget p2, p1, Ld/b$c;->e:I
-
-    iput p2, p0, Ld/b$c;->e:I
-
-    .line 15
-    iput-boolean v2, p0, Ld/b$c;->v:Z
-
-    .line 16
-    iput-boolean v2, p0, Ld/b$c;->w:Z
-
-    .line 17
-    iget-boolean p2, p1, Ld/b$c;->i:Z
-
-    iput-boolean p2, p0, Ld/b$c;->i:Z
-
-    .line 18
-    iget-boolean p2, p1, Ld/b$c;->l:Z
-
-    iput-boolean p2, p0, Ld/b$c;->l:Z
-
-    .line 19
-    iget-boolean p2, p1, Ld/b$c;->x:Z
-
-    iput-boolean p2, p0, Ld/b$c;->x:Z
-
-    .line 20
-    iget-boolean p2, p1, Ld/b$c;->y:Z
-
-    iput-boolean p2, p0, Ld/b$c;->y:Z
-
-    .line 21
-    iget p2, p1, Ld/b$c;->z:I
-
-    iput p2, p0, Ld/b$c;->z:I
-
-    .line 22
-    iget p2, p1, Ld/b$c;->A:I
-
-    iput p2, p0, Ld/b$c;->A:I
-
-    .line 23
-    iget p2, p1, Ld/b$c;->B:I
-
-    iput p2, p0, Ld/b$c;->B:I
-
-    .line 24
-    iget-boolean p2, p1, Ld/b$c;->C:Z
-
-    iput-boolean p2, p0, Ld/b$c;->C:Z
-
-    .line 25
-    iget-object p2, p1, Ld/b$c;->D:Landroid/graphics/ColorFilter;
-
-    iput-object p2, p0, Ld/b$c;->D:Landroid/graphics/ColorFilter;
-
-    .line 26
-    iget-boolean p2, p1, Ld/b$c;->E:Z
-
-    iput-boolean p2, p0, Ld/b$c;->E:Z
-
-    .line 27
-    iget-object p2, p1, Ld/b$c;->F:Landroid/content/res/ColorStateList;
-
-    iput-object p2, p0, Ld/b$c;->F:Landroid/content/res/ColorStateList;
-
-    .line 28
-    iget-object p2, p1, Ld/b$c;->G:Landroid/graphics/PorterDuff$Mode;
-
-    iput-object p2, p0, Ld/b$c;->G:Landroid/graphics/PorterDuff$Mode;
-
-    .line 29
-    iget-boolean p2, p1, Ld/b$c;->H:Z
-
-    iput-boolean p2, p0, Ld/b$c;->H:Z
-
-    .line 30
-    iget-boolean p2, p1, Ld/b$c;->I:Z
-
-    iput-boolean p2, p0, Ld/b$c;->I:Z
-
-    .line 31
-    iget p2, p1, Ld/b$c;->c:I
-
-    if-ne p2, v0, :cond_6
-
-    .line 32
-    iget-boolean p2, p1, Ld/b$c;->j:Z
-
-    if-eqz p2, :cond_5
-
-    .line 33
-    new-instance p2, Landroid/graphics/Rect;
-
-    iget-object p3, p1, Ld/b$c;->k:Landroid/graphics/Rect;
-
-    invoke-direct {p2, p3}, Landroid/graphics/Rect;-><init>(Landroid/graphics/Rect;)V
-
-    iput-object p2, p0, Ld/b$c;->k:Landroid/graphics/Rect;
-
-    .line 34
-    iput-boolean v2, p0, Ld/b$c;->j:Z
-
-    .line 35
-    :cond_5
-    iget-boolean p2, p1, Ld/b$c;->m:Z
-
-    if-eqz p2, :cond_6
-
-    .line 36
-    iget p2, p1, Ld/b$c;->n:I
-
-    iput p2, p0, Ld/b$c;->n:I
-
-    .line 37
-    iget p2, p1, Ld/b$c;->o:I
-
-    iput p2, p0, Ld/b$c;->o:I
-
-    .line 38
-    iget p2, p1, Ld/b$c;->p:I
-
-    iput p2, p0, Ld/b$c;->p:I
-
-    .line 39
-    iget p2, p1, Ld/b$c;->q:I
-
-    iput p2, p0, Ld/b$c;->q:I
-
-    .line 40
-    iput-boolean v2, p0, Ld/b$c;->m:Z
-
-    .line 41
-    :cond_6
-    iget-boolean p2, p1, Ld/b$c;->r:Z
-
-    if-eqz p2, :cond_7
-
-    .line 42
-    iget p2, p1, Ld/b$c;->s:I
-
-    iput p2, p0, Ld/b$c;->s:I
-
-    .line 43
-    iput-boolean v2, p0, Ld/b$c;->r:Z
-
-    .line 44
-    :cond_7
-    iget-boolean p2, p1, Ld/b$c;->t:Z
-
-    if-eqz p2, :cond_8
-
-    .line 45
-    iget-boolean p2, p1, Ld/b$c;->u:Z
-
-    iput-boolean p2, p0, Ld/b$c;->u:Z
-
-    .line 46
-    iput-boolean v2, p0, Ld/b$c;->t:Z
-
-    .line 47
-    :cond_8
-    iget-object p2, p1, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
-
-    .line 48
-    array-length p3, p2
-
-    new-array p3, p3, [Landroid/graphics/drawable/Drawable;
-
-    iput-object p3, p0, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
-
-    .line 49
-    iget p3, p1, Ld/b$c;->h:I
-
-    iput p3, p0, Ld/b$c;->h:I
-
-    .line 50
-    iget-object p1, p1, Ld/b$c;->f:Landroid/util/SparseArray;
-
-    if-eqz p1, :cond_9
-
-    .line 51
-    invoke-virtual {p1}, Landroid/util/SparseArray;->clone()Landroid/util/SparseArray;
-
-    move-result-object p1
-
-    iput-object p1, p0, Ld/b$c;->f:Landroid/util/SparseArray;
-
-    goto :goto_4
-
-    .line 52
-    :cond_9
-    new-instance p1, Landroid/util/SparseArray;
-
-    iget p3, p0, Ld/b$c;->h:I
-
-    invoke-direct {p1, p3}, Landroid/util/SparseArray;-><init>(I)V
-
-    iput-object p1, p0, Ld/b$c;->f:Landroid/util/SparseArray;
-
-    .line 53
-    :goto_4
-    iget p1, p0, Ld/b$c;->h:I
-
-    :goto_5
-    if-ge v1, p1, :cond_d
-
-    .line 54
-    aget-object p3, p2, v1
-
-    if-eqz p3, :cond_b
-
-    .line 55
-    aget-object p3, p2, v1
-
-    invoke-virtual {p3}, Landroid/graphics/drawable/Drawable;->getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
-
-    move-result-object p3
-
-    if-eqz p3, :cond_a
-
-    .line 56
-    iget-object v0, p0, Ld/b$c;->f:Landroid/util/SparseArray;
-
-    invoke-virtual {v0, v1, p3}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
-
-    goto :goto_6
-
-    .line 57
-    :cond_a
-    iget-object p3, p0, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
-
-    aget-object v0, p2, v1
-
-    aput-object v0, p3, v1
-
-    :cond_b
-    :goto_6
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_5
-
-    :cond_c
-    const/16 p1, 0xa
-
-    new-array p1, p1, [Landroid/graphics/drawable/Drawable;
-
-    .line 58
-    iput-object p1, p0, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
-
-    .line 59
-    iput v1, p0, Ld/b$c;->h:I
-
-    :cond_d
     return-void
+.end method
+
+.method public static p(II)J
+    .locals 2
+
+    int-to-long v0, p0
+
+    const/16 p0, 0x20
+
+    shl-long/2addr v0, p0
+
+    int-to-long p0, p1
+
+    or-long/2addr p0, v0
+
+    return-wide p0
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/graphics/drawable/Drawable;)I
-    .locals 4
+.method public k()V
+    .locals 1
 
     .line 1
-    iget v0, p0, Ld/b$c;->h:I
+    iget-object v0, p0, Ld/b$c;->K:Lm/d;
+
+    invoke-virtual {v0}, Lm/d;->c()Lm/d;
+
+    move-result-object v0
+
+    iput-object v0, p0, Ld/b$c;->K:Lm/d;
 
     .line 2
-    iget-object v1, p0, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Ld/b$c;->L:Lm/h;
 
-    array-length v1, v1
+    invoke-virtual {v0}, Lm/h;->b()Lm/h;
 
-    if-lt v0, v1, :cond_0
+    move-result-object v0
 
-    add-int/lit8 v1, v0, 0xa
+    iput-object v0, p0, Ld/b$c;->L:Lm/h;
 
-    .line 3
-    invoke-virtual {p0, v0, v1}, Ld/b$c;->j(II)V
-
-    .line 4
-    :cond_0
-    invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
-
-    .line 5
-    invoke-virtual {p1, v1, v2}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
-
-    .line 6
-    iget-object v3, p0, Ld/b$c;->a:Ld/b;
-
-    invoke-virtual {p1, v3}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
-
-    .line 7
-    iget-object v3, p0, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
-
-    aput-object p1, v3, v0
-
-    .line 8
-    iget v3, p0, Ld/b$c;->h:I
-
-    add-int/2addr v3, v2
-
-    iput v3, p0, Ld/b$c;->h:I
-
-    .line 9
-    iget v2, p0, Ld/b$c;->e:I
-
-    invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getChangingConfigurations()I
-
-    move-result p1
-
-    or-int/2addr p1, v2
-
-    iput p1, p0, Ld/b$c;->e:I
-
-    .line 10
-    iput-boolean v1, p0, Ld/b$c;->r:Z
-
-    .line 11
-    iput-boolean v1, p0, Ld/b$c;->t:Z
-
-    const/4 p1, 0x0
-
-    .line 12
-    iput-object p1, p0, Ld/b$c;->k:Landroid/graphics/Rect;
-
-    .line 13
-    iput-boolean v1, p0, Ld/b$c;->j:Z
-
-    .line 14
-    iput-boolean v1, p0, Ld/b$c;->m:Z
-
-    .line 15
-    iput-boolean v1, p0, Ld/b$c;->v:Z
-
-    return v0
-.end method
-
-.method public final b(Landroid/content/res/Resources$Theme;)V
-    .locals 5
-
-    if-eqz p1, :cond_2
-
-    .line 1
-    invoke-virtual {p0}, Ld/b$c;->e()V
-
-    .line 2
-    iget v0, p0, Ld/b$c;->h:I
-
-    .line 3
-    iget-object v1, p0, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
-
-    const/4 v2, 0x0
-
-    :goto_0
-    if-ge v2, v0, :cond_1
-
-    .line 4
-    aget-object v3, v1, v2
-
-    if-eqz v3, :cond_0
-
-    aget-object v3, v1, v2
-
-    invoke-virtual {v3}, Landroid/graphics/drawable/Drawable;->canApplyTheme()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    .line 5
-    aget-object v3, v1, v2
-
-    invoke-virtual {v3, p1}, Landroid/graphics/drawable/Drawable;->applyTheme(Landroid/content/res/Resources$Theme;)V
-
-    .line 6
-    iget v3, p0, Ld/b$c;->e:I
-
-    aget-object v4, v1, v2
-
-    invoke-virtual {v4}, Landroid/graphics/drawable/Drawable;->getChangingConfigurations()I
-
-    move-result v4
-
-    or-int/2addr v3, v4
-
-    iput v3, p0, Ld/b$c;->e:I
-
-    :cond_0
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    .line 7
-    :cond_1
-    invoke-virtual {p1}, Landroid/content/res/Resources$Theme;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Ld/b$c;->m(Landroid/content/res/Resources;)V
-
-    :cond_2
     return-void
 .end method
 
-.method public declared-synchronized c()Z
-    .locals 6
-
-    monitor-enter p0
+.method public newDrawable()Landroid/graphics/drawable/Drawable;
+    .locals 2
 
     .line 1
-    :try_start_0
-    iget-boolean v0, p0, Ld/b$c;->v:Z
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iget-boolean v0, p0, Ld/b$c;->w:Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return v0
-
-    .line 3
-    :cond_0
-    :try_start_1
-    invoke-virtual {p0}, Ld/b$c;->e()V
-
-    const/4 v0, 0x1
-
-    .line 4
-    iput-boolean v0, p0, Ld/b$c;->v:Z
-
-    .line 5
-    iget v1, p0, Ld/b$c;->h:I
-
-    .line 6
-    iget-object v2, p0, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
-
-    const/4 v3, 0x0
-
-    const/4 v4, 0x0
-
-    :goto_0
-    if-ge v4, v1, :cond_2
-
-    .line 7
-    aget-object v5, v2, v4
-
-    invoke-virtual {v5}, Landroid/graphics/drawable/Drawable;->getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
-
-    move-result-object v5
-
-    if-nez v5, :cond_1
-
-    .line 8
-    iput-boolean v3, p0, Ld/b$c;->w:Z
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 9
-    monitor-exit p0
-
-    return v3
-
-    :cond_1
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_0
-
-    .line 10
-    :cond_2
-    :try_start_2
-    iput-boolean v0, p0, Ld/b$c;->w:Z
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    .line 11
-    monitor-exit p0
-
-    return v0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    goto :goto_2
-
-    :goto_1
-    throw v0
-
-    :goto_2
-    goto :goto_1
-.end method
-
-.method public canApplyTheme()Z
-    .locals 6
-
-    .line 1
-    iget v0, p0, Ld/b$c;->h:I
-
-    .line 2
-    iget-object v1, p0, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    :goto_0
-    if-ge v3, v0, :cond_2
-
-    .line 3
-    aget-object v4, v1, v3
-
-    const/4 v5, 0x1
-
-    if-eqz v4, :cond_0
-
-    .line 4
-    invoke-virtual {v4}, Landroid/graphics/drawable/Drawable;->canApplyTheme()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_1
-
-    return v5
-
-    .line 5
-    :cond_0
-    iget-object v4, p0, Ld/b$c;->f:Landroid/util/SparseArray;
-
-    invoke-virtual {v4, v3}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Landroid/graphics/drawable/Drawable$ConstantState;
-
-    if-eqz v4, :cond_1
-
-    .line 6
-    invoke-virtual {v4}, Landroid/graphics/drawable/Drawable$ConstantState;->canApplyTheme()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_1
-
-    return v5
-
-    :cond_1
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_0
-
-    :cond_2
-    return v2
-.end method
-
-.method public d()V
-    .locals 6
-
-    const/4 v0, 0x1
-
-    .line 1
-    iput-boolean v0, p0, Ld/b$c;->m:Z
-
-    .line 2
-    invoke-virtual {p0}, Ld/b$c;->e()V
-
-    .line 3
-    iget v0, p0, Ld/b$c;->h:I
-
-    .line 4
-    iget-object v1, p0, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
-
-    const/4 v2, -0x1
-
-    .line 5
-    iput v2, p0, Ld/b$c;->o:I
-
-    iput v2, p0, Ld/b$c;->n:I
-
-    const/4 v2, 0x0
-
-    .line 6
-    iput v2, p0, Ld/b$c;->q:I
-
-    iput v2, p0, Ld/b$c;->p:I
-
-    :goto_0
-    if-ge v2, v0, :cond_4
-
-    .line 7
-    aget-object v3, v1, v2
-
-    .line 8
-    invoke-virtual {v3}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
-
-    move-result v4
-
-    .line 9
-    iget v5, p0, Ld/b$c;->n:I
-
-    if-le v4, v5, :cond_0
-
-    iput v4, p0, Ld/b$c;->n:I
-
-    .line 10
-    :cond_0
-    invoke-virtual {v3}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
-
-    move-result v4
-
-    .line 11
-    iget v5, p0, Ld/b$c;->o:I
-
-    if-le v4, v5, :cond_1
-
-    iput v4, p0, Ld/b$c;->o:I
-
-    .line 12
-    :cond_1
-    invoke-virtual {v3}, Landroid/graphics/drawable/Drawable;->getMinimumWidth()I
-
-    move-result v4
-
-    .line 13
-    iget v5, p0, Ld/b$c;->p:I
-
-    if-le v4, v5, :cond_2
-
-    iput v4, p0, Ld/b$c;->p:I
-
-    .line 14
-    :cond_2
-    invoke-virtual {v3}, Landroid/graphics/drawable/Drawable;->getMinimumHeight()I
-
-    move-result v3
-
-    .line 15
-    iget v4, p0, Ld/b$c;->q:I
-
-    if-le v3, v4, :cond_3
-
-    iput v3, p0, Ld/b$c;->q:I
-
-    :cond_3
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_4
-    return-void
-.end method
-
-.method public final e()V
-    .locals 7
-
-    .line 1
-    iget-object v0, p0, Ld/b$c;->f:Landroid/util/SparseArray;
-
-    if-eqz v0, :cond_2
-
-    .line 2
-    invoke-virtual {v0}, Landroid/util/SparseArray;->size()I
-
-    move-result v0
+    new-instance v0, Ld/b;
 
     const/4 v1, 0x0
 
-    :goto_0
-    if-ge v1, v0, :cond_1
+    invoke-direct {v0, p0, v1}, Ld/b;-><init>(Ld/b$c;Landroid/content/res/Resources;)V
 
-    .line 3
-    iget-object v2, p0, Ld/b$c;->f:Landroid/util/SparseArray;
+    return-object v0
+.end method
 
-    invoke-virtual {v2, v1}, Landroid/util/SparseArray;->keyAt(I)I
+.method public newDrawable(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
+    .locals 1
 
-    move-result v2
+    .line 2
+    new-instance v0, Ld/b;
 
-    .line 4
-    iget-object v3, p0, Ld/b$c;->f:Landroid/util/SparseArray;
+    invoke-direct {v0, p0, p1}, Ld/b;-><init>(Ld/b$c;Landroid/content/res/Resources;)V
 
-    invoke-virtual {v3, v1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+    return-object v0
+.end method
 
-    move-result-object v3
+.method public o(IILandroid/graphics/drawable/Drawable;Z)I
+    .locals 9
 
-    check-cast v3, Landroid/graphics/drawable/Drawable$ConstantState;
+    .line 1
+    invoke-super {p0, p3}, Ld/c$c;->a(Landroid/graphics/drawable/Drawable;)I
 
-    .line 5
-    iget-object v4, p0, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
+    move-result p3
 
-    iget-object v5, p0, Ld/b$c;->b:Landroid/content/res/Resources;
+    .line 2
+    invoke-static {p1, p2}, Ld/b$c;->p(II)J
 
-    invoke-virtual {v3, v5}, Landroid/graphics/drawable/Drawable$ConstantState;->newDrawable(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
+    move-result-wide v0
 
-    move-result-object v3
+    if-eqz p4, :cond_0
 
-    .line 6
-    sget v5, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v6, 0x17
-
-    if-lt v5, v6, :cond_0
-
-    .line 7
-    iget v5, p0, Ld/b$c;->z:I
-
-    invoke-virtual {v3, v5}, Landroid/graphics/drawable/Drawable;->setLayoutDirection(I)Z
-
-    .line 8
-    :cond_0
-    invoke-virtual {v3}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
-
-    move-result-object v3
-
-    .line 9
-    iget-object v5, p0, Ld/b$c;->a:Ld/b;
-
-    invoke-virtual {v3, v5}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
-
-    .line 10
-    aput-object v3, v4, v2
-
-    add-int/lit8 v1, v1, 0x1
+    const-wide v2, 0x200000000L
 
     goto :goto_0
 
+    :cond_0
+    const-wide/16 v2, 0x0
+
+    .line 3
+    :goto_0
+    iget-object v4, p0, Ld/b$c;->K:Lm/d;
+
+    int-to-long v5, p3
+
+    or-long v7, v5, v2
+
+    invoke-static {v7, v8}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v7
+
+    invoke-virtual {v4, v0, v1, v7}, Lm/d;->a(JLjava/lang/Object;)V
+
+    if-eqz p4, :cond_1
+
+    .line 4
+    invoke-static {p2, p1}, Ld/b$c;->p(II)J
+
+    move-result-wide p1
+
+    .line 5
+    iget-object p4, p0, Ld/b$c;->K:Lm/d;
+
+    const-wide v0, 0x100000000L
+
+    or-long/2addr v0, v5
+
+    or-long/2addr v0, v2
+
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v0
+
+    invoke-virtual {p4, p1, p2, v0}, Lm/d;->a(JLjava/lang/Object;)V
+
     :cond_1
+    return p3
+.end method
+
+.method public q(I)I
+    .locals 2
+
     const/4 v0, 0x0
 
-    .line 11
-    iput-object v0, p0, Ld/b$c;->f:Landroid/util/SparseArray;
-
-    :cond_2
-    return-void
-.end method
-
-.method public final f()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
-
-    array-length v0, v0
-
-    return v0
-.end method
-
-.method public final g(I)Landroid/graphics/drawable/Drawable;
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
-
-    aget-object v0, v0, p1
-
-    if-eqz v0, :cond_0
-
-    return-object v0
-
-    .line 2
-    :cond_0
-    iget-object v0, p0, Ld/b$c;->f:Landroid/util/SparseArray;
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_3
-
-    .line 3
-    invoke-virtual {v0, p1}, Landroid/util/SparseArray;->indexOfKey(I)I
-
-    move-result v0
-
-    if-ltz v0, :cond_3
-
-    .line 4
-    iget-object v2, p0, Ld/b$c;->f:Landroid/util/SparseArray;
-
-    invoke-virtual {v2, v0}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Landroid/graphics/drawable/Drawable$ConstantState;
-
-    .line 5
-    iget-object v3, p0, Ld/b$c;->b:Landroid/content/res/Resources;
-
-    invoke-virtual {v2, v3}, Landroid/graphics/drawable/Drawable$ConstantState;->newDrawable(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v2
-
-    .line 6
-    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v4, 0x17
-
-    if-lt v3, v4, :cond_1
-
-    .line 7
-    iget v3, p0, Ld/b$c;->z:I
-
-    invoke-virtual {v2, v3}, Landroid/graphics/drawable/Drawable;->setLayoutDirection(I)Z
-
-    .line 8
-    :cond_1
-    invoke-virtual {v2}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
-
-    move-result-object v2
-
-    .line 9
-    iget-object v3, p0, Ld/b$c;->a:Ld/b;
-
-    invoke-virtual {v2, v3}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
-
-    .line 10
-    iget-object v3, p0, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
-
-    aput-object v2, v3, p1
-
-    .line 11
-    iget-object p1, p0, Ld/b$c;->f:Landroid/util/SparseArray;
-
-    invoke-virtual {p1, v0}, Landroid/util/SparseArray;->removeAt(I)V
-
-    .line 12
-    iget-object p1, p0, Ld/b$c;->f:Landroid/util/SparseArray;
-
-    invoke-virtual {p1}, Landroid/util/SparseArray;->size()I
-
-    move-result p1
-
-    if-nez p1, :cond_2
-
-    .line 13
-    iput-object v1, p0, Ld/b$c;->f:Landroid/util/SparseArray;
-
-    :cond_2
-    return-object v2
-
-    :cond_3
-    return-object v1
-.end method
-
-.method public getChangingConfigurations()I
-    .locals 2
-
-    .line 1
-    iget v0, p0, Ld/b$c;->d:I
-
-    iget v1, p0, Ld/b$c;->e:I
-
-    or-int/2addr v0, v1
-
-    return v0
-.end method
-
-.method public final h()Landroid/graphics/Rect;
-    .locals 8
-
-    .line 1
-    iget-boolean v0, p0, Ld/b$c;->i:Z
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
-    return-object v1
-
-    .line 2
-    :cond_0
-    iget-object v0, p0, Ld/b$c;->k:Landroid/graphics/Rect;
-
-    if-nez v0, :cond_8
-
-    iget-boolean v2, p0, Ld/b$c;->j:Z
-
-    if-eqz v2, :cond_1
-
-    goto :goto_1
-
-    .line 3
-    :cond_1
-    invoke-virtual {p0}, Ld/b$c;->e()V
-
-    .line 4
-    new-instance v0, Landroid/graphics/Rect;
-
-    invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
-
-    .line 5
-    iget v2, p0, Ld/b$c;->h:I
-
-    .line 6
-    iget-object v3, p0, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    :goto_0
-    if-ge v5, v2, :cond_7
-
-    .line 7
-    aget-object v6, v3, v5
-
-    invoke-virtual {v6, v0}, Landroid/graphics/drawable/Drawable;->getPadding(Landroid/graphics/Rect;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_6
-
-    if-nez v1, :cond_2
-
-    .line 8
-    new-instance v1, Landroid/graphics/Rect;
-
-    invoke-direct {v1, v4, v4, v4, v4}, Landroid/graphics/Rect;-><init>(IIII)V
-
-    .line 9
-    :cond_2
-    iget v6, v0, Landroid/graphics/Rect;->left:I
-
-    iget v7, v1, Landroid/graphics/Rect;->left:I
-
-    if-le v6, v7, :cond_3
-
-    iput v6, v1, Landroid/graphics/Rect;->left:I
-
-    .line 10
-    :cond_3
-    iget v6, v0, Landroid/graphics/Rect;->top:I
-
-    iget v7, v1, Landroid/graphics/Rect;->top:I
-
-    if-le v6, v7, :cond_4
-
-    iput v6, v1, Landroid/graphics/Rect;->top:I
-
-    .line 11
-    :cond_4
-    iget v6, v0, Landroid/graphics/Rect;->right:I
-
-    iget v7, v1, Landroid/graphics/Rect;->right:I
-
-    if-le v6, v7, :cond_5
-
-    iput v6, v1, Landroid/graphics/Rect;->right:I
-
-    .line 12
-    :cond_5
-    iget v6, v0, Landroid/graphics/Rect;->bottom:I
-
-    iget v7, v1, Landroid/graphics/Rect;->bottom:I
-
-    if-le v6, v7, :cond_6
-
-    iput v6, v1, Landroid/graphics/Rect;->bottom:I
-
-    :cond_6
-    add-int/lit8 v5, v5, 0x1
+    if-gez p1, :cond_0
 
     goto :goto_0
 
-    :cond_7
-    const/4 v0, 0x1
-
-    .line 13
-    iput-boolean v0, p0, Ld/b$c;->j:Z
-
-    .line 14
-    iput-object v1, p0, Ld/b$c;->k:Landroid/graphics/Rect;
-
-    return-object v1
-
-    :cond_8
-    :goto_1
-    return-object v0
-.end method
-
-.method public final i()I
-    .locals 6
-
     .line 1
-    iget-boolean v0, p0, Ld/b$c;->r:Z
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iget v0, p0, Ld/b$c;->s:I
-
-    return v0
-
-    .line 3
     :cond_0
-    invoke-virtual {p0}, Ld/b$c;->e()V
+    iget-object v1, p0, Ld/b$c;->L:Lm/h;
 
-    .line 4
-    iget v0, p0, Ld/b$c;->h:I
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 5
-    iget-object v1, p0, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
+    move-result-object v0
 
-    if-lez v0, :cond_1
-
-    const/4 v2, 0x0
-
-    .line 6
-    aget-object v2, v1, v2
-
-    invoke-virtual {v2}, Landroid/graphics/drawable/Drawable;->getOpacity()I
-
-    move-result v2
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v2, -0x2
-
-    :goto_0
-    const/4 v3, 0x1
-
-    const/4 v4, 0x1
-
-    :goto_1
-    if-ge v4, v0, :cond_2
-
-    .line 7
-    aget-object v5, v1, v4
-
-    invoke-virtual {v5}, Landroid/graphics/drawable/Drawable;->getOpacity()I
-
-    move-result v5
-
-    invoke-static {v2, v5}, Landroid/graphics/drawable/Drawable;->resolveOpacity(II)I
-
-    move-result v2
-
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_1
-
-    .line 8
-    :cond_2
-    iput v2, p0, Ld/b$c;->s:I
-
-    .line 9
-    iput-boolean v3, p0, Ld/b$c;->r:Z
-
-    return v2
-.end method
-
-.method public j(II)V
-    .locals 2
-
-    .line 1
-    new-array p2, p2, [Landroid/graphics/drawable/Drawable;
-
-    .line 2
-    iget-object v0, p0, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
-
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1, p2, v1, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 3
-    iput-object p2, p0, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
-
-    return-void
-.end method
-
-.method public abstract k()V
-.end method
-
-.method public final l(II)Z
-    .locals 7
-
-    .line 1
-    iget v0, p0, Ld/b$c;->h:I
-
-    .line 2
-    iget-object v1, p0, Ld/b$c;->g:[Landroid/graphics/drawable/Drawable;
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    const/4 v4, 0x0
-
-    :goto_0
-    if-ge v3, v0, :cond_2
-
-    .line 3
-    aget-object v5, v1, v3
-
-    if-eqz v5, :cond_1
-
-    .line 4
-    sget v5, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v6, 0x17
-
-    if-lt v5, v6, :cond_0
-
-    .line 5
-    aget-object v5, v1, v3
-
-    invoke-virtual {v5, p1}, Landroid/graphics/drawable/Drawable;->setLayoutDirection(I)Z
-
-    move-result v5
-
-    goto :goto_1
-
-    :cond_0
-    const/4 v5, 0x0
-
-    :goto_1
-    if-ne v3, p2, :cond_1
-
-    move v4, v5
-
-    :cond_1
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_0
-
-    .line 6
-    :cond_2
-    iput p1, p0, Ld/b$c;->z:I
-
-    return v4
-.end method
-
-.method public final m(Landroid/content/res/Resources;)V
-    .locals 1
-
-    if-eqz p1, :cond_1
-
-    .line 1
-    iput-object p1, p0, Ld/b$c;->b:Landroid/content/res/Resources;
-
-    .line 2
-    sget v0, Ld/b;->r:I
-
-    .line 3
-    invoke-virtual {p1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+    invoke-virtual {v1, p1, v0}, Lm/h;->d(ILjava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    iget p1, p1, Landroid/util/DisplayMetrics;->densityDpi:I
+    check-cast p1, Ljava/lang/Integer;
 
-    if-nez p1, :cond_0
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
-    const/16 p1, 0xa0
+    move-result v0
 
-    .line 4
-    :cond_0
-    iget v0, p0, Ld/b$c;->c:I
-
-    .line 5
-    iput p1, p0, Ld/b$c;->c:I
-
-    if-eq v0, p1, :cond_1
-
-    const/4 p1, 0x0
-
-    .line 6
-    iput-boolean p1, p0, Ld/b$c;->m:Z
-
-    .line 7
-    iput-boolean p1, p0, Ld/b$c;->j:Z
-
-    :cond_1
-    return-void
+    :goto_0
+    return v0
 .end method

@@ -1,52 +1,46 @@
 .class public final Lw5/z;
 .super Ljava/lang/Object;
 
-# interfaces
-.implements Ljava/lang/Runnable;
 
-
-# instance fields
-.field public final synthetic a:Lw5/w;
-
-.field public final synthetic b:Lw5/y;
+# static fields
+.field public static final a:Ljava/util/concurrent/Executor;
 
 
 # direct methods
-.method public constructor <init>(Lw5/y;Lw5/w;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    iput-object p1, p0, Lw5/z;->b:Lw5/y;
+    sget-object v0, Lw5/b0;->g:Ljava/util/concurrent/Executor;
 
-    iput-object p2, p0, Lw5/z;->a:Lw5/w;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sput-object v0, Lw5/z;->a:Ljava/util/concurrent/Executor;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final run()V
-    .locals 2
+.method public static a()Ljava/util/concurrent/Executor;
+    .locals 9
 
     .line 1
-    iget-object v0, p0, Lw5/z;->b:Lw5/y;
+    new-instance v8, Ljava/util/concurrent/ThreadPoolExecutor;
 
-    .line 2
-    iget-object v0, v0, Lw5/y;->a:Lcom/google/firebase/iid/zzb;
+    sget-object v5, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
-    .line 3
-    iget-object v1, p0, Lw5/z;->a:Lw5/w;
+    new-instance v6, Ljava/util/concurrent/LinkedBlockingQueue;
 
-    iget-object v1, v1, Lw5/w;->a:Landroid/content/Intent;
+    invoke-direct {v6}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
 
-    invoke-virtual {v0, v1}, Lcom/google/firebase/iid/zzb;->zzd(Landroid/content/Intent;)V
+    sget-object v7, Lw5/a0;->a:Ljava/util/concurrent/ThreadFactory;
 
-    .line 4
-    iget-object v0, p0, Lw5/z;->a:Lw5/w;
+    const/4 v1, 0x0
 
-    invoke-virtual {v0}, Lw5/w;->a()V
+    const/4 v2, 0x1
 
-    return-void
+    const-wide/16 v3, 0x1e
+
+    move-object v0, v8
+
+    invoke-direct/range {v0 .. v7}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
+
+    return-object v8
 .end method

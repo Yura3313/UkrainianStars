@@ -1,50 +1,63 @@
-.class public interface abstract Lj3/fi;
-.super Ljava/lang/Object;
+.class public final Lj3/fi;
+.super Lj3/ci;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
+# annotations
+.annotation build Landroid/annotation/TargetApi;
+    value = 0x15
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Lj3/gh;Lcom/google/android/gms/internal/ads/q7;Z)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2, p3}, Lj3/ci;-><init>(Lj3/gh;Lcom/google/android/gms/internal/ads/q7;Z)V
+
+    return-void
+.end method
+
+
 # virtual methods
-.method public abstract a()V
-.end method
+.method public final shouldInterceptRequest(Landroid/webkit/WebView;Landroid/webkit/WebResourceRequest;)Landroid/webkit/WebResourceResponse;
+    .locals 1
 
-.method public abstract b()V
-.end method
+    if-eqz p2, :cond_1
 
-.method public abstract c()V
-.end method
+    .line 1
+    invoke-interface {p2}, Landroid/webkit/WebResourceRequest;->getUrl()Landroid/net/Uri;
 
-.method public abstract d(Lj3/hi;)V
-.end method
+    move-result-object v0
 
-.method public abstract e(II)V
-.end method
+    if-nez v0, :cond_0
 
-.method public abstract f(Lj3/ii;)V
-.end method
+    goto :goto_0
 
-.method public abstract g()Lh1/a;
-.end method
+    .line 2
+    :cond_0
+    invoke-interface {p2}, Landroid/webkit/WebResourceRequest;->getUrl()Landroid/net/Uri;
 
-.method public abstract h(Z)V
-.end method
+    move-result-object v0
 
-.method public abstract i()Lj3/i9;
-.end method
+    invoke-virtual {v0}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
-.method public abstract j()Z
-.end method
+    move-result-object v0
 
-.method public abstract k(IIZ)V
-.end method
+    invoke-interface {p2}, Landroid/webkit/WebResourceRequest;->getRequestHeaders()Ljava/util/Map;
 
-.method public abstract l(Lj3/d41;Lj3/c2;Li1/k;Lj3/e2;Li1/n;ZLj3/a3;Lh1/a;Lj3/j5;Lj3/i9;)V
-.end method
+    move-result-object p2
 
-.method public abstract m(Z)V
-.end method
+    invoke-virtual {p0, p1, v0, p2}, Lj3/ci;->B(Landroid/webkit/WebView;Ljava/lang/String;Ljava/util/Map;)Landroid/webkit/WebResourceResponse;
 
-.method public abstract n()V
-.end method
+    move-result-object p1
 
-.method public abstract o()V
+    return-object p1
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x0
+
+    return-object p1
 .end method

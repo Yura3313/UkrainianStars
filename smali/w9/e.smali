@@ -19,7 +19,7 @@
 
 .field public f:J
 
-.field public g:Ly9/b;
+.field public g:Lx9/b;
 
 .field public h:Ljava/util/concurrent/ThreadPoolExecutor;
 
@@ -38,21 +38,17 @@
     .line 2
     iput v0, p0, Lw9/e;->a:I
 
+    const/4 v0, 0x1
+
     .line 3
-    sget-object v0, Lx9/a;->FATAL:Lx9/a;
-
-    invoke-virtual {v0}, Lx9/a;->getValue()I
-
-    move-result v0
-
     iput v0, p0, Lw9/e;->b:I
 
     .line 4
-    new-instance v0, Ly9/a;
+    new-instance v0, Lx9/a;
 
-    invoke-direct {v0, p1, p2}, Ly9/a;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v0, p1, p2}, Lx9/a;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lw9/e;->g:Ly9/b;
+    iput-object v0, p0, Lw9/e;->g:Lx9/b;
 
     .line 5
     new-instance p1, Ljava/text/SimpleDateFormat;
@@ -80,8 +76,8 @@
 
 
 # virtual methods
-.method public varargs a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
-    .locals 1
+.method public varargs a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Ly9/a;)V
+    .locals 0
 
     .line 1
     iget-boolean p1, p0, Lw9/e;->d:Z
@@ -91,7 +87,41 @@
     .line 2
     iget p1, p0, Lw9/e;->a:I
 
+    const/4 p2, 0x2
+
+    if-gt p1, p2, :cond_0
+
+    .line 3
+    invoke-virtual {p0, p3}, Lw9/e;->m([Ljava/lang/Throwable;)Ljava/lang/String;
+
+    .line 4
+    invoke-virtual {p0, p4}, Lw9/e;->l([Ly9/a;)Ljava/lang/String;
+
+    :cond_0
+    return-void
+.end method
+
+.method public b(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lw9/e;->b:I
+
+    return-void
+.end method
+
+.method public varargs c(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Ly9/a;)V
+    .locals 1
+
+    .line 1
+    iget-boolean p1, p0, Lw9/e;->d:Z
+
     const/4 v0, 0x4
+
+    if-eqz p1, :cond_0
+
+    .line 2
+    iget p1, p0, Lw9/e;->a:I
 
     if-gt p1, v0, :cond_0
 
@@ -101,7 +131,7 @@
     move-result-object p1
 
     .line 4
-    invoke-virtual {p0, p4}, Lw9/e;->l([Lz9/a;)Ljava/lang/String;
+    invoke-virtual {p0, p4}, Lw9/e;->l([Ly9/a;)Ljava/lang/String;
 
     goto :goto_0
 
@@ -110,9 +140,7 @@
 
     .line 5
     :goto_0
-    sget-object v0, Lx9/a;->WARN:Lx9/a;
-
-    invoke-virtual {p0, v0}, Lw9/e;->o(Lx9/a;)Z
+    invoke-virtual {p0, v0}, Lw9/e;->o(I)Z
 
     move-result v0
 
@@ -129,13 +157,13 @@
     const-string p3, "WARN"
 
     .line 7
-    invoke-virtual {p0, p3, p2, p1, p4}, Lw9/e;->n(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Lz9/a;)Ljava/util/concurrent/Future;
+    invoke-virtual {p0, p3, p2, p1, p4}, Lw9/e;->n(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ly9/a;)Ljava/util/concurrent/Future;
 
     :cond_2
     return-void
 .end method
 
-.method public varargs b(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+.method public varargs d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Ly9/a;)V
     .locals 1
 
     .line 1
@@ -156,18 +184,18 @@
     move-result-object p1
 
     .line 4
-    invoke-virtual {p0, p4}, Lw9/e;->l([Lz9/a;)Ljava/lang/String;
+    invoke-virtual {p0, p4}, Lw9/e;->l([Ly9/a;)Ljava/lang/String;
 
     goto :goto_0
 
     :cond_0
     const/4 p1, 0x0
 
-    .line 5
     :goto_0
-    sget-object v0, Lx9/a;->FATAL:Lx9/a;
+    const/4 v0, 0x2
 
-    invoke-virtual {p0, v0}, Lw9/e;->o(Lx9/a;)Z
+    .line 5
+    invoke-virtual {p0, v0}, Lw9/e;->o(I)Z
 
     move-result v0
 
@@ -184,7 +212,7 @@
     const-string p3, "FATAL"
 
     .line 7
-    invoke-virtual {p0, p3, p2, p1, p4}, Lw9/e;->n(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Lz9/a;)Ljava/util/concurrent/Future;
+    invoke-virtual {p0, p3, p2, p1, p4}, Lw9/e;->n(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ly9/a;)Ljava/util/concurrent/Future;
 
     move-result-object p1
 
@@ -209,7 +237,7 @@
     return-void
 .end method
 
-.method public varargs c(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+.method public varargs e(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Ly9/a;)V
     .locals 1
 
     .line 1
@@ -230,18 +258,18 @@
     move-result-object p1
 
     .line 4
-    invoke-virtual {p0, p4}, Lw9/e;->l([Lz9/a;)Ljava/lang/String;
+    invoke-virtual {p0, p4}, Lw9/e;->l([Ly9/a;)Ljava/lang/String;
 
     goto :goto_0
 
     :cond_0
     const/4 p1, 0x0
 
-    .line 5
     :goto_0
-    sget-object v0, Lx9/a;->ERROR:Lx9/a;
+    const/4 v0, 0x3
 
-    invoke-virtual {p0, v0}, Lw9/e;->o(Lx9/a;)Z
+    .line 5
+    invoke-virtual {p0, v0}, Lw9/e;->o(I)Z
 
     move-result v0
 
@@ -264,43 +292,9 @@
     const-string p3, "ERROR"
 
     .line 7
-    invoke-virtual {p0, p3, p2, p1, p4}, Lw9/e;->n(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Lz9/a;)Ljava/util/concurrent/Future;
+    invoke-virtual {p0, p3, p2, p1, p4}, Lw9/e;->n(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ly9/a;)Ljava/util/concurrent/Future;
 
     :cond_2
-    return-void
-.end method
-
-.method public varargs d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
-    .locals 0
-
-    .line 1
-    iget-boolean p1, p0, Lw9/e;->d:Z
-
-    if-eqz p1, :cond_0
-
-    .line 2
-    iget p1, p0, Lw9/e;->a:I
-
-    const/4 p2, 0x2
-
-    if-gt p1, p2, :cond_0
-
-    .line 3
-    invoke-virtual {p0, p3}, Lw9/e;->m([Ljava/lang/Throwable;)Ljava/lang/String;
-
-    .line 4
-    invoke-virtual {p0, p4}, Lw9/e;->l([Lz9/a;)Ljava/lang/String;
-
-    :cond_0
-    return-void
-.end method
-
-.method public e(I)V
-    .locals 0
-
-    .line 1
-    iput p1, p0, Lw9/e;->b:I
-
     return-void
 .end method
 
@@ -426,20 +420,20 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lw9/e;->g:Ly9/b;
+    iget-object v0, p0, Lw9/e;->g:Lx9/b;
 
-    check-cast v0, Ly9/a;
+    check-cast v0, Lx9/a;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
-    sget-object v1, Ly9/a;->b:Ljava/lang/Object;
+    sget-object v1, Lx9/a;->b:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 3
     :try_start_0
-    iget-object v0, v0, Ly9/a;->a:Ly9/c;
+    iget-object v0, v0, Lx9/a;->a:Lx9/c;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -482,20 +476,20 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "Laa/a;",
+            "Lz9/a;",
             ">;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lw9/e;->g:Ly9/b;
+    iget-object v0, p0, Lw9/e;->g:Lx9/b;
 
-    check-cast v0, Ly9/a;
+    check-cast v0, Lx9/a;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
-    sget-object v1, Ly9/a;->b:Ljava/lang/Object;
+    sget-object v1, Lx9/a;->b:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -503,7 +497,7 @@
 
     .line 3
     :try_start_0
-    iget-object v0, v0, Ly9/a;->a:Ly9/c;
+    iget-object v0, v0, Lx9/a;->a:Lx9/c;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteOpenHelper;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -521,7 +515,7 @@
 
     .line 5
     :try_start_1
-    invoke-static {v0}, Lf0/h;->a(Landroid/database/Cursor;)Ljava/util/List;
+    invoke-static {v0}, Lcom/helpshift/util/s;->m(Landroid/database/Cursor;)Ljava/util/List;
 
     move-result-object v2
     :try_end_1
@@ -588,7 +582,7 @@
     throw v0
 .end method
 
-.method public final l([Lz9/a;)Ljava/lang/String;
+.method public final l([Ly9/a;)Ljava/lang/String;
     .locals 5
 
     const-string v0, " "
@@ -618,7 +612,7 @@
     if-eqz v4, :cond_0
 
     .line 4
-    invoke-interface {v4}, Lz9/a;->b()Ljava/lang/String;
+    invoke-interface {v4}, Ly9/a;->b()Ljava/lang/String;
 
     move-result-object v4
 
@@ -701,7 +695,7 @@
     return-object p1
 .end method
 
-.method public final n(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Lz9/a;)Ljava/util/concurrent/Future;
+.method public final n(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ly9/a;)Ljava/util/concurrent/Future;
     .locals 3
 
     .line 1
@@ -713,7 +707,7 @@
     iput-object p1, v0, Lw9/d;->d:Ljava/lang/String;
 
     .line 3
-    iput-object p4, v0, Lw9/d;->e:[Lz9/a;
+    iput-object p4, v0, Lw9/d;->e:[Ly9/a;
 
     .line 4
     iput-object p2, v0, Lw9/d;->b:Ljava/lang/String;
@@ -743,11 +737,11 @@
 
     new-instance p2, Lw9/f;
 
-    iget-object p3, p0, Lw9/e;->g:Ly9/b;
+    iget-object p3, p0, Lw9/e;->g:Lx9/b;
 
     iget-object p4, p0, Lw9/e;->i:Ljava/text/SimpleDateFormat;
 
-    invoke-direct {p2, v0, p3, p4}, Lw9/f;-><init>(Lw9/d;Ly9/b;Ljava/text/SimpleDateFormat;)V
+    invoke-direct {p2, v0, p3, p4}, Lw9/f;-><init>(Lw9/d;Lx9/b;Ljava/text/SimpleDateFormat;)V
 
     invoke-virtual {p1, p2}, Ljava/util/concurrent/ThreadPoolExecutor;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
 
@@ -763,27 +757,33 @@
     return-object p1
 .end method
 
-.method public final o(Lx9/a;)Z
+.method public final o(I)Z
     .locals 1
 
     .line 1
     iget-boolean v0, p0, Lw9/e;->e:Z
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
-    invoke-virtual {p1}, Lx9/a;->getValue()I
+    if-eqz p1, :cond_0
 
-    move-result p1
+    add-int/lit8 p1, p1, -0x1
 
     iget v0, p0, Lw9/e;->b:I
 
-    if-gt p1, v0, :cond_0
+    if-gt p1, v0, :cond_1
 
     const/4 p1, 0x1
 
     goto :goto_0
 
     :cond_0
+    const/4 p1, 0x0
+
+    .line 2
+    throw p1
+
+    :cond_1
     const/4 p1, 0x0
 
     :goto_0

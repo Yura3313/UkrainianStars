@@ -89,10 +89,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/ads/BaseAdView;->a:Lj3/c51;
+    iget-object v0, p0, Lcom/google/android/gms/ads/BaseAdView;->g:Lj3/z51;
 
     .line 2
-    iget-object v0, v0, Lj3/c51;->b:Lcom/google/android/gms/ads/p;
+    iget-object v0, v0, Lj3/z51;->b:Lcom/google/android/gms/ads/p;
 
     return-object v0
 .end method
@@ -101,10 +101,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/ads/BaseAdView;->a:Lj3/c51;
+    iget-object v0, p0, Lcom/google/android/gms/ads/BaseAdView;->g:Lj3/z51;
 
     .line 2
-    iget-object v0, v0, Lj3/c51;->j:Lcom/google/android/gms/ads/q;
+    iget-object v0, v0, Lj3/z51;->j:Lcom/google/android/gms/ads/q;
 
     return-object v0
 .end method
@@ -149,9 +149,9 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/ads/BaseAdView;->a:Lj3/c51;
+    iget-object v0, p0, Lcom/google/android/gms/ads/BaseAdView;->g:Lj3/z51;
 
-    invoke-virtual {v0, p1}, Lj3/c51;->g(Lcom/google/android/gms/ads/q;)V
+    invoke-virtual {v0, p1}, Lj3/z51;->g(Lcom/google/android/gms/ads/q;)V
 
     return-void
 .end method

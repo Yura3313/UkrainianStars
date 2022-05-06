@@ -722,7 +722,7 @@
     const/16 p1, 0xfa1
 
     .line 45
-    invoke-static {p0, v2, p0, p1}, Lcom/kakaogame/d;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v2, p0, p1}, Lcom/kakaogame/d;->b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 

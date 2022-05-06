@@ -31,7 +31,7 @@
     iget-object v0, p1, Lp4/a$b;->a:Lr4/g;
 
     .line 6
-    iget-object v0, v0, Lr4/g;->a:Lr4/g$b;
+    iget-object v0, v0, Lr4/g;->g:Lr4/g$b;
 
     .line 7
     invoke-virtual {v0}, Lr4/g$b;->newDrawable()Landroid/graphics/drawable/Drawable;

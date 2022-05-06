@@ -4,12 +4,12 @@
 
 
 # static fields
-.field public static final a:Lm/h;
+.field public static final a:Lm/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lm/h<",
+            "Lm/g<",
             "Ljava/lang/ClassLoader;",
-            "Lm/h<",
+            "Lm/g<",
             "Ljava/lang/String;",
             "Ljava/lang/Class<",
             "*>;>;>;"
@@ -23,11 +23,11 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lm/h;
+    new-instance v0, Lm/g;
 
-    invoke-direct {v0}, Lm/h;-><init>()V
+    invoke-direct {v0}, Lm/g;-><init>()V
 
-    sput-object v0, Landroidx/fragment/app/v;->a:Lm/h;
+    sput-object v0, Landroidx/fragment/app/v;->a:Lm/g;
 
     return-void
 .end method
@@ -61,31 +61,31 @@
     .end annotation
 
     .line 1
-    sget-object v0, Landroidx/fragment/app/v;->a:Lm/h;
+    sget-object v0, Landroidx/fragment/app/v;->a:Lm/g;
 
     const/4 v1, 0x0
 
     .line 2
-    invoke-virtual {v0, p0, v1}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
     .line 3
-    check-cast v2, Lm/h;
+    check-cast v2, Lm/g;
 
     if-nez v2, :cond_0
 
     .line 4
-    new-instance v2, Lm/h;
+    new-instance v2, Lm/g;
 
-    invoke-direct {v2}, Lm/h;-><init>()V
+    invoke-direct {v2}, Lm/g;-><init>()V
 
     .line 5
-    invoke-virtual {v0, p0, v2}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0, v2}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     :cond_0
-    invoke-virtual {v2, p1, v1}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -102,7 +102,7 @@
     move-result-object v0
 
     .line 9
-    invoke-virtual {v2, p1, v0}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, p1, v0}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_1
     return-object v0
@@ -144,7 +144,7 @@
 
     const-string v2, ": make sure class is a valid subclass of Fragment"
 
-    invoke-static {v0, p1, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, v2}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -160,7 +160,7 @@
 
     const-string v2, ": make sure class name exists"
 
-    invoke-static {v0, p1, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, v2}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

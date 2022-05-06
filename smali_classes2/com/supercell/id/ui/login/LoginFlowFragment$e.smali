@@ -20,14 +20,14 @@
     value = {
         "Lle/j;",
         "Lke/a<",
-        "Lid/e;",
+        "Lhd/e;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/ui/login/LoginFlowFragment$e;
+.field public static final g:Lcom/supercell/id/ui/login/LoginFlowFragment$e;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/login/LoginFlowFragment$e;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/login/LoginFlowFragment$e;->a:Lcom/supercell/id/ui/login/LoginFlowFragment$e;
+    sput-object v0, Lcom/supercell/id/ui/login/LoginFlowFragment$e;->g:Lcom/supercell/id/ui/login/LoginFlowFragment$e;
 
     return-void
 .end method
@@ -59,9 +59,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lid/e;
+    new-instance v0, Lhd/e;
 
-    invoke-direct {v0}, Lid/e;-><init>()V
+    invoke-direct {v0}, Lhd/e;-><init>()V
 
     return-object v0
 .end method

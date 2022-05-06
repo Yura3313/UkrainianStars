@@ -113,7 +113,7 @@
     iget-object v0, p0, Lf/f;->b:Lf/b;
 
     .line 2
-    iget-object v0, v0, Lf/b;->a:Ljava/lang/Object;
+    iget-object v0, v0, Lf/b;->g:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -138,7 +138,7 @@
     iget-object v0, p0, Lf/f;->b:Lf/b;
 
     .line 2
-    iget-boolean v0, v0, Lf/b;->b:Z
+    iget-boolean v0, v0, Lf/b;->h:Z
 
     return v0
 .end method
@@ -207,7 +207,7 @@
     iget-object v0, p0, Lf/f;->b:Lf/b;
 
     .line 2
-    iput-object p1, v0, Lf/b;->a:Ljava/lang/Object;
+    iput-object p1, v0, Lf/b;->g:Ljava/lang/Object;
 
     return-void
 .end method

@@ -26,7 +26,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iget v0, p1, Lj6/b;->b:I
+    iget v0, p1, Lj6/b;->h:I
 
     const/16 v1, 0x15
 
@@ -102,7 +102,7 @@
     iget-object v1, p0, La7/a;->a:Lj6/b;
 
     .line 2
-    iget v1, v1, Lj6/b;->a:I
+    iget v1, v1, Lj6/b;->g:I
 
     if-ge v0, v1, :cond_2
 
@@ -115,7 +115,7 @@
     iget-object v3, p0, La7/a;->a:Lj6/b;
 
     .line 4
-    iget v4, v3, Lj6/b;->b:I
+    iget v4, v3, Lj6/b;->h:I
 
     if-ge v2, v4, :cond_1
 
@@ -231,7 +231,7 @@
     iget-object v2, p0, La7/a;->a:Lj6/b;
 
     .line 8
-    iget v2, v2, Lj6/b;->b:I
+    iget v2, v2, Lj6/b;->h:I
 
     add-int/lit8 v3, v2, -0x7
 
@@ -327,7 +327,7 @@
     iget-object v0, p0, La7/a;->a:Lj6/b;
 
     .line 3
-    iget v0, v0, Lj6/b;->b:I
+    iget v0, v0, Lj6/b;->h:I
 
     add-int/lit8 v1, v0, -0x11
 
@@ -484,10 +484,10 @@
     iget-object v1, p0, La7/a;->a:Lj6/b;
 
     .line 6
-    iget v2, v1, Lj6/b;->b:I
+    iget v2, v1, Lj6/b;->h:I
 
     .line 7
-    invoke-virtual {v0, v1, v2}, La7/c;->unmaskBitMatrix(Lj6/b;I)V
+    invoke-virtual {v0, v1, v2}, La7/c;->c(Lj6/b;I)V
 
     return-void
 .end method

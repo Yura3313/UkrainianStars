@@ -1,217 +1,433 @@
-.class public abstract Lm8/n;
-.super Lm8/a0;
-.source "AttachmentMessageDM.java"
+.class public Lm8/n;
+.super Ljava/lang/Object;
+.source "LiveUpdateDM.java"
+
+# interfaces
+.implements Lf8/b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lm8/n$d;,
+        Lm8/n$e;,
+        Lm8/n$f;,
+        Lm8/n$c;,
+        Lm8/n$g;
+    }
+.end annotation
 
 
 # instance fields
-.field public A:Ljava/lang/String;
+.field public final a:J
 
-.field public B:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field public C:I
+.field public c:Ljava/util/concurrent/atomic/AtomicInteger;
 
-.field public D:Ljava/lang/String;
+.field public d:Lf8/a;
 
-.field public E:Z
+.field public e:Z
 
-.field public F:Z
+.field public f:Z
 
-.field public G:Z
+.field public g:Z
 
-.field public z:Ljava/lang/String;
+.field public h:Lm8/n$g;
+
+.field public i:Lz7/f;
+
+.field public j:Ld8/r;
+
+.field public k:Ljava/util/concurrent/atomic/AtomicInteger;
+
+.field public l:Z
+
+.field public m:Lz7/g;
+
+.field public n:Z
+
+.field public o:Ljava/lang/String;
+
+.field public p:Lz7/g;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;JLm8/o;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZLm8/b0;)V
-    .locals 9
-
-    move-object v8, p0
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move-wide v3, p3
-
-    move-object v5, p5
-
-    move/from16 v6, p10
-
-    move-object/from16 v7, p12
+.method public constructor <init>(Lz7/f;Ld8/r;)V
+    .locals 3
 
     .line 1
-    invoke-direct/range {v0 .. v7}, Lm8/a0;-><init>(Ljava/lang/String;Ljava/lang/String;JLm8/o;ZLm8/b0;)V
-
-    move v0, p6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput v0, v8, Lm8/n;->C:I
+    sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
-    move-object/from16 v0, p7
+    const-wide/16 v1, 0x3
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Lm8/n;->a:J
 
     .line 3
-    iput-object v0, v8, Lm8/n;->z:Ljava/lang/String;
+    new-instance v0, Lm8/n$a;
 
-    move-object/from16 v0, p8
+    invoke-direct {v0, p0}, Lm8/n$a;-><init>(Lm8/n;)V
+
+    iput-object v0, p0, Lm8/n;->m:Lz7/g;
 
     .line 4
-    iput-object v0, v8, Lm8/n;->B:Ljava/lang/String;
+    new-instance v0, Lm8/n$b;
 
-    move-object/from16 v0, p9
+    invoke-direct {v0, p0}, Lm8/n$b;-><init>(Lm8/n;)V
+
+    iput-object v0, p0, Lm8/n;->p:Lz7/g;
 
     .line 5
-    iput-object v0, v8, Lm8/n;->A:Ljava/lang/String;
-
-    move/from16 v0, p11
+    iput-object p1, p0, Lm8/n;->i:Lz7/f;
 
     .line 6
-    iput-boolean v0, v8, Lm8/n;->E:Z
-
-    return-void
-.end method
-
-.method public constructor <init>(Lm8/n;)V
-    .locals 1
+    iput-object p2, p0, Lm8/n;->j:Ld8/r;
 
     .line 7
-    invoke-direct {p0, p1}, Lm8/a0;-><init>(Lm8/a0;)V
+    new-instance p1, Ljava/util/concurrent/atomic/AtomicInteger;
+
+    const/4 v0, -0x1
+
+    invoke-direct {p1, v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
+
+    iput-object p1, p0, Lm8/n;->c:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 8
-    iget-object v0, p1, Lm8/n;->z:Ljava/lang/String;
+    new-instance p1, Ljava/util/concurrent/atomic/AtomicInteger;
 
-    iput-object v0, p0, Lm8/n;->z:Ljava/lang/String;
+    invoke-direct {p1, v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
+
+    iput-object p1, p0, Lm8/n;->k:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 9
-    iget-object v0, p1, Lm8/n;->A:Ljava/lang/String;
-
-    iput-object v0, p0, Lm8/n;->A:Ljava/lang/String;
+    check-cast p2, Ld8/j;
 
     .line 10
-    iget-object v0, p1, Lm8/n;->B:Ljava/lang/String;
-
-    iput-object v0, p0, Lm8/n;->B:Ljava/lang/String;
+    iget-object p1, p2, Ld8/j;->g:Ld8/p;
 
     .line 11
-    iget v0, p1, Lm8/n;->C:I
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    iput v0, p0, Lm8/n;->C:I
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const-string p1, "Android"
+
+    invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string p1, "-"
+
+    const-string v0, "7.11.0"
 
     .line 12
-    iget-object v0, p1, Lm8/n;->D:Ljava/lang/String;
+    invoke-static {p2, p1, v0}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    iput-object v0, p0, Lm8/n;->D:Ljava/lang/String;
+    move-result-object p1
 
     .line 13
-    iget-boolean v0, p1, Lm8/n;->E:Z
-
-    iput-boolean v0, p0, Lm8/n;->E:Z
-
-    .line 14
-    iget-boolean v0, p1, Lm8/n;->F:Z
-
-    iput-boolean v0, p0, Lm8/n;->F:Z
-
-    .line 15
-    iget-boolean p1, p1, Lm8/n;->G:Z
-
-    iput-boolean p1, p0, Lm8/n;->G:Z
+    iput-object p1, p0, Lm8/n;->b:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public k(Lm8/a0;)V
-    .locals 1
+.method public a(Lt7/a;)Ljava/lang/String;
+    .locals 6
 
     .line 1
-    invoke-super {p0, p1}, Lm8/a0;->k(Lm8/a0;)V
+    iget-object v0, p0, Lm8/n;->j:Ld8/r;
+
+    check-cast v0, Ld8/j;
 
     .line 2
-    instance-of v0, p1, Lm8/n;
-
-    if-eqz v0, :cond_1
+    iget-object v1, v0, Ld8/j;->d:Ljava/lang/String;
 
     .line 3
-    check-cast p1, Lm8/n;
+    iget-object v0, v0, Ld8/j;->c:Ljava/lang/String;
+
+    const-string v2, "\\."
 
     .line 4
-    iget-boolean v0, p1, Lm8/n;->F:Z
-
-    if-nez v0, :cond_0
-
-    .line 5
-    iget-object v0, p1, Lm8/n;->z:Ljava/lang/String;
-
-    iput-object v0, p0, Lm8/n;->z:Ljava/lang/String;
-
-    .line 6
-    iget v0, p1, Lm8/n;->C:I
-
-    iput v0, p0, Lm8/n;->C:I
-
-    .line 7
-    iget-object v0, p1, Lm8/n;->A:Ljava/lang/String;
-
-    iput-object v0, p0, Lm8/n;->A:Ljava/lang/String;
-
-    .line 8
-    :cond_0
-    iget-object v0, p1, Lm8/n;->B:Ljava/lang/String;
-
-    iput-object v0, p0, Lm8/n;->B:Ljava/lang/String;
-
-    .line 9
-    iget-boolean p1, p1, Lm8/n;->E:Z
-
-    iput-boolean p1, p0, Lm8/n;->E:Z
-
-    :cond_1
-    return-void
-.end method
-
-.method public q()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lm8/n;->C:I
-
-    int-to-double v0, v0
-
-    invoke-static {v0, v1}, Lf0/h;->b(D)Ljava/lang/String;
+    invoke-virtual {v0, v2}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
-    return-object v0
+    .line 5
+    array-length v2, v0
+
+    const/4 v3, 0x3
+
+    const-string v4, ""
+
+    if-ne v2, v3, :cond_0
+
+    const/4 v2, 0x0
+
+    .line 6
+    aget-object v0, v0, v2
+
+    goto :goto_0
+
+    :cond_0
+    move-object v0, v4
+
+    .line 7
+    :goto_0
+    :try_start_0
+    iget-object v2, p1, Lt7/a;->g:Ljava/lang/String;
+
+    const-string v3, "UTF-8"
+
+    invoke-static {v2, v3}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+    :try_end_0
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception v2
+
+    const-string v3, "Helpshift_LiveUpdateDM"
+
+    const-string v5, "Exception in encoding authToken"
+
+    .line 8
+    invoke-static {v3, v5, v2}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 9
+    :goto_1
+    invoke-static {v4}, Lp5/c0;->h(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_2
+
+    iget-object v2, p1, Lt7/a;->h:Ljava/lang/String;
+
+    .line 10
+    invoke-static {v2}, Lp5/c0;->h(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    goto :goto_2
+
+    .line 11
+    :cond_1
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    iget-object p1, p1, Lt7/a;->h:Ljava/lang/String;
+
+    invoke-direct {v2, p1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string p1, "/subscribe/websocket/?origin_v3="
+
+    const-string v3, "&platform_id="
+
+    .line 12
+    invoke-static {v2, p1, v4, v3, v1}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string p1, "&domain="
+
+    .line 13
+    invoke-static {v2, p1, v0}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+
+    :cond_2
+    :goto_2
+    const/4 p1, 0x0
+
+    return-object p1
 .end method
 
-.method public r(Ljava/lang/String;)Z
-    .locals 1
+.method public b()V
+    .locals 4
 
     .line 1
-    invoke-static {p1}, Landroidx/savedstate/d;->j(Ljava/lang/String;)Z
+    iget-object v0, p0, Lm8/n;->h:Lm8/n$g;
 
-    move-result v0
+    if-eqz v0, :cond_0
 
-    if-nez v0, :cond_0
+    .line 2
+    iget-boolean v1, p0, Lm8/n;->l:Z
 
-    const-string v0, "content://"
+    check-cast v0, Lm8/r;
 
-    invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    .line 3
+    iget-object v0, v0, Lm8/r;->g:Ld9/g;
+
+    if-eqz v0, :cond_0
+
+    .line 4
+    check-cast v0, Ld9/i;
+
+    .line 5
+    iget-object v2, v0, Ld9/i;->o:Lz7/f;
+
+    new-instance v3, Ld9/i$a;
+
+    invoke-direct {v3, v0, v1}, Ld9/i$a;-><init>(Ld9/i;Z)V
+
+    invoke-virtual {v2, v3}, Lz7/f;->h(Lz7/g;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public c(Lf8/a;Ljava/lang/String;)V
+    .locals 3
+
+    .line 1
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "Error in web-socket connection: "
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    const/4 v0, 0x0
+
+    const-string v1, "Helpshift_LiveUpdateDM"
+
+    .line 2
+    invoke-static {v1, p1, v0, v0}, Lie/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
+
+    const/4 p1, 0x0
+
+    .line 3
+    iput-boolean p1, p0, Lm8/n;->f:Z
+
+    .line 4
+    iget-object p1, p0, Lm8/n;->h:Lm8/n$g;
+
+    if-eqz p1, :cond_2
+
+    const-string p1, "The status line is: "
+
+    .line 5
+    invoke-virtual {p2, p1}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 6
+    array-length p2, p1
+
+    const/4 v0, 0x2
+
+    const/16 v1, 0x193
+
+    if-ne v0, p2, :cond_0
+
+    const/4 p2, 0x1
+
+    .line 7
+    aget-object p1, p1, p2
+
+    const-string v2, " +"
+
+    invoke-virtual {p1, v2}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 8
+    array-length v2, p1
+
+    if-lt v2, v0, :cond_0
+
+    .line 9
+    aget-object p1, p1, p2
+
+    const-string p2, "403"
+
+    .line 10
+    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    const/4 p1, 0x1
+    const/16 p1, 0x193
 
     goto :goto_0
 
     :cond_0
-    const/4 p1, 0x0
+    const/4 p1, -0x1
 
     :goto_0
-    return p1
+    if-ne p1, v1, :cond_1
+
+    .line 11
+    iget-boolean p1, p0, Lm8/n;->g:Z
+
+    if-nez p1, :cond_2
+
+    .line 12
+    iget-object p1, p0, Lm8/n;->i:Lz7/f;
+
+    iget-object p2, p0, Lm8/n;->p:Lz7/g;
+
+    invoke-virtual {p1, p2}, Lz7/f;->i(Lz7/g;)V
+
+    goto :goto_1
+
+    .line 13
+    :cond_1
+    invoke-virtual {p0}, Lm8/n;->d()V
+
+    :cond_2
+    :goto_1
+    return-void
+.end method
+
+.method public d()V
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lm8/n;->i:Lz7/f;
+
+    new-instance v1, Lm8/n$c;
+
+    iget-object v2, p0, Lm8/n;->c:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
+
+    move-result v2
+
+    invoke-direct {v1, p0, v2}, Lm8/n$c;-><init>(Lm8/n;I)V
+
+    sget-object v2, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
+
+    const-wide/16 v3, 0xa
+
+    invoke-virtual {v2, v3, v4}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
+
+    move-result-wide v2
+
+    invoke-virtual {v0, v1, v2, v3}, Lz7/f;->g(Lz7/g;J)V
+
+    return-void
 .end method

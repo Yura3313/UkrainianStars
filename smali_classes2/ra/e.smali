@@ -1,35 +1,52 @@
 .class public Lra/e;
 .super Ljava/lang/Object;
-.source "AdminCSATMessageViewBinder.java"
+.source "SmartIntentRendererImpl.java"
 
 # interfaces
-.implements Lcom/helpshift/support/widget/AdminCSATBotView$b;
+.implements Landroid/view/View$OnFocusChangeListener;
 
 
 # instance fields
-.field public final synthetic a:Lra/g$a;
-
-.field public final synthetic b:Ln8/a;
-
-.field public final synthetic c:Lm8/g;
-
-.field public final synthetic d:Lra/g;
+.field public final synthetic g:Lra/a;
 
 
 # direct methods
-.method public constructor <init>(Lra/g;Lra/g$a;Ln8/a;Lm8/g;)V
+.method public constructor <init>(Lra/a;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lra/e;->d:Lra/g;
-
-    iput-object p2, p0, Lra/e;->a:Lra/g$a;
-
-    iput-object p3, p0, Lra/e;->b:Ln8/a;
-
-    iput-object p4, p0, Lra/e;->c:Lm8/g;
+    iput-object p1, p0, Lra/e;->g:Lra/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    return-void
+.end method
+
+
+# virtual methods
+.method public onFocusChange(Landroid/view/View;Z)V
+    .locals 0
+
+    .line 1
+    iget-object p1, p0, Lra/e;->g:Lra/a;
+
+    if-eqz p2, :cond_0
+
+    .line 2
+    invoke-virtual {p1}, Lra/a;->f()Lcom/helpshift/support/conversations/smartintent/SmartIntentBottomSheetBehavior;
+
+    move-result-object p1
+
+    const/4 p2, 0x3
+
+    invoke-virtual {p1, p2}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->E(I)V
+
+    goto :goto_0
+
+    .line 3
+    :cond_0
+    invoke-virtual {p1}, Lra/a;->g()V
+
+    :goto_0
     return-void
 .end method

@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/journeyapps/barcodescanner/b;
+.field public final synthetic g:Lcom/journeyapps/barcodescanner/b;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/journeyapps/barcodescanner/b$d;->a:Lcom/journeyapps/barcodescanner/b;
+    iput-object p1, p0, Lcom/journeyapps/barcodescanner/b$d;->g:Lcom/journeyapps/barcodescanner/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/journeyapps/barcodescanner/b$d;->a:Lcom/journeyapps/barcodescanner/b;
+    iget-object p1, p0, Lcom/journeyapps/barcodescanner/b$d;->g:Lcom/journeyapps/barcodescanner/b;
 
     .line 2
     iget-object p1, p1, Lcom/journeyapps/barcodescanner/b;->a:Landroid/app/Activity;

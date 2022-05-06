@@ -1,29 +1,36 @@
 .class public final Ly4/e0;
-.super Ljava/lang/Object;
-
-# interfaces
-.implements Ly4/u;
+.super Ly4/d0;
 
 
 # instance fields
-.field public final a:Ljava/nio/channels/FileChannel;
+.field public final g:Ly4/d0;
 
-.field public final b:J
+.field public final h:J
 
-.field public final c:J
+.field public final i:J
 
 
 # direct methods
-.method public constructor <init>(Ljava/nio/channels/FileChannel;JJ)V
+.method public constructor <init>(Ly4/d0;JJ)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ly4/d0;-><init>()V
 
-    iput-object p1, p0, Ly4/e0;->a:Ljava/nio/channels/FileChannel;
+    iput-object p1, p0, Ly4/e0;->g:Ly4/d0;
 
-    iput-wide p2, p0, Ly4/e0;->b:J
+    invoke-virtual {p0, p2, p3}, Ly4/e0;->d(J)J
 
-    iput-wide p4, p0, Ly4/e0;->c:J
+    move-result-wide p1
+
+    iput-wide p1, p0, Ly4/e0;->h:J
+
+    add-long/2addr p1, p4
+
+    invoke-virtual {p0, p1, p2}, Ly4/e0;->d(J)J
+
+    move-result-wide p1
+
+    iput-wide p1, p0, Ly4/e0;->i:J
 
     return-void
 .end method
@@ -31,56 +38,89 @@
 
 # virtual methods
 .method public final a()J
-    .locals 2
+    .locals 4
 
-    iget-wide v0, p0, Ly4/e0;->c:J
+    iget-wide v0, p0, Ly4/e0;->i:J
+
+    iget-wide v2, p0, Ly4/e0;->h:J
+
+    sub-long/2addr v0, v2
 
     return-wide v0
 .end method
 
-.method public final b([Ljava/security/MessageDigest;JI)V
-    .locals 8
+.method public final b(JJ)Ljava/io/InputStream;
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    iget-wide v0, p0, Ly4/e0;->b:J
+    iget-wide v0, p0, Ly4/e0;->h:J
 
-    iget-object v2, p0, Ly4/e0;->a:Ljava/nio/channels/FileChannel;
+    add-long/2addr v0, p1
 
-    sget-object v3, Ljava/nio/channels/FileChannel$MapMode;->READ_ONLY:Ljava/nio/channels/FileChannel$MapMode;
+    invoke-virtual {p0, v0, v1}, Ly4/e0;->d(J)J
 
-    add-long v4, v0, p2
+    move-result-wide p1
 
-    int-to-long v6, p4
+    add-long/2addr p3, p1
 
-    invoke-virtual/range {v2 .. v7}, Ljava/nio/channels/FileChannel;->map(Ljava/nio/channels/FileChannel$MapMode;JJ)Ljava/nio/MappedByteBuffer;
+    invoke-virtual {p0, p3, p4}, Ly4/e0;->d(J)J
 
-    move-result-object p2
+    move-result-wide p3
 
-    invoke-virtual {p2}, Ljava/nio/MappedByteBuffer;->load()Ljava/nio/MappedByteBuffer;
+    iget-object v0, p0, Ly4/e0;->g:Ly4/d0;
 
-    array-length p3, p1
+    sub-long/2addr p3, p1
 
-    const/4 p4, 0x0
+    invoke-virtual {v0, p1, p2, p3, p4}, Ly4/d0;->b(JJ)Ljava/io/InputStream;
 
-    const/4 v0, 0x0
+    move-result-object p1
 
-    :goto_0
-    if-ge v0, p3, :cond_0
+    return-object p1
+.end method
 
-    aget-object v1, p1, v0
+.method public final close()V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
-    invoke-virtual {p2, p4}, Ljava/nio/MappedByteBuffer;->position(I)Ljava/nio/Buffer;
+    return-void
+.end method
 
-    invoke-virtual {v1, p2}, Ljava/security/MessageDigest;->update(Ljava/nio/ByteBuffer;)V
+.method public final d(J)J
+    .locals 3
 
-    add-int/lit8 v0, v0, 0x1
+    const-wide/16 v0, 0x0
 
-    goto :goto_0
+    cmp-long v2, p1, v0
+
+    if-ltz v2, :cond_1
+
+    iget-object v0, p0, Ly4/e0;->g:Ly4/d0;
+
+    invoke-virtual {v0}, Ly4/d0;->a()J
+
+    move-result-wide v0
+
+    cmp-long v2, p1, v0
+
+    if-lez v2, :cond_0
+
+    iget-object p1, p0, Ly4/e0;->g:Ly4/d0;
+
+    invoke-virtual {p1}, Ly4/d0;->a()J
+
+    move-result-wide p1
 
     :cond_0
-    return-void
+    return-wide p1
+
+    :cond_1
+    return-wide v0
 .end method

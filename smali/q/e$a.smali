@@ -1,5 +1,5 @@
-.class public synthetic Lq/e$a;
-.super Ljava/lang/Object;
+.class public final enum Lq/e$a;
+.super Ljava/lang/Enum;
 .source "ConstraintWidget.java"
 
 
@@ -9,238 +9,134 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1009
-    name = null
+    accessFlags = 0x4019
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Lq/e$a;",
+        ">;"
+    }
 .end annotation
 
 
 # static fields
-.field public static final synthetic a:[I
+.field public static final enum g:Lq/e$a;
 
-.field public static final synthetic b:[I
+.field public static final enum h:Lq/e$a;
+
+.field public static final enum i:Lq/e$a;
+
+.field public static final enum j:Lq/e$a;
+
+.field public static final synthetic k:[Lq/e$a;
 
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 6
+    .locals 9
 
     .line 1
-    invoke-static {}, Lq/e$b;->values()[Lq/e$b;
+    new-instance v0, Lq/e$a;
+
+    const-string v1, "FIXED"
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Lq/e$a;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lq/e$a;->g:Lq/e$a;
+
+    new-instance v1, Lq/e$a;
+
+    const-string v3, "WRAP_CONTENT"
+
+    const/4 v4, 0x1
+
+    invoke-direct {v1, v3, v4}, Lq/e$a;-><init>(Ljava/lang/String;I)V
+
+    sput-object v1, Lq/e$a;->h:Lq/e$a;
+
+    new-instance v3, Lq/e$a;
+
+    const-string v5, "MATCH_CONSTRAINT"
+
+    const/4 v6, 0x2
+
+    invoke-direct {v3, v5, v6}, Lq/e$a;-><init>(Ljava/lang/String;I)V
+
+    sput-object v3, Lq/e$a;->i:Lq/e$a;
+
+    new-instance v5, Lq/e$a;
+
+    const-string v7, "MATCH_PARENT"
+
+    const/4 v8, 0x3
+
+    invoke-direct {v5, v7, v8}, Lq/e$a;-><init>(Ljava/lang/String;I)V
+
+    sput-object v5, Lq/e$a;->j:Lq/e$a;
+
+    const/4 v7, 0x4
+
+    new-array v7, v7, [Lq/e$a;
+
+    aput-object v0, v7, v2
+
+    aput-object v1, v7, v4
+
+    aput-object v3, v7, v6
+
+    aput-object v5, v7, v8
+
+    .line 2
+    sput-object v7, Lq/e$a;->k:[Lq/e$a;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lq/e$a;
+    .locals 1
+
+    .line 1
+    const-class v0, Lq/e$a;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, Lq/e$a;
+
+    return-object p0
+.end method
+
+.method public static values()[Lq/e$a;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lq/e$a;->k:[Lq/e$a;
+
+    invoke-virtual {v0}, [Lq/e$a;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
-    array-length v0, v0
+    check-cast v0, [Lq/e$a;
 
-    new-array v0, v0, [I
-
-    sput-object v0, Lq/e$a;->b:[I
-
-    const/4 v1, 0x1
-
-    :try_start_0
-    sget-object v2, Lq/e$b;->FIXED:Lq/e$b;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    aput v1, v0, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    const/4 v0, 0x2
-
-    :try_start_1
-    sget-object v2, Lq/e$a;->b:[I
-
-    sget-object v3, Lq/e$b;->WRAP_CONTENT:Lq/e$b;
-
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v3
-
-    aput v0, v2, v3
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
-    const/4 v2, 0x3
-
-    :try_start_2
-    sget-object v3, Lq/e$a;->b:[I
-
-    sget-object v4, Lq/e$b;->MATCH_PARENT:Lq/e$b;
-
-    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v4
-
-    aput v2, v3, v4
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    :catch_2
-    const/4 v3, 0x4
-
-    :try_start_3
-    sget-object v4, Lq/e$a;->b:[I
-
-    sget-object v5, Lq/e$b;->MATCH_CONSTRAINT:Lq/e$b;
-
-    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v5
-
-    aput v3, v4, v5
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    .line 2
-    :catch_3
-    invoke-static {}, Lq/d$b;->values()[Lq/d$b;
-
-    move-result-object v4
-
-    array-length v4, v4
-
-    new-array v4, v4, [I
-
-    sput-object v4, Lq/e$a;->a:[I
-
-    :try_start_4
-    sget-object v5, Lq/d$b;->LEFT:Lq/d$b;
-
-    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v5
-
-    aput v1, v4, v5
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    :catch_4
-    :try_start_5
-    sget-object v1, Lq/e$a;->a:[I
-
-    sget-object v4, Lq/d$b;->TOP:Lq/d$b;
-
-    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v4
-
-    aput v0, v1, v4
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    :catch_5
-    :try_start_6
-    sget-object v0, Lq/e$a;->a:[I
-
-    sget-object v1, Lq/d$b;->RIGHT:Lq/d$b;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    aput v2, v0, v1
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
-
-    :catch_6
-    :try_start_7
-    sget-object v0, Lq/e$a;->a:[I
-
-    sget-object v1, Lq/d$b;->BOTTOM:Lq/d$b;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    aput v3, v0, v1
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
-
-    :catch_7
-    :try_start_8
-    sget-object v0, Lq/e$a;->a:[I
-
-    sget-object v1, Lq/d$b;->BASELINE:Lq/d$b;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x5
-
-    aput v2, v0, v1
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
-
-    :catch_8
-    :try_start_9
-    sget-object v0, Lq/e$a;->a:[I
-
-    sget-object v1, Lq/d$b;->CENTER:Lq/d$b;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x6
-
-    aput v2, v0, v1
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
-
-    :catch_9
-    :try_start_a
-    sget-object v0, Lq/e$a;->a:[I
-
-    sget-object v1, Lq/d$b;->CENTER_X:Lq/d$b;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x7
-
-    aput v2, v0, v1
-    :try_end_a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
-
-    :catch_a
-    :try_start_b
-    sget-object v0, Lq/e$a;->a:[I
-
-    sget-object v1, Lq/d$b;->CENTER_Y:Lq/d$b;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x8
-
-    aput v2, v0, v1
-    :try_end_b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
-
-    :catch_b
-    :try_start_c
-    sget-object v0, Lq/e$a;->a:[I
-
-    sget-object v1, Lq/d$b;->NONE:Lq/d$b;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x9
-
-    aput v2, v0, v1
-    :try_end_c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_c
-
-    :catch_c
-    return-void
+    return-object v0
 .end method

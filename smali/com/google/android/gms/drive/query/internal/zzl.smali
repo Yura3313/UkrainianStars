@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
 
 # direct methods
@@ -23,9 +23,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Ls2/f;
+    new-instance v0, Ls2/g;
 
-    invoke-direct {v0}, Ls2/f;-><init>()V
+    invoke-direct {v0}, Ls2/g;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/drive/query/internal/zzl;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -39,27 +39,27 @@
     invoke-direct {p0}, Lcom/google/android/gms/drive/query/internal/zza;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzl;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzl;->g:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final Y1(Li1/o;)Ljava/lang/Object;
+.method public final B1(Lj3/y1;)Ljava/lang/Object;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
             "Ljava/lang/Object;",
             ">(",
-            "Li1/o;",
+            "Lj3/y1;",
             ")TF;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/drive/query/internal/zzl;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/drive/query/internal/zzl;->g:Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -94,7 +94,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/drive/query/internal/zzl;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/drive/query/internal/zzl;->g:Ljava/lang/String;
 
     const/4 v2, 0x0
 

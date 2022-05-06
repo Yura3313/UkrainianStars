@@ -3,90 +3,60 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/wc0;
+.implements Lj3/cd0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lj3/wc0<",
-        "Lj3/sc0;",
+        "Lj3/cd0<",
+        "Lorg/json/JSONObject;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public a:Lj3/q60;
-
-.field public b:Lj3/am0;
-
-.field public c:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public a:Lorg/json/JSONObject;
 
 
 # direct methods
-.method public constructor <init>(Lj3/q60;Lj3/am0;Ljava/util/List;)V
+.method public constructor <init>(Lorg/json/JSONObject;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/q60;",
-            "Lj3/am0;",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj3/ce0;->a:Lj3/q60;
-
-    .line 3
-    iput-object p2, p0, Lj3/ce0;->b:Lj3/am0;
-
-    .line 4
-    iput-object p3, p0, Lj3/ce0;->c:Ljava/util/List;
+    iput-object p1, p0, Lj3/ce0;->a:Lorg/json/JSONObject;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lj3/yl0;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lj3/yl0<",
-            "Lj3/sc0;",
-            ">;"
-        }
-    .end annotation
+.method public final b(Ljava/lang/Object;)V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lj3/ce0;->b:Lj3/am0;
+    check-cast p1, Lorg/json/JSONObject;
 
-    new-instance v1, Lj3/ee0;
+    :try_start_0
+    const-string v0, "cache_state"
 
-    const/4 v2, 0x0
+    .line 2
+    iget-object v1, p0, Lj3/ce0;->a:Lorg/json/JSONObject;
 
-    invoke-direct {v1, p0, v2}, Lj3/ee0;-><init>(Ljava/lang/Object;I)V
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-interface {v0, v1}, Lj3/am0;->a(Ljava/util/concurrent/Callable;)Lj3/yl0;
+    return-void
 
-    move-result-object v0
+    .line 3
+    :catch_0
+    invoke-static {}, Lj3/cj;->l()Z
 
-    return-object v0
+    return-void
 .end method

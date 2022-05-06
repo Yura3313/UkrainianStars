@@ -6,7 +6,7 @@
 
 
 # instance fields
-.field public final a:Landroid/os/IBinder;
+.field public final g:Landroid/os/IBinder;
 
 
 # virtual methods
@@ -14,7 +14,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/auth/zza;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Lcom/google/android/gms/internal/auth/zza;->g:Landroid/os/IBinder;
 
     return-object v0
 .end method

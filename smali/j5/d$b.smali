@@ -114,7 +114,7 @@
     iget-object v3, v2, Ld5/p$a;->d:Ll5/f1;
 
     .line 7
-    sget-object v4, Ll5/f1;->LEGACY:Ll5/f1;
+    sget-object v4, Ll5/f1;->j:Ll5/f1;
 
     invoke-virtual {v3, v4}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -142,7 +142,7 @@
 
     aput-object v5, v3, v4
 
-    invoke-static {v3}, Lp5/i;->a([[B)[B
+    invoke-static {v3}, Lp5/j;->a([[B)[B
 
     move-result-object v3
 
@@ -281,7 +281,7 @@
     iget-object v0, v0, Ld5/p$a;->d:Ll5/f1;
 
     .line 4
-    sget-object v1, Ll5/f1;->LEGACY:Ll5/f1;
+    sget-object v1, Ll5/f1;->j:Ll5/f1;
 
     invoke-virtual {v0, v1}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -329,7 +329,7 @@
 
     aput-object p1, v3, v1
 
-    invoke-static {v3}, Lp5/i;->a([[B)[B
+    invoke-static {v3}, Lp5/j;->a([[B)[B
 
     move-result-object p1
 
@@ -340,7 +340,7 @@
     aput-object p1, v0, v1
 
     .line 11
-    invoke-static {v0}, Lp5/i;->a([[B)[B
+    invoke-static {v0}, Lp5/j;->a([[B)[B
 
     move-result-object p1
 
@@ -380,7 +380,7 @@
     aput-object p1, v0, v1
 
     .line 18
-    invoke-static {v0}, Lp5/i;->a([[B)[B
+    invoke-static {v0}, Lp5/j;->a([[B)[B
 
     move-result-object p1
 

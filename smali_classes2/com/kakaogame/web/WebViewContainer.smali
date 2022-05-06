@@ -302,7 +302,7 @@
     const-string v1, "WebViewContainer"
 
     .line 1
-    invoke-static {v0, p0, v1}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p0, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
     :try_start_0
@@ -376,7 +376,7 @@
     const-string v1, "WebViewContainer"
 
     .line 1
-    invoke-static {v0, p1, v1}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -549,7 +549,7 @@
     const-string v1, "WebViewContainer"
 
     .line 1
-    invoke-static {v0, p2, v1}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p2, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer;->webAppHandlerManager:Lcom/kakaogame/web/WebAppHandlerManager;
@@ -664,7 +664,7 @@
     const-string v0, "openFileChooser: "
 
     .line 8
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -1350,7 +1350,7 @@
     const-string v3, "csEmail: "
 
     .line 26
-    invoke-static {v3, v2, v1}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v2, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     if-eqz v2, :cond_7
 
@@ -1488,7 +1488,7 @@
     const-string v4, "_kawlt="
 
     .line 40
-    invoke-static {v4}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v4}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 

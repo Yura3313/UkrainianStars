@@ -2,463 +2,197 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lj3/bm0;
+
+
+# instance fields
+.field public final synthetic g:I
+
+.field public final synthetic h:Ljava/lang/Object;
+
 
 # direct methods
-.method public static a(Lj3/z41;)Lj3/qz0;
-    .locals 17
-
-    move-object/from16 v0, p0
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+    .locals 0
 
     .line 1
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+    iput p2, p0, Lj3/vd;->g:I
 
-    move-result-wide v1
+    iput-object p1, p0, Lj3/vd;->h:Ljava/lang/Object;
 
-    .line 2
-    iget-object v3, v0, Lj3/z41;->c:Ljava/util/Map;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v4, 0x0
+    return-void
+.end method
 
-    if-nez v3, :cond_0
 
-    return-object v4
+# virtual methods
+.method public final a(Ljava/lang/Throwable;)V
+    .locals 4
 
-    :cond_0
-    const-string v5, "Date"
+    iget v0, p0, Lj3/vd;->g:I
 
-    .line 3
-    invoke-interface {v3, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Ljava/lang/String;
-
-    if-eqz v5, :cond_1
-
-    .line 4
-    invoke-static {v5}, Lj3/vd;->c(Ljava/lang/String;)J
-
-    move-result-wide v8
+    packed-switch v0, :pswitch_data_0
 
     goto :goto_0
 
-    :cond_1
-    const-wide/16 v8, 0x0
-
-    :goto_0
-    const-string v5, "Cache-Control"
-
-    .line 5
-    invoke-interface {v3, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Ljava/lang/String;
-
-    const/4 v11, 0x0
-
-    if-eqz v5, :cond_9
-
-    const-string v12, ","
-
-    .line 6
-    invoke-virtual {v5, v12, v11}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
-
-    move-result-object v5
-
-    const/4 v12, 0x0
-
-    const-wide/16 v13, 0x0
-
-    const-wide/16 v15, 0x0
-
-    .line 7
-    :goto_1
-    array-length v10, v5
-
-    if-ge v11, v10, :cond_8
-
-    .line 8
-    aget-object v10, v5, v11
-
-    invoke-virtual {v10}, Ljava/lang/String;->trim()Ljava/lang/String;
-
-    move-result-object v10
-
-    const-string v6, "no-cache"
-
-    .line 9
-    invoke-virtual {v10, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v6
-
-    if-nez v6, :cond_7
-
-    const-string v6, "no-store"
-
-    invoke-virtual {v10, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_2
-
-    goto :goto_3
-
-    :cond_2
-    const-string v6, "max-age="
-
-    .line 10
-    invoke-virtual {v10, v6}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_3
-
-    const/16 v6, 0x8
-
-    .line 11
-    :try_start_0
-    invoke-virtual {v10, v6}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-static {v6}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
-
-    move-result-wide v13
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_2
-
-    :cond_3
-    const-string v6, "stale-while-revalidate="
-
-    .line 12
-    invoke-virtual {v10, v6}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_4
-
-    const/16 v6, 0x17
-
-    .line 13
-    :try_start_1
-    invoke-virtual {v10, v6}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-static {v6}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
-
-    move-result-wide v15
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-
-    goto :goto_2
-
-    :cond_4
-    const-string v6, "must-revalidate"
-
-    .line 14
-    invoke-virtual {v10, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v6
-
-    if-nez v6, :cond_5
-
-    const-string v6, "proxy-revalidate"
-
-    invoke-virtual {v10, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_6
-
-    :cond_5
-    const/4 v12, 0x1
-
-    :catch_0
-    :cond_6
-    :goto_2
-    add-int/lit8 v11, v11, 0x1
-
-    goto :goto_1
-
-    :cond_7
-    :goto_3
-    return-object v4
-
-    :cond_8
-    move v11, v12
-
-    const/4 v10, 0x1
-
-    goto :goto_4
-
-    :cond_9
-    const/4 v10, 0x0
-
-    const-wide/16 v13, 0x0
-
-    const-wide/16 v15, 0x0
-
-    :goto_4
-    const-string v4, "Expires"
-
-    .line 15
-    invoke-interface {v3, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Ljava/lang/String;
-
-    if-eqz v4, :cond_a
-
-    .line 16
-    invoke-static {v4}, Lj3/vd;->c(Ljava/lang/String;)J
-
-    move-result-wide v4
-
-    goto :goto_5
-
-    :cond_a
-    const-wide/16 v4, 0x0
-
-    :goto_5
-    const-string v6, "Last-Modified"
-
-    .line 17
-    invoke-interface {v3, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Ljava/lang/String;
-
-    if-eqz v6, :cond_b
-
-    .line 18
-    invoke-static {v6}, Lj3/vd;->c(Ljava/lang/String;)J
-
-    move-result-wide v6
-
-    goto :goto_6
-
-    :cond_b
-    const-wide/16 v6, 0x0
-
-    :goto_6
-    const-string v12, "ETag"
-
-    .line 19
-    invoke-interface {v3, v12}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v12
-
-    check-cast v12, Ljava/lang/String;
-
-    if-eqz v10, :cond_d
-
-    const-wide/16 v4, 0x3e8
-
-    mul-long v13, v13, v4
-
-    add-long/2addr v1, v13
-
-    if-eqz v11, :cond_c
-
-    move-wide v15, v1
-
-    goto :goto_7
-
-    .line 20
-    :cond_c
-    invoke-static/range {v15 .. v16}, Ljava/lang/Long;->signum(J)I
-
-    mul-long v15, v15, v4
-
-    add-long/2addr v15, v1
-
-    :goto_7
-    move-wide v10, v15
-
-    goto :goto_8
-
-    :cond_d
-    const-wide/16 v10, 0x0
-
-    cmp-long v13, v8, v10
-
-    if-lez v13, :cond_e
-
-    cmp-long v13, v4, v8
-
-    if-ltz v13, :cond_e
-
-    sub-long/2addr v4, v8
-
-    add-long/2addr v1, v4
-
-    move-wide v10, v1
-
-    goto :goto_8
-
-    :cond_e
-    move-wide v1, v10
-
-    .line 21
-    :goto_8
-    new-instance v4, Lj3/qz0;
-
-    invoke-direct {v4}, Lj3/qz0;-><init>()V
-
-    .line 22
-    iget-object v5, v0, Lj3/z41;->b:[B
-
-    iput-object v5, v4, Lj3/qz0;->a:[B
-
-    .line 23
-    iput-object v12, v4, Lj3/qz0;->b:Ljava/lang/String;
-
-    .line 24
-    iput-wide v1, v4, Lj3/qz0;->f:J
-
-    .line 25
-    iput-wide v10, v4, Lj3/qz0;->e:J
-
-    .line 26
-    iput-wide v8, v4, Lj3/qz0;->c:J
-
-    .line 27
-    iput-wide v6, v4, Lj3/qz0;->d:J
-
-    .line 28
-    iput-object v3, v4, Lj3/qz0;->g:Ljava/util/Map;
-
-    .line 29
-    iget-object v0, v0, Lj3/z41;->d:Ljava/util/List;
-
-    iput-object v0, v4, Lj3/qz0;->h:Ljava/util/List;
-
-    return-object v4
-.end method
-
-.method public static b(J)Ljava/lang/String;
-    .locals 3
-
     .line 1
-    new-instance v0, Ljava/text/SimpleDateFormat;
+    :pswitch_0
+    iget-object p1, p0, Lj3/vd;->h:Ljava/lang/Object;
 
-    sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
-
-    const-string v2, "EEE, dd MMM yyyy HH:mm:ss \'GMT\'"
-
-    invoke-direct {v0, v2, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
-
-    const-string v1, "GMT"
+    check-cast p1, Lj3/wd;
 
     .line 2
-    invoke-static {v1}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
+    iget-object p1, p1, Lj3/wd;->h:Ljava/lang/Object;
+
+    check-cast p1, Ljava/util/concurrent/atomic/AtomicInteger;
+
+    const/4 v0, -0x1
+
+    .line 3
+    invoke-virtual {p1, v0}, Ljava/util/concurrent/atomic/AtomicInteger;->set(I)V
+
+    return-void
+
+    .line 4
+    :goto_0
+    :try_start_0
+    iget-object v0, p0, Lj3/vd;->h:Ljava/lang/Object;
+
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzasj;
+
+    .line 5
+    invoke-static {p1}, Lcom/google/android/gms/internal/ads/zzcmt;->b(Ljava/lang/Throwable;)Lcom/google/android/gms/internal/ads/zzuw;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+    .line 6
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
-    .line 3
-    new-instance v1, Ljava/util/Date;
+    move-result-object v2
 
-    invoke-direct {v1, p0, p1}, Ljava/util/Date;-><init>(J)V
+    .line 7
+    sget v3, Lj3/bk0;->a:I
 
-    invoke-virtual {v0, v1}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    if-eqz v2, :cond_1
 
-    move-result-object p0
+    .line 8
+    invoke-virtual {v2}, Ljava/lang/String;->isEmpty()Z
 
-    return-object p0
-.end method
+    move-result v2
 
-.method public static c(Ljava/lang/String;)J
-    .locals 4
-
-    :try_start_0
-    const-string v0, "EEE, dd MMM yyyy HH:mm:ss zzz"
-
-    .line 1
-    new-instance v1, Ljava/text/SimpleDateFormat;
-
-    sget-object v2, Ljava/util/Locale;->US:Ljava/util/Locale;
-
-    invoke-direct {v1, v0, v2}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
-
-    const-string v0, "GMT"
-
-    .line 2
-    invoke-static {v0}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
-
-    move-result-object v0
-
-    invoke-virtual {v1, v0}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
-
-    .line 3
-    invoke-virtual {v1, p0}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/util/Date;->getTime()J
-
-    move-result-wide v0
-    :try_end_0
-    .catch Ljava/text/ParseException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-wide v0
-
-    :catch_0
-    nop
-
-    const-string v0, "Unable to parse dateStr: %s, falling back to 0"
-
-    const-string v1, "0"
-
-    .line 4
-    invoke-virtual {v1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x1
-
-    if-nez v1, :cond_1
-
-    const-string v1, "-1"
-
-    invoke-virtual {v1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    new-array v1, v3, [Ljava/lang/Object;
-
-    aput-object p0, v1, v2
-
-    .line 5
-    invoke-static {v0, v1}, Lj3/h7;->b(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    if-eqz v2, :cond_0
 
     goto :goto_1
 
-    :cond_1
-    :goto_0
-    new-array v1, v3, [Ljava/lang/Object;
+    :cond_0
+    const/4 v2, 0x0
 
-    aput-object p0, v1, v2
+    goto :goto_2
+
+    :cond_1
+    :goto_1
+    const/4 v2, 0x1
+
+    :goto_2
+    if-eqz v2, :cond_2
+
+    .line 9
+    iget-object p1, v1, Lcom/google/android/gms/internal/ads/zzuw;->h:Ljava/lang/String;
+
+    goto :goto_3
+
+    .line 10
+    :cond_2
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 11
+    :goto_3
+    new-instance v2, Lcom/google/android/gms/internal/ads/zzazl;
+
+    iget v1, v1, Lcom/google/android/gms/internal/ads/zzuw;->g:I
+
+    invoke-direct {v2, p1, v1}, Lcom/google/android/gms/internal/ads/zzazl;-><init>(Ljava/lang/String;I)V
+
+    .line 12
+    invoke-interface {v0, v2}, Lcom/google/android/gms/internal/ads/zzasj;->i3(Lcom/google/android/gms/internal/ads/zzazl;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_4
+
+    .line 13
+    :catch_0
+    invoke-static {}, Lj3/cj;->l()Z
+
+    :goto_4
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final onSuccess(Ljava/lang/Object;)V
+    .locals 1
+
+    iget v0, p0, Lj3/vd;->g:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
+
+    .line 1
+    :pswitch_0
+    iget-object p1, p0, Lj3/vd;->h:Ljava/lang/Object;
+
+    check-cast p1, Lj3/wd;
+
+    .line 2
+    iget-object p1, p1, Lj3/wd;->h:Ljava/lang/Object;
+
+    check-cast p1, Ljava/util/concurrent/atomic/AtomicInteger;
+
+    const/4 v0, 0x1
+
+    .line 3
+    invoke-virtual {p1, v0}, Ljava/util/concurrent/atomic/AtomicInteger;->set(I)V
+
+    return-void
+
+    .line 4
+    :goto_0
+    check-cast p1, Landroid/os/ParcelFileDescriptor;
+
+    .line 5
+    :try_start_0
+    iget-object v0, p0, Lj3/vd;->h:Ljava/lang/Object;
+
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzasj;
+
+    invoke-interface {v0, p1}, Lcom/google/android/gms/internal/ads/zzasj;->k1(Landroid/os/ParcelFileDescriptor;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_1
 
     .line 6
-    invoke-static {v0, v1}, Lj3/h7;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    :catch_0
+    invoke-static {}, Lj3/cj;->l()Z
 
     :goto_1
-    const-wide/16 v0, 0x0
+    return-void
 
-    return-wide v0
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

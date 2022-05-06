@@ -118,23 +118,23 @@
     if-nez v0, :cond_1
 
     .line 5
-    sget-object v0, La2/f;->w:Ljava/lang/Object;
+    sget-object v0, La2/f;->x:Ljava/lang/Object;
 
     monitor-enter v0
 
     .line 6
     :try_start_1
-    sget-object p0, La2/f;->x:La2/f;
+    sget-object p0, La2/f;->y:La2/f;
 
     if-eqz p0, :cond_0
 
     .line 7
-    iget-object v1, p0, La2/f;->n:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v1, p0, La2/f;->o:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
 
     .line 8
-    iget-object p0, p0, La2/f;->s:Landroid/os/Handler;
+    iget-object p0, p0, La2/f;->t:Landroid/os/Handler;
 
     const/16 v1, 0xa
 

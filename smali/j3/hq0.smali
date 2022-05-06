@@ -1,328 +1,171 @@
-.class public abstract Lj3/hq0;
-.super Ljava/util/AbstractList;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
-
-# interfaces
-.implements Lj3/tr0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<E:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/util/AbstractList<",
-        "TE;>;",
-        "Lj3/tr0<",
-        "TE;>;"
-    }
-.end annotation
-
-
-# instance fields
-.field public a:Z
+.class public final Lj3/hq0;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 8
 
-    .line 1
-    invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
+    const/4 v0, 0x4
 
-    const/4 v0, 0x1
-
-    .line 2
-    iput-boolean v0, p0, Lj3/hq0;->a:Z
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public F0()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lj3/hq0;->a:Z
-
-    return v0
-.end method
-
-.method public final a()V
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lj3/hq0;->a:Z
-
-    if-eqz v0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw v0
-.end method
-
-.method public add(Ljava/lang/Object;)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TE;)Z"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Lj3/hq0;->a()V
-
-    .line 2
-    invoke-super {p0, p1}, Ljava/util/AbstractList;->add(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public addAll(ILjava/util/Collection;)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I",
-            "Ljava/util/Collection<",
-            "+TE;>;)Z"
-        }
-    .end annotation
-
-    .line 3
-    invoke-virtual {p0}, Lj3/hq0;->a()V
-
-    .line 4
-    invoke-super {p0, p1, p2}, Ljava/util/AbstractList;->addAll(ILjava/util/Collection;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public addAll(Ljava/util/Collection;)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Collection<",
-            "+TE;>;)Z"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Lj3/hq0;->a()V
-
-    .line 2
-    invoke-super {p0, p1}, Ljava/util/AbstractList;->addAll(Ljava/util/Collection;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public clear()V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Lj3/hq0;->a()V
-
-    .line 2
-    invoke-super {p0}, Ljava/util/AbstractList;->clear()V
-
-    return-void
-.end method
-
-.method public equals(Ljava/lang/Object;)Z
-    .locals 6
-
-    const/4 v0, 0x1
-
-    if-ne p1, p0, :cond_0
-
-    return v0
-
-    .line 1
-    :cond_0
-    instance-of v1, p1, Ljava/util/List;
+    new-array v1, v0, [Ljava/lang/Object;
 
     const/4 v2, 0x0
 
-    if-nez v1, :cond_1
+    const-string v3, "([0-9a-zA-Z\\-\\.\\_~])+"
 
-    return v2
+    aput-object v3, v1, v2
+
+    const/4 v4, 0x1
+
+    aput-object v3, v1, v4
+
+    const/4 v5, 0x2
+
+    aput-object v3, v1, v5
+
+    const/4 v6, 0x3
+
+    aput-object v3, v1, v6
+
+    const-string v7, "^projects/%s/locations/%s/keyRings/%s/cryptoKeys/%s$"
+
+    .line 1
+    invoke-static {v7, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
 
     .line 2
-    :cond_1
-    instance-of v1, p1, Ljava/util/RandomAccess;
+    invoke-static {v1, v5}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;I)Ljava/util/regex/Pattern;
 
-    if-nez v1, :cond_2
+    const/4 v1, 0x5
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    aput-object v3, v1, v2
+
+    aput-object v3, v1, v4
+
+    aput-object v3, v1, v5
+
+    aput-object v3, v1, v6
+
+    aput-object v3, v1, v0
+
+    const-string v0, "^projects/%s/locations/%s/keyRings/%s/cryptoKeys/%s/cryptoKeyVersions/%s$"
 
     .line 3
-    invoke-super {p0, p1}, Ljava/util/AbstractList;->equals(Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result p1
-
-    return p1
+    move-result-object v0
 
     .line 4
-    :cond_2
-    check-cast p1, Ljava/util/List;
+    invoke-static {v0, v5}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;I)Ljava/util/regex/Pattern;
 
-    .line 5
-    invoke-virtual {p0}, Ljava/util/AbstractList;->size()I
+    return-void
+.end method
 
-    move-result v1
+.method public static a(I)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/InvalidAlgorithmParameterException;
+        }
+    .end annotation
 
-    .line 6
-    invoke-interface {p1}, Ljava/util/List;->size()I
+    const/16 v0, 0x10
 
-    move-result v3
+    if-eq p0, v0, :cond_1
 
-    if-eq v1, v3, :cond_3
+    const/16 v0, 0x20
 
-    return v2
-
-    :cond_3
-    const/4 v3, 0x0
-
-    :goto_0
-    if-ge v3, v1, :cond_5
-
-    .line 7
-    invoke-virtual {p0, v3}, Ljava/util/AbstractList;->get(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    invoke-interface {p1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v5}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-nez v4, :cond_4
-
-    return v2
-
-    :cond_4
-    add-int/lit8 v3, v3, 0x1
+    if-ne p0, v0, :cond_0
 
     goto :goto_0
 
-    :cond_5
-    return v0
-.end method
-
-.method public hashCode()I
-    .locals 4
-
     .line 1
-    invoke-virtual {p0}, Ljava/util/AbstractList;->size()I
-
-    move-result v0
+    :cond_0
+    new-instance v0, Ljava/security/InvalidAlgorithmParameterException;
 
     const/4 v1, 0x1
 
+    new-array v1, v1, [Ljava/lang/Object;
+
     const/4 v2, 0x0
 
-    :goto_0
-    if-ge v2, v0, :cond_0
-
-    mul-int/lit8 v1, v1, 0x1f
+    shl-int/lit8 p0, p0, 0x3
 
     .line 2
-    invoke-virtual {p0, v2}, Ljava/util/AbstractList;->get(I)Ljava/lang/Object;
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v3
+    move-result-object p0
 
-    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
+    aput-object p0, v1, v2
 
-    move-result v3
+    const-string p0, "invalid key size %d; only 128-bit and 256-bit AES keys are supported"
 
-    add-int/2addr v1, v3
+    .line 3
+    invoke-static {p0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    add-int/lit8 v2, v2, 0x1
+    move-result-object p0
 
-    goto :goto_0
+    invoke-direct {v0, p0}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
-    :cond_0
-    return v1
-.end method
+    throw v0
 
-.method public final m1()V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 1
-    iput-boolean v0, p0, Lj3/hq0;->a:Z
-
+    :cond_1
+    :goto_0
     return-void
 .end method
 
-.method public remove(Ljava/lang/Object;)Z
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Lj3/hq0;->a()V
-
-    .line 2
-    invoke-super {p0, p1}, Ljava/util/AbstractList;->remove(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public removeAll(Ljava/util/Collection;)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
+.method public static b(I)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "(",
-            "Ljava/util/Collection<",
-            "*>;)Z"
+            Ljava/security/GeneralSecurityException;
         }
     .end annotation
 
-    .line 1
-    invoke-virtual {p0}, Lj3/hq0;->a()V
+    if-ltz p0, :cond_0
 
-    .line 2
-    invoke-super {p0, p1}, Ljava/util/AbstractList;->removeAll(Ljava/util/Collection;)Z
+    if-gtz p0, :cond_0
 
-    move-result p1
-
-    return p1
-.end method
-
-.method public retainAll(Ljava/util/Collection;)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Collection<",
-            "*>;)Z"
-        }
-    .end annotation
+    return-void
 
     .line 1
-    invoke-virtual {p0}, Lj3/hq0;->a()V
+    :cond_0
+    new-instance v0, Ljava/security/GeneralSecurityException;
+
+    const/4 v1, 0x2
+
+    new-array v1, v1, [Ljava/lang/Object;
 
     .line 2
-    invoke-super {p0, p1}, Ljava/util/AbstractList;->retainAll(Ljava/util/Collection;)Z
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result p1
+    move-result-object p0
 
-    return p1
+    const/4 v2, 0x0
+
+    aput-object p0, v1, v2
+
+    const/4 p0, 0x1
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    aput-object v2, v1, p0
+
+    const-string p0, "key has version %d; only keys with version in range [0..%d] are supported"
+
+    .line 3
+    invoke-static {p0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
+
+    throw v0
 .end method

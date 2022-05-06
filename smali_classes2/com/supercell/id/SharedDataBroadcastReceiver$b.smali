@@ -21,21 +21,21 @@
         "Lle/j;",
         "Lke/l<",
         "Ljava/lang/Exception;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Landroid/app/PendingIntent;
+.field public final synthetic g:Landroid/app/PendingIntent;
 
 
 # direct methods
 .method public constructor <init>(Landroid/app/PendingIntent;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$b;->a:Landroid/app/PendingIntent;
+    iput-object p1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$b;->g:Landroid/app/PendingIntent;
 
     const/4 p1, 0x1
 
@@ -55,12 +55,12 @@
     if-eqz p1, :cond_0
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$b;->a:Landroid/app/PendingIntent;
+    iget-object p1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$b;->g:Landroid/app/PendingIntent;
 
     invoke-virtual {p1}, Landroid/app/PendingIntent;->send()V
 
     .line 3
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -68,7 +68,7 @@
     const-string p1, "it"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

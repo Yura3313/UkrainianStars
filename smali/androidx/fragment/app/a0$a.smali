@@ -3,7 +3,7 @@
 .source "FragmentManagerViewModel.java"
 
 # interfaces
-.implements Landroidx/lifecycle/y;
+.implements Landroidx/lifecycle/z;
 
 
 # annotations
@@ -29,12 +29,12 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Class;)Landroidx/lifecycle/w;
+.method public a(Ljava/lang/Class;)Landroidx/lifecycle/x;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Landroidx/lifecycle/w;",
+            "Landroidx/lifecycle/x;",
             ">(",
             "Ljava/lang/Class<",
             "TT;>;)TT;"

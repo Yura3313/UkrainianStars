@@ -40,9 +40,9 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final b:Ljava/util/HashMap;
+.field public final h:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -53,7 +53,7 @@
     .end annotation
 .end field
 
-.field public final h:Landroid/util/SparseArray;
+.field public final i:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray<",
@@ -87,21 +87,21 @@
     const/4 v0, 0x1
 
     .line 10
-    iput v0, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->a:I
+    iput v0, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->g:I
 
     .line 11
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->b:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->h:Ljava/util/HashMap;
 
     .line 12
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->h:Landroid/util/SparseArray;
+    iput-object v0, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->i:Landroid/util/SparseArray;
 
     return-void
 .end method
@@ -121,21 +121,21 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->a:I
+    iput p1, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->g:I
 
     .line 3
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->b:Ljava/util/HashMap;
+    iput-object p1, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->h:Ljava/util/HashMap;
 
     .line 4
     new-instance p1, Landroid/util/SparseArray;
 
     invoke-direct {p1}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->h:Landroid/util/SparseArray;
+    iput-object p1, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->i:Landroid/util/SparseArray;
 
     .line 5
     invoke-virtual {p2}, Ljava/util/ArrayList;->size()I
@@ -156,12 +156,12 @@
     check-cast v1, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;
 
     .line 6
-    iget-object v2, v1, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->b:Ljava/lang/String;
+    iget-object v2, v1, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->h:Ljava/lang/String;
 
-    iget v1, v1, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->h:I
+    iget v1, v1, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->i:I
 
     .line 7
-    iget-object v3, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->b:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->h:Ljava/util/HashMap;
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -170,7 +170,7 @@
     invoke-virtual {v3, v2, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
-    iget-object v3, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->h:Landroid/util/SparseArray;
+    iget-object v3, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->i:Landroid/util/SparseArray;
 
     invoke-virtual {v3, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
@@ -199,7 +199,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->a:I
+    iget v1, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->g:I
 
     const/4 v2, 0x4
 
@@ -217,7 +217,7 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 6
-    iget-object v2, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->b:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->h:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
@@ -243,7 +243,7 @@
     .line 7
     new-instance v4, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;
 
-    iget-object v5, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->b:Ljava/util/HashMap;
+    iget-object v5, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter;->h:Ljava/util/HashMap;
 
     invoke-virtual {v5, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

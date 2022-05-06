@@ -1,59 +1,71 @@
 .class public final Lj3/lh;
-.super Ljava/io/FilterInputStream;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Lj3/bm0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj3/bm0<",
+        "Ljava/util/Map<",
+        "Ljava/lang/String;",
+        "Ljava/lang/String;",
+        ">;>;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Ljava/net/HttpURLConnection;
+.field public final synthetic g:Ljava/util/List;
+
+.field public final synthetic h:Ljava/lang/String;
+
+.field public final synthetic i:Lj3/jh;
 
 
 # direct methods
-.method public constructor <init>(Ljava/net/HttpURLConnection;)V
-    .locals 1
+.method public constructor <init>(Lj3/jh;Ljava/util/List;Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    :try_start_0
-    invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+    iput-object p1, p0, Lj3/lh;->i:Lj3/jh;
 
-    move-result-object v0
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    iput-object p2, p0, Lj3/lh;->g:Ljava/util/List;
 
-    goto :goto_0
+    iput-object p3, p0, Lj3/lh;->h:Ljava/lang/String;
 
-    .line 2
-    :catch_0
-    invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
-
-    move-result-object v0
-
-    .line 3
-    :goto_0
-    invoke-direct {p0, v0}, Ljava/io/FilterInputStream;-><init>(Ljava/io/InputStream;)V
-
-    .line 4
-    iput-object p1, p0, Lj3/lh;->a:Ljava/net/HttpURLConnection;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final close()V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+.method public final a(Ljava/lang/Throwable;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final synthetic onSuccess(Ljava/lang/Object;)V
+    .locals 3
 
     .line 1
-    invoke-super {p0}, Ljava/io/FilterInputStream;->close()V
+    check-cast p1, Ljava/util/Map;
 
     .line 2
-    iget-object v0, p0, Lj3/lh;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lj3/lh;->i:Lj3/jh;
 
-    invoke-virtual {v0}, Ljava/net/HttpURLConnection;->disconnect()V
+    iget-object v1, p0, Lj3/lh;->g:Ljava/util/List;
+
+    iget-object v2, p0, Lj3/lh;->h:Ljava/lang/String;
+
+    .line 3
+    invoke-virtual {v0, p1, v1, v2}, Lj3/jh;->u(Ljava/util/Map;Ljava/util/List;Ljava/lang/String;)V
 
     return-void
 .end method

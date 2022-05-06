@@ -1,104 +1,102 @@
-.class public final synthetic Lj3/cb;
+.class public final Lj3/cb;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/util/concurrent/Callable;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final a:Landroid/content/Context;
+.field public final synthetic g:Landroid/content/Context;
 
-.field public final b:Landroid/webkit/WebSettings;
+.field public final synthetic h:Lj3/bb;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/webkit/WebSettings;)V
+.method public constructor <init>(Lj3/bb;Landroid/content/Context;)V
     .locals 0
 
+    .line 1
+    iput-object p1, p0, Lj3/cb;->h:Lj3/bb;
+
+    iput-object p2, p0, Lj3/cb;->g:Landroid/content/Context;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lj3/cb;->a:Landroid/content/Context;
-
-    iput-object p2, p0, Lj3/cb;->b:Landroid/webkit/WebSettings;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 6
+.method public final run()V
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Lj3/cb;->a:Landroid/content/Context;
-
-    iget-object v1, p0, Lj3/cb;->b:Landroid/webkit/WebSettings;
+    iget-object v0, p0, Lj3/cb;->h:Lj3/bb;
 
     .line 2
-    invoke-virtual {v0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
-
-    move-result-object v2
-
-    const/4 v3, 0x1
-
-    if-eqz v2, :cond_0
+    iget-object v0, v0, Lj3/bb;->d:Ljava/lang/Object;
 
     .line 3
-    invoke-virtual {v0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Landroid/webkit/WebSettings;->setAppCachePath(Ljava/lang/String;)V
-
-    const-wide/16 v4, 0x0
+    monitor-enter v0
 
     .line 4
-    invoke-virtual {v1, v4, v5}, Landroid/webkit/WebSettings;->setAppCacheMaxSize(J)V
+    :try_start_0
+    iget-object v1, p0, Lj3/cb;->h:Lj3/bb;
+
+    iget-object v2, p0, Lj3/cb;->g:Landroid/content/Context;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     .line 5
-    invoke-virtual {v1, v3}, Landroid/webkit/WebSettings;->setAppCacheEnabled(Z)V
+    :try_start_1
+    new-instance v3, Landroid/webkit/WebView;
 
-    :cond_0
-    const-string v2, "com.google.android.gms.ads.db"
+    invoke-direct {v3, v2}, Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v3}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/webkit/WebSettings;->getUserAgentString()Ljava/lang/String;
+
+    move-result-object v2
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_0
 
     .line 6
-    invoke-virtual {v0, v2}, Landroid/content/Context;->getDatabasePath(Ljava/lang/String;)Ljava/io/File;
+    :catchall_0
+    :try_start_2
+    invoke-static {}, Lj3/bb;->H()Ljava/lang/String;
 
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v1, v0}, Landroid/webkit/WebSettings;->setDatabasePath(Ljava/lang/String;)V
+    move-result-object v2
 
     .line 7
-    invoke-virtual {v1, v3}, Landroid/webkit/WebSettings;->setDatabaseEnabled(Z)V
+    :goto_0
+    iput-object v2, v1, Lj3/bb;->e:Ljava/lang/String;
 
     .line 8
-    invoke-virtual {v1, v3}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V
-
-    const/4 v0, 0x0
+    iget-object v1, p0, Lj3/cb;->h:Lj3/bb;
 
     .line 9
-    invoke-virtual {v1, v0}, Landroid/webkit/WebSettings;->setDisplayZoomControls(Z)V
+    iget-object v1, v1, Lj3/bb;->d:Ljava/lang/Object;
 
     .line 10
-    invoke-virtual {v1, v3}, Landroid/webkit/WebSettings;->setBuiltInZoomControls(Z)V
+    invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
 
     .line 11
-    invoke-virtual {v1, v3}, Landroid/webkit/WebSettings;->setSupportZoom(Z)V
+    monitor-exit v0
 
-    .line 12
-    invoke-virtual {v1, v0}, Landroid/webkit/WebSettings;->setAllowContentAccess(Z)V
+    return-void
 
-    .line 13
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    :catchall_1
+    move-exception v1
 
-    return-object v0
+    monitor-exit v0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    throw v1
 .end method

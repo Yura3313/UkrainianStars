@@ -1,122 +1,326 @@
 .class public final Lcom/google/android/play/core/assetpacks/g0;
-.super Ljava/lang/Object;
+.super Lcom/google/android/play/core/assetpacks/g2;
 
 
 # instance fields
-.field public final a:Ly4/j0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ly4/j0<",
-            "Lcom/google/android/play/core/assetpacks/s2;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final a:Ljava/lang/String;
+
+.field public final b:J
+
+.field public final c:I
+
+.field public final d:Z
+
+.field public final e:[B
 
 
 # direct methods
-.method public constructor <init>(Ly4/j0;)V
+.method public constructor <init>(Ljava/lang/String;JIZ[B)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ly4/j0<",
-            "Lcom/google/android/play/core/assetpacks/s2;",
-            ">;)V"
-        }
-    .end annotation
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lcom/google/android/play/core/assetpacks/g2;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/g0;->a:Ly4/j0;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/g0;->a:Ljava/lang/String;
+
+    iput-wide p2, p0, Lcom/google/android/play/core/assetpacks/g0;->b:J
+
+    iput p4, p0, Lcom/google/android/play/core/assetpacks/g0;->c:I
+
+    iput-boolean p5, p0, Lcom/google/android/play/core/assetpacks/g0;->d:Z
+
+    iput-object p6, p0, Lcom/google/android/play/core/assetpacks/g0;->e:[B
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(ILjava/lang/String;Ljava/lang/String;I)Ljava/io/InputStream;
-    .locals 5
+.method public final a()Ljava/lang/String;
+    .locals 1
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/g0;->a:Ly4/j0;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/g0;->a:Ljava/lang/String;
 
-    invoke-interface {v0}, Ly4/j0;->a()Ljava/lang/Object;
+    return-object v0
+.end method
+
+.method public final b()J
+    .locals 2
+
+    iget-wide v0, p0, Lcom/google/android/play/core/assetpacks/g0;->b:J
+
+    return-wide v0
+.end method
+
+.method public final c()I
+    .locals 1
+
+    iget v0, p0, Lcom/google/android/play/core/assetpacks/g0;->c:I
+
+    return v0
+.end method
+
+.method public final d()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/google/android/play/core/assetpacks/g0;->d:Z
+
+    return v0
+.end method
+
+.method public final e()[B
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/g0;->e:[B
+
+    return-object v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 7
+
+    const/4 v0, 0x1
+
+    if-eq p1, p0, :cond_3
+
+    instance-of v1, p1, Lcom/google/android/play/core/assetpacks/g2;
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_2
+
+    check-cast p1, Lcom/google/android/play/core/assetpacks/g2;
+
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/g0;->a:Ljava/lang/String;
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {p1}, Lcom/google/android/play/core/assetpacks/g2;->a()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p1}, Lcom/google/android/play/core/assetpacks/g2;->a()Ljava/lang/String;
+
+    move-result-object v1
+
+    if-nez v1, :cond_2
+
+    :goto_0
+    iget-wide v3, p0, Lcom/google/android/play/core/assetpacks/g0;->b:J
+
+    invoke-virtual {p1}, Lcom/google/android/play/core/assetpacks/g2;->b()J
+
+    move-result-wide v5
+
+    cmp-long v1, v3, v5
+
+    if-nez v1, :cond_2
+
+    iget v1, p0, Lcom/google/android/play/core/assetpacks/g0;->c:I
+
+    invoke-virtual {p1}, Lcom/google/android/play/core/assetpacks/g2;->c()I
+
+    move-result v3
+
+    if-ne v1, v3, :cond_2
+
+    iget-boolean v1, p0, Lcom/google/android/play/core/assetpacks/g0;->d:Z
+
+    invoke-virtual {p1}, Lcom/google/android/play/core/assetpacks/g2;->d()Z
+
+    move-result v3
+
+    if-ne v1, v3, :cond_2
+
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/g0;->e:[B
+
+    instance-of v3, p1, Lcom/google/android/play/core/assetpacks/g0;
+
+    if-eqz v3, :cond_1
+
+    check-cast p1, Lcom/google/android/play/core/assetpacks/g0;
+
+    iget-object p1, p1, Lcom/google/android/play/core/assetpacks/g0;->e:[B
+
+    goto :goto_1
+
+    :cond_1
+    invoke-virtual {p1}, Lcom/google/android/play/core/assetpacks/g2;->e()[B
+
+    move-result-object p1
+
+    :goto_1
+    invoke-static {v1, p1}, Ljava/util/Arrays;->equals([B[B)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    return v0
+
+    :cond_2
+    return v2
+
+    :cond_3
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 6
+
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/g0;->a:Ljava/lang/String;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    iget-wide v1, p0, Lcom/google/android/play/core/assetpacks/g0;->b:J
+
+    const v3, 0xf4243
+
+    xor-int/2addr v0, v3
+
+    mul-int v0, v0, v3
+
+    const/16 v4, 0x20
+
+    ushr-long v4, v1, v4
+
+    xor-long/2addr v1, v4
+
+    long-to-int v2, v1
+
+    xor-int/2addr v0, v2
+
+    mul-int v0, v0, v3
+
+    iget v1, p0, Lcom/google/android/play/core/assetpacks/g0;->c:I
+
+    xor-int/2addr v0, v1
+
+    mul-int v0, v0, v3
+
+    iget-boolean v1, p0, Lcom/google/android/play/core/assetpacks/g0;->d:Z
+
+    if-nez v1, :cond_1
+
+    const/16 v1, 0x4d5
+
+    goto :goto_1
+
+    :cond_1
+    const/16 v1, 0x4cf
+
+    :goto_1
+    xor-int/2addr v0, v1
+
+    mul-int v0, v0, v3
+
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/g0;->e:[B
+
+    invoke-static {v1}, Ljava/util/Arrays;->hashCode([B)I
+
+    move-result v1
+
+    xor-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 9
+
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/g0;->a:Ljava/lang/String;
+
+    iget-wide v1, p0, Lcom/google/android/play/core/assetpacks/g0;->b:J
+
+    iget v3, p0, Lcom/google/android/play/core/assetpacks/g0;->c:I
+
+    iget-boolean v4, p0, Lcom/google/android/play/core/assetpacks/g0;->d:Z
+
+    iget-object v5, p0, Lcom/google/android/play/core/assetpacks/g0;->e:[B
+
+    invoke-static {v5}, Ljava/util/Arrays;->toString([B)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/String;->length()I
+
+    move-result v6
+
+    invoke-static {v5}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/String;->length()I
+
+    move-result v7
+
+    new-instance v8, Ljava/lang/StringBuilder;
+
+    add-int/lit8 v6, v6, 0x68
+
+    add-int/2addr v6, v7
+
+    invoke-direct {v8, v6}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string v6, "ZipEntry{name="
+
+    invoke-virtual {v8, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, ", size="
+
+    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    const-string v0, ", compressionMethod="
+
+    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v0, ", isPartial="
+
+    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v0, ", headerBytes="
+
+    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "}"
+
+    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/android/play/core/assetpacks/s2;
-
-    invoke-interface {v0, p1, p2, p3, p4}, Lcom/google/android/play/core/assetpacks/s2;->x0(ILjava/lang/String;Ljava/lang/String;I)Lcom/google/android/play/core/tasks/Task;
-
-    move-result-object v0
-
-    :try_start_0
-    invoke-static {v0}, Lcom/google/android/play/core/tasks/Tasks;->await(Lcom/google/android/play/core/tasks/Task;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/os/ParcelFileDescriptor;
-
-    new-instance v1, Landroid/os/ParcelFileDescriptor$AutoCloseInputStream;
-
-    invoke-direct {v1, v0}, Landroid/os/ParcelFileDescriptor$AutoCloseInputStream;-><init>(Landroid/os/ParcelFileDescriptor;)V
-    :try_end_0
-    .catch Ljava/util/concurrent/ExecutionException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object v1
-
-    :catch_0
-    move-exception p2
-
-    new-instance p3, Lcom/google/android/play/core/assetpacks/o0;
-
-    const-string p4, "Extractor was interrupted while waiting for chunk file."
-
-    invoke-direct {p3, p4, p2, p1}, Lcom/google/android/play/core/assetpacks/o0;-><init>(Ljava/lang/String;Ljava/lang/Exception;I)V
-
-    throw p3
-
-    :catch_1
-    move-exception v0
-
-    new-instance v1, Lcom/google/android/play/core/assetpacks/o0;
-
-    const/4 v2, 0x4
-
-    new-array v2, v2, [Ljava/lang/Object;
-
-    const/4 v3, 0x0
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v4
-
-    aput-object v4, v2, v3
-
-    const/4 v3, 0x1
-
-    aput-object p2, v2, v3
-
-    const/4 p2, 0x2
-
-    aput-object p3, v2, p2
-
-    const/4 p2, 0x3
-
-    invoke-static {p4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p3
-
-    aput-object p3, v2, p2
-
-    const-string p2, "Error opening chunk file, session %s packName %s sliceId %s, chunkNumber %s"
-
-    invoke-static {p2, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-direct {v1, p2, v0, p1}, Lcom/google/android/play/core/assetpacks/o0;-><init>(Ljava/lang/String;Ljava/lang/Exception;I)V
-
-    throw v1
+    return-object v0
 .end method

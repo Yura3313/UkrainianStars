@@ -22,18 +22,18 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/o;)V
+.method public constructor <init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/p;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/lifecycle/o<",
+            "Landroidx/lifecycle/p<",
             "-TT;>;)V"
         }
     .end annotation
 
     .line 1
-    invoke-direct {p0, p1, p2}, Landroidx/lifecycle/LiveData$c;-><init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/o;)V
+    invoke-direct {p0, p1, p2}, Landroidx/lifecycle/LiveData$c;-><init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/p;)V
 
     return-void
 .end method

@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field public final a:Ln9/b;
+.field public final a:Ln9/a;
 
 
 # direct methods
@@ -19,15 +19,15 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v0, Ln9/b;
+    new-instance v0, Ln9/a;
 
-    new-instance v1, Ln9/a;
+    new-instance v1, Lcom/google/android/gms/ads/i;
 
-    invoke-direct {v1}, Ln9/a;-><init>()V
+    invoke-direct {v1}, Lcom/google/android/gms/ads/i;-><init>()V
 
-    invoke-direct {v0, p1, v1}, Ln9/b;-><init>(Landroid/content/Context;Lf9/b;)V
+    invoke-direct {v0, p1, v1}, Ln9/a;-><init>(Landroid/content/Context;Lf9/b;)V
 
-    iput-object v0, p0, Li9/a;->a:Ln9/b;
+    iput-object v0, p0, Li9/a;->a:Ln9/a;
 
     return-void
 .end method
@@ -40,10 +40,10 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lb9/c;",
+            "Lb9/d;",
             ">;)",
             "Ljava/util/List<",
-            "Lb9/c;",
+            "Lb9/d;",
             ">;"
         }
     .end annotation
@@ -70,12 +70,12 @@
 
     move-result-object v2
 
-    check-cast v2, Lb9/c;
+    check-cast v2, Lb9/d;
 
     .line 3
-    iget-object v3, v2, Lb9/c;->d:Ljava/lang/String;
+    iget-object v3, v2, Lb9/d;->d:Ljava/lang/String;
 
-    invoke-static {v3}, Landroidx/savedstate/d;->j(Ljava/lang/String;)Z
+    invoke-static {v3}, Lp5/c0;->h(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -109,19 +109,19 @@
 
     move-result-object v2
 
-    check-cast v2, Lb9/c;
+    check-cast v2, Lb9/d;
 
     .line 7
-    iget-object v3, v2, Lb9/c;->d:Ljava/lang/String;
+    iget-object v3, v2, Lb9/d;->d:Ljava/lang/String;
 
-    invoke-static {v3}, Landroidx/savedstate/d;->j(Ljava/lang/String;)Z
+    invoke-static {v3}, Lp5/c0;->h(Ljava/lang/String;)Z
 
     move-result v3
 
     if-nez v3, :cond_2
 
     .line 8
-    iget-object v3, v2, Lb9/c;->d:Ljava/lang/String;
+    iget-object v3, v2, Lb9/d;->d:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -130,7 +130,7 @@
     check-cast v3, Ljava/util/List;
 
     .line 9
-    invoke-static {v3}, Lid/g;->a(Ljava/util/List;)Z
+    invoke-static {v3}, Lk2/h;->a(Ljava/util/List;)Z
 
     move-result v4
 
@@ -146,7 +146,7 @@
     invoke-interface {v3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 12
-    iget-object v2, v2, Lb9/c;->d:Ljava/lang/String;
+    iget-object v2, v2, Lb9/d;->d:Ljava/lang/String;
 
     invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -175,10 +175,10 @@
 
     move-result-object v3
 
-    check-cast v3, Lb9/c;
+    check-cast v3, Lb9/d;
 
     .line 15
-    iget-object v4, v3, Lb9/c;->c:Ljava/lang/String;
+    iget-object v4, v3, Lb9/d;->c:Ljava/lang/String;
 
     invoke-virtual {v1, v4}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -187,14 +187,14 @@
     check-cast v4, Ljava/util/List;
 
     .line 16
-    invoke-static {v4}, Lid/g;->b(Ljava/util/List;)Z
+    invoke-static {v4}, Lk2/h;->b(Ljava/util/List;)Z
 
     move-result v5
 
     if-eqz v5, :cond_5
 
     .line 17
-    iput-object v4, v3, Lb9/c;->e:Ljava/util/List;
+    iput-object v4, v3, Lb9/d;->e:Ljava/util/List;
 
     .line 18
     invoke-virtual {p1, v4}, Ljava/util/LinkedList;->addAll(Ljava/util/Collection;)Z
@@ -215,10 +215,10 @@
 
     move-result-object v2
 
-    check-cast v2, Lb9/c;
+    check-cast v2, Lb9/d;
 
     .line 21
-    iget-object v3, v2, Lb9/c;->c:Ljava/lang/String;
+    iget-object v3, v2, Lb9/d;->c:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -227,14 +227,14 @@
     check-cast v3, Ljava/util/List;
 
     .line 22
-    invoke-static {v3}, Lid/g;->b(Ljava/util/List;)Z
+    invoke-static {v3}, Lk2/h;->b(Ljava/util/List;)Z
 
     move-result v4
 
     if-eqz v4, :cond_6
 
     .line 23
-    iput-object v3, v2, Lb9/c;->e:Ljava/util/List;
+    iput-object v3, v2, Lb9/d;->e:Ljava/util/List;
 
     .line 24
     invoke-virtual {p1, v3}, Ljava/util/LinkedList;->addAll(Ljava/util/Collection;)Z
@@ -372,7 +372,7 @@
     return-object v0
 .end method
 
-.method public final c(Landroid/database/Cursor;)Lb9/c;
+.method public final c(Landroid/database/Cursor;)Lb9/d;
     .locals 6
 
     const-string v0, "local_id"
@@ -420,32 +420,32 @@
     move-result-object p1
 
     .line 5
-    new-instance v4, Lb9/c;
+    new-instance v4, Lb9/d;
 
     const/4 v5, 0x0
 
-    invoke-direct {v4, v2, v3, p1, v5}, Lb9/c;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
+    invoke-direct {v4, v2, v3, p1, v5}, Lb9/d;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
 
     .line 6
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
 
-    iput-object p1, v4, Lb9/c;->a:Ljava/lang/Long;
+    iput-object p1, v4, Lb9/d;->a:Ljava/lang/Long;
 
     return-object v4
 .end method
 
-.method public final d(Landroid/database/Cursor;Ljava/util/List;)Lb9/b;
+.method public final d(Landroid/database/Cursor;Ljava/util/List;)Lb9/c;
     .locals 18
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/database/Cursor;",
             "Ljava/util/List<",
-            "Lb9/c;",
+            "Lb9/d;",
             ">;)",
-            "Lb9/b;"
+            "Lb9/c;"
         }
     .end annotation
 
@@ -478,7 +478,7 @@
     const/4 v4, 0x0
 
     .line 3
-    invoke-static {v0, v3, v4}, Lr5/a;->k(Landroid/database/Cursor;Ljava/lang/String;Z)Z
+    invoke-static {v0, v3, v4}, Lcom/google/android/gms/ads/i;->k(Landroid/database/Cursor;Ljava/lang/String;Z)Z
 
     move-result v12
 
@@ -576,7 +576,7 @@
     move-result-object v13
 
     .line 13
-    new-instance v0, Lb9/b;
+    new-instance v0, Lb9/c;
 
     move-object v4, v0
 
@@ -586,17 +586,17 @@
 
     move-object/from16 v14, p2
 
-    invoke-direct/range {v4 .. v14}, Lb9/b;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/util/List;Ljava/util/List;)V
+    invoke-direct/range {v4 .. v14}, Lb9/c;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/util/List;Ljava/util/List;)V
 
     .line 14
-    iput-wide v1, v0, Lb9/b;->d:J
+    iput-wide v1, v0, Lb9/c;->d:J
 
     .line 15
     invoke-static/range {v16 .. v17}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v1
 
-    iput-object v1, v0, Lb9/b;->a:Ljava/lang/Long;
+    iput-object v1, v0, Lb9/c;->a:Ljava/lang/Long;
 
     return-object v0
 .end method
@@ -628,7 +628,7 @@
 
     .line 2
     :try_start_1
-    iget-object v0, p0, Li9/a;->a:Ln9/b;
+    iget-object v0, p0, Li9/a;->a:Ln9/a;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteOpenHelper;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -699,7 +699,7 @@
     const-string v2, "Error in deleting the model table"
 
     .line 8
-    invoke-static {v1, v2, v0}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, v0}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
@@ -770,7 +770,7 @@
 
     .line 2
     :try_start_1
-    iget-object v4, p0, Li9/a;->a:Ln9/b;
+    iget-object v4, p0, Li9/a;->a:Ln9/a;
 
     invoke-virtual {v4}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -838,7 +838,7 @@
     move-result-object v0
 
     .line 11
-    invoke-static {p2, v0, p1}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p2, v0, p1}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
@@ -888,7 +888,7 @@
     move-result-object v0
 
     .line 14
-    invoke-static {v4, v0, v2}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v4, v0, v2}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
@@ -937,7 +937,7 @@
     move-result-object v1
 
     .line 19
-    invoke-static {v0, v1, p1}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1, p1}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
@@ -998,7 +998,7 @@
     move-result-object v1
 
     .line 25
-    invoke-static {v0, v1, p1}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1, p1}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 26
     :cond_2
@@ -1044,7 +1044,7 @@
 
     .line 2
     :try_start_1
-    iget-object v4, p0, Li9/a;->a:Ln9/b;
+    iget-object v4, p0, Li9/a;->a:Ln9/a;
 
     invoke-virtual {v4}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1112,7 +1112,7 @@
     move-result-object v0
 
     .line 11
-    invoke-static {p2, v0, p1}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p2, v0, p1}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
@@ -1162,7 +1162,7 @@
     move-result-object v0
 
     .line 14
-    invoke-static {v4, v0, v2}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v4, v0, v2}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
@@ -1211,7 +1211,7 @@
     move-result-object v1
 
     .line 19
-    invoke-static {v0, v1, p1}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1, p1}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
@@ -1272,7 +1272,7 @@
     move-result-object v1
 
     .line 25
-    invoke-static {v0, v1, p1}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1, p1}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 26
     :cond_2
@@ -1295,10 +1295,10 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lb9/c;",
+            "Lb9/d;",
             ">;)",
             "Ljava/util/List<",
-            "Lb9/c;",
+            "Lb9/d;",
             ">;"
         }
     .end annotation
@@ -1314,7 +1314,7 @@
     invoke-direct {v1, p1}, Ljava/util/LinkedList;-><init>(Ljava/util/Collection;)V
 
     .line 3
-    invoke-static {p1}, Lid/g;->a(Ljava/util/List;)Z
+    invoke-static {p1}, Lk2/h;->a(Ljava/util/List;)Z
 
     move-result p1
 
@@ -1336,27 +1336,27 @@
 
     move-result-object p1
 
-    check-cast p1, Lb9/c;
+    check-cast p1, Lb9/d;
 
     .line 6
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 7
-    iget-object v2, p1, Lb9/c;->e:Ljava/util/List;
+    iget-object v2, p1, Lb9/d;->e:Ljava/util/List;
 
-    invoke-static {v2}, Lid/g;->b(Ljava/util/List;)Z
+    invoke-static {v2}, Lk2/h;->b(Ljava/util/List;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
     .line 8
-    iget-object v2, p1, Lb9/c;->e:Ljava/util/List;
+    iget-object v2, p1, Lb9/d;->e:Ljava/util/List;
 
     invoke-virtual {v1, v2}, Ljava/util/LinkedList;->addAll(Ljava/util/Collection;)Z
 
     .line 9
-    iget-object p1, p1, Lb9/c;->e:Ljava/util/List;
+    iget-object p1, p1, Lb9/d;->e:Ljava/util/List;
 
     invoke-interface {p1}, Ljava/util/List;->clear()V
 
@@ -1372,7 +1372,7 @@
         value = {
             "(J)",
             "Ljava/util/List<",
-            "Lb9/c;",
+            "Lb9/d;",
             ">;"
         }
     .end annotation
@@ -1401,7 +1401,7 @@
 
     .line 3
     :try_start_0
-    iget-object v0, p0, Li9/a;->a:Ln9/b;
+    iget-object v0, p0, Li9/a;->a:Ln9/a;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteOpenHelper;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1431,7 +1431,7 @@
 
     .line 6
     :cond_0
-    invoke-virtual {p0, p2}, Li9/a;->c(Landroid/database/Cursor;)Lb9/c;
+    invoke-virtual {p0, p2}, Li9/a;->c(Landroid/database/Cursor;)Lb9/d;
 
     move-result-object v0
 
@@ -1464,7 +1464,7 @@
     const-string v2, "Error in reading smart intents from db"
 
     .line 9
-    invoke-static {v1, v2, v0}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, v0}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -1501,7 +1501,7 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Li9/a;->a:Ln9/b;
+    iget-object v0, p0, Li9/a;->a:Ln9/a;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1545,7 +1545,7 @@
 
     move-result-object p2
 
-    invoke-static {v0, p2, p1}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, p2, p1}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -1569,7 +1569,7 @@
         value = {
             "(J",
             "Ljava/util/List<",
-            "Lb9/c;",
+            "Lb9/d;",
             ">;)",
             "Ljava/util/List<",
             "Ljava/lang/Long;",
@@ -1607,7 +1607,7 @@
 
     move-result-object v4
 
-    check-cast v4, Lb9/c;
+    check-cast v4, Lb9/d;
 
     .line 4
     new-instance v5, Landroid/content/ContentValues;
@@ -1624,21 +1624,21 @@
     invoke-virtual {v5, v7, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
     .line 6
-    iget-object v6, v4, Lb9/c;->b:Ljava/lang/String;
+    iget-object v6, v4, Lb9/d;->b:Ljava/lang/String;
 
     const-string v7, "label"
 
     invoke-virtual {v5, v7, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 7
-    iget-object v6, v4, Lb9/c;->c:Ljava/lang/String;
+    iget-object v6, v4, Lb9/d;->c:Ljava/lang/String;
 
     const-string v7, "server_id"
 
     invoke-virtual {v5, v7, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8
-    iget-object v4, v4, Lb9/c;->d:Ljava/lang/String;
+    iget-object v4, v4, Lb9/d;->d:Ljava/lang/String;
 
     const-string v6, "parent_server_id"
 
@@ -1654,7 +1654,7 @@
 
     .line 10
     :try_start_0
-    iget-object p2, p0, Li9/a;->a:Ln9/b;
+    iget-object p2, p0, Li9/a;->a:Ln9/a;
 
     invoke-virtual {p2}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1756,7 +1756,7 @@
     const-string p3, "Error in inserting in smart intents table: "
 
     .line 19
-    invoke-static {v1, p3, p1}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, p3, p1}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
@@ -1778,7 +1778,7 @@
     move-exception p1
 
     .line 21
-    invoke-static {v1, v0, p1}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v0, p1}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_2
     :goto_4
@@ -1813,7 +1813,7 @@
     move-exception p1
 
     .line 24
-    invoke-static {v1, v0, p1}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v0, p1}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 25
     :cond_3
@@ -1935,7 +1935,7 @@
 
     .line 11
     :try_start_0
-    iget-object p2, p0, Li9/a;->a:Ln9/b;
+    iget-object p2, p0, Li9/a;->a:Ln9/a;
 
     invoke-virtual {p2}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -2037,7 +2037,7 @@
     const-string p3, "Error in inserting in word probabilities table: "
 
     .line 20
-    invoke-static {v1, p3, p1}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, p3, p1}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
@@ -2062,7 +2062,7 @@
     move-exception p1
 
     .line 23
-    invoke-static {v1, v0, p1}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v0, p1}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_2
     :goto_3
@@ -2093,7 +2093,7 @@
     move-exception p2
 
     .line 26
-    invoke-static {v1, v0, p2}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v0, p2}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 27
     :cond_3
@@ -2200,7 +2200,7 @@
     return-object v2
 .end method
 
-.method public final n(Lb9/b;Lg7/c;)Landroid/content/ContentValues;
+.method public final n(Lb9/c;Lg7/c;)Landroid/content/ContentValues;
     .locals 3
 
     .line 1
@@ -2209,7 +2209,7 @@
     invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
 
     .line 2
-    iget-object p2, p2, Lg7/c;->a:Ljava/lang/Long;
+    iget-object p2, p2, Lg7/c;->g:Ljava/lang/Long;
 
     const-string v1, "user_local_id"
 
@@ -2217,14 +2217,14 @@
     invoke-virtual {v0, v1, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
     .line 4
-    iget-object p2, p1, Lb9/b;->b:Ljava/lang/String;
+    iget-object p2, p1, Lb9/c;->b:Ljava/lang/String;
 
     const-string v1, "server_id"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 5
-    iget p2, p1, Lb9/b;->c:I
+    iget p2, p1, Lb9/c;->c:I
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2235,7 +2235,7 @@
     invoke-virtual {v0, v1, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
     .line 6
-    iget-boolean p2, p1, Lb9/b;->j:Z
+    iget-boolean p2, p1, Lb9/c;->j:Z
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2246,7 +2246,7 @@
     invoke-virtual {v0, v1, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
     .line 7
-    iget-wide v1, p1, Lb9/b;->d:J
+    iget-wide v1, p1, Lb9/c;->d:J
 
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -2257,42 +2257,42 @@
     invoke-virtual {v0, v1, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
     .line 8
-    iget-object p2, p1, Lb9/b;->e:Ljava/lang/String;
+    iget-object p2, p1, Lb9/c;->e:Ljava/lang/String;
 
     const-string v1, "prompt_title"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 9
-    iget-object p2, p1, Lb9/b;->f:Ljava/lang/String;
+    iget-object p2, p1, Lb9/c;->f:Ljava/lang/String;
 
     const-string v1, "text_input_hint"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 10
-    iget-object p2, p1, Lb9/b;->g:Ljava/lang/String;
+    iget-object p2, p1, Lb9/c;->g:Ljava/lang/String;
 
     const-string v1, "search_title"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 11
-    iget-object p2, p1, Lb9/b;->h:Ljava/lang/String;
+    iget-object p2, p1, Lb9/c;->h:Ljava/lang/String;
 
     const-string v1, "empty_search_title"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 12
-    iget-object p2, p1, Lb9/b;->i:Ljava/lang/String;
+    iget-object p2, p1, Lb9/c;->i:Ljava/lang/String;
 
     const-string v1, "empty_search_description"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 13
-    iget-object p1, p1, Lb9/b;->k:Ljava/util/List;
+    iget-object p1, p1, Lb9/c;->k:Ljava/util/List;
 
     invoke-static {p1}, Lcom/helpshift/util/l;->g(Ljava/util/List;)Lorg/json/JSONArray;
 

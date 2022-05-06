@@ -3,19 +3,19 @@
 .source "AppCompatTextView.java"
 
 # interfaces
-.implements Lf0/r;
+.implements Lf0/q;
 .implements Landroidx/core/widget/j;
 .implements Landroidx/core/widget/b;
 
 
 # instance fields
-.field public final a:Landroidx/appcompat/widget/e;
+.field public final g:Landroidx/appcompat/widget/e;
 
-.field public final b:Landroidx/appcompat/widget/n;
+.field public final h:Landroidx/appcompat/widget/n;
 
-.field public final h:Landroidx/appcompat/widget/m;
+.field public final i:Landroidx/appcompat/widget/m;
 
-.field public i:Ljava/util/concurrent/Future;
+.field public j:Ljava/util/concurrent/Future;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/Future<",
@@ -60,7 +60,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/e;-><init>(Landroid/view/View;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->a:Landroidx/appcompat/widget/e;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->g:Landroidx/appcompat/widget/e;
 
     .line 5
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/e;->d(Landroid/util/AttributeSet;I)V
@@ -70,7 +70,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/n;-><init>(Landroid/widget/TextView;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     .line 7
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/n;->e(Landroid/util/AttributeSet;I)V
@@ -83,7 +83,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/m;-><init>(Landroid/widget/TextView;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/m;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->i:Landroidx/appcompat/widget/m;
 
     return-void
 .end method
@@ -97,7 +97,7 @@
     invoke-super {p0}, Landroid/widget/TextView;->drawableStateChanged()V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->a:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->g:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
@@ -106,7 +106,7 @@
 
     .line 4
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz v0, :cond_1
 
@@ -121,7 +121,7 @@
     .locals 1
 
     .line 1
-    sget-boolean v0, Landroidx/core/widget/b;->c:Z
+    sget-boolean v0, Landroidx/core/widget/b;->a:Z
 
     if-eqz v0, :cond_0
 
@@ -134,7 +134,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz v0, :cond_1
 
@@ -160,7 +160,7 @@
     .locals 1
 
     .line 1
-    sget-boolean v0, Landroidx/core/widget/b;->c:Z
+    sget-boolean v0, Landroidx/core/widget/b;->a:Z
 
     if-eqz v0, :cond_0
 
@@ -173,7 +173,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz v0, :cond_1
 
@@ -199,7 +199,7 @@
     .locals 1
 
     .line 1
-    sget-boolean v0, Landroidx/core/widget/b;->c:Z
+    sget-boolean v0, Landroidx/core/widget/b;->a:Z
 
     if-eqz v0, :cond_0
 
@@ -212,7 +212,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz v0, :cond_1
 
@@ -238,7 +238,7 @@
     .locals 1
 
     .line 1
-    sget-boolean v0, Landroidx/core/widget/b;->c:Z
+    sget-boolean v0, Landroidx/core/widget/b;->a:Z
 
     if-eqz v0, :cond_0
 
@@ -251,7 +251,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz v0, :cond_1
 
@@ -280,7 +280,7 @@
     .end annotation
 
     .line 1
-    sget-boolean v0, Landroidx/core/widget/b;->c:Z
+    sget-boolean v0, Landroidx/core/widget/b;->a:Z
 
     const/4 v1, 0x0
 
@@ -302,7 +302,7 @@
 
     .line 3
     :cond_1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz v0, :cond_2
 
@@ -368,7 +368,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->a:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->g:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
@@ -390,7 +390,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->a:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->g:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
@@ -412,7 +412,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     .line 2
     iget-object v0, v0, Landroidx/appcompat/widget/n;->h:Landroidx/appcompat/widget/g0;
@@ -434,7 +434,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     .line 2
     iget-object v0, v0, Landroidx/appcompat/widget/n;->h:Landroidx/appcompat/widget/g0;
@@ -456,7 +456,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->i:Ljava/util/concurrent/Future;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->j:Ljava/util/concurrent/Future;
 
     if-eqz v0, :cond_0
 
@@ -464,7 +464,7 @@
 
     .line 2
     :try_start_0
-    iput-object v1, p0, Landroidx/appcompat/widget/AppCompatTextView;->i:Ljava/util/concurrent/Future;
+    iput-object v1, p0, Landroidx/appcompat/widget/AppCompatTextView;->j:Ljava/util/concurrent/Future;
 
     .line 3
     invoke-interface {v0}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
@@ -498,7 +498,7 @@
 
     if-ge v0, v1, :cond_1
 
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->i:Landroidx/appcompat/widget/m;
 
     if-nez v0, :cond_0
 
@@ -506,7 +506,7 @@
 
     .line 2
     :cond_0
-    invoke-virtual {v0}, Landroidx/appcompat/widget/m;->a()Landroid/view/textclassifier/TextClassifier;
+    invoke-virtual {v0}, Landroidx/appcompat/widget/m;->c()Landroid/view/textclassifier/TextClassifier;
 
     move-result-object v0
 
@@ -553,12 +553,12 @@
     invoke-super/range {p0 .. p5}, Landroid/widget/TextView;->onLayout(ZIIII)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz p1, :cond_0
 
     .line 3
-    sget-boolean p2, Landroidx/core/widget/b;->c:Z
+    sget-boolean p2, Landroidx/core/widget/b;->a:Z
 
     if-nez p2, :cond_0
 
@@ -575,7 +575,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->i:Ljava/util/concurrent/Future;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->j:Ljava/util/concurrent/Future;
 
     if-eqz v0, :cond_0
 
@@ -583,7 +583,7 @@
 
     .line 2
     :try_start_0
-    iput-object v1, p0, Landroidx/appcompat/widget/AppCompatTextView;->i:Ljava/util/concurrent/Future;
+    iput-object v1, p0, Landroidx/appcompat/widget/AppCompatTextView;->j:Ljava/util/concurrent/Future;
 
     .line 3
     invoke-interface {v0}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
@@ -612,11 +612,11 @@
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->onTextChanged(Ljava/lang/CharSequence;III)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz p1, :cond_0
 
-    sget-boolean p2, Landroidx/core/widget/b;->c:Z
+    sget-boolean p2, Landroidx/core/widget/b;->a:Z
 
     if-nez p2, :cond_0
 
@@ -627,7 +627,7 @@
     if-eqz p1, :cond_0
 
     .line 3
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     .line 4
     iget-object p1, p1, Landroidx/appcompat/widget/n;->i:Landroidx/appcompat/widget/o;
@@ -647,7 +647,7 @@
     .end annotation
 
     .line 1
-    sget-boolean v0, Landroidx/core/widget/b;->c:Z
+    sget-boolean v0, Landroidx/core/widget/b;->a:Z
 
     if-eqz v0, :cond_0
 
@@ -658,7 +658,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz v0, :cond_1
 
@@ -679,7 +679,7 @@
     .end annotation
 
     .line 1
-    sget-boolean v0, Landroidx/core/widget/b;->c:Z
+    sget-boolean v0, Landroidx/core/widget/b;->a:Z
 
     if-eqz v0, :cond_0
 
@@ -690,7 +690,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz v0, :cond_1
 
@@ -706,7 +706,7 @@
     .locals 1
 
     .line 1
-    sget-boolean v0, Landroidx/core/widget/b;->c:Z
+    sget-boolean v0, Landroidx/core/widget/b;->a:Z
 
     if-eqz v0, :cond_0
 
@@ -717,7 +717,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz v0, :cond_1
 
@@ -736,7 +736,7 @@
     invoke-super {p0, p1}, Landroid/widget/TextView;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->a:Landroidx/appcompat/widget/e;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->g:Landroidx/appcompat/widget/e;
 
     if-eqz p1, :cond_0
 
@@ -754,7 +754,7 @@
     invoke-super {p0, p1}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->a:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->g:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
@@ -772,7 +772,7 @@
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz p1, :cond_0
 
@@ -790,7 +790,7 @@
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->setCompoundDrawablesRelative(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz p1, :cond_0
 
@@ -862,7 +862,7 @@
     invoke-virtual {p0, p1, p2, p3, v1}, Landroidx/appcompat/widget/AppCompatTextView;->setCompoundDrawablesRelativeWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     .line 10
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz p1, :cond_4
 
@@ -880,7 +880,7 @@
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->setCompoundDrawablesRelativeWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz p1, :cond_0
 
@@ -952,7 +952,7 @@
     invoke-virtual {p0, p1, p2, p3, v1}, Landroidx/appcompat/widget/AppCompatTextView;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     .line 10
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz p1, :cond_4
 
@@ -970,7 +970,7 @@
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz p1, :cond_0
 
@@ -1063,7 +1063,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->a:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->g:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
@@ -1078,7 +1078,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->a:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->g:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
@@ -1093,12 +1093,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/n;->j(Landroid/content/res/ColorStateList;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     invoke-virtual {p1}, Landroidx/appcompat/widget/n;->b()V
 
@@ -1109,12 +1109,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/n;->k(Landroid/graphics/PorterDuff$Mode;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     invoke-virtual {p1}, Landroidx/appcompat/widget/n;->b()V
 
@@ -1128,7 +1128,7 @@
     invoke-super {p0, p1, p2}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz v0, :cond_0
 
@@ -1149,7 +1149,7 @@
 
     if-ge v0, v1, :cond_1
 
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatTextView;->i:Landroidx/appcompat/widget/m;
 
     if-nez v0, :cond_0
 
@@ -1157,7 +1157,7 @@
 
     .line 2
     :cond_0
-    iput-object p1, v0, Landroidx/appcompat/widget/m;->b:Landroid/view/textclassifier/TextClassifier;
+    iput-object p1, v0, Landroidx/appcompat/widget/m;->b:Ljava/lang/Object;
 
     return-void
 
@@ -1181,7 +1181,7 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->i:Ljava/util/concurrent/Future;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatTextView;->j:Ljava/util/concurrent/Future;
 
     if-eqz p1, :cond_0
 
@@ -1205,7 +1205,7 @@
     .locals 2
 
     .line 1
-    sget-boolean v0, Landroidx/core/widget/b;->c:Z
+    sget-boolean v0, Landroidx/core/widget/b;->a:Z
 
     if-eqz v0, :cond_0
 
@@ -1216,7 +1216,7 @@
 
     .line 3
     :cond_0
-    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatTextView;->b:Landroidx/appcompat/widget/n;
+    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatTextView;->h:Landroidx/appcompat/widget/n;
 
     if-eqz v1, :cond_1
 

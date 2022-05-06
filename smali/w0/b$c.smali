@@ -77,10 +77,10 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iput-object v1, v0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     .line 4
-    iget-object v2, v0, Lw0/b;->j:Landroid/graphics/drawable/Drawable$Callback;
+    iget-object v2, v0, Lw0/b;->k:Landroid/graphics/drawable/Drawable$Callback;
 
     invoke-virtual {v1, v2}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
 
@@ -105,10 +105,10 @@
 
     move-result-object p1
 
-    iput-object p1, v0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iput-object p1, v0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     .line 8
-    iget-object v1, v0, Lw0/b;->j:Landroid/graphics/drawable/Drawable$Callback;
+    iget-object v1, v0, Lw0/b;->k:Landroid/graphics/drawable/Drawable$Callback;
 
     invoke-virtual {p1, v1}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
 
@@ -133,10 +133,10 @@
 
     move-result-object p1
 
-    iput-object p1, v0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iput-object p1, v0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     .line 12
-    iget-object p2, v0, Lw0/b;->j:Landroid/graphics/drawable/Drawable$Callback;
+    iget-object p2, v0, Lw0/b;->k:Landroid/graphics/drawable/Drawable$Callback;
 
     invoke-virtual {p1, p2}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
 

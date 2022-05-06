@@ -20,34 +20,34 @@
 
 
 # virtual methods
-.method public abstract D0()Z
+.method public abstract E0()Z
 .end method
 
-.method public abstract G0()Ljava/lang/String;
+.method public abstract I0()Ljava/lang/String;
 .end method
 
-.method public abstract L0()Z
+.method public abstract M0()Z
 .end method
 
-.method public abstract N1()Z
+.method public abstract Q0()Z
 .end method
 
-.method public abstract O0()Z
+.method public abstract Q1()Z
 .end method
 
 .method public abstract a()Landroid/net/Uri;
 .end method
 
-.method public abstract b2()Z
+.method public abstract d2()Z
 .end method
 
-.method public abstract d0()Z
+.method public abstract e0()Z
 .end method
 
-.method public abstract e0()Ljava/lang/String;
+.method public abstract f0()Ljava/lang/String;
 .end method
 
-.method public abstract f()Landroid/net/Uri;
+.method public abstract g()Z
 .end method
 
 .method public abstract getDescription()Ljava/lang/String;
@@ -80,29 +80,29 @@
     .end annotation
 .end method
 
-.method public abstract h2()Z
+.method public abstract h()Landroid/net/Uri;
 .end method
 
-.method public abstract k()Ljava/lang/String;
+.method public abstract j2()Z
 .end method
 
-.method public abstract k1()I
+.method public abstract m()Ljava/lang/String;
 .end method
 
-.method public abstract l1()Ljava/lang/String;
+.method public abstract m1()I
 .end method
 
-.method public abstract p0()Ljava/lang/String;
+.method public abstract n1()Ljava/lang/String;
 .end method
 
 .method public abstract r0()Ljava/lang/String;
 .end method
 
-.method public abstract t0()I
+.method public abstract s0()Ljava/lang/String;
 .end method
 
-.method public abstract t2()Landroid/net/Uri;
+.method public abstract v0()I
 .end method
 
-.method public abstract zzc()Z
+.method public abstract v2()Landroid/net/Uri;
 .end method

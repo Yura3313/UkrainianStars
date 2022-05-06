@@ -14,15 +14,15 @@
 
 
 # static fields
-.field public static final enum BANNER:Lcom/google/android/gms/ads/b;
+.field public static final enum g:Lcom/google/android/gms/ads/b;
 
-.field public static final enum INTERSTITIAL:Lcom/google/android/gms/ads/b;
+.field public static final enum h:Lcom/google/android/gms/ads/b;
 
-.field public static final enum NATIVE:Lcom/google/android/gms/ads/b;
+.field public static final enum i:Lcom/google/android/gms/ads/b;
 
-.field public static final enum REWARDED:Lcom/google/android/gms/ads/b;
+.field public static final enum j:Lcom/google/android/gms/ads/b;
 
-.field private static final synthetic zzacq:[Lcom/google/android/gms/ads/b;
+.field public static final synthetic k:[Lcom/google/android/gms/ads/b;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/google/android/gms/ads/b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/android/gms/ads/b;->BANNER:Lcom/google/android/gms/ads/b;
+    sput-object v0, Lcom/google/android/gms/ads/b;->g:Lcom/google/android/gms/ads/b;
 
     .line 2
     new-instance v1, Lcom/google/android/gms/ads/b;
@@ -49,7 +49,7 @@
 
     invoke-direct {v1, v3, v4}, Lcom/google/android/gms/ads/b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/google/android/gms/ads/b;->INTERSTITIAL:Lcom/google/android/gms/ads/b;
+    sput-object v1, Lcom/google/android/gms/ads/b;->h:Lcom/google/android/gms/ads/b;
 
     .line 3
     new-instance v3, Lcom/google/android/gms/ads/b;
@@ -60,7 +60,7 @@
 
     invoke-direct {v3, v5, v6}, Lcom/google/android/gms/ads/b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Lcom/google/android/gms/ads/b;->REWARDED:Lcom/google/android/gms/ads/b;
+    sput-object v3, Lcom/google/android/gms/ads/b;->i:Lcom/google/android/gms/ads/b;
 
     .line 4
     new-instance v5, Lcom/google/android/gms/ads/b;
@@ -71,7 +71,7 @@
 
     invoke-direct {v5, v7, v8}, Lcom/google/android/gms/ads/b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v5, Lcom/google/android/gms/ads/b;->NATIVE:Lcom/google/android/gms/ads/b;
+    sput-object v5, Lcom/google/android/gms/ads/b;->j:Lcom/google/android/gms/ads/b;
 
     const/4 v7, 0x4
 
@@ -86,12 +86,12 @@
     aput-object v5, v7, v8
 
     .line 5
-    sput-object v7, Lcom/google/android/gms/ads/b;->zzacq:[Lcom/google/android/gms/ads/b;
+    sput-object v7, Lcom/google/android/gms/ads/b;->k:[Lcom/google/android/gms/ads/b;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;I)V
+.method public constructor <init>(Ljava/lang/String;I)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -124,7 +124,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/google/android/gms/ads/b;->zzacq:[Lcom/google/android/gms/ads/b;
+    sget-object v0, Lcom/google/android/gms/ads/b;->k:[Lcom/google/android/gms/ads/b;
 
     invoke-virtual {v0}, [Lcom/google/android/gms/ads/b;->clone()Ljava/lang/Object;
 

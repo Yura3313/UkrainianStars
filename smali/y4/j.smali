@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field public final synthetic b:Ly4/k;
+.field public final synthetic h:Ly4/k;
 
 
 # direct methods
 .method public constructor <init>(Ly4/k;)V
     .locals 0
 
-    iput-object p1, p0, Ly4/j;->b:Ly4/k;
+    iput-object p1, p0, Ly4/j;->h:Ly4/k;
 
     invoke-direct {p0}, Ly4/c;-><init>()V
 
@@ -22,7 +22,7 @@
 .method public final a()V
     .locals 6
 
-    iget-object v0, p0, Ly4/j;->b:Ly4/k;
+    iget-object v0, p0, Ly4/j;->h:Ly4/k;
 
     iget-object v0, v0, Ly4/k;->a:Ly4/l;
 
@@ -52,7 +52,7 @@
     invoke-interface {v1, v0, v2}, Landroid/os/IBinder;->unlinkToDeath(Landroid/os/IBinder$DeathRecipient;I)Z
 
     .line 4
-    iget-object v0, p0, Ly4/j;->b:Ly4/k;
+    iget-object v0, p0, Ly4/j;->h:Ly4/k;
 
     iget-object v0, v0, Ly4/k;->a:Ly4/l;
 

@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/reflect/Type;
+.field public final g:Ljava/lang/reflect/Type;
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 .end field
 
-.field public final b:Ljava/lang/reflect/Type;
+.field public final h:Ljava/lang/reflect/Type;
 
-.field public final h:[Ljava/lang/reflect/Type;
+.field public final i:[Ljava/lang/reflect/Type;
 
 
 # direct methods
@@ -111,10 +111,10 @@
 
     .line 8
     :cond_4
-    iput-object p1, p0, Lxe/f0$b;->a:Ljava/lang/reflect/Type;
+    iput-object p1, p0, Lxe/f0$b;->g:Ljava/lang/reflect/Type;
 
     .line 9
-    iput-object p2, p0, Lxe/f0$b;->b:Ljava/lang/reflect/Type;
+    iput-object p2, p0, Lxe/f0$b;->h:Ljava/lang/reflect/Type;
 
     .line 10
     invoke-virtual {p3}, [Ljava/lang/reflect/Type;->clone()Ljava/lang/Object;
@@ -123,7 +123,7 @@
 
     check-cast p1, [Ljava/lang/reflect/Type;
 
-    iput-object p1, p0, Lxe/f0$b;->h:[Ljava/lang/reflect/Type;
+    iput-object p1, p0, Lxe/f0$b;->i:[Ljava/lang/reflect/Type;
 
     return-void
 .end method
@@ -161,7 +161,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lxe/f0$b;->h:[Ljava/lang/reflect/Type;
+    iget-object v0, p0, Lxe/f0$b;->i:[Ljava/lang/reflect/Type;
 
     invoke-virtual {v0}, [Ljava/lang/reflect/Type;->clone()Ljava/lang/Object;
 
@@ -178,7 +178,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lxe/f0$b;->a:Ljava/lang/reflect/Type;
+    iget-object v0, p0, Lxe/f0$b;->g:Ljava/lang/reflect/Type;
 
     return-object v0
 .end method
@@ -187,7 +187,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lxe/f0$b;->b:Ljava/lang/reflect/Type;
+    iget-object v0, p0, Lxe/f0$b;->h:Ljava/lang/reflect/Type;
 
     return-object v0
 .end method
@@ -196,13 +196,13 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lxe/f0$b;->h:[Ljava/lang/reflect/Type;
+    iget-object v0, p0, Lxe/f0$b;->i:[Ljava/lang/reflect/Type;
 
     invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
     move-result v0
 
-    iget-object v1, p0, Lxe/f0$b;->b:Ljava/lang/reflect/Type;
+    iget-object v1, p0, Lxe/f0$b;->h:Ljava/lang/reflect/Type;
 
     .line 2
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
@@ -211,7 +211,7 @@
 
     xor-int/2addr v0, v1
 
-    iget-object v1, p0, Lxe/f0$b;->a:Ljava/lang/reflect/Type;
+    iget-object v1, p0, Lxe/f0$b;->g:Ljava/lang/reflect/Type;
 
     if-eqz v1, :cond_0
 
@@ -235,13 +235,13 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lxe/f0$b;->h:[Ljava/lang/reflect/Type;
+    iget-object v0, p0, Lxe/f0$b;->i:[Ljava/lang/reflect/Type;
 
     array-length v1, v0
 
     if-nez v1, :cond_0
 
-    iget-object v0, p0, Lxe/f0$b;->b:Ljava/lang/reflect/Type;
+    iget-object v0, p0, Lxe/f0$b;->h:Ljava/lang/reflect/Type;
 
     invoke-static {v0}, Lxe/f0;->q(Ljava/lang/reflect/Type;)Ljava/lang/String;
 
@@ -264,7 +264,7 @@
     invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
 
     .line 3
-    iget-object v0, p0, Lxe/f0$b;->b:Ljava/lang/reflect/Type;
+    iget-object v0, p0, Lxe/f0$b;->h:Ljava/lang/reflect/Type;
 
     invoke-static {v0}, Lxe/f0;->q(Ljava/lang/reflect/Type;)Ljava/lang/String;
 
@@ -277,7 +277,7 @@
     .line 4
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lxe/f0$b;->h:[Ljava/lang/reflect/Type;
+    iget-object v0, p0, Lxe/f0$b;->i:[Ljava/lang/reflect/Type;
 
     const/4 v3, 0x0
 
@@ -291,7 +291,7 @@
 
     .line 5
     :goto_0
-    iget-object v0, p0, Lxe/f0$b;->h:[Ljava/lang/reflect/Type;
+    iget-object v0, p0, Lxe/f0$b;->i:[Ljava/lang/reflect/Type;
 
     array-length v0, v0
 
@@ -302,7 +302,7 @@
     .line 6
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lxe/f0$b;->h:[Ljava/lang/reflect/Type;
+    iget-object v0, p0, Lxe/f0$b;->i:[Ljava/lang/reflect/Type;
 
     aget-object v0, v0, v2
 

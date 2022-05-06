@@ -1,32 +1,40 @@
 .class public final Lq3/u1;
 .super Ljava/lang/Object;
 
-# interfaces
-.implements Lu3/a2;
+
+# static fields
+.field public static final a:Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/Class<",
+            "*>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public synthetic constructor <init>(Lu3/z1;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
+
+    :try_start_0
+    const-string v0, "com.google.protobuf.ExtensionRegistry"
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
-    return-void
-.end method
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
+    goto :goto_0
 
-# virtual methods
-.method public a([BII)[B
-    .locals 2
-
-    .line 1
-    new-array v0, p3, [B
-
-    const/4 v1, 0x0
+    :catch_0
+    const/4 v0, 0x0
 
     .line 2
-    invoke-static {p1, p2, v0, v1, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    :goto_0
+    sput-object v0, Lq3/u1;->a:Ljava/lang/Class;
 
-    return-object v0
+    return-void
 .end method

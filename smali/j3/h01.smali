@@ -1,48 +1,43 @@
-.class public final Lj3/h01;
+.class public interface abstract Lj3/h01;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/util/Comparator;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "Lcom/google/android/gms/internal/ads/zzho;",
-        ">;"
-    }
-.end annotation
-
-
-# direct methods
-.method public constructor <init>(Lj3/om0;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
+.implements Lj3/u01;
 
 
 # virtual methods
-.method public final synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 0
+.method public abstract a(J)Z
+.end method
 
-    .line 1
-    check-cast p1, Lcom/google/android/gms/internal/ads/zzho;
+.method public abstract c()J
+.end method
 
-    check-cast p2, Lcom/google/android/gms/internal/ads/zzho;
+.method public abstract e()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
 
-    .line 2
-    iget p2, p2, Lcom/google/android/gms/internal/ads/zzho;->b:I
+.method public abstract f(Lj3/k01;J)V
+.end method
 
-    iget p1, p1, Lcom/google/android/gms/internal/ads/zzho;->b:I
+.method public abstract g()Lj3/w01;
+.end method
 
-    sub-int/2addr p2, p1
+.method public abstract h([Lj3/g11;[Z[Lj3/g01;[ZJ)J
+.end method
 
-    return p2
+.method public abstract i(J)J
+.end method
+
+.method public abstract j()J
+.end method
+
+.method public abstract k(J)V
+.end method
+
+.method public abstract l()J
 .end method

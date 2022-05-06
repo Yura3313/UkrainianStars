@@ -16,9 +16,9 @@
 
 
 # instance fields
-.field public b0:Lcom/supercell/id/ui/BaseFragment$a;
+.field public c0:Lcom/supercell/id/ui/BaseFragment$a;
 
-.field public c0:Lse/o;
+.field public d0:Lse/o;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lse/o<",
@@ -28,11 +28,11 @@
     .end annotation
 .end field
 
-.field public d0:F
-
 .field public e0:F
 
-.field public final f0:Ljava/util/List;
+.field public f0:F
+
+.field public final g0:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -42,9 +42,9 @@
     .end annotation
 .end field
 
-.field public final g0:F
+.field public final h0:F
 
-.field public h0:Landroid/animation/ValueAnimator;
+.field public i0:Landroid/animation/ValueAnimator;
 
 
 # direct methods
@@ -59,40 +59,40 @@
     const/4 v1, 0x1
 
     .line 2
-    invoke-static {v0, v1}, Lcom/android/billingclient/api/w;->b(Lse/d1;I)Lse/o;
+    invoke-static {v0, v1}, Lp5/h;->d(Lse/b1;I)Lse/o;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/supercell/id/ui/BaseFragment;->c0:Lse/o;
+    iput-object v2, p0, Lcom/supercell/id/ui/BaseFragment;->d0:Lse/o;
 
     const/high16 v2, 0x3f800000    # 1.0f
 
     .line 3
-    iput v2, p0, Lcom/supercell/id/ui/BaseFragment;->e0:F
+    iput v2, p0, Lcom/supercell/id/ui/BaseFragment;->f0:F
 
     .line 4
-    sget-object v3, Lce/n;->a:Lce/n;
+    sget-object v3, Lbe/m;->g:Lbe/m;
 
-    iput-object v3, p0, Lcom/supercell/id/ui/BaseFragment;->f0:Ljava/util/List;
+    iput-object v3, p0, Lcom/supercell/id/ui/BaseFragment;->g0:Ljava/util/List;
 
     .line 5
-    iput v2, p0, Lcom/supercell/id/ui/BaseFragment;->g0:F
+    iput v2, p0, Lcom/supercell/id/ui/BaseFragment;->h0:F
 
     .line 6
-    invoke-static {v0, v1}, Lcom/android/billingclient/api/w;->b(Lse/d1;I)Lse/o;
+    invoke-static {v0, v1}, Lp5/h;->d(Lse/b1;I)Lse/o;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->c0:Lse/o;
+    iput-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->d0:Lse/o;
 
     return-void
 .end method
 
-.method public static final Y0(Lcom/supercell/id/ui/BaseFragment;Landroid/view/View;II)V
+.method public static final X0(Lcom/supercell/id/ui/BaseFragment;Landroid/view/View;II)V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->h0:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->i0:Landroid/animation/ValueAnimator;
 
     if-eqz v0, :cond_0
 
@@ -102,10 +102,10 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->h0:Landroid/animation/ValueAnimator;
+    iput-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->i0:Landroid/animation/ValueAnimator;
 
     .line 3
-    invoke-static {p1}, Lf0/s;->p(Landroid/view/View;)Z
+    invoke-static {p1}, Lf0/r;->p(Landroid/view/View;)Z
 
     move-result v0
 
@@ -118,9 +118,9 @@
     goto :goto_0
 
     :cond_1
-    iget v0, p0, Lcom/supercell/id/ui/BaseFragment;->d0:F
+    iget v0, p0, Lcom/supercell/id/ui/BaseFragment;->e0:F
 
-    invoke-static {v0}, Lc2/n0;->e(F)I
+    invoke-static {v0}, Lb5/m;->r(F)I
 
     move-result v0
 
@@ -128,7 +128,7 @@
 
     .line 4
     :goto_0
-    iget v1, p0, Lcom/supercell/id/ui/BaseFragment;->d0:F
+    iget v1, p0, Lcom/supercell/id/ui/BaseFragment;->e0:F
 
     int-to-float p3, p3
 
@@ -166,7 +166,7 @@
 
     :cond_3
     :goto_1
-    iput v1, p0, Lcom/supercell/id/ui/BaseFragment;->d0:F
+    iput v1, p0, Lcom/supercell/id/ui/BaseFragment;->e0:F
 
     .line 6
     invoke-virtual {p1, v1}, Landroid/view/View;->setTranslationY(F)V
@@ -174,7 +174,7 @@
     int-to-float p1, p2
 
     .line 7
-    iget p2, p0, Lcom/supercell/id/ui/BaseFragment;->d0:F
+    iget p2, p0, Lcom/supercell/id/ui/BaseFragment;->e0:F
 
     add-float/2addr p1, p2
 
@@ -219,73 +219,67 @@
     if-eqz p2, :cond_4
 
     .line 1
-    sget-object v0, Luc/f;->a:[I
-
     invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
 
     move-result p2
 
-    aget p2, v0, p2
+    if-eqz p2, :cond_3
 
     const/4 v0, 0x1
 
-    if-eq p2, v0, :cond_2
+    if-eq p2, v0, :cond_1
 
     const/4 p3, 0x2
 
-    if-eq p2, p3, :cond_1
+    if-eq p2, p3, :cond_0
 
     const/4 p3, 0x3
 
-    if-eq p2, p3, :cond_0
+    if-eq p2, p3, :cond_3
 
     const/4 p3, 0x4
 
-    if-eq p2, p3, :cond_0
-
-    const/4 p3, 0x5
-
-    if-eq p2, p3, :cond_0
+    if-eq p2, p3, :cond_3
 
     goto :goto_0
-
-    :cond_0
-    const/high16 p2, 0x3f800000    # 1.0f
 
     .line 2
-    invoke-virtual {p1, p2}, Landroid/view/View;->setAlpha(F)V
+    :cond_0
+    new-instance p2, Lrc/g;
+
+    invoke-direct {p2, p1, p0}, Lrc/g;-><init>(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment;)V
+
+    invoke-static {p1, p2}, Lvd/g2;->a(Landroid/view/View;Lke/l;)V
 
     goto :goto_0
+
+    :cond_1
+    if-eqz p3, :cond_2
 
     .line 3
-    :cond_1
-    new-instance p2, Luc/g;
+    new-instance p2, Lrc/l;
 
-    invoke-direct {p2, p1, p0}, Luc/g;-><init>(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment;)V
+    invoke-direct {p2, p1, p0}, Lrc/l;-><init>(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment;)V
 
-    invoke-static {p1, p2}, Lwd/f2;->a(Landroid/view/View;Lke/l;)V
+    invoke-static {p1, p2}, Lvd/g2;->a(Landroid/view/View;Lke/l;)V
 
     goto :goto_0
-
-    :cond_2
-    if-eqz p3, :cond_3
 
     .line 4
-    new-instance p2, Luc/l;
+    :cond_2
+    new-instance p2, Lrc/i;
 
-    invoke-direct {p2, p1, p0}, Luc/l;-><init>(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment;)V
+    invoke-direct {p2, p1, p0}, Lrc/i;-><init>(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment;)V
 
-    invoke-static {p1, p2}, Lwd/f2;->a(Landroid/view/View;Lke/l;)V
+    invoke-static {p1, p2}, Lvd/g2;->a(Landroid/view/View;Lke/l;)V
 
     goto :goto_0
 
-    .line 5
     :cond_3
-    new-instance p2, Luc/i;
+    const/high16 p2, 0x3f800000    # 1.0f
 
-    invoke-direct {p2, p1, p0}, Luc/i;-><init>(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment;)V
-
-    invoke-static {p1, p2}, Lwd/f2;->a(Landroid/view/View;Lke/l;)V
+    .line 5
+    invoke-virtual {p1, p2}, Landroid/view/View;->setAlpha(F)V
 
     :goto_0
     return-void
@@ -294,7 +288,7 @@
     const-string p1, "animation"
 
     .line 6
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -311,21 +305,21 @@
     if-eqz p3, :cond_1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-interface {p3}, Lcom/supercell/id/ui/BaseFragment$d;->a()Lse/h0;
+    invoke-interface {p3}, Lcom/supercell/id/ui/BaseFragment$d;->a()Lse/f0;
 
     move-result-object p3
 
     .line 3
-    new-instance v0, Luc/o;
+    new-instance v0, Lrc/o;
 
-    invoke-direct {v0, p1, p2}, Luc/o;-><init>(Lcom/supercell/id/ui/BaseFragment$b;Z)V
+    invoke-direct {v0, p1, p2}, Lrc/o;-><init>(Lcom/supercell/id/ui/BaseFragment$b;Z)V
 
-    invoke-static {p3, p0, v0}, Lwd/e1;->n(Lse/h0;Ljava/lang/Object;Lke/p;)Lse/h0;
+    invoke-static {p3, p0, v0}, Lvd/e1;->m(Lse/f0;Ljava/lang/Object;Lke/p;)Lse/f0;
 
     goto :goto_0
 
@@ -333,13 +327,13 @@
     :cond_0
     new-instance v0, Lcom/supercell/id/ui/BaseFragment$a;
 
-    invoke-interface {p3}, Lcom/supercell/id/ui/BaseFragment$d;->a()Lse/h0;
+    invoke-interface {p3}, Lcom/supercell/id/ui/BaseFragment$d;->a()Lse/f0;
 
     move-result-object p3
 
-    invoke-direct {v0, p1, p2, p3}, Lcom/supercell/id/ui/BaseFragment$a;-><init>(Lcom/supercell/id/ui/BaseFragment$b;ZLse/h0;)V
+    invoke-direct {v0, p1, p2, p3}, Lcom/supercell/id/ui/BaseFragment$a;-><init>(Lcom/supercell/id/ui/BaseFragment$b;ZLse/f0;)V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->b0:Lcom/supercell/id/ui/BaseFragment$a;
+    iput-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->c0:Lcom/supercell/id/ui/BaseFragment$a;
 
     :goto_0
     return-void
@@ -348,19 +342,19 @@
     const-string p1, "coordinator"
 
     .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_2
     const-string p1, "animation"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
 
-.method public final b1(Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;)Lse/h0;
+.method public final b1(Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;)Lse/f0;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -369,7 +363,7 @@
             "Z",
             "Lcom/supercell/id/ui/BaseFragment$d;",
             ")",
-            "Lse/h0<",
+            "Lse/f0<",
             "Ljava/lang/Boolean;",
             ">;"
         }
@@ -384,12 +378,12 @@
     const/4 v1, 0x1
 
     .line 1
-    invoke-static {v0, v1}, Lcom/android/billingclient/api/w;->b(Lse/d1;I)Lse/o;
+    invoke-static {v0, v1}, Lp5/h;->d(Lse/b1;I)Lse/o;
 
     move-result-object v0
 
     .line 2
-    invoke-interface {p3}, Lcom/supercell/id/ui/BaseFragment$d;->a()Lse/h0;
+    invoke-interface {p3}, Lcom/supercell/id/ui/BaseFragment$d;->a()Lse/f0;
 
     move-result-object p3
 
@@ -397,7 +391,7 @@
 
     invoke-direct {v1, p1, p2, v0}, Lcom/supercell/id/ui/BaseFragment$e;-><init>(Lcom/supercell/id/ui/BaseFragment$c;ZLse/o;)V
 
-    invoke-static {p3, p0, v1}, Lwd/e1;->n(Lse/h0;Ljava/lang/Object;Lke/p;)Lse/h0;
+    invoke-static {p3, p0, v1}, Lvd/e1;->m(Lse/f0;Ljava/lang/Object;Lke/p;)Lse/f0;
 
     return-object v0
 
@@ -405,14 +399,14 @@
     const-string p1, "coordinator"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_1
     const-string p1, "animation"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -438,13 +432,9 @@
     if-eqz p4, :cond_d
 
     .line 1
-    sget-object v1, Luc/f;->b:[I
-
     invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
 
     move-result p2
-
-    aget p2, v1, p2
 
     const/4 v1, 0x0
 
@@ -454,11 +444,9 @@
 
     const/4 v5, 0x1
 
-    if-eq p2, v5, :cond_2
+    if-eqz p2, :cond_2
 
-    const/4 p3, 0x2
-
-    if-eq p2, p3, :cond_0
+    if-eq p2, v5, :cond_0
 
     goto/16 :goto_4
 
@@ -481,7 +469,7 @@
     move-result-object p1
 
     .line 5
-    sget-object p2, Lrc/a;->i:Landroid/view/animation/LinearInterpolator;
+    sget-object p2, Loc/a;->i:Landroid/view/animation/LinearInterpolator;
 
     .line 6
     invoke-virtual {p1, p2}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
@@ -494,9 +482,9 @@
     move-result-object p1
 
     .line 8
-    new-instance p2, Luc/h;
+    new-instance p2, Lrc/h;
 
-    invoke-direct {p2, p4}, Luc/h;-><init>(Lse/o;)V
+    invoke-direct {p2, p4}, Lrc/h;-><init>(Lse/o;)V
 
     invoke-virtual {p1, p2}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
 
@@ -543,7 +531,7 @@
     move-result-object p3
 
     .line 15
-    sget-object v1, Lrc/a;->b:Landroid/view/animation/Interpolator;
+    sget-object v1, Loc/a;->b:Landroid/view/animation/Interpolator;
 
     .line 16
     invoke-virtual {p3, v1}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
@@ -553,7 +541,7 @@
     const/high16 v1, -0x41000000    # -0.5f
 
     .line 17
-    sget-object v3, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v3, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 18
     invoke-virtual {p1}, Landroid/view/View;->getLayoutDirection()I
@@ -592,9 +580,9 @@
     move-result-object p1
 
     .line 20
-    new-instance p2, Luc/n;
+    new-instance p2, Lrc/n;
 
-    invoke-direct {p2, p4}, Luc/n;-><init>(Lse/o;)V
+    invoke-direct {p2, p4}, Lrc/n;-><init>(Lse/o;)V
 
     invoke-virtual {p1, p2}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
 
@@ -616,13 +604,13 @@
 
     .line 24
     :cond_6
-    invoke-static {p0}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p0}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p3
 
     if-eqz p3, :cond_8
 
-    invoke-virtual {p3}, Lcom/supercell/id/ui/MainActivity;->j()Landroid/view/View;
+    invoke-virtual {p3}, Lcom/supercell/id/ui/MainActivity;->k()Landroid/view/View;
 
     move-result-object p3
 
@@ -662,7 +650,7 @@
     move-result-object p3
 
     .line 31
-    sget-object v0, Lrc/a;->b:Landroid/view/animation/Interpolator;
+    sget-object v0, Loc/a;->b:Landroid/view/animation/Interpolator;
 
     .line 32
     invoke-virtual {p3, v0}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
@@ -711,7 +699,7 @@
     move-result-object v0
 
     .line 40
-    sget-object v1, Lrc/a;->b:Landroid/view/animation/Interpolator;
+    sget-object v1, Loc/a;->b:Landroid/view/animation/Interpolator;
 
     .line 41
     invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
@@ -719,7 +707,7 @@
     move-result-object v0
 
     .line 42
-    sget-object v1, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 43
     invoke-virtual {p1}, Landroid/view/View;->getLayoutDirection()I
@@ -756,9 +744,9 @@
     move-result-object p2
 
     .line 45
-    new-instance v0, Luc/m;
+    new-instance v0, Lrc/m;
 
-    invoke-direct {v0, p1, p0, p4}, Luc/m;-><init>(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment;Lse/o;)V
+    invoke-direct {v0, p1, p0, p4}, Lrc/m;-><init>(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment;Lse/o;)V
 
     invoke-virtual {p2, v0}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
 
@@ -767,9 +755,9 @@
     if-lt p3, v2, :cond_c
 
     .line 46
-    new-instance p3, Luc/e;
+    new-instance p3, Lrc/f;
 
-    invoke-direct {p3, p1}, Luc/e;-><init>(Landroid/view/View;)V
+    invoke-direct {p3, p1}, Lrc/f;-><init>(Landroid/view/View;)V
 
     invoke-virtual {p2, p3}, Landroid/view/ViewPropertyAnimator;->setUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)Landroid/view/ViewPropertyAnimator;
 
@@ -784,14 +772,14 @@
     const-string p1, "result"
 
     .line 48
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_e
     const-string p1, "animation"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -824,7 +812,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/supercell/id/ui/BaseFragment;->g0:F
+    iget v0, p0, Lcom/supercell/id/ui/BaseFragment;->h0:F
 
     return v0
 .end method
@@ -841,7 +829,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->f0:Ljava/util/List;
+    iget-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->g0:Ljava/util/List;
 
     return-object v0
 .end method
@@ -850,7 +838,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->c0:Lse/o;
+    iget-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->d0:Lse/o;
 
     sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
@@ -862,14 +850,14 @@
     const/4 v1, 0x1
 
     .line 3
-    invoke-static {v0, v1}, Lcom/android/billingclient/api/w;->b(Lse/d1;I)Lse/o;
+    invoke-static {v0, v1}, Lp5/h;->d(Lse/b1;I)Lse/o;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->c0:Lse/o;
+    iput-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->d0:Lse/o;
 
     .line 4
-    iput-boolean v1, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v1, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 5
     invoke-virtual {p0}, Lcom/supercell/id/ui/BaseFragment;->W0()V
@@ -940,11 +928,11 @@
 
     move-result p1
 
-    invoke-static {p1}, Lc2/n0;->e(F)I
+    invoke-static {p1}, Lb5/m;->r(F)I
 
     move-result p1
 
-    invoke-static {v1, p1}, Lwd/h1;->a(Landroidx/recyclerview/widget/RecyclerView;I)I
+    invoke-static {v1, p1}, Lvd/h1;->a(Landroidx/recyclerview/widget/RecyclerView;I)I
 
     move-result p1
 
@@ -958,7 +946,7 @@
     .locals 8
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->h0:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->i0:Landroid/animation/ValueAnimator;
 
     const/4 v1, 0x1
 
@@ -974,7 +962,7 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->h0:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->i0:Landroid/animation/ValueAnimator;
 
     if-eqz v0, :cond_1
 
@@ -984,12 +972,12 @@
     const/4 v0, 0x0
 
     .line 3
-    iput-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->h0:Landroid/animation/ValueAnimator;
+    iput-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->i0:Landroid/animation/ValueAnimator;
 
     const/4 v0, 0x0
 
     .line 4
-    iget v6, p0, Lcom/supercell/id/ui/BaseFragment;->e0:F
+    iget v6, p0, Lcom/supercell/id/ui/BaseFragment;->f0:F
 
     int-to-float p2, p2
 
@@ -1038,7 +1026,7 @@
     invoke-virtual {p2}, Landroid/animation/ValueAnimator;->start()V
 
     .line 9
-    iput-object p2, p0, Lcom/supercell/id/ui/BaseFragment;->h0:Landroid/animation/ValueAnimator;
+    iput-object p2, p0, Lcom/supercell/id/ui/BaseFragment;->i0:Landroid/animation/ValueAnimator;
 
     return-void
 .end method
@@ -1086,7 +1074,7 @@
     .locals 2
 
     .line 1
-    iput p1, p0, Lcom/supercell/id/ui/BaseFragment;->e0:F
+    iput p1, p0, Lcom/supercell/id/ui/BaseFragment;->f0:F
 
     .line 2
     invoke-virtual {p0}, Lcom/supercell/id/ui/BaseFragment;->h1()Ljava/util/List;
@@ -1125,7 +1113,7 @@
     if-eqz p1, :cond_1
 
     .line 1
-    iget v0, p0, Lcom/supercell/id/ui/BaseFragment;->d0:F
+    iget v0, p0, Lcom/supercell/id/ui/BaseFragment;->e0:F
 
     const/4 v1, 0x0
 
@@ -1145,7 +1133,7 @@
     const-string p1, "outState"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -1169,10 +1157,10 @@
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/BaseFragment$f;-><init>(Lcom/supercell/id/ui/BaseFragment;)V
 
-    invoke-static {p1, v0}, Lwd/f2;->a(Landroid/view/View;Lke/l;)V
+    invoke-static {p1, v0}, Lvd/g2;->a(Landroid/view/View;Lke/l;)V
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->b0:Lcom/supercell/id/ui/BaseFragment$a;
+    iget-object v0, p0, Lcom/supercell/id/ui/BaseFragment;->c0:Lcom/supercell/id/ui/BaseFragment$a;
 
     if-eqz v0, :cond_0
 
@@ -1183,20 +1171,20 @@
     iget-boolean v1, v0, Lcom/supercell/id/ui/BaseFragment$a;->b:Z
 
     .line 6
-    iget-object v0, v0, Lcom/supercell/id/ui/BaseFragment$a;->c:Lse/h0;
+    iget-object v0, v0, Lcom/supercell/id/ui/BaseFragment$a;->c:Lse/f0;
 
     .line 7
-    new-instance v2, Luc/o;
+    new-instance v2, Lrc/o;
 
-    invoke-direct {v2, p1, v1}, Luc/o;-><init>(Lcom/supercell/id/ui/BaseFragment$b;Z)V
+    invoke-direct {v2, p1, v1}, Lrc/o;-><init>(Lcom/supercell/id/ui/BaseFragment$b;Z)V
 
-    invoke-static {v0, p0, v2}, Lwd/e1;->n(Lse/h0;Ljava/lang/Object;Lke/p;)Lse/h0;
+    invoke-static {v0, p0, v2}, Lvd/e1;->m(Lse/f0;Ljava/lang/Object;Lke/p;)Lse/f0;
 
     goto :goto_0
 
     .line 8
     :cond_0
-    sget-object v0, Lcom/supercell/id/ui/BaseFragment$b;->NONE:Lcom/supercell/id/ui/BaseFragment$b;
+    sget-object v0, Lcom/supercell/id/ui/BaseFragment$b;->g:Lcom/supercell/id/ui/BaseFragment$b;
 
     const/4 v1, 0x1
 
@@ -1204,7 +1192,7 @@
 
     .line 9
     :goto_0
-    iput-object p2, p0, Lcom/supercell/id/ui/BaseFragment;->b0:Lcom/supercell/id/ui/BaseFragment$a;
+    iput-object p2, p0, Lcom/supercell/id/ui/BaseFragment;->c0:Lcom/supercell/id/ui/BaseFragment$a;
 
     const/4 p1, 0x0
 
@@ -1217,7 +1205,7 @@
     const-string p1, "view"
 
     .line 11
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw p2
 .end method
@@ -1228,7 +1216,7 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
     invoke-virtual {p0}, Lcom/supercell/id/ui/BaseFragment;->f1()Landroid/view/View;
@@ -1252,10 +1240,10 @@
 
     .line 4
     :cond_0
-    iget p1, p0, Lcom/supercell/id/ui/BaseFragment;->d0:F
+    iget p1, p0, Lcom/supercell/id/ui/BaseFragment;->e0:F
 
     :goto_0
-    iput p1, p0, Lcom/supercell/id/ui/BaseFragment;->d0:F
+    iput p1, p0, Lcom/supercell/id/ui/BaseFragment;->e0:F
 
     .line 5
     invoke-virtual {v0, p1}, Landroid/view/View;->setTranslationY(F)V
@@ -1289,11 +1277,11 @@
 
     move-result v1
 
-    invoke-static {v1}, Lc2/n0;->e(F)I
+    invoke-static {v1}, Lb5/m;->r(F)I
 
     move-result v1
 
-    invoke-static {p1, v1}, Lwd/h1;->a(Landroidx/recyclerview/widget/RecyclerView;I)I
+    invoke-static {p1, v1}, Lvd/h1;->a(Landroidx/recyclerview/widget/RecyclerView;I)I
 
     move-result p1
 

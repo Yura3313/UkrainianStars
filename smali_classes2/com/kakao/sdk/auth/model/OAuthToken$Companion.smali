@@ -188,7 +188,7 @@
 
     const/4 v0, 0x6
 
-    invoke-static {p1, p2, v1, v1, v0}, Lre/s;->G(Ljava/lang/CharSequence;[Ljava/lang/String;ZII)Ljava/util/List;
+    invoke-static {p1, p2, v1, v1, v0}, Lre/r;->A(Ljava/lang/CharSequence;[Ljava/lang/String;ZII)Ljava/util/List;
 
     move-result-object v0
 
@@ -230,7 +230,7 @@
     const-string p1, "response"
 
     .line 11
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     goto :goto_6
 

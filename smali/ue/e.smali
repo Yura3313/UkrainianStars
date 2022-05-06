@@ -1,246 +1,318 @@
-.class public Lue/e;
-.super Lte/p;
-.source "Tasks.kt"
+.class public final Lue/e;
+.super Lse/t0;
+.source "Dispatcher.kt"
+
+# interfaces
+.implements Lue/h;
+.implements Ljava/util/concurrent/Executor;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lte/p<",
-        "Lue/i;",
-        ">;"
-    }
-.end annotation
+# static fields
+.field public static final k:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+
+
+# instance fields
+.field public final g:Ljava/util/concurrent/ConcurrentLinkedQueue;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/ConcurrentLinkedQueue<",
+            "Ljava/lang/Runnable;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final h:Lue/c;
+
+.field public final i:I
+
+.field private volatile inFlightTasks:I
+
+.field public final j:I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 2
 
-    const/4 v0, 0x0
+    const-class v0, Lue/e;
 
-    .line 1
-    invoke-direct {p0, v0}, Lte/p;-><init>(Z)V
+    const-string v1, "inFlightTasks"
+
+    invoke-static {v0, v1}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+
+    move-result-object v0
+
+    sput-object v0, Lue/e;->k:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final c(Lue/l;)Lue/i;
-    .locals 11
+.method public constructor <init>(Lue/c;II)V
+    .locals 1
 
     const/4 v0, 0x0
 
-    if-eqz p1, :cond_b
+    if-eqz p1, :cond_1
+
+    if-eqz p3, :cond_0
+
+    .line 1
+    invoke-direct {p0}, Lse/t0;-><init>()V
+
+    iput-object p1, p0, Lue/e;->h:Lue/c;
+
+    iput p2, p0, Lue/e;->i:I
+
+    iput p3, p0, Lue/e;->j:I
+
+    .line 2
+    new-instance p1, Ljava/util/concurrent/ConcurrentLinkedQueue;
+
+    invoke-direct {p1}, Ljava/util/concurrent/ConcurrentLinkedQueue;-><init>()V
+
+    iput-object p1, p0, Lue/e;->g:Ljava/util/concurrent/ConcurrentLinkedQueue;
+
+    const/4 p1, 0x0
+
+    .line 3
+    iput p1, p0, Lue/e;->inFlightTasks:I
+
+    return-void
+
+    :cond_0
+    const-string p1, "taskMode"
+
+    .line 4
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_1
+    const-string p1, "dispatcher"
+
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+
+# virtual methods
+.method public a()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lue/e;->j:I
+
+    return v0
+.end method
+
+.method public b()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lue/e;->g:Ljava/util/concurrent/ConcurrentLinkedQueue;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentLinkedQueue;->poll()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Runnable;
+
+    const/4 v1, 0x1
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-object v2, p0, Lue/e;->h:Lue/c;
+
+    invoke-virtual {v2, v0, p0, v1}, Lue/c;->k(Ljava/lang/Runnable;Lue/h;Z)V
+
+    return-void
+
+    .line 3
+    :cond_0
+    sget-object v0, Lue/e;->k:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+
+    invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->decrementAndGet(Ljava/lang/Object;)I
+
+    .line 4
+    iget-object v0, p0, Lue/e;->g:Ljava/util/concurrent/ConcurrentLinkedQueue;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentLinkedQueue;->poll()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Runnable;
+
+    if-eqz v0, :cond_1
+
+    .line 5
+    invoke-virtual {p0, v0, v1}, Lue/e;->k(Ljava/lang/Runnable;Z)V
+
+    :cond_1
+    return-void
+.end method
+
+.method public close()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v1, "Close cannot be invoked on LimitingBlockingDispatcher"
+
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public dispatch(Lde/f;Ljava/lang/Runnable;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_1
+
+    if-eqz p2, :cond_0
+
+    const/4 p1, 0x0
+
+    .line 1
+    invoke-virtual {p0, p2, p1}, Lue/e;->k(Ljava/lang/Runnable;Z)V
+
+    return-void
+
+    :cond_0
+    const-string p1, "block"
+
+    .line 2
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_1
+    const-string p1, "context"
+
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public execute(Ljava/lang/Runnable;)V
+    .locals 1
+
+    if-eqz p1, :cond_0
+
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-virtual {p0, p1, v0}, Lue/e;->k(Ljava/lang/Runnable;Z)V
+
+    return-void
+
+    :cond_0
+    const-string p1, "command"
+
+    .line 2
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final k(Ljava/lang/Runnable;Z)V
+    .locals 3
 
     .line 1
     :goto_0
-    iget-object v1, p0, Lte/p;->_cur$internal:Ljava/lang/Object;
+    sget-object v0, Lue/e;->k:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    check-cast v1, Lte/q;
+    invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->incrementAndGet(Ljava/lang/Object;)I
+
+    move-result v1
 
     .line 2
-    :cond_0
-    :goto_1
-    iget-wide v4, v1, Lte/q;->_state$internal:J
+    iget v2, p0, Lue/e;->i:I
 
-    const-wide/high16 v2, 0x1000000000000000L
-
-    and-long/2addr v2, v4
-
-    const-wide/16 v6, 0x0
-
-    cmp-long v8, v2, v6
-
-    if-eqz v8, :cond_1
+    if-gt v1, v2, :cond_0
 
     .line 3
-    sget-object v2, Lte/q;->g:Lp5/b0;
+    iget-object v0, p0, Lue/e;->h:Lue/c;
 
-    goto/16 :goto_5
+    invoke-virtual {v0, p1, p0, p2}, Lue/c;->k(Ljava/lang/Runnable;Lue/h;Z)V
+
+    return-void
 
     .line 4
-    :cond_1
-    sget-object v2, Lte/q;->h:Lte/q$a;
+    :cond_0
+    iget-object v1, p0, Lue/e;->g:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
-    const-wide/32 v6, 0x3fffffff
-
-    and-long/2addr v6, v4
-
-    const/4 v3, 0x0
-
-    shr-long/2addr v6, v3
-
-    long-to-int v8, v6
-
-    const-wide v6, 0xfffffffc0000000L
-
-    and-long/2addr v6, v4
-
-    const/16 v9, 0x1e
-
-    shr-long/2addr v6, v9
-
-    long-to-int v7, v6
+    invoke-virtual {v1, p1}, Ljava/util/concurrent/ConcurrentLinkedQueue;->add(Ljava/lang/Object;)Z
 
     .line 5
-    iget v6, v1, Lte/q;->a:I
+    invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->decrementAndGet(Ljava/lang/Object;)I
 
-    and-int/2addr v7, v6
+    move-result p1
 
-    and-int v9, v8, v6
+    iget v0, p0, Lue/e;->i:I
 
-    if-ne v7, v9, :cond_2
+    if-lt p1, v0, :cond_1
 
-    :goto_2
-    move-object v2, v0
-
-    goto :goto_5
+    return-void
 
     .line 6
+    :cond_1
+    iget-object p1, p0, Lue/e;->g:Ljava/util/concurrent/ConcurrentLinkedQueue;
+
+    invoke-virtual {p1}, Ljava/util/concurrent/ConcurrentLinkedQueue;->poll()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Runnable;
+
+    if-eqz p1, :cond_2
+
+    goto :goto_0
+
     :cond_2
-    iget-object v7, v1, Lte/q;->b:Ljava/util/concurrent/atomic/AtomicReferenceArray;
+    return-void
+.end method
 
-    and-int/2addr v6, v8
+.method public toString()Ljava/lang/String;
+    .locals 2
 
-    invoke-virtual {v7, v6}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    move-result-object v9
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    if-nez v9, :cond_3
+    invoke-super {p0}, Lse/w;->toString()Ljava/lang/String;
 
-    .line 7
-    iget-boolean v2, v1, Lte/q;->d:Z
+    move-result-object v1
 
-    if-eqz v2, :cond_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    goto :goto_2
+    const-string v1, "[dispatcher = "
 
-    .line 8
-    :cond_3
-    instance-of v6, v9, Lte/q$b;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    if-eqz v6, :cond_4
+    iget-object v1, p0, Lue/e;->h:Lue/c;
 
-    goto :goto_2
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 9
-    :cond_4
-    move-object v6, v9
+    const/16 v1, 0x5d
 
-    check-cast v6, Lue/i;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 10
-    invoke-virtual {v6}, Lue/i;->e()Lue/l;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v0
 
-    if-ne v6, p1, :cond_5
-
-    const/4 v3, 0x1
-
-    :cond_5
-    if-nez v3, :cond_6
-
-    goto :goto_2
-
-    :cond_6
-    add-int/lit8 v3, v8, 0x1
-
-    const v6, 0x3fffffff    # 1.9999999f
-
-    and-int v10, v3, v6
-
-    .line 11
-    sget-object v3, Lte/q;->f:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
-
-    invoke-virtual {v2, v4, v5, v10}, Lte/q$a;->a(JI)J
-
-    move-result-wide v6
-
-    move-object v2, v3
-
-    move-object v3, v1
-
-    invoke-virtual/range {v2 .. v7}, Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;->compareAndSet(Ljava/lang/Object;JJ)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_7
-
-    .line 12
-    iget-object v2, v1, Lte/q;->b:Ljava/util/concurrent/atomic/AtomicReferenceArray;
-
-    .line 13
-    iget v3, v1, Lte/q;->a:I
-
-    and-int/2addr v3, v8
-
-    .line 14
-    invoke-virtual {v2, v3, v0}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->set(ILjava/lang/Object;)V
-
-    goto :goto_4
-
-    .line 15
-    :cond_7
-    iget-boolean v2, v1, Lte/q;->d:Z
-
-    if-nez v2, :cond_8
-
-    goto :goto_1
-
-    :cond_8
-    move-object v2, v1
-
-    .line 16
-    :goto_3
-    invoke-static {v2, v8, v10}, Lte/q;->a(Lte/q;II)Lte/q;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_9
-
-    goto :goto_3
-
-    :cond_9
-    :goto_4
-    move-object v2, v9
-
-    .line 17
-    :goto_5
-    sget-object v3, Lte/q;->g:Lp5/b0;
-
-    if-eq v2, v3, :cond_a
-
-    .line 18
-    check-cast v2, Lue/i;
-
-    return-object v2
-
-    .line 19
-    :cond_a
-    sget-object v2, Lte/p;->a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
-
-    invoke-virtual {v1}, Lte/q;->e()Lte/q;
-
-    move-result-object v3
-
-    invoke-virtual {v2, p0, v1, v3}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    goto/16 :goto_0
-
-    :cond_b
-    const-string p1, "mode"
-
-    .line 20
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    goto :goto_7
-
-    :goto_6
-    throw v0
-
-    :goto_7
-    goto :goto_6
+    return-object v0
 .end method

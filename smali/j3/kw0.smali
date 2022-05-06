@@ -1,139 +1,117 @@
-.class public final Lj3/kw0;
+.class public Lj3/kw0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# static fields
-.field public static final d:Lj3/kw0;
-
-
 # instance fields
-.field public final a:F
+.field public final a:Lcom/google/android/gms/internal/ads/d6;
 
-.field public final b:F
+.field public final b:Ljava/lang/String;
 
-.field public final c:I
+.field public final c:Ljava/lang/String;
+
+.field public volatile d:Ljava/lang/reflect/Method;
+
+.field public final e:[Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "[",
+            "Ljava/lang/Class<",
+            "*>;"
+        }
+    .end annotation
+.end field
+
+.field public f:Ljava/util/concurrent/CountDownLatch;
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method public varargs constructor <init>(Lcom/google/android/gms/internal/ads/d6;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;)V
     .locals 2
-
-    .line 1
-    new-instance v0, Lj3/kw0;
-
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    invoke-direct {v0, v1, v1}, Lj3/kw0;-><init>(FF)V
-
-    sput-object v0, Lj3/kw0;->d:Lj3/kw0;
-
-    return-void
-.end method
-
-.method public constructor <init>(FF)V
-    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/gms/internal/ads/d6;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "[",
+            "Ljava/lang/Class<",
+            "*>;)V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    const/4 v0, 0x0
+
     .line 2
-    iput p1, p0, Lj3/kw0;->a:F
+    iput-object v0, p0, Lj3/kw0;->d:Ljava/lang/reflect/Method;
 
     .line 3
-    iput p2, p0, Lj3/kw0;->b:F
+    new-instance v0, Ljava/util/concurrent/CountDownLatch;
 
-    const/high16 p2, 0x447a0000    # 1000.0f
+    const/4 v1, 0x1
 
-    mul-float p1, p1, p2
+    invoke-direct {v0, v1}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
+
+    iput-object v0, p0, Lj3/kw0;->f:Ljava/util/concurrent/CountDownLatch;
 
     .line 4
-    invoke-static {p1}, Ljava/lang/Math;->round(F)I
+    iput-object p1, p0, Lj3/kw0;->a:Lcom/google/android/gms/internal/ads/d6;
 
-    move-result p1
+    .line 5
+    iput-object p2, p0, Lj3/kw0;->b:Ljava/lang/String;
 
-    iput p1, p0, Lj3/kw0;->c:I
+    .line 6
+    iput-object p3, p0, Lj3/kw0;->c:Ljava/lang/String;
+
+    .line 7
+    iput-object p4, p0, Lj3/kw0;->e:[Ljava/lang/Class;
+
+    .line 8
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/d6;->b:Ljava/util/concurrent/ExecutorService;
+
+    .line 9
+    new-instance p2, Lj3/nf;
+
+    const/4 p3, 0x2
+
+    invoke-direct {p2, p0, p3}, Lj3/nf;-><init>(Ljava/lang/Object;I)V
+
+    invoke-interface {p1, p2}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
-
-    const/4 v0, 0x1
-
-    if-ne p0, p1, :cond_0
-
-    return v0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    if-eqz p1, :cond_2
+.method public final a([BLjava/lang/String;)Ljava/lang/String;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzeh;,
+            Ljava/io/UnsupportedEncodingException;
+        }
+    .end annotation
 
     .line 1
-    const-class v2, Lj3/kw0;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v3
-
-    if-eq v2, v3, :cond_1
-
-    goto :goto_0
+    iget-object v0, p0, Lj3/kw0;->a:Lcom/google/android/gms/internal/ads/d6;
 
     .line 2
-    :cond_1
-    check-cast p1, Lj3/kw0;
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/d6;->d:Lj3/et0;
 
     .line 3
-    iget v2, p0, Lj3/kw0;->a:F
+    invoke-virtual {v0, p1, p2}, Lj3/et0;->b([BLjava/lang/String;)[B
 
-    iget v3, p1, Lj3/kw0;->a:F
+    move-result-object p1
 
-    cmpl-float v2, v2, v3
+    .line 4
+    new-instance p2, Ljava/lang/String;
 
-    if-nez v2, :cond_2
+    const-string v0, "UTF-8"
 
-    iget v2, p0, Lj3/kw0;->b:F
+    invoke-direct {p2, p1, v0}, Ljava/lang/String;-><init>([BLjava/lang/String;)V
 
-    iget p1, p1, Lj3/kw0;->b:F
-
-    cmpl-float p1, v2, p1
-
-    if-nez p1, :cond_2
-
-    return v0
-
-    :cond_2
-    :goto_0
-    return v1
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lj3/kw0;->a:F
-
-    invoke-static {v0}, Ljava/lang/Float;->floatToRawIntBits(F)I
-
-    move-result v0
-
-    add-int/lit16 v0, v0, 0x20f
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 2
-    iget v1, p0, Lj3/kw0;->b:F
-
-    invoke-static {v1}, Ljava/lang/Float;->floatToRawIntBits(F)I
-
-    move-result v1
-
-    add-int/2addr v1, v0
-
-    return v1
+    return-object p2
 .end method

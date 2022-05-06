@@ -203,7 +203,7 @@
     .line 3
     iget-object v1, p0, Lcom/google/protobuf/j$b;->e:[B
 
-    invoke-static {v1, v2, v0}, Lcom/google/protobuf/w1;->c([BII)Ljava/lang/String;
+    invoke-static {v1, v2, v0}, Lcom/google/protobuf/v1;->c([BII)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1372,7 +1372,7 @@
     iget-object v1, p0, Lcom/google/protobuf/j$b;->e:[B
 
     .line 5
-    invoke-static {v1, v2, v0}, Lcom/google/protobuf/i;->d([BII)Lcom/google/protobuf/i;
+    invoke-static {v1, v2, v0}, Lcom/google/protobuf/i;->e([BII)Lcom/google/protobuf/i;
 
     move-result-object v1
 
@@ -1389,7 +1389,7 @@
     if-nez v0, :cond_1
 
     .line 7
-    sget-object v0, Lcom/google/protobuf/i;->b:Lcom/google/protobuf/i;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
 
     return-object v0
 
@@ -1429,7 +1429,7 @@
 
     .line 12
     :goto_0
-    sget-object v1, Lcom/google/protobuf/i;->b:Lcom/google/protobuf/i;
+    sget-object v1, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
 
     .line 13
     new-instance v1, Lcom/google/protobuf/i$h;

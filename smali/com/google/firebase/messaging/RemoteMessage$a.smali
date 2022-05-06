@@ -24,7 +24,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/os/Bundle;Lcom/google/android/play/core/assetpacks/m2;)V
+.method public constructor <init>(Landroid/os/Bundle;Ly4/u;)V
     .locals 1
 
     .line 1

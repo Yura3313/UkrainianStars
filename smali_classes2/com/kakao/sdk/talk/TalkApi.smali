@@ -109,7 +109,7 @@
             "Ljava/lang/String;",
             ">;)",
             "Lxe/b<",
-            "Lbe/n;",
+            "Lae/i;",
             ">;"
         }
     .end annotation
@@ -173,7 +173,7 @@
             "Lcom/kakao/sdk/template/model/DefaultTemplate;",
             ")",
             "Lxe/b<",
-            "Lbe/n;",
+            "Lae/i;",
             ">;"
         }
     .end annotation
@@ -243,7 +243,7 @@
             "Ljava/lang/String;",
             ">;)",
             "Lxe/b<",
-            "Lbe/n;",
+            "Lae/i;",
             ">;"
         }
     .end annotation

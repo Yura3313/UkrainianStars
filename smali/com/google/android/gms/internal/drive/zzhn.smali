@@ -13,7 +13,7 @@
 
 
 # virtual methods
-.method public final J4(Lcom/google/android/gms/internal/drive/zzft;)V
+.method public final K4(Lcom/google/android/gms/internal/drive/zzft;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -22,10 +22,10 @@
     .end annotation
 
     .line 1
-    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzft;->b:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzft;->h:Lcom/google/android/gms/common/data/DataHolder;
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/gms/common/data/DataHolder;->k:Landroid/os/Bundle;
+    iget-object p1, p1, Lcom/google/android/gms/common/data/DataHolder;->l:Landroid/os/Bundle;
 
     .line 3
     const-class v0, Ln2/a;

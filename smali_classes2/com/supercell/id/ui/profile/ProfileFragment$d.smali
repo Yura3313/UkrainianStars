@@ -43,14 +43,14 @@
     iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$d;->b:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     .line 2
-    iput p1, v0, Lcom/supercell/id/ui/profile/ProfileFragment;->m0:I
+    iput p1, v0, Lcom/supercell/id/ui/profile/ProfileFragment;->n0:I
 
     .line 3
     iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$d;->a:Landroid/view/View;
 
     const-string v1, "add_friends_button"
 
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v2, 0x0
 
@@ -59,7 +59,7 @@
     .line 4
     iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$d;->a:Landroid/view/View;
 
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
@@ -88,7 +88,7 @@
     move-result-object v1
 
     .line 7
-    sget-object v2, Lrc/a;->b:Landroid/view/animation/Interpolator;
+    sget-object v2, Loc/a;->b:Landroid/view/animation/Interpolator;
 
     .line 8
     invoke-virtual {v1, v2}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
@@ -112,7 +112,7 @@
 
     const-string v1, "add_friends_button.anima\u2026          .scaleY(target)"
 
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 12
     new-instance v1, Lcom/supercell/id/ui/profile/ProfileFragment$d$a;
@@ -125,7 +125,7 @@
 
     const-string v0, "setListener(object : Ani\u2026d = true\n        }\n    })"
 
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 13
     invoke-virtual {p1}, Landroid/view/ViewPropertyAnimator;->start()V

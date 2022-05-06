@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/fragment/app/q;
+.field public final synthetic g:Landroidx/fragment/app/q;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/fragment/app/q$a;->a:Landroidx/fragment/app/q;
+    iput-object p1, p0, Landroidx/fragment/app/q$a;->g:Landroidx/fragment/app/q;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/q$a;->a:Landroidx/fragment/app/q;
+    iget-object v0, p0, Landroidx/fragment/app/q$a;->g:Landroidx/fragment/app/q;
 
     iget-object v0, v0, Landroidx/fragment/app/q;->b:Landroidx/fragment/app/Fragment;
 
@@ -50,7 +50,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Landroidx/fragment/app/q$a;->a:Landroidx/fragment/app/q;
+    iget-object v0, p0, Landroidx/fragment/app/q$a;->g:Landroidx/fragment/app/q;
 
     iget-object v0, v0, Landroidx/fragment/app/q;->b:Landroidx/fragment/app/Fragment;
 
@@ -59,7 +59,7 @@
     invoke-virtual {v0, v1}, Landroidx/fragment/app/Fragment;->G0(Landroid/view/View;)V
 
     .line 3
-    iget-object v0, p0, Landroidx/fragment/app/q$a;->a:Landroidx/fragment/app/q;
+    iget-object v0, p0, Landroidx/fragment/app/q$a;->g:Landroidx/fragment/app/q;
 
     iget-object v1, v0, Landroidx/fragment/app/q;->c:Landroidx/fragment/app/n0$a;
 

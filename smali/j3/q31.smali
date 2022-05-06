@@ -3,7 +3,18 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/p31;
+.implements Ljava/util/Comparator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "Lj3/w31;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
@@ -18,13 +29,34 @@
 
 
 # virtual methods
-.method public final a(Landroid/content/Context;)Lorg/json/JSONObject;
-    .locals 0
+.method public final synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 2
 
     .line 1
-    new-instance p1, Lorg/json/JSONObject;
+    check-cast p1, Lj3/w31;
 
-    invoke-direct {p1}, Lorg/json/JSONObject;-><init>()V
+    check-cast p2, Lj3/w31;
 
-    return-object p1
+    .line 2
+    iget v0, p1, Lj3/w31;->c:I
+
+    iget v1, p2, Lj3/w31;->c:I
+
+    sub-int/2addr v0, v1
+
+    if-eqz v0, :cond_0
+
+    return v0
+
+    .line 3
+    :cond_0
+    iget-wide v0, p1, Lj3/w31;->a:J
+
+    iget-wide p1, p2, Lj3/w31;->a:J
+
+    sub-long/2addr v0, p1
+
+    long-to-int p1, v0
+
+    return p1
 .end method

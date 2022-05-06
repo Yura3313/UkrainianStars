@@ -23,14 +23,14 @@
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->t:Ljava/lang/ref/WeakReference;
+    iput-object v0, p0, Lcom/google/android/material/badge/BadgeDrawable;->u:Ljava/lang/ref/WeakReference;
 
     .line 5
     new-instance p1, Ljava/lang/ref/WeakReference;
 
     invoke-direct {p1, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object p1, p0, Lcom/google/android/material/badge/BadgeDrawable;->u:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lcom/google/android/material/badge/BadgeDrawable;->v:Ljava/lang/ref/WeakReference;
 
     .line 6
     invoke-virtual {p0}, Lcom/google/android/material/badge/BadgeDrawable;->k()V

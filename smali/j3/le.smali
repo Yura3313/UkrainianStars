@@ -1,4 +1,4 @@
-.class public final synthetic Lj3/le;
+.class public final Lj3/le;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic g:I
 
-.field public final b:Ljava/lang/Object;
+.field public final h:Ljava/lang/Object;
 
 
 # direct methods
@@ -17,9 +17,9 @@
     .locals 0
 
     .line 1
-    iput p2, p0, Lj3/le;->a:I
+    iput p2, p0, Lj3/le;->g:I
 
-    iput-object p1, p0, Lj3/le;->b:Ljava/lang/Object;
+    iput-object p1, p0, Lj3/le;->h:Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,9 +29,9 @@
 
 # virtual methods
 .method public final run()V
-    .locals 2
+    .locals 1
 
-    iget v0, p0, Lj3/le;->a:I
+    iget v0, p0, Lj3/le;->g:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -39,44 +39,47 @@
 
     .line 1
     :pswitch_0
-    iget-object v0, p0, Lj3/le;->b:Ljava/lang/Object;
+    iget-object v0, p0, Lj3/le;->h:Ljava/lang/Object;
 
-    check-cast v0, Lj3/ke;
-
-    invoke-virtual {v0}, Lj3/ke;->i()V
-
-    return-void
+    check-cast v0, Lj3/ce;
 
     .line 2
-    :goto_0
-    iget-object v0, p0, Lj3/le;->b:Ljava/lang/Object;
+    iget-object v0, v0, Lj3/ce;->t:Lj3/me;
 
-    move-object v1, v0
-
-    check-cast v1, Lcom/google/android/gms/internal/ads/zzzs;
+    if-eqz v0, :cond_0
 
     .line 3
-    iget-object v1, v1, Lcom/google/android/gms/internal/ads/zzzs;->a:Lcom/google/android/gms/internal/ads/zzatt;
+    check-cast v0, Lj3/qe;
 
-    if-eqz v1, :cond_0
+    invoke-virtual {v0}, Lj3/qe;->a()V
 
     .line 4
-    :try_start_0
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzzs;
+    iget-object v0, p0, Lj3/le;->h:Ljava/lang/Object;
+
+    check-cast v0, Lj3/ce;
 
     .line 5
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/zzzs;->a:Lcom/google/android/gms/internal/ads/zzatt;
-
-    const/4 v1, 0x1
+    iget-object v0, v0, Lj3/ce;->t:Lj3/me;
 
     .line 6
-    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzatt;->W1(I)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    check-cast v0, Lj3/qe;
 
-    :catch_0
+    invoke-virtual {v0}, Lj3/qe;->h()V
+
     :cond_0
     return-void
+
+    .line 7
+    :goto_0
+    iget-object v0, p0, Lj3/le;->h:Ljava/lang/Object;
+
+    check-cast v0, Lj3/gh;
+
+    invoke-interface {v0}, Lj3/gh;->destroy()V
+
+    return-void
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0

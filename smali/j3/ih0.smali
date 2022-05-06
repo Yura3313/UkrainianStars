@@ -2,39 +2,19 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lj3/rv0;
+
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<AdT:",
-        "Lj3/fo;",
-        ">",
-        "Ljava/lang/Object;"
+        "Ljava/lang/Object;",
+        "Lj3/rv0<",
+        "Lj3/hh0;",
+        ">;"
     }
 .end annotation
-
-
-# instance fields
-.field public a:Lj3/xo;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/xo<",
-            "TAdT;>;"
-        }
-    .end annotation
-.end field
-
-.field public b:Lj3/ng0;
-
-.field public c:Lj3/fo;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TAdT;"
-        }
-    .end annotation
-.end field
-
-.field public d:J
 
 
 # direct methods
@@ -45,4 +25,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lj3/hh0;
+
+    invoke-direct {v0}, Lj3/hh0;-><init>()V
+
+    return-object v0
 .end method

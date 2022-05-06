@@ -3,7 +3,7 @@
 .source "GoogleServiceClient.java"
 
 # interfaces
-.implements La4/c;
+.implements Lb4/c;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La4/c<",
+        "Lb4/c<",
         "Lcom/google/android/gms/games/Player;",
         ">;"
     }
@@ -44,26 +44,26 @@
 
 
 # virtual methods
-.method public a(La4/f;)V
+.method public a(Lb4/f;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "La4/f<",
+            "Lb4/f<",
             "Lcom/google/android/gms/games/Player;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, La4/f;->l()Z
+    invoke-virtual {p1}, Lb4/f;->l()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 2
-    invoke-virtual {p1}, La4/f;->h()Ljava/lang/Object;
+    invoke-virtual {p1}, Lb4/f;->h()Ljava/lang/Object;
 
     move-result-object p1
 
@@ -87,7 +87,7 @@
     .line 5
     iget-object v0, p0, Lcom/supercell/titan/GoogleServiceClient$a;->a:Lcom/supercell/titan/GoogleServiceClient;
 
-    invoke-interface {p1}, Lcom/google/android/gms/games/Player;->q2()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/google/android/gms/games/Player;->s2()Ljava/lang/String;
 
     move-result-object v1
 
@@ -114,7 +114,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Landroid/support/v4/media/a;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
 
     .line 13
     invoke-static {}, Lcom/supercell/titan/GoogleServiceClient;->onSignIn()V

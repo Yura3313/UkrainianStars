@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
 
 # direct methods
@@ -24,9 +24,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lj3/l51;
+    new-instance v0, Lj3/i61;
 
-    invoke-direct {v0}, Lj3/l51;-><init>()V
+    invoke-direct {v0}, Lj3/i61;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzzy;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -52,7 +52,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 4
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzzy;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzzy;->g:Ljava/lang/String;
 
     return-void
 .end method
@@ -72,7 +72,7 @@
     const/16 v0, 0xf
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzzy;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzzy;->g:Ljava/lang/String;
 
     const/4 v2, 0x0
 

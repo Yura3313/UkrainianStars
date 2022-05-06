@@ -235,7 +235,7 @@
 
     move-result-object p0
 
-    sget v0, Lcom/google/android/gms/internal/ads_identifier/zzf;->a:I
+    sget v0, Lcom/google/android/gms/internal/ads_identifier/zzf;->g:I
 
     const-string v0, "com.google.android.gms.ads.identifier.internal.IAdvertisingIdService"
 
@@ -723,7 +723,7 @@
 
     if-eqz v1, :cond_1
 
-    iget-boolean v1, v1, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$a;->i:Z
+    iget-boolean v1, v1, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$a;->j:Z
 
     if-eqz v1, :cond_1
 
@@ -813,7 +813,7 @@
 
     const/4 v3, 0x1
 
-    invoke-interface {v2, v3}, Lcom/google/android/gms/internal/ads_identifier/zze;->q0(Z)Z
+    invoke-interface {v2, v3}, Lcom/google/android/gms/internal/ads_identifier/zze;->r0(Z)Z
 
     move-result v2
 
@@ -863,7 +863,7 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, v1, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$a;->h:Ljava/util/concurrent/CountDownLatch;
+    iget-object v1, v1, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$a;->i:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
     :try_end_0
@@ -1157,7 +1157,7 @@
 
     if-eqz v1, :cond_1
 
-    iget-boolean v1, v1, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$a;->i:Z
+    iget-boolean v1, v1, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$a;->j:Z
 
     if-eqz v1, :cond_1
 
@@ -1237,7 +1237,7 @@
     :try_start_6
     iget-object v0, p0, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->b:Lcom/google/android/gms/internal/ads_identifier/zze;
 
-    invoke-interface {v0}, Lcom/google/android/gms/internal/ads_identifier/zze;->zzc()Z
+    invoke-interface {v0}, Lcom/google/android/gms/internal/ads_identifier/zze;->g()Z
 
     move-result v0
     :try_end_6

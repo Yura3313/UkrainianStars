@@ -6,7 +6,7 @@
 
 
 # instance fields
-.field public final a:Lcom/google/android/play/core/tasks/i;
+.field public final g:Lcom/google/android/play/core/tasks/i;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/android/play/core/tasks/i<",
@@ -24,7 +24,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Ly4/c;->a:Lcom/google/android/play/core/tasks/i;
+    iput-object v0, p0, Ly4/c;->g:Lcom/google/android/play/core/tasks/i;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Ly4/c;->a:Lcom/google/android/play/core/tasks/i;
+    iput-object p1, p0, Ly4/c;->g:Lcom/google/android/play/core/tasks/i;
 
     return-void
 .end method
@@ -64,7 +64,7 @@
     :catch_0
     move-exception v0
 
-    iget-object v1, p0, Ly4/c;->a:Lcom/google/android/play/core/tasks/i;
+    iget-object v1, p0, Ly4/c;->g:Lcom/google/android/play/core/tasks/i;
 
     if-eqz v1, :cond_0
 

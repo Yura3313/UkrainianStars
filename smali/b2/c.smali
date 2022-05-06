@@ -20,7 +20,7 @@
 
 
 # instance fields
-.field public final a:Lb2/b;
+.field public final g:Lb2/b;
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 
@@ -32,7 +32,7 @@
     .end annotation
 .end field
 
-.field public b:I
+.field public h:I
 
 
 # direct methods
@@ -54,12 +54,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lb2/c;->a:Lb2/b;
+    iput-object p1, p0, Lb2/c;->g:Lb2/b;
 
     const/4 p1, -0x1
 
     .line 3
-    iput p1, p0, Lb2/c;->b:I
+    iput p1, p0, Lb2/c;->h:I
 
     return-void
 .end method
@@ -70,9 +70,9 @@
     .locals 3
 
     .line 1
-    iget v0, p0, Lb2/c;->b:I
+    iget v0, p0, Lb2/c;->h:I
 
-    iget-object v1, p0, Lb2/c;->a:Lb2/b;
+    iget-object v1, p0, Lb2/c;->g:Lb2/b;
 
     invoke-interface {v1}, Lb2/b;->getCount()I
 
@@ -111,13 +111,13 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lb2/c;->a:Lb2/b;
+    iget-object v0, p0, Lb2/c;->g:Lb2/b;
 
-    iget v1, p0, Lb2/c;->b:I
+    iget v1, p0, Lb2/c;->h:I
 
     add-int/lit8 v1, v1, 0x1
 
-    iput v1, p0, Lb2/c;->b:I
+    iput v1, p0, Lb2/c;->h:I
 
     invoke-interface {v0, v1}, Lb2/b;->get(I)Ljava/lang/Object;
 
@@ -129,13 +129,13 @@
     :cond_0
     new-instance v0, Ljava/util/NoSuchElementException;
 
-    iget v1, p0, Lb2/c;->b:I
+    iget v1, p0, Lb2/c;->h:I
 
     const/16 v2, 0x2e
 
     const-string v3, "Cannot advance the iterator beyond "
 
-    invoke-static {v2, v3, v1}, Lb0/c;->b(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v2, v3, v1}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object v1
 

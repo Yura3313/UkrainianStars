@@ -186,7 +186,27 @@
     return-object p1
 .end method
 
-.method public captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+.method public synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3}, Lio/sentry/g;->m(Lio/sentry/ISentryClient;Lio/sentry/protocol/SentryTransaction;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;)Lio/sentry/protocol/SentryId;
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Lio/sentry/g;->n(Lio/sentry/ISentryClient;Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;)Lio/sentry/protocol/SentryId;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     .line 1

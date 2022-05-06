@@ -27,7 +27,7 @@
     return-void
 .end method
 
-.method public static final h(III)I
+.method public static final b(III)I
     .locals 2
 
     sub-int/2addr p0, p1
@@ -43,13 +43,13 @@
     const/16 v0, 0xb4
 
     .line 1
-    invoke-static {v0}, Lc5/i;->c(I)F
+    invoke-static {v0}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v0
 
     const/16 v1, 0x12c
 
-    invoke-static {v1}, Lc5/i;->c(I)F
+    invoke-static {v1}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v1
 
@@ -78,7 +78,7 @@
     .line 3
     :cond_1
     :goto_0
-    invoke-static {p2}, Lc2/n0;->e(F)I
+    invoke-static {p2}, Lb5/m;->r(F)I
 
     move-result p0
 
@@ -89,7 +89,7 @@
 
 
 # virtual methods
-.method public abstract A(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+.method public abstract B(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -109,7 +109,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/BackStack$Entry;->A(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/BackStack$Entry;->B(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
 
     move-result-object p1
 
@@ -123,14 +123,14 @@
     const-string p1, "mainActivity"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public abstract D(Lcom/supercell/id/ui/MainActivity;III)I
+.method public abstract E(Lcom/supercell/id/ui/MainActivity;III)I
 .end method
 
 .method public G(Lcom/supercell/id/ui/MainActivity;III)I
@@ -139,7 +139,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    invoke-static {p2, p3, p4}, Lcom/supercell/id/ui/BackStack$Entry;->h(III)I
+    invoke-static {p2, p3, p4}, Lcom/supercell/id/ui/BackStack$Entry;->b(III)I
 
     move-result p1
 
@@ -149,14 +149,14 @@
     const-string p1, "mainActivity"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public K()Z
+.method public I()Z
     .locals 1
 
     const/4 v0, 0x0
@@ -164,7 +164,7 @@
     return v0
 .end method
 
-.method public R()Z
+.method public M()Z
     .locals 1
 
     const/4 v0, 0x0
@@ -172,7 +172,7 @@
     return v0
 .end method
 
-.method public U(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+.method public T(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -181,7 +181,7 @@
             ")",
             "Ljava/lang/Class<",
             "+",
-            "Luc/g1;",
+            "Lrc/g1;",
             ">;"
         }
     .end annotation
@@ -189,7 +189,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    const-class p1, Luc/i1;
+    const-class p1, Lrc/i1;
 
     return-object p1
 
@@ -197,20 +197,20 @@
     const-string p1, "mainActivity"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public W(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BaseFragment;
+.method public X(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BaseFragment;
     .locals 1
 
     if-eqz p1, :cond_1
 
     .line 1
-    invoke-virtual {p0}, Lcom/supercell/id/ui/BackStack$Entry;->j()Ljava/lang/Class;
+    invoke-virtual {p0}, Lcom/supercell/id/ui/BackStack$Entry;->i()Ljava/lang/Class;
 
     move-result-object v0
 
@@ -241,20 +241,20 @@
     const-string p1, "mainActivity"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public Z(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BaseFragment;
+.method public Y(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BaseFragment;
     .locals 1
 
     if-eqz p1, :cond_1
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/BackStack$Entry;->A(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/BackStack$Entry;->B(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
 
     move-result-object v0
 
@@ -285,20 +285,20 @@
     const-string p1, "mainActivity"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public final i0(Lcom/supercell/id/ui/MainActivity;)Luc/g1;
+.method public final b0(Lcom/supercell/id/ui/MainActivity;)Lrc/g1;
     .locals 1
 
     if-eqz p1, :cond_1
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/BackStack$Entry;->U(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/BackStack$Entry;->T(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
 
     move-result-object v0
 
@@ -312,7 +312,7 @@
 
     if-eqz p1, :cond_0
 
-    check-cast p1, Luc/g1;
+    check-cast p1, Lrc/g1;
 
     return-object p1
 
@@ -329,14 +329,14 @@
     const-string p1, "mainActivity"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public abstract j()Ljava/lang/Class;
+.method public abstract i()Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -348,11 +348,11 @@
     .end annotation
 .end method
 
-.method public m()Ljava/lang/String;
+.method public k()Ljava/lang/String;
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/supercell/id/ui/BackStack$Entry;->j()Ljava/lang/Class;
+    invoke-virtual {p0}, Lcom/supercell/id/ui/BackStack$Entry;->i()Ljava/lang/Class;
 
     move-result-object v0
 
@@ -363,7 +363,7 @@
     return-object v0
 .end method
 
-.method public m0(Lcom/supercell/id/ui/MainActivity;III)I
+.method public k0(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 0
 
     if-eqz p1, :cond_0
@@ -376,14 +376,14 @@
     const-string p1, "mainActivity"
 
     .line 1
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public q0(Lcom/supercell/id/ui/MainActivity;III)I
+.method public n0(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 0
 
     const/4 p1, 0x0
@@ -391,7 +391,7 @@
     return p1
 .end method
 
-.method public r()Z
+.method public o()Z
     .locals 1
 
     const/4 v0, 0x0
@@ -399,7 +399,10 @@
     return v0
 .end method
 
-.method public u0(Lcom/supercell/id/ui/MainActivity;)Z
+.method public abstract t()Z
+.end method
+
+.method public t0(Lcom/supercell/id/ui/MainActivity;)Z
     .locals 0
 
     if-eqz p1, :cond_0
@@ -412,35 +415,14 @@
     const-string p1, "mainActivity"
 
     .line 1
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public abstract w()Z
-.end method
-
-.method public z(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/String;
-    .locals 1
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_0
-
-    return-object v0
-
-    :cond_0
-    const-string p1, "mainActivity"
-
-    .line 1
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public z0(Lcom/supercell/id/ui/MainActivity;)Z
+.method public w0(Lcom/supercell/id/ui/MainActivity;)Z
     .locals 0
 
     if-eqz p1, :cond_0
@@ -453,9 +435,27 @@
     const-string p1, "mainActivity"
 
     .line 1
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
+.end method
+
+.method public y(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/String;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_0
+
+    return-object v0
+
+    :cond_0
+    const-string p1, "mainActivity"
+
+    .line 1
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
 .end method

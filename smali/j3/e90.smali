@@ -2,60 +2,82 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lj3/ql0;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public final a:Lcom/google/android/gms/internal/ads/zzasp;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzasp;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lj3/e90;->a:Lcom/google/android/gms/internal/ads/zzasp;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Object;)Lj3/im0;
+    .locals 4
 
     .line 1
-    sget-object v0, Lj3/sw0;->b:[I
+    iget-object v0, p0, Lj3/e90;->a:Lcom/google/android/gms/internal/ads/zzasp;
 
-    invoke-virtual {v0}, [I->clone()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, [I
+    check-cast p1, Ljava/io/InputStream;
 
     .line 2
-    array-length v0, v0
+    new-instance v1, Lj3/g90;
 
-    new-array v0, v0, [I
+    new-instance v2, Landroid/util/JsonReader;
 
-    sput-object v0, Lj3/e90;->a:[I
+    new-instance v3, Ljava/io/InputStreamReader;
 
-    const/4 v1, 0x1
+    invoke-direct {v3, p1}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V
 
+    invoke-direct {v2, v3}, Landroid/util/JsonReader;-><init>(Ljava/io/Reader;)V
+
+    invoke-direct {v1, v2}, Lj3/g90;-><init>(Landroid/util/JsonReader;)V
+
+    iget-object p1, v0, Lcom/google/android/gms/internal/ads/zzasp;->g:Landroid/os/Bundle;
+
+    .line 3
     :try_start_0
-    aput v1, v0, v1
+    sget-object v0, Lh1/o;->B:Lh1/o;
+
+    iget-object v0, v0, Lh1/o;->c:Lj3/bb;
+
+    .line 4
+    invoke-virtual {v0, p1}, Lj3/bb;->u(Landroid/os/Bundle;)Lorg/json/JSONObject;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, v1, Lj3/g90;->b:Ljava/lang/String;
     :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
 
     :catch_0
-    :try_start_1
-    sget-object v0, Lj3/e90;->a:[I
+    const-string p1, "{}"
 
-    const/4 v1, 0x2
+    .line 5
+    iput-object p1, v1, Lj3/g90;->b:Ljava/lang/String;
 
-    aput v1, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    .line 6
+    :goto_0
+    invoke-static {v1}, Lj3/em0;->j(Ljava/lang/Object;)Lj3/im0;
 
-    :catch_1
-    :try_start_2
-    sget-object v0, Lj3/e90;->a:[I
+    move-result-object p1
 
-    const/4 v1, 0x0
-
-    const/4 v2, 0x3
-
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    :catch_2
-    return-void
+    return-object p1
 .end method

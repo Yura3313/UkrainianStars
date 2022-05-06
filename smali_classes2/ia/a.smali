@@ -1,274 +1,358 @@
 .class public Lia/a;
 .super Ljava/lang/Object;
-.source "RedactionAgent.java"
+.source "CachedKeyValueStorage.java"
+
+# interfaces
+.implements Lia/c;
 
 
 # instance fields
-.field public a:Lc8/o;
+.field public a:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public b:Ly7/f;
+.field public b:Ljava/util/Set;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public c:Lia/c;
 
 
 # direct methods
-.method public constructor <init>(Lc8/o;Ly7/f;)V
+.method public constructor <init>(Lia/c;Ljava/util/Set;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lia/c;",
+            "Ljava/util/Set<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lia/a;->a:Lc8/o;
+    iput-object p1, p0, Lia/a;->c:Lia/c;
 
     .line 3
-    iput-object p2, p0, Lia/a;->b:Ly7/f;
+    new-instance p1, Ljava/util/HashSet;
+
+    invoke-direct {p1, p2}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+
+    iput-object p1, p0, Lia/a;->b:Ljava/util/Set;
+
+    .line 4
+    new-instance p1, Ljava/util/HashMap;
+
+    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
+
+    iput-object p1, p0, Lia/a;->a:Ljava/util/HashMap;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lg7/c;Lia/f;)V
-    .locals 7
+.method public declared-synchronized a(Ljava/lang/String;)Ljava/lang/Object;
+    .locals 2
+
+    monitor-enter p0
 
     .line 1
-    iget-object v0, p1, Lg7/c;->a:Ljava/lang/Long;
-
-    .line 2
-    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v0
-
-    sget-object v2, Lia/e;->PENDING:Lia/e;
-
-    .line 3
-    iget-object v3, p0, Lia/a;->a:Lc8/o;
-
-    check-cast v3, Lc8/i;
-
-    invoke-virtual {v3}, Lc8/i;->j()Lm1/b;
-
-    move-result-object v3
-
-    .line 4
-    iget-object p1, p1, Lg7/c;->a:Ljava/lang/Long;
-
-    .line 5
-    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v4
-
-    invoke-virtual {v3, v4, v5}, Lm1/b;->c(J)Lia/b;
-
-    move-result-object p1
-
-    if-nez p1, :cond_0
-
-    .line 6
-    iget-object p1, v3, Lm1/b;->a:Ljava/lang/Object;
-
-    check-cast p1, Le7/d;
-
-    .line 7
-    monitor-enter p1
-
-    .line 8
     :try_start_0
-    iget-object v3, p1, Le7/d;->a:Lo9/a;
+    iget-object v0, p0, Lia/a;->a:Ljava/util/HashMap;
 
-    invoke-virtual {v3}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
-
-    move-result-object v3
-
-    .line 9
-    new-instance v4, Landroid/content/ContentValues;
-
-    invoke-direct {v4}, Landroid/content/ContentValues;-><init>()V
-
-    .line 10
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v0
-
-    const-string v1, "user_local_id"
-
-    invoke-virtual {v4, v1, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
-
-    .line 11
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v0
 
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lia/a;->a:Ljava/util/HashMap;
+
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit p0
+
+    return-object p1
+
+    .line 3
+    :cond_0
+    :try_start_1
+    iget-object v0, p0, Lia/a;->c:Lia/c;
+
+    invoke-interface {v0, p1}, Lia/c;->a(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    const-string v1, "redaction_state"
+    .line 4
+    iget-object v1, p0, Lia/a;->b:Ljava/util/Set;
 
-    invoke-virtual {v4, v1, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+    invoke-interface {v1, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
-    .line 12
-    invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
+    move-result v1
 
-    move-result p2
+    if-eqz v1, :cond_1
 
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 5
+    iget-object v1, p0, Lia/a;->a:Ljava/util/HashMap;
 
-    move-result-object p2
-
-    const-string v0, "redaction_type"
-
-    invoke-virtual {v4, v0, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    const-string p2, "redaction_info_table"
-
-    const/4 v0, 0x0
-
-    .line 13
-    invoke-virtual {v3, p2, v0, v4}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception p2
-
-    goto :goto_1
-
-    :catch_0
-    move-exception p2
-
-    :try_start_1
-    const-string v0, "Helpshift_UserDB"
-
-    const-string v1, "Error in inserting redaction info of the user"
-
-    .line 14
-    invoke-static {v0, v1, p2}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 15
-    :goto_0
-    monitor-exit p1
+    .line 6
+    :cond_1
+    monitor-exit p0
 
-    goto :goto_3
+    return-object v0
 
-    :goto_1
-    monitor-exit p1
+    :catchall_0
+    move-exception p1
 
-    throw p2
+    monitor-exit p0
 
-    .line 16
+    throw p1
+.end method
+
+.method public declared-synchronized b(Ljava/lang/String;)V
+    .locals 1
+
+    monitor-enter p0
+
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lia/a;->c:Lia/c;
+
+    invoke-interface {v0, p1}, Lia/c;->b(Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p0, Lia/a;->a:Ljava/util/HashMap;
+
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 3
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
+.end method
+
+.method public declared-synchronized c(Ljava/lang/String;Ljava/io/Serializable;)Z
+    .locals 2
+
+    monitor-enter p0
+
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lia/a;->a:Ljava/util/HashMap;
+
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    iget-object v0, p0, Lia/a;->c:Lia/c;
+
+    invoke-interface {v0, p1, p2}, Lia/c;->c(Ljava/lang/String;Ljava/io/Serializable;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    iget-object v1, p0, Lia/a;->b:Ljava/util/Set;
+
+    invoke-interface {v1, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 4
+    iget-object v1, p0, Lia/a;->a:Ljava/util/HashMap;
+
+    invoke-virtual {v1, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 5
     :cond_0
-    iget-object p1, v3, Lm1/b;->a:Ljava/lang/Object;
+    monitor-exit p0
 
-    check-cast p1, Le7/d;
+    return v0
 
-    .line 17
-    monitor-enter p1
+    :catchall_0
+    move-exception p1
 
-    .line 18
-    :try_start_2
-    iget-object v3, p1, Le7/d;->a:Lo9/a;
+    monitor-exit p0
 
-    invoke-virtual {v3}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    throw p1
+.end method
 
-    move-result-object v3
+.method public declared-synchronized d()V
+    .locals 1
 
-    .line 19
-    new-instance v4, Landroid/content/ContentValues;
+    monitor-enter p0
 
-    invoke-direct {v4}, Landroid/content/ContentValues;-><init>()V
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lia/a;->c:Lia/c;
 
-    .line 20
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-interface {v0}, Lia/c;->d()V
 
-    move-result-object v5
+    .line 2
+    iget-object v0, p0, Lia/a;->a:Ljava/util/HashMap;
 
-    const-string v6, "user_local_id"
+    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-virtual {v4, v6, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
+    .line 3
+    monitor-exit p0
 
-    .line 21
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+    return-void
 
-    move-result v2
+    :catchall_0
+    move-exception v0
 
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    monitor-exit p0
 
-    move-result-object v2
+    throw v0
+.end method
 
-    const-string v5, "redaction_state"
+.method public e(Ljava/util/Map;)Z
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/io/Serializable;",
+            ">;)Z"
+        }
+    .end annotation
 
-    invoke-virtual {v4, v5, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    .line 22
-    invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result p2
-
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p2
-
-    const-string v2, "redaction_type"
-
-    invoke-virtual {v4, v2, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    const-string p2, "redaction_info_table"
-
-    const-string v2, "user_local_id = ?"
-
-    const/4 v5, 0x1
-
-    new-array v5, v5, [Ljava/lang/String;
-
-    const/4 v6, 0x0
-
-    .line 23
-    invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+    .line 1
+    invoke-interface {p1}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v0
 
-    aput-object v0, v5, v6
+    if-eqz v0, :cond_0
 
-    .line 24
-    invoke-virtual {v3, p2, v4, v2, v5}, Landroid/database/sqlite/SQLiteDatabase;->update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+    .line 2
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    goto :goto_2
+    move-result-object v0
 
-    :catchall_1
-    move-exception p2
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    goto :goto_4
+    move-result v1
 
-    :catch_1
-    move-exception p2
+    if-eqz v1, :cond_0
 
-    :try_start_3
-    const-string v0, "Helpshift_UserDB"
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    const-string v1, "Error in updating redaction detail"
+    move-result-object v1
 
-    .line 25
-    invoke-static {v0, v1, p2}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+    check-cast v1, Ljava/lang/String;
 
-    .line 26
-    :goto_2
-    monitor-exit p1
+    .line 3
+    iget-object v2, p0, Lia/a;->a:Ljava/util/HashMap;
 
-    :goto_3
-    return-void
+    invoke-virtual {v2, v1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    :goto_4
-    monitor-exit p1
+    goto :goto_0
 
-    throw p2
+    .line 4
+    :cond_0
+    iget-object v0, p0, Lia/a;->c:Lia/c;
+
+    invoke-interface {v0, p1}, Lia/c;->e(Ljava/util/Map;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 5
+    invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :cond_1
+    :goto_1
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/Map$Entry;
+
+    .line 6
+    iget-object v2, p0, Lia/a;->b:Ljava/util/Set;
+
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-interface {v2, v3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 7
+    iget-object v2, p0, Lia/a;->a:Ljava/util/HashMap;
+
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-virtual {v2, v3, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_1
+
+    :cond_2
+    return v0
 .end method

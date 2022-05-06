@@ -3,7 +3,7 @@
 .source "BaseTransientBottomBar.java"
 
 # interfaces
-.implements Lf0/o;
+.implements Lf0/n;
 
 
 # annotations
@@ -35,13 +35,13 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;Lf0/a0;)Lf0/a0;
+.method public a(Landroid/view/View;Lf0/z;)Lf0/z;
     .locals 1
 
     .line 1
     iget-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$c;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
-    invoke-virtual {p2}, Lf0/a0;->d()I
+    invoke-virtual {p2}, Lf0/z;->d()I
 
     move-result v0
 
@@ -51,7 +51,7 @@
     .line 3
     iget-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$c;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
-    invoke-virtual {p2}, Lf0/a0;->e()I
+    invoke-virtual {p2}, Lf0/z;->e()I
 
     move-result v0
 
@@ -61,7 +61,7 @@
     .line 5
     iget-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$c;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
-    invoke-virtual {p2}, Lf0/a0;->f()I
+    invoke-virtual {p2}, Lf0/z;->f()I
 
     move-result v0
 

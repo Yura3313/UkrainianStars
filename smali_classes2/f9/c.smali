@@ -31,7 +31,7 @@
     .line 1
     iget-object v0, p0, Lf9/c;->a:Lf9/b;
 
-    invoke-interface {v0}, Lf9/b;->f()Ljava/util/List;
+    invoke-interface {v0}, Lf9/b;->g()Ljava/util/List;
 
     move-result-object v0
 
@@ -75,7 +75,7 @@
     :cond_0
     iget-object v0, p0, Lf9/c;->a:Lf9/b;
 
-    invoke-interface {v0}, Lf9/b;->b()Ljava/util/List;
+    invoke-interface {v0}, Lf9/b;->c()Ljava/util/List;
 
     move-result-object v0
 

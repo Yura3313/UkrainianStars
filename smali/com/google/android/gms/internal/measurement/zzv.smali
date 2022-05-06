@@ -6,4 +6,4 @@
 
 
 # static fields
-.field public static final synthetic a:I
+.field public static final synthetic g:I

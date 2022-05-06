@@ -78,7 +78,7 @@
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 6
-    sget-object v0, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 7
     invoke-virtual {p2}, Landroid/view/View;->getLayoutDirection()I
@@ -128,7 +128,7 @@
     .locals 5
 
     .line 1
-    sget-boolean v0, Landroidx/drawerlayout/widget/DrawerLayout;->J:Z
+    sget-boolean v0, Landroidx/drawerlayout/widget/DrawerLayout;->K:Z
 
     const/4 v1, 0x0
 
@@ -169,7 +169,7 @@
     invoke-virtual {v2, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setSource(Landroid/view/View;)V
 
     .line 9
-    sget-object v2, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v2, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 10
     invoke-virtual {p1}, Landroid/view/View;->getParentForAccessibility()Landroid/view/ViewParent;
@@ -405,7 +405,7 @@
     .locals 1
 
     .line 1
-    sget-boolean v0, Landroidx/drawerlayout/widget/DrawerLayout;->J:Z
+    sget-boolean v0, Landroidx/drawerlayout/widget/DrawerLayout;->K:Z
 
     if-nez v0, :cond_1
 

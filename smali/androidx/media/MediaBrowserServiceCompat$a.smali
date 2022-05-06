@@ -66,9 +66,9 @@
     if-lt p1, p5, :cond_0
 
     .line 5
-    new-instance p1, Lp0/m;
+    new-instance p1, Lp0/k;
 
-    invoke-direct {p1, p2, p3, p4}, Lp0/m;-><init>(Ljava/lang/String;II)V
+    invoke-direct {p1, p2, p3, p4}, Lp0/k;-><init>(Ljava/lang/String;II)V
 
     .line 6
     :cond_0
@@ -85,7 +85,7 @@
     .line 1
     iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$a;->d:Landroidx/media/MediaBrowserServiceCompat;
 
-    iget-object v0, v0, Landroidx/media/MediaBrowserServiceCompat;->h:Landroidx/media/MediaBrowserServiceCompat$l;
+    iget-object v0, v0, Landroidx/media/MediaBrowserServiceCompat;->i:Landroidx/media/MediaBrowserServiceCompat$l;
 
     new-instance v1, Landroidx/media/MediaBrowserServiceCompat$a$a;
 

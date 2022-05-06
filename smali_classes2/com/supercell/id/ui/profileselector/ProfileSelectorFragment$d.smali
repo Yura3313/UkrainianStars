@@ -3,7 +3,7 @@
 .source "ProfileSelectorFragment.kt"
 
 # interfaces
-.implements Lwd/j1;
+.implements Lvd/j1;
 
 
 # annotations
@@ -42,7 +42,7 @@
 
 
 # virtual methods
-.method public a(Lwd/j1;)Z
+.method public a(Lvd/j1;)Z
     .locals 1
 
     if-eqz p1, :cond_1
@@ -64,7 +64,7 @@
 
     iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$d;->b:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -74,14 +74,23 @@
     const-string p1, "other"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public c(Lwd/j1;)Z
+.method public c()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$d;->a:I
+
+    return v0
+.end method
+
+.method public d(Lvd/j1;)Z
     .locals 1
 
     if-eqz p1, :cond_1
@@ -97,7 +106,7 @@
 
     iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$d;->b:Ljava/lang/String;
 
-    invoke-static {p1, v0}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -117,20 +126,11 @@
     const-string p1, "other"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
-.end method
-
-.method public d()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$d;->a:I
-
-    return v0
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -148,7 +148,7 @@
 
     iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$d;->b:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -193,7 +193,7 @@
 
     const-string v0, "HeaderFirstItemRow(titleKey="
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

@@ -3,90 +3,120 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/gl0;
+.implements Lj3/ql0;
 
 
 # instance fields
-.field public final a:Lj3/b6;
+.field public final synthetic a:I
 
 .field public final b:Ljava/lang/Object;
 
+.field public final c:Ljava/lang/Object;
+
 
 # direct methods
-.method public constructor <init>(Lj3/b6;Ljava/lang/Object;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;I)V
     .locals 0
 
+    .line 1
+    iput p3, p0, Lj3/a6;->a:I
+
+    iput-object p1, p0, Lj3/a6;->b:Ljava/lang/Object;
+
+    iput-object p2, p0, Lj3/a6;->c:Ljava/lang/Object;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lj3/a6;->a:Lj3/b6;
-
-    iput-object p2, p0, Lj3/a6;->b:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lj3/yl0;
-    .locals 6
+.method public final a(Ljava/lang/Object;)Lj3/im0;
+    .locals 4
 
-    iget-object v0, p0, Lj3/a6;->a:Lj3/b6;
+    iget v0, p0, Lj3/a6;->a:I
 
-    iget-object v1, p0, Lj3/a6;->b:Ljava/lang/Object;
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
+
+    .line 1
+    :pswitch_0
+    iget-object v0, p0, Lj3/a6;->b:Ljava/lang/Object;
+
+    check-cast v0, Ljava/lang/String;
+
+    iget-object v1, p0, Lj3/a6;->c:Ljava/lang/Object;
+
+    check-cast v1, Lj3/y2;
 
     check-cast p1, Lj3/l5;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 1
-    new-instance v2, Lj3/md;
-
-    invoke-direct {v2}, Lj3/md;-><init>()V
-
     .line 2
-    sget-object v3, Lh1/o;->B:Lh1/o;
-
-    iget-object v3, v3, Lh1/o;->c:Lj3/xa;
+    invoke-interface {p1, v0, v1}, Lj3/l5;->g(Ljava/lang/String;Lj3/y2;)V
 
     .line 3
-    invoke-static {}, Lj3/xa;->I()Ljava/lang/String;
+    invoke-static {p1}, Lj3/em0;->j(Ljava/lang/Object;)Lj3/im0;
 
-    move-result-object v3
+    move-result-object p1
+
+    return-object p1
 
     .line 4
-    sget-object v4, Lj3/g2;->p:Lj3/d3;
+    :goto_0
+    iget-object v0, p0, Lj3/a6;->b:Ljava/lang/Object;
 
-    new-instance v5, Lj3/d6;
+    check-cast v0, Lj3/ap;
 
-    invoke-direct {v5, v0, v2}, Lj3/d6;-><init>(Lj3/b6;Lj3/md;)V
+    iget-object v1, p0, Lj3/a6;->c:Ljava/lang/Object;
 
-    invoke-virtual {v4, v3, v5}, Lj3/d3;->a(Ljava/lang/String;Lj3/f3;)V
+    check-cast v1, Lcom/google/android/gms/internal/ads/zzdnd;
+
+    check-cast p1, Lcom/google/android/gms/internal/ads/zzasp;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 5
-    new-instance v4, Lorg/json/JSONObject;
-
-    invoke-direct {v4}, Lorg/json/JSONObject;-><init>()V
-
-    const-string v5, "id"
+    iput-object v1, p1, Lcom/google/android/gms/internal/ads/zzasp;->p:Lcom/google/android/gms/internal/ads/zzdnd;
 
     .line 6
-    invoke-virtual {v4, v5, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    iget-object v0, v0, Lj3/ap;->i:Lj3/b30;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 7
-    iget-object v3, v0, Lj3/b6;->b:Lj3/o5;
+    new-instance v1, Lj3/f30;
 
-    invoke-interface {v3, v1}, Lj3/o5;->c(Ljava/lang/Object;)Lorg/json/JSONObject;
-
-    move-result-object v1
-
-    const-string v3, "args"
-
-    invoke-virtual {v4, v3, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    invoke-direct {v1, p1}, Lj3/f30;-><init>(Lcom/google/android/gms/internal/ads/zzasp;)V
 
     .line 8
-    iget-object v0, v0, Lj3/b6;->c:Ljava/lang/String;
+    iget-object v2, v0, Lj3/b30;->b:Lj3/w20;
 
-    invoke-interface {p1, v0, v4}, Lj3/p4;->U(Ljava/lang/String;Lorg/json/JSONObject;)V
+    .line 9
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    return-object v2
+    .line 10
+    new-instance v3, Lj3/j5;
+
+    invoke-direct {v3, v2}, Lj3/j5;-><init>(Ljava/lang/Object;)V
+
+    .line 11
+    new-instance v2, Lj3/h30;
+
+    invoke-direct {v2, v0}, Lj3/h30;-><init>(Ljava/lang/Object;)V
+
+    .line 12
+    invoke-virtual {v0, p1, v3, v2, v1}, Lj3/b30;->a(Lcom/google/android/gms/internal/ads/zzasp;Lj3/i30;Lj3/i30;Lj3/ql0;)Lj3/im0;
+
+    move-result-object p1
+
+    return-object p1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

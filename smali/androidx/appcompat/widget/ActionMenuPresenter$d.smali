@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/appcompat/widget/ActionMenuPresenter;
+.field public final synthetic g:Landroidx/appcompat/widget/ActionMenuPresenter;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 2
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$d;->a:Landroidx/appcompat/widget/ActionMenuPresenter;
+    iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$d;->g:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     .line 2
     sget v0, Landroidx/appcompat/R$attr;->actionOverflowButtonStyle:I
@@ -107,7 +107,7 @@
     invoke-virtual {p0, v0}, Landroid/widget/ImageView;->playSoundEffect(I)V
 
     .line 3
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$d;->a:Landroidx/appcompat/widget/ActionMenuPresenter;
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$d;->g:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ActionMenuPresenter;->u()Z
 

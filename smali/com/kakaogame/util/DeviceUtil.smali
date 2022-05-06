@@ -446,12 +446,12 @@
     if-lt v1, v2, :cond_3
 
     .line 2
-    new-instance v1, Lu/j;
+    new-instance v1, Lu/i;
 
-    invoke-direct {v1, p0}, Lu/j;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, p0}, Lu/i;-><init>(Landroid/content/Context;)V
 
     .line 3
-    invoke-virtual {v1}, Lu/j;->a()Z
+    invoke-virtual {v1}, Lu/i;->a()Z
 
     move-result v1
 
@@ -502,12 +502,12 @@
 
     .line 8
     :cond_3
-    new-instance p1, Lu/j;
+    new-instance p1, Lu/i;
 
-    invoke-direct {p1, p0}, Lu/j;-><init>(Landroid/content/Context;)V
+    invoke-direct {p1, p0}, Lu/i;-><init>(Landroid/content/Context;)V
 
     .line 9
-    invoke-virtual {p1}, Lu/j;->a()Z
+    invoke-virtual {p1}, Lu/i;->a()Z
 
     move-result p0
     :try_end_0

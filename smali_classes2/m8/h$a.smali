@@ -1,14 +1,11 @@
 .class public Lm8/h$a;
-.super Ljava/lang/Object;
-.source "AdminImageAttachmentMessageDM.java"
-
-# interfaces
-.implements Lr9/b;
+.super Lz7/g;
+.source "ConversationManager.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lm8/h;->u(Lc8/o;)V
+    value = Lm8/h;->w(Lp8/d;IZLn8/f;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,74 +15,44 @@
 
 
 # instance fields
-.field public final synthetic a:Lc8/o;
+.field public final synthetic b:Ln8/n0;
 
-.field public final synthetic b:Lm8/h;
+.field public final synthetic c:Lp8/d;
+
+.field public final synthetic d:Lm8/h;
 
 
 # direct methods
-.method public constructor <init>(Lm8/h;Lc8/o;)V
+.method public constructor <init>(Lm8/h;Ln8/n0;Lp8/d;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lm8/h$a;->b:Lm8/h;
+    iput-object p1, p0, Lm8/h$a;->d:Lm8/h;
 
-    iput-object p2, p0, Lm8/h$a;->a:Lc8/o;
+    iput-object p2, p0, Lm8/h$a;->b:Ln8/n0;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p3, p0, Lm8/h$a;->c:Lp8/d;
+
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Ljava/lang/String;I)V
-    .locals 0
+.method public a()V
+    .locals 3
 
     .line 1
-    iget-object p1, p0, Lm8/h$a;->b:Lm8/h;
+    iget-object v0, p0, Lm8/h$a;->b:Ln8/n0;
 
-    sget-object p2, Lm8/h$b;->DOWNLOAD_NOT_STARTED:Lm8/h$b;
+    iget-object v1, p0, Lm8/h$a;->d:Lm8/h;
 
-    invoke-virtual {p1, p2}, Lm8/h;->w(Lm8/h$b;)V
+    iget-object v1, v1, Lm8/h;->c:Lg7/c;
 
-    return-void
-.end method
+    iget-object v2, p0, Lm8/h$a;->c:Lp8/d;
 
-.method public b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    iget-object p1, p0, Lm8/h$a;->b:Lm8/h;
-
-    iput-object p2, p1, Lm8/z;->I:Ljava/lang/String;
-
-    .line 2
-    iget-object p1, p0, Lm8/h$a;->a:Lc8/o;
-
-    check-cast p1, Lc8/i;
-
-    invoke-virtual {p1}, Lc8/i;->c()Lc8/a;
-
-    move-result-object p1
-
-    iget-object p2, p0, Lm8/h$a;->b:Lm8/h;
-
-    .line 3
-    invoke-virtual {p1, p2}, Lc8/a;->e(Lm8/a0;)V
-
-    .line 4
-    iget-object p1, p0, Lm8/h$a;->b:Lm8/h;
-
-    sget-object p2, Lm8/h$b;->THUMBNAIL_DOWNLOADED:Lm8/h$b;
-
-    invoke-virtual {p1, p2}, Lm8/h;->w(Lm8/h$b;)V
-
-    return-void
-.end method
-
-.method public c(Ljava/lang/String;I)V
-    .locals 0
+    invoke-virtual {v0, v1, v2}, Ln8/n0;->v(Lg7/c;Lm8/k;)V
 
     return-void
 .end method

@@ -584,9 +584,9 @@
     move-result-object v2
 
     .line 35
-    iget-object v3, v2, Ll0/a;->a:Lm/h;
+    iget-object v3, v2, Ll0/a;->a:Lm/g;
 
-    invoke-virtual {v3, v0}, Lm/h;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v0}, Lm/g;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 36
     iget-object v3, v2, Ll0/a;->b:Ljava/util/ArrayList;

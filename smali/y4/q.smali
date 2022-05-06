@@ -96,59 +96,59 @@
 
     if-nez v0, :cond_0
 
-    new-instance v0, Lcom/google/android/play/core/appupdate/g;
+    new-instance v0, Lcom/google/android/play/core/assetpacks/s2;
 
-    invoke-direct {v0}, Lcom/google/android/play/core/appupdate/g;-><init>()V
+    invoke-direct {v0}, Lcom/google/android/play/core/assetpacks/s2;-><init>()V
 
     return-object v0
 
     :pswitch_1
-    new-instance v0, Ly4/x;
+    new-instance v0, Ly4/z;
 
-    invoke-direct {v0}, Ly4/x;-><init>()V
+    invoke-direct {v0}, Ly4/z;-><init>()V
 
     return-object v0
 
     :pswitch_2
-    new-instance v0, Lb5/m;
+    new-instance v0, Lie/a;
 
-    invoke-direct {v0}, Lb5/m;-><init>()V
+    invoke-direct {v0}, Lie/a;-><init>()V
 
     return-object v0
 
     :pswitch_3
+    new-instance v0, Lge/c;
+
+    invoke-direct {v0}, Lge/c;-><init>()V
+
+    return-object v0
+
+    :pswitch_4
+    new-instance v0, Lp5/h;
+
+    invoke-direct {v0}, Lp5/h;-><init>()V
+
+    return-object v0
+
+    :pswitch_5
     new-instance v0, Ly4/v;
 
     invoke-direct {v0}, Ly4/v;-><init>()V
 
     return-object v0
 
-    :pswitch_4
-    new-instance v0, La4/z;
-
-    invoke-direct {v0}, La4/z;-><init>()V
-
-    return-object v0
-
-    :pswitch_5
-    new-instance v0, Lcom/android/billingclient/api/w;
-
-    invoke-direct {v0}, Lcom/android/billingclient/api/w;-><init>()V
-
-    return-object v0
-
     :pswitch_6
-    new-instance v0, Lcom/google/android/play/core/assetpacks/r2;
+    new-instance v0, Ly4/u;
 
-    invoke-direct {v0}, Lcom/google/android/play/core/assetpacks/r2;-><init>()V
+    invoke-direct {v0}, Ly4/u;-><init>()V
 
     return-object v0
 
     :cond_0
     :goto_0
-    new-instance v0, Lcom/supercell/titan/g;
+    new-instance v0, Lb5/m;
 
-    invoke-direct {v0}, Lcom/supercell/titan/g;-><init>()V
+    invoke-direct {v0}, Lb5/m;-><init>()V
 
     return-object v0
 
@@ -173,7 +173,7 @@
     .end packed-switch
 .end method
 
-.method public static c(Ly4/b0;Ljava/io/InputStream;Ljava/io/OutputStream;J)V
+.method public static c(Ly4/d0;Ljava/io/InputStream;Ljava/io/OutputStream;J)V
     .locals 13
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -306,7 +306,7 @@
 
     move v6, v12
 
-    invoke-static/range {v1 .. v8}, Ly4/q;->e([BLy4/b0;Ljava/io/OutputStream;JIJ)V
+    invoke-static/range {v1 .. v8}, Ly4/q;->e([BLy4/d0;Ljava/io/OutputStream;JIJ)V
 
     goto/16 :goto_3
 
@@ -329,7 +329,7 @@
 
     move v6, v12
 
-    invoke-static/range {v1 .. v8}, Ly4/q;->e([BLy4/b0;Ljava/io/OutputStream;JIJ)V
+    invoke-static/range {v1 .. v8}, Ly4/q;->e([BLy4/d0;Ljava/io/OutputStream;JIJ)V
 
     goto/16 :goto_3
 
@@ -352,7 +352,7 @@
 
     move v6, v12
 
-    invoke-static/range {v1 .. v8}, Ly4/q;->e([BLy4/b0;Ljava/io/OutputStream;JIJ)V
+    invoke-static/range {v1 .. v8}, Ly4/q;->e([BLy4/d0;Ljava/io/OutputStream;JIJ)V
 
     goto/16 :goto_3
 
@@ -377,7 +377,7 @@
 
     move v6, v12
 
-    invoke-static/range {v1 .. v8}, Ly4/q;->e([BLy4/b0;Ljava/io/OutputStream;JIJ)V
+    invoke-static/range {v1 .. v8}, Ly4/q;->e([BLy4/d0;Ljava/io/OutputStream;JIJ)V
 
     goto/16 :goto_3
 
@@ -407,7 +407,7 @@
 
     move v6, v12
 
-    invoke-static/range {v1 .. v8}, Ly4/q;->e([BLy4/b0;Ljava/io/OutputStream;JIJ)V
+    invoke-static/range {v1 .. v8}, Ly4/q;->e([BLy4/d0;Ljava/io/OutputStream;JIJ)V
 
     goto/16 :goto_3
 
@@ -430,7 +430,7 @@
 
     move v6, v12
 
-    invoke-static/range {v1 .. v8}, Ly4/q;->e([BLy4/b0;Ljava/io/OutputStream;JIJ)V
+    invoke-static/range {v1 .. v8}, Ly4/q;->e([BLy4/d0;Ljava/io/OutputStream;JIJ)V
 
     goto :goto_3
 
@@ -455,7 +455,7 @@
 
     move v6, v12
 
-    invoke-static/range {v1 .. v8}, Ly4/q;->e([BLy4/b0;Ljava/io/OutputStream;JIJ)V
+    invoke-static/range {v1 .. v8}, Ly4/q;->e([BLy4/d0;Ljava/io/OutputStream;JIJ)V
 
     goto :goto_3
 
@@ -557,7 +557,7 @@
 
     const-string v3, "Unexpected version="
 
-    invoke-static {v2, v3, v1}, Lb0/c;->b(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v2, v3, v1}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -660,7 +660,7 @@
     goto :goto_1
 .end method
 
-.method public static e([BLy4/b0;Ljava/io/OutputStream;JIJ)V
+.method public static e([BLy4/d0;Ljava/io/OutputStream;JIJ)V
     .locals 10
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -687,7 +687,7 @@
     if-gtz v2, :cond_5
 
     :try_start_0
-    new-instance v2, Ly4/c0;
+    new-instance v2, Ly4/e0;
 
     move-object v4, v2
 
@@ -695,9 +695,9 @@
 
     move-wide v6, p3
 
-    invoke-direct/range {v4 .. v9}, Ly4/c0;-><init>(Ly4/b0;JJ)V
+    invoke-direct/range {v4 .. v9}, Ly4/e0;-><init>(Ly4/d0;JJ)V
 
-    invoke-virtual {v2}, Ly4/b0;->c()Ljava/io/InputStream;
+    invoke-virtual {v2}, Ly4/d0;->c()Ljava/io/InputStream;
 
     move-result-object v2
     :try_end_0
@@ -775,7 +775,7 @@
 
     .line 1
     :try_start_3
-    sget-object v0, Ly4/i0;->a:Landroidx/fragment/app/t;
+    sget-object v0, Ly4/k0;->a:Landroidx/fragment/app/t;
 
     invoke-virtual {v0, v1, v2}, Landroidx/fragment/app/t;->b(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 

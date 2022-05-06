@@ -91,24 +91,15 @@
 
     .line 7
     :try_start_3
-    throw v1
+    invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     :catchall_1
-    move-exception v1
-
-    .line 8
     :try_start_4
-    invoke-virtual {v2}, Ljava/io/InputStream;->close()V
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_2
-
-    :catchall_2
-    :try_start_5
     throw v1
-    :try_end_5
-    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_0
+    :try_end_4
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
 
     :cond_0
     return-object v0
@@ -116,7 +107,7 @@
     :catch_0
     move-exception v1
 
-    .line 9
+    .line 8
     iget-object v2, p0, Lio/sentry/config/FilesystemPropertiesLoader;->logger:Lio/sentry/ILogger;
 
     sget-object v3, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;

@@ -1,29 +1,23 @@
 .class public final Lcom/google/android/gms/internal/ads/s;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-gass@@19.3.0"
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/qr0;
+.implements Lj3/rv0;
 
 
-# static fields
-.field public static final a:Lj3/qr0;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj3/rv0<",
+        "Lcom/google/android/gms/internal/ads/r7$a;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lcom/google/android/gms/internal/ads/s;
-
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/s;-><init>()V
-
-    sput-object v0, Lcom/google/android/gms/internal/ads/s;->a:Lj3/qr0;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
     .locals 0
 
@@ -35,22 +29,11 @@
 
 
 # virtual methods
-.method public final a(I)Z
-    .locals 0
+.method public final get()Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/internal/ads/m$c;->zzh(I)Lcom/google/android/gms/internal/ads/m$c;
+    sget-object v0, Lcom/google/android/gms/internal/ads/r7$a;->k:Lcom/google/android/gms/internal/ads/r7$a;
 
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x1
-
-    return p1
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return p1
+    return-object v0
 .end method

@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static a(Ll5/m0;)Lp5/v$b;
+.method public static a(Ll5/m0;)I
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -13,17 +13,13 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lh5/f$a;->b:[I
-
     invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
 
-    move-result v1
-
-    aget v0, v0, v1
+    move-result v0
 
     const/4 v1, 0x1
 
-    if-eq v0, v1, :cond_2
+    if-eq v0, v1, :cond_1
 
     const/4 v1, 0x2
 
@@ -33,12 +29,9 @@
 
     if-ne v0, v1, :cond_0
 
+    return v1
+
     .line 2
-    sget-object p0, Lp5/v$b;->NIST_P521:Lp5/v$b;
-
-    return-object p0
-
-    .line 3
     :cond_0
     new-instance v0, Ljava/security/GeneralSecurityException;
 
@@ -60,17 +53,8 @@
 
     throw v0
 
-    .line 4
     :cond_1
-    sget-object p0, Lp5/v$b;->NIST_P384:Lp5/v$b;
-
-    return-object p0
-
-    .line 5
-    :cond_2
-    sget-object p0, Lp5/v$b;->NIST_P256:Lp5/v$b;
-
-    return-object p0
+    return v1
 .end method
 
 .method public static b(Ll5/o0;)Ljava/lang/String;
@@ -82,23 +66,19 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lh5/f$a;->a:[I
-
     invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
 
-    move-result v1
-
-    aget v0, v0, v1
+    move-result v0
 
     const/4 v1, 0x1
 
     if-eq v0, v1, :cond_2
 
-    const/4 v1, 0x2
+    const/4 v1, 0x3
 
     if-eq v0, v1, :cond_1
 
-    const/4 v1, 0x3
+    const/4 v1, 0x4
 
     if-ne v0, v1, :cond_0
 
@@ -139,7 +119,7 @@
     return-object p0
 .end method
 
-.method public static c(Ll5/x;)Lp5/v$d;
+.method public static c(Ll5/x;)I
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -148,17 +128,13 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lh5/f$a;->c:[I
-
     invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
 
-    move-result v1
-
-    aget v0, v0, v1
+    move-result v0
 
     const/4 v1, 0x1
 
-    if-eq v0, v1, :cond_2
+    if-eq v0, v1, :cond_1
 
     const/4 v1, 0x2
 
@@ -168,12 +144,9 @@
 
     if-ne v0, v1, :cond_0
 
+    return v1
+
     .line 2
-    sget-object p0, Lp5/v$d;->COMPRESSED:Lp5/v$d;
-
-    return-object p0
-
-    .line 3
     :cond_0
     new-instance v0, Ljava/security/GeneralSecurityException;
 
@@ -195,17 +168,8 @@
 
     throw v0
 
-    .line 4
     :cond_1
-    sget-object p0, Lp5/v$d;->DO_NOT_USE_CRUNCHY_UNCOMPRESSED:Lp5/v$d;
-
-    return-object p0
-
-    .line 5
-    :cond_2
-    sget-object p0, Lp5/v$d;->UNCOMPRESSED:Lp5/v$d;
-
-    return-object p0
+    return v1
 .end method
 
 .method public static d(Ll5/f0;)V
@@ -217,46 +181,46 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Ll5/f0;->v()Ll5/i0;
+    invoke-virtual {p0}, Ll5/f0;->u()Ll5/i0;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ll5/i0;->s()Ll5/m0;
+    invoke-virtual {v0}, Ll5/i0;->r()Ll5/m0;
 
     move-result-object v0
 
-    invoke-static {v0}, Lh5/f;->a(Ll5/m0;)Lp5/v$b;
+    invoke-static {v0}, Lh5/f;->a(Ll5/m0;)I
 
-    move-result-object v0
+    move-result v0
 
-    invoke-static {v0}, Lp5/v;->c(Lp5/v$b;)Ljava/security/spec/ECParameterSpec;
+    invoke-static {v0}, Lp5/x;->c(I)Ljava/security/spec/ECParameterSpec;
 
     .line 2
-    invoke-virtual {p0}, Ll5/f0;->v()Ll5/i0;
+    invoke-virtual {p0}, Ll5/f0;->u()Ll5/i0;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ll5/i0;->u()Ll5/o0;
+    invoke-virtual {v0}, Ll5/i0;->t()Ll5/o0;
 
     move-result-object v0
 
     invoke-static {v0}, Lh5/f;->b(Ll5/o0;)Ljava/lang/String;
 
     .line 3
-    invoke-virtual {p0}, Ll5/f0;->u()Ll5/x;
+    invoke-virtual {p0}, Ll5/f0;->t()Ll5/x;
 
     move-result-object v0
 
-    sget-object v1, Ll5/x;->UNKNOWN_FORMAT:Ll5/x;
+    sget-object v1, Ll5/x;->h:Ll5/x;
 
     if-eq v0, v1, :cond_0
 
     .line 4
-    invoke-virtual {p0}, Ll5/f0;->t()Ll5/d0;
+    invoke-virtual {p0}, Ll5/f0;->s()Ll5/d0;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Ll5/d0;->s()Ll5/x0;
+    invoke-virtual {p0}, Ll5/d0;->r()Ll5/x0;
 
     move-result-object p0
 

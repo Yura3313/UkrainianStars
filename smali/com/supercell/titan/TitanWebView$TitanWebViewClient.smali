@@ -49,16 +49,16 @@
     move-result-object p1
 
     .line 3
-    new-instance v0, Lcom/supercell/titan/f0;
+    new-instance v0, Lcom/supercell/titan/h0;
 
-    invoke-direct {v0, p0}, Lcom/supercell/titan/f0;-><init>(Lcom/supercell/titan/TitanWebView$TitanWebViewClient;)V
+    invoke-direct {v0, p0}, Lcom/supercell/titan/h0;-><init>(Lcom/supercell/titan/TitanWebView$TitanWebViewClient;)V
 
     invoke-virtual {p1, v0}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
     .line 4
-    new-instance v0, Lcom/supercell/titan/i0;
+    new-instance v0, Lcom/supercell/titan/k0;
 
-    invoke-direct {v0, p0, p2}, Lcom/supercell/titan/i0;-><init>(Lcom/supercell/titan/TitanWebView$TitanWebViewClient;Ljava/lang/String;)V
+    invoke-direct {v0, p0, p2}, Lcom/supercell/titan/k0;-><init>(Lcom/supercell/titan/TitanWebView$TitanWebViewClient;Ljava/lang/String;)V
 
     invoke-virtual {p1, v0}, Lcom/supercell/titan/GameApp;->runOnView(Ljava/lang/Runnable;)V
 
@@ -76,9 +76,9 @@
 
     move-result-object p1
 
-    new-instance p3, Lcom/supercell/titan/h0;
+    new-instance p3, Lcom/supercell/titan/j0;
 
-    invoke-direct {p3, p0, p2}, Lcom/supercell/titan/h0;-><init>(Lcom/supercell/titan/TitanWebView$TitanWebViewClient;Ljava/lang/String;)V
+    invoke-direct {p3, p0, p2}, Lcom/supercell/titan/j0;-><init>(Lcom/supercell/titan/TitanWebView$TitanWebViewClient;Ljava/lang/String;)V
 
     invoke-virtual {p1, p3}, Lcom/supercell/titan/GameApp;->runOnView(Ljava/lang/Runnable;)V
 
@@ -97,9 +97,9 @@
     move-result-object p1
 
     .line 3
-    new-instance p2, Lcom/supercell/titan/j0;
+    new-instance p2, Lcom/supercell/titan/l0;
 
-    invoke-direct {p2, p0, p4}, Lcom/supercell/titan/j0;-><init>(Lcom/supercell/titan/TitanWebView$TitanWebViewClient;Ljava/lang/String;)V
+    invoke-direct {p2, p0, p4}, Lcom/supercell/titan/l0;-><init>(Lcom/supercell/titan/TitanWebView$TitanWebViewClient;Ljava/lang/String;)V
 
     invoke-virtual {p1, p2}, Lcom/supercell/titan/GameApp;->runOnView(Ljava/lang/Runnable;)V
 
@@ -126,9 +126,9 @@
 
     move-result-object p2
 
-    new-instance v0, Lcom/supercell/titan/g0;
+    new-instance v0, Lcom/supercell/titan/i0;
 
-    invoke-direct {v0, p0, p1}, Lcom/supercell/titan/g0;-><init>(Lcom/supercell/titan/TitanWebView$TitanWebViewClient;I)V
+    invoke-direct {v0, p0, p1}, Lcom/supercell/titan/i0;-><init>(Lcom/supercell/titan/TitanWebView$TitanWebViewClient;I)V
 
     invoke-virtual {p2, v0}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 

@@ -1,9 +1,16 @@
-.class public abstract Lj3/fq0;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
+.class public final Lj3/fq0;
+.super Ljava/lang/ThreadLocal;
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lj3/us0;
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/ThreadLocal<",
+        "Ljava/security/SecureRandom;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
@@ -11,40 +18,23 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final K()Lj3/us0;
-    .locals 2
+.method public final initialValue()Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    new-instance v0, Ljava/security/SecureRandom;
 
-    const-string v1, "clone() should be implemented by subclasses."
+    invoke-direct {v0}, Ljava/security/SecureRandom;-><init>()V
 
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    .line 2
+    invoke-virtual {v0}, Ljava/security/SecureRandom;->nextLong()J
 
-    throw v0
-.end method
-
-.method public clone()Ljava/lang/Object;
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/CloneNotSupportedException;
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    const-string v1, "clone() should be implemented by subclasses."
-
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    return-object v0
 .end method

@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/appcompat/view/menu/k;
+.field public final synthetic g:Landroidx/appcompat/view/menu/k;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/view/menu/k$a;->a:Landroidx/appcompat/view/menu/k;
+    iput-object p1, p0, Landroidx/appcompat/view/menu/k$a;->g:Landroidx/appcompat/view/menu/k;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/k$a;->a:Landroidx/appcompat/view/menu/k;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/k$a;->g:Landroidx/appcompat/view/menu/k;
 
     invoke-virtual {v0}, Landroidx/appcompat/view/menu/k;->a()Z
 
@@ -47,17 +47,17 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Landroidx/appcompat/view/menu/k$a;->a:Landroidx/appcompat/view/menu/k;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/k$a;->g:Landroidx/appcompat/view/menu/k;
 
-    iget-object v1, v0, Landroidx/appcompat/view/menu/k;->n:Landroidx/appcompat/widget/x;
+    iget-object v1, v0, Landroidx/appcompat/view/menu/k;->o:Landroidx/appcompat/widget/x;
 
     .line 2
-    iget-boolean v1, v1, Landroidx/appcompat/widget/ListPopupWindow;->C:Z
+    iget-boolean v1, v1, Landroidx/appcompat/widget/ListPopupWindow;->D:Z
 
     if-nez v1, :cond_2
 
     .line 3
-    iget-object v0, v0, Landroidx/appcompat/view/menu/k;->s:Landroid/view/View;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/k;->t:Landroid/view/View;
 
     if-eqz v0, :cond_1
 
@@ -72,18 +72,18 @@
 
     .line 5
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/view/menu/k$a;->a:Landroidx/appcompat/view/menu/k;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/k$a;->g:Landroidx/appcompat/view/menu/k;
 
-    iget-object v0, v0, Landroidx/appcompat/view/menu/k;->n:Landroidx/appcompat/widget/x;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/k;->o:Landroidx/appcompat/widget/x;
 
-    invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->L()V
+    invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->M()V
 
     goto :goto_1
 
     .line 6
     :cond_1
     :goto_0
-    iget-object v0, p0, Landroidx/appcompat/view/menu/k$a;->a:Landroidx/appcompat/view/menu/k;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/k$a;->g:Landroidx/appcompat/view/menu/k;
 
     invoke-virtual {v0}, Landroidx/appcompat/view/menu/k;->dismiss()V
 

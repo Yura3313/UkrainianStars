@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic a:Ljava/util/concurrent/Future;
+.field public final synthetic g:Ljava/util/concurrent/Future;
 
-.field public final synthetic b:Ljava/lang/Runnable;
+.field public final synthetic h:Ljava/lang/Runnable;
 
 
 # direct methods
 .method public constructor <init>(Ljava/util/concurrent/Future;Ljava/lang/Runnable;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/billingclient/api/f0;->a:Ljava/util/concurrent/Future;
+    iput-object p1, p0, Lcom/android/billingclient/api/f0;->g:Ljava/util/concurrent/Future;
 
-    iput-object p2, p0, Lcom/android/billingclient/api/f0;->b:Ljava/lang/Runnable;
+    iput-object p2, p0, Lcom/android/billingclient/api/f0;->h:Ljava/lang/Runnable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 .method public final run()V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/billingclient/api/f0;->a:Ljava/util/concurrent/Future;
+    iget-object v0, p0, Lcom/android/billingclient/api/f0;->g:Ljava/util/concurrent/Future;
 
     .line 1
     invoke-interface {v0}, Ljava/util/concurrent/Future;->isDone()Z
@@ -39,7 +39,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/billingclient/api/f0;->a:Ljava/util/concurrent/Future;
+    iget-object v0, p0, Lcom/android/billingclient/api/f0;->g:Ljava/util/concurrent/Future;
 
     invoke-interface {v0}, Ljava/util/concurrent/Future;->isCancelled()Z
 
@@ -47,7 +47,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/billingclient/api/f0;->a:Ljava/util/concurrent/Future;
+    iget-object v0, p0, Lcom/android/billingclient/api/f0;->g:Ljava/util/concurrent/Future;
 
     const/4 v1, 0x1
 
@@ -57,7 +57,7 @@
     .line 3
     sget v0, Lv3/a;->a:I
 
-    iget-object v0, p0, Lcom/android/billingclient/api/f0;->b:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/billingclient/api/f0;->h:Ljava/lang/Runnable;
 
     if-eqz v0, :cond_0
 

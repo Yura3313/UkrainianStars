@@ -355,15 +355,15 @@
     move-result-object v11
 
     .line 21
-    new-instance v12, Lu/g$c;
+    new-instance v12, Lu/f$c;
 
-    invoke-direct {v12, v1, v0}, Lu/g$c;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v12, v1, v0}, Lu/f$c;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 22
-    iput-object v11, v12, Lu/g$c;->f:Landroid/app/PendingIntent;
+    iput-object v11, v12, Lu/f$c;->f:Landroid/app/PendingIntent;
 
     .line 23
-    iget-object v0, v12, Lu/g$c;->q:Landroid/app/Notification;
+    iget-object v0, v12, Lu/f$c;->q:Landroid/app/Notification;
 
     iput v8, v0, Landroid/app/Notification;->icon:I
 
@@ -373,12 +373,12 @@
     move-result-object v0
 
     .line 25
-    iput-object v0, v12, Lu/g$c;->k:Ljava/lang/String;
+    iput-object v0, v12, Lu/f$c;->k:Ljava/lang/String;
 
     const/4 v8, 0x1
 
     .line 26
-    invoke-virtual {v12, v8}, Lu/g$c;->c(Z)Lu/g$c;
+    invoke-virtual {v12, v8}, Lu/f$c;->c(Z)Lu/f$c;
 
     :try_start_0
     const-string v0, "ic_notification"
@@ -391,7 +391,7 @@
     if-eqz v0, :cond_c
 
     .line 28
-    iget-object v11, v12, Lu/g$c;->q:Landroid/app/Notification;
+    iget-object v11, v12, Lu/f$c;->q:Landroid/app/Notification;
 
     iput v0, v11, Landroid/app/Notification;->icon:I
     :try_end_0
@@ -427,7 +427,7 @@
     move-result-object v0
 
     .line 32
-    invoke-virtual {v12, v0}, Lu/g$c;->g(Landroid/graphics/Bitmap;)Lu/g$c;
+    invoke-virtual {v12, v0}, Lu/f$c;->g(Landroid/graphics/Bitmap;)Lu/f$c;
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -461,7 +461,7 @@
     move-result-object v0
 
     .line 36
-    invoke-virtual {v12, v0}, Lu/g$c;->g(Landroid/graphics/Bitmap;)Lu/g$c;
+    invoke-virtual {v12, v0}, Lu/f$c;->g(Landroid/graphics/Bitmap;)Lu/f$c;
     :try_end_2
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_2 .. :try_end_2} :catch_2
 
@@ -480,7 +480,7 @@
     if-nez v0, :cond_f
 
     .line 38
-    invoke-virtual {v12, v13}, Lu/g$c;->e(Ljava/lang/CharSequence;)Lu/g$c;
+    invoke-virtual {v12, v13}, Lu/f$c;->e(Ljava/lang/CharSequence;)Lu/f$c;
 
     :cond_f
     if-eqz v2, :cond_10
@@ -493,25 +493,25 @@
     if-nez v0, :cond_10
 
     .line 40
-    invoke-virtual {v12, v2}, Lu/g$c;->d(Ljava/lang/CharSequence;)Lu/g$c;
+    invoke-virtual {v12, v2}, Lu/f$c;->d(Ljava/lang/CharSequence;)Lu/f$c;
 
     .line 41
-    iget-object v0, v12, Lu/g$c;->q:Landroid/app/Notification;
+    iget-object v0, v12, Lu/f$c;->q:Landroid/app/Notification;
 
-    invoke-static/range {p1 .. p1}, Lu/g$c;->b(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static/range {p1 .. p1}, Lu/f$c;->b(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     move-result-object v4
 
     iput-object v4, v0, Landroid/app/Notification;->tickerText:Ljava/lang/CharSequence;
 
     .line 42
-    new-instance v0, Lu/g$b;
+    new-instance v0, Lu/f$b;
 
-    invoke-direct {v0}, Lu/g$b;-><init>()V
+    invoke-direct {v0}, Lu/f$b;-><init>()V
 
-    invoke-virtual {v0, v2}, Lu/g$b;->a(Ljava/lang/CharSequence;)Lu/g$b;
+    invoke-virtual {v0, v2}, Lu/f$b;->a(Ljava/lang/CharSequence;)Lu/f$b;
 
-    invoke-virtual {v12, v0}, Lu/g$c;->i(Lu/g$d;)Lu/g$c;
+    invoke-virtual {v12, v0}, Lu/f$c;->i(Lu/f$d;)Lu/f$c;
 
     :cond_10
     if-eqz v3, :cond_11
@@ -593,7 +593,7 @@
     move-result-object v1
 
     .line 49
-    invoke-virtual {v12, v1}, Lu/g$c;->h(Landroid/net/Uri;)Lu/g$c;
+    invoke-virtual {v12, v1}, Lu/f$c;->h(Landroid/net/Uri;)Lu/f$c;
 
     move/from16 v1, p9
 
@@ -608,11 +608,11 @@
     if-eqz v1, :cond_12
 
     .line 50
-    iput v1, v12, Lu/g$c;->n:I
+    iput v1, v12, Lu/f$c;->n:I
 
     .line 51
     :cond_12
-    invoke-virtual {v12}, Lu/g$c;->a()Landroid/app/Notification;
+    invoke-virtual {v12}, Lu/f$c;->a()Landroid/app/Notification;
 
     move-result-object v1
 
@@ -739,13 +739,13 @@
     move-result-object v0
 
     .line 4
-    new-instance v1, Lcom/supercell/titan/a;
+    new-instance v1, Lcom/supercell/titan/b;
 
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
 
-    invoke-direct {v1, p0, p1, v0}, Lcom/supercell/titan/a;-><init>(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/Class;)V
+    invoke-direct {v1, p0, p1, v0}, Lcom/supercell/titan/b;-><init>(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/Class;)V
 
     const/4 p0, 0x0
 

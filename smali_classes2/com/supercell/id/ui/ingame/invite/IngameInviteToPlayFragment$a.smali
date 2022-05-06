@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
-.super Lwd/q;
+.super Lvd/q;
 .source "IngameInviteToPlayFragment.kt"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lwd/q<",
+        "Lvd/q<",
         "Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;",
         ">;"
     }
@@ -23,10 +23,10 @@
 
 
 # instance fields
-.field public g:Lbe/g;
+.field public g:Lae/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbe/g<",
+            "Lae/d<",
             "Ljava/lang/Integer;",
             "Ljava/lang/Integer;",
             ">;"
@@ -44,13 +44,13 @@
             "Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;",
             "Ljava/util/List<",
             "+",
-            "Lwd/j1;",
+            "Lvd/j1;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lwd/q;-><init>(Landroidx/fragment/app/Fragment;Ljava/util/List;)V
+    invoke-direct {p0, p1, p2}, Lvd/q;-><init>(Landroidx/fragment/app/Fragment;Ljava/util/List;)V
 
     const/4 p1, 0x0
 
@@ -64,19 +64,19 @@
     move-result-object p1
 
     .line 3
-    new-instance v0, Lbe/g;
+    new-instance v0, Lae/d;
 
-    invoke-direct {v0, p2, p1}, Lbe/g;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, p2, p1}, Lae/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 4
-    iput-object v0, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;->g:Lbe/g;
+    iput-object v0, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;->g:Lae/d;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public i(Lwd/k1$a;ILwd/j1;)V
+.method public i(Lvd/k1$a;ILvd/j1;)V
     .locals 19
 
     move-object/from16 v0, p0
@@ -89,19 +89,19 @@
 
     const/4 v4, 0x0
 
-    if-eqz v1, :cond_b
+    if-eqz v1, :cond_d
 
-    if-eqz v3, :cond_a
+    if-eqz v3, :cond_c
 
     .line 1
-    iget-object v5, v1, Lwd/k1$a;->A:Landroid/view/View;
+    iget-object v5, v1, Lvd/k1$a;->B:Landroid/view/View;
 
     .line 2
-    instance-of v6, v3, Ldd/b;
+    instance-of v6, v3, Lbd/b;
 
     const/4 v7, 0x0
 
-    if-eqz v6, :cond_6
+    if-eqz v6, :cond_8
 
     .line 3
     sget v1, Lcom/supercell/id/R$id;->friendContainer:I
@@ -113,22 +113,22 @@
     check-cast v1, Landroid/widget/LinearLayout;
 
     .line 4
-    iget-object v4, v0, Lwd/k1;->d:Ljava/util/List;
+    iget-object v6, v0, Lvd/k1;->d:Ljava/util/List;
 
     .line 5
-    invoke-static {v4, v2}, Lwd/h1;->c(Ljava/util/List;I)Z
+    invoke-static {v6, v2}, Lvd/h1;->d(Ljava/util/List;I)Z
 
-    move-result v4
+    move-result v6
 
     .line 6
-    iget-object v6, v0, Lwd/k1;->d:Ljava/util/List;
+    iget-object v8, v0, Lvd/k1;->d:Ljava/util/List;
 
     .line 7
-    invoke-static {v6, v2}, Lwd/h1;->b(Ljava/util/List;I)Z
+    invoke-static {v8, v2}, Lvd/h1;->c(Ljava/util/List;I)Z
 
     move-result v2
 
-    invoke-static {v1, v4, v2, v7, v7}, Lg9/b;->i(Landroid/view/View;ZZII)V
+    invoke-static {v1, v6, v2, v7, v7}, Lhd/g;->b(Landroid/view/View;ZZII)V
 
     .line 8
     sget v1, Lcom/supercell/id/R$id;->friendImageView:I
@@ -141,53 +141,90 @@
 
     const-string v2, "containerView.friendImageView"
 
-    invoke-static {v1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     move-object v2, v3
 
-    check-cast v2, Ldd/b;
+    check-cast v2, Lbd/b;
 
     .line 9
-    iget-object v4, v2, Ldd/b;->c:Lcom/supercell/id/model/ProfileImage;
+    iget-object v6, v2, Lbd/b;->b:Lcom/supercell/id/model/ProfileImage;
 
-    const/4 v6, 0x2
+    const/4 v8, 0x2
 
     .line 10
-    invoke-static {v1, v4, v7, v6}, Lqd/e0;->f(Lcom/google/android/material/imageview/ShapeableImageView;Lcom/supercell/id/model/ProfileImage;ZI)V
+    invoke-static {v1, v6, v7, v8}, Lpd/d0;->g(Landroid/widget/ImageView;Lcom/supercell/id/model/ProfileImage;ZI)V
 
     .line 11
     sget v1, Lcom/supercell/id/R$id;->friendNameLabel:I
 
     invoke-virtual {v5, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v4
+    move-result-object v6
 
-    check-cast v4, Landroid/widget/TextView;
+    check-cast v6, Landroid/widget/TextView;
 
-    const-string v6, "containerView.friendNameLabel"
+    const-string v8, "containerView.friendNameLabel"
 
-    invoke-static {v4, v6}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v6, v8}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 12
-    iget-object v6, v2, Ldd/b;->b:Ljava/lang/String;
+    iget-object v8, v2, Lbd/b;->a:Ljava/lang/String;
 
-    if-eqz v6, :cond_0
+    if-eqz v8, :cond_0
 
-    goto :goto_0
+    goto :goto_1
 
     .line 13
     :cond_0
-    iget-object v6, v2, Ldd/b;->a:Ljava/lang/String;
-
-    invoke-static {v6}, La2/a;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
+    iget-object v8, v2, Lbd/b;->d:Lqc/i;
 
     .line 14
-    :goto_0
-    invoke-virtual {v4, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    iget-object v8, v8, Lqc/i;->a:Lqc/d0;
 
     .line 15
+    invoke-virtual {v8}, Lqc/d0;->b()Ljava/lang/String;
+
+    move-result-object v8
+
+    if-eqz v8, :cond_1
+
+    invoke-static {v8}, Lc5/i;->i(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    if-eqz v8, :cond_1
+
+    move-object v4, v8
+
+    goto :goto_0
+
+    .line 16
+    :cond_1
+    iget-object v8, v2, Lbd/b;->d:Lqc/i;
+
+    .line 17
+    iget-object v8, v8, Lqc/i;->a:Lqc/d0;
+
+    .line 18
+    invoke-virtual {v8}, Lqc/d0;->a()Lqc/e;
+
+    move-result-object v8
+
+    if-eqz v8, :cond_2
+
+    .line 19
+    iget-object v4, v8, Lqc/e;->a:Ljava/lang/String;
+
+    :cond_2
+    :goto_0
+    move-object v8, v4
+
+    .line 20
+    :goto_1
+    invoke-virtual {v6, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 21
     invoke-virtual {v5, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
@@ -198,28 +235,28 @@
 
     move-result-object v4
 
-    .line 16
-    iget-object v6, v2, Ldd/b;->b:Ljava/lang/String;
+    .line 22
+    iget-object v6, v2, Lbd/b;->a:Ljava/lang/String;
 
-    if-nez v6, :cond_1
+    if-nez v6, :cond_3
 
-    .line 17
+    .line 23
     sget v6, Lcom/supercell/id/R$color;->gray40:I
 
-    goto :goto_1
+    goto :goto_2
 
-    :cond_1
+    :cond_3
     sget v6, Lcom/supercell/id/R$color;->black:I
 
-    :goto_1
+    :goto_2
     invoke-static {v4, v6}, Lv/a;->b(Landroid/content/Context;I)I
 
     move-result v4
 
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 18
-    iget-object v1, v2, Ldd/b;->f:Ljava/lang/String;
+    .line 24
+    iget-object v1, v2, Lbd/b;->e:Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -229,9 +266,9 @@
 
     const-string v9, "containerView.gameNameContainer"
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_4
 
-    .line 19
+    .line 25
     sget v10, Lcom/supercell/id/R$id;->gameIconView:I
 
     invoke-virtual {v5, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -242,7 +279,7 @@
 
     const-string v11, "containerView.gameIconView"
 
-    invoke-static {v10, v11}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v10, v11}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v11, Ljava/lang/StringBuilder;
 
@@ -252,16 +289,16 @@
 
     invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 20
-    iget-object v12, v0, Lwd/q;->f:Landroidx/fragment/app/Fragment;
+    .line 26
+    iget-object v12, v0, Lvd/q;->f:Landroidx/fragment/app/Fragment;
 
-    .line 21
+    .line 27
     check-cast v12, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
-    .line 22
-    iget-object v12, v12, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->j0:Ljava/lang/String;
+    .line 28
+    iget-object v12, v12, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->k0:Ljava/lang/String;
 
-    .line 23
+    .line 29
     invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v11, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -270,10 +307,10 @@
 
     move-result-object v11
 
-    .line 24
-    invoke-static {v10, v11, v4}, Lqd/e0;->g(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    .line 30
+    invoke-static {v10, v11, v4}, Lpd/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
 
-    .line 25
+    .line 31
     sget v10, Lcom/supercell/id/R$id;->friendPlayingNameLabel:I
 
     invoke-virtual {v5, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -284,22 +321,22 @@
 
     const-string v12, "containerView.friendPlayingNameLabel"
 
-    invoke-static {v11, v12}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v11, v12}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v11}, Lqd/e0;->b(Landroid/widget/TextView;)V
+    invoke-static {v11}, Lpd/d0;->c(Landroid/widget/TextView;)V
 
-    .line 26
+    .line 32
     invoke-virtual {v5, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v11
 
     check-cast v11, Landroid/widget/TextView;
 
-    invoke-static {v11, v12}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v11, v12}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v11, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 27
+    .line 33
     invoke-virtual {v5, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
@@ -318,7 +355,7 @@
 
     invoke-virtual {v1, v10}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 28
+    .line 34
     sget v1, Lcom/supercell/id/R$id;->gameNameContainer:I
 
     invoke-virtual {v5, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -327,14 +364,14 @@
 
     check-cast v1, Landroid/widget/LinearLayout;
 
-    invoke-static {v1, v9}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v9}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, v7}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    goto :goto_2
+    goto :goto_3
 
-    .line 29
-    :cond_2
+    .line 35
+    :cond_4
     sget v1, Lcom/supercell/id/R$id;->gameNameContainer:I
 
     invoke-virtual {v5, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -343,19 +380,19 @@
 
     check-cast v1, Landroid/widget/LinearLayout;
 
-    invoke-static {v1, v9}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v9}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, v8}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 30
-    :goto_2
-    iget-object v1, v2, Ldd/b;->g:Ljava/lang/Integer;
+    .line 36
+    :goto_3
+    iget-object v1, v2, Lbd/b;->f:Ljava/lang/Integer;
 
     const-string v9, "containerView.scoreContainer"
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_7
 
-    .line 31
+    .line 37
     sget v8, Lcom/supercell/id/R$id;->scoreTextView:I
 
     invoke-virtual {v5, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -366,7 +403,7 @@
 
     const-string v11, "containerView.scoreTextView"
 
-    invoke-static {v10, v11}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v10, v11}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -374,14 +411,14 @@
 
     invoke-virtual {v10, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 32
+    .line 38
     invoke-virtual {v5, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
     check-cast v1, Landroid/widget/TextView;
 
-    invoke-static {v1, v11}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v11}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v5, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -389,43 +426,43 @@
 
     check-cast v8, Landroid/widget/TextView;
 
-    invoke-static {v8, v11}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v8, v11}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 33
-    iget v2, v2, Ldd/b;->h:I
+    .line 39
+    iget v2, v2, Lbd/b;->g:I
 
-    .line 34
-    iget-object v10, v0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;->g:Lbe/g;
+    .line 40
+    iget-object v10, v0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;->g:Lae/d;
 
-    .line 35
-    iget-object v10, v10, Lbe/g;->a:Ljava/lang/Object;
+    .line 41
+    iget-object v10, v10, Lae/d;->g:Ljava/lang/Object;
 
-    .line 36
+    .line 42
     check-cast v10, Ljava/lang/Number;
 
     invoke-virtual {v10}, Ljava/lang/Number;->intValue()I
 
     move-result v10
 
-    if-ne v10, v2, :cond_3
+    if-ne v10, v2, :cond_5
 
-    .line 37
-    iget-object v2, v0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;->g:Lbe/g;
+    .line 43
+    iget-object v2, v0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;->g:Lae/d;
 
-    .line 38
-    iget-object v2, v2, Lbe/g;->b:Ljava/lang/Object;
+    .line 44
+    iget-object v2, v2, Lae/d;->h:Ljava/lang/Object;
 
-    .line 39
+    .line 45
     check-cast v2, Ljava/lang/Number;
 
     invoke-virtual {v2}, Ljava/lang/Number;->intValue()I
 
     move-result v2
 
-    goto :goto_4
+    goto :goto_5
 
-    .line 40
-    :cond_3
+    .line 46
+    :cond_5
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v10
@@ -434,51 +471,51 @@
 
     move-result-object v8
 
-    invoke-static {v7, v2}, Lbe/a;->e(II)Loe/c;
+    invoke-static {v7, v2}, Lc2/n0;->e(II)Loe/c;
 
     move-result-object v2
 
-    .line 41
+    .line 47
     new-instance v11, Ljava/util/ArrayList;
 
     const/16 v12, 0xa
 
-    invoke-static {v2, v12}, Lce/h;->E(Ljava/lang/Iterable;I)I
+    invoke-static {v2, v12}, Lbe/g;->v(Ljava/lang/Iterable;I)I
 
     move-result v12
 
     invoke-direct {v11, v12}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 42
+    .line 48
     invoke-virtual {v2}, Loe/a;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
 
-    :goto_3
+    :goto_4
     move-object v12, v2
 
     check-cast v12, Loe/b;
 
-    .line 43
-    iget-boolean v12, v12, Loe/b;->b:Z
+    .line 49
+    iget-boolean v12, v12, Loe/b;->h:Z
 
-    if-eqz v12, :cond_4
+    if-eqz v12, :cond_6
 
-    .line 44
+    .line 50
     move-object v12, v2
 
-    check-cast v12, Lce/u;
+    check-cast v12, Lbe/t;
 
-    invoke-virtual {v12}, Lce/u;->b()I
+    invoke-virtual {v12}, Lbe/t;->b()I
 
     const-string v12, "0"
 
-    .line 45
+    .line 51
     invoke-virtual {v11, v12}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    goto :goto_3
+    goto :goto_4
 
-    :cond_4
+    :cond_6
     const/4 v13, 0x0
 
     const/4 v14, 0x0
@@ -493,7 +530,7 @@
 
     const-string v12, ""
 
-    invoke-static/range {v11 .. v18}, Lce/l;->V(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lke/l;I)Ljava/lang/String;
+    invoke-static/range {v11 .. v18}, Lbe/k;->K(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lke/l;I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -515,24 +552,24 @@
 
     move-result-object v2
 
-    .line 46
-    new-instance v8, Lbe/g;
+    .line 52
+    new-instance v8, Lae/d;
 
-    invoke-direct {v8, v10, v2}, Lbe/g;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v8, v10, v2}, Lae/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 47
-    iput-object v8, v0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;->g:Lbe/g;
+    .line 53
+    iput-object v8, v0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;->g:Lae/d;
 
-    .line 48
+    .line 54
     invoke-virtual {v2}, Ljava/lang/Number;->intValue()I
 
     move-result v2
 
-    .line 49
-    :goto_4
+    .line 55
+    :goto_5
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setMinimumWidth(I)V
 
-    .line 50
+    .line 56
     sget v1, Lcom/supercell/id/R$id;->scoreIconView:I
 
     invoke-virtual {v5, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -543,7 +580,7 @@
 
     const-string v2, "containerView.scoreIconView"
 
-    invoke-static {v1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -553,16 +590,16 @@
 
     invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 51
-    iget-object v8, v0, Lwd/q;->f:Landroidx/fragment/app/Fragment;
+    .line 57
+    iget-object v8, v0, Lvd/q;->f:Landroidx/fragment/app/Fragment;
 
-    .line 52
+    .line 58
     check-cast v8, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
-    .line 53
-    iget-object v8, v8, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->j0:Ljava/lang/String;
+    .line 59
+    iget-object v8, v8, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->k0:Ljava/lang/String;
 
-    .line 54
+    .line 60
     invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -571,10 +608,10 @@
 
     move-result-object v2
 
-    .line 55
-    invoke-static {v1, v2, v4}, Lqd/e0;->g(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    .line 61
+    invoke-static {v1, v2, v4}, Lpd/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
 
-    .line 56
+    .line 62
     sget v1, Lcom/supercell/id/R$id;->scoreContainer:I
 
     invoke-virtual {v5, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -583,14 +620,14 @@
 
     check-cast v1, Landroid/widget/LinearLayout;
 
-    invoke-static {v1, v9}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v9}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, v7}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    goto :goto_5
+    goto :goto_6
 
-    .line 57
-    :cond_5
+    .line 63
+    :cond_7
     sget v1, Lcom/supercell/id/R$id;->scoreContainer:I
 
     invoke-virtual {v5, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -599,12 +636,12 @@
 
     check-cast v1, Landroid/widget/LinearLayout;
 
-    invoke-static {v1, v9}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v9}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, v8}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 58
-    :goto_5
+    .line 64
+    :goto_6
     sget v1, Lcom/supercell/id/R$id;->inviteButton:I
 
     invoke-virtual {v5, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -615,11 +652,11 @@
 
     new-instance v2, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$a;
 
-    invoke-direct {v2, v0, v3}, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$a;-><init>(Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;Lwd/j1;)V
+    invoke-direct {v2, v0, v3}, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$a;-><init>(Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;Lvd/j1;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 59
+    .line 65
     sget v1, Lcom/supercell/id/R$id;->friendContainer:I
 
     invoke-virtual {v5, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -630,19 +667,19 @@
 
     new-instance v2, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$b;
 
-    invoke-direct {v2, v0, v3}, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$b;-><init>(Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;Lwd/j1;)V
+    invoke-direct {v2, v0, v3}, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$b;-><init>(Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;Lvd/j1;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    goto :goto_6
+    goto :goto_7
 
-    .line 60
-    :cond_6
-    instance-of v6, v3, Ldd/a;
+    .line 66
+    :cond_8
+    instance-of v6, v3, Lbd/a;
 
-    if-eqz v6, :cond_7
+    if-eqz v6, :cond_9
 
-    .line 61
+    .line 67
     sget v3, Lcom/supercell/id/R$id;->invite_all_container:I
 
     invoke-virtual {v5, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -651,36 +688,36 @@
 
     check-cast v3, Landroid/widget/LinearLayout;
 
-    .line 62
-    iget-object v6, v0, Lwd/k1;->d:Ljava/util/List;
+    .line 68
+    iget-object v6, v0, Lvd/k1;->d:Ljava/util/List;
 
-    .line 63
-    invoke-static {v6, v2}, Lwd/h1;->c(Ljava/util/List;I)Z
+    .line 69
+    invoke-static {v6, v2}, Lvd/h1;->d(Ljava/util/List;I)Z
 
     move-result v6
 
-    .line 64
-    iget-object v8, v0, Lwd/k1;->d:Ljava/util/List;
+    .line 70
+    iget-object v8, v0, Lvd/k1;->d:Ljava/util/List;
 
-    .line 65
-    invoke-static {v8, v2}, Lwd/h1;->b(Ljava/util/List;I)Z
+    .line 71
+    invoke-static {v8, v2}, Lvd/h1;->c(Ljava/util/List;I)Z
 
     move-result v2
 
-    invoke-static {v3, v6, v2, v7, v7}, Lg9/b;->i(Landroid/view/View;ZZII)V
+    invoke-static {v3, v6, v2, v7, v7}, Lhd/g;->b(Landroid/view/View;ZZII)V
 
-    .line 66
+    .line 72
     new-instance v2, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;
 
     invoke-direct {v2, v0, v5}, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;-><init>(Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;Landroid/view/View;)V
 
-    .line 67
-    iput-object v2, v1, Lwd/k1$a;->y:Lke/p;
+    .line 73
+    iput-object v2, v1, Lvd/k1$a;->z:Lke/p;
 
-    .line 68
+    .line 74
     invoke-virtual {v2, v4, v4}, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 69
+    .line 75
     sget v1, Lcom/supercell/id/R$id;->invite_all_button:I
 
     invoke-virtual {v5, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -695,15 +732,15 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    goto :goto_6
+    goto :goto_7
 
-    .line 70
-    :cond_7
-    instance-of v1, v3, Lwd/o;
+    .line 76
+    :cond_9
+    instance-of v1, v3, Lvd/o;
 
-    if-eqz v1, :cond_9
+    if-eqz v1, :cond_b
 
-    .line 71
+    .line 77
     sget v1, Lcom/supercell/id/R$id;->errorContainer:I
 
     invoke-virtual {v5, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -712,20 +749,20 @@
 
     check-cast v1, Landroid/widget/LinearLayout;
 
-    .line 72
-    invoke-static {v1}, Lwd/f2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
+    .line 78
+    invoke-static {v1}, Lvd/g2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
 
     move-result-object v2
 
-    if-eqz v2, :cond_8
+    if-eqz v2, :cond_a
 
     iput v7, v2, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
-    .line 73
-    :cond_8
+    .line 79
+    :cond_a
     invoke-virtual {v1}, Landroid/widget/LinearLayout;->requestLayout()V
 
-    .line 74
+    .line 80
     sget v1, Lcom/supercell/id/R$id;->errorRetryButton:I
 
     invoke-virtual {v5, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -734,32 +771,32 @@
 
     check-cast v1, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
 
-    sget-object v2, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$e;->a:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$e;
+    sget-object v2, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$e;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$e;
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    :cond_9
-    :goto_6
+    :cond_b
+    :goto_7
     return-void
 
-    :cond_a
+    :cond_c
     const-string v1, "item"
 
-    .line 75
-    invoke-static {v1}, Ly4/x;->k(Ljava/lang/String;)V
+    .line 81
+    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v4
 
-    :cond_b
+    :cond_d
     const-string v1, "holder"
 
-    invoke-static {v1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    goto :goto_8
-
-    :goto_7
-    throw v4
+    goto :goto_9
 
     :goto_8
-    goto :goto_7
+    throw v4
+
+    :goto_9
+    goto :goto_8
 .end method

@@ -4,18 +4,18 @@
 
 
 # instance fields
-.field public j:Ln7/b;
+.field public k:Ln7/b;
 
 
 # direct methods
-.method public constructor <init>(Ll7/b;Ln7/b;Ll7/c;Ll7/e;Ll7/d;)V
+.method public constructor <init>(Lj3/h70;Ln7/b;Ll7/a;Ll7/c;Ll7/b;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p3, p4, p5}, Lm7/a;-><init>(Ll7/b;Ll7/c;Ll7/e;Ll7/d;)V
+    invoke-direct {p0, p1, p3, p4, p5}, Lm7/a;-><init>(Lj3/h70;Ll7/a;Ll7/c;Ll7/b;)V
 
     .line 2
-    iput-object p2, p0, Lm7/g;->j:Ln7/b;
+    iput-object p2, p0, Lm7/g;->k:Ln7/b;
 
     return-void
 .end method
@@ -31,7 +31,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lm7/g;->j:Ln7/b;
+    iget-object v1, p0, Lm7/g;->k:Ln7/b;
 
     invoke-virtual {v1}, Ln7/b;->l()V
 
@@ -56,7 +56,7 @@
     const-string v2, "Exception in deleting file "
 
     .line 4
-    invoke-static {v1, v2, v0}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, v0}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0
     return-void
@@ -184,7 +184,7 @@
     const-string v7, "Support_"
 
     .line 11
-    invoke-static {v7}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v7}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v7
 
@@ -194,9 +194,11 @@
 
     invoke-virtual {v7, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    iget-object v8, v1, Lm7/a;->a:Ll7/b;
+    iget-object v8, v1, Lm7/a;->g:Lj3/h70;
 
-    iget-object v8, v8, Ll7/b;->a:Ljava/lang/String;
+    iget-object v8, v8, Lj3/h70;->b:Ljava/lang/Object;
+
+    check-cast v8, Ljava/lang/String;
 
     const-string v9, "/"
 
@@ -222,16 +224,18 @@
     invoke-direct {v8, v0, v7}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
     .line 13
-    iget-object v0, v1, Lm7/g;->j:Ln7/b;
+    iget-object v0, v1, Lm7/g;->k:Ln7/b;
 
     invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v7
 
     .line 14
-    iget-object v9, v0, Ln7/b;->b:Ll7/b;
+    iget-object v9, v0, Ln7/b;->b:Lj3/h70;
 
-    iget-object v9, v9, Ll7/b;->a:Ljava/lang/String;
+    iget-object v9, v9, Lj3/h70;->b:Ljava/lang/Object;
+
+    check-cast v9, Ljava/lang/String;
 
     invoke-virtual {v0, v9, v7}, Ln7/a;->i(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -303,16 +307,18 @@
     long-to-int v2, v14
 
     .line 19
-    iget-object v3, v1, Lm7/a;->h:Ll7/e;
+    iget-object v3, v1, Lm7/a;->i:Ll7/c;
 
     if-eqz v3, :cond_5
 
     .line 20
-    iget-object v11, v1, Lm7/a;->a:Ll7/b;
+    iget-object v11, v1, Lm7/a;->g:Lj3/h70;
 
-    iget-object v11, v11, Ll7/b;->a:Ljava/lang/String;
+    iget-object v11, v11, Lj3/h70;->b:Ljava/lang/Object;
 
-    invoke-interface {v3, v11, v2}, Ll7/e;->a(Ljava/lang/String;I)V
+    check-cast v11, Ljava/lang/String;
+
+    invoke-interface {v3, v11, v2}, Ll7/c;->a(Ljava/lang/String;I)V
 
     :cond_5
     move-wide v2, v14
@@ -329,7 +335,7 @@
 
     .line 22
     :cond_7
-    iget-object v2, v1, Lm7/g;->j:Ln7/b;
+    iget-object v2, v1, Lm7/g;->k:Ln7/b;
 
     invoke-virtual {v2}, Ln7/b;->l()V
 
@@ -349,9 +355,11 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v4, v1, Lm7/a;->a:Ll7/b;
+    iget-object v4, v1, Lm7/a;->g:Lj3/h70;
 
-    iget-object v4, v4, Ll7/b;->a:Ljava/lang/String;
+    iget-object v4, v4, Lj3/h70;->b:Ljava/lang/Object;
+
+    check-cast v4, Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -360,7 +368,7 @@
     move-result-object v3
 
     .line 25
-    invoke-static {v2, v3, v7, v7}, Lce/z;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v3, v7, v7}, Lie/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     move/from16 v2, p3
 
@@ -409,12 +417,14 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lm7/g;->j:Ln7/b;
+    iget-object v0, p0, Lm7/g;->k:Ln7/b;
 
     .line 2
-    iget-object v1, v0, Ln7/b;->b:Ll7/b;
+    iget-object v1, v0, Ln7/b;->b:Lj3/h70;
 
-    iget-object v1, v1, Ll7/b;->a:Ljava/lang/String;
+    iget-object v1, v1, Lj3/h70;->b:Ljava/lang/Object;
+
+    check-cast v1, Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ln7/a;->g(Ljava/lang/String;)Ljava/lang/String;
 
@@ -454,7 +464,7 @@
 
     .line 6
     :cond_1
-    iget-object v0, p0, Lm7/g;->j:Ln7/b;
+    iget-object v0, p0, Lm7/g;->k:Ln7/b;
 
     invoke-virtual {v0}, Ln7/b;->l()V
 

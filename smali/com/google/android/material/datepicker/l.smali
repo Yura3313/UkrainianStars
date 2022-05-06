@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/material/datepicker/s;
+.field public final synthetic g:Lcom/google/android/material/datepicker/s;
 
-.field public final synthetic b:Lcom/google/android/material/datepicker/f;
+.field public final synthetic h:Lcom/google/android/material/datepicker/f;
 
 
 # direct methods
@@ -17,9 +17,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/datepicker/l;->b:Lcom/google/android/material/datepicker/f;
+    iput-object p1, p0, Lcom/google/android/material/datepicker/l;->h:Lcom/google/android/material/datepicker/f;
 
-    iput-object p2, p0, Lcom/google/android/material/datepicker/l;->a:Lcom/google/android/material/datepicker/s;
+    iput-object p2, p0, Lcom/google/android/material/datepicker/l;->g:Lcom/google/android/material/datepicker/s;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,7 +32,7 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/datepicker/l;->b:Lcom/google/android/material/datepicker/f;
+    iget-object p1, p0, Lcom/google/android/material/datepicker/l;->h:Lcom/google/android/material/datepicker/f;
 
     invoke-virtual {p1}, Lcom/google/android/material/datepicker/f;->W0()Landroidx/recyclerview/widget/LinearLayoutManager;
 
@@ -47,9 +47,9 @@
     if-ltz p1, :cond_0
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/datepicker/l;->b:Lcom/google/android/material/datepicker/f;
+    iget-object v0, p0, Lcom/google/android/material/datepicker/l;->h:Lcom/google/android/material/datepicker/f;
 
-    iget-object v1, p0, Lcom/google/android/material/datepicker/l;->a:Lcom/google/android/material/datepicker/s;
+    iget-object v1, p0, Lcom/google/android/material/datepicker/l;->g:Lcom/google/android/material/datepicker/s;
 
     invoke-virtual {v1, p1}, Lcom/google/android/material/datepicker/s;->i(I)Lcom/google/android/material/datepicker/Month;
 

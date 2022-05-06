@@ -31,7 +31,7 @@
 # virtual methods
 .method public onBackground()V
     .locals 4
-    .annotation runtime Landroidx/lifecycle/p;
+    .annotation runtime Landroidx/lifecycle/q;
         value = .enum Landroidx/lifecycle/f$b;->ON_STOP:Landroidx/lifecycle/f$b;
     .end annotation
 
@@ -67,7 +67,7 @@
 
 .method public onForeground()V
     .locals 4
-    .annotation runtime Landroidx/lifecycle/p;
+    .annotation runtime Landroidx/lifecycle/q;
         value = .enum Landroidx/lifecycle/f$b;->ON_START:Landroidx/lifecycle/f$b;
     .end annotation
 

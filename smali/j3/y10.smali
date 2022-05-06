@@ -1,125 +1,117 @@
-.class public final Lj3/y10;
+.class public final synthetic Lj3/y10;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Lj3/bv0;
-
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final b:Lj3/fv0;
-
-.field public final c:Lj3/fv0;
+.source "R8$$SyntheticClass"
 
 
 # direct methods
-.method public synthetic constructor <init>(Lj3/fv0;Lj3/fv0;I)V
-    .locals 0
+.method public static final a(I)I
+    .locals 1
+
+    const/4 v0, 0x5
+
+    if-eq p0, v0, :cond_0
 
     .line 1
-    iput p3, p0, Lj3/y10;->a:I
+    invoke-static {p0}, Lj3/y10;->c(I)I
 
-    iput-object p1, p0, Lj3/y10;->b:Lj3/fv0;
+    move-result p0
 
-    iput-object p2, p0, Lj3/y10;->c:Lj3/fv0;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public static a(Lj3/fv0;Lj3/fv0;)Lj3/y10;
-    .locals 2
-
-    .line 1
-    new-instance v0, Lj3/y10;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, p1, v1}, Lj3/y10;-><init>(Lj3/fv0;Lj3/fv0;I)V
-
-    return-object v0
-.end method
-
-.method public static b(Lj3/fv0;Lj3/fv0;)Lj3/y10;
-    .locals 2
-
-    .line 1
-    new-instance v0, Lj3/y10;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, p0, p1, v1}, Lj3/y10;-><init>(Lj3/fv0;Lj3/fv0;I)V
-
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 3
-
-    iget v0, p0, Lj3/y10;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
-
-    .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/y10;->b:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lj3/y10;->c:Lj3/fv0;
-
-    invoke-interface {v1}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/util/concurrent/Executor;
+    return p0
 
     .line 2
-    check-cast v0, Lj3/u20;
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    .line 3
-    new-instance v2, Lj3/rt;
+    const-string v0, "Can\'t get the number of an unknown enum value."
 
-    invoke-direct {v2, v0, v1}, Lj3/rt;-><init>(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    return-object v2
+    throw p0
+.end method
 
-    .line 4
-    :goto_0
-    iget-object v0, p0, Lj3/y10;->b:Lj3/fv0;
+.method public static synthetic b(I)I
+    .locals 2
 
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
+    const/4 v0, 0x1
 
-    move-result-object v0
+    if-ne p0, v0, :cond_0
 
-    check-cast v0, Lj3/am0;
+    const/4 p0, 0x0
 
-    iget-object v1, p0, Lj3/y10;->c:Lj3/fv0;
+    return p0
 
-    invoke-interface {v1}, Lj3/fv0;->get()Ljava/lang/Object;
+    :cond_0
+    const/4 v1, 0x2
 
-    move-result-object v1
+    if-ne p0, v1, :cond_1
 
-    check-cast v1, Landroid/os/Bundle;
+    return v0
 
-    .line 5
-    new-instance v2, Lj3/xb0;
+    :cond_1
+    const/4 v0, 0x3
 
-    invoke-direct {v2, v0, v1}, Lj3/xb0;-><init>(Lj3/am0;Landroid/os/Bundle;)V
+    if-ne p0, v0, :cond_2
 
-    return-object v2
+    return v1
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    :cond_2
+    const/4 v0, 0x4
+
+    if-ne p0, v0, :cond_3
+
+    const/16 p0, 0x3e8
+
+    return p0
+
+    :cond_3
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+.method public static synthetic c(I)I
+    .locals 2
+
+    const/4 v0, 0x1
+
+    if-ne p0, v0, :cond_0
+
+    const/4 p0, 0x0
+
+    return p0
+
+    :cond_0
+    const/4 v1, 0x2
+
+    if-ne p0, v1, :cond_1
+
+    return v0
+
+    :cond_1
+    const/4 v0, 0x3
+
+    if-ne p0, v0, :cond_2
+
+    return v1
+
+    :cond_2
+    const/4 v1, 0x4
+
+    if-ne p0, v1, :cond_3
+
+    return v0
+
+    :cond_3
+    const/4 v0, 0x5
+
+    if-ne p0, v0, :cond_4
+
+    const/4 p0, -0x1
+
+    return p0
+
+    :cond_4
+    const/4 p0, 0x0
+
+    throw p0
 .end method

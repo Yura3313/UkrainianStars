@@ -22,9 +22,9 @@
 
 
 # instance fields
-.field public a:I
+.field public g:I
 
-.field public final b:[Ljava/lang/Object;
+.field public final h:[Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "[TT;"
@@ -45,7 +45,7 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lle/a;->b:[Ljava/lang/Object;
+    iput-object p1, p0, Lle/a;->h:[Ljava/lang/Object;
 
     return-void
 .end method
@@ -56,9 +56,9 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lle/a;->a:I
+    iget v0, p0, Lle/a;->g:I
 
-    iget-object v1, p0, Lle/a;->b:[Ljava/lang/Object;
+    iget-object v1, p0, Lle/a;->h:[Ljava/lang/Object;
 
     array-length v1, v1
 
@@ -85,13 +85,13 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lle/a;->b:[Ljava/lang/Object;
+    iget-object v0, p0, Lle/a;->h:[Ljava/lang/Object;
 
-    iget v1, p0, Lle/a;->a:I
+    iget v1, p0, Lle/a;->g:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lle/a;->a:I
+    iput v2, p0, Lle/a;->g:I
 
     aget-object v0, v0, v1
     :try_end_0
@@ -102,11 +102,11 @@
     :catch_0
     move-exception v0
 
-    iget v1, p0, Lle/a;->a:I
+    iget v1, p0, Lle/a;->g:I
 
     add-int/lit8 v1, v1, -0x1
 
-    iput v1, p0, Lle/a;->a:I
+    iput v1, p0, Lle/a;->g:I
 
     new-instance v1, Ljava/util/NoSuchElementException;
 

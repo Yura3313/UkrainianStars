@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field public final a:Ljava/security/interfaces/RSAPublicKey;
+.field public final g:Ljava/security/interfaces/RSAPublicKey;
 
-.field public final b:Lp5/z;
+.field public final h:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/security/interfaces/RSAPublicKey;Lp5/z;)V
+.method public constructor <init>(Ljava/security/interfaces/RSAPublicKey;I)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -25,7 +25,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {p2}, Lp5/m0;->d(Lp5/z;)V
+    invoke-static {p2}, Lp5/m0;->d(I)V
 
     .line 3
     invoke-interface {p1}, Ljava/security/interfaces/RSAPublicKey;->getModulus()Ljava/math/BigInteger;
@@ -39,10 +39,10 @@
     invoke-static {v0}, Lp5/m0;->c(I)V
 
     .line 4
-    iput-object p1, p0, Lp5/i0;->a:Ljava/security/interfaces/RSAPublicKey;
+    iput-object p1, p0, Lp5/i0;->g:Ljava/security/interfaces/RSAPublicKey;
 
     .line 5
-    iput-object p2, p0, Lp5/i0;->b:Lp5/z;
+    iput p2, p0, Lp5/i0;->h:I
 
     return-void
 .end method
@@ -50,7 +50,7 @@
 
 # virtual methods
 .method public a([B[B)V
-    .locals 9
+    .locals 10
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/GeneralSecurityException;
@@ -58,14 +58,14 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lp5/i0;->a:Ljava/security/interfaces/RSAPublicKey;
+    iget-object v0, p0, Lp5/i0;->g:Ljava/security/interfaces/RSAPublicKey;
 
     invoke-interface {v0}, Ljava/security/interfaces/RSAPublicKey;->getPublicExponent()Ljava/math/BigInteger;
 
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lp5/i0;->a:Ljava/security/interfaces/RSAPublicKey;
+    iget-object v1, p0, Lp5/i0;->g:Ljava/security/interfaces/RSAPublicKey;
 
     invoke-interface {v1}, Ljava/security/interfaces/RSAPublicKey;->getModulus()Ljava/math/BigInteger;
 
@@ -110,22 +110,22 @@
     move-result-object p1
 
     .line 9
-    iget-object v0, p0, Lp5/i0;->b:Lp5/z;
+    iget v0, p0, Lp5/i0;->h:I
 
     .line 10
-    invoke-static {v0}, Lp5/m0;->d(Lp5/z;)V
+    invoke-static {v0}, Lp5/m0;->d(I)V
 
     .line 11
-    sget-object v1, Lp5/x;->h:Lp5/x;
+    sget-object v1, Lp5/z;->h:Lp5/z;
 
-    iget-object v3, p0, Lp5/i0;->b:Lp5/z;
+    iget v3, p0, Lp5/i0;->h:I
 
     .line 12
-    invoke-static {v3}, Lp5/l0;->d(Lp5/z;)Ljava/lang/String;
+    invoke-static {v3}, Lp5/l0;->d(I)Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-virtual {v1, v3}, Lp5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v1, v3}, Lp5/z;->a(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -140,15 +140,11 @@
     move-result-object p2
 
     .line 15
-    sget-object v1, Lp5/i0$a;->a:[I
+    invoke-static {v0}, Lp/g;->b(I)I
 
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+    move-result v1
 
-    move-result v3
-
-    aget v1, v1, v3
-
-    const/4 v3, 0x2
+    const/4 v3, 0x3
 
     if-eq v1, v4, :cond_1
 
@@ -157,7 +153,7 @@
     const-string v0, "3051300d060960864801650304020305000440"
 
     .line 16
-    invoke-static {v0}, Lp5/a0;->a(Ljava/lang/String;)[B
+    invoke-static {v0}, Landroidx/lifecycle/n;->c(Ljava/lang/String;)[B
 
     move-result-object v0
 
@@ -175,7 +171,11 @@
 
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Lp5/b0;->b(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -189,7 +189,7 @@
     const-string v0, "3031300d060960864801650304020105000420"
 
     .line 18
-    invoke-static {v0}, Lp5/a0;->a(Ljava/lang/String;)[B
+    invoke-static {v0}, Landroidx/lifecycle/n;->c(Ljava/lang/String;)[B
 
     move-result-object v0
 
@@ -213,36 +213,38 @@
     .line 21
     aput-byte v6, v5, v6
 
+    const/4 v7, 0x2
+
     .line 22
     aput-byte v4, v5, v4
 
     const/4 v4, 0x0
 
     :goto_1
-    sub-int v7, v2, v1
+    sub-int v8, v2, v1
 
-    add-int/lit8 v7, v7, -0x3
+    sub-int/2addr v8, v3
 
-    if-ge v4, v7, :cond_2
+    if-ge v4, v8, :cond_2
 
-    add-int/lit8 v7, v3, 0x1
+    add-int/lit8 v8, v7, 0x1
 
-    const/4 v8, -0x1
+    const/4 v9, -0x1
 
     .line 23
-    aput-byte v8, v5, v3
+    aput-byte v9, v5, v7
 
     add-int/lit8 v4, v4, 0x1
 
-    move v3, v7
+    move v7, v8
 
     goto :goto_1
 
     :cond_2
-    add-int/lit8 v1, v3, 0x1
+    add-int/lit8 v1, v7, 0x1
 
     .line 24
-    aput-byte v6, v5, v3
+    aput-byte v6, v5, v7
 
     .line 25
     array-length v2, v0
@@ -259,7 +261,7 @@
     invoke-static {p2, v6, v5, v1, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 27
-    invoke-static {p1, v5}, Lp5/i;->b([B[B)Z
+    invoke-static {p1, v5}, Lp5/j;->b([B[B)Z
 
     move-result p1
 

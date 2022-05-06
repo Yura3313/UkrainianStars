@@ -21,21 +21,21 @@
         "Lle/j;",
         "Lke/l<",
         "Lcom/supercell/id/view/MyAvatarView;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/profile/ProfileFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profile/ProfileFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$m;->a:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$m;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     const/4 p1, 0x1
 
@@ -55,7 +55,7 @@
     if-eqz p1, :cond_1
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$m;->a:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$m;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     sget v1, Lcom/supercell/id/R$id;->online_status_indicator:I
 
@@ -67,11 +67,11 @@
 
     if-eqz v0, :cond_0
 
-    invoke-static {v0, p1}, Lj3/oj;->a(Landroid/view/View;Landroid/view/View;)V
+    invoke-static {v0, p1}, Ls3/k;->r(Landroid/view/View;Landroid/view/View;)V
 
     .line 3
     :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -79,7 +79,7 @@
     const-string p1, "imageView"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

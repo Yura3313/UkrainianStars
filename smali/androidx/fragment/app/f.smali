@@ -11,11 +11,11 @@
 
 .field public final synthetic b:Landroid/view/View;
 
-.field public final synthetic c:Landroidx/fragment/app/c$c;
+.field public final synthetic c:Landroidx/fragment/app/c$b;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/c;Landroid/view/ViewGroup;Landroid/view/View;Landroidx/fragment/app/c$c;)V
+.method public constructor <init>(Landroidx/fragment/app/c;Landroid/view/ViewGroup;Landroid/view/View;Landroidx/fragment/app/c$b;)V
     .locals 0
 
     .line 1
@@ -23,7 +23,7 @@
 
     iput-object p3, p0, Landroidx/fragment/app/f;->b:Landroid/view/View;
 
-    iput-object p4, p0, Landroidx/fragment/app/f;->c:Landroidx/fragment/app/c$c;
+    iput-object p4, p0, Landroidx/fragment/app/f;->c:Landroidx/fragment/app/c$b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

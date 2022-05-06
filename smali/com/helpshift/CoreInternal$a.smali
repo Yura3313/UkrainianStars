@@ -39,13 +39,13 @@
     const-string v2, "Application foreground"
 
     .line 1
-    invoke-static {v1, v2, v0, v0}, Lce/z;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v0, v0}, Lie/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     .line 2
-    sget-object v0, Lq7/c;->d:Lq7/c;
+    sget-object v0, Lr7/c;->d:Lr7/c;
 
     .line 3
-    iget-object v0, v0, Lq7/c;->b:Lq7/a;
+    iget-object v0, v0, Lr7/c;->b:Lr7/a;
 
     if-nez v0, :cond_0
 
@@ -53,7 +53,7 @@
 
     .line 4
     :cond_0
-    invoke-virtual {v0}, Lq7/a;->b()V
+    invoke-virtual {v0}, Lr7/a;->b()V
 
     :goto_0
     return-void

@@ -2,337 +2,171 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
+
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<AdT:",
-        "Lj3/fo;",
-        ">",
-        "Ljava/lang/Object;"
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/internal/ads/zzdnd;",
+        ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public a:Lj3/uh0;
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "this"
-    .end annotation
-.end field
-
-.field public b:Lj3/im0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/im0<",
-            "Lj3/ih0<",
-            "TAdT;>;>;"
-        }
-    .end annotation
-
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "this"
-    .end annotation
-.end field
-
-.field public c:Lj3/yl0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/yl0<",
-            "Lj3/ih0<",
-            "TAdT;>;>;"
-        }
-    .end annotation
-
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "this"
-    .end annotation
-.end field
-
-.field public d:I
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "this"
-    .end annotation
-.end field
-
-.field public final e:Lj3/dh0;
-
-.field public final f:Lm1/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lm1/b;"
-        }
-    .end annotation
-.end field
-
-.field public final g:Ljava/util/LinkedList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/LinkedList<",
-            "Lj3/uh0;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final h:Lj3/rl0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/rl0<",
-            "Lj3/ih0<",
-            "TAdT;>;>;"
-        }
-    .end annotation
-.end field
-
-
 # direct methods
-.method public constructor <init>(Lj3/dh0;Lj3/ah0;Lm1/b;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/dh0;",
-            "Lj3/ah0;",
-            "Lm1/b;",
-            ")V"
-        }
-    .end annotation
+.method public constructor <init>()V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x1
-
-    .line 2
-    iput v0, p0, Lj3/qh0;->d:I
-
-    .line 3
-    new-instance v0, Lj3/th0;
-
-    invoke-direct {v0, p0}, Lj3/th0;-><init>(Ljava/lang/Object;)V
-
-    iput-object v0, p0, Lj3/qh0;->h:Lj3/rl0;
-
-    .line 4
-    iput-object p1, p0, Lj3/qh0;->e:Lj3/dh0;
-
-    .line 5
-    iput-object p3, p0, Lj3/qh0;->f:Lm1/b;
-
-    .line 6
-    new-instance p1, Ljava/util/LinkedList;
-
-    invoke-direct {p1}, Ljava/util/LinkedList;-><init>()V
-
-    iput-object p1, p0, Lj3/qh0;->g:Ljava/util/LinkedList;
-
-    .line 7
-    new-instance p1, Lj3/g00;
-
-    const/4 p3, 0x5
-
-    invoke-direct {p1, p0, p3}, Lj3/g00;-><init>(Ljava/lang/Object;I)V
-
-    .line 8
-    iput-object p1, p2, Lj3/ah0;->a:Lj3/g00;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lj3/uh0;)V
-    .locals 5
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 11
 
     .line 1
-    :goto_0
-    iget-object v0, p0, Lj3/qh0;->c:Lj3/yl0;
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
 
-    const/4 v1, 0x1
+    move-result v0
+
+    const/4 v1, 0x0
 
     const/4 v2, 0x0
 
-    if-eqz v0, :cond_1
+    move-object v8, v2
 
-    invoke-interface {v0}, Ljava/util/concurrent/Future;->isDone()Z
+    const/4 v4, 0x0
 
-    move-result v0
+    const/4 v5, 0x0
 
-    if-eqz v0, :cond_0
+    const/4 v6, 0x0
 
-    goto :goto_1
+    const/4 v7, 0x0
 
-    :cond_0
-    const/4 v0, 0x0
+    const/4 v9, 0x0
 
-    goto :goto_2
-
-    :cond_1
-    :goto_1
-    const/4 v0, 0x1
-
-    :goto_2
-    if-nez v0, :cond_3
-
-    if-eqz p1, :cond_2
+    const/4 v10, 0x0
 
     .line 2
-    iget-object v0, p0, Lj3/qh0;->g:Ljava/util/LinkedList;
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    invoke-virtual {v0, p1}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
+    move-result v1
 
-    :cond_2
-    return-void
-
-    :cond_3
-    if-nez p1, :cond_4
+    if-ge v1, v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Lj3/qh0;->g:Ljava/util/LinkedList;
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    invoke-virtual {v0}, Ljava/util/LinkedList;->isEmpty()Z
+    move-result v1
 
-    move-result v0
+    const v2, 0xffff
 
-    if-eqz v0, :cond_4
+    and-int/2addr v2, v1
 
-    return-void
-
-    :cond_4
-    if-nez p1, :cond_5
+    packed-switch v2, :pswitch_data_0
 
     .line 4
-    iget-object p1, p0, Lj3/qh0;->g:Ljava/util/LinkedList;
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
 
-    invoke-virtual {p1}, Ljava/util/LinkedList;->remove()Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lj3/uh0;
+    goto :goto_0
 
     .line 5
-    :cond_5
-    invoke-interface {p1}, Lj3/uh0;->c()Lj3/lh0;
+    :pswitch_0
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
 
-    move-result-object v0
+    move-result v10
 
-    if-eqz v0, :cond_8
-
-    iget-object v0, p0, Lj3/qh0;->e:Lj3/dh0;
-
-    invoke-interface {p1}, Lj3/uh0;->c()Lj3/lh0;
-
-    move-result-object v3
-
-    check-cast v0, Lcom/google/android/gms/internal/ads/k1;
+    goto :goto_0
 
     .line 6
-    monitor-enter v0
+    :pswitch_1
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+
+    move-result v9
+
+    goto :goto_0
 
     .line 7
-    :try_start_0
-    iget-object v4, v0, Lcom/google/android/gms/internal/ads/k1;->a:Ljava/util/concurrent/ConcurrentHashMap;
+    :pswitch_2
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    invoke-virtual {v4, v3}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v8
 
-    move-result-object v3
-
-    check-cast v3, Lj3/ch0;
-
-    if-eqz v3, :cond_7
+    goto :goto_0
 
     .line 8
-    invoke-virtual {v3}, Lj3/ch0;->a()I
+    :pswitch_3
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
 
-    move-result v3
+    move-result v7
 
-    iget-object v4, v0, Lcom/google/android/gms/internal/ads/k1;->b:Lcom/google/android/gms/internal/ads/zzdnd;
-
-    iget v4, v4, Lcom/google/android/gms/internal/ads/zzdnd;->j:I
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit v0
-
-    if-ge v3, v4, :cond_6
-
-    goto :goto_3
-
-    :cond_6
-    const/4 v1, 0x0
-
-    goto :goto_3
+    goto :goto_0
 
     .line 9
-    :cond_7
-    monitor-exit v0
+    :pswitch_4
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
 
-    :goto_3
-    if-eqz v1, :cond_8
+    move-result v6
+
+    goto :goto_0
 
     .line 10
-    invoke-interface {p1}, Lj3/uh0;->a()Lj3/uh0;
+    :pswitch_5
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
 
-    move-result-object v0
+    move-result v5
 
-    iput-object v0, p0, Lj3/qh0;->a:Lj3/uh0;
+    goto :goto_0
 
     .line 11
-    new-instance v0, Lj3/im0;
+    :pswitch_6
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
 
-    invoke-direct {v0}, Lj3/im0;-><init>()V
+    move-result v4
+
+    goto :goto_0
 
     .line 12
-    iput-object v0, p0, Lj3/qh0;->b:Lj3/im0;
+    :cond_0
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
 
     .line 13
-    iget-object v0, p0, Lj3/qh0;->f:Lm1/b;
+    new-instance p1, Lcom/google/android/gms/internal/ads/zzdnd;
 
-    iget-object v1, p0, Lj3/qh0;->a:Lj3/uh0;
+    move-object v3, p1
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-direct/range {v3 .. v10}, Lcom/google/android/gms/internal/ads/zzdnd;-><init>(IIIILjava/lang/String;II)V
 
-    .line 14
-    check-cast v1, Lj3/af0;
+    return-object p1
 
-    .line 15
-    iget-object v0, v0, Lm1/b;->a:Ljava/lang/Object;
+    nop
 
-    check-cast v0, Lj3/qf0;
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
 
-    iget-object v2, v1, Lj3/af0;->b:Lj3/rf0;
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
 
-    iget-object v1, v1, Lj3/af0;->a:Lj3/sf0;
+    .line 1
+    new-array p1, p1, [Lcom/google/android/gms/internal/ads/zzdnd;
 
-    invoke-interface {v0, v2, v1}, Lj3/qf0;->a(Lj3/rf0;Lj3/sf0;)Lj3/yl0;
-
-    move-result-object v0
-
-    .line 16
-    iput-object v0, p0, Lj3/qh0;->c:Lj3/yl0;
-
-    .line 17
-    iget-object v1, p0, Lj3/qh0;->h:Lj3/rl0;
-
-    invoke-interface {p1}, Lj3/uh0;->b()Ljava/util/concurrent/Executor;
-
-    move-result-object p1
-
-    invoke-static {v0, v1, p1}, Lj3/ul0;->h(Lj3/yl0;Lj3/rl0;Ljava/util/concurrent/Executor;)V
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    .line 18
-    monitor-exit v0
-
-    throw p1
-
-    :cond_8
-    const/4 p1, 0x0
-
-    goto/16 :goto_0
+    return-object p1
 .end method

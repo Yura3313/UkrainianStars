@@ -36,7 +36,7 @@
 
 
 # instance fields
-.field public final a:Landroid/os/Bundle;
+.field public final g:Landroid/os/Bundle;
 
 
 # direct methods
@@ -60,7 +60,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Landroidx/fragment/app/Fragment$SavedState;->a:Landroid/os/Bundle;
+    iput-object p1, p0, Landroidx/fragment/app/Fragment$SavedState;->g:Landroid/os/Bundle;
 
     return-void
 .end method
@@ -76,7 +76,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/fragment/app/Fragment$SavedState;->a:Landroid/os/Bundle;
+    iput-object p1, p0, Landroidx/fragment/app/Fragment$SavedState;->g:Landroid/os/Bundle;
 
     if-eqz p2, :cond_0
 
@@ -103,7 +103,7 @@
     .locals 0
 
     .line 1
-    iget-object p2, p0, Landroidx/fragment/app/Fragment$SavedState;->a:Landroid/os/Bundle;
+    iget-object p2, p0, Landroidx/fragment/app/Fragment$SavedState;->g:Landroid/os/Bundle;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeBundle(Landroid/os/Bundle;)V
 

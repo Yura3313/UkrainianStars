@@ -52,7 +52,7 @@
     iput-object p1, p0, Lcom/google/protobuf/j$d;->e:Ljava/nio/ByteBuffer;
 
     .line 4
-    invoke-static {p1}, Lcom/google/protobuf/v1;->b(Ljava/nio/ByteBuffer;)J
+    invoke-static {p1}, Lcom/google/protobuf/u1;->b(Ljava/nio/ByteBuffer;)J
 
     move-result-wide v0
 
@@ -167,7 +167,7 @@
 
     move-wide v7, v9
 
-    invoke-static/range {v2 .. v8}, Lcom/google/protobuf/v1;->g(J[BJJ)V
+    invoke-static/range {v2 .. v8}, Lcom/google/protobuf/u1;->g(J[BJJ)V
 
     .line 5
     new-instance v0, Ljava/lang/String;
@@ -243,7 +243,7 @@
     .line 4
     iget-object v2, p0, Lcom/google/protobuf/j$d;->e:Ljava/nio/ByteBuffer;
 
-    invoke-static {v2, v1, v0}, Lcom/google/protobuf/w1;->b(Ljava/nio/ByteBuffer;II)Ljava/lang/String;
+    invoke-static {v2, v1, v0}, Lcom/google/protobuf/v1;->b(Ljava/nio/ByteBuffer;II)Ljava/lang/String;
 
     move-result-object v1
 
@@ -478,7 +478,7 @@
 
     iput-wide v5, p0, Lcom/google/protobuf/j$d;->i:J
 
-    invoke-static {v3, v4}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v3, v4}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result p1
 
@@ -570,7 +570,7 @@
     .line 2
     iput-wide v2, p0, Lcom/google/protobuf/j$d;->i:J
 
-    invoke-static {v0, v1}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v0, v1}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v0
 
@@ -613,7 +613,7 @@
     iput-wide v4, p0, Lcom/google/protobuf/j$d;->i:J
 
     .line 4
-    invoke-static {v0, v1}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v0, v1}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v2
 
@@ -624,7 +624,7 @@
     add-long/2addr v3, v0
 
     .line 5
-    invoke-static {v3, v4}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v3, v4}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v3
 
@@ -639,7 +639,7 @@
     add-long/2addr v3, v0
 
     .line 6
-    invoke-static {v3, v4}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v3, v4}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v3
 
@@ -654,7 +654,7 @@
     add-long/2addr v0, v3
 
     .line 7
-    invoke-static {v0, v1}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v0, v1}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v0
 
@@ -703,7 +703,7 @@
     iput-wide v4, p0, Lcom/google/protobuf/j$d;->i:J
 
     .line 4
-    invoke-static {v0, v1}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v0, v1}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v2
 
@@ -718,7 +718,7 @@
     add-long/2addr v6, v0
 
     .line 5
-    invoke-static {v6, v7}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v6, v7}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v6
 
@@ -737,7 +737,7 @@
     add-long/2addr v6, v0
 
     .line 6
-    invoke-static {v6, v7}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v6, v7}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v6
 
@@ -756,7 +756,7 @@
     add-long/2addr v6, v0
 
     .line 7
-    invoke-static {v6, v7}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v6, v7}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v6
 
@@ -775,7 +775,7 @@
     add-long/2addr v6, v0
 
     .line 8
-    invoke-static {v6, v7}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v6, v7}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v6
 
@@ -794,7 +794,7 @@
     add-long/2addr v6, v0
 
     .line 9
-    invoke-static {v6, v7}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v6, v7}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v6
 
@@ -813,7 +813,7 @@
     add-long/2addr v6, v0
 
     .line 10
-    invoke-static {v6, v7}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v6, v7}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v6
 
@@ -832,7 +832,7 @@
     add-long/2addr v0, v6
 
     .line 11
-    invoke-static {v0, v1}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v0, v1}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v0
 
@@ -883,7 +883,7 @@
     add-long v4, v0, v2
 
     .line 3
-    invoke-static {v0, v1}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v0, v1}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v0
 
@@ -914,7 +914,7 @@
     add-long v6, v4, v2
 
     .line 6
-    invoke-static {v4, v5}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v4, v5}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v1
 
@@ -935,7 +935,7 @@
     add-long v4, v6, v2
 
     .line 7
-    invoke-static {v6, v7}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v6, v7}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v1
 
@@ -959,7 +959,7 @@
     add-long v6, v4, v2
 
     .line 8
-    invoke-static {v4, v5}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v4, v5}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v1
 
@@ -981,7 +981,7 @@
     add-long v4, v6, v2
 
     .line 9
-    invoke-static {v6, v7}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v6, v7}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v6
 
@@ -1010,7 +1010,7 @@
     add-long v8, v4, v2
 
     .line 10
-    invoke-static {v4, v5}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v4, v5}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v4
 
@@ -1039,7 +1039,7 @@
     add-long v4, v8, v2
 
     .line 11
-    invoke-static {v8, v9}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v8, v9}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v8
 
@@ -1063,7 +1063,7 @@
     add-long v8, v4, v2
 
     .line 12
-    invoke-static {v4, v5}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v4, v5}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v4
 
@@ -1087,7 +1087,7 @@
     add-long v4, v8, v2
 
     .line 13
-    invoke-static {v8, v9}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v8, v9}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v8
 
@@ -1110,7 +1110,7 @@
     add-long/2addr v2, v4
 
     .line 14
-    invoke-static {v4, v5}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v4, v5}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v4
 
@@ -1526,7 +1526,7 @@
 
     move-wide v7, v9
 
-    invoke-static/range {v2 .. v8}, Lcom/google/protobuf/v1;->g(J[BJJ)V
+    invoke-static/range {v2 .. v8}, Lcom/google/protobuf/u1;->g(J[BJJ)V
 
     .line 6
     iget-wide v2, p0, Lcom/google/protobuf/j$d;->i:J
@@ -1536,7 +1536,7 @@
     iput-wide v2, p0, Lcom/google/protobuf/j$d;->i:J
 
     .line 7
-    sget-object v0, Lcom/google/protobuf/i;->b:Lcom/google/protobuf/i;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
 
     .line 8
     new-instance v0, Lcom/google/protobuf/i$h;
@@ -1549,7 +1549,7 @@
     if-nez v0, :cond_1
 
     .line 9
-    sget-object v0, Lcom/google/protobuf/i;->b:Lcom/google/protobuf/i;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
 
     return-object v0
 
@@ -1851,7 +1851,7 @@
     add-long v4, v0, v2
 
     .line 3
-    invoke-static {v0, v1}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v0, v1}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v0
 
@@ -1880,7 +1880,7 @@
     add-long v6, v4, v2
 
     .line 6
-    invoke-static {v4, v5}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v4, v5}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v1
 
@@ -1898,7 +1898,7 @@
     add-long v4, v6, v2
 
     .line 7
-    invoke-static {v6, v7}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v6, v7}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v1
 
@@ -1919,7 +1919,7 @@
     add-long v6, v4, v2
 
     .line 8
-    invoke-static {v4, v5}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v4, v5}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v1
 
@@ -1939,7 +1939,7 @@
     add-long v4, v6, v2
 
     .line 9
-    invoke-static {v6, v7}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v6, v7}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v1
 
@@ -1956,7 +1956,7 @@
     add-long v6, v4, v2
 
     .line 10
-    invoke-static {v4, v5}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v4, v5}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v1
 
@@ -1965,7 +1965,7 @@
     add-long v4, v6, v2
 
     .line 11
-    invoke-static {v6, v7}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v6, v7}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v1
 
@@ -1974,7 +1974,7 @@
     add-long v6, v4, v2
 
     .line 12
-    invoke-static {v4, v5}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v4, v5}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v1
 
@@ -1983,7 +1983,7 @@
     add-long v4, v6, v2
 
     .line 13
-    invoke-static {v6, v7}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v6, v7}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v1
 
@@ -1992,7 +1992,7 @@
     add-long v6, v4, v2
 
     .line 14
-    invoke-static {v4, v5}, Lcom/google/protobuf/v1;->j(J)B
+    invoke-static {v4, v5}, Lcom/google/protobuf/u1;->j(J)B
 
     move-result v1
 

@@ -1,31 +1,47 @@
 .class public Lcom/google/android/material/internal/e;
-.super Landroidx/appcompat/view/menu/l;
-.source "NavigationSubMenu.java"
+.super Landroidx/appcompat/view/menu/e;
+.source "NavigationMenu.java"
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/google/android/material/internal/c;Landroidx/appcompat/view/menu/g;)V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/view/menu/l;-><init>(Landroid/content/Context;Landroidx/appcompat/view/menu/e;Landroidx/appcompat/view/menu/g;)V
+    invoke-direct {p0, p1}, Landroidx/appcompat/view/menu/e;-><init>(Landroid/content/Context;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public q(Z)V
-    .locals 1
+.method public addSubMenu(IIILjava/lang/CharSequence;)Landroid/view/SubMenu;
+    .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/appcompat/view/menu/e;->q(Z)V
+    invoke-virtual {p0, p1, p2, p3, p4}, Landroidx/appcompat/view/menu/e;->a(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
+
+    move-result-object p1
+
+    check-cast p1, Landroidx/appcompat/view/menu/g;
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/view/menu/l;->z:Landroidx/appcompat/view/menu/e;
+    new-instance p2, Lcom/google/android/material/internal/g;
 
     .line 3
-    invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/e;->q(Z)V
+    iget-object p3, p0, Landroidx/appcompat/view/menu/e;->a:Landroid/content/Context;
 
-    return-void
+    .line 4
+    invoke-direct {p2, p3, p0, p1}, Lcom/google/android/material/internal/g;-><init>(Landroid/content/Context;Lcom/google/android/material/internal/e;Landroidx/appcompat/view/menu/g;)V
+
+    .line 5
+    iput-object p2, p1, Landroidx/appcompat/view/menu/g;->o:Landroidx/appcompat/view/menu/l;
+
+    .line 6
+    iget-object p1, p1, Landroidx/appcompat/view/menu/g;->e:Ljava/lang/CharSequence;
+
+    .line 7
+    invoke-virtual {p2, p1}, Landroidx/appcompat/view/menu/l;->setHeaderTitle(Ljava/lang/CharSequence;)Landroid/view/SubMenu;
+
+    return-object p2
 .end method

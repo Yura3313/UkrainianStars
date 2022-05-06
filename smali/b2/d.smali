@@ -4,14 +4,14 @@
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/common/data/DataHolder;
+.field public final g:Lcom/google/android/gms/common/data/DataHolder;
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 .end field
 
-.field public b:I
-
 .field public h:I
+
+.field public i:I
 
 
 # direct methods
@@ -28,12 +28,12 @@
     if-eqz p1, :cond_1
 
     .line 2
-    iput-object p1, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iput-object p1, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
     if-ltz p2, :cond_0
 
     .line 3
-    iget v0, p1, Lcom/google/android/gms/common/data/DataHolder;->m:I
+    iget v0, p1, Lcom/google/android/gms/common/data/DataHolder;->n:I
 
     if-ge p2, v0, :cond_0
 
@@ -49,14 +49,14 @@
     invoke-static {v0}, Lc2/h;->j(Z)V
 
     .line 5
-    iput p2, p0, Lb2/d;->b:I
+    iput p2, p0, Lb2/d;->h:I
 
     .line 6
-    invoke-virtual {p1, p2}, Lcom/google/android/gms/common/data/DataHolder;->C2(I)I
+    invoke-virtual {p1, p2}, Lcom/google/android/gms/common/data/DataHolder;->E2(I)I
 
     move-result p1
 
-    iput p1, p0, Lb2/d;->h:I
+    iput p1, p0, Lb2/d;->i:I
 
     return-void
 
@@ -73,7 +73,7 @@
 
 
 # virtual methods
-.method public A(Ljava/lang/String;)Landroid/net/Uri;
+.method public B(Ljava/lang/String;)Landroid/net/Uri;
     .locals 3
     .param p1    # Ljava/lang/String;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -83,14 +83,14 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     .line 2
-    invoke-virtual {v0, p1, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-virtual {v0, p1, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object p1
 
@@ -109,6 +109,27 @@
     return-object p1
 .end method
 
+.method public b(Ljava/lang/String;)Z
+    .locals 3
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
+
+    iget v1, p0, Lb2/d;->h:I
+
+    iget v2, p0, Lb2/d;->i:I
+
+    invoke-virtual {v0, p1, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->z2(Ljava/lang/String;II)Z
+
+    move-result p1
+
+    return p1
+.end method
+
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
 
@@ -123,27 +144,8 @@
     check-cast p1, Lb2/d;
 
     .line 3
-    iget v0, p1, Lb2/d;->b:I
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    iget v2, p0, Lb2/d;->b:I
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-static {v0, v2}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
     iget v0, p1, Lb2/d;->h:I
 
-    .line 4
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -160,9 +162,28 @@
 
     if-eqz v0, :cond_0
 
-    iget-object p1, p1, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget v0, p1, Lb2/d;->i:I
 
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    .line 4
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    iget v2, p0, Lb2/d;->i:I
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-static {v0, v2}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object p1, p1, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
+
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
     if-ne p1, v0, :cond_0
 
@@ -174,27 +195,6 @@
     return v1
 .end method
 
-.method public h(Ljava/lang/String;)Z
-    .locals 3
-    .param p1    # Ljava/lang/String;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-
-    .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
-
-    iget v1, p0, Lb2/d;->b:I
-
-    iget v2, p0, Lb2/d;->h:I
-
-    invoke-virtual {v0, p1, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->x2(Ljava/lang/String;II)Z
-
-    move-result p1
-
-    return p1
-.end method
-
 .method public hashCode()I
     .locals 3
 
@@ -203,7 +203,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -213,7 +213,7 @@
 
     aput-object v1, v0, v2
 
-    iget v1, p0, Lb2/d;->h:I
+    iget v1, p0, Lb2/d;->i:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -223,7 +223,7 @@
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v1, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
     const/4 v2, 0x2
 
@@ -237,7 +237,7 @@
     return v0
 .end method
 
-.method public j(Ljava/lang/String;)I
+.method public i(Ljava/lang/String;)I
     .locals 3
     .param p1    # Ljava/lang/String;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -245,20 +245,20 @@
     .end param
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
-    invoke-virtual {v0, p1, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->z2(Ljava/lang/String;II)I
+    invoke-virtual {v0, p1, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)I
 
     move-result p1
 
     return p1
 .end method
 
-.method public m(Ljava/lang/String;)J
+.method public k(Ljava/lang/String;)J
     .locals 3
     .param p1    # Ljava/lang/String;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -266,20 +266,20 @@
     .end param
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
-    invoke-virtual {v0, p1, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->A2(Ljava/lang/String;II)J
+    invoke-virtual {v0, p1, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->C2(Ljava/lang/String;II)J
 
     move-result-wide v0
 
     return-wide v0
 .end method
 
-.method public r(Ljava/lang/String;)Ljava/lang/String;
+.method public o(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
     .param p1    # Ljava/lang/String;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -289,20 +289,20 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
-    invoke-virtual {v0, p1, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-virtual {v0, p1, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public w(Ljava/lang/String;)Z
+.method public t(Ljava/lang/String;)Z
     .locals 1
     .param p1    # Ljava/lang/String;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -310,10 +310,10 @@
     .end param
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
     .line 2
-    iget-object v0, v0, Lcom/google/android/gms/common/data/DataHolder;->h:Landroid/os/Bundle;
+    iget-object v0, v0, Lcom/google/android/gms/common/data/DataHolder;->i:Landroid/os/Bundle;
 
     invoke-virtual {v0, p1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
 
@@ -322,7 +322,7 @@
     return p1
 .end method
 
-.method public z(Ljava/lang/String;)Z
+.method public y(Ljava/lang/String;)Z
     .locals 3
     .param p1    # Ljava/lang/String;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -330,13 +330,13 @@
     .end param
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
-    invoke-virtual {v0, p1, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Z
+    invoke-virtual {v0, p1, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->F2(Ljava/lang/String;II)Z
 
     move-result p1
 

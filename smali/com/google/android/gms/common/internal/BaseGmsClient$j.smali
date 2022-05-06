@@ -56,7 +56,7 @@
     if-eqz v0, :cond_0
 
     .line 3
-    invoke-interface {v0, p1}, Lcom/google/android/gms/common/internal/BaseGmsClient$b;->P0(Lcom/google/android/gms/common/ConnectionResult;)V
+    invoke-interface {v0, p1}, Lcom/google/android/gms/common/internal/BaseGmsClient$b;->Q0(Lcom/google/android/gms/common/ConnectionResult;)V
 
     .line 4
     :cond_0
@@ -114,7 +114,7 @@
 
     add-int/lit8 v2, v2, 0x22
 
-    invoke-static {v1, v2}, Ly/b;->a(Ljava/lang/String;I)I
+    invoke-static {v1, v2}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v1
 
@@ -183,7 +183,7 @@
     if-eqz v1, :cond_2
 
     .line 12
-    invoke-interface {v1, v0}, Lcom/google/android/gms/common/internal/BaseGmsClient$a;->X0(Landroid/os/Bundle;)V
+    invoke-interface {v1, v0}, Lcom/google/android/gms/common/internal/BaseGmsClient$a;->Y0(Landroid/os/Bundle;)V
 
     :cond_2
     const/4 v0, 0x1

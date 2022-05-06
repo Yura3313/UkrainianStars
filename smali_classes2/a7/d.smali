@@ -249,7 +249,7 @@
     if-eqz v1, :cond_1
 
     .line 5
-    sget-object v4, Lc6/d;->CHARACTER_SET:Lc6/d;
+    sget-object v4, Lc6/d;->k:Lc6/d;
 
     invoke-interface {v1, v4}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 

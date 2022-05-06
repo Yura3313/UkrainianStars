@@ -1,105 +1,52 @@
-.class public final Lj3/t80;
+.class public final synthetic Lj3/t80;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/rl0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lj3/rl0<",
-        "Landroid/net/Uri;",
-        ">;"
-    }
-.end annotation
+.implements Lj3/ql0;
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/gms/internal/ads/zzarc;
+.field public final a:Lcom/google/android/gms/internal/ads/zzcyk;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzarc;)V
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzcyk;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lj3/t80;->a:Lcom/google/android/gms/internal/ads/zzarc;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lj3/t80;->a:Lcom/google/android/gms/internal/ads/zzcyk;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final d(Ljava/lang/Throwable;)V
+.method public final a(Ljava/lang/Object;)Lj3/im0;
     .locals 3
 
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lj3/t80;->a:Lcom/google/android/gms/internal/ads/zzarc;
+    iget-object v0, p0, Lj3/t80;->a:Lcom/google/android/gms/internal/ads/zzcyk;
 
-    const-string v1, "Internal error: "
-
-    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    invoke-virtual {v1, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    goto :goto_0
-
-    :cond_0
-    new-instance p1, Ljava/lang/String;
-
-    invoke-direct {p1, v1}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
-
-    :goto_0
-    invoke-interface {v0, p1}, Lcom/google/android/gms/internal/ads/zzarc;->onError(Ljava/lang/String;)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    return-void
-.end method
-
-.method public final synthetic onSuccess(Ljava/lang/Object;)V
-    .locals 1
-    .param p1    # Ljava/lang/Object;
-        .annotation runtime Ljavax/annotation/Nonnull;
-        .end annotation
-    .end param
-
-    .line 1
     check-cast p1, Landroid/net/Uri;
 
-    .line 2
-    :try_start_0
-    iget-object v0, p0, Lj3/t80;->a:Lcom/google/android/gms/internal/ads/zzarc;
+    const-string v1, "google.afma.nativeAds.getPublisherCustomRenderedClickSignals"
 
-    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    .line 1
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/ads/zzcyk;->B7(Ljava/lang/String;)Lj3/im0;
+
+    move-result-object v1
+
+    new-instance v2, Lj3/v80;
+
+    invoke-direct {v2, v0, p1}, Lj3/v80;-><init>(Lcom/google/android/gms/internal/ads/zzcyk;Landroid/net/Uri;)V
+
+    iget-object p1, v0, Lcom/google/android/gms/internal/ads/zzcyk;->l:Lj3/km0;
+
+    .line 2
+    invoke-static {v1, v2, p1}, Lj3/em0;->k(Lj3/im0;Lj3/yj0;Ljava/util/concurrent/Executor;)Lj3/im0;
 
     move-result-object p1
 
-    invoke-interface {v0, p1}, Lcom/google/android/gms/internal/ads/zzarc;->g4(Ljava/util/List;)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    return-void
+    return-object p1
 .end method

@@ -27,11 +27,11 @@
 
 
 # instance fields
-.field public h:I
+.field public i:I
 
-.field public i:F
+.field public j:F
 
-.field public j:Z
+.field public k:Z
 
 
 # direct methods
@@ -59,14 +59,14 @@
 
     move-result p2
 
-    iput p2, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->h:I
+    iput p2, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->i:I
 
     .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result p2
 
-    iput p2, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->i:F
+    iput p2, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->j:F
 
     .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
@@ -83,7 +83,7 @@
     const/4 p1, 0x0
 
     :goto_0
-    iput-boolean p1, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->j:Z
+    iput-boolean p1, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->k:Z
 
     return-void
 .end method
@@ -103,22 +103,22 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->a:Landroid/os/Parcelable;
+    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->g:Landroid/os/Parcelable;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
-    iget p2, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->h:I
+    iget p2, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->i:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 3
-    iget p2, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->i:F
+    iget p2, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->j:F
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
 
     .line 4
-    iget-boolean p2, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->j:Z
+    iget-boolean p2, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->k:Z
 
     int-to-byte p2, p2
 

@@ -20,23 +20,23 @@
     value = {
         "Lle/j;",
         "Lke/p<",
-        "Lwd/c;",
+        "Lvd/c;",
         "Lcom/supercell/id/view/AvatarEditView$b;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$j;->a:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$j;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
     const/4 p1, 0x2
 
@@ -51,7 +51,7 @@
     .locals 5
 
     .line 1
-    check-cast p1, Lwd/c;
+    check-cast p1, Lvd/c;
 
     check-cast p2, Lcom/supercell/id/view/AvatarEditView$b;
 
@@ -62,7 +62,7 @@
     if-eqz p2, :cond_2
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$j;->a:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$j;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
     sget v1, Lcom/supercell/id/R$id;->avatar_backgrounds:I
 
@@ -74,7 +74,7 @@
 
     const-string v1, "avatar_backgrounds"
 
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->isLayoutSuppressed()Z
 
@@ -86,56 +86,56 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$j;->a:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$j;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
-    invoke-static {v0}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->q1(Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;)Lbe/g;
+    invoke-static {v0}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->q1(Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;)Lae/d;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 4
-    iget-object v1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$j;->a:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    iget-object v1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$j;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
     new-instance v2, Lcom/supercell/id/model/MyProfileImage$Avatar;
 
-    new-instance v3, Lwd/d;
+    new-instance v3, Lvd/d;
 
     .line 5
-    iget-object v4, v0, Lbe/g;->a:Ljava/lang/Object;
+    iget-object v4, v0, Lae/d;->g:Ljava/lang/Object;
 
     .line 6
     check-cast v4, Ljava/lang/String;
 
-    invoke-direct {v3, v4, p1}, Lwd/d;-><init>(Ljava/lang/String;Lwd/c;)V
+    invoke-direct {v3, v4, p1}, Lvd/d;-><init>(Ljava/lang/String;Lvd/c;)V
 
-    invoke-virtual {v3}, Lwd/d;->a()Ljava/lang/String;
+    invoke-virtual {v3}, Lvd/d;->a()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-direct {v2, v3}, Lcom/supercell/id/model/MyProfileImage$Avatar;-><init>(Ljava/lang/String;)V
 
     .line 7
-    invoke-virtual {v1, v2}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->A1(Lcom/supercell/id/model/MyProfileImage;)V
+    invoke-virtual {v1, v2}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->B1(Lcom/supercell/id/model/MyProfileImage;)V
 
     .line 8
-    iget-object v1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$j;->a:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    iget-object v1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$j;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
     .line 9
-    iget-object v0, v0, Lbe/g;->a:Ljava/lang/Object;
+    iget-object v0, v0, Lae/d;->g:Ljava/lang/Object;
 
     .line 10
     check-cast v0, Ljava/lang/String;
 
-    sget-object v2, Lcom/supercell/id/view/AvatarEditView$b;->NONE:Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object v2, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
 
     .line 11
-    invoke-virtual {v1, v0, p1, v2, p2}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->F1(Ljava/lang/String;Lwd/c;Lcom/supercell/id/view/AvatarEditView$b;Lcom/supercell/id/view/AvatarEditView$b;)V
+    invoke-virtual {v1, v0, p1, v2, p2}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->G1(Ljava/lang/String;Lvd/c;Lcom/supercell/id/view/AvatarEditView$b;Lcom/supercell/id/view/AvatarEditView$b;)V
 
     .line 12
     :cond_1
     :goto_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -143,14 +143,14 @@
     const-string p1, "animation"
 
     .line 13
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_3
     const-string p1, "bg"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

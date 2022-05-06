@@ -52,6 +52,16 @@
 .method public abstract captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 .end method
 
+.method public abstract captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;)Lio/sentry/protocol/SentryId;
+    .annotation build Lorg/jetbrains/annotations/ApiStatus$Experimental;
+    .end annotation
+.end method
+
+.method public abstract captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+    .annotation build Lorg/jetbrains/annotations/ApiStatus$Experimental;
+    .end annotation
+.end method
+
 .method public abstract captureUserFeedback(Lio/sentry/UserFeedback;)V
 .end method
 

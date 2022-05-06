@@ -1,90 +1,58 @@
-.class public final synthetic Lwd/v;
-.super Lle/i;
-.source "NetworkUtil.kt"
-
-# interfaces
-.implements Lke/l;
+.class public final Lwd/v;
+.super Lwd/u0;
+.source "NotificationBadgeStorage.kt"
 
 
 # annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lwd/v$a;
+    }
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/i;",
-        "Lke/l<",
-        "Ljava/io/InputStream;",
-        "Landroid/graphics/Bitmap;",
+        "Lwd/u0<",
+        "Lwd/u;",
         ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final b:Lwd/v;
-
-
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lwd/v;
-
-    invoke-direct {v0}, Lwd/v;-><init>()V
-
-    sput-object v0, Lwd/v;->b:Lwd/v;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x1
-
-    invoke-direct {p0, v0}, Lle/i;-><init>(I)V
+    .line 1
+    invoke-direct {p0}, Lwd/u0;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final getName()Ljava/lang/String;
+.method public final f(I)V
     .locals 1
-
-    const-string v0, "decodeStream"
-
-    return-object v0
-.end method
-
-.method public final getOwner()Lpe/d;
-    .locals 1
-
-    const-class v0, Landroid/graphics/BitmapFactory;
-
-    invoke-static {v0}, Lle/t;->a(Ljava/lang/Class;)Lpe/c;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final getSignature()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;"
-
-    return-object v0
-.end method
-
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
 
     .line 1
-    check-cast p1, Ljava/io/InputStream;
+    new-instance v0, Lwd/v$a$a;
 
-    .line 2
-    invoke-static {p1}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
+    invoke-direct {v0, p1}, Lwd/v$a$a;-><init>(I)V
 
-    move-result-object p1
+    invoke-virtual {p0, v0}, Lwd/u0;->a(Lwd/a;)V
 
-    return-object p1
+    return-void
+.end method
+
+.method public final g(Z)V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lwd/v$a$b;
+
+    invoke-direct {v0, p1}, Lwd/v$a$b;-><init>(Z)V
+
+    invoke-virtual {p0, v0}, Lwd/u0;->a(Lwd/a;)V
+
+    return-void
 .end method

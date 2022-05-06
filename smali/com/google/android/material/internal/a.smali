@@ -285,9 +285,9 @@
 
     .line 2
     :cond_0
-    sget-object p3, Lb4/a;->a:Landroid/animation/TimeInterpolator;
+    sget-object p3, Lc4/a;->a:Landroid/animation/TimeInterpolator;
 
-    invoke-static {p1, p0, p2, p0}, Landroidx/fragment/app/a;->a(FFFF)F
+    invoke-static {p1, p0, p2, p0}, Lo/o;->a(FFFF)F
 
     move-result p0
 
@@ -338,7 +338,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iput-boolean v1, v0, Lo4/a;->h:Z
+    iput-boolean v1, v0, Lo4/a;->i:Z
 
     .line 3
     :cond_0
@@ -365,7 +365,7 @@
     if-eqz v3, :cond_2
 
     .line 6
-    iput-boolean v1, v3, Lo4/a;->h:Z
+    iput-boolean v1, v3, Lo4/a;->i:Z
 
     .line 7
     :cond_2
@@ -444,7 +444,7 @@
     .line 1
     iget-object v0, p0, Lcom/google/android/material/internal/a;->a:Landroid/view/View;
 
-    sget-object v1, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 2
     invoke-virtual {v0}, Landroid/view/View;->getLayoutDirection()I
@@ -624,7 +624,7 @@
     sub-float v1, v0, p1
 
     .line 13
-    sget-object v2, Lb4/a;->b:Landroid/animation/TimeInterpolator;
+    sget-object v2, Lc4/a;->b:Landroid/animation/TimeInterpolator;
 
     const/4 v3, 0x0
 
@@ -641,7 +641,7 @@
     .line 16
     iget-object v1, p0, Lcom/google/android/material/internal/a;->a:Landroid/view/View;
 
-    sget-object v4, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v4, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 17
     invoke-virtual {v1}, Landroid/view/View;->postInvalidateOnAnimation()V
@@ -1053,37 +1053,37 @@
     float-to-int v0, v0
 
     .line 28
-    new-instance v3, Lcom/google/android/material/internal/g;
+    new-instance v3, Lcom/google/android/material/internal/i;
 
-    invoke-direct {v3, v1, v2, v0}, Lcom/google/android/material/internal/g;-><init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;I)V
+    invoke-direct {v3, v1, v2, v0}, Lcom/google/android/material/internal/i;-><init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;I)V
 
     .line 29
     sget-object v0, Landroid/text/TextUtils$TruncateAt;->END:Landroid/text/TextUtils$TruncateAt;
 
     .line 30
-    iput-object v0, v3, Lcom/google/android/material/internal/g;->i:Landroid/text/TextUtils$TruncateAt;
+    iput-object v0, v3, Lcom/google/android/material/internal/i;->i:Landroid/text/TextUtils$TruncateAt;
 
     .line 31
-    iput-boolean p1, v3, Lcom/google/android/material/internal/g;->h:Z
+    iput-boolean p1, v3, Lcom/google/android/material/internal/i;->h:Z
 
     .line 32
     sget-object p1, Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;
 
     .line 33
-    iput-object p1, v3, Lcom/google/android/material/internal/g;->e:Landroid/text/Layout$Alignment;
+    iput-object p1, v3, Lcom/google/android/material/internal/i;->e:Landroid/text/Layout$Alignment;
 
     .line 34
-    iput-boolean v4, v3, Lcom/google/android/material/internal/g;->g:Z
+    iput-boolean v4, v3, Lcom/google/android/material/internal/i;->g:Z
 
     .line 35
-    iput v5, v3, Lcom/google/android/material/internal/g;->f:I
+    iput v5, v3, Lcom/google/android/material/internal/i;->f:I
 
     .line 36
-    invoke-virtual {v3}, Lcom/google/android/material/internal/g;->a()Landroid/text/StaticLayout;
+    invoke-virtual {v3}, Lcom/google/android/material/internal/i;->a()Landroid/text/StaticLayout;
 
     move-result-object p1
     :try_end_0
-    .catch Lcom/google/android/material/internal/g$a; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/google/android/material/internal/i$a; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_a
 
@@ -1923,7 +1923,7 @@
     .line 35
     iget-object v0, p0, Lcom/google/android/material/internal/a;->a:Landroid/view/View;
 
-    sget-object v1, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 36
     invoke-virtual {v0}, Landroid/view/View;->postInvalidateOnAnimation()V
@@ -2005,7 +2005,7 @@
     const/4 v1, 0x1
 
     .line 12
-    iput-boolean v1, p1, Lo4/a;->h:Z
+    iput-boolean v1, p1, Lo4/a;->i:Z
 
     .line 13
     :cond_3
@@ -2090,7 +2090,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iput-boolean v1, v0, Lo4/a;->h:Z
+    iput-boolean v1, v0, Lo4/a;->i:Z
 
     .line 3
     :cond_0
@@ -2184,7 +2184,7 @@
     const/4 v1, 0x1
 
     .line 12
-    iput-boolean v1, p1, Lo4/a;->h:Z
+    iput-boolean v1, p1, Lo4/a;->i:Z
 
     .line 13
     :cond_3
@@ -2269,7 +2269,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iput-boolean v1, v0, Lo4/a;->h:Z
+    iput-boolean v1, v0, Lo4/a;->i:Z
 
     .line 3
     :cond_0
@@ -2303,7 +2303,7 @@
     const/high16 v1, 0x3f800000    # 1.0f
 
     .line 1
-    invoke-static {p1, v0, v1}, La0/a;->b(FFF)F
+    invoke-static {p1, v0, v1}, La0/a;->a(FFF)F
 
     move-result p1
 
@@ -2333,7 +2333,7 @@
     .line 2
     iget-object p1, p0, Lcom/google/android/material/internal/a;->a:Landroid/view/View;
 
-    sget-object v0, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 3
     invoke-virtual {p1}, Landroid/view/View;->postInvalidateOnAnimation()V

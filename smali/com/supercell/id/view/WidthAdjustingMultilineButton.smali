@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public h:Ljava/lang/Float;
+.field public i:Ljava/lang/Float;
 
 
 # direct methods
@@ -33,7 +33,7 @@
     const-string p1, "context"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -72,12 +72,12 @@
     const/16 v3, 0xa
 
     .line 5
-    invoke-static {v3}, Lc5/i;->c(I)F
+    invoke-static {v3}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v3
 
     .line 6
-    invoke-static {v1}, Lc5/i;->c(I)F
+    invoke-static {v1}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v4
 
@@ -182,7 +182,7 @@
     invoke-super {p0, p1, p2}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/view/WidthAdjustingMultilineButton;->h:Ljava/lang/Float;
+    iget-object p1, p0, Lcom/supercell/id/view/WidthAdjustingMultilineButton;->i:Ljava/lang/Float;
 
     if-eqz p1, :cond_0
 
@@ -206,7 +206,7 @@
     invoke-super {p0, p1, p2}, Landroidx/appcompat/widget/AppCompatButton;->setTextSize(IF)V
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/view/WidthAdjustingMultilineButton;->h:Ljava/lang/Float;
+    iget-object p1, p0, Lcom/supercell/id/view/WidthAdjustingMultilineButton;->i:Ljava/lang/Float;
 
     if-nez p1, :cond_0
 
@@ -219,7 +219,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/supercell/id/view/WidthAdjustingMultilineButton;->h:Ljava/lang/Float;
+    iput-object p1, p0, Lcom/supercell/id/view/WidthAdjustingMultilineButton;->i:Ljava/lang/Float;
 
     :cond_0
     return-void

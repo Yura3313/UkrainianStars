@@ -550,28 +550,28 @@
     check-cast v7, Landroid/app/NotificationManager;
 
     .line 14
-    new-instance v8, Lu/g$c;
+    new-instance v8, Lu/f$c;
 
     .line 15
-    invoke-direct {v8, p1, v5}, Lu/g$c;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v8, p1, v5}, Lu/f$c;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 16
-    iput-boolean v3, v8, Lu/g$c;->l:Z
+    iput-boolean v3, v8, Lu/f$c;->l:Z
 
     .line 17
-    invoke-virtual {v8, v3}, Lu/g$c;->c(Z)Lu/g$c;
+    invoke-virtual {v8, v3}, Lu/f$c;->c(Z)Lu/f$c;
 
     .line 18
-    invoke-virtual {v8, v2}, Lu/g$c;->e(Ljava/lang/CharSequence;)Lu/g$c;
+    invoke-virtual {v8, v2}, Lu/f$c;->e(Ljava/lang/CharSequence;)Lu/f$c;
 
-    new-instance v2, Lu/g$b;
+    new-instance v2, Lu/f$b;
 
-    invoke-direct {v2}, Lu/g$b;-><init>()V
+    invoke-direct {v2}, Lu/f$b;-><init>()V
 
     .line 19
-    invoke-virtual {v2, v0}, Lu/g$b;->a(Ljava/lang/CharSequence;)Lu/g$b;
+    invoke-virtual {v2, v0}, Lu/f$b;->a(Ljava/lang/CharSequence;)Lu/f$b;
 
-    invoke-virtual {v8, v2}, Lu/g$c;->i(Lu/g$d;)Lu/g$c;
+    invoke-virtual {v8, v2}, Lu/f$c;->i(Lu/f$d;)Lu/f$c;
 
     .line 20
     invoke-static {p1}, Lk2/g;->b(Landroid/content/Context;)Z
@@ -606,12 +606,12 @@
     iget v0, v0, Landroid/content/pm/ApplicationInfo;->icon:I
 
     .line 24
-    iget-object v2, v8, Lu/g$c;->q:Landroid/app/Notification;
+    iget-object v2, v8, Lu/f$c;->q:Landroid/app/Notification;
 
     iput v0, v2, Landroid/app/Notification;->icon:I
 
     .line 25
-    iput v1, v8, Lu/g$c;->h:I
+    iput v1, v8, Lu/f$c;->h:I
 
     .line 26
     invoke-static {p1}, Lk2/g;->c(Landroid/content/Context;)Z
@@ -631,11 +631,11 @@
     move-result-object v2
 
     .line 29
-    iget-object v5, v8, Lu/g$c;->b:Ljava/util/ArrayList;
+    iget-object v5, v8, Lu/f$c;->b:Ljava/util/ArrayList;
 
-    new-instance v6, Lu/g$a;
+    new-instance v6, Lu/f$a;
 
-    invoke-direct {v6, v0, v2, p3}, Lu/g$a;-><init>(ILjava/lang/CharSequence;Landroid/app/PendingIntent;)V
+    invoke-direct {v6, v0, v2, p3}, Lu/f$a;-><init>(ILjava/lang/CharSequence;Landroid/app/PendingIntent;)V
 
     invoke-virtual {v5, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -643,7 +643,7 @@
 
     .line 30
     :cond_7
-    iput-object p3, v8, Lu/g$c;->f:Landroid/app/PendingIntent;
+    iput-object p3, v8, Lu/f$c;->f:Landroid/app/PendingIntent;
 
     goto :goto_4
 
@@ -651,7 +651,7 @@
     const v2, 0x108008a
 
     .line 31
-    iget-object v5, v8, Lu/g$c;->q:Landroid/app/Notification;
+    iget-object v5, v8, Lu/f$c;->q:Landroid/app/Notification;
 
     iput v2, v5, Landroid/app/Notification;->icon:I
 
@@ -663,7 +663,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v8, v2}, Lu/g$c;->j(Ljava/lang/CharSequence;)Lu/g$c;
+    invoke-virtual {v8, v2}, Lu/f$c;->j(Ljava/lang/CharSequence;)Lu/f$c;
 
     .line 34
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -671,15 +671,15 @@
     move-result-wide v5
 
     .line 35
-    iget-object v2, v8, Lu/g$c;->q:Landroid/app/Notification;
+    iget-object v2, v8, Lu/f$c;->q:Landroid/app/Notification;
 
     iput-wide v5, v2, Landroid/app/Notification;->when:J
 
     .line 36
-    iput-object p3, v8, Lu/g$c;->f:Landroid/app/PendingIntent;
+    iput-object p3, v8, Lu/f$c;->f:Landroid/app/PendingIntent;
 
     .line 37
-    invoke-virtual {v8, v0}, Lu/g$c;->d(Ljava/lang/CharSequence;)Lu/g$c;
+    invoke-virtual {v8, v0}, Lu/f$c;->d(Ljava/lang/CharSequence;)Lu/f$c;
 
     .line 38
     :goto_4
@@ -715,7 +715,7 @@
     move-result-object v0
 
     .line 43
-    sget-object v2, Lc2/p;->a:Lm/h;
+    sget-object v2, Lc2/p;->a:Lm/g;
 
     .line 44
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -763,7 +763,7 @@
     .line 50
     :cond_a
     :goto_5
-    iput-object p3, v8, Lu/g$c;->o:Ljava/lang/String;
+    iput-object p3, v8, Lu/f$c;->o:Ljava/lang/String;
 
     goto :goto_6
 
@@ -781,7 +781,7 @@
     .line 52
     :cond_b
     :goto_6
-    invoke-virtual {v8}, Lu/g$c;->a()Landroid/app/Notification;
+    invoke-virtual {v8}, Lu/f$c;->a()Landroid/app/Notification;
 
     move-result-object p1
 

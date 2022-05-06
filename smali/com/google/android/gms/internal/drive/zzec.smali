@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final a:Landroid/os/IBinder;
+.field public final g:Landroid/os/IBinder;
 
 
 # direct methods
@@ -39,7 +39,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzec;->a:Landroid/os/IBinder;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzec;->g:Landroid/os/IBinder;
 
     return-void
 .end method
@@ -59,7 +59,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzec;->a:Landroid/os/IBinder;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzec;->g:Landroid/os/IBinder;
 
     const/4 v2, 0x0
 

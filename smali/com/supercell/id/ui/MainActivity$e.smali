@@ -20,21 +20,21 @@
     value = {
         "Lle/j;",
         "Lke/a<",
-        "Lsc/d;",
+        "Lpc/c;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/MainActivity;
+.field public final synthetic g:Lcom/supercell/id/ui/MainActivity;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/MainActivity;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/MainActivity$e;->a:Lcom/supercell/id/ui/MainActivity;
+    iput-object p1, p0, Lcom/supercell/id/ui/MainActivity$e;->g:Lcom/supercell/id/ui/MainActivity;
 
     const/4 p1, 0x0
 
@@ -49,11 +49,11 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lsc/d;
+    new-instance v0, Lpc/c;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity$e;->a:Lcom/supercell/id/ui/MainActivity;
+    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity$e;->g:Lcom/supercell/id/ui/MainActivity;
 
-    invoke-direct {v0, v1}, Lsc/d;-><init>(Lcom/supercell/id/ui/MainActivity;)V
+    invoke-direct {v0, v1}, Lpc/c;-><init>(Lcom/supercell/id/ui/MainActivity;)V
 
     return-object v0
 .end method

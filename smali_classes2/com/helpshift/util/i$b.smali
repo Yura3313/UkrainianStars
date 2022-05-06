@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroid/view/View;
+.field public final synthetic g:Landroid/view/View;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/helpshift/util/i$b;->a:Landroid/view/View;
+    iput-object p1, p0, Lcom/helpshift/util/i$b;->g:Landroid/view/View;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -36,7 +36,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/helpshift/util/i$b;->a:Landroid/view/View;
+    iget-object p1, p0, Lcom/helpshift/util/i$b;->g:Landroid/view/View;
 
     const/4 v0, 0x0
 

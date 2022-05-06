@@ -58,7 +58,7 @@
 
     .line 2
     :cond_3
-    sget-object p1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 3
     throw p1
@@ -176,7 +176,7 @@
     iget-object v2, p0, Lw6/c;->a:Lj6/b;
 
     .line 10
-    iget v2, v2, Lj6/b;->a:I
+    iget v2, v2, Lj6/b;->g:I
 
     add-int/lit8 v3, v2, -0x1
 

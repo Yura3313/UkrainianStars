@@ -105,7 +105,7 @@
     :try_start_0
     new-instance v0, Lse/g;
 
-    invoke-static {p2}, Le0/f;->j(Lde/d;)Lde/d;
+    invoke-static {p2}, Lee/d;->e(Lde/d;)Lde/d;
 
     move-result-object v2
 
@@ -123,15 +123,12 @@
 
     invoke-direct {v1, v0}, Lxe/o;-><init>(Lse/f;)V
 
-    invoke-interface {p1, v1}, Lxe/b;->m0(Lxe/d;)V
+    invoke-interface {p1, v1}, Lxe/b;->b0(Lxe/d;)V
 
     .line 6
     invoke-virtual {v0}, Lse/g;->o()Ljava/lang/Object;
 
     move-result-object p1
-
-    .line 7
-    sget-object p2, Lee/a;->COROUTINE_SUSPENDED:Lee/a;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -140,10 +137,10 @@
     :catch_0
     move-exception p1
 
-    .line 8
+    .line 7
     invoke-static {p1, p2}, Lxe/r;->a(Ljava/lang/Exception;Lde/d;)Ljava/lang/Object;
 
-    move-result-object p1
+    sget-object p1, Lee/a;->g:Lee/a;
 
     return-object p1
 .end method

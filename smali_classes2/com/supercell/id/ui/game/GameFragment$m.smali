@@ -27,14 +27,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/game/GameFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/game/GameFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/game/GameFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$m;->a:Lcom/supercell/id/ui/game/GameFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$m;->g:Lcom/supercell/id/ui/game/GameFragment;
 
     const/4 p1, 0x0
 
@@ -46,45 +46,48 @@
 
 # virtual methods
 .method public invoke()Ljava/lang/Object;
-    .locals 4
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$m;->a:Lcom/supercell/id/ui/game/GameFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$m;->g:Lcom/supercell/id/ui/game/GameFragment;
 
     invoke-static {v0}, Lcom/supercell/id/ui/game/GameFragment;->q1(Lcom/supercell/id/ui/game/GameFragment;)Ljava/lang/String;
 
     move-result-object v0
 
-    const/4 v1, 0x0
-
     if-eqz v0, :cond_0
 
-    sget-object v2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lwd/h;
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lvd/h;
 
-    move-result-object v2
+    move-result-object v1
 
-    sget-object v3, Lwd/i1;->SHOW_GAME_PASS:Lwd/i1;
+    const/4 v2, 0x7
 
-    invoke-virtual {v2, v3}, Lwd/h;->c(Lwd/i1;)Ljava/util/List;
+    invoke-virtual {v1, v2}, Lvd/h;->d(I)Ljava/util/List;
 
-    move-result-object v2
+    move-result-object v1
 
-    if-eqz v2, :cond_0
+    if-eqz v1, :cond_0
 
-    invoke-interface {v2, v0}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+    invoke-interface {v1, v0}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
     move-result v0
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    move-result-object v1
+    move-result-object v0
+
+    goto :goto_0
 
     :cond_0
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    const/4 v0, 0x0
 
-    invoke-static {v1, v0}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    :goto_0
+    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 

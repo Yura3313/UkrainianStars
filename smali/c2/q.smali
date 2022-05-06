@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final synthetic a:Landroid/content/Intent;
+.field public final synthetic g:Landroid/content/Intent;
 
-.field public final synthetic b:Landroid/app/Activity;
+.field public final synthetic h:Landroid/app/Activity;
 
-.field public final synthetic h:I
+.field public final synthetic i:I
 
 
 # direct methods
@@ -16,11 +16,11 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lc2/q;->a:Landroid/content/Intent;
+    iput-object p1, p0, Lc2/q;->g:Landroid/content/Intent;
 
-    iput-object p2, p0, Lc2/q;->b:Landroid/app/Activity;
+    iput-object p2, p0, Lc2/q;->h:Landroid/app/Activity;
 
-    iput p3, p0, Lc2/q;->h:I
+    iput p3, p0, Lc2/q;->i:I
 
     invoke-direct {p0}, Lc2/o;-><init>()V
 
@@ -33,14 +33,14 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lc2/q;->a:Landroid/content/Intent;
+    iget-object v0, p0, Lc2/q;->g:Landroid/content/Intent;
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v1, p0, Lc2/q;->b:Landroid/app/Activity;
+    iget-object v1, p0, Lc2/q;->h:Landroid/app/Activity;
 
-    iget v2, p0, Lc2/q;->h:I
+    iget v2, p0, Lc2/q;->i:I
 
     invoke-virtual {v1, v0, v2}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
 

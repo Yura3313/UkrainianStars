@@ -1,47 +1,41 @@
 .class public final Lwd/t0;
 .super Lle/j;
-.source "ProfileUtil.kt"
+.source "ShopStorage.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Lke/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lle/j;",
-        "Lke/p<",
-        "Lwd/a1;",
-        "Landroid/graphics/Bitmap;",
-        "Lbe/n;",
+        "Lke/a<",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic g:Lwd/q0;
 
-.field public final synthetic b:Landroid/content/res/Resources;
+.field public final synthetic h:Ljava/lang/String;
 
-.field public final synthetic h:Lke/p;
-
-.field public final synthetic i:Lke/p;
+.field public final synthetic i:Lqc/z;
 
 
 # direct methods
-.method public constructor <init>(ILandroid/content/res/Resources;Lke/p;Lke/p;)V
+.method public constructor <init>(Lwd/q0;Ljava/lang/String;Lqc/z;)V
     .locals 0
 
-    iput p1, p0, Lwd/t0;->a:I
+    iput-object p1, p0, Lwd/t0;->g:Lwd/q0;
 
-    iput-object p2, p0, Lwd/t0;->b:Landroid/content/res/Resources;
+    iput-object p2, p0, Lwd/t0;->h:Ljava/lang/String;
 
-    iput-object p3, p0, Lwd/t0;->h:Lke/p;
+    iput-object p3, p0, Lwd/t0;->i:Lqc/z;
 
-    iput-object p4, p0, Lwd/t0;->i:Lke/p;
-
-    const/4 p1, 0x2
+    const/4 p1, 0x0
 
     invoke-direct {p0, p1}, Lle/j;-><init>(I)V
 
@@ -50,106 +44,87 @@
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public invoke()Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    check-cast p1, Lwd/a1;
-
-    check-cast p2, Landroid/graphics/Bitmap;
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_2
-
-    if-eqz p2, :cond_1
+    iget-object v0, p0, Lwd/t0;->g:Lwd/q0;
 
     .line 2
-    iget-object p1, p0, Lwd/t0;->b:Landroid/content/res/Resources;
+    iget-object v0, v0, Lwd/q0;->d:Ljava/util/WeakHashMap;
 
     .line 3
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_0
+    monitor-enter v0
 
     .line 4
-    new-instance v0, Ly/d;
+    :try_start_0
+    iget-object v1, p0, Lwd/t0;->g:Lwd/q0;
 
-    invoke-direct {v0, p1, p2}, Ly/d;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
+    .line 5
+    iget-object v1, v1, Lwd/q0;->d:Ljava/util/WeakHashMap;
+
+    .line 6
+    invoke-virtual {v1}, Ljava/util/WeakHashMap;->keySet()Ljava/util/Set;
+
+    move-result-object v1
+
+    const-string v2, "shopItemChangedListeners.keys"
+
+    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v1}, Lbe/k;->V(Ljava/lang/Iterable;)Ljava/util/List;
+
+    move-result-object v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 7
+    monitor-exit v0
+
+    .line 8
+    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lwd/q0$c;
+
+    .line 9
+    iget-object v2, p0, Lwd/t0;->h:Ljava/lang/String;
+
+    iget-object v3, p0, Lwd/t0;->i:Lqc/z;
+
+    invoke-interface {v1, v2, v3}, Lwd/q0$c;->a(Ljava/lang/String;Lqc/z;)V
 
     goto :goto_0
 
-    .line 5
-    :cond_0
-    new-instance v0, Ly/f;
-
-    invoke-direct {v0, p1, p2}, Ly/f;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
-
-    :goto_0
-    const/4 p1, 0x1
-
-    .line 6
-    iput-boolean p1, v0, Ly/e;->k:Z
-
-    .line 7
-    iput-boolean p1, v0, Ly/e;->j:Z
-
-    .line 8
-    iget p1, v0, Ly/e;->m:I
-
-    iget p2, v0, Ly/e;->l:I
-
-    invoke-static {p1, p2}, Ljava/lang/Math;->min(II)I
-
-    move-result p1
-
-    .line 9
-    div-int/lit8 p1, p1, 0x2
-
-    int-to-float p1, p1
-
-    iput p1, v0, Ly/e;->g:F
-
     .line 10
-    iget-object p1, v0, Ly/e;->d:Landroid/graphics/Paint;
+    :cond_0
+    sget-object v0, Lae/i;->a:Lae/i;
 
-    iget-object p2, v0, Ly/e;->e:Landroid/graphics/BitmapShader;
+    return-object v0
 
-    invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
+    :catchall_0
+    move-exception v1
 
     .line 11
-    invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
+    monitor-exit v0
 
-    .line 12
-    iget-object p1, p0, Lwd/t0;->h:Lke/p;
+    goto :goto_2
 
-    iget p2, p0, Lwd/t0;->a:I
+    :goto_1
+    throw v1
 
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p2
-
-    invoke-interface {p1, p2, v0}, Lke/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 13
-    sget-object p1, Lbe/n;->a:Lbe/n;
-
-    return-object p1
-
-    :cond_1
-    const-string p1, "bitmap"
-
-    .line 14
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "$receiver"
-
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
+    :goto_2
+    goto :goto_1
 .end method

@@ -1,93 +1,96 @@
 .class public Lob/h;
-.super Lob/k;
-.source "FixedLiteralLengthHuffman.java"
+.super Ljava/lang/Object;
+.source "DecoderThread.java"
 
 
-# static fields
-.field public static final e:Lob/h;
+# instance fields
+.field public a:Lpb/d;
+
+.field public b:Landroid/os/HandlerThread;
+
+.field public c:Landroid/os/Handler;
+
+.field public d:Lob/e;
+
+.field public e:Landroid/os/Handler;
+
+.field public f:Landroid/graphics/Rect;
+
+.field public g:Z
+
+.field public final h:Ljava/lang/Object;
+
+.field public final i:Landroid/os/Handler$Callback;
+
+.field public final j:Lpb/m;
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method public constructor <init>(Lpb/d;Lob/e;Landroid/os/Handler;)V
     .locals 1
 
     .line 1
-    new-instance v0, Lob/h;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {v0}, Lob/h;-><init>()V
+    const/4 v0, 0x0
 
-    sput-object v0, Lob/h;->e:Lob/h;
+    .line 2
+    iput-boolean v0, p0, Lob/h;->g:Z
+
+    .line 3
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v0, p0, Lob/h;->h:Ljava/lang/Object;
+
+    .line 4
+    new-instance v0, Lob/h$a;
+
+    invoke-direct {v0, p0}, Lob/h$a;-><init>(Lob/h;)V
+
+    iput-object v0, p0, Lob/h;->i:Landroid/os/Handler$Callback;
+
+    .line 5
+    new-instance v0, Lob/h$b;
+
+    invoke-direct {v0, p0}, Lob/h$b;-><init>(Lob/h;)V
+
+    iput-object v0, p0, Lob/h;->j:Lpb/m;
+
+    .line 6
+    invoke-static {}, Lcom/helpshift/util/s;->r()V
+
+    .line 7
+    iput-object p1, p0, Lob/h;->a:Lpb/d;
+
+    .line 8
+    iput-object p2, p0, Lob/h;->d:Lob/e;
+
+    .line 9
+    iput-object p3, p0, Lob/h;->e:Landroid/os/Handler;
 
     return-void
 .end method
 
-.method public constructor <init>()V
-    .locals 5
 
-    const/16 v0, 0x120
-
-    new-array v1, v0, [I
-
-    const/4 v2, 0x0
-
-    :goto_0
-    const/16 v3, 0x90
-
-    const/16 v4, 0x8
-
-    if-ge v2, v3, :cond_0
+# virtual methods
+.method public final a()V
+    .locals 4
 
     .line 1
-    aput v4, v1, v2
+    iget-object v0, p0, Lob/h;->a:Lpb/d;
 
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    :goto_1
-    const/16 v3, 0x100
-
-    if-ge v2, v3, :cond_1
-
-    const/16 v3, 0x9
+    iget-object v1, p0, Lob/h;->j:Lpb/m;
 
     .line 2
-    aput v3, v1, v2
+    iget-object v2, v0, Lpb/d;->h:Landroid/os/Handler;
 
-    add-int/lit8 v2, v2, 0x1
+    new-instance v3, Lpb/c;
 
-    goto :goto_1
+    invoke-direct {v3, v0, v1}, Lpb/c;-><init>(Lpb/d;Lpb/m;)V
 
-    :cond_1
-    :goto_2
-    const/16 v3, 0x118
-
-    if-ge v2, v3, :cond_2
-
-    const/4 v3, 0x7
-
-    .line 3
-    aput v3, v1, v2
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_2
-
-    :cond_2
-    :goto_3
-    if-ge v2, v0, :cond_3
-
-    .line 4
-    aput v4, v1, v2
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_3
-
-    .line 5
-    :cond_3
-    invoke-direct {p0, v1}, Lob/k;-><init>([I)V
+    invoke-virtual {v2, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     return-void
 .end method

@@ -1,39 +1,43 @@
-.class public interface abstract Lj3/qf0;
+.class public final synthetic Lj3/qf0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lj3/yj0;
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<RequestComponentT:",
-        "Ljava/lang/Object;",
-        "ResponseT:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
+
+# static fields
+.field public static final a:Lj3/yj0;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lj3/qf0;
+
+    invoke-direct {v0}, Lj3/qf0;-><init>()V
+
+    sput-object v0, Lj3/qf0;->a:Lj3/yj0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract a(Lj3/rf0;Lj3/sf0;)Lj3/yl0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/rf0;",
-            "Lj3/sf0<",
-            "TRequestComponentT;>;)",
-            "Lj3/yl0<",
-            "TResponseT;>;"
-        }
-    .end annotation
-.end method
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
-.method public abstract b()Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TRequestComponentT;"
-        }
-    .end annotation
+    .line 1
+    check-cast p1, Lj3/vf0;
+
+    return-object p1
 .end method

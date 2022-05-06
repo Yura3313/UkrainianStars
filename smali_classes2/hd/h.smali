@@ -1,6 +1,6 @@
 .class public final Lhd/h;
 .super Lle/j;
-.source "IngameFriendsFragment.kt"
+.source "LoginEnterEmailPageFragment.kt"
 
 # interfaces
 .implements Lke/p;
@@ -11,23 +11,27 @@
     value = {
         "Lle/j;",
         "Lke/p<",
-        "Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;",
-        "Ljava/lang/Exception;",
-        "Lbe/n;",
+        "Lhd/j;",
+        "Ljava/lang/Boolean;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lhd/c;
+.field public final synthetic g:Ljava/lang/String;
+
+.field public final synthetic h:Z
 
 
 # direct methods
-.method public constructor <init>(Lhd/c;)V
+.method public constructor <init>(Ljava/lang/String;Z)V
     .locals 0
 
-    iput-object p1, p0, Lhd/h;->a:Lhd/c;
+    iput-object p1, p0, Lhd/h;->g:Ljava/lang/String;
+
+    iput-boolean p2, p0, Lhd/h;->h:Z
 
     const/4 p1, 0x2
 
@@ -39,114 +43,93 @@
 
 # virtual methods
 .method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+    .locals 7
 
     .line 1
-    check-cast p1, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
+    check-cast p1, Lhd/j;
 
-    check-cast p2, Ljava/lang/Exception;
+    check-cast p2, Ljava/lang/Boolean;
 
-    const/4 v0, 0x0
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
-    if-eqz p1, :cond_6
-
-    if-eqz p2, :cond_5
+    if-eqz p1, :cond_2
 
     .line 2
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    move-result-object v1
+    iget-object v0, p0, Lhd/h;->g:Ljava/lang/String;
 
-    if-eqz v1, :cond_0
+    iget-boolean v1, p0, Lhd/h;->h:Z
 
-    sget-object v2, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    invoke-virtual {p2, v0, v1}, Lcom/supercell/id/SupercellId;->setPendingLoginWithEmail$supercellId_release(Ljava/lang/String;Z)V
 
     .line 3
-    invoke-virtual {v1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->E(Ljava/lang/Exception;Lke/l;)V
-
-    .line 4
-    :cond_0
-    iget-object p2, p1, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;->k0:Ljava/util/List;
-
-    if-eqz p2, :cond_4
-
-    .line 5
-    new-instance v1, Ljava/util/ArrayList;
-
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
-
-    .line 6
-    invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object p2
 
-    :cond_1
-    :goto_0
-    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
+    .line 4
+    iget-object v0, p2, Lvd/r;->m:Lcom/supercell/titan/h;
 
-    move-result v2
+    .line 5
+    iget-boolean p2, p0, Lhd/h;->h:Z
 
-    if-eqz v2, :cond_3
+    if-eqz p2, :cond_0
 
-    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    .line 7
-    check-cast v2, Lwd/j1;
-
-    .line 8
-    instance-of v3, v2, Lhd/c;
-
-    if-nez v3, :cond_2
-
-    move-object v2, v0
-
-    :cond_2
-    check-cast v2, Lhd/c;
-
-    if-eqz v2, :cond_1
-
-    .line 9
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    const-string p2, "true"
 
     goto :goto_0
 
-    .line 10
-    :cond_3
-    iget-object p2, p0, Lhd/h;->a:Lhd/c;
+    :cond_0
+    const-string p2, "false"
 
-    invoke-static {v1, p2}, Lce/l;->a0(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
+    :goto_0
+    move-object v3, p2
 
-    move-result-object p2
+    const/4 v4, 0x0
 
-    .line 11
-    invoke-virtual {p1, p2}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;->r1(Ljava/util/List;)V
+    const/4 v5, 0x0
 
-    .line 12
-    :cond_4
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    const/16 v6, 0x18
+
+    const-string v1, "Remember me"
+
+    const-string v2, "Selection"
+
+    invoke-static/range {v0 .. v6}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+
+    .line 6
+    iget-object p2, p0, Lhd/h;->g:Ljava/lang/String;
+
+    invoke-virtual {p1, p2}, Lhd/u;->k1(Ljava/lang/String;)V
+
+    .line 7
+    iget-boolean p2, p0, Lhd/h;->h:Z
+
+    invoke-virtual {p1, p2}, Lhd/u;->l1(Z)V
+
+    .line 8
+    invoke-virtual {p1}, Lhd/u;->g1()Lcom/supercell/id/ui/login/LoginFlowFragment;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p1}, Lcom/supercell/id/ui/FlowFragment;->s1()V
+
+    .line 9
+    :cond_1
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
-    :cond_5
-    const-string p1, "it"
-
-    .line 13
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_6
+    :cond_2
     const-string p1, "$receiver"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    .line 10
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    goto :goto_2
+    const/4 p1, 0x0
 
-    :goto_1
-    throw v0
-
-    :goto_2
-    goto :goto_1
+    throw p1
 .end method

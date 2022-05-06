@@ -3,48 +3,30 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/qp0;
+.implements Lj3/dn0;
 
 
-# static fields
-.field public static final d:Ljava/lang/ThreadLocal;
+# instance fields
+.field public final a:Lcom/google/android/gms/internal/ads/v1;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/lang/ThreadLocal<",
-            "Ljavax/crypto/Cipher;",
+            "Lcom/google/android/gms/internal/ads/v1<",
+            "Lj3/dn0;",
             ">;"
         }
     .end annotation
 .end field
 
 
-# instance fields
-.field public final a:Ljavax/crypto/spec/SecretKeySpec;
-
-.field public final b:I
-
-.field public final c:I
-
-
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lj3/po0;
-
-    invoke-direct {v0}, Lj3/po0;-><init>()V
-
-    sput-object v0, Lj3/mo0;->d:Ljava/lang/ThreadLocal;
-
-    return-void
-.end method
-
-.method public constructor <init>([BI)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/v1;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
         value = {
-            Ljava/security/GeneralSecurityException;
+            "(",
+            "Lcom/google/android/gms/internal/ads/v1<",
+            "Lj3/dn0;",
+            ">;)V"
         }
     .end annotation
 
@@ -52,176 +34,63 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    array-length v0, p1
-
-    invoke-static {v0}, Lj3/up0;->a(I)V
-
-    .line 3
-    new-instance v0, Ljavax/crypto/spec/SecretKeySpec;
-
-    const-string v1, "AES"
-
-    invoke-direct {v0, p1, v1}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
-
-    iput-object v0, p0, Lj3/mo0;->a:Ljavax/crypto/spec/SecretKeySpec;
-
-    .line 4
-    sget-object p1, Lj3/mo0;->d:Ljava/lang/ThreadLocal;
-
-    invoke-virtual {p1}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljavax/crypto/Cipher;
-
-    invoke-virtual {p1}, Ljavax/crypto/Cipher;->getBlockSize()I
-
-    move-result p1
-
-    iput p1, p0, Lj3/mo0;->c:I
-
-    const/16 v0, 0xc
-
-    if-lt p2, v0, :cond_0
-
-    if-gt p2, p1, :cond_0
-
-    .line 5
-    iput p2, p0, Lj3/mo0;->b:I
+    iput-object p1, p0, Lj3/mo0;->a:Lcom/google/android/gms/internal/ads/v1;
 
     return-void
-
-    .line 6
-    :cond_0
-    new-instance p1, Ljava/security/GeneralSecurityException;
-
-    const-string p2, "invalid IV size"
-
-    invoke-direct {p1, p2}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 
 # virtual methods
-.method public final a([B)[B
-    .locals 9
+.method public final a([B[B)[B
+    .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/GeneralSecurityException;
         }
     .end annotation
 
+    const/4 v0, 0x2
+
+    new-array v0, v0, [[B
+
     .line 1
-    array-length v0, p1
-
-    iget v1, p0, Lj3/mo0;->b:I
-
-    const v2, 0x7fffffff
-
-    sub-int v3, v2, v1
-
-    if-gt v0, v3, :cond_1
+    iget-object v1, p0, Lj3/mo0;->a:Lcom/google/android/gms/internal/ads/v1;
 
     .line 2
-    array-length v0, p1
-
-    add-int/2addr v0, v1
-
-    new-array v0, v0, [B
+    iget-object v1, v1, Lcom/google/android/gms/internal/ads/v1;->b:Lj3/nn0;
 
     .line 3
-    invoke-static {v1}, Lj3/tp0;->a(I)[B
+    invoke-virtual {v1}, Lj3/nn0;->a()[B
 
     move-result-object v1
 
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    const/4 v1, 0x1
+
+    iget-object v2, p0, Lj3/mo0;->a:Lcom/google/android/gms/internal/ads/v1;
+
     .line 4
-    iget v2, p0, Lj3/mo0;->b:I
-
-    const/4 v3, 0x0
-
-    invoke-static {v1, v3, v0, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    iget-object v2, v2, Lcom/google/android/gms/internal/ads/v1;->b:Lj3/nn0;
 
     .line 5
-    array-length v8, p1
-
-    iget v7, p0, Lj3/mo0;->b:I
+    iget-object v2, v2, Lj3/nn0;->a:Ljava/lang/Object;
 
     .line 6
-    sget-object v2, Lj3/mo0;->d:Ljava/lang/ThreadLocal;
+    check-cast v2, Lj3/dn0;
 
-    invoke-virtual {v2}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
+    invoke-interface {v2, p1, p2}, Lj3/dn0;->a([B[B)[B
 
-    move-result-object v2
+    move-result-object p1
 
-    check-cast v2, Ljavax/crypto/Cipher;
+    aput-object p1, v0, v1
 
     .line 7
-    iget v4, p0, Lj3/mo0;->c:I
+    invoke-static {v0}, Lj3/s5;->j([[B)[B
 
-    new-array v4, v4, [B
+    move-result-object p1
 
-    .line 8
-    iget v5, p0, Lj3/mo0;->b:I
-
-    invoke-static {v1, v3, v4, v3, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 9
-    new-instance v1, Ljavax/crypto/spec/IvParameterSpec;
-
-    invoke-direct {v1, v4}, Ljavax/crypto/spec/IvParameterSpec;-><init>([B)V
-
-    const/4 v3, 0x1
-
-    .line 10
-    iget-object v4, p0, Lj3/mo0;->a:Ljavax/crypto/spec/SecretKeySpec;
-
-    invoke-virtual {v2, v3, v4, v1}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
-
-    const/4 v4, 0x0
-
-    move-object v3, p1
-
-    move v5, v8
-
-    move-object v6, v0
-
-    .line 11
-    invoke-virtual/range {v2 .. v7}, Ljavax/crypto/Cipher;->doFinal([BII[BI)I
-
-    move-result p1
-
-    if-ne p1, v8, :cond_0
-
-    return-object v0
-
-    .line 12
-    :cond_0
-    new-instance p1, Ljava/security/GeneralSecurityException;
-
-    const-string v0, "stored output\'s length does not match input\'s length"
-
-    invoke-direct {p1, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    .line 13
-    :cond_1
-    new-instance p1, Ljava/security/GeneralSecurityException;
-
-    iget v0, p0, Lj3/mo0;->b:I
-
-    sub-int/2addr v2, v0
-
-    const/16 v0, 0x2b
-
-    const-string v1, "plaintext length can not exceed "
-
-    invoke-static {v0, v1, v2}, Lb0/c;->b(ILjava/lang/String;I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-direct {p1, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p1
+    return-object p1
 .end method

@@ -22,14 +22,14 @@
         "Lke/a<",
         "Ljava/util/List<",
         "+",
-        "Lwd/w1;",
+        "Lvd/x1;",
         ">;>;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/ui/profile/ProfileFragment$h;
+.field public static final g:Lcom/supercell/id/ui/profile/ProfileFragment$h;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/profile/ProfileFragment$h;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/profile/ProfileFragment$h;->a:Lcom/supercell/id/ui/profile/ProfileFragment$h;
+    sput-object v0, Lcom/supercell/id/ui/profile/ProfileFragment$h;->g:Lcom/supercell/id/ui/profile/ProfileFragment$h;
 
     return-void
 .end method
@@ -61,10 +61,10 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/supercell/id/ui/profile/ProfileFragment;->p0:Lcom/supercell/id/ui/profile/ProfileFragment;
+    sget-object v0, Lcom/supercell/id/ui/profile/ProfileFragment;->q0:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     .line 2
-    sget-object v0, Lcom/supercell/id/ui/profile/ProfileFragment;->o0:Ljava/util/List;
+    sget-object v0, Lcom/supercell/id/ui/profile/ProfileFragment;->p0:Ljava/util/List;
 
     return-object v0
 .end method

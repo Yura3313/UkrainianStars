@@ -76,7 +76,7 @@
 
     check-cast v1, Landroid/graphics/drawable/VectorDrawable;
 
-    iput-object v1, v0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iput-object v1, v0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method
@@ -98,7 +98,7 @@
 
     check-cast p1, Landroid/graphics/drawable/VectorDrawable;
 
-    iput-object p1, v0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iput-object p1, v0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method
@@ -121,7 +121,7 @@
 
     check-cast p1, Landroid/graphics/drawable/VectorDrawable;
 
-    iput-object p1, v0, Lw0/g;->a:Landroid/graphics/drawable/Drawable;
+    iput-object p1, v0, Lw0/g;->g:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method

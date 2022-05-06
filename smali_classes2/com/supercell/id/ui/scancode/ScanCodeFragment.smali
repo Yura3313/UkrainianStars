@@ -13,17 +13,17 @@
 
 
 # static fields
-.field public static final synthetic o0:I
+.field public static final synthetic p0:I
 
 
 # instance fields
-.field public i0:Z
-
 .field public j0:Z
 
 .field public k0:Z
 
-.field public final l0:Landroidx/activity/result/b;
+.field public l0:Z
+
+.field public final m0:Landroidx/activity/result/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroidx/activity/result/b<",
@@ -33,9 +33,9 @@
     .end annotation
 .end field
 
-.field public final m0:Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
+.field public final n0:Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
 
-.field public n0:Ljava/util/HashMap;
+.field public o0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -60,14 +60,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->l0:Landroidx/activity/result/b;
+    iput-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->m0:Landroidx/activity/result/b;
 
     .line 5
     new-instance v0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;-><init>(Lcom/supercell/id/ui/scancode/ScanCodeFragment;)V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->m0:Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
+    iput-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->n0:Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
 
     return-void
 .end method
@@ -77,7 +77,7 @@
 .method public W0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->n0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->o0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -107,7 +107,7 @@
     const-string p1, "inflater"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -120,7 +120,7 @@
     invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->i0()V
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->n0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->o0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -134,14 +134,14 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->k0:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->l0:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->k0:Z
+    iput-boolean v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->l0:Z
 
     .line 3
     sget v0, Lcom/supercell/id/R$id;->camera_view:I
@@ -158,7 +158,7 @@
     const/4 v0, 0x1
 
     .line 4
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     return-void
 .end method
@@ -169,7 +169,7 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->y()Landroid/content/Context;
@@ -179,14 +179,14 @@
     if-eqz v1, :cond_8
 
     .line 3
-    invoke-static {v1}, Lcom/helpshift/util/s;->l(Landroid/content/Context;)Z
+    invoke-static {v1}, Lcom/helpshift/util/s;->n(Landroid/content/Context;)Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
     .line 4
-    invoke-static {p0}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p0}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
@@ -198,7 +198,7 @@
 
     const-string v2, "generic"
 
-    invoke-virtual {v0, v2, v1}, Lcom/supercell/id/ui/MainActivity;->F(Ljava/lang/String;Lke/l;)V
+    invoke-virtual {v0, v2, v1}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/String;Lke/l;)V
 
     goto :goto_0
 
@@ -213,17 +213,17 @@
     if-eqz v1, :cond_6
 
     .line 6
-    iget-boolean v1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->i0:Z
+    iget-boolean v1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->j0:Z
 
     const/4 v3, 0x0
 
     if-nez v1, :cond_3
 
     .line 7
-    iput-boolean v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->i0:Z
+    iput-boolean v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->j0:Z
 
     .line 8
-    iget-object v1, p0, Landroidx/fragment/app/Fragment;->y:Landroidx/fragment/app/w;
+    iget-object v1, p0, Landroidx/fragment/app/Fragment;->z:Landroidx/fragment/app/w;
 
     if-eqz v1, :cond_1
 
@@ -236,7 +236,7 @@
     if-eqz v3, :cond_2
 
     .line 10
-    invoke-static {p0}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p0}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
@@ -248,10 +248,10 @@
 
     .line 11
     :cond_2
-    iput-boolean v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->j0:Z
+    iput-boolean v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->k0:Z
 
     .line 12
-    iget-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->l0:Landroidx/activity/result/b;
+    iget-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->m0:Landroidx/activity/result/b;
 
     const/4 v1, 0x0
 
@@ -262,12 +262,12 @@
 
     .line 14
     :cond_3
-    iget-boolean v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->j0:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->k0:Z
 
     if-nez v0, :cond_7
 
     .line 15
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->y:Landroidx/fragment/app/w;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->z:Landroidx/fragment/app/w;
 
     if-eqz v0, :cond_4
 
@@ -280,7 +280,7 @@
     if-eqz v3, :cond_5
 
     .line 17
-    invoke-static {p0}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p0}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
@@ -292,7 +292,7 @@
 
     .line 18
     :cond_5
-    invoke-static {p0}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p0}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
@@ -304,12 +304,12 @@
 
     .line 19
     :cond_6
-    iget-boolean v1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->k0:Z
+    iget-boolean v1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->l0:Z
 
     if-nez v1, :cond_7
 
     .line 20
-    iput-boolean v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->k0:Z
+    iput-boolean v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->l0:Z
 
     .line 21
     sget v0, Lcom/supercell/id/R$id;->camera_view:I
@@ -327,12 +327,12 @@
     :goto_0
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
     .line 23
-    iget-object v0, v0, Lwd/r;->m:La2/a;
+    iget-object v0, v0, Lvd/r;->m:Lcom/supercell/titan/h;
 
     .line 24
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -344,7 +344,7 @@
 .method public o1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->n0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->o0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -352,10 +352,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->n0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->o0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->n0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->o0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -370,7 +370,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -384,7 +384,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->n0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->o0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -410,15 +410,15 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->m0:Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
+    iget-object v1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->n0:Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
+
+    const/4 v2, 0x2
 
     .line 2
-    sget-object v2, Lcom/journeyapps/barcodescanner/BarcodeView$b;->SINGLE:Lcom/journeyapps/barcodescanner/BarcodeView$b;
-
-    iput-object v2, v0, Lcom/journeyapps/barcodescanner/BarcodeView;->G:Lcom/journeyapps/barcodescanner/BarcodeView$b;
+    iput v2, v0, Lcom/journeyapps/barcodescanner/BarcodeView;->H:I
 
     .line 3
-    iput-object v1, v0, Lcom/journeyapps/barcodescanner/BarcodeView;->H:Lqb/a;
+    iput-object v1, v0, Lcom/journeyapps/barcodescanner/BarcodeView;->I:Lob/a;
 
     .line 4
     invoke-virtual {v0}, Lcom/journeyapps/barcodescanner/BarcodeView;->j()V
@@ -465,12 +465,12 @@
     move-result-object v1
 
     .line 3
-    new-instance v2, Luc/p;
+    new-instance v2, Lrc/p;
 
-    invoke-direct {v2}, Luc/p;-><init>()V
+    invoke-direct {v2}, Lrc/p;-><init>()V
 
     .line 4
-    iget-object v3, v2, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v3, v2, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz v3, :cond_0
 
@@ -526,7 +526,7 @@
     aput-object v0, v6, v4
 
     .line 10
-    invoke-static {v6}, Landroidx/savedstate/d;->b([Ljava/lang/Object;)Ljava/util/ArrayList;
+    invoke-static {v6}, Lb5/m;->d([Ljava/lang/Object;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -541,7 +541,7 @@
     aput-object v1, v0, v4
 
     .line 11
-    invoke-static {v0}, Landroidx/savedstate/d;->b([Ljava/lang/Object;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lb5/m;->d([Ljava/lang/Object;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -563,7 +563,7 @@
     invoke-direct {v0, p1}, Lcom/supercell/id/ui/scancode/ScanCodeFragment$e;-><init>(Lcom/supercell/id/ui/MainActivity;)V
 
     .line 15
-    iput-object v0, v2, Luc/p;->x0:Lke/l;
+    iput-object v0, v2, Lrc/p;->y0:Lke/l;
 
     .line 16
     new-instance v0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$f;
@@ -571,12 +571,12 @@
     invoke-direct {v0, p1}, Lcom/supercell/id/ui/scancode/ScanCodeFragment$f;-><init>(Lcom/supercell/id/ui/MainActivity;)V
 
     .line 17
-    iput-object v0, v2, Luc/b;->v0:Lke/l;
+    iput-object v0, v2, Lrc/c;->w0:Lke/l;
 
     const-string v0, "popupDialog"
 
     .line 18
-    invoke-virtual {p1, v2, v0}, Lcom/supercell/id/ui/MainActivity;->H(Luc/d;Ljava/lang/String;)V
+    invoke-virtual {p1, v2, v0}, Lcom/supercell/id/ui/MainActivity;->I(Lrc/e;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -619,12 +619,12 @@
     move-result-object v1
 
     .line 3
-    new-instance v2, Luc/p;
+    new-instance v2, Lrc/p;
 
-    invoke-direct {v2}, Luc/p;-><init>()V
+    invoke-direct {v2}, Lrc/p;-><init>()V
 
     .line 4
-    iget-object v3, v2, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v3, v2, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz v3, :cond_0
 
@@ -680,7 +680,7 @@
     aput-object v0, v6, v4
 
     .line 10
-    invoke-static {v6}, Landroidx/savedstate/d;->b([Ljava/lang/Object;)Ljava/util/ArrayList;
+    invoke-static {v6}, Lb5/m;->d([Ljava/lang/Object;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -695,7 +695,7 @@
     aput-object v1, v0, v4
 
     .line 11
-    invoke-static {v0}, Landroidx/savedstate/d;->b([Ljava/lang/Object;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lb5/m;->d([Ljava/lang/Object;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -717,7 +717,7 @@
     invoke-direct {v0, p0, p1}, Lcom/supercell/id/ui/scancode/ScanCodeFragment$g;-><init>(Lcom/supercell/id/ui/scancode/ScanCodeFragment;Lcom/supercell/id/ui/MainActivity;)V
 
     .line 15
-    iput-object v0, v2, Luc/p;->x0:Lke/l;
+    iput-object v0, v2, Lrc/p;->y0:Lke/l;
 
     .line 16
     new-instance v0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$h;
@@ -725,12 +725,12 @@
     invoke-direct {v0, p0, p1}, Lcom/supercell/id/ui/scancode/ScanCodeFragment$h;-><init>(Lcom/supercell/id/ui/scancode/ScanCodeFragment;Lcom/supercell/id/ui/MainActivity;)V
 
     .line 17
-    iput-object v0, v2, Luc/b;->v0:Lke/l;
+    iput-object v0, v2, Lrc/c;->w0:Lke/l;
 
     const-string v0, "popupDialog"
 
     .line 18
-    invoke-virtual {p1, v2, v0}, Lcom/supercell/id/ui/MainActivity;->H(Luc/d;Ljava/lang/String;)V
+    invoke-virtual {p1, v2, v0}, Lcom/supercell/id/ui/MainActivity;->I(Lrc/e;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -754,19 +754,19 @@
 
     const-string p2, "camera_view"
 
-    invoke-static {p1, p2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    new-instance p2, Lqb/i;
+    new-instance p2, Lob/i;
 
-    sget-object v0, Lc6/a;->QR_CODE:Lc6/a;
+    sget-object v0, Lc6/a;->r:Lc6/a;
 
-    invoke-static {v0}, Landroidx/savedstate/d;->u(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lb5/m;->l(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
-    invoke-direct {p2, v0}, Lqb/i;-><init>(Ljava/util/Collection;)V
+    invoke-direct {p2, v0}, Lob/i;-><init>(Ljava/util/Collection;)V
 
-    invoke-virtual {p1, p2}, Lcom/journeyapps/barcodescanner/BarcodeView;->setDecoderFactory(Lqb/f;)V
+    invoke-virtual {p1, p2}, Lcom/journeyapps/barcodescanner/BarcodeView;->setDecoderFactory(Lob/f;)V
 
     .line 3
     invoke-virtual {p0}, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->p1()V
@@ -777,7 +777,7 @@
     const-string p1, "view"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

@@ -14,9 +14,9 @@
 
 
 # instance fields
-.field public final a:Ly4/b;
+.field public final g:Ly4/b;
 
-.field public final b:Lcom/google/android/play/core/tasks/i;
+.field public final h:Lcom/google/android/play/core/tasks/i;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/android/play/core/tasks/i<",
@@ -25,7 +25,7 @@
     .end annotation
 .end field
 
-.field public final synthetic h:Lcom/google/android/play/core/appupdate/m;
+.field public final synthetic i:Lcom/google/android/play/core/appupdate/m;
 
 
 # direct methods
@@ -40,20 +40,20 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/google/android/play/core/appupdate/j;->h:Lcom/google/android/play/core/appupdate/m;
+    iput-object p1, p0, Lcom/google/android/play/core/appupdate/j;->i:Lcom/google/android/play/core/appupdate/m;
 
     invoke-direct {p0}, Lcom/google/android/play/core/internal/o;-><init>()V
 
-    iput-object p2, p0, Lcom/google/android/play/core/appupdate/j;->a:Ly4/b;
+    iput-object p2, p0, Lcom/google/android/play/core/appupdate/j;->g:Ly4/b;
 
-    iput-object p3, p0, Lcom/google/android/play/core/appupdate/j;->b:Lcom/google/android/play/core/tasks/i;
+    iput-object p3, p0, Lcom/google/android/play/core/appupdate/j;->h:Lcom/google/android/play/core/tasks/i;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public G(Landroid/os/Bundle;)V
+.method public H(Landroid/os/Bundle;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -61,13 +61,13 @@
         }
     .end annotation
 
-    iget-object p1, p0, Lcom/google/android/play/core/appupdate/j;->h:Lcom/google/android/play/core/appupdate/m;
+    iget-object p1, p0, Lcom/google/android/play/core/appupdate/j;->i:Lcom/google/android/play/core/appupdate/m;
 
     iget-object p1, p1, Lcom/google/android/play/core/appupdate/m;->a:Ly4/l;
 
     invoke-virtual {p1}, Ly4/l;->a()V
 
-    iget-object p1, p0, Lcom/google/android/play/core/appupdate/j;->a:Ly4/b;
+    iget-object p1, p0, Lcom/google/android/play/core/appupdate/j;->g:Ly4/b;
 
     const/4 v0, 0x0
 
@@ -83,7 +83,7 @@
     return-void
 .end method
 
-.method public g(Landroid/os/Bundle;)V
+.method public h(Landroid/os/Bundle;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -91,13 +91,13 @@
         }
     .end annotation
 
-    iget-object p1, p0, Lcom/google/android/play/core/appupdate/j;->h:Lcom/google/android/play/core/appupdate/m;
+    iget-object p1, p0, Lcom/google/android/play/core/appupdate/j;->i:Lcom/google/android/play/core/appupdate/m;
 
     iget-object p1, p1, Lcom/google/android/play/core/appupdate/m;->a:Ly4/l;
 
     invoke-virtual {p1}, Ly4/l;->a()V
 
-    iget-object p1, p0, Lcom/google/android/play/core/appupdate/j;->a:Ly4/b;
+    iget-object p1, p0, Lcom/google/android/play/core/appupdate/j;->g:Ly4/b;
 
     const/4 v0, 0x0
 

@@ -99,11 +99,11 @@
     const/4 v0, 0x1
 
     .line 1
-    invoke-static {p0, v0}, Ly/b;->a(Ljava/lang/String;I)I
+    invoke-static {p0, v0}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v0
 
-    invoke-static {p1, v0}, Ly/b;->a(Ljava/lang/String;I)I
+    invoke-static {p1, v0}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v0
 

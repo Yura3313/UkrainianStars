@@ -1,109 +1,61 @@
 .class public final Lvd/e;
-.super Lle/j;
-.source "YoungPlayerRegisterEnterPinPageFragment.kt"
-
-# interfaces
-.implements Lke/p;
+.super Landroid/text/style/ClickableSpan;
+.source "Spannables.kt"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lvd/i;",
-        "Ljava/lang/String;",
-        "Lbe/n;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final a:Lvd/e;
+# instance fields
+.field public final g:Lke/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lke/a<",
+            "Lae/i;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lke/a;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lke/a<",
+            "Lae/i;",
+            ">;)V"
+        }
+    .end annotation
 
-    new-instance v0, Lvd/e;
+    .line 1
+    invoke-direct {p0}, Landroid/text/style/ClickableSpan;-><init>()V
 
-    invoke-direct {v0}, Lvd/e;-><init>()V
-
-    sput-object v0, Lvd/e;->a:Lvd/e;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    iput-object p1, p0, Lvd/e;->g:Lke/a;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    check-cast p1, Lvd/i;
-
-    check-cast p2, Ljava/lang/String;
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_2
-
-    if-eqz p2, :cond_1
-
-    .line 2
-    sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->clearPendingRegistration$supercellId_release()V
-
-    .line 3
-    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->updateSharedServices$supercellId_release()V
-
-    .line 4
-    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
-
-    move-result-object p2
-
-    invoke-virtual {p2}, Lwd/r;->m()Lse/h0;
-
-    .line 5
-    invoke-virtual {p1}, Lvd/j;->e1()Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;
-
-    move-result-object p1
+.method public onClick(Landroid/view/View;)V
+    .locals 0
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p1}, Lcom/supercell/id/ui/FlowFragment;->s1()V
+    .line 1
+    iget-object p1, p0, Lvd/e;->g:Lke/a;
 
-    .line 6
+    invoke-interface {p1}, Lke/a;->invoke()Ljava/lang/Object;
+
+    return-void
+
     :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    const-string p1, "widget"
 
-    return-object p1
+    .line 2
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    :cond_1
-    const-string p1, "it"
+    const/4 p1, 0x0
 
-    .line 7
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "$receiver"
-
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
+    throw p1
 .end method

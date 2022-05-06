@@ -26,9 +26,9 @@
 
 
 # instance fields
-.field public a:Landroid/os/Messenger;
+.field public g:Landroid/os/Messenger;
 
-.field public b:Lcom/google/firebase/iid/zzw;
+.field public h:Lcom/google/firebase/iid/zzw;
 
 
 # direct methods
@@ -36,9 +36,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lw5/e0;
+    new-instance v0, Lw5/c0;
 
-    invoke-direct {v0}, Lw5/e0;-><init>()V
+    invoke-direct {v0}, Lw5/c0;-><init>()V
 
     sput-object v0, Lcom/google/firebase/iid/zzl;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -63,7 +63,7 @@
 
     invoke-direct {v0, p1}, Landroid/os/Messenger;-><init>(Landroid/os/IBinder;)V
 
-    iput-object v0, p0, Lcom/google/firebase/iid/zzl;->a:Landroid/os/Messenger;
+    iput-object v0, p0, Lcom/google/firebase/iid/zzl;->g:Landroid/os/Messenger;
 
     return-void
 
@@ -73,13 +73,36 @@
 
     invoke-direct {v0, p1}, Lcom/google/firebase/iid/zzw;-><init>(Landroid/os/IBinder;)V
 
-    iput-object v0, p0, Lcom/google/firebase/iid/zzl;->b:Lcom/google/firebase/iid/zzw;
+    iput-object v0, p0, Lcom/google/firebase/iid/zzl;->h:Lcom/google/firebase/iid/zzw;
 
     return-void
 .end method
 
 
 # virtual methods
+.method public final b()Landroid/os/IBinder;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/firebase/iid/zzl;->g:Landroid/os/Messenger;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroid/os/Messenger;->getBinder()Landroid/os/IBinder;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_0
+    iget-object v0, p0, Lcom/google/firebase/iid/zzl;->h:Lcom/google/firebase/iid/zzw;
+
+    .line 2
+    iget-object v0, v0, Lcom/google/firebase/iid/zzw;->g:Landroid/os/IBinder;
+
+    return-object v0
+.end method
+
 .method public describeContents()I
     .locals 1
 
@@ -100,13 +123,13 @@
     .line 1
     :cond_0
     :try_start_0
-    invoke-virtual {p0}, Lcom/google/firebase/iid/zzl;->h()Landroid/os/IBinder;
+    invoke-virtual {p0}, Lcom/google/firebase/iid/zzl;->b()Landroid/os/IBinder;
 
     move-result-object v1
 
     check-cast p1, Lcom/google/firebase/iid/zzl;
 
-    invoke-virtual {p1}, Lcom/google/firebase/iid/zzl;->h()Landroid/os/IBinder;
+    invoke-virtual {p1}, Lcom/google/firebase/iid/zzl;->b()Landroid/os/IBinder;
 
     move-result-object p1
 
@@ -122,34 +145,11 @@
     return v0
 .end method
 
-.method public final h()Landroid/os/IBinder;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/firebase/iid/zzl;->a:Landroid/os/Messenger;
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Landroid/os/Messenger;->getBinder()Landroid/os/IBinder;
-
-    move-result-object v0
-
-    return-object v0
-
-    :cond_0
-    iget-object v0, p0, Lcom/google/firebase/iid/zzl;->b:Lcom/google/firebase/iid/zzw;
-
-    .line 2
-    iget-object v0, v0, Lcom/google/firebase/iid/zzw;->a:Landroid/os/IBinder;
-
-    return-object v0
-.end method
-
 .method public hashCode()I
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/firebase/iid/zzl;->h()Landroid/os/IBinder;
+    invoke-virtual {p0}, Lcom/google/firebase/iid/zzl;->b()Landroid/os/IBinder;
 
     move-result-object v0
 
@@ -160,7 +160,7 @@
     return v0
 .end method
 
-.method public final j(Landroid/os/Message;)V
+.method public final i(Landroid/os/Message;)V
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -169,7 +169,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/firebase/iid/zzl;->a:Landroid/os/Messenger;
+    iget-object v0, p0, Lcom/google/firebase/iid/zzl;->g:Landroid/os/Messenger;
 
     if-eqz v0, :cond_0
 
@@ -180,7 +180,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/google/firebase/iid/zzl;->b:Lcom/google/firebase/iid/zzw;
+    iget-object v0, p0, Lcom/google/firebase/iid/zzl;->h:Lcom/google/firebase/iid/zzw;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -206,7 +206,7 @@
 
     .line 8
     :try_start_0
-    iget-object p1, v0, Lcom/google/firebase/iid/zzw;->a:Landroid/os/IBinder;
+    iget-object p1, v0, Lcom/google/firebase/iid/zzw;->g:Landroid/os/IBinder;
 
     const/4 v0, 0x0
 
@@ -232,7 +232,7 @@
     .locals 0
 
     .line 1
-    iget-object p2, p0, Lcom/google/firebase/iid/zzl;->a:Landroid/os/Messenger;
+    iget-object p2, p0, Lcom/google/firebase/iid/zzl;->g:Landroid/os/Messenger;
 
     if-eqz p2, :cond_0
 
@@ -247,10 +247,10 @@
 
     .line 3
     :cond_0
-    iget-object p2, p0, Lcom/google/firebase/iid/zzl;->b:Lcom/google/firebase/iid/zzw;
+    iget-object p2, p0, Lcom/google/firebase/iid/zzl;->h:Lcom/google/firebase/iid/zzw;
 
     .line 4
-    iget-object p2, p2, Lcom/google/firebase/iid/zzw;->a:Landroid/os/IBinder;
+    iget-object p2, p2, Lcom/google/firebase/iid/zzw;->g:Landroid/os/IBinder;
 
     .line 5
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V

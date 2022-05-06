@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/game/donate/DonateFragment$a;->i(Lwd/k1$a;ILwd/j1;)V
+    value = Lcom/supercell/id/ui/game/donate/DonateFragment$a;->i(Lvd/k1$a;ILvd/j1;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,33 +22,33 @@
         "Lke/p<",
         "Ljava/util/Observable;",
         "Ljava/lang/Object;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
+.field public final synthetic g:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
 
-.field public final synthetic b:Ljava/lang/String;
+.field public final synthetic h:Ljava/lang/String;
 
-.field public final synthetic h:Lwd/j1;
+.field public final synthetic i:Lvd/j1;
 
-.field public final synthetic i:Landroid/view/View;
+.field public final synthetic j:Landroid/view/View;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/game/donate/DonateFragment$a;Ljava/lang/String;Lwd/j1;Landroid/view/View;)V
+.method public constructor <init>(Lcom/supercell/id/ui/game/donate/DonateFragment$a;Ljava/lang/String;Lvd/j1;Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->a:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->g:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->h:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->h:Lwd/j1;
+    iput-object p3, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->i:Lvd/j1;
 
-    iput-object p4, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->i:Landroid/view/View;
+    iput-object p4, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->j:Landroid/view/View;
 
     const/4 p1, 0x2
 
@@ -66,16 +66,16 @@
     check-cast p1, Ljava/util/Observable;
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->a:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->g:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
 
     .line 3
-    iget-object p1, p1, Lwd/q;->f:Landroidx/fragment/app/Fragment;
+    iget-object p1, p1, Lvd/q;->f:Landroidx/fragment/app/Fragment;
 
     .line 4
     check-cast p1, Lcom/supercell/id/ui/game/donate/DonateFragment;
 
     .line 5
-    iget-object p1, p1, Lcom/supercell/id/ui/game/donate/DonateFragment;->k0:Lxd/s0;
+    iget-object p1, p1, Lcom/supercell/id/ui/game/donate/DonateFragment;->l0:Lwd/n0;
 
     const/4 p2, 0x1
 
@@ -84,9 +84,9 @@
     if-eqz p1, :cond_0
 
     .line 6
-    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->h:Ljava/lang/String;
 
-    invoke-static {p1, v1}, Lzc/d;->a(Lxd/s0;Ljava/lang/String;)Z
+    invoke-static {p1, v1}, Lwc/d;->a(Lwd/n0;Ljava/lang/String;)Z
 
     move-result p1
 
@@ -101,31 +101,31 @@
 
     .line 7
     :goto_0
-    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->a:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
+    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->g:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
 
     .line 8
-    iget-object v1, v1, Lwd/q;->f:Landroidx/fragment/app/Fragment;
+    iget-object v1, v1, Lvd/q;->f:Landroidx/fragment/app/Fragment;
 
     .line 9
     check-cast v1, Lcom/supercell/id/ui/game/donate/DonateFragment;
 
     .line 10
-    iget-object v1, v1, Lcom/supercell/id/ui/game/donate/DonateFragment;->k0:Lxd/s0;
+    iget-object v1, v1, Lcom/supercell/id/ui/game/donate/DonateFragment;->l0:Lwd/n0;
 
     if-eqz v1, :cond_1
 
     .line 11
-    iget-object v2, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->h:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->h:Lwd/j1;
+    iget-object v3, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->i:Lvd/j1;
 
-    check-cast v3, Lzc/e;
+    check-cast v3, Lwc/e;
 
     .line 12
-    iget-object v3, v3, Lzc/e;->b:Ljava/lang/String;
+    iget-object v3, v3, Lwc/e;->b:Ljava/lang/String;
 
     .line 13
-    invoke-static {v1, v2, v3}, Lzc/d;->b(Lxd/s0;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v2, v3}, Lwc/d;->b(Lwd/n0;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -138,7 +138,7 @@
 
     .line 14
     :goto_1
-    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->i:Landroid/view/View;
+    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->j:Landroid/view/View;
 
     sget v2, Lcom/supercell/id/R$id;->donateButton:I
 
@@ -150,12 +150,12 @@
 
     const-string v3, "containerView.donateButton"
 
-    invoke-static {v1, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, p1}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 15
-    iget-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->i:Landroid/view/View;
+    iget-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->j:Landroid/view/View;
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -163,7 +163,7 @@
 
     check-cast p1, Landroid/widget/Button;
 
-    invoke-static {p1, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 v1, 0x8
 
@@ -180,7 +180,7 @@
     invoke-virtual {p1, v2}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 16
-    iget-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->i:Landroid/view/View;
+    iget-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->j:Landroid/view/View;
 
     sget v2, Lcom/supercell/id/R$id;->buttonSeparator:I
 
@@ -190,7 +190,7 @@
 
     const-string v2, "containerView.buttonSeparator"
 
-    invoke-static {p1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p2, :cond_3
 
@@ -205,7 +205,7 @@
     invoke-virtual {p1, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 17
-    iget-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->i:Landroid/view/View;
+    iget-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->j:Landroid/view/View;
 
     sget v2, Lcom/supercell/id/R$id;->donatePending:I
 
@@ -217,7 +217,7 @@
 
     const-string v2, "containerView.donatePending"
 
-    invoke-static {p1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p2, :cond_4
 
@@ -232,7 +232,7 @@
     invoke-virtual {p1, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 18
-    iget-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->i:Landroid/view/View;
+    iget-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$f;->j:Landroid/view/View;
 
     sget v2, Lcom/supercell/id/R$id;->donatePendingIcon:I
 
@@ -244,7 +244,7 @@
 
     const-string v2, "containerView.donatePendingIcon"
 
-    invoke-static {p1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p2, :cond_5
 
@@ -257,7 +257,7 @@
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 19
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method

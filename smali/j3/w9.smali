@@ -1,31 +1,57 @@
-.class public interface abstract Lj3/w9;
+.class public final Lj3/w9;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Ljava/util/concurrent/ThreadFactory;
 
-# virtual methods
-.method public abstract a(Ljava/lang/String;)Lj3/yl0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            ")",
-            "Lj3/yl0<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
+
+# instance fields
+.field public final a:Ljava/util/concurrent/atomic/AtomicInteger;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
+
+    iput-object v0, p0, Lj3/w9;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    return-void
 .end method
 
-.method public abstract b(Ljava/lang/String;)Lj3/yl0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            ")",
-            "Lj3/yl0<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
+
+# virtual methods
+.method public final newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
+    .locals 4
+
+    .line 1
+    new-instance v0, Ljava/lang/Thread;
+
+    iget-object v1, p0, Lj3/w9;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
+
+    move-result v1
+
+    const/16 v2, 0x2a
+
+    const-string v3, "AdWorker(SCION_TASK_EXECUTOR) #"
+
+    invoke-static {v2, v3, v1}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, p1, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
+
+    return-object v0
 .end method

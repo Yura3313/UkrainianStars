@@ -513,6 +513,10 @@
     move-result-object p4
 
     invoke-direct {p3, p4}, Ljava/io/FileInputStream;-><init>(Ljava/io/FileDescriptor;)V
+
+    invoke-static {p3, p4}, Lio/sentry/instrumentation/file/SentryFileInputStream$Factory;->create(Ljava/io/FileInputStream;Ljava/io/FileDescriptor;)Ljava/io/FileInputStream;
+
+    move-result-object p3
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 

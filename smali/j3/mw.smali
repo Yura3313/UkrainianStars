@@ -1,142 +1,99 @@
-.class public final Lj3/mw;
+.class public final synthetic Lj3/mw;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
+.implements Lj3/y2;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final b:Lj3/fv0;
-
-.field public final c:Lj3/fv0;
-
-.field public final d:Lj3/fv0;
-
-.field public final e:Lj3/fv0;
+.field public final g:Lj3/jw;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;I)V
+.method public constructor <init>(Lj3/jw;)V
     .locals 0
 
-    .line 1
-    iput p5, p0, Lj3/mw;->a:I
-
-    iput-object p1, p0, Lj3/mw;->b:Lj3/fv0;
-
-    iput-object p2, p0, Lj3/mw;->c:Lj3/fv0;
-
-    iput-object p3, p0, Lj3/mw;->d:Lj3/fv0;
-
-    iput-object p4, p0, Lj3/mw;->e:Lj3/fv0;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lj3/mw;->g:Lj3/jw;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic get()Ljava/lang/Object;
-    .locals 5
-
-    iget v0, p0, Lj3/mw;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
+.method public final b(Ljava/lang/Object;Ljava/util/Map;)V
+    .locals 7
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/mw;->b:Lj3/fv0;
+    iget-object v0, p0, Lj3/mw;->g:Lj3/jw;
 
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
+    move-object v1, p1
 
-    move-result-object v0
-
-    check-cast v0, Lj3/fz;
-
-    iget-object v1, p0, Lj3/mw;->c:Lj3/fv0;
-
-    invoke-interface {v1}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lj3/ly;
-
-    iget-object v2, p0, Lj3/mw;->d:Lj3/fv0;
-
-    invoke-interface {v2}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lj3/km;
-
-    iget-object v3, p0, Lj3/mw;->e:Lj3/fv0;
-
-    invoke-interface {v3}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lj3/tv;
+    check-cast v1, Lj3/gh;
 
     .line 2
-    new-instance v4, Lj3/gw;
+    invoke-interface {v1}, Lj3/gh;->Q()Lj3/ji;
 
-    invoke-direct {v4, v0, v1, v2, v3}, Lj3/gw;-><init>(Lj3/fz;Lj3/ly;Lj3/km;Lj3/tv;)V
+    move-result-object p1
 
-    return-object v4
+    new-instance v2, Lj3/p31;
+
+    const/4 v3, 0x2
+
+    invoke-direct {v2, v0, p2, v3}, Lj3/p31;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 3
-    :goto_0
-    iget-object v0, p0, Lj3/mw;->b:Lj3/fv0;
+    invoke-interface {p1, v2}, Lj3/ji;->f(Lj3/mi;)V
 
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lj3/c6;
-
-    iget-object v1, p0, Lj3/mw;->c:Lj3/fv0;
-
-    invoke-interface {v1}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/util/concurrent/ScheduledExecutorService;
-
-    iget-object v2, p0, Lj3/mw;->d:Lj3/fv0;
-
-    invoke-interface {v2}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/Boolean;
-
-    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v2
-
-    iget-object v3, p0, Lj3/mw;->e:Lj3/fv0;
-
-    invoke-interface {v3}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/content/pm/ApplicationInfo;
+    const-string p1, "overlayHtml"
 
     .line 4
-    new-instance v4, Lj3/ge0;
+    invoke-interface {p2, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-direct {v4, v0, v1, v2, v3}, Lj3/ge0;-><init>(Lj3/c6;Ljava/util/concurrent/ScheduledExecutorService;ZLandroid/content/pm/ApplicationInfo;)V
+    move-result-object p1
 
-    return-object v4
+    move-object v3, p1
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    check-cast v3, Ljava/lang/String;
+
+    const-string p1, "baseUrl"
+
+    .line 5
+    invoke-interface {p2, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    move-object v2, p1
+
+    check-cast v2, Ljava/lang/String;
+
+    .line 6
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const-string p1, "text/html"
+
+    const-string p2, "UTF-8"
+
+    .line 7
+    invoke-interface {v1, v3, p1, p2}, Lj3/gh;->loadData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+
+    :cond_0
+    const/4 v6, 0x0
+
+    const-string v4, "text/html"
+
+    const-string v5, "UTF-8"
+
+    .line 8
+    invoke-interface/range {v1 .. v6}, Lj3/gh;->loadDataWithBaseURL(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
 .end method

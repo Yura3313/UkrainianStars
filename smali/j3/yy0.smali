@@ -1,32 +1,21 @@
-.class public interface abstract Lj3/yy0;
-.super Ljava/lang/Object;
+.class public final Lj3/yy0;
+.super Lj3/wy0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# static fields
-.field public static final a:Lj3/yy0;
+# instance fields
+.field public final P0:Lj3/d21;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(ILj3/d21;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lj3/zn0;
+    invoke-direct {p0, p1}, Lj3/wy0;-><init>(I)V
 
-    invoke-direct {v0}, Lj3/zn0;-><init>()V
-
-    sput-object v0, Lj3/yy0;->a:Lj3/yy0;
+    .line 2
+    iput-object p2, p0, Lj3/yy0;->P0:Lj3/d21;
 
     return-void
-.end method
-
-
-# virtual methods
-.method public abstract a(Ljava/lang/String;Z)Lj3/vy0;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/android/gms/internal/ads/zzlz;
-        }
-    .end annotation
 .end method

@@ -1,6 +1,6 @@
 .class public final Lud/g;
 .super Lle/j;
-.source "YoungPlayerLoginEnterEmailPageFragment.kt"
+.source "YoungPlayerRegisterEnterPinPageFragment.kt"
 
 # interfaces
 .implements Lke/p;
@@ -11,16 +11,16 @@
     value = {
         "Lle/j;",
         "Lke/p<",
-        "Lud/h;",
-        "Ljava/lang/Exception;",
-        "Lbe/n;",
+        "Lud/i;",
+        "Lqc/g0$a;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lud/g;
+.field public static final g:Lud/g;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Lud/g;-><init>()V
 
-    sput-object v0, Lud/g;->a:Lud/g;
+    sput-object v0, Lud/g;->g:Lud/g;
 
     return-void
 .end method
@@ -49,49 +49,74 @@
 
 # virtual methods
 .method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+    .locals 8
 
     .line 1
-    check-cast p1, Lud/h;
+    move-object v1, p1
 
-    check-cast p2, Ljava/lang/Exception;
+    check-cast v1, Lud/i;
 
-    const/4 v0, 0x0
+    check-cast p2, Lqc/g0$a;
 
-    if-eqz p1, :cond_2
+    const/4 p1, 0x0
 
-    if-eqz p2, :cond_1
+    if-eqz v1, :cond_1
+
+    if-eqz p2, :cond_0
 
     .line 2
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    iget-object v3, p2, Lqc/g0$a;->c:Ljava/lang/String;
 
     .line 3
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->E(Ljava/lang/Exception;Lke/l;)V
+    iget-object v4, p2, Lqc/g0;->a:Ljava/lang/String;
 
     .line 4
-    :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget p1, Lud/i;->e0:I
+
+    .line 5
+    sget-object v2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {v1}, Lud/k;->d1()Ljava/lang/String;
+
+    move-result-object v5
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x1
+
+    invoke-virtual/range {v2 .. v7}, Lcom/supercell/id/SupercellId;->bindAccount$supercellId_release(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lse/f0;
+
+    move-result-object v0
+
+    sget-object v2, Lud/e;->g:Lud/e;
+
+    .line 6
+    sget-object v3, Lud/f;->g:Lud/f;
+
+    const/4 v4, 0x0
+
+    const/16 v5, 0x8
+
+    .line 7
+    invoke-static/range {v0 .. v5}, Lvd/e1;->j(Lse/f0;Ljava/lang/Object;Lke/p;Lke/p;Lke/l;I)Lse/f0;
+
+    .line 8
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
+    :cond_0
+    const-string p2, "data"
+
+    .line 9
+    invoke-static {p2}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw p1
+
     :cond_1
-    const-string p1, "it"
+    const-string p2, "$receiver"
 
-    .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p2}, Ls3/b;->h(Ljava/lang/String;)V
 
-    throw v0
-
-    :cond_2
-    const-string p1, "$receiver"
-
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
+    throw p1
 .end method

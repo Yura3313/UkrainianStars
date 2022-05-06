@@ -16,15 +16,15 @@
 
 
 # static fields
-.field public static final j:La2/c;
+.field public static final k:La2/c;
 
 
 # instance fields
-.field public final a:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final g:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field public final b:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final h:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field public final h:Ljava/util/ArrayList;
+.field public final i:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -38,7 +38,7 @@
     .end annotation
 .end field
 
-.field public i:Z
+.field public j:Z
     .annotation build Ljavax/annotation/concurrent/GuardedBy;
         value = "sInstance"
     .end annotation
@@ -54,7 +54,7 @@
 
     invoke-direct {v0}, La2/c;-><init>()V
 
-    sput-object v0, La2/c;->j:La2/c;
+    sput-object v0, La2/c;->k:La2/c;
 
     return-void
 .end method
@@ -70,26 +70,26 @@
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
 
-    iput-object v0, p0, La2/c;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, La2/c;->g:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 3
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
 
-    iput-object v0, p0, La2/c;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, La2/c;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 4
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, La2/c;->h:Ljava/util/ArrayList;
+    iput-object v0, p0, La2/c;->i:Ljava/util/ArrayList;
 
     const/4 v0, 0x0
 
     .line 5
-    iput-boolean v0, p0, La2/c;->i:Z
+    iput-boolean v0, p0, La2/c;->j:Z
 
     return-void
 .end method
@@ -100,7 +100,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, La2/c;->j:La2/c;
+    sget-object v0, La2/c;->k:La2/c;
 
     return-object v0
 .end method
@@ -113,13 +113,13 @@
     .end param
 
     .line 1
-    sget-object v0, La2/c;->j:La2/c;
+    sget-object v0, La2/c;->k:La2/c;
 
     monitor-enter v0
 
     .line 2
     :try_start_0
-    iget-boolean v1, v0, La2/c;->i:Z
+    iget-boolean v1, v0, La2/c;->j:Z
 
     if-nez v1, :cond_0
 
@@ -132,7 +132,7 @@
     const/4 p0, 0x1
 
     .line 5
-    iput-boolean p0, v0, La2/c;->i:Z
+    iput-boolean p0, v0, La2/c;->j:Z
 
     .line 6
     :cond_0
@@ -160,13 +160,13 @@
     .end param
 
     .line 1
-    sget-object v0, La2/c;->j:La2/c;
+    sget-object v0, La2/c;->k:La2/c;
 
     monitor-enter v0
 
     .line 2
     :try_start_0
-    iget-object v1, p0, La2/c;->h:Ljava/util/ArrayList;
+    iget-object v1, p0, La2/c;->i:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -192,7 +192,7 @@
     .end annotation
 
     .line 1
-    iget-object p1, p0, La2/c;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object p1, p0, La2/c;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -209,7 +209,7 @@
     invoke-static {p1}, Landroid/app/ActivityManager;->getMyMemoryState(Landroid/app/ActivityManager$RunningAppProcessInfo;)V
 
     .line 4
-    iget-object v0, p0, La2/c;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, La2/c;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
 
@@ -226,13 +226,13 @@
     if-le p1, v0, :cond_0
 
     .line 5
-    iget-object p1, p0, La2/c;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object p1, p0, La2/c;->g:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {p1, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     .line 6
     :cond_0
-    iget-object p1, p0, La2/c;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object p1, p0, La2/c;->g:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -245,13 +245,13 @@
     .locals 5
 
     .line 1
-    sget-object v0, La2/c;->j:La2/c;
+    sget-object v0, La2/c;->k:La2/c;
 
     monitor-enter v0
 
     .line 2
     :try_start_0
-    iget-object v1, p0, La2/c;->h:Ljava/util/ArrayList;
+    iget-object v1, p0, La2/c;->i:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -305,7 +305,7 @@
     .end param
 
     .line 1
-    iget-object p1, p0, La2/c;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object p1, p0, La2/c;->g:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 p2, 0x1
 
@@ -316,7 +316,7 @@
     move-result p1
 
     .line 2
-    iget-object v1, p0, La2/c;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v1, p0, La2/c;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v1, p2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
@@ -357,7 +357,7 @@
     .end param
 
     .line 1
-    iget-object p1, p0, La2/c;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object p1, p0, La2/c;->g:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v0, 0x1
 
@@ -368,7 +368,7 @@
     move-result p1
 
     .line 2
-    iget-object v2, p0, La2/c;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v2, p0, La2/c;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v2, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
@@ -439,7 +439,7 @@
     if-ne p1, v0, :cond_0
 
     .line 1
-    iget-object p1, p0, La2/c;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object p1, p0, La2/c;->g:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v0, 0x0
 
@@ -452,7 +452,7 @@
     if-eqz p1, :cond_0
 
     .line 2
-    iget-object p1, p0, La2/c;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object p1, p0, La2/c;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {p1, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 

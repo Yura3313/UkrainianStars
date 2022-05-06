@@ -3,7 +3,7 @@
 
 
 # virtual methods
-.method public abstract a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)La4/f;
+.method public abstract a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lb4/f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -11,14 +11,14 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
-            "La4/f<",
+            "Lb4/f<",
             "Ljava/lang/Void;",
             ">;"
         }
     .end annotation
 .end method
 
-.method public abstract b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)La4/f;
+.method public abstract b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lb4/f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -26,14 +26,14 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
-            "La4/f<",
+            "Lb4/f<",
             "Ljava/lang/Void;",
             ">;"
         }
     .end annotation
 .end method
 
-.method public abstract c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)La4/f;
+.method public abstract c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lb4/f;
     .param p2    # Ljava/lang/String;
         .annotation runtime Ljavax/annotation/Nullable;
         .end annotation
@@ -46,7 +46,7 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
-            "La4/f<",
+            "Lb4/f<",
             "Ljava/lang/String;",
             ">;"
         }

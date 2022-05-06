@@ -487,6 +487,13 @@
 "ingame_mute_invites_hours" = "[hours] hours";
 "ingame_mute_invites_select_btn" = "Select";
 "ingame_mute_invites_title" = "Mute invites for";
+"ingame_purchases_received_popup_description" = "The items you bought are now available in the game. Enjoy!";
+"ingame_purchases_received_popup_description_magic_season_pass" = "Gold Pass can be used for your own account in the Season Challenges menu or donated to Supercell ID friends through the Supercell ID menu.";
+"ingame_purchases_received_popup_description_soil_season_pass" = "Farm Pass can be used for your own account in the Baby Chick House or donated to Supercell ID friends through the Supercell ID menu.";
+"ingame_purchases_received_popup_ok_btn" = "Okay";
+"ingame_purchases_received_popup_store" = "SUPERCELL STORE";
+"ingame_purchases_received_popup_title" = "PURCHASE DELIVERED!";
+"ingame_purchases_received_quantity" = "[count] x [title]";
 "log_in_connect_game_btn_cancel" = "Cancel";
 "log_in_connect_game_btn_confirm" = "Confirm";
 "log_in_connect_game_description" = "You're about to connect the current game account to your Supercell ID.";

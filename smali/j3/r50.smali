@@ -3,92 +3,83 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/gl0;
+.implements Lj3/bv;
 
 
 # instance fields
-.field public final a:Lj3/s50;
-
-.field public final b:Lj3/eg0;
+.field public final a:Lj3/j40;
 
 
 # direct methods
-.method public constructor <init>(Lj3/s50;Lj3/eg0;)V
+.method public constructor <init>(Lj3/j40;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj3/r50;->a:Lj3/s50;
-
-    iput-object p2, p0, Lj3/r50;->b:Lj3/eg0;
+    iput-object p1, p0, Lj3/r50;->a:Lj3/j40;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lj3/yl0;
-    .locals 5
-
-    iget-object v0, p0, Lj3/r50;->a:Lj3/s50;
-
-    iget-object v1, p0, Lj3/r50;->b:Lj3/eg0;
-
-    check-cast p1, Lj3/ly;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+.method public final a(ZLandroid/content/Context;)V
+    .locals 1
 
     .line 1
-    sget-object v2, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    iget-object p2, p0, Lj3/r50;->a:Lj3/j40;
 
     .line 2
-    new-instance v3, Lorg/json/JSONObject;
+    :try_start_0
+    iget-object v0, p2, Lj3/j40;->b:Ljava/lang/Object;
 
-    invoke-direct {v3}, Lorg/json/JSONObject;-><init>()V
+    check-cast v0, Lj3/bh0;
 
-    const-string v4, "isNonagon"
+    invoke-virtual {v0, p1}, Lj3/bh0;->b(Z)V
 
     .line 3
-    invoke-virtual {v3, v4, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    iget-object p1, p2, Lj3/j40;->b:Ljava/lang/Object;
+
+    check-cast p1, Lj3/bh0;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :try_end_0
+    .catch Lcom/google/android/gms/internal/ads/zzdlr; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 4
-    new-instance v2, Lorg/json/JSONObject;
+    :try_start_1
+    iget-object p1, p1, Lj3/bh0;->a:Lcom/google/android/gms/internal/ads/zzamv;
 
-    invoke-direct {v2}, Lorg/json/JSONObject;-><init>()V
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzamv;->showInterstitial()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
 
     .line 5
-    iget-object v1, v1, Lj3/eg0;->r:Lj3/ig0;
+    :try_start_2
+    new-instance p2, Lcom/google/android/gms/internal/ads/zzdlr;
 
-    iget-object v1, v1, Lj3/ig0;->c:Lorg/json/JSONObject;
+    invoke-direct {p2, p1}, Lcom/google/android/gms/internal/ads/zzdlr;-><init>(Ljava/lang/Throwable;)V
 
-    const-string v4, "response"
+    throw p2
+    :try_end_2
+    .catch Lcom/google/android/gms/internal/ads/zzdlr; {:try_start_2 .. :try_end_2} :catch_0
 
-    invoke-virtual {v2, v4, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-
-    const-string v1, "sdk_params"
+    :catch_0
+    move-exception p1
 
     .line 6
-    invoke-virtual {v2, v1, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    new-instance p2, Lcom/google/android/gms/internal/ads/zzcbc;
 
-    const-string v1, "google.afma.nativeAds.preProcessJson"
-
-    .line 7
-    invoke-virtual {p1, v1, v2}, Lj3/ly;->e(Ljava/lang/String;Lorg/json/JSONObject;)Lj3/yl0;
-
-    move-result-object v1
-
-    new-instance v2, Lj3/wa;
-
-    const/4 v3, 0x1
-
-    invoke-direct {v2, v0, p1, v3}, Lj3/wa;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
-
-    iget-object p1, v0, Lj3/s50;->b:Lj3/am0;
-
-    .line 8
-    invoke-static {v1, v2, p1}, Lj3/ul0;->k(Lj3/yl0;Lj3/gl0;Ljava/util/concurrent/Executor;)Lj3/yl0;
+    invoke-virtual {p1}, Ljava/lang/Exception;->getCause()Ljava/lang/Throwable;
 
     move-result-object p1
 
-    return-object p1
+    invoke-direct {p2, p1}, Lcom/google/android/gms/internal/ads/zzcbc;-><init>(Ljava/lang/Throwable;)V
+
+    throw p2
 .end method

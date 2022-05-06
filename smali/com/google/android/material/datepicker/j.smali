@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/material/datepicker/f;
+.field public final synthetic g:Lcom/google/android/material/datepicker/f;
 
 
 # direct methods
@@ -15,7 +15,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/datepicker/j;->a:Lcom/google/android/material/datepicker/f;
+    iput-object p1, p0, Lcom/google/android/material/datepicker/j;->g:Lcom/google/android/material/datepicker/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,30 +28,27 @@
     .locals 3
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/datepicker/j;->a:Lcom/google/android/material/datepicker/f;
+    iget-object p1, p0, Lcom/google/android/material/datepicker/j;->g:Lcom/google/android/material/datepicker/f;
 
     .line 2
-    iget-object v0, p1, Lcom/google/android/material/datepicker/f;->g0:Lcom/google/android/material/datepicker/f$e;
+    iget v0, p1, Lcom/google/android/material/datepicker/f;->h0:I
 
-    sget-object v1, Lcom/google/android/material/datepicker/f$e;->YEAR:Lcom/google/android/material/datepicker/f$e;
+    const/4 v1, 0x1
 
-    if-ne v0, v1, :cond_0
+    const/4 v2, 0x2
+
+    if-ne v0, v2, :cond_0
 
     .line 3
-    sget-object v0, Lcom/google/android/material/datepicker/f$e;->DAY:Lcom/google/android/material/datepicker/f$e;
-
-    invoke-virtual {p1, v0}, Lcom/google/android/material/datepicker/f;->a1(Lcom/google/android/material/datepicker/f$e;)V
+    invoke-virtual {p1, v1}, Lcom/google/android/material/datepicker/f;->a1(I)V
 
     goto :goto_0
 
-    .line 4
     :cond_0
-    sget-object v2, Lcom/google/android/material/datepicker/f$e;->DAY:Lcom/google/android/material/datepicker/f$e;
+    if-ne v0, v1, :cond_1
 
-    if-ne v0, v2, :cond_1
-
-    .line 5
-    invoke-virtual {p1, v1}, Lcom/google/android/material/datepicker/f;->a1(Lcom/google/android/material/datepicker/f$e;)V
+    .line 4
+    invoke-virtual {p1, v2}, Lcom/google/android/material/datepicker/f;->a1(I)V
 
     :cond_1
     :goto_0

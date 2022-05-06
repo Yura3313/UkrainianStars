@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public j:Ljava/lang/Float;
+.field public k:Ljava/lang/Float;
 
 
 # direct methods
@@ -33,7 +33,7 @@
     const-string p1, "context"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -74,7 +74,7 @@
     const/16 v4, 0xa
 
     .line 5
-    invoke-static {v4}, Lc5/i;->c(I)F
+    invoke-static {v4}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v4
 
@@ -123,7 +123,7 @@
 
     .line 11
     :cond_1
-    iget-object v3, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->j:Ljava/lang/Float;
+    iget-object v3, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->k:Ljava/lang/Float;
 
     if-eqz v3, :cond_2
 
@@ -208,7 +208,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->j:Ljava/lang/Float;
+    iget-object v0, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->k:Ljava/lang/Float;
 
     if-nez v0, :cond_0
 
@@ -221,11 +221,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->j:Ljava/lang/Float;
+    iput-object v0, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->k:Ljava/lang/Float;
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->j:Ljava/lang/Float;
+    iget-object v0, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->k:Ljava/lang/Float;
 
     if-eqz v0, :cond_1
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public a:Landroidx/appcompat/widget/t$a;
+.field public g:Landroidx/appcompat/widget/t$a;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/FitWindowsFrameLayout;->a:Landroidx/appcompat/widget/t$a;
+    iget-object v0, p0, Landroidx/appcompat/widget/FitWindowsFrameLayout;->g:Landroidx/appcompat/widget/t$a;
 
     if-eqz v0, :cond_0
 
@@ -38,7 +38,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl;->Z(Lf0/a0;Landroid/graphics/Rect;)I
+    invoke-virtual {v0, v1, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl;->Z(Lf0/z;Landroid/graphics/Rect;)I
 
     move-result v0
 
@@ -57,7 +57,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/FitWindowsFrameLayout;->a:Landroidx/appcompat/widget/t$a;
+    iput-object p1, p0, Landroidx/appcompat/widget/FitWindowsFrameLayout;->g:Landroidx/appcompat/widget/t$a;
 
     return-void
 .end method

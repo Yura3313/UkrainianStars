@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final i:Landroid/graphics/Rect;
+.field public final j:Landroid/graphics/Rect;
 
-.field public j:Z
+.field public k:Z
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v1, p0, Lcom/google/android/material/textfield/TextInputEditText;->i:Landroid/graphics/Rect;
+    iput-object v1, p0, Lcom/google/android/material/textfield/TextInputEditText;->j:Landroid/graphics/Rect;
 
     .line 4
     sget-object v1, Lcom/google/android/material/R$styleable;->TextInputEditText:[I
@@ -48,7 +48,7 @@
     new-array v7, v0, [I
 
     .line 5
-    invoke-static {p1, p2, p3, v8}, Lcom/google/android/material/internal/j;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+    invoke-static {p1, p2, p3, v8}, Lcom/google/android/material/internal/l;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     move-object v2, p1
 
@@ -61,7 +61,7 @@
     move v6, v8
 
     .line 6
-    invoke-static/range {v2 .. v7}, Lcom/google/android/material/internal/j;->b(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)V
+    invoke-static/range {v2 .. v7}, Lcom/google/android/material/internal/l;->b(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)V
 
     .line 7
     invoke-virtual {p1, p2, v1, p3, v8}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
@@ -163,19 +163,19 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-boolean v1, p0, Lcom/google/android/material/textfield/TextInputEditText;->j:Z
+    iget-boolean v1, p0, Lcom/google/android/material/textfield/TextInputEditText;->k:Z
 
     if-eqz v1, :cond_0
 
     if-eqz p1, :cond_0
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputEditText;->i:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputEditText;->j:Landroid/graphics/Rect;
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->getFocusedRect(Landroid/graphics/Rect;)V
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputEditText;->i:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputEditText;->j:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->bottom:I
 
@@ -201,19 +201,19 @@
     if-eqz v1, :cond_0
 
     .line 3
-    iget-boolean v2, p0, Lcom/google/android/material/textfield/TextInputEditText;->j:Z
+    iget-boolean v2, p0, Lcom/google/android/material/textfield/TextInputEditText;->k:Z
 
     if-eqz v2, :cond_0
 
     if-eqz p1, :cond_0
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputEditText;->i:Landroid/graphics/Rect;
+    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputEditText;->j:Landroid/graphics/Rect;
 
     invoke-virtual {v1, v2, p2}, Landroid/widget/LinearLayout;->getGlobalVisibleRect(Landroid/graphics/Rect;Landroid/graphics/Point;)Z
 
     .line 5
-    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputEditText;->i:Landroid/graphics/Rect;
+    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputEditText;->j:Landroid/graphics/Rect;
 
     iget p2, p2, Landroid/graphics/Rect;->bottom:I
 
@@ -234,7 +234,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-boolean v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->F:Z
+    iget-boolean v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->G:Z
 
     if-eqz v1, :cond_0
 
@@ -268,7 +268,7 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-boolean v0, v0, Lcom/google/android/material/textfield/TextInputLayout;->F:Z
+    iget-boolean v0, v0, Lcom/google/android/material/textfield/TextInputLayout;->G:Z
 
     if-eqz v0, :cond_0
 
@@ -415,7 +415,7 @@
 
     .line 13
     :goto_0
-    invoke-static {v2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
@@ -447,7 +447,7 @@
     move-result-object v2
 
     .line 14
-    invoke-static {v2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -487,7 +487,7 @@
 
     if-nez v1, :cond_5
 
-    invoke-static {v9, v0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v9, v0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
@@ -535,12 +535,12 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-boolean v1, p0, Lcom/google/android/material/textfield/TextInputEditText;->j:Z
+    iget-boolean v1, p0, Lcom/google/android/material/textfield/TextInputEditText;->k:Z
 
     if-eqz v1, :cond_0
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputEditText;->i:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputEditText;->j:Landroid/graphics/Rect;
 
     const/4 v2, 0x0
 
@@ -576,7 +576,7 @@
     invoke-virtual {v1, v2, v3, v4, v5}, Landroid/graphics/Rect;->set(IIII)V
 
     .line 10
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputEditText;->i:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputEditText;->j:Landroid/graphics/Rect;
 
     const/4 v2, 0x1
 
@@ -590,7 +590,7 @@
     .locals 0
 
     .line 1
-    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputEditText;->j:Z
+    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputEditText;->k:Z
 
     return-void
 .end method

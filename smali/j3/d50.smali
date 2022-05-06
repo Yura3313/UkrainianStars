@@ -1,140 +1,167 @@
-.class public final Lj3/d50;
+.class public final synthetic Lj3/d50;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/d40;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lj3/d40<",
-        "Lj3/fu;",
-        ">;"
-    }
-.end annotation
+.implements Lj3/ql0;
 
 
 # instance fields
-.field public final a:Landroid/content/Context;
+.field public final a:Lj3/b50;
 
-.field public final b:Lj3/fz;
+.field public final b:Landroid/net/Uri;
 
-.field public final c:Lj3/ru;
+.field public final c:Lj3/ug0;
 
-.field public final d:Lj3/pg0;
-
-.field public final e:Ljava/util/concurrent/Executor;
-
-.field public final f:Lcom/google/android/gms/internal/ads/zzbbg;
+.field public final d:Lj3/lg0;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzbbg;Lj3/pg0;Ljava/util/concurrent/Executor;Lj3/ru;Lj3/fz;)V
+.method public constructor <init>(Lj3/b50;Landroid/net/Uri;Lj3/ug0;Lj3/lg0;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Lj3/d50;->a:Landroid/content/Context;
+    iput-object p1, p0, Lj3/d50;->a:Lj3/b50;
 
-    .line 3
-    iput-object p3, p0, Lj3/d50;->d:Lj3/pg0;
+    iput-object p2, p0, Lj3/d50;->b:Landroid/net/Uri;
 
-    .line 4
-    iput-object p5, p0, Lj3/d50;->c:Lj3/ru;
+    iput-object p3, p0, Lj3/d50;->c:Lj3/ug0;
 
-    .line 5
-    iput-object p4, p0, Lj3/d50;->e:Ljava/util/concurrent/Executor;
-
-    .line 6
-    iput-object p2, p0, Lj3/d50;->f:Lcom/google/android/gms/internal/ads/zzbbg;
-
-    .line 7
-    iput-object p6, p0, Lj3/d50;->b:Lj3/fz;
+    iput-object p4, p0, Lj3/d50;->d:Lj3/lg0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lj3/ng0;Lj3/eg0;)Z
-    .locals 0
+.method public final a(Ljava/lang/Object;)Lj3/im0;
+    .locals 14
+
+    iget-object p1, p0, Lj3/d50;->a:Lj3/b50;
+
+    iget-object v0, p0, Lj3/d50;->b:Landroid/net/Uri;
+
+    iget-object v1, p0, Lj3/d50;->c:Lj3/ug0;
+
+    iget-object v2, p0, Lj3/d50;->d:Lj3/lg0;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 1
-    iget-object p1, p2, Lj3/eg0;->r:Lj3/ig0;
+    :try_start_0
+    new-instance v3, Landroid/content/Intent;
 
-    if-eqz p1, :cond_0
+    const-string v4, "android.intent.action.VIEW"
 
-    iget-object p1, p1, Lj3/ig0;->a:Ljava/lang/String;
+    invoke-direct {v3, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x1
-
-    return p1
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return p1
-.end method
-
-.method public final b(Lj3/ng0;Lj3/eg0;)Lj3/yl0;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/ng0;",
-            "Lj3/eg0;",
-            ")",
-            "Lj3/yl0<",
-            "Lj3/fu;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Lj3/sz;
-
-    invoke-direct {v0}, Lj3/sz;-><init>()V
-
-    const/4 v1, 0x0
+    const/4 v4, 0x1
 
     .line 2
-    invoke-static {v1}, Lj3/ul0;->i(Ljava/lang/Object;)Lj3/yl0;
+    new-instance v5, Landroid/os/Bundle;
 
-    move-result-object v1
+    invoke-direct {v5}, Landroid/os/Bundle;-><init>()V
+
+    const-string v6, "android.support.customtabs.extra.SESSION"
+
+    const/4 v7, 0x0
+
+    .line 3
+    invoke-virtual {v5, v6, v7}, Landroid/os/Bundle;->putBinder(Ljava/lang/String;Landroid/os/IBinder;)V
+
+    .line 4
+    invoke-virtual {v3, v5}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
+
+    const-string v5, "android.support.customtabs.extra.EXTRA_ENABLE_INSTANT_APPS"
+
+    .line 5
+    invoke-virtual {v3, v5, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    .line 6
+    invoke-virtual {v3, v0}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    .line 7
+    new-instance v9, Lcom/google/android/gms/ads/internal/overlay/zzd;
+
+    invoke-direct {v9, v3}, Lcom/google/android/gms/ads/internal/overlay/zzd;-><init>(Landroid/content/Intent;)V
+
+    .line 8
+    new-instance v0, Lj3/qd;
+
+    invoke-direct {v0}, Lj3/qd;-><init>()V
+
+    .line 9
+    iget-object v3, p1, Lj3/b50;->b:Lj3/yu;
+
+    new-instance v4, Lj3/uo;
+
+    invoke-direct {v4, v1, v2, v7}, Lj3/uo;-><init>(Lj3/ug0;Lj3/lg0;Ljava/lang/String;)V
+
+    new-instance v1, Lj3/pu;
 
     new-instance v2, Lj3/c50;
 
-    invoke-direct {v2, p0, p2, v0, p1}, Lj3/c50;-><init>(Lj3/d50;Lj3/eg0;Lj3/sz;Lj3/ng0;)V
+    invoke-direct {v2, v0}, Lj3/c50;-><init>(Lj3/qd;)V
 
-    iget-object p1, p0, Lj3/d50;->e:Ljava/util/concurrent/Executor;
+    invoke-direct {v1, v2}, Lj3/pu;-><init>(Lj3/bv;)V
 
-    .line 3
-    invoke-static {v1, v2, p1}, Lj3/ul0;->k(Lj3/yl0;Lj3/gl0;Ljava/util/concurrent/Executor;)Lj3/yl0;
+    .line 10
+    invoke-virtual {v3, v4, v1}, Lj3/yu;->a(Lj3/uo;Lj3/pu;)Lj3/nu;
+
+    move-result-object v1
+
+    .line 11
+    new-instance v2, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;
+
+    const/4 v10, 0x0
+
+    .line 12
+    invoke-virtual {v1}, Lj3/nu;->u()Lj3/zr;
+
+    move-result-object v11
+
+    const/4 v12, 0x0
+
+    new-instance v13, Lcom/google/android/gms/internal/ads/zzbbg;
+
+    const/4 v3, 0x0
+
+    invoke-direct {v13, v3, v3, v3}, Lcom/google/android/gms/internal/ads/zzbbg;-><init>(IIZ)V
+
+    move-object v8, v2
+
+    invoke-direct/range {v8 .. v13}, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;-><init>(Lcom/google/android/gms/ads/internal/overlay/zzd;Lj3/a51;Li1/j;Li1/m;Lcom/google/android/gms/internal/ads/zzbbg;)V
+
+    .line 13
+    invoke-virtual {v0, v2}, Lj3/qd;->b(Ljava/lang/Object;)Z
+
+    .line 14
+    iget-object p1, p1, Lj3/b50;->d:Lj3/jg0;
+
+    const/4 v0, 0x2
+
+    const/4 v2, 0x3
+
+    .line 15
+    invoke-virtual {p1, v0, v2}, Lj3/jg0;->b(II)V
+
+    .line 16
+    invoke-virtual {v1}, Lj3/nu;->t()Lj3/mu;
 
     move-result-object p1
 
-    .line 4
-    new-instance p2, Lj3/f50;
+    invoke-static {p1}, Lj3/em0;->j(Ljava/lang/Object;)Lj3/im0;
 
-    const/4 v1, 0x0
-
-    invoke-direct {p2, v0, v1}, Lj3/f50;-><init>(Ljava/lang/Object;I)V
-
-    .line 5
-    iget-object v0, p0, Lj3/d50;->e:Ljava/util/concurrent/Executor;
-
-    move-object v1, p1
-
-    check-cast v1, Lj3/uk0;
-
-    invoke-virtual {v1, p2, v0}, Lj3/uk0;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+    move-result-object p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object p1
+
+    :catchall_0
+    move-exception p1
+
+    .line 17
+    throw p1
 .end method

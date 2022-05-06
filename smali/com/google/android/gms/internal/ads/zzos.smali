@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/io/IOException;Lj3/x01;I)V
+.method public constructor <init>(Ljava/io/IOException;Lj3/q11;I)V
     .locals 0
 
     .line 2
@@ -13,7 +13,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;Lj3/x01;)V
+.method public constructor <init>(Ljava/lang/String;Lj3/q11;)V
     .locals 0
 
     .line 1
@@ -22,7 +22,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;Ljava/io/IOException;Lj3/x01;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/io/IOException;Lj3/q11;)V
     .locals 0
 
     .line 3

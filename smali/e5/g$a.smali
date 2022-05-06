@@ -47,17 +47,17 @@
     check-cast p1, Ll5/v;
 
     .line 2
-    new-instance v0, Lp5/l;
+    new-instance v0, Lp5/m;
 
-    invoke-virtual {p1}, Ll5/v;->u()Lm5/c;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Lm5/c;->n()[B
+    invoke-virtual {p1}, Ll5/v;->t()Lm5/c;
 
     move-result-object p1
 
-    invoke-direct {v0, p1}, Lp5/l;-><init>([B)V
+    invoke-virtual {p1}, Lm5/c;->m()[B
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Lp5/m;-><init>([B)V
 
     return-object v0
 .end method

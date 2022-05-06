@@ -269,7 +269,7 @@
     .line 16
     iget-object p1, p0, Landroidx/fragment/app/c0;->e:Landroidx/fragment/app/g0;
 
-    sget-object p2, Landroidx/lifecycle/f$c;->STARTED:Landroidx/lifecycle/f$c;
+    sget-object p2, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
 
     invoke-virtual {p1, v2, p2}, Landroidx/fragment/app/g0;->j(Landroidx/fragment/app/Fragment;Landroidx/lifecycle/f$c;)Landroidx/fragment/app/g0;
 
@@ -291,7 +291,7 @@
     check-cast p2, Landroidx/fragment/app/Fragment;
 
     .line 2
-    iget-object p2, p2, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object p2, p2, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-ne p2, p1, :cond_0
 
@@ -367,7 +367,7 @@
 
     iget-object v0, p0, Landroidx/fragment/app/c0;->f:Landroidx/fragment/app/Fragment;
 
-    sget-object v1, Landroidx/lifecycle/f$c;->STARTED:Landroidx/lifecycle/f$c;
+    sget-object v1, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
 
     invoke-virtual {p1, v0, v1}, Landroidx/fragment/app/g0;->j(Landroidx/fragment/app/Fragment;Landroidx/lifecycle/f$c;)Landroidx/fragment/app/g0;
 
@@ -409,7 +409,7 @@
     :cond_3
     iget-object p1, p0, Landroidx/fragment/app/c0;->e:Landroidx/fragment/app/g0;
 
-    sget-object p2, Landroidx/lifecycle/f$c;->RESUMED:Landroidx/lifecycle/f$c;
+    sget-object p2, Landroidx/lifecycle/f$c;->k:Landroidx/lifecycle/f$c;
 
     invoke-virtual {p1, p3, p2}, Landroidx/fragment/app/g0;->j(Landroidx/fragment/app/Fragment;Landroidx/lifecycle/f$c;)Landroidx/fragment/app/g0;
 

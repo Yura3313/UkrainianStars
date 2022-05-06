@@ -168,7 +168,7 @@
     sub-int/2addr v0, p1
 
     .line 9
-    invoke-static {p2, v0}, Lf0/s;->t(Landroid/view/View;I)V
+    invoke-static {p2, v0}, Lf0/r;->t(Landroid/view/View;I)V
 
     .line 10
     :cond_0
@@ -180,7 +180,7 @@
     check-cast p3, Lcom/google/android/material/appbar/AppBarLayout;
 
     .line 12
-    iget-boolean p1, p3, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
+    iget-boolean p1, p3, Lcom/google/android/material/appbar/AppBarLayout;->q:Z
 
     if-eqz p1, :cond_1
 
@@ -212,7 +212,7 @@
 
     move-result p2
 
-    invoke-static {p1, p2}, Lf0/s;->v(Landroid/view/View;I)V
+    invoke-static {p1, p2}, Lf0/r;->v(Landroid/view/View;I)V
 
     .line 3
     sget-object p2, Lg0/b$a;->i:Lg0/b$a;
@@ -221,7 +221,7 @@
 
     move-result p2
 
-    invoke-static {p1, p2}, Lf0/s;->v(Landroid/view/View;I)V
+    invoke-static {p1, p2}, Lf0/r;->v(Landroid/view/View;I)V
 
     :cond_0
     return-void

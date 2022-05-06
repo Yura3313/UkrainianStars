@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public a:I
+.field public g:I
 
-.field public b:Z
+.field public h:Z
 
-.field public h:Landroid/animation/ValueAnimator;
+.field public i:Landroid/animation/ValueAnimator;
 
-.field public i:I
+.field public j:I
 
 
 # direct methods
@@ -25,7 +25,7 @@
     const/4 p1, 0x1
 
     .line 2
-    iput-boolean p1, p0, Lcom/supercell/id/view/ViewAnimator;->b:Z
+    iput-boolean p1, p0, Lcom/supercell/id/view/ViewAnimator;->h:Z
 
     return-void
 
@@ -33,7 +33,7 @@
     const-string p1, "context"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -44,7 +44,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/supercell/id/view/ViewAnimator;->a:I
+    iget v0, p0, Lcom/supercell/id/view/ViewAnimator;->g:I
 
     return v0
 .end method
@@ -53,7 +53,7 @@
     .locals 11
 
     .line 1
-    iput p1, p0, Lcom/supercell/id/view/ViewAnimator;->a:I
+    iput p1, p0, Lcom/supercell/id/view/ViewAnimator;->g:I
 
     .line 2
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->getChildCount()I
@@ -65,7 +65,7 @@
     if-lt p1, v0, :cond_0
 
     .line 3
-    iput v1, p0, Lcom/supercell/id/view/ViewAnimator;->a:I
+    iput v1, p0, Lcom/supercell/id/view/ViewAnimator;->g:I
 
     goto :goto_0
 
@@ -79,15 +79,15 @@
 
     add-int/lit8 p1, p1, -0x1
 
-    iput p1, p0, Lcom/supercell/id/view/ViewAnimator;->a:I
+    iput p1, p0, Lcom/supercell/id/view/ViewAnimator;->g:I
 
     .line 5
     :cond_1
     :goto_0
-    iget p1, p0, Lcom/supercell/id/view/ViewAnimator;->a:I
+    iget p1, p0, Lcom/supercell/id/view/ViewAnimator;->g:I
 
     .line 6
-    iget-boolean v0, p0, Lcom/supercell/id/view/ViewAnimator;->b:Z
+    iget-boolean v0, p0, Lcom/supercell/id/view/ViewAnimator;->h:Z
 
     xor-int/lit8 v0, v0, 0x1
 
@@ -161,12 +161,12 @@
 
     .line 17
     :goto_2
-    invoke-static {v5, v6}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v5, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 18
-    iput-boolean v1, p0, Lcom/supercell/id/view/ViewAnimator;->b:Z
+    iput-boolean v1, p0, Lcom/supercell/id/view/ViewAnimator;->h:Z
 
     goto :goto_3
 
@@ -176,7 +176,7 @@
     if-eqz v0, :cond_4
 
     .line 19
-    invoke-static {v5, v6}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v5}, Landroid/view/View;->getVisibility()I
 
@@ -201,7 +201,7 @@
 
     const-string v6, "child.animate()\n        \u2026               .alpha(0f)"
 
-    invoke-static {v4, v6}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v6}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 23
     new-instance v6, Lcom/supercell/id/view/n;
@@ -214,7 +214,7 @@
 
     const-string v5, "setListener(object : Ani\u2026d = true\n        }\n    })"
 
-    invoke-static {v4, v5}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 24
     invoke-virtual {v4}, Landroid/view/ViewPropertyAnimator;->start()V
@@ -244,7 +244,7 @@
 
     .line 28
     :cond_5
-    iget-object p1, p0, Lcom/supercell/id/view/ViewAnimator;->h:Landroid/animation/ValueAnimator;
+    iget-object p1, p0, Lcom/supercell/id/view/ViewAnimator;->i:Landroid/animation/ValueAnimator;
 
     if-eqz p1, :cond_6
 
@@ -252,7 +252,7 @@
 
     .line 29
     :cond_6
-    iput-object v4, p0, Lcom/supercell/id/view/ViewAnimator;->h:Landroid/animation/ValueAnimator;
+    iput-object v4, p0, Lcom/supercell/id/view/ViewAnimator;->i:Landroid/animation/ValueAnimator;
 
     if-eqz v0, :cond_7
 
@@ -261,7 +261,7 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/supercell/id/view/ViewAnimator;->i:I
+    iput p1, p0, Lcom/supercell/id/view/ViewAnimator;->j:I
 
     const/4 p1, 0x2
 
@@ -297,7 +297,7 @@
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->start()V
 
     .line 36
-    iput-object p1, p0, Lcom/supercell/id/view/ViewAnimator;->h:Landroid/animation/ValueAnimator;
+    iput-object p1, p0, Lcom/supercell/id/view/ViewAnimator;->i:Landroid/animation/ValueAnimator;
 
     :cond_7
     return-void
@@ -347,7 +347,7 @@
 
     .line 5
     :goto_0
-    iget p1, p0, Lcom/supercell/id/view/ViewAnimator;->a:I
+    iget p1, p0, Lcom/supercell/id/view/ViewAnimator;->g:I
 
     if-gez p2, :cond_1
 
@@ -369,14 +369,14 @@
     const-string p1, "params"
 
     .line 7
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_4
     const-string p1, "child"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -423,7 +423,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/supercell/id/view/ViewAnimator;->a:I
+    iget v0, p0, Lcom/supercell/id/view/ViewAnimator;->g:I
 
     invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->getChildAt(I)Landroid/view/View;
 
@@ -440,7 +440,7 @@
     if-eqz p1, :cond_1
 
     .line 1
-    iget-object v1, p0, Lcom/supercell/id/view/ViewAnimator;->h:Landroid/animation/ValueAnimator;
+    iget-object v1, p0, Lcom/supercell/id/view/ViewAnimator;->i:Landroid/animation/ValueAnimator;
 
     if-eqz v1, :cond_0
 
@@ -448,7 +448,7 @@
 
     .line 2
     :cond_0
-    iput-object v0, p0, Lcom/supercell/id/view/ViewAnimator;->h:Landroid/animation/ValueAnimator;
+    iput-object v0, p0, Lcom/supercell/id/view/ViewAnimator;->i:Landroid/animation/ValueAnimator;
 
     .line 3
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onConfigurationChanged(Landroid/content/res/Configuration;)V
@@ -459,7 +459,7 @@
     const-string p1, "newConfig"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -493,7 +493,7 @@
 
     .line 4
     :goto_0
-    iget-object v0, p0, Lcom/supercell/id/view/ViewAnimator;->h:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lcom/supercell/id/view/ViewAnimator;->i:Landroid/animation/ValueAnimator;
 
     if-eqz v0, :cond_1
 
@@ -501,7 +501,7 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/supercell/id/view/ViewAnimator;->i:I
+    iget v1, p0, Lcom/supercell/id/view/ViewAnimator;->j:I
 
     int-to-float v2, v1
 
@@ -514,7 +514,7 @@
     add-float/2addr p2, v2
 
     .line 5
-    invoke-static {p2}, Lc2/n0;->e(F)I
+    invoke-static {p2}, Lb5/m;->r(F)I
 
     move-result p2
 
@@ -534,12 +534,12 @@
     const/4 v0, 0x0
 
     .line 2
-    iput v0, p0, Lcom/supercell/id/view/ViewAnimator;->a:I
+    iput v0, p0, Lcom/supercell/id/view/ViewAnimator;->g:I
 
     const/4 v0, 0x1
 
     .line 3
-    iput-boolean v0, p0, Lcom/supercell/id/view/ViewAnimator;->b:Z
+    iput-boolean v0, p0, Lcom/supercell/id/view/ViewAnimator;->h:Z
 
     return-void
 .end method
@@ -566,7 +566,7 @@
     const-string p1, "view"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -591,16 +591,16 @@
     const/4 p1, 0x0
 
     .line 3
-    iput p1, p0, Lcom/supercell/id/view/ViewAnimator;->a:I
+    iput p1, p0, Lcom/supercell/id/view/ViewAnimator;->g:I
 
     .line 4
-    iput-boolean v1, p0, Lcom/supercell/id/view/ViewAnimator;->b:Z
+    iput-boolean v1, p0, Lcom/supercell/id/view/ViewAnimator;->h:Z
 
     goto :goto_0
 
     .line 5
     :cond_0
-    iget v2, p0, Lcom/supercell/id/view/ViewAnimator;->a:I
+    iget v2, p0, Lcom/supercell/id/view/ViewAnimator;->g:I
 
     if-lt v2, v0, :cond_1
 
@@ -636,7 +636,7 @@
     const-string p1, "view"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -659,18 +659,18 @@
     const/4 p1, 0x0
 
     .line 3
-    iput p1, p0, Lcom/supercell/id/view/ViewAnimator;->a:I
+    iput p1, p0, Lcom/supercell/id/view/ViewAnimator;->g:I
 
     const/4 p1, 0x1
 
     .line 4
-    iput-boolean p1, p0, Lcom/supercell/id/view/ViewAnimator;->b:Z
+    iput-boolean p1, p0, Lcom/supercell/id/view/ViewAnimator;->h:Z
 
     goto :goto_0
 
     .line 5
     :cond_0
-    iget v0, p0, Lcom/supercell/id/view/ViewAnimator;->a:I
+    iget v0, p0, Lcom/supercell/id/view/ViewAnimator;->g:I
 
     if-lt v0, p1, :cond_1
 

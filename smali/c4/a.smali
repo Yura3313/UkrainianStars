@@ -1,54 +1,58 @@
 .class public Lc4/a;
 .super Ljava/lang/Object;
-.source "BottomSheetBehavior.java"
-
-# interfaces
-.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+.source "AnimationUtils.java"
 
 
-# instance fields
-.field public final synthetic a:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+# static fields
+.field public static final a:Landroid/animation/TimeInterpolator;
+
+.field public static final b:Landroid/animation/TimeInterpolator;
+
+.field public static final c:Landroid/animation/TimeInterpolator;
+
+.field public static final d:Landroid/animation/TimeInterpolator;
+
+.field public static final e:Landroid/animation/TimeInterpolator;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/bottomsheet/BottomSheetBehavior;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lc4/a;->a:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 1
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+    new-instance v0, Landroid/view/animation/LinearInterpolator;
 
-    move-result-object p1
+    invoke-direct {v0}, Landroid/view/animation/LinearInterpolator;-><init>()V
 
-    check-cast p1, Ljava/lang/Float;
-
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
-
-    move-result p1
+    sput-object v0, Lc4/a;->a:Landroid/animation/TimeInterpolator;
 
     .line 2
-    iget-object v0, p0, Lc4/a;->a:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+    new-instance v0, Lm0/b;
+
+    invoke-direct {v0}, Lm0/b;-><init>()V
+
+    sput-object v0, Lc4/a;->b:Landroid/animation/TimeInterpolator;
 
     .line 3
-    iget-object v0, v0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->i:Lr4/g;
+    new-instance v0, Lm0/a;
 
-    if-eqz v0, :cond_0
+    invoke-direct {v0}, Lm0/a;-><init>()V
+
+    sput-object v0, Lc4/a;->c:Landroid/animation/TimeInterpolator;
 
     .line 4
-    invoke-virtual {v0, p1}, Lr4/g;->r(F)V
+    new-instance v0, Lm0/c;
 
-    :cond_0
+    invoke-direct {v0}, Lm0/c;-><init>()V
+
+    sput-object v0, Lc4/a;->d:Landroid/animation/TimeInterpolator;
+
+    .line 5
+    new-instance v0, Landroid/view/animation/DecelerateInterpolator;
+
+    invoke-direct {v0}, Landroid/view/animation/DecelerateInterpolator;-><init>()V
+
+    sput-object v0, Lc4/a;->e:Landroid/animation/TimeInterpolator;
+
     return-void
 .end method

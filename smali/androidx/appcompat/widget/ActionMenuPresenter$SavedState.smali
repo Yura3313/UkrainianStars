@@ -36,7 +36,7 @@
 
 
 # instance fields
-.field public a:I
+.field public g:I
 
 
 # direct methods
@@ -73,7 +73,7 @@
 
     move-result p1
 
-    iput p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;->a:I
+    iput p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;->g:I
 
     return-void
 .end method
@@ -92,7 +92,7 @@
     .locals 0
 
     .line 1
-    iget p2, p0, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;->a:I
+    iget p2, p0, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;->g:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

@@ -29,7 +29,7 @@
 
 
 # instance fields
-.field public final a:F
+.field public final g:F
 
 
 # direct methods
@@ -40,7 +40,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput p1, p0, Lb7/e$c;->a:F
+    iput p1, p0, Lb7/e$c;->g:F
 
     return-void
 .end method
@@ -59,7 +59,7 @@
     iget p2, p2, Lb7/d;->c:F
 
     .line 3
-    iget v0, p0, Lb7/e$c;->a:F
+    iget v0, p0, Lb7/e$c;->g:F
 
     sub-float/2addr p2, v0
 
@@ -71,7 +71,7 @@
     iget p1, p1, Lb7/d;->c:F
 
     .line 5
-    iget v0, p0, Lb7/e$c;->a:F
+    iget v0, p0, Lb7/e$c;->g:F
 
     sub-float/2addr p1, v0
 
@@ -79,10 +79,26 @@
 
     move-result p1
 
-    .line 6
-    invoke-static {p2, p1}, Ljava/lang/Float;->compare(FF)I
+    cmpg-float v0, p2, p1
 
-    move-result p1
+    if-gez v0, :cond_0
 
+    const/4 p1, -0x1
+
+    goto :goto_0
+
+    :cond_0
+    cmpl-float p1, p2, p1
+
+    if-nez p1, :cond_1
+
+    const/4 p1, 0x0
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p1, 0x1
+
+    :goto_0
     return p1
 .end method

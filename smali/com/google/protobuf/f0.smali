@@ -7,10 +7,13 @@
 
 
 # virtual methods
-.method public abstract U(Lcom/google/protobuf/i;)V
+.method public abstract B(I)Ljava/lang/Object;
 .end method
 
-.method public abstract r()Ljava/util/List;
+.method public abstract X(Lcom/google/protobuf/i;)V
+.end method
+
+.method public abstract t()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -20,8 +23,5 @@
     .end annotation
 .end method
 
-.method public abstract w()Lcom/google/protobuf/f0;
-.end method
-
-.method public abstract z(I)Ljava/lang/Object;
+.method public abstract y()Lcom/google/protobuf/f0;
 .end method

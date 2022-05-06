@@ -320,7 +320,7 @@
 
     const/4 v13, 0x0
 
-    invoke-direct {v15, v14, v13}, Lz0/c;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v15, v14, v13}, Lz0/c;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     aput-object v15, v0, v2
 
@@ -328,7 +328,7 @@
 
     const-string v14, "init.svc.qemu-props"
 
-    invoke-direct {v2, v14, v13}, Lz0/c;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v2, v14, v13}, Lz0/c;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     aput-object v2, v0, v3
 
@@ -336,7 +336,7 @@
 
     const-string v3, "qemu.hw.mainkeys"
 
-    invoke-direct {v2, v3, v13}, Lz0/c;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v2, v3, v13}, Lz0/c;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     aput-object v2, v0, v4
 
@@ -344,7 +344,7 @@
 
     const-string v3, "qemu.sf.fake_camera"
 
-    invoke-direct {v2, v3, v13}, Lz0/c;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v2, v3, v13}, Lz0/c;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     aput-object v2, v0, v5
 
@@ -352,7 +352,7 @@
 
     const-string v3, "qemu.sf.lcd_density"
 
-    invoke-direct {v2, v3, v13}, Lz0/c;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v2, v3, v13}, Lz0/c;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     aput-object v2, v0, v6
 
@@ -362,7 +362,7 @@
 
     const-string v4, "unknown"
 
-    invoke-direct {v2, v3, v4}, Lz0/c;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v2, v3, v4}, Lz0/c;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     aput-object v2, v0, v7
 
@@ -370,7 +370,7 @@
 
     const-string v3, "ro.bootmode"
 
-    invoke-direct {v2, v3, v4}, Lz0/c;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v2, v3, v4}, Lz0/c;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     aput-object v2, v0, v8
 
@@ -378,7 +378,7 @@
 
     const-string v3, "ro.hardware"
 
-    invoke-direct {v2, v3, v1}, Lz0/c;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v2, v3, v1}, Lz0/c;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     aput-object v2, v0, v9
 
@@ -386,7 +386,7 @@
 
     const-string v2, "ro.kernel.android.qemud"
 
-    invoke-direct {v1, v2, v13}, Lz0/c;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, v2, v13}, Lz0/c;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     aput-object v1, v0, v10
 
@@ -394,7 +394,7 @@
 
     const-string v2, "ro.kernel.qemu.gles"
 
-    invoke-direct {v1, v2, v13}, Lz0/c;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, v2, v13}, Lz0/c;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     aput-object v1, v0, v11
 
@@ -404,7 +404,7 @@
 
     const-string v3, "1"
 
-    invoke-direct {v1, v2, v3}, Lz0/c;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, v2, v3}, Lz0/c;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     aput-object v1, v0, v12
 
@@ -414,7 +414,7 @@
 
     const-string v3, "generic"
 
-    invoke-direct {v1, v2, v3}, Lz0/c;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, v2, v3}, Lz0/c;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     const/16 v2, 0xb
 
@@ -426,7 +426,7 @@
 
     const-string v3, "sdk"
 
-    invoke-direct {v1, v2, v3}, Lz0/c;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, v2, v3}, Lz0/c;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     const/16 v2, 0xc
 
@@ -436,7 +436,7 @@
 
     const-string v2, "ro.product.name"
 
-    invoke-direct {v1, v2, v3}, Lz0/c;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, v2, v3}, Lz0/c;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     const/16 v2, 0xd
 

@@ -95,7 +95,7 @@
     const-string v6, "subs"
 
     .line 7
-    invoke-interface/range {v1 .. v7}, Lcom/google/android/gms/internal/play_billing/zzd;->m5(ILjava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
+    invoke-interface/range {v1 .. v7}, Lcom/google/android/gms/internal/play_billing/zzd;->n5(ILjava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object v0
 

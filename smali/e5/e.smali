@@ -75,7 +75,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Ll5/v0$c;->SYMMETRIC:Ll5/v0$c;
+    sget-object v0, Ll5/v0$c;->i:Ll5/v0$c;
 
     return-object v0
 .end method
@@ -93,7 +93,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Ll5/l;->z(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/l;
+    invoke-static {p1, v0}, Ll5/l;->y(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/l;
 
     move-result-object p1
 
@@ -112,7 +112,7 @@
     check-cast p1, Ll5/l;
 
     .line 2
-    invoke-virtual {p1}, Ll5/l;->x()I
+    invoke-virtual {p1}, Ll5/l;->w()I
 
     move-result v0
 
@@ -121,7 +121,7 @@
     invoke-static {v0, v1}, Lp5/m0;->e(II)V
 
     .line 3
-    invoke-virtual {p1}, Ll5/l;->v()Lm5/c;
+    invoke-virtual {p1}, Ll5/l;->u()Lm5/c;
 
     move-result-object v0
 
@@ -132,11 +132,11 @@
     invoke-static {v0}, Lp5/m0;->a(I)V
 
     .line 4
-    invoke-virtual {p1}, Ll5/l;->w()Ll5/n;
+    invoke-virtual {p1}, Ll5/l;->v()Ll5/n;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ll5/n;->t()I
+    invoke-virtual {v0}, Ll5/n;->s()I
 
     move-result v0
 
@@ -144,11 +144,11 @@
 
     if-eq v0, v1, :cond_1
 
-    invoke-virtual {p1}, Ll5/l;->w()Ll5/n;
+    invoke-virtual {p1}, Ll5/l;->v()Ll5/n;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Ll5/n;->t()I
+    invoke-virtual {p1}, Ll5/n;->s()I
 
     move-result p1
 

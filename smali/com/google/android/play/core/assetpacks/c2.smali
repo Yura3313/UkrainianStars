@@ -136,46 +136,50 @@
 
     invoke-direct {v5, v4}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
-    :try_start_0
-    new-instance v4, Lcom/google/android/play/core/assetpacks/i0;
-
-    invoke-direct {v4, v5}, Lcom/google/android/play/core/assetpacks/i0;-><init>(Ljava/io/InputStream;)V
-
-    invoke-virtual {v4}, Lcom/google/android/play/core/assetpacks/i0;->b()Lcom/google/android/play/core/assetpacks/g2;
+    invoke-static {v5, v4}, Lio/sentry/instrumentation/file/SentryFileInputStream$Factory;->create(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
 
     move-result-object v4
 
-    move-object v6, v4
+    :try_start_0
+    new-instance v5, Lcom/google/android/play/core/assetpacks/i0;
 
-    check-cast v6, Lcom/google/android/play/core/assetpacks/f0;
+    invoke-direct {v5, v4}, Lcom/google/android/play/core/assetpacks/i0;-><init>(Ljava/io/InputStream;)V
+
+    invoke-virtual {v5}, Lcom/google/android/play/core/assetpacks/i0;->b()Lcom/google/android/play/core/assetpacks/g2;
+
+    move-result-object v5
+
+    move-object v6, v5
+
+    check-cast v6, Lcom/google/android/play/core/assetpacks/g0;
 
     .line 1
-    iget-object v6, v6, Lcom/google/android/play/core/assetpacks/f0;->a:Ljava/lang/String;
+    iget-object v6, v6, Lcom/google/android/play/core/assetpacks/g0;->a:Ljava/lang/String;
 
     if-eqz v6, :cond_4
 
     .line 2
     new-instance v6, Ljava/io/File;
 
-    check-cast v4, Lcom/google/android/play/core/assetpacks/f0;
+    check-cast v5, Lcom/google/android/play/core/assetpacks/g0;
 
     .line 3
-    iget-object v4, v4, Lcom/google/android/play/core/assetpacks/f0;->a:Ljava/lang/String;
+    iget-object v5, v5, Lcom/google/android/play/core/assetpacks/g0;->a:Ljava/lang/String;
 
     .line 4
-    invoke-direct {v6, p0, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    invoke-direct {v6, p0, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
     invoke-virtual {v6}, Ljava/io/File;->exists()Z
 
-    move-result v4
+    move-result v5
 
-    if-eqz v4, :cond_3
+    if-eqz v5, :cond_3
 
     invoke-virtual {v0, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-virtual {v5}, Ljava/io/InputStream;->close()V
+    invoke-virtual {v4}, Ljava/io/InputStream;->close()V
 
     goto :goto_4
 
@@ -221,7 +225,7 @@
 
     :goto_2
     :try_start_2
-    invoke-virtual {v5}, Ljava/io/InputStream;->close()V
+    invoke-virtual {v4}, Ljava/io/InputStream;->close()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
@@ -231,7 +235,7 @@
     move-exception p1
 
     .line 5
-    sget-object v0, Ly4/i0;->a:Landroidx/fragment/app/t;
+    sget-object v0, Ly4/k0;->a:Landroidx/fragment/app/t;
 
     invoke-virtual {v0, p0, p1}, Landroidx/fragment/app/t;->b(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 

@@ -3,97 +3,43 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/util/concurrent/Callable;
+.implements Lj3/cd0;
 
 
 # instance fields
-.field public final a:Ljava/util/List;
+.field public final a:Lj3/jc0;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;)V
+.method public constructor <init>(Lj3/jc0;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj3/ic0;->a:Ljava/util/List;
+    iput-object p1, p0, Lj3/ic0;->a:Lj3/jc0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 4
+.method public final b(Ljava/lang/Object;)V
+    .locals 2
+
+    iget-object v0, p0, Lj3/ic0;->a:Lj3/jc0;
+
+    check-cast p1, Landroid/os/Bundle;
 
     .line 1
-    iget-object v0, p0, Lj3/ic0;->a:Ljava/util/List;
+    iget-object v0, v0, Lj3/jc0;->a:Landroid/content/Context;
 
-    .line 2
-    new-instance v1, Lorg/json/JSONArray;
-
-    invoke-direct {v1}, Lorg/json/JSONArray;-><init>()V
-
-    .line 3
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v0
 
-    :cond_0
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    const-string v1, "rewarded_sku_package"
 
-    move-result v2
+    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    if-eqz v2, :cond_1
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lj3/yl0;
-
-    .line 4
-    invoke-interface {v2}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lorg/json/JSONObject;
-
-    if-eqz v3, :cond_0
-
-    .line 5
-    invoke-interface {v2}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
-
-    goto :goto_0
-
-    .line 6
-    :cond_1
-    invoke-virtual {v1}, Lorg/json/JSONArray;->length()I
-
-    move-result v0
-
-    if-nez v0, :cond_2
-
-    const/4 v0, 0x0
-
-    return-object v0
-
-    .line 7
-    :cond_2
-    new-instance v0, Lj3/cc0;
-
-    invoke-virtual {v1}, Lorg/json/JSONArray;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v2}, Lj3/cc0;-><init>(Ljava/lang/String;I)V
-
-    return-object v0
+    return-void
 .end method

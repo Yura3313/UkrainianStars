@@ -121,6 +121,14 @@
     .locals 3
 
     .line 1
+    iget-object v0, p0, Lio/sentry/Hub;->options:Lio/sentry/SentryOptions;
+
+    invoke-virtual {v0}, Lio/sentry/SentryOptions;->isTracingEnabled()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
     invoke-virtual {p1}, Lio/sentry/SentryBaseEvent;->getThrowable()Ljava/lang/Throwable;
 
     move-result-object v0
@@ -653,7 +661,7 @@
 
     move-result-object p1
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     if-eqz p1, :cond_1
 
@@ -661,7 +669,7 @@
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception p1
 
     .line 9
@@ -677,11 +685,8 @@
 
     invoke-interface {p2, v1, v2, p1}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 10
     :cond_1
     :goto_0
-    iput-object v0, p0, Lio/sentry/Hub;->lastEventId:Lio/sentry/protocol/SentryId;
-
     return-object v0
 .end method
 
@@ -777,11 +782,11 @@
     .line 10
     iput-object v0, p0, Lio/sentry/Hub;->lastEventId:Lio/sentry/protocol/SentryId;
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception p2
 
     .line 11
@@ -796,7 +801,7 @@
 
     const-string v3, "Error while capturing event with id: "
 
-    invoke-static {v3}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
@@ -912,11 +917,11 @@
 
     move-result-object v0
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception p2
 
     .line 11
@@ -931,7 +936,7 @@
 
     const-string v3, "Error while capturing exception: "
 
-    invoke-static {v3}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
@@ -1042,11 +1047,11 @@
 
     move-result-object v0
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception p2
 
     .line 9
@@ -1081,18 +1086,18 @@
     return-object v0
 .end method
 
-.method public synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;)Lio/sentry/protocol/SentryId;
+.method public synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;)Lio/sentry/protocol/SentryId;
     .locals 0
 
-    invoke-static {p0, p1}, Lio/sentry/f;->h(Lio/sentry/IHub;Lio/sentry/protocol/SentryTransaction;)Lio/sentry/protocol/SentryId;
+    invoke-static {p0, p1, p2}, Lio/sentry/f;->h(Lio/sentry/IHub;Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;)Lio/sentry/protocol/SentryId;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public captureTransaction(Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
-    .locals 7
+.method public captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+    .locals 5
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 
@@ -1123,12 +1128,12 @@
 
     sget-object p2, Lio/sentry/SentryLevel;->WARNING:Lio/sentry/SentryLevel;
 
-    new-array v1, v2, [Ljava/lang/Object;
+    new-array p3, v2, [Ljava/lang/Object;
 
-    const-string v2, "Instance is disabled and this \'captureTransaction\' call is a no-op."
+    const-string v1, "Instance is disabled and this \'captureTransaction\' call is a no-op."
 
     .line 6
-    invoke-interface {p1, p2, v2, v1}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v1, p3}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
 
     goto :goto_0
 
@@ -1143,28 +1148,30 @@
     if-nez v1, :cond_1
 
     .line 8
-    iget-object v1, p0, Lio/sentry/Hub;->options:Lio/sentry/SentryOptions;
+    iget-object p2, p0, Lio/sentry/Hub;->options:Lio/sentry/SentryOptions;
 
     .line 9
-    invoke-virtual {v1}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {p2}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
 
-    move-result-object v1
+    move-result-object p2
 
-    sget-object v4, Lio/sentry/SentryLevel;->WARNING:Lio/sentry/SentryLevel;
+    sget-object p3, Lio/sentry/SentryLevel;->WARNING:Lio/sentry/SentryLevel;
 
-    new-array v5, v3, [Ljava/lang/Object;
+    new-array v1, v3, [Ljava/lang/Object;
 
     .line 10
     invoke-virtual {p1}, Lio/sentry/SentryBaseEvent;->getEventId()Lio/sentry/protocol/SentryId;
 
-    move-result-object v6
+    move-result-object p1
 
-    aput-object v6, v5, v2
+    aput-object p1, v1, v2
 
-    const-string v6, "Capturing unfinished transaction: %s"
+    const-string p1, "Transaction: %s is not finished and this \'captureTransaction\' call is a no-op."
 
     .line 11
-    invoke-interface {v1, v4, v6, v5}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p2, p3, p1, v1}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    goto :goto_0
 
     .line 12
     :cond_1
@@ -1192,21 +1199,21 @@
 
     move-result-object p2
 
-    sget-object v1, Lio/sentry/SentryLevel;->DEBUG:Lio/sentry/SentryLevel;
+    sget-object p3, Lio/sentry/SentryLevel;->DEBUG:Lio/sentry/SentryLevel;
 
-    new-array v3, v3, [Ljava/lang/Object;
+    new-array v1, v3, [Ljava/lang/Object;
 
     .line 15
     invoke-virtual {p1}, Lio/sentry/SentryBaseEvent;->getEventId()Lio/sentry/protocol/SentryId;
 
     move-result-object p1
 
-    aput-object p1, v3, v2
+    aput-object p1, v1, v2
 
     const-string p1, "Transaction %s was dropped due to sampling decision."
 
     .line 16
-    invoke-interface {p2, v1, p1, v3}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p2, p3, p1, v1}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
 
     goto :goto_0
 
@@ -1228,52 +1235,59 @@
 
     move-result-object v1
 
-    invoke-interface {v2, p1, v1, p2}, Lio/sentry/ISentryClient;->captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+    invoke-interface {v2, p1, p2, v1, p3}, Lio/sentry/ISentryClient;->captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
     move-result-object v0
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception p2
 
     .line 19
-    iget-object v1, p0, Lio/sentry/Hub;->options:Lio/sentry/SentryOptions;
+    iget-object p3, p0, Lio/sentry/Hub;->options:Lio/sentry/SentryOptions;
 
     .line 20
-    invoke-virtual {v1}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {p3}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
 
-    move-result-object v1
+    move-result-object p3
 
-    sget-object v2, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
+    sget-object v1, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
 
-    const-string v3, "Error while capturing transaction with id: "
+    const-string v2, "Error while capturing transaction with id: "
 
-    invoke-static {v3}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    move-result-object v2
 
     .line 21
     invoke-virtual {p1}, Lio/sentry/SentryBaseEvent;->getEventId()Lio/sentry/protocol/SentryId;
 
     move-result-object p1
 
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     .line 22
-    invoke-interface {v1, v2, p1, p2}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {p3, v1, p1, p2}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 23
     :goto_0
-    iput-object v0, p0, Lio/sentry/Hub;->lastEventId:Lio/sentry/protocol/SentryId;
-
     return-object v0
+.end method
+
+.method public synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Lio/sentry/f;->i(Lio/sentry/IHub;Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+
+    move-result-object p1
+
+    return-object p1
 .end method
 
 .method public captureUserFeedback(Lio/sentry/UserFeedback;)V
@@ -1323,11 +1337,11 @@
 
     invoke-interface {v0, p1}, Lio/sentry/ISentryClient;->captureUserFeedback(Lio/sentry/UserFeedback;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception v0
 
     .line 7
@@ -1342,7 +1356,7 @@
 
     const-string v3, "Error while capturing captureUserFeedback: "
 
-    invoke-static {v3}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
@@ -1573,11 +1587,11 @@
 
     invoke-interface {v0}, Lio/sentry/ISentryClient;->close()V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_1
 
-    :catch_0
+    :catchall_0
     move-exception v0
 
     .line 11
@@ -1647,11 +1661,11 @@
 
     invoke-interface {p1, v0}, Lio/sentry/ScopeCallback;->run(Lio/sentry/Scope;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception p1
 
     .line 6
@@ -1783,11 +1797,11 @@
 
     invoke-interface {v0, p1, p2}, Lio/sentry/ISentryClient;->flush(J)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception p1
 
     .line 6
@@ -1930,6 +1944,36 @@
     const/4 p1, 0x0
 
     return-object p1
+.end method
+
+.method public isCrashedLastRun()Ljava/lang/Boolean;
+    .locals 3
+
+    .line 1
+    invoke-static {}, Lio/sentry/SentryCrashLastRunState;->getInstance()Lio/sentry/SentryCrashLastRunState;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lio/sentry/Hub;->options:Lio/sentry/SentryOptions;
+
+    .line 2
+    invoke-virtual {v1}, Lio/sentry/SentryOptions;->getCacheDirPath()Ljava/lang/String;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lio/sentry/Hub;->options:Lio/sentry/SentryOptions;
+
+    invoke-virtual {v2}, Lio/sentry/SentryOptions;->isEnableAutoSessionTracking()Z
+
+    move-result v2
+
+    xor-int/lit8 v2, v2, 0x1
+
+    invoke-virtual {v0, v1, v2}, Lio/sentry/SentryCrashLastRunState;->isCrashedLastRun(Ljava/lang/String;Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    return-object v0
 .end method
 
 .method public isEnabled()Z
@@ -2742,7 +2786,7 @@
 .method public synthetic startTransaction(Lio/sentry/TransactionContext;)Lio/sentry/ITransaction;
     .locals 0
 
-    invoke-static {p0, p1}, Lio/sentry/f;->i(Lio/sentry/IHub;Lio/sentry/TransactionContext;)Lio/sentry/ITransaction;
+    invoke-static {p0, p1}, Lio/sentry/f;->j(Lio/sentry/IHub;Lio/sentry/TransactionContext;)Lio/sentry/ITransaction;
 
     move-result-object p1
 
@@ -2752,7 +2796,7 @@
 .method public synthetic startTransaction(Lio/sentry/TransactionContext;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lio/sentry/f;->j(Lio/sentry/IHub;Lio/sentry/TransactionContext;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
+    invoke-static {p0, p1, p2}, Lio/sentry/f;->k(Lio/sentry/IHub;Lio/sentry/TransactionContext;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
 
     move-result-object p1
 
@@ -2827,7 +2871,7 @@
 .method public synthetic startTransaction(Lio/sentry/TransactionContext;Z)Lio/sentry/ITransaction;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lio/sentry/f;->k(Lio/sentry/IHub;Lio/sentry/TransactionContext;Z)Lio/sentry/ITransaction;
+    invoke-static {p0, p1, p2}, Lio/sentry/f;->l(Lio/sentry/IHub;Lio/sentry/TransactionContext;Z)Lio/sentry/ITransaction;
 
     move-result-object p1
 
@@ -2837,7 +2881,7 @@
 .method public synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;)Lio/sentry/ITransaction;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lio/sentry/f;->l(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;)Lio/sentry/ITransaction;
+    invoke-static {p0, p1, p2}, Lio/sentry/f;->m(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;)Lio/sentry/ITransaction;
 
     move-result-object p1
 
@@ -2847,7 +2891,7 @@
 .method public synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
     .locals 0
 
-    invoke-static {p0, p1, p2, p3}, Lio/sentry/f;->m(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
+    invoke-static {p0, p1, p2, p3}, Lio/sentry/f;->n(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
 
     move-result-object p1
 
@@ -2857,7 +2901,7 @@
 .method public synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;Z)Lio/sentry/ITransaction;
     .locals 0
 
-    invoke-static {p0, p1, p2, p3, p4}, Lio/sentry/f;->n(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;Z)Lio/sentry/ITransaction;
+    invoke-static {p0, p1, p2, p3, p4}, Lio/sentry/f;->o(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;Z)Lio/sentry/ITransaction;
 
     move-result-object p1
 
@@ -2867,7 +2911,7 @@
 .method public synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;ZLio/sentry/TransactionFinishedCallback;)Lio/sentry/ITransaction;
     .locals 0
 
-    invoke-static/range {p0 .. p5}, Lio/sentry/f;->o(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;ZLio/sentry/TransactionFinishedCallback;)Lio/sentry/ITransaction;
+    invoke-static/range {p0 .. p5}, Lio/sentry/f;->p(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;ZLio/sentry/TransactionFinishedCallback;)Lio/sentry/ITransaction;
 
     move-result-object p1
 
@@ -2877,7 +2921,7 @@
 .method public synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;Z)Lio/sentry/ITransaction;
     .locals 0
 
-    invoke-static {p0, p1, p2, p3}, Lio/sentry/f;->p(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Z)Lio/sentry/ITransaction;
+    invoke-static {p0, p1, p2, p3}, Lio/sentry/f;->q(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Z)Lio/sentry/ITransaction;
 
     move-result-object p1
 
@@ -2997,11 +3041,11 @@
 
     invoke-interface {p1, v0}, Lio/sentry/ScopeCallback;->run(Lio/sentry/Scope;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception p1
 
     .line 7

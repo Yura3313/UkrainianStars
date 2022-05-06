@@ -184,7 +184,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/user/model/UserShippingAddresses;->shippingAddresses:Ljava/util/List;
 
-    invoke-static {v1, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -285,7 +285,7 @@
 
     const-string v0, "UserShippingAddresses(userId="
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

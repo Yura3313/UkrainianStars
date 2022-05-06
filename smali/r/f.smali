@@ -6,14 +6,6 @@
 .implements Lr/d;
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lr/f$a;
-    }
-.end annotation
-
-
 # instance fields
 .field public a:Lr/d;
 
@@ -23,7 +15,7 @@
 
 .field public d:Lr/p;
 
-.field public e:Lr/f$a;
+.field public e:I
 
 .field public f:I
 
@@ -76,12 +68,10 @@
     .line 4
     iput-boolean v1, p0, Lr/f;->c:Z
 
-    .line 5
-    sget-object v2, Lr/f$a;->UNKNOWN:Lr/f$a;
-
-    iput-object v2, p0, Lr/f;->e:Lr/f$a;
-
     const/4 v2, 0x1
+
+    .line 5
+    iput v2, p0, Lr/f;->e:I
 
     .line 6
     iput v2, p0, Lr/f;->h:I
@@ -368,9 +358,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lr/f;->e:Lr/f$a;
+    iget v1, p0, Lr/f;->e:I
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Ld2/a;->b(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v1, "("
 

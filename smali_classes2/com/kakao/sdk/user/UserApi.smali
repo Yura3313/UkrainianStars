@@ -32,7 +32,7 @@
         value = {
             "()",
             "Lxe/b<",
-            "Lbe/n;",
+            "Lae/i;",
             ">;"
         }
     .end annotation
@@ -135,7 +135,7 @@
             "Ljava/lang/String;",
             ">;)",
             "Lxe/b<",
-            "Lbe/n;",
+            "Lae/i;",
             ">;"
         }
     .end annotation
@@ -153,7 +153,7 @@
         value = {
             "()",
             "Lxe/b<",
-            "Lbe/n;",
+            "Lae/i;",
             ">;"
         }
     .end annotation
@@ -177,7 +177,7 @@
             "Ljava/lang/String;",
             ">;)",
             "Lxe/b<",
-            "Lbe/n;",
+            "Lae/i;",
             ">;"
         }
     .end annotation

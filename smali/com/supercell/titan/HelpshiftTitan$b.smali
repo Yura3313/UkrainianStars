@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/titan/HelpshiftTitan$b;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/titan/HelpshiftTitan$b;->g:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,10 +40,10 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lcom/supercell/titan/HelpshiftTitan$b;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/titan/HelpshiftTitan$b;->g:Ljava/lang/String;
 
     .line 2
-    invoke-static {}, Lcom/helpshift/util/r;->b()Z
+    invoke-static {}, Lcom/helpshift/util/q;->c()Z
 
     move-result v1
 
@@ -53,17 +53,17 @@
 
     .line 3
     :cond_0
-    sget-object v1, Llb/b;->a:Llb/a;
+    sget-object v1, Ljb/b;->a:Ljb/a;
 
     .line 4
-    new-instance v2, Lla/v;
+    new-instance v2, Lja/v;
 
-    invoke-direct {v2, v0}, Lla/v;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v0}, Lja/v;-><init>(Ljava/lang/String;)V
 
-    check-cast v1, Llb/c;
+    check-cast v1, Ljb/c;
 
     .line 5
-    iget-object v0, v1, Llb/c;->c:Landroid/os/Handler;
+    iget-object v0, v1, Ljb/c;->c:Landroid/os/Handler;
 
     invoke-virtual {v0, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
     :try_end_0

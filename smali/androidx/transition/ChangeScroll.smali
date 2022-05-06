@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final D:[Ljava/lang/String;
+.field public static final E:[Ljava/lang/String;
 
 
 # direct methods
@@ -28,7 +28,7 @@
     aput-object v2, v0, v1
 
     .line 1
-    sput-object v0, Landroidx/transition/ChangeScroll;->D:[Ljava/lang/String;
+    sput-object v0, Landroidx/transition/ChangeScroll;->E:[Ljava/lang/String;
 
     return-void
 .end method
@@ -53,7 +53,7 @@
 
 
 # virtual methods
-.method public final I(Lv0/s;)V
+.method public final J(Lv0/s;)V
     .locals 3
 
     .line 1
@@ -97,7 +97,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/ChangeScroll;->I(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/ChangeScroll;->J(Lv0/s;)V
 
     return-void
 .end method
@@ -106,12 +106,12 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/ChangeScroll;->I(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/ChangeScroll;->J(Lv0/s;)V
 
     return-void
 .end method
 
-.method public k(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+.method public l(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
     .locals 7
 
     const/4 p1, 0x0
@@ -241,11 +241,11 @@
     return-object p1
 .end method
 
-.method public q()[Ljava/lang/String;
+.method public r()[Ljava/lang/String;
     .locals 1
 
     .line 1
-    sget-object v0, Landroidx/transition/ChangeScroll;->D:[Ljava/lang/String;
+    sget-object v0, Landroidx/transition/ChangeScroll;->E:[Ljava/lang/String;
 
     return-object v0
 .end method

@@ -147,7 +147,7 @@
 
     .line 8
     :try_start_0
-    const-class p2, Lbe/n;
+    const-class p2, Lae/i;
 
     if-ne p1, p2, :cond_3
 

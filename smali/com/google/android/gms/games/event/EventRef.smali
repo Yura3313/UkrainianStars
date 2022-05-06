@@ -13,20 +13,9 @@
     const-string v0, "icon_image_uri"
 
     .line 1
-    invoke-virtual {p0, v0}, Lb2/d;->A(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-virtual {p0, v0}, Lb2/d;->B(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final synthetic c2()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    new-instance v0, Lcom/google/android/gms/games/event/EventEntity;
-
-    invoke-direct {v0, p0}, Lcom/google/android/gms/games/event/EventEntity;-><init>(Lcom/google/android/gms/games/event/Event;)V
 
     return-object v0
 .end method
@@ -39,11 +28,22 @@
     return v0
 .end method
 
+.method public final synthetic e2()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/google/android/gms/games/event/EventEntity;
+
+    invoke-direct {v0, p0}, Lcom/google/android/gms/games/event/EventEntity;-><init>(Lcom/google/android/gms/games/event/Event;)V
+
+    return-object v0
+.end method
+
 .method public final equals(Ljava/lang/Object;)Z
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/google/android/gms/games/event/EventEntity;->y2(Lcom/google/android/gms/games/event/Event;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lcom/google/android/gms/games/event/EventEntity;->A2(Lcom/google/android/gms/games/event/Event;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -54,15 +54,15 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "description"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -73,15 +73,15 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "external_event_id"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -92,15 +92,15 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "icon_image_url"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -111,15 +111,15 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "name"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -130,15 +130,15 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "value"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->A2(Ljava/lang/String;II)J
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->C2(Ljava/lang/String;II)J
 
     move-result-wide v0
 
@@ -149,60 +149,60 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/event/EventEntity;->x2(Lcom/google/android/gms/games/event/Event;)I
+    invoke-static {p0}, Lcom/google/android/gms/games/event/EventEntity;->z2(Lcom/google/android/gms/games/event/Event;)I
 
     move-result v0
 
     return v0
-.end method
-
-.method public final i()Lcom/google/android/gms/games/Player;
-    .locals 3
-
-    .line 1
-    new-instance v0, Lcom/google/android/gms/games/PlayerRef;
-
-    iget-object v1, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
-
-    iget v2, p0, Lb2/d;->b:I
-
-    invoke-direct {v0, v1, v2}, Lcom/google/android/gms/games/PlayerRef;-><init>(Lcom/google/android/gms/common/data/DataHolder;I)V
-
-    return-object v0
 .end method
 
 .method public final isVisible()Z
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "visibility"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->x2(Ljava/lang/String;II)Z
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->z2(Ljava/lang/String;II)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public final o2()Ljava/lang/String;
-    .locals 4
+.method public final l()Lcom/google/android/gms/games/Player;
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    new-instance v0, Lcom/google/android/gms/games/PlayerRef;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget-object v1, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
     iget v2, p0, Lb2/d;->h:I
 
+    invoke-direct {v0, v1, v2}, Lcom/google/android/gms/games/PlayerRef;-><init>(Lcom/google/android/gms/common/data/DataHolder;I)V
+
+    return-object v0
+.end method
+
+.method public final q2()Ljava/lang/String;
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
+
+    iget v1, p0, Lb2/d;->h:I
+
+    iget v2, p0, Lb2/d;->i:I
+
     const-string v3, "formatted_value"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -213,7 +213,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/event/EventEntity;->z2(Lcom/google/android/gms/games/event/Event;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/android/gms/games/event/EventEntity;->B2(Lcom/google/android/gms/games/event/Event;)Ljava/lang/String;
 
     move-result-object v0
 

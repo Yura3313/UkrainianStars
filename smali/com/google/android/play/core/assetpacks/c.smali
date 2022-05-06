@@ -3,18 +3,18 @@
 
 
 # instance fields
-.field public final synthetic b:Lcom/google/android/play/core/tasks/i;
+.field public final synthetic h:Lcom/google/android/play/core/tasks/i;
 
-.field public final synthetic h:Lcom/google/android/play/core/assetpacks/o;
+.field public final synthetic i:Lcom/google/android/play/core/assetpacks/o;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;Lcom/google/android/play/core/tasks/i;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/c;->h:Lcom/google/android/play/core/assetpacks/o;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/c;->i:Lcom/google/android/play/core/assetpacks/o;
 
-    iput-object p3, p0, Lcom/google/android/play/core/assetpacks/c;->b:Lcom/google/android/play/core/tasks/i;
+    iput-object p3, p0, Lcom/google/android/play/core/assetpacks/c;->h:Lcom/google/android/play/core/tasks/i;
 
     invoke-direct {p0, p2}, Ly4/c;-><init>(Lcom/google/android/play/core/tasks/i;)V
 
@@ -27,7 +27,7 @@
     .locals 6
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/c;->h:Lcom/google/android/play/core/assetpacks/o;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/c;->i:Lcom/google/android/play/core/assetpacks/o;
 
     .line 1
     iget-object v1, v0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/l;
@@ -48,13 +48,13 @@
 
     new-instance v3, Lcom/google/android/play/core/assetpacks/l;
 
-    iget-object v4, p0, Lcom/google/android/play/core/assetpacks/c;->h:Lcom/google/android/play/core/assetpacks/o;
+    iget-object v4, p0, Lcom/google/android/play/core/assetpacks/c;->i:Lcom/google/android/play/core/assetpacks/o;
 
-    iget-object v5, p0, Lcom/google/android/play/core/assetpacks/c;->b:Lcom/google/android/play/core/tasks/i;
+    iget-object v5, p0, Lcom/google/android/play/core/assetpacks/c;->h:Lcom/google/android/play/core/tasks/i;
 
     invoke-direct {v3, v4, v5}, Lcom/google/android/play/core/assetpacks/l;-><init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;)V
 
-    invoke-interface {v1, v0, v2, v3}, Lcom/google/android/play/core/internal/s;->R3(Ljava/lang/String;Landroid/os/Bundle;Lcom/google/android/play/core/internal/u;)V
+    invoke-interface {v1, v0, v2, v3}, Lcom/google/android/play/core/internal/s;->S3(Ljava/lang/String;Landroid/os/Bundle;Lcom/google/android/play/core/internal/u;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -75,7 +75,7 @@
     .line 7
     invoke-virtual {v1, v0, v3, v2}, Ly4/b;->c(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/c;->b:Lcom/google/android/play/core/tasks/i;
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/c;->h:Lcom/google/android/play/core/tasks/i;
 
     new-instance v2, Ljava/lang/RuntimeException;
 

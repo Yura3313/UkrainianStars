@@ -23,7 +23,7 @@
     iput-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/h;->a:Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;
 
     .line 3
-    iput-object p0, p1, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->a:Lcom/google/crypto/tink/shaded/protobuf/h;
+    iput-object p0, p1, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->g:Lcom/google/crypto/tink/shaded/protobuf/h;
 
     return-void
 .end method
@@ -95,7 +95,7 @@
     invoke-virtual {v0, p1, v1}, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->c0(II)V
 
     .line 3
-    iget-object v1, v0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->a:Lcom/google/crypto/tink/shaded/protobuf/h;
+    iget-object v1, v0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->g:Lcom/google/crypto/tink/shaded/protobuf/h;
 
     invoke-interface {p3, p2, v1}, Lcom/google/crypto/tink/shaded/protobuf/h0;->i(Ljava/lang/Object;Lcom/google/crypto/tink/shaded/protobuf/o0;)V
 

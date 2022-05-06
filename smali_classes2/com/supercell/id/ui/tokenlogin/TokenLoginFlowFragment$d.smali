@@ -21,15 +21,15 @@
         "Lle/j;",
         "Lke/p<",
         "Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;",
-        "Ltc/j;",
-        "Lbe/n;",
+        "Lqc/m;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$d;
+.field public static final g:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$d;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$d;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$d;->a:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$d;
+    sput-object v0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$d;->g:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$d;
 
     return-void
 .end method
@@ -63,7 +63,7 @@
     .line 1
     check-cast p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
 
-    check-cast p2, Ltc/j;
+    check-cast p2, Lqc/m;
 
     const/4 v0, 0x0
 
@@ -72,25 +72,25 @@
     if-eqz p2, :cond_0
 
     .line 2
-    iget-boolean v0, p2, Ltc/j;->a:Z
+    iget-boolean v0, p2, Lqc/m;->a:Z
 
     .line 3
-    iput-boolean v0, p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->o0:Z
+    iput-boolean v0, p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->p0:Z
 
     .line 4
-    iget-object p2, p2, Ltc/j;->b:Lcom/supercell/id/model/IdConnectedSystem;
+    iget-object p2, p2, Lqc/m;->b:Lcom/supercell/id/model/IdConnectedSystem;
 
     .line 5
-    iput-object p2, p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->p0:Lcom/supercell/id/model/IdConnectedSystem;
+    iput-object p2, p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->q0:Lcom/supercell/id/model/IdConnectedSystem;
 
     .line 6
-    iget-object p1, p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->q0:Ljava/util/Observable;
+    iget-object p1, p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->r0:Ljava/util/Observable;
 
     .line 7
     invoke-virtual {p1}, Ljava/util/Observable;->notifyObservers()V
 
     .line 8
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -98,14 +98,14 @@
     const-string p1, "it"
 
     .line 9
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_1
     const-string p1, "$receiver"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

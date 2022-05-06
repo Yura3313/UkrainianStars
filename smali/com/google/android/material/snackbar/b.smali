@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+.field public final synthetic g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
 
 # direct methods
@@ -15,7 +15,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/snackbar/b;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    iput-object p1, p0, Lcom/google/android/material/snackbar/b;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,14 +39,14 @@
     move-result p1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/snackbar/b;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/b;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     iget-object v0, v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->c:Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;
 
     invoke-virtual {v0, p1}, Landroid/widget/FrameLayout;->setScaleX(F)V
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/snackbar/b;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/b;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     iget-object v0, v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->c:Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;
 

@@ -295,7 +295,7 @@
     .line 5
     iget-object p1, p0, Lo4/d;->l:Landroid/graphics/Typeface;
 
-    invoke-virtual {p2, p1, v7}, La2/a0;->j(Landroid/graphics/Typeface;Z)V
+    invoke-virtual {p2, p1, v7}, La2/a0;->i(Landroid/graphics/Typeface;Z)V
 
     return-void
 
@@ -350,7 +350,7 @@
     const/4 p1, -0x3
 
     .line 11
-    invoke-virtual {p2, p1}, La2/a0;->h(I)V
+    invoke-virtual {p2, p1}, La2/a0;->b(I)V
 
     goto :goto_0
 
@@ -359,7 +359,7 @@
     iput-boolean v7, p0, Lo4/d;->k:Z
 
     .line 13
-    invoke-virtual {p2, v7}, La2/a0;->h(I)V
+    invoke-virtual {p2, v7}, La2/a0;->b(I)V
 
     :goto_0
     return-void

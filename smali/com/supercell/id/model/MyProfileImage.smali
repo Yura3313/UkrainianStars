@@ -88,9 +88,9 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 2
-    sget-object p2, Lcom/supercell/id/model/MyProfileImage$Empty;->a:Lcom/supercell/id/model/MyProfileImage$Empty;
+    sget-object p2, Lcom/supercell/id/model/MyProfileImage$Empty;->g:Lcom/supercell/id/model/MyProfileImage$Empty;
 
-    invoke-static {p0, p2}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p2
 
@@ -110,7 +110,7 @@
     check-cast p2, Lcom/supercell/id/model/MyProfileImage$Avatar;
 
     .line 5
-    iget-object p2, p2, Lcom/supercell/id/model/MyProfileImage$Avatar;->a:Ljava/lang/String;
+    iget-object p2, p2, Lcom/supercell/id/model/MyProfileImage$Avatar;->g:Ljava/lang/String;
 
     .line 6
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
@@ -129,13 +129,13 @@
     check-cast p2, Lcom/supercell/id/model/MyProfileImage$Image;
 
     .line 9
-    iget-object v0, p2, Lcom/supercell/id/model/MyProfileImage$Image;->a:Ljava/lang/String;
+    iget-object v0, p2, Lcom/supercell/id/model/MyProfileImage$Image;->g:Ljava/lang/String;
 
     .line 10
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 11
-    iget-object p2, p2, Lcom/supercell/id/model/MyProfileImage$Image;->b:Ljava/lang/String;
+    iget-object p2, p2, Lcom/supercell/id/model/MyProfileImage$Image;->h:Ljava/lang/String;
 
     .line 12
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
@@ -154,13 +154,13 @@
     check-cast p2, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;
 
     .line 15
-    iget-object v0, p2, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;->a:Ljava/lang/String;
+    iget-object v0, p2, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;->g:Ljava/lang/String;
 
     .line 16
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 17
-    iget-object p2, p2, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;->b:Ljava/lang/String;
+    iget-object p2, p2, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;->h:Ljava/lang/String;
 
     .line 18
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
@@ -173,7 +173,7 @@
     const-string p1, "dest"
 
     .line 19
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

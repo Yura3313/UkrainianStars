@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;->i(Lwd/k1$a;ILwd/j1;)V
+    value = Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;->i(Lvd/k1$a;ILvd/j1;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
+.field public final synthetic g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
 
-.field public final synthetic b:Lwd/j1;
+.field public final synthetic h:Lvd/j1;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;Lwd/j1;)V
+.method public constructor <init>(Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;Lvd/j1;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$a;->a:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$a;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$a;->b:Lwd/j1;
+    iput-object p2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$a;->h:Lvd/j1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +44,7 @@
     const-string v0, "it"
 
     .line 1
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -53,12 +53,12 @@
     .line 2
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object p1
 
     .line 3
-    iget-object v0, p1, Lwd/r;->m:La2/a;
+    iget-object v0, p1, Lvd/r;->m:Lcom/supercell/titan/h;
 
     const/4 v4, 0x0
 
@@ -73,20 +73,20 @@
     const-string v3, "Invite"
 
     .line 4
-    invoke-static/range {v0 .. v6}, La2/a;->b(La2/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static/range {v0 .. v6}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
 
     .line 5
-    iget-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$a;->a:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$a;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
 
     .line 6
-    iget-object p1, p1, Lwd/q;->f:Landroidx/fragment/app/Fragment;
+    iget-object p1, p1, Lvd/q;->f:Landroidx/fragment/app/Fragment;
 
     .line 7
     check-cast p1, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
-    iget-object v0, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$a;->b:Lwd/j1;
+    iget-object v0, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$a;->h:Lvd/j1;
 
-    invoke-static {v0}, Landroidx/savedstate/d;->u(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lb5/m;->l(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 

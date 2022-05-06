@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+.field public final synthetic g:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
 
-.field public final synthetic b:Ljava/lang/String;
+.field public final synthetic h:Ljava/lang/String;
 
-.field public final synthetic h:La2/d1;
+.field public final synthetic i:La2/d1;
 
 
 # direct methods
@@ -19,11 +19,11 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, La2/e1;->h:La2/d1;
+    iput-object p1, p0, La2/e1;->i:La2/d1;
 
-    iput-object p2, p0, La2/e1;->a:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+    iput-object p2, p0, La2/e1;->g:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
 
-    iput-object p3, p0, La2/e1;->b:Ljava/lang/String;
+    iput-object p3, p0, La2/e1;->h:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,23 +36,23 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, La2/e1;->h:La2/d1;
+    iget-object v0, p0, La2/e1;->i:La2/d1;
 
     .line 2
-    iget v1, v0, La2/d1;->c0:I
+    iget v1, v0, La2/d1;->d0:I
 
     if-lez v1, :cond_1
 
     .line 3
-    iget-object v1, p0, La2/e1;->a:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+    iget-object v1, p0, La2/e1;->g:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
 
     .line 4
-    iget-object v0, v0, La2/d1;->d0:Landroid/os/Bundle;
+    iget-object v0, v0, La2/d1;->e0:Landroid/os/Bundle;
 
     if-eqz v0, :cond_0
 
     .line 5
-    iget-object v2, p0, La2/e1;->b:Ljava/lang/String;
+    iget-object v2, p0, La2/e1;->h:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
 
@@ -69,65 +69,65 @@
 
     .line 7
     :cond_1
-    iget-object v0, p0, La2/e1;->h:La2/d1;
+    iget-object v0, p0, La2/e1;->i:La2/d1;
 
     .line 8
-    iget v0, v0, La2/d1;->c0:I
+    iget v0, v0, La2/d1;->d0:I
 
     const/4 v1, 0x2
 
     if-lt v0, v1, :cond_2
 
     .line 9
-    iget-object v0, p0, La2/e1;->a:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+    iget-object v0, p0, La2/e1;->g:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
 
     invoke-virtual {v0}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->g()V
 
     .line 10
     :cond_2
-    iget-object v0, p0, La2/e1;->h:La2/d1;
+    iget-object v0, p0, La2/e1;->i:La2/d1;
 
     .line 11
-    iget v0, v0, La2/d1;->c0:I
+    iget v0, v0, La2/d1;->d0:I
 
     const/4 v1, 0x3
 
     if-lt v0, v1, :cond_3
 
     .line 12
-    iget-object v0, p0, La2/e1;->a:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+    iget-object v0, p0, La2/e1;->g:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
 
     invoke-virtual {v0}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->e()V
 
     .line 13
     :cond_3
-    iget-object v0, p0, La2/e1;->h:La2/d1;
+    iget-object v0, p0, La2/e1;->i:La2/d1;
 
     .line 14
-    iget v0, v0, La2/d1;->c0:I
+    iget v0, v0, La2/d1;->d0:I
 
     const/4 v1, 0x4
 
     if-lt v0, v1, :cond_4
 
     .line 15
-    iget-object v0, p0, La2/e1;->a:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+    iget-object v0, p0, La2/e1;->g:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
 
     invoke-virtual {v0}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->h()V
 
     .line 16
     :cond_4
-    iget-object v0, p0, La2/e1;->h:La2/d1;
+    iget-object v0, p0, La2/e1;->i:La2/d1;
 
     .line 17
-    iget v0, v0, La2/d1;->c0:I
+    iget v0, v0, La2/d1;->d0:I
 
     const/4 v1, 0x5
 
     if-lt v0, v1, :cond_5
 
     .line 18
-    iget-object v0, p0, La2/e1;->a:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+    iget-object v0, p0, La2/e1;->g:Lcom/google/android/gms/common/api/internal/LifecycleCallback;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 

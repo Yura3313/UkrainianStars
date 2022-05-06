@@ -16,12 +16,6 @@
     name = "c"
 .end annotation
 
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/supercell/websocket/proxy/protocol/IdShopItem$c$b;
-    }
-.end annotation
-
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Enum<",
@@ -33,65 +27,22 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
+.field public static final enum h:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
 
-.field public static final enum SEASON_PASS:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
+.field public static final enum i:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
 
-.field public static final SEASON_PASS_VALUE:I = 0x1
+.field public static final enum j:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
 
-.field public static final enum UNKNOWN:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
-
-.field public static final UNKNOWN_VALUE:I
-
-.field public static final enum UNRECOGNIZED:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
-
-.field private static final internalValueMap:Lcom/google/protobuf/a0$d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/google/protobuf/a0$d<",
-            "Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final synthetic k:[Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
 
 
 # instance fields
-.field private final value:I
+.field public final g:I
 
 
 # direct methods
-.method private static synthetic $values()[Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
-    .locals 3
-
-    const/4 v0, 0x3
-
-    new-array v0, v0, [Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
-
-    .line 1
-    sget-object v1, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->UNKNOWN:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->SEASON_PASS:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->UNRECOGNIZED:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
-
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
-
-    return-object v0
-.end method
-
 .method public static constructor <clinit>()V
-    .locals 4
+    .locals 8
 
     .line 1
     new-instance v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
@@ -102,50 +53,49 @@
 
     invoke-direct {v0, v1, v2, v2}, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->UNKNOWN:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
+    sput-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->h:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
 
     .line 2
-    new-instance v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
+    new-instance v1, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
 
-    const-string v1, "SEASON_PASS"
+    const-string v3, "SEASON_PASS"
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v2, v2}, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v3, v4, v4}, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->SEASON_PASS:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
+    sput-object v1, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->i:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
 
     .line 3
-    new-instance v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
+    new-instance v3, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
 
-    const-string v1, "UNRECOGNIZED"
+    const-string v5, "UNRECOGNIZED"
 
-    const/4 v2, 0x2
+    const/4 v6, 0x2
 
-    const/4 v3, -0x1
+    const/4 v7, -0x1
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v3, v5, v6, v7}, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->UNRECOGNIZED:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
+    sput-object v3, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->j:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
+
+    const/4 v5, 0x3
+
+    new-array v5, v5, [Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
+
+    aput-object v0, v5, v2
+
+    aput-object v1, v5, v4
+
+    aput-object v3, v5, v6
 
     .line 4
-    invoke-static {}, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->$values()[Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->$VALUES:[Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
-
-    .line 5
-    new-instance v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c$a;
-
-    invoke-direct {v0}, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c$a;-><init>()V
-
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->internalValueMap:Lcom/google/protobuf/a0$d;
+    sput-object v5, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->k:[Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;II)V
+.method public constructor <init>(Ljava/lang/String;II)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -157,74 +107,9 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput p3, p0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->value:I
+    iput p3, p0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->g:I
 
     return-void
-.end method
-
-.method public static forNumber(I)Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
-    .locals 1
-
-    if-eqz p0, :cond_1
-
-    const/4 v0, 0x1
-
-    if-eq p0, v0, :cond_0
-
-    const/4 p0, 0x0
-
-    return-object p0
-
-    .line 1
-    :cond_0
-    sget-object p0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->SEASON_PASS:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
-
-    return-object p0
-
-    .line 2
-    :cond_1
-    sget-object p0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->UNKNOWN:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
-
-    return-object p0
-.end method
-
-.method public static internalGetValueMap()Lcom/google/protobuf/a0$d;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lcom/google/protobuf/a0$d<",
-            "Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->internalValueMap:Lcom/google/protobuf/a0$d;
-
-    return-object v0
-.end method
-
-.method public static internalGetVerifier()Lcom/google/protobuf/a0$e;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c$b;->a:Lcom/google/protobuf/a0$e;
-
-    return-object v0
-.end method
-
-.method public static valueOf(I)Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
-    .locals 0
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    .line 2
-    invoke-static {p0}, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->forNumber(I)Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
-
-    move-result-object p0
-
-    return-object p0
 .end method
 
 .method public static valueOf(Ljava/lang/String;)Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
@@ -246,7 +131,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->$VALUES:[Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->k:[Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
 
     invoke-virtual {v0}, [Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->clone()Ljava/lang/Object;
 
@@ -259,16 +144,16 @@
 
 
 # virtual methods
-.method public final getNumber()I
+.method public final b()I
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->UNRECOGNIZED:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->j:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
 
     if-eq p0, v0, :cond_0
 
     .line 2
-    iget v0, p0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->value:I
+    iget v0, p0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->g:I
 
     return v0
 

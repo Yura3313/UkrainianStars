@@ -6,7 +6,7 @@
 
 
 # virtual methods
-.method public abstract X3(Landroid/os/Bundle;Landroid/os/Bundle;)V
+.method public abstract Y3(Landroid/os/Bundle;Landroid/os/Bundle;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -14,7 +14,7 @@
     .end annotation
 .end method
 
-.method public abstract g(Landroid/os/Bundle;)V
+.method public abstract h(Landroid/os/Bundle;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -22,7 +22,7 @@
     .end annotation
 .end method
 
-.method public abstract s0(Landroid/os/Bundle;Landroid/os/Bundle;)V
+.method public abstract t0(Landroid/os/Bundle;Landroid/os/Bundle;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -30,7 +30,7 @@
     .end annotation
 .end method
 
-.method public abstract u(Ljava/util/List;)V
+.method public abstract v(Ljava/util/List;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

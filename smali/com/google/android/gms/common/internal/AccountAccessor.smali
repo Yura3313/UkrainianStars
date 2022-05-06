@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final synthetic a:I
+.field public static final synthetic g:I
 
 
 # virtual methods
@@ -19,7 +19,7 @@
     throw p1
 .end method
 
-.method public final p()Landroid/accounts/Account;
+.method public final q()Landroid/accounts/Account;
     .locals 1
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation

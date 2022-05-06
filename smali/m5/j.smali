@@ -3,7 +3,7 @@
 .source "ManifestSchemaFactory.java"
 
 # interfaces
-.implements Lm5/w;
+.implements Lm5/v;
 
 
 # annotations

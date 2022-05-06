@@ -92,7 +92,7 @@
     iget v2, p3, Lcom/google/android/material/circularreveal/c$e;->a:F
 
     .line 3
-    invoke-static {v1, v2, p1}, Lg9/b;->e(FFF)F
+    invoke-static {v1, v2, p1}, Lj3/u6;->g(FFF)F
 
     move-result v1
 
@@ -101,7 +101,7 @@
     iget v3, p3, Lcom/google/android/material/circularreveal/c$e;->b:F
 
     .line 4
-    invoke-static {v2, v3, p1}, Lg9/b;->e(FFF)F
+    invoke-static {v2, v3, p1}, Lj3/u6;->g(FFF)F
 
     move-result v2
 
@@ -110,7 +110,7 @@
     iget p3, p3, Lcom/google/android/material/circularreveal/c$e;->c:F
 
     .line 5
-    invoke-static {p2, p3, p1}, Lg9/b;->e(FFF)F
+    invoke-static {p2, p3, p1}, Lj3/u6;->g(FFF)F
 
     move-result p1
 

@@ -47,11 +47,11 @@
     check-cast p1, Ll5/d1;
 
     .line 2
-    invoke-virtual {p1}, Ll5/d1;->u()Ll5/e1;
+    invoke-virtual {p1}, Ll5/d1;->t()Ll5/e1;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ll5/e1;->u()Ljava/lang/String;
+    invoke-virtual {v0}, Ll5/e1;->t()Ljava/lang/String;
 
     move-result-object v0
 
@@ -68,11 +68,11 @@
     .line 5
     new-instance v1, Le5/i;
 
-    invoke-virtual {p1}, Ll5/d1;->u()Ll5/e1;
+    invoke-virtual {p1}, Ll5/d1;->t()Ll5/e1;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Ll5/e1;->t()Ll5/x0;
+    invoke-virtual {p1}, Ll5/e1;->s()Ll5/x0;
 
     move-result-object p1
 

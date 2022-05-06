@@ -30,7 +30,7 @@
 
 
 # instance fields
-.field public final a:Ljava/util/Queue;
+.field public final g:Ljava/util/Queue;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Queue<",
@@ -40,12 +40,12 @@
     .end annotation
 .end field
 
-.field public final b:Lcom/google/android/gms/common/api/a$f;
+.field public final h:Lcom/google/android/gms/common/api/a$f;
     .annotation runtime Lorg/checkerframework/checker/initialization/qual/NotOnlyInitialized;
     .end annotation
 .end field
 
-.field public final h:La2/b;
+.field public final i:La2/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "La2/b<",
@@ -54,9 +54,9 @@
     .end annotation
 .end field
 
-.field public final i:La2/w0;
+.field public final j:La2/w0;
 
-.field public final j:Ljava/util/Set;
+.field public final k:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -66,7 +66,7 @@
     .end annotation
 .end field
 
-.field public final k:Ljava/util/Map;
+.field public final l:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -78,13 +78,13 @@
     .end annotation
 .end field
 
-.field public final l:I
+.field public final m:I
 
-.field public final m:Lcom/google/android/gms/common/api/internal/zace;
+.field public final n:Lcom/google/android/gms/common/api/internal/zace;
 
-.field public n:Z
+.field public o:Z
 
-.field public final o:Ljava/util/List;
+.field public final p:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -94,11 +94,11 @@
     .end annotation
 .end field
 
-.field public p:Lcom/google/android/gms/common/ConnectionResult;
+.field public q:Lcom/google/android/gms/common/ConnectionResult;
 
-.field public q:I
+.field public r:I
 
-.field public final synthetic r:La2/f;
+.field public final synthetic s:La2/f;
 
 
 # direct methods
@@ -113,7 +113,7 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, La2/f$a;->r:La2/f;
+    iput-object p1, p0, La2/f$a;->s:La2/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -122,41 +122,41 @@
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
-    iput-object v0, p0, La2/f$a;->a:Ljava/util/Queue;
+    iput-object v0, p0, La2/f$a;->g:Ljava/util/Queue;
 
     .line 3
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, La2/f$a;->j:Ljava/util/Set;
+    iput-object v0, p0, La2/f$a;->k:Ljava/util/Set;
 
     .line 4
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, La2/f$a;->k:Ljava/util/Map;
+    iput-object v0, p0, La2/f$a;->l:Ljava/util/Map;
 
     .line 5
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, La2/f$a;->o:Ljava/util/List;
+    iput-object v0, p0, La2/f$a;->p:Ljava/util/List;
 
     const/4 v0, 0x0
 
     .line 6
-    iput-object v0, p0, La2/f$a;->p:Lcom/google/android/gms/common/ConnectionResult;
+    iput-object v0, p0, La2/f$a;->q:Lcom/google/android/gms/common/ConnectionResult;
 
     const/4 v1, 0x0
 
     .line 7
-    iput v1, p0, La2/f$a;->q:I
+    iput v1, p0, La2/f$a;->r:I
 
     .line 8
-    iget-object v1, p1, La2/f;->s:Landroid/os/Handler;
+    iget-object v1, p1, La2/f;->t:Landroid/os/Handler;
 
     .line 9
     invoke-virtual {v1}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
@@ -167,26 +167,26 @@
 
     move-result-object v1
 
-    iput-object v1, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iput-object v1, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     .line 10
     iget-object v2, p2, Lcom/google/android/gms/common/api/b;->e:La2/b;
 
     .line 11
-    iput-object v2, p0, La2/f$a;->h:La2/b;
+    iput-object v2, p0, La2/f$a;->i:La2/b;
 
     .line 12
     new-instance v2, La2/w0;
 
     invoke-direct {v2}, La2/w0;-><init>()V
 
-    iput-object v2, p0, La2/f$a;->i:La2/w0;
+    iput-object v2, p0, La2/f$a;->j:La2/w0;
 
     .line 13
     iget v2, p2, Lcom/google/android/gms/common/api/b;->g:I
 
     .line 14
-    iput v2, p0, La2/f$a;->l:I
+    iput v2, p0, La2/f$a;->m:I
 
     .line 15
     invoke-interface {v1}, Lcom/google/android/gms/common/api/a$f;->m()Z
@@ -196,23 +196,23 @@
     if-eqz v1, :cond_0
 
     .line 16
-    iget-object v0, p1, La2/f;->j:Landroid/content/Context;
+    iget-object v0, p1, La2/f;->k:Landroid/content/Context;
 
     .line 17
-    iget-object p1, p1, La2/f;->s:Landroid/os/Handler;
+    iget-object p1, p1, La2/f;->t:Landroid/os/Handler;
 
     .line 18
     invoke-virtual {p2, v0, p1}, Lcom/google/android/gms/common/api/b;->e(Landroid/content/Context;Landroid/os/Handler;)Lcom/google/android/gms/common/api/internal/zace;
 
     move-result-object p1
 
-    iput-object p1, p0, La2/f$a;->m:Lcom/google/android/gms/common/api/internal/zace;
+    iput-object p1, p0, La2/f$a;->n:Lcom/google/android/gms/common/api/internal/zace;
 
     return-void
 
     .line 19
     :cond_0
-    iput-object v0, p0, La2/f$a;->m:Lcom/google/android/gms/common/api/internal/zace;
+    iput-object v0, p0, La2/f$a;->n:Lcom/google/android/gms/common/api/internal/zace;
 
     return-void
 .end method
@@ -221,7 +221,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, La2/f$a;->o:Ljava/util/List;
+    iget-object v0, p0, La2/f$a;->p:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
@@ -230,10 +230,10 @@
     if-eqz v0, :cond_2
 
     .line 2
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 3
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     const/16 v1, 0xf
 
@@ -241,10 +241,10 @@
     invoke-virtual {v0, v1, p1}, Landroid/os/Handler;->removeMessages(ILjava/lang/Object;)V
 
     .line 5
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 6
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     const/16 v1, 0x10
 
@@ -259,7 +259,7 @@
     .line 9
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p0, La2/f$a;->a:Ljava/util/Queue;
+    iget-object v1, p0, La2/f$a;->g:Ljava/util/Queue;
 
     invoke-interface {v1}, Ljava/util/Queue;->size()I
 
@@ -268,7 +268,7 @@
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 10
-    iget-object v1, p0, La2/f$a;->a:Ljava/util/Queue;
+    iget-object v1, p0, La2/f$a;->g:Ljava/util/Queue;
 
     invoke-interface {v1}, Ljava/util/Queue;->iterator()Ljava/util/Iterator;
 
@@ -336,7 +336,7 @@
     check-cast v3, La2/r;
 
     .line 16
-    iget-object v4, p0, La2/f$a;->a:Ljava/util/Queue;
+    iget-object v4, p0, La2/f$a;->g:Ljava/util/Queue;
 
     invoke-interface {v4, v3}, Ljava/util/Queue;->remove(Ljava/lang/Object;)Z
 
@@ -355,7 +355,7 @@
 
 
 # virtual methods
-.method public final E0(I)V
+.method public final F0(I)V
     .locals 2
 
     .line 1
@@ -363,10 +363,10 @@
 
     move-result-object v0
 
-    iget-object v1, p0, La2/f$a;->r:La2/f;
+    iget-object v1, p0, La2/f$a;->s:La2/f;
 
     .line 2
-    iget-object v1, v1, La2/f;->s:Landroid/os/Handler;
+    iget-object v1, v1, La2/f;->t:Landroid/os/Handler;
 
     .line 3
     invoke-virtual {v1}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
@@ -382,10 +382,10 @@
 
     .line 5
     :cond_0
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 6
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     .line 7
     new-instance v1, La2/u;
@@ -397,7 +397,7 @@
     return-void
 .end method
 
-.method public final P0(Lcom/google/android/gms/common/ConnectionResult;)V
+.method public final Q0(Lcom/google/android/gms/common/ConnectionResult;)V
     .locals 1
 
     const/4 v0, 0x0
@@ -408,7 +408,7 @@
     return-void
 .end method
 
-.method public final X0(Landroid/os/Bundle;)V
+.method public final Y0(Landroid/os/Bundle;)V
     .locals 1
 
     .line 1
@@ -416,10 +416,10 @@
 
     move-result-object p1
 
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 2
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     .line 3
     invoke-virtual {v0}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
@@ -435,10 +435,10 @@
 
     .line 5
     :cond_0
-    iget-object p1, p0, La2/f$a;->r:La2/f;
+    iget-object p1, p0, La2/f$a;->s:La2/f;
 
     .line 6
-    iget-object p1, p1, La2/f;->s:Landroid/os/Handler;
+    iget-object p1, p1, La2/f;->t:Landroid/os/Handler;
 
     .line 7
     new-instance v0, La2/v;
@@ -466,7 +466,7 @@
 
     .line 2
     :cond_0
-    iget-object v1, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v1, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     .line 3
     invoke-interface {v1}, Lcom/google/android/gms/common/api/a$f;->j()[Lcom/google/android/gms/common/Feature;
@@ -498,10 +498,10 @@
     aget-object v6, v1, v5
 
     .line 6
-    iget-object v7, v6, Lcom/google/android/gms/common/Feature;->a:Ljava/lang/String;
+    iget-object v7, v6, Lcom/google/android/gms/common/Feature;->g:Ljava/lang/String;
 
     .line 7
-    invoke-virtual {v6}, Lcom/google/android/gms/common/Feature;->x2()J
+    invoke-virtual {v6}, Lcom/google/android/gms/common/Feature;->z2()J
 
     move-result-wide v8
 
@@ -509,7 +509,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v3, v7, v6}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v7, v6}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int/lit8 v5, v5, 0x1
 
@@ -525,10 +525,10 @@
     aget-object v4, p1, v2
 
     .line 9
-    iget-object v5, v4, Lcom/google/android/gms/common/Feature;->a:Ljava/lang/String;
+    iget-object v5, v4, Lcom/google/android/gms/common/Feature;->g:Ljava/lang/String;
 
     .line 10
-    invoke-virtual {v3, v5}, Lm/h;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v5}, Lm/g;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -541,7 +541,7 @@
 
     move-result-wide v5
 
-    invoke-virtual {v4}, Lcom/google/android/gms/common/Feature;->x2()J
+    invoke-virtual {v4}, Lcom/google/android/gms/common/Feature;->z2()J
 
     move-result-wide v7
 
@@ -569,26 +569,26 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 2
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     .line 3
     invoke-static {v0}, Lc2/h;->c(Landroid/os/Handler;)V
 
     .line 4
-    sget-object v0, La2/f;->u:Lcom/google/android/gms/common/api/Status;
+    sget-object v0, La2/f;->v:Lcom/google/android/gms/common/api/Status;
 
     invoke-virtual {p0, v0}, La2/f$a;->f(Lcom/google/android/gms/common/api/Status;)V
 
     .line 5
-    iget-object v0, p0, La2/f$a;->i:La2/w0;
+    iget-object v0, p0, La2/f$a;->j:La2/w0;
 
     invoke-virtual {v0}, La2/w0;->f()V
 
     .line 6
-    iget-object v0, p0, La2/f$a;->k:Ljava/util/Map;
+    iget-object v0, p0, La2/f$a;->l:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
@@ -614,11 +614,11 @@
     .line 7
     new-instance v4, La2/o0;
 
-    new-instance v5, La4/g;
+    new-instance v5, Lb4/g;
 
-    invoke-direct {v5}, La4/g;-><init>()V
+    invoke-direct {v5}, Lb4/g;-><init>()V
 
-    invoke-direct {v4, v3, v5}, La2/o0;-><init>(La2/j;La4/g;)V
+    invoke-direct {v4, v3, v5}, La2/o0;-><init>(La2/j;Lb4/g;)V
 
     invoke-virtual {p0, v4}, La2/f$a;->d(La2/r;)V
 
@@ -637,7 +637,7 @@
     invoke-virtual {p0, v0}, La2/f$a;->m(Lcom/google/android/gms/common/ConnectionResult;)V
 
     .line 9
-    iget-object v0, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v0, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     invoke-interface {v0}, Lcom/google/android/gms/common/api/a$f;->isConnected()Z
 
@@ -646,7 +646,7 @@
     if-eqz v0, :cond_1
 
     .line 10
-    iget-object v0, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v0, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     new-instance v1, La2/w;
 
@@ -667,12 +667,12 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, La2/f$a;->n:Z
+    iput-boolean v0, p0, La2/f$a;->o:Z
 
     .line 3
-    iget-object v0, p0, La2/f$a;->i:La2/w0;
+    iget-object v0, p0, La2/f$a;->j:La2/w0;
 
-    iget-object v1, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v1, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     .line 4
     invoke-interface {v1}, Lcom/google/android/gms/common/api/a$f;->k()Ljava/lang/String;
@@ -683,13 +683,13 @@
     invoke-virtual {v0, p1, v1}, La2/w0;->a(ILjava/lang/String;)V
 
     .line 6
-    iget-object p1, p0, La2/f$a;->r:La2/f;
+    iget-object p1, p0, La2/f$a;->s:La2/f;
 
     .line 7
-    iget-object p1, p1, La2/f;->s:Landroid/os/Handler;
+    iget-object p1, p1, La2/f;->t:Landroid/os/Handler;
 
     .line 8
-    iget-object v0, p0, La2/f$a;->h:La2/b;
+    iget-object v0, p0, La2/f$a;->i:La2/b;
 
     const/16 v1, 0x9
 
@@ -697,7 +697,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, La2/f$a;->r:La2/f;
+    iget-object v1, p0, La2/f$a;->s:La2/f;
 
     .line 9
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -708,13 +708,13 @@
     invoke-virtual {p1, v0, v1, v2}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     .line 11
-    iget-object p1, p0, La2/f$a;->r:La2/f;
+    iget-object p1, p0, La2/f$a;->s:La2/f;
 
     .line 12
-    iget-object p1, p1, La2/f;->s:Landroid/os/Handler;
+    iget-object p1, p1, La2/f;->t:Landroid/os/Handler;
 
     .line 13
-    iget-object v0, p0, La2/f$a;->h:La2/b;
+    iget-object v0, p0, La2/f$a;->i:La2/b;
 
     const/16 v1, 0xb
 
@@ -722,7 +722,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, La2/f$a;->r:La2/f;
+    iget-object v1, p0, La2/f$a;->s:La2/f;
 
     .line 14
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -733,10 +733,10 @@
     invoke-virtual {p1, v0, v1, v2}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     .line 16
-    iget-object p1, p0, La2/f$a;->r:La2/f;
+    iget-object p1, p0, La2/f$a;->s:La2/f;
 
     .line 17
-    iget-object p1, p1, La2/f;->l:Lc2/s;
+    iget-object p1, p1, La2/f;->m:Lc2/s;
 
     .line 18
     iget-object p1, p1, Lc2/s;->a:Landroid/util/SparseIntArray;
@@ -744,7 +744,7 @@
     invoke-virtual {p1}, Landroid/util/SparseIntArray;->clear()V
 
     .line 19
-    iget-object p1, p0, La2/f$a;->k:Ljava/util/Map;
+    iget-object p1, p0, La2/f$a;->l:Ljava/util/Map;
 
     invoke-interface {p1}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -781,16 +781,16 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 2
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     .line 3
     invoke-static {v0}, Lc2/h;->c(Landroid/os/Handler;)V
 
     .line 4
-    iget-object v0, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v0, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     invoke-interface {v0}, Lcom/google/android/gms/common/api/a$f;->isConnected()Z
 
@@ -812,7 +812,7 @@
 
     .line 7
     :cond_0
-    iget-object v0, p0, La2/f$a;->a:Ljava/util/Queue;
+    iget-object v0, p0, La2/f$a;->g:Ljava/util/Queue;
 
     invoke-interface {v0, p1}, Ljava/util/Queue;->add(Ljava/lang/Object;)Z
 
@@ -820,24 +820,24 @@
 
     .line 8
     :cond_1
-    iget-object v0, p0, La2/f$a;->a:Ljava/util/Queue;
+    iget-object v0, p0, La2/f$a;->g:Ljava/util/Queue;
 
     invoke-interface {v0, p1}, Ljava/util/Queue;->add(Ljava/lang/Object;)Z
 
     .line 9
-    iget-object p1, p0, La2/f$a;->p:Lcom/google/android/gms/common/ConnectionResult;
+    iget-object p1, p0, La2/f$a;->q:Lcom/google/android/gms/common/ConnectionResult;
 
     if-eqz p1, :cond_2
 
     .line 10
-    invoke-virtual {p1}, Lcom/google/android/gms/common/ConnectionResult;->x2()Z
+    invoke-virtual {p1}, Lcom/google/android/gms/common/ConnectionResult;->z2()Z
 
     move-result p1
 
     if-eqz p1, :cond_2
 
     .line 11
-    iget-object p1, p0, La2/f$a;->p:Lcom/google/android/gms/common/ConnectionResult;
+    iget-object p1, p0, La2/f$a;->q:Lcom/google/android/gms/common/ConnectionResult;
 
     const/4 v0, 0x0
 
@@ -857,31 +857,31 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 2
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     .line 3
     invoke-static {v0}, Lc2/h;->c(Landroid/os/Handler;)V
 
     .line 4
-    iget-object v0, p0, La2/f$a;->m:Lcom/google/android/gms/common/api/internal/zace;
+    iget-object v0, p0, La2/f$a;->n:Lcom/google/android/gms/common/api/internal/zace;
 
     if-eqz v0, :cond_0
 
     .line 5
-    invoke-virtual {v0}, Lcom/google/android/gms/common/api/internal/zace;->d2()V
+    invoke-virtual {v0}, Lcom/google/android/gms/common/api/internal/zace;->e2()V
 
     .line 6
     :cond_0
     invoke-virtual {p0}, La2/f$a;->n()V
 
     .line 7
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 8
-    iget-object v0, v0, La2/f;->l:Lc2/s;
+    iget-object v0, v0, La2/f;->m:Lc2/s;
 
     .line 9
     iget-object v0, v0, Lc2/s;->a:Landroid/util/SparseIntArray;
@@ -892,22 +892,22 @@
     invoke-virtual {p0, p1}, La2/f$a;->m(Lcom/google/android/gms/common/ConnectionResult;)V
 
     .line 11
-    iget-object v0, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v0, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
-    instance-of v0, v0, Le2/b;
+    instance-of v0, v0, Le2/c;
 
     const/4 v1, 0x1
 
     if-eqz v0, :cond_1
 
     .line 12
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 13
-    iput-boolean v1, v0, La2/f;->b:Z
+    iput-boolean v1, v0, La2/f;->h:Z
 
     .line 14
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     const/16 v2, 0x13
 
@@ -923,14 +923,14 @@
 
     .line 17
     :cond_1
-    iget v0, p1, Lcom/google/android/gms/common/ConnectionResult;->b:I
+    iget v0, p1, Lcom/google/android/gms/common/ConnectionResult;->h:I
 
     const/4 v2, 0x4
 
     if-ne v0, v2, :cond_2
 
     .line 18
-    sget-object p1, La2/f;->v:Lcom/google/android/gms/common/api/Status;
+    sget-object p1, La2/f;->w:Lcom/google/android/gms/common/api/Status;
 
     .line 19
     invoke-virtual {p0, p1}, La2/f$a;->f(Lcom/google/android/gms/common/api/Status;)V
@@ -939,7 +939,7 @@
 
     .line 20
     :cond_2
-    iget-object v0, p0, La2/f$a;->a:Ljava/util/Queue;
+    iget-object v0, p0, La2/f$a;->g:Ljava/util/Queue;
 
     invoke-interface {v0}, Ljava/util/Queue;->isEmpty()Z
 
@@ -948,7 +948,7 @@
     if-eqz v0, :cond_3
 
     .line 21
-    iput-object p1, p0, La2/f$a;->p:Lcom/google/android/gms/common/ConnectionResult;
+    iput-object p1, p0, La2/f$a;->q:Lcom/google/android/gms/common/ConnectionResult;
 
     return-void
 
@@ -960,10 +960,10 @@
     if-eqz p2, :cond_4
 
     .line 22
-    iget-object p1, p0, La2/f$a;->r:La2/f;
+    iget-object p1, p0, La2/f$a;->s:La2/f;
 
     .line 23
-    iget-object p1, p1, La2/f;->s:Landroid/os/Handler;
+    iget-object p1, p1, La2/f;->t:Landroid/os/Handler;
 
     .line 24
     invoke-static {p1}, Lc2/h;->c(Landroid/os/Handler;)V
@@ -975,15 +975,15 @@
 
     .line 26
     :cond_4
-    iget-object p2, p0, La2/f$a;->r:La2/f;
+    iget-object p2, p0, La2/f$a;->s:La2/f;
 
     .line 27
-    iget-boolean p2, p2, La2/f;->t:Z
+    iget-boolean p2, p2, La2/f;->u:Z
 
     if-nez p2, :cond_5
 
     .line 28
-    iget-object p2, p0, La2/f$a;->h:La2/b;
+    iget-object p2, p0, La2/f$a;->i:La2/b;
 
     .line 29
     invoke-static {p2, p1}, La2/f;->e(La2/b;Lcom/google/android/gms/common/ConnectionResult;)Lcom/google/android/gms/common/api/Status;
@@ -991,10 +991,10 @@
     move-result-object p1
 
     .line 30
-    iget-object p2, p0, La2/f$a;->r:La2/f;
+    iget-object p2, p0, La2/f$a;->s:La2/f;
 
     .line 31
-    iget-object p2, p2, La2/f;->s:Landroid/os/Handler;
+    iget-object p2, p2, La2/f;->t:Landroid/os/Handler;
 
     .line 32
     invoke-static {p2}, Lc2/h;->c(Landroid/os/Handler;)V
@@ -1006,7 +1006,7 @@
 
     .line 34
     :cond_5
-    iget-object p2, p0, La2/f$a;->h:La2/b;
+    iget-object p2, p0, La2/f$a;->i:La2/b;
 
     .line 35
     invoke-static {p2, p1}, La2/f;->e(La2/b;Lcom/google/android/gms/common/ConnectionResult;)Lcom/google/android/gms/common/api/Status;
@@ -1017,7 +1017,7 @@
     invoke-virtual {p0, p2, v2, v1}, La2/f$a;->g(Lcom/google/android/gms/common/api/Status;Ljava/lang/Exception;Z)V
 
     .line 37
-    iget-object p2, p0, La2/f$a;->a:Ljava/util/Queue;
+    iget-object p2, p0, La2/f$a;->g:Ljava/util/Queue;
 
     invoke-interface {p2}, Ljava/util/Queue;->isEmpty()Z
 
@@ -1039,9 +1039,9 @@
 
     .line 39
     :cond_7
-    iget-object p2, p0, La2/f$a;->r:La2/f;
+    iget-object p2, p0, La2/f$a;->s:La2/f;
 
-    iget v3, p0, La2/f$a;->l:I
+    iget v3, p0, La2/f$a;->m:I
 
     invoke-virtual {p2, p1, v3}, La2/f;->d(Lcom/google/android/gms/common/ConnectionResult;I)Z
 
@@ -1050,37 +1050,37 @@
     if-nez p2, :cond_a
 
     .line 40
-    iget p2, p1, Lcom/google/android/gms/common/ConnectionResult;->b:I
+    iget p2, p1, Lcom/google/android/gms/common/ConnectionResult;->h:I
 
     const/16 v3, 0x12
 
     if-ne p2, v3, :cond_8
 
     .line 41
-    iput-boolean v1, p0, La2/f$a;->n:Z
+    iput-boolean v1, p0, La2/f$a;->o:Z
 
     .line 42
     :cond_8
-    iget-boolean p2, p0, La2/f$a;->n:Z
+    iget-boolean p2, p0, La2/f$a;->o:Z
 
     if-eqz p2, :cond_9
 
     .line 43
-    iget-object p1, p0, La2/f$a;->r:La2/f;
+    iget-object p1, p0, La2/f$a;->s:La2/f;
 
     .line 44
-    iget-object p1, p1, La2/f;->s:Landroid/os/Handler;
+    iget-object p1, p1, La2/f;->t:Landroid/os/Handler;
 
     const/16 p2, 0x9
 
     .line 45
-    iget-object v0, p0, La2/f$a;->h:La2/b;
+    iget-object v0, p0, La2/f$a;->i:La2/b;
 
     invoke-static {p1, p2, v0}, Landroid/os/Message;->obtain(Landroid/os/Handler;ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object p2
 
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 46
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1094,7 +1094,7 @@
 
     .line 48
     :cond_9
-    iget-object p2, p0, La2/f$a;->h:La2/b;
+    iget-object p2, p0, La2/f$a;->i:La2/b;
 
     .line 49
     invoke-static {p2, p1}, La2/f;->e(La2/b;Lcom/google/android/gms/common/ConnectionResult;)Lcom/google/android/gms/common/api/Status;
@@ -1102,10 +1102,10 @@
     move-result-object p1
 
     .line 50
-    iget-object p2, p0, La2/f$a;->r:La2/f;
+    iget-object p2, p0, La2/f$a;->s:La2/f;
 
     .line 51
-    iget-object p2, p2, La2/f;->s:Landroid/os/Handler;
+    iget-object p2, p2, La2/f;->t:Landroid/os/Handler;
 
     .line 52
     invoke-static {p2}, Lc2/h;->c(Landroid/os/Handler;)V
@@ -1121,10 +1121,10 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 2
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     .line 3
     invoke-static {v0}, Lc2/h;->c(Landroid/os/Handler;)V
@@ -1143,10 +1143,10 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 2
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     .line 3
     invoke-static {v0}, Lc2/h;->c(Landroid/os/Handler;)V
@@ -1176,7 +1176,7 @@
     if-eq v2, v0, :cond_6
 
     .line 4
-    iget-object v0, p0, La2/f$a;->a:Ljava/util/Queue;
+    iget-object v0, p0, La2/f$a;->g:Ljava/util/Queue;
 
     invoke-interface {v0}, Ljava/util/Queue;->iterator()Ljava/util/Iterator;
 
@@ -1249,16 +1249,16 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 2
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     .line 3
     invoke-static {v0}, Lc2/h;->c(Landroid/os/Handler;)V
 
     .line 4
-    iget-object v0, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v0, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     invoke-interface {v0}, Lcom/google/android/gms/common/api/a$f;->isConnected()Z
 
@@ -1268,7 +1268,7 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, La2/f$a;->k:Ljava/util/Map;
+    iget-object v0, p0, La2/f$a;->l:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->size()I
 
@@ -1277,7 +1277,7 @@
     if-nez v0, :cond_2
 
     .line 5
-    iget-object v0, p0, La2/f$a;->i:La2/w0;
+    iget-object v0, p0, La2/f$a;->j:La2/w0;
 
     invoke-virtual {v0}, La2/w0;->e()Z
 
@@ -1295,7 +1295,7 @@
 
     .line 7
     :cond_1
-    iget-object p1, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object p1, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     const-string v0, "Timing out service connection."
 
@@ -1348,7 +1348,7 @@
 
     .line 6
     :cond_1
-    iget-object p1, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object p1, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     .line 7
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1360,7 +1360,7 @@
     move-result-object p1
 
     .line 8
-    iget-object v3, v2, Lcom/google/android/gms/common/Feature;->a:Ljava/lang/String;
+    iget-object v3, v2, Lcom/google/android/gms/common/Feature;->g:Ljava/lang/String;
 
     .line 9
     invoke-virtual {p1}, Ljava/lang/String;->length()I
@@ -1369,7 +1369,7 @@
 
     add-int/lit8 p1, p1, 0x4d
 
-    invoke-static {v3, p1}, Ly/b;->a(Ljava/lang/String;I)I
+    invoke-static {v3, p1}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result p1
 
@@ -1378,10 +1378,10 @@
     invoke-direct {v3, p1}, Ljava/lang/StringBuilder;-><init>(I)V
 
     .line 10
-    iget-object p1, p0, La2/f$a;->r:La2/f;
+    iget-object p1, p0, La2/f$a;->s:La2/f;
 
     .line 11
-    iget-boolean p1, p1, La2/f;->t:Z
+    iget-boolean p1, p1, La2/f;->u:Z
 
     if-eqz p1, :cond_4
 
@@ -1395,14 +1395,14 @@
     .line 13
     new-instance p1, La2/f$b;
 
-    iget-object v0, p0, La2/f$a;->h:La2/b;
+    iget-object v0, p0, La2/f$a;->i:La2/b;
 
     const/4 v1, 0x0
 
     invoke-direct {p1, v0, v2, v1}, La2/f$b;-><init>(La2/b;Lcom/google/android/gms/common/Feature;La2/t;)V
 
     .line 14
-    iget-object v0, p0, La2/f$a;->o:Ljava/util/List;
+    iget-object v0, p0, La2/f$a;->p:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
 
@@ -1415,7 +1415,7 @@
     if-ltz v0, :cond_2
 
     .line 15
-    iget-object p1, p0, La2/f$a;->o:Ljava/util/List;
+    iget-object p1, p0, La2/f$a;->p:Ljava/util/List;
 
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1424,26 +1424,26 @@
     check-cast p1, La2/f$b;
 
     .line 16
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 17
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     .line 18
     invoke-virtual {v0, v4, p1}, Landroid/os/Handler;->removeMessages(ILjava/lang/Object;)V
 
     .line 19
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 20
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     .line 21
     invoke-static {v0, v4, p1}, Landroid/os/Message;->obtain(Landroid/os/Handler;ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object p1
 
-    iget-object v1, p0, La2/f$a;->r:La2/f;
+    iget-object v1, p0, La2/f$a;->s:La2/f;
 
     .line 22
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1455,22 +1455,22 @@
 
     .line 24
     :cond_2
-    iget-object v0, p0, La2/f$a;->o:Ljava/util/List;
+    iget-object v0, p0, La2/f$a;->p:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 25
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 26
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     .line 27
     invoke-static {v0, v4, p1}, Landroid/os/Message;->obtain(Landroid/os/Handler;ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v4
 
-    iget-object v5, p0, La2/f$a;->r:La2/f;
+    iget-object v5, p0, La2/f$a;->s:La2/f;
 
     .line 28
     invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1479,10 +1479,10 @@
     invoke-virtual {v0, v4, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     .line 30
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 31
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     const/16 v2, 0x10
 
@@ -1491,7 +1491,7 @@
 
     move-result-object p1
 
-    iget-object v2, p0, La2/f$a;->r:La2/f;
+    iget-object v2, p0, La2/f$a;->s:La2/f;
 
     .line 33
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1516,9 +1516,9 @@
     if-nez v0, :cond_3
 
     .line 37
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
-    iget v1, p0, La2/f$a;->l:I
+    iget v1, p0, La2/f$a;->m:I
 
     invoke-virtual {v0, p1, v1}, La2/f;->d(Lcom/google/android/gms/common/ConnectionResult;I)Z
 
@@ -1543,25 +1543,25 @@
     .locals 3
 
     .line 1
-    sget-object v0, La2/f;->w:Ljava/lang/Object;
+    sget-object v0, La2/f;->x:Ljava/lang/Object;
 
     .line 2
     monitor-enter v0
 
     .line 3
     :try_start_0
-    iget-object v1, p0, La2/f$a;->r:La2/f;
+    iget-object v1, p0, La2/f$a;->s:La2/f;
 
     .line 4
-    iget-object v2, v1, La2/f;->p:La2/z0;
+    iget-object v2, v1, La2/f;->q:La2/z0;
 
     if-eqz v2, :cond_0
 
     .line 5
-    iget-object v1, v1, La2/f;->q:Ljava/util/Set;
+    iget-object v1, v1, La2/f;->r:Ljava/util/Set;
 
     .line 6
-    iget-object v2, p0, La2/f$a;->h:La2/b;
+    iget-object v2, p0, La2/f$a;->i:La2/b;
 
     invoke-interface {v1, v2}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
@@ -1570,13 +1570,13 @@
     if-eqz v1, :cond_0
 
     .line 7
-    iget-object v1, p0, La2/f$a;->r:La2/f;
+    iget-object v1, p0, La2/f$a;->s:La2/f;
 
     .line 8
-    iget-object v1, v1, La2/f;->p:La2/z0;
+    iget-object v1, v1, La2/f;->q:La2/z0;
 
     .line 9
-    iget v2, p0, La2/f$a;->l:I
+    iget v2, p0, La2/f$a;->m:I
 
     invoke-virtual {v1, p1, v2}, La2/s0;->j(Lcom/google/android/gms/common/ConnectionResult;I)V
 
@@ -1610,7 +1610,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, La2/f$a;->i:La2/w0;
+    iget-object v0, p0, La2/f$a;->j:La2/w0;
 
     invoke-virtual {p0}, La2/f$a;->p()Z
 
@@ -1637,7 +1637,7 @@
     const/4 v1, 0x0
 
     .line 3
-    iget-object v2, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v2, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     .line 4
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1666,10 +1666,10 @@
 
     .line 7
     :catch_0
-    invoke-virtual {p0, v0}, La2/f$a;->E0(I)V
+    invoke-virtual {p0, v0}, La2/f$a;->F0(I)V
 
     .line 8
-    iget-object p1, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object p1, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     const-string v0, "DeadObjectException thrown while running ApiCallRunner."
 
@@ -1682,7 +1682,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, La2/f$a;->j:Ljava/util/Set;
+    iget-object v0, p0, La2/f$a;->k:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -1701,7 +1701,7 @@
     check-cast v0, La2/q0;
 
     .line 2
-    sget-object v1, Lcom/google/android/gms/common/ConnectionResult;->j:Lcom/google/android/gms/common/ConnectionResult;
+    sget-object v1, Lcom/google/android/gms/common/ConnectionResult;->k:Lcom/google/android/gms/common/ConnectionResult;
 
     invoke-static {p1, v1}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1710,7 +1710,7 @@
     if-eqz p1, :cond_0
 
     .line 3
-    iget-object p1, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object p1, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     invoke-interface {p1}, Lcom/google/android/gms/common/api/a$f;->e()Ljava/lang/String;
 
@@ -1725,7 +1725,7 @@
 
     .line 6
     :cond_1
-    iget-object p1, p0, La2/f$a;->j:Ljava/util/Set;
+    iget-object p1, p0, La2/f$a;->k:Ljava/util/Set;
 
     invoke-interface {p1}, Ljava/util/Set;->clear()V
 
@@ -1736,10 +1736,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 2
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     .line 3
     invoke-static {v0}, Lc2/h;->c(Landroid/os/Handler;)V
@@ -1747,7 +1747,7 @@
     const/4 v0, 0x0
 
     .line 4
-    iput-object v0, p0, La2/f$a;->p:Lcom/google/android/gms/common/ConnectionResult;
+    iput-object v0, p0, La2/f$a;->q:Lcom/google/android/gms/common/ConnectionResult;
 
     return-void
 .end method
@@ -1756,16 +1756,16 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 2
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     .line 3
     invoke-static {v0}, Lc2/h;->c(Landroid/os/Handler;)V
 
     .line 4
-    iget-object v0, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v0, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     invoke-interface {v0}, Lcom/google/android/gms/common/api/a$f;->isConnected()Z
 
@@ -1773,7 +1773,7 @@
 
     if-nez v0, :cond_3
 
-    iget-object v0, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v0, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     invoke-interface {v0}, Lcom/google/android/gms/common/api/a$f;->d()Z
 
@@ -1788,16 +1788,16 @@
 
     .line 5
     :try_start_0
-    iget-object v1, p0, La2/f$a;->r:La2/f;
+    iget-object v1, p0, La2/f$a;->s:La2/f;
 
     .line 6
-    iget-object v2, v1, La2/f;->l:Lc2/s;
+    iget-object v2, v1, La2/f;->m:Lc2/s;
 
     .line 7
-    iget-object v1, v1, La2/f;->j:Landroid/content/Context;
+    iget-object v1, v1, La2/f;->k:Landroid/content/Context;
 
     .line 8
-    iget-object v3, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v3, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     invoke-virtual {v2, v1, v3}, Lc2/s;->a(Landroid/content/Context;Lcom/google/android/gms/common/api/a$f;)I
 
@@ -1813,7 +1813,7 @@
     invoke-direct {v2, v1, v3}, Lcom/google/android/gms/common/ConnectionResult;-><init>(ILandroid/app/PendingIntent;)V
 
     .line 10
-    iget-object v1, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v1, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     .line 11
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1855,11 +1855,11 @@
     :cond_1
     new-instance v1, La2/f$c;
 
-    iget-object v2, p0, La2/f$a;->r:La2/f;
+    iget-object v2, p0, La2/f$a;->s:La2/f;
 
-    iget-object v3, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v3, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
-    iget-object v4, p0, La2/f$a;->h:La2/b;
+    iget-object v4, p0, La2/f$a;->i:La2/b;
 
     invoke-direct {v1, v2, v3, v4}, La2/f$c;-><init>(La2/f;Lcom/google/android/gms/common/api/a$f;La2/b;)V
 
@@ -1871,7 +1871,7 @@
     if-eqz v2, :cond_2
 
     .line 15
-    iget-object v2, p0, La2/f$a;->m:Lcom/google/android/gms/common/api/internal/zace;
+    iget-object v2, p0, La2/f$a;->n:Lcom/google/android/gms/common/api/internal/zace;
 
     invoke-static {v2}, Lc2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1879,12 +1879,12 @@
 
     check-cast v3, Lcom/google/android/gms/common/api/internal/zace;
 
-    invoke-virtual {v2, v1}, Lcom/google/android/gms/common/api/internal/zace;->N3(La2/j0;)V
+    invoke-virtual {v2, v1}, Lcom/google/android/gms/common/api/internal/zace;->O3(La2/j0;)V
 
     .line 16
     :cond_2
     :try_start_1
-    iget-object v2, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v2, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     invoke-interface {v2, v1}, Lcom/google/android/gms/common/api/a$f;->f(Lcom/google/android/gms/common/internal/BaseGmsClient$c;)V
     :try_end_1
@@ -1925,7 +1925,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v0, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     invoke-interface {v0}, Lcom/google/android/gms/common/api/a$f;->m()Z
 
@@ -1941,7 +1941,7 @@
     invoke-virtual {p0}, La2/f$a;->n()V
 
     .line 2
-    sget-object v0, Lcom/google/android/gms/common/ConnectionResult;->j:Lcom/google/android/gms/common/ConnectionResult;
+    sget-object v0, Lcom/google/android/gms/common/ConnectionResult;->k:Lcom/google/android/gms/common/ConnectionResult;
 
     invoke-virtual {p0, v0}, La2/f$a;->m(Lcom/google/android/gms/common/ConnectionResult;)V
 
@@ -1949,7 +1949,7 @@
     invoke-virtual {p0}, La2/f$a;->s()V
 
     .line 4
-    iget-object v0, p0, La2/f$a;->k:Ljava/util/Map;
+    iget-object v0, p0, La2/f$a;->l:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -1996,7 +1996,7 @@
     .line 1
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p0, La2/f$a;->a:Ljava/util/Queue;
+    iget-object v1, p0, La2/f$a;->g:Ljava/util/Queue;
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
@@ -2019,7 +2019,7 @@
     check-cast v3, La2/r;
 
     .line 2
-    iget-object v4, p0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v4, p0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     invoke-interface {v4}, Lcom/google/android/gms/common/api/a$f;->isConnected()Z
 
@@ -2035,7 +2035,7 @@
     if-eqz v4, :cond_0
 
     .line 4
-    iget-object v4, p0, La2/f$a;->a:Ljava/util/Queue;
+    iget-object v4, p0, La2/f$a;->g:Ljava/util/Queue;
 
     invoke-interface {v4, v3}, Ljava/util/Queue;->remove(Ljava/lang/Object;)Z
 
@@ -2049,40 +2049,40 @@
     .locals 3
 
     .line 1
-    iget-boolean v0, p0, La2/f$a;->n:Z
+    iget-boolean v0, p0, La2/f$a;->o:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 3
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     const/16 v1, 0xb
 
     .line 4
-    iget-object v2, p0, La2/f$a;->h:La2/b;
+    iget-object v2, p0, La2/f$a;->i:La2/b;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Handler;->removeMessages(ILjava/lang/Object;)V
 
     .line 5
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 6
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     const/16 v1, 0x9
 
     .line 7
-    iget-object v2, p0, La2/f$a;->h:La2/b;
+    iget-object v2, p0, La2/f$a;->i:La2/b;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Handler;->removeMessages(ILjava/lang/Object;)V
 
     const/4 v0, 0x0
 
     .line 8
-    iput-boolean v0, p0, La2/f$a;->n:Z
+    iput-boolean v0, p0, La2/f$a;->o:Z
 
     :cond_0
     return-void
@@ -2092,35 +2092,35 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 2
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     .line 3
-    iget-object v1, p0, La2/f$a;->h:La2/b;
+    iget-object v1, p0, La2/f$a;->i:La2/b;
 
     const/16 v2, 0xc
 
     invoke-virtual {v0, v2, v1}, Landroid/os/Handler;->removeMessages(ILjava/lang/Object;)V
 
     .line 4
-    iget-object v0, p0, La2/f$a;->r:La2/f;
+    iget-object v0, p0, La2/f$a;->s:La2/f;
 
     .line 5
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     .line 6
-    iget-object v1, p0, La2/f$a;->h:La2/b;
+    iget-object v1, p0, La2/f$a;->i:La2/b;
 
     invoke-virtual {v0, v2, v1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v1
 
-    iget-object v2, p0, La2/f$a;->r:La2/f;
+    iget-object v2, p0, La2/f$a;->s:La2/f;
 
     .line 7
-    iget-wide v2, v2, La2/f;->a:J
+    iget-wide v2, v2, La2/f;->g:J
 
     .line 8
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z

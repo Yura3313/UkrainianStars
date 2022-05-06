@@ -1,240 +1,207 @@
-.class public final Lj3/ci;
-.super Ljava/lang/Object;
+.class public Lj3/ci;
+.super Lj3/jh;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# static fields
-.field public static final a:Ljava/util/regex/Pattern;
-
-.field public static final b:Ljava/util/regex/Pattern;
+# annotations
+.annotation build Landroid/annotation/TargetApi;
+    value = 0xb
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
-
-    const-string v0, "^\\uFEFF?\\s*(\\s*<!--([^-]|(?!-->))*-->)*\\s*<!DOCTYPE(\\s)+html(|(\\s)+[^>]*)>"
-
-    const/4 v1, 0x2
+.method public constructor <init>(Lj3/gh;Lcom/google/android/gms/internal/ads/q7;Z)V
+    .locals 0
 
     .line 1
-    invoke-static {v0, v1}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;I)Ljava/util/regex/Pattern;
-
-    move-result-object v0
-
-    sput-object v0, Lj3/ci;->a:Ljava/util/regex/Pattern;
-
-    const-string v0, "^\\uFEFF?\\s*(\\s*<!--([^-]|(?!-->))*-->)*?\\s*<!DOCTYPE[^>]*>"
-
-    .line 2
-    invoke-static {v0, v1}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;I)Ljava/util/regex/Pattern;
-
-    move-result-object v0
-
-    sput-object v0, Lj3/ci;->b:Ljava/util/regex/Pattern;
+    invoke-direct {p0, p1, p2, p3}, Lj3/jh;-><init>(Lj3/gh;Lcom/google/android/gms/internal/ads/q7;Z)V
 
     return-void
 .end method
 
-.method public static a()Ljava/lang/String;
-    .locals 4
+
+# virtual methods
+.method public final B(Landroid/webkit/WebView;Ljava/lang/String;Ljava/util/Map;)Landroid/webkit/WebResourceResponse;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/webkit/WebView;",
+            "Ljava/lang/String;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)",
+            "Landroid/webkit/WebResourceResponse;"
+        }
+    .end annotation
 
     .line 1
-    sget-object v0, Lj3/n;->G:Lj3/f;
-
-    .line 2
-    sget-object v1, Lj3/w41;->j:Lj3/w41;
-
-    iget-object v1, v1, Lj3/w41;->f:Lj3/l;
-
-    .line 3
-    invoke-virtual {v1, v0}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    .line 4
-    check-cast v0, Ljava/lang/String;
-
-    const-string v1, "12.4.51-000"
-
-    .line 5
-    new-instance v2, Lorg/json/JSONObject;
-
-    invoke-direct {v2}, Lorg/json/JSONObject;-><init>()V
-
-    :try_start_0
-    const-string v3, "version"
-
-    .line 6
-    invoke-virtual {v2, v3, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-
-    const-string v0, "sdk"
-
-    const-string v3, "Google Mobile Ads"
-
-    .line 7
-    invoke-virtual {v2, v0, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-
-    const-string v0, "sdkVersion"
-
-    .line 8
-    invoke-virtual {v2, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
-
-    const-string v0, "<script>"
-
-    const-string v1, "Object.defineProperty(window,\'MRAID_ENV\',{get:function(){return "
-
-    .line 9
-    invoke-static {v0, v1}, Lh1/i;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    .line 10
-    invoke-virtual {v2}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, "}});"
-
-    .line 11
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, "</script>"
-
-    .line 12
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 13
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-
-    :catch_0
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public static varargs b(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
-    .locals 5
-
-    .line 1
-    array-length v0, p1
+    instance-of v0, p1, Lj3/gh;
 
     if-nez v0, :cond_0
 
-    return-object p0
+    const/4 p1, 0x0
+
+    return-object p1
 
     .line 2
     :cond_0
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    check-cast p1, Lj3/gh;
 
     .line 3
-    sget-object v1, Lj3/ci;->a:Ljava/util/regex/Pattern;
+    iget-object v0, p0, Lj3/jh;->s:Lj3/j9;
 
-    invoke-virtual {v1, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+    if-eqz v0, :cond_1
 
-    move-result-object v1
+    const/4 v1, 0x1
 
     .line 4
-    invoke-virtual {v1}, Ljava/util/regex/Matcher;->find()Z
-
-    move-result v2
-
-    const/4 v3, 0x0
-
-    if-eqz v2, :cond_3
+    invoke-interface {v0, p2, p3, v1}, Lj3/j9;->b(Ljava/lang/String;Ljava/util/Map;I)V
 
     .line 5
-    invoke-virtual {v1}, Ljava/util/regex/Matcher;->end()I
+    :cond_1
+    new-instance v0, Ljava/io/File;
 
-    move-result v1
+    invoke-direct {v0, p2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "mraid.js"
 
     .line 6
-    invoke-virtual {p0, v3, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
-    move-result-object v2
+    move-result v0
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-nez v0, :cond_3
+
+    if-nez p3, :cond_2
 
     .line 7
-    array-length v2, p1
+    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
-    :goto_0
-    if-ge v3, v2, :cond_2
-
-    aget-object v4, p1, v3
-
-    if-eqz v4, :cond_1
+    move-result-object p3
 
     .line 8
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_2
+    invoke-virtual {p0, p2, p3}, Lj3/jh;->y(Ljava/lang/String;Ljava/util/Map;)Landroid/webkit/WebResourceResponse;
 
-    :cond_1
-    add-int/lit8 v3, v3, 0x1
+    move-result-object p1
+
+    return-object p1
+
+    .line 9
+    :cond_3
+    invoke-interface {p1}, Lj3/gh;->Q()Lj3/ji;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_4
+
+    .line 10
+    invoke-interface {p1}, Lj3/gh;->Q()Lj3/ji;
+
+    move-result-object p2
+
+    invoke-interface {p2}, Lj3/ji;->b()V
+
+    .line 11
+    :cond_4
+    invoke-interface {p1}, Lj3/gh;->c()Lj3/pi;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Lj3/pi;->b()Z
+
+    move-result p2
+
+    if-eqz p2, :cond_5
+
+    .line 12
+    sget-object p2, Lj3/n;->F:Lj3/f;
+
+    .line 13
+    sget-object p3, Lj3/t51;->j:Lj3/t51;
+
+    iget-object p3, p3, Lj3/t51;->f:Lj3/l;
+
+    .line 14
+    invoke-virtual {p3, p2}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    .line 15
+    check-cast p2, Ljava/lang/String;
 
     goto :goto_0
 
-    .line 9
-    :cond_2
-    invoke-virtual {p0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    goto :goto_2
-
-    .line 10
-    :cond_3
-    sget-object v1, Lj3/ci;->b:Ljava/util/regex/Pattern;
-
-    invoke-virtual {v1, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
-
-    move-result-object v1
-
-    .line 11
-    invoke-virtual {v1}, Ljava/util/regex/Matcher;->find()Z
-
-    move-result v1
-
-    if-nez v1, :cond_5
-
-    .line 12
-    array-length v1, p1
-
-    :goto_1
-    if-ge v3, v1, :cond_5
-
-    aget-object v2, p1, v3
-
-    if-eqz v2, :cond_4
-
-    .line 13
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    :cond_4
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_1
-
-    .line 14
+    .line 16
     :cond_5
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-interface {p1}, Lj3/gh;->q()Z
 
-    .line 15
-    :goto_2
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result p2
 
-    move-result-object p0
+    if-eqz p2, :cond_6
 
-    return-object p0
+    .line 17
+    sget-object p2, Lj3/n;->E:Lj3/f;
+
+    .line 18
+    sget-object p3, Lj3/t51;->j:Lj3/t51;
+
+    iget-object p3, p3, Lj3/t51;->f:Lj3/l;
+
+    .line 19
+    invoke-virtual {p3, p2}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    .line 20
+    check-cast p2, Ljava/lang/String;
+
+    goto :goto_0
+
+    .line 21
+    :cond_6
+    sget-object p2, Lj3/n;->D:Lj3/f;
+
+    .line 22
+    sget-object p3, Lj3/t51;->j:Lj3/t51;
+
+    iget-object p3, p3, Lj3/t51;->f:Lj3/l;
+
+    .line 23
+    invoke-virtual {p3, p2}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    .line 24
+    check-cast p2, Ljava/lang/String;
+
+    .line 25
+    :goto_0
+    sget-object p3, Lh1/o;->B:Lh1/o;
+
+    iget-object p3, p3, Lh1/o;->c:Lj3/bb;
+
+    .line 26
+    invoke-interface {p1}, Lj3/gh;->getContext()Landroid/content/Context;
+
+    move-result-object p3
+
+    invoke-interface {p1}, Lj3/gh;->b()Lcom/google/android/gms/internal/ads/zzbbg;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzbbg;->g:Ljava/lang/String;
+
+    .line 27
+    invoke-static {p3, p1, p2}, Lj3/bb;->s(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Landroid/webkit/WebResourceResponse;
+
+    move-result-object p1
+
+    return-object p1
 .end method

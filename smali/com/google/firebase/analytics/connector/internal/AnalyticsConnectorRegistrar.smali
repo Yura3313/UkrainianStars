@@ -77,7 +77,7 @@
 
     invoke-virtual {v0, v1}, Lu5/a$b;->a(Lu5/d;)Lu5/a$b;
 
-    sget-object v1, Lpd/c;->b:Lu5/b;
+    sget-object v1, Lt5/a;->g:Lu5/b;
 
     .line 6
     invoke-virtual {v0, v1}, Lu5/a$b;->c(Lu5/b;)Lu5/a$b;

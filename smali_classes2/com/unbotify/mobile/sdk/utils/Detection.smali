@@ -290,11 +290,11 @@
     :try_start_0
     new-instance v2, Ljava/io/BufferedReader;
 
-    new-instance v3, Ljava/io/FileReader;
+    new-instance v3, Lio/sentry/instrumentation/file/SentryFileReader;
 
     const-string v4, "/system/bin/flash-archive.sh"
 
-    invoke-direct {v3, v4}, Ljava/io/FileReader;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v4}, Lio/sentry/instrumentation/file/SentryFileReader;-><init>(Ljava/lang/String;)V
 
     invoke-direct {v2, v3}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
     :try_end_0
@@ -612,11 +612,11 @@
     :try_start_0
     new-instance v2, Ljava/io/BufferedReader;
 
-    new-instance v3, Ljava/io/FileReader;
+    new-instance v3, Lio/sentry/instrumentation/file/SentryFileReader;
 
     const-string v4, "/proc/meminfo"
 
-    invoke-direct {v3, v4}, Ljava/io/FileReader;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v4}, Lio/sentry/instrumentation/file/SentryFileReader;-><init>(Ljava/lang/String;)V
 
     invoke-direct {v2, v3}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
     :try_end_0
@@ -729,7 +729,7 @@
     :try_start_0
     new-instance v2, Ljava/io/BufferedReader;
 
-    new-instance v3, Ljava/io/FileReader;
+    new-instance v3, Lio/sentry/instrumentation/file/SentryFileReader;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -743,7 +743,7 @@
 
     move-result-object p1
 
-    invoke-direct {v3, p1}, Ljava/io/FileReader;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, p1}, Lio/sentry/instrumentation/file/SentryFileReader;-><init>(Ljava/lang/String;)V
 
     invoke-direct {v2, v3}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
     :try_end_0

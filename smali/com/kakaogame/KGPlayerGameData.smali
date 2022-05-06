@@ -497,7 +497,7 @@
     const-string v1, "PlayerGameData"
 
     .line 1
-    invoke-static {v0, p1, v1}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :try_start_0
     const-string v0, "cohort1"
@@ -531,7 +531,7 @@
     const-string v1, "PlayerGameData"
 
     .line 1
-    invoke-static {v0, p1, v1}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :try_start_0
     const-string v0, "cohort2"
@@ -565,7 +565,7 @@
     const-string v1, "PlayerGameData"
 
     .line 1
-    invoke-static {v0, p1, v1}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :try_start_0
     const-string v0, "cohort3"
@@ -599,7 +599,7 @@
     const-string v1, "PlayerGameData"
 
     .line 1
-    invoke-static {v0, p1, v1}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :try_start_0
     const-string v0, "cohort4"
@@ -633,7 +633,7 @@
     const-string v1, "PlayerGameData"
 
     .line 1
-    invoke-static {v0, p1, v1}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :try_start_0
     const-string v0, "cohort5"

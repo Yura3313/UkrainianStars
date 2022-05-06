@@ -132,7 +132,7 @@
     :try_start_1
     iget-object p1, p0, Lj3/q1;->a:Lcom/google/android/gms/internal/ads/zzaek;
 
-    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzaek;->o()Lcom/google/android/gms/internal/ads/zzadw;
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzaek;->p()Lcom/google/android/gms/internal/ads/zzadw;
 
     move-result-object p1
 
@@ -181,14 +181,14 @@
 
     .line 20
     :try_start_3
-    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzado;->w1()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzado;->x1()Ljava/lang/String;
     :try_end_3
     .catch Landroid/os/RemoteException; {:try_start_3 .. :try_end_3} :catch_2
 
     .line 21
     :catch_2
     :try_start_4
-    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzado;->g3()Ljava/util/List;
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzado;->h3()Ljava/util/List;
 
     move-result-object p1
 
@@ -272,7 +272,7 @@
     :try_start_0
     iget-object v0, p0, Lj3/q1;->a:Lcom/google/android/gms/internal/ads/zzaek;
 
-    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzaek;->S()Lcom/google/android/gms/dynamic/IObjectWrapper;
+    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzaek;->T()Lcom/google/android/gms/dynamic/IObjectWrapper;
 
     move-result-object v0
     :try_end_0
@@ -296,7 +296,7 @@
     :try_start_0
     iget-object v1, p0, Lj3/q1;->a:Lcom/google/android/gms/internal/ads/zzaek;
 
-    invoke-interface {v1}, Lcom/google/android/gms/internal/ads/zzaek;->l()D
+    invoke-interface {v1}, Lcom/google/android/gms/internal/ads/zzaek;->m()D
 
     move-result-wide v1
 

@@ -1,145 +1,145 @@
-.class public final Lj3/m41;
+.class public final synthetic Lj3/m41;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Landroid/os/Parcelable$Creator;
+.implements Ljava/lang/Runnable;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/internal/ads/zzvl;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final g:Lj3/n41;
+
+.field public final h:Lj3/f41;
+
+.field public final i:Lcom/google/android/gms/internal/ads/zzta;
+
+.field public final j:Lj3/qd;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lj3/n41;Lj3/f41;Lcom/google/android/gms/internal/ads/zzta;Lj3/qd;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lj3/m41;->g:Lj3/n41;
+
+    iput-object p2, p0, Lj3/m41;->h:Lj3/f41;
+
+    iput-object p3, p0, Lj3/m41;->i:Lcom/google/android/gms/internal/ads/zzta;
+
+    iput-object p4, p0, Lj3/m41;->j:Lj3/qd;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 11
+.method public final run()V
+    .locals 5
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    iget-object v0, p0, Lj3/m41;->g:Lj3/n41;
 
-    move-result v0
+    iget-object v1, p0, Lj3/m41;->h:Lj3/f41;
 
-    const/4 v1, 0x0
+    iget-object v2, p0, Lj3/m41;->i:Lcom/google/android/gms/internal/ads/zzta;
 
-    const/4 v2, 0x0
-
-    const-wide/16 v3, 0x0
-
-    move-object v8, v2
-
-    move-wide v9, v3
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
+    iget-object v3, p0, Lj3/m41;->j:Lj3/qd;
 
     .line 2
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+    :try_start_0
+    invoke-virtual {v1}, Lcom/google/android/gms/common/internal/BaseGmsClient;->v()Landroid/os/IInterface;
 
-    move-result v1
+    move-result-object v1
 
-    if-ge v1, v0, :cond_4
+    check-cast v1, Lcom/google/android/gms/internal/ads/zztb;
 
     .line 3
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+    invoke-interface {v1, v2}, Lcom/google/android/gms/internal/ads/zztb;->L6(Lcom/google/android/gms/internal/ads/zzta;)Lcom/google/android/gms/internal/ads/zzsv;
+
+    move-result-object v1
+
+    .line 4
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/zzsv;->z2()Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    .line 5
+    new-instance v1, Ljava/lang/RuntimeException;
+
+    const-string v2, "No entry contents."
+
+    invoke-direct {v1, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, v1}, Lj3/qd;->c(Ljava/lang/Throwable;)Z
+
+    .line 6
+    iget-object v1, v0, Lj3/n41;->c:Lj3/l41;
+
+    invoke-static {v1}, Lj3/l41;->a(Lj3/l41;)V
+
+    return-void
+
+    .line 7
+    :cond_0
+    new-instance v2, Lj3/o41;
+
+    .line 8
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/zzsv;->A2()Ljava/io/InputStream;
+
+    move-result-object v1
+
+    invoke-direct {v2, v0, v1}, Lj3/o41;-><init>(Lj3/n41;Ljava/io/InputStream;)V
+
+    .line 9
+    invoke-virtual {v2}, Ljava/io/PushbackInputStream;->read()I
 
     move-result v1
 
-    const v2, 0xffff
+    const/4 v4, -0x1
 
-    and-int/2addr v2, v1
-
-    const/4 v3, 0x1
-
-    if-eq v2, v3, :cond_3
-
-    const/4 v3, 0x2
-
-    if-eq v2, v3, :cond_2
-
-    const/4 v3, 0x3
-
-    if-eq v2, v3, :cond_1
-
-    const/4 v3, 0x4
-
-    if-eq v2, v3, :cond_0
-
-    .line 4
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
-
-    goto :goto_0
-
-    .line 5
-    :cond_0
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->t(Landroid/os/Parcel;I)J
-
-    move-result-wide v9
-
-    goto :goto_0
-
-    .line 6
-    :cond_1
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
-
-    move-result-object v8
-
-    goto :goto_0
-
-    .line 7
-    :cond_2
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
-
-    move-result v7
-
-    goto :goto_0
-
-    .line 8
-    :cond_3
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
-
-    move-result v6
-
-    goto :goto_0
-
-    .line 9
-    :cond_4
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+    if-eq v1, v4, :cond_1
 
     .line 10
-    new-instance p1, Lcom/google/android/gms/internal/ads/zzvl;
+    invoke-virtual {v2, v1}, Ljava/io/PushbackInputStream;->unread(I)V
 
-    move-object v5, p1
+    .line 11
+    invoke-virtual {v3, v2}, Lj3/qd;->b(Ljava/lang/Object;)Z
 
-    invoke-direct/range {v5 .. v10}, Lcom/google/android/gms/internal/ads/zzvl;-><init>(IILjava/lang/String;J)V
+    return-void
 
-    return-object p1
-.end method
+    .line 12
+    :cond_1
+    new-instance v1, Ljava/io/IOException;
 
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
+    const-string v2, "Unable to read from cache."
 
-    .line 1
-    new-array p1, p1, [Lcom/google/android/gms/internal/ads/zzvl;
+    invoke-direct {v1, v2}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
-    return-object p1
+    throw v1
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    move-exception v1
+
+    goto :goto_0
+
+    :catch_1
+    move-exception v1
+
+    .line 13
+    :goto_0
+    invoke-virtual {v3, v1}, Lj3/qd;->c(Ljava/lang/Throwable;)Z
+
+    .line 14
+    iget-object v0, v0, Lj3/n41;->c:Lj3/l41;
+
+    invoke-static {v0}, Lj3/l41;->a(Lj3/l41;)V
+
+    return-void
 .end method

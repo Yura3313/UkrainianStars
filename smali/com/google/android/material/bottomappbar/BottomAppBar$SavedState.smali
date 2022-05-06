@@ -27,9 +27,9 @@
 
 
 # instance fields
-.field public h:I
+.field public i:I
 
-.field public i:Z
+.field public j:Z
 
 
 # direct methods
@@ -57,7 +57,7 @@
 
     move-result p2
 
-    iput p2, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$SavedState;->h:I
+    iput p2, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$SavedState;->i:I
 
     .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -74,7 +74,7 @@
     const/4 p1, 0x0
 
     :goto_0
-    iput-boolean p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$SavedState;->i:Z
+    iput-boolean p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$SavedState;->j:Z
 
     return-void
 .end method
@@ -94,17 +94,17 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->a:Landroid/os/Parcelable;
+    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->g:Landroid/os/Parcelable;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
-    iget p2, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$SavedState;->h:I
+    iget p2, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$SavedState;->i:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 3
-    iget-boolean p2, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$SavedState;->i:Z
+    iget-boolean p2, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$SavedState;->j:Z
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

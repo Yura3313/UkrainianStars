@@ -37,22 +37,19 @@
 .method public abstract friendsChanged([Lcom/supercell/id/IdFriend;)V
 .end method
 
-.method public abstract friendsFailed()V
-.end method
-
 .method public abstract getConfig()Lcom/supercell/id/IdConfiguration;
 .end method
 
 .method public abstract getIngameFriends()[Lcom/supercell/id/IdIngameFriend;
 .end method
 
-.method public abstract inviteToPlayFailed([Ljava/lang/String;)V
+.method public abstract inviteToPlayFailed([Ljava/lang/String;[Ljava/lang/String;)V
 .end method
 
-.method public abstract inviteToPlayRejected(Ljava/lang/String;)V
+.method public abstract inviteToPlayRejected(Ljava/lang/String;Ljava/lang/String;)V
 .end method
 
-.method public abstract invitedToPlay([Ljava/lang/String;)V
+.method public abstract invitedToPlay([Ljava/lang/String;[Ljava/lang/String;)V
 .end method
 
 .method public abstract isIngameFriendsEnabled()Z
@@ -74,6 +71,9 @@
 .end method
 
 .method public abstract presentingActivity()Landroid/app/Activity;
+.end method
+
+.method public abstract profileInfoFailed()V
 .end method
 
 .method public abstract purchasesReceivedNotification([Lcom/supercell/id/IdShopProduct;)V

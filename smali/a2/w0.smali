@@ -20,7 +20,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
-            "La4/g<",
+            "Lb4/g<",
             "*>;",
             "Ljava/lang/Boolean;",
             ">;"
@@ -126,14 +126,14 @@
     return-void
 .end method
 
-.method public final b(La4/g;Z)V
+.method public final b(Lb4/g;Z)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<TResult:",
             "Ljava/lang/Object;",
             ">(",
-            "La4/g<",
+            "Lb4/g<",
             "TTResult;>;Z)V"
         }
     .end annotation
@@ -148,15 +148,15 @@
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    iget-object p2, p1, La4/g;->a:La4/y;
+    iget-object p2, p1, Lb4/g;->a:Lb4/y;
 
     .line 3
     new-instance v0, La2/x0;
 
-    invoke-direct {v0, p0, p1}, La2/x0;-><init>(La2/w0;La4/g;)V
+    invoke-direct {v0, p0, p1}, La2/x0;-><init>(La2/w0;Lb4/g;)V
 
     .line 4
-    invoke-virtual {p2, v0}, La4/y;->b(La4/c;)La4/f;
+    invoke-virtual {p2, v0}, Lb4/y;->b(Lb4/c;)Lb4/f;
 
     return-void
 .end method
@@ -326,13 +326,13 @@
 
     move-result-object v1
 
-    check-cast v1, La4/g;
+    check-cast v1, Lb4/g;
 
     new-instance v2, Lcom/google/android/gms/common/api/ApiException;
 
     invoke-direct {v2, p2}, Lcom/google/android/gms/common/api/ApiException;-><init>(Lcom/google/android/gms/common/api/Status;)V
 
-    invoke-virtual {v1, v2}, La4/g;->a(Ljava/lang/Exception;)Z
+    invoke-virtual {v1, v2}, Lb4/g;->a(Ljava/lang/Exception;)Z
 
     goto :goto_1
 
@@ -406,7 +406,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, La2/f;->u:Lcom/google/android/gms/common/api/Status;
+    sget-object v0, La2/f;->v:Lcom/google/android/gms/common/api/Status;
 
     const/4 v1, 0x0
 

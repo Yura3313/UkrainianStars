@@ -132,7 +132,7 @@
 
     const-string v2, "TaskException has error code 0 on task: "
 
-    invoke-static {v1, v2, v0}, Lb0/c;->b(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, v2, v0}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -149,7 +149,7 @@
 
     const-string v2, "onComplete called for incomplete task: "
 
-    invoke-static {v1, v2, v0}, Lb0/c;->b(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, v2, v0}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 

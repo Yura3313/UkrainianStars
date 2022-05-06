@@ -1,33 +1,86 @@
 .class public final Lj3/qn0;
-.super Lj3/xm0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lj3/xm0<",
-        "Lj3/um0;",
-        "Lcom/google/android/gms/internal/ads/c5;",
-        ">;"
-    }
-.end annotation
+# static fields
+.field public static final a:Ljava/lang/String;
+
+.field public static final b:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Class;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0, p1}, Lj3/xm0;-><init>(Ljava/lang/Class;)V
+    new-instance v0, Lcom/google/android/gms/internal/ads/e2;
+
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/e2;-><init>()V
+
+    const-string v0, "type.googleapis.com/google.crypto.tink.AesCtrHmacAeadKey"
+
+    .line 2
+    sput-object v0, Lj3/qn0;->a:Ljava/lang/String;
+
+    .line 3
+    new-instance v0, Lcom/google/android/gms/internal/ads/j2;
+
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/j2;-><init>()V
+
+    const-string v0, "type.googleapis.com/google.crypto.tink.AesGcmKey"
+
+    sput-object v0, Lj3/qn0;->b:Ljava/lang/String;
+
+    .line 4
+    new-instance v0, Lcom/google/android/gms/internal/ads/i2;
+
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/i2;-><init>()V
+
+    .line 5
+    new-instance v0, Lj3/yn0;
+
+    invoke-direct {v0}, Lj3/yn0;-><init>()V
+
+    .line 6
+    new-instance v0, Lj3/ao0;
+
+    invoke-direct {v0}, Lj3/ao0;-><init>()V
+
+    .line 7
+    new-instance v0, Lj3/xn0;
+
+    invoke-direct {v0}, Lj3/xn0;-><init>()V
+
+    .line 8
+    new-instance v0, Lj3/eo0;
+
+    invoke-direct {v0}, Lj3/eo0;-><init>()V
+
+    .line 9
+    sget v0, Lcom/google/android/gms/internal/ads/l5;->g:I
+
+    .line 10
+    :try_start_0
+    invoke-static {}, Lj3/qn0;->a()V
+    :try_end_0
+    .catch Ljava/security/GeneralSecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
     return-void
+
+    :catch_0
+    move-exception v0
+
+    .line 11
+    new-instance v1, Ljava/lang/ExceptionInInitializerError;
+
+    invoke-direct {v1, v0}, Ljava/lang/ExceptionInInitializerError;-><init>(Ljava/lang/Throwable;)V
+
+    throw v1
 .end method
 
-
-# virtual methods
-.method public final synthetic a(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 8
+.method public static a()V
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/GeneralSecurityException;
@@ -35,124 +88,84 @@
     .end annotation
 
     .line 1
-    check-cast p1, Lcom/google/android/gms/internal/ads/c5;
+    sget v0, Lj3/uo0;->a:I
 
     .line 2
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/c5;->C()Lcom/google/android/gms/internal/ads/d5;
+    new-instance v0, Lcom/google/android/gms/internal/ads/v2;
 
-    move-result-object v0
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/v2;-><init>()V
 
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/d5;->B()Lcom/google/android/gms/internal/ads/z4;
-
-    move-result-object v0
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/z1;->e(Lj3/gn0;)V
 
     .line 3
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/z4;->x()Lcom/google/android/gms/internal/ads/g5;
+    new-instance v0, Lcom/google/android/gms/internal/ads/s2;
 
-    move-result-object v1
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/s2;-><init>()V
+
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/z1;->e(Lj3/gn0;)V
 
     .line 4
-    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/g5;->x()Lj3/ho0;
+    new-instance v0, Lj3/to0;
 
-    move-result-object v2
+    invoke-direct {v0}, Lj3/to0;-><init>()V
 
-    invoke-static {v2}, Lj3/zn0;->f(Lj3/ho0;)Lj3/gp0;
-
-    move-result-object v2
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/z1;->f(Lj3/mn0;)V
 
     .line 5
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/c5;->B()Lj3/lq0;
+    new-instance v0, Lcom/google/android/gms/internal/ads/e2;
 
-    move-result-object p1
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/e2;-><init>()V
 
-    invoke-virtual {p1}, Lj3/lq0;->a()[B
-
-    move-result-object p1
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/z1;->e(Lj3/gn0;)V
 
     .line 6
-    invoke-static {v2}, Lj3/ep0;->c(Lj3/gp0;)Ljava/security/spec/ECParameterSpec;
+    new-instance v0, Lcom/google/android/gms/internal/ads/i2;
 
-    move-result-object v2
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/i2;-><init>()V
+
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/z1;->e(Lj3/gn0;)V
 
     .line 7
-    new-instance v3, Ljava/math/BigInteger;
+    new-instance v0, Lcom/google/android/gms/internal/ads/j2;
 
-    const/4 v4, 0x1
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/j2;-><init>()V
 
-    invoke-direct {v3, v4, p1}, Ljava/math/BigInteger;-><init>(I[B)V
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/z1;->e(Lj3/gn0;)V
 
     .line 8
-    new-instance p1, Ljava/security/spec/ECPrivateKeySpec;
+    new-instance v0, Lj3/xn0;
 
-    invoke-direct {p1, v3, v2}, Ljava/security/spec/ECPrivateKeySpec;-><init>(Ljava/math/BigInteger;Ljava/security/spec/ECParameterSpec;)V
+    invoke-direct {v0}, Lj3/xn0;-><init>()V
+
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/z1;->e(Lj3/gn0;)V
 
     .line 9
-    sget-object v2, Lj3/hp0;->i:Lj3/hp0;
+    new-instance v0, Lj3/yn0;
 
-    const-string v3, "EC"
+    invoke-direct {v0}, Lj3/yn0;-><init>()V
 
-    invoke-virtual {v2, v3}, Lj3/hp0;->a(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/security/KeyFactory;
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/z1;->e(Lj3/gn0;)V
 
     .line 10
-    invoke-virtual {v2, p1}, Ljava/security/KeyFactory;->generatePrivate(Ljava/security/spec/KeySpec;)Ljava/security/PrivateKey;
+    new-instance v0, Lj3/ao0;
 
-    move-result-object p1
+    invoke-direct {v0}, Lj3/ao0;-><init>()V
 
-    move-object v3, p1
-
-    check-cast v3, Ljava/security/interfaces/ECPrivateKey;
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/z1;->e(Lj3/gn0;)V
 
     .line 11
-    new-instance v7, Lcom/google/android/gms/internal/ads/n3;
+    new-instance v0, Lj3/eo0;
+
+    invoke-direct {v0}, Lj3/eo0;-><init>()V
+
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/z1;->e(Lj3/gn0;)V
 
     .line 12
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/z4;->y()Lcom/google/android/gms/internal/ads/v4;
+    new-instance v0, Lj3/pn0;
 
-    move-result-object p1
+    invoke-direct {v0}, Lj3/pn0;-><init>()V
 
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/v4;->x()Lcom/google/android/gms/internal/ads/q5;
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/z1;->f(Lj3/mn0;)V
 
-    move-result-object p1
-
-    invoke-direct {v7, p1}, Lcom/google/android/gms/internal/ads/n3;-><init>(Lcom/google/android/gms/internal/ads/q5;)V
-
-    .line 13
-    new-instance p1, Lj3/zo0;
-
-    .line 14
-    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/g5;->z()Lj3/lq0;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lj3/lq0;->a()[B
-
-    move-result-object v4
-
-    .line 15
-    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/g5;->y()Lj3/io0;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lj3/zn0;->g(Lj3/io0;)Ljava/lang/String;
-
-    move-result-object v5
-
-    .line 16
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/z4;->z()Lj3/go0;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lj3/zn0;->e(Lj3/go0;)Lj3/fp0;
-
-    move-result-object v6
-
-    move-object v2, p1
-
-    invoke-direct/range {v2 .. v7}, Lj3/zo0;-><init>(Ljava/security/interfaces/ECPrivateKey;[BLjava/lang/String;Lj3/fp0;Lj3/ap0;)V
-
-    return-object p1
+    return-void
 .end method

@@ -21,21 +21,21 @@
         "Lle/j;",
         "Lke/l<",
         "Ljava/lang/Exception;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;->a:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
     const/4 p1, 0x1
 
@@ -57,22 +57,22 @@
     if-eqz p1, :cond_1
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;->a:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+    iget-object v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
-    invoke-static {v1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    sget-object v2, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v2, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 3
-    invoke-virtual {v1, p1, v0}, Lcom/supercell/id/ui/MainActivity;->E(Ljava/lang/Exception;Lke/l;)V
+    invoke-virtual {v1, p1, v0}, Lcom/supercell/id/ui/MainActivity;->F(Ljava/lang/Exception;Lke/l;)V
 
     .line 4
     :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -80,7 +80,7 @@
     const-string p1, "it"
 
     .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

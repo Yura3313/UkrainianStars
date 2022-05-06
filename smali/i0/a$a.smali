@@ -52,11 +52,11 @@
     iget-object p1, p0, Li0/a$a;->a:Li0/a;
 
     .line 2
-    iget-boolean v0, p1, Li0/a;->b:Z
+    iget-boolean v0, p1, Li0/a;->h:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p1, Li0/a;->h:Landroid/database/Cursor;
+    iget-object v0, p1, Li0/a;->i:Landroid/database/Cursor;
 
     if-eqz v0, :cond_0
 
@@ -67,13 +67,13 @@
     if-nez v0, :cond_0
 
     .line 3
-    iget-object v0, p1, Li0/a;->h:Landroid/database/Cursor;
+    iget-object v0, p1, Li0/a;->i:Landroid/database/Cursor;
 
     invoke-interface {v0}, Landroid/database/Cursor;->requery()Z
 
     move-result v0
 
-    iput-boolean v0, p1, Li0/a;->a:Z
+    iput-boolean v0, p1, Li0/a;->g:Z
 
     :cond_0
     return-void

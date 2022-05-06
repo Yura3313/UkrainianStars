@@ -21,21 +21,21 @@
         "Lle/j;",
         "Lke/l<",
         "Landroid/view/View;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/messages/MessagesFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/messages/MessagesFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/messages/MessagesFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/messages/MessagesFragment$b;->a:Lcom/supercell/id/ui/messages/MessagesFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/messages/MessagesFragment$b;->g:Lcom/supercell/id/ui/messages/MessagesFragment;
 
     const/4 p1, 0x1
 
@@ -53,15 +53,15 @@
     check-cast p1, Landroid/view/View;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment$b;->a:Lcom/supercell/id/ui/messages/MessagesFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment$b;->g:Lcom/supercell/id/ui/messages/MessagesFragment;
 
     .line 3
-    iget-object v0, v0, Lcom/supercell/id/ui/messages/MessagesFragment;->i0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, v0, Lcom/supercell/id/ui/messages/MessagesFragment;->j0:Landroidx/recyclerview/widget/RecyclerView;
 
     if-eqz v0, :cond_0
 
     .line 4
-    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView;->n0:Ljava/util/List;
+    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView;->o0:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
@@ -70,7 +70,7 @@
 
     .line 6
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment$b;->a:Lcom/supercell/id/ui/messages/MessagesFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment$b;->g:Lcom/supercell/id/ui/messages/MessagesFragment;
 
     instance-of v1, p1, Landroid/view/ViewGroup;
 
@@ -92,7 +92,7 @@
 
     move-result v3
 
-    invoke-static {v1, v3}, Lbe/a;->e(II)Loe/c;
+    invoke-static {v1, v3}, Lc2/n0;->e(II)Loe/c;
 
     move-result-object v3
 
@@ -120,9 +120,9 @@
 
     move-object v5, v3
 
-    check-cast v5, Lce/u;
+    check-cast v5, Lbe/t;
 
-    invoke-virtual {v5}, Lce/u;->b()I
+    invoke-virtual {v5}, Lbe/t;->b()I
 
     move-result v5
 
@@ -187,17 +187,17 @@
     check-cast v3, Landroidx/recyclerview/widget/RecyclerView;
 
     .line 13
-    iput-object v3, v0, Lcom/supercell/id/ui/messages/MessagesFragment;->i0:Landroidx/recyclerview/widget/RecyclerView;
+    iput-object v3, v0, Lcom/supercell/id/ui/messages/MessagesFragment;->j0:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 14
-    iget-object p1, p0, Lcom/supercell/id/ui/messages/MessagesFragment$b;->a:Lcom/supercell/id/ui/messages/MessagesFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/messages/MessagesFragment$b;->g:Lcom/supercell/id/ui/messages/MessagesFragment;
 
     const/4 v0, 0x1
 
     invoke-static {p1, v1, v0, v2}, Lcom/supercell/id/ui/BaseFragment;->k1(Lcom/supercell/id/ui/BaseFragment;ZILjava/lang/Object;)V
 
     .line 15
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method

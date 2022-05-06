@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static e0:Ljava/util/WeakHashMap;
+.field public static f0:Ljava/util/WeakHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/WeakHashMap<",
@@ -21,7 +21,7 @@
 
 
 # instance fields
-.field public b0:Ljava/util/Map;
+.field public c0:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -32,9 +32,9 @@
     .end annotation
 .end field
 
-.field public c0:I
+.field public d0:I
 
-.field public d0:Landroid/os/Bundle;
+.field public e0:Landroid/os/Bundle;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
 
-    sput-object v0, La2/d1;->e0:Ljava/util/WeakHashMap;
+    sput-object v0, La2/d1;->f0:Ljava/util/WeakHashMap;
 
     return-void
 .end method
@@ -67,12 +67,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, La2/d1;->b0:Ljava/util/Map;
+    iput-object v0, p0, La2/d1;->c0:Ljava/util/Map;
 
     const/4 v0, 0x0
 
     .line 4
-    iput v0, p0, La2/d1;->c0:I
+    iput v0, p0, La2/d1;->d0:I
 
     return-void
 .end method
@@ -86,7 +86,7 @@
     invoke-super {p0, p1, p2, p3}, Landroidx/fragment/app/Fragment;->b0(IILandroid/content/Intent;)V
 
     .line 2
-    iget-object v0, p0, La2/d1;->b0:Ljava/util/Map;
+    iget-object v0, p0, La2/d1;->c0:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -118,6 +118,70 @@
     return-void
 .end method
 
+.method public final d(Ljava/lang/String;Lcom/google/android/gms/common/api/internal/LifecycleCallback;)V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, La2/d1;->c0:Ljava/util/Map;
+
+    invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    .line 2
+    iget-object v0, p0, La2/d1;->c0:Ljava/util/Map;
+
+    invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 3
+    iget v0, p0, La2/d1;->d0:I
+
+    if-lez v0, :cond_0
+
+    .line 4
+    new-instance v0, Lp3/b;
+
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Lp3/b;-><init>(Landroid/os/Looper;)V
+
+    new-instance v1, La2/e1;
+
+    invoke-direct {v1, p0, p2, p1}, La2/e1;-><init>(La2/d1;Lcom/google/android/gms/common/api/internal/LifecycleCallback;Ljava/lang/String;)V
+
+    .line 5
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    :cond_0
+    return-void
+
+    .line 6
+    :cond_1
+    new-instance p2, Ljava/lang/IllegalArgumentException;
+
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, 0x3b
+
+    const-string v1, "LifecycleCallback with tag "
+
+    const-string v2, " already added to this fragment."
+
+    invoke-static {v0, v1, p1, v2}, Lh1/i;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+.end method
+
 .method public final d0(Landroid/os/Bundle;)V
     .locals 3
 
@@ -127,13 +191,13 @@
     const/4 v0, 0x1
 
     .line 2
-    iput v0, p0, La2/d1;->c0:I
+    iput v0, p0, La2/d1;->d0:I
 
     .line 3
-    iput-object p1, p0, La2/d1;->d0:Landroid/os/Bundle;
+    iput-object p1, p0, La2/d1;->e0:Landroid/os/Bundle;
 
     .line 4
-    iget-object v0, p0, La2/d1;->b0:Ljava/util/Map;
+    iget-object v0, p0, La2/d1;->c0:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -191,68 +255,33 @@
     return-void
 .end method
 
-.method public final e(Ljava/lang/String;Lcom/google/android/gms/common/api/internal/LifecycleCallback;)V
-    .locals 3
+.method public final g(Ljava/lang/String;Ljava/lang/Class;)Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/android/gms/common/api/internal/LifecycleCallback;",
+            ">(",
+            "Ljava/lang/String;",
+            "Ljava/lang/Class<",
+            "TT;>;)TT;"
+        }
+    .end annotation
 
     .line 1
-    iget-object v0, p0, La2/d1;->b0:Ljava/util/Map;
+    iget-object v0, p0, La2/d1;->c0:Ljava/util/Map;
 
-    invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 2
-    iget-object v0, p0, La2/d1;->b0:Ljava/util/Map;
-
-    invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 3
-    iget v0, p0, La2/d1;->c0:I
-
-    if-lez v0, :cond_0
-
-    .line 4
-    new-instance v0, Lp3/b;
-
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Lp3/b;-><init>(Landroid/os/Looper;)V
-
-    new-instance v1, La2/e1;
-
-    invoke-direct {v1, p0, p2, p1}, La2/e1;-><init>(La2/d1;Lcom/google/android/gms/common/api/internal/LifecycleCallback;Ljava/lang/String;)V
-
-    .line 5
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-
-    :cond_0
-    return-void
-
-    .line 6
-    :cond_1
-    new-instance p2, Ljava/lang/IllegalArgumentException;
-
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x3b
-
-    const-string v1, "LifecycleCallback with tag "
-
-    const-string v2, " already added to this fragment."
-
-    invoke-static {v0, v1, p1, v2}, Lh1/i;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    invoke-virtual {p2, p1}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
 
-    throw p2
+    move-result-object p1
+
+    check-cast p1, Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+
+    return-object p1
 .end method
 
 .method public final h0()V
@@ -261,15 +290,15 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     const/4 v0, 0x5
 
     .line 2
-    iput v0, p0, La2/d1;->c0:I
+    iput v0, p0, La2/d1;->d0:I
 
     .line 3
-    iget-object v0, p0, La2/d1;->b0:Ljava/util/Map;
+    iget-object v0, p0, La2/d1;->c0:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -301,36 +330,7 @@
     return-void
 .end method
 
-.method public final i(Ljava/lang/String;Ljava/lang/Class;)Lcom/google/android/gms/common/api/internal/LifecycleCallback;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Lcom/google/android/gms/common/api/internal/LifecycleCallback;",
-            ">(",
-            "Ljava/lang/String;",
-            "Ljava/lang/Class<",
-            "TT;>;)TT;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, La2/d1;->b0:Ljava/util/Map;
-
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    invoke-virtual {p2, p1}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/google/android/gms/common/api/internal/LifecycleCallback;
-
-    return-object p1
-.end method
-
-.method public final synthetic j()Landroid/app/Activity;
+.method public final synthetic i()Landroid/app/Activity;
     .locals 1
 
     .line 1
@@ -347,15 +347,15 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     const/4 v0, 0x3
 
     .line 2
-    iput v0, p0, La2/d1;->c0:I
+    iput v0, p0, La2/d1;->d0:I
 
     .line 3
-    iget-object v0, p0, La2/d1;->b0:Ljava/util/Map;
+    iget-object v0, p0, La2/d1;->c0:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -396,7 +396,7 @@
 
     .line 1
     :cond_0
-    iget-object v0, p0, La2/d1;->b0:Ljava/util/Map;
+    iget-object v0, p0, La2/d1;->c0:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -454,15 +454,15 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     const/4 v0, 0x2
 
     .line 2
-    iput v0, p0, La2/d1;->c0:I
+    iput v0, p0, La2/d1;->d0:I
 
     .line 3
-    iget-object v0, p0, La2/d1;->b0:Ljava/util/Map;
+    iget-object v0, p0, La2/d1;->c0:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -500,15 +500,15 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     const/4 v0, 0x4
 
     .line 2
-    iput v0, p0, La2/d1;->c0:I
+    iput v0, p0, La2/d1;->d0:I
 
     .line 3
-    iget-object v0, p0, La2/d1;->b0:Ljava/util/Map;
+    iget-object v0, p0, La2/d1;->c0:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -547,7 +547,7 @@
     invoke-super {p0, p1, p2, p3, p4}, Landroidx/fragment/app/Fragment;->t(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
     .line 2
-    iget-object p1, p0, La2/d1;->b0:Ljava/util/Map;
+    iget-object p1, p0, La2/d1;->c0:Ljava/util/Map;
 
     invoke-interface {p1}, Ljava/util/Map;->values()Ljava/util/Collection;
 

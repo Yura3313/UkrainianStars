@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
 
 # direct methods
@@ -29,7 +29,7 @@
     .line 1
     invoke-direct {p0, v0}, Lcom/supercell/id/model/MyProfileImage;-><init>(Lle/g;)V
 
-    iput-object p1, p0, Lcom/supercell/id/model/MyProfileImage$Avatar;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/model/MyProfileImage$Avatar;->g:Ljava/lang/String;
 
     return-void
 
@@ -37,13 +37,22 @@
     const-string p1, "avatarImage"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
 
 
 # virtual methods
+.method public final b()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/supercell/id/model/MyProfileImage$Avatar;->g:Ljava/lang/String;
+
+    return-object v0
+.end method
+
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
@@ -55,11 +64,11 @@
 
     check-cast p1, Lcom/supercell/id/model/MyProfileImage$Avatar;
 
-    iget-object v0, p0, Lcom/supercell/id/model/MyProfileImage$Avatar;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/model/MyProfileImage$Avatar;->g:Ljava/lang/String;
 
-    iget-object p1, p1, Lcom/supercell/id/model/MyProfileImage$Avatar;->a:Ljava/lang/String;
+    iget-object p1, p1, Lcom/supercell/id/model/MyProfileImage$Avatar;->g:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -79,19 +88,10 @@
     return p1
 .end method
 
-.method public final h()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/model/MyProfileImage$Avatar;->a:Ljava/lang/String;
-
-    return-object v0
-.end method
-
 .method public hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/model/MyProfileImage$Avatar;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/model/MyProfileImage$Avatar;->g:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
@@ -113,11 +113,11 @@
 
     const-string v0, "Avatar(avatarImage="
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/model/MyProfileImage$Avatar;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/model/MyProfileImage$Avatar;->g:Ljava/lang/String;
 
     const-string v2, ")"
 

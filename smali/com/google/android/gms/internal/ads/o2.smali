@@ -1,47 +1,30 @@
 .class public final Lcom/google/android/gms/internal/ads/o2;
-.super Ljava/lang/Object;
+.super Lj3/de;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lcom/google/android/gms/internal/ads/n2$a;
 
-
-# instance fields
-.field public final synthetic a:Lj3/en0;
-
-.field public final synthetic b:Lcom/google/android/gms/internal/ads/h2;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lj3/de;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Lj3/en0;Lcom/google/android/gms/internal/ads/h2;)V
+.method public constructor <init>(Lj3/ao0;Ljava/lang/Class;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/o2;->a:Lj3/en0;
-
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/o2;->b:Lcom/google/android/gms/internal/ads/h2;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p2}, Lj3/de;-><init>(Ljava/lang/Class;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Class;)Lj3/vm0;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<Q:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/lang/Class<",
-            "TQ;>;)",
-            "Lj3/vm0<",
-            "TQ;>;"
-        }
-    .end annotation
-
+.method public final bridge synthetic f(Lj3/dt0;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/GeneralSecurityException;
@@ -49,115 +32,96 @@
     .end annotation
 
     .line 1
-    :try_start_0
-    new-instance v0, Lcom/google/android/gms/internal/ads/l2;
+    check-cast p1, Lcom/google/android/gms/internal/ads/k5;
 
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/o2;->a:Lj3/en0;
+    return-void
+.end method
 
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/o2;->b:Lcom/google/android/gms/internal/ads/h2;
+.method public final g(Lj3/dt0;)Ljava/lang/Object;
+    .locals 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
 
-    invoke-direct {v0, v1, v2, p1}, Lcom/google/android/gms/internal/ads/l2;-><init>(Lj3/en0;Lcom/google/android/gms/internal/ads/h2;Ljava/lang/Class;)V
-    :try_end_0
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object v0
-
-    :catch_0
-    move-exception p1
+    .line 1
+    check-cast p1, Lcom/google/android/gms/internal/ads/k5;
 
     .line 2
-    new-instance v0, Ljava/security/GeneralSecurityException;
-
-    const-string v1, "Primitive type not supported"
-
-    invoke-direct {v0, v1, p1}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v0
-.end method
-
-.method public final b()Ljava/lang/Class;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/lang/Class<",
-            "*>;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/o2;->b:Lcom/google/android/gms/internal/ads/h2;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {}, Lcom/google/android/gms/internal/ads/h5;->C()Lcom/google/android/gms/internal/ads/h5$a;
 
     move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final c()Ljava/util/Set;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Set<",
-            "Ljava/lang/Class<",
-            "*>;>;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/o2;->a:Lj3/en0;
-
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/h2;->d()Ljava/util/Set;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final d()Lj3/vm0;
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lj3/vm0<",
-            "*>;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Lcom/google/android/gms/internal/ads/l2;
-
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/o2;->a:Lj3/en0;
-
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/o2;->b:Lcom/google/android/gms/internal/ads/h2;
-
-    .line 2
-    iget-object v3, v1, Lcom/google/android/gms/internal/ads/h2;->c:Ljava/lang/Class;
 
     .line 3
-    invoke-direct {v0, v1, v2, v3}, Lcom/google/android/gms/internal/ads/l2;-><init>(Lj3/en0;Lcom/google/android/gms/internal/ads/h2;Ljava/lang/Class;)V
+    iget-boolean v1, v0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
 
-    return-object v0
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_0
+
+    .line 4
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
+
+    .line 5
+    iput-boolean v2, v0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+
+    .line 6
+    :cond_0
+    iget-object v1, v0, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
+
+    check-cast v1, Lcom/google/android/gms/internal/ads/h5;
+
+    invoke-static {v1, p1}, Lcom/google/android/gms/internal/ads/h5;->A(Lcom/google/android/gms/internal/ads/h5;Lcom/google/android/gms/internal/ads/k5;)V
+
+    .line 7
+    iget-boolean p1, v0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+
+    if-eqz p1, :cond_1
+
+    .line 8
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
+
+    .line 9
+    iput-boolean v2, v0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+
+    .line 10
+    :cond_1
+    iget-object p1, v0, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
+
+    check-cast p1, Lcom/google/android/gms/internal/ads/h5;
+
+    invoke-static {p1, v2}, Lcom/google/android/gms/internal/ads/h5;->z(Lcom/google/android/gms/internal/ads/h5;I)V
+
+    .line 11
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/v5$b;->j()Lj3/dt0;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/google/android/gms/internal/ads/v5;
+
+    check-cast p1, Lcom/google/android/gms/internal/ads/h5;
+
+    return-object p1
 .end method
 
-.method public final e()Ljava/lang/Class;
+.method public final synthetic h(Lj3/ar0;)Lj3/dt0;
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "()",
-            "Ljava/lang/Class<",
-            "*>;"
+            Lcom/google/android/gms/internal/ads/zzegz;
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/o2;->a:Lj3/en0;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {}, Lcom/google/android/gms/internal/ads/t5;->a()Lcom/google/android/gms/internal/ads/t5;
 
     move-result-object v0
 
-    return-object v0
+    .line 2
+    invoke-static {p1, v0}, Lcom/google/android/gms/internal/ads/k5;->C(Lj3/ar0;Lcom/google/android/gms/internal/ads/t5;)Lcom/google/android/gms/internal/ads/k5;
+
+    move-result-object p1
+
+    return-object p1
 .end method

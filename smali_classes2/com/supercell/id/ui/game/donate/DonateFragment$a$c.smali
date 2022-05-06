@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/game/donate/DonateFragment$a;->i(Lwd/k1$a;ILwd/j1;)V
+    value = Lcom/supercell/id/ui/game/donate/DonateFragment$a;->i(Lvd/k1$a;ILvd/j1;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,29 +21,29 @@
         "Lle/j;",
         "Lke/l<",
         "Landroid/graphics/drawable/Drawable;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/ref/WeakReference;
+.field public final synthetic g:Ljava/lang/ref/WeakReference;
 
-.field public final synthetic b:Lwd/j1;
+.field public final synthetic h:Lvd/j1;
 
-.field public final synthetic h:Landroid/view/View;
+.field public final synthetic i:Landroid/view/View;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/ref/WeakReference;Lwd/j1;Landroid/view/View;)V
+.method public constructor <init>(Ljava/lang/ref/WeakReference;Lvd/j1;Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->a:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->g:Ljava/lang/ref/WeakReference;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->b:Lwd/j1;
+    iput-object p2, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->h:Lvd/j1;
 
-    iput-object p3, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->h:Landroid/view/View;
+    iput-object p3, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->i:Landroid/view/View;
 
     const/4 p1, 0x1
 
@@ -63,23 +63,23 @@
     if-eqz p1, :cond_2
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->a:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lwd/k1$a;
+    check-cast v0, Lvd/k1$a;
 
     if-eqz v0, :cond_1
 
     .line 3
-    iget-object v0, v0, Lwd/k1$a;->z:Lwd/j1;
+    iget-object v0, v0, Lvd/k1$a;->A:Lvd/j1;
 
     .line 4
-    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->b:Lwd/j1;
+    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->h:Lvd/j1;
 
-    invoke-static {v0, v1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -91,7 +91,7 @@
 
     .line 5
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->h:Landroid/view/View;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$c;->i:Landroid/view/View;
 
     sget v1, Lcom/supercell/id/R$id;->gameIconView:I
 
@@ -106,7 +106,7 @@
     .line 6
     :cond_1
     :goto_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -114,7 +114,7 @@
     const-string p1, "bitmapDrawable"
 
     .line 7
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

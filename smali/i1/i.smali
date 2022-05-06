@@ -1,24 +1,14 @@
-.class public final Li1/i;
+.class public Li1/i;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
 
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;",
-        ">;"
-    }
-.end annotation
+# static fields
+.field public static a:Ljava/util/List;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 1
@@ -27,270 +17,216 @@
     return-void
 .end method
 
+.method public static a(Landroid/os/Bundle;Landroid/os/Bundle;)Z
+    .locals 6
 
-# virtual methods
-.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 21
+    const/4 v0, 0x1
 
-    move-object/from16 v0, p1
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    const-string v2, "android.media.browse.extra.PAGE_SIZE"
+
+    const-string v3, "android.media.browse.extra.PAGE"
+
+    const/4 v4, -0x1
+
+    if-nez p0, :cond_2
 
     .line 1
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    invoke-virtual {p1, v3, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
 
-    move-result v1
+    move-result p0
 
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    move-object v5, v3
-
-    move-object v6, v5
-
-    move-object v7, v6
-
-    move-object v8, v7
-
-    move-object v9, v8
-
-    move-object v10, v9
-
-    move-object v12, v10
-
-    move-object v13, v12
-
-    move-object/from16 v16, v13
-
-    move-object/from16 v17, v16
-
-    move-object/from16 v18, v17
-
-    move-object/from16 v19, v18
-
-    move-object/from16 v20, v19
-
-    const/4 v11, 0x0
-
-    const/4 v14, 0x0
-
-    const/4 v15, 0x0
+    if-ne p0, v4, :cond_1
 
     .line 2
+    invoke-virtual {p1, v2, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+
+    move-result p0
+
+    if-ne p0, v4, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x0
+
     :goto_0
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->dataPosition()I
+    return v0
 
-    move-result v2
-
-    if-ge v2, v1, :cond_0
+    :cond_2
+    if-nez p1, :cond_4
 
     .line 3
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    invoke-virtual {p0, v3, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
 
-    move-result v2
+    move-result p1
 
-    const v3, 0xffff
-
-    and-int/2addr v3, v2
-
-    packed-switch v3, :pswitch_data_0
+    if-ne p1, v4, :cond_3
 
     .line 4
-    :pswitch_0
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    invoke-virtual {p0, v2, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
 
-    goto :goto_0
+    move-result p0
+
+    if-ne p0, v4, :cond_3
+
+    goto :goto_1
+
+    :cond_3
+    const/4 v0, 0x0
+
+    :goto_1
+    return v0
 
     .line 5
-    :pswitch_1
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->q(Landroid/os/Parcel;I)Landroid/os/IBinder;
+    :cond_4
+    invoke-virtual {p0, v3, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
 
-    move-result-object v20
-
-    goto :goto_0
+    move-result v5
 
     .line 6
-    :pswitch_2
-    sget-object v3, Lcom/google/android/gms/ads/internal/zzi;->CREATOR:Landroid/os/Parcelable$Creator;
+    invoke-virtual {p1, v3, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+
+    move-result v3
+
+    if-ne v5, v3, :cond_5
 
     .line 7
-    invoke-static {v0, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-virtual {p0, v2, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
 
-    move-result-object v2
-
-    move-object/from16 v19, v2
-
-    check-cast v19, Lcom/google/android/gms/ads/internal/zzi;
-
-    goto :goto_0
+    move-result p0
 
     .line 8
-    :pswitch_3
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-virtual {p1, v2, v4}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
 
-    move-result-object v18
+    move-result p1
 
-    goto :goto_0
+    if-ne p0, p1, :cond_5
 
-    .line 9
-    :pswitch_4
-    sget-object v3, Lcom/google/android/gms/internal/ads/zzbbg;->CREATOR:Landroid/os/Parcelable$Creator;
+    goto :goto_2
 
-    .line 10
-    invoke-static {v0, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    :cond_5
+    const/4 v0, 0x0
 
-    move-result-object v2
-
-    move-object/from16 v17, v2
-
-    check-cast v17, Lcom/google/android/gms/internal/ads/zzbbg;
-
-    goto :goto_0
-
-    .line 11
-    :pswitch_5
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
-
-    move-result-object v16
-
-    goto :goto_0
-
-    .line 12
-    :pswitch_6
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
-
-    move-result v15
-
-    goto :goto_0
-
-    .line 13
-    :pswitch_7
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
-
-    move-result v14
-
-    goto :goto_0
-
-    .line 14
-    :pswitch_8
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->q(Landroid/os/Parcel;I)Landroid/os/IBinder;
-
-    move-result-object v13
-
-    goto :goto_0
-
-    .line 15
-    :pswitch_9
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
-
-    move-result-object v12
-
-    goto :goto_0
-
-    .line 16
-    :pswitch_a
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
-
-    move-result v11
-
-    goto :goto_0
-
-    .line 17
-    :pswitch_b
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
-
-    move-result-object v10
-
-    goto :goto_0
-
-    .line 18
-    :pswitch_c
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->q(Landroid/os/Parcel;I)Landroid/os/IBinder;
-
-    move-result-object v9
-
-    goto :goto_0
-
-    .line 19
-    :pswitch_d
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->q(Landroid/os/Parcel;I)Landroid/os/IBinder;
-
-    move-result-object v8
-
-    goto :goto_0
-
-    .line 20
-    :pswitch_e
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->q(Landroid/os/Parcel;I)Landroid/os/IBinder;
-
-    move-result-object v7
-
-    goto :goto_0
-
-    .line 21
-    :pswitch_f
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->q(Landroid/os/Parcel;I)Landroid/os/IBinder;
-
-    move-result-object v6
-
-    goto :goto_0
-
-    .line 22
-    :pswitch_10
-    sget-object v3, Lcom/google/android/gms/ads/internal/overlay/zzd;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 23
-    invoke-static {v0, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
-
-    move-result-object v2
-
-    move-object v5, v2
-
-    check-cast v5, Lcom/google/android/gms/ads/internal/overlay/zzd;
-
-    goto :goto_0
-
-    .line 24
-    :cond_0
-    invoke-static {v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
-
-    .line 25
-    new-instance v0, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;
-
-    move-object v4, v0
-
-    invoke-direct/range {v4 .. v20}, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;-><init>(Lcom/google/android/gms/ads/internal/overlay/zzd;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/os/IBinder;Ljava/lang/String;ZLjava/lang/String;Landroid/os/IBinder;IILjava/lang/String;Lcom/google/android/gms/internal/ads/zzbbg;Ljava/lang/String;Lcom/google/android/gms/ads/internal/zzi;Landroid/os/IBinder;)V
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x2
-        :pswitch_10
-        :pswitch_f
-        :pswitch_e
-        :pswitch_d
-        :pswitch_c
-        :pswitch_b
-        :pswitch_a
-        :pswitch_9
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_0
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-    .end packed-switch
+    :goto_2
+    return v0
 .end method
 
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
+.method public static b(Landroid/content/Context;Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;Z)V
+    .locals 3
 
     .line 1
-    new-array p1, p1, [Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;
+    iget v0, p1, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;->q:I
 
-    return-object p1
+    const/4 v1, 0x4
+
+    if-ne v0, v1, :cond_1
+
+    iget-object v0, p1, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;->i:Li1/j;
+
+    if-nez v0, :cond_1
+
+    .line 2
+    iget-object p2, p1, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;->h:Lj3/a51;
+
+    if-eqz p2, :cond_0
+
+    .line 3
+    invoke-interface {p2}, Lj3/a51;->o()V
+
+    .line 4
+    :cond_0
+    sget-object p2, Lh1/o;->B:Lh1/o;
+
+    iget-object p2, p2, Lh1/o;->a:Lcom/google/android/gms/ads/g;
+
+    .line 5
+    iget-object p2, p1, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;->g:Lcom/google/android/gms/ads/internal/overlay/zzd;
+
+    iget-object p1, p1, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;->o:Li1/m;
+
+    .line 6
+    invoke-static {p0, p2, p1}, Lcom/google/android/gms/ads/g;->b(Landroid/content/Context;Lcom/google/android/gms/ads/internal/overlay/zzd;Li1/m;)Z
+
+    return-void
+
+    .line 7
+    :cond_1
+    new-instance v0, Landroid/content/Intent;
+
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+
+    const-string v1, "com.google.android.gms.ads.AdActivity"
+
+    .line 8
+    invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClassName(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 9
+    iget-object v1, p1, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;->s:Lcom/google/android/gms/internal/ads/zzbbg;
+
+    iget-boolean v1, v1, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
+
+    const-string v2, "com.google.android.gms.ads.internal.overlay.useClientJar"
+
+    invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    const-string v1, "shouldCallOnOverlayOpened"
+
+    .line 10
+    invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    .line 11
+    new-instance p2, Landroid/os/Bundle;
+
+    const/4 v1, 0x1
+
+    invoke-direct {p2, v1}, Landroid/os/Bundle;-><init>(I)V
+
+    const-string v1, "com.google.android.gms.ads.inernal.overlay.AdOverlayInfo"
+
+    .line 12
+    invoke-virtual {p2, v1, p1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
+
+    .line 13
+    invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/Intent;
+
+    .line 14
+    invoke-static {}, Lk2/m;->b()Z
+
+    move-result p1
+
+    if-nez p1, :cond_2
+
+    const/high16 p1, 0x80000
+
+    .line 15
+    invoke-virtual {v0, p1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 16
+    :cond_2
+    instance-of p1, p0, Landroid/app/Activity;
+
+    if-nez p1, :cond_3
+
+    const/high16 p1, 0x10000000
+
+    .line 17
+    invoke-virtual {v0, p1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 18
+    :cond_3
+    sget-object p1, Lh1/o;->B:Lh1/o;
+
+    iget-object p1, p1, Lh1/o;->c:Lj3/bb;
+
+    .line 19
+    invoke-static {p0, v0}, Lj3/bb;->d(Landroid/content/Context;Landroid/content/Intent;)V
+
+    return-void
 .end method

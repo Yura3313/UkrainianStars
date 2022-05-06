@@ -24,20 +24,20 @@
 
 
 # instance fields
-.field public synthetic i:Ljava/lang/Object;
+.field public synthetic j:Ljava/lang/Object;
 
-.field public j:I
+.field public k:I
 
-.field public final synthetic k:Lse/p;
+.field public final synthetic l:Lse/p;
 
-.field public l:Ljava/lang/Object;
+.field public m:Ljava/lang/Object;
 
 
 # direct methods
 .method public constructor <init>(Lse/p;Lde/d;)V
     .locals 0
 
-    iput-object p1, p0, Lse/p$a;->k:Lse/p;
+    iput-object p1, p0, Lse/p$a;->l:Lse/p;
 
     invoke-direct {p0, p2}, Lfe/c;-><init>(Lde/d;)V
 
@@ -49,17 +49,17 @@
 .method public final f(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iput-object p1, p0, Lse/p$a;->i:Ljava/lang/Object;
+    iput-object p1, p0, Lse/p$a;->j:Ljava/lang/Object;
 
-    iget p1, p0, Lse/p$a;->j:I
+    iget p1, p0, Lse/p$a;->k:I
 
     const/high16 v0, -0x80000000
 
     or-int/2addr p1, v0
 
-    iput p1, p0, Lse/p$a;->j:I
+    iput p1, p0, Lse/p$a;->k:I
 
-    iget-object p1, p0, Lse/p$a;->k:Lse/p;
+    iget-object p1, p0, Lse/p$a;->l:Lse/p;
 
     invoke-virtual {p1, p0}, Lse/p;->l(Lde/d;)Ljava/lang/Object;
 

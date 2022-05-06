@@ -1,47 +1,34 @@
-.class public final Lbe/h;
-.super Ljava/lang/Object;
-.source "Result.kt"
-
-# interfaces
-.implements Ljava/io/Serializable;
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lbe/h$a;
-    }
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/io/Serializable;"
-    }
-.end annotation
+.class public Lbe/h;
+.super Lbe/g;
+.source "MutableCollectionsJVM.kt"
 
 
 # direct methods
-.method public static final a(Ljava/lang/Object;)Ljava/lang/Throwable;
-    .locals 1
+.method public static final y(Ljava/util/List;Ljava/util/Comparator;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "TT;>;",
+            "Ljava/util/Comparator<",
+            "-TT;>;)V"
+        }
+    .end annotation
 
     .line 1
-    instance-of v0, p0, Lbe/h$a;
+    invoke-interface {p0}, Ljava/util/List;->size()I
 
-    if-eqz v0, :cond_0
+    move-result v0
 
-    check-cast p0, Lbe/h$a;
+    const/4 v1, 0x1
 
-    iget-object p0, p0, Lbe/h$a;->a:Ljava/lang/Throwable;
+    if-le v0, v1, :cond_0
 
-    goto :goto_0
+    invoke-static {p0, p1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    return-object p0
+    return-void
 .end method

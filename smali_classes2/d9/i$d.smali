@@ -1,5 +1,5 @@
 .class public Ld9/i$d;
-.super Ly7/g;
+.super Lz7/g;
 .source "ConversationalVM.java"
 
 
@@ -25,7 +25,7 @@
     .line 1
     iput-object p1, p0, Ld9/i$d;->b:Ld9/i;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -43,14 +43,14 @@
     .line 2
     iget-object v0, p0, Ld9/i$d;->b:Ld9/i;
 
-    iget-object v0, v0, Ld9/i;->n:Ll8/k;
+    iget-object v0, v0, Ld9/i;->n:Lm8/m;
 
     if-eqz v0, :cond_0
 
     .line 3
-    check-cast v0, Lqa/e0;
+    check-cast v0, Loa/e0;
 
-    invoke-virtual {v0}, Lqa/e0;->i()V
+    invoke-virtual {v0}, Loa/e0;->i()V
 
     :cond_0
     return-void

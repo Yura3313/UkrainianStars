@@ -1,129 +1,376 @@
-.class public final synthetic Lj3/wg0;
+.class public final Lj3/wg0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final a:Lcom/google/android/gms/internal/ads/zzxi;
+
+.field public final b:Lcom/google/android/gms/internal/ads/zzaac;
+
+.field public final c:Lcom/google/android/gms/internal/ads/zzair;
+
+.field public final d:Lcom/google/android/gms/internal/ads/zzvc;
+
+.field public final e:Lcom/google/android/gms/internal/ads/zzvj;
+
+.field public final f:Ljava/lang/String;
+
+.field public final g:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final h:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final i:Lcom/google/android/gms/internal/ads/zzadm;
+
+.field public final j:Lcom/google/android/gms/internal/ads/zzvm;
+
+.field public final k:I
+
+.field public final l:Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;
+
+.field public final m:Lcom/google/android/gms/internal/ads/zzxc;
+
+.field public final n:Lj3/og0;
+
+.field public final o:Z
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 4
+.method public constructor <init>(Lj3/yg0;Lj3/s5;)V
+    .locals 27
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p1
 
     .line 1
-    sget-object v0, Lj3/lp0;->h:[I
-
-    invoke-virtual {v0}, [I->clone()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, [I
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    array-length v0, v0
+    iget-object v2, v1, Lj3/yg0;->b:Lcom/google/android/gms/internal/ads/zzvj;
 
-    new-array v0, v0, [I
+    .line 3
+    iput-object v2, v0, Lj3/wg0;->e:Lcom/google/android/gms/internal/ads/zzvj;
 
-    sput-object v0, Lj3/wg0;->a:[I
+    .line 4
+    iget-object v2, v1, Lj3/yg0;->d:Ljava/lang/String;
 
-    const/4 v1, 0x1
+    .line 5
+    iput-object v2, v0, Lj3/wg0;->f:Ljava/lang/String;
 
-    :try_start_0
-    aput v1, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    .line 6
+    iget-object v2, v1, Lj3/yg0;->c:Lcom/google/android/gms/internal/ads/zzxi;
 
-    :catch_0
-    const/4 v0, 0x2
+    .line 7
+    iput-object v2, v0, Lj3/wg0;->a:Lcom/google/android/gms/internal/ads/zzxi;
 
-    const/4 v1, 0x4
+    .line 8
+    new-instance v2, Lcom/google/android/gms/internal/ads/zzvc;
 
-    :try_start_1
-    sget-object v2, Lj3/wg0;->a:[I
+    .line 9
+    iget-object v3, v1, Lj3/yg0;->a:Lcom/google/android/gms/internal/ads/zzvc;
 
-    aput v0, v2, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    .line 10
+    iget v4, v3, Lcom/google/android/gms/internal/ads/zzvc;->g:I
 
-    :catch_1
-    const/4 v2, 0x3
+    .line 11
+    iget-wide v5, v3, Lcom/google/android/gms/internal/ads/zzvc;->h:J
 
-    :try_start_2
-    sget-object v3, Lj3/wg0;->a:[I
+    .line 12
+    iget-object v7, v3, Lcom/google/android/gms/internal/ads/zzvc;->i:Landroid/os/Bundle;
 
-    aput v2, v3, v0
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    .line 13
+    iget v8, v3, Lcom/google/android/gms/internal/ads/zzvc;->j:I
 
-    :catch_2
-    :try_start_3
-    sget-object v0, Lj3/wg0;->a:[I
+    .line 14
+    iget-object v9, v3, Lcom/google/android/gms/internal/ads/zzvc;->k:Ljava/util/List;
 
-    aput v1, v0, v2
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+    .line 15
+    iget-boolean v10, v3, Lcom/google/android/gms/internal/ads/zzvc;->l:Z
 
-    :catch_3
-    :try_start_4
-    sget-object v0, Lj3/wg0;->a:[I
+    .line 16
+    iget v11, v3, Lcom/google/android/gms/internal/ads/zzvc;->m:I
 
-    const/4 v1, 0x5
+    .line 17
+    iget-boolean v12, v3, Lcom/google/android/gms/internal/ads/zzvc;->n:Z
 
-    aput v1, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+    if-nez v12, :cond_1
 
-    :catch_4
-    :try_start_5
-    sget-object v0, Lj3/wg0;->a:[I
+    .line 18
+    iget-boolean v12, v1, Lj3/yg0;->f:Z
 
-    const/4 v1, 0x6
+    if-eqz v12, :cond_0
 
-    aput v1, v0, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+    goto :goto_0
 
-    :catch_5
-    :try_start_6
-    sget-object v0, Lj3/wg0;->a:[I
+    :cond_0
+    const/4 v12, 0x0
 
-    const/4 v1, 0x7
+    goto :goto_1
 
-    aput v1, v0, v1
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+    :cond_1
+    :goto_0
+    const/4 v12, 0x1
 
-    :catch_6
-    :try_start_7
-    sget-object v0, Lj3/wg0;->a:[I
+    .line 19
+    :goto_1
+    iget-object v13, v3, Lcom/google/android/gms/internal/ads/zzvc;->o:Ljava/lang/String;
 
-    const/16 v1, 0x8
+    .line 20
+    iget-object v14, v3, Lcom/google/android/gms/internal/ads/zzvc;->p:Lcom/google/android/gms/internal/ads/zzzy;
 
-    aput v1, v0, v1
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+    .line 21
+    iget-object v15, v3, Lcom/google/android/gms/internal/ads/zzvc;->q:Landroid/location/Location;
 
-    :catch_7
-    :try_start_8
-    sget-object v0, Lj3/wg0;->a:[I
+    .line 22
+    iget-object v1, v3, Lcom/google/android/gms/internal/ads/zzvc;->r:Ljava/lang/String;
 
-    const/16 v1, 0x9
+    move-object/from16 v16, v1
 
-    aput v1, v0, v1
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+    .line 23
+    iget-object v1, v3, Lcom/google/android/gms/internal/ads/zzvc;->s:Landroid/os/Bundle;
 
-    :catch_8
-    :try_start_9
-    sget-object v0, Lj3/wg0;->a:[I
+    move-object/from16 v17, v1
 
-    const/16 v1, 0xa
+    .line 24
+    iget-object v1, v3, Lcom/google/android/gms/internal/ads/zzvc;->t:Landroid/os/Bundle;
 
-    aput v1, v0, v1
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
+    move-object/from16 v18, v1
 
-    :catch_9
+    .line 25
+    iget-object v1, v3, Lcom/google/android/gms/internal/ads/zzvc;->u:Ljava/util/List;
+
+    move-object/from16 v19, v1
+
+    .line 26
+    iget-object v1, v3, Lcom/google/android/gms/internal/ads/zzvc;->v:Ljava/lang/String;
+
+    move-object/from16 v20, v1
+
+    .line 27
+    iget-object v1, v3, Lcom/google/android/gms/internal/ads/zzvc;->w:Ljava/lang/String;
+
+    move-object/from16 v21, v1
+
+    .line 28
+    iget-boolean v1, v3, Lcom/google/android/gms/internal/ads/zzvc;->x:Z
+
+    move/from16 v22, v1
+
+    .line 29
+    iget-object v1, v3, Lcom/google/android/gms/internal/ads/zzvc;->y:Lcom/google/android/gms/internal/ads/zzuu;
+
+    move-object/from16 v23, v1
+
+    .line 30
+    iget v1, v3, Lcom/google/android/gms/internal/ads/zzvc;->z:I
+
+    move/from16 v24, v1
+
+    .line 31
+    iget-object v1, v3, Lcom/google/android/gms/internal/ads/zzvc;->A:Ljava/lang/String;
+
+    move-object/from16 v25, v1
+
+    .line 32
+    iget-object v1, v3, Lcom/google/android/gms/internal/ads/zzvc;->B:Ljava/util/List;
+
+    move-object/from16 v26, v1
+
+    move-object v3, v2
+
+    invoke-direct/range {v3 .. v26}, Lcom/google/android/gms/internal/ads/zzvc;-><init>(IJLandroid/os/Bundle;ILjava/util/List;ZIZLjava/lang/String;Lcom/google/android/gms/internal/ads/zzzy;Landroid/location/Location;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;ZLcom/google/android/gms/internal/ads/zzuu;ILjava/lang/String;Ljava/util/List;)V
+
+    .line 33
+    iput-object v2, v0, Lj3/wg0;->d:Lcom/google/android/gms/internal/ads/zzvc;
+
+    move-object/from16 v1, p1
+
+    .line 34
+    iget-object v2, v1, Lj3/yg0;->e:Lcom/google/android/gms/internal/ads/zzaac;
+
+    const/4 v3, 0x0
+
+    if-eqz v2, :cond_2
+
+    goto :goto_2
+
+    .line 35
+    :cond_2
+    iget-object v2, v1, Lj3/yg0;->i:Lcom/google/android/gms/internal/ads/zzadm;
+
+    if-eqz v2, :cond_3
+
+    .line 36
+    iget-object v2, v2, Lcom/google/android/gms/internal/ads/zzadm;->l:Lcom/google/android/gms/internal/ads/zzaac;
+
+    goto :goto_2
+
+    :cond_3
+    move-object v2, v3
+
+    .line 37
+    :goto_2
+    iput-object v2, v0, Lj3/wg0;->b:Lcom/google/android/gms/internal/ads/zzaac;
+
+    .line 38
+    iget-object v2, v1, Lj3/yg0;->g:Ljava/util/ArrayList;
+
+    .line 39
+    iput-object v2, v0, Lj3/wg0;->g:Ljava/util/ArrayList;
+
+    .line 40
+    iget-object v4, v1, Lj3/yg0;->h:Ljava/util/ArrayList;
+
+    .line 41
+    iput-object v4, v0, Lj3/wg0;->h:Ljava/util/ArrayList;
+
+    if-nez v2, :cond_4
+
+    move-object v2, v3
+
+    goto :goto_3
+
+    .line 42
+    :cond_4
+    iget-object v2, v1, Lj3/yg0;->i:Lcom/google/android/gms/internal/ads/zzadm;
+
+    if-nez v2, :cond_5
+
+    .line 43
+    new-instance v2, Lcom/google/android/gms/internal/ads/zzadm;
+
+    new-instance v4, Lf1/b$a;
+
+    invoke-direct {v4}, Lf1/b$a;-><init>()V
+
+    .line 44
+    new-instance v5, Lf1/b;
+
+    invoke-direct {v5, v4, v3}, Lf1/b;-><init>(Lf1/b$a;Lcom/google/android/gms/ads/i;)V
+
+    .line 45
+    invoke-direct {v2, v5}, Lcom/google/android/gms/internal/ads/zzadm;-><init>(Lf1/b;)V
+
+    .line 46
+    :cond_5
+    :goto_3
+    iput-object v2, v0, Lj3/wg0;->i:Lcom/google/android/gms/internal/ads/zzadm;
+
+    .line 47
+    iget-object v2, v1, Lj3/yg0;->j:Lcom/google/android/gms/internal/ads/zzvm;
+
+    .line 48
+    iput-object v2, v0, Lj3/wg0;->j:Lcom/google/android/gms/internal/ads/zzvm;
+
+    .line 49
+    iget v2, v1, Lj3/yg0;->m:I
+
+    .line 50
+    iput v2, v0, Lj3/wg0;->k:I
+
+    .line 51
+    iget-object v2, v1, Lj3/yg0;->k:Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;
+
+    .line 52
+    iput-object v2, v0, Lj3/wg0;->l:Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;
+
+    .line 53
+    iget-object v2, v1, Lj3/yg0;->l:Lcom/google/android/gms/internal/ads/zzxc;
+
+    .line 54
+    iput-object v2, v0, Lj3/wg0;->m:Lcom/google/android/gms/internal/ads/zzxc;
+
+    .line 55
+    iget-object v2, v1, Lj3/yg0;->n:Lcom/google/android/gms/internal/ads/zzair;
+
+    .line 56
+    iput-object v2, v0, Lj3/wg0;->c:Lcom/google/android/gms/internal/ads/zzair;
+
+    .line 57
+    iget-object v2, v1, Lj3/yg0;->o:Lj3/qg0;
+
+    .line 58
+    new-instance v4, Lj3/og0;
+
+    invoke-direct {v4, v2, v3}, Lj3/og0;-><init>(Lj3/qg0;Lj3/u4;)V
+
+    .line 59
+    iput-object v4, v0, Lj3/wg0;->n:Lj3/og0;
+
+    .line 60
+    iget-boolean v1, v1, Lj3/yg0;->p:Z
+
+    .line 61
+    iput-boolean v1, v0, Lj3/wg0;->o:Z
+
     return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lcom/google/android/gms/internal/ads/zzafq;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lj3/wg0;->l:Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return-object v1
+
+    .line 2
+    :cond_0
+    iget-object v0, v0, Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;->i:Landroid/os/IBinder;
+
+    sget v2, Lcom/google/android/gms/internal/ads/zzafp;->g:I
+
+    if-nez v0, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const-string v1, "com.google.android.gms.ads.internal.formats.client.IShouldDelayBannerRenderingListener"
+
+    .line 3
+    invoke-interface {v0, v1}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+
+    move-result-object v1
+
+    .line 4
+    instance-of v2, v1, Lcom/google/android/gms/internal/ads/zzafq;
+
+    if-eqz v2, :cond_2
+
+    .line 5
+    check-cast v1, Lcom/google/android/gms/internal/ads/zzafq;
+
+    goto :goto_0
+
+    .line 6
+    :cond_2
+    new-instance v1, Lcom/google/android/gms/internal/ads/zzafs;
+
+    invoke-direct {v1, v0}, Lcom/google/android/gms/internal/ads/zzafs;-><init>(Landroid/os/IBinder;)V
+
+    :goto_0
+    return-object v1
 .end method

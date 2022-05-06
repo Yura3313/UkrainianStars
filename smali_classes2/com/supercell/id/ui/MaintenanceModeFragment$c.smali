@@ -18,7 +18,7 @@
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/ui/MaintenanceModeFragment$c;
+.field public static final g:Lcom/supercell/id/ui/MaintenanceModeFragment$c;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/MaintenanceModeFragment$c;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/MaintenanceModeFragment$c;->a:Lcom/supercell/id/ui/MaintenanceModeFragment$c;
+    sput-object v0, Lcom/supercell/id/ui/MaintenanceModeFragment$c;->g:Lcom/supercell/id/ui/MaintenanceModeFragment$c;
 
     return-void
 .end method

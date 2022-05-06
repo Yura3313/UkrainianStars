@@ -153,7 +153,7 @@
 
     const-wide/16 p7, 0xaf
 
-    sget-object p9, Lb4/a;->c:Landroid/animation/TimeInterpolator;
+    sget-object p9, Lc4/a;->c:Landroid/animation/TimeInterpolator;
 
     move-object p4, p0
 
@@ -196,7 +196,7 @@
     const-wide/16 p7, 0xe1
 
     .line 12
-    sget-object p9, Lb4/a;->d:Landroid/animation/TimeInterpolator;
+    sget-object p9, Lc4/a;->d:Landroid/animation/TimeInterpolator;
 
     move-object p4, p0
 

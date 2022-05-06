@@ -25,16 +25,16 @@
         "-",
         "Landroid/graphics/drawable/Drawable;",
         "+",
-        "Lbe/n;",
+        "Lae/i;",
         ">;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/ui/game/donate/DonateFragment$a$a;
+.field public static final g:Lcom/supercell/id/ui/game/donate/DonateFragment$a$a;
 
 
 # direct methods
@@ -45,7 +45,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/game/donate/DonateFragment$a$a;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$a;->a:Lcom/supercell/id/ui/game/donate/DonateFragment$a$a;
+    sput-object v0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$a;->g:Lcom/supercell/id/ui/game/donate/DonateFragment$a$a;
 
     return-void
 .end method
@@ -79,22 +79,22 @@
     .line 2
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
     .line 3
-    iget-object v0, v0, Lwd/r;->s:Lqd/j;
+    iget-object v0, v0, Lvd/r;->s:Lpd/i;
 
     .line 4
     new-instance v1, Lcom/supercell/id/ui/game/donate/a;
 
     invoke-direct {v1, p2}, Lcom/supercell/id/ui/game/donate/a;-><init>(Lke/l;)V
 
-    invoke-virtual {v0, p1, v1}, Lqd/j;->b(Ljava/lang/String;Lke/p;)V
+    invoke-virtual {v0, p1, v1}, Lpd/i;->b(Ljava/lang/String;Lke/p;)V
 
     .line 5
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -102,14 +102,14 @@
     const-string p1, "callback"
 
     .line 6
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_1
     const-string p1, "key"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

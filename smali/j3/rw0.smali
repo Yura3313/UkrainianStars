@@ -1,69 +1,31 @@
-.class public interface abstract Lj3/rw0;
+.class public final Lj3/rw0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# static fields
-.field public static final a:Ljava/nio/ByteBuffer;
+# instance fields
+.field public final a:Lj3/pw0;
+
+.field public final b:I
+
+.field public final c:Ljava/lang/Object;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
-
-    const/4 v0, 0x0
+.method public constructor <init>(Lj3/pw0;ILjava/lang/Object;)V
+    .locals 0
 
     .line 1
-    invoke-static {v0}, Ljava/nio/ByteBuffer;->allocateDirect(I)Ljava/nio/ByteBuffer;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object v0
+    .line 2
+    iput-object p1, p0, Lj3/rw0;->a:Lj3/pw0;
 
-    invoke-static {}, Ljava/nio/ByteOrder;->nativeOrder()Ljava/nio/ByteOrder;
+    .line 3
+    iput p2, p0, Lj3/rw0;->b:I
 
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
-
-    move-result-object v0
-
-    sput-object v0, Lj3/rw0;->a:Ljava/nio/ByteBuffer;
+    .line 4
+    iput-object p3, p0, Lj3/rw0;->c:Ljava/lang/Object;
 
     return-void
-.end method
-
-
-# virtual methods
-.method public abstract a(Ljava/nio/ByteBuffer;)V
-.end method
-
-.method public abstract b()V
-.end method
-
-.method public abstract c(III)Z
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/android/gms/internal/ads/zzih;
-        }
-    .end annotation
-.end method
-
-.method public abstract d()Z
-.end method
-
-.method public abstract e()Ljava/nio/ByteBuffer;
-.end method
-
-.method public abstract f()I
-.end method
-
-.method public abstract flush()V
-.end method
-
-.method public abstract g()I
-.end method
-
-.method public abstract isActive()Z
-.end method
-
-.method public abstract reset()V
 .end method

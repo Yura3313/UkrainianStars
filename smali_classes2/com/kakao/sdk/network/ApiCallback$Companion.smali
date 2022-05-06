@@ -54,7 +54,7 @@
     check-cast v1, Lretrofit2/HttpException;
 
     .line 3
-    iget-object v1, v1, Lretrofit2/HttpException;->b:Lxe/a0;
+    iget-object v1, v1, Lretrofit2/HttpException;->h:Lxe/a0;
 
     if-eqz v1, :cond_0
 
@@ -124,7 +124,7 @@
     check-cast p1, Lretrofit2/HttpException;
 
     .line 15
-    iget p1, p1, Lretrofit2/HttpException;->a:I
+    iget p1, p1, Lretrofit2/HttpException;->g:I
 
     .line 16
     invoke-direct {v2, p1, v1, v0}, Lcom/kakao/sdk/common/model/ApiError;-><init>(ILcom/kakao/sdk/common/model/ApiErrorCause;Lcom/kakao/sdk/common/model/ApiErrorResponse;)V
@@ -133,7 +133,7 @@
 
     .line 17
     :cond_2
-    invoke-static {}, Ly4/x;->j()V
+    invoke-static {}, Ls3/b;->g()V
 
     throw v0
     :try_end_0
@@ -151,7 +151,7 @@
     const-string p1, "t"
 
     .line 18
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

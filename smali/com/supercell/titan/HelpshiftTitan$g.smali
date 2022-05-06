@@ -18,15 +18,15 @@
 
 
 # instance fields
-.field public final synthetic a:Lla/a;
+.field public final synthetic g:Lja/a;
 
 
 # direct methods
-.method public constructor <init>(Lla/a;)V
+.method public constructor <init>(Lja/a;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/titan/HelpshiftTitan$g;->a:Lla/a;
+    iput-object p1, p0, Lcom/supercell/titan/HelpshiftTitan$g;->g:Lja/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,15 +49,15 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/titan/HelpshiftTitan$g;->a:Lla/a;
+    iget-object v1, p0, Lcom/supercell/titan/HelpshiftTitan$g;->g:Lja/a;
 
     .line 3
-    invoke-static {v1}, Lib/c;->b(Lla/a;)Ljava/util/Map;
+    invoke-static {v1}, Lgb/c;->b(Lja/a;)Ljava/util/Map;
 
     move-result-object v1
 
     .line 4
-    invoke-static {}, Lcom/helpshift/util/r;->b()Z
+    invoke-static {}, Lcom/helpshift/util/q;->c()Z
 
     move-result v2
 
@@ -67,16 +67,16 @@
 
     .line 5
     :cond_0
-    sget-object v2, Llb/b;->a:Llb/a;
+    sget-object v2, Ljb/b;->a:Ljb/a;
 
     .line 6
-    new-instance v3, Lla/y;
+    new-instance v3, Lja/y;
 
-    invoke-direct {v3, v0, v1}, Lla/y;-><init>(Landroid/app/Activity;Ljava/util/Map;)V
+    invoke-direct {v3, v0, v1}, Lja/y;-><init>(Landroid/app/Activity;Ljava/util/Map;)V
 
-    check-cast v2, Llb/c;
+    check-cast v2, Ljb/c;
 
-    invoke-virtual {v2, v3}, Llb/c;->a(Ljava/lang/Runnable;)V
+    invoke-virtual {v2, v3}, Ljb/c;->a(Ljava/lang/Runnable;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

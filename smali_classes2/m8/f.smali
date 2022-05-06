@@ -1,135 +1,60 @@
 .class public Lm8/f;
-.super Lm8/j;
-.source "AdminBotControlMessageDM.java"
+.super Lz7/g;
+.source "ConversationManager.java"
 
 
 # instance fields
-.field public A:Ljava/lang/String;
+.field public final synthetic b:Ln8/r;
 
-.field public B:Z
+.field public final synthetic c:Lp8/d;
 
-.field public z:Ljava/lang/String;
+.field public final synthetic d:Ljava/lang/String;
+
+.field public final synthetic e:Ljava/lang/String;
+
+.field public final synthetic f:Lm8/h;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLm8/o;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 9
-
-    move-object v8, p0
+.method public constructor <init>(Lm8/h;Ln8/r;Lp8/d;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    sget-object v7, Lm8/b0;->ADMIN_BOT_CONTROL:Lm8/b0;
+    iput-object p1, p0, Lm8/f;->f:Lm8/h;
 
-    move-object v0, p0
+    iput-object p2, p0, Lm8/f;->b:Ln8/r;
 
-    move-object v1, p1
+    iput-object p3, p0, Lm8/f;->c:Lp8/d;
 
-    move-object v2, p2
+    iput-object p4, p0, Lm8/f;->d:Ljava/lang/String;
 
-    move-object v3, p3
+    iput-object p5, p0, Lm8/f;->e:Ljava/lang/String;
 
-    move-wide v4, p4
-
-    move-object v6, p6
-
-    invoke-direct/range {v0 .. v7}, Lm8/j;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLm8/o;Lm8/b0;)V
-
-    move-object/from16 v0, p7
-
-    .line 2
-    iput-object v0, v8, Lm8/f;->z:Ljava/lang/String;
-
-    move-object/from16 v0, p8
-
-    .line 3
-    iput-object v0, v8, Lm8/f;->A:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lm8/f;)V
-    .locals 1
-
-    .line 4
-    invoke-direct {p0, p1}, Lm8/j;-><init>(Lm8/j;)V
-
-    .line 5
-    iget-object v0, p1, Lm8/f;->z:Ljava/lang/String;
-
-    iput-object v0, p0, Lm8/f;->z:Ljava/lang/String;
-
-    .line 6
-    iget-object v0, p1, Lm8/f;->A:Ljava/lang/String;
-
-    iput-object v0, p0, Lm8/f;->A:Ljava/lang/String;
-
-    .line 7
-    iget-boolean p1, p1, Lm8/f;->B:Z
-
-    iput-boolean p1, p0, Lm8/f;->B:Z
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Ljava/lang/Object;
-    .locals 1
+.method public a()V
+    .locals 5
 
     .line 1
-    new-instance v0, Lm8/f;
+    iget-object v0, p0, Lm8/f;->b:Ln8/r;
 
-    invoke-direct {v0, p0}, Lm8/f;-><init>(Lm8/f;)V
+    iget-object v1, p0, Lm8/f;->c:Lp8/d;
 
-    return-object v0
-.end method
+    iget-object v2, p0, Lm8/f;->f:Lm8/h;
 
-.method public b()Lm8/a0;
-    .locals 1
+    iget-object v2, v2, Lm8/h;->c:Lg7/c;
 
-    .line 1
-    new-instance v0, Lm8/f;
+    iget-object v3, p0, Lm8/f;->d:Ljava/lang/String;
 
-    invoke-direct {v0, p0}, Lm8/f;-><init>(Lm8/f;)V
-
-    return-object v0
-.end method
-
-.method public k(Lm8/a0;)V
-    .locals 1
-
-    .line 1
-    invoke-super {p0, p1}, Lm8/a0;->k(Lm8/a0;)V
+    iget-object v4, p0, Lm8/f;->e:Ljava/lang/String;
 
     .line 2
-    instance-of v0, p1, Lm8/f;
+    invoke-virtual {v0, v1, v2, v3, v4}, Ln8/r;->s(Lm8/k;Lg7/c;Ljava/lang/String;Ljava/lang/String;)V
 
-    if-eqz v0, :cond_0
-
-    .line 3
-    check-cast p1, Lm8/f;
-
-    .line 4
-    iget-object v0, p1, Lm8/f;->z:Ljava/lang/String;
-
-    iput-object v0, p0, Lm8/f;->z:Ljava/lang/String;
-
-    .line 5
-    iget-object p1, p1, Lm8/f;->A:Ljava/lang/String;
-
-    iput-object p1, p0, Lm8/f;->A:Ljava/lang/String;
-
-    :cond_0
     return-void
-.end method
-
-.method public q()Lm8/j;
-    .locals 1
-
-    .line 1
-    new-instance v0, Lm8/f;
-
-    invoke-direct {v0, p0}, Lm8/f;-><init>(Lm8/f;)V
-
-    return-object v0
 .end method

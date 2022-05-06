@@ -9,7 +9,7 @@
 # instance fields
 .field public final a:[B
 
-.field public final b:Lcom/google/android/play/core/assetpacks/x;
+.field public final b:Lcom/google/android/play/core/assetpacks/y;
 
 .field public final c:Ljava/lang/String;
 
@@ -37,7 +37,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/google/android/play/core/assetpacks/x;Ljava/lang/String;IJLjava/lang/String;)V
+.method public constructor <init>(Lcom/google/android/play/core/assetpacks/y;Ljava/lang/String;IJLjava/lang/String;)V
     .locals 1
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,7 +48,7 @@
 
     iput-object v0, p0, Lcom/google/android/play/core/assetpacks/a2;->a:[B
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/a2;->b:Lcom/google/android/play/core/assetpacks/x;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/a2;->b:Lcom/google/android/play/core/assetpacks/y;
 
     iput-object p2, p0, Lcom/google/android/play/core/assetpacks/a2;->c:Ljava/lang/String;
 
@@ -77,7 +77,7 @@
 
     const-string v0, "-1"
 
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/a2;->b:Lcom/google/android/play/core/assetpacks/x;
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/a2;->b:Lcom/google/android/play/core/assetpacks/y;
 
     iget-object v2, p0, Lcom/google/android/play/core/assetpacks/a2;->c:Ljava/lang/String;
 
@@ -87,7 +87,7 @@
 
     iget-object v6, p0, Lcom/google/android/play/core/assetpacks/a2;->f:Ljava/lang/String;
 
-    invoke-virtual/range {v1 .. v6}, Lcom/google/android/play/core/assetpacks/x;->h(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
+    invoke-virtual/range {v1 .. v6}, Lcom/google/android/play/core/assetpacks/y;->h(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
 
     move-result-object v1
 
@@ -105,12 +105,16 @@
 
     invoke-direct {v3, v1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
+    invoke-static {v3, v1}, Lio/sentry/instrumentation/file/SentryFileInputStream$Factory;->create(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
+
+    move-result-object v1
+
     :try_start_0
-    invoke-virtual {v2, v3}, Ljava/util/Properties;->load(Ljava/io/InputStream;)V
+    invoke-virtual {v2, v1}, Ljava/util/Properties;->load(Ljava/io/InputStream;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
+    invoke-virtual {v1}, Ljava/io/InputStream;->close()V
 
     const-string v1, "fileStatus"
 
@@ -189,11 +193,11 @@
     :try_end_1
     .catch Ljava/lang/NumberFormatException; {:try_start_1 .. :try_end_1} :catch_0
 
-    new-instance v0, Lcom/google/android/play/core/assetpacks/e0;
+    new-instance v0, Lcom/google/android/play/core/assetpacks/f0;
 
     move-object v5, v0
 
-    invoke-direct/range {v5 .. v12}, Lcom/google/android/play/core/assetpacks/e0;-><init>(ILjava/lang/String;JJI)V
+    invoke-direct/range {v5 .. v12}, Lcom/google/android/play/core/assetpacks/f0;-><init>(ILjava/lang/String;JJI)V
 
     return-object v0
 
@@ -217,7 +221,7 @@
     move-exception v0
 
     :try_start_2
-    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
+    invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
@@ -227,7 +231,7 @@
     move-exception v1
 
     .line 1
-    sget-object v2, Ly4/i0;->a:Landroidx/fragment/app/t;
+    sget-object v2, Ly4/k0;->a:Landroidx/fragment/app/t;
 
     invoke-virtual {v2, v0, v1}, Landroidx/fragment/app/t;->b(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
@@ -304,6 +308,10 @@
     move-result-object v1
 
     invoke-direct {p1, v1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+
+    invoke-static {p1, v1}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;)Ljava/io/FileOutputStream;
+
+    move-result-object p1
 
     const/4 v1, 0x0
 
@@ -434,6 +442,10 @@
 
     invoke-direct {p1, p2}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
+    invoke-static {p1, p2}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;)Ljava/io/FileOutputStream;
+
+    move-result-object p1
+
     const/4 p2, 0x0
 
     invoke-virtual {v0, p1, p2}, Ljava/util/Properties;->store(Ljava/io/OutputStream;Ljava/lang/String;)V
@@ -487,16 +499,20 @@
     new-instance v1, Ljava/io/FileOutputStream;
 
     invoke-direct {v1, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+
+    invoke-static {v1, v0}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;)Ljava/io/FileOutputStream;
+
+    move-result-object v0
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    invoke-virtual {v1, p1}, Ljava/io/FileOutputStream;->write([B)V
+    invoke-virtual {v0, p1}, Ljava/io/FileOutputStream;->write([B)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :try_start_2
-    invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
+    invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
 
@@ -506,7 +522,7 @@
     move-exception p1
 
     :try_start_3
-    invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
+    invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
@@ -517,7 +533,7 @@
 
     .line 1
     :try_start_4
-    sget-object v1, Ly4/i0;->a:Landroidx/fragment/app/t;
+    sget-object v1, Ly4/k0;->a:Landroidx/fragment/app/t;
 
     invoke-virtual {v1, p1, v0}, Landroidx/fragment/app/t;->b(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
@@ -583,13 +599,17 @@
 
     invoke-direct {p2, v1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
+    invoke-static {p2, v1}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;)Ljava/io/FileOutputStream;
+
+    move-result-object p2
+
     const/4 v1, 0x0
 
     invoke-virtual {v0, p2, v1}, Ljava/util/Properties;->store(Ljava/io/OutputStream;Ljava/lang/String;)V
 
     invoke-virtual {p2}, Ljava/io/OutputStream;->close()V
 
-    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/a2;->b:Lcom/google/android/play/core/assetpacks/x;
+    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/a2;->b:Lcom/google/android/play/core/assetpacks/y;
 
     iget-object v3, p0, Lcom/google/android/play/core/assetpacks/a2;->c:Ljava/lang/String;
 
@@ -604,7 +624,7 @@
     .line 1
     new-instance p2, Ljava/io/File;
 
-    invoke-virtual/range {v2 .. v7}, Lcom/google/android/play/core/assetpacks/x;->m(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
+    invoke-virtual/range {v2 .. v7}, Lcom/google/android/play/core/assetpacks/y;->m(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 
@@ -626,9 +646,13 @@
 
     invoke-direct {v0, p2}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
-    invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write([B)V
+    invoke-static {v0, p2}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;)Ljava/io/FileOutputStream;
 
-    invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
+    move-result-object p2
+
+    invoke-virtual {p2, p1}, Ljava/io/OutputStream;->write([B)V
+
+    invoke-virtual {p2}, Ljava/io/OutputStream;->close()V
 
     return-void
 .end method
@@ -677,7 +701,11 @@
 
     invoke-direct {v1, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
-    invoke-virtual {v1, p1}, Ljava/io/FileOutputStream;->write([B)V
+    invoke-static {v1, v0}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;)Ljava/io/FileOutputStream;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Ljava/io/FileOutputStream;->write([B)V
 
     iget-object p1, p0, Lcom/google/android/play/core/assetpacks/a2;->a:[B
 
@@ -688,9 +716,9 @@
     :goto_0
     if-lez p1, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/a2;->a:[B
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/a2;->a:[B
 
-    invoke-virtual {v1, v0, v4, p1}, Ljava/io/FileOutputStream;->write([BII)V
+    invoke-virtual {v0, v1, v4, p1}, Ljava/io/FileOutputStream;->write([BII)V
 
     iget-object p1, p0, Lcom/google/android/play/core/assetpacks/a2;->a:[B
 
@@ -701,7 +729,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
+    invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
 
     return-void
 .end method
@@ -786,6 +814,10 @@
 
     invoke-direct {p1, v1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
+    invoke-static {p1, v1}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;)Ljava/io/FileOutputStream;
+
+    move-result-object p1
+
     const/4 v1, 0x0
 
     invoke-virtual {v0, p1, v1}, Ljava/util/Properties;->store(Ljava/io/OutputStream;Ljava/lang/String;)V
@@ -803,7 +835,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/a2;->b:Lcom/google/android/play/core/assetpacks/x;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/a2;->b:Lcom/google/android/play/core/assetpacks/y;
 
     iget-object v1, p0, Lcom/google/android/play/core/assetpacks/a2;->c:Ljava/lang/String;
 
@@ -813,7 +845,7 @@
 
     iget-object v5, p0, Lcom/google/android/play/core/assetpacks/a2;->f:Ljava/lang/String;
 
-    invoke-virtual/range {v0 .. v5}, Lcom/google/android/play/core/assetpacks/x;->h(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
+    invoke-virtual/range {v0 .. v5}, Lcom/google/android/play/core/assetpacks/y;->h(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 
@@ -827,37 +859,41 @@
 
     invoke-direct {v1, v0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
-    new-instance v0, Ljava/util/Properties;
+    invoke-static {v1, v0}, Lio/sentry/instrumentation/file/SentryFileInputStream$Factory;->create(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
 
-    invoke-direct {v0}, Ljava/util/Properties;-><init>()V
+    move-result-object v0
 
-    invoke-virtual {v0, v1}, Ljava/util/Properties;->load(Ljava/io/InputStream;)V
+    new-instance v1, Ljava/util/Properties;
 
-    const-string v1, "fileStatus"
+    invoke-direct {v1}, Ljava/util/Properties;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/util/Properties;->load(Ljava/io/InputStream;)V
+
+    const-string v0, "fileStatus"
 
     const-string v2, "-1"
 
-    invoke-virtual {v0, v1, v2}, Ljava/util/Properties;->getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v0, v2}, Ljava/util/Properties;->getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-static {v1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
-    move-result v1
+    move-result v0
 
     const/4 v2, 0x4
 
-    if-eq v1, v2, :cond_1
+    if-eq v0, v2, :cond_1
 
-    const-string v1, "previousChunk"
+    const-string v0, "previousChunk"
 
-    invoke-virtual {v0, v1}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v0}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
-    invoke-virtual {v0, v1}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v0}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -892,7 +928,7 @@
 .method public final k()Z
     .locals 6
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/a2;->b:Lcom/google/android/play/core/assetpacks/x;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/a2;->b:Lcom/google/android/play/core/assetpacks/y;
 
     iget-object v1, p0, Lcom/google/android/play/core/assetpacks/a2;->c:Ljava/lang/String;
 
@@ -902,7 +938,7 @@
 
     iget-object v5, p0, Lcom/google/android/play/core/assetpacks/a2;->f:Ljava/lang/String;
 
-    invoke-virtual/range {v0 .. v5}, Lcom/google/android/play/core/assetpacks/x;->h(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
+    invoke-virtual/range {v0 .. v5}, Lcom/google/android/play/core/assetpacks/y;->h(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 
@@ -923,17 +959,21 @@
 
     invoke-direct {v4, v0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
-    new-instance v0, Ljava/util/Properties;
+    invoke-static {v4, v0}, Lio/sentry/instrumentation/file/SentryFileInputStream$Factory;->create(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
 
-    invoke-direct {v0}, Ljava/util/Properties;-><init>()V
+    move-result-object v0
 
-    invoke-virtual {v0, v4}, Ljava/util/Properties;->load(Ljava/io/InputStream;)V
+    new-instance v4, Ljava/util/Properties;
+
+    invoke-direct {v4}, Ljava/util/Properties;-><init>()V
+
+    invoke-virtual {v4, v0}, Ljava/util/Properties;->load(Ljava/io/InputStream;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    const-string v4, "fileStatus"
+    const-string v0, "fileStatus"
 
-    invoke-virtual {v0, v4}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v4, v0}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -952,7 +992,7 @@
 
     .line 2
     :cond_0
-    invoke-virtual {v0, v4}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v4, v0}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -990,7 +1030,7 @@
 .method public final l()Ljava/io/File;
     .locals 6
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/a2;->b:Lcom/google/android/play/core/assetpacks/x;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/a2;->b:Lcom/google/android/play/core/assetpacks/y;
 
     iget-object v1, p0, Lcom/google/android/play/core/assetpacks/a2;->c:Ljava/lang/String;
 
@@ -1000,7 +1040,7 @@
 
     iget-object v5, p0, Lcom/google/android/play/core/assetpacks/a2;->f:Ljava/lang/String;
 
-    invoke-virtual/range {v0 .. v5}, Lcom/google/android/play/core/assetpacks/x;->m(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
+    invoke-virtual/range {v0 .. v5}, Lcom/google/android/play/core/assetpacks/y;->m(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 
@@ -1024,7 +1064,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/a2;->b:Lcom/google/android/play/core/assetpacks/x;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/a2;->b:Lcom/google/android/play/core/assetpacks/y;
 
     iget-object v1, p0, Lcom/google/android/play/core/assetpacks/a2;->c:Ljava/lang/String;
 
@@ -1034,7 +1074,7 @@
 
     iget-object v5, p0, Lcom/google/android/play/core/assetpacks/a2;->f:Ljava/lang/String;
 
-    invoke-virtual/range {v0 .. v5}, Lcom/google/android/play/core/assetpacks/x;->h(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
+    invoke-virtual/range {v0 .. v5}, Lcom/google/android/play/core/assetpacks/y;->h(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 

@@ -53,12 +53,12 @@
     check-cast p1, Ll5/j;
 
     .line 2
-    invoke-static {}, Ll5/i;->z()Ll5/i$b;
+    invoke-static {}, Ll5/i;->y()Ll5/i$b;
 
     move-result-object v0
 
     .line 3
-    invoke-virtual {p1}, Ll5/j;->u()Ll5/k;
+    invoke-virtual {p1}, Ll5/j;->t()Ll5/k;
 
     move-result-object v1
 
@@ -66,14 +66,14 @@
     invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 5
-    iget-object v2, v0, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object v2, v0, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast v2, Ll5/i;
 
-    invoke-static {v2, v1}, Ll5/i;->t(Ll5/i;Ll5/k;)V
+    invoke-static {v2, v1}, Ll5/i;->s(Ll5/i;Ll5/k;)V
 
     .line 6
-    invoke-virtual {p1}, Ll5/j;->t()I
+    invoke-virtual {p1}, Ll5/j;->s()I
 
     move-result p1
 
@@ -86,7 +86,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {p1, v2, v1}, Lm5/c;->d([BII)Lm5/c;
+    invoke-static {p1, v2, v1}, Lm5/c;->e([BII)Lm5/c;
 
     move-result-object p1
 
@@ -94,11 +94,11 @@
     invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 9
-    iget-object v1, v0, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object v1, v0, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast v1, Ll5/i;
 
-    invoke-static {v1, p1}, Ll5/i;->u(Ll5/i;Lm5/c;)V
+    invoke-static {v1, p1}, Ll5/i;->t(Ll5/i;Lm5/c;)V
 
     .line 10
     iget-object p1, p0, Le5/d$b;->b:Le5/d;
@@ -110,11 +110,11 @@
     invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 13
-    iget-object p1, v0, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object p1, v0, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast p1, Ll5/i;
 
-    invoke-static {p1, v2}, Ll5/i;->s(Ll5/i;I)V
+    invoke-static {p1, v2}, Ll5/i;->r(Ll5/i;I)V
 
     .line 14
     invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->c()Lcom/google/crypto/tink/shaded/protobuf/o;
@@ -139,7 +139,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Ll5/j;->v(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/j;
+    invoke-static {p1, v0}, Ll5/j;->u(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/j;
 
     move-result-object p1
 
@@ -158,7 +158,7 @@
     check-cast p1, Ll5/j;
 
     .line 2
-    invoke-virtual {p1}, Ll5/j;->t()I
+    invoke-virtual {p1}, Ll5/j;->s()I
 
     move-result v0
 
@@ -167,7 +167,7 @@
     .line 3
     iget-object v0, p0, Le5/d$b;->b:Le5/d;
 
-    invoke-virtual {p1}, Ll5/j;->u()Ll5/k;
+    invoke-virtual {p1}, Ll5/j;->t()Ll5/k;
 
     move-result-object p1
 

@@ -1,5 +1,5 @@
 .class public Ld9/c1;
-.super Ly7/g;
+.super Lz7/g;
 .source "NewConversationVM.java"
 
 
@@ -18,7 +18,7 @@
 
     iput-object p2, p0, Ld9/c1;->b:Ljava/lang/Exception;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -61,9 +61,9 @@
     check-cast v1, Ld9/s0;
 
     .line 5
-    iget-object v0, v0, Lcom/helpshift/common/exception/RootAPIException;->h:Lb8/a;
+    iget-object v0, v0, Lcom/helpshift/common/exception/RootAPIException;->i:Lc8/a;
 
-    invoke-interface {v1, v0}, Ld9/s0;->e(Lb8/a;)V
+    invoke-interface {v1, v0}, Ld9/s0;->c(Lc8/a;)V
 
     :cond_0
     return-void

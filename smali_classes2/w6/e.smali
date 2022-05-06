@@ -3,20 +3,14 @@
 .source "DecodedBitStreamParser.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lw6/e$b;
-    }
-.end annotation
-
-
 # static fields
 .field public static final a:[C
 
 .field public static final b:[C
 
-.field public static final c:[Ljava/math/BigInteger;
+.field public static final c:Ljava/nio/charset/Charset;
+
+.field public static final d:[Ljava/math/BigInteger;
 
 
 # direct methods
@@ -41,12 +35,21 @@
 
     sput-object v0, Lw6/e;->b:[C
 
+    const-string v0, "ISO-8859-1"
+
+    .line 3
+    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
+
+    move-result-object v0
+
+    sput-object v0, Lw6/e;->c:Ljava/nio/charset/Charset;
+
     const/16 v0, 0x10
 
     new-array v0, v0, [Ljava/math/BigInteger;
 
-    .line 3
-    sput-object v0, Lw6/e;->c:[Ljava/math/BigInteger;
+    .line 4
+    sput-object v0, Lw6/e;->d:[Ljava/math/BigInteger;
 
     sget-object v1, Ljava/math/BigInteger;->ONE:Ljava/math/BigInteger;
 
@@ -56,7 +59,7 @@
 
     const-wide/16 v1, 0x384
 
-    .line 4
+    .line 5
     invoke-static {v1, v2}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v1
@@ -67,9 +70,9 @@
 
     const/4 v0, 0x2
 
-    .line 5
+    .line 6
     :goto_0
-    sget-object v2, Lw6/e;->c:[Ljava/math/BigInteger;
+    sget-object v2, Lw6/e;->d:[Ljava/math/BigInteger;
 
     array-length v3, v2
 
@@ -77,7 +80,7 @@
 
     add-int/lit8 v3, v0, -0x1
 
-    .line 6
+    .line 7
     aget-object v3, v2, v3
 
     invoke-virtual {v3, v1}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
@@ -115,7 +118,7 @@
     if-ge v2, p1, :cond_0
 
     .line 2
-    sget-object v4, Lw6/e;->c:[Ljava/math/BigInteger;
+    sget-object v4, Lw6/e;->d:[Ljava/math/BigInteger;
 
     sub-int v5, p1, v2
 
@@ -217,9 +220,9 @@
     :goto_0
     aget v8, p0, v1
 
-    const/16 v9, 0x384
+    const/16 v9, 0x391
 
-    const/16 v10, 0x391
+    const/16 v10, 0x384
 
     if-ge v5, v8, :cond_3
 
@@ -230,7 +233,7 @@
     .line 4
     aget v5, p0, v5
 
-    if-ge v5, v9, :cond_0
+    if-ge v5, v10, :cond_0
 
     .line 5
     div-int/lit8 v9, v5, 0x1e
@@ -252,11 +255,11 @@
     goto :goto_0
 
     :cond_0
-    if-eq v5, v10, :cond_2
+    if-eq v5, v9, :cond_2
 
-    const/16 v10, 0x3a0
+    const/16 v9, 0x3a0
 
-    if-eq v5, v10, :cond_1
+    if-eq v5, v9, :cond_1
 
     packed-switch v5, :pswitch_data_0
 
@@ -268,7 +271,7 @@
     add-int/lit8 v5, v7, 0x1
 
     .line 7
-    aput v9, v2, v7
+    aput v10, v2, v7
 
     move v7, v5
 
@@ -284,7 +287,7 @@
 
     .line 8
     :cond_2
-    aput v10, v2, v7
+    aput v9, v2, v7
 
     add-int/lit8 v5, v8, 0x1
 
@@ -298,340 +301,441 @@
 
     goto :goto_0
 
-    .line 11
     :cond_3
-    sget-object v3, Lw6/e$b;->ALPHA:Lw6/e$b;
-
-    move-object v6, v3
-
     const/4 v8, 0x0
 
+    const/4 v11, 0x1
+
+    const/4 v12, 0x1
+
     :goto_2
-    if-ge v8, v7, :cond_19
+    if-ge v8, v7, :cond_29
+
+    .line 11
+    aget v13, v2, v8
 
     .line 12
-    aget v11, v2, v8
+    invoke-static {v11}, Lp/g;->b(I)I
 
-    .line 13
-    sget-object v12, Lw6/e$a;->a:[I
+    move-result v14
 
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+    const/4 v1, 0x5
 
-    move-result v13
+    const/4 v6, 0x4
 
-    aget v12, v12, v13
+    const/4 v15, 0x3
 
-    const/16 v13, 0x20
+    const/4 v10, 0x2
 
-    const/16 v14, 0x1d
+    const/16 v16, 0x20
 
-    const/16 v15, 0x1a
+    const/16 v9, 0x1d
 
-    packed-switch v12, :pswitch_data_2
+    if-eqz v14, :cond_20
 
-    goto/16 :goto_7
+    if-eq v14, v3, :cond_19
 
-    :pswitch_2
-    if-ge v11, v14, :cond_4
+    if-eq v14, v10, :cond_11
 
-    .line 14
-    sget-object v3, Lw6/e;->a:[C
+    if-eq v14, v15, :cond_d
 
-    aget-char v13, v3, v11
+    if-eq v14, v6, :cond_9
 
-    goto :goto_4
+    if-eq v14, v1, :cond_5
 
     :cond_4
-    if-eq v11, v14, :cond_7
-
-    if-eq v11, v9, :cond_6
-
-    if-eq v11, v10, :cond_5
-
-    goto :goto_3
-
-    .line 15
-    :cond_5
-    aget v3, v4, v8
-
-    int-to-char v3, v3
-
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
     :goto_3
-    move-object v3, v6
-
-    goto/16 :goto_7
-
-    .line 16
-    :cond_6
-    sget-object v3, Lw6/e$b;->ALPHA:Lw6/e$b;
-
-    goto/16 :goto_7
-
-    .line 17
-    :cond_7
-    sget-object v3, Lw6/e$b;->ALPHA:Lw6/e$b;
-
-    goto/16 :goto_7
-
-    :pswitch_3
-    if-ge v11, v15, :cond_9
-
-    add-int/lit8 v11, v11, 0x41
-
-    int-to-char v13, v11
-
-    :cond_8
-    :goto_4
-    move-object v3, v6
-
-    goto/16 :goto_8
-
-    :cond_9
-    if-eq v11, v15, :cond_8
-
-    if-eq v11, v9, :cond_a
-
-    goto :goto_3
-
-    .line 18
-    :cond_a
-    sget-object v3, Lw6/e$b;->ALPHA:Lw6/e$b;
-
-    goto/16 :goto_7
-
-    :pswitch_4
-    if-ge v11, v14, :cond_b
-
-    .line 19
-    sget-object v12, Lw6/e;->a:[C
-
-    aget-char v13, v12, v11
-
-    goto/16 :goto_8
-
-    :cond_b
-    if-eq v11, v14, :cond_e
-
-    if-eq v11, v9, :cond_d
-
-    if-eq v11, v10, :cond_c
-
-    goto/16 :goto_7
-
-    .line 20
-    :cond_c
-    aget v11, v4, v8
-
-    int-to-char v11, v11
-
-    invoke-virtual {v0, v11}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    goto/16 :goto_7
-
-    .line 21
-    :cond_d
-    sget-object v3, Lw6/e$b;->ALPHA:Lw6/e$b;
-
-    goto/16 :goto_7
-
-    .line 22
-    :cond_e
-    sget-object v3, Lw6/e$b;->ALPHA:Lw6/e$b;
-
-    goto/16 :goto_7
-
-    :pswitch_5
-    const/16 v12, 0x19
-
-    if-ge v11, v12, :cond_f
-
-    .line 23
-    sget-object v12, Lw6/e;->b:[C
-
-    aget-char v13, v12, v11
-
-    goto/16 :goto_8
-
-    :cond_f
-    if-eq v11, v9, :cond_11
-
-    if-eq v11, v10, :cond_10
-
-    packed-switch v11, :pswitch_data_3
-
-    goto/16 :goto_7
-
-    .line 24
-    :pswitch_6
-    sget-object v6, Lw6/e$b;->PUNCT_SHIFT:Lw6/e$b;
-
-    goto :goto_6
-
-    .line 25
-    :pswitch_7
-    sget-object v3, Lw6/e$b;->ALPHA:Lw6/e$b;
-
-    goto/16 :goto_7
-
-    .line 26
-    :pswitch_8
-    sget-object v3, Lw6/e$b;->LOWER:Lw6/e$b;
-
-    goto/16 :goto_7
-
-    .line 27
-    :pswitch_9
-    sget-object v3, Lw6/e$b;->PUNCT:Lw6/e$b;
-
-    goto :goto_7
-
-    .line 28
-    :cond_10
-    aget v11, v4, v8
-
-    int-to-char v11, v11
-
-    invoke-virtual {v0, v11}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    goto :goto_7
-
-    .line 29
-    :cond_11
-    sget-object v3, Lw6/e$b;->ALPHA:Lw6/e$b;
-
-    goto :goto_7
-
-    :pswitch_a
-    if-ge v11, v15, :cond_12
-
-    add-int/lit8 v11, v11, 0x61
+    const/16 v1, 0x391
 
     goto :goto_5
 
-    :cond_12
-    if-eq v11, v9, :cond_14
+    :cond_5
+    if-ge v13, v9, :cond_6
 
-    if-eq v11, v10, :cond_13
+    .line 13
+    sget-object v1, Lw6/e;->a:[C
 
-    packed-switch v11, :pswitch_data_4
+    aget-char v16, v1, v13
 
-    goto :goto_7
+    move v11, v12
 
-    .line 30
-    :pswitch_b
-    sget-object v6, Lw6/e$b;->PUNCT_SHIFT:Lw6/e$b;
+    goto/16 :goto_9
+
+    :cond_6
+    if-ne v13, v9, :cond_7
+
+    goto :goto_8
+
+    :cond_7
+    const/16 v1, 0x391
+
+    if-ne v13, v1, :cond_8
+
+    .line 14
+    aget v1, v4, v8
+
+    int-to-char v1, v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    goto :goto_4
+
+    :cond_8
+    const/16 v1, 0x384
+
+    if-ne v13, v1, :cond_c
 
     goto :goto_6
 
-    .line 31
-    :pswitch_c
-    sget-object v3, Lw6/e$b;->MIXED:Lw6/e$b;
+    :cond_9
+    const/16 v1, 0x384
 
-    goto :goto_7
+    const/16 v6, 0x1a
 
-    .line 32
-    :pswitch_d
-    sget-object v6, Lw6/e$b;->ALPHA_SHIFT:Lw6/e$b;
+    if-ge v13, v6, :cond_a
+
+    add-int/lit8 v13, v13, 0x41
+
+    int-to-char v6, v13
+
+    move v9, v6
+
+    move v11, v12
+
+    goto/16 :goto_b
+
+    :cond_a
+    if-ne v13, v6, :cond_b
+
+    move v11, v12
+
+    goto/16 :goto_c
+
+    :cond_b
+    if-ne v13, v1, :cond_c
 
     goto :goto_6
 
-    .line 33
-    :cond_13
-    aget v11, v4, v8
+    :cond_c
+    :goto_4
+    move v11, v12
 
-    int-to-char v11, v11
-
-    invoke-virtual {v0, v11}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    goto :goto_7
-
-    .line 34
-    :cond_14
-    sget-object v3, Lw6/e$b;->ALPHA:Lw6/e$b;
-
-    goto :goto_7
-
-    :pswitch_e
-    if-ge v11, v15, :cond_15
-
-    add-int/lit8 v11, v11, 0x41
+    const/16 v1, 0x391
 
     :goto_5
-    int-to-char v13, v11
+    const/16 v6, 0x384
 
-    goto :goto_8
+    goto/16 :goto_10
 
-    :cond_15
-    if-eq v11, v9, :cond_17
+    :cond_d
+    if-ge v13, v9, :cond_e
 
-    if-eq v11, v10, :cond_16
+    .line 15
+    sget-object v1, Lw6/e;->a:[C
 
-    packed-switch v11, :pswitch_data_5
+    aget-char v16, v1, v13
 
-    goto :goto_7
+    goto :goto_9
 
-    .line 35
-    :pswitch_f
-    sget-object v6, Lw6/e$b;->PUNCT_SHIFT:Lw6/e$b;
+    :cond_e
+    if-ne v13, v9, :cond_f
 
     :goto_6
-    const/4 v13, 0x0
+    const/16 v1, 0x391
 
-    move-object/from16 v16, v6
+    const/16 v6, 0x384
 
-    move-object v6, v3
+    :goto_7
+    const/4 v9, 0x0
 
-    move-object/from16 v3, v16
+    const/4 v11, 0x1
+
+    goto/16 :goto_11
+
+    :cond_f
+    const/16 v1, 0x391
+
+    if-ne v13, v1, :cond_10
+
+    .line 16
+    aget v1, v4, v8
+
+    int-to-char v1, v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    goto :goto_3
+
+    :cond_10
+    const/16 v1, 0x384
+
+    if-ne v13, v1, :cond_4
+
+    :goto_8
+    goto :goto_6
+
+    :cond_11
+    const/16 v1, 0x19
+
+    if-ge v13, v1, :cond_12
+
+    .line 17
+    sget-object v1, Lw6/e;->b:[C
+
+    aget-char v16, v1, v13
+
+    :goto_9
+    move/from16 v9, v16
+
+    goto/16 :goto_b
+
+    :cond_12
+    if-ne v13, v1, :cond_13
+
+    const/16 v1, 0x391
+
+    const/16 v6, 0x384
+
+    const/4 v9, 0x0
+
+    const/4 v11, 0x4
+
+    goto/16 :goto_11
+
+    :cond_13
+    const/16 v1, 0x1a
+
+    if-ne v13, v1, :cond_14
+
+    goto/16 :goto_c
+
+    :cond_14
+    const/16 v1, 0x1b
+
+    if-ne v13, v1, :cond_15
+
+    goto/16 :goto_d
+
+    :cond_15
+    const/16 v1, 0x1c
+
+    if-ne v13, v1, :cond_16
+
+    goto :goto_6
+
+    :cond_16
+    if-ne v13, v9, :cond_17
+
+    goto/16 :goto_f
+
+    :cond_17
+    const/16 v1, 0x391
+
+    if-ne v13, v1, :cond_18
+
+    .line 18
+    aget v1, v4, v8
+
+    int-to-char v1, v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    goto/16 :goto_3
+
+    :cond_18
+    const/16 v1, 0x384
+
+    if-ne v13, v1, :cond_4
 
     goto :goto_8
 
-    .line 36
-    :pswitch_10
-    sget-object v3, Lw6/e$b;->MIXED:Lw6/e$b;
+    :cond_19
+    const/16 v6, 0x1a
 
-    goto :goto_7
+    if-ge v13, v6, :cond_1a
 
-    .line 37
-    :pswitch_11
-    sget-object v3, Lw6/e$b;->LOWER:Lw6/e$b;
+    add-int/lit8 v13, v13, 0x61
 
-    goto :goto_7
+    goto :goto_a
 
-    .line 38
-    :cond_16
-    aget v11, v4, v8
+    :cond_1a
+    if-ne v13, v6, :cond_1b
 
-    int-to-char v11, v11
+    goto :goto_c
 
-    invoke-virtual {v0, v11}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    :cond_1b
+    const/16 v6, 0x1b
 
-    goto :goto_7
+    if-ne v13, v6, :cond_1c
 
-    .line 39
-    :cond_17
-    sget-object v3, Lw6/e$b;->ALPHA:Lw6/e$b;
+    move v12, v11
 
-    :goto_7
-    const/4 v13, 0x0
+    const/16 v1, 0x391
 
-    :goto_8
-    :pswitch_12
-    if-eqz v13, :cond_18
+    const/16 v6, 0x384
 
-    .line 40
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    const/4 v9, 0x0
 
-    :cond_18
+    const/4 v11, 0x5
+
+    goto/16 :goto_11
+
+    :cond_1c
+    const/16 v1, 0x1c
+
+    if-ne v13, v1, :cond_1d
+
+    goto :goto_e
+
+    :cond_1d
+    if-ne v13, v9, :cond_1e
+
+    goto :goto_f
+
+    :cond_1e
+    const/16 v1, 0x391
+
+    if-ne v13, v1, :cond_1f
+
+    .line 19
+    aget v1, v4, v8
+
+    int-to-char v1, v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    goto/16 :goto_3
+
+    :cond_1f
+    const/16 v1, 0x384
+
+    if-ne v13, v1, :cond_4
+
+    goto/16 :goto_6
+
+    :cond_20
+    const/16 v1, 0x1a
+
+    if-ge v13, v1, :cond_21
+
+    add-int/lit8 v13, v13, 0x41
+
+    :goto_a
+    int-to-char v1, v13
+
+    move v9, v1
+
+    :goto_b
+    const/16 v1, 0x391
+
+    const/16 v6, 0x384
+
+    goto :goto_11
+
+    :cond_21
+    if-ne v13, v1, :cond_22
+
+    :goto_c
+    const/16 v1, 0x391
+
+    const/16 v6, 0x384
+
+    const/16 v9, 0x20
+
+    goto :goto_11
+
+    :cond_22
+    const/16 v1, 0x1b
+
+    if-ne v13, v1, :cond_23
+
+    :goto_d
+    const/16 v1, 0x391
+
+    const/16 v6, 0x384
+
+    const/4 v9, 0x0
+
+    const/4 v11, 0x2
+
+    goto :goto_11
+
+    :cond_23
+    const/16 v1, 0x1c
+
+    if-ne v13, v1, :cond_24
+
+    :goto_e
+    const/16 v1, 0x391
+
+    const/16 v6, 0x384
+
+    const/4 v9, 0x0
+
+    const/4 v11, 0x3
+
+    goto :goto_11
+
+    :cond_24
+    if-ne v13, v9, :cond_25
+
+    :goto_f
+    move v12, v11
+
+    const/16 v1, 0x391
+
+    const/16 v6, 0x384
+
+    const/4 v9, 0x0
+
+    const/4 v11, 0x6
+
+    goto :goto_11
+
+    :cond_25
+    const/16 v1, 0x391
+
+    if-ne v13, v1, :cond_26
+
+    .line 20
+    aget v6, v4, v8
+
+    int-to-char v6, v6
+
+    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    goto/16 :goto_5
+
+    :cond_26
+    const/16 v6, 0x384
+
+    if-ne v13, v6, :cond_27
+
+    goto/16 :goto_7
+
+    :cond_27
+    :goto_10
+    const/4 v9, 0x0
+
+    :goto_11
+    if-eqz v9, :cond_28
+
+    .line 21
+    invoke-virtual {v0, v9}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    :cond_28
     add-int/lit8 v8, v8, 0x1
+
+    const/4 v1, 0x0
+
+    const/16 v9, 0x391
+
+    const/16 v10, 0x384
 
     goto/16 :goto_2
 
-    :cond_19
+    :cond_29
     return v5
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x384
@@ -645,40 +749,5 @@
         :pswitch_1
         :pswitch_1
         :pswitch_1
-    .end packed-switch
-
-    :pswitch_data_2
-    .packed-switch 0x1
-        :pswitch_e
-        :pswitch_a
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-    .end packed-switch
-
-    :pswitch_data_3
-    .packed-switch 0x19
-        :pswitch_9
-        :pswitch_12
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-    .end packed-switch
-
-    :pswitch_data_4
-    .packed-switch 0x1a
-        :pswitch_12
-        :pswitch_d
-        :pswitch_c
-        :pswitch_b
-    .end packed-switch
-
-    :pswitch_data_5
-    .packed-switch 0x1a
-        :pswitch_12
-        :pswitch_11
-        :pswitch_10
-        :pswitch_f
     .end packed-switch
 .end method

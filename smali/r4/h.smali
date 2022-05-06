@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final i:Lr4/e;
+.field public final h:Lr4/e;
 
-.field public final j:F
+.field public final i:F
 
 
 # direct methods
@@ -17,40 +17,40 @@
     invoke-direct {p0}, Lr4/e;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lr4/h;->i:Lr4/e;
+    iput-object p1, p0, Lr4/h;->h:Lr4/e;
 
     .line 3
-    iput p2, p0, Lr4/h;->j:F
+    iput p2, p0, Lr4/h;->i:F
 
     return-void
 .end method
 
 
 # virtual methods
-.method public c()Z
+.method public b()Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lr4/h;->i:Lr4/e;
+    iget-object v0, p0, Lr4/h;->h:Lr4/e;
 
-    invoke-virtual {v0}, Lr4/e;->c()Z
+    invoke-virtual {v0}, Lr4/e;->b()Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public f(FFFLr4/n;)V
+.method public c(FFFLr4/n;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lr4/h;->i:Lr4/e;
+    iget-object v0, p0, Lr4/h;->h:Lr4/e;
 
-    iget v1, p0, Lr4/h;->j:F
+    iget v1, p0, Lr4/h;->i:F
 
     sub-float/2addr p2, v1
 
-    invoke-virtual {v0, p1, p2, p3, p4}, Lr4/e;->f(FFFLr4/n;)V
+    invoke-virtual {v0, p1, p2, p3, p4}, Lr4/e;->c(FFFLr4/n;)V
 
     return-void
 .end method

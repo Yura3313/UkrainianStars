@@ -19,10 +19,10 @@
 
 .field public final b:Z
 
-.field public final c:Lse/h0;
+.field public final c:Lse/f0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lse/h0<",
+            "Lse/f0<",
             "*>;"
         }
     .end annotation
@@ -30,14 +30,14 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/BaseFragment$b;ZLse/h0;)V
+.method public constructor <init>(Lcom/supercell/id/ui/BaseFragment$b;ZLse/f0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/supercell/id/ui/BaseFragment$b;",
             "Z",
-            "Lse/h0<",
+            "Lse/f0<",
             "*>;)V"
         }
     .end annotation
@@ -51,7 +51,7 @@
 
     iput-boolean p2, p0, Lcom/supercell/id/ui/BaseFragment$a;->b:Z
 
-    iput-object p3, p0, Lcom/supercell/id/ui/BaseFragment$a;->c:Lse/h0;
+    iput-object p3, p0, Lcom/supercell/id/ui/BaseFragment$a;->c:Lse/f0;
 
     return-void
 
@@ -59,7 +59,7 @@
     const-string p1, "startTransition"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -83,7 +83,7 @@
 
     iget-object v1, p1, Lcom/supercell/id/ui/BaseFragment$a;->a:Lcom/supercell/id/ui/BaseFragment$b;
 
-    invoke-static {v0, v1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -95,11 +95,11 @@
 
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/supercell/id/ui/BaseFragment$a;->c:Lse/h0;
+    iget-object v0, p0, Lcom/supercell/id/ui/BaseFragment$a;->c:Lse/f0;
 
-    iget-object p1, p1, Lcom/supercell/id/ui/BaseFragment$a;->c:Lse/h0;
+    iget-object p1, p1, Lcom/supercell/id/ui/BaseFragment$a;->c:Lse/f0;
 
-    invoke-static {v0, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -151,7 +151,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/ui/BaseFragment$a;->c:Lse/h0;
+    iget-object v2, p0, Lcom/supercell/id/ui/BaseFragment$a;->c:Lse/f0;
 
     if-eqz v2, :cond_2
 
@@ -170,7 +170,7 @@
 
     const-string v0, "DelayedEnterTransition(animation="
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -190,7 +190,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/BaseFragment$a;->c:Lse/h0;
+    iget-object v1, p0, Lcom/supercell/id/ui/BaseFragment$a;->c:Lse/f0;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

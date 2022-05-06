@@ -3,81 +3,55 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Li1/k;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public a:Lj3/ch;
+.field public final synthetic g:Landroid/view/View;
 
-.field public b:Li1/k;
+.field public final synthetic h:Lj3/j9;
+
+.field public final synthetic i:I
+
+.field public final synthetic j:Lj3/jh;
 
 
 # direct methods
-.method public constructor <init>(Lj3/ch;Li1/k;)V
+.method public constructor <init>(Lj3/jh;Landroid/view/View;Lj3/j9;I)V
     .locals 0
 
     .line 1
+    iput-object p1, p0, Lj3/kh;->j:Lj3/jh;
+
+    iput-object p2, p0, Lj3/kh;->g:Landroid/view/View;
+
+    iput-object p3, p0, Lj3/kh;->h:Lj3/j9;
+
+    iput p4, p0, Lj3/kh;->i:I
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lj3/kh;->a:Lj3/ch;
-
-    .line 3
-    iput-object p2, p0, Lj3/kh;->b:Li1/k;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final M()V
-    .locals 1
+.method public final run()V
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Lj3/kh;->b:Li1/k;
+    iget-object v0, p0, Lj3/kh;->j:Lj3/jh;
 
-    if-eqz v0, :cond_0
+    iget-object v1, p0, Lj3/kh;->g:Landroid/view/View;
 
-    .line 2
-    invoke-interface {v0}, Li1/k;->M()V
+    iget-object v2, p0, Lj3/kh;->h:Lj3/j9;
 
-    .line 3
-    :cond_0
-    iget-object v0, p0, Lj3/kh;->a:Lj3/ch;
+    iget v3, p0, Lj3/kh;->i:I
 
-    invoke-interface {v0}, Lj3/ch;->e0()V
-
-    return-void
-.end method
-
-.method public final T()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lj3/kh;->b:Li1/k;
-
-    if-eqz v0, :cond_0
+    add-int/lit8 v3, v3, -0x1
 
     .line 2
-    invoke-interface {v0}, Li1/k;->T()V
-
-    .line 3
-    :cond_0
-    iget-object v0, p0, Lj3/kh;->a:Lj3/ch;
-
-    invoke-interface {v0}, Lj3/ch;->D0()V
-
-    return-void
-.end method
-
-.method public final onPause()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final onResume()V
-    .locals 0
+    invoke-virtual {v0, v1, v2, v3}, Lj3/jh;->q(Landroid/view/View;Lj3/j9;I)V
 
     return-void
 .end method

@@ -9,9 +9,9 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;,
+        Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$b;,
         Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$d;,
-        Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$b;
+        Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
     }
 .end annotation
 
@@ -359,7 +359,7 @@
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$b;->d()V
 
     .line 6
-    iget-object v2, v0, Lcom/google/protobuf/GeneratedMessageLite$b;->b:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v2, v0, Lcom/google/protobuf/GeneratedMessageLite$b;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     invoke-virtual {v0, v2, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->g(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/GeneratedMessageLite;)V
 
@@ -418,7 +418,7 @@
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$b;->d()V
 
     .line 6
-    iget-object v2, v0, Lcom/google/protobuf/GeneratedMessageLite$b;->b:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v2, v0, Lcom/google/protobuf/GeneratedMessageLite$b;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     invoke-virtual {v0, v2, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->g(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/GeneratedMessageLite;)V
 
@@ -477,7 +477,7 @@
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$b;->d()V
 
     .line 6
-    iget-object v2, v0, Lcom/google/protobuf/GeneratedMessageLite$b;->b:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v2, v0, Lcom/google/protobuf/GeneratedMessageLite$b;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     invoke-virtual {v0, v2, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->g(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/GeneratedMessageLite;)V
 
@@ -847,7 +847,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p1}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->getNumber()I
+    invoke-virtual {p1}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->b()I
 
     move-result p1
 
@@ -871,13 +871,9 @@
     .locals 1
 
     .line 1
-    sget-object p2, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$a;->a:[I
-
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
     move-result p1
-
-    aget p1, p2, p1
 
     const/4 p2, 0x1
 
@@ -1025,14 +1021,14 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
+    .packed-switch 0x0
         :pswitch_1
         :pswitch_0
+        :pswitch_4
+        :pswitch_6
+        :pswitch_5
+        :pswitch_3
+        :pswitch_2
     .end packed-switch
 .end method
 
@@ -1115,15 +1111,52 @@
 .end method
 
 .method public getStatusCase()Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$d;
-    .locals 1
+    .locals 2
 
     .line 1
     iget v0, p0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus;->statusCase_:I
 
-    invoke-static {v0}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$d;->forNumber(I)Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$d;
+    if-eqz v0, :cond_3
 
-    move-result-object v0
+    const/4 v1, 0x2
 
+    if-eq v0, v1, :cond_2
+
+    const/4 v1, 0x3
+
+    if-eq v0, v1, :cond_1
+
+    const/4 v1, 0x4
+
+    if-eq v0, v1, :cond_0
+
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    .line 2
+    :cond_0
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$d;->i:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$d;
+
+    goto :goto_0
+
+    .line 3
+    :cond_1
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$d;->h:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$d;
+
+    goto :goto_0
+
+    .line 4
+    :cond_2
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$d;->g:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$d;
+
+    goto :goto_0
+
+    .line 5
+    :cond_3
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$d;->j:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$d;
+
+    :goto_0
     return-object v0
 .end method
 
@@ -1133,14 +1166,14 @@
     .line 1
     iget v0, p0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus;->type_:I
 
-    invoke-static {v0}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->forNumber(I)Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    invoke-static {v0}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->a(I)Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->UNRECOGNIZED:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->n:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
     :cond_0
     return-object v0

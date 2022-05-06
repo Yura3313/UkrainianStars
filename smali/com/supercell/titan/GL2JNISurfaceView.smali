@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field public final a:Ljava/util/Set;
+.field public final g:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -41,7 +41,7 @@
 
     invoke-direct {p1, v0}, Ljava/util/HashSet;-><init>(I)V
 
-    iput-object p1, p0, Lcom/supercell/titan/GL2JNISurfaceView;->a:Ljava/util/Set;
+    iput-object p1, p0, Lcom/supercell/titan/GL2JNISurfaceView;->g:Ljava/util/Set;
 
     .line 3
     invoke-virtual {p0}, Landroid/view/SurfaceView;->getHolder()Landroid/view/SurfaceHolder;
@@ -56,7 +56,7 @@
     if-ge p1, v0, :cond_0
 
     .line 4
-    iget-object v1, p0, Lcom/supercell/titan/GL2JNISurfaceView;->a:Ljava/util/Set;
+    iget-object v1, p0, Lcom/supercell/titan/GL2JNISurfaceView;->g:Ljava/util/Set;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

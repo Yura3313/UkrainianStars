@@ -3,113 +3,80 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
+.implements Lj3/rv0;
 
 
-# instance fields
-.field public final synthetic a:I
-
-.field public final b:Lj3/fv0;
-
-.field public final c:Ljava/lang/Object;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lj3/rv0<",
+        "Lj3/ap<",
+        "TT;>;>;"
+    }
+.end annotation
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;Lj3/fv0;I)V
-    .locals 0
+.method public static a(Lj3/h20;Lj3/o20;Lj3/wg0;Lj3/ui0;Lj3/jl;Lj3/m60;Lj3/vs;Lj3/ug0;Lj3/b30;Lj3/mq;Ljava/util/concurrent/Executor;Lj3/z20;)Lj3/ap;
+    .locals 14
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lj3/h20;",
+            "Lj3/o20;",
+            "Lj3/wg0;",
+            "Lj3/ui0;",
+            "Lj3/jl;",
+            "Lj3/m60<",
+            "TT;>;",
+            "Lj3/vs;",
+            "Lj3/ug0;",
+            "Lj3/b30;",
+            "Lj3/mq;",
+            "Ljava/util/concurrent/Executor;",
+            "Lj3/z20;",
+            ")",
+            "Lj3/ap<",
+            "TT;>;"
+        }
+    .end annotation
 
     .line 1
-    iput p3, p0, Lj3/ep;->a:I
+    new-instance v13, Lj3/ap;
 
-    iput-object p1, p0, Lj3/ep;->c:Ljava/lang/Object;
+    move-object v0, v13
 
-    iput-object p2, p0, Lj3/ep;->b:Lj3/fv0;
+    move-object v1, p0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-object v2, p1
 
-    return-void
-.end method
+    move-object/from16 v3, p2
 
-.method public static a(Lj3/hc;Lj3/fv0;)Lj3/ep;
-    .locals 2
+    move-object/from16 v4, p3
 
-    .line 1
-    new-instance v0, Lj3/ep;
+    move-object/from16 v5, p4
 
-    const/4 v1, 0x1
+    move-object/from16 v6, p5
 
-    invoke-direct {v0, p0, p1, v1}, Lj3/ep;-><init>(Ljava/lang/Object;Lj3/fv0;I)V
+    move-object/from16 v7, p6
 
-    return-object v0
-.end method
+    move-object/from16 v8, p7
 
-.method public static b(Lr4/e;Lj3/fv0;)Lj3/ep;
-    .locals 2
+    move-object/from16 v9, p8
 
-    .line 1
-    new-instance v0, Lj3/ep;
+    move-object/from16 v10, p9
 
-    const/4 v1, 0x0
+    move-object/from16 v11, p10
 
-    invoke-direct {v0, p0, p1, v1}, Lj3/ep;-><init>(Ljava/lang/Object;Lj3/fv0;I)V
+    move-object/from16 v12, p11
 
-    return-object v0
-.end method
+    invoke-direct/range {v0 .. v12}, Lj3/ap;-><init>(Lj3/h20;Lj3/o20;Lj3/wg0;Lj3/ui0;Lj3/jl;Lj3/m60;Lj3/vs;Lj3/ug0;Lj3/b30;Lj3/mq;Ljava/util/concurrent/Executor;Lj3/z20;)V
 
-
-# virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 3
-
-    iget v0, p0, Lj3/ep;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
-
-    .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/ep;->b:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lj3/hp;
-
-    .line 2
-    new-instance v1, Lj3/rt;
-
-    .line 3
-    sget-object v2, Lj3/gd;->f:Lj3/am0;
-
-    .line 4
-    invoke-direct {v1, v0, v2}, Lj3/rt;-><init>(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
-
-    return-object v1
-
-    .line 5
-    :goto_0
-    iget-object v0, p0, Lj3/ep;->b:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lj3/zg0;
-
-    .line 6
-    iget-object v0, v0, Lj3/zg0;->c:Lj3/na;
-
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
-
-    .line 7
-    invoke-static {v0, v1}, Lj3/zo0;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-
-    return-object v0
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object v13
 .end method

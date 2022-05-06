@@ -97,7 +97,7 @@
     return-object p0
 .end method
 
-.method public static h(Lio/sentry/IHub;Lio/sentry/protocol/SentryTransaction;)Lio/sentry/protocol/SentryId;
+.method public static h(Lio/sentry/IHub;Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;)Lio/sentry/protocol/SentryId;
     .locals 1
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
@@ -105,14 +105,29 @@
     const/4 v0, 0x0
 
     .line 1
-    invoke-interface {p0, p1, v0}, Lio/sentry/IHub;->captureTransaction(Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+    invoke-interface {p0, p1, p2, v0}, Lio/sentry/IHub;->captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static i(Lio/sentry/IHub;Lio/sentry/TransactionContext;)Lio/sentry/ITransaction;
+.method public static i(Lio/sentry/IHub;Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
+    .end annotation
+
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-interface {p0, p1, v0, p2}, Lio/sentry/IHub;->captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static j(Lio/sentry/IHub;Lio/sentry/TransactionContext;)Lio/sentry/ITransaction;
     .locals 1
 
     const/4 v0, 0x0
@@ -125,7 +140,7 @@
     return-object p0
 .end method
 
-.method public static j(Lio/sentry/IHub;Lio/sentry/TransactionContext;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
+.method public static k(Lio/sentry/IHub;Lio/sentry/TransactionContext;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
     .locals 1
 
     const/4 v0, 0x0
@@ -138,7 +153,7 @@
     return-object p0
 .end method
 
-.method public static k(Lio/sentry/IHub;Lio/sentry/TransactionContext;Z)Lio/sentry/ITransaction;
+.method public static l(Lio/sentry/IHub;Lio/sentry/TransactionContext;Z)Lio/sentry/ITransaction;
     .locals 1
 
     const/4 v0, 0x0
@@ -151,7 +166,7 @@
     return-object p0
 .end method
 
-.method public static l(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;)Lio/sentry/ITransaction;
+.method public static m(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;)Lio/sentry/ITransaction;
     .locals 1
 
     const/4 v0, 0x0
@@ -164,7 +179,7 @@
     return-object p0
 .end method
 
-.method public static m(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
+.method public static n(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
     .locals 1
 
     const/4 v0, 0x0
@@ -177,7 +192,7 @@
     return-object p0
 .end method
 
-.method public static n(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;Z)Lio/sentry/ITransaction;
+.method public static o(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;Z)Lio/sentry/ITransaction;
     .locals 1
 
     .line 1
@@ -192,7 +207,7 @@
     return-object p0
 .end method
 
-.method public static o(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;ZLio/sentry/TransactionFinishedCallback;)Lio/sentry/ITransaction;
+.method public static p(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;ZLio/sentry/TransactionFinishedCallback;)Lio/sentry/ITransaction;
     .locals 7
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
@@ -221,7 +236,7 @@
     return-object p0
 .end method
 
-.method public static p(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Z)Lio/sentry/ITransaction;
+.method public static q(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Z)Lio/sentry/ITransaction;
     .locals 1
 
     const/4 v0, 0x0

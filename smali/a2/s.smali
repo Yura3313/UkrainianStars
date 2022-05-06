@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final a:Landroid/os/Handler;
+.field public final g:Landroid/os/Handler;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, La2/s;->a:Landroid/os/Handler;
+    iput-object p1, p0, La2/s;->g:Landroid/os/Handler;
 
     return-void
 .end method
@@ -26,7 +26,7 @@
 .method public final execute(Ljava/lang/Runnable;)V
     .locals 1
 
-    iget-object v0, p0, La2/s;->a:Landroid/os/Handler;
+    iget-object v0, p0, La2/s;->g:Landroid/os/Handler;
 
     invoke-virtual {v0, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

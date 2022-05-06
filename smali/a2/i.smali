@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public abstract e(Ljava/lang/String;Lcom/google/android/gms/common/api/internal/LifecycleCallback;)V
+.method public abstract d(Ljava/lang/String;Lcom/google/android/gms/common/api/internal/LifecycleCallback;)V
     .param p1    # Ljava/lang/String;
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
@@ -15,7 +15,7 @@
     .end param
 .end method
 
-.method public abstract i(Ljava/lang/String;Ljava/lang/Class;)Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+.method public abstract g(Ljava/lang/String;Ljava/lang/Class;)Lcom/google/android/gms/common/api/internal/LifecycleCallback;
     .param p1    # Ljava/lang/String;
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
@@ -39,7 +39,7 @@
     .end annotation
 .end method
 
-.method public abstract j()Landroid/app/Activity;
+.method public abstract i()Landroid/app/Activity;
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 .end method

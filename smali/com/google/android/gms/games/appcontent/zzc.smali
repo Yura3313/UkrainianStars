@@ -20,16 +20,16 @@
 
 
 # virtual methods
-.method public abstract C1()Landroid/os/Bundle;
+.method public abstract F1()Landroid/os/Bundle;
 .end method
 
-.method public abstract a2()I
+.method public abstract c2()I
 .end method
 
-.method public abstract b1()Ljava/lang/String;
+.method public abstract d1()Ljava/lang/String;
 .end method
 
-.method public abstract d2()I
+.method public abstract f2()I
 .end method
 
 .method public abstract getDescription()Ljava/lang/String;
@@ -41,8 +41,8 @@
 .method public abstract getTitle()Ljava/lang/String;
 .end method
 
-.method public abstract k0()Ljava/lang/String;
+.method public abstract m0()Ljava/lang/String;
 .end method
 
-.method public abstract v()Landroid/net/Uri;
+.method public abstract x()Landroid/net/Uri;
 .end method

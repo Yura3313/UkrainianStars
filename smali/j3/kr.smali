@@ -1,439 +1,248 @@
 .class public final Lj3/kr;
-.super Lj3/ou0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Lj3/jr;
 
 
 # instance fields
-.field public n:I
+.field public final synthetic g:I
 
-.field public o:Ljava/util/Date;
-
-.field public p:Ljava/util/Date;
-
-.field public q:J
-
-.field public r:J
-
-.field public s:D
-
-.field public t:F
-
-.field public u:Lj3/vu0;
-
-.field public v:J
+.field public final h:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
-
-    const-string v0, "mvhd"
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0, v0}, Lj3/ou0;-><init>(Ljava/lang/String;)V
+    iput p2, p0, Lj3/kr;->g:I
 
-    const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
+    iput-object p1, p0, Lj3/kr;->h:Ljava/lang/Object;
 
-    .line 2
-    iput-wide v0, p0, Lj3/kr;->s:D
-
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    .line 3
-    iput v0, p0, Lj3/kr;->t:F
-
-    .line 4
-    sget-object v0, Lj3/vu0;->j:Lj3/vu0;
-
-    iput-object v0, p0, Lj3/kr;->u:Lj3/vu0;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final e(Ljava/nio/ByteBuffer;)V
-    .locals 23
+.method public final f(Landroid/content/Context;)V
+    .locals 1
 
-    move-object/from16 v0, p0
+    iget p1, p0, Lj3/kr;->g:I
 
-    .line 1
-    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->get()B
-
-    move-result v1
-
-    if-gez v1, :cond_0
-
-    add-int/lit16 v1, v1, 0x100
-
-    .line 2
-    :cond_0
-    iput v1, v0, Lj3/kr;->n:I
-
-    .line 3
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->l(Ljava/nio/ByteBuffer;)I
-
-    .line 4
-    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->get()B
-
-    .line 5
-    iget-boolean v1, v0, Lj3/ou0;->b:Z
-
-    if-nez v1, :cond_1
-
-    .line 6
-    invoke-virtual/range {p0 .. p0}, Lj3/ou0;->d()V
-
-    .line 7
-    :cond_1
-    iget v1, v0, Lj3/kr;->n:I
-
-    const/4 v2, 0x1
-
-    if-ne v1, v2, :cond_2
-
-    .line 8
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->m(Ljava/nio/ByteBuffer;)J
-
-    move-result-wide v3
-
-    invoke-static {v3, v4}, Lf1/h;->b(J)Ljava/util/Date;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lj3/kr;->o:Ljava/util/Date;
-
-    .line 9
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->m(Ljava/nio/ByteBuffer;)J
-
-    move-result-wide v3
-
-    invoke-static {v3, v4}, Lf1/h;->b(J)Ljava/util/Date;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lj3/kr;->p:Ljava/util/Date;
-
-    .line 10
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->k(Ljava/nio/ByteBuffer;)J
-
-    move-result-wide v3
-
-    iput-wide v3, v0, Lj3/kr;->q:J
-
-    .line 11
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->m(Ljava/nio/ByteBuffer;)J
-
-    move-result-wide v3
-
-    iput-wide v3, v0, Lj3/kr;->r:J
+    packed-switch p1, :pswitch_data_0
 
     goto :goto_0
 
-    .line 12
-    :cond_2
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->k(Ljava/nio/ByteBuffer;)J
-
-    move-result-wide v3
-
-    invoke-static {v3, v4}, Lf1/h;->b(J)Ljava/util/Date;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lj3/kr;->o:Ljava/util/Date;
-
-    .line 13
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->k(Ljava/nio/ByteBuffer;)J
-
-    move-result-wide v3
-
-    invoke-static {v3, v4}, Lf1/h;->b(J)Ljava/util/Date;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lj3/kr;->p:Ljava/util/Date;
-
-    .line 14
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->k(Ljava/nio/ByteBuffer;)J
-
-    move-result-wide v3
-
-    iput-wide v3, v0, Lj3/kr;->q:J
-
-    .line 15
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->k(Ljava/nio/ByteBuffer;)J
-
-    move-result-wide v3
-
-    iput-wide v3, v0, Lj3/kr;->r:J
-
-    .line 16
-    :goto_0
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->n(Ljava/nio/ByteBuffer;)D
-
-    move-result-wide v3
-
-    iput-wide v3, v0, Lj3/kr;->s:D
-
-    const/4 v1, 0x2
-
-    new-array v1, v1, [B
-
-    move-object/from16 v3, p1
-
-    .line 17
-    invoke-virtual {v3, v1}, Ljava/nio/ByteBuffer;->get([B)Ljava/nio/ByteBuffer;
-
-    const/4 v4, 0x0
-
-    .line 18
-    aget-byte v5, v1, v4
-
-    shl-int/lit8 v5, v5, 0x8
-
-    const v6, 0xff00
-
-    and-int/2addr v5, v6
-
-    or-int/2addr v4, v5
-
-    int-to-short v4, v4
-
-    .line 19
-    aget-byte v1, v1, v2
-
-    and-int/lit16 v1, v1, 0xff
-
-    or-int/2addr v1, v4
-
-    int-to-short v1, v1
-
-    int-to-float v1, v1
-
-    const/high16 v2, 0x43800000    # 256.0f
-
-    div-float/2addr v1, v2
-
-    .line 20
-    iput v1, v0, Lj3/kr;->t:F
-
-    .line 21
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->l(Ljava/nio/ByteBuffer;)I
-
-    .line 22
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->k(Ljava/nio/ByteBuffer;)J
-
-    .line 23
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->k(Ljava/nio/ByteBuffer;)J
-
-    .line 24
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->n(Ljava/nio/ByteBuffer;)D
-
-    move-result-wide v5
-
-    .line 25
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->n(Ljava/nio/ByteBuffer;)D
-
-    move-result-wide v7
-
-    .line 26
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->o(Ljava/nio/ByteBuffer;)D
-
-    move-result-wide v13
-
-    .line 27
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->n(Ljava/nio/ByteBuffer;)D
-
-    move-result-wide v9
-
-    .line 28
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->n(Ljava/nio/ByteBuffer;)D
-
-    move-result-wide v11
-
-    .line 29
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->o(Ljava/nio/ByteBuffer;)D
-
-    move-result-wide v15
-
-    .line 30
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->n(Ljava/nio/ByteBuffer;)D
-
-    move-result-wide v19
-
-    .line 31
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->n(Ljava/nio/ByteBuffer;)D
-
-    move-result-wide v21
-
-    .line 32
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->o(Ljava/nio/ByteBuffer;)D
-
-    move-result-wide v17
-
-    .line 33
-    new-instance v1, Lj3/vu0;
-
-    move-object v4, v1
-
-    invoke-direct/range {v4 .. v22}, Lj3/vu0;-><init>(DDDDDDDDD)V
-
-    .line 34
-    iput-object v1, v0, Lj3/kr;->u:Lj3/vu0;
-
-    .line 35
-    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->getInt()I
-
-    .line 36
-    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->getInt()I
-
-    .line 37
-    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->getInt()I
-
-    .line 38
-    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->getInt()I
-
-    .line 39
-    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->getInt()I
-
-    .line 40
-    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->getInt()I
-
-    .line 41
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/ads/i;->k(Ljava/nio/ByteBuffer;)J
-
-    move-result-wide v1
-
-    iput-wide v1, v0, Lj3/kr;->v:J
-
+    :pswitch_0
     return-void
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 4
-
-    const-string v0, "MovieHeaderBox["
-
-    const-string v1, "creationTime="
 
     .line 1
-    invoke-static {v0, v1}, Lh1/i;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :goto_0
+    :try_start_0
+    iget-object p1, p0, Lj3/kr;->h:Ljava/lang/Object;
 
-    move-result-object v0
+    check-cast p1, Lj3/bh0;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :try_end_0
+    .catch Lcom/google/android/gms/internal/ads/zzdlr; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 2
-    iget-object v1, p0, Lj3/kr;->o:Ljava/util/Date;
+    :try_start_1
+    iget-object p1, p1, Lj3/bh0;->a:Lcom/google/android/gms/internal/ads/zzamv;
+
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzamv;->pause()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_1
+
+    :catchall_0
+    move-exception p1
 
     .line 3
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    :try_start_2
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzdlr;
 
-    const-string v1, ";"
+    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzdlr;-><init>(Ljava/lang/Throwable;)V
+
+    throw v0
+    :try_end_2
+    .catch Lcom/google/android/gms/internal/ads/zzdlr; {:try_start_2 .. :try_end_2} :catch_0
+
+    :catch_0
+    :goto_1
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final i(Landroid/content/Context;)V
+    .locals 1
+
+    iget p1, p0, Lj3/kr;->g:I
+
+    packed-switch p1, :pswitch_data_0
+
+    goto :goto_0
+
+    .line 1
+    :pswitch_0
+    iget-object p1, p0, Lj3/kr;->h:Ljava/lang/Object;
+
+    check-cast p1, Lj3/h5;
+
+    .line 2
+    iget-object p1, p1, Lj3/h5;->g:Ljava/lang/Object;
+
+    check-cast p1, Lj3/gh;
+
+    invoke-interface {p1}, Lj3/gh;->destroy()V
+
+    return-void
+
+    .line 3
+    :goto_0
+    :try_start_0
+    iget-object p1, p0, Lj3/kr;->h:Ljava/lang/Object;
+
+    check-cast p1, Lj3/bh0;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :try_end_0
+    .catch Lcom/google/android/gms/internal/ads/zzdlr; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 4
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :try_start_1
+    iget-object p1, p1, Lj3/bh0;->a:Lcom/google/android/gms/internal/ads/zzamv;
 
-    const-string v2, "modificationTime="
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzamv;->destroy()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_1
+
+    :catchall_0
+    move-exception p1
 
     .line 5
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :try_start_2
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzdlr;
+
+    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzdlr;-><init>(Ljava/lang/Throwable;)V
+
+    throw v0
+    :try_end_2
+    .catch Lcom/google/android/gms/internal/ads/zzdlr; {:try_start_2 .. :try_end_2} :catch_0
+
+    :catch_0
+    :goto_1
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final v(Landroid/content/Context;)V
+    .locals 2
+
+    iget v0, p0, Lj3/kr;->g:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
+
+    :pswitch_0
+    return-void
+
+    .line 1
+    :goto_0
+    :try_start_0
+    iget-object v0, p0, Lj3/kr;->h:Ljava/lang/Object;
+
+    check-cast v0, Lj3/bh0;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :try_end_0
+    .catch Lcom/google/android/gms/internal/ads/zzdlr; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 2
+    :try_start_1
+    iget-object v0, v0, Lj3/bh0;->a:Lcom/google/android/gms/internal/ads/zzamv;
+
+    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzamv;->x()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    if-eqz p1, :cond_0
+
+    .line 3
+    :try_start_2
+    iget-object v0, p0, Lj3/kr;->h:Ljava/lang/Object;
+
+    check-cast v0, Lj3/bh0;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :try_end_2
+    .catch Lcom/google/android/gms/internal/ads/zzdlr; {:try_start_2 .. :try_end_2} :catch_0
+
+    .line 4
+    :try_start_3
+    iget-object v0, v0, Lj3/bh0;->a:Lcom/google/android/gms/internal/ads/zzamv;
+
+    .line 5
+    new-instance v1, Lcom/google/android/gms/dynamic/ObjectWrapper;
+
+    invoke-direct {v1, p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
 
     .line 6
-    iget-object v2, p0, Lj3/kr;->p:Ljava/util/Date;
+    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzamv;->D4(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    goto :goto_1
+
+    :catchall_0
+    move-exception p1
 
     .line 7
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    :try_start_4
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzdlr;
+
+    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzdlr;-><init>(Ljava/lang/Throwable;)V
+
+    throw v0
+
+    :catchall_1
+    move-exception p1
 
     .line 8
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzdlr;
 
-    const-string v2, "timescale="
+    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzdlr;-><init>(Ljava/lang/Throwable;)V
 
-    .line 9
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    throw v0
+    :try_end_4
+    .catch Lcom/google/android/gms/internal/ads/zzdlr; {:try_start_4 .. :try_end_4} :catch_0
 
-    .line 10
-    iget-wide v2, p0, Lj3/kr;->q:J
+    :catch_0
+    :cond_0
+    :goto_1
+    return-void
 
-    .line 11
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    .line 12
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v2, "duration="
-
-    .line 13
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 14
-    iget-wide v2, p0, Lj3/kr;->r:J
-
-    .line 15
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    .line 16
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v2, "rate="
-
-    .line 17
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 18
-    iget-wide v2, p0, Lj3/kr;->s:D
-
-    .line 19
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
-
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v2, "volume="
-
-    .line 21
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 22
-    iget v2, p0, Lj3/kr;->t:F
-
-    .line 23
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    .line 24
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v2, "matrix="
-
-    .line 25
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v2, p0, Lj3/kr;->u:Lj3/vu0;
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 26
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, "nextTrackId="
-
-    .line 27
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 28
-    iget-wide v1, p0, Lj3/kr;->v:J
-
-    .line 29
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    const-string v1, "]"
-
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 31
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

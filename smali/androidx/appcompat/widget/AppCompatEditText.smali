@@ -3,15 +3,15 @@
 .source "AppCompatEditText.java"
 
 # interfaces
-.implements Lf0/r;
+.implements Lf0/q;
 
 
 # instance fields
-.field public final a:Landroidx/appcompat/widget/e;
+.field public final g:Landroidx/appcompat/widget/e;
 
-.field public final b:Landroidx/appcompat/widget/n;
+.field public final h:Landroidx/appcompat/widget/n;
 
-.field public final h:Landroidx/appcompat/widget/m;
+.field public final i:Landroidx/appcompat/widget/m;
 
 
 # direct methods
@@ -48,7 +48,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/e;-><init>(Landroid/view/View;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatEditText;->a:Landroidx/appcompat/widget/e;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatEditText;->g:Landroidx/appcompat/widget/e;
 
     .line 5
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/e;->d(Landroid/util/AttributeSet;I)V
@@ -58,7 +58,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/n;-><init>(Landroid/widget/TextView;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatEditText;->b:Landroidx/appcompat/widget/n;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatEditText;->h:Landroidx/appcompat/widget/n;
 
     .line 7
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/n;->e(Landroid/util/AttributeSet;I)V
@@ -71,7 +71,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/m;-><init>(Landroid/widget/TextView;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatEditText;->h:Landroidx/appcompat/widget/m;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatEditText;->i:Landroidx/appcompat/widget/m;
 
     return-void
 .end method
@@ -85,7 +85,7 @@
     invoke-super {p0}, Landroid/widget/EditText;->drawableStateChanged()V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->a:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->g:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
@@ -94,7 +94,7 @@
 
     .line 4
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->b:Landroidx/appcompat/widget/n;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->h:Landroidx/appcompat/widget/n;
 
     if-eqz v0, :cond_1
 
@@ -109,7 +109,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->a:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->g:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
@@ -131,7 +131,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->a:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->g:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
@@ -196,7 +196,7 @@
 
     if-ge v0, v1, :cond_1
 
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->i:Landroidx/appcompat/widget/m;
 
     if-nez v0, :cond_0
 
@@ -204,7 +204,7 @@
 
     .line 2
     :cond_0
-    invoke-virtual {v0}, Landroidx/appcompat/widget/m;->a()Landroid/view/textclassifier/TextClassifier;
+    invoke-virtual {v0}, Landroidx/appcompat/widget/m;->c()Landroid/view/textclassifier/TextClassifier;
 
     move-result-object v0
 
@@ -240,7 +240,7 @@
     invoke-super {p0, p1}, Landroid/widget/EditText;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatEditText;->a:Landroidx/appcompat/widget/e;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatEditText;->g:Landroidx/appcompat/widget/e;
 
     if-eqz p1, :cond_0
 
@@ -258,7 +258,7 @@
     invoke-super {p0, p1}, Landroid/widget/EditText;->setBackgroundResource(I)V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->a:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->g:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
@@ -287,7 +287,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->a:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->g:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
@@ -302,7 +302,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->a:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->g:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
@@ -320,7 +320,7 @@
     invoke-super {p0, p1, p2}, Landroid/widget/EditText;->setTextAppearance(Landroid/content/Context;I)V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->b:Landroidx/appcompat/widget/n;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->h:Landroidx/appcompat/widget/n;
 
     if-eqz v0, :cond_0
 
@@ -341,7 +341,7 @@
 
     if-ge v0, v1, :cond_1
 
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatEditText;->i:Landroidx/appcompat/widget/m;
 
     if-nez v0, :cond_0
 
@@ -349,7 +349,7 @@
 
     .line 2
     :cond_0
-    iput-object p1, v0, Landroidx/appcompat/widget/m;->b:Landroid/view/textclassifier/TextClassifier;
+    iput-object p1, v0, Landroidx/appcompat/widget/m;->b:Ljava/lang/Object;
 
     return-void
 

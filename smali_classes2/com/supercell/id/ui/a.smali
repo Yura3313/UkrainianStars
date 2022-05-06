@@ -11,15 +11,15 @@
     value = {
         "Lle/j;",
         "Lke/l<",
-        "Luc/d;",
-        "Lbe/n;",
+        "Lrc/e;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/ui/a;
+.field public static final g:Lcom/supercell/id/ui/a;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/a;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/a;->a:Lcom/supercell/id/ui/a;
+    sput-object v0, Lcom/supercell/id/ui/a;->g:Lcom/supercell/id/ui/a;
 
     return-void
 .end method
@@ -51,7 +51,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Luc/d;
+    check-cast p1, Lrc/e;
 
     if-eqz p1, :cond_0
 
@@ -61,7 +61,7 @@
     invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->dismiss()V
 
     .line 3
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -69,7 +69,7 @@
     const-string p1, "it"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

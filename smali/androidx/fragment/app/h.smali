@@ -7,27 +7,27 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/fragment/app/u0$e;
+.field public final synthetic g:Landroidx/fragment/app/u0$d;
 
-.field public final synthetic b:Landroidx/fragment/app/u0$e;
+.field public final synthetic h:Landroidx/fragment/app/u0$d;
 
-.field public final synthetic h:Z
+.field public final synthetic i:Z
 
-.field public final synthetic i:Lm/a;
+.field public final synthetic j:Lm/a;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/c;Landroidx/fragment/app/u0$e;Landroidx/fragment/app/u0$e;ZLm/a;)V
+.method public constructor <init>(Landroidx/fragment/app/c;Landroidx/fragment/app/u0$d;Landroidx/fragment/app/u0$d;ZLm/a;)V
     .locals 0
 
     .line 1
-    iput-object p2, p0, Landroidx/fragment/app/h;->a:Landroidx/fragment/app/u0$e;
+    iput-object p2, p0, Landroidx/fragment/app/h;->g:Landroidx/fragment/app/u0$d;
 
-    iput-object p3, p0, Landroidx/fragment/app/h;->b:Landroidx/fragment/app/u0$e;
+    iput-object p3, p0, Landroidx/fragment/app/h;->h:Landroidx/fragment/app/u0$d;
 
-    iput-boolean p4, p0, Landroidx/fragment/app/h;->h:Z
+    iput-boolean p4, p0, Landroidx/fragment/app/h;->i:Z
 
-    iput-object p5, p0, Landroidx/fragment/app/h;->i:Lm/a;
+    iput-object p5, p0, Landroidx/fragment/app/h;->j:Lm/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,21 +40,21 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/h;->a:Landroidx/fragment/app/u0$e;
+    iget-object v0, p0, Landroidx/fragment/app/h;->g:Landroidx/fragment/app/u0$d;
 
     .line 2
-    iget-object v0, v0, Landroidx/fragment/app/u0$e;->c:Landroidx/fragment/app/Fragment;
+    iget-object v0, v0, Landroidx/fragment/app/u0$d;->c:Landroidx/fragment/app/Fragment;
 
     .line 3
-    iget-object v1, p0, Landroidx/fragment/app/h;->b:Landroidx/fragment/app/u0$e;
+    iget-object v1, p0, Landroidx/fragment/app/h;->h:Landroidx/fragment/app/u0$d;
 
     .line 4
-    iget-object v1, v1, Landroidx/fragment/app/u0$e;->c:Landroidx/fragment/app/Fragment;
+    iget-object v1, v1, Landroidx/fragment/app/u0$d;->c:Landroidx/fragment/app/Fragment;
 
     .line 5
-    iget-boolean v2, p0, Landroidx/fragment/app/h;->h:Z
+    iget-boolean v2, p0, Landroidx/fragment/app/h;->i:Z
 
-    iget-object v3, p0, Landroidx/fragment/app/h;->i:Lm/a;
+    iget-object v3, p0, Landroidx/fragment/app/h;->j:Lm/a;
 
     const/4 v4, 0x0
 

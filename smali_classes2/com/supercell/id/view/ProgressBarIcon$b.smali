@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/view/ProgressBarIcon;
+.field public final synthetic g:Lcom/supercell/id/view/ProgressBarIcon;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/ProgressBarIcon;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/ProgressBarIcon$b;->a:Lcom/supercell/id/view/ProgressBarIcon;
+    iput-object p1, p0, Lcom/supercell/id/view/ProgressBarIcon$b;->g:Lcom/supercell/id/view/ProgressBarIcon;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/view/ProgressBarIcon$b;->a:Lcom/supercell/id/view/ProgressBarIcon;
+    iget-object p1, p0, Lcom/supercell/id/view/ProgressBarIcon$b;->g:Lcom/supercell/id/view/ProgressBarIcon;
 
     invoke-static {p1}, Lcom/supercell/id/view/ProgressBarIcon;->a(Lcom/supercell/id/view/ProgressBarIcon;)V
 

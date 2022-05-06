@@ -62,7 +62,7 @@
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, p0, v2}, Lc2/g0;-><init>(Lc2/f0;Lp0/d;)V
+    invoke-direct {v1, p0, v2}, Lc2/g0;-><init>(Lc2/f0;Li1/i;)V
 
     invoke-direct {v0, p1, v1}, Lp3/b;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
 

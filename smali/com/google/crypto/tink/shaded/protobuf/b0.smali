@@ -175,7 +175,7 @@
     check-cast p3, Ljava/lang/String;
 
     .line 14
-    sget-object p1, Lm5/c;->b:Lm5/c;
+    sget-object p1, Lm5/c;->h:Lm5/c;
 
     .line 15
     new-instance p1, Lm5/c$f;
@@ -189,7 +189,7 @@
     invoke-direct {p1, p2}, Lm5/c$f;-><init>([B)V
 
     .line 16
-    invoke-static {p1}, Lm5/y;->a(Lm5/c;)Ljava/lang/String;
+    invoke-static {p1}, Lm5/x;->a(Lm5/c;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -211,7 +211,7 @@
 
     check-cast p3, Lm5/c;
 
-    invoke-static {p3}, Lm5/y;->a(Lm5/c;)Ljava/lang/String;
+    invoke-static {p3}, Lm5/x;->a(Lm5/c;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -544,7 +544,7 @@
     new-array v4, v5, [Ljava/lang/Object;
 
     .line 21
-    invoke-static {v9, p0, v4}, Lcom/google/crypto/tink/shaded/protobuf/o;->m(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v9, p0, v4}, Lcom/google/crypto/tink/shaded/protobuf/o;->l(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -653,7 +653,7 @@
     new-array v6, v5, [Ljava/lang/Object;
 
     .line 33
-    invoke-static {v3, p0, v6}, Lcom/google/crypto/tink/shaded/protobuf/o;->m(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, p0, v6}, Lcom/google/crypto/tink/shaded/protobuf/o;->l(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -698,7 +698,7 @@
 
     if-eqz v3, :cond_7
 
-    invoke-static {v7}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v7}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
@@ -799,7 +799,7 @@
     new-array v8, v5, [Ljava/lang/Object;
 
     .line 42
-    invoke-static {v4, p0, v8}, Lcom/google/crypto/tink/shaded/protobuf/o;->m(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v4, p0, v8}, Lcom/google/crypto/tink/shaded/protobuf/o;->l(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -910,7 +910,7 @@
     if-eqz v6, :cond_d
 
     .line 54
-    sget-object v6, Lm5/c;->b:Lm5/c;
+    sget-object v6, Lm5/c;->h:Lm5/c;
 
     invoke-virtual {v4, v6}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -976,7 +976,7 @@
     new-array v8, v5, [Ljava/lang/Object;
 
     .line 59
-    invoke-static {v6, p0, v8}, Lcom/google/crypto/tink/shaded/protobuf/o;->m(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v6, p0, v8}, Lcom/google/crypto/tink/shaded/protobuf/o;->l(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v6
 

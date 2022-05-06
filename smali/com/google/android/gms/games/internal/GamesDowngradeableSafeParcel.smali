@@ -13,7 +13,7 @@
     return-void
 .end method
 
-.method public static z2(Ljava/lang/Integer;)Z
+.method public static B2(Ljava/lang/Integer;)Z
     .locals 2
 
     const/4 v0, 0x0

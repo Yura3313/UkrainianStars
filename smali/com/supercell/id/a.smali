@@ -12,14 +12,14 @@
         "Lle/j;",
         "Lke/l<",
         "Ljava/lang/Boolean;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/a;
+.field public static final g:Lcom/supercell/id/a;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/a;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/a;->a:Lcom/supercell/id/a;
+    sput-object v0, Lcom/supercell/id/a;->g:Lcom/supercell/id/a;
 
     return-void
 .end method
@@ -61,7 +61,7 @@
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method

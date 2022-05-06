@@ -1,6 +1,6 @@
-.class public synthetic Lpa/b$a;
-.super Ljava/lang/Object;
-.source "SupportController.java"
+.class public final Lpa/b$a;
+.super Landroidx/recyclerview/widget/RecyclerView$z;
+.source "AdminActionCardMessageViewDataBinder.java"
 
 
 # annotations
@@ -9,91 +9,128 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1009
-    name = null
+    accessFlags = 0x11
+    name = "a"
 .end annotation
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final A:Landroid/widget/TextView;
+
+.field public final B:Landroid/widget/TextView;
+
+.field public final C:Landroid/widget/ProgressBar;
+
+.field public final D:Landroid/widget/ImageView;
+
+.field public final E:Landroid/view/View;
+
+.field public final F:Landroid/view/View;
+
+.field public final G:Landroid/view/View;
+
+.field public final H:Landroid/view/View;
+
+.field public final z:Landroid/widget/TextView;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Lpa/b;Landroid/view/View;)V
+    .locals 0
 
     .line 1
-    invoke-static {}, Lr8/g$b;->values()[Lr8/g$b;
+    invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$z;-><init>(Landroid/view/View;)V
 
-    move-result-object v0
+    .line 2
+    sget p1, Lcom/helpshift/R$id;->action_card_title:I
 
-    array-length v0, v0
+    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    new-array v0, v0, [I
+    move-result-object p1
 
-    sput-object v0, Lpa/b$a;->a:[I
+    check-cast p1, Landroid/widget/TextView;
 
-    :try_start_0
-    sget-object v1, Lr8/g$b;->NOT_STARTED:Lr8/g$b;
+    iput-object p1, p0, Lpa/b$a;->z:Landroid/widget/TextView;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    .line 3
+    sget p1, Lcom/helpshift/R$id;->admin_date_text:I
 
-    move-result v1
+    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    const/4 v2, 0x1
+    move-result-object p1
 
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    check-cast p1, Landroid/widget/TextView;
 
-    :catch_0
-    :try_start_1
-    sget-object v0, Lpa/b$a;->a:[I
+    iput-object p1, p0, Lpa/b$a;->A:Landroid/widget/TextView;
 
-    sget-object v1, Lr8/g$b;->IN_PROGRESS:Lr8/g$b;
+    .line 4
+    sget p1, Lcom/helpshift/R$id;->action_card_action:I
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result v1
+    move-result-object p1
 
-    const/4 v2, 0x2
+    check-cast p1, Landroid/widget/TextView;
 
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    iput-object p1, p0, Lpa/b$a;->B:Landroid/widget/TextView;
 
-    :catch_1
-    :try_start_2
-    sget-object v0, Lpa/b$a;->a:[I
+    .line 5
+    sget p1, Lcom/helpshift/R$id;->download_progressbar:I
 
-    sget-object v1, Lr8/g$b;->FAILED:Lr8/g$b;
+    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    move-result-object p1
 
-    move-result v1
+    check-cast p1, Landroid/widget/ProgressBar;
 
-    const/4 v2, 0x3
+    iput-object p1, p0, Lpa/b$a;->C:Landroid/widget/ProgressBar;
 
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    .line 6
+    sget p1, Lcom/helpshift/R$id;->action_card_imageview:I
 
-    :catch_2
-    :try_start_3
-    sget-object v0, Lpa/b$a;->a:[I
+    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    sget-object v1, Lr8/g$b;->COMPLETED:Lr8/g$b;
+    move-result-object p1
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    check-cast p1, Landroid/widget/ImageView;
 
-    move-result v1
+    iput-object p1, p0, Lpa/b$a;->D:Landroid/widget/ImageView;
 
-    const/4 v2, 0x4
+    .line 7
+    sget p1, Lcom/helpshift/R$id;->action_card_imageview_container:I
 
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    :catch_3
+    move-result-object p1
+
+    iput-object p1, p0, Lpa/b$a;->E:Landroid/view/View;
+
+    .line 8
+    sget p1, Lcom/helpshift/R$id;->action_card_separator:I
+
+    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lpa/b$a;->F:Landroid/view/View;
+
+    .line 9
+    sget p1, Lcom/helpshift/R$id;->action_card_container:I
+
+    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lpa/b$a;->G:Landroid/view/View;
+
+    .line 10
+    sget p1, Lcom/helpshift/R$id;->action_card_cardview:I
+
+    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lpa/b$a;->H:Landroid/view/View;
+
     return-void
 .end method

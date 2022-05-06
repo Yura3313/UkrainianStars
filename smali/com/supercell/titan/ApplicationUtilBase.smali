@@ -575,7 +575,7 @@
     const-string v2, "-"
 
     .line 5
-    invoke-static {v1, v2, v0}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2, v0}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -626,11 +626,11 @@
 
     .line 2
     :try_start_0
-    new-instance v0, Ljava/io/FileReader;
+    new-instance v0, Lio/sentry/instrumentation/file/SentryFileReader;
 
     const-string v1, "/proc/meminfo"
 
-    invoke-direct {v0, v1}, Ljava/io/FileReader;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lio/sentry/instrumentation/file/SentryFileReader;-><init>(Ljava/lang/String;)V
 
     .line 3
     new-instance v1, Ljava/io/BufferedReader;
@@ -831,7 +831,7 @@
     const-string v1, "market://details?id="
 
     .line 2
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 

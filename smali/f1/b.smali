@@ -24,7 +24,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lf1/b$a;Lf1/h;)V
+.method public constructor <init>(Lf1/b$a;Lcom/google/android/gms/ads/i;)V
     .locals 0
 
     .line 1

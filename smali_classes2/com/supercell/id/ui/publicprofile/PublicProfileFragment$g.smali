@@ -21,21 +21,21 @@
         "Lle/j;",
         "Lke/l<",
         "Landroid/view/View;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$g;->a:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$g;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
     const/4 p1, 0x1
 
@@ -53,7 +53,7 @@
     check-cast p1, Landroid/view/View;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$g;->a:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$g;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
     instance-of v1, p1, Landroidx/core/widget/NestedScrollView;
 
@@ -72,15 +72,15 @@
     check-cast v1, Landroidx/core/widget/NestedScrollView;
 
     .line 3
-    iput-object v1, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->i0:Landroidx/core/widget/NestedScrollView;
+    iput-object v1, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->j0:Landroidx/core/widget/NestedScrollView;
 
     .line 4
-    iget-object v0, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->j0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->k0:Landroidx/recyclerview/widget/RecyclerView;
 
     if-eqz v0, :cond_1
 
     .line 5
-    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView;->n0:Ljava/util/List;
+    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView;->o0:Ljava/util/List;
 
     if-eqz v0, :cond_1
 
@@ -89,7 +89,7 @@
 
     .line 7
     :cond_1
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$g;->a:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$g;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
     instance-of v1, p1, Landroid/view/ViewGroup;
 
@@ -109,7 +109,7 @@
 
     move-result v3
 
-    invoke-static {v1, v3}, Lbe/a;->e(II)Loe/c;
+    invoke-static {v1, v3}, Lc2/n0;->e(II)Loe/c;
 
     move-result-object v3
 
@@ -137,9 +137,9 @@
 
     move-object v5, v3
 
-    check-cast v5, Lce/u;
+    check-cast v5, Lbe/t;
 
-    invoke-virtual {v5}, Lce/u;->b()I
+    invoke-virtual {v5}, Lbe/t;->b()I
 
     move-result v5
 
@@ -204,17 +204,17 @@
     check-cast v3, Landroidx/recyclerview/widget/RecyclerView;
 
     .line 14
-    iput-object v3, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->j0:Landroidx/recyclerview/widget/RecyclerView;
+    iput-object v3, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->k0:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 15
-    iget-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$g;->a:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$g;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
     const/4 v0, 0x1
 
     invoke-static {p1, v1, v0, v2}, Lcom/supercell/id/ui/BaseFragment;->k1(Lcom/supercell/id/ui/BaseFragment;ZILjava/lang/Object;)V
 
     .line 16
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method

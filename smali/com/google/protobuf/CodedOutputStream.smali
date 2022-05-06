@@ -42,7 +42,7 @@
     sput-object v0, Lcom/google/protobuf/CodedOutputStream;->b:Ljava/util/logging/Logger;
 
     .line 2
-    sget-boolean v0, Lcom/google/protobuf/v1;->g:Z
+    sget-boolean v0, Lcom/google/protobuf/u1;->g:Z
 
     .line 3
     sput-boolean v0, Lcom/google/protobuf/CodedOutputStream;->c:Z
@@ -320,7 +320,7 @@
     return p0
 .end method
 
-.method public static j(ILcom/google/protobuf/q0;Lcom/google/protobuf/j1;)I
+.method public static j(ILcom/google/protobuf/q0;Lcom/google/protobuf/i1;)I
     .locals 0
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
@@ -335,7 +335,7 @@
     .line 2
     check-cast p1, Lcom/google/protobuf/a;
 
-    invoke-virtual {p1, p2}, Lcom/google/protobuf/a;->getSerializedSize(Lcom/google/protobuf/j1;)I
+    invoke-virtual {p1, p2}, Lcom/google/protobuf/a;->getSerializedSize(Lcom/google/protobuf/i1;)I
 
     move-result p1
 
@@ -566,11 +566,11 @@
 
     .line 1
     :try_start_0
-    invoke-static {p0}, Lcom/google/protobuf/w1;->e(Ljava/lang/CharSequence;)I
+    invoke-static {p0}, Lcom/google/protobuf/v1;->e(Ljava/lang/CharSequence;)I
 
     move-result p0
     :try_end_0
-    .catch Lcom/google/protobuf/w1$d; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/google/protobuf/v1$d; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
@@ -684,7 +684,7 @@
     .end annotation
 .end method
 
-.method public final F(Ljava/lang/String;Lcom/google/protobuf/w1$d;)V
+.method public final F(Ljava/lang/String;Lcom/google/protobuf/v1$d;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -831,7 +831,7 @@
     .end annotation
 .end method
 
-.method public abstract S(ILcom/google/protobuf/q0;Lcom/google/protobuf/j1;)V
+.method public abstract S(ILcom/google/protobuf/q0;Lcom/google/protobuf/i1;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

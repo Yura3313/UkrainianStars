@@ -21,7 +21,7 @@
             "Ljava/util/Map<",
             "Ljava/lang/Integer;",
             "Ljava/lang/ref/WeakReference<",
-            "Luc/v;",
+            "Lrc/w;",
             ">;>;"
         }
     .end annotation
@@ -32,7 +32,7 @@
         value = {
             "[",
             "Lke/a<",
-            "Luc/v;",
+            "Lrc/w;",
             ">;"
         }
     .end annotation
@@ -49,7 +49,7 @@
             "[",
             "Lke/a<",
             "+",
-            "Luc/v;",
+            "Lrc/w;",
             ">;)V"
         }
     .end annotation
@@ -74,7 +74,7 @@
     const-string p1, "fragments"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -113,7 +113,7 @@
 
     move-object v2, p1
 
-    check-cast v2, Luc/v;
+    check-cast v2, Lrc/w;
 
     invoke-direct {v1, v2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 

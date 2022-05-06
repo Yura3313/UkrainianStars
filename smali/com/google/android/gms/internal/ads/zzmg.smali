@@ -16,13 +16,13 @@
 
 
 # instance fields
-.field public final b:Ljava/lang/String;
-
 .field public final h:Ljava/lang/String;
 
-.field public final i:I
+.field public final i:Ljava/lang/String;
 
-.field public final j:[B
+.field public final j:I
+
+.field public final k:[B
 
 
 # direct methods
@@ -30,9 +30,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lj3/fz0;
+    new-instance v0, Lj3/yz0;
 
-    invoke-direct {v0}, Lj3/fz0;-><init>()V
+    invoke-direct {v0}, Lj3/yz0;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzmg;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -52,28 +52,28 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzmg;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzmg;->h:Ljava/lang/String;
 
     .line 8
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzmg;->h:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzmg;->i:Ljava/lang/String;
 
     .line 9
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/gms/internal/ads/zzmg;->i:I
+    iput v0, p0, Lcom/google/android/gms/internal/ads/zzmg;->j:I
 
     .line 10
     invoke-virtual {p1}, Landroid/os/Parcel;->createByteArray()[B
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzmg;->j:[B
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzmg;->k:[B
 
     return-void
 .end method
@@ -87,20 +87,20 @@
     invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/zzmj;-><init>(Ljava/lang/String;)V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzmg;->b:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzmg;->h:Ljava/lang/String;
 
     const/4 p1, 0x0
 
     .line 3
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzmg;->h:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzmg;->i:Ljava/lang/String;
 
     const/4 p1, 0x3
 
     .line 4
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzmg;->i:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzmg;->j:I
 
     .line 5
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzmg;->j:[B
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzmg;->k:[B
 
     return-void
 .end method
@@ -137,36 +137,36 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzmg;
 
     .line 3
-    iget v2, p0, Lcom/google/android/gms/internal/ads/zzmg;->i:I
+    iget v2, p0, Lcom/google/android/gms/internal/ads/zzmg;->j:I
 
-    iget v3, p1, Lcom/google/android/gms/internal/ads/zzmg;->i:I
+    iget v3, p1, Lcom/google/android/gms/internal/ads/zzmg;->j:I
 
     if-ne v2, v3, :cond_2
-
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzmg;->b:Ljava/lang/String;
-
-    iget-object v3, p1, Lcom/google/android/gms/internal/ads/zzmg;->b:Ljava/lang/String;
-
-    invoke-static {v2, v3}, Lj3/n11;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
 
     iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzmg;->h:Ljava/lang/String;
 
     iget-object v3, p1, Lcom/google/android/gms/internal/ads/zzmg;->h:Ljava/lang/String;
 
-    .line 4
-    invoke-static {v2, v3}, Lj3/n11;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lj3/g21;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzmg;->j:[B
+    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzmg;->i:Ljava/lang/String;
 
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzmg;->j:[B
+    iget-object v3, p1, Lcom/google/android/gms/internal/ads/zzmg;->i:Ljava/lang/String;
+
+    .line 4
+    invoke-static {v2, v3}, Lj3/g21;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzmg;->k:[B
+
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzmg;->k:[B
 
     .line 5
     invoke-static {v2, p1}, Ljava/util/Arrays;->equals([B[B)Z
@@ -186,14 +186,14 @@
     .locals 3
 
     .line 1
-    iget v0, p0, Lcom/google/android/gms/internal/ads/zzmg;->i:I
+    iget v0, p0, Lcom/google/android/gms/internal/ads/zzmg;->j:I
 
     add-int/lit16 v0, v0, 0x20f
 
     mul-int/lit8 v0, v0, 0x1f
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzmg;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzmg;->h:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -214,7 +214,7 @@
     mul-int/lit8 v0, v0, 0x1f
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzmg;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzmg;->i:Ljava/lang/String;
 
     if-eqz v1, :cond_1
 
@@ -228,7 +228,7 @@
     mul-int/lit8 v0, v0, 0x1f
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzmg;->j:[B
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzmg;->k:[B
 
     invoke-static {v1}, Ljava/util/Arrays;->hashCode([B)I
 
@@ -243,22 +243,22 @@
     .locals 0
 
     .line 1
-    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzmg;->b:Ljava/lang/String;
-
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
-
-    .line 2
     iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzmg;->h:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
+    .line 2
+    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzmg;->i:Ljava/lang/String;
+
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
     .line 3
-    iget p2, p0, Lcom/google/android/gms/internal/ads/zzmg;->i:I
+    iget p2, p0, Lcom/google/android/gms/internal/ads/zzmg;->j:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 4
-    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzmg;->j:[B
+    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzmg;->k:[B
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeByteArray([B)V
 

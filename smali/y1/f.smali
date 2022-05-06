@@ -346,7 +346,7 @@
     const/16 p0, 0x52
 
     .line 17
-    invoke-static {v3, p0}, Ly/b;->a(Ljava/lang/String;I)I
+    invoke-static {v3, p0}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result p0
 

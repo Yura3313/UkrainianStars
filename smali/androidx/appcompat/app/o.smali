@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public a:Landroidx/appcompat/app/h;
+.field public g:Landroidx/appcompat/app/h;
 
-.field public final b:Lf0/d$a;
+.field public final h:Lf0/d$a;
 
 
 # direct methods
@@ -51,7 +51,7 @@
 
     invoke-direct {v1, p0}, Landroidx/appcompat/app/o$a;-><init>(Landroidx/appcompat/app/o;)V
 
-    iput-object v1, p0, Landroidx/appcompat/app/o;->b:Lf0/d$a;
+    iput-object v1, p0, Landroidx/appcompat/app/o;->h:Lf0/d$a;
 
     .line 6
     invoke-virtual {p0}, Landroidx/appcompat/app/o;->a()Landroidx/appcompat/app/h;
@@ -95,12 +95,12 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/o;->a:Landroidx/appcompat/app/h;
+    iget-object v0, p0, Landroidx/appcompat/app/o;->g:Landroidx/appcompat/app/h;
 
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Landroidx/appcompat/app/h;->a:Lm/c;
+    sget-object v0, Landroidx/appcompat/app/h;->g:Lm/c;
 
     .line 3
     new-instance v0, Landroidx/appcompat/app/AppCompatDelegateImpl;
@@ -117,11 +117,11 @@
     invoke-direct {v0, v1, v2, p0, p0}, Landroidx/appcompat/app/AppCompatDelegateImpl;-><init>(Landroid/content/Context;Landroid/view/Window;Landroidx/appcompat/app/g;Ljava/lang/Object;)V
 
     .line 5
-    iput-object v0, p0, Landroidx/appcompat/app/o;->a:Landroidx/appcompat/app/h;
+    iput-object v0, p0, Landroidx/appcompat/app/o;->g:Landroidx/appcompat/app/h;
 
     .line 6
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/app/o;->a:Landroidx/appcompat/app/h;
+    iget-object v0, p0, Landroidx/appcompat/app/o;->g:Landroidx/appcompat/app/h;
 
     return-object v0
 .end method
@@ -194,7 +194,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Landroidx/appcompat/app/o;->b:Lf0/d$a;
+    iget-object v1, p0, Landroidx/appcompat/app/o;->h:Lf0/d$a;
 
     invoke-static {v1, v0, p0, p1}, Lf0/d;->b(Lf0/d$a;Landroid/view/View;Landroid/view/Window$Callback;Landroid/view/KeyEvent;)Z
 

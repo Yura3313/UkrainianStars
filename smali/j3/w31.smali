@@ -2,67 +2,84 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lcom/google/android/gms/common/internal/BaseGmsClient$b;
-
 
 # instance fields
-.field public final synthetic a:Lj3/md;
+.field public final a:J
 
-.field public final synthetic b:Lj3/s31;
+.field public final b:Ljava/lang/String;
+
+.field public final c:I
 
 
 # direct methods
-.method public constructor <init>(Lj3/s31;Lj3/md;)V
+.method public constructor <init>(JLjava/lang/String;I)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lj3/w31;->b:Lj3/s31;
-
-    iput-object p2, p0, Lj3/w31;->a:Lj3/md;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-wide p1, p0, Lj3/w31;->a:J
+
+    .line 3
+    iput-object p3, p0, Lj3/w31;->b:Ljava/lang/String;
+
+    .line 4
+    iput p4, p0, Lj3/w31;->c:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final P0(Lcom/google/android/gms/common/ConnectionResult;)V
-    .locals 3
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 6
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_1
 
     .line 1
-    iget-object p1, p0, Lj3/w31;->b:Lj3/s31;
+    instance-of v1, p1, Lj3/w31;
+
+    if-nez v1, :cond_0
+
+    goto :goto_0
 
     .line 2
-    iget-object p1, p1, Lj3/s31;->d:Ljava/lang/Object;
+    :cond_0
+    check-cast p1, Lj3/w31;
 
-    .line 3
-    monitor-enter p1
+    iget-wide v1, p1, Lj3/w31;->a:J
 
-    .line 4
-    :try_start_0
-    iget-object v0, p0, Lj3/w31;->a:Lj3/md;
+    iget-wide v3, p0, Lj3/w31;->a:J
 
-    new-instance v1, Ljava/lang/RuntimeException;
+    cmp-long v5, v1, v3
 
-    const-string v2, "Connection failed."
+    if-nez v5, :cond_1
 
-    invoke-direct {v1, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+    iget p1, p1, Lj3/w31;->c:I
 
-    invoke-virtual {v0, v1}, Lj3/md;->c(Ljava/lang/Throwable;)Z
+    iget v1, p0, Lj3/w31;->c:I
 
-    .line 5
-    monitor-exit p1
+    if-ne p1, v1, :cond_1
 
-    return-void
+    const/4 p1, 0x1
 
-    :catchall_0
-    move-exception v0
+    return p1
 
-    monitor-exit p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :cond_1
+    :goto_0
+    return v0
+.end method
 
-    throw v0
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lj3/w31;->a:J
+
+    long-to-int v1, v0
+
+    return v1
 .end method

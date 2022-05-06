@@ -16,7 +16,7 @@
     invoke-virtual {p0, p1}, Landroid/widget/EditText;->setGravity(I)V
 
     .line 3
-    invoke-static {p0}, Lmb/a;->b(Landroid/widget/TextView;)V
+    invoke-static {p0}, Lkb/a;->b(Landroid/widget/TextView;)V
 
     return-void
 .end method
@@ -33,7 +33,7 @@
     invoke-virtual {p0, p1}, Landroid/widget/EditText;->setGravity(I)V
 
     .line 6
-    invoke-static {p0}, Lmb/a;->b(Landroid/widget/TextView;)V
+    invoke-static {p0}, Lkb/a;->b(Landroid/widget/TextView;)V
 
     return-void
 .end method

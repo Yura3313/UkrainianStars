@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lj3/mw0;IJ)V
+.method public constructor <init>(Lj3/cx0;IJ)V
     .locals 0
 
     .line 1

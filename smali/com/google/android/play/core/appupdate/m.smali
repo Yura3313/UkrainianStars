@@ -23,7 +23,7 @@
 
 .field public final c:Landroid/content/Context;
 
-.field public final d:Lcom/google/android/play/core/assetpacks/y;
+.field public final d:Lcom/google/android/play/core/assetpacks/z;
 
 
 # direct methods
@@ -68,7 +68,7 @@
 
     iput-object p1, p0, Lcom/google/android/play/core/appupdate/m;->c:Landroid/content/Context;
 
-    invoke-static {p1}, Ly4/a0;->a(Landroid/content/Context;)Z
+    invoke-static {p1}, Ly4/c0;->a(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -96,7 +96,7 @@
 
     sget-object v5, Lcom/google/android/play/core/appupdate/m;->f:Landroid/content/Intent;
 
-    sget-object v6, Lcom/google/android/play/core/appupdate/g;->a:Ly4/h;
+    sget-object v6, Lc2/n0;->k:Ly4/h;
 
     const-string v4, "AppUpdateService"
 
@@ -107,11 +107,11 @@
     iput-object v0, p0, Lcom/google/android/play/core/appupdate/m;->a:Ly4/l;
 
     :cond_1
-    new-instance v0, Lcom/google/android/play/core/assetpacks/y;
+    new-instance v0, Lcom/google/android/play/core/assetpacks/z;
 
-    invoke-direct {v0, p1}, Lcom/google/android/play/core/assetpacks/y;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/google/android/play/core/assetpacks/z;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/google/android/play/core/appupdate/m;->d:Lcom/google/android/play/core/assetpacks/y;
+    iput-object v0, p0, Lcom/google/android/play/core/appupdate/m;->d:Lcom/google/android/play/core/assetpacks/z;
 
     return-void
 .end method

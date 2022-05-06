@@ -7,7 +7,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lx1/n<",
-        "Lw1/d;",
+        "Lw1/c;",
         ">;"
     }
 .end annotation
@@ -39,11 +39,11 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lw1/d;
+    new-instance v0, Lw1/c;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1, p1}, Lw1/d;-><init>(Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;Lcom/google/android/gms/common/api/Status;)V
+    invoke-direct {v0, v1, p1}, Lw1/c;-><init>(Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;Lcom/google/android/gms/common/api/Status;)V
 
     return-object v0
 .end method
@@ -73,7 +73,7 @@
     iget-object v1, p0, Lx1/h;->m:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
     .line 3
-    invoke-interface {p1, v0, v1}, Lcom/google/android/gms/auth/api/signin/internal/zzt;->q3(Lcom/google/android/gms/auth/api/signin/internal/zzr;Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;)V
+    invoke-interface {p1, v0, v1}, Lcom/google/android/gms/auth/api/signin/internal/zzt;->r3(Lcom/google/android/gms/auth/api/signin/internal/zzr;Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;)V
 
     return-void
 .end method

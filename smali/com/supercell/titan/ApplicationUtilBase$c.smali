@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/titan/GL2JNISurfaceView;
+.field public final synthetic g:Lcom/supercell/titan/GL2JNISurfaceView;
 
-.field public final synthetic b:Z
+.field public final synthetic h:Z
 
 
 # direct methods
@@ -28,9 +28,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/titan/ApplicationUtilBase$c;->a:Lcom/supercell/titan/GL2JNISurfaceView;
+    iput-object p1, p0, Lcom/supercell/titan/ApplicationUtilBase$c;->g:Lcom/supercell/titan/GL2JNISurfaceView;
 
-    iput-boolean p2, p0, Lcom/supercell/titan/ApplicationUtilBase$c;->b:Z
+    iput-boolean p2, p0, Lcom/supercell/titan/ApplicationUtilBase$c;->h:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,9 +43,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/ApplicationUtilBase$c;->a:Lcom/supercell/titan/GL2JNISurfaceView;
+    iget-object v0, p0, Lcom/supercell/titan/ApplicationUtilBase$c;->g:Lcom/supercell/titan/GL2JNISurfaceView;
 
-    iget-boolean v1, p0, Lcom/supercell/titan/ApplicationUtilBase$c;->b:Z
+    iget-boolean v1, p0, Lcom/supercell/titan/ApplicationUtilBase$c;->h:Z
 
     invoke-virtual {v0, v1}, Landroid/view/SurfaceView;->setKeepScreenOn(Z)V
 

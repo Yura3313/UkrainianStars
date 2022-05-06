@@ -21,25 +21,25 @@
         "Lle/j;",
         "Lke/l<",
         "Ljava/lang/Object;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
-.field public final synthetic b:Ljava/lang/String;
+.field public final synthetic h:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/SupercellId$r;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/SupercellId$r;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/id/SupercellId$r;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/id/SupercellId$r;->h:Ljava/lang/String;
 
     const/4 p1, 0x1
 
@@ -58,16 +58,16 @@
     if-eqz p1, :cond_2
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/SupercellId$r;->a:Ljava/lang/String;
+    iget-object p1, p0, Lcom/supercell/id/SupercellId$r;->g:Ljava/lang/String;
 
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v2
 
     .line 2
-    iget-object v2, v2, Lwd/r;->l:Lcom/supercell/id/IdAccount;
+    iget-object v2, v2, Lvd/r;->l:Lcom/supercell/id/IdAccount;
 
     if-eqz v2, :cond_0
 
@@ -82,7 +82,7 @@
     move-object v2, v0
 
     :goto_0
-    invoke-static {p1, v2}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -95,13 +95,13 @@
 
     if-eqz p1, :cond_1
 
-    iget-object v1, p0, Lcom/supercell/id/SupercellId$r;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/SupercellId$r;->h:Ljava/lang/String;
 
     invoke-interface {p1, v1, v0}, Lcom/supercell/id/SupercellIdDelegate;->respondToDonationResult(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 5
     :cond_1
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -109,7 +109,7 @@
     const-string p1, "it"
 
     .line 6
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

@@ -7,33 +7,33 @@
 
 
 # instance fields
-.field public a:Ll7/b;
+.field public g:Lj3/h70;
 
-.field public b:Ll7/c;
+.field public h:Ll7/a;
 
-.field public h:Ll7/e;
+.field public i:Ll7/c;
 
-.field public i:Ll7/d;
+.field public j:Ll7/b;
 
 
 # direct methods
-.method public constructor <init>(Ll7/b;Ll7/c;Ll7/e;Ll7/d;)V
+.method public constructor <init>(Lj3/h70;Ll7/a;Ll7/c;Ll7/b;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lm7/a;->a:Ll7/b;
+    iput-object p1, p0, Lm7/a;->g:Lj3/h70;
 
     .line 3
-    iput-object p2, p0, Lm7/a;->b:Ll7/c;
+    iput-object p2, p0, Lm7/a;->h:Ll7/a;
 
     .line 4
-    iput-object p3, p0, Lm7/a;->h:Ll7/e;
+    iput-object p3, p0, Lm7/a;->i:Ll7/c;
 
     .line 5
-    iput-object p4, p0, Lm7/a;->i:Ll7/d;
+    iput-object p4, p0, Lm7/a;->j:Ll7/b;
 
     return-void
 .end method
@@ -51,18 +51,20 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lm7/a;->a:Ll7/b;
+    iget-object v0, p0, Lm7/a;->g:Lj3/h70;
 
-    iget-boolean v1, v0, Ll7/b;->b:Z
+    iget-boolean v1, v0, Lj3/h70;->a:Z
 
     if-eqz v1, :cond_0
 
     .line 2
-    iget-object v0, v0, Ll7/b;->a:Ljava/lang/String;
+    iget-object v0, v0, Lj3/h70;->b:Ljava/lang/Object;
 
-    iget-object v1, p0, Lm7/a;->b:Ll7/c;
+    check-cast v0, Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lo7/a;->a(Ljava/lang/String;Ll7/c;)Ljava/net/URL;
+    iget-object v1, p0, Lm7/a;->h:Ll7/a;
+
+    invoke-static {v0, v1}, Lo7/a;->a(Ljava/lang/String;Ll7/a;)Ljava/net/URL;
 
     move-result-object v0
 
@@ -74,9 +76,11 @@
 
     new-instance v1, Ljava/net/URI;
 
-    iget-object v2, p0, Lm7/a;->a:Ll7/b;
+    iget-object v2, p0, Lm7/a;->g:Lj3/h70;
 
-    iget-object v2, v2, Ll7/b;->a:Ljava/lang/String;
+    iget-object v2, v2, Lj3/h70;->b:Ljava/lang/Object;
+
+    check-cast v2, Ljava/lang/String;
 
     invoke-direct {v1, v2}, Ljava/net/URI;-><init>(Ljava/lang/String;)V
 
@@ -154,14 +158,18 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lm7/a;->i:Ll7/d;
+    iget-object v0, p0, Lm7/a;->j:Ll7/b;
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v1, p0, Lm7/a;->a:Ll7/b;
+    iget-object v1, p0, Lm7/a;->g:Lj3/h70;
 
-    iget-object v2, v1, Ll7/b;->a:Ljava/lang/String;
+    iget-object v1, v1, Lj3/h70;->b:Ljava/lang/Object;
+
+    move-object v2, v1
+
+    check-cast v2, Ljava/lang/String;
 
     move v1, p1
 
@@ -171,7 +179,7 @@
 
     move-object v5, p4
 
-    invoke-interface/range {v0 .. v5}, Ll7/d;->a(ZLjava/lang/String;Ljava/lang/Object;ILjava/lang/String;)V
+    invoke-interface/range {v0 .. v5}, Ll7/b;->a(ZLjava/lang/String;Ljava/lang/Object;ILjava/lang/String;)V
 
     :cond_0
     return-void
@@ -195,13 +203,15 @@
     const-string v2, "Starting download : "
 
     .line 1
-    invoke-static {v2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    iget-object v3, p0, Lm7/a;->a:Ll7/b;
+    iget-object v3, p0, Lm7/a;->g:Lj3/h70;
 
-    iget-object v3, v3, Ll7/b;->a:Ljava/lang/String;
+    iget-object v3, v3, Lj3/h70;->b:Ljava/lang/Object;
+
+    check-cast v3, Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -214,7 +224,7 @@
     const/4 v4, 0x0
 
     .line 2
-    invoke-static {v3, v2, v4, v4}, Lce/z;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v2, v4, v4}, Lie/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     const/16 v2, 0xa
 
@@ -275,11 +285,17 @@
 
     .line 10
     :goto_0
-    iget-object v8, p0, Lm7/a;->a:Ll7/b;
+    iget-object v8, p0, Lm7/a;->g:Lj3/h70;
 
-    iget-object v8, v8, Ll7/b;->d:Ljava/lang/String;
+    iget-object v8, v8, Lj3/h70;->d:Ljava/lang/Object;
 
-    if-eqz v8, :cond_1
+    move-object v9, v8
+
+    check-cast v9, Ljava/lang/String;
+
+    if-eqz v9, :cond_1
+
+    check-cast v8, Ljava/lang/String;
 
     invoke-virtual {v8}, Ljava/lang/String;->isEmpty()Z
 
@@ -290,9 +306,11 @@
     const-string v8, "If-None-Match"
 
     .line 11
-    iget-object v9, p0, Lm7/a;->a:Ll7/b;
+    iget-object v9, p0, Lm7/a;->g:Lj3/h70;
 
-    iget-object v9, v9, Ll7/b;->d:Ljava/lang/String;
+    iget-object v9, v9, Lj3/h70;->d:Ljava/lang/Object;
+
+    check-cast v9, Ljava/lang/String;
 
     invoke-virtual {v7, v8, v9}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -471,22 +489,24 @@
     :try_start_6
     invoke-virtual {p0, v6, v4, v8, v2}, Lm7/a;->f(ZLjava/lang/Object;ILjava/lang/String;)V
 
-    new-array v9, v5, [Lz9/a;
+    new-array v9, v5, [Ly9/a;
 
     .line 31
-    iget-object v10, p0, Lm7/a;->a:Ll7/b;
+    iget-object v10, p0, Lm7/a;->g:Lj3/h70;
 
-    iget-object v10, v10, Ll7/b;->a:Ljava/lang/String;
+    iget-object v10, v10, Lj3/h70;->b:Ljava/lang/Object;
+
+    check-cast v10, Ljava/lang/String;
 
     .line 32
-    invoke-static {v1, v10}, Lz9/b;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+    invoke-static {v1, v10}, Ly9/b;->b(Ljava/lang/String;Ljava/lang/String;)Ly9/a;
 
     move-result-object v10
 
     aput-object v10, v9, v6
 
     .line 33
-    invoke-static {v3, v0, v4, v9}, Lce/z;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v0, v4, v9}, Lie/a;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
     :try_end_6
     .catch Ljava/lang/InterruptedException; {:try_start_6 .. :try_end_6} :catch_9
     .catch Ljava/net/MalformedURLException; {:try_start_6 .. :try_end_6} :catch_8
@@ -543,22 +563,24 @@
 
     const-string v10, "Exception in download"
 
-    new-array v11, v5, [Lz9/a;
+    new-array v11, v5, [Ly9/a;
 
     .line 37
-    iget-object v12, p0, Lm7/a;->a:Ll7/b;
+    iget-object v12, p0, Lm7/a;->g:Lj3/h70;
 
-    iget-object v12, v12, Ll7/b;->a:Ljava/lang/String;
+    iget-object v12, v12, Lj3/h70;->b:Ljava/lang/Object;
+
+    check-cast v12, Ljava/lang/String;
 
     .line 38
-    invoke-static {v1, v12}, Lz9/b;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+    invoke-static {v1, v12}, Ly9/b;->b(Ljava/lang/String;Ljava/lang/String;)Ly9/a;
 
     move-result-object v12
 
     aput-object v12, v11, v6
 
     .line 39
-    invoke-static {v3, v10, v9, v11}, Lce/z;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v10, v9, v11}, Lie/a;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_1
 
@@ -582,22 +604,24 @@
     :try_start_a
     invoke-virtual {p0, v6, v4, v8, v2}, Lm7/a;->f(ZLjava/lang/Object;ILjava/lang/String;)V
 
-    new-array v9, v5, [Lz9/a;
+    new-array v9, v5, [Ly9/a;
 
     .line 42
-    iget-object v10, p0, Lm7/a;->a:Ll7/b;
+    iget-object v10, p0, Lm7/a;->g:Lj3/h70;
 
-    iget-object v10, v10, Ll7/b;->a:Ljava/lang/String;
+    iget-object v10, v10, Lj3/h70;->b:Ljava/lang/Object;
+
+    check-cast v10, Ljava/lang/String;
 
     .line 43
-    invoke-static {v1, v10}, Lz9/b;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+    invoke-static {v1, v10}, Ly9/b;->b(Ljava/lang/String;Ljava/lang/String;)Ly9/a;
 
     move-result-object v10
 
     aput-object v10, v9, v6
 
     .line 44
-    invoke-static {v3, v0, v4, v9}, Lce/z;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v0, v4, v9}, Lie/a;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     .line 45
     :cond_5
@@ -636,22 +660,24 @@
     :try_start_c
     invoke-virtual {p0, v6, v4, v8, v2}, Lm7/a;->f(ZLjava/lang/Object;ILjava/lang/String;)V
 
-    new-array v10, v5, [Lz9/a;
+    new-array v10, v5, [Ly9/a;
 
     .line 48
-    iget-object v11, p0, Lm7/a;->a:Ll7/b;
+    iget-object v11, p0, Lm7/a;->g:Lj3/h70;
 
-    iget-object v11, v11, Ll7/b;->a:Ljava/lang/String;
+    iget-object v11, v11, Lj3/h70;->b:Ljava/lang/Object;
+
+    check-cast v11, Ljava/lang/String;
 
     .line 49
-    invoke-static {v1, v11}, Lz9/b;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+    invoke-static {v1, v11}, Ly9/b;->b(Ljava/lang/String;Ljava/lang/String;)Ly9/a;
 
     move-result-object v11
 
     aput-object v11, v10, v6
 
     .line 50
-    invoke-static {v3, v0, v4, v10}, Lce/z;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v0, v4, v10}, Lie/a;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     .line 51
     :cond_6
@@ -716,14 +742,16 @@
     :goto_5
     invoke-virtual {p0, v6, v0, v8, v2}, Lm7/a;->f(ZLjava/lang/Object;ILjava/lang/String;)V
 
-    new-array v2, v5, [Lz9/a;
+    new-array v2, v5, [Ly9/a;
 
     .line 55
-    iget-object v4, p0, Lm7/a;->a:Ll7/b;
+    iget-object v4, p0, Lm7/a;->g:Lj3/h70;
 
-    iget-object v4, v4, Ll7/b;->a:Ljava/lang/String;
+    iget-object v4, v4, Lj3/h70;->b:Ljava/lang/Object;
 
-    invoke-static {v1, v4}, Lz9/b;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+    check-cast v4, Ljava/lang/String;
+
+    invoke-static {v1, v4}, Ly9/b;->b(Ljava/lang/String;Ljava/lang/String;)Ly9/a;
 
     move-result-object v1
 
@@ -731,7 +759,7 @@
 
     const-string v1, "Unknown Exception"
 
-    invoke-static {v3, v1, v0, v2}, Lce/z;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v1, v0, v2}, Lie/a;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     goto :goto_a
 
@@ -744,14 +772,16 @@
     :goto_6
     invoke-virtual {p0, v6, v0, v8, v2}, Lm7/a;->f(ZLjava/lang/Object;ILjava/lang/String;)V
 
-    new-array v2, v5, [Lz9/a;
+    new-array v2, v5, [Ly9/a;
 
     .line 57
-    iget-object v4, p0, Lm7/a;->a:Ll7/b;
+    iget-object v4, p0, Lm7/a;->g:Lj3/h70;
 
-    iget-object v4, v4, Ll7/b;->a:Ljava/lang/String;
+    iget-object v4, v4, Lj3/h70;->b:Ljava/lang/Object;
 
-    invoke-static {v1, v4}, Lz9/b;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+    check-cast v4, Ljava/lang/String;
+
+    invoke-static {v1, v4}, Ly9/b;->b(Ljava/lang/String;Ljava/lang/String;)Ly9/a;
 
     move-result-object v1
 
@@ -759,7 +789,7 @@
 
     const-string v1, "GeneralSecurityException"
 
-    invoke-static {v3, v1, v0, v2}, Lce/z;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v1, v0, v2}, Lie/a;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     goto :goto_a
 
@@ -772,14 +802,16 @@
     :goto_7
     invoke-virtual {p0, v6, v0, v8, v2}, Lm7/a;->f(ZLjava/lang/Object;ILjava/lang/String;)V
 
-    new-array v2, v5, [Lz9/a;
+    new-array v2, v5, [Ly9/a;
 
     .line 59
-    iget-object v4, p0, Lm7/a;->a:Ll7/b;
+    iget-object v4, p0, Lm7/a;->g:Lj3/h70;
 
-    iget-object v4, v4, Ll7/b;->a:Ljava/lang/String;
+    iget-object v4, v4, Lj3/h70;->b:Ljava/lang/Object;
 
-    invoke-static {v1, v4}, Lz9/b;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+    check-cast v4, Ljava/lang/String;
+
+    invoke-static {v1, v4}, Ly9/b;->b(Ljava/lang/String;Ljava/lang/String;)Ly9/a;
 
     move-result-object v1
 
@@ -787,7 +819,7 @@
 
     const-string v1, "Exception IO"
 
-    invoke-static {v3, v1, v0, v2}, Lce/z;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v1, v0, v2}, Lie/a;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     goto :goto_a
 
@@ -800,14 +832,16 @@
     :goto_8
     invoke-virtual {p0, v6, v0, v8, v2}, Lm7/a;->f(ZLjava/lang/Object;ILjava/lang/String;)V
 
-    new-array v2, v5, [Lz9/a;
+    new-array v2, v5, [Ly9/a;
 
     .line 61
-    iget-object v4, p0, Lm7/a;->a:Ll7/b;
+    iget-object v4, p0, Lm7/a;->g:Lj3/h70;
 
-    iget-object v4, v4, Ll7/b;->a:Ljava/lang/String;
+    iget-object v4, v4, Lj3/h70;->b:Ljava/lang/Object;
 
-    invoke-static {v1, v4}, Lz9/b;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+    check-cast v4, Ljava/lang/String;
+
+    invoke-static {v1, v4}, Ly9/b;->b(Ljava/lang/String;Ljava/lang/String;)Ly9/a;
 
     move-result-object v1
 
@@ -815,7 +849,7 @@
 
     const-string v1, "MalformedURLException"
 
-    invoke-static {v3, v1, v0, v2}, Lce/z;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v1, v0, v2}, Lie/a;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     goto :goto_a
 
@@ -828,14 +862,16 @@
     :goto_9
     invoke-virtual {p0, v6, v0, v8, v2}, Lm7/a;->f(ZLjava/lang/Object;ILjava/lang/String;)V
 
-    new-array v2, v5, [Lz9/a;
+    new-array v2, v5, [Ly9/a;
 
     .line 63
-    iget-object v4, p0, Lm7/a;->a:Ll7/b;
+    iget-object v4, p0, Lm7/a;->g:Lj3/h70;
 
-    iget-object v4, v4, Ll7/b;->a:Ljava/lang/String;
+    iget-object v4, v4, Lj3/h70;->b:Ljava/lang/Object;
 
-    invoke-static {v1, v4}, Lz9/b;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+    check-cast v4, Ljava/lang/String;
+
+    invoke-static {v1, v4}, Ly9/b;->b(Ljava/lang/String;Ljava/lang/String;)Ly9/a;
 
     move-result-object v1
 
@@ -843,7 +879,7 @@
 
     const-string v1, "Exception Interrupted"
 
-    invoke-static {v3, v1, v0, v2}, Lce/z;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v1, v0, v2}, Lie/a;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     .line 64
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;

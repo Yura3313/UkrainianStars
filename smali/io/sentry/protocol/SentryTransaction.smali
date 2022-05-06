@@ -41,7 +41,7 @@
 
 # direct methods
 .method public constructor <init>(Lio/sentry/SentryTracer;)V
-    .locals 4
+    .locals 11
 
     .line 1
     invoke-virtual {p1}, Lio/sentry/SentryTracer;->getEventId()Lio/sentry/protocol/SentryId;
@@ -82,7 +82,7 @@
     iput-object v0, p0, Lio/sentry/protocol/SentryTransaction;->startTimestamp:Ljava/util/Date;
 
     .line 7
-    invoke-static {}, Lio/sentry/DateUtils;->getCurrentDateTime()Ljava/util/Date;
+    invoke-virtual {p1}, Lio/sentry/SentryTracer;->getTimestamp()Ljava/util/Date;
 
     move-result-object v0
 
@@ -104,12 +104,13 @@
 
     move-result-object v0
 
+    :cond_0
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_1
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -118,6 +119,19 @@
     check-cast v1, Lio/sentry/Span;
 
     .line 10
+    sget-object v2, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    invoke-virtual {v1}, Lio/sentry/Span;->isSampled()Ljava/lang/Boolean;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/Boolean;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    .line 11
     iget-object v2, p0, Lio/sentry/protocol/SentryTransaction;->spans:Ljava/util/List;
 
     new-instance v3, Lio/sentry/protocol/SentrySpan;
@@ -128,13 +142,13 @@
 
     goto :goto_0
 
-    .line 11
-    :cond_0
+    .line 12
+    :cond_1
     invoke-virtual {p0}, Lio/sentry/SentryBaseEvent;->getContexts()Lio/sentry/protocol/Contexts;
 
     move-result-object v0
 
-    .line 12
+    .line 13
     invoke-virtual {p1}, Lio/sentry/SentryTracer;->getContexts()Lio/sentry/protocol/Contexts;
 
     move-result-object v1
@@ -152,7 +166,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_1
+    if-eqz v2, :cond_2
 
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -160,7 +174,7 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 13
+    .line 14
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
@@ -175,21 +189,153 @@
 
     goto :goto_1
 
-    .line 14
-    :cond_1
+    .line 15
+    :cond_2
+    invoke-virtual {p1}, Lio/sentry/SentryTracer;->getRequest()Lio/sentry/protocol/Request;
+
+    move-result-object v1
+
+    invoke-virtual {p0, v1}, Lio/sentry/SentryBaseEvent;->setRequest(Lio/sentry/protocol/Request;)V
+
+    .line 16
     invoke-virtual {p1}, Lio/sentry/SentryTracer;->getSpanContext()Lio/sentry/SpanContext;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lio/sentry/protocol/Contexts;->setTrace(Lio/sentry/SpanContext;)V
+    .line 17
+    new-instance v10, Lio/sentry/SpanContext;
 
-    .line 15
-    invoke-virtual {p1}, Lio/sentry/SentryTracer;->getRequest()Lio/sentry/protocol/Request;
+    .line 18
+    invoke-virtual {v1}, Lio/sentry/SpanContext;->getTraceId()Lio/sentry/protocol/SentryId;
+
+    move-result-object v3
+
+    .line 19
+    invoke-virtual {v1}, Lio/sentry/SpanContext;->getSpanId()Lio/sentry/SpanId;
+
+    move-result-object v4
+
+    .line 20
+    invoke-virtual {v1}, Lio/sentry/SpanContext;->getParentSpanId()Lio/sentry/SpanId;
+
+    move-result-object v5
+
+    .line 21
+    invoke-virtual {v1}, Lio/sentry/SpanContext;->getOperation()Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 22
+    invoke-virtual {v1}, Lio/sentry/SpanContext;->getDescription()Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 23
+    invoke-virtual {v1}, Lio/sentry/SpanContext;->getSampled()Ljava/lang/Boolean;
+
+    move-result-object v8
+
+    .line 24
+    invoke-virtual {v1}, Lio/sentry/SpanContext;->getStatus()Lio/sentry/SpanStatus;
+
+    move-result-object v9
+
+    move-object v2, v10
+
+    invoke-direct/range {v2 .. v9}, Lio/sentry/SpanContext;-><init>(Lio/sentry/protocol/SentryId;Lio/sentry/SpanId;Lio/sentry/SpanId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lio/sentry/SpanStatus;)V
+
+    .line 25
+    invoke-virtual {v0, v10}, Lio/sentry/protocol/Contexts;->setTrace(Lio/sentry/SpanContext;)V
+
+    .line 26
+    invoke-virtual {v1}, Lio/sentry/SpanContext;->getTags()Ljava/util/Map;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_2
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/Map$Entry;
+
+    .line 27
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/String;
+
+    invoke-virtual {p0, v2, v1}, Lio/sentry/SentryBaseEvent;->setTag(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_2
+
+    .line 28
+    :cond_3
+    invoke-virtual {p1}, Lio/sentry/SentryTracer;->getData()Ljava/util/Map;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Lio/sentry/SentryBaseEvent;->setRequest(Lio/sentry/protocol/Request;)V
+    if-eqz p1, :cond_4
 
+    .line 29
+    invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :goto_3
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/Map$Entry;
+
+    .line 30
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/String;
+
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v1, v0}, Lio/sentry/SentryBaseEvent;->setExtra(Ljava/lang/String;Ljava/lang/Object;)V
+
+    goto :goto_3
+
+    :cond_4
     return-void
 .end method
 

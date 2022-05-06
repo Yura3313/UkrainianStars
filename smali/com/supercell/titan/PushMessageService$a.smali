@@ -3,7 +3,7 @@
 .source "PushMessageService.java"
 
 # interfaces
-.implements La4/e;
+.implements Lb4/e;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La4/e<",
+        "Lb4/e<",
         "Lw5/a;",
         ">;"
     }

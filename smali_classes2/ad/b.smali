@@ -1,98 +1,256 @@
 .class public final Lad/b;
-.super Lle/j;
-.source "IngameAddFriendsFragment.kt"
+.super Ljava/lang/Object;
+.source "IngameFriendRequestsFragment.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Lvd/j1;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;",
-        "Landroid/graphics/Bitmap;",
-        "Lbe/n;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final a:I
 
-
-# static fields
-.field public static final a:Lad/b;
+.field public final b:Lqc/i;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lqc/i;)V
+    .locals 0
 
-    new-instance v0, Lad/b;
+    if-eqz p1, :cond_0
 
-    invoke-direct {v0}, Lad/b;-><init>()V
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lad/b;->a:Lad/b;
+    iput-object p1, p0, Lad/b;->b:Lqc/i;
 
-    return-void
-.end method
+    .line 2
+    sget p1, Lcom/supercell/id/R$layout;->fragment_ingame_friend_requests_item_friend_request_sent:I
 
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    iput p1, p0, Lad/b;->a:I
 
     return-void
+
+    :cond_0
+    const-string p1, "friend"
+
+    .line 3
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    check-cast p1, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
-
-    check-cast p2, Landroid/graphics/Bitmap;
-
-    const/4 v0, 0x0
+.method public a(Lvd/j1;)Z
+    .locals 3
 
     if-eqz p1, :cond_2
 
-    if-eqz p2, :cond_1
+    .line 1
+    instance-of v0, p1, Lad/b;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
 
     .line 2
-    sget v0, Lcom/supercell/id/R$id;->qr_code:I
+    :cond_0
+    iget-object v0, p0, Lad/b;->b:Lqc/i;
 
-    invoke-virtual {p1, v0}, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;->o1(I)Landroid/view/View;
+    .line 3
+    iget-object v0, v0, Lqc/i;->b:Ljava/lang/String;
 
-    move-result-object p1
+    .line 4
+    check-cast p1, Lad/b;
 
-    check-cast p1, Landroid/widget/ImageView;
+    .line 5
+    iget-object v2, p1, Lad/b;->b:Lqc/i;
+
+    .line 6
+    iget-object v2, v2, Lqc/i;->b:Ljava/lang/String;
+
+    .line 7
+    invoke-static {v0, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 8
+    iget-object v0, p0, Lad/b;->b:Lqc/i;
+
+    .line 9
+    iget-object v0, v0, Lqc/i;->c:Lcom/supercell/id/model/ProfileImage;
+
+    .line 10
+    iget-object p1, p1, Lad/b;->b:Lqc/i;
+
+    .line 11
+    iget-object p1, p1, Lqc/i;->c:Lcom/supercell/id/model/ProfileImage;
+
+    .line 12
+    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    const/4 v1, 0x1
+
+    :cond_1
+    return v1
+
+    :cond_2
+    const-string p1, "other"
+
+    .line 13
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public c()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lad/b;->a:I
+
+    return v0
+.end method
+
+.method public d(Lvd/j1;)Z
+    .locals 1
+
+    if-eqz p1, :cond_1
+
+    .line 1
+    instance-of v0, p1, Lad/b;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lad/b;
+
+    .line 2
+    iget-object p1, p1, Lad/b;->b:Lqc/i;
+
+    .line 3
+    iget-object p1, p1, Lqc/i;->a:Lqc/d0;
+
+    .line 4
+    iget-object v0, p0, Lad/b;->b:Lqc/i;
+
+    .line 5
+    iget-object v0, v0, Lqc/i;->a:Lqc/d0;
+
+    .line 6
+    invoke-static {p1, v0}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+    const/4 p1, 0x1
 
-    .line 3
+    goto :goto_0
+
     :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    const/4 p1, 0x0
 
-    return-object p1
+    :goto_0
+    return p1
 
     :cond_1
-    const-string p1, "it"
+    const-string p1, "other"
 
-    .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    .line 7
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    throw v0
+    const/4 p1, 0x0
 
-    :cond_2
-    const-string p1, "$receiver"
+    throw p1
+.end method
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+.method public equals(Ljava/lang/Object;)Z
+    .locals 1
 
-    throw v0
+    if-eq p0, p1, :cond_1
+
+    instance-of v0, p1, Lad/b;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lad/b;
+
+    iget-object v0, p0, Lad/b;->b:Lqc/i;
+
+    iget-object p1, p1, Lad/b;->b:Lqc/i;
+
+    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public hashCode()I
+    .locals 1
+
+    iget-object v0, p0, Lad/b;->b:Lqc/i;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lqc/i;->hashCode()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    const-string v0, "FriendRequestSentRow(friend="
+
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lad/b;->b:Lqc/i;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ")"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

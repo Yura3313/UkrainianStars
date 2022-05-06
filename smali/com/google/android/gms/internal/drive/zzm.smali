@@ -15,23 +15,23 @@
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/drive/DriveId;
+.field public final g:Lcom/google/android/gms/drive/DriveId;
 
-.field public final b:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+.field public final h:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
-.field public final h:Lcom/google/android/gms/drive/Contents;
+.field public final i:Lcom/google/android/gms/drive/Contents;
 
-.field public final i:Z
+.field public final j:Z
 
-.field public final j:Ljava/lang/String;
-
-.field public final k:I
+.field public final k:Ljava/lang/String;
 
 .field public final l:I
 
-.field public final m:Z
+.field public final m:I
 
 .field public final n:Z
+
+.field public final o:Z
 
 
 # direct methods
@@ -39,9 +39,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lq3/k4;
+    new-instance v0, Lq3/h4;
 
-    invoke-direct {v0}, Lq3/k4;-><init>()V
+    invoke-direct {v0}, Lq3/h4;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/drive/zzm;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -55,31 +55,31 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzm;->a:Lcom/google/android/gms/drive/DriveId;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzm;->g:Lcom/google/android/gms/drive/DriveId;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/drive/zzm;->b:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+    iput-object p2, p0, Lcom/google/android/gms/internal/drive/zzm;->h:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/drive/zzm;->h:Lcom/google/android/gms/drive/Contents;
+    iput-object p3, p0, Lcom/google/android/gms/internal/drive/zzm;->i:Lcom/google/android/gms/drive/Contents;
 
     .line 5
-    iput-boolean p4, p0, Lcom/google/android/gms/internal/drive/zzm;->i:Z
+    iput-boolean p4, p0, Lcom/google/android/gms/internal/drive/zzm;->j:Z
 
     .line 6
-    iput-object p5, p0, Lcom/google/android/gms/internal/drive/zzm;->j:Ljava/lang/String;
+    iput-object p5, p0, Lcom/google/android/gms/internal/drive/zzm;->k:Ljava/lang/String;
 
     .line 7
-    iput p6, p0, Lcom/google/android/gms/internal/drive/zzm;->k:I
+    iput p6, p0, Lcom/google/android/gms/internal/drive/zzm;->l:I
 
     .line 8
-    iput p7, p0, Lcom/google/android/gms/internal/drive/zzm;->l:I
+    iput p7, p0, Lcom/google/android/gms/internal/drive/zzm;->m:I
 
     .line 9
-    iput-boolean p8, p0, Lcom/google/android/gms/internal/drive/zzm;->m:Z
+    iput-boolean p8, p0, Lcom/google/android/gms/internal/drive/zzm;->n:Z
 
     .line 10
-    iput-boolean p9, p0, Lcom/google/android/gms/internal/drive/zzm;->n:Z
+    iput-boolean p9, p0, Lcom/google/android/gms/internal/drive/zzm;->o:Z
 
     return-void
 .end method
@@ -99,7 +99,7 @@
     const/4 v1, 0x2
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzm;->a:Lcom/google/android/gms/drive/DriveId;
+    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzm;->g:Lcom/google/android/gms/drive/DriveId;
 
     const/4 v3, 0x0
 
@@ -108,12 +108,12 @@
     const/4 v1, 0x3
 
     .line 3
-    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzm;->b:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzm;->h:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
     invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzm;->h:Lcom/google/android/gms/drive/Contents;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzm;->i:Lcom/google/android/gms/drive/Contents;
 
     const/4 v2, 0x4
 
@@ -122,7 +122,7 @@
     const/4 p2, 0x5
 
     .line 5
-    iget-boolean v1, p0, Lcom/google/android/gms/internal/drive/zzm;->i:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/internal/drive/zzm;->j:Z
 
     .line 6
     invoke-static {p1, p2, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -133,14 +133,14 @@
     const/4 p2, 0x6
 
     .line 8
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzm;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzm;->k:Ljava/lang/String;
 
     invoke-static {p1, p2, v1, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     const/4 p2, 0x7
 
     .line 9
-    iget v1, p0, Lcom/google/android/gms/internal/drive/zzm;->k:I
+    iget v1, p0, Lcom/google/android/gms/internal/drive/zzm;->l:I
 
     .line 10
     invoke-static {p1, p2, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -151,7 +151,7 @@
     const/16 p2, 0x8
 
     .line 12
-    iget v1, p0, Lcom/google/android/gms/internal/drive/zzm;->l:I
+    iget v1, p0, Lcom/google/android/gms/internal/drive/zzm;->m:I
 
     .line 13
     invoke-static {p1, p2, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -162,7 +162,7 @@
     const/16 p2, 0x9
 
     .line 15
-    iget-boolean v1, p0, Lcom/google/android/gms/internal/drive/zzm;->m:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/internal/drive/zzm;->n:Z
 
     .line 16
     invoke-static {p1, p2, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -173,7 +173,7 @@
     const/16 p2, 0xa
 
     .line 18
-    iget-boolean v1, p0, Lcom/google/android/gms/internal/drive/zzm;->n:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/internal/drive/zzm;->o:Z
 
     .line 19
     invoke-static {p1, p2, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V

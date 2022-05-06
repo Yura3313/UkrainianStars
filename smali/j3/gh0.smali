@@ -2,53 +2,30 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Ljava/lang/Cloneable;
-
 
 # instance fields
-.field public a:Z
+.field public final a:Landroid/content/Context;
 
-.field public b:Z
+.field public final b:Lj3/ua;
+
+.field public final c:Lj3/ra;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Landroid/content/Context;Lj3/ua;Lj3/ra;Lj3/u4;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-void
-.end method
-
-
-# virtual methods
-.method public final clone()Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/CloneNotSupportedException;
-        }
-    .end annotation
-
-    .line 1
-    :try_start_0
-    invoke-super {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lj3/gh0;
-    :try_end_0
-    .catch Ljava/lang/CloneNotSupportedException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object v0
-
     .line 2
-    :catch_0
-    new-instance v0, Ljava/lang/AssertionError;
+    iput-object p1, p0, Lj3/gh0;->a:Landroid/content/Context;
 
-    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
+    .line 3
+    iput-object p2, p0, Lj3/gh0;->b:Lj3/ua;
 
-    throw v0
+    .line 4
+    iput-object p3, p0, Lj3/gh0;->c:Lj3/ra;
+
+    return-void
 .end method

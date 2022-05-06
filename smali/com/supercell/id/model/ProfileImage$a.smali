@@ -57,13 +57,13 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    sget-object p1, Lcom/supercell/id/model/ProfileImage$Empty;->a:Lcom/supercell/id/model/ProfileImage$Empty;
+    sget-object p1, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
 
     goto :goto_1
 
@@ -75,7 +75,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -97,7 +97,7 @@
     goto :goto_1
 
     :cond_1
-    invoke-static {}, Ly4/x;->j()V
+    invoke-static {}, Ls3/b;->g()V
 
     throw v0
 
@@ -109,7 +109,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -131,7 +131,7 @@
     return-object p1
 
     :cond_3
-    invoke-static {}, Ly4/x;->j()V
+    invoke-static {}, Ls3/b;->g()V
 
     throw v0
 
@@ -141,7 +141,7 @@
 
     const-string v0, "Could not create IdImage from type "
 
-    invoke-static {v0, v1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -153,7 +153,7 @@
     const-string p1, "parcel"
 
     .line 6
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     goto :goto_3
 

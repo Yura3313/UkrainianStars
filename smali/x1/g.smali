@@ -3,7 +3,7 @@
 .source "com.google.android.gms:play-services-auth@@19.0.0"
 
 # interfaces
-.implements Lw1/b;
+.implements Lw1/a;
 
 
 # direct methods

@@ -1,237 +1,269 @@
 .class public final Lcom/google/android/play/core/assetpacks/t;
-.super Ljava/lang/Object;
+.super Lz4/c;
 
-# interfaces
-.implements Ly4/m0;
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lz4/c<",
+        "Lcom/google/android/play/core/assetpacks/AssetPackState;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final g:Lcom/google/android/play/core/assetpacks/c1;
 
-.field public final b:Ly4/m0;
+.field public final h:Lcom/google/android/play/core/assetpacks/p0;
 
-.field public final c:Ly4/m0;
+.field public final i:Ly4/l0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ly4/l0<",
+            "Lcom/google/android/play/core/assetpacks/t2;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final d:Ly4/m0;
+.field public final j:Lcom/google/android/play/core/assetpacks/j0;
 
-.field public final e:Ly4/m0;
+.field public final k:Lcom/google/android/play/core/assetpacks/r0;
 
-.field public final f:Ly4/m0;
+.field public final l:Ly4/l0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ly4/l0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final g:Ly4/m0;
+.field public final m:Ly4/l0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ly4/l0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final h:Ly4/m0;
-
-.field public final i:Ly4/m0;
+.field public final n:Landroid/os/Handler;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ly4/m0;Ly4/m0;Ly4/m0;Ly4/m0;Ly4/m0;Ly4/m0;Ly4/m0;Ly4/m0;I)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;Lcom/google/android/play/core/assetpacks/c1;Lcom/google/android/play/core/assetpacks/p0;Ly4/l0;Lcom/google/android/play/core/assetpacks/r0;Lcom/google/android/play/core/assetpacks/j0;Ly4/l0;Ly4/l0;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "Lcom/google/android/play/core/assetpacks/c1;",
+            "Lcom/google/android/play/core/assetpacks/p0;",
+            "Ly4/l0<",
+            "Lcom/google/android/play/core/assetpacks/t2;",
+            ">;",
+            "Lcom/google/android/play/core/assetpacks/r0;",
+            "Lcom/google/android/play/core/assetpacks/j0;",
+            "Ly4/l0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;",
+            "Ly4/l0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;)V"
+        }
+    .end annotation
 
-    .line 1
-    iput p9, p0, Lcom/google/android/play/core/assetpacks/t;->a:I
+    new-instance v0, Ly4/b;
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/t;->b:Ly4/m0;
+    const-string v1, "AssetPackServiceListenerRegistry"
 
-    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/t;->c:Ly4/m0;
+    invoke-direct {v0, v1}, Ly4/b;-><init>(Ljava/lang/String;)V
 
-    iput-object p3, p0, Lcom/google/android/play/core/assetpacks/t;->d:Ly4/m0;
+    new-instance v1, Landroid/content/IntentFilter;
 
-    iput-object p4, p0, Lcom/google/android/play/core/assetpacks/t;->e:Ly4/m0;
+    const-string v2, "com.google.android.play.core.assetpacks.receiver.ACTION_SESSION_UPDATE"
 
-    iput-object p5, p0, Lcom/google/android/play/core/assetpacks/t;->f:Ly4/m0;
+    invoke-direct {v1, v2}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    iput-object p6, p0, Lcom/google/android/play/core/assetpacks/t;->g:Ly4/m0;
+    invoke-direct {p0, v0, v1, p1}, Lz4/c;-><init>(Ly4/b;Landroid/content/IntentFilter;Landroid/content/Context;)V
 
-    iput-object p7, p0, Lcom/google/android/play/core/assetpacks/t;->h:Ly4/m0;
+    new-instance p1, Landroid/os/Handler;
 
-    iput-object p8, p0, Lcom/google/android/play/core/assetpacks/t;->i:Ly4/m0;
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-result-object v0
+
+    invoke-direct {p1, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/t;->n:Landroid/os/Handler;
+
+    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/t;->g:Lcom/google/android/play/core/assetpacks/c1;
+
+    iput-object p3, p0, Lcom/google/android/play/core/assetpacks/t;->h:Lcom/google/android/play/core/assetpacks/p0;
+
+    iput-object p4, p0, Lcom/google/android/play/core/assetpacks/t;->i:Ly4/l0;
+
+    iput-object p5, p0, Lcom/google/android/play/core/assetpacks/t;->k:Lcom/google/android/play/core/assetpacks/r0;
+
+    iput-object p6, p0, Lcom/google/android/play/core/assetpacks/t;->j:Lcom/google/android/play/core/assetpacks/j0;
+
+    iput-object p7, p0, Lcom/google/android/play/core/assetpacks/t;->l:Ly4/l0;
+
+    iput-object p8, p0, Lcom/google/android/play/core/assetpacks/t;->m:Ly4/l0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final bridge synthetic a()Ljava/lang/Object;
-    .locals 12
+.method public final a(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 4
 
-    iget v0, p0, Lcom/google/android/play/core/assetpacks/t;->a:I
+    const-string p1, "com.google.android.play.core.assetpacks.receiver.EXTRA_SESSION_STATE"
 
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {p2, p1}, Landroid/content/Intent;->getBundleExtra(Ljava/lang/String;)Landroid/os/Bundle;
+
+    move-result-object p1
+
+    const/4 p2, 0x6
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_3
+
+    const-string v1, "pack_names"
+
+    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getStringArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_2
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    const/4 v3, 0x1
+
+    if-eq v2, v3, :cond_0
 
     goto :goto_0
 
+    :cond_0
+    invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Ljava/lang/String;
+
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/t;->k:Lcom/google/android/play/core/assetpacks/r0;
+
+    sget-object v2, Lcom/google/android/play/core/assetpacks/v;->a:Lcom/google/android/play/core/assetpacks/w;
+
+    invoke-static {p1, p2, v1, v2}, Lcom/google/android/play/core/assetpacks/AssetPackState;->a(Landroid/os/Bundle;Ljava/lang/String;Lcom/google/android/play/core/assetpacks/r0;Lcom/google/android/play/core/assetpacks/w;)Lcom/google/android/play/core/assetpacks/AssetPackState;
+
+    move-result-object p2
+
+    iget-object v1, p0, Lz4/c;->a:Ly4/b;
+
+    new-array v2, v3, [Ljava/lang/Object;
+
+    aput-object p2, v2, v0
+
+    const/4 v0, 0x3
+
+    const-string v3, "ListenerRegistryBroadcastReceiver.onReceive: %s"
+
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/t;->b:Ly4/m0;
+    invoke-virtual {v1, v0, v3, v2}, Ly4/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
-    check-cast v0, Lcom/google/android/play/core/assetpacks/p2;
-
-    invoke-virtual {v0}, Lcom/google/android/play/core/assetpacks/p2;->b()Landroid/content/Context;
-
-    move-result-object v2
-
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/t;->c:Ly4/m0;
-
-    invoke-interface {v0}, Ly4/m0;->a()Ljava/lang/Object;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/t;->d:Ly4/m0;
-
-    invoke-interface {v1}, Ly4/m0;->a()Ljava/lang/Object;
-
-    move-result-object v1
-
-    iget-object v3, p0, Lcom/google/android/play/core/assetpacks/t;->e:Ly4/m0;
-
-    invoke-static {v3}, Ly4/l0;->b(Ly4/m0;)Ly4/j0;
-
-    move-result-object v5
-
-    iget-object v3, p0, Lcom/google/android/play/core/assetpacks/t;->f:Ly4/m0;
-
-    invoke-interface {v3}, Ly4/m0;->a()Ljava/lang/Object;
-
-    move-result-object v3
-
-    iget-object v4, p0, Lcom/google/android/play/core/assetpacks/t;->g:Ly4/m0;
-
-    invoke-interface {v4}, Ly4/m0;->a()Ljava/lang/Object;
-
-    move-result-object v4
-
-    iget-object v6, p0, Lcom/google/android/play/core/assetpacks/t;->h:Ly4/m0;
-
-    invoke-static {v6}, Ly4/l0;->b(Ly4/m0;)Ly4/j0;
-
-    move-result-object v8
-
-    iget-object v6, p0, Lcom/google/android/play/core/assetpacks/t;->i:Ly4/m0;
-
-    invoke-static {v6}, Ly4/l0;->b(Ly4/m0;)Ly4/j0;
-
-    move-result-object v9
-
-    new-instance v10, Lcom/google/android/play/core/assetpacks/s;
-
-    check-cast v0, Lcom/google/android/play/core/assetpacks/c1;
-
-    move-object v6, v1
-
-    check-cast v6, Lcom/google/android/play/core/assetpacks/p0;
-
-    move-object v7, v3
-
-    check-cast v7, Lcom/google/android/play/core/assetpacks/r0;
-
-    move-object v11, v4
-
-    check-cast v11, Lcom/google/android/play/core/assetpacks/j0;
-
-    move-object v1, v10
-
-    move-object v3, v0
-
-    move-object v4, v6
-
-    move-object v6, v7
-
-    move-object v7, v11
-
-    invoke-direct/range {v1 .. v9}, Lcom/google/android/play/core/assetpacks/s;-><init>(Landroid/content/Context;Lcom/google/android/play/core/assetpacks/c1;Lcom/google/android/play/core/assetpacks/p0;Ly4/j0;Lcom/google/android/play/core/assetpacks/r0;Lcom/google/android/play/core/assetpacks/j0;Ly4/j0;Ly4/j0;)V
-
-    return-object v10
+    const-string v0, "confirmation_intent"
 
     .line 2
-    :goto_0
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/t;->b:Ly4/m0;
-
-    invoke-interface {v0}, Ly4/m0;->a()Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/t;->c:Ly4/m0;
+    check-cast v0, Landroid/app/PendingIntent;
 
-    invoke-static {v1}, Ly4/l0;->b(Ly4/m0;)Ly4/j0;
+    if-eqz v0, :cond_1
 
-    move-result-object v4
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/t;->j:Lcom/google/android/play/core/assetpacks/j0;
 
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/t;->d:Ly4/m0;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-interface {v1}, Ly4/m0;->a()Ljava/lang/Object;
+    :cond_1
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/t;->m:Ly4/l0;
 
-    move-result-object v1
+    invoke-interface {v0}, Ly4/l0;->a()Ljava/lang/Object;
 
-    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/t;->e:Ly4/m0;
+    move-result-object v0
 
-    invoke-interface {v2}, Ly4/m0;->a()Ljava/lang/Object;
+    check-cast v0, Ljava/util/concurrent/Executor;
 
-    move-result-object v2
+    new-instance v1, Lcom/google/android/play/core/assetpacks/r;
 
-    move-object v6, v2
+    invoke-direct {v1, p0, p1, p2}, Lcom/google/android/play/core/assetpacks/r;-><init>(Lcom/google/android/play/core/assetpacks/t;Landroid/os/Bundle;Lcom/google/android/play/core/assetpacks/AssetPackState;)V
 
-    check-cast v6, Lc5/l;
+    invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
-    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/t;->f:Ly4/m0;
+    iget-object p2, p0, Lcom/google/android/play/core/assetpacks/t;->l:Ly4/l0;
 
-    invoke-interface {v2}, Ly4/m0;->a()Ljava/lang/Object;
+    invoke-interface {p2}, Ly4/l0;->a()Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object p2
 
-    iget-object v3, p0, Lcom/google/android/play/core/assetpacks/t;->g:Ly4/m0;
+    check-cast p2, Ljava/util/concurrent/Executor;
 
-    invoke-interface {v3}, Ly4/m0;->a()Ljava/lang/Object;
+    new-instance v0, Lcom/google/android/play/core/assetpacks/s;
 
-    move-result-object v3
+    invoke-direct {v0, p0, p1}, Lcom/google/android/play/core/assetpacks/s;-><init>(Lcom/google/android/play/core/assetpacks/t;Landroid/os/Bundle;)V
 
-    iget-object v5, p0, Lcom/google/android/play/core/assetpacks/t;->h:Ly4/m0;
+    invoke-interface {p2, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
-    invoke-interface {v5}, Ly4/m0;->a()Ljava/lang/Object;
+    return-void
 
-    move-result-object v5
+    :cond_2
+    :goto_0
+    iget-object p1, p0, Lz4/c;->a:Ly4/b;
 
-    iget-object v7, p0, Lcom/google/android/play/core/assetpacks/t;->i:Ly4/m0;
+    new-array v0, v0, [Ljava/lang/Object;
 
-    invoke-static {v7}, Ly4/l0;->b(Ly4/m0;)Ly4/j0;
+    const-string v1, "Corrupt bundle received from broadcast."
 
-    move-result-object v10
+    .line 3
+    invoke-virtual {p1, p2, v1, v0}, Ly4/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
-    new-instance v11, Lcom/google/android/play/core/assetpacks/i2;
+    return-void
 
-    check-cast v0, Lcom/google/android/play/core/assetpacks/x;
+    .line 4
+    :cond_3
+    iget-object p1, p0, Lz4/c;->a:Ly4/b;
 
-    check-cast v1, Lcom/google/android/play/core/assetpacks/s;
+    new-array v0, v0, [Ljava/lang/Object;
 
-    move-object v7, v2
+    const-string v1, "Empty bundle received from broadcast."
 
-    check-cast v7, Lcom/google/android/play/core/assetpacks/c1;
+    .line 5
+    invoke-virtual {p1, p2, v1, v0}, Ly4/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
-    move-object v8, v3
+    return-void
+.end method
 
-    check-cast v8, Lcom/google/android/play/core/assetpacks/r0;
+.method public final d(Lcom/google/android/play/core/assetpacks/AssetPackState;)V
+    .locals 2
 
-    move-object v9, v5
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/t;->n:Landroid/os/Handler;
 
-    check-cast v9, Lcom/google/android/play/core/assetpacks/j0;
+    new-instance v1, Lcom/google/android/play/core/assetpacks/q;
 
-    move-object v2, v11
+    invoke-direct {v1, p0, p1}, Lcom/google/android/play/core/assetpacks/q;-><init>(Lcom/google/android/play/core/assetpacks/t;Lcom/google/android/play/core/assetpacks/AssetPackState;)V
 
-    move-object v3, v0
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    move-object v5, v1
-
-    invoke-direct/range {v2 .. v10}, Lcom/google/android/play/core/assetpacks/i2;-><init>(Lcom/google/android/play/core/assetpacks/x;Ly4/j0;Lcom/google/android/play/core/assetpacks/s;Lc5/l;Lcom/google/android/play/core/assetpacks/c1;Lcom/google/android/play/core/assetpacks/r0;Lcom/google/android/play/core/assetpacks/j0;Ly4/j0;)V
-
-    return-object v11
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

@@ -3,7 +3,7 @@
 
 
 # static fields
-.field public static final zxing_CaptureTheme:I = 0x7f12030c
+.field public static final zxing_CaptureTheme:I = 0x7f120310
 
 
 # direct methods

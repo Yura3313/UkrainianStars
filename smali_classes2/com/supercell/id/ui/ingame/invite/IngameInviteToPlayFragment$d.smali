@@ -20,29 +20,29 @@
     value = {
         "Lle/j;",
         "Lke/l<",
-        "Lwd/k<",
+        "Lvd/k<",
         "+",
         "Ljava/util/List<",
         "+",
-        "Ldd/b;",
+        "Lbd/b;",
         ">;+",
         "Lcom/supercell/id/util/NormalizedError;",
         ">;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$d;->a:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$d;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
     const/4 p1, 0x1
 
@@ -57,25 +57,25 @@
     .locals 2
 
     .line 1
-    check-cast p1, Lwd/k;
+    check-cast p1, Lvd/k;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$d;->a:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$d;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
     .line 3
-    instance-of v1, p1, Lwd/k$a;
+    instance-of v1, p1, Lvd/k$a;
 
     if-eqz v1, :cond_0
 
-    check-cast p1, Lwd/k$a;
+    check-cast p1, Lvd/k$a;
 
     .line 4
-    iget-object p1, p1, Lwd/k$a;->a:Ljava/lang/Object;
+    iget-object p1, p1, Lvd/k$a;->a:Ljava/lang/Object;
 
     .line 5
     check-cast p1, Ljava/util/List;
 
-    invoke-static {p1}, Ldd/g;->a(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p1}, Lbd/g;->a(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
 
@@ -83,23 +83,23 @@
 
     .line 6
     :cond_0
-    instance-of v1, p1, Lwd/k$b;
+    instance-of v1, p1, Lvd/k$b;
 
     if-eqz v1, :cond_1
 
-    new-instance v1, Lwd/o;
+    new-instance v1, Lvd/o;
 
-    check-cast p1, Lwd/k$b;
+    check-cast p1, Lvd/k$b;
 
     .line 7
-    iget-object p1, p1, Lwd/k$b;->a:Ljava/lang/Object;
+    iget-object p1, p1, Lvd/k$b;->a:Ljava/lang/Object;
 
     .line 8
     check-cast p1, Lcom/supercell/id/util/NormalizedError;
 
-    invoke-direct {v1, p1}, Lwd/o;-><init>(Lcom/supercell/id/util/NormalizedError;)V
+    invoke-direct {v1, p1}, Lvd/o;-><init>(Lcom/supercell/id/util/NormalizedError;)V
 
-    invoke-static {v1}, Landroidx/savedstate/d;->u(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v1}, Lb5/m;->l(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -110,13 +110,13 @@
 
     .line 9
     :goto_0
-    sget v1, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->s0:I
+    sget v1, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->t0:I
 
     .line 10
     invoke-virtual {v0, p1}, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->r1(Ljava/util/List;)V
 
     .line 11
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method

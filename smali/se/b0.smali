@@ -1,100 +1,35 @@
-.class public final synthetic Lse/b0;
-.super Ljava/lang/Object;
-
-
-# static fields
-.field public static final synthetic a:[I
-
-.field public static final synthetic b:[I
+.class public final Lse/b0;
+.super Ljava/lang/Error;
+.source "Exceptions.common.kt"
 
 
 # direct methods
-.method public static synthetic constructor <clinit>()V
-    .locals 10
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    .locals 1
 
-    invoke-static {}, Lse/c0;->values()[Lse/c0;
+    const/4 v0, 0x0
 
-    move-result-object v0
+    if-eqz p1, :cond_1
 
-    array-length v0, v0
+    if-eqz p2, :cond_0
 
-    new-array v0, v0, [I
-
-    sput-object v0, Lse/b0;->a:[I
-
-    sget-object v1, Lse/c0;->DEFAULT:Lse/c0;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    const/4 v3, 0x1
-
-    aput v3, v0, v2
-
-    sget-object v2, Lse/c0;->ATOMIC:Lse/c0;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v4
-
-    const/4 v5, 0x2
-
-    aput v5, v0, v4
-
-    sget-object v4, Lse/c0;->UNDISPATCHED:Lse/c0;
-
-    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v6
-
-    const/4 v7, 0x3
-
-    aput v7, v0, v6
-
-    sget-object v6, Lse/c0;->LAZY:Lse/c0;
-
-    invoke-virtual {v6}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v8
-
-    const/4 v9, 0x4
-
-    aput v9, v0, v8
-
-    invoke-static {}, Lse/c0;->values()[Lse/c0;
-
-    move-result-object v0
-
-    array-length v0, v0
-
-    new-array v0, v0, [I
-
-    sput-object v0, Lse/b0;->b:[I
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    aput v3, v0, v1
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    aput v5, v0, v1
-
-    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    aput v7, v0, v1
-
-    invoke-virtual {v6}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    aput v9, v0, v1
+    .line 1
+    invoke-direct {p0, p1, p2}, Ljava/lang/Error;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     return-void
+
+    :cond_0
+    const-string p1, "cause"
+
+    .line 2
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_1
+    const-string p1, "message"
+
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
 .end method

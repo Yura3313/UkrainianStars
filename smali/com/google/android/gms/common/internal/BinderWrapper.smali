@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field public a:Landroid/os/IBinder;
+.field public g:Landroid/os/IBinder;
 
 
 # direct methods
@@ -55,7 +55,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/BinderWrapper;->a:Landroid/os/IBinder;
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/BinderWrapper;->g:Landroid/os/IBinder;
 
     return-void
 .end method
@@ -71,7 +71,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/BinderWrapper;->a:Landroid/os/IBinder;
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/BinderWrapper;->g:Landroid/os/IBinder;
 
     return-void
 .end method
@@ -94,7 +94,7 @@
     .end param
 
     .line 1
-    iget-object p2, p0, Lcom/google/android/gms/common/internal/BinderWrapper;->a:Landroid/os/IBinder;
+    iget-object p2, p0, Lcom/google/android/gms/common/internal/BinderWrapper;->g:Landroid/os/IBinder;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 

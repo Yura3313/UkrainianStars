@@ -3,151 +3,132 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Ljava/lang/Iterable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/lang/Iterable<",
+        "Lj3/ig;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/String;
-
-.field public final synthetic b:Ljava/lang/String;
-
-.field public final synthetic h:J
-
-.field public final synthetic i:J
-
-.field public final synthetic j:Z
-
-.field public final synthetic k:I
-
-.field public final synthetic l:I
-
-.field public final synthetic m:Lj3/ig;
+.field public final g:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lj3/ig;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lj3/ig;Ljava/lang/String;Ljava/lang/String;JJZII)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    iput-object p1, p0, Lj3/kg;->m:Lj3/ig;
-
-    iput-object p2, p0, Lj3/kg;->a:Ljava/lang/String;
-
-    iput-object p3, p0, Lj3/kg;->b:Ljava/lang/String;
-
-    iput-wide p4, p0, Lj3/kg;->h:J
-
-    iput-wide p6, p0, Lj3/kg;->i:J
-
-    iput-boolean p8, p0, Lj3/kg;->j:Z
-
-    iput p9, p0, Lj3/kg;->k:I
-
-    iput p10, p0, Lj3/kg;->l:I
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lj3/kg;->g:Ljava/util/List;
 
     return-void
 .end method
 
+.method public static a(Lj3/ef;)Z
+    .locals 0
 
-# virtual methods
-.method public final run()V
+    .line 1
+    invoke-static {p0}, Lj3/kg;->c(Lj3/ef;)Lj3/ig;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_0
+
+    .line 2
+    iget-object p0, p0, Lj3/ig;->c:Lj3/mg;
+
+    invoke-virtual {p0}, Lj3/mg;->f()V
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public static c(Lj3/ef;)Lj3/ig;
     .locals 3
 
     .line 1
-    new-instance v0, Ljava/util/HashMap;
+    sget-object v0, Lh1/o;->B:Lh1/o;
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    const-string v1, "event"
-
-    const-string v2, "precacheProgress"
+    iget-object v0, v0, Lh1/o;->z:Lj3/kg;
 
     .line 2
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0}, Lj3/kg;->iterator()Ljava/util/Iterator;
 
-    .line 3
-    iget-object v1, p0, Lj3/kg;->a:Ljava/lang/String;
-
-    const-string v2, "src"
-
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 4
-    iget-object v1, p0, Lj3/kg;->b:Ljava/lang/String;
-
-    const-string v2, "cachedSrc"
-
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 5
-    iget-wide v1, p0, Lj3/kg;->h:J
-
-    invoke-static {v1, v2}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "bufferedDuration"
-
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 6
-    iget-wide v1, p0, Lj3/kg;->i:J
-
-    invoke-static {v1, v2}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "totalDuration"
-
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 7
-    iget-boolean v1, p0, Lj3/kg;->j:Z
-
-    if-eqz v1, :cond_0
-
-    const-string v1, "1"
-
-    goto :goto_0
+    move-result-object v0
 
     :cond_0
-    const-string v1, "0"
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    :goto_0
-    const-string v2, "cacheReady"
+    move-result v1
 
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    if-eqz v1, :cond_1
 
-    .line 8
-    iget v1, p0, Lj3/kg;->k:I
-
-    invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    const-string v2, "playerCount"
+    check-cast v1, Lj3/ig;
 
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 3
+    iget-object v2, v1, Lj3/ig;->b:Lj3/ef;
 
-    .line 9
-    iget v1, p0, Lj3/kg;->l:I
+    if-ne v2, p0, :cond_0
 
-    invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+    return-object v1
 
-    move-result-object v1
+    :cond_1
+    const/4 p0, 0x0
 
-    const-string v2, "playerPreparedCount"
+    return-object p0
+.end method
 
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 10
-    iget-object v1, p0, Lj3/kg;->m:Lj3/ig;
+# virtual methods
+.method public final iterator()Ljava/util/Iterator;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Iterator<",
+            "Lj3/ig;",
+            ">;"
+        }
+    .end annotation
 
-    const-string v2, "onPrecacheEvent"
+    .line 1
+    iget-object v0, p0, Lj3/kg;->g:Ljava/util/List;
 
-    invoke-static {v1, v2, v0}, Lj3/ig;->h(Lj3/ig;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    return-void
+    move-result-object v0
+
+    return-object v0
 .end method

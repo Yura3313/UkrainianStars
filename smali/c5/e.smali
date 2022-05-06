@@ -69,7 +69,7 @@
 
     new-instance v1, Lc5/e;
 
-    sget-object v2, Lc5/j;->a:Lc5/j;
+    sget-object v2, Lc5/j;->g:Lc5/j;
 
     invoke-direct {v1, p0, v2}, Lc5/e;-><init>(Landroid/content/Context;Lc5/g;)V
 
@@ -203,9 +203,16 @@
 
     check-cast v3, Lc5/j;
 
-    invoke-virtual {v3}, Lc5/j;->a()Lc5/h;
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 5
+    sget-object v3, Lc5/j;->h:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v3
+
+    check-cast v3, Lc5/h;
 
     if-eq v1, v5, :cond_0
 
@@ -214,6 +221,7 @@
     :cond_0
     if-eqz v3, :cond_1
 
+    .line 6
     new-instance v1, Lc5/c;
 
     move-object/from16 v4, p1

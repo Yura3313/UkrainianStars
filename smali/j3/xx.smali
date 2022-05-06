@@ -3,91 +3,95 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/ii;
+.implements Lj3/ql0;
 
 
 # instance fields
-.field public final a:Lj3/ux;
+.field public final a:Lj3/yx;
 
-.field public final b:Lj3/ch;
-
-.field public final h:Lj3/nd;
+.field public final b:Lorg/json/JSONObject;
 
 
 # direct methods
-.method public constructor <init>(Lj3/ux;Lj3/ch;Lj3/nd;)V
+.method public constructor <init>(Lj3/yx;Lorg/json/JSONObject;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj3/xx;->a:Lj3/ux;
+    iput-object p1, p0, Lj3/xx;->a:Lj3/yx;
 
-    iput-object p2, p0, Lj3/xx;->b:Lj3/ch;
-
-    iput-object p3, p0, Lj3/xx;->h:Lj3/nd;
+    iput-object p2, p0, Lj3/xx;->b:Lorg/json/JSONObject;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Z)V
-    .locals 3
+.method public final a(Ljava/lang/Object;)Lj3/im0;
+    .locals 6
 
-    iget-object v0, p0, Lj3/xx;->a:Lj3/ux;
+    iget-object v0, p0, Lj3/xx;->a:Lj3/yx;
 
-    iget-object v1, p0, Lj3/xx;->b:Lj3/ch;
+    iget-object v1, p0, Lj3/xx;->b:Lorg/json/JSONObject;
 
-    iget-object v2, p0, Lj3/xx;->h:Lj3/nd;
+    check-cast p1, Lj3/gh;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    if-eqz p1, :cond_1
-
     .line 1
-    iget-object p1, v0, Lj3/ux;->a:Lj3/pg0;
+    new-instance v2, Lj3/rd;
 
-    iget-object p1, p1, Lj3/pg0;->b:Lcom/google/android/gms/internal/ads/zzaac;
-
-    if-eqz p1, :cond_0
-
-    invoke-interface {v1}, Lj3/ch;->h()Lcom/google/android/gms/internal/ads/zzbgk;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
+    invoke-direct {v2, p1}, Lj3/rd;-><init>(Ljava/lang/Object;)V
 
     .line 2
-    invoke-interface {v1}, Lj3/ch;->h()Lcom/google/android/gms/internal/ads/zzbgk;
+    iget-object v3, v0, Lj3/yx;->a:Lj3/wg0;
 
-    move-result-object p1
+    iget-object v3, v3, Lj3/wg0;->c:Lcom/google/android/gms/internal/ads/zzair;
 
-    iget-object v0, v0, Lj3/ux;->a:Lj3/pg0;
+    const/4 v4, 0x0
 
-    iget-object v0, v0, Lj3/pg0;->b:Lcom/google/android/gms/internal/ads/zzaac;
-
-    invoke-virtual {p1, v0}, Lcom/google/android/gms/internal/ads/zzbgk;->A7(Lcom/google/android/gms/internal/ads/zzaac;)V
+    if-eqz v3, :cond_0
 
     .line 3
-    :cond_0
-    iget-object p1, v2, Lj3/nd;->b:Ljava/lang/Object;
+    new-instance v3, Lj3/pi;
 
-    invoke-virtual {v2, p1}, Lj3/md;->b(Ljava/lang/Object;)Z
+    const/4 v5, 0x5
+
+    invoke-direct {v3, v5, v4, v4}, Lj3/pi;-><init>(III)V
+
+    .line 4
+    invoke-interface {p1, v3}, Lj3/gh;->s0(Lj3/pi;)V
 
     goto :goto_0
 
-    .line 4
-    :cond_1
-    new-instance p1, Lcom/google/android/gms/internal/ads/zzcuh;
+    .line 5
+    :cond_0
+    new-instance v3, Lj3/pi;
 
-    const/4 v0, 0x1
+    const/4 v5, 0x4
 
-    const-string v1, "Instream video Web View failed to load."
+    invoke-direct {v3, v5, v4, v4}, Lj3/pi;-><init>(III)V
 
-    invoke-direct {p1, v0, v1}, Lcom/google/android/gms/internal/ads/zzcuh;-><init>(ILjava/lang/String;)V
+    .line 6
+    invoke-interface {p1, v3}, Lj3/gh;->s0(Lj3/pi;)V
 
-    invoke-virtual {v2, p1}, Lj3/md;->c(Ljava/lang/Throwable;)Z
-
+    .line 7
     :goto_0
-    return-void
+    invoke-interface {p1}, Lj3/gh;->Q()Lj3/ji;
+
+    move-result-object v3
+
+    new-instance v4, Lj3/dy;
+
+    invoke-direct {v4, v0, p1, v2}, Lj3/dy;-><init>(Lj3/yx;Lj3/gh;Lj3/rd;)V
+
+    .line 8
+    invoke-interface {v3, v4}, Lj3/ji;->f(Lj3/mi;)V
+
+    const-string v0, "google.afma.nativeAds.renderVideo"
+
+    .line 9
+    invoke-interface {p1, v0, v1}, Lj3/q4;->U(Ljava/lang/String;Lorg/json/JSONObject;)V
+
+    return-object v2
 .end method

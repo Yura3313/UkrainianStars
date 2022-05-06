@@ -1,5 +1,5 @@
 .class public Lq9/h$a;
-.super Ly7/g;
+.super Lz7/g;
 .source "UIThreadDelegateDecorator.java"
 
 
@@ -29,7 +29,7 @@
 
     iput-object p2, p0, Lq9/h$a;->b:Ljava/lang/String;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method

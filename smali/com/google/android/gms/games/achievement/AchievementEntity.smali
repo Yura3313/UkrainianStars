@@ -25,41 +25,41 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final b:I
-
-.field public final h:Ljava/lang/String;
+.field public final h:I
 
 .field public final i:Ljava/lang/String;
 
-.field public final j:Landroid/net/Uri;
+.field public final j:Ljava/lang/String;
 
-.field public final k:Ljava/lang/String;
+.field public final k:Landroid/net/Uri;
 
-.field public final l:Landroid/net/Uri;
+.field public final l:Ljava/lang/String;
 
-.field public final m:Ljava/lang/String;
+.field public final m:Landroid/net/Uri;
 
-.field public final n:I
+.field public final n:Ljava/lang/String;
 
-.field public final o:Ljava/lang/String;
+.field public final o:I
 
-.field public final p:Lcom/google/android/gms/games/PlayerEntity;
+.field public final p:Ljava/lang/String;
 
-.field public final q:I
+.field public final q:Lcom/google/android/gms/games/PlayerEntity;
 
 .field public final r:I
 
-.field public final s:Ljava/lang/String;
+.field public final s:I
 
-.field public final t:J
+.field public final t:Ljava/lang/String;
 
 .field public final u:J
 
-.field public final v:F
+.field public final v:J
 
-.field public final w:Ljava/lang/String;
+.field public final w:F
+
+.field public final x:Ljava/lang/String;
 
 
 # direct methods
@@ -87,63 +87,63 @@
 
     check-cast v0, Lcom/google/android/gms/games/achievement/AchievementRef;
 
-    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->Z0()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->b1()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->a:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->g:Ljava/lang/String;
 
     .line 3
     invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->getType()I
 
     move-result v2
 
-    iput v2, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->b:I
+    iput v2, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->h:I
 
     .line 4
     invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->getName()Ljava/lang/String;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->h:Ljava/lang/String;
+    iput-object v2, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->i:Ljava/lang/String;
 
     .line 5
     invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->getDescription()Ljava/lang/String;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->i:Ljava/lang/String;
+    iput-object v2, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->j:Ljava/lang/String;
 
     .line 6
-    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->K()Landroid/net/Uri;
+    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->I()Landroid/net/Uri;
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->j:Landroid/net/Uri;
+    iput-object v3, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->k:Landroid/net/Uri;
 
     .line 7
     invoke-interface {p1}, Lcom/google/android/gms/games/achievement/Achievement;->getUnlockedImageUrl()Ljava/lang/String;
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->k:Ljava/lang/String;
+    iput-object v3, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->l:Ljava/lang/String;
 
     .line 8
     invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->G()Landroid/net/Uri;
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->l:Landroid/net/Uri;
+    iput-object v3, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->m:Landroid/net/Uri;
 
     .line 9
     invoke-interface {p1}, Lcom/google/android/gms/games/achievement/Achievement;->getRevealedImageUrl()Ljava/lang/String;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->m:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->n:Ljava/lang/String;
 
     .line 10
-    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->m2()Lcom/google/android/gms/games/Player;
+    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->o2()Lcom/google/android/gms/games/Player;
 
     move-result-object p1
 
@@ -152,7 +152,7 @@
     if-eqz p1, :cond_0
 
     .line 11
-    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->m2()Lcom/google/android/gms/games/Player;
+    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->o2()Lcom/google/android/gms/games/Player;
 
     move-result-object p1
 
@@ -166,13 +166,13 @@
     invoke-direct {v4, p1}, Lcom/google/android/gms/games/PlayerEntity;-><init>(Lcom/google/android/gms/games/Player;)V
 
     .line 13
-    iput-object v4, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->p:Lcom/google/android/gms/games/PlayerEntity;
+    iput-object v4, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->q:Lcom/google/android/gms/games/PlayerEntity;
 
     goto :goto_0
 
     .line 14
     :cond_0
-    iput-object v3, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->p:Lcom/google/android/gms/games/PlayerEntity;
+    iput-object v3, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->q:Lcom/google/android/gms/games/PlayerEntity;
 
     .line 15
     :goto_0
@@ -180,35 +180,35 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->q:I
+    iput p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->r:I
 
     .line 16
-    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->u()J
-
-    move-result-wide v4
-
-    iput-wide v4, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->t:J
-
-    .line 17
-    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->w0()J
+    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->w()J
 
     move-result-wide v4
 
     iput-wide v4, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->u:J
 
+    .line 17
+    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->y0()J
+
+    move-result-wide v4
+
+    iput-wide v4, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->v:J
+
     .line 18
-    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->n1()F
+    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->p1()F
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->v:F
+    iput p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->w:F
 
     .line 19
-    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->k()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->m()Ljava/lang/String;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->w:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->x:Ljava/lang/String;
 
     .line 20
     invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->getType()I
@@ -220,32 +220,32 @@
     if-ne p1, v4, :cond_1
 
     .line 21
-    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->W1()I
+    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->Z1()I
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->n:I
+    iput p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->o:I
 
     .line 22
-    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->D()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->E()Ljava/lang/String;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->o:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->p:Ljava/lang/String;
 
     .line 23
-    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->s1()I
+    invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->u1()I
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->r:I
+    iput p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->s:I
 
     .line 24
     invoke-virtual {v0}, Lcom/google/android/gms/games/achievement/AchievementRef;->C()Ljava/lang/String;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->s:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->t:Ljava/lang/String;
 
     goto :goto_1
 
@@ -253,16 +253,16 @@
     const/4 p1, 0x0
 
     .line 25
-    iput p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->n:I
+    iput p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->o:I
 
     .line 26
-    iput-object v3, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->o:Ljava/lang/String;
+    iput-object v3, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->p:Ljava/lang/String;
 
     .line 27
-    iput p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->r:I
+    iput p1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->s:I
 
     .line 28
-    iput-object v3, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->s:Ljava/lang/String;
+    iput-object v3, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->t:Ljava/lang/String;
 
     .line 29
     :goto_1
@@ -285,252 +285,97 @@
     move-object v1, p1
 
     .line 32
-    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->a:Ljava/lang/String;
+    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->g:Ljava/lang/String;
 
     move v1, p2
 
     .line 33
-    iput v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->b:I
+    iput v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->h:I
 
     move-object v1, p3
 
     .line 34
-    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->h:Ljava/lang/String;
+    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->i:Ljava/lang/String;
 
     move-object v1, p4
 
     .line 35
-    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->i:Ljava/lang/String;
+    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->j:Ljava/lang/String;
 
     move-object v1, p5
 
     .line 36
-    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->j:Landroid/net/Uri;
+    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->k:Landroid/net/Uri;
 
     move-object v1, p6
 
     .line 37
-    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->k:Ljava/lang/String;
+    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->l:Ljava/lang/String;
 
     move-object v1, p7
 
     .line 38
-    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->l:Landroid/net/Uri;
+    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->m:Landroid/net/Uri;
 
     move-object v1, p8
 
     .line 39
-    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->m:Ljava/lang/String;
+    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->n:Ljava/lang/String;
 
     move v1, p9
 
     .line 40
-    iput v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->n:I
+    iput v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->o:I
 
     move-object v1, p10
 
     .line 41
-    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->o:Ljava/lang/String;
+    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->p:Ljava/lang/String;
 
     move-object v1, p11
 
     .line 42
-    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->p:Lcom/google/android/gms/games/PlayerEntity;
+    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->q:Lcom/google/android/gms/games/PlayerEntity;
 
     move v1, p12
 
     .line 43
-    iput v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->q:I
+    iput v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->r:I
 
     move/from16 v1, p13
 
     .line 44
-    iput v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->r:I
+    iput v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->s:I
 
     move-object/from16 v1, p14
 
     .line 45
-    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->s:Ljava/lang/String;
+    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->t:Ljava/lang/String;
 
     move-wide/from16 v1, p15
 
     .line 46
-    iput-wide v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->t:J
+    iput-wide v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->u:J
 
     move-wide/from16 v1, p17
 
     .line 47
-    iput-wide v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->u:J
+    iput-wide v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->v:J
 
     move/from16 v1, p19
 
     .line 48
-    iput v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->v:F
+    iput v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->w:F
 
     move-object/from16 v1, p20
 
     .line 49
-    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->w:Ljava/lang/String;
+    iput-object v1, v0, Lcom/google/android/gms/games/achievement/AchievementEntity;->x:Ljava/lang/String;
 
     return-void
 .end method
 
-.method public static x2(Lcom/google/android/gms/games/achievement/Achievement;)I
-    .locals 7
-
-    .line 1
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->getType()I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
-
-    if-ne v0, v2, :cond_0
-
-    .line 2
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->s1()I
-
-    move-result v0
-
-    .line 3
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->W1()I
-
-    move-result v3
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    const/4 v3, 0x0
-
-    :goto_0
-    const/16 v4, 0xb
-
-    new-array v4, v4, [Ljava/lang/Object;
-
-    .line 4
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->Z0()Ljava/lang/String;
-
-    move-result-object v5
-
-    aput-object v5, v4, v1
-
-    .line 5
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->k()Ljava/lang/String;
-
-    move-result-object v1
-
-    aput-object v1, v4, v2
-
-    const/4 v1, 0x2
-
-    .line 6
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->getName()Ljava/lang/String;
-
-    move-result-object v2
-
-    aput-object v2, v4, v1
-
-    const/4 v1, 0x3
-
-    .line 7
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->getType()I
-
-    move-result v2
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    aput-object v2, v4, v1
-
-    const/4 v1, 0x4
-
-    .line 8
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->getDescription()Ljava/lang/String;
-
-    move-result-object v2
-
-    aput-object v2, v4, v1
-
-    const/4 v1, 0x5
-
-    .line 9
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->w0()J
-
-    move-result-wide v5
-
-    invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v2
-
-    aput-object v2, v4, v1
-
-    const/4 v1, 0x6
-
-    .line 10
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->getState()I
-
-    move-result v2
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    aput-object v2, v4, v1
-
-    const/4 v1, 0x7
-
-    .line 11
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->u()J
-
-    move-result-wide v5
-
-    invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v2
-
-    aput-object v2, v4, v1
-
-    const/16 v1, 0x8
-
-    .line 12
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->m2()Lcom/google/android/gms/games/Player;
-
-    move-result-object p0
-
-    aput-object p0, v4, v1
-
-    const/16 p0, 0x9
-
-    .line 13
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    aput-object v0, v4, p0
-
-    const/16 p0, 0xa
-
-    .line 14
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    aput-object v0, v4, p0
-
-    .line 15
-    invoke-static {v4}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static y2(Lcom/google/android/gms/games/achievement/Achievement;Ljava/lang/Object;)Z
+.method public static A2(Lcom/google/android/gms/games/achievement/Achievement;Ljava/lang/Object;)Z
     .locals 7
 
     .line 1
@@ -575,11 +420,11 @@
     if-ne v2, v0, :cond_4
 
     .line 5
-    invoke-interface {p1}, Lcom/google/android/gms/games/achievement/Achievement;->s1()I
+    invoke-interface {p1}, Lcom/google/android/gms/games/achievement/Achievement;->u1()I
 
     move-result v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->s1()I
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->u1()I
 
     move-result v3
 
@@ -589,11 +434,11 @@
 
     .line 6
     :cond_3
-    invoke-interface {p1}, Lcom/google/android/gms/games/achievement/Achievement;->W1()I
+    invoke-interface {p1}, Lcom/google/android/gms/games/achievement/Achievement;->Z1()I
 
     move-result v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->W1()I
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->Z1()I
 
     move-result v3
 
@@ -603,11 +448,11 @@
 
     .line 7
     :cond_4
-    invoke-interface {p1}, Lcom/google/android/gms/games/achievement/Achievement;->w0()J
+    invoke-interface {p1}, Lcom/google/android/gms/games/achievement/Achievement;->y0()J
 
     move-result-wide v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->w0()J
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->y0()J
 
     move-result-wide v4
 
@@ -627,11 +472,11 @@
     if-ne v2, v3, :cond_5
 
     .line 9
-    invoke-interface {p1}, Lcom/google/android/gms/games/achievement/Achievement;->u()J
+    invoke-interface {p1}, Lcom/google/android/gms/games/achievement/Achievement;->w()J
 
     move-result-wide v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->u()J
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->w()J
 
     move-result-wide v4
 
@@ -640,11 +485,11 @@
     if-nez v6, :cond_5
 
     .line 10
-    invoke-interface {p1}, Lcom/google/android/gms/games/achievement/Achievement;->Z0()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/google/android/gms/games/achievement/Achievement;->b1()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->Z0()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->b1()Ljava/lang/String;
 
     move-result-object v3
 
@@ -655,11 +500,11 @@
     if-eqz v2, :cond_5
 
     .line 11
-    invoke-interface {p1}, Lcom/google/android/gms/games/achievement/Achievement;->k()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/google/android/gms/games/achievement/Achievement;->m()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->k()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->m()Ljava/lang/String;
 
     move-result-object v3
 
@@ -700,11 +545,11 @@
     if-eqz v2, :cond_5
 
     .line 14
-    invoke-interface {p1}, Lcom/google/android/gms/games/achievement/Achievement;->m2()Lcom/google/android/gms/games/Player;
+    invoke-interface {p1}, Lcom/google/android/gms/games/achievement/Achievement;->o2()Lcom/google/android/gms/games/Player;
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->m2()Lcom/google/android/gms/games/Player;
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->o2()Lcom/google/android/gms/games/Player;
 
     move-result-object v3
 
@@ -715,11 +560,11 @@
     if-eqz v2, :cond_5
 
     .line 15
-    invoke-interface {p1}, Lcom/google/android/gms/games/achievement/Achievement;->n1()F
+    invoke-interface {p1}, Lcom/google/android/gms/games/achievement/Achievement;->p1()F
 
     move-result p1
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->n1()F
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->p1()F
 
     move-result p0
 
@@ -733,7 +578,7 @@
     return v1
 .end method
 
-.method public static z2(Lcom/google/android/gms/games/achievement/Achievement;)Ljava/lang/String;
+.method public static B2(Lcom/google/android/gms/games/achievement/Achievement;)Ljava/lang/String;
     .locals 3
 
     .line 1
@@ -744,7 +589,7 @@
     invoke-direct {v0, p0, v1}, Lc2/f$a;-><init>(Ljava/lang/Object;Lc2/n0;)V
 
     .line 2
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->Z0()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->b1()Ljava/lang/String;
 
     move-result-object v1
 
@@ -753,7 +598,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 3
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->k()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->m()Ljava/lang/String;
 
     move-result-object v1
 
@@ -793,7 +638,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 7
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->m2()Lcom/google/android/gms/games/Player;
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->o2()Lcom/google/android/gms/games/Player;
 
     move-result-object v1
 
@@ -815,7 +660,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 9
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->n1()F
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->p1()F
 
     move-result v1
 
@@ -837,7 +682,7 @@
     if-ne v1, v2, :cond_0
 
     .line 11
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->s1()I
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->u1()I
 
     move-result v1
 
@@ -850,7 +695,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 12
-    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->W1()I
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->Z1()I
 
     move-result p0
 
@@ -871,13 +716,168 @@
     return-object p0
 .end method
 
+.method public static z2(Lcom/google/android/gms/games/achievement/Achievement;)I
+    .locals 7
+
+    .line 1
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->getType()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    if-ne v0, v2, :cond_0
+
+    .line 2
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->u1()I
+
+    move-result v0
+
+    .line 3
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->Z1()I
+
+    move-result v3
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    const/4 v3, 0x0
+
+    :goto_0
+    const/16 v4, 0xb
+
+    new-array v4, v4, [Ljava/lang/Object;
+
+    .line 4
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->b1()Ljava/lang/String;
+
+    move-result-object v5
+
+    aput-object v5, v4, v1
+
+    .line 5
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->m()Ljava/lang/String;
+
+    move-result-object v1
+
+    aput-object v1, v4, v2
+
+    const/4 v1, 0x2
+
+    .line 6
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->getName()Ljava/lang/String;
+
+    move-result-object v2
+
+    aput-object v2, v4, v1
+
+    const/4 v1, 0x3
+
+    .line 7
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->getType()I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    aput-object v2, v4, v1
+
+    const/4 v1, 0x4
+
+    .line 8
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->getDescription()Ljava/lang/String;
+
+    move-result-object v2
+
+    aput-object v2, v4, v1
+
+    const/4 v1, 0x5
+
+    .line 9
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->y0()J
+
+    move-result-wide v5
+
+    invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v2
+
+    aput-object v2, v4, v1
+
+    const/4 v1, 0x6
+
+    .line 10
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->getState()I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    aput-object v2, v4, v1
+
+    const/4 v1, 0x7
+
+    .line 11
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->w()J
+
+    move-result-wide v5
+
+    invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v2
+
+    aput-object v2, v4, v1
+
+    const/16 v1, 0x8
+
+    .line 12
+    invoke-interface {p0}, Lcom/google/android/gms/games/achievement/Achievement;->o2()Lcom/google/android/gms/games/Player;
+
+    move-result-object p0
+
+    aput-object p0, v4, v1
+
+    const/16 p0, 0x9
+
+    .line 13
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    aput-object v0, v4, p0
+
+    const/16 p0, 0xa
+
+    .line 14
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    aput-object v0, v4, p0
+
+    .line 15
+    invoke-static {v4}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    move-result p0
+
+    return p0
+.end method
+
 
 # virtual methods
-.method public final W1()I
+.method public final Z1()I
     .locals 2
 
     .line 1
-    iget v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->b:I
+    iget v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->h:I
 
     const/4 v1, 0x1
 
@@ -893,16 +893,16 @@
     invoke-static {v1}, Lc2/b;->b(Z)V
 
     .line 3
-    iget v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->n:I
+    iget v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->o:I
 
     return v0
 .end method
 
-.method public final Z0()Ljava/lang/String;
+.method public final b1()Ljava/lang/String;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->g:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -911,7 +911,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/google/android/gms/games/achievement/AchievementEntity;->y2(Lcom/google/android/gms/games/achievement/Achievement;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lcom/google/android/gms/games/achievement/AchievementEntity;->A2(Lcom/google/android/gms/games/achievement/Achievement;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -922,7 +922,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->j:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -931,7 +931,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->i:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -940,7 +940,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->m:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->n:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -949,7 +949,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->q:I
+    iget v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->r:I
 
     return v0
 .end method
@@ -958,7 +958,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->b:I
+    iget v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->h:I
 
     return v0
 .end method
@@ -967,7 +967,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->k:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->l:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -976,45 +976,56 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/achievement/AchievementEntity;->x2(Lcom/google/android/gms/games/achievement/Achievement;)I
+    invoke-static {p0}, Lcom/google/android/gms/games/achievement/AchievementEntity;->z2(Lcom/google/android/gms/games/achievement/Achievement;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final k()Ljava/lang/String;
+.method public final m()Ljava/lang/String;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->w:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->x:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method public final m2()Lcom/google/android/gms/games/Player;
+.method public final o2()Lcom/google/android/gms/games/Player;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->p:Lcom/google/android/gms/games/PlayerEntity;
+    iget-object v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->q:Lcom/google/android/gms/games/PlayerEntity;
 
     return-object v0
 .end method
 
-.method public final n1()F
+.method public final p1()F
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->v:F
+    iget v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->w:F
 
     return v0
 .end method
 
-.method public final s1()I
+.method public final toString()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {p0}, Lcom/google/android/gms/games/achievement/AchievementEntity;->B2(Lcom/google/android/gms/games/achievement/Achievement;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final u1()I
     .locals 2
 
     .line 1
-    iget v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->b:I
+    iget v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->h:I
 
     const/4 v1, 0x1
 
@@ -1030,32 +1041,12 @@
     invoke-static {v1}, Lc2/b;->b(Z)V
 
     .line 3
-    iget v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->r:I
+    iget v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->s:I
 
     return v0
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/achievement/AchievementEntity;->z2(Lcom/google/android/gms/games/achievement/Achievement;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final u()J
-    .locals 2
-
-    .line 1
-    iget-wide v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->t:J
-
-    return-wide v0
-.end method
-
-.method public final w0()J
+.method public final w()J
     .locals 2
 
     .line 1
@@ -1077,7 +1068,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->g:Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1087,7 +1078,7 @@
     const/4 v1, 0x2
 
     .line 4
-    iget v2, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->b:I
+    iget v2, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->h:I
 
     const/4 v4, 0x4
 
@@ -1100,13 +1091,13 @@
     const/4 v1, 0x3
 
     .line 7
-    iget-object v2, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->h:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->i:Ljava/lang/String;
 
     .line 8
     invoke-static {p1, v1, v2, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 9
-    iget-object v1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->j:Ljava/lang/String;
 
     .line 10
     invoke-static {p1, v4, v1, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
@@ -1114,7 +1105,7 @@
     const/4 v1, 0x5
 
     .line 11
-    iget-object v2, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->j:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->k:Landroid/net/Uri;
 
     .line 12
     invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
@@ -1122,7 +1113,7 @@
     const/4 v1, 0x6
 
     .line 13
-    iget-object v2, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->k:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->l:Ljava/lang/String;
 
     .line 14
     invoke-static {p1, v1, v2, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
@@ -1130,13 +1121,13 @@
     const/4 v1, 0x7
 
     .line 15
-    iget-object v2, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->l:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->m:Landroid/net/Uri;
 
     .line 16
     invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 17
-    iget-object v1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->m:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->n:Ljava/lang/String;
 
     const/16 v2, 0x8
 
@@ -1146,7 +1137,7 @@
     const/16 v1, 0x9
 
     .line 19
-    iget v5, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->n:I
+    iget v5, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->o:I
 
     .line 20
     invoke-static {p1, v1, v4}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -1157,7 +1148,7 @@
     const/16 v1, 0xa
 
     .line 22
-    iget-object v5, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->o:Ljava/lang/String;
+    iget-object v5, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->p:Ljava/lang/String;
 
     .line 23
     invoke-static {p1, v1, v5, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
@@ -1165,7 +1156,7 @@
     const/16 v1, 0xb
 
     .line 24
-    iget-object v5, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->p:Lcom/google/android/gms/games/PlayerEntity;
+    iget-object v5, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->q:Lcom/google/android/gms/games/PlayerEntity;
 
     .line 25
     invoke-static {p1, v1, v5, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
@@ -1173,7 +1164,7 @@
     const/16 p2, 0xc
 
     .line 26
-    iget v1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->q:I
+    iget v1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->r:I
 
     .line 27
     invoke-static {p1, p2, v4}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -1184,7 +1175,7 @@
     const/16 p2, 0xd
 
     .line 29
-    iget v1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->r:I
+    iget v1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->s:I
 
     .line 30
     invoke-static {p1, p2, v4}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -1195,7 +1186,7 @@
     const/16 p2, 0xe
 
     .line 32
-    iget-object v1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->s:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->t:Ljava/lang/String;
 
     .line 33
     invoke-static {p1, p2, v1, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
@@ -1203,7 +1194,7 @@
     const/16 p2, 0xf
 
     .line 34
-    iget-wide v5, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->t:J
+    iget-wide v5, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->u:J
 
     .line 35
     invoke-static {p1, p2, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -1214,7 +1205,7 @@
     const/16 p2, 0x10
 
     .line 37
-    iget-wide v5, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->u:J
+    iget-wide v5, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->v:J
 
     .line 38
     invoke-static {p1, p2, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -1225,7 +1216,7 @@
     const/16 p2, 0x11
 
     .line 40
-    iget v1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->v:F
+    iget v1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->w:F
 
     .line 41
     invoke-static {p1, p2, v4}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -1236,7 +1227,7 @@
     const/16 p2, 0x12
 
     .line 43
-    iget-object v1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->w:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->x:Ljava/lang/String;
 
     .line 44
     invoke-static {p1, p2, v1, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
@@ -1245,4 +1236,13 @@
     invoke-static {p1, v0}, Ld2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
+.end method
+
+.method public final y0()J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/google/android/gms/games/achievement/AchievementEntity;->v:J
+
+    return-wide v0
 .end method

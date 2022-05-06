@@ -13,13 +13,13 @@
 .method public abstract d(ILjava/lang/String;)V
 .end method
 
-.method public abstract e()V
+.method public abstract e(Lp8/c;Ljava/lang/String;)V
 .end method
 
-.method public abstract f(Lcom/helpshift/f;Lq9/a;)V
+.method public abstract f()V
 .end method
 
-.method public abstract g(Lo8/c;Ljava/lang/String;)V
+.method public abstract g(Lcom/helpshift/f;Lq9/a;)V
 .end method
 
 .method public abstract h(Ljava/io/File;)V

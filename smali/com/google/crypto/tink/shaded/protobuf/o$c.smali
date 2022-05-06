@@ -60,7 +60,7 @@
 
 
 # virtual methods
-.method public r()Lcom/google/crypto/tink/shaded/protobuf/m;
+.method public q()Lcom/google/crypto/tink/shaded/protobuf/m;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {

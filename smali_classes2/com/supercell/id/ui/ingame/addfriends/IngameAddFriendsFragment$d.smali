@@ -21,22 +21,22 @@
         "Lle/j;",
         "Lke/p<",
         "Landroid/graphics/drawable/Drawable;",
-        "Lqd/g;",
-        "Lbe/n;",
+        "Lpd/g;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/ref/WeakReference;
+.field public final synthetic g:Ljava/lang/ref/WeakReference;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/ref/WeakReference;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$d;->a:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$d;->g:Ljava/lang/ref/WeakReference;
 
     const/4 p1, 0x2
 
@@ -53,7 +53,7 @@
     .line 1
     check-cast p1, Landroid/graphics/drawable/Drawable;
 
-    check-cast p2, Lqd/g;
+    check-cast p2, Lpd/g;
 
     const/4 v0, 0x0
 
@@ -62,7 +62,7 @@
     if-eqz p2, :cond_4
 
     .line 2
-    iget-object p2, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$d;->a:Ljava/lang/ref/WeakReference;
+    iget-object p2, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$d;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -84,7 +84,7 @@
 
     const-string v3, "textView.context"
 
-    invoke-static {v2, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -119,7 +119,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -139,25 +139,25 @@
 
     const/16 v2, 0x20
 
-    invoke-static {v2}, Lc5/i;->c(I)F
+    invoke-static {v2}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v2
 
     mul-float v2, v2, v1
 
-    invoke-static {v2}, Lc2/n0;->e(F)I
+    invoke-static {v2}, Lb5/m;->r(F)I
 
     move-result v2
 
     const/16 v3, 0x1d
 
-    invoke-static {v3}, Lc5/i;->c(I)F
+    invoke-static {v3}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v3
 
     mul-float v3, v3, v1
 
-    invoke-static {v3}, Lc2/n0;->e(F)I
+    invoke-static {v3}, Lb5/m;->r(F)I
 
     move-result v1
 
@@ -169,15 +169,15 @@
 
     .line 8
     :cond_2
-    new-instance p1, Lad/c;
+    new-instance p1, Lxc/c;
 
-    invoke-direct {p1, p2, v0}, Lad/c;-><init>(Lcom/supercell/id/view/WidthAdjustingMultilineTextView;Landroid/graphics/drawable/BitmapDrawable;)V
+    invoke-direct {p1, p2, v0}, Lxc/c;-><init>(Lcom/supercell/id/view/WidthAdjustingMultilineTextView;Landroid/graphics/drawable/BitmapDrawable;)V
 
-    invoke-static {p2, p1}, Lwd/f2;->a(Landroid/view/View;Lke/l;)V
+    invoke-static {p2, p1}, Lvd/g2;->a(Landroid/view/View;Lke/l;)V
 
     .line 9
     :cond_3
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -185,14 +185,14 @@
     const-string p1, "<anonymous parameter 1>"
 
     .line 10
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_5
     const-string p1, "drawable"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

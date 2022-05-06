@@ -13,7 +13,7 @@
 
 
 # virtual methods
-.method public final H3(Lcom/google/android/gms/internal/drive/zzfh;)V
+.method public final I3(Lcom/google/android/gms/internal/drive/zzfh;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -25,7 +25,7 @@
     new-instance v0, Lq3/c;
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzfh;->a:Lcom/google/android/gms/drive/Contents;
+    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzfh;->g:Lcom/google/android/gms/drive/Contents;
 
     .line 3
     invoke-direct {v0, p1}, Lq3/c;-><init>(Lcom/google/android/gms/drive/Contents;)V

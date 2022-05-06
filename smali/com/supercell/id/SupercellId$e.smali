@@ -20,14 +20,14 @@
     value = {
         "Lle/j;",
         "Lke/a<",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/SupercellId$e;
+.field public static final g:Lcom/supercell/id/SupercellId$e;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/SupercellId$e;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/SupercellId$e;->a:Lcom/supercell/id/SupercellId$e;
+    sput-object v0, Lcom/supercell/id/SupercellId$e;->g:Lcom/supercell/id/SupercellId$e;
 
     return-void
 .end method
@@ -61,44 +61,44 @@
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v1
 
     .line 2
-    iget-object v1, v1, Lwd/r;->s:Lqd/j;
+    iget-object v1, v1, Lvd/r;->s:Lpd/i;
 
     .line 3
-    invoke-virtual {v1}, Lqd/j;->a()V
+    invoke-virtual {v1}, Lpd/i;->a()V
 
     .line 4
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
     .line 5
-    iget-object v0, v0, Lwd/r;->v:Lqc/a;
+    iget-object v0, v0, Lvd/r;->v:Lnc/a;
 
     .line 6
     monitor-enter v0
 
     .line 7
     :try_start_0
-    iget-object v1, v0, Lqc/a;->a:Ljava/util/Map;
+    iget-object v1, v0, Lnc/a;->a:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->clear()V
 
     .line 8
-    iget-object v1, v0, Lqc/a;->b:Landroid/media/SoundPool;
+    iget-object v1, v0, Lnc/a;->b:Landroid/media/SoundPool;
 
     invoke-virtual {v1}, Landroid/media/SoundPool;->release()V
 
     .line 9
-    invoke-virtual {v0}, Lqc/a;->a()Landroid/media/SoundPool;
+    invoke-virtual {v0}, Lnc/a;->a()Landroid/media/SoundPool;
 
     move-result-object v1
 
-    iput-object v1, v0, Lqc/a;->b:Landroid/media/SoundPool;
+    iput-object v1, v0, Lnc/a;->b:Landroid/media/SoundPool;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -106,25 +106,22 @@
     monitor-exit v0
 
     .line 11
-    sget-object v0, Lwd/x;->c:Lwd/x;
+    sget-object v0, Lvd/x;->c:Lvd/x;
 
     .line 12
-    sget-object v0, Lwd/x;->b:Lwd/b1;
+    sget-object v0, Lvd/x;->b:Landroidx/appcompat/widget/m;
+
+    invoke-virtual {v0}, Landroidx/appcompat/widget/m;->a()V
 
     .line 13
-    iget-object v0, v0, Lwd/b1;->a:Ljava/util/concurrent/ConcurrentHashMap;
-
-    invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentHashMap;->clear()V
-
-    .line 14
-    sget-object v0, Lbe/n;->a:Lbe/n;
+    sget-object v0, Lae/i;->a:Lae/i;
 
     return-object v0
 
     :catchall_0
     move-exception v1
 
-    .line 15
+    .line 14
     monitor-exit v0
 
     throw v1

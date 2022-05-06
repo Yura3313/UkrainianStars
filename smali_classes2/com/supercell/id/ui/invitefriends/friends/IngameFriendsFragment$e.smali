@@ -21,21 +21,21 @@
         "Lle/j;",
         "Lke/l<",
         "Ljava/lang/Exception;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$e;->a:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$e;->g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
 
     const/4 p1, 0x1
 
@@ -55,18 +55,18 @@
     if-eqz p1, :cond_0
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$e;->a:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$e;->g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$e;->a:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$e;->g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
 
-    sget-object v1, Lcom/supercell/id/util/NormalizedError;->l:Lcom/supercell/id/util/NormalizedError;
+    sget-object v1, Lcom/supercell/id/util/NormalizedError;->m:Lcom/supercell/id/util/NormalizedError;
 
-    invoke-static {p1}, Lcom/supercell/id/util/NormalizedError;->h(Ljava/lang/Exception;)Lcom/supercell/id/util/NormalizedError;
+    invoke-static {p1}, Lcom/supercell/id/util/NormalizedError;->b(Ljava/lang/Exception;)Lcom/supercell/id/util/NormalizedError;
 
     move-result-object p1
 
@@ -74,18 +74,18 @@
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 5
-    new-instance v1, Lwd/o;
+    new-instance v1, Lvd/o;
 
-    invoke-direct {v1, p1}, Lwd/o;-><init>(Lcom/supercell/id/util/NormalizedError;)V
+    invoke-direct {v1, p1}, Lvd/o;-><init>(Lcom/supercell/id/util/NormalizedError;)V
 
-    invoke-static {v1}, Landroidx/savedstate/d;->u(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v1}, Lb5/m;->l(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
     invoke-virtual {v0, p1}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;->q1(Ljava/util/List;)V
 
     .line 6
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -93,7 +93,7 @@
     const-string p1, "it"
 
     .line 7
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

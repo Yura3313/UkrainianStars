@@ -4,27 +4,27 @@
 
 # interfaces
 .implements Lv0/v;
-.implements Lj3/rl0;
-.implements Lx3/j1;
+.implements Lj3/bm0;
+.implements Lu3/f1;
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
+.field public g:Ljava/lang/Object;
 
 
 # direct methods
 .method public synthetic constructor <init>(Landroid/view/ViewGroup;)V
     .locals 0
 
-    .line 5
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
+    .line 3
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getOverlay()Landroid/view/ViewGroupOverlay;
 
     move-result-object p1
 
-    iput-object p1, p0, Lv0/u;->a:Ljava/lang/Object;
+    iput-object p1, p0, Lv0/u;->g:Ljava/lang/Object;
 
     return-void
 .end method
@@ -33,123 +33,70 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lv0/u;->a:Ljava/lang/Object;
+    iput-object p1, p0, Lv0/u;->g:Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
-.end method
-
-.method public constructor <init>(Lx3/p0;)V
-    .locals 1
-
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    if-eqz p1, :cond_0
-
-    .line 3
-    iput-object p1, p0, Lv0/u;->a:Ljava/lang/Object;
-
-    return-void
-
-    .line 4
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string v0, "null reference"
-
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 
 # virtual methods
-.method public a()Lu0/b;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
-
-    check-cast v0, Lx3/p0;
-
-    .line 2
-    iget-object v0, v0, Lx3/p0;->k:Lu0/b;
-
-    return-object v0
-.end method
-
-.method public b()Lx3/l0;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
-
-    check-cast v0, Lx3/p0;
-
-    invoke-virtual {v0}, Lx3/p0;->b()Lx3/l0;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public d(Ljava/lang/Throwable;)V
+.method public a(Ljava/lang/Throwable;)V
     .locals 8
 
     .line 1
-    iget-object p1, p0, Lv0/u;->a:Ljava/lang/Object;
+    iget-object p1, p0, Lv0/u;->g:Ljava/lang/Object;
 
     move-object v0, p1
 
-    check-cast v0, Lj3/ql;
+    check-cast v0, Lj3/sl;
 
     .line 2
-    iget-object v1, v0, Lj3/ql;->k:Lj3/ri0;
+    iget-object v1, v0, Lj3/sl;->l:Lj3/yi0;
 
     .line 3
     move-object v0, p1
 
-    check-cast v0, Lj3/ql;
+    check-cast v0, Lj3/sl;
 
     .line 4
-    iget-object v2, v0, Lj3/ql;->i:Lj3/ng0;
+    iget-object v2, v0, Lj3/sl;->j:Lj3/ug0;
 
     .line 5
     move-object v0, p1
 
-    check-cast v0, Lj3/ql;
+    check-cast v0, Lj3/sl;
 
     .line 6
-    iget-object v3, v0, Lj3/ql;->j:Lj3/eg0;
+    iget-object v3, v0, Lj3/sl;->k:Lj3/lg0;
 
     const/4 v4, 0x0
 
     .line 7
-    check-cast p1, Lj3/ql;
+    check-cast p1, Lj3/sl;
 
     .line 8
-    iget-object p1, p1, Lj3/ql;->j:Lj3/eg0;
+    iget-object p1, p1, Lj3/sl;->k:Lj3/lg0;
 
     .line 9
-    iget-object v7, p1, Lj3/eg0;->c:Ljava/util/List;
+    iget-object v7, p1, Lj3/lg0;->c:Ljava/util/List;
 
     const-string v5, ""
 
     const-string v6, "failure_click_attok"
 
     .line 10
-    invoke-virtual/range {v1 .. v7}, Lj3/ri0;->b(Lj3/ng0;Lj3/eg0;ZLjava/lang/String;Ljava/lang/String;Ljava/util/List;)V
+    invoke-virtual/range {v1 .. v7}, Lj3/yi0;->b(Lj3/ug0;Lj3/lg0;ZLjava/lang/String;Ljava/lang/String;Ljava/util/List;)V
 
     return-void
 .end method
 
-.method public e(Landroid/view/View;)V
+.method public b(Landroid/view/View;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
+    iget-object v0, p0, Lv0/u;->g:Ljava/lang/Object;
 
     check-cast v0, Landroid/view/ViewGroupOverlay;
 
@@ -158,54 +105,11 @@
     return-void
 .end method
 
-.method public f()Lk2/c;
+.method public c(Landroid/view/View;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
-
-    check-cast v0, Lx3/p0;
-
-    .line 2
-    iget-object v0, v0, Lx3/p0;->t:Lk2/c;
-
-    return-object v0
-.end method
-
-.method public g()Lx3/o;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
-
-    check-cast v0, Lx3/p0;
-
-    invoke-virtual {v0}, Lx3/p0;->g()Lx3/o;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public getContext()Landroid/content/Context;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
-
-    check-cast v0, Lx3/p0;
-
-    .line 2
-    iget-object v0, v0, Lx3/p0;->a:Landroid/content/Context;
-
-    return-object v0
-.end method
-
-.method public h(Landroid/view/View;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
+    iget-object v0, p0, Lv0/u;->g:Ljava/lang/Object;
 
     check-cast v0, Landroid/view/ViewGroupOverlay;
 
@@ -214,141 +118,132 @@
     return-void
 .end method
 
-.method public i(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
-    .locals 2
+.method public i0()Ljava/lang/Object;
+    .locals 7
+
+    iget-object v0, p0, Lv0/u;->g:Ljava/lang/Object;
+
+    check-cast v0, Lu3/a1;
 
     .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
+    iget-object v1, v0, Lu3/a1;->g:Landroid/content/ContentResolver;
 
-    check-cast v0, Lu3/w4;
+    iget-object v2, v0, Lu3/a1;->h:Landroid/net/Uri;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    sget-object v3, Lu3/a1;->m:[Ljava/lang/String;
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    invoke-virtual/range {v1 .. v6}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
 
     .line 2
-    new-instance v1, Lu3/c6;
+    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
-    invoke-direct {v1, v0, p1, p2, p3}, Lu3/c6;-><init>(Lu3/w4;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+    move-result-object v0
+
+    goto :goto_1
 
     .line 3
-    iget-object p1, v0, Lu3/w4;->a:Ljava/util/concurrent/ExecutorService;
+    :cond_0
+    :try_start_0
+    invoke-interface {v0}, Landroid/database/Cursor;->getCount()I
 
-    invoke-interface {p1, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+    move-result v1
 
-    return-void
-.end method
+    if-nez v1, :cond_1
 
-.method public j(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
-    .locals 1
+    .line 4
+    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
+    move-result-object v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    check-cast v0, Lu3/w4;
+    .line 5
+    invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
-    invoke-virtual {v0, p1, p2}, Lu3/w4;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
+    move-object v0, v1
 
-    move-result-object p1
+    goto :goto_1
 
-    return-object p1
-.end method
+    :cond_1
+    const/16 v2, 0x100
 
-.method public k()Ljava/lang/String;
-    .locals 1
+    if-gt v1, v2, :cond_2
 
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
+    .line 6
+    :try_start_1
+    new-instance v2, Lm/a;
 
-    check-cast v0, Lu3/w4;
+    invoke-direct {v2, v1}, Lm/a;-><init>(I)V
 
-    invoke-virtual {v0}, Lu3/w4;->m()Ljava/lang/String;
+    goto :goto_0
 
-    move-result-object v0
+    .line 7
+    :cond_2
+    new-instance v2, Ljava/util/HashMap;
 
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    invoke-direct {v2, v1, v3}, Ljava/util/HashMap;-><init>(IF)V
+
+    .line 8
+    :goto_0
+    invoke-interface {v0}, Landroid/database/Cursor;->moveToNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    const/4 v1, 0x0
+
+    .line 9
+    invoke-interface {v0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v3, 0x1
+
+    invoke-interface {v0, v3}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-interface {v2, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_0
+
+    .line 10
+    :cond_3
+    invoke-interface {v0}, Landroid/database/Cursor;->close()V
+
+    move-object v0, v2
+
+    :goto_1
     return-object v0
-.end method
 
-.method public l()Ljava/lang/String;
-    .locals 1
+    :catchall_0
+    move-exception v1
 
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
+    .line 11
+    invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
-    check-cast v0, Lu3/w4;
+    goto :goto_3
 
-    invoke-virtual {v0}, Lu3/w4;->l()Ljava/lang/String;
+    :goto_2
+    throw v1
 
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public m()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
-
-    check-cast v0, Lu3/w4;
-
-    invoke-virtual {v0}, Lu3/w4;->g()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public n(Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/Map;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
-
-    check-cast v0, Lu3/w4;
-
-    invoke-virtual {v0, p1, p2, p3}, Lu3/w4;->c(Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/Map;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public o(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
-    .locals 10
-
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
-
-    check-cast v0, Lu3/w4;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    new-instance v9, Lu3/p;
-
-    const/4 v3, 0x0
-
-    const/4 v7, 0x1
-
-    const/4 v8, 0x1
-
-    move-object v1, v9
-
-    move-object v2, v0
-
-    move-object v4, p1
-
-    move-object v5, p2
-
-    move-object v6, p3
-
-    invoke-direct/range {v1 .. v8}, Lu3/p;-><init>(Lu3/w4;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;ZZ)V
-
-    .line 3
-    iget-object p1, v0, Lu3/w4;->a:Ljava/util/concurrent/ExecutorService;
-
-    invoke-interface {p1, v9}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
-
-    return-void
+    :goto_3
+    goto :goto_2
 .end method
 
 .method public synthetic onSuccess(Ljava/lang/Object;)V
@@ -360,190 +255,46 @@
     check-cast v5, Ljava/lang/String;
 
     .line 2
-    iget-object p1, p0, Lv0/u;->a:Ljava/lang/Object;
+    iget-object p1, p0, Lv0/u;->g:Ljava/lang/Object;
 
     move-object v0, p1
 
-    check-cast v0, Lj3/ql;
+    check-cast v0, Lj3/sl;
 
     .line 3
-    iget-object v0, v0, Lj3/ql;->k:Lj3/ri0;
+    iget-object v0, v0, Lj3/sl;->l:Lj3/yi0;
 
     .line 4
     move-object v1, p1
 
-    check-cast v1, Lj3/ql;
+    check-cast v1, Lj3/sl;
 
     .line 5
-    iget-object v1, v1, Lj3/ql;->i:Lj3/ng0;
+    iget-object v1, v1, Lj3/sl;->j:Lj3/ug0;
 
     .line 6
     move-object v2, p1
 
-    check-cast v2, Lj3/ql;
+    check-cast v2, Lj3/sl;
 
     .line 7
-    iget-object v2, v2, Lj3/ql;->j:Lj3/eg0;
+    iget-object v2, v2, Lj3/sl;->k:Lj3/lg0;
 
     const/4 v3, 0x0
 
     .line 8
-    check-cast p1, Lj3/ql;
+    check-cast p1, Lj3/sl;
 
     .line 9
-    iget-object p1, p1, Lj3/ql;->j:Lj3/eg0;
+    iget-object p1, p1, Lj3/sl;->k:Lj3/lg0;
 
     .line 10
-    iget-object v6, p1, Lj3/eg0;->c:Ljava/util/List;
+    iget-object v6, p1, Lj3/lg0;->c:Ljava/util/List;
 
     const-string v4, ""
 
     .line 11
-    invoke-virtual/range {v0 .. v6}, Lj3/ri0;->b(Lj3/ng0;Lj3/eg0;ZLjava/lang/String;Ljava/lang/String;Ljava/util/List;)V
+    invoke-virtual/range {v0 .. v6}, Lj3/yi0;->b(Lj3/ug0;Lj3/lg0;ZLjava/lang/String;Ljava/lang/String;Ljava/util/List;)V
 
     return-void
-.end method
-
-.method public p(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
-
-    check-cast v0, Lu3/w4;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    new-instance v1, Lu3/c;
-
-    invoke-direct {v1, v0, p1, p2, p3}, Lu3/c;-><init>(Lu3/w4;Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 3
-    iget-object p1, v0, Lu3/w4;->a:Ljava/util/concurrent/ExecutorService;
-
-    invoke-interface {p1, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
-
-    return-void
-.end method
-
-.method public q()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
-
-    check-cast v0, Lx3/p0;
-
-    invoke-virtual {v0}, Lx3/p0;->b()Lx3/l0;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lx3/l0;->q()V
-
-    return-void
-.end method
-
-.method public r()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
-
-    check-cast v0, Lx3/p0;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    return-void
-.end method
-
-.method public s()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
-
-    check-cast v0, Lx3/p0;
-
-    invoke-virtual {v0}, Lx3/p0;->b()Lx3/l0;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lx3/l0;->s()V
-
-    return-void
-.end method
-
-.method public t()Lx3/b;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
-
-    check-cast v0, Lx3/p0;
-
-    invoke-virtual {v0}, Lx3/p0;->p()Lx3/b;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public u()Lx3/m;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
-
-    check-cast v0, Lx3/p0;
-
-    invoke-virtual {v0}, Lx3/p0;->q()Lx3/m;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public v()Lx3/i3;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
-
-    check-cast v0, Lx3/p0;
-
-    invoke-virtual {v0}, Lx3/p0;->r()Lx3/i3;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public w()Lx3/z;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
-
-    check-cast v0, Lx3/p0;
-
-    invoke-virtual {v0}, Lx3/p0;->s()Lx3/z;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public x()Lx3/p3;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lv0/u;->a:Ljava/lang/Object;
-
-    check-cast v0, Lx3/p0;
-
-    .line 2
-    iget-object v0, v0, Lx3/p0;->l:Lx3/p3;
-
-    return-object v0
 .end method

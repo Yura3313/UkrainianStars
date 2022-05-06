@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method public final E0(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method public final F0(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -35,7 +35,7 @@
     if-ne p1, p4, :cond_1
 
     .line 1
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/zzbm;->J1()Lcom/google/android/gms/games/internal/zzbq;
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/zzbm;->K1()Lcom/google/android/gms/games/internal/zzbq;
 
     move-result-object p1
 
@@ -43,7 +43,7 @@
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
     .line 3
-    sget p4, Ls3/e;->a:I
+    sget p4, Ls3/h;->a:I
 
     const/4 p4, 0x1
 

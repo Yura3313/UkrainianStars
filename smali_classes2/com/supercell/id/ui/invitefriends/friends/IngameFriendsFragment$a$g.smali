@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;->j(Landroid/view/ViewGroup;I)Lwd/k1$a;
+    value = Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;->j(Landroid/view/ViewGroup;I)Lvd/k1$a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,21 +21,21 @@
         "Lle/j;",
         "Lke/l<",
         "Landroid/view/View;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lwd/k1$a;
+.field public final synthetic g:Lvd/k1$a;
 
 
 # direct methods
-.method public constructor <init>(Lwd/k1$a;)V
+.method public constructor <init>(Lvd/k1$a;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;->a:Lwd/k1$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;->g:Lvd/k1$a;
 
     const/4 p1, 0x1
 
@@ -57,10 +57,10 @@
     if-eqz p1, :cond_3
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;->a:Lwd/k1$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;->g:Lvd/k1$a;
 
     .line 3
-    iget-object p1, p1, Lwd/k1$a;->A:Landroid/view/View;
+    iget-object p1, p1, Lvd/k1$a;->B:Landroid/view/View;
 
     .line 4
     sget v1, Lcom/supercell/id/R$id;->fbExclamationMark:I
@@ -73,12 +73,12 @@
 
     const-string v1, "containerView.fbExclamationMark"
 
-    invoke-static {p1, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;->a:Lwd/k1$a;
+    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;->g:Lvd/k1$a;
 
     .line 5
-    iget-object v1, v1, Lwd/k1$a;->A:Landroid/view/View;
+    iget-object v1, v1, Lvd/k1$a;->B:Landroid/view/View;
 
     .line 6
     sget v2, Lcom/supercell/id/R$id;->fbIcon:I
@@ -91,7 +91,7 @@
 
     const-string v2, "containerView.fbIcon"
 
-    invoke-static {v1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 7
     invoke-virtual {v1}, Landroid/view/View;->getWidth()I
@@ -144,7 +144,7 @@
 
     .line 13
     :goto_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -152,7 +152,7 @@
     const-string p1, "it"
 
     .line 14
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

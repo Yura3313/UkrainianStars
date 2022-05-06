@@ -20,7 +20,7 @@
     value = {
         "Lle/i;",
         "Lke/a<",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
@@ -76,7 +76,7 @@
     check-cast v0, Lcom/supercell/id/ui/MainActivity;
 
     .line 2
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 3
     sget v1, Lcom/supercell/id/R$id;->panel:I
@@ -87,14 +87,14 @@
 
     check-cast v1, Landroid/widget/FrameLayout;
 
-    new-instance v2, Luc/x0;
+    new-instance v2, Lrc/y0;
 
-    invoke-direct {v2, v0}, Luc/x0;-><init>(Lcom/supercell/id/ui/MainActivity;)V
+    invoke-direct {v2, v0}, Lrc/y0;-><init>(Lcom/supercell/id/ui/MainActivity;)V
 
-    invoke-static {v1, v2}, Lwd/f2;->a(Landroid/view/View;Lke/l;)V
+    invoke-static {v1, v2}, Lvd/g2;->a(Landroid/view/View;Lke/l;)V
 
     .line 4
-    sget-object v0, Lbe/n;->a:Lbe/n;
+    sget-object v0, Lae/i;->a:Lae/i;
 
     return-object v0
 .end method

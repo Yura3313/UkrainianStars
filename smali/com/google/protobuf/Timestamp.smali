@@ -468,13 +468,9 @@
     .locals 1
 
     .line 1
-    sget-object p2, Lcom/google/protobuf/Timestamp$a;->a:[I
-
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
     move-result p1
-
-    aget p1, p2, p1
 
     const/4 p2, 0x1
 
@@ -597,14 +593,14 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
+    .packed-switch 0x0
         :pswitch_1
         :pswitch_0
+        :pswitch_4
+        :pswitch_6
+        :pswitch_5
+        :pswitch_3
+        :pswitch_2
     .end packed-switch
 .end method
 

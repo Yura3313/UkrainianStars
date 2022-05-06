@@ -26,27 +26,6 @@
 
 
 # direct methods
-.method private static synthetic $closeResource(Ljava/lang/Throwable;Ljava/lang/AutoCloseable;)V
-    .locals 0
-
-    if-eqz p0, :cond_0
-
-    .line 1
-    :try_start_0
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
-
-    :catchall_0
-    :goto_0
-    return-void
-.end method
-
 .method public static constructor <clinit>()V
     .locals 1
 
@@ -254,7 +233,7 @@
 .end method
 
 .method private processEnvelope(Lio/sentry/SentryEnvelope;Ljava/lang/Object;)V
-    .locals 11
+    .locals 10
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -361,9 +340,7 @@
 
     move-result v4
 
-    const/4 v6, 0x0
-
-    const-string v7, "Item failed to process."
+    const-string v6, "Item failed to process."
 
     if-eqz v4, :cond_5
 
@@ -371,38 +348,38 @@
     :try_start_0
     new-instance v4, Ljava/io/BufferedReader;
 
-    new-instance v8, Ljava/io/InputStreamReader;
+    new-instance v7, Ljava/io/InputStreamReader;
 
-    new-instance v9, Ljava/io/ByteArrayInputStream;
+    new-instance v8, Ljava/io/ByteArrayInputStream;
 
     .line 9
     invoke-virtual {v3}, Lio/sentry/SentryEnvelopeItem;->getData()[B
 
-    move-result-object v10
+    move-result-object v9
 
-    invoke-direct {v9, v10}, Ljava/io/ByteArrayInputStream;-><init>([B)V
+    invoke-direct {v8, v9}, Ljava/io/ByteArrayInputStream;-><init>([B)V
 
-    sget-object v10, Lio/sentry/OutboxSender;->UTF_8:Ljava/nio/charset/Charset;
+    sget-object v9, Lio/sentry/OutboxSender;->UTF_8:Ljava/nio/charset/Charset;
 
-    invoke-direct {v8, v9, v10}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
+    invoke-direct {v7, v8, v9}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
 
-    invoke-direct {v4, v8}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
+    invoke-direct {v4, v7}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     .line 10
     :try_start_1
-    iget-object v8, p0, Lio/sentry/OutboxSender;->serializer:Lio/sentry/ISerializer;
+    iget-object v7, p0, Lio/sentry/OutboxSender;->serializer:Lio/sentry/ISerializer;
 
-    const-class v9, Lio/sentry/SentryEvent;
+    const-class v8, Lio/sentry/SentryEvent;
 
-    invoke-interface {v8, v4, v9}, Lio/sentry/ISerializer;->deserialize(Ljava/io/Reader;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-interface {v7, v4, v8}, Lio/sentry/ISerializer;->deserialize(Ljava/io/Reader;Ljava/lang/Class;)Ljava/lang/Object;
 
-    move-result-object v8
+    move-result-object v7
 
-    check-cast v8, Lio/sentry/SentryEvent;
+    check-cast v7, Lio/sentry/SentryEvent;
 
-    if-nez v8, :cond_2
+    if-nez v7, :cond_2
 
     .line 11
     invoke-direct {p0, v3, v1}, Lio/sentry/OutboxSender;->logEnvelopeItemNull(Lio/sentry/SentryEnvelopeItem;I)V
@@ -430,18 +407,18 @@
 
     move-result-object v3
 
-    invoke-virtual {v8}, Lio/sentry/SentryBaseEvent;->getEventId()Lio/sentry/protocol/SentryId;
+    invoke-virtual {v7}, Lio/sentry/SentryBaseEvent;->getEventId()Lio/sentry/protocol/SentryId;
 
-    move-result-object v9
+    move-result-object v8
 
-    invoke-virtual {v3, v9}, Lio/sentry/protocol/SentryId;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v8}, Lio/sentry/protocol/SentryId;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-nez v3, :cond_3
 
     .line 14
-    invoke-virtual {v8}, Lio/sentry/SentryBaseEvent;->getEventId()Lio/sentry/protocol/SentryId;
+    invoke-virtual {v7}, Lio/sentry/SentryBaseEvent;->getEventId()Lio/sentry/protocol/SentryId;
 
     move-result-object v3
 
@@ -451,9 +428,9 @@
 
     .line 15
     :try_start_2
-    invoke-static {v6, v4}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v4}, Ljava/io/Reader;->close()V
     :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
     goto/16 :goto_0
 
@@ -462,7 +439,7 @@
     :try_start_3
     iget-object v3, p0, Lio/sentry/OutboxSender;->hub:Lio/sentry/IHub;
 
-    invoke-interface {v3, v8, p2}, Lio/sentry/IHub;->captureEvent(Lio/sentry/SentryEvent;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+    invoke-interface {v3, v7, p2}, Lio/sentry/IHub;->captureEvent(Lio/sentry/SentryEvent;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
     .line 17
     invoke-direct {p0, v1}, Lio/sentry/OutboxSender;->logItemCaptured(I)V
@@ -475,7 +452,7 @@
     if-nez v3, :cond_4
 
     .line 19
-    invoke-virtual {v8}, Lio/sentry/SentryBaseEvent;->getEventId()Lio/sentry/protocol/SentryId;
+    invoke-virtual {v7}, Lio/sentry/SentryBaseEvent;->getEventId()Lio/sentry/protocol/SentryId;
 
     move-result-object v3
 
@@ -485,15 +462,15 @@
 
     .line 20
     :try_start_4
-    invoke-static {v6, v4}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v4}, Ljava/io/Reader;->close()V
 
     goto/16 :goto_4
 
     :cond_4
     :goto_1
-    invoke-static {v6, v4}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v4}, Ljava/io/Reader;->close()V
     :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
+    .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
     goto/16 :goto_3
 
@@ -502,95 +479,90 @@
 
     .line 21
     :try_start_5
-    throw v3
+    invoke-virtual {v4}, Ljava/io/Reader;->close()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
     :catchall_1
-    move-exception v6
-
-    .line 22
     :try_start_6
-    invoke-static {v3, v4}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    throw v6
+    throw v3
     :try_end_6
-    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_0
+    .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
-    :catch_0
+    :catchall_2
     move-exception v3
 
-    .line 23
+    .line 22
     iget-object v4, p0, Lio/sentry/OutboxSender;->logger:Lio/sentry/ILogger;
 
-    sget-object v6, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
+    sget-object v7, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
 
-    invoke-interface {v4, v6, v7, v3}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {v4, v7, v6, v3}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto/16 :goto_3
 
-    .line 24
+    .line 23
     :cond_5
     sget-object v4, Lio/sentry/SentryItemType;->Transaction:Lio/sentry/SentryItemType;
 
     invoke-virtual {v3}, Lio/sentry/SentryEnvelopeItem;->getHeader()Lio/sentry/SentryEnvelopeItemHeader;
 
-    move-result-object v8
+    move-result-object v7
 
-    invoke-virtual {v8}, Lio/sentry/SentryEnvelopeItemHeader;->getType()Lio/sentry/SentryItemType;
+    invoke-virtual {v7}, Lio/sentry/SentryEnvelopeItemHeader;->getType()Lio/sentry/SentryItemType;
 
-    move-result-object v8
+    move-result-object v7
 
-    invoke-virtual {v4, v8}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v7}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_a
 
-    .line 25
+    .line 24
     :try_start_7
     new-instance v4, Ljava/io/BufferedReader;
 
-    new-instance v8, Ljava/io/InputStreamReader;
+    new-instance v7, Ljava/io/InputStreamReader;
 
-    new-instance v9, Ljava/io/ByteArrayInputStream;
+    new-instance v8, Ljava/io/ByteArrayInputStream;
 
-    .line 26
+    .line 25
     invoke-virtual {v3}, Lio/sentry/SentryEnvelopeItem;->getData()[B
 
-    move-result-object v10
+    move-result-object v9
 
-    invoke-direct {v9, v10}, Ljava/io/ByteArrayInputStream;-><init>([B)V
+    invoke-direct {v8, v9}, Ljava/io/ByteArrayInputStream;-><init>([B)V
 
-    sget-object v10, Lio/sentry/OutboxSender;->UTF_8:Ljava/nio/charset/Charset;
+    sget-object v9, Lio/sentry/OutboxSender;->UTF_8:Ljava/nio/charset/Charset;
 
-    invoke-direct {v8, v9, v10}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
+    invoke-direct {v7, v8, v9}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
 
-    invoke-direct {v4, v8}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
+    invoke-direct {v4, v7}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
     :try_end_7
-    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_1
+    .catchall {:try_start_7 .. :try_end_7} :catchall_5
+
+    .line 26
+    :try_start_8
+    iget-object v7, p0, Lio/sentry/OutboxSender;->serializer:Lio/sentry/ISerializer;
+
+    const-class v8, Lio/sentry/protocol/SentryTransaction;
 
     .line 27
-    :try_start_8
-    iget-object v8, p0, Lio/sentry/OutboxSender;->serializer:Lio/sentry/ISerializer;
+    invoke-interface {v7, v4, v8}, Lio/sentry/ISerializer;->deserialize(Ljava/io/Reader;Ljava/lang/Class;)Ljava/lang/Object;
 
-    const-class v9, Lio/sentry/protocol/SentryTransaction;
+    move-result-object v7
+
+    check-cast v7, Lio/sentry/protocol/SentryTransaction;
+
+    if-nez v7, :cond_6
 
     .line 28
-    invoke-interface {v8, v4, v9}, Lio/sentry/ISerializer;->deserialize(Ljava/io/Reader;Ljava/lang/Class;)Ljava/lang/Object;
-
-    move-result-object v8
-
-    check-cast v8, Lio/sentry/protocol/SentryTransaction;
-
-    if-nez v8, :cond_6
-
-    .line 29
     invoke-direct {p0, v3, v1}, Lio/sentry/OutboxSender;->logEnvelopeItemNull(Lio/sentry/SentryEnvelopeItem;I)V
 
     goto :goto_2
 
-    .line 30
+    .line 29
     :cond_6
     invoke-virtual {p1}, Lio/sentry/SentryEnvelope;->getHeader()Lio/sentry/SentryEnvelopeHeader;
 
@@ -602,7 +574,7 @@
 
     if-eqz v3, :cond_7
 
-    .line 31
+    .line 30
     invoke-virtual {p1}, Lio/sentry/SentryEnvelope;->getHeader()Lio/sentry/SentryEnvelopeHeader;
 
     move-result-object v3
@@ -611,37 +583,37 @@
 
     move-result-object v3
 
-    invoke-virtual {v8}, Lio/sentry/SentryBaseEvent;->getEventId()Lio/sentry/protocol/SentryId;
+    invoke-virtual {v7}, Lio/sentry/SentryBaseEvent;->getEventId()Lio/sentry/protocol/SentryId;
 
-    move-result-object v9
+    move-result-object v8
 
-    invoke-virtual {v3, v9}, Lio/sentry/protocol/SentryId;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v8}, Lio/sentry/protocol/SentryId;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-nez v3, :cond_7
 
-    .line 32
-    invoke-virtual {v8}, Lio/sentry/SentryBaseEvent;->getEventId()Lio/sentry/protocol/SentryId;
+    .line 31
+    invoke-virtual {v7}, Lio/sentry/SentryBaseEvent;->getEventId()Lio/sentry/protocol/SentryId;
 
     move-result-object v3
 
     invoke-direct {p0, p1, v3, v1}, Lio/sentry/OutboxSender;->logUnexpectedEventId(Lio/sentry/SentryEnvelope;Lio/sentry/protocol/SentryId;I)V
     :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_2
+    .catchall {:try_start_8 .. :try_end_8} :catchall_3
 
-    .line 33
+    .line 32
     :try_start_9
-    invoke-static {v6, v4}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v4}, Ljava/io/Reader;->close()V
     :try_end_9
-    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_1
+    .catchall {:try_start_9 .. :try_end_9} :catchall_5
 
     goto/16 :goto_0
 
-    .line 34
+    .line 33
     :cond_7
     :try_start_a
-    invoke-virtual {v8}, Lio/sentry/SentryBaseEvent;->getContexts()Lio/sentry/protocol/Contexts;
+    invoke-virtual {v7}, Lio/sentry/SentryBaseEvent;->getContexts()Lio/sentry/protocol/Contexts;
 
     move-result-object v3
 
@@ -651,8 +623,8 @@
 
     if-eqz v3, :cond_8
 
-    .line 35
-    invoke-virtual {v8}, Lio/sentry/SentryBaseEvent;->getContexts()Lio/sentry/protocol/Contexts;
+    .line 34
+    invoke-virtual {v7}, Lio/sentry/SentryBaseEvent;->getContexts()Lio/sentry/protocol/Contexts;
 
     move-result-object v3
 
@@ -660,86 +632,89 @@
 
     move-result-object v3
 
-    sget-object v9, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    sget-object v8, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    invoke-virtual {v3, v9}, Lio/sentry/SpanContext;->setSampled(Ljava/lang/Boolean;)V
+    invoke-virtual {v3, v8}, Lio/sentry/SpanContext;->setSampled(Ljava/lang/Boolean;)V
 
-    .line 36
+    .line 35
     :cond_8
     iget-object v3, p0, Lio/sentry/OutboxSender;->hub:Lio/sentry/IHub;
 
-    invoke-interface {v3, v8, p2}, Lio/sentry/IHub;->captureTransaction(Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+    invoke-virtual {p1}, Lio/sentry/SentryEnvelope;->getHeader()Lio/sentry/SentryEnvelopeHeader;
 
-    .line 37
+    move-result-object v8
+
+    invoke-virtual {v8}, Lio/sentry/SentryEnvelopeHeader;->getTrace()Lio/sentry/TraceState;
+
+    move-result-object v8
+
+    invoke-interface {v3, v7, v8, p2}, Lio/sentry/IHub;->captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+
+    .line 36
     invoke-direct {p0, v1}, Lio/sentry/OutboxSender;->logItemCaptured(I)V
 
-    .line 38
+    .line 37
     invoke-direct {p0, p2}, Lio/sentry/OutboxSender;->waitFlush(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-nez v3, :cond_9
 
-    .line 39
-    invoke-virtual {v8}, Lio/sentry/SentryBaseEvent;->getEventId()Lio/sentry/protocol/SentryId;
+    .line 38
+    invoke-virtual {v7}, Lio/sentry/SentryBaseEvent;->getEventId()Lio/sentry/protocol/SentryId;
 
     move-result-object v3
 
     invoke-direct {p0, v3}, Lio/sentry/OutboxSender;->logTimeout(Lio/sentry/protocol/SentryId;)V
     :try_end_a
-    .catchall {:try_start_a .. :try_end_a} :catchall_2
+    .catchall {:try_start_a .. :try_end_a} :catchall_3
 
-    .line 40
+    .line 39
     :try_start_b
-    invoke-static {v6, v4}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v4}, Ljava/io/Reader;->close()V
 
     goto/16 :goto_4
 
     :cond_9
     :goto_2
-    invoke-static {v6, v4}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v4}, Ljava/io/Reader;->close()V
     :try_end_b
-    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_1
+    .catchall {:try_start_b .. :try_end_b} :catchall_5
 
     goto :goto_3
 
-    :catchall_2
+    :catchall_3
+    move-exception v3
+
+    .line 40
+    :try_start_c
+    invoke-virtual {v4}, Ljava/io/Reader;->close()V
+    :try_end_c
+    .catchall {:try_start_c .. :try_end_c} :catchall_4
+
+    :catchall_4
+    :try_start_d
+    throw v3
+    :try_end_d
+    .catchall {:try_start_d .. :try_end_d} :catchall_5
+
+    :catchall_5
     move-exception v3
 
     .line 41
-    :try_start_c
-    throw v3
-    :try_end_c
-    .catchall {:try_start_c .. :try_end_c} :catchall_3
-
-    :catchall_3
-    move-exception v6
-
-    .line 42
-    :try_start_d
-    invoke-static {v3, v4}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    throw v6
-    :try_end_d
-    .catch Ljava/lang/Exception; {:try_start_d .. :try_end_d} :catch_1
-
-    :catch_1
-    move-exception v3
-
-    .line 43
     iget-object v4, p0, Lio/sentry/OutboxSender;->logger:Lio/sentry/ILogger;
 
-    sget-object v6, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
+    sget-object v7, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
 
-    invoke-interface {v4, v6, v7, v3}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {v4, v7, v6, v3}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_3
 
-    .line 44
+    .line 42
     :cond_a
     new-instance v4, Lio/sentry/SentryEnvelope;
 
-    .line 45
+    .line 43
     invoke-virtual {p1}, Lio/sentry/SentryEnvelope;->getHeader()Lio/sentry/SentryEnvelopeHeader;
 
     move-result-object v6
@@ -758,12 +733,12 @@
 
     invoke-direct {v4, v6, v7, v3}, Lio/sentry/SentryEnvelope;-><init>(Lio/sentry/protocol/SentryId;Lio/sentry/protocol/SdkVersion;Lio/sentry/SentryEnvelopeItem;)V
 
-    .line 46
+    .line 44
     iget-object v6, p0, Lio/sentry/OutboxSender;->hub:Lio/sentry/IHub;
 
     invoke-interface {v6, v4, p2}, Lio/sentry/IHub;->captureEnvelope(Lio/sentry/SentryEnvelope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
 
-    .line 47
+    .line 45
     iget-object v4, p0, Lio/sentry/OutboxSender;->logger:Lio/sentry/ILogger;
 
     sget-object v6, Lio/sentry/SentryLevel;->DEBUG:Lio/sentry/SentryLevel;
@@ -772,7 +747,7 @@
 
     new-array v7, v7, [Ljava/lang/Object;
 
-    .line 48
+    .line 46
     invoke-virtual {v3}, Lio/sentry/SentryEnvelopeItem;->getHeader()Lio/sentry/SentryEnvelopeItemHeader;
 
     move-result-object v8
@@ -787,7 +762,7 @@
 
     aput-object v8, v7, v5
 
-    .line 49
+    .line 47
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v8
@@ -796,24 +771,24 @@
 
     const-string v8, "%s item %d is being captured."
 
-    .line 50
+    .line 48
     invoke-interface {v4, v6, v8, v7}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 51
+    .line 49
     invoke-direct {p0, p2}, Lio/sentry/OutboxSender;->waitFlush(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-nez v4, :cond_b
 
-    .line 52
+    .line 50
     iget-object p1, p0, Lio/sentry/OutboxSender;->logger:Lio/sentry/ILogger;
 
     sget-object p2, Lio/sentry/SentryLevel;->WARNING:Lio/sentry/SentryLevel;
 
     new-array v0, v2, [Ljava/lang/Object;
 
-    .line 53
+    .line 51
     invoke-virtual {v3}, Lio/sentry/SentryEnvelopeItem;->getHeader()Lio/sentry/SentryEnvelopeItemHeader;
 
     move-result-object v1
@@ -830,19 +805,19 @@
 
     const-string v1, "Timed out waiting for item type submission: %s"
 
-    .line 54
+    .line 52
     invoke-interface {p1, p2, v1, v0}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
 
     goto :goto_4
 
-    .line 55
+    .line 53
     :cond_b
     :goto_3
     instance-of v3, p2, Lio/sentry/hints/SubmissionResult;
 
     if-eqz v3, :cond_c
 
-    .line 56
+    .line 54
     move-object v3, p2
 
     check-cast v3, Lio/sentry/hints/SubmissionResult;
@@ -853,14 +828,14 @@
 
     if-nez v3, :cond_c
 
-    .line 57
+    .line 55
     iget-object p1, p0, Lio/sentry/OutboxSender;->logger:Lio/sentry/ILogger;
 
     sget-object p2, Lio/sentry/SentryLevel;->WARNING:Lio/sentry/SentryLevel;
 
     new-array v0, v2, [Ljava/lang/Object;
 
-    .line 58
+    .line 56
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -869,18 +844,18 @@
 
     const-string v1, "Envelope had a failed capture at item %d. No more items will be sent."
 
-    .line 59
+    .line 57
     invoke-interface {p1, p2, v1, v0}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
 
     goto :goto_4
 
-    .line 60
+    .line 58
     :cond_c
     instance-of v3, p2, Lio/sentry/hints/Resettable;
 
     if-eqz v3, :cond_0
 
-    .line 61
+    .line 59
     move-object v3, p2
 
     check-cast v3, Lio/sentry/hints/Resettable;
@@ -977,7 +952,7 @@
 .end method
 
 .method public processFile(Ljava/io/File;Ljava/lang/Object;)V
-    .locals 10
+    .locals 9
 
     const-string v0, "Failed to delete: %s"
 
@@ -1034,66 +1009,64 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    const/4 v4, 0x0
-
     .line 5
     :try_start_1
-    iget-object v5, p0, Lio/sentry/OutboxSender;->envelopeReader:Lio/sentry/IEnvelopeReader;
+    iget-object v4, p0, Lio/sentry/OutboxSender;->envelopeReader:Lio/sentry/IEnvelopeReader;
 
-    invoke-interface {v5, v1}, Lio/sentry/IEnvelopeReader;->read(Ljava/io/InputStream;)Lio/sentry/SentryEnvelope;
+    invoke-interface {v4, v1}, Lio/sentry/IEnvelopeReader;->read(Ljava/io/InputStream;)Lio/sentry/SentryEnvelope;
 
-    move-result-object v5
+    move-result-object v4
 
-    if-nez v5, :cond_1
+    if-nez v4, :cond_1
 
     .line 6
-    iget-object v5, p0, Lio/sentry/OutboxSender;->logger:Lio/sentry/ILogger;
+    iget-object v4, p0, Lio/sentry/OutboxSender;->logger:Lio/sentry/ILogger;
 
-    sget-object v6, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
+    sget-object v5, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
 
-    const-string v7, "Stream from path %s resulted in a null envelope."
+    const-string v6, "Stream from path %s resulted in a null envelope."
 
-    new-array v8, v3, [Ljava/lang/Object;
+    new-array v7, v3, [Ljava/lang/Object;
 
     .line 7
     invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v8
 
-    aput-object v9, v8, v2
+    aput-object v8, v7, v2
 
     .line 8
-    invoke-interface {v5, v6, v7, v8}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {v4, v5, v6, v7}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
 
     goto :goto_0
 
     .line 9
     :cond_1
-    invoke-direct {p0, v5, p2}, Lio/sentry/OutboxSender;->processEnvelope(Lio/sentry/SentryEnvelope;Ljava/lang/Object;)V
+    invoke-direct {p0, v4, p2}, Lio/sentry/OutboxSender;->processEnvelope(Lio/sentry/SentryEnvelope;Ljava/lang/Object;)V
 
     .line 10
-    iget-object v5, p0, Lio/sentry/OutboxSender;->logger:Lio/sentry/ILogger;
+    iget-object v4, p0, Lio/sentry/OutboxSender;->logger:Lio/sentry/ILogger;
 
-    sget-object v6, Lio/sentry/SentryLevel;->DEBUG:Lio/sentry/SentryLevel;
+    sget-object v5, Lio/sentry/SentryLevel;->DEBUG:Lio/sentry/SentryLevel;
 
-    const-string v7, "File \'%s\' is done."
+    const-string v6, "File \'%s\' is done."
 
-    new-array v8, v3, [Ljava/lang/Object;
+    new-array v7, v3, [Ljava/lang/Object;
 
     invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v8
 
-    aput-object v9, v8, v2
+    aput-object v8, v7, v2
 
-    invoke-interface {v5, v6, v7, v8}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {v4, v5, v6, v7}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 11
     :goto_0
     :try_start_2
-    invoke-static {v4, v1}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
@@ -1164,18 +1137,13 @@
 
     .line 17
     :try_start_4
-    throw v4
+    invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
     :catchall_1
-    move-exception v5
-
-    .line 18
     :try_start_5
-    invoke-static {v4, v1}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    throw v5
+    throw v4
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_1
     .catchall {:try_start_5 .. :try_end_5} :catchall_2
@@ -1188,7 +1156,7 @@
     :catch_1
     move-exception v1
 
-    .line 19
+    .line 18
     :try_start_6
     iget-object v4, p0, Lio/sentry/OutboxSender;->logger:Lio/sentry/ILogger;
 
@@ -1200,12 +1168,12 @@
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
-    .line 20
+    .line 19
     instance-of v1, p2, Lio/sentry/hints/Retryable;
 
     if-eqz v1, :cond_2
 
-    .line 21
+    .line 20
     check-cast p2, Lio/sentry/hints/Retryable;
 
     invoke-interface {p2}, Lio/sentry/hints/Retryable;->isRetry()Z
@@ -1214,7 +1182,7 @@
 
     if-nez p2, :cond_3
 
-    .line 22
+    .line 21
     :try_start_7
     invoke-virtual {p1}, Ljava/io/File;->delete()Z
 
@@ -1222,7 +1190,7 @@
 
     if-nez p2, :cond_3
 
-    .line 23
+    .line 22
     iget-object p2, p0, Lio/sentry/OutboxSender;->logger:Lio/sentry/ILogger;
 
     new-array v1, v3, [Ljava/lang/Object;
@@ -1242,7 +1210,7 @@
     :catch_2
     move-exception p2
 
-    .line 24
+    .line 23
     iget-object v1, p0, Lio/sentry/OutboxSender;->logger:Lio/sentry/ILogger;
 
     sget-object v4, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
@@ -1259,7 +1227,7 @@
 
     goto :goto_1
 
-    .line 25
+    .line 24
     :cond_2
     iget-object p1, p0, Lio/sentry/OutboxSender;->logger:Lio/sentry/ILogger;
 
@@ -1269,13 +1237,13 @@
     :goto_1
     return-void
 
-    .line 26
+    .line 25
     :goto_2
     instance-of v4, p2, Lio/sentry/hints/Retryable;
 
     if-eqz v4, :cond_4
 
-    .line 27
+    .line 26
     check-cast p2, Lio/sentry/hints/Retryable;
 
     invoke-interface {p2}, Lio/sentry/hints/Retryable;->isRetry()Z
@@ -1284,7 +1252,7 @@
 
     if-nez p2, :cond_5
 
-    .line 28
+    .line 27
     :try_start_8
     invoke-virtual {p1}, Ljava/io/File;->delete()Z
 
@@ -1292,7 +1260,7 @@
 
     if-nez p2, :cond_5
 
-    .line 29
+    .line 28
     iget-object p2, p0, Lio/sentry/OutboxSender;->logger:Lio/sentry/ILogger;
 
     sget-object v4, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
@@ -1314,7 +1282,7 @@
     :catch_3
     move-exception p2
 
-    .line 30
+    .line 29
     iget-object v4, p0, Lio/sentry/OutboxSender;->logger:Lio/sentry/ILogger;
 
     sget-object v5, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
@@ -1331,12 +1299,13 @@
 
     goto :goto_3
 
-    .line 31
+    .line 30
     :cond_4
     iget-object p1, p0, Lio/sentry/OutboxSender;->logger:Lio/sentry/ILogger;
 
     invoke-static {p1, p2}, Lio/sentry/util/LogUtils;->logIfNotRetryable(Lio/sentry/ILogger;Ljava/lang/Object;)V
 
+    .line 31
     :cond_5
     :goto_3
     throw v1

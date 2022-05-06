@@ -176,7 +176,7 @@
 
     invoke-direct {p2, p0, v2, v0}, Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog$4;-><init>(Lcom/kakaogame/promotion/EndingPromotionManager$EndingPopupDialog;Landroid/widget/ImageView;Landroid/widget/ImageView;)V
 
-    invoke-static {p1, v2, p2}, Lcom/kakaogame/ui/ImageDownloader;->displayImage(Ljava/lang/String;Landroid/widget/ImageView;Ljc/a;)V
+    invoke-static {p1, v2, p2}, Lcom/kakaogame/ui/ImageDownloader;->displayImage(Ljava/lang/String;Landroid/widget/ImageView;Lgc/a;)V
 
     goto :goto_0
 

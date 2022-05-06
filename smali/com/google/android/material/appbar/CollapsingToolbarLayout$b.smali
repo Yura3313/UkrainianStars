@@ -41,16 +41,16 @@
     .line 1
     iget-object p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$b;->a:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
-    iput p2, p1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->A:I
+    iput p2, p1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->B:I
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->B:Lf0/a0;
+    iget-object p1, p1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->C:Lf0/z;
 
     const/4 v0, 0x0
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p1}, Lf0/a0;->g()I
+    invoke-virtual {p1}, Lf0/z;->g()I
 
     move-result p1
 
@@ -133,7 +133,7 @@
 
     move-result v3
 
-    invoke-static {v4, v0, v3}, La0/a;->c(III)I
+    invoke-static {v4, v0, v3}, La0/a;->b(III)I
 
     move-result v3
 
@@ -154,14 +154,14 @@
     .line 13
     iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$b;->a:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
-    iget-object v1, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->t:Landroid/graphics/drawable/Drawable;
+    iget-object v1, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->u:Landroid/graphics/drawable/Drawable;
 
     if-eqz v1, :cond_4
 
     if-lez p1, :cond_4
 
     .line 14
-    sget-object v1, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 15
     invoke-virtual {v0}, Landroid/view/View;->postInvalidateOnAnimation()V
@@ -177,7 +177,7 @@
 
     iget-object v1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$b;->a:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
-    sget-object v2, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v2, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 18
     invoke-virtual {v1}, Landroid/view/View;->getMinimumHeight()I
@@ -191,7 +191,7 @@
     .line 19
     iget-object p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$b;->a:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
-    iget-object p1, p1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->p:Lcom/google/android/material/internal/a;
+    iget-object p1, p1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->q:Lcom/google/android/material/internal/a;
 
     invoke-static {p2}, Ljava/lang/Math;->abs(I)I
 

@@ -1,126 +1,138 @@
 .class public final Ly4/c0;
-.super Ly4/b0;
+.super Ljava/lang/Object;
 
 
-# instance fields
-.field public final a:Ly4/b0;
-
-.field public final b:J
-
-.field public final h:J
+# static fields
+.field public static final a:Ly4/b;
 
 
 # direct methods
-.method public constructor <init>(Ly4/b0;JJ)V
-    .locals 0
-
-    invoke-direct {p0}, Ly4/b0;-><init>()V
-
-    iput-object p1, p0, Ly4/c0;->a:Ly4/b0;
-
-    invoke-virtual {p0, p2, p3}, Ly4/c0;->d(J)J
-
-    move-result-wide p1
-
-    iput-wide p1, p0, Ly4/c0;->b:J
-
-    add-long/2addr p1, p4
-
-    invoke-virtual {p0, p1, p2}, Ly4/c0;->d(J)J
-
-    move-result-wide p1
-
-    iput-wide p1, p0, Ly4/c0;->h:J
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a()J
-    .locals 4
-
-    iget-wide v0, p0, Ly4/c0;->h:J
-
-    iget-wide v2, p0, Ly4/c0;->b:J
-
-    sub-long/2addr v0, v2
-
-    return-wide v0
-.end method
-
-.method public final b(JJ)Ljava/io/InputStream;
+.method public static constructor <clinit>()V
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 
-    iget-wide v0, p0, Ly4/c0;->b:J
+    new-instance v0, Ly4/b;
 
-    add-long/2addr v0, p1
+    const-string v1, "PhoneskyVerificationUtils"
 
-    invoke-virtual {p0, v0, v1}, Ly4/c0;->d(J)J
+    invoke-direct {v0, v1}, Ly4/b;-><init>(Ljava/lang/String;)V
 
-    move-result-wide p1
-
-    add-long/2addr p3, p1
-
-    invoke-virtual {p0, p3, p4}, Ly4/c0;->d(J)J
-
-    move-result-wide p3
-
-    iget-object v0, p0, Ly4/c0;->a:Ly4/b0;
-
-    sub-long/2addr p3, p1
-
-    invoke-virtual {v0, p1, p2, p3, p4}, Ly4/b0;->b(JJ)Ljava/io/InputStream;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final close()V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    sput-object v0, Ly4/c0;->a:Ly4/b;
 
     return-void
 .end method
 
-.method public final d(J)J
-    .locals 3
+.method public static a(Landroid/content/Context;)Z
+    .locals 5
 
-    const-wide/16 v0, 0x0
+    const/4 v0, 0x0
 
-    cmp-long v2, p1, v0
+    :try_start_0
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
-    if-ltz v2, :cond_1
+    move-result-object p0
 
-    iget-object v0, p0, Ly4/c0;->a:Ly4/b0;
+    const-string v1, "com.android.vending"
 
-    invoke-virtual {v0}, Ly4/b0;->a()J
+    const/16 v2, 0x40
 
-    move-result-wide v0
+    invoke-virtual {p0, v1, v2}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
-    cmp-long v2, p1, v0
+    move-result-object p0
 
-    if-lez v2, :cond_0
+    iget-object p0, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
 
-    iget-object p1, p0, Ly4/c0;->a:Ly4/b0;
+    if-nez p0, :cond_0
 
-    invoke-virtual {p1}, Ly4/b0;->a()J
-
-    move-result-wide p1
+    goto :goto_2
 
     :cond_0
-    return-wide p1
+    array-length v1, p0
+
+    if-eqz v1, :cond_3
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, v1, :cond_2
+
+    aget-object v3, p0, v2
+
+    invoke-virtual {v3}, Landroid/content/pm/Signature;->toByteArray()[B
+
+    move-result-object v3
+
+    :try_start_1
+    const-string v4, "SHA-256"
+
+    .line 1
+    invoke-static {v4}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v4
+    :try_end_1
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_1 .. :try_end_1} :catch_0
+
+    invoke-virtual {v4, v3}, Ljava/security/MessageDigest;->update([B)V
+
+    invoke-virtual {v4}, Ljava/security/MessageDigest;->digest()[B
+
+    move-result-object v3
+
+    const/16 v4, 0xb
+
+    invoke-static {v3, v4}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
+
+    move-result-object v3
+
+    goto :goto_1
+
+    :catch_0
+    const-string v3, ""
+
+    :goto_1
+    const-string v4, "8P1sW0EPJcslw7UzRsiXL64w-O50Ed-RBICtay1g24M"
+
+    .line 2
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_1
+
+    const-string v4, "GXWy8XF3vIml3_MfnmSmyuKBpT3B0dWbHRR_4cgq-gA"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_1
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
 
     :cond_1
-    return-wide v0
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_2
+    return v0
+
+    :cond_3
+    :goto_2
+    sget-object p0, Ly4/c0;->a:Ly4/b;
+
+    new-array v1, v0, [Ljava/lang/Object;
+
+    const/4 v2, 0x5
+
+    const-string v3, "Phonesky package is not signed -- possibly self-built package. Could not verify."
+
+    .line 3
+    invoke-virtual {p0, v2, v3, v1}, Ly4/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+
+    :catch_1
+    return v0
 .end method

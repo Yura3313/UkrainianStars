@@ -45,9 +45,9 @@
     iput-object p3, p0, Lj3/f;->c:Ljava/lang/Object;
 
     .line 5
-    sget-object p1, Lj3/w41;->j:Lj3/w41;
+    sget-object p1, Lj3/t51;->j:Lj3/t51;
 
-    iget-object p1, p1, Lj3/w41;->d:Lj3/k;
+    iget-object p1, p1, Lj3/t51;->d:Lj3/k;
 
     .line 6
     iget-object p1, p1, Lj3/k;->a:Ljava/util/Collection;
@@ -127,9 +127,9 @@
     move-result-object p0
 
     .line 2
-    sget-object v0, Lj3/w41;->j:Lj3/w41;
+    sget-object v0, Lj3/t51;->j:Lj3/t51;
 
-    iget-object v0, v0, Lj3/w41;->d:Lj3/k;
+    iget-object v0, v0, Lj3/t51;->d:Lj3/k;
 
     .line 3
     iget-object v0, v0, Lj3/k;->c:Ljava/util/Collection;

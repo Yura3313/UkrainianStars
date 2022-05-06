@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
-.field public final synthetic b:Landroid/content/Context;
+.field public final synthetic h:Landroid/content/Context;
 
 
 # direct methods
@@ -17,9 +17,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/helpshift/d;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/helpshift/d;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/helpshift/d;->b:Landroid/content/Context;
+    iput-object p2, p0, Lcom/helpshift/d;->h:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,11 +34,11 @@
     const-string v0, "Registering push token : "
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/helpshift/d;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/helpshift/d;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -51,18 +51,18 @@
     const-string v2, "Helpshift_CoreInternal"
 
     .line 2
-    invoke-static {v2, v0, v1, v1}, Lce/z;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v0, v1, v1}, Lie/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     .line 3
     sget-object v0, Lcom/helpshift/CoreInternal;->a:Lcom/helpshift/a$a;
 
-    iget-object v1, p0, Lcom/helpshift/d;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/helpshift/d;->h:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/helpshift/d;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/helpshift/d;->g:Ljava/lang/String;
 
-    check-cast v0, Lla/c0;
+    check-cast v0, Lja/c0;
 
-    invoke-virtual {v0, v1, v2}, Lla/c0;->f(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lja/c0;->f(Landroid/content/Context;Ljava/lang/String;)V
 
     return-void
 .end method

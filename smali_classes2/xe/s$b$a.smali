@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lxe/s$b;
+.field public final synthetic g:Lxe/s$b;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lxe/s$b$a;->a:Lxe/s$b;
+    iput-object p1, p0, Lxe/s$b$a;->g:Lxe/s$b;
 
     invoke-direct {p0, p2}, Lokio/ForwardingSource;-><init>(Lokio/Source;)V
 
@@ -54,9 +54,9 @@
     move-exception p1
 
     .line 2
-    iget-object p2, p0, Lxe/s$b$a;->a:Lxe/s$b;
+    iget-object p2, p0, Lxe/s$b$a;->g:Lxe/s$b;
 
-    iput-object p1, p2, Lxe/s$b;->h:Ljava/io/IOException;
+    iput-object p1, p2, Lxe/s$b;->i:Ljava/io/IOException;
 
     .line 3
     throw p1

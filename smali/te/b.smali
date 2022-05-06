@@ -12,11 +12,11 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lp5/b0;
+    new-instance v0, Lte/w;
 
     const-string v1, "NO_DECISION"
 
-    invoke-direct {v0, v1}, Lp5/b0;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lte/w;-><init>(Ljava/lang/String;)V
 
     sput-object v0, Lte/b;->a:Ljava/lang/Object;
 

@@ -7,38 +7,38 @@
 
 
 # virtual methods
-.method public abstract K()I
+.method public abstract M()I
 .end method
 
-.method public abstract K0()Z
+.method public abstract N()Z
 .end method
 
-.method public abstract M()Z
+.method public abstract N0()Z
 .end method
 
-.method public abstract U1()I
+.method public abstract X1()I
 .end method
 
-.method public abstract X1()Lcom/google/android/gms/games/internal/player/StockProfileImage;
+.method public abstract a2()Lcom/google/android/gms/games/internal/player/StockProfileImage;
 .end method
 
-.method public abstract Z()I
+.method public abstract b0()I
 .end method
 
-.method public abstract m0()Z
+.method public abstract i()Z
 .end method
 
-.method public abstract u0()Z
+.method public abstract n0()Z
 .end method
 
-.method public abstract w1()Z
+.method public abstract w0()Z
 .end method
 
-.method public abstract w2()Z
+.method public abstract y1()Z
 .end method
 
-.method public abstract y()Ljava/lang/String;
+.method public abstract y2()Z
 .end method
 
-.method public abstract zzv()Z
+.method public abstract z()Ljava/lang/String;
 .end method

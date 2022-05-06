@@ -1,5 +1,5 @@
 .class public Lc7/f;
-.super Ly7/g;
+.super Lz7/g;
 .source "JavaCore.java"
 
 
@@ -18,7 +18,7 @@
 
     iput-object p2, p0, Lc7/f;->b:Lcom/helpshift/util/h;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -32,11 +32,11 @@
     :try_start_0
     iget-object v0, p0, Lc7/f;->c:Lc7/h;
 
-    invoke-virtual {v0}, Lc7/h;->e()Lr8/b;
+    invoke-virtual {v0}, Lc7/h;->e()Ls8/b;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lr8/b;->n()Lcom/helpshift/util/a0;
+    invoke-virtual {v0}, Ls8/b;->n()Lcom/helpshift/util/a0;
 
     move-result-object v0
     :try_end_0
@@ -61,7 +61,7 @@
     .line 4
     iget-object v1, p0, Lc7/f;->b:Lcom/helpshift/util/h;
 
-    invoke-interface {v1, v0}, Lcom/helpshift/util/h;->f(Ljava/lang/Object;)V
+    invoke-interface {v1, v0}, Lcom/helpshift/util/h;->e(Ljava/lang/Object;)V
 
     goto :goto_0
 

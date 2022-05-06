@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field public final a:J
-
-.field public final b:J
+.field public final g:J
 
 .field public final h:J
 
-.field public volatile i:Ljava/lang/String;
+.field public final i:J
+
+.field public volatile j:Ljava/lang/String;
 
 
 # direct methods
@@ -47,7 +47,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-object v0, p0, Lcom/google/android/gms/drive/zza;->i:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/android/gms/drive/zza;->j:Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -99,13 +99,13 @@
     invoke-static {v0}, Lc2/h;->a(Z)V
 
     .line 6
-    iput-wide p1, p0, Lcom/google/android/gms/drive/zza;->a:J
+    iput-wide p1, p0, Lcom/google/android/gms/drive/zza;->g:J
 
     .line 7
-    iput-wide p3, p0, Lcom/google/android/gms/drive/zza;->b:J
+    iput-wide p3, p0, Lcom/google/android/gms/drive/zza;->h:J
 
     .line 8
-    iput-wide p5, p0, Lcom/google/android/gms/drive/zza;->h:J
+    iput-wide p5, p0, Lcom/google/android/gms/drive/zza;->i:J
 
     return-void
 .end method
@@ -135,14 +135,6 @@
     check-cast p1, Lcom/google/android/gms/drive/zza;
 
     .line 3
-    iget-wide v1, p1, Lcom/google/android/gms/drive/zza;->b:J
-
-    iget-wide v3, p0, Lcom/google/android/gms/drive/zza;->b:J
-
-    cmp-long v5, v1, v3
-
-    if-nez v5, :cond_1
-
     iget-wide v1, p1, Lcom/google/android/gms/drive/zza;->h:J
 
     iget-wide v3, p0, Lcom/google/android/gms/drive/zza;->h:J
@@ -151,9 +143,17 @@
 
     if-nez v5, :cond_1
 
-    iget-wide v1, p1, Lcom/google/android/gms/drive/zza;->a:J
+    iget-wide v1, p1, Lcom/google/android/gms/drive/zza;->i:J
 
-    iget-wide v3, p0, Lcom/google/android/gms/drive/zza;->a:J
+    iget-wide v3, p0, Lcom/google/android/gms/drive/zza;->i:J
+
+    cmp-long v5, v1, v3
+
+    if-nez v5, :cond_1
+
+    iget-wide v1, p1, Lcom/google/android/gms/drive/zza;->g:J
+
+    iget-wide v3, p0, Lcom/google/android/gms/drive/zza;->g:J
 
     cmp-long p1, v1, v3
 
@@ -172,20 +172,20 @@
     .locals 5
 
     .line 1
-    iget-wide v0, p0, Lcom/google/android/gms/drive/zza;->a:J
+    iget-wide v0, p0, Lcom/google/android/gms/drive/zza;->g:J
 
     invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
     move-result-object v0
 
-    iget-wide v1, p0, Lcom/google/android/gms/drive/zza;->b:J
+    iget-wide v1, p0, Lcom/google/android/gms/drive/zza;->h:J
 
     .line 2
     invoke-static {v1, v2}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
     move-result-object v1
 
-    iget-wide v2, p0, Lcom/google/android/gms/drive/zza;->h:J
+    iget-wide v2, p0, Lcom/google/android/gms/drive/zza;->i:J
 
     .line 3
     invoke-static {v2, v3}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
@@ -200,11 +200,11 @@
 
     move-result v3
 
-    invoke-static {v1, v3}, Ly/b;->a(Ljava/lang/String;I)I
+    invoke-static {v1, v3}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v3
 
-    invoke-static {v2, v3}, Ly/b;->a(Ljava/lang/String;I)I
+    invoke-static {v2, v3}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v3
 
@@ -234,7 +234,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/drive/zza;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/drive/zza;->j:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
@@ -244,60 +244,60 @@
     move-result-object v0
 
     .line 3
-    invoke-virtual {v0}, Lq3/j2$a;->e()V
+    invoke-virtual {v0}, Lq3/g2$a;->e()V
 
     .line 4
-    iget-object v1, v0, Lq3/j2$a;->b:Lq3/j2;
+    iget-object v1, v0, Lq3/g2$a;->h:Lq3/g2;
 
     check-cast v1, Lq3/j;
 
     invoke-static {v1}, Lq3/j;->j(Lq3/j;)V
 
     .line 5
-    iget-wide v1, p0, Lcom/google/android/gms/drive/zza;->a:J
+    iget-wide v1, p0, Lcom/google/android/gms/drive/zza;->g:J
 
     .line 6
-    invoke-virtual {v0}, Lq3/j2$a;->e()V
+    invoke-virtual {v0}, Lq3/g2$a;->e()V
 
     .line 7
-    iget-object v3, v0, Lq3/j2$a;->b:Lq3/j2;
+    iget-object v3, v0, Lq3/g2$a;->h:Lq3/g2;
 
     check-cast v3, Lq3/j;
 
     invoke-static {v3, v1, v2}, Lq3/j;->k(Lq3/j;J)V
 
     .line 8
-    iget-wide v1, p0, Lcom/google/android/gms/drive/zza;->b:J
+    iget-wide v1, p0, Lcom/google/android/gms/drive/zza;->h:J
 
     .line 9
-    invoke-virtual {v0}, Lq3/j2$a;->e()V
+    invoke-virtual {v0}, Lq3/g2$a;->e()V
 
     .line 10
-    iget-object v3, v0, Lq3/j2$a;->b:Lq3/j2;
+    iget-object v3, v0, Lq3/g2$a;->h:Lq3/g2;
+
+    check-cast v3, Lq3/j;
+
+    invoke-static {v3, v1, v2}, Lq3/j;->n(Lq3/j;J)V
+
+    .line 11
+    iget-wide v1, p0, Lcom/google/android/gms/drive/zza;->i:J
+
+    .line 12
+    invoke-virtual {v0}, Lq3/g2$a;->e()V
+
+    .line 13
+    iget-object v3, v0, Lq3/g2$a;->h:Lq3/g2;
 
     check-cast v3, Lq3/j;
 
     invoke-static {v3, v1, v2}, Lq3/j;->o(Lq3/j;J)V
 
-    .line 11
-    iget-wide v1, p0, Lcom/google/android/gms/drive/zza;->h:J
-
-    .line 12
-    invoke-virtual {v0}, Lq3/j2$a;->e()V
-
-    .line 13
-    iget-object v3, v0, Lq3/j2$a;->b:Lq3/j2;
-
-    check-cast v3, Lq3/j;
-
-    invoke-static {v3, v1, v2}, Lq3/j;->p(Lq3/j;J)V
-
     .line 14
-    invoke-virtual {v0}, Lq3/j2$a;->g()Lq3/i3;
+    invoke-virtual {v0}, Lq3/g2$a;->g()Lq3/f3;
 
     move-result-object v0
 
-    check-cast v0, Lq3/j2;
+    check-cast v0, Lq3/g2;
 
     check-cast v0, Lq3/j;
 
@@ -338,11 +338,11 @@
     invoke-direct {v0, v1}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
 
     :goto_0
-    iput-object v0, p0, Lcom/google/android/gms/drive/zza;->i:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/android/gms/drive/zza;->j:Ljava/lang/String;
 
     .line 18
     :cond_1
-    iget-object v0, p0, Lcom/google/android/gms/drive/zza;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/drive/zza;->j:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -360,7 +360,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iget-wide v1, p0, Lcom/google/android/gms/drive/zza;->a:J
+    iget-wide v1, p0, Lcom/google/android/gms/drive/zza;->g:J
 
     const/16 v3, 0x8
 
@@ -373,7 +373,7 @@
     const/4 v0, 0x3
 
     .line 5
-    iget-wide v1, p0, Lcom/google/android/gms/drive/zza;->b:J
+    iget-wide v1, p0, Lcom/google/android/gms/drive/zza;->h:J
 
     .line 6
     invoke-static {p1, v0, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -384,7 +384,7 @@
     const/4 v0, 0x4
 
     .line 8
-    iget-wide v1, p0, Lcom/google/android/gms/drive/zza;->h:J
+    iget-wide v1, p0, Lcom/google/android/gms/drive/zza;->i:J
 
     .line 9
     invoke-static {p1, v0, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V

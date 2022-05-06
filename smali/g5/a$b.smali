@@ -53,12 +53,12 @@
     check-cast p1, Ll5/u;
 
     .line 2
-    invoke-static {}, Ll5/t;->w()Ll5/t$b;
+    invoke-static {}, Ll5/t;->v()Ll5/t$b;
 
     move-result-object v0
 
     .line 3
-    invoke-virtual {p1}, Ll5/u;->t()I
+    invoke-virtual {p1}, Ll5/u;->s()I
 
     move-result p1
 
@@ -71,7 +71,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {p1, v2, v1}, Lm5/c;->d([BII)Lm5/c;
+    invoke-static {p1, v2, v1}, Lm5/c;->e([BII)Lm5/c;
 
     move-result-object p1
 
@@ -79,11 +79,11 @@
     invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 6
-    iget-object v1, v0, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object v1, v0, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast v1, Ll5/t;
 
-    invoke-static {v1, p1}, Ll5/t;->t(Ll5/t;Lm5/c;)V
+    invoke-static {v1, p1}, Ll5/t;->s(Ll5/t;Lm5/c;)V
 
     .line 7
     iget-object p1, p0, Lg5/a$b;->b:Lg5/a;
@@ -95,11 +95,11 @@
     invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->e()V
 
     .line 10
-    iget-object p1, v0, Lcom/google/crypto/tink/shaded/protobuf/o$a;->b:Lcom/google/crypto/tink/shaded/protobuf/o;
+    iget-object p1, v0, Lcom/google/crypto/tink/shaded/protobuf/o$a;->h:Lcom/google/crypto/tink/shaded/protobuf/o;
 
     check-cast p1, Ll5/t;
 
-    invoke-static {p1, v2}, Ll5/t;->s(Ll5/t;I)V
+    invoke-static {p1, v2}, Ll5/t;->r(Ll5/t;I)V
 
     .line 11
     invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/o$a;->c()Lcom/google/crypto/tink/shaded/protobuf/o;
@@ -124,7 +124,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Ll5/u;->v(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/u;
+    invoke-static {p1, v0}, Ll5/u;->u(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/u;
 
     move-result-object p1
 
@@ -143,7 +143,7 @@
     check-cast p1, Ll5/u;
 
     .line 2
-    invoke-virtual {p1}, Ll5/u;->t()I
+    invoke-virtual {p1}, Ll5/u;->s()I
 
     move-result v0
 
@@ -159,12 +159,12 @@
 
     const-string v1, "invalid key size: "
 
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
     .line 4
-    invoke-virtual {p1}, Ll5/u;->t()I
+    invoke-virtual {p1}, Ll5/u;->s()I
 
     move-result p1
 

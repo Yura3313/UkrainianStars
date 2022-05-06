@@ -20,22 +20,22 @@
 
 
 # virtual methods
-.method public abstract B1()Lcom/google/android/gms/games/Player;
+.method public abstract E1()Lcom/google/android/gms/games/Player;
 .end method
 
-.method public abstract E0()J
+.method public abstract G0()J
 .end method
 
-.method public abstract L1()Z
+.method public abstract O1()Z
 .end method
 
-.method public abstract T()J
+.method public abstract V()J
 .end method
 
-.method public abstract a1()Ljava/lang/String;
+.method public abstract c()Lcom/google/android/gms/games/Game;
 .end method
 
-.method public abstract b()Lcom/google/android/gms/games/Game;
+.method public abstract c1()Ljava/lang/String;
 .end method
 
 .method public abstract getCoverImageUrl()Ljava/lang/String;
@@ -52,17 +52,17 @@
 .method public abstract getTitle()Ljava/lang/String;
 .end method
 
-.method public abstract h0()J
+.method public abstract j0()J
 .end method
 
-.method public abstract l2()F
+.method public abstract n2()F
 .end method
 
-.method public abstract q1()Landroid/net/Uri;
+.method public abstract s1()Landroid/net/Uri;
 .end method
 
-.method public abstract r2()Ljava/lang/String;
+.method public abstract t2()Ljava/lang/String;
 .end method
 
-.method public abstract u2()Ljava/lang/String;
+.method public abstract w2()Ljava/lang/String;
 .end method

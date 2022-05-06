@@ -363,77 +363,66 @@
     const/4 v2, 0x1
 
     invoke-direct {v1, p2, v2}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;Z)V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_3
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    invoke-static {v1, p2, v2}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;Z)Ljava/io/FileOutputStream;
+
+    move-result-object v0
 
     .line 12
-    :try_start_1
     invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
 
     move-result-object p1
 
-    invoke-virtual {v1, p1}, Ljava/io/FileOutputStream;->write([B)V
+    invoke-virtual {v0, p1}, Ljava/io/FileOutputStream;->write([B)V
 
     const/16 p1, 0xa
 
     .line 13
-    invoke-virtual {v1, p1}, Ljava/io/FileOutputStream;->write(I)V
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    invoke-virtual {v0, p1}, Ljava/io/FileOutputStream;->write(I)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 14
-    :try_start_2
-    invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
-    :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
+    :try_start_1
+    invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
 
     :catch_0
     return-void
 
-    :catchall_0
-    move-exception p1
-
-    move-object v0, v1
+    :catch_1
+    nop
 
     goto :goto_1
 
-    :catch_1
-    move-object v0, v1
-
-    goto :goto_2
-
-    :catchall_1
+    :catchall_0
     move-exception p1
 
-    :goto_1
     if-eqz v0, :cond_2
 
     .line 15
-    :try_start_3
+    :try_start_2
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
-    :try_end_3
-    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
 
     .line 16
     :catch_2
     :cond_2
     throw p1
 
-    :catch_3
-    nop
-
-    :goto_2
+    :goto_1
     if-eqz v0, :cond_3
 
     .line 17
-    :try_start_4
+    :try_start_3
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
-    :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_4
+    :try_end_3
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_3
 
-    :catch_4
+    :catch_3
     :cond_3
     return-void
 
@@ -441,14 +430,14 @@
     :cond_4
     sget-object p2, Lh1/o;->B:Lh1/o;
 
-    iget-object p2, p2, Lh1/o;->c:Lj3/xa;
+    iget-object p2, p2, Lh1/o;->c:Lj3/bb;
 
     .line 19
     iget-object p2, p0, Lj3/s;->e:Landroid/content/Context;
 
     iget-object v0, p0, Lj3/s;->f:Ljava/lang/String;
 
-    invoke-static {p2, v0, p1}, Lj3/xa;->o(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p2, v0, p1}, Lj3/bb;->o(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method

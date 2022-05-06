@@ -1,237 +1,115 @@
-.class public Luc/a;
-.super Luc/g1;
-.source "NavigationFragments.kt"
+.class public final Luc/a;
+.super Ljava/lang/Object;
+.source "FaqFragment.kt"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field public o0:Ljava/util/HashMap;
+.field public final synthetic g:Landroid/view/View;
+
+.field public final synthetic h:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
-
-    const/4 v0, 0x2
-
-    new-array v0, v0, [Ljava/lang/Integer;
-
-    .line 1
-    sget v1, Lcom/supercell/id/R$id;->navigation_back_button:I
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    sget v1, Lcom/supercell/id/R$id;->navigation_close_button:I
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    invoke-static {v0}, Lce/z;->k([Ljava/lang/Object;)Ljava/util/Set;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Landroid/view/View;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Luc/g1;-><init>()V
+    iput-object p1, p0, Luc/a;->g:Landroid/view/View;
+
+    iput-object p2, p0, Luc/a;->h:Ljava/lang/String;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public W0()V
-    .locals 1
-
-    iget-object v0, p0, Luc/a;->o0:Ljava/util/HashMap;
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public g0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 1
-
-    if-eqz p1, :cond_0
+.method public final onClick(Landroid/view/View;)V
+    .locals 9
 
     .line 1
-    sget p3, Lcom/supercell/id/R$layout;->fragment_navigation_back:I
+    iget-object p1, p0, Luc/a;->g:Landroid/view/View;
 
-    const/4 v0, 0x0
+    const-string v0, "itemRow"
 
-    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget v1, Lcom/supercell/id/R$id;->descriptionContainer:I
+
+    invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
-    return-object p1
+    check-cast p1, Lcom/supercell/id/view/ExpandableFrameLayout;
 
-    :cond_0
-    const-string p1, "inflater"
-
-    .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public synthetic i0()V
-    .locals 0
-
-    invoke-super {p0}, Luc/g1;->i0()V
-
-    invoke-virtual {p0}, Luc/a;->W0()V
-
-    return-void
-.end method
-
-.method public q1()Landroid/view/View;
-    .locals 1
-
-    .line 1
-    sget v0, Lcom/supercell/id/R$id;->navigation_back_button:I
-
-    invoke-virtual {p0, v0}, Luc/a;->u1(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/ImageButton;
-
-    return-object v0
-.end method
-
-.method public r1()Landroid/view/View;
-    .locals 1
-
-    .line 1
-    sget v0, Lcom/supercell/id/R$id;->navigation_close_button:I
-
-    invoke-virtual {p0, v0}, Luc/a;->u1(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/ImageButton;
-
-    return-object v0
-.end method
-
-.method public s0(Landroid/view/View;Landroid/os/Bundle;)V
-    .locals 3
-
-    if-eqz p1, :cond_0
-
-    const/4 v0, 0x2
-
-    new-array v0, v0, [Landroid/view/View;
-
-    const/4 v1, 0x0
-
-    .line 1
-    invoke-virtual {p0}, Luc/a;->q1()Landroid/view/View;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x1
-
-    invoke-virtual {p0}, Luc/a;->r1()Landroid/view/View;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    invoke-static {v0}, Landroidx/savedstate/d;->x([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
+    sget v2, Lcom/supercell/id/view/ExpandableFrameLayout;->k:I
 
     .line 2
-    iput-object v0, p0, Luc/g1;->m0:Ljava/util/Collection;
+    invoke-virtual {p1}, Lcom/supercell/id/view/ExpandableFrameLayout;->b()Z
+
+    move-result v2
+
+    const/4 v3, 0x1
+
+    xor-int/2addr v2, v3
+
+    invoke-virtual {p1, v2, v3}, Lcom/supercell/id/view/ExpandableFrameLayout;->c(ZZ)V
 
     .line 3
-    invoke-super {p0, p1, p2}, Luc/g1;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    return-void
-
-    :cond_0
-    const-string p1, "view"
-
-    .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public u1(I)Landroid/view/View;
-    .locals 2
-
-    iget-object v0, p0, Luc/a;->o0:Ljava/util/HashMap;
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Luc/a;->o0:Ljava/util/HashMap;
-
-    :cond_0
-    iget-object v0, p0, Luc/a;->o0:Ljava/util/HashMap;
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/view/View;
-
-    if-nez v0, :cond_2
-
-    .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
-
-    if-nez v0, :cond_1
-
-    const/4 p1, 0x0
-
-    return-object p1
-
-    .line 2
-    :cond_1
-    invoke-virtual {v0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    iget-object v1, p0, Luc/a;->o0:Ljava/util/HashMap;
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object p1
 
-    invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 4
+    iget-object v2, p1, Lvd/r;->m:Lcom/supercell/titan/h;
 
-    :cond_2
-    return-object v0
+    .line 5
+    iget-object v5, p0, Luc/a;->h:Ljava/lang/String;
+
+    iget-object p1, p0, Luc/a;->g:Landroid/view/View;
+
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/supercell/id/view/ExpandableFrameLayout;
+
+    invoke-virtual {p1}, Lcom/supercell/id/view/ExpandableFrameLayout;->b()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const-wide/16 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/16 v0, 0x0
+
+    .line 6
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v6
+
+    const/4 v7, 0x0
+
+    const/16 v8, 0x10
+
+    const-string v3, "FAQ"
+
+    const-string v4, "click"
+
+    .line 7
+    invoke-static/range {v2 .. v8}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+
+    return-void
 .end method

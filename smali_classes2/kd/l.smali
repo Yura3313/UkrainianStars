@@ -1,113 +1,88 @@
 .class public final Lkd/l;
-.super Lle/j;
-.source "OnboardingNicknamePageFragment.kt"
+.super Ljava/lang/Object;
+.source "Comparisons.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Ljava/util/Comparator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Ljava/lang/String;",
-        "Lbe/n;",
-        ">;"
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "TT;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lkd/k$f;
-
-.field public final synthetic b:Ljava/lang/String;
+.field public final synthetic g:Ljava/util/Comparator;
 
 
 # direct methods
-.method public constructor <init>(Lkd/k$f;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/util/Comparator;)V
     .locals 0
 
-    iput-object p1, p0, Lkd/l;->a:Lkd/k$f;
+    iput-object p1, p0, Lkd/l;->g:Ljava/util/Comparator;
 
-    iput-object p2, p0, Lkd/l;->b:Ljava/lang/String;
-
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 5
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)I"
+        }
+    .end annotation
 
     .line 1
-    check-cast p1, Ljava/lang/String;
+    iget-object v0, p0, Lkd/l;->g:Ljava/util/Comparator;
 
-    if-eqz p1, :cond_1
+    check-cast p1, Lkd/h;
 
     .line 2
-    iget-object v0, p0, Lkd/l;->a:Lkd/k$f;
-
-    iget-object v0, v0, Lkd/k$f;->a:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lkd/k;
-
-    if-eqz v0, :cond_0
+    iget-object p1, p1, Lkd/h;->b:Lqc/i;
 
     .line 3
-    sget v1, Lcom/supercell/id/R$id;->fair_play_text_view:I
+    iget-object p1, p1, Lqc/i;->b:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lkd/k;->e1(I)Landroid/view/View;
+    const-string v1, ""
 
-    move-result-object v0
+    if-eqz p1, :cond_0
 
-    check-cast v0, Landroid/widget/TextView;
+    goto :goto_0
 
-    if-eqz v0, :cond_0
+    :cond_0
+    move-object p1, v1
 
-    new-instance v1, Landroid/text/SpannableString;
+    .line 4
+    :goto_0
+    check-cast p2, Lkd/h;
 
-    invoke-direct {v1, p1}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
+    .line 5
+    iget-object p2, p2, Lkd/h;->b:Lqc/i;
 
-    new-instance v2, Landroid/text/style/URLSpan;
+    .line 6
+    iget-object p2, p2, Lqc/i;->b:Ljava/lang/String;
 
-    iget-object v3, p0, Lkd/l;->b:Ljava/lang/String;
+    if-eqz p2, :cond_1
 
-    invoke-direct {v2, v3}, Landroid/text/style/URLSpan;-><init>(Ljava/lang/String;)V
+    move-object v1, p2
 
-    const/4 v3, 0x0
-
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
+    .line 7
+    :cond_1
+    invoke-interface {v0, p1, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result p1
 
-    const/16 v4, 0x21
-
-    invoke-virtual {v1, v2, v3, p1, v4}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 4
-    :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
-
-    return-object p1
-
-    :cond_1
-    const-string p1, "text"
-
-    .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
+    return p1
 .end method

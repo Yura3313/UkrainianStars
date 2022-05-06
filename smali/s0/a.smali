@@ -9,10 +9,9 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Ls0/a$a;,
         Ls0/a$c;,
-        Ls0/a$b;,
-        Ls0/a$e;,
-        Ls0/a$d;
+        Ls0/a$b;
     }
 .end annotation
 
@@ -66,7 +65,7 @@
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;Ljava/lang/String;Ls0/b;Ls0/a$d;Ls0/a$e;)Landroid/content/SharedPreferences;
+.method public static a(Landroid/content/Context;Ljava/lang/String;Ls0/c;Ls0/a$b;Ls0/a$c;)Landroid/content/SharedPreferences;
     .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -76,7 +75,7 @@
     .end annotation
 
     .line 1
-    iget-object v2, p2, Ls0/b;->a:Ljava/lang/String;
+    iget-object v2, p2, Ls0/c;->a:Ljava/lang/String;
 
     .line 2
     sget p2, Lf5/a;->a:I
@@ -137,9 +136,7 @@
     invoke-direct {p2}, Li5/a$b;-><init>()V
 
     .line 14
-    invoke-virtual {p3}, Ls0/a$d;->getKeyTemplate()Ld5/h;
-
-    move-result-object p3
+    iget-object p3, p3, Ls0/a$b;->g:Ld5/h;
 
     .line 15
     iput-object p3, p2, Li5/a$b;->e:Ld5/h;
@@ -201,9 +198,7 @@
     invoke-direct {p2}, Li5/a$b;-><init>()V
 
     .line 23
-    invoke-virtual {p4}, Ls0/a$e;->getKeyTemplate()Ld5/h;
-
-    move-result-object p4
+    iget-object p4, p4, Ls0/a$c;->g:Ld5/h;
 
     .line 24
     iput-object p4, p2, Li5/a$b;->e:Ld5/h;
@@ -370,7 +365,7 @@
     move-result-object p1
 
     .line 5
-    invoke-static {p1}, Lp5/h;->b([B)Ljava/lang/String;
+    invoke-static {p1}, Lp5/i;->b([B)Ljava/lang/String;
 
     move-result-object p1
     :try_end_0
@@ -386,7 +381,7 @@
 
     const-string v1, "Could not encrypt key. "
 
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -413,7 +408,7 @@
 
     move-result v0
 
-    if-nez v0, :cond_6
+    if-nez v0, :cond_c
 
     const-string v0, "__NULL__"
 
@@ -437,12 +432,12 @@
 
     move-result-object v1
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_b
 
     const/4 v3, 0x0
 
     .line 4
-    invoke-static {v1, v3}, Lp5/h;->a(Ljava/lang/String;I)[B
+    invoke-static {v1, v3}, Lp5/i;->a(Ljava/lang/String;I)[B
 
     move-result-object v1
 
@@ -473,54 +468,121 @@
     move-result v1
 
     .line 9
-    invoke-static {v1}, Ls0/a$c;->fromId(I)Ls0/a$c;
-
-    move-result-object v1
-
-    .line 10
-    sget-object v4, Ls0/a$a;->a:[I
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-static {v1}, Ls0/b;->a(I)I
 
     move-result v1
 
-    aget v1, v4, v1
+    .line 10
+    invoke-static {v1}, Lp/g;->b(I)I
+
+    move-result v1
+
+    if-eqz v1, :cond_9
 
     const/4 v4, 0x1
 
-    packed-switch v1, :pswitch_data_0
+    if-eq v1, v4, :cond_6
+
+    const/4 v0, 0x2
+
+    if-eq v1, v0, :cond_5
+
+    const/4 v0, 0x3
+
+    if-eq v1, v0, :cond_4
+
+    const/4 v0, 0x4
+
+    if-eq v1, v0, :cond_3
+
+    const/4 v0, 0x5
+
+    if-eq v1, v0, :cond_1
 
     goto/16 :goto_1
 
     .line 11
-    :pswitch_0
-    new-instance v1, Lm/c;
+    :cond_1
+    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->get()B
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    const/4 v3, 0x1
+
+    :cond_2
+    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v2
+
+    goto/16 :goto_1
 
     .line 12
-    invoke-direct {v1, v3}, Lm/c;-><init>(I)V
+    :cond_3
+    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getFloat()F
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v2
+
+    goto/16 :goto_1
 
     .line 13
+    :cond_4
+    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getLong()J
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v2
+
+    goto :goto_1
+
+    .line 14
+    :cond_5
+    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getInt()I
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    goto :goto_1
+
+    .line 15
+    :cond_6
+    new-instance v1, Lm/c;
+
+    .line 16
+    invoke-direct {v1, v3}, Lm/c;-><init>(I)V
+
+    .line 17
     :goto_0
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->hasRemaining()Z
 
     move-result v5
 
-    if-eqz v5, :cond_1
+    if-eqz v5, :cond_7
 
-    .line 14
+    .line 18
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getInt()I
 
     move-result v5
 
-    .line 15
+    .line 19
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->slice()Ljava/nio/ByteBuffer;
 
     move-result-object v6
 
-    .line 16
+    .line 20
     invoke-virtual {v6, v5}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
-    .line 17
+    .line 21
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->position()I
 
     move-result v7
@@ -529,7 +591,7 @@
 
     invoke-virtual {p1, v7}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    .line 18
+    .line 22
     sget-object v5, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
 
     invoke-virtual {v5, v6}, Ljava/nio/charset/Charset;->decode(Ljava/nio/ByteBuffer;)Ljava/nio/CharBuffer;
@@ -544,86 +606,33 @@
 
     goto :goto_0
 
-    .line 19
-    :cond_1
-    iget p1, v1, Lm/c;->h:I
+    .line 23
+    :cond_7
+    iget p1, v1, Lm/c;->i:I
 
-    if-ne p1, v4, :cond_2
+    if-ne p1, v4, :cond_8
 
-    .line 20
-    iget-object p1, v1, Lm/c;->b:[Ljava/lang/Object;
+    .line 24
+    iget-object p1, v1, Lm/c;->h:[Ljava/lang/Object;
 
     aget-object p1, p1, v3
 
-    .line 21
+    .line 25
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_2
+    if-eqz p1, :cond_8
 
     goto :goto_1
 
-    :cond_2
+    :cond_8
     move-object v2, v1
 
     goto :goto_1
 
-    .line 22
-    :pswitch_1
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->get()B
-
-    move-result p1
-
-    if-eqz p1, :cond_3
-
-    const/4 v3, 0x1
-
-    :cond_3
-    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v2
-
-    goto :goto_1
-
-    .line 23
-    :pswitch_2
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getFloat()F
-
-    move-result p1
-
-    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v2
-
-    goto :goto_1
-
-    .line 24
-    :pswitch_3
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getLong()J
-
-    move-result-wide v0
-
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v2
-
-    goto :goto_1
-
-    .line 25
-    :pswitch_4
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getInt()I
-
-    move-result p1
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    goto :goto_1
-
     .line 26
-    :pswitch_5
+    :cond_9
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getInt()I
 
     move-result v1
@@ -654,14 +663,14 @@
     :try_end_0
     .catch Ljava/security/GeneralSecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_a
 
     goto :goto_1
 
-    :cond_4
+    :cond_a
     move-object v2, p1
 
-    :cond_5
+    :cond_b
     :goto_1
     return-object v2
 
@@ -673,7 +682,7 @@
 
     const-string v1, "Could not decrypt value. "
 
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -692,12 +701,12 @@
     throw v0
 
     .line 32
-    :cond_6
+    :cond_c
     new-instance v0, Ljava/lang/SecurityException;
 
     const-string v1, " is a reserved key for the encryption keyset."
 
-    invoke-static {p1, v1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -710,16 +719,6 @@
 
     :goto_3
     goto :goto_2
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method
 
 .method public contains(Ljava/lang/String;)Z
@@ -752,7 +751,7 @@
 
     const-string v1, " is a reserved key for the encryption keyset."
 
-    invoke-static {p1, v1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -799,7 +798,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, Ls0/a$b;
+    new-instance v0, Ls0/a$a;
 
     iget-object v1, p0, Ls0/a;->a:Landroid/content/SharedPreferences;
 
@@ -807,7 +806,7 @@
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Ls0/a$b;-><init>(Ls0/a;Landroid/content/SharedPreferences$Editor;)V
+    invoke-direct {v0, p0, v1}, Ls0/a$a;-><init>(Ls0/a;Landroid/content/SharedPreferences$Editor;)V
 
     return-object v0
 .end method
@@ -884,7 +883,7 @@
     const/4 v4, 0x0
 
     .line 6
-    invoke-static {v2, v4}, Lp5/h;->a(Ljava/lang/String;I)[B
+    invoke-static {v2, v4}, Lp5/i;->a(Ljava/lang/String;I)[B
 
     move-result-object v2
 
@@ -939,7 +938,7 @@
 
     const-string v2, "Could not decrypt key. "
 
-    invoke-static {v2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 

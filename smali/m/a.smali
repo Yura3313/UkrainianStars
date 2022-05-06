@@ -1,5 +1,5 @@
 .class public Lm/a;
-.super Lm/h;
+.super Lm/g;
 .source "ArrayMap.java"
 
 # interfaces
@@ -14,7 +14,7 @@
         "V:",
         "Ljava/lang/Object;",
         ">",
-        "Lm/h<",
+        "Lm/g<",
         "TK;TV;>;",
         "Ljava/util/Map<",
         "TK;TV;>;"
@@ -23,10 +23,10 @@
 
 
 # instance fields
-.field public m:Lm/g;
+.field public n:Lm/f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lm/g<",
+            "Lm/f<",
             "TK;TV;>;"
         }
     .end annotation
@@ -38,7 +38,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lm/h;-><init>()V
+    invoke-direct {p0}, Lm/g;-><init>()V
 
     return-void
 .end method
@@ -47,16 +47,16 @@
     .locals 0
 
     .line 2
-    invoke-direct {p0, p1}, Lm/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lm/g;-><init>(I)V
 
     return-void
 .end method
 
-.method public constructor <init>(Lm/h;)V
+.method public constructor <init>(Lm/g;)V
     .locals 0
 
     .line 3
-    invoke-direct {p0, p1}, Lm/h;-><init>(Lm/h;)V
+    invoke-direct {p0, p1}, Lm/g;-><init>(Lm/g;)V
 
     return-void
 .end method
@@ -75,25 +75,25 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lm/a;->l()Lm/g;
+    invoke-virtual {p0}, Lm/a;->l()Lm/f;
 
     move-result-object v0
 
     .line 2
-    iget-object v1, v0, Lm/g;->a:Lm/g$b;
+    iget-object v1, v0, Lm/f;->a:Lm/f$b;
 
     if-nez v1, :cond_0
 
     .line 3
-    new-instance v1, Lm/g$b;
+    new-instance v1, Lm/f$b;
 
-    invoke-direct {v1, v0}, Lm/g$b;-><init>(Lm/g;)V
+    invoke-direct {v1, v0}, Lm/f$b;-><init>(Lm/f;)V
 
-    iput-object v1, v0, Lm/g;->a:Lm/g$b;
+    iput-object v1, v0, Lm/f;->a:Lm/f$b;
 
     .line 4
     :cond_0
-    iget-object v0, v0, Lm/g;->a:Lm/g$b;
+    iget-object v0, v0, Lm/f;->a:Lm/f$b;
 
     return-object v0
 .end method
@@ -109,41 +109,41 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lm/a;->l()Lm/g;
+    invoke-virtual {p0}, Lm/a;->l()Lm/f;
 
     move-result-object v0
 
     .line 2
-    iget-object v1, v0, Lm/g;->b:Lm/g$c;
+    iget-object v1, v0, Lm/f;->b:Lm/f$c;
 
     if-nez v1, :cond_0
 
     .line 3
-    new-instance v1, Lm/g$c;
+    new-instance v1, Lm/f$c;
 
-    invoke-direct {v1, v0}, Lm/g$c;-><init>(Lm/g;)V
+    invoke-direct {v1, v0}, Lm/f$c;-><init>(Lm/f;)V
 
-    iput-object v1, v0, Lm/g;->b:Lm/g$c;
+    iput-object v1, v0, Lm/f;->b:Lm/f$c;
 
     .line 4
     :cond_0
-    iget-object v0, v0, Lm/g;->b:Lm/g$c;
+    iget-object v0, v0, Lm/f;->b:Lm/f$c;
 
     return-object v0
 .end method
 
-.method public final l()Lm/g;
+.method public final l()Lm/f;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lm/g<",
+            "Lm/f<",
             "TK;TV;>;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lm/a;->m:Lm/g;
+    iget-object v0, p0, Lm/a;->n:Lm/f;
 
     if-nez v0, :cond_0
 
@@ -152,11 +152,11 @@
 
     invoke-direct {v0, p0}, Lm/a$a;-><init>(Lm/a;)V
 
-    iput-object v0, p0, Lm/a;->m:Lm/g;
+    iput-object v0, p0, Lm/a;->n:Lm/f;
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lm/a;->m:Lm/g;
+    iget-object v0, p0, Lm/a;->n:Lm/f;
 
     return-object v0
 .end method
@@ -172,7 +172,7 @@
     .end annotation
 
     .line 1
-    iget v0, p0, Lm/h;->h:I
+    iget v0, p0, Lm/g;->i:I
 
     invoke-interface {p1}, Ljava/util/Map;->size()I
 
@@ -180,7 +180,7 @@
 
     add-int/2addr v1, v0
 
-    invoke-virtual {p0, v1}, Lm/h;->b(I)V
+    invoke-virtual {p0, v1}, Lm/g;->b(I)V
 
     .line 2
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -213,7 +213,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v1, v0}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v1, v0}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
@@ -232,25 +232,25 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lm/a;->l()Lm/g;
+    invoke-virtual {p0}, Lm/a;->l()Lm/f;
 
     move-result-object v0
 
     .line 2
-    iget-object v1, v0, Lm/g;->c:Lm/g$e;
+    iget-object v1, v0, Lm/f;->c:Lm/f$e;
 
     if-nez v1, :cond_0
 
     .line 3
-    new-instance v1, Lm/g$e;
+    new-instance v1, Lm/f$e;
 
-    invoke-direct {v1, v0}, Lm/g$e;-><init>(Lm/g;)V
+    invoke-direct {v1, v0}, Lm/f$e;-><init>(Lm/f;)V
 
-    iput-object v1, v0, Lm/g;->c:Lm/g$e;
+    iput-object v1, v0, Lm/f;->c:Lm/f$e;
 
     .line 4
     :cond_0
-    iget-object v0, v0, Lm/g;->c:Lm/g$e;
+    iget-object v0, v0, Lm/f;->c:Lm/f$e;
 
     return-object v0
 .end method

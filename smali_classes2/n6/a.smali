@@ -8,7 +8,7 @@
 
 .field public final b:Lj6/b;
 
-.field public final c:Ln6/e;
+.field public final c:Ln6/d;
 
 
 # direct methods
@@ -28,7 +28,7 @@
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iget v2, v1, Lj6/b;->b:I
+    iget v2, v1, Lj6/b;->h:I
 
     const/16 v3, 0x8
 
@@ -43,10 +43,10 @@
     if-nez v3, :cond_9
 
     .line 3
-    iget v3, v1, Lj6/b;->a:I
+    iget v3, v1, Lj6/b;->g:I
 
     .line 4
-    sget-object v4, Ln6/e;->h:[Ln6/e;
+    sget-object v4, Ln6/d;->h:[Ln6/d;
 
     and-int/lit8 v4, v2, 0x1
 
@@ -57,7 +57,7 @@
     if-nez v4, :cond_8
 
     .line 5
-    sget-object v4, Ln6/e;->h:[Ln6/e;
+    sget-object v4, Ln6/d;->h:[Ln6/d;
 
     array-length v5, v4
 
@@ -69,27 +69,27 @@
     aget-object v8, v4, v7
 
     .line 6
-    iget v9, v8, Ln6/e;->b:I
+    iget v9, v8, Ln6/d;->b:I
 
     if-ne v9, v2, :cond_6
 
-    iget v10, v8, Ln6/e;->c:I
+    iget v10, v8, Ln6/d;->c:I
 
     if-ne v10, v3, :cond_6
 
     .line 7
-    iput-object v8, v0, Ln6/a;->c:Ln6/e;
+    iput-object v8, v0, Ln6/a;->c:Ln6/d;
 
     .line 8
-    iget v2, v1, Lj6/b;->b:I
+    iget v2, v1, Lj6/b;->h:I
 
     if-ne v2, v9, :cond_5
 
     .line 9
-    iget v2, v8, Ln6/e;->d:I
+    iget v2, v8, Ln6/d;->d:I
 
     .line 10
-    iget v3, v8, Ln6/e;->e:I
+    iget v3, v8, Ln6/d;->e:I
 
     .line 11
     div-int/2addr v9, v2
@@ -188,10 +188,10 @@
     new-instance v1, Lj6/b;
 
     .line 18
-    iget v2, v7, Lj6/b;->a:I
+    iget v2, v7, Lj6/b;->g:I
 
     .line 19
-    iget v3, v7, Lj6/b;->b:I
+    iget v3, v7, Lj6/b;->h:I
 
     .line 20
     invoke-direct {v1, v2, v3}, Lj6/b;-><init>(II)V
@@ -204,7 +204,7 @@
     :cond_5
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
-    const-string v2, "Dimension of bitMatrix must match the version size"
+    const-string v2, "Dimension of bitMarix must match the version size"
 
     invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

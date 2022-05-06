@@ -1,39 +1,39 @@
 .class public final Lu3/o;
-.super Lu3/w4$a;
+.super Lu3/u4$a;
 .source "com.google.android.gms:play-services-measurement-sdk-api@@17.1.0"
 
 
 # instance fields
-.field public final synthetic j:Ljava/lang/String;
-
 .field public final synthetic k:Ljava/lang/String;
 
-.field public final synthetic l:Ljava/lang/Object;
+.field public final synthetic l:Ljava/lang/String;
 
-.field public final synthetic m:Z
+.field public final synthetic m:Ljava/lang/Object;
 
-.field public final synthetic n:Lu3/w4;
+.field public final synthetic n:Z
+
+.field public final synthetic o:Lu3/u4;
 
 
 # direct methods
-.method public constructor <init>(Lu3/w4;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Z)V
+.method public constructor <init>(Lu3/u4;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Z)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lu3/o;->n:Lu3/w4;
+    iput-object p1, p0, Lu3/o;->o:Lu3/u4;
 
-    iput-object p2, p0, Lu3/o;->j:Ljava/lang/String;
+    iput-object p2, p0, Lu3/o;->k:Ljava/lang/String;
 
-    iput-object p3, p0, Lu3/o;->k:Ljava/lang/String;
+    iput-object p3, p0, Lu3/o;->l:Ljava/lang/String;
 
-    iput-object p4, p0, Lu3/o;->l:Ljava/lang/Object;
+    iput-object p4, p0, Lu3/o;->m:Ljava/lang/Object;
 
-    iput-boolean p5, p0, Lu3/o;->m:Z
+    iput-boolean p5, p0, Lu3/o;->n:Z
 
     const/4 p2, 0x1
 
     .line 2
-    invoke-direct {p0, p1, p2}, Lu3/w4$a;-><init>(Lu3/w4;Z)V
+    invoke-direct {p0, p1, p2}, Lu3/u4$a;-><init>(Lu3/u4;Z)V
 
     return-void
 .end method
@@ -49,17 +49,17 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lu3/o;->n:Lu3/w4;
+    iget-object v0, p0, Lu3/o;->o:Lu3/u4;
 
     .line 2
-    iget-object v1, v0, Lu3/w4;->f:Lcom/google/android/gms/internal/measurement/zzm;
+    iget-object v1, v0, Lu3/u4;->f:Lcom/google/android/gms/internal/measurement/zzm;
 
     .line 3
-    iget-object v2, p0, Lu3/o;->j:Ljava/lang/String;
+    iget-object v2, p0, Lu3/o;->k:Ljava/lang/String;
 
-    iget-object v3, p0, Lu3/o;->k:Ljava/lang/String;
+    iget-object v3, p0, Lu3/o;->l:Ljava/lang/String;
 
-    iget-object v0, p0, Lu3/o;->l:Ljava/lang/Object;
+    iget-object v0, p0, Lu3/o;->m:Ljava/lang/Object;
 
     .line 4
     new-instance v4, Lcom/google/android/gms/dynamic/ObjectWrapper;
@@ -67,9 +67,9 @@
     invoke-direct {v4, v0}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
 
     .line 5
-    iget-boolean v5, p0, Lu3/o;->m:Z
+    iget-boolean v5, p0, Lu3/o;->n:Z
 
-    iget-wide v6, p0, Lu3/w4$a;->a:J
+    iget-wide v6, p0, Lu3/u4$a;->g:J
 
     .line 6
     invoke-interface/range {v1 .. v7}, Lcom/google/android/gms/internal/measurement/zzm;->setUserProperty(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/dynamic/IObjectWrapper;ZJ)V

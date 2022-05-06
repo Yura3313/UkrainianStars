@@ -1,11 +1,11 @@
 .class public Ld9/i$b;
-.super Ly7/g;
+.super Lz7/g;
 .source "ConversationalVM.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ld9/i;->s(Lm8/c0;Ln8/c$a;Z)V
+    value = Ld9/i;->s(Ln8/x;Lo8/c$a;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final synthetic b:Lm8/c0;
+.field public final synthetic b:Ln8/x;
 
-.field public final synthetic c:Ln8/c$a;
+.field public final synthetic c:Lo8/c$a;
 
 .field public final synthetic d:Z
 
@@ -25,19 +25,19 @@
 
 
 # direct methods
-.method public constructor <init>(Ld9/i;Lm8/c0;Ln8/c$a;Z)V
+.method public constructor <init>(Ld9/i;Ln8/x;Lo8/c$a;Z)V
     .locals 0
 
     .line 1
     iput-object p1, p0, Ld9/i$b;->e:Ld9/i;
 
-    iput-object p2, p0, Ld9/i$b;->b:Lm8/c0;
+    iput-object p2, p0, Ld9/i$b;->b:Ln8/x;
 
-    iput-object p3, p0, Ld9/i$b;->c:Ln8/c$a;
+    iput-object p3, p0, Ld9/i$b;->c:Lo8/c$a;
 
     iput-boolean p4, p0, Ld9/i$b;->d:Z
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -51,34 +51,34 @@
     :try_start_0
     iget-object v0, p0, Ld9/i$b;->e:Ld9/i;
 
-    iget-object v1, v0, Ld9/i;->s:Ll8/c;
+    iget-object v1, v0, Ld9/i;->s:Lm8/h;
 
-    iget-object v0, v0, Ld9/i;->k:Ll8/p;
+    iget-object v0, v0, Ld9/i;->k:Lm8/r;
 
-    invoke-virtual {v0}, Ll8/p;->c()Lo8/d;
+    invoke-virtual {v0}, Lm8/r;->c()Lp8/d;
 
     move-result-object v0
 
-    iget-object v2, p0, Ld9/i$b;->b:Lm8/c0;
+    iget-object v2, p0, Ld9/i$b;->b:Ln8/x;
 
-    iget-object v3, p0, Ld9/i$b;->c:Ln8/c$a;
+    iget-object v3, p0, Ld9/i$b;->c:Lo8/c$a;
 
     iget-boolean v4, p0, Ld9/i$b;->d:Z
 
-    invoke-virtual {v1, v0, v2, v3, v4}, Ll8/c;->E(Lo8/d;Lm8/c0;Ln8/c$a;Z)V
+    invoke-virtual {v1, v0, v2, v3, v4}, Lm8/h;->D(Lp8/d;Ln8/x;Lo8/c$a;Z)V
     :try_end_0
     .catch Lcom/helpshift/common/exception/RootAPIException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 2
     iget-object v0, p0, Ld9/i$b;->e:Ld9/i;
 
-    iget-object v0, v0, Ld9/i;->k:Ll8/p;
+    iget-object v0, v0, Ld9/i;->k:Lm8/r;
 
-    invoke-virtual {v0}, Ll8/p;->c()Lo8/d;
+    invoke-virtual {v0}, Lm8/r;->c()Lp8/d;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lo8/d;->d()Z
+    invoke-virtual {v0}, Lp8/d;->c()Z
 
     move-result v0
 

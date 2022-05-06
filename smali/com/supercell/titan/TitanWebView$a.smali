@@ -68,9 +68,9 @@
 
     move-result-object p1
 
-    new-instance p2, Lcom/supercell/titan/e0;
+    new-instance p2, Lcom/supercell/titan/g0;
 
-    invoke-direct {p2, p0}, Lcom/supercell/titan/e0;-><init>(Lcom/supercell/titan/TitanWebView$a;)V
+    invoke-direct {p2, p0}, Lcom/supercell/titan/g0;-><init>(Lcom/supercell/titan/TitanWebView$a;)V
 
     invoke-virtual {p1, p2}, Lcom/supercell/titan/GameApp;->runOnView(Ljava/lang/Runnable;)V
 

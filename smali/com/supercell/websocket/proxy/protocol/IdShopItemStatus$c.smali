@@ -16,12 +16,6 @@
     name = "c"
 .end annotation
 
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c$b;
-    }
-.end annotation
-
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Enum<",
@@ -33,105 +27,30 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+.field public static final enum h:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
-.field public static final enum AVAILABLE:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+.field public static final enum i:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
-.field public static final AVAILABLE_VALUE:I = 0x1
+.field public static final enum j:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
-.field public static final enum CLAIM_IN_PROGRESS:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+.field public static final enum k:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
-.field public static final CLAIM_IN_PROGRESS_VALUE:I = 0x5
+.field public static final enum l:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
-.field public static final enum DONATION_ACCEPTED:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+.field public static final enum m:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
-.field public static final DONATION_ACCEPTED_VALUE:I = 0x2
+.field public static final enum n:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
-.field public static final enum DONATION_RECEIVED:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
-
-.field public static final DONATION_RECEIVED_VALUE:I = 0x4
-
-.field public static final enum DONATION_SENT:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
-
-.field public static final DONATION_SENT_VALUE:I = 0x3
-
-.field public static final enum UNKNOWN:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
-
-.field public static final UNKNOWN_VALUE:I
-
-.field public static final enum UNRECOGNIZED:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
-
-.field private static final internalValueMap:Lcom/google/protobuf/a0$d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/google/protobuf/a0$d<",
-            "Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final synthetic o:[Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
 
 # instance fields
-.field private final value:I
+.field public final g:I
 
 
 # direct methods
-.method private static synthetic $values()[Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
-    .locals 3
-
-    const/4 v0, 0x7
-
-    new-array v0, v0, [Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
-
-    .line 1
-    sget-object v1, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->UNKNOWN:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->AVAILABLE:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->DONATION_ACCEPTED:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
-
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->DONATION_SENT:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
-
-    const/4 v2, 0x3
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->DONATION_RECEIVED:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
-
-    const/4 v2, 0x4
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->CLAIM_IN_PROGRESS:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
-
-    const/4 v2, 0x5
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->UNRECOGNIZED:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
-
-    const/4 v2, 0x6
-
-    aput-object v1, v0, v2
-
-    return-object v0
-.end method
-
 .method public static constructor <clinit>()V
-    .locals 4
+    .locals 16
 
     .line 1
     new-instance v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
@@ -142,94 +61,101 @@
 
     invoke-direct {v0, v1, v2, v2}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->UNKNOWN:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    sput-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->h:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
     .line 2
-    new-instance v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    new-instance v1, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
-    const-string v1, "AVAILABLE"
+    const-string v3, "AVAILABLE"
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v2, v2}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v3, v4, v4}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->AVAILABLE:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    sput-object v1, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->i:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
     .line 3
-    new-instance v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    new-instance v3, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
-    const-string v1, "DONATION_ACCEPTED"
+    const-string v5, "DONATION_ACCEPTED"
 
-    const/4 v2, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v2, v2}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v3, v5, v6, v6}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->DONATION_ACCEPTED:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    sput-object v3, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->j:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
     .line 4
-    new-instance v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    new-instance v5, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
-    const-string v1, "DONATION_SENT"
+    const-string v7, "DONATION_SENT"
 
-    const/4 v2, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v2, v2}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v5, v7, v8, v8}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->DONATION_SENT:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    sput-object v5, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->k:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
     .line 5
-    new-instance v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    new-instance v7, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
-    const-string v1, "DONATION_RECEIVED"
+    const-string v9, "DONATION_RECEIVED"
 
-    const/4 v2, 0x4
+    const/4 v10, 0x4
 
-    invoke-direct {v0, v1, v2, v2}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v7, v9, v10, v10}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->DONATION_RECEIVED:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    sput-object v7, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->l:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
     .line 6
-    new-instance v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    new-instance v9, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
-    const-string v1, "CLAIM_IN_PROGRESS"
+    const-string v11, "CLAIM_IN_PROGRESS"
 
-    const/4 v2, 0x5
+    const/4 v12, 0x5
 
-    invoke-direct {v0, v1, v2, v2}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v9, v11, v12, v12}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->CLAIM_IN_PROGRESS:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    sput-object v9, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->m:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
     .line 7
-    new-instance v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    new-instance v11, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
-    const-string v1, "UNRECOGNIZED"
+    const-string v13, "UNRECOGNIZED"
 
-    const/4 v2, 0x6
+    const/4 v14, 0x6
 
-    const/4 v3, -0x1
+    const/4 v15, -0x1
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v11, v13, v14, v15}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->UNRECOGNIZED:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    sput-object v11, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->n:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+
+    const/4 v13, 0x7
+
+    new-array v13, v13, [Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+
+    aput-object v0, v13, v2
+
+    aput-object v1, v13, v4
+
+    aput-object v3, v13, v6
+
+    aput-object v5, v13, v8
+
+    aput-object v7, v13, v10
+
+    aput-object v9, v13, v12
+
+    aput-object v11, v13, v14
 
     .line 8
-    invoke-static {}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->$values()[Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->$VALUES:[Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
-
-    .line 9
-    new-instance v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c$a;
-
-    invoke-direct {v0}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c$a;-><init>()V
-
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->internalValueMap:Lcom/google/protobuf/a0$d;
+    sput-object v13, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->o:[Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;II)V
+.method public constructor <init>(Ljava/lang/String;II)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -241,12 +167,12 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput p3, p0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->value:I
+    iput p3, p0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->g:I
 
     return-void
 .end method
 
-.method public static forNumber(I)Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+.method public static a(I)Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
     .locals 1
 
     if-eqz p0, :cond_5
@@ -277,76 +203,37 @@
 
     .line 1
     :cond_0
-    sget-object p0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->CLAIM_IN_PROGRESS:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    sget-object p0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->m:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
     return-object p0
 
     .line 2
     :cond_1
-    sget-object p0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->DONATION_RECEIVED:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    sget-object p0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->l:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
     return-object p0
 
     .line 3
     :cond_2
-    sget-object p0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->DONATION_SENT:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    sget-object p0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->k:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
     return-object p0
 
     .line 4
     :cond_3
-    sget-object p0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->DONATION_ACCEPTED:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    sget-object p0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->j:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
     return-object p0
 
     .line 5
     :cond_4
-    sget-object p0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->AVAILABLE:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    sget-object p0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->i:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
     return-object p0
 
     .line 6
     :cond_5
-    sget-object p0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->UNKNOWN:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
-
-    return-object p0
-.end method
-
-.method public static internalGetValueMap()Lcom/google/protobuf/a0$d;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lcom/google/protobuf/a0$d<",
-            "Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->internalValueMap:Lcom/google/protobuf/a0$d;
-
-    return-object v0
-.end method
-
-.method public static internalGetVerifier()Lcom/google/protobuf/a0$e;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c$b;->a:Lcom/google/protobuf/a0$e;
-
-    return-object v0
-.end method
-
-.method public static valueOf(I)Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
-    .locals 0
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    .line 2
-    invoke-static {p0}, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->forNumber(I)Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
-
-    move-result-object p0
+    sget-object p0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->h:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
     return-object p0
 .end method
@@ -370,7 +257,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->$VALUES:[Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->o:[Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
     invoke-virtual {v0}, [Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->clone()Ljava/lang/Object;
 
@@ -383,16 +270,16 @@
 
 
 # virtual methods
-.method public final getNumber()I
+.method public final b()I
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->UNRECOGNIZED:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->n:Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;
 
     if-eq p0, v0, :cond_0
 
     .line 2
-    iget v0, p0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->value:I
+    iget v0, p0, Lcom/supercell/websocket/proxy/protocol/IdShopItemStatus$c;->g:I
 
     return v0
 

@@ -21,21 +21,21 @@
         "Lle/j;",
         "Lke/l<",
         "Ljava/lang/String;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/ref/WeakReference;
+.field public final synthetic g:Ljava/lang/ref/WeakReference;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/ref/WeakReference;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$d;->a:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$d;->g:Ljava/lang/ref/WeakReference;
 
     const/4 p1, 0x1
 
@@ -57,7 +57,7 @@
     if-eqz p1, :cond_1
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$d;->a:Ljava/lang/ref/WeakReference;
+    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$d;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -80,27 +80,27 @@
 
     const/4 v2, 0x1
 
-    new-array v2, v2, [Lbe/g;
+    new-array v2, v2, [Lae/d;
 
     const/4 v3, 0x0
 
     .line 4
-    new-instance v4, Lbe/g;
+    new-instance v4, Lae/d;
 
     const-string v5, "game"
 
-    invoke-direct {v4, v5, p1}, Lbe/g;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v4, v5, p1}, Lae/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     aput-object v4, v2, v3
 
     const-string p1, "account_invite_friends_ingame_title"
 
     .line 5
-    invoke-static {v1, p1, v2, v0}, Lqd/e0;->j(Landroid/widget/TextView;Ljava/lang/String;[Lbe/g;Lke/l;)V
+    invoke-static {v1, p1, v2, v0}, Lpd/d0;->k(Landroid/widget/TextView;Ljava/lang/String;[Lae/d;Lke/l;)V
 
     .line 6
     :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -108,7 +108,7 @@
     const-string p1, "it"
 
     .line 7
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

@@ -33,7 +33,7 @@
     .locals 6
 
     .line 1
-    sget-object v0, Lse/w0;->a:Lse/w0;
+    sget-object v0, Lse/u0;->g:Lse/u0;
 
     new-instance v3, Lcom/supercell/id/SharedDataBroadcastReceiverKt$requestSharedData$1$4$1$a;
 
@@ -49,7 +49,7 @@
 
     const/4 v5, 0x0
 
-    invoke-static/range {v0 .. v5}, Ly4/x;->h(Lse/a0;Lde/f;Lse/c0;Lke/p;ILjava/lang/Object;)Lse/d1;
+    invoke-static/range {v0 .. v5}, Lb5/m;->k(Lse/a0;Lde/f;ILke/p;ILjava/lang/Object;)Lse/b1;
 
     return-void
 .end method

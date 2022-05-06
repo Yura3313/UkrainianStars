@@ -40,7 +40,7 @@
 
     const/4 v1, 0x1
 
-    iput-boolean v1, v0, Li0/a;->a:Z
+    iput-boolean v1, v0, Li0/a;->g:Z
 
     .line 2
     invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
@@ -56,7 +56,7 @@
 
     const/4 v1, 0x0
 
-    iput-boolean v1, v0, Li0/a;->a:Z
+    iput-boolean v1, v0, Li0/a;->g:Z
 
     .line 2
     invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V

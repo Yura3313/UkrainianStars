@@ -1,58 +1,103 @@
-.class public abstract Lue/i;
-.super Ljava/lang/Object;
+.class public final Lue/i;
+.super Lue/g;
 .source "Tasks.kt"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public a:J
-
-.field public b:Lue/j;
+.field public final i:Ljava/lang/Runnable;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 3
-
-    .line 2
-    sget-object v0, Lue/h;->b:Lue/h;
-
-    .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const-wide/16 v1, 0x0
-
-    iput-wide v1, p0, Lue/i;->a:J
-
-    iput-object v0, p0, Lue/i;->b:Lue/j;
-
-    return-void
-.end method
-
-.method public constructor <init>(JLue/j;)V
+.method public constructor <init>(Ljava/lang/Runnable;JLue/h;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p2, p3, p4}, Lue/g;-><init>(JLue/h;)V
 
-    iput-wide p1, p0, Lue/i;->a:J
-
-    iput-object p3, p0, Lue/i;->b:Lue/j;
+    iput-object p1, p0, Lue/i;->i:Ljava/lang/Runnable;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final e()Lue/l;
-    .locals 1
+.method public run()V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lue/i;->b:Lue/j;
+    :try_start_0
+    iget-object v0, p0, Lue/i;->i:Ljava/lang/Runnable;
 
-    invoke-interface {v0}, Lue/j;->d()Lue/l;
+    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 2
+    iget-object v0, p0, Lue/g;->h:Lue/h;
+
+    invoke-interface {v0}, Lue/h;->b()V
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    iget-object v1, p0, Lue/g;->h:Lue/h;
+
+    invoke-interface {v1}, Lue/h;->b()V
+
+    throw v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 4
+
+    const-string v0, "Task["
+
+    .line 1
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lue/i;->i:Ljava/lang/Runnable;
+
+    invoke-static {v1}, Ly4/u;->f(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x40
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lue/i;->i:Ljava/lang/Runnable;
+
+    invoke-static {v1}, Ly4/u;->g(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-wide v2, p0, Lue/g;->g:J
+
+    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lue/g;->h:Lue/h;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x5d
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 

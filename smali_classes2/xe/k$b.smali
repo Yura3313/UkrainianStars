@@ -29,9 +29,9 @@
 
 
 # instance fields
-.field public final a:Ljava/util/concurrent/Executor;
+.field public final g:Ljava/util/concurrent/Executor;
 
-.field public final b:Lxe/b;
+.field public final h:Lxe/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lxe/b<",
@@ -57,21 +57,43 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lxe/k$b;->a:Ljava/util/concurrent/Executor;
+    iput-object p1, p0, Lxe/k$b;->g:Ljava/util/concurrent/Executor;
 
     .line 3
-    iput-object p2, p0, Lxe/k$b;->b:Lxe/b;
+    iput-object p2, p0, Lxe/k$b;->h:Lxe/b;
 
     return-void
 .end method
 
 
 # virtual methods
+.method public b0(Lxe/d;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lxe/d<",
+            "TT;>;)V"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lxe/k$b;->h:Lxe/b;
+
+    new-instance v1, Lxe/k$b$a;
+
+    invoke-direct {v1, p0, p1}, Lxe/k$b$a;-><init>(Lxe/k$b;Lxe/d;)V
+
+    invoke-interface {v0, v1}, Lxe/b;->b0(Lxe/d;)V
+
+    return-void
+.end method
+
 .method public cancel()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lxe/k$b;->b:Lxe/b;
+    iget-object v0, p0, Lxe/k$b;->h:Lxe/b;
 
     invoke-interface {v0}, Lxe/b;->cancel()V
 
@@ -89,9 +111,9 @@
     .line 1
     new-instance v0, Lxe/k$b;
 
-    iget-object v1, p0, Lxe/k$b;->a:Ljava/util/concurrent/Executor;
+    iget-object v1, p0, Lxe/k$b;->g:Ljava/util/concurrent/Executor;
 
-    iget-object v2, p0, Lxe/k$b;->b:Lxe/b;
+    iget-object v2, p0, Lxe/k$b;->h:Lxe/b;
 
     invoke-interface {v2}, Lxe/b;->clone()Lxe/b;
 
@@ -115,9 +137,9 @@
     .line 2
     new-instance v0, Lxe/k$b;
 
-    iget-object v1, p0, Lxe/k$b;->a:Ljava/util/concurrent/Executor;
+    iget-object v1, p0, Lxe/k$b;->g:Ljava/util/concurrent/Executor;
 
-    iget-object v2, p0, Lxe/k$b;->b:Lxe/b;
+    iget-object v2, p0, Lxe/k$b;->h:Lxe/b;
 
     invoke-interface {v2}, Lxe/b;->clone()Lxe/b;
 
@@ -145,7 +167,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lxe/k$b;->b:Lxe/b;
+    iget-object v0, p0, Lxe/k$b;->h:Lxe/b;
 
     invoke-interface {v0}, Lxe/b;->execute()Lxe/a0;
 
@@ -158,7 +180,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lxe/k$b;->b:Lxe/b;
+    iget-object v0, p0, Lxe/k$b;->h:Lxe/b;
 
     invoke-interface {v0}, Lxe/b;->isCanceled()Z
 
@@ -167,33 +189,11 @@
     return v0
 .end method
 
-.method public m0(Lxe/d;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lxe/d<",
-            "TT;>;)V"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lxe/k$b;->b:Lxe/b;
-
-    new-instance v1, Lxe/k$b$a;
-
-    invoke-direct {v1, p0, p1}, Lxe/k$b$a;-><init>(Lxe/k$b;Lxe/d;)V
-
-    invoke-interface {v0, v1}, Lxe/b;->m0(Lxe/d;)V
-
-    return-void
-.end method
-
 .method public request()Lokhttp3/Request;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lxe/k$b;->b:Lxe/b;
+    iget-object v0, p0, Lxe/k$b;->h:Lxe/b;
 
     invoke-interface {v0}, Lxe/b;->request()Lokhttp3/Request;
 

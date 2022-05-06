@@ -3,7 +3,7 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
+.implements Lj3/rv0;
 
 
 # instance fields
@@ -25,7 +25,7 @@
 
 # virtual methods
 .method public final get()Ljava/lang/Object;
-    .locals 1
+    .locals 2
 
     iget v0, p0, Lj3/rj;->a:I
 
@@ -35,17 +35,20 @@
 
     .line 1
     :pswitch_0
-    new-instance v0, Lj3/u8;
+    new-instance v0, Ljava/util/HashMap;
 
-    invoke-direct {v0}, Lj3/u8;-><init>()V
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     return-object v0
 
     .line 2
     :goto_0
-    new-instance v0, Lj3/xh0;
+    sget-object v0, Lj3/kd;->e:Lj3/km0;
 
-    invoke-direct {v0}, Lj3/xh0;-><init>()V
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+
+    .line 3
+    invoke-static {v0, v1}, Lj3/u6;->h(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     return-object v0
 

@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
+.field public final g:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TT;"
@@ -37,12 +37,12 @@
     invoke-direct {p0}, Lcom/google/android/gms/dynamic/IObjectWrapper$Stub;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/dynamic/ObjectWrapper;->a:Ljava/lang/Object;
+    iput-object p1, p0, Lcom/google/android/gms/dynamic/ObjectWrapper;->g:Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public static X0(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
+.method public static Y0(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
     .locals 7
     .param p0    # Lcom/google/android/gms/dynamic/IObjectWrapper;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -69,7 +69,7 @@
     .line 2
     check-cast p0, Lcom/google/android/gms/dynamic/ObjectWrapper;
 
-    iget-object p0, p0, Lcom/google/android/gms/dynamic/ObjectWrapper;->a:Ljava/lang/Object;
+    iget-object p0, p0, Lcom/google/android/gms/dynamic/ObjectWrapper;->g:Ljava/lang/Object;
 
     return-object p0
 
@@ -195,7 +195,7 @@
 
     const-string v2, "Unexpected number of IObjectWrapper declared fields: "
 
-    invoke-static {v1, v2, v0}, Lb0/c;->b(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, v2, v0}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 

@@ -589,7 +589,7 @@
     const-string v1, " : "
 
     .line 1
-    invoke-static {v0, p1, v1}, Landroid/support/v4/media/e;->c(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p1, v1}, Lqc/a0;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

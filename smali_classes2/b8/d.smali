@@ -1,110 +1,163 @@
-.class public final enum Lb8/d;
-.super Ljava/lang/Enum;
-.source "PlatformException.java"
-
-# interfaces
-.implements Lb8/a;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "Lb8/d;",
-        ">;",
-        "Lb8/a;"
-    }
-.end annotation
-
-
-# static fields
-.field private static final synthetic $VALUES:[Lb8/d;
-
-.field public static final enum FILE_NOT_FOUND:Lb8/d;
-
-.field public static final enum NO_APPS_FOR_OPENING_ATTACHMENT:Lb8/d;
+.class public Lb8/d;
+.super Lb8/b;
+.source "GETNetwork.java"
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(Ljava/lang/String;Lz7/f;Ld8/r;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lb8/d;
+    invoke-direct {p0, p1, p2, p3}, Lb8/b;-><init>(Ljava/lang/String;Lz7/f;Ld8/r;)V
 
-    const-string v1, "NO_APPS_FOR_OPENING_ATTACHMENT"
+    return-void
+.end method
 
-    const/4 v2, 0x0
 
-    invoke-direct {v0, v1, v2}, Lb8/d;-><init>(Ljava/lang/String;I)V
+# virtual methods
+.method public c(Lj3/lk;)Le8/h;
+    .locals 6
 
-    sput-object v0, Lb8/d;->NO_APPS_FOR_OPENING_ATTACHMENT:Lb8/d;
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {p0}, Lb8/b;->d()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, "?"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p1, Lj3/lk;->b:Ljava/lang/Object;
+
+    check-cast v1, Ljava/util/Map;
+
+    invoke-static {v1}, Ldc/a;->b(Ljava/util/Map;)Ljava/util/Map;
+
+    move-result-object v1
+
+    const/4 v2, 0x2
 
     .line 2
-    new-instance v1, Lb8/d;
-
-    const-string v3, "FILE_NOT_FOUND"
-
-    const/4 v4, 0x1
-
-    invoke-direct {v1, v3, v4}, Lb8/d;-><init>(Ljava/lang/String;I)V
-
-    sput-object v1, Lb8/d;->FILE_NOT_FOUND:Lb8/d;
-
-    const/4 v3, 0x2
-
-    new-array v3, v3, [Lb8/d;
-
-    aput-object v0, v3, v2
-
-    aput-object v1, v3, v4
+    invoke-virtual {p0, v2, v1}, Lb8/b;->a(ILjava/util/Map;)Ljava/util/Map;
 
     .line 3
-    sput-object v3, Lb8/d;->$VALUES:[Lb8/d;
+    new-instance v2, Ljava/util/ArrayList;
 
-    return-void
-.end method
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-.method private constructor <init>(Ljava/lang/String;I)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
+    .line 4
+    check-cast v1, Ljava/util/HashMap;
 
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {v1}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
-    return-void
-.end method
+    move-result-object v1
 
-.method public static valueOf(Ljava/lang/String;)Lb8/d;
-    .locals 1
+    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    .line 1
-    const-class v0, Lb8/d;
+    move-result-object v1
 
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result-object p0
+    move-result v3
 
-    check-cast p0, Lb8/d;
+    if-eqz v3, :cond_0
 
-    return-object p0
-.end method
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-.method public static values()[Lb8/d;
-    .locals 1
+    move-result-object v3
 
-    .line 1
-    sget-object v0, Lb8/d;->$VALUES:[Lb8/d;
+    check-cast v3, Ljava/util/Map$Entry;
 
-    invoke-virtual {v0}, [Lb8/d;->clone()Ljava/lang/Object;
+    .line 5
+    :try_start_0
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/lang/String;
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v5, "="
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
+
+    const-string v5, "UTF-8"
+
+    invoke-static {v3, v5}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :try_end_0
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p1
+
+    .line 6
+    sget-object v0, Lc8/b;->r:Lc8/b;
+
+    invoke-static {p1, v0}, Lcom/helpshift/common/exception/RootAPIException;->c(Ljava/lang/Exception;Lc8/a;)Lcom/helpshift/common/exception/RootAPIException;
+
+    move-result-object p1
+
+    throw p1
+
+    :cond_0
+    const-string v1, "&"
+
+    .line 7
+    invoke-static {v1, v2}, Lp5/c0;->m(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 8
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    check-cast v0, [Lb8/d;
+    .line 9
+    new-instance v1, Le8/a;
 
-    return-object v0
+    .line 10
+    iget-object v2, p1, Lj3/lk;->a:Ljava/lang/String;
+
+    .line 11
+    invoke-virtual {p0, v2, p1}, Lb8/b;->b(Ljava/lang/String;Lj3/lk;)Ljava/util/List;
+
+    move-result-object p1
+
+    const/16 v2, 0x1388
+
+    invoke-direct {v1, v0, p1, v2}, Le8/a;-><init>(Ljava/lang/String;Ljava/util/List;I)V
+
+    return-object v1
 .end method

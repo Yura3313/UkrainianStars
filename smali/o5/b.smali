@@ -48,28 +48,28 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Ll5/q;->u()I
+    invoke-virtual {p0}, Ll5/q;->t()I
 
     move-result v0
 
     invoke-static {v0}, Lp5/m0;->a(I)V
 
     .line 2
-    invoke-virtual {p0}, Ll5/q;->v()Ll5/o0;
+    invoke-virtual {p0}, Ll5/q;->u()Ll5/o0;
 
     move-result-object v0
 
-    sget-object v1, Ll5/o0;->UNKNOWN_HASH:Ll5/o0;
+    sget-object v1, Ll5/o0;->h:Ll5/o0;
 
     if-eq v0, v1, :cond_1
 
     .line 3
-    invoke-virtual {p0}, Ll5/q;->s()I
+    invoke-virtual {p0}, Ll5/q;->r()I
 
     move-result v0
 
     .line 4
-    invoke-virtual {p0}, Ll5/q;->u()I
+    invoke-virtual {p0}, Ll5/q;->t()I
 
     move-result p0
 
@@ -140,7 +140,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Ll5/v0$c;->SYMMETRIC:Ll5/v0$c;
+    sget-object v0, Ll5/v0$c;->i:Ll5/v0$c;
 
     return-object v0
 .end method
@@ -158,7 +158,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Ll5/o;->z(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/o;
+    invoke-static {p1, v0}, Ll5/o;->y(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/o;
 
     move-result-object p1
 
@@ -177,7 +177,7 @@
     check-cast p1, Ll5/o;
 
     .line 2
-    invoke-virtual {p1}, Ll5/o;->x()I
+    invoke-virtual {p1}, Ll5/o;->w()I
 
     move-result v0
 
@@ -186,7 +186,7 @@
     invoke-static {v0, v1}, Lp5/m0;->e(II)V
 
     .line 3
-    invoke-virtual {p1}, Ll5/o;->w()Ll5/q;
+    invoke-virtual {p1}, Ll5/o;->v()Ll5/q;
 
     move-result-object p1
 

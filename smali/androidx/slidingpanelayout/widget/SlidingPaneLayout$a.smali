@@ -251,7 +251,7 @@
     invoke-virtual {v0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setSource(Landroid/view/View;)V
 
     .line 39
-    sget-object v0, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 40
     invoke-virtual {p1}, Landroid/view/View;->getParentForAccessibility()Landroid/view/ViewParent;
@@ -307,7 +307,7 @@
     const/4 v2, 0x1
 
     .line 47
-    invoke-static {v1, v2}, Lf0/s;->D(Landroid/view/View;I)V
+    invoke-static {v1, v2}, Lf0/r;->D(Landroid/view/View;I)V
 
     .line 48
     iget-object v2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;

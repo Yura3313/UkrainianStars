@@ -33,17 +33,17 @@
     return-void
 .end method
 
-.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Ljava/lang/Throwable;)Lbe/n;
+.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Ljava/lang/Throwable;)Lae/i;
     .locals 0
 
-    invoke-static {p0, p1}, Lcom/kakaogame/kakao/KakaoManager$3;->lambda$run$0(Lcom/kakaogame/util/MutexLock;Ljava/lang/Throwable;)Lbe/n;
+    invoke-static {p0, p1}, Lcom/kakaogame/kakao/KakaoManager$3;->lambda$run$0(Lcom/kakaogame/util/MutexLock;Ljava/lang/Throwable;)Lae/i;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private static synthetic lambda$run$0(Lcom/kakaogame/util/MutexLock;Ljava/lang/Throwable;)Lbe/n;
+.method private static synthetic lambda$run$0(Lcom/kakaogame/util/MutexLock;Ljava/lang/Throwable;)Lae/i;
     .locals 3
 
     const-string v0, "KakaoManager"
@@ -116,7 +116,7 @@
 
     .line 10
     :goto_0
-    sget-object p0, Lbe/n;->a:Lbe/n;
+    sget-object p0, Lae/i;->a:Lae/i;
 
     return-object p0
 .end method

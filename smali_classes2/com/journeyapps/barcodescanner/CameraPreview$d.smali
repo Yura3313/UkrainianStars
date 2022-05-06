@@ -42,7 +42,7 @@
     iget-object v0, p0, Lcom/journeyapps/barcodescanner/CameraPreview$d;->a:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     .line 2
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->o:Ljava/util/List;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->p:Ljava/util/List;
 
     .line 3
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -78,7 +78,7 @@
     iget-object v0, p0, Lcom/journeyapps/barcodescanner/CameraPreview$d;->a:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     .line 2
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->o:Ljava/util/List;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->p:Ljava/util/List;
 
     .line 3
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -114,7 +114,7 @@
     iget-object v0, p0, Lcom/journeyapps/barcodescanner/CameraPreview$d;->a:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     .line 2
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->o:Ljava/util/List;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->p:Ljava/util/List;
 
     .line 3
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -150,7 +150,7 @@
     iget-object v0, p0, Lcom/journeyapps/barcodescanner/CameraPreview$d;->a:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     .line 2
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->o:Ljava/util/List;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->p:Ljava/util/List;
 
     .line 3
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -186,7 +186,7 @@
     iget-object v0, p0, Lcom/journeyapps/barcodescanner/CameraPreview$d;->a:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     .line 2
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->o:Ljava/util/List;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->p:Ljava/util/List;
 
     .line 3
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;

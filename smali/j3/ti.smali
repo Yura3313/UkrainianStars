@@ -3,30 +3,23 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/x2;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lj3/x2<",
-        "Lj3/ch;",
-        ">;"
-    }
-.end annotation
+.implements Landroid/view/View$OnAttachStateChangeListener;
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/gms/internal/ads/c;
+.field public final synthetic g:Lj3/j9;
+
+.field public final synthetic h:Lj3/oi;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/c;)V
+.method public constructor <init>(Lj3/oi;Lj3/j9;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lj3/ti;->a:Lcom/google/android/gms/internal/ads/c;
+    iput-object p1, p0, Lj3/ti;->h:Lj3/oi;
+
+    iput-object p2, p0, Lj3/ti;->g:Lj3/j9;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,77 +28,24 @@
 
 
 # virtual methods
-.method public final synthetic b(Ljava/lang/Object;Ljava/util/Map;)V
-    .locals 2
+.method public final onViewAttachedToWindow(Landroid/view/View;)V
+    .locals 3
 
     .line 1
-    check-cast p1, Lj3/ch;
+    iget-object v0, p0, Lj3/ti;->h:Lj3/oi;
 
-    if-eqz p2, :cond_1
+    iget-object v1, p0, Lj3/ti;->g:Lj3/j9;
 
-    const-string p1, "height"
+    const/16 v2, 0xa
 
     .line 2
-    invoke-interface {p2, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/String;
-
-    .line 3
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result p2
-
-    if-nez p2, :cond_1
-
-    .line 4
-    :try_start_0
-    invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result p1
-
-    .line 5
-    iget-object p2, p0, Lj3/ti;->a:Lcom/google/android/gms/internal/ads/c;
-
-    monitor-enter p2
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 6
-    :try_start_1
-    iget-object v0, p0, Lj3/ti;->a:Lcom/google/android/gms/internal/ads/c;
-
-    .line 7
-    iget v1, v0, Lcom/google/android/gms/internal/ads/c;->I:I
-
-    if-eq v1, p1, :cond_0
-
-    .line 8
-    iput p1, v0, Lcom/google/android/gms/internal/ads/c;->I:I
-
-    .line 9
-    invoke-virtual {v0}, Landroid/webkit/WebView;->requestLayout()V
-
-    .line 10
-    :cond_0
-    monitor-exit p2
+    invoke-virtual {v0, p1, v1, v2}, Lj3/oi;->u(Landroid/view/View;Lj3/j9;I)V
 
     return-void
+.end method
 
-    :catchall_0
-    move-exception p1
+.method public final onViewDetachedFromWindow(Landroid/view/View;)V
+    .locals 0
 
-    monitor-exit p2
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    :try_start_2
-    throw p1
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
-
-    :catch_0
-    :cond_1
     return-void
 .end method

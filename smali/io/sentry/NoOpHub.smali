@@ -167,21 +167,31 @@
     return-object p1
 .end method
 
-.method public synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;)Lio/sentry/protocol/SentryId;
+.method public synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;)Lio/sentry/protocol/SentryId;
     .locals 0
 
-    invoke-static {p0, p1}, Lio/sentry/f;->h(Lio/sentry/IHub;Lio/sentry/protocol/SentryTransaction;)Lio/sentry/protocol/SentryId;
+    invoke-static {p0, p1, p2}, Lio/sentry/f;->h(Lio/sentry/IHub;Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;)Lio/sentry/protocol/SentryId;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public captureTransaction(Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+.method public captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
     .locals 0
 
     .line 1
     sget-object p1, Lio/sentry/protocol/SentryId;->EMPTY_ID:Lio/sentry/protocol/SentryId;
+
+    return-object p1
+.end method
+
+.method public synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Lio/sentry/f;->i(Lio/sentry/IHub;Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+
+    move-result-object p1
 
     return-object p1
 .end method
@@ -266,6 +276,14 @@
 .end method
 
 .method public getSpan()Lio/sentry/ISpan;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public isCrashedLastRun()Ljava/lang/Boolean;
     .locals 1
 
     const/4 v0, 0x0
@@ -375,7 +393,7 @@
 .method public synthetic startTransaction(Lio/sentry/TransactionContext;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lio/sentry/f;->j(Lio/sentry/IHub;Lio/sentry/TransactionContext;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
+    invoke-static {p0, p1, p2}, Lio/sentry/f;->k(Lio/sentry/IHub;Lio/sentry/TransactionContext;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
 
     move-result-object p1
 
@@ -418,7 +436,7 @@
 .method public synthetic startTransaction(Lio/sentry/TransactionContext;Z)Lio/sentry/ITransaction;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lio/sentry/f;->k(Lio/sentry/IHub;Lio/sentry/TransactionContext;Z)Lio/sentry/ITransaction;
+    invoke-static {p0, p1, p2}, Lio/sentry/f;->l(Lio/sentry/IHub;Lio/sentry/TransactionContext;Z)Lio/sentry/ITransaction;
 
     move-result-object p1
 
@@ -428,7 +446,7 @@
 .method public synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;)Lio/sentry/ITransaction;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lio/sentry/f;->l(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;)Lio/sentry/ITransaction;
+    invoke-static {p0, p1, p2}, Lio/sentry/f;->m(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;)Lio/sentry/ITransaction;
 
     move-result-object p1
 
@@ -438,7 +456,7 @@
 .method public synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
     .locals 0
 
-    invoke-static {p0, p1, p2, p3}, Lio/sentry/f;->m(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
+    invoke-static {p0, p1, p2, p3}, Lio/sentry/f;->n(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;)Lio/sentry/ITransaction;
 
     move-result-object p1
 
@@ -448,7 +466,7 @@
 .method public synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;Z)Lio/sentry/ITransaction;
     .locals 0
 
-    invoke-static {p0, p1, p2, p3, p4}, Lio/sentry/f;->n(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;Z)Lio/sentry/ITransaction;
+    invoke-static {p0, p1, p2, p3, p4}, Lio/sentry/f;->o(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Lio/sentry/CustomSamplingContext;Z)Lio/sentry/ITransaction;
 
     move-result-object p1
 
@@ -458,7 +476,7 @@
 .method public synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;ZLio/sentry/TransactionFinishedCallback;)Lio/sentry/ITransaction;
     .locals 0
 
-    invoke-static/range {p0 .. p5}, Lio/sentry/f;->o(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;ZLio/sentry/TransactionFinishedCallback;)Lio/sentry/ITransaction;
+    invoke-static/range {p0 .. p5}, Lio/sentry/f;->p(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;ZLio/sentry/TransactionFinishedCallback;)Lio/sentry/ITransaction;
 
     move-result-object p1
 
@@ -468,7 +486,7 @@
 .method public synthetic startTransaction(Ljava/lang/String;Ljava/lang/String;Z)Lio/sentry/ITransaction;
     .locals 0
 
-    invoke-static {p0, p1, p2, p3}, Lio/sentry/f;->p(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Z)Lio/sentry/ITransaction;
+    invoke-static {p0, p1, p2, p3}, Lio/sentry/f;->q(Lio/sentry/IHub;Ljava/lang/String;Ljava/lang/String;Z)Lio/sentry/ITransaction;
 
     move-result-object p1
 

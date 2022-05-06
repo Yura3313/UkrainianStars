@@ -50,7 +50,7 @@
     iput-object p1, p0, Landroidx/viewpager2/widget/f;->b:Landroidx/viewpager2/widget/ViewPager2;
 
     .line 3
-    iget-object p1, p1, Landroidx/viewpager2/widget/ViewPager2;->o:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object p1, p1, Landroidx/viewpager2/widget/ViewPager2;->p:Landroidx/recyclerview/widget/RecyclerView;
 
     iput-object p1, p0, Landroidx/viewpager2/widget/f;->c:Landroidx/recyclerview/widget/RecyclerView;
 

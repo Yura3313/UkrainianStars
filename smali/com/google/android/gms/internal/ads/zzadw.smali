@@ -7,7 +7,23 @@
 
 
 # virtual methods
-.method public abstract T0()Landroid/net/Uri;
+.method public abstract A2()Lcom/google/android/gms/dynamic/IObjectWrapper;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract A4()D
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract U0()Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -24,22 +40,6 @@
 .end method
 
 .method public abstract getWidth()I
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract z2()Lcom/google/android/gms/dynamic/IObjectWrapper;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract z4()D
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

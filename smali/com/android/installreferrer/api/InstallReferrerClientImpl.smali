@@ -118,7 +118,7 @@
     iget-object v2, p0, Lcom/android/installreferrer/api/InstallReferrerClientImpl;->c:Lcom/google/android/finsky/externalreferrer/IGetInstallReferrerService;
 
     .line 5
-    invoke-interface {v2, v0}, Lcom/google/android/finsky/externalreferrer/IGetInstallReferrerService;->g(Landroid/os/Bundle;)Landroid/os/Bundle;
+    invoke-interface {v2, v0}, Lcom/google/android/finsky/externalreferrer/IGetInstallReferrerService;->h(Landroid/os/Bundle;)Landroid/os/Bundle;
 
     move-result-object v0
 

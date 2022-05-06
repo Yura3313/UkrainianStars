@@ -11,7 +11,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;",
+        "Lcom/google/android/gms/auth/api/credentials/CredentialRequest;",
         ">;"
     }
 .end annotation
@@ -30,7 +30,7 @@
 
 # virtual methods
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 9
+    .locals 13
 
     .line 1
     invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
@@ -39,15 +39,25 @@
 
     const/4 v1, 0x0
 
-    const/4 v3, 0x0
+    const/4 v2, 0x0
+
+    move-object v6, v2
+
+    move-object v7, v6
+
+    move-object v8, v7
+
+    move-object v10, v8
+
+    move-object v11, v10
 
     const/4 v4, 0x0
 
     const/4 v5, 0x0
 
-    const/4 v6, 0x0
+    const/4 v9, 0x0
 
-    const/4 v7, 0x0
+    const/4 v12, 0x0
 
     .line 2
     :goto_0
@@ -55,7 +65,7 @@
 
     move-result v1
 
-    if-ge v1, v0, :cond_5
+    if-ge v1, v0, :cond_1
 
     .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -66,25 +76,11 @@
 
     and-int/2addr v2, v1
 
-    const/4 v8, 0x1
+    const/16 v3, 0x3e8
 
-    if-eq v2, v8, :cond_4
+    if-eq v2, v3, :cond_0
 
-    const/4 v8, 0x2
-
-    if-eq v2, v8, :cond_3
-
-    const/4 v8, 0x3
-
-    if-eq v2, v8, :cond_2
-
-    const/4 v8, 0x4
-
-    if-eq v2, v8, :cond_1
-
-    const/16 v8, 0x3e8
-
-    if-eq v2, v8, :cond_0
+    packed-switch v2, :pswitch_data_0
 
     .line 4
     invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
@@ -92,64 +88,124 @@
     goto :goto_0
 
     .line 5
-    :cond_0
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    :pswitch_0
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
 
-    move-result v3
+    move-result v12
 
     goto :goto_0
 
     .line 6
-    :cond_1
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    :pswitch_1
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    move-result v7
+    move-result-object v11
 
     goto :goto_0
 
     .line 7
-    :cond_2
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+    :pswitch_2
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    move-result v6
+    move-result-object v10
 
     goto :goto_0
 
     .line 8
-    :cond_3
+    :pswitch_3
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+
+    move-result v9
+
+    goto :goto_0
+
+    .line 9
+    :pswitch_4
+    sget-object v2, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 10
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v1
+
+    move-object v8, v1
+
+    check-cast v8, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+
+    goto :goto_0
+
+    .line 11
+    :pswitch_5
+    sget-object v2, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 12
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v1
+
+    move-object v7, v1
+
+    check-cast v7, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+
+    goto :goto_0
+
+    .line 13
+    :pswitch_6
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->j(Landroid/os/Parcel;I)[Ljava/lang/String;
+
+    move-result-object v6
+
+    goto :goto_0
+
+    .line 14
+    :pswitch_7
     invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
 
     move-result v5
 
     goto :goto_0
 
-    .line 9
-    :cond_4
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+    .line 15
+    :cond_0
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
 
     move-result v4
 
     goto :goto_0
 
-    .line 10
-    :cond_5
+    .line 16
+    :cond_1
     invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
 
-    .line 11
-    new-instance p1, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+    .line 17
+    new-instance p1, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;
 
-    move-object v2, p1
+    move-object v3, p1
 
-    invoke-direct/range {v2 .. v7}, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;-><init>(IZZZI)V
+    invoke-direct/range {v3 .. v12}, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;-><init>(IZ[Ljava/lang/String;Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;ZLjava/lang/String;Ljava/lang/String;Z)V
 
     return-object p1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method
 
 .method public final synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
     .line 1
-    new-array p1, p1, [Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+    new-array p1, p1, [Lcom/google/android/gms/auth/api/credentials/CredentialRequest;
 
     return-object p1
 .end method

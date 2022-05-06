@@ -49,8 +49,8 @@
     return-void
 .end method
 
-.method public static h(Ll5/o0;)Lp5/z;
-    .locals 2
+.method public static h(Ll5/o0;)I
+    .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/GeneralSecurityException;
@@ -58,42 +58,35 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lk5/a$d;->a:[I
-
     invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
 
-    move-result v1
-
-    aget v0, v0, v1
-
-    const/4 v1, 0x1
-
-    if-eq v0, v1, :cond_3
-
-    const/4 v1, 0x2
-
-    if-eq v0, v1, :cond_2
-
-    const/4 v1, 0x3
-
-    if-eq v0, v1, :cond_1
+    move-result v0
 
     const/4 v1, 0x4
 
-    if-ne v0, v1, :cond_0
+    const/4 v2, 0x3
 
-    .line 2
-    sget-object p0, Lp5/z;->SHA512:Lp5/z;
+    const/4 v3, 0x2
+
+    const/4 v4, 0x1
+
+    if-eq v0, v4, :cond_3
+
+    if-eq v0, v3, :cond_2
+
+    if-eq v0, v2, :cond_1
+
+    if-ne v0, v1, :cond_0
 
     goto :goto_0
 
-    .line 3
+    .line 2
     :cond_0
     new-instance v0, Ljava/security/GeneralSecurityException;
 
     const-string v1, "HashType "
 
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -115,24 +108,21 @@
 
     throw v0
 
-    .line 4
     :cond_1
-    sget-object p0, Lp5/z;->SHA384:Lp5/z;
+    const/4 v1, 0x2
 
     goto :goto_0
 
-    .line 5
     :cond_2
-    sget-object p0, Lp5/z;->SHA256:Lp5/z;
+    const/4 v1, 0x3
 
     goto :goto_0
 
-    .line 6
     :cond_3
-    sget-object p0, Lp5/z;->SHA1:Lp5/z;
+    const/4 v1, 0x1
 
     :goto_0
-    return-object p0
+    return v1
 .end method
 
 .method public static i(Ll5/r0;)V
@@ -144,19 +134,19 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Ll5/r0;->t()Ll5/o0;
+    invoke-virtual {p0}, Ll5/r0;->s()Ll5/o0;
 
     move-result-object v0
 
-    sget-object v1, Ll5/o0;->SHA256:Ll5/o0;
+    sget-object v1, Ll5/o0;->k:Ll5/o0;
 
     if-eq v0, v1, :cond_1
 
-    invoke-virtual {p0}, Ll5/r0;->t()Ll5/o0;
+    invoke-virtual {p0}, Ll5/r0;->s()Ll5/o0;
 
     move-result-object p0
 
-    sget-object v0, Ll5/o0;->SHA512:Ll5/o0;
+    sget-object v0, Ll5/o0;->l:Ll5/o0;
 
     if-ne p0, v0, :cond_0
 
@@ -213,7 +203,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Ll5/v0$c;->SYMMETRIC:Ll5/v0$c;
+    sget-object v0, Ll5/v0$c;->i:Ll5/v0$c;
 
     return-object v0
 .end method
@@ -231,7 +221,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Ll5/p0;->z(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/p0;
+    invoke-static {p1, v0}, Ll5/p0;->y(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/p0;
 
     move-result-object p1
 
@@ -250,7 +240,7 @@
     check-cast p1, Ll5/p0;
 
     .line 2
-    invoke-virtual {p1}, Ll5/p0;->x()I
+    invoke-virtual {p1}, Ll5/p0;->w()I
 
     move-result v0
 
@@ -259,7 +249,7 @@
     invoke-static {v0, v1}, Lp5/m0;->e(II)V
 
     .line 3
-    invoke-virtual {p1}, Ll5/p0;->v()Lm5/c;
+    invoke-virtual {p1}, Ll5/p0;->u()Lm5/c;
 
     move-result-object v0
 
@@ -272,7 +262,7 @@
     if-lt v0, v1, :cond_0
 
     .line 4
-    invoke-virtual {p1}, Ll5/p0;->w()Ll5/r0;
+    invoke-virtual {p1}, Ll5/p0;->v()Ll5/r0;
 
     move-result-object p1
 

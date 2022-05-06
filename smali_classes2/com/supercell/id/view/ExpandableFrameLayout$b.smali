@@ -23,15 +23,15 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lcom/supercell/id/view/ExpandableFrameLayout$b;
+.field public static final enum g:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
-.field public static final enum COLLAPSED:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+.field public static final enum h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
-.field public static final enum COLLAPSING:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+.field public static final enum i:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
-.field public static final enum EXPANDED:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+.field public static final enum j:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
-.field public static final enum EXPANDING:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+.field public static final synthetic k:[Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
 
 # direct methods
@@ -50,7 +50,7 @@
 
     invoke-direct {v1, v2, v3}, Lcom/supercell/id/view/ExpandableFrameLayout$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->COLLAPSED:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sput-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->g:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     aput-object v1, v0, v3
 
@@ -62,7 +62,7 @@
 
     invoke-direct {v1, v2, v3}, Lcom/supercell/id/view/ExpandableFrameLayout$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->COLLAPSING:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sput-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     aput-object v1, v0, v3
 
@@ -74,7 +74,7 @@
 
     invoke-direct {v1, v2, v3}, Lcom/supercell/id/view/ExpandableFrameLayout$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->EXPANDING:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sput-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->i:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     aput-object v1, v0, v3
 
@@ -86,16 +86,16 @@
 
     invoke-direct {v1, v2, v3}, Lcom/supercell/id/view/ExpandableFrameLayout$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->EXPANDED:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sput-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->j:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->$VALUES:[Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sput-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->k:[Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;I)V
+.method public constructor <init>(Ljava/lang/String;I)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -126,7 +126,7 @@
 .method public static values()[Lcom/supercell/id/view/ExpandableFrameLayout$b;
     .locals 1
 
-    sget-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->$VALUES:[Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sget-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->k:[Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     invoke-virtual {v0}, [Lcom/supercell/id/view/ExpandableFrameLayout$b;->clone()Ljava/lang/Object;
 

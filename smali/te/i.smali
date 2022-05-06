@@ -44,7 +44,7 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p2, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p2}, Ljava/lang/reflect/Constructor;->getParameterTypes()[Ljava/lang/Class;
 
@@ -59,7 +59,7 @@
     check-cast p1, Ljava/lang/reflect/Constructor;
 
     .line 3
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Ljava/lang/reflect/Constructor;->getParameterTypes()[Ljava/lang/Class;
 
@@ -71,7 +71,7 @@
 
     move-result-object p1
 
-    invoke-static {p2, p1}, Le0/a;->d(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
+    invoke-static {p2, p1}, Lce/a;->a(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
 
     move-result p1
 

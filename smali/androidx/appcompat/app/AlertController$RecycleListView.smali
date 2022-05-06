@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final b:I
+.field public final h:I
 
 
 # direct methods
@@ -43,7 +43,7 @@
 
     move-result p2
 
-    iput p2, p0, Landroidx/appcompat/app/AlertController$RecycleListView;->b:I
+    iput p2, p0, Landroidx/appcompat/app/AlertController$RecycleListView;->h:I
 
     .line 4
     sget p2, Landroidx/appcompat/R$styleable;->RecycleListView_paddingTopNoTitle:I
@@ -52,7 +52,7 @@
 
     move-result p1
 
-    iput p1, p0, Landroidx/appcompat/app/AlertController$RecycleListView;->a:I
+    iput p1, p0, Landroidx/appcompat/app/AlertController$RecycleListView;->g:I
 
     return-void
 .end method

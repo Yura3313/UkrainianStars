@@ -20,14 +20,14 @@
     value = {
         "Lle/j;",
         "Lke/a<",
-        "Ltd/b;",
+        "Lsd/b;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
+.field public static final g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;->a:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
+    sput-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
 
     return-void
 .end method
@@ -59,12 +59,12 @@
     .locals 4
 
     .line 1
-    new-instance v0, Ltd/b;
+    new-instance v0, Lsd/b;
 
-    invoke-direct {v0}, Ltd/b;-><init>()V
+    invoke-direct {v0}, Lsd/b;-><init>()V
 
     .line 2
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v1, v0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz v1, :cond_0
 

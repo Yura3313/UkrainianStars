@@ -33,17 +33,17 @@
     return-void
 .end method
 
-.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/talk/model/TalkProfile;Ljava/lang/Throwable;)Lbe/n;
+.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/talk/model/TalkProfile;Ljava/lang/Throwable;)Lae/i;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lcom/kakaogame/kakao/KakaoGameAPI$5;->lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/talk/model/TalkProfile;Ljava/lang/Throwable;)Lbe/n;
+    invoke-static {p0, p1, p2}, Lcom/kakaogame/kakao/KakaoGameAPI$5;->lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/talk/model/TalkProfile;Ljava/lang/Throwable;)Lae/i;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private static synthetic lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/talk/model/TalkProfile;Ljava/lang/Throwable;)Lbe/n;
+.method private static synthetic lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/talk/model/TalkProfile;Ljava/lang/Throwable;)Lae/i;
     .locals 0
 
     if-eqz p2, :cond_0
@@ -92,7 +92,7 @@
 
     .line 8
     :goto_0
-    sget-object p0, Lbe/n;->a:Lbe/n;
+    sget-object p0, Lae/i;->a:Lae/i;
 
     return-object p0
 .end method

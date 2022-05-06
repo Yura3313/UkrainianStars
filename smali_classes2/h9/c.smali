@@ -249,7 +249,7 @@
     check-cast v3, Ljava/lang/String;
 
     .line 27
-    invoke-static {v3}, Lg8/b;->b(Ljava/lang/String;)J
+    invoke-static {v3}, Lh8/b;->b(Ljava/lang/String;)J
 
     move-result-wide v3
 
@@ -302,7 +302,7 @@
     check-cast v4, Ljava/lang/String;
 
     .line 32
-    invoke-static {v4}, Lg8/b;->b(Ljava/lang/String;)J
+    invoke-static {v4}, Lh8/b;->b(Ljava/lang/String;)J
 
     move-result-wide v4
 

@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/fragment/app/t;
+.field public final synthetic g:Landroidx/fragment/app/t;
 
-.field public final synthetic b:Landroidx/fragment/app/l;
+.field public final synthetic h:Landroidx/fragment/app/l;
 
 
 # direct methods
@@ -25,9 +25,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/fragment/app/l$e;->b:Landroidx/fragment/app/l;
+    iput-object p1, p0, Landroidx/fragment/app/l$e;->h:Landroidx/fragment/app/l;
 
-    iput-object p2, p0, Landroidx/fragment/app/l$e;->a:Landroidx/fragment/app/t;
+    iput-object p2, p0, Landroidx/fragment/app/l$e;->g:Landroidx/fragment/app/t;
 
     invoke-direct {p0}, Landroidx/fragment/app/t;-><init>()V
 
@@ -40,10 +40,10 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/l$e;->b:Landroidx/fragment/app/l;
+    iget-object v0, p0, Landroidx/fragment/app/l$e;->h:Landroidx/fragment/app/l;
 
     .line 2
-    iget-object v0, v0, Landroidx/fragment/app/l;->m0:Landroid/app/Dialog;
+    iget-object v0, v0, Landroidx/fragment/app/l;->n0:Landroid/app/Dialog;
 
     const/4 v1, 0x0
 
@@ -66,7 +66,7 @@
 
     .line 4
     :cond_1
-    iget-object v0, p0, Landroidx/fragment/app/l$e;->a:Landroidx/fragment/app/t;
+    iget-object v0, p0, Landroidx/fragment/app/l$e;->g:Landroidx/fragment/app/t;
 
     invoke-virtual {v0}, Landroidx/fragment/app/t;->j()Z
 
@@ -75,7 +75,7 @@
     if-eqz v0, :cond_2
 
     .line 5
-    iget-object v0, p0, Landroidx/fragment/app/l$e;->a:Landroidx/fragment/app/t;
+    iget-object v0, p0, Landroidx/fragment/app/l$e;->g:Landroidx/fragment/app/t;
 
     invoke-virtual {v0, p1}, Landroidx/fragment/app/t;->i(I)Landroid/view/View;
 
@@ -91,15 +91,15 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/l$e;->b:Landroidx/fragment/app/l;
+    iget-object v0, p0, Landroidx/fragment/app/l$e;->h:Landroidx/fragment/app/l;
 
     .line 2
-    iget-boolean v0, v0, Landroidx/fragment/app/l;->q0:Z
+    iget-boolean v0, v0, Landroidx/fragment/app/l;->r0:Z
 
     if-nez v0, :cond_1
 
     .line 3
-    iget-object v0, p0, Landroidx/fragment/app/l$e;->a:Landroidx/fragment/app/t;
+    iget-object v0, p0, Landroidx/fragment/app/l$e;->g:Landroidx/fragment/app/t;
 
     invoke-virtual {v0}, Landroidx/fragment/app/t;->j()Z
 

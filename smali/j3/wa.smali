@@ -3,143 +3,334 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/gl0;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final g:Lj3/xa;
 
-.field public final b:Ljava/lang/Object;
+.field public final h:Landroid/content/Context;
 
-.field public final c:Ljava/lang/Object;
+.field public final i:Ljava/lang/String;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+.method public constructor <init>(Lj3/xa;Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
-    iput p3, p0, Lj3/wa;->a:I
-
-    iput-object p1, p0, Lj3/wa;->b:Ljava/lang/Object;
-
-    iput-object p2, p0, Lj3/wa;->c:Ljava/lang/Object;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lj3/wa;->g:Lj3/xa;
+
+    iput-object p2, p0, Lj3/wa;->h:Landroid/content/Context;
+
+    iput-object p3, p0, Lj3/wa;->i:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lj3/yl0;
-    .locals 3
+.method public final run()V
+    .locals 7
 
-    iget v0, p0, Lj3/wa;->a:I
+    iget-object v0, p0, Lj3/wa;->g:Lj3/xa;
 
-    packed-switch v0, :pswitch_data_0
+    iget-object v1, p0, Lj3/wa;->h:Landroid/content/Context;
 
-    goto :goto_0
+    iget-object v2, p0, Lj3/wa;->i:Ljava/lang/String;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 v3, 0x0
 
     .line 1
-    :pswitch_0
-    iget-object p1, p0, Lj3/wa;->c:Ljava/lang/Object;
-
-    check-cast p1, Landroid/net/Uri;
-
-    .line 2
-    invoke-static {p1}, Lj3/xa;->C(Landroid/net/Uri;)Ljava/util/Map;
-
-    move-result-object p1
-
-    .line 3
-    invoke-static {p1}, Lj3/ul0;->i(Ljava/lang/Object;)Lj3/yl0;
-
-    move-result-object p1
-
-    return-object p1
-
-    .line 4
-    :goto_0
-    iget-object v0, p0, Lj3/wa;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/s50;
-
-    iget-object v1, p0, Lj3/wa;->c:Ljava/lang/Object;
-
-    check-cast v1, Lj3/ly;
-
-    check-cast p1, Lorg/json/JSONObject;
-
-    .line 5
-    iget-object v0, v0, Lj3/s50;->d:Lj3/vg0;
-
-    invoke-static {v1}, Lj3/ul0;->i(Ljava/lang/Object;)Lj3/yl0;
+    invoke-virtual {v1, v2, v3}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v1
 
+    .line 2
+    invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v2
+
+    .line 3
+    iget-object v4, v0, Lj3/xa;->a:Ljava/lang/Object;
+
+    monitor-enter v4
+
+    .line 4
+    :try_start_0
+    iput-object v1, v0, Lj3/xa;->f:Landroid/content/SharedPreferences;
+
+    .line 5
+    iput-object v2, v0, Lj3/xa;->g:Landroid/content/SharedPreferences$Editor;
+
     .line 6
-    monitor-enter v0
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x17
+
+    if-lt v1, v2, :cond_0
+
+    const/4 v3, 0x1
+
+    :cond_0
+    if-eqz v3, :cond_1
 
     .line 7
-    :try_start_0
-    iget-object v2, v0, Lj3/vg0;->a:Ljava/util/Deque;
+    invoke-static {}, Landroid/security/NetworkSecurityPolicy;->getInstance()Landroid/security/NetworkSecurityPolicy;
 
-    invoke-interface {v2, v1}, Ljava/util/Deque;->addFirst(Ljava/lang/Object;)V
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/security/NetworkSecurityPolicy;->isCleartextTrafficPermitted()Z
+
+    .line 8
+    :cond_1
+    iget-object v1, v0, Lj3/xa;->f:Landroid/content/SharedPreferences;
+
+    const-string v2, "use_https"
+
+    iget-boolean v3, v0, Lj3/xa;->h:Z
+
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v1
+
+    iput-boolean v1, v0, Lj3/xa;->h:Z
+
+    .line 9
+    iget-object v1, v0, Lj3/xa;->f:Landroid/content/SharedPreferences;
+
+    const-string v2, "content_url_opted_out"
+
+    iget-boolean v3, v0, Lj3/xa;->t:Z
+
+    .line 10
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v1
+
+    iput-boolean v1, v0, Lj3/xa;->t:Z
+
+    .line 11
+    iget-object v1, v0, Lj3/xa;->f:Landroid/content/SharedPreferences;
+
+    const-string v2, "content_url_hashes"
+
+    iget-object v3, v0, Lj3/xa;->i:Ljava/lang/String;
+
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lj3/xa;->i:Ljava/lang/String;
+
+    .line 12
+    iget-object v1, v0, Lj3/xa;->f:Landroid/content/SharedPreferences;
+
+    const-string v2, "auto_collect_location"
+
+    iget-boolean v3, v0, Lj3/xa;->k:Z
+
+    .line 13
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v1
+
+    iput-boolean v1, v0, Lj3/xa;->k:Z
+
+    .line 14
+    iget-object v1, v0, Lj3/xa;->f:Landroid/content/SharedPreferences;
+
+    const-string v2, "content_vertical_opted_out"
+
+    iget-boolean v3, v0, Lj3/xa;->u:Z
+
+    .line 15
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v1
+
+    iput-boolean v1, v0, Lj3/xa;->u:Z
+
+    .line 16
+    iget-object v1, v0, Lj3/xa;->f:Landroid/content/SharedPreferences;
+
+    const-string v2, "content_vertical_hashes"
+
+    iget-object v3, v0, Lj3/xa;->j:Ljava/lang/String;
+
+    .line 17
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lj3/xa;->j:Ljava/lang/String;
+
+    .line 18
+    iget-object v1, v0, Lj3/xa;->f:Landroid/content/SharedPreferences;
+
+    const-string v2, "version_code"
+
+    iget v3, v0, Lj3/xa;->q:I
+
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+
+    move-result v1
+
+    iput v1, v0, Lj3/xa;->q:I
+
+    .line 19
+    iget-object v1, v0, Lj3/xa;->f:Landroid/content/SharedPreferences;
+
+    const-string v2, "app_settings_json"
+
+    iget-object v3, v0, Lj3/xa;->l:Ljava/lang/String;
+
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lj3/xa;->l:Ljava/lang/String;
+
+    .line 20
+    iget-object v1, v0, Lj3/xa;->f:Landroid/content/SharedPreferences;
+
+    const-string v2, "app_settings_last_update_ms"
+
+    iget-wide v5, v0, Lj3/xa;->m:J
+
+    .line 21
+    invoke-interface {v1, v2, v5, v6}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
+
+    move-result-wide v1
+
+    iput-wide v1, v0, Lj3/xa;->m:J
+
+    .line 22
+    iget-object v1, v0, Lj3/xa;->f:Landroid/content/SharedPreferences;
+
+    const-string v2, "app_last_background_time_ms"
+
+    iget-wide v5, v0, Lj3/xa;->n:J
+
+    .line 23
+    invoke-interface {v1, v2, v5, v6}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
+
+    move-result-wide v1
+
+    iput-wide v1, v0, Lj3/xa;->n:J
+
+    .line 24
+    iget-object v1, v0, Lj3/xa;->f:Landroid/content/SharedPreferences;
+
+    const-string v2, "request_in_session_count"
+
+    iget v3, v0, Lj3/xa;->p:I
+
+    .line 25
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+
+    move-result v1
+
+    iput v1, v0, Lj3/xa;->p:I
+
+    .line 26
+    iget-object v1, v0, Lj3/xa;->f:Landroid/content/SharedPreferences;
+
+    const-string v2, "first_ad_req_time_ms"
+
+    iget-wide v5, v0, Lj3/xa;->o:J
+
+    .line 27
+    invoke-interface {v1, v2, v5, v6}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
+
+    move-result-wide v1
+
+    iput-wide v1, v0, Lj3/xa;->o:J
+
+    .line 28
+    iget-object v1, v0, Lj3/xa;->f:Landroid/content/SharedPreferences;
+
+    const-string v2, "never_pool_slots"
+
+    iget-object v3, v0, Lj3/xa;->r:Ljava/util/Set;
+
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences;->getStringSet(Ljava/lang/String;Ljava/util/Set;)Ljava/util/Set;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lj3/xa;->r:Ljava/util/Set;
+
+    .line 29
+    iget-object v1, v0, Lj3/xa;->f:Landroid/content/SharedPreferences;
+
+    const-string v2, "display_cutout"
+
+    iget-object v3, v0, Lj3/xa;->v:Ljava/lang/String;
+
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lj3/xa;->v:Ljava/lang/String;
+
+    .line 30
+    iget-object v1, v0, Lj3/xa;->f:Landroid/content/SharedPreferences;
+
+    const-string v2, "app_measurement_npa"
+
+    iget v3, v0, Lj3/xa;->w:I
+
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+
+    move-result v1
+
+    iput v1, v0, Lj3/xa;->w:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 8
-    monitor-exit v0
+    .line 31
+    :try_start_1
+    new-instance v1, Lorg/json/JSONObject;
 
-    const-string v0, "success"
+    iget-object v2, v0, Lj3/xa;->f:Landroid/content/SharedPreferences;
 
-    .line 9
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;)Z
+    const-string v3, "native_advanced_settings"
 
-    move-result v0
+    const-string v5, "{}"
 
-    if-eqz v0, :cond_0
+    .line 32
+    invoke-interface {v2, v3, v5}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    const-string v0, "json"
+    move-result-object v2
 
-    .line 10
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+    invoke-direct {v1, v2}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    move-result-object p1
+    iput-object v1, v0, Lj3/xa;->s:Lorg/json/JSONObject;
+    :try_end_1
+    .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    const-string v0, "ads"
+    .line 33
+    :catch_0
+    :try_start_2
+    invoke-virtual {v0}, Lj3/xa;->C()Landroid/os/Bundle;
 
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+    invoke-virtual {v0}, Lj3/xa;->r()V
 
-    move-result-object p1
+    .line 34
+    monitor-exit v4
 
-    invoke-static {p1}, Lj3/ul0;->i(Ljava/lang/Object;)Lj3/yl0;
-
-    move-result-object p1
-
-    return-object p1
-
-    .line 11
-    :cond_0
-    new-instance p1, Lcom/google/android/gms/internal/ads/zzalj;
-
-    const-string v0, "process json failed"
-
-    invoke-direct {p1, v0}, Lcom/google/android/gms/internal/ads/zzalj;-><init>(Ljava/lang/String;)V
-
-    throw p1
+    return-void
 
     :catchall_0
-    move-exception p1
+    move-exception v0
 
-    .line 12
-    monitor-exit v0
+    monitor-exit v4
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    throw p1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    throw v0
 .end method

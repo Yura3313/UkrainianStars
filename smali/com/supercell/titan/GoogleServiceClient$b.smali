@@ -3,7 +3,7 @@
 .source "GoogleServiceClient.java"
 
 # interfaces
-.implements La4/c;
+.implements Lb4/c;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La4/c<",
+        "Lb4/c<",
         "Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;",
         ">;"
     }
@@ -44,25 +44,25 @@
 
 
 # virtual methods
-.method public a(La4/f;)V
+.method public a(Lb4/f;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "La4/f<",
+            "Lb4/f<",
             "Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, La4/f;->l()Z
+    invoke-virtual {p1}, Lb4/f;->l()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p1}, La4/f;->h()Ljava/lang/Object;
+    invoke-virtual {p1}, Lb4/f;->h()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -71,7 +71,7 @@
     .line 2
     iget-object v0, p0, Lcom/supercell/titan/GoogleServiceClient$b;->a:Lcom/supercell/titan/GoogleServiceClient;
 
-    invoke-virtual {p1}, La4/f;->h()Ljava/lang/Object;
+    invoke-virtual {p1}, Lb4/f;->h()Ljava/lang/Object;
 
     move-result-object p1
 
@@ -84,7 +84,7 @@
 
     .line 4
     :cond_0
-    invoke-virtual {p1}, La4/f;->g()Ljava/lang/Exception;
+    invoke-virtual {p1}, Lb4/f;->g()Ljava/lang/Exception;
 
     :goto_0
     return-void

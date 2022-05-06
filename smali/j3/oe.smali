@@ -1,64 +1,123 @@
-.class public final synthetic Lj3/oe;
-.super Ljava/lang/Object;
+.class public abstract Lj3/oe;
+.super Landroid/view/TextureView;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lj3/if;
+
+
+# annotations
+.annotation build Landroid/annotation/TargetApi;
+    value = 0xe
+.end annotation
 
 
 # instance fields
-.field public final a:Lj3/me;
+.field public final g:Lj3/ye;
 
-.field public final b:Z
+.field public final h:Lj3/jf;
 
 
 # direct methods
-.method public constructor <init>(Lj3/me;Z)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    invoke-direct {p0, p1}, Landroid/view/TextureView;-><init>(Landroid/content/Context;)V
 
-    iput-object p1, p0, Lj3/oe;->a:Lj3/me;
+    .line 2
+    new-instance v0, Lj3/ye;
 
-    iput-boolean p2, p0, Lj3/oe;->b:Z
+    invoke-direct {v0}, Lj3/ye;-><init>()V
+
+    iput-object v0, p0, Lj3/oe;->g:Lj3/ye;
+
+    .line 3
+    new-instance v0, Lj3/jf;
+
+    invoke-direct {v0, p1, p0}, Lj3/jf;-><init>(Landroid/content/Context;Lj3/if;)V
+
+    iput-object v0, p0, Lj3/oe;->h:Lj3/jf;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 5
+.method public abstract b()V
+.end method
 
-    iget-object v0, p0, Lj3/oe;->a:Lj3/me;
+.method public abstract f()V
+.end method
 
-    iget-boolean v1, p0, Lj3/oe;->b:Z
+.method public abstract g()V
+.end method
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+.method public abstract getCurrentPosition()I
+.end method
 
-    const/4 v2, 0x2
+.method public abstract getDuration()I
+.end method
 
-    new-array v2, v2, [Ljava/lang/String;
+.method public abstract getVideoHeight()I
+.end method
 
-    const/4 v3, 0x0
+.method public abstract getVideoWidth()I
+.end method
 
-    const-string v4, "hasWindowFocus"
+.method public abstract h(I)V
+.end method
 
-    aput-object v4, v2, v3
+.method public abstract i()V
+.end method
+
+.method public abstract j(FF)V
+.end method
+
+.method public abstract k(Lj3/me;)V
+.end method
+
+.method public l(Ljava/lang/String;[Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v3, 0x1
-
-    aput-object v1, v2, v3
-
-    const-string v1, "windowFocusChanged"
-
-    .line 2
-    invoke-virtual {v0, v1, v2}, Lj3/me;->c(Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {p0, p1}, Lj3/oe;->setVideoPath(Ljava/lang/String;)V
 
     return-void
+.end method
+
+.method public m(I)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public n(I)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public o(I)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public p(I)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public q(I)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public abstract r()Ljava/lang/String;
+.end method
+
+.method public abstract setVideoPath(Ljava/lang/String;)V
 .end method

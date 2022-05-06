@@ -9,8 +9,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/supercell/websocket/proxy/protocol/ServerMessage$c;,
-        Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
+        Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;,
+        Lcom/supercell/websocket/proxy/protocol/ServerMessage$c;
     }
 .end annotation
 
@@ -84,7 +84,7 @@
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite;-><init>()V
 
     .line 2
-    sget-object v0, Lcom/google/protobuf/i;->b:Lcom/google/protobuf/i;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
 
     iput-object v0, p0, Lcom/supercell/websocket/proxy/protocol/ServerMessage;->data_:Lcom/google/protobuf/i;
 
@@ -547,7 +547,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p1}, Lcom/supercell/websocket/proxy/protocol/ServerMessage$c;->getNumber()I
+    invoke-virtual {p1}, Lcom/supercell/websocket/proxy/protocol/ServerMessage$c;->b()I
 
     move-result p1
 
@@ -589,13 +589,9 @@
     .locals 1
 
     .line 1
-    sget-object p2, Lcom/supercell/websocket/proxy/protocol/ServerMessage$a;->a:[I
-
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
     move-result p1
-
-    aget p1, p2, p1
 
     const/4 p2, 0x1
 
@@ -730,14 +726,14 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
+    .packed-switch 0x0
         :pswitch_1
         :pswitch_0
+        :pswitch_4
+        :pswitch_6
+        :pswitch_5
+        :pswitch_3
+        :pswitch_2
     .end packed-switch
 .end method
 
@@ -756,14 +752,14 @@
     .line 1
     iget v0, p0, Lcom/supercell/websocket/proxy/protocol/ServerMessage;->kind_:I
 
-    invoke-static {v0}, Lcom/supercell/websocket/proxy/protocol/ServerMessage$c;->forNumber(I)Lcom/supercell/websocket/proxy/protocol/ServerMessage$c;
+    invoke-static {v0}, Lcom/supercell/websocket/proxy/protocol/ServerMessage$c;->a(I)Lcom/supercell/websocket/proxy/protocol/ServerMessage$c;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/ServerMessage$c;->UNRECOGNIZED:Lcom/supercell/websocket/proxy/protocol/ServerMessage$c;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/ServerMessage$c;->m:Lcom/supercell/websocket/proxy/protocol/ServerMessage$c;
 
     :cond_0
     return-object v0

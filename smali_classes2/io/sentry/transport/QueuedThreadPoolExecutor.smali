@@ -110,6 +110,7 @@
 
     invoke-virtual {p2}, Lio/sentry/transport/ReusableCountLatch;->decrement()V
 
+    .line 3
     throw p1
 .end method
 

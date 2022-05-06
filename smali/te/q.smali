@@ -26,7 +26,7 @@
 
 .field public static final synthetic f:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
-.field public static final g:Lp5/b0;
+.field public static final g:Lte/w;
 
 .field public static final h:Lte/q$a;
 
@@ -60,13 +60,13 @@
     sput-object v1, Lte/q;->h:Lte/q$a;
 
     .line 1
-    new-instance v1, Lp5/b0;
+    new-instance v1, Lte/w;
 
     const-string v2, "REMOVE_FROZEN"
 
-    invoke-direct {v1, v2}, Lp5/b0;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lte/w;-><init>(Ljava/lang/String;)V
 
-    sput-object v1, Lte/q;->g:Lp5/b0;
+    sput-object v1, Lte/q;->g:Lte/w;
 
     const-class v1, Ljava/lang/Object;
 
@@ -198,7 +198,7 @@
     long-to-int v6, v0
 
     .line 3
-    sget-boolean v0, Lse/e0;->a:Z
+    sget-boolean v0, Lse/c0;->a:Z
 
     const-wide/high16 v0, 0x1000000000000000L
 
@@ -482,7 +482,7 @@
     const-string v0, "element"
 
     .line 15
-    invoke-static {v0}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {v0}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -722,7 +722,21 @@
     iput-wide v8, v4, Lte/q;->_state$internal:J
 
     .line 10
+    :cond_5
     invoke-virtual {v0, p0, v1, v4}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_6
+
+    goto :goto_0
+
+    :cond_6
+    invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    if-eqz v5, :cond_5
 
     goto :goto_0
 .end method

@@ -1,107 +1,345 @@
-.class public final Lj3/k90;
+.class public final synthetic Lj3/k90;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/wc0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lj3/wc0<",
-        "Lj3/l90;",
-        ">;"
-    }
-.end annotation
+.implements Ljava/util/concurrent/Callable;
 
 
 # instance fields
-.field public final a:Lj3/wc0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/wc0<",
-            "Lj3/zc0;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic a:I
 
-.field public final b:Lj3/pg0;
-
-.field public final c:Landroid/content/Context;
-
-.field public final d:Lj3/ea;
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lj3/qa0;Lj3/pg0;Landroid/content/Context;Lj3/ea;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/qa0<",
-            "Lj3/zc0;",
-            ">;",
-            "Lj3/pg0;",
-            "Landroid/content/Context;",
-            "Lj3/ea;",
-            ")V"
-        }
-    .end annotation
 
     .line 1
+    iput p2, p0, Lj3/k90;->a:I
+
+    iput-object p1, p0, Lj3/k90;->b:Ljava/lang/Object;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lj3/k90;->a:Lj3/wc0;
-
-    .line 3
-    iput-object p2, p0, Lj3/k90;->b:Lj3/pg0;
-
-    .line 4
-    iput-object p3, p0, Lj3/k90;->c:Landroid/content/Context;
-
-    .line 5
-    iput-object p4, p0, Lj3/k90;->d:Lj3/ea;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lj3/yl0;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lj3/yl0<",
-            "Lj3/l90;",
-            ">;"
-        }
-    .end annotation
+.method public final call()Ljava/lang/Object;
+    .locals 9
+
+    iget v0, p0, Lj3/k90;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto/16 :goto_6
 
     .line 1
-    iget-object v0, p0, Lj3/k90;->a:Lj3/wc0;
+    :pswitch_0
+    iget-object v0, p0, Lj3/k90;->b:Ljava/lang/Object;
+
+    check-cast v0, Lj3/ac0;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
-    invoke-interface {v0}, Lj3/wc0;->a()Lj3/yl0;
-
-    move-result-object v0
+    sget-object v1, Lj3/n;->s2:Lj3/f;
 
     .line 3
-    new-instance v1, Lj3/n90;
+    sget-object v2, Lj3/t51;->j:Lj3/t51;
 
-    invoke-direct {v1, p0}, Lj3/n90;-><init>(Lj3/k90;)V
+    iget-object v2, v2, Lj3/t51;->f:Lj3/l;
 
     .line 4
-    sget-object v2, Lj3/gd;->f:Lj3/am0;
+    invoke-virtual {v2, v1}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+
+    move-result-object v2
 
     .line 5
-    invoke-static {v0, v1, v2}, Lj3/ul0;->j(Lj3/yl0;Lj3/mj0;Ljava/util/concurrent/Executor;)Lj3/yl0;
+    check-cast v2, Ljava/lang/Boolean;
+
+    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    if-eqz v2, :cond_4
+
+    iget-object v2, v0, Lj3/ac0;->c:Ljava/util/Set;
+
+    const-string v4, "rewarded"
+
+    .line 6
+    invoke-interface {v2, v4}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_1
+
+    const-string v4, "interstitial"
+
+    .line 7
+    invoke-interface {v2, v4}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_1
+
+    const-string v4, "native"
+
+    .line 8
+    invoke-interface {v2, v4}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_1
+
+    const-string v4, "banner"
+
+    .line 9
+    invoke-interface {v2, v4}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v2, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 v2, 0x1
+
+    :goto_1
+    if-eqz v2, :cond_4
+
+    .line 10
+    new-instance v2, Lj3/zb0;
+
+    .line 11
+    sget-object v4, Lh1/o;->B:Lh1/o;
+
+    iget-object v4, v4, Lh1/o;->v:Lj3/n7;
+
+    .line 12
+    iget-object v0, v0, Lj3/ac0;->b:Landroid/content/Context;
+
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 13
+    sget-object v5, Lj3/t51;->j:Lj3/t51;
+
+    iget-object v5, v5, Lj3/t51;->f:Lj3/l;
+
+    .line 14
+    invoke-virtual {v5, v1}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 15
+    check-cast v1, Ljava/lang/Boolean;
+
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    if-nez v1, :cond_2
+
+    goto :goto_3
+
+    .line 16
+    :cond_2
+    :try_start_0
+    invoke-virtual {v4, v0}, Lj3/n7;->e(Landroid/content/Context;)V
+
+    const-string v0, "a."
+
+    .line 17
+    iget-object v1, v4, Lj3/n7;->a:Lcom/google/android/gms/internal/ads/zzdpt;
+
+    invoke-interface {v1}, Lcom/google/android/gms/internal/ads/zzdpt;->S0()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    goto :goto_3
+
+    :cond_3
+    new-instance v1, Ljava/lang/String;
+
+    invoke-direct {v1, v0}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-object v3, v1
+
+    goto :goto_3
+
+    :catch_0
+    move-exception v0
+
+    goto :goto_2
+
+    :catch_1
+    move-exception v0
+
+    :goto_2
+    const-string v1, "#007 Could not call remote method."
+
+    .line 18
+    invoke-static {v1, v0}, Lj3/cj;->j(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 19
+    :goto_3
+    invoke-direct {v2, v3}, Lj3/zb0;-><init>(Ljava/lang/String;)V
+
+    goto :goto_4
+
+    .line 20
+    :cond_4
+    new-instance v2, Lj3/zb0;
+
+    invoke-direct {v2, v3}, Lj3/zb0;-><init>(Ljava/lang/String;)V
+
+    :goto_4
+    return-object v2
+
+    .line 21
+    :pswitch_1
+    iget-object v0, p0, Lj3/k90;->b:Ljava/lang/Object;
+
+    check-cast v0, Lj3/h90;
+
+    .line 22
+    new-instance v1, Lj3/i90;
+
+    iget-object v2, v0, Lj3/h90;->b:Landroid/content/Context;
+
+    iget-object v3, v0, Lj3/h90;->c:Lj3/wg0;
+
+    iget-object v3, v3, Lj3/wg0;->e:Lcom/google/android/gms/internal/ads/zzvj;
+
+    .line 23
+    new-instance v4, Ljava/util/ArrayList;
+
+    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
+
+    .line 24
+    iget-object v0, v0, Lj3/h90;->d:Landroid/view/View;
+
+    :goto_5
+    if-eqz v0, :cond_6
+
+    .line 25
+    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v5
+
+    if-eqz v5, :cond_6
+
+    const/4 v6, -0x1
+
+    .line 26
+    instance-of v7, v5, Landroid/view/ViewGroup;
+
+    if-eqz v7, :cond_5
+
+    .line 27
+    move-object v6, v5
+
+    check-cast v6, Landroid/view/ViewGroup;
+
+    invoke-virtual {v6, v0}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
+
+    move-result v6
+
+    .line 28
+    :cond_5
+    new-instance v0, Landroid/os/Bundle;
+
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+
+    .line 29
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v7
+
+    const-string v8, "type"
+
+    invoke-virtual {v0, v8, v7}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v7, "index_of_child"
+
+    .line 30
+    invoke-virtual {v0, v7, v6}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+
+    .line 31
+    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 32
+    instance-of v0, v5, Landroid/view/View;
+
+    if-eqz v0, :cond_6
+
+    .line 33
+    move-object v0, v5
+
+    check-cast v0, Landroid/view/View;
+
+    goto :goto_5
+
+    .line 34
+    :cond_6
+    invoke-direct {v1, v2, v3, v4}, Lj3/i90;-><init>(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzvj;Ljava/util/List;)V
+
+    return-object v1
+
+    .line 35
+    :goto_6
+    iget-object v0, p0, Lj3/k90;->b:Ljava/lang/Object;
+
+    check-cast v0, Lj3/ij0;
+
+    .line 36
+    iget-object v1, v0, Lj3/ij0;->e:Lj3/kj0;
+
+    iget-object v0, v0, Lj3/ij0;->a:Landroid/content/Context;
+
+    invoke-interface {v1, v0}, Lj3/kj0;->b(Landroid/content/Context;)Lcom/google/android/gms/internal/ads/a0;
 
     move-result-object v0
 
     return-object v0
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

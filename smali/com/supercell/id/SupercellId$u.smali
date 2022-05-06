@@ -20,14 +20,14 @@
     value = {
         "Lle/j;",
         "Lke/a<",
-        "Lwd/r;",
+        "Lvd/r;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/SupercellId$u;
+.field public static final g:Lcom/supercell/id/SupercellId$u;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/SupercellId$u;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/SupercellId$u;->a:Lcom/supercell/id/SupercellId$u;
+    sput-object v0, Lcom/supercell/id/SupercellId$u;->g:Lcom/supercell/id/SupercellId$u;
 
     return-void
 .end method
@@ -95,7 +95,7 @@
 
     .line 3
     :goto_0
-    new-instance v4, Lwd/r;
+    new-instance v4, Lvd/r;
 
     if-eqz v2, :cond_1
 
@@ -132,7 +132,7 @@
 
     .line 7
     :cond_2
-    invoke-direct {v4, v1, v2, v3}, Lwd/r;-><init>(Landroid/content/Context;Lcom/supercell/id/IdConfiguration;Lcom/supercell/id/IdAccount;)V
+    invoke-direct {v4, v1, v2, v3}, Lvd/r;-><init>(Landroid/content/Context;Lcom/supercell/id/IdConfiguration;Lcom/supercell/id/IdAccount;)V
 
     return-object v4
 

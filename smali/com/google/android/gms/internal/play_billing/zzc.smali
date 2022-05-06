@@ -7,7 +7,7 @@
 
 
 # direct methods
-.method public static E0(Landroid/os/IBinder;)Lcom/google/android/gms/internal/play_billing/zzd;
+.method public static F0(Landroid/os/IBinder;)Lcom/google/android/gms/internal/play_billing/zzd;
     .locals 2
 
     if-nez p0, :cond_0

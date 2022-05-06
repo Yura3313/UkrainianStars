@@ -50,41 +50,41 @@
     new-instance v0, Lq5/a;
 
     .line 3
-    invoke-virtual {p1}, Ll5/p0;->w()Ll5/r0;
+    invoke-virtual {p1}, Ll5/p0;->v()Ll5/r0;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Ll5/r0;->t()Ll5/o0;
+    invoke-virtual {v1}, Ll5/r0;->s()Ll5/o0;
 
     move-result-object v1
 
-    invoke-static {v1}, Lk5/a;->h(Ll5/o0;)Lp5/z;
+    invoke-static {v1}, Lk5/a;->h(Ll5/o0;)I
 
-    move-result-object v1
+    move-result v1
 
     .line 4
-    invoke-virtual {p1}, Ll5/p0;->v()Lm5/c;
+    invoke-virtual {p1}, Ll5/p0;->u()Lm5/c;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lm5/c;->n()[B
+    invoke-virtual {v2}, Lm5/c;->m()[B
 
     move-result-object v2
 
     .line 5
-    invoke-virtual {p1}, Ll5/p0;->w()Ll5/r0;
+    invoke-virtual {p1}, Ll5/p0;->v()Ll5/r0;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Ll5/r0;->u()Lm5/c;
+    invoke-virtual {p1}, Ll5/r0;->t()Lm5/c;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lm5/c;->n()[B
+    invoke-virtual {p1}, Lm5/c;->m()[B
 
     move-result-object p1
 
-    invoke-direct {v0, v1, v2, p1}, Lq5/a;-><init>(Lp5/z;[B[B)V
+    invoke-direct {v0, v1, v2, p1}, Lq5/a;-><init>(I[B[B)V
 
     return-object v0
 .end method

@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/drawerlayout/widget/DrawerLayout$e;
+.field public final synthetic g:Landroidx/drawerlayout/widget/DrawerLayout$e;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/drawerlayout/widget/DrawerLayout$e$a;->a:Landroidx/drawerlayout/widget/DrawerLayout$e;
+    iput-object p1, p0, Landroidx/drawerlayout/widget/DrawerLayout$e$a;->g:Landroidx/drawerlayout/widget/DrawerLayout$e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     .locals 14
 
     .line 1
-    iget-object v0, p0, Landroidx/drawerlayout/widget/DrawerLayout$e$a;->a:Landroidx/drawerlayout/widget/DrawerLayout$e;
+    iget-object v0, p0, Landroidx/drawerlayout/widget/DrawerLayout$e$a;->g:Landroidx/drawerlayout/widget/DrawerLayout$e;
 
     .line 2
     iget-object v1, v0, Landroidx/drawerlayout/widget/DrawerLayout$e;->b:Lj0/c;
@@ -176,7 +176,7 @@
     iget-object v0, v0, Landroidx/drawerlayout/widget/DrawerLayout$e;->d:Landroidx/drawerlayout/widget/DrawerLayout;
 
     .line 18
-    iget-boolean v1, v0, Landroidx/drawerlayout/widget/DrawerLayout;->w:Z
+    iget-boolean v1, v0, Landroidx/drawerlayout/widget/DrawerLayout;->x:Z
 
     if-nez v1, :cond_6
 
@@ -224,7 +224,7 @@
     invoke-virtual {v1}, Landroid/view/MotionEvent;->recycle()V
 
     .line 24
-    iput-boolean v4, v0, Landroidx/drawerlayout/widget/DrawerLayout;->w:Z
+    iput-boolean v4, v0, Landroidx/drawerlayout/widget/DrawerLayout;->x:Z
 
     :cond_6
     return-void

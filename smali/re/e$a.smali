@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final b:I
+.field public final h:I
 
 
 # direct methods
@@ -30,9 +30,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lre/e$a;->a:Ljava/lang/String;
+    iput-object p1, p0, Lre/e$a;->g:Ljava/lang/String;
 
-    iput p2, p0, Lre/e$a;->b:I
+    iput p2, p0, Lre/e$a;->h:I
 
     return-void
 .end method
@@ -43,9 +43,9 @@
     .line 1
     new-instance v0, Lre/e;
 
-    iget-object v1, p0, Lre/e$a;->a:Ljava/lang/String;
+    iget-object v1, p0, Lre/e$a;->g:Ljava/lang/String;
 
-    iget v2, p0, Lre/e$a;->b:I
+    iget v2, p0, Lre/e$a;->h:I
 
     invoke-static {v1, v2}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;I)Ljava/util/regex/Pattern;
 
@@ -53,7 +53,7 @@
 
     const-string v2, "Pattern.compile(pattern, flags)"
 
-    invoke-static {v1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {v0, v1}, Lre/e;-><init>(Ljava/util/regex/Pattern;)V
 

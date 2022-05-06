@@ -16,11 +16,11 @@
     .end annotation
 .end field
 
-.field public static final b:Lc2/e;
+.field public static final h:Lc2/e;
 
 
 # instance fields
-.field public final a:Landroid/os/Bundle;
+.field public final g:Landroid/os/Bundle;
 
 
 # direct methods
@@ -36,7 +36,7 @@
 
     invoke-direct {v0, v1, v2}, Lc2/e;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->b:Lc2/e;
+    sput-object v0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->h:Lc2/e;
 
     .line 2
     new-instance v0, Lq2/i;
@@ -57,7 +57,7 @@
     if-eqz p1, :cond_3
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->a:Landroid/os/Bundle;
+    iput-object p1, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
 
     .line 3
     const-class v0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
@@ -115,7 +115,7 @@
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 8
-    sget-object v3, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->b:Lc2/e;
+    sget-object v3, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->h:Lc2/e;
 
     const/4 v4, 0x1
 
@@ -147,7 +147,7 @@
     check-cast v1, Ljava/lang/String;
 
     .line 10
-    iget-object v3, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->a:Landroid/os/Bundle;
+    iget-object v3, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
 
     invoke-virtual {v3, v1}, Landroid/os/Bundle;->remove(Ljava/lang/String;)V
 
@@ -205,14 +205,14 @@
     check-cast p1, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
     .line 3
-    iget-object v2, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->a:Landroid/os/Bundle;
+    iget-object v2, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
 
     invoke-virtual {v2}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
 
     move-result-object v2
 
     .line 4
-    iget-object v3, p1, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->a:Landroid/os/Bundle;
+    iget-object v3, p1, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
 
     invoke-virtual {v3}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
 
@@ -246,13 +246,13 @@
     check-cast v3, Ljava/lang/String;
 
     .line 6
-    iget-object v4, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->a:Landroid/os/Bundle;
+    iget-object v4, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
 
     invoke-virtual {v4, v3}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v4
 
-    iget-object v5, p1, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->a:Landroid/os/Bundle;
+    iget-object v5, p1, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
 
     invoke-virtual {v5, v3}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -278,7 +278,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->a:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
 
     invoke-virtual {v0}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
 
@@ -306,7 +306,7 @@
     mul-int/lit8 v1, v1, 0x1f
 
     .line 2
-    iget-object v3, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->a:Landroid/os/Bundle;
+    iget-object v3, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
 
     invoke-virtual {v3, v2}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -337,7 +337,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->a:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -349,7 +349,7 @@
     return-void
 .end method
 
-.method public final x2(Lp2/a;)Ljava/lang/Object;
+.method public final z2(Lp2/a;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -362,9 +362,9 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->a:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
 
-    invoke-interface {p1, v0}, Lp2/a;->M0(Landroid/os/Bundle;)Ljava/lang/Object;
+    invoke-interface {p1, v0}, Lp2/a;->N0(Landroid/os/Bundle;)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public a:Lke/p;
+.field public g:Lke/p;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lke/p<",
@@ -90,7 +90,7 @@
     const-string p1, "context"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -111,7 +111,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->a:Lke/p;
+    iget-object v0, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->g:Lke/p;
 
     return-object v0
 .end method
@@ -120,7 +120,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->a:Lke/p;
+    iget-object v0, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->g:Lke/p;
 
     if-eqz v0, :cond_0
 
@@ -165,7 +165,7 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->a:Lke/p;
+    iput-object p1, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->g:Lke/p;
 
     return-void
 .end method

@@ -1,46 +1,67 @@
-.class public final synthetic Lj3/ss;
-.super Ljava/lang/Object;
+.class public final Lj3/ss;
+.super Lj3/at;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/vs;
+.implements Lj3/f2;
 
 
-# static fields
-.field public static final a:Lj3/vs;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lj3/at<",
+        "Le1/a;",
+        ">;",
+        "Lj3/f2;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lj3/ss;
-
-    invoke-direct {v0}, Lj3/ss;-><init>()V
-
-    sput-object v0, Lj3/ss;->a:Lj3/vs;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Ljava/util/Set;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Set<",
+            "Lj3/yt<",
+            "Le1/a;",
+            ">;>;)V"
+        }
+    .end annotation
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    invoke-direct {p0, p1}, Lj3/at;-><init>(Ljava/util/Set;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final e(Ljava/lang/Object;)V
-    .locals 0
+.method public final declared-synchronized k(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
+
+    monitor-enter p0
 
     .line 1
-    check-cast p1, Lj3/us;
+    :try_start_0
+    new-instance v0, Lj3/us;
+
+    invoke-direct {v0, p1, p2}, Lj3/us;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    invoke-virtual {p0, v0}, Lj3/at;->E0(Lj3/ct;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 2
-    invoke-interface {p1}, Lj3/us;->A()V
+    monitor-exit p0
 
     return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
 .end method

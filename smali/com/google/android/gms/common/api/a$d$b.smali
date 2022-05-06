@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method public abstract M0()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+.method public abstract P0()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
     .annotation build Landroidx/annotation/RecentlyNullable;
     .end annotation
 .end method

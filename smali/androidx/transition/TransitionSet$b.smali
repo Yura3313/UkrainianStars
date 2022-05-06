@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public a:Landroidx/transition/TransitionSet;
+.field public g:Landroidx/transition/TransitionSet;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     invoke-direct {p0}, Landroidx/transition/d;-><init>()V
 
     .line 2
-    iput-object p1, p0, Landroidx/transition/TransitionSet$b;->a:Landroidx/transition/TransitionSet;
+    iput-object p1, p0, Landroidx/transition/TransitionSet$b;->g:Landroidx/transition/TransitionSet;
 
     return-void
 .end method
@@ -37,21 +37,21 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Landroidx/transition/TransitionSet$b;->a:Landroidx/transition/TransitionSet;
+    iget-object p1, p0, Landroidx/transition/TransitionSet$b;->g:Landroidx/transition/TransitionSet;
 
-    iget-boolean v0, p1, Landroidx/transition/TransitionSet;->G:Z
+    iget-boolean v0, p1, Landroidx/transition/TransitionSet;->H:Z
 
     if-nez v0, :cond_0
 
     .line 2
-    invoke-virtual {p1}, Landroidx/transition/Transition;->G()V
+    invoke-virtual {p1}, Landroidx/transition/Transition;->H()V
 
     .line 3
-    iget-object p1, p0, Landroidx/transition/TransitionSet$b;->a:Landroidx/transition/TransitionSet;
+    iget-object p1, p0, Landroidx/transition/TransitionSet$b;->g:Landroidx/transition/TransitionSet;
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p1, Landroidx/transition/TransitionSet;->G:Z
+    iput-boolean v0, p1, Landroidx/transition/TransitionSet;->H:Z
 
     :cond_0
     return-void
@@ -61,27 +61,27 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/transition/TransitionSet$b;->a:Landroidx/transition/TransitionSet;
+    iget-object v0, p0, Landroidx/transition/TransitionSet$b;->g:Landroidx/transition/TransitionSet;
 
-    iget v1, v0, Landroidx/transition/TransitionSet;->F:I
+    iget v1, v0, Landroidx/transition/TransitionSet;->G:I
 
     add-int/lit8 v1, v1, -0x1
 
-    iput v1, v0, Landroidx/transition/TransitionSet;->F:I
+    iput v1, v0, Landroidx/transition/TransitionSet;->G:I
 
     if-nez v1, :cond_0
 
     const/4 v1, 0x0
 
     .line 2
-    iput-boolean v1, v0, Landroidx/transition/TransitionSet;->G:Z
+    iput-boolean v1, v0, Landroidx/transition/TransitionSet;->H:Z
 
     .line 3
-    invoke-virtual {v0}, Landroidx/transition/Transition;->m()V
+    invoke-virtual {v0}, Landroidx/transition/Transition;->n()V
 
     .line 4
     :cond_0
-    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->w(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
+    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->x(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
 
     return-void
 .end method

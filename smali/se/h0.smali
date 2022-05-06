@@ -1,31 +1,17 @@
 .class public interface abstract Lse/h0;
 .super Ljava/lang/Object;
-.source "Deferred.kt"
-
-# interfaces
-.implements Lse/d1;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Lse/d1;"
-    }
-.end annotation
+.source "Delay.kt"
 
 
 # virtual methods
-.method public abstract l(Lde/d;)Ljava/lang/Object;
+.method public abstract scheduleResumeAfterDelay(JLse/f;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Lde/d<",
-            "-TT;>;)",
-            "Ljava/lang/Object;"
+            "(J",
+            "Lse/f<",
+            "-",
+            "Lae/i;",
+            ">;)V"
         }
     .end annotation
 .end method

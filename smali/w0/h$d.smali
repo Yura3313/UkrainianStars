@@ -231,7 +231,7 @@
     if-eqz v0, :cond_0
 
     .line 23
-    invoke-virtual {p2, v0, p0}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p2, v0, p0}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 24
     :cond_0
@@ -316,7 +316,7 @@
     if-eqz v1, :cond_3
 
     .line 37
-    invoke-virtual {p2, v1, v2}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p2, v1, v2}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_3
     :goto_2

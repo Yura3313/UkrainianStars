@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/material/textfield/h;
+.field public final synthetic g:Lcom/google/android/material/textfield/h;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/h$f;->a:Lcom/google/android/material/textfield/h;
+    iput-object p1, p0, Lcom/google/android/material/textfield/h$f;->g:Lcom/google/android/material/textfield/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/textfield/h$f;->a:Lcom/google/android/material/textfield/h;
+    iget-object p1, p0, Lcom/google/android/material/textfield/h$f;->g:Lcom/google/android/material/textfield/h;
 
     iget-object p1, p1, Lcom/google/android/material/textfield/m;->a:Lcom/google/android/material/textfield/TextInputLayout;
 
@@ -50,7 +50,7 @@
     check-cast p1, Landroid/widget/AutoCompleteTextView;
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/h$f;->a:Lcom/google/android/material/textfield/h;
+    iget-object v0, p0, Lcom/google/android/material/textfield/h$f;->g:Lcom/google/android/material/textfield/h;
 
     invoke-static {v0, p1}, Lcom/google/android/material/textfield/h;->f(Lcom/google/android/material/textfield/h;Landroid/widget/AutoCompleteTextView;)V
 

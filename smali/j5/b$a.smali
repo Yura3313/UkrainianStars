@@ -47,20 +47,20 @@
     check-cast p1, Ll5/s0;
 
     .line 2
-    invoke-virtual {p1}, Ll5/s0;->x()Ll5/u0;
+    invoke-virtual {p1}, Ll5/s0;->w()Ll5/u0;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ll5/u0;->t()Ll5/o0;
+    invoke-virtual {v0}, Ll5/u0;->s()Ll5/o0;
 
     move-result-object v0
 
     .line 3
-    invoke-virtual {p1}, Ll5/s0;->w()Lm5/c;
+    invoke-virtual {p1}, Ll5/s0;->v()Lm5/c;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lm5/c;->n()[B
+    invoke-virtual {v1}, Lm5/c;->m()[B
 
     move-result-object v1
 
@@ -72,32 +72,28 @@
     invoke-direct {v2, v1, v3}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
 
     .line 5
-    invoke-virtual {p1}, Ll5/s0;->x()Ll5/u0;
+    invoke-virtual {p1}, Ll5/s0;->w()Ll5/u0;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Ll5/u0;->u()I
+    invoke-virtual {p1}, Ll5/u0;->t()I
 
     move-result p1
 
     .line 6
-    sget-object v1, Lj5/b$c;->a:[I
-
     invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
 
     move-result v0
-
-    aget v0, v1, v0
 
     const/4 v1, 0x1
 
     if-eq v0, v1, :cond_2
 
-    const/4 v1, 0x2
+    const/4 v1, 0x3
 
     if-eq v0, v1, :cond_1
 
-    const/4 v1, 0x3
+    const/4 v1, 0x4
 
     if-ne v0, v1, :cond_0
 

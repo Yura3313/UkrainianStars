@@ -12,9 +12,9 @@
 
 
 # instance fields
-.field public a:Ljava/lang/Object;
+.field public g:Ljava/lang/Object;
 
-.field public b:Z
+.field public h:Z
 
 
 # direct methods

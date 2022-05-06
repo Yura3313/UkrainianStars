@@ -3,7 +3,7 @@
 .source "ProfileSelectorFragment.kt"
 
 # interfaces
-.implements Lwd/j1;
+.implements Lvd/j1;
 
 
 # annotations
@@ -20,11 +20,11 @@
 # instance fields
 .field public final a:I
 
-.field public final b:Ltc/v;
+.field public final b:Lqc/x;
 
 
 # direct methods
-.method public constructor <init>(Ltc/v;)V
+.method public constructor <init>(Lqc/x;)V
     .locals 0
 
     if-eqz p1, :cond_0
@@ -32,7 +32,7 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->b:Ltc/v;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->b:Lqc/x;
 
     .line 2
     sget p1, Lcom/supercell/id/R$layout;->fragment_profile_selector_not_bound_profile_row_view:I
@@ -45,7 +45,7 @@
     const-string p1, "profile"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -54,7 +54,7 @@
 
 
 # virtual methods
-.method public a(Lwd/j1;)Z
+.method public a(Lvd/j1;)Z
     .locals 1
 
     if-eqz p1, :cond_1
@@ -70,13 +70,13 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->b:Ltc/v;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->b:Lqc/x;
 
     check-cast p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;
 
-    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->b:Ltc/v;
+    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->b:Lqc/x;
 
-    invoke-static {v0, p1}, Le1/c;->a(Ltc/v;Ltc/v;)Z
+    invoke-static {v0, p1}, Ls3/k;->e(Lqc/x;Lqc/x;)Z
 
     move-result p1
 
@@ -86,14 +86,23 @@
     const-string p1, "other"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public c(Lwd/j1;)Z
+.method public c()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->a:I
+
+    return v0
+.end method
+
+.method public d(Lvd/j1;)Z
     .locals 1
 
     if-eqz p1, :cond_1
@@ -105,11 +114,11 @@
 
     check-cast p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;
 
-    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->b:Ltc/v;
+    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->b:Lqc/x;
 
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->b:Ltc/v;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->b:Lqc/x;
 
-    invoke-static {p1, v0}, Le1/c;->a(Ltc/v;Ltc/v;)Z
+    invoke-static {p1, v0}, Ls3/k;->e(Lqc/x;Lqc/x;)Z
 
     move-result p1
 
@@ -129,20 +138,11 @@
     const-string p1, "other"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
-.end method
-
-.method public d()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->a:I
-
-    return v0
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -156,11 +156,11 @@
 
     check-cast p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;
 
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->b:Ltc/v;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->b:Lqc/x;
 
-    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->b:Ltc/v;
+    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->b:Lqc/x;
 
-    invoke-static {v0, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -183,11 +183,11 @@
 .method public hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->b:Ltc/v;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->b:Lqc/x;
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Ltc/v;->hashCode()I
+    invoke-virtual {v0}, Lqc/x;->hashCode()I
 
     move-result v0
 
@@ -205,11 +205,11 @@
 
     const-string v0, "NotBoundProfileRow(profile="
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->b:Ltc/v;
+    iget-object v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->b:Lqc/x;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

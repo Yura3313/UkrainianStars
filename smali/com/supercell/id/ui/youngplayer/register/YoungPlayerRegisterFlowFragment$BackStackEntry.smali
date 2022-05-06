@@ -25,7 +25,7 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/Class;
+.field public final g:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -36,7 +36,7 @@
     .end annotation
 .end field
 
-.field public final b:Lcom/supercell/id/IdPendingRegistration;
+.field public final h:Lcom/supercell/id/IdPendingRegistration;
 
 
 # direct methods
@@ -71,35 +71,35 @@
     .line 2
     invoke-direct {p0}, Lcom/supercell/id/ui/FlowFragment$BackStackEntry;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->b:Lcom/supercell/id/IdPendingRegistration;
+    iput-object p1, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->h:Lcom/supercell/id/IdPendingRegistration;
 
     .line 3
     const-class p1, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;
 
-    iput-object p1, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->a:Ljava/lang/Class;
+    iput-object p1, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->g:Ljava/lang/Class;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public W(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BaseFragment;
+.method public X(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BaseFragment;
     .locals 3
 
     if-eqz p1, :cond_2
 
     .line 1
-    invoke-super {p0, p1}, Lcom/supercell/id/ui/BackStack$Entry;->W(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BaseFragment;
+    invoke-super {p0, p1}, Lcom/supercell/id/ui/BackStack$Entry;->X(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BaseFragment;
 
     move-result-object p1
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->b:Lcom/supercell/id/IdPendingRegistration;
+    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->h:Lcom/supercell/id/IdPendingRegistration;
 
     if-eqz v0, :cond_1
 
     .line 3
-    iget-object v0, p1, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v0, p1, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz v0, :cond_0
 
@@ -113,7 +113,7 @@
 
     .line 5
     :goto_0
-    iget-object v1, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->b:Lcom/supercell/id/IdPendingRegistration;
+    iget-object v1, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->h:Lcom/supercell/id/IdPendingRegistration;
 
     invoke-virtual {v1}, Lcom/supercell/id/IdPendingRegistration;->getEmail()Ljava/lang/String;
 
@@ -133,20 +133,20 @@
     const-string p1, "mainActivity"
 
     .line 7
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public Z(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BaseFragment;
+.method public Y(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BaseFragment;
     .locals 4
 
     if-eqz p1, :cond_0
 
     .line 1
-    sget-object p1, Lcom/supercell/id/ui/FlowFragment$b;->k0:Lcom/supercell/id/ui/FlowFragment$b$a;
+    sget-object p1, Lcom/supercell/id/ui/FlowFragment$b;->l0:Lcom/supercell/id/ui/FlowFragment$b$a;
 
     const/4 v0, 0x1
 
@@ -167,7 +167,7 @@
     const-string p1, "mainActivity"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -193,11 +193,11 @@
 
     check-cast p1, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;
 
-    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->b:Lcom/supercell/id/IdPendingRegistration;
+    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->h:Lcom/supercell/id/IdPendingRegistration;
 
-    iget-object p1, p1, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->b:Lcom/supercell/id/IdPendingRegistration;
+    iget-object p1, p1, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->h:Lcom/supercell/id/IdPendingRegistration;
 
-    invoke-static {v0, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -220,7 +220,7 @@
 .method public hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->b:Lcom/supercell/id/IdPendingRegistration;
+    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->h:Lcom/supercell/id/IdPendingRegistration;
 
     if-eqz v0, :cond_0
 
@@ -237,7 +237,7 @@
     return v0
 .end method
 
-.method public j()Ljava/lang/Class;
+.method public i()Ljava/lang/Class;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -250,9 +250,17 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->a:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->g:Ljava/lang/Class;
 
     return-object v0
+.end method
+
+.method public t()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -260,11 +268,11 @@
 
     const-string v0, "BackStackEntry(pendingRegistration="
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->b:Lcom/supercell/id/IdPendingRegistration;
+    iget-object v1, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->h:Lcom/supercell/id/IdPendingRegistration;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -279,29 +287,7 @@
     return-object v0
 .end method
 
-.method public w()Z
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public writeToParcel(Landroid/os/Parcel;I)V
-    .locals 1
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->b:Lcom/supercell/id/IdPendingRegistration;
-
-    invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public z0(Lcom/supercell/id/ui/MainActivity;)Z
+.method public w0(Lcom/supercell/id/ui/MainActivity;)Z
     .locals 0
 
     if-eqz p1, :cond_0
@@ -314,9 +300,23 @@
     const-string p1, "mainActivity"
 
     .line 1
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
+.end method
+
+.method public writeToParcel(Landroid/os/Parcel;I)V
+    .locals 1
+
+    if-eqz p1, :cond_0
+
+    .line 1
+    iget-object v0, p0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$BackStackEntry;->h:Lcom/supercell/id/IdPendingRegistration;
+
+    invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
+
+    :cond_0
+    return-void
 .end method

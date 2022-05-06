@@ -97,7 +97,7 @@
     .locals 3
 
     .line 1
-    new-instance v0, Ls3/k;
+    new-instance v0, Ls3/o;
 
     .line 2
     new-instance v1, Lu2/b$a$a;
@@ -120,7 +120,7 @@
     move-result-object p1
 
     .line 6
-    invoke-direct {v0, p0, p1}, Ls3/k;-><init>(Landroid/app/Activity;Lu2/b$a;)V
+    invoke-direct {v0, p0, p1}, Ls3/o;-><init>(Landroid/app/Activity;Lu2/b$a;)V
 
     return-object v0
 .end method

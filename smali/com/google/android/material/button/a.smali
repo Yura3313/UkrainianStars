@@ -267,7 +267,7 @@
     move-result-object v0
 
     .line 4
-    iget-object v1, v0, Lr4/g;->a:Lr4/g$b;
+    iget-object v1, v0, Lr4/g;->g:Lr4/g$b;
 
     iput-object p1, v1, Lr4/g$b;->a:Lr4/k;
 
@@ -288,7 +288,7 @@
     move-result-object v0
 
     .line 8
-    iget-object v1, v0, Lr4/g;->a:Lr4/g$b;
+    iget-object v1, v0, Lr4/g;->g:Lr4/g$b;
 
     iput-object p1, v1, Lr4/g$b;->a:Lr4/k;
 
@@ -354,7 +354,7 @@
     sget v3, Lcom/google/android/material/R$attr;->colorSurface:I
 
     .line 5
-    invoke-static {v2, v3}, Lcom/google/android/gms/ads/r;->b(Landroid/view/View;I)I
+    invoke-static {v2, v3}, Lh4/a;->e(Landroid/view/View;I)I
 
     move-result v2
 

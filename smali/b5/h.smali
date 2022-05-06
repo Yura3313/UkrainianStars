@@ -8,18 +8,18 @@
 # instance fields
 .field public final synthetic a:Ljava/util/Set;
 
-.field public final synthetic b:Lb5/q;
+.field public final synthetic b:Lb5/o;
 
 .field public final synthetic c:Ljava/util/zip/ZipFile;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Set;Lb5/q;Ljava/util/zip/ZipFile;)V
+.method public constructor <init>(Ljava/util/Set;Lb5/o;Ljava/util/zip/ZipFile;)V
     .locals 0
 
     iput-object p1, p0, Lb5/h;->a:Ljava/util/Set;
 
-    iput-object p2, p0, Lb5/h;->b:Lb5/q;
+    iput-object p2, p0, Lb5/h;->b:Lb5/o;
 
     iput-object p3, p0, Lb5/h;->c:Ljava/util/zip/ZipFile;
 
@@ -48,9 +48,9 @@
 
     new-array p3, p3, [Ljava/lang/Object;
 
-    iget-object v0, p0, Lb5/h;->b:Lb5/q;
+    iget-object v0, p0, Lb5/h;->b:Lb5/o;
 
-    invoke-virtual {v0}, Lb5/q;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lb5/o;->b()Ljava/lang/String;
 
     move-result-object v0
 
@@ -66,9 +66,9 @@
 
     const/4 v0, 0x2
 
-    iget-object v2, p0, Lb5/h;->b:Lb5/q;
+    iget-object v2, p0, Lb5/h;->b:Lb5/o;
 
-    invoke-virtual {v2}, Lb5/q;->a()Ljava/io/File;
+    invoke-virtual {v2}, Lb5/o;->a()Ljava/io/File;
 
     move-result-object v2
 
@@ -118,6 +118,10 @@
     new-instance p3, Ljava/io/FileOutputStream;
 
     invoke-direct {p3, p2}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+
+    invoke-static {p3, p2}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;)Ljava/io/FileOutputStream;
+
+    move-result-object p2
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
@@ -125,14 +129,14 @@
     :try_start_1
     invoke-virtual {p1, v0}, Ljava/io/InputStream;->read([B)I
 
-    move-result p2
+    move-result p3
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    if-gtz p2, :cond_0
+    if-gtz p3, :cond_0
 
     :try_start_2
-    invoke-virtual {p3}, Ljava/io/FileOutputStream;->close()V
+    invoke-virtual {p2}, Ljava/io/FileOutputStream;->close()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
@@ -142,34 +146,34 @@
 
     :cond_0
     :try_start_3
-    invoke-virtual {p3, v0, v1, p2}, Ljava/io/FileOutputStream;->write([BII)V
+    invoke-virtual {p2, v0, v1, p3}, Ljava/io/FileOutputStream;->write([BII)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     goto :goto_0
 
     :catchall_0
-    move-exception p2
+    move-exception p3
 
     :try_start_4
-    invoke-virtual {p3}, Ljava/io/FileOutputStream;->close()V
+    invoke-virtual {p2}, Ljava/io/FileOutputStream;->close()V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
     goto :goto_1
 
     :catchall_1
-    move-exception p3
+    move-exception p2
 
     .line 1
     :try_start_5
-    sget-object v0, Ly4/i0;->a:Landroidx/fragment/app/t;
+    sget-object v0, Ly4/k0;->a:Landroidx/fragment/app/t;
 
-    invoke-virtual {v0, p2, p3}, Landroidx/fragment/app/t;->b(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    invoke-virtual {v0, p3, p2}, Landroidx/fragment/app/t;->b(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
     .line 2
     :goto_1
-    throw p2
+    throw p3
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_2
 
@@ -189,7 +193,7 @@
     move-exception p1
 
     .line 3
-    sget-object p3, Ly4/i0;->a:Landroidx/fragment/app/t;
+    sget-object p3, Ly4/k0;->a:Landroidx/fragment/app/t;
 
     invoke-virtual {p3, p2, p1}, Landroidx/fragment/app/t;->b(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 

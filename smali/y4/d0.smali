@@ -1,100 +1,63 @@
-.class public final Ly4/d0;
-.super Ljava/lang/ref/WeakReference;
+.class public abstract Ly4/d0;
+.super Ljava/lang/Object;
 
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/ref/WeakReference<",
-        "Ljava/lang/Throwable;",
-        ">;"
-    }
-.end annotation
-
-
-# instance fields
-.field public final a:I
+# interfaces
+.implements Ljava/io/Closeable;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Throwable;Ljava/lang/ref/ReferenceQueue;)V
+.method public constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Throwable;",
-            "Ljava/lang/ref/ReferenceQueue<",
-            "Ljava/lang/Throwable;",
-            ">;)V"
-        }
-    .end annotation
 
-    invoke-direct {p0, p1, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V
-
-    invoke-static {p1}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
-
-    move-result p1
-
-    iput p1, p0, Ly4/d0;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_2
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v1
-
-    const-class v2, Ly4/d0;
-
-    if-ne v1, v2, :cond_2
-
-    const/4 v1, 0x1
-
-    if-eq p0, p1, :cond_1
-
-    check-cast p1, Ly4/d0;
-
-    iget v2, p0, Ly4/d0;->a:I
-
-    iget v3, p1, Ly4/d0;->a:I
-
-    if-ne v2, v3, :cond_0
-
-    invoke-virtual {p0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v2
-
-    invoke-virtual {p1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object p1
-
-    if-ne v2, p1, :cond_0
-
-    return v1
-
-    :cond_0
-    return v0
-
-    :cond_1
-    return v1
-
-    :cond_2
-    return v0
+.method public abstract a()J
 .end method
 
-.method public final hashCode()I
-    .locals 1
+.method public abstract b(JJ)Ljava/io/InputStream;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
 
-    iget v0, p0, Ly4/d0;->a:I
+.method public declared-synchronized c()Ljava/io/InputStream;
+    .locals 4
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
-    return v0
+    monitor-enter p0
+
+    :try_start_0
+    invoke-virtual {p0}, Ly4/d0;->a()J
+
+    move-result-wide v0
+
+    const-wide/16 v2, 0x0
+
+    invoke-virtual {p0, v2, v3, v0, v1}, Ly4/d0;->b(JJ)Ljava/io/InputStream;
+
+    move-result-object v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit p0
+
+    return-object v0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
 .end method

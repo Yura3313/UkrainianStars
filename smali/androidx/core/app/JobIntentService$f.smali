@@ -78,7 +78,7 @@
     iget-object p1, p0, Landroidx/core/app/JobIntentService$f;->a:Landroidx/core/app/JobIntentService;
 
     .line 2
-    iget-object p1, p1, Landroidx/core/app/JobIntentService;->h:Landroidx/core/app/JobIntentService$a;
+    iget-object p1, p1, Landroidx/core/app/JobIntentService;->i:Landroidx/core/app/JobIntentService$a;
 
     if-eqz p1, :cond_0
 

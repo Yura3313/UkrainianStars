@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/appcompat/app/s;
+.field public final synthetic g:Landroidx/appcompat/app/s;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/app/s$a;->a:Landroidx/appcompat/app/s;
+    iput-object p1, p0, Landroidx/appcompat/app/s$a;->g:Landroidx/appcompat/app/s;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/s$a;->a:Landroidx/appcompat/app/s;
+    iget-object v0, p0, Landroidx/appcompat/app/s$a;->g:Landroidx/appcompat/app/s;
 
     .line 2
     invoke-virtual {v0}, Landroidx/appcompat/app/s;->s()Landroid/view/Menu;

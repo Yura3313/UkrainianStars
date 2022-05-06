@@ -1,142 +1,45 @@
-.class public final Lj3/gy;
+.class public final synthetic Lj3/gy;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
+.implements Lj3/y2;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final b:Lj3/fv0;
-
-.field public final c:Lj3/fv0;
-
-.field public final d:Lj3/fv0;
+.field public final g:Lj3/cy;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lj3/fv0;Lj3/fv0;Lj3/fv0;I)V
+.method public constructor <init>(Lj3/cy;)V
     .locals 0
 
-    .line 1
-    iput p4, p0, Lj3/gy;->a:I
-
-    iput-object p1, p0, Lj3/gy;->b:Lj3/fv0;
-
-    iput-object p2, p0, Lj3/gy;->c:Lj3/fv0;
-
-    iput-object p3, p0, Lj3/gy;->d:Lj3/fv0;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lj3/gy;->g:Lj3/cy;
 
     return-void
 .end method
 
-.method public static a(Lj3/fv0;Lj3/fv0;Lj3/fv0;)Lj3/gy;
-    .locals 2
-
-    .line 1
-    new-instance v0, Lj3/gy;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, p0, p1, p2, v1}, Lj3/gy;-><init>(Lj3/fv0;Lj3/fv0;Lj3/fv0;I)V
-
-    return-object v0
-.end method
-
 
 # virtual methods
-.method public final synthetic get()Ljava/lang/Object;
-    .locals 5
+.method public final b(Ljava/lang/Object;Ljava/util/Map;)V
+    .locals 0
 
-    iget v0, p0, Lj3/gy;->a:I
+    iget-object p2, p0, Lj3/gy;->g:Lj3/cy;
 
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
+    check-cast p1, Lj3/gh;
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/gy;->b:Lj3/fv0;
+    iget-object p1, p2, Lj3/cy;->b:Lj3/mm;
 
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    iget-object v1, p0, Lj3/gy;->c:Lj3/fv0;
-
-    invoke-interface {v1}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lj3/kv;
-
-    iget-object v2, p0, Lj3/gy;->d:Lj3/fv0;
-
-    invoke-interface {v2}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lj3/pv;
+    const/4 p2, 0x1
 
     .line 2
-    new-instance v3, Lcom/google/android/gms/internal/ads/zzcgu;
-
-    invoke-direct {v3, v0, v1, v2}, Lcom/google/android/gms/internal/ads/zzcgu;-><init>(Ljava/lang/String;Lj3/kv;Lj3/pv;)V
-
-    return-object v3
+    iput-boolean p2, p1, Lj3/mm;->k:Z
 
     .line 3
-    :goto_0
-    iget-object v0, p0, Lj3/gy;->b:Lj3/fv0;
+    invoke-virtual {p1}, Lj3/mm;->f()V
 
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lj3/xq0;
-
-    iget-object v1, p0, Lj3/gy;->c:Lj3/fv0;
-
-    invoke-interface {v1}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/content/Context;
-
-    iget-object v2, p0, Lj3/gy;->d:Lj3/fv0;
-
-    invoke-interface {v2}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lj3/am0;
-
-    .line 4
-    new-instance v3, Lj3/n8;
-
-    const/4 v4, 0x1
-
-    invoke-direct {v3, v0, v1, v4}, Lj3/n8;-><init>(Ljava/lang/Object;Landroid/content/Context;I)V
-
-    invoke-interface {v2, v3}, Lj3/am0;->a(Ljava/util/concurrent/Callable;)Lj3/yl0;
-
-    move-result-object v0
-
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
-
-    .line 5
-    invoke-static {v0, v1}, Lj3/zo0;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-
-    return-object v0
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

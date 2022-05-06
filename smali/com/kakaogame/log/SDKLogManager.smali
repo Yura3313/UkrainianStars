@@ -493,7 +493,7 @@
     const-string v2, " =============\n"
 
     .line 8
-    invoke-static {v1, v0, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v0, v2}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -621,7 +621,7 @@
     const-string v1, "-"
 
     .line 5
-    invoke-static {v0, v1}, Lh1/i;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v1}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -784,7 +784,7 @@
 
     invoke-direct {v1, v2}, Ljava/io/DataOutputStream;-><init>(Ljava/io/OutputStream;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_8
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_7
 
     .line 17
     :try_start_1
@@ -792,30 +792,30 @@
 
     move-result v2
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_2
 
     invoke-virtual {p3}, Ljava/io/File;->canRead()Z
 
     move-result v2
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_2
 
     .line 18
     new-instance v2, Ljava/io/FileInputStream;
 
     invoke-direct {v2, p3}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_3
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    const/16 p1, 0x800
+    invoke-static {v2, p3}, Lio/sentry/instrumentation/file/SentryFileInputStream$Factory;->create(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
 
-    :try_start_2
-    new-array p3, p1, [B
+    move-result-object p1
+
+    const/16 p3, 0x800
+
+    new-array v2, p3, [B
 
     .line 19
     :goto_0
-    invoke-virtual {v2, p3}, Ljava/io/FileInputStream;->read([B)I
+    invoke-virtual {p1, v2}, Ljava/io/FileInputStream;->read([B)I
 
     move-result v3
 
@@ -824,166 +824,141 @@
     const/4 v3, 0x0
 
     .line 20
-    invoke-virtual {v1, p3, v3, p1}, Ljava/io/DataOutputStream;->write([BII)V
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    invoke-virtual {v1, v2, v3, p3}, Ljava/io/DataOutputStream;->write([BII)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     goto :goto_0
 
-    :cond_2
-    move-object p1, v2
-
-    goto :goto_1
-
-    :catchall_0
-    move-exception p1
-
-    goto :goto_5
-
-    :catch_0
-    move-exception p1
-
-    goto :goto_3
-
     .line 21
-    :cond_3
-    :goto_1
-    :try_start_3
+    :cond_2
+    :try_start_2
     invoke-virtual {v1}, Ljava/io/DataOutputStream;->flush()V
 
     .line 22
     invoke-virtual {v1}, Ljava/io/DataOutputStream;->close()V
-    :try_end_3
-    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_1
-    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_8
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_7
 
-    goto :goto_2
+    goto :goto_1
 
-    :catch_1
+    :catch_0
     nop
 
-    :goto_2
-    if-eqz p1, :cond_4
+    :goto_1
+    if-eqz p1, :cond_3
 
     .line 23
-    :try_start_4
+    :try_start_3
     invoke-virtual {p1}, Ljava/io/FileInputStream;->close()V
-    :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_2
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_8
+    :try_end_3
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_1
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_7
 
     .line 24
-    :catch_2
-    :cond_4
-    :try_start_5
+    :catch_1
+    :cond_3
+    :try_start_4
     invoke-static {}, Ljava/lang/System;->gc()V
 
     .line 25
     invoke-virtual {p2}, Ljavax/net/ssl/HttpsURLConnection;->getResponseCode()I
 
     move-result p1
-    :try_end_5
-    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_8
+    :try_end_4
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_7
 
     return p1
 
-    :catchall_1
+    :catchall_0
     move-exception p2
 
-    move-object v2, p1
+    goto :goto_3
 
-    move-object p1, p2
-
-    goto :goto_5
-
-    :catch_3
+    :catch_2
     move-exception p2
-
-    move-object v2, p1
-
-    move-object p1, p2
 
     .line 26
-    :goto_3
-    :try_start_6
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_0
+    :try_start_5
+    invoke-virtual {p2}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     .line 27
-    :try_start_7
+    :try_start_6
     invoke-virtual {v1}, Ljava/io/DataOutputStream;->flush()V
 
     .line 28
     invoke-virtual {v1}, Ljava/io/DataOutputStream;->close()V
-    :try_end_7
-    .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_4
-    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_8
+    :try_end_6
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_3
+    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_7
 
-    goto :goto_4
+    goto :goto_2
 
-    :catch_4
+    :catch_3
     nop
 
-    :goto_4
-    if-eqz v2, :cond_5
+    :goto_2
+    if-eqz p1, :cond_4
 
     .line 29
-    :try_start_8
-    invoke-virtual {v2}, Ljava/io/FileInputStream;->close()V
-    :try_end_8
-    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_5
-    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_8
+    :try_start_7
+    invoke-virtual {p1}, Ljava/io/FileInputStream;->close()V
+    :try_end_7
+    .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_4
+    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_7
 
     .line 30
-    :catch_5
-    :cond_5
-    :try_start_9
+    :catch_4
+    :cond_4
+    :try_start_8
     invoke-static {}, Ljava/lang/System;->gc()V
-    :try_end_9
-    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_8
+    :try_end_8
+    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_7
 
     return v0
 
     .line 31
-    :goto_5
-    :try_start_a
+    :goto_3
+    :try_start_9
     invoke-virtual {v1}, Ljava/io/DataOutputStream;->flush()V
 
     .line 32
     invoke-virtual {v1}, Ljava/io/DataOutputStream;->close()V
-    :try_end_a
-    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_6
-    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_8
+    :try_end_9
+    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_7
 
-    goto :goto_6
+    goto :goto_4
 
-    :catch_6
+    :catch_5
     nop
 
-    :goto_6
-    if-eqz v2, :cond_6
+    :goto_4
+    if-eqz p1, :cond_5
 
     .line 33
-    :try_start_b
-    invoke-virtual {v2}, Ljava/io/FileInputStream;->close()V
-    :try_end_b
-    .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_7
-    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_8
+    :try_start_a
+    invoke-virtual {p1}, Ljava/io/FileInputStream;->close()V
+    :try_end_a
+    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_6
+    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_7
 
     .line 34
-    :catch_7
-    :cond_6
-    :try_start_c
+    :catch_6
+    :cond_5
+    :try_start_b
     invoke-static {}, Ljava/lang/System;->gc()V
 
     .line 35
-    throw p1
-    :try_end_c
-    .catch Ljava/lang/Exception; {:try_start_c .. :try_end_c} :catch_8
+    throw p2
+    :try_end_b
+    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_7
 
-    :catch_8
+    :catch_7
     move-exception p1
 
     .line 36

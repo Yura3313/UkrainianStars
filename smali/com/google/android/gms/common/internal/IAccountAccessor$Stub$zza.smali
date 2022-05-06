@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method public final p()Landroid/accounts/Account;
+.method public final q()Landroid/accounts/Account;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -40,14 +40,14 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/common/zzb;->E0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/common/zzb;->F0()Landroid/os/Parcel;
 
     move-result-object v0
 
     const/4 v1, 0x2
 
     .line 2
-    invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/internal/common/zzb;->P0(ILandroid/os/Parcel;)Landroid/os/Parcel;
+    invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/internal/common/zzb;->Q0(ILandroid/os/Parcel;)Landroid/os/Parcel;
 
     move-result-object v0
 

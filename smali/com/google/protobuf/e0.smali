@@ -20,7 +20,7 @@
 
 
 # instance fields
-.field public final b:Ljava/util/List;
+.field public final h:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -46,7 +46,7 @@
     const/4 v1, 0x0
 
     .line 3
-    iput-boolean v1, v0, Lcom/google/protobuf/c;->a:Z
+    iput-boolean v1, v0, Lcom/google/protobuf/c;->g:Z
 
     return-void
 .end method
@@ -63,7 +63,7 @@
     invoke-direct {p0}, Lcom/google/protobuf/c;-><init>()V
 
     .line 3
-    iput-object v0, p0, Lcom/google/protobuf/e0;->b:Ljava/util/List;
+    iput-object v0, p0, Lcom/google/protobuf/e0;->h:Ljava/util/List;
 
     return-void
 .end method
@@ -83,12 +83,12 @@
     invoke-direct {p0}, Lcom/google/protobuf/c;-><init>()V
 
     .line 5
-    iput-object p1, p0, Lcom/google/protobuf/e0;->b:Ljava/util/List;
+    iput-object p1, p0, Lcom/google/protobuf/e0;->h:Ljava/util/List;
 
     return-void
 .end method
 
-.method public static b(Ljava/lang/Object;)Ljava/lang/String;
+.method public static c(Ljava/lang/Object;)Ljava/lang/String;
     .locals 2
 
     .line 1
@@ -110,7 +110,7 @@
     .line 4
     check-cast p0, Lcom/google/protobuf/i;
 
-    invoke-virtual {p0}, Lcom/google/protobuf/i;->s()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/protobuf/i;->r()Ljava/lang/String;
 
     move-result-object p0
 
@@ -132,14 +132,27 @@
 
 
 # virtual methods
-.method public U(Lcom/google/protobuf/i;)V
+.method public B(I)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/e0;->h:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public X(Lcom/google/protobuf/i;)V
     .locals 1
 
     .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/c;->a()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/protobuf/e0;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/protobuf/e0;->h:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -163,7 +176,7 @@
     invoke-virtual {p0}, Lcom/google/protobuf/c;->a()V
 
     .line 3
-    iget-object v0, p0, Lcom/google/protobuf/e0;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/protobuf/e0;->h:Ljava/util/List;
 
     invoke-interface {v0, p1, p2}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
@@ -200,13 +213,13 @@
     check-cast p2, Lcom/google/protobuf/f0;
 
     .line 4
-    invoke-interface {p2}, Lcom/google/protobuf/f0;->r()Ljava/util/List;
+    invoke-interface {p2}, Lcom/google/protobuf/f0;->t()Ljava/util/List;
 
     move-result-object p2
 
     .line 5
     :cond_0
-    iget-object v0, p0, Lcom/google/protobuf/e0;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/protobuf/e0;->h:Ljava/util/List;
 
     invoke-interface {v0, p1, p2}, Ljava/util/List;->addAll(ILjava/util/Collection;)Z
 
@@ -253,7 +266,7 @@
     invoke-virtual {p0}, Lcom/google/protobuf/c;->a()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/protobuf/e0;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/protobuf/e0;->h:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
@@ -271,7 +284,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/google/protobuf/e0;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/protobuf/e0;->h:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -297,7 +310,7 @@
     check-cast v0, Lcom/google/protobuf/i;
 
     .line 6
-    invoke-virtual {v0}, Lcom/google/protobuf/i;->s()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/google/protobuf/i;->r()Ljava/lang/String;
 
     move-result-object v1
 
@@ -309,7 +322,7 @@
     if-eqz v0, :cond_1
 
     .line 8
-    iget-object v0, p0, Lcom/google/protobuf/e0;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/protobuf/e0;->h:Ljava/util/List;
 
     invoke-interface {v0, p1, v1}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
@@ -331,14 +344,14 @@
     invoke-direct {v1, v0, v2}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
 
     .line 11
-    sget-object v2, Lcom/google/protobuf/w1;->a:Lcom/google/protobuf/w1$b;
+    sget-object v2, Lcom/google/protobuf/v1;->a:Lcom/google/protobuf/v1$b;
 
     array-length v3, v0
 
     const/4 v4, 0x0
 
     .line 12
-    invoke-virtual {v2, v4, v0, v4, v3}, Lcom/google/protobuf/w1$b;->e(I[BII)I
+    invoke-virtual {v2, v4, v0, v4, v3}, Lcom/google/protobuf/v1$b;->e(I[BII)I
 
     move-result v0
 
@@ -350,7 +363,7 @@
     if-eqz v4, :cond_1
 
     .line 13
-    iget-object v0, p0, Lcom/google/protobuf/e0;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/protobuf/e0;->h:Ljava/util/List;
 
     invoke-interface {v0, p1, v1}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
@@ -360,7 +373,7 @@
     return-object v0
 .end method
 
-.method public m(I)Lcom/google/protobuf/a0$i;
+.method public o(I)Lcom/google/protobuf/a0$i;
     .locals 1
 
     .line 1
@@ -376,7 +389,7 @@
     invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 3
-    iget-object p1, p0, Lcom/google/protobuf/e0;->b:Ljava/util/List;
+    iget-object p1, p0, Lcom/google/protobuf/e0;->h:Ljava/util/List;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
@@ -396,26 +409,6 @@
     throw p1
 .end method
 
-.method public r()Ljava/util/List;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "*>;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lcom/google/protobuf/e0;->b:Ljava/util/List;
-
-    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
 .method public remove(I)Ljava/lang/Object;
     .locals 1
 
@@ -423,7 +416,7 @@
     invoke-virtual {p0}, Lcom/google/protobuf/c;->a()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/protobuf/e0;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/protobuf/e0;->h:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
@@ -437,7 +430,7 @@
     iput v0, p0, Ljava/util/AbstractList;->modCount:I
 
     .line 4
-    invoke-static {p1}, Lcom/google/protobuf/e0;->b(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/google/protobuf/e0;->c(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -454,14 +447,14 @@
     invoke-virtual {p0}, Lcom/google/protobuf/c;->a()V
 
     .line 3
-    iget-object v0, p0, Lcom/google/protobuf/e0;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/protobuf/e0;->h:Ljava/util/List;
 
     invoke-interface {v0, p1, p2}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     .line 4
-    invoke-static {p1}, Lcom/google/protobuf/e0;->b(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/google/protobuf/e0;->c(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -472,7 +465,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/protobuf/e0;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/protobuf/e0;->h:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -481,34 +474,41 @@
     return v0
 .end method
 
-.method public w()Lcom/google/protobuf/f0;
+.method public t()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "*>;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/e0;->h:Ljava/util/List;
+
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public y()Lcom/google/protobuf/f0;
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/protobuf/c;->a:Z
+    iget-boolean v0, p0, Lcom/google/protobuf/c;->g:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    new-instance v0, Lcom/google/protobuf/u1;
+    new-instance v0, Lcom/google/protobuf/t1;
 
-    invoke-direct {v0, p0}, Lcom/google/protobuf/u1;-><init>(Lcom/google/protobuf/f0;)V
+    invoke-direct {v0, p0}, Lcom/google/protobuf/t1;-><init>(Lcom/google/protobuf/f0;)V
 
     return-object v0
 
     :cond_0
     return-object p0
-.end method
-
-.method public z(I)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/protobuf/e0;->b:Ljava/util/List;
-
-    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
 .end method

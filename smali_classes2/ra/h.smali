@@ -1,25 +1,21 @@
 .class public Lra/h;
 .super Ljava/lang/Object;
-.source "AdminImageAttachmentMessageDataBinder.java"
+.source "SmartIntentRendererImpl.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field public final synthetic a:Lm8/h;
-
-.field public final synthetic b:Lra/i;
+.field public final synthetic g:Lra/a;
 
 
 # direct methods
-.method public constructor <init>(Lra/i;Lm8/h;)V
+.method public constructor <init>(Lra/a;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lra/h;->b:Lra/i;
-
-    iput-object p2, p0, Lra/h;->a:Lm8/h;
+    iput-object p1, p0, Lra/h;->g:Lra/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,33 +25,22 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object p1, p0, Lra/h;->b:Lra/i;
-
-    iget-object p1, p1, Lra/v;->b:Lra/v$a;
-
-    if-eqz p1, :cond_0
+    iget-object p1, p0, Lra/h;->g:Lra/a;
 
     .line 2
-    iget-object v0, p0, Lra/h;->a:Lm8/h;
-
-    check-cast p1, Lqa/p0;
+    invoke-virtual {p1}, Lra/a;->e()V
 
     .line 3
-    iget-object p1, p1, Lqa/p0;->e:Lra/y;
+    invoke-virtual {p1}, Lra/a;->f()Lcom/helpshift/support/conversations/smartintent/SmartIntentBottomSheetBehavior;
 
-    if-eqz p1, :cond_0
+    move-result-object p1
 
-    .line 4
-    check-cast p1, Lqa/k;
+    const/4 v0, 0x3
 
-    const/4 v1, 0x1
+    invoke-virtual {p1, v0}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->E(I)V
 
-    .line 5
-    invoke-virtual {p1, v1, v0}, Lqa/k;->g1(ZLm8/n;)V
-
-    :cond_0
     return-void
 .end method

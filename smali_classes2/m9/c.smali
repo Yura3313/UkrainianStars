@@ -2,41 +2,26 @@
 .super Ljava/lang/Object;
 .source "HSNetworkMetadataDB.java"
 
+# interfaces
+.implements Lj3/ct;
+
 
 # static fields
-.field public static b:Lm9/c;
+.field public static h:Lm9/c;
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
+.field public g:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
-    .locals 2
-
-    .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    new-instance v0, Lb6/a;
-
-    const/16 v1, 0x64
-
-    invoke-direct {v0, v1}, Lb6/a;-><init>(I)V
-
-    iput-object v0, p0, Lm9/c;->a:Ljava/lang/Object;
-
-    return-void
-.end method
-
 .method public synthetic constructor <init>(Landroid/content/Context;)V
     .locals 2
 
-    .line 1
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
+    .line 3
     new-instance v0, Lm9/a;
 
     new-instance v1, Lm9/b;
@@ -45,14 +30,25 @@
 
     invoke-direct {v0, p1, v1}, Lm9/a;-><init>(Landroid/content/Context;Lf9/b;)V
 
-    iput-object v0, p0, Lm9/c;->a:Ljava/lang/Object;
+    iput-object v0, p0, Lm9/c;->g:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lm9/c;->g:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Landroid/database/Cursor;)La8/g;
+.method public a(Landroid/database/Cursor;)Lb8/f;
     .locals 7
 
     const-string v0, "url"
@@ -108,79 +104,21 @@
     const-string v1, "is_last_fetch_success"
 
     .line 5
-    invoke-static {p1, v1, v0}, Lr5/a;->k(Landroid/database/Cursor;Ljava/lang/String;Z)Z
+    invoke-static {p1, v1, v0}, Lcom/google/android/gms/ads/i;->k(Landroid/database/Cursor;Ljava/lang/String;Z)Z
 
     move-result v6
 
     .line 6
-    new-instance p1, La8/g;
+    new-instance p1, Lb8/f;
 
     move-object v1, p1
 
-    invoke-direct/range {v1 .. v6}, La8/g;-><init>(Ljava/lang/String;Ljava/lang/String;JZ)V
+    invoke-direct/range {v1 .. v6}, Lb8/f;-><init>(Ljava/lang/String;Ljava/lang/String;JZ)V
 
     return-object p1
 .end method
 
-.method public b(Ljava/lang/CharSequence;La6/f;Z)Z
-    .locals 2
-
-    .line 1
-    iget-object p2, p2, La6/f;->b:Ljava/lang/String;
-
-    .line 2
-    invoke-virtual {p2}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    return v1
-
-    .line 3
-    :cond_0
-    iget-object v0, p0, Lm9/c;->a:Ljava/lang/Object;
-
-    check-cast v0, Lb6/a;
-
-    invoke-virtual {v0, p2}, Lb6/a;->a(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
-    move-result-object p2
-
-    .line 4
-    invoke-virtual {p2, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
-
-    move-result-object p1
-
-    .line 5
-    invoke-virtual {p1}, Ljava/util/regex/Matcher;->lookingAt()Z
-
-    move-result p2
-
-    if-nez p2, :cond_1
-
-    goto :goto_0
-
-    .line 6
-    :cond_1
-    invoke-virtual {p1}, Ljava/util/regex/Matcher;->matches()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_2
-
-    const/4 p3, 0x1
-
-    :cond_2
-    move v1, p3
-
-    :goto_0
-    return v1
-.end method
-
-.method public declared-synchronized c(Ljava/lang/String;)La8/g;
+.method public declared-synchronized b(Ljava/lang/String;)Lb8/f;
     .locals 9
 
     monitor-enter p0
@@ -202,7 +140,7 @@
 
     .line 1
     :try_start_1
-    iget-object v0, p0, Lm9/c;->a:Ljava/lang/Object;
+    iget-object v0, p0, Lm9/c;->g:Ljava/lang/Object;
 
     check-cast v0, Lm9/a;
 
@@ -237,7 +175,7 @@
     if-eqz v1, :cond_0
 
     .line 4
-    invoke-virtual {p0, v0}, Lm9/c;->a(Landroid/database/Cursor;)La8/g;
+    invoke-virtual {p0, v0}, Lm9/c;->a(Landroid/database/Cursor;)Lb8/f;
 
     move-result-object p1
     :try_end_2
@@ -275,7 +213,7 @@
     const-string v2, "error in reading the metadata of url"
 
     .line 6
-    invoke-static {v1, v2}, Lce/z;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lie/a;->g(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
@@ -320,7 +258,7 @@
     goto :goto_3
 .end method
 
-.method public declared-synchronized d(Ljava/lang/String;Landroid/content/ContentValues;)Z
+.method public declared-synchronized c(Ljava/lang/String;Landroid/content/ContentValues;)Z
     .locals 5
 
     monitor-enter p0
@@ -340,7 +278,7 @@
 
     .line 1
     :try_start_1
-    iget-object p1, p0, Lm9/c;->a:Ljava/lang/Object;
+    iget-object p1, p0, Lm9/c;->g:Ljava/lang/Object;
 
     check-cast p1, Lm9/a;
 
@@ -367,7 +305,7 @@
     const-string p2, "Error in updating the metadata of url"
 
     .line 3
-    invoke-static {p1, p2}, Lce/z;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lie/a;->g(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -393,4 +331,20 @@
     monitor-exit p0
 
     throw p1
+.end method
+
+.method public d(Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lm9/c;->g:Ljava/lang/Object;
+
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzasp;
+
+    check-cast p1, Lj3/hs;
+
+    .line 2
+    invoke-interface {p1, v0}, Lj3/hs;->C0(Lcom/google/android/gms/internal/ads/zzasp;)V
+
+    return-void
 .end method

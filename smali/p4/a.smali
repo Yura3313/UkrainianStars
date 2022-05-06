@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Lr4/o;
-.implements Ly/g;
+.implements Ly/e;
 
 
 # annotations
@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field public a:Lp4/a$b;
+.field public g:Lp4/a$b;
 
 
 # direct methods
@@ -27,7 +27,7 @@
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
     .line 5
-    iput-object p1, p0, Lp4/a;->a:Lp4/a$b;
+    iput-object p1, p0, Lp4/a;->g:Lp4/a$b;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
     .line 3
-    iput-object v0, p0, Lp4/a;->a:Lp4/a$b;
+    iput-object v0, p0, Lp4/a;->g:Lp4/a$b;
 
     return-void
 .end method
@@ -59,7 +59,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lp4/a;->a:Lp4/a$b;
+    iget-object v0, p0, Lp4/a;->g:Lp4/a$b;
 
     iget-boolean v1, v0, Lp4/a$b;->b:Z
 
@@ -78,7 +78,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lp4/a;->a:Lp4/a$b;
+    iget-object v0, p0, Lp4/a;->g:Lp4/a$b;
 
     return-object v0
 .end method
@@ -87,7 +87,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lp4/a;->a:Lp4/a$b;
+    iget-object v0, p0, Lp4/a;->g:Lp4/a$b;
 
     iget-object v0, v0, Lp4/a$b;->a:Lr4/g;
 
@@ -112,12 +112,12 @@
     .line 1
     new-instance v0, Lp4/a$b;
 
-    iget-object v1, p0, Lp4/a;->a:Lp4/a$b;
+    iget-object v1, p0, Lp4/a;->g:Lp4/a$b;
 
     invoke-direct {v0, v1}, Lp4/a$b;-><init>(Lp4/a$b;)V
 
     .line 2
-    iput-object v0, p0, Lp4/a;->a:Lp4/a$b;
+    iput-object v0, p0, Lp4/a;->g:Lp4/a$b;
 
     return-object p0
 .end method
@@ -129,7 +129,7 @@
     invoke-super {p0, p1}, Landroid/graphics/drawable/Drawable;->onBoundsChange(Landroid/graphics/Rect;)V
 
     .line 2
-    iget-object v0, p0, Lp4/a;->a:Lp4/a$b;
+    iget-object v0, p0, Lp4/a;->g:Lp4/a$b;
 
     iget-object v0, v0, Lp4/a$b;->a:Lr4/g;
 
@@ -147,7 +147,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lp4/a;->a:Lp4/a$b;
+    iget-object v1, p0, Lp4/a;->g:Lp4/a$b;
 
     iget-object v1, v1, Lp4/a$b;->a:Lr4/g;
 
@@ -168,7 +168,7 @@
     move-result p1
 
     .line 4
-    iget-object v1, p0, Lp4/a;->a:Lp4/a$b;
+    iget-object v1, p0, Lp4/a;->g:Lp4/a$b;
 
     iget-boolean v3, v1, Lp4/a$b;->b:Z
 
@@ -190,7 +190,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lp4/a;->a:Lp4/a$b;
+    iget-object v0, p0, Lp4/a;->g:Lp4/a$b;
 
     iget-object v0, v0, Lp4/a$b;->a:Lr4/g;
 
@@ -203,7 +203,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lp4/a;->a:Lp4/a$b;
+    iget-object v0, p0, Lp4/a;->g:Lp4/a$b;
 
     iget-object v0, v0, Lp4/a$b;->a:Lr4/g;
 
@@ -216,12 +216,12 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lp4/a;->a:Lp4/a$b;
+    iget-object v0, p0, Lp4/a;->g:Lp4/a$b;
 
     iget-object v0, v0, Lp4/a$b;->a:Lr4/g;
 
     .line 2
-    iget-object v1, v0, Lr4/g;->a:Lr4/g$b;
+    iget-object v1, v0, Lr4/g;->g:Lr4/g$b;
 
     iput-object p1, v1, Lr4/g$b;->a:Lr4/k;
 
@@ -235,7 +235,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lp4/a;->a:Lp4/a$b;
+    iget-object v0, p0, Lp4/a;->g:Lp4/a$b;
 
     iget-object v0, v0, Lp4/a$b;->a:Lr4/g;
 
@@ -248,7 +248,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lp4/a;->a:Lp4/a$b;
+    iget-object v0, p0, Lp4/a;->g:Lp4/a$b;
 
     iget-object v0, v0, Lp4/a$b;->a:Lr4/g;
 
@@ -261,7 +261,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lp4/a;->a:Lp4/a$b;
+    iget-object v0, p0, Lp4/a;->g:Lp4/a$b;
 
     iget-object v0, v0, Lp4/a$b;->a:Lr4/g;
 

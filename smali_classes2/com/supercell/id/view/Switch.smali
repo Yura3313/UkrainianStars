@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public T:Landroid/widget/CompoundButton$OnCheckedChangeListener;
+.field public U:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
 
 # direct methods
@@ -48,14 +48,14 @@
     move-result v9
 
     .line 5
-    invoke-static/range {p0 .. p0}, Lwd/f2;->d(Landroid/view/View;)I
+    invoke-static/range {p0 .. p0}, Lvd/g2;->d(Landroid/view/View;)I
 
     move-result v3
 
     invoke-virtual {v0, v3, v2}, Landroid/widget/CompoundButton;->setLayerType(ILandroid/graphics/Paint;)V
 
     .line 6
-    sget-object v3, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v3, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 7
     invoke-virtual {v0, v2}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
@@ -93,7 +93,7 @@
     aput v4, v3, v5
 
     .line 12
-    sget-object v4, Lsc/l;->b:Lsc/l;
+    sget-object v4, Lpc/j;->b:Lpc/j;
 
     invoke-virtual/range {p0 .. p0}, Landroid/widget/CompoundButton;->getResources()Landroid/content/res/Resources;
 
@@ -101,17 +101,17 @@
 
     const-string v15, "resources"
 
-    invoke-static {v8, v15}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v8, v15}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v5}, Lc5/i;->c(I)F
+    invoke-static {v5}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v10
 
-    invoke-static {v2}, Lc5/i;->c(I)F
+    invoke-static {v2}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v11
 
-    invoke-static {v2}, Lc5/i;->c(I)F
+    invoke-static {v2}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v12
 
@@ -119,13 +119,13 @@
 
     const/16 v16, 0x10
 
-    invoke-static/range {v16 .. v16}, Lc5/i;->c(I)F
+    invoke-static/range {v16 .. v16}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v14
 
     move-object v7, v4
 
-    invoke-virtual/range {v7 .. v14}, Lsc/l;->a(Landroid/content/res/Resources;IFFFFF)Landroid/graphics/drawable/Drawable;
+    invoke-virtual/range {v7 .. v14}, Lpc/j;->a(Landroid/content/res/Resources;IFFFFF)Landroid/graphics/drawable/Drawable;
 
     move-result-object v7
 
@@ -138,23 +138,23 @@
 
     move-result-object v7
 
-    invoke-static {v7, v15}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v7, v15}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v5}, Lc5/i;->c(I)F
+    invoke-static {v5}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v8
 
-    invoke-static {v2}, Lc5/i;->c(I)F
+    invoke-static {v2}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v9
 
-    invoke-static {v2}, Lc5/i;->c(I)F
+    invoke-static {v2}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v2
 
     const v10, 0x3dcccccd    # 0.1f
 
-    invoke-static/range {v16 .. v16}, Lc5/i;->c(I)F
+    invoke-static/range {v16 .. v16}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v11
 
@@ -166,7 +166,7 @@
 
     move v9, v2
 
-    invoke-virtual/range {v4 .. v11}, Lsc/l;->a(Landroid/content/res/Resources;IFFFFF)Landroid/graphics/drawable/Drawable;
+    invoke-virtual/range {v4 .. v11}, Lpc/j;->a(Landroid/content/res/Resources;IFFFFF)Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
@@ -188,7 +188,7 @@
     const-string v1, "context"
 
     .line 16
-    invoke-static {v1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {v1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v2
 .end method
@@ -205,7 +205,7 @@
     :try_start_0
     const-class p1, Landroidx/appcompat/widget/SwitchCompat;
 
-    const-string p2, "D"
+    const-string p2, "E"
 
     invoke-virtual {p1, p2}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
@@ -213,7 +213,7 @@
 
     const-string p2, "SwitchCompat::class.java\u2026aredField(\"mSwitchWidth\")"
 
-    invoke-static {p1, p2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p2, 0x1
 
@@ -254,7 +254,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/id/view/Switch;->T:Landroid/widget/CompoundButton$OnCheckedChangeListener;
+    iput-object p1, p0, Lcom/supercell/id/view/Switch;->U:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
     return-void
 .end method

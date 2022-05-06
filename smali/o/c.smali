@@ -15,7 +15,7 @@
         value = {
             "Ljava/util/HashMap<",
             "Ljava/lang/String;",
-            "Landroidx/constraintlayout/widget/a;",
+            "Ls/a;",
             ">;"
         }
     .end annotation
@@ -53,7 +53,7 @@
             "(",
             "Ljava/util/HashMap<",
             "Ljava/lang/String;",
-            "Lo/p;",
+            "Lo/s;",
             ">;)V"
         }
     .end annotation

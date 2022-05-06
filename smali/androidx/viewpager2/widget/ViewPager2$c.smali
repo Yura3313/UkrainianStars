@@ -52,7 +52,7 @@
     .line 3
     iget-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$c;->a:Landroidx/viewpager2/widget/ViewPager2;
 
-    iget-object p1, p1, Landroidx/viewpager2/widget/ViewPager2;->o:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object p1, p1, Landroidx/viewpager2/widget/ViewPager2;->p:Landroidx/recyclerview/widget/RecyclerView;
 
     const/4 v0, 0x2
 

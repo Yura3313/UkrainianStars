@@ -214,28 +214,18 @@
 
     .line 18
     :goto_0
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    const/16 v3, 0x8
-
-    if-lt v0, v3, :cond_0
-
-    .line 19
     invoke-virtual {p1, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result p1
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 20
-    :cond_0
+    .line 19
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 21
+    .line 20
     invoke-super {p0, p1}, Lr6/o;->h(Ljava/lang/String;)Z
 
     move-result p1
@@ -309,7 +299,7 @@
     aput v1, v0, v3
 
     .line 6
-    iget v3, p1, Lj6/a;->b:I
+    iget v3, p1, Lj6/a;->h:I
 
     .line 7
     aget p2, p2, v2
@@ -421,7 +411,7 @@
 
     .line 14
     :cond_5
-    sget-object p1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 15
     goto :goto_5
@@ -437,7 +427,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lc6/a;->UPC_E:Lc6/a;
+    sget-object v0, Lc6/a;->v:Lc6/a;
 
     return-object v0
 .end method

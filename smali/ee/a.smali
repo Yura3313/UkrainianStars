@@ -14,13 +14,9 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lee/a;
+.field public static final enum g:Lee/a;
 
-.field public static final enum COROUTINE_SUSPENDED:Lee/a;
-
-.field public static final enum RESUMED:Lee/a;
-
-.field public static final enum UNDECIDED:Lee/a;
+.field public static final synthetic h:[Lee/a;
 
 
 # direct methods
@@ -39,7 +35,7 @@
 
     invoke-direct {v1, v2, v3}, Lee/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lee/a;->COROUTINE_SUSPENDED:Lee/a;
+    sput-object v1, Lee/a;->g:Lee/a;
 
     aput-object v1, v0, v3
 
@@ -51,8 +47,6 @@
 
     invoke-direct {v1, v2, v3}, Lee/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lee/a;->UNDECIDED:Lee/a;
-
     aput-object v1, v0, v3
 
     new-instance v1, Lee/a;
@@ -63,16 +57,14 @@
 
     invoke-direct {v1, v2, v3}, Lee/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lee/a;->RESUMED:Lee/a;
-
     aput-object v1, v0, v3
 
-    sput-object v0, Lee/a;->$VALUES:[Lee/a;
+    sput-object v0, Lee/a;->h:[Lee/a;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;I)V
+.method public constructor <init>(Ljava/lang/String;I)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -103,7 +95,7 @@
 .method public static values()[Lee/a;
     .locals 1
 
-    sget-object v0, Lee/a;->$VALUES:[Lee/a;
+    sget-object v0, Lee/a;->h:[Lee/a;
 
     invoke-virtual {v0}, [Lee/a;->clone()Ljava/lang/Object;
 

@@ -4,11 +4,11 @@
 
 # interfaces
 .implements Lf9/b;
-.implements Lcb/c;
+.implements Lza/c;
 
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field public g:Ljava/lang/String;
 
 
 # direct methods
@@ -21,7 +21,7 @@
     const-string v0, "CREATE TABLE hs_url_metadata_table ( url TEXT PRIMARY KEY NOT NULL, last_fetch_ts INTEGER, etag TEXT, is_last_fetch_success INTEGER  );"
 
     .line 2
-    iput-object v0, p0, Lm9/b;->a:Ljava/lang/String;
+    iput-object v0, p0, Lm9/b;->g:Ljava/lang/String;
 
     return-void
 .end method
@@ -33,7 +33,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
-    iput-object p1, p0, Lm9/b;->a:Ljava/lang/String;
+    iput-object p1, p0, Lm9/b;->g:Ljava/lang/String;
 
     return-void
 .end method
@@ -44,16 +44,16 @@
     .locals 7
 
     .line 1
-    iget-object p2, p0, Lm9/b;->a:Ljava/lang/String;
+    iget-object p2, p0, Lm9/b;->g:Ljava/lang/String;
 
-    invoke-virtual {p0, p2, p1}, Lm9/b;->e(Ljava/lang/String;I)Landroid/graphics/Bitmap;
+    invoke-virtual {p0, p2, p1}, Lm9/b;->d(Ljava/lang/String;I)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
     if-eqz v0, :cond_4
 
     .line 2
-    iget-object p1, p0, Lm9/b;->a:Ljava/lang/String;
+    iget-object p1, p0, Lm9/b;->g:Ljava/lang/String;
 
     const/4 p2, 0x0
 
@@ -124,7 +124,7 @@
     const-string v2, "Exception in getting exif rotation"
 
     .line 7
-    invoke-static {v1, v2, p1}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, p1}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_2
     :goto_0
@@ -161,9 +161,9 @@
 
     .line 11
     :cond_3
-    check-cast p3, Lcb/h;
+    check-cast p3, Lza/g;
 
-    invoke-virtual {p3, v0}, Lcb/h;->onSuccess(Ljava/lang/Object;)V
+    invoke-virtual {p3, v0}, Lza/g;->onSuccess(Ljava/lang/Object;)V
 
     .line 12
     new-instance p1, Ljava/lang/StringBuilder;
@@ -174,7 +174,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p2, p0, Lm9/b;->a:Ljava/lang/String;
+    iget-object p2, p0, Lm9/b;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -187,7 +187,7 @@
     const-string p3, "Helpshift_FilePthPrvdr"
 
     .line 13
-    invoke-static {p3, p1, p2, p2}, Lce/z;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {p3, p1, p2, p2}, Lie/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     goto :goto_1
 
@@ -195,11 +195,11 @@
     const-string p1, "Error in creating bitmap for given file path: "
 
     .line 14
-    invoke-static {p1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    iget-object p2, p0, Lm9/b;->a:Ljava/lang/String;
+    iget-object p2, p0, Lm9/b;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -207,15 +207,24 @@
 
     move-result-object p1
 
-    check-cast p3, Lcb/h;
+    check-cast p3, Lza/g;
 
-    invoke-virtual {p3, p1}, Lcb/h;->a(Ljava/lang/Object;)V
+    invoke-virtual {p3, p1}, Lza/g;->a(Ljava/lang/Object;)V
 
     :goto_1
     return-void
 .end method
 
-.method public b()Ljava/util/List;
+.method public b()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lm9/b;->g:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public c()Ljava/util/List;
     .locals 3
 
     const/4 v0, 0x1
@@ -236,20 +245,22 @@
     return-object v0
 .end method
 
-.method public c()Ljava/lang/String;
-    .locals 1
+.method public d(Ljava/lang/String;I)Landroid/graphics/Bitmap;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lm9/b;->a:Ljava/lang/String;
+    invoke-static {p1, p2}, Lcom/helpshift/util/r;->b(Ljava/lang/String;I)Landroid/graphics/Bitmap;
 
-    return-object v0
+    move-result-object p1
+
+    return-object p1
 .end method
 
-.method public d()Ljava/lang/String;
+.method public f()Ljava/lang/String;
     .locals 2
 
     .line 1
-    sget-object v0, Lva/a;->a:Ljava/util/Map;
+    sget-object v0, Lta/a;->a:Ljava/util/Map;
 
     const-string v1, "network_db"
 
@@ -262,18 +273,7 @@
     return-object v0
 .end method
 
-.method public e(Ljava/lang/String;I)Landroid/graphics/Bitmap;
-    .locals 0
-
-    .line 1
-    invoke-static {p1, p2}, Lcom/helpshift/util/t;->b(Ljava/lang/String;I)Landroid/graphics/Bitmap;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public f()Ljava/util/List;
+.method public g()Ljava/util/List;
     .locals 3
 
     const/4 v0, 0x1
@@ -294,7 +294,15 @@
     return-object v0
 .end method
 
-.method public g(I)Ljava/util/List;
+.method public getTag()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "HelpshiftNetworkDB"
+
+    return-object v0
+.end method
+
+.method public h(I)Ljava/util/List;
     .locals 0
 
     .line 1
@@ -305,15 +313,7 @@
     return-object p1
 .end method
 
-.method public getTag()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "HelpshiftNetworkDB"
-
-    return-object v0
-.end method
-
-.method public h()I
+.method public i()I
     .locals 1
 
     const/4 v0, 0x1

@@ -86,7 +86,7 @@
     move v6, p2
 
     .line 5
-    invoke-static/range {v1 .. v7}, Lf0/s;->z(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
+    invoke-static/range {v1 .. v7}, Lf0/r;->z(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
 
     .line 6
     sget p1, Landroidx/appcompat/R$styleable;->AppCompatSeekBar_android_thumb:I
@@ -134,7 +134,7 @@
     .line 13
     iget-object p2, p0, Landroidx/appcompat/widget/k;->d:Landroid/widget/SeekBar;
 
-    sget-object v1, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 14
     invoke-virtual {p2}, Landroid/view/View;->getLayoutDirection()I

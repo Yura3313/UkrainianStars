@@ -16,7 +16,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ld5/i$b<",
-        "Lp5/c0;",
+        "Lp5/d0;",
         "Ll5/i;",
         ">;"
     }
@@ -50,19 +50,19 @@
     new-instance v0, Lp5/c;
 
     .line 3
-    invoke-virtual {p1}, Ll5/i;->w()Lm5/c;
+    invoke-virtual {p1}, Ll5/i;->v()Lm5/c;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lm5/c;->n()[B
+    invoke-virtual {v1}, Lm5/c;->m()[B
 
     move-result-object v1
 
-    invoke-virtual {p1}, Ll5/i;->x()Ll5/k;
+    invoke-virtual {p1}, Ll5/i;->w()Ll5/k;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Ll5/k;->t()I
+    invoke-virtual {p1}, Ll5/k;->s()I
 
     move-result p1
 

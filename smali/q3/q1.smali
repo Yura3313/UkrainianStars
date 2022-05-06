@@ -19,11 +19,11 @@
 
 
 # static fields
-.field public static final b:Lq3/q1;
+.field public static final h:Lq3/q1;
 
 
 # instance fields
-.field public a:I
+.field public g:I
 
 
 # direct methods
@@ -31,16 +31,16 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lq3/t1;
+    new-instance v0, Lq3/s1;
 
-    sget-object v1, Lq3/l2;->b:[B
+    sget-object v1, Lq3/i2;->b:[B
 
-    invoke-direct {v0, v1}, Lq3/t1;-><init>([B)V
+    invoke-direct {v0, v1}, Lq3/s1;-><init>([B)V
 
-    sput-object v0, Lq3/q1;->b:Lq3/q1;
+    sput-object v0, Lq3/q1;->h:Lq3/q1;
 
     .line 2
-    sget-object v0, Lq3/p1;->a:Ljava/lang/Class;
+    invoke-static {}, Lq3/p1;->a()Z
 
     return-void
 .end method
@@ -54,7 +54,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput v0, p0, Lq3/q1;->a:I
+    iput v0, p0, Lq3/q1;->g:I
 
     return-void
 .end method
@@ -64,10 +64,10 @@
 .method public abstract a(III)I
 .end method
 
-.method public abstract b(Ljava/nio/charset/Charset;)Ljava/lang/String;
+.method public abstract c(Ljava/nio/charset/Charset;)Ljava/lang/String;
 .end method
 
-.method public abstract c(La2/a0;)V
+.method public abstract d(La2/a0;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -75,10 +75,7 @@
     .end annotation
 .end method
 
-.method public abstract d()Z
-.end method
-
-.method public abstract e(I)B
+.method public abstract e()Z
 .end method
 
 .method public abstract equals(Ljava/lang/Object;)Z
@@ -87,11 +84,14 @@
 .method public abstract f(I)B
 .end method
 
+.method public abstract g(I)B
+.end method
+
 .method public final hashCode()I
     .locals 2
 
     .line 1
-    iget v0, p0, Lq3/q1;->a:I
+    iget v0, p0, Lq3/q1;->g:I
 
     if-nez v0, :cond_1
 
@@ -113,7 +113,7 @@
 
     .line 4
     :cond_0
-    iput v0, p0, Lq3/q1;->a:I
+    iput v0, p0, Lq3/q1;->g:I
 
     :cond_1
     return v0

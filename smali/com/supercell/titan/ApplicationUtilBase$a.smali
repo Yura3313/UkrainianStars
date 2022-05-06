@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/titan/GameApp;
+.field public final synthetic g:Lcom/supercell/titan/GameApp;
 
-.field public final synthetic b:Ljava/lang/String;
+.field public final synthetic h:Ljava/lang/String;
 
 
 # direct methods
@@ -28,9 +28,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/titan/ApplicationUtilBase$a;->a:Lcom/supercell/titan/GameApp;
+    iput-object p1, p0, Lcom/supercell/titan/ApplicationUtilBase$a;->g:Lcom/supercell/titan/GameApp;
 
-    iput-object p2, p0, Lcom/supercell/titan/ApplicationUtilBase$a;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/titan/ApplicationUtilBase$a;->h:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +44,7 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lcom/supercell/titan/ApplicationUtilBase$a;->a:Lcom/supercell/titan/GameApp;
+    iget-object v0, p0, Lcom/supercell/titan/ApplicationUtilBase$a;->g:Lcom/supercell/titan/GameApp;
 
     const-string v1, "clipboard"
 
@@ -57,7 +57,7 @@
     const-string v1, "text"
 
     .line 2
-    iget-object v2, p0, Lcom/supercell/titan/ApplicationUtilBase$a;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/titan/ApplicationUtilBase$a;->h:Ljava/lang/String;
 
     invoke-static {v1, v2}, Landroid/content/ClipData;->newPlainText(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Landroid/content/ClipData;
 

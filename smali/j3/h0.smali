@@ -12,7 +12,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/helpshift/util/s;->a:[I
+    sget-object v0, Lj3/v60;->g:[I
 
     invoke-virtual {v0}, [I->clone()Ljava/lang/Object;
 

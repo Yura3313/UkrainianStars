@@ -13,11 +13,11 @@
 
 
 # static fields
-.field public static final E:[Ljava/lang/String;
+.field public static final F:[Ljava/lang/String;
 
 
 # instance fields
-.field public D:I
+.field public E:I
 
 
 # direct methods
@@ -41,7 +41,7 @@
     aput-object v2, v0, v1
 
     .line 1
-    sput-object v0, Landroidx/transition/Visibility;->E:[Ljava/lang/String;
+    sput-object v0, Landroidx/transition/Visibility;->F:[Ljava/lang/String;
 
     return-void
 .end method
@@ -55,7 +55,7 @@
     const/4 v0, 0x3
 
     .line 2
-    iput v0, p0, Landroidx/transition/Visibility;->D:I
+    iput v0, p0, Landroidx/transition/Visibility;->E:I
 
     return-void
 .end method
@@ -74,7 +74,7 @@
     const/4 v0, 0x3
 
     .line 4
-    iput v0, p0, Landroidx/transition/Visibility;->D:I
+    iput v0, p0, Landroidx/transition/Visibility;->E:I
 
     .line 5
     sget-object v0, Lv0/p;->c:[I
@@ -100,7 +100,7 @@
     if-eqz p2, :cond_0
 
     .line 8
-    invoke-virtual {p0, p2}, Landroidx/transition/Visibility;->N(I)V
+    invoke-virtual {p0, p2}, Landroidx/transition/Visibility;->O(I)V
 
     :cond_0
     return-void
@@ -108,7 +108,7 @@
 
 
 # virtual methods
-.method public final I(Lv0/s;)V
+.method public final J(Lv0/s;)V
     .locals 3
 
     .line 1
@@ -161,7 +161,7 @@
     return-void
 .end method
 
-.method public final J(Lv0/s;Lv0/s;)Landroidx/transition/Visibility$b;
+.method public final K(Lv0/s;Lv0/s;)Landroidx/transition/Visibility$b;
     .locals 7
 
     .line 1
@@ -395,7 +395,7 @@
     return-object p1
 .end method
 
-.method public M(Landroid/view/ViewGroup;Landroid/view/View;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+.method public N(Landroid/view/ViewGroup;Landroid/view/View;Lv0/s;Lv0/s;)Landroid/animation/Animator;
     .locals 0
 
     const/4 p1, 0x0
@@ -403,7 +403,7 @@
     return-object p1
 .end method
 
-.method public N(I)V
+.method public O(I)V
     .locals 1
 
     and-int/lit8 v0, p1, -0x4
@@ -411,7 +411,7 @@
     if-nez v0, :cond_0
 
     .line 1
-    iput p1, p0, Landroidx/transition/Visibility;->D:I
+    iput p1, p0, Landroidx/transition/Visibility;->E:I
 
     return-void
 
@@ -430,7 +430,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/Visibility;->I(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/Visibility;->J(Lv0/s;)V
 
     return-void
 .end method
@@ -439,16 +439,16 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/Visibility;->I(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/Visibility;->J(Lv0/s;)V
 
     return-void
 .end method
 
-.method public k(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+.method public l(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
     .locals 12
 
     .line 1
-    invoke-virtual {p0, p2, p3}, Landroidx/transition/Visibility;->J(Lv0/s;Lv0/s;)Landroidx/transition/Visibility$b;
+    invoke-virtual {p0, p2, p3}, Landroidx/transition/Visibility;->K(Lv0/s;Lv0/s;)Landroidx/transition/Visibility$b;
 
     move-result-object v0
 
@@ -478,7 +478,7 @@
     if-eqz v1, :cond_4
 
     .line 4
-    iget v0, p0, Landroidx/transition/Visibility;->D:I
+    iget v0, p0, Landroidx/transition/Visibility;->E:I
 
     and-int/2addr v0, v3
 
@@ -501,17 +501,17 @@
     check-cast v0, Landroid/view/View;
 
     .line 6
-    invoke-virtual {p0, v0, v4}, Landroidx/transition/Transition;->o(Landroid/view/View;Z)Lv0/s;
+    invoke-virtual {p0, v0, v4}, Landroidx/transition/Transition;->p(Landroid/view/View;Z)Lv0/s;
 
     move-result-object v1
 
     .line 7
-    invoke-virtual {p0, v0, v4}, Landroidx/transition/Transition;->r(Landroid/view/View;Z)Lv0/s;
+    invoke-virtual {p0, v0, v4}, Landroidx/transition/Transition;->s(Landroid/view/View;Z)Lv0/s;
 
     move-result-object v0
 
     .line 8
-    invoke-virtual {p0, v1, v0}, Landroidx/transition/Visibility;->J(Lv0/s;Lv0/s;)Landroidx/transition/Visibility$b;
+    invoke-virtual {p0, v1, v0}, Landroidx/transition/Visibility;->K(Lv0/s;Lv0/s;)Landroidx/transition/Visibility$b;
 
     move-result-object v0
 
@@ -539,7 +539,7 @@
     iget v0, v0, Landroidx/transition/Visibility$b;->d:I
 
     .line 12
-    iget v1, p0, Landroidx/transition/Visibility;->D:I
+    iget v1, p0, Landroidx/transition/Visibility;->E:I
 
     const/4 v5, 0x2
 
@@ -666,17 +666,17 @@
     check-cast v9, Landroid/view/View;
 
     .line 20
-    invoke-virtual {p0, v9, v3}, Landroidx/transition/Transition;->r(Landroid/view/View;Z)Lv0/s;
+    invoke-virtual {p0, v9, v3}, Landroidx/transition/Transition;->s(Landroid/view/View;Z)Lv0/s;
 
     move-result-object v10
 
     .line 21
-    invoke-virtual {p0, v9, v3}, Landroidx/transition/Transition;->o(Landroid/view/View;Z)Lv0/s;
+    invoke-virtual {p0, v9, v3}, Landroidx/transition/Transition;->p(Landroid/view/View;Z)Lv0/s;
 
     move-result-object v11
 
     .line 22
-    invoke-virtual {p0, v10, v11}, Landroidx/transition/Visibility;->J(Lv0/s;Lv0/s;)Landroidx/transition/Visibility$b;
+    invoke-virtual {p0, v10, v11}, Landroidx/transition/Visibility;->K(Lv0/s;Lv0/s;)Landroidx/transition/Visibility$b;
 
     move-result-object v10
 
@@ -774,11 +774,11 @@
 
     move-result-object v0
 
-    invoke-interface {v0, v8}, Lv0/v;->e(Landroid/view/View;)V
+    invoke-interface {v0, v8}, Lv0/v;->b(Landroid/view/View;)V
 
     .line 35
     :cond_10
-    invoke-virtual {p0, p1, v8, p2, p3}, Landroidx/transition/Visibility;->M(Landroid/view/ViewGroup;Landroid/view/View;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+    invoke-virtual {p0, p1, v8, p2, p3}, Landroidx/transition/Visibility;->N(Landroid/view/ViewGroup;Landroid/view/View;Lv0/s;Lv0/s;)Landroid/animation/Animator;
 
     move-result-object v2
 
@@ -791,7 +791,7 @@
 
     move-result-object p1
 
-    invoke-interface {p1, v8}, Lv0/v;->h(Landroid/view/View;)V
+    invoke-interface {p1, v8}, Lv0/v;->c(Landroid/view/View;)V
 
     goto :goto_8
 
@@ -822,7 +822,7 @@
     invoke-virtual {v2, v6, v4}, Lv0/d0;->g(Landroid/view/View;I)V
 
     .line 41
-    invoke-virtual {p0, p1, v6, p2, p3}, Landroidx/transition/Visibility;->M(Landroid/view/ViewGroup;Landroid/view/View;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+    invoke-virtual {p0, p1, v6, p2, p3}, Landroidx/transition/Visibility;->N(Landroid/view/ViewGroup;Landroid/view/View;Lv0/s;Lv0/s;)Landroid/animation/Animator;
 
     move-result-object p1
 
@@ -856,16 +856,16 @@
     return-object v2
 .end method
 
-.method public q()[Ljava/lang/String;
+.method public r()[Ljava/lang/String;
     .locals 1
 
     .line 1
-    sget-object v0, Landroidx/transition/Visibility;->E:[Ljava/lang/String;
+    sget-object v0, Landroidx/transition/Visibility;->F:[Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method public s(Lv0/s;Lv0/s;)Z
+.method public t(Lv0/s;Lv0/s;)Z
     .locals 4
 
     const/4 v0, 0x0
@@ -904,7 +904,7 @@
 
     .line 4
     :cond_1
-    invoke-virtual {p0, p1, p2}, Landroidx/transition/Visibility;->J(Lv0/s;Lv0/s;)Landroidx/transition/Visibility$b;
+    invoke-virtual {p0, p1, p2}, Landroidx/transition/Visibility;->K(Lv0/s;Lv0/s;)Landroidx/transition/Visibility$b;
 
     move-result-object p1
 

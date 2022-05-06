@@ -14,7 +14,7 @@
 
 
 # instance fields
-.field public final synthetic h:Lcom/google/android/play/core/assetpacks/o;
+.field public final synthetic i:Lcom/google/android/play/core/assetpacks/o;
 
 
 # direct methods
@@ -30,7 +30,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/l;->h:Lcom/google/android/play/core/assetpacks/o;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/l;->i:Lcom/google/android/play/core/assetpacks/o;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/play/core/assetpacks/j;-><init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;)V
 
@@ -39,7 +39,7 @@
 
 
 # virtual methods
-.method public final u(Ljava/util/List;)V
+.method public final v(Ljava/util/List;)V
     .locals 10
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -51,7 +51,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j;->b:Lcom/google/android/play/core/assetpacks/o;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
 
     .line 2
     iget-object v0, v0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/l;
@@ -74,7 +74,7 @@
     invoke-virtual {v0, v3, v4, v2}, Ly4/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 6
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/l;->h:Lcom/google/android/play/core/assetpacks/o;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/l;->i:Lcom/google/android/play/core/assetpacks/o;
 
     .line 7
     new-instance v2, Ljava/util/ArrayList;
@@ -102,10 +102,10 @@
 
     move-result-object v5
 
-    check-cast v5, Lcom/google/android/play/core/assetpacks/d0;
+    check-cast v5, Lcom/google/android/play/core/assetpacks/e0;
 
     .line 8
-    iget-object v5, v5, Lcom/google/android/play/core/assetpacks/d0;->b:Ljava/util/Map;
+    iget-object v5, v5, Lcom/google/android/play/core/assetpacks/e0;->b:Ljava/util/Map;
 
     .line 9
     invoke-interface {v5}, Ljava/util/Map;->values()Ljava/util/Collection;
@@ -178,7 +178,7 @@
 
     .line 12
     :cond_3
-    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/j;->a:Lcom/google/android/play/core/tasks/i;
+    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/tasks/i;
 
     invoke-virtual {p1, v2}, Lcom/google/android/play/core/tasks/i;->b(Ljava/lang/Object;)V
 

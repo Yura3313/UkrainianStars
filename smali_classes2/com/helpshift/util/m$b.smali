@@ -20,7 +20,7 @@
     value = {
         "Ljava/lang/Object;",
         "Ljava/util/Comparator<",
-        "Lcom/helpshift/util/v;",
+        "Lcom/helpshift/util/t;",
         ">;"
     }
 .end annotation
@@ -42,14 +42,14 @@
     .locals 4
 
     .line 1
-    check-cast p1, Lcom/helpshift/util/v;
+    check-cast p1, Lcom/helpshift/util/t;
 
-    check-cast p2, Lcom/helpshift/util/v;
+    check-cast p2, Lcom/helpshift/util/t;
 
     .line 2
-    iget v0, p1, Lcom/helpshift/util/v;->b:I
+    iget v0, p1, Lcom/helpshift/util/t;->b:I
 
-    iget v1, p2, Lcom/helpshift/util/v;->b:I
+    iget v1, p2, Lcom/helpshift/util/t;->b:I
 
     const/4 v2, -0x1
 
@@ -69,9 +69,9 @@
 
     .line 3
     :cond_1
-    iget p1, p1, Lcom/helpshift/util/v;->c:I
+    iget p1, p1, Lcom/helpshift/util/t;->c:I
 
-    iget p2, p2, Lcom/helpshift/util/v;->c:I
+    iget p2, p2, Lcom/helpshift/util/t;->c:I
 
     if-ge p1, p2, :cond_2
 

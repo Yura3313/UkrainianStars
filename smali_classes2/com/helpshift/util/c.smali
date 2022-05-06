@@ -12,7 +12,7 @@
     const-string v0, "android.resource://"
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -190,7 +190,7 @@
 
     move-result-object v1
 
-    invoke-static {v2, v1}, Lce/z;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lie/a;->g(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_2
 

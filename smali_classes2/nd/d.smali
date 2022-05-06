@@ -1,6 +1,6 @@
 .class public final Lnd/d;
 .super Lle/j;
-.source "ProfileSelectorFragment.kt"
+.source "FriendsFragment.kt"
 
 # interfaces
 .implements Lke/a;
@@ -11,21 +11,25 @@
     value = {
         "Lle/j;",
         "Lke/a<",
-        "Lbe/n;",
+        "Lvd/m1;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+.field public final synthetic g:Lcom/supercell/id/util/NormalizedError;
+
+.field public final synthetic h:Ljava/util/List;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;)V
+.method public constructor <init>(Lcom/supercell/id/util/NormalizedError;Ljava/util/List;)V
     .locals 0
 
-    iput-object p1, p0, Lnd/d;->a:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+    iput-object p1, p0, Lnd/d;->g:Lcom/supercell/id/util/NormalizedError;
+
+    iput-object p2, p0, Lnd/d;->h:Ljava/util/List;
 
     const/4 p1, 0x0
 
@@ -37,20 +41,47 @@
 
 # virtual methods
 .method public invoke()Ljava/lang/Object;
-    .locals 2
+    .locals 5
 
     .line 1
-    iget-object v0, p0, Lnd/d;->a:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+    new-instance v0, Lvd/o;
 
-    sget v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->r0:I
+    iget-object v1, p0, Lnd/d;->g:Lcom/supercell/id/util/NormalizedError;
 
-    const/4 v1, 0x0
+    invoke-direct {v0, v1}, Lvd/o;-><init>(Lcom/supercell/id/util/NormalizedError;)V
+
+    invoke-static {v0}, Lb5/m;->l(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
 
     .line 2
-    invoke-virtual {v0, v1}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->q1(Z)V
+    new-instance v1, Lvd/m1;
+
+    iget-object v2, p0, Lnd/d;->h:Ljava/util/List;
 
     .line 3
-    sget-object v0, Lbe/n;->a:Lbe/n;
+    new-instance v3, Lvd/l1;
 
-    return-object v0
+    if-eqz v2, :cond_0
+
+    move-object v4, v2
+
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    sget-object v4, Lbe/m;->g:Lbe/m;
+
+    .line 5
+    :goto_0
+    invoke-direct {v3, v4, v0}, Lvd/l1;-><init>(Ljava/util/List;Ljava/util/List;)V
+
+    .line 6
+    invoke-static {v3}, Landroidx/recyclerview/widget/l;->a(Landroidx/recyclerview/widget/l$b;)Landroidx/recyclerview/widget/l$c;
+
+    move-result-object v3
+
+    invoke-direct {v1, v2, v0, v3}, Lvd/m1;-><init>(Ljava/util/List;Ljava/util/List;Landroidx/recyclerview/widget/l$c;)V
+
+    return-object v1
 .end method

@@ -20,7 +20,7 @@
         value = {
             "[",
             "Lke/a<",
-            "Ltd/d;",
+            "Lsd/d;",
             ">;"
         }
     .end annotation
@@ -41,35 +41,35 @@
     const/4 v0, 0x0
 
     .line 2
-    sget-object v1, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;->a:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
+    sget-object v1, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
 
     aput-object v1, p1, v0
 
     const/4 v0, 0x1
 
     .line 3
-    sget-object v1, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;->a:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;
+    sget-object v1, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;
 
     aput-object v1, p1, v0
 
     const/4 v0, 0x2
 
     .line 4
-    sget-object v1, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$c;->a:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$c;
+    sget-object v1, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$c;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$c;
 
     aput-object v1, p1, v0
 
     const/4 v0, 0x3
 
     .line 5
-    sget-object v1, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$d;->a:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$d;
+    sget-object v1, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$d;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$d;
 
     aput-object v1, p1, v0
 
     const/4 v0, 0x4
 
     .line 6
-    sget-object v1, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;->a:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;
+    sget-object v1, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;
 
     aput-object v1, p1, v0
 

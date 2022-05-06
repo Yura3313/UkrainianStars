@@ -3,93 +3,65 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/uc0;
+.implements Lj3/ed0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lj3/uc0<",
-        "Lorg/json/JSONObject;",
+        "Lj3/ed0<",
+        "Lj3/kd0;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lorg/json/JSONObject;
+.field public final a:Lj3/km0;
+
+.field public final b:Landroid/content/Context;
 
 
 # direct methods
-.method public constructor <init>(Lorg/json/JSONObject;)V
+.method public constructor <init>(Lj3/km0;Landroid/content/Context;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj3/md0;->a:Lorg/json/JSONObject;
+    iput-object p1, p0, Lj3/md0;->a:Lj3/km0;
+
+    .line 3
+    iput-object p2, p0, Lj3/md0;->b:Landroid/content/Context;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Ljava/lang/Object;)V
-    .locals 4
+.method public final a()Lj3/im0;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lj3/im0<",
+            "Lj3/kd0;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    check-cast p1, Lorg/json/JSONObject;
+    iget-object v0, p0, Lj3/md0;->a:Lj3/km0;
 
-    :try_start_0
-    const-string v0, "content_info"
+    new-instance v1, Lj3/ld0;
 
-    .line 2
-    invoke-static {p1, v0}, Lj3/jc;->j(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONObject;
+    invoke-direct {v1, p0}, Lj3/ld0;-><init>(Lj3/md0;)V
 
-    move-result-object p1
+    invoke-interface {v0, v1}, Lj3/km0;->c(Ljava/util/concurrent/Callable;)Lj3/im0;
 
-    .line 3
-    iget-object v0, p0, Lj3/md0;->a:Lorg/json/JSONObject;
+    move-result-object v0
 
-    .line 4
-    invoke-virtual {v0}, Lorg/json/JSONObject;->keys()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    .line 5
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    .line 6
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    .line 7
-    invoke-virtual {v0, v2}, Lorg/json/JSONObject;->get(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    invoke-virtual {p1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :cond_0
-    return-void
-
-    .line 8
-    :catch_0
-    invoke-static {}, Lp0/d;->i()Z
-
-    return-void
+    return-object v0
 .end method

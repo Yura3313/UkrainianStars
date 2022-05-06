@@ -1,359 +1,220 @@
-.class public final Lt5/a;
+.class public final synthetic Lt5/a;
 .super Ljava/lang/Object;
+
+# interfaces
+.implements Lu5/b;
 
 
 # static fields
-.field public static final a:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final b:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final c:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final d:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final e:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final g:Lu5/b;
 
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 13
+    .locals 1
 
-    .line 1
-    new-instance v0, Ljava/util/HashSet;
+    new-instance v0, Lt5/a;
 
-    const/16 v1, 0xf
+    invoke-direct {v0}, Lt5/a;-><init>()V
 
-    new-array v1, v1, [Ljava/lang/String;
-
-    const-string v2, "_in"
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    const-string v2, "_xa"
-
-    const/4 v4, 0x1
-
-    aput-object v2, v1, v4
-
-    const-string v2, "_xu"
-
-    const/4 v5, 0x2
-
-    aput-object v2, v1, v5
-
-    const-string v2, "_aq"
-
-    const/4 v6, 0x3
-
-    aput-object v2, v1, v6
-
-    const-string v2, "_aa"
-
-    const/4 v7, 0x4
-
-    aput-object v2, v1, v7
-
-    const-string v2, "_ai"
-
-    const/4 v8, 0x5
-
-    aput-object v2, v1, v8
-
-    const-string v2, "_ac"
-
-    const/4 v9, 0x6
-
-    aput-object v2, v1, v9
-
-    const-string v2, "campaign_details"
-
-    const/4 v10, 0x7
-
-    aput-object v2, v1, v10
-
-    const-string v2, "_ug"
-
-    const/16 v11, 0x8
-
-    aput-object v2, v1, v11
-
-    const/16 v2, 0x9
-
-    const-string v12, "_iapx"
-
-    aput-object v12, v1, v2
-
-    const/16 v2, 0xa
-
-    const-string v12, "_exp_set"
-
-    aput-object v12, v1, v2
-
-    const/16 v2, 0xb
-
-    const-string v12, "_exp_clear"
-
-    aput-object v12, v1, v2
-
-    const/16 v2, 0xc
-
-    const-string v12, "_exp_activate"
-
-    aput-object v12, v1, v2
-
-    const/16 v2, 0xd
-
-    const-string v12, "_exp_timeout"
-
-    aput-object v12, v1, v2
-
-    const/16 v2, 0xe
-
-    const-string v12, "_exp_expire"
-
-    aput-object v12, v1, v2
-
-    .line 2
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
-
-    new-array v0, v11, [Ljava/lang/String;
-
-    const-string v1, "_e"
-
-    aput-object v1, v0, v3
-
-    const-string v1, "_f"
-
-    aput-object v1, v0, v4
-
-    const-string v1, "_iap"
-
-    aput-object v1, v0, v5
-
-    const-string v1, "_s"
-
-    aput-object v1, v0, v6
-
-    const-string v1, "_au"
-
-    aput-object v1, v0, v7
-
-    const-string v1, "_ui"
-
-    aput-object v1, v0, v8
-
-    const-string v1, "_cd"
-
-    aput-object v1, v0, v9
-
-    const-string v1, "app_open"
-
-    aput-object v1, v0, v10
-
-    .line 3
-    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
-
-    sput-object v0, Lt5/a;->a:Ljava/util/List;
-
-    new-array v0, v6, [Ljava/lang/String;
-
-    const-string v1, "auto"
-
-    aput-object v1, v0, v3
-
-    const-string v1, "app"
-
-    aput-object v1, v0, v4
-
-    const-string v1, "am"
-
-    aput-object v1, v0, v5
-
-    .line 4
-    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
-
-    sput-object v0, Lt5/a;->b:Ljava/util/List;
-
-    new-array v0, v5, [Ljava/lang/String;
-
-    const-string v1, "_r"
-
-    aput-object v1, v0, v3
-
-    const-string v1, "_dbg"
-
-    aput-object v1, v0, v4
-
-    .line 5
-    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
-
-    sput-object v0, Lt5/a;->c:Ljava/util/List;
-
-    new-array v0, v5, [[Ljava/lang/String;
-
-    .line 6
-    sget-object v1, Lb4/i;->k:[Ljava/lang/String;
-
-    aput-object v1, v0, v3
-
-    sget-object v1, Lb4/i;->l:[Ljava/lang/String;
-
-    aput-object v1, v0, v4
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    :goto_0
-    if-ge v1, v5, :cond_0
-
-    .line 7
-    aget-object v6, v0, v1
-
-    array-length v6, v6
-
-    add-int/2addr v2, v6
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    .line 8
-    :cond_0
-    aget-object v1, v0, v3
-
-    invoke-static {v1, v2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
-
-    move-result-object v1
-
-    .line 9
-    aget-object v2, v0, v3
-
-    array-length v2, v2
-
-    const/4 v6, 0x1
-
-    :goto_1
-    if-ge v6, v5, :cond_1
-
-    .line 10
-    aget-object v7, v0, v6
-
-    .line 11
-    array-length v8, v7
-
-    invoke-static {v7, v3, v1, v2, v8}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 12
-    array-length v7, v7
-
-    add-int/2addr v2, v7
-
-    add-int/lit8 v6, v6, 0x1
-
-    goto :goto_1
-
-    .line 13
-    :cond_1
-    check-cast v1, [Ljava/lang/String;
-
-    .line 14
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
-
-    sput-object v0, Lt5/a;->d:Ljava/util/List;
-
-    new-array v0, v5, [Ljava/lang/String;
-
-    const-string v1, "^_ltv_[A-Z]{3}$"
-
-    aput-object v1, v0, v3
-
-    const-string v1, "^_cc[1-5]{1}$"
-
-    aput-object v1, v0, v4
-
-    .line 15
-    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
-
-    sput-object v0, Lt5/a;->e:Ljava/util/List;
+    sput-object v0, Lt5/a;->g:Lu5/b;
 
     return-void
 .end method
 
-.method public static a(Ljava/lang/String;)Z
-    .locals 1
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final e(Landroidx/fragment/app/t;)Ljava/lang/Object;
+    .locals 14
 
     .line 1
-    sget-object v0, Lt5/a;->b:Ljava/util/List;
+    const-class v0, Lr5/b;
 
-    invoke-interface {v0, p0}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+    .line 2
+    invoke-virtual {p1, v0}, Landroidx/fragment/app/t;->d(Ljava/lang/Class;)Ljava/lang/Object;
 
-    move-result p0
+    move-result-object v0
 
-    if-nez p0, :cond_0
+    check-cast v0, Lr5/b;
 
-    const/4 p0, 0x1
+    const-class v1, Landroid/content/Context;
 
-    return p0
+    .line 3
+    invoke-virtual {p1, v1}, Landroidx/fragment/app/t;->d(Ljava/lang/Class;)Ljava/lang/Object;
 
+    move-result-object v1
+
+    check-cast v1, Landroid/content/Context;
+
+    const-class v2, Lv5/d;
+
+    .line 4
+    invoke-virtual {p1, v2}, Landroidx/fragment/app/t;->d(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lv5/d;
+
+    if-eqz v0, :cond_5
+
+    if-eqz v1, :cond_4
+
+    if-eqz p1, :cond_3
+
+    .line 5
+    invoke-virtual {v1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lc2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    sget-object v2, Ls5/b;->b:Ls5/a;
+
+    if-nez v2, :cond_2
+
+    .line 7
+    const-class v2, Ls5/b;
+
+    monitor-enter v2
+
+    .line 8
+    :try_start_0
+    sget-object v3, Ls5/b;->b:Ls5/a;
+
+    if-nez v3, :cond_1
+
+    .line 9
+    new-instance v13, Landroid/os/Bundle;
+
+    const/4 v3, 0x1
+
+    invoke-direct {v13, v3}, Landroid/os/Bundle;-><init>(I)V
+
+    .line 10
+    invoke-virtual {v0}, Lr5/b;->d()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    .line 11
+    const-class v3, Lr5/a;
+
+    sget-object v4, Ls5/c;->g:Ljava/util/concurrent/Executor;
+
+    sget-object v5, Ls5/d;->a:Lv5/b;
+
+    invoke-interface {p1, v3, v4, v5}, Lv5/d;->b(Ljava/lang/Class;Ljava/util/concurrent/Executor;Lv5/b;)V
+
+    const-string p1, "dataCollectionDefaultEnabled"
+
+    .line 12
+    invoke-virtual {v0}, Lr5/b;->f()V
+
+    .line 13
+    iget-object v0, v0, Lr5/b;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    move-result v0
+
+    .line 14
+    invoke-virtual {v13, p1, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+
+    .line 15
     :cond_0
-    const/4 p0, 0x0
+    new-instance p1, Ls5/b;
 
-    return p0
+    .line 16
+    new-instance v0, Ly3/j;
+
+    const-wide/16 v5, 0x0
+
+    const-wide/16 v7, 0x0
+
+    const/4 v9, 0x1
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    move-object v4, v0
+
+    invoke-direct/range {v4 .. v13}, Ly3/j;-><init>(JJZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+
+    .line 17
+    invoke-static {v1, v0}, Ly3/q0;->f(Landroid/content/Context;Ly3/j;)Ly3/q0;
+
+    move-result-object v0
+
+    .line 18
+    iget-object v0, v0, Ly3/q0;->r:Lcom/google/android/gms/measurement/AppMeasurement;
+
+    .line 19
+    invoke-direct {p1, v0}, Ls5/b;-><init>(Lcom/google/android/gms/measurement/AppMeasurement;)V
+
+    sput-object p1, Ls5/b;->b:Ls5/a;
+
+    .line 20
+    :cond_1
+    monitor-exit v2
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit v2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+
+    .line 21
+    :cond_2
+    :goto_0
+    sget-object p1, Ls5/b;->b:Ls5/a;
+
+    return-object p1
+
+    .line 22
+    :cond_3
+    new-instance p1, Ljava/lang/NullPointerException;
+
+    const-string v0, "null reference"
+
+    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 23
+    :cond_4
+    new-instance p1, Ljava/lang/NullPointerException;
+
+    const-string v0, "null reference"
+
+    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 24
+    :cond_5
+    new-instance p1, Ljava/lang/NullPointerException;
+
+    const-string v0, "null reference"
+
+    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method

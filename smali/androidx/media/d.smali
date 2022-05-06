@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media/MediaBrowserServiceCompat$j;
+.field public final synthetic g:Landroidx/media/MediaBrowserServiceCompat$j;
 
-.field public final synthetic b:Ljava/lang/String;
+.field public final synthetic h:Ljava/lang/String;
 
-.field public final synthetic h:Landroid/os/IBinder;
+.field public final synthetic i:Landroid/os/IBinder;
 
-.field public final synthetic i:Landroid/os/Bundle;
+.field public final synthetic j:Landroid/os/Bundle;
 
-.field public final synthetic j:Landroidx/media/MediaBrowserServiceCompat$i;
+.field public final synthetic k:Landroidx/media/MediaBrowserServiceCompat$i;
 
 
 # direct methods
@@ -23,15 +23,15 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/media/d;->j:Landroidx/media/MediaBrowserServiceCompat$i;
+    iput-object p1, p0, Landroidx/media/d;->k:Landroidx/media/MediaBrowserServiceCompat$i;
 
-    iput-object p2, p0, Landroidx/media/d;->a:Landroidx/media/MediaBrowserServiceCompat$j;
+    iput-object p2, p0, Landroidx/media/d;->g:Landroidx/media/MediaBrowserServiceCompat$j;
 
-    iput-object p3, p0, Landroidx/media/d;->b:Ljava/lang/String;
+    iput-object p3, p0, Landroidx/media/d;->h:Ljava/lang/String;
 
-    iput-object p4, p0, Landroidx/media/d;->h:Landroid/os/IBinder;
+    iput-object p4, p0, Landroidx/media/d;->i:Landroid/os/IBinder;
 
-    iput-object p5, p0, Landroidx/media/d;->i:Landroid/os/Bundle;
+    iput-object p5, p0, Landroidx/media/d;->j:Landroid/os/Bundle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +44,7 @@
     .locals 12
 
     .line 1
-    iget-object v0, p0, Landroidx/media/d;->a:Landroidx/media/MediaBrowserServiceCompat$j;
+    iget-object v0, p0, Landroidx/media/d;->g:Landroidx/media/MediaBrowserServiceCompat$j;
 
     check-cast v0, Landroidx/media/MediaBrowserServiceCompat$k;
 
@@ -53,13 +53,13 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Landroidx/media/d;->j:Landroidx/media/MediaBrowserServiceCompat$i;
+    iget-object v1, p0, Landroidx/media/d;->k:Landroidx/media/MediaBrowserServiceCompat$i;
 
     iget-object v1, v1, Landroidx/media/MediaBrowserServiceCompat$i;->a:Landroidx/media/MediaBrowserServiceCompat;
 
-    iget-object v1, v1, Landroidx/media/MediaBrowserServiceCompat;->b:Lm/a;
+    iget-object v1, v1, Landroidx/media/MediaBrowserServiceCompat;->h:Lm/a;
 
-    invoke-virtual {v1, v0}, Lm/h;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Lm/g;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -71,15 +71,15 @@
 
     .line 3
     :cond_0
-    iget-object v1, p0, Landroidx/media/d;->j:Landroidx/media/MediaBrowserServiceCompat$i;
+    iget-object v1, p0, Landroidx/media/d;->k:Landroidx/media/MediaBrowserServiceCompat$i;
 
     iget-object v8, v1, Landroidx/media/MediaBrowserServiceCompat$i;->a:Landroidx/media/MediaBrowserServiceCompat;
 
-    iget-object v9, p0, Landroidx/media/d;->b:Ljava/lang/String;
+    iget-object v9, p0, Landroidx/media/d;->h:Ljava/lang/String;
 
-    iget-object v1, p0, Landroidx/media/d;->h:Landroid/os/IBinder;
+    iget-object v1, p0, Landroidx/media/d;->i:Landroid/os/IBinder;
 
-    iget-object v10, p0, Landroidx/media/d;->i:Landroid/os/Bundle;
+    iget-object v10, p0, Landroidx/media/d;->j:Landroid/os/Bundle;
 
     invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -128,7 +128,7 @@
     check-cast v4, Landroid/os/Bundle;
 
     .line 8
-    invoke-static {v10, v4}, Lp0/d;->b(Landroid/os/Bundle;Landroid/os/Bundle;)Z
+    invoke-static {v10, v4}, Li1/i;->a(Landroid/os/Bundle;Landroid/os/Bundle;)Z
 
     move-result v4
 
@@ -201,7 +201,7 @@
 
     const-string v2, "onLoadChildren must call detach() or sendResult() before returning for package="
 
-    invoke-static {v2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -209,7 +209,7 @@
 
     const-string v3, " id="
 
-    invoke-static {v2, v0, v3, v9}, Landroidx/fragment/app/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v0, v3, v9}, Landroidx/fragment/app/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

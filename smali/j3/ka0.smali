@@ -3,91 +3,223 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/uc0;
+.implements Lj3/rv0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lj3/uc0<",
-        "Landroid/os/Bundle;",
+        "Lj3/rv0<",
+        "Lj3/ia0;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:D
+.field public final a:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final b:Z
+.field public final b:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/kp;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final d:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/eh0;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final e:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/wg0;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(DZ)V
+.method public constructor <init>(Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/vv0<",
+            "Ljava/lang/String;",
+            ">;",
+            "Lj3/vv0<",
+            "Ljava/lang/String;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/kp;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/eh0;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/wg0;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-wide p1, p0, Lj3/ka0;->a:D
+    iput-object p1, p0, Lj3/ka0;->a:Lj3/vv0;
 
     .line 3
-    iput-boolean p3, p0, Lj3/ka0;->b:Z
+    iput-object p2, p0, Lj3/ka0;->b:Lj3/vv0;
+
+    .line 4
+    iput-object p3, p0, Lj3/ka0;->c:Lj3/vv0;
+
+    .line 5
+    iput-object p4, p0, Lj3/ka0;->d:Lj3/vv0;
+
+    .line 6
+    iput-object p5, p0, Lj3/ka0;->e:Lj3/vv0;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final b(Ljava/lang/Object;)V
-    .locals 3
+.method public static a(Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;)Lj3/ka0;
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/vv0<",
+            "Ljava/lang/String;",
+            ">;",
+            "Lj3/vv0<",
+            "Ljava/lang/String;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/kp;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/eh0;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/wg0;",
+            ">;)",
+            "Lj3/ka0;"
+        }
+    .end annotation
 
     .line 1
-    check-cast p1, Landroid/os/Bundle;
+    new-instance v6, Lj3/ka0;
 
-    const-string v0, "device"
+    move-object v0, v6
 
-    .line 2
-    invoke-static {p1, v0}, Lcom/google/android/gms/ads/s;->B(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/Bundle;
+    move-object v1, p0
 
-    move-result-object v1
+    move-object v2, p1
 
-    .line 3
-    invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
+    move-object v3, p2
 
-    const-string p1, "battery"
+    move-object v4, p3
 
-    .line 4
-    invoke-virtual {v1, p1}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
+    move-object v5, p4
+
+    invoke-direct/range {v0 .. v5}, Lj3/ka0;-><init>(Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;)V
+
+    return-object v6
+.end method
+
+
+# virtual methods
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 7
+
+    .line 1
+    iget-object v0, p0, Lj3/ka0;->a:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    if-nez v0, :cond_0
+    move-object v2, v0
 
-    .line 5
-    new-instance v0, Landroid/os/Bundle;
+    check-cast v2, Ljava/lang/String;
 
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+    iget-object v0, p0, Lj3/ka0;->b:Lj3/vv0;
 
-    .line 6
-    :cond_0
-    invoke-virtual {v1, p1, v0}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    .line 7
-    iget-boolean p1, p0, Lj3/ka0;->b:Z
+    move-result-object v0
 
-    const-string v1, "is_charging"
+    move-object v3, v0
 
-    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+    check-cast v3, Ljava/lang/String;
 
-    .line 8
-    iget-wide v1, p0, Lj3/ka0;->a:D
+    iget-object v0, p0, Lj3/ka0;->c:Lj3/vv0;
 
-    const-string p1, "battery_level"
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    invoke-virtual {v0, p1, v1, v2}, Landroid/os/Bundle;->putDouble(Ljava/lang/String;D)V
+    move-result-object v0
 
-    return-void
+    move-object v4, v0
+
+    check-cast v4, Lj3/kp;
+
+    iget-object v0, p0, Lj3/ka0;->d:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v5, v0
+
+    check-cast v5, Lj3/eh0;
+
+    iget-object v0, p0, Lj3/ka0;->e:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v6, v0
+
+    check-cast v6, Lj3/wg0;
+
+    .line 2
+    new-instance v0, Lj3/ia0;
+
+    move-object v1, v0
+
+    invoke-direct/range {v1 .. v6}, Lj3/ia0;-><init>(Ljava/lang/String;Ljava/lang/String;Lj3/kp;Lj3/eh0;Lj3/wg0;)V
+
+    return-object v0
 .end method

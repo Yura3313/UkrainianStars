@@ -14,7 +14,7 @@
 # static fields
 .field public static final Companion:Lcom/kakao/sdk/common/util/IntentResolveClient$Companion;
 
-.field private static final instance$delegate:Lbe/c;
+.field private static final instance$delegate:Lae/c;
 
 
 # instance fields
@@ -48,11 +48,11 @@
     .line 1
     sget-object v0, Lcom/kakao/sdk/common/util/IntentResolveClient$Companion$instance$2;->INSTANCE:Lcom/kakao/sdk/common/util/IntentResolveClient$Companion$instance$2;
 
-    invoke-static {v0}, Lbe/e;->f(Lke/a;)Lbe/c;
+    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
 
     move-result-object v0
 
-    sput-object v0, Lcom/kakao/sdk/common/util/IntentResolveClient;->instance$delegate:Lbe/c;
+    sput-object v0, Lcom/kakao/sdk/common/util/IntentResolveClient;->instance$delegate:Lae/c;
 
     return-void
 .end method
@@ -119,11 +119,11 @@
     return-void
 .end method
 
-.method public static final synthetic access$getInstance$cp()Lbe/c;
+.method public static final synthetic access$getInstance$cp()Lae/c;
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/kakao/sdk/common/util/IntentResolveClient;->instance$delegate:Lbe/c;
+    sget-object v0, Lcom/kakao/sdk/common/util/IntentResolveClient;->instance$delegate:Lae/c;
 
     return-object v0
 .end method
@@ -153,7 +153,7 @@
     .line 3
     iget-object v4, p0, Lcom/kakao/sdk/common/util/IntentResolveClient;->ALLOWED_SIGNATURES:[Ljava/lang/String;
 
-    invoke-static {v4, v3}, Lce/g;->j([Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v3}, Lbe/f;->f([Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -250,7 +250,7 @@
     const-string v11, "packageInfo"
 
     .line 10
-    invoke-static {v10, v11}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v10, v11}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0, v10}, Lcom/kakao/sdk/common/util/IntentResolveClient;->validateTalkSignature(Landroid/content/pm/PackageInfo;)Z
 
@@ -395,14 +395,14 @@
     const-string p1, "intent"
 
     .line 30
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_9
     const-string p1, "context"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     goto :goto_4
 

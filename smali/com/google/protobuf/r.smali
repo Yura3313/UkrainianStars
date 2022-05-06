@@ -7,7 +7,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<T::",
-        "Lcom/google/protobuf/v$b<",
+        "Lcom/google/protobuf/v$a<",
         "TT;>;>",
         "Ljava/lang/Object;"
     }
@@ -69,7 +69,7 @@
 .method public abstract f(Ljava/lang/Object;)V
 .end method
 
-.method public abstract g(Lcom/google/protobuf/i1;Ljava/lang/Object;Lcom/google/protobuf/q;Lcom/google/protobuf/v;Ljava/lang/Object;Lcom/google/protobuf/r1;)Ljava/lang/Object;
+.method public abstract g(Lcom/google/protobuf/h1;Ljava/lang/Object;Lcom/google/protobuf/q;Lcom/google/protobuf/v;Ljava/lang/Object;Lcom/google/protobuf/q1;)Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<UT:",
@@ -77,12 +77,12 @@
             "UB:",
             "Ljava/lang/Object;",
             ">(",
-            "Lcom/google/protobuf/i1;",
+            "Lcom/google/protobuf/h1;",
             "Ljava/lang/Object;",
             "Lcom/google/protobuf/q;",
             "Lcom/google/protobuf/v<",
             "TT;>;TUB;",
-            "Lcom/google/protobuf/r1<",
+            "Lcom/google/protobuf/q1<",
             "TUT;TUB;>;)TUB;"
         }
     .end annotation
@@ -94,11 +94,11 @@
     .end annotation
 .end method
 
-.method public abstract h(Lcom/google/protobuf/i1;Ljava/lang/Object;Lcom/google/protobuf/q;Lcom/google/protobuf/v;)V
+.method public abstract h(Lcom/google/protobuf/h1;Ljava/lang/Object;Lcom/google/protobuf/q;Lcom/google/protobuf/v;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/protobuf/i1;",
+            "Lcom/google/protobuf/h1;",
             "Ljava/lang/Object;",
             "Lcom/google/protobuf/q;",
             "Lcom/google/protobuf/v<",
@@ -132,11 +132,11 @@
     .end annotation
 .end method
 
-.method public abstract j(Lcom/google/protobuf/z1;Ljava/util/Map$Entry;)V
+.method public abstract j(Lcom/google/protobuf/y1;Ljava/util/Map$Entry;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/protobuf/z1;",
+            "Lcom/google/protobuf/y1;",
             "Ljava/util/Map$Entry<",
             "**>;)V"
         }

@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public abstract a(Lorg/json/JSONObject;)Ljava/lang/Object;
+.method public abstract b(Lorg/json/JSONObject;)Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

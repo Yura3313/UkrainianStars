@@ -1,71 +1,104 @@
-.class public final Lj3/hh;
+.class public final synthetic Lj3/hh;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lj3/rl0;
 
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lj3/rl0<",
-        "Ljava/util/Map<",
-        "Ljava/lang/String;",
-        "Ljava/lang/String;",
-        ">;>;"
-    }
-.end annotation
-
-
-# instance fields
-.field public final synthetic a:Ljava/util/List;
-
-.field public final synthetic b:Ljava/lang/String;
-
-.field public final synthetic h:Lj3/fh;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>(Lj3/fh;Ljava/util/List;Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lj3/hh;->h:Lj3/fh;
-
-    iput-object p2, p0, Lj3/hh;->a:Ljava/util/List;
-
-    iput-object p3, p0, Lj3/hh;->b:Ljava/lang/String;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final d(Ljava/lang/Throwable;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final synthetic onSuccess(Ljava/lang/Object;)V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 1
-    check-cast p1, Ljava/util/Map;
+    invoke-static {}, Landroid/webkit/ConsoleMessage$MessageLevel;->values()[Landroid/webkit/ConsoleMessage$MessageLevel;
 
-    .line 2
-    iget-object v0, p0, Lj3/hh;->h:Lj3/fh;
+    move-result-object v0
 
-    iget-object v1, p0, Lj3/hh;->a:Ljava/util/List;
+    array-length v0, v0
 
-    iget-object v2, p0, Lj3/hh;->b:Ljava/lang/String;
+    new-array v0, v0, [I
 
-    .line 3
-    invoke-virtual {v0, p1, v1, v2}, Lj3/fh;->u(Ljava/util/Map;Ljava/util/List;Ljava/lang/String;)V
+    sput-object v0, Lj3/hh;->a:[I
 
+    :try_start_0
+    sget-object v1, Landroid/webkit/ConsoleMessage$MessageLevel;->ERROR:Landroid/webkit/ConsoleMessage$MessageLevel;
+
+    invoke-virtual {v1}, Landroid/webkit/ConsoleMessage$MessageLevel;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :try_start_1
+    sget-object v0, Lj3/hh;->a:[I
+
+    sget-object v1, Landroid/webkit/ConsoleMessage$MessageLevel;->WARNING:Landroid/webkit/ConsoleMessage$MessageLevel;
+
+    invoke-virtual {v1}, Landroid/webkit/ConsoleMessage$MessageLevel;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
+    :try_start_2
+    sget-object v0, Lj3/hh;->a:[I
+
+    sget-object v1, Landroid/webkit/ConsoleMessage$MessageLevel;->LOG:Landroid/webkit/ConsoleMessage$MessageLevel;
+
+    invoke-virtual {v1}, Landroid/webkit/ConsoleMessage$MessageLevel;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x3
+
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
+    :try_start_3
+    sget-object v0, Lj3/hh;->a:[I
+
+    sget-object v1, Landroid/webkit/ConsoleMessage$MessageLevel;->TIP:Landroid/webkit/ConsoleMessage$MessageLevel;
+
+    invoke-virtual {v1}, Landroid/webkit/ConsoleMessage$MessageLevel;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x4
+
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    :catch_3
+    :try_start_4
+    sget-object v0, Lj3/hh;->a:[I
+
+    sget-object v1, Landroid/webkit/ConsoleMessage$MessageLevel;->DEBUG:Landroid/webkit/ConsoleMessage$MessageLevel;
+
+    invoke-virtual {v1}, Landroid/webkit/ConsoleMessage$MessageLevel;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x5
+
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
     return-void
 .end method

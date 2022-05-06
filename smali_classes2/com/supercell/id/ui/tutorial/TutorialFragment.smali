@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field public i0:Ljava/util/HashMap;
+.field public j0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 .method public W0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->i0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->j0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -64,7 +64,7 @@
     const-string p1, "inflater"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -77,7 +77,7 @@
     invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->i0()V
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->i0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->j0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -90,7 +90,7 @@
 .method public o1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->i0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->j0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -98,10 +98,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->i0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->j0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->i0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->j0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -116,7 +116,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -130,7 +130,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->i0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->j0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -151,7 +151,7 @@
     invoke-super {p0, p1, p2}, Lcom/supercell/id/ui/BaseFragment;->s0(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 2
-    invoke-static {p0}, Lb0/g;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-static {p0}, Lrc/b;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object p1
 
@@ -162,7 +162,7 @@
     if-eqz p1, :cond_0
 
     .line 3
-    iget-boolean p1, p1, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->b:Z
+    iget-boolean p1, p1, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
 
     goto :goto_0
 
@@ -242,7 +242,7 @@
 
     const-string v0, "childFragmentManager"
 
-    invoke-static {p2, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p1, p2}, Lcom/supercell/id/ui/tutorial/TutorialFragment$d;-><init>(Landroidx/fragment/app/FragmentManager;)V
 
@@ -257,7 +257,7 @@
 
     const-string v2, "pager"
 
-    invoke-static {v1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, p1}, Landroidx/viewpager/widget/RtlViewPager;->setAdapter(Ly0/b;)V
 
@@ -337,7 +337,7 @@
 
     move-result-object v1
 
-    invoke-static {v1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p2, v1}, Lcom/supercell/id/ui/tutorial/TutorialFragment$c;-><init>(Landroidx/fragment/app/FragmentManager;)V
 
@@ -350,7 +350,7 @@
     const-string p1, "view"
 
     .line 16
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

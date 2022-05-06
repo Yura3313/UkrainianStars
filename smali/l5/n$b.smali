@@ -32,7 +32,7 @@
     .locals 0
 
     .line 1
-    invoke-static {}, Ll5/n;->r()Ll5/n;
+    invoke-static {}, Ll5/n;->q()Ll5/n;
 
     move-result-object p1
 

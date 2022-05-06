@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+.field public final synthetic g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
 
 # direct methods
@@ -12,7 +12,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Ls4/a;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    iput-object p1, p0, Ls4/a;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -25,7 +25,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Ls4/a;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    iget-object p1, p0, Ls4/a;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     invoke-virtual {p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->e()V
 

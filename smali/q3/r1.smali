@@ -6,11 +6,11 @@
 
 
 # instance fields
-.field public a:I
+.field public g:I
 
-.field public final b:I
+.field public final h:I
 
-.field public final synthetic h:Lq3/q1;
+.field public final synthetic i:Lq3/q1;
 
 
 # direct methods
@@ -18,7 +18,7 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lq3/r1;->h:Lq3/q1;
+    iput-object p1, p0, Lq3/r1;->i:Lq3/q1;
 
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -26,14 +26,14 @@
     const/4 v0, 0x0
 
     .line 3
-    iput v0, p0, Lq3/r1;->a:I
+    iput v0, p0, Lq3/r1;->g:I
 
     .line 4
     invoke-virtual {p1}, Lq3/q1;->size()I
 
     move-result p1
 
-    iput p1, p0, Lq3/r1;->b:I
+    iput p1, p0, Lq3/r1;->h:I
 
     return-void
 .end method
@@ -44,22 +44,22 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lq3/r1;->a:I
+    iget v0, p0, Lq3/r1;->g:I
 
     .line 2
-    iget v1, p0, Lq3/r1;->b:I
+    iget v1, p0, Lq3/r1;->h:I
 
     if-ge v0, v1, :cond_0
 
     add-int/lit8 v1, v0, 0x1
 
     .line 3
-    iput v1, p0, Lq3/r1;->a:I
+    iput v1, p0, Lq3/r1;->g:I
 
     .line 4
-    iget-object v1, p0, Lq3/r1;->h:Lq3/q1;
+    iget-object v1, p0, Lq3/r1;->i:Lq3/q1;
 
-    invoke-virtual {v1, v0}, Lq3/q1;->f(I)B
+    invoke-virtual {v1, v0}, Lq3/q1;->g(I)B
 
     move-result v0
 
@@ -78,9 +78,9 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lq3/r1;->a:I
+    iget v0, p0, Lq3/r1;->g:I
 
-    iget v1, p0, Lq3/r1;->b:I
+    iget v1, p0, Lq3/r1;->h:I
 
     if-ge v0, v1, :cond_0
 

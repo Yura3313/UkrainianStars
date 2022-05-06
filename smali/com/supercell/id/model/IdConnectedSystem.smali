@@ -19,11 +19,11 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final b:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
-.field public final h:Ljava/util/List;
+.field public final i:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -33,9 +33,9 @@
     .end annotation
 .end field
 
-.field public final i:Ljava/lang/Integer;
+.field public final j:Ljava/lang/Integer;
 
-.field public final j:Ljava/lang/Boolean;
+.field public final k:Ljava/lang/Boolean;
 
 
 # direct methods
@@ -72,15 +72,15 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/model/IdConnectedSystem;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/id/model/IdConnectedSystem;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/id/model/IdConnectedSystem;->h:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/supercell/id/model/IdConnectedSystem;->h:Ljava/util/List;
+    iput-object p3, p0, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/util/List;
 
-    iput-object p4, p0, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/lang/Integer;
+    iput-object p4, p0, Lcom/supercell/id/model/IdConnectedSystem;->j:Ljava/lang/Integer;
 
-    iput-object p5, p0, Lcom/supercell/id/model/IdConnectedSystem;->j:Ljava/lang/Boolean;
+    iput-object p5, p0, Lcom/supercell/id/model/IdConnectedSystem;->k:Ljava/lang/Boolean;
 
     return-void
 .end method
@@ -97,7 +97,7 @@
 
     const-string v1, "jsonObject.getString(\"system\")"
 
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v1, "username"
 
@@ -113,7 +113,7 @@
     .line 4
     sget-object v3, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v1, v3}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -154,7 +154,7 @@
 
     move-result v5
 
-    invoke-static {v4, v5}, Lbe/a;->e(II)Loe/c;
+    invoke-static {v4, v5}, Lc2/n0;->e(II)Loe/c;
 
     move-result-object v4
 
@@ -163,7 +163,7 @@
 
     const/16 v6, 0xa
 
-    invoke-static {v4, v6}, Lce/h;->E(Ljava/lang/Iterable;I)I
+    invoke-static {v4, v6}, Lbe/g;->v(Ljava/lang/Iterable;I)I
 
     move-result v6
 
@@ -183,9 +183,9 @@
 
     move-object v6, v4
 
-    check-cast v6, Lce/u;
+    check-cast v6, Lbe/t;
 
-    invoke-virtual {v6}, Lce/u;->b()I
+    invoke-virtual {v6}, Lbe/t;->b()I
 
     move-result v6
 
@@ -199,7 +199,7 @@
     .line 11
     sget-object v7, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v6, v7}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v6, v7}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v7
 
@@ -253,7 +253,7 @@
     .line 15
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -290,7 +290,7 @@
     .line 18
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {p1, v4}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v4}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -315,15 +315,15 @@
     :cond_e
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/model/IdConnectedSystem;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/supercell/id/model/IdConnectedSystem;->b:Ljava/lang/String;
+    iput-object v1, p0, Lcom/supercell/id/model/IdConnectedSystem;->h:Ljava/lang/String;
 
-    iput-object v5, p0, Lcom/supercell/id/model/IdConnectedSystem;->h:Ljava/util/List;
+    iput-object v5, p0, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/util/List;
 
-    iput-object v3, p0, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/lang/Integer;
+    iput-object v3, p0, Lcom/supercell/id/model/IdConnectedSystem;->j:Ljava/lang/Integer;
 
-    iput-object v2, p0, Lcom/supercell/id/model/IdConnectedSystem;->j:Ljava/lang/Boolean;
+    iput-object v2, p0, Lcom/supercell/id/model/IdConnectedSystem;->k:Ljava/lang/Boolean;
 
     return-void
 .end method
@@ -349,51 +349,51 @@
 
     check-cast p1, Lcom/supercell/id/model/IdConnectedSystem;
 
-    iget-object v0, p0, Lcom/supercell/id/model/IdConnectedSystem;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
 
-    iget-object v1, p1, Lcom/supercell/id/model/IdConnectedSystem;->a:Ljava/lang/String;
+    iget-object v1, p1, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/supercell/id/model/IdConnectedSystem;->b:Ljava/lang/String;
-
-    iget-object v1, p1, Lcom/supercell/id/model/IdConnectedSystem;->b:Ljava/lang/String;
-
-    invoke-static {v0, v1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/supercell/id/model/IdConnectedSystem;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/supercell/id/model/IdConnectedSystem;->h:Ljava/lang/String;
 
-    iget-object v1, p1, Lcom/supercell/id/model/IdConnectedSystem;->h:Ljava/util/List;
+    iget-object v1, p1, Lcom/supercell/id/model/IdConnectedSystem;->h:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/lang/Integer;
-
-    iget-object v1, p1, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/lang/Integer;
-
-    invoke-static {v0, v1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/supercell/id/model/IdConnectedSystem;->j:Ljava/lang/Boolean;
+    iget-object v0, p0, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/util/List;
 
-    iget-object p1, p1, Lcom/supercell/id/model/IdConnectedSystem;->j:Ljava/lang/Boolean;
+    iget-object v1, p1, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/util/List;
 
-    invoke-static {v0, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/supercell/id/model/IdConnectedSystem;->j:Ljava/lang/Integer;
+
+    iget-object v1, p1, Lcom/supercell/id/model/IdConnectedSystem;->j:Ljava/lang/Integer;
+
+    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/supercell/id/model/IdConnectedSystem;->k:Ljava/lang/Boolean;
+
+    iget-object p1, p1, Lcom/supercell/id/model/IdConnectedSystem;->k:Ljava/lang/Boolean;
+
+    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -416,7 +416,7 @@
 .method public hashCode()I
     .locals 3
 
-    iget-object v0, p0, Lcom/supercell/id/model/IdConnectedSystem;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -434,7 +434,7 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/model/IdConnectedSystem;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/model/IdConnectedSystem;->h:Ljava/lang/String;
 
     if-eqz v2, :cond_1
 
@@ -452,7 +452,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/model/IdConnectedSystem;->h:Ljava/util/List;
+    iget-object v2, p0, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/util/List;
 
     if-eqz v2, :cond_2
 
@@ -470,7 +470,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/lang/Integer;
+    iget-object v2, p0, Lcom/supercell/id/model/IdConnectedSystem;->j:Ljava/lang/Integer;
 
     if-eqz v2, :cond_3
 
@@ -488,7 +488,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/model/IdConnectedSystem;->j:Ljava/lang/Boolean;
+    iget-object v2, p0, Lcom/supercell/id/model/IdConnectedSystem;->k:Ljava/lang/Boolean;
 
     if-eqz v2, :cond_4
 
@@ -507,11 +507,11 @@
 
     const-string v0, "IdConnectedSystem(game="
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/model/IdConnectedSystem;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -519,7 +519,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/model/IdConnectedSystem;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/model/IdConnectedSystem;->h:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -527,7 +527,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/model/IdConnectedSystem;->h:Ljava/util/List;
+    iget-object v1, p0, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -535,7 +535,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/lang/Integer;
+    iget-object v1, p0, Lcom/supercell/id/model/IdConnectedSystem;->j:Ljava/lang/Integer;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -543,7 +543,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/model/IdConnectedSystem;->j:Ljava/lang/Boolean;
+    iget-object v1, p0, Lcom/supercell/id/model/IdConnectedSystem;->k:Ljava/lang/Boolean;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -564,27 +564,27 @@
     if-eqz p1, :cond_0
 
     .line 1
-    iget-object p2, p0, Lcom/supercell/id/model/IdConnectedSystem;->a:Ljava/lang/String;
+    iget-object p2, p0, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 2
-    iget-object p2, p0, Lcom/supercell/id/model/IdConnectedSystem;->b:Ljava/lang/String;
+    iget-object p2, p0, Lcom/supercell/id/model/IdConnectedSystem;->h:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 3
-    iget-object p2, p0, Lcom/supercell/id/model/IdConnectedSystem;->h:Ljava/util/List;
+    iget-object p2, p0, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/util/List;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeStringList(Ljava/util/List;)V
 
     .line 4
-    iget-object p2, p0, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/lang/Integer;
+    iget-object p2, p0, Lcom/supercell/id/model/IdConnectedSystem;->j:Ljava/lang/Integer;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeValue(Ljava/lang/Object;)V
 
     .line 5
-    iget-object p2, p0, Lcom/supercell/id/model/IdConnectedSystem;->j:Ljava/lang/Boolean;
+    iget-object p2, p0, Lcom/supercell/id/model/IdConnectedSystem;->k:Ljava/lang/Boolean;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeValue(Ljava/lang/Object;)V
 
@@ -594,7 +594,7 @@
     const-string p1, "dest"
 
     .line 6
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

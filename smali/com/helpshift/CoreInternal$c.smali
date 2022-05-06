@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic a:Landroid/content/Context;
+.field public final synthetic g:Landroid/content/Context;
 
-.field public final synthetic b:Landroid/content/Intent;
+.field public final synthetic h:Landroid/content/Intent;
 
 
 # direct methods
@@ -28,9 +28,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/helpshift/CoreInternal$c;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/helpshift/CoreInternal$c;->g:Landroid/content/Context;
 
-    iput-object p2, p0, Lcom/helpshift/CoreInternal$c;->b:Landroid/content/Intent;
+    iput-object p2, p0, Lcom/helpshift/CoreInternal$c;->h:Landroid/content/Intent;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,18 +49,18 @@
     const-string v2, "Handling push"
 
     .line 1
-    invoke-static {v1, v2, v0, v0}, Lce/z;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v0, v0}, Lie/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     .line 2
     sget-object v0, Lcom/helpshift/CoreInternal;->a:Lcom/helpshift/a$a;
 
-    iget-object v1, p0, Lcom/helpshift/CoreInternal$c;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/helpshift/CoreInternal$c;->g:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/helpshift/CoreInternal$c;->b:Landroid/content/Intent;
+    iget-object v2, p0, Lcom/helpshift/CoreInternal$c;->h:Landroid/content/Intent;
 
-    check-cast v0, Lla/c0;
+    check-cast v0, Lja/c0;
 
-    invoke-virtual {v0, v1, v2}, Lla/c0;->a(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-virtual {v0, v1, v2}, Lja/c0;->a(Landroid/content/Context;Landroid/content/Intent;)V
 
     return-void
 .end method

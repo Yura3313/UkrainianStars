@@ -20,14 +20,14 @@
 
 
 # virtual methods
-.method public abstract K1()Landroid/os/Bundle;
+.method public abstract N1()Landroid/os/Bundle;
 .end method
 
-.method public abstract V1()Ljava/lang/String;
+.method public abstract Y1()Ljava/lang/String;
 .end method
 
-.method public abstract n2()Ljava/lang/String;
+.method public abstract p2()Ljava/lang/String;
 .end method
 
-.method public abstract p1()Ljava/lang/String;
+.method public abstract r1()Ljava/lang/String;
 .end method

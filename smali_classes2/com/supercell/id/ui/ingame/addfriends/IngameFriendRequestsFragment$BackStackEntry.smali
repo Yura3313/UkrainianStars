@@ -25,7 +25,7 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/Class;
+.field public final g:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -61,14 +61,14 @@
     .line 2
     const-class v0, Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment;
 
-    iput-object v0, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$BackStackEntry;->a:Ljava/lang/Class;
+    iput-object v0, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$BackStackEntry;->g:Ljava/lang/Class;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public A(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+.method public B(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -87,13 +87,13 @@
     const-string v0, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0}, Lsc/i;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
+    invoke-static {p1, v0}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    const-class p1, Luc/e0;
+    const-class p1, Lrc/f0;
 
     goto :goto_0
 
@@ -108,14 +108,14 @@
     const-string p1, "mainActivity"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public D(Lcom/supercell/id/ui/MainActivity;III)I
+.method public E(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 0
 
     if-eqz p1, :cond_0
@@ -123,11 +123,11 @@
     const/16 p1, 0x44
 
     .line 1
-    invoke-static {p1}, Lc5/i;->c(I)F
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result p1
 
-    invoke-static {p1}, Lc2/n0;->e(F)I
+    invoke-static {p1}, Lb5/m;->r(F)I
 
     move-result p1
 
@@ -139,7 +139,7 @@
     const-string p1, "mainActivity"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -152,7 +152,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    invoke-static {p2, p3, p4}, Luc/e0;->q1(III)I
+    invoke-static {p2, p3, p4}, Lrc/f0;->q1(III)I
 
     move-result p1
 
@@ -162,14 +162,14 @@
     const-string p1, "mainActivity"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public U(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+.method public T(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -178,7 +178,7 @@
             ")",
             "Ljava/lang/Class<",
             "+",
-            "Luc/g1;",
+            "Lrc/g1;",
             ">;"
         }
     .end annotation
@@ -188,19 +188,19 @@
     const-string v0, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0}, Lsc/i;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
+    invoke-static {p1, v0}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    const-class p1, Luc/z;
+    const-class p1, Lrc/a0;
 
     goto :goto_0
 
     .line 2
     :cond_0
-    const-class p1, Luc/b0;
+    const-class p1, Lrc/c0;
 
     :goto_0
     return-object p1
@@ -209,7 +209,7 @@
     const-string p1, "mainActivity"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -224,7 +224,7 @@
     return v0
 .end method
 
-.method public j()Ljava/lang/Class;
+.method public i()Ljava/lang/Class;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -237,18 +237,18 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$BackStackEntry;->a:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameFriendRequestsFragment$BackStackEntry;->g:Ljava/lang/Class;
 
     return-object v0
 .end method
 
-.method public m0(Lcom/supercell/id/ui/MainActivity;III)I
+.method public k0(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 0
 
     if-eqz p1, :cond_0
 
     .line 1
-    invoke-static {p2, p3, p4}, Luc/e0;->s1(III)I
+    invoke-static {p2, p3, p4}, Lrc/f0;->s1(III)I
 
     move-result p1
 
@@ -258,24 +258,24 @@
     const-string p1, "mainActivity"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public q0(Lcom/supercell/id/ui/MainActivity;III)I
+.method public n0(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 0
 
     const/16 p1, 0x258
 
     .line 1
-    invoke-static {p1}, Lc5/i;->c(I)F
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result p1
 
-    invoke-static {p1}, Lc2/n0;->e(F)I
+    invoke-static {p1}, Lb5/m;->r(F)I
 
     move-result p1
 
@@ -287,7 +287,7 @@
 
     mul-float p1, p1, p2
 
-    invoke-static {p1}, Lc2/n0;->e(F)I
+    invoke-static {p1}, Lb5/m;->r(F)I
 
     move-result p1
 
@@ -300,7 +300,15 @@
     return p1
 .end method
 
-.method public u0(Lcom/supercell/id/ui/MainActivity;)Z
+.method public t()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public t0(Lcom/supercell/id/ui/MainActivity;)Z
     .locals 0
 
     if-eqz p1, :cond_0
@@ -313,19 +321,11 @@
     const-string p1, "mainActivity"
 
     .line 1
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
-.end method
-
-.method public w()Z
-    .locals 1
-
-    const/4 v0, 0x1
-
-    return v0
 .end method
 
 .method public writeToParcel(Landroid/os/Parcel;I)V

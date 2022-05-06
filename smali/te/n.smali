@@ -12,11 +12,11 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lp5/b0;
+    new-instance v0, Lte/w;
 
     const-string v1, "CONDITION_FALSE"
 
-    invoke-direct {v0, v1}, Lp5/b0;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lte/w;-><init>(Ljava/lang/String;)V
 
     sput-object v0, Lte/n;->a:Ljava/lang/Object;
 
@@ -63,7 +63,7 @@
     const-string p0, "$this$unwrap"
 
     .line 2
-    invoke-static {p0}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/MainActivity;->u(Z)V
+    value = Lcom/supercell/id/ui/MainActivity;->v(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,21 +22,21 @@
         "Lke/p<",
         "Lcom/supercell/id/ui/MainActivity;",
         "Lcom/supercell/id/model/IdProfile;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Z
+.field public final synthetic g:Z
 
 
 # direct methods
 .method public constructor <init>(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/supercell/id/ui/MainActivity$c;->a:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/MainActivity$c;->g:Z
 
     const/4 p1, 0x2
 
@@ -62,7 +62,7 @@
     if-eqz p2, :cond_4
 
     .line 2
-    iget-boolean v0, p0, Lcom/supercell/id/ui/MainActivity$c;->a:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/MainActivity$c;->g:Z
 
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
@@ -88,7 +88,7 @@
     :goto_0
     xor-int/2addr v1, v2
 
-    sget-object v4, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v4, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 3
     invoke-virtual {p1}, Landroid/app/Activity;->isFinishing()Z
@@ -101,11 +101,11 @@
 
     .line 4
     :cond_1
-    invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->h()Ljava/util/List;
+    invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->i()Ljava/util/List;
 
     move-result-object v4
 
-    invoke-static {v4}, Lce/l;->Q(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v4}, Lbe/k;->F(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -117,7 +117,7 @@
 
     .line 5
     :cond_2
-    invoke-virtual {p2}, Lcom/supercell/id/model/IdProfile;->m()Z
+    invoke-virtual {p2}, Lcom/supercell/id/model/IdProfile;->k()Z
 
     move-result v4
 
@@ -128,7 +128,7 @@
     .line 6
     new-instance v4, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;
 
-    invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->h()Ljava/util/List;
+    invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->i()Ljava/util/List;
 
     move-result-object v5
 
@@ -136,12 +136,12 @@
 
     aput-object v4, v2, v3
 
-    invoke-virtual {p1, v2}, Lcom/supercell/id/ui/MainActivity;->C([Lcom/supercell/id/ui/BackStack$Entry;)V
+    invoke-virtual {p1, v2}, Lcom/supercell/id/ui/MainActivity;->D([Lcom/supercell/id/ui/BackStack$Entry;)V
 
     .line 7
     :cond_3
     :goto_1
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -149,14 +149,14 @@
     const-string p1, "profile"
 
     .line 8
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_5
     const-string p1, "$receiver"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

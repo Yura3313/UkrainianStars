@@ -164,11 +164,11 @@
     iput-object p3, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->b:Landroid/content/Context;
 
     .line 7
-    sget-object v0, Lcom/google/android/material/internal/j;->a:[I
+    sget-object v0, Lcom/google/android/material/internal/l;->a:[I
 
     const-string v1, "Theme.AppCompat"
 
-    invoke-static {p3, v0, v1}, Lcom/google/android/material/internal/j;->c(Landroid/content/Context;[ILjava/lang/String;)V
+    invoke-static {p3, v0, v1}, Lcom/google/android/material/internal/l;->c(Landroid/content/Context;[ILjava/lang/String;)V
 
     .line 8
     invoke-static {p3}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
@@ -248,7 +248,7 @@
     if-eqz v3, :cond_2
 
     .line 17
-    iget-object v3, v0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->b:Landroid/widget/Button;
+    iget-object v3, v0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->h:Landroid/widget/Button;
 
     invoke-virtual {v3}, Landroid/widget/Button;->getCurrentTextColor()I
 
@@ -257,17 +257,17 @@
     .line 18
     sget v4, Lcom/google/android/material/R$attr;->colorSurface:I
 
-    invoke-static {v0, v4}, Lcom/google/android/gms/ads/r;->b(Landroid/view/View;I)I
+    invoke-static {v0, v4}, Lh4/a;->e(Landroid/view/View;I)I
 
     move-result v4
 
     .line 19
-    invoke-static {v4, v3, v2}, Lcom/google/android/gms/ads/r;->c(IIF)I
+    invoke-static {v4, v3, v2}, Lh4/a;->f(IIF)I
 
     move-result v2
 
     .line 20
-    iget-object v0, v0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->b:Landroid/widget/Button;
+    iget-object v0, v0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->h:Landroid/widget/Button;
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setTextColor(I)V
 
@@ -305,10 +305,10 @@
 
     .line 26
     :cond_3
-    invoke-static {p1, v1}, Lf0/s;->B(Landroid/view/View;I)V
+    invoke-static {p1, v1}, Lf0/r;->B(Landroid/view/View;I)V
 
     .line 27
-    invoke-static {p1, v1}, Lf0/s;->D(Landroid/view/View;I)V
+    invoke-static {p1, v1}, Lf0/r;->D(Landroid/view/View;I)V
 
     .line 28
     invoke-virtual {p1, v1}, Landroid/view/View;->setFitsSystemWindows(Z)V
@@ -318,14 +318,14 @@
 
     invoke-direct {p2, p0}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$c;-><init>(Lcom/google/android/material/snackbar/BaseTransientBottomBar;)V
 
-    invoke-static {p1, p2}, Lf0/s;->E(Landroid/view/View;Lf0/o;)V
+    invoke-static {p1, p2}, Lf0/r;->E(Landroid/view/View;Lf0/n;)V
 
     .line 30
     new-instance p2, Lcom/google/android/material/snackbar/BaseTransientBottomBar$d;
 
     invoke-direct {p2, p0}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$d;-><init>(Lcom/google/android/material/snackbar/BaseTransientBottomBar;)V
 
-    invoke-static {p1, p2}, Lf0/s;->A(Landroid/view/View;Lf0/a;)V
+    invoke-static {p1, p2}, Lf0/r;->A(Landroid/view/View;Lf0/a;)V
 
     const-string p1, "accessibility"
 

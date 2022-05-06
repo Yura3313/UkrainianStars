@@ -89,7 +89,7 @@
     move-result-object p3
 
     .line 4
-    iput-object p3, p2, Lcom/google/android/material/datepicker/f;->f0:Lcom/google/android/material/datepicker/Month;
+    iput-object p3, p2, Lcom/google/android/material/datepicker/f;->g0:Lcom/google/android/material/datepicker/Month;
 
     .line 5
     iget-object p2, p0, Lcom/google/android/material/datepicker/i;->b:Lcom/google/android/material/button/MaterialButton;
@@ -100,15 +100,15 @@
     iget-object p3, p3, Lcom/google/android/material/datepicker/s;->c:Lcom/google/android/material/datepicker/CalendarConstraints;
 
     .line 7
-    iget-object p3, p3, Lcom/google/android/material/datepicker/CalendarConstraints;->a:Lcom/google/android/material/datepicker/Month;
+    iget-object p3, p3, Lcom/google/android/material/datepicker/CalendarConstraints;->g:Lcom/google/android/material/datepicker/Month;
 
     .line 8
-    invoke-virtual {p3, p1}, Lcom/google/android/material/datepicker/Month;->A1(I)Lcom/google/android/material/datepicker/Month;
+    invoke-virtual {p3, p1}, Lcom/google/android/material/datepicker/Month;->L1(I)Lcom/google/android/material/datepicker/Month;
 
     move-result-object p1
 
     .line 9
-    iget-object p1, p1, Lcom/google/android/material/datepicker/Month;->b:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/material/datepicker/Month;->h:Ljava/lang/String;
 
     .line 10
     invoke-virtual {p2, p1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V

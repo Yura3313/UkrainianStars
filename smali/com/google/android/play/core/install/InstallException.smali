@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
 
 # direct methods
@@ -116,7 +116,7 @@
 
     if-eqz p1, :cond_1
 
-    iput p1, p0, Lcom/google/android/play/core/install/InstallException;->a:I
+    iput p1, p0, Lcom/google/android/play/core/install/InstallException;->g:I
 
     return-void
 
@@ -135,7 +135,7 @@
 .method public getErrorCode()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/play/core/install/InstallException;->a:I
+    iget v0, p0, Lcom/google/android/play/core/install/InstallException;->g:I
 
     return v0
 .end method

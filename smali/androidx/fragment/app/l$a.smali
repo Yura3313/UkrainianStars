@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/fragment/app/l;
+.field public final synthetic g:Landroidx/fragment/app/l;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/fragment/app/l$a;->a:Landroidx/fragment/app/l;
+    iput-object p1, p0, Landroidx/fragment/app/l$a;->g:Landroidx/fragment/app/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,13 +44,13 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/l$a;->a:Landroidx/fragment/app/l;
+    iget-object v0, p0, Landroidx/fragment/app/l$a;->g:Landroidx/fragment/app/l;
 
     .line 2
-    iget-object v1, v0, Landroidx/fragment/app/l;->e0:Landroid/content/DialogInterface$OnDismissListener;
+    iget-object v1, v0, Landroidx/fragment/app/l;->f0:Landroid/content/DialogInterface$OnDismissListener;
 
     .line 3
-    iget-object v0, v0, Landroidx/fragment/app/l;->m0:Landroid/app/Dialog;
+    iget-object v0, v0, Landroidx/fragment/app/l;->n0:Landroid/app/Dialog;
 
     .line 4
     invoke-interface {v1, v0}, Landroid/content/DialogInterface$OnDismissListener;->onDismiss(Landroid/content/DialogInterface;)V

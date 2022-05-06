@@ -991,7 +991,7 @@
     const-string p0, "enableSendErrorLog: "
 
     .line 6
-    invoke-static {p0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 

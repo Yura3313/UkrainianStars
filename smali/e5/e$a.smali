@@ -50,19 +50,19 @@
     new-instance v0, Lp5/d;
 
     .line 3
-    invoke-virtual {p1}, Ll5/l;->v()Lm5/c;
+    invoke-virtual {p1}, Ll5/l;->u()Lm5/c;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lm5/c;->n()[B
+    invoke-virtual {v1}, Lm5/c;->m()[B
 
     move-result-object v1
 
-    invoke-virtual {p1}, Ll5/l;->w()Ll5/n;
+    invoke-virtual {p1}, Ll5/l;->v()Ll5/n;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Ll5/n;->t()I
+    invoke-virtual {p1}, Ll5/n;->s()I
 
     move-result p1
 

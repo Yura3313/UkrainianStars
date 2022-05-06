@@ -386,11 +386,14 @@
     move-exception v0
 
     .line 24
+    :try_start_1
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/Thread;->interrupt()V
+    :try_end_1
+    .catch Ljava/lang/SecurityException; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 25
     iget-object v1, p0, Lio/sentry/android/core/ANRWatchDog;->logger:Lio/sentry/ILogger;
@@ -407,6 +410,28 @@
 
     const-string v0, "Interrupted: %s"
 
+    invoke-interface {v1, v2, v0, v3}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    return-void
+
+    .line 26
+    :catch_1
+    iget-object v1, p0, Lio/sentry/android/core/ANRWatchDog;->logger:Lio/sentry/ILogger;
+
+    sget-object v2, Lio/sentry/SentryLevel;->WARNING:Lio/sentry/SentryLevel;
+
+    new-array v3, v6, [Ljava/lang/Object;
+
+    .line 27
+    invoke-virtual {v0}, Ljava/lang/InterruptedException;->getMessage()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v3, v7
+
+    const-string v0, "Failed to interrupt due to SecurityException: %s"
+
+    .line 28
     invoke-interface {v1, v2, v0, v3}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
 
     :cond_9

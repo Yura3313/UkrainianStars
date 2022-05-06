@@ -67,11 +67,11 @@
 
     move-result-object v0
 
-    new-instance v2, Lcom/supercell/titan/l0;
+    new-instance v2, Lcom/supercell/titan/n0;
 
     const/4 v3, 0x1
 
-    invoke-direct {v2, v1, v3}, Lcom/supercell/titan/l0;-><init>(ZZ)V
+    invoke-direct {v2, v1, v3}, Lcom/supercell/titan/n0;-><init>(ZZ)V
 
     invoke-virtual {v0, v2}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -150,14 +150,14 @@
 
     .line 4
     :cond_3
-    sput-object v2, Lcom/supercell/titan/KeyboardDialog;->m:[Landroid/text/InputFilter;
+    sput-object v2, Lcom/supercell/titan/KeyboardDialog;->n:[Landroid/text/InputFilter;
 
     .line 5
-    sget-object p1, Lcom/supercell/titan/KeyboardDialog;->o:Lcom/supercell/titan/KeyboardDialog;
+    sget-object p1, Lcom/supercell/titan/KeyboardDialog;->p:Lcom/supercell/titan/KeyboardDialog;
 
     if-eqz p1, :cond_4
 
-    iget-object p1, p1, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object p1, p1, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/p;
 
     if-eqz p1, :cond_4
 
@@ -185,7 +185,7 @@
     .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 2
-    sget-object p0, Lcom/supercell/titan/KeyboardDialog;->o:Lcom/supercell/titan/KeyboardDialog;
+    sget-object p0, Lcom/supercell/titan/KeyboardDialog;->p:Lcom/supercell/titan/KeyboardDialog;
 
     if-eqz p0, :cond_0
 
@@ -201,9 +201,9 @@
 
     move-result-object p0
 
-    new-instance v1, Lcom/supercell/titan/i;
+    new-instance v1, Lcom/supercell/titan/j;
 
-    invoke-direct {v1, v0}, Lcom/supercell/titan/i;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/supercell/titan/j;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -211,7 +211,7 @@
 
     .line 5
     :cond_0
-    sput-object v0, Lcom/supercell/titan/KeyboardDialog;->l:Ljava/lang/String;
+    sput-object v0, Lcom/supercell/titan/KeyboardDialog;->m:Ljava/lang/String;
 
     :cond_1
     :goto_0

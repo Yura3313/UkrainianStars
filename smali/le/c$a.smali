@@ -18,7 +18,7 @@
 
 
 # static fields
-.field public static final a:Lle/c$a;
+.field public static final g:Lle/c$a;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     invoke-direct {v0}, Lle/c$a;-><init>()V
 
-    sput-object v0, Lle/c$a;->a:Lle/c$a;
+    sput-object v0, Lle/c$a;->g:Lle/c$a;
 
     return-void
 .end method
@@ -53,7 +53,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lle/c$a;->a:Lle/c$a;
+    sget-object v0, Lle/c$a;->g:Lle/c$a;
 
     return-object v0
 .end method

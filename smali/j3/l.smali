@@ -324,7 +324,7 @@
     invoke-direct {v0, p0, v1}, Lv0/f;-><init>(Ljava/lang/Object;I)V
 
     .line 3
-    invoke-static {v0}, Lj3/rc;->b(Lj3/uj0;)Ljava/lang/Object;
+    invoke-static {v0}, Lj3/vc;->b(Lj3/fk0;)Ljava/lang/Object;
 
     move-result-object v0
 

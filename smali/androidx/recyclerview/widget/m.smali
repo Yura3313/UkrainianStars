@@ -274,26 +274,26 @@
     iget-object p2, p0, Landroidx/recyclerview/widget/m;->s:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 32
-    iget-object p3, p2, Landroidx/recyclerview/widget/RecyclerView;->u:Ljava/util/ArrayList;
+    iget-object p3, p2, Landroidx/recyclerview/widget/RecyclerView;->v:Ljava/util/ArrayList;
 
     invoke-virtual {p3, p0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     .line 33
-    iget-object p3, p2, Landroidx/recyclerview/widget/RecyclerView;->v:Landroidx/recyclerview/widget/RecyclerView$p;
+    iget-object p3, p2, Landroidx/recyclerview/widget/RecyclerView;->w:Landroidx/recyclerview/widget/RecyclerView$p;
 
     if-ne p3, p0, :cond_1
 
     const/4 p3, 0x0
 
     .line 34
-    iput-object p3, p2, Landroidx/recyclerview/widget/RecyclerView;->v:Landroidx/recyclerview/widget/RecyclerView$p;
+    iput-object p3, p2, Landroidx/recyclerview/widget/RecyclerView;->w:Landroidx/recyclerview/widget/RecyclerView$p;
 
     .line 35
     :cond_1
     iget-object p2, p0, Landroidx/recyclerview/widget/m;->s:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 36
-    iget-object p2, p2, Landroidx/recyclerview/widget/RecyclerView;->n0:Ljava/util/List;
+    iget-object p2, p2, Landroidx/recyclerview/widget/RecyclerView;->o0:Ljava/util/List;
 
     if-eqz p2, :cond_2
 
@@ -315,7 +315,7 @@
     iget-object p1, p0, Landroidx/recyclerview/widget/m;->s:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 42
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView;->u:Ljava/util/ArrayList;
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView;->v:Ljava/util/ArrayList;
 
     invoke-virtual {p1, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -868,7 +868,7 @@
     .line 11
     iget-object v1, p0, Landroidx/recyclerview/widget/m;->s:Landroidx/recyclerview/widget/RecyclerView;
 
-    sget-object v3, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v3, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 12
     invoke-virtual {v1}, Landroid/view/View;->getLayoutDirection()I
@@ -1132,7 +1132,7 @@
     .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/m;->s:Landroidx/recyclerview/widget/RecyclerView;
 
-    sget-object v1, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 2
     invoke-virtual {v0}, Landroid/view/View;->getLayoutDirection()I

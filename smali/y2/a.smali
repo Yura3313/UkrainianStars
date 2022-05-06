@@ -46,7 +46,7 @@
 
     check-cast p1, La2/w;
 
-    invoke-virtual {p1}, La2/w;->U0()V
+    invoke-virtual {p1}, La2/w;->V0()V
 
     return-void
 .end method

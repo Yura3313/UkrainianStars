@@ -1,70 +1,44 @@
 .class public Lab/a;
 .super Ljava/lang/Object;
-.source "ConversationFlow.java"
+.source "FaqSearchIndex.java"
 
 # interfaces
-.implements Lab/f;
+.implements Ljava/io/Serializable;
 
 
 # instance fields
-.field public a:Lpa/b;
+.field public final g:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/util/List<",
+            "Lab/b;",
+            ">;>;"
+        }
+    .end annotation
+.end field
 
 
-# virtual methods
-.method public a()V
-    .locals 3
+# direct methods
+.method public constructor <init>(Ljava/util/Map;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/util/List<",
+            "Lab/b;",
+            ">;>;)V"
+        }
+    .end annotation
 
     .line 1
-    new-instance v0, Ljava/util/HashMap;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
-
-    const-string v1, "enableContactUs"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-virtual {v0, v1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string v1, "customContactUsFlows"
-
-    .line 3
-    invoke-virtual {v0, v1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 4
-    invoke-static {v0}, Lla/e0;->a(Ljava/util/HashMap;)Landroid/os/Bundle;
-
-    move-result-object v0
-
-    .line 5
-    iget-object v1, p0, Lab/a;->a:Lpa/b;
-
-    const/4 v2, 0x1
-
-    .line 6
-    iput-boolean v2, v1, Lpa/b;->i:Z
-
-    .line 7
-    iput-object v0, v1, Lpa/b;->e:Landroid/os/Bundle;
-
-    .line 8
-    invoke-virtual {v1}, Lpa/b;->h()V
+    iput-object p1, p0, Lab/a;->g:Ljava/util/Map;
 
     return-void
-.end method
-
-.method public b()Ljava/lang/String;
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public c()I
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
 .end method

@@ -1,31 +1,63 @@
-.class public final Lj3/cx;
+.class public final synthetic Lj3/cx;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
-
-
-# instance fields
-.field public final a:Lj3/am0;
-
-.field public final b:Lj3/fx;
-
-.field public final c:Lj3/ox;
+.source "R8$$SyntheticClass"
 
 
 # direct methods
-.method public constructor <init>(Lj3/am0;Lj3/fx;Lj3/ox;)V
+.method public static a(I)I
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    packed-switch p0, :pswitch_data_0
 
-    .line 2
-    iput-object p1, p0, Lj3/cx;->a:Lj3/am0;
+    const/4 p0, 0x0
 
-    .line 3
-    iput-object p2, p0, Lj3/cx;->b:Lj3/fx;
+    return p0
 
-    .line 4
-    iput-object p3, p0, Lj3/cx;->c:Lj3/ox;
+    :pswitch_0
+    const/4 p0, 0x7
 
-    return-void
+    return p0
+
+    :pswitch_1
+    const/4 p0, 0x6
+
+    return p0
+
+    :pswitch_2
+    const/4 p0, 0x5
+
+    return p0
+
+    :pswitch_3
+    const/4 p0, 0x4
+
+    return p0
+
+    :pswitch_4
+    const/4 p0, 0x3
+
+    return p0
+
+    :pswitch_5
+    const/4 p0, 0x2
+
+    return p0
+
+    :pswitch_6
+    const/4 p0, 0x1
+
+    return p0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

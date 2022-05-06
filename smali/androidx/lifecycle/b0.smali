@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public b(Landroidx/lifecycle/w;)V
+.method public b(Landroidx/lifecycle/x;)V
     .locals 0
 
     return-void

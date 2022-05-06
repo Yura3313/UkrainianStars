@@ -1,68 +1,174 @@
-.class public interface abstract Lse/d1;
-.super Ljava/lang/Object;
-.source "Job.kt"
+.class public abstract Lse/d1;
+.super Lse/t;
+.source "JobSupport.kt"
 
 # interfaces
-.implements Lde/f$b;
+.implements Lse/m0;
+.implements Lse/w0;
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
+.annotation system Ldalvik/annotation/Signature;
     value = {
-        Lse/d1$a;,
-        Lse/d1$b;
+        "<J::",
+        "Lse/b1;",
+        ">",
+        "Lse/t;",
+        "Lse/m0;",
+        "Lse/w0;"
     }
 .end annotation
 
 
-# static fields
-.field public static final g:Lse/d1$b;
+# instance fields
+.field public final j:Lse/b1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TJ;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lse/b1;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TJ;)V"
+        }
+    .end annotation
 
-    sget-object v0, Lse/d1$b;->a:Lse/d1$b;
+    if-eqz p1, :cond_0
 
-    sput-object v0, Lse/d1;->g:Lse/d1$b;
+    .line 1
+    invoke-direct {p0}, Lse/t;-><init>()V
+
+    iput-object p1, p0, Lse/d1;->j:Lse/b1;
 
     return-void
+
+    :cond_0
+    const-string p1, "job"
+
+    .line 2
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
 .end method
 
 
 # virtual methods
-.method public abstract e()Ljava/util/concurrent/CancellationException;
+.method public b()Lse/j1;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
 .end method
 
-.method public abstract f(ZZLke/l;)Lse/o0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(ZZ",
-            "Lke/l<",
-            "-",
-            "Ljava/lang/Throwable;",
-            "Lbe/n;",
-            ">;)",
-            "Lse/o0;"
-        }
-    .end annotation
+.method public dispose()V
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lse/d1;->j:Lse/b1;
+
+    if-eqz v0, :cond_6
+
+    check-cast v0, Lse/e1;
+
+    .line 2
+    :cond_0
+    invoke-virtual {v0}, Lse/e1;->y()Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 3
+    instance-of v2, v1, Lse/d1;
+
+    if-eqz v2, :cond_4
+
+    if-eq v1, p0, :cond_1
+
+    goto :goto_1
+
+    .line 4
+    :cond_1
+    sget-object v2, Lse/e1;->g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+
+    .line 5
+    sget-object v3, Lse/f1;->c:Lse/o0;
+
+    .line 6
+    :cond_2
+    invoke-virtual {v2, v0, v1, v3}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :cond_3
+    invoke-virtual {v2, v0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    if-eq v4, v1, :cond_2
+
+    const/4 v1, 0x0
+
+    :goto_0
+    if-eqz v1, :cond_0
+
+    goto :goto_1
+
+    .line 7
+    :cond_4
+    instance-of v0, v1, Lse/w0;
+
+    if-eqz v0, :cond_5
+
+    .line 8
+    check-cast v1, Lse/w0;
+
+    invoke-interface {v1}, Lse/w0;->b()Lse/j1;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_5
+
+    invoke-virtual {p0}, Lte/o;->i()Z
+
+    :cond_5
+    :goto_1
+    return-void
+
+    .line 9
+    :cond_6
+    new-instance v0, Lkotlin/TypeCastException;
+
+    const-string v1, "null cannot be cast to non-null type kotlinx.coroutines.JobSupport"
+
+    invoke-direct {v0, v1}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
+
+    goto :goto_3
+
+    :goto_2
+    throw v0
+
+    :goto_3
+    goto :goto_2
 .end method
 
-.method public abstract i(Lse/l;)Lse/j;
-.end method
+.method public isActive()Z
+    .locals 1
 
-.method public abstract isActive()Z
-.end method
+    const/4 v0, 0x1
 
-.method public abstract isCancelled()Z
-.end method
-
-.method public abstract n()Z
-.end method
-
-.method public abstract o(Ljava/util/concurrent/CancellationException;)V
-.end method
-
-.method public abstract start()Z
+    return v0
 .end method

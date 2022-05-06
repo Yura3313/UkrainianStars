@@ -14,29 +14,27 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lc6/k;
+.field public static final enum g:Lc6/k;
 
-.field public static final enum BYTE_SEGMENTS:Lc6/k;
+.field public static final enum h:Lc6/k;
 
-.field public static final enum ERROR_CORRECTION_LEVEL:Lc6/k;
+.field public static final enum i:Lc6/k;
 
-.field public static final enum ISSUE_NUMBER:Lc6/k;
+.field public static final enum j:Lc6/k;
 
-.field public static final enum ORIENTATION:Lc6/k;
+.field public static final enum k:Lc6/k;
 
-.field public static final enum OTHER:Lc6/k;
+.field public static final enum l:Lc6/k;
 
-.field public static final enum PDF417_EXTRA_METADATA:Lc6/k;
+.field public static final enum m:Lc6/k;
 
-.field public static final enum POSSIBLE_COUNTRY:Lc6/k;
+.field public static final enum n:Lc6/k;
 
-.field public static final enum STRUCTURED_APPEND_PARITY:Lc6/k;
+.field public static final enum o:Lc6/k;
 
-.field public static final enum STRUCTURED_APPEND_SEQUENCE:Lc6/k;
+.field public static final enum p:Lc6/k;
 
-.field public static final enum SUGGESTED_PRICE:Lc6/k;
-
-.field public static final enum UPC_EAN_EXTENSION:Lc6/k;
+.field public static final synthetic q:[Lc6/k;
 
 
 # direct methods
@@ -52,8 +50,6 @@
 
     invoke-direct {v0, v1, v2}, Lc6/k;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lc6/k;->OTHER:Lc6/k;
-
     .line 2
     new-instance v1, Lc6/k;
 
@@ -63,7 +59,7 @@
 
     invoke-direct {v1, v3, v4}, Lc6/k;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lc6/k;->ORIENTATION:Lc6/k;
+    sput-object v1, Lc6/k;->g:Lc6/k;
 
     .line 3
     new-instance v3, Lc6/k;
@@ -74,7 +70,7 @@
 
     invoke-direct {v3, v5, v6}, Lc6/k;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Lc6/k;->BYTE_SEGMENTS:Lc6/k;
+    sput-object v3, Lc6/k;->h:Lc6/k;
 
     .line 4
     new-instance v5, Lc6/k;
@@ -85,7 +81,7 @@
 
     invoke-direct {v5, v7, v8}, Lc6/k;-><init>(Ljava/lang/String;I)V
 
-    sput-object v5, Lc6/k;->ERROR_CORRECTION_LEVEL:Lc6/k;
+    sput-object v5, Lc6/k;->i:Lc6/k;
 
     .line 5
     new-instance v7, Lc6/k;
@@ -96,7 +92,7 @@
 
     invoke-direct {v7, v9, v10}, Lc6/k;-><init>(Ljava/lang/String;I)V
 
-    sput-object v7, Lc6/k;->ISSUE_NUMBER:Lc6/k;
+    sput-object v7, Lc6/k;->j:Lc6/k;
 
     .line 6
     new-instance v9, Lc6/k;
@@ -107,7 +103,7 @@
 
     invoke-direct {v9, v11, v12}, Lc6/k;-><init>(Ljava/lang/String;I)V
 
-    sput-object v9, Lc6/k;->SUGGESTED_PRICE:Lc6/k;
+    sput-object v9, Lc6/k;->k:Lc6/k;
 
     .line 7
     new-instance v11, Lc6/k;
@@ -118,7 +114,7 @@
 
     invoke-direct {v11, v13, v14}, Lc6/k;-><init>(Ljava/lang/String;I)V
 
-    sput-object v11, Lc6/k;->POSSIBLE_COUNTRY:Lc6/k;
+    sput-object v11, Lc6/k;->l:Lc6/k;
 
     .line 8
     new-instance v13, Lc6/k;
@@ -129,7 +125,7 @@
 
     invoke-direct {v13, v15, v14}, Lc6/k;-><init>(Ljava/lang/String;I)V
 
-    sput-object v13, Lc6/k;->UPC_EAN_EXTENSION:Lc6/k;
+    sput-object v13, Lc6/k;->m:Lc6/k;
 
     .line 9
     new-instance v15, Lc6/k;
@@ -140,7 +136,7 @@
 
     invoke-direct {v15, v14, v12}, Lc6/k;-><init>(Ljava/lang/String;I)V
 
-    sput-object v15, Lc6/k;->PDF417_EXTRA_METADATA:Lc6/k;
+    sput-object v15, Lc6/k;->n:Lc6/k;
 
     .line 10
     new-instance v14, Lc6/k;
@@ -151,7 +147,7 @@
 
     invoke-direct {v14, v12, v10}, Lc6/k;-><init>(Ljava/lang/String;I)V
 
-    sput-object v14, Lc6/k;->STRUCTURED_APPEND_SEQUENCE:Lc6/k;
+    sput-object v14, Lc6/k;->o:Lc6/k;
 
     .line 11
     new-instance v12, Lc6/k;
@@ -162,7 +158,7 @@
 
     invoke-direct {v12, v10, v8}, Lc6/k;-><init>(Ljava/lang/String;I)V
 
-    sput-object v12, Lc6/k;->STRUCTURED_APPEND_PARITY:Lc6/k;
+    sput-object v12, Lc6/k;->p:Lc6/k;
 
     const/16 v10, 0xb
 
@@ -205,12 +201,12 @@
     aput-object v12, v10, v8
 
     .line 12
-    sput-object v10, Lc6/k;->$VALUES:[Lc6/k;
+    sput-object v10, Lc6/k;->q:[Lc6/k;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;I)V
+.method public constructor <init>(Ljava/lang/String;I)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -243,7 +239,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lc6/k;->$VALUES:[Lc6/k;
+    sget-object v0, Lc6/k;->q:[Lc6/k;
 
     invoke-virtual {v0}, [Lc6/k;->clone()Ljava/lang/Object;
 

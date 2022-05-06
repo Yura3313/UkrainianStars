@@ -273,7 +273,7 @@
     invoke-virtual {p0, v0}, Lcom/google/protobuf/CodedOutputStream$c;->a0(I)V
 
     .line 2
-    invoke-virtual {p1, p0}, Lcom/google/protobuf/i;->t(Lcom/google/protobuf/h;)V
+    invoke-virtual {p1, p0}, Lcom/google/protobuf/i;->s(Lcom/google/protobuf/h;)V
 
     return-void
 .end method
@@ -693,7 +693,7 @@
     return-void
 .end method
 
-.method public final S(ILcom/google/protobuf/q0;Lcom/google/protobuf/j1;)V
+.method public final S(ILcom/google/protobuf/q0;Lcom/google/protobuf/i1;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -713,7 +713,7 @@
 
     check-cast p1, Lcom/google/protobuf/a;
 
-    invoke-virtual {p1, p3}, Lcom/google/protobuf/a;->getSerializedSize(Lcom/google/protobuf/j1;)I
+    invoke-virtual {p1, p3}, Lcom/google/protobuf/a;->getSerializedSize(Lcom/google/protobuf/i1;)I
 
     move-result p1
 
@@ -722,7 +722,7 @@
     .line 3
     iget-object p1, p0, Lcom/google/protobuf/CodedOutputStream;->a:Lcom/google/protobuf/l;
 
-    invoke-interface {p3, p2, p1}, Lcom/google/protobuf/j1;->h(Ljava/lang/Object;Lcom/google/protobuf/z1;)V
+    invoke-interface {p3, p2, p1}, Lcom/google/protobuf/i1;->h(Ljava/lang/Object;Lcom/google/protobuf/y1;)V
 
     return-void
 .end method
@@ -890,7 +890,7 @@
 
     move-result v4
 
-    invoke-static {p1, v3, v1, v4}, Lcom/google/protobuf/w1;->d(Ljava/lang/CharSequence;[BII)I
+    invoke-static {p1, v3, v1, v4}, Lcom/google/protobuf/v1;->d(Ljava/lang/CharSequence;[BII)I
 
     move-result v1
 
@@ -911,7 +911,7 @@
 
     .line 10
     :cond_0
-    invoke-static {p1}, Lcom/google/protobuf/w1;->e(Ljava/lang/CharSequence;)I
+    invoke-static {p1}, Lcom/google/protobuf/v1;->e(Ljava/lang/CharSequence;)I
 
     move-result v1
 
@@ -927,13 +927,13 @@
 
     move-result v3
 
-    invoke-static {p1, v1, v2, v3}, Lcom/google/protobuf/w1;->d(Ljava/lang/CharSequence;[BII)I
+    invoke-static {p1, v1, v2, v3}, Lcom/google/protobuf/v1;->d(Ljava/lang/CharSequence;[BII)I
 
     move-result v1
 
     iput v1, p0, Lcom/google/protobuf/CodedOutputStream$c;->f:I
     :try_end_0
-    .catch Lcom/google/protobuf/w1$d; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Lcom/google/protobuf/v1$d; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
@@ -955,7 +955,7 @@
     iput v0, p0, Lcom/google/protobuf/CodedOutputStream$c;->f:I
 
     .line 15
-    invoke-virtual {p0, p1, v1}, Lcom/google/protobuf/CodedOutputStream;->F(Ljava/lang/String;Lcom/google/protobuf/w1$d;)V
+    invoke-virtual {p0, p1, v1}, Lcom/google/protobuf/CodedOutputStream;->F(Ljava/lang/String;Lcom/google/protobuf/v1$d;)V
 
     :goto_0
     return-void
@@ -1060,7 +1060,7 @@
 
     int-to-byte p1, p1
 
-    invoke-static {v0, v1, v2, p1}, Lcom/google/protobuf/v1;->u([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lcom/google/protobuf/u1;->u([BJB)V
 
     return-void
 
@@ -1080,7 +1080,7 @@
 
     int-to-byte v3, v3
 
-    invoke-static {v0, v1, v2, v3}, Lcom/google/protobuf/v1;->u([BJB)V
+    invoke-static {v0, v1, v2, v3}, Lcom/google/protobuf/u1;->u([BJB)V
 
     ushr-int/lit8 p1, p1, 0x7
 
@@ -1101,7 +1101,7 @@
 
     int-to-byte p1, p1
 
-    invoke-static {v0, v1, v2, p1}, Lcom/google/protobuf/v1;->u([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lcom/google/protobuf/u1;->u([BJB)V
 
     return-void
 
@@ -1121,7 +1121,7 @@
 
     int-to-byte v3, v3
 
-    invoke-static {v0, v1, v2, v3}, Lcom/google/protobuf/v1;->u([BJB)V
+    invoke-static {v0, v1, v2, v3}, Lcom/google/protobuf/u1;->u([BJB)V
 
     ushr-int/lit8 p1, p1, 0x7
 
@@ -1142,7 +1142,7 @@
 
     int-to-byte p1, p1
 
-    invoke-static {v0, v1, v2, p1}, Lcom/google/protobuf/v1;->u([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lcom/google/protobuf/u1;->u([BJB)V
 
     return-void
 
@@ -1162,7 +1162,7 @@
 
     int-to-byte v3, v3
 
-    invoke-static {v0, v1, v2, v3}, Lcom/google/protobuf/v1;->u([BJB)V
+    invoke-static {v0, v1, v2, v3}, Lcom/google/protobuf/u1;->u([BJB)V
 
     ushr-int/lit8 p1, p1, 0x7
 
@@ -1183,7 +1183,7 @@
 
     int-to-byte p1, p1
 
-    invoke-static {v0, v1, v2, p1}, Lcom/google/protobuf/v1;->u([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lcom/google/protobuf/u1;->u([BJB)V
 
     return-void
 
@@ -1203,7 +1203,7 @@
 
     int-to-byte v3, v3
 
-    invoke-static {v0, v1, v2, v3}, Lcom/google/protobuf/v1;->u([BJB)V
+    invoke-static {v0, v1, v2, v3}, Lcom/google/protobuf/u1;->u([BJB)V
 
     ushr-int/lit8 p1, p1, 0x7
 
@@ -1220,7 +1220,7 @@
 
     int-to-byte p1, p1
 
-    invoke-static {v0, v1, v2, p1}, Lcom/google/protobuf/v1;->u([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lcom/google/protobuf/u1;->u([BJB)V
 
     return-void
 
@@ -1397,7 +1397,7 @@
 
     int-to-byte p1, p2
 
-    invoke-static {v0, v1, v2, p1}, Lcom/google/protobuf/v1;->u([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lcom/google/protobuf/u1;->u([BJB)V
 
     return-void
 
@@ -1421,7 +1421,7 @@
 
     int-to-byte v8, v8
 
-    invoke-static {v0, v6, v7, v8}, Lcom/google/protobuf/v1;->u([BJB)V
+    invoke-static {v0, v6, v7, v8}, Lcom/google/protobuf/u1;->u([BJB)V
 
     ushr-long/2addr p1, v1
 

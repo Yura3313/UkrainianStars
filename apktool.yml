@@ -1,23 +1,22 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: bs_v42_349.apk
+apkFileName: 43.233_4mods.apk
 compressionType: false
 doNotCompress:
 - resources.arsc
-- png
-- jpg
-- ogg
 - assets/sentry-debug-meta.properties
 - assets/badge/default.edges
+- png
+- ogg
 - assets/sc/background_basic.sc
 - assets/sc/background_basic_tex.sc
-- assets/sc/background_biodome.sc
-- assets/sc/background_biodome_tex.sc
-- assets/sc/background_easter22.sc
-- assets/sc/background_easter22_tex.sc
-- assets/sc/background_lny22.sc
-- assets/sc/background_lny22_tex.sc
+- assets/sc/background_gw22.sc
+- assets/sc/background_gw22_tex.sc
 - assets/sc/background_ramadan22.sc
 - assets/sc/background_ramadan22_tex.sc
+- assets/sc/background_stuntshow.sc
+- assets/sc/background_stuntshow_tex.sc
+- assets/sc/background_villains.sc
+- assets/sc/background_villains_tex.sc
 - assets/sc/events.sc
 - assets/sc/events_tex.sc
 - assets/sc/loading.sc
@@ -59,10 +58,10 @@ doNotCompress:
 - assets/sc3d/barkeep_geo.scw
 - assets/sc3d/barley_banker_geo.scw
 - assets/sc3d/barley_banker_tex.ktx
+- assets/sc3d/barley_drunken_master_tex.ktx
 - assets/sc3d/barley_drunkenmaster_geo.glb
 - assets/sc3d/barley_drunkenmaster_lose.glb
 - assets/sc3d/barley_drunkenmaster_win.glb
-- assets/sc3d/barley_drunken_master_tex.ktx
 - assets/sc3d/barley_gold_tex.ktx
 - assets/sc3d/barley_lumberjack_geo.scw
 - assets/sc3d/barley_lumberjack_tex.ktx
@@ -80,9 +79,6 @@ doNotCompress:
 - assets/sc3d/bbox_12.scw
 - assets/sc3d/bbox_l.ktx
 - assets/sc3d/bbox_m.ktx
-- assets/sc3d/bear_koala_geo.scw
-- assets/sc3d/bear_reindeer_geo.scw
-- assets/sc3d/bear_shiba_geo.scw
 - assets/sc3d/bea_archvillain_geo.glb
 - assets/sc3d/bea_archvillain_tex.ktx
 - assets/sc3d/bea_archvillain_win.glb
@@ -91,9 +87,9 @@ doNotCompress:
 - assets/sc3d/bea_bug_tex.ktx
 - assets/sc3d/bea_bug_win.glb
 - assets/sc3d/bea_geo.scw
+- assets/sc3d/bea_gold_tex.ktx
 - assets/sc3d/bea_goldcat_geo.glb
 - assets/sc3d/bea_goldcat_tex.ktx
-- assets/sc3d/bea_gold_tex.ktx
 - assets/sc3d/bea_ladybug_geo.scw
 - assets/sc3d/bea_ladybug_tex.ktx
 - assets/sc3d/bea_luckycat_geo.glb
@@ -102,6 +98,9 @@ doNotCompress:
 - assets/sc3d/bea_luckycat_win.glb
 - assets/sc3d/bea_silver_tex.ktx
 - assets/sc3d/bea_tex.ktx
+- assets/sc3d/bear_koala_geo.scw
+- assets/sc3d/bear_reindeer_geo.scw
+- assets/sc3d/bear_shiba_geo.scw
 - assets/sc3d/belle_boss_geo.glb
 - assets/sc3d/belle_boss_lose.glb
 - assets/sc3d/belle_boss_tex.ktx
@@ -122,15 +121,11 @@ doNotCompress:
 - assets/sc3d/bgr_beach.ktx
 - assets/sc3d/bgr_beach_brawl_ball.scw
 - assets/sc3d/bgr_beach_brawl_ball_ground.scw
-- assets/sc3d/bgr_biodome.ktx
-- assets/sc3d/bgr_biodome.scw
 - assets/sc3d/bgr_canyon.scw
 - assets/sc3d/bgr_canyon_cactus.ktx
 - assets/sc3d/bgr_canyon_showdown.scw
 - assets/sc3d/bgr_canyon_showdown_ground.scw
 - assets/sc3d/bgr_canyon_terrain.ktx
-- assets/sc3d/bgr_fighting_game.ktx
-- assets/sc3d/bgr_fighting_game.scw
 - assets/sc3d/bgr_grassfield.scw
 - assets/sc3d/bgr_jungle_terrain.ktx
 - assets/sc3d/bgr_mine.scw
@@ -163,8 +158,6 @@ doNotCompress:
 - assets/sc3d/bibi_warrior_win.glb
 - assets/sc3d/bibi_zombibi_geo.scw
 - assets/sc3d/bibi_zombibi_tex.ktx
-- assets/sc3d/bossbot_geo.scw
-- assets/sc3d/bossbot_tex.ktx
 - assets/sc3d/bo_demonic_geo.scw
 - assets/sc3d/bo_demonic_tex.ktx
 - assets/sc3d/bo_demonic_win.scw
@@ -187,6 +180,8 @@ doNotCompress:
 - assets/sc3d/bo_wasp_lose.glb
 - assets/sc3d/bo_wasp_tex.ktx
 - assets/sc3d/bo_wasp_win.glb
+- assets/sc3d/bossbot_geo.scw
+- assets/sc3d/bossbot_tex.ktx
 - assets/sc3d/brock_beach_geo.scw
 - assets/sc3d/brock_beach_tex.ktx
 - assets/sc3d/brock_boombox_geo.scw
@@ -218,13 +213,13 @@ doNotCompress:
 - assets/sc3d/bull_ox_geo.scw
 - assets/sc3d/bull_ox_tex.ktx
 - assets/sc3d/bull_silver_tex.ktx
-- assets/sc3d/bull_terminator_geo.glb
-- assets/sc3d/bull_terminator_lose.glb
-- assets/sc3d/bull_terminator_tex.ktx
 - assets/sc3d/bull_termina_bull_lose.glb
 - assets/sc3d/bull_termina_bull_portrait.glb
 - assets/sc3d/bull_termina_bull_win.glb
 - assets/sc3d/bull_termina_portrait.glb
+- assets/sc3d/bull_terminator_geo.glb
+- assets/sc3d/bull_terminator_lose.glb
+- assets/sc3d/bull_terminator_tex.ktx
 - assets/sc3d/bull_tex_01.ktx
 - assets/sc3d/bull_viking_geo.scw
 - assets/sc3d/bull_viking_tex.ktx
@@ -393,7 +388,6 @@ doNotCompress:
 - assets/sc3d/emz_gold_tex.ktx
 - assets/sc3d/emz_silver_tex.ktx
 - assets/sc3d/emz_tex.ktx
-- assets/sc3d/evee_lose_01.glb
 - assets/sc3d/eve_geo.glb
 - assets/sc3d/eve_lose.glb
 - assets/sc3d/eve_space_cactus_geo.glb
@@ -402,6 +396,7 @@ doNotCompress:
 - assets/sc3d/eve_space_cactus_win.glb
 - assets/sc3d/eve_tex.ktx
 - assets/sc3d/eve_win.glb
+- assets/sc3d/evee_lose_01.glb
 - assets/sc3d/fang_fireball_geo.glb
 - assets/sc3d/fang_fireball_lose.glb
 - assets/sc3d/fang_fireball_tex.ktx
@@ -411,7 +406,6 @@ doNotCompress:
 - assets/sc3d/fang_tex.ktx
 - assets/sc3d/fang_win.glb
 - assets/sc3d/fastmeleebot_tex.ktx
-- assets/sc3d/fence_biodome.scw
 - assets/sc3d/frank_caveman_01.ktx
 - assets/sc3d/frank_caveman_geo.scw
 - assets/sc3d/frank_dj_geo.scw
@@ -421,10 +415,10 @@ doNotCompress:
 - assets/sc3d/frank_mortuary_env_loop.scw
 - assets/sc3d/frank_silver_tex.ktx
 - assets/sc3d/frank_tex.ktx
-- assets/sc3d/frank_xmasparty_tex.ktx
 - assets/sc3d/frank_xmas_geo.scw
 - assets/sc3d/frank_xmas_lose.scw
 - assets/sc3d/frank_xmas_win.scw
+- assets/sc3d/frank_xmasparty_tex.ktx
 - assets/sc3d/gale_geo.scw
 - assets/sc3d/gale_gold_tex.ktx
 - assets/sc3d/gale_nutcracker_geo.scw
@@ -483,8 +477,6 @@ doNotCompress:
 - assets/sc3d/jacky_jetski_win.glb
 - assets/sc3d/jacky_silver_tex.ktx
 - assets/sc3d/jacky_tex.ktx
-- assets/sc3d/jessiejessie_thief_lose.glb
-- assets/sc3d/jessiejessie_thief_win.glb
 - assets/sc3d/jessie_geo.glb
 - assets/sc3d/jessie_geo.scw
 - assets/sc3d/jessie_gold_tex.ktx
@@ -505,6 +497,8 @@ doNotCompress:
 - assets/sc3d/jessie_thief_win.glb
 - assets/sc3d/jessie_turret_geo.glb
 - assets/sc3d/jessie_win.glb
+- assets/sc3d/jessiejessie_thief_lose.glb
+- assets/sc3d/jessiejessie_thief_win.glb
 - assets/sc3d/kaiju_boss_geo.glb
 - assets/sc3d/kaiju_boss_tex.ktx
 - assets/sc3d/king_lou_geo.scw
@@ -523,7 +517,6 @@ doNotCompress:
 - assets/sc3d/leon_wolf_win.scw
 - assets/sc3d/lolla_chola_geo.glb
 - assets/sc3d/lolla_chola_lose.glb
-- assets/sc3d/lolla_chola_tex.astc
 - assets/sc3d/lolla_chola_tex.ktx
 - assets/sc3d/lolla_chola_win.glb
 - assets/sc3d/lolla_geo.glb
@@ -665,9 +658,9 @@ doNotCompress:
 - assets/sc3d/pam_turret_red_tex.ktx
 - assets/sc3d/pam_win.scw
 - assets/sc3d/peep_line_friends_geo.scw
-- assets/sc3d/penny_bunnydark_tex.ktx
 - assets/sc3d/penny_bunny_geo.scw
 - assets/sc3d/penny_bunny_tex.ktx
+- assets/sc3d/penny_bunnydark_tex.ktx
 - assets/sc3d/penny_darkbunny_geo.scw
 - assets/sc3d/penny_elf_geo.scw
 - assets/sc3d/penny_elf_tex.ktx
@@ -950,6 +943,7 @@ doNotCompress:
 - assets/sc3d/turret_summertime_tex.ktx
 - assets/sc3d/wally_wall.scw
 - assets/sc3d/wally_wall_weird.scw
+- jpg
 isFrameworkApk: false
 packageInfo:
   forcedPackageId: '127'
@@ -1550,5 +1544,5 @@ usesFramework:
   tag: null
 version: 2.5.0
 versionInfo:
-  versionCode: '42333'
-  versionName: '42.333'
+  versionCode: '43229'
+  versionName: '43.229'

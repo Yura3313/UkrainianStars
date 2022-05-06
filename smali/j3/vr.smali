@@ -1,143 +1,91 @@
 .class public final Lj3/vr;
-.super Lj3/ts;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Li1/k;
+.implements Lj3/rv0;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lj3/ts<",
-        "Li1/k;",
-        ">;",
-        "Li1/k;"
-    }
-.end annotation
+# instance fields
+.field public final synthetic a:I
+
+.field public final b:Lj3/vv0;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Set;)V
+.method public synthetic constructor <init>(Lj3/vv0;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Set<",
-            "Lj3/rt<",
-            "Li1/k;",
-            ">;>;)V"
-        }
-    .end annotation
 
     .line 1
-    invoke-direct {p0, p1}, Lj3/ts;-><init>(Ljava/util/Set;)V
+    iput p2, p0, Lj3/vr;->a:I
+
+    iput-object p1, p0, Lj3/vr;->b:Lj3/vv0;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
+.end method
+
+.method public static a(Lj3/vv0;)Lj3/vr;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lj3/vr;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Lj3/vr;-><init>(Lj3/vv0;I)V
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final declared-synchronized M()V
-    .locals 1
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 2
 
-    monitor-enter p0
+    iget v0, p0, Lj3/vr;->a:I
 
-    .line 1
-    :try_start_0
-    sget-object v0, Lr5/a;->h:Lj3/vs;
+    packed-switch v0, :pswitch_data_0
 
-    invoke-virtual {p0, v0}, Lj3/ts;->E0(Lj3/vs;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 2
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public final declared-synchronized T()V
-    .locals 1
-
-    monitor-enter p0
+    goto :goto_0
 
     .line 1
-    :try_start_0
-    sget-object v0, Lj3/uo0;->b:Lj3/vs;
+    :pswitch_0
+    iget-object v0, p0, Lj3/vr;->b:Lj3/vv0;
 
-    invoke-virtual {p0, v0}, Lj3/ts;->E0(Lj3/vs;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    .line 2
-    monitor-exit p0
+    move-result-object v0
 
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public final declared-synchronized onPause()V
-    .locals 1
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    sget-object v0, Lj3/sw0;->a:Lj3/vs;
-
-    invoke-virtual {p0, v0}, Lj3/ts;->E0(Lj3/vs;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    check-cast v0, Ljava/util/Set;
 
     .line 2
-    monitor-exit p0
+    new-instance v1, Lj3/tr;
 
-    return-void
+    invoke-direct {v1, v0}, Lj3/tr;-><init>(Ljava/util/Set;)V
 
-    :catchall_0
-    move-exception v0
+    return-object v1
 
-    monitor-exit p0
+    .line 3
+    :goto_0
+    iget-object v0, p0, Lj3/vr;->b:Lj3/vv0;
 
-    throw v0
-.end method
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-.method public final declared-synchronized onResume()V
-    .locals 1
+    move-result-object v0
 
-    monitor-enter p0
+    check-cast v0, Lj3/zz;
 
-    .line 1
-    :try_start_0
-    sget-object v0, Lj3/vn0;->a:Lj3/vs;
+    .line 4
+    new-instance v1, Lj3/c00;
 
-    invoke-virtual {p0, v0}, Lj3/ts;->E0(Lj3/vs;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-direct {v1, v0}, Lj3/c00;-><init>(Lj3/zz;)V
 
-    .line 2
-    monitor-exit p0
+    return-object v1
 
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

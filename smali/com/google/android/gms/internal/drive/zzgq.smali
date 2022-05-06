@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/drive/query/Query;
+.field public final g:Lcom/google/android/gms/drive/query/Query;
 
 
 # direct methods
@@ -39,7 +39,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzgq;->a:Lcom/google/android/gms/drive/query/Query;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzgq;->g:Lcom/google/android/gms/drive/query/Query;
 
     return-void
 .end method
@@ -59,7 +59,7 @@
     const/4 v1, 0x2
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzgq;->a:Lcom/google/android/gms/drive/query/Query;
+    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzgq;->g:Lcom/google/android/gms/drive/query/Query;
 
     const/4 v3, 0x0
 

@@ -20,20 +20,20 @@
 
 
 # virtual methods
-.method public abstract G1()J
+.method public abstract J1()J
 .end method
 
-.method public abstract H0()Landroid/net/Uri;
+.method public abstract K0()Landroid/net/Uri;
 .end method
 
-.method public abstract N()Landroid/net/Uri;
+.method public abstract P()Landroid/net/Uri;
 .end method
 
-.method public abstract g1()Ljava/lang/String;
+.method public abstract i1()Ljava/lang/String;
 .end method
 
-.method public abstract i2()Ljava/lang/String;
+.method public abstract k2()Ljava/lang/String;
 .end method
 
-.method public abstract v0()Landroid/net/Uri;
+.method public abstract x0()Landroid/net/Uri;
 .end method

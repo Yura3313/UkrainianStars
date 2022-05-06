@@ -122,7 +122,7 @@
     iput-object p1, p0, Lcom/supercell/id/view/AvatarEditView;->enteringBgBounds:Landroid/graphics/Rect;
 
     .line 7
-    sget-object p1, Lcom/supercell/id/view/AvatarEditView$b;->NONE:Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object p1, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
 
     iput-object p1, p0, Lcom/supercell/id/view/AvatarEditView;->imageAnimationState:Lcom/supercell/id/view/AvatarEditView$b;
 
@@ -156,12 +156,12 @@
     .line 11
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object p1
 
     .line 12
-    iget-object p1, p1, Lwd/r;->s:Lqd/j;
+    iget-object p1, p1, Lvd/r;->s:Lpd/i;
 
     .line 13
     new-instance v1, Lcom/supercell/id/view/AvatarEditView$a;
@@ -170,7 +170,7 @@
 
     const-string v2, "portraits.png"
 
-    invoke-virtual {p1, v2, v1}, Lqd/j;->b(Ljava/lang/String;Lke/p;)V
+    invoke-virtual {p1, v2, v1}, Lpd/i;->b(Ljava/lang/String;Lke/p;)V
 
     .line 14
     invoke-virtual {p0, p2, v0}, Landroid/widget/ImageView;->setLayerType(ILandroid/graphics/Paint;)V
@@ -181,7 +181,7 @@
     const-string p1, "context"
 
     .line 15
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -316,7 +316,7 @@
     if-eqz p3, :cond_0
 
     .line 1
-    sget-object p2, Lcom/supercell/id/view/AvatarEditView$b;->NONE:Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object p2, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
 
     :cond_0
     invoke-virtual {p0, p1, p2}, Lcom/supercell/id/view/AvatarEditView;->setAvatar(Ljava/lang/String;Lcom/supercell/id/view/AvatarEditView$b;)V
@@ -332,7 +332,7 @@
     if-eqz p4, :cond_0
 
     .line 1
-    sget-object p3, Lcom/supercell/id/view/AvatarEditView$b;->NONE:Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object p3, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
 
     :cond_0
     invoke-virtual {p0, p1, p2, p3}, Lcom/supercell/id/view/AvatarEditView;->setBackgroundGradient(IILcom/supercell/id/view/AvatarEditView$b;)V
@@ -418,283 +418,278 @@
 .end method
 
 .method public onDraw(Landroid/graphics/Canvas;)V
-    .locals 7
+    .locals 8
+
+    .line 1
+    sget-object v0, Lcom/supercell/id/view/AvatarEditView$b;->h:Lcom/supercell/id/view/AvatarEditView$b;
+
+    sget-object v1, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
 
     if-eqz p1, :cond_9
 
-    .line 1
+    .line 2
     invoke-super {p0, p1}, Landroid/widget/ImageView;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 2
-    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView;->canvasBounds:Landroid/graphics/Rect;
-
-    invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->getClipBounds(Landroid/graphics/Rect;)Z
-
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView;->currentImageBounds:Landroid/graphics/Rect;
+    iget-object v2, p0, Lcom/supercell/id/view/AvatarEditView;->canvasBounds:Landroid/graphics/Rect;
 
-    invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->getClipBounds(Landroid/graphics/Rect;)Z
+    invoke-virtual {p1, v2}, Landroid/graphics/Canvas;->getClipBounds(Landroid/graphics/Rect;)Z
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView;->exitingImageBounds:Landroid/graphics/Rect;
+    iget-object v2, p0, Lcom/supercell/id/view/AvatarEditView;->currentImageBounds:Landroid/graphics/Rect;
 
-    invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->getClipBounds(Landroid/graphics/Rect;)Z
+    invoke-virtual {p1, v2}, Landroid/graphics/Canvas;->getClipBounds(Landroid/graphics/Rect;)Z
 
     .line 5
-    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView;->enteringBgBounds:Landroid/graphics/Rect;
+    iget-object v2, p0, Lcom/supercell/id/view/AvatarEditView;->exitingImageBounds:Landroid/graphics/Rect;
 
-    invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->getClipBounds(Landroid/graphics/Rect;)Z
+    invoke-virtual {p1, v2}, Landroid/graphics/Canvas;->getClipBounds(Landroid/graphics/Rect;)Z
 
     .line 6
-    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView;->currentBackground:Landroid/graphics/drawable/GradientDrawable;
+    iget-object v2, p0, Lcom/supercell/id/view/AvatarEditView;->enteringBgBounds:Landroid/graphics/Rect;
 
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_4
+    invoke-virtual {p1, v2}, Landroid/graphics/Canvas;->getClipBounds(Landroid/graphics/Rect;)Z
 
     .line 7
-    iget-object v2, p0, Lcom/supercell/id/view/AvatarEditView;->bgAnimationState:Lcom/supercell/id/view/AvatarEditView$b;
+    iget-object v2, p0, Lcom/supercell/id/view/AvatarEditView;->currentBackground:Landroid/graphics/drawable/GradientDrawable;
 
-    sget-object v3, Lcom/supercell/id/view/AvatarEditView$b;->NONE:Lcom/supercell/id/view/AvatarEditView$b;
+    const/4 v3, 0x0
 
-    if-eq v2, v3, :cond_3
+    if-eqz v2, :cond_4
 
-    iget v3, p0, Lcom/supercell/id/view/AvatarEditView;->bgPosition:F
+    .line 8
+    iget-object v4, p0, Lcom/supercell/id/view/AvatarEditView;->bgAnimationState:Lcom/supercell/id/view/AvatarEditView$b;
 
-    cmpg-float v4, v3, v1
+    if-eq v4, v1, :cond_3
 
-    if-eqz v4, :cond_3
+    iget v5, p0, Lcom/supercell/id/view/AvatarEditView;->bgPosition:F
 
-    iget-object v4, p0, Lcom/supercell/id/view/AvatarEditView;->exitingBackground:Landroid/graphics/drawable/GradientDrawable;
+    cmpg-float v6, v5, v3
 
-    if-nez v4, :cond_0
+    if-eqz v6, :cond_3
+
+    iget-object v6, p0, Lcom/supercell/id/view/AvatarEditView;->exitingBackground:Landroid/graphics/drawable/GradientDrawable;
+
+    if-nez v6, :cond_0
 
     goto :goto_1
 
-    .line 8
     :cond_0
-    sget-object v4, Lcom/supercell/id/view/AvatarEditView$b;->FROM_LEFT:Lcom/supercell/id/view/AvatarEditView$b;
-
-    if-ne v2, v4, :cond_1
+    if-ne v4, v0, :cond_1
 
     .line 9
-    iget-object v2, p0, Lcom/supercell/id/view/AvatarEditView;->enteringBgBounds:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/supercell/id/view/AvatarEditView;->enteringBgBounds:Landroid/graphics/Rect;
 
-    float-to-int v3, v3
+    float-to-int v5, v5
 
-    iput v3, v2, Landroid/graphics/Rect;->left:I
+    iput v5, v4, Landroid/graphics/Rect;->left:I
 
     .line 10
     invoke-virtual {p0}, Landroid/widget/ImageView;->getWidth()I
 
-    move-result v4
+    move-result v6
 
-    add-int/2addr v4, v3
+    add-int/2addr v6, v5
 
-    iput v4, v2, Landroid/graphics/Rect;->right:I
+    iput v6, v4, Landroid/graphics/Rect;->right:I
 
     goto :goto_0
 
     .line 11
     :cond_1
-    iget-object v2, p0, Lcom/supercell/id/view/AvatarEditView;->enteringBgBounds:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/supercell/id/view/AvatarEditView;->enteringBgBounds:Landroid/graphics/Rect;
 
-    float-to-int v3, v3
+    float-to-int v5, v5
 
-    neg-int v3, v3
+    neg-int v5, v5
 
-    iput v3, v2, Landroid/graphics/Rect;->left:I
+    iput v5, v4, Landroid/graphics/Rect;->left:I
 
     .line 12
     invoke-virtual {p0}, Landroid/widget/ImageView;->getWidth()I
 
-    move-result v4
+    move-result v6
 
-    add-int/2addr v4, v3
+    add-int/2addr v6, v5
 
-    iput v4, v2, Landroid/graphics/Rect;->right:I
+    iput v6, v4, Landroid/graphics/Rect;->right:I
 
     .line 13
     :goto_0
-    iget-object v2, p0, Lcom/supercell/id/view/AvatarEditView;->exitingBackground:Landroid/graphics/drawable/GradientDrawable;
+    iget-object v4, p0, Lcom/supercell/id/view/AvatarEditView;->exitingBackground:Landroid/graphics/drawable/GradientDrawable;
 
-    if-eqz v2, :cond_2
+    if-eqz v4, :cond_2
 
     .line 14
-    iget-object v3, p0, Lcom/supercell/id/view/AvatarEditView;->canvasBounds:Landroid/graphics/Rect;
+    iget-object v5, p0, Lcom/supercell/id/view/AvatarEditView;->canvasBounds:Landroid/graphics/Rect;
 
-    invoke-virtual {v2, v3}, Landroid/graphics/drawable/GradientDrawable;->setBounds(Landroid/graphics/Rect;)V
+    invoke-virtual {v4, v5}, Landroid/graphics/drawable/GradientDrawable;->setBounds(Landroid/graphics/Rect;)V
 
     .line 15
-    invoke-virtual {v2, p1}, Landroid/graphics/drawable/GradientDrawable;->draw(Landroid/graphics/Canvas;)V
+    invoke-virtual {v4, p1}, Landroid/graphics/drawable/GradientDrawable;->draw(Landroid/graphics/Canvas;)V
 
     .line 16
     :cond_2
-    iget-object v2, p0, Lcom/supercell/id/view/AvatarEditView;->enteringBgBounds:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/supercell/id/view/AvatarEditView;->enteringBgBounds:Landroid/graphics/Rect;
 
-    invoke-virtual {v0, v2}, Landroid/graphics/drawable/GradientDrawable;->setBounds(Landroid/graphics/Rect;)V
+    invoke-virtual {v2, v4}, Landroid/graphics/drawable/GradientDrawable;->setBounds(Landroid/graphics/Rect;)V
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
     .line 17
-    invoke-virtual {v0, v2}, Landroid/graphics/drawable/GradientDrawable;->setShape(I)V
+    invoke-virtual {v2, v4}, Landroid/graphics/drawable/GradientDrawable;->setShape(I)V
 
     .line 18
-    invoke-virtual {v0, p1}, Landroid/graphics/drawable/GradientDrawable;->draw(Landroid/graphics/Canvas;)V
+    invoke-virtual {v2, p1}, Landroid/graphics/drawable/GradientDrawable;->draw(Landroid/graphics/Canvas;)V
 
     .line 19
-    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView;->enteringBgBounds:Landroid/graphics/Rect;
+    iget-object v2, p0, Lcom/supercell/id/view/AvatarEditView;->enteringBgBounds:Landroid/graphics/Rect;
 
-    iget v0, v0, Landroid/graphics/Rect;->left:I
+    iget v2, v2, Landroid/graphics/Rect;->left:I
 
     goto :goto_2
 
     .line 20
     :cond_3
     :goto_1
-    iget-object v2, p0, Lcom/supercell/id/view/AvatarEditView;->canvasBounds:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/supercell/id/view/AvatarEditView;->canvasBounds:Landroid/graphics/Rect;
 
-    invoke-virtual {v0, v2}, Landroid/graphics/drawable/GradientDrawable;->setBounds(Landroid/graphics/Rect;)V
+    invoke-virtual {v2, v4}, Landroid/graphics/drawable/GradientDrawable;->setBounds(Landroid/graphics/Rect;)V
 
     .line 21
-    invoke-virtual {v0, p1}, Landroid/graphics/drawable/GradientDrawable;->draw(Landroid/graphics/Canvas;)V
+    invoke-virtual {v2, p1}, Landroid/graphics/drawable/GradientDrawable;->draw(Landroid/graphics/Canvas;)V
 
     .line 22
     :cond_4
     :goto_2
-    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView;->currentImage:Landroid/graphics/Bitmap;
+    iget-object v2, p0, Lcom/supercell/id/view/AvatarEditView;->currentImage:Landroid/graphics/Bitmap;
 
-    if-eqz v0, :cond_8
+    if-eqz v2, :cond_8
 
     .line 23
-    iget-object v2, p0, Lcom/supercell/id/view/AvatarEditView;->exitingImage:Landroid/graphics/Bitmap;
+    iget-object v4, p0, Lcom/supercell/id/view/AvatarEditView;->exitingImage:Landroid/graphics/Bitmap;
 
     .line 24
-    iget-object v3, p0, Lcom/supercell/id/view/AvatarEditView;->imageAnimationState:Lcom/supercell/id/view/AvatarEditView$b;
+    iget-object v5, p0, Lcom/supercell/id/view/AvatarEditView;->imageAnimationState:Lcom/supercell/id/view/AvatarEditView$b;
 
-    sget-object v4, Lcom/supercell/id/view/AvatarEditView$b;->NONE:Lcom/supercell/id/view/AvatarEditView$b;
+    const/4 v6, 0x0
 
-    const/4 v5, 0x0
+    if-eq v5, v1, :cond_7
 
-    if-eq v3, v4, :cond_7
+    iget v1, p0, Lcom/supercell/id/view/AvatarEditView;->imagePosition:F
 
-    iget v4, p0, Lcom/supercell/id/view/AvatarEditView;->imagePosition:F
+    cmpg-float v7, v1, v3
 
-    cmpg-float v6, v4, v1
+    if-eqz v7, :cond_7
 
-    if-eqz v6, :cond_7
-
-    if-nez v2, :cond_5
+    if-nez v4, :cond_5
 
     goto :goto_4
 
-    .line 25
     :cond_5
-    sget-object v6, Lcom/supercell/id/view/AvatarEditView$b;->FROM_LEFT:Lcom/supercell/id/view/AvatarEditView$b;
+    if-ne v5, v0, :cond_6
 
-    if-ne v3, v6, :cond_6
+    .line 25
+    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView;->currentImageBounds:Landroid/graphics/Rect;
+
+    float-to-int v1, v1
+
+    iput v1, v0, Landroid/graphics/Rect;->left:I
 
     .line 26
-    iget-object v3, p0, Lcom/supercell/id/view/AvatarEditView;->currentImageBounds:Landroid/graphics/Rect;
+    invoke-virtual {p0}, Landroid/widget/ImageView;->getWidth()I
 
-    float-to-int v4, v4
+    move-result v5
 
-    iput v4, v3, Landroid/graphics/Rect;->left:I
+    add-int/2addr v5, v1
+
+    iput v5, v0, Landroid/graphics/Rect;->right:I
 
     .line 27
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getWidth()I
+    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView;->exitingImageBounds:Landroid/graphics/Rect;
 
-    move-result v6
+    iget-object v1, p0, Lcom/supercell/id/view/AvatarEditView;->currentImageBounds:Landroid/graphics/Rect;
 
-    add-int/2addr v6, v4
+    iget v1, v1, Landroid/graphics/Rect;->right:I
 
-    iput v6, v3, Landroid/graphics/Rect;->right:I
+    iput v1, v0, Landroid/graphics/Rect;->left:I
 
     .line 28
-    iget-object v3, p0, Lcom/supercell/id/view/AvatarEditView;->exitingImageBounds:Landroid/graphics/Rect;
-
-    iget-object v4, p0, Lcom/supercell/id/view/AvatarEditView;->currentImageBounds:Landroid/graphics/Rect;
-
-    iget v4, v4, Landroid/graphics/Rect;->right:I
-
-    iput v4, v3, Landroid/graphics/Rect;->left:I
-
-    .line 29
     invoke-virtual {p0}, Landroid/widget/ImageView;->getWidth()I
 
-    move-result v6
+    move-result v5
 
-    add-int/2addr v6, v4
+    add-int/2addr v5, v1
 
-    iput v6, v3, Landroid/graphics/Rect;->right:I
+    iput v5, v0, Landroid/graphics/Rect;->right:I
 
     goto :goto_3
 
-    .line 30
+    .line 29
     :cond_6
-    iget-object v3, p0, Lcom/supercell/id/view/AvatarEditView;->currentImageBounds:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView;->currentImageBounds:Landroid/graphics/Rect;
 
-    float-to-int v4, v4
+    float-to-int v1, v1
 
-    neg-int v4, v4
+    neg-int v1, v1
 
-    iput v4, v3, Landroid/graphics/Rect;->left:I
+    iput v1, v0, Landroid/graphics/Rect;->left:I
+
+    .line 30
+    invoke-virtual {p0}, Landroid/widget/ImageView;->getWidth()I
+
+    move-result v5
+
+    add-int/2addr v5, v1
+
+    iput v5, v0, Landroid/graphics/Rect;->right:I
 
     .line 31
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getWidth()I
-
-    move-result v6
-
-    add-int/2addr v6, v4
-
-    iput v6, v3, Landroid/graphics/Rect;->right:I
-
-    .line 32
-    iget-object v3, p0, Lcom/supercell/id/view/AvatarEditView;->exitingImageBounds:Landroid/graphics/Rect;
-
-    iget-object v4, p0, Lcom/supercell/id/view/AvatarEditView;->currentImageBounds:Landroid/graphics/Rect;
-
-    iget v4, v4, Landroid/graphics/Rect;->left:I
-
-    iput v4, v3, Landroid/graphics/Rect;->right:I
-
-    .line 33
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getWidth()I
-
-    move-result v6
-
-    sub-int/2addr v4, v6
-
-    iput v4, v3, Landroid/graphics/Rect;->left:I
-
-    .line 34
-    :goto_3
-    iget-object v3, p0, Lcom/supercell/id/view/AvatarEditView;->currentImageBounds:Landroid/graphics/Rect;
-
-    invoke-virtual {p1, v0, v5, v3, v5}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
-
-    .line 35
     iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView;->exitingImageBounds:Landroid/graphics/Rect;
 
-    invoke-virtual {p1, v2, v5, v0, v5}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+    iget-object v1, p0, Lcom/supercell/id/view/AvatarEditView;->currentImageBounds:Landroid/graphics/Rect;
+
+    iget v1, v1, Landroid/graphics/Rect;->left:I
+
+    iput v1, v0, Landroid/graphics/Rect;->right:I
+
+    .line 32
+    invoke-virtual {p0}, Landroid/widget/ImageView;->getWidth()I
+
+    move-result v5
+
+    sub-int/2addr v1, v5
+
+    iput v1, v0, Landroid/graphics/Rect;->left:I
+
+    .line 33
+    :goto_3
+    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView;->currentImageBounds:Landroid/graphics/Rect;
+
+    invoke-virtual {p1, v2, v6, v0, v6}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+
+    .line 34
+    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView;->exitingImageBounds:Landroid/graphics/Rect;
+
+    invoke-virtual {p1, v4, v6, v0, v6}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
     goto :goto_5
 
-    .line 36
+    .line 35
     :cond_7
     :goto_4
-    iget-object v2, p0, Lcom/supercell/id/view/AvatarEditView;->canvasBounds:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView;->canvasBounds:Landroid/graphics/Rect;
 
-    invoke-virtual {p1, v0, v5, v2, v5}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+    invoke-virtual {p1, v2, v6, v0, v6}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    .line 37
+    .line 36
     :cond_8
     :goto_5
     iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView;->maskPath:Landroid/graphics/Path;
 
-    invoke-virtual {v0, v1, v1}, Landroid/graphics/Path;->moveTo(FF)V
+    invoke-virtual {v0, v3, v3}, Landroid/graphics/Path;->moveTo(FF)V
 
-    .line 38
+    .line 37
     iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView;->maskPath:Landroid/graphics/Path;
 
     iget-object v1, p0, Lcom/supercell/id/view/AvatarEditView;->maskPaint:Landroid/graphics/Paint;
@@ -733,11 +728,11 @@
     if-eq v0, v3, :cond_0
 
     .line 3
-    invoke-static {v5}, Lc5/i;->c(I)F
+    invoke-static {v5}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result p1
 
-    invoke-static {p1}, Lc2/n0;->e(F)I
+    invoke-static {p1}, Lb5/m;->r(F)I
 
     move-result p1
 
@@ -753,11 +748,11 @@
 
     .line 5
     :cond_1
-    invoke-static {v5}, Lc5/i;->c(I)F
+    invoke-static {v5}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result p1
 
-    invoke-static {p1}, Lc2/n0;->e(F)I
+    invoke-static {p1}, Lb5/m;->r(F)I
 
     move-result p1
 
@@ -771,7 +766,7 @@
 
     int-to-float p1, p1
 
-    invoke-static {v5}, Lc5/i;->c(I)F
+    invoke-static {v5}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v6
 
@@ -798,7 +793,7 @@
     .line 8
     :cond_4
     :goto_0
-    invoke-static {p1}, Lc2/n0;->e(F)I
+    invoke-static {p1}, Lb5/m;->r(F)I
 
     move-result p1
 
@@ -810,11 +805,11 @@
     if-eq v1, v3, :cond_5
 
     .line 9
-    invoke-static {v5}, Lc5/i;->c(I)F
+    invoke-static {v5}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result p2
 
-    invoke-static {p2}, Lc2/n0;->e(F)I
+    invoke-static {p2}, Lb5/m;->r(F)I
 
     move-result p2
 
@@ -830,11 +825,11 @@
 
     .line 11
     :cond_6
-    invoke-static {v5}, Lc5/i;->c(I)F
+    invoke-static {v5}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result p2
 
-    invoke-static {p2}, Lc2/n0;->e(F)I
+    invoke-static {p2}, Lb5/m;->r(F)I
 
     move-result p2
 
@@ -848,7 +843,7 @@
 
     int-to-float p2, p2
 
-    invoke-static {v5}, Lc5/i;->c(I)F
+    invoke-static {v5}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v1
 
@@ -877,7 +872,7 @@
 
     .line 14
     :goto_2
-    invoke-static {v2}, Lc2/n0;->e(F)I
+    invoke-static {v2}, Lb5/m;->r(F)I
 
     move-result p2
 
@@ -1072,13 +1067,13 @@
     .line 3
     sget-object v2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lwd/h;
+    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lvd/h;
 
     move-result-object v2
 
-    sget-object v3, Lwd/i1;->NAMES:Lwd/i1;
+    const/16 v3, 0x12
 
-    invoke-virtual {v2, v3}, Lwd/h;->c(Lwd/i1;)Ljava/util/List;
+    invoke-virtual {v2, v3}, Lvd/h;->d(I)Ljava/util/List;
 
     move-result-object v2
 
@@ -1095,7 +1090,7 @@
 
     .line 4
     :goto_0
-    sget-object v2, Lcom/supercell/id/view/AvatarEditView$b;->NONE:Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object v2, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
 
     if-eq p2, v2, :cond_1
 
@@ -1115,14 +1110,12 @@
     invoke-virtual {p2}, Landroid/animation/ObjectAnimator;->start()V
 
     :cond_1
-    const/16 p2, 0xa
-
     if-ltz p1, :cond_3
 
     .line 8
-    instance-of v2, v1, Landroid/graphics/drawable/BitmapDrawable;
+    instance-of p2, v1, Landroid/graphics/drawable/BitmapDrawable;
 
-    if-nez v2, :cond_2
+    if-nez p2, :cond_2
 
     goto :goto_1
 
@@ -1132,42 +1125,44 @@
 
     invoke-virtual {v1}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
 
-    move-result-object v0
+    move-result-object p2
 
     .line 10
-    rem-int/lit8 v1, p1, 0xa
+    rem-int/lit8 v0, p1, 0xa
+
+    const/16 v1, 0xa
 
     .line 11
-    div-int/2addr p1, p2
+    div-int/2addr p1, v1
 
     const-string v2, "bitmapAtlas"
 
     .line 12
-    invoke-static {v0, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
+    invoke-virtual {p2}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v2
 
     int-to-float v2, v2
 
-    int-to-float p2, p2
+    int-to-float v1, v1
 
-    div-float/2addr v2, p2
+    div-float/2addr v2, v1
 
-    const/16 p2, 0x5a
+    const/16 v1, 0x5a
 
-    int-to-float v3, p2
+    int-to-float v3, v1
 
     div-float/2addr v2, v3
 
-    mul-int/lit8 v1, v1, 0x5a
+    mul-int/lit8 v0, v0, 0x5a
 
-    int-to-float v1, v1
+    int-to-float v0, v0
 
-    mul-float v1, v1, v2
+    mul-float v0, v0, v2
 
-    float-to-int v1, v1
+    float-to-int v0, v0
 
     mul-int/lit8 p1, p1, 0x5a
 
@@ -1179,16 +1174,10 @@
 
     mul-float v3, v3, v2
 
-    float-to-int v3, v3
-
-    int-to-float p2, p2
-
-    mul-float p2, p2, v2
-
-    float-to-int p2, p2
+    float-to-int v1, v3
 
     .line 13
-    invoke-static {v0, v1, p1, v3, p2}, Landroid/graphics/Bitmap;->createBitmap(Landroid/graphics/Bitmap;IIII)Landroid/graphics/Bitmap;
+    invoke-static {p2, v0, p1, v1, v1}, Landroid/graphics/Bitmap;->createBitmap(Landroid/graphics/Bitmap;IIII)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
@@ -1207,14 +1196,14 @@
     const-string p1, "animate"
 
     .line 16
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_6
     const-string p1, "avatarName"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -1246,7 +1235,7 @@
     const-string p1, "bitmap"
 
     .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -1257,7 +1246,7 @@
     if-eqz p3, :cond_1
 
     .line 1
-    sget-object v0, Lcom/supercell/id/view/AvatarEditView$b;->NONE:Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object v0, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
 
     if-eq p3, v0, :cond_0
 
@@ -1307,7 +1296,7 @@
     const-string p1, "animate"
 
     .line 7
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -1334,9 +1323,9 @@
     invoke-direct {v0, p0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     .line 2
-    sget-object v1, Lwd/x;->c:Lwd/x;
+    sget-object v1, Lvd/x;->c:Lvd/x;
 
-    invoke-virtual {v1, p1}, Lwd/x;->a(Ljava/lang/String;)Lse/h0;
+    invoke-virtual {v1, p1}, Lvd/x;->a(Ljava/lang/String;)Lse/f0;
 
     move-result-object p1
 
@@ -1344,7 +1333,7 @@
 
     invoke-direct {v1, v0}, Lcom/supercell/id/view/AvatarEditView$h;-><init>(Ljava/lang/ref/WeakReference;)V
 
-    invoke-static {p1, v1}, Lwd/e1;->m(Lse/h0;Lke/l;)Lse/h0;
+    invoke-static {p1, v1}, Lvd/e1;->l(Lse/f0;Lke/l;)Lse/f0;
 
     return-void
 
@@ -1352,7 +1341,7 @@
     const-string p1, "imageUrl"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

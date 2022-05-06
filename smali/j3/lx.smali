@@ -3,23 +3,28 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/gl0;
+.implements Lj3/yj0;
 
 
-# instance fields
-.field public final synthetic a:I
-
-.field public final b:Ljava/lang/Object;
+# static fields
+.field public static final a:Lj3/yj0;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lj3/lx;
+
+    invoke-direct {v0}, Lj3/lx;-><init>()V
+
+    sput-object v0, Lj3/lx;->a:Lj3/yj0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
-
-    .line 1
-    iput p2, p0, Lj3/lx;->a:I
-
-    iput-object p1, p0, Lj3/lx;->b:Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,83 +33,43 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lj3/yl0;
-    .locals 3
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
-    iget v0, p0, Lj3/lx;->a:I
+    .line 1
+    check-cast p1, Ljava/util/List;
 
-    packed-switch v0, :pswitch_data_0
+    .line 2
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 3
+    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :cond_0
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/google/android/gms/internal/ads/zzadi;
+
+    if-eqz v1, :cond_0
+
+    .line 4
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/lx;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/yl0;
-
-    check-cast p1, Lj3/ch;
-
-    if-eqz p1, :cond_0
-
-    .line 2
-    invoke-interface {p1}, Lj3/ch;->h()Lcom/google/android/gms/internal/ads/zzbgk;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
+    :cond_1
     return-object v0
-
-    .line 3
-    :cond_0
-    new-instance p1, Lcom/google/android/gms/internal/ads/zzcuh;
-
-    const/4 v0, 0x1
-
-    const-string v1, "Retrieve video view in instream ad response failed."
-
-    invoke-direct {p1, v0, v1}, Lcom/google/android/gms/internal/ads/zzcuh;-><init>(ILjava/lang/String;)V
-
-    throw p1
-
-    .line 4
-    :goto_0
-    iget-object v0, p0, Lj3/lx;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/j20;
-
-    check-cast p1, Ljava/io/InputStream;
-
-    .line 5
-    new-instance v1, Lj3/ng0;
-
-    new-instance v2, Lj3/f5;
-
-    iget-object v0, v0, Lj3/j20;->c:Lj3/pg0;
-
-    invoke-direct {v2, v0}, Lj3/f5;-><init>(Ljava/lang/Object;)V
-
-    new-instance v0, Ljava/io/InputStreamReader;
-
-    invoke-direct {v0, p1}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V
-
-    .line 6
-    invoke-static {v0}, Lj3/lg0;->a(Ljava/io/Reader;)Lj3/lg0;
-
-    move-result-object p1
-
-    invoke-direct {v1, v2, p1}, Lj3/ng0;-><init>(Lj3/f5;Lj3/lg0;)V
-
-    .line 7
-    invoke-static {v1}, Lj3/ul0;->i(Ljava/lang/Object;)Lj3/yl0;
-
-    move-result-object p1
-
-    return-object p1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

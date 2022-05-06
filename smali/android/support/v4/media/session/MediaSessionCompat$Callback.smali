@@ -119,7 +119,7 @@
 
 
 # virtual methods
-.method public handleMediaPlayPauseKeySingleTapIfPending(Lp0/k;)V
+.method public handleMediaPlayPauseKeySingleTapIfPending(Lp0/i;)V
     .locals 11
 
     .line 1
@@ -223,7 +223,7 @@
 
     .line 8
     :cond_5
-    invoke-interface {v1, p1}, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImpl;->setCurrentControllerInfo(Lp0/k;)V
+    invoke-interface {v1, p1}, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImpl;->setCurrentControllerInfo(Lp0/i;)V
 
     if-eqz v3, :cond_6
 
@@ -247,7 +247,7 @@
     const/4 p1, 0x0
 
     .line 11
-    invoke-interface {v1, p1}, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImpl;->setCurrentControllerInfo(Lp0/k;)V
+    invoke-interface {v1, p1}, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImpl;->setCurrentControllerInfo(Lp0/i;)V
 
     return-void
 .end method
@@ -338,7 +338,7 @@
 
     .line 6
     :cond_2
-    invoke-interface {v0}, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImpl;->getCurrentControllerInfo()Lp0/k;
+    invoke-interface {v0}, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImpl;->getCurrentControllerInfo()Lp0/i;
 
     move-result-object v2
 
@@ -356,7 +356,7 @@
     if-eq v3, v4, :cond_3
 
     .line 8
-    invoke-virtual {p0, v2}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->handleMediaPlayPauseKeySingleTapIfPending(Lp0/k;)V
+    invoke-virtual {p0, v2}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->handleMediaPlayPauseKeySingleTapIfPending(Lp0/i;)V
 
     return v1
 
@@ -371,7 +371,7 @@
     if-lez p1, :cond_4
 
     .line 10
-    invoke-virtual {p0, v2}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->handleMediaPlayPauseKeySingleTapIfPending(Lp0/k;)V
+    invoke-virtual {p0, v2}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->handleMediaPlayPauseKeySingleTapIfPending(Lp0/i;)V
 
     goto :goto_1
 

@@ -4,10 +4,10 @@
 
 
 # static fields
-.field public static final a:Lm/h;
+.field public static final a:Lm/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lm/h<",
+            "Lm/g<",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;"
@@ -31,11 +31,11 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lm/h;
+    new-instance v0, Lm/g;
 
-    invoke-direct {v0}, Lm/h;-><init>()V
+    invoke-direct {v0}, Lm/g;-><init>()V
 
-    sput-object v0, Lc2/p;->a:Lm/h;
+    sput-object v0, Lc2/p;->a:Lm/g;
 
     return-void
 .end method
@@ -160,7 +160,7 @@
     .locals 5
 
     .line 1
-    sget-object v0, Lc2/p;->a:Lm/h;
+    sget-object v0, Lc2/p;->a:Lm/g;
 
     monitor-enter v0
 
@@ -231,7 +231,7 @@
     if-nez v2, :cond_1
 
     .line 9
-    invoke-virtual {v0}, Lm/h;->clear()V
+    invoke-virtual {v0}, Lm/g;->clear()V
 
     .line 10
     sput-object v1, Lc2/p;->b:Ljava/util/Locale;
@@ -240,7 +240,7 @@
     const/4 v1, 0x0
 
     .line 11
-    invoke-virtual {v0, p1, v1}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -359,9 +359,9 @@
 
     .line 25
     :cond_7
-    sget-object v1, Lc2/p;->a:Lm/h;
+    sget-object v1, Lc2/p;->a:Lm/g;
 
-    invoke-virtual {v1, p1, p0}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, p1, p0}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 26
     monitor-exit v0

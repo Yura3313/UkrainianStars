@@ -5,6 +5,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lio/sentry/android/ndk/R$anim;,
+        Lio/sentry/android/ndk/R$animator;,
         Lio/sentry/android/ndk/R$attr;,
         Lio/sentry/android/ndk/R$color;,
         Lio/sentry/android/ndk/R$dimen;,

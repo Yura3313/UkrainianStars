@@ -3,12 +3,12 @@
 .source "HandlerDispatcher.kt"
 
 # interfaces
-.implements Lse/o0;
+.implements Lse/m0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkotlinx/coroutines/android/HandlerContext;->invokeOnTimeout(JLjava/lang/Runnable;)Lse/o0;
+    value = Lkotlinx/coroutines/android/HandlerContext;->invokeOnTimeout(JLjava/lang/Runnable;)Lse/m0;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

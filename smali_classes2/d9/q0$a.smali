@@ -1,5 +1,5 @@
 .class public Ld9/q0$a;
-.super Ly7/g;
+.super Lz7/g;
 .source "MessageListVM.java"
 
 
@@ -29,7 +29,7 @@
 
     iput-object p2, p0, Ld9/q0$a;->b:Ljava/util/List;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -59,7 +59,7 @@
 
     move-result-object v2
 
-    check-cast v2, Lm8/a0;
+    check-cast v2, Ln8/w;
 
     .line 2
     iget-object v3, p0, Ld9/q0$a;->c:Ld9/q0;

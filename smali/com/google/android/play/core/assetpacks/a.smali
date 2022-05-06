@@ -53,7 +53,7 @@
     const-string v9, "status"
 
     .line 2
-    invoke-static {v9, v8}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v9, v8}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v9
 
@@ -63,7 +63,7 @@
 
     const-string v9, "error_code"
 
-    invoke-static {v9, v8}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v9, v8}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v9
 
@@ -73,7 +73,7 @@
 
     const-string v9, "bytes_downloaded"
 
-    invoke-static {v9, v8}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v9, v8}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v9
 
@@ -83,7 +83,7 @@
 
     const-string v9, "total_bytes_to_download"
 
-    invoke-static {v9, v8}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v9, v8}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v9
 
@@ -186,9 +186,9 @@
     move-result-wide v0
 
     .line 8
-    new-instance v2, Lcom/google/android/play/core/assetpacks/d0;
+    new-instance v2, Lcom/google/android/play/core/assetpacks/e0;
 
-    invoke-direct {v2, v0, v1, v4}, Lcom/google/android/play/core/assetpacks/d0;-><init>(JLjava/util/Map;)V
+    invoke-direct {v2, v0, v1, v4}, Lcom/google/android/play/core/assetpacks/e0;-><init>(JLjava/util/Map;)V
 
     return-object v2
 .end method

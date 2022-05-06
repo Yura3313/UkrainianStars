@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/transition/ChangeClipBounds;->k(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+    value = Landroidx/transition/ChangeClipBounds;->l(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroid/view/View;
+.field public final synthetic g:Landroid/view/View;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 0
 
     .line 1
-    iput-object p2, p0, Landroidx/transition/ChangeClipBounds$a;->a:Landroid/view/View;
+    iput-object p2, p0, Landroidx/transition/ChangeClipBounds$a;->g:Landroid/view/View;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -36,9 +36,9 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Landroidx/transition/ChangeClipBounds$a;->a:Landroid/view/View;
+    iget-object p1, p0, Landroidx/transition/ChangeClipBounds$a;->g:Landroid/view/View;
 
-    sget-object v0, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     const/4 v0, 0x0
 

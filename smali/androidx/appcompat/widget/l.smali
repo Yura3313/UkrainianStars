@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final synthetic o:Landroidx/appcompat/widget/AppCompatSpinner$d;
+.field public final synthetic p:Landroidx/appcompat/widget/AppCompatSpinner$d;
 
-.field public final synthetic p:Landroidx/appcompat/widget/AppCompatSpinner;
+.field public final synthetic q:Landroidx/appcompat/widget/AppCompatSpinner;
 
 
 # direct methods
@@ -14,9 +14,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/l;->p:Landroidx/appcompat/widget/AppCompatSpinner;
+    iput-object p1, p0, Landroidx/appcompat/widget/l;->q:Landroidx/appcompat/widget/AppCompatSpinner;
 
-    iput-object p3, p0, Landroidx/appcompat/widget/l;->o:Landroidx/appcompat/widget/AppCompatSpinner$d;
+    iput-object p3, p0, Landroidx/appcompat/widget/l;->p:Landroidx/appcompat/widget/AppCompatSpinner$d;
 
     invoke-direct {p0, p2}, Landroidx/appcompat/widget/u;-><init>(Landroid/view/View;)V
 
@@ -29,7 +29,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/l;->o:Landroidx/appcompat/widget/AppCompatSpinner$d;
+    iget-object v0, p0, Landroidx/appcompat/widget/l;->p:Landroidx/appcompat/widget/AppCompatSpinner$d;
 
     return-object v0
 .end method
@@ -43,7 +43,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/l;->p:Landroidx/appcompat/widget/AppCompatSpinner;
+    iget-object v0, p0, Landroidx/appcompat/widget/l;->q:Landroidx/appcompat/widget/AppCompatSpinner;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/AppCompatSpinner;->getInternalPopup()Landroidx/appcompat/widget/AppCompatSpinner$e;
 
@@ -56,7 +56,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/l;->p:Landroidx/appcompat/widget/AppCompatSpinner;
+    iget-object v0, p0, Landroidx/appcompat/widget/l;->q:Landroidx/appcompat/widget/AppCompatSpinner;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/AppCompatSpinner;->b()V
 

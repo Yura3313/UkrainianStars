@@ -1,5 +1,5 @@
 .class public Ld9/u0$a;
-.super Ly7/g;
+.super Lz7/g;
 .source "NewConversationVM.java"
 
 
@@ -15,21 +15,21 @@
 
 
 # instance fields
-.field public final synthetic b:Ls8/a;
+.field public final synthetic b:Lt8/a;
 
 .field public final synthetic c:Ld9/u0;
 
 
 # direct methods
-.method public constructor <init>(Ld9/u0;Ls8/a;)V
+.method public constructor <init>(Ld9/u0;Lt8/a;)V
     .locals 0
 
     .line 1
     iput-object p1, p0, Ld9/u0$a;->c:Ld9/u0;
 
-    iput-object p2, p0, Ld9/u0$a;->b:Ls8/a;
+    iput-object p2, p0, Ld9/u0$a;->b:Lt8/a;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -65,9 +65,9 @@
 
     check-cast v0, Ld9/s0;
 
-    iget-object v1, p0, Ld9/u0$a;->b:Ls8/a;
+    iget-object v1, p0, Ld9/u0$a;->b:Lt8/a;
 
-    invoke-interface {v0, v1}, Ld9/s0;->c(Ls8/a;)V
+    invoke-interface {v0, v1}, Ld9/s0;->f(Lt8/a;)V
 
     :cond_0
     return-void

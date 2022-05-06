@@ -1,79 +1,82 @@
 .class public final Lj3/q50;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
+.source "com.google.android.gms:play-services-gass@@19.3.0"
 
 # interfaces
-.implements Lj3/e40;
+.implements Lj3/fs0;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lj3/e40<",
-        "Lj3/ug0;",
-        "Lcom/google/android/gms/internal/ads/zzcso;",
-        ">;"
-    }
-.end annotation
-
-
-# instance fields
-.field public final a:Lj3/yz;
+# static fields
+.field public static final a:Lj3/fs0;
 
 
 # direct methods
-.method public constructor <init>(Lj3/yz;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lj3/q50;
+
+    invoke-direct {v0}, Lj3/q50;-><init>()V
+
+    sput-object v0, Lj3/q50;->a:Lj3/fs0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lj3/q50;->a:Lj3/yz;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;Lorg/json/JSONObject;)Lj3/f40;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Lorg/json/JSONObject;",
-            ")",
-            "Lj3/f40<",
-            "Lj3/ug0;",
-            "Lcom/google/android/gms/internal/ads/zzcso;",
-            ">;"
-        }
-    .end annotation
+.method public final a(I)Z
+    .locals 4
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/android/gms/internal/ads/zzdlr;
-        }
-    .end annotation
+    const/4 v0, 0x3
 
-    .line 1
-    iget-object v0, p0, Lj3/q50;->a:Lj3/yz;
+    const/4 v1, 0x2
 
-    invoke-virtual {v0, p1, p2}, Lj3/yz;->a(Ljava/lang/String;Lorg/json/JSONObject;)Lj3/ug0;
+    const/4 v2, 0x1
 
-    move-result-object p2
+    const/4 v3, 0x0
 
-    .line 2
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzcso;
+    if-eqz p1, :cond_2
 
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/zzcso;-><init>()V
+    if-eq p1, v2, :cond_1
 
-    .line 3
-    new-instance v1, Lj3/f40;
+    if-eq p1, v1, :cond_3
 
-    invoke-direct {v1, p2, v0, p1}, Lj3/f40;-><init>(Ljava/lang/Object;Lj3/lr;Ljava/lang/String;)V
+    if-eq p1, v0, :cond_0
 
-    return-object v1
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x4
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x2
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v0, 0x1
+
+    :cond_3
+    :goto_0
+    if-eqz v0, :cond_4
+
+    return v2
+
+    :cond_4
+    return v3
 .end method

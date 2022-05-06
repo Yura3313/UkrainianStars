@@ -176,7 +176,7 @@
     const-string v2, "android.permission.READ_PHONE_STATE"
 
     .line 8
-    invoke-static {v0, v2}, Lio/sentry/android/core/util/Permissions;->hasPermission(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {v0, v2}, Lio/sentry/android/core/internal/util/Permissions;->hasPermission(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -223,11 +223,11 @@
 
     invoke-interface {p1, v1, p2, v0}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_1
 
-    :catch_0
+    :catchall_0
     move-exception p1
 
     .line 13

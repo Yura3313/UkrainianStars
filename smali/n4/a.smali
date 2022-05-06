@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/material/navigation/NavigationView;
+.field public final synthetic g:Lcom/google/android/material/navigation/NavigationView;
 
 
 # direct methods
@@ -15,7 +15,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Ln4/a;->a:Lcom/google/android/material/navigation/NavigationView;
+    iput-object p1, p0, Ln4/a;->g:Lcom/google/android/material/navigation/NavigationView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,19 +28,19 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Ln4/a;->a:Lcom/google/android/material/navigation/NavigationView;
+    iget-object v0, p0, Ln4/a;->g:Lcom/google/android/material/navigation/NavigationView;
 
     .line 2
-    iget-object v1, v0, Lcom/google/android/material/navigation/NavigationView;->o:[I
+    iget-object v1, v0, Lcom/google/android/material/navigation/NavigationView;->p:[I
 
     .line 3
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->getLocationOnScreen([I)V
 
     .line 4
-    iget-object v0, p0, Ln4/a;->a:Lcom/google/android/material/navigation/NavigationView;
+    iget-object v0, p0, Ln4/a;->g:Lcom/google/android/material/navigation/NavigationView;
 
     .line 5
-    iget-object v1, v0, Lcom/google/android/material/navigation/NavigationView;->o:[I
+    iget-object v1, v0, Lcom/google/android/material/navigation/NavigationView;->p:[I
 
     const/4 v2, 0x1
 
@@ -60,27 +60,27 @@
 
     .line 7
     :goto_0
-    iget-object v0, v0, Lcom/google/android/material/navigation/NavigationView;->l:Lcom/google/android/material/internal/d;
+    iget-object v0, v0, Lcom/google/android/material/navigation/NavigationView;->m:Lcom/google/android/material/internal/f;
 
     .line 8
-    iget-boolean v4, v0, Lcom/google/android/material/internal/d;->u:Z
+    iget-boolean v4, v0, Lcom/google/android/material/internal/f;->v:Z
 
     if-eq v4, v1, :cond_1
 
     .line 9
-    iput-boolean v1, v0, Lcom/google/android/material/internal/d;->u:Z
+    iput-boolean v1, v0, Lcom/google/android/material/internal/f;->v:Z
 
     .line 10
-    invoke-virtual {v0}, Lcom/google/android/material/internal/d;->n()V
+    invoke-virtual {v0}, Lcom/google/android/material/internal/f;->n()V
 
     .line 11
     :cond_1
-    iget-object v0, p0, Ln4/a;->a:Lcom/google/android/material/navigation/NavigationView;
+    iget-object v0, p0, Ln4/a;->g:Lcom/google/android/material/navigation/NavigationView;
 
     invoke-virtual {v0, v1}, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->setDrawTopInsetForeground(Z)V
 
     .line 12
-    iget-object v0, p0, Ln4/a;->a:Lcom/google/android/material/navigation/NavigationView;
+    iget-object v0, p0, Ln4/a;->g:Lcom/google/android/material/navigation/NavigationView;
 
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
 
@@ -136,7 +136,7 @@
 
     move-result v1
 
-    iget-object v4, p0, Ln4/a;->a:Lcom/google/android/material/navigation/NavigationView;
+    iget-object v4, p0, Ln4/a;->g:Lcom/google/android/material/navigation/NavigationView;
 
     invoke-virtual {v4}, Landroid/widget/FrameLayout;->getHeight()I
 
@@ -176,7 +176,7 @@
 
     .line 20
     :goto_4
-    iget-object v4, p0, Ln4/a;->a:Lcom/google/android/material/navigation/NavigationView;
+    iget-object v4, p0, Ln4/a;->g:Lcom/google/android/material/navigation/NavigationView;
 
     if-eqz v1, :cond_6
 

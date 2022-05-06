@@ -1,141 +1,116 @@
-.class public final synthetic Lj3/s6;
+.class public final Lj3/s6;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
-# static fields
-.field public static final synthetic a:[I
-
-.field public static final synthetic b:[I
-
-
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 6
+.method public static a(Lcom/google/ads/AdRequest$ErrorCode;)I
+    .locals 2
 
     .line 1
-    invoke-static {}, Lcom/google/ads/AdRequest$ErrorCode;->values()[Lcom/google/ads/AdRequest$ErrorCode;
+    sget-object v0, Lj3/t6;->b:[I
 
-    move-result-object v0
+    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
 
-    array-length v0, v0
+    move-result p0
 
-    new-array v0, v0, [I
+    aget p0, v0, p0
 
-    sput-object v0, Lj3/s6;->b:[I
-
-    const/4 v1, 0x1
-
-    :try_start_0
-    sget-object v2, Lcom/google/ads/AdRequest$ErrorCode;->INTERNAL_ERROR:Lcom/google/ads/AdRequest$ErrorCode;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    aput v1, v0, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
     const/4 v0, 0x2
 
-    :try_start_1
-    sget-object v2, Lj3/s6;->b:[I
+    if-eq p0, v0, :cond_2
 
-    sget-object v3, Lcom/google/ads/AdRequest$ErrorCode;->INVALID_REQUEST:Lcom/google/ads/AdRequest$ErrorCode;
+    const/4 v1, 0x3
 
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+    if-eq p0, v1, :cond_1
 
-    move-result v3
+    const/4 v0, 0x4
 
-    aput v0, v2, v3
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    if-eq p0, v0, :cond_0
 
-    :catch_1
-    const/4 v2, 0x3
+    const/4 p0, 0x0
 
-    :try_start_2
-    sget-object v3, Lj3/s6;->b:[I
+    return p0
 
-    sget-object v4, Lcom/google/ads/AdRequest$ErrorCode;->NETWORK_ERROR:Lcom/google/ads/AdRequest$ErrorCode;
+    :cond_0
+    return v1
 
-    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
+    :cond_1
+    return v0
 
-    move-result v4
+    :cond_2
+    const/4 p0, 0x1
 
-    aput v2, v3, v4
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    return p0
+.end method
 
-    :catch_2
-    :try_start_3
-    sget-object v3, Lj3/s6;->b:[I
+.method public static b(Lcom/google/android/gms/internal/ads/zzvc;Z)La1/a;
+    .locals 7
 
-    sget-object v4, Lcom/google/ads/AdRequest$ErrorCode;->NO_FILL:Lcom/google/ads/AdRequest$ErrorCode;
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzvc;->k:Ljava/util/List;
 
-    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
+    if-eqz v0, :cond_0
 
-    move-result v4
+    new-instance v0, Ljava/util/HashSet;
 
-    const/4 v5, 0x4
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzvc;->k:Ljava/util/List;
 
-    aput v5, v3, v4
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+    invoke-direct {v0, v1}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    move-object v4, v0
 
     .line 2
-    :catch_3
-    invoke-static {}, Lcom/google/ads/AdRequest$Gender;->values()[Lcom/google/ads/AdRequest$Gender;
+    new-instance v0, La1/a;
 
-    move-result-object v3
+    new-instance v2, Ljava/util/Date;
 
-    array-length v3, v3
+    iget-wide v5, p0, Lcom/google/android/gms/internal/ads/zzvc;->h:J
 
-    new-array v3, v3, [I
+    invoke-direct {v2, v5, v6}, Ljava/util/Date;-><init>(J)V
 
-    sput-object v3, Lj3/s6;->a:[I
+    iget v1, p0, Lcom/google/android/gms/internal/ads/zzvc;->j:I
 
-    :try_start_4
-    sget-object v4, Lcom/google/ads/AdRequest$Gender;->FEMALE:Lcom/google/ads/AdRequest$Gender;
+    const/4 v3, 0x1
 
-    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
+    if-eq v1, v3, :cond_2
 
-    move-result v4
+    const/4 v3, 0x2
 
-    aput v1, v3, v4
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+    if-eq v1, v3, :cond_1
 
-    :catch_4
-    :try_start_5
-    sget-object v1, Lj3/s6;->a:[I
-
-    sget-object v3, Lcom/google/ads/AdRequest$Gender;->MALE:Lcom/google/ads/AdRequest$Gender;
-
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v3
-
-    aput v0, v1, v3
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    :catch_5
-    :try_start_6
-    sget-object v0, Lj3/s6;->a:[I
-
+    .line 3
     sget-object v1, Lcom/google/ads/AdRequest$Gender;->UNKNOWN:Lcom/google/ads/AdRequest$Gender;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    goto :goto_1
 
-    move-result v1
+    .line 4
+    :cond_1
+    sget-object v1, Lcom/google/ads/AdRequest$Gender;->FEMALE:Lcom/google/ads/AdRequest$Gender;
 
-    aput v2, v0, v1
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+    goto :goto_1
 
-    :catch_6
-    return-void
+    .line 5
+    :cond_2
+    sget-object v1, Lcom/google/ads/AdRequest$Gender;->MALE:Lcom/google/ads/AdRequest$Gender;
+
+    :goto_1
+    move-object v3, v1
+
+    .line 6
+    iget-object v6, p0, Lcom/google/android/gms/internal/ads/zzvc;->q:Landroid/location/Location;
+
+    move-object v1, v0
+
+    move v5, p1
+
+    invoke-direct/range {v1 .. v6}, La1/a;-><init>(Ljava/util/Date;Lcom/google/ads/AdRequest$Gender;Ljava/util/Set;ZLandroid/location/Location;)V
+
+    return-object v0
 .end method

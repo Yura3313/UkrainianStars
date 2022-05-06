@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/authentication/AuthenticationFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$e;->a:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$e;->g:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,9 +38,9 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$e;->a:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$e;->g:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
 
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 

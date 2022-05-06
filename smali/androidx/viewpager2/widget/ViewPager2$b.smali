@@ -52,15 +52,15 @@
     .line 1
     iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$b;->a:Landroidx/viewpager2/widget/ViewPager2;
 
-    iget v1, v0, Landroidx/viewpager2/widget/ViewPager2;->i:I
+    iget v1, v0, Landroidx/viewpager2/widget/ViewPager2;->j:I
 
     if-eq v1, p1, :cond_0
 
     .line 2
-    iput p1, v0, Landroidx/viewpager2/widget/ViewPager2;->i:I
+    iput p1, v0, Landroidx/viewpager2/widget/ViewPager2;->j:I
 
     .line 3
-    iget-object p1, v0, Landroidx/viewpager2/widget/ViewPager2;->y:Landroidx/viewpager2/widget/ViewPager2$d;
+    iget-object p1, v0, Landroidx/viewpager2/widget/ViewPager2;->z:Landroidx/viewpager2/widget/ViewPager2$d;
 
     invoke-virtual {p1}, Landroidx/viewpager2/widget/ViewPager2$d;->b()V
 

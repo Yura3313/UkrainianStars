@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Ly4/u;
+.implements Ly4/x;
 
 
 # instance fields

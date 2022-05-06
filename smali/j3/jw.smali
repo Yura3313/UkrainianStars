@@ -1,97 +1,140 @@
-.class public final synthetic Lj3/jw;
+.class public final Lj3/jw;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lj3/x2;
-
 
 # instance fields
-.field public final a:Lj3/gw;
+.field public final a:Lj3/kz;
+
+.field public final b:Lj3/qy;
+
+.field public final c:Lj3/mm;
+
+.field public final d:Lj3/yv;
 
 
 # direct methods
-.method public constructor <init>(Lj3/gw;)V
+.method public constructor <init>(Lj3/kz;Lj3/qy;Lj3/mm;Lj3/yv;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj3/jw;->a:Lj3/gw;
+    .line 2
+    iput-object p1, p0, Lj3/jw;->a:Lj3/kz;
+
+    .line 3
+    iput-object p2, p0, Lj3/jw;->b:Lj3/qy;
+
+    .line 4
+    iput-object p3, p0, Lj3/jw;->c:Lj3/mm;
+
+    .line 5
+    iput-object p4, p0, Lj3/jw;->d:Lj3/yv;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Ljava/lang/Object;Ljava/util/Map;)V
-    .locals 7
+.method public final a()Landroid/view/View;
+    .locals 5
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzbgc;
+        }
+    .end annotation
 
     .line 1
-    iget-object v0, p0, Lj3/jw;->a:Lj3/gw;
+    iget-object v0, p0, Lj3/jw;->a:Lj3/kz;
 
-    move-object v1, p1
+    invoke-static {}, Lcom/google/android/gms/internal/ads/zzvj;->A2()Lcom/google/android/gms/internal/ads/zzvj;
 
-    check-cast v1, Lj3/ch;
+    move-result-object v1
+
+    const/4 v2, 0x0
 
     .line 2
-    invoke-interface {v1}, Lj3/ch;->Q()Lj3/fi;
+    invoke-virtual {v0, v1, v2}, Lj3/kz;->a(Lcom/google/android/gms/internal/ads/zzvj;Z)Lj3/gh;
 
-    move-result-object p1
-
-    new-instance v2, Lj3/hv;
-
-    invoke-direct {v2, v0, p2}, Lj3/hv;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    move-result-object v0
 
     .line 3
-    invoke-interface {p1, v2}, Lj3/fi;->f(Lj3/ii;)V
+    invoke-interface {v0}, Lj3/gh;->getView()Landroid/view/View;
 
-    const-string p1, "overlayHtml"
+    move-result-object v1
+
+    const/16 v2, 0x8
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 4
-    invoke-interface {p2, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    new-instance v1, Lj3/lw;
 
-    move-result-object p1
+    invoke-direct {v1, p0}, Lj3/lw;-><init>(Lj3/jw;)V
 
-    move-object v3, p1
+    const-string v2, "/sendMessageToSdk"
 
-    check-cast v3, Ljava/lang/String;
-
-    const-string p1, "baseUrl"
+    invoke-interface {v0, v2, v1}, Lj3/gh;->g(Ljava/lang/String;Lj3/y2;)V
 
     .line 5
-    invoke-interface {p2, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    new-instance v1, Lj3/kw;
 
-    move-result-object p1
+    invoke-direct {v1, p0}, Lj3/kw;-><init>(Lj3/jw;)V
 
-    move-object v2, p1
+    const-string v2, "/adMuted"
 
-    check-cast v2, Ljava/lang/String;
+    invoke-interface {v0, v2, v1}, Lj3/gh;->g(Ljava/lang/String;Lj3/y2;)V
 
     .line 6
-    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    iget-object v1, p0, Lj3/jw;->b:Lj3/qy;
 
-    move-result p1
+    new-instance v2, Ljava/lang/ref/WeakReference;
 
-    if-eqz p1, :cond_0
+    invoke-direct {v2, v0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    const-string p1, "text/html"
+    new-instance v3, Lj3/mw;
 
-    const-string p2, "UTF-8"
+    invoke-direct {v3, p0}, Lj3/mw;-><init>(Lj3/jw;)V
+
+    const-string v4, "/loadHtml"
+
+    invoke-virtual {v1, v2, v4, v3}, Lj3/qy;->c(Ljava/lang/ref/WeakReference;Ljava/lang/String;Lj3/y2;)V
 
     .line 7
-    invoke-interface {v1, v3, p1, p2}, Lj3/ch;->loadData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    iget-object v1, p0, Lj3/jw;->b:Lj3/qy;
 
-    return-void
+    new-instance v2, Ljava/lang/ref/WeakReference;
 
-    :cond_0
-    const/4 v6, 0x0
+    invoke-direct {v2, v0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    const-string v4, "text/html"
+    new-instance v3, Lj3/lv;
 
-    const-string v5, "UTF-8"
+    invoke-direct {v3, p0}, Lj3/lv;-><init>(Lj3/jw;)V
+
+    const-string v4, "/showOverlay"
+
+    invoke-virtual {v1, v2, v4, v3}, Lj3/qy;->c(Ljava/lang/ref/WeakReference;Ljava/lang/String;Lj3/y2;)V
 
     .line 8
-    invoke-interface/range {v1 .. v6}, Lj3/ch;->loadDataWithBaseURL(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    iget-object v1, p0, Lj3/jw;->b:Lj3/qy;
 
-    return-void
+    new-instance v2, Ljava/lang/ref/WeakReference;
+
+    invoke-direct {v2, v0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    new-instance v3, Lj3/nw;
+
+    invoke-direct {v3, p0}, Lj3/nw;-><init>(Lj3/jw;)V
+
+    const-string v4, "/hideOverlay"
+
+    invoke-virtual {v1, v2, v4, v3}, Lj3/qy;->c(Ljava/lang/ref/WeakReference;Ljava/lang/String;Lj3/y2;)V
+
+    .line 9
+    invoke-interface {v0}, Lj3/gh;->getView()Landroid/view/View;
+
+    move-result-object v0
+
+    return-object v0
 .end method

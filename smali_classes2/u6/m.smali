@@ -3,18 +3,10 @@
 .source "CurrentParsingState.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lu6/m$a;
-    }
-.end annotation
-
-
 # instance fields
 .field public a:I
 
-.field public b:Lu6/m$a;
+.field public b:I
 
 
 # direct methods
@@ -29,10 +21,10 @@
     .line 2
     iput v0, p0, Lu6/m;->a:I
 
-    .line 3
-    sget-object v0, Lu6/m$a;->NUMERIC:Lu6/m$a;
+    const/4 v0, 0x1
 
-    iput-object v0, p0, Lu6/m;->b:Lu6/m$a;
+    .line 3
+    iput v0, p0, Lu6/m;->b:I
 
     return-void
 .end method

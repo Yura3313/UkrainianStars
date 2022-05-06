@@ -91,7 +91,7 @@
     aput v1, v0, v3
 
     .line 6
-    iget v3, p1, Lj6/a;->b:I
+    iget v3, p1, Lj6/a;->h:I
 
     .line 7
     aget p2, p2, v2
@@ -242,7 +242,7 @@
 
     .line 19
     :cond_6
-    sget-object p1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 20
     goto :goto_6
@@ -258,7 +258,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lc6/a;->EAN_13:Lc6/a;
+    sget-object v0, Lc6/a;->n:Lc6/a;
 
     return-object v0
 .end method

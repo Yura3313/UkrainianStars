@@ -1,219 +1,124 @@
 .class public final Lcom/google/android/gms/internal/ads/r0;
-.super Ljava/lang/Object;
+.super Lj3/f60;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# static fields
-.field public static final g:Landroid/util/SparseArray;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/util/SparseArray<",
-            "Lcom/google/android/gms/internal/ads/k9$b;",
-            ">;"
-        }
-    .end annotation
-.end field
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lj3/f60<",
+        "Lj3/mu;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Landroid/content/Context;
+.field public final a:Lj3/fj;
 
-.field public final b:Lj3/jq;
+.field public final b:Lcom/google/android/gms/internal/ads/j$a;
 
-.field public final c:Landroid/telephony/TelephonyManager;
+.field public final c:Lj3/r70;
 
-.field public final d:Lj3/y30;
-
-.field public final e:Lj3/w30;
-
-.field public f:Lj3/b41;
+.field public final d:Lcom/google/android/gms/internal/ads/n;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 4
+.method public constructor <init>(Lj3/fj;Lcom/google/android/gms/internal/ads/j$a;Lj3/r70;Lcom/google/android/gms/internal/ads/n;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Landroid/util/SparseArray;
-
-    invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
+    invoke-direct {p0}, Lj3/f60;-><init>()V
 
     .line 2
-    sput-object v0, Lcom/google/android/gms/internal/ads/r0;->g:Landroid/util/SparseArray;
-
-    sget-object v1, Landroid/net/NetworkInfo$DetailedState;->CONNECTED:Landroid/net/NetworkInfo$DetailedState;
-
-    invoke-virtual {v1}, Landroid/net/NetworkInfo$DetailedState;->ordinal()I
-
-    move-result v1
-
-    sget-object v2, Lcom/google/android/gms/internal/ads/k9$b;->zzcdw:Lcom/google/android/gms/internal/ads/k9$b;
-
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/r0;->a:Lj3/fj;
 
     .line 3
-    sget-object v1, Landroid/net/NetworkInfo$DetailedState;->AUTHENTICATING:Landroid/net/NetworkInfo$DetailedState;
-
-    invoke-virtual {v1}, Landroid/net/NetworkInfo$DetailedState;->ordinal()I
-
-    move-result v1
-
-    sget-object v2, Lcom/google/android/gms/internal/ads/k9$b;->zzcdv:Lcom/google/android/gms/internal/ads/k9$b;
-
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/r0;->b:Lcom/google/android/gms/internal/ads/j$a;
 
     .line 4
-    sget-object v1, Landroid/net/NetworkInfo$DetailedState;->CONNECTING:Landroid/net/NetworkInfo$DetailedState;
-
-    invoke-virtual {v1}, Landroid/net/NetworkInfo$DetailedState;->ordinal()I
-
-    move-result v1
-
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+    iput-object p3, p0, Lcom/google/android/gms/internal/ads/r0;->c:Lj3/r70;
 
     .line 5
-    sget-object v1, Landroid/net/NetworkInfo$DetailedState;->OBTAINING_IPADDR:Landroid/net/NetworkInfo$DetailedState;
-
-    invoke-virtual {v1}, Landroid/net/NetworkInfo$DetailedState;->ordinal()I
-
-    move-result v1
-
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
-
-    .line 6
-    sget-object v1, Landroid/net/NetworkInfo$DetailedState;->DISCONNECTING:Landroid/net/NetworkInfo$DetailedState;
-
-    invoke-virtual {v1}, Landroid/net/NetworkInfo$DetailedState;->ordinal()I
-
-    move-result v1
-
-    sget-object v3, Lcom/google/android/gms/internal/ads/k9$b;->zzcdx:Lcom/google/android/gms/internal/ads/k9$b;
-
-    invoke-virtual {v0, v1, v3}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
-
-    .line 7
-    sget-object v1, Landroid/net/NetworkInfo$DetailedState;->BLOCKED:Landroid/net/NetworkInfo$DetailedState;
-
-    invoke-virtual {v1}, Landroid/net/NetworkInfo$DetailedState;->ordinal()I
-
-    move-result v1
-
-    sget-object v3, Lcom/google/android/gms/internal/ads/k9$b;->zzcdy:Lcom/google/android/gms/internal/ads/k9$b;
-
-    invoke-virtual {v0, v1, v3}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
-
-    .line 8
-    sget-object v1, Landroid/net/NetworkInfo$DetailedState;->DISCONNECTED:Landroid/net/NetworkInfo$DetailedState;
-
-    invoke-virtual {v1}, Landroid/net/NetworkInfo$DetailedState;->ordinal()I
-
-    move-result v1
-
-    invoke-virtual {v0, v1, v3}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
-
-    .line 9
-    sget-object v1, Landroid/net/NetworkInfo$DetailedState;->FAILED:Landroid/net/NetworkInfo$DetailedState;
-
-    invoke-virtual {v1}, Landroid/net/NetworkInfo$DetailedState;->ordinal()I
-
-    move-result v1
-
-    invoke-virtual {v0, v1, v3}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
-
-    .line 10
-    sget-object v1, Landroid/net/NetworkInfo$DetailedState;->IDLE:Landroid/net/NetworkInfo$DetailedState;
-
-    invoke-virtual {v1}, Landroid/net/NetworkInfo$DetailedState;->ordinal()I
-
-    move-result v1
-
-    invoke-virtual {v0, v1, v3}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
-
-    .line 11
-    sget-object v1, Landroid/net/NetworkInfo$DetailedState;->SCANNING:Landroid/net/NetworkInfo$DetailedState;
-
-    invoke-virtual {v1}, Landroid/net/NetworkInfo$DetailedState;->ordinal()I
-
-    move-result v1
-
-    invoke-virtual {v0, v1, v3}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
-
-    .line 12
-    sget-object v1, Landroid/net/NetworkInfo$DetailedState;->SUSPENDED:Landroid/net/NetworkInfo$DetailedState;
-
-    invoke-virtual {v1}, Landroid/net/NetworkInfo$DetailedState;->ordinal()I
-
-    move-result v1
-
-    sget-object v3, Lcom/google/android/gms/internal/ads/k9$b;->zzcdz:Lcom/google/android/gms/internal/ads/k9$b;
-
-    invoke-virtual {v0, v1, v3}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
-
-    .line 13
-    sget-object v1, Landroid/net/NetworkInfo$DetailedState;->CAPTIVE_PORTAL_CHECK:Landroid/net/NetworkInfo$DetailedState;
-
-    invoke-virtual {v1}, Landroid/net/NetworkInfo$DetailedState;->ordinal()I
-
-    move-result v1
-
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
-
-    .line 14
-    sget-object v1, Landroid/net/NetworkInfo$DetailedState;->VERIFYING_POOR_LINK:Landroid/net/NetworkInfo$DetailedState;
-
-    invoke-virtual {v1}, Landroid/net/NetworkInfo$DetailedState;->ordinal()I
-
-    move-result v1
-
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+    iput-object p4, p0, Lcom/google/android/gms/internal/ads/r0;->d:Lcom/google/android/gms/internal/ads/n;
 
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lj3/jq;Lj3/y30;Lj3/w30;)V
-    .locals 0
+
+# virtual methods
+.method public final c(Lj3/wg0;Landroid/os/Bundle;)Lj3/im0;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/wg0;",
+            "Landroid/os/Bundle;",
+            ")",
+            "Lj3/im0<",
+            "Lj3/mu;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/r0;->a:Lj3/fj;
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/r0;->a:Landroid/content/Context;
+    invoke-virtual {v0}, Lj3/fj;->n()Lj3/kk;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/r0;->b:Lcom/google/android/gms/internal/ads/j$a;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/r0;->b:Lj3/jq;
+    iput-object p1, v1, Lcom/google/android/gms/internal/ads/j$a;->b:Lj3/wg0;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/ads/r0;->d:Lj3/y30;
+    iput-object p2, v1, Lcom/google/android/gms/internal/ads/j$a;->c:Landroid/os/Bundle;
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/gms/internal/ads/r0;->e:Lj3/w30;
-
-    const-string p2, "phone"
-
-    .line 6
-    invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/j$a;->a()Lcom/google/android/gms/internal/ads/j;
 
     move-result-object p1
 
-    check-cast p1, Landroid/telephony/TelephonyManager;
+    .line 6
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/r0;->c:Landroid/telephony/TelephonyManager;
+    .line 7
+    iput-object p1, v0, Lj3/kk;->b:Lcom/google/android/gms/internal/ads/j;
 
-    return-void
-.end method
+    .line 8
+    iget-object p1, p0, Lcom/google/android/gms/internal/ads/r0;->d:Lcom/google/android/gms/internal/ads/n;
 
-.method public static a(Z)Lj3/b41;
-    .locals 0
+    .line 9
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    if-eqz p0, :cond_0
+    .line 10
+    iput-object p1, v0, Lj3/kk;->a:Lcom/google/android/gms/internal/ads/n;
 
-    .line 1
-    sget-object p0, Lj3/b41;->zzcbl:Lj3/b41;
+    .line 11
+    iget-object p1, p0, Lcom/google/android/gms/internal/ads/r0;->c:Lj3/r70;
 
-    return-object p0
+    .line 12
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    :cond_0
-    sget-object p0, Lj3/b41;->zzcbk:Lj3/b41;
+    .line 13
+    iput-object p1, v0, Lj3/kk;->c:Lj3/r70;
 
-    return-object p0
+    .line 14
+    invoke-virtual {v0}, Lj3/kk;->e()Lj3/yu;
+
+    move-result-object p1
+
+    .line 15
+    invoke-virtual {p1}, Lj3/yu;->b()Lj3/ap;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lj3/ap;->b()Lj3/im0;
+
+    move-result-object p1
+
+    return-object p1
 .end method

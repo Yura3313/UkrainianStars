@@ -1,5 +1,5 @@
 .class public Ld9/a$a;
-.super Ly7/g;
+.super Lz7/g;
 .source "AttachmentPreviewVM.java"
 
 
@@ -25,7 +25,7 @@
     .line 1
     iput-object p1, p0, Ld9/a$a;->b:Ld9/a;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -39,26 +39,26 @@
     iget-object v0, p0, Ld9/a$a;->b:Ld9/a;
 
     .line 2
-    iget-object v0, v0, Ld9/a;->b:Ll8/a;
+    iget-object v0, v0, Ld9/a;->b:Lm8/a;
 
     if-eqz v0, :cond_0
 
     .line 3
-    check-cast v0, Lbb/c;
+    check-cast v0, Lya/c;
 
     .line 4
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 5
-    check-cast v0, Lbb/p;
+    check-cast v0, Lya/p;
 
     .line 6
-    iget-object v0, v0, Lbb/p;->k0:Lpa/b;
+    iget-object v0, v0, Lya/p;->l0:Lna/b;
 
     if-eqz v0, :cond_0
 
     .line 7
-    invoke-virtual {v0}, Lpa/b;->c()V
+    invoke-virtual {v0}, Lna/b;->c()V
 
     :cond_0
     return-void

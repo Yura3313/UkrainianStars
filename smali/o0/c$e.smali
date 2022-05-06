@@ -1,5 +1,5 @@
 .class public Lo0/c$e;
-.super Ljava/lang/Object;
+.super Landroid/os/Handler;
 .source "ModernAsyncTask.java"
 
 
@@ -13,47 +13,86 @@
     name = "e"
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<Data:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
-
-
-# instance fields
-.field public final a:Lo0/c;
-
-.field public final b:[Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "[TData;"
-        }
-    .end annotation
-.end field
-
 
 # direct methods
-.method public varargs constructor <init>(Lo0/c;[Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lo0/c;",
-            "[TData;)V"
-        }
-    .end annotation
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    check-cast v0, Lo0/c$d;
 
     .line 2
-    iput-object p1, p0, Lo0/c$e;->a:Lo0/c;
+    iget p1, p1, Landroid/os/Message;->what:I
+
+    const/4 v1, 0x1
+
+    if-eq p1, v1, :cond_1
+
+    const/4 v1, 0x2
+
+    if-eq p1, v1, :cond_0
+
+    goto :goto_1
 
     .line 3
-    iput-object p2, p0, Lo0/c$e;->b:[Ljava/lang/Object;
+    :cond_0
+    iget-object p1, v0, Lo0/c$d;->a:Lo0/c;
 
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    goto :goto_1
+
+    .line 4
+    :cond_1
+    iget-object p1, v0, Lo0/c$d;->a:Lo0/c;
+
+    iget-object v0, v0, Lo0/c$d;->b:[Ljava/lang/Object;
+
+    const/4 v1, 0x0
+
+    aget-object v0, v0, v1
+
+    .line 5
+    iget-object v1, p1, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    .line 6
+    invoke-virtual {p1, v0}, Lo0/c;->b(Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    .line 7
+    :cond_2
+    invoke-virtual {p1, v0}, Lo0/c;->c(Ljava/lang/Object;)V
+
+    :goto_0
+    const/4 v0, 0x3
+
+    .line 8
+    iput v0, p1, Lo0/c;->i:I
+
+    :goto_1
     return-void
 .end method

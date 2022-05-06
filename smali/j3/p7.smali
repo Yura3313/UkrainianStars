@@ -3,7 +3,7 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/q7;
+.implements Lj3/t7;
 
 
 # direct methods
@@ -18,23 +18,27 @@
 
 
 # virtual methods
-.method public final a()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final b(Landroid/content/Context;Ljava/util/List;)V
+.method public final a(Landroid/content/Context;)Lj3/im0;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;)V"
+            ")",
+            "Lj3/im0<",
+            "Landroid/os/Bundle;",
+            ">;"
         }
     .end annotation
 
-    return-void
+    .line 1
+    new-instance p1, Landroid/os/Bundle;
+
+    invoke-direct {p1}, Landroid/os/Bundle;-><init>()V
+
+    invoke-static {p1}, Lj3/em0;->j(Ljava/lang/Object;)Lj3/im0;
+
+    move-result-object p1
+
+    return-object p1
 .end method

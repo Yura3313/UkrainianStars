@@ -207,7 +207,7 @@
     invoke-virtual {p0, v0}, Lcom/google/protobuf/CodedOutputStream$d;->a0(I)V
 
     .line 2
-    invoke-virtual {p1, p0}, Lcom/google/protobuf/i;->t(Lcom/google/protobuf/h;)V
+    invoke-virtual {p1, p0}, Lcom/google/protobuf/i;->s(Lcom/google/protobuf/h;)V
 
     return-void
 .end method
@@ -369,7 +369,7 @@
     return-void
 .end method
 
-.method public S(ILcom/google/protobuf/q0;Lcom/google/protobuf/j1;)V
+.method public S(ILcom/google/protobuf/q0;Lcom/google/protobuf/i1;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -389,7 +389,7 @@
 
     check-cast p1, Lcom/google/protobuf/a;
 
-    invoke-virtual {p1, p3}, Lcom/google/protobuf/a;->getSerializedSize(Lcom/google/protobuf/j1;)I
+    invoke-virtual {p1, p3}, Lcom/google/protobuf/a;->getSerializedSize(Lcom/google/protobuf/i1;)I
 
     move-result p1
 
@@ -398,7 +398,7 @@
     .line 3
     iget-object p1, p0, Lcom/google/protobuf/CodedOutputStream;->a:Lcom/google/protobuf/l;
 
-    invoke-interface {p3, p2, p1}, Lcom/google/protobuf/j1;->h(Ljava/lang/Object;Lcom/google/protobuf/z1;)V
+    invoke-interface {p3, p2, p1}, Lcom/google/protobuf/i1;->h(Ljava/lang/Object;Lcom/google/protobuf/y1;)V
 
     return-void
 .end method
@@ -553,7 +553,7 @@
     const/4 v2, 0x0
 
     .line 5
-    invoke-static {p1, v1, v2, v0}, Lcom/google/protobuf/w1;->d(Ljava/lang/CharSequence;[BII)I
+    invoke-static {p1, v1, v2, v0}, Lcom/google/protobuf/v1;->d(Ljava/lang/CharSequence;[BII)I
 
     move-result v0
 
@@ -589,7 +589,7 @@
     .line 11
     iget v2, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
     :try_end_0
-    .catch Lcom/google/protobuf/w1$d; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Lcom/google/protobuf/v1$d; {:try_start_0 .. :try_end_0} :catch_2
 
     if-ne v0, v1, :cond_2
 
@@ -606,7 +606,7 @@
 
     sub-int/2addr v4, v1
 
-    invoke-static {p1, v3, v1, v4}, Lcom/google/protobuf/w1;->d(Ljava/lang/CharSequence;[BII)I
+    invoke-static {p1, v3, v1, v4}, Lcom/google/protobuf/v1;->d(Ljava/lang/CharSequence;[BII)I
 
     move-result v1
 
@@ -627,7 +627,7 @@
 
     .line 17
     :cond_2
-    invoke-static {p1}, Lcom/google/protobuf/w1;->e(Ljava/lang/CharSequence;)I
+    invoke-static {p1}, Lcom/google/protobuf/v1;->e(Ljava/lang/CharSequence;)I
 
     move-result v3
 
@@ -639,7 +639,7 @@
 
     iget v1, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
 
-    invoke-static {p1, v0, v1, v3}, Lcom/google/protobuf/w1;->d(Ljava/lang/CharSequence;[BII)I
+    invoke-static {p1, v0, v1, v3}, Lcom/google/protobuf/v1;->d(Ljava/lang/CharSequence;[BII)I
 
     move-result v0
 
@@ -653,7 +653,7 @@
 
     iput v0, p0, Lcom/google/protobuf/CodedOutputStream$b;->g:I
     :try_end_1
-    .catch Lcom/google/protobuf/w1$d; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Lcom/google/protobuf/v1$d; {:try_start_1 .. :try_end_1} :catch_1
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_1 .. :try_end_1} :catch_0
 
     goto :goto_1
@@ -689,13 +689,13 @@
     .line 24
     throw v0
     :try_end_2
-    .catch Lcom/google/protobuf/w1$d; {:try_start_2 .. :try_end_2} :catch_2
+    .catch Lcom/google/protobuf/v1$d; {:try_start_2 .. :try_end_2} :catch_2
 
     :catch_2
     move-exception v0
 
     .line 25
-    invoke-virtual {p0, p1, v0}, Lcom/google/protobuf/CodedOutputStream;->F(Ljava/lang/String;Lcom/google/protobuf/w1$d;)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/protobuf/CodedOutputStream;->F(Ljava/lang/String;Lcom/google/protobuf/v1$d;)V
 
     :goto_1
     return-void

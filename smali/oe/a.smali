@@ -20,11 +20,11 @@
 
 
 # instance fields
-.field public final a:I
-
-.field public final b:I
+.field public final g:I
 
 .field public final h:I
+
+.field public final i:I
 
 
 # direct methods
@@ -41,7 +41,7 @@
     if-eq p3, v0, :cond_4
 
     .line 2
-    iput p1, p0, Loe/a;->a:I
+    iput p1, p0, Loe/a;->g:I
 
     if-lez p3, :cond_1
 
@@ -51,17 +51,17 @@
 
     .line 3
     :cond_0
-    invoke-static {p2, p3}, Lcom/google/android/play/core/assetpacks/r2;->g(II)I
+    invoke-static {p2, p3}, Lge/c;->a(II)I
 
     move-result v0
 
-    invoke-static {p1, p3}, Lcom/google/android/play/core/assetpacks/r2;->g(II)I
+    invoke-static {p1, p3}, Lge/c;->a(II)I
 
     move-result p1
 
     sub-int/2addr v0, p1
 
-    invoke-static {v0, p3}, Lcom/google/android/play/core/assetpacks/r2;->g(II)I
+    invoke-static {v0, p3}, Lge/c;->a(II)I
 
     move-result p1
 
@@ -80,17 +80,17 @@
     neg-int v0, p3
 
     .line 4
-    invoke-static {p1, v0}, Lcom/google/android/play/core/assetpacks/r2;->g(II)I
+    invoke-static {p1, v0}, Lge/c;->a(II)I
 
     move-result p1
 
-    invoke-static {p2, v0}, Lcom/google/android/play/core/assetpacks/r2;->g(II)I
+    invoke-static {p2, v0}, Lge/c;->a(II)I
 
     move-result v1
 
     sub-int/2addr p1, v1
 
-    invoke-static {p1, v0}, Lcom/google/android/play/core/assetpacks/r2;->g(II)I
+    invoke-static {p1, v0}, Lge/c;->a(II)I
 
     move-result p1
 
@@ -98,10 +98,10 @@
 
     .line 5
     :goto_0
-    iput p2, p0, Loe/a;->b:I
+    iput p2, p0, Loe/a;->h:I
 
     .line 6
-    iput p3, p0, Loe/a;->h:I
+    iput p3, p0, Loe/a;->i:I
 
     return-void
 
@@ -163,23 +163,23 @@
     if-nez v0, :cond_1
 
     :cond_0
-    iget v0, p0, Loe/a;->a:I
+    iget v0, p0, Loe/a;->g:I
 
     check-cast p1, Loe/a;
 
-    iget v1, p1, Loe/a;->a:I
-
-    if-ne v0, v1, :cond_2
-
-    iget v0, p0, Loe/a;->b:I
-
-    iget v1, p1, Loe/a;->b:I
+    iget v1, p1, Loe/a;->g:I
 
     if-ne v0, v1, :cond_2
 
     iget v0, p0, Loe/a;->h:I
 
-    iget p1, p1, Loe/a;->h:I
+    iget v1, p1, Loe/a;->h:I
+
+    if-ne v0, v1, :cond_2
+
+    iget v0, p0, Loe/a;->i:I
+
+    iget p1, p1, Loe/a;->i:I
 
     if-ne v0, p1, :cond_2
 
@@ -210,17 +210,17 @@
     goto :goto_0
 
     :cond_0
-    iget v0, p0, Loe/a;->a:I
+    iget v0, p0, Loe/a;->g:I
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget v1, p0, Loe/a;->b:I
+    iget v1, p0, Loe/a;->h:I
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget v1, p0, Loe/a;->h:I
+    iget v1, p0, Loe/a;->i:I
 
     add-int/2addr v0, v1
 
@@ -232,7 +232,7 @@
     .locals 4
 
     .line 1
-    iget v0, p0, Loe/a;->h:I
+    iget v0, p0, Loe/a;->i:I
 
     const/4 v1, 0x1
 
@@ -240,18 +240,18 @@
 
     if-lez v0, :cond_0
 
-    iget v0, p0, Loe/a;->a:I
+    iget v0, p0, Loe/a;->g:I
 
-    iget v3, p0, Loe/a;->b:I
+    iget v3, p0, Loe/a;->h:I
 
     if-le v0, v3, :cond_1
 
     goto :goto_0
 
     :cond_0
-    iget v0, p0, Loe/a;->a:I
+    iget v0, p0, Loe/a;->g:I
 
-    iget v3, p0, Loe/a;->b:I
+    iget v3, p0, Loe/a;->h:I
 
     if-ge v0, v3, :cond_1
 
@@ -270,11 +270,11 @@
     .line 1
     new-instance v0, Loe/b;
 
-    iget v1, p0, Loe/a;->a:I
+    iget v1, p0, Loe/a;->g:I
 
-    iget v2, p0, Loe/a;->b:I
+    iget v2, p0, Loe/a;->h:I
 
-    iget v3, p0, Loe/a;->h:I
+    iget v3, p0, Loe/a;->i:I
 
     invoke-direct {v0, v1, v2, v3}, Loe/b;-><init>(III)V
 
@@ -285,7 +285,7 @@
     .locals 3
 
     .line 1
-    iget v0, p0, Loe/a;->h:I
+    iget v0, p0, Loe/a;->i:I
 
     const-string v1, " step "
 
@@ -295,7 +295,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget v2, p0, Loe/a;->a:I
+    iget v2, p0, Loe/a;->g:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -303,13 +303,13 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Loe/a;->b:I
+    iget v2, p0, Loe/a;->h:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Loe/a;->h:I
+    iget v1, p0, Loe/a;->i:I
 
     goto :goto_0
 
@@ -318,7 +318,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget v2, p0, Loe/a;->a:I
+    iget v2, p0, Loe/a;->g:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -326,13 +326,13 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Loe/a;->b:I
+    iget v2, p0, Loe/a;->h:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Loe/a;->h:I
+    iget v1, p0, Loe/a;->i:I
 
     neg-int v1, v1
 

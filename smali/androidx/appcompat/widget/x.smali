@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static I:Ljava/lang/reflect/Method;
+.field public static J:Ljava/lang/reflect/Method;
 
 
 # instance fields
-.field public H:Landroidx/appcompat/widget/w;
+.field public I:Landroidx/appcompat/widget/w;
 
 
 # direct methods
@@ -53,7 +53,7 @@
 
     move-result-object v0
 
-    sput-object v0, Landroidx/appcompat/widget/x;->I:Ljava/lang/reflect/Method;
+    sput-object v0, Landroidx/appcompat/widget/x;->J:Ljava/lang/reflect/Method;
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -79,7 +79,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/x;->H:Landroidx/appcompat/widget/w;
+    iget-object v0, p0, Landroidx/appcompat/widget/x;->I:Landroidx/appcompat/widget/w;
 
     if-eqz v0, :cond_0
 
@@ -94,7 +94,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/x;->H:Landroidx/appcompat/widget/w;
+    iget-object v0, p0, Landroidx/appcompat/widget/x;->I:Landroidx/appcompat/widget/w;
 
     if-eqz v0, :cond_0
 

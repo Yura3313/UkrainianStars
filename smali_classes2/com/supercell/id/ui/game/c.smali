@@ -20,7 +20,7 @@
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/ui/game/c;
+.field public static final g:Lcom/supercell/id/ui/game/c;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/game/c;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/game/c;->a:Lcom/supercell/id/ui/game/c;
+    sput-object v0, Lcom/supercell/id/ui/game/c;->g:Lcom/supercell/id/ui/game/c;
 
     return-void
 .end method
@@ -65,12 +65,12 @@
     .line 2
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object p1
 
     .line 3
-    iget-object p1, p1, Lwd/r;->j:Lcom/supercell/id/IdConfiguration;
+    iget-object p1, p1, Lvd/r;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 4
     invoke-virtual {p1}, Lcom/supercell/id/IdConfiguration;->getLocale()Ljava/util/Locale;
@@ -83,7 +83,7 @@
 
     const-string p2, "(this as java.lang.String).toUpperCase(locale)"
 
-    invoke-static {p1, p2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 
@@ -91,14 +91,14 @@
     const-string p1, "text"
 
     .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_1
     const-string p1, "<anonymous parameter 0>"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

@@ -1,51 +1,32 @@
-.class public final Lj3/p11;
+.class public interface abstract Lj3/p11;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/internal/ads/zzpr;",
-        ">;"
-    }
-.end annotation
-
-
-# direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
 
 # virtual methods
-.method public final synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzpr;
-
-    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzpr;-><init>(Landroid/os/Parcel;)V
-
-    return-object v0
+.method public abstract U0()Landroid/net/Uri;
 .end method
 
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
+.method public abstract a(Lj3/q11;)J
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
 
-    const/4 p1, 0x0
+.method public abstract close()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
 
-    new-array p1, p1, [Lcom/google/android/gms/internal/ads/zzpr;
-
-    return-object p1
+.method public abstract read([BII)I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 .end method

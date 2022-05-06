@@ -38,7 +38,7 @@
 
     const-string v1, "implStorage.get()"
 
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljava/util/Random;
 

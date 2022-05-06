@@ -1,58 +1,50 @@
-.class public final synthetic Lj3/k41;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
-
-# interfaces
-.implements Ljava/util/Comparator;
+.class public final Lj3/k41;
+.super Lj3/qd;
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# static fields
-.field public static final a:Ljava/util/Comparator;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lj3/qd<",
+        "Ljava/io/InputStream;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic h:Lj3/l41;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lj3/k41;
-
-    invoke-direct {v0}, Lj3/k41;-><init>()V
-
-    sput-object v0, Lj3/k41;->a:Ljava/util/Comparator;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lj3/l41;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    iput-object p1, p0, Lj3/k41;->h:Lj3/l41;
+
+    invoke-direct {p0}, Lj3/qd;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public final cancel(Z)Z
     .locals 1
 
-    check-cast p1, Ljava/lang/String;
-
-    check-cast p2, Ljava/lang/String;
-
     .line 1
-    sget-object v0, Lcom/google/android/gms/ads/n;->b:Ljava/util/List;
+    iget-object v0, p0, Lj3/k41;->h:Lj3/l41;
 
-    invoke-interface {v0, p1}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
-
-    move-result p1
+    invoke-static {v0}, Lj3/l41;->a(Lj3/l41;)V
 
     .line 2
-    invoke-interface {v0, p2}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
+    iget-object v0, p0, Lj3/qd;->g:Lj3/sm0;
 
-    move-result p2
+    invoke-virtual {v0, p1}, Lj3/fl0;->cancel(Z)Z
 
-    sub-int/2addr p1, p2
+    move-result p1
 
     return p1
 .end method

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/material/textfield/h;
+.field public final synthetic g:Lcom/google/android/material/textfield/h;
 
 
 # direct methods
@@ -15,7 +15,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/i;->a:Lcom/google/android/material/textfield/h;
+    iput-object p1, p0, Lcom/google/android/material/textfield/i;->g:Lcom/google/android/material/textfield/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     move-result p1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/i;->a:Lcom/google/android/material/textfield/h;
+    iget-object v0, p0, Lcom/google/android/material/textfield/i;->g:Lcom/google/android/material/textfield/h;
 
     iget-object v0, v0, Lcom/google/android/material/textfield/m;->c:Lcom/google/android/material/internal/CheckableImageButton;
 

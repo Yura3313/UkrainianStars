@@ -13,23 +13,19 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lo5/e$a;->a:[I
-
     invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
 
-    move-result v1
-
-    aget v0, v0, v1
+    move-result v0
 
     const/4 v1, 0x1
 
     if-eq v0, v1, :cond_2
 
-    const/4 v1, 0x2
+    const/4 v1, 0x3
 
     if-eq v0, v1, :cond_1
 
-    const/4 v1, 0x3
+    const/4 v1, 0x4
 
     if-ne v0, v1, :cond_0
 

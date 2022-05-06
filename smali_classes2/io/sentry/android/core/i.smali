@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lio/sentry/android/core/AppLifecycleIntegration;
+.field public final synthetic g:Lio/sentry/android/core/AppLifecycleIntegration;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lio/sentry/android/core/i;->a:Lio/sentry/android/core/AppLifecycleIntegration;
+    iput-object p1, p0, Lio/sentry/android/core/i;->g:Lio/sentry/android/core/AppLifecycleIntegration;
 
     return-void
 .end method
@@ -26,7 +26,7 @@
 .method public final run()V
     .locals 1
 
-    iget-object v0, p0, Lio/sentry/android/core/i;->a:Lio/sentry/android/core/AppLifecycleIntegration;
+    iget-object v0, p0, Lio/sentry/android/core/i;->g:Lio/sentry/android/core/AppLifecycleIntegration;
 
     invoke-static {v0}, Lio/sentry/android/core/AppLifecycleIntegration;->a(Lio/sentry/android/core/AppLifecycleIntegration;)V
 

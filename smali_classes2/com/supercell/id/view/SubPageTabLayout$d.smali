@@ -56,7 +56,7 @@
 
     const/4 v1, 0x1
 
-    sget v2, Lcom/supercell/id/view/SubPageTabLayout;->c0:I
+    sget v2, Lcom/supercell/id/view/SubPageTabLayout;->d0:I
 
     .line 2
     invoke-virtual {v0, p1, v1}, Lcom/supercell/id/view/SubPageTabLayout;->s(Lcom/google/android/material/tabs/TabLayout$g;Z)V
@@ -75,7 +75,7 @@
 
     const/4 v1, 0x0
 
-    sget v2, Lcom/supercell/id/view/SubPageTabLayout;->c0:I
+    sget v2, Lcom/supercell/id/view/SubPageTabLayout;->d0:I
 
     .line 2
     invoke-virtual {v0, p1, v1}, Lcom/supercell/id/view/SubPageTabLayout;->s(Lcom/google/android/material/tabs/TabLayout$g;Z)V

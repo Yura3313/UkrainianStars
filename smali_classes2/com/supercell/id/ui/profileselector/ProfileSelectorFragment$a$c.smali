@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->i(Lwd/k1$a;ILwd/j1;)V
+    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->i(Lvd/k1$a;ILvd/j1;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -29,7 +29,7 @@
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;
+.field public static final g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;->a:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;
+    sput-object v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$c;
 
     return-void
 .end method
@@ -96,7 +96,7 @@
     if-eqz p1, :cond_0
 
     .line 6
-    invoke-static {p1}, Lce/f;->g(Landroid/content/Context;)Landroid/graphics/Bitmap;
+    invoke-static {p1}, Lp5/c0;->g(Landroid/content/Context;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
@@ -131,14 +131,14 @@
     const-string p1, "value"
 
     .line 11
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_2
     const-string p1, "view"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

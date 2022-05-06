@@ -3,23 +3,23 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/google/android/gms/common/internal/BaseGmsClient$a;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic a:Lj3/qd;
 
-.field public final b:Ljava/lang/Object;
+.field public final synthetic b:Lj3/n3;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method public constructor <init>(Lj3/n3;Lj3/qd;)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lj3/r3;->a:I
+    iput-object p1, p0, Lj3/r3;->b:Lj3/n3;
 
-    iput-object p1, p0, Lj3/r3;->b:Ljava/lang/Object;
+    iput-object p2, p0, Lj3/r3;->a:Lj3/qd;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,95 +28,62 @@
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
-
-    iget v0, p0, Lj3/r3;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_1
+.method public final F0(I)V
+    .locals 4
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/r3;->b:Ljava/lang/Object;
+    iget-object v0, p0, Lj3/r3;->a:Lj3/qd;
 
-    check-cast v0, Lj3/oo;
+    new-instance v1, Ljava/lang/RuntimeException;
 
-    const/4 v1, 0x0
+    const/16 v2, 0x22
+
+    const-string v3, "onConnectionSuspended: "
+
+    invoke-static {v2, v3, p1}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v1, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Lj3/qd;->c(Ljava/lang/Throwable;)Z
+
+    return-void
+.end method
+
+.method public final Y0(Landroid/os/Bundle;)V
+    .locals 1
+
+    .line 1
+    :try_start_0
+    iget-object p1, p0, Lj3/r3;->a:Lj3/qd;
+
+    iget-object v0, p0, Lj3/r3;->b:Lj3/n3;
 
     .line 2
-    iput-boolean v1, v0, Lj3/oo;->d:Z
-
-    return-void
+    iget-object v0, v0, Lj3/n3;->a:Lj3/k3;
 
     .line 3
-    :pswitch_1
-    iget-object v0, p0, Lj3/r3;->b:Ljava/lang/Object;
+    invoke-virtual {v0}, Lcom/google/android/gms/common/internal/BaseGmsClient;->v()Landroid/os/IInterface;
 
-    check-cast v0, Lj3/hf;
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzahx;
 
     .line 4
-    iget-object v0, v0, Lj3/hf;->k:Lj3/ie;
+    invoke-virtual {p1, v0}, Lj3/qd;->b(Ljava/lang/Object;)Z
+    :try_end_0
+    .catch Landroid/os/DeadObjectException; {:try_start_0 .. :try_end_0} :catch_0
 
-    if-eqz v0, :cond_0
+    return-void
+
+    :catch_0
+    move-exception p1
 
     .line 5
-    check-cast v0, Lj3/me;
+    iget-object v0, p0, Lj3/r3;->a:Lj3/qd;
 
-    invoke-virtual {v0}, Lj3/me;->a()V
-
-    :cond_0
-    return-void
-
-    .line 6
-    :pswitch_2
-    iget-object v0, p0, Lj3/r3;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/m3;
-
-    .line 7
-    iget-object v1, v0, Lj3/m3;->a:Lj3/j3;
-
-    if-nez v1, :cond_1
-
-    goto :goto_0
-
-    .line 8
-    :cond_1
-    iget-object v0, v0, Lj3/m3;->a:Lj3/j3;
-
-    invoke-virtual {v0}, Lcom/google/android/gms/common/internal/BaseGmsClient;->disconnect()V
-
-    .line 9
-    invoke-static {}, Landroid/os/Binder;->flushPendingCommands()V
-
-    :goto_0
-    return-void
-
-    .line 10
-    :goto_1
-    iget-object v0, p0, Lj3/r3;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/k7;
-
-    .line 11
-    iget-object v0, v0, Lj3/k7;->b:Ljava/lang/Object;
-
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzcxo;
-
-    .line 12
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/zzcxo;->i:Lj3/y70;
-
-    .line 13
-    invoke-virtual {v0}, Lj3/y70;->F()V
+    invoke-virtual {v0, p1}, Lj3/qd;->c(Ljava/lang/Throwable;)Z
 
     return-void
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

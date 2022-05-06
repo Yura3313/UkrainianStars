@@ -61,7 +61,7 @@
 
     iget-object v0, v0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mServiceComponent:Landroid/content/ComponentName;
 
-    invoke-static {v0}, Landroid/support/v4/media/a;->b(Ljava/lang/Object;)V
+    invoke-static {v0}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
 
     .line 4
     :cond_0

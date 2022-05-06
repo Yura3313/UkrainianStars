@@ -15,15 +15,15 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final b:Lcom/google/android/gms/drive/DriveId;
+.field public final h:Lcom/google/android/gms/drive/DriveId;
 
-.field public final h:I
-
-.field public final i:J
+.field public final i:I
 
 .field public final j:J
+
+.field public final k:J
 
 
 # direct methods
@@ -47,19 +47,19 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/internal/drive/zzh;->a:I
+    iput p1, p0, Lcom/google/android/gms/internal/drive/zzh;->g:I
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/drive/zzh;->b:Lcom/google/android/gms/drive/DriveId;
+    iput-object p2, p0, Lcom/google/android/gms/internal/drive/zzh;->h:Lcom/google/android/gms/drive/DriveId;
 
     .line 4
-    iput p3, p0, Lcom/google/android/gms/internal/drive/zzh;->h:I
+    iput p3, p0, Lcom/google/android/gms/internal/drive/zzh;->i:I
 
     .line 5
-    iput-wide p4, p0, Lcom/google/android/gms/internal/drive/zzh;->i:J
+    iput-wide p4, p0, Lcom/google/android/gms/internal/drive/zzh;->j:J
 
     .line 6
-    iput-wide p6, p0, Lcom/google/android/gms/internal/drive/zzh;->j:J
+    iput-wide p6, p0, Lcom/google/android/gms/internal/drive/zzh;->k:J
 
     return-void
 .end method
@@ -96,15 +96,15 @@
     check-cast p1, Lcom/google/android/gms/internal/drive/zzh;
 
     .line 3
-    iget v2, p0, Lcom/google/android/gms/internal/drive/zzh;->a:I
+    iget v2, p0, Lcom/google/android/gms/internal/drive/zzh;->g:I
 
-    iget v3, p1, Lcom/google/android/gms/internal/drive/zzh;->a:I
+    iget v3, p1, Lcom/google/android/gms/internal/drive/zzh;->g:I
 
     if-ne v2, v3, :cond_2
 
-    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzh;->b:Lcom/google/android/gms/drive/DriveId;
+    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzh;->h:Lcom/google/android/gms/drive/DriveId;
 
-    iget-object v3, p1, Lcom/google/android/gms/internal/drive/zzh;->b:Lcom/google/android/gms/drive/DriveId;
+    iget-object v3, p1, Lcom/google/android/gms/internal/drive/zzh;->h:Lcom/google/android/gms/drive/DriveId;
 
     .line 4
     invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -113,23 +113,23 @@
 
     if-eqz v2, :cond_2
 
-    iget v2, p0, Lcom/google/android/gms/internal/drive/zzh;->h:I
+    iget v2, p0, Lcom/google/android/gms/internal/drive/zzh;->i:I
 
-    iget v3, p1, Lcom/google/android/gms/internal/drive/zzh;->h:I
+    iget v3, p1, Lcom/google/android/gms/internal/drive/zzh;->i:I
 
     if-ne v2, v3, :cond_2
 
-    iget-wide v2, p0, Lcom/google/android/gms/internal/drive/zzh;->i:J
+    iget-wide v2, p0, Lcom/google/android/gms/internal/drive/zzh;->j:J
 
-    iget-wide v4, p1, Lcom/google/android/gms/internal/drive/zzh;->i:J
+    iget-wide v4, p1, Lcom/google/android/gms/internal/drive/zzh;->j:J
 
     cmp-long v6, v2, v4
 
     if-nez v6, :cond_2
 
-    iget-wide v2, p0, Lcom/google/android/gms/internal/drive/zzh;->j:J
+    iget-wide v2, p0, Lcom/google/android/gms/internal/drive/zzh;->k:J
 
-    iget-wide v4, p1, Lcom/google/android/gms/internal/drive/zzh;->j:J
+    iget-wide v4, p1, Lcom/google/android/gms/internal/drive/zzh;->k:J
 
     cmp-long p1, v2, v4
 
@@ -150,7 +150,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget v1, p0, Lcom/google/android/gms/internal/drive/zzh;->a:I
+    iget v1, p0, Lcom/google/android/gms/internal/drive/zzh;->g:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -160,13 +160,13 @@
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzh;->b:Lcom/google/android/gms/drive/DriveId;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzh;->h:Lcom/google/android/gms/drive/DriveId;
 
     const/4 v2, 0x1
 
     aput-object v1, v0, v2
 
-    iget v1, p0, Lcom/google/android/gms/internal/drive/zzh;->h:I
+    iget v1, p0, Lcom/google/android/gms/internal/drive/zzh;->i:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -176,7 +176,7 @@
 
     aput-object v1, v0, v2
 
-    iget-wide v1, p0, Lcom/google/android/gms/internal/drive/zzh;->i:J
+    iget-wide v1, p0, Lcom/google/android/gms/internal/drive/zzh;->j:J
 
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -186,7 +186,7 @@
 
     aput-object v1, v0, v2
 
-    iget-wide v1, p0, Lcom/google/android/gms/internal/drive/zzh;->j:J
+    iget-wide v1, p0, Lcom/google/android/gms/internal/drive/zzh;->k:J
 
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -217,7 +217,7 @@
     const/4 v1, 0x2
 
     .line 2
-    iget v2, p0, Lcom/google/android/gms/internal/drive/zzh;->a:I
+    iget v2, p0, Lcom/google/android/gms/internal/drive/zzh;->g:I
 
     const/4 v3, 0x4
 
@@ -230,14 +230,14 @@
     const/4 v1, 0x3
 
     .line 5
-    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzh;->b:Lcom/google/android/gms/drive/DriveId;
+    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzh;->h:Lcom/google/android/gms/drive/DriveId;
 
     const/4 v4, 0x0
 
     invoke-static {p1, v1, v2, p2, v4}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 6
-    iget p2, p0, Lcom/google/android/gms/internal/drive/zzh;->h:I
+    iget p2, p0, Lcom/google/android/gms/internal/drive/zzh;->i:I
 
     .line 7
     invoke-static {p1, v3, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -248,7 +248,7 @@
     const/4 p2, 0x5
 
     .line 9
-    iget-wide v1, p0, Lcom/google/android/gms/internal/drive/zzh;->i:J
+    iget-wide v1, p0, Lcom/google/android/gms/internal/drive/zzh;->j:J
 
     const/16 v3, 0x8
 
@@ -261,7 +261,7 @@
     const/4 p2, 0x6
 
     .line 12
-    iget-wide v1, p0, Lcom/google/android/gms/internal/drive/zzh;->j:J
+    iget-wide v1, p0, Lcom/google/android/gms/internal/drive/zzh;->k:J
 
     .line 13
     invoke-static {p1, p2, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V

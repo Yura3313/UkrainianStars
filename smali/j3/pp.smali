@@ -1,113 +1,193 @@
 .class public final Lj3/pp;
-.super Lj3/qu0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bo;
+.implements Lj3/rv0;
 
 
 # instance fields
-.field public m:Ljava/lang/String;
+.field public final synthetic a:I
 
-.field public n:Z
+.field public final b:Lj3/vv0;
+
+.field public final c:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lj3/ej;Lj3/vv0;)V
     .locals 1
 
-    .line 1
-    invoke-direct {p0}, Lj3/qu0;-><init>()V
+    const/4 v0, 0x3
 
-    const-string v0, "moov"
+    iput v0, p0, Lj3/pp;->a:I
 
     .line 2
-    iput-object v0, p0, Lj3/pp;->m:Ljava/lang/String;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iput-object p1, p0, Lj3/pp;->c:Ljava/lang/Object;
+
+    .line 4
+    iput-object p2, p0, Lj3/pp;->b:Lj3/vv0;
 
     return-void
+.end method
+
+.method public synthetic constructor <init>(Lj3/vv0;Lj3/vv0;I)V
+    .locals 0
+
+    .line 1
+    iput p3, p0, Lj3/pp;->a:I
+
+    iput-object p1, p0, Lj3/pp;->b:Lj3/vv0;
+
+    iput-object p2, p0, Lj3/pp;->c:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a(Lj3/vv0;Lj3/vv0;)Lj3/pp;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lj3/pp;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, p1, v1}, Lj3/pp;-><init>(Lj3/vv0;Lj3/vv0;I)V
+
+    return-object v0
+.end method
+
+.method public static b(Lj3/vv0;Lj3/vv0;)Lj3/pp;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lj3/pp;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, p0, p1, v1}, Lj3/pp;-><init>(Lj3/vv0;Lj3/vv0;I)V
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final bridge synthetic b(Lj3/kq;)V
-    .locals 0
+.method public final get()Ljava/lang/Object;
+    .locals 3
 
-    return-void
-.end method
+    iget v0, p0, Lj3/pp;->a:I
 
-.method public final c(Lj3/yf;Ljava/nio/ByteBuffer;JLj3/nn;)V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p1}, Lj3/yf;->a()J
-
-    invoke-virtual {p2}, Ljava/nio/ByteBuffer;->remaining()I
-
-    .line 2
-    invoke-virtual {p2}, Ljava/nio/ByteBuffer;->remaining()I
-
-    move-result p2
-
-    const/16 v0, 0x10
-
-    if-ne p2, v0, :cond_0
-
-    const/4 p2, 0x1
+    packed-switch v0, :pswitch_data_0
 
     goto :goto_0
 
-    :cond_0
-    const/4 p2, 0x0
-
-    :goto_0
-    iput-boolean p2, p0, Lj3/pp;->n:Z
-
-    .line 3
-    invoke-virtual {p0, p1, p3, p4, p5}, Lj3/pp;->d(Lj3/yf;JLj3/nn;)V
-
-    return-void
-.end method
-
-.method public final d(Lj3/yf;JLj3/nn;)V
-    .locals 2
-
     .line 1
-    iput-object p1, p0, Lj3/qu0;->b:Lj3/yf;
+    :pswitch_0
+    iget-object v0, p0, Lj3/pp;->b:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lj3/qy;
+
+    iget-object v1, p0, Lj3/pp;->c:Ljava/lang/Object;
+
+    check-cast v1, Lj3/vv0;
+
+    invoke-interface {v1}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lk2/c;
 
     .line 2
-    invoke-virtual {p1}, Lj3/yf;->a()J
+    new-instance v2, Lj3/iw;
 
-    move-result-wide v0
+    invoke-direct {v2, v0, v1}, Lj3/iw;-><init>(Lj3/qy;Lk2/c;)V
 
-    iput-wide v0, p0, Lj3/qu0;->i:J
+    return-object v2
 
     .line 3
-    invoke-virtual {p1}, Lj3/yf;->a()J
+    :pswitch_1
+    iget-object v0, p0, Lj3/pp;->b:Lj3/vv0;
 
-    move-result-wide v0
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    add-long/2addr v0, p2
+    move-result-object v0
 
-    invoke-virtual {p1, v0, v1}, Lj3/yf;->b(J)V
+    check-cast v0, Lj3/lg0;
+
+    iget-object v1, p0, Lj3/pp;->c:Ljava/lang/Object;
+
+    check-cast v1, Lj3/vv0;
+
+    invoke-interface {v1}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lj3/yi0;
 
     .line 4
-    invoke-virtual {p1}, Lj3/yf;->a()J
+    new-instance v2, Lj3/fu;
 
-    move-result-wide p1
+    invoke-direct {v2, v0, v1}, Lj3/fu;-><init>(Lj3/lg0;Lj3/yi0;)V
 
-    iput-wide p1, p0, Lj3/qu0;->j:J
+    return-object v2
 
     .line 5
-    iput-object p4, p0, Lj3/qu0;->a:Lj3/nn;
+    :pswitch_2
+    iget-object v0, p0, Lj3/pp;->b:Lj3/vv0;
 
-    return-void
-.end method
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-.method public final getType()Ljava/lang/String;
-    .locals 1
+    move-result-object v0
 
-    .line 1
-    iget-object v0, p0, Lj3/pp;->m:Ljava/lang/String;
+    check-cast v0, Lj3/sl;
 
-    return-object v0
+    iget-object v1, p0, Lj3/pp;->c:Ljava/lang/Object;
+
+    check-cast v1, Lj3/vv0;
+
+    invoke-interface {v1}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/concurrent/Executor;
+
+    .line 6
+    new-instance v2, Lj3/yt;
+
+    invoke-direct {v2, v0, v1}, Lj3/yt;-><init>(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
+
+    return-object v2
+
+    .line 7
+    :goto_0
+    iget-object v0, p0, Lj3/pp;->b:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lj3/c00;
+
+    .line 8
+    new-instance v1, Lj3/v50;
+
+    invoke-direct {v1, v0}, Lj3/v50;-><init>(Lj3/c00;)V
+
+    return-object v1
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

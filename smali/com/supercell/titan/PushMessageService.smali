@@ -52,7 +52,7 @@
 
     const-string v2, "*"
 
-    invoke-virtual {v0, v1, v2}, Lcom/google/firebase/iid/FirebaseInstanceId;->c(Ljava/lang/String;Ljava/lang/String;)La4/f;
+    invoke-virtual {v0, v1, v2}, Lcom/google/firebase/iid/FirebaseInstanceId;->c(Ljava/lang/String;Ljava/lang/String;)Lb4/f;
 
     move-result-object v0
 
@@ -65,22 +65,22 @@
 
     invoke-direct {v2}, Lcom/supercell/titan/PushMessageService$a;-><init>()V
 
-    check-cast v0, La4/y;
+    check-cast v0, Lb4/y;
 
     .line 5
-    new-instance v3, La4/s;
+    new-instance v3, Lb4/s;
 
-    sget-object v4, La4/h;->a:Ljava/util/concurrent/Executor;
+    sget-object v4, Lb4/h;->a:Ljava/util/concurrent/Executor;
 
     .line 6
-    sget v5, La4/z;->a:I
+    sget v5, Lb4/z;->a:I
 
-    invoke-direct {v3, v4, v2}, La4/s;-><init>(Ljava/util/concurrent/Executor;La4/e;)V
+    invoke-direct {v3, v4, v2}, Lb4/s;-><init>(Ljava/util/concurrent/Executor;Lb4/e;)V
 
     .line 7
-    iget-object v2, v0, La4/y;->b:La4/v;
+    iget-object v2, v0, Lb4/y;->b:Lb4/v;
 
-    invoke-virtual {v2, v3}, La4/v;->b(La4/w;)V
+    invoke-virtual {v2, v3}, Lb4/v;->b(Lb4/w;)V
 
     .line 8
     invoke-static {v1}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->b(Landroid/app/Activity;)La2/i;
@@ -88,32 +88,32 @@
     move-result-object v1
 
     .line 9
-    const-class v2, La4/y$a;
+    const-class v2, Lb4/y$a;
 
     const-string v4, "TaskOnStopCallback"
 
-    invoke-interface {v1, v4, v2}, La2/i;->i(Ljava/lang/String;Ljava/lang/Class;)Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+    invoke-interface {v1, v4, v2}, La2/i;->g(Ljava/lang/String;Ljava/lang/Class;)Lcom/google/android/gms/common/api/internal/LifecycleCallback;
 
     move-result-object v2
 
-    check-cast v2, La4/y$a;
+    check-cast v2, Lb4/y$a;
 
     if-nez v2, :cond_0
 
     .line 10
-    new-instance v2, La4/y$a;
+    new-instance v2, Lb4/y$a;
 
-    invoke-direct {v2, v1}, La4/y$a;-><init>(La2/i;)V
+    invoke-direct {v2, v1}, Lb4/y$a;-><init>(La2/i;)V
 
     .line 11
     :cond_0
-    iget-object v1, v2, La4/y$a;->b:Ljava/util/List;
+    iget-object v1, v2, Lb4/y$a;->h:Ljava/util/List;
 
     monitor-enter v1
 
     .line 12
     :try_start_0
-    iget-object v2, v2, La4/y$a;->b:Ljava/util/List;
+    iget-object v2, v2, Lb4/y$a;->h:Ljava/util/List;
 
     new-instance v4, Ljava/lang/ref/WeakReference;
 
@@ -127,7 +127,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 14
-    invoke-virtual {v0}, La4/y;->r()V
+    invoke-virtual {v0}, Lb4/y;->r()V
 
     goto :goto_0
 
@@ -153,19 +153,19 @@
     .locals 14
 
     .line 1
-    iget-object v0, p1, Lcom/google/firebase/messaging/RemoteMessage;->a:Landroid/os/Bundle;
+    iget-object v0, p1, Lcom/google/firebase/messaging/RemoteMessage;->g:Landroid/os/Bundle;
 
     const-string v1, "from"
 
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     .line 2
-    iget-object v0, p1, Lcom/google/firebase/messaging/RemoteMessage;->b:Ljava/util/Map;
+    iget-object v0, p1, Lcom/google/firebase/messaging/RemoteMessage;->h:Ljava/util/Map;
 
     if-nez v0, :cond_2
 
     .line 3
-    iget-object v0, p1, Lcom/google/firebase/messaging/RemoteMessage;->a:Landroid/os/Bundle;
+    iget-object v0, p1, Lcom/google/firebase/messaging/RemoteMessage;->g:Landroid/os/Bundle;
 
     .line 4
     new-instance v2, Lm/a;
@@ -252,17 +252,17 @@
     if-nez v6, :cond_0
 
     .line 14
-    invoke-virtual {v2, v4, v5}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v4, v5}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
     .line 15
     :cond_1
-    iput-object v2, p1, Lcom/google/firebase/messaging/RemoteMessage;->b:Ljava/util/Map;
+    iput-object v2, p1, Lcom/google/firebase/messaging/RemoteMessage;->h:Ljava/util/Map;
 
     .line 16
     :cond_2
-    iget-object v0, p1, Lcom/google/firebase/messaging/RemoteMessage;->b:Ljava/util/Map;
+    iget-object v0, p1, Lcom/google/firebase/messaging/RemoteMessage;->h:Ljava/util/Map;
 
     const-string v1, "origin"
 
@@ -363,7 +363,7 @@
 
     .line 28
     :cond_5
-    invoke-virtual {p1}, Lcom/google/firebase/messaging/RemoteMessage;->x2()Lcom/google/firebase/messaging/RemoteMessage$a;
+    invoke-virtual {p1}, Lcom/google/firebase/messaging/RemoteMessage;->z2()Lcom/google/firebase/messaging/RemoteMessage$a;
 
     move-result-object v1
 
@@ -448,7 +448,7 @@
 
     .line 37
     :cond_6
-    invoke-virtual {p1}, Lcom/google/firebase/messaging/RemoteMessage;->x2()Lcom/google/firebase/messaging/RemoteMessage$a;
+    invoke-virtual {p1}, Lcom/google/firebase/messaging/RemoteMessage;->z2()Lcom/google/firebase/messaging/RemoteMessage$a;
 
     move-result-object v0
 
@@ -483,7 +483,7 @@
     move-result-object v2
 
     .line 41
-    invoke-virtual {p1}, Lcom/google/firebase/messaging/RemoteMessage;->x2()Lcom/google/firebase/messaging/RemoteMessage$a;
+    invoke-virtual {p1}, Lcom/google/firebase/messaging/RemoteMessage;->z2()Lcom/google/firebase/messaging/RemoteMessage$a;
 
     move-result-object v0
 
@@ -491,7 +491,7 @@
     iget-object v3, v0, Lcom/google/firebase/messaging/RemoteMessage$a;->b:Ljava/lang/String;
 
     .line 43
-    invoke-virtual {p1}, Lcom/google/firebase/messaging/RemoteMessage;->x2()Lcom/google/firebase/messaging/RemoteMessage$a;
+    invoke-virtual {p1}, Lcom/google/firebase/messaging/RemoteMessage;->z2()Lcom/google/firebase/messaging/RemoteMessage$a;
 
     move-result-object v0
 
@@ -499,7 +499,7 @@
     iget-object v4, v0, Lcom/google/firebase/messaging/RemoteMessage$a;->a:Ljava/lang/String;
 
     .line 45
-    invoke-virtual {p1}, Lcom/google/firebase/messaging/RemoteMessage;->x2()Lcom/google/firebase/messaging/RemoteMessage$a;
+    invoke-virtual {p1}, Lcom/google/firebase/messaging/RemoteMessage;->z2()Lcom/google/firebase/messaging/RemoteMessage$a;
 
     move-result-object p1
 

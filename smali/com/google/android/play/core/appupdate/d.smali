@@ -1,104 +1,220 @@
-.class public abstract Lcom/google/android/play/core/appupdate/d;
+.class public Lcom/google/android/play/core/appupdate/d;
 .super Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static final a(Lpd/i;Ljava/lang/String;)Lse/f0;
+    .locals 2
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x0
 
-    return-void
-.end method
-
-.method public static c(I)Lcom/google/android/play/core/appupdate/d;
-    .locals 3
+    const/4 v1, 0x1
 
     .line 1
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v0, v1}, Lp5/h;->d(Lse/b1;I)Lse/o;
+
+    move-result-object v0
+
+    .line 2
+    new-instance v1, Lpc/i;
+
+    invoke-direct {v1, v0, p1}, Lpc/i;-><init>(Lse/o;Ljava/lang/String;)V
+
+    invoke-virtual {p0, p1, v1}, Lpd/i;->b(Ljava/lang/String;Lke/p;)V
+
+    return-object v0
+.end method
+
+.method public static final b(I)I
+    .locals 5
+
+    const/4 v0, 0x2
+
+    const/16 v1, 0x24
+
+    if-gt v0, p0, :cond_0
+
+    if-lt v1, p0, :cond_0
+
+    return p0
+
+    .line 1
+    :cond_0
+    new-instance v2, Ljava/lang/IllegalArgumentException;
+
+    const-string v3, "radix "
+
+    const-string v4, " was not in valid range "
+
+    invoke-static {v3, p0, v4}, Lqc/a0;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
-    .line 2
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    new-instance v3, Loe/c;
 
-    const-string v1, ""
+    invoke-direct {v3, v0, v1}, Loe/c;-><init>(II)V
 
-    if-nez p0, :cond_0
+    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v2, " appUpdateType"
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 3
-    invoke-virtual {v1, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    move-result-object p0
 
-    move-result-object v1
+    invoke-direct {v2, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v2
+.end method
+
+.method public static final c(CCZ)Z
+    .locals 3
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
 
     :cond_0
+    const/4 v1, 0x0
+
+    if-nez p2, :cond_1
+
+    return v1
+
+    .line 1
+    :cond_1
+    invoke-static {p0}, Ljava/lang/Character;->toUpperCase(C)C
+
+    move-result p2
+
+    invoke-static {p1}, Ljava/lang/Character;->toUpperCase(C)C
+
+    move-result v2
+
+    if-ne p2, v2, :cond_2
+
+    return v0
+
+    .line 2
+    :cond_2
+    invoke-static {p0}, Ljava/lang/Character;->toLowerCase(C)C
+
+    move-result p0
+
+    invoke-static {p1}, Ljava/lang/Character;->toLowerCase(C)C
+
+    move-result p1
+
+    if-ne p0, p1, :cond_3
+
+    return v0
+
+    :cond_3
+    return v1
+.end method
+
+.method public static final d(C)Z
+    .locals 1
+
+    .line 1
+    invoke-static {p0}, Ljava/lang/Character;->isWhitespace(C)Z
+
+    move-result v0
+
     if-nez v0, :cond_1
 
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p0}, Ljava/lang/Character;->isSpaceChar(C)Z
 
-    move-result-object v1
+    move-result p0
 
-    const-string v2, " allowClearStorage"
+    if-eqz p0, :cond_0
 
-    invoke-virtual {v1, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    goto :goto_0
 
-    move-result-object v1
+    :cond_0
+    const/4 p0, 0x0
+
+    goto :goto_1
 
     :cond_1
-    invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
+    :goto_0
+    const/4 p0, 0x1
 
-    move-result v2
+    :goto_1
+    return p0
+.end method
 
-    if-nez v2, :cond_3
+.method public static final e(I)I
+    .locals 1
 
-    new-instance p0, Ljava/lang/IllegalStateException;
+    if-gez p0, :cond_0
 
-    const-string v0, "Missing required properties:"
+    goto :goto_0
 
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
+    :cond_0
+    const/4 v0, 0x3
 
-    move-result v2
+    if-ge p0, v0, :cond_1
 
-    if-nez v2, :cond_2
+    add-int/lit8 p0, p0, 0x1
 
-    new-instance v1, Ljava/lang/String;
+    goto :goto_0
 
-    invoke-direct {v1, v0}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+    :cond_1
+    const/high16 v0, 0x40000000    # 2.0f
+
+    if-ge p0, v0, :cond_2
+
+    int-to-float p0, p0
+
+    const/high16 v0, 0x3f400000    # 0.75f
+
+    div-float/2addr p0, v0
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    add-float/2addr p0, v0
+
+    float-to-int p0, p0
 
     goto :goto_0
 
     :cond_2
-    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
+    const p0, 0x7fffffff
 
     :goto_0
-    invoke-direct {p0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    return p0
+.end method
+
+.method public static final f(Lae/d;)Ljava/util/Map;
+    .locals 1
+
+    if-eqz p0, :cond_0
+
+    .line 1
+    iget-object v0, p0, Lae/d;->g:Ljava/lang/Object;
+
+    .line 2
+    iget-object p0, p0, Lae/d;->h:Ljava/lang/Object;
+
+    .line 3
+    invoke-static {v0, p0}, Ljava/util/Collections;->singletonMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
+    move-result-object p0
+
+    const-string v0, "java.util.Collections.si\u2026(pair.first, pair.second)"
+
+    invoke-static {p0, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object p0
+
+    :cond_0
+    const-string p0, "pair"
+
+    .line 4
+    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p0, 0x0
 
     throw p0
-
-    :cond_3
-    new-instance v1, Lcom/google/android/play/core/appupdate/o;
-
-    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
-
-    move-result p0
-
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    invoke-direct {v1, p0, v0}, Lcom/google/android/play/core/appupdate/o;-><init>(IZ)V
-
-    return-object v1
-.end method
-
-
-# virtual methods
-.method public abstract a()Z
-.end method
-
-.method public abstract b()I
 .end method

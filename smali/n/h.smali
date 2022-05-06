@@ -187,13 +187,13 @@
     return-void
 .end method
 
-.method public b(Lo/p;F)V
+.method public b(Lo/s;F)V
     .locals 5
 
     if-eqz p1, :cond_0
 
     .line 1
-    iget-object v0, p1, Lo/p;->a:Ln/b;
+    iget-object v0, p1, Lo/s;->a:Ln/b;
 
     float-to-double v1, p2
 
@@ -209,7 +209,7 @@
     iput v0, p0, Ln/h;->e:F
 
     .line 3
-    iget-object p1, p1, Lo/p;->a:Ln/b;
+    iget-object p1, p1, Lo/s;->a:Ln/b;
 
     invoke-virtual {p1, v1, v2, p2}, Ln/b;->b(DI)D
 
@@ -224,7 +224,7 @@
     return-void
 .end method
 
-.method public c(Lo/f;Lo/f;F)V
+.method public c(Lo/h;Lo/h;F)V
     .locals 0
 
     if-nez p1, :cond_0
@@ -237,7 +237,7 @@
     if-nez p1, :cond_1
 
     .line 1
-    invoke-virtual {p1, p3}, Lo/f;->b(F)F
+    invoke-virtual {p1, p3}, Lo/h;->b(F)F
 
     move-result p1
 
@@ -247,7 +247,7 @@
     if-nez p2, :cond_2
 
     .line 2
-    invoke-virtual {p2, p3}, Lo/f;->b(F)F
+    invoke-virtual {p2, p3}, Lo/h;->b(F)F
 
     move-result p1
 
@@ -257,7 +257,7 @@
     return-void
 .end method
 
-.method public d(Lo/p;Lo/p;F)V
+.method public d(Lo/s;Lo/s;F)V
     .locals 3
 
     const/4 v0, 0x0
@@ -265,7 +265,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    iget-object p1, p1, Lo/p;->a:Ln/b;
+    iget-object p1, p1, Lo/s;->a:Ln/b;
 
     float-to-double v1, p3
 
@@ -282,7 +282,7 @@
     if-eqz p2, :cond_1
 
     .line 3
-    iget-object p1, p2, Lo/p;->a:Ln/b;
+    iget-object p1, p2, Lo/s;->a:Ln/b;
 
     float-to-double p2, p3
 
@@ -299,7 +299,7 @@
     return-void
 .end method
 
-.method public e(Lo/p;Lo/p;F)V
+.method public e(Lo/s;Lo/s;F)V
     .locals 3
 
     const/4 v0, 0x0
@@ -307,7 +307,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    iget-object p1, p1, Lo/p;->a:Ln/b;
+    iget-object p1, p1, Lo/s;->a:Ln/b;
 
     float-to-double v1, p3
 
@@ -324,7 +324,7 @@
     if-eqz p2, :cond_1
 
     .line 3
-    iget-object p1, p2, Lo/p;->a:Ln/b;
+    iget-object p1, p2, Lo/s;->a:Ln/b;
 
     float-to-double p2, p3
 

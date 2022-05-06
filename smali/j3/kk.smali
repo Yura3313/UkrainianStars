@@ -2,288 +2,146 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lj3/qq;
+
 
 # instance fields
-.field public a:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Landroid/content/Context;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public a:Lcom/google/android/gms/internal/ads/n;
 
-.field public b:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/qf0<",
-            "Lj3/bz;",
-            "Lj3/yy;",
-            ">;>;"
-        }
-    .end annotation
-.end field
+.field public b:Lcom/google/android/gms/internal/ads/j;
 
-.field public c:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/uf0;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public c:Lj3/r70;
 
-.field public d:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/mg0;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public d:Lj3/ug0;
 
-.field public e:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lcom/google/android/gms/internal/ads/j1;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public e:Lj3/cg0;
 
-.field public f:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lcom/google/android/gms/internal/ads/zzdkr;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public f:Lj3/jf0;
 
-.field public g:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public h:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lcom/google/android/gms/internal/ads/zzdkl;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic g:Lj3/wj;
 
 
 # direct methods
-.method public constructor <init>(Lj3/sj;Landroid/content/Context;Ljava/lang/String;Lcom/google/android/gms/ads/s;)V
-    .locals 8
+.method public constructor <init>(Lj3/wj;Lj3/zp0;)V
+    .locals 0
 
     .line 1
+    iput-object p1, p0, Lj3/kk;->g:Lj3/wj;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic a()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lj3/kk;->e()Lj3/yu;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final synthetic b(Lj3/cg0;)Lj3/qq;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lj3/kk;->e:Lj3/cg0;
+
+    return-object p0
+.end method
+
+.method public final synthetic c(Lj3/jf0;)Lj3/qq;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lj3/kk;->f:Lj3/jf0;
+
+    return-object p0
+.end method
+
+.method public final synthetic d(Lj3/ug0;)Lj3/qq;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lj3/kk;->d:Lj3/ug0;
+
+    return-object p0
+.end method
+
+.method public final e()Lj3/yu;
+    .locals 17
+
+    move-object/from16 v0, p0
+
+    .line 1
+    iget-object v1, v0, Lj3/kk;->a:Lcom/google/android/gms/internal/ads/n;
+
+    const-class v2, Lcom/google/android/gms/internal/ads/n;
+
+    invoke-static {v1, v2}, Lj3/u6;->i(Ljava/lang/Object;Ljava/lang/Class;)V
+
     .line 2
-    invoke-static {p2}, Lj3/av0;->a(Ljava/lang/Object;)Lj3/bv0;
+    iget-object v1, v0, Lj3/kk;->b:Lcom/google/android/gms/internal/ads/j;
 
-    move-result-object p2
+    const-class v2, Lcom/google/android/gms/internal/ads/j;
 
-    iput-object p2, p0, Lj3/kk;->a:Lj3/fv0;
+    invoke-static {v1, v2}, Lj3/u6;->i(Ljava/lang/Object;Ljava/lang/Class;)V
 
     .line 3
-    iget-object p4, p1, Lj3/sj;->a0:Lj3/fv0;
+    iget-object v1, v0, Lj3/kk;->c:Lj3/r70;
+
+    const-class v2, Lj3/r70;
+
+    invoke-static {v1, v2}, Lj3/u6;->i(Ljava/lang/Object;Ljava/lang/Class;)V
 
     .line 4
-    iget-object v0, p1, Lj3/sj;->b0:Lj3/fv0;
+    new-instance v1, Lcom/google/android/gms/internal/ads/f;
 
-    .line 5
-    new-instance v1, Lj3/tf0;
+    iget-object v4, v0, Lj3/kk;->g:Lj3/wj;
 
-    invoke-direct {v1, p2, p4, v0}, Lj3/tf0;-><init>(Lj3/fv0;Lj3/fv0;Lj3/fv0;)V
+    new-instance v5, Lj3/t30;
 
-    .line 6
-    iput-object v1, p0, Lj3/kk;->b:Lj3/fv0;
+    invoke-direct {v5}, Lj3/t30;-><init>()V
 
-    .line 7
-    new-instance p2, Lj3/iq;
+    new-instance v6, Lj3/dc;
 
-    const/4 v0, 0x1
+    invoke-direct {v6}, Lj3/dc;-><init>()V
 
-    invoke-direct {p2, p4, v0}, Lj3/iq;-><init>(Lj3/fv0;I)V
+    new-instance v7, Lj3/bq0;
 
-    .line 8
-    sget-object p4, Lj3/yu0;->c:Ljava/lang/Object;
+    invoke-direct {v7}, Lj3/bq0;-><init>()V
 
-    .line 9
-    instance-of p4, p2, Lj3/yu0;
+    new-instance v8, Lj3/zp0;
 
-    if-eqz p4, :cond_0
+    invoke-direct {v8}, Lj3/zp0;-><init>()V
 
-    goto :goto_0
+    iget-object v9, v0, Lj3/kk;->a:Lcom/google/android/gms/internal/ads/n;
 
-    .line 10
-    :cond_0
-    new-instance p4, Lj3/yu0;
+    iget-object v10, v0, Lj3/kk;->b:Lcom/google/android/gms/internal/ads/j;
 
-    invoke-direct {p4, p2}, Lj3/yu0;-><init>(Lj3/fv0;)V
+    new-instance v11, Lj3/zp0;
 
-    move-object p2, p4
+    invoke-direct {v11}, Lj3/zp0;-><init>()V
 
-    .line 11
-    :goto_0
-    iput-object p2, p0, Lj3/kk;->c:Lj3/fv0;
+    iget-object v12, v0, Lj3/kk;->c:Lj3/r70;
 
-    .line 12
-    sget-object p2, Lr5/a;->i:Lj3/og0;
+    iget-object v13, v0, Lj3/kk;->d:Lj3/ug0;
 
-    .line 13
-    instance-of p4, p2, Lj3/yu0;
+    iget-object v14, v0, Lj3/kk;->e:Lj3/cg0;
 
-    if-eqz p4, :cond_1
+    iget-object v15, v0, Lj3/kk;->f:Lj3/jf0;
 
-    move-object v7, p2
+    const/16 v16, 0x0
 
-    goto :goto_1
+    move-object v3, v1
 
-    .line 14
-    :cond_1
-    new-instance p4, Lj3/yu0;
+    invoke-direct/range {v3 .. v16}, Lcom/google/android/gms/internal/ads/f;-><init>(Lj3/wj;Lj3/t30;Lj3/dc;Lj3/bq0;Lj3/zp0;Lcom/google/android/gms/internal/ads/n;Lcom/google/android/gms/internal/ads/j;Lj3/zp0;Lj3/r70;Lj3/ug0;Lj3/cg0;Lj3/jf0;Lj3/zp0;)V
 
-    invoke-direct {p4, p2}, Lj3/yu0;-><init>(Lj3/fv0;)V
-
-    move-object v7, p4
-
-    .line 15
-    :goto_1
-    iput-object v7, p0, Lj3/kk;->d:Lj3/fv0;
-
-    .line 16
-    iget-object v1, p0, Lj3/kk;->a:Lj3/fv0;
-
-    .line 17
-    iget-object v2, p1, Lj3/sj;->d:Lj3/fv0;
-
-    .line 18
-    iget-object v3, p1, Lj3/sj;->y:Lj3/fv0;
-
-    .line 19
-    iget-object v4, p0, Lj3/kk;->b:Lj3/fv0;
-
-    iget-object v5, p0, Lj3/kk;->c:Lj3/fv0;
-
-    sget-object v6, Lj3/om0;->h:Lj3/qg0;
-
-    .line 20
-    new-instance p1, Lj3/yf0;
-
-    move-object v0, p1
-
-    invoke-direct/range {v0 .. v7}, Lj3/yf0;-><init>(Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;)V
-
-    .line 21
-    instance-of p2, p1, Lj3/yu0;
-
-    if-eqz p2, :cond_2
-
-    goto :goto_2
-
-    .line 22
-    :cond_2
-    new-instance p2, Lj3/yu0;
-
-    invoke-direct {p2, p1}, Lj3/yu0;-><init>(Lj3/fv0;)V
-
-    move-object p1, p2
-
-    .line 23
-    :goto_2
-    iput-object p1, p0, Lj3/kk;->e:Lj3/fv0;
-
-    .line 24
-    iget-object p2, p0, Lj3/kk;->c:Lj3/fv0;
-
-    iget-object p4, p0, Lj3/kk;->d:Lj3/fv0;
-
-    .line 25
-    new-instance v0, Lj3/dz;
-
-    const/4 v1, 0x3
-
-    invoke-direct {v0, p1, p2, p4, v1}, Lj3/dz;-><init>(Lj3/fv0;Lj3/fv0;Lj3/fv0;I)V
-
-    .line 26
-    instance-of p1, v0, Lj3/yu0;
-
-    if-eqz p1, :cond_3
-
-    goto :goto_3
-
-    .line 27
-    :cond_3
-    new-instance p1, Lj3/yu0;
-
-    invoke-direct {p1, v0}, Lj3/yu0;-><init>(Lj3/fv0;)V
-
-    move-object v0, p1
-
-    .line 28
-    :goto_3
-    iput-object v0, p0, Lj3/kk;->f:Lj3/fv0;
-
-    .line 29
-    invoke-static {p3}, Lj3/av0;->b(Ljava/lang/Object;)Lj3/bv0;
-
-    move-result-object v2
-
-    iput-object v2, p0, Lj3/kk;->g:Lj3/fv0;
-
-    .line 30
-    iget-object v3, p0, Lj3/kk;->e:Lj3/fv0;
-
-    iget-object v4, p0, Lj3/kk;->a:Lj3/fv0;
-
-    iget-object v5, p0, Lj3/kk;->c:Lj3/fv0;
-
-    iget-object v6, p0, Lj3/kk;->d:Lj3/fv0;
-
-    .line 31
-    new-instance p1, Lj3/m20;
-
-    const/4 v7, 0x1
-
-    move-object v1, p1
-
-    invoke-direct/range {v1 .. v7}, Lj3/m20;-><init>(Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;I)V
-
-    .line 32
-    instance-of p2, p1, Lj3/yu0;
-
-    if-eqz p2, :cond_4
-
-    goto :goto_4
-
-    .line 33
-    :cond_4
-    new-instance p2, Lj3/yu0;
-
-    invoke-direct {p2, p1}, Lj3/yu0;-><init>(Lj3/fv0;)V
-
-    move-object p1, p2
-
-    .line 34
-    :goto_4
-    iput-object p1, p0, Lj3/kk;->h:Lj3/fv0;
-
-    return-void
+    return-object v1
 .end method

@@ -3,43 +3,77 @@
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 # interfaces
-.implements Lj3/vs;
+.implements Lj3/bc;
+.implements Lj3/a8;
+.implements Lj3/nf0;
+.implements Lu5/b;
 
 
 # static fields
-.field public static final a:Lj3/vs;
+.field public static g:Lbb/a;
 
-.field public static final b:Lcom/google/android/gms/internal/ads/z;
+.field public static final h:Lj3/fi0;
 
-.field public static final h:Lj3/lj;
+.field public static final i:Lj3/nf0;
+
+.field public static final synthetic j:[I
+
+.field public static final synthetic k:[I
+
+.field public static final l:Lu5/b;
 
 
 # direct methods
 .method static synthetic constructor <clinit>()V
-    .locals 2
+    .locals 5
 
     .line 1
+    new-instance v0, Lj3/fi0;
+
+    const/4 v1, 0x2
+
+    invoke-direct {v0, v1}, Lj3/fi0;-><init>(I)V
+
+    sput-object v0, Lcom/google/android/gms/ads/r;->h:Lj3/fi0;
+
+    .line 2
     new-instance v0, Lcom/google/android/gms/ads/r;
 
     invoke-direct {v0}, Lcom/google/android/gms/ads/r;-><init>()V
 
-    sput-object v0, Lcom/google/android/gms/ads/r;->a:Lj3/vs;
+    sput-object v0, Lcom/google/android/gms/ads/r;->i:Lj3/nf0;
 
-    .line 2
-    new-instance v0, Lcom/google/android/gms/internal/ads/z;
+    const/4 v0, 0x3
 
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/z;-><init>()V
+    new-array v1, v0, [I
 
-    sput-object v0, Lcom/google/android/gms/ads/r;->b:Lcom/google/android/gms/internal/ads/z;
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
+    aput v3, v1, v2
+
+    const/4 v4, 0x2
+
+    aput v4, v1, v3
+
+    aput v0, v1, v4
 
     .line 3
-    new-instance v0, Lj3/lj;
+    sput-object v1, Lcom/google/android/gms/ads/r;->j:[I
 
-    const/4 v1, 0x2
+    new-array v0, v3, [I
 
-    invoke-direct {v0, v1}, Lj3/lj;-><init>(I)V
+    aput v3, v0, v2
 
-    sput-object v0, Lcom/google/android/gms/ads/r;->h:Lj3/lj;
+    sput-object v0, Lcom/google/android/gms/ads/r;->k:[I
+
+    .line 4
+    new-instance v0, Lcom/google/android/gms/ads/r;
+
+    invoke-direct {v0}, Lcom/google/android/gms/ads/r;-><init>()V
+
+    sput-object v0, Lcom/google/android/gms/ads/r;->l:Lu5/b;
 
     return-void
 .end method
@@ -47,93 +81,122 @@
 .method public synthetic constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;II)I
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lo4/b;->a(Landroid/content/Context;I)Landroid/util/TypedValue;
-
-    move-result-object p0
+.method public static f(Ljava/lang/Object;I)Ljava/lang/Object;
+    .locals 2
 
     if-eqz p0, :cond_0
 
-    .line 2
-    iget p0, p0, Landroid/util/TypedValue;->data:I
+    return-object p0
 
-    return p0
-
+    .line 1
     :cond_0
-    return p2
+    new-instance p0, Ljava/lang/NullPointerException;
+
+    const/16 v0, 0x14
+
+    const-string v1, "at index "
+
+    invoke-static {v0, v1, p1}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method
 
-.method public static b(Landroid/view/View;I)I
+.method public static g()[I
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    sget-object v0, Lcom/google/android/gms/ads/r;->j:[I
+
+    invoke-virtual {v0}, [I->clone()Ljava/lang/Object;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast v0, [I
 
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
-
-    move-result-object p0
-
-    .line 2
-    invoke-static {v0, p1, p0}, Lo4/b;->c(Landroid/content/Context;ILjava/lang/String;)I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static c(IIF)I
-    .locals 1
-
-    .line 1
-    invoke-static {p1}, Landroid/graphics/Color;->alpha(I)I
-
-    move-result v0
-
-    int-to-float v0, v0
-
-    mul-float v0, v0, p2
-
-    invoke-static {v0}, Ljava/lang/Math;->round(F)I
-
-    move-result p2
-
-    .line 2
-    invoke-static {p1, p2}, Lx/a;->d(II)I
-
-    move-result p1
-
-    .line 3
-    invoke-static {p1, p0}, Lx/a;->b(II)I
-
-    move-result p0
-
-    return p0
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public e(Ljava/lang/Object;)V
+.method public a(Ljava/lang/Throwable;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
-    check-cast p1, Lj3/tq;
+    return-void
+.end method
 
-    .line 2
-    invoke-interface {p1}, Lj3/tq;->C()V
+.method public b(Ljava/lang/Object;)V
+    .locals 0
+
+    check-cast p1, Lj3/xr;
+
+    invoke-interface {p1}, Lj3/xr;->Y1()V
 
     return-void
+.end method
+
+.method public synthetic c(Ljava/lang/Object;)V
+    .locals 2
+
+    .line 1
+    check-cast p1, Lj3/k4;
+
+    .line 2
+    sget-object v0, Lj3/h2;->h:Lj3/y2;
+
+    const-string v1, "/log"
+
+    invoke-interface {p1, v1, v0}, Lj3/l5;->g(Ljava/lang/String;Lj3/y2;)V
+
+    .line 3
+    sget-object v0, Lj3/h2;->p:Lj3/e3;
+
+    const-string v1, "/result"
+
+    invoke-interface {p1, v1, v0}, Lj3/l5;->g(Ljava/lang/String;Lj3/y2;)V
+
+    return-void
+.end method
+
+.method public d(Ljava/lang/Throwable;Ljava/lang/String;F)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public e(Landroidx/fragment/app/t;)Ljava/lang/Object;
+    .locals 3
+
+    .line 1
+    new-instance v0, Lcom/google/firebase/iid/FirebaseInstanceId;
+
+    const-class v1, Lr5/b;
+
+    .line 2
+    invoke-virtual {p1, v1}, Landroidx/fragment/app/t;->d(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lr5/b;
+
+    const-class v2, Lv5/d;
+
+    invoke-virtual {p1, v2}, Landroidx/fragment/app/t;->d(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lv5/d;
+
+    invoke-direct {v0, v1, p1}, Lcom/google/firebase/iid/FirebaseInstanceId;-><init>(Lr5/b;Lv5/d;)V
+
+    return-object v0
 .end method

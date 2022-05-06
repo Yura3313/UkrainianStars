@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroid/app/Activity;
+.field public final synthetic g:Landroid/app/Activity;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lu/a$b;->a:Landroid/app/Activity;
+    iput-object p1, p0, Lu/a$b;->g:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lu/a$b;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lu/a$b;->g:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
 
@@ -48,7 +48,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lu/a$b;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lu/a$b;->g:Landroid/app/Activity;
 
     invoke-static {v0}, Lu/c;->b(Landroid/app/Activity;)Z
 
@@ -57,7 +57,7 @@
     if-nez v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Lu/a$b;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lu/a$b;->g:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->recreate()V
 

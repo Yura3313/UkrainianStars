@@ -1,6 +1,6 @@
 .class public final Lwd/p0;
 .super Lle/j;
-.source "ProfileUtil.kt"
+.source "ShopStorage.kt"
 
 # interfaces
 .implements Lke/l;
@@ -12,21 +12,21 @@
         "Lle/j;",
         "Lke/l<",
         "Ljava/lang/Exception;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lke/r;
+.field public final synthetic g:Lwd/q0$a;
 
 
 # direct methods
-.method public constructor <init>(Lke/r;)V
+.method public constructor <init>(Lwd/q0$a;)V
     .locals 0
 
-    iput-object p1, p0, Lwd/p0;->a:Lke/r;
+    iput-object p1, p0, Lwd/p0;->g:Lwd/q0$a;
 
     const/4 p1, 0x1
 
@@ -38,44 +38,64 @@
 
 # virtual methods
 .method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+    .locals 3
 
     .line 1
     check-cast p1, Ljava/lang/Exception;
 
-    if-eqz p1, :cond_0
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_1
 
     .line 2
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    sget-object v1, Lcom/supercell/id/util/NormalizedError;->m:Lcom/supercell/id/util/NormalizedError;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-static {p1}, Lcom/supercell/id/util/NormalizedError;->b(Ljava/lang/Exception;)Lcom/supercell/id/util/NormalizedError;
 
     move-result-object p1
 
     .line 3
-    iget-object p1, p1, Lwd/r;->s:Lqd/j;
+    iget-object v1, p0, Lwd/p0;->g:Lwd/q0$a;
+
+    iget-object v1, v1, Lwd/q0$a;->g:Lwd/q0;
+
+    new-instance v2, Lwd/q0$b$p;
+
+    invoke-direct {v2, p1}, Lwd/q0$b$p;-><init>(Lcom/supercell/id/util/NormalizedError;)V
+
+    invoke-virtual {v1, v2}, Lwd/u0;->a(Lwd/a;)V
 
     .line 4
-    new-instance v0, Lwd/o0;
+    iget-object p1, p0, Lwd/p0;->g:Lwd/q0$a;
 
-    invoke-direct {v0, p0}, Lwd/o0;-><init>(Lwd/p0;)V
-
-    const-string v1, "unknown_user.png"
-
-    invoke-virtual {p1, v1, v0}, Lqd/j;->b(Ljava/lang/String;Lke/p;)V
+    iget-object p1, p1, Lwd/q0$a;->g:Lwd/q0;
 
     .line 5
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    iget-object p1, p1, Lwd/q0;->e:Landroidx/appcompat/widget/m;
+
+    if-eqz p1, :cond_0
+
+    .line 6
+    invoke-virtual {p1}, Landroidx/appcompat/widget/m;->a()V
+
+    .line 7
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
     :cond_0
+    const-string p1, "getItemsCache"
+
+    .line 8
+    invoke-static {p1}, Ls3/b;->i(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_1
     const-string p1, "it"
 
-    .line 6
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    .line 9
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    const/4 p1, 0x0
-
-    throw p1
+    throw v0
 .end method

@@ -46,7 +46,7 @@
     :try_start_0
     iget-object v1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$h;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
-    iget-object v1, v1, Landroidx/appcompat/app/AppCompatDelegateImpl;->i:Landroid/content/Context;
+    iget-object v1, v1, Landroidx/appcompat/app/AppCompatDelegateImpl;->j:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
     :try_end_0
@@ -110,7 +110,7 @@
     :cond_1
     iget-object v1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$h;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
-    iget-object v1, v1, Landroidx/appcompat/app/AppCompatDelegateImpl;->i:Landroid/content/Context;
+    iget-object v1, v1, Landroidx/appcompat/app/AppCompatDelegateImpl;->j:Landroid/content/Context;
 
     iget-object v2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$h;->a:Landroid/content/BroadcastReceiver;
 

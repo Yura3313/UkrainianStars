@@ -3,143 +3,208 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
+.implements Lj3/yq;
+.implements Lj3/ur;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lj3/bv0<",
-        "Lcom/google/android/gms/internal/ads/r0;",
-        ">;"
-    }
-.end annotation
+# static fields
+.field public static final h:Ljava/lang/Object;
+
+.field public static i:I
 
 
 # instance fields
-.field public final a:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Landroid/content/Context;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final b:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/jq;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final c:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/y30;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final d:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/w30;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final g:Lcom/google/android/gms/internal/ads/k0;
 
 
 # direct methods
-.method public constructor <init>(Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Lj3/b40;->h:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/k0;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/fv0<",
-            "Landroid/content/Context;",
-            ">;",
-            "Lj3/fv0<",
-            "Lj3/jq;",
-            ">;",
-            "Lj3/fv0<",
-            "Lj3/y30;",
-            ">;",
-            "Lj3/fv0<",
-            "Lj3/w30;",
-            ">;)V"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj3/b40;->a:Lj3/fv0;
-
-    .line 3
-    iput-object p2, p0, Lj3/b40;->b:Lj3/fv0;
-
-    .line 4
-    iput-object p3, p0, Lj3/b40;->c:Lj3/fv0;
-
-    .line 5
-    iput-object p4, p0, Lj3/b40;->d:Lj3/fv0;
+    iput-object p1, p0, Lj3/b40;->g:Lcom/google/android/gms/internal/ads/k0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic get()Ljava/lang/Object;
-    .locals 5
+.method public final G()V
+    .locals 1
+
+    const/4 v0, 0x1
 
     .line 1
-    iget-object v0, p0, Lj3/b40;->a:Lj3/fv0;
+    invoke-virtual {p0, v0}, Lj3/b40;->a(Z)V
 
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
+    return-void
+.end method
+
+.method public final a(Z)V
+    .locals 6
+
+    .line 1
+    sget-object v0, Lj3/n;->e3:Lj3/f;
+
+    .line 2
+    sget-object v1, Lj3/t51;->j:Lj3/t51;
+
+    iget-object v1, v1, Lj3/t51;->f:Lj3/l;
+
+    .line 3
+    invoke-virtual {v1, v0}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Landroid/content/Context;
+    .line 4
+    check-cast v0, Ljava/lang/Boolean;
 
-    iget-object v1, p0, Lj3/b40;->b:Lj3/fv0;
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
-    invoke-interface {v1}, Lj3/fv0;->get()Ljava/lang/Object;
+    move-result v0
 
-    move-result-object v1
+    if-nez v0, :cond_0
 
-    check-cast v1, Lj3/jq;
+    return-void
 
-    iget-object v2, p0, Lj3/b40;->c:Lj3/fv0;
+    .line 5
+    :cond_0
+    sget-object v0, Lj3/b40;->h:Ljava/lang/Object;
 
-    invoke-interface {v2}, Lj3/fv0;->get()Ljava/lang/Object;
+    monitor-enter v0
+
+    .line 6
+    :try_start_0
+    sget v1, Lj3/b40;->i:I
+
+    sget-object v2, Lj3/n;->f3:Lj3/f;
+
+    .line 7
+    sget-object v3, Lj3/t51;->j:Lj3/t51;
+
+    iget-object v3, v3, Lj3/t51;->f:Lj3/l;
+
+    .line 8
+    invoke-virtual {v3, v2}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Lj3/y30;
+    .line 9
+    check-cast v2, Ljava/lang/Integer;
 
-    iget-object v3, p0, Lj3/b40;->d:Lj3/fv0;
+    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
 
-    invoke-interface {v3}, Lj3/fv0;->get()Ljava/lang/Object;
+    move-result v2
 
-    move-result-object v3
+    const/4 v3, 0x1
 
-    check-cast v3, Lj3/w30;
+    if-ge v1, v2, :cond_1
 
-    .line 2
-    new-instance v4, Lcom/google/android/gms/internal/ads/r0;
+    const/4 v1, 0x1
 
-    invoke-direct {v4, v0, v1, v2, v3}, Lcom/google/android/gms/internal/ads/r0;-><init>(Landroid/content/Context;Lj3/jq;Lj3/y30;Lj3/w30;)V
+    goto :goto_0
 
-    return-object v4
+    :cond_1
+    const/4 v1, 0x0
+
+    :goto_0
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    if-nez v1, :cond_2
+
+    return-void
+
+    .line 10
+    :cond_2
+    iget-object v1, p0, Lj3/b40;->g:Lcom/google/android/gms/internal/ads/k0;
+
+    .line 11
+    iget-object v2, v1, Lcom/google/android/gms/internal/ads/k0;->b:Lj3/mq;
+
+    .line 12
+    invoke-virtual {v2}, Lj3/mq;->a()Lj3/im0;
+
+    move-result-object v2
+
+    new-instance v4, Lcom/google/android/gms/internal/ads/l0;
+
+    invoke-direct {v4, v1, p1}, Lcom/google/android/gms/internal/ads/l0;-><init>(Lcom/google/android/gms/internal/ads/k0;Z)V
+
+    sget-object p1, Lj3/kd;->f:Lj3/km0;
+
+    .line 13
+    new-instance v1, Lj3/o80;
+
+    const/4 v5, 0x2
+
+    invoke-direct {v1, v2, v4, v5}, Lj3/o80;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    check-cast v2, Lj3/li0;
+
+    invoke-virtual {v2, v1, p1}, Lj3/li0;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+
+    .line 14
+    monitor-enter v0
+
+    .line 15
+    :try_start_1
+    sget p1, Lj3/b40;->i:I
+
+    add-int/2addr p1, v3
+
+    sput p1, Lj3/b40;->i:I
+
+    .line 16
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p1
+
+    :catchall_1
+    move-exception p1
+
+    .line 17
+    :try_start_2
+    monitor-exit v0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    throw p1
+.end method
+
+.method public final y0(Lcom/google/android/gms/internal/ads/zzuw;)V
+    .locals 0
+
+    const/4 p1, 0x0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lj3/b40;->a(Z)V
+
+    return-void
 .end method

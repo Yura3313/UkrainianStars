@@ -16,14 +16,14 @@
 
 
 # instance fields
-.field public final a:Z
+.field public final g:Z
 
-.field public final b:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 .end field
 
-.field public final h:I
+.field public final i:I
 
 
 # direct methods
@@ -47,26 +47,52 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-boolean p1, p0, Lcom/google/android/gms/common/zzl;->a:Z
+    iput-boolean p1, p0, Lcom/google/android/gms/common/zzl;->g:Z
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/common/zzl;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/common/zzl;->h:Ljava/lang/String;
 
     .line 4
-    invoke-static {p3}, Ly1/u;->zza(I)Ly1/u;
+    invoke-static {p3}, Lj3/xo0;->d(I)I
 
-    move-result-object p1
+    move-result p1
 
     .line 5
-    iget p1, p1, Ly1/u;->zzb:I
+    invoke-static {p1}, Lp/g;->b(I)I
 
-    iput p1, p0, Lcom/google/android/gms/common/zzl;->h:I
+    move-result p1
+
+    iput p1, p0, Lcom/google/android/gms/common/zzl;->i:I
 
     return-void
 .end method
 
 
 # virtual methods
+.method public final A2()Ljava/lang/String;
+    .locals 1
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/common/zzl;->h:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final B2()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/gms/common/zzl;->i:I
+
+    invoke-static {v0}, Lj3/xo0;->d(I)I
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
 
@@ -80,7 +106,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget-boolean v1, p0, Lcom/google/android/gms/common/zzl;->a:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/common/zzl;->g:Z
 
     const/4 v2, 0x4
 
@@ -93,7 +119,7 @@
     const/4 v0, 0x2
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/gms/common/zzl;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/zzl;->h:Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -103,7 +129,7 @@
     const/4 v0, 0x3
 
     .line 7
-    iget v1, p0, Lcom/google/android/gms/common/zzl;->h:I
+    iget v1, p0, Lcom/google/android/gms/common/zzl;->i:I
 
     .line 8
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -117,35 +143,11 @@
     return-void
 .end method
 
-.method public final x2()Z
+.method public final z2()Z
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/gms/common/zzl;->a:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/common/zzl;->g:Z
 
     return v0
-.end method
-
-.method public final y2()Ljava/lang/String;
-    .locals 1
-    .annotation runtime Ljavax/annotation/Nullable;
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/zzl;->b:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final z2()Ly1/u;
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/gms/common/zzl;->h:I
-
-    invoke-static {v0}, Ly1/u;->zza(I)Ly1/u;
-
-    move-result-object v0
-
-    return-object v0
 .end method

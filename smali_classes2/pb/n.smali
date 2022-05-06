@@ -1,50 +1,74 @@
 .class public Lpb/n;
-.super Lpb/r;
-.source "MutableTextViewState.java"
+.super Ljava/lang/Object;
+.source "PreviewScalingStrategy.java"
+
+# interfaces
+.implements Ljava/util/Comparator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "Lob/o;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic g:Lob/o;
+
+.field public final synthetic h:Lpb/o;
 
 
 # direct methods
-.method public constructor <init>(Z)V
+.method public constructor <init>(Lpb/o;Lob/o;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lpb/r;-><init>(Z)V
+    iput-object p1, p0, Lpb/n;->h:Lpb/o;
+
+    iput-object p2, p0, Lpb/n;->g:Lob/o;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public e(Ljava/lang/String;)V
-    .locals 1
+.method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lpb/r;->d()Ljava/lang/String;
+    check-cast p1, Lob/o;
 
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
+    check-cast p2, Lob/o;
 
     .line 2
-    iput-object p1, p0, Lpb/r;->c:Ljava/lang/String;
+    iget-object v0, p0, Lpb/n;->h:Lpb/o;
+
+    iget-object v1, p0, Lpb/n;->g:Lob/o;
+
+    invoke-virtual {v0, p1, v1}, Lpb/o;->a(Lob/o;Lob/o;)F
+
+    move-result p1
 
     .line 3
-    iget-object p1, p0, Lpb/r;->d:Lpb/r$a;
+    iget-object v0, p0, Lpb/n;->h:Lpb/o;
 
-    if-eqz p1, :cond_0
+    iget-object v1, p0, Lpb/n;->g:Lob/o;
 
-    const/4 p1, 0x0
+    invoke-virtual {v0, p2, v1}, Lpb/o;->a(Lob/o;Lob/o;)F
+
+    move-result p2
 
     .line 4
-    iput-object p1, p0, Lpb/r;->d:Lpb/r$a;
+    invoke-static {p2, p1}, Ljava/lang/Float;->compare(FF)I
 
-    .line 5
-    invoke-virtual {p0, p0}, Lpb/c;->a(Ljava/lang/Object;)V
+    move-result p1
 
-    :cond_0
-    return-void
+    return p1
 .end method

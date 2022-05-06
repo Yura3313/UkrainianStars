@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lj0/c;
+.field public final synthetic g:Lj0/c;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lj0/c$b;->a:Lj0/c;
+    iput-object p1, p0, Lj0/c$b;->g:Lj0/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lj0/c$b;->a:Lj0/c;
+    iget-object v0, p0, Lj0/c$b;->g:Lj0/c;
 
     const/4 v1, 0x0
 

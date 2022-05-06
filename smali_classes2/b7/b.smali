@@ -190,7 +190,7 @@
     iget-object v6, p0, Lb7/b;->a:Lj6/b;
 
     .line 5
-    iget v7, v6, Lj6/b;->b:I
+    iget v7, v6, Lj6/b;->h:I
 
     .line 6
     iget-object v8, p0, Lb7/b;->h:[I

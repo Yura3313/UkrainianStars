@@ -40,7 +40,7 @@
 
     const-string p3, "Unknown color scheme: "
 
-    invoke-static {p2, p3, p0}, Lb0/c;->b(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {p2, p3, p0}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 

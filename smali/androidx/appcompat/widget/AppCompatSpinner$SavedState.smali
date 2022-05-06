@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field public a:Z
+.field public g:Z
 
 
 # direct methods
@@ -65,7 +65,7 @@
     const/4 p1, 0x0
 
     :goto_0
-    iput-boolean p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$SavedState;->a:Z
+    iput-boolean p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$SavedState;->g:Z
 
     return-void
 .end method
@@ -88,7 +88,7 @@
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 2
-    iget-boolean p2, p0, Landroidx/appcompat/widget/AppCompatSpinner$SavedState;->a:Z
+    iget-boolean p2, p0, Landroidx/appcompat/widget/AppCompatSpinner$SavedState;->g:Z
 
     int-to-byte p2, p2
 

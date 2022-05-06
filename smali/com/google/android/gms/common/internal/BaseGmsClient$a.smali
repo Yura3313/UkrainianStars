@@ -15,8 +15,8 @@
 
 
 # virtual methods
-.method public abstract E0(I)V
+.method public abstract F0(I)V
 .end method
 
-.method public abstract X0(Landroid/os/Bundle;)V
+.method public abstract Y0(Landroid/os/Bundle;)V
 .end method

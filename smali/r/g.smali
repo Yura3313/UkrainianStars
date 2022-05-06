@@ -19,18 +19,18 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
-    sget-object p1, Lr/f$a;->HORIZONTAL_DIMENSION:Lr/f$a;
+    const/4 p1, 0x2
 
-    iput-object p1, p0, Lr/f;->e:Lr/f$a;
+    .line 3
+    iput p1, p0, Lr/f;->e:I
 
     goto :goto_0
 
-    .line 4
     :cond_0
-    sget-object p1, Lr/f$a;->VERTICAL_DIMENSION:Lr/f$a;
+    const/4 p1, 0x3
 
-    iput-object p1, p0, Lr/f;->e:Lr/f$a;
+    .line 4
+    iput p1, p0, Lr/f;->e:I
 
     :goto_0
     return-void

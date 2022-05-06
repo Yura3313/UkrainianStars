@@ -1,24 +1,24 @@
 .class public Lf0/t;
-.super Lf0/s$b;
+.super Lf0/r$b;
 .source "ViewCompat.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lf0/s$b<",
-        "Ljava/lang/CharSequence;",
+        "Lf0/r$b<",
+        "Ljava/lang/Boolean;",
         ">;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(ILjava/lang/Class;II)V
+.method public constructor <init>(ILjava/lang/Class;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2, p3, p4}, Lf0/s$b;-><init>(ILjava/lang/Class;II)V
+    invoke-direct {p0, p1, p2, p3}, Lf0/r$b;-><init>(ILjava/lang/Class;I)V
 
     return-void
 .end method
@@ -29,7 +29,11 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/View;->getAccessibilityPaneTitle()Ljava/lang/CharSequence;
+    invoke-virtual {p1}, Landroid/view/View;->isAccessibilityHeading()Z
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
 
@@ -40,10 +44,14 @@
     .locals 0
 
     .line 1
-    check-cast p2, Ljava/lang/CharSequence;
+    check-cast p2, Ljava/lang/Boolean;
 
     .line 2
-    invoke-virtual {p1, p2}, Landroid/view/View;->setAccessibilityPaneTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p2
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->setAccessibilityHeading(Z)V
 
     return-void
 .end method
@@ -52,12 +60,12 @@
     .locals 0
 
     .line 1
-    check-cast p1, Ljava/lang/CharSequence;
+    check-cast p1, Ljava/lang/Boolean;
 
-    check-cast p2, Ljava/lang/CharSequence;
+    check-cast p2, Ljava/lang/Boolean;
 
     .line 2
-    invoke-static {p1, p2}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    invoke-virtual {p0, p1, p2}, Lf0/r$b;->a(Ljava/lang/Boolean;Ljava/lang/Boolean;)Z
 
     move-result p1
 

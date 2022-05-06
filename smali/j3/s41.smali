@@ -1,179 +1,108 @@
 .class public final Lj3/s41;
-.super Lj3/x41;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lj3/x41<",
-        "Lcom/google/android/gms/internal/ads/zzwr;",
-        ">;"
-    }
-.end annotation
-
-
 # instance fields
-.field public final synthetic b:Landroid/content/Context;
+.field public final a:[B
 
-.field public final synthetic c:Ljava/lang/String;
+.field public b:I
 
-.field public final synthetic d:Lcom/google/android/gms/internal/ads/zzamu;
+.field public c:I
 
-.field public final synthetic e:Lj3/p41;
+.field public final synthetic d:Lj3/r41;
 
 
 # direct methods
-.method public constructor <init>(Lj3/p41;Landroid/content/Context;Ljava/lang/String;Lcom/google/android/gms/internal/ads/zzamu;)V
+.method public constructor <init>(Lj3/r41;[BLcom/google/android/gms/ads/i;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lj3/s41;->e:Lj3/p41;
+    iput-object p1, p0, Lj3/s41;->d:Lj3/r41;
 
-    iput-object p2, p0, Lj3/s41;->b:Landroid/content/Context;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p3, p0, Lj3/s41;->c:Ljava/lang/String;
-
-    iput-object p4, p0, Lj3/s41;->d:Lcom/google/android/gms/internal/ads/zzamu;
-
-    invoke-direct {p0}, Lj3/x41;-><init>()V
+    .line 2
+    iput-object p2, p0, Lj3/s41;->a:[B
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lcom/google/android/gms/internal/ads/zzxh;)Ljava/lang/Object;
-    .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lj3/s41;->b:Landroid/content/Context;
-
-    .line 2
-    new-instance v1, Lcom/google/android/gms/dynamic/ObjectWrapper;
-
-    invoke-direct {v1, v0}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
-
-    .line 3
-    iget-object v0, p0, Lj3/s41;->c:Ljava/lang/String;
-
-    iget-object v2, p0, Lj3/s41;->d:Lcom/google/android/gms/internal/ads/zzamu;
-
-    const v3, 0xc0a5df0
-
-    .line 4
-    invoke-interface {p1, v1, v0, v2, v3}, Lcom/google/android/gms/internal/ads/zzxh;->D5(Lcom/google/android/gms/dynamic/IObjectWrapper;Ljava/lang/String;Lcom/google/android/gms/internal/ads/zzamu;I)Lcom/google/android/gms/internal/ads/zzwr;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final synthetic c()Ljava/lang/Object;
+.method public final declared-synchronized a()V
     .locals 2
 
-    .line 1
-    iget-object v0, p0, Lj3/s41;->b:Landroid/content/Context;
-
-    const-string v1, "native_ad"
-
-    invoke-static {v0, v1}, Lj3/p41;->a(Landroid/content/Context;Ljava/lang/String;)V
-
-    .line 2
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzzg;
-
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/zzzg;-><init>()V
-
-    return-object v0
-.end method
-
-.method public final d()Ljava/lang/Object;
-    .locals 6
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+    monitor-enter p0
 
     .line 1
-    iget-object v0, p0, Lj3/s41;->e:Lj3/p41;
+    :try_start_0
+    iget-object v0, p0, Lj3/s41;->d:Lj3/r41;
+
+    iget-boolean v1, v0, Lj3/r41;->b:Z
+
+    if-eqz v1, :cond_0
 
     .line 2
-    iget-object v0, v0, Lj3/p41;->b:Lj3/i41;
+    iget-object v0, v0, Lj3/r41;->a:Lcom/google/android/gms/internal/ads/zzgx;
+
+    iget-object v1, p0, Lj3/s41;->a:[B
+
+    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzgx;->i1([B)V
 
     .line 3
-    iget-object v1, p0, Lj3/s41;->b:Landroid/content/Context;
+    iget-object v0, p0, Lj3/s41;->d:Lj3/r41;
 
-    iget-object v2, p0, Lj3/s41;->c:Ljava/lang/String;
+    iget-object v0, v0, Lj3/r41;->a:Lcom/google/android/gms/internal/ads/zzgx;
 
-    iget-object v3, p0, Lj3/s41;->d:Lcom/google/android/gms/internal/ads/zzamu;
+    iget v1, p0, Lj3/s41;->b:I
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const/4 v4, 0x0
+    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzgx;->P2(I)V
 
     .line 4
-    :try_start_0
-    new-instance v5, Lcom/google/android/gms/dynamic/ObjectWrapper;
+    iget-object v0, p0, Lj3/s41;->d:Lj3/r41;
 
-    invoke-direct {v5, v1}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
+    iget-object v0, v0, Lj3/r41;->a:Lcom/google/android/gms/internal/ads/zzgx;
+
+    iget v1, p0, Lj3/s41;->c:I
+
+    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzgx;->E3(I)V
 
     .line 5
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/dynamic/RemoteCreator;->b(Landroid/content/Context;)Ljava/lang/Object;
+    iget-object v0, p0, Lj3/s41;->d:Lj3/r41;
 
-    move-result-object v0
+    iget-object v0, v0, Lj3/r41;->a:Lcom/google/android/gms/internal/ads/zzgx;
 
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzws;
+    const/4 v1, 0x0
 
-    const v1, 0xc0a5df0
+    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzgx;->w3([I)V
 
     .line 6
-    invoke-interface {v0, v5, v2, v3, v1}, Lcom/google/android/gms/internal/ads/zzws;->P6(Lcom/google/android/gms/dynamic/IObjectWrapper;Ljava/lang/String;Lcom/google/android/gms/internal/ads/zzamu;I)Landroid/os/IBinder;
+    iget-object v0, p0, Lj3/s41;->d:Lj3/r41;
 
-    move-result-object v0
+    iget-object v0, v0, Lj3/r41;->a:Lcom/google/android/gms/internal/ads/zzgx;
 
-    if-nez v0, :cond_0
-
-    goto :goto_1
-
-    :cond_0
-    const-string v1, "com.google.android.gms.ads.internal.client.IAdLoaderBuilder"
-
-    .line 7
-    invoke-interface {v0, v1}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
-
-    move-result-object v1
-
-    .line 8
-    instance-of v2, v1, Lcom/google/android/gms/internal/ads/zzwr;
-
-    if-eqz v2, :cond_1
-
-    .line 9
-    check-cast v1, Lcom/google/android/gms/internal/ads/zzwr;
-
-    :goto_0
-    move-object v4, v1
-
-    goto :goto_1
-
-    .line 10
-    :cond_1
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzwt;
-
-    invoke-direct {v1, v0}, Lcom/google/android/gms/internal/ads/zzwt;-><init>(Landroid/os/IBinder;)V
+    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzgx;->I5()V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Lcom/google/android/gms/dynamic/RemoteCreator$RemoteCreatorException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    goto :goto_0
+    .line 7
+    :cond_0
+    monitor-exit p0
 
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+
+    .line 8
     :catch_0
-    :goto_1
-    return-object v4
+    monitor-exit p0
+
+    return-void
 .end method

@@ -1,167 +1,220 @@
-.class public final synthetic Lj3/z40;
+.class public final Lj3/z40;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/gl0;
+.implements Lj3/k40;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj3/k40<",
+        "Lj3/zm;",
+        "Lcom/google/android/gms/internal/ads/zzapa;",
+        "Lcom/google/android/gms/internal/ads/zzcso;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Lj3/x40;
+.field public final a:Landroid/content/Context;
 
-.field public final b:Landroid/net/Uri;
+.field public final b:Lj3/un;
 
-.field public final c:Lj3/ng0;
-
-.field public final d:Lj3/eg0;
+.field public c:Landroid/view/View;
 
 
 # direct methods
-.method public constructor <init>(Lj3/x40;Landroid/net/Uri;Lj3/ng0;Lj3/eg0;)V
+.method public constructor <init>(Landroid/content/Context;Lj3/un;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj3/z40;->a:Lj3/x40;
+    .line 2
+    iput-object p1, p0, Lj3/z40;->a:Landroid/content/Context;
 
-    iput-object p2, p0, Lj3/z40;->b:Landroid/net/Uri;
-
-    iput-object p3, p0, Lj3/z40;->c:Lj3/ng0;
-
-    iput-object p4, p0, Lj3/z40;->d:Lj3/eg0;
+    .line 3
+    iput-object p2, p0, Lj3/z40;->b:Lj3/un;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lj3/yl0;
-    .locals 14
+.method public final a(Lj3/ug0;Lj3/lg0;Lj3/j40;)V
+    .locals 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/ug0;",
+            "Lj3/lg0;",
+            "Lj3/j40<",
+            "Lcom/google/android/gms/internal/ads/zzapa;",
+            "Lcom/google/android/gms/internal/ads/zzcso;",
+            ">;)V"
+        }
+    .end annotation
 
-    iget-object p1, p0, Lj3/z40;->a:Lj3/x40;
-
-    iget-object v0, p0, Lj3/z40;->b:Landroid/net/Uri;
-
-    iget-object v1, p0, Lj3/z40;->c:Lj3/ng0;
-
-    iget-object v2, p0, Lj3/z40;->d:Lj3/eg0;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzdlr;
+        }
+    .end annotation
 
     .line 1
     :try_start_0
-    new-instance v3, Landroid/content/Intent;
+    iget-object v0, p3, Lj3/j40;->b:Ljava/lang/Object;
 
-    const-string v4, "android.intent.action.VIEW"
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzapa;
 
-    invoke-direct {v3, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    iget-object v1, p2, Lj3/lg0;->T:Ljava/lang/String;
 
-    const/4 v4, 0x1
+    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzapa;->y5(Ljava/lang/String;)V
 
     .line 2
-    new-instance v5, Landroid/os/Bundle;
+    iget-object v0, p3, Lj3/j40;->b:Ljava/lang/Object;
 
-    invoke-direct {v5}, Landroid/os/Bundle;-><init>()V
+    move-object v1, v0
 
-    const-string v6, "android.support.customtabs.extra.SESSION"
+    check-cast v1, Lcom/google/android/gms/internal/ads/zzapa;
 
-    const/4 v7, 0x0
+    iget-object v2, p2, Lj3/lg0;->N:Ljava/lang/String;
+
+    iget-object p2, p2, Lj3/lg0;->u:Lorg/json/JSONObject;
 
     .line 3
-    invoke-virtual {v5, v6, v7}, Landroid/os/Bundle;->putBinder(Ljava/lang/String;Landroid/os/IBinder;)V
+    invoke-virtual {p2}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    iget-object p2, p1, Lj3/ug0;->a:Lj3/ty0;
+
+    iget-object p2, p2, Lj3/ty0;->g:Ljava/lang/Object;
+
+    check-cast p2, Lj3/wg0;
+
+    iget-object v4, p2, Lj3/wg0;->d:Lcom/google/android/gms/internal/ads/zzvc;
+
+    iget-object p2, p0, Lj3/z40;->a:Landroid/content/Context;
 
     .line 4
-    invoke-virtual {v3, v5}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
+    new-instance v5, Lcom/google/android/gms/dynamic/ObjectWrapper;
 
-    const-string v5, "android.support.customtabs.extra.EXTRA_ENABLE_INSTANT_APPS"
+    invoke-direct {v5, p2}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
 
     .line 5
-    invoke-virtual {v3, v5, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+    new-instance v6, Lj3/a50;
+
+    const/4 p2, 0x0
+
+    invoke-direct {v6, p0, p3, p2}, Lj3/a50;-><init>(Lj3/z40;Lj3/j40;Lod/c;)V
+
+    iget-object p2, p3, Lj3/j40;->c:Lj3/qr;
+
+    move-object v7, p2
+
+    check-cast v7, Lcom/google/android/gms/internal/ads/zzana;
+
+    iget-object p1, p1, Lj3/ug0;->a:Lj3/ty0;
+
+    iget-object p1, p1, Lj3/ty0;->g:Ljava/lang/Object;
+
+    check-cast p1, Lj3/wg0;
+
+    iget-object v8, p1, Lj3/wg0;->e:Lcom/google/android/gms/internal/ads/zzvj;
 
     .line 6
-    invoke-virtual {v3, v0}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
-
-    .line 7
-    new-instance v9, Lcom/google/android/gms/ads/internal/overlay/zzd;
-
-    invoke-direct {v9, v3}, Lcom/google/android/gms/ads/internal/overlay/zzd;-><init>(Landroid/content/Intent;)V
-
-    .line 8
-    new-instance v0, Lj3/md;
-
-    invoke-direct {v0}, Lj3/md;-><init>()V
-
-    .line 9
-    iget-object v3, p1, Lj3/x40;->b:Lj3/ru;
-
-    new-instance v4, Lj3/ro;
-
-    invoke-direct {v4, v1, v2, v7}, Lj3/ro;-><init>(Lj3/ng0;Lj3/eg0;Ljava/lang/String;)V
-
-    new-instance v1, Lj3/iu;
-
-    new-instance v2, Lj3/y40;
-
-    invoke-direct {v2, v0}, Lj3/y40;-><init>(Lj3/md;)V
-
-    invoke-direct {v1, v2}, Lj3/iu;-><init>(Lj3/uu;)V
-
-    .line 10
-    invoke-virtual {v3, v4, v1}, Lj3/ru;->a(Lj3/ro;Lj3/iu;)Lj3/gu;
-
-    move-result-object v1
-
-    .line 11
-    new-instance v2, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;
-
-    const/4 v10, 0x0
-
-    .line 12
-    invoke-virtual {v1}, Lj3/gu;->u()Lj3/vr;
-
-    move-result-object v11
-
-    const/4 v12, 0x0
-
-    new-instance v13, Lcom/google/android/gms/internal/ads/zzbbg;
-
-    const/4 v3, 0x0
-
-    invoke-direct {v13, v3, v3, v3}, Lcom/google/android/gms/internal/ads/zzbbg;-><init>(IIZ)V
-
-    move-object v8, v2
-
-    invoke-direct/range {v8 .. v13}, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;-><init>(Lcom/google/android/gms/ads/internal/overlay/zzd;Lj3/d41;Li1/k;Li1/n;Lcom/google/android/gms/internal/ads/zzbbg;)V
-
-    .line 13
-    invoke-virtual {v0, v2}, Lj3/md;->b(Ljava/lang/Object;)Z
-
-    .line 14
-    iget-object p1, p1, Lj3/x40;->d:Lj3/cg0;
-
-    const/4 v0, 0x2
-
-    const/4 v2, 0x3
-
-    .line 15
-    invoke-virtual {p1, v0, v2}, Lj3/cg0;->b(II)V
-
-    .line 16
-    invoke-virtual {v1}, Lj3/gu;->t()Lj3/fu;
-
-    move-result-object p1
-
-    invoke-static {p1}, Lj3/ul0;->i(Ljava/lang/Object;)Lj3/yl0;
-
-    move-result-object p1
+    invoke-interface/range {v1 .. v8}, Lcom/google/android/gms/internal/ads/zzapa;->L5(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/internal/ads/zzvc;Lcom/google/android/gms/dynamic/IObjectWrapper;Lcom/google/android/gms/internal/ads/zzaoo;Lcom/google/android/gms/internal/ads/zzana;Lcom/google/android/gms/internal/ads/zzvj;)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    return-object p1
+    return-void
 
-    :catchall_0
+    :catch_0
     move-exception p1
 
-    .line 17
-    throw p1
+    .line 7
+    new-instance p2, Lcom/google/android/gms/internal/ads/zzdlr;
+
+    invoke-direct {p2, p1}, Lcom/google/android/gms/internal/ads/zzdlr;-><init>(Ljava/lang/Throwable;)V
+
+    throw p2
+.end method
+
+.method public final synthetic b(Lj3/ug0;Lj3/lg0;Lj3/j40;)Ljava/lang/Object;
+    .locals 5
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzdlr;,
+            Lcom/google/android/gms/internal/ads/zzcuh;
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lj3/z40;->b:Lj3/un;
+
+    new-instance v1, Lj3/uo;
+
+    iget-object v2, p3, Lj3/j40;->a:Ljava/lang/String;
+
+    invoke-direct {v1, p1, p2, v2}, Lj3/uo;-><init>(Lj3/ug0;Lj3/lg0;Ljava/lang/String;)V
+
+    new-instance p1, Lj3/bn;
+
+    iget-object v2, p0, Lj3/z40;->c:Landroid/view/View;
+
+    new-instance v3, Lj3/y40;
+
+    invoke-direct {v3, p3}, Lj3/y40;-><init>(Lj3/j40;)V
+
+    iget-object p2, p2, Lj3/lg0;->t:Ljava/util/List;
+
+    const/4 v4, 0x0
+
+    .line 2
+    invoke-interface {p2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Lj3/kg0;
+
+    const/4 v4, 0x0
+
+    invoke-direct {p1, v2, v4, v3, p2}, Lj3/bn;-><init>(Landroid/view/View;Lj3/gh;Lj3/jo;Lj3/kg0;)V
+
+    .line 3
+    invoke-virtual {v0, v1, p1}, Lj3/un;->b(Lj3/uo;Lj3/bn;)Lj3/rm;
+
+    move-result-object p1
+
+    .line 4
+    invoke-virtual {p1}, Lj3/rm;->w()Lj3/xt;
+
+    move-result-object p2
+
+    iget-object v0, p0, Lj3/z40;->c:Landroid/view/View;
+
+    invoke-virtual {p2, v0}, Lj3/xt;->G0(Landroid/view/View;)V
+
+    .line 5
+    iget-object p2, p3, Lj3/j40;->c:Lj3/qr;
+
+    check-cast p2, Lcom/google/android/gms/internal/ads/zzcso;
+
+    invoke-virtual {p1}, Lj3/u7;->k()Lcom/google/android/gms/internal/ads/zzcvq;
+
+    move-result-object p3
+
+    invoke-virtual {p2, p3}, Lcom/google/android/gms/internal/ads/zzcso;->z7(Lcom/google/android/gms/internal/ads/zzana;)V
+
+    .line 6
+    invoke-virtual {p1}, Lj3/rm;->v()Lj3/zm;
+
+    move-result-object p1
+
+    return-object p1
 .end method

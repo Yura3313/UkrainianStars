@@ -13,13 +13,13 @@
 
 
 # static fields
-.field public static final b:Ljava/util/logging/Logger;
+.field public static final h:Ljava/util/logging/Logger;
 
-.field public static final h:Z
+.field public static final i:Z
 
 
 # instance fields
-.field public a:Lcom/google/crypto/tink/shaded/protobuf/h;
+.field public g:Lcom/google/crypto/tink/shaded/protobuf/h;
 
 
 # direct methods
@@ -37,13 +37,13 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->b:Ljava/util/logging/Logger;
+    sput-object v0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->h:Ljava/util/logging/Logger;
 
     .line 2
-    sget-boolean v0, Lm5/b0;->h:Z
+    sget-boolean v0, Lm5/a0;->h:Z
 
     .line 3
-    sput-boolean v0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->h:Z
+    sput-boolean v0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->i:Z
 
     return-void
 .end method

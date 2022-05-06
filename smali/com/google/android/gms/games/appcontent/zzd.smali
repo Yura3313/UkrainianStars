@@ -20,16 +20,10 @@
 
 
 # virtual methods
-.method public abstract B0()I
+.method public abstract D0()I
 .end method
 
-.method public abstract e()Ljava/lang/String;
-.end method
-
-.method public abstract f0()I
-.end method
-
-.method public abstract g()Ljava/lang/String;
+.method public abstract f()Ljava/lang/String;
 .end method
 
 .method public abstract getDescription()Ljava/lang/String;
@@ -47,7 +41,13 @@
 .method public abstract getType()Ljava/lang/String;
 .end method
 
-.method public abstract o()Ljava/util/List;
+.method public abstract h0()I
+.end method
+
+.method public abstract j()Ljava/lang/String;
+.end method
+
+.method public abstract q()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -58,7 +58,7 @@
     .end annotation
 .end method
 
-.method public abstract p()Ljava/util/List;
+.method public abstract r()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -69,7 +69,7 @@
     .end annotation
 .end method
 
-.method public abstract q()Ljava/util/List;
+.method public abstract s()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",

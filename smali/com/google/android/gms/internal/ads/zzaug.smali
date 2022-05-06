@@ -15,7 +15,7 @@
     .end annotation
 .end method
 
-.method public abstract v0()I
+.method public abstract w0()I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

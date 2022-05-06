@@ -1,97 +1,268 @@
 .class public final Lid/l;
-.super Lle/j;
-.source "LoginEnterEmailTabPageFragment.kt"
+.super Ljava/lang/Object;
+.source "MessagesTabFriendsFragment.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Lvd/j1;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lid/m;",
-        "Ljava/lang/Exception;",
-        "Lbe/n;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final a:I
 
-
-# static fields
-.field public static final a:Lid/l;
+.field public final b:Lqc/y;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lqc/y;)V
+    .locals 0
 
-    new-instance v0, Lid/l;
+    if-eqz p1, :cond_0
 
-    invoke-direct {v0}, Lid/l;-><init>()V
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lid/l;->a:Lid/l;
+    iput-object p1, p0, Lid/l;->b:Lqc/y;
 
-    return-void
-.end method
+    .line 2
+    sget p1, Lcom/supercell/id/R$layout;->fragment_messages_list_item_friend_request:I
 
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    iput p1, p0, Lid/l;->a:I
 
     return-void
+
+    :cond_0
+    const-string p1, "shopItem"
+
+    .line 3
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public a(Lvd/j1;)Z
+    .locals 1
+
+    if-eqz p1, :cond_1
 
     .line 1
-    check-cast p1, Lid/m;
+    instance-of v0, p1, Lid/l;
 
-    check-cast p2, Ljava/lang/Exception;
+    if-nez v0, :cond_0
 
-    const/4 v0, 0x0
+    const/4 p1, 0x0
 
-    if-eqz p1, :cond_2
-
-    if-eqz p2, :cond_1
+    return p1
 
     .line 2
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    :cond_0
+    check-cast p1, Lid/l;
 
-    move-result-object p1
+    iget-object p1, p1, Lid/l;->b:Lqc/y;
+
+    .line 3
+    iget-object p1, p1, Lqc/y;->e:Lqc/z;
+
+    .line 4
+    iget-object v0, p0, Lid/l;->b:Lqc/y;
+
+    .line 5
+    iget-object v0, v0, Lqc/y;->e:Lqc/z;
+
+    .line 6
+    invoke-static {p1, v0}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_1
+    const-string p1, "other"
+
+    .line 7
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public c()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lid/l;->a:I
+
+    return v0
+.end method
+
+.method public d(Lvd/j1;)Z
+    .locals 1
+
+    if-eqz p1, :cond_1
+
+    .line 1
+    instance-of v0, p1, Lid/l;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lid/l;
+
+    iget-object p1, p1, Lid/l;->b:Lqc/y;
+
+    .line 2
+    iget-object p1, p1, Lqc/y;->a:Ljava/lang/String;
+
+    .line 3
+    iget-object v0, p0, Lid/l;->b:Lqc/y;
+
+    .line 4
+    iget-object v0, v0, Lqc/y;->a:Ljava/lang/String;
+
+    .line 5
+    invoke-static {p1, v0}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
 
     if-eqz p1, :cond_0
 
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    const/4 p1, 0x1
 
-    .line 3
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->E(Ljava/lang/Exception;Lke/l;)V
+    goto :goto_0
 
-    .line 4
     :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    const/4 p1, 0x0
 
-    return-object p1
+    :goto_0
+    return p1
 
     :cond_1
-    const-string p1, "it"
+    const-string p1, "other"
+
+    .line 6
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final e()Ljava/util/Date;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lid/l;->b:Lqc/y;
+
+    .line 2
+    iget-object v0, v0, Lqc/y;->e:Lqc/z;
+
+    .line 3
+    instance-of v1, v0, Lqc/z$d;
+
+    if-nez v1, :cond_0
+
+    const/4 v0, 0x0
+
+    :cond_0
+    check-cast v0, Lqc/z$d;
+
+    if-eqz v0, :cond_1
+
+    .line 4
+    iget-object v0, v0, Lqc/z$d;->d:Ljava/util/Date;
+
+    if-eqz v0, :cond_1
+
+    goto :goto_0
 
     .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    :cond_1
+    new-instance v0, Ljava/util/Date;
 
-    throw v0
+    invoke-direct {v0}, Ljava/util/Date;-><init>()V
 
-    :cond_2
-    const-string p1, "$receiver"
+    :goto_0
+    return-object v0
+.end method
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+.method public equals(Ljava/lang/Object;)Z
+    .locals 1
 
-    throw v0
+    if-eq p0, p1, :cond_1
+
+    instance-of v0, p1, Lid/l;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lid/l;
+
+    iget-object v0, p0, Lid/l;->b:Lqc/y;
+
+    iget-object p1, p1, Lid/l;->b:Lqc/y;
+
+    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public hashCode()I
+    .locals 1
+
+    iget-object v0, p0, Lid/l;->b:Lqc/y;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lqc/y;->hashCode()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    const-string v0, "ReceivedDonationRow(shopItem="
+
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lid/l;->b:Lqc/y;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ")"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

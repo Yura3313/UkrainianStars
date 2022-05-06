@@ -71,7 +71,7 @@
     const-string p3, "onCreateWindow: "
 
     .line 1
-    invoke-static {p3}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -119,7 +119,7 @@
     move-result-object p2
 
     .line 5
-    invoke-static {p3}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p3
 
@@ -473,7 +473,7 @@
     const-string p1, "onShowFileChooser: "
 
     .line 1
-    invoke-static {p1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -579,7 +579,7 @@
     const-string v1, "WebViewContainer"
 
     .line 5
-    invoke-static {v0, p2, v1}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p2, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer$WebChromeClientImpl;->this$0:Lcom/kakaogame/web/WebViewContainer;

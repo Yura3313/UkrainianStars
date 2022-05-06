@@ -3,57 +3,66 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
+.implements Lj3/rv0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj3/rv0<",
+        "Lcom/google/android/gms/internal/ads/zzbbg;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Lj3/ej;
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
+.method public constructor <init>(Lj3/ej;)V
     .locals 0
 
     .line 1
-    iput p1, p0, Lj3/nj;->a:I
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lj3/nj;->a:Lj3/ej;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 2
-
-    iget v0, p0, Lj3/nj;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
+.method public static a(Lj3/ej;)Lcom/google/android/gms/internal/ads/zzbbg;
+    .locals 1
 
     .line 1
-    :pswitch_0
-    new-instance v0, Ljava/util/HashMap;
+    iget-object p0, p0, Lj3/ej;->a:Lcom/google/android/gms/internal/ads/zzbbg;
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    return-object v0
+    const-string v0, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 2
-    :goto_0
-    sget-object v0, Lj3/gd;->e:Lj3/am0;
+    invoke-static {p0, v0}, Lj3/u6;->h(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+    move-object v0, p0
 
-    .line 3
-    invoke-static {v0, v1}, Lj3/zo0;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzbbg;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/nj;->a:Lj3/ej;
+
+    invoke-static {v0}, Lj3/nj;->a(Lj3/ej;)Lcom/google/android/gms/internal/ads/zzbbg;
+
+    move-result-object v0
 
     return-object v0
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

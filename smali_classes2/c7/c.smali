@@ -1,5 +1,5 @@
 .class public Lc7/c;
-.super Ly7/g;
+.super Lz7/g;
 .source "JavaCore.java"
 
 
@@ -14,7 +14,7 @@
     .line 1
     iput-object p1, p0, Lc7/c;->b:Lc7/h;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -32,14 +32,14 @@
     if-eqz v1, :cond_0
 
     .line 2
-    iget-object v0, v0, Lc7/h;->g:Lg7/e;
+    iget-object v0, v0, Lc7/h;->g:Lg7/d;
 
     .line 3
-    invoke-virtual {v0}, Lg7/e;->f()Lg7/c;
+    invoke-virtual {v0}, Lg7/d;->f()Lg7/c;
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Li7/a;->g(Lg7/c;)V
+    invoke-virtual {v1, v0}, Li7/a;->f(Lg7/c;)V
 
     :cond_0
     return-void

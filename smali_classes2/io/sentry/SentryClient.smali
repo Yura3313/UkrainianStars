@@ -23,7 +23,7 @@
 
 .field private final options:Lio/sentry/SentryOptions;
 
-.field private final random:Ljava/util/Random;
+.field private final random:Ljava/security/SecureRandom;
 
 .field private final sortBreadcrumbsByDate:Lio/sentry/SentryClient$SortBreadcrumbsByDate;
 
@@ -107,12 +107,12 @@
     goto :goto_0
 
     :cond_1
-    new-instance v1, Ljava/util/Random;
+    new-instance v1, Ljava/security/SecureRandom;
 
-    invoke-direct {v1}, Ljava/util/Random;-><init>()V
+    invoke-direct {v1}, Ljava/security/SecureRandom;-><init>()V
 
     :goto_0
-    iput-object v1, p0, Lio/sentry/SentryClient;->random:Ljava/util/Random;
+    iput-object v1, p0, Lio/sentry/SentryClient;->random:Ljava/security/SecureRandom;
 
     return-void
 .end method
@@ -530,36 +530,7 @@
     return-object p1
 .end method
 
-.method private buildEnvelope(Lio/sentry/SentryBaseEvent;Ljava/util/List;)Lio/sentry/SentryEnvelope;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lio/sentry/SentryBaseEvent;",
-            "Ljava/util/List<",
-            "Lio/sentry/Attachment;",
-            ">;)",
-            "Lio/sentry/SentryEnvelope;"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    const/4 v0, 0x0
-
-    .line 1
-    invoke-direct {p0, p1, p2, v0}, Lio/sentry/SentryClient;->buildEnvelope(Lio/sentry/SentryBaseEvent;Ljava/util/List;Lio/sentry/Session;)Lio/sentry/SentryEnvelope;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method private buildEnvelope(Lio/sentry/SentryBaseEvent;Ljava/util/List;Lio/sentry/Session;)Lio/sentry/SentryEnvelope;
+.method private buildEnvelope(Lio/sentry/SentryBaseEvent;Ljava/util/List;Lio/sentry/Session;Lio/sentry/TraceState;)Lio/sentry/SentryEnvelope;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -569,6 +540,7 @@
             "Lio/sentry/Attachment;",
             ">;",
             "Lio/sentry/Session;",
+            "Lio/sentry/TraceState;",
             ")",
             "Lio/sentry/SentryEnvelope;"
         }
@@ -580,7 +552,7 @@
         }
     .end annotation
 
-    .line 2
+    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -589,10 +561,10 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
+    .line 2
     iget-object v2, p0, Lio/sentry/SentryClient;->options:Lio/sentry/SentryOptions;
 
-    .line 4
+    .line 3
     invoke-virtual {v2}, Lio/sentry/SentryOptions;->getSerializer()Lio/sentry/ISerializer;
 
     move-result-object v2
@@ -601,10 +573,10 @@
 
     move-result-object v2
 
-    .line 5
+    .line 4
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 6
+    .line 5
     invoke-virtual {p1}, Lio/sentry/SentryBaseEvent;->getEventId()Lio/sentry/protocol/SentryId;
 
     move-result-object p1
@@ -617,10 +589,10 @@
     :goto_0
     if-eqz p3, :cond_1
 
-    .line 7
+    .line 6
     iget-object v2, p0, Lio/sentry/SentryClient;->options:Lio/sentry/SentryOptions;
 
-    .line 8
+    .line 7
     invoke-virtual {v2}, Lio/sentry/SentryOptions;->getSerializer()Lio/sentry/ISerializer;
 
     move-result-object v2
@@ -629,13 +601,13 @@
 
     move-result-object p3
 
-    .line 9
+    .line 8
     invoke-virtual {v0, p3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_1
     if-eqz p2, :cond_2
 
-    .line 10
+    .line 9
     invoke-interface {p2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p2
@@ -653,10 +625,10 @@
 
     check-cast p3, Lio/sentry/Attachment;
 
-    .line 11
+    .line 10
     iget-object v2, p0, Lio/sentry/SentryClient;->options:Lio/sentry/SentryOptions;
 
-    .line 12
+    .line 11
     invoke-virtual {v2}, Lio/sentry/SentryOptions;->getMaxAttachmentSize()J
 
     move-result-wide v2
@@ -665,12 +637,12 @@
 
     move-result-object p3
 
-    .line 13
+    .line 12
     invoke-virtual {v0, p3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 14
+    .line 13
     :cond_2
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -678,19 +650,19 @@
 
     if-nez p2, :cond_3
 
-    .line 15
+    .line 14
     new-instance p2, Lio/sentry/SentryEnvelopeHeader;
 
     iget-object p3, p0, Lio/sentry/SentryClient;->options:Lio/sentry/SentryOptions;
 
-    .line 16
+    .line 15
     invoke-virtual {p3}, Lio/sentry/SentryOptions;->getSdkVersion()Lio/sentry/protocol/SdkVersion;
 
     move-result-object p3
 
-    invoke-direct {p2, p1, p3}, Lio/sentry/SentryEnvelopeHeader;-><init>(Lio/sentry/protocol/SentryId;Lio/sentry/protocol/SdkVersion;)V
+    invoke-direct {p2, p1, p3, p4}, Lio/sentry/SentryEnvelopeHeader;-><init>(Lio/sentry/protocol/SentryId;Lio/sentry/protocol/SdkVersion;Lio/sentry/TraceState;)V
 
-    .line 17
+    .line 16
     new-instance p1, Lio/sentry/SentryEnvelope;
 
     invoke-direct {p1, p2, v0}, Lio/sentry/SentryEnvelope;-><init>(Lio/sentry/SentryEnvelopeHeader;Ljava/lang/Iterable;)V
@@ -704,15 +676,15 @@
 .method private buildEnvelope(Lio/sentry/UserFeedback;)Lio/sentry/SentryEnvelope;
     .locals 3
 
-    .line 18
+    .line 17
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 19
+    .line 18
     iget-object v1, p0, Lio/sentry/SentryClient;->options:Lio/sentry/SentryOptions;
 
-    .line 20
+    .line 19
     invoke-virtual {v1}, Lio/sentry/SentryOptions;->getSerializer()Lio/sentry/ISerializer;
 
     move-result-object v1
@@ -721,13 +693,13 @@
 
     move-result-object v1
 
-    .line 21
+    .line 20
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 22
+    .line 21
     new-instance v1, Lio/sentry/SentryEnvelopeHeader;
 
-    .line 23
+    .line 22
     invoke-virtual {p1}, Lio/sentry/UserFeedback;->getEventId()Lio/sentry/protocol/SentryId;
 
     move-result-object p1
@@ -740,7 +712,7 @@
 
     invoke-direct {v1, p1, v2}, Lio/sentry/SentryEnvelopeHeader;-><init>(Lio/sentry/protocol/SentryId;Lio/sentry/protocol/SdkVersion;)V
 
-    .line 24
+    .line 23
     new-instance p1, Lio/sentry/SentryEnvelope;
 
     invoke-direct {p1, v1, v0}, Lio/sentry/SentryEnvelope;-><init>(Lio/sentry/SentryEnvelopeHeader;Ljava/lang/Iterable;)V
@@ -766,11 +738,11 @@
 
     move-result-object p1
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception p2
 
     .line 3
@@ -809,14 +781,14 @@
     invoke-virtual {v0, v1}, Lio/sentry/Breadcrumb;->setLevel(Lio/sentry/SentryLevel;)V
 
     .line 10
-    invoke-virtual {p2}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
     .line 11
-    invoke-virtual {p2}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p2
 
@@ -1096,11 +1068,11 @@
 
     move-result-object p1
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception v3
 
     .line 3
@@ -1166,99 +1138,6 @@
     return-object p1
 .end method
 
-.method private processTransaction(Lio/sentry/protocol/SentryTransaction;)Lio/sentry/protocol/SentryTransaction;
-    .locals 6
-
-    .line 11
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    .line 12
-    invoke-virtual {p1}, Lio/sentry/protocol/SentryTransaction;->getSpans()Ljava/util/List;
-
-    move-result-object v1
-
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :cond_0
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lio/sentry/protocol/SentrySpan;
-
-    .line 13
-    invoke-virtual {v2}, Lio/sentry/protocol/SentrySpan;->isFinished()Z
-
-    move-result v3
-
-    if-nez v3, :cond_0
-
-    .line 14
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
-
-    .line 15
-    :cond_1
-    invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
-
-    move-result v1
-
-    if-nez v1, :cond_2
-
-    .line 16
-    iget-object v1, p0, Lio/sentry/SentryClient;->options:Lio/sentry/SentryOptions;
-
-    .line 17
-    invoke-virtual {v1}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
-
-    move-result-object v1
-
-    sget-object v2, Lio/sentry/SentryLevel;->WARNING:Lio/sentry/SentryLevel;
-
-    const/4 v3, 0x1
-
-    new-array v3, v3, [Ljava/lang/Object;
-
-    const/4 v4, 0x0
-
-    .line 18
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v5
-
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v5
-
-    aput-object v5, v3, v4
-
-    const-string v4, "Dropping %d unfinished spans"
-
-    invoke-interface {v1, v2, v4, v3}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
-
-    .line 19
-    :cond_2
-    invoke-virtual {p1}, Lio/sentry/protocol/SentryTransaction;->getSpans()Ljava/util/List;
-
-    move-result-object v1
-
-    invoke-interface {v1, v0}, Ljava/util/List;->removeAll(Ljava/util/Collection;)Z
-
-    return-object p1
-.end method
-
 .method private processTransaction(Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;Ljava/util/List;)Lio/sentry/protocol/SentryTransaction;
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
@@ -1301,11 +1180,11 @@
 
     move-result-object p1
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception v3
 
     .line 3
@@ -1385,7 +1264,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lio/sentry/SentryClient;->random:Ljava/util/Random;
+    iget-object v0, p0, Lio/sentry/SentryClient;->random:Ljava/security/SecureRandom;
 
     if-eqz v0, :cond_1
 
@@ -1401,9 +1280,9 @@
     move-result-wide v2
 
     .line 3
-    iget-object v0, p0, Lio/sentry/SentryClient;->random:Ljava/util/Random;
+    iget-object v0, p0, Lio/sentry/SentryClient;->random:Ljava/security/SecureRandom;
 
-    invoke-virtual {v0}, Ljava/util/Random;->nextDouble()D
+    invoke-virtual {v0}, Ljava/security/SecureRandom;->nextDouble()D
 
     move-result-wide v4
 
@@ -1594,7 +1473,7 @@
 .end method
 
 .method public captureEvent(Lio/sentry/SentryEvent;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
-    .locals 7
+    .locals 8
 
     const-string v0, "SentryEvent is required."
 
@@ -1672,7 +1551,7 @@
 
     const/4 v0, 0x0
 
-    if-eqz p1, :cond_2
+    if-eqz p1, :cond_1
 
     .line 8
     invoke-virtual {p0, p1, p3, p2}, Lio/sentry/SentryClient;->updateSessionData(Lio/sentry/SentryEvent;Ljava/lang/Object;Lio/sentry/Scope;)Lio/sentry/Session;
@@ -1684,7 +1563,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_1
+    if-nez v4, :cond_2
 
     .line 10
     iget-object v4, p0, Lio/sentry/SentryClient;->options:Lio/sentry/SentryOptions;
@@ -1710,31 +1589,34 @@
 
     move-object p1, v0
 
+    goto :goto_0
+
     :cond_1
-    move-object v0, v3
+    move-object v3, v0
 
     :cond_2
+    :goto_0
     if-eqz p1, :cond_4
 
     .line 14
     invoke-virtual {p1}, Lio/sentry/SentryBaseEvent;->getThrowable()Ljava/lang/Throwable;
 
-    move-result-object v3
+    move-result-object v4
 
-    if-eqz v3, :cond_3
+    if-eqz v4, :cond_3
 
-    iget-object v3, p0, Lio/sentry/SentryClient;->options:Lio/sentry/SentryOptions;
+    iget-object v4, p0, Lio/sentry/SentryClient;->options:Lio/sentry/SentryOptions;
 
     .line 15
     invoke-virtual {p1}, Lio/sentry/SentryBaseEvent;->getThrowable()Ljava/lang/Throwable;
 
-    move-result-object v4
+    move-result-object v6
 
-    invoke-virtual {v3, v4}, Lio/sentry/SentryOptions;->containsIgnoredExceptionForType(Ljava/lang/Throwable;)Z
+    invoke-virtual {v4, v6}, Lio/sentry/SentryOptions;->containsIgnoredExceptionForType(Ljava/lang/Throwable;)Z
 
-    move-result v3
+    move-result v4
 
-    if-eqz v3, :cond_3
+    if-eqz v4, :cond_3
 
     .line 16
     iget-object p2, p0, Lio/sentry/SentryClient;->options:Lio/sentry/SentryOptions;
@@ -1776,17 +1658,17 @@
     if-nez p1, :cond_4
 
     .line 22
-    iget-object v3, p0, Lio/sentry/SentryClient;->options:Lio/sentry/SentryOptions;
+    iget-object v4, p0, Lio/sentry/SentryClient;->options:Lio/sentry/SentryOptions;
 
-    invoke-virtual {v3}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {v4}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
 
-    move-result-object v3
+    move-result-object v4
 
-    new-array v4, v5, [Ljava/lang/Object;
+    new-array v6, v5, [Ljava/lang/Object;
 
-    const-string v6, "Event was dropped by beforeSend"
+    const-string v7, "Event was dropped by beforeSend"
 
-    invoke-interface {v3, v1, v6, v4}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {v4, v1, v7, v6}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 23
     :cond_4
@@ -1797,41 +1679,66 @@
     .line 24
     invoke-virtual {p1}, Lio/sentry/SentryBaseEvent;->getEventId()Lio/sentry/protocol/SentryId;
 
-    move-result-object v3
+    move-result-object v4
 
-    if-eqz v3, :cond_5
+    if-eqz v4, :cond_5
 
     .line 25
     invoke-virtual {p1}, Lio/sentry/SentryBaseEvent;->getEventId()Lio/sentry/protocol/SentryId;
 
     move-result-object v1
 
-    .line 26
     :cond_5
+    if-eqz p2, :cond_6
+
+    .line 26
     :try_start_0
+    invoke-virtual {p2}, Lio/sentry/Scope;->getTransaction()Lio/sentry/ITransaction;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_6
+
+    .line 27
+    invoke-virtual {p2}, Lio/sentry/Scope;->getTransaction()Lio/sentry/ITransaction;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lio/sentry/ISpan;->traceState()Lio/sentry/TraceState;
+
+    move-result-object v0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception p1
+
+    goto :goto_2
+
+    .line 28
+    :cond_6
+    :goto_1
     invoke-direct {p0, p2}, Lio/sentry/SentryClient;->getAttachmentsFromScope(Lio/sentry/Scope;)Ljava/util/List;
 
     move-result-object p2
 
-    invoke-direct {p0, p1, p2, v0}, Lio/sentry/SentryClient;->buildEnvelope(Lio/sentry/SentryBaseEvent;Ljava/util/List;Lio/sentry/Session;)Lio/sentry/SentryEnvelope;
+    invoke-direct {p0, p1, p2, v3, v0}, Lio/sentry/SentryClient;->buildEnvelope(Lio/sentry/SentryBaseEvent;Ljava/util/List;Lio/sentry/Session;Lio/sentry/TraceState;)Lio/sentry/SentryEnvelope;
 
     move-result-object p1
 
-    if-eqz p1, :cond_6
+    if-eqz p1, :cond_7
 
-    .line 27
+    .line 29
     iget-object p2, p0, Lio/sentry/SentryClient;->transport:Lio/sentry/transport/ITransport;
 
     invoke-interface {p2, p1, p3}, Lio/sentry/transport/ITransport;->send(Lio/sentry/SentryEnvelope;Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
+    goto :goto_3
 
-    :catch_0
-    move-exception p1
-
-    .line 28
+    .line 30
+    :goto_2
     iget-object p2, p0, Lio/sentry/SentryClient;->options:Lio/sentry/SentryOptions;
 
     invoke-virtual {p2}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
@@ -1848,11 +1755,11 @@
 
     invoke-interface {p2, p3, p1, v1, v0}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 29
+    .line 31
     sget-object v1, Lio/sentry/protocol/SentryId;->EMPTY_ID:Lio/sentry/protocol/SentryId;
 
-    :cond_6
-    :goto_0
+    :cond_7
+    :goto_3
     return-object v1
 .end method
 
@@ -2041,7 +1948,27 @@
     return-object p1
 .end method
 
-.method public captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+.method public synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3}, Lio/sentry/g;->m(Lio/sentry/ISentryClient;Lio/sentry/protocol/SentryTransaction;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public synthetic captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;)Lio/sentry/protocol/SentryId;
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Lio/sentry/g;->n(Lio/sentry/ISentryClient;Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;)Lio/sentry/protocol/SentryId;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;Lio/sentry/Scope;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
     .locals 8
 
     const-string v0, "Transaction is required."
@@ -2098,14 +2025,14 @@
 
     .line 8
     :goto_0
-    invoke-direct {p0, p1, p3}, Lio/sentry/SentryClient;->shouldApplyScopeData(Lio/sentry/SentryBaseEvent;Ljava/lang/Object;)Z
+    invoke-direct {p0, p1, p4}, Lio/sentry/SentryClient;->shouldApplyScopeData(Lio/sentry/SentryBaseEvent;Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
     .line 9
-    invoke-direct {p0, p1, p2}, Lio/sentry/SentryClient;->applyScope(Lio/sentry/SentryBaseEvent;Lio/sentry/Scope;)Lio/sentry/SentryBaseEvent;
+    invoke-direct {p0, p1, p3}, Lio/sentry/SentryClient;->applyScope(Lio/sentry/SentryBaseEvent;Lio/sentry/Scope;)Lio/sentry/SentryBaseEvent;
 
     move-result-object p1
 
@@ -2113,14 +2040,14 @@
 
     if-eqz p1, :cond_1
 
-    if-eqz p2, :cond_1
+    if-eqz p3, :cond_1
 
     .line 10
-    invoke-virtual {p2}, Lio/sentry/Scope;->getEventProcessors()Ljava/util/List;
+    invoke-virtual {p3}, Lio/sentry/Scope;->getEventProcessors()Ljava/util/List;
 
     move-result-object v4
 
-    invoke-direct {p0, p1, p3, v4}, Lio/sentry/SentryClient;->processTransaction(Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;Ljava/util/List;)Lio/sentry/protocol/SentryTransaction;
+    invoke-direct {p0, p1, p4, v4}, Lio/sentry/SentryClient;->processTransaction(Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;Ljava/util/List;)Lio/sentry/protocol/SentryTransaction;
 
     move-result-object p1
 
@@ -2150,7 +2077,7 @@
 
     move-result-object v4
 
-    invoke-direct {p0, p1, p3, v4}, Lio/sentry/SentryClient;->processTransaction(Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;Ljava/util/List;)Lio/sentry/protocol/SentryTransaction;
+    invoke-direct {p0, p1, p4, v4}, Lio/sentry/SentryClient;->processTransaction(Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;Ljava/util/List;)Lio/sentry/protocol/SentryTransaction;
 
     move-result-object p1
 
@@ -2174,19 +2101,19 @@
 
     .line 14
     :cond_4
-    invoke-direct {p0, p1}, Lio/sentry/SentryClient;->processTransaction(Lio/sentry/protocol/SentryTransaction;)Lio/sentry/protocol/SentryTransaction;
+    :try_start_0
+    invoke-direct {p0, p3}, Lio/sentry/SentryClient;->getAttachmentsFromScope(Lio/sentry/Scope;)Ljava/util/List;
+
+    move-result-object p3
+
+    invoke-direct {p0, p3}, Lio/sentry/SentryClient;->filterForTransaction(Ljava/util/List;)Ljava/util/List;
+
+    move-result-object p3
+
+    const/4 v1, 0x0
 
     .line 15
-    :try_start_0
-    invoke-direct {p0, p2}, Lio/sentry/SentryClient;->getAttachmentsFromScope(Lio/sentry/Scope;)Ljava/util/List;
-
-    move-result-object p2
-
-    invoke-direct {p0, p2}, Lio/sentry/SentryClient;->filterForTransaction(Ljava/util/List;)Ljava/util/List;
-
-    move-result-object p2
-
-    invoke-direct {p0, p1, p2}, Lio/sentry/SentryClient;->buildEnvelope(Lio/sentry/SentryBaseEvent;Ljava/util/List;)Lio/sentry/SentryEnvelope;
+    invoke-direct {p0, p1, p3, v1, p2}, Lio/sentry/SentryClient;->buildEnvelope(Lio/sentry/SentryBaseEvent;Ljava/util/List;Lio/sentry/Session;Lio/sentry/TraceState;)Lio/sentry/SentryEnvelope;
 
     move-result-object p1
 
@@ -2195,7 +2122,7 @@
     .line 16
     iget-object p2, p0, Lio/sentry/SentryClient;->transport:Lio/sentry/transport/ITransport;
 
-    invoke-interface {p2, p1, p3}, Lio/sentry/transport/ITransport;->send(Lio/sentry/SentryEnvelope;Ljava/lang/Object;)V
+    invoke-interface {p2, p1, p4}, Lio/sentry/transport/ITransport;->send(Lio/sentry/SentryEnvelope;Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2215,13 +2142,13 @@
 
     sget-object p3, Lio/sentry/SentryLevel;->WARNING:Lio/sentry/SentryLevel;
 
-    new-array v0, v2, [Ljava/lang/Object;
+    new-array p4, v2, [Ljava/lang/Object;
 
-    aput-object v3, v0, v5
+    aput-object v3, p4, v5
 
-    const-string v1, "Capturing transaction %s failed."
+    const-string v0, "Capturing transaction %s failed."
 
-    invoke-interface {p2, p3, p1, v1, v0}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p2, p3, p1, v0, p4}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 18
     sget-object v0, Lio/sentry/protocol/SentryId;->EMPTY_ID:Lio/sentry/protocol/SentryId;
@@ -2344,7 +2271,7 @@
 .end method
 
 .method public close()V
-    .locals 5
+    .locals 7
 
     .line 1
     iget-object v0, p0, Lio/sentry/SentryClient;->options:Lio/sentry/SentryOptions;
@@ -2402,6 +2329,79 @@
 
     .line 7
     :goto_0
+    iget-object v0, p0, Lio/sentry/SentryClient;->options:Lio/sentry/SentryOptions;
+
+    invoke-virtual {v0}, Lio/sentry/SentryOptions;->getEventProcessors()Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_0
+    :goto_1
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lio/sentry/EventProcessor;
+
+    .line 8
+    instance-of v3, v1, Ljava/io/Closeable;
+
+    if-eqz v3, :cond_0
+
+    .line 9
+    :try_start_1
+    move-object v3, v1
+
+    check-cast v3, Ljava/io/Closeable;
+
+    invoke-interface {v3}, Ljava/io/Closeable;->close()V
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+
+    goto :goto_1
+
+    :catch_1
+    move-exception v3
+
+    .line 10
+    iget-object v4, p0, Lio/sentry/SentryClient;->options:Lio/sentry/SentryOptions;
+
+    .line 11
+    invoke-virtual {v4}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
+
+    move-result-object v4
+
+    sget-object v5, Lio/sentry/SentryLevel;->WARNING:Lio/sentry/SentryLevel;
+
+    const/4 v6, 0x2
+
+    new-array v6, v6, [Ljava/lang/Object;
+
+    aput-object v1, v6, v2
+
+    const/4 v1, 0x1
+
+    aput-object v3, v6, v1
+
+    const-string v1, "Failed to close the event processor {}."
+
+    .line 12
+    invoke-interface {v4, v5, v1, v6}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    goto :goto_1
+
+    .line 13
+    :cond_1
     iput-boolean v2, p0, Lio/sentry/SentryClient;->enabled:Z
 
     return-void

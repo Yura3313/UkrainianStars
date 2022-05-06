@@ -356,7 +356,7 @@
     invoke-virtual {v3}, Landroidx/appcompat/widget/Toolbar;->g()V
 
     .line 46
-    iget-object v3, v3, Landroidx/appcompat/widget/Toolbar;->y:Landroidx/appcompat/widget/a0;
+    iget-object v3, v3, Landroidx/appcompat/widget/Toolbar;->z:Landroidx/appcompat/widget/a0;
 
     invoke-virtual {v3, p2, v2}, Landroidx/appcompat/widget/a0;->a(II)V
 
@@ -378,10 +378,10 @@
     move-result-object v3
 
     .line 49
-    iput p2, v2, Landroidx/appcompat/widget/Toolbar;->q:I
+    iput p2, v2, Landroidx/appcompat/widget/Toolbar;->r:I
 
     .line 50
-    iget-object v2, v2, Landroidx/appcompat/widget/Toolbar;->b:Landroid/widget/TextView;
+    iget-object v2, v2, Landroidx/appcompat/widget/Toolbar;->h:Landroid/widget/TextView;
 
     if-eqz v2, :cond_c
 
@@ -406,10 +406,10 @@
     move-result-object v3
 
     .line 54
-    iput p2, v2, Landroidx/appcompat/widget/Toolbar;->r:I
+    iput p2, v2, Landroidx/appcompat/widget/Toolbar;->s:I
 
     .line 55
-    iget-object v2, v2, Landroidx/appcompat/widget/Toolbar;->h:Landroid/widget/TextView;
+    iget-object v2, v2, Landroidx/appcompat/widget/Toolbar;->i:Landroid/widget/TextView;
 
     if-eqz v2, :cond_d
 
@@ -911,13 +911,13 @@
     return v0
 .end method
 
-.method public o(IJ)Lf0/x;
+.method public o(IJ)Lf0/w;
     .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/k0;->a:Landroidx/appcompat/widget/Toolbar;
 
-    invoke-static {v0}, Lf0/s;->a(Landroid/view/View;)Lf0/x;
+    invoke-static {v0}, Lf0/r;->a(Landroid/view/View;)Lf0/w;
 
     move-result-object v0
 
@@ -932,17 +932,17 @@
 
     .line 2
     :goto_0
-    invoke-virtual {v0, v1}, Lf0/x;->a(F)Lf0/x;
+    invoke-virtual {v0, v1}, Lf0/w;->a(F)Lf0/w;
 
     .line 3
-    invoke-virtual {v0, p2, p3}, Lf0/x;->c(J)Lf0/x;
+    invoke-virtual {v0, p2, p3}, Lf0/w;->c(J)Lf0/w;
 
     new-instance p2, Landroidx/appcompat/widget/k0$a;
 
     invoke-direct {p2, p0, p1}, Landroidx/appcompat/widget/k0$a;-><init>(Landroidx/appcompat/widget/k0;I)V
 
     .line 4
-    iget-object p1, v0, Lf0/x;->a:Ljava/lang/ref/WeakReference;
+    iget-object p1, v0, Lf0/w;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -953,7 +953,7 @@
     if-eqz p1, :cond_1
 
     .line 5
-    invoke-virtual {v0, p1, p2}, Lf0/x;->e(Landroid/view/View;Lf0/y;)V
+    invoke-virtual {v0, p1, p2}, Lf0/w;->e(Landroid/view/View;Lf0/x;)V
 
     :cond_1
     return-object v0

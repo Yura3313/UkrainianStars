@@ -3,7 +3,7 @@
 .source "ProfileSelectorFragment.kt"
 
 # interfaces
-.implements Lwd/j1;
+.implements Lvd/j1;
 
 
 # annotations
@@ -53,7 +53,7 @@
 
 
 # virtual methods
-.method public a(Lwd/j1;)Z
+.method public a(Lvd/j1;)Z
     .locals 0
 
     if-eqz p1, :cond_0
@@ -66,14 +66,23 @@
     const-string p1, "other"
 
     .line 1
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public c(Lwd/j1;)Z
+.method public c()I
+    .locals 1
+
+    .line 1
+    sget v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$b;->a:I
+
+    return v0
+.end method
+
+.method public d(Lvd/j1;)Z
     .locals 0
 
     if-eqz p1, :cond_1
@@ -94,18 +103,9 @@
     const-string p1, "other"
 
     .line 1
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
-.end method
-
-.method public d()I
-    .locals 1
-
-    .line 1
-    sget v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$b;->a:I
-
-    return v0
 .end method

@@ -1,5 +1,5 @@
 .class public Ld9/y0;
-.super Ly7/g;
+.super Lz7/g;
 .source "NewConversationVM.java"
 
 
@@ -18,7 +18,7 @@
 
     iput-object p2, p0, Ld9/y0;->b:Ljava/lang/String;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -31,9 +31,9 @@
     .line 1
     iget-object v0, p0, Ld9/y0;->c:Ld9/t0;
 
-    iget-object v0, v0, Ld9/t0;->f:Lpb/n;
+    iget-object v0, v0, Ld9/t0;->f:Lnb/n;
 
-    invoke-virtual {v0}, Lpb/r;->d()Ljava/lang/String;
+    invoke-virtual {v0}, Lnb/r;->d()Ljava/lang/String;
 
     move-result-object v0
 
@@ -49,11 +49,11 @@
     .line 3
     iget-object v0, p0, Ld9/y0;->c:Ld9/t0;
 
-    iget-object v0, v0, Ld9/t0;->f:Lpb/n;
+    iget-object v0, v0, Ld9/t0;->f:Lnb/n;
 
     iget-object v1, p0, Ld9/y0;->b:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lpb/n;->e(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lnb/n;->e(Ljava/lang/String;)V
 
     :cond_0
     return-void

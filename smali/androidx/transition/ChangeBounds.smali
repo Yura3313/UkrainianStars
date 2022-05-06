@@ -12,18 +12,7 @@
 
 
 # static fields
-.field public static final F:[Ljava/lang/String;
-
-.field public static final G:Landroid/util/Property;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/util/Property<",
-            "Landroidx/transition/ChangeBounds$j;",
-            "Landroid/graphics/PointF;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final G:[Ljava/lang/String;
 
 .field public static final H:Landroid/util/Property;
     .annotation system Ldalvik/annotation/Signature;
@@ -40,7 +29,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/Property<",
-            "Landroid/view/View;",
+            "Landroidx/transition/ChangeBounds$j;",
             "Landroid/graphics/PointF;",
             ">;"
         }
@@ -69,13 +58,24 @@
     .end annotation
 .end field
 
-.field public static L:Lv0/m;
+.field public static final L:Landroid/util/Property;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/util/Property<",
+            "Landroid/view/View;",
+            "Landroid/graphics/PointF;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static M:Lv0/m;
 
 
 # instance fields
-.field public D:[I
+.field public E:[I
 
-.field public E:Z
+.field public F:Z
 
 
 # direct methods
@@ -117,7 +117,7 @@
     aput-object v2, v0, v1
 
     .line 1
-    sput-object v0, Landroidx/transition/ChangeBounds;->F:[Ljava/lang/String;
+    sput-object v0, Landroidx/transition/ChangeBounds;->G:[Ljava/lang/String;
 
     .line 2
     new-instance v0, Landroidx/transition/ChangeBounds$a;
@@ -137,7 +137,7 @@
 
     invoke-direct {v0, v1, v2}, Landroidx/transition/ChangeBounds$b;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
 
-    sput-object v0, Landroidx/transition/ChangeBounds;->G:Landroid/util/Property;
+    sput-object v0, Landroidx/transition/ChangeBounds;->H:Landroid/util/Property;
 
     .line 4
     new-instance v0, Landroidx/transition/ChangeBounds$c;
@@ -148,7 +148,7 @@
 
     invoke-direct {v0, v1, v3}, Landroidx/transition/ChangeBounds$c;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
 
-    sput-object v0, Landroidx/transition/ChangeBounds;->H:Landroid/util/Property;
+    sput-object v0, Landroidx/transition/ChangeBounds;->I:Landroid/util/Property;
 
     .line 5
     new-instance v0, Landroidx/transition/ChangeBounds$d;
@@ -157,7 +157,7 @@
 
     invoke-direct {v0, v1, v3}, Landroidx/transition/ChangeBounds$d;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
 
-    sput-object v0, Landroidx/transition/ChangeBounds;->I:Landroid/util/Property;
+    sput-object v0, Landroidx/transition/ChangeBounds;->J:Landroid/util/Property;
 
     .line 6
     new-instance v0, Landroidx/transition/ChangeBounds$e;
@@ -166,7 +166,7 @@
 
     invoke-direct {v0, v1, v2}, Landroidx/transition/ChangeBounds$e;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
 
-    sput-object v0, Landroidx/transition/ChangeBounds;->J:Landroid/util/Property;
+    sput-object v0, Landroidx/transition/ChangeBounds;->K:Landroid/util/Property;
 
     .line 7
     new-instance v0, Landroidx/transition/ChangeBounds$f;
@@ -177,14 +177,14 @@
 
     invoke-direct {v0, v1, v2}, Landroidx/transition/ChangeBounds$f;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
 
-    sput-object v0, Landroidx/transition/ChangeBounds;->K:Landroid/util/Property;
+    sput-object v0, Landroidx/transition/ChangeBounds;->L:Landroid/util/Property;
 
     .line 8
     new-instance v0, Lv0/m;
 
     invoke-direct {v0}, Lv0/m;-><init>()V
 
-    sput-object v0, Landroidx/transition/ChangeBounds;->L:Lv0/m;
+    sput-object v0, Landroidx/transition/ChangeBounds;->M:Lv0/m;
 
     return-void
 .end method
@@ -200,12 +200,12 @@
     new-array v0, v0, [I
 
     .line 2
-    iput-object v0, p0, Landroidx/transition/ChangeBounds;->D:[I
+    iput-object v0, p0, Landroidx/transition/ChangeBounds;->E:[I
 
     const/4 v0, 0x0
 
     .line 3
-    iput-boolean v0, p0, Landroidx/transition/ChangeBounds;->E:Z
+    iput-boolean v0, p0, Landroidx/transition/ChangeBounds;->F:Z
 
     return-void
 .end method
@@ -226,12 +226,12 @@
     new-array v0, v0, [I
 
     .line 5
-    iput-object v0, p0, Landroidx/transition/ChangeBounds;->D:[I
+    iput-object v0, p0, Landroidx/transition/ChangeBounds;->E:[I
 
     const/4 v0, 0x0
 
     .line 6
-    iput-boolean v0, p0, Landroidx/transition/ChangeBounds;->E:Z
+    iput-boolean v0, p0, Landroidx/transition/ChangeBounds;->F:Z
 
     .line 7
     sget-object v1, Lv0/p;->b:[I
@@ -253,21 +253,21 @@
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 10
-    iput-boolean p2, p0, Landroidx/transition/ChangeBounds;->E:Z
+    iput-boolean p2, p0, Landroidx/transition/ChangeBounds;->F:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final I(Lv0/s;)V
+.method public final J(Lv0/s;)V
     .locals 7
 
     .line 1
     iget-object v0, p1, Lv0/s;->b:Landroid/view/View;
 
     .line 2
-    invoke-static {v0}, Lf0/s;->p(Landroid/view/View;)Z
+    invoke-static {v0}, Lf0/r;->p(Landroid/view/View;)Z
 
     move-result v1
 
@@ -329,7 +329,7 @@
     invoke-interface {v1, v3, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 7
-    iget-boolean v1, p0, Landroidx/transition/ChangeBounds;->E:Z
+    iget-boolean v1, p0, Landroidx/transition/ChangeBounds;->F:Z
 
     if-eqz v1, :cond_1
 
@@ -354,7 +354,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/ChangeBounds;->I(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/ChangeBounds;->J(Lv0/s;)V
 
     return-void
 .end method
@@ -363,12 +363,12 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/ChangeBounds;->I(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/ChangeBounds;->J(Lv0/s;)V
 
     return-void
 .end method
 
-.method public k(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+.method public l(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
     .locals 19
 
     move-object/from16 v8, p0
@@ -557,7 +557,7 @@
     move-object/from16 v17, v9
 
     .line 19
-    iget-boolean v9, v8, Landroidx/transition/ChangeBounds;->E:Z
+    iget-boolean v9, v8, Landroidx/transition/ChangeBounds;->F:Z
 
     move-object/from16 v18, v0
 
@@ -577,7 +577,7 @@
     if-ne v14, v2, :cond_c
 
     .line 21
-    iget-object v0, v8, Landroidx/transition/Transition;->z:Landroidx/transition/PathMotion;
+    iget-object v0, v8, Landroidx/transition/Transition;->A:Landroidx/transition/PathMotion;
 
     int-to-float v1, v5
 
@@ -593,7 +593,7 @@
     move-result-object v0
 
     .line 23
-    sget-object v1, Landroidx/transition/ChangeBounds;->K:Landroid/util/Property;
+    sget-object v1, Landroidx/transition/ChangeBounds;->L:Landroid/util/Property;
 
     invoke-static {v9, v1, v0}, Lv0/j;->a(Ljava/lang/Object;Landroid/util/Property;Landroid/graphics/Path;)Landroid/animation/ObjectAnimator;
 
@@ -608,7 +608,7 @@
     invoke-direct {v1, v9}, Landroidx/transition/ChangeBounds$j;-><init>(Landroid/view/View;)V
 
     .line 25
-    iget-object v2, v8, Landroidx/transition/Transition;->z:Landroidx/transition/PathMotion;
+    iget-object v2, v8, Landroidx/transition/Transition;->A:Landroidx/transition/PathMotion;
 
     int-to-float v4, v5
 
@@ -624,7 +624,7 @@
     move-result-object v2
 
     .line 27
-    sget-object v4, Landroidx/transition/ChangeBounds;->G:Landroid/util/Property;
+    sget-object v4, Landroidx/transition/ChangeBounds;->H:Landroid/util/Property;
 
     .line 28
     invoke-static {v1, v4, v2}, Lv0/j;->a(Ljava/lang/Object;Landroid/util/Property;Landroid/graphics/Path;)Landroid/animation/ObjectAnimator;
@@ -632,7 +632,7 @@
     move-result-object v2
 
     .line 29
-    iget-object v4, v8, Landroidx/transition/Transition;->z:Landroidx/transition/PathMotion;
+    iget-object v4, v8, Landroidx/transition/Transition;->A:Landroidx/transition/PathMotion;
 
     int-to-float v5, v11
 
@@ -648,7 +648,7 @@
     move-result-object v3
 
     .line 31
-    sget-object v4, Landroidx/transition/ChangeBounds;->H:Landroid/util/Property;
+    sget-object v4, Landroidx/transition/ChangeBounds;->I:Landroid/util/Property;
 
     invoke-static {v1, v4, v3}, Lv0/j;->a(Ljava/lang/Object;Landroid/util/Property;Landroid/graphics/Path;)Landroid/animation/ObjectAnimator;
 
@@ -692,7 +692,7 @@
 
     .line 35
     :cond_e
-    iget-object v0, v8, Landroidx/transition/Transition;->z:Landroidx/transition/PathMotion;
+    iget-object v0, v8, Landroidx/transition/Transition;->A:Landroidx/transition/PathMotion;
 
     int-to-float v1, v11
 
@@ -708,7 +708,7 @@
     move-result-object v0
 
     .line 37
-    sget-object v1, Landroidx/transition/ChangeBounds;->I:Landroid/util/Property;
+    sget-object v1, Landroidx/transition/ChangeBounds;->J:Landroid/util/Property;
 
     invoke-static {v9, v1, v0}, Lv0/j;->a(Ljava/lang/Object;Landroid/util/Property;Landroid/graphics/Path;)Landroid/animation/ObjectAnimator;
 
@@ -719,7 +719,7 @@
     .line 38
     :cond_f
     :goto_3
-    iget-object v0, v8, Landroidx/transition/Transition;->z:Landroidx/transition/PathMotion;
+    iget-object v0, v8, Landroidx/transition/Transition;->A:Landroidx/transition/PathMotion;
 
     int-to-float v1, v5
 
@@ -735,7 +735,7 @@
     move-result-object v0
 
     .line 40
-    sget-object v1, Landroidx/transition/ChangeBounds;->J:Landroid/util/Property;
+    sget-object v1, Landroidx/transition/ChangeBounds;->K:Landroid/util/Property;
 
     invoke-static {v9, v1, v0}, Lv0/j;->a(Ljava/lang/Object;Landroid/util/Property;Landroid/graphics/Path;)Landroid/animation/ObjectAnimator;
 
@@ -780,7 +780,7 @@
     .line 44
     :cond_12
     :goto_5
-    iget-object v1, v8, Landroidx/transition/Transition;->z:Landroidx/transition/PathMotion;
+    iget-object v1, v8, Landroidx/transition/Transition;->A:Landroidx/transition/PathMotion;
 
     int-to-float v3, v5
 
@@ -796,7 +796,7 @@
     move-result-object v1
 
     .line 46
-    sget-object v3, Landroidx/transition/ChangeBounds;->K:Landroid/util/Property;
+    sget-object v3, Landroidx/transition/ChangeBounds;->L:Landroid/util/Property;
 
     invoke-static {v9, v3, v1}, Lv0/j;->a(Ljava/lang/Object;Landroid/util/Property;Landroid/graphics/Path;)Landroid/animation/ObjectAnimator;
 
@@ -843,13 +843,13 @@
     if-nez v2, :cond_15
 
     .line 50
-    sget-object v2, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v2, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 51
     invoke-virtual {v9, v1}, Landroid/view/View;->setClipBounds(Landroid/graphics/Rect;)V
 
     .line 52
-    sget-object v2, Landroidx/transition/ChangeBounds;->L:Lv0/m;
+    sget-object v2, Landroidx/transition/ChangeBounds;->M:Lv0/m;
 
     new-array v0, v0, [Ljava/lang/Object;
 
@@ -956,11 +956,11 @@
     return-object v0
 .end method
 
-.method public q()[Ljava/lang/String;
+.method public r()[Ljava/lang/String;
     .locals 1
 
     .line 1
-    sget-object v0, Landroidx/transition/ChangeBounds;->F:[Ljava/lang/String;
+    sget-object v0, Landroidx/transition/ChangeBounds;->G:[Ljava/lang/String;
 
     return-object v0
 .end method

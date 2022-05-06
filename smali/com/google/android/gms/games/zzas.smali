@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final i:Lb3/b;
+.field public final j:Lb3/b;
 
 
 # direct methods
@@ -26,48 +26,48 @@
     invoke-direct {p0, p1, p2}, Lu2/n;-><init>(Lcom/google/android/gms/common/data/DataHolder;I)V
 
     .line 2
-    iput-object p3, p0, Lcom/google/android/gms/games/zzas;->i:Lb3/b;
+    iput-object p3, p0, Lcom/google/android/gms/games/zzas;->j:Lb3/b;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final E()Ljava/lang/String;
+.method public final F()Ljava/lang/String;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/zzas;->i:Lb3/b;
+    iget-object v0, p0, Lcom/google/android/gms/games/zzas;->j:Lb3/b;
 
     iget-object v0, v0, Lb3/b;->H:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lu2/n;->D(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lu2/n;->E(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final V()Ljava/lang/String;
+.method public final W()Ljava/lang/String;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/zzas;->i:Lb3/b;
+    iget-object v0, p0, Lcom/google/android/gms/games/zzas;->j:Lb3/b;
 
     iget-object v0, v0, Lb3/b;->I:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lu2/n;->D(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lu2/n;->E(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final a0()I
+.method public final c0()I
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/zzas;->i:Lb3/b;
+    iget-object v0, p0, Lcom/google/android/gms/games/zzas;->j:Lb3/b;
 
     iget-object v0, v0, Lb3/b;->G:Ljava/lang/String;
 
@@ -80,28 +80,17 @@
     return v0
 .end method
 
-.method public final c0()Ljava/lang/String;
+.method public final d0()Ljava/lang/String;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/zzas;->i:Lb3/b;
+    iget-object v0, p0, Lcom/google/android/gms/games/zzas;->j:Lb3/b;
 
     iget-object v0, v0, Lb3/b;->J:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lu2/n;->D(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lu2/n;->E(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final synthetic c2()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    new-instance v0, Lcom/google/android/gms/games/zzar;
-
-    invoke-direct {v0, p0}, Lcom/google/android/gms/games/zzar;-><init>(Lcom/google/android/gms/games/PlayerRelationshipInfo;)V
 
     return-object v0
 .end method
@@ -114,11 +103,22 @@
     return v0
 .end method
 
+.method public final synthetic e2()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/google/android/gms/games/zzar;
+
+    invoke-direct {v0, p0}, Lcom/google/android/gms/games/zzar;-><init>(Lcom/google/android/gms/games/PlayerRelationshipInfo;)V
+
+    return-object v0
+.end method
+
 .method public final equals(Ljava/lang/Object;)Z
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/google/android/gms/games/zzar;->y2(Lcom/google/android/gms/games/PlayerRelationshipInfo;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lcom/google/android/gms/games/zzar;->A2(Lcom/google/android/gms/games/PlayerRelationshipInfo;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -129,7 +129,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/zzar;->x2(Lcom/google/android/gms/games/PlayerRelationshipInfo;)I
+    invoke-static {p0}, Lcom/google/android/gms/games/zzar;->z2(Lcom/google/android/gms/games/PlayerRelationshipInfo;)I
 
     move-result v0
 
@@ -140,7 +140,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/zzar;->z2(Lcom/google/android/gms/games/PlayerRelationshipInfo;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/android/gms/games/zzar;->B2(Lcom/google/android/gms/games/PlayerRelationshipInfo;)Ljava/lang/String;
 
     move-result-object v0
 

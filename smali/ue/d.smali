@@ -1,233 +1,258 @@
 .class public Lue/d;
-.super Lse/v0;
-.source "Dispatcher.kt"
+.super Lte/p;
+.source "Tasks.kt"
 
 
-# instance fields
-.field public a:Lue/b;
-
-.field public final b:I
-
-.field public final h:I
-
-.field public final i:J
-
-.field public final j:Ljava/lang/String;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lte/p<",
+        "Lue/g;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(IILjava/lang/String;I)V
-    .locals 6
+.method public constructor <init>()V
+    .locals 1
 
-    and-int/lit8 p3, p4, 0x1
-
-    if-eqz p3, :cond_0
+    const/4 v0, 0x0
 
     .line 1
-    sget p1, Lue/m;->c:I
-
-    :cond_0
-    move v1, p1
-
-    and-int/lit8 p1, p4, 0x2
-
-    if-eqz p1, :cond_1
-
-    .line 2
-    sget p2, Lue/m;->d:I
-
-    :cond_1
-    move v2, p2
-
-    and-int/lit8 p1, p4, 0x4
-
-    const/4 p2, 0x0
-
-    if-eqz p1, :cond_2
-
-    const-string p1, "DefaultDispatcher"
-
-    move-object v5, p1
-
-    goto :goto_0
-
-    :cond_2
-    move-object v5, p2
-
-    :goto_0
-    if-eqz v5, :cond_3
-
-    .line 3
-    sget-wide v3, Lue/m;->e:J
-
-    .line 4
-    invoke-direct {p0}, Lse/v0;-><init>()V
-
-    iput v1, p0, Lue/d;->b:I
-
-    iput v2, p0, Lue/d;->h:I
-
-    iput-wide v3, p0, Lue/d;->i:J
-
-    iput-object v5, p0, Lue/d;->j:Ljava/lang/String;
-
-    .line 5
-    new-instance p1, Lue/b;
-
-    move-object v0, p1
-
-    invoke-direct/range {v0 .. v5}, Lue/b;-><init>(IIJLjava/lang/String;)V
-
-    .line 6
-    iput-object p1, p0, Lue/d;->a:Lue/b;
+    invoke-direct {p0, v0}, Lte/p;-><init>(Z)V
 
     return-void
-
-    :cond_3
-    const-string p1, "schedulerName"
-
-    .line 7
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw p2
 .end method
 
 
 # virtual methods
-.method public dispatch(Lde/f;Ljava/lang/Runnable;)V
-    .locals 3
+.method public final c(I)Lue/g;
+    .locals 11
 
     const/4 v0, 0x0
 
-    if-eqz p1, :cond_1
-
-    if-eqz p2, :cond_0
+    if-eqz p1, :cond_d
 
     .line 1
-    :try_start_0
-    iget-object p1, p0, Lue/d;->a:Lue/b;
+    :goto_0
+    iget-object v1, p0, Lte/p;->_cur$internal:Ljava/lang/Object;
 
-    const/4 v1, 0x0
-
-    const/4 v2, 0x6
-
-    invoke-static {p1, p2, v0, v1, v2}, Lue/b;->i(Lue/b;Ljava/lang/Runnable;Lue/j;ZI)V
-    :try_end_0
-    .catch Ljava/util/concurrent/RejectedExecutionException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
+    check-cast v1, Lte/q;
 
     .line 2
-    :catch_0
-    sget-object p1, Lse/f0;->l:Lse/f0;
+    :cond_0
+    :goto_1
+    iget-wide v4, v1, Lte/q;->_state$internal:J
+
+    const-wide/high16 v2, 0x1000000000000000L
+
+    and-long/2addr v2, v4
+
+    const-wide/16 v6, 0x0
+
+    cmp-long v8, v2, v6
+
+    if-eqz v8, :cond_1
 
     .line 3
-    invoke-virtual {p1, p2}, Lse/s0;->w(Ljava/lang/Runnable;)V
+    sget-object v2, Lte/q;->g:Lte/w;
 
-    :goto_0
-    return-void
-
-    :cond_0
-    const-string p1, "block"
+    goto/16 :goto_5
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
-
     :cond_1
-    const-string p1, "context"
+    sget-object v2, Lte/q;->h:Lte/q$a;
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    const-wide/32 v6, 0x3fffffff
 
+    and-long/2addr v6, v4
+
+    const/4 v3, 0x0
+
+    shr-long/2addr v6, v3
+
+    long-to-int v8, v6
+
+    const-wide v6, 0xfffffffc0000000L
+
+    and-long/2addr v6, v4
+
+    const/16 v9, 0x1e
+
+    shr-long/2addr v6, v9
+
+    long-to-int v7, v6
+
+    .line 5
+    iget v6, v1, Lte/q;->a:I
+
+    and-int/2addr v7, v6
+
+    and-int/2addr v6, v8
+
+    if-ne v7, v6, :cond_2
+
+    goto :goto_2
+
+    .line 6
+    :cond_2
+    iget-object v7, v1, Lte/q;->b:Ljava/util/concurrent/atomic/AtomicReferenceArray;
+
+    invoke-virtual {v7, v6}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
+
+    move-result-object v9
+
+    if-nez v9, :cond_3
+
+    .line 7
+    iget-boolean v2, v1, Lte/q;->d:Z
+
+    if-eqz v2, :cond_0
+
+    goto :goto_2
+
+    .line 8
+    :cond_3
+    instance-of v6, v9, Lte/q$b;
+
+    if-eqz v6, :cond_4
+
+    goto :goto_2
+
+    .line 9
+    :cond_4
+    move-object v6, v9
+
+    check-cast v6, Lue/g;
+
+    .line 10
+    invoke-virtual {v6}, Lue/g;->e()I
+
+    move-result v6
+
+    if-ne v6, p1, :cond_5
+
+    const/4 v3, 0x1
+
+    :cond_5
+    if-nez v3, :cond_6
+
+    :goto_2
+    move-object v2, v0
+
+    goto :goto_5
+
+    :cond_6
+    add-int/lit8 v3, v8, 0x1
+
+    const v6, 0x3fffffff    # 1.9999999f
+
+    and-int v10, v3, v6
+
+    .line 11
+    sget-object v3, Lte/q;->f:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
+
+    invoke-virtual {v2, v4, v5, v10}, Lte/q$a;->a(JI)J
+
+    move-result-wide v6
+
+    move-object v2, v3
+
+    move-object v3, v1
+
+    invoke-virtual/range {v2 .. v7}, Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;->compareAndSet(Ljava/lang/Object;JJ)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_7
+
+    .line 12
+    iget-object v2, v1, Lte/q;->b:Ljava/util/concurrent/atomic/AtomicReferenceArray;
+
+    .line 13
+    iget v3, v1, Lte/q;->a:I
+
+    and-int/2addr v3, v8
+
+    .line 14
+    invoke-virtual {v2, v3, v0}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->set(ILjava/lang/Object;)V
+
+    goto :goto_4
+
+    .line 15
+    :cond_7
+    iget-boolean v2, v1, Lte/q;->d:Z
+
+    if-nez v2, :cond_8
+
+    goto :goto_1
+
+    :cond_8
+    move-object v2, v1
+
+    .line 16
+    :goto_3
+    invoke-static {v2, v8, v10}, Lte/q;->a(Lte/q;II)Lte/q;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_9
+
+    goto :goto_3
+
+    :cond_9
+    :goto_4
+    move-object v2, v9
+
+    .line 17
+    :goto_5
+    sget-object v3, Lte/q;->g:Lte/w;
+
+    if-eq v2, v3, :cond_a
+
+    .line 18
+    check-cast v2, Lue/g;
+
+    return-object v2
+
+    .line 19
+    :cond_a
+    sget-object v2, Lte/p;->a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+
+    invoke-virtual {v1}, Lte/q;->e()Lte/q;
+
+    move-result-object v3
+
+    :cond_b
+    invoke-virtual {v2, p0, v1, v3}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_c
+
+    goto/16 :goto_0
+
+    :cond_c
+    invoke-virtual {v2, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    if-eq v4, v1, :cond_b
+
+    goto/16 :goto_0
+
+    :cond_d
+    const-string p1, "mode"
+
+    .line 20
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    goto :goto_7
+
+    :goto_6
     throw v0
-.end method
 
-.method public dispatchYield(Lde/f;Ljava/lang/Runnable;)V
-    .locals 4
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_1
-
-    if-eqz p2, :cond_0
-
-    .line 1
-    :try_start_0
-    iget-object v1, p0, Lue/d;->a:Lue/b;
-
-    const/4 v2, 0x1
-
-    const/4 v3, 0x2
-
-    invoke-static {v1, p2, v0, v2, v3}, Lue/b;->i(Lue/b;Ljava/lang/Runnable;Lue/j;ZI)V
-    :try_end_0
-    .catch Ljava/util/concurrent/RejectedExecutionException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    .line 2
-    :catch_0
-    sget-object v0, Lse/f0;->l:Lse/f0;
-
-    invoke-virtual {v0, p1, p2}, Lse/w;->dispatchYield(Lde/f;Ljava/lang/Runnable;)V
-
-    :goto_0
-    return-void
-
-    :cond_0
-    const-string p1, "block"
-
-    .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    const-string p1, "context"
-
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public final k(Ljava/lang/Runnable;Lue/j;Z)V
-    .locals 1
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lue/d;->a:Lue/b;
-
-    invoke-virtual {v0, p1, p2, p3}, Lue/b;->h(Ljava/lang/Runnable;Lue/j;Z)V
-    :try_end_0
-    .catch Ljava/util/concurrent/RejectedExecutionException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    .line 2
-    :catch_0
-    sget-object p3, Lse/f0;->l:Lse/f0;
-
-    iget-object v0, p0, Lue/d;->a:Lue/b;
-
-    invoke-virtual {v0, p1, p2}, Lue/b;->f(Ljava/lang/Runnable;Lue/j;)Lue/i;
-
-    move-result-object p1
-
-    invoke-virtual {p3, p1}, Lse/s0;->w(Ljava/lang/Runnable;)V
-
-    :goto_0
-    return-void
-
-    :cond_0
-    const-string p1, "block"
-
-    .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
+    :goto_7
+    goto :goto_6
 .end method

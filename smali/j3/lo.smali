@@ -1,46 +1,81 @@
-.class public final synthetic Lj3/lo;
+.class public final Lj3/lo;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/mj0;
+.implements Lj3/mo;
 
 
-# static fields
-.field public static final a:Lj3/mj0;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<AdT:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lj3/mo<",
+        "TAdT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Lj3/h40<",
+            "TAdT;>;>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lj3/lo;
-
-    invoke-direct {v0}, Lj3/lo;-><init>()V
-
-    sput-object v0, Lj3/lo;->a:Lj3/mj0;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Ljava/util/Map;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Lj3/h40<",
+            "TAdT;>;>;)V"
+        }
+    .end annotation
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lj3/lo;->a:Ljava/util/Map;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final a(ILjava/lang/String;)Lj3/h40;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Ljava/lang/String;",
+            ")",
+            "Lj3/h40<",
+            "TAdT;>;"
+        }
+    .end annotation
 
-    new-instance v0, Lj3/ko;
+    .line 1
+    iget-object p1, p0, Lj3/lo;->a:Ljava/util/Map;
 
-    check-cast p1, Lj3/fo;
+    invoke-interface {p1, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-direct {v0, p1}, Lj3/ko;-><init>(Lj3/fo;)V
+    move-result-object p1
 
-    return-object v0
+    check-cast p1, Lj3/h40;
+
+    return-object p1
 .end method

@@ -4,5 +4,5 @@
 
 
 # virtual methods
-.method public abstract f()V
+.method public abstract b()Lcom/google/android/gms/internal/ads/zzbbg;
 .end method

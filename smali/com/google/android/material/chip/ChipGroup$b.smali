@@ -42,7 +42,7 @@
     iget-object v0, p0, Lcom/google/android/material/chip/ChipGroup$b;->a:Lcom/google/android/material/chip/ChipGroup;
 
     .line 2
-    iget-boolean v1, v0, Lcom/google/android/material/chip/ChipGroup;->r:Z
+    iget-boolean v1, v0, Lcom/google/android/material/chip/ChipGroup;->s:Z
 
     if-eqz v1, :cond_0
 
@@ -64,7 +64,7 @@
     iget-object v0, p0, Lcom/google/android/material/chip/ChipGroup$b;->a:Lcom/google/android/material/chip/ChipGroup;
 
     .line 5
-    iget-boolean v1, v0, Lcom/google/android/material/chip/ChipGroup;->m:Z
+    iget-boolean v1, v0, Lcom/google/android/material/chip/ChipGroup;->n:Z
 
     if-eqz v1, :cond_1
 
@@ -86,7 +86,7 @@
     move-result p1
 
     .line 9
-    iput p1, p2, Lcom/google/android/material/chip/ChipGroup;->q:I
+    iput p1, p2, Lcom/google/android/material/chip/ChipGroup;->r:I
 
     return-void
 
@@ -104,14 +104,14 @@
     iget-object p2, p0, Lcom/google/android/material/chip/ChipGroup$b;->a:Lcom/google/android/material/chip/ChipGroup;
 
     .line 12
-    iget v1, p2, Lcom/google/android/material/chip/ChipGroup;->q:I
+    iget v1, p2, Lcom/google/android/material/chip/ChipGroup;->r:I
 
     if-eq v1, v0, :cond_2
 
     if-eq v1, p1, :cond_2
 
     .line 13
-    iget-boolean v0, p2, Lcom/google/android/material/chip/ChipGroup;->l:Z
+    iget-boolean v0, p2, Lcom/google/android/material/chip/ChipGroup;->m:Z
 
     if-eqz v0, :cond_2
 
@@ -133,7 +133,7 @@
     iget-object p2, p0, Lcom/google/android/material/chip/ChipGroup$b;->a:Lcom/google/android/material/chip/ChipGroup;
 
     .line 17
-    iget v1, p2, Lcom/google/android/material/chip/ChipGroup;->q:I
+    iget v1, p2, Lcom/google/android/material/chip/ChipGroup;->r:I
 
     if-ne v1, p1, :cond_4
 

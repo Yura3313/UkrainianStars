@@ -1,6 +1,6 @@
 .class public final Lnd/e;
 .super Lle/j;
-.source "ProfileSelectorFragment.kt"
+.source "FriendsFragment.kt"
 
 # interfaces
 .implements Lke/a;
@@ -11,25 +11,21 @@
     value = {
         "Lle/j;",
         "Lke/a<",
-        "Lwd/m1;",
+        "Lvd/m1;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Ljava/util/List;
-
-.field public final synthetic b:Lcom/supercell/id/IdAccount;
+.field public final synthetic g:Ljava/util/List;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;Lcom/supercell/id/IdAccount;)V
+.method public constructor <init>(Ljava/util/List;)V
     .locals 0
 
-    iput-object p1, p0, Lnd/e;->a:Ljava/util/List;
-
-    iput-object p2, p0, Lnd/e;->b:Lcom/supercell/id/IdAccount;
+    iput-object p1, p0, Lnd/e;->g:Ljava/util/List;
 
     const/4 p1, 0x0
 
@@ -41,113 +37,40 @@
 
 # virtual methods
 .method public invoke()Ljava/lang/Object;
-    .locals 6
+    .locals 5
 
     .line 1
-    iget-object v0, p0, Lnd/e;->a:Ljava/util/List;
+    new-instance v0, Lvd/m1;
 
-    if-eqz v0, :cond_2
+    iget-object v1, p0, Lnd/e;->g:Ljava/util/List;
 
     .line 2
-    new-instance v1, Ljava/util/ArrayList;
+    new-instance v2, Lvd/l1;
 
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+    if-eqz v1, :cond_0
 
-    .line 3
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :cond_0
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_3
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    move-object v3, v2
-
-    check-cast v3, Lwd/j1;
-
-    .line 4
-    instance-of v4, v3, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;
-
-    const/4 v5, 0x1
-
-    if-eqz v4, :cond_1
-
-    check-cast v3, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;
-
-    .line 5
-    iget-object v3, v3, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;->b:Ltc/c;
-
-    .line 6
-    iget-object v3, v3, Ltc/c;->a:Lcom/supercell/id/IdAccount;
-
-    .line 7
-    iget-object v4, p0, Lnd/e;->b:Lcom/supercell/id/IdAccount;
-
-    invoke-static {v3, v4}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v3
-
-    xor-int/2addr v5, v3
-
-    :cond_1
-    if-eqz v5, :cond_0
-
-    .line 8
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    move-object v3, v1
 
     goto :goto_0
 
-    :cond_2
-    const/4 v1, 0x0
+    .line 3
+    :cond_0
+    sget-object v3, Lbe/m;->g:Lbe/m;
 
-    .line 9
-    :cond_3
-    new-instance v0, Lwd/m1;
+    :goto_0
+    sget-object v4, Lbe/m;->g:Lbe/m;
 
-    iget-object v2, p0, Lnd/e;->a:Ljava/util/List;
+    .line 4
+    invoke-direct {v2, v3, v4}, Lvd/l1;-><init>(Ljava/util/List;Ljava/util/List;)V
 
-    .line 10
-    new-instance v3, Lwd/l1;
+    .line 5
+    invoke-static {v2}, Landroidx/recyclerview/widget/l;->a(Landroidx/recyclerview/widget/l$b;)Landroidx/recyclerview/widget/l$c;
 
-    if-eqz v2, :cond_4
+    move-result-object v2
 
-    move-object v4, v2
+    const/4 v3, 0x0
 
-    goto :goto_1
-
-    .line 11
-    :cond_4
-    sget-object v4, Lce/n;->a:Lce/n;
-
-    :goto_1
-    if-eqz v1, :cond_5
-
-    move-object v5, v1
-
-    goto :goto_2
-
-    :cond_5
-    sget-object v5, Lce/n;->a:Lce/n;
-
-    .line 12
-    :goto_2
-    invoke-direct {v3, v4, v5}, Lwd/l1;-><init>(Ljava/util/List;Ljava/util/List;)V
-
-    .line 13
-    invoke-static {v3}, Landroidx/recyclerview/widget/l;->a(Landroidx/recyclerview/widget/l$b;)Landroidx/recyclerview/widget/l$c;
-
-    move-result-object v3
-
-    invoke-direct {v0, v2, v1, v3}, Lwd/m1;-><init>(Ljava/util/List;Ljava/util/List;Landroidx/recyclerview/widget/l$c;)V
+    invoke-direct {v0, v1, v3, v2}, Lvd/m1;-><init>(Ljava/util/List;Ljava/util/List;Landroidx/recyclerview/widget/l$c;)V
 
     return-object v0
 .end method

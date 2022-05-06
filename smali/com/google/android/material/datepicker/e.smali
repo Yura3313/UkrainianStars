@@ -4,15 +4,15 @@
 
 
 # static fields
-.field public static final i:I
+.field public static final j:I
 
 
 # instance fields
-.field public final a:Ljava/util/Calendar;
-
-.field public final b:I
+.field public final g:Ljava/util/Calendar;
 
 .field public final h:I
+
+.field public final i:I
 
 
 # direct methods
@@ -34,7 +34,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    sput v0, Lcom/google/android/material/datepicker/e;->i:I
+    sput v0, Lcom/google/android/material/datepicker/e;->j:I
 
     return-void
 .end method
@@ -50,7 +50,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/material/datepicker/e;->a:Ljava/util/Calendar;
+    iput-object v0, p0, Lcom/google/android/material/datepicker/e;->g:Ljava/util/Calendar;
 
     const/4 v1, 0x7
 
@@ -59,14 +59,14 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/google/android/material/datepicker/e;->b:I
+    iput v1, p0, Lcom/google/android/material/datepicker/e;->h:I
 
     .line 4
     invoke-virtual {v0}, Ljava/util/Calendar;->getFirstDayOfWeek()I
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/material/datepicker/e;->h:I
+    iput v0, p0, Lcom/google/android/material/datepicker/e;->i:I
 
     return-void
 .end method
@@ -77,7 +77,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/datepicker/e;->b:I
+    iget v0, p0, Lcom/google/android/material/datepicker/e;->h:I
 
     return v0
 .end method
@@ -86,7 +86,7 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/datepicker/e;->b:I
+    iget v0, p0, Lcom/google/android/material/datepicker/e;->h:I
 
     if-lt p1, v0, :cond_0
 
@@ -96,7 +96,7 @@
 
     .line 2
     :cond_0
-    iget v1, p0, Lcom/google/android/material/datepicker/e;->h:I
+    iget v1, p0, Lcom/google/android/material/datepicker/e;->i:I
 
     add-int/2addr p1, v1
 
@@ -162,15 +162,15 @@
 
     .line 5
     :cond_0
-    iget-object p2, p0, Lcom/google/android/material/datepicker/e;->a:Ljava/util/Calendar;
+    iget-object p2, p0, Lcom/google/android/material/datepicker/e;->g:Ljava/util/Calendar;
 
     .line 6
-    iget v2, p0, Lcom/google/android/material/datepicker/e;->h:I
+    iget v2, p0, Lcom/google/android/material/datepicker/e;->i:I
 
     add-int/2addr p1, v2
 
     .line 7
-    iget v2, p0, Lcom/google/android/material/datepicker/e;->b:I
+    iget v2, p0, Lcom/google/android/material/datepicker/e;->h:I
 
     if-le p1, v2, :cond_1
 
@@ -183,9 +183,9 @@
     invoke-virtual {p2, v2, p1}, Ljava/util/Calendar;->set(II)V
 
     .line 9
-    iget-object p1, p0, Lcom/google/android/material/datepicker/e;->a:Ljava/util/Calendar;
+    iget-object p1, p0, Lcom/google/android/material/datepicker/e;->g:Ljava/util/Calendar;
 
-    sget p2, Lcom/google/android/material/datepicker/e;->i:I
+    sget p2, Lcom/google/android/material/datepicker/e;->j:I
 
     .line 10
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -214,7 +214,7 @@
 
     new-array p2, p2, [Ljava/lang/Object;
 
-    iget-object p3, p0, Lcom/google/android/material/datepicker/e;->a:Ljava/util/Calendar;
+    iget-object p3, p0, Lcom/google/android/material/datepicker/e;->g:Ljava/util/Calendar;
 
     const/4 v3, 0x2
 

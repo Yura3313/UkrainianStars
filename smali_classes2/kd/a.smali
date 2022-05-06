@@ -1,51 +1,95 @@
-.class public abstract Lkd/a;
-.super Luc/v;
-.source "OnboardingFlow.kt"
+.class public final Lkd/a;
+.super Ljava/lang/Object;
+.source "FriendsFragment.kt"
+
+# interfaces
+.implements Lvd/j1;
+
+
+# static fields
+.field public static final a:I
+
+.field public static final b:Lkd/a;
 
 
 # direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lkd/a;
+
+    invoke-direct {v0}, Lkd/a;-><init>()V
+
+    sput-object v0, Lkd/a;->b:Lkd/a;
+
+    .line 2
+    sget v0, Lcom/supercell/id/R$layout;->fragment_profile_list_item_friend_add:I
+
+    sput v0, Lkd/a;->a:I
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Luc/v;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public W0()V
+.method public a(Lvd/j1;)Z
     .locals 0
 
-    return-void
-.end method
+    if-eqz p1, :cond_0
 
-.method public d1()Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
-    .locals 2
+    const/4 p1, 0x1
 
-    .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
-
-    .line 2
-    instance-of v1, v0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
-
-    if-nez v1, :cond_0
-
-    const/4 v0, 0x0
+    return p1
 
     :cond_0
-    check-cast v0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
+    const-string p1, "other"
 
-    return-object v0
+    .line 1
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
 .end method
 
-.method public synthetic i0()V
+.method public c()I
+    .locals 1
+
+    .line 1
+    sget v0, Lkd/a;->a:I
+
+    return v0
+.end method
+
+.method public d(Lvd/j1;)Z
     .locals 0
 
-    invoke-super {p0}, Luc/v;->i0()V
+    if-eqz p1, :cond_0
 
-    invoke-virtual {p0}, Lkd/a;->W0()V
+    .line 1
+    invoke-static {p1, p0}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    return-void
+    move-result p1
+
+    return p1
+
+    :cond_0
+    const-string p1, "other"
+
+    .line 2
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
 .end method

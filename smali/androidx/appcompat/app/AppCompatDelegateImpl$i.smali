@@ -110,7 +110,7 @@
 
     const-string v4, "android.permission.ACCESS_COARSE_LOCATION"
 
-    invoke-static {v3, v4}, Lcom/google/android/gms/ads/i;->b(Landroid/content/Context;Ljava/lang/String;)I
+    invoke-static {v3, v4}, Ls3/k;->f(Landroid/content/Context;Ljava/lang/String;)I
 
     move-result v3
 
@@ -151,7 +151,7 @@
 
     const-string v6, "android.permission.ACCESS_FINE_LOCATION"
 
-    invoke-static {v5, v6}, Lcom/google/android/gms/ads/i;->b(Landroid/content/Context;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Ls3/k;->f(Landroid/content/Context;Ljava/lang/String;)I
 
     move-result v5
 

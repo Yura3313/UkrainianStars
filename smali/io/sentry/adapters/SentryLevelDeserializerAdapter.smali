@@ -70,12 +70,12 @@
 
     move-result-object p2
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :goto_0
     return-object p2
 
-    :catch_0
+    :catchall_0
     move-exception p1
 
     .line 3

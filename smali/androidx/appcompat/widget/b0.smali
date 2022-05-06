@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public a:I
+.field public g:I
 
-.field public b:I
+.field public h:I
 
 
 # direct methods
@@ -158,7 +158,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Landroidx/appcompat/widget/b0;->a:I
+    iput p1, p0, Landroidx/appcompat/widget/b0;->g:I
 
     .line 2
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->requestLayout()V
@@ -170,7 +170,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Landroidx/appcompat/widget/b0;->b:I
+    iput p1, p0, Landroidx/appcompat/widget/b0;->h:I
 
     const/4 p1, 0x0
 

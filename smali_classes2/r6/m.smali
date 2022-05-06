@@ -110,7 +110,7 @@
     aput v3, v4, v7
 
     .line 8
-    iget v8, v1, Lj6/a;->b:I
+    iget v8, v1, Lj6/a;->h:I
 
     .line 9
     aget v9, p3, v5
@@ -244,9 +244,7 @@
     :cond_4
     mul-int/lit8 v11, v11, 0x3
 
-    const/4 v10, -0x1
-
-    add-int/2addr v8, v10
+    add-int/lit8 v8, v8, -0x1
 
     :goto_4
     if-ltz v8, :cond_5
@@ -254,11 +252,11 @@
     .line 20
     invoke-virtual {v4, v8}, Ljava/lang/String;->charAt(I)C
 
-    move-result v15
+    move-result v10
 
-    add-int/lit8 v15, v15, -0x30
+    add-int/lit8 v10, v10, -0x30
 
-    add-int/2addr v11, v15
+    add-int/2addr v11, v10
 
     add-int/lit8 v8, v8, -0x2
 
@@ -286,7 +284,7 @@
 
     if-eq v2, v13, :cond_6
 
-    goto/16 :goto_a
+    goto/16 :goto_9
 
     .line 24
     :cond_6
@@ -304,97 +302,66 @@
 
     if-eq v2, v7, :cond_7
 
-    goto :goto_6
+    goto :goto_5
 
-    .line 25
     :cond_7
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
-
-    move-result v2
-
-    sparse-switch v2, :sswitch_data_0
-
-    goto :goto_5
-
-    :sswitch_0
-    const-string v2, "99991"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_8
-
-    goto :goto_5
-
-    :cond_8
-    const/4 v10, 0x2
-
-    goto :goto_5
-
-    :sswitch_1
-    const-string v2, "99990"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_9
-
-    goto :goto_5
-
-    :cond_9
-    const/4 v10, 0x1
-
-    goto :goto_5
-
-    :sswitch_2
     const-string v2, "90000"
 
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .line 25
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-nez v2, :cond_a
+    if-eqz v2, :cond_8
 
-    goto :goto_5
-
-    :cond_a
-    const/4 v10, 0x0
-
-    :goto_5
-    packed-switch v10, :pswitch_data_0
-
-    :goto_6
-    const-string v2, ""
-
-    goto :goto_7
-
-    :pswitch_0
-    const-string v2, "0.00"
-
-    goto :goto_9
-
-    :pswitch_1
-    const-string v2, "Used"
-
-    goto :goto_9
-
-    :pswitch_2
     move-object v2, v4
 
-    goto :goto_9
+    goto :goto_8
+
+    :cond_8
+    const-string v2, "99991"
+
+    .line 26
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_9
+
+    const-string v2, "0.00"
+
+    goto :goto_8
+
+    :cond_9
+    const-string v2, "99990"
+
+    .line 27
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_a
+
+    const-string v2, "Used"
+
+    goto :goto_8
+
+    :cond_a
+    :goto_5
+    const-string v2, ""
+
+    goto :goto_6
 
     :cond_b
     const-string v2, "$"
 
-    goto :goto_7
+    goto :goto_6
 
     :cond_c
     const-string v2, "\u00a3"
 
-    .line 26
-    :goto_7
+    .line 28
+    :goto_6
     invoke-virtual {v1, v5}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v7
@@ -403,19 +370,19 @@
 
     move-result v7
 
-    .line 27
+    .line 29
     div-int/lit8 v8, v7, 0x64
 
     invoke-static {v8}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v8
 
-    .line 28
+    .line 30
     rem-int/lit8 v7, v7, 0x64
 
     if-ge v7, v14, :cond_d
 
-    .line 29
+    .line 31
     new-instance v10, Ljava/lang/StringBuilder;
 
     const-string v11, "0"
@@ -428,15 +395,15 @@
 
     move-result-object v7
 
-    goto :goto_8
+    goto :goto_7
 
     :cond_d
     invoke-static {v7}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v7
 
-    .line 30
-    :goto_8
+    .line 32
+    :goto_7
     new-instance v10, Ljava/lang/StringBuilder;
 
     invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
@@ -455,15 +422,15 @@
 
     move-result-object v2
 
-    :goto_9
+    :goto_8
     if-nez v2, :cond_e
 
-    :goto_a
+    :goto_9
     move-object v7, v4
 
-    goto :goto_b
+    goto :goto_a
 
-    .line 31
+    .line 33
     :cond_e
     new-instance v7, Ljava/util/EnumMap;
 
@@ -471,13 +438,13 @@
 
     invoke-direct {v7, v8}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
-    .line 32
-    sget-object v8, Lc6/k;->SUGGESTED_PRICE:Lc6/k;
+    .line 34
+    sget-object v8, Lc6/k;->k:Lc6/k;
 
     invoke-virtual {v7, v8, v2}, Ljava/util/EnumMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 33
-    :goto_b
+    .line 35
+    :goto_a
     new-instance v2, Lc6/j;
 
     new-array v6, v6, [Lc6/l;
@@ -512,23 +479,23 @@
 
     aput-object v3, v6, v5
 
-    sget-object v3, Lc6/a;->UPC_EAN_EXTENSION:Lc6/a;
+    sget-object v3, Lc6/a;->w:Lc6/a;
 
     invoke-direct {v2, v1, v4, v6, v3}, Lc6/j;-><init>(Ljava/lang/String;[B[Lc6/l;Lc6/a;)V
 
     if-eqz v7, :cond_f
 
-    .line 34
+    .line 36
     invoke-virtual {v2, v7}, Lc6/j;->a(Ljava/util/Map;)V
 
     :cond_f
     return-object v2
 
-    .line 35
+    .line 37
     :cond_10
-    sget-object v1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
-    .line 36
+    .line 38
     throw v1
 
     :cond_11
@@ -538,37 +505,23 @@
 
     goto/16 :goto_2
 
-    .line 37
-    :cond_12
-    sget-object v1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
-
-    .line 38
-    throw v1
-
     .line 39
-    :cond_13
-    sget-object v1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    :cond_12
+    sget-object v1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 40
-    goto :goto_d
-
-    :goto_c
     throw v1
 
-    :goto_d
+    .line 41
+    :cond_13
+    sget-object v1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
+
+    .line 42
     goto :goto_c
 
-    :sswitch_data_0
-    .sparse-switch
-        0x339c7b9 -> :sswitch_2
-        0x33e01f0 -> :sswitch_1
-        0x33e01f1 -> :sswitch_0
-    .end sparse-switch
+    :goto_b
+    throw v1
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    :goto_c
+    goto :goto_b
 .end method

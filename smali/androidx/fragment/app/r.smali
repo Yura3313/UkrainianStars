@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field public final synthetic a:Landroid/view/ViewGroup;
+.field public final synthetic g:Landroid/view/ViewGroup;
 
-.field public final synthetic b:Landroid/view/View;
+.field public final synthetic h:Landroid/view/View;
 
-.field public final synthetic h:Landroidx/fragment/app/Fragment;
+.field public final synthetic i:Landroidx/fragment/app/Fragment;
 
-.field public final synthetic i:Landroidx/fragment/app/n0$a;
+.field public final synthetic j:Landroidx/fragment/app/n0$a;
 
-.field public final synthetic j:Lb0/a;
+.field public final synthetic k:Lb0/a;
 
 
 # direct methods
@@ -20,15 +20,15 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/fragment/app/r;->a:Landroid/view/ViewGroup;
+    iput-object p1, p0, Landroidx/fragment/app/r;->g:Landroid/view/ViewGroup;
 
-    iput-object p2, p0, Landroidx/fragment/app/r;->b:Landroid/view/View;
+    iput-object p2, p0, Landroidx/fragment/app/r;->h:Landroid/view/View;
 
-    iput-object p3, p0, Landroidx/fragment/app/r;->h:Landroidx/fragment/app/Fragment;
+    iput-object p3, p0, Landroidx/fragment/app/r;->i:Landroidx/fragment/app/Fragment;
 
-    iput-object p4, p0, Landroidx/fragment/app/r;->i:Landroidx/fragment/app/n0$a;
+    iput-object p4, p0, Landroidx/fragment/app/r;->j:Landroidx/fragment/app/n0$a;
 
-    iput-object p5, p0, Landroidx/fragment/app/r;->j:Lb0/a;
+    iput-object p5, p0, Landroidx/fragment/app/r;->k:Lb0/a;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -41,17 +41,17 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Landroidx/fragment/app/r;->a:Landroid/view/ViewGroup;
+    iget-object p1, p0, Landroidx/fragment/app/r;->g:Landroid/view/ViewGroup;
 
-    iget-object v0, p0, Landroidx/fragment/app/r;->b:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/r;->h:Landroid/view/View;
 
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->endViewTransition(Landroid/view/View;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/fragment/app/r;->h:Landroidx/fragment/app/Fragment;
+    iget-object p1, p0, Landroidx/fragment/app/r;->i:Landroidx/fragment/app/Fragment;
 
     .line 3
-    iget-object v0, p1, Landroidx/fragment/app/Fragment;->P:Landroidx/fragment/app/Fragment$d;
+    iget-object v0, p1, Landroidx/fragment/app/Fragment;->Q:Landroidx/fragment/app/Fragment$d;
 
     const/4 v1, 0x0
 
@@ -72,9 +72,9 @@
     if-eqz v0, :cond_1
 
     .line 6
-    iget-object p1, p0, Landroidx/fragment/app/r;->a:Landroid/view/ViewGroup;
+    iget-object p1, p0, Landroidx/fragment/app/r;->g:Landroid/view/ViewGroup;
 
-    iget-object v0, p0, Landroidx/fragment/app/r;->b:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/r;->h:Landroid/view/View;
 
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
 
@@ -83,11 +83,11 @@
     if-gez p1, :cond_1
 
     .line 7
-    iget-object p1, p0, Landroidx/fragment/app/r;->i:Landroidx/fragment/app/n0$a;
+    iget-object p1, p0, Landroidx/fragment/app/r;->j:Landroidx/fragment/app/n0$a;
 
-    iget-object v0, p0, Landroidx/fragment/app/r;->h:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Landroidx/fragment/app/r;->i:Landroidx/fragment/app/Fragment;
 
-    iget-object v1, p0, Landroidx/fragment/app/r;->j:Lb0/a;
+    iget-object v1, p0, Landroidx/fragment/app/r;->k:Lb0/a;
 
     check-cast p1, Landroidx/fragment/app/FragmentManager$d;
 

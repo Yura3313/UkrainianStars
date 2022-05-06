@@ -14,7 +14,7 @@
 # static fields
 .field public static final Companion:Lcom/kakao/sdk/talk/TalkApiClient$Companion;
 
-.field private static final instance$delegate:Lbe/c;
+.field private static final instance$delegate:Lae/c;
 
 
 # instance fields
@@ -40,11 +40,11 @@
     .line 1
     sget-object v0, Lcom/kakao/sdk/talk/TalkApiClient$Companion$instance$2;->INSTANCE:Lcom/kakao/sdk/talk/TalkApiClient$Companion$instance$2;
 
-    invoke-static {v0}, Lbe/e;->f(Lke/a;)Lbe/c;
+    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
 
     move-result-object v0
 
-    sput-object v0, Lcom/kakao/sdk/talk/TalkApiClient;->instance$delegate:Lbe/c;
+    sput-object v0, Lcom/kakao/sdk/talk/TalkApiClient;->instance$delegate:Lae/c;
 
     return-void
 .end method
@@ -95,21 +95,21 @@
     const-string p1, "contextInfo"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_1
     const-string p1, "applicationInfo"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_2
     const-string p1, "talkApi"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -136,7 +136,7 @@
 
     const-string p5, "ApiFactory.kapiWithOAuth\u2026eate(TalkApi::class.java)"
 
-    invoke-static {p1, p5}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p5}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p1, Lcom/kakao/sdk/talk/TalkApi;
 
@@ -170,11 +170,11 @@
     return-void
 .end method
 
-.method public static final synthetic access$getInstance$cp()Lbe/c;
+.method public static final synthetic access$getInstance$cp()Lae/c;
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/kakao/sdk/talk/TalkApiClient;->instance$delegate:Lbe/c;
+    sget-object v0, Lcom/kakao/sdk/talk/TalkApiClient;->instance$delegate:Lae/c;
 
     return-object v0
 .end method
@@ -233,7 +233,7 @@
 
     const-string p2, "Uri.Builder().scheme(com\u2026ER, Constants.API_VER_10)"
 
-    invoke-static {p1, p2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 .end method
@@ -488,7 +488,7 @@
 
     const-string v0, "baseUri(appKey = applica\u2026nstants.FRIEND}\").build()"
 
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 
@@ -496,7 +496,7 @@
     const-string p1, "channelPublicId"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -550,7 +550,7 @@
 
     const-string v0, "baseUri(appKey = applica\u2026Constants.CHAT}\").build()"
 
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 
@@ -558,7 +558,7 @@
     const-string p1, "channelPublicId"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -578,7 +578,7 @@
             "Lcom/kakao/sdk/talk/model/ChannelRelations;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -608,7 +608,7 @@
 
     invoke-direct {v0, p2}, Lcom/kakao/sdk/talk/TalkApiClient$channels$2;-><init>(Lke/p;)V
 
-    invoke-interface {p1, v0}, Lxe/b;->m0(Lxe/d;)V
+    invoke-interface {p1, v0}, Lxe/b;->b0(Lxe/d;)V
 
     return-void
 
@@ -616,7 +616,7 @@
     const-string p1, "callback"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -631,7 +631,7 @@
             "Lcom/kakao/sdk/talk/model/ChannelRelations;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -660,7 +660,7 @@
             "Lcom/kakao/sdk/talk/model/Friend;",
             ">;-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -679,7 +679,7 @@
 
     invoke-direct {p2, p5}, Lcom/kakao/sdk/talk/TalkApiClient$friends$1;-><init>(Lke/p;)V
 
-    invoke-interface {p1, p2}, Lxe/b;->m0(Lxe/d;)V
+    invoke-interface {p1, p2}, Lxe/b;->b0(Lxe/d;)V
 
     return-void
 
@@ -687,7 +687,7 @@
     const-string p1, "callback"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -708,7 +708,7 @@
             "Lcom/kakao/sdk/talk/model/Friend;",
             ">;-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -747,7 +747,7 @@
             "Lcom/kakao/sdk/talk/model/Friend;",
             ">;-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -785,7 +785,7 @@
             "Lcom/kakao/sdk/talk/model/Friend;",
             ">;-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -822,7 +822,7 @@
             "Lcom/kakao/sdk/talk/model/Friend;",
             ">;-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -858,7 +858,7 @@
             "Lcom/kakao/sdk/talk/model/TalkProfile;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -877,7 +877,7 @@
 
     invoke-direct {v1, p1}, Lcom/kakao/sdk/talk/TalkApiClient$profile$1;-><init>(Lke/p;)V
 
-    invoke-interface {v0, v1}, Lxe/b;->m0(Lxe/d;)V
+    invoke-interface {v0, v1}, Lxe/b;->b0(Lxe/d;)V
 
     return-void
 
@@ -885,7 +885,7 @@
     const-string p1, "callback"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -904,7 +904,7 @@
             "Lke/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -923,7 +923,7 @@
 
     invoke-direct {p2, p4}, Lcom/kakao/sdk/talk/TalkApiClient$sendCustomMemo$1;-><init>(Lke/l;)V
 
-    invoke-interface {p1, p2}, Lxe/b;->m0(Lxe/d;)V
+    invoke-interface {p1, p2}, Lxe/b;->b0(Lxe/d;)V
 
     return-void
 
@@ -931,7 +931,7 @@
     const-string p1, "callback"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -946,7 +946,7 @@
             "Lke/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -985,7 +985,7 @@
             "Lcom/kakao/sdk/talk/model/MessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -1014,7 +1014,7 @@
 
     invoke-direct {p2, p5}, Lcom/kakao/sdk/talk/TalkApiClient$sendCustomMessage$1;-><init>(Lke/p;)V
 
-    invoke-interface {p1, p2}, Lxe/b;->m0(Lxe/d;)V
+    invoke-interface {p1, p2}, Lxe/b;->b0(Lxe/d;)V
 
     return-void
 
@@ -1022,14 +1022,14 @@
     const-string p1, "callback"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_1
     const-string p1, "receiverUuids"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -1047,7 +1047,7 @@
             "Lcom/kakao/sdk/talk/model/MessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -1080,7 +1080,7 @@
             "Lke/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -1103,7 +1103,7 @@
 
     invoke-direct {v0, p2}, Lcom/kakao/sdk/talk/TalkApiClient$sendDefaultMemo$1;-><init>(Lke/l;)V
 
-    invoke-interface {p1, v0}, Lxe/b;->m0(Lxe/d;)V
+    invoke-interface {p1, v0}, Lxe/b;->b0(Lxe/d;)V
 
     return-void
 
@@ -1111,14 +1111,14 @@
     const-string p1, "callback"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_1
     const-string p1, "template"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -1137,7 +1137,7 @@
             "Lcom/kakao/sdk/talk/model/MessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -1168,7 +1168,7 @@
 
     invoke-direct {p2, p3}, Lcom/kakao/sdk/talk/TalkApiClient$sendDefaultMessage$1;-><init>(Lke/p;)V
 
-    invoke-interface {p1, p2}, Lxe/b;->m0(Lxe/d;)V
+    invoke-interface {p1, p2}, Lxe/b;->b0(Lxe/d;)V
 
     return-void
 
@@ -1176,21 +1176,21 @@
     const-string p1, "callback"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_1
     const-string p1, "template"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_2
     const-string p1, "receiverUuids"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -1209,7 +1209,7 @@
             "Lke/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -1232,7 +1232,7 @@
 
     invoke-direct {p2, p4}, Lcom/kakao/sdk/talk/TalkApiClient$sendScrapMemo$1;-><init>(Lke/l;)V
 
-    invoke-interface {p1, p2}, Lxe/b;->m0(Lxe/d;)V
+    invoke-interface {p1, p2}, Lxe/b;->b0(Lxe/d;)V
 
     return-void
 
@@ -1240,14 +1240,14 @@
     const-string p1, "callback"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_1
     const-string p1, "requestUrl"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -1262,7 +1262,7 @@
             "Lke/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -1295,7 +1295,7 @@
             "Lke/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -1338,7 +1338,7 @@
             "Lcom/kakao/sdk/talk/model/MessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -1369,7 +1369,7 @@
 
     invoke-direct {p2, p5}, Lcom/kakao/sdk/talk/TalkApiClient$sendScrapMessage$1;-><init>(Lke/p;)V
 
-    invoke-interface {p1, p2}, Lxe/b;->m0(Lxe/d;)V
+    invoke-interface {p1, p2}, Lxe/b;->b0(Lxe/d;)V
 
     return-void
 
@@ -1377,21 +1377,21 @@
     const-string p1, "callback"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_1
     const-string p1, "requestUrl"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_2
     const-string p1, "receiverUuids"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -1411,7 +1411,7 @@
             "Lcom/kakao/sdk/talk/model/MessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -1451,7 +1451,7 @@
             "Lcom/kakao/sdk/talk/model/MessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation

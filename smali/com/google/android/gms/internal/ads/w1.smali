@@ -1,96 +1,148 @@
-.class public final synthetic Lcom/google/android/gms/internal/ads/w1;
+.class public final Lcom/google/android/gms/internal/ads/w1;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-gass@@19.3.0"
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# static fields
-.field public static final synthetic a:[I
+# annotations
+.annotation runtime Ljava/lang/Deprecated;
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 5
+.method public static final a([B)Lcom/google/android/gms/internal/ads/u1;
+    .locals 4
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
     .line 1
-    invoke-static {}, Lcom/google/android/gms/internal/ads/q6$e;->a()[I
+    :try_start_0
+    invoke-static {}, Lcom/google/android/gms/internal/ads/t5;->a()Lcom/google/android/gms/internal/ads/t5;
 
     move-result-object v0
 
-    array-length v0, v0
+    invoke-static {p0, v0}, Lcom/google/android/gms/internal/ads/z4;->C([BLcom/google/android/gms/internal/ads/t5;)Lcom/google/android/gms/internal/ads/z4;
 
-    new-array v0, v0, [I
+    move-result-object p0
 
-    sput-object v0, Lcom/google/android/gms/internal/ads/w1;->a:[I
+    .line 2
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/z4;->z()Ljava/util/List;
 
-    const/4 v1, 0x1
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/google/android/gms/internal/ads/z4$b;
+
+    .line 3
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/z4$b;->B()Lcom/google/android/gms/internal/ads/u4;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/google/android/gms/internal/ads/u4;->D()I
+
+    move-result v2
+
+    const/4 v3, 0x1
+
+    if-eq v2, v3, :cond_0
+
+    .line 4
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/z4$b;->B()Lcom/google/android/gms/internal/ads/u4;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/google/android/gms/internal/ads/u4;->D()I
+
+    move-result v2
+
+    const/4 v3, 0x2
+
+    if-eq v2, v3, :cond_0
+
+    .line 5
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/z4$b;->B()Lcom/google/android/gms/internal/ads/u4;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/u4;->D()I
+
+    move-result v1
 
     const/4 v2, 0x3
 
-    :try_start_0
-    aput v1, v0, v2
+    if-eq v1, v2, :cond_0
+
+    goto :goto_0
+
+    .line 6
+    :cond_0
+    new-instance p0, Ljava/security/GeneralSecurityException;
+
+    const-string v0, "keyset contains secret key material"
+
+    invoke-direct {p0, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+
+    .line 7
+    :cond_1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/z4;->A()I
+
+    move-result v0
+
+    if-lez v0, :cond_2
+
+    .line 8
+    new-instance v0, Lcom/google/android/gms/internal/ads/u1;
+
+    invoke-direct {v0, p0}, Lcom/google/android/gms/internal/ads/u1;-><init>(Lcom/google/android/gms/internal/ads/z4;)V
+
+    return-object v0
+
+    .line 9
+    :cond_2
+    new-instance p0, Ljava/security/GeneralSecurityException;
+
+    const-string v0, "empty keyset"
+
+    invoke-direct {p0, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
+
+    throw p0
     :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/google/android/gms/internal/ads/zzegz; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 10
     :catch_0
-    const/4 v0, 0x2
+    new-instance p0, Ljava/security/GeneralSecurityException;
 
-    const/4 v3, 0x4
+    const-string v0, "invalid keyset"
 
-    :try_start_1
-    sget-object v4, Lcom/google/android/gms/internal/ads/w1;->a:[I
+    invoke-direct {p0, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
 
-    aput v0, v4, v3
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    goto :goto_2
 
-    :catch_1
-    :try_start_2
-    sget-object v4, Lcom/google/android/gms/internal/ads/w1;->a:[I
+    :goto_1
+    throw p0
 
-    aput v2, v4, v0
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    :catch_2
-    const/4 v0, 0x5
-
-    :try_start_3
-    sget-object v2, Lcom/google/android/gms/internal/ads/w1;->a:[I
-
-    aput v3, v2, v0
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    :catch_3
-    const/4 v2, 0x6
-
-    :try_start_4
-    sget-object v3, Lcom/google/android/gms/internal/ads/w1;->a:[I
-
-    aput v0, v3, v2
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    :catch_4
-    :try_start_5
-    sget-object v0, Lcom/google/android/gms/internal/ads/w1;->a:[I
-
-    const/4 v3, 0x0
-
-    aput v2, v0, v3
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    :catch_5
-    :try_start_6
-    sget-object v0, Lcom/google/android/gms/internal/ads/w1;->a:[I
-
-    const/4 v2, 0x7
-
-    aput v2, v0, v1
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
-
-    :catch_6
-    return-void
+    :goto_2
+    goto :goto_1
 .end method

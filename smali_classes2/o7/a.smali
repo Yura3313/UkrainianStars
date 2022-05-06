@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static a(Ljava/lang/String;Ll7/c;)Ljava/net/URL;
+.method public static a(Ljava/lang/String;Ll7/a;)Ljava/net/URL;
     .locals 16
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -101,7 +101,7 @@
     move-object/from16 v1, p1
 
     .line 14
-    invoke-interface {v1, v4}, Ll7/c;->a(Ljava/util/Map;)Ljava/util/Map;
+    invoke-interface {v1, v4}, Ll7/a;->a(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object v1
 

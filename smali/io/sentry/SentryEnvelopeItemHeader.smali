@@ -200,11 +200,11 @@
 
     move-result v0
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return v0
 
-    :catch_0
+    :catchall_0
     const/4 v0, -0x1
 
     return v0

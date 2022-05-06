@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field public a:Lcom/google/android/gms/ads/i;
+.field public a:Li1/o;
 
-.field public b:Lcom/google/android/gms/ads/i;
+.field public b:Li1/o;
 
-.field public c:Lcom/google/android/gms/ads/i;
+.field public c:Li1/o;
 
-.field public d:Lcom/google/android/gms/ads/i;
+.field public d:Li1/o;
 
 .field public e:Lr4/c;
 
@@ -53,7 +53,7 @@
     invoke-direct {v0}, Lr4/j;-><init>()V
 
     .line 3
-    iput-object v0, p0, Lr4/k$b;->a:Lcom/google/android/gms/ads/i;
+    iput-object v0, p0, Lr4/k$b;->a:Li1/o;
 
     .line 4
     new-instance v0, Lr4/j;
@@ -61,7 +61,7 @@
     invoke-direct {v0}, Lr4/j;-><init>()V
 
     .line 5
-    iput-object v0, p0, Lr4/k$b;->b:Lcom/google/android/gms/ads/i;
+    iput-object v0, p0, Lr4/k$b;->b:Li1/o;
 
     .line 6
     new-instance v0, Lr4/j;
@@ -69,7 +69,7 @@
     invoke-direct {v0}, Lr4/j;-><init>()V
 
     .line 7
-    iput-object v0, p0, Lr4/k$b;->c:Lcom/google/android/gms/ads/i;
+    iput-object v0, p0, Lr4/k$b;->c:Li1/o;
 
     .line 8
     new-instance v0, Lr4/j;
@@ -77,7 +77,7 @@
     invoke-direct {v0}, Lr4/j;-><init>()V
 
     .line 9
-    iput-object v0, p0, Lr4/k$b;->d:Lcom/google/android/gms/ads/i;
+    iput-object v0, p0, Lr4/k$b;->d:Li1/o;
 
     .line 10
     new-instance v0, Lr4/a;
@@ -156,7 +156,7 @@
     invoke-direct {v0}, Lr4/j;-><init>()V
 
     .line 24
-    iput-object v0, p0, Lr4/k$b;->a:Lcom/google/android/gms/ads/i;
+    iput-object v0, p0, Lr4/k$b;->a:Li1/o;
 
     .line 25
     new-instance v0, Lr4/j;
@@ -164,7 +164,7 @@
     invoke-direct {v0}, Lr4/j;-><init>()V
 
     .line 26
-    iput-object v0, p0, Lr4/k$b;->b:Lcom/google/android/gms/ads/i;
+    iput-object v0, p0, Lr4/k$b;->b:Li1/o;
 
     .line 27
     new-instance v0, Lr4/j;
@@ -172,7 +172,7 @@
     invoke-direct {v0}, Lr4/j;-><init>()V
 
     .line 28
-    iput-object v0, p0, Lr4/k$b;->c:Lcom/google/android/gms/ads/i;
+    iput-object v0, p0, Lr4/k$b;->c:Li1/o;
 
     .line 29
     new-instance v0, Lr4/j;
@@ -180,7 +180,7 @@
     invoke-direct {v0}, Lr4/j;-><init>()V
 
     .line 30
-    iput-object v0, p0, Lr4/k$b;->d:Lcom/google/android/gms/ads/i;
+    iput-object v0, p0, Lr4/k$b;->d:Li1/o;
 
     .line 31
     new-instance v0, Lr4/a;
@@ -245,24 +245,24 @@
     iput-object v0, p0, Lr4/k$b;->l:Lr4/e;
 
     .line 43
-    iget-object v0, p1, Lr4/k;->a:Lcom/google/android/gms/ads/i;
+    iget-object v0, p1, Lr4/k;->a:Li1/o;
 
-    iput-object v0, p0, Lr4/k$b;->a:Lcom/google/android/gms/ads/i;
+    iput-object v0, p0, Lr4/k$b;->a:Li1/o;
 
     .line 44
-    iget-object v0, p1, Lr4/k;->b:Lcom/google/android/gms/ads/i;
+    iget-object v0, p1, Lr4/k;->b:Li1/o;
 
-    iput-object v0, p0, Lr4/k$b;->b:Lcom/google/android/gms/ads/i;
+    iput-object v0, p0, Lr4/k$b;->b:Li1/o;
 
     .line 45
-    iget-object v0, p1, Lr4/k;->c:Lcom/google/android/gms/ads/i;
+    iget-object v0, p1, Lr4/k;->c:Li1/o;
 
-    iput-object v0, p0, Lr4/k$b;->c:Lcom/google/android/gms/ads/i;
+    iput-object v0, p0, Lr4/k$b;->c:Li1/o;
 
     .line 46
-    iget-object v0, p1, Lr4/k;->d:Lcom/google/android/gms/ads/i;
+    iget-object v0, p1, Lr4/k;->d:Li1/o;
 
-    iput-object v0, p0, Lr4/k$b;->d:Lcom/google/android/gms/ads/i;
+    iput-object v0, p0, Lr4/k$b;->d:Li1/o;
 
     .line 47
     iget-object v0, p1, Lr4/k;->e:Lr4/c;
@@ -307,7 +307,7 @@
     return-void
 .end method
 
-.method public static b(Lcom/google/android/gms/ads/i;)F
+.method public static b(Li1/o;)F
     .locals 2
 
     .line 1

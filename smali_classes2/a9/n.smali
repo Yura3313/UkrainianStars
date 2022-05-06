@@ -4,18 +4,18 @@
 
 
 # instance fields
-.field public a:Lc8/k;
+.field public a:Lj3/f4;
 
 
 # direct methods
-.method public constructor <init>(Lc8/k;)V
+.method public constructor <init>(Lj3/f4;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, La9/n;->a:Lc8/k;
+    iput-object p1, p0, La9/n;->a:Lj3/f4;
 
     return-void
 .end method

@@ -89,7 +89,7 @@
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
     .line 2
-    invoke-static {p1, v0}, Le0/a;->c(Ljava/lang/Object;Ljava/lang/StringBuilder;)V
+    invoke-static {p1, v0}, Le0/a;->a(Ljava/lang/Object;Ljava/lang/StringBuilder;)V
 
     const-string p1, "}"
 
@@ -141,7 +141,7 @@
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
     .line 2
-    invoke-static {p0, v0}, Le0/a;->c(Ljava/lang/Object;Ljava/lang/StringBuilder;)V
+    invoke-static {p0, v0}, Le0/a;->a(Ljava/lang/Object;Ljava/lang/StringBuilder;)V
 
     const-string v1, " id="
 
@@ -153,7 +153,7 @@
 
     const-string v2, "}"
 
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/d;->b(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/d;->a(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

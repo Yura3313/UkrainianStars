@@ -1,338 +1,313 @@
 .class public Lj3/eb;
-.super Lj3/ab;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # annotations
 .annotation build Landroid/annotation/TargetApi;
-    value = 0x11
+    value = 0x10
 .end annotation
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x0
+.method public constructor <init>(Lcom/google/android/gms/ads/i;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0, v0}, Lj3/ab;-><init>(Lf1/h;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
+.method public static i(Lj3/gh;)Z
+    .locals 0
 
-# virtual methods
-.method public final a(Landroid/content/Context;)Ljava/lang/String;
-    .locals 3
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x0
+
+    return p0
 
     .line 1
-    sget-object v0, Lj3/qc;->b:Lj3/qc;
-
-    if-nez v0, :cond_0
-
-    .line 2
-    new-instance v0, Lj3/qc;
-
-    invoke-direct {v0}, Lj3/qc;-><init>()V
-
-    sput-object v0, Lj3/qc;->b:Lj3/qc;
-
-    .line 3
     :cond_0
-    sget-object v0, Lj3/qc;->b:Lj3/qc;
+    invoke-interface {p0}, Lj3/gh;->onPause()V
 
-    .line 4
-    iget-object v1, v0, Lj3/qc;->a:Ljava/lang/String;
+    const/4 p0, 0x1
 
-    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    .line 5
-    invoke-static {p1}, Ly1/f;->a(Landroid/content/Context;)Landroid/content/Context;
-
-    move-result-object v1
-
-    .line 6
-    new-instance v2, Lj3/sc;
-
-    invoke-direct {v2, v1, p1}, Lj3/sc;-><init>(Landroid/content/Context;Landroid/content/Context;)V
-
-    .line 7
-    invoke-static {p1, v2}, Lj3/rc;->a(Landroid/content/Context;Ljava/util/concurrent/Callable;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/String;
-
-    .line 8
-    iput-object p1, v0, Lj3/qc;->a:Ljava/lang/String;
-
-    .line 9
-    :cond_1
-    iget-object p1, v0, Lj3/qc;->a:Ljava/lang/String;
-
-    return-object p1
+    return p0
 .end method
 
-.method public final c(Landroid/content/ContentResolver;)I
+.method public static q()Z
     .locals 2
 
-    const-string v0, "wifi_on"
+    .line 1
+    invoke-static {}, Landroid/os/Process;->myUid()I
 
-    const/4 v1, 0x0
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const/16 v1, 0x3e8
+
+    if-ne v0, v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+
+# virtual methods
+.method public a(Landroid/content/Context;)Ljava/lang/String;
+    .locals 0
+
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+.method public b(Landroid/view/View;)Z
+    .locals 1
 
     .line 1
-    invoke-static {p1, v0, v1}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-virtual {p1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    invoke-virtual {p1}, Landroid/view/View;->getWindowVisibility()I
 
     move-result p1
+
+    const/16 v0, 0x8
+
+    if-eq p1, v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
 
     return p1
 .end method
 
-.method public final d(Landroid/content/Context;Landroid/graphics/Bitmap;ZF)Landroid/graphics/drawable/Drawable;
-    .locals 3
+.method public c(Landroid/content/ContentResolver;)I
+    .locals 0
 
-    if-eqz p3, :cond_1
+    const/4 p0, 0x0
 
-    const/4 p3, 0x0
+    throw p0
+.end method
 
-    cmpg-float p3, p4, p3
+.method public d(Landroid/content/Context;Landroid/graphics/Bitmap;ZF)Landroid/graphics/drawable/Drawable;
+    .locals 0
 
-    if-lez p3, :cond_1
+    const/4 p0, 0x0
 
-    const/high16 p3, 0x41c80000    # 25.0f
+    throw p0
+.end method
 
-    cmpl-float p3, p4, p3
-
-    if-lez p3, :cond_0
-
-    goto :goto_0
+.method public e(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/util/Map;Ljava/io/InputStream;)Landroid/webkit/WebResourceResponse;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "I",
+            "Ljava/lang/String;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;",
+            "Ljava/io/InputStream;",
+            ")",
+            "Landroid/webkit/WebResourceResponse;"
+        }
+    .end annotation
 
     .line 1
-    :cond_0
-    :try_start_0
-    invoke-virtual {p2}, Landroid/graphics/Bitmap;->getWidth()I
+    new-instance p3, Landroid/webkit/WebResourceResponse;
 
-    move-result p3
-
-    invoke-virtual {p2}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    invoke-static {p2, p3, v0, v1}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
-
-    move-result-object p3
-
-    .line 2
-    invoke-static {p3}, Landroid/graphics/Bitmap;->createBitmap(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
-
-    move-result-object v0
-
-    .line 3
-    invoke-static {p1}, Landroid/renderscript/RenderScript;->create(Landroid/content/Context;)Landroid/renderscript/RenderScript;
-
-    move-result-object v1
-
-    .line 4
-    invoke-static {v1}, Landroid/renderscript/Element;->U8_4(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Landroid/renderscript/ScriptIntrinsicBlur;->create(Landroid/renderscript/RenderScript;Landroid/renderscript/Element;)Landroid/renderscript/ScriptIntrinsicBlur;
-
-    move-result-object v2
-
-    .line 5
-    invoke-static {v1, p3}, Landroid/renderscript/Allocation;->createFromBitmap(Landroid/renderscript/RenderScript;Landroid/graphics/Bitmap;)Landroid/renderscript/Allocation;
-
-    move-result-object p3
-
-    .line 6
-    invoke-static {v1, v0}, Landroid/renderscript/Allocation;->createFromBitmap(Landroid/renderscript/RenderScript;Landroid/graphics/Bitmap;)Landroid/renderscript/Allocation;
-
-    move-result-object v1
-
-    .line 7
-    invoke-virtual {v2, p4}, Landroid/renderscript/ScriptIntrinsicBlur;->setRadius(F)V
-
-    .line 8
-    invoke-virtual {v2, p3}, Landroid/renderscript/ScriptIntrinsicBlur;->setInput(Landroid/renderscript/Allocation;)V
-
-    .line 9
-    invoke-virtual {v2, v1}, Landroid/renderscript/ScriptIntrinsicBlur;->forEach(Landroid/renderscript/Allocation;)V
-
-    .line 10
-    invoke-virtual {v1, v0}, Landroid/renderscript/Allocation;->copyTo(Landroid/graphics/Bitmap;)V
-
-    .line 11
-    new-instance p3, Landroid/graphics/drawable/BitmapDrawable;
-
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p4
-
-    invoke-direct {p3, p4, v0}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
-    :try_end_0
-    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object p3
-
-    .line 12
-    :catch_0
-    new-instance p3, Landroid/graphics/drawable/BitmapDrawable;
-
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p1
-
-    invoke-direct {p3, p1, p2}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
-
-    return-object p3
-
-    .line 13
-    :cond_1
-    :goto_0
-    new-instance p3, Landroid/graphics/drawable/BitmapDrawable;
-
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p1
-
-    invoke-direct {p3, p1, p2}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
+    invoke-direct {p3, p1, p2, p6}, Landroid/webkit/WebResourceResponse;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/io/InputStream;)V
 
     return-object p3
 .end method
 
-.method public final i(Landroid/content/Context;Landroid/webkit/WebSettings;)Z
-    .locals 0
+.method public f(Lj3/gh;Lcom/google/android/gms/internal/ads/q7;Z)Lj3/jh;
+    .locals 1
 
     .line 1
-    invoke-super {p0, p1, p2}, Lj3/ab;->i(Landroid/content/Context;Landroid/webkit/WebSettings;)Z
+    new-instance v0, Lj3/di;
+
+    invoke-direct {v0, p1, p2, p3}, Lj3/di;-><init>(Lj3/gh;Lcom/google/android/gms/internal/ads/q7;Z)V
+
+    return-object v0
+.end method
+
+.method public g(Landroid/app/Activity;Landroid/content/res/Configuration;)Z
+    .locals 0
+
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public h(Landroid/content/Context;Landroid/webkit/WebSettings;)Z
+    .locals 1
+
+    .line 1
+    new-instance v0, Lj3/gb;
+
+    invoke-direct {v0, p1, p2}, Lj3/gb;-><init>(Landroid/content/Context;Landroid/webkit/WebSettings;)V
+
+    invoke-static {p1, v0}, Lj3/vc;->a(Landroid/content/Context;Ljava/util/concurrent/Callable;)Ljava/lang/Object;
 
     const/4 p1, 0x0
 
     .line 2
-    invoke-virtual {p2, p1}, Landroid/webkit/WebSettings;->setMediaPlaybackRequiresUserGesture(Z)V
+    invoke-virtual {p2, p1}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V
+
+    .line 3
+    invoke-virtual {p2, p1}, Landroid/webkit/WebSettings;->setAllowUniversalAccessFromFileURLs(Z)V
 
     const/4 p1, 0x1
 
     return p1
 .end method
 
-.method public final k(Landroid/content/ContentResolver;)I
-    .locals 2
+.method public j(Landroid/content/Context;Landroid/telephony/TelephonyManager;)I
+    .locals 0
 
-    const-string v0, "airplane_mode_on"
-
-    const/4 v1, 0x0
-
-    .line 1
-    invoke-static {p1, v0, v1}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result p1
+    const/4 p1, 0x3
 
     return p1
 .end method
 
-.method public final l(Landroid/content/Context;)V
-    .locals 6
+.method public k(Landroid/content/ContentResolver;)I
+    .locals 0
+
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+.method public l(Landroid/content/Context;)V
+    .locals 0
+
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+.method public m(Landroid/content/Context;)Landroid/webkit/CookieManager;
+    .locals 3
 
     .line 1
-    sget-object v0, Lj3/qc;->b:Lj3/qc;
+    invoke-static {}, Lj3/eb;->q()Z
 
-    if-nez v0, :cond_0
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    return-object v1
 
     .line 2
-    new-instance v0, Lj3/qc;
-
-    invoke-direct {v0}, Lj3/qc;-><init>()V
-
-    sput-object v0, Lj3/qc;->b:Lj3/qc;
+    :cond_0
+    :try_start_0
+    invoke-static {p1}, Landroid/webkit/CookieSyncManager;->createInstance(Landroid/content/Context;)Landroid/webkit/CookieSyncManager;
 
     .line 3
-    :cond_0
-    sget-object v0, Lj3/qc;->b:Lj3/qc;
+    invoke-static {}, Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;
+
+    move-result-object p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    return-object p1
+
+    :catchall_0
+    move-exception p1
 
     .line 4
-    invoke-static {}, Lp0/d;->i()Z
+    sget-object v0, Lh1/o;->B:Lh1/o;
+
+    iget-object v0, v0, Lh1/o;->g:Lj3/ia;
 
     .line 5
-    invoke-static {p1}, Landroid/webkit/WebSettings;->getDefaultUserAgent(Landroid/content/Context;)Ljava/lang/String;
+    iget-object v2, v0, Lj3/ia;->e:Landroid/content/Context;
 
-    move-result-object v1
+    iget-object v0, v0, Lj3/ia;->f:Lcom/google/android/gms/internal/ads/zzbbg;
+
+    invoke-static {v2, v0}, Lj3/w7;->c(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzbbg;)Lj3/a8;
+
+    move-result-object v0
+
+    const-string v2, "ApiLevelUtil.getCookieManager"
 
     .line 6
-    iget-object v2, v0, Lj3/qc;->a:Ljava/lang/String;
+    invoke-interface {v0, p1, v2}, Lj3/a8;->a(Ljava/lang/Throwable;Ljava/lang/String;)V
 
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    return-object v1
+.end method
 
-    move-result v2
-
-    if-nez v2, :cond_3
-
-    .line 7
-    invoke-static {p1}, Ly1/f;->a(Landroid/content/Context;)Landroid/content/Context;
-
-    move-result-object v2
-
-    if-nez v2, :cond_2
-
-    .line 8
-    invoke-static {p1}, Landroid/webkit/WebSettings;->getDefaultUserAgent(Landroid/content/Context;)Ljava/lang/String;
-
-    move-result-object v3
-
-    const/4 v4, 0x0
-
-    const-string v5, "admob_user_agent"
-
-    .line 9
-    invoke-virtual {p1, v5, v4}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
-
-    move-result-object p1
-
-    .line 10
-    invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    move-result-object p1
-
-    const-string v4, "user_agent"
-
-    invoke-interface {p1, v4, v3}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
-
-    move-result-object p1
-
-    if-nez v2, :cond_1
-
-    .line 11
-    invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->apply()V
-
-    goto :goto_0
-
-    .line 12
-    :cond_1
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string v0, "world-readable shared preferences should only be used by apk"
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    .line 13
-    :cond_2
-    :goto_0
-    iput-object v1, v0, Lj3/qc;->a:Ljava/lang/String;
-
-    .line 14
-    :cond_3
-    invoke-static {}, Lp0/d;->i()Z
+.method public n(Landroid/app/Activity;)V
+    .locals 0
 
     return-void
+.end method
+
+.method public o()I
+    .locals 0
+
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+.method public p()Landroid/view/ViewGroup$LayoutParams;
+    .locals 2
+
+    .line 1
+    new-instance v0, Landroid/view/ViewGroup$LayoutParams;
+
+    const/4 v1, -0x2
+
+    invoke-direct {v0, v1, v1}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
+
+    return-object v0
+.end method
+
+.method public r()I
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public s()J
+    .locals 0
+
+    const/4 p0, 0x0
+
+    throw p0
 .end method

@@ -4,9 +4,9 @@
 
 
 # static fields
-.field public static final D:[Ljava/lang/String;
+.field public static final E:[Ljava/lang/String;
 
-.field public static final E:Landroid/animation/TypeEvaluator;
+.field public static final F:Landroid/animation/TypeEvaluator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/animation/TypeEvaluator<",
@@ -16,7 +16,7 @@
     .end annotation
 .end field
 
-.field public static final F:Landroid/util/Property;
+.field public static final G:Landroid/util/Property;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/Property<",
@@ -49,14 +49,14 @@
     aput-object v2, v0, v1
 
     .line 1
-    sput-object v0, Landroidx/transition/ChangeImageTransform;->D:[Ljava/lang/String;
+    sput-object v0, Landroidx/transition/ChangeImageTransform;->E:[Ljava/lang/String;
 
     .line 2
     new-instance v0, Landroidx/transition/ChangeImageTransform$a;
 
     invoke-direct {v0}, Landroidx/transition/ChangeImageTransform$a;-><init>()V
 
-    sput-object v0, Landroidx/transition/ChangeImageTransform;->E:Landroid/animation/TypeEvaluator;
+    sput-object v0, Landroidx/transition/ChangeImageTransform;->F:Landroid/animation/TypeEvaluator;
 
     .line 3
     new-instance v0, Landroidx/transition/ChangeImageTransform$b;
@@ -67,7 +67,7 @@
 
     invoke-direct {v0, v1, v2}, Landroidx/transition/ChangeImageTransform$b;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
 
-    sput-object v0, Landroidx/transition/ChangeImageTransform;->F:Landroid/util/Property;
+    sput-object v0, Landroidx/transition/ChangeImageTransform;->G:Landroid/util/Property;
 
     return-void
 .end method
@@ -92,7 +92,7 @@
 
 
 # virtual methods
-.method public final I(Lv0/s;)V
+.method public final J(Lv0/s;)V
     .locals 6
 
     .line 1
@@ -361,7 +361,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/ChangeImageTransform;->I(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/ChangeImageTransform;->J(Lv0/s;)V
 
     return-void
 .end method
@@ -370,12 +370,12 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/ChangeImageTransform;->I(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/ChangeImageTransform;->J(Lv0/s;)V
 
     return-void
 .end method
 
-.method public k(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+.method public l(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
     .locals 6
 
     const/4 p1, 0x0
@@ -515,7 +515,7 @@
 
     .line 13
     :cond_8
-    sget-object p3, Landroidx/transition/ChangeImageTransform;->F:Landroid/util/Property;
+    sget-object p3, Landroidx/transition/ChangeImageTransform;->G:Landroid/util/Property;
 
     invoke-virtual {p3, p1, p2}, Landroid/util/Property;->set(Ljava/lang/Object;Ljava/lang/Object;)V
 
@@ -539,9 +539,9 @@
     .line 15
     :cond_9
     :goto_1
-    sget-object p2, Landroidx/transition/ChangeImageTransform;->F:Landroid/util/Property;
+    sget-object p2, Landroidx/transition/ChangeImageTransform;->G:Landroid/util/Property;
 
-    sget-object p3, Landroidx/transition/ChangeImageTransform;->E:Landroid/animation/TypeEvaluator;
+    sget-object p3, Landroidx/transition/ChangeImageTransform;->F:Landroid/animation/TypeEvaluator;
 
     new-array v0, v1, [Landroid/graphics/Matrix;
 
@@ -560,11 +560,11 @@
     return-object p1
 .end method
 
-.method public q()[Ljava/lang/String;
+.method public r()[Ljava/lang/String;
     .locals 1
 
     .line 1
-    sget-object v0, Landroidx/transition/ChangeImageTransform;->D:[Ljava/lang/String;
+    sget-object v0, Landroidx/transition/ChangeImageTransform;->E:[Ljava/lang/String;
 
     return-object v0
 .end method

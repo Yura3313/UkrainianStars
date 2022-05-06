@@ -3,23 +3,19 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
+.implements Lj3/rv0;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final b:Ljava/lang/Object;
-
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method public synthetic constructor <init>(I)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lj3/fl;->a:I
-
-    iput-object p1, p0, Lj3/fl;->b:Ljava/lang/Object;
+    iput p1, p0, Lj3/fl;->a:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,7 +25,7 @@
 
 # virtual methods
 .method public final get()Ljava/lang/Object;
-    .locals 2
+    .locals 4
 
     iget v0, p0, Lj3/fl;->a:I
 
@@ -39,25 +35,36 @@
 
     .line 1
     :pswitch_0
-    sget-object v0, Lh1/o;->B:Lh1/o;
+    new-instance v0, Lj3/lu;
 
-    iget-object v0, v0, Lh1/o;->x:Lj3/o9;
+    invoke-direct {v0}, Lj3/lu;-><init>()V
 
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+    return-object v0
+
+    :pswitch_1
+    const-string v0, "app_open_ad"
+
+    return-object v0
 
     .line 2
-    invoke-static {v0, v1}, Lj3/zo0;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    :pswitch_2
+    new-instance v0, Lj3/p7;
+
+    invoke-direct {v0}, Lj3/p7;-><init>()V
 
     return-object v0
 
     .line 3
     :goto_0
-    iget-object v0, p0, Lj3/fl;->b:Ljava/lang/Object;
+    new-instance v0, Lj3/o00;
 
-    check-cast v0, Lj3/um;
+    const/16 v1, 0x1b
 
-    .line 4
-    iget-object v0, v0, Lj3/um;->a:Landroid/view/ViewGroup;
+    const/16 v2, 0x1c
+
+    const/16 v3, 0x1d
+
+    invoke-direct {v0, v1, v2, v3}, Lj3/o00;-><init>(III)V
 
     return-object v0
 
@@ -65,6 +72,8 @@
 
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

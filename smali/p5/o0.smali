@@ -1,5 +1,5 @@
 .class public final Lp5/o0;
-.super Lp5/m;
+.super Lp5/n;
 .source "XChaCha20Poly1305.java"
 
 
@@ -13,14 +13,14 @@
     .end annotation
 
     .line 1
-    invoke-direct {p0, p1}, Lp5/m;-><init>([B)V
+    invoke-direct {p0, p1}, Lp5/n;-><init>([B)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public d([BI)Lp5/k;
+.method public d([BI)Lp5/l;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {

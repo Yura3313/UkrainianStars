@@ -1,128 +1,59 @@
-.class public final Lj3/d20;
+.class public final synthetic Lj3/d20;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lj3/bv0<",
-        "Lj3/b20;",
-        ">;"
-    }
-.end annotation
+.implements Lj3/ql0;
 
 
 # instance fields
-.field public final a:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Ljava/util/concurrent/ScheduledExecutorService;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final a:Lj3/e20;
 
-.field public final b:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/s20;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final b:Lcom/google/android/gms/internal/ads/zzasp;
 
-.field public final c:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lcom/google/android/gms/internal/ads/zzcpj;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final c:I
 
 
 # direct methods
-.method public constructor <init>(Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;)V
+.method public constructor <init>(Lj3/e20;Lcom/google/android/gms/internal/ads/zzasp;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/fv0<",
-            "Ljava/util/concurrent/ScheduledExecutorService;",
-            ">;",
-            "Lj3/fv0<",
-            "Lj3/am0;",
-            ">;",
-            "Lj3/fv0<",
-            "Lj3/s20;",
-            ">;",
-            "Lj3/fv0<",
-            "Lcom/google/android/gms/internal/ads/zzcpj;",
-            ">;)V"
-        }
-    .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Lj3/d20;->a:Lj3/fv0;
+    iput-object p1, p0, Lj3/d20;->a:Lj3/e20;
 
-    .line 3
-    iput-object p3, p0, Lj3/d20;->b:Lj3/fv0;
+    iput-object p2, p0, Lj3/d20;->b:Lcom/google/android/gms/internal/ads/zzasp;
 
-    .line 4
-    iput-object p4, p0, Lj3/d20;->c:Lj3/fv0;
+    iput p3, p0, Lj3/d20;->c:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic get()Ljava/lang/Object;
-    .locals 5
+.method public final a(Ljava/lang/Object;)Lj3/im0;
+    .locals 3
+
+    iget-object v0, p0, Lj3/d20;->a:Lj3/e20;
+
+    iget-object v1, p0, Lj3/d20;->b:Lcom/google/android/gms/internal/ads/zzasp;
+
+    iget v2, p0, Lj3/d20;->c:I
+
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 1
-    iget-object v0, p0, Lj3/d20;->a:Lj3/fv0;
+    iget-object p1, v0, Lj3/e20;->d:Lj3/nv0;
 
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
+    invoke-interface {p1}, Lj3/nv0;->get()Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object p1
 
-    check-cast v0, Ljava/util/concurrent/ScheduledExecutorService;
+    check-cast p1, Lcom/google/android/gms/internal/ads/zzcpj;
 
-    .line 2
-    invoke-static {}, Lj3/fp;->b()Lj3/am0;
+    invoke-virtual {p1, v1, v2}, Lcom/google/android/gms/internal/ads/zzcpj;->D7(Lcom/google/android/gms/internal/ads/zzasp;I)Lj3/im0;
 
-    move-result-object v1
+    move-result-object p1
 
-    .line 3
-    iget-object v2, p0, Lj3/d20;->b:Lj3/fv0;
-
-    invoke-interface {v2}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lj3/s20;
-
-    iget-object v3, p0, Lj3/d20;->c:Lj3/fv0;
-
-    invoke-static {v3}, Lj3/yu0;->a(Lj3/fv0;)Lj3/xu0;
-
-    move-result-object v3
-
-    .line 4
-    new-instance v4, Lj3/b20;
-
-    invoke-direct {v4, v0, v1, v2, v3}, Lj3/b20;-><init>(Ljava/util/concurrent/ScheduledExecutorService;Lj3/am0;Lj3/s20;Lj3/xu0;)V
-
-    return-object v4
+    return-object p1
 .end method

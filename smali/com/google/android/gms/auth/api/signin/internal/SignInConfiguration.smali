@@ -19,9 +19,9 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public b:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
+.field public h:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
 
 # direct methods
@@ -47,10 +47,10 @@
     .line 2
     invoke-static {p1}, Lc2/h;->e(Ljava/lang/String;)Ljava/lang/String;
 
-    iput-object p1, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->g:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->b:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
+    iput-object p2, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->h:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
     return-void
 .end method
@@ -74,10 +74,10 @@
     check-cast p1, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->g:Ljava/lang/String;
 
     .line 4
-    iget-object v2, p1, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->a:Ljava/lang/String;
+    iget-object v2, p1, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->g:Ljava/lang/String;
 
     .line 5
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -86,12 +86,12 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->b:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->h:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
     if-nez v0, :cond_1
 
     .line 6
-    iget-object p1, p1, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->b:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
+    iget-object p1, p1, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->h:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
     if-nez p1, :cond_2
 
@@ -99,7 +99,7 @@
 
     .line 7
     :cond_1
-    iget-object p1, p1, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->b:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
+    iget-object p1, p1, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->h:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
     .line 8
     invoke-virtual {v0, p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->equals(Ljava/lang/Object;)Z
@@ -125,11 +125,11 @@
 
     invoke-direct {v0}, Lx1/a;-><init>()V
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lx1/a;->a(Ljava/lang/Object;)Lx1/a;
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->b:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->h:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
     invoke-virtual {v0, v1}, Lx1/a;->a(Ljava/lang/Object;)Lx1/a;
 
@@ -149,7 +149,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->g:Ljava/lang/String;
 
     const/4 v2, 0x2
 
@@ -159,7 +159,7 @@
     invoke-static {p1, v2, v1, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->b:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->h:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
     const/4 v2, 0x5
 

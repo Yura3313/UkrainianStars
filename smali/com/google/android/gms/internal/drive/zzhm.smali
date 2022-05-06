@@ -13,7 +13,7 @@
 
 
 # virtual methods
-.method public final h2(Lcom/google/android/gms/internal/drive/zzga;)V
+.method public final i2(Lcom/google/android/gms/internal/drive/zzga;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -22,7 +22,7 @@
     .end annotation
 
     .line 1
-    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzga;->a:Lcom/google/android/gms/internal/drive/zzgo;
+    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzga;->g:Lcom/google/android/gms/internal/drive/zzgo;
 
     const/4 p1, 0x0
 
@@ -30,7 +30,7 @@
     throw p1
 .end method
 
-.method public final o5(Lcom/google/android/gms/internal/drive/zzfj;)V
+.method public final p5(Lcom/google/android/gms/internal/drive/zzfj;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -39,10 +39,10 @@
     .end annotation
 
     .line 1
-    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzfj;->a:Lcom/google/android/gms/internal/drive/zzei;
+    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzfj;->g:Lcom/google/android/gms/internal/drive/zzei;
 
     .line 2
-    iget v0, p1, Lcom/google/android/gms/internal/drive/zzei;->a:I
+    iget v0, p1, Lcom/google/android/gms/internal/drive/zzei;->g:I
 
     const/4 v1, 0x1
 
@@ -52,10 +52,10 @@
 
     .line 3
     :cond_0
-    iget-boolean v0, p1, Lcom/google/android/gms/internal/drive/zzei;->h:Z
+    iget-boolean v0, p1, Lcom/google/android/gms/internal/drive/zzei;->i:Z
 
     .line 4
-    iget p1, p1, Lcom/google/android/gms/internal/drive/zzei;->b:I
+    iget p1, p1, Lcom/google/android/gms/internal/drive/zzei;->h:I
 
     const/16 v0, 0x100
 

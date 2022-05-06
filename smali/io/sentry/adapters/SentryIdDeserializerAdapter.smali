@@ -64,14 +64,14 @@
 
     invoke-direct {p3, p1}, Lio/sentry/protocol/SentryId;-><init>(Ljava/lang/String;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     move-object p2, p3
 
     :goto_0
     return-object p2
 
-    :catch_0
+    :catchall_0
     move-exception p1
 
     .line 3

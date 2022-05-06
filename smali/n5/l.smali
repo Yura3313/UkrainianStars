@@ -52,21 +52,21 @@
     invoke-direct {v0}, Ln5/h;-><init>()V
 
     .line 7
-    invoke-static {}, Ll5/g1;->t()Ll5/g1;
+    invoke-static {}, Ll5/g1;->s()Ll5/g1;
 
     move-result-object v0
 
     sput-object v0, Ln5/l;->a:Ll5/g1;
 
     .line 8
-    invoke-static {}, Ll5/g1;->t()Ll5/g1;
+    invoke-static {}, Ll5/g1;->s()Ll5/g1;
 
     move-result-object v0
 
     sput-object v0, Ln5/l;->b:Ll5/g1;
 
     .line 9
-    invoke-static {}, Ll5/g1;->t()Ll5/g1;
+    invoke-static {}, Ll5/g1;->s()Ll5/g1;
 
     move-result-object v0
 

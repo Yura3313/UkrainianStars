@@ -25,7 +25,7 @@
     .end annotation
 .end field
 
-.field public static final a:Lcom/supercell/id/PresentationInfo$Connect;
+.field public static final g:Lcom/supercell/id/PresentationInfo$Connect;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/PresentationInfo$Connect;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/PresentationInfo$Connect;->a:Lcom/supercell/id/PresentationInfo$Connect;
+    sput-object v0, Lcom/supercell/id/PresentationInfo$Connect;->g:Lcom/supercell/id/PresentationInfo$Connect;
 
     .line 2
     new-instance v0, Lcom/supercell/id/PresentationInfo$Connect$a;
@@ -74,7 +74,7 @@
     const-string p1, "dest"
 
     .line 1
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

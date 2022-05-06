@@ -2,824 +2,951 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lj3/kh0;
 
-# static fields
-.field public static a:Z
 
-.field public static b:Ljava/security/MessageDigest;
+# instance fields
+.field public final a:Ljava/util/concurrent/ConcurrentHashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/ConcurrentHashMap<",
+            "Lj3/sh0;",
+            "Lj3/jh0;",
+            ">;"
+        }
+    .end annotation
 
-.field public static final c:Ljava/lang/Object;
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "this"
+    .end annotation
+.end field
 
-.field public static final d:Ljava/lang/Object;
+.field public b:Lcom/google/android/gms/internal/ads/zzdnd;
 
-.field public static e:Ljava/util/concurrent/CountDownLatch;
+.field public c:Lj3/lh0;
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzdnd;)V
     .locals 2
 
     .line 1
-    new-instance v0, Ljava/lang/Object;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    sput-object v0, Lcom/google/android/gms/internal/ads/d1;->c:Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v0, Ljava/lang/Object;
+    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    iget v1, p1, Lcom/google/android/gms/internal/ads/zzdnd;->k:I
 
-    sput-object v0, Lcom/google/android/gms/internal/ads/d1;->d:Ljava/lang/Object;
+    invoke-direct {v0, v1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>(I)V
+
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/d1;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 3
-    new-instance v0, Ljava/util/concurrent/CountDownLatch;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/d1;->b:Lcom/google/android/gms/internal/ads/zzdnd;
 
-    const/4 v1, 0x1
+    .line 4
+    new-instance p1, Lj3/lh0;
 
-    invoke-direct {v0, v1}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
+    invoke-direct {p1}, Lj3/lh0;-><init>()V
 
-    sput-object v0, Lcom/google/android/gms/internal/ads/d1;->e:Ljava/util/concurrent/CountDownLatch;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/d1;->c:Lj3/lh0;
 
     return-void
 .end method
 
-.method public static a(Lcom/google/android/gms/internal/ads/c0$d;)Lcom/google/android/gms/internal/ads/c0;
-    .locals 3
+
+# virtual methods
+.method public final a()V
+    .locals 6
 
     .line 1
-    invoke-static {}, Lcom/google/android/gms/internal/ads/c0;->V()Lcom/google/android/gms/internal/ads/c0$a;
-
-    move-result-object v0
+    sget-object v0, Lj3/n;->k3:Lj3/f;
 
     .line 2
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/c0$d;->zzv()I
+    sget-object v1, Lj3/t51;->j:Lj3/t51;
 
-    move-result p0
-
-    int-to-long v1, p0
-
-    invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/internal/ads/c0$a;->p(J)Lcom/google/android/gms/internal/ads/c0$a;
+    iget-object v1, v1, Lj3/t51;->f:Lj3/l;
 
     .line 3
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/q6$b;->i()Lj3/os0;
-
-    move-result-object p0
-
-    check-cast p0, Lcom/google/android/gms/internal/ads/q6;
-
-    check-cast p0, Lcom/google/android/gms/internal/ads/c0;
-
-    return-object p0
-.end method
-
-.method public static b([BLjava/lang/String;Z)[B
-    .locals 8
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/NoSuchAlgorithmException;,
-            Ljava/io/UnsupportedEncodingException;
-        }
-    .end annotation
-
-    const/16 v0, 0xff
-
-    if-eqz p2, :cond_0
-
-    const/16 v1, 0xef
-
-    goto :goto_0
-
-    :cond_0
-    const/16 v1, 0xff
-
-    .line 1
-    :goto_0
-    array-length v2, p0
-
-    if-le v2, v1, :cond_1
-
-    .line 2
-    sget-object p0, Lcom/google/android/gms/internal/ads/c0$d;->zzju:Lcom/google/android/gms/internal/ads/c0$d;
-
-    .line 3
-    invoke-static {p0}, Lcom/google/android/gms/internal/ads/d1;->a(Lcom/google/android/gms/internal/ads/c0$d;)Lcom/google/android/gms/internal/ads/c0;
-
-    move-result-object p0
-
-    .line 4
-    invoke-virtual {p0}, Lj3/dq0;->a()[B
-
-    move-result-object p0
-
-    .line 5
-    :cond_1
-    array-length v2, p0
-
-    if-ge v2, v1, :cond_2
-
-    .line 6
-    array-length v2, p0
-
-    sub-int v2, v1, v2
-
-    new-array v2, v2, [B
-
-    .line 7
-    new-instance v3, Ljava/security/SecureRandom;
-
-    invoke-direct {v3}, Ljava/security/SecureRandom;-><init>()V
-
-    invoke-virtual {v3, v2}, Ljava/security/SecureRandom;->nextBytes([B)V
-
-    add-int/lit8 v1, v1, 0x1
-
-    .line 8
-    invoke-static {v1}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
-
-    move-result-object v1
-
-    array-length v3, p0
-
-    int-to-byte v3, v3
-
-    .line 9
-    invoke-virtual {v1, v3}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
-
-    move-result-object v1
-
-    .line 10
-    invoke-virtual {v1, p0}, Ljava/nio/ByteBuffer;->put([B)Ljava/nio/ByteBuffer;
-
-    move-result-object p0
-
-    .line 11
-    invoke-virtual {p0, v2}, Ljava/nio/ByteBuffer;->put([B)Ljava/nio/ByteBuffer;
-
-    move-result-object p0
-
-    .line 12
-    invoke-virtual {p0}, Ljava/nio/ByteBuffer;->array()[B
-
-    move-result-object p0
-
-    goto :goto_1
-
-    :cond_2
-    add-int/lit8 v1, v1, 0x1
-
-    .line 13
-    invoke-static {v1}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
-
-    move-result-object v1
-
-    array-length v2, p0
-
-    int-to-byte v2, v2
-
-    .line 14
-    invoke-virtual {v1, v2}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
-
-    move-result-object v1
-
-    .line 15
-    invoke-virtual {v1, p0}, Ljava/nio/ByteBuffer;->put([B)Ljava/nio/ByteBuffer;
-
-    move-result-object p0
-
-    .line 16
-    invoke-virtual {p0}, Ljava/nio/ByteBuffer;->array()[B
-
-    move-result-object p0
-
-    :goto_1
-    const/16 v1, 0x100
-
-    if-eqz p2, :cond_3
-
-    .line 17
-    invoke-static {p0}, Lcom/google/android/gms/internal/ads/d1;->c([B)[B
-
-    move-result-object p2
-
-    .line 18
-    invoke-static {v1}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
-
-    move-result-object v2
-
-    .line 19
-    invoke-virtual {v2, p2}, Ljava/nio/ByteBuffer;->put([B)Ljava/nio/ByteBuffer;
-
-    move-result-object p2
-
-    .line 20
-    invoke-virtual {p2, p0}, Ljava/nio/ByteBuffer;->put([B)Ljava/nio/ByteBuffer;
-
-    move-result-object p0
-
-    .line 21
-    invoke-virtual {p0}, Ljava/nio/ByteBuffer;->array()[B
-
-    move-result-object p0
-
-    :cond_3
-    new-array p2, v1, [B
-
-    .line 22
-    new-instance v2, Lj3/cb0;
-
-    invoke-direct {v2}, Lj3/cb0;-><init>()V
-
-    .line 23
-    iget-object v2, v2, Lj3/cb0;->N2:[Lj3/oc0;
-
-    array-length v3, v2
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    :goto_2
-    if-ge v5, v3, :cond_4
-
-    aget-object v6, v2, v5
-
-    invoke-interface {v6, p0, p2}, Lj3/oc0;->h([B[B)V
-
-    add-int/lit8 v5, v5, 0x1
-
-    goto :goto_2
-
-    :cond_4
-    if-eqz p1, :cond_7
-
-    .line 24
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    move-result p0
-
-    if-lez p0, :cond_7
-
-    .line 25
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    move-result p0
-
-    const/16 v2, 0x20
-
-    if-le p0, v2, :cond_5
-
-    .line 26
-    invoke-virtual {p1, v4, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object p1
-
-    :cond_5
-    const-string p0, "UTF-8"
-
-    .line 27
-    invoke-virtual {p1, p0}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
-
-    move-result-object p0
-
-    .line 28
-    new-instance p1, Lj3/aq0;
-
-    invoke-direct {p1, p0}, Lj3/aq0;-><init>([B)V
-
-    .line 29
-    iget p0, p1, Lj3/aq0;->b:I
-
-    .line 30
-    iget v2, p1, Lj3/aq0;->c:I
-
-    :goto_3
-    if-ge v4, v1, :cond_6
-
-    add-int/lit8 p0, p0, 0x1
-
-    and-int/2addr p0, v0
-
-    .line 31
-    iget-object v3, p1, Lj3/aq0;->a:[B
-
-    aget-byte v5, v3, p0
-
-    add-int/2addr v2, v5
-
-    and-int/2addr v2, v0
-
-    .line 32
-    aget-byte v5, v3, p0
-
-    .line 33
-    aget-byte v6, v3, v2
-
-    aput-byte v6, v3, p0
-
-    .line 34
-    aput-byte v5, v3, v2
-
-    .line 35
-    aget-byte v5, p2, v4
-
-    aget-byte v6, v3, p0
-
-    aget-byte v7, v3, v2
-
-    add-int/2addr v6, v7
-
-    and-int/2addr v6, v0
-
-    aget-byte v3, v3, v6
-
-    xor-int/2addr v3, v5
-
-    int-to-byte v3, v3
-
-    aput-byte v3, p2, v4
-
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_3
-
-    .line 36
-    :cond_6
-    iput p0, p1, Lj3/aq0;->b:I
-
-    .line 37
-    iput v2, p1, Lj3/aq0;->c:I
-
-    :cond_7
-    return-object p2
-.end method
-
-.method public static c([B)[B
-    .locals 5
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/NoSuchAlgorithmException;
-        }
-    .end annotation
-
-    .line 1
-    sget-object v0, Lcom/google/android/gms/internal/ads/d1;->c:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    .line 2
-    :try_start_0
-    invoke-static {}, Lcom/google/android/gms/internal/ads/d1;->d()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    :try_start_1
-    sget-object v1, Lcom/google/android/gms/internal/ads/d1;->e:Ljava/util/concurrent/CountDownLatch;
-
-    const-wide/16 v2, 0x2
-
-    sget-object v4, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
-
-    invoke-virtual {v1, v2, v3, v4}, Ljava/util/concurrent/CountDownLatch;->await(JLjava/util/concurrent/TimeUnit;)Z
-
-    move-result v1
-    :try_end_1
-    .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    goto :goto_0
-
-    :catch_0
-    const/4 v1, 0x0
-
-    :goto_0
-    const/4 v2, 0x0
-
-    if-nez v1, :cond_0
-
-    goto :goto_1
-
-    .line 4
-    :cond_0
-    :try_start_2
-    sget-object v1, Lcom/google/android/gms/internal/ads/d1;->b:Ljava/security/MessageDigest;
-
-    if-nez v1, :cond_1
-
-    goto :goto_1
-
-    :cond_1
-    move-object v2, v1
-
-    :goto_1
-    if-eqz v2, :cond_2
-
-    .line 5
-    invoke-virtual {v2}, Ljava/security/MessageDigest;->reset()V
-
-    .line 6
-    invoke-virtual {v2, p0}, Ljava/security/MessageDigest;->update([B)V
-
-    .line 7
-    sget-object p0, Lcom/google/android/gms/internal/ads/d1;->b:Ljava/security/MessageDigest;
-
-    invoke-virtual {p0}, Ljava/security/MessageDigest;->digest()[B
-
-    move-result-object p0
-
-    monitor-exit v0
-
-    return-object p0
-
-    .line 8
-    :cond_2
-    new-instance p0, Ljava/security/NoSuchAlgorithmException;
-
-    const-string v1, "Cannot compute hash"
-
-    invoke-direct {p0, v1}, Ljava/security/NoSuchAlgorithmException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-
-    .line 9
-    :goto_2
-    monitor-exit v0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    throw p0
-
-    :catchall_0
-    move-exception p0
-
-    goto :goto_2
-.end method
-
-.method public static d()V
-    .locals 4
-
-    .line 1
-    sget-object v0, Lcom/google/android/gms/internal/ads/d1;->d:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    .line 2
-    :try_start_0
-    sget-boolean v1, Lcom/google/android/gms/internal/ads/d1;->a:Z
-
-    if-nez v1, :cond_0
-
-    const/4 v1, 0x1
-
-    .line 3
-    sput-boolean v1, Lcom/google/android/gms/internal/ads/d1;->a:Z
-
-    .line 4
-    new-instance v1, Ljava/lang/Thread;
-
-    new-instance v2, Lj3/w80;
-
-    const/4 v3, 0x0
-
-    invoke-direct {v2, v3}, Lj3/w80;-><init>(Lf1/h;)V
-
-    invoke-direct {v1, v2}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
-
-    invoke-virtual {v1}, Ljava/lang/Thread;->start()V
-
-    .line 5
-    :cond_0
-    monitor-exit v0
-
-    return-void
-
-    :catchall_0
-    move-exception v1
-
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v1
-.end method
-
-.method public static e(Lcom/google/android/gms/internal/ads/c0;Ljava/lang/String;)Ljava/lang/String;
-    .locals 9
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;,
-            Ljava/io/UnsupportedEncodingException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Lj3/dq0;->a()[B
-
-    move-result-object p0
-
-    .line 2
-    sget-object v0, Lj3/n;->l1:Lj3/f;
-
-    .line 3
-    sget-object v1, Lj3/w41;->j:Lj3/w41;
-
-    iget-object v1, v1, Lj3/w41;->f:Lj3/l;
-
-    .line 4
     invoke-virtual {v1, v0}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 5
+    .line 4
     check-cast v0, Ljava/lang/Boolean;
 
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
 
-    const/4 v1, 0x0
+    if-eqz v0, :cond_3
 
-    const/4 v2, 0x1
+    .line 5
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/d1;->b:Lcom/google/android/gms/internal/ads/zzdnd;
 
-    if-nez v0, :cond_3
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/zzdnd;->i:Lj3/oh0;
+
+    invoke-static {v0}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
 
     .line 6
-    sget-object v0, Lcom/google/android/gms/internal/ads/e7;->a:Lj3/tm0;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/d1;->c:Lj3/lh0;
 
-    if-eqz v0, :cond_2
-
-    if-eqz p1, :cond_0
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 7
-    invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/d1;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
-    move-result-object p1
-
-    goto :goto_0
-
-    :cond_0
-    new-array p1, v1, [B
-
-    .line 8
-    :goto_0
-    sget-object v0, Lcom/google/android/gms/internal/ads/e7;->a:Lj3/tm0;
-
-    invoke-interface {v0, p0, p1}, Lj3/tm0;->a([B[B)[B
-
-    move-result-object p0
-
-    .line 9
-    invoke-static {}, Lcom/google/android/gms/internal/ads/h0;->A()Lcom/google/android/gms/internal/ads/h0$a;
-
-    move-result-object p1
-
-    .line 10
-    invoke-static {p0}, Lj3/lq0;->E([B)Lj3/lq0;
-
-    move-result-object p0
-
-    invoke-virtual {p1, p0}, Lcom/google/android/gms/internal/ads/h0$a;->n(Lj3/lq0;)Lcom/google/android/gms/internal/ads/h0$a;
-
-    sget-object p0, Lj3/b10;->zzln:Lj3/b10;
-
-    .line 11
-    iget-boolean v0, p1, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
-
-    if-eqz v0, :cond_1
-
-    .line 12
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/q6$b;->m()V
-
-    .line 13
-    iput-boolean v1, p1, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
-
-    .line 14
-    :cond_1
-    iget-object v0, p1, Lcom/google/android/gms/internal/ads/q6$b;->b:Lcom/google/android/gms/internal/ads/q6;
-
-    check-cast v0, Lcom/google/android/gms/internal/ads/h0;
-
-    invoke-static {v0, p0}, Lcom/google/android/gms/internal/ads/h0;->x(Lcom/google/android/gms/internal/ads/h0;Lj3/b10;)V
-
-    .line 15
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/q6$b;->i()Lj3/os0;
-
-    move-result-object p0
-
-    check-cast p0, Lcom/google/android/gms/internal/ads/q6;
-
-    check-cast p0, Lcom/google/android/gms/internal/ads/h0;
-
-    .line 16
-    invoke-virtual {p0}, Lj3/dq0;->a()[B
-
-    move-result-object p0
-
-    goto/16 :goto_6
-
-    .line 17
-    :cond_2
-    new-instance p0, Ljava/security/GeneralSecurityException;
-
-    invoke-direct {p0}, Ljava/security/GeneralSecurityException;-><init>()V
-
-    throw p0
-
-    :cond_3
-    const/4 v0, 0x0
-
-    .line 18
-    array-length v3, p0
-
-    if-gtz v3, :cond_4
-
-    goto :goto_3
-
-    .line 19
-    :cond_4
-    array-length v3, p0
-
-    const/16 v4, 0xff
-
-    add-int/2addr v3, v4
-
-    add-int/lit8 v3, v3, -0x1
-
-    div-int/2addr v3, v4
-
-    .line 20
-    new-instance v5, Ljava/util/Vector;
-
-    invoke-direct {v5}, Ljava/util/Vector;-><init>()V
-
-    const/4 v6, 0x0
-
-    :goto_1
-    if-ge v6, v3, :cond_6
-
-    mul-int/lit16 v7, v6, 0xff
-
-    .line 21
-    :try_start_0
-    array-length v8, p0
-
-    sub-int/2addr v8, v7
-
-    if-le v8, v4, :cond_5
-
-    add-int/lit16 v8, v7, 0xff
-
-    goto :goto_2
-
-    :cond_5
-    array-length v8, p0
-
-    .line 22
-    :goto_2
-    invoke-static {p0, v7, v8}, Ljava/util/Arrays;->copyOfRange([BII)[B
-
-    move-result-object v7
-
-    invoke-virtual {v5, v7}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
-    :try_end_0
-    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
-
-    add-int/lit8 v6, v6, 0x1
-
-    goto :goto_1
-
-    :catch_0
-    nop
-
-    goto :goto_3
-
-    :cond_6
-    move-object v0, v5
-
-    :goto_3
-    if-eqz v0, :cond_a
-
-    .line 23
-    invoke-virtual {v0}, Ljava/util/Vector;->size()I
-
-    move-result v3
-
-    if-nez v3, :cond_7
-
-    goto :goto_5
-
-    .line 24
-    :cond_7
-    invoke-static {}, Lcom/google/android/gms/internal/ads/h0;->A()Lcom/google/android/gms/internal/ads/h0$a;
-
-    move-result-object v3
-
-    .line 25
-    invoke-virtual {v0}, Ljava/util/Vector;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentHashMap;->entrySet()Ljava/util/Set;
 
     move-result-object v0
 
-    :goto_4
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v4
+    move-result v3
 
-    if-eqz v4, :cond_8
+    if-eqz v3, :cond_2
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    move-result-object v3
+
+    check-cast v3, Ljava/util/Map$Entry;
+
+    add-int/lit8 v2, v2, 0x1
+
+    .line 8
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
     move-result-object v4
 
-    check-cast v4, [B
+    invoke-static {v4}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
+
+    .line 9
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lj3/sh0;
+
+    invoke-interface {v4}, Lj3/sh0;->hashCode()I
+
+    const/4 v4, 0x0
+
+    .line 10
+    :goto_1
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Lj3/jh0;
+
+    invoke-virtual {v5}, Lj3/jh0;->a()I
+
+    move-result v5
+
+    if-ge v4, v5, :cond_0
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_1
+
+    .line 11
+    :cond_0
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lj3/jh0;
+
+    invoke-virtual {v4}, Lj3/jh0;->a()I
+
+    move-result v4
+
+    :goto_2
+    iget-object v5, p0, Lcom/google/android/gms/internal/ads/d1;->b:Lcom/google/android/gms/internal/ads/zzdnd;
+
+    iget v5, v5, Lcom/google/android/gms/internal/ads/zzdnd;->k:I
+
+    if-ge v4, v5, :cond_1
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_2
+
+    .line 12
+    :cond_1
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lj3/jh0;
+
+    .line 13
+    iget-object v3, v3, Lj3/jh0;->d:Lj3/di0;
+
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    goto :goto_0
+
+    .line 14
+    :cond_2
+    :goto_3
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/d1;->b:Lcom/google/android/gms/internal/ads/zzdnd;
+
+    iget v0, v0, Lcom/google/android/gms/internal/ads/zzdnd;->j:I
+
+    if-ge v2, v0, :cond_3
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_3
+
+    :cond_3
+    return-void
+.end method
+
+.method public final b(Lj3/ph0;Lj3/ci0;)V
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/ph0<",
+            "*>;",
+            "Lj3/ci0;",
+            ")V"
+        }
+    .end annotation
+
+    if-eqz p1, :cond_2
+
+    .line 1
+    invoke-static {}, Lcom/google/android/gms/internal/ads/x7;->z()Lcom/google/android/gms/internal/ads/x7$b;
+
+    move-result-object v0
+
+    .line 2
+    invoke-static {}, Lcom/google/android/gms/internal/ads/x7$a;->B()Lcom/google/android/gms/internal/ads/x7$a$a;
+
+    move-result-object v1
+
+    const/4 v2, 0x2
+
+    .line 3
+    invoke-virtual {v1, v2}, Lcom/google/android/gms/internal/ads/x7$a$a;->p(I)Lcom/google/android/gms/internal/ads/x7$a$a;
+
+    .line 4
+    invoke-static {}, Lcom/google/android/gms/internal/ads/x7$c;->A()Lcom/google/android/gms/internal/ads/x7$c$a;
+
+    move-result-object v2
+
+    iget-boolean v3, p2, Lj3/ci0;->g:Z
+
+    .line 5
+    iget-boolean v4, v2, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+
+    const/4 v5, 0x0
+
+    if-eqz v4, :cond_0
+
+    .line 6
+    invoke-virtual {v2}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
+
+    .line 7
+    iput-boolean v5, v2, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+
+    .line 8
+    :cond_0
+    iget-object v4, v2, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
+
+    check-cast v4, Lcom/google/android/gms/internal/ads/x7$c;
+
+    invoke-static {v4, v3}, Lcom/google/android/gms/internal/ads/x7$c;->z(Lcom/google/android/gms/internal/ads/x7$c;Z)V
+
+    .line 9
+    iget p2, p2, Lj3/ci0;->h:I
+
+    .line 10
+    iget-boolean v3, v2, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+
+    if-eqz v3, :cond_1
+
+    .line 11
+    invoke-virtual {v2}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
+
+    .line 12
+    iput-boolean v5, v2, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+
+    .line 13
+    :cond_1
+    iget-object v3, v2, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
+
+    check-cast v3, Lcom/google/android/gms/internal/ads/x7$c;
+
+    invoke-static {v3, p2}, Lcom/google/android/gms/internal/ads/x7$c;->y(Lcom/google/android/gms/internal/ads/x7$c;I)V
+
+    .line 14
+    invoke-virtual {v1, v2}, Lcom/google/android/gms/internal/ads/x7$a$a;->o(Lcom/google/android/gms/internal/ads/x7$c$a;)Lcom/google/android/gms/internal/ads/x7$a$a;
+
+    .line 15
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/ads/x7$b;->o(Lcom/google/android/gms/internal/ads/x7$a$a;)Lcom/google/android/gms/internal/ads/x7$b;
+
+    .line 16
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/v5$b;->j()Lj3/dt0;
+
+    move-result-object p2
+
+    check-cast p2, Lcom/google/android/gms/internal/ads/v5;
+
+    check-cast p2, Lcom/google/android/gms/internal/ads/x7;
+
+    .line 17
+    iget-object p1, p1, Lj3/ph0;->a:Lj3/ap;
+
+    .line 18
+    iget-object p1, p1, Lj3/ap;->g:Lj3/vs;
+
+    .line 19
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 20
+    new-instance v0, Lj3/e5;
+
+    invoke-direct {v0, p2}, Lj3/e5;-><init>(Ljava/lang/Object;)V
+
+    invoke-virtual {p1, v0}, Lj3/at;->E0(Lj3/ct;)V
+
+    .line 21
+    :cond_2
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/d1;->a()V
+
+    return-void
+.end method
+
+.method public final declared-synchronized c(Lj3/sh0;Lj3/ph0;)Z
+    .locals 11
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/sh0;",
+            "Lj3/ph0<",
+            "*>;)Z"
+        }
+    .end annotation
+
+    monitor-enter p0
+
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/d1;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lj3/jh0;
+
+    .line 2
+    sget-object v1, Lh1/o;->B:Lh1/o;
+
+    iget-object v1, v1, Lh1/o;->j:Lk2/c;
+
+    .line 3
+    invoke-interface {v1}, Lk2/c;->a()J
+
+    move-result-wide v1
+
+    iput-wide v1, p2, Lj3/ph0;->d:J
+
+    const/4 v1, 0x2
+
+    const/4 v2, 0x1
+
+    if-nez v0, :cond_b
+
+    .line 4
+    new-instance v0, Lj3/jh0;
+
+    iget-object v3, p0, Lcom/google/android/gms/internal/ads/d1;->b:Lcom/google/android/gms/internal/ads/zzdnd;
+
+    iget v4, v3, Lcom/google/android/gms/internal/ads/zzdnd;->k:I
+
+    iget v3, v3, Lcom/google/android/gms/internal/ads/zzdnd;->l:I
+
+    mul-int/lit16 v3, v3, 0x3e8
+
+    invoke-direct {v0, v4, v3}, Lj3/jh0;-><init>(II)V
+
+    .line 5
+    iget-object v3, p0, Lcom/google/android/gms/internal/ads/d1;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v3}, Ljava/util/concurrent/ConcurrentHashMap;->size()I
+
+    move-result v3
+
+    iget-object v4, p0, Lcom/google/android/gms/internal/ads/d1;->b:Lcom/google/android/gms/internal/ads/zzdnd;
+
+    iget v5, v4, Lcom/google/android/gms/internal/ads/zzdnd;->j:I
+
+    if-ne v3, v5, :cond_a
+
+    .line 6
+    sget-object v3, Lj3/mh0;->a:[I
+
+    iget v4, v4, Lcom/google/android/gms/internal/ads/zzdnd;->o:I
+
+    sub-int/2addr v4, v2
+
+    aget v3, v3, v4
+
+    const-wide v4, 0x7fffffffffffffffL
+
+    const/4 v6, 0x0
+
+    if-eq v3, v2, :cond_6
+
+    if-eq v3, v1, :cond_3
+
+    const/4 v4, 0x3
+
+    if-eq v3, v4, :cond_0
+
+    goto/16 :goto_3
+
+    :cond_0
+    const v3, 0x7fffffff
+
+    .line 7
+    iget-object v4, p0, Lcom/google/android/gms/internal/ads/d1;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v4}, Ljava/util/concurrent/ConcurrentHashMap;->entrySet()Ljava/util/Set;
+
+    move-result-object v4
+
+    invoke-interface {v4}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v4
+
+    :cond_1
+    :goto_0
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2
+
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/util/Map$Entry;
+
+    .line 8
+    invoke-interface {v5}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Lj3/jh0;
+
+    .line 9
+    iget-object v7, v7, Lj3/jh0;->d:Lj3/di0;
+
+    .line 10
+    iget v7, v7, Lj3/di0;->d:I
+
+    if-ge v7, v3, :cond_1
+
+    .line 11
+    invoke-interface {v5}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lj3/jh0;
+
+    .line 12
+    iget-object v3, v3, Lj3/jh0;->d:Lj3/di0;
+
+    .line 13
+    iget v3, v3, Lj3/di0;->d:I
+
+    .line 14
+    invoke-interface {v5}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v5
+
+    move-object v6, v5
+
+    check-cast v6, Lj3/sh0;
+
+    goto :goto_0
+
+    :cond_2
+    if-eqz v6, :cond_9
+
+    .line 15
+    iget-object v3, p0, Lcom/google/android/gms/internal/ads/d1;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v3, v6}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto/16 :goto_3
+
+    .line 16
+    :cond_3
+    iget-object v3, p0, Lcom/google/android/gms/internal/ads/d1;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v3}, Ljava/util/concurrent/ConcurrentHashMap;->entrySet()Ljava/util/Set;
+
+    move-result-object v3
+
+    invoke-interface {v3}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v3
+
+    :cond_4
+    :goto_1
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_5
+
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/Map$Entry;
+
+    .line 17
+    invoke-interface {v7}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Lj3/jh0;
+
+    .line 18
+    iget-object v8, v8, Lj3/jh0;->d:Lj3/di0;
+
+    .line 19
+    iget-wide v8, v8, Lj3/di0;->c:J
+
+    cmp-long v10, v8, v4
+
+    if-gez v10, :cond_4
+
+    .line 20
+    invoke-interface {v7}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lj3/jh0;
+
+    .line 21
+    iget-object v4, v4, Lj3/jh0;->d:Lj3/di0;
+
+    .line 22
+    iget-wide v4, v4, Lj3/di0;->c:J
+
+    .line 23
+    invoke-interface {v7}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Lj3/sh0;
+
+    goto :goto_1
+
+    :cond_5
+    if-eqz v6, :cond_9
+
+    .line 24
+    iget-object v3, p0, Lcom/google/android/gms/internal/ads/d1;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v3, v6}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_3
+
+    .line 25
+    :cond_6
+    iget-object v3, p0, Lcom/google/android/gms/internal/ads/d1;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v3}, Ljava/util/concurrent/ConcurrentHashMap;->entrySet()Ljava/util/Set;
+
+    move-result-object v3
+
+    invoke-interface {v3}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v3
+
+    :cond_7
+    :goto_2
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_8
+
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/Map$Entry;
 
     .line 26
-    invoke-static {v4, p1, v1}, Lcom/google/android/gms/internal/ads/d1;->b([BLjava/lang/String;Z)[B
+    invoke-interface {v7}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v8
+
+    check-cast v8, Lj3/jh0;
 
     .line 27
-    array-length v5, v4
+    iget-object v8, v8, Lj3/jh0;->d:Lj3/di0;
 
-    invoke-static {v4, v1, v5}, Lj3/lq0;->y([BII)Lj3/lq0;
+    .line 28
+    iget-wide v8, v8, Lj3/di0;->a:J
+
+    cmp-long v10, v8, v4
+
+    if-gez v10, :cond_7
+
+    .line 29
+    invoke-interface {v7}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 28
-    invoke-virtual {v3, v4}, Lcom/google/android/gms/internal/ads/h0$a;->n(Lj3/lq0;)Lcom/google/android/gms/internal/ads/h0$a;
+    check-cast v4, Lj3/jh0;
+
+    .line 30
+    iget-object v4, v4, Lj3/jh0;->d:Lj3/di0;
+
+    .line 31
+    iget-wide v4, v4, Lj3/di0;->a:J
+
+    .line 32
+    invoke-interface {v7}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Lj3/sh0;
+
+    goto :goto_2
+
+    :cond_8
+    if-eqz v6, :cond_9
+
+    .line 33
+    iget-object v3, p0, Lcom/google/android/gms/internal/ads/d1;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v3, v6}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 34
+    :cond_9
+    :goto_3
+    iget-object v3, p0, Lcom/google/android/gms/internal/ads/d1;->c:Lj3/lh0;
+
+    .line 35
+    iget v4, v3, Lj3/lh0;->c:I
+
+    add-int/2addr v4, v2
+
+    iput v4, v3, Lj3/lh0;->c:I
+
+    .line 36
+    iget-object v3, v3, Lj3/lh0;->a:Lj3/nh0;
+
+    iput-boolean v2, v3, Lj3/nh0;->h:Z
+
+    .line 37
+    :cond_a
+    iget-object v3, p0, Lcom/google/android/gms/internal/ads/d1;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v3, p1, v0}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 38
+    iget-object p1, p0, Lcom/google/android/gms/internal/ads/d1;->c:Lj3/lh0;
+
+    .line 39
+    iget v3, p1, Lj3/lh0;->b:I
+
+    add-int/2addr v3, v2
+
+    iput v3, p1, Lj3/lh0;->b:I
+
+    .line 40
+    iget-object p1, p1, Lj3/lh0;->a:Lj3/nh0;
+
+    iput-boolean v2, p1, Lj3/nh0;->g:Z
+
+    .line 41
+    :cond_b
+    iget-object p1, v0, Lj3/jh0;->d:Lj3/di0;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 42
+    sget-object v3, Lh1/o;->B:Lh1/o;
+
+    iget-object v3, v3, Lh1/o;->j:Lk2/c;
+
+    .line 43
+    invoke-interface {v3}, Lk2/c;->a()J
+
+    move-result-wide v3
+
+    iput-wide v3, p1, Lj3/di0;->c:J
+
+    .line 44
+    iget v3, p1, Lj3/di0;->d:I
+
+    add-int/2addr v3, v2
+
+    iput v3, p1, Lj3/di0;->d:I
+
+    .line 45
+    invoke-virtual {v0}, Lj3/jh0;->c()V
+
+    .line 46
+    iget-object p1, v0, Lj3/jh0;->a:Ljava/util/LinkedList;
+
+    invoke-virtual {p1}, Ljava/util/LinkedList;->size()I
+
+    move-result p1
+
+    iget v3, v0, Lj3/jh0;->b:I
+
+    const/4 v4, 0x0
+
+    if-ne p1, v3, :cond_c
+
+    const/4 p1, 0x0
 
     goto :goto_4
 
-    .line 29
-    :cond_8
-    invoke-static {p0}, Lcom/google/android/gms/internal/ads/d1;->c([B)[B
+    .line 47
+    :cond_c
+    iget-object p1, v0, Lj3/jh0;->a:Ljava/util/LinkedList;
 
-    move-result-object p0
+    invoke-virtual {p1, p2}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
 
-    invoke-static {p0}, Lj3/lq0;->E([B)Lj3/lq0;
+    const/4 p1, 0x1
 
-    move-result-object p0
+    .line 48
+    :goto_4
+    iget-object v3, p0, Lcom/google/android/gms/internal/ads/d1;->c:Lj3/lh0;
 
-    .line 30
-    iget-boolean p1, v3, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
+    .line 49
+    iget v5, v3, Lj3/lh0;->f:I
 
-    if-eqz p1, :cond_9
+    add-int/2addr v5, v2
 
-    .line 31
-    invoke-virtual {v3}, Lcom/google/android/gms/internal/ads/q6$b;->m()V
+    iput v5, v3, Lj3/lh0;->f:I
 
-    .line 32
-    iput-boolean v1, v3, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
+    .line 50
+    iget-object v5, v3, Lj3/lh0;->a:Lj3/nh0;
 
-    .line 33
-    :cond_9
-    iget-object p1, v3, Lcom/google/android/gms/internal/ads/q6$b;->b:Lcom/google/android/gms/internal/ads/q6;
+    invoke-virtual {v5}, Lj3/nh0;->clone()Ljava/lang/Object;
 
-    check-cast p1, Lcom/google/android/gms/internal/ads/h0;
+    move-result-object v5
 
-    invoke-static {p1, p0}, Lcom/google/android/gms/internal/ads/h0;->z(Lcom/google/android/gms/internal/ads/h0;Lj3/lq0;)V
+    check-cast v5, Lj3/nh0;
 
-    .line 34
-    invoke-virtual {v3}, Lcom/google/android/gms/internal/ads/q6$b;->i()Lj3/os0;
+    .line 51
+    iget-object v3, v3, Lj3/lh0;->a:Lj3/nh0;
 
-    move-result-object p0
+    .line 52
+    iput-boolean v4, v3, Lj3/nh0;->g:Z
 
-    check-cast p0, Lcom/google/android/gms/internal/ads/q6;
+    .line 53
+    iput-boolean v4, v3, Lj3/nh0;->h:Z
 
-    check-cast p0, Lcom/google/android/gms/internal/ads/h0;
+    .line 54
+    iget-object v0, v0, Lj3/jh0;->d:Lj3/di0;
 
-    invoke-virtual {p0}, Lj3/dq0;->a()[B
+    .line 55
+    iget-object v3, v0, Lj3/di0;->b:Lj3/ci0;
 
-    move-result-object p0
+    invoke-virtual {v3}, Lj3/ci0;->clone()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lj3/ci0;
+
+    .line 56
+    iget-object v0, v0, Lj3/di0;->b:Lj3/ci0;
+
+    .line 57
+    iput-boolean v4, v0, Lj3/ci0;->g:Z
+
+    .line 58
+    iput v4, v0, Lj3/ci0;->h:I
+
+    .line 59
+    invoke-static {}, Lcom/google/android/gms/internal/ads/x7;->z()Lcom/google/android/gms/internal/ads/x7$b;
+
+    move-result-object v0
+
+    .line 60
+    invoke-static {}, Lcom/google/android/gms/internal/ads/x7$a;->B()Lcom/google/android/gms/internal/ads/x7$a$a;
+
+    move-result-object v6
+
+    .line 61
+    invoke-virtual {v6, v1}, Lcom/google/android/gms/internal/ads/x7$a$a;->p(I)Lcom/google/android/gms/internal/ads/x7$a$a;
+
+    .line 62
+    invoke-static {}, Lcom/google/android/gms/internal/ads/x7$d;->B()Lcom/google/android/gms/internal/ads/x7$d$a;
+
+    move-result-object v1
+
+    iget-boolean v7, v5, Lj3/nh0;->g:Z
+
+    .line 63
+    iget-boolean v8, v1, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+
+    if-eqz v8, :cond_d
+
+    .line 64
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
+
+    .line 65
+    iput-boolean v4, v1, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+
+    .line 66
+    :cond_d
+    iget-object v8, v1, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
+
+    check-cast v8, Lcom/google/android/gms/internal/ads/x7$d;
+
+    invoke-static {v8, v7}, Lcom/google/android/gms/internal/ads/x7$d;->z(Lcom/google/android/gms/internal/ads/x7$d;Z)V
+
+    .line 67
+    iget-boolean v5, v5, Lj3/nh0;->h:Z
+
+    .line 68
+    iget-boolean v7, v1, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+
+    if-eqz v7, :cond_e
+
+    .line 69
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
+
+    .line 70
+    iput-boolean v4, v1, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+
+    .line 71
+    :cond_e
+    iget-object v7, v1, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
+
+    check-cast v7, Lcom/google/android/gms/internal/ads/x7$d;
+
+    invoke-static {v7, v5}, Lcom/google/android/gms/internal/ads/x7$d;->A(Lcom/google/android/gms/internal/ads/x7$d;Z)V
+
+    .line 72
+    iget v3, v3, Lj3/ci0;->h:I
+
+    .line 73
+    iget-boolean v5, v1, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+
+    if-eqz v5, :cond_f
+
+    .line 74
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
+
+    .line 75
+    iput-boolean v4, v1, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+
+    .line 76
+    :cond_f
+    iget-object v5, v1, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
+
+    check-cast v5, Lcom/google/android/gms/internal/ads/x7$d;
+
+    invoke-static {v5, v3}, Lcom/google/android/gms/internal/ads/x7$d;->y(Lcom/google/android/gms/internal/ads/x7$d;I)V
+
+    .line 77
+    iget-boolean v3, v6, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+
+    if-eqz v3, :cond_10
+
+    .line 78
+    invoke-virtual {v6}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
+
+    .line 79
+    iput-boolean v4, v6, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
+
+    .line 80
+    :cond_10
+    iget-object v3, v6, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
+
+    check-cast v3, Lcom/google/android/gms/internal/ads/x7$a;
+
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/v5$b;->j()Lj3/dt0;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/google/android/gms/internal/ads/v5;
+
+    check-cast v1, Lcom/google/android/gms/internal/ads/x7$d;
+
+    invoke-static {v3, v1}, Lcom/google/android/gms/internal/ads/x7$a;->A(Lcom/google/android/gms/internal/ads/x7$a;Lcom/google/android/gms/internal/ads/x7$d;)V
+
+    .line 81
+    invoke-virtual {v0, v6}, Lcom/google/android/gms/internal/ads/x7$b;->o(Lcom/google/android/gms/internal/ads/x7$a$a;)Lcom/google/android/gms/internal/ads/x7$b;
+
+    .line 82
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/v5$b;->j()Lj3/dt0;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/gms/internal/ads/v5;
+
+    check-cast v0, Lcom/google/android/gms/internal/ads/x7;
+
+    .line 83
+    iget-object p2, p2, Lj3/ph0;->a:Lj3/ap;
+
+    .line 84
+    iget-object p2, p2, Lj3/ap;->g:Lj3/vs;
+
+    .line 85
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 86
+    new-instance v1, Lj3/cr;
+
+    invoke-direct {v1, v0, v2}, Lj3/cr;-><init>(Ljava/lang/Object;I)V
+
+    invoke-virtual {p2, v1}, Lj3/at;->E0(Lj3/ct;)V
+
+    .line 87
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/d1;->a()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 88
+    monitor-exit p0
+
+    return p1
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
 
     goto :goto_6
 
-    .line 35
-    :cond_a
     :goto_5
-    sget-object p0, Lcom/google/android/gms/internal/ads/c0$d;->zzju:Lcom/google/android/gms/internal/ads/c0$d;
+    throw p1
 
-    .line 36
-    invoke-static {p0}, Lcom/google/android/gms/internal/ads/d1;->a(Lcom/google/android/gms/internal/ads/c0$d;)Lcom/google/android/gms/internal/ads/c0;
-
-    move-result-object p0
-
-    .line 37
-    invoke-virtual {p0}, Lj3/dq0;->a()[B
-
-    move-result-object p0
-
-    .line 38
-    invoke-static {p0, p1, v2}, Lcom/google/android/gms/internal/ads/d1;->b([BLjava/lang/String;Z)[B
-
-    move-result-object p0
-
-    .line 39
     :goto_6
-    invoke-static {p0, v2}, Lj3/q60;->b([BZ)Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
+    goto :goto_5
 .end method

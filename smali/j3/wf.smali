@@ -1,118 +1,184 @@
-.class public final synthetic Lj3/wf;
+.class public final Lj3/wf;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lj3/v01;
-.implements Lj3/rl0;
-.implements Lj3/vs;
-
 
 # instance fields
-.field public final a:Ljava/lang/Object;
+.field public final a:Lj3/s11;
 
-.field public final b:Ljava/lang/Object;
+.field public b:J
+
+.field public c:J
+
+.field public d:J
+
+.field public e:J
+
+.field public f:I
+
+.field public g:Z
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
-    iput-object p1, p0, Lj3/wf;->a:Ljava/lang/Object;
-
-    iput-object p2, p0, Lj3/wf;->b:Ljava/lang/Object;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    new-instance v0, Lj3/s11;
+
+    invoke-direct {v0}, Lj3/s11;-><init>()V
+
+    .line 3
+    iput-object v0, p0, Lj3/wf;->a:Lj3/s11;
+
+    const-wide/32 v0, 0xe4e1c0
+
+    .line 4
+    iput-wide v0, p0, Lj3/wf;->b:J
+
+    const-wide/32 v0, 0x1c9c380
+
+    .line 5
+    iput-wide v0, p0, Lj3/wf;->c:J
+
+    const-wide/32 v0, 0x2625a0
+
+    .line 6
+    iput-wide v0, p0, Lj3/wf;->d:J
+
+    const-wide/32 v0, 0x4c4b40
+
+    .line 7
+    iput-wide v0, p0, Lj3/wf;->e:J
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Lj3/w01;
+.method public final declared-synchronized a(JZ)Z
     .locals 4
 
+    monitor-enter p0
+
+    if-eqz p3, :cond_0
+
     .line 1
-    iget-object v0, p0, Lj3/wf;->a:Ljava/lang/Object;
+    :try_start_0
+    iget-wide v0, p0, Lj3/wf;->e:J
 
-    check-cast v0, Lj3/v01;
+    goto :goto_0
 
-    iget-object v1, p0, Lj3/wf;->b:Ljava/lang/Object;
+    :cond_0
+    iget-wide v0, p0, Lj3/wf;->d:J
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    check-cast v1, [B
+    :goto_0
+    const-wide/16 v2, 0x0
+
+    cmp-long p3, v0, v2
+
+    if-lez p3, :cond_2
+
+    cmp-long p3, p1, v0
+
+    if-ltz p3, :cond_1
+
+    goto :goto_2
+
+    :cond_1
+    const/4 p1, 0x0
 
     .line 2
-    invoke-interface {v0}, Lj3/v01;->a()Lj3/w01;
+    :goto_1
+    monitor-exit p0
 
-    move-result-object v0
+    return p1
 
-    .line 3
-    new-instance v2, Lj3/u01;
+    :cond_2
+    :goto_2
+    const/4 p1, 0x1
 
-    invoke-direct {v2, v1}, Lj3/u01;-><init>([B)V
+    goto :goto_1
 
-    .line 4
-    new-instance v3, Lj3/zf;
+    :catchall_0
+    move-exception p1
 
-    array-length v1, v1
+    monitor-exit p0
 
-    invoke-direct {v3, v2, v1, v0}, Lj3/zf;-><init>(Lj3/w01;ILj3/w01;)V
+    goto :goto_4
 
-    return-object v3
+    :goto_3
+    throw p1
+
+    :goto_4
+    goto :goto_3
 .end method
 
-.method public d(Ljava/lang/Throwable;)V
-    .locals 0
+.method public final b()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-virtual {p0, v0}, Lj3/wf;->d(Z)V
 
     return-void
 .end method
 
-.method public e(Ljava/lang/Object;)V
-    .locals 3
+.method public final c()V
+    .locals 1
+
+    const/4 v0, 0x1
 
     .line 1
-    iget-object v0, p0, Lj3/wf;->a:Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lj3/wf;->d(Z)V
 
-    check-cast v0, Lj3/di0;
+    return-void
+.end method
 
-    iget-object v1, p0, Lj3/wf;->b:Ljava/lang/Object;
+.method public final d(Z)V
+    .locals 1
 
-    check-cast v1, Ljava/lang/Throwable;
+    const/4 v0, 0x0
 
-    check-cast p1, Lj3/qi0;
+    .line 1
+    iput v0, p0, Lj3/wf;->f:I
 
     .line 2
-    iget-object v2, v0, Lj3/di0;->a:Ljava/lang/Object;
+    iput-boolean v0, p0, Lj3/wf;->g:Z
+
+    if-eqz p1, :cond_0
 
     .line 3
-    check-cast v2, Lj3/oi0;
+    iget-object p1, p0, Lj3/wf;->a:Lj3/s11;
 
     .line 4
-    iget-object v0, v0, Lj3/di0;->b:Ljava/lang/String;
+    monitor-enter p1
 
     .line 5
-    invoke-interface {p1, v2, v0, v1}, Lj3/qi0;->a(Lj3/oi0;Ljava/lang/String;Ljava/lang/Throwable;)V
+    :try_start_0
+    invoke-virtual {p1, v0}, Lj3/s11;->c(I)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    return-void
-.end method
+    .line 6
+    monitor-exit p1
 
-.method public synthetic onSuccess(Ljava/lang/Object;)V
-    .locals 2
+    goto :goto_0
 
-    .line 1
-    check-cast p1, Lj3/ch;
+    :catchall_0
+    move-exception v0
 
-    .line 2
-    iget-object v0, p0, Lj3/wf;->a:Ljava/lang/Object;
+    monitor-exit p1
 
-    check-cast v0, Ljava/lang/String;
+    throw v0
 
-    iget-object v1, p0, Lj3/wf;->b:Ljava/lang/Object;
-
-    check-cast v1, Lj3/x2;
-
-    invoke-interface {p1, v0, v1}, Lj3/ch;->g(Ljava/lang/String;Lj3/x2;)V
-
+    :cond_0
+    :goto_0
     return-void
 .end method

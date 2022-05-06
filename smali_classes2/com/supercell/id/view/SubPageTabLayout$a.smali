@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/view/SubPageTabLayout;
+.field public final synthetic g:Lcom/supercell/id/view/SubPageTabLayout;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/SubPageTabLayout;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout$a;->a:Lcom/supercell/id/view/SubPageTabLayout;
+    iput-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout$a;->g:Lcom/supercell/id/view/SubPageTabLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/SubPageTabLayout$a;->a:Lcom/supercell/id/view/SubPageTabLayout;
+    iget-object v0, p0, Lcom/supercell/id/view/SubPageTabLayout$a;->g:Lcom/supercell/id/view/SubPageTabLayout;
 
     invoke-virtual {v0}, Lcom/google/android/material/tabs/TabLayout;->getTabCount()I
 
@@ -51,23 +51,23 @@
     .line 2
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
     .line 3
-    iget-object v0, v0, Lwd/r;->v:Lqc/a;
+    iget-object v0, v0, Lvd/r;->v:Lnc/a;
 
     .line 4
-    sget-object v2, Lqc/a$a;->TAB_SWITCH:Lqc/a$a;
+    sget-object v2, Lnc/a$a;->j:Lnc/a$a;
 
-    invoke-virtual {v0, v2}, Lqc/a;->b(Lqc/a$a;)V
+    invoke-virtual {v0, v2}, Lnc/a;->b(Lnc/a$a;)V
 
     :cond_0
     const-string v0, "view"
 
     .line 5
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setSelected(Z)V
 

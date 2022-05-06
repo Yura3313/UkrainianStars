@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method public final w7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method public final x7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -80,9 +80,9 @@
     .line 7
     move-object v0, p0
 
-    check-cast v0, Lj3/a2;
+    check-cast v0, Lj3/b2;
 
-    invoke-virtual {v0, p1, p2}, Lj3/a2;->W0(Lcom/google/android/gms/internal/ads/zzaes;Ljava/lang/String;)V
+    invoke-virtual {v0, p1, p2}, Lj3/b2;->X0(Lcom/google/android/gms/internal/ads/zzaes;Ljava/lang/String;)V
 
     .line 8
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V

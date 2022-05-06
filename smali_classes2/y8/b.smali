@@ -14,13 +14,13 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Ly8/b;
+.field public static final enum g:Ly8/b;
 
-.field public static final enum PREISSUE_ID:Ly8/b;
+.field public static final enum h:Ly8/b;
 
-.field public static final enum PREISSUE_REQUEST_ID:Ly8/b;
+.field public static final enum i:Ly8/b;
 
-.field public static final enum SERVER_ID:Ly8/b;
+.field public static final synthetic j:[Ly8/b;
 
 
 # direct methods
@@ -36,7 +36,7 @@
 
     invoke-direct {v0, v1, v2}, Ly8/b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ly8/b;->SERVER_ID:Ly8/b;
+    sput-object v0, Ly8/b;->g:Ly8/b;
 
     .line 2
     new-instance v1, Ly8/b;
@@ -47,7 +47,7 @@
 
     invoke-direct {v1, v3, v4}, Ly8/b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Ly8/b;->PREISSUE_ID:Ly8/b;
+    sput-object v1, Ly8/b;->h:Ly8/b;
 
     .line 3
     new-instance v3, Ly8/b;
@@ -58,7 +58,7 @@
 
     invoke-direct {v3, v5, v6}, Ly8/b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Ly8/b;->PREISSUE_REQUEST_ID:Ly8/b;
+    sput-object v3, Ly8/b;->i:Ly8/b;
 
     const/4 v5, 0x3
 
@@ -71,12 +71,12 @@
     aput-object v3, v5, v6
 
     .line 4
-    sput-object v5, Ly8/b;->$VALUES:[Ly8/b;
+    sput-object v5, Ly8/b;->j:[Ly8/b;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;I)V
+.method public constructor <init>(Ljava/lang/String;I)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -109,7 +109,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Ly8/b;->$VALUES:[Ly8/b;
+    sget-object v0, Ly8/b;->j:[Ly8/b;
 
     invoke-virtual {v0}, [Ly8/b;->clone()Ljava/lang/Object;
 

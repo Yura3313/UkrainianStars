@@ -1,5 +1,8 @@
-.class public interface abstract Ly4/m0;
+.class public final Ly4/m0;
 .super Ljava/lang/Object;
+
+# interfaces
+.implements Ly4/o0;
 
 
 # annotations
@@ -8,16 +11,57 @@
         "<T:",
         "Ljava/lang/Object;",
         ">",
-        "Ljava/lang/Object;"
+        "Ljava/lang/Object;",
+        "Ly4/o0<",
+        "TT;>;"
     }
 .end annotation
 
 
+# instance fields
+.field public g:Ly4/o0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ly4/o0<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
 # virtual methods
-.method public abstract a()Ljava/lang/Object;
+.method public final a()Ljava/lang/Object;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
         }
     .end annotation
+
+    iget-object v0, p0, Ly4/m0;->g:Ly4/o0;
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0}, Ly4/o0;->a()Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    invoke-direct {v0}, Ljava/lang/IllegalStateException;-><init>()V
+
+    throw v0
 .end method

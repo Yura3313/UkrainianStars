@@ -7,12 +7,6 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Ll5/x$b;
-    }
-.end annotation
-
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Enum<",
@@ -24,39 +18,21 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Ll5/x;
+.field public static final enum h:Ll5/x;
 
-.field public static final enum COMPRESSED:Ll5/x;
+.field public static final enum i:Ll5/x;
 
-.field public static final COMPRESSED_VALUE:I = 0x2
+.field public static final enum j:Ll5/x;
 
-.field public static final enum DO_NOT_USE_CRUNCHY_UNCOMPRESSED:Ll5/x;
+.field public static final enum k:Ll5/x;
 
-.field public static final DO_NOT_USE_CRUNCHY_UNCOMPRESSED_VALUE:I = 0x3
+.field public static final enum l:Ll5/x;
 
-.field public static final enum UNCOMPRESSED:Ll5/x;
-
-.field public static final UNCOMPRESSED_VALUE:I = 0x1
-
-.field public static final enum UNKNOWN_FORMAT:Ll5/x;
-
-.field public static final UNKNOWN_FORMAT_VALUE:I
-
-.field public static final enum UNRECOGNIZED:Ll5/x;
-
-.field private static final internalValueMap:Lcom/google/crypto/tink/shaded/protobuf/q$b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/google/crypto/tink/shaded/protobuf/q$b<",
-            "Ll5/x;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final synthetic m:[Ll5/x;
 
 
 # instance fields
-.field private final value:I
+.field public final g:I
 
 
 # direct methods
@@ -72,7 +48,7 @@
 
     invoke-direct {v0, v1, v2, v2}, Ll5/x;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Ll5/x;->UNKNOWN_FORMAT:Ll5/x;
+    sput-object v0, Ll5/x;->h:Ll5/x;
 
     .line 2
     new-instance v1, Ll5/x;
@@ -83,7 +59,7 @@
 
     invoke-direct {v1, v3, v4, v4}, Ll5/x;-><init>(Ljava/lang/String;II)V
 
-    sput-object v1, Ll5/x;->UNCOMPRESSED:Ll5/x;
+    sput-object v1, Ll5/x;->i:Ll5/x;
 
     .line 3
     new-instance v3, Ll5/x;
@@ -94,7 +70,7 @@
 
     invoke-direct {v3, v5, v6, v6}, Ll5/x;-><init>(Ljava/lang/String;II)V
 
-    sput-object v3, Ll5/x;->COMPRESSED:Ll5/x;
+    sput-object v3, Ll5/x;->j:Ll5/x;
 
     .line 4
     new-instance v5, Ll5/x;
@@ -105,7 +81,7 @@
 
     invoke-direct {v5, v7, v8, v8}, Ll5/x;-><init>(Ljava/lang/String;II)V
 
-    sput-object v5, Ll5/x;->DO_NOT_USE_CRUNCHY_UNCOMPRESSED:Ll5/x;
+    sput-object v5, Ll5/x;->k:Ll5/x;
 
     .line 5
     new-instance v7, Ll5/x;
@@ -118,7 +94,7 @@
 
     invoke-direct {v7, v9, v10, v11}, Ll5/x;-><init>(Ljava/lang/String;II)V
 
-    sput-object v7, Ll5/x;->UNRECOGNIZED:Ll5/x;
+    sput-object v7, Ll5/x;->l:Ll5/x;
 
     const/4 v9, 0x5
 
@@ -135,19 +111,12 @@
     aput-object v7, v9, v10
 
     .line 6
-    sput-object v9, Ll5/x;->$VALUES:[Ll5/x;
-
-    .line 7
-    new-instance v0, Ll5/x$a;
-
-    invoke-direct {v0}, Ll5/x$a;-><init>()V
-
-    sput-object v0, Ll5/x;->internalValueMap:Lcom/google/crypto/tink/shaded/protobuf/q$b;
+    sput-object v9, Ll5/x;->m:[Ll5/x;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;II)V
+.method public constructor <init>(Ljava/lang/String;II)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -159,12 +128,12 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput p3, p0, Ll5/x;->value:I
+    iput p3, p0, Ll5/x;->g:I
 
     return-void
 .end method
 
-.method public static forNumber(I)Ll5/x;
+.method public static a(I)Ll5/x;
     .locals 1
 
     if-eqz p0, :cond_3
@@ -187,64 +156,25 @@
 
     .line 1
     :cond_0
-    sget-object p0, Ll5/x;->DO_NOT_USE_CRUNCHY_UNCOMPRESSED:Ll5/x;
+    sget-object p0, Ll5/x;->k:Ll5/x;
 
     return-object p0
 
     .line 2
     :cond_1
-    sget-object p0, Ll5/x;->COMPRESSED:Ll5/x;
+    sget-object p0, Ll5/x;->j:Ll5/x;
 
     return-object p0
 
     .line 3
     :cond_2
-    sget-object p0, Ll5/x;->UNCOMPRESSED:Ll5/x;
+    sget-object p0, Ll5/x;->i:Ll5/x;
 
     return-object p0
 
     .line 4
     :cond_3
-    sget-object p0, Ll5/x;->UNKNOWN_FORMAT:Ll5/x;
-
-    return-object p0
-.end method
-
-.method public static internalGetValueMap()Lcom/google/crypto/tink/shaded/protobuf/q$b;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lcom/google/crypto/tink/shaded/protobuf/q$b<",
-            "Ll5/x;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    sget-object v0, Ll5/x;->internalValueMap:Lcom/google/crypto/tink/shaded/protobuf/q$b;
-
-    return-object v0
-.end method
-
-.method public static internalGetVerifier()Lcom/google/crypto/tink/shaded/protobuf/q$c;
-    .locals 1
-
-    .line 1
-    sget-object v0, Ll5/x$b;->a:Lcom/google/crypto/tink/shaded/protobuf/q$c;
-
-    return-object v0
-.end method
-
-.method public static valueOf(I)Ll5/x;
-    .locals 0
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    .line 2
-    invoke-static {p0}, Ll5/x;->forNumber(I)Ll5/x;
-
-    move-result-object p0
+    sget-object p0, Ll5/x;->h:Ll5/x;
 
     return-object p0
 .end method
@@ -268,7 +198,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Ll5/x;->$VALUES:[Ll5/x;
+    sget-object v0, Ll5/x;->m:[Ll5/x;
 
     invoke-virtual {v0}, [Ll5/x;->clone()Ljava/lang/Object;
 
@@ -281,16 +211,16 @@
 
 
 # virtual methods
-.method public final getNumber()I
+.method public final b()I
     .locals 2
 
     .line 1
-    sget-object v0, Ll5/x;->UNRECOGNIZED:Ll5/x;
+    sget-object v0, Ll5/x;->l:Ll5/x;
 
     if-eq p0, v0, :cond_0
 
     .line 2
-    iget v0, p0, Ll5/x;->value:I
+    iget v0, p0, Ll5/x;->g:I
 
     return v0
 

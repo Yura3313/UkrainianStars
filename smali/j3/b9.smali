@@ -11,7 +11,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/internal/ads/zzavc;",
+        "Lcom/google/android/gms/internal/ads/zzaue;",
         ">;"
     }
 .end annotation
@@ -39,7 +39,7 @@
 
     const/4 v1, 0x0
 
-    move-object v2, v1
+    const/4 v2, 0x0
 
     .line 2
     :goto_0
@@ -58,11 +58,11 @@
 
     and-int/2addr v4, v3
 
-    const/4 v5, 0x1
+    const/4 v5, 0x2
 
     if-eq v4, v5, :cond_1
 
-    const/4 v5, 0x2
+    const/4 v5, 0x3
 
     if-eq v4, v5, :cond_0
 
@@ -73,9 +73,9 @@
 
     .line 5
     :cond_0
-    invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
 
-    move-result-object v2
+    move-result v2
 
     goto :goto_0
 
@@ -92,9 +92,9 @@
     invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
 
     .line 8
-    new-instance p1, Lcom/google/android/gms/internal/ads/zzavc;
+    new-instance p1, Lcom/google/android/gms/internal/ads/zzaue;
 
-    invoke-direct {p1, v1, v2}, Lcom/google/android/gms/internal/ads/zzavc;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p1, v1, v2}, Lcom/google/android/gms/internal/ads/zzaue;-><init>(Ljava/lang/String;I)V
 
     return-object p1
 .end method
@@ -103,7 +103,7 @@
     .locals 0
 
     .line 1
-    new-array p1, p1, [Lcom/google/android/gms/internal/ads/zzavc;
+    new-array p1, p1, [Lcom/google/android/gms/internal/ads/zzaue;
 
     return-object p1
 .end method

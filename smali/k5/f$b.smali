@@ -95,7 +95,7 @@
     iget-object v1, v0, Ld5/p$a;->d:Ll5/f1;
 
     .line 10
-    sget-object v2, Ll5/f1;->RAW:Ll5/f1;
+    sget-object v2, Ll5/f1;->k:Ll5/f1;
 
     invoke-virtual {v1, v2}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
 
@@ -170,7 +170,7 @@
 
     const-string p2, "More PRFs than expected in KeyTypeManager for key "
 
-    invoke-static {p2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
@@ -194,7 +194,7 @@
 
     const-string p2, "Key "
 
-    invoke-static {p2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
@@ -204,7 +204,7 @@
     const-string v1, " has non raw prefix type"
 
     .line 25
-    invoke-static {p2, v0, v1}, Landroid/support/v4/media/d;->b(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, v0, v1}, Landroid/support/v4/media/d;->a(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
+.field public final g:Ljava/lang/Object;
 
-.field public volatile b:Lcom/google/android/gms/internal/ads/zzyl;
+.field public volatile h:Lcom/google/android/gms/internal/ads/zzyl;
 
 
 # direct methods
@@ -21,14 +21,14 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzano;->a:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzano;->g:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final A2(Lcom/google/android/gms/internal/ads/zzyl;)V
+.method public final B2(Lcom/google/android/gms/internal/ads/zzyl;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -37,13 +37,13 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzano;->a:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzano;->g:Ljava/lang/Object;
 
     monitor-enter v0
 
     .line 2
     :try_start_0
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzano;->b:Lcom/google/android/gms/internal/ads/zzyl;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzano;->h:Lcom/google/android/gms/internal/ads/zzyl;
 
     .line 3
     monitor-exit v0
@@ -60,7 +60,7 @@
     throw p1
 .end method
 
-.method public final C5()Lcom/google/android/gms/internal/ads/zzyl;
+.method public final D5()Lcom/google/android/gms/internal/ads/zzyl;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -69,13 +69,13 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzano;->a:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzano;->g:Ljava/lang/Object;
 
     monitor-enter v0
 
     .line 2
     :try_start_0
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzano;->b:Lcom/google/android/gms/internal/ads/zzyl;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzano;->h:Lcom/google/android/gms/internal/ads/zzyl;
 
     monitor-exit v0
 
@@ -92,7 +92,7 @@
     throw v1
 .end method
 
-.method public final F6()F
+.method public final G6()F
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -108,7 +108,7 @@
     throw v0
 .end method
 
-.method public final M2(Z)V
+.method public final N2(Z)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -124,7 +124,7 @@
     throw p1
 .end method
 
-.method public final T5()Z
+.method public final U5()Z
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -140,7 +140,7 @@
     throw v0
 .end method
 
-.method public final d0()Z
+.method public final e0()Z
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -172,23 +172,7 @@
     throw v0
 .end method
 
-.method public final o1()Z
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Landroid/os/RemoteException;
-
-    invoke-direct {v0}, Landroid/os/RemoteException;-><init>()V
-
-    throw v0
-.end method
-
-.method public final p1()F
+.method public final p1()Z
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -236,6 +220,22 @@
     throw v0
 .end method
 
+.method public final q1()F
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Landroid/os/RemoteException;
+
+    invoke-direct {v0}, Landroid/os/RemoteException;-><init>()V
+
+    throw v0
+.end method
+
 .method public final stop()V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
@@ -252,7 +252,7 @@
     throw v0
 .end method
 
-.method public final w4()F
+.method public final x4()F
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {

@@ -3,25 +3,32 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Landroid/os/Parcelable$Creator;
+.implements Ljava/lang/Runnable;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/internal/ads/zzjn;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final synthetic g:Ljava/lang/String;
+
+.field public final synthetic h:J
+
+.field public final synthetic i:J
+
+.field public final synthetic j:Lj3/yf;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lj3/yf;Ljava/lang/String;JJ)V
     .locals 0
 
     .line 1
+    iput-object p1, p0, Lj3/mx0;->j:Lj3/yf;
+
+    iput-object p2, p0, Lj3/mx0;->g:Ljava/lang/String;
+
+    iput-wide p3, p0, Lj3/mx0;->h:J
+
+    iput-wide p5, p0, Lj3/mx0;->i:J
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,22 +36,27 @@
 
 
 # virtual methods
-.method public final synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 1
+.method public final run()V
+    .locals 7
 
     .line 1
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzjn;
+    iget-object v0, p0, Lj3/mx0;->j:Lj3/yf;
 
-    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzjn;-><init>(Landroid/os/Parcel;)V
+    .line 2
+    iget-object v0, v0, Lj3/yf;->h:Ljava/lang/Object;
 
-    return-object v0
-.end method
+    move-object v1, v0
 
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
+    check-cast v1, Lj3/kx0;
 
-    .line 1
-    new-array p1, p1, [Lcom/google/android/gms/internal/ads/zzjn;
+    .line 3
+    iget-object v2, p0, Lj3/mx0;->g:Ljava/lang/String;
 
-    return-object p1
+    iget-wide v3, p0, Lj3/mx0;->h:J
+
+    iget-wide v5, p0, Lj3/mx0;->i:J
+
+    invoke-interface/range {v1 .. v6}, Lj3/kx0;->b(Ljava/lang/String;JJ)V
+
+    return-void
 .end method

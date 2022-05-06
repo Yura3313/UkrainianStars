@@ -22,7 +22,7 @@
         "Lke/p<",
         "Ljava/lang/String;",
         "Ljava/lang/Throwable;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
@@ -61,7 +61,7 @@
 
     invoke-virtual {p0, p1, p2}, Lcom/kakao/sdk/user/UserApiClient$loginWithKakaoTalk$1;->invoke(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method
@@ -102,7 +102,7 @@
     return-void
 
     :cond_1
-    invoke-static {}, Ly4/x;->j()V
+    invoke-static {}, Ls3/b;->g()V
 
     throw v0
 .end method

@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public constructor <init>()V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 1
@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
+.method public a(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
     .locals 9
 
     const-string v0, "HmacSHA256"
@@ -131,7 +131,7 @@
     if-ne p3, v2, :cond_2
 
     .line 12
-    invoke-static {v4}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v4}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
@@ -149,15 +149,15 @@
 
     move-result-object v1
 
-    new-array v3, v3, [Lz9/a;
+    new-array v3, v3, [Ly9/a;
 
-    invoke-static {v5, v1, v0, v3}, Lce/z;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v5, v1, v0, v3}, Lie/a;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     goto :goto_1
 
     .line 13
     :cond_2
-    invoke-static {v4}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v4}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
@@ -175,7 +175,7 @@
 
     move-result-object v1
 
-    invoke-static {v5, v1, v0}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v5, v1, v0}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_1
     add-int/2addr p3, v2

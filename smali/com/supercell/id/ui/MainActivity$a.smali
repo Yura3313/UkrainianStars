@@ -30,7 +30,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_0
 

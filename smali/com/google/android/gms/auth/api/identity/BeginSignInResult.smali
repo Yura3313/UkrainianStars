@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field public final a:Landroid/app/PendingIntent;
+.field public final g:Landroid/app/PendingIntent;
 
 
 # direct methods
@@ -42,7 +42,7 @@
     if-eqz p1, :cond_0
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInResult;->a:Landroid/app/PendingIntent;
+    iput-object p1, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInResult;->g:Landroid/app/PendingIntent;
 
     return-void
 
@@ -72,7 +72,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInResult;->a:Landroid/app/PendingIntent;
+    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/BeginSignInResult;->g:Landroid/app/PendingIntent;
 
     const/4 v3, 0x0
 

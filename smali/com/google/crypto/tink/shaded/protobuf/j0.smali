@@ -7,7 +7,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/google/crypto/tink/shaded/protobuf/k0<",
-        "Lcom/google/crypto/tink/shaded/protobuf/m$b<",
+        "Lcom/google/crypto/tink/shaded/protobuf/m$a<",
         "Ljava/lang/Object;",
         ">;",
         "Ljava/lang/Object;",
@@ -34,7 +34,7 @@
     .locals 3
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/k0;->i:Z
+    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/k0;->j:Z
 
     if-nez v0, :cond_3
 
@@ -58,9 +58,9 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/google/crypto/tink/shaded/protobuf/m$b;
+    check-cast v2, Lcom/google/crypto/tink/shaded/protobuf/m$a;
 
-    invoke-interface {v2}, Lcom/google/crypto/tink/shaded/protobuf/m$b;->h()Z
+    invoke-interface {v2}, Lcom/google/crypto/tink/shaded/protobuf/m$a;->k()Z
 
     move-result v2
 
@@ -114,9 +114,9 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/google/crypto/tink/shaded/protobuf/m$b;
+    check-cast v2, Lcom/google/crypto/tink/shaded/protobuf/m$a;
 
-    invoke-interface {v2}, Lcom/google/crypto/tink/shaded/protobuf/m$b;->h()Z
+    invoke-interface {v2}, Lcom/google/crypto/tink/shaded/protobuf/m$a;->k()Z
 
     move-result v2
 

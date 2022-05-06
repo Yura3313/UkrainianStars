@@ -2,38 +2,114 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lj3/rv0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj3/rv0<",
+        "Lcom/google/android/gms/internal/ads/c1;",
+        ">;"
+    }
+.end annotation
+
 
 # instance fields
-.field public final a:Ljava/util/List;
+.field public final a:Lj3/vv0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
+            "Lj3/vv0<",
+            "Landroid/content/Context;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final b:Ljava/lang/String;
+.field public final b:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final c:I
+.field public final c:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/fj;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final d:Ljava/lang/String;
+.field public final d:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/xf0<",
+            "Lj3/fz;",
+            "Lj3/cz;",
+            ">;>;"
+        }
+    .end annotation
+.end field
 
-.field public final e:I
+.field public final e:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/bg0;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final f:J
+.field public final f:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/tg0;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Landroid/util/JsonReader;)V
-    .locals 9
-    .annotation system Ldalvik/annotation/Throws;
+.method public constructor <init>(Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
         value = {
-            Ljava/lang/IllegalStateException;,
-            Ljava/io/IOException;,
-            Lorg/json/JSONException;,
-            Ljava/lang/NumberFormatException;
+            "(",
+            "Lj3/vv0<",
+            "Landroid/content/Context;",
+            ">;",
+            "Lj3/vv0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/fj;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/xf0<",
+            "Lj3/fz;",
+            "Lj3/cz;",
+            ">;>;",
+            "Lj3/vv0<",
+            "Lj3/bg0;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/yg0;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/tg0;",
+            ">;)V"
         }
     .end annotation
 
@@ -41,168 +117,104 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
-
-    move-result-object v0
+    iput-object p1, p0, Lj3/fg0;->a:Lj3/vv0;
 
     .line 3
-    invoke-virtual {p1}, Landroid/util/JsonReader;->beginObject()V
-
-    const/4 v1, 0x0
-
-    const-string v2, ""
-
-    const-wide/16 v3, 0x0
-
-    move-wide v5, v3
-
-    move-object v3, v2
-
-    move-object v4, v3
-
-    const/4 v2, 0x0
+    iput-object p2, p0, Lj3/fg0;->b:Lj3/vv0;
 
     .line 4
-    :goto_0
-    invoke-virtual {p1}, Landroid/util/JsonReader;->hasNext()Z
-
-    move-result v7
-
-    if-eqz v7, :cond_6
+    iput-object p3, p0, Lj3/fg0;->c:Lj3/vv0;
 
     .line 5
-    invoke-virtual {p1}, Landroid/util/JsonReader;->nextName()Ljava/lang/String;
-
-    move-result-object v7
-
-    const-string v8, "nofill_urls"
+    iput-object p4, p0, Lj3/fg0;->d:Lj3/vv0;
 
     .line 6
-    invoke-virtual {v8, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v8
-
-    if-eqz v8, :cond_0
+    iput-object p5, p0, Lj3/fg0;->e:Lj3/vv0;
 
     .line 7
-    invoke-static {p1}, Lj3/jc;->b(Landroid/util/JsonReader;)Ljava/util/List;
+    iput-object p7, p0, Lj3/fg0;->f:Lj3/vv0;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 9
+
+    .line 1
+    iget-object v0, p0, Lj3/fg0;->a:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    goto :goto_0
+    move-object v2, v0
 
-    :cond_0
-    const-string v8, "refresh_interval"
+    check-cast v2, Landroid/content/Context;
 
-    .line 8
-    invoke-virtual {v8, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    iget-object v0, p0, Lj3/fg0;->b:Lj3/vv0;
 
-    move-result v8
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    if-eqz v8, :cond_1
+    move-result-object v0
 
-    .line 9
-    invoke-virtual {p1}, Landroid/util/JsonReader;->nextInt()I
+    move-object v3, v0
 
-    move-result v1
+    check-cast v3, Ljava/util/concurrent/Executor;
 
-    goto :goto_0
+    iget-object v0, p0, Lj3/fg0;->c:Lj3/vv0;
 
-    :cond_1
-    const-string v8, "gws_query_id"
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    .line 10
-    invoke-virtual {v8, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result-object v0
 
-    move-result v8
+    move-object v4, v0
 
-    if-eqz v8, :cond_2
+    check-cast v4, Lj3/fj;
 
-    .line 11
-    invoke-virtual {p1}, Landroid/util/JsonReader;->nextString()Ljava/lang/String;
+    iget-object v0, p0, Lj3/fg0;->d:Lj3/vv0;
 
-    move-result-object v3
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    goto :goto_0
+    move-result-object v0
 
-    :cond_2
-    const-string v8, "analytics_query_ad_event_id"
+    move-object v5, v0
 
-    .line 12
-    invoke-virtual {v8, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    check-cast v5, Lj3/xf0;
 
-    move-result v8
+    iget-object v0, p0, Lj3/fg0;->e:Lj3/vv0;
 
-    if-eqz v8, :cond_3
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    .line 13
-    invoke-virtual {p1}, Landroid/util/JsonReader;->nextString()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object v4
+    move-object v6, v0
 
-    goto :goto_0
+    check-cast v6, Lj3/bg0;
 
-    :cond_3
-    const-string v8, "response_code"
+    .line 2
+    new-instance v7, Lj3/yg0;
 
-    .line 14
-    invoke-virtual {v8, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-direct {v7}, Lj3/yg0;-><init>()V
 
-    move-result v8
+    .line 3
+    iget-object v0, p0, Lj3/fg0;->f:Lj3/vv0;
 
-    if-eqz v8, :cond_4
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    .line 15
-    invoke-virtual {p1}, Landroid/util/JsonReader;->nextInt()I
+    move-result-object v0
 
-    move-result v2
+    move-object v8, v0
 
-    goto :goto_0
+    check-cast v8, Lj3/tg0;
 
-    :cond_4
-    const-string v8, "latency"
+    .line 4
+    new-instance v0, Lcom/google/android/gms/internal/ads/c1;
 
-    .line 16
-    invoke-virtual {v8, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-object v1, v0
 
-    move-result v7
+    invoke-direct/range {v1 .. v8}, Lcom/google/android/gms/internal/ads/c1;-><init>(Landroid/content/Context;Ljava/util/concurrent/Executor;Lj3/fj;Lj3/xf0;Lj3/bg0;Lj3/yg0;Lj3/tg0;)V
 
-    if-eqz v7, :cond_5
-
-    .line 17
-    invoke-virtual {p1}, Landroid/util/JsonReader;->nextLong()J
-
-    move-result-wide v5
-
-    goto :goto_0
-
-    .line 18
-    :cond_5
-    invoke-virtual {p1}, Landroid/util/JsonReader;->skipValue()V
-
-    goto :goto_0
-
-    .line 19
-    :cond_6
-    invoke-virtual {p1}, Landroid/util/JsonReader;->endObject()V
-
-    .line 20
-    iput-object v0, p0, Lj3/fg0;->a:Ljava/util/List;
-
-    .line 21
-    iput v1, p0, Lj3/fg0;->c:I
-
-    .line 22
-    iput-object v3, p0, Lj3/fg0;->b:Ljava/lang/String;
-
-    .line 23
-    iput-object v4, p0, Lj3/fg0;->d:Ljava/lang/String;
-
-    .line 24
-    iput v2, p0, Lj3/fg0;->e:I
-
-    .line 25
-    iput-wide v5, p0, Lj3/fg0;->f:J
-
-    return-void
+    return-object v0
 .end method

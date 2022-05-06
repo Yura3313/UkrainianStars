@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic a:Lu/c$c;
+.field public final synthetic g:Lu/c$c;
 
-.field public final synthetic b:Ljava/lang/Object;
+.field public final synthetic h:Ljava/lang/Object;
 
 
 # direct methods
@@ -28,9 +28,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lu/c$a;->a:Lu/c$c;
+    iput-object p1, p0, Lu/c$a;->g:Lu/c$c;
 
-    iput-object p2, p0, Lu/c$a;->b:Ljava/lang/Object;
+    iput-object p2, p0, Lu/c$a;->h:Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,11 +43,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lu/c$a;->a:Lu/c$c;
+    iget-object v0, p0, Lu/c$a;->g:Lu/c$c;
 
-    iget-object v1, p0, Lu/c$a;->b:Ljava/lang/Object;
+    iget-object v1, p0, Lu/c$a;->h:Ljava/lang/Object;
 
-    iput-object v1, v0, Lu/c$c;->a:Ljava/lang/Object;
+    iput-object v1, v0, Lu/c$c;->g:Ljava/lang/Object;
 
     return-void
 .end method

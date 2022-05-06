@@ -30,9 +30,9 @@
 
 
 # instance fields
-.field public final a:Z
+.field public final g:Z
 
-.field public final b:Ljava/lang/Class;
+.field public final h:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -43,7 +43,7 @@
     .end annotation
 .end field
 
-.field public final h:Lcom/supercell/id/model/IdSystem;
+.field public final i:Lcom/supercell/id/model/IdSystem;
 
 
 # direct methods
@@ -80,17 +80,17 @@
     .line 5
     invoke-direct {p0}, Lcom/supercell/id/ui/BackStack$Entry;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->h:Lcom/supercell/id/model/IdSystem;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdSystem;
 
     const/4 p1, 0x1
 
     .line 6
-    iput-boolean p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->a:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->g:Z
 
     .line 7
     const-class p1, Lcom/supercell/id/ui/game/donate/DonateFragment;
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->b:Ljava/lang/Class;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->h:Ljava/lang/Class;
 
     return-void
 .end method
@@ -101,24 +101,24 @@
     .line 1
     invoke-direct {p0}, Lcom/supercell/id/ui/BackStack$Entry;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->h:Lcom/supercell/id/model/IdSystem;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdSystem;
 
     const/4 p1, 0x1
 
     .line 2
-    iput-boolean p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->a:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->g:Z
 
     .line 3
     const-class p1, Lcom/supercell/id/ui/game/donate/DonateFragment;
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->b:Ljava/lang/Class;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->h:Ljava/lang/Class;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public A(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+.method public B(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -137,13 +137,13 @@
     const-string v0, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0}, Lsc/i;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
+    invoke-static {p1, v0}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    const-class p1, Luc/e0;
+    const-class p1, Lrc/f0;
 
     goto :goto_0
 
@@ -153,21 +153,21 @@
 
     move-result-object p1
 
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1}, Landroidx/savedstate/d;->r(Landroid/content/res/Resources;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->j(Landroid/content/res/Resources;)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    const-class p1, Luc/k0;
+    const-class p1, Lrc/l0;
 
     goto :goto_0
 
     .line 3
     :cond_1
-    const-class p1, Luc/d0;
+    const-class p1, Lrc/e0;
 
     :goto_0
     return-object p1
@@ -176,14 +176,14 @@
     const-string p1, "mainActivity"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public D(Lcom/supercell/id/ui/MainActivity;III)I
+.method public E(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 0
 
     if-eqz p1, :cond_1
@@ -195,9 +195,9 @@
 
     const-string p2, "mainActivity.resources"
 
-    invoke-static {p1, p2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1}, Landroidx/savedstate/d;->r(Landroid/content/res/Resources;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->j(Landroid/content/res/Resources;)Z
 
     move-result p1
 
@@ -206,12 +206,12 @@
     const/16 p1, 0x40
 
     .line 2
-    invoke-static {p1}, Lc5/i;->c(I)F
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result p1
 
     .line 3
-    invoke-static {p1}, Lc2/n0;->e(F)I
+    invoke-static {p1}, Lb5/m;->r(F)I
 
     move-result p1
 
@@ -221,12 +221,12 @@
     const/16 p1, 0x96
 
     .line 4
-    invoke-static {p1}, Lc5/i;->c(I)F
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result p1
 
     .line 5
-    invoke-static {p1}, Lc2/n0;->e(F)I
+    invoke-static {p1}, Lb5/m;->r(F)I
 
     move-result p1
 
@@ -239,7 +239,7 @@
     const-string p1, "mainActivity"
 
     .line 6
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -252,7 +252,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    invoke-static {p2, p3, p4}, Luc/e0;->q1(III)I
+    invoke-static {p2, p3, p4}, Lrc/f0;->q1(III)I
 
     move-result p1
 
@@ -262,14 +262,14 @@
     const-string p1, "mainActivity"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public U(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+.method public T(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -278,7 +278,7 @@
             ")",
             "Ljava/lang/Class<",
             "+",
-            "Luc/g1;",
+            "Lrc/g1;",
             ">;"
         }
     .end annotation
@@ -288,20 +288,20 @@
     const-string v0, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0}, Lsc/i;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
+    invoke-static {p1, v0}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
     .line 2
-    const-class p1, Luc/z;
+    const-class p1, Lrc/a0;
 
     goto :goto_0
 
     .line 3
     :cond_0
-    const-class p1, Luc/a;
+    const-class p1, Lrc/a;
 
     :goto_0
     return-object p1
@@ -310,7 +310,7 @@
     const-string p1, "mainActivity"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -336,11 +336,11 @@
 
     check-cast p1, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;
 
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->h:Lcom/supercell/id/model/IdSystem;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdSystem;
 
-    iget-object p1, p1, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->h:Lcom/supercell/id/model/IdSystem;
+    iget-object p1, p1, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdSystem;
 
-    invoke-static {v0, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -363,7 +363,7 @@
 .method public hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->h:Lcom/supercell/id/model/IdSystem;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdSystem;
 
     if-eqz v0, :cond_0
 
@@ -380,7 +380,7 @@
     return v0
 .end method
 
-.method public j()Ljava/lang/Class;
+.method public i()Ljava/lang/Class;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -393,18 +393,18 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->b:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->h:Ljava/lang/Class;
 
     return-object v0
 .end method
 
-.method public m0(Lcom/supercell/id/ui/MainActivity;III)I
+.method public k0(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 0
 
     if-eqz p1, :cond_0
 
     .line 1
-    invoke-static {p2, p3, p4}, Luc/e0;->s1(III)I
+    invoke-static {p2, p3, p4}, Lrc/f0;->s1(III)I
 
     move-result p1
 
@@ -414,7 +414,43 @@
     const-string p1, "mainActivity"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public t()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->g:Z
+
+    return v0
+.end method
+
+.method public t0(Lcom/supercell/id/ui/MainActivity;)Z
+    .locals 1
+
+    if-eqz p1, :cond_0
+
+    const-string v0, "mainActivity.resources"
+
+    .line 1
+    invoke-static {p1, v0}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
+
+    move-result p1
+
+    xor-int/lit8 p1, p1, 0x1
+
+    return p1
+
+    :cond_0
+    const-string p1, "mainActivity"
+
+    .line 2
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -426,11 +462,11 @@
 
     const-string v0, "BackStackEntry(system="
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->h:Lcom/supercell/id/model/IdSystem;
+    iget-object v1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdSystem;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -445,49 +481,13 @@
     return-object v0
 .end method
 
-.method public u0(Lcom/supercell/id/ui/MainActivity;)Z
-    .locals 1
-
-    if-eqz p1, :cond_0
-
-    const-string v0, "mainActivity.resources"
-
-    .line 1
-    invoke-static {p1, v0}, Lsc/i;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
-
-    move-result p1
-
-    xor-int/lit8 p1, p1, 0x1
-
-    return p1
-
-    :cond_0
-    const-string p1, "mainActivity"
-
-    .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public w()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->a:Z
-
-    return v0
-.end method
-
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
     if-eqz p1, :cond_0
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->h:Lcom/supercell/id/model/IdSystem;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdSystem;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
@@ -497,7 +497,7 @@
     const-string p1, "dest"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

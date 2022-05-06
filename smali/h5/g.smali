@@ -3,7 +3,7 @@
 .source "RegistryEciesAeadHkdfDemHelper.java"
 
 # interfaces
-.implements Lp5/p;
+.implements Lp5/q;
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-virtual {p1}, Ll5/x0;->x()Ljava/lang/String;
+    invoke-virtual {p1}, Ll5/x0;->w()Ljava/lang/String;
 
     move-result-object v0
 
@@ -34,7 +34,7 @@
 
     .line 4
     :try_start_0
-    invoke-virtual {p1}, Ll5/x0;->y()Lm5/c;
+    invoke-virtual {p1}, Ll5/x0;->x()Lm5/c;
 
     move-result-object v0
 
@@ -43,7 +43,7 @@
     move-result-object v1
 
     .line 5
-    invoke-static {v0, v1}, Ll5/s;->v(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/s;
+    invoke-static {v0, v1}, Ll5/s;->u(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/s;
 
     .line 6
     invoke-static {p1}, Ld5/y;->e(Ll5/x0;)Lcom/google/crypto/tink/shaded/protobuf/a0;
@@ -80,7 +80,7 @@
 
     .line 9
     :try_start_1
-    invoke-virtual {p1}, Ll5/x0;->y()Lm5/c;
+    invoke-virtual {p1}, Ll5/x0;->x()Lm5/c;
 
     move-result-object v0
 
@@ -89,7 +89,7 @@
     move-result-object v1
 
     .line 10
-    invoke-static {v0, v1}, Ll5/e;->u(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/e;
+    invoke-static {v0, v1}, Ll5/e;->t(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/e;
 
     move-result-object v0
 
@@ -101,14 +101,14 @@
     check-cast p1, Ll5/d;
 
     .line 12
-    invoke-virtual {v0}, Ll5/e;->s()Ll5/j;
+    invoke-virtual {v0}, Ll5/e;->r()Ll5/j;
 
     move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 13
-    invoke-virtual {v0}, Ll5/e;->t()Ll5/t0;
+    invoke-virtual {v0}, Ll5/e;->s()Ll5/t0;
 
     move-result-object p1
 
@@ -137,7 +137,7 @@
 
     const-string v1, "unsupported AEAD DEM key type: "
 
-    invoke-static {v1, v0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

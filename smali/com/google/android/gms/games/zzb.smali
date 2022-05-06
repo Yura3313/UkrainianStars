@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final i:Lb3/b;
+.field public final j:Lb3/b;
 
 
 # direct methods
@@ -26,14 +26,22 @@
     invoke-direct {p0, p1, p2}, Lu2/n;-><init>(Lcom/google/android/gms/common/data/DataHolder;I)V
 
     .line 2
-    iput-object p3, p0, Lcom/google/android/gms/games/zzb;->i:Lb3/b;
+    iput-object p3, p0, Lcom/google/android/gms/games/zzb;->j:Lb3/b;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic c2()Ljava/lang/Object;
+.method public final describeContents()I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final synthetic e2()Ljava/lang/Object;
     .locals 1
 
     .line 1
@@ -44,19 +52,11 @@
     return-object v0
 .end method
 
-.method public final describeContents()I
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
 .method public final equals(Ljava/lang/Object;)Z
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/google/android/gms/games/zza;->y2(Lcom/google/android/gms/games/CurrentPlayerInfo;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lcom/google/android/gms/games/zza;->A2(Lcom/google/android/gms/games/CurrentPlayerInfo;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -67,18 +67,18 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/zza;->x2(Lcom/google/android/gms/games/CurrentPlayerInfo;)I
+    invoke-static {p0}, Lcom/google/android/gms/games/zza;->z2(Lcom/google/android/gms/games/CurrentPlayerInfo;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final p2()I
+.method public final r2()I
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/zzb;->i:Lb3/b;
+    iget-object v0, p0, Lcom/google/android/gms/games/zzb;->j:Lb3/b;
 
     iget-object v0, v0, Lb3/b;->K:Ljava/lang/String;
 
@@ -95,7 +95,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/zza;->z2(Lcom/google/android/gms/games/CurrentPlayerInfo;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/android/gms/games/zza;->B2(Lcom/google/android/gms/games/CurrentPlayerInfo;)Ljava/lang/String;
 
     move-result-object v0
 

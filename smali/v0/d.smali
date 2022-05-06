@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public abstract b(Landroid/view/ViewGroup;Landroid/view/View;)V
+.method public abstract a(Landroid/view/ViewGroup;Landroid/view/View;)V
 .end method
 
 .method public abstract setVisibility(I)V

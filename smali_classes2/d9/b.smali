@@ -1,5 +1,5 @@
 .class public Ld9/b;
-.super Ly7/g;
+.super Lz7/g;
 .source "ConversationSetupVM.java"
 
 
@@ -14,7 +14,7 @@
     .line 1
     iput-object p1, p0, Ld9/b;->b:Ld9/e;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -28,7 +28,7 @@
     iget-object v0, p0, Ld9/b;->b:Ld9/e;
 
     .line 2
-    iget-object v0, v0, Ld9/e;->f:Lp8/a;
+    iget-object v0, v0, Ld9/e;->f:Lq8/a;
 
     if-eqz v0, :cond_0
 
@@ -39,25 +39,25 @@
     const-string v2, "Handling setup complete."
 
     .line 3
-    invoke-static {v1, v2, v0, v0}, Lce/z;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v0, v0}, Lie/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     .line 4
     iget-object v0, p0, Ld9/b;->b:Ld9/e;
 
     .line 5
-    iget-object v0, v0, Ld9/e;->f:Lp8/a;
+    iget-object v0, v0, Ld9/e;->f:Lq8/a;
 
     .line 6
-    check-cast v0, Lua/d;
+    check-cast v0, Lsa/d;
 
     .line 7
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 8
-    check-cast v0, Lbb/p;
+    check-cast v0, Lya/p;
 
     .line 9
-    iget-object v0, v0, Lbb/p;->k0:Lpa/b;
+    iget-object v0, v0, Lya/p;->l0:Lna/b;
 
     .line 10
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -67,7 +67,7 @@
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    invoke-virtual {v0, v1}, Lpa/b;->k(Ljava/util/Map;)V
+    invoke-virtual {v0, v1}, Lna/b;->k(Ljava/util/Map;)V
 
     :cond_0
     return-void

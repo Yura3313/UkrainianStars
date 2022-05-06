@@ -1,9 +1,6 @@
 .class public Lj3/wi;
-.super Lj3/si;
+.super Landroid/webkit/WebView;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Lj3/xi;
 
 
 # annotations
@@ -11,618 +8,258 @@
 .end annotation
 
 
-# instance fields
-.field public final a:Lj3/vi;
-
-.field public b:Z
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "this"
-    .end annotation
-.end field
-
-.field public h:Z
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "this"
-    .end annotation
-.end field
-
-
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lj3/vi;)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 3
 
     .line 1
-    invoke-direct {p0, p1}, Lj3/si;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V
+
+    const/4 p1, 0x0
 
     .line 2
-    sget-object p1, Lh1/o;->B:Lh1/o;
-
-    iget-object p1, p1, Lh1/o;->g:Lj3/ea;
+    invoke-virtual {p0, p1}, Landroid/webkit/WebView;->setBackgroundColor(I)V
 
     .line 3
-    iget-object p1, p1, Lj3/ea;->i:Ljava/util/concurrent/atomic/AtomicInteger;
+    invoke-virtual {p0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
-    invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
-
-    .line 4
-    iput-object p2, p0, Lj3/wi;->a:Lj3/vi;
-
-    .line 5
-    invoke-super {p0, p2}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
-
-    return-void
-.end method
-
-.method private final declared-synchronized F0()V
-    .locals 1
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-boolean v0, p0, Lj3/wi;->h:Z
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    .line 2
-    iput-boolean v0, p0, Lj3/wi;->h:Z
-
-    .line 3
-    sget-object v0, Lh1/o;->B:Lh1/o;
-
-    iget-object v0, v0, Lh1/o;->g:Lj3/ea;
+    move-result-object v0
 
     .line 4
-    iget-object v0, v0, Lj3/ea;->i:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-virtual {v0, p1}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
 
     .line 5
+    invoke-virtual {v0, p1}, Landroid/webkit/WebSettings;->setSavePassword(Z)V
+
+    const/4 p1, 0x1
+
+    .line 6
+    invoke-virtual {v0, p1}, Landroid/webkit/WebSettings;->setSupportMultipleWindows(Z)V
+
+    .line 7
+    invoke-virtual {v0, p1}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V
+
+    .line 8
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x15
+
+    if-lt v1, v2, :cond_0
+
+    const/4 v1, 0x2
+
+    .line 9
+    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setMixedContentMode(I)V
+
+    .line 10
     :cond_0
-    monitor-exit p0
+    sget-object v1, Lh1/o;->B:Lh1/o;
 
+    iget-object v1, v1, Lh1/o;->e:Lj3/eb;
+
+    .line 11
+    invoke-virtual {p0}, Landroid/webkit/WebView;->getContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2, v0}, Lj3/eb;->h(Landroid/content/Context;Landroid/webkit/WebSettings;)Z
+
+    const-string v0, "accessibility"
+
+    .line 12
+    invoke-virtual {p0, v0}, Landroid/webkit/WebView;->removeJavascriptInterface(Ljava/lang/String;)V
+
+    const-string v0, "accessibilityTraversal"
+
+    .line 13
+    invoke-virtual {p0, v0}, Landroid/webkit/WebView;->removeJavascriptInterface(Ljava/lang/String;)V
+
+    .line 14
+    :try_start_0
+    invoke-virtual {p0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+    :try_end_0
+    .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
     return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
 .end method
 
 
 # virtual methods
-.method public final synthetic C0()V
+.method public addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    invoke-super {p0}, Landroid/webkit/WebView;->destroy()V
+    invoke-super {p0, p1, p2}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method public E0(Z)V
-    .locals 0
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "this"
-    .end annotation
-
-    return-void
-.end method
-
-.method public declared-synchronized destroy()V
-    .locals 4
-
-    monitor-enter p0
+.method public f(Ljava/lang/String;)V
+    .locals 3
 
     .line 1
-    :try_start_0
-    iget-boolean v0, p0, Lj3/wi;->b:Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    monitor-exit p0
-
-    return-void
-
-    :cond_0
-    const/4 v0, 0x1
-
-    .line 3
-    :try_start_1
-    iput-boolean v0, p0, Lj3/wi;->b:Z
-
-    .line 4
-    iget-object v0, p0, Lj3/wi;->a:Lj3/vi;
-
-    .line 5
-    iput-object p0, v0, Lj3/vi;->a:Lj3/xi;
-
-    const/4 v0, 0x0
-
-    .line 6
-    invoke-virtual {p0, v0}, Lj3/wi;->E0(Z)V
-
-    .line 7
-    invoke-static {}, Lp0/d;->i()Z
-
-    .line 8
-    invoke-static {}, Lp0/d;->i()Z
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    :try_start_2
-    const-string v0, "about:blank"
-
-    .line 9
-    invoke-super {p0, v0}, Lj3/si;->loadUrl(Ljava/lang/String;)V
-    :try_end_2
-    .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_2 .. :try_end_2} :catch_0
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    .line 10
-    monitor-exit p0
-
-    return-void
-
-    :catch_0
-    move-exception v0
-
-    .line 11
-    :try_start_3
-    sget-object v1, Lh1/o;->B:Lh1/o;
-
-    iget-object v1, v1, Lh1/o;->g:Lj3/ea;
-
-    const-string v2, "AdWebViewImpl.loadUrlUnsafe"
-
-    .line 12
-    iget-object v3, v1, Lj3/ea;->e:Landroid/content/Context;
-
-    iget-object v1, v1, Lj3/ea;->f:Lcom/google/android/gms/internal/ads/zzbbg;
-
-    invoke-static {v3, v1}, Lj3/u7;->d(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzbbg;)Lj3/y7;
-
-    move-result-object v1
-
-    .line 13
-    invoke-interface {v1, v0, v2}, Lj3/y7;->a(Ljava/lang/Throwable;Ljava/lang/String;)V
-
-    const-string v1, "#007 Could not call remote method."
-
-    .line 14
-    invoke-static {v1, v0}, Lp0/d;->f(Ljava/lang/String;Ljava/lang/Throwable;)V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    .line 15
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public declared-synchronized evaluateJavascript(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
-    .locals 1
-    .annotation build Landroid/annotation/TargetApi;
-        value = 0x13
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Landroid/webkit/ValueCallback<",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    invoke-virtual {p0}, Lj3/wi;->l()Z
+    invoke-static {}, Lk2/m;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    if-eqz p2, :cond_0
-
-    const/4 p1, 0x0
-
     .line 2
-    invoke-interface {p2, p1}, Landroid/webkit/ValueCallback;->onReceiveValue(Ljava/lang/Object;)V
+    const-class v0, Lj3/cj;
+
+    monitor-enter v0
+
+    .line 3
+    :try_start_0
+    sget-object v1, Lj3/cj;->g:Ljava/lang/Boolean;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
-    :cond_0
-    monitor-exit p0
+    const/4 v2, 0x0
 
-    return-void
+    if-nez v1, :cond_0
+
+    :try_start_1
+    const-string v1, "(function(){})()"
 
     .line 4
-    :cond_1
-    :try_start_1
-    invoke-super {p0, p1, p2}, Landroid/webkit/WebView;->evaluateJavascript(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    invoke-virtual {p0, v1, v2}, Landroid/webkit/WebView;->evaluateJavascript(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
 
     .line 5
-    monitor-exit p0
+    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
-.end method
-
-.method public finalize()V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Throwable;
-        }
-    .end annotation
-
-    .line 1
-    :try_start_0
-    monitor-enter p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    .line 2
-    :try_start_1
-    invoke-virtual {p0}, Lj3/wi;->l()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    .line 3
-    invoke-virtual {p0, v0}, Lj3/wi;->E0(Z)V
-
-    .line 4
-    :cond_0
-    invoke-direct {p0}, Lj3/wi;->F0()V
-
-    .line 5
-    monitor-exit p0
+    sput-object v1, Lj3/cj;->g:Ljava/lang/Boolean;
     :try_end_1
+    .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_0
 
     .line 6
-    invoke-super {p0}, Ljava/lang/Object;->finalize()V
+    :catch_0
+    :try_start_2
+    sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    return-void
-
-    :catchall_0
-    move-exception v0
+    sput-object v1, Lj3/cj;->g:Ljava/lang/Boolean;
 
     .line 7
-    :try_start_2
-    monitor-exit p0
+    :cond_0
+    :goto_0
+    sget-object v1, Lj3/cj;->g:Ljava/lang/Boolean;
+
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    monitor-exit v0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    :try_start_3
-    throw v0
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    :catchall_1
-    move-exception v0
+    if-eqz v1, :cond_1
 
     .line 8
-    invoke-super {p0}, Ljava/lang/Object;->finalize()V
+    invoke-virtual {p0, p1, v2}, Landroid/webkit/WebView;->evaluateJavascript(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
+
+    goto :goto_2
+
+    :catchall_0
+    move-exception p1
 
     .line 9
-    throw v0
-.end method
-
-.method public final declared-synchronized l()Z
-    .locals 1
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-boolean v0, p0, Lj3/wi;->b:Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return v0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public declared-synchronized loadData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    invoke-virtual {p0}, Lj3/wi;->l()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 2
-    invoke-super {p0, p1, p2, p3}, Landroid/webkit/WebView;->loadData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return-void
-
-    .line 3
-    :cond_0
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
+    :try_start_3
+    monitor-exit v0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     throw p1
+
+    :cond_1
+    const-string v0, "javascript:"
+
+    .line 10
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    goto :goto_1
+
+    :cond_2
+    new-instance p1, Ljava/lang/String;
+
+    invoke-direct {p1, v0}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+
+    :goto_1
+    invoke-virtual {p0, p1}, Lj3/wi;->loadUrl(Ljava/lang/String;)V
+
+    :goto_2
+    return-void
 .end method
 
-.method public declared-synchronized loadDataWithBaseURL(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
-
-    monitor-enter p0
+.method public loadUrl(Ljava/lang/String;)V
+    .locals 2
 
     .line 1
     :try_start_0
-    invoke-virtual {p0}, Lj3/wi;->l()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 2
-    invoke-super/range {p0 .. p5}, Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-super {p0, p1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return-void
-
-    .line 3
-    :cond_0
-    monitor-exit p0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Ljava/lang/NoClassDefFoundError; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/IncompatibleClassChangeError; {:try_start_0 .. :try_end_0} :catch_0
 
     return-void
 
-    :catchall_0
+    :catch_0
     move-exception p1
 
-    monitor-exit p0
+    goto :goto_0
 
-    throw p1
-.end method
-
-.method public declared-synchronized loadUrl(Ljava/lang/String;)V
-    .locals 1
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    invoke-virtual {p0}, Lj3/wi;->l()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 2
-    invoke-super {p0, p1}, Lj3/si;->loadUrl(Ljava/lang/String;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return-void
-
-    .line 3
-    :cond_0
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
+    :catch_1
     move-exception p1
 
-    monitor-exit p0
+    goto :goto_0
 
-    throw p1
-.end method
-
-.method public onDraw(Landroid/graphics/Canvas;)V
-    .locals 1
-    .annotation build Landroid/annotation/TargetApi;
-        value = 0x15
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Lj3/wi;->l()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    return-void
+    :catch_2
+    move-exception p1
 
     .line 2
-    :cond_0
-    invoke-super {p0, p1}, Landroid/webkit/WebView;->onDraw(Landroid/graphics/Canvas;)V
+    :goto_0
+    sget-object v0, Lh1/o;->B:Lh1/o;
 
-    return-void
-.end method
-
-.method public onPause()V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lj3/wi;->l()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    invoke-super {p0}, Landroid/webkit/WebView;->onPause()V
-
-    return-void
-.end method
-
-.method public onResume()V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lj3/wi;->l()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    invoke-super {p0}, Landroid/webkit/WebView;->onResume()V
-
-    return-void
-.end method
-
-.method public onTouchEvent(Landroid/view/MotionEvent;)Z
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lj3/wi;->l()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    invoke-super {p0, p1}, Landroid/webkit/WebView;->onTouchEvent(Landroid/view/MotionEvent;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x1
-
-    return p1
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return p1
-.end method
-
-.method public setWebViewClient(Landroid/webkit/WebViewClient;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public stopLoading()V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lj3/wi;->l()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    invoke-super {p0}, Landroid/webkit/WebView;->stopLoading()V
-
-    return-void
-.end method
-
-.method public declared-synchronized u0()V
-    .locals 3
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    invoke-static {}, Lp0/d;->i()Z
-
-    .line 2
-    invoke-direct {p0}, Lj3/wi;->F0()V
+    iget-object v0, v0, Lh1/o;->g:Lj3/ia;
 
     .line 3
-    sget-object v0, Lj3/gd;->e:Lj3/am0;
+    iget-object v1, v0, Lj3/ia;->e:Landroid/content/Context;
 
-    new-instance v1, Lj3/de;
+    iget-object v0, v0, Lj3/ia;->f:Lcom/google/android/gms/internal/ads/zzbbg;
 
-    const/4 v2, 0x1
+    invoke-static {v1, v0}, Lj3/w7;->c(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzbbg;)Lj3/a8;
 
-    invoke-direct {v1, p0, v2}, Lj3/de;-><init>(Ljava/lang/Object;I)V
+    move-result-object v0
 
-    check-cast v0, Lj3/ld;
+    const-string v1, "CoreWebView.loadUrl"
 
     .line 4
-    iget-object v0, v0, Lj3/ld;->a:Ljava/util/concurrent/Executor;
+    invoke-interface {v0, p1, v1}, Lj3/a8;->a(Ljava/lang/Throwable;Ljava/lang/String;)V
 
-    invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    const-string v0, "#007 Could not call remote method."
 
     .line 5
-    monitor-exit p0
+    invoke-static {v0, p1}, Lj3/cj;->j(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
 .end method

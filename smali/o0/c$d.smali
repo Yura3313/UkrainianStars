@@ -1,4 +1,4 @@
-.class public synthetic Lo0/c$d;
+.class public Lo0/c$d;
 .super Ljava/lang/Object;
 .source "ModernAsyncTask.java"
 
@@ -9,59 +9,51 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1009
-    name = null
+    accessFlags = 0x9
+    name = "d"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<Data:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
 .end annotation
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final a:Lo0/c;
+
+.field public final b:[Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "[TData;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
+.method public varargs constructor <init>(Lo0/c;[Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lo0/c;",
+            "[TData;)V"
+        }
+    .end annotation
 
     .line 1
-    invoke-static {}, Lo0/c$g;->values()[Lo0/c$g;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object v0
+    .line 2
+    iput-object p1, p0, Lo0/c$d;->a:Lo0/c;
 
-    array-length v0, v0
+    .line 3
+    iput-object p2, p0, Lo0/c$d;->b:[Ljava/lang/Object;
 
-    new-array v0, v0, [I
-
-    sput-object v0, Lo0/c$d;->a:[I
-
-    :try_start_0
-    sget-object v1, Lo0/c$g;->RUNNING:Lo0/c$g;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :try_start_1
-    sget-object v0, Lo0/c$d;->a:[I
-
-    sget-object v1, Lo0/c$g;->FINISHED:Lo0/c$g;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
     return-void
 .end method

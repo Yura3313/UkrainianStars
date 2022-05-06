@@ -20,40 +20,40 @@
 
 
 # virtual methods
-.method public abstract F()F
+.method public abstract H()F
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end method
 
-.method public abstract Q()I
+.method public abstract S()I
 .end method
 
-.method public abstract X()F
-.end method
-
-.method public abstract d1()F
+.method public abstract Z()F
 .end method
 
 .method public abstract f1()F
+.end method
+
+.method public abstract h1()F
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end method
 
-.method public abstract g2()F
+.method public abstract i2()F
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end method
 
-.method public abstract h1()I
+.method public abstract j1()I
 .end method
 
-.method public abstract j2()I
+.method public abstract l2()I
 .end method
 
-.method public abstract o0()F
+.method public abstract q0()F
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end method
 
-.method public abstract v2()F
+.method public abstract x2()F
 .end method

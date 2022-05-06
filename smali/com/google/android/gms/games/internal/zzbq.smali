@@ -16,9 +16,9 @@
 
 
 # instance fields
-.field public final a:Landroid/os/Bundle;
+.field public final g:Landroid/os/Bundle;
 
-.field public final b:Landroid/os/IBinder;
+.field public final h:Landroid/os/IBinder;
 
 
 # direct methods
@@ -42,10 +42,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zze;-><init>()V
 
     .line 5
-    iput-object p1, p0, Lcom/google/android/gms/games/internal/zzbq;->a:Landroid/os/Bundle;
+    iput-object p1, p0, Lcom/google/android/gms/games/internal/zzbq;->g:Landroid/os/Bundle;
 
     .line 6
-    iput-object p2, p0, Lcom/google/android/gms/games/internal/zzbq;->b:Landroid/os/IBinder;
+    iput-object p2, p0, Lcom/google/android/gms/games/internal/zzbq;->h:Landroid/os/IBinder;
 
     return-void
 .end method
@@ -61,12 +61,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/gms/games/internal/zzbq;->a:Landroid/os/Bundle;
+    iput-object v0, p0, Lcom/google/android/gms/games/internal/zzbq;->g:Landroid/os/Bundle;
 
     .line 3
     iget-object p1, p1, Ly2/e;->a:Landroid/os/IBinder;
 
-    iput-object p1, p0, Lcom/google/android/gms/games/internal/zzbq;->b:Landroid/os/IBinder;
+    iput-object p1, p0, Lcom/google/android/gms/games/internal/zzbq;->h:Landroid/os/IBinder;
 
     return-void
 .end method
@@ -86,7 +86,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/games/internal/zzbq;->a:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/google/android/gms/games/internal/zzbq;->g:Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -96,7 +96,7 @@
     const/4 v0, 0x2
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/games/internal/zzbq;->b:Landroid/os/IBinder;
+    iget-object v1, p0, Lcom/google/android/gms/games/internal/zzbq;->h:Landroid/os/IBinder;
 
     .line 5
     invoke-static {p1, v0, v1, v2}, Ld2/b;->f(Landroid/os/Parcel;ILandroid/os/IBinder;Z)V

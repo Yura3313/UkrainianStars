@@ -28,7 +28,7 @@
 
     iget-object v0, p0, Lio/sentry/b0;->a:Lio/sentry/SentryTracer;
 
-    invoke-static {v0, p1}, Lio/sentry/SentryTracer;->b(Lio/sentry/SentryTracer;Lio/sentry/Scope;)V
+    invoke-static {v0, p1}, Lio/sentry/SentryTracer;->c(Lio/sentry/SentryTracer;Lio/sentry/Scope;)V
 
     return-void
 .end method

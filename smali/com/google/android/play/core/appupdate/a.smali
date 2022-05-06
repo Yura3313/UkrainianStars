@@ -56,10 +56,10 @@
 .method public abstract a()J
 .end method
 
-.method public final b(Lcom/google/android/play/core/appupdate/d;)Landroid/app/PendingIntent;
+.method public final b(Lcom/google/android/play/core/appupdate/e;)Landroid/app/PendingIntent;
     .locals 3
 
-    invoke-virtual {p1}, Lcom/google/android/play/core/appupdate/d;->b()I
+    invoke-virtual {p1}, Lcom/google/android/play/core/appupdate/e;->b()I
 
     move-result v0
 
@@ -80,7 +80,7 @@
     return-object p1
 
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/google/android/play/core/appupdate/a;->f(Lcom/google/android/play/core/appupdate/d;)Z
+    invoke-virtual {p0, p1}, Lcom/google/android/play/core/appupdate/a;->f(Lcom/google/android/play/core/appupdate/e;)Z
 
     move-result p1
 
@@ -96,7 +96,7 @@
     return-object v1
 
     :cond_2
-    invoke-virtual {p1}, Lcom/google/android/play/core/appupdate/d;->b()I
+    invoke-virtual {p1}, Lcom/google/android/play/core/appupdate/e;->b()I
 
     move-result v0
 
@@ -117,7 +117,7 @@
     return-object p1
 
     :cond_3
-    invoke-virtual {p0, p1}, Lcom/google/android/play/core/appupdate/a;->f(Lcom/google/android/play/core/appupdate/d;)Z
+    invoke-virtual {p0, p1}, Lcom/google/android/play/core/appupdate/a;->f(Lcom/google/android/play/core/appupdate/e;)Z
 
     move-result p1
 
@@ -139,10 +139,10 @@
 .method public abstract e()J
 .end method
 
-.method public final f(Lcom/google/android/play/core/appupdate/d;)Z
+.method public final f(Lcom/google/android/play/core/appupdate/e;)Z
     .locals 4
 
-    invoke-virtual {p1}, Lcom/google/android/play/core/appupdate/d;->a()Z
+    invoke-virtual {p1}, Lcom/google/android/play/core/appupdate/e;->a()Z
 
     move-result p1
 

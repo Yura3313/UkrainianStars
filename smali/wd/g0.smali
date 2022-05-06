@@ -1,34 +1,33 @@
 .class public final Lwd/g0;
 .super Lle/j;
-.source "NotificationQueue.kt"
+.source "ProfileStorage.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lke/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lle/j;",
-        "Lke/l<",
-        "Ltc/e0;",
-        "Ltc/k$j;",
+        "Lke/a<",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Ltc/k$j;
+.field public final synthetic g:Lwd/z;
 
 
 # direct methods
-.method public constructor <init>(Ltc/k$j;)V
+.method public constructor <init>(Lwd/z;)V
     .locals 0
 
-    iput-object p1, p0, Lwd/g0;->a:Ltc/k$j;
+    iput-object p1, p0, Lwd/g0;->g:Lwd/z;
 
-    const/4 p1, 0x1
+    const/4 p1, 0x0
 
     invoke-direct {p0, p1}, Lle/j;-><init>(I)V
 
@@ -37,72 +36,90 @@
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 16
-
-    move-object/from16 v7, p1
-
-    check-cast v7, Ltc/e0;
-
-    if-eqz v7, :cond_0
-
-    move-object/from16 v8, p0
+.method public invoke()Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    iget-object v0, v8, Lwd/g0;->a:Ltc/k$j;
-
-    check-cast v0, Ltc/k$j$h;
+    iget-object v0, p0, Lwd/g0;->g:Lwd/z;
 
     .line 2
-    new-instance v9, Ltc/k$j$h;
+    iget-object v0, v0, Lwd/z;->d:Landroid/content/Context;
 
-    iget-object v1, v0, Ltc/k$j$h;->g:Ljava/lang/String;
+    const/4 v1, 0x0
 
-    iget-object v2, v0, Ltc/k$j$h;->h:Ljava/lang/String;
-
-    iget-object v3, v0, Ltc/k$j$h;->i:Ljava/lang/String;
-
-    iget-object v4, v0, Ltc/k$j$h;->j:Ljava/lang/String;
-
-    iget-object v5, v0, Ltc/k$j$h;->k:Ljava/lang/String;
-
-    new-instance v6, Ltc/k$a;
+    const-string v2, "IdProfiles"
 
     .line 3
-    iget-object v11, v0, Ltc/k;->a:Ljava/lang/String;
+    invoke-virtual {v0, v2, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
 
     .line 4
-    iget-object v12, v0, Ltc/k;->b:Ljava/lang/String;
+    iget-object v2, p0, Lwd/g0;->g:Lwd/z;
 
     .line 5
-    iget-object v13, v0, Ltc/k;->c:Ljava/util/Date;
+    iget-object v2, v2, Lwd/z;->e:Ljava/lang/String;
 
     .line 6
-    iget-object v14, v0, Ltc/k;->d:Ljava/util/Date;
+    invoke-interface {v0, v2, v1}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
 
     .line 7
-    iget-object v15, v0, Ltc/k;->e:Ljava/util/Date;
+    :try_start_0
+    new-instance v2, Lorg/json/JSONObject;
 
-    move-object v10, v6
+    invoke-direct {v2, v0}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+
+    new-instance v0, Lcom/supercell/id/model/IdProfile;
+
+    invoke-direct {v0, v2}, Lcom/supercell/id/model/IdProfile;-><init>(Lorg/json/JSONObject;)V
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-object v0, v1
+
+    :goto_0
+    if-eqz v0, :cond_0
 
     .line 8
-    invoke-direct/range {v10 .. v15}, Ltc/k$a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;Ljava/util/Date;)V
+    iget-object v1, p0, Lwd/g0;->g:Lwd/z;
 
-    move-object v0, v9
+    new-instance v2, Lwd/z$a$b;
 
-    invoke-direct/range {v0 .. v7}, Ltc/k$j$h;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ltc/k$a;Ltc/e0;)V
+    invoke-direct {v2, v0}, Lwd/z$a$b;-><init>(Lcom/supercell/id/model/IdProfile;)V
 
-    return-object v9
-
-    :cond_0
-    move-object/from16 v8, p0
-
-    const-string v0, "it"
+    invoke-virtual {v1, v2}, Lwd/u0;->a(Lwd/a;)V
 
     .line 9
-    invoke-static {v0}, Ly4/x;->k(Ljava/lang/String;)V
+    sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    const/4 v0, 0x0
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
-    throw v0
+    move-result-object v1
+
+    invoke-virtual {v1}, Lvd/r;->f()Lwd/v;
+
+    move-result-object v1
+
+    invoke-virtual {v0}, Lcom/supercell/id/model/IdProfile;->k()Z
+
+    move-result v0
+
+    invoke-virtual {v1, v0}, Lwd/v;->g(Z)V
+
+    .line 10
+    sget-object v1, Lae/i;->a:Lae/i;
+
+    :cond_0
+    return-object v1
 .end method

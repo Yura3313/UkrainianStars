@@ -20,22 +20,22 @@
     value = {
         "Lle/j;",
         "Lke/l<",
-        "Lxd/s0;",
-        "Lbe/n;",
+        "Lwd/n0;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/profile/ProfileFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profile/ProfileFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->a:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     const/4 p1, 0x1
 
@@ -50,10 +50,10 @@
     .locals 2
 
     .line 1
-    check-cast p1, Lxd/s0;
+    check-cast p1, Lwd/n0;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->a:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     sget v1, Lcom/supercell/id/R$id;->tabMyGames:I
 
@@ -78,7 +78,7 @@
     if-eqz p1, :cond_0
 
     .line 3
-    invoke-static {p1}, Lcom/helpshift/util/s;->k(Lxd/s0;)I
+    invoke-static {p1}, Lcom/helpshift/util/v;->a(Lwd/n0;)I
 
     move-result p1
 
@@ -121,12 +121,12 @@
     .line 7
     :cond_3
     :goto_2
-    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->a:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$l;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     invoke-static {p1}, Lcom/supercell/id/ui/profile/ProfileFragment;->p1(Lcom/supercell/id/ui/profile/ProfileFragment;)V
 
     .line 8
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method

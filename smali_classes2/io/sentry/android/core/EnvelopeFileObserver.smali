@@ -23,20 +23,12 @@
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lio/sentry/IEnvelopeSender;Lio/sentry/ILogger;J)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-direct {p0, p1}, Landroid/os/FileObserver;-><init>(Ljava/lang/String;)V
 
-    const-string v0, "File path is required."
-
     .line 2
-    invoke-static {p1, v0}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/String;
-
     iput-object p1, p0, Lio/sentry/android/core/EnvelopeFileObserver;->rootPath:Ljava/lang/String;
 
     const-string p1, "Envelope sender is required."

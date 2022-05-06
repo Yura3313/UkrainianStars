@@ -1,324 +1,111 @@
 .class public final Lb0/g;
 .super Ljava/lang/Object;
-.source "ParcelCompat.java"
+.source "TraceCompat.java"
+
+
+# static fields
+.field public static final synthetic a:I
 
 
 # direct methods
-.method public static final synthetic a(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$b;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lse/h0;
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 10
 
     .line 1
-    invoke-static {p0, p1, p2, p3, p4}, Lb0/g;->c(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$b;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lse/h0;
+    const-class v0, Ljava/lang/String;
 
-    move-result-object p0
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    return-object p0
-.end method
+    const/16 v2, 0x1d
 
-.method public static final synthetic b(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lse/h0;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2, p3, p4}, Lb0/g;->e(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lse/h0;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final c(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$b;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lse/h0;
-    .locals 2
-
-    .line 1
-    instance-of v0, p0, Luc/g1;
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_4
-
-    check-cast p0, Luc/g1;
-
-    if-eqz p1, :cond_3
-
-    if-eqz p4, :cond_2
-
-    if-eqz p3, :cond_1
+    if-ge v1, v2, :cond_0
 
     .line 2
-    iput-object p4, p0, Luc/g1;->i0:Ljava/util/Set;
+    :try_start_0
+    const-class v1, Landroid/os/Trace;
 
-    const/4 p4, 0x1
+    const-string v2, "TRACE_TAG_APP"
 
-    .line 3
-    invoke-static {v1, p4}, Lcom/android/billingclient/api/w;->b(Lse/d1;I)Lse/o;
+    invoke-virtual {v1, v2}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object v1
 
+    const/4 v2, 0x0
+
+    .line 3
+    invoke-virtual {v1, v2}, Ljava/lang/reflect/Field;->getLong(Ljava/lang/Object;)J
+
     .line 4
-    iget-object p4, p0, Luc/g1;->j0:Lse/o;
+    const-class v1, Landroid/os/Trace;
 
-    if-eqz p4, :cond_0
+    const-string v2, "isTagEnabled"
 
-    new-instance v0, Ljava/util/concurrent/CancellationException;
+    const/4 v3, 0x1
 
-    invoke-direct {v0}, Ljava/util/concurrent/CancellationException;-><init>()V
+    new-array v4, v3, [Ljava/lang/Class;
+
+    sget-object v5, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
+
+    const/4 v6, 0x0
+
+    aput-object v5, v4, v6
+
+    invoke-virtual {v1, v2, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     .line 5
-    invoke-interface {p4, v0}, Lse/o;->h(Ljava/lang/Throwable;)Z
+    const-class v1, Landroid/os/Trace;
+
+    const-string v2, "asyncTraceBegin"
+
+    const/4 v4, 0x3
+
+    new-array v7, v4, [Ljava/lang/Class;
+
+    aput-object v5, v7, v6
+
+    aput-object v0, v7, v3
+
+    sget-object v8, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    const/4 v9, 0x2
+
+    aput-object v8, v7, v9
+
+    invoke-virtual {v1, v2, v7}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     .line 6
-    :cond_0
-    iput-object v1, p0, Luc/g1;->j0:Lse/o;
+    const-class v1, Landroid/os/Trace;
+
+    const-string v2, "asyncTraceEnd"
+
+    new-array v7, v4, [Ljava/lang/Class;
+
+    aput-object v5, v7, v6
+
+    aput-object v0, v7, v3
+
+    aput-object v8, v7, v9
+
+    invoke-virtual {v1, v2, v7}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     .line 7
-    invoke-virtual {p0, p1, p2, p3}, Lcom/supercell/id/ui/BaseFragment;->a1(Lcom/supercell/id/ui/BaseFragment$b;ZLcom/supercell/id/ui/BaseFragment$d;)V
+    const-class v1, Landroid/os/Trace;
 
-    goto :goto_0
+    const-string v2, "traceCounter"
 
-    :cond_1
-    const-string p0, "coordinator"
+    new-array v4, v4, [Ljava/lang/Class;
 
-    .line 8
-    invoke-static {p0}, Ly4/x;->k(Ljava/lang/String;)V
+    aput-object v5, v4, v6
 
-    throw v1
+    aput-object v0, v4, v3
 
-    :cond_2
-    const-string p0, "sharedElements"
+    aput-object v8, v4, v9
 
-    invoke-static {p0}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v1
-
-    :cond_3
-    const-string p0, "animation"
-
-    invoke-static {p0}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v1
-
-    .line 9
-    :cond_4
-    instance-of p4, p0, Lcom/supercell/id/ui/BaseFragment;
-
-    if-eqz p4, :cond_5
-
-    check-cast p0, Lcom/supercell/id/ui/BaseFragment;
-
-    invoke-virtual {p0, p1, p2, p3}, Lcom/supercell/id/ui/BaseFragment;->a1(Lcom/supercell/id/ui/BaseFragment$b;ZLcom/supercell/id/ui/BaseFragment$d;)V
-
-    :cond_5
-    :goto_0
-    return-object v1
-.end method
-
-.method public static synthetic d(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$b;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;I)Lse/h0;
-    .locals 0
-
-    and-int/lit8 p4, p5, 0x8
-
-    if-eqz p4, :cond_0
-
-    .line 1
-    sget-object p4, Lce/p;->a:Lce/p;
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p4, 0x0
-
-    :goto_0
-    invoke-static {p0, p1, p2, p3, p4}, Lb0/g;->c(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$b;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lse/h0;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final e(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lse/h0;
-    .locals 2
-
-    .line 1
-    instance-of v0, p0, Luc/g1;
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_3
-
-    check-cast p0, Luc/g1;
-
-    if-eqz p1, :cond_2
-
-    if-eqz p4, :cond_1
-
-    if-eqz p3, :cond_0
-
-    .line 2
-    iput-object p4, p0, Luc/g1;->i0:Ljava/util/Set;
-
-    .line 3
-    invoke-virtual {p0, p1, p2, p3}, Lcom/supercell/id/ui/BaseFragment;->b1(Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;)Lse/h0;
-
-    move-result-object v1
-
-    goto :goto_0
-
-    :cond_0
-    const-string p0, "coordinator"
-
-    .line 4
-    invoke-static {p0}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v1
-
-    :cond_1
-    const-string p0, "sharedElements"
-
-    invoke-static {p0}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v1
-
-    :cond_2
-    const-string p0, "animation"
-
-    invoke-static {p0}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v1
-
-    .line 5
-    :cond_3
-    instance-of p4, p0, Lcom/supercell/id/ui/BaseFragment;
-
-    if-eqz p4, :cond_4
-
-    check-cast p0, Lcom/supercell/id/ui/BaseFragment;
-
-    invoke-virtual {p0, p1, p2, p3}, Lcom/supercell/id/ui/BaseFragment;->b1(Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;)Lse/h0;
-
-    move-result-object v1
-
-    :cond_4
-    :goto_0
-    return-object v1
-.end method
-
-.method public static synthetic f(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;I)Lse/h0;
-    .locals 0
-
-    and-int/lit8 p4, p5, 0x8
-
-    if-eqz p4, :cond_0
-
-    .line 1
-    sget-object p4, Lce/p;->a:Lce/p;
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p4, 0x0
-
-    :goto_0
-    invoke-static {p0, p1, p2, p3, p4}, Lb0/g;->e(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lse/h0;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
-    .locals 1
-
-    const/4 v0, 0x0
-
-    if-eqz p0, :cond_1
-
-    .line 1
-    iget-object p0, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
-
-    if-eqz p0, :cond_0
-
-    const-string v0, "backStackEntry"
-
-    .line 2
-    invoke-virtual {p0, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
-
-    move-result-object p0
-
-    move-object v0, p0
-
-    check-cast v0, Lcom/supercell/id/ui/BackStack$Entry;
-
-    :cond_0
-    return-object v0
-
-    :cond_1
-    const-string p0, "$this$backStackEntry"
-
-    .line 3
-    invoke-static {p0}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public static final h(Ljava/lang/Class;)Ljava/util/Set;
-    .locals 2
-
-    const/4 v0, 0x0
-
-    if-eqz p0, :cond_2
-
-    :try_start_0
-    const-string v1, "sharedElements"
-
-    .line 1
-    invoke-virtual {p0, v1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
-
-    move-result-object p0
-
-    const-string v1, "getDeclaredField(\"sharedElements\")"
-
-    invoke-static {p0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 2
-    invoke-virtual {p0, v0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    instance-of v1, p0, Ljava/util/Set;
-
-    if-nez v1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    move-object v0, p0
-
-    :goto_0
-    check-cast v0, Ljava/util/Set;
-
-    if-eqz v0, :cond_1
-
-    goto :goto_1
-
-    :cond_1
-    sget-object v0, Lce/p;->a:Lce/p;
+    invoke-virtual {v1, v2, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     :try_end_0
-    .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_1
-
-    .line 3
     :catch_0
-    sget-object v0, Lce/p;->a:Lce/p;
-
-    :goto_1
-    return-object v0
-
-    :cond_2
-    const-string p0, "$this$sharedElements"
-
-    .line 4
-    invoke-static {p0}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
+    :cond_0
+    return-void
 .end method

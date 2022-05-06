@@ -1,60 +1,60 @@
 .class public final Lj3/h20;
-.super Ljava/lang/Object;
+.super Lj3/f20;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lj3/bv0;
+
+# static fields
+.field public static final g:Ljava/util/regex/Pattern;
+
+
+# instance fields
+.field public final b:Lj3/v10;
+
+.field public final c:Lj3/km0;
+
+.field public final d:Lj3/wg0;
+
+.field public final e:Ljava/util/concurrent/ScheduledExecutorService;
+
+.field public final f:Lj3/c40;
 
 
 # direct methods
-.method public static a(Lj3/as;Lj3/pg0;Lj3/s10;Lj3/am0;Ljava/util/concurrent/ScheduledExecutorService;Lj3/y30;)Lj3/e20;
-    .locals 8
+.method public static constructor <clinit>()V
+    .locals 1
+
+    const-string v0, "Received error HTTP response code: (.*)"
 
     .line 1
-    new-instance v7, Lj3/e20;
+    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
-    move-object v0, v7
+    move-result-object v0
 
-    move-object v1, p0
+    sput-object v0, Lj3/h20;->g:Ljava/util/regex/Pattern;
 
-    move-object v2, p1
-
-    move-object v3, p2
-
-    move-object v4, p3
-
-    move-object v5, p4
-
-    move-object v6, p5
-
-    invoke-direct/range {v0 .. v6}, Lj3/e20;-><init>(Lj3/as;Lj3/pg0;Lj3/s10;Lj3/am0;Ljava/util/concurrent/ScheduledExecutorService;Lj3/y30;)V
-
-    return-object v7
+    return-void
 .end method
 
-.method public static b(Lj3/ni0;Lj3/c60;Lj3/uq;Lj3/ri0;Lj3/jo;Ljava/util/concurrent/Executor;Ljava/util/concurrent/ScheduledExecutorService;)Lj3/h60;
-    .locals 9
+.method public constructor <init>(Lj3/es;Lj3/wg0;Lj3/v10;Lj3/km0;Ljava/util/concurrent/ScheduledExecutorService;Lj3/c40;)V
+    .locals 0
 
     .line 1
-    new-instance v8, Lj3/h60;
+    invoke-direct {p0, p1}, Lj3/f20;-><init>(Lj3/es;)V
 
-    move-object v0, v8
+    .line 2
+    iput-object p2, p0, Lj3/h20;->d:Lj3/wg0;
 
-    move-object v1, p0
+    .line 3
+    iput-object p3, p0, Lj3/h20;->b:Lj3/v10;
 
-    move-object v2, p1
+    .line 4
+    iput-object p4, p0, Lj3/h20;->c:Lj3/km0;
 
-    move-object v3, p2
+    .line 5
+    iput-object p5, p0, Lj3/h20;->e:Ljava/util/concurrent/ScheduledExecutorService;
 
-    move-object v4, p3
+    .line 6
+    iput-object p6, p0, Lj3/h20;->f:Lj3/c40;
 
-    move-object v5, p4
-
-    move-object v6, p5
-
-    move-object v7, p6
-
-    invoke-direct/range {v0 .. v7}, Lj3/h60;-><init>(Lj3/ni0;Lj3/c60;Lj3/uq;Lj3/ri0;Lj3/jo;Ljava/util/concurrent/Executor;Ljava/util/concurrent/ScheduledExecutorService;)V
-
-    return-object v8
+    return-void
 .end method

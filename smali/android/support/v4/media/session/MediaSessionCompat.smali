@@ -716,13 +716,13 @@
     return-object v0
 .end method
 
-.method public final getCurrentControllerInfo()Lp0/k;
+.method public final getCurrentControllerInfo()Lp0/i;
     .locals 1
 
     .line 1
     iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat;->mImpl:Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImpl;
 
-    invoke-interface {v0}, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImpl;->getCurrentControllerInfo()Lp0/k;
+    invoke-interface {v0}, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImpl;->getCurrentControllerInfo()Lp0/i;
 
     move-result-object v0
 
@@ -1002,7 +1002,7 @@
     return-void
 .end method
 
-.method public setPlaybackToRemote(Lp0/o;)V
+.method public setPlaybackToRemote(Lp0/m;)V
     .locals 1
 
     .line 1

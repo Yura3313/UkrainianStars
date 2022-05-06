@@ -20,22 +20,22 @@
     value = {
         "Lle/j;",
         "Lke/l<",
-        "Lxd/s0;",
-        "Lbe/n;",
+        "Lwd/n0;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/game/GameFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/game/GameFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/game/GameFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$i;->a:Lcom/supercell/id/ui/game/GameFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$i;->g:Lcom/supercell/id/ui/game/GameFragment;
 
     const/4 p1, 0x1
 
@@ -50,10 +50,10 @@
     .locals 3
 
     .line 1
-    check-cast p1, Lxd/s0;
+    check-cast p1, Lwd/n0;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$i;->a:Lcom/supercell/id/ui/game/GameFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$i;->g:Lcom/supercell/id/ui/game/GameFragment;
 
     invoke-static {v0}, Lcom/supercell/id/ui/game/GameFragment;->q1(Lcom/supercell/id/ui/game/GameFragment;)Ljava/lang/String;
 
@@ -62,13 +62,13 @@
     if-eqz v0, :cond_3
 
     .line 3
-    iget-object v1, p0, Lcom/supercell/id/ui/game/GameFragment$i;->a:Lcom/supercell/id/ui/game/GameFragment;
+    iget-object v1, p0, Lcom/supercell/id/ui/game/GameFragment$i;->g:Lcom/supercell/id/ui/game/GameFragment;
 
     const/4 v2, 0x0
 
     if-eqz p1, :cond_0
 
-    invoke-static {p1, v0}, Lyc/f;->c(Lxd/s0;Ljava/lang/String;)Lxd/s0;
+    invoke-static {p1, v0}, Lvc/f;->c(Lwd/n0;Ljava/lang/String;)Lwd/n0;
 
     move-result-object p1
 
@@ -79,7 +79,7 @@
 
     .line 4
     :goto_0
-    iput-object p1, v1, Lcom/supercell/id/ui/game/GameFragment;->p0:Lxd/s0;
+    iput-object p1, v1, Lcom/supercell/id/ui/game/GameFragment;->q0:Lwd/n0;
 
     .line 5
     invoke-virtual {v1}, Lcom/supercell/id/ui/game/GameFragment;->v1()V
@@ -120,13 +120,13 @@
     if-eqz v2, :cond_3
 
     .line 7
-    iget-object p1, v2, Lwd/k1;->c:Lwd/k1$b;
+    iget-object p1, v2, Lvd/k1;->c:Lvd/k1$b;
 
-    invoke-virtual {p1}, Lwd/k1$b;->notifyObservers()V
+    invoke-virtual {p1}, Lvd/k1$b;->notifyObservers()V
 
     .line 8
     :cond_3
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method

@@ -1,81 +1,53 @@
-.class public final Lj3/ae0;
+.class public final synthetic Lj3/ae0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/uc0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lj3/uc0<",
-        "Lorg/json/JSONObject;",
-        ">;"
-    }
-.end annotation
+.implements Lj3/yj0;
 
 
 # instance fields
-.field public a:Ljava/lang/String;
-
-.field public b:Ljava/lang/String;
+.field public final a:Lj3/zd0;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(Lj3/zd0;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Lj3/ae0;->a:Ljava/lang/String;
-
-    .line 3
-    iput-object p2, p0, Lj3/ae0;->b:Ljava/lang/String;
+    iput-object p1, p0, Lj3/ae0;->a:Lj3/zd0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Ljava/lang/Object;)V
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 1
-    check-cast p1, Lorg/json/JSONObject;
+    iget-object v0, p0, Lj3/ae0;->a:Lj3/zd0;
 
-    :try_start_0
-    const-string v0, "pii"
+    check-cast p1, Ljava/lang/Exception;
+
+    .line 1
+    iget-object v0, v0, Lj3/zd0;->d:Lj3/ia;
 
     .line 2
-    invoke-static {p1, v0}, Lj3/jc;->j(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONObject;
+    iget-object v1, v0, Lj3/ia;->e:Landroid/content/Context;
 
-    move-result-object p1
+    iget-object v0, v0, Lj3/ia;->f:Lcom/google/android/gms/internal/ads/zzbbg;
 
-    const-string v0, "doritos"
+    invoke-static {v1, v0}, Lj3/w7;->c(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzbbg;)Lj3/a8;
+
+    move-result-object v0
+
+    const-string v1, "AttestationTokenSignal"
 
     .line 3
-    iget-object v1, p0, Lj3/ae0;->a:Ljava/lang/String;
+    invoke-interface {v0, p1, v1}, Lj3/a8;->a(Ljava/lang/Throwable;Ljava/lang/String;)V
 
-    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    const/4 p1, 0x0
 
-    const-string v0, "doritos_v2"
-
-    .line 4
-    iget-object v1, p0, Lj3/ae0;->b:Ljava/lang/String;
-
-    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-void
-
-    .line 5
-    :catch_0
-    invoke-static {}, Lp0/d;->i()Z
-
-    return-void
+    return-object p1
 .end method

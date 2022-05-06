@@ -218,7 +218,7 @@
 
     const-string v0, "] is a repetition"
 
-    invoke-static {v4, v2, v0}, Lb0/c;->c(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v2, v0}, Lb0/c;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -232,7 +232,7 @@
 
     const-string v0, "] is null"
 
-    invoke-static {v4, v2, v0}, Lb0/c;->c(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v2, v0}, Lb0/c;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -390,7 +390,7 @@
     const-string v0, "["
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

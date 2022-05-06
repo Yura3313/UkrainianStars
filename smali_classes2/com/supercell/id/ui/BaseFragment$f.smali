@@ -21,21 +21,21 @@
         "Lle/j;",
         "Lke/l<",
         "Landroid/view/View;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/BaseFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/BaseFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/BaseFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/BaseFragment$f;->a:Lcom/supercell/id/ui/BaseFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/BaseFragment$f;->g:Lcom/supercell/id/ui/BaseFragment;
 
     const/4 p1, 0x1
 
@@ -55,7 +55,7 @@
     if-eqz p1, :cond_1
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/BaseFragment$f;->a:Lcom/supercell/id/ui/BaseFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/BaseFragment$f;->g:Lcom/supercell/id/ui/BaseFragment;
 
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->U()Z
 
@@ -67,10 +67,10 @@
 
     .line 3
     :cond_0
-    iget-object p1, p0, Lcom/supercell/id/ui/BaseFragment$f;->a:Lcom/supercell/id/ui/BaseFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/BaseFragment$f;->g:Lcom/supercell/id/ui/BaseFragment;
 
     .line 4
-    iget-object p1, p1, Lcom/supercell/id/ui/BaseFragment;->c0:Lse/o;
+    iget-object p1, p1, Lcom/supercell/id/ui/BaseFragment;->d0:Lse/o;
 
     .line 5
     sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
@@ -80,7 +80,7 @@
 
     .line 7
     :goto_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -88,7 +88,7 @@
     const-string p1, "it"
 
     .line 8
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

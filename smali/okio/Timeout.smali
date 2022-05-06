@@ -106,7 +106,7 @@
 
     const-string v0, "duration <= 0: "
 
-    invoke-static {v0, p1, p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;J)Ljava/lang/String;
+    invoke-static {v0, p1, p2}, Lcom/kakaogame/session/websocket/a;->a(Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object p1
 
@@ -266,7 +266,7 @@
 
     const-string v0, "timeout < 0: "
 
-    invoke-static {v0, p1, p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;J)Ljava/lang/String;
+    invoke-static {v0, p1, p2}, Lcom/kakaogame/session/websocket/a;->a(Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object p1
 

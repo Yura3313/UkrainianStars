@@ -26,7 +26,7 @@
 
 
 # virtual methods
-.method public A(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+.method public B(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -51,7 +51,7 @@
     const-string p1, "mainActivity"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -68,7 +68,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0}, Lcom/supercell/id/ui/BackStack$Entry;->m()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/supercell/id/ui/BackStack$Entry;->k()Ljava/lang/String;
 
     move-result-object v1
 
@@ -78,7 +78,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/FlowFragment$BackStackEntry;->A(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+    invoke-virtual {p0, p1}, Lcom/supercell/id/ui/FlowFragment$BackStackEntry;->B(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
 
     move-result-object p1
 
@@ -94,14 +94,14 @@
     const-string p1, "mainActivity"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public D(Lcom/supercell/id/ui/MainActivity;III)I
+.method public E(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 1
 
     if-eqz p1, :cond_2
@@ -115,7 +115,7 @@
     const/16 p2, 0x19a
 
     .line 1
-    invoke-static {p2}, Lc5/i;->c(I)F
+    invoke-static {p2}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result p2
 
@@ -123,7 +123,7 @@
 
     const/16 p4, 0x46
 
-    invoke-static {p4}, Lc5/i;->c(I)F
+    invoke-static {p4}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result p4
 
@@ -154,7 +154,7 @@
     .line 3
     :cond_1
     :goto_0
-    invoke-static {p2}, Lc2/n0;->e(F)I
+    invoke-static {p2}, Lb5/m;->r(F)I
 
     move-result p1
 
@@ -166,7 +166,7 @@
     const-string p1, "mainActivity"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -187,7 +187,7 @@
     const/16 p2, 0x17c
 
     .line 1
-    invoke-static {p2}, Lc5/i;->c(I)F
+    invoke-static {p2}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result p2
 
@@ -195,13 +195,13 @@
 
     const/16 p2, 0x64
 
-    invoke-static {p2}, Lc5/i;->c(I)F
+    invoke-static {p2}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result p2
 
     const/16 p4, 0xb4
 
-    invoke-static {p4}, Lc5/i;->c(I)F
+    invoke-static {p4}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result p4
 
@@ -228,7 +228,7 @@
     .line 3
     :cond_1
     :goto_0
-    invoke-static {p1}, Lc2/n0;->e(F)I
+    invoke-static {p1}, Lb5/m;->r(F)I
 
     move-result p1
 
@@ -240,7 +240,7 @@
     const-string p1, "mainActivity"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

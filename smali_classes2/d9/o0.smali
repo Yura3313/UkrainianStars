@@ -1,5 +1,5 @@
 .class public Ld9/o0;
-.super Ly7/g;
+.super Lz7/g;
 .source "MessageListVM.java"
 
 
@@ -14,7 +14,7 @@
     .line 1
     iput-object p1, p0, Ld9/o0;->b:Ld9/q0;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -49,7 +49,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lm8/a0;
+    check-cast v0, Ln8/w;
 
     .line 3
     iget-object v2, p0, Ld9/o0;->b:Ld9/q0;
@@ -58,7 +58,7 @@
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 5
-    instance-of v2, v0, Lm8/l0;
+    instance-of v2, v0, Ln8/f0;
 
     if-eqz v2, :cond_1
 
@@ -68,15 +68,15 @@
     :cond_1
     iget-object v2, p0, Ld9/o0;->b:Ld9/q0;
 
-    iget-object v2, v2, Ld9/q0;->b:Ly7/f;
+    iget-object v2, v2, Ld9/q0;->b:Lz7/f;
 
     .line 7
-    iget-object v2, v2, Ly7/f;->f:Lh8/b;
+    iget-object v2, v2, Lz7/f;->f:Li8/b;
 
     const-string v3, "showConversationInfoScreen"
 
     .line 8
-    invoke-virtual {v2, v3}, Lh8/b;->c(Ljava/lang/String;)Z
+    invoke-virtual {v2, v3}, Li8/b;->c(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -88,12 +88,12 @@
     const/4 v5, 0x1
 
     .line 10
-    invoke-virtual {v3, v4, v0, v5, v2}, Ld9/q0;->b(Lm8/a0;Lm8/a0;ZZ)Ljava/util/List;
+    invoke-virtual {v3, v4, v0, v5, v2}, Ld9/q0;->b(Ln8/w;Ln8/w;ZZ)Ljava/util/List;
 
     move-result-object v0
 
     .line 11
-    invoke-static {v0}, Lid/g;->a(Ljava/util/List;)Z
+    invoke-static {v0}, Lk2/h;->a(Ljava/util/List;)Z
 
     move-result v2
 

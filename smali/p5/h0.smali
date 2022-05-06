@@ -15,7 +15,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/security/interfaces/RSAPrivateCrtKey;Lp5/z;)V
+.method public constructor <init>(Ljava/security/interfaces/RSAPrivateCrtKey;I)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -27,7 +27,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {p2}, Lp5/m0;->d(Lp5/z;)V
+    invoke-static {p2}, Lp5/m0;->d(I)V
 
     .line 3
     invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateCrtKey;->getModulus()Ljava/math/BigInteger;
@@ -44,14 +44,18 @@
     iput-object p1, p0, Lp5/h0;->a:Ljava/security/interfaces/RSAPrivateCrtKey;
 
     .line 5
-    invoke-static {p2}, Lp5/m0;->d(Lp5/z;)V
+    invoke-static {p2}, Lp5/m0;->d(I)V
 
     .line 6
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-static {p2}, Lp5/b0;->b(I)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string p2, "withRSA"
 
@@ -65,11 +69,11 @@
     iput-object p2, p0, Lp5/h0;->c:Ljava/lang/String;
 
     .line 8
-    sget-object p2, Lp5/x;->j:Lp5/x;
+    sget-object p2, Lp5/z;->j:Lp5/z;
 
     const-string v0, "RSA"
 
-    invoke-virtual {p2, v0}, Lp5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p2, v0}, Lp5/z;->a(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p2
 
@@ -111,11 +115,11 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lp5/x;->g:Lp5/x;
+    sget-object v0, Lp5/z;->g:Lp5/z;
 
     iget-object v1, p0, Lp5/h0;->c:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lp5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lp5/z;->a(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -137,7 +141,7 @@
     .line 5
     iget-object v2, p0, Lp5/h0;->c:Ljava/lang/String;
 
-    invoke-virtual {v0, v2}, Lp5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v2}, Lp5/z;->a(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 

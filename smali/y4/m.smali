@@ -6,22 +6,22 @@
 
 
 # instance fields
-.field public final synthetic a:Ljava/util/List;
+.field public final synthetic g:Ljava/util/List;
 
-.field public final synthetic b:Lc5/f;
+.field public final synthetic h:Lc5/f;
 
-.field public final synthetic h:Ly4/n;
+.field public final synthetic i:Ly4/n;
 
 
 # direct methods
 .method public constructor <init>(Ly4/n;Ljava/util/List;Lc5/f;)V
     .locals 0
 
-    iput-object p1, p0, Ly4/m;->h:Ly4/n;
+    iput-object p1, p0, Ly4/m;->i:Ly4/n;
 
-    iput-object p2, p0, Ly4/m;->a:Ljava/util/List;
+    iput-object p2, p0, Ly4/m;->g:Ljava/util/List;
 
-    iput-object p3, p0, Ly4/m;->b:Lc5/f;
+    iput-object p3, p0, Ly4/m;->h:Lc5/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,13 +38,13 @@
     const/16 v0, -0xb
 
     :try_start_0
-    iget-object v2, v1, Ly4/m;->h:Ly4/n;
+    iget-object v2, v1, Ly4/m;->i:Ly4/n;
 
     .line 1
     iget-object v2, v2, Ly4/n;->c:Ly4/o;
 
     .line 2
-    iget-object v3, v1, Ly4/m;->a:Ljava/util/List;
+    iget-object v3, v1, Ly4/m;->g:Ljava/util/List;
 
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -104,11 +104,11 @@
     if-nez v2, :cond_c
 
     .line 4
-    iget-object v2, v1, Ly4/m;->h:Ly4/n;
+    iget-object v2, v1, Ly4/m;->i:Ly4/n;
 
-    iget-object v3, v1, Ly4/m;->a:Ljava/util/List;
+    iget-object v3, v1, Ly4/m;->g:Ljava/util/List;
 
-    iget-object v4, v1, Ly4/m;->b:Lc5/f;
+    iget-object v4, v1, Ly4/m;->h:Lc5/f;
 
     .line 5
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -270,6 +270,10 @@
     new-instance v9, Ljava/io/FileOutputStream;
 
     invoke-direct {v9, v12}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+
+    invoke-static {v9, v12}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;)Ljava/io/FileOutputStream;
+
+    move-result-object v9
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_3
 
@@ -327,7 +331,7 @@
 
     .line 9
     :try_start_b
-    sget-object v0, Ly4/i0;->a:Landroidx/fragment/app/t;
+    sget-object v0, Ly4/k0;->a:Landroidx/fragment/app/t;
 
     invoke-virtual {v0, v2, v3}, Landroidx/fragment/app/t;->b(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
@@ -356,7 +360,7 @@
 
     .line 11
     :try_start_d
-    sget-object v0, Ly4/i0;->a:Landroidx/fragment/app/t;
+    sget-object v0, Ly4/k0;->a:Landroidx/fragment/app/t;
 
     invoke-virtual {v0, v2, v3}, Landroidx/fragment/app/t;->b(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
@@ -418,7 +422,7 @@
 
     .line 13
     :try_start_11
-    sget-object v0, Ly4/i0;->a:Landroidx/fragment/app/t;
+    sget-object v0, Ly4/k0;->a:Landroidx/fragment/app/t;
 
     invoke-virtual {v0, v2, v3}, Landroidx/fragment/app/t;->b(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
@@ -474,9 +478,9 @@
 
     .line 16
     :cond_c
-    iget-object v0, v1, Ly4/m;->h:Ly4/n;
+    iget-object v0, v1, Ly4/m;->i:Ly4/n;
 
-    iget-object v2, v1, Ly4/m;->b:Lc5/f;
+    iget-object v2, v1, Ly4/m;->h:Lc5/f;
 
     const/16 v3, -0xc
 
@@ -484,7 +488,7 @@
     :try_start_12
     iget-object v0, v0, Ly4/n;->a:Landroid/content/Context;
 
-    invoke-static {v0}, Lc5/i;->a(Landroid/content/Context;)Landroid/content/Context;
+    invoke-static {v0}, Lc5/i;->e(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -515,7 +519,7 @@
 
     .line 20
     :catch_5
-    iget-object v2, v1, Ly4/m;->b:Lc5/f;
+    iget-object v2, v1, Ly4/m;->h:Lc5/f;
 
     check-cast v2, Lc5/c;
 

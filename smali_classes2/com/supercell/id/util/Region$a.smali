@@ -74,13 +74,13 @@
 
     .line 6
     :cond_0
-    invoke-static {}, Ly4/x;->j()V
+    invoke-static {}, Ls3/b;->g()V
 
     throw v0
 
     .line 7
     :cond_1
-    invoke-static {}, Ly4/x;->j()V
+    invoke-static {}, Ls3/b;->g()V
 
     throw v0
 
@@ -88,7 +88,7 @@
     const-string p1, "parcel"
 
     .line 8
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

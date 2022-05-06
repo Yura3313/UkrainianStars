@@ -261,7 +261,7 @@
     if-eqz v1, :cond_0
 
     .line 35
-    invoke-virtual {v0, v1, p0}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p0}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 36
     :cond_0
@@ -772,7 +772,7 @@
     .line 63
     iget v15, v0, Lw0/h$c;->j:F
 
-    sget-object v16, Lw0/h;->o:Landroid/graphics/PorterDuff$Mode;
+    sget-object v16, Lw0/h;->p:Landroid/graphics/PorterDuff$Mode;
 
     .line 64
     invoke-static {v4}, Landroid/graphics/Color;->alpha(I)I
@@ -944,7 +944,7 @@
     .line 89
     iget v6, v0, Lw0/h$c;->i:F
 
-    sget-object v13, Lw0/h;->o:Landroid/graphics/PorterDuff$Mode;
+    sget-object v13, Lw0/h;->p:Landroid/graphics/PorterDuff$Mode;
 
     .line 90
     invoke-static {v4}, Landroid/graphics/Color;->alpha(I)I

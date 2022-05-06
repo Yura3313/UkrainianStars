@@ -137,7 +137,7 @@
     iget-object v0, p0, Lb7/c;->a:Lj6/b;
 
     .line 3
-    iget v0, v0, Lj6/b;->a:I
+    iget v0, v0, Lj6/b;->g:I
 
     const/4 v10, 0x1
 
@@ -173,7 +173,7 @@
     iget-object p2, p0, Lb7/c;->a:Lj6/b;
 
     .line 7
-    iget p2, p2, Lj6/b;->b:I
+    iget p2, p2, Lj6/b;->h:I
 
     sub-int/2addr p2, v10
 
@@ -416,21 +416,21 @@
 
     .line 27
     :cond_a
-    sget-object p1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 28
     throw p1
 
     .line 29
     :cond_b
-    sget-object p1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 30
     throw p1
 
     .line 31
     :cond_c
-    sget-object p1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 32
     goto :goto_7
@@ -597,7 +597,7 @@
     if-ne v15, v0, :cond_7
 
     .line 6
-    invoke-static {v13, v14, v1, v4}, Landroidx/lifecycle/a0;->d(IIII)F
+    invoke-static {v13, v14, v1, v4}, Ldc/a;->d(IIII)F
 
     move-result v0
 
@@ -643,7 +643,7 @@
     move/from16 v5, p2
 
     .line 7
-    invoke-static {v5, v6, v1, v4}, Landroidx/lifecycle/a0;->d(IIII)F
+    invoke-static {v5, v6, v1, v4}, Ldc/a;->d(IIII)F
 
     move-result v0
 
@@ -690,7 +690,7 @@
     iget-object v3, p0, Lb7/c;->a:Lj6/b;
 
     .line 3
-    iget v3, v3, Lj6/b;->a:I
+    iget v3, v3, Lj6/b;->g:I
 
     if-lt p3, v3, :cond_1
 
@@ -747,7 +747,7 @@
     iget-object v1, p0, Lb7/c;->a:Lj6/b;
 
     .line 5
-    iget v1, v1, Lj6/b;->b:I
+    iget v1, v1, Lj6/b;->h:I
 
     if-lt p4, v1, :cond_3
 

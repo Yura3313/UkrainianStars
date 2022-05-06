@@ -1,5 +1,5 @@
 .class Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase$1;
-.super Lp0/o$a;
+.super Lp0/m$a;
 .source "MediaSessionCompat.java"
 
 
@@ -25,14 +25,14 @@
     .line 1
     iput-object p1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase$1;->this$0:Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;
 
-    invoke-direct {p0}, Lp0/o$a;-><init>()V
+    invoke-direct {p0}, Lp0/m$a;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onVolumeChanged(Lp0/o;)V
+.method public onVolumeChanged(Lp0/m;)V
     .locals 1
 
     .line 1

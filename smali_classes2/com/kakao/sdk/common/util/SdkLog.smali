@@ -18,15 +18,15 @@
 
 .field public static final MAX_SIZE:I = 0x64
 
-.field private static final instance$delegate:Lbe/c;
+.field private static final instance$delegate:Lae/c;
 
 
 # instance fields
-.field private final dateFormat$delegate:Lbe/c;
+.field private final dateFormat$delegate:Lae/c;
 
 .field private final enabled:Z
 
-.field private final logs$delegate:Lbe/c;
+.field private final logs$delegate:Lae/c;
 
 
 # direct methods
@@ -94,11 +94,11 @@
     .line 5
     sget-object v0, Lcom/kakao/sdk/common/util/SdkLog$Companion$instance$2;->INSTANCE:Lcom/kakao/sdk/common/util/SdkLog$Companion$instance$2;
 
-    invoke-static {v0}, Lbe/e;->f(Lke/a;)Lbe/c;
+    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
 
     move-result-object v0
 
-    sput-object v0, Lcom/kakao/sdk/common/util/SdkLog;->instance$delegate:Lbe/c;
+    sput-object v0, Lcom/kakao/sdk/common/util/SdkLog;->instance$delegate:Lae/c;
 
     return-void
 .end method
@@ -128,20 +128,20 @@
     .line 2
     sget-object p1, Lcom/kakao/sdk/common/util/SdkLog$logs$2;->INSTANCE:Lcom/kakao/sdk/common/util/SdkLog$logs$2;
 
-    invoke-static {p1}, Lbe/e;->f(Lke/a;)Lbe/c;
+    invoke-static {p1}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/kakao/sdk/common/util/SdkLog;->logs$delegate:Lbe/c;
+    iput-object p1, p0, Lcom/kakao/sdk/common/util/SdkLog;->logs$delegate:Lae/c;
 
     .line 3
     sget-object p1, Lcom/kakao/sdk/common/util/SdkLog$dateFormat$2;->INSTANCE:Lcom/kakao/sdk/common/util/SdkLog$dateFormat$2;
 
-    invoke-static {p1}, Lbe/e;->f(Lke/a;)Lbe/c;
+    invoke-static {p1}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/kakao/sdk/common/util/SdkLog;->dateFormat$delegate:Lbe/c;
+    iput-object p1, p0, Lcom/kakao/sdk/common/util/SdkLog;->dateFormat$delegate:Lae/c;
 
     return-void
 .end method
@@ -166,11 +166,11 @@
     return-void
 .end method
 
-.method public static final synthetic access$getInstance$cp()Lbe/c;
+.method public static final synthetic access$getInstance$cp()Lae/c;
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/kakao/sdk/common/util/SdkLog;->instance$delegate:Lbe/c;
+    sget-object v0, Lcom/kakao/sdk/common/util/SdkLog;->instance$delegate:Lae/c;
 
     return-object v0
 .end method
@@ -198,7 +198,7 @@
 .method private final getDateFormat()Ljava/text/SimpleDateFormat;
     .locals 3
 
-    iget-object v0, p0, Lcom/kakao/sdk/common/util/SdkLog;->dateFormat$delegate:Lbe/c;
+    iget-object v0, p0, Lcom/kakao/sdk/common/util/SdkLog;->dateFormat$delegate:Lae/c;
 
     sget-object v1, Lcom/kakao/sdk/common/util/SdkLog;->$$delegatedProperties:[Lpe/h;
 
@@ -206,7 +206,7 @@
 
     aget-object v1, v1, v2
 
-    invoke-interface {v0}, Lbe/c;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Lae/c;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -238,7 +238,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/kakao/sdk/common/util/SdkLog;->logs$delegate:Lbe/c;
+    iget-object v0, p0, Lcom/kakao/sdk/common/util/SdkLog;->logs$delegate:Lae/c;
 
     sget-object v1, Lcom/kakao/sdk/common/util/SdkLog;->$$delegatedProperties:[Lpe/h;
 
@@ -246,7 +246,7 @@
 
     aget-object v1, v1, v2
 
-    invoke-interface {v0}, Lbe/c;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Lae/c;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 

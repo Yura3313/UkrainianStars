@@ -1,57 +1,39 @@
-.class public final Lj3/sb0;
+.class public final synthetic Lj3/sb0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/uc0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lj3/uc0<",
-        "Landroid/os/Bundle;",
-        ">;"
-    }
-.end annotation
+.implements Ljava/util/concurrent/Callable;
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final a:Lj3/qb0;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>(Lj3/qb0;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Lj3/sb0;->a:Ljava/lang/String;
+    iput-object p1, p0, Lj3/sb0;->a:Lj3/qb0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Ljava/lang/Object;)V
+.method public final call()Ljava/lang/Object;
     .locals 2
 
+    iget-object v0, p0, Lj3/sb0;->a:Lj3/qb0;
+
     .line 1
-    check-cast p1, Landroid/os/Bundle;
+    new-instance v1, Lj3/rb0;
 
-    .line 2
-    iget-object v0, p0, Lj3/sb0;->a:Ljava/lang/String;
+    iget-object v0, v0, Lj3/qb0;->b:Lj3/jg0;
 
-    if-eqz v0, :cond_0
+    invoke-direct {v1, v0}, Lj3/rb0;-><init>(Lj3/jg0;)V
 
-    const-string v1, "omid_v"
-
-    .line 3
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_0
-    return-void
+    return-object v1
 .end method

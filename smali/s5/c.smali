@@ -6,7 +6,7 @@
 
 
 # static fields
-.field public static final a:Ljava/util/concurrent/Executor;
+.field public static final g:Ljava/util/concurrent/Executor;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {v0}, Ls5/c;-><init>()V
 
-    sput-object v0, Ls5/c;->a:Ljava/util/concurrent/Executor;
+    sput-object v0, Ls5/c;->g:Ljava/util/concurrent/Executor;
 
     return-void
 .end method

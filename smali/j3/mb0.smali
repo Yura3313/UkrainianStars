@@ -3,75 +3,69 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/wc0;
+.implements Lj3/cd0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lj3/wc0<",
-        "Lj3/nb0;",
+        "Lj3/cd0<",
+        "Landroid/os/Bundle;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lj3/am0;
+.field public final a:Ljava/lang/String;
 
-.field public final b:Lj3/pg0;
-
-.field public final c:Landroid/content/pm/PackageInfo;
-
-.field public final d:Lj3/qa;
+.field public final b:Z
 
 
 # direct methods
-.method public constructor <init>(Lj3/am0;Lj3/pg0;Landroid/content/pm/PackageInfo;Lj3/qa;)V
+.method public constructor <init>(Ljava/lang/String;Z)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj3/mb0;->a:Lj3/am0;
+    iput-object p1, p0, Lj3/mb0;->a:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lj3/mb0;->b:Lj3/pg0;
-
-    .line 4
-    iput-object p3, p0, Lj3/mb0;->c:Landroid/content/pm/PackageInfo;
-
-    .line 5
-    iput-object p4, p0, Lj3/mb0;->d:Lj3/qa;
+    iput-boolean p2, p0, Lj3/mb0;->b:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lj3/yl0;
+.method public final synthetic b(Ljava/lang/Object;)V
     .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lj3/yl0<",
-            "Lj3/nb0;",
-            ">;"
-        }
-    .end annotation
 
     .line 1
-    iget-object v0, p0, Lj3/mb0;->a:Lj3/am0;
+    check-cast p1, Landroid/os/Bundle;
 
-    new-instance v1, Lj3/pb0;
+    .line 2
+    iget-object v0, p0, Lj3/mb0;->a:Ljava/lang/String;
 
-    invoke-direct {v1, p0}, Lj3/pb0;-><init>(Lj3/mb0;)V
+    const-string v1, "gct"
 
-    invoke-interface {v0, v1}, Lj3/am0;->a(Ljava/util/concurrent/Callable;)Lj3/yl0;
+    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    move-result-object v0
+    .line 3
+    iget-boolean v0, p0, Lj3/mb0;->b:Z
 
-    return-object v0
+    if-eqz v0, :cond_0
+
+    const-string v0, "de"
+
+    const-string v1, "1"
+
+    .line 4
+    invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_0
+    return-void
 .end method

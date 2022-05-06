@@ -1,86 +1,203 @@
-.class public final Lj3/gn0;
+.class public abstract Lj3/gn0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# static fields
-.field public static final a:Ljava/lang/String;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<KeyProtoT::",
+        "Lj3/dt0;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
 
-.field public static final b:Ljava/lang/String;
+
+# instance fields
+.field public final a:Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/Class<",
+            "TKeyProtoT;>;"
+        }
+    .end annotation
+.end field
+
+.field public final b:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/Class<",
+            "*>;",
+            "Lj3/hn0<",
+            "*TKeyProtoT;>;>;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/Class<",
+            "*>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
+.method public varargs constructor <init>(Ljava/lang/Class;[Lj3/hn0;)V
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class<",
+            "TKeyProtoT;>;[",
+            "Lj3/hn0<",
+            "*TKeyProtoT;>;)V"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/SafeVarargs;
+    .end annotation
 
     .line 1
-    new-instance v0, Lcom/google/android/gms/internal/ads/s2;
-
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/s2;-><init>()V
-
-    const-string v0, "type.googleapis.com/google.crypto.tink.AesCtrHmacAeadKey"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sput-object v0, Lj3/gn0;->a:Ljava/lang/String;
+    iput-object p1, p0, Lj3/gn0;->a:Ljava/lang/Class;
 
     .line 3
-    new-instance v0, Lcom/google/android/gms/internal/ads/y2;
+    new-instance p1, Ljava/util/HashMap;
 
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/y2;-><init>()V
-
-    const-string v0, "type.googleapis.com/google.crypto.tink.AesGcmKey"
-
-    sput-object v0, Lj3/gn0;->b:Ljava/lang/String;
+    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
     .line 4
-    new-instance v0, Lcom/google/android/gms/internal/ads/x2;
+    array-length v0, p2
 
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/x2;-><init>()V
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, v0, :cond_2
+
+    aget-object v3, p2, v2
 
     .line 5
-    new-instance v0, Lcom/google/android/gms/internal/ads/c3;
-
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/c3;-><init>()V
+    iget-object v4, v3, Lj3/hn0;->a:Ljava/lang/Class;
 
     .line 6
-    new-instance v0, Lcom/google/android/gms/internal/ads/f3;
+    invoke-virtual {p1, v4}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/f3;-><init>()V
+    move-result v4
+
+    if-eqz v4, :cond_1
 
     .line 7
-    new-instance v0, Lcom/google/android/gms/internal/ads/b3;
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/b3;-><init>()V
+    const-string p2, "KeyTypeManager constructed with duplicate factories for primitive "
 
     .line 8
-    new-instance v0, Lcom/google/android/gms/internal/ads/h3;
-
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/h3;-><init>()V
+    iget-object v0, v3, Lj3/hn0;->a:Ljava/lang/Class;
 
     .line 9
-    sget v0, Lcom/google/android/gms/internal/ads/g6;->a:I
+    invoke-virtual {v0}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p2
+
+    goto :goto_1
+
+    :cond_0
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, p2}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+
+    move-object p2, v0
+
+    :goto_1
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 
     .line 10
-    :try_start_0
-    invoke-static {}, Lj3/gn0;->a()V
-    :try_end_0
-    .catch Ljava/security/GeneralSecurityException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-void
-
-    :catch_0
-    move-exception v0
+    :cond_1
+    iget-object v4, v3, Lj3/hn0;->a:Ljava/lang/Class;
 
     .line 11
-    new-instance v1, Ljava/lang/ExceptionInInitializerError;
+    invoke-virtual {p1, v4, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-direct {v1, v0}, Ljava/lang/ExceptionInInitializerError;-><init>(Ljava/lang/Throwable;)V
+    add-int/lit8 v2, v2, 0x1
 
-    throw v1
+    goto :goto_0
+
+    .line 12
+    :cond_2
+    array-length v0, p2
+
+    if-lez v0, :cond_3
+
+    .line 13
+    aget-object p2, p2, v1
+
+    .line 14
+    iget-object p2, p2, Lj3/hn0;->a:Ljava/lang/Class;
+
+    .line 15
+    iput-object p2, p0, Lj3/gn0;->c:Ljava/lang/Class;
+
+    goto :goto_2
+
+    .line 16
+    :cond_3
+    const-class p2, Ljava/lang/Void;
+
+    iput-object p2, p0, Lj3/gn0;->c:Ljava/lang/Class;
+
+    .line 17
+    :goto_2
+    invoke-static {p1}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lj3/gn0;->b:Ljava/util/Map;
+
+    return-void
 .end method
 
-.method public static a()V
-    .locals 1
+
+# virtual methods
+.method public abstract a()Ljava/lang/String;
+.end method
+
+.method public final b(Lj3/dt0;Ljava/lang/Class;)Ljava/lang/Object;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<P:",
+            "Ljava/lang/Object;",
+            ">(TKeyProtoT;",
+            "Ljava/lang/Class<",
+            "TP;>;)TP;"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/GeneralSecurityException;
@@ -88,84 +205,121 @@
     .end annotation
 
     .line 1
-    sget v0, Lj3/eo0;->a:I
+    iget-object v0, p0, Lj3/gn0;->b:Ljava/util/Map;
 
     .line 2
-    new-instance v0, Lcom/google/android/gms/internal/ads/p3;
+    invoke-interface {v0, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/p3;-><init>()V
+    move-result-object v0
 
-    invoke-static {v0}, Lcom/google/android/gms/internal/ads/n2;->d(Lcom/google/android/gms/internal/ads/h2;)V
+    check-cast v0, Lj3/hn0;
+
+    if-eqz v0, :cond_0
 
     .line 3
-    new-instance v0, Lcom/google/android/gms/internal/ads/m3;
+    invoke-virtual {v0, p1}, Lj3/hn0;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/m3;-><init>()V
+    move-result-object p1
 
-    invoke-static {v0}, Lcom/google/android/gms/internal/ads/n2;->d(Lcom/google/android/gms/internal/ads/h2;)V
+    return-object p1
 
     .line 4
-    new-instance v0, Lj3/do0;
-
-    invoke-direct {v0}, Lj3/do0;-><init>()V
-
-    invoke-static {v0}, Lcom/google/android/gms/internal/ads/n2;->f(Lj3/cn0;)V
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
     .line 5
-    new-instance v0, Lcom/google/android/gms/internal/ads/s2;
+    invoke-virtual {p2}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/s2;-><init>()V
+    move-result-object p2
 
-    invoke-static {v0}, Lcom/google/android/gms/internal/ads/n2;->d(Lcom/google/android/gms/internal/ads/h2;)V
+    const/16 v0, 0x29
 
-    .line 6
-    new-instance v0, Lcom/google/android/gms/internal/ads/x2;
+    invoke-static {p2, v0}, La1/e;->a(Ljava/lang/String;I)I
 
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/x2;-><init>()V
+    move-result v0
 
-    invoke-static {v0}, Lcom/google/android/gms/internal/ads/n2;->d(Lcom/google/android/gms/internal/ads/h2;)V
+    const-string v1, "Requested primitive class "
 
-    .line 7
-    new-instance v0, Lcom/google/android/gms/internal/ads/y2;
+    const-string v2, " not supported."
 
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/y2;-><init>()V
+    invoke-static {v0, v1, p2, v2}, Lh1/i;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/android/gms/internal/ads/n2;->d(Lcom/google/android/gms/internal/ads/h2;)V
+    move-result-object p2
 
-    .line 8
-    new-instance v0, Lcom/google/android/gms/internal/ads/b3;
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/b3;-><init>()V
+    throw p1
+.end method
 
-    invoke-static {v0}, Lcom/google/android/gms/internal/ads/n2;->d(Lcom/google/android/gms/internal/ads/h2;)V
+.method public abstract c()I
+.end method
 
-    .line 9
-    new-instance v0, Lcom/google/android/gms/internal/ads/c3;
+.method public final d()Ljava/util/Set;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Set<",
+            "Ljava/lang/Class<",
+            "*>;>;"
+        }
+    .end annotation
 
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/c3;-><init>()V
+    .line 1
+    iget-object v0, p0, Lj3/gn0;->b:Ljava/util/Map;
 
-    invoke-static {v0}, Lcom/google/android/gms/internal/ads/n2;->d(Lcom/google/android/gms/internal/ads/h2;)V
+    invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
-    .line 10
-    new-instance v0, Lcom/google/android/gms/internal/ads/f3;
+    move-result-object v0
 
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/f3;-><init>()V
+    return-object v0
+.end method
 
-    invoke-static {v0}, Lcom/google/android/gms/internal/ads/n2;->d(Lcom/google/android/gms/internal/ads/h2;)V
+.method public e()Lj3/de;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lj3/de;"
+        }
+    .end annotation
 
-    .line 11
-    new-instance v0, Lcom/google/android/gms/internal/ads/h3;
+    .line 1
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/h3;-><init>()V
+    const-string v1, "Creating keys is not supported."
 
-    invoke-static {v0}, Lcom/google/android/gms/internal/ads/n2;->d(Lcom/google/android/gms/internal/ads/h2;)V
+    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
-    .line 12
-    new-instance v0, Lj3/fn0;
+    throw v0
+.end method
 
-    invoke-direct {v0}, Lj3/fn0;-><init>()V
+.method public abstract f(Lj3/dt0;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TKeyProtoT;)V"
+        }
+    .end annotation
 
-    invoke-static {v0}, Lcom/google/android/gms/internal/ads/n2;->f(Lj3/cn0;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
+.end method
 
-    return-void
+.method public abstract g(Lj3/ar0;)Lj3/dt0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/ar0;",
+            ")TKeyProtoT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzegz;
+        }
+    .end annotation
 .end method

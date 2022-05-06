@@ -56,11 +56,11 @@
 
     .line 2
     :try_start_0
-    sget-object v1, Lc0/e;->d:Lm/h;
+    sget-object v1, Lc0/e;->d:Lm/g;
 
     iget-object v2, p0, Lc0/d;->a:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Lm/h;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Lm/g;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -77,7 +77,7 @@
     :cond_0
     iget-object v3, p0, Lc0/d;->a:Ljava/lang/String;
 
-    invoke-virtual {v1, v3}, Lm/h;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v3}, Lm/g;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
     monitor-exit v0

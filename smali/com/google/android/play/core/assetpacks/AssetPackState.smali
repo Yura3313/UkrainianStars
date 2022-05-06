@@ -11,12 +11,12 @@
     return-void
 .end method
 
-.method public static a(Landroid/os/Bundle;Ljava/lang/String;Lcom/google/android/play/core/assetpacks/r0;Lcom/google/android/play/core/assetpacks/v;)Lcom/google/android/play/core/assetpacks/AssetPackState;
+.method public static a(Landroid/os/Bundle;Ljava/lang/String;Lcom/google/android/play/core/assetpacks/r0;Lcom/google/android/play/core/assetpacks/w;)Lcom/google/android/play/core/assetpacks/AssetPackState;
     .locals 10
 
     const-string v0, "status"
 
-    invoke-static {v0, p1}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -24,13 +24,13 @@
 
     move-result v0
 
-    invoke-interface {p3, v0, p1}, Lcom/google/android/play/core/assetpacks/v;->b(ILjava/lang/String;)I
+    invoke-interface {p3, v0, p1}, Lcom/google/android/play/core/assetpacks/w;->b(ILjava/lang/String;)I
 
     move-result v2
 
     const-string p3, "error_code"
 
-    invoke-static {p3, p1}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p3, p1}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p3
 
@@ -40,7 +40,7 @@
 
     const-string p3, "bytes_downloaded"
 
-    invoke-static {p3, p1}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p3, p1}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p3
 
@@ -50,7 +50,7 @@
 
     const-string p3, "total_bytes_to_download"
 
-    invoke-static {p3, p1}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p3, p1}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p3
 
@@ -109,7 +109,7 @@
 .method public static b(Ljava/lang/String;IIJJD)Lcom/google/android/play/core/assetpacks/AssetPackState;
     .locals 10
 
-    new-instance v9, Lcom/google/android/play/core/assetpacks/c0;
+    new-instance v9, Lcom/google/android/play/core/assetpacks/d0;
 
     const-wide/high16 v0, 0x4059000000000000L    # 100.0
 
@@ -133,7 +133,7 @@
 
     move-wide v6, p5
 
-    invoke-direct/range {v0 .. v8}, Lcom/google/android/play/core/assetpacks/c0;-><init>(Ljava/lang/String;IIJJI)V
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/play/core/assetpacks/d0;-><init>(Ljava/lang/String;IIJJI)V
 
     return-object v9
 .end method

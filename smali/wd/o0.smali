@@ -1,35 +1,34 @@
 .class public final Lwd/o0;
 .super Lle/j;
-.source "ProfileUtil.kt"
+.source "ShopStorage.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Lke/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lle/j;",
-        "Lke/p<",
-        "Landroid/graphics/drawable/Drawable;",
-        "Lqd/g;",
-        "Lbe/n;",
+        "Lke/l<",
+        "Lqc/b0;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lwd/p0;
+.field public final synthetic g:Lwd/q0$a;
 
 
 # direct methods
-.method public constructor <init>(Lwd/p0;)V
+.method public constructor <init>(Lwd/q0$a;)V
     .locals 0
 
-    iput-object p1, p0, Lwd/o0;->a:Lwd/p0;
+    iput-object p1, p0, Lwd/o0;->g:Lwd/q0$a;
 
-    const/4 p1, 0x2
+    const/4 p1, 0x1
 
     invoke-direct {p0, p1}, Lle/j;-><init>(I)V
 
@@ -38,103 +37,58 @@
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
 
     .line 1
-    check-cast p1, Landroid/graphics/drawable/Drawable;
-
-    check-cast p2, Lqd/g;
+    check-cast p1, Lqc/b0;
 
     const/4 v0, 0x0
 
-    if-eqz p1, :cond_3
-
-    if-eqz p2, :cond_2
-
-    .line 2
-    instance-of p2, p1, Landroid/graphics/drawable/BitmapDrawable;
-
-    if-nez p2, :cond_0
-
-    move-object p1, v0
-
-    :cond_0
-    check-cast p1, Landroid/graphics/drawable/BitmapDrawable;
-
     if-eqz p1, :cond_1
 
+    .line 2
+    iget-object v1, p0, Lwd/o0;->g:Lwd/q0$a;
+
+    iget-object v1, v1, Lwd/q0$a;->g:Lwd/q0;
+
+    new-instance v2, Lwd/q0$b$n;
+
+    invoke-direct {v2, p1}, Lwd/q0$b$n;-><init>(Lqc/b0;)V
+
+    invoke-virtual {v1, v2}, Lwd/u0;->a(Lwd/a;)V
+
     .line 3
-    invoke-virtual {p1}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
+    iget-object p1, p0, Lwd/o0;->g:Lwd/q0$a;
 
-    move-result-object p1
-
-    const-string p2, "it.bitmap"
-
-    invoke-static {p1, p2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    sget-object p2, Lwd/d;->e:Lwd/d$a;
+    iget-object p1, p1, Lwd/q0$a;->g:Lwd/q0;
 
     .line 4
-    sget-object p2, Lwd/d;->c:Lwd/c;
+    iget-object p1, p1, Lwd/q0;->e:Landroidx/appcompat/widget/m;
 
-    sget-object p2, Lwd/d;->c:Lwd/c;
+    if-eqz p1, :cond_0
 
     .line 5
-    iget-object p2, p0, Lwd/o0;->a:Lwd/p0;
-
-    iget-object p2, p2, Lwd/p0;->a:Lke/r;
-
-    const v0, -0x161617
-
-    invoke-static {p1, v0, v0, p2}, Lce/f;->d(Landroid/graphics/Bitmap;IILke/r;)V
-
-    goto :goto_0
+    invoke-virtual {p1}, Landroidx/appcompat/widget/m;->a()V
 
     .line 6
-    :cond_1
-    iget-object p1, p0, Lwd/o0;->a:Lwd/p0;
-
-    iget-object p1, p1, Lwd/p0;->a:Lke/r;
-
-    const/4 p2, 0x0
-
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p2
-
-    invoke-interface {p1, v0, v1, v2, p2}, Lke/r;->b(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lbe/n;
-
-    .line 7
-    :goto_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
-    :cond_2
-    const-string p1, "<anonymous parameter 1>"
+    :cond_0
+    const-string p1, "getItemsCache"
 
-    .line 8
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    .line 7
+    invoke-static {p1}, Ls3/b;->i(Ljava/lang/String;)V
 
     throw v0
 
-    :cond_3
-    const-string p1, "drawable"
+    :cond_1
+    const-string p1, "it"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    .line 8
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

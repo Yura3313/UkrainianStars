@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/Throwable;
+.field public final synthetic g:Ljava/lang/Throwable;
 
-.field public final synthetic b:Lxe/k$b$a;
+.field public final synthetic h:Lxe/k$b$a;
 
 
 # direct methods
@@ -28,9 +28,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lxe/k$b$a$b;->b:Lxe/k$b$a;
+    iput-object p1, p0, Lxe/k$b$a$b;->h:Lxe/k$b$a;
 
-    iput-object p2, p0, Lxe/k$b$a$b;->a:Ljava/lang/Throwable;
+    iput-object p2, p0, Lxe/k$b$a$b;->g:Ljava/lang/Throwable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,13 +43,13 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lxe/k$b$a$b;->b:Lxe/k$b$a;
+    iget-object v0, p0, Lxe/k$b$a$b;->h:Lxe/k$b$a;
 
     iget-object v1, v0, Lxe/k$b$a;->a:Lxe/d;
 
     iget-object v0, v0, Lxe/k$b$a;->b:Lxe/k$b;
 
-    iget-object v2, p0, Lxe/k$b$a$b;->a:Ljava/lang/Throwable;
+    iget-object v2, p0, Lxe/k$b$a$b;->g:Ljava/lang/Throwable;
 
     invoke-interface {v1, v0, v2}, Lxe/d;->onFailure(Lxe/b;Ljava/lang/Throwable;)V
 

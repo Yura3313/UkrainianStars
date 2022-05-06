@@ -3,141 +3,153 @@
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 # interfaces
-.implements Lj1/h;
-.implements Lj1/k;
-.implements Lj1/m;
+.implements Lj1/e;
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/internal/ads/zzana;
+.field public final a:Ljava/util/Date;
 
-.field public b:Lj1/o;
+.field public final b:I
 
-.field public c:Lj1/u;
+.field public final c:Ljava/util/Set;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public d:Lf1/f;
+.field public final d:Z
+
+.field public final e:Landroid/location/Location;
+
+.field public final f:I
+
+.field public final g:Z
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzana;)V
+.method public constructor <init>(Ljava/util/Date;ILjava/util/Set;Landroid/location/Location;ZIZILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Date;",
+            "I",
+            "Ljava/util/Set<",
+            "Ljava/lang/String;",
+            ">;",
+            "Landroid/location/Location;",
+            "ZIZI",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj3/l6;->a:Lcom/google/android/gms/internal/ads/zzana;
-
-    return-void
-.end method
-
-.method public static c(Lcom/google/android/gms/ads/mediation/MediationNativeAdapter;Lj1/u;Lj1/o;)V
-    .locals 0
-
-    .line 1
-    instance-of p0, p0, Lcom/google/ads/mediation/admob/AdMobAdapter;
-
-    if-eqz p0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    new-instance p0, Ljava/lang/Object;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lj3/l6;->a:Ljava/util/Date;
 
     .line 3
-    new-instance p1, Lcom/google/android/gms/internal/ads/zzano;
-
-    invoke-direct {p1}, Lcom/google/android/gms/internal/ads/zzano;-><init>()V
+    iput p2, p0, Lj3/l6;->b:I
 
     .line 4
-    monitor-enter p0
+    iput-object p3, p0, Lj3/l6;->c:Ljava/util/Set;
 
     .line 5
-    :try_start_0
-    monitor-exit p0
+    iput-object p4, p0, Lj3/l6;->e:Landroid/location/Location;
+
+    .line 6
+    iput-boolean p5, p0, Lj3/l6;->d:Z
+
+    .line 7
+    iput p6, p0, Lj3/l6;->f:I
+
+    .line 8
+    iput-boolean p7, p0, Lj3/l6;->g:Z
 
     return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p1
 .end method
 
 
 # virtual methods
-.method public final a(Lcom/google/android/gms/ads/mediation/MediationInterstitialAdapter;I)V
-    .locals 0
-
-    const-string p1, "#008 Must be called on the main UI thread."
-
-    .line 1
-    invoke-static {p1}, Lc2/h;->d(Ljava/lang/String;)V
-
-    .line 2
-    :try_start_0
-    iget-object p1, p0, Lj3/l6;->a:Lcom/google/android/gms/internal/ads/zzana;
-
-    invoke-interface {p1, p2}, Lcom/google/android/gms/internal/ads/zzana;->H0(I)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-void
-
-    :catch_0
-    move-exception p1
-
-    const-string p2, "#007 Could not call remote method."
-
-    .line 3
-    invoke-static {p2, p1}, Lp0/d;->f(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    return-void
-.end method
-
-.method public final b(Lcom/google/android/gms/ads/mediation/MediationNativeAdapter;Lj1/o;)V
+.method public final a()I
     .locals 1
 
-    const-string v0, "#008 Must be called on the main UI thread."
+    .line 1
+    iget v0, p0, Lj3/l6;->f:I
+
+    return v0
+.end method
+
+.method public final b()Z
+    .locals 1
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
     .line 1
-    invoke-static {v0}, Lc2/h;->d(Ljava/lang/String;)V
+    iget-boolean v0, p0, Lj3/l6;->g:Z
 
-    .line 2
-    iput-object p2, p0, Lj3/l6;->b:Lj1/o;
+    return v0
+.end method
 
-    const/4 v0, 0x0
+.method public final c()Ljava/util/Date;
+    .locals 1
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
-    .line 3
-    iput-object v0, p0, Lj3/l6;->c:Lj1/u;
+    .line 1
+    iget-object v0, p0, Lj3/l6;->a:Ljava/util/Date;
 
-    .line 4
-    invoke-static {p1, v0, p2}, Lj3/l6;->c(Lcom/google/android/gms/ads/mediation/MediationNativeAdapter;Lj1/u;Lj1/o;)V
+    return-object v0
+.end method
 
-    .line 5
-    :try_start_0
-    iget-object p1, p0, Lj3/l6;->a:Lcom/google/android/gms/internal/ads/zzana;
+.method public final d()Z
+    .locals 1
 
-    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzana;->F()V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    .line 1
+    iget-boolean v0, p0, Lj3/l6;->d:Z
 
-    return-void
+    return v0
+.end method
 
-    :catch_0
-    move-exception p1
+.method public final e()Ljava/util/Set;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Set<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
 
-    const-string p2, "#007 Could not call remote method."
+    .line 1
+    iget-object v0, p0, Lj3/l6;->c:Ljava/util/Set;
 
-    .line 6
-    invoke-static {p2, p1}, Lp0/d;->f(Ljava/lang/String;Ljava/lang/Throwable;)V
+    return-object v0
+.end method
 
-    return-void
+.method public final f()Landroid/location/Location;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/l6;->e:Landroid/location/Location;
+
+    return-object v0
+.end method
+
+.method public final g()I
+    .locals 1
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 1
+    iget v0, p0, Lj3/l6;->b:I
+
+    return v0
 .end method

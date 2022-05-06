@@ -1,181 +1,104 @@
-.class public synthetic Lj3/rr;
+.class public final Lj3/rr;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/vs;
-.implements Lf9/b;
+.implements Lj3/rv0;
 
 
-# static fields
-.field public static final a:Lj3/vs;
+# instance fields
+.field public final synthetic a:I
 
-.field public static final b:[I
-
-.field public static final h:[I
-
-.field public static final i:[I
+.field public final b:Lj3/vv0;
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lj3/rr;
-
-    invoke-direct {v0}, Lj3/rr;-><init>()V
-
-    sput-object v0, Lj3/rr;->a:Lj3/vs;
-
-    const/4 v0, 0x4
-
-    new-array v0, v0, [I
-
-    .line 2
-    fill-array-data v0, :array_0
-
-    sput-object v0, Lj3/rr;->b:[I
-
-    const/4 v0, 0x3
-
-    new-array v0, v0, [I
-
-    .line 3
-    fill-array-data v0, :array_1
-
-    sput-object v0, Lj3/rr;->h:[I
-
-    const/16 v0, 0x8
-
-    new-array v0, v0, [I
-
-    .line 4
-    fill-array-data v0, :array_2
-
-    sput-object v0, Lj3/rr;->i:[I
-
-    return-void
-
-    nop
-
-    :array_0
-    .array-data 4
-        0x1
-        0x2
-        0x3
-        0x6
-    .end array-data
-
-    :array_1
-    .array-data 4
-        0xbb80
-        0xac44
-        0x7d00
-    .end array-data
-
-    :array_2
-    .array-data 4
-        0x2
-        0x1
-        0x2
-        0x3
-        0x3
-        0x4
-        0x4
-        0x5
-    .end array-data
-.end method
-
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Lj3/vv0;I)V
     .locals 0
 
     .line 1
+    iput p2, p0, Lj3/rr;->a:I
+
+    iput-object p1, p0, Lj3/rr;->b:Lj3/vv0;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-
-# virtual methods
-.method public b()Ljava/util/List;
-    .locals 1
-
-    const-string v0, "CREATE TABLE search_token_table (token TEXT PRIMARY KEY , type INTEGER , score TEXT NOT NULL  )"
-
-    .line 1
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public d()Ljava/lang/String;
+.method public static a(Lj3/vv0;)Lj3/rr;
     .locals 2
 
     .line 1
-    sget-object v0, Lva/a;->a:Ljava/util/Map;
+    new-instance v0, Lj3/rr;
 
-    const-string v1, "search_db"
+    const/4 v1, 0x1
 
-    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
+    invoke-direct {v0, p0, v1}, Lj3/rr;-><init>(Lj3/vv0;I)V
 
     return-object v0
 .end method
 
-.method public e(Ljava/lang/Object;)V
-    .locals 0
+.method public static b(Lj3/vv0;)Lj3/rr;
+    .locals 2
 
     .line 1
-    check-cast p1, Lj3/tr;
+    new-instance v0, Lj3/rr;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Lj3/rr;-><init>(Lj3/vv0;I)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 2
+
+    iget v0, p0, Lj3/rr;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
+
+    .line 1
+    :pswitch_0
+    iget-object v0, p0, Lj3/rr;->b:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/Set;
 
     .line 2
-    invoke-interface {p1}, Lj3/tr;->X1()V
+    new-instance v1, Lj3/mr;
 
-    return-void
-.end method
+    invoke-direct {v1, v0}, Lj3/mr;-><init>(Ljava/util/Set;)V
 
-.method public f()Ljava/util/List;
-    .locals 1
+    return-object v1
 
-    const-string v0, "search_token_table"
+    .line 3
+    :goto_0
+    iget-object v0, p0, Lj3/rr;->b:Lj3/vv0;
 
-    .line 1
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    return-object v0
-.end method
+    check-cast v0, Lj3/x00;
 
-.method public g(I)Ljava/util/List;
-    .locals 0
+    .line 4
+    new-instance v1, Lj3/t00;
 
-    .line 1
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+    invoke-direct {v1, v0}, Lj3/t00;-><init>(Lj3/x00;)V
 
-    move-result-object p1
+    return-object v1
 
-    return-object p1
-.end method
-
-.method public getTag()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "Helpshift_SearchDB"
-
-    return-object v0
-.end method
-
-.method public h()I
-    .locals 1
-
-    const/4 v0, 0x1
-
-    return v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

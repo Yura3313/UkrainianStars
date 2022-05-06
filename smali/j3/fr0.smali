@@ -1,42 +1,35 @@
-.class public interface abstract Lj3/fr0;
-.super Ljava/lang/Object;
+.class public abstract Lj3/fr0;
+.super Lj3/ar0;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
-# interfaces
-.implements Ljava/lang/Comparable;
 
+# direct methods
+.method public constructor <init>()V
+    .locals 0
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T::",
-        "Lj3/fr0<",
-        "TT;>;>",
-        "Ljava/lang/Object;",
-        "Ljava/lang/Comparable<",
-        "TT;>;"
-    }
-.end annotation
+    .line 1
+    invoke-direct {p0}, Lj3/ar0;-><init>()V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract D(Lj3/cq0;Lj3/os0;)Lj3/cq0;
+.method public abstract F(Lj3/ar0;II)Z
 .end method
 
-.method public abstract K0()Z
+.method public final m()I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
 .end method
 
-.method public abstract R()Lj3/gu0;
-.end method
+.method public final n()Z
+    .locals 1
 
-.method public abstract W(Lj3/us0;Lj3/us0;)Lj3/us0;
-.end method
+    const/4 v0, 0x1
 
-.method public abstract m0()Lj3/ju0;
-.end method
-
-.method public abstract z0()Z
-.end method
-
-.method public abstract zzv()I
+    return v0
 .end method

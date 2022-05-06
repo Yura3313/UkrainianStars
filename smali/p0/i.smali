@@ -1,42 +1,108 @@
-.class public Lp0/i;
-.super Lp0/f;
-.source "MediaBrowserServiceCompatApi23.java"
+.class public final Lp0/i;
+.super Ljava/lang/Object;
+.source "MediaSessionManager.java"
+
+
+# instance fields
+.field public a:Lp0/j;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lp0/j;)V
-    .locals 0
+.method public constructor <init>(Landroid/media/session/MediaSessionManager$RemoteUserInfo;)V
+    .locals 1
+
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    new-instance v0, Lp0/k;
+
+    invoke-direct {v0, p1}, Lp0/k;-><init>(Landroid/media/session/MediaSessionManager$RemoteUserInfo;)V
+
+    iput-object v0, p0, Lp0/i;->a:Lp0/j;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;II)V
+    .locals 2
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lp0/f;-><init>(Landroid/content/Context;Lp0/h;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1c
+
+    if-lt v0, v1, :cond_0
+
+    .line 3
+    new-instance v0, Lp0/k;
+
+    invoke-direct {v0, p1, p2, p3}, Lp0/k;-><init>(Ljava/lang/String;II)V
+
+    iput-object v0, p0, Lp0/i;->a:Lp0/j;
+
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    new-instance v0, Lp0/l;
+
+    invoke-direct {v0, p1, p2, p3}, Lp0/l;-><init>(Ljava/lang/String;II)V
+
+    iput-object v0, p0, Lp0/i;->a:Lp0/j;
+
+    :goto_0
     return-void
 .end method
 
 
 # virtual methods
-.method public onLoadItem(Ljava/lang/String;Landroid/service/media/MediaBrowserService$Result;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Landroid/service/media/MediaBrowserService$Result<",
-            "Landroid/media/browse/MediaBrowser$MediaItem;",
-            ">;)V"
-        }
-    .end annotation
+.method public equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    if-ne p0, p1, :cond_0
+
+    const/4 p1, 0x1
+
+    return p1
 
     .line 1
-    iget-object v0, p0, Lp0/f;->a:Lp0/h;
+    :cond_0
+    instance-of v0, p1, Lp0/i;
 
-    check-cast v0, Lp0/j;
+    if-nez v0, :cond_1
 
-    new-instance v1, Lp0/g;
+    const/4 p1, 0x0
 
-    invoke-direct {v1, p2}, Lp0/g;-><init>(Landroid/service/media/MediaBrowserService$Result;)V
+    return p1
 
-    invoke-interface {v0, p1, v1}, Lp0/j;->a(Ljava/lang/String;Lp0/g;)V
+    .line 2
+    :cond_1
+    iget-object v0, p0, Lp0/i;->a:Lp0/j;
 
-    return-void
+    check-cast p1, Lp0/i;
+
+    iget-object p1, p1, Lp0/i;->a:Lp0/j;
+
+    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lp0/i;->a:Lp0/j;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    move-result v0
+
+    return v0
 .end method

@@ -82,7 +82,7 @@
     move-result-object v0
 
     .line 6
-    sget-object v1, Landroidx/lifecycle/q;->n:Landroidx/lifecycle/q;
+    sget-object v1, Landroidx/lifecycle/r;->o:Landroidx/lifecycle/r;
 
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -91,10 +91,10 @@
 
     invoke-direct {v3}, Landroid/os/Handler;-><init>()V
 
-    iput-object v3, v1, Landroidx/lifecycle/q;->j:Landroid/os/Handler;
+    iput-object v3, v1, Landroidx/lifecycle/r;->k:Landroid/os/Handler;
 
     .line 8
-    iget-object v3, v1, Landroidx/lifecycle/q;->k:Landroidx/lifecycle/k;
+    iget-object v3, v1, Landroidx/lifecycle/r;->l:Landroidx/lifecycle/k;
 
     sget-object v4, Landroidx/lifecycle/f$b;->ON_CREATE:Landroidx/lifecycle/f$b;
 
@@ -108,9 +108,9 @@
     check-cast v0, Landroid/app/Application;
 
     .line 10
-    new-instance v3, Landroidx/lifecycle/r;
+    new-instance v3, Landroidx/lifecycle/s;
 
-    invoke-direct {v3, v1}, Landroidx/lifecycle/r;-><init>(Landroidx/lifecycle/q;)V
+    invoke-direct {v3, v1}, Landroidx/lifecycle/s;-><init>(Landroidx/lifecycle/r;)V
 
     invoke-virtual {v0, v3}, Landroid/app/Application;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
 

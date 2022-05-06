@@ -1,182 +1,143 @@
-.class public Landroidx/lifecycle/x;
-.super Landroidx/lifecycle/a0;
-.source "ViewModelProvider.java"
-
-
-# static fields
-.field public static k:Landroidx/lifecycle/x;
+.class public abstract Landroidx/lifecycle/x;
+.super Ljava/lang/Object;
+.source "ViewModel.java"
 
 
 # instance fields
-.field public j:Landroid/app/Application;
+.field public final a:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public volatile b:Z
 
 
 # direct methods
-.method public constructor <init>(Landroid/app/Application;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Landroidx/lifecycle/a0;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Landroidx/lifecycle/x;->j:Landroid/app/Application;
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Landroidx/lifecycle/x;->a:Ljava/util/Map;
+
+    const/4 v0, 0x0
+
+    .line 3
+    iput-boolean v0, p0, Landroidx/lifecycle/x;->b:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Ljava/lang/Class;)Landroidx/lifecycle/w;
-    .locals 5
+.method public a()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public b(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Landroidx/lifecycle/w;",
+            "Ljava/lang/Object;",
             ">(",
-            "Ljava/lang/Class<",
-            "TT;>;)TT;"
+            "Ljava/lang/String;",
+            "TT;)TT;"
         }
     .end annotation
 
-    const-string v0, "Cannot create an instance of "
-
     .line 1
-    const-class v1, Landroidx/lifecycle/a;
+    iget-object v0, p0, Landroidx/lifecycle/x;->a:Ljava/util/Map;
 
-    invoke-virtual {v1, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    const/4 v1, 0x1
-
-    :try_start_0
-    new-array v2, v1, [Ljava/lang/Class;
+    monitor-enter v0
 
     .line 2
-    const-class v3, Landroid/app/Application;
+    :try_start_0
+    iget-object v1, p0, Landroidx/lifecycle/x;->a:Ljava/util/Map;
 
-    const/4 v4, 0x0
-
-    aput-object v3, v2, v4
-
-    invoke-virtual {p1, v2}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
-
-    move-result-object v2
-
-    new-array v1, v1, [Ljava/lang/Object;
-
-    iget-object v3, p0, Landroidx/lifecycle/x;->j:Landroid/app/Application;
-
-    aput-object v3, v1, v4
-
-    invoke-virtual {v2, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Landroidx/lifecycle/w;
-    :try_end_0
-    .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_3
-    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object v1
-
-    :catch_0
-    move-exception v1
+    if-nez v1, :cond_0
 
     .line 3
-    new-instance v2, Ljava/lang/RuntimeException;
+    iget-object v2, p0, Landroidx/lifecycle/x;->a:Ljava/util/Map;
 
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v2, p1, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v2
-
-    :catch_1
-    move-exception v1
+    invoke-interface {v2, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    new-instance v2, Ljava/lang/RuntimeException;
+    :cond_0
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    if-nez v1, :cond_1
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    goto :goto_0
 
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v2, p1, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v2
-
-    :catch_2
-    move-exception v1
+    :cond_1
+    move-object p2, v1
 
     .line 5
-    new-instance v2, Ljava/lang/RuntimeException;
+    :goto_0
+    iget-boolean p1, p0, Landroidx/lifecycle/x;->b:Z
 
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v2, p1, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v2
-
-    :catch_3
-    move-exception v1
+    if-eqz p1, :cond_2
 
     .line 6
-    new-instance v2, Ljava/lang/RuntimeException;
+    instance-of p1, p2, Ljava/io/Closeable;
 
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v2, p1, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v2
+    if-eqz p1, :cond_2
 
     .line 7
-    :cond_0
-    invoke-super {p0, p1}, Landroidx/lifecycle/a0;->a(Ljava/lang/Class;)Landroidx/lifecycle/w;
+    :try_start_1
+    move-object p1, p2
 
-    move-result-object p1
+    check-cast p1, Ljava/io/Closeable;
 
-    return-object p1
+    invoke-interface {p1}, Ljava/io/Closeable;->close()V
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception p1
+
+    .line 8
+    new-instance p2, Ljava/lang/RuntimeException;
+
+    invoke-direct {p2, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    throw p2
+
+    :cond_2
+    :goto_1
+    return-object p2
+
+    :catchall_0
+    move-exception p1
+
+    .line 9
+    :try_start_2
+    monitor-exit v0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    throw p1
 .end method

@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final a:Landroid/os/IBinder;
+.field public final g:Landroid/os/IBinder;
 
 
 # direct methods
@@ -29,7 +29,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/IGmsServiceBroker$Stub$a;->a:Landroid/os/IBinder;
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/IGmsServiceBroker$Stub$a;->g:Landroid/os/IBinder;
 
     return-void
 .end method
@@ -40,12 +40,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/internal/IGmsServiceBroker$Stub$a;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/IGmsServiceBroker$Stub$a;->g:Landroid/os/IBinder;
 
     return-object v0
 .end method
 
-.method public final e2(Lcom/google/android/gms/common/internal/IGmsCallbacks;Lcom/google/android/gms/common/internal/GetServiceRequest;)V
+.method public final f2(Lcom/google/android/gms/common/internal/IGmsCallbacks;Lcom/google/android/gms/common/internal/GetServiceRequest;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -87,7 +87,7 @@
     invoke-virtual {p2, v0, p1}, Lcom/google/android/gms/common/internal/GetServiceRequest;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 7
-    iget-object p2, p0, Lcom/google/android/gms/common/internal/IGmsServiceBroker$Stub$a;->a:Landroid/os/IBinder;
+    iget-object p2, p0, Lcom/google/android/gms/common/internal/IGmsServiceBroker$Stub$a;->g:Landroid/os/IBinder;
 
     const/16 v2, 0x2e
 

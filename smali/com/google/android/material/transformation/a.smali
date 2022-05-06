@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroid/view/View;
+.field public final synthetic g:Landroid/view/View;
 
 
 # direct methods
@@ -15,7 +15,7 @@
     .locals 0
 
     .line 1
-    iput-object p2, p0, Lcom/google/android/material/transformation/a;->a:Landroid/view/View;
+    iput-object p2, p0, Lcom/google/android/material/transformation/a;->g:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,7 +28,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/transformation/a;->a:Landroid/view/View;
+    iget-object p1, p0, Lcom/google/android/material/transformation/a;->g:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->invalidate()V
 

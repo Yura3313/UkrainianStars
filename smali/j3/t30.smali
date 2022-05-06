@@ -3,153 +3,197 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
+.implements Lj3/o5;
+.implements Lj3/bc;
 
 
-# instance fields
-.field public final synthetic a:I
+# static fields
+.field public static final g:Lj3/fl;
 
-.field public final b:Ljava/lang/Object;
+.field public static final h:Lj3/xg0;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method static synthetic constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lj3/fl;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lj3/fl;-><init>(I)V
+
+    sput-object v0, Lj3/t30;->g:Lj3/fl;
+
+    .line 2
+    new-instance v0, Lj3/xg0;
+
+    invoke-direct {v0}, Lj3/xg0;-><init>()V
+
+    sput-object v0, Lj3/t30;->h:Lj3/xg0;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 1
-    iput p2, p0, Lj3/t30;->a:I
-
-    iput-object p1, p0, Lj3/t30;->b:Ljava/lang/Object;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static a(Lj3/fv0;)Lj3/t30;
-    .locals 2
+.method public static a(Ljava/util/concurrent/atomic/AtomicReference;Lj3/nf0;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lj3/t30;
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
-    const/4 v1, 0x0
+    move-result-object p0
 
-    invoke-direct {v0, p0, v1}, Lj3/t30;-><init>(Ljava/lang/Object;I)V
+    if-nez p0, :cond_0
 
-    return-object v0
-.end method
+    return-void
 
-.method public static b(Lj3/fv0;)Lj3/t30;
-    .locals 2
+    .line 2
+    :cond_0
+    :try_start_0
+    invoke-interface {p1, p0}, Lj3/nf0;->b(Ljava/lang/Object;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1
-    new-instance v0, Lj3/t30;
+    return-void
 
-    const/4 v1, 0x1
+    :catch_0
+    move-exception p0
 
-    invoke-direct {v0, p0, v1}, Lj3/t30;-><init>(Ljava/lang/Object;I)V
+    const-string p1, "#007 Could not call remote method."
 
-    return-object v0
-.end method
+    .line 3
+    invoke-static {p1, p0}, Lj3/cj;->j(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-.method public static c(Lcom/google/android/gms/internal/ads/j;)Lj3/t30;
-    .locals 2
-
-    .line 1
-    new-instance v0, Lj3/t30;
-
-    const/4 v1, 0x3
-
-    invoke-direct {v0, p0, v1}, Lj3/t30;-><init>(Ljava/lang/Object;I)V
-
-    return-object v0
+    return-void
 .end method
 
 
 # virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 2
+.method public c(Ljava/lang/Object;)V
+    .locals 0
 
-    iget v0, p0, Lj3/t30;->a:I
+    return-void
+.end method
 
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
+.method public d(Ljava/lang/Object;)Lorg/json/JSONObject;
+    .locals 6
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lorg/json/JSONException;
+        }
+    .end annotation
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/t30;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/content/Context;
+    check-cast p1, Lj3/q30;
 
     .line 2
-    new-instance v1, Lj3/xd0;
+    new-instance v0, Lorg/json/JSONObject;
 
-    invoke-direct {v1, v0}, Lj3/xd0;-><init>(Landroid/content/Context;)V
-
-    return-object v1
+    invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
     .line 3
-    :pswitch_1
-    iget-object v0, p0, Lj3/t30;->b:Ljava/lang/Object;
+    new-instance v1, Lorg/json/JSONObject;
 
-    check-cast v0, Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lj3/am0;
+    invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
 
     .line 4
-    new-instance v1, Lj3/eb0;
+    new-instance v2, Lorg/json/JSONObject;
 
-    invoke-direct {v1, v0}, Lj3/eb0;-><init>(Lj3/am0;)V
-
-    return-object v1
+    invoke-direct {v2}, Lorg/json/JSONObject;-><init>()V
 
     .line 5
-    :pswitch_2
-    iget-object v0, p0, Lj3/t30;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/content/Context;
+    iget-object v3, p1, Lj3/q30;->c:Lj3/m8;
 
     .line 6
-    new-instance v1, Lj3/u30;
+    iget-object v3, v3, Lj3/m8;->b:Ljava/lang/String;
 
-    invoke-direct {v1, v0}, Lj3/u30;-><init>(Landroid/content/Context;)V
-
-    return-object v1
+    const-string v4, "base_url"
 
     .line 7
-    :goto_0
-    iget-object v0, p0, Lj3/t30;->b:Ljava/lang/Object;
-
-    check-cast v0, Lcom/google/android/gms/internal/ads/j;
+    invoke-virtual {v1, v4, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 8
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/j;->c:Landroid/os/Bundle;
+    iget-object v3, p1, Lj3/q30;->b:Lorg/json/JSONObject;
+
+    const-string v4, "signals"
+
+    invoke-virtual {v1, v4, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 9
+    iget-object v3, p1, Lj3/q30;->a:Lj3/w30;
+
+    iget-object v3, v3, Lj3/w30;->c:Ljava/lang/String;
+
+    const-string v4, "body"
+
+    invoke-virtual {v2, v4, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 10
+    sget-object v3, Lh1/o;->B:Lh1/o;
+
+    iget-object v3, v3, Lh1/o;->c:Lj3/bb;
+
+    .line 11
+    iget-object v4, p1, Lj3/q30;->a:Lj3/w30;
+
+    iget-object v4, v4, Lj3/w30;->b:Ljava/util/Map;
+
+    invoke-virtual {v3, v4}, Lj3/bb;->D(Ljava/util/Map;)Lorg/json/JSONObject;
+
+    move-result-object v3
+
+    const-string v4, "headers"
+
+    invoke-virtual {v2, v4, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 12
+    iget-object v3, p1, Lj3/q30;->a:Lj3/w30;
+
+    iget v3, v3, Lj3/w30;->a:I
+
+    const-string v4, "response_code"
+
+    invoke-virtual {v2, v4, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    .line 13
+    iget-object v3, p1, Lj3/q30;->a:Lj3/w30;
+
+    iget-wide v3, v3, Lj3/w30;->d:J
+
+    const-string v5, "latency"
+
+    invoke-virtual {v2, v5, v3, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    const-string v3, "request"
+
+    .line 14
+    invoke-virtual {v0, v3, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string v1, "response"
+
+    .line 15
+    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 16
+    iget-object p1, p1, Lj3/q30;->c:Lj3/m8;
+
+    .line 17
+    iget-object p1, p1, Lj3/m8;->g:Lorg/json/JSONObject;
+
+    const-string v1, "flags"
+
+    .line 18
+    invoke-virtual {v0, v1, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

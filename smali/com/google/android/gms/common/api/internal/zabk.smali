@@ -95,14 +95,14 @@
     check-cast p1, La2/t0;
 
     .line 5
-    iget-object p2, p1, La2/t0;->b:La2/u0;
+    iget-object p2, p1, La2/t0;->h:La2/u0;
 
-    iget-object p2, p2, La2/u0;->b:La2/s0;
+    iget-object p2, p2, La2/u0;->h:La2/s0;
 
     invoke-virtual {p2}, La2/s0;->i()V
 
     .line 6
-    iget-object p2, p1, La2/t0;->a:Landroid/app/Dialog;
+    iget-object p2, p1, La2/t0;->g:Landroid/app/Dialog;
 
     invoke-virtual {p2}, Landroid/app/Dialog;->isShowing()Z
 
@@ -111,7 +111,7 @@
     if-eqz p2, :cond_1
 
     .line 7
-    iget-object p1, p1, La2/t0;->a:Landroid/app/Dialog;
+    iget-object p1, p1, La2/t0;->g:Landroid/app/Dialog;
 
     invoke-virtual {p1}, Landroid/app/Dialog;->dismiss()V
 

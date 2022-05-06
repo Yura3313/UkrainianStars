@@ -1,111 +1,109 @@
 .class public Lm8/j;
-.super Lm8/a0;
-.source "AdminMessageDM.java"
+.super Ljava/lang/Object;
+.source "ConversationManager.java"
+
+# interfaces
+.implements Lcom/helpshift/util/f;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/helpshift/util/f<",
+        "Ljava/lang/Void;",
+        "Lcom/helpshift/common/exception/RootAPIException;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lp8/d;
+
+.field public final synthetic b:Lm8/h;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLm8/o;)V
-    .locals 8
-
-    .line 1
-    sget-object v7, Lm8/b0;->ADMIN_TEXT:Lm8/b0;
-
-    const/4 v6, 0x1
-
-    move-object v0, p0
-
-    move-object v1, p2
-
-    move-object v2, p3
-
-    move-wide v3, p4
-
-    move-object v5, p6
-
-    invoke-direct/range {v0 .. v7}, Lm8/a0;-><init>(Ljava/lang/String;Ljava/lang/String;JLm8/o;ZLm8/b0;)V
-
-    .line 2
-    iput-object p1, p0, Lm8/a0;->i:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLm8/o;Lm8/b0;)V
-    .locals 8
-
-    const/4 v6, 0x1
-
-    move-object v0, p0
-
-    move-object v1, p2
-
-    move-object v2, p3
-
-    move-wide v3, p4
-
-    move-object v5, p6
-
-    move-object v7, p7
-
-    .line 3
-    invoke-direct/range {v0 .. v7}, Lm8/a0;-><init>(Ljava/lang/String;Ljava/lang/String;JLm8/o;ZLm8/b0;)V
-
-    .line 4
-    iput-object p1, p0, Lm8/a0;->i:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lm8/j;)V
+.method public constructor <init>(Lm8/h;Lp8/d;)V
     .locals 0
 
-    .line 5
-    invoke-direct {p0, p1}, Lm8/a0;-><init>(Lm8/a0;)V
+    .line 1
+    iput-object p1, p0, Lm8/j;->b:Lm8/h;
+
+    iput-object p2, p0, Lm8/j;->a:Lp8/d;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public bridge synthetic a()Ljava/lang/Object;
-    .locals 1
+.method public a(Ljava/lang/Object;)V
+    .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lm8/j;->q()Lm8/j;
+    check-cast p1, Lcom/helpshift/common/exception/RootAPIException;
 
-    move-result-object v0
+    .line 2
+    iget-object p1, p1, Lcom/helpshift/common/exception/RootAPIException;->i:Lc8/a;
 
-    return-object v0
+    sget-object v0, Lc8/b;->v:Lc8/b;
+
+    if-ne p1, v0, :cond_0
+
+    .line 3
+    iget-object p1, p0, Lm8/j;->b:Lm8/h;
+
+    iget-object v0, p0, Lm8/j;->a:Lp8/d;
+
+    invoke-virtual {p1, v0}, Lm8/h;->r(Lp8/d;)V
+
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    sget-object v0, Lc8/b;->u:Lc8/b;
+
+    if-ne p1, v0, :cond_1
+
+    .line 5
+    iget-object p1, p0, Lm8/j;->b:Lm8/h;
+
+    iget-object v0, p0, Lm8/j;->a:Lp8/d;
+
+    sget-object v1, Lt8/e;->r:Lt8/e;
+
+    invoke-virtual {p1, v0, v1}, Lm8/h;->P(Lp8/d;Lt8/e;)V
+
+    :cond_1
+    :goto_0
+    return-void
 .end method
 
-.method public bridge synthetic b()Lm8/a0;
-    .locals 1
+.method public onSuccess(Ljava/lang/Object;)V
+    .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lm8/j;->q()Lm8/j;
+    check-cast p1, Ljava/lang/Void;
 
-    move-result-object v0
+    .line 2
+    iget-object p1, p0, Lm8/j;->a:Lp8/d;
 
-    return-object v0
-.end method
+    iget-object v0, p1, Lp8/d;->m:Lt8/e;
 
-.method public j()Z
-    .locals 0
+    sget-object v1, Lt8/e;->q:Lt8/e;
 
-    instance-of p0, p0, Lm8/f;
+    if-ne v0, v1, :cond_0
 
-    xor-int/lit8 p0, p0, 0x1
+    .line 3
+    iget-object v0, p0, Lm8/j;->b:Lm8/h;
 
-    return p0
-.end method
+    sget-object v1, Lt8/e;->k:Lt8/e;
 
-.method public q()Lm8/j;
-    .locals 1
+    invoke-virtual {v0, p1, v1}, Lm8/h;->P(Lp8/d;Lt8/e;)V
 
-    .line 1
-    new-instance v0, Lm8/j;
-
-    invoke-direct {v0, p0}, Lm8/j;-><init>(Lm8/j;)V
-
-    return-object v0
+    :cond_0
+    return-void
 .end method

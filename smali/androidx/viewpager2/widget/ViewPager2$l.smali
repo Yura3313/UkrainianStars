@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final b:Landroidx/recyclerview/widget/RecyclerView;
+.field public final h:Landroidx/recyclerview/widget/RecyclerView;
 
 
 # direct methods
@@ -31,10 +31,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput p1, p0, Landroidx/viewpager2/widget/ViewPager2$l;->a:I
+    iput p1, p0, Landroidx/viewpager2/widget/ViewPager2$l;->g:I
 
     .line 3
-    iput-object p2, p0, Landroidx/viewpager2/widget/ViewPager2$l;->b:Landroidx/recyclerview/widget/RecyclerView;
+    iput-object p2, p0, Landroidx/viewpager2/widget/ViewPager2$l;->h:Landroidx/recyclerview/widget/RecyclerView;
 
     return-void
 .end method
@@ -45,9 +45,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$l;->b:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$l;->h:Landroidx/recyclerview/widget/RecyclerView;
 
-    iget v1, p0, Landroidx/viewpager2/widget/ViewPager2$l;->a:I
+    iget v1, p0, Landroidx/viewpager2/widget/ViewPager2$l;->g:I
 
     invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->m0(I)V
 

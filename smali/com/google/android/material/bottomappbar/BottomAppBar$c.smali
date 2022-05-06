@@ -3,7 +3,7 @@
 .source "BottomAppBar.java"
 
 # interfaces
-.implements Lcom/google/android/material/internal/n$b;
+.implements Lcom/google/android/material/internal/p$b;
 
 
 # annotations
@@ -35,31 +35,31 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;Lf0/a0;Lcom/google/android/material/internal/n$c;)Lf0/a0;
+.method public a(Landroid/view/View;Lf0/z;Lcom/google/android/material/internal/p$c;)Lf0/z;
     .locals 3
 
     .line 1
     iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$c;->a:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     .line 2
-    iget-boolean p3, p1, Lcom/google/android/material/bottomappbar/BottomAppBar;->e0:Z
+    iget-boolean p3, p1, Lcom/google/android/material/bottomappbar/BottomAppBar;->f0:Z
 
     if-eqz p3, :cond_0
 
     .line 3
-    invoke-virtual {p2}, Lf0/a0;->d()I
+    invoke-virtual {p2}, Lf0/z;->d()I
 
     move-result p3
 
     .line 4
-    iput p3, p1, Lcom/google/android/material/bottomappbar/BottomAppBar;->k0:I
+    iput p3, p1, Lcom/google/android/material/bottomappbar/BottomAppBar;->l0:I
 
     .line 5
     :cond_0
     iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$c;->a:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     .line 6
-    iget-boolean p3, p1, Lcom/google/android/material/bottomappbar/BottomAppBar;->f0:Z
+    iget-boolean p3, p1, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Z
 
     const/4 v0, 0x1
 
@@ -68,10 +68,10 @@
     if-eqz p3, :cond_2
 
     .line 7
-    iget p1, p1, Lcom/google/android/material/bottomappbar/BottomAppBar;->m0:I
+    iget p1, p1, Lcom/google/android/material/bottomappbar/BottomAppBar;->n0:I
 
     .line 8
-    invoke-virtual {p2}, Lf0/a0;->e()I
+    invoke-virtual {p2}, Lf0/z;->e()I
 
     move-result p3
 
@@ -88,12 +88,12 @@
     :goto_0
     iget-object p3, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$c;->a:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
-    invoke-virtual {p2}, Lf0/a0;->e()I
+    invoke-virtual {p2}, Lf0/z;->e()I
 
     move-result v2
 
     .line 10
-    iput v2, p3, Lcom/google/android/material/bottomappbar/BottomAppBar;->m0:I
+    iput v2, p3, Lcom/google/android/material/bottomappbar/BottomAppBar;->n0:I
 
     goto :goto_1
 
@@ -105,15 +105,15 @@
     iget-object p3, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$c;->a:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     .line 12
-    iget-boolean v2, p3, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Z
+    iget-boolean v2, p3, Lcom/google/android/material/bottomappbar/BottomAppBar;->h0:Z
 
     if-eqz v2, :cond_4
 
     .line 13
-    iget p3, p3, Lcom/google/android/material/bottomappbar/BottomAppBar;->l0:I
+    iget p3, p3, Lcom/google/android/material/bottomappbar/BottomAppBar;->m0:I
 
     .line 14
-    invoke-virtual {p2}, Lf0/a0;->f()I
+    invoke-virtual {p2}, Lf0/z;->f()I
 
     move-result v2
 
@@ -128,12 +128,12 @@
     :goto_2
     iget-object p3, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$c;->a:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
-    invoke-virtual {p2}, Lf0/a0;->f()I
+    invoke-virtual {p2}, Lf0/z;->f()I
 
     move-result v1
 
     .line 16
-    iput v1, p3, Lcom/google/android/material/bottomappbar/BottomAppBar;->l0:I
+    iput v1, p3, Lcom/google/android/material/bottomappbar/BottomAppBar;->m0:I
 
     move v1, v0
 
@@ -147,7 +147,7 @@
     iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$c;->a:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     .line 18
-    iget-object p3, p1, Lcom/google/android/material/bottomappbar/BottomAppBar;->a0:Landroid/animation/Animator;
+    iget-object p3, p1, Lcom/google/android/material/bottomappbar/BottomAppBar;->b0:Landroid/animation/Animator;
 
     if-eqz p3, :cond_6
 
@@ -156,7 +156,7 @@
 
     .line 20
     :cond_6
-    iget-object p1, p1, Lcom/google/android/material/bottomappbar/BottomAppBar;->W:Landroid/animation/Animator;
+    iget-object p1, p1, Lcom/google/android/material/bottomappbar/BottomAppBar;->a0:Landroid/animation/Animator;
 
     if-eqz p1, :cond_7
 

@@ -115,10 +115,10 @@
 
     .line 5
     :cond_1
-    iget-object v0, v0, Lcom/google/android/play/core/assetpacks/c1;->a:Lcom/google/android/play/core/assetpacks/x;
+    iget-object v0, v0, Lcom/google/android/play/core/assetpacks/c1;->a:Lcom/google/android/play/core/assetpacks/y;
 
     .line 6
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/google/android/play/core/assetpacks/x;->p(Ljava/lang/String;IJ)Ljava/io/File;
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/google/android/play/core/assetpacks/y;->p(Ljava/lang/String;IJ)Ljava/io/File;
 
     move-result-object v5
 
@@ -128,11 +128,11 @@
 
     if-eqz v5, :cond_2
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/google/android/play/core/assetpacks/x;->p(Ljava/lang/String;IJ)Ljava/io/File;
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/google/android/play/core/assetpacks/y;->p(Ljava/lang/String;IJ)Ljava/io/File;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/google/android/play/core/assetpacks/x;->i(Ljava/io/File;)Z
+    invoke-static {v0}, Lcom/google/android/play/core/assetpacks/y;->i(Ljava/io/File;)Z
 
     .line 7
     :cond_2

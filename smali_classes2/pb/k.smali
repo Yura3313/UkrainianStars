@@ -1,6 +1,6 @@
 .class public Lpb/k;
 .super Lpb/o;
-.source "MutableReplyBoxViewState.java"
+.source "FitCenterStrategy.java"
 
 
 # direct methods
@@ -15,56 +15,152 @@
 
 
 # virtual methods
-.method public d()V
-    .locals 1
+.method public a(Lob/o;Lob/o;)F
+    .locals 7
 
     .line 1
-    iget-object v0, p0, Lpb/o;->e:Ln8/b;
+    iget v0, p1, Lob/o;->g:I
 
-    if-nez v0, :cond_0
+    if-lez v0, :cond_2
 
-    iget-boolean v0, p0, Lpb/a;->d:Z
+    iget v0, p1, Lob/o;->h:I
 
-    if-eqz v0, :cond_0
+    if-gtz v0, :cond_0
 
-    return-void
-
-    :cond_0
-    const/4 v0, 0x0
+    goto :goto_0
 
     .line 2
-    iput-object v0, p0, Lpb/o;->e:Ln8/b;
+    :cond_0
+    invoke-virtual {p1, p2}, Lob/o;->c(Lob/o;)Lob/o;
 
-    const/4 v0, 0x1
+    move-result-object v0
 
     .line 3
-    iput-boolean v0, p0, Lpb/a;->d:Z
+    iget v1, v0, Lob/o;->g:I
+
+    int-to-float v1, v1
+
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    mul-float v1, v1, v2
+
+    iget p1, p1, Lob/o;->g:I
+
+    int-to-float p1, p1
+
+    div-float/2addr v1, p1
+
+    cmpl-float p1, v1, v2
+
+    if-lez p1, :cond_1
+
+    div-float p1, v2, v1
+
+    float-to-double v3, p1
+
+    const-wide v5, 0x3ff199999999999aL    # 1.1
 
     .line 4
-    invoke-virtual {p0, p0}, Lpb/c;->a(Ljava/lang/Object;)V
+    invoke-static {v3, v4, v5, v6}, Ljava/lang/Math;->pow(DD)D
 
-    return-void
-.end method
+    move-result-wide v3
 
-.method public e(Z)V
-    .locals 1
+    double-to-float v1, v3
 
-    .line 1
-    iget-boolean v0, p0, Lpb/a;->d:Z
+    .line 5
+    :cond_1
+    iget p1, p2, Lob/o;->g:I
 
-    if-eq p1, v0, :cond_0
+    int-to-float p1, p1
 
-    .line 2
-    iput-boolean p1, p0, Lpb/a;->d:Z
+    mul-float p1, p1, v2
 
+    iget v3, v0, Lob/o;->g:I
+
+    int-to-float v3, v3
+
+    div-float/2addr p1, v3
+
+    iget p2, p2, Lob/o;->h:I
+
+    int-to-float p2, p2
+
+    mul-float p2, p2, v2
+
+    iget v0, v0, Lob/o;->h:I
+
+    int-to-float v0, v0
+
+    div-float/2addr p2, v0
+
+    mul-float p2, p2, p1
+
+    div-float/2addr v2, p2
+
+    div-float/2addr v2, p2
+
+    div-float/2addr v2, p2
+
+    mul-float v2, v2, v1
+
+    return v2
+
+    :cond_2
+    :goto_0
     const/4 p1, 0x0
 
+    return p1
+.end method
+
+.method public b(Lob/o;Lob/o;)Landroid/graphics/Rect;
+    .locals 5
+
+    .line 1
+    invoke-virtual {p1, p2}, Lob/o;->c(Lob/o;)Lob/o;
+
+    move-result-object v0
+
+    .line 2
+    invoke-virtual {p1}, Lob/o;->toString()Ljava/lang/String;
+
+    invoke-virtual {v0}, Lob/o;->toString()Ljava/lang/String;
+
+    invoke-virtual {p2}, Lob/o;->toString()Ljava/lang/String;
+
     .line 3
-    iput-object p1, p0, Lpb/o;->e:Ln8/b;
+    iget p1, v0, Lob/o;->g:I
+
+    iget v1, p2, Lob/o;->g:I
+
+    sub-int/2addr p1, v1
+
+    div-int/lit8 p1, p1, 0x2
 
     .line 4
-    invoke-virtual {p0, p0}, Lpb/c;->a(Ljava/lang/Object;)V
+    iget v1, v0, Lob/o;->h:I
 
-    :cond_0
-    return-void
+    iget p2, p2, Lob/o;->h:I
+
+    sub-int/2addr v1, p2
+
+    div-int/lit8 v1, v1, 0x2
+
+    .line 5
+    new-instance p2, Landroid/graphics/Rect;
+
+    neg-int v2, p1
+
+    neg-int v3, v1
+
+    iget v4, v0, Lob/o;->g:I
+
+    sub-int/2addr v4, p1
+
+    iget p1, v0, Lob/o;->h:I
+
+    sub-int/2addr p1, v1
+
+    invoke-direct {p2, v2, v3, v4, p1}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    return-object p2
 .end method

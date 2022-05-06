@@ -20,25 +20,25 @@
     value = {
         "Lle/j;",
         "Lke/a<",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
-.field public final synthetic b:Lcom/supercell/id/ui/faq/FaqFragment;
+.field public final synthetic h:Lcom/supercell/id/ui/faq/FaqFragment;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lcom/supercell/id/ui/faq/FaqFragment;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/faq/FaqFragment$b;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/ui/faq/FaqFragment$b;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/faq/FaqFragment$b;->b:Lcom/supercell/id/ui/faq/FaqFragment;
+    iput-object p2, p0, Lcom/supercell/id/ui/faq/FaqFragment$b;->h:Lcom/supercell/id/ui/faq/FaqFragment;
 
     const/4 p1, 0x0
 
@@ -55,21 +55,21 @@
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
     .line 2
-    iget-object v1, v0, Lwd/r;->m:La2/a;
+    iget-object v1, v0, Lvd/r;->m:Lcom/supercell/titan/h;
 
     const-string v0, "Link "
 
     .line 3
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/supercell/id/ui/faq/FaqFragment$b;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/ui/faq/FaqFragment$b;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -87,24 +87,24 @@
 
     const-string v3, "click"
 
-    invoke-static/range {v1 .. v7}, La2/a;->b(La2/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static/range {v1 .. v7}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/ui/faq/FaqFragment$b;->b:Lcom/supercell/id/ui/faq/FaqFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/faq/FaqFragment$b;->h:Lcom/supercell/id/ui/faq/FaqFragment;
 
-    invoke-static {v0}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v0}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/faq/FaqFragment$b;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/ui/faq/FaqFragment$b;->g:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Landroidx/savedstate/d;->z(Landroid/app/Activity;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/billingclient/api/a0;->l(Landroid/app/Activity;Ljava/lang/String;)V
 
     .line 5
     :cond_0
-    sget-object v0, Lbe/n;->a:Lbe/n;
+    sget-object v0, Lae/i;->a:Lae/i;
 
     return-object v0
 .end method

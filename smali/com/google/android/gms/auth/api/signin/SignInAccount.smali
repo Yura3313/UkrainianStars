@@ -19,14 +19,14 @@
 
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field public g:Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
 
-.field public b:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+.field public h:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
-.field public h:Ljava/lang/String;
+.field public i:Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
@@ -37,9 +37,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lw1/j;
+    new-instance v0, Lw1/i;
 
-    invoke-direct {v0}, Lw1/j;-><init>()V
+    invoke-direct {v0}, Lw1/i;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -53,34 +53,34 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p2, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->b:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    iput-object p2, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->h:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     const-string p2, "8.3 and 8.4 SDKs require non-null email"
 
     .line 3
     invoke-static {p1, p2}, Lc2/h;->f(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
-    iput-object p1, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->g:Ljava/lang/String;
 
     const-string p1, "8.3 and 8.4 SDKs require non-null userId"
 
     .line 4
     invoke-static {p3, p1}, Lc2/h;->f(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->i:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final M0()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+.method public final P0()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
     .locals 1
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->b:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->h:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     return-object v0
 .end method
@@ -98,7 +98,7 @@
     const/4 v1, 0x4
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->g:Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -107,7 +107,7 @@
     const/4 v1, 0x7
 
     .line 3
-    iget-object v2, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->b:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    iget-object v2, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->h:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     .line 4
     invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
@@ -115,7 +115,7 @@
     const/16 p2, 0x8
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->i:Ljava/lang/String;
 
     invoke-static {p1, p2, v1, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 

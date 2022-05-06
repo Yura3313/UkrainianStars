@@ -53,7 +53,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Ll5/v0$c;->ASYMMETRIC_PUBLIC:Ll5/v0$c;
+    sget-object v0, Ll5/v0$c;->k:Ll5/v0$c;
 
     return-object v0
 .end method
@@ -71,7 +71,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Ll5/o1;->C(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/o1;
+    invoke-static {p1, v0}, Ll5/o1;->B(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/o1;
 
     move-result-object p1
 
@@ -90,7 +90,7 @@
     check-cast p1, Ll5/o1;
 
     .line 2
-    invoke-virtual {p1}, Ll5/o1;->A()I
+    invoke-virtual {p1}, Ll5/o1;->z()I
 
     move-result v0
 
@@ -101,11 +101,11 @@
     .line 3
     new-instance v0, Ljava/math/BigInteger;
 
-    invoke-virtual {p1}, Ll5/o1;->y()Lm5/c;
+    invoke-virtual {p1}, Ll5/o1;->x()Lm5/c;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lm5/c;->n()[B
+    invoke-virtual {v1}, Lm5/c;->m()[B
 
     move-result-object v1
 
@@ -120,7 +120,7 @@
     invoke-static {v0}, Lp5/m0;->c(I)V
 
     .line 4
-    invoke-virtual {p1}, Ll5/o1;->z()Ll5/m1;
+    invoke-virtual {p1}, Ll5/o1;->y()Ll5/m1;
 
     move-result-object p1
 

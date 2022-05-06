@@ -1,157 +1,76 @@
-.class public abstract Lse/f1;
-.super Lse/t;
+.class public final Lse/f1;
+.super Ljava/lang/Object;
 .source "JobSupport.kt"
 
-# interfaces
-.implements Lse/o0;
-.implements Lse/y0;
 
+# static fields
+.field public static final a:Lte/w;
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<J::",
-        "Lse/d1;",
-        ">",
-        "Lse/t;",
-        "Lse/o0;",
-        "Lse/y0;"
-    }
-.end annotation
+.field public static final b:Lse/o0;
 
-
-# instance fields
-.field public final i:Lse/d1;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TJ;"
-        }
-    .end annotation
-.end field
+.field public static final c:Lse/o0;
 
 
 # direct methods
-.method public constructor <init>(Lse/d1;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TJ;)V"
-        }
-    .end annotation
-
-    if-eqz p1, :cond_0
+.method public static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Lse/t;-><init>()V
+    new-instance v0, Lte/w;
 
-    iput-object p1, p0, Lse/f1;->i:Lse/d1;
+    const-string v1, "SEALED"
 
-    return-void
+    invoke-direct {v0, v1}, Lte/w;-><init>(Ljava/lang/String;)V
 
-    :cond_0
-    const-string p1, "job"
+    sput-object v0, Lse/f1;->a:Lte/w;
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    new-instance v0, Lse/o0;
 
-    const/4 p1, 0x0
+    const/4 v1, 0x0
 
-    throw p1
+    invoke-direct {v0, v1}, Lse/o0;-><init>(Z)V
+
+    sput-object v0, Lse/f1;->b:Lse/o0;
+
+    .line 3
+    new-instance v0, Lse/o0;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, v1}, Lse/o0;-><init>(Z)V
+
+    sput-object v0, Lse/f1;->c:Lse/o0;
+
+    return-void
 .end method
 
-
-# virtual methods
-.method public b()Lse/k1;
+.method public static final a(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+
+    .line 1
+    instance-of v0, p0, Lse/x0;
+
+    if-nez v0, :cond_0
 
     const/4 v0, 0x0
 
-    return-object v0
-.end method
+    goto :goto_0
 
-.method public dispose()V
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lse/f1;->i:Lse/d1;
-
-    if-eqz v0, :cond_4
-
-    check-cast v0, Lse/g1;
-
-    .line 2
     :cond_0
-    invoke-virtual {v0}, Lse/g1;->y()Ljava/lang/Object;
+    move-object v0, p0
 
-    move-result-object v1
-
-    .line 3
-    instance-of v2, v1, Lse/f1;
-
-    if-eqz v2, :cond_2
-
-    if-eq v1, p0, :cond_1
-
-    goto :goto_0
-
-    .line 4
-    :cond_1
-    sget-object v2, Lse/g1;->a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
-
-    .line 5
-    sget-object v3, Lb5/m;->d:Lse/q0;
-
-    .line 6
-    invoke-virtual {v2, v0, v1, v3}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    goto :goto_0
-
-    .line 7
-    :cond_2
-    instance-of v0, v1, Lse/y0;
-
-    if-eqz v0, :cond_3
-
-    .line 8
-    check-cast v1, Lse/y0;
-
-    invoke-interface {v1}, Lse/y0;->b()Lse/k1;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_3
-
-    invoke-virtual {p0}, Lte/o;->i()Z
-
-    :cond_3
     :goto_0
-    return-void
+    check-cast v0, Lse/x0;
 
-    .line 9
-    :cond_4
-    new-instance v0, Lkotlin/TypeCastException;
+    if-eqz v0, :cond_1
 
-    const-string v1, "null cannot be cast to non-null type kotlinx.coroutines.JobSupport"
+    iget-object v0, v0, Lse/x0;->a:Lse/w0;
 
-    invoke-direct {v0, v1}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
+    if-eqz v0, :cond_1
 
-    goto :goto_2
+    move-object p0, v0
 
-    :goto_1
-    throw v0
-
-    :goto_2
-    goto :goto_1
-.end method
-
-.method public isActive()Z
-    .locals 1
-
-    const/4 v0, 0x1
-
-    return v0
+    :cond_1
+    return-object p0
 .end method

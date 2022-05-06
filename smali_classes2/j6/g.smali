@@ -190,7 +190,7 @@
 
     .line 9
     :cond_8
-    sget-object p0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 10
     goto :goto_5

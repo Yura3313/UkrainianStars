@@ -107,10 +107,10 @@
     .line 4
     const-class v0, Lu3/i2;
 
-    sget-object v2, Lu3/t2;->a:Ljava/util/logging/Logger;
+    sget-object v2, Lu3/s2;->a:Ljava/util/logging/Logger;
 
     .line 5
-    const-class v2, Lu3/t2;
+    const-class v2, Lu3/s2;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
@@ -128,7 +128,7 @@
     if-eqz v4, :cond_1
 
     .line 7
-    sget-object v4, Lu3/t2;->b:Ljava/lang/String;
+    sget-object v4, Lu3/s2;->b:Ljava/lang/String;
 
     goto :goto_1
 
@@ -201,7 +201,7 @@
 
     move-result-object v4
 
-    check-cast v4, Lu3/t2;
+    check-cast v4, Lu3/s2;
     :try_end_2
     .catch Ljava/lang/NoSuchMethodException; {:try_start_2 .. :try_end_2} :catch_4
     .catch Ljava/lang/InstantiationException; {:try_start_2 .. :try_end_2} :catch_3
@@ -211,7 +211,7 @@
 
     .line 15
     :try_start_3
-    invoke-virtual {v4}, Lu3/t2;->a()Lu3/i2;
+    invoke-virtual {v4}, Lu3/s2;->a()Lu3/i2;
 
     move-result-object v4
 
@@ -297,9 +297,9 @@
 
     move-result-object v4
 
-    check-cast v4, Lu3/t2;
+    check-cast v4, Lu3/s2;
 
-    invoke-virtual {v4}, Lu3/t2;->a()Lu3/i2;
+    invoke-virtual {v4}, Lu3/s2;->a()Lu3/i2;
 
     move-result-object v4
 
@@ -321,7 +321,7 @@
     move-object v12, v4
 
     .line 25
-    sget-object v7, Lu3/t2;->a:Ljava/util/logging/Logger;
+    sget-object v7, Lu3/s2;->a:Ljava/util/logging/Logger;
 
     sget-object v8, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;
 

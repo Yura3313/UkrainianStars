@@ -13,7 +13,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lj3/z41;)V
+.method public constructor <init>(Lj3/w51;)V
     .locals 0
 
     .line 2

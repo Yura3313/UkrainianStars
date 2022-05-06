@@ -1,36 +1,32 @@
-.class public final Lu3/e4;
+.class public interface abstract Lu3/e4;
 .super Ljava/lang/Object;
 
-# interfaces
-.implements Lu3/d4;
 
-
-# direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<MessageType:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public abstract a(Lu3/b2;Lu3/i2;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lu3/b2;",
+            "Lu3/i2;",
+            ")TMessageType;"
+        }
+    .end annotation
 
-    .line 1
-    check-cast p1, Lu3/v2;
-
-    const/4 v0, 0x4
-
-    const/4 v1, 0x0
-
-    .line 2
-    invoke-virtual {p1, v0, v1, v1}, Lu3/v2;->h(ILjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/measurement/zzuv;
+        }
+    .end annotation
 .end method

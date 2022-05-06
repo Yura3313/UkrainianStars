@@ -1,172 +1,180 @@
 .class public Lm8/g;
-.super Lm8/j;
-.source "AdminCSATMessageWithOptions.java"
+.super Lz7/g;
+.source "ConversationManager.java"
 
 
 # instance fields
-.field public z:Ln8/a;
+.field public final synthetic b:Ln8/w;
+
+.field public final synthetic c:Lm8/h;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLm8/o;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/util/List;Ln8/a$b;)V
-    .locals 18
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "J",
-            "Lm8/o;",
-            "Ljava/lang/String;",
-            "Z",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Z",
-            "Ljava/lang/String;",
-            "Ljava/util/List<",
-            "Ln8/a$a;",
-            ">;",
-            "Ln8/a$b;",
-            ")V"
-        }
-    .end annotation
+.method public constructor <init>(Lm8/h;Ln8/w;)V
+    .locals 0
 
     .line 1
-    sget-object v7, Lm8/b0;->ADMIN_CSAT_MESSAGE:Lm8/b0;
+    iput-object p1, p0, Lm8/g;->c:Lm8/h;
 
-    move-object/from16 v0, p0
+    iput-object p2, p0, Lm8/g;->b:Ln8/w;
 
-    move-object/from16 v1, p1
-
-    move-object/from16 v2, p2
-
-    move-object/from16 v3, p3
-
-    move-wide/from16 v4, p4
-
-    move-object/from16 v6, p6
-
-    invoke-direct/range {v0 .. v7}, Lm8/j;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLm8/o;Lm8/b0;)V
-
-    .line 2
-    new-instance v0, Ln8/a;
-
-    move-object v8, v0
-
-    move-object/from16 v9, p7
-
-    move/from16 v10, p8
-
-    move-object/from16 v11, p9
-
-    move-object/from16 v12, p10
-
-    move-object/from16 v13, p11
-
-    move/from16 v14, p12
-
-    move-object/from16 v15, p13
-
-    move-object/from16 v16, p14
-
-    move-object/from16 v17, p15
-
-    invoke-direct/range {v8 .. v17}, Ln8/a;-><init>(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/util/List;Ln8/a$b;)V
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lm8/g;->z:Ln8/a;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lm8/g;)V
-    .locals 1
-
-    .line 3
-    invoke-direct {p0, p1}, Lm8/j;-><init>(Lm8/j;)V
-
-    .line 4
-    iget-object p1, p1, Lm8/g;->z:Ln8/a;
-
-    .line 5
-    new-instance v0, Ln8/a;
-
-    invoke-direct {v0, p1}, Ln8/a;-><init>(Ln8/a;)V
-
-    .line 6
-    iput-object v0, p0, Lm8/g;->z:Ln8/a;
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Ljava/lang/Object;
-    .locals 1
+.method public a()V
+    .locals 13
 
     .line 1
-    new-instance v0, Lm8/g;
+    iget-object v0, p0, Lm8/g;->c:Lm8/h;
 
-    invoke-direct {v0, p0}, Lm8/g;-><init>(Lm8/g;)V
+    iget-object v1, v0, Lm8/h;->a:Ld8/r;
 
-    return-object v0
-.end method
+    iget-object v2, v0, Lm8/h;->b:Lz7/f;
 
-.method public bridge synthetic b()Lm8/a0;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lm8/g;->r()Lm8/g;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public k(Lm8/a0;)V
-    .locals 1
-
-    .line 1
-    invoke-super {p0, p1}, Lm8/a0;->k(Lm8/a0;)V
+    iget-object v6, p0, Lm8/g;->b:Ln8/w;
 
     .line 2
-    instance-of v0, p1, Lm8/g;
-
-    if-eqz v0, :cond_0
+    iget-object v0, v6, Ln8/w;->l:Ln8/m;
 
     .line 3
-    check-cast p1, Lm8/g;
+    iget-object v3, v2, Lz7/f;->f:Li8/b;
 
     .line 4
-    iget-object p1, p1, Lm8/g;->z:Ln8/a;
+    iget-object v0, v0, Ln8/m;->h:Ljava/lang/String;
 
-    iput-object p1, p0, Lm8/g;->z:Ln8/a;
+    invoke-virtual {v3, v0}, Li8/b;->b(Ljava/lang/String;)Ljava/lang/String;
 
-    :cond_0
-    return-void
-.end method
+    move-result-object v3
 
-.method public bridge synthetic q()Lm8/j;
-    .locals 1
+    .line 5
+    invoke-static {v3}, Lp5/c0;->k(Ljava/lang/String;)Z
 
-    .line 1
-    invoke-virtual {p0}, Lm8/g;->r()Lm8/g;
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    .line 6
+    move-object v0, v1
+
+    check-cast v0, Ld8/j;
+
+    invoke-virtual {v0}, Ld8/j;->g()Ld8/f;
 
     move-result-object v0
 
-    return-object v0
-.end method
+    .line 7
+    iget-object v0, v0, Ld8/f;->a:Lm9/c;
 
-.method public r()Lm8/g;
-    .locals 1
+    invoke-virtual {v0, v3}, Lm9/c;->b(Ljava/lang/String;)Lb8/f;
 
-    .line 1
-    new-instance v0, Lm8/g;
+    move-result-object v4
 
-    invoke-direct {v0, p0}, Lm8/g;-><init>(Lm8/g;)V
+    if-eqz v4, :cond_0
 
-    return-object v0
+    .line 8
+    iget-wide v7, v4, Lb8/f;->b:J
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/16 v7, 0x0
+
+    :goto_0
+    const/4 v0, 0x1
+
+    if-eqz v4, :cond_1
+
+    .line 9
+    iget-boolean v5, v4, Lb8/f;->c:Z
+
+    if-eqz v5, :cond_1
+
+    const/4 v5, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v5, 0x0
+
+    .line 10
+    :goto_1
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v9
+
+    sub-long/2addr v9, v7
+
+    .line 11
+    iget-object v7, v2, Lz7/f;->f:Li8/b;
+
+    .line 12
+    iget-object v7, v7, Li8/b;->c:Lj3/g50;
+
+    const-wide/32 v11, 0xdbba00
+
+    const-string v8, "avatarCacheExpiry"
+
+    invoke-static {v11, v12, v7, v8}, Lc7/d;->d(JLj3/g50;Ljava/lang/String;)J
+
+    move-result-wide v7
+
+    cmp-long v11, v9, v7
+
+    if-lez v11, :cond_2
+
+    const/4 v5, 0x1
+
+    .line 13
+    invoke-static/range {v1 .. v6}, Ln8/o;->c(Ld8/r;Lz7/f;Ljava/lang/String;Lb8/f;ZLn8/w;)V
+
+    goto :goto_2
+
+    :cond_2
+    if-eqz v5, :cond_3
+
+    const/4 v5, 0x0
+
+    .line 14
+    invoke-static/range {v1 .. v6}, Ln8/o;->c(Ld8/r;Lz7/f;Ljava/lang/String;Lb8/f;ZLn8/w;)V
+
+    goto :goto_2
+
+    .line 15
+    :cond_3
+    invoke-virtual {v6, v0}, Ln8/w;->n(I)V
+
+    goto :goto_2
+
+    .line 16
+    :cond_4
+    invoke-virtual {v6}, Ln8/w;->d()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 17
+    iget-object v2, v6, Ln8/w;->l:Ln8/m;
+
+    .line 18
+    iput-object v0, v2, Ln8/m;->j:Ljava/lang/String;
+
+    .line 19
+    check-cast v1, Ld8/j;
+
+    invoke-virtual {v1}, Ld8/j;->c()Ld8/a;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v6}, Ld8/a;->e(Ln8/w;)V
+
+    const/4 v0, 0x4
+
+    .line 20
+    invoke-virtual {v6, v0}, Ln8/w;->n(I)V
+
+    :goto_2
+    return-void
 .end method

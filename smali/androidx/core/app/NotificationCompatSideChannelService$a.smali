@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/core/app/NotificationCompatSideChannelService;
+.field public final synthetic g:Landroidx/core/app/NotificationCompatSideChannelService;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/core/app/NotificationCompatSideChannelService$a;->a:Landroidx/core/app/NotificationCompatSideChannelService;
+    iput-object p1, p0, Landroidx/core/app/NotificationCompatSideChannelService$a;->g:Landroidx/core/app/NotificationCompatSideChannelService;
 
     invoke-direct {p0}, Landroid/support/v4/app/INotificationSideChannel$Stub;-><init>()V
 
@@ -41,7 +41,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/core/app/NotificationCompatSideChannelService$a;->a:Landroidx/core/app/NotificationCompatSideChannelService;
+    iget-object v0, p0, Landroidx/core/app/NotificationCompatSideChannelService$a;->g:Landroidx/core/app/NotificationCompatSideChannelService;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -56,7 +56,7 @@
 
     .line 3
     :try_start_0
-    iget-object v2, p0, Landroidx/core/app/NotificationCompatSideChannelService$a;->a:Landroidx/core/app/NotificationCompatSideChannelService;
+    iget-object v2, p0, Landroidx/core/app/NotificationCompatSideChannelService$a;->g:Landroidx/core/app/NotificationCompatSideChannelService;
 
     invoke-virtual {v2, p1, p2, p3}, Landroidx/core/app/NotificationCompatSideChannelService;->a(Ljava/lang/String;ILjava/lang/String;)V
     :try_end_0
@@ -80,7 +80,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/core/app/NotificationCompatSideChannelService$a;->a:Landroidx/core/app/NotificationCompatSideChannelService;
+    iget-object v0, p0, Landroidx/core/app/NotificationCompatSideChannelService$a;->g:Landroidx/core/app/NotificationCompatSideChannelService;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -95,7 +95,7 @@
 
     .line 3
     :try_start_0
-    iget-object v2, p0, Landroidx/core/app/NotificationCompatSideChannelService$a;->a:Landroidx/core/app/NotificationCompatSideChannelService;
+    iget-object v2, p0, Landroidx/core/app/NotificationCompatSideChannelService$a;->g:Landroidx/core/app/NotificationCompatSideChannelService;
 
     invoke-virtual {v2, p1}, Landroidx/core/app/NotificationCompatSideChannelService;->b(Ljava/lang/String;)V
     :try_end_0
@@ -124,7 +124,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/core/app/NotificationCompatSideChannelService$a;->a:Landroidx/core/app/NotificationCompatSideChannelService;
+    iget-object v0, p0, Landroidx/core/app/NotificationCompatSideChannelService$a;->g:Landroidx/core/app/NotificationCompatSideChannelService;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -139,7 +139,7 @@
 
     .line 3
     :try_start_0
-    iget-object v2, p0, Landroidx/core/app/NotificationCompatSideChannelService$a;->a:Landroidx/core/app/NotificationCompatSideChannelService;
+    iget-object v2, p0, Landroidx/core/app/NotificationCompatSideChannelService$a;->g:Landroidx/core/app/NotificationCompatSideChannelService;
 
     invoke-virtual {v2, p1, p2, p3, p4}, Landroidx/core/app/NotificationCompatSideChannelService;->d(Ljava/lang/String;ILjava/lang/String;Landroid/app/Notification;)V
     :try_end_0

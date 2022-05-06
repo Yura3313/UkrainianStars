@@ -53,7 +53,7 @@
     :goto_0
     const-string v0, "ContextCompat.getColorSt\u2026List.valueOf(Color.BLACK)"
 
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iput-object p1, p0, Lcom/supercell/id/view/c;->a:Landroid/content/res/ColorStateList;
 
@@ -80,7 +80,7 @@
     const/high16 v2, 0x40400000    # 3.0f
 
     .line 7
-    sget v3, Lc5/i;->a:F
+    sget v3, Lcom/android/billingclient/api/a0;->a:F
 
     mul-float v2, v2, v3
 
@@ -107,7 +107,7 @@
     const/high16 v3, 0x41200000    # 10.0f
 
     .line 12
-    sget v4, Lc5/i;->a:F
+    sget v4, Lcom/android/billingclient/api/a0;->a:F
 
     mul-float v3, v3, v4
 
@@ -127,7 +127,7 @@
     const v4, 0x41842358
 
     .line 14
-    sget v5, Lc5/i;->a:F
+    sget v5, Lcom/android/billingclient/api/a0;->a:F
 
     mul-float v4, v4, v5
 
@@ -145,7 +145,7 @@
     const v4, 0x41eacd52
 
     .line 16
-    sget v5, Lc5/i;->a:F
+    sget v5, Lcom/android/billingclient/api/a0;->a:F
 
     mul-float v4, v4, v5
 
@@ -170,17 +170,17 @@
     .line 19
     aget-object v3, v0, v3
 
-    invoke-static {v2, v3}, Lcom/google/android/gms/ads/s;->q(Landroid/graphics/Path;Landroid/graphics/PointF;)V
+    invoke-static {v2, v3}, Ls3/k;->o(Landroid/graphics/Path;Landroid/graphics/PointF;)V
 
     .line 20
     aget-object v3, v0, v1
 
-    invoke-static {v2, v3}, Lcom/google/android/gms/ads/s;->n(Landroid/graphics/Path;Landroid/graphics/PointF;)V
+    invoke-static {v2, v3}, Ls3/k;->m(Landroid/graphics/Path;Landroid/graphics/PointF;)V
 
     .line 21
     aget-object v0, v0, v4
 
-    invoke-static {v2, v0}, Lcom/google/android/gms/ads/s;->n(Landroid/graphics/Path;Landroid/graphics/PointF;)V
+    invoke-static {v2, v0}, Ls3/k;->m(Landroid/graphics/Path;Landroid/graphics/PointF;)V
 
     .line 22
     iput-object v2, p0, Lcom/supercell/id/view/c;->d:Landroid/graphics/Path;
@@ -209,7 +209,7 @@
     const-string p1, "context"
 
     .line 27
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -330,7 +330,7 @@
 
     aget-object v0, v0, v3
 
-    invoke-static {p1, v0}, Lcom/google/android/gms/ads/s;->q(Landroid/graphics/Path;Landroid/graphics/PointF;)V
+    invoke-static {p1, v0}, Ls3/k;->o(Landroid/graphics/Path;Landroid/graphics/PointF;)V
 
     .line 6
     iget-object v0, p0, Lcom/supercell/id/view/c;->c:[Landroid/graphics/PointF;
@@ -341,7 +341,7 @@
 
     aget-object v0, v0, v5
 
-    invoke-static {p1, v3, v0, v1}, Lcom/google/android/gms/ads/s;->m(Landroid/graphics/Path;Landroid/graphics/PointF;Landroid/graphics/PointF;F)V
+    invoke-static {p1, v3, v0, v1}, Ls3/k;->l(Landroid/graphics/Path;Landroid/graphics/PointF;Landroid/graphics/PointF;F)V
 
     cmpl-float v0, v4, v2
 
@@ -356,7 +356,7 @@
 
     aget-object v0, v0, v2
 
-    invoke-static {p1, v1, v0, v4}, Lcom/google/android/gms/ads/s;->m(Landroid/graphics/Path;Landroid/graphics/PointF;Landroid/graphics/PointF;F)V
+    invoke-static {p1, v1, v0, v4}, Ls3/k;->l(Landroid/graphics/Path;Landroid/graphics/PointF;Landroid/graphics/PointF;F)V
 
     :cond_4
     return-void
@@ -380,7 +380,7 @@
     const-string p1, "canvas"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -415,11 +415,11 @@
     const/16 v0, 0x26
 
     .line 1
-    invoke-static {v0}, Lc5/i;->c(I)F
+    invoke-static {v0}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v0
 
-    invoke-static {v0}, Lc2/n0;->e(F)I
+    invoke-static {v0}, Lb5/m;->r(F)I
 
     move-result v0
 
@@ -432,11 +432,11 @@
     const/16 v0, 0x26
 
     .line 1
-    invoke-static {v0}, Lc5/i;->c(I)F
+    invoke-static {v0}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v0
 
-    invoke-static {v0}, Lc2/n0;->e(F)I
+    invoke-static {v0}, Lb5/m;->r(F)I
 
     move-result v0
 

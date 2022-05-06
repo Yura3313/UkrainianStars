@@ -3,143 +3,115 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lj3/bv0<",
-        "Lcom/google/android/gms/internal/ads/zzcwz;",
-        ">;"
-    }
-.end annotation
+.implements Lh1/g;
 
 
 # instance fields
-.field public final a:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Landroid/content/Context;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final b:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lcom/google/android/gms/internal/ads/zzwl;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final c:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/pg0;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final d:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/wm;",
-            ">;"
-        }
+.field public g:Lh1/g;
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "this"
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;)V
+.method public constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/fv0<",
-            "Landroid/content/Context;",
-            ">;",
-            "Lj3/fv0<",
-            "Lcom/google/android/gms/internal/ads/zzwl;",
-            ">;",
-            "Lj3/fv0<",
-            "Lj3/pg0;",
-            ">;",
-            "Lj3/fv0<",
-            "Lj3/wm;",
-            ">;)V"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lj3/t70;->a:Lj3/fv0;
-
-    .line 3
-    iput-object p2, p0, Lj3/t70;->b:Lj3/fv0;
-
-    .line 4
-    iput-object p3, p0, Lj3/t70;->c:Lj3/fv0;
-
-    .line 5
-    iput-object p4, p0, Lj3/t70;->d:Lj3/fv0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic get()Ljava/lang/Object;
-    .locals 5
+.method public final declared-synchronized b()V
+    .locals 1
+
+    monitor-enter p0
 
     .line 1
-    iget-object v0, p0, Lj3/t70;->a:Lj3/fv0;
+    :try_start_0
+    iget-object v0, p0, Lj3/t70;->g:Lh1/g;
 
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/content/Context;
-
-    iget-object v1, p0, Lj3/t70;->b:Lj3/fv0;
-
-    invoke-interface {v1}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/google/android/gms/internal/ads/zzwl;
-
-    iget-object v2, p0, Lj3/t70;->c:Lj3/fv0;
-
-    invoke-interface {v2}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lj3/pg0;
-
-    iget-object v3, p0, Lj3/t70;->d:Lj3/fv0;
-
-    invoke-interface {v3}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lj3/wm;
+    if-eqz v0, :cond_0
 
     .line 2
-    new-instance v4, Lcom/google/android/gms/internal/ads/zzcwz;
+    invoke-interface {v0}, Lh1/g;->b()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-direct {v4, v0, v1, v2, v3}, Lcom/google/android/gms/internal/ads/zzcwz;-><init>(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzwl;Lj3/pg0;Lj3/wm;)V
+    .line 3
+    :cond_0
+    monitor-exit p0
 
-    return-object v4
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+.end method
+
+.method public final declared-synchronized d()V
+    .locals 1
+
+    monitor-enter p0
+
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lj3/t70;->g:Lh1/g;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-interface {v0}, Lh1/g;->d()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 3
+    :cond_0
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+.end method
+
+.method public final declared-synchronized e(Landroid/view/View;)V
+    .locals 1
+
+    monitor-enter p0
+
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lj3/t70;->g:Lh1/g;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-interface {v0, p1}, Lh1/g;->e(Landroid/view/View;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 3
+    :cond_0
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
 .end method

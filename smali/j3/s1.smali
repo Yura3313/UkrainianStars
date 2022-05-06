@@ -24,11 +24,11 @@
 
     .line 3
     :try_start_0
-    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzaes;->Z1()Lcom/google/android/gms/dynamic/IObjectWrapper;
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzaes;->a2()Lcom/google/android/gms/dynamic/IObjectWrapper;
 
     move-result-object p1
 
-    invoke-static {p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;->X0(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
+    invoke-static {p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;->Y0(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -62,7 +62,7 @@
     invoke-direct {v1, p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
 
     .line 7
-    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzaes;->l4(Lcom/google/android/gms/dynamic/IObjectWrapper;)Z
+    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzaes;->m4(Lcom/google/android/gms/dynamic/IObjectWrapper;)Z
     :try_end_1
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
 

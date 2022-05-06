@@ -58,7 +58,7 @@
     aput v1, v0, v3
 
     .line 6
-    iget v3, p1, Lj6/a;->b:I
+    iget v3, p1, Lj6/a;->h:I
 
     .line 7
     aget p2, p2, v2
@@ -173,7 +173,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lc6/a;->EAN_8:Lc6/a;
+    sget-object v0, Lc6/a;->m:Lc6/a;
 
     return-object v0
 .end method

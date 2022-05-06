@@ -83,9 +83,9 @@
     sput-object v0, Lcom/google/crypto/tink/shaded/protobuf/i0;->c:Lcom/google/crypto/tink/shaded/protobuf/l0;
 
     .line 5
-    new-instance v0, Lm5/z;
+    new-instance v0, Lm5/y;
 
-    invoke-direct {v0}, Lm5/z;-><init>()V
+    invoke-direct {v0}, Lm5/y;-><init>()V
 
     sput-object v0, Lcom/google/crypto/tink/shaded/protobuf/i0;->d:Lcom/google/crypto/tink/shaded/protobuf/l0;
 
@@ -99,7 +99,7 @@
             "<T:",
             "Ljava/lang/Object;",
             "FT::",
-            "Lcom/google/crypto/tink/shaded/protobuf/m$b<",
+            "Lcom/google/crypto/tink/shaded/protobuf/m$a<",
             "TFT;>;>(",
             "Lcom/google/crypto/tink/shaded/protobuf/k<",
             "TFT;>;TT;TT;)V"
@@ -309,7 +309,7 @@
 
     invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->b:Ljava/util/logging/Logger;
+    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->h:Ljava/util/logging/Logger;
 
     add-int/lit8 p3, p3, 0x1
 
@@ -512,7 +512,7 @@
 
     invoke-virtual {v1}, Ljava/lang/Double;->doubleValue()D
 
-    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->b:Ljava/util/logging/Logger;
+    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->h:Ljava/util/logging/Logger;
 
     add-int/lit8 p3, p3, 0x8
 
@@ -809,7 +809,7 @@
 
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
-    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->b:Ljava/util/logging/Logger;
+    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->h:Ljava/util/logging/Logger;
 
     add-int/lit8 p3, p3, 0x4
 
@@ -947,7 +947,7 @@
 
     invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
 
-    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->b:Ljava/util/logging/Logger;
+    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->h:Ljava/util/logging/Logger;
 
     add-int/lit8 p3, p3, 0x8
 
@@ -1085,7 +1085,7 @@
 
     invoke-virtual {v1}, Ljava/lang/Float;->floatValue()F
 
-    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->b:Ljava/util/logging/Logger;
+    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->h:Ljava/util/logging/Logger;
 
     add-int/lit8 p3, p3, 0x4
 
@@ -1645,7 +1645,7 @@
 
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
-    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->b:Ljava/util/logging/Logger;
+    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->h:Ljava/util/logging/Logger;
 
     add-int/lit8 p3, p3, 0x4
 
@@ -1785,7 +1785,7 @@
 
     invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
 
-    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->b:Ljava/util/logging/Logger;
+    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->h:Ljava/util/logging/Logger;
 
     add-int/lit8 p3, p3, 0x8
 
@@ -2218,7 +2218,7 @@
     if-ge v1, v2, :cond_2
 
     .line 6
-    invoke-interface {v0, v1}, Lm5/i;->z(I)Ljava/lang/Object;
+    invoke-interface {v0, v1}, Lm5/i;->B(I)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -2765,7 +2765,7 @@
     if-ge v1, v0, :cond_2
 
     .line 4
-    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/p;->d(I)I
+    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/p;->e(I)I
 
     move-result v3
 
@@ -3101,7 +3101,7 @@
     if-ge v1, v0, :cond_2
 
     .line 4
-    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/p;->d(I)I
+    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/p;->e(I)I
 
     move-result v3
 
@@ -3244,7 +3244,7 @@
     if-ge v1, v0, :cond_2
 
     .line 4
-    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/v;->d(I)J
+    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/v;->e(I)J
 
     move-result-wide v3
 
@@ -3516,7 +3516,7 @@
     if-ge v1, v0, :cond_2
 
     .line 4
-    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/p;->d(I)I
+    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/p;->e(I)I
 
     move-result v3
 
@@ -3655,7 +3655,7 @@
     if-ge v1, v0, :cond_2
 
     .line 4
-    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/v;->d(I)J
+    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/v;->e(I)J
 
     move-result-wide v3
 
@@ -3741,7 +3741,7 @@
     if-ge v1, v0, :cond_4
 
     .line 5
-    invoke-interface {p1, v1}, Lm5/i;->z(I)Ljava/lang/Object;
+    invoke-interface {p1, v1}, Lm5/i;->B(I)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -3914,7 +3914,7 @@
     if-ge v1, v0, :cond_2
 
     .line 4
-    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/p;->d(I)I
+    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/p;->e(I)I
 
     move-result v3
 
@@ -4053,7 +4053,7 @@
     if-ge v1, v0, :cond_2
 
     .line 4
-    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/v;->d(I)J
+    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/v;->e(I)J
 
     move-result-wide v3
 
@@ -4098,7 +4098,7 @@
     return v2
 .end method
 
-.method public static y(ILjava/util/List;Lcom/google/crypto/tink/shaded/protobuf/q$c;Ljava/lang/Object;Lcom/google/crypto/tink/shaded/protobuf/l0;)Ljava/lang/Object;
+.method public static y(ILjava/util/List;Lcom/google/crypto/tink/shaded/protobuf/q$b;Ljava/lang/Object;Lcom/google/crypto/tink/shaded/protobuf/l0;)Ljava/lang/Object;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -4110,7 +4110,7 @@
             "Ljava/util/List<",
             "Ljava/lang/Integer;",
             ">;",
-            "Lcom/google/crypto/tink/shaded/protobuf/q$c;",
+            "Lcom/google/crypto/tink/shaded/protobuf/q$b;",
             "TUB;",
             "Lcom/google/crypto/tink/shaded/protobuf/l0<",
             "TUT;TUB;>;)TUB;"
@@ -4151,7 +4151,7 @@
     move-result v3
 
     .line 4
-    invoke-interface {p2, v3}, Lcom/google/crypto/tink/shaded/protobuf/q$c;->a(I)Z
+    invoke-interface {p2, v3}, Lcom/google/crypto/tink/shaded/protobuf/q$b;->a(I)Z
 
     move-result v4
 
@@ -4228,7 +4228,7 @@
     move-result v0
 
     .line 11
-    invoke-interface {p2, v0}, Lcom/google/crypto/tink/shaded/protobuf/q$c;->a(I)Z
+    invoke-interface {p2, v0}, Lcom/google/crypto/tink/shaded/protobuf/q$b;->a(I)Z
 
     move-result v1
 

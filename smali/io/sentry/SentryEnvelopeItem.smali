@@ -34,27 +34,6 @@
 
 
 # direct methods
-.method private static synthetic $closeResource(Ljava/lang/Throwable;Ljava/lang/AutoCloseable;)V
-    .locals 0
-
-    if-eqz p0, :cond_0
-
-    .line 1
-    :try_start_0
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
-
-    :catchall_0
-    :goto_0
-    return-void
-.end method
-
 .method public static constructor <clinit>()V
     .locals 1
 
@@ -697,21 +676,19 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    const/4 v2, 0x0
-
     .line 21
     :try_start_4
-    invoke-static {v2, v0}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
     :try_start_5
-    invoke-static {v2, p2}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {p2}, Ljava/io/BufferedInputStream;->close()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_4
 
     :try_start_6
-    invoke-static {v2, p1}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {p1}, Ljava/io/FileInputStream;->close()V
     :try_end_6
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_0
     .catch Ljava/lang/SecurityException; {:try_start_6 .. :try_end_6} :catch_0
@@ -723,60 +700,43 @@
 
     .line 22
     :try_start_7
-    throw v1
+    invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_1
 
     :catchall_1
-    move-exception v2
-
-    .line 23
     :try_start_8
-    invoke-static {v1, v0}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    throw v2
+    throw v1
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_2
 
     :catchall_2
     move-exception v0
 
-    .line 24
     :try_start_9
-    throw v0
+    invoke-virtual {p2}, Ljava/io/BufferedInputStream;->close()V
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_3
 
     :catchall_3
-    move-exception v1
-
-    .line 25
     :try_start_a
-    invoke-static {v0, p2}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    throw v1
+    throw v0
     :try_end_a
     .catchall {:try_start_a .. :try_end_a} :catchall_4
 
     :catchall_4
     move-exception p2
 
-    .line 26
     :try_start_b
-    throw p2
+    invoke-virtual {p1}, Ljava/io/FileInputStream;->close()V
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_5
 
     :catchall_5
-    move-exception v0
-
-    .line 27
     :try_start_c
-    invoke-static {p2, p1}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    throw p2
 
-    throw v0
-
-    .line 28
+    .line 23
     :cond_3
     new-instance v5, Lio/sentry/exception/SentryEnvelopeException;
 
@@ -784,7 +744,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 29
+    .line 24
     invoke-virtual {p0}, Lio/sentry/Attachment;->getPathname()Ljava/lang/String;
 
     move-result-object v7
@@ -807,7 +767,7 @@
 
     aput-object p1, v2, v1
 
-    .line 30
+    .line 25
     invoke-static {v6, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
@@ -816,7 +776,7 @@
 
     throw v5
 
-    .line 31
+    .line 26
     :cond_4
     new-instance p1, Lio/sentry/exception/SentryEnvelopeException;
 
@@ -824,14 +784,14 @@
 
     new-array v0, v3, [Ljava/lang/Object;
 
-    .line 32
+    .line 27
     invoke-virtual {p0}, Lio/sentry/Attachment;->getPathname()Ljava/lang/String;
 
     move-result-object v1
 
     aput-object v1, v0, v4
 
-    .line 33
+    .line 28
     invoke-static {p2, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p2
@@ -840,7 +800,7 @@
 
     throw p1
 
-    .line 34
+    .line 29
     :cond_5
     new-instance p1, Lio/sentry/exception/SentryEnvelopeException;
 
@@ -848,14 +808,14 @@
 
     new-array v0, v3, [Ljava/lang/Object;
 
-    .line 35
+    .line 30
     invoke-virtual {p0}, Lio/sentry/Attachment;->getPathname()Ljava/lang/String;
 
     move-result-object v1
 
     aput-object v1, v0, v4
 
-    .line 36
+    .line 31
     invoke-static {p2, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p2
@@ -867,13 +827,13 @@
     .catch Ljava/io/IOException; {:try_start_c .. :try_end_c} :catch_0
     .catch Ljava/lang/SecurityException; {:try_start_c .. :try_end_c} :catch_0
 
-    .line 37
+    .line 32
     :catch_0
     new-instance p1, Lio/sentry/exception/SentryEnvelopeException;
 
     new-array p2, v3, [Ljava/lang/Object;
 
-    .line 38
+    .line 33
     invoke-virtual {p0}, Lio/sentry/Attachment;->getPathname()Ljava/lang/String;
 
     move-result-object p0
@@ -890,13 +850,13 @@
 
     throw p1
 
-    .line 39
+    .line 34
     :cond_6
     new-instance p1, Lio/sentry/exception/SentryEnvelopeException;
 
     new-array p2, v3, [Ljava/lang/Object;
 
-    .line 40
+    .line 35
     invoke-virtual {p0}, Lio/sentry/Attachment;->getFilename()Ljava/lang/String;
 
     move-result-object p0
@@ -905,7 +865,7 @@
 
     const-string p0, "Couldn\'t attach the attachment %s.\nPlease check that either bytes or a path is set."
 
-    .line 41
+    .line 36
     invoke-static {p0, p2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
@@ -946,9 +906,7 @@
 
     invoke-direct {v1, v2}, Ljava/io/BufferedWriter;-><init>(Ljava/io/Writer;)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_3
-
-    const/4 v2, 0x0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     .line 3
     :try_start_1
@@ -959,67 +917,42 @@
 
     move-result-object p0
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 5
     :try_start_2
-    invoke-static {v2, v1}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v1}, Ljava/io/Writer;->close()V
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_3
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    :try_start_3
-    invoke-interface {v0}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->close()V
 
     return-object p0
 
     :catchall_0
     move-exception p0
 
-    throw p0
+    .line 6
+    :try_start_3
+    invoke-virtual {v1}, Ljava/io/Writer;->close()V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     :catchall_1
-    move-exception p0
-
-    .line 6
     :try_start_4
     throw p0
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
     :catchall_2
-    move-exception p1
+    move-exception p0
 
-    .line 7
     :try_start_5
-    invoke-static {p0, v1}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    throw p1
+    invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_3
 
     :catchall_3
-    move-exception p0
-
-    .line 8
-    :try_start_6
-    throw p0
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_4
-
-    :catchall_4
-    move-exception p1
-
-    .line 9
-    :try_start_7
-    invoke-interface {v0}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_5
-
-    throw p1
-
-    :catchall_5
     throw p0
 .end method
 
@@ -1086,9 +1019,7 @@
 
     invoke-direct {v1, v2}, Ljava/io/BufferedWriter;-><init>(Ljava/io/Writer;)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_3
-
-    const/4 v2, 0x0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     .line 3
     :try_start_1
@@ -1099,67 +1030,42 @@
 
     move-result-object p0
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 5
     :try_start_2
-    invoke-static {v2, v1}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v1}, Ljava/io/Writer;->close()V
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_3
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    :try_start_3
-    invoke-interface {v0}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->close()V
 
     return-object p0
 
     :catchall_0
     move-exception p0
 
-    throw p0
+    .line 6
+    :try_start_3
+    invoke-virtual {v1}, Ljava/io/Writer;->close()V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     :catchall_1
-    move-exception p0
-
-    .line 6
     :try_start_4
     throw p0
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
     :catchall_2
-    move-exception p1
+    move-exception p0
 
-    .line 7
     :try_start_5
-    invoke-static {p0, v1}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    throw p1
+    invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_3
 
     :catchall_3
-    move-exception p0
-
-    .line 8
-    :try_start_6
-    throw p0
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_4
-
-    :catchall_4
-    move-exception p1
-
-    .line 9
-    :try_start_7
-    invoke-interface {v0}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_5
-
-    throw p1
-
-    :catchall_5
     throw p0
 .end method
 
@@ -1226,9 +1132,7 @@
 
     invoke-direct {v1, v2}, Ljava/io/BufferedWriter;-><init>(Ljava/io/Writer;)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_3
-
-    const/4 v2, 0x0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     .line 3
     :try_start_1
@@ -1239,67 +1143,42 @@
 
     move-result-object p0
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 5
     :try_start_2
-    invoke-static {v2, v1}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v1}, Ljava/io/Writer;->close()V
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_3
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    :try_start_3
-    invoke-interface {v0}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->close()V
 
     return-object p0
 
     :catchall_0
     move-exception p0
 
-    throw p0
+    .line 6
+    :try_start_3
+    invoke-virtual {v1}, Ljava/io/Writer;->close()V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     :catchall_1
-    move-exception p0
-
-    .line 6
     :try_start_4
     throw p0
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
     :catchall_2
-    move-exception p1
+    move-exception p0
 
-    .line 7
     :try_start_5
-    invoke-static {p0, v1}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    throw p1
+    invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_3
 
     :catchall_3
-    move-exception p0
-
-    .line 8
-    :try_start_6
-    throw p0
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_4
-
-    :catchall_4
-    move-exception p1
-
-    .line 9
-    :try_start_7
-    invoke-interface {v0}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_5
-
-    throw p1
-
-    :catchall_5
     throw p0
 .end method
 
@@ -1430,42 +1309,23 @@
 
     check-cast p1, Lio/sentry/SentryEvent;
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 5
-    :try_start_1
-    invoke-interface {v0}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    invoke-virtual {v0}, Ljava/io/Reader;->close()V
 
     return-object p1
 
     :catchall_0
     move-exception p1
 
-    throw p1
+    .line 6
+    :try_start_1
+    invoke-virtual {v0}, Ljava/io/Reader;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     :catchall_1
-    move-exception p1
-
-    .line 6
-    :try_start_2
-    throw p1
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_2
-
-    :catchall_2
-    move-exception v1
-
-    .line 7
-    :try_start_3
-    invoke-interface {v0}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_3
-
-    throw v1
-
-    :catchall_3
     throw p1
 
     :cond_1
@@ -1538,42 +1398,23 @@
 
     check-cast p1, Lio/sentry/protocol/SentryTransaction;
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 5
-    :try_start_1
-    invoke-interface {v0}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    invoke-virtual {v0}, Ljava/io/Reader;->close()V
 
     return-object p1
 
     :catchall_0
     move-exception p1
 
-    throw p1
+    .line 6
+    :try_start_1
+    invoke-virtual {v0}, Ljava/io/Reader;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     :catchall_1
-    move-exception p1
-
-    .line 6
-    :try_start_2
-    throw p1
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_2
-
-    :catchall_2
-    move-exception v1
-
-    .line 7
-    :try_start_3
-    invoke-interface {v0}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_3
-
-    throw v1
-
-    :catchall_3
     throw p1
 
     :cond_1

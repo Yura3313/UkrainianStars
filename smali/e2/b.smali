@@ -1,109 +1,133 @@
 .class public final Le2/b;
-.super Lcom/google/android/gms/common/internal/a;
+.super Lcom/google/android/gms/common/api/b;
 .source "com.google.android.gms:play-services-base@@17.5.0"
+
+# interfaces
+.implements Lc2/m;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/google/android/gms/common/internal/a<",
-        "Lcom/google/android/gms/common/internal/service/zak;",
-        ">;"
+        "Lcom/google/android/gms/common/api/b<",
+        "Lcom/google/android/gms/common/api/a$d$c;",
+        ">;",
+        "Lc2/m;"
     }
 .end annotation
 
 
+# static fields
+.field public static final k:Lcom/google/android/gms/common/api/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/android/gms/common/api/a<",
+            "Lcom/google/android/gms/common/api/a$d$c;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Lc2/c;La2/e;La2/l;)V
-    .locals 7
-
-    const/16 v3, 0x10e
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move-object v4, p3
-
-    move-object v5, p4
-
-    move-object v6, p5
+.method public static constructor <clinit>()V
+    .locals 4
 
     .line 1
-    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/common/internal/a;-><init>(Landroid/content/Context;Landroid/os/Looper;ILc2/c;La2/e;La2/l;)V
+    new-instance v0, Lcom/google/android/gms/common/api/a$g;
+
+    invoke-direct {v0}, Lcom/google/android/gms/common/api/a$g;-><init>()V
+
+    .line 2
+    new-instance v1, Le2/d;
+
+    invoke-direct {v1}, Le2/d;-><init>()V
+
+    .line 3
+    new-instance v2, Lcom/google/android/gms/common/api/a;
+
+    const-string v3, "ClientTelemetry.API"
+
+    invoke-direct {v2, v3, v1, v0}, Lcom/google/android/gms/common/api/a;-><init>(Ljava/lang/String;Lcom/google/android/gms/common/api/a$a;Lcom/google/android/gms/common/api/a$g;)V
+
+    sput-object v2, Le2/b;->k:Lcom/google/android/gms/common/api/a;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 3
+
+    .line 1
+    sget-object v0, Le2/b;->k:Lcom/google/android/gms/common/api/a;
+
+    sget-object v1, Lcom/google/android/gms/common/api/a$d;->b:Lcom/google/android/gms/common/api/a$d$c;
+
+    sget-object v2, Lcom/google/android/gms/common/api/b$a;->c:Lcom/google/android/gms/common/api/b$a;
+
+    invoke-direct {p0, p1, v0, v1, v2}, Lcom/google/android/gms/common/api/b;-><init>(Landroid/content/Context;Lcom/google/android/gms/common/api/a;Lcom/google/android/gms/common/api/a$d;Lcom/google/android/gms/common/api/b$a;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final i()I
-    .locals 1
-
-    const v0, 0xc1f7c30
-
-    return v0
-.end method
-
-.method public final synthetic p(Landroid/os/IBinder;)Landroid/os/IInterface;
-    .locals 2
-
-    if-nez p1, :cond_0
-
-    const/4 p1, 0x0
-
-    return-object p1
-
-    :cond_0
-    const-string v0, "com.google.android.gms.common.internal.service.IClientTelemetryService"
+.method public final P0(Lcom/google/android/gms/common/internal/zaaa;)Lb4/f;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/gms/common/internal/zaaa;",
+            ")",
+            "Lb4/f<",
+            "Ljava/lang/Void;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    invoke-interface {p1, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+    new-instance v0, La2/p$a;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, La2/p$a;-><init>(Lb5/m;)V
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [Lcom/google/android/gms/common/Feature;
 
     .line 2
-    instance-of v1, v0, Lcom/google/android/gms/common/internal/service/zak;
+    sget-object v2, Lo3/b;->a:Lcom/google/android/gms/common/Feature;
 
-    if-eqz v1, :cond_1
+    const/4 v3, 0x0
+
+    aput-object v2, v1, v3
 
     .line 3
-    check-cast v0, Lcom/google/android/gms/common/internal/service/zak;
-
-    return-object v0
+    iput-object v1, v0, La2/p$a;->c:[Lcom/google/android/gms/common/Feature;
 
     .line 4
-    :cond_1
-    new-instance v0, Lcom/google/android/gms/common/internal/service/zaj;
+    iput-boolean v3, v0, La2/p$a;->b:Z
 
-    invoke-direct {v0, p1}, Lcom/google/android/gms/common/internal/service/zaj;-><init>(Landroid/os/IBinder;)V
+    .line 5
+    new-instance v1, Le2/a;
 
-    return-object v0
-.end method
+    invoke-direct {v1, p1}, Le2/a;-><init>(Lcom/google/android/gms/common/internal/zaaa;)V
 
-.method public final r()[Lcom/google/android/gms/common/Feature;
-    .locals 1
+    .line 6
+    iput-object v1, v0, La2/p$a;->a:La2/n;
 
-    .line 1
-    sget-object v0, Lo3/b;->b:[Lcom/google/android/gms/common/Feature;
+    .line 7
+    invoke-virtual {v0}, La2/p$a;->a()La2/p;
 
-    return-object v0
-.end method
+    move-result-object p1
 
-.method public final w()Ljava/lang/String;
-    .locals 1
+    const/4 v0, 0x2
 
-    const-string v0, "com.google.android.gms.common.internal.service.IClientTelemetryService"
+    .line 8
+    invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/common/api/b;->b(ILa2/p;)Lb4/f;
 
-    return-object v0
-.end method
+    move-result-object p1
 
-.method public final x()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.google.android.gms.common.telemetry.service.START"
-
-    return-object v0
+    return-object p1
 .end method

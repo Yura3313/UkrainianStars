@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public b:Z
+.field public h:Z
 
-.field public h:J
+.field public i:J
 
-.field public final i:Z
+.field public final j:Z
 
 
 # direct methods
@@ -45,16 +45,16 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->a:I
+    iput p1, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->g:I
 
     .line 3
-    iput-boolean p2, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->b:Z
+    iput-boolean p2, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->h:Z
 
     .line 4
-    iput-wide p3, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->h:J
+    iput-wide p3, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->i:J
 
     .line 5
-    iput-boolean p5, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->i:Z
+    iput-boolean p5, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->j:Z
 
     return-void
 .end method
@@ -74,7 +74,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->a:I
+    iget v1, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->g:I
 
     const/4 v2, 0x4
 
@@ -87,7 +87,7 @@
     const/4 v0, 0x2
 
     .line 5
-    iget-boolean v1, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->b:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->h:Z
 
     .line 6
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -98,7 +98,7 @@
     const/4 v0, 0x3
 
     .line 8
-    iget-wide v3, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->h:J
+    iget-wide v3, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->i:J
 
     const/16 v1, 0x8
 
@@ -109,7 +109,7 @@
     invoke-virtual {p1, v3, v4}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 11
-    iget-boolean v0, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->i:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/auth/api/accounttransfer/DeviceMetaData;->j:Z
 
     .line 12
     invoke-static {p1, v2, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V

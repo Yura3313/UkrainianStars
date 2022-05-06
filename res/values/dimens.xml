@@ -7,6 +7,7 @@
     <dimen name="XS">12.0dip</dimen>
     <dimen name="XXL">18.0dip</dimen>
     <dimen name="XXS">11.0dip</dimen>
+    <dimen name="XXXL">20.0dip</dimen>
     <dimen name="XXXS">8.0dip</dimen>
     <dimen name="abc_action_bar_content_inset_material">16.0dip</dimen>
     <dimen name="abc_action_bar_content_inset_with_nav">72.0dip</dimen>
@@ -144,9 +145,9 @@
     <dimen name="design_bottom_sheet_peek_height_min">64.0dip</dimen>
     <dimen name="design_fab_border_width">0.5dip</dimen>
     <dimen name="design_fab_elevation">6.0dip</dimen>
-    <dimen name="design_fab_image_size">24.0dip</dimen>
-    <dimen name="design_fab_size_mini">40.0dip</dimen>
-    <dimen name="design_fab_size_normal">56.0dip</dimen>
+    <dimen name="design_fab_image_size">48.0dip</dimen>
+    <dimen name="design_fab_size_mini">44.0dip</dimen>
+    <dimen name="design_fab_size_normal">64.0dip</dimen>
     <dimen name="design_fab_translation_z_hovered_focused">6.0dip</dimen>
     <dimen name="design_fab_translation_z_pressed">6.0dip</dimen>
     <dimen name="design_navigation_elevation">16.0dip</dimen>

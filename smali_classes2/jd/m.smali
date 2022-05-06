@@ -1,198 +1,121 @@
 .class public final Ljd/m;
-.super Ljava/lang/Object;
-.source "MessagesTabFriendsFragment.kt"
+.super Lle/j;
+.source "OnboardingNicknamePageFragment.kt"
 
 # interfaces
-.implements Lwd/j1;
+.implements Lke/p;
 
 
-# instance fields
-.field public final a:I
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lle/j;",
+        "Lke/p<",
+        "Ljd/k;",
+        "Lqc/w;",
+        "Lae/i;",
+        ">;"
+    }
+.end annotation
 
-.field public final b:Ljava/lang/String;
+
+# static fields
+.field public static final g:Ljd/m;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Ljd/m;
 
-    iput-object p1, p0, Ljd/m;->b:Ljava/lang/String;
+    invoke-direct {v0}, Ljd/m;-><init>()V
 
-    .line 2
-    sget p1, Lcom/supercell/id/R$layout;->list_item_section_header:I
+    sput-object v0, Ljd/m;->g:Ljd/m;
 
-    iput p1, p0, Ljd/m;->a:I
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lwd/j1;)Z
-    .locals 1
-
-    if-eqz p1, :cond_1
+.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    instance-of v0, p1, Ljd/m;
+    check-cast p1, Ljd/k;
 
-    if-nez v0, :cond_0
+    check-cast p2, Lqc/w;
 
-    const/4 p1, 0x0
-
-    return p1
-
-    .line 2
-    :cond_0
-    iget-object v0, p0, Ljd/m;->b:Ljava/lang/String;
-
-    check-cast p1, Ljd/m;
-
-    iget-object p1, p1, Ljd/m;->b:Ljava/lang/String;
-
-    invoke-static {v0, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    return p1
-
-    :cond_1
-    const-string p1, "other"
-
-    .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public c(Lwd/j1;)Z
-    .locals 1
-
-    if-eqz p1, :cond_1
-
-    .line 1
-    instance-of v0, p1, Ljd/m;
-
-    if-eqz v0, :cond_0
-
-    check-cast p1, Ljd/m;
-
-    iget-object p1, p1, Ljd/m;->b:Ljava/lang/String;
-
-    iget-object v0, p0, Ljd/m;->b:Ljava/lang/String;
-
-    invoke-static {p1, v0}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    :goto_0
-    return p1
-
-    :cond_1
-    const-string p1, "other"
-
-    .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public d()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Ljd/m;->a:I
-
-    return v0
-.end method
-
-.method public equals(Ljava/lang/Object;)Z
-    .locals 1
-
-    if-eq p0, p1, :cond_1
-
-    instance-of v0, p1, Ljd/m;
-
-    if-eqz v0, :cond_0
-
-    check-cast p1, Ljd/m;
-
-    iget-object v0, p0, Ljd/m;->b:Ljava/lang/String;
-
-    iget-object p1, p1, Ljd/m;->b:Ljava/lang/String;
-
-    invoke-static {v0, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return p1
-
-    :cond_1
-    :goto_0
-    const/4 p1, 0x1
-
-    return p1
-.end method
-
-.method public hashCode()I
-    .locals 1
-
-    iget-object v0, p0, Ljd/m;->b:Ljava/lang/String;
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    move-result v0
-
-    goto :goto_0
-
-    :cond_0
     const/4 v0, 0x0
 
-    :goto_0
-    return v0
-.end method
+    if-eqz p1, :cond_3
 
-.method public toString()Ljava/lang/String;
-    .locals 3
+    if-eqz p2, :cond_2
 
-    const-string v0, "SectionHeaderRow(titleKey="
+    .line 2
+    invoke-virtual {p1}, Ljd/a;->d1()Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v0
+    if-eqz v1, :cond_0
 
-    iget-object v1, p0, Ljd/m;->b:Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->s1()V
 
-    const-string v2, ")"
+    .line 3
+    :cond_0
+    iget-object p2, p2, Lqc/w;->b:Ljava/util/List;
 
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    .line 4
+    invoke-static {p2, v1}, Lbe/k;->G(Ljava/util/List;I)Ljava/lang/Object;
 
-    return-object v0
+    move-result-object p2
+
+    check-cast p2, Ljava/lang/String;
+
+    if-eqz p2, :cond_1
+
+    .line 5
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+
+    .line 6
+    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/String;Lke/l;)V
+
+    .line 7
+    :cond_1
+    sget-object p1, Lae/i;->a:Lae/i;
+
+    return-object p1
+
+    :cond_2
+    const-string p1, "it"
+
+    .line 8
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_3
+    const-string p1, "$receiver"
+
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
 .end method

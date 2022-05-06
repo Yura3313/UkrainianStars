@@ -11,7 +11,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/internal/ads/zzaue;",
+        "Lcom/google/android/gms/internal/ads/zzatz;",
         ">;"
     }
 .end annotation
@@ -39,7 +39,7 @@
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    move-object v2, v1
 
     .line 2
     :goto_0
@@ -73,28 +73,33 @@
 
     .line 5
     :cond_0
-    invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    move-result v2
+    move-result-object v2
 
     goto :goto_0
 
     .line 6
     :cond_1
-    invoke-static {p1, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    sget-object v1, Lcom/google/android/gms/internal/ads/zzvc;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 7
+    invoke-static {p1, v3, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object v1
 
+    check-cast v1, Lcom/google/android/gms/internal/ads/zzvc;
+
     goto :goto_0
 
-    .line 7
+    .line 8
     :cond_2
     invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
 
-    .line 8
-    new-instance p1, Lcom/google/android/gms/internal/ads/zzaue;
+    .line 9
+    new-instance p1, Lcom/google/android/gms/internal/ads/zzatz;
 
-    invoke-direct {p1, v1, v2}, Lcom/google/android/gms/internal/ads/zzaue;-><init>(Ljava/lang/String;I)V
+    invoke-direct {p1, v1, v2}, Lcom/google/android/gms/internal/ads/zzatz;-><init>(Lcom/google/android/gms/internal/ads/zzvc;Ljava/lang/String;)V
 
     return-object p1
 .end method
@@ -103,7 +108,7 @@
     .locals 0
 
     .line 1
-    new-array p1, p1, [Lcom/google/android/gms/internal/ads/zzaue;
+    new-array p1, p1, [Lcom/google/android/gms/internal/ads/zzatz;
 
     return-object p1
 .end method

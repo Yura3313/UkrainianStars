@@ -16,9 +16,9 @@
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/internal/ads/zzvc;
+.field public final g:Lcom/google/android/gms/internal/ads/zzvc;
 
-.field public final b:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
 
 # direct methods
@@ -26,9 +26,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lj3/x8;
+    new-instance v0, Lj3/z8;
 
-    invoke-direct {v0}, Lj3/x8;-><init>()V
+    invoke-direct {v0}, Lj3/z8;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzatz;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -42,10 +42,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzatz;->a:Lcom/google/android/gms/internal/ads/zzvc;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzatz;->g:Lcom/google/android/gms/internal/ads/zzvc;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzatz;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzatz;->h:Ljava/lang/String;
 
     return-void
 .end method
@@ -65,7 +65,7 @@
     const/4 v1, 0x2
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzatz;->a:Lcom/google/android/gms/internal/ads/zzvc;
+    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzatz;->g:Lcom/google/android/gms/internal/ads/zzvc;
 
     const/4 v3, 0x0
 
@@ -74,7 +74,7 @@
     const/4 p2, 0x3
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzatz;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzatz;->h:Ljava/lang/String;
 
     invoke-static {p1, p2, v1, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 

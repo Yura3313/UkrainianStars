@@ -1,5 +1,5 @@
 .class public Ld9/m;
-.super Ly7/g;
+.super Lz7/g;
 .source "ConversationalVM.java"
 
 
@@ -14,7 +14,7 @@
     .line 1
     iput-object p1, p0, Ld9/m;->b:Ld9/i;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -27,7 +27,7 @@
     .line 1
     iget-object v0, p0, Ld9/m;->b:Ld9/i;
 
-    iget-object v0, v0, Ld9/i;->n:Ll8/k;
+    iget-object v0, v0, Ld9/i;->n:Lm8/m;
 
     if-nez v0, :cond_0
 
@@ -41,32 +41,32 @@
     const-string v2, "Preissue creation success. Handling on UI."
 
     .line 2
-    invoke-static {v1, v2, v0, v0}, Lce/z;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v0, v0}, Lie/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     .line 3
     iget-object v0, p0, Ld9/m;->b:Ld9/i;
 
-    iget-object v0, v0, Ld9/i;->l:Lr8/b;
+    iget-object v0, v0, Ld9/i;->l:Ls8/b;
 
     .line 4
-    iget-object v0, v0, Lr8/b;->k:Lk8/a;
+    iget-object v0, v0, Ls8/b;->k:Ll8/a;
 
     .line 5
-    invoke-virtual {v0}, Lk8/a;->c()V
+    invoke-virtual {v0}, Ll8/a;->c()V
 
     .line 6
     iget-object v0, p0, Ld9/m;->b:Ld9/i;
 
-    invoke-virtual {v0}, Ld9/i;->w()V
+    invoke-virtual {v0}, Ld9/i;->x()V
 
     .line 7
     iget-object v0, p0, Ld9/m;->b:Ld9/i;
 
-    iget-object v0, v0, Ld9/i;->n:Ll8/k;
+    iget-object v0, v0, Ld9/i;->n:Lm8/m;
 
-    check-cast v0, Lqa/e0;
+    check-cast v0, Loa/e0;
 
-    invoke-virtual {v0}, Lqa/e0;->m()V
+    invoke-virtual {v0}, Loa/e0;->m()V
 
     .line 8
     iget-object v0, p0, Ld9/m;->b:Ld9/i;
@@ -77,13 +77,13 @@
 
     if-nez v1, :cond_1
 
-    iget-object v0, v0, Ld9/i;->k:Ll8/p;
+    iget-object v0, v0, Ld9/i;->k:Lm8/r;
 
-    invoke-virtual {v0}, Ll8/p;->c()Lo8/d;
+    invoke-virtual {v0}, Lm8/r;->c()Lp8/d;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lo8/d;->c()Z
+    invoke-virtual {v0}, Lp8/d;->b()Z
 
     move-result v0
 
@@ -98,22 +98,22 @@
     :cond_1
     iget-object v0, p0, Ld9/m;->b:Ld9/i;
 
-    iget-object v0, v0, Ld9/i;->n:Ll8/k;
+    iget-object v0, v0, Ld9/i;->n:Lm8/m;
 
-    check-cast v0, Lqa/e0;
+    check-cast v0, Loa/e0;
 
-    invoke-virtual {v0}, Lqa/e0;->h()V
+    invoke-virtual {v0}, Loa/e0;->h()V
 
     .line 11
     iget-object v0, p0, Ld9/m;->b:Ld9/i;
 
-    iget-object v0, v0, Ld9/i;->k:Ll8/p;
+    iget-object v0, v0, Ld9/i;->k:Lm8/r;
 
-    invoke-virtual {v0}, Ll8/p;->c()Lo8/d;
+    invoke-virtual {v0}, Lm8/r;->c()Lp8/d;
 
     move-result-object v0
 
-    iget-object v0, v0, Lo8/d;->m:Ljava/lang/String;
+    iget-object v0, v0, Lp8/d;->n:Ljava/lang/String;
 
     const-string v1, "issue"
 
@@ -126,9 +126,9 @@
     .line 12
     iget-object v0, p0, Ld9/m;->b:Ld9/i;
 
-    iget-object v0, v0, Ld9/i;->D:Lpb/k;
+    iget-object v0, v0, Ld9/i;->D:Lnb/k;
 
-    invoke-virtual {v0, v2}, Lpb/k;->e(Z)V
+    invoke-virtual {v0, v2}, Lnb/k;->e(Z)V
 
     .line 13
     iget-object v0, p0, Ld9/m;->b:Ld9/i;

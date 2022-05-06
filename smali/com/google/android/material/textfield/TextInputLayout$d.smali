@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/material/textfield/TextInputLayout;
+.field public final synthetic g:Lcom/google/android/material/textfield/TextInputLayout;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout$d;->a:Lcom/google/android/material/textfield/TextInputLayout;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout$d;->g:Lcom/google/android/material/textfield/TextInputLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,9 +39,9 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout$d;->a:Lcom/google/android/material/textfield/TextInputLayout;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout$d;->g:Lcom/google/android/material/textfield/TextInputLayout;
 
-    iget-object v0, v0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v0, v0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 

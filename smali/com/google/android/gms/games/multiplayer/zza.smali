@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public final I1()Ljava/util/ArrayList;
+.method public final L1()Ljava/util/ArrayList;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -23,26 +23,26 @@
     return-object v0
 .end method
 
-.method public final Y()I
+.method public final a0()I
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "type"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->z2(Ljava/lang/String;II)I
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final b()Lcom/google/android/gms/games/Game;
+.method public final c()Lcom/google/android/gms/games/Game;
     .locals 1
 
     const/4 v0, 0x0
@@ -50,32 +50,32 @@
     return-object v0
 .end method
 
-.method public final c()J
+.method public final d()J
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "creation_timestamp"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->A2(Ljava/lang/String;II)J
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->C2(Ljava/lang/String;II)J
 
     move-result-wide v0
 
     .line 2
-    iget-object v2, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v2, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v3, p0, Lb2/d;->b:I
+    iget v3, p0, Lb2/d;->h:I
 
-    iget v4, p0, Lb2/d;->h:I
+    iget v4, p0, Lb2/d;->i:I
 
     const-string v5, "last_modified_timestamp"
 
-    invoke-virtual {v2, v5, v3, v4}, Lcom/google/android/gms/common/data/DataHolder;->A2(Ljava/lang/String;II)J
+    invoke-virtual {v2, v5, v3, v4}, Lcom/google/android/gms/common/data/DataHolder;->C2(Ljava/lang/String;II)J
 
     move-result-wide v2
 
@@ -87,7 +87,34 @@
     return-wide v0
 .end method
 
-.method public final synthetic c2()Ljava/lang/Object;
+.method public final describeContents()I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final e()I
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
+
+    iget v1, p0, Lb2/d;->h:I
+
+    iget v2, p0, Lb2/d;->i:I
+
+    const-string v3, "variant"
+
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final synthetic e2()Ljava/lang/Object;
     .locals 1
 
     .line 1
@@ -98,57 +125,30 @@
     return-object v0
 .end method
 
-.method public final d()I
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
-
-    iget v1, p0, Lb2/d;->b:I
-
-    iget v2, p0, Lb2/d;->h:I
-
-    const-string v3, "variant"
-
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->z2(Ljava/lang/String;II)I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final describeContents()I
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
 .method public final equals(Ljava/lang/Object;)Z
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->B2(Lcom/google/android/gms/games/multiplayer/Invitation;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->D2(Lcom/google/android/gms/games/multiplayer/Invitation;Ljava/lang/Object;)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method public final f2()Ljava/lang/String;
+.method public final h2()Ljava/lang/String;
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "external_invitation_id"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -159,14 +159,14 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->A2(Lcom/google/android/gms/games/multiplayer/Invitation;)I
+    invoke-static {p0}, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->C2(Lcom/google/android/gms/games/multiplayer/Invitation;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final l0()Lcom/google/android/gms/games/multiplayer/Participant;
+.method public final p0()Lcom/google/android/gms/games/multiplayer/Participant;
     .locals 1
 
     const/4 v0, 0x0
@@ -174,19 +174,30 @@
     return-object v0
 .end method
 
-.method public final t()I
+.method public final toString()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {p0}, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->E2(Lcom/google/android/gms/games/multiplayer/Invitation;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final v()I
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "has_automatch_criteria"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->x2(Ljava/lang/String;II)Z
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->z2(Ljava/lang/String;II)Z
 
     move-result v0
 
@@ -198,30 +209,19 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "automatch_max_players"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->z2(Ljava/lang/String;II)I
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)I
 
     move-result v0
 
     return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->C2(Lcom/google/android/gms/games/multiplayer/Invitation;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
 .end method
 
 .method public final writeToParcel(Landroid/os/Parcel;I)V

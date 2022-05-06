@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final a:Ljava/util/List;
+.field public final g:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -55,7 +55,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/drive/events/zzx;->a:Ljava/util/List;
+    iput-object p1, p0, Lcom/google/android/gms/drive/events/zzx;->g:Ljava/util/List;
 
     return-void
 .end method
@@ -90,9 +90,9 @@
     check-cast p1, Lcom/google/android/gms/drive/events/zzx;
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/gms/drive/events/zzx;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/drive/events/zzx;->g:Ljava/util/List;
 
-    iget-object p1, p1, Lcom/google/android/gms/drive/events/zzx;->a:Ljava/util/List;
+    iget-object p1, p1, Lcom/google/android/gms/drive/events/zzx;->g:Ljava/util/List;
 
     invoke-static {v0, p1}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -115,7 +115,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/drive/events/zzx;->a:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/drive/events/zzx;->g:Ljava/util/List;
 
     const/4 v2, 0x0
 
@@ -139,7 +139,7 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    iget-object v2, p0, Lcom/google/android/gms/drive/events/zzx;->a:Ljava/util/List;
+    iget-object v2, p0, Lcom/google/android/gms/drive/events/zzx;->g:Ljava/util/List;
 
     const/4 v3, 0x0
 
@@ -167,7 +167,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/drive/events/zzx;->a:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/drive/events/zzx;->g:Ljava/util/List;
 
     const/4 v2, 0x0
 

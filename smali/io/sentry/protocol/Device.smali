@@ -46,6 +46,11 @@
 .field private id:Ljava/lang/String;
 
 .field private language:Ljava/lang/String;
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end field
+
+.field private locale:Ljava/lang/String;
 
 .field private lowMemory:Ljava/lang/Boolean;
 
@@ -270,11 +275,16 @@
     iput-object v0, p0, Lio/sentry/protocol/Device;->archs:[Ljava/lang/String;
 
     .line 33
+    iget-object v0, p1, Lio/sentry/protocol/Device;->locale:Ljava/lang/String;
+
+    iput-object v0, p0, Lio/sentry/protocol/Device;->locale:Ljava/lang/String;
+
+    .line 34
     iget-object v0, p1, Lio/sentry/protocol/Device;->timezone:Ljava/util/TimeZone;
 
     if-eqz v0, :cond_1
 
-    .line 34
+    .line 35
     invoke-virtual {v0}, Ljava/util/TimeZone;->clone()Ljava/lang/Object;
 
     move-result-object v0
@@ -286,7 +296,7 @@
     :cond_1
     iput-object v1, p0, Lio/sentry/protocol/Device;->timezone:Ljava/util/TimeZone;
 
-    .line 35
+    .line 36
     iget-object p1, p1, Lio/sentry/protocol/Device;->unknown:Ljava/util/Map;
 
     invoke-static {p1}, Lio/sentry/util/CollectionUtils;->newConcurrentHashMap(Ljava/util/Map;)Ljava/util/Map;
@@ -453,6 +463,15 @@
 
     .line 1
     iget-object v0, p0, Lio/sentry/protocol/Device;->language:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getLocale()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/protocol/Device;->locale:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -750,6 +769,15 @@
 
     .line 1
     iput-object p1, p0, Lio/sentry/protocol/Device;->language:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setLocale(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lio/sentry/protocol/Device;->locale:Ljava/lang/String;
 
     return-void
 .end method

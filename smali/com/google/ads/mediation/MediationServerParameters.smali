@@ -153,7 +153,7 @@
 
     const/16 v2, 0x2b
 
-    invoke-static {v1, v2}, Ly/b;->a(Ljava/lang/String;I)I
+    invoke-static {v1, v2}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v1
 
@@ -173,7 +173,7 @@
 
     const/16 v2, 0x31
 
-    invoke-static {v1, v2}, Ly/b;->a(Ljava/lang/String;I)I
+    invoke-static {v1, v2}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v1
 
@@ -200,11 +200,11 @@
 
     const/16 v3, 0x1f
 
-    invoke-static {v2, v3}, Ly/b;->a(Ljava/lang/String;I)I
+    invoke-static {v2, v3}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v2
 
-    invoke-static {v1, v2}, Ly/b;->a(Ljava/lang/String;I)I
+    invoke-static {v1, v2}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v1
 

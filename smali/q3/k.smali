@@ -11,7 +11,7 @@
     .locals 5
 
     .line 1
-    sget-object v0, Lq3/j2$d;->a:[I
+    sget-object v0, Lq3/g2$d;->a:[I
 
     invoke-virtual {v0}, [I->clone()Ljava/lang/Object;
 

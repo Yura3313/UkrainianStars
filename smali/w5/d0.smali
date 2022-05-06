@@ -1,44 +1,34 @@
 .class public final synthetic Lw5/d0;
 .super Ljava/lang/Object;
 
-# interfaces
-.implements Ljava/util/concurrent/Executor;
 
+# instance fields
+.field public final a:Lcom/google/firebase/iid/FirebaseInstanceId;
 
-# static fields
-.field public static final a:Ljava/util/concurrent/Executor;
+.field public final b:Ljava/lang/String;
+
+.field public final c:Ljava/lang/String;
+
+.field public final d:Ljava/lang/String;
+
+.field public final e:Ljava/lang/String;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lw5/d0;
-
-    invoke-direct {v0}, Lw5/d0;-><init>()V
-
-    sput-object v0, Lw5/d0;->a:Ljava/util/concurrent/Executor;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lcom/google/firebase/iid/FirebaseInstanceId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-void
-.end method
+    iput-object p1, p0, Lw5/d0;->a:Lcom/google/firebase/iid/FirebaseInstanceId;
 
+    iput-object p2, p0, Lw5/d0;->b:Ljava/lang/String;
 
-# virtual methods
-.method public final execute(Ljava/lang/Runnable;)V
-    .locals 1
+    iput-object p3, p0, Lw5/d0;->c:Ljava/lang/String;
 
-    sget-object v0, Lw5/b0;->a:Ljava/util/concurrent/Executor;
+    iput-object p4, p0, Lw5/d0;->d:Ljava/lang/String;
 
-    .line 1
-    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
+    iput-object p5, p0, Lw5/d0;->e:Ljava/lang/String;
 
     return-void
 .end method

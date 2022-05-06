@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
+.field public final synthetic g:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
 
 # direct methods
@@ -15,7 +15,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/appbar/e;->a:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
+    iput-object p1, p0, Lcom/google/android/material/appbar/e;->g:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,7 +28,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/appbar/e;->a:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
+    iget-object v0, p0, Lcom/google/android/material/appbar/e;->g:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 

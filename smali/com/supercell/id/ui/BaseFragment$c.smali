@@ -23,13 +23,13 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lcom/supercell/id/ui/BaseFragment$c;
+.field public static final enum g:Lcom/supercell/id/ui/BaseFragment$c;
 
-.field public static final enum EXIT:Lcom/supercell/id/ui/BaseFragment$c;
+.field public static final enum h:Lcom/supercell/id/ui/BaseFragment$c;
 
-.field public static final enum FADE_OUT:Lcom/supercell/id/ui/BaseFragment$c;
+.field public static final enum i:Lcom/supercell/id/ui/BaseFragment$c;
 
-.field public static final enum SLIDE_OUT:Lcom/supercell/id/ui/BaseFragment$c;
+.field public static final synthetic j:[Lcom/supercell/id/ui/BaseFragment$c;
 
 
 # direct methods
@@ -48,7 +48,7 @@
 
     invoke-direct {v1, v2, v3}, Lcom/supercell/id/ui/BaseFragment$c;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/supercell/id/ui/BaseFragment$c;->SLIDE_OUT:Lcom/supercell/id/ui/BaseFragment$c;
+    sput-object v1, Lcom/supercell/id/ui/BaseFragment$c;->g:Lcom/supercell/id/ui/BaseFragment$c;
 
     aput-object v1, v0, v3
 
@@ -60,7 +60,7 @@
 
     invoke-direct {v1, v2, v3}, Lcom/supercell/id/ui/BaseFragment$c;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/supercell/id/ui/BaseFragment$c;->FADE_OUT:Lcom/supercell/id/ui/BaseFragment$c;
+    sput-object v1, Lcom/supercell/id/ui/BaseFragment$c;->h:Lcom/supercell/id/ui/BaseFragment$c;
 
     aput-object v1, v0, v3
 
@@ -72,16 +72,16 @@
 
     invoke-direct {v1, v2, v3}, Lcom/supercell/id/ui/BaseFragment$c;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/supercell/id/ui/BaseFragment$c;->EXIT:Lcom/supercell/id/ui/BaseFragment$c;
+    sput-object v1, Lcom/supercell/id/ui/BaseFragment$c;->i:Lcom/supercell/id/ui/BaseFragment$c;
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lcom/supercell/id/ui/BaseFragment$c;->$VALUES:[Lcom/supercell/id/ui/BaseFragment$c;
+    sput-object v0, Lcom/supercell/id/ui/BaseFragment$c;->j:[Lcom/supercell/id/ui/BaseFragment$c;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;I)V
+.method public constructor <init>(Ljava/lang/String;I)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -112,7 +112,7 @@
 .method public static values()[Lcom/supercell/id/ui/BaseFragment$c;
     .locals 1
 
-    sget-object v0, Lcom/supercell/id/ui/BaseFragment$c;->$VALUES:[Lcom/supercell/id/ui/BaseFragment$c;
+    sget-object v0, Lcom/supercell/id/ui/BaseFragment$c;->j:[Lcom/supercell/id/ui/BaseFragment$c;
 
     invoke-virtual {v0}, [Lcom/supercell/id/ui/BaseFragment$c;->clone()Ljava/lang/Object;
 

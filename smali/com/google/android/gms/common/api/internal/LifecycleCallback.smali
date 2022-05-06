@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:La2/i;
+.field public final g:La2/i;
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 .end field
@@ -22,7 +22,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->a:La2/i;
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->g:La2/i;
 
     return-void
 .end method
@@ -52,7 +52,7 @@
     const-string v0, "SupportLifecycleFragmentImpl"
 
     .line 4
-    sget-object v1, La2/d1;->e0:Ljava/util/WeakHashMap;
+    sget-object v1, La2/d1;->f0:Ljava/util/WeakHashMap;
 
     invoke-virtual {v1, p0}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -91,7 +91,7 @@
     if-eqz v1, :cond_1
 
     .line 7
-    iget-boolean v2, v1, Landroidx/fragment/app/Fragment;->r:Z
+    iget-boolean v2, v1, Landroidx/fragment/app/Fragment;->s:Z
 
     if-eqz v2, :cond_2
 
@@ -123,7 +123,7 @@
 
     .line 13
     :cond_2
-    sget-object v0, La2/d1;->e0:Ljava/util/WeakHashMap;
+    sget-object v0, La2/d1;->f0:Ljava/util/WeakHashMap;
 
     new-instance v2, Ljava/lang/ref/WeakReference;
 
@@ -149,7 +149,7 @@
     const-string v0, "LifecycleFragmentImpl"
 
     .line 15
-    sget-object v1, La2/c1;->i:Ljava/util/WeakHashMap;
+    sget-object v1, La2/c1;->j:Ljava/util/WeakHashMap;
 
     invoke-virtual {v1, p0}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -217,7 +217,7 @@
 
     .line 21
     :cond_6
-    sget-object v0, La2/c1;->i:Ljava/util/WeakHashMap;
+    sget-object v0, La2/c1;->j:Ljava/util/WeakHashMap;
 
     new-instance v2, Ljava/lang/ref/WeakReference;
 
@@ -264,9 +264,9 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->a:La2/i;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->g:La2/i;
 
-    invoke-interface {v0}, La2/i;->j()Landroid/app/Activity;
+    invoke-interface {v0}, La2/i;->i()Landroid/app/Activity;
 
     move-result-object v0
 

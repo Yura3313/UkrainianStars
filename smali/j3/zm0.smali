@@ -1,16 +1,19 @@
-.class public interface abstract Lj3/zm0;
+.class public abstract Lj3/zm0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# virtual methods
-.method public abstract a(Ljava/lang/String;)Z
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
 .end method
 
-.method public abstract b(Ljava/lang/String;)Lj3/rm0;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
+
+# virtual methods
+.method public abstract b()Ljava/lang/Throwable;
 .end method

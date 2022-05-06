@@ -22,21 +22,21 @@
         "Lke/p<",
         "Landroid/view/View;",
         "Ljava/lang/Integer;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/profile/ProfileFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profile/ProfileFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$b;->a:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$b;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     const/4 p1, 0x2
 
@@ -62,7 +62,7 @@
     if-eqz p1, :cond_1
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$b;->a:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$b;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     sget v1, Lcom/supercell/id/R$id;->tab_pager:I
 
@@ -74,7 +74,7 @@
 
     const-string v2, "tab_pager"
 
-    invoke-static {v0, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->getCurrentItem()I
 
@@ -83,7 +83,7 @@
     if-eq v0, p2, :cond_0
 
     .line 3
-    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$b;->a:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$b;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     invoke-virtual {p1, v1}, Lcom/supercell/id/ui/profile/ProfileFragment;->o1(I)Landroid/view/View;
 
@@ -91,7 +91,7 @@
 
     check-cast p1, Landroidx/viewpager/widget/FlowPager;
 
-    invoke-static {p1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, p2}, Landroidx/viewpager/widget/RtlViewPager;->setCurrentItem(I)V
 
@@ -101,17 +101,17 @@
     :cond_0
     sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object p2
 
     .line 5
-    iget-object p2, p2, Lwd/r;->v:Lqc/a;
+    iget-object p2, p2, Lvd/r;->v:Lnc/a;
 
     .line 6
-    sget-object v0, Lqc/a$a;->TAB_SWITCH:Lqc/a$a;
+    sget-object v0, Lnc/a$a;->j:Lnc/a$a;
 
-    invoke-virtual {p2, v0}, Lqc/a;->b(Lqc/a$a;)V
+    invoke-virtual {p2, v0}, Lnc/a;->b(Lnc/a$a;)V
 
     .line 7
     sget p2, Lcom/supercell/id/R$id;->tab_icon_left:I
@@ -124,7 +124,7 @@
 
     const-string v0, "view.tab_icon_left"
 
-    invoke-static {p2, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v0, Lcom/supercell/id/R$id;->tab_icon_right:I
 
@@ -136,17 +136,17 @@
 
     const-string v0, "view.tab_icon_right"
 
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     const/4 v1, 0x4
 
-    invoke-static {p2, p1, v0, v1}, Lwd/y1;->e(Landroid/widget/ImageView;Landroid/widget/ImageView;II)V
+    invoke-static {p2, p1, v0, v1}, Lvd/z1;->e(Landroid/widget/ImageView;Landroid/widget/ImageView;II)V
 
     .line 8
     :goto_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -154,7 +154,7 @@
     const-string p1, "view"
 
     .line 9
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

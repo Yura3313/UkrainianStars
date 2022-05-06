@@ -32,10 +32,10 @@
     .end annotation
 .end field
 
-.field public final d:Lm/h;
+.field public final d:Lm/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lm/h<",
+            "Lm/g<",
             "Landroid/view/Menu;",
             "Landroid/view/Menu;",
             ">;"
@@ -65,11 +65,11 @@
     iput-object p1, p0, Lf/f$a;->c:Ljava/util/ArrayList;
 
     .line 5
-    new-instance p1, Lm/h;
+    new-instance p1, Lm/g;
 
-    invoke-direct {p1}, Lm/h;-><init>()V
+    invoke-direct {p1}, Lm/g;-><init>()V
 
-    iput-object p1, p0, Lf/f$a;->d:Lm/h;
+    iput-object p1, p0, Lf/f$a;->d:Lm/g;
 
     return-void
 .end method
@@ -220,12 +220,12 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lf/f$a;->d:Lm/h;
+    iget-object v0, p0, Lf/f$a;->d:Lm/g;
 
     const/4 v1, 0x0
 
     .line 2
-    invoke-virtual {v0, p1, v1}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -246,9 +246,9 @@
     invoke-direct {v0, v1, v2}, Lg/e;-><init>(Landroid/content/Context;Lz/a;)V
 
     .line 5
-    iget-object v1, p0, Lf/f$a;->d:Lm/h;
+    iget-object v1, p0, Lf/f$a;->d:Lm/g;
 
-    invoke-virtual {v1, p1, v0}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, p1, v0}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
     return-object v0

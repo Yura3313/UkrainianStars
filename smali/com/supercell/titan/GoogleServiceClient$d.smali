@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/titan/GoogleServiceClient;
+.field public final synthetic g:Lcom/supercell/titan/GoogleServiceClient;
 
-.field public final synthetic b:Z
+.field public final synthetic h:Z
 
 
 # direct methods
@@ -28,9 +28,9 @@
     .locals 0
 
     .line 1
-    iput-object p2, p0, Lcom/supercell/titan/GoogleServiceClient$d;->a:Lcom/supercell/titan/GoogleServiceClient;
+    iput-object p2, p0, Lcom/supercell/titan/GoogleServiceClient$d;->g:Lcom/supercell/titan/GoogleServiceClient;
 
-    iput-boolean p3, p0, Lcom/supercell/titan/GoogleServiceClient$d;->b:Z
+    iput-boolean p3, p0, Lcom/supercell/titan/GoogleServiceClient$d;->h:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,9 +43,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/GoogleServiceClient$d;->a:Lcom/supercell/titan/GoogleServiceClient;
+    iget-object v0, p0, Lcom/supercell/titan/GoogleServiceClient$d;->g:Lcom/supercell/titan/GoogleServiceClient;
 
-    iget-boolean v1, p0, Lcom/supercell/titan/GoogleServiceClient$d;->b:Z
+    iget-boolean v1, p0, Lcom/supercell/titan/GoogleServiceClient$d;->h:Z
 
     invoke-virtual {v0, v1}, Lcom/supercell/titan/GoogleServiceClient;->signIn(Z)V
 

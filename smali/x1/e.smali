@@ -7,13 +7,13 @@
 
 
 # static fields
-.field public static final h:Lf2/a;
+.field public static final i:Lf2/a;
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final b:La2/o;
+.field public final h:La2/o;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0, v2, v1}, Lf2/a;-><init>(Ljava/lang/String;[Ljava/lang/String;)V
 
-    sput-object v0, Lx1/e;->h:Lf2/a;
+    sput-object v0, Lx1/e;->i:Lf2/a;
 
     return-void
 .end method
@@ -45,7 +45,7 @@
     .line 2
     invoke-static {p1}, Lc2/h;->e(Ljava/lang/String;)Ljava/lang/String;
 
-    iput-object p1, p0, Lx1/e;->a:Ljava/lang/String;
+    iput-object p1, p0, Lx1/e;->g:Ljava/lang/String;
 
     .line 3
     new-instance p1, La2/o;
@@ -54,7 +54,7 @@
 
     invoke-direct {p1, v0}, La2/o;-><init>(Lcom/google/android/gms/common/api/c;)V
 
-    iput-object p1, p0, Lx1/e;->b:La2/o;
+    iput-object p1, p0, Lx1/e;->h:La2/o;
 
     return-void
 .end method
@@ -85,7 +85,7 @@
     invoke-direct {p0, v0, v1}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;)V
 
     .line 3
-    invoke-virtual {p0}, Lcom/google/android/gms/common/api/Status;->x2()Z
+    invoke-virtual {p0}, Lcom/google/android/gms/common/api/Status;->z2()Z
 
     move-result v0
 
@@ -119,7 +119,7 @@
     invoke-virtual {p0}, Ljava/lang/Thread;->start()V
 
     .line 8
-    iget-object p0, v0, Lx1/e;->b:La2/o;
+    iget-object p0, v0, Lx1/e;->h:La2/o;
 
     return-object p0
 .end method
@@ -130,7 +130,7 @@
     .locals 6
 
     .line 1
-    sget-object v0, Lcom/google/android/gms/common/api/Status;->m:Lcom/google/android/gms/common/api/Status;
+    sget-object v0, Lcom/google/android/gms/common/api/Status;->n:Lcom/google/android/gms/common/api/Status;
 
     const/4 v1, 0x0
 
@@ -140,7 +140,7 @@
 
     const-string v3, "https://accounts.google.com/o/oauth2/revoke?token="
 
-    iget-object v4, p0, Lx1/e;->a:Ljava/lang/String;
+    iget-object v4, p0, Lx1/e;->g:Ljava/lang/String;
 
     invoke-static {v4}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -192,13 +192,13 @@
     if-ne v2, v3, :cond_1
 
     .line 6
-    sget-object v0, Lcom/google/android/gms/common/api/Status;->k:Lcom/google/android/gms/common/api/Status;
+    sget-object v0, Lcom/google/android/gms/common/api/Status;->l:Lcom/google/android/gms/common/api/Status;
 
     goto :goto_1
 
     .line 7
     :cond_1
-    sget-object v3, Lx1/e;->h:Lf2/a;
+    sget-object v3, Lx1/e;->i:Lf2/a;
 
     const-string v4, "Unable to revoke access!"
 
@@ -208,7 +208,7 @@
 
     .line 8
     :goto_1
-    sget-object v3, Lx1/e;->h:Lf2/a;
+    sget-object v3, Lx1/e;->i:Lf2/a;
 
     const/16 v4, 0x1a
 
@@ -239,7 +239,7 @@
     move-exception v2
 
     .line 9
-    sget-object v3, Lx1/e;->h:Lf2/a;
+    sget-object v3, Lx1/e;->i:Lf2/a;
 
     const-string v4, "Exception when revoking access: "
 
@@ -279,7 +279,7 @@
     move-exception v2
 
     .line 10
-    sget-object v3, Lx1/e;->h:Lf2/a;
+    sget-object v3, Lx1/e;->i:Lf2/a;
 
     const-string v4, "IOException when revoking access: "
 
@@ -315,7 +315,7 @@
 
     .line 11
     :goto_4
-    iget-object v1, p0, Lx1/e;->b:La2/o;
+    iget-object v1, p0, Lx1/e;->h:La2/o;
 
     invoke-virtual {v1, v0}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->g(Lz1/g;)V
 

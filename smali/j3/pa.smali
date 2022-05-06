@@ -1,74 +1,38 @@
 .class public final Lj3/pa;
-.super Lj3/ma;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # instance fields
-.field public b:Landroid/content/Context;
+.field public a:Ljava/math/BigInteger;
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "this"
+    .end annotation
+.end field
+
+.field public b:Ljava/lang/String;
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "this"
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Lj3/ma;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj3/pa;->b:Landroid/content/Context;
+    sget-object v0, Ljava/math/BigInteger;->ONE:Ljava/math/BigInteger;
 
-    return-void
-.end method
+    iput-object v0, p0, Lj3/pa;->a:Ljava/math/BigInteger;
 
-
-# virtual methods
-.method public final a()V
-    .locals 3
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lj3/pa;->b:Landroid/content/Context;
-
-    invoke-static {v0}, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->c(Landroid/content/Context;)Z
-
-    move-result v0
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Lcom/google/android/gms/common/GooglePlayServicesNotAvailableException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Lcom/google/android/gms/common/GooglePlayServicesRepairableException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    const/4 v0, 0x0
-
-    .line 2
-    :goto_0
-    sget-object v1, Lj3/bd;->b:Ljava/lang/Object;
-
-    monitor-enter v1
-
-    const/4 v2, 0x1
+    const-string v0, "0"
 
     .line 3
-    :try_start_1
-    sput-boolean v2, Lj3/bd;->c:Z
-
-    .line 4
-    sput-boolean v0, Lj3/bd;->d:Z
-
-    .line 5
-    monitor-exit v1
+    iput-object v0, p0, Lj3/pa;->b:Ljava/lang/String;
 
     return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit v1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw v0
 .end method

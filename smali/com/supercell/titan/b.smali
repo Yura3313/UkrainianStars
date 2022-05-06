@@ -1,31 +1,74 @@
 .class public Lcom/supercell/titan/b;
-.super Ljava/lang/Object;
-.source "KeyboardDialog.java"
+.super Landroid/os/AsyncTask;
+.source "TimeAlarm.java"
 
 
-# static fields
-.field public static final a:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Landroid/graphics/Typeface;",
-            ">;"
-        }
-    .end annotation
-.end field
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroid/os/AsyncTask<",
+        "Ljava/lang/String;",
+        "Ljava/lang/Void;",
+        "Ljava/lang/Void;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public a:Landroid/content/Context;
+
+.field public b:Landroid/content/Intent;
+
+.field public c:Ljava/lang/Class;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/Class;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "Landroid/content/Intent;",
+            "Ljava/lang/Class<",
+            "*>;)V"
+        }
+    .end annotation
 
     .line 1
-    new-instance v0, Ljava/util/HashMap;
+    invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    .line 2
+    iput-object p1, p0, Lcom/supercell/titan/b;->a:Landroid/content/Context;
 
-    sput-object v0, Lcom/supercell/titan/b;->a:Ljava/util/Map;
+    .line 3
+    iput-object p2, p0, Lcom/supercell/titan/b;->b:Landroid/content/Intent;
+
+    .line 4
+    iput-object p3, p0, Lcom/supercell/titan/b;->c:Ljava/lang/Class;
 
     return-void
+.end method
+
+
+# virtual methods
+.method public doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    check-cast p1, [Ljava/lang/String;
+
+    .line 2
+    iget-object p1, p0, Lcom/supercell/titan/b;->a:Landroid/content/Context;
+
+    iget-object v0, p0, Lcom/supercell/titan/b;->b:Landroid/content/Intent;
+
+    iget-object v1, p0, Lcom/supercell/titan/b;->c:Ljava/lang/Class;
+
+    invoke-static {p1, v0, v1}, Lcom/supercell/titan/TimeAlarm;->handleLocalNotification(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/Class;)V
+
+    const/4 p1, 0x0
+
+    return-object p1
 .end method

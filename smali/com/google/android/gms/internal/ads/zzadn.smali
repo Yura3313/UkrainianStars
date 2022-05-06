@@ -18,7 +18,7 @@
     return-void
 .end method
 
-.method public static x7(Landroid/os/IBinder;)Lcom/google/android/gms/internal/ads/zzado;
+.method public static y7(Landroid/os/IBinder;)Lcom/google/android/gms/internal/ads/zzado;
     .locals 2
 
     if-nez p0, :cond_0
@@ -56,7 +56,7 @@
 
 
 # virtual methods
-.method public final w7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method public final x7(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -83,7 +83,7 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzadd;
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzadd;->h:Ljava/util/List;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzadd;->i:Ljava/util/List;
 
     .line 3
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
@@ -100,7 +100,7 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzadd;
 
     .line 6
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzadd;->a:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzadd;->g:Ljava/lang/String;
 
     .line 7
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V

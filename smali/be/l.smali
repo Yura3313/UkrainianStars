@@ -1,50 +1,127 @@
 .class public final Lbe/l;
 .super Ljava/lang/Object;
-.source "Tuples.kt"
+.source "Collections.kt"
+
+# interfaces
+.implements Ljava/util/ListIterator;
+.implements Lme/a;
+
+
+# static fields
+.field public static final g:Lbe/l;
 
 
 # direct methods
-.method public static final a(Ljava/io/Reader;)Ljava/lang/String;
-    .locals 4
+.method public static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/io/StringWriter;
+    new-instance v0, Lbe/l;
 
-    invoke-direct {v0}, Ljava/io/StringWriter;-><init>()V
+    invoke-direct {v0}, Lbe/l;-><init>()V
 
-    const/16 v1, 0x2000
+    sput-object v0, Lbe/l;->g:Lbe/l;
 
-    new-array v1, v1, [C
+    return-void
+.end method
 
-    .line 2
-    invoke-virtual {p0, v1}, Ljava/io/Reader;->read([C)I
+.method public constructor <init>()V
+    .locals 0
 
-    move-result v2
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    :goto_0
-    if-ltz v2, :cond_0
+    return-void
+.end method
 
-    const/4 v3, 0x0
 
-    .line 3
-    invoke-virtual {v0, v1, v3, v2}, Ljava/io/Writer;->write([CII)V
+# virtual methods
+.method public synthetic add(Ljava/lang/Object;)V
+    .locals 1
 
-    .line 4
-    invoke-virtual {p0, v1}, Ljava/io/Reader;->read([C)I
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    move-result v2
+    const-string v0, "Operation is not supported for read-only collection"
 
-    goto :goto_0
+    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
-    .line 5
-    :cond_0
-    invoke-virtual {v0}, Ljava/io/StringWriter;->toString()Ljava/lang/String;
+    throw p1
+.end method
 
-    move-result-object p0
+.method public hasNext()Z
+    .locals 1
 
-    const-string v0, "buffer.toString()"
+    const/4 v0, 0x0
 
-    invoke-static {p0, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    return v0
+.end method
 
-    return-object p0
+.method public hasPrevious()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public next()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/util/NoSuchElementException;
+
+    invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
+
+    throw v0
+.end method
+
+.method public nextIndex()I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public previous()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/util/NoSuchElementException;
+
+    invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
+
+    throw v0
+.end method
+
+.method public previousIndex()I
+    .locals 1
+
+    const/4 v0, -0x1
+
+    return v0
+.end method
+
+.method public remove()V
+    .locals 2
+
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    const-string v1, "Operation is not supported for read-only collection"
+
+    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public synthetic set(Ljava/lang/Object;)V
+    .locals 1
+
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    const-string v0, "Operation is not supported for read-only collection"
+
+    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method

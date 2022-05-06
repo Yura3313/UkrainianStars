@@ -19,7 +19,7 @@
 .end method
 
 .method public static a(Lj3/s;Lj3/q;)V
-    .locals 3
+    .locals 4
 
     .line 1
     iget-object v0, p1, Lj3/q;->c:Landroid/content/Context;
@@ -67,19 +67,19 @@
     iput-object v0, p0, Lj3/s;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 12
-    sget-object v1, Lj3/p0;->c:Lj3/i0;
+    sget-object v2, Lj3/p0;->c:Lj3/i0;
 
-    invoke-virtual {v1}, Lj3/i0;->a()Ljava/lang/Object;
+    invoke-virtual {v2}, Lj3/i0;->a()Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v2
 
-    check-cast v1, Ljava/lang/Boolean;
+    check-cast v2, Ljava/lang/Boolean;
 
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result v1
+    move-result v2
 
-    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+    invoke-virtual {v0, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     .line 13
     iget-object v0, p0, Lj3/s;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -98,13 +98,13 @@
     if-eqz v0, :cond_0
 
     .line 15
-    new-instance v1, Ljava/io/File;
+    new-instance v2, Ljava/io/File;
 
-    const-string v2, "sdk_csi_data.txt"
+    const-string v3, "sdk_csi_data.txt"
 
-    invoke-direct {v1, v0, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    invoke-direct {v2, v0, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v1, p0, Lj3/s;->i:Ljava/io/File;
+    iput-object v2, p0, Lj3/s;->i:Ljava/io/File;
 
     .line 16
     :cond_0
@@ -130,13 +130,13 @@
     check-cast v0, Ljava/util/Map$Entry;
 
     .line 17
-    iget-object v1, p0, Lj3/s;->b:Ljava/util/LinkedHashMap;
+    iget-object v2, p0, Lj3/s;->b:Ljava/util/LinkedHashMap;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v3
 
-    check-cast v2, Ljava/lang/String;
+    check-cast v3, Ljava/lang/String;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -144,22 +144,22 @@
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v3, v0}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
     .line 18
     :cond_1
-    sget-object p1, Lj3/gd;->a:Lj3/am0;
+    sget-object p1, Lj3/kd;->a:Lj3/km0;
 
     new-instance v0, Lj3/r;
 
-    invoke-direct {v0, p0}, Lj3/r;-><init>(Lj3/s;)V
+    invoke-direct {v0, p0, v1}, Lj3/r;-><init>(Ljava/lang/Object;I)V
 
-    check-cast p1, Lj3/ld;
+    check-cast p1, Lj3/od;
 
     .line 19
-    iget-object p1, p1, Lj3/ld;->a:Ljava/util/concurrent/Executor;
+    iget-object p1, p1, Lj3/od;->g:Ljava/util/concurrent/Executor;
 
     invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 

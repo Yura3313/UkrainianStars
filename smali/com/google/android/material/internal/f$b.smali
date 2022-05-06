@@ -1,6 +1,6 @@
 .class public Lcom/google/android/material/internal/f$b;
-.super Ljava/lang/Object;
-.source "StateListAnimator.java"
+.super Lcom/google/android/material/internal/f$l;
+.source "NavigationMenuPresenter.java"
 
 
 # annotations
@@ -14,24 +14,12 @@
 .end annotation
 
 
-# instance fields
-.field public final a:[I
-
-.field public final b:Landroid/animation/ValueAnimator;
-
-
 # direct methods
-.method public constructor <init>([ILandroid/animation/ValueAnimator;)V
+.method public constructor <init>(Landroid/view/View;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lcom/google/android/material/internal/f$b;->a:[I
-
-    .line 3
-    iput-object p2, p0, Lcom/google/android/material/internal/f$b;->b:Landroid/animation/ValueAnimator;
+    invoke-direct {p0, p1}, Lcom/google/android/material/internal/f$l;-><init>(Landroid/view/View;)V
 
     return-void
 .end method

@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic a:Landroid/view/View;
+.field public final synthetic g:Landroid/view/View;
 
-.field public final synthetic b:Ljava/util/ArrayList;
+.field public final synthetic h:Ljava/util/ArrayList;
 
 
 # direct methods
@@ -28,9 +28,9 @@
     .locals 0
 
     .line 1
-    iput-object p2, p0, Landroidx/transition/c$b;->a:Landroid/view/View;
+    iput-object p2, p0, Landroidx/transition/c$b;->g:Landroid/view/View;
 
-    iput-object p3, p0, Landroidx/transition/c$b;->b:Ljava/util/ArrayList;
+    iput-object p3, p0, Landroidx/transition/c$b;->h:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,17 +55,17 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->w(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
+    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->x(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
 
     .line 2
-    iget-object p1, p0, Landroidx/transition/c$b;->a:Landroid/view/View;
+    iget-object p1, p0, Landroidx/transition/c$b;->g:Landroid/view/View;
 
     const/16 v0, 0x8
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 3
-    iget-object p1, p0, Landroidx/transition/c$b;->b:Ljava/util/ArrayList;
+    iget-object p1, p0, Landroidx/transition/c$b;->h:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -79,7 +79,7 @@
     if-ge v1, p1, :cond_0
 
     .line 4
-    iget-object v2, p0, Landroidx/transition/c$b;->b:Ljava/util/ArrayList;
+    iget-object v2, p0, Landroidx/transition/c$b;->h:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 

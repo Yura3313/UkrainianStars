@@ -1,6 +1,6 @@
 .class public Ly/d;
-.super Ly/e;
-.source "RoundedBitmapDrawable21.java"
+.super Ly/c;
+.source "RoundedBitmapDrawableFactory.java"
 
 
 # direct methods
@@ -8,7 +8,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Ly/e;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
+    invoke-direct {p0, p1, p2}, Ly/c;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
     return-void
 .end method
@@ -32,24 +32,6 @@
 
     .line 1
     invoke-static/range {v0 .. v5}, Landroid/view/Gravity;->apply(IIILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
-
-    return-void
-.end method
-
-.method public getOutline(Landroid/graphics/Outline;)V
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0}, Ly/e;->b()V
-
-    .line 2
-    iget-object v0, p0, Ly/e;->h:Landroid/graphics/Rect;
-
-    .line 3
-    iget v1, p0, Ly/e;->g:F
-
-    .line 4
-    invoke-virtual {p1, v0, v1}, Landroid/graphics/Outline;->setRoundRect(Landroid/graphics/Rect;F)V
 
     return-void
 .end method

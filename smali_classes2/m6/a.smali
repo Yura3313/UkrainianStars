@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field public final a:Ln6/d;
+.field public final a:Ln6/c;
 
 
 # direct methods
@@ -35,11 +35,11 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v0, Ln6/d;
+    new-instance v0, Ln6/c;
 
-    invoke-direct {v0}, Ln6/d;-><init>()V
+    invoke-direct {v0}, Ln6/c;-><init>()V
 
-    iput-object v0, p0, Lm6/a;->a:Ln6/d;
+    iput-object v0, p0, Lm6/a;->a:Ln6/c;
 
     return-void
 .end method
@@ -78,7 +78,7 @@
     if-eqz v1, :cond_8
 
     .line 1
-    sget-object v4, Lc6/d;->PURE_BARCODE:Lc6/d;
+    sget-object v4, Lc6/d;->h:Lc6/d;
 
     invoke-interface {v1, v4}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -106,7 +106,7 @@
     if-eqz v5, :cond_7
 
     .line 5
-    iget v6, v1, Lj6/b;->a:I
+    iget v6, v1, Lj6/b;->g:I
 
     .line 6
     aget v7, v4, v2
@@ -220,9 +220,9 @@
 
     .line 20
     :cond_3
-    iget-object v1, v0, Lm6/a;->a:Ln6/d;
+    iget-object v1, v0, Lm6/a;->a:Ln6/c;
 
-    invoke-virtual {v1, v3}, Ln6/d;->a(Lj6/b;)Lj6/e;
+    invoke-virtual {v1, v3}, Ln6/c;->a(Lj6/b;)Lj6/e;
 
     move-result-object v1
 
@@ -233,28 +233,28 @@
 
     .line 22
     :cond_4
-    sget-object v1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 23
     throw v1
 
     .line 24
     :cond_5
-    sget-object v1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 25
     throw v1
 
     .line 26
     :cond_6
-    sget-object v1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 27
     throw v1
 
     .line 28
     :cond_7
-    sget-object v1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 29
     throw v1
@@ -1089,59 +1089,56 @@
     aput-object v5, v2, v3
 
     .line 128
-    iget-object v3, v0, Lm6/a;->a:Ln6/d;
+    iget-object v3, v0, Lm6/a;->a:Ln6/c;
 
-    invoke-virtual {v3, v1}, Ln6/d;->a(Lj6/b;)Lj6/e;
+    invoke-virtual {v3, v1}, Ln6/c;->a(Lj6/b;)Lj6/e;
 
     move-result-object v1
 
     .line 129
-    check-cast v2, [Lc6/l;
-
-    .line 130
     :goto_e
     new-instance v3, Lc6/j;
 
-    .line 131
+    .line 130
     iget-object v4, v1, Lj6/e;->c:Ljava/lang/String;
 
-    .line 132
+    .line 131
     iget-object v5, v1, Lj6/e;->a:[B
 
-    .line 133
-    sget-object v6, Lc6/a;->DATA_MATRIX:Lc6/a;
+    .line 132
+    sget-object v6, Lc6/a;->l:Lc6/a;
 
     invoke-direct {v3, v4, v5, v2, v6}, Lc6/j;-><init>(Ljava/lang/String;[B[Lc6/l;Lc6/a;)V
 
-    .line 134
+    .line 133
     iget-object v2, v1, Lj6/e;->d:Ljava/util/List;
 
     if-eqz v2, :cond_20
 
-    .line 135
-    sget-object v4, Lc6/k;->BYTE_SEGMENTS:Lc6/k;
+    .line 134
+    sget-object v4, Lc6/k;->h:Lc6/k;
 
     invoke-virtual {v3, v4, v2}, Lc6/j;->b(Lc6/k;Ljava/lang/Object;)V
 
-    .line 136
+    .line 135
     :cond_20
     iget-object v1, v1, Lj6/e;->e:Ljava/lang/String;
 
     if-eqz v1, :cond_21
 
-    .line 137
-    sget-object v2, Lc6/k;->ERROR_CORRECTION_LEVEL:Lc6/k;
+    .line 136
+    sget-object v2, Lc6/k;->i:Lc6/k;
 
     invoke-virtual {v3, v2, v1}, Lc6/j;->b(Lc6/k;Ljava/lang/Object;)V
 
     :cond_21
     return-object v3
 
-    .line 138
+    .line 137
     :cond_22
-    sget-object v1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
-    .line 139
+    .line 138
     goto :goto_10
 
     :goto_f

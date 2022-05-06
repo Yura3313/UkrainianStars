@@ -17,7 +17,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p1, Landroidx/fragment/app/Fragment;->P:Landroidx/fragment/app/Fragment$d;
+    iget-object v0, p1, Landroidx/fragment/app/Fragment;->Q:Landroidx/fragment/app/Fragment$d;
 
     const/4 v1, 0x0
 
@@ -72,7 +72,7 @@
     invoke-virtual {p1, v1, v1, v1, v1}, Landroidx/fragment/app/Fragment;->H0(IIII)V
 
     .line 8
-    iget-object v2, p1, Landroidx/fragment/app/Fragment;->L:Landroid/view/ViewGroup;
+    iget-object v2, p1, Landroidx/fragment/app/Fragment;->M:Landroid/view/ViewGroup;
 
     const/4 v3, 0x0
 
@@ -88,13 +88,13 @@
     if-eqz v2, :cond_4
 
     .line 10
-    iget-object v2, p1, Landroidx/fragment/app/Fragment;->L:Landroid/view/ViewGroup;
+    iget-object v2, p1, Landroidx/fragment/app/Fragment;->M:Landroid/view/ViewGroup;
 
     invoke-virtual {v2, v4, v3}, Landroid/view/ViewGroup;->setTag(ILjava/lang/Object;)V
 
     .line 11
     :cond_4
-    iget-object v2, p1, Landroidx/fragment/app/Fragment;->L:Landroid/view/ViewGroup;
+    iget-object v2, p1, Landroidx/fragment/app/Fragment;->M:Landroid/view/ViewGroup;
 
     if-eqz v2, :cond_5
 

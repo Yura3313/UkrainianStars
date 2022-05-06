@@ -24,12 +24,12 @@
     .locals 1
 
     .line 1
-    sget-boolean v0, Lm5/b0;->h:Z
+    sget-boolean v0, Lm5/a0;->h:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    sget-boolean v0, Lm5/b0;->g:Z
+    sget-boolean v0, Lm5/a0;->g:Z
 
     if-eqz v0, :cond_0
 
@@ -306,7 +306,7 @@
 
     const-string v0, "UTF-8 length does not fit in int: "
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

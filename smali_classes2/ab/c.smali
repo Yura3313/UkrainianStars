@@ -1,55 +1,60 @@
 .class public Lab/c;
 .super Ljava/lang/Object;
-.source "DynamicFormFlow.java"
+.source "TfIdfSearchToken.java"
 
 # interfaces
-.implements Lab/f;
+.implements Ljava/io/Serializable;
 
 
 # instance fields
-.field public a:Lpa/b;
+.field public final g:Ljava/lang/String;
+
+.field public final h:I
 
 
-# virtual methods
-.method public a()V
-    .locals 4
+# direct methods
+.method public constructor <init>(Ljava/lang/String;I)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lab/c;->a:Lpa/b;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iget-object v1, v0, Lpa/b;->c:Landroid/os/Bundle;
-
-    const/4 v2, 0x0
-
-    if-eqz v1, :cond_0
-
-    const-string v3, "flow_title"
+    iput-object p1, p0, Lab/c;->g:Ljava/lang/String;
 
     .line 3
-    invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_0
-    const/4 v1, 0x1
-
-    .line 4
-    invoke-virtual {v0, v2, v1}, Lpa/b;->l(Ljava/util/List;Z)V
+    iput p2, p0, Lab/c;->h:I
 
     return-void
 .end method
 
-.method public b()Ljava/lang/String;
-    .locals 1
 
-    const/4 v0, 0x0
+# virtual methods
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    const-string v0, "value: "
+
+    .line 1
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lab/c;->g:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", type: "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lab/c;->h:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
 
     return-object v0
-.end method
-
-.method public c()I
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
 .end method

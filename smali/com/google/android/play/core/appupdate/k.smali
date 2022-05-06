@@ -37,7 +37,7 @@
 
 
 # virtual methods
-.method public final G(Landroid/os/Bundle;)V
+.method public final H(Landroid/os/Bundle;)V
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -46,13 +46,13 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/play/core/appupdate/j;->h:Lcom/google/android/play/core/appupdate/m;
+    iget-object v0, p0, Lcom/google/android/play/core/appupdate/j;->i:Lcom/google/android/play/core/appupdate/m;
 
     iget-object v0, v0, Lcom/google/android/play/core/appupdate/m;->a:Ly4/l;
 
     invoke-virtual {v0}, Ly4/l;->a()V
 
-    iget-object v0, p0, Lcom/google/android/play/core/appupdate/j;->a:Ly4/b;
+    iget-object v0, p0, Lcom/google/android/play/core/appupdate/j;->g:Ly4/b;
 
     const/4 v1, 0x0
 
@@ -77,7 +77,7 @@
     if-eqz v2, :cond_0
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/play/core/appupdate/j;->b:Lcom/google/android/play/core/tasks/i;
+    iget-object v2, p0, Lcom/google/android/play/core/appupdate/j;->h:Lcom/google/android/play/core/tasks/i;
 
     new-instance v3, Lcom/google/android/play/core/install/InstallException;
 
@@ -94,7 +94,7 @@
     return-void
 
     :cond_0
-    iget-object p1, p0, Lcom/google/android/play/core/appupdate/j;->b:Lcom/google/android/play/core/tasks/i;
+    iget-object p1, p0, Lcom/google/android/play/core/appupdate/j;->h:Lcom/google/android/play/core/tasks/i;
 
     const/4 v0, 0x0
 

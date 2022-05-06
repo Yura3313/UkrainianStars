@@ -3,7 +3,7 @@
 .source "MediaBrowserServiceCompatApi26.java"
 
 # interfaces
-.implements Lp0/j;
+.implements Lp0/h;
 
 
 # annotations

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lp/f;->m(Lp/g;)V
+    value = Lp/f;->m(Lp/h;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
     value = {
         "Ljava/lang/Object;",
         "Ljava/util/Comparator<",
-        "Lp/g;",
+        "Lp/h;",
         ">;"
     }
 .end annotation
@@ -42,14 +42,14 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lp/g;
+    check-cast p1, Lp/h;
 
-    check-cast p2, Lp/g;
+    check-cast p2, Lp/h;
 
     .line 2
-    iget p1, p1, Lp/g;->b:I
+    iget p1, p1, Lp/h;->b:I
 
-    iget p2, p2, Lp/g;->b:I
+    iget p2, p2, Lp/h;->b:I
 
     sub-int/2addr p1, p2
 

@@ -1,50 +1,287 @@
-.class public final synthetic Lj3/pc0;
+.class public final Lj3/pc0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/uc0;
+.implements Lj3/rv0;
 
 
-# static fields
-.field public static final a:Lj3/uc0;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj3/rv0<",
+        "Lj3/mc0;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/km0;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final b:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Ljava/util/concurrent/ScheduledExecutorService;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final d:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/x70;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final e:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Landroid/content/Context;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final f:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/wg0;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final g:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/v70;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/vv0<",
+            "Lj3/km0;",
+            ">;",
+            "Lj3/vv0<",
+            "Ljava/util/concurrent/ScheduledExecutorService;",
+            ">;",
+            "Lj3/vv0<",
+            "Ljava/lang/String;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/x70;",
+            ">;",
+            "Lj3/vv0<",
+            "Landroid/content/Context;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/wg0;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/v70;",
+            ">;)V"
+        }
+    .end annotation
 
-    new-instance v0, Lj3/pc0;
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {v0}, Lj3/pc0;-><init>()V
+    .line 2
+    iput-object p1, p0, Lj3/pc0;->a:Lj3/vv0;
 
-    sput-object v0, Lj3/pc0;->a:Lj3/uc0;
+    .line 3
+    iput-object p2, p0, Lj3/pc0;->b:Lj3/vv0;
+
+    .line 4
+    iput-object p3, p0, Lj3/pc0;->c:Lj3/vv0;
+
+    .line 5
+    iput-object p4, p0, Lj3/pc0;->d:Lj3/vv0;
+
+    .line 6
+    iput-object p5, p0, Lj3/pc0;->e:Lj3/vv0;
+
+    .line 7
+    iput-object p6, p0, Lj3/pc0;->f:Lj3/vv0;
+
+    .line 8
+    iput-object p7, p0, Lj3/pc0;->g:Lj3/vv0;
 
     return-void
 .end method
 
-.method public constructor <init>()V
-    .locals 0
+.method public static a(Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;)Lj3/pc0;
+    .locals 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/vv0<",
+            "Lj3/km0;",
+            ">;",
+            "Lj3/vv0<",
+            "Ljava/util/concurrent/ScheduledExecutorService;",
+            ">;",
+            "Lj3/vv0<",
+            "Ljava/lang/String;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/x70;",
+            ">;",
+            "Lj3/vv0<",
+            "Landroid/content/Context;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/wg0;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/v70;",
+            ">;)",
+            "Lj3/pc0;"
+        }
+    .end annotation
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    new-instance v8, Lj3/pc0;
 
-    return-void
+    move-object v0, v8
+
+    move-object v1, p0
+
+    move-object v2, p1
+
+    move-object v3, p2
+
+    move-object v4, p3
+
+    move-object v5, p4
+
+    move-object v6, p5
+
+    move-object v7, p6
+
+    invoke-direct/range {v0 .. v7}, Lj3/pc0;-><init>(Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;)V
+
+    return-object v8
 .end method
 
 
 # virtual methods
-.method public final b(Ljava/lang/Object;)V
-    .locals 2
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 9
 
     .line 1
-    check-cast p1, Landroid/os/Bundle;
+    iget-object v0, p0, Lj3/pc0;->a:Lj3/vv0;
 
-    const-string v0, "sdk_prefetch"
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    const/4 v1, 0x1
+    move-result-object v0
+
+    move-object v2, v0
+
+    check-cast v2, Lj3/km0;
+
+    iget-object v0, p0, Lj3/pc0;->b:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v3, v0
+
+    check-cast v3, Ljava/util/concurrent/ScheduledExecutorService;
+
+    iget-object v0, p0, Lj3/pc0;->c:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v4, v0
+
+    check-cast v4, Ljava/lang/String;
+
+    iget-object v0, p0, Lj3/pc0;->d:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v5, v0
+
+    check-cast v5, Lj3/x70;
+
+    iget-object v0, p0, Lj3/pc0;->e:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v6, v0
+
+    check-cast v6, Landroid/content/Context;
+
+    iget-object v0, p0, Lj3/pc0;->f:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v7, v0
+
+    check-cast v7, Lj3/wg0;
+
+    iget-object v0, p0, Lj3/pc0;->g:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v8, v0
+
+    check-cast v8, Lj3/v70;
 
     .line 2
-    invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+    new-instance v0, Lj3/mc0;
 
-    return-void
+    move-object v1, v0
+
+    invoke-direct/range {v1 .. v8}, Lj3/mc0;-><init>(Lj3/km0;Ljava/util/concurrent/ScheduledExecutorService;Ljava/lang/String;Lj3/x70;Landroid/content/Context;Lj3/wg0;Lj3/v70;)V
+
+    return-object v0
 .end method

@@ -60,7 +60,7 @@
     const/4 p1, 0x2
 
     .line 1
-    invoke-static {p2, p1}, Lf0/s;->D(Landroid/view/View;I)V
+    invoke-static {p2, p1}, Lf0/r;->D(Landroid/view/View;I)V
 
     .line 2
     new-instance p1, Landroidx/viewpager2/widget/ViewPager2$h$c;
@@ -84,7 +84,7 @@
 
     const/4 p2, 0x1
 
-    invoke-static {p1, p2}, Lf0/s;->D(Landroid/view/View;I)V
+    invoke-static {p1, p2}, Lf0/r;->D(Landroid/view/View;I)V
 
     :cond_0
     return-void
@@ -106,7 +106,7 @@
     iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$h;->d:Landroidx/viewpager2/widget/ViewPager2;
 
     .line 2
-    iget-boolean v1, v0, Landroidx/viewpager2/widget/ViewPager2;->w:Z
+    iget-boolean v1, v0, Landroidx/viewpager2/widget/ViewPager2;->x:Z
 
     if-eqz v1, :cond_0
 
@@ -128,22 +128,22 @@
     const v1, 0x1020048
 
     .line 2
-    invoke-static {v0, v1}, Lf0/s;->v(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lf0/r;->v(Landroid/view/View;I)V
 
     const v2, 0x1020049
 
     .line 3
-    invoke-static {v0, v2}, Lf0/s;->v(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lf0/r;->v(Landroid/view/View;I)V
 
     const v3, 0x1020046
 
     .line 4
-    invoke-static {v0, v3}, Lf0/s;->v(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lf0/r;->v(Landroid/view/View;I)V
 
     const v4, 0x1020047
 
     .line 5
-    invoke-static {v0, v4}, Lf0/s;->v(Landroid/view/View;I)V
+    invoke-static {v0, v4}, Lf0/r;->v(Landroid/view/View;I)V
 
     .line 6
     iget-object v5, p0, Landroidx/viewpager2/widget/ViewPager2$h;->d:Landroidx/viewpager2/widget/ViewPager2;
@@ -177,7 +177,7 @@
     iget-object v6, p0, Landroidx/viewpager2/widget/ViewPager2$h;->d:Landroidx/viewpager2/widget/ViewPager2;
 
     .line 9
-    iget-boolean v7, v6, Landroidx/viewpager2/widget/ViewPager2;->w:Z
+    iget-boolean v7, v6, Landroidx/viewpager2/widget/ViewPager2;->x:Z
 
     if-nez v7, :cond_2
 
@@ -218,7 +218,7 @@
     :cond_4
     iget-object v2, p0, Landroidx/viewpager2/widget/ViewPager2$h;->d:Landroidx/viewpager2/widget/ViewPager2;
 
-    iget v2, v2, Landroidx/viewpager2/widget/ViewPager2;->i:I
+    iget v2, v2, Landroidx/viewpager2/widget/ViewPager2;->j:I
 
     add-int/lit8 v5, v5, -0x1
 
@@ -231,13 +231,13 @@
 
     iget-object v3, p0, Landroidx/viewpager2/widget/ViewPager2$h;->a:Lg0/d;
 
-    invoke-static {v0, v2, v7, v3}, Lf0/s;->x(Landroid/view/View;Lg0/b$a;Ljava/lang/CharSequence;Lg0/d;)V
+    invoke-static {v0, v2, v7, v3}, Lf0/r;->x(Landroid/view/View;Lg0/b$a;Ljava/lang/CharSequence;Lg0/d;)V
 
     .line 14
     :cond_5
     iget-object v2, p0, Landroidx/viewpager2/widget/ViewPager2$h;->d:Landroidx/viewpager2/widget/ViewPager2;
 
-    iget v2, v2, Landroidx/viewpager2/widget/ViewPager2;->i:I
+    iget v2, v2, Landroidx/viewpager2/widget/ViewPager2;->j:I
 
     if-lez v2, :cond_8
 
@@ -248,7 +248,7 @@
 
     iget-object v1, p0, Landroidx/viewpager2/widget/ViewPager2$h;->b:Lg0/d;
 
-    invoke-static {v0, v2, v7, v1}, Lf0/s;->x(Landroid/view/View;Lg0/b$a;Ljava/lang/CharSequence;Lg0/d;)V
+    invoke-static {v0, v2, v7, v1}, Lf0/r;->x(Landroid/view/View;Lg0/b$a;Ljava/lang/CharSequence;Lg0/d;)V
 
     goto :goto_1
 
@@ -256,7 +256,7 @@
     :cond_6
     iget-object v1, p0, Landroidx/viewpager2/widget/ViewPager2$h;->d:Landroidx/viewpager2/widget/ViewPager2;
 
-    iget v1, v1, Landroidx/viewpager2/widget/ViewPager2;->i:I
+    iget v1, v1, Landroidx/viewpager2/widget/ViewPager2;->j:I
 
     add-int/lit8 v5, v5, -0x1
 
@@ -269,13 +269,13 @@
 
     iget-object v2, p0, Landroidx/viewpager2/widget/ViewPager2$h;->a:Lg0/d;
 
-    invoke-static {v0, v1, v7, v2}, Lf0/s;->x(Landroid/view/View;Lg0/b$a;Ljava/lang/CharSequence;Lg0/d;)V
+    invoke-static {v0, v1, v7, v2}, Lf0/r;->x(Landroid/view/View;Lg0/b$a;Ljava/lang/CharSequence;Lg0/d;)V
 
     .line 18
     :cond_7
     iget-object v1, p0, Landroidx/viewpager2/widget/ViewPager2$h;->d:Landroidx/viewpager2/widget/ViewPager2;
 
-    iget v1, v1, Landroidx/viewpager2/widget/ViewPager2;->i:I
+    iget v1, v1, Landroidx/viewpager2/widget/ViewPager2;->j:I
 
     if-lez v1, :cond_8
 
@@ -286,7 +286,7 @@
 
     iget-object v2, p0, Landroidx/viewpager2/widget/ViewPager2$h;->b:Lg0/d;
 
-    invoke-static {v0, v1, v7, v2}, Lf0/s;->x(Landroid/view/View;Lg0/b$a;Ljava/lang/CharSequence;Lg0/d;)V
+    invoke-static {v0, v1, v7, v2}, Lf0/r;->x(Landroid/view/View;Lg0/b$a;Ljava/lang/CharSequence;Lg0/d;)V
 
     :cond_8
     :goto_1

@@ -30,7 +30,7 @@
     const/4 v4, 0x0
 
     .line 3
-    invoke-static {v1, v3, v4, v4, v2}, Lre/s;->x(Ljava/lang/CharSequence;CIZI)I
+    invoke-static {v1, v3, v4, v4, v2}, Lre/r;->r(Ljava/lang/CharSequence;CIZI)I
 
     move-result v2
 
@@ -56,7 +56,7 @@
     const/4 v7, 0x4
 
     .line 5
-    invoke-static {v1, v3, v6, v4, v7}, Lre/s;->x(Ljava/lang/CharSequence;CIZI)I
+    invoke-static {v1, v3, v6, v4, v7}, Lre/r;->r(Ljava/lang/CharSequence;CIZI)I
 
     move-result v3
 
@@ -75,14 +75,14 @@
 
     const-string v4, "(this as java.lang.Strin\u2026ing(startIndex, endIndex)"
 
-    invoke-static {v2, v4}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 8
     invoke-virtual {v1, v6, v3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v1, v4}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 9
     :try_start_1
@@ -131,7 +131,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, v6}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v6}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
     :try_end_2
     .catch Ljava/lang/ClassNotFoundException; {:try_start_2 .. :try_end_2} :catch_2
 
@@ -183,7 +183,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     throw v2
     :try_end_4
@@ -202,7 +202,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, v6}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v6}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
     :try_end_5
     .catch Ljava/lang/ClassNotFoundException; {:try_start_5 .. :try_end_5} :catch_4
 
@@ -254,7 +254,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     throw v2
     :try_end_7
@@ -276,7 +276,7 @@
 
     move-result-object v1
 
-    invoke-static {v1, v6}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v6}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
     :try_end_8
     .catch Ljava/lang/ClassNotFoundException; {:try_start_8 .. :try_end_8} :catch_6
 
@@ -330,7 +330,7 @@
 
     move-result-object v1
 
-    invoke-static {v1, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     throw v1
     :try_end_a
@@ -349,7 +349,7 @@
 
     move-result-object v1
 
-    invoke-static {v1, v6}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v6}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
     :try_end_b
     .catch Ljava/lang/ClassNotFoundException; {:try_start_b .. :try_end_b} :catch_8
 
@@ -403,7 +403,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     throw v0
     :try_end_d

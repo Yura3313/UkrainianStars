@@ -21,21 +21,21 @@
         "Lle/j;",
         "Lke/l<",
         "Landroid/view/View;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/settings/SettingsFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/settings/SettingsFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/settings/SettingsFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/settings/SettingsFragment$b;->a:Lcom/supercell/id/ui/settings/SettingsFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/settings/SettingsFragment$b;->g:Lcom/supercell/id/ui/settings/SettingsFragment;
 
     const/4 p1, 0x1
 
@@ -53,7 +53,7 @@
     check-cast p1, Landroid/view/View;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/settings/SettingsFragment$b;->a:Lcom/supercell/id/ui/settings/SettingsFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/settings/SettingsFragment$b;->g:Lcom/supercell/id/ui/settings/SettingsFragment;
 
     instance-of v1, p1, Landroidx/core/widget/NestedScrollView;
 
@@ -67,7 +67,7 @@
     check-cast p1, Landroidx/core/widget/NestedScrollView;
 
     .line 3
-    iput-object p1, v0, Lcom/supercell/id/ui/settings/SettingsFragment;->i0:Landroidx/core/widget/NestedScrollView;
+    iput-object p1, v0, Lcom/supercell/id/ui/settings/SettingsFragment;->j0:Landroidx/core/widget/NestedScrollView;
 
     const/4 p1, 0x0
 
@@ -77,7 +77,7 @@
     invoke-static {v0, p1, v1, v2}, Lcom/supercell/id/ui/BaseFragment;->k1(Lcom/supercell/id/ui/BaseFragment;ZILjava/lang/Object;)V
 
     .line 5
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method

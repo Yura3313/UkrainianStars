@@ -1,36 +1,39 @@
 .class public Lnb/a;
-.super Ljava/lang/Object;
-.source "HSBottomSheet.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
+.super Lnb/c;
+.source "BaseViewState.java"
 
 
 # instance fields
-.field public final synthetic a:Lnb/c;
+.field public c:Z
+
+.field public d:Z
 
 
 # direct methods
-.method public constructor <init>(Lnb/c;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    iput-object p1, p0, Lnb/a;->a:Lnb/c;
+    invoke-direct {p0}, Lnb/c;-><init>()V
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x1
+
+    .line 2
+    iput-boolean v0, p0, Lnb/a;->c:Z
+
+    .line 3
+    iput-boolean v0, p0, Lnb/a;->d:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 1
+.method public b()V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lnb/a;->a:Lnb/c;
-
-    invoke-virtual {v0}, Lnb/c;->c()V
+    invoke-virtual {p0, p0}, Lnb/c;->a(Ljava/lang/Object;)V
 
     return-void
 .end method

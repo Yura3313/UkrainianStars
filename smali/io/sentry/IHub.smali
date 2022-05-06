@@ -43,7 +43,12 @@
 .method public abstract captureMessage(Ljava/lang/String;Lio/sentry/SentryLevel;)Lio/sentry/protocol/SentryId;
 .end method
 
-.method public abstract captureTransaction(Lio/sentry/protocol/SentryTransaction;)Lio/sentry/protocol/SentryId;
+.method public abstract captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;)Lio/sentry/protocol/SentryId;
+    .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
+    .end annotation
+.end method
+
+.method public abstract captureTransaction(Lio/sentry/protocol/SentryTransaction;Lio/sentry/TraceState;Ljava/lang/Object;)Lio/sentry/protocol/SentryId;
     .annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
     .end annotation
 .end method
@@ -81,6 +86,9 @@
 .end method
 
 .method public abstract getSpan()Lio/sentry/ISpan;
+.end method
+
+.method public abstract isCrashedLastRun()Ljava/lang/Boolean;
 .end method
 
 .method public abstract isEnabled()Z

@@ -1,122 +1,80 @@
-.class public final synthetic Lj3/gc0;
+.class public final Lj3/gc0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/el0;
+.implements Lj3/cd0;
 
 
 # instance fields
-.field public final a:Lj3/ec0;
+.field public final synthetic a:I
 
-.field public final b:Ljava/lang/String;
-
-.field public final c:Ljava/util/List;
-
-.field public final d:Landroid/os/Bundle;
+.field public b:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lj3/ec0;Ljava/lang/String;Ljava/util/List;Landroid/os/Bundle;)V
+.method public synthetic constructor <init>(Ljava/lang/String;I)V
     .locals 0
 
+    .line 1
+    iput p2, p0, Lj3/gc0;->a:I
+
+    iput-object p1, p0, Lj3/gc0;->b:Ljava/lang/String;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lj3/gc0;->a:Lj3/ec0;
-
-    iput-object p2, p0, Lj3/gc0;->b:Ljava/lang/String;
-
-    iput-object p3, p0, Lj3/gc0;->c:Ljava/util/List;
-
-    iput-object p4, p0, Lj3/gc0;->d:Landroid/os/Bundle;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lj3/yl0;
-    .locals 11
+.method public final b(Ljava/lang/Object;)V
+    .locals 2
 
-    iget-object v0, p0, Lj3/gc0;->a:Lj3/ec0;
+    iget v0, p0, Lj3/gc0;->a:I
 
-    iget-object v1, p0, Lj3/gc0;->b:Ljava/lang/String;
+    packed-switch v0, :pswitch_data_0
 
-    iget-object v2, p0, Lj3/gc0;->c:Ljava/util/List;
-
-    iget-object v6, p0, Lj3/gc0;->d:Landroid/os/Bundle;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    goto :goto_0
 
     .line 1
-    new-instance v10, Lj3/md;
-
-    invoke-direct {v10}, Lj3/md;-><init>()V
+    :pswitch_0
+    check-cast p1, Landroid/os/Bundle;
 
     .line 2
-    iget-object v3, v0, Lj3/ec0;->f:Lj3/q70;
+    iget-object v0, p0, Lj3/gc0;->b:Ljava/lang/String;
 
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const-string v1, "request_id"
+
+    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
 
     .line 3
+    :goto_0
+    check-cast p1, Lorg/json/JSONObject;
+
     :try_start_0
-    iget-object v4, v3, Lj3/q70;->b:Lj3/yz;
-
-    invoke-virtual {v4, v1}, Lj3/yz;->b(Ljava/lang/String;)Lcom/google/android/gms/internal/ads/zzapa;
-
-    move-result-object v4
+    const-string v0, "ms"
 
     .line 4
-    iget-object v3, v3, Lj3/q70;->a:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object v1, p0, Lj3/gc0;->b:Ljava/lang/String;
 
-    invoke-virtual {v3, v1, v4}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_1
 
     .line 5
     :catch_0
-    iget-object v3, v0, Lj3/ec0;->f:Lj3/q70;
+    invoke-static {}, Lj3/cj;->l()Z
 
-    invoke-virtual {v3, v1}, Lj3/q70;->a(Ljava/lang/String;)Lcom/google/android/gms/internal/ads/zzapa;
+    :goto_1
+    return-void
 
-    move-result-object v3
-
-    .line 6
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 7
-    new-instance v9, Lcom/google/android/gms/internal/ads/zzcxa;
-
-    invoke-direct {v9, v1, v3, v10}, Lcom/google/android/gms/internal/ads/zzcxa;-><init>(Ljava/lang/String;Lcom/google/android/gms/internal/ads/zzapa;Lj3/md;)V
-
-    .line 8
-    iget-object v1, v0, Lj3/ec0;->d:Landroid/content/Context;
-
-    .line 9
-    new-instance v4, Lcom/google/android/gms/dynamic/ObjectWrapper;
-
-    invoke-direct {v4, v1}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
-
-    .line 10
-    iget-object v5, v0, Lj3/ec0;->g:Ljava/lang/String;
-
-    const/4 v1, 0x0
-
-    .line 11
-    invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    move-object v7, v1
-
-    check-cast v7, Landroid/os/Bundle;
-
-    iget-object v0, v0, Lj3/ec0;->e:Lj3/pg0;
-
-    iget-object v8, v0, Lj3/pg0;->e:Lcom/google/android/gms/internal/ads/zzvj;
-
-    .line 12
-    invoke-interface/range {v3 .. v9}, Lcom/google/android/gms/internal/ads/zzapa;->O6(Lcom/google/android/gms/dynamic/IObjectWrapper;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;Lcom/google/android/gms/internal/ads/zzvj;Lcom/google/android/gms/internal/ads/zzapb;)V
-
-    return-object v10
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

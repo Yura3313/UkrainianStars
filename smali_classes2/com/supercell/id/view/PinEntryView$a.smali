@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/view/PinEntryView;
+.field public final synthetic g:Lcom/supercell/id/view/PinEntryView;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/PinEntryView;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/PinEntryView$a;->a:Lcom/supercell/id/view/PinEntryView;
+    iput-object p1, p0, Lcom/supercell/id/view/PinEntryView$a;->g:Lcom/supercell/id/view/PinEntryView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/view/PinEntryView$a;->a:Lcom/supercell/id/view/PinEntryView;
+    iget-object p1, p0, Lcom/supercell/id/view/PinEntryView$a;->g:Lcom/supercell/id/view/PinEntryView;
 
     invoke-virtual {p1, p2}, Lcom/supercell/id/view/PinEntryView;->onTouchEvent(Landroid/view/MotionEvent;)Z
 

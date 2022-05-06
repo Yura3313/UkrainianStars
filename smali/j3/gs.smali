@@ -1,250 +1,355 @@
 .class public final Lj3/gs;
-.super Ljava/lang/Object;
+.super Lo1/a;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/vs;
-.implements Lcom/google/android/gms/internal/ads/p8;
-.implements Lj3/g80;
+.implements Le1/a;
+.implements Lj3/vq;
+.implements Lj3/er;
+.implements Lj3/hr;
+.implements Lj3/xr;
+.implements Lj3/cs;
+.implements Lj3/a51;
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
+.field public final g:Lj3/ls;
+
+.field public h:Lj3/e80;
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+.end field
+
+.field public i:Lj3/c80;
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+.end field
+
+.field public j:Lj3/d80;
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+.end field
+
+.field public k:Lj3/a80;
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+.end field
+
+.field public l:Lj3/cf0;
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+.end field
+
+.field public m:Lj3/bg0;
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+.end field
 
 
 # direct methods
-.method public synthetic constructor <init>(Lj3/cs;Lj3/ep0;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
-    iput-object p1, p0, Lj3/gs;->a:Ljava/lang/Object;
+    invoke-direct {p0}, Lo1/a;-><init>()V
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 2
+    new-instance v0, Lj3/ls;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Lj3/ls;-><init>(Lj3/gs;Lj3/s5;)V
+
+    iput-object v0, p0, Lj3/gs;->g:Lj3/ls;
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/Object;)V
+.method public static f(Ljava/lang/Object;Lj3/ks;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(TT;",
+            "Lj3/ks<",
+            "TT;>;)V"
+        }
+    .end annotation
 
-    .line 2
-    iput-object p1, p0, Lj3/gs;->a:Ljava/lang/Object;
+    if-eqz p0, :cond_0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    invoke-interface {p1, p0}, Lj3/ks;->b(Ljava/lang/Object;)V
 
+    :cond_0
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lj3/y70;)Lj3/gs;
+.method public final A()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lj3/gs;->a:Ljava/lang/Object;
+    iget-object v0, p0, Lj3/gs;->h:Lj3/e80;
 
-    check-cast v0, Lj3/cs;
-
-    .line 2
-    iput-object p1, v0, Lj3/cs;->b:Lj3/y70;
-
-    return-object p0
-.end method
-
-.method public e(Ljava/lang/Object;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lj3/gs;->a:Ljava/lang/Object;
-
-    check-cast v0, Lj3/g21;
-
-    check-cast p1, Lj3/j21;
+    if-eqz v0, :cond_0
 
     .line 2
-    invoke-interface {p1, v0}, Lj3/j21;->K(Lj3/g21;)V
-
-    return-void
-.end method
-
-.method public f()V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lj3/gs;->a:Ljava/lang/Object;
-
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzdkr;
-
-    monitor-enter v0
-
-    .line 2
-    :try_start_0
-    iget-object v1, p0, Lj3/gs;->a:Ljava/lang/Object;
-
-    check-cast v1, Lcom/google/android/gms/internal/ads/zzdkr;
-
-    const/4 v2, 0x0
+    invoke-virtual {v0}, Lj3/e80;->A()V
 
     .line 3
-    iput-object v2, v1, Lcom/google/android/gms/internal/ads/zzdkr;->i:Lj3/yy;
-
-    .line 4
-    monitor-exit v0
-
-    return-void
-
-    :catchall_0
-    move-exception v1
-
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v1
-.end method
-
-.method public g(Lcom/google/android/gms/internal/ads/e9$a;)V
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Lj3/gs;->a:Ljava/lang/Object;
-
-    check-cast v0, Lj3/ng0;
-
-    .line 2
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/e9$a;->q()Lcom/google/android/gms/internal/ads/r8;
-
-    move-result-object v1
-
-    .line 3
-    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/q6;->v()Lcom/google/android/gms/internal/ads/q6$b;
-
-    move-result-object v1
-
-    .line 4
-    check-cast v1, Lcom/google/android/gms/internal/ads/r8$b;
-
-    .line 5
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/e9$a;->q()Lcom/google/android/gms/internal/ads/r8;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/google/android/gms/internal/ads/r8;->z()Lcom/google/android/gms/internal/ads/a9;
-
-    move-result-object v2
-
-    .line 6
-    invoke-virtual {v2}, Lcom/google/android/gms/internal/ads/q6;->v()Lcom/google/android/gms/internal/ads/q6$b;
-
-    move-result-object v2
-
-    .line 7
-    check-cast v2, Lcom/google/android/gms/internal/ads/a9$a;
-
-    iget-object v0, v0, Lj3/ng0;->b:Lj3/lg0;
-
-    iget-object v0, v0, Lj3/lg0;->b:Lj3/fg0;
-
-    iget-object v0, v0, Lj3/fg0;->b:Ljava/lang/String;
-
-    .line 8
-    iget-boolean v3, v2, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
-
-    const/4 v4, 0x0
-
-    if-eqz v3, :cond_0
-
-    .line 9
-    invoke-virtual {v2}, Lcom/google/android/gms/internal/ads/q6$b;->m()V
-
-    .line 10
-    iput-boolean v4, v2, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
-
-    .line 11
     :cond_0
-    iget-object v3, v2, Lcom/google/android/gms/internal/ads/q6$b;->b:Lcom/google/android/gms/internal/ads/q6;
-
-    check-cast v3, Lcom/google/android/gms/internal/ads/a9;
-
-    invoke-static {v3, v0}, Lcom/google/android/gms/internal/ads/a9;->x(Lcom/google/android/gms/internal/ads/a9;Ljava/lang/String;)V
-
-    .line 12
-    iget-boolean v0, v1, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
+    iget-object v0, p0, Lj3/gs;->m:Lj3/bg0;
 
     if-eqz v0, :cond_1
 
-    .line 13
-    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/q6$b;->m()V
+    .line 4
+    invoke-virtual {v0}, Lj3/bg0;->A()V
 
-    .line 14
-    iput-boolean v4, v1, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
-
-    .line 15
     :cond_1
-    iget-object v0, v1, Lcom/google/android/gms/internal/ads/q6$b;->b:Lcom/google/android/gms/internal/ads/q6;
+    return-void
+.end method
 
-    check-cast v0, Lcom/google/android/gms/internal/ads/r8;
+.method public final D()V
+    .locals 1
 
-    invoke-virtual {v2}, Lcom/google/android/gms/internal/ads/q6$b;->i()Lj3/os0;
+    .line 1
+    iget-object v0, p0, Lj3/gs;->h:Lj3/e80;
 
-    move-result-object v2
+    if-eqz v0, :cond_0
 
-    check-cast v2, Lcom/google/android/gms/internal/ads/q6;
+    .line 2
+    invoke-virtual {v0}, Lj3/e80;->D()V
 
-    check-cast v2, Lcom/google/android/gms/internal/ads/a9;
+    .line 3
+    :cond_0
+    iget-object v0, p0, Lj3/gs;->m:Lj3/bg0;
 
-    invoke-static {v0, v2}, Lcom/google/android/gms/internal/ads/r8;->y(Lcom/google/android/gms/internal/ads/r8;Lcom/google/android/gms/internal/ads/a9;)V
+    if-eqz v0, :cond_1
 
-    .line 16
-    invoke-virtual {p1, v1}, Lcom/google/android/gms/internal/ads/e9$a;->n(Lcom/google/android/gms/internal/ads/r8$b;)Lcom/google/android/gms/internal/ads/e9$a;
+    .line 4
+    invoke-virtual {v0}, Lj3/bg0;->D()V
+
+    :cond_1
+    return-void
+.end method
+
+.method public final J()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/gs;->h:Lj3/e80;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-virtual {v0}, Lj3/e80;->J()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final P()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/gs;->h:Lj3/e80;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-virtual {v0}, Lj3/e80;->P()V
+
+    .line 3
+    :cond_0
+    iget-object v0, p0, Lj3/gs;->m:Lj3/bg0;
+
+    if-eqz v0, :cond_1
+
+    .line 4
+    invoke-virtual {v0}, Lj3/bg0;->P()V
+
+    :cond_1
+    return-void
+.end method
+
+.method public final Y1()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lj3/gs;->l:Lj3/cf0;
+
+    sget-object v1, Lr5/a;->g:Lj3/ks;
+
+    invoke-static {v0, v1}, Lj3/gs;->f(Ljava/lang/Object;Lj3/ks;)V
 
     return-void
 .end method
 
-.method public synthetic onSuccess(Ljava/lang/Object;)V
-    .locals 3
+.method public final a(Lcom/google/android/gms/internal/ads/zzvl;)V
+    .locals 2
 
     .line 1
-    check-cast p1, Lj3/yy;
+    iget-object v0, p0, Lj3/gs;->k:Lj3/a80;
+
+    new-instance v1, Lj3/is;
+
+    invoke-direct {v1, p1}, Lj3/is;-><init>(Ljava/lang/Object;)V
+
+    if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lj3/gs;->a:Ljava/lang/Object;
-
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzdkr;
-
-    monitor-enter v0
+    invoke-virtual {v1, v0}, Lj3/is;->b(Ljava/lang/Object;)V
 
     .line 3
-    :try_start_0
-    iget-object v1, p0, Lj3/gs;->a:Ljava/lang/Object;
+    :cond_0
+    iget-object v0, p0, Lj3/gs;->m:Lj3/bg0;
 
-    move-object v2, v1
-
-    check-cast v2, Lcom/google/android/gms/internal/ads/zzdkr;
+    if-eqz v0, :cond_2
 
     .line 4
-    iput-object p1, v2, Lcom/google/android/gms/internal/ads/zzdkr;->i:Lj3/yy;
+    :goto_0
+    iget-object v1, v0, Lj3/bg0;->o:Lj3/bg0;
+
+    if-eqz v1, :cond_1
+
+    move-object v0, v1
+
+    goto :goto_0
 
     .line 5
-    check-cast v1, Lcom/google/android/gms/internal/ads/zzdkr;
+    :cond_1
+    iget-object v0, v0, Lj3/bg0;->n:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 6
-    iget-object p1, v1, Lcom/google/android/gms/internal/ads/zzdkr;->i:Lj3/yy;
+    new-instance v1, Lf1/i;
 
-    .line 7
-    invoke-virtual {p1}, Lj3/fo;->b()V
+    invoke-direct {v1, p1}, Lf1/i;-><init>(Ljava/lang/Object;)V
 
-    .line 8
-    monitor-exit v0
+    invoke-static {v0, v1}, Lj3/t30;->a(Ljava/util/concurrent/atomic/AtomicReference;Lj3/nf0;)V
+
+    :cond_2
+    return-void
+.end method
+
+.method public final c()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lj3/gs;->m:Lj3/bg0;
+
+    sget-object v1, Lcom/helpshift/util/s;->g:Lj3/ks;
+
+    invoke-static {v0, v1}, Lj3/gs;->f(Ljava/lang/Object;Lj3/ks;)V
 
     return-void
+.end method
 
-    :catchall_0
-    move-exception p1
+.method public final d(Lcom/google/android/gms/internal/ads/zzatj;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
 
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .line 1
+    iget-object v0, p0, Lj3/gs;->h:Lj3/e80;
 
-    throw p1
+    .line 2
+    iget-object v0, p0, Lj3/gs;->m:Lj3/bg0;
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    invoke-virtual {v0, p1, p2, p3}, Lj3/bg0;->d(Lcom/google/android/gms/internal/ads/zzatj;Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final e(Lcom/google/android/gms/internal/ads/zzuw;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/gs;->m:Lj3/bg0;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-virtual {v0, p1}, Lj3/bg0;->e(Lcom/google/android/gms/internal/ads/zzuw;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final f0()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/gs;->h:Lj3/e80;
+
+    .line 2
+    iget-object v0, p0, Lj3/gs;->m:Lj3/bg0;
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    invoke-virtual {v0}, Lj3/bg0;->f0()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final h0()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/gs;->h:Lj3/e80;
+
+    .line 2
+    iget-object v0, p0, Lj3/gs;->m:Lj3/bg0;
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    invoke-virtual {v0}, Lj3/bg0;->h0()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final k(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lj3/gs;->j:Lj3/d80;
+
+    new-instance v1, Lj3/js;
+
+    invoke-direct {v1, p1, p2}, Lj3/js;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-static {v0, v1}, Lj3/gs;->f(Ljava/lang/Object;Lj3/ks;)V
+
+    return-void
+.end method
+
+.method public final o()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj3/gs;->h:Lj3/e80;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-virtual {v0}, Lj3/e80;->o()V
+
+    .line 3
+    :cond_0
+    iget-object v0, p0, Lj3/gs;->i:Lj3/c80;
+
+    if-eqz v0, :cond_1
+
+    .line 4
+    invoke-virtual {v0}, Lj3/c80;->o()V
+
+    :cond_1
+    return-void
 .end method

@@ -2,75 +2,49 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lcom/google/android/gms/common/internal/BaseGmsClient$b;
+
+# annotations
+.annotation runtime Ljavax/annotation/ParametersAreNonnullByDefault;
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:Lj3/i31;
+.field public final a:F
+
+.field public final b:F
+
+.field public final c:F
+
+.field public final d:F
+
+.field public final e:I
 
 
 # direct methods
-.method public constructor <init>(Lj3/i31;)V
+.method public constructor <init>(FFFFI)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lj3/l31;->a:Lj3/i31;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-void
-.end method
-
-
-# virtual methods
-.method public final P0(Lcom/google/android/gms/common/ConnectionResult;)V
-    .locals 3
-
-    .line 1
-    iget-object p1, p0, Lj3/l31;->a:Lj3/i31;
-
     .line 2
-    iget-object p1, p1, Lj3/i31;->b:Ljava/lang/Object;
+    iput p1, p0, Lj3/l31;->a:F
 
     .line 3
-    monitor-enter p1
+    iput p2, p0, Lj3/l31;->b:F
+
+    add-float/2addr p1, p3
 
     .line 4
-    :try_start_0
-    iget-object v0, p0, Lj3/l31;->a:Lj3/i31;
+    iput p1, p0, Lj3/l31;->c:F
 
-    const/4 v1, 0x0
+    add-float/2addr p2, p4
 
     .line 5
-    iput-object v1, v0, Lj3/i31;->e:Lcom/google/android/gms/internal/ads/zztb;
+    iput p2, p0, Lj3/l31;->d:F
 
     .line 6
-    iget-object v2, v0, Lj3/i31;->c:Lj3/m31;
-
-    if-eqz v2, :cond_0
-
-    .line 7
-    iput-object v1, v0, Lj3/i31;->c:Lj3/m31;
-
-    .line 8
-    :cond_0
-    iget-object v0, v0, Lj3/i31;->b:Ljava/lang/Object;
-
-    .line 9
-    invoke-virtual {v0}, Ljava/lang/Object;->notifyAll()V
-
-    .line 10
-    monitor-exit p1
+    iput p5, p0, Lj3/l31;->e:I
 
     return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
 .end method

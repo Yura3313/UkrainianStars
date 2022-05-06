@@ -35,13 +35,13 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Ln8/c$a;",
+            "Lo8/c$a;",
             ">;",
             "Ljava/util/List<",
             "Ljava/lang/String;",
             ">;)",
             "Ljava/util/List<",
-            "Ln8/c$a;",
+            "Lo8/c$a;",
             ">;"
         }
     .end annotation
@@ -101,10 +101,10 @@
 
     move-result-object v4
 
-    check-cast v4, Ln8/c$a;
+    check-cast v4, Lo8/c$a;
 
     .line 7
-    iget-object v5, v4, Ln8/c$a;->a:Ljava/lang/String;
+    iget-object v5, v4, Lo8/c$a;->g:Ljava/lang/String;
 
     invoke-virtual {v5}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 

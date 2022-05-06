@@ -62,7 +62,7 @@
     .line 4
     iget-object p1, p1, Landroidx/lifecycle/k;->a:Li/a;
 
-    invoke-virtual {p1, p0}, Li/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Li/a;->f(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
     iget-object p1, p0, Landroidx/savedstate/Recreator;->a:Landroidx/savedstate/c;
@@ -177,7 +177,7 @@
 
     const-string v1, "Failed to instantiate "
 
-    invoke-static {v1, p2}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p2}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -193,7 +193,7 @@
 
     const-string v1, "Class"
 
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -225,7 +225,7 @@
 
     const-string v2, " wasn\'t found"
 
-    invoke-static {v1, p2, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p2, v2}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 

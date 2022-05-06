@@ -28,7 +28,7 @@
 
 
 # instance fields
-.field public a:Ljava/lang/Object;
+.field public g:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TT;"
@@ -36,9 +36,9 @@
     .end annotation
 .end field
 
-.field public b:I
+.field public h:I
 
-.field public final synthetic h:Lqe/c;
+.field public final synthetic i:Lqe/c;
 
 
 # direct methods
@@ -51,14 +51,14 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lqe/c$a;->h:Lqe/c;
+    iput-object p1, p0, Lqe/c$a;->i:Lqe/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, -0x2
 
     .line 2
-    iput p1, p0, Lqe/c$a;->b:I
+    iput p1, p0, Lqe/c$a;->h:I
 
     return-void
 .end method
@@ -69,13 +69,13 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lqe/c$a;->b:I
+    iget v0, p0, Lqe/c$a;->h:I
 
     const/4 v1, -0x2
 
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lqe/c$a;->h:Lqe/c;
+    iget-object v0, p0, Lqe/c$a;->i:Lqe/c;
 
     .line 2
     iget-object v0, v0, Lqe/c;->a:Lke/a;
@@ -88,13 +88,13 @@
     goto :goto_0
 
     :cond_0
-    iget-object v0, p0, Lqe/c$a;->h:Lqe/c;
+    iget-object v0, p0, Lqe/c$a;->i:Lqe/c;
 
     .line 4
     iget-object v0, v0, Lqe/c;->b:Lke/l;
 
     .line 5
-    iget-object v1, p0, Lqe/c$a;->a:Ljava/lang/Object;
+    iget-object v1, p0, Lqe/c$a;->g:Ljava/lang/Object;
 
     if-eqz v1, :cond_2
 
@@ -103,7 +103,7 @@
     move-result-object v0
 
     :goto_0
-    iput-object v0, p0, Lqe/c$a;->a:Ljava/lang/Object;
+    iput-object v0, p0, Lqe/c$a;->g:Ljava/lang/Object;
 
     if-nez v0, :cond_1
 
@@ -116,13 +116,13 @@
 
     .line 6
     :goto_1
-    iput v0, p0, Lqe/c$a;->b:I
+    iput v0, p0, Lqe/c$a;->h:I
 
     return-void
 
     .line 7
     :cond_2
-    invoke-static {}, Ly4/x;->j()V
+    invoke-static {}, Ls3/b;->g()V
 
     const/4 v0, 0x0
 
@@ -133,7 +133,7 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lqe/c$a;->b:I
+    iget v0, p0, Lqe/c$a;->h:I
 
     if-gez v0, :cond_0
 
@@ -142,7 +142,7 @@
 
     .line 3
     :cond_0
-    iget v0, p0, Lqe/c$a;->b:I
+    iget v0, p0, Lqe/c$a;->h:I
 
     const/4 v1, 0x1
 
@@ -166,7 +166,7 @@
     .end annotation
 
     .line 1
-    iget v0, p0, Lqe/c$a;->b:I
+    iget v0, p0, Lqe/c$a;->h:I
 
     if-gez v0, :cond_0
 
@@ -175,19 +175,19 @@
 
     .line 3
     :cond_0
-    iget v0, p0, Lqe/c$a;->b:I
+    iget v0, p0, Lqe/c$a;->h:I
 
     if-eqz v0, :cond_2
 
     .line 4
-    iget-object v0, p0, Lqe/c$a;->a:Ljava/lang/Object;
+    iget-object v0, p0, Lqe/c$a;->g:Ljava/lang/Object;
 
     if-eqz v0, :cond_1
 
     const/4 v1, -0x1
 
     .line 5
-    iput v1, p0, Lqe/c$a;->b:I
+    iput v1, p0, Lqe/c$a;->h:I
 
     return-object v0
 

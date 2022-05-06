@@ -63,22 +63,22 @@
     invoke-direct {v0}, Lcom/google/android/material/transformation/FabTransformationBehavior$b;-><init>()V
 
     .line 4
-    invoke-static {p1, p2}, Lb4/g;->b(Landroid/content/Context;I)Lb4/g;
+    invoke-static {p1, p2}, Lc4/g;->b(Landroid/content/Context;I)Lc4/g;
 
     move-result-object p1
 
-    iput-object p1, v0, Lcom/google/android/material/transformation/FabTransformationBehavior$b;->a:Lb4/g;
+    iput-object p1, v0, Lcom/google/android/material/transformation/FabTransformationBehavior$b;->a:Lc4/g;
 
     .line 5
-    new-instance p1, Lb4/i;
+    new-instance p1, Lr5/a;
 
     const/16 p2, 0x11
 
     const/4 v1, 0x0
 
-    invoke-direct {p1, p2, v1, v1}, Lb4/i;-><init>(IFF)V
+    invoke-direct {p1, p2, v1, v1}, Lr5/a;-><init>(IFF)V
 
-    iput-object p1, v0, Lcom/google/android/material/transformation/FabTransformationBehavior$b;->b:Lb4/i;
+    iput-object p1, v0, Lcom/google/android/material/transformation/FabTransformationBehavior$b;->b:Lr5/a;
 
     return-object v0
 .end method
@@ -197,7 +197,7 @@
 
     move-result v6
 
-    invoke-static {v5, v6}, Lf0/s;->D(Landroid/view/View;I)V
+    invoke-static {v5, v6}, Lf0/r;->D(Landroid/view/View;I)V
 
     goto :goto_2
 
@@ -218,7 +218,7 @@
     const/4 v6, 0x4
 
     .line 15
-    invoke-static {v5, v6}, Lf0/s;->D(Landroid/view/View;I)V
+    invoke-static {v5, v6}, Lf0/r;->D(Landroid/view/View;I)V
 
     :cond_5
     :goto_2

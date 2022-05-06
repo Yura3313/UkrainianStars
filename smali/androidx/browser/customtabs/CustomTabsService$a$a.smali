@@ -45,7 +45,7 @@
     .line 1
     iget-object v0, p0, Landroidx/browser/customtabs/CustomTabsService$a$a;->b:Landroidx/browser/customtabs/CustomTabsService$a;
 
-    iget-object v0, v0, Landroidx/browser/customtabs/CustomTabsService$a;->a:Landroidx/browser/customtabs/CustomTabsService;
+    iget-object v0, v0, Landroidx/browser/customtabs/CustomTabsService$a;->g:Landroidx/browser/customtabs/CustomTabsService;
 
     iget-object v1, p0, Landroidx/browser/customtabs/CustomTabsService$a$a;->a:Lk/d;
 
@@ -55,7 +55,7 @@
 
     .line 2
     :try_start_0
-    iget-object v3, v0, Landroidx/browser/customtabs/CustomTabsService;->a:Ljava/util/Map;
+    iget-object v3, v0, Landroidx/browser/customtabs/CustomTabsService;->g:Ljava/util/Map;
 
     monitor-enter v3
     :try_end_0
@@ -68,7 +68,7 @@
     move-result-object v1
 
     .line 4
-    iget-object v4, v0, Landroidx/browser/customtabs/CustomTabsService;->a:Ljava/util/Map;
+    iget-object v4, v0, Landroidx/browser/customtabs/CustomTabsService;->g:Ljava/util/Map;
 
     .line 5
     invoke-interface {v4, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -81,7 +81,7 @@
     invoke-interface {v1, v4, v2}, Landroid/os/IBinder;->unlinkToDeath(Landroid/os/IBinder$DeathRecipient;I)Z
 
     .line 7
-    iget-object v0, v0, Landroidx/browser/customtabs/CustomTabsService;->a:Ljava/util/Map;
+    iget-object v0, v0, Landroidx/browser/customtabs/CustomTabsService;->g:Ljava/util/Map;
 
     invoke-interface {v0, v1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 

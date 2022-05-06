@@ -25,17 +25,17 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final b:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
-.field public final h:J
-
-.field public final i:Landroid/net/Uri;
+.field public final i:J
 
 .field public final j:Landroid/net/Uri;
 
 .field public final k:Landroid/net/Uri;
+
+.field public final l:Landroid/net/Uri;
 
 
 # direct methods
@@ -59,46 +59,46 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zze;-><init>()V
 
     .line 2
-    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->i2()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->k2()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->g:Ljava/lang/String;
 
     .line 3
-    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->g1()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->i1()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->h:Ljava/lang/String;
 
     .line 4
-    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->G1()J
+    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->J1()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->h:J
+    iput-wide v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->i:J
 
     .line 5
-    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->v0()Landroid/net/Uri;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->i:Landroid/net/Uri;
-
-    .line 6
-    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->H0()Landroid/net/Uri;
+    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->x0()Landroid/net/Uri;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->j:Landroid/net/Uri;
 
+    .line 6
+    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->K0()Landroid/net/Uri;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->k:Landroid/net/Uri;
+
     .line 7
-    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->N()Landroid/net/Uri;
+    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->P()Landroid/net/Uri;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->k:Landroid/net/Uri;
+    iput-object p1, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->l:Landroid/net/Uri;
 
     return-void
 .end method
@@ -110,100 +110,27 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zze;-><init>()V
 
     .line 9
-    iput-object p1, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->g:Ljava/lang/String;
 
     .line 10
-    iput-object p2, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->h:Ljava/lang/String;
 
     .line 11
-    iput-wide p3, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->h:J
+    iput-wide p3, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->i:J
 
     .line 12
-    iput-object p5, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->i:Landroid/net/Uri;
+    iput-object p5, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->j:Landroid/net/Uri;
 
     .line 13
-    iput-object p6, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->j:Landroid/net/Uri;
+    iput-object p6, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->k:Landroid/net/Uri;
 
     .line 14
-    iput-object p7, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->k:Landroid/net/Uri;
+    iput-object p7, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->l:Landroid/net/Uri;
 
     return-void
 .end method
 
-.method public static x2(Lcom/google/android/gms/games/internal/player/zza;)I
-    .locals 3
-
-    const/4 v0, 0x6
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 1
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->i2()Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    .line 2
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->g1()Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    .line 3
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->G1()J
-
-    move-result-wide v1
-
-    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v1
-
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
-
-    .line 4
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->v0()Landroid/net/Uri;
-
-    move-result-object v1
-
-    const/4 v2, 0x3
-
-    aput-object v1, v0, v2
-
-    .line 5
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->H0()Landroid/net/Uri;
-
-    move-result-object v1
-
-    const/4 v2, 0x4
-
-    aput-object v1, v0, v2
-
-    .line 6
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->N()Landroid/net/Uri;
-
-    move-result-object p0
-
-    const/4 v1, 0x5
-
-    aput-object p0, v0, v1
-
-    .line 7
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static y2(Lcom/google/android/gms/games/internal/player/zza;Ljava/lang/Object;)Z
+.method public static A2(Lcom/google/android/gms/games/internal/player/zza;Ljava/lang/Object;)Z
     .locals 5
 
     .line 1
@@ -227,11 +154,11 @@
     check-cast p1, Lcom/google/android/gms/games/internal/player/zza;
 
     .line 3
-    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->i2()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->k2()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->i2()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->k2()Ljava/lang/String;
 
     move-result-object v3
 
@@ -242,11 +169,11 @@
     if-eqz v2, :cond_2
 
     .line 4
-    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->g1()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->i1()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->g1()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->i1()Ljava/lang/String;
 
     move-result-object v3
 
@@ -257,7 +184,7 @@
     if-eqz v2, :cond_2
 
     .line 5
-    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->G1()J
+    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->J1()J
 
     move-result-wide v2
 
@@ -265,7 +192,7 @@
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->G1()J
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->J1()J
 
     move-result-wide v3
 
@@ -280,11 +207,11 @@
     if-eqz v2, :cond_2
 
     .line 6
-    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->v0()Landroid/net/Uri;
+    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->x0()Landroid/net/Uri;
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->v0()Landroid/net/Uri;
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->x0()Landroid/net/Uri;
 
     move-result-object v3
 
@@ -295,11 +222,11 @@
     if-eqz v2, :cond_2
 
     .line 7
-    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->H0()Landroid/net/Uri;
+    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->K0()Landroid/net/Uri;
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->H0()Landroid/net/Uri;
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->K0()Landroid/net/Uri;
 
     move-result-object v3
 
@@ -310,11 +237,11 @@
     if-eqz v2, :cond_2
 
     .line 8
-    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->N()Landroid/net/Uri;
+    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/zza;->P()Landroid/net/Uri;
 
     move-result-object p1
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->N()Landroid/net/Uri;
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->P()Landroid/net/Uri;
 
     move-result-object p0
 
@@ -330,7 +257,7 @@
     return v1
 .end method
 
-.method public static z2(Lcom/google/android/gms/games/internal/player/zza;)Ljava/lang/String;
+.method public static B2(Lcom/google/android/gms/games/internal/player/zza;)Ljava/lang/String;
     .locals 3
 
     .line 1
@@ -341,7 +268,7 @@
     invoke-direct {v0, p0, v1}, Lc2/f$a;-><init>(Ljava/lang/Object;Lc2/n0;)V
 
     .line 2
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->i2()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->k2()Ljava/lang/String;
 
     move-result-object v1
 
@@ -350,7 +277,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 3
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->g1()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->i1()Ljava/lang/String;
 
     move-result-object v1
 
@@ -359,7 +286,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 4
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->G1()J
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->J1()J
 
     move-result-wide v1
 
@@ -372,7 +299,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 5
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->v0()Landroid/net/Uri;
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->x0()Landroid/net/Uri;
 
     move-result-object v1
 
@@ -381,7 +308,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 6
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->H0()Landroid/net/Uri;
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->K0()Landroid/net/Uri;
 
     move-result-object v1
 
@@ -390,7 +317,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 7
-    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->N()Landroid/net/Uri;
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->P()Landroid/net/Uri;
 
     move-result-object p0
 
@@ -406,27 +333,91 @@
     return-object p0
 .end method
 
+.method public static z2(Lcom/google/android/gms/games/internal/player/zza;)I
+    .locals 3
+
+    const/4 v0, 0x6
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 1
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->k2()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    .line 2
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->i1()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    aput-object v1, v0, v2
+
+    .line 3
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->J1()J
+
+    move-result-wide v1
+
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v1
+
+    const/4 v2, 0x2
+
+    aput-object v1, v0, v2
+
+    .line 4
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->x0()Landroid/net/Uri;
+
+    move-result-object v1
+
+    const/4 v2, 0x3
+
+    aput-object v1, v0, v2
+
+    .line 5
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->K0()Landroid/net/Uri;
+
+    move-result-object v1
+
+    const/4 v2, 0x4
+
+    aput-object v1, v0, v2
+
+    .line 6
+    invoke-interface {p0}, Lcom/google/android/gms/games/internal/player/zza;->P()Landroid/net/Uri;
+
+    move-result-object p0
+
+    const/4 v1, 0x5
+
+    aput-object p0, v0, v1
+
+    .line 7
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    move-result p0
+
+    return p0
+.end method
+
 
 # virtual methods
-.method public final G1()J
+.method public final J1()J
     .locals 2
 
     .line 1
-    iget-wide v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->h:J
+    iget-wide v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->i:J
 
     return-wide v0
 .end method
 
-.method public final H0()Landroid/net/Uri;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->j:Landroid/net/Uri;
-
-    return-object v0
-.end method
-
-.method public final N()Landroid/net/Uri;
+.method public final K0()Landroid/net/Uri;
     .locals 1
 
     .line 1
@@ -435,42 +426,51 @@
     return-object v0
 .end method
 
+.method public final P()Landroid/net/Uri;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->l:Landroid/net/Uri;
+
+    return-object v0
+.end method
+
 .method public final equals(Ljava/lang/Object;)Z
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->y2(Lcom/google/android/gms/games/internal/player/zza;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->A2(Lcom/google/android/gms/games/internal/player/zza;Ljava/lang/Object;)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method public final g1()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->b:Ljava/lang/String;
-
-    return-object v0
-.end method
-
 .method public final hashCode()I
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->x2(Lcom/google/android/gms/games/internal/player/zza;)I
+    invoke-static {p0}, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->z2(Lcom/google/android/gms/games/internal/player/zza;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final i2()Ljava/lang/String;
+.method public final i1()Ljava/lang/String;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->h:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final k2()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->g:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -479,18 +479,9 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->z2(Lcom/google/android/gms/games/internal/player/zza;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->B2(Lcom/google/android/gms/games/internal/player/zza;)Ljava/lang/String;
 
     move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final v0()Landroid/net/Uri;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->i:Landroid/net/Uri;
 
     return-object v0
 .end method
@@ -508,7 +499,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->g:Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -518,7 +509,7 @@
     const/4 v1, 0x2
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->h:Ljava/lang/String;
 
     .line 5
     invoke-static {p1, v1, v2, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
@@ -526,7 +517,7 @@
     const/4 v1, 0x3
 
     .line 6
-    iget-wide v4, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->h:J
+    iget-wide v4, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->i:J
 
     const/16 v2, 0x8
 
@@ -539,7 +530,7 @@
     const/4 v1, 0x4
 
     .line 9
-    iget-object v2, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->i:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->j:Landroid/net/Uri;
 
     .line 10
     invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
@@ -547,7 +538,7 @@
     const/4 v1, 0x5
 
     .line 11
-    iget-object v2, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->j:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->k:Landroid/net/Uri;
 
     .line 12
     invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
@@ -555,7 +546,7 @@
     const/4 v1, 0x6
 
     .line 13
-    iget-object v2, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->k:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->l:Landroid/net/Uri;
 
     .line 14
     invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
@@ -564,4 +555,13 @@
     invoke-static {p1, v0}, Ld2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
+.end method
+
+.method public final x0()Landroid/net/Uri;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/MostRecentGameInfoEntity;->j:Landroid/net/Uri;
+
+    return-object v0
 .end method

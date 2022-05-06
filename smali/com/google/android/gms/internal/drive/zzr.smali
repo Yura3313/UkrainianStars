@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
 
 # direct methods
@@ -23,9 +23,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lq3/d5;
+    new-instance v0, Lq3/z4;
 
-    invoke-direct {v0}, Lq3/d5;-><init>()V
+    invoke-direct {v0}, Lq3/z4;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/drive/zzr;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -64,7 +64,7 @@
     invoke-static {v0, v1}, Lc2/h;->b(ZLjava/lang/Object;)V
 
     .line 3
-    iput p1, p0, Lcom/google/android/gms/internal/drive/zzr;->a:I
+    iput p1, p0, Lcom/google/android/gms/internal/drive/zzr;->g:I
 
     return-void
 .end method
@@ -84,7 +84,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/internal/drive/zzr;->a:I
+    iget v1, p0, Lcom/google/android/gms/internal/drive/zzr;->g:I
 
     const/4 v2, 0x4
 

@@ -102,7 +102,7 @@
     const-string v8, "subs"
 
     .line 8
-    invoke-interface {v7, v5, v3, v8}, Lcom/google/android/gms/internal/play_billing/zzd;->u1(ILjava/lang/String;Ljava/lang/String;)I
+    invoke-interface {v7, v5, v3, v8}, Lcom/google/android/gms/internal/play_billing/zzd;->v1(ILjava/lang/String;Ljava/lang/String;)I
 
     move-result v6
 
@@ -179,7 +179,7 @@
     const-string v8, "inapp"
 
     .line 13
-    invoke-interface {v7, v5, v3, v8}, Lcom/google/android/gms/internal/play_billing/zzd;->u1(ILjava/lang/String;Ljava/lang/String;)I
+    invoke-interface {v7, v5, v3, v8}, Lcom/google/android/gms/internal/play_billing/zzd;->v1(ILjava/lang/String;Ljava/lang/String;)I
 
     move-result v6
 

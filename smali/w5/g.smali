@@ -6,9 +6,9 @@
 
 
 # instance fields
-.field public final a:Lw5/e;
+.field public final g:Lw5/e;
 
-.field public final b:Lw5/j;
+.field public final h:Lw5/j;
 
 
 # direct methods
@@ -17,9 +17,9 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lw5/g;->a:Lw5/e;
+    iput-object p1, p0, Lw5/g;->g:Lw5/e;
 
-    iput-object p2, p0, Lw5/g;->b:Lw5/j;
+    iput-object p2, p0, Lw5/g;->h:Lw5/j;
 
     return-void
 .end method
@@ -30,9 +30,9 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lw5/g;->a:Lw5/e;
+    iget-object v0, p0, Lw5/g;->g:Lw5/e;
 
-    iget-object v1, p0, Lw5/g;->b:Lw5/j;
+    iget-object v1, p0, Lw5/g;->h:Lw5/j;
 
     .line 2
     iget v1, v1, Lw5/j;->a:I

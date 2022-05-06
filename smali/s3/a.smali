@@ -45,7 +45,7 @@
     .line 3
     check-cast v1, Lu2/b$a;
 
-    iget-object v1, v1, Lu2/b$a;->p:Ljava/lang/String;
+    iget-object v1, v1, Lu2/b$a;->q:Ljava/lang/String;
 
     if-nez v1, :cond_0
 

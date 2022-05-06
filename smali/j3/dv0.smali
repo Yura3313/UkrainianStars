@@ -2,110 +2,121 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<K:",
-        "Ljava/lang/Object;",
-        "V:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
+# interfaces
+.implements Lj3/fs0;
 
 
-# instance fields
-.field public final a:Ljava/util/LinkedHashMap;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/LinkedHashMap<",
-            "Ljava/lang/Object;",
-            "Lj3/fv0<",
-            "Ljava/lang/Object;",
-            ">;>;"
-        }
-    .end annotation
-.end field
+# static fields
+.field public static final a:Lj3/fs0;
 
 
 # direct methods
-.method public constructor <init>(ILj3/kp0;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lj3/dv0;
+
+    invoke-direct {v0}, Lj3/dv0;-><init>()V
+
+    sput-object v0, Lj3/dv0;->a:Lj3/fs0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    new-instance p2, Ljava/util/LinkedHashMap;
-
-    invoke-static {p1}, Lj3/sw0;->a(I)I
-
-    move-result p1
-
-    invoke-direct {p2, p1}, Ljava/util/LinkedHashMap;-><init>(I)V
-
-    .line 3
-    iput-object p2, p0, Lj3/dv0;->a:Ljava/util/LinkedHashMap;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Lj3/fv0;)Lj3/dv0;
-    .locals 1
+.method public final a(I)Z
+    .locals 2
 
-    .line 1
-    iget-object v0, p0, Lj3/dv0;->a:Ljava/util/LinkedHashMap;
+    const/4 v0, 0x1
 
-    if-eqz p1, :cond_1
+    const/4 v1, 0x0
 
-    if-eqz p2, :cond_0
+    packed-switch p1, :pswitch_data_0
 
-    invoke-virtual {v0, p1, p2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 p1, 0x0
 
-    return-object p0
+    goto :goto_0
 
-    .line 2
+    :pswitch_0
+    const/16 p1, 0xa
+
+    goto :goto_0
+
+    :pswitch_1
+    const/16 p1, 0x9
+
+    goto :goto_0
+
+    :pswitch_2
+    const/16 p1, 0x8
+
+    goto :goto_0
+
+    :pswitch_3
+    const/4 p1, 0x7
+
+    goto :goto_0
+
+    :pswitch_4
+    const/4 p1, 0x6
+
+    goto :goto_0
+
+    :pswitch_5
+    const/4 p1, 0x5
+
+    goto :goto_0
+
+    :pswitch_6
+    const/4 p1, 0x4
+
+    goto :goto_0
+
+    :pswitch_7
+    const/4 p1, 0x3
+
+    goto :goto_0
+
+    :pswitch_8
+    const/4 p1, 0x2
+
+    goto :goto_0
+
+    :pswitch_9
+    const/4 p1, 0x1
+
+    :goto_0
+    if-eqz p1, :cond_0
+
+    return v0
+
     :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
+    return v1
 
-    const-string p2, "provider"
+    nop
 
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_1
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string p2, "key"
-
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public final b()Lj3/cv0;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lj3/cv0<",
-            "TK;TV;>;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Lj3/cv0;
-
-    iget-object v1, p0, Lj3/dv0;->a:Ljava/util/LinkedHashMap;
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v2}, Lj3/cv0;-><init>(Ljava/util/Map;Lj3/kp0;)V
-
-    return-object v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

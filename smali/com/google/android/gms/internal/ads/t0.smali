@@ -1,117 +1,110 @@
 .class public final Lcom/google/android/gms/internal/ads/t0;
-.super Ljava/lang/Object;
+.super Lj3/f60;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lj3/f60<",
+        "Lj3/cz;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Lj3/fj;
+
+.field public final b:Lcom/google/android/gms/internal/ads/j$a;
+
+.field public final c:Lcom/google/android/gms/internal/ads/n;
+
+
 # direct methods
-.method public static a(Landroid/database/sqlite/SQLiteDatabase;I)I
-    .locals 2
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x2
-
-    if-ne p1, v1, :cond_0
-
-    return v0
+.method public constructor <init>(Lj3/fj;Lcom/google/android/gms/internal/ads/j$a;Lcom/google/android/gms/internal/ads/n;)V
+    .locals 0
 
     .line 1
-    :cond_0
-    invoke-static {p0, p1}, Lcom/google/android/gms/internal/ads/t0;->b(Landroid/database/sqlite/SQLiteDatabase;I)Landroid/database/Cursor;
-
-    move-result-object p0
+    invoke-direct {p0}, Lj3/f60;-><init>()V
 
     .line 2
-    invoke-interface {p0}, Landroid/database/Cursor;->getCount()I
-
-    move-result p1
-
-    if-lez p1, :cond_1
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/t0;->a:Lj3/fj;
 
     .line 3
-    invoke-interface {p0}, Landroid/database/Cursor;->moveToNext()Z
-
-    const-string p1, "value"
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/t0;->b:Lcom/google/android/gms/internal/ads/j$a;
 
     .line 4
-    invoke-interface {p0, p1}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
+    iput-object p3, p0, Lcom/google/android/gms/internal/ads/t0;->c:Lcom/google/android/gms/internal/ads/n;
 
-    move-result p1
-
-    invoke-interface {p0, p1}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result p1
-
-    add-int/2addr v0, p1
-
-    .line 5
-    :cond_1
-    invoke-interface {p0}, Landroid/database/Cursor;->close()V
-
-    return v0
+    return-void
 .end method
 
-.method public static b(Landroid/database/sqlite/SQLiteDatabase;I)Landroid/database/Cursor;
-    .locals 9
 
-    const/4 v0, 0x1
-
-    new-array v3, v0, [Ljava/lang/String;
-
-    const-string v1, "value"
-
-    const/4 v2, 0x0
-
-    aput-object v1, v3, v2
-
-    new-array v5, v0, [Ljava/lang/String;
-
-    if-eqz p1, :cond_2
-
-    if-eq p1, v0, :cond_1
-
-    const/4 v0, 0x2
-
-    if-eq p1, v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const-string p1, "last_successful_request_time"
-
-    aput-object p1, v5, v2
-
-    goto :goto_0
-
-    :cond_1
-    const-string p1, "total_requests"
-
-    aput-object p1, v5, v2
-
-    goto :goto_0
-
-    :cond_2
-    const-string p1, "failed_requests"
-
-    aput-object p1, v5, v2
-
-    :goto_0
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    const-string v2, "offline_signal_statistics"
-
-    const-string v4, "statistic_name = ?"
-
-    move-object v1, p0
+# virtual methods
+.method public final c(Lj3/wg0;Landroid/os/Bundle;)Lj3/im0;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/wg0;",
+            "Landroid/os/Bundle;",
+            ")",
+            "Lj3/im0<",
+            "Lj3/cz;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    invoke-virtual/range {v1 .. v8}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/t0;->a:Lj3/fj;
 
-    move-result-object p0
+    .line 2
+    invoke-virtual {v0}, Lj3/fj;->p()Lj3/nk;
 
-    return-object p0
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/t0;->b:Lcom/google/android/gms/internal/ads/j$a;
+
+    .line 3
+    iput-object p1, v1, Lcom/google/android/gms/internal/ads/j$a;->b:Lj3/wg0;
+
+    .line 4
+    iput-object p2, v1, Lcom/google/android/gms/internal/ads/j$a;->c:Landroid/os/Bundle;
+
+    .line 5
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/j$a;->a()Lcom/google/android/gms/internal/ads/j;
+
+    move-result-object p1
+
+    .line 6
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 7
+    iput-object p1, v0, Lj3/nk;->b:Lcom/google/android/gms/internal/ads/j;
+
+    .line 8
+    iget-object p1, p0, Lcom/google/android/gms/internal/ads/t0;->c:Lcom/google/android/gms/internal/ads/n;
+
+    .line 9
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 10
+    iput-object p1, v0, Lj3/nk;->a:Lcom/google/android/gms/internal/ads/n;
+
+    .line 11
+    invoke-virtual {v0}, Lj3/nk;->e()Lj3/fz;
+
+    move-result-object p1
+
+    .line 12
+    invoke-virtual {p1}, Lj3/fz;->b()Lj3/ap;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lj3/ap;->b()Lj3/im0;
+
+    move-result-object p1
+
+    return-object p1
 .end method

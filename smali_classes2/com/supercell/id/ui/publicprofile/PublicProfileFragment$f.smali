@@ -21,21 +21,21 @@
         "Lle/j;",
         "Lke/l<",
         "Lcom/google/android/material/imageview/ShapeableImageView;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$f;->a:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$f;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
     const/4 p1, 0x1
 
@@ -53,7 +53,7 @@
     check-cast p1, Lcom/google/android/material/imageview/ShapeableImageView;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$f;->a:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$f;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
     sget v1, Lcom/supercell/id/R$id;->online_status_indicator:I
 
@@ -67,13 +67,13 @@
 
     const-string v1, "imageView"
 
-    invoke-static {p1, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0, p1}, Lj3/oj;->a(Landroid/view/View;Landroid/view/View;)V
+    invoke-static {v0, p1}, Ls3/k;->r(Landroid/view/View;Landroid/view/View;)V
 
     .line 3
     :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method

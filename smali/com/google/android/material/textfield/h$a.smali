@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/material/textfield/h;
+.field public final synthetic g:Lcom/google/android/material/textfield/h;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/h$a;->a:Lcom/google/android/material/textfield/h;
+    iput-object p1, p0, Lcom/google/android/material/textfield/h$a;->g:Lcom/google/android/material/textfield/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/textfield/h$a;->a:Lcom/google/android/material/textfield/h;
+    iget-object p1, p0, Lcom/google/android/material/textfield/h$a;->g:Lcom/google/android/material/textfield/h;
 
     iget-object v0, p1, Lcom/google/android/material/textfield/m;->a:Lcom/google/android/material/textfield/TextInputLayout;
 

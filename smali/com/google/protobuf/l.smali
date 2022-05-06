@@ -3,7 +3,7 @@
 .source "CodedOutputStreamWriter.java"
 
 # interfaces
-.implements Lcom/google/protobuf/z1;
+.implements Lcom/google/protobuf/y1;
 
 
 # instance fields
@@ -76,7 +76,7 @@
     return-void
 .end method
 
-.method public c(ILjava/lang/Object;Lcom/google/protobuf/j1;)V
+.method public c(ILjava/lang/Object;Lcom/google/protobuf/i1;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -97,7 +97,7 @@
     .line 3
     iget-object v1, v0, Lcom/google/protobuf/CodedOutputStream;->a:Lcom/google/protobuf/l;
 
-    invoke-interface {p3, p2, v1}, Lcom/google/protobuf/j1;->h(Ljava/lang/Object;Lcom/google/protobuf/z1;)V
+    invoke-interface {p3, p2, v1}, Lcom/google/protobuf/i1;->h(Ljava/lang/Object;Lcom/google/protobuf/y1;)V
 
     const/4 p2, 0x4
 
@@ -107,7 +107,7 @@
     return-void
 .end method
 
-.method public d(ILjava/lang/Object;Lcom/google/protobuf/j1;)V
+.method public d(ILjava/lang/Object;Lcom/google/protobuf/i1;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -120,7 +120,7 @@
 
     check-cast p2, Lcom/google/protobuf/q0;
 
-    invoke-virtual {v0, p1, p2, p3}, Lcom/google/protobuf/CodedOutputStream;->S(ILcom/google/protobuf/q0;Lcom/google/protobuf/j1;)V
+    invoke-virtual {v0, p1, p2, p3}, Lcom/google/protobuf/CodedOutputStream;->S(ILcom/google/protobuf/q0;Lcom/google/protobuf/i1;)V
 
     return-void
 .end method

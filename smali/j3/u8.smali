@@ -1,9 +1,6 @@
-.class public final Lj3/u8;
+.class public abstract Lj3/u8;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Lj3/r8;
 
 
 # direct methods
@@ -18,14 +15,13 @@
 
 
 # virtual methods
-.method public final a(I)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final b()V
-    .locals 0
-
-    return-void
+.method public abstract a()Lj3/im0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lj3/im0<",
+            "Ljava/lang/Void;",
+            ">;"
+        }
+    .end annotation
 .end method

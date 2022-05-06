@@ -16,11 +16,11 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:[Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
 .field public final h:[Ljava/lang/String;
+
+.field public final i:[Ljava/lang/String;
 
 
 # direct methods
@@ -28,9 +28,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lj3/k3;
+    new-instance v0, Lj3/l3;
 
-    invoke-direct {v0}, Lj3/k3;-><init>()V
+    invoke-direct {v0}, Lj3/l3;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzahr;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -44,13 +44,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzahr;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzahr;->g:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzahr;->b:[Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzahr;->h:[Ljava/lang/String;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/ads/zzahr;->h:[Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/internal/ads/zzahr;->i:[Ljava/lang/String;
 
     return-void
 .end method
@@ -70,7 +70,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzahr;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzahr;->g:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -79,14 +79,14 @@
     const/4 v0, 0x2
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzahr;->b:[Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzahr;->h:[Ljava/lang/String;
 
     invoke-static {p1, v0, v1, v2}, Ld2/b;->n(Landroid/os/Parcel;I[Ljava/lang/String;Z)V
 
     const/4 v0, 0x3
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzahr;->h:[Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzahr;->i:[Ljava/lang/String;
 
     invoke-static {p1, v0, v1, v2}, Ld2/b;->n(Landroid/os/Parcel;I[Ljava/lang/String;Z)V
 

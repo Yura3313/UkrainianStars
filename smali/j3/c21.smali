@@ -2,277 +2,490 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Ljava/lang/Runnable;
-
 
 # instance fields
-.field public final synthetic a:I
+.field public a:[B
 
-.field public final b:Ljava/lang/Object;
+.field public b:I
 
-.field public final h:Ljava/lang/Object;
+.field public c:I
+
+.field public d:I
 
 
 # direct methods
-.method public constructor <init>(Lj3/x11;Lj3/lx0;)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Lj3/c21;->a:I
-
-    .line 2
-    iput-object p1, p0, Lj3/c21;->h:Ljava/lang/Object;
-
-    iput-object p2, p0, Lj3/c21;->b:Ljava/lang/Object;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+.method public constructor <init>([BII)V
     .locals 0
 
     .line 1
-    iput p3, p0, Lj3/c21;->a:I
-
-    iput-object p1, p0, Lj3/c21;->b:Ljava/lang/Object;
-
-    iput-object p2, p0, Lj3/c21;->h:Ljava/lang/Object;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lj3/c21;->a:[B
+
+    .line 3
+    iput p2, p0, Lj3/c21;->c:I
+
+    .line 4
+    iput p3, p0, Lj3/c21;->b:I
+
+    const/4 p1, 0x0
+
+    .line 5
+    iput p1, p0, Lj3/c21;->d:I
+
+    .line 6
+    invoke-virtual {p0}, Lj3/c21;->g()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 6
+.method public final a(I)I
+    .locals 8
 
-    iget v0, p0, Lj3/c21;->a:I
+    const/4 v0, 0x0
 
-    packed-switch v0, :pswitch_data_0
+    if-nez p1, :cond_0
 
-    goto/16 :goto_0
+    return v0
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/c21;->b:Ljava/lang/Object;
+    :cond_0
+    div-int/lit8 v1, p1, 0x8
 
-    check-cast v0, Lcom/google/android/gms/internal/ads/a;
+    const/4 v2, 0x0
 
-    iget-object v1, p0, Lj3/c21;->h:Ljava/lang/Object;
+    :goto_0
+    const/16 v3, 0xff
 
-    check-cast v1, Landroid/graphics/Bitmap;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    if-ge v0, v1, :cond_3
 
     .line 2
-    sget-object v2, Lj3/lq0;->b:Lj3/lq0;
+    iget v4, p0, Lj3/c21;->c:I
+
+    add-int/lit8 v4, v4, 0x1
+
+    invoke-virtual {p0, v4}, Lj3/c21;->c(I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_1
+
+    iget v4, p0, Lj3/c21;->c:I
+
+    add-int/lit8 v4, v4, 0x2
+
+    goto :goto_1
+
+    :cond_1
+    iget v4, p0, Lj3/c21;->c:I
+
+    add-int/lit8 v4, v4, 0x1
 
     .line 3
-    new-instance v2, Lj3/rq0;
-
-    invoke-direct {v2}, Lj3/rq0;-><init>()V
-
-    .line 4
-    sget-object v3, Landroid/graphics/Bitmap$CompressFormat;->PNG:Landroid/graphics/Bitmap$CompressFormat;
-
-    const/4 v4, 0x0
-
-    invoke-virtual {v1, v3, v4, v2}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
-
-    .line 5
-    iget-object v1, v0, Lcom/google/android/gms/internal/ads/a;->j:Ljava/lang/Object;
-
-    monitor-enter v1
-
-    .line 6
-    :try_start_0
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/a;->a:Lcom/google/android/gms/internal/ads/u6$a;
-
-    .line 7
-    invoke-static {}, Lcom/google/android/gms/internal/ads/u6$f;->A()Lcom/google/android/gms/internal/ads/u6$f$a;
-
-    move-result-object v3
-
-    .line 8
-    invoke-virtual {v2}, Lj3/rq0;->a()Lj3/lq0;
-
-    move-result-object v2
-
-    .line 9
-    iget-boolean v5, v3, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
-
-    if-eqz v5, :cond_0
-
-    .line 10
-    invoke-virtual {v3}, Lcom/google/android/gms/internal/ads/q6$b;->m()V
-
-    .line 11
-    iput-boolean v4, v3, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
-
-    .line 12
-    :cond_0
-    iget-object v5, v3, Lcom/google/android/gms/internal/ads/q6$b;->b:Lcom/google/android/gms/internal/ads/q6;
-
-    check-cast v5, Lcom/google/android/gms/internal/ads/u6$f;
-
-    invoke-static {v5, v2}, Lcom/google/android/gms/internal/ads/u6$f;->y(Lcom/google/android/gms/internal/ads/u6$f;Lj3/lq0;)V
-
-    const-string v2, "image/png"
-
-    .line 13
-    iget-boolean v5, v3, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
-
-    if-eqz v5, :cond_1
-
-    .line 14
-    invoke-virtual {v3}, Lcom/google/android/gms/internal/ads/q6$b;->m()V
-
-    .line 15
-    iput-boolean v4, v3, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
-
-    .line 16
-    :cond_1
-    iget-object v5, v3, Lcom/google/android/gms/internal/ads/q6$b;->b:Lcom/google/android/gms/internal/ads/q6;
-
-    check-cast v5, Lcom/google/android/gms/internal/ads/u6$f;
-
-    invoke-static {v5, v2}, Lcom/google/android/gms/internal/ads/u6$f;->z(Lcom/google/android/gms/internal/ads/u6$f;Ljava/lang/String;)V
-
-    .line 17
-    sget-object v2, Lcom/google/android/gms/internal/ads/u6$f$b;->zziou:Lcom/google/android/gms/internal/ads/u6$f$b;
-
-    .line 18
-    iget-boolean v5, v3, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
+    :goto_1
+    iget v5, p0, Lj3/c21;->d:I
 
     if-eqz v5, :cond_2
 
-    .line 19
-    invoke-virtual {v3}, Lcom/google/android/gms/internal/ads/q6$b;->m()V
+    .line 4
+    iget-object v6, p0, Lj3/c21;->a:[B
 
-    .line 20
-    iput-boolean v4, v3, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
+    iget v7, p0, Lj3/c21;->c:I
 
-    .line 21
+    aget-byte v7, v6, v7
+
+    and-int/2addr v7, v3
+
+    shl-int/2addr v7, v5
+
+    aget-byte v6, v6, v4
+
+    and-int/2addr v6, v3
+
+    rsub-int/lit8 v5, v5, 0x8
+
+    ushr-int v5, v6, v5
+
+    or-int/2addr v5, v7
+
+    goto :goto_2
+
+    .line 5
     :cond_2
-    iget-object v5, v3, Lcom/google/android/gms/internal/ads/q6$b;->b:Lcom/google/android/gms/internal/ads/q6;
+    iget-object v5, p0, Lj3/c21;->a:[B
 
-    check-cast v5, Lcom/google/android/gms/internal/ads/u6$f;
+    iget v6, p0, Lj3/c21;->c:I
 
-    invoke-static {v5, v2}, Lcom/google/android/gms/internal/ads/u6$f;->x(Lcom/google/android/gms/internal/ads/u6$f;Lcom/google/android/gms/internal/ads/u6$f$b;)V
+    aget-byte v5, v5, v6
 
-    .line 22
-    invoke-virtual {v3}, Lcom/google/android/gms/internal/ads/q6$b;->i()Lj3/os0;
+    :goto_2
+    add-int/lit8 p1, p1, -0x8
 
-    move-result-object v2
+    and-int/2addr v3, v5
 
-    check-cast v2, Lcom/google/android/gms/internal/ads/q6;
+    shl-int/2addr v3, p1
 
-    check-cast v2, Lcom/google/android/gms/internal/ads/u6$f;
+    or-int/2addr v2, v3
 
-    .line 23
-    iget-boolean v3, v0, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
+    .line 6
+    iput v4, p0, Lj3/c21;->c:I
 
-    if-eqz v3, :cond_3
+    add-int/lit8 v0, v0, 0x1
 
-    .line 24
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/q6$b;->m()V
+    goto :goto_0
 
-    .line 25
-    iput-boolean v4, v0, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
-
-    .line 26
     :cond_3
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/q6$b;->b:Lcom/google/android/gms/internal/ads/q6;
+    if-lez p1, :cond_7
 
-    check-cast v0, Lcom/google/android/gms/internal/ads/u6;
+    .line 7
+    iget v0, p0, Lj3/c21;->d:I
 
-    invoke-static {v0, v2}, Lcom/google/android/gms/internal/ads/u6;->A(Lcom/google/android/gms/internal/ads/u6;Lcom/google/android/gms/internal/ads/u6$f;)V
+    add-int/2addr v0, p1
 
-    .line 27
-    monitor-exit v1
+    const/16 v1, 0x8
 
-    return-void
+    rsub-int/lit8 p1, p1, 0x8
 
-    :catchall_0
-    move-exception v0
+    shr-int p1, v3, p1
 
-    monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    int-to-byte p1, p1
 
-    throw v0
+    .line 8
+    iget v4, p0, Lj3/c21;->c:I
 
-    .line 28
-    :pswitch_1
-    iget-object v0, p0, Lj3/c21;->b:Ljava/lang/Object;
+    add-int/lit8 v4, v4, 0x1
 
-    check-cast v0, Lj3/l4;
+    invoke-virtual {p0, v4}, Lj3/c21;->c(I)Z
 
-    iget-object v1, p0, Lj3/c21;->h:Ljava/lang/Object;
+    move-result v4
 
-    check-cast v1, Ljava/lang/String;
+    if-eqz v4, :cond_4
 
-    .line 29
-    iget-object v0, v0, Lj3/l4;->a:Lj3/ch;
+    iget v4, p0, Lj3/c21;->c:I
 
-    invoke-interface {v0, v1}, Lj3/p4;->f(Ljava/lang/String;)V
+    add-int/lit8 v4, v4, 0x2
 
-    return-void
+    goto :goto_3
 
-    .line 30
-    :pswitch_2
-    iget-object v0, p0, Lj3/c21;->b:Ljava/lang/Object;
+    :cond_4
+    iget v4, p0, Lj3/c21;->c:I
 
-    check-cast v0, Lj3/lx0;
+    add-int/lit8 v4, v4, 0x1
 
-    .line 31
-    monitor-enter v0
+    :goto_3
+    if-le v0, v1, :cond_5
 
-    .line 32
-    monitor-exit v0
+    .line 9
+    iget-object v5, p0, Lj3/c21;->a:[B
 
-    .line 33
-    iget-object v0, p0, Lj3/c21;->h:Ljava/lang/Object;
+    iget v6, p0, Lj3/c21;->c:I
 
-    check-cast v0, Lj3/x11;
+    aget-byte v6, v5, v6
 
-    .line 34
-    iget-object v0, v0, Lj3/x11;->b:Lj3/tf;
+    and-int/2addr v6, v3
 
-    .line 35
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    add-int/lit8 v7, v0, -0x8
 
-    return-void
+    shl-int/2addr v6, v7
 
-    .line 36
+    aget-byte v5, v5, v4
+
+    and-int/2addr v3, v5
+
+    rsub-int/lit8 v5, v0, 0x10
+
+    shr-int/2addr v3, v5
+
+    or-int/2addr v3, v6
+
+    and-int/2addr p1, v3
+
+    or-int/2addr p1, v2
+
+    .line 10
+    iput v4, p0, Lj3/c21;->c:I
+
+    goto :goto_4
+
+    .line 11
+    :cond_5
+    iget-object v5, p0, Lj3/c21;->a:[B
+
+    iget v6, p0, Lj3/c21;->c:I
+
+    aget-byte v5, v5, v6
+
+    and-int/2addr v3, v5
+
+    rsub-int/lit8 v5, v0, 0x8
+
+    shr-int/2addr v3, v5
+
+    and-int/2addr p1, v3
+
+    or-int/2addr p1, v2
+
+    if-ne v0, v1, :cond_6
+
+    .line 12
+    iput v4, p0, Lj3/c21;->c:I
+
+    :cond_6
+    :goto_4
+    move v2, p1
+
+    .line 13
+    rem-int/2addr v0, v1
+
+    iput v0, p0, Lj3/c21;->d:I
+
+    .line 14
+    :cond_7
+    invoke-virtual {p0}, Lj3/c21;->g()V
+
+    return v2
+.end method
+
+.method public final b(I)V
+    .locals 3
+
+    .line 1
+    iget v0, p0, Lj3/c21;->c:I
+
+    .line 2
+    div-int/lit8 v1, p1, 0x8
+
+    add-int/2addr v1, v0
+
+    iput v1, p0, Lj3/c21;->c:I
+
+    .line 3
+    iget v2, p0, Lj3/c21;->d:I
+
+    rem-int/lit8 p1, p1, 0x8
+
+    add-int/2addr p1, v2
+
+    iput p1, p0, Lj3/c21;->d:I
+
+    const/4 v2, 0x7
+
+    if-le p1, v2, :cond_0
+
+    add-int/lit8 v1, v1, 0x1
+
+    .line 4
+    iput v1, p0, Lj3/c21;->c:I
+
+    add-int/lit8 p1, p1, -0x8
+
+    .line 5
+    iput p1, p0, Lj3/c21;->d:I
+
+    :cond_0
     :goto_0
-    iget-object v0, p0, Lj3/c21;->b:Ljava/lang/Object;
+    add-int/lit8 v0, v0, 0x1
 
-    check-cast v0, Lj3/ch;
+    .line 6
+    iget p1, p0, Lj3/c21;->c:I
 
-    iget-object v1, p0, Lj3/c21;->h:Ljava/lang/Object;
+    if-gt v0, p1, :cond_1
 
-    check-cast v1, Lorg/json/JSONObject;
+    .line 7
+    invoke-virtual {p0, v0}, Lj3/c21;->c(I)Z
 
-    const-string v2, "AFMA_updateActiveView"
+    move-result p1
 
-    .line 37
-    invoke-interface {v0, v2, v1}, Lj3/p4;->U(Ljava/lang/String;Lorg/json/JSONObject;)V
+    if-eqz p1, :cond_0
+
+    .line 8
+    iget p1, p0, Lj3/c21;->c:I
+
+    add-int/lit8 p1, p1, 0x1
+
+    iput p1, p0, Lj3/c21;->c:I
+
+    add-int/lit8 v0, v0, 0x2
+
+    goto :goto_0
+
+    .line 9
+    :cond_1
+    invoke-virtual {p0}, Lj3/c21;->g()V
 
     return-void
+.end method
 
-    nop
+.method public final c(I)Z
+    .locals 3
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    const/4 v0, 0x2
+
+    if-gt v0, p1, :cond_0
+
+    .line 1
+    iget v0, p0, Lj3/c21;->b:I
+
+    if-ge p1, v0, :cond_0
+
+    iget-object v0, p0, Lj3/c21;->a:[B
+
+    aget-byte v1, v0, p1
+
+    const/4 v2, 0x3
+
+    if-ne v1, v2, :cond_0
+
+    add-int/lit8 v1, p1, -0x2
+
+    aget-byte v1, v0, v1
+
+    if-nez v1, :cond_0
+
+    const/4 v1, 0x1
+
+    sub-int/2addr p1, v1
+
+    aget-byte p1, v0, p1
+
+    if-nez p1, :cond_0
+
+    return v1
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public final d()Z
+    .locals 2
+
+    const/4 v0, 0x1
+
+    .line 1
+    invoke-virtual {p0, v0}, Lj3/c21;->a(I)I
+
+    move-result v1
+
+    if-ne v1, v0, :cond_0
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final e()I
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Lj3/c21;->f()I
+
+    move-result v0
+
+    .line 2
+    rem-int/lit8 v1, v0, 0x2
+
+    const/4 v2, 0x1
+
+    if-nez v1, :cond_0
+
+    const/4 v1, -0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x1
+
+    :goto_0
+    add-int/2addr v0, v2
+
+    div-int/lit8 v0, v0, 0x2
+
+    mul-int v0, v0, v1
+
+    return v0
+.end method
+
+.method public final f()I
+    .locals 4
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    .line 1
+    :goto_0
+    invoke-virtual {p0}, Lj3/c21;->d()Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v2, 0x1
+
+    shl-int v3, v2, v1
+
+    sub-int/2addr v3, v2
+
+    if-lez v1, :cond_1
+
+    .line 2
+    invoke-virtual {p0, v1}, Lj3/c21;->a(I)I
+
+    move-result v0
+
+    :cond_1
+    add-int/2addr v3, v0
+
+    return v3
+.end method
+
+.method public final g()V
+    .locals 3
+
+    .line 1
+    iget v0, p0, Lj3/c21;->c:I
+
+    if-ltz v0, :cond_1
+
+    iget v1, p0, Lj3/c21;->d:I
+
+    if-ltz v1, :cond_1
+
+    const/16 v2, 0x8
+
+    if-ge v1, v2, :cond_1
+
+    iget v2, p0, Lj3/c21;->b:I
+
+    if-lt v0, v2, :cond_0
+
+    if-ne v0, v2, :cond_1
+
+    if-nez v1, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    :goto_0
+    invoke-static {v0}, Lj3/cj;->e(Z)V
+
+    return-void
 .end method

@@ -344,9 +344,9 @@
     if-eqz v7, :cond_2
 
     .line 10
-    new-instance v7, Lcom/helpshift/util/v;
+    new-instance v7, Lcom/helpshift/util/t;
 
-    invoke-direct {v7}, Lcom/helpshift/util/v;-><init>()V
+    invoke-direct {v7}, Lcom/helpshift/util/t;-><init>()V
 
     .line 11
     invoke-virtual {v3, v1}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
@@ -496,13 +496,13 @@
 
     .line 20
     :cond_6
-    iput-object v14, v7, Lcom/helpshift/util/v;->a:Ljava/lang/String;
+    iput-object v14, v7, Lcom/helpshift/util/t;->a:Ljava/lang/String;
 
     .line 21
-    iput v5, v7, Lcom/helpshift/util/v;->b:I
+    iput v5, v7, Lcom/helpshift/util/t;->b:I
 
     .line 22
-    iput v6, v7, Lcom/helpshift/util/v;->c:I
+    iput v6, v7, Lcom/helpshift/util/t;->c:I
 
     .line 23
     invoke-virtual {v2, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -540,9 +540,9 @@
     move-result v6
 
     .line 28
-    new-instance v7, Lcom/helpshift/util/v;
+    new-instance v7, Lcom/helpshift/util/t;
 
-    invoke-direct {v7}, Lcom/helpshift/util/v;-><init>()V
+    invoke-direct {v7}, Lcom/helpshift/util/t;-><init>()V
 
     .line 29
     invoke-virtual {v3, v1}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
@@ -672,13 +672,13 @@
 
     .line 38
     :cond_b
-    iput-object v14, v7, Lcom/helpshift/util/v;->a:Ljava/lang/String;
+    iput-object v14, v7, Lcom/helpshift/util/t;->a:Ljava/lang/String;
 
     .line 39
-    iput v5, v7, Lcom/helpshift/util/v;->b:I
+    iput v5, v7, Lcom/helpshift/util/t;->b:I
 
     .line 40
-    iput v6, v7, Lcom/helpshift/util/v;->c:I
+    iput v6, v7, Lcom/helpshift/util/t;->c:I
 
     .line 41
     invoke-virtual {v2, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -722,32 +722,32 @@
     if-lt v6, v7, :cond_d
 
     .line 47
-    new-instance v6, Lcom/helpshift/util/v;
+    new-instance v6, Lcom/helpshift/util/t;
 
-    invoke-direct {v6}, Lcom/helpshift/util/v;-><init>()V
+    invoke-direct {v6}, Lcom/helpshift/util/t;-><init>()V
 
     const-string v7, "tel:"
 
     .line 48
-    invoke-static {v7, v5}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v7, v5}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    iput-object v5, v6, Lcom/helpshift/util/v;->a:Ljava/lang/String;
+    iput-object v5, v6, Lcom/helpshift/util/t;->a:Ljava/lang/String;
 
     .line 49
     invoke-virtual {v3}, Ljava/util/regex/Matcher;->start()I
 
     move-result v5
 
-    iput v5, v6, Lcom/helpshift/util/v;->b:I
+    iput v5, v6, Lcom/helpshift/util/t;->b:I
 
     .line 50
     invoke-virtual {v3}, Ljava/util/regex/Matcher;->end()I
 
     move-result v5
 
-    iput v5, v6, Lcom/helpshift/util/v;->c:I
+    iput v5, v6, Lcom/helpshift/util/t;->c:I
 
     .line 51
     invoke-virtual {v2, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -782,7 +782,7 @@
 
     move-result-object v8
 
-    check-cast v8, Lcom/helpshift/util/v;
+    check-cast v8, Lcom/helpshift/util/t;
 
     add-int/lit8 v9, v5, 0x1
 
@@ -791,21 +791,21 @@
 
     move-result-object v10
 
-    check-cast v10, Lcom/helpshift/util/v;
+    check-cast v10, Lcom/helpshift/util/t;
 
     .line 57
-    iget v11, v8, Lcom/helpshift/util/v;->b:I
+    iget v11, v8, Lcom/helpshift/util/t;->b:I
 
-    iget v12, v10, Lcom/helpshift/util/v;->b:I
+    iget v12, v10, Lcom/helpshift/util/t;->b:I
 
     if-gt v11, v12, :cond_12
 
-    iget v8, v8, Lcom/helpshift/util/v;->c:I
+    iget v8, v8, Lcom/helpshift/util/t;->c:I
 
     if-le v8, v12, :cond_12
 
     .line 58
-    iget v10, v10, Lcom/helpshift/util/v;->c:I
+    iget v10, v10, Lcom/helpshift/util/t;->c:I
 
     if-gt v10, v8, :cond_f
 
@@ -875,10 +875,10 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/helpshift/util/v;
+    check-cast v2, Lcom/helpshift/util/t;
 
     .line 62
-    iget-object v3, v2, Lcom/helpshift/util/v;->a:Ljava/lang/String;
+    iget-object v3, v2, Lcom/helpshift/util/t;->a:Ljava/lang/String;
 
     .line 63
     new-instance v5, Lcom/helpshift/util/HSLinkify$3;
@@ -888,9 +888,9 @@
     invoke-direct {v5, v3, v6, v3}, Lcom/helpshift/util/HSLinkify$3;-><init>(Ljava/lang/String;Lcom/helpshift/util/m$c;Ljava/lang/String;)V
 
     .line 64
-    iget v3, v2, Lcom/helpshift/util/v;->b:I
+    iget v3, v2, Lcom/helpshift/util/t;->b:I
 
-    iget v2, v2, Lcom/helpshift/util/v;->c:I
+    iget v2, v2, Lcom/helpshift/util/t;->c:I
 
     const/16 v7, 0x21
 

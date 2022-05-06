@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method public final X3(Landroid/os/Bundle;Landroid/os/Bundle;)V
+.method public final Y3(Landroid/os/Bundle;Landroid/os/Bundle;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -40,7 +40,7 @@
     .end annotation
 
     .line 1
-    iget-object p2, p0, Lcom/google/android/play/core/assetpacks/j;->b:Lcom/google/android/play/core/assetpacks/o;
+    iget-object p2, p0, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
 
     .line 2
     iget-object p2, p2, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/l;
@@ -71,7 +71,7 @@
 
     check-cast p1, Landroid/os/ParcelFileDescriptor;
 
-    iget-object p2, p0, Lcom/google/android/play/core/assetpacks/j;->a:Lcom/google/android/play/core/tasks/i;
+    iget-object p2, p0, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/tasks/i;
 
     invoke-virtual {p2, p1}, Lcom/google/android/play/core/tasks/i;->b(Ljava/lang/Object;)V
 

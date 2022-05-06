@@ -1,11 +1,11 @@
 .class public Ld9/i$c;
-.super Ly7/g;
+.super Lz7/g;
 .source "ConversationalVM.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ld9/i;->t(Z)V
+    value = Ld9/i;->u(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -29,7 +29,7 @@
 
     iput-boolean p2, p0, Ld9/i$c;->b:Z
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -42,16 +42,16 @@
     .line 1
     iget-object v0, p0, Ld9/i$c;->c:Ld9/i;
 
-    iget-object v0, v0, Ld9/i;->n:Ll8/k;
+    iget-object v0, v0, Ld9/i;->n:Lm8/m;
 
     if-eqz v0, :cond_0
 
     .line 2
     iget-boolean v1, p0, Ld9/i$c;->b:Z
 
-    check-cast v0, Lqa/e0;
+    check-cast v0, Loa/e0;
 
-    invoke-virtual {v0, v1}, Lqa/e0;->g(Z)V
+    invoke-virtual {v0, v1}, Loa/e0;->g(Z)V
 
     :cond_0
     return-void

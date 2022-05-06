@@ -14,13 +14,13 @@
 
 
 # static fields
-.field public static final CREATOR:Ls2/h;
+.field public static final CREATOR:Ls2/i;
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+.field public final g:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
-.field public final b:Lp2/c;
+.field public final h:Lp2/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lp2/c<",
@@ -35,11 +35,11 @@
     .locals 1
 
     .line 1
-    new-instance v0, Ls2/h;
+    new-instance v0, Ls2/i;
 
-    invoke-direct {v0}, Ls2/h;-><init>()V
+    invoke-direct {v0}, Ls2/i;-><init>()V
 
-    sput-object v0, Lcom/google/android/gms/drive/query/internal/zzp;->CREATOR:Ls2/h;
+    sput-object v0, Lcom/google/android/gms/drive/query/internal/zzp;->CREATOR:Ls2/i;
 
     return-void
 .end method
@@ -51,41 +51,41 @@
     invoke-direct {p0}, Lcom/google/android/gms/drive/query/internal/zza;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzp;->a:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+    iput-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzp;->g:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
     .line 3
-    invoke-static {p1}, Lab/b;->f(Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;)Lp2/a;
+    invoke-static {p1}, Ls2/f;->k(Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;)Lp2/a;
 
     move-result-object p1
 
     check-cast p1, Lp2/c;
 
-    iput-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzp;->b:Lp2/c;
+    iput-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzp;->h:Lp2/c;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final Y1(Li1/o;)Ljava/lang/Object;
+.method public final B1(Lj3/y1;)Ljava/lang/Object;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
             "Ljava/lang/Object;",
             ">(",
-            "Li1/o;",
+            "Lj3/y1;",
             ")TF;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/drive/query/internal/zzp;->b:Lp2/c;
+    iget-object v0, p0, Lcom/google/android/gms/drive/query/internal/zzp;->h:Lp2/c;
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/drive/query/internal/zzp;->a:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+    iget-object v1, p0, Lcom/google/android/gms/drive/query/internal/zzp;->g:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
-    invoke-virtual {v1, v0}, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->x2(Lp2/a;)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->z2(Lp2/a;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -140,7 +140,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/drive/query/internal/zzp;->a:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+    iget-object v2, p0, Lcom/google/android/gms/drive/query/internal/zzp;->g:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
     const/4 v3, 0x0
 

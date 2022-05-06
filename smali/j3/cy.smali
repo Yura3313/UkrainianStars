@@ -1,45 +1,31 @@
-.class public final synthetic Lj3/cy;
+.class public final Lj3/cy;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lj3/x2;
-
 
 # instance fields
-.field public final a:Lj3/yx;
+.field public final a:Ljava/util/concurrent/Executor;
+
+.field public final b:Lj3/mm;
+
+.field public final c:Lj3/xt;
 
 
 # direct methods
-.method public constructor <init>(Lj3/yx;)V
+.method public constructor <init>(Ljava/util/concurrent/Executor;Lj3/mm;Lj3/xt;)V
     .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lj3/cy;->a:Lj3/yx;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final b(Ljava/lang/Object;Ljava/util/Map;)V
-    .locals 0
-
-    iget-object p2, p0, Lj3/cy;->a:Lj3/yx;
-
-    check-cast p1, Lj3/ch;
 
     .line 1
-    iget-object p1, p2, Lj3/yx;->b:Lj3/km;
-
-    const/4 p2, 0x1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-boolean p2, p1, Lj3/km;->j:Z
+    iput-object p1, p0, Lj3/cy;->a:Ljava/util/concurrent/Executor;
 
     .line 3
-    invoke-virtual {p1}, Lj3/km;->f()V
+    iput-object p3, p0, Lj3/cy;->c:Lj3/xt;
+
+    .line 4
+    iput-object p2, p0, Lj3/cy;->b:Lj3/mm;
 
     return-void
 .end method

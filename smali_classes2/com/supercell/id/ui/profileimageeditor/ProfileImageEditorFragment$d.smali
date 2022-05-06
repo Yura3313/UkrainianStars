@@ -20,21 +20,21 @@
     value = {
         "Lle/j;",
         "Lke/a<",
-        "Lwc/d;",
+        "Ltc/d;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$d;->a:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$d;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
     const/4 p1, 0x0
 
@@ -49,11 +49,11 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lwc/d;
+    new-instance v0, Ltc/d;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$d;->a:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    iget-object v1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$d;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
-    invoke-direct {v0, v1, v1}, Lwc/d;-><init>(Landroidx/fragment/app/Fragment;Lwc/a;)V
+    invoke-direct {v0, v1, v1}, Ltc/d;-><init>(Landroidx/fragment/app/Fragment;Ltc/a;)V
 
     return-object v0
 .end method

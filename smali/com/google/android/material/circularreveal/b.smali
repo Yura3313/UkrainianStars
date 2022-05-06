@@ -586,7 +586,7 @@
     const/4 v3, 0x0
 
     .line 3
-    invoke-static/range {v0 .. v5}, Lg9/b;->c(FFFFFF)F
+    invoke-static/range {v0 .. v5}, Lj3/u6;->c(FFFFFF)F
 
     move-result p1
 

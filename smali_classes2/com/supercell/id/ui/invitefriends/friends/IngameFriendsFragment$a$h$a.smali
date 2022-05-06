@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;
+.field public final synthetic g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h$a;->a:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;
+    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h$a;->g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,12 +38,12 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h$a;->a:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;
+    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h$a;->g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;
 
-    iget-object v0, v0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;->a:Lwd/k1$a;
+    iget-object v0, v0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;->a:Lvd/k1$a;
 
     .line 2
-    iget-object v0, v0, Lwd/k1$a;->A:Landroid/view/View;
+    iget-object v0, v0, Lvd/k1$a;->B:Landroid/view/View;
 
     .line 3
     sget v1, Lcom/supercell/id/R$id;->friendFbExclamationMark:I
@@ -56,14 +56,14 @@
 
     const-string v1, "containerView.friendFbExclamationMark"
 
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h$a;->a:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;
+    iget-object v1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h$a;->g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;
 
-    iget-object v1, v1, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;->a:Lwd/k1$a;
+    iget-object v1, v1, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;->a:Lvd/k1$a;
 
     .line 4
-    iget-object v1, v1, Lwd/k1$a;->A:Landroid/view/View;
+    iget-object v1, v1, Lvd/k1$a;->B:Landroid/view/View;
 
     .line 5
     sget v2, Lcom/supercell/id/R$id;->friendFbIcon:I
@@ -76,7 +76,7 @@
 
     const-string v2, "containerView.friendFbIcon"
 
-    invoke-static {v1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v2, 0x0
 

@@ -18,6 +18,14 @@ TID_QUEST_DESC_3,BERIKAN <AMOUNT> KERUSAKAN
 TID_QUEST_DESC_4,PULIHKAN <AMOUNT> KESEHATAN
 TID_QUEST_DESC_5,GUNAKAN \qMAIN LAGI\q <NUM> KALI
 TID_QUEST_DESC_6,MAIN <NUM> LAGA DALAM TIM
+TID_QUEST_DESC_7_MODE_0,BAWA <LIMIT> PERMATA ATAU LEBIH BANYAK SELAMA <AMOUNT> DETIK
+TID_QUEST_DESC_7_MODE_2,BERIKAN <AMOUNT> POIN KERUSAKAN PADA BRANKAS
+TID_QUEST_DESC_7_MODE_3,AKHIRI <AMOUNT> LAGA DENGAN <LIMIT> BINTANG ATAU LEBIH BANYAK
+TID_QUEST_DESC_7_MODE_5,OPER BOLA <AMOUNT> KALI
+TID_QUEST_DESC_7_MODE_6,KUMPULKAN <AMOUNT> KUBUS KEKUATAN
+TID_QUEST_DESC_7_MODE_9,KUMPULKAN <AMOUNT> KUBUS KEKUATAN SAAT KEDUA PEMAIN MASIH AKTIF
+TID_QUEST_DESC_7_MODE_17,PERTAHANKAN ZONA SELAMA <AMOUNT> DETIK
+TID_QUEST_DESC_7_MODE_20,BERTAHAN HIDUP SELAMA <AMOUNT> RONDE
 TID_QUEST_DESC_1_LEVELED,SELESAIKAN LEVEL
 TID_QUEST_DESC_1_BIG_GAME,MENANGKAN <AMOUNT> LAGA
 TID_QUEST_DESC_1_BIG_GAME_SINGLE,MENANGKAN <AMOUNT> LAGA
@@ -44,7 +52,7 @@ TID_PURCHASE_BRAWL_PASS_PROGRESS_INFO,Beli <NUM> Token dan maju ke Tingkat berik
 TID_PURCHASE_BRAWL_PASS_TITLE,DAPATKAN BRAWL PASS!
 TID_PURCHASE_BRAWL_PASS_TITLE_PLAIN,BRAWL PASS
 TID_PURCHASE_BRAWL_PASS_TITLE_BUNDLE,PAKET BRAWL PASS
-TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,Buka Hadiah Brawl Pass serta Tugas Ekstra
+TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,"Raih hadiah Brawl Pass, Tugas ekstra, dan +2 acak ulang Tugas per minggu"
 TID_PURCHASE_BRAWL_PASS_INFO_BUNDLE,BRAWL PASS + <NUM> TINGKATAN
 TID_BRAWL_PASS_CANNOT_PURCHASE_BRAWL_PASS_FOR_PAST_SEASON,Brawl Pass musim yang lalu tidak dapat dibeli
 TID_BRAWL_PASS_CANNOT_PURCHASE_NO_SEASON_FOUND,Brawl Pass musim ini tidak ditemukan. Coba lagi nanti.
@@ -763,6 +771,8 @@ TID_GATCHA_SCREEN_HERO_POWER_LEVEL_UP_UNLOCKED,Peningkatan terbuka!
 TID_GATCHA_SCREEN_HERO_POWER_LEVEL_UP_AVAILABLE,Peningkatan tersedia!
 TID_GATCHA_SCREEN_VANITY_ITEM_DROP_TITLE_52,PIN
 TID_GATCHA_SCREEN_VANITY_ITEM_DROP_DESC_52,Ekspresikan dirimu dengan Pin yang dapat dikoleksi!
+TID_GATCHA_SCREEN_VANITY_ITEM_DROP_TITLE_68,CAT
+TID_GATCHA_SCREEN_VANITY_ITEM_DROP_DESC_68,Ekspresikan dirimu dengan Cat yang dapat dikoleksi!
 TID_GATCHA_SCREEN_BOX_COUNTER_BONUS,BONUS
 TID_GATCHA_SCREEN_STAR_POINT_DROP_TITLE,POIN BINTANG
 TID_GATCHA_SCREEN_STAR_POINT_DROP_DESC,Gunakan Poin Bintang untuk membeli barang spesial di Toko.
@@ -1303,6 +1313,10 @@ TID_SHOP_OFFER_TITLE_21,PAKET PIN
 TID_SHOP_OFFER_TITLE_22,PAKET PIN UNTUK
 TID_SHOP_OFFER_TITLE_23,PIN <RARITY>
 TID_SHOP_OFFER_TITLE_27,PAKET PIN <RARITY>
+TID_SHOP_OFFER_TITLE_35,CAT BARU
+TID_SHOP_OFFER_TITLE_36,CAT
+TID_SHOP_OFFER_INFO_36,Ekspresikan dirimu dalam laga dengan Cat!
+TID_SHOP_OFFER_TITLE_37,SLOT CAT EKSTRA
 TID_EMOTE_RARITY_0,UMUM
 TID_EMOTE_RARITY_1,LANGKA
 TID_EMOTE_RARITY_2,EPIK
@@ -1347,6 +1361,8 @@ TID_SHOP_OFFER_INFO_30,Buka Jagoan baru yang ditingkatkan ke level <LVL>!
 TID_SHOP_OFFER_INFO_31,Buka Jagoan <RARITY> acak yang ditingkatkan ke level <LVL>!
 TID_SHOP_OFFER_INFO_32,Gunakan Token Buster untuk membuat dan meningkatkan Buster!
 TID_SHOP_OFFER_INFO_33,Gunakan Fragmen untuk membuat dan meningkatkan Buster!
+TID_SHOP_OFFER_INFO_35,Gunakan Cat untuk mendekorasi level!
+TID_SHOP_OFFER_INFO_37,Satu slot Cat ekstra!
 TID_SHOP_OFFER_HOR_NEW,BARU
 TID_SHOP_OFFER_HOR_RARITY,<c<COLOR>><NAME></c>
 TID_SHOP_OFFER_HOR_BRAWLER,JAGOAN
@@ -3199,6 +3215,7 @@ TID_MRP_AGENT_SKIN,AGEN C
 TID_MRP_AGENT_SKIN_SHOP,AGEN C
 TID_HERO_INFO_ATTACK_DAMAGE_MULTIPLIER,<AMMO> x <DAMAGE>
 TID_HERO_INFO_DURATION,Durasi
+TID_HERO_INFO_CHANGE_CHARACTER_DURATION,Waktu transformasi
 TID_HERO_INFO_DAMAGE_REDUCTION,Pengurangan kerusakan
 TID_HERO_INFO_LIFE_STEAL,Kesembuhan dari kerusakan
 TID_SPAWN_BUILDING_HEALTH,Kesehatan basis
@@ -3604,6 +3621,7 @@ TID_BRAWL_PASS_TAB_PAST_REWARDS,MUSIM LALU
 TID_BRAWL_PASS_PREMIUM,BRAWL PASS
 TID_BRAWL_PASS_FREE,GRATIS
 TID_BRAWL_PASS_BUY,AKTIFKAN
+TID_BRAWL_PASS_UNLOCK_ITEM_AT_TIER,BUKA <ITEM> DI TINGKAT <NUM>
 TID_BRAWL_PASS_SEASON_HEADER,MUSIM BRAWL PASS
 TID_QUEST_NEW_BATCH_IN,Tugas baru akan terbuka dalam:
 TID_QUEST_NEW_DAILY_IN,Tugas Harian akan disegarkan dalam:
@@ -3613,8 +3631,10 @@ TID_BRAWL_PASS_TIER_SHORTCUT,TINGKAT <NUM>: <REWARD>
 TID_BRAWL_PASS_TAIL_TITLE,Bonus Kotak Besar!
 TID_BRAWL_PASS_TAIL_INFO,"Setelah menyelesaikan Brawl Pass, kamu akan mendapat Kotak Besar untuk setiap <NUM> Token yang diraih!"
 TID_BRAWL_PASS_PURCHASE_OR,ATAU
-TID_EMOTES_POPUP_TITLE,PIN LAGA
-TID_EMOTES_POPUP_TEXT,Pilih Pin aktif saat berlaga!
+TID_EMOTES_POPUP_TITLE,PIN
+TID_EMOTES_POPUP_TEXT,Pilih Pin untuk digunakan dalam Laga.
+TID_SPRAYS_POPUP_TITLE,CAT
+TID_SPRAYS_POPUP_TEXT,Pilih Cat untuk digunakan dalam Laga.
 TID_BRAWL_PASS_INFO_TITLE_0,KONTEN BRAWL PASS
 TID_BRAWL_PASS_INFO_TEXT_0,"Raih segudang hadiah ekstra, di antaranya:\n\nGALE, Jagoan baru dengan tingkat kelangkaan Kromatik!\n\nKostum Eksklusif: GALE PEDAGANG!\n\nPin Eksklusif serta Pin keren lainnya untuk GALE\n\n<NUM> Kotak Mega!\n\nKoin dan Poin Kekuatan!\n\n\nDapatkan Tugas ekstra untuk menyelesaikan Brawl Pass dengan cepat!"
 TID_EVIL_GENE_SKIN,GENE JAHAT
@@ -3693,6 +3713,7 @@ TID_REGION_CHINA,Tiongkok
 TID_QUALIFIED_TITLE_CHINA,线上资格赛已解锁！
 TID_QUALIFIED_INFO_CHINA,您已成功完成全球锦标赛挑战，真棒！\n您可以前往<cFFE400><URL></c>，通过引导完成赛事报名，继续荒野乱斗全球锦标赛之旅！
 TID_CHINA_REAL_NAME_REGULATION,Terdaftar dengan nama asli
+TID_CHINA_LOGIN_DESC,本公司积极履行《网络游戏行业防沉迷自律公约》抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》、《关于进一步严格管理切实防止未成年人沉迷网络游戏的通知》，所有网络游戏用户均需使用有效身份信息完成账号实名注册后方可进入游戏，认证为未成年的玩家将受到防沉迷功能限制。沪网文【2018】8544-517号、新出网证（沪）字33号 著作权人：SUPERCELL OY 出版单位：上海游族信息技术有限公司 运营单位：上海游族信息技术有限公司 国新出审【2020】552号 出版物号：ISBN 978-7-498-07472-0
 TID_POWER_LEVELER,SURGE
 TID_POWER_LEVELER_SHORT_DESC,PENYERANG
 TID_POWER_LEVELER_DESC,"Saat keseruan terancam, Surge datang untuk melindungi! Dia akan menghantam lawan dengan minuman energi yang terbelah saat mengenai target. Kekuatan Super miliknya akan meningkatkan statistiknya dalam 3 tahap, tentunya dengan transformasi yang keren juga!"
@@ -3761,10 +3782,21 @@ TID_EMOTE_CATEGORY_4,SLOT 1
 TID_EMOTE_CATEGORY_5,SLOT 2
 TID_EMOTE_CATEGORY_BRAWLER_PINS,PIN <BRAWLER>
 TID_EMOTE_CATEGORY_PLAYER_PINS,PIN PEMAIN
+TID_SPRAY_CATEGORY_BRAWLER,CAT <BRAWLER>
+TID_SPRAY_CATEGORY_SHARED,CAT YANG DIBAGIKAN
+TID_SPRAY_CATEGORY_1,SLOT 1
+TID_SPRAY_CATEGORY_2,SLOT 1
+TID_SPRAY_CATEGORY_3,SLOT 2
+TID_SPRAY_CATEGORY_4,SLOT 3
+TID_SPRAY_CATEGORY_5,SLOT 4
+TID_SPRAY_EQUIP_NOT_OWNED,Kamu belum membuka Cat ini!
+TID_SPRAY_BRAWLER_EQUIP_NOT_OWNED,Temukan Cat ini di Toko!
+TID_SPRAY_SLOT_LOCKED,Slot Cat ini terbuka saat mencapai <NUM> Trofi!
 TID_EDIT_MUTE_EMOTES,Bisukan Pin dalam laga
 TID_ACCESSORY_BLOCKED_INVISIBILITY_ALREADY_ACTIVE,Sudah tak terlihat!
 TID_ACCESSORY_BLOCKED_SHIELD_ALREADY_ACTIVE,Perisai sudah aktif!
 TID_ACCESSORY_BLOCKED_ALREADY_ACTIVE,Gadget sudah aktif!
+TID_ACCESSORY_BLOCKED_ALREADY_MAX_LEVEL,Sudah berada di level maks.!
 TID_SETTINGS_PLAYER_ID,ID Pemain: <ID>
 TID_NAME_COLOR_REQUIRES_BRAWL_PASS,BELI BRAWL PASS untuk mendapatkan nama Kromatik sepanjang musim!
 TID_RANK_COLLECT_PREVIOUS_REWARD_SPECIFIC,Ambil dulu hadiah sebelumnya!
@@ -3968,7 +4000,7 @@ TID_BRAWL_PASS_INFO_TEXT_2,Raih banyak hadiah ekstra seperti:\n\n<BRAWLER> - Jag
 TID_BRAWL_PASS_SEASON_3,SAATNYA LIBURAN
 TID_BRAWL_PASS_INFO_TEXT_3,Raih banyak hadiah ekstra seperti:\n\n<BRAWLER> - Jagoan Kromatik baru!\n\nKOSTUM EKSKLUSIF: <SKIN_1>!\n\nKOSTUM EKSKLUSIF: <SKIN_2>!\n\nPIN EKSKLUSIF KEREN untuk <BRAWLER>\n\n<NUM> KOTAK MEGA!\n\nKOIN dan POIN KEKUATAN EKSTRA!\n\n\nTUGAS EKSTRA untuk membantumu menyelesaikan Brawl Pass lebih cepat!\n\nNAMA KROMATIK EKSKLUSIF sepanjang musim!
 TID_BRAWL_PASS_SEASON_4,ARMADA STARR!
-TID_BRAWL_PASS_INFO_TEXT_GENERIC,Raih banyak hadiah ekstra seperti:\n\n<BRAWLER> - Jagoan Kromatik baru!\n\nKOSTUM EKSKLUSIF: <SKIN_1>!\n\nKOSTUM EKSKLUSIF: <SKIN_2>!\n\nPIN EKSKLUSIF KEREN untuk <BRAWLER>\n\n<NUM> KOTAK MEGA!\n\nKOIN dan POIN KEKUATAN EKSTRA!\n\n\nTUGAS EKSTRA untuk membantumu menyelesaikan Brawl Pass lebih cepat!\n\nNAMA KROMATIK EKSKLUSIF sepanjang musim!
+TID_BRAWL_PASS_INFO_TEXT_GENERIC,Raih banyak hadiah ekstra seperti:\n\n<BRAWLER> - Jagoan Kromatik baru!\n\nKOSTUM EKSKLUSIF BERBATAS WAKTU: <SKIN_1>!\n\nKOSTUM EKSKLUSIF BERBATAS WAKTU: <SKIN_2>!\n\nPIN EKSKLUSIF KEREN BERBATAS WAKTU untuk <BRAWLER>\n\nCAT EKSKLUSIF BERBATAS WAKTU\n\n<NUM> KOTAK MEGA!\n\nKOIN dan POIN KEKUATAN EKSTRA!\n\n\nTUGAS EKSTRA untuk membantumu menyelesaikan Brawl Pass lebih cepat!\n\n<NUM> ACAK TUGAS EKSTRA PER MINGGU\n\nNAMA KROMATIK EKSKLUSIF sepanjang musim!
 TID_QUESTS_MORE,Tampilkan Semua Tugas
 TID_QUESTS_MORE_NEXT_SEASON,Kamu telah menyelesaikan semua Tugas untuk Musim <THIS_SEASON>. Tugas Baru akan tersedia saat Musim <NEXT_SEASON> dimulai.
 TID_BRAWL_PASS_AUTOCOLLECT_TITLE,Hadiah Musim <NUM>
@@ -4073,6 +4105,7 @@ TID_BANKHEIST_29T,Balik Arah
 TID_EMOTE_BUNDLE_ROSALLOWEEN,PIN ROSA BRAWL-O-WEEN
 TID_EMOTE_BUNDLE_WF,PIN FINAL DUNIA
 TID_EMOTE_PLAYERS,PEMAIN
+TID_SPRAY_PLAYERS,CAT
 TID_KING_OF_HILL_30,Hati-hati
 TID_KING_OF_HILL_31,Kejutan Membara
 TID_PLAYER_MAP_SLOT_CREATE_NEW_TITLE,BUAT BARU!
@@ -4315,11 +4348,11 @@ TID_ICE_DUDE_DESC,"Banyak orang yang menyangka kalau Lou memiliki kepribadian ya
 TID_ICE_DUDE_WEAPON,KEPALA DINGIN
 TID_ICE_DUDE_WEAPON_DESC,"Dengan serangan berbasis salju, Lou dapat membekukan lawan selama <accumulatedStun> detik."
 TID_ICE_DUDE_ULTI,GRANAT ES
-TID_ICE_DUDE_ULTI_DESC,"Dengan kaleng berisi cairan dingin yang Lou lemparkan, dia akan menciptakan area es licin. Awas tergelincir!"
+TID_ICE_DUDE_ULTI_DESC,"Dengan kaleng berisi cairan dingin yang Lou lemparkan, dia akan menciptakan area es licin yang juga akan membekukan Jagoan lawan secara perlahan. Awas tergelincir!"
 TID_SPEC_ABI_ICE_DUDE_1,DINGIN MENUSUK
-TID_SPEC_ABI_ICE_DUDE_1_DESC,"Lawan yang berada di area kemampuan super Lou akan membeku secara perlahan, seakan terkena serangan Kepala Dingin."
+TID_SPEC_ABI_ICE_DUDE_1_DESC,Lawan yang berdiri di area Super Lou akan membeku <c00cc00><VALUE1>%</c> lebih cepat.
 TID_SPEC_ABI_ICE_DUDE_2,HIPOTERMIA
-TID_SPEC_ABI_ICE_DUDE_2_DESC,Kecepatan isi ulang lawan akan berkurang <c00cc00><VALUE1>%</c> dihitung dari tingkat pembekuan akibat serangan Lou.
+TID_SPEC_ABI_ICE_DUDE_2_DESC,Kerusakan serangan lawan akan menurun berdasarkan tingkat beku dari serangan Lou dengan penurunan maksimum sebesar <c00cc00><VALUE1>%</c>.
 TID_ACCESSORY_ICE_DUDE_GADGET,BALOK ES
 TID_ACCESSORY_ICE_DUDE_GADGET_DESC,Lou melindungi dirinya dengan perisai es sehingga kebal terhadap serangan selama <c00cc00><VALUE1></c> detik.
 TID_INVITE_CLAN_TOKEN_ERROR_FULL,Gagal mengundang: Geng penuh
@@ -4702,7 +4735,7 @@ TID_SPEC_ABI_STICKY_BOMB_1_DESC,Kerusakan Bom Lengket akan meningkat <c00cc00><V
 TID_SPEC_ABI_STICKY_BOMB_2,SUPER LENGKET
 TID_SPEC_ABI_STICKY_BOMB_2_DESC,Ledakan Bom Lengket kedua dari kekuatan Super milik Squeak juga akan memperlambat lawan selama <c00cc00><VALUE2></c> detik.
 TID_ACCESSORY_STICKY_BOMB_RANGE,LEMPARAN BERTENAGA
-TID_ACCESSORY_STICKY_BOMB_RANGE_DESC,Jangkauan Bom Lengket berikutnya akan bertambah sebesar <c00cc00><VALUE1>%</c>.
+TID_ACCESSORY_STICKY_BOMB_RANGE_DESC,Bom Lengket milik Squeak berikutnya akan memberikan kerusakan <c00cc00><VALUE2>%</c> lebih banyak dengan jangkauan <c00cc00><VALUE1>%</c> lebih jauh.
 TID_RANKED2_CONFIRM_QUESTION,PILIH?
 TID_RANKED_PICK_ERROR_BRAWLER_NOT_OWNED,Kamu tidak punya Jagoan ini!
 TID_RANKED_PICK_ERROR_BRAWLER_BANNED,Jagoan ini telah diblokir! Pilih Jagoan lain!
@@ -5224,7 +5257,7 @@ TID_GEAR_TOKEN_SHIELD,Token Perisai
 TID_GEAR_TOKEN_SPEED,Token Kecepatan
 TID_GEAR_TOKEN_TYPE_DAMAGE,KERUSAKAN
 TID_GEAR_TOKEN_TYPE_HEAL,KESEHATAN
-TID_GEAR_TOKEN_TYPE_RESISTANCE,PERTAHANAN
+TID_GEAR_TOKEN_TYPE_VISION,PENGLIHATAN
 TID_GEAR_TOKEN_TYPE_SHIELD,PERISAI
 TID_GEAR_TOKEN_TYPE_SPEED,KECEPATAN
 TID_GEAR_TOKEN,Token Buster
@@ -5238,22 +5271,22 @@ TID_GEAR_UPGRADE_BUTTON,TINGKATKAN
 TID_GEAR_FOREST_SPEED_TITLE,KECEPATAN
 TID_GEAR_STANDING_HEAL_TITLE,KESEHATAN
 TID_GEAR_LOW_HEALTH_DAMAGE_TITLE,KERUSAKAN
-TID_GEAR_SLOW_RESISTANCE_TITLE,PERTAHANAN
+TID_GEAR_VISION_TITLE,PENGLIHATAN
 TID_GEAR_SHIELD_TITLE,PERISAI
 TID_GEAR_FOREST_SPEED_INFO,MENINGKATKAN KECEPATAN sebesar <NUM>% saat bergerak di semak.
-TID_GEAR_STANDING_HEAL_INFO,MEMULIHKAN KESEHATAN <NUM>% lebih cepat.
+TID_GEAR_STANDING_HEAL_INFO,MEMULIHKAN KESEHATAN <NUM>% lebih efektif.
 TID_GEAR_LOW_HEALTH_DAMAGE_INFO,Memberikan <NUM>% KERUSAKAN EKSTRA saat kesehatan di bawah 50%.
-TID_GEAR_SLOW_RESISTANCE_INFO,Mengurangi durasi efek KEJUT dan juga efektivitas efek LAMBAT sebesar <NUM>%.
+TID_GEAR_VISION_INFO,Membuat posisi lawan TERLIHAT selama <NUM> detik setelah menerima kerusakan.
 TID_GEAR_SHIELD_INFO,Memberikan <NUM> KESEHATAN ekstra sebagai PERISAI habis pakai. Perisai akan terisi kembali setiap 10 detik saat kesehatan Jagoan penuh.
 TID_GEAR_FOREST_SPEED_UPGRADE_INFO,MENINGKATKAN KECEPATAN gerak di semak
-TID_GEAR_STANDING_HEAL_UPGRADE_INFO,MEMULIHKAN KESEHATAN saat diam
+TID_GEAR_STANDING_HEAL_UPGRADE_INFO,MEMULIHKAN KESEHATAN lebih efektif
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_INFO,Memberikan KERUSAKAN ekstra saat kesehatan di bawah 50%
-TID_GEAR_SLOW_RESISTANCE_UPGRADE_INFO,Mengurangi durasi efek KEJUT dan juga efektivitas efek LAMBAT
+TID_GEAR_VISION_UPGRADE_INFO,LIHAT POSISI lawan setelah memberi kerusakan pada mereka
 TID_GEAR_SHIELD_UPGRADE_INFO,Memberikan PERISAI yang meningkatkan KESEHATAN
 TID_GEAR_FOREST_SPEED_UPGRADE_TARGET,KECEPATAN DITINGKATKAN
-TID_GEAR_STANDING_HEAL_UPGRADE_TARGET,KESEHATAN DIPULIHKAN
+TID_GEAR_STANDING_HEAL_UPGRADE_TARGET,BONUS PEMULIHAN
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_TARGET,KERUSAKAN EKSTRA
-TID_GEAR_SLOW_RESISTANCE_UPGRADE_TARGET,PERTAHANAN
+TID_GEAR_VISION_UPGRADE_TARGET,DURASI PENGLIHATAN
 TID_GEAR_SHIELD_UPGRADE_TARGET,KESEHATAN PERISAI
 TID_GEAR_UPGRADED,BUSTER DITINGKATKAN!
 TID_GEAR_TITLE,BUSTER
@@ -5748,7 +5781,7 @@ TID_KICKER_DUDE_WEAPON_DESC,"Fang melayangkan tendangan cepat dengan trik tersem
 TID_KICKER_DUDE_ULTI,KEJUTAN BERANTAI
 TID_KICKER_DUDE_ULTI_DESC,"Fang akan meluncur dengan tendangan maut. Saat mengenai lawan, tendangan tersebut akan menjadi 3 tendangan berantai ke lawan yang berdekatan."
 TID_SPEC_ABI_KICKER_DUDE_1,TENDANGAN EKSTRA
-TID_SPEC_ABI_KICKER_DUDE_1_DESC,"Ketika Fang menumbangkan lawan dengan kekuatan Super, kekuatan Supernya akan terisi ulang dan bisa langsung digunakan kembali!"
+TID_SPEC_ABI_KICKER_DUDE_1_DESC,"Ketika Fang menumbangkan Jagoan lawan dengan kekuatan Super, kekuatan Supernya akan terisi ulang dan bisa langsung digunakan kembali!"
 TID_SPEC_ABI_KICKER_DUDE_2,TAPAK DEWA
 TID_SPEC_ABI_KICKER_DUDE_2_DESC,Kerusakan yang diterima akan berkurang sebesar <c00cc00><VALUE2></c> setiap <c00cc00><VALUE1></c> detik. Pengurangan maksimum adalah <c00cc00><VALUE3>%</c> dari kerusakan yang diterima.
 TID_ACCESSORY_KICKER_DUDE_GADGET,HUJAN BERONDONG JAGUNG
@@ -5942,8 +5975,8 @@ TID_OPPONENT_ONE_POINT_FROM_VICTORY,"SATU LAGI, KAMU KALAH!"
 TID_VICTORY_MATCH_OVER,MENANG!
 TID_LOSS_MATCH_OVER,KALAH!
 TID_SKIN_INFO_CAMPAIGN_LUNAR_BRAWL_2022,Kostum Imlek Jagoan 2022
-TID_LOGIN_CALENDAR_LEFT_TITLE,HADIAH HARIAN
-TID_LOGIN_CALENDAR_LEFT_SUBTITLE,Masuk selama <cfffc11>15 hari berturut-turut</c> dan raih <cfffc11>hadiah GRATIS</c> setiap hari.
+TID_LOGIN_CALENDAR_LEFT_TITLE,HADIAH MASUK BERTURUT-TURUT
+TID_LOGIN_CALENDAR_LEFT_SUBTITLE,<cfffc11>MASUK SETIAP HARI SELAMA 15 HARI</c> untuk mengeklaim <cfffc11>HADIAH GRATIS</c>! <cfffc11>JANGAN LEWATKAN SATU HARI PUN</c> jika tidak ingin hadiah berakhir!
 TID_LOGIN_CALENDAR_RIGHT_TITLE,HADIAH HARI INI
 TID_LOGIN_CALENDAR_BUTTON_CLAIM,KLAIM
 TID_LOGIN_CALENDAR_BUTTON_CLOSE,TUTUP
@@ -5952,7 +5985,7 @@ TID_LOGIN_CALENDAR_CARD_DAY_NUM,HARI <NUM>
 TID_LOGIN_CALENDAR_CARD_AVAILABLE_IN_TIMER,Tersedia dalam: <TIME>
 TID_LOGIN_CALENDAR_CARD_TIME_TO_CLAIM,Waktu tersisa untuk mengeklaim: <TIME>
 TID_LOGIN_CALENDAR_REWARD_BRAWLER_CHOICE,PILIH JAGOAN
-TID_LOGIN_CALENDAR_REWARD_LEVEL_UPGRADE,TINGKATKAN JAGOAN
+TID_LOGIN_CALENDAR_REWARD_LEVEL_UPGRADE,TINGKATKAN\nJAGOAN
 TID_LOGIN_CALENDAR_REWARD_PIN,PIN BARU
 TID_LOGIN_CALENDAR_REWARD_SKIN,KOSTUM BARU
 TID_LOGIN_CALENDAR_REWARD_GADGET_CHOICE,PILIH GADGET
@@ -5975,7 +6008,7 @@ TID_ACCESSORY_SNAKE_OIL_SPREAD,SUNTIKAN BUSTER
 TID_ACCESSORY_SNAKE_OIL_SPREAD_DESC,"Pada serangan berikutnya, Byron menembakkan <c00cc00><VALUE1></c> jarum. Tiap jarum memberikan kerusakan <ccc0000><VALUE2>%</c> lebih sedikit serta efek penyembuhan <ccc0000><VALUE3>%</c> lebih kecil."
 TID_GEMGRAB_48,Dataran Safir
 TID_ACCESSORY_STICKY_BOMB_VISION,RESIDU
-TID_ACCESSORY_STICKY_BOMB_VISION_DESC,Gumpalan meledak Squeak berikutnya akan membantu rekan melihat di balik semak selama <c00cc00><VALUE1></c> detik.
+TID_ACCESSORY_STICKY_BOMB_VISION_DESC,Bom Lengket milik Squeak berikutnya akan meninggalkan area residu setelah meledak. Area residu ini akan melambatkan lawan dan memungkinkan lawan melihat di area semak selama <c00cc00><VALUE1></c> detik.
 TID_ACCESSORY_ELECTRO_SNIPER_BOUNCE,POLARITAS TERBALIK
 TID_ACCESSORY_ELECTRO_SNIPER_BOUNCE_DESC,Tembakan Kilat Belle yang berikutnya akan memantul dari penghalang.
 TID_TUTORIAL_SD_FIRSTBATTLE,Jagoan terakhir yang bertahan akan menang! Ambil Kubus Kekuatan dari kotak untuk memperkuat diri. Jangan lupa untuk terus bergerak agar tidak terjebak awan beracun!
@@ -6002,7 +6035,7 @@ TID_LOGIN_CALENDAR_RIGHT_TITLE_WAIT,HADIAH BERIKUTNYA
 TID_LOGIN_CALENDAR_REWARD_BRAWLER,JAGOAN BERIKUTNYA
 TID_LOGIN_CALENDAR_NOTIFICATIONS_TITLE,Jangan lewatkan hadiah gratis!
 TID_LOGIN_CALENDAR_NOTIFICATIONS_DESCRIPTION,Dapatkan Pemberitahuan saat hadiah baru siap diambil
-TID_LOGIN_CALENDAR_NOTIFICATIONS_DECLINE,MUNGKIN NANTI
+TID_LOGIN_CALENDAR_NOTIFICATIONS_DECLINE,LAIN KALI
 TID_LOGIN_CALENDAR_NOTIFICATIONS_ACCEPT,BERI TAHU
 TID_LOGIN_CALENDAR_WARNING,Pastikan untuk masuk pada HARI <VALUE> atau kamu akan kehilangan hadiah yang tersisa!
 TID_LOGIN_CALENDAR_TIP_TITLE,KIAT:
@@ -6011,7 +6044,7 @@ TID_LOGIN_CALENDAR_TIP_PINS,Ekspresikan dirimu selama pertempuran dengan Pin!
 TID_LOGIN_CALENDAR_TIP_GADGET,Gadget adalah kemampuan ekstra yang dapat digunakan 3 kali tiap laga.
 TID_LOGIN_CALENDAR_TIP_STAR_POWER,Kekuatan Bintang adalah kemampuan pasif untuk Jagoan.
 TID_LOGIN_CALENDAR_PINS_DESCRIPTION,Pin berikutnya akan tersedia pada HARI <VALUE>.\nTerus masuk setiap hari untuk melengkapi koleksimu.
-TID_LOGIN_CALENDAR_BUTTON_TITLE,HADIAH HARI <VALUE> DALAM:
+TID_LOGIN_CALENDAR_BUTTON_TITLE,HADIAH HARIAN BERIKUTNYA:
 TID_LOGIN_CALENDAR_REMINDER_1_TITLE,Hadiah GRATIS untuk <HERONAME> selama 14 hari
 TID_LOGIN_CALENDAR_REMINDER_1_DESCRIPTION,Percepat progres <HERONAME> dan kumpulkan hadiah kosmetik keren hanya dengan masuk setiap hari!
 TID_LOGIN_CALENDAR_REMINDER_1_BUTTON,SELANJUTNYA
@@ -6098,13 +6131,248 @@ TID_SHOWDOWN_69,Sungai Ngarai
 TID_SHOWDOWN_70,Pusara
 TID_RANKED_BATTLE_END_EPIC,Kemenangan Epik!
 TID_RANKED_BATTLE_END_CLOSE,Nyaris!
+TID_JETPACK_GIRL,JANET
+TID_JETPACK_GIRL_SHORT_DESC,PENYERANG
+TID_JETPACK_GIRL_DESC,"Janet adalah bintang pertunjukan kesayangan semua orang yang sangat terkenal!\n\nAdiknya, Bonnie, juga sangat terkenal ... Sayangnya, terkenal karena selalu menyebabkan masalah."
+TID_JETPACK_GIRL_WEAPON,NADA TINGGI
+TID_JETPACK_GIRL_WEAPON_DESC,"Janet menyanyikan nada tinggi. Semakin lama dia menahan nada ini, gelombang suara akan semakin memusat dengan jangkauan yang lebih jauh."
+TID_JETPACK_GIRL_ULTI,CRESCENDO
+TID_JETPACK_GIRL_ULTI_DESC,"Janet menggunakan ransel jet miliknya untuk terbang dalam waktu singkat. Selama terbang, dia dapat menyerang lawan dari atas!"
+TID_SPEC_ABI_JETPACK_GIRL_1,PENGLIHATAN PANGGUNG
+TID_SPEC_ABI_JETPACK_GIRL_1_DESC,"Saat melayang dengan ransel jet miliknya, Janet dapat mengungkap area semak luas di sekitar dia berada."
+TID_SPEC_ABI_JETPACK_GIRL_2,PEMANASAN VOKAL
+TID_SPEC_ABI_JETPACK_GIRL_2_DESC,Serangan Janet terfokus <c00cc00><VALUE1>%</c> lebih cepat.
+TID_ACCESSORY_JETPACK_GIRL_GADGET_1,DENTUMAN BAS
+TID_ACCESSORY_JETPACK_GIRL_GADGET_1_DESC,Janet mengerahkan speaker yang memberikan <c00cc00><VALUE1></c> kerusakan per detik pada semua lawan terdekat hingga dihancurkan.
+TID_ACCESSORY_JETPACK_GIRL_GADGET_2,AKSES CEPAT PANGGUNG
+TID_ACCESSORY_JETPACK_GIRL_GADGET_2_DESC,"Serangan Nada Tinggi berikutnya akan mendorong mundur Janet (bahkan melintasi tembok!). Semakin terfokus serangannya, semakin jauh dia akan terdorong mundur."
+TID_CANNON_GIRL,BONNIE
+TID_CANNON_GIRL_SHORT_DESC,SERBA BISA
+TID_CANNON_GIRL_DESC,"Bonnie dan meriam kesayangannya, \qClyde\q, hadir untuk membuat masalah. Siapa sangka gadis kecil ini bisa membawa kekacauan yang besar?"
+TID_CANNON_GIRL_WEAPON,GIGI TANGGAL
+TID_CANNON_GIRL_WEAPON_DESC,Bonnie menembakkan gigi BESAR dari Clyde.
+TID_CANNON_GIRL_ULTI,PELUNCUR BINTANG
+TID_CANNON_GIRL_ULTI_DESC,Clyde menerbangkan Bonnie ke angkasa. Dia akan meluncur melintasi penghalang dan memberikan kerusakan pada lawan yang berada dekat lokasi pendaratan.
+TID_CANNON_GIRL_SMALL_WEAPON,JAKET BOMBER
+TID_CANNON_GIRL_SMALL_WEAPON_DESC,Bonnie melemparkan sejumlah granat kecil dari lengan jaketnya.
+TID_CANNON_GIRL_SMALL_ULTI,CLYDE
+TID_CANNON_GIRL_SMALL_ULTI_DESC,Bonnie mengerahkan Clyde lalu mengendarai dan mengendalikan meriam kesayangannya tersebut.
+TID_SPEC_ABI_CANNON_GIRL_1,MESIU BINTANG
+TID_SPEC_ABI_CANNON_GIRL_1_DESC,Jangkauan Peluncur Bintang bertambah sebanyak <c00cc00><VALUE1>%</c>.
+TID_SPEC_ABI_CANNON_GIRL_2,GIGI BUNGSU
+TID_SPEC_ABI_CANNON_GIRL_2_DESC,Gigi Tanggal akan hancur saat mengenai target yang kemudian akan memberi <c00cc00><VALUE1>%</c> kerusakan ekstra pada lawan di sekitar.
+TID_ACCESSORY_CANNON_GIRL_SPEED,ENERGI GULA
+TID_ACCESSORY_CANNON_GIRL_SPEED_DESC,Pergerakan dan kecepatan isi ulang Clyde meningkat <c00cc00><VALUE1>%</c> selama <c00cc00><VALUE2></c> detik.
+TID_ACCESSORY_CANNON_GIRL_DASH,TES TABRAKAN
+TID_ACCESSORY_CANNON_GIRL_DASH_DESC,"Bonnie meluncur maju, menabrak lawan, dan memberikan <c00cc00><VALUE1></c> kerusakan."
+TID_ACCESSORY_BLOCKED_REQUIRES_CANNON,Clyde diperlukan!
+TID_ACCESSORY_BLOCKED_REQUIRES_ASSASSIN,Bonnie diperlukan!
+TID_LOGIN_CALENDAR_MISSED,Kamu melewatkan sisa hadiah masuk.
+TID_ACCESSORY_POWER_LEVELER_EXTRA_LEVELS,LONJAKAN DAYA
+TID_ACCESSORY_POWER_LEVELER_EXTRA_LEVELS_DESC,Surge mengaktifkan cadangan daya yang membuat sirkuitnya kelebihan daya. Lonjakan daya ini akan menambahkan <c00cc00><VALUE1></c> level peningkatan untuk <c00cc00><VALUE2></c> detik.
+TID_ACCESSORY_POWER_LEVELER_SHIELD,PERISAI DAYA
+TID_ACCESSORY_POWER_LEVELER_SHIELD_DESC,"Dalam <c00cc00><VALUE1></c> detik berikutnya, Surge mengonsumsi <c00cc00><VALUE2>%</c> kerusakan dari serangan berikutnya dan menggunakan energi tersebut untuk mengisi ulang <c00cc00><VALUE3></c> peluru."
+TID_GAME_MODE_27,MOBILISASI BOT
+TID_GAME_MODE_27_DESC,Bertahanlah menghadapi invasi robot. Hancurkan robot dan kumpulkan baut. Tim pertama yang mengumpulkan <MAX_SCORE> baut akan menang!
+TID_INVASION_INTRO_TEXT,Hancurkan robot!
+TID_NOTIFICATION_INVASION,Ada peta baru di mode MOBILISASI BOT! Saatnya untuk memenangkan Hadiah baru!
+TID_INVASION_1,Devolusi
+TID_INVASION_2,Terpecah-Belah
+TID_INVASION_3,Val Verde
+TID_INVASION_4,Kuadran
+TID_INVASION_5,Laga Dunia
+TID_INVASION_6,Zona Tempur
+TID_INVASION_7,Tepat Sasaran
+TID_INVASION_8,Cilukba
+TID_INVASION_9,Serangan Bot!
+TID_INVASION_10,Blok Linear
+TID_INVASION_11,Koridor
+TID_INVASION_12,Tepi Sungai
+TID_INVASION_13,Pintu Keberangkatan
+TID_INVASION_14,Benteng
+TID_INVASION_15,Bot
+TID_INVASION_16,Tempat Bising
+TID_SPRAYS_TUTORIAL_TITLE,CAT
+TID_SPRAYS_TUTORIAL_HEADER,EKSPRESIKAN DIRIMU DALAM LAGA!
+TID_BRAWL_PASS_CANCEL_QUEST_REROLL,BATALKAN ACAK ULANG
+TID_BRAWL_PASS_REROLL_QUEST,ACAK ULANG TUGAS
+TID_BRAWL_PASS_QUEST_REROLL_COUNT,<num>/<max> acak ulang tersedia
+TID_BRAWL_PASS_QUEST_REROLL_REFRESH_TIME,Disegarkan dalam <time>
+TID_YOU_HAVE_USED_ALL_REROLLS,Kamu telah menggunakan semua acak ulang! Dapatkan lebih banyak dengan Brawl Pass
+TID_YOU_HAVE_USED_ALL_REROLLS_HAS_PREMIUM,Kamu sudah menggunakan semua acak ulang yang tersedia!
+TID_QUEST_REROLL_INTRO,PILIH TUGAS UNTUK DIACAK ULANG
+TID_QUEST_REROLL_ACCEPT,SETUJU
+TID_QUEST_REROLL_REJECT,BATAL
+TID_REROLL_NOT_POSSIBLE_FOR_ITEM,Tidak dapat mengacak ulang item ini
+TID_CONFIRM_QUEST_REROLL,ACAK ULANG TUGAS?
+TID_CONFIRM_QUEST_REROLL_DESC,Tugas baru tidak akan menggunakan <char> atau <type>.\nAcak ulang tersisa: <rerolls>
+TID_CONFIRM_QUEST_REROLL_DESC_ONLY_TYPE,Tugas baru tidak akan menggunakan <type>.\nAcak ulang tersisa: <rerolls>
+TID_QUEST_TYPE_REQ_WIN,MENANG
+TID_QUEST_TYPE_REQ_KILL,TUMBANGKAN LAWAN
+TID_QUEST_TYPE_REQ_DEAL_DAMAGE,BERI KERUSAKAN
+TID_QUEST_TYPE_REQ_HEAL,SEMBUHKAN
+TID_QUEST_TYPE_REQ_PLAY_AGAIN,MAIN LAGI
+TID_QUEST_TYPE_REQ_TEAM_PLAY,MAIN DENGAN TIM
+TID_QUEST_TYPE_REQ_MODE_SPECIFIC,MODE SPESIFIK
+TID_CHINA_PRIVACY_SHOW_IN_LEADERBOARDS,TAMPILKAN DI PAPAN PERINGKAT
+TID_CHINA_PRIVACY_SHOW_PLAYER_PROFILE,TAMPILKAN PROFIL PEMAIN
+TID_CHINA_PRIVACY_SHOW_CLUB_DETAILS,TAMPILKAN INFORMASI GENG
+TID_CHINA_PRIVACY_ALLOW_SPECTATE,IZINKAN MENONTON
+TID_CHINA_PRIVACY_INFO_OLD_PLAYERS_TITLE,Pemberitahuan Penting
+TID_CHINA_PRIVACY_INFO_OLD_PLAYERS_DESC,"Halo, Pemain Brawl Stars!\nKami telah menambahkan setelan privasi dalam game yang saat ini aktif secara default. Kamu dapat mengubah setelan di Setelan > Setelan Privasi."
+TID_CHINA_PRIVACY_INFO_NEW_PLAYERS_TITLE,Pemberitahuan Penting
+TID_CHINA_PRIVACY_INFO_NEW_PLAYERS_DESC,"Halo, Pemain Brawl Stars!\nKami telah menambahkan setelan privasi dalam game yang saat ini tidak aktif secara default. Izinkan game untuk mengaktifkannya?"
+TID_CHINA_PRIVACY_INFO_NEW_PLAYERS_BUTTON_ACCEPT,SETUJU
+TID_CHAT_JUST_DISABLED,Pemain lain telah melaporkanmu atas komentar yang tidak pantas. Obrolan kini dinonaktifkan untukmu selama <TIME>.
+TID_CHAT_UNAVAILABLE,Obrolan dinonaktifkan selama <TIME>.
+TID_CHAT_BANNED_REASON,Pemain lain telah melaporkanmu atas komentar yang tidak pantas.
+TID_CHAT_BANNED_PERIOD_OF,Kamu dibisukan dari obrolan global selama:
+TID_CHAT_FAIL_BANNED,Kamu dibisukan selama <TIME>.
+TID_CHAT_JUST_BANNED,Pemain lain telah melaporkanmu atas komentar yang tidak pantas. Kamu telah dibisukan selama <TIME>.
+TID_TENCENT_CUSTOMER_SUPPORT,Dukungan Pengguna Tencent
+TID_SELF_SERVICE_BUTTON,Layanan Mandiri
+TID_REPORT_CLUB_CONFIRMATION_TITLE,Laporkan <NAME>?
+TID_REPORT_CLUB_CONFIRMATION,Yakin ingin melaporkan <NAME> atas tindakan tidak pantas?
+TID_REPORT_PLAYER_CONFIRMATION_TITLE,Laporkan <NAME>?
+TID_REPORT_PLAYER_CONFIRMATION,Yakin ingin melaporkan <NAME> atas tindakan tidak pantas?
+TID_REPORT_BATTLE_PLAYER_CONFIRMATION_TITLE,Laporkan <NAME>?
+TID_REPORT_BATTLE_PLAYER_CONFIRMATION,Yakin ingin melaporkan <NAME> atas tindakan tidak pantas?
+TID_DELETE_ACCOUNT_TITLE,Hapus Akun Saya
+TID_UGC_INPUT_FEATURE_UNAVAILABLE,Fitur tidak tersedia untuk saat ini
+TID_PLAYER_PROFILE_PRIVATE,Profil pemain ditetapkan ke pribadi
+TID_PLAYER_CLUB_INFO_PRIVATE,Info Geng ditetapkan ke pribadi
+TID_CLAN_RESPONSE_111,Fitur tidak tersedia untuk saat ini
+TID_CLAN_RESPONSE_120,"Deskripsi konten tidak diperkenankan, coba deskripsi lain."
+TID_CHINA_LOGIN_DESC_YOOZOO,本公司积极履行《网络游戏行业防沉迷自律公约》抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》、《关于进一步严格管理切实防止未成年人沉迷网络游戏的通知》，所有网络游戏用户均需使用有效身份信息完成账号实名注册后方可进入游戏，认证为未成年的玩家将受到防沉迷功能限制。沪网文【2018】8544-517号、新出网证（沪）字33号 著作权人：SUPERCELL OY 出版单位：上海游族信息技术有限公司 运营单位：上海游族信息技术有限公司 批准文号：国新出审【2020】552号 出版物号：ISBN 978-7-498-07472-0
+TID_YOOZOO_LOGIN_AGREEMENTS,"Saya telah membaca dengan saksama dan setuju dengan <TOS>, <PP>, <CHILDREN>, dan <THIRDPARTY>."
+TID_YOOZOO_TERMS_CHILDREN,Panduan Perlindungan Privasi Anak Yoozoo
+TID_TERMS_CHILDREN_BUTTON_YOOZOO,Panduan Perlindungan Privasi Anak Yoozoo
+TID_YOOZOO_THIRDPARTY_INFO,Daftar Informasi yang Dibagikan dengan Pihak Ketiga
+TID_THIRD_PARTY_SHARING_BUTTON_YOOZOO,Daftar Informasi yang Dibagikan dengan Pihak Ketiga
+TID_YOOZOO_SYSTEM_SETTINGS_BUTTON,Setelan Sistem
+TID_SKIN_PIN_INCLUDED,+ Pin Eksklusif!
+TID_SKIN_PINS_INCLUDED,+ Paket Pin Eksklusif!
+TID_OWN_TEAM_BANS,BLOKIR TIM BIRU
+TID_ENEMY_TEAM_BANS,BLOKIR TIM MERAH
+TID_PRE_PICK_YOUR_BRAWLER,PILIH JAGOAN TERLEBIH DAHULU
+TID_PRE_PICK,PILIH TERLEBIH DAHULU
+TID_CANCEL,BATAL
+TID_WANTS_TO_PLAY,INGIN BERMAIN
+TID_WANT_TO_PLAY,INGIN BERMAIN
+TID_WANTS_TO_PLAY_MULTIPLE_TEAMMATES,<num> REKAN TIM
+TID_BRAWL_PASS_SEASON_11,ATRAKSI MEMUKAU
+TID_SHOP_STUNTSHOW_SKINS,Kostum Atraksi Memukau
+TID_SHOP_STUNTSHOW_TITLE,ATRAKSI MEMUKAU
+TID_SHOP_STUNTSHOW_INFO,Set Kostum
+TID_SKIN_INFO_CAMPAIGN_STUNTSHOW,Kostum Atraksi Memukau
+TID_EMOTE_BUNDLE_STUNTSHOW_PACK,Pin Kostum Atraksi Memukau
+TID_EMOTE_BUNDLE_GOLDENWEEK_PACK,Pin Kostum Minggu Emas
+TID_SKIN_INFO_CAMPAIGN_GOLDENWEEK,Kostum Minggu Emas
+TID_SHOP_GOLDENWEEK_SKINS,Kostum Minggu Emas
+TID_SHOP_GOLDENWEEK_TITLE,MINGGU EMAS
+TID_SHOP_GOLDENWEEK_INFO,Set Kostum
+TID_SPRAY_BRAWLER_COMING_SOON,Cat Jagoan segera hadir
+TID_SHOP_VILLAINS_SKINS,Kostum Geng Jahat
+TID_SHOP_VILLAINS_TITLE,GENG JAHAT
+TID_SHOP_VILLAINS_INFO,Set Kostum
+TID_EMOTE_BUNDLE_VILLAINS_PACK,Pin Kostum Geng Jahat
+TID_SKIN_INFO_CAMPAIGN_VILLAINS,Kostum Geng Jahat
+TID_HOTZONE_33,Zona Terbuka
+TID_KNOCKOUT_18,Perspektif Baru
+TID_TRUE_GOLD_BELLE_SKIN,BELLE EMAS
+TID_TRUE_GOLD_BELLE_SKIN_SHOP,BELLE\nEMAS
+TID_TRUE_SILVER_BELLE_SKIN,BELLE PERAK
+TID_TRUE_SILVER_BELLE_SKIN_SHOP,BELLE\nPERAK
+TID_TRUE_GOLD_STU_SKIN,STU EMAS
+TID_TRUE_GOLD_STU_SKIN_SHOP,STU\nEMAS
+TID_TRUE_SILVER_STU_SKIN,STU PERAK
+TID_TRUE_SILVER_STU_SKIN_SHOP,STU\nPERAK
+TID_TRUE_GOLD_ASH_SKIN,ASH EMAS
+TID_TRUE_GOLD_ASH_SKIN_SHOP,ASH\nEMAS
+TID_TRUE_SILVER_ASH_SKIN,ASH PERAK
+TID_TRUE_SILVER_ASH_SKIN_SHOP,ASH\nPERAK
+TID_TRUE_GOLD_MEG_SKIN,MEG EMAS
+TID_TRUE_GOLD_MEG_SKIN_SHOP,MEG\nEMAS
+TID_TRUE_SILVER_MEG_SKIN,MEG PERAK
+TID_TRUE_SILVER_MEG_SKIN_SHOP,MEG\nPERAK
+TID_TRUE_GOLD_LOLA_SKIN,LOLA EMAS
+TID_TRUE_GOLD_LOLA_SKIN_SHOP,LOLA\nEMAS
+TID_TRUE_SILVER_LOLA_SKIN,LOLA PERAK
+TID_TRUE_SILVER_LOLA_SKIN_SHOP,LOLA\nPERAK
+TID_CRASH_TEST_DARRYL_SKIN,DARRYL UJI TABRAKAN
+TID_CRASH_TEST_DARRYL_SKIN_SHOP,DARRYL\nUJI TABRAKAN
+TID_BIKER_CARL_SKIN,CARL PENGENDARA MOTOR
+TID_BIKER_CARL_SKIN_SHOP,CARL PENGENDARA MOTOR
+TID_PYRO_SPIKE_SKIN,SPIKE PELEMPAR API
+TID_PYRO_SPIKE_SKIN_SHOP,SPIKE\nPELEMPAR API
+TID_MONSTER_TRUCK_MEG_SKIN,MEG TRUK MONSTER
+TID_MONSTER_TRUCK_MEG_SKIN_SHOP,MEG\nTRUK MONSTER
+TID_OVERLORD_BYRON_SKIN,BANGSAWAN BYRON
+TID_OVERLORD_BYRON_SKIN_SHOP,BANGSAWAN\nBYRON
+TID_GALAXY_STORM_LOLA_SKIN,LOLA BADAI GALAKSI
+TID_GALAXY_STORM_LOLA_SKIN_SHOP,LOLA\nBADAI GALAKSI
+TID_EMPRESS_BONNIE_SKIN,PERMAISURI BONNIE
+TID_EMPRESS_BONNIE_SKIN_SHOP,PERMAISURI\nBONNIE
+TID_TEMPEST_TARA_SKIN,TARA ANGIN GURUN
+TID_TEMPEST_TARA_SKIN_SHOP,TARA\nANGIN GURUN
+TID_VALKYRIE_JANET_SKIN,JANET VALKYRIE
+TID_VALKYRIE_JANET_SKIN_SHOP,JANET\nVALKYRIE
+TID_DARUMA_MRP_SKIN,MR. DARUMA
+TID_DARUMA_MRP_SKIN_SHOP,MR. DARUMA
+TID_SKIN_INFO_CAMPAIGN_LANTERN,Kostum Jagoan Lampu Ajaib
+TID_ACCESSORY_DRILLER_REBUILD,BANGUN KEMBALI
+TID_ACCESSORY_DRILLER_REBUILD_DESC,Jacky membangun kembali lingkungan di tempat dia berada dalam radius kecil.
+TID_ACCESSORY_ASSAULT_SHOTGUN_PROJECTILES,HUJAN KOIN
+TID_ACCESSORY_ASSAULT_SHOTGUN_PROJECTILES_DESC,Griff akan melemparkan koin <c00cc00><VALUE1>%</c> lebih banyak pada Lemparan Koin berikutnya.
+TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD,TARIAN API
+TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD_DESC,"Selama <c00cc00><VALUE2></c> detik, Amber menciptakan <c00cc00><VALUE3></c> bara berputar yang memberikan kerusakan sebesar <c00cc00><VALUE1></c> pada lawan yang menyentuh bara tersebut."
+TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD,KOTAK PERKAKAS
+TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD_DESC,Meg menjatuhkan kotak perkakas yang akan mempercepat isi ulang untuk rekan terdekat sebesar <c00cc00><VALUE1>%</c> hingga dihancurkan.
+TID_ACCESSORY_ROPE_DUDE_VISION,KACAMATA X-RAY
+TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz dapat melihat di balik semak selama <c00cc00><VALUE1></c> detik.
+TID_LOGIN_CALENDAR_ALREADY_HAVE_BRAWLER,Kamu sudah memiliki Jagoan ini
+TID_LOGIN_CALENDAR_ALREADY_HAVE_GADGET,Kamu sudah memiliki Gadget ini
+TID_LOGIN_CALENDAR_ALREADY_HAVE_STAR_POWER,Kamu sudah memiliki Kekuatan Bintang ini
+TID_LOGIN_CALENDAR_FINAL_REWARD_MESSAGE,JAGOAN <cFF92F9>EPIK</c> GRATIS PADA HARI KE-15
+TID_LOGIN_CALENDAR_WARNING_MESSAGE,<cFFB820>JANGAN LEWATKAN SATU HARI PUN</c> jika tidak mau sisa hadiahmu hilang!
+TID_POWER_LEAGUE_BRAWLER_REQUIREMENT_SELECT,Buka setidaknya 12 Jagoan untuk dapat bermain di Acara ini
+TID_TEAM_ERROR_134,Buka 12 Jagoan untuk bermain di Acara ini
+TID_MATCHMAKE_FAILED_25,Buka 12 Jagoan untuk bermain di Acara ini
+TID_POWER_LEAGUE_BRAWLER_REQUIREMENT_INVITE,Pemain ini tidak memiliki cukup Jagoan untuk bermain di Acara ini
+TID_TEAM_ERROR_133,Pemain belum membuka cukup Jagoan untuk bermain di Acara ini
+TID_REWARD_SPRAY_SLOT,SLOT CAT EKSTRA
+TID_SPRAY_SLOT_TITLE,SLOT CAT
+TID_KNOCKOUT_19,Tanda X
+TID_BANKHEIST_31,Jangan Sentuh
+TID_LOGIN_CALENDAR_FINAL_REWARD,JAGOAN <cFF92F9>EPIK</c> GRATIS
+TID_LOGIN_CALENDAR_OR,ATAU
+TID_LOGIN_CALENDAR_BRAWLER_UPGRADED,JAGOAN DITINGKATKAN!
+TID_LOGIN_CALENDAR_TOOLTIP_SKIN,"Buka Kostum Jagoan baru ini!\n\nBegitu dimiliki, kamu bisa memilih kostum dari layar Jagoan. Jika Jagoan memiliki setidaknya satu Kostum, kamu bisa memilih Jagoan kemudian mengetuk tombol gantungan baju."
+TID_LOGIN_CALENDAR_TOOLTIP_CHOOSE_BRAWLER,Pilih Jagoan untuk dibuka berikutnya!
+TID_LOGIN_CALENDAR_TOOLTIP_UPGRADE_BRAWLER,"Tingkatkan Jagoanmu! Tingkatkan Kesehatan, Kerusakan Serangan, dan Kerusakan Super di setiap Level Kekuatan. Gadget Jagoan akan terbuka di Level Kekuatan 7 dan Slot Kekuatan Bintang akan terbuka di Level Kekuatan 9."
+TID_LOGIN_CALENDAR_TOOLTIP_PIN_1,Gunakan Pin untuk mengekspresikan perasaan dalam laga. Pin dapat dipilih melalui Layar Jagoan.
+TID_LOGIN_CALENDAR_TOOLTIP_PIN_2,Gunakan Pin untuk mengekspresikan perasaan dalam laga. Pin dapat dipilih melalui Layar Jagoan.
+TID_LOGIN_CALENDAR_TOOLTIP_GADGETS,Gunakan Gadget untuk Jagoanmu. Gadget adalah kemampuan ekstra yang dapat digunakan 3 kali per laga. Setiap Jagoan memiliki Gadget unik tersendiri.
+TID_LOGIN_CALENDAR_TOOLTIP_STAR_POWER,Pilih Kekuatan Bintang untuk Jagoan. Kekuatan Bintang adalah kemampuan pasif ekstra untuk Jagoan. Setiap Jagoan memiliki Kekuatan Bintang yang unik.
+TID_LOGIN_CALENDAR_TUTORIAL_TOOLTIP,Hadiah Harian Pertama menantimu!\nKetuk untuk MENGEKLAIM!
+TID_BRAWL_PASS_INFO_TEXT_10,Raih banyak hadiah ekstra seperti:\n\n<BRAWLER> - Jagoan Kromatik baru!\n\nKOSTUM EKSKLUSIF: <SKIN_1>!\n\nKOSTUM EKSKLUSIF: <SKIN_2>!\n\nPIN EKSKLUSIF KEREN untuk <BRAWLER>\n\n<NUM> KOTAK MEGA!\n\nKOIN dan POIN KEKUATAN EKSTRA!\n\n\nTUGAS EKSTRA untuk membantumu menyelesaikan Brawl Pass lebih cepat!\n\n<NUM> ACAK TUGAS EKSTRA PER MINGGU\n\nNAMA KROMATIK EKSKLUSIF sepanjang musim!
+TID_LOGIN_CALENDAR_STARR_PARK,STARR PARK
+TID_LOGIN_CALENDAR_LOYALTY_PROGRAM,PROGRAM LOYALITAS
+TID_LOGIN_CALENDAR_TITLE,PROGRAM LOYALITAS STARR PARK
+TID_REWARD_DESC_PLAYER_ICON_REGULAR,IKON PEMAIN
+TID_CLUB_LEAGUE_CLUB_COINS_HOW_TO_GET,Raih Koin Geng dengan bermain di Liga Geng
+TID_SHOP_OFFER_INFO_25,Ikon Pemain baru!
+TID_LOGIN_CALENDAR_TUTORIAL_COME_BACK,<cFFB820>KEMBALI BESOK</c> untuk MENGEKLAIM hadiah ini atau seluruh sisa hadiah akan hilang!
+TID_BRAWLBALL_49,Lebih Kenyal
+TID_BRAWLBALL_50,Penuh Goyangan
+TID_BRAWLBALL_51,Skor Tertinggi
+TID_BRAWLBALL_52,Ping Pong
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,
 TID_REGION_CUSTOM4,
 TID_REGION_CUSTOM5,
 TID_HERO_INFO_GENERICS_HEADER,
-TID_CHINA_LOGIN_DESC,
 TID_VOTE_MAP_REWARD_LABEL,
 TID_RANKED_QUEST_PROGRESS,
 TID_ONLINE_CL_TEAMS,

@@ -11,8 +11,6 @@
 
 .field public static final KERNEL_VERSION:Ljava/lang/String; = "kernelVersion"
 
-.field public static final PROGUARD_UUID:Ljava/lang/String; = "proGuardUuids"
-
 .field public static final ROOTED:Ljava/lang/String; = "rooted"
 
 .field public static final SIDE_LOADED:Ljava/lang/String; = "sideLoaded"
@@ -37,45 +35,24 @@
 
 .field private final logger:Lio/sentry/ILogger;
 
-.field private final rootChecker:Lio/sentry/android/core/util/RootChecker;
+.field private final rootChecker:Lio/sentry/android/core/internal/util/RootChecker;
 
 
 # direct methods
-.method private static synthetic $closeResource(Ljava/lang/Throwable;Ljava/lang/AutoCloseable;)V
-    .locals 0
-
-    if-eqz p0, :cond_0
-
-    .line 1
-    :try_start_0
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
-
-    :catchall_0
-    :goto_0
-    return-void
-.end method
-
 .method public constructor <init>(Landroid/content/Context;Lio/sentry/ILogger;Lio/sentry/android/core/IBuildInfoProvider;)V
     .locals 1
 
     .line 1
-    new-instance v0, Lio/sentry/android/core/util/RootChecker;
+    new-instance v0, Lio/sentry/android/core/internal/util/RootChecker;
 
-    invoke-direct {v0, p1, p3, p2}, Lio/sentry/android/core/util/RootChecker;-><init>(Landroid/content/Context;Lio/sentry/android/core/IBuildInfoProvider;Lio/sentry/ILogger;)V
+    invoke-direct {v0, p1, p3, p2}, Lio/sentry/android/core/internal/util/RootChecker;-><init>(Landroid/content/Context;Lio/sentry/android/core/IBuildInfoProvider;Lio/sentry/ILogger;)V
 
-    invoke-direct {p0, p1, p2, p3, v0}, Lio/sentry/android/core/DefaultAndroidEventProcessor;-><init>(Landroid/content/Context;Lio/sentry/ILogger;Lio/sentry/android/core/IBuildInfoProvider;Lio/sentry/android/core/util/RootChecker;)V
+    invoke-direct {p0, p1, p2, p3, v0}, Lio/sentry/android/core/DefaultAndroidEventProcessor;-><init>(Landroid/content/Context;Lio/sentry/ILogger;Lio/sentry/android/core/IBuildInfoProvider;Lio/sentry/android/core/internal/util/RootChecker;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lio/sentry/ILogger;Lio/sentry/android/core/IBuildInfoProvider;Lio/sentry/android/core/util/RootChecker;)V
+.method public constructor <init>(Landroid/content/Context;Lio/sentry/ILogger;Lio/sentry/android/core/IBuildInfoProvider;Lio/sentry/android/core/internal/util/RootChecker;)V
     .locals 1
 
     .line 2
@@ -121,9 +98,9 @@
 
     move-result-object p1
 
-    check-cast p1, Lio/sentry/android/core/util/RootChecker;
+    check-cast p1, Lio/sentry/android/core/internal/util/RootChecker;
 
-    iput-object p1, p0, Lio/sentry/android/core/DefaultAndroidEventProcessor;->rootChecker:Lio/sentry/android/core/util/RootChecker;
+    iput-object p1, p0, Lio/sentry/android/core/DefaultAndroidEventProcessor;->rootChecker:Lio/sentry/android/core/internal/util/RootChecker;
 
     .line 7
     invoke-static {}, Ljava/util/concurrent/Executors;->newSingleThreadExecutor()Ljava/util/concurrent/ExecutorService;
@@ -229,11 +206,11 @@
 
     move-result-object v0
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object v0
 
-    :catch_0
+    :catchall_0
     move-exception v0
 
     .line 7
@@ -337,7 +314,7 @@
 
     move-result-object p1
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object p1
 
@@ -345,7 +322,7 @@
     :goto_0
     return-object v0
 
-    :catch_0
+    :catchall_0
     move-exception p1
 
     .line 4
@@ -386,11 +363,11 @@
 
     move-result-object p1
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object p1
 
-    :catch_0
+    :catchall_0
     move-exception p1
 
     .line 3
@@ -496,112 +473,6 @@
     return-object v0
 .end method
 
-.method private getDebugImages()Ljava/util/List;
-    .locals 7
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Lio/sentry/protocol/DebugImage;",
-            ">;"
-        }
-    .end annotation
-
-    const/4 v0, 0x0
-
-    .line 1
-    :try_start_0
-    iget-object v1, p0, Lio/sentry/android/core/DefaultAndroidEventProcessor;->contextData:Ljava/util/concurrent/Future;
-
-    invoke-interface {v1}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/util/Map;
-
-    const-string v2, "proGuardUuids"
-
-    invoke-interface {v1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    .line 2
-    check-cast v1, [Ljava/lang/String;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :cond_0
-    move-object v1, v0
-
-    :goto_0
-    if-eqz v1, :cond_2
-
-    .line 3
-    array-length v2, v1
-
-    if-nez v2, :cond_1
-
-    goto :goto_2
-
-    .line 4
-    :cond_1
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    .line 5
-    array-length v2, v1
-
-    const/4 v3, 0x0
-
-    :goto_1
-    if-ge v3, v2, :cond_2
-
-    aget-object v4, v1, v3
-
-    .line 6
-    new-instance v5, Lio/sentry/protocol/DebugImage;
-
-    invoke-direct {v5}, Lio/sentry/protocol/DebugImage;-><init>()V
-
-    const-string v6, "proguard"
-
-    .line 7
-    invoke-virtual {v5, v6}, Lio/sentry/protocol/DebugImage;->setType(Ljava/lang/String;)V
-
-    .line 8
-    invoke-virtual {v5, v4}, Lio/sentry/protocol/DebugImage;->setUuid(Ljava/lang/String;)V
-
-    .line 9
-    invoke-virtual {v0, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_1
-
-    :cond_2
-    :goto_2
-    return-object v0
-
-    :catch_0
-    move-exception v1
-
-    .line 10
-    iget-object v2, p0, Lio/sentry/android/core/DefaultAndroidEventProcessor;->logger:Lio/sentry/ILogger;
-
-    sget-object v3, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
-
-    const-string v4, "Error getting Proguard UUIDs."
-
-    invoke-interface {v2, v3, v4, v1}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    return-object v0
-.end method
-
 .method private getDevice(ZZ)Lio/sentry/protocol/Device;
     .locals 3
 
@@ -683,11 +554,11 @@
 
     invoke-virtual {v0, p1}, Lio/sentry/protocol/Device;->setSimulator(Ljava/lang/Boolean;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception p1
 
     .line 13
@@ -775,24 +646,40 @@
 
     .line 23
     :cond_3
-    invoke-virtual {v0}, Lio/sentry/protocol/Device;->getLanguage()Ljava/lang/String;
-
-    move-result-object p1
-
-    if-nez p1, :cond_4
-
-    .line 24
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object p1
 
+    .line 24
+    invoke-virtual {v0}, Lio/sentry/protocol/Device;->getLanguage()Ljava/lang/String;
+
+    move-result-object p2
+
+    if-nez p2, :cond_4
+
+    .line 25
+    invoke-virtual {p1}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {v0, p2}, Lio/sentry/protocol/Device;->setLanguage(Ljava/lang/String;)V
+
+    .line 26
+    :cond_4
+    invoke-virtual {v0}, Lio/sentry/protocol/Device;->getLocale()Ljava/lang/String;
+
+    move-result-object p2
+
+    if-nez p2, :cond_5
+
+    .line 27
     invoke-virtual {p1}, Ljava/util/Locale;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-virtual {v0, p1}, Lio/sentry/protocol/Device;->setLanguage(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lio/sentry/protocol/Device;->setLocale(Ljava/lang/String;)V
 
-    :cond_4
+    :cond_5
     return-object v0
 .end method
 
@@ -807,11 +694,11 @@
 
     move-result-object v0
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object v0
 
-    :catch_0
+    :catchall_0
     move-exception v0
 
     .line 2
@@ -862,11 +749,11 @@
 
     move-result-object v0
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object v0
 
-    :catch_0
+    :catchall_0
     move-exception v0
 
     .line 2
@@ -1094,11 +981,11 @@
 
     aget-object v0, v0, v1
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object v0
 
-    :catch_0
+    :catchall_0
     move-exception v0
 
     .line 2
@@ -1154,48 +1041,41 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    const/4 v1, 0x0
-
     .line 5
     :try_start_1
     invoke-virtual {v2}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 6
     :try_start_2
-    invoke-static {v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v2}, Ljava/io/BufferedReader;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
 
-    return-object v3
+    return-object v1
 
     :catchall_0
     move-exception v1
 
     .line 7
     :try_start_3
-    throw v1
+    invoke-virtual {v2}, Ljava/io/BufferedReader;->close()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     :catchall_1
-    move-exception v3
-
-    .line 8
     :try_start_4
-    invoke-static {v1, v2}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    throw v3
+    throw v1
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
 
     :catch_0
     move-exception v1
 
-    .line 9
+    .line 8
     iget-object v2, p0, Lio/sentry/android/core/DefaultAndroidEventProcessor;->logger:Lio/sentry/ILogger;
 
     sget-object v3, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
@@ -1250,11 +1130,11 @@
 
     invoke-interface {v2, v3, v0, v4}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object v1
 
-    :catch_0
+    :catchall_0
     move-exception v2
 
     .line 5
@@ -1349,11 +1229,11 @@
 
     invoke-virtual {v0, v1}, Lio/sentry/protocol/OperatingSystem;->setRooted(Ljava/lang/Boolean;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception v1
 
     .line 9
@@ -1390,11 +1270,11 @@
 
     iget v1, v1, Landroid/content/res/Configuration;->orientation:I
 
-    invoke-static {v1}, Lio/sentry/android/core/util/DeviceOrientations;->getOrientation(I)Lio/sentry/protocol/Device$DeviceOrientation;
+    invoke-static {v1}, Lio/sentry/android/core/internal/util/DeviceOrientations;->getOrientation(I)Lio/sentry/protocol/Device$DeviceOrientation;
 
     move-result-object v1
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     if-nez v1, :cond_0
 
@@ -1412,16 +1292,16 @@
 
     invoke-interface {v2, v3, v4, v5}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
     :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     return-object v0
 
-    :catch_0
+    :catchall_0
     move-exception v0
 
     goto :goto_0
 
-    :catch_1
+    :catchall_1
     move-exception v1
 
     move-object v6, v1
@@ -1441,204 +1321,6 @@
     invoke-interface {v2, v3, v4, v0}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_0
-    return-object v1
-.end method
-
-.method private getProguardUUIDs()[Ljava/lang/String;
-    .locals 11
-
-    .line 1
-    iget-object v0, p0, Lio/sentry/android/core/DefaultAndroidEventProcessor;->context:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    .line 2
-    :try_start_0
-    new-instance v3, Ljava/io/BufferedInputStream;
-
-    const-string v4, "sentry-debug-meta.properties"
-
-    .line 3
-    invoke-virtual {v0, v4}, Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;
-
-    move-result-object v0
-
-    invoke-direct {v3, v0}, Ljava/io/BufferedInputStream;-><init>(Ljava/io/InputStream;)V
-    :try_end_0
-    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 4
-    :try_start_1
-    new-instance v0, Ljava/util/Properties;
-
-    invoke-direct {v0}, Ljava/util/Properties;-><init>()V
-
-    .line 5
-    invoke-virtual {v0, v3}, Ljava/util/Properties;->load(Ljava/io/InputStream;)V
-
-    const-string v4, "io.sentry.ProguardUuids"
-
-    .line 6
-    invoke-virtual {v0, v4}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    .line 7
-    invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
-
-    move-result v4
-
-    if-nez v4, :cond_1
-
-    const-string v4, "\\|"
-
-    const/4 v5, -0x1
-
-    .line 8
-    invoke-virtual {v0, v4, v5}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 9
-    array-length v4, v0
-
-    const/4 v5, 0x0
-
-    :goto_0
-    if-ge v5, v4, :cond_0
-
-    aget-object v6, v0, v5
-
-    .line 10
-    iget-object v7, p0, Lio/sentry/android/core/DefaultAndroidEventProcessor;->logger:Lio/sentry/ILogger;
-
-    sget-object v8, Lio/sentry/SentryLevel;->DEBUG:Lio/sentry/SentryLevel;
-
-    const-string v9, "Proguard UUID found: %s"
-
-    const/4 v10, 0x1
-
-    new-array v10, v10, [Ljava/lang/Object;
-
-    aput-object v6, v10, v2
-
-    invoke-interface {v7, v8, v9, v10}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    add-int/lit8 v5, v5, 0x1
-
-    goto :goto_0
-
-    .line 11
-    :cond_0
-    :try_start_2
-    invoke-static {v1, v3}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-    :try_end_2
-    .catch Ljava/io/FileNotFoundException; {:try_start_2 .. :try_end_2} :catch_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
-    .catch Ljava/lang/RuntimeException; {:try_start_2 .. :try_end_2} :catch_0
-
-    return-object v0
-
-    .line 12
-    :cond_1
-    :try_start_3
-    iget-object v0, p0, Lio/sentry/android/core/DefaultAndroidEventProcessor;->logger:Lio/sentry/ILogger;
-
-    sget-object v4, Lio/sentry/SentryLevel;->INFO:Lio/sentry/SentryLevel;
-
-    const-string v5, "io.sentry.ProguardUuids property was not found or it is invalid."
-
-    new-array v6, v2, [Ljava/lang/Object;
-
-    invoke-interface {v0, v4, v5, v6}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    .line 13
-    :try_start_4
-    invoke-static {v1, v3}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-    :try_end_4
-    .catch Ljava/io/FileNotFoundException; {:try_start_4 .. :try_end_4} :catch_2
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_1
-    .catch Ljava/lang/RuntimeException; {:try_start_4 .. :try_end_4} :catch_0
-
-    goto :goto_1
-
-    :catchall_0
-    move-exception v0
-
-    .line 14
-    :try_start_5
-    throw v0
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_1
-
-    :catchall_1
-    move-exception v4
-
-    .line 15
-    :try_start_6
-    invoke-static {v0, v3}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    throw v4
-    :try_end_6
-    .catch Ljava/io/FileNotFoundException; {:try_start_6 .. :try_end_6} :catch_2
-    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_1
-    .catch Ljava/lang/RuntimeException; {:try_start_6 .. :try_end_6} :catch_0
-
-    :catch_0
-    move-exception v0
-
-    .line 16
-    iget-object v2, p0, Lio/sentry/android/core/DefaultAndroidEventProcessor;->logger:Lio/sentry/ILogger;
-
-    sget-object v3, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
-
-    const-string v4, "sentry-debug-meta.properties file is malformed."
-
-    invoke-interface {v2, v3, v4, v0}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    goto :goto_1
-
-    :catch_1
-    move-exception v0
-
-    .line 17
-    iget-object v2, p0, Lio/sentry/android/core/DefaultAndroidEventProcessor;->logger:Lio/sentry/ILogger;
-
-    sget-object v3, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
-
-    const-string v4, "Error getting Proguard UUIDs."
-
-    invoke-interface {v2, v3, v4, v0}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    goto :goto_1
-
-    .line 18
-    :catch_2
-    iget-object v0, p0, Lio/sentry/android/core/DefaultAndroidEventProcessor;->logger:Lio/sentry/ILogger;
-
-    sget-object v3, Lio/sentry/SentryLevel;->INFO:Lio/sentry/SentryLevel;
-
-    new-array v2, v2, [Ljava/lang/Object;
-
-    const-string v4, "sentry-debug-meta.properties file was not found."
-
-    invoke-interface {v0, v3, v4, v2}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
-
-    :goto_1
     return-object v1
 .end method
 
@@ -1832,11 +1514,11 @@
 
     move-result-object p1
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object p1
 
-    :catch_0
+    :catchall_0
     move-exception p1
 
     .line 4
@@ -1874,11 +1556,11 @@
 
     move-result-object p1
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object p1
 
-    :catch_0
+    :catchall_0
     move-exception p1
 
     .line 4
@@ -1916,11 +1598,11 @@
 
     move-result-object p1
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object p1
 
-    :catch_0
+    :catchall_0
     move-exception p1
 
     .line 4
@@ -1958,11 +1640,11 @@
 
     move-result-object p1
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object p1
 
-    :catch_0
+    :catchall_0
     move-exception p1
 
     .line 4
@@ -2012,11 +1694,11 @@
 
     move-result-object p1
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object p1
 
-    :catch_0
+    :catchall_0
     move-exception p1
 
     .line 3
@@ -2215,11 +1897,11 @@
 
     move-result-object v0
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object v0
 
-    :catch_0
+    :catchall_0
     move-exception v0
 
     .line 18
@@ -2315,22 +1997,9 @@
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 2
-    invoke-direct {p0}, Lio/sentry/android/core/DefaultAndroidEventProcessor;->getProguardUUIDs()[Ljava/lang/String;
+    iget-object v1, p0, Lio/sentry/android/core/DefaultAndroidEventProcessor;->rootChecker:Lio/sentry/android/core/internal/util/RootChecker;
 
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    const-string v2, "proGuardUuids"
-
-    .line 3
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 4
-    :cond_0
-    iget-object v1, p0, Lio/sentry/android/core/DefaultAndroidEventProcessor;->rootChecker:Lio/sentry/android/core/util/RootChecker;
-
-    invoke-virtual {v1}, Lio/sentry/android/core/util/RootChecker;->isDeviceRooted()Z
+    invoke-virtual {v1}, Lio/sentry/android/core/internal/util/RootChecker;->isDeviceRooted()Z
 
     move-result v1
 
@@ -2342,20 +2011,20 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5
+    .line 3
     invoke-direct {p0}, Lio/sentry/android/core/DefaultAndroidEventProcessor;->getKernelVersion()Ljava/lang/String;
 
     move-result-object v1
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_0
 
     const-string v2, "kernelVersion"
 
-    .line 6
+    .line 4
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 7
-    :cond_1
+    .line 5
+    :cond_0
     invoke-direct {p0}, Lio/sentry/android/core/DefaultAndroidEventProcessor;->isEmulator()Ljava/lang/Boolean;
 
     move-result-object v1
@@ -2364,73 +2033,20 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8
+    .line 6
     invoke-direct {p0}, Lio/sentry/android/core/DefaultAndroidEventProcessor;->getSideLoadedInfo()Ljava/util/Map;
 
     move-result-object v1
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_1
 
     const-string v2, "sideLoaded"
 
-    .line 9
+    .line 7
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    :cond_2
-    return-object v0
-.end method
-
-.method private mergeDebugImages(Lio/sentry/SentryEvent;)V
-    .locals 3
-
-    .line 1
-    invoke-direct {p0}, Lio/sentry/android/core/DefaultAndroidEventProcessor;->getDebugImages()Ljava/util/List;
-
-    move-result-object v0
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    invoke-virtual {p1}, Lio/sentry/SentryEvent;->getDebugMeta()Lio/sentry/protocol/DebugMeta;
-
-    move-result-object v1
-
-    if-nez v1, :cond_1
-
-    .line 3
-    new-instance v1, Lio/sentry/protocol/DebugMeta;
-
-    invoke-direct {v1}, Lio/sentry/protocol/DebugMeta;-><init>()V
-
-    .line 4
     :cond_1
-    invoke-virtual {v1}, Lio/sentry/protocol/DebugMeta;->getImages()Ljava/util/List;
-
-    move-result-object v2
-
-    if-nez v2, :cond_2
-
-    .line 5
-    invoke-virtual {v1, v0}, Lio/sentry/protocol/DebugMeta;->setImages(Ljava/util/List;)V
-
-    goto :goto_0
-
-    .line 6
-    :cond_2
-    invoke-virtual {v1}, Lio/sentry/protocol/DebugMeta;->getImages()Ljava/util/List;
-
-    move-result-object v2
-
-    invoke-interface {v2, v0}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
-
-    .line 7
-    :goto_0
-    invoke-virtual {p1, v1}, Lio/sentry/SentryEvent;->setDebugMeta(Lio/sentry/protocol/DebugMeta;)V
-
-    return-void
+    return-object v0
 .end method
 
 .method private mergeOS(Lio/sentry/SentryBaseEvent;)V
@@ -2476,7 +2092,7 @@
     const-string v2, "os_"
 
     .line 6
-    invoke-static {v2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -2762,13 +2378,13 @@
 
     .line 5
     :cond_0
-    sget-object v0, Lio/sentry/android/core/DefaultAndroidEventProcessor$1;->$SwitchMap$io$sentry$android$core$util$ConnectivityChecker$Status:[I
+    sget-object v0, Lio/sentry/android/core/DefaultAndroidEventProcessor$1;->$SwitchMap$io$sentry$android$core$internal$util$ConnectivityChecker$Status:[I
 
     iget-object v1, p0, Lio/sentry/android/core/DefaultAndroidEventProcessor;->context:Landroid/content/Context;
 
     iget-object v2, p0, Lio/sentry/android/core/DefaultAndroidEventProcessor;->logger:Lio/sentry/ILogger;
 
-    invoke-static {v1, v2}, Lio/sentry/android/core/util/ConnectivityChecker;->getConnectionStatus(Landroid/content/Context;Lio/sentry/ILogger;)Lio/sentry/android/core/util/ConnectivityChecker$Status;
+    invoke-static {v1, v2}, Lio/sentry/android/core/internal/util/ConnectivityChecker;->getConnectionStatus(Landroid/content/Context;Lio/sentry/ILogger;)Lio/sentry/android/core/internal/util/ConnectivityChecker$Status;
 
     move-result-object v1
 
@@ -2911,7 +2527,7 @@
     iget-object v1, p0, Lio/sentry/android/core/DefaultAndroidEventProcessor;->buildInfoProvider:Lio/sentry/android/core/IBuildInfoProvider;
 
     .line 22
-    invoke-static {p2, v0, v1}, Lio/sentry/android/core/util/ConnectivityChecker;->getConnectionType(Landroid/content/Context;Lio/sentry/ILogger;Lio/sentry/android/core/IBuildInfoProvider;)Ljava/lang/String;
+    invoke-static {p2, v0, v1}, Lio/sentry/android/core/internal/util/ConnectivityChecker;->getConnectionType(Landroid/content/Context;Lio/sentry/ILogger;Lio/sentry/android/core/IBuildInfoProvider;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -3031,11 +2647,11 @@
 
     invoke-virtual {p1, v2, v1}, Lio/sentry/SentryBaseEvent;->setTag(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception p1
 
     .line 5
@@ -3084,7 +2700,7 @@
     check-cast v0, Lio/sentry/protocol/SentryThread;
 
     .line 3
-    invoke-static {v0}, Lio/sentry/android/core/util/MainThreadChecker;->isMainThread(Lio/sentry/protocol/SentryThread;)Z
+    invoke-static {v0}, Lio/sentry/android/core/internal/util/MainThreadChecker;->isMainThread(Lio/sentry/protocol/SentryThread;)Z
 
     move-result v1
 
@@ -3173,15 +2789,12 @@
     invoke-direct {p0, p1}, Lio/sentry/android/core/DefaultAndroidEventProcessor;->processNonCachedEvent(Lio/sentry/SentryBaseEvent;)V
 
     .line 3
-    invoke-direct {p0, p1}, Lio/sentry/android/core/DefaultAndroidEventProcessor;->mergeDebugImages(Lio/sentry/SentryEvent;)V
-
-    .line 4
     invoke-direct {p0, p1}, Lio/sentry/android/core/DefaultAndroidEventProcessor;->setThreads(Lio/sentry/SentryEvent;)V
 
     :cond_0
     const/4 v0, 0x1
 
-    .line 5
+    .line 4
     invoke-direct {p0, p1, v0, p2}, Lio/sentry/android/core/DefaultAndroidEventProcessor;->setCommons(Lio/sentry/SentryBaseEvent;ZZ)V
 
     return-object p1
@@ -3190,20 +2803,20 @@
 .method public process(Lio/sentry/protocol/SentryTransaction;Ljava/lang/Object;)Lio/sentry/protocol/SentryTransaction;
     .locals 1
 
-    .line 6
+    .line 5
     invoke-direct {p0, p1, p2}, Lio/sentry/android/core/DefaultAndroidEventProcessor;->shouldApplyScopeData(Lio/sentry/SentryBaseEvent;Ljava/lang/Object;)Z
 
     move-result p2
 
     if-eqz p2, :cond_0
 
-    .line 7
+    .line 6
     invoke-direct {p0, p1}, Lio/sentry/android/core/DefaultAndroidEventProcessor;->processNonCachedEvent(Lio/sentry/SentryBaseEvent;)V
 
     :cond_0
     const/4 v0, 0x0
 
-    .line 8
+    .line 7
     invoke-direct {p0, p1, v0, p2}, Lio/sentry/android/core/DefaultAndroidEventProcessor;->setCommons(Lio/sentry/SentryBaseEvent;ZZ)V
 
     return-object p1

@@ -133,7 +133,7 @@
     iget-object v1, p0, Lcom/google/android/material/textfield/p;->f:Lcom/google/android/material/textfield/TextInputLayout$g;
 
     .line 10
-    iget-object v0, v0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Ljava/util/LinkedHashSet;
+    iget-object v0, v0, Lcom/google/android/material/textfield/TextInputLayout;->l0:Ljava/util/LinkedHashSet;
 
     invoke-virtual {v0, v1}, Ljava/util/LinkedHashSet;->add(Ljava/lang/Object;)Z
 

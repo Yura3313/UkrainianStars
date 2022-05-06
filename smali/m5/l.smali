@@ -10,5 +10,5 @@
 .method public abstract b()Lcom/google/crypto/tink/shaded/protobuf/a0;
 .end method
 
-.method public abstract c()Lm5/t;
+.method public abstract c()I
 .end method

@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method public final a(Landroid/content/Context;Ljava/lang/String;)Lj3/yl0;
+.method public final a(Landroid/content/Context;Ljava/lang/String;)Lj3/im0;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -26,7 +26,7 @@
             "Landroid/content/Context;",
             "Ljava/lang/String;",
             ")",
-            "Lj3/yl0<",
+            "Lj3/im0<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -35,14 +35,14 @@
     const/4 p1, 0x0
 
     .line 1
-    invoke-static {p1}, Lj3/ul0;->i(Ljava/lang/Object;)Lj3/yl0;
+    invoke-static {p1}, Lj3/em0;->j(Ljava/lang/Object;)Lj3/im0;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final b(Landroid/content/Context;Ljava/lang/String;Landroid/view/MotionEvent;Landroid/view/MotionEvent;)Lj3/yl0;
+.method public final b(Landroid/content/Context;Ljava/lang/String;Landroid/view/MotionEvent;Landroid/view/MotionEvent;)Lj3/im0;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -52,7 +52,7 @@
             "Landroid/view/MotionEvent;",
             "Landroid/view/MotionEvent;",
             ")",
-            "Lj3/yl0<",
+            "Lj3/im0<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -61,7 +61,7 @@
     const/4 p1, 0x0
 
     .line 1
-    invoke-static {p1}, Lj3/ul0;->i(Ljava/lang/Object;)Lj3/yl0;
+    invoke-static {p1}, Lj3/em0;->j(Ljava/lang/Object;)Lj3/im0;
 
     move-result-object p1
 

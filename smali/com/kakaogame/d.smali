@@ -4,7 +4,21 @@
 
 
 # direct methods
-.method public static a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+.method public static a(Ljava/lang/String;II)I
+    .locals 0
+
+    invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
+
+    move-result p0
+
+    add-int/2addr p0, p1
+
+    mul-int p0, p0, p2
+
+    return p0
+.end method
+
+.method public static b(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
     .locals 1
 
     invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;

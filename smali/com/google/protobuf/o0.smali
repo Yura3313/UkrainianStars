@@ -10,5 +10,5 @@
 .method public abstract b()Lcom/google/protobuf/q0;
 .end method
 
-.method public abstract c()Lcom/google/protobuf/e1;
+.method public abstract c()I
 .end method

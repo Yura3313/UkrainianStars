@@ -16,15 +16,15 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:Z
+.field public final g:Ljava/lang/String;
 
 .field public final h:Z
 
-.field public final i:Landroid/content/Context;
+.field public final i:Z
 
-.field public final j:Z
+.field public final j:Landroid/content/Context;
+
+.field public final k:Z
 
 
 # direct methods
@@ -48,29 +48,29 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/zzj;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/common/zzj;->g:Ljava/lang/String;
 
     .line 3
-    iput-boolean p2, p0, Lcom/google/android/gms/common/zzj;->b:Z
+    iput-boolean p2, p0, Lcom/google/android/gms/common/zzj;->h:Z
 
     .line 4
-    iput-boolean p3, p0, Lcom/google/android/gms/common/zzj;->h:Z
+    iput-boolean p3, p0, Lcom/google/android/gms/common/zzj;->i:Z
 
     .line 5
-    invoke-static {p4}, Lcom/google/android/gms/dynamic/IObjectWrapper$Stub;->P0(Landroid/os/IBinder;)Lcom/google/android/gms/dynamic/IObjectWrapper;
+    invoke-static {p4}, Lcom/google/android/gms/dynamic/IObjectWrapper$Stub;->Q0(Landroid/os/IBinder;)Lcom/google/android/gms/dynamic/IObjectWrapper;
 
     move-result-object p1
 
-    invoke-static {p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;->X0(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
+    invoke-static {p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;->Y0(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Landroid/content/Context;
 
-    iput-object p1, p0, Lcom/google/android/gms/common/zzj;->i:Landroid/content/Context;
+    iput-object p1, p0, Lcom/google/android/gms/common/zzj;->j:Landroid/content/Context;
 
     .line 6
-    iput-boolean p5, p0, Lcom/google/android/gms/common/zzj;->j:Z
+    iput-boolean p5, p0, Lcom/google/android/gms/common/zzj;->k:Z
 
     return-void
 .end method
@@ -90,7 +90,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/common/zzj;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/zzj;->g:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -100,7 +100,7 @@
     const/4 v0, 0x2
 
     .line 4
-    iget-boolean v1, p0, Lcom/google/android/gms/common/zzj;->b:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/common/zzj;->h:Z
 
     const/4 v3, 0x4
 
@@ -113,7 +113,7 @@
     const/4 v0, 0x3
 
     .line 7
-    iget-boolean v1, p0, Lcom/google/android/gms/common/zzj;->h:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/common/zzj;->i:Z
 
     .line 8
     invoke-static {p1, v0, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -122,7 +122,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 10
-    iget-object v0, p0, Lcom/google/android/gms/common/zzj;->i:Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/android/gms/common/zzj;->j:Landroid/content/Context;
 
     .line 11
     new-instance v1, Lcom/google/android/gms/dynamic/ObjectWrapper;
@@ -135,7 +135,7 @@
     const/4 v0, 0x5
 
     .line 13
-    iget-boolean v1, p0, Lcom/google/android/gms/common/zzj;->j:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/common/zzj;->k:Z
 
     .line 14
     invoke-static {p1, v0, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V

@@ -30,7 +30,7 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/Class;
+.field public final g:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -41,7 +41,7 @@
     .end annotation
 .end field
 
-.field public final b:Z
+.field public final h:Z
 
 
 # direct methods
@@ -65,19 +65,19 @@
     .line 1
     invoke-direct {p0}, Lcom/supercell/id/ui/BackStack$Entry;-><init>()V
 
-    iput-boolean p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->b:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
 
     .line 2
     const-class p1, Lcom/supercell/id/ui/tutorial/TutorialFragment;
 
-    iput-object p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->a:Ljava/lang/Class;
+    iput-object p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->g:Ljava/lang/Class;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public A(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+.method public B(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -94,7 +94,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    const-class p1, Luc/j1;
+    const-class p1, Lrc/j1;
 
     return-object p1
 
@@ -102,14 +102,14 @@
     const-string p1, "mainActivity"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public D(Lcom/supercell/id/ui/MainActivity;III)I
+.method public E(Lcom/supercell/id/ui/MainActivity;III)I
     .locals 0
 
     if-eqz p1, :cond_0
@@ -122,7 +122,7 @@
     const-string p1, "mainActivity"
 
     .line 1
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -142,14 +142,14 @@
     const-string p1, "mainActivity"
 
     .line 1
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public U(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
+.method public T(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -158,7 +158,7 @@
             ")",
             "Ljava/lang/Class<",
             "+",
-            "Luc/g1;",
+            "Lrc/g1;",
             ">;"
         }
     .end annotation
@@ -168,29 +168,29 @@
     const-string v0, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0}, Lsc/i;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
+    invoke-static {p1, v0}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
     .line 2
-    iget-boolean p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->b:Z
+    iget-boolean p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
 
     if-eqz p1, :cond_0
 
-    const-class p1, Luc/k1;
+    const-class p1, Lrc/k1;
 
     goto :goto_0
 
     :cond_0
-    const-class p1, Luc/z;
+    const-class p1, Lrc/a0;
 
     goto :goto_0
 
     .line 3
     :cond_1
-    iget-boolean p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->b:Z
+    iget-boolean p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
 
     if-eqz p1, :cond_2
 
@@ -208,7 +208,7 @@
     const-string p1, "mainActivity"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -234,9 +234,9 @@
 
     check-cast p1, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->b:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
 
-    iget-boolean p1, p1, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->b:Z
+    iget-boolean p1, p1, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
 
     if-ne v0, p1, :cond_0
 
@@ -257,7 +257,7 @@
 .method public hashCode()I
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->b:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
 
     if-eqz v0, :cond_0
 
@@ -267,7 +267,7 @@
     return v0
 .end method
 
-.method public j()Ljava/lang/Class;
+.method public i()Ljava/lang/Class;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -280,32 +280,23 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->a:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->g:Ljava/lang/Class;
 
     return-object v0
 .end method
 
-.method public toString()Ljava/lang/String;
-    .locals 3
+.method public t()Z
+    .locals 1
 
-    const-string v0, "BackStackEntry(isFirstPage="
+    .line 1
+    iget-boolean v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    xor-int/lit8 v0, v0, 0x1
 
-    move-result-object v0
-
-    iget-boolean v1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->b:Z
-
-    const-string v2, ")"
-
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/i;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    return v0
 .end method
 
-.method public u0(Lcom/supercell/id/ui/MainActivity;)Z
+.method public t0(Lcom/supercell/id/ui/MainActivity;)Z
     .locals 1
 
     if-eqz p1, :cond_2
@@ -313,13 +304,13 @@
     const-string v0, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0}, Lsc/i;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
+    invoke-static {p1, v0}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    iget-boolean p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->b:Z
+    iget-boolean p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
 
     if-eqz p1, :cond_0
 
@@ -341,22 +332,31 @@
     const-string p1, "mainActivity"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public w()Z
-    .locals 1
+.method public toString()Ljava/lang/String;
+    .locals 3
 
-    .line 1
-    iget-boolean v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->b:Z
+    const-string v0, "BackStackEntry(isFirstPage="
 
-    xor-int/lit8 v0, v0, 0x1
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    return v0
+    move-result-object v0
+
+    iget-boolean v1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
+
+    const-string v2, ")"
+
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/i;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
@@ -365,7 +365,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    iget-boolean p2, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->b:Z
+    iget-boolean p2, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
 
     .line 2
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
@@ -376,7 +376,7 @@
     const-string p1, "dest"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

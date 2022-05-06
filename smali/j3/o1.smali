@@ -31,14 +31,14 @@
 
     .line 3
     :try_start_0
-    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzadw;->z2()Lcom/google/android/gms/dynamic/IObjectWrapper;
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzadw;->A2()Lcom/google/android/gms/dynamic/IObjectWrapper;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
     .line 4
-    invoke-static {p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;->X0(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
+    invoke-static {p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;->Y0(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -60,7 +60,7 @@
     :try_start_1
     iget-object p1, p0, Lj3/o1;->a:Lcom/google/android/gms/internal/ads/zzadw;
 
-    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzadw;->T0()Landroid/net/Uri;
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzadw;->U0()Landroid/net/Uri;
 
     move-result-object v0
     :try_end_1
@@ -76,7 +76,7 @@
     :try_start_2
     iget-object p1, p0, Lj3/o1;->a:Lcom/google/android/gms/internal/ads/zzadw;
 
-    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzadw;->z4()D
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzadw;->A4()D
 
     move-result-wide v0
     :try_end_2

@@ -1,31 +1,111 @@
 .class public final Lj3/c8;
-.super Ljava/lang/Object;
+.super Lh1/c;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:J
-
-.field public final c:J
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lh1/c<",
+        "Lcom/google/android/gms/internal/ads/zzasc;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;JJ)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/BaseGmsClient$a;Lcom/google/android/gms/common/internal/BaseGmsClient$b;)V
+    .locals 6
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {p1}, Lj3/x8;->a(Landroid/content/Context;)Landroid/content/Context;
+
+    move-result-object v1
+
+    const/16 v3, 0x8
+
+    move-object v0, p0
+
+    move-object v2, p2
+
+    move-object v4, p3
+
+    move-object v5, p4
 
     .line 2
-    iput-object p1, p0, Lj3/c8;->a:Ljava/lang/String;
-
-    .line 3
-    iput-wide p2, p0, Lj3/c8;->b:J
-
-    .line 4
-    iput-wide p4, p0, Lj3/c8;->c:J
+    invoke-direct/range {v0 .. v5}, Lh1/c;-><init>(Landroid/content/Context;Landroid/os/Looper;ILcom/google/android/gms/common/internal/BaseGmsClient$a;Lcom/google/android/gms/common/internal/BaseGmsClient$b;)V
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final G()Lcom/google/android/gms/internal/ads/zzasc;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/DeadObjectException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/common/internal/BaseGmsClient;->v()Landroid/os/IInterface;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzasc;
+
+    return-object v0
+.end method
+
+.method public final synthetic p(Landroid/os/IBinder;)Landroid/os/IInterface;
+    .locals 2
+
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x0
+
+    return-object p1
+
+    :cond_0
+    const-string v0, "com.google.android.gms.ads.internal.request.IAdRequestService"
+
+    .line 1
+    invoke-interface {p1, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+
+    move-result-object v0
+
+    .line 2
+    instance-of v1, v0, Lcom/google/android/gms/internal/ads/zzasc;
+
+    if-eqz v1, :cond_1
+
+    .line 3
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzasc;
+
+    return-object v0
+
+    .line 4
+    :cond_1
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzase;
+
+    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzase;-><init>(Landroid/os/IBinder;)V
+
+    return-object v0
+.end method
+
+.method public final w()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "com.google.android.gms.ads.internal.request.IAdRequestService"
+
+    return-object v0
+.end method
+
+.method public final x()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "com.google.android.gms.ads.service.START"
+
+    return-object v0
 .end method

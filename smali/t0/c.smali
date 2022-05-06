@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final synthetic a:Lt0/d$a;
+.field public final synthetic g:Lt0/d$a;
 
-.field public final synthetic b:Lt0/d;
+.field public final synthetic h:Lt0/d;
 
 
 # direct methods
@@ -17,9 +17,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lt0/c;->b:Lt0/d;
+    iput-object p1, p0, Lt0/c;->h:Lt0/d;
 
-    iput-object p2, p0, Lt0/c;->a:Lt0/d$a;
+    iput-object p2, p0, Lt0/c;->g:Lt0/d$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,9 +44,9 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lt0/c;->b:Lt0/d;
+    iget-object v0, p0, Lt0/c;->h:Lt0/d;
 
-    iget-object v1, p0, Lt0/c;->a:Lt0/d$a;
+    iget-object v1, p0, Lt0/c;->g:Lt0/d$a;
 
     const/high16 v2, 0x3f800000    # 1.0f
 
@@ -55,7 +55,7 @@
     invoke-virtual {v0, v2, v1, v3}, Lt0/d;->a(FLt0/d$a;Z)V
 
     .line 2
-    iget-object v0, p0, Lt0/c;->a:Lt0/d$a;
+    iget-object v0, p0, Lt0/c;->g:Lt0/d$a;
 
     .line 3
     iget v1, v0, Lt0/d$a;->e:F
@@ -87,16 +87,16 @@
     invoke-virtual {v0, v1}, Lt0/d$a;->a(I)V
 
     .line 8
-    iget-object v0, p0, Lt0/c;->b:Lt0/d;
+    iget-object v0, p0, Lt0/c;->h:Lt0/d;
 
-    iget-boolean v1, v0, Lt0/d;->k:Z
+    iget-boolean v1, v0, Lt0/d;->l:Z
 
     if-eqz v1, :cond_0
 
     const/4 v1, 0x0
 
     .line 9
-    iput-boolean v1, v0, Lt0/d;->k:Z
+    iput-boolean v1, v0, Lt0/d;->l:Z
 
     .line 10
     invoke-virtual {p1}, Landroid/animation/Animator;->cancel()V
@@ -110,7 +110,7 @@
     invoke-virtual {p1}, Landroid/animation/Animator;->start()V
 
     .line 13
-    iget-object p1, p0, Lt0/c;->a:Lt0/d$a;
+    iget-object p1, p0, Lt0/c;->g:Lt0/d$a;
 
     invoke-virtual {p1, v1}, Lt0/d$a;->b(Z)V
 
@@ -118,11 +118,11 @@
 
     .line 14
     :cond_0
-    iget p1, v0, Lt0/d;->j:F
+    iget p1, v0, Lt0/d;->k:F
 
     add-float/2addr p1, v2
 
-    iput p1, v0, Lt0/d;->j:F
+    iput p1, v0, Lt0/d;->k:F
 
     :goto_0
     return-void
@@ -132,11 +132,11 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lt0/c;->b:Lt0/d;
+    iget-object p1, p0, Lt0/c;->h:Lt0/d;
 
     const/4 v0, 0x0
 
-    iput v0, p1, Lt0/d;->j:F
+    iput v0, p1, Lt0/d;->k:F
 
     return-void
 .end method

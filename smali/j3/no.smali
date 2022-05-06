@@ -1,42 +1,63 @@
-.class public final synthetic Lj3/no;
+.class public final Lj3/no;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Ljava/lang/Runnable;
-
 
 # instance fields
-.field public final a:Lj3/rl0;
+.field public final a:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "+",
+            "Lj3/im0<",
+            "+",
+            "Lj3/io;",
+            ">;>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lj3/rl0;)V
+.method public constructor <init>(Lj3/io;)V
     .locals 0
 
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj3/no;->a:Lj3/rl0;
+    .line 4
+    invoke-static {p1}, Lj3/em0;->j(Ljava/lang/Object;)Lj3/im0;
+
+    move-result-object p1
+
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lj3/no;->a:Ljava/util/List;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final run()V
-    .locals 3
+.method public constructor <init>(Ljava/util/List;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "+",
+            "Lj3/im0<",
+            "+",
+            "Lj3/io;",
+            ">;>;)V"
+        }
+    .end annotation
 
     .line 1
-    iget-object v0, p0, Lj3/no;->a:Lj3/rl0;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzcmt;
-
-    const/4 v2, 0x3
-
-    invoke-direct {v1, v2}, Lcom/google/android/gms/internal/ads/zzcmt;-><init>(I)V
-
-    invoke-interface {v0, v1}, Lj3/rl0;->d(Ljava/lang/Throwable;)V
+    iput-object p1, p0, Lj3/no;->a:Ljava/util/List;
 
     return-void
 .end method

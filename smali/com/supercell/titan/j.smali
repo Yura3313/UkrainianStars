@@ -1,67 +1,76 @@
 .class public Lcom/supercell/titan/j;
-.super Landroid/widget/RelativeLayout;
+.super Ljava/lang/Object;
 .source "KeyboardDialog.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic g:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
+.method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
+    iput-object p1, p0, Lcom/supercell/titan/j;->g:Ljava/lang/String;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public dispatchKeyEventPreIme(Landroid/view/KeyEvent;)Z
-    .locals 4
+.method public run()V
+    .locals 5
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
+    sget-object v0, Lcom/supercell/titan/KeyboardDialog;->p:Lcom/supercell/titan/KeyboardDialog;
 
-    move-result v0
-
-    const/4 v1, 0x4
-
-    if-ne v0, v1, :cond_1
-
-    invoke-virtual {p1}, Landroid/view/KeyEvent;->getAction()I
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_1
+    if-eqz v0, :cond_0
 
     .line 2
-    sget-object v0, Lcom/supercell/titan/VirtualKeyboardHandler;->d:Lcom/supercell/titan/KeyboardDialog;
-
-    const/4 v2, 0x0
+    iget-object v0, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/p;
 
     if-eqz v0, :cond_0
 
     .line 3
-    invoke-static {}, Lcom/supercell/titan/GameApp;->getInstance()Lcom/supercell/titan/GameApp;
+    iget-object v1, p0, Lcom/supercell/titan/j;->g:Ljava/lang/String;
 
-    move-result-object v0
-
-    new-instance v3, Lcom/supercell/titan/l0;
-
-    invoke-direct {v3, v1, v2}, Lcom/supercell/titan/l0;-><init>(ZZ)V
-
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
+    const/4 v2, 0x1
 
     .line 4
-    :cond_0
-    sput-boolean v2, Lcom/supercell/titan/VirtualKeyboardHandler;->a:Z
+    iput-boolean v2, v0, Lcom/supercell/titan/p;->g:Z
 
     .line 5
-    :cond_1
-    invoke-super {p0, p1}, Landroid/widget/RelativeLayout;->dispatchKeyEventPreIme(Landroid/view/KeyEvent;)Z
+    invoke-virtual {v0}, Landroid/widget/EditText;->getEditableText()Landroid/text/Editable;
 
-    move-result p1
+    move-result-object v2
 
-    return p1
+    .line 6
+    invoke-interface {v2}, Landroid/text/Editable;->length()I
+
+    move-result v3
+
+    const/4 v4, 0x0
+
+    invoke-interface {v2, v4, v3, v1}, Landroid/text/Editable;->replace(IILjava/lang/CharSequence;)Landroid/text/Editable;
+
+    .line 7
+    iput-boolean v4, v0, Lcom/supercell/titan/p;->g:Z
+
+    goto :goto_0
+
+    .line 8
+    :cond_0
+    iget-object v0, p0, Lcom/supercell/titan/j;->g:Ljava/lang/String;
+
+    .line 9
+    sput-object v0, Lcom/supercell/titan/KeyboardDialog;->m:Ljava/lang/String;
+
+    :goto_0
+    return-void
 .end method

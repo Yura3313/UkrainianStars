@@ -23,12 +23,12 @@
     .locals 0
 
     .line 1
-    invoke-static {}, Lw5/p;->b()Lw5/p;
+    invoke-static {}, Lw5/o;->b()Lw5/o;
 
     move-result-object p1
 
     .line 2
-    iget-object p1, p1, Lw5/p;->d:Ljava/util/Queue;
+    iget-object p1, p1, Lw5/o;->d:Ljava/util/Queue;
 
     invoke-interface {p1}, Ljava/util/Queue;->poll()Ljava/lang/Object;
 
@@ -141,11 +141,11 @@
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
-    sget-object v0, Lcom/google/firebase/iid/FirebaseInstanceId;->j:Lw5/q;
+    sget-object v0, Lcom/google/firebase/iid/FirebaseInstanceId;->j:Lw5/p;
 
     const-string v1, ""
 
-    invoke-virtual {v0, v1}, Lw5/q;->h(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lw5/p;->h(Ljava/lang/String;)V
 
     .line 9
     invoke-virtual {p1}, Lcom/google/firebase/iid/FirebaseInstanceId;->b()V

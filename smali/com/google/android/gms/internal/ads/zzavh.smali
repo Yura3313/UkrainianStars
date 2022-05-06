@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final b:I
+.field public final h:I
 
 
 # direct methods
@@ -17,10 +17,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/internal/ads/zzauj;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzavh;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzavh;->g:Ljava/lang/String;
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/internal/ads/zzavh;->b:I
+    iput p2, p0, Lcom/google/android/gms/internal/ads/zzavh;->h:I
 
     return-void
 .end method
@@ -36,12 +36,12 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzavh;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzavh;->g:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method public final v0()I
+.method public final w0()I
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -50,7 +50,7 @@
     .end annotation
 
     .line 1
-    iget v0, p0, Lcom/google/android/gms/internal/ads/zzavh;->b:I
+    iget v0, p0, Lcom/google/android/gms/internal/ads/zzavh;->h:I
 
     return v0
 .end method

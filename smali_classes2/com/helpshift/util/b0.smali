@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final a:[I
+.field public final g:[I
 
 
 # direct methods
@@ -50,7 +50,7 @@
 
     new-array v1, v1, [I
 
-    iput-object v1, p0, Lcom/helpshift/util/b0;->a:[I
+    iput-object v1, p0, Lcom/helpshift/util/b0;->g:[I
 
     .line 4
     :goto_0
@@ -59,7 +59,7 @@
     if-ge v0, v1, :cond_0
 
     .line 5
-    iget-object v1, p0, Lcom/helpshift/util/b0;->a:[I
+    iget-object v1, p0, Lcom/helpshift/util/b0;->g:[I
 
     aget-object v2, p1, v0
 
@@ -87,11 +87,11 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lcom/helpshift/util/b0;->a:[I
+    iget-object v0, p0, Lcom/helpshift/util/b0;->g:[I
 
     array-length v0, v0
 
-    iget-object v1, p1, Lcom/helpshift/util/b0;->a:[I
+    iget-object v1, p1, Lcom/helpshift/util/b0;->g:[I
 
     array-length v1, v1
 
@@ -107,7 +107,7 @@
     if-ge v2, v0, :cond_4
 
     .line 2
-    iget-object v3, p0, Lcom/helpshift/util/b0;->a:[I
+    iget-object v3, p0, Lcom/helpshift/util/b0;->g:[I
 
     array-length v4, v3
 
@@ -122,7 +122,7 @@
 
     .line 3
     :goto_1
-    iget-object v4, p1, Lcom/helpshift/util/b0;->a:[I
+    iget-object v4, p1, Lcom/helpshift/util/b0;->g:[I
 
     array-length v5, v4
 
@@ -159,7 +159,7 @@
     return v1
 .end method
 
-.method public b(Lcom/helpshift/util/b0;)Z
+.method public c(Lcom/helpshift/util/b0;)Z
     .locals 1
 
     .line 1
@@ -183,7 +183,20 @@
     return v0
 .end method
 
-.method public c(Lcom/helpshift/util/b0;)Z
+.method public bridge synthetic compareTo(Ljava/lang/Object;)I
+    .locals 0
+
+    .line 1
+    check-cast p1, Lcom/helpshift/util/b0;
+
+    invoke-virtual {p0, p1}, Lcom/helpshift/util/b0;->a(Lcom/helpshift/util/b0;)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public d(Lcom/helpshift/util/b0;)Z
     .locals 1
 
     .line 1
@@ -203,18 +216,5 @@
     const/4 p1, 0x0
 
     :goto_0
-    return p1
-.end method
-
-.method public bridge synthetic compareTo(Ljava/lang/Object;)I
-    .locals 0
-
-    .line 1
-    check-cast p1, Lcom/helpshift/util/b0;
-
-    invoke-virtual {p0, p1}, Lcom/helpshift/util/b0;->a(Lcom/helpshift/util/b0;)I
-
-    move-result p1
-
     return p1
 .end method

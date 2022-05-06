@@ -12,11 +12,11 @@
 
 
 # instance fields
-.field public final a:Landroid/graphics/Typeface;
+.field public final g:Landroid/graphics/Typeface;
 
-.field public final b:Lo4/a$a;
+.field public final h:Lo4/a$a;
 
-.field public h:Z
+.field public i:Z
 
 
 # direct methods
@@ -27,29 +27,29 @@
     invoke-direct {p0}, La2/a0;-><init>()V
 
     .line 2
-    iput-object p2, p0, Lo4/a;->a:Landroid/graphics/Typeface;
+    iput-object p2, p0, Lo4/a;->g:Landroid/graphics/Typeface;
 
     .line 3
-    iput-object p1, p0, Lo4/a;->b:Lo4/a$a;
+    iput-object p1, p0, Lo4/a;->h:Lo4/a$a;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public h(I)V
+.method public b(I)V
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lo4/a;->a:Landroid/graphics/Typeface;
+    iget-object p1, p0, Lo4/a;->g:Landroid/graphics/Typeface;
 
     .line 2
-    iget-boolean v0, p0, Lo4/a;->h:Z
+    iget-boolean v0, p0, Lo4/a;->i:Z
 
     if-nez v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Lo4/a;->b:Lo4/a$a;
+    iget-object v0, p0, Lo4/a;->h:Lo4/a$a;
 
     invoke-interface {v0, p1}, Lo4/a$a;->a(Landroid/graphics/Typeface;)V
 
@@ -57,16 +57,16 @@
     return-void
 .end method
 
-.method public j(Landroid/graphics/Typeface;Z)V
+.method public i(Landroid/graphics/Typeface;Z)V
     .locals 0
 
     .line 1
-    iget-boolean p2, p0, Lo4/a;->h:Z
+    iget-boolean p2, p0, Lo4/a;->i:Z
 
     if-nez p2, :cond_0
 
     .line 2
-    iget-object p2, p0, Lo4/a;->b:Lo4/a$a;
+    iget-object p2, p0, Lo4/a;->h:Lo4/a$a;
 
     invoke-interface {p2, p1}, Lo4/a$a;->a(Landroid/graphics/Typeface;)V
 

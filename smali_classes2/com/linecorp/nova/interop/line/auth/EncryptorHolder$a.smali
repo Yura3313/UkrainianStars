@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final a:Landroid/content/Context;
+.field public final g:Landroid/content/Context;
 
 
 # direct methods
@@ -29,7 +29,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/linecorp/nova/interop/line/auth/EncryptorHolder$a;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/linecorp/nova/interop/line/auth/EncryptorHolder$a;->g:Landroid/content/Context;
 
     return-void
 .end method
@@ -44,7 +44,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/linecorp/nova/interop/line/auth/EncryptorHolder$a;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/linecorp/nova/interop/line/auth/EncryptorHolder$a;->g:Landroid/content/Context;
 
     invoke-virtual {v0, v1}, Lcom/linecorp/nova/security/StringCipher;->initialize(Landroid/content/Context;)V
 

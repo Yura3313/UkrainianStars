@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field public a:Ld9/g;
+.field public g:Ld9/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ld9/g;"
@@ -69,7 +69,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v1, p0, Lcom/helpshift/util/n;->a:Ld9/g;
+    iget-object v1, p0, Lcom/helpshift/util/n;->g:Ld9/g;
 
     if-eqz v1, :cond_0
 
@@ -79,7 +79,7 @@
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
-    check-cast p1, Lm8/a0;
+    check-cast p1, Ln8/w;
 
     .line 5
     invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
@@ -110,7 +110,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v1, p0, Lcom/helpshift/util/n;->a:Ld9/g;
+    iget-object v1, p0, Lcom/helpshift/util/n;->g:Ld9/g;
 
     if-eqz v1, :cond_0
 

@@ -21,25 +21,25 @@
         "Lle/j;",
         "Lke/l<",
         "Ljava/lang/String;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
 
-.field public final synthetic b:Ljava/lang/ref/WeakReference;
+.field public final synthetic h:Ljava/lang/ref/WeakReference;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/authentication/AuthenticationFragment;Ljava/lang/ref/WeakReference;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;->a:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;->g:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;->b:Ljava/lang/ref/WeakReference;
+    iput-object p2, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;->h:Ljava/lang/ref/WeakReference;
 
     const/4 p1, 0x1
 
@@ -61,12 +61,12 @@
     .line 2
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
     .line 3
-    iget-object v0, v0, Lwd/r;->s:Lqd/j;
+    iget-object v0, v0, Lvd/r;->s:Lpd/i;
 
     .line 4
     new-instance v1, Lcom/supercell/id/ui/authentication/b;
@@ -75,10 +75,10 @@
 
     const-string p1, "start_register_btn"
 
-    invoke-virtual {v0, p1, v1}, Lqd/j;->e(Ljava/lang/String;Lke/l;)V
+    invoke-virtual {v0, p1, v1}, Lpd/i;->e(Ljava/lang/String;Lke/l;)V
 
     .line 5
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -86,7 +86,7 @@
     const-string p1, "descriptionText"
 
     .line 6
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

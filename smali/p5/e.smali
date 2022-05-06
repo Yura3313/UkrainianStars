@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
 
 # direct methods
@@ -34,7 +34,7 @@
     invoke-static {p3}, Lp5/m0;->a(I)V
 
     .line 4
-    iget p2, p0, Lp5/e;->a:I
+    iget p2, p0, Lp5/e;->g:I
 
     add-int/lit8 p2, p2, 0x1
 
@@ -52,7 +52,7 @@
     invoke-static {p1, p2}, Ljava/util/Arrays;->copyOf([BI)[B
 
     .line 6
-    iput p3, p0, Lp5/e;->a:I
+    iput p3, p0, Lp5/e;->g:I
 
     return-void
 
@@ -72,7 +72,7 @@
 
     const-string p2, "ikm too short, must be >= "
 
-    invoke-static {p2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 

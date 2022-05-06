@@ -1,23 +1,20 @@
-.class public interface abstract Ly4/j0;
-.super Ljava/lang/Object;
+.class public final Ly4/j0;
+.super Landroidx/fragment/app/t;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Landroidx/fragment/app/t;-><init>()V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract a()Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TT;"
-        }
-    .end annotation
+.method public final b(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    .locals 0
+
+    return-void
 .end method

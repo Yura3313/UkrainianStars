@@ -25,27 +25,27 @@
 
 
 # instance fields
-.field public final a:F
+.field public final g:F
 
-.field public final b:F
-
-.field public final h:I
+.field public final h:F
 
 .field public final i:I
 
 .field public final j:I
 
-.field public final k:F
+.field public final k:I
 
 .field public final l:F
 
-.field public final m:Landroid/os/Bundle;
+.field public final m:F
 
-.field public final n:F
+.field public final n:Landroid/os/Bundle;
 
 .field public final o:F
 
 .field public final p:F
+
+.field public final q:F
 
 
 # direct methods
@@ -69,37 +69,37 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zze;-><init>()V
 
     .line 14
-    iput p1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->a:F
+    iput p1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->g:F
 
     .line 15
-    iput p2, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->b:F
+    iput p2, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->h:F
 
     .line 16
-    iput p3, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->h:I
+    iput p3, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->i:I
 
     .line 17
-    iput p4, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->i:I
+    iput p4, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->j:I
 
     .line 18
-    iput p5, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->j:I
+    iput p5, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->k:I
 
     .line 19
-    iput p6, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->k:F
+    iput p6, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->l:F
 
     .line 20
-    iput p7, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->l:F
+    iput p7, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->m:F
 
     .line 21
-    iput-object p8, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->m:Landroid/os/Bundle;
+    iput-object p8, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->n:Landroid/os/Bundle;
 
     .line 22
-    iput p9, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->n:F
+    iput p9, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->o:F
 
     .line 23
-    iput p10, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->o:F
+    iput p10, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->p:F
 
     .line 24
-    iput p11, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->p:F
+    iput p11, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->q:F
 
     return-void
 .end method
@@ -113,231 +113,86 @@
     .line 2
     check-cast p1, Lcom/google/android/gms/games/stats/zza;
 
-    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->v2()F
+    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->x2()F
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->a:F
+    iput v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->g:F
 
     .line 3
-    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->F()F
+    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->H()F
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->b:F
+    iput v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->h:F
 
     .line 4
-    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->j2()I
-
-    move-result v0
-
-    iput v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->h:I
-
-    .line 5
-    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->h1()I
+    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->l2()I
 
     move-result v0
 
     iput v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->i:I
 
-    .line 6
-    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->Q()I
+    .line 5
+    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->j1()I
 
     move-result v0
 
     iput v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->j:I
 
-    .line 7
-    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->d1()F
+    .line 6
+    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->S()I
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->k:F
+    iput v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->k:I
 
-    .line 8
-    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->X()F
+    .line 7
+    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->f1()F
 
     move-result v0
 
     iput v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->l:F
 
-    .line 9
-    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->f1()F
+    .line 8
+    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->Z()F
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->n:F
+    iput v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->m:F
 
-    .line 10
-    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->g2()F
+    .line 9
+    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->h1()F
 
     move-result v0
 
     iput v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->o:F
 
-    .line 11
-    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->o0()F
+    .line 10
+    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->i2()F
 
     move-result v0
 
     iput v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->p:F
+
+    .line 11
+    invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->q0()F
+
+    move-result v0
+
+    iput v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->q:F
 
     .line 12
     invoke-virtual {p1}, Lcom/google/android/gms/games/stats/zza;->C()Landroid/os/Bundle;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->m:Landroid/os/Bundle;
+    iput-object p1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->n:Landroid/os/Bundle;
 
     return-void
 .end method
 
-.method public static x2(Lcom/google/android/gms/games/stats/PlayerStats;)I
-    .locals 3
-
-    const/16 v0, 0xa
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 1
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->v2()F
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    .line 2
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->F()F
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v1
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    .line 3
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->j2()I
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
-
-    .line 4
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->h1()I
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    const/4 v2, 0x3
-
-    aput-object v1, v0, v2
-
-    .line 5
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->Q()I
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    const/4 v2, 0x4
-
-    aput-object v1, v0, v2
-
-    .line 6
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->d1()F
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v1
-
-    const/4 v2, 0x5
-
-    aput-object v1, v0, v2
-
-    .line 7
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->X()F
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v1
-
-    const/4 v2, 0x6
-
-    aput-object v1, v0, v2
-
-    .line 8
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->f1()F
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v1
-
-    const/4 v2, 0x7
-
-    aput-object v1, v0, v2
-
-    .line 9
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->g2()F
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v1
-
-    const/16 v2, 0x8
-
-    aput-object v1, v0, v2
-
-    .line 10
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->o0()F
-
-    move-result p0
-
-    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object p0
-
-    const/16 v1, 0x9
-
-    aput-object p0, v0, v1
-
-    .line 11
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static y2(Lcom/google/android/gms/games/stats/PlayerStats;Ljava/lang/Object;)Z
+.method public static A2(Lcom/google/android/gms/games/stats/PlayerStats;Ljava/lang/Object;)Z
     .locals 4
 
     .line 1
@@ -361,7 +216,7 @@
     check-cast p1, Lcom/google/android/gms/games/stats/PlayerStats;
 
     .line 3
-    invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->v2()F
+    invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->x2()F
 
     move-result v2
 
@@ -369,7 +224,7 @@
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->v2()F
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->x2()F
 
     move-result v3
 
@@ -384,7 +239,7 @@
     if-eqz v2, :cond_2
 
     .line 4
-    invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->F()F
+    invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->H()F
 
     move-result v2
 
@@ -392,7 +247,7 @@
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->F()F
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->H()F
 
     move-result v3
 
@@ -407,7 +262,7 @@
     if-eqz v2, :cond_2
 
     .line 5
-    invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->j2()I
+    invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->l2()I
 
     move-result v2
 
@@ -415,7 +270,7 @@
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->j2()I
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->l2()I
 
     move-result v3
 
@@ -430,7 +285,7 @@
     if-eqz v2, :cond_2
 
     .line 6
-    invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->h1()I
+    invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->j1()I
 
     move-result v2
 
@@ -438,7 +293,7 @@
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->h1()I
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->j1()I
 
     move-result v3
 
@@ -453,7 +308,7 @@
     if-eqz v2, :cond_2
 
     .line 7
-    invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->Q()I
+    invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->S()I
 
     move-result v2
 
@@ -461,7 +316,7 @@
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->Q()I
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->S()I
 
     move-result v3
 
@@ -476,52 +331,6 @@
     if-eqz v2, :cond_2
 
     .line 8
-    invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->d1()F
-
-    move-result v2
-
-    invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v2
-
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->d1()F
-
-    move-result v3
-
-    invoke-static {v3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v3
-
-    invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    .line 9
-    invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->X()F
-
-    move-result v2
-
-    invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v2
-
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->X()F
-
-    move-result v3
-
-    invoke-static {v3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v3
-
-    invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    .line 10
     invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->f1()F
 
     move-result v2
@@ -544,8 +353,8 @@
 
     if-eqz v2, :cond_2
 
-    .line 11
-    invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->g2()F
+    .line 9
+    invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->Z()F
 
     move-result v2
 
@@ -553,7 +362,53 @@
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->g2()F
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->Z()F
+
+    move-result v3
+
+    invoke-static {v3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 10
+    invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->h1()F
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v2
+
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->h1()F
+
+    move-result v3
+
+    invoke-static {v3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 11
+    invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->i2()F
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v2
+
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->i2()F
 
     move-result v3
 
@@ -568,7 +423,7 @@
     if-eqz v2, :cond_2
 
     .line 12
-    invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->o0()F
+    invoke-interface {p1}, Lcom/google/android/gms/games/stats/PlayerStats;->q0()F
 
     move-result p1
 
@@ -576,7 +431,7 @@
 
     move-result-object p1
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->o0()F
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->q0()F
 
     move-result p0
 
@@ -596,7 +451,7 @@
     return v1
 .end method
 
-.method public static z2(Lcom/google/android/gms/games/stats/PlayerStats;)Ljava/lang/String;
+.method public static B2(Lcom/google/android/gms/games/stats/PlayerStats;)Ljava/lang/String;
     .locals 3
 
     .line 1
@@ -607,7 +462,7 @@
     invoke-direct {v0, p0, v1}, Lc2/f$a;-><init>(Ljava/lang/Object;Lc2/n0;)V
 
     .line 2
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->v2()F
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->x2()F
 
     move-result v1
 
@@ -620,7 +475,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 3
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->F()F
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->H()F
 
     move-result v1
 
@@ -633,7 +488,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 4
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->j2()I
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->l2()I
 
     move-result v1
 
@@ -646,7 +501,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 5
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->h1()I
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->j1()I
 
     move-result v1
 
@@ -659,7 +514,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 6
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->Q()I
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->S()I
 
     move-result v1
 
@@ -672,7 +527,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 7
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->d1()F
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->f1()F
 
     move-result v1
 
@@ -685,7 +540,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 8
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->X()F
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->Z()F
 
     move-result v1
 
@@ -698,7 +553,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 9
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->f1()F
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->h1()F
 
     move-result v1
 
@@ -711,7 +566,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 10
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->g2()F
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->i2()F
 
     move-result v1
 
@@ -724,7 +579,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 11
-    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->o0()F
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->q0()F
 
     move-result p0
 
@@ -744,40 +599,176 @@
     return-object p0
 .end method
 
+.method public static z2(Lcom/google/android/gms/games/stats/PlayerStats;)I
+    .locals 3
+
+    const/16 v0, 0xa
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 1
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->x2()F
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    .line 2
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->H()F
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    aput-object v1, v0, v2
+
+    .line 3
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->l2()I
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v2, 0x2
+
+    aput-object v1, v0, v2
+
+    .line 4
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->j1()I
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v2, 0x3
+
+    aput-object v1, v0, v2
+
+    .line 5
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->S()I
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v2, 0x4
+
+    aput-object v1, v0, v2
+
+    .line 6
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->f1()F
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    const/4 v2, 0x5
+
+    aput-object v1, v0, v2
+
+    .line 7
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->Z()F
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    const/4 v2, 0x6
+
+    aput-object v1, v0, v2
+
+    .line 8
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->h1()F
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    const/4 v2, 0x7
+
+    aput-object v1, v0, v2
+
+    .line 9
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->i2()F
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    const/16 v2, 0x8
+
+    aput-object v1, v0, v2
+
+    .line 10
+    invoke-interface {p0}, Lcom/google/android/gms/games/stats/PlayerStats;->q0()F
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object p0
+
+    const/16 v1, 0x9
+
+    aput-object p0, v0, v1
+
+    .line 11
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    move-result p0
+
+    return p0
+.end method
+
 
 # virtual methods
-.method public F()F
+.method public H()F
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->b:F
+    iget v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->h:F
 
     return v0
 .end method
 
-.method public Q()I
+.method public S()I
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->j:I
+    iget v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->k:I
 
     return v0
 .end method
 
-.method public X()F
+.method public Z()F
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->l:F
-
-    return v0
-.end method
-
-.method public d1()F
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->k:F
+    iget v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->m:F
 
     return v0
 .end method
@@ -786,7 +777,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->y2(Lcom/google/android/gms/games/stats/PlayerStats;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->A2(Lcom/google/android/gms/games/stats/PlayerStats;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -797,12 +788,12 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->n:F
+    iget v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->l:F
 
     return v0
 .end method
 
-.method public g2()F
+.method public h1()F
     .locals 1
 
     .line 1
@@ -811,36 +802,18 @@
     return v0
 .end method
 
-.method public h1()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->i:I
-
-    return v0
-.end method
-
 .method public hashCode()I
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->x2(Lcom/google/android/gms/games/stats/PlayerStats;)I
+    invoke-static {p0}, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->z2(Lcom/google/android/gms/games/stats/PlayerStats;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public j2()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->h:I
-
-    return v0
-.end method
-
-.method public o0()F
+.method public i2()F
     .locals 1
 
     .line 1
@@ -849,24 +822,42 @@
     return v0
 .end method
 
+.method public j1()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->j:I
+
+    return v0
+.end method
+
+.method public l2()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->i:I
+
+    return v0
+.end method
+
+.method public q0()F
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->q:F
+
+    return v0
+.end method
+
 .method public toString()Ljava/lang/String;
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->z2(Lcom/google/android/gms/games/stats/PlayerStats;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->B2(Lcom/google/android/gms/games/stats/PlayerStats;)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
-.end method
-
-.method public v2()F
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->a:F
-
-    return v0
 .end method
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
@@ -882,7 +873,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->a:F
+    iget v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->g:F
 
     const/4 v2, 0x4
 
@@ -895,7 +886,7 @@
     const/4 v0, 0x2
 
     .line 5
-    iget v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->b:F
+    iget v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->h:F
 
     .line 6
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -906,7 +897,7 @@
     const/4 v0, 0x3
 
     .line 8
-    iget v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->h:I
+    iget v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->i:I
 
     .line 9
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -915,7 +906,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 11
-    iget v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->i:I
+    iget v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->j:I
 
     .line 12
     invoke-static {p1, v2, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -926,7 +917,7 @@
     const/4 v0, 0x5
 
     .line 14
-    iget v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->j:I
+    iget v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->k:I
 
     .line 15
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -937,7 +928,7 @@
     const/4 v0, 0x6
 
     .line 17
-    iget v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->k:F
+    iget v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->l:F
 
     .line 18
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -948,7 +939,7 @@
     const/4 v0, 0x7
 
     .line 20
-    iget v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->l:F
+    iget v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->m:F
 
     .line 21
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -959,7 +950,7 @@
     const/16 v0, 0x8
 
     .line 23
-    iget-object v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->m:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->n:Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -969,7 +960,7 @@
     const/16 v0, 0x9
 
     .line 25
-    iget v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->n:F
+    iget v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->o:F
 
     .line 26
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -980,7 +971,7 @@
     const/16 v0, 0xa
 
     .line 28
-    iget v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->o:F
+    iget v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->p:F
 
     .line 29
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -991,7 +982,7 @@
     const/16 v0, 0xb
 
     .line 31
-    iget v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->p:F
+    iget v1, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->q:F
 
     .line 32
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -1003,4 +994,13 @@
     invoke-static {p1, p2}, Ld2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
+.end method
+
+.method public x2()F
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/gms/games/stats/PlayerStatsEntity;->g:F
+
+    return v0
 .end method

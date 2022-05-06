@@ -1,110 +1,150 @@
 .class public final Lj3/xv0;
-.super Ljava/lang/Object;
+.super Lj3/g60;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# static fields
-.field public static final a:I
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lj3/g60<",
+        "Ljava/lang/Integer;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
 
-.field public static final b:Ljava/util/UUID;
+
+# instance fields
+.field public a:Ljava/lang/Long;
+
+.field public b:Ljava/lang/Boolean;
+
+.field public c:Ljava/lang/Boolean;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    sget v0, Lj3/n11;->a:I
-
-    const/16 v1, 0x17
-
-    if-ge v0, v1, :cond_0
-
-    const/16 v0, 0x3fc
-
-    goto :goto_0
-
-    :cond_0
-    const/16 v0, 0x18fc
+    invoke-direct {p0}, Lj3/g60;-><init>()V
 
     .line 2
-    :goto_0
-    sput v0, Lj3/xv0;->a:I
-
-    .line 3
-    new-instance v0, Ljava/util/UUID;
-
-    const-wide/16 v1, 0x0
-
-    invoke-direct {v0, v1, v2, v1, v2}, Ljava/util/UUID;-><init>(JJ)V
-
-    sput-object v0, Lj3/xv0;->b:Ljava/util/UUID;
-
-    .line 4
-    new-instance v0, Ljava/util/UUID;
-
-    const-wide v1, 0x1077efecc0b24d02L
-
-    const-wide v3, -0x531cc3e1ad1d04b5L    # -1.8442503140481377E-92
-
-    invoke-direct {v0, v1, v2, v3, v4}, Ljava/util/UUID;-><init>(JJ)V
-
-    .line 5
-    new-instance v0, Ljava/util/UUID;
-
-    const-wide v1, -0x121074568629b532L    # -3.563403477674908E221
-
-    const-wide v3, -0x5c37d8232ae2de13L
-
-    invoke-direct {v0, v1, v2, v3, v4}, Ljava/util/UUID;-><init>(JJ)V
-
-    .line 6
-    new-instance v0, Ljava/util/UUID;
-
-    const-wide v1, -0x65fb0f8667bfbd7aL
-
-    const-wide v3, -0x546d19a41f77a06bL    # -8.640911267670052E-99
-
-    invoke-direct {v0, v1, v2, v3, v4}, Ljava/util/UUID;-><init>(JJ)V
+    invoke-virtual {p0, p1}, Lj3/xv0;->c(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method public static a(J)J
+
+# virtual methods
+.method public final b()Ljava/util/HashMap;
     .locals 3
-
-    const-wide v0, -0x7fffffffffffffffL    # -4.9E-324
-
-    cmp-long v2, p0, v0
-
-    if-nez v2, :cond_0
-
-    return-wide v0
-
-    :cond_0
-    const-wide/16 v0, 0x3e8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/HashMap<",
+            "Ljava/lang/Integer;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    div-long/2addr p0, v0
+    new-instance v0, Ljava/util/HashMap;
 
-    return-wide p0
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    const/4 v1, 0x0
+
+    .line 2
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lj3/xv0;->a:Ljava/lang/Long;
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v1, 0x1
+
+    .line 3
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lj3/xv0;->b:Ljava/lang/Boolean;
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v1, 0x2
+
+    .line 4
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lj3/xv0;->c:Ljava/lang/Boolean;
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-object v0
 .end method
 
-.method public static b(J)J
-    .locals 3
+.method public final c(Ljava/lang/String;)V
+    .locals 1
 
-    const-wide v0, -0x7fffffffffffffffL    # -4.9E-324
+    .line 1
+    invoke-static {p1}, Lj3/g60;->a(Ljava/lang/String;)Ljava/util/HashMap;
 
-    cmp-long v2, p0, v0
+    move-result-object p1
 
-    if-nez v2, :cond_0
+    if-eqz p1, :cond_0
 
-    return-wide v0
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Long;
+
+    iput-object v0, p0, Lj3/xv0;->a:Ljava/lang/Long;
+
+    const/4 v0, 0x1
+
+    .line 3
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    iput-object v0, p0, Lj3/xv0;->b:Ljava/lang/Boolean;
+
+    const/4 v0, 0x2
+
+    .line 4
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    iput-object p1, p0, Lj3/xv0;->c:Ljava/lang/Boolean;
 
     :cond_0
-    const-wide/16 v0, 0x3e8
-
-    mul-long p0, p0, v0
-
-    return-wide p0
+    return-void
 .end method

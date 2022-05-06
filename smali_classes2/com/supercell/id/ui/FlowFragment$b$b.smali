@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/FlowFragment$b;
+.field public final synthetic g:Lcom/supercell/id/ui/FlowFragment$b;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/FlowFragment$b;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/FlowFragment$b$b;->a:Lcom/supercell/id/ui/FlowFragment$b;
+    iput-object p1, p0, Lcom/supercell/id/ui/FlowFragment$b$b;->g:Lcom/supercell/id/ui/FlowFragment$b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/ui/FlowFragment$b$b;->a:Lcom/supercell/id/ui/FlowFragment$b;
+    iget-object p1, p0, Lcom/supercell/id/ui/FlowFragment$b$b;->g:Lcom/supercell/id/ui/FlowFragment$b;
 
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->v()Landroidx/fragment/app/FragmentActivity;
 

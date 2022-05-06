@@ -111,7 +111,7 @@
 
     move-result-object v6
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     .line 4
     :try_start_1
@@ -137,7 +137,6 @@
 
     move-result-object v2
     :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :cond_1
@@ -146,7 +145,7 @@
 
     goto :goto_2
 
-    :catch_0
+    :catchall_0
     move-exception v1
 
     .line 7
@@ -195,11 +194,11 @@
     .line 10
     invoke-interface/range {v1 .. v7}, Lio/sentry/android/ndk/INativeScope;->addBreadcrumb(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
     goto :goto_3
 
-    :catchall_0
+    :catchall_1
     move-exception p1
 
     .line 11

@@ -539,7 +539,7 @@
     :cond_2
     new-instance v1, Ljava/lang/IllegalStateException;
 
-    invoke-static {v11, v14, v10}, Landroid/support/v4/media/e;->c(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v11, v14, v10}, Lqc/a0;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -714,7 +714,7 @@
     :cond_8
     new-instance v1, Ljava/lang/IllegalStateException;
 
-    invoke-static {v11, v7, v10}, Landroid/support/v4/media/e;->c(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v11, v7, v10}, Lqc/a0;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 

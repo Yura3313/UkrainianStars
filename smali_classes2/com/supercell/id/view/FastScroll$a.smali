@@ -44,7 +44,7 @@
     iget-object v0, p0, Lcom/supercell/id/view/FastScroll$a;->a:Lcom/supercell/id/view/FastScroll;
 
     .line 2
-    iget-object v1, v0, Lcom/supercell/id/view/FastScroll;->a:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v1, v0, Lcom/supercell/id/view/FastScroll;->g:Landroidx/recyclerview/widget/RecyclerView;
 
     if-eqz v1, :cond_0
 

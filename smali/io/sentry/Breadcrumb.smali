@@ -148,6 +148,54 @@
     return-void
 .end method
 
+.method public static debug(Ljava/lang/String;)Lio/sentry/Breadcrumb;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lio/sentry/Breadcrumb;
+
+    invoke-direct {v0}, Lio/sentry/Breadcrumb;-><init>()V
+
+    const-string v1, "debug"
+
+    .line 2
+    invoke-virtual {v0, v1}, Lio/sentry/Breadcrumb;->setType(Ljava/lang/String;)V
+
+    .line 3
+    invoke-virtual {v0, p0}, Lio/sentry/Breadcrumb;->setMessage(Ljava/lang/String;)V
+
+    .line 4
+    sget-object p0, Lio/sentry/SentryLevel;->DEBUG:Lio/sentry/SentryLevel;
+
+    invoke-virtual {v0, p0}, Lio/sentry/Breadcrumb;->setLevel(Lio/sentry/SentryLevel;)V
+
+    return-object v0
+.end method
+
+.method public static error(Ljava/lang/String;)Lio/sentry/Breadcrumb;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lio/sentry/Breadcrumb;
+
+    invoke-direct {v0}, Lio/sentry/Breadcrumb;-><init>()V
+
+    const-string v1, "error"
+
+    .line 2
+    invoke-virtual {v0, v1}, Lio/sentry/Breadcrumb;->setType(Ljava/lang/String;)V
+
+    .line 3
+    invoke-virtual {v0, p0}, Lio/sentry/Breadcrumb;->setMessage(Ljava/lang/String;)V
+
+    .line 4
+    sget-object p0, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
+
+    invoke-virtual {v0, p0}, Lio/sentry/Breadcrumb;->setLevel(Lio/sentry/SentryLevel;)V
+
+    return-object v0
+.end method
+
 .method public static http(Ljava/lang/String;Ljava/lang/String;)Lio/sentry/Breadcrumb;
     .locals 2
 
@@ -200,6 +248,284 @@
 
     :cond_0
     return-object p0
+.end method
+
+.method public static info(Ljava/lang/String;)Lio/sentry/Breadcrumb;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lio/sentry/Breadcrumb;
+
+    invoke-direct {v0}, Lio/sentry/Breadcrumb;-><init>()V
+
+    const-string v1, "info"
+
+    .line 2
+    invoke-virtual {v0, v1}, Lio/sentry/Breadcrumb;->setType(Ljava/lang/String;)V
+
+    .line 3
+    invoke-virtual {v0, p0}, Lio/sentry/Breadcrumb;->setMessage(Ljava/lang/String;)V
+
+    .line 4
+    sget-object p0, Lio/sentry/SentryLevel;->INFO:Lio/sentry/SentryLevel;
+
+    invoke-virtual {v0, p0}, Lio/sentry/Breadcrumb;->setLevel(Lio/sentry/SentryLevel;)V
+
+    return-object v0
+.end method
+
+.method public static navigation(Ljava/lang/String;Ljava/lang/String;)Lio/sentry/Breadcrumb;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lio/sentry/Breadcrumb;
+
+    invoke-direct {v0}, Lio/sentry/Breadcrumb;-><init>()V
+
+    const-string v1, "navigation"
+
+    .line 2
+    invoke-virtual {v0, v1}, Lio/sentry/Breadcrumb;->setCategory(Ljava/lang/String;)V
+
+    .line 3
+    invoke-virtual {v0, v1}, Lio/sentry/Breadcrumb;->setType(Ljava/lang/String;)V
+
+    const-string v1, "from"
+
+    .line 4
+    invoke-virtual {v0, v1, p0}, Lio/sentry/Breadcrumb;->setData(Ljava/lang/String;Ljava/lang/Object;)V
+
+    const-string p0, "to"
+
+    .line 5
+    invoke-virtual {v0, p0, p1}, Lio/sentry/Breadcrumb;->setData(Ljava/lang/String;Ljava/lang/Object;)V
+
+    return-object v0
+.end method
+
+.method public static query(Ljava/lang/String;)Lio/sentry/Breadcrumb;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lio/sentry/Breadcrumb;
+
+    invoke-direct {v0}, Lio/sentry/Breadcrumb;-><init>()V
+
+    const-string v1, "query"
+
+    .line 2
+    invoke-virtual {v0, v1}, Lio/sentry/Breadcrumb;->setType(Ljava/lang/String;)V
+
+    .line 3
+    invoke-virtual {v0, p0}, Lio/sentry/Breadcrumb;->setMessage(Ljava/lang/String;)V
+
+    return-object v0
+.end method
+
+.method public static transaction(Ljava/lang/String;)Lio/sentry/Breadcrumb;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lio/sentry/Breadcrumb;
+
+    invoke-direct {v0}, Lio/sentry/Breadcrumb;-><init>()V
+
+    const-string v1, "default"
+
+    .line 2
+    invoke-virtual {v0, v1}, Lio/sentry/Breadcrumb;->setType(Ljava/lang/String;)V
+
+    const-string v1, "sentry.transaction"
+
+    .line 3
+    invoke-virtual {v0, v1}, Lio/sentry/Breadcrumb;->setCategory(Ljava/lang/String;)V
+
+    .line 4
+    invoke-virtual {v0, p0}, Lio/sentry/Breadcrumb;->setMessage(Ljava/lang/String;)V
+
+    return-object v0
+.end method
+
+.method public static ui(Ljava/lang/String;Ljava/lang/String;)Lio/sentry/Breadcrumb;
+    .locals 3
+
+    .line 1
+    new-instance v0, Lio/sentry/Breadcrumb;
+
+    invoke-direct {v0}, Lio/sentry/Breadcrumb;-><init>()V
+
+    const-string v1, "default"
+
+    .line 2
+    invoke-virtual {v0, v1}, Lio/sentry/Breadcrumb;->setType(Ljava/lang/String;)V
+
+    .line 3
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "ui."
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Lio/sentry/Breadcrumb;->setCategory(Ljava/lang/String;)V
+
+    .line 4
+    invoke-virtual {v0, p1}, Lio/sentry/Breadcrumb;->setMessage(Ljava/lang/String;)V
+
+    return-object v0
+.end method
+
+.method public static user(Ljava/lang/String;Ljava/lang/String;)Lio/sentry/Breadcrumb;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lio/sentry/Breadcrumb;
+
+    invoke-direct {v0}, Lio/sentry/Breadcrumb;-><init>()V
+
+    const-string v1, "user"
+
+    .line 2
+    invoke-virtual {v0, v1}, Lio/sentry/Breadcrumb;->setType(Ljava/lang/String;)V
+
+    .line 3
+    invoke-virtual {v0, p0}, Lio/sentry/Breadcrumb;->setCategory(Ljava/lang/String;)V
+
+    .line 4
+    invoke-virtual {v0, p1}, Lio/sentry/Breadcrumb;->setMessage(Ljava/lang/String;)V
+
+    return-object v0
+.end method
+
+.method public static userInteraction(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/sentry/Breadcrumb;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
+
+    move-result-object v0
+
+    invoke-static {p0, p1, p2, v0}, Lio/sentry/Breadcrumb;->userInteraction(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Lio/sentry/Breadcrumb;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static userInteraction(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Lio/sentry/Breadcrumb;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;)",
+            "Lio/sentry/Breadcrumb;"
+        }
+    .end annotation
+
+    .line 2
+    new-instance v0, Lio/sentry/Breadcrumb;
+
+    invoke-direct {v0}, Lio/sentry/Breadcrumb;-><init>()V
+
+    const-string v1, "user"
+
+    .line 3
+    invoke-virtual {v0, v1}, Lio/sentry/Breadcrumb;->setType(Ljava/lang/String;)V
+
+    .line 4
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "ui."
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Lio/sentry/Breadcrumb;->setCategory(Ljava/lang/String;)V
+
+    if-eqz p1, :cond_0
+
+    const-string p0, "view.id"
+
+    .line 5
+    invoke-virtual {v0, p0, p1}, Lio/sentry/Breadcrumb;->setData(Ljava/lang/String;Ljava/lang/Object;)V
+
+    :cond_0
+    if-eqz p2, :cond_1
+
+    const-string p0, "view.class"
+
+    .line 6
+    invoke-virtual {v0, p0, p2}, Lio/sentry/Breadcrumb;->setData(Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 7
+    :cond_1
+    invoke-interface {p3}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    move-result-object p0
+
+    invoke-interface {p0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object p0
+
+    :goto_0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/util/Map$Entry;
+
+    .line 8
+    invoke-virtual {v0}, Lio/sentry/Breadcrumb;->getData()Ljava/util/Map;
+
+    move-result-object p2
+
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object p3
+
+    check-cast p3, Ljava/lang/String;
+
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-interface {p2, p3, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_0
+
+    .line 9
+    :cond_2
+    sget-object p0, Lio/sentry/SentryLevel;->INFO:Lio/sentry/SentryLevel;
+
+    invoke-virtual {v0, p0}, Lio/sentry/Breadcrumb;->setLevel(Lio/sentry/SentryLevel;)V
+
+    return-object v0
 .end method
 
 

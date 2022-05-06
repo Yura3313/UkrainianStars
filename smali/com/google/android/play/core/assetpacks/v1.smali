@@ -2,21 +2,21 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Ly4/m0;
+.implements Ly4/o0;
 .implements Ld5/u;
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
+.field public final g:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ly4/m0;)V
+.method public synthetic constructor <init>(Ly4/o0;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/v1;->a:Ljava/lang/Object;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/v1;->g:Ljava/lang/Object;
 
     return-void
 .end method
@@ -40,12 +40,12 @@
     array-length v0, p1
 
     .line 4
-    new-instance v2, Lp5/b0;
+    new-instance v2, Lp5/c0;
 
-    invoke-direct {v2, p1, v1, v0}, Lp5/b0;-><init>([BII)V
+    invoke-direct {v2, p1, v1, v0}, Lp5/c0;-><init>([BII)V
 
     .line 5
-    iput-object v2, p0, Lcom/google/android/play/core/assetpacks/v1;->a:Ljava/lang/Object;
+    iput-object v2, p0, Lcom/google/android/play/core/assetpacks/v1;->g:Ljava/lang/Object;
 
     return-void
 
@@ -80,9 +80,9 @@
 .method public bridge synthetic a()Ljava/lang/Object;
     .locals 2
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/v1;->a:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/v1;->g:Ljava/lang/Object;
 
-    check-cast v0, Ly4/m0;
+    check-cast v0, Ly4/o0;
 
     check-cast v0, Lcom/google/android/play/core/assetpacks/p2;
 

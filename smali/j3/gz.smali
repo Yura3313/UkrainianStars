@@ -1,146 +1,61 @@
-.class public final Lj3/gz;
+.class public final synthetic Lj3/gz;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lj3/bv0;
 
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lj3/bv0<",
-        "Lj3/d40<",
-        "Lj3/yy;",
-        ">;>;"
-    }
-.end annotation
-
-
-# instance fields
-.field public final a:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/ni0;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final b:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/am0;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final c:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/k60;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final d:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/z60;",
-            ">;"
-        }
-    .end annotation
-.end field
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>(Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/fv0<",
-            "Lj3/ni0;",
-            ">;",
-            "Lj3/fv0<",
-            "Lj3/am0;",
-            ">;",
-            "Lj3/fv0<",
-            "Lj3/k60;",
-            ">;",
-            "Lj3/fv0<",
-            "Lj3/z60;",
-            ">;)V"
-        }
-    .end annotation
+.method public static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v0, Lcom/helpshift/util/v;->j:[I
 
-    .line 2
-    iput-object p1, p0, Lj3/gz;->a:Lj3/fv0;
-
-    .line 3
-    iput-object p2, p0, Lj3/gz;->b:Lj3/fv0;
-
-    .line 4
-    iput-object p3, p0, Lj3/gz;->c:Lj3/fv0;
-
-    .line 5
-    iput-object p4, p0, Lj3/gz;->d:Lj3/fv0;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Lj3/gz;->a:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, [I->clone()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lj3/ni0;
-
-    iget-object v1, p0, Lj3/gz;->b:Lj3/fv0;
-
-    invoke-interface {v1}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lj3/am0;
-
-    iget-object v2, p0, Lj3/gz;->c:Lj3/fv0;
-
-    invoke-interface {v2}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lj3/k60;
-
-    iget-object v3, p0, Lj3/gz;->d:Lj3/fv0;
-
-    invoke-interface {v3}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lj3/z60;
+    check-cast v0, [I
 
     .line 2
-    new-instance v4, Lj3/a70;
+    array-length v0, v0
 
-    invoke-direct {v4, v0, v1, v3, v2}, Lj3/a70;-><init>(Lj3/ni0;Lj3/am0;Lj3/e40;Lj3/g40;)V
+    new-array v0, v0, [I
 
-    return-object v4
+    sput-object v0, Lj3/gz;->a:[I
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    :try_start_0
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    const/4 v0, 0x2
+
+    :try_start_1
+    sget-object v1, Lj3/gz;->a:[I
+
+    aput v0, v1, v2
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
+    :try_start_2
+    sget-object v1, Lj3/gz;->a:[I
+
+    const/4 v2, 0x3
+
+    aput v2, v1, v0
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
+    return-void
 .end method

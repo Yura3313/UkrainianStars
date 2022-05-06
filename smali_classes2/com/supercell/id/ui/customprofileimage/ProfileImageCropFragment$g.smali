@@ -27,14 +27,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$g;->a:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$g;->g:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
     const/4 p1, 0x0
 
@@ -51,7 +51,7 @@
     .line 1
     new-instance v0, Landroid/view/GestureDetector;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$g;->a:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
+    iget-object v1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$g;->g:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
     invoke-virtual {v1}, Landroidx/fragment/app/Fragment;->y()Landroid/content/Context;
 

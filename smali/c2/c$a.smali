@@ -63,7 +63,7 @@
 
     iget-object v7, p0, Lc2/c$a;->d:Ljava/lang/String;
 
-    sget-object v8, Ly3/a;->a:Ly3/a;
+    sget-object v8, Lz3/a;->g:Lz3/a;
 
     const/4 v3, 0x0
 
@@ -73,7 +73,7 @@
 
     move-object v0, v9
 
-    invoke-direct/range {v0 .. v8}, Lc2/c;-><init>(Landroid/accounts/Account;Ljava/util/Set;Ljava/util/Map;ILandroid/view/View;Ljava/lang/String;Ljava/lang/String;Ly3/a;)V
+    invoke-direct/range {v0 .. v8}, Lc2/c;-><init>(Landroid/accounts/Account;Ljava/util/Set;Ljava/util/Map;ILandroid/view/View;Ljava/lang/String;Ljava/lang/String;Lz3/a;)V
 
     return-object v9
 .end method

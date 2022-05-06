@@ -83,31 +83,31 @@
 .method public final register(Lio/sentry/IHub;Lio/sentry/SentryOptions;)V
     .locals 12
 
-    const-string v1, "Hub is required"
+    const-string v0, "Hub is required"
 
     .line 1
-    invoke-static {p1, v1}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    const-string v1, "SentryOptions is required"
+    const-string v0, "SentryOptions is required"
 
     .line 2
-    invoke-static {p2, v1}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p2, v0}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 3
     invoke-virtual {p2}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
 
-    move-result-object v1
+    move-result-object v0
 
-    iput-object v1, p0, Lio/sentry/android/core/EnvelopeFileObserverIntegration;->logger:Lio/sentry/ILogger;
+    iput-object v0, p0, Lio/sentry/android/core/EnvelopeFileObserverIntegration;->logger:Lio/sentry/ILogger;
 
     .line 4
     invoke-virtual {p0, p2}, Lio/sentry/android/core/EnvelopeFileObserverIntegration;->getPath(Lio/sentry/SentryOptions;)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
     const/4 v9, 0x0
 
-    if-nez v1, :cond_0
+    if-nez v0, :cond_0
 
     .line 5
     iget-object v0, p0, Lio/sentry/android/core/EnvelopeFileObserverIntegration;->logger:Lio/sentry/ILogger;
@@ -132,7 +132,7 @@
 
     new-array v4, v4, [Ljava/lang/Object;
 
-    aput-object v1, v4, v9
+    aput-object v0, v4, v9
 
     const-string v5, "Registering EnvelopeFileObserverIntegration for path: %s"
 
@@ -176,7 +176,7 @@
 
     move-object v2, v8
 
-    move-object v3, v1
+    move-object v3, v0
 
     move-object v4, v11
 
@@ -185,16 +185,36 @@
     iput-object v8, p0, Lio/sentry/android/core/EnvelopeFileObserverIntegration;->observer:Lio/sentry/android/core/EnvelopeFileObserver;
 
     .line 13
+    :try_start_0
     invoke-virtual {v8}, Landroid/os/FileObserver;->startWatching()V
 
     .line 14
     iget-object v0, p0, Lio/sentry/android/core/EnvelopeFileObserverIntegration;->logger:Lio/sentry/ILogger;
 
-    new-array v1, v9, [Ljava/lang/Object;
-
     const-string v2, "EnvelopeFileObserverIntegration installed."
 
-    invoke-interface {v0, v10, v2, v1}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
+    new-array v3, v9, [Ljava/lang/Object;
+
+    invoke-interface {v0, v10, v2, v3}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v0
+
+    .line 15
+    invoke-virtual {p2}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
+
+    move-result-object v1
+
+    sget-object v2, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
+
+    const-string v3, "Failed to initialize EnvelopeFileObserverIntegration."
+
+    .line 16
+    invoke-interface {v1, v2, v3, v0}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0
     return-void

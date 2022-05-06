@@ -1,34 +1,46 @@
 .class public Lpb/b;
-.super Lpb/c;
-.source "ConversationFooterViewState.java"
+.super Ljava/lang/Object;
+.source "CameraInstance.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public c:Lm8/t;
+.field public final synthetic g:Z
+
+.field public final synthetic h:Lpb/d;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Lpb/d;Z)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Lpb/c;-><init>()V
+    iput-object p1, p0, Lpb/b;->h:Lpb/d;
 
-    .line 2
-    sget-object v0, Lm8/t;->NONE:Lm8/t;
+    iput-boolean p2, p0, Lpb/b;->g:Z
 
-    iput-object v0, p0, Lpb/b;->c:Lm8/t;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public b()V
-    .locals 0
+.method public run()V
+    .locals 2
 
     .line 1
-    invoke-virtual {p0, p0}, Lpb/c;->a(Ljava/lang/Object;)V
+    iget-object v0, p0, Lpb/b;->h:Lpb/d;
+
+    .line 2
+    iget-object v0, v0, Lpb/d;->c:Lpb/e;
+
+    .line 3
+    iget-boolean v1, p0, Lpb/b;->g:Z
+
+    invoke-virtual {v0, v1}, Lpb/e;->e(Z)V
 
     return-void
 .end method

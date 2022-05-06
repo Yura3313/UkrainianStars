@@ -18,6 +18,14 @@ TID_QUEST_DESC_3,CAUSA <AMOUNT> PUNTI DANNO
 TID_QUEST_DESC_4,RIPRISTINA <AMOUNT> PUNTI SALUTE
 TID_QUEST_DESC_5,TOCCA \qGIOCA ANCORA\q <NUM> VOLTE
 TID_QUEST_DESC_6,GIOCA <NUM> SCONTRI IN UNA SQUADRA
+TID_QUEST_DESC_7_MODE_0,PROTEGGI ALMENO <LIMIT> GEMME PER <AMOUNT> SECONDI
+TID_QUEST_DESC_7_MODE_2,CAUSA <AMOUNT> PUNTI DANNO ALLE CASSAFORTI
+TID_QUEST_DESC_7_MODE_3,FINISCI <AMOUNT> SCONTRI CON ALMENO <LIMIT> STELLE
+TID_QUEST_DESC_7_MODE_5,PASSA LA PALLA <AMOUNT> VOLTE
+TID_QUEST_DESC_7_MODE_6,RACCOGLI <AMOUNT> CUBI DI ENERGIA
+TID_QUEST_DESC_7_MODE_9,RACCOGLI <AMOUNT> CUBI D'ENERGIA MENTRE TU E L'ALLEATO SIETE IN VITA
+TID_QUEST_DESC_7_MODE_17,RIMANI IN UNA ZONA DA CATTURARE PER <AMOUNT> SECONDI
+TID_QUEST_DESC_7_MODE_20,NON FARTI ELIMINARE PER <AMOUNT> ROUND
 TID_QUEST_DESC_1_LEVELED,COMPLETA UN LIVELLO
 TID_QUEST_DESC_1_BIG_GAME,VINCI <AMOUNT> BATTAGLIE
 TID_QUEST_DESC_1_BIG_GAME_SINGLE,VINCI <AMOUNT> BATTAGLIA
@@ -44,7 +52,7 @@ TID_PURCHASE_BRAWL_PASS_PROGRESS_INFO,Vuoi acquistare <NUM> gettoni e avanzare a
 TID_PURCHASE_BRAWL_PASS_TITLE,OTTIENI IL BRAWL PASS
 TID_PURCHASE_BRAWL_PASS_TITLE_PLAIN,BRAWL PASS
 TID_PURCHASE_BRAWL_PASS_TITLE_BUNDLE,BUNDLE DEL BRAWL PASS
-TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,Sblocca le ricompense del Brawl Pass e missioni aggiuntive.
+TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,"Sblocca i premi del Brawl Pass, delle missioni aggiuntive e la possibilità di cambiare due missioni a settimana."
 TID_PURCHASE_BRAWL_PASS_INFO_BUNDLE,Brawl Pass e <NUM> soglie.
 TID_BRAWL_PASS_CANNOT_PURCHASE_BRAWL_PASS_FOR_PAST_SEASON,Impossibile acquistare i Brawl Pass delle stagioni precedenti.
 TID_BRAWL_PASS_CANNOT_PURCHASE_NO_SEASON_FOUND,Impossibile trovare il Brawl Pass della stagione attuale. Riprova più tardi.
@@ -763,6 +771,8 @@ TID_GATCHA_SCREEN_HERO_POWER_LEVEL_UP_UNLOCKED,Miglioramento sbloccato!
 TID_GATCHA_SCREEN_HERO_POWER_LEVEL_UP_AVAILABLE,Miglioramento disponibile!
 TID_GATCHA_SCREEN_VANITY_ITEM_DROP_TITLE_52,REAZIONE
 TID_GATCHA_SCREEN_VANITY_ITEM_DROP_DESC_52,Colleziona le reazioni per esprimerti al meglio!
+TID_GATCHA_SCREEN_VANITY_ITEM_DROP_TITLE_68,GRAFFITI
+TID_GATCHA_SCREEN_VANITY_ITEM_DROP_DESC_68,Colleziona i graffiti per esprimerti al meglio!
 TID_GATCHA_SCREEN_BOX_COUNTER_BONUS,BONUS!
 TID_GATCHA_SCREEN_STAR_POINT_DROP_TITLE,PUNTI STELLARI
 TID_GATCHA_SCREEN_STAR_POINT_DROP_DESC,Usa i punti stellari per acquistare articoli speciali dal negozio.
@@ -1303,6 +1313,10 @@ TID_SHOP_OFFER_TITLE_21,PACCH. REAZIONI
 TID_SHOP_OFFER_TITLE_22,PACCHETTO DI REAZIONI DI
 TID_SHOP_OFFER_TITLE_23,REAZIONE <RARITY>
 TID_SHOP_OFFER_TITLE_27,PACCH. REAZIONI (RARITÀ <RARITY>)
+TID_SHOP_OFFER_TITLE_35,NUOVI GRAFFITI
+TID_SHOP_OFFER_TITLE_36,GRAFFITI
+TID_SHOP_OFFER_INFO_36,Esprimi la tua creatività in battaglia coi graffiti!
+TID_SHOP_OFFER_TITLE_37,SLOT PER GRAFFITI AGGIUNTIVO
 TID_EMOTE_RARITY_0,COMUNE
 TID_EMOTE_RARITY_1,RARA
 TID_EMOTE_RARITY_2,EPICA
@@ -1347,6 +1361,8 @@ TID_SHOP_OFFER_INFO_30,Sblocca un nuovo brawler migliorato al livello <LVL>!
 TID_SHOP_OFFER_INFO_31,Sblocca un brawler <RARITY> casuale migliorato al livello <LVL>!
 TID_SHOP_OFFER_INFO_32,Usa i gettoni equipaggiamento per realizzare e migliorare gli equipaggiamenti!
 TID_SHOP_OFFER_INFO_33,Usa i frammenti per realizzare e migliorare gli equipaggiamenti!
+TID_SHOP_OFFER_INFO_35,Usa i graffiti per decorare i livelli!
+TID_SHOP_OFFER_INFO_37,Uno slot aggiuntivo per i graffiti!
 TID_SHOP_OFFER_HOR_NEW,NUOVO
 TID_SHOP_OFFER_HOR_RARITY,<c<COLOR>><NAME></c>
 TID_SHOP_OFFER_HOR_BRAWLER,BRAWLER
@@ -3199,6 +3215,7 @@ TID_MRP_AGENT_SKIN,AGENTE P
 TID_MRP_AGENT_SKIN_SHOP,AGENTE P
 TID_HERO_INFO_ATTACK_DAMAGE_MULTIPLIER,<AMMO> x <DAMAGE>
 TID_HERO_INFO_DURATION,Durata
+TID_HERO_INFO_CHANGE_CHARACTER_DURATION,Tempo trasformazione
 TID_HERO_INFO_DAMAGE_REDUCTION,Riduzione dei danni
 TID_HERO_INFO_LIFE_STEAL,Cura dai danni
 TID_SPAWN_BUILDING_HEALTH,Salute della minibase
@@ -3604,6 +3621,7 @@ TID_BRAWL_PASS_TAB_PAST_REWARDS,STAGIONE PRECEDENTE
 TID_BRAWL_PASS_PREMIUM,BRAWL PASS
 TID_BRAWL_PASS_FREE,GRATUITO
 TID_BRAWL_PASS_BUY,ATTIVA
+TID_BRAWL_PASS_UNLOCK_ITEM_AT_TIER,SBLOCCA <ITEM> ALLA <NUM>ª SOGLIA
 TID_BRAWL_PASS_SEASON_HEADER,STAGIONE DEL BRAWL PASS
 TID_QUEST_NEW_BATCH_IN,Nuove missioni saranno disponibili tra:
 TID_QUEST_NEW_DAILY_IN,Le missioni giornaliere si aggiornano tra:
@@ -3613,8 +3631,10 @@ TID_BRAWL_PASS_TIER_SHORTCUT,SOGLIA <NUM>: <REWARD>
 TID_BRAWL_PASS_TAIL_TITLE,Cassa enorme bonus!
 TID_BRAWL_PASS_TAIL_INFO,"Una volta completato il percorso, guadagnerai una cassa enorme ogni volta che ottieni <NUM> gettoni!"
 TID_BRAWL_PASS_PURCHASE_OR,O
-TID_EMOTES_POPUP_TITLE,REAZIONI DA BATTAGLIA
-TID_EMOTES_POPUP_TEXT,Scegli le reazioni da utilizzare nelle mischie.
+TID_EMOTES_POPUP_TITLE,REAZIONI
+TID_EMOTES_POPUP_TEXT,Scegli le reazioni da usare nelle mischie.
+TID_SPRAYS_POPUP_TITLE,GRAFFITI
+TID_SPRAYS_POPUP_TEXT,Scegli i graffiti da usare nelle mischie.
 TID_BRAWL_PASS_INFO_TITLE_0,CONTENUTI DEL BRAWL PASS
 TID_BRAWL_PASS_INFO_TEXT_0,"Guadagna tantissimi premi extra, tra cui:\n\nGELINDO, il nuovo brawler cromatico\n\nla skin esclusiva \qGELINDO MERCANTE\q\n\nreazioni esclusive e tante altre bellissime reazioni per GELINDO\n\n<NUM> megacasse\n\nmonete e punti energia\n\n\nInoltre, accelera i tuoi progressi del Brawl Pass grazie a missioni extra!"
 TID_EVIL_GENE_SKIN,EUGENIO MALVAGIO
@@ -3693,6 +3713,7 @@ TID_REGION_CHINA,Cina
 TID_QUALIFIED_TITLE_CHINA,线上资格赛已解锁！
 TID_QUALIFIED_INFO_CHINA,您已成功完成全球锦标赛挑战，真棒！\n您可以前往<cFFE400><URL></c>，通过引导完成赛事报名，继续荒野乱斗全球锦标赛之旅！
 TID_CHINA_REAL_NAME_REGULATION,Registrazione col nome reale effettuata.
+TID_CHINA_LOGIN_DESC,本公司积极履行《网络游戏行业防沉迷自律公约》抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》、《关于进一步严格管理切实防止未成年人沉迷网络游戏的通知》，所有网络游戏用户均需使用有效身份信息完成账号实名注册后方可进入游戏，认证为未成年的玩家将受到防沉迷功能限制。沪网文【2018】8544-517号、新出网证（沪）字33号 著作权人：SUPERCELL OY 出版单位：上海游族信息技术有限公司 运营单位：上海游族信息技术有限公司 国新出审【2020】552号 出版物号：ISBN 978-7-498-07472-0
 TID_POWER_LEVELER,ENERGETIK
 TID_POWER_LEVELER_SHORT_DESC,ASSALITORE
 TID_POWER_LEVELER_DESC,"Non solo è pronto a tutto pur di difendere il prossimo, ma è anche l'anima della festa! Energetik spara addosso ai nemici dei getti di energy drink che si dividono in due all'impatto. Con la super, migliora le sue statistiche in tre fasi e installa modifiche da urlo!"
@@ -3761,10 +3782,21 @@ TID_EMOTE_CATEGORY_4,SLOT N. 1
 TID_EMOTE_CATEGORY_5,SLOT N. 2
 TID_EMOTE_CATEGORY_BRAWLER_PINS,REAZIONI DI <BRAWLER>
 TID_EMOTE_CATEGORY_PLAYER_PINS,REAZIONI DEL GIOCATORE
+TID_SPRAY_CATEGORY_BRAWLER,GRAFFITI DI\n<BRAWLER>
+TID_SPRAY_CATEGORY_SHARED,GRAFFITI CONDIVISI
+TID_SPRAY_CATEGORY_1,SLOT N. 1
+TID_SPRAY_CATEGORY_2,SLOT N. 1
+TID_SPRAY_CATEGORY_3,SLOT N. 2
+TID_SPRAY_CATEGORY_4,SLOT N. 3
+TID_SPRAY_CATEGORY_5,SLOT N. 4
+TID_SPRAY_EQUIP_NOT_OWNED,Non hai ancora sbloccato questi graffiti!
+TID_SPRAY_BRAWLER_EQUIP_NOT_OWNED,Trova questi graffiti nel negozio.
+TID_SPRAY_SLOT_LOCKED,Questo slot per graffiti si sblocca con <NUM> trofei.
 TID_EDIT_MUTE_EMOTES,Disattiva le reazioni in battaglia.
 TID_ACCESSORY_BLOCKED_INVISIBILITY_ALREADY_ACTIVE,Già invisibile!
 TID_ACCESSORY_BLOCKED_SHIELD_ALREADY_ACTIVE,Lo scudo è già attivo!
 TID_ACCESSORY_BLOCKED_ALREADY_ACTIVE,Il gadget è già attivo!
+TID_ACCESSORY_BLOCKED_ALREADY_MAX_LEVEL,Già al livello massimo
 TID_SETTINGS_PLAYER_ID,ID giocatore: <ID>
 TID_NAME_COLOR_REQUIRES_BRAWL_PASS,ACQUISTA IL BRAWL PASS e sfoggia un nome CROMATICO per tutta la stagione.
 TID_RANK_COLLECT_PREVIOUS_REWARD_SPECIFIC,Devi prima ritirare un premio precedente!
@@ -3844,7 +3876,7 @@ TID_TENCENT_THIRDPARTY_INFO,Lista delle informazioni condivise con terze parti
 TID_TENCENT_LOGIN_TOS,Accordo sulle licenze e sui servizi di Tencent Games
 TID_TENCENT_LOGIN_PP,Linee guida di Tencent Games sulla tutela della privacy
 TID_TENCENT_LOGIN_CHILDREN,Linee guida di Tencent Games sulla tutela della privacy infantile
-TID_TENCENT_LOGIN_AGREEMENT_NOTE,"Devi leggere attentamente e accettare\nl'<TOS>,\nle <PP>,\nle <CHILDREN>\ne la <THIRDPARTY>\nprima di accedere al gioco."
+TID_TENCENT_LOGIN_AGREEMENT_NOTE,"Devi leggere attentamente e accettare\nl'<TOS>,\nle <PP>,\nle <CHILDREN>\ne la <THIRDPARTY>\nprima di entrare in gioco."
 TID_KING_OF_HILL_29,Centrale elettrica
 TID_QUESTS_GMV_NOT_AVAILABLE,L'evento non è al momento disponibile.
 TID_IAP_SOM_072001,OFFERTA ESTIVA
@@ -3956,11 +3988,11 @@ TID_SUPPORT_NEW_VERSION_TITLE,Aggiornamento richiesto!
 TID_SUPPORT_NEW_VERSION_TEXT,È disponibile una nuova versione di Brawl Stars. Aggiorna il gioco prima di accedere a \qGuida e assistenza\q.
 TID_SUPPORT_NEW_VERSION_BUTTON,AGGIORNA
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_TITLE,Informazioni
-TID_TENCENT_LOGIN_AGREEMENT_POPUP,"Prima di utilizzare i servizi offerti da Tencent, si prega di leggere attentamente l'<TOS>, le <PP>, le <CHILDREN> e la <THIRDPARTY>, e di assicurarsi di aver compreso appieno le regole e i punti riportati. Nel frattempo, si faccia attenzione ai punti esposti nei suddetti accordi che esonerano o limitano le responsabilità di Tencent, ai punti che limitano i diritti dell'utente, ai provvedimenti scelti per la risoluzione di controversie e alle clausole attributive della competenza giurisdizionale. Dopo aver letto attentamente e accettato l'<TOS>, le <PP>, le <CHILDREN> e la <THIRDPARTY>, si prega di selezionare \qAcconsento\q."
+TID_TENCENT_LOGIN_AGREEMENT_POPUP,"Prima di utilizzare i servizi offerti da Tencent, leggi attentamente l'<TOS>, le <PP>, le <CHILDREN> e la <THIRDPARTY>, e assicurati di aver compreso appieno le regole e i punti riportati. Nel frattempo, presta attenzione ai punti esposti nei suddetti accordi che esonerano o limitano le responsabilità di Tencent, ai punti che limitano i diritti dell'utente, ai provvedimenti scelti per la risoluzione di controversie e alle clausole attributive della competenza giurisdizionale. Dopo aver letto attentamente e accettato l'<TOS>, le <PP>, le <CHILDREN> e la <THIRDPARTY>, premi \qAcconsento\q."
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_AGREE,Acconsento
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_REFUSE,Rifiuto
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_2_TITLE,Avviso importante
-TID_TENCENT_LOGIN_AGREEMENT_POPUP_2,"Ti ricordiamo che devi leggere attentamente e accettare\nl'<TOS>,\nle <PP>,\nle <CHILDREN>\ne la <THIRDPARTY>\nprima di accedere al gioco."
+TID_TENCENT_LOGIN_AGREEMENT_POPUP_2,"Ti ricordiamo che devi leggere attentamente e accettare\nl'<TOS>,\nle <PP>,\nle <CHILDREN>\ne la <THIRDPARTY>\nprima di entrare in gioco."
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_BACK,Torna
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_NO,No
 TID_BRAWL_PASS_SEASON_2,LO STARR PARK È APERTO!
@@ -3968,7 +4000,7 @@ TID_BRAWL_PASS_INFO_TEXT_2,"Vinci un sacco di premi extra, tra cui:\n\n<BRAWLER>
 TID_BRAWL_PASS_SEASON_3,MISCHIE DI NATALE
 TID_BRAWL_PASS_INFO_TEXT_3,"Vinci un sacco di premi extra, tra cui:\n\n<BRAWLER>, il nuovo brawler cromatico\n\nLA SKIN ESCLUSIVA \q<SKIN_1>\q\n\nLA SKIN ESCLUSIVA \q<SKIN_2>\q\n\nREAZIONI ESCLUSIVE E INCREDIBILI per <BRAWLER>\n\n<NUM> MEGACASSE\n\nMONETE e PUNTI ENERGIA AGGIUNTIVI\n\n\nMISSIONI EXTRA per accelerare i progressi del Brawl Pass\n\nEFFETTO CROMATICO ESCLUSIVO PER IL NOME per tutta la stagione"
 TID_BRAWL_PASS_SEASON_4,LA STARR FORCE
-TID_BRAWL_PASS_INFO_TEXT_GENERIC,"Vinci un sacco di premi extra, tra cui:\n\n<BRAWLER>, il nuovo brawler cromatico\n\nLA SKIN ESCLUSIVA \q<SKIN_1>\q\n\nLA SKIN ESCLUSIVA \q<SKIN_2>\q\n\nREAZIONI ESCLUSIVE E INCREDIBILI per <BRAWLER>\n\n<NUM> MEGACASSE\n\nMONETE e PUNTI ENERGIA AGGIUNTIVI\n\n\nMISSIONI EXTRA per accelerare i progressi del Brawl Pass\n\nEFFETTO CROMATICO ESCLUSIVO PER IL NOME per tutta la stagione"
+TID_BRAWL_PASS_INFO_TEXT_GENERIC,"Vinci un sacco di premi extra, tra cui:\n\n<BRAWLER>, la nuova brawler cromatica\n\nLA SKIN ESCLUSIVA A TEMPO LIMITATO \q<SKIN_1>\q\n\nLA SKIN ESCLUSIVA A TEMPO LIMITATO \q<SKIN_2>\q\n\nREAZIONI ESCLUSIVE A TEMPO LIMITATO per <BRAWLER>\n\nGRAFFITI ESCLUSIVI A TEMPO LIMITATO\n\n<NUM> MEGACASSE\n\nMONETE e PUNTI ENERGIA AGGIUNTIVI\n\nMISSIONI EXTRA per accelerare i progressi del Brawl Pass\n\n<NUM> MISSIONI MODIFICABILI IN PIÙ A SETTIMANA\n\nEFFETTO CROMATICO ESCLUSIVO PER IL NOME per tutta la stagione"
 TID_QUESTS_MORE,Mostra tutte le missioni
 TID_QUESTS_MORE_NEXT_SEASON,Hai completato tutte le missioni della stagione <THIS_SEASON>. Troverai nuove missioni una volta che avrà inizio la stagione <NEXT_SEASON>.
 TID_BRAWL_PASS_AUTOCOLLECT_TITLE,Premi della stagione <NUM>
@@ -4073,6 +4105,7 @@ TID_BANKHEIST_29T,Arena delle svolte
 TID_EMOTE_BUNDLE_ROSALLOWEEN,REAZ. DI ROSA A BRAWL-O-WEEN
 TID_EMOTE_BUNDLE_WF,REAZIONI DELLE FINALI MONDIALI
 TID_EMOTE_PLAYERS,DEL GIOCATORE
+TID_SPRAY_PLAYERS,GRAFFITI
 TID_KING_OF_HILL_30,Arena sbalorditiva
 TID_KING_OF_HILL_31,Arena delle imboscate
 TID_PLAYER_MAP_SLOT_CREATE_NEW_TITLE,CREA NUOVA
@@ -4315,11 +4348,11 @@ TID_ICE_DUDE_DESC,"Lou è un brawler che sa mantenere il sangue freddo in ogni o
 TID_ICE_DUDE_WEAPON,GHIACCIO DI SBARRAMENTO
 TID_ICE_DUDE_WEAPON_DESC,Lou bersaglia gli avversari con dei coni di neve fino a congelarli sul posto per <accumulatedStun> secondi.
 TID_ICE_DUDE_ULTI,GHIACCIO ISTANTANEO
-TID_ICE_DUDE_ULTI_DESC,Lou lancia una lattina di sciroppo congelante che crea una lastra di ghiaccio scivoloso in grado di ostacolare i movimenti degli avversari.
+TID_ICE_DUDE_ULTI_DESC,"Lou lancia una lattina di sciroppo congelante, che crea una lastra di ghiaccio scivoloso in grado di assiderare lentamente gli avversari e di ostacolarne i movimenti."
 TID_SPEC_ABI_ICE_DUDE_1,MORSA DEL FREDDO
-TID_SPEC_ABI_ICE_DUDE_1_DESC,"Gli avversari che rimangono sul ghiaccio creato dalla super di Lou vengono congelati poco a poco, proprio come col Ghiaccio di sbarramento."
+TID_SPEC_ABI_ICE_DUDE_1_DESC,La velocità di congelamento della super di Lou aumenta del <c00cc00><VALUE1>%</c>.
 TID_SPEC_ABI_ICE_DUDE_2,IPOTERMIA
-TID_SPEC_ABI_ICE_DUDE_2_DESC,Gli avversari possono perdere fino al <c00cc00><VALUE1>%</c> della loro velocità di ricarica in base alla gravità del congelamento che stanno subendo dagli attacchi di Lou.
+TID_SPEC_ABI_ICE_DUDE_2_DESC,Gli avversari possono causare fino al <c00cc00><VALUE1>%</c> dei punti danno in meno in base alla gravità del congelamento che stanno subendo dagli attacchi di Lou.
 TID_ACCESSORY_ICE_DUDE_GADGET,CORAZZA GHIACCIATA
 TID_ACCESSORY_ICE_DUDE_GADGET_DESC,"Lou si avvolge nel ghiaccio, diventando invulnerabile per <c00cc00><VALUE1></c> secondi."
 TID_INVITE_CLAN_TOKEN_ERROR_FULL,"Impossibile mandare inviti, il club è pieno."
@@ -4702,7 +4735,7 @@ TID_SPEC_ABI_STICKY_BOMB_1_DESC,Ogni nemico nell'area dell'esplosione di un grum
 TID_SPEC_ABI_STICKY_BOMB_2,SUPERAPPICCICUME
 TID_SPEC_ABI_STICKY_BOMB_2_DESC,Le esplosioni secondarie della super di Squeak hanno l'effetto aggiuntivo di rallentare i nemici per <c00cc00><VALUE2></c> secondi.
 TID_ACCESSORY_STICKY_BOMB_RANGE,DISPERSORE DI BAVA
-TID_ACCESSORY_STICKY_BOMB_RANGE_DESC,Il grumo appiccicoso lanciato dopo l'attivazione del gadget ha una portata aumentata del <c00cc00><VALUE1>%</c>.
+TID_ACCESSORY_STICKY_BOMB_RANGE_DESC,Il Grumo appiccicoso lanciato dopo l'attivazione del gadget causa il <c00cc00><VALUE2>%</c> in più di danni e ha una portata aumentata del <c00cc00><VALUE1>%</c>.
 TID_RANKED2_CONFIRM_QUESTION,CONFERMI?
 TID_RANKED_PICK_ERROR_BRAWLER_NOT_OWNED,Non hai questo brawler.
 TID_RANKED_PICK_ERROR_BRAWLER_BANNED,Il brawler è stato proibito. Scegline un altro.
@@ -5224,7 +5257,7 @@ TID_GEAR_TOKEN_SHIELD,Gettoni della difesa
 TID_GEAR_TOKEN_SPEED,Gettoni della velocità
 TID_GEAR_TOKEN_TYPE_DAMAGE,DANNI
 TID_GEAR_TOKEN_TYPE_HEAL,SALUTE
-TID_GEAR_TOKEN_TYPE_RESISTANCE,RESISTENZA
+TID_GEAR_TOKEN_TYPE_VISION,SUPERVISTA
 TID_GEAR_TOKEN_TYPE_SHIELD,DIFESA
 TID_GEAR_TOKEN_TYPE_SPEED,VELOCITÀ
 TID_GEAR_TOKEN,Gettone equip.
@@ -5238,22 +5271,22 @@ TID_GEAR_UPGRADE_BUTTON,MIGLIORA
 TID_GEAR_FOREST_SPEED_TITLE,VELOCITÀ
 TID_GEAR_STANDING_HEAL_TITLE,SALUTE
 TID_GEAR_LOW_HEALTH_DAMAGE_TITLE,DANNI
-TID_GEAR_SLOW_RESISTANCE_TITLE,RESISTENZA
+TID_GEAR_VISION_TITLE,SUPERVISTA
 TID_GEAR_SHIELD_TITLE,DIFESA
 TID_GEAR_FOREST_SPEED_INFO,Migliora del <NUM>% la VELOCITÀ del brawler tra i cespugli.
-TID_GEAR_STANDING_HEAL_INFO,Migliora del <NUM>% la velocità di RIGENERAZIONE DELLA SALUTE.
+TID_GEAR_STANDING_HEAL_INFO,La RIGENERAZIONE DELLA SALUTE è più efficace del <NUM>%.
 TID_GEAR_LOW_HEALTH_DAMAGE_INFO,Fa causare al brawler il <NUM>% di DANNI IN PIÙ quando la sua salute è sotto il 50%.
-TID_GEAR_SLOW_RESISTANCE_INFO,Riduce la durata dello STORDIMENTO e diminuisce gli effetti del RALLENTAMENTO del <NUM>%.
+TID_GEAR_VISION_INFO,RENDE VISIBILI i nemici per <NUM> secondi dopo averli colpiti.
 TID_GEAR_SHIELD_INFO,"Dà al brawler uno SCUDO danneggiabile da <NUM> PUNTI SALUTE che si rigenera in 10 secondi, quando il brawler ha la salute piena."
 TID_GEAR_FOREST_SPEED_UPGRADE_INFO,La VELOCITÀ di movimento aumenta nei cespugli.
-TID_GEAR_STANDING_HEAL_UPGRADE_INFO,"Cura la SALUTE del brawler, quando non si muove."
+TID_GEAR_STANDING_HEAL_UPGRADE_INFO,La RIGENERAZIONE DELLA SALUTE è più efficace.
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_INFO,Il brawler infligge più DANNI quando la salute è sotto il 50%.
-TID_GEAR_SLOW_RESISTANCE_UPGRADE_INFO,Riduce la durata dello STORDIMENTO e gli effetti del RALLENTAMENTO.
+TID_GEAR_VISION_UPGRADE_INFO,RENDE VISIBILI i nemici dopo averli colpiti.
 TID_GEAR_SHIELD_UPGRADE_INFO,Applica uno SCUDO che aumenta la SALUTE.
 TID_GEAR_FOREST_SPEED_UPGRADE_TARGET,VELOCITÀ POTENZIATA
-TID_GEAR_STANDING_HEAL_UPGRADE_TARGET,SALUTE RECUPERATA
+TID_GEAR_STANDING_HEAL_UPGRADE_TARGET,BONUS RIGENERAZIONE
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_TARGET,DANNI EXTRA
-TID_GEAR_SLOW_RESISTANCE_UPGRADE_TARGET,RESISTENZA
+TID_GEAR_VISION_UPGRADE_TARGET,DURATA VISIBILITÀ (IN SEC)
 TID_GEAR_SHIELD_UPGRADE_TARGET,SALUTE DELLO SCUDO
 TID_GEAR_UPGRADED,EQUIP. MIGLIORATO
 TID_GEAR_TITLE,EQUIPAGGIAMENTO
@@ -5322,7 +5355,7 @@ TID_CLUB_LEAGUE_TAB_REWARDS,PREMI
 TID_CLUB_LEAGUE_BUTTON_TICKETS,Biglietti:
 TID_CLUB_LEAGUE_EVENT_DAY,GIORNO EVENTI: <NUM>/<MAX>
 TID_CLUB_LEAGUES_BUTTON_EVENT_DAY,<DAY>º giorno
-TID_CLUB_LEAGUES_BUTTON_DAY_NEW,NUOVO GIORNO
+TID_CLUB_LEAGUES_BUTTON_DAY_NEW,NUOVO
 TID_CLUB_LEAGUES_BUTTON_NEXT_EVENTS,PROSSIMI EVENTI
 TID_CLUB_LEAGUES_BUTTON_RACE_COOLDOWN_DESC,Prossimo giorno tra:
 TID_CLUB_LEAGUES_BUTTON_SEASON_COOLDOWN_DESC,La stagione inizia tra:
@@ -5748,7 +5781,7 @@ TID_KICKER_DUDE_WEAPON_DESC,"Fang sferra rapidamente un calcio, con in serbo una
 TID_KICKER_DUDE_ULTI,CALCIO CONCATENATO
 TID_KICKER_DUDE_ULTI_DESC,"Fang sferra un calcio volante che, dopo essere andato a segno contro un avversario, ne colpisce fino a tre di fila, a patto che siano vicini."
 TID_SPEC_ABI_KICKER_DUDE_1,CALCI FURIOSI
-TID_SPEC_ABI_KICKER_DUDE_1_DESC,"Se Fang sconfigge un nemico con la super, questa si ricarica istantaneamente e torna subito a disposizione!"
+TID_SPEC_ABI_KICKER_DUDE_1_DESC,"Se Fang sconfigge un brawler nemico con la super, questa si ricarica istantaneamente e torna subito a disposizione!"
 TID_SPEC_ABI_KICKER_DUDE_2,SUOLE DIVINE
 TID_SPEC_ABI_KICKER_DUDE_2_DESC,"Fang riceve <c00cc00><VALUE2></c> punti danno in meno dagli attacchi subiti, una volta ogni <c00cc00><VALUE1></c> secondi. Riduce fino a un massimo del <c00cc00><VALUE3>%</c> dell'attacco subito."
 TID_ACCESSORY_KICKER_DUDE_GADGET,CORN-FU
@@ -5934,16 +5967,16 @@ TID_ACCESSORY_BASEBALL_STICKY,COLLANTE
 TID_ACCESSORY_BASEBALL_STICKY_DESC,"La prossima volta che Bibi userà la super, la gomma da masticare rallenterà per <c00cc00><VALUE1></c> secondi i nemici che colpisce."
 TID_ACCESSORY_MUMMY_ACID,NUBE ACIDA
 TID_ACCESSORY_MUMMY_ACID_DESC,"La prossima nube di lacca spruzzata da Emz attraverserà le pareti, ma infliggerà il <ccc0000><VALUE1>%</c> di danni in meno."
-TID_FIRST_BLOOD,<name> FA LA PRIMA ELIMINAZIONE!
+TID_FIRST_BLOOD,<name>\nFA LA PRIMA ELIMINAZIONE
 TID_KILL_NUMBER_OWN,ANCORA QUATTRO ELIMINAZIONI!
-TID_KILL_NUMBER_OPPONENT,AI NEMICI MANCANO QUATTRO ELIMINAZIONI!
-TID_ONE_POINT_FROM_VICTORY,UNA ELIMINAZIONE ALLA VITTORIA!
-TID_OPPONENT_ONE_POINT_FROM_VICTORY,UNA ELIMINAZIONE ALLA SCONFITTA!
+TID_KILL_NUMBER_OPPONENT,AI NEMICI MANCANO 4 ELIMINAZIONI
+TID_ONE_POINT_FROM_VICTORY,UNA ELIMINAZIONE ALLA VITTORIA
+TID_OPPONENT_ONE_POINT_FROM_VICTORY,UNA ELIMINAZIONE ALLA SCONFITTA
 TID_VICTORY_MATCH_OVER,VITTORIA!
 TID_LOSS_MATCH_OVER,SCONFITTA!
 TID_SKIN_INFO_CAMPAIGN_LUNAR_BRAWL_2022,Skin della mischia lunare del 2022
-TID_LOGIN_CALENDAR_LEFT_TITLE,RICOMPENSE GIORNALIERE
-TID_LOGIN_CALENDAR_LEFT_SUBTITLE,Accedi al gioco per <cfffc11>15 giorni di seguito</c> per ottenere <cfffc11>ricompense GRATUITE</c> ogni giorno.
+TID_LOGIN_CALENDAR_LEFT_TITLE,SERIE DI REGALI GIORNALIERI
+TID_LOGIN_CALENDAR_LEFT_SUBTITLE,"<cfffc11>ENTRA IN GIOCO OGNI GIORNO PER 15 GIORNI</c> per ritirare i <cfffc11>REGALI</c>. <cfffc11>SE SALTERAI UN GIORNO</c>, non potrai ritirare i regali successivi!"
 TID_LOGIN_CALENDAR_RIGHT_TITLE,RICOMPENSE DI OGGI
 TID_LOGIN_CALENDAR_BUTTON_CLAIM,RITIRA
 TID_LOGIN_CALENDAR_BUTTON_CLOSE,CHIUDI
@@ -5952,7 +5985,7 @@ TID_LOGIN_CALENDAR_CARD_DAY_NUM,<NUM>º GIORNO
 TID_LOGIN_CALENDAR_CARD_AVAILABLE_IN_TIMER,Disponibile tra: <TIME>
 TID_LOGIN_CALENDAR_CARD_TIME_TO_CLAIM,Ritirabile entro: <TIME>
 TID_LOGIN_CALENDAR_REWARD_BRAWLER_CHOICE,SCEGLI UN BRAWLER
-TID_LOGIN_CALENDAR_REWARD_LEVEL_UPGRADE,MIGLIORA UN BRAWLER
+TID_LOGIN_CALENDAR_REWARD_LEVEL_UPGRADE,MIGLIORA\nBRAWLER
 TID_LOGIN_CALENDAR_REWARD_PIN,NUOVA REAZIONE
 TID_LOGIN_CALENDAR_REWARD_SKIN,NUOVA SKIN
 TID_LOGIN_CALENDAR_REWARD_GADGET_CHOICE,SCEGLI UN GADGET
@@ -5975,7 +6008,7 @@ TID_ACCESSORY_SNAKE_OIL_SPREAD,RICHIAMO
 TID_ACCESSORY_SNAKE_OIL_SPREAD_DESC,"Con l'attacco successivo all'attivazione del gadget, Byron spara <c00cc00><VALUE1></c> dardi invece di uno, ognuno dei quali infligge il <ccc0000><VALUE2>%</c> di danni in meno e cura il <ccc0000><VALUE3>%</c> di punti salute in meno."
 TID_GEMGRAB_48,Piane di zaffiro
 TID_ACCESSORY_STICKY_BOMB_VISION,RESIDUO
-TID_ACCESSORY_STICKY_BOMB_VISION_DESC,La prossima esplosione dei grumi gelatinosi di Squeak permette agli alleati di vedere tra i cespugli per <c00cc00><VALUE1></c> secondi.
+TID_ACCESSORY_STICKY_BOMB_VISION_DESC,L'esplosione del Grumo appiccicoso lanciato dopo l'attivazione del gadget lascia dei residui che rallentano i nemici e permettono agli alleati di vedere tra i cespugli per <c00cc00><VALUE1></c> secondi.
 TID_ACCESSORY_ELECTRO_SNIPER_BOUNCE,INVERTITORE DI POLARITÀ
 TID_ACCESSORY_ELECTRO_SNIPER_BOUNCE_DESC,L'elettrocolpo che Belle lancia dopo l'attivazione del gadget rimbalza sulle pareti.
 TID_TUTORIAL_SD_FIRSTBATTLE,"Vince il brawler che sopravvive fino alla fine! Raccogli i cubi di energia dalle casse per potenziarti e non indugiare, perché le nubi tossiche si avvicinano sempre di più!"
@@ -6004,14 +6037,14 @@ TID_LOGIN_CALENDAR_NOTIFICATIONS_TITLE,Non perderti le ricompense gratuite!
 TID_LOGIN_CALENDAR_NOTIFICATIONS_DESCRIPTION,Ricevi una notifica quando c'è una ricompensa da ritirare.
 TID_LOGIN_CALENDAR_NOTIFICATIONS_DECLINE,FORSE PIÙ TARDI
 TID_LOGIN_CALENDAR_NOTIFICATIONS_ACCEPT,AVVISAMI
-TID_LOGIN_CALENDAR_WARNING,Ricorda ti accedere al gioco durante il <VALUE>º giorno o ti perderai tutte le ricompense mancanti!
+TID_LOGIN_CALENDAR_WARNING,Ricorda di accedere al gioco durante il <VALUE>º giorno o ti perderai tutte le ricompense mancanti!
 TID_LOGIN_CALENDAR_TIP_TITLE,DRITTA
 TID_LOGIN_CALENDAR_TIP_SKINS,"Dopo aver selezionato Shelly, usa il pulsante delle skin per farle indossare un'altra skin."
 TID_LOGIN_CALENDAR_TIP_PINS,Usa le reazioni per esprimerti in battaglia!
 TID_LOGIN_CALENDAR_TIP_GADGET,I gadget sono abilità aggiuntive che si possono usare fino a tre volte per battaglia.
 TID_LOGIN_CALENDAR_TIP_STAR_POWER,Le abilità stellari sono abilità passive aggiuntive per il brawler.
 TID_LOGIN_CALENDAR_PINS_DESCRIPTION,La prossima reazione sarà disponibile nel <VALUE>º giorno.\nAccedi tutti i giorni per completare la collezione!
-TID_LOGIN_CALENDAR_BUTTON_TITLE,RICOMPENSA DEL <VALUE>º GIORNO TRA:
+TID_LOGIN_CALENDAR_BUTTON_TITLE,PROSSIMO REGALO TRA:
 TID_LOGIN_CALENDAR_REMINDER_1_TITLE,Ricompense GRATUITE per <HERONAME> per 14 giorni!
 TID_LOGIN_CALENDAR_REMINDER_1_DESCRIPTION,Accedi al gioco tutti i giorni per fare progressi con <HERONAME> e collezionare elementi estetici per il gioco!
 TID_LOGIN_CALENDAR_REMINDER_1_BUTTON,PROSS.
@@ -6098,13 +6131,248 @@ TID_SHOWDOWN_69,In fondo al canyon
 TID_SHOWDOWN_70,Dritti all'obitorio
 TID_RANKED_BATTLE_END_EPIC,Trionfo epico!
 TID_RANKED_BATTLE_END_CLOSE,Battaglia sofferta!
+TID_JETPACK_GIRL,JANET
+TID_JETPACK_GIRL_SHORT_DESC,ASSALITRICE
+TID_JETPACK_GIRL_DESC,"Janet è la stella indiscussa dello spettacolo, che sa come cantargliene quattro a chiunque provi a ostacolarla, inclusa quella combinaguai di sua sorella Bonnie..."
+TID_JETPACK_GIRL_WEAPON,ACUTO
+TID_JETPACK_GIRL_WEAPON_DESC,"Janet intona una nota e più a luno la tiene, più ristretta sarà l'area in cui la concentrerà e maggiori saranno le distanze che coprirà."
+TID_JETPACK_GIRL_ULTI,CRESCENDO
+TID_JETPACK_GIRL_ULTI_DESC,"Janet prende il volo col jetpack e attacca temporaneamente dall'alto, finché la super non si esaurisce."
+TID_SPEC_ABI_JETPACK_GIRL_1,DIETRO LE QUINTE
+TID_SPEC_ABI_JETPACK_GIRL_1_DESC,"Mentre vola col jetpack, Janet può rivelare gli avversari nascosti in un'ampia sezione di cespugli."
+TID_SPEC_ABI_JETPACK_GIRL_2,RISCALDAMENTO VOCALE
+TID_SPEC_ABI_JETPACK_GIRL_2_DESC,L'attacco di Janet si concentra più velocemente del <c00cc00><VALUE1>%</c>.
+TID_ACCESSORY_JETPACK_GIRL_GADGET_1,AMPLIFICATORE
+TID_ACCESSORY_JETPACK_GIRL_GADGET_1_DESC,"Janet posa a terra un amplificatore che causa <c00cc00><VALUE1></c> punti danno al secondo ai nemici vicini, finché non viene distrutto."
+TID_ACCESSORY_JETPACK_GIRL_GADGET_2,PASS PER IL BACKSTAGE
+TID_ACCESSORY_JETPACK_GIRL_GADGET_2_DESC,"L'Acuto di Janet intonato dopo l'attivazione del gadget la spinge all'indietro, addirittura oltre i muri. Più l'attacco è concentrato, maggiore sarà la spinta."
+TID_CANNON_GIRL,BONNIE
+TID_CANNON_GIRL_SHORT_DESC,IBRIDA
+TID_CANNON_GIRL_DESC,"Nonostante quel suo faccino da angelo, Bonnie è una piccola peste ed è sempre pronta a combinare disastri con il suo cannone inanimato Clyde."
+TID_CANNON_GIRL_WEAPON,DENTE DEL GIUDIZIO
+TID_CANNON_GIRL_WEAPON_DESC,Bonnie spara un dente ENORME dalla bocca di Clyde.
+TID_CANNON_GIRL_ULTI,DONNA CANNONE
+TID_CANNON_GIRL_ULTI_DESC,"Clyde spara Bonnie in cielo. La brawler può sorvolare gli ostacoli mentre vola e, all'atterraggio, causa danni ai nemici circostanti."
+TID_CANNON_GIRL_SMALL_WEAPON,BOMBER
+TID_CANNON_GIRL_SMALL_WEAPON_DESC,Bonnie spara delle granate dalle maniche del bomber che indossa.
+TID_CANNON_GIRL_SMALL_ULTI,CLYDE
+TID_CANNON_GIRL_SMALL_ULTI_DESC,Bonnie chiama il suo fido Clyde per prendere a... dentate i nemici che le capitano a tiro.
+TID_SPEC_ABI_CANNON_GIRL_1,POLVERE PIRICA
+TID_SPEC_ABI_CANNON_GIRL_1_DESC,La gittata di Donna cannone aumenta del <c00cc00><VALUE1>%</c>.
+TID_SPEC_ABI_CANNON_GIRL_2,DENTONAZIONE
+TID_SPEC_ABI_CANNON_GIRL_2_DESC,"Il dente sparato con Dente del giudizio si frantuma al contatto, causando <c00cc00><VALUE1></c> punti danno aggiuntivi ai nemici vicini."
+TID_ACCESSORY_CANNON_GIRL_SPEED,KIT DEL TURBO
+TID_ACCESSORY_CANNON_GIRL_SPEED_DESC,La velocità di movimento e di ricarica di Clyde aumentano del <c00cc00><VALUE1>%</c> per <c00cc00><VALUE2></c> secondi.
+TID_ACCESSORY_CANNON_GIRL_DASH,CASCO SPACCADENTI
+TID_ACCESSORY_CANNON_GIRL_DASH_DESC,"Bonnie scatta in avanti e causa <c00cc00><VALUE1></c> punti danno al nemico colpito, oltre a spingerlo indietro."
+TID_ACCESSORY_BLOCKED_REQUIRES_CANNON,Ti serve Clyde!
+TID_ACCESSORY_BLOCKED_REQUIRES_ASSASSIN,Ti serve Bonnie!
+TID_LOGIN_CALENDAR_MISSED,Hai perduto le ricompense per l'accesso restanti.
+TID_ACCESSORY_POWER_LEVELER_EXTRA_LEVELS,SOVRACCARICATORE
+TID_ACCESSORY_POWER_LEVELER_EXTRA_LEVELS_DESC,Energetik sovraccarica i circuiti e aumenta di <c00cc00><VALUE1></c> il livello della sua trasformazione per <c00cc00><VALUE2></c> secondi.
+TID_ACCESSORY_POWER_LEVELER_SHIELD,SCUDO ENERGETIKO
+TID_ACCESSORY_POWER_LEVELER_SHIELD_DESC,"Nei <c00cc00><VALUE1></c> secondi successivi all'attivazione del gadget, Energetik usa il <c00cc00><VALUE2>%</c> dei danni del primo attacco che subisce per ricaricare <c00cc00><VALUE3></c> colpi."
+TID_GAME_MODE_27,INVASIONE ROBOTICA
+TID_GAME_MODE_27_DESC,"Difenditi dall'inesorabile marea di robot e raccogli i bulloni che lasciano cadere dopo essere stati distrutti. La prima squadra con <MAX_SCORE> bulloni, vince."
+TID_INVASION_INTRO_TEXT,Distruggi i robot!
+TID_NOTIFICATION_INVASION,Nuova mappa di INVASIONE ROBOTICA disponibile! Giocaci per ottenere nuove ricompense!
+TID_INVASION_1,Involuzione
+TID_INVASION_2,Divisione
+TID_INVASION_3,Val Verde
+TID_INVASION_4,Quadranti
+TID_INVASION_5,La mischia dei mondi
+TID_INVASION_6,Zona mortale
+TID_INVASION_7,Centro perfetto
+TID_INVASION_8,Sorpresona
+TID_INVASION_9,Attacco metallico
+TID_INVASION_10,Blocchi lineari
+TID_INVASION_11,Corridoi
+TID_INVASION_12,Rive del fiume
+TID_INVASION_13,Partenza
+TID_INVASION_14,Fortini
+TID_INVASION_15,Il bot
+TID_INVASION_16,Cagnara
+TID_SPRAYS_TUTORIAL_TITLE,GRAFFITI
+TID_SPRAYS_TUTORIAL_HEADER,ESPRIMI LA TUA CREATIVITÀ NELLE MISCHIE!
+TID_BRAWL_PASS_CANCEL_QUEST_REROLL,ANNULLA CAMBIO
+TID_BRAWL_PASS_REROLL_QUEST,CAMBIA MISSIONE
+TID_BRAWL_PASS_QUEST_REROLL_COUNT,Cambi disponibili: <num>/<max>
+TID_BRAWL_PASS_QUEST_REROLL_REFRESH_TIME,Nuovi cambi tra: <time>
+TID_YOU_HAVE_USED_ALL_REROLLS,Hai usato tutti i tuoi cambi! Ottienine di più col Brawl Pass.
+TID_YOU_HAVE_USED_ALL_REROLLS_HAS_PREMIUM,Hai usato tutti i cambi che avevi a disposizione.
+TID_QUEST_REROLL_INTRO,SCEGLI UNA MISSIONE DA CAMBIARE
+TID_QUEST_REROLL_ACCEPT,ACCETTA
+TID_QUEST_REROLL_REJECT,RIFIUTA
+TID_REROLL_NOT_POSSIBLE_FOR_ITEM,Impossibile effettuare il cambio.
+TID_CONFIRM_QUEST_REROLL,CAMBIO DELLA MISSIONE
+TID_CONFIRM_QUEST_REROLL_DESC,La nuova missione non riguarderà <char> o <type>.\nCambi restanti: <rerolls>
+TID_CONFIRM_QUEST_REROLL_DESC_ONLY_TYPE,La nuova missione non riguarderà <type>.\nCambi restanti: <rerolls>
+TID_QUEST_TYPE_REQ_WIN,le VITTORIE
+TID_QUEST_TYPE_REQ_KILL,i NEMICI DA SCONFIGGERE
+TID_QUEST_TYPE_REQ_DEAL_DAMAGE,i DANNI INFERTI
+TID_QUEST_TYPE_REQ_HEAL,la SALUTE RIPRISTINATA
+TID_QUEST_TYPE_REQ_PLAY_AGAIN,il tasto \qGIOCA ANCORA\q
+TID_QUEST_TYPE_REQ_TEAM_PLAY,le PARTITE IN SQUADRA
+TID_QUEST_TYPE_REQ_MODE_SPECIFIC,la MODALITÀ SPECIFICA
+TID_CHINA_PRIVACY_SHOW_IN_LEADERBOARDS,APPARI NELLE CLASSIFICHE
+TID_CHINA_PRIVACY_SHOW_PLAYER_PROFILE,MOSTRA PROFILO GIOCATORE
+TID_CHINA_PRIVACY_SHOW_CLUB_DETAILS,MOSTRA INFORMAZIONI SUL CLUB
+TID_CHINA_PRIVACY_ALLOW_SPECTATE,PERMETTI DI OSSERVARE
+TID_CHINA_PRIVACY_INFO_OLD_PLAYERS_TITLE,Avviso importante
+TID_CHINA_PRIVACY_INFO_OLD_PLAYERS_DESC,"Ehilà brawler,\nabbiamo aggiunto in gioco delle opzioni sulla privacy, che sono attive di default. Per modificarle, vai nelle impostazioni e poi apri quelle sulla privacy."
+TID_CHINA_PRIVACY_INFO_NEW_PLAYERS_TITLE,Avviso importante
+TID_CHINA_PRIVACY_INFO_NEW_PLAYERS_DESC,"Ehilà brawler,\nabbiamo aggiunto in gioco delle opzioni sulla privacy, che sono disattivate di default. Vuoi attivarle?"
+TID_CHINA_PRIVACY_INFO_NEW_PLAYERS_BUTTON_ACCEPT,ACCETTA
+TID_CHAT_JUST_DISABLED,Altri giocatori ti hanno segnalato per aver fatto dei commenti inappropriati. La chat rimarrà disattivata per <TIME>.
+TID_CHAT_UNAVAILABLE,Chat disattivata per <TIME>.
+TID_CHAT_BANNED_REASON,Altri giocatori ti hanno segnalato per aver fatto dei commenti inappropriati.
+TID_CHAT_BANNED_PERIOD_OF,Rimarrai zittito/a nella chat globale per:
+TID_CHAT_FAIL_BANNED,Rimarrai zittito/a per <TIME>.
+TID_CHAT_JUST_BANNED,Altri giocatori ti hanno segnalato per aver fatto dei commenti inappropriati. Rimarrai zittito/a per <TIME>.
+TID_TENCENT_CUSTOMER_SUPPORT,Assistenza clienti di Tencent
+TID_SELF_SERVICE_BUTTON,Assistenza automatica
+TID_REPORT_CLUB_CONFIRMATION_TITLE,Vuoi segnalare <NAME>?
+TID_REPORT_CLUB_CONFIRMATION,Vuoi davvero segnalare <NAME> per comportamento inappropriato?
+TID_REPORT_PLAYER_CONFIRMATION_TITLE,Vuoi segnalare <NAME>?
+TID_REPORT_PLAYER_CONFIRMATION,Vuoi davvero segnalare <NAME> per comportamento inappropriato?
+TID_REPORT_BATTLE_PLAYER_CONFIRMATION_TITLE,Vuoi segnalare <NAME>?
+TID_REPORT_BATTLE_PLAYER_CONFIRMATION,Vuoi davvero segnalare <NAME> per comportamento inappropriato?
+TID_DELETE_ACCOUNT_TITLE,Eliminazione dell'account
+TID_UGC_INPUT_FEATURE_UNAVAILABLE,La funzionalità non è al momento disponibile.
+TID_PLAYER_PROFILE_PRIVATE,Il profilo di questo giocatore è privato.
+TID_PLAYER_CLUB_INFO_PRIVATE,Il profilo di questo club è privato.
+TID_CLAN_RESPONSE_111,La funzionalità non è al momento disponibile.
+TID_CLAN_RESPONSE_120,I contenuti della descrizione non sono appropriati. Ti chiediamo di riscriverli.
+TID_CHINA_LOGIN_DESC_YOOZOO,本公司积极履行《网络游戏行业防沉迷自律公约》抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》、《关于进一步严格管理切实防止未成年人沉迷网络游戏的通知》，所有网络游戏用户均需使用有效身份信息完成账号实名注册后方可进入游戏，认证为未成年的玩家将受到防沉迷功能限制。沪网文【2018】8544-517号、新出网证（沪）字33号 著作权人：SUPERCELL OY 出版单位：上海游族信息技术有限公司 运营单位：上海游族信息技术有限公司 批准文号：国新出审【2020】552号 出版物号：ISBN 978-7-498-07472-0
+TID_YOOZOO_LOGIN_AGREEMENTS,"Ho letto attentamente e accetto le <TOS>, la <PP>, le <CHILDREN> e la <THIRDPARTY>."
+TID_YOOZOO_TERMS_CHILDREN,Linee guida di Yoozoo sulla tutela della privacy infantile
+TID_TERMS_CHILDREN_BUTTON_YOOZOO,Linee guida di Yoozoo sulla tutela della privacy infantile
+TID_YOOZOO_THIRDPARTY_INFO,Lista delle informazioni condivise con terze parti
+TID_THIRD_PARTY_SHARING_BUTTON_YOOZOO,Lista delle informazioni condivise con terze parti
+TID_YOOZOO_SYSTEM_SETTINGS_BUTTON,Impostazioni di sistema
+TID_SKIN_PIN_INCLUDED,+ Reazione esclusiva!
+TID_SKIN_PINS_INCLUDED,+ Pacchetto di reazioni esclusive!
+TID_OWN_TEAM_BANS,PROIBIZIONI SQUADRA BLU
+TID_ENEMY_TEAM_BANS,PROIBIZIONI SQUADRA ROSSA
+TID_PRE_PICK_YOUR_BRAWLER,PRESELEZIONA UN BRAWLER
+TID_PRE_PICK,PRESELEZIONA
+TID_CANCEL,ANNULLA
+TID_WANTS_TO_PLAY,VUOLE GIOCARE
+TID_WANT_TO_PLAY,VOGLIONO GIOCARE
+TID_WANTS_TO_PLAY_MULTIPLE_TEAMMATES,<num> ALLEATI
+TID_BRAWL_PASS_SEASON_11,LO STUNT SHOW
+TID_SHOP_STUNTSHOW_SKINS,Skin de \qLo stunt show\q
+TID_SHOP_STUNTSHOW_TITLE,LO STUNT SHOW
+TID_SHOP_STUNTSHOW_INFO,Set di skin
+TID_SKIN_INFO_CAMPAIGN_STUNTSHOW,Skin de \qLo stunt show\q
+TID_EMOTE_BUNDLE_STUNTSHOW_PACK,Reazioni delle skin de \qLo stunt show\q
+TID_EMOTE_BUNDLE_GOLDENWEEK_PACK,Reazioni delle skin della Golden Week
+TID_SKIN_INFO_CAMPAIGN_GOLDENWEEK,Skin della Golden Week
+TID_SHOP_GOLDENWEEK_SKINS,Skin della Golden Week
+TID_SHOP_GOLDENWEEK_TITLE,GOLDEN WEEK
+TID_SHOP_GOLDENWEEK_INFO,Set di skin
+TID_SPRAY_BRAWLER_COMING_SOON,Graffiti del brawler in arrivo...
+TID_SHOP_VILLAINS_SKINS,Skin de \qI Cattivoni\q
+TID_SHOP_VILLAINS_TITLE,I CATTIVONI
+TID_SHOP_VILLAINS_INFO,Set di skin
+TID_EMOTE_BUNDLE_VILLAINS_PACK,Reazioni delle skin de \qI Cattivoni\q
+TID_SKIN_INFO_CAMPAIGN_VILLAINS,Skin de \qI Cattivoni\q
+TID_HOTZONE_33,Zona aperta
+TID_KNOCKOUT_18,Nuova prospettiva
+TID_TRUE_GOLD_BELLE_SKIN,BELLE 24 CARATI
+TID_TRUE_GOLD_BELLE_SKIN_SHOP,BELLE\n24 CARATI
+TID_TRUE_SILVER_BELLE_SKIN,BELLE ARGENTEA
+TID_TRUE_SILVER_BELLE_SKIN_SHOP,BELLE\nARGENTEA
+TID_TRUE_GOLD_STU_SKIN,STU 24 CARATI
+TID_TRUE_GOLD_STU_SKIN_SHOP,STU\n24 CARATI
+TID_TRUE_SILVER_STU_SKIN,STU ARGENTEO
+TID_TRUE_SILVER_STU_SKIN_SHOP,STU\nARGENTEO
+TID_TRUE_GOLD_ASH_SKIN,ASH 24 CARATI
+TID_TRUE_GOLD_ASH_SKIN_SHOP,ASH\n24 CARATI
+TID_TRUE_SILVER_ASH_SKIN,ASH ARGENTEO
+TID_TRUE_SILVER_ASH_SKIN_SHOP,ASH\nARGENTEO
+TID_TRUE_GOLD_MEG_SKIN,MEG 24 CARATI
+TID_TRUE_GOLD_MEG_SKIN_SHOP,MEG\n24 CARATI
+TID_TRUE_SILVER_MEG_SKIN,MEG ARGENTEA
+TID_TRUE_SILVER_MEG_SKIN_SHOP,MEG\nARGENTEA
+TID_TRUE_GOLD_LOLA_SKIN,LOLA 24 CARATI
+TID_TRUE_GOLD_LOLA_SKIN_SHOP,LOLA\n24 CARATI
+TID_TRUE_SILVER_LOLA_SKIN,LOLA ARGENTEA
+TID_TRUE_SILVER_LOLA_SKIN_SHOP,LOLA\nARGENTEA
+TID_CRASH_TEST_DARRYL_SKIN,BARRYL CRASH TEST
+TID_CRASH_TEST_DARRYL_SKIN_SHOP,BARRYL\nCRASH TEST
+TID_BIKER_CARL_SKIN,CARL MOTOCICLISTA
+TID_BIKER_CARL_SKIN_SHOP,CARL\nMOTOCICLISTA
+TID_PYRO_SPIKE_SKIN,SPIKE IGNIFUGO
+TID_PYRO_SPIKE_SKIN_SHOP,SPIKE\nIGNIFUGO
+TID_MONSTER_TRUCK_MEG_SKIN,MEG MONSTER TRUCK
+TID_MONSTER_TRUCK_MEG_SKIN_SHOP,MEG\nMONSTER TRUCK
+TID_OVERLORD_BYRON_SKIN,BYRON SIGNORE DEL MALE
+TID_OVERLORD_BYRON_SKIN_SHOP,BYRON\nSIGNORE DEL MALE
+TID_GALAXY_STORM_LOLA_SKIN,LOLA FLAGELLO DELLE GALASSIE
+TID_GALAXY_STORM_LOLA_SKIN_SHOP,LOLA\nFLAGELLO DELLE GALASSIE
+TID_EMPRESS_BONNIE_SKIN,IMPERATRICE BONNIE
+TID_EMPRESS_BONNIE_SKIN_SHOP,IMPERATRICE\nBONNIE
+TID_TEMPEST_TARA_SKIN,TARA DELLA TEMPESTA
+TID_TEMPEST_TARA_SKIN_SHOP,TARA\nDELLA TEMPESTA
+TID_VALKYRIE_JANET_SKIN,JANET VALCHIRIA
+TID_VALKYRIE_JANET_SKIN_SHOP,JANET\nVALCHIRIA
+TID_DARUMA_MRP_SKIN,MISTER P DARUMA
+TID_DARUMA_MRP_SKIN_SHOP,MISTER P\nDARUMA
+TID_SKIN_INFO_CAMPAIGN_LANTERN,Skin della Mischia delle lanterne
+TID_ACCESSORY_DRILLER_REBUILD,RIMODELLATORE
+TID_ACCESSORY_DRILLER_REBUILD_DESC,Jacky ricostruisce l'ambiente distrutto immediatamente attorno a lei.
+TID_ACCESSORY_ASSAULT_SHOTGUN_PROJECTILES,EROGATORE DI MONETE
+TID_ACCESSORY_ASSAULT_SHOTGUN_PROJECTILES_DESC,Il Lancio della moneta successivo all'attivazione del gadget spara il <c00cc00><VALUE1>%</c> di monete in più.
+TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD,FIAMME DANZANTI
+TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD_DESC,"Ambra crea <c00cc00><VALUE3></c> fiamme e le fa orbitare attorno a sé stessa per <c00cc00><VALUE2></c> secondi, causando <c00cc00><VALUE1></c> punti danno ai nemici colpiti."
+TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD,CASSETTA DEGLI ATTREZZI
+TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD_DESC,"Meg mette per terra la sua cassetta degli attrezzi, che aumenta la velocità di ricarica degli alleati vicini del <c00cc00><VALUE1>%</c>, finché non viene distrutta."
+TID_ACCESSORY_ROPE_DUDE_VISION,OCCHIALI A RAGGI X
+TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz può vedere attraverso tutti i cespugli per <c00cc00><VALUE1></c> secondi.
+TID_LOGIN_CALENDAR_ALREADY_HAVE_BRAWLER,Hai già questo brawler.
+TID_LOGIN_CALENDAR_ALREADY_HAVE_GADGET,Hai già questo gadget.
+TID_LOGIN_CALENDAR_ALREADY_HAVE_STAR_POWER,Hai già questa abilità stellare.
+TID_LOGIN_CALENDAR_FINAL_REWARD_MESSAGE,BRAWLER <cFF92F9>EPICO</c> GRATUITO AL 15º GIORNO!
+TID_LOGIN_CALENDAR_WARNING_MESSAGE,"<cFFB820>NON SALTARE NESSUN GIORNO</c>, altrimenti ti perderai i regali rimanenti."
+TID_POWER_LEAGUE_BRAWLER_REQUIREMENT_SELECT,Sblocca almeno 12 brawler per giocare a questo evento.
+TID_TEAM_ERROR_134,Sblocca almeno 12 brawler per giocare a questo evento.
+TID_MATCHMAKE_FAILED_25,Sblocca almeno 12 brawler per giocare a questo evento.
+TID_POWER_LEAGUE_BRAWLER_REQUIREMENT_INVITE,Questo giocatore non ha sbloccato abbastanza brawler per partecipare a questo evento.
+TID_TEAM_ERROR_133,Questo giocatore non ha sbloccato abbastanza brawler per partecipare a questo evento.
+TID_REWARD_SPRAY_SLOT,SLOT PER GRAFFITI AGGIUNTIVO
+TID_SPRAY_SLOT_TITLE,SLOT PER GRAFFITI
+TID_KNOCKOUT_19,Il punto esatto
+TID_BANKHEIST_31,Vietato toccare
+TID_LOGIN_CALENDAR_FINAL_REWARD,BRAWLER <cFF92F9>EPICO</c> GRATUITO
+TID_LOGIN_CALENDAR_OR,O
+TID_LOGIN_CALENDAR_BRAWLER_UPGRADED,BRAWLER MIGLIORATO!
+TID_LOGIN_CALENDAR_TOOLTIP_SKIN,"Sblocca questa nuova skin\n\nUna volta tua, la puoi indossare andando nella schermata del brawler. Se il personaggio ha già una skin, devi prima toccare l'icona dell'attaccapanni per vederla e selezionarla."
+TID_LOGIN_CALENDAR_TOOLTIP_CHOOSE_BRAWLER,Scegli il prossimo brawler da sbloccare.
+TID_LOGIN_CALENDAR_TOOLTIP_UPGRADE_BRAWLER,"Raggiungi un nuovo livello col brawler per aumentare la salute, i danni dell'attacco e della super. Gli slot per i gadget si sbloccano al livello 7, mentre quelli delle abilità stellari al livello 9."
+TID_LOGIN_CALENDAR_TOOLTIP_PIN_1,Usa le reazioni per esprimere i tuoi stati d'animo in battaglia. Le puoi equipaggiare dalla schermata dei brawler.
+TID_LOGIN_CALENDAR_TOOLTIP_PIN_2,Usa le reazioni per esprimere i tuoi stati d'animo in battaglia. Le puoi equipaggiare dalla schermata dei brawler.
+TID_LOGIN_CALENDAR_TOOLTIP_GADGETS,Scegli un gadget per il brawler. I gadget sono abilità aggiuntive utilizzabili tre volte in battaglia e sono diversi per ogni personaggio.
+TID_LOGIN_CALENDAR_TOOLTIP_STAR_POWER,Scegli un'abilità stellare per il brawler. Le abilità stellari sono dei bonus passivi e sono diverse per ogni personaggio.
+TID_LOGIN_CALENDAR_TUTORIAL_TOOLTIP,Il tuo primo regalo giornaliero è pronto!\nTocca per RITIRARLO.
+TID_BRAWL_PASS_INFO_TEXT_10,"Vinci un sacco di premi extra, tra cui:\n\n<BRAWLER>, la nuova brawler cromatica\n\nLA SKIN ESCLUSIVA \q<SKIN_1>\q\n\nLA SKIN ESCLUSIVA \q<SKIN_2>\q\n\nREAZIONI ESCLUSIVE e FAVOLOSE per <BRAWLER>\n\n<NUM> MEGACASSE\n\nMONETE e PUNTI ENERGIA AGGIUNTIVI\n\nMISSIONI EXTRA per accelerare i progressi del Brawl Pass\n\n<NUM> MISSIONI MODIFICABILI IN PIÙ A SETTIMANA\n\nEFFETTO CROMATICO ESCLUSIVO PER IL NOME per tutta la stagione"
+TID_LOGIN_CALENDAR_STARR_PARK,PROGRAMMA FEDELTÀ
+TID_LOGIN_CALENDAR_LOYALTY_PROGRAM,DELLO STARR PARK
+TID_LOGIN_CALENDAR_TITLE,PROGRAMMA FEDELTÀ DELLO STARR PARK
+TID_REWARD_DESC_PLAYER_ICON_REGULAR,ICONA DEL GIOCATORE
+TID_CLUB_LEAGUE_CLUB_COINS_HOW_TO_GET,Guadagna monete del club giocando nella Lega dei club.
+TID_SHOP_OFFER_INFO_25,Una nuova icona del giocatore!
+TID_LOGIN_CALENDAR_TUTORIAL_COME_BACK,"<cFFB820>TORNA DOMANI</c> per RITIRARE il premio, o non potrai ricevere quelli successivi!"
+TID_BRAWLBALL_49,Gioco di sponda
+TID_BRAWLBALL_50,Ribaltamento totale
+TID_BRAWLBALL_51,Goleada
+TID_BRAWLBALL_52,Ping Pong
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,
 TID_REGION_CUSTOM4,
 TID_REGION_CUSTOM5,
 TID_HERO_INFO_GENERICS_HEADER,
-TID_CHINA_LOGIN_DESC,
 TID_VOTE_MAP_REWARD_LABEL,
 TID_RANKED_QUEST_PROGRESS,
 TID_ONLINE_CL_TEAMS,

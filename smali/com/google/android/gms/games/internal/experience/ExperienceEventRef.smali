@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public final B()J
+.method public final A()Ljava/lang/String;
     .locals 1
 
     .line 1
@@ -18,7 +18,7 @@
     throw v0
 .end method
 
-.method public final J()Ljava/lang/String;
+.method public final D()J
     .locals 1
 
     .line 1
@@ -29,7 +29,18 @@
     throw v0
 .end method
 
-.method public final R1()I
+.method public final L()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/NoSuchMethodError;
+
+    invoke-direct {v0}, Ljava/lang/NoSuchMethodError;-><init>()V
+
+    throw v0
+.end method
+
+.method public final U1()I
     .locals 1
 
     .line 1
@@ -51,7 +62,7 @@
     throw v0
 .end method
 
-.method public final b()Lcom/google/android/gms/games/Game;
+.method public final c()Lcom/google/android/gms/games/Game;
     .locals 1
 
     .line 1
@@ -88,15 +99,15 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/d;->a:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lb2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v1, p0, Lb2/d;->b:I
+    iget v1, p0, Lb2/d;->h:I
 
-    iget v2, p0, Lb2/d;->h:I
+    iget v2, p0, Lb2/d;->i:I
 
     const-string v3, "icon_url"
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->B2(Ljava/lang/String;II)Ljava/lang/String;
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/gms/common/data/DataHolder;->D2(Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -125,7 +136,7 @@
     throw v0
 .end method
 
-.method public final j0()Ljava/lang/String;
+.method public final l0()Ljava/lang/String;
     .locals 1
 
     .line 1
@@ -136,7 +147,7 @@
     throw v0
 .end method
 
-.method public final n()J
+.method public final p()J
     .locals 1
 
     .line 1
@@ -158,17 +169,6 @@
     throw v0
 .end method
 
-.method public final v1()J
-    .locals 1
-
-    .line 1
-    new-instance v0, Ljava/lang/NoSuchMethodError;
-
-    invoke-direct {v0}, Ljava/lang/NoSuchMethodError;-><init>()V
-
-    throw v0
-.end method
-
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
@@ -180,7 +180,7 @@
     throw p1
 .end method
 
-.method public final x()Ljava/lang/String;
+.method public final x1()J
     .locals 1
 
     .line 1

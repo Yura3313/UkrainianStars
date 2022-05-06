@@ -173,9 +173,9 @@
     :try_start_0
     new-instance v1, Ljava/io/BufferedReader;
 
-    new-instance v2, Ljava/io/FileReader;
+    new-instance v2, Lio/sentry/instrumentation/file/SentryFileReader;
 
-    invoke-direct {v2, p0}, Ljava/io/FileReader;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, p0}, Lio/sentry/instrumentation/file/SentryFileReader;-><init>(Ljava/lang/String;)V
 
     invoke-direct {v1, v2}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
     :try_end_0

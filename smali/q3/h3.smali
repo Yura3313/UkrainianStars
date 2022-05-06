@@ -3,23 +3,8 @@
 
 
 # virtual methods
-.method public abstract a(Ljava/lang/Class;)Z
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Class<",
-            "*>;)Z"
-        }
-    .end annotation
+.method public abstract isInitialized()Z
 .end method
 
-.method public abstract b(Ljava/lang/Class;)Lq3/g3;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Class<",
-            "*>;)",
-            "Lq3/g3;"
-        }
-    .end annotation
+.method public abstract p()Lq3/f3;
 .end method

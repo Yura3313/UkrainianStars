@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public a:Landroid/graphics/Paint;
+.field public g:Landroid/graphics/Paint;
 
-.field public final synthetic b:Lt0/a;
+.field public final synthetic h:Lt0/a;
 
 
 # direct methods
@@ -25,7 +25,7 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lt0/a$a;->b:Lt0/a;
+    iput-object p1, p0, Lt0/a$a;->h:Lt0/a;
 
     .line 2
     invoke-direct {p0}, Landroid/graphics/drawable/shapes/OvalShape;-><init>()V
@@ -35,10 +35,10 @@
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v0, p0, Lt0/a$a;->a:Landroid/graphics/Paint;
+    iput-object v0, p0, Lt0/a$a;->g:Landroid/graphics/Paint;
 
     .line 4
-    iput p2, p1, Lt0/a;->b:I
+    iput p2, p1, Lt0/a;->h:I
 
     .line 5
     invoke-virtual {p0}, Landroid/graphics/drawable/shapes/OvalShape;->rect()Landroid/graphics/RectF;
@@ -70,9 +70,9 @@
 
     int-to-float v2, p1
 
-    iget-object p1, p0, Lt0/a$a;->b:Lt0/a;
+    iget-object p1, p0, Lt0/a$a;->h:Lt0/a;
 
-    iget p1, p1, Lt0/a;->b:I
+    iget p1, p1, Lt0/a;->h:I
 
     int-to-float v3, p1
 
@@ -91,7 +91,7 @@
     invoke-direct/range {v0 .. v6}, Landroid/graphics/RadialGradient;-><init>(FFF[I[FLandroid/graphics/Shader$TileMode;)V
 
     .line 2
-    iget-object p1, p0, Lt0/a$a;->a:Landroid/graphics/Paint;
+    iget-object p1, p0, Lt0/a$a;->g:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v7}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
 
@@ -110,14 +110,14 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lt0/a$a;->b:Lt0/a;
+    iget-object v0, p0, Lt0/a$a;->h:Lt0/a;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getWidth()I
 
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lt0/a$a;->b:Lt0/a;
+    iget-object v1, p0, Lt0/a$a;->h:Lt0/a;
 
     invoke-virtual {v1}, Landroid/widget/ImageView;->getHeight()I
 
@@ -132,14 +132,14 @@
 
     int-to-float v1, v1
 
-    iget-object v3, p0, Lt0/a$a;->a:Landroid/graphics/Paint;
+    iget-object v3, p0, Lt0/a$a;->g:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v2, v1, v2, v3}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
     .line 4
-    iget-object v3, p0, Lt0/a$a;->b:Lt0/a;
+    iget-object v3, p0, Lt0/a$a;->h:Lt0/a;
 
-    iget v3, v3, Lt0/a;->b:I
+    iget v3, v3, Lt0/a;->h:I
 
     sub-int/2addr v0, v3
 

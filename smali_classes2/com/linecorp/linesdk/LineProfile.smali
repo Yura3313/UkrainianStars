@@ -286,7 +286,7 @@
 
     const/16 v2, 0x1f
 
-    invoke-static {v1, v0, v2}, Lw1/a;->a(Ljava/lang/String;II)I
+    invoke-static {v1, v0, v2}, Lcom/kakaogame/d;->a(Ljava/lang/String;II)I
 
     move-result v0
 

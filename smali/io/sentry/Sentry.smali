@@ -282,11 +282,16 @@
     sput-object v2, Lio/sentry/Sentry;->mainHub:Lio/sentry/IHub;
 
     .line 3
+    sget-object v2, Lio/sentry/Sentry;->currentHub:Ljava/lang/ThreadLocal;
+
+    invoke-virtual {v2}, Ljava/lang/ThreadLocal;->remove()V
+
+    .line 4
     invoke-interface {v1}, Lio/sentry/IHub;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
+    .line 5
     monitor-exit v0
 
     return-void
@@ -886,6 +891,21 @@
     invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p0
+.end method
+
+.method public static isCrashedLastRun()Ljava/lang/Boolean;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lio/sentry/Sentry;->getCurrentHub()Lio/sentry/IHub;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lio/sentry/IHub;->isCrashedLastRun()Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    return-object v0
 .end method
 
 .method public static isEnabled()Z

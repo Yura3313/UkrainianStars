@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;->i(Lwd/k1$a;ILwd/j1;)V
+    value = Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;->i(Lvd/k1$a;ILvd/j1;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,25 +22,25 @@
         "Lke/p<",
         "Ljava/util/Observable;",
         "Ljava/lang/Object;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
+.field public final synthetic g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
 
-.field public final synthetic b:Landroid/view/View;
+.field public final synthetic h:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->a:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->b:Landroid/view/View;
+    iput-object p2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->h:Landroid/view/View;
 
     const/4 p1, 0x2
 
@@ -58,19 +58,19 @@
     check-cast p1, Ljava/util/Observable;
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->a:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
 
     .line 3
-    iget-object p1, p1, Lwd/q;->f:Landroidx/fragment/app/Fragment;
+    iget-object p1, p1, Lvd/q;->f:Landroidx/fragment/app/Fragment;
 
     .line 4
     check-cast p1, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
     .line 5
-    iget p1, p1, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->n0:I
+    iget p1, p1, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->o0:I
 
     .line 6
-    iget-object p2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->b:Landroid/view/View;
+    iget-object p2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->h:Landroid/view/View;
 
     sget v0, Lcom/supercell/id/R$id;->online_friend_count_label:I
 
@@ -86,18 +86,18 @@
 
     if-eqz p2, :cond_0
 
-    new-array v2, v1, [Lbe/g;
+    new-array v2, v1, [Lae/d;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v3
 
     .line 7
-    new-instance v4, Lbe/g;
+    new-instance v4, Lae/d;
 
     const-string v5, "count"
 
-    invoke-direct {v4, v5, v3}, Lbe/g;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v4, v5, v3}, Lae/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     aput-object v4, v2, v0
 
@@ -106,11 +106,11 @@
     const-string v4, "ingame_invite_to_play_online_count"
 
     .line 8
-    invoke-static {p2, v4, v2, v3}, Lqd/e0;->j(Landroid/widget/TextView;Ljava/lang/String;[Lbe/g;Lke/l;)V
+    invoke-static {p2, v4, v2, v3}, Lpd/d0;->k(Landroid/widget/TextView;Ljava/lang/String;[Lae/d;Lke/l;)V
 
     .line 9
     :cond_0
-    iget-object p2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->b:Landroid/view/View;
+    iget-object p2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->h:Landroid/view/View;
 
     sget v2, Lcom/supercell/id/R$id;->invite_all_button:I
 
@@ -122,7 +122,7 @@
 
     const-string v2, "containerView.invite_all_button"
 
-    invoke-static {p2, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-lez p1, :cond_1
 
@@ -132,7 +132,7 @@
     invoke-virtual {p2, v0}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 10
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method

@@ -1,12 +1,12 @@
 .class public final enum Lu3/m5;
-.super Lu3/l5;
+.super Lu3/i5;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;ILu3/q5;I)V
+.method public constructor <init>(Ljava/lang/String;Lu3/n5;)V
     .locals 6
 
-    const/16 v2, 0x8
+    const/16 v2, 0xb
 
     const/4 v4, 0x2
 
@@ -16,10 +16,10 @@
 
     move-object v1, p1
 
-    move-object v3, p3
+    move-object v3, p2
 
     .line 1
-    invoke-direct/range {v0 .. v5}, Lu3/l5;-><init>(Ljava/lang/String;ILu3/q5;ILu3/k5;)V
+    invoke-direct/range {v0 .. v5}, Lu3/i5;-><init>(Ljava/lang/String;ILu3/n5;ILj3/jx0;)V
 
     return-void
 .end method

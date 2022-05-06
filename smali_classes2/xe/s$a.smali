@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lxe/s;->m0(Lxe/d;)V
+    value = Lxe/s;->b0(Lxe/d;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

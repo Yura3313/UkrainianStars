@@ -75,7 +75,7 @@
     invoke-virtual {p1, v2}, Landroid/view/View;->setTranslationX(F)V
 
     .line 4
-    sget-object v2, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v2, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 5
     invoke-virtual {p1}, Landroid/view/View;->getLayoutDirection()I

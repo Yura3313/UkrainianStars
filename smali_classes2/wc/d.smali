@@ -1,790 +1,488 @@
 .class public final Lwc/d;
 .super Ljava/lang/Object;
-.source "CustomProfileImageManager.kt"
-
-# interfaces
-.implements Lwc/f;
+.source "DonateFragment.kt"
 
 
-# instance fields
-.field public a:Landroidx/activity/result/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/activity/result/b<",
-            "Landroid/content/Intent;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public b:Ljava/io/File;
-
-.field public c:Z
-
-.field public d:Z
-
-.field public final e:Landroidx/activity/result/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/activity/result/b<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public f:Lse/h0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lse/h0<",
-            "+",
-            "Lxd/c0;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final g:Landroidx/fragment/app/Fragment;
-
-.field public final h:Lwc/a;
+# static fields
+.field public static final a:Lvd/j;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/Fragment;Lwc/a;)V
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 3
 
-    const/4 v0, 0x0
+    .line 1
+    new-instance v0, Lvd/j;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    invoke-direct {v0, v1, v2}, Lvd/j;-><init>(II)V
+
+    sput-object v0, Lwc/d;->a:Lvd/j;
+
+    return-void
+.end method
+
+.method public static final a(Lwd/n0;Ljava/lang/String;)Z
+    .locals 0
 
     if-eqz p1, :cond_1
 
-    if-eqz p2, :cond_0
-
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {p0, p1}, Lwc/d;->c(Lwd/n0;Ljava/lang/String;)I
 
-    iput-object p1, p0, Lwc/d;->g:Landroidx/fragment/app/Fragment;
+    move-result p0
 
-    iput-object p2, p0, Lwc/d;->h:Lwc/a;
+    if-lez p0, :cond_0
 
-    .line 2
-    new-instance p2, Lb/c;
+    const/4 p0, 0x1
 
-    invoke-direct {p2}, Lb/c;-><init>()V
-
-    new-instance v0, Lwc/d$d;
-
-    invoke-direct {v0, p0}, Lwc/d$d;-><init>(Lwc/d;)V
-
-    invoke-virtual {p1, p2, v0}, Landroidx/fragment/app/Fragment;->A0(Lb/a;Landroidx/activity/result/a;)Landroidx/activity/result/b;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lwc/d;->e:Landroidx/activity/result/b;
-
-    return-void
+    goto :goto_0
 
     :cond_0
-    const-string p1, "listener"
+    const/4 p0, 0x0
 
-    .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
+    :goto_0
+    return p0
 
     :cond_1
-    const-string p1, "fragment"
-
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-
-# virtual methods
-.method public a(Landroid/graphics/Bitmap;)V
-    .locals 10
-
-    .line 1
-    iget-object v0, p0, Lwc/d;->g:Landroidx/fragment/app/Fragment;
-
-    invoke-static {v0}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    sget v2, Lcom/supercell/id/R$layout;->custom_profile_image_uploading:I
+    const-string p0, "game"
 
     .line 2
-    new-instance v6, Lwc/d$a;
+    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
 
-    invoke-direct {v6, p0, p1}, Lwc/d$a;-><init>(Lwc/d;Landroid/graphics/Bitmap;)V
+    const/4 p0, 0x0
 
-    .line 3
-    new-instance v7, Lwc/d$b;
-
-    invoke-direct {v7, p0}, Lwc/d$b;-><init>(Lwc/d;)V
-
-    const/4 v8, 0x0
-
-    const/16 v9, 0x40
-
-    const-string v3, "account_profile_wizard_upload_heading"
-
-    const-string v4, "account_profile_wizard_upload_description"
-
-    const-string v5, "account_profile_wizard_upload_btn_cancel"
-
-    .line 4
-    invoke-static/range {v1 .. v9}, Lcom/supercell/id/ui/MainActivity;->D(Lcom/supercell/id/ui/MainActivity;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lke/p;Lke/a;Lke/l;I)Luc/q;
-
-    :cond_0
-    return-void
+    throw p0
 .end method
 
-.method public final b(Landroid/content/Context;)V
-    .locals 3
+.method public static final b(Lwd/n0;Ljava/lang/String;Ljava/lang/String;)Z
+    .locals 8
 
-    const-string v0, "android.permission.CAMERA"
-
-    .line 1
-    invoke-static {p1, v0}, Lv/a;->a(Landroid/content/Context;Ljava/lang/String;)I
-
-    move-result v1
-
-    if-eqz v1, :cond_5
-
-    .line 2
-    iget-boolean p1, p0, Lwc/d;->c:Z
+    sget-object v0, Lqc/y$a;->h:Lqc/y$a;
 
     const/4 v1, 0x0
 
-    if-nez p1, :cond_2
+    if-eqz p1, :cond_c
 
-    const/4 p1, 0x1
-
-    .line 3
-    iput-boolean p1, p0, Lwc/d;->c:Z
-
-    .line 4
-    iget-object v2, p0, Lwc/d;->g:Landroidx/fragment/app/Fragment;
-
-    .line 5
-    iget-object v2, v2, Landroidx/fragment/app/Fragment;->y:Landroidx/fragment/app/w;
-
-    if-eqz v2, :cond_0
-
-    .line 6
-    invoke-virtual {v2, v0}, Landroidx/fragment/app/w;->p(Ljava/lang/String;)Z
-
-    move-result v1
-
-    :cond_0
-    if-eqz v1, :cond_1
-
-    .line 7
-    iget-object p1, p0, Lwc/d;->g:Landroidx/fragment/app/Fragment;
-
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_6
-
-    invoke-virtual {p0, p1}, Lwc/d;->f(Lcom/supercell/id/ui/MainActivity;)V
-
-    goto :goto_0
-
-    .line 8
-    :cond_1
-    iput-boolean p1, p0, Lwc/d;->d:Z
-
-    .line 9
-    iget-object p1, p0, Lwc/d;->e:Landroidx/activity/result/b;
-
-    const/4 v1, 0x0
-
-    .line 10
-    invoke-virtual {p1, v0, v1}, Landroidx/activity/result/b;->b(Ljava/lang/Object;Lu/b;)V
-
-    goto :goto_0
-
-    .line 11
-    :cond_2
-    iget-boolean p1, p0, Lwc/d;->d:Z
-
-    if-nez p1, :cond_6
-
-    .line 12
-    iget-object p1, p0, Lwc/d;->g:Landroidx/fragment/app/Fragment;
-
-    .line 13
-    iget-object p1, p1, Landroidx/fragment/app/Fragment;->y:Landroidx/fragment/app/w;
-
-    if-eqz p1, :cond_3
-
-    .line 14
-    invoke-virtual {p1, v0}, Landroidx/fragment/app/w;->p(Ljava/lang/String;)Z
-
-    move-result v1
-
-    :cond_3
-    if-eqz v1, :cond_4
-
-    .line 15
-    iget-object p1, p0, Lwc/d;->g:Landroidx/fragment/app/Fragment;
-
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_6
-
-    invoke-virtual {p0, p1}, Lwc/d;->f(Lcom/supercell/id/ui/MainActivity;)V
-
-    goto :goto_0
-
-    .line 16
-    :cond_4
-    iget-object p1, p0, Lwc/d;->g:Landroidx/fragment/app/Fragment;
-
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_6
-
-    invoke-virtual {p0, p1}, Lwc/d;->e(Lcom/supercell/id/ui/MainActivity;)V
-
-    goto :goto_0
-
-    .line 17
-    :cond_5
-    invoke-virtual {p0, p1}, Lwc/d;->g(Landroid/content/Context;)V
-
-    :cond_6
-    :goto_0
-    return-void
-.end method
-
-.method public final c()V
-    .locals 6
+    if-eqz p2, :cond_b
 
     .line 1
-    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Lcom/supercell/id/SupercellId;->setRunInBackgroundEnabled$supercellId_release(Z)V
+    iget-object v2, p0, Lwd/n0;->a:Lvd/k;
 
     .line 2
-    iget-object v0, p0, Lwc/d;->a:Landroidx/activity/result/b;
+    invoke-virtual {v2}, Lvd/k;->a()Ljava/lang/Object;
 
-    const/4 v2, 0x0
+    move-result-object v2
 
-    if-eqz v0, :cond_0
-
-    new-instance v3, Landroid/content/Intent;
-
-    sget-object v4, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
-
-    const-string v5, "android.intent.action.PICK"
-
-    invoke-direct {v3, v5, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
-
-    .line 3
-    invoke-virtual {v3, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
-
-    .line 4
-    invoke-virtual {v0, v3, v2}, Landroidx/activity/result/b;->b(Ljava/lang/Object;Lu/b;)V
-
-    return-void
-
-    :cond_0
-    const-string v0, "startForResult"
-
-    .line 5
-    invoke-static {v0}, Ly4/x;->l(Ljava/lang/String;)V
-
-    throw v2
-.end method
-
-.method public final d()V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lwc/d;->g:Landroidx/fragment/app/Fragment;
-
-    invoke-static {v0}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iget-object v0, v0, Lcom/supercell/id/ui/MainActivity;->k:Ljava/util/WeakHashMap;
-
-    const/4 v1, 0x0
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    invoke-interface {v0, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 3
-    :cond_0
-    iget-object v0, p0, Lwc/d;->g:Landroidx/fragment/app/Fragment;
-
-    new-instance v1, Lb/d;
-
-    invoke-direct {v1}, Lb/d;-><init>()V
-
-    new-instance v2, Lwc/d$c;
-
-    invoke-direct {v2, p0}, Lwc/d$c;-><init>(Lwc/d;)V
-
-    invoke-virtual {v0, v1, v2}, Landroidx/fragment/app/Fragment;->A0(Lb/a;Landroidx/activity/result/a;)Landroidx/activity/result/b;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lwc/d;->a:Landroidx/activity/result/b;
-
-    return-void
-.end method
-
-.method public final e(Lcom/supercell/id/ui/MainActivity;)V
-    .locals 4
-
-    .line 1
-    new-instance v0, Luc/p;
-
-    invoke-direct {v0}, Luc/p;-><init>()V
-
-    .line 2
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
-
-    if-eqz v1, :cond_0
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    new-instance v1, Landroid/os/Bundle;
-
-    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
-
-    :goto_0
-    const-string v2, "titleKey"
-
-    const-string v3, "account_profile_wizard_camera_denied_heading"
-
-    .line 4
-    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string v2, "textKey"
-
-    const-string v3, "account_profile_wizard_camera_denied_description"
-
-    .line 5
-    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string v2, "okButtonKey"
-
-    const-string v3, "account_profile_wizard_camera_denied_ok"
-
-    .line 6
-    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string v2, "cancelButtonKey"
-
-    const-string v3, "account_profile_wizard_camera_denied_cancel"
-
-    .line 7
-    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string v2, "titleStringKey"
-
-    const/4 v3, 0x0
-
-    .line 8
-    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
-
-    const-string v2, "textStringKey"
-
-    .line 9
-    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
-
-    const-string v2, "destructiveKey"
-
-    const/4 v3, 0x0
-
-    .line 10
-    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-
-    .line 11
-    invoke-virtual {v0, v1}, Landroidx/fragment/app/Fragment;->J0(Landroid/os/Bundle;)V
-
-    .line 12
-    new-instance v1, Lwc/d$e;
-
-    invoke-direct {v1, p1}, Lwc/d$e;-><init>(Lcom/supercell/id/ui/MainActivity;)V
-
-    .line 13
-    iput-object v1, v0, Luc/p;->x0:Lke/l;
-
-    .line 14
-    new-instance v1, Lwc/d$f;
-
-    invoke-direct {v1, p1}, Lwc/d$f;-><init>(Lcom/supercell/id/ui/MainActivity;)V
-
-    .line 15
-    iput-object v1, v0, Luc/b;->v0:Lke/l;
-
-    .line 16
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
-
-    const-string v1, "popupDialog"
-
-    .line 17
-    invoke-virtual {p1, v0, v1}, Lcom/supercell/id/ui/MainActivity;->H(Luc/d;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public final f(Lcom/supercell/id/ui/MainActivity;)V
-    .locals 7
-
-    .line 1
-    invoke-virtual {p1}, Landroid/app/Activity;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
-
-    move-result-object v0
-
-    invoke-virtual {p1}, Landroid/app/Activity;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/content/pm/ApplicationInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 2
-    new-instance v1, Luc/p;
-
-    invoke-direct {v1}, Luc/p;-><init>()V
-
-    .line 3
-    iget-object v2, v1, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
-
-    if-eqz v2, :cond_0
-
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    new-instance v2, Landroid/os/Bundle;
-
-    invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
-
-    :goto_0
-    const-string v3, "titleKey"
-
-    const-string v4, "account_profile_wizard_camera_rationale_heading"
-
-    .line 5
-    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string v3, "textKey"
-
-    const-string v4, "account_profile_wizard_camera_rationale_description"
-
-    .line 6
-    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string v3, "okButtonKey"
-
-    const-string v4, "account_profile_wizard_camera_rationale_ok"
-
-    .line 7
-    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string v3, "cancelButtonKey"
-
-    const-string v4, "account_profile_wizard_camera_rationale_cancel"
-
-    .line 8
-    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    check-cast v2, Lqc/b0;
 
     const/4 v3, 0x1
 
-    const/4 v4, 0x2
+    const/4 v4, 0x0
 
-    new-array v4, v4, [Ljava/lang/String;
-
-    const/4 v5, 0x0
-
-    const-string v6, "game"
-
-    aput-object v6, v4, v5
-
-    aput-object v0, v4, v3
-
-    .line 9
-    invoke-static {v4}, Landroidx/savedstate/d;->b([Ljava/lang/Object;)Ljava/util/ArrayList;
-
-    move-result-object v0
-
-    const-string v3, "titleStringKey"
-
-    invoke-virtual {v2, v3, v0}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
-
-    const-string v0, "textStringKey"
-
-    const/4 v3, 0x0
-
-    .line 10
-    invoke-virtual {v2, v0, v3}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
-
-    const-string v0, "destructiveKey"
-
-    .line 11
-    invoke-virtual {v2, v0, v5}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-
-    .line 12
-    invoke-virtual {v1, v2}, Landroidx/fragment/app/Fragment;->J0(Landroid/os/Bundle;)V
-
-    .line 13
-    new-instance v0, Lwc/d$g;
-
-    invoke-direct {v0, p0, p1}, Lwc/d$g;-><init>(Lwc/d;Lcom/supercell/id/ui/MainActivity;)V
-
-    .line 14
-    iput-object v0, v1, Luc/p;->x0:Lke/l;
-
-    .line 15
-    new-instance v0, Lwc/d$h;
-
-    invoke-direct {v0, p0, p1}, Lwc/d$h;-><init>(Lwc/d;Lcom/supercell/id/ui/MainActivity;)V
-
-    .line 16
-    iput-object v0, v1, Luc/b;->v0:Lke/l;
-
-    const-string v0, "popupDialog"
-
-    .line 17
-    invoke-virtual {p1, v1, v0}, Lcom/supercell/id/ui/MainActivity;->H(Luc/d;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public final g(Landroid/content/Context;)V
-    .locals 7
-
-    .line 1
-    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Lcom/supercell/id/SupercellId;->setRunInBackgroundEnabled$supercellId_release(Z)V
-
-    .line 2
-    new-instance v0, Landroid/content/Intent;
-
-    const-string v1, "android.media.action.IMAGE_CAPTURE"
-
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    if-eqz v2, :cond_5
 
     .line 3
-    invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+    iget-object v2, v2, Lqc/b0;->c:Ljava/util/List;
 
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->resolveActivity(Landroid/content/pm/PackageManager;)Landroid/content/ComponentName;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_4
+    if-eqz v2, :cond_5
 
     .line 4
-    new-instance v2, Ljava/text/SimpleDateFormat;
-
-    sget-object v3, Ljava/util/Locale;->US:Ljava/util/Locale;
-
-    const-string v4, "yyyyMMdd_HHmmss"
-
-    invoke-direct {v2, v4, v3}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
-
-    new-instance v3, Ljava/util/Date;
-
-    invoke-direct {v3}, Ljava/util/Date;-><init>()V
-
-    invoke-virtual {v2, v3}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
 
-    .line 5
-    sget-object v3, Landroid/os/Environment;->DIRECTORY_PICTURES:Ljava/lang/String;
-
-    invoke-virtual {p1, v3}, Landroid/content/Context;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
-
-    move-result-object v3
-
-    const/4 v4, 0x0
-
-    if-eqz v3, :cond_1
-
-    .line 6
-    invoke-virtual {v3}, Ljava/io/File;->exists()Z
+    :cond_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v5
 
-    if-nez v5, :cond_0
+    if-eqz v5, :cond_4
 
-    .line 7
-    invoke-virtual {v3}, Ljava/io/File;->mkdirs()Z
-
-    .line 8
-    :cond_0
-    :try_start_0
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v6, "JPEG_"
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string v5, ".jpg"
-
-    invoke-static {v2, v5, v3}, Ljava/io/File;->createTempFile(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;
-
-    move-result-object v2
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    :cond_1
-    move-object v2, v4
-
-    :goto_0
-    if-eqz v2, :cond_3
-
-    .line 9
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v5
 
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object v6, v5
 
-    const-string v5, ".supercellid.fileprovider"
+    check-cast v6, Lqc/y;
 
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 5
+    iget-object v7, v6, Lqc/y;->d:Ljava/util/List;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 6
+    invoke-interface {v7, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
-    move-result-object v3
+    move-result v7
 
-    invoke-static {p1, v3, v2}, Landroidx/core/content/FileProvider;->getUriForFile(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;)Landroid/net/Uri;
+    if-eqz v7, :cond_3
 
-    move-result-object v3
+    .line 7
+    iget-object v7, v6, Lqc/y;->c:Lqc/y$a;
+
+    if-ne v7, v0, :cond_3
+
+    .line 8
+    iget-object v6, v6, Lqc/y;->e:Lqc/z;
+
+    instance-of v7, v6, Lqc/z$e;
+
+    if-nez v7, :cond_1
+
+    move-object v6, v1
+
+    :cond_1
+    check-cast v6, Lqc/z$e;
+
+    if-eqz v6, :cond_2
+
+    .line 9
+    iget-object v6, v6, Lqc/z$e;->a:Ljava/lang/String;
+
+    goto :goto_0
+
+    :cond_2
+    move-object v6, v1
 
     .line 10
-    invoke-virtual {v1}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
+    :goto_0
+    invoke-static {v6, p2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result-object v1
+    move-result v6
 
-    const-string v5, "componentName.packageName"
+    if-eqz v6, :cond_3
 
-    invoke-static {v1, v5}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v6, 0x1
 
-    const/4 v5, 0x3
+    goto :goto_1
+
+    :cond_3
+    const/4 v6, 0x0
+
+    :goto_1
+    if-eqz v6, :cond_0
+
+    goto :goto_2
+
+    :cond_4
+    move-object v5, v1
+
+    :goto_2
+    check-cast v5, Lqc/y;
+
+    goto :goto_3
+
+    :cond_5
+    move-object v5, v1
+
+    :goto_3
+    if-nez v5, :cond_a
 
     .line 11
-    invoke-virtual {p1, v1, v3, v5}, Landroid/content/Context;->grantUriPermission(Ljava/lang/String;Landroid/net/Uri;I)V
-
-    const-string p1, "output"
+    iget-object p0, p0, Lwd/n0;->b:Ljava/util/Set;
 
     .line 12
-    invoke-virtual {v0, p1, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p0
+
+    :cond_6
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_8
+
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    move-object v5, v2
+
+    check-cast v5, Lwd/f;
 
     .line 13
-    iget-object p1, p0, Lwc/d;->a:Landroidx/activity/result/b;
-
-    if-eqz p1, :cond_2
+    iget-object v6, v5, Lwd/f;->a:Ljava/lang/String;
 
     .line 14
-    invoke-virtual {p1, v0, v4}, Landroidx/activity/result/b;->b(Ljava/lang/Object;Lu/b;)V
+    invoke-static {v6, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-object v4, v2
+    move-result v6
+
+    if-eqz v6, :cond_7
+
+    .line 15
+    iget-object v6, v5, Lwd/f;->b:Lqc/y$a;
+
+    if-ne v6, v0, :cond_7
+
+    .line 16
+    iget-object v5, v5, Lwd/f;->c:Ljava/lang/String;
+
+    .line 17
+    invoke-static {v5, p2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_7
+
+    const/4 v5, 0x1
+
+    goto :goto_4
+
+    :cond_7
+    const/4 v5, 0x0
+
+    :goto_4
+    if-eqz v5, :cond_6
+
+    move-object v1, v2
+
+    :cond_8
+    if-eqz v1, :cond_9
+
+    goto :goto_5
+
+    :cond_9
+    const/4 v3, 0x0
+
+    :cond_a
+    :goto_5
+    return v3
+
+    :cond_b
+    const-string p0, "scid"
+
+    .line 18
+    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_c
+    const-string p0, "game"
+
+    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
+
+    goto :goto_7
+
+    :goto_6
+    throw v1
+
+    :goto_7
+    goto :goto_6
+.end method
+
+.method public static final c(Lwd/n0;Ljava/lang/String;)I
+    .locals 8
+
+    sget-object v0, Lqc/y$a;->h:Lqc/y$a;
+
+    const/4 v1, 0x0
+
+    if-eqz p1, :cond_b
+
+    .line 1
+    iget-object v2, p0, Lwd/n0;->a:Lvd/k;
+
+    .line 2
+    invoke-virtual {v2}, Lvd/k;->a()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lqc/b0;
+
+    const/4 v3, 0x0
+
+    if-eqz v2, :cond_a
+
+    .line 3
+    iget-object v2, v2, Lqc/b0;->b:Ljava/util/List;
+
+    if-eqz v2, :cond_a
+
+    .line 4
+    invoke-interface {v2}, Ljava/util/Collection;->isEmpty()Z
+
+    move-result v4
+
+    const/4 v5, 0x1
+
+    if-eqz v4, :cond_0
+
+    const/4 v4, 0x0
+
+    goto :goto_2
+
+    .line 5
+    :cond_0
+    invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    const/4 v4, 0x0
+
+    :cond_1
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_4
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Lqc/y;
+
+    .line 6
+    iget-object v7, v6, Lqc/y;->d:Ljava/util/List;
+
+    .line 7
+    invoke-interface {v7, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_2
+
+    .line 8
+    iget-object v7, v6, Lqc/y;->c:Lqc/y$a;
+
+    if-ne v7, v0, :cond_2
+
+    .line 9
+    iget-object v6, v6, Lqc/y;->e:Lqc/z;
+
+    sget-object v7, Lqc/z$a;->a:Lqc/z$a;
+
+    invoke-static {v6, v7}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_2
+
+    const/4 v6, 0x1
 
     goto :goto_1
 
     :cond_2
-    const-string p1, "startForResult"
+    const/4 v6, 0x0
+
+    :goto_1
+    if-eqz v6, :cond_1
+
+    add-int/lit8 v4, v4, 0x1
+
+    if-ltz v4, :cond_3
+
+    goto :goto_0
+
+    .line 10
+    :cond_3
+    invoke-static {}, Lb5/m;->s()V
+
+    throw v1
+
+    .line 11
+    :cond_4
+    :goto_2
+    iget-object p0, p0, Lwd/n0;->b:Ljava/util/Set;
+
+    .line 12
+    instance-of v2, p0, Ljava/util/Collection;
+
+    if-eqz v2, :cond_5
+
+    invoke-interface {p0}, Ljava/util/Collection;->isEmpty()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_5
+
+    goto :goto_5
+
+    .line 13
+    :cond_5
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p0
+
+    const/4 v2, 0x0
+
+    :cond_6
+    :goto_3
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_9
+
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Lwd/f;
+
+    .line 14
+    iget-object v7, v6, Lwd/f;->a:Ljava/lang/String;
 
     .line 15
-    invoke-static {p1}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {v7, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    throw v4
+    move-result v7
+
+    if-eqz v7, :cond_7
 
     .line 16
-    :cond_3
-    :goto_1
-    iput-object v4, p0, Lwc/d;->b:Ljava/io/File;
+    iget-object v6, v6, Lwd/f;->b:Lqc/y$a;
 
-    :cond_4
-    return-void
-.end method
+    if-ne v6, v0, :cond_7
 
-.method public final h()V
-    .locals 2
+    const/4 v6, 0x1
 
-    .line 1
-    iget-object v0, p0, Lwc/d;->g:Landroidx/fragment/app/Fragment;
+    goto :goto_4
 
-    invoke-static {v0}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    :cond_7
+    const/4 v6, 0x0
 
-    move-result-object v0
+    :goto_4
+    if-eqz v6, :cond_6
 
-    if-eqz v0, :cond_0
+    add-int/lit8 v2, v2, 0x1
 
-    .line 2
-    iget-object v1, v0, Lcom/supercell/id/ui/MainActivity;->k:Ljava/util/WeakHashMap;
+    if-ltz v2, :cond_8
 
-    invoke-virtual {v1, p0}, Ljava/util/WeakHashMap;->containsKey(Ljava/lang/Object;)Z
+    goto :goto_3
 
-    move-result v1
+    .line 17
+    :cond_8
+    invoke-static {}, Lb5/m;->s()V
 
-    if-eqz v1, :cond_0
+    throw v1
 
-    .line 3
-    iget-object v0, v0, Lcom/supercell/id/ui/MainActivity;->k:Ljava/util/WeakHashMap;
+    :cond_9
+    move v3, v2
 
-    invoke-virtual {v0, p0}, Ljava/util/WeakHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    :goto_5
+    sub-int v3, v4, v3
 
-    .line 4
-    :cond_0
-    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    :cond_a
+    return v3
 
-    const/4 v1, 0x0
+    :cond_b
+    const-string p0, "game"
 
-    invoke-virtual {v0, v1}, Lcom/supercell/id/SupercellId;->setRunInBackgroundEnabled$supercellId_release(Z)V
+    .line 18
+    invoke-static {p0}, Ls3/b;->h(Ljava/lang/String;)V
 
-    return-void
+    goto :goto_7
+
+    :goto_6
+    throw v1
+
+    :goto_7
+    goto :goto_6
 .end method

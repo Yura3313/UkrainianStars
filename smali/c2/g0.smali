@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field public final synthetic a:Lc2/f0;
+.field public final synthetic g:Lc2/f0;
 
 
 # direct methods
-.method public constructor <init>(Lc2/f0;Lp0/d;)V
+.method public constructor <init>(Lc2/f0;Li1/i;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lc2/g0;->a:Lc2/f0;
+    iput-object p1, p0, Lc2/g0;->g:Lc2/f0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lc2/g0;->a:Lc2/f0;
+    iget-object v0, p0, Lc2/g0;->g:Lc2/f0;
 
     .line 3
     iget-object v0, v0, Lc2/f0;->c:Ljava/util/HashMap;
@@ -57,7 +57,7 @@
     check-cast p1, Lc2/d$a;
 
     .line 6
-    iget-object v1, p0, Lc2/g0;->a:Lc2/f0;
+    iget-object v1, p0, Lc2/g0;->g:Lc2/f0;
 
     .line 7
     iget-object v1, v1, Lc2/f0;->c:Ljava/util/HashMap;
@@ -144,7 +144,7 @@
 
     .line 18
     :cond_4
-    iget-object v0, p0, Lc2/g0;->a:Lc2/f0;
+    iget-object v0, p0, Lc2/g0;->g:Lc2/f0;
 
     .line 19
     iget-object v0, v0, Lc2/f0;->c:Ljava/util/HashMap;
@@ -159,7 +159,7 @@
     check-cast p1, Lc2/d$a;
 
     .line 22
-    iget-object v3, p0, Lc2/g0;->a:Lc2/f0;
+    iget-object v3, p0, Lc2/g0;->g:Lc2/f0;
 
     .line 23
     iget-object v3, v3, Lc2/f0;->c:Ljava/util/HashMap;
@@ -220,7 +220,7 @@
 
     .line 36
     :cond_5
-    iget-object v1, p0, Lc2/g0;->a:Lc2/f0;
+    iget-object v1, p0, Lc2/g0;->g:Lc2/f0;
 
     .line 37
     iget-object v1, v1, Lc2/f0;->c:Ljava/util/HashMap;

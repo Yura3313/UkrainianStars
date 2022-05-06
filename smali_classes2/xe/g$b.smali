@@ -75,7 +75,7 @@
 
     invoke-direct {v1, p0, v0}, Lxe/i;-><init>(Lxe/g$b;Ljava/util/concurrent/CompletableFuture;)V
 
-    invoke-interface {p1, v1}, Lxe/b;->m0(Lxe/d;)V
+    invoke-interface {p1, v1}, Lxe/b;->b0(Lxe/d;)V
 
     return-object v0
 .end method

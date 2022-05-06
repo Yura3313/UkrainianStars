@@ -1,150 +1,68 @@
 .class public final Ldd/f;
-.super Lle/j;
-.source "IngameInviteToPlayFragment.kt"
+.super Ljava/lang/Object;
+.source "DonationReceivedDialog.kt"
 
 # interfaces
-.implements Lke/p;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;",
-        "Ljava/lang/Exception;",
-        "Lbe/n;",
-        ">;"
-    }
-.end annotation
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic a:Ljava/util/Collection;
+.field public final synthetic g:Ldd/e$f;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Collection;)V
+.method public constructor <init>(Ldd/e$f;)V
     .locals 0
 
-    iput-object p1, p0, Ldd/f;->a:Ljava/util/Collection;
+    iput-object p1, p0, Ldd/f;->g:Ldd/e$f;
 
-    const/4 p1, 0x2
-
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final run()V
+    .locals 3
+
+    const/4 v0, 0x2
+
+    new-array v0, v0, [F
 
     .line 1
-    check-cast p1, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+    fill-array-data v0, :array_0
 
-    check-cast p2, Ljava/lang/Exception;
+    invoke-static {v0}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
 
-    const/4 v0, 0x0
+    move-result-object v0
 
-    if-eqz p1, :cond_3
-
-    if-eqz p2, :cond_2
+    const-wide/16 v1, 0x12c
 
     .line 2
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    iget-object p2, p0, Ldd/f;->a:Ljava/util/Collection;
+    invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     .line 3
-    new-instance v0, Ljava/util/ArrayList;
-
-    const/16 v1, 0xa
-
-    invoke-static {p2, v1}, Lce/h;->E(Ljava/lang/Iterable;I)I
-
-    move-result v1
-
-    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+    sget-object v1, Loc/a;->d:Landroid/view/animation/Interpolator;
 
     .line 4
-    invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object p2
-
-    :goto_0
-    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
+    invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 5
-    check-cast v1, Ldd/b;
+    new-instance v1, Ldd/f$a;
+
+    invoke-direct {v1, p0}, Ldd/f$a;-><init>(Ldd/f;)V
+
+    invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
     .line 6
-    iget-object v1, v1, Ldd/b;->a:Ljava/lang/String;
+    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->start()V
 
-    .line 7
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    return-void
 
-    goto :goto_0
-
-    :cond_0
-    const/4 p2, 0x0
-
-    new-array p2, p2, [Ljava/lang/String;
-
-    .line 8
-    invoke-virtual {v0, p2}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    move-result-object p2
-
-    if-eqz p2, :cond_1
-
-    check-cast p2, [Ljava/lang/String;
-
-    .line 9
-    invoke-virtual {p1, p2}, Lcom/supercell/id/SupercellId;->inviteToPlayFailed$supercellId_release([Ljava/lang/String;)V
-
-    .line 10
-    sget-object p1, Lbe/n;->a:Lbe/n;
-
-    return-object p1
-
-    .line 11
-    :cond_1
-    new-instance p1, Lkotlin/TypeCastException;
-
-    const-string p2, "null cannot be cast to non-null type kotlin.Array<T>"
-
-    invoke-direct {p1, p2}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_2
-    const-string p1, "it"
-
-    .line 12
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_3
-    const-string p1, "$receiver"
-
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    goto :goto_2
-
-    :goto_1
-    throw v0
-
-    :goto_2
-    goto :goto_1
+    :array_0
+    .array-data 4
+        0x0
+        0x3ecccccd    # 0.4f
+    .end array-data
 .end method

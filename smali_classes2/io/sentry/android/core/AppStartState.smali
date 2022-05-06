@@ -19,7 +19,7 @@
 
 .field private appStartTime:Ljava/util/Date;
 
-.field private coldStart:Z
+.field private coldStart:Ljava/lang/Boolean;
 
 
 # direct methods
@@ -37,10 +37,15 @@
 .end method
 
 .method private constructor <init>()V
-    .locals 0
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, Lio/sentry/android/core/AppStartState;->coldStart:Ljava/lang/Boolean;
 
     return-void
 .end method
@@ -69,7 +74,11 @@
 
     iget-object v0, p0, Lio/sentry/android/core/AppStartState;->appStartEndMillis:Ljava/lang/Long;
 
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_1
+
+    iget-object v1, p0, Lio/sentry/android/core/AppStartState;->coldStart:Ljava/lang/Boolean;
+
+    if-nez v1, :cond_0
 
     goto :goto_0
 
@@ -123,13 +132,13 @@
     return-object v0
 .end method
 
-.method public isColdStart()Z
+.method public isColdStart()Ljava/lang/Boolean;
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/AppStartState;->coldStart:Z
+    iget-object v0, p0, Lio/sentry/android/core/AppStartState;->coldStart:Ljava/lang/Boolean;
 
-    return v0
+    return-object v0
 .end method
 
 .method public resetInstance()V
@@ -236,17 +245,35 @@
 .end method
 
 .method public declared-synchronized setColdStart(Z)V
-    .locals 0
+    .locals 1
 
     monitor-enter p0
 
     .line 1
     :try_start_0
-    iput-boolean p1, p0, Lio/sentry/android/core/AppStartState;->coldStart:Z
+    iget-object v0, p0, Lio/sentry/android/core/AppStartState;->coldStart:Ljava/lang/Boolean;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    if-eqz v0, :cond_0
+
     .line 2
+    monitor-exit p0
+
+    return-void
+
+    .line 3
+    :cond_0
+    :try_start_1
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lio/sentry/android/core/AppStartState;->coldStart:Ljava/lang/Boolean;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 4
     monitor-exit p0
 
     return-void

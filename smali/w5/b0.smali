@@ -1,46 +1,44 @@
-.class public final Lw5/b0;
+.class public final synthetic Lw5/b0;
 .super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/util/concurrent/Executor;
 
 
 # static fields
-.field public static final a:Ljava/util/concurrent/Executor;
+.field public static final g:Ljava/util/concurrent/Executor;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    sget-object v0, Lw5/d0;->a:Ljava/util/concurrent/Executor;
+    new-instance v0, Lw5/b0;
 
-    sput-object v0, Lw5/b0;->a:Ljava/util/concurrent/Executor;
+    invoke-direct {v0}, Lw5/b0;-><init>()V
+
+    sput-object v0, Lw5/b0;->g:Ljava/util/concurrent/Executor;
 
     return-void
 .end method
 
-.method public static a()Ljava/util/concurrent/Executor;
-    .locals 9
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final execute(Ljava/lang/Runnable;)V
+    .locals 1
+
+    sget-object v0, Lw5/z;->a:Ljava/util/concurrent/Executor;
 
     .line 1
-    new-instance v8, Ljava/util/concurrent/ThreadPoolExecutor;
+    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
 
-    sget-object v5, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
-
-    new-instance v6, Ljava/util/concurrent/LinkedBlockingQueue;
-
-    invoke-direct {v6}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
-
-    sget-object v7, Lw5/c0;->a:Ljava/util/concurrent/ThreadFactory;
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
-
-    const-wide/16 v3, 0x1e
-
-    move-object v0, v8
-
-    invoke-direct/range {v0 .. v7}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
-
-    return-object v8
+    return-void
 .end method

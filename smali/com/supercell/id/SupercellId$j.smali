@@ -20,14 +20,14 @@
     value = {
         "Lle/j;",
         "Lke/a<",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/SupercellId$j;
+.field public static final g:Lcom/supercell/id/SupercellId$j;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/SupercellId$j;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/SupercellId$j;->a:Lcom/supercell/id/SupercellId$j;
+    sput-object v0, Lcom/supercell/id/SupercellId$j;->g:Lcom/supercell/id/SupercellId$j;
 
     return-void
 .end method
@@ -76,23 +76,23 @@
     if-eqz v1, :cond_2
 
     .line 2
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v2
 
     .line 3
-    iget-object v2, v2, Lwd/r;->v:Lqc/a;
+    iget-object v2, v2, Lvd/r;->v:Lnc/a;
 
     .line 4
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 5
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v3
 
     .line 6
-    iget-object v3, v3, Lwd/r;->j:Lcom/supercell/id/IdConfiguration;
+    iget-object v3, v3, Lvd/r;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 7
     invoke-virtual {v3}, Lcom/supercell/id/IdConfiguration;->getSfxEnabled()Z
@@ -105,18 +105,18 @@
 
     .line 8
     :cond_0
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
     .line 9
-    iget-object v0, v0, Lwd/r;->s:Lqd/j;
+    iget-object v0, v0, Lvd/r;->s:Lpd/i;
 
     .line 10
-    iget-object v0, v0, Lqd/j;->g:Lqd/h;
+    iget-object v0, v0, Lpd/i;->g:Lpd/h;
 
     .line 11
-    invoke-virtual {v0, v1}, Lqd/m0;->a(Landroid/content/Context;)Ljava/io/File;
+    invoke-virtual {v0, v1}, Lpd/m0;->a(Landroid/content/Context;)Ljava/io/File;
 
     move-result-object v0
 
@@ -154,7 +154,7 @@
 
     invoke-direct {v6, v0, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    invoke-virtual {v2, v6}, Lqc/a;->c(Ljava/io/File;)V
+    invoke-virtual {v2, v6}, Lnc/a;->c(Ljava/io/File;)V
 
     add-int/lit8 v4, v4, 0x1
 
@@ -163,7 +163,7 @@
     .line 16
     :cond_2
     :goto_1
-    sget-object v0, Lbe/n;->a:Lbe/n;
+    sget-object v0, Lae/i;->a:Lae/i;
 
     return-object v0
 .end method

@@ -64,7 +64,7 @@
     move-object/from16 v1, p2
 
     .line 1
-    invoke-static/range {p1 .. p1}, Landroid/support/v4/media/a;->b(Ljava/lang/Object;)V
+    invoke-static/range {p1 .. p1}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
 
     .line 2
     :try_start_0
@@ -103,7 +103,7 @@
     move-result-object v8
 
     .line 9
-    invoke-static {v8}, Landroid/support/v4/media/a;->b(Ljava/lang/Object;)V
+    invoke-static {v8}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
 
     .line 10
     invoke-virtual/range {p1 .. p1}, Lcom/kakaogame/push/PushMessage;->getSoundUri()Landroid/net/Uri;
@@ -515,7 +515,7 @@
     .locals 2
 
     .line 1
-    invoke-static {p1}, Landroid/support/v4/media/a;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
 
     if-nez p0, :cond_0
 
@@ -568,7 +568,7 @@
 
     invoke-direct {v1, p0, p1}, Lcom/kakaogame/push/PushNotificationHandler$1;-><init>(Landroid/content/Context;Lcom/kakaogame/push/PushMessage;)V
 
-    invoke-static {v0, v1}, Lcom/kakaogame/ui/ImageDownloader;->downloadImage(Ljava/lang/String;Ljc/a;)V
+    invoke-static {v0, v1}, Lcom/kakaogame/ui/ImageDownloader;->downloadImage(Ljava/lang/String;Lgc/a;)V
 
     goto :goto_0
 

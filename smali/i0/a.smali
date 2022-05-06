@@ -17,21 +17,21 @@
 
 
 # instance fields
-.field public a:Z
+.field public g:Z
 
-.field public b:Z
+.field public h:Z
 
-.field public h:Landroid/database/Cursor;
+.field public i:Landroid/database/Cursor;
 
-.field public i:Landroid/content/Context;
+.field public j:Landroid/content/Context;
 
-.field public j:I
+.field public k:I
 
-.field public k:Li0/a$a;
+.field public l:Li0/a$a;
 
-.field public l:Landroid/database/DataSetObserver;
+.field public m:Landroid/database/DataSetObserver;
 
-.field public m:Li0/b;
+.field public n:Li0/b;
 
 
 # direct methods
@@ -64,13 +64,13 @@
     or-int/lit8 p3, p3, 0x2
 
     .line 2
-    iput-boolean v0, p0, Li0/a;->b:Z
+    iput-boolean v0, p0, Li0/a;->h:Z
 
     goto :goto_1
 
     .line 3
     :cond_1
-    iput-boolean v3, p0, Li0/a;->b:Z
+    iput-boolean v3, p0, Li0/a;->h:Z
 
     :goto_1
     if-eqz p2, :cond_2
@@ -82,13 +82,13 @@
 
     .line 4
     :goto_2
-    iput-object p2, p0, Li0/a;->h:Landroid/database/Cursor;
+    iput-object p2, p0, Li0/a;->i:Landroid/database/Cursor;
 
     .line 5
-    iput-boolean v0, p0, Li0/a;->a:Z
+    iput-boolean v0, p0, Li0/a;->g:Z
 
     .line 6
-    iput-object p1, p0, Li0/a;->i:Landroid/content/Context;
+    iput-object p1, p0, Li0/a;->j:Landroid/content/Context;
 
     if-eqz v0, :cond_3
 
@@ -105,7 +105,7 @@
     const/4 p1, -0x1
 
     :goto_3
-    iput p1, p0, Li0/a;->j:I
+    iput p1, p0, Li0/a;->k:I
 
     and-int/lit8 p1, p3, 0x2
 
@@ -116,14 +116,14 @@
 
     invoke-direct {p1, p0}, Li0/a$a;-><init>(Li0/a;)V
 
-    iput-object p1, p0, Li0/a;->k:Li0/a$a;
+    iput-object p1, p0, Li0/a;->l:Li0/a$a;
 
     .line 9
     new-instance p1, Li0/a$b;
 
     invoke-direct {p1, p0}, Li0/a$b;-><init>(Li0/a;)V
 
-    iput-object p1, p0, Li0/a;->l:Landroid/database/DataSetObserver;
+    iput-object p1, p0, Li0/a;->m:Landroid/database/DataSetObserver;
 
     goto :goto_4
 
@@ -131,16 +131,16 @@
     const/4 p1, 0x0
 
     .line 10
-    iput-object p1, p0, Li0/a;->k:Li0/a$a;
+    iput-object p1, p0, Li0/a;->l:Li0/a$a;
 
     .line 11
-    iput-object p1, p0, Li0/a;->l:Landroid/database/DataSetObserver;
+    iput-object p1, p0, Li0/a;->m:Landroid/database/DataSetObserver;
 
     :goto_4
     if-eqz v0, :cond_6
 
     .line 12
-    iget-object p1, p0, Li0/a;->k:Li0/a$a;
+    iget-object p1, p0, Li0/a;->l:Li0/a$a;
 
     if-eqz p1, :cond_5
 
@@ -148,7 +148,7 @@
 
     .line 13
     :cond_5
-    iget-object p1, p0, Li0/a;->l:Landroid/database/DataSetObserver;
+    iget-object p1, p0, Li0/a;->m:Landroid/database/DataSetObserver;
 
     if-eqz p1, :cond_6
 
@@ -167,7 +167,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Li0/a;->h:Landroid/database/Cursor;
+    iget-object v0, p0, Li0/a;->i:Landroid/database/Cursor;
 
     if-ne p1, v0, :cond_0
 
@@ -179,7 +179,7 @@
     if-eqz v0, :cond_2
 
     .line 2
-    iget-object v1, p0, Li0/a;->k:Li0/a$a;
+    iget-object v1, p0, Li0/a;->l:Li0/a$a;
 
     if-eqz v1, :cond_1
 
@@ -187,7 +187,7 @@
 
     .line 3
     :cond_1
-    iget-object v1, p0, Li0/a;->l:Landroid/database/DataSetObserver;
+    iget-object v1, p0, Li0/a;->m:Landroid/database/DataSetObserver;
 
     if-eqz v1, :cond_2
 
@@ -195,12 +195,12 @@
 
     .line 4
     :cond_2
-    iput-object p1, p0, Li0/a;->h:Landroid/database/Cursor;
+    iput-object p1, p0, Li0/a;->i:Landroid/database/Cursor;
 
     if-eqz p1, :cond_5
 
     .line 5
-    iget-object v1, p0, Li0/a;->k:Li0/a$a;
+    iget-object v1, p0, Li0/a;->l:Li0/a$a;
 
     if-eqz v1, :cond_3
 
@@ -208,7 +208,7 @@
 
     .line 6
     :cond_3
-    iget-object v1, p0, Li0/a;->l:Landroid/database/DataSetObserver;
+    iget-object v1, p0, Li0/a;->m:Landroid/database/DataSetObserver;
 
     if-eqz v1, :cond_4
 
@@ -222,12 +222,12 @@
 
     move-result p1
 
-    iput p1, p0, Li0/a;->j:I
+    iput p1, p0, Li0/a;->k:I
 
     const/4 p1, 0x1
 
     .line 8
-    iput-boolean p1, p0, Li0/a;->a:Z
+    iput-boolean p1, p0, Li0/a;->g:Z
 
     .line 9
     invoke-virtual {p0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
@@ -238,12 +238,12 @@
     const/4 p1, -0x1
 
     .line 10
-    iput p1, p0, Li0/a;->j:I
+    iput p1, p0, Li0/a;->k:I
 
     const/4 p1, 0x0
 
     .line 11
-    iput-boolean p1, p0, Li0/a;->a:Z
+    iput-boolean p1, p0, Li0/a;->g:Z
 
     .line 12
     invoke-virtual {p0}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V
@@ -268,11 +268,11 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Li0/a;->a:Z
+    iget-boolean v0, p0, Li0/a;->g:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Li0/a;->h:Landroid/database/Cursor;
+    iget-object v0, p0, Li0/a;->i:Landroid/database/Cursor;
 
     if-eqz v0, :cond_0
 
@@ -293,12 +293,12 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Li0/a;->a:Z
+    iget-boolean v0, p0, Li0/a;->g:Z
 
     if-eqz v0, :cond_1
 
     .line 2
-    iget-object v0, p0, Li0/a;->h:Landroid/database/Cursor;
+    iget-object v0, p0, Li0/a;->i:Landroid/database/Cursor;
 
     invoke-interface {v0, p1}, Landroid/database/Cursor;->moveToPosition(I)Z
 
@@ -310,9 +310,9 @@
     check-cast p1, Li0/c;
 
     .line 4
-    iget-object p2, p1, Li0/c;->p:Landroid/view/LayoutInflater;
+    iget-object p2, p1, Li0/c;->q:Landroid/view/LayoutInflater;
 
-    iget p1, p1, Li0/c;->o:I
+    iget p1, p1, Li0/c;->p:I
 
     const/4 v0, 0x0
 
@@ -322,9 +322,9 @@
 
     .line 5
     :cond_0
-    iget-object p1, p0, Li0/a;->i:Landroid/content/Context;
+    iget-object p1, p0, Li0/a;->j:Landroid/content/Context;
 
-    iget-object p3, p0, Li0/a;->h:Landroid/database/Cursor;
+    iget-object p3, p0, Li0/a;->i:Landroid/database/Cursor;
 
     invoke-virtual {p0, p2, p1, p3}, Li0/a;->a(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
 
@@ -340,7 +340,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Li0/a;->m:Li0/b;
+    iget-object v0, p0, Li0/a;->n:Li0/b;
 
     if-nez v0, :cond_0
 
@@ -349,11 +349,11 @@
 
     invoke-direct {v0, p0}, Li0/b;-><init>(Li0/b$a;)V
 
-    iput-object v0, p0, Li0/a;->m:Li0/b;
+    iput-object v0, p0, Li0/a;->n:Li0/b;
 
     .line 3
     :cond_0
-    iget-object v0, p0, Li0/a;->m:Li0/b;
+    iget-object v0, p0, Li0/a;->n:Li0/b;
 
     return-object v0
 .end method
@@ -362,11 +362,11 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Li0/a;->a:Z
+    iget-boolean v0, p0, Li0/a;->g:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Li0/a;->h:Landroid/database/Cursor;
+    iget-object v0, p0, Li0/a;->i:Landroid/database/Cursor;
 
     if-eqz v0, :cond_0
 
@@ -374,7 +374,7 @@
     invoke-interface {v0, p1}, Landroid/database/Cursor;->moveToPosition(I)Z
 
     .line 3
-    iget-object p1, p0, Li0/a;->h:Landroid/database/Cursor;
+    iget-object p1, p0, Li0/a;->i:Landroid/database/Cursor;
 
     return-object p1
 
@@ -388,13 +388,13 @@
     .locals 3
 
     .line 1
-    iget-boolean v0, p0, Li0/a;->a:Z
+    iget-boolean v0, p0, Li0/a;->g:Z
 
     const-wide/16 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Li0/a;->h:Landroid/database/Cursor;
+    iget-object v0, p0, Li0/a;->i:Landroid/database/Cursor;
 
     if-eqz v0, :cond_0
 
@@ -406,9 +406,9 @@
     if-eqz p1, :cond_0
 
     .line 3
-    iget-object p1, p0, Li0/a;->h:Landroid/database/Cursor;
+    iget-object p1, p0, Li0/a;->i:Landroid/database/Cursor;
 
-    iget v0, p0, Li0/a;->j:I
+    iget v0, p0, Li0/a;->k:I
 
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getLong(I)J
 
@@ -424,12 +424,12 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Li0/a;->a:Z
+    iget-boolean v0, p0, Li0/a;->g:Z
 
     if-eqz v0, :cond_2
 
     .line 2
-    iget-object v0, p0, Li0/a;->h:Landroid/database/Cursor;
+    iget-object v0, p0, Li0/a;->i:Landroid/database/Cursor;
 
     invoke-interface {v0, p1}, Landroid/database/Cursor;->moveToPosition(I)Z
 
@@ -440,9 +440,9 @@
     if-nez p2, :cond_0
 
     .line 3
-    iget-object p1, p0, Li0/a;->i:Landroid/content/Context;
+    iget-object p1, p0, Li0/a;->j:Landroid/content/Context;
 
-    iget-object p2, p0, Li0/a;->h:Landroid/database/Cursor;
+    iget-object p2, p0, Li0/a;->i:Landroid/database/Cursor;
 
     invoke-virtual {p0, p1, p2, p3}, Li0/a;->d(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
 
@@ -450,9 +450,9 @@
 
     .line 4
     :cond_0
-    iget-object p1, p0, Li0/a;->i:Landroid/content/Context;
+    iget-object p1, p0, Li0/a;->j:Landroid/content/Context;
 
-    iget-object p3, p0, Li0/a;->h:Landroid/database/Cursor;
+    iget-object p3, p0, Li0/a;->i:Landroid/database/Cursor;
 
     invoke-virtual {p0, p2, p1, p3}, Li0/a;->a(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
 

@@ -12,13 +12,13 @@
 
 
 # static fields
-.field public static final k0:Lwd/t1;
+.field public static final l0:Lvd/u1;
 
 
 # instance fields
-.field public i0:Landroidx/recyclerview/widget/RecyclerView;
+.field public j0:Landroidx/recyclerview/widget/RecyclerView;
 
-.field public j0:Ljava/util/HashMap;
+.field public k0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -26,15 +26,15 @@
     .locals 3
 
     .line 1
-    new-instance v0, Lwd/t1;
+    new-instance v0, Lvd/u1;
 
-    const-class v1, Ljd/b;
+    const-class v1, Lid/b;
 
     const-string v2, "account_messages_heading"
 
-    invoke-direct {v0, v2, v1}, Lwd/t1;-><init>(Ljava/lang/String;Ljava/lang/Class;)V
+    invoke-direct {v0, v2, v1}, Lvd/u1;-><init>(Ljava/lang/String;Ljava/lang/Class;)V
 
-    sput-object v0, Lcom/supercell/id/ui/messages/MessagesFragment;->k0:Lwd/t1;
+    sput-object v0, Lcom/supercell/id/ui/messages/MessagesFragment;->l0:Lvd/u1;
 
     return-void
 .end method
@@ -53,7 +53,7 @@
 .method public W0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment;->j0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment;->k0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -67,7 +67,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment;->i0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment;->j0:Landroidx/recyclerview/widget/RecyclerView;
 
     return-object v0
 .end method
@@ -107,7 +107,7 @@
     const-string p1, "inflater"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -120,7 +120,7 @@
     invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->i0()V
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment;->j0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment;->k0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -133,7 +133,7 @@
 .method public o1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment;->j0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment;->k0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -141,10 +141,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment;->j0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment;->k0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment;->j0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment;->k0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -159,7 +159,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -173,7 +173,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/messages/MessagesFragment;->j0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/messages/MessagesFragment;->k0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -191,10 +191,10 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
-    iget-object v1, p0, Landroidx/fragment/app/Fragment;->x:Landroidx/fragment/app/FragmentManager;
+    iget-object v1, p0, Landroidx/fragment/app/Fragment;->y:Landroidx/fragment/app/FragmentManager;
 
     if-eqz v1, :cond_5
 
@@ -234,10 +234,10 @@
     const-string v5, "it"
 
     .line 6
-    invoke-static {v4, v5}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 7
-    iget v4, v4, Landroidx/fragment/app/Fragment;->B:I
+    iget v4, v4, Landroidx/fragment/app/Fragment;->C:I
 
     .line 8
     sget v5, Lcom/supercell/id/R$id;->head:I
@@ -281,7 +281,7 @@
 
     move-result-object v2
 
-    instance-of v3, v2, Luc/e0;
+    instance-of v3, v2, Lrc/f0;
 
     if-eqz v3, :cond_3
 
@@ -291,7 +291,7 @@
 
     .line 11
     :cond_4
-    invoke-static {v0}, Lce/l;->Q(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v0}, Lbe/k;->F(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -303,14 +303,14 @@
     const/4 v0, 0x0
 
     :goto_3
-    check-cast v0, Luc/e0;
+    check-cast v0, Lrc/f0;
 
     if-eqz v0, :cond_6
 
     const/4 v1, -0x2
 
     .line 12
-    invoke-virtual {v0, v1}, Luc/e0;->t1(I)V
+    invoke-virtual {v0, v1}, Lrc/f0;->t1(I)V
 
     :cond_6
     return-void
@@ -325,7 +325,7 @@
     invoke-super {p0, p1, p2}, Lcom/supercell/id/ui/BaseFragment;->s0(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 2
-    new-instance p1, Lwd/u1;
+    new-instance p1, Lvd/v1;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->x()Landroidx/fragment/app/FragmentManager;
 
@@ -333,13 +333,13 @@
 
     const-string v0, "childFragmentManager"
 
-    invoke-static {p2, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    sget-object v0, Lcom/supercell/id/ui/messages/MessagesFragment;->k0:Lwd/t1;
+    sget-object v0, Lcom/supercell/id/ui/messages/MessagesFragment;->l0:Lvd/u1;
 
     .line 4
-    invoke-static {v0}, Landroidx/savedstate/d;->u(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lb5/m;->l(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
@@ -348,7 +348,7 @@
 
     invoke-direct {v1, p0}, Lcom/supercell/id/ui/messages/MessagesFragment$b;-><init>(Lcom/supercell/id/ui/messages/MessagesFragment;)V
 
-    invoke-direct {p1, p2, v0, v1}, Lwd/u1;-><init>(Landroidx/fragment/app/FragmentManager;Ljava/util/List;Lke/l;)V
+    invoke-direct {p1, p2, v0, v1}, Lvd/v1;-><init>(Landroidx/fragment/app/FragmentManager;Ljava/util/List;Lke/l;)V
 
     .line 6
     sget p2, Lcom/supercell/id/R$id;->tab_pager:I
@@ -378,7 +378,7 @@
     .line 8
     new-instance v1, Lcom/supercell/id/ui/messages/MessagesFragment$a;
 
-    invoke-direct {v1, p1}, Lcom/supercell/id/ui/messages/MessagesFragment$a;-><init>(Lwd/u1;)V
+    invoke-direct {v1, p1}, Lcom/supercell/id/ui/messages/MessagesFragment$a;-><init>(Lvd/v1;)V
 
     invoke-virtual {v0, v1}, Lcom/supercell/id/view/SubPageTabLayout;->setGetTitleKey(Lke/l;)V
 
@@ -400,7 +400,7 @@
     const-string p1, "view"
 
     .line 10
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

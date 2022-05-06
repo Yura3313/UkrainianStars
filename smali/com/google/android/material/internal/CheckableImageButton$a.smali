@@ -68,7 +68,7 @@
     iget-object p1, p0, Lcom/google/android/material/internal/CheckableImageButton$a;->d:Lcom/google/android/material/internal/CheckableImageButton;
 
     .line 5
-    iget-boolean p1, p1, Lcom/google/android/material/internal/CheckableImageButton;->i:Z
+    iget-boolean p1, p1, Lcom/google/android/material/internal/CheckableImageButton;->j:Z
 
     .line 6
     iget-object v0, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;

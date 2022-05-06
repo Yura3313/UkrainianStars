@@ -55,10 +55,10 @@
     .locals 1
 
     .line 1
-    check-cast p3, Lk4/a;
+    check-cast p3, Ll4/a;
 
     .line 2
-    invoke-interface {p3}, Lk4/a;->a()Z
+    invoke-interface {p3}, Ll4/a;->a()Z
 
     move-result p1
 
@@ -70,7 +70,7 @@
     if-eqz p1, :cond_1
 
     .line 4
-    invoke-interface {p3}, Lk4/a;->a()Z
+    invoke-interface {p3}, Ll4/a;->a()Z
 
     move-result p1
 
@@ -93,7 +93,7 @@
 
     check-cast p1, Landroid/view/View;
 
-    invoke-interface {p3}, Lk4/a;->a()Z
+    invoke-interface {p3}, Ll4/a;->a()Z
 
     move-result p3
 
@@ -113,7 +113,7 @@
     .locals 5
 
     .line 1
-    invoke-static {p2}, Lf0/s;->p(Landroid/view/View;)Z
+    invoke-static {p2}, Lf0/r;->p(Landroid/view/View;)Z
 
     move-result p3
 
@@ -151,7 +151,7 @@
     if-eqz v4, :cond_0
 
     .line 6
-    check-cast v3, Lk4/a;
+    check-cast v3, Ll4/a;
 
     goto :goto_1
 
@@ -167,7 +167,7 @@
     if-eqz v3, :cond_3
 
     .line 7
-    invoke-interface {v3}, Lk4/a;->a()Z
+    invoke-interface {v3}, Ll4/a;->a()Z
 
     move-result p1
 
@@ -178,7 +178,7 @@
     if-eqz p1, :cond_3
 
     .line 8
-    invoke-interface {v3}, Lk4/a;->a()Z
+    invoke-interface {v3}, Ll4/a;->a()Z
 
     move-result p1
 
@@ -201,7 +201,7 @@
 
     new-instance v1, Lcom/google/android/material/transformation/ExpandableBehavior$a;
 
-    invoke-direct {v1, p0, p2, p1, v3}, Lcom/google/android/material/transformation/ExpandableBehavior$a;-><init>(Lcom/google/android/material/transformation/ExpandableBehavior;Landroid/view/View;ILk4/a;)V
+    invoke-direct {v1, p0, p2, p1, v3}, Lcom/google/android/material/transformation/ExpandableBehavior$a;-><init>(Lcom/google/android/material/transformation/ExpandableBehavior;Landroid/view/View;ILl4/a;)V
 
     .line 10
     invoke-virtual {p3, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V

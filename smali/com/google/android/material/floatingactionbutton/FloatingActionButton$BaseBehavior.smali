@@ -86,7 +86,7 @@
     check-cast p2, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
 
     .line 2
-    iget-object p1, p2, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->r:Landroid/graphics/Rect;
+    iget-object p1, p2, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->s:Landroid/graphics/Rect;
 
     .line 3
     invoke-virtual {p2}, Landroid/widget/ImageButton;->getLeft()I
@@ -299,7 +299,7 @@
     invoke-virtual {p1, p2, p3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v(Landroid/view/View;I)V
 
     .line 14
-    iget-object p3, p2, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->r:Landroid/graphics/Rect;
+    iget-object p3, p2, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->s:Landroid/graphics/Rect;
 
     if-eqz p3, :cond_9
 
@@ -404,13 +404,13 @@
     if-eqz v2, :cond_8
 
     .line 25
-    invoke-static {p2, v2}, Lf0/s;->t(Landroid/view/View;I)V
+    invoke-static {p2, v2}, Lf0/r;->t(Landroid/view/View;I)V
 
     :cond_8
     if-eqz v1, :cond_9
 
     .line 26
-    invoke-static {p2, v1}, Lf0/s;->s(Landroid/view/View;I)V
+    invoke-static {p2, v1}, Lf0/r;->s(Landroid/view/View;I)V
 
     :cond_9
     const/4 p1, 0x1

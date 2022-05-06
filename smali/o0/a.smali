@@ -48,7 +48,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lo0/c;->k:Ljava/util/concurrent/Executor;
+    sget-object v0, Lo0/c;->l:Ljava/util/concurrent/Executor;
 
     .line 2
     invoke-direct {p0, p1}, Lo0/b;-><init>(Landroid/content/Context;)V
@@ -264,12 +264,12 @@
     iget-object v0, p0, Lo0/a;->h:Lo0/a$a;
 
     .line 9
-    iget-object v4, v0, Lo0/c;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v4, v0, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v4, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     .line 10
-    iget-object v0, v0, Lo0/c;->b:Ljava/util/concurrent/FutureTask;
+    iget-object v0, v0, Lo0/c;->h:Ljava/util/concurrent/FutureTask;
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/FutureTask;->cancel(Z)Z
 
@@ -404,7 +404,7 @@
     iget-object p2, v0, Landroidx/lifecycle/LiveData;->j:Ljava/lang/Runnable;
 
     .line 18
-    iget-object p1, p1, Lh/a;->a:Landroidx/fragment/app/t;
+    iget-object p1, p1, Lh/a;->g:Landroidx/fragment/app/t;
 
     invoke-virtual {p1, p2}, Landroidx/fragment/app/t;->k(Ljava/lang/Runnable;)V
 
@@ -427,7 +427,7 @@
 .end method
 
 .method public f()V
-    .locals 5
+    .locals 6
 
     .line 1
     iget-object v0, p0, Lo0/a;->i:Lo0/a$a;
@@ -451,30 +451,24 @@
     iget-object v2, p0, Lo0/a;->g:Ljava/util/concurrent/Executor;
 
     .line 4
-    iget-object v3, v1, Lo0/c;->h:Lo0/c$g;
+    iget v3, v1, Lo0/c;->i:I
 
-    sget-object v4, Lo0/c$g;->PENDING:Lo0/c$g;
+    const/4 v4, 0x2
 
-    if-eq v3, v4, :cond_2
+    const/4 v5, 0x1
+
+    if-eq v3, v5, :cond_2
 
     .line 5
-    sget-object v0, Lo0/c$d;->a:[I
+    iget v0, v1, Lo0/c;->i:I
 
-    iget-object v1, v1, Lo0/c;->h:Lo0/c$g;
+    invoke-static {v0}, Lp/g;->b(I)I
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    move-result v0
 
-    move-result v1
+    if-eq v0, v5, :cond_1
 
-    aget v0, v0, v1
-
-    const/4 v1, 0x1
-
-    if-eq v0, v1, :cond_1
-
-    const/4 v1, 0x2
-
-    if-eq v0, v1, :cond_0
+    if-eq v0, v4, :cond_0
 
     .line 6
     new-instance v0, Ljava/lang/IllegalStateException;
@@ -507,17 +501,15 @@
 
     .line 9
     :cond_2
-    sget-object v3, Lo0/c$g;->RUNNING:Lo0/c$g;
-
-    iput-object v3, v1, Lo0/c;->h:Lo0/c$g;
+    iput v4, v1, Lo0/c;->i:I
 
     .line 10
-    iget-object v3, v1, Lo0/c;->a:Lo0/c$h;
+    iget-object v3, v1, Lo0/c;->g:Lo0/c$f;
 
-    iput-object v0, v3, Lo0/c$h;->a:[Ljava/lang/Object;
+    iput-object v0, v3, Lo0/c$f;->a:[Ljava/lang/Object;
 
     .line 11
-    iget-object v0, v1, Lo0/c;->b:Ljava/util/concurrent/FutureTask;
+    iget-object v0, v1, Lo0/c;->h:Ljava/util/concurrent/FutureTask;
 
     invoke-interface {v2, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 

@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lq3/i3;
+.implements Lq3/f3;
 
 
 # annotations
@@ -14,7 +14,7 @@
         "Lq3/m1<",
         "TMessageType;TBuilderType;>;>",
         "Ljava/lang/Object;",
-        "Lq3/i3;"
+        "Lq3/f3;"
     }
 .end annotation
 
@@ -51,19 +51,19 @@
     :try_start_0
     move-object v0, p0
 
-    check-cast v0, Lq3/j2;
+    check-cast v0, Lq3/g2;
 
-    invoke-virtual {v0}, Lq3/j2;->x()I
+    invoke-virtual {v0}, Lq3/g2;->A()I
 
     move-result v1
 
-    sget-object v2, Lq3/q1;->b:Lq3/q1;
+    sget-object v2, Lq3/q1;->h:Lq3/q1;
 
     .line 2
     new-array v2, v1, [B
 
     .line 3
-    sget-object v3, Lcom/google/android/gms/internal/drive/zzjr;->b:Ljava/util/logging/Logger;
+    sget-object v3, Lcom/google/android/gms/internal/drive/zzjr;->h:Ljava/util/logging/Logger;
 
     .line 4
     new-instance v3, Lcom/google/android/gms/internal/drive/zzjr$a;
@@ -71,31 +71,23 @@
     invoke-direct {v3, v2, v1}, Lcom/google/android/gms/internal/drive/zzjr$a;-><init>([BI)V
 
     .line 5
-    move-object v1, v3
-
-    check-cast v1, Lcom/google/android/gms/internal/drive/zzjr;
+    invoke-virtual {v0, v3}, Lq3/g2;->b(Lcom/google/android/gms/internal/drive/zzjr;)V
 
     .line 6
-    invoke-virtual {v0, v1}, Lq3/j2;->b(Lcom/google/android/gms/internal/drive/zzjr;)V
-
-    .line 7
-    check-cast v3, Lcom/google/android/gms/internal/drive/zzjr;
-
-    .line 8
-    invoke-virtual {v3}, Lcom/google/android/gms/internal/drive/zzjr;->w1()I
+    invoke-virtual {v3}, Lcom/google/android/gms/internal/drive/zzjr;->t1()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 9
-    new-instance v0, Lq3/t1;
+    .line 7
+    new-instance v0, Lq3/s1;
 
-    invoke-direct {v0, v2}, Lq3/t1;-><init>([B)V
+    invoke-direct {v0, v2}, Lq3/s1;-><init>([B)V
 
     return-object v0
 
-    .line 10
+    .line 8
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -110,12 +102,12 @@
     :catch_0
     move-exception v0
 
-    .line 11
+    .line 9
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string v2, "ByteString"
 
-    .line 12
+    .line 10
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v3
@@ -148,7 +140,7 @@
 
     move-result-object v2
 
-    .line 13
+    .line 11
     invoke-direct {v1, v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     throw v1
@@ -161,16 +153,16 @@
     :try_start_0
     move-object v0, p0
 
-    check-cast v0, Lq3/j2;
+    check-cast v0, Lq3/g2;
 
-    invoke-virtual {v0}, Lq3/j2;->x()I
+    invoke-virtual {v0}, Lq3/g2;->A()I
 
     move-result v1
 
     new-array v2, v1, [B
 
     .line 2
-    sget-object v3, Lcom/google/android/gms/internal/drive/zzjr;->b:Ljava/util/logging/Logger;
+    sget-object v3, Lcom/google/android/gms/internal/drive/zzjr;->h:Ljava/util/logging/Logger;
 
     .line 3
     new-instance v3, Lcom/google/android/gms/internal/drive/zzjr$a;
@@ -178,10 +170,10 @@
     invoke-direct {v3, v2, v1}, Lcom/google/android/gms/internal/drive/zzjr$a;-><init>([BI)V
 
     .line 4
-    invoke-virtual {v0, v3}, Lq3/j2;->b(Lcom/google/android/gms/internal/drive/zzjr;)V
+    invoke-virtual {v0, v3}, Lq3/g2;->b(Lcom/google/android/gms/internal/drive/zzjr;)V
 
     .line 5
-    invoke-virtual {v3}, Lcom/google/android/gms/internal/drive/zzjr$a;->w1()I
+    invoke-virtual {v3}, Lcom/google/android/gms/internal/drive/zzjr$a;->t1()I
 
     move-result v0
 

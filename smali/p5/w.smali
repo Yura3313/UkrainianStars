@@ -1,239 +1,40 @@
-.class public final Lp5/w;
+.class public final synthetic Lp5/w;
 .super Ljava/lang/Object;
-.source "EncryptThenAuthenticate.java"
-
-# interfaces
-.implements Ld5/a;
-
-
-# instance fields
-.field public final a:Lp5/c0;
-
-.field public final b:Ld5/o;
-
-.field public final c:I
+.source "R8$$SyntheticClass"
 
 
 # direct methods
-.method public constructor <init>(Lp5/c0;Ld5/o;I)V
-    .locals 0
+.method public static synthetic a(I)Ljava/lang/String;
+    .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x1
 
-    .line 2
-    iput-object p1, p0, Lp5/w;->a:Lp5/c0;
+    if-ne p0, v0, :cond_0
 
-    .line 3
-    iput-object p2, p0, Lp5/w;->b:Ld5/o;
+    const-string p0, "NIST_P256"
 
-    .line 4
-    iput p3, p0, Lp5/w;->c:I
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public a([B[B)[B
-    .locals 7
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lp5/w;->a:Lp5/c0;
-
-    invoke-interface {v0, p1}, Lp5/c0;->a([B)[B
-
-    move-result-object p1
-
-    const/4 v0, 0x0
-
-    if-nez p2, :cond_0
-
-    new-array p2, v0, [B
+    return-object p0
 
     :cond_0
-    const/16 v1, 0x8
+    const/4 v0, 0x2
 
-    .line 2
-    invoke-static {v1}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
+    if-ne p0, v0, :cond_1
 
-    move-result-object v2
+    const-string p0, "NIST_P384"
 
-    const-wide/16 v3, 0x8
+    return-object p0
 
-    array-length v5, p2
-
-    int-to-long v5, v5
-
-    mul-long v5, v5, v3
-
-    invoke-virtual {v2, v5, v6}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/nio/ByteBuffer;->array()[B
-
-    move-result-object v2
-
-    invoke-static {v2, v1}, Ljava/util/Arrays;->copyOf([BI)[B
-
-    move-result-object v1
-
-    .line 3
-    iget-object v2, p0, Lp5/w;->b:Ld5/o;
-
-    const/4 v3, 0x3
-
-    new-array v3, v3, [[B
-
-    aput-object p2, v3, v0
-
-    const/4 p2, 0x1
-
-    aput-object p1, v3, p2
-
-    const/4 v4, 0x2
-
-    aput-object v1, v3, v4
-
-    invoke-static {v3}, Lp5/i;->a([[B)[B
-
-    move-result-object v1
-
-    invoke-interface {v2, v1}, Ld5/o;->b([B)[B
-
-    move-result-object v1
-
-    new-array v2, v4, [[B
-
-    aput-object p1, v2, v0
-
-    aput-object v1, v2, p2
-
-    .line 4
-    invoke-static {v2}, Lp5/i;->a([[B)[B
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public b([B[B)[B
-    .locals 8
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
-
-    .line 1
-    array-length v0, p1
-
-    iget v1, p0, Lp5/w;->c:I
-
-    if-lt v0, v1, :cond_1
-
-    .line 2
-    array-length v0, p1
-
-    sub-int/2addr v0, v1
-
-    const/4 v1, 0x0
-
-    invoke-static {p1, v1, v0}, Ljava/util/Arrays;->copyOfRange([BII)[B
-
-    move-result-object v0
-
-    .line 3
-    array-length v2, p1
-
-    iget v3, p0, Lp5/w;->c:I
-
-    sub-int/2addr v2, v3
-
-    array-length v3, p1
-
-    .line 4
-    invoke-static {p1, v2, v3}, Ljava/util/Arrays;->copyOfRange([BII)[B
-
-    move-result-object p1
-
-    if-nez p2, :cond_0
-
-    new-array p2, v1, [B
-
-    :cond_0
-    const/16 v2, 0x8
-
-    .line 5
-    invoke-static {v2}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
-
-    move-result-object v3
-
-    const-wide/16 v4, 0x8
-
-    array-length v6, p2
-
-    int-to-long v6, v6
-
-    mul-long v6, v6, v4
-
-    invoke-virtual {v3, v6, v7}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/nio/ByteBuffer;->array()[B
-
-    move-result-object v3
-
-    invoke-static {v3, v2}, Ljava/util/Arrays;->copyOf([BI)[B
-
-    move-result-object v2
-
-    .line 6
-    iget-object v3, p0, Lp5/w;->b:Ld5/o;
-
-    const/4 v4, 0x3
-
-    new-array v4, v4, [[B
-
-    aput-object p2, v4, v1
-
-    const/4 p2, 0x1
-
-    aput-object v0, v4, p2
-
-    const/4 p2, 0x2
-
-    aput-object v2, v4, p2
-
-    invoke-static {v4}, Lp5/i;->a([[B)[B
-
-    move-result-object p2
-
-    invoke-interface {v3, p1, p2}, Ld5/o;->a([B[B)V
-
-    .line 7
-    iget-object p1, p0, Lp5/w;->a:Lp5/c0;
-
-    invoke-interface {p1, v0}, Lp5/c0;->b([B)[B
-
-    move-result-object p1
-
-    return-object p1
-
-    .line 8
     :cond_1
-    new-instance p1, Ljava/security/GeneralSecurityException;
+    const/4 v0, 0x3
 
-    const-string p2, "ciphertext too short"
+    if-ne p0, v0, :cond_2
 
-    invoke-direct {p1, p2}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
+    const-string p0, "NIST_P521"
 
-    throw p1
+    return-object p0
+
+    :cond_2
+    const-string p0, "null"
+
+    return-object p0
 .end method

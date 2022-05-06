@@ -6,7 +6,7 @@
 # instance fields
 .field private final options:Lio/sentry/SentryOptions;
 
-.field private final random:Ljava/util/Random;
+.field private final random:Ljava/security/SecureRandom;
 
 
 # direct methods
@@ -22,16 +22,16 @@
 
     check-cast p1, Lio/sentry/SentryOptions;
 
-    new-instance v0, Ljava/util/Random;
+    new-instance v0, Ljava/security/SecureRandom;
 
-    invoke-direct {v0}, Ljava/util/Random;-><init>()V
+    invoke-direct {v0}, Ljava/security/SecureRandom;-><init>()V
 
-    invoke-direct {p0, p1, v0}, Lio/sentry/TracesSampler;-><init>(Lio/sentry/SentryOptions;Ljava/util/Random;)V
+    invoke-direct {p0, p1, v0}, Lio/sentry/TracesSampler;-><init>(Lio/sentry/SentryOptions;Ljava/security/SecureRandom;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Lio/sentry/SentryOptions;Ljava/util/Random;)V
+.method public constructor <init>(Lio/sentry/SentryOptions;Ljava/security/SecureRandom;)V
     .locals 0
 
     .line 2
@@ -41,7 +41,7 @@
     iput-object p1, p0, Lio/sentry/TracesSampler;->options:Lio/sentry/SentryOptions;
 
     .line 4
-    iput-object p2, p0, Lio/sentry/TracesSampler;->random:Ljava/util/Random;
+    iput-object p2, p0, Lio/sentry/TracesSampler;->random:Ljava/security/SecureRandom;
 
     return-void
 .end method
@@ -54,9 +54,9 @@
 
     move-result-wide v0
 
-    iget-object p1, p0, Lio/sentry/TracesSampler;->random:Ljava/util/Random;
+    iget-object p1, p0, Lio/sentry/TracesSampler;->random:Ljava/security/SecureRandom;
 
-    invoke-virtual {p1}, Ljava/util/Random;->nextDouble()D
+    invoke-virtual {p1}, Ljava/security/SecureRandom;->nextDouble()D
 
     move-result-wide v2
 

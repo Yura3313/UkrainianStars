@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public b:I
+.field public h:I
 
-.field public h:Ljava/lang/String;
+.field public i:Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
 
-.field public i:Landroid/accounts/Account;
+.field public j:Landroid/accounts/Account;
 
 
 # direct methods
@@ -50,7 +50,7 @@
     const/4 v0, 0x1
 
     .line 9
-    iput v0, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->a:I
+    iput v0, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->g:I
 
     return-void
 .end method
@@ -62,13 +62,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->a:I
+    iput p1, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->g:I
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->b:I
+    iput p2, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->h:I
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->i:Ljava/lang/String;
 
     if-nez p4, :cond_0
 
@@ -86,13 +86,13 @@
 
     invoke-direct {p1, p3, p2}, Landroid/accounts/Account;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    iput-object p1, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->i:Landroid/accounts/Account;
+    iput-object p1, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->j:Landroid/accounts/Account;
 
     return-void
 
     .line 7
     :cond_0
-    iput-object p4, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->i:Landroid/accounts/Account;
+    iput-object p4, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->j:Landroid/accounts/Account;
 
     return-void
 .end method
@@ -112,7 +112,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget v2, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->a:I
+    iget v2, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->g:I
 
     const/4 v3, 0x4
 
@@ -125,7 +125,7 @@
     const/4 v1, 0x2
 
     .line 5
-    iget v2, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->b:I
+    iget v2, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->h:I
 
     .line 6
     invoke-static {p1, v1, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -136,14 +136,14 @@
     const/4 v1, 0x3
 
     .line 8
-    iget-object v2, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->h:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->i:Ljava/lang/String;
 
     const/4 v4, 0x0
 
     invoke-static {p1, v1, v2, v4}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 9
-    iget-object v1, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->i:Landroid/accounts/Account;
+    iget-object v1, p0, Lcom/google/android/gms/auth/AccountChangeEventsRequest;->j:Landroid/accounts/Account;
 
     invoke-static {p1, v3, v1, p2, v4}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 

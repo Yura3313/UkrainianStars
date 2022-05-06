@@ -1,136 +1,170 @@
-.class public final enum Le7/b;
-.super Ljava/lang/Enum;
-.source "ClearedUserSyncState.java"
+.class public Le7/b;
+.super Ljava/lang/Object;
+.source "AndroidLegacyProfileMigrationDAO.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "Le7/b;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field private static final synthetic $VALUES:[Le7/b;
-
-.field public static final enum COMPLETED:Le7/b;
-
-.field public static final enum FAILED:Le7/b;
-
-.field public static final enum IN_PROGRESS:Le7/b;
-
-.field public static final enum NOT_STARTED:Le7/b;
+# instance fields
+.field public final a:Le7/f;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 9
+.method public constructor <init>(Le7/f;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Le7/b;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-string v1, "NOT_STARTED"
+    .line 2
+    iput-object p1, p0, Le7/b;->a:Le7/f;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/String;)Lda/a;
+    .locals 12
+
+    const/4 v0, 0x0
+
+    if-nez p1, :cond_0
+
+    return-object v0
+
+    .line 1
+    :cond_0
+    iget-object v1, p0, Le7/b;->a:Le7/f;
+
+    .line 2
+    monitor-enter v1
+
+    const/4 v2, 0x1
+
+    :try_start_0
+    new-array v7, v2, [Ljava/lang/String;
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, v1, v2}, Le7/b;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Le7/b;->NOT_STARTED:Le7/b;
-
-    .line 2
-    new-instance v1, Le7/b;
-
-    const-string v3, "IN_PROGRESS"
-
-    const/4 v4, 0x1
-
-    invoke-direct {v1, v3, v4}, Le7/b;-><init>(Ljava/lang/String;I)V
-
-    sput-object v1, Le7/b;->IN_PROGRESS:Le7/b;
+    aput-object p1, v7, v2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     .line 3
-    new-instance v3, Le7/b;
+    :try_start_1
+    iget-object p1, v1, Le7/f;->a:Lo9/a;
 
-    const-string v5, "COMPLETED"
+    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteOpenHelper;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
-    const/4 v6, 0x2
+    move-result-object v3
 
-    invoke-direct {v3, v5, v6}, Le7/b;-><init>(Ljava/lang/String;I)V
+    const-string v4, "legacy_profile_table"
 
-    sput-object v3, Le7/b;->COMPLETED:Le7/b;
+    const/4 v5, 0x0
+
+    const-string v6, "identifier = ?"
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
 
     .line 4
-    new-instance v5, Le7/b;
+    invoke-virtual/range {v3 .. v10}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
-    const-string v7, "FAILED"
-
-    const/4 v8, 0x3
-
-    invoke-direct {v5, v7, v8}, Le7/b;-><init>(Ljava/lang/String;I)V
-
-    sput-object v5, Le7/b;->FAILED:Le7/b;
-
-    const/4 v7, 0x4
-
-    new-array v7, v7, [Le7/b;
-
-    aput-object v0, v7, v2
-
-    aput-object v1, v7, v4
-
-    aput-object v3, v7, v6
-
-    aput-object v5, v7, v8
+    move-result-object p1
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 5
-    sput-object v7, Le7/b;->$VALUES:[Le7/b;
+    :try_start_2
+    invoke-interface {p1}, Landroid/database/Cursor;->moveToFirst()Z
 
-    return-void
-.end method
+    move-result v2
 
-.method private constructor <init>(Ljava/lang/String;I)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
+    if-eqz v2, :cond_1
 
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Le7/b;
-    .locals 1
-
-    .line 1
-    const-class v0, Le7/b;
-
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    move-result-object p0
-
-    check-cast p0, Le7/b;
-
-    return-object p0
-.end method
-
-.method public static values()[Le7/b;
-    .locals 1
-
-    .line 1
-    sget-object v0, Le7/b;->$VALUES:[Le7/b;
-
-    invoke-virtual {v0}, [Le7/b;->clone()Ljava/lang/Object;
+    .line 6
+    invoke-virtual {v1, p1}, Le7/f;->c(Landroid/database/Cursor;)Lda/a;
 
     move-result-object v0
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    check-cast v0, [Le7/b;
+    goto :goto_1
+
+    :catch_0
+    move-exception v2
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_2
+
+    :catch_1
+    move-exception p1
+
+    move-object v2, p1
+
+    move-object p1, v0
+
+    :goto_0
+    :try_start_3
+    const-string v3, "Helpshift_UserDB"
+
+    const-string v4, "Error in reading legacy profile with identifier"
+
+    .line 7
+    invoke-static {v3, v4, v2}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    if-eqz p1, :cond_2
+
+    .line 8
+    :cond_1
+    :goto_1
+    :try_start_4
+    invoke-interface {p1}, Landroid/database/Cursor;->close()V
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_2
+
+    .line 9
+    :cond_2
+    monitor-exit v1
 
     return-object v0
+
+    :catchall_1
+    move-exception v0
+
+    move-object v11, v0
+
+    move-object v0, p1
+
+    move-object p1, v11
+
+    :goto_2
+    if-eqz v0, :cond_3
+
+    .line 10
+    :try_start_5
+    invoke-interface {v0}, Landroid/database/Cursor;->close()V
+
+    .line 11
+    :cond_3
+    throw p1
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_2
+
+    :catchall_2
+    move-exception p1
+
+    monitor-exit v1
+
+    throw p1
 .end method

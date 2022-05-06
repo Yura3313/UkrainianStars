@@ -3,54 +3,55 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/util/concurrent/Callable;
+.implements Lj3/yj0;
 
 
-# instance fields
-.field public final a:Lj3/yl0;
-
-.field public final b:Lj3/yl0;
+# static fields
+.field public static final a:Lj3/yj0;
 
 
 # direct methods
-.method public constructor <init>(Lj3/yl0;Lj3/yl0;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lj3/be0;
+
+    invoke-direct {v0}, Lj3/be0;-><init>()V
+
+    sput-object v0, Lj3/be0;->a:Lj3/yj0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lj3/be0;->a:Lj3/yl0;
-
-    iput-object p2, p0, Lj3/be0;->b:Lj3/yl0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 3
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lj3/be0;->a:Lj3/yl0;
+    check-cast p1, Ljava/lang/String;
 
-    iget-object v1, p0, Lj3/be0;->b:Lj3/yl0;
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x0
+
+    return-object p1
 
     .line 2
-    new-instance v2, Lj3/ae0;
+    :cond_0
+    new-instance v0, Lj3/kc0;
 
-    invoke-interface {v0}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
+    const/4 v1, 0x1
 
-    move-result-object v0
+    invoke-direct {v0, p1, v1}, Lj3/kc0;-><init>(Ljava/lang/String;I)V
 
-    check-cast v0, Ljava/lang/String;
-
-    invoke-interface {v1}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/String;
-
-    invoke-direct {v2, v0, v1}, Lj3/ae0;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    return-object v2
+    return-object v0
 .end method

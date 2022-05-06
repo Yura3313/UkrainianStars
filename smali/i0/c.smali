@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public n:I
-
 .field public o:I
 
-.field public p:Landroid/view/LayoutInflater;
+.field public p:I
+
+.field public q:Landroid/view/LayoutInflater;
 
 
 # direct methods
@@ -23,9 +23,9 @@
     invoke-direct {p0, p1, p3, p4}, Li0/a;-><init>(Landroid/content/Context;Landroid/database/Cursor;Z)V
 
     .line 2
-    iput p2, p0, Li0/c;->o:I
+    iput p2, p0, Li0/c;->p:I
 
-    iput p2, p0, Li0/c;->n:I
+    iput p2, p0, Li0/c;->o:I
 
     const-string p2, "layout_inflater"
 
@@ -36,7 +36,7 @@
 
     check-cast p1, Landroid/view/LayoutInflater;
 
-    iput-object p1, p0, Li0/c;->p:Landroid/view/LayoutInflater;
+    iput-object p1, p0, Li0/c;->q:Landroid/view/LayoutInflater;
 
     return-void
 .end method

@@ -20,22 +20,22 @@
 
 
 # virtual methods
-.method public abstract I()Ljava/lang/String;
+.method public abstract C1()Ljava/lang/String;
 .end method
 
-.method public abstract S()Z
+.method public abstract K()Ljava/lang/String;
 .end method
 
-.method public abstract Y0()I
+.method public abstract U()Z
 .end method
 
 .method public abstract a()Landroid/net/Uri;
 .end method
 
-.method public abstract c1()Lcom/google/android/gms/games/multiplayer/ParticipantResult;
+.method public abstract a1()I
 .end method
 
-.method public abstract f()Landroid/net/Uri;
+.method public abstract e1()Lcom/google/android/gms/games/multiplayer/ParticipantResult;
 .end method
 
 .method public abstract getDisplayName()Ljava/lang/String;
@@ -60,8 +60,8 @@
 .method public abstract getStatus()I
 .end method
 
-.method public abstract i()Lcom/google/android/gms/games/Player;
+.method public abstract h()Landroid/net/Uri;
 .end method
 
-.method public abstract z1()Ljava/lang/String;
+.method public abstract l()Lcom/google/android/gms/games/Player;
 .end method

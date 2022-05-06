@@ -3,11 +3,11 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/mj0;
+.implements Ljava/lang/Runnable;
 
 
 # static fields
-.field public static final a:Lj3/mj0;
+.field public static final g:Ljava/lang/Runnable;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     invoke-direct {v0}, Lj3/e9;-><init>()V
 
-    sput-object v0, Lj3/e9;->a:Lj3/mj0;
+    sput-object v0, Lj3/e9;->g:Ljava/lang/Runnable;
 
     return-void
 .end method
@@ -33,14 +33,15 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final run()V
+    .locals 1
 
-    check-cast p1, Ljava/lang/String;
+    sget-object v0, Lcom/google/android/gms/internal/ads/a;->n:Ljava/util/List;
 
-    sget-object p1, Lcom/google/android/gms/internal/ads/a;->n:Ljava/util/List;
+    const-string v0, "Pinged SB successfully."
 
-    const/4 p1, 0x0
+    .line 1
+    invoke-static {v0}, Lj3/y1;->b(Ljava/lang/String;)V
 
-    return-object p1
+    return-void
 .end method

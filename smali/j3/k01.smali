@@ -1,14 +1,18 @@
-.class public final Lj3/k01;
+.class public interface abstract Lj3/k01;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# direct methods
-.method public constructor <init>([I[Lj3/d01;[I[[[ILj3/d01;)V
-    .locals 0
+# virtual methods
+.method public abstract b(Lj3/h01;)V
+.end method
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
+.method public abstract d(Lj3/u01;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/h01;",
+            ")V"
+        }
+    .end annotation
 .end method

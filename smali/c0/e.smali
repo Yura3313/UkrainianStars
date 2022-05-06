@@ -14,10 +14,10 @@
 
 
 # static fields
-.field public static final a:Lm/f;
+.field public static final a:Lm/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lm/f<",
+            "Lm/e<",
             "Ljava/lang/String;",
             "Landroid/graphics/Typeface;",
             ">;"
@@ -29,10 +29,10 @@
 
 .field public static final c:Ljava/lang/Object;
 
-.field public static final d:Lm/h;
+.field public static final d:Lm/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lm/h<",
+            "Lm/g<",
             "Ljava/lang/String;",
             "Ljava/util/ArrayList<",
             "Lc0/f$c<",
@@ -57,13 +57,13 @@
     .locals 4
 
     .line 1
-    new-instance v0, Lm/f;
+    new-instance v0, Lm/e;
 
     const/16 v1, 0x10
 
-    invoke-direct {v0, v1}, Lm/f;-><init>(I)V
+    invoke-direct {v0, v1}, Lm/e;-><init>(I)V
 
-    sput-object v0, Lc0/e;->a:Lm/f;
+    sput-object v0, Lc0/e;->a:Lm/e;
 
     .line 2
     new-instance v0, Lc0/f;
@@ -86,11 +86,11 @@
     sput-object v0, Lc0/e;->c:Ljava/lang/Object;
 
     .line 4
-    new-instance v0, Lm/h;
+    new-instance v0, Lm/g;
 
-    invoke-direct {v0}, Lm/h;-><init>()V
+    invoke-direct {v0}, Lm/g;-><init>()V
 
-    sput-object v0, Lc0/e;->d:Lm/h;
+    sput-object v0, Lc0/e;->d:Lm/g;
 
     .line 5
     new-instance v0, Lc0/e$a;
@@ -765,7 +765,7 @@
 
     const-string p1, "No package found for authority: "
 
-    invoke-static {p1, v0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

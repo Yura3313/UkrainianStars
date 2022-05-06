@@ -5,7 +5,7 @@
         <ImageView android:id="@id/illustrationImageView" srcKey="register_start_illustration.png" style="@style/SupercellIdFlowPageIllustration" />
         <TextView android:id="@id/titleTextView" style="@style/SupercellIdFlowPageTitle" textKey="young_player_register_start_heading" />
         <TextView android:id="@id/subtitleTextView" style="@style/SupercellIdFlowPageSubtitle" textKey="young_player_register_start_description" />
-        <TextView android:id="@id/trustedAdultInfoTextView" style="@style/SupercellIdFlowPageLink" textKey="young_player_register_trusted_adult_info" />
+        <TextView android:id="@id/trustedAdultInfoTextView" android:visibility="gone" style="@style/SupercellIdFlowPageLink" />
         <LinearLayout style="@style/SupercellIdFlowPageButtonContainer">
             <com.supercell.id.view.WidthAdjustingMultilineButton android:id="@id/cancelButton" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/SupercellIdButtonCancel" textKey="young_player_register_start_btn_cancel" />
             <Space android:layout_width="12.0dip" android:layout_height="0.0dip" />

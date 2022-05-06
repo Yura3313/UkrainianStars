@@ -1,83 +1,99 @@
-.class public final Lj3/qc0;
+.class public final synthetic Lj3/qc0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/wc0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lj3/wc0<",
-        "Lj3/uc0<",
-        "Landroid/os/Bundle;",
-        ">;>;"
-    }
-.end annotation
+.implements Ljava/util/concurrent/Callable;
 
 
 # instance fields
-.field public final a:Z
+.field public final a:Ljava/util/List;
 
 
 # direct methods
-.method public constructor <init>(Lj3/vf0;)V
+.method public constructor <init>(Ljava/util/List;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x1
-
-    .line 2
-    iput-boolean p1, p0, Lj3/qc0;->a:Z
-
-    return-void
-
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 3
-    iput-boolean p1, p0, Lj3/qc0;->a:Z
+    iput-object p1, p0, Lj3/qc0;->a:Ljava/util/List;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lj3/yl0;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lj3/yl0<",
-            "Lj3/uc0<",
-            "Landroid/os/Bundle;",
-            ">;>;"
-        }
-    .end annotation
+.method public final call()Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    iget-boolean v0, p0, Lj3/qc0;->a:Z
+    iget-object v0, p0, Lj3/qc0;->a:Ljava/util/List;
 
-    if-eqz v0, :cond_0
+    .line 2
+    new-instance v1, Lorg/json/JSONArray;
 
-    sget-object v0, Lj3/pc0;->a:Lj3/uc0;
+    invoke-direct {v1}, Lorg/json/JSONArray;-><init>()V
+
+    .line 3
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_0
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lj3/im0;
+
+    .line 4
+    invoke-interface {v2}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lorg/json/JSONObject;
+
+    if-eqz v3, :cond_0
+
+    .line 5
+    invoke-interface {v2}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
     goto :goto_0
 
-    :cond_0
+    .line 6
+    :cond_1
+    invoke-virtual {v1}, Lorg/json/JSONArray;->length()I
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
     const/4 v0, 0x0
 
-    .line 2
-    :goto_0
-    invoke-static {v0}, Lj3/ul0;->i(Ljava/lang/Object;)Lj3/yl0;
+    return-object v0
 
-    move-result-object v0
+    .line 7
+    :cond_2
+    new-instance v0, Lj3/kc0;
+
+    invoke-virtual {v1}, Lorg/json/JSONArray;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Lj3/kc0;-><init>(Ljava/lang/String;I)V
 
     return-object v0
 .end method

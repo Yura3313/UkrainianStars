@@ -1,136 +1,278 @@
 .class public final Lcom/google/android/gms/internal/ads/t7;
-.super Lcom/google/android/gms/internal/ads/d8;
+.super Lcom/google/android/gms/internal/ads/v5;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Lj3/gt0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/android/gms/internal/ads/t7$a;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/android/gms/internal/ads/v5<",
+        "Lcom/google/android/gms/internal/ads/t7;",
+        "Lcom/google/android/gms/internal/ads/t7$a;",
+        ">;",
+        "Lj3/gt0;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final zzcgi:Lcom/google/android/gms/internal/ads/t7;
+
+.field private static volatile zzel:Lj3/mt0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/mt0<",
+            "Lcom/google/android/gms/internal/ads/t7;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field private zzcch:I
+
+.field private zzcfi:I
+
+.field private zzcfj:I
+
+.field private zzcfs:Lcom/google/android/gms/internal/ads/t8;
+
+.field private zzcge:I
+
+.field private zzcgh:J
+
+.field private zzdw:I
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/d7;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/internal/ads/c0$a;I)V
-    .locals 7
-
-    const/16 v6, 0x49
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move-object v3, p3
-
-    move-object v4, p4
-
-    move v5, p5
+.method public static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/internal/ads/d8;-><init>(Lcom/google/android/gms/internal/ads/d7;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/internal/ads/c0$a;II)V
+    new-instance v0, Lcom/google/android/gms/internal/ads/t7;
+
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/t7;-><init>()V
+
+    .line 2
+    sput-object v0, Lcom/google/android/gms/internal/ads/t7;->zzcgi:Lcom/google/android/gms/internal/ads/t7;
+
+    .line 3
+    const-class v1, Lcom/google/android/gms/internal/ads/t7;
+
+    invoke-static {v1, v0}, Lcom/google/android/gms/internal/ads/v5;->t(Ljava/lang/Class;Lcom/google/android/gms/internal/ads/v5;)V
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final a()V
-    .locals 5
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/IllegalAccessException;,
-            Ljava/lang/reflect/InvocationTargetException;
-        }
-    .end annotation
-
-    const/4 v0, 0x0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    :try_start_0
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/d8;->e:Ljava/lang/reflect/Method;
+    invoke-direct {p0}, Lcom/google/android/gms/internal/ads/v5;-><init>()V
 
-    const/4 v2, 0x0
-
-    const/4 v3, 0x1
-
-    new-array v3, v3, [Ljava/lang/Object;
-
-    iget-object v4, p0, Lcom/google/android/gms/internal/ads/d8;->a:Lcom/google/android/gms/internal/ads/d7;
+    const/16 v0, 0x3e8
 
     .line 2
-    iget-object v4, v4, Lcom/google/android/gms/internal/ads/d7;->a:Landroid/content/Context;
+    iput v0, p0, Lcom/google/android/gms/internal/ads/t7;->zzcch:I
 
-    aput-object v4, v3, v0
+    return-void
+.end method
+
+.method public static synthetic y()Lcom/google/android/gms/internal/ads/t7;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/google/android/gms/internal/ads/t7;->zzcgi:Lcom/google/android/gms/internal/ads/t7;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final r(ILjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    sget-object p2, Lcom/google/android/gms/internal/ads/w8;->a:[I
+
+    const/4 p3, 0x1
+
+    sub-int/2addr p1, p3
+
+    aget p1, p2, p1
+
+    const/4 p2, 0x0
+
+    packed-switch p1, :pswitch_data_0
+
+    .line 2
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p1
+
+    :pswitch_0
+    return-object p2
 
     .line 3
-    invoke-virtual {v1, v2, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    :pswitch_1
+    invoke-static {p3}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
-    move-result-object v1
+    move-result-object p1
 
-    check-cast v1, Ljava/lang/Boolean;
-
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v1
+    return-object p1
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/d8;->d:Lcom/google/android/gms/internal/ads/c0$a;
+    :pswitch_2
+    sget-object p1, Lcom/google/android/gms/internal/ads/t7;->zzel:Lj3/mt0;
 
-    if-eqz v1, :cond_0
+    if-nez p1, :cond_1
 
     .line 5
-    sget-object v1, Lj3/v10;->zzlt:Lj3/v10;
+    const-class p2, Lcom/google/android/gms/internal/ads/t7;
+
+    monitor-enter p2
+
+    .line 6
+    :try_start_0
+    sget-object p1, Lcom/google/android/gms/internal/ads/t7;->zzel:Lj3/mt0;
+
+    if-nez p1, :cond_0
+
+    .line 7
+    new-instance p1, Lcom/google/android/gms/internal/ads/v5$a;
+
+    sget-object p3, Lcom/google/android/gms/internal/ads/t7;->zzcgi:Lcom/google/android/gms/internal/ads/t7;
+
+    invoke-direct {p1, p3}, Lcom/google/android/gms/internal/ads/v5$a;-><init>(Lcom/google/android/gms/internal/ads/v5;)V
+
+    .line 8
+    sput-object p1, Lcom/google/android/gms/internal/ads/t7;->zzel:Lj3/mt0;
+
+    .line 9
+    :cond_0
+    monitor-exit p2
 
     goto :goto_0
 
-    :cond_0
-    sget-object v1, Lj3/v10;->zzls:Lj3/v10;
+    :catchall_0
+    move-exception p1
 
-    .line 6
-    :goto_0
-    iget-boolean v3, v2, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
-
-    if-eqz v3, :cond_1
-
-    .line 7
-    invoke-virtual {v2}, Lcom/google/android/gms/internal/ads/q6$b;->m()V
-
-    .line 8
-    iput-boolean v0, v2, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
-
-    .line 9
-    :cond_1
-    iget-object v2, v2, Lcom/google/android/gms/internal/ads/q6$b;->b:Lcom/google/android/gms/internal/ads/q6;
-
-    check-cast v2, Lcom/google/android/gms/internal/ads/c0;
-
-    invoke-static {v2, v1}, Lcom/google/android/gms/internal/ads/c0;->g0(Lcom/google/android/gms/internal/ads/c0;Lj3/v10;)V
+    monitor-exit p2
     :try_end_0
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    return-void
+    throw p1
 
-    :catch_0
-    nop
+    :cond_1
+    :goto_0
+    return-object p1
 
     .line 10
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/d8;->d:Lcom/google/android/gms/internal/ads/c0$a;
+    :pswitch_3
+    sget-object p1, Lcom/google/android/gms/internal/ads/t7;->zzcgi:Lcom/google/android/gms/internal/ads/t7;
 
-    sget-object v2, Lj3/v10;->zzlu:Lj3/v10;
+    return-object p1
+
+    :pswitch_4
+    const/16 p1, 0x8
+
+    new-array p1, p1, [Ljava/lang/Object;
+
+    const/4 p2, 0x0
+
+    const-string v0, "zzdw"
+
+    aput-object v0, p1, p2
+
+    const-string p2, "zzcch"
+
+    aput-object p2, p1, p3
+
+    const/4 p2, 0x2
 
     .line 11
-    iget-boolean v3, v1, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
+    sget-object p3, Lj3/w41;->a:Lj3/fs0;
 
-    if-eqz v3, :cond_2
+    aput-object p3, p1, p2
+
+    const/4 p2, 0x3
+
+    const-string p3, "zzcfs"
+
+    aput-object p3, p1, p2
+
+    const/4 p2, 0x4
+
+    const-string p3, "zzcfi"
+
+    aput-object p3, p1, p2
+
+    const/4 p2, 0x5
+
+    const-string p3, "zzcfj"
+
+    aput-object p3, p1, p2
+
+    const/4 p2, 0x6
+
+    const-string p3, "zzcge"
+
+    aput-object p3, p1, p2
+
+    const/4 p2, 0x7
+
+    const-string p3, "zzcgh"
+
+    aput-object p3, p1, p2
+
+    const-string p2, "\u0001\u0006\u0000\u0001\u0001\u0006\u0006\u0000\u0000\u0000\u0001\u100c\u0000\u0002\u1009\u0001\u0003\u1004\u0002\u0004\u1004\u0003\u0005\u1004\u0004\u0006\u1003\u0005"
 
     .line 12
-    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/q6$b;->m()V
+    sget-object p3, Lcom/google/android/gms/internal/ads/t7;->zzcgi:Lcom/google/android/gms/internal/ads/t7;
 
     .line 13
-    iput-boolean v0, v1, Lcom/google/android/gms/internal/ads/q6$b;->h:Z
+    new-instance v0, Lj3/pt0;
+
+    invoke-direct {v0, p3, p2, p1}, Lj3/pt0;-><init>(Lj3/dt0;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    return-object v0
 
     .line 14
-    :cond_2
-    iget-object v0, v1, Lcom/google/android/gms/internal/ads/q6$b;->b:Lcom/google/android/gms/internal/ads/q6;
+    :pswitch_5
+    new-instance p1, Lcom/google/android/gms/internal/ads/t7$a;
 
-    check-cast v0, Lcom/google/android/gms/internal/ads/c0;
+    invoke-direct {p1, p2}, Lcom/google/android/gms/internal/ads/t7$a;-><init>(Lcom/google/android/gms/internal/ads/w8;)V
 
-    invoke-static {v0, v2}, Lcom/google/android/gms/internal/ads/c0;->g0(Lcom/google/android/gms/internal/ads/c0;Lj3/v10;)V
+    return-object p1
 
-    return-void
+    .line 15
+    :pswitch_6
+    new-instance p1, Lcom/google/android/gms/internal/ads/t7;
+
+    invoke-direct {p1}, Lcom/google/android/gms/internal/ads/t7;-><init>()V
+
+    return-object p1
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

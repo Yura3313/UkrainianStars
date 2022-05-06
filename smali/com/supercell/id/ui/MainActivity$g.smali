@@ -27,14 +27,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/MainActivity;
+.field public final synthetic g:Lcom/supercell/id/ui/MainActivity;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/MainActivity;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/MainActivity$g;->a:Lcom/supercell/id/ui/MainActivity;
+    iput-object p1, p0, Lcom/supercell/id/ui/MainActivity$g;->g:Lcom/supercell/id/ui/MainActivity;
 
     const/4 p1, 0x0
 
@@ -49,7 +49,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity$g;->a:Lcom/supercell/id/ui/MainActivity;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity$g;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {v0}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
 

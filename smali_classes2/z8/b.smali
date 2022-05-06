@@ -7,40 +7,42 @@
 
 
 # instance fields
-.field public a:Lz7/a;
+.field public a:La8/a;
 
-.field public b:Lj3/vn;
+.field public b:Lb8/h;
 
-.field public c:Lx8/a;
+.field public c:Lj3/cr;
 
 
 # direct methods
-.method public constructor <init>(Lc8/o;Ly7/f;Lz7/a;)V
+.method public constructor <init>(Ld8/r;Lz7/f;La8/a;)V
     .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p3, p0, Lz8/b;->a:Lz7/a;
+    iput-object p3, p0, Lz8/b;->a:La8/a;
 
     .line 3
-    new-instance v0, Lj3/vn;
+    new-instance v0, Lb8/h;
 
     .line 4
-    iget-object p2, p2, Ly7/f;->f:Lh8/b;
+    iget-object p2, p2, Lz7/f;->f:Li8/b;
 
     .line 5
-    invoke-direct {v0, p1, p2}, Lj3/vn;-><init>(Lc8/o;Lh8/b;)V
+    invoke-direct {v0, p1, p2}, Lb8/h;-><init>(Ld8/r;Li8/b;)V
 
-    iput-object v0, p0, Lz8/b;->b:Lj3/vn;
+    iput-object v0, p0, Lz8/b;->b:Lb8/h;
 
     .line 6
-    new-instance p1, Lx8/a;
+    new-instance p1, Lj3/cr;
 
-    invoke-direct {p1, p3}, Lx8/a;-><init>(Lz7/a;)V
+    const/4 p2, 0x4
 
-    iput-object p1, p0, Lz8/b;->c:Lx8/a;
+    invoke-direct {p1, p3, p2}, Lj3/cr;-><init>(Ljava/lang/Object;I)V
+
+    iput-object p1, p0, Lz8/b;->c:Lj3/cr;
 
     return-void
 .end method
@@ -53,7 +55,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lo8/d;",
+            "Lp8/d;",
             ">;)",
             "Ly8/a;"
         }
@@ -62,7 +64,7 @@
     const-string v0, "Starting with updating the fetched data in-memory, conversations size: "
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -81,7 +83,7 @@
     const/4 v2, 0x0
 
     .line 2
-    invoke-static {v1, v0, v2, v2}, Lce/z;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v0, v2, v2}, Lie/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     .line 3
     new-instance v0, Ljava/util/ArrayList;
@@ -99,11 +101,11 @@
     invoke-direct {v4}, Ljava/util/HashMap;-><init>()V
 
     .line 6
-    iget-object v5, p0, Lz8/b;->a:Lz7/a;
+    iget-object v5, p0, Lz8/b;->a:La8/a;
 
-    check-cast v5, Lr8/b$g;
+    check-cast v5, Ls8/b$g;
 
-    invoke-virtual {v5}, Lr8/b$g;->a()Ll8/p;
+    invoke-virtual {v5}, Ls8/b$g;->a()Lm8/r;
 
     move-result-object v5
 
@@ -112,13 +114,13 @@
     const-string p1, "In-memory conversation not alive, returning!"
 
     .line 7
-    invoke-static {v1, p1, v2, v2}, Lce/z;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, p1, v2, v2}, Lie/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     return-object v2
 
     .line 8
     :cond_0
-    invoke-virtual {v5}, Ll8/p;->d()Ljava/util/List;
+    invoke-virtual {v5}, Lm8/r;->d()Ljava/util/List;
 
     move-result-object v5
 
@@ -128,7 +130,7 @@
     move-result-object v6
 
     .line 10
-    iget-object v7, p0, Lz8/b;->a:Lz7/a;
+    iget-object v7, p0, Lz8/b;->a:La8/a;
 
     .line 11
     new-instance v8, Ljava/util/HashMap;
@@ -141,7 +143,7 @@
     invoke-direct {v9}, Ljava/util/HashMap;-><init>()V
 
     .line 13
-    invoke-static {v5}, Lid/g;->a(Ljava/util/List;)Z
+    invoke-static {v5}, Lk2/h;->a(Ljava/util/List;)Z
 
     move-result v10
 
@@ -151,7 +153,7 @@
 
     .line 14
     :cond_1
-    invoke-static {v5}, Lk8/c;->g(Ljava/util/List;)V
+    invoke-static {v5}, Ll8/c;->g(Ljava/util/List;)V
 
     .line 15
     invoke-interface {v5}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -170,19 +172,19 @@
 
     move-result-object v11
 
-    check-cast v11, Lo8/d;
+    check-cast v11, Lp8/d;
 
     .line 16
-    iget-object v12, v11, Lo8/d;->h:Ljava/lang/String;
+    iget-object v12, v11, Lp8/d;->i:Ljava/lang/String;
 
-    invoke-static {v12}, Landroidx/savedstate/d;->j(Ljava/lang/String;)Z
+    invoke-static {v12}, Lp5/c0;->h(Ljava/lang/String;)Z
 
     move-result v12
 
     if-nez v12, :cond_3
 
     .line 17
-    iget-object v12, v11, Lo8/d;->h:Ljava/lang/String;
+    iget-object v12, v11, Lp8/d;->i:Ljava/lang/String;
 
     invoke-virtual {v9, v12, v11}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -190,16 +192,16 @@
 
     .line 18
     :cond_3
-    iget-object v12, v11, Lo8/d;->i:Ljava/lang/String;
+    iget-object v12, v11, Lp8/d;->j:Ljava/lang/String;
 
-    invoke-static {v12}, Landroidx/savedstate/d;->j(Ljava/lang/String;)Z
+    invoke-static {v12}, Lp5/c0;->h(Ljava/lang/String;)Z
 
     move-result v12
 
     if-nez v12, :cond_2
 
     .line 19
-    iget-object v12, v11, Lo8/d;->i:Ljava/lang/String;
+    iget-object v12, v11, Lp8/d;->j:Ljava/lang/String;
 
     invoke-virtual {v8, v12, v11}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -207,9 +209,9 @@
 
     .line 20
     :cond_4
-    check-cast v7, Lr8/b$g;
+    check-cast v7, Ls8/b$g;
 
-    invoke-virtual {v7}, Lr8/b$g;->b()Ljava/lang/String;
+    invoke-virtual {v7}, Ls8/b$g;->b()Ljava/lang/String;
 
     move-result-object v7
 
@@ -226,7 +228,7 @@
 
     move-result-object v5
 
-    check-cast v5, Lo8/d;
+    check-cast v5, Lp8/d;
 
     .line 22
     new-instance v10, Lcom/helpshift/util/a0;
@@ -257,16 +259,16 @@
 
     move-result-object v5
 
-    check-cast v5, Lo8/d;
+    check-cast v5, Lp8/d;
 
     .line 24
-    iget-object v7, v5, Lo8/d;->h:Ljava/lang/String;
+    iget-object v7, v5, Lp8/d;->i:Ljava/lang/String;
 
     .line 25
-    iget-object v11, v5, Lo8/d;->i:Ljava/lang/String;
+    iget-object v11, v5, Lp8/d;->j:Ljava/lang/String;
 
     .line 26
-    iget-object v12, v5, Lo8/d;->z:Ljava/lang/String;
+    iget-object v12, v5, Lp8/d;->A:Ljava/lang/String;
 
     .line 27
     invoke-virtual {v9, v7}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
@@ -280,12 +282,12 @@
 
     move-result-object v7
 
-    check-cast v7, Lo8/d;
+    check-cast v7, Lp8/d;
 
     .line 29
     new-instance v11, Lcom/helpshift/util/a0;
 
-    sget-object v12, Ly8/b;->SERVER_ID:Ly8/b;
+    sget-object v12, Ly8/b;->g:Ly8/b;
 
     invoke-direct {v11, v12, v7}, Lcom/helpshift/util/a0;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
@@ -304,12 +306,12 @@
 
     move-result-object v7
 
-    check-cast v7, Lo8/d;
+    check-cast v7, Lp8/d;
 
     .line 32
     new-instance v11, Lcom/helpshift/util/a0;
 
-    sget-object v12, Ly8/b;->PREISSUE_ID:Ly8/b;
+    sget-object v12, Ly8/b;->h:Ly8/b;
 
     invoke-direct {v11, v12, v7}, Lcom/helpshift/util/a0;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
@@ -317,7 +319,7 @@
 
     .line 33
     :cond_8
-    invoke-static {v12}, Landroidx/savedstate/d;->j(Ljava/lang/String;)Z
+    invoke-static {v12}, Lp5/c0;->h(Ljava/lang/String;)Z
 
     move-result v7
 
@@ -339,12 +341,12 @@
     .line 35
     iget-object v7, v10, Lcom/helpshift/util/a0;->b:Ljava/lang/Object;
 
-    check-cast v7, Lo8/d;
+    check-cast v7, Lp8/d;
 
     .line 36
     new-instance v11, Lcom/helpshift/util/a0;
 
-    sget-object v12, Ly8/b;->PREISSUE_REQUEST_ID:Ly8/b;
+    sget-object v12, Ly8/b;->i:Ly8/b;
 
     invoke-direct {v11, v12, v7}, Lcom/helpshift/util/a0;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
@@ -359,35 +361,35 @@
     const-string v7, "Matching conversation found in-memory, processing as updated conversation"
 
     .line 37
-    invoke-static {v1, v7, v2, v2}, Lce/z;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v7, v2, v2}, Lie/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     .line 38
     iget-object v7, v11, Lcom/helpshift/util/a0;->b:Ljava/lang/Object;
 
-    check-cast v7, Lo8/d;
+    check-cast v7, Lp8/d;
 
     .line 39
-    iget-object v11, p0, Lz8/b;->b:Lj3/vn;
+    iget-object v11, p0, Lz8/b;->b:Lb8/h;
 
-    invoke-virtual {v11, v7, v5}, Lj3/vn;->f(Lo8/d;Lo8/d;)V
+    invoke-virtual {v11, v7, v5}, Lb8/h;->f(Lp8/d;Lp8/d;)V
 
     .line 40
-    iget-object v11, v5, Lo8/d;->o:Lcom/helpshift/util/n;
+    iget-object v11, v5, Lp8/d;->p:Lcom/helpshift/util/n;
 
-    invoke-static {v11}, Lid/g;->a(Ljava/util/List;)Z
+    invoke-static {v11}, Lk2/h;->a(Ljava/util/List;)Z
 
     move-result v11
 
     if-nez v11, :cond_a
 
     .line 41
-    iget-object v11, p0, Lz8/b;->c:Lx8/a;
+    iget-object v11, p0, Lz8/b;->c:Lj3/cr;
 
-    iget-object v12, v7, Lo8/d;->o:Lcom/helpshift/util/n;
+    iget-object v12, v7, Lp8/d;->p:Lcom/helpshift/util/n;
 
-    iget-object v5, v5, Lo8/d;->o:Lcom/helpshift/util/n;
+    iget-object v5, v5, Lp8/d;->p:Lcom/helpshift/util/n;
 
-    invoke-virtual {v11, v7, v12, v5}, Lx8/a;->e(Lo8/d;Ljava/util/List;Ljava/util/List;)Ly8/c;
+    invoke-virtual {v11, v7, v12, v5}, Lj3/cr;->h(Lp8/d;Ljava/util/List;Ljava/util/List;)Ly8/c;
 
     move-result-object v5
 

@@ -16,23 +16,23 @@
 
 
 # instance fields
-.field public final a:Z
+.field public final g:Z
 
-.field public final b:Z
+.field public final h:Z
 
-.field public final h:Ljava/lang/String;
+.field public final i:Ljava/lang/String;
 
-.field public final i:Z
+.field public final j:Z
 
-.field public final j:F
+.field public final k:F
 
-.field public final k:I
-
-.field public final l:Z
+.field public final l:I
 
 .field public final m:Z
 
 .field public final n:Z
+
+.field public final o:Z
 
 
 # direct methods
@@ -56,31 +56,31 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 3
-    iput-boolean p1, p0, Lcom/google/android/gms/ads/internal/zzi;->a:Z
+    iput-boolean p1, p0, Lcom/google/android/gms/ads/internal/zzi;->g:Z
 
     .line 4
-    iput-boolean p2, p0, Lcom/google/android/gms/ads/internal/zzi;->b:Z
+    iput-boolean p2, p0, Lcom/google/android/gms/ads/internal/zzi;->h:Z
 
     .line 5
-    iput-object p3, p0, Lcom/google/android/gms/ads/internal/zzi;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/ads/internal/zzi;->i:Ljava/lang/String;
 
     .line 6
-    iput-boolean p4, p0, Lcom/google/android/gms/ads/internal/zzi;->i:Z
+    iput-boolean p4, p0, Lcom/google/android/gms/ads/internal/zzi;->j:Z
 
     .line 7
-    iput p5, p0, Lcom/google/android/gms/ads/internal/zzi;->j:F
+    iput p5, p0, Lcom/google/android/gms/ads/internal/zzi;->k:F
 
     .line 8
-    iput p6, p0, Lcom/google/android/gms/ads/internal/zzi;->k:I
+    iput p6, p0, Lcom/google/android/gms/ads/internal/zzi;->l:I
 
     .line 9
-    iput-boolean p7, p0, Lcom/google/android/gms/ads/internal/zzi;->l:Z
+    iput-boolean p7, p0, Lcom/google/android/gms/ads/internal/zzi;->m:Z
 
     .line 10
-    iput-boolean p8, p0, Lcom/google/android/gms/ads/internal/zzi;->m:Z
+    iput-boolean p8, p0, Lcom/google/android/gms/ads/internal/zzi;->n:Z
 
     .line 11
-    iput-boolean p9, p0, Lcom/google/android/gms/ads/internal/zzi;->n:Z
+    iput-boolean p9, p0, Lcom/google/android/gms/ads/internal/zzi;->o:Z
 
     return-void
 .end method
@@ -129,7 +129,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iget-boolean v1, p0, Lcom/google/android/gms/ads/internal/zzi;->a:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/ads/internal/zzi;->g:Z
 
     const/4 v2, 0x4
 
@@ -142,7 +142,7 @@
     const/4 v0, 0x3
 
     .line 5
-    iget-boolean v1, p0, Lcom/google/android/gms/ads/internal/zzi;->b:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/ads/internal/zzi;->h:Z
 
     .line 6
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -151,7 +151,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 8
-    iget-object v0, p0, Lcom/google/android/gms/ads/internal/zzi;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/ads/internal/zzi;->i:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -160,7 +160,7 @@
     const/4 v0, 0x5
 
     .line 9
-    iget-boolean v1, p0, Lcom/google/android/gms/ads/internal/zzi;->i:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/ads/internal/zzi;->j:Z
 
     .line 10
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -171,7 +171,7 @@
     const/4 v0, 0x6
 
     .line 12
-    iget v1, p0, Lcom/google/android/gms/ads/internal/zzi;->j:F
+    iget v1, p0, Lcom/google/android/gms/ads/internal/zzi;->k:F
 
     .line 13
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -182,7 +182,7 @@
     const/4 v0, 0x7
 
     .line 15
-    iget v1, p0, Lcom/google/android/gms/ads/internal/zzi;->k:I
+    iget v1, p0, Lcom/google/android/gms/ads/internal/zzi;->l:I
 
     .line 16
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -193,7 +193,7 @@
     const/16 v0, 0x8
 
     .line 18
-    iget-boolean v1, p0, Lcom/google/android/gms/ads/internal/zzi;->l:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/ads/internal/zzi;->m:Z
 
     .line 19
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -204,7 +204,7 @@
     const/16 v0, 0x9
 
     .line 21
-    iget-boolean v1, p0, Lcom/google/android/gms/ads/internal/zzi;->m:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/ads/internal/zzi;->n:Z
 
     .line 22
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -215,7 +215,7 @@
     const/16 v0, 0xa
 
     .line 24
-    iget-boolean v1, p0, Lcom/google/android/gms/ads/internal/zzi;->n:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/ads/internal/zzi;->o:Z
 
     .line 25
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V

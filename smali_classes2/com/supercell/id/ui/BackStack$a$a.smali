@@ -24,21 +24,21 @@
         "+",
         "Ljava/lang/Boolean;",
         ">;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/BackStack$a;
+.field public final synthetic g:Lcom/supercell/id/ui/BackStack$a;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/BackStack$a;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/BackStack$a$a;->a:Lcom/supercell/id/ui/BackStack$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/BackStack$a$a;->g:Lcom/supercell/id/ui/BackStack$a;
 
     const/4 p1, 0x1
 
@@ -58,13 +58,13 @@
     if-eqz p1, :cond_0
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/BackStack$a$a;->a:Lcom/supercell/id/ui/BackStack$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/BackStack$a$a;->g:Lcom/supercell/id/ui/BackStack$a;
 
     .line 3
     iget-object p1, p1, Lcom/supercell/id/ui/BackStack$a;->a:Lse/o;
 
     .line 4
-    sget-object v0, Lbe/n;->a:Lbe/n;
+    sget-object v0, Lae/i;->a:Lae/i;
 
     .line 5
     invoke-interface {p1, v0}, Lse/o;->j(Ljava/lang/Object;)Z
@@ -75,7 +75,7 @@
     const-string p1, "it"
 
     .line 6
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

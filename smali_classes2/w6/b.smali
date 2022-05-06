@@ -131,7 +131,7 @@
 
     .line 9
     :cond_2
-    invoke-static {v0}, Lr4/e;->g(Ljava/util/Collection;)[I
+    invoke-static {v0}, Li1/n;->c(Ljava/util/Collection;)[I
 
     move-result-object v0
 

@@ -1,69 +1,32 @@
-.class public interface abstract Lj3/af;
+.class public final Lj3/af;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/z3;
-.implements Lj3/gi;
+.implements Ljava/lang/Runnable;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract A()Lj3/se;
-.end method
+.method public final run()V
+    .locals 1
 
-.method public abstract G()V
-.end method
+    .line 1
+    invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
-.method public abstract I(Ljava/lang/String;)Lj3/ig;
-.end method
+    move-result-object v0
 
-.method public abstract M(ZJ)V
-.end method
+    invoke-virtual {v0}, Landroid/os/Looper;->quit()V
 
-.method public abstract N()V
-.end method
-
-.method public abstract S()I
-.end method
-
-.method public abstract a()Landroid/app/Activity;
-.end method
-
-.method public abstract b()Lcom/google/android/gms/internal/ads/zzbbg;
-.end method
-
-.method public abstract c()Lj3/li;
-.end method
-
-.method public abstract d()Lh1/b;
-.end method
-
-.method public abstract e(Ljava/lang/String;Lj3/ig;)V
-.end method
-
-.method public abstract getContext()Landroid/content/Context;
-.end method
-
-.method public abstract getRequestId()Ljava/lang/String;
-.end method
-
-.method public abstract h()Lcom/google/android/gms/internal/ads/zzbgk;
-.end method
-
-.method public abstract n0()I
-.end method
-
-.method public abstract o(Lcom/google/android/gms/internal/ads/zzbgk;)V
-.end method
-
-.method public abstract p()Lj3/y;
-.end method
-
-.method public abstract setBackgroundColor(I)V
-.end method
-
-.method public abstract v(Z)V
-.end method
-
-.method public abstract z()Lj3/z;
+    return-void
 .end method

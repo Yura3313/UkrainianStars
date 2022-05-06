@@ -130,7 +130,7 @@
     .line 3
     iget-object v0, v0, Landroidx/lifecycle/k;->a:Li/a;
 
-    invoke-virtual {v0, p0}, Li/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0}, Li/a;->f(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     iget-object v0, p0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;->b:Landroidx/activity/b;

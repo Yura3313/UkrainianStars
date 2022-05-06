@@ -27,14 +27,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$i;->a:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$i;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
     const/4 p1, 0x0
 
@@ -51,13 +51,13 @@
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lwd/h;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lvd/h;
 
     move-result-object v0
 
-    sget-object v1, Lwd/i1;->SHOW_GAME_FRIENDS_RANKING:Lwd/i1;
+    const/16 v1, 0xa
 
-    invoke-virtual {v0, v1}, Lwd/h;->c(Lwd/i1;)Ljava/util/List;
+    invoke-virtual {v0, v1}, Lvd/h;->d(I)Ljava/util/List;
 
     move-result-object v0
 
@@ -65,10 +65,10 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$i;->a:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+    iget-object v2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$i;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
     .line 2
-    iget-object v2, v2, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->j0:Ljava/lang/String;
+    iget-object v2, v2, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->k0:Ljava/lang/String;
 
     .line 3
     invoke-interface {v0, v2}, Ljava/util/List;->contains(Ljava/lang/Object;)Z

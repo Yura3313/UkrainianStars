@@ -44,7 +44,7 @@
 
     move-result-object v1
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     const-string v2, "Invalid DSN: No public key provided."
 
@@ -248,9 +248,9 @@
 
     throw p1
     :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    :catch_0
+    :catchall_0
     move-exception p1
 
     .line 26

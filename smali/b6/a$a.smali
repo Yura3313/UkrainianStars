@@ -57,7 +57,7 @@
 
     const/4 v3, 0x1
 
-    invoke-static {p1, v1, v2, v3}, Landroid/support/v4/media/a;->a(IIII)I
+    invoke-static {p1, v1, v2, v3}, Lj3/xq0;->a(IIII)I
 
     move-result p1
 

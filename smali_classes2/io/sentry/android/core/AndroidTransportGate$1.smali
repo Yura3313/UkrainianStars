@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final synthetic $SwitchMap$io$sentry$android$core$util$ConnectivityChecker$Status:[I
+.field public static final synthetic $SwitchMap$io$sentry$android$core$internal$util$ConnectivityChecker$Status:[I
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 3
 
     .line 1
-    invoke-static {}, Lio/sentry/android/core/util/ConnectivityChecker$Status;->values()[Lio/sentry/android/core/util/ConnectivityChecker$Status;
+    invoke-static {}, Lio/sentry/android/core/internal/util/ConnectivityChecker$Status;->values()[Lio/sentry/android/core/internal/util/ConnectivityChecker$Status;
 
     move-result-object v0
 
@@ -31,10 +31,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lio/sentry/android/core/AndroidTransportGate$1;->$SwitchMap$io$sentry$android$core$util$ConnectivityChecker$Status:[I
+    sput-object v0, Lio/sentry/android/core/AndroidTransportGate$1;->$SwitchMap$io$sentry$android$core$internal$util$ConnectivityChecker$Status:[I
 
     :try_start_0
-    sget-object v1, Lio/sentry/android/core/util/ConnectivityChecker$Status;->CONNECTED:Lio/sentry/android/core/util/ConnectivityChecker$Status;
+    sget-object v1, Lio/sentry/android/core/internal/util/ConnectivityChecker$Status;->CONNECTED:Lio/sentry/android/core/internal/util/ConnectivityChecker$Status;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -48,9 +48,9 @@
 
     :catch_0
     :try_start_1
-    sget-object v0, Lio/sentry/android/core/AndroidTransportGate$1;->$SwitchMap$io$sentry$android$core$util$ConnectivityChecker$Status:[I
+    sget-object v0, Lio/sentry/android/core/AndroidTransportGate$1;->$SwitchMap$io$sentry$android$core$internal$util$ConnectivityChecker$Status:[I
 
-    sget-object v1, Lio/sentry/android/core/util/ConnectivityChecker$Status;->UNKNOWN:Lio/sentry/android/core/util/ConnectivityChecker$Status;
+    sget-object v1, Lio/sentry/android/core/internal/util/ConnectivityChecker$Status;->UNKNOWN:Lio/sentry/android/core/internal/util/ConnectivityChecker$Status;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -64,9 +64,9 @@
 
     :catch_1
     :try_start_2
-    sget-object v0, Lio/sentry/android/core/AndroidTransportGate$1;->$SwitchMap$io$sentry$android$core$util$ConnectivityChecker$Status:[I
+    sget-object v0, Lio/sentry/android/core/AndroidTransportGate$1;->$SwitchMap$io$sentry$android$core$internal$util$ConnectivityChecker$Status:[I
 
-    sget-object v1, Lio/sentry/android/core/util/ConnectivityChecker$Status;->NO_PERMISSION:Lio/sentry/android/core/util/ConnectivityChecker$Status;
+    sget-object v1, Lio/sentry/android/core/internal/util/ConnectivityChecker$Status;->NO_PERMISSION:Lio/sentry/android/core/internal/util/ConnectivityChecker$Status;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 

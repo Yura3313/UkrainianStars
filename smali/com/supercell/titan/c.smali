@@ -1,45 +1,31 @@
-.class public final synthetic Lcom/supercell/titan/c;
+.class public Lcom/supercell/titan/c;
 .super Ljava/lang/Object;
-.source "R8$$SyntheticClass"
-
-# interfaces
-.implements Ljava/lang/Runnable;
+.source "KeyboardDialog.java"
 
 
-# instance fields
-.field public final synthetic a:Lcom/supercell/titan/GameApp;
-
-.field public final synthetic b:J
+# static fields
+.field public static final a:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Landroid/graphics/Typeface;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/supercell/titan/GameApp;J)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lcom/supercell/titan/c;->a:Lcom/supercell/titan/GameApp;
-
-    iput-wide p2, p0, Lcom/supercell/titan/c;->b:J
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final run()V
-    .locals 4
-
-    iget-object v0, p0, Lcom/supercell/titan/c;->a:Lcom/supercell/titan/GameApp;
-
-    iget-wide v1, p0, Lcom/supercell/titan/c;->b:J
-
-    sget-object v3, Lcom/supercell/titan/GameApp;->N:Lcom/supercell/titan/GameApp;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+.method public static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-static {v1, v2}, Lcom/supercell/titan/GameApp;->nRunFromUiThread(J)V
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    sput-object v0, Lcom/supercell/titan/c;->a:Ljava/util/Map;
 
     return-void
 .end method

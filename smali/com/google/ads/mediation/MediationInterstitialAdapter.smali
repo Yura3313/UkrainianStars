@@ -10,7 +10,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<ADDITIONA",
-        "L_PARAMETERS::La1/e;",
+        "L_PARAMETERS::La1/f;",
         "SERVER_PARAMETERS:",
         "Lcom/google/ads/mediation/MediationServerParameters;",
         ">",
@@ -52,7 +52,7 @@
     .end annotation
 .end method
 
-.method public abstract requestInterstitialAd(La1/d;Landroid/app/Activity;Lcom/google/ads/mediation/MediationServerParameters;La1/a;La1/e;)V
+.method public abstract requestInterstitialAd(La1/d;Landroid/app/Activity;Lcom/google/ads/mediation/MediationServerParameters;La1/a;La1/f;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

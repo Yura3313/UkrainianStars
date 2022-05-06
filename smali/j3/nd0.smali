@@ -1,84 +1,128 @@
-.class public final synthetic Lj3/nd0;
+.class public final Lj3/nd0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/gl0;
+.implements Lj3/cd0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj3/cd0<",
+        "Lorg/json/JSONObject;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;
 
-.field public final b:Ljava/lang/Object;
+.field public final b:Ljava/lang/String;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method public constructor <init>(Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lj3/nd0;->a:I
-
-    iput-object p1, p0, Lj3/nd0;->b:Ljava/lang/Object;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lj3/nd0;->a:Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;
+
+    .line 3
+    iput-object p2, p0, Lj3/nd0;->b:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lj3/yl0;
+.method public final b(Ljava/lang/Object;)V
     .locals 2
 
-    iget v0, p0, Lj3/nd0;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
-
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/nd0;->b:Ljava/lang/Object;
+    check-cast p1, Lorg/json/JSONObject;
 
-    check-cast v0, Lj3/ld0;
-
-    check-cast p1, Ljava/lang/Throwable;
+    :try_start_0
+    const-string v0, "pii"
 
     .line 2
-    new-instance p1, Lj3/yb0;
-
-    iget-object v0, v0, Lj3/ld0;->c:Ljava/lang/String;
-
-    const/4 v1, 0x1
-
-    invoke-direct {p1, v0, v1}, Lj3/yb0;-><init>(Ljava/lang/String;I)V
-
-    invoke-static {p1}, Lj3/ul0;->i(Ljava/lang/Object;)Lj3/yl0;
+    invoke-static {p1, v0}, Lj3/nc;->j(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object p1
-
-    return-object p1
 
     .line 3
-    :goto_0
-    iget-object v0, p0, Lj3/nd0;->b:Ljava/lang/Object;
+    iget-object v0, p0, Lj3/nd0;->a:Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;
 
-    check-cast v0, Lj3/bi0;
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;->getId()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    const-string v0, "rdid"
 
     .line 4
-    invoke-interface {v0, p1}, Lj3/bi0;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v1, p0, Lj3/nd0;->a:Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;
 
-    move-result-object p1
+    invoke-virtual {v1}, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;->getId()Ljava/lang/String;
 
-    invoke-static {p1}, Lj3/ul0;->i(Ljava/lang/Object;)Lj3/yl0;
+    move-result-object v1
 
-    move-result-object p1
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    return-object p1
+    const-string v0, "is_lat"
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 5
+    iget-object v1, p0, Lj3/nd0;->a:Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;
+
+    invoke-virtual {v1}, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;->isLimitAdTrackingEnabled()Z
+
+    move-result v1
+
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    const-string v0, "idtype"
+
+    const-string v1, "adid"
+
+    .line 6
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    return-void
+
+    :cond_0
+    const-string v0, "pdid"
+
+    .line 7
+    iget-object v1, p0, Lj3/nd0;->b:Ljava/lang/String;
+
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string v0, "pdidtype"
+
+    const-string v1, "ssaid"
+
+    .line 8
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    .line 9
+    :catch_0
+    invoke-static {}, Lj3/cj;->l()Z
+
+    return-void
 .end method

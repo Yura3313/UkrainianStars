@@ -21,21 +21,21 @@
         "Lle/j;",
         "Lke/l<",
         "Lcom/supercell/id/model/IdInfo;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/SupercellId$l;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/SupercellId$l;->g:Ljava/lang/String;
 
     const/4 p1, 0x1
 
@@ -57,16 +57,16 @@
     if-eqz p1, :cond_4
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/SupercellId$l;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/SupercellId$l;->g:Ljava/lang/String;
 
     sget-object v2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v3
 
     .line 3
-    iget-object v3, v3, Lwd/r;->l:Lcom/supercell/id/IdAccount;
+    iget-object v3, v3, Lvd/r;->l:Lcom/supercell/id/IdAccount;
 
     if-eqz v3, :cond_0
 
@@ -76,7 +76,7 @@
     move-result-object v0
 
     :cond_0
-    invoke-static {v1, v0}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v0}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -90,14 +90,14 @@
     if-eqz v0, :cond_3
 
     .line 6
-    iget-object p1, p1, Lcom/supercell/id/model/IdInfo;->b:Ljava/util/List;
+    iget-object p1, p1, Lcom/supercell/id/model/IdInfo;->h:Ljava/util/List;
 
     .line 7
     new-instance v1, Ljava/util/ArrayList;
 
     const/16 v2, 0xa
 
-    invoke-static {p1, v2}, Lce/h;->E(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v2}, Lbe/g;->v(Ljava/lang/Iterable;I)I
 
     move-result v2
 
@@ -163,7 +163,7 @@
     .line 14
     :cond_3
     :goto_1
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -171,7 +171,7 @@
     const-string p1, "info"
 
     .line 15
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     goto :goto_3
 

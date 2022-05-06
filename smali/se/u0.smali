@@ -1,66 +1,45 @@
 .class public final Lse/u0;
 .super Ljava/lang/Object;
-.source "EventLoop.common.kt"
+.source "CoroutineScope.kt"
+
+# interfaces
+.implements Lse/a0;
 
 
 # static fields
-.field public static final a:Lp5/b0;
-
-.field public static final b:Lp5/b0;
+.field public static final g:Lse/u0;
 
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
     .line 1
-    new-instance v0, Lp5/b0;
+    new-instance v0, Lse/u0;
 
-    const-string v1, "REMOVED_TASK"
+    invoke-direct {v0}, Lse/u0;-><init>()V
 
-    invoke-direct {v0, v1}, Lp5/b0;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lse/u0;->a:Lp5/b0;
-
-    .line 2
-    new-instance v0, Lp5/b0;
-
-    const-string v1, "CLOSED_EMPTY"
-
-    invoke-direct {v0, v1}, Lp5/b0;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lse/u0;->b:Lp5/b0;
+    sput-object v0, Lse/u0;->g:Lse/u0;
 
     return-void
 .end method
 
-.method public static final a(J)J
-    .locals 3
+.method public constructor <init>()V
+    .locals 0
 
-    const-wide/16 v0, 0x0
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    cmp-long v2, p0, v0
+    return-void
+.end method
 
-    if-gtz v2, :cond_0
 
-    goto :goto_0
+# virtual methods
+.method public a()Lde/f;
+    .locals 1
 
-    :cond_0
-    const-wide v0, 0x8637bd05af6L
+    .line 1
+    sget-object v0, Lde/g;->g:Lde/g;
 
-    cmp-long v2, p0, v0
-
-    if-ltz v2, :cond_1
-
-    const-wide v0, 0x7fffffffffffffffL
-
-    goto :goto_0
-
-    :cond_1
-    const-wide/32 v0, 0xf4240
-
-    mul-long v0, v0, p0
-
-    :goto_0
-    return-wide v0
+    return-object v0
 .end method

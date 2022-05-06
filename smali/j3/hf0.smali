@@ -3,55 +3,66 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/qf0;
+.implements Lj3/bi0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<RequestComponentT::",
-        "Lj3/oq<",
-        "TAdT;>;AdT:",
+        "<R:",
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lj3/qf0<",
-        "TRequestComponentT;TAdT;>;"
+        "Lj3/bi0;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lj3/qf0;
+.field public final a:Lj3/zf0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lj3/qf0<",
-            "TRequestComponentT;TAdT;>;"
+            "Lj3/zf0<",
+            "TR;>;"
         }
     .end annotation
 .end field
 
-.field public b:Lj3/oq;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TRequestComponentT;"
-        }
-    .end annotation
+.field public final b:Lj3/yf0;
 
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "this"
+.field public final c:Lcom/google/android/gms/internal/ads/zzvc;
+
+.field public final d:Ljava/lang/String;
+
+.field public final e:Ljava/util/concurrent/Executor;
+
+.field public final f:Lcom/google/android/gms/internal/ads/zzvm;
+
+.field public final g:Lj3/sh0;
+    .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lj3/qf0;)V
+.method public constructor <init>(Lj3/zf0;Lj3/yf0;Lcom/google/android/gms/internal/ads/zzvc;Ljava/lang/String;Ljava/util/concurrent/Executor;Lcom/google/android/gms/internal/ads/zzvm;Lj3/sh0;)V
     .locals 0
+    .param p7    # Lj3/sh0;
+        .annotation runtime Ljavax/annotation/Nullable;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lj3/qf0<",
-            "TRequestComponentT;TAdT;>;)V"
+            "Lj3/zf0<",
+            "TR;>;",
+            "Lj3/yf0;",
+            "Lcom/google/android/gms/internal/ads/zzvc;",
+            "Ljava/lang/String;",
+            "Ljava/util/concurrent/Executor;",
+            "Lcom/google/android/gms/internal/ads/zzvm;",
+            "Lj3/sh0;",
+            ")V"
         }
     .end annotation
 
@@ -59,135 +70,74 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj3/hf0;->a:Lj3/qf0;
+    iput-object p1, p0, Lj3/hf0;->a:Lj3/zf0;
+
+    .line 3
+    iput-object p2, p0, Lj3/hf0;->b:Lj3/yf0;
+
+    .line 4
+    iput-object p3, p0, Lj3/hf0;->c:Lcom/google/android/gms/internal/ads/zzvc;
+
+    .line 5
+    iput-object p4, p0, Lj3/hf0;->d:Ljava/lang/String;
+
+    .line 6
+    iput-object p5, p0, Lj3/hf0;->e:Ljava/util/concurrent/Executor;
+
+    .line 7
+    iput-object p6, p0, Lj3/hf0;->f:Lcom/google/android/gms/internal/ads/zzvm;
+
+    .line 8
+    iput-object p7, p0, Lj3/hf0;->g:Lj3/sh0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final declared-synchronized a(Lj3/rf0;Lj3/sf0;)Lj3/yl0;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/rf0;",
-            "Lj3/sf0<",
-            "TRequestComponentT;>;)",
-            "Lj3/yl0<",
-            "TAdT;>;"
-        }
-    .end annotation
-
-    monitor-enter p0
+.method public final a()Lj3/bi0;
+    .locals 9
 
     .line 1
-    :try_start_0
-    iget-object v0, p1, Lj3/rf0;->a:Lcom/google/android/gms/internal/ads/zzasp;
+    new-instance v8, Lj3/hf0;
 
-    if-eqz v0, :cond_0
+    iget-object v1, p0, Lj3/hf0;->a:Lj3/zf0;
 
-    .line 2
-    iget-object v0, p1, Lj3/rf0;->b:Lj3/pf0;
+    iget-object v2, p0, Lj3/hf0;->b:Lj3/yf0;
 
-    .line 3
-    invoke-interface {p2, v0}, Lj3/sf0;->i(Lj3/pf0;)Lj3/nq;
+    iget-object v3, p0, Lj3/hf0;->c:Lcom/google/android/gms/internal/ads/zzvc;
 
-    move-result-object p2
+    iget-object v4, p0, Lj3/hf0;->d:Ljava/lang/String;
 
-    invoke-interface {p2}, Lj3/nq;->a()Ljava/lang/Object;
+    iget-object v5, p0, Lj3/hf0;->e:Ljava/util/concurrent/Executor;
 
-    move-result-object p2
+    iget-object v6, p0, Lj3/hf0;->f:Lcom/google/android/gms/internal/ads/zzvm;
 
-    check-cast p2, Lj3/oq;
+    iget-object v7, p0, Lj3/hf0;->g:Lj3/sh0;
 
-    iput-object p2, p0, Lj3/hf0;->b:Lj3/oq;
+    move-object v0, v8
 
-    .line 4
-    invoke-interface {p2}, Lj3/oq;->b()Lj3/xo;
+    invoke-direct/range {v0 .. v7}, Lj3/hf0;-><init>(Lj3/zf0;Lj3/yf0;Lcom/google/android/gms/internal/ads/zzvc;Ljava/lang/String;Ljava/util/concurrent/Executor;Lcom/google/android/gms/internal/ads/zzvm;Lj3/sh0;)V
 
-    move-result-object p2
-
-    iget-object p1, p1, Lj3/rf0;->a:Lcom/google/android/gms/internal/ads/zzasp;
-
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 5
-    invoke-static {p1}, Lj3/ul0;->i(Ljava/lang/Object;)Lj3/yl0;
-
-    move-result-object p1
-
-    invoke-virtual {p2, p1}, Lj3/xo;->a(Lj3/yl0;)Lj3/yl0;
-
-    move-result-object p1
-
-    .line 6
-    invoke-virtual {p2, p1}, Lj3/xo;->c(Lj3/yl0;)Lj3/yl0;
-
-    move-result-object p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 7
-    monitor-exit p0
-
-    return-object p1
-
-    .line 8
-    :cond_0
-    :try_start_1
-    iget-object v0, p0, Lj3/hf0;->a:Lj3/qf0;
-
-    invoke-interface {v0, p1, p2}, Lj3/qf0;->a(Lj3/rf0;Lj3/sf0;)Lj3/yl0;
-
-    move-result-object p1
-
-    .line 9
-    iget-object p2, p0, Lj3/hf0;->a:Lj3/qf0;
-
-    invoke-interface {p2}, Lj3/qf0;->b()Ljava/lang/Object;
-
-    move-result-object p2
-
-    check-cast p2, Lj3/oq;
-
-    iput-object p2, p0, Lj3/hf0;->b:Lj3/oq;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 10
-    monitor-exit p0
-
-    return-object p1
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
+    return-object v8
 .end method
 
-.method public final b()Ljava/lang/Object;
+.method public final b()Ljava/util/concurrent/Executor;
     .locals 1
 
     .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    iget-object v0, p0, Lj3/hf0;->b:Lj3/oq;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
+    iget-object v0, p0, Lj3/hf0;->e:Ljava/util/concurrent/Executor;
 
     return-object v0
+.end method
 
-    :catchall_0
-    move-exception v0
+.method public final c()Lj3/sh0;
+    .locals 1
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
 
-    monitor-exit p0
+    .line 1
+    iget-object v0, p0, Lj3/hf0;->g:Lj3/sh0;
 
-    throw v0
+    return-object v0
 .end method

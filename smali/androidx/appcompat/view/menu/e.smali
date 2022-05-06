@@ -247,7 +247,7 @@
     move-result-object v1
 
     .line 20
-    sget-object v3, Lf0/v;->a:Ljava/lang/reflect/Method;
+    sget-object v3, Lf0/u;->a:Ljava/lang/reflect/Method;
 
     .line 21
     sget v3, Landroid/os/Build$VERSION;->SDK_INT:I

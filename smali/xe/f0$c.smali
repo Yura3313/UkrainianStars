@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/reflect/Type;
+.field public final g:Ljava/lang/reflect/Type;
 
-.field public final b:Ljava/lang/reflect/Type;
+.field public final h:Ljava/lang/reflect/Type;
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 .end field
@@ -72,10 +72,10 @@
     .line 8
     aget-object p1, p2, v3
 
-    iput-object p1, p0, Lxe/f0$c;->b:Ljava/lang/reflect/Type;
+    iput-object p1, p0, Lxe/f0$c;->h:Ljava/lang/reflect/Type;
 
     .line 9
-    iput-object v0, p0, Lxe/f0$c;->a:Ljava/lang/reflect/Type;
+    iput-object v0, p0, Lxe/f0$c;->g:Ljava/lang/reflect/Type;
 
     goto :goto_0
 
@@ -101,12 +101,12 @@
     const/4 p2, 0x0
 
     .line 13
-    iput-object p2, p0, Lxe/f0$c;->b:Ljava/lang/reflect/Type;
+    iput-object p2, p0, Lxe/f0$c;->h:Ljava/lang/reflect/Type;
 
     .line 14
     aget-object p1, p1, v3
 
-    iput-object p1, p0, Lxe/f0$c;->a:Ljava/lang/reflect/Type;
+    iput-object p1, p0, Lxe/f0$c;->g:Ljava/lang/reflect/Type;
 
     :goto_0
     return-void
@@ -161,7 +161,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lxe/f0$c;->b:Ljava/lang/reflect/Type;
+    iget-object v0, p0, Lxe/f0$c;->h:Ljava/lang/reflect/Type;
 
     if-eqz v0, :cond_0
 
@@ -190,7 +190,7 @@
     new-array v0, v0, [Ljava/lang/reflect/Type;
 
     .line 1
-    iget-object v1, p0, Lxe/f0$c;->a:Ljava/lang/reflect/Type;
+    iget-object v1, p0, Lxe/f0$c;->g:Ljava/lang/reflect/Type;
 
     const/4 v2, 0x0
 
@@ -203,7 +203,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lxe/f0$c;->b:Ljava/lang/reflect/Type;
+    iget-object v0, p0, Lxe/f0$c;->h:Ljava/lang/reflect/Type;
 
     if-eqz v0, :cond_0
 
@@ -219,7 +219,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    iget-object v1, p0, Lxe/f0$c;->a:Ljava/lang/reflect/Type;
+    iget-object v1, p0, Lxe/f0$c;->g:Ljava/lang/reflect/Type;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -236,17 +236,17 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lxe/f0$c;->b:Ljava/lang/reflect/Type;
+    iget-object v0, p0, Lxe/f0$c;->h:Ljava/lang/reflect/Type;
 
     if-eqz v0, :cond_0
 
     const-string v0, "? super "
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lxe/f0$c;->b:Ljava/lang/reflect/Type;
+    iget-object v1, p0, Lxe/f0$c;->h:Ljava/lang/reflect/Type;
 
     invoke-static {v1}, Lxe/f0;->q(Ljava/lang/reflect/Type;)Ljava/lang/String;
 
@@ -262,7 +262,7 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lxe/f0$c;->a:Ljava/lang/reflect/Type;
+    iget-object v0, p0, Lxe/f0$c;->g:Ljava/lang/reflect/Type;
 
     const-class v1, Ljava/lang/Object;
 
@@ -276,11 +276,11 @@
     const-string v0, "? extends "
 
     .line 3
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lxe/f0$c;->a:Ljava/lang/reflect/Type;
+    iget-object v1, p0, Lxe/f0$c;->g:Ljava/lang/reflect/Type;
 
     invoke-static {v1}, Lxe/f0;->q(Ljava/lang/reflect/Type;)Ljava/lang/String;
 

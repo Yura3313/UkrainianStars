@@ -6,10 +6,9 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lo0/c$e;,
-        Lo0/c$h;,
+        Lo0/c$d;,
         Lo0/c$f;,
-        Lo0/c$g;
+        Lo0/c$e;
     }
 .end annotation
 
@@ -28,22 +27,22 @@
 
 
 # static fields
-.field public static final k:Ljava/util/concurrent/Executor;
+.field public static final l:Ljava/util/concurrent/Executor;
 
-.field public static l:Lo0/c$f;
+.field public static m:Lo0/c$e;
 
 
 # instance fields
-.field public final a:Lo0/c$h;
+.field public final g:Lo0/c$f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lo0/c$h<",
+            "Lo0/c$f<",
             "TParams;TResult;>;"
         }
     .end annotation
 .end field
 
-.field public final b:Ljava/util/concurrent/FutureTask;
+.field public final h:Ljava/util/concurrent/FutureTask;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/FutureTask<",
@@ -52,11 +51,11 @@
     .end annotation
 .end field
 
-.field public volatile h:Lo0/c$g;
-
-.field public final i:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public volatile i:I
 
 .field public final j:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+.field public final k:Ljava/util/concurrent/atomic/AtomicBoolean;
 
 
 # direct methods
@@ -90,7 +89,7 @@
 
     invoke-direct/range {v0 .. v7}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
 
-    sput-object v8, Lo0/c;->k:Ljava/util/concurrent/Executor;
+    sput-object v8, Lo0/c;->l:Ljava/util/concurrent/Executor;
 
     return-void
 .end method
@@ -101,38 +100,38 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    sget-object v0, Lo0/c$g;->PENDING:Lo0/c$g;
+    const/4 v0, 0x1
 
-    iput-object v0, p0, Lo0/c;->h:Lo0/c$g;
+    .line 2
+    iput v0, p0, Lo0/c;->i:I
 
     .line 3
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
 
-    iput-object v0, p0, Lo0/c;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 4
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
 
-    iput-object v0, p0, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lo0/c;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 5
     new-instance v0, Lo0/c$b;
 
     invoke-direct {v0, p0}, Lo0/c$b;-><init>(Lo0/c;)V
 
-    iput-object v0, p0, Lo0/c;->a:Lo0/c$h;
+    iput-object v0, p0, Lo0/c;->g:Lo0/c$f;
 
     .line 6
     new-instance v1, Lo0/c$c;
 
     invoke-direct {v1, p0, v0}, Lo0/c$c;-><init>(Lo0/c;Ljava/util/concurrent/Callable;)V
 
-    iput-object v1, p0, Lo0/c;->b:Ljava/util/concurrent/FutureTask;
+    iput-object v1, p0, Lo0/c;->h:Ljava/util/concurrent/FutureTask;
 
     return-void
 .end method
@@ -184,27 +183,27 @@
 
     .line 2
     :try_start_0
-    sget-object v1, Lo0/c;->l:Lo0/c$f;
+    sget-object v1, Lo0/c;->m:Lo0/c$e;
 
     if-nez v1, :cond_0
 
     .line 3
-    new-instance v1, Lo0/c$f;
+    new-instance v1, Lo0/c$e;
 
-    invoke-direct {v1}, Lo0/c$f;-><init>()V
+    invoke-direct {v1}, Lo0/c$e;-><init>()V
 
-    sput-object v1, Lo0/c;->l:Lo0/c$f;
+    sput-object v1, Lo0/c;->m:Lo0/c$e;
 
     .line 4
     :cond_0
-    sget-object v1, Lo0/c;->l:Lo0/c$f;
+    sget-object v1, Lo0/c;->m:Lo0/c$e;
 
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 5
-    new-instance v0, Lo0/c$e;
+    new-instance v0, Lo0/c$d;
 
     const/4 v2, 0x1
 
@@ -214,7 +213,7 @@
 
     aput-object p1, v3, v4
 
-    invoke-direct {v0, p0, v3}, Lo0/c$e;-><init>(Lo0/c;[Ljava/lang/Object;)V
+    invoke-direct {v0, p0, v3}, Lo0/c$d;-><init>(Lo0/c;[Ljava/lang/Object;)V
 
     invoke-virtual {v1, v2, v0}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 

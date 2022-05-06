@@ -75,7 +75,7 @@
 
     invoke-direct {v1}, Lj3/c;-><init>()V
 
-    invoke-static {v0, v1}, Lj3/rc;->a(Landroid/content/Context;Ljava/util/concurrent/Callable;)Ljava/lang/Object;
+    invoke-static {v0, v1}, Lj3/vc;->a(Landroid/content/Context;Ljava/util/concurrent/Callable;)Ljava/lang/Object;
 
     move-result-object v0
 

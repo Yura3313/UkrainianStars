@@ -3,7 +3,7 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
+.implements Lj3/rv0;
 
 
 # instance fields
@@ -26,6 +26,19 @@
     return-void
 .end method
 
+.method public static a(Lcom/google/android/gms/internal/ads/j;)Lj3/hj;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lj3/hj;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, p0, v1}, Lj3/hj;-><init>(Ljava/lang/Object;I)V
+
+    return-object v0
+.end method
+
 
 # virtual methods
 .method public final get()Ljava/lang/Object;
@@ -33,39 +46,48 @@
 
     iget v0, p0, Lj3/hj;->a:I
 
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
-
     packed-switch v0, :pswitch_data_0
 
     goto :goto_0
 
     .line 1
     :pswitch_0
-    sget-object v0, Lj3/w41;->j:Lj3/w41;
+    iget-object v0, p0, Lj3/hj;->b:Ljava/lang/Object;
 
-    iget-object v0, v0, Lj3/w41;->c:Ljava/lang/String;
+    check-cast v0, Lcom/google/android/gms/internal/ads/j;
 
     .line 2
-    invoke-static {v0, v1}, Lj3/zo0;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/j;->e:Lj3/tg0;
 
     return-object v0
 
     .line 3
+    :pswitch_1
+    sget-object v0, Lh1/o;->B:Lh1/o;
+
+    iget-object v0, v0, Lh1/o;->g:Lj3/ia;
+
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+
+    .line 4
+    invoke-static {v0, v1}, Lj3/u6;->h(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    return-object v0
+
+    .line 5
     :goto_0
     iget-object v0, p0, Lj3/hj;->b:Ljava/lang/Object;
 
-    check-cast v0, Lj3/co;
+    check-cast v0, Lj3/ev;
 
-    .line 4
-    iget-object v0, v0, Lj3/co;->a:Lj3/zr;
-
-    .line 5
-    invoke-static {v0, v1}, Lj3/zo0;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    .line 6
+    iget-object v0, v0, Lj3/ev;->b:Lcom/google/android/gms/internal/ads/zzwl;
 
     return-object v0
 
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

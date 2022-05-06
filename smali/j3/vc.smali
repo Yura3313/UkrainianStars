@@ -1,174 +1,244 @@
 .class public final Lj3/vc;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
-
-
-# instance fields
-.field public final a:Landroid/view/View;
-
-.field public b:Landroid/app/Activity;
-
-.field public c:Z
-
-.field public d:Z
-
-.field public e:Z
-
-.field public f:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
 # direct methods
-.method public constructor <init>(Landroid/app/Activity;Landroid/view/View;Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
-    .locals 0
+.method public static a(Landroid/content/Context;Ljava/util/concurrent/Callable;)Ljava/lang/Object;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Landroid/content/Context;",
+            "Ljava/util/concurrent/Callable<",
+            "TT;>;)TT;"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    :try_start_0
+    invoke-static {}, Landroid/os/StrictMode;->getThreadPolicy()Landroid/os/StrictMode$ThreadPolicy;
+
+    move-result-object v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     .line 2
-    iput-object p1, p0, Lj3/vc;->b:Landroid/app/Activity;
+    :try_start_1
+    new-instance v1, Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    invoke-direct {v1, v0}, Landroid/os/StrictMode$ThreadPolicy$Builder;-><init>(Landroid/os/StrictMode$ThreadPolicy;)V
 
     .line 3
-    iput-object p2, p0, Lj3/vc;->a:Landroid/view/View;
-
-    .line 4
-    iput-object p3, p0, Lj3/vc;->f:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
-
-    return-void
-.end method
-
-.method public static a(Landroid/app/Activity;)Landroid/view/ViewTreeObserver;
-    .locals 1
-
-    const/4 v0, 0x0
-
-    if-nez p0, :cond_0
-
-    return-object v0
-
-    .line 1
-    :cond_0
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
-
-    move-result-object p0
-
-    if-nez p0, :cond_1
-
-    return-object v0
-
-    .line 2
-    :cond_1
-    invoke-virtual {p0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
-
-    move-result-object p0
-
-    if-nez p0, :cond_2
-
-    return-object v0
-
-    .line 3
-    :cond_2
-    invoke-virtual {p0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-
-# virtual methods
-.method public final b()V
-    .locals 2
-
-    .line 1
-    iget-boolean v0, p0, Lj3/vc;->c:Z
-
-    if-nez v0, :cond_2
-
-    .line 2
-    iget-object v0, p0, Lj3/vc;->f:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
-
-    if-eqz v0, :cond_1
-
-    .line 3
-    iget-object v1, p0, Lj3/vc;->b:Landroid/app/Activity;
-
-    if-eqz v1, :cond_0
-
-    .line 4
-    invoke-static {v1}, Lj3/vc;->a(Landroid/app/Activity;)Landroid/view/ViewTreeObserver;
+    invoke-virtual {v1}, Landroid/os/StrictMode$ThreadPolicy$Builder;->permitDiskReads()Landroid/os/StrictMode$ThreadPolicy$Builder;
 
     move-result-object v1
 
-    if-eqz v1, :cond_0
+    .line 4
+    invoke-virtual {v1}, Landroid/os/StrictMode$ThreadPolicy$Builder;->permitDiskWrites()Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    move-result-object v1
 
     .line 5
-    invoke-virtual {v1, v0}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+    invoke-virtual {v1}, Landroid/os/StrictMode$ThreadPolicy$Builder;->build()Landroid/os/StrictMode$ThreadPolicy;
+
+    move-result-object v1
 
     .line 6
-    :cond_0
-    sget-object v0, Lh1/o;->B:Lh1/o;
-
-    iget-object v0, v0, Lh1/o;->A:Lj3/td;
+    invoke-static {v1}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
 
     .line 7
-    iget-object v0, p0, Lj3/vc;->a:Landroid/view/View;
+    invoke-interface {p1}, Ljava/util/concurrent/Callable;->call()Ljava/lang/Object;
 
-    iget-object v1, p0, Lj3/vc;->f:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
-
-    invoke-static {v0, v1}, Lj3/td;->a(Landroid/view/View;Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
-
-    :cond_1
-    const/4 v0, 0x1
+    move-result-object p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 8
-    iput-boolean v0, p0, Lj3/vc;->c:Z
+    :try_start_2
+    invoke-static {v0}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
 
-    :cond_2
-    return-void
+    return-object p1
+
+    :catchall_0
+    move-exception p1
+
+    .line 9
+    invoke-static {v0}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
+
+    .line 10
+    throw p1
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    :catchall_1
+    move-exception p1
+
+    .line 11
+    sget-object v0, Lj3/w7;->l:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    .line 12
+    :try_start_3
+    sget-object v1, Lj3/w7;->m:Lj3/a8;
+
+    if-nez v1, :cond_1
+
+    .line 13
+    sget-object v1, Lj3/y0;->e:Lj3/i0;
+
+    invoke-virtual {v1}, Lj3/i0;->a()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Boolean;
+
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    sget-object v1, Lj3/n;->M3:Lj3/f;
+
+    .line 14
+    sget-object v2, Lj3/t51;->j:Lj3/t51;
+
+    iget-object v2, v2, Lj3/t51;->f:Lj3/l;
+
+    .line 15
+    invoke-virtual {v2, v1}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 16
+    check-cast v1, Ljava/lang/Boolean;
+
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 17
+    new-instance v1, Lj3/w7;
+
+    .line 18
+    invoke-static {}, Lcom/google/android/gms/internal/ads/zzbbg;->z2()Lcom/google/android/gms/internal/ads/zzbbg;
+
+    move-result-object v2
+
+    invoke-direct {v1, p0, v2}, Lj3/w7;-><init>(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzbbg;)V
+
+    .line 19
+    sput-object v1, Lj3/w7;->m:Lj3/a8;
+
+    goto :goto_0
+
+    .line 20
+    :cond_0
+    new-instance p0, Lcom/google/android/gms/ads/r;
+
+    invoke-direct {p0}, Lcom/google/android/gms/ads/r;-><init>()V
+
+    sput-object p0, Lj3/w7;->m:Lj3/a8;
+
+    .line 21
+    :cond_1
+    :goto_0
+    monitor-exit v0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+
+    .line 22
+    sget-object p0, Lj3/w7;->m:Lj3/a8;
+
+    const-string v0, "StrictModeUtil.runWithLaxStrictMode"
+
+    .line 23
+    invoke-interface {p0, p1, v0}, Lj3/a8;->a(Ljava/lang/Throwable;Ljava/lang/String;)V
+
+    const/4 p0, 0x0
+
+    return-object p0
+
+    :catchall_2
+    move-exception p0
+
+    .line 24
+    :try_start_4
+    monitor-exit v0
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_2
+
+    throw p0
 .end method
 
-.method public final c()V
-    .locals 3
+.method public static b(Lj3/fk0;)Ljava/lang/Object;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lj3/fk0<",
+            "TT;>;)TT;"
+        }
+    .end annotation
 
     .line 1
-    iget-object v0, p0, Lj3/vc;->b:Landroid/app/Activity;
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    iget-boolean v1, p0, Lj3/vc;->c:Z
-
-    if-eqz v1, :cond_2
-
-    .line 3
-    iget-object v1, p0, Lj3/vc;->f:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
-
-    if-eqz v1, :cond_1
-
-    .line 4
-    invoke-static {v0}, Lj3/vc;->a(Landroid/app/Activity;)Landroid/view/ViewTreeObserver;
+    invoke-static {}, Landroid/os/StrictMode;->getThreadPolicy()Landroid/os/StrictMode$ThreadPolicy;
 
     move-result-object v0
 
-    if-eqz v0, :cond_1
+    .line 2
+    :try_start_0
+    new-instance v1, Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    invoke-direct {v1, v0}, Landroid/os/StrictMode$ThreadPolicy$Builder;-><init>(Landroid/os/StrictMode$ThreadPolicy;)V
+
+    .line 3
+    invoke-virtual {v1}, Landroid/os/StrictMode$ThreadPolicy$Builder;->permitDiskReads()Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    move-result-object v1
+
+    .line 4
+    invoke-virtual {v1}, Landroid/os/StrictMode$ThreadPolicy$Builder;->permitDiskWrites()Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    move-result-object v1
 
     .line 5
-    sget-object v2, Lh1/o;->B:Lh1/o;
+    invoke-virtual {v1}, Landroid/os/StrictMode$ThreadPolicy$Builder;->build()Landroid/os/StrictMode$ThreadPolicy;
 
-    iget-object v2, v2, Lh1/o;->e:Lj3/ab;
+    move-result-object v1
 
     .line 6
-    invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
-
-    :cond_1
-    const/4 v0, 0x0
+    invoke-static {v1}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
 
     .line 7
-    iput-boolean v0, p0, Lj3/vc;->c:Z
+    invoke-interface {p0}, Lj3/fk0;->get()Ljava/lang/Object;
 
-    :cond_2
-    return-void
+    move-result-object p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 8
+    invoke-static {v0}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
+
+    return-object p0
+
+    :catchall_0
+    move-exception p0
+
+    .line 9
+    invoke-static {v0}, Landroid/os/StrictMode;->setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
+
+    .line 10
+    throw p0
 .end method

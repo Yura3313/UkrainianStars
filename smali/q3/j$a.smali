@@ -1,8 +1,8 @@
 .class public final Lq3/j$a;
-.super Lq3/j2$a;
+.super Lq3/g2$a;
 
 # interfaces
-.implements Lq3/k3;
+.implements Lq3/h3;
 
 
 # annotations
@@ -17,11 +17,11 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq3/j2$a<",
+        "Lq3/g2$a<",
         "Lq3/j;",
         "Lq3/j$a;",
         ">;",
-        "Lq3/k3;"
+        "Lq3/h3;"
     }
 .end annotation
 
@@ -35,7 +35,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lq3/j2$a;-><init>(Lq3/j2;)V
+    invoke-direct {p0, v0}, Lq3/g2$a;-><init>(Lq3/g2;)V
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     move-result-object p1
 
-    invoke-direct {p0, p1}, Lq3/j2$a;-><init>(Lq3/j2;)V
+    invoke-direct {p0, p1}, Lq3/g2$a;-><init>(Lq3/g2;)V
 
     return-void
 .end method

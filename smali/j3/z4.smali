@@ -1,248 +1,124 @@
-.class public Lj3/z4;
+.class public final Lj3/z4;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/qd;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
+.field public final synthetic g:Lj3/f5;
 
-.field public final b:Ljava/lang/Object;
+.field public final synthetic h:Lj3/k4;
+
+.field public final synthetic i:Lj3/t4;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lj3/s4;Lj3/e5;)V
+.method public constructor <init>(Lj3/t4;Lj3/f5;Lj3/k4;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lj3/z4;->b:Ljava/lang/Object;
+    iput-object p1, p0, Lj3/z4;->i:Lj3/t4;
 
-    iput-object p2, p0, Lj3/z4;->a:Ljava/lang/Object;
+    iput-object p2, p0, Lj3/z4;->g:Lj3/f5;
+
+    iput-object p3, p0, Lj3/z4;->h:Lj3/k4;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(Lo8/d;Ljava/util/List;Lz7/a;)V
-    .locals 1
-
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 3
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Lj3/z4;->a:Ljava/lang/Object;
-
-    .line 4
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Lj3/z4;->b:Ljava/lang/Object;
-
-    .line 5
-    invoke-virtual {p0, p3, p1, p2}, Lj3/z4;->a(Lz7/a;Lo8/d;Ljava/util/List;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lz7/a;Lo8/d;Ljava/util/List;)V
-    .locals 2
+.method public final run()V
+    .locals 5
 
     .line 1
-    invoke-static {p3}, Lid/g;->a(Ljava/util/List;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    return-void
+    iget-object v0, p0, Lj3/z4;->i:Lj3/t4;
 
     .line 2
-    :cond_0
-    check-cast p1, Lr8/b$g;
+    iget-object v0, v0, Lj3/t4;->a:Ljava/lang/Object;
 
     .line 3
-    iget-object p1, p1, Lr8/b$g;->a:Lr8/b;
-
-    iget-object p1, p1, Lr8/b;->a:Ll8/c;
-
-    invoke-virtual {p1, p2}, Ll8/c;->j(Lo8/d;)Ljava/util/Map;
-
-    move-result-object p1
+    monitor-enter v0
 
     .line 4
-    invoke-interface {p3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    :try_start_0
+    iget-object v1, p0, Lj3/z4;->g:Lj3/f5;
 
-    move-result-object p2
-
-    :cond_1
-    :goto_0
-    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result p3
-
-    if-eqz p3, :cond_3
-
-    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object p3
-
-    check-cast p3, Lm8/a0;
-
-    .line 5
-    iget-object v0, p3, Lm8/a0;->i:Ljava/lang/String;
-
-    invoke-static {v0}, Landroidx/savedstate/d;->j(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_2
-
-    .line 6
-    iget-object v0, p0, Lj3/z4;->a:Ljava/lang/Object;
-
-    check-cast v0, Ljava/util/Map;
-
-    iget-object v1, p3, Lm8/a0;->i:Ljava/lang/String;
-
-    invoke-interface {v0, v1, p3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 7
-    :cond_2
-    iget-object v0, p3, Lm8/a0;->m:Ljava/lang/Long;
-
-    if-eqz v0, :cond_1
-
-    .line 8
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    if-eqz p1, :cond_1
-
-    .line 9
-    invoke-interface {p1, v0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v1}, Lj3/wd;->b()I
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    const/4 v2, -0x1
 
-    .line 10
-    iget-object v1, p0, Lj3/z4;->b:Ljava/lang/Object;
+    if-eq v1, v2, :cond_1
 
-    check-cast v1, Ljava/util/Map;
+    iget-object v1, p0, Lj3/z4;->g:Lj3/f5;
 
-    invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 5
+    invoke-virtual {v1}, Lj3/wd;->b()I
 
-    move-result-object v0
+    move-result v1
 
-    invoke-interface {v1, v0, p3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v2, 0x1
+
+    if-ne v1, v2, :cond_0
 
     goto :goto_0
 
-    :cond_3
-    return-void
-.end method
-
-.method public c(Ljava/lang/Object;)V
-    .locals 3
-
-    .line 1
-    check-cast p1, Lj3/j4;
-
-    .line 2
-    iget-object p1, p0, Lj3/z4;->b:Ljava/lang/Object;
-
-    check-cast p1, Lj3/s4;
-
-    .line 3
-    iget-object p1, p1, Lj3/s4;->a:Ljava/lang/Object;
-
-    .line 4
-    monitor-enter p1
-
-    .line 5
-    :try_start_0
-    iget-object v0, p0, Lj3/z4;->b:Ljava/lang/Object;
-
-    move-object v1, v0
-
-    check-cast v1, Lj3/s4;
-
-    const/4 v2, 0x0
-
     .line 6
-    iput v2, v1, Lj3/s4;->h:I
+    :cond_0
+    iget-object v1, p0, Lj3/z4;->g:Lj3/f5;
+
+    invoke-virtual {v1}, Lj3/wd;->c()V
 
     .line 7
-    move-object v1, v0
+    sget-object v1, Lj3/kd;->e:Lj3/km0;
 
-    check-cast v1, Lj3/s4;
+    iget-object v2, p0, Lj3/z4;->h:Lj3/k4;
+
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
-    iget-object v1, v1, Lj3/s4;->g:Lj3/e5;
+    new-instance v3, Lj3/c5;
 
-    if-eqz v1, :cond_0
+    const/4 v4, 0x0
+
+    invoke-direct {v3, v2, v4}, Lj3/c5;-><init>(Ljava/lang/Object;I)V
 
     .line 9
-    iget-object v1, p0, Lj3/z4;->a:Ljava/lang/Object;
-
-    check-cast v1, Lj3/e5;
-
-    check-cast v0, Lj3/s4;
+    check-cast v1, Lj3/od;
 
     .line 10
-    iget-object v0, v0, Lj3/s4;->g:Lj3/e5;
+    iget-object v1, v1, Lj3/od;->g:Ljava/util/concurrent/Executor;
 
-    if-eq v1, v0, :cond_0
+    invoke-interface {v1, v3}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     .line 11
-    invoke-static {}, Lp0/d;->i()Z
+    invoke-static {}, Lj3/cj;->l()Z
 
     .line 12
-    iget-object v0, p0, Lj3/z4;->b:Ljava/lang/Object;
+    monitor-exit v0
 
-    check-cast v0, Lj3/s4;
+    return-void
 
     .line 13
-    iget-object v0, v0, Lj3/s4;->g:Lj3/e5;
-
-    .line 14
-    invoke-virtual {v0}, Lj3/e5;->g()V
-
-    .line 15
-    :cond_0
-    iget-object v0, p0, Lj3/z4;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/s4;
-
-    iget-object v1, p0, Lj3/z4;->a:Ljava/lang/Object;
-
-    check-cast v1, Lj3/e5;
-
-    .line 16
-    iput-object v1, v0, Lj3/s4;->g:Lj3/e5;
-
-    .line 17
-    monitor-exit p1
+    :cond_1
+    :goto_0
+    monitor-exit v0
 
     return-void
 
     :catchall_0
-    move-exception v0
+    move-exception v1
 
-    monitor-exit p1
+    .line 14
+    monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    throw v0
+    throw v1
 .end method

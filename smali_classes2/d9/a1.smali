@@ -1,5 +1,5 @@
 .class public Ld9/a1;
-.super Ly7/g;
+.super Lz7/g;
 .source "NewConversationVM.java"
 
 
@@ -18,7 +18,7 @@
 
     iput-boolean p2, p0, Ld9/a1;->b:Z
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -45,12 +45,12 @@
     .line 3
     iget-object v0, p0, Ld9/a1;->c:Ld9/t0;
 
-    iget-object v0, v0, Ld9/t0;->c:Lr8/b;
+    iget-object v0, v0, Ld9/t0;->c:Ls8/b;
 
     .line 4
-    iget-object v0, v0, Lr8/b;->h:Lu9/a;
+    iget-object v0, v0, Ls8/b;->h:Lu9/a;
 
-    check-cast v0, Lc8/e;
+    check-cast v0, Ld8/e;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -74,9 +74,9 @@
     invoke-direct {v2, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     .line 8
-    new-instance v1, Lc8/d;
+    new-instance v1, Ld8/d;
 
-    invoke-direct {v1, v0}, Lc8/d;-><init>(Lc8/e;)V
+    invoke-direct {v1, v0}, Ld8/d;-><init>(Ld8/e;)V
 
     invoke-virtual {v2, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

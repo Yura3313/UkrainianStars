@@ -4,264 +4,304 @@
 
 
 # instance fields
-.field public a:J
+.field public final a:J
 
-.field public b:J
-
-.field public c:I
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "lock"
+.field public final b:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
     .end annotation
 .end field
 
-.field public d:I
-
-.field public e:J
-
-.field public final f:Ljava/lang/Object;
-
-.field public final g:Ljava/lang/String;
-
-.field public final h:Lj3/qa;
-
-.field public i:I
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "lock"
+.field public final c:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
     .end annotation
 .end field
 
-.field public j:I
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "lock"
+.field public final d:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Lj3/i6;",
+            ">;"
+        }
     .end annotation
 .end field
+
+.field public e:Ljava/lang/String;
+
+.field public f:Ljava/lang/String;
+
+.field public g:Lorg/json/JSONObject;
+
+.field public h:Z
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lj3/qa;)V
-    .locals 2
+.method public constructor <init>(Ljava/lang/String;J)V
+    .locals 4
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-wide/16 v0, -0x1
-
     .line 2
-    iput-wide v0, p0, Lj3/ja;->a:J
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lj3/ja;->b:Ljava/util/List;
 
     .line 3
-    iput-wide v0, p0, Lj3/ja;->b:J
+    new-instance v0, Ljava/util/ArrayList;
 
-    const/4 v0, -0x1
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lj3/ja;->c:Ljava/util/List;
 
     .line 4
-    iput v0, p0, Lj3/ja;->c:I
+    new-instance v0, Ljava/util/HashMap;
 
-    .line 5
-    iput v0, p0, Lj3/ja;->d:I
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    const-wide/16 v0, 0x0
-
-    .line 6
-    iput-wide v0, p0, Lj3/ja;->e:J
-
-    .line 7
-    new-instance v0, Ljava/lang/Object;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    iput-object v0, p0, Lj3/ja;->f:Ljava/lang/Object;
+    iput-object v0, p0, Lj3/ja;->d:Ljava/util/Map;
 
     const/4 v0, 0x0
 
-    .line 8
-    iput v0, p0, Lj3/ja;->i:I
-
-    .line 9
-    iput v0, p0, Lj3/ja;->j:I
-
-    .line 10
-    iput-object p1, p0, Lj3/ja;->g:Ljava/lang/String;
-
-    .line 11
-    iput-object p2, p0, Lj3/ja;->h:Lj3/qa;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Lcom/google/android/gms/internal/ads/zzvc;J)V
-    .locals 10
-
-    .line 1
-    iget-object v0, p0, Lj3/ja;->f:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    .line 2
-    :try_start_0
-    iget-object v1, p0, Lj3/ja;->h:Lj3/qa;
-
-    invoke-interface {v1}, Lj3/qa;->r()J
-
-    move-result-wide v1
-
-    .line 3
-    sget-object v3, Lh1/o;->B:Lh1/o;
-
-    iget-object v3, v3, Lh1/o;->j:Lk2/c;
-
-    .line 4
-    invoke-interface {v3}, Lk2/c;->a()J
-
-    move-result-wide v3
-
     .line 5
-    iget-wide v5, p0, Lj3/ja;->b:J
-
-    const-wide/16 v7, -0x1
-
-    cmp-long v9, v5, v7
-
-    if-nez v9, :cond_1
-
-    sub-long v1, v3, v1
+    iput-boolean v0, p0, Lj3/ja;->h:Z
 
     .line 6
-    sget-object v5, Lj3/n;->r0:Lj3/f;
+    iput-object p1, p0, Lj3/ja;->f:Ljava/lang/String;
 
     .line 7
-    sget-object v6, Lj3/w41;->j:Lj3/w41;
-
-    iget-object v6, v6, Lj3/w41;->f:Lj3/l;
+    iput-wide p2, p0, Lj3/ja;->a:J
 
     .line 8
-    invoke-virtual {v6, v5}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result-object v5
+    move-result p2
+
+    if-nez p2, :cond_6
 
     .line 9
-    check-cast v5, Ljava/lang/Long;
+    :try_start_0
+    new-instance p2, Lorg/json/JSONObject;
 
-    invoke-virtual {v5}, Ljava/lang/Long;->longValue()J
+    invoke-direct {p2, p1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    move-result-wide v5
+    iput-object p2, p0, Lj3/ja;->g:Lorg/json/JSONObject;
 
-    cmp-long v7, v1, v5
+    const-string p1, "status"
 
-    if-lez v7, :cond_0
-
-    const/4 v1, -0x1
+    const/4 p3, -0x1
 
     .line 10
-    iput v1, p0, Lj3/ja;->d:I
-
-    goto :goto_0
-
-    .line 11
-    :cond_0
-    iget-object v1, p0, Lj3/ja;->h:Lj3/qa;
-
-    invoke-interface {v1}, Lj3/qa;->p()I
-
-    move-result v1
-
-    .line 12
-    iput v1, p0, Lj3/ja;->d:I
-
-    .line 13
-    :goto_0
-    iput-wide p2, p0, Lj3/ja;->b:J
-
-    .line 14
-    iput-wide p2, p0, Lj3/ja;->a:J
-
-    goto :goto_1
-
-    .line 15
-    :cond_1
-    iput-wide p2, p0, Lj3/ja;->a:J
-
-    :goto_1
-    const/4 p2, 0x1
-
-    if-eqz p1, :cond_2
-
-    .line 16
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzvc;->h:Landroid/os/Bundle;
-
-    if-eqz p1, :cond_2
-
-    const-string p3, "gw"
-
-    const/4 v1, 0x2
-
-    .line 17
-    invoke-virtual {p1, p3, v1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {p2, p1, p3}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
 
     move-result p1
 
-    if-ne p1, p2, :cond_2
+    const/4 p2, 0x1
 
-    .line 18
-    monitor-exit v0
+    if-eq p1, p2, :cond_0
+
+    .line 11
+    iput-boolean v0, p0, Lj3/ja;->h:Z
 
     return-void
 
+    .line 12
+    :cond_0
+    iput-boolean p2, p0, Lj3/ja;->h:Z
+
+    .line 13
+    iget-object p1, p0, Lj3/ja;->g:Lorg/json/JSONObject;
+
+    const-string p2, "app_id"
+
+    invoke-virtual {p1, p2}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lj3/ja;->e:Ljava/lang/String;
+
+    .line 14
+    iget-object p1, p0, Lj3/ja;->g:Lorg/json/JSONObject;
+
+    const-string p2, "ad_unit_id_settings"
+
+    invoke-virtual {p1, p2}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_4
+
+    const/4 p2, 0x0
+
+    .line 15
+    :goto_0
+    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
+
+    move-result p3
+
+    if-ge p2, p3, :cond_4
+
+    .line 16
+    invoke-virtual {p1, p2}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object p3
+
+    const-string v1, "format"
+
+    .line 17
+    invoke-virtual {p3, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "ad_unit_id"
+
+    .line 18
+    invoke-virtual {p3, v2}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
     .line 19
-    :cond_2
-    iget p1, p0, Lj3/ja;->c:I
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    add-int/2addr p1, p2
+    move-result v3
 
-    iput p1, p0, Lj3/ja;->c:I
+    if-nez v3, :cond_3
+
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    const-string v3, "interstitial"
 
     .line 20
-    iget p1, p0, Lj3/ja;->d:I
+    invoke-virtual {v3, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
-    add-int/2addr p1, p2
+    move-result v3
 
-    iput p1, p0, Lj3/ja;->d:I
-
-    if-nez p1, :cond_3
-
-    const-wide/16 p1, 0x0
+    if-eqz v3, :cond_2
 
     .line 21
-    iput-wide p1, p0, Lj3/ja;->e:J
+    iget-object p3, p0, Lj3/ja;->c:Ljava/util/List;
+
+    invoke-interface {p3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_1
+
+    :cond_2
+    const-string v3, "rewarded"
 
     .line 22
-    iget-object p1, p0, Lj3/ja;->h:Lj3/qa;
+    invoke-virtual {v3, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
-    invoke-interface {p1, v3, v4}, Lj3/qa;->o(J)V
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    const-string v1, "mediation_config"
+
+    .line 23
+    invoke-virtual {p3, v1}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object p3
+
+    if-eqz p3, :cond_3
+
+    .line 24
+    new-instance v1, Lj3/i6;
+
+    invoke-direct {v1, p3}, Lj3/i6;-><init>(Lorg/json/JSONObject;)V
+
+    .line 25
+    iget-object p3, p0, Lj3/ja;->d:Ljava/util/Map;
+
+    invoke-interface {p3, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_3
+    :goto_1
+    add-int/lit8 p2, p2, 0x1
+
+    goto :goto_0
+
+    .line 26
+    :cond_4
+    iget-object p1, p0, Lj3/ja;->g:Lorg/json/JSONObject;
+
+    const-string p2, "persistable_banner_ad_unit_ids"
+
+    .line 27
+    invoke-virtual {p1, p2}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_5
+
+    .line 28
+    :goto_2
+    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
+
+    move-result p2
+
+    if-ge v0, p2, :cond_5
+
+    .line 29
+    invoke-virtual {p1, v0}, Lorg/json/JSONArray;->optString(I)Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 30
+    iget-object p3, p0, Lj3/ja;->b:Ljava/util/List;
+
+    invoke-interface {p3, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    add-int/lit8 v0, v0, 0x1
 
     goto :goto_2
 
-    .line 23
-    :cond_3
-    iget-object p1, p0, Lj3/ja;->h:Lj3/qa;
-
-    invoke-interface {p1}, Lj3/qa;->n()J
-
-    move-result-wide p1
-
-    sub-long/2addr v3, p1
-
-    iput-wide v3, p0, Lj3/ja;->e:J
-
-    .line 24
-    :goto_2
-    monitor-exit v0
-
+    :cond_5
     return-void
 
-    :catchall_0
+    :catch_0
     move-exception p1
 
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .line 31
+    sget-object p2, Lh1/o;->B:Lh1/o;
 
-    throw p1
+    iget-object p2, p2, Lh1/o;->g:Lj3/ia;
+
+    .line 32
+    iget-object p3, p2, Lj3/ia;->e:Landroid/content/Context;
+
+    iget-object p2, p2, Lj3/ia;->f:Lcom/google/android/gms/internal/ads/zzbbg;
+
+    invoke-static {p3, p2}, Lj3/w7;->c(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzbbg;)Lj3/a8;
+
+    move-result-object p2
+
+    const-string p3, "AppSettings.parseAppSettingsJson"
+
+    .line 33
+    invoke-interface {p2, p1, p3}, Lj3/a8;->a(Ljava/lang/Throwable;Ljava/lang/String;)V
+
+    :cond_6
+    return-void
 .end method

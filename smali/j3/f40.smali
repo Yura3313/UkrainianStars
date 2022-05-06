@@ -2,49 +2,81 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lj3/rv0;
+
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<AdapterT:",
         "Ljava/lang/Object;",
-        "ListenerT::Lj3/lr;",
-        ">",
-        "Ljava/lang/Object;"
+        "Lj3/rv0<",
+        "Lcom/google/android/gms/internal/ads/k0;",
+        ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:Ljava/lang/Object;
+.field public final a:Lj3/vv0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "TAdapterT;"
+            "Lj3/vv0<",
+            "Landroid/content/Context;",
+            ">;"
         }
     .end annotation
 .end field
 
-.field public final c:Lj3/lr;
+.field public final b:Lj3/vv0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "T",
-            "ListenerT;"
+            "Lj3/vv0<",
+            "Lj3/mq;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/c40;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final d:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/a40;",
+            ">;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;Lj3/lr;Ljava/lang/String;)V
+.method public constructor <init>(Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(TAdapterT;T",
-            "ListenerT;",
-            "Ljava/lang/String;",
-            ")V"
+            "(",
+            "Lj3/vv0<",
+            "Landroid/content/Context;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/mq;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/c40;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/a40;",
+            ">;)V"
         }
     .end annotation
 
@@ -52,13 +84,62 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj3/f40;->b:Ljava/lang/Object;
+    iput-object p1, p0, Lj3/f40;->a:Lj3/vv0;
 
     .line 3
-    iput-object p2, p0, Lj3/f40;->c:Lj3/lr;
+    iput-object p2, p0, Lj3/f40;->b:Lj3/vv0;
 
     .line 4
-    iput-object p3, p0, Lj3/f40;->a:Ljava/lang/String;
+    iput-object p3, p0, Lj3/f40;->c:Lj3/vv0;
+
+    .line 5
+    iput-object p4, p0, Lj3/f40;->d:Lj3/vv0;
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lj3/f40;->a:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/content/Context;
+
+    iget-object v1, p0, Lj3/f40;->b:Lj3/vv0;
+
+    invoke-interface {v1}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lj3/mq;
+
+    iget-object v2, p0, Lj3/f40;->c:Lj3/vv0;
+
+    invoke-interface {v2}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lj3/c40;
+
+    iget-object v3, p0, Lj3/f40;->d:Lj3/vv0;
+
+    invoke-interface {v3}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lj3/a40;
+
+    .line 2
+    new-instance v4, Lcom/google/android/gms/internal/ads/k0;
+
+    invoke-direct {v4, v0, v1, v2, v3}, Lcom/google/android/gms/internal/ads/k0;-><init>(Landroid/content/Context;Lj3/mq;Lj3/c40;Lj3/a40;)V
+
+    return-object v4
 .end method

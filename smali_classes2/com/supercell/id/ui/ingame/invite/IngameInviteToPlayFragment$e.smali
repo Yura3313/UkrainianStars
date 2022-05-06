@@ -21,14 +21,14 @@
         "Lle/j;",
         "Lke/l<",
         "Ljava/lang/Exception;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$e;
+.field public static final g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$e;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$e;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$e;->a:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$e;
+    sput-object v0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$e;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$e;
 
     return-void
 .end method
@@ -64,7 +64,7 @@
 
     if-eqz p1, :cond_0
 
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -72,7 +72,7 @@
     const-string p1, "it"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

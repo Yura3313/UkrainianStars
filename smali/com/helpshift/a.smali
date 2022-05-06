@@ -182,7 +182,7 @@
     if-eqz p4, :cond_a
 
     .line 21
-    invoke-static {p1}, Lc2/n0;->c(Ljava/lang/CharSequence;)Z
+    invoke-static {p1}, Lp5/h;->i(Ljava/lang/CharSequence;)Z
 
     move-result p4
 
@@ -194,7 +194,7 @@
 
     .line 22
     :cond_4
-    invoke-static {p2}, Lc2/n0;->c(Ljava/lang/CharSequence;)Z
+    invoke-static {p2}, Lp5/h;->i(Ljava/lang/CharSequence;)Z
 
     move-result p4
 
@@ -211,7 +211,7 @@
 
     .line 23
     :goto_1
-    invoke-static {p3}, Lc2/n0;->c(Ljava/lang/CharSequence;)Z
+    invoke-static {p3}, Lp5/h;->i(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
@@ -223,7 +223,7 @@
 
     .line 24
     :cond_6
-    invoke-static {p1}, Lc2/n0;->c(Ljava/lang/CharSequence;)Z
+    invoke-static {p1}, Lp5/h;->i(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
@@ -234,7 +234,7 @@
     if-eqz v0, :cond_9
 
     .line 25
-    invoke-static {p4}, Landroidx/savedstate/d;->j(Ljava/lang/String;)Z
+    invoke-static {p4}, Lp5/c0;->h(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -243,14 +243,14 @@
     if-eqz v0, :cond_8
 
     .line 26
-    invoke-static {p3}, Lbe/a;->f(Ljava/lang/String;)Z
+    invoke-static {p3}, Lcom/helpshift/util/y;->j(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_7
 
     .line 27
-    sget-object v8, Llb/b;->a:Llb/a;
+    sget-object v8, Ljb/b;->a:Ljb/a;
 
     .line 28
     new-instance v9, Lcom/helpshift/b;
@@ -269,9 +269,9 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/helpshift/b;-><init>(Landroid/app/Application;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
-    check-cast v8, Llb/c;
+    check-cast v8, Ljb/c;
 
-    invoke-virtual {v8, v9}, Llb/c;->b(Ljava/lang/Runnable;)V
+    invoke-virtual {v8, v9}, Ljb/c;->b(Ljava/lang/Runnable;)V
 
     .line 29
     new-instance v9, Lcom/helpshift/c;
@@ -291,12 +291,12 @@
     invoke-direct/range {v0 .. v6}, Lcom/helpshift/c;-><init>(Landroid/app/Application;Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 30
-    iget-object p0, v8, Llb/c;->c:Landroid/os/Handler;
+    iget-object p0, v8, Ljb/c;->c:Landroid/os/Handler;
 
     invoke-virtual {p0, v9}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     .line 31
-    sget-object p0, Lcom/helpshift/util/r;->f:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object p0, Lcom/helpshift/util/q;->f:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 p1, 0x0
 

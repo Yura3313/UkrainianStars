@@ -3,15 +3,15 @@
 
 
 # instance fields
-.field public final a:Ljava/util/concurrent/ExecutorService;
+.field public final g:Ljava/util/concurrent/ExecutorService;
 
-.field public b:Landroid/os/Binder;
+.field public h:Landroid/os/Binder;
 
-.field public final h:Ljava/lang/Object;
-
-.field public i:I
+.field public final i:Ljava/lang/Object;
 
 .field public j:I
+
+.field public k:I
 
 
 # direct methods
@@ -85,19 +85,19 @@
     move-result-object v0
 
     .line 7
-    iput-object v0, p0, Lcom/google/firebase/iid/zzb;->a:Ljava/util/concurrent/ExecutorService;
+    iput-object v0, p0, Lcom/google/firebase/iid/zzb;->g:Ljava/util/concurrent/ExecutorService;
 
     .line 8
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/google/firebase/iid/zzb;->h:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/google/firebase/iid/zzb;->i:Ljava/lang/Object;
 
     const/4 v0, 0x0
 
     .line 9
-    iput v0, p0, Lcom/google/firebase/iid/zzb;->j:I
+    iput v0, p0, Lcom/google/firebase/iid/zzb;->k:I
 
     return-void
 .end method
@@ -114,22 +114,22 @@
 
     .line 2
     :cond_0
-    iget-object p1, p0, Lcom/google/firebase/iid/zzb;->h:Ljava/lang/Object;
+    iget-object p1, p0, Lcom/google/firebase/iid/zzb;->i:Ljava/lang/Object;
 
     monitor-enter p1
 
     .line 3
     :try_start_0
-    iget v0, p0, Lcom/google/firebase/iid/zzb;->j:I
+    iget v0, p0, Lcom/google/firebase/iid/zzb;->k:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p0, Lcom/google/firebase/iid/zzb;->j:I
+    iput v0, p0, Lcom/google/firebase/iid/zzb;->k:I
 
     if-nez v0, :cond_1
 
     .line 4
-    iget v0, p0, Lcom/google/firebase/iid/zzb;->i:I
+    iget v0, p0, Lcom/google/firebase/iid/zzb;->j:I
 
     .line 5
     invoke-virtual {p0, v0}, Landroid/app/Service;->stopSelfResult(I)Z
@@ -172,20 +172,20 @@
     move-result p1
 
     .line 2
-    iget-object p1, p0, Lcom/google/firebase/iid/zzb;->b:Landroid/os/Binder;
+    iget-object p1, p0, Lcom/google/firebase/iid/zzb;->h:Landroid/os/Binder;
 
     if-nez p1, :cond_0
 
     .line 3
-    new-instance p1, Lw5/y;
+    new-instance p1, Lw5/w;
 
-    invoke-direct {p1, p0}, Lw5/y;-><init>(Lcom/google/firebase/iid/zzb;)V
+    invoke-direct {p1, p0}, Lw5/w;-><init>(Lcom/google/firebase/iid/zzb;)V
 
-    iput-object p1, p0, Lcom/google/firebase/iid/zzb;->b:Landroid/os/Binder;
+    iput-object p1, p0, Lcom/google/firebase/iid/zzb;->h:Landroid/os/Binder;
 
     .line 4
     :cond_0
-    iget-object p1, p0, Lcom/google/firebase/iid/zzb;->b:Landroid/os/Binder;
+    iget-object p1, p0, Lcom/google/firebase/iid/zzb;->h:Landroid/os/Binder;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -205,20 +205,20 @@
     .locals 1
 
     .line 1
-    iget-object p2, p0, Lcom/google/firebase/iid/zzb;->h:Ljava/lang/Object;
+    iget-object p2, p0, Lcom/google/firebase/iid/zzb;->i:Ljava/lang/Object;
 
     monitor-enter p2
 
     .line 2
     :try_start_0
-    iput p3, p0, Lcom/google/firebase/iid/zzb;->i:I
+    iput p3, p0, Lcom/google/firebase/iid/zzb;->j:I
 
     .line 3
-    iget p3, p0, Lcom/google/firebase/iid/zzb;->j:I
+    iget p3, p0, Lcom/google/firebase/iid/zzb;->k:I
 
     add-int/lit8 p3, p3, 0x1
 
-    iput p3, p0, Lcom/google/firebase/iid/zzb;->j:I
+    iput p3, p0, Lcom/google/firebase/iid/zzb;->k:I
 
     .line 4
     monitor-exit p2
@@ -254,11 +254,11 @@
 
     .line 9
     :cond_1
-    iget-object p3, p0, Lcom/google/firebase/iid/zzb;->a:Ljava/util/concurrent/ExecutorService;
+    iget-object p3, p0, Lcom/google/firebase/iid/zzb;->g:Ljava/util/concurrent/ExecutorService;
 
-    new-instance v0, Lw5/v;
+    new-instance v0, Lw5/u;
 
-    invoke-direct {v0, p0, p2, p1}, Lw5/v;-><init>(Lcom/google/firebase/iid/zzb;Landroid/content/Intent;Landroid/content/Intent;)V
+    invoke-direct {v0, p0, p2, p1}, Lw5/u;-><init>(Lcom/google/firebase/iid/zzb;Landroid/content/Intent;Landroid/content/Intent;)V
 
     invoke-interface {p3, v0}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
 

@@ -162,6 +162,7 @@
 
     invoke-virtual {v2, v1}, Lio/sentry/SentryOptions;->setEnableNdk(Z)V
 
+    .line 10
     throw v0
 
     :cond_0

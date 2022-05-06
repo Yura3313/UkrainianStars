@@ -20,14 +20,14 @@
 
 
 # virtual methods
-.method public abstract E()Ljava/lang/String;
+.method public abstract F()Ljava/lang/String;
 .end method
 
-.method public abstract V()Ljava/lang/String;
+.method public abstract W()Ljava/lang/String;
 .end method
 
-.method public abstract a0()I
+.method public abstract c0()I
 .end method
 
-.method public abstract c0()Ljava/lang/String;
+.method public abstract d0()Ljava/lang/String;
 .end method

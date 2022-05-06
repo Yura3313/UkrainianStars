@@ -16,9 +16,9 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final b:I
+.field public final h:I
 
 
 # direct methods
@@ -26,9 +26,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lj3/z8;
+    new-instance v0, Lj3/b9;
 
-    invoke-direct {v0}, Lj3/z8;-><init>()V
+    invoke-direct {v0}, Lj3/b9;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzaue;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -42,15 +42,15 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzaue;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzaue;->g:Ljava/lang/String;
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/internal/ads/zzaue;->b:I
+    iput p2, p0, Lcom/google/android/gms/internal/ads/zzaue;->h:I
 
     return-void
 .end method
 
-.method public static x2(Lorg/json/JSONArray;)Lcom/google/android/gms/internal/ads/zzaue;
+.method public static z2(Lorg/json/JSONArray;)Lcom/google/android/gms/internal/ads/zzaue;
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -129,9 +129,9 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzaue;
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzaue;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzaue;->g:Ljava/lang/String;
 
-    iget-object v2, p1, Lcom/google/android/gms/internal/ads/zzaue;->a:Ljava/lang/String;
+    iget-object v2, p1, Lcom/google/android/gms/internal/ads/zzaue;->g:Ljava/lang/String;
 
     invoke-static {v1, v2}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -139,14 +139,14 @@
 
     if-eqz v1, :cond_1
 
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzaue;->b:I
+    iget v1, p0, Lcom/google/android/gms/internal/ads/zzaue;->h:I
 
     .line 4
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
 
-    iget p1, p1, Lcom/google/android/gms/internal/ads/zzaue;->b:I
+    iget p1, p1, Lcom/google/android/gms/internal/ads/zzaue;->h:I
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -175,13 +175,13 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzaue;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzaue;->g:Ljava/lang/String;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzaue;->b:I
+    iget v1, p0, Lcom/google/android/gms/internal/ads/zzaue;->h:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -212,7 +212,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzaue;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzaue;->g:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -221,7 +221,7 @@
     const/4 v0, 0x3
 
     .line 3
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzaue;->b:I
+    iget v1, p0, Lcom/google/android/gms/internal/ads/zzaue;->h:I
 
     const/4 v2, 0x4
 

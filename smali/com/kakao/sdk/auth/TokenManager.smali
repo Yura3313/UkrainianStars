@@ -21,7 +21,7 @@
 
 .field public static final atKey:Ljava/lang/String; = "com.kakao.token.AccessToken"
 
-.field private static final instance$delegate:Lbe/c;
+.field private static final instance$delegate:Lae/c;
 
 .field public static final rtExpiresAtKey:Ljava/lang/String; = "com.kakao.token.RefreshToken.ExpiresAt"
 
@@ -57,11 +57,11 @@
     .line 1
     sget-object v0, Lcom/kakao/sdk/auth/TokenManager$Companion$instance$2;->INSTANCE:Lcom/kakao/sdk/auth/TokenManager$Companion$instance$2;
 
-    invoke-static {v0}, Lbe/e;->f(Lke/a;)Lbe/c;
+    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
 
     move-result-object v0
 
-    sput-object v0, Lcom/kakao/sdk/auth/TokenManager;->instance$delegate:Lbe/c;
+    sput-object v0, Lcom/kakao/sdk/auth/TokenManager;->instance$delegate:Lae/c;
 
     return-void
 .end method
@@ -162,14 +162,14 @@
     const-string p1, "encryptor"
 
     .line 11
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_3
     const-string p1, "appCache"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -218,11 +218,11 @@
     return-void
 .end method
 
-.method public static final synthetic access$getInstance$cp()Lbe/c;
+.method public static final synthetic access$getInstance$cp()Lae/c;
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/kakao/sdk/auth/TokenManager;->instance$delegate:Lbe/c;
+    sget-object v0, Lcom/kakao/sdk/auth/TokenManager;->instance$delegate:Lae/c;
 
     return-object v0
 .end method
@@ -308,7 +308,7 @@
 
     move-result-object v9
 
-    invoke-static {v9, v12}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v9, v12}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v9}, Lcom/google/gson/JsonElement;->getAsString()Ljava/lang/String;
 
@@ -362,7 +362,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v4}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Lcom/google/gson/JsonElement;->getAsString()Ljava/lang/String;
 
@@ -371,7 +371,7 @@
     if-eqz v0, :cond_2
 
     .line 8
-    invoke-static {v9, v2}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v9, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v14
 
@@ -451,7 +451,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v4}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Lcom/google/gson/JsonElement;->getAsString()Ljava/lang/String;
 
@@ -460,7 +460,7 @@
     if-eqz v0, :cond_4
 
     .line 13
-    invoke-static {v9, v2}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v9, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -540,7 +540,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v12}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v12}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Lcom/google/gson/JsonElement;->getAsLong()J
 
@@ -613,7 +613,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v12}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v12}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Lcom/google/gson/JsonElement;->getAsLong()J
 
@@ -885,7 +885,7 @@
     const-string p1, "token"
 
     .line 11
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

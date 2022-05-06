@@ -1,109 +1,78 @@
 .class public final Lj3/hg;
-.super Ljava/lang/Object;
+.super Lj3/dm;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Ljava/lang/Runnable;
 
-
-# instance fields
-.field public final synthetic a:Ljava/lang/String;
-
-.field public final synthetic b:Ljava/lang/String;
-
-.field public final synthetic h:I
-
-.field public final synthetic i:I
-
-.field public final synthetic j:Lj3/ig;
+# static fields
+.field public static final c:Lj3/hg;
 
 
 # direct methods
-.method public constructor <init>(Lj3/ig;Ljava/lang/String;Ljava/lang/String;II)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lj3/hg;
+
+    invoke-direct {v0}, Lj3/hg;-><init>()V
+
+    sput-object v0, Lj3/hg;->c:Lj3/hg;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lj3/hg;->j:Lj3/ig;
-
-    iput-object p2, p0, Lj3/hg;->a:Ljava/lang/String;
-
-    iput-object p3, p0, Lj3/hg;->b:Ljava/lang/String;
-
-    iput p4, p0, Lj3/hg;->h:I
-
-    iput p5, p0, Lj3/hg;->i:I
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lj3/dm;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 3
+.method public final b(Ljava/lang/String;[BLjava/lang/String;)Lj3/eo;
+    .locals 0
+
+    const-string p2, "moov"
 
     .line 1
-    new-instance v0, Ljava/util/HashMap;
+    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    move-result p2
 
-    const-string v1, "event"
-
-    const-string v2, "precacheProgress"
+    if-eqz p2, :cond_0
 
     .line 2
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    new-instance p1, Lj3/sp;
+
+    invoke-direct {p1}, Lj3/sp;-><init>()V
+
+    return-object p1
+
+    :cond_0
+    const-string p2, "mvhd"
 
     .line 3
-    iget-object v1, p0, Lj3/hg;->a:Ljava/lang/String;
+    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    const-string v2, "src"
+    move-result p2
 
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    if-eqz p2, :cond_1
 
     .line 4
-    iget-object v1, p0, Lj3/hg;->b:Ljava/lang/String;
+    new-instance p1, Lj3/or;
 
-    const-string v2, "cachedSrc"
+    invoke-direct {p1}, Lj3/or;-><init>()V
 
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    return-object p1
 
     .line 5
-    iget v1, p0, Lj3/hg;->h:I
+    :cond_1
+    new-instance p2, Lj3/zq;
 
-    invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+    invoke-direct {p2, p1}, Lj3/zq;-><init>(Ljava/lang/String;)V
 
-    move-result-object v1
-
-    const-string v2, "bytesLoaded"
-
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 6
-    iget v1, p0, Lj3/hg;->i:I
-
-    invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "totalBytes"
-
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string v1, "cacheReady"
-
-    const-string v2, "0"
-
-    .line 7
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 8
-    iget-object v1, p0, Lj3/hg;->j:Lj3/ig;
-
-    const-string v2, "onPrecacheEvent"
-
-    invoke-static {v1, v2, v0}, Lj3/ig;->h(Lj3/ig;Ljava/lang/String;Ljava/util/Map;)V
-
-    return-void
+    return-object p2
 .end method

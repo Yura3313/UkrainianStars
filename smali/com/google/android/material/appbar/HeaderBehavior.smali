@@ -174,7 +174,7 @@
     if-gt p1, p5, :cond_0
 
     .line 2
-    invoke-static {p3, p4, p5}, La0/a;->c(III)I
+    invoke-static {p3, p4, p5}, La0/a;->b(III)I
 
     move-result p2
 
@@ -635,7 +635,7 @@
     iput-object v0, v6, Lcom/google/android/material/appbar/HeaderBehavior;->c:Ljava/lang/Runnable;
 
     .line 26
-    sget-object v4, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v4, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 27
     invoke-virtual {v2, v0}, Landroid/view/View;->postOnAnimation(Ljava/lang/Runnable;)V

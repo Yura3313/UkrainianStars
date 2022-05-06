@@ -123,9 +123,9 @@
 
     move-result-object p2
 
-    check-cast p2, Lm/g$e;
+    check-cast p2, Lm/f$e;
 
-    invoke-virtual {p2}, Lm/g$e;->iterator()Ljava/util/Iterator;
+    invoke-virtual {p2}, Lm/f$e;->iterator()Ljava/util/Iterator;
 
     move-result-object p2
 
@@ -143,7 +143,7 @@
     check-cast v0, Lr5/b;
 
     .line 4
-    invoke-virtual {v0}, Lr5/b;->f()V
+    invoke-virtual {v0}, Lr5/b;->g()V
 
     goto :goto_0
 

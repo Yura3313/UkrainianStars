@@ -3,18 +3,18 @@
 
 
 # instance fields
-.field public final synthetic b:Landroid/os/IBinder;
+.field public final synthetic h:Landroid/os/IBinder;
 
-.field public final synthetic h:Ly4/k;
+.field public final synthetic i:Ly4/k;
 
 
 # direct methods
 .method public constructor <init>(Ly4/k;Landroid/os/IBinder;)V
     .locals 0
 
-    iput-object p1, p0, Ly4/i;->h:Ly4/k;
+    iput-object p1, p0, Ly4/i;->i:Ly4/k;
 
-    iput-object p2, p0, Ly4/i;->b:Landroid/os/IBinder;
+    iput-object p2, p0, Ly4/i;->h:Landroid/os/IBinder;
 
     invoke-direct {p0}, Ly4/c;-><init>()V
 
@@ -26,7 +26,7 @@
 .method public final a()V
     .locals 6
 
-    iget-object v0, p0, Ly4/i;->h:Ly4/k;
+    iget-object v0, p0, Ly4/i;->i:Ly4/k;
 
     iget-object v0, v0, Ly4/k;->a:Ly4/l;
 
@@ -34,9 +34,9 @@
     iget-object v1, v0, Ly4/l;->g:Ly4/h;
 
     .line 2
-    iget-object v2, p0, Ly4/i;->b:Landroid/os/IBinder;
+    iget-object v2, p0, Ly4/i;->h:Landroid/os/IBinder;
 
-    invoke-interface {v1, v2}, Ly4/h;->c(Landroid/os/IBinder;)Ljava/lang/Object;
+    invoke-interface {v1, v2}, Ly4/h;->a(Landroid/os/IBinder;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -46,7 +46,7 @@
     iput-object v1, v0, Ly4/l;->k:Landroid/os/IInterface;
 
     .line 4
-    iget-object v0, p0, Ly4/i;->h:Ly4/k;
+    iget-object v0, p0, Ly4/i;->i:Ly4/k;
 
     iget-object v0, v0, Ly4/k;->a:Ly4/l;
 
@@ -93,7 +93,7 @@
 
     .line 8
     :goto_0
-    iget-object v0, p0, Ly4/i;->h:Ly4/k;
+    iget-object v0, p0, Ly4/i;->i:Ly4/k;
 
     iget-object v0, v0, Ly4/k;->a:Ly4/l;
 
@@ -126,7 +126,7 @@
     goto :goto_1
 
     :cond_0
-    iget-object v0, p0, Ly4/i;->h:Ly4/k;
+    iget-object v0, p0, Ly4/i;->i:Ly4/k;
 
     iget-object v0, v0, Ly4/k;->a:Ly4/l;
 

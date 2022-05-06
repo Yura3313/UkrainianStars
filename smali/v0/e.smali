@@ -12,13 +12,13 @@
 
 
 # static fields
-.field public static final synthetic h:I
+.field public static final synthetic i:I
 
 
 # instance fields
-.field public a:Landroid/view/ViewGroup;
+.field public g:Landroid/view/ViewGroup;
 
-.field public b:Z
+.field public h:Z
 
 
 # direct methods
@@ -38,7 +38,7 @@
     invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->setClipChildren(Z)V
 
     .line 3
-    iput-object p1, p0, Lv0/e;->a:Landroid/view/ViewGroup;
+    iput-object p1, p0, Lv0/e;->g:Landroid/view/ViewGroup;
 
     .line 4
     sget v0, Landroidx/transition/R$id;->ghost_view_holder:I
@@ -46,7 +46,7 @@
     invoke-virtual {p1, v0, p0}, Landroid/view/ViewGroup;->setTag(ILjava/lang/Object;)V
 
     .line 5
-    iget-object p1, p0, Lv0/e;->a:Landroid/view/ViewGroup;
+    iget-object p1, p0, Lv0/e;->g:Landroid/view/ViewGroup;
 
     .line 6
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getOverlay()Landroid/view/ViewGroupOverlay;
@@ -59,7 +59,7 @@
     const/4 p1, 0x1
 
     .line 8
-    iput-boolean p1, p0, Lv0/e;->b:Z
+    iput-boolean p1, p0, Lv0/e;->h:Z
 
     return-void
 .end method
@@ -104,7 +104,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lv0/e;->b:Z
+    iget-boolean v0, p0, Lv0/e;->h:Z
 
     if-eqz v0, :cond_0
 
@@ -157,7 +157,7 @@
 
     .line 4
     :cond_1
-    iget-object p1, p0, Lv0/e;->a:Landroid/view/ViewGroup;
+    iget-object p1, p0, Lv0/e;->g:Landroid/view/ViewGroup;
 
     sget v0, Landroidx/transition/R$id;->ghost_view_holder:I
 
@@ -166,7 +166,7 @@
     invoke-virtual {p1, v0, v2}, Landroid/view/ViewGroup;->setTag(ILjava/lang/Object;)V
 
     .line 5
-    iget-object p1, p0, Lv0/e;->a:Landroid/view/ViewGroup;
+    iget-object p1, p0, Lv0/e;->g:Landroid/view/ViewGroup;
 
     .line 6
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getOverlay()Landroid/view/ViewGroupOverlay;
@@ -177,7 +177,7 @@
     invoke-virtual {p1, p0}, Landroid/view/ViewGroupOverlay;->remove(Landroid/view/View;)V
 
     .line 8
-    iput-boolean v1, p0, Lv0/e;->b:Z
+    iput-boolean v1, p0, Lv0/e;->h:Z
 
     :cond_2
     return-void

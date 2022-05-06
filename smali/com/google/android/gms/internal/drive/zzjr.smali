@@ -12,13 +12,13 @@
 
 
 # static fields
-.field public static final b:Ljava/util/logging/Logger;
+.field public static final h:Ljava/util/logging/Logger;
 
-.field public static final h:Z
+.field public static final i:Z
 
 
 # instance fields
-.field public a:Lq3/v1;
+.field public g:Lq3/t1;
 
 
 # direct methods
@@ -36,13 +36,13 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/gms/internal/drive/zzjr;->b:Ljava/util/logging/Logger;
+    sput-object v0, Lcom/google/android/gms/internal/drive/zzjr;->h:Ljava/util/logging/Logger;
 
     .line 2
-    sget-boolean v0, Lq3/o4;->f:Z
+    sget-boolean v0, Lq3/l4;->f:Z
 
     .line 3
-    sput-boolean v0, Lcom/google/android/gms/internal/drive/zzjr;->h:Z
+    sput-boolean v0, Lcom/google/android/gms/internal/drive/zzjr;->i:Z
 
     return-void
 .end method
@@ -56,7 +56,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/helpshift/util/s;)V
+.method public constructor <init>(Lcom/google/android/gms/ads/i;)V
     .locals 0
 
     .line 2
@@ -65,7 +65,23 @@
     return-void
 .end method
 
-.method public static A0(Lq3/q1;)I
+.method public static A2(J)J
+    .locals 3
+
+    const/4 v0, 0x1
+
+    shl-long v0, p0, v0
+
+    const/16 v2, 0x3f
+
+    shr-long/2addr p0, v2
+
+    xor-long/2addr p0, v0
+
+    return-wide p0
+.end method
+
+.method public static B0(Lq3/q1;)I
     .locals 1
 
     .line 1
@@ -74,7 +90,7 @@
     move-result p0
 
     .line 2
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->i0(I)I
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->b0(I)I
 
     move-result v0
 
@@ -83,7 +99,46 @@
     return v0
 .end method
 
-.method public static D(Lq3/i3;Lq3/w3;)I
+.method public static B1(IJ)I
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->X(I)I
+
+    move-result p0
+
+    invoke-static {p1, p2}, Lcom/google/android/gms/internal/drive/zzjr;->y2(J)I
+
+    move-result p1
+
+    add-int/2addr p1, p0
+
+    return p1
+.end method
+
+.method public static D1(IJ)I
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->X(I)I
+
+    move-result p0
+
+    .line 2
+    invoke-static {p1, p2}, Lcom/google/android/gms/internal/drive/zzjr;->A2(J)J
+
+    move-result-wide p1
+
+    invoke-static {p1, p2}, Lcom/google/android/gms/internal/drive/zzjr;->y2(J)I
+
+    move-result p1
+
+    add-int/2addr p1, p0
+
+    return p1
+.end method
+
+.method public static E(Lq3/f3;Lq3/t3;)I
     .locals 2
 
     .line 1
@@ -99,7 +154,7 @@
     if-ne v0, v1, :cond_0
 
     .line 3
-    invoke-interface {p1, p0}, Lq3/w3;->d(Ljava/lang/Object;)I
+    invoke-interface {p1, p0}, Lq3/t3;->e(Ljava/lang/Object;)I
 
     move-result v0
 
@@ -108,7 +163,7 @@
 
     .line 5
     :cond_0
-    invoke-static {v0}, Lcom/google/android/gms/internal/drive/zzjr;->i0(I)I
+    invoke-static {v0}, Lcom/google/android/gms/internal/drive/zzjr;->b0(I)I
 
     move-result p0
 
@@ -117,50 +172,11 @@
     return p0
 .end method
 
-.method public static D1(IJ)I
+.method public static H1(I)I
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->W(I)I
-
-    move-result p0
-
-    invoke-static {p1, p2}, Lcom/google/android/gms/internal/drive/zzjr;->x2(J)I
-
-    move-result p1
-
-    add-int/2addr p1, p0
-
-    return p1
-.end method
-
-.method public static E1(IJ)I
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->W(I)I
-
-    move-result p0
-
-    .line 2
-    invoke-static {p1, p2}, Lcom/google/android/gms/internal/drive/zzjr;->z2(J)J
-
-    move-result-wide p1
-
-    invoke-static {p1, p2}, Lcom/google/android/gms/internal/drive/zzjr;->x2(J)I
-
-    move-result p1
-
-    add-int/2addr p1, p0
-
-    return p1
-.end method
-
-.method public static M0(I)I
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->W(I)I
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->X(I)I
 
     move-result p0
 
@@ -169,28 +185,15 @@
     return p0
 .end method
 
-.method public static M1(I)I
+.method public static L1(II)I
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->W(I)I
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->X(I)I
 
     move-result p0
 
-    add-int/lit8 p0, p0, 0x8
-
-    return p0
-.end method
-
-.method public static O1(II)I
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->W(I)I
-
-    move-result p0
-
-    invoke-static {p1}, Lcom/google/android/gms/internal/drive/zzjr;->Z(I)I
+    invoke-static {p1}, Lcom/google/android/gms/internal/drive/zzjr;->Y(I)I
 
     move-result p1
 
@@ -199,11 +202,11 @@
     return p1
 .end method
 
-.method public static P1(I)I
+.method public static N0(I)I
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->W(I)I
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->X(I)I
 
     move-result p0
 
@@ -212,11 +215,11 @@
     return p0
 .end method
 
-.method public static Q0(I)I
+.method public static P0(I)I
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->W(I)I
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->X(I)I
 
     move-result p0
 
@@ -225,15 +228,28 @@
     return p0
 .end method
 
-.method public static Q1(II)I
+.method public static P1(I)I
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->W(I)I
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->X(I)I
 
     move-result p0
 
-    invoke-static {p1}, Lcom/google/android/gms/internal/drive/zzjr;->i0(I)I
+    add-int/lit8 p0, p0, 0x8
+
+    return p0
+.end method
+
+.method public static R1(II)I
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->X(I)I
+
+    move-result p0
+
+    invoke-static {p1}, Lcom/google/android/gms/internal/drive/zzjr;->b0(I)I
 
     move-result p1
 
@@ -246,16 +262,16 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->W(I)I
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->X(I)I
 
     move-result p0
 
     .line 2
-    invoke-static {p1}, Lcom/google/android/gms/internal/drive/zzjr;->q0(I)I
+    invoke-static {p1}, Lcom/google/android/gms/internal/drive/zzjr;->n0(I)I
 
     move-result p1
 
-    invoke-static {p1}, Lcom/google/android/gms/internal/drive/zzjr;->i0(I)I
+    invoke-static {p1}, Lcom/google/android/gms/internal/drive/zzjr;->b0(I)I
 
     move-result p1
 
@@ -264,11 +280,11 @@
     return p1
 .end method
 
-.method public static U1(I)I
+.method public static T1(I)I
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->W(I)I
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->X(I)I
 
     move-result p0
 
@@ -277,11 +293,24 @@
     return p0
 .end method
 
-.method public static V0(ILq3/q1;)I
+.method public static V1(I)I
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->X(I)I
+
+    move-result p0
+
+    add-int/lit8 p0, p0, 0x4
+
+    return p0
+.end method
+
+.method public static W0(ILq3/q1;)I
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->W(I)I
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->X(I)I
 
     move-result p0
 
@@ -291,7 +320,7 @@
     move-result p1
 
     .line 3
-    invoke-static {p1}, Lcom/google/android/gms/internal/drive/zzjr;->i0(I)I
+    invoke-static {p1}, Lcom/google/android/gms/internal/drive/zzjr;->b0(I)I
 
     move-result v0
 
@@ -302,42 +331,29 @@
     return v0
 .end method
 
-.method public static W(I)I
+.method public static X(I)I
     .locals 0
 
     shl-int/lit8 p0, p0, 0x3
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->i0(I)I
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->b0(I)I
 
     move-result p0
 
     return p0
 .end method
 
-.method public static X1(I)I
+.method public static X1(II)I
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->W(I)I
-
-    move-result p0
-
-    add-int/lit8 p0, p0, 0x4
-
-    return p0
-.end method
-
-.method public static Y1(II)I
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->W(I)I
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->X(I)I
 
     move-result p0
 
     .line 2
-    invoke-static {p1}, Lcom/google/android/gms/internal/drive/zzjr;->Z(I)I
+    invoke-static {p1}, Lcom/google/android/gms/internal/drive/zzjr;->Y(I)I
 
     move-result p1
 
@@ -346,13 +362,13 @@
     return p1
 .end method
 
-.method public static Z(I)I
+.method public static Y(I)I
     .locals 0
 
     if-ltz p0, :cond_0
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->i0(I)I
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->b0(I)I
 
     move-result p0
 
@@ -364,13 +380,13 @@
     return p0
 .end method
 
-.method public static e1(ILq3/i3;Lq3/w3;)I
+.method public static Z0(ILq3/f3;Lq3/t3;)I
     .locals 2
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->W(I)I
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->X(I)I
 
     move-result p0
 
@@ -389,7 +405,7 @@
     if-ne v0, v1, :cond_0
 
     .line 4
-    invoke-interface {p2, p1}, Lq3/w3;->d(Ljava/lang/Object;)I
+    invoke-interface {p2, p1}, Lq3/t3;->e(Ljava/lang/Object;)I
 
     move-result v0
 
@@ -402,7 +418,7 @@
     return p0
 .end method
 
-.method public static i0(I)I
+.method public static b0(I)I
     .locals 1
 
     and-int/lit8 v0, p0, -0x80
@@ -450,22 +466,22 @@
     return p0
 .end method
 
-.method public static k2(Ljava/lang/String;)I
+.method public static g2(Ljava/lang/String;)I
     .locals 1
 
     .line 1
     :try_start_0
-    invoke-static {p0}, Lq3/q4;->a(Ljava/lang/CharSequence;)I
+    invoke-static {p0}, Lq3/n4;->a(Ljava/lang/CharSequence;)I
 
     move-result p0
     :try_end_0
-    .catch Lq3/s4; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lq3/p4; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
     .line 2
     :catch_0
-    sget-object v0, Lq3/l2;->a:Ljava/nio/charset/Charset;
+    sget-object v0, Lq3/i2;->a:Ljava/nio/charset/Charset;
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
 
@@ -476,7 +492,7 @@
 
     .line 4
     :goto_0
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->i0(I)I
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->b0(I)I
 
     move-result v0
 
@@ -485,22 +501,22 @@
     return v0
 .end method
 
-.method public static m0(I)I
+.method public static k0(I)I
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->q0(I)I
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->n0(I)I
 
     move-result p0
 
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->i0(I)I
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->b0(I)I
 
     move-result p0
 
     return p0
 .end method
 
-.method public static q0(I)I
+.method public static n0(I)I
     .locals 1
 
     shl-int/lit8 v0, p0, 0x1
@@ -512,11 +528,11 @@
     return p0
 .end method
 
-.method public static u0(I)I
+.method public static t0(I)I
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->W(I)I
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->X(I)I
 
     move-result p0
 
@@ -525,7 +541,42 @@
     return p0
 .end method
 
-.method public static x2(J)I
+.method public static w0(ILjava/lang/String;)I
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->X(I)I
+
+    move-result p0
+
+    invoke-static {p1}, Lcom/google/android/gms/internal/drive/zzjr;->g2(Ljava/lang/String;)I
+
+    move-result p1
+
+    add-int/2addr p1, p0
+
+    return p1
+.end method
+
+.method public static y1(IJ)I
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->X(I)I
+
+    move-result p0
+
+    .line 2
+    invoke-static {p1, p2}, Lcom/google/android/gms/internal/drive/zzjr;->y2(J)I
+
+    move-result p1
+
+    add-int/2addr p1, p0
+
+    return p1
+.end method
+
+.method public static y2(J)I
     .locals 6
 
     const-wide/16 v0, -0x80
@@ -601,83 +652,24 @@
     return v0
 .end method
 
-.method public static y1(IJ)I
+.method public static z2(J)I
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->W(I)I
-
-    move-result p0
-
-    .line 2
-    invoke-static {p1, p2}, Lcom/google/android/gms/internal/drive/zzjr;->x2(J)I
-
-    move-result p1
-
-    add-int/2addr p1, p0
-
-    return p1
-.end method
-
-.method public static y2(J)I
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lcom/google/android/gms/internal/drive/zzjr;->z2(J)J
+    invoke-static {p0, p1}, Lcom/google/android/gms/internal/drive/zzjr;->A2(J)J
 
     move-result-wide p0
 
-    invoke-static {p0, p1}, Lcom/google/android/gms/internal/drive/zzjr;->x2(J)I
+    invoke-static {p0, p1}, Lcom/google/android/gms/internal/drive/zzjr;->y2(J)I
 
     move-result p0
 
     return p0
 .end method
 
-.method public static z0(ILjava/lang/String;)I
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Lcom/google/android/gms/internal/drive/zzjr;->W(I)I
-
-    move-result p0
-
-    invoke-static {p1}, Lcom/google/android/gms/internal/drive/zzjr;->k2(Ljava/lang/String;)I
-
-    move-result p1
-
-    add-int/2addr p1, p0
-
-    return p1
-.end method
-
-.method public static z2(J)J
-    .locals 3
-
-    const/4 v0, 0x1
-
-    shl-long v0, p0, v0
-
-    const/16 v2, 0x3f
-
-    shr-long/2addr p0, v2
-
-    xor-long/2addr p0, v0
-
-    return-wide p0
-.end method
-
 
 # virtual methods
 .method public abstract A1(II)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public abstract A2(I)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -693,7 +685,15 @@
     .end annotation
 .end method
 
-.method public abstract F0(II)V
+.method public abstract C0(II)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
+
+.method public abstract C2(I)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -709,7 +709,7 @@
     .end annotation
 .end method
 
-.method public abstract I1(II)V
+.method public abstract G1(II)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -717,7 +717,7 @@
     .end annotation
 .end method
 
-.method public abstract J0(ILq3/q1;)V
+.method public abstract H0(ILq3/q1;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -725,7 +725,7 @@
     .end annotation
 .end method
 
-.method public abstract K(ILjava/lang/String;)V
+.method public abstract I(ILjava/lang/String;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -733,7 +733,7 @@
     .end annotation
 .end method
 
-.method public abstract K0(IZ)V
+.method public abstract L0(IZ)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -741,7 +741,7 @@
     .end annotation
 .end method
 
-.method public abstract L(ILq3/q1;)V
+.method public abstract M(ILq3/q1;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -749,7 +749,7 @@
     .end annotation
 .end method
 
-.method public abstract P(ILq3/i3;)V
+.method public abstract O(ILq3/f3;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -757,7 +757,7 @@
     .end annotation
 .end method
 
-.method public abstract R(ILq3/i3;Lq3/w3;)V
+.method public abstract R(ILq3/f3;Lq3/t3;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -765,7 +765,7 @@
     .end annotation
 .end method
 
-.method public abstract U(I)V
+.method public abstract T(I)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -773,7 +773,7 @@
     .end annotation
 .end method
 
-.method public abstract e2(J)V
+.method public abstract a2(J)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -781,7 +781,7 @@
     .end annotation
 .end method
 
-.method public abstract j1(B)V
+.method public abstract g1(B)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -789,7 +789,7 @@
     .end annotation
 .end method
 
-.method public abstract m1(II)V
+.method public abstract l1(II)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -797,7 +797,7 @@
     .end annotation
 .end method
 
-.method public abstract r1(IJ)V
+.method public abstract m2(J)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -805,13 +805,13 @@
     .end annotation
 .end method
 
-.method public abstract w1()I
-.end method
-
-.method public abstract w2(J)V
+.method public abstract o1(IJ)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
+.end method
+
+.method public abstract t1()I
 .end method

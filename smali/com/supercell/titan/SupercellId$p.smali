@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/titan/SupercellId;->requestFriends()V
+    value = Lcom/supercell/titan/SupercellId;->preload()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,7 +35,7 @@
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->requestFriends()V
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->preload()V
 
     return-void
 .end method

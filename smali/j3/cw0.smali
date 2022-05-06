@@ -1,428 +1,208 @@
 .class public final Lj3/cw0;
-.super Landroid/os/Handler;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic a:Lj3/dw0;
+.field public final synthetic g:I
+
+.field public final synthetic h:Z
+
+.field public final synthetic i:Lcom/google/android/gms/internal/ads/d6;
 
 
 # direct methods
-.method public constructor <init>(Lj3/dw0;Landroid/os/Looper;)V
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/d6;IZ)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lj3/cw0;->a:Lj3/dw0;
+    iput-object p1, p0, Lj3/cw0;->i:Lcom/google/android/gms/internal/ads/d6;
 
-    invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+    iput p2, p0, Lj3/cw0;->g:I
+
+    iput-boolean p3, p0, Lj3/cw0;->h:Z
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final handleMessage(Landroid/os/Message;)V
-    .locals 4
+.method public final run()V
+    .locals 7
 
     .line 1
-    iget-object v0, p0, Lj3/cw0;->a:Lj3/dw0;
+    iget-object v0, p0, Lj3/cw0;->i:Lcom/google/android/gms/internal/ads/d6;
+
+    iget v1, p0, Lj3/cw0;->g:I
+
+    iget-boolean v2, p0, Lj3/cw0;->h:Z
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    if-lez v1, :cond_0
+
+    if-eqz v2, :cond_0
+
+    mul-int/lit16 v1, v1, 0x3e8
+
+    int-to-long v1, v1
+
     .line 2
-    iget v1, p1, Landroid/os/Message;->what:I
+    :try_start_0
+    invoke-static {v1, v2}, Ljava/lang/Thread;->sleep(J)V
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    const/4 v2, 0x1
-
-    packed-switch v1, :pswitch_data_0
+    :catch_0
+    :cond_0
+    const/4 v1, 0x0
 
     .line 3
-    new-instance p1, Ljava/lang/IllegalStateException;
+    :try_start_1
+    iget-object v2, v0, Lcom/google/android/gms/internal/ads/d6;->a:Landroid/content/Context;
 
-    invoke-direct {p1}, Ljava/lang/IllegalStateException;-><init>()V
+    invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
-    throw p1
+    move-result-object v2
+
+    iget-object v3, v0, Lcom/google/android/gms/internal/ads/d6;->a:Landroid/content/Context;
 
     .line 4
-    :pswitch_0
-    iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+    invoke-virtual {v3}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
-    check-cast p1, Lcom/google/android/gms/internal/ads/zzhd;
+    move-result-object v3
 
     .line 5
-    iget-object v0, v0, Lj3/dw0;->f:Ljava/util/concurrent/CopyOnWriteArraySet;
+    invoke-virtual {v2, v3, v1}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
-    invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArraySet;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lj3/aw0;
+    move-result-object v2
 
     .line 6
-    invoke-interface {v1, p1}, Lj3/aw0;->e(Lcom/google/android/gms/internal/ads/zzhd;)V
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/d6;->a:Landroid/content/Context;
+
+    .line 7
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v3
+
+    iget v2, v2, Landroid/content/pm/PackageInfo;->versionCode:I
+
+    invoke-static {v2}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 8
+    invoke-static {v0, v3, v2}, Lj3/lc;->p(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/gms/internal/ads/a0;
+
+    move-result-object v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     goto :goto_0
 
-    .line 7
-    :pswitch_1
-    iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
-
-    check-cast p1, Lj3/kw0;
-
-    .line 8
-    iget-object v1, v0, Lj3/dw0;->s:Lj3/kw0;
-
-    invoke-virtual {v1, p1}, Lj3/kw0;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
+    :catchall_0
+    const/4 v0, 0x0
 
     .line 9
-    iput-object p1, v0, Lj3/dw0;->s:Lj3/kw0;
+    :goto_0
+    iget-object v2, p0, Lj3/cw0;->i:Lcom/google/android/gms/internal/ads/d6;
 
     .line 10
-    iget-object v0, v0, Lj3/dw0;->f:Ljava/util/concurrent/CopyOnWriteArraySet;
-
-    invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArraySet;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_1
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lj3/aw0;
+    iput-object v0, v2, Lcom/google/android/gms/internal/ads/d6;->j:Lcom/google/android/gms/internal/ads/a0;
 
     .line 11
-    invoke-interface {v1, p1}, Lj3/aw0;->f(Lj3/kw0;)V
+    iget v2, p0, Lj3/cw0;->g:I
+
+    const/4 v3, 0x4
+
+    const/4 v4, 0x1
+
+    if-ge v2, v3, :cond_4
+
+    if-nez v0, :cond_1
 
     goto :goto_1
 
     .line 12
-    :pswitch_2
-    iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+    :cond_1
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/a0;->P()Z
 
-    check-cast p1, Lj3/iw0;
+    move-result v2
+
+    if-eqz v2, :cond_3
 
     .line 13
-    iget v1, v0, Lj3/dw0;->l:I
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/a0;->M()Ljava/lang/String;
 
-    iget v2, p1, Lj3/iw0;->d:I
+    move-result-object v2
 
-    sub-int/2addr v1, v2
+    const-string v3, "0000000000000000000000000000000000000000000000000000000000000000"
 
-    iput v1, v0, Lj3/dw0;->l:I
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    goto :goto_1
 
     .line 14
-    iget v1, v0, Lj3/dw0;->m:I
+    :cond_2
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/a0;->T()Z
 
-    if-nez v1, :cond_1
+    move-result v2
+
+    if-eqz v2, :cond_3
 
     .line 15
-    iget-object v1, p1, Lj3/iw0;->a:Lj3/mw0;
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/a0;->U()Lcom/google/android/gms/internal/ads/d0;
 
-    iput-object v1, v0, Lj3/dw0;->o:Lj3/mw0;
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/google/android/gms/internal/ads/d0;->y()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
 
     .line 16
-    iget-object v1, p1, Lj3/iw0;->b:Ljava/lang/Object;
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/a0;->U()Lcom/google/android/gms/internal/ads/d0;
 
-    iput-object v1, v0, Lj3/dw0;->p:Ljava/lang/Object;
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/d0;->z()J
+
+    move-result-wide v2
+
+    const-wide/16 v5, -0x2
+
+    cmp-long v0, v2, v5
+
+    if-nez v0, :cond_4
+
+    :cond_3
+    :goto_1
+    const/4 v1, 0x1
+
+    :cond_4
+    if-eqz v1, :cond_5
 
     .line 17
-    iget-object p1, p1, Lj3/iw0;->c:Lj3/hw0;
+    iget-object v0, p0, Lj3/cw0;->i:Lcom/google/android/gms/internal/ads/d6;
 
-    iput-object p1, v0, Lj3/dw0;->t:Lj3/hw0;
+    iget v1, p0, Lj3/cw0;->g:I
 
-    .line 18
-    iget-object p1, v0, Lj3/dw0;->f:Ljava/util/concurrent/CopyOnWriteArraySet;
+    add-int/2addr v1, v4
 
-    invoke-virtual {p1}, Ljava/util/concurrent/CopyOnWriteArraySet;->iterator()Ljava/util/Iterator;
+    iget-boolean v2, p0, Lj3/cw0;->h:Z
 
-    move-result-object p1
+    invoke-virtual {v0, v1, v2}, Lcom/google/android/gms/internal/ads/d6;->c(IZ)V
 
-    :goto_2
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lj3/aw0;
-
-    .line 19
-    iget-object v2, v0, Lj3/dw0;->o:Lj3/mw0;
-
-    iget-object v3, v0, Lj3/dw0;->p:Ljava/lang/Object;
-
-    invoke-interface {v1, v2, v3}, Lj3/aw0;->c(Lj3/mw0;Ljava/lang/Object;)V
-
-    goto :goto_2
-
-    .line 20
-    :pswitch_3
-    iget v1, v0, Lj3/dw0;->l:I
-
-    if-nez v1, :cond_1
-
-    .line 21
-    iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
-
-    check-cast p1, Lj3/hw0;
-
-    iput-object p1, v0, Lj3/dw0;->t:Lj3/hw0;
-
-    .line 22
-    iget-object p1, v0, Lj3/dw0;->f:Ljava/util/concurrent/CopyOnWriteArraySet;
-
-    invoke-virtual {p1}, Ljava/util/concurrent/CopyOnWriteArraySet;->iterator()Ljava/util/Iterator;
-
-    move-result-object p1
-
-    :goto_3
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lj3/aw0;
-
-    .line 23
-    invoke-interface {v0}, Lj3/aw0;->a()V
-
-    goto :goto_3
-
-    .line 24
-    :pswitch_4
-    iget v1, v0, Lj3/dw0;->l:I
-
-    sub-int/2addr v1, v2
-
-    iput v1, v0, Lj3/dw0;->l:I
-
-    if-nez v1, :cond_1
-
-    .line 25
-    iget-object v1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
-
-    check-cast v1, Lj3/hw0;
-
-    iput-object v1, v0, Lj3/dw0;->t:Lj3/hw0;
-
-    .line 26
-    iget p1, p1, Landroid/os/Message;->arg1:I
-
-    if-eqz p1, :cond_1
-
-    .line 27
-    iget-object p1, v0, Lj3/dw0;->f:Ljava/util/concurrent/CopyOnWriteArraySet;
-
-    invoke-virtual {p1}, Ljava/util/concurrent/CopyOnWriteArraySet;->iterator()Ljava/util/Iterator;
-
-    move-result-object p1
-
-    :goto_4
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lj3/aw0;
-
-    .line 28
-    invoke-interface {v0}, Lj3/aw0;->a()V
-
-    goto :goto_4
-
-    .line 29
-    :pswitch_5
-    iget v1, v0, Lj3/dw0;->m:I
-
-    if-nez v1, :cond_1
-
-    .line 30
-    iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
-
-    check-cast p1, Lj3/t01;
-
-    .line 31
-    iput-boolean v2, v0, Lj3/dw0;->i:Z
-
-    .line 32
-    iget-object v1, p1, Lj3/t01;->a:Lj3/d01;
-
-    iput-object v1, v0, Lj3/dw0;->q:Lj3/d01;
-
-    .line 33
-    iget-object v1, p1, Lj3/t01;->b:Lj3/p01;
-
-    iput-object v1, v0, Lj3/dw0;->r:Lj3/p01;
-
-    .line 34
-    iget-object v1, v0, Lj3/dw0;->b:Lj3/r01;
-
-    iget-object p1, p1, Lj3/t01;->c:Ljava/lang/Object;
-
-    invoke-virtual {v1, p1}, Lj3/r01;->b(Ljava/lang/Object;)V
-
-    .line 35
-    iget-object p1, v0, Lj3/dw0;->f:Ljava/util/concurrent/CopyOnWriteArraySet;
-
-    invoke-virtual {p1}, Ljava/util/concurrent/CopyOnWriteArraySet;->iterator()Ljava/util/Iterator;
-
-    move-result-object p1
-
-    :goto_5
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lj3/aw0;
-
-    .line 36
-    iget-object v2, v0, Lj3/dw0;->q:Lj3/d01;
-
-    iget-object v3, v0, Lj3/dw0;->r:Lj3/p01;
-
-    invoke-interface {v1, v2, v3}, Lj3/aw0;->i(Lj3/d01;Lj3/p01;)V
-
-    goto :goto_5
-
-    .line 37
-    :pswitch_6
-    iget p1, p1, Landroid/os/Message;->arg1:I
-
-    if-eqz p1, :cond_0
-
-    goto :goto_6
-
-    :cond_0
-    const/4 v2, 0x0
-
-    :goto_6
-    iput-boolean v2, v0, Lj3/dw0;->n:Z
-
-    .line 38
-    iget-object p1, v0, Lj3/dw0;->f:Ljava/util/concurrent/CopyOnWriteArraySet;
-
-    invoke-virtual {p1}, Ljava/util/concurrent/CopyOnWriteArraySet;->iterator()Ljava/util/Iterator;
-
-    move-result-object p1
-
-    :goto_7
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lj3/aw0;
-
-    .line 39
-    iget-boolean v2, v0, Lj3/dw0;->n:Z
-
-    invoke-interface {v1, v2}, Lj3/aw0;->h(Z)V
-
-    goto :goto_7
-
-    .line 40
-    :pswitch_7
-    iget p1, p1, Landroid/os/Message;->arg1:I
-
-    iput p1, v0, Lj3/dw0;->k:I
-
-    .line 41
-    iget-object p1, v0, Lj3/dw0;->f:Ljava/util/concurrent/CopyOnWriteArraySet;
-
-    invoke-virtual {p1}, Ljava/util/concurrent/CopyOnWriteArraySet;->iterator()Ljava/util/Iterator;
-
-    move-result-object p1
-
-    :goto_8
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lj3/aw0;
-
-    .line 42
-    iget-boolean v2, v0, Lj3/dw0;->j:Z
-
-    iget v3, v0, Lj3/dw0;->k:I
-
-    invoke-interface {v1, v2, v3}, Lj3/aw0;->d(ZI)V
-
-    goto :goto_8
-
-    .line 43
-    :pswitch_8
-    iget p1, v0, Lj3/dw0;->m:I
-
-    sub-int/2addr p1, v2
-
-    iput p1, v0, Lj3/dw0;->m:I
-
-    :cond_1
+    :cond_5
     return-void
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

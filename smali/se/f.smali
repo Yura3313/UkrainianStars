@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method public abstract d(Lse/w;Ljava/lang/Object;)V
+.method public abstract c(Lse/w;Ljava/lang/Object;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -37,7 +37,7 @@
             "Lke/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation

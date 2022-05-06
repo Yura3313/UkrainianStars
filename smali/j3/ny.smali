@@ -1,29 +1,30 @@
 .class public final Lj3/ny;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
+.source "com.google.android.gms:play-services-gass@@19.3.0"
 
 # interfaces
-.implements Li1/k;
-.implements Li1/n;
-.implements Lj3/c2;
-.implements Lj3/e2;
-.implements Lj3/d41;
+.implements Lj3/fs0;
 
 
-# instance fields
-.field public a:Lj3/d41;
-
-.field public b:Lj3/c2;
-
-.field public h:Li1/k;
-
-.field public i:Lj3/e2;
-
-.field public j:Li1/n;
+# static fields
+.field public static final a:Lj3/fs0;
 
 
 # direct methods
-.method public constructor <init>(Lj3/sw0;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lj3/ny;
+
+    invoke-direct {v0}, Lj3/ny;-><init>()V
+
+    sput-object v0, Lj3/ny;->a:Lj3/fs0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
     .line 1
@@ -34,242 +35,68 @@
 
 
 # virtual methods
-.method public final declared-synchronized M()V
-    .locals 1
+.method public final a(I)Z
+    .locals 2
 
-    monitor-enter p0
+    const/4 v0, 0x1
 
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lj3/ny;->h:Li1/k;
+    const/4 v1, 0x0
 
-    if-eqz v0, :cond_0
+    packed-switch p1, :pswitch_data_0
 
-    .line 2
-    invoke-interface {v0}, Li1/k;->M()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    const/4 p1, 0x0
 
-    .line 3
+    goto :goto_0
+
+    :pswitch_0
+    const/4 p1, 0x7
+
+    goto :goto_0
+
+    :pswitch_1
+    const/4 p1, 0x6
+
+    goto :goto_0
+
+    :pswitch_2
+    const/4 p1, 0x5
+
+    goto :goto_0
+
+    :pswitch_3
+    const/4 p1, 0x4
+
+    goto :goto_0
+
+    :pswitch_4
+    const/4 p1, 0x3
+
+    goto :goto_0
+
+    :pswitch_5
+    const/4 p1, 0x2
+
+    goto :goto_0
+
+    :pswitch_6
+    const/4 p1, 0x1
+
+    :goto_0
+    if-eqz p1, :cond_0
+
+    return v0
+
     :cond_0
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public final declared-synchronized T()V
-    .locals 1
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lj3/ny;->h:Li1/k;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-interface {v0}, Li1/k;->T()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    :cond_0
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public final declared-synchronized a()V
-    .locals 1
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lj3/ny;->j:Li1/n;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-interface {v0}, Li1/n;->a()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    :cond_0
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public final declared-synchronized j(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lj3/ny;->i:Lj3/e2;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-interface {v0, p1, p2}, Lj3/e2;->j(Ljava/lang/String;Ljava/lang/String;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    :cond_0
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
-.end method
-
-.method public final declared-synchronized n()V
-    .locals 1
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lj3/ny;->a:Lj3/d41;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-interface {v0}, Lj3/d41;->n()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    :cond_0
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public final declared-synchronized onPause()V
-    .locals 1
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lj3/ny;->h:Li1/k;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-interface {v0}, Li1/k;->onPause()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    :cond_0
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public final declared-synchronized onResume()V
-    .locals 1
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lj3/ny;->h:Li1/k;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-interface {v0}, Li1/k;->onResume()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    :cond_0
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public final declared-synchronized x(Ljava/lang/String;Landroid/os/Bundle;)V
-    .locals 1
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lj3/ny;->b:Lj3/c2;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-interface {v0, p1, p2}, Lj3/c2;->x(Ljava/lang/String;Landroid/os/Bundle;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    :cond_0
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
+    return v1
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

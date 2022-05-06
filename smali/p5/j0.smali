@@ -11,15 +11,15 @@
 
 .field public final b:Ljava/security/interfaces/RSAPublicKey;
 
-.field public final c:Lp5/z;
+.field public final c:I
 
-.field public final d:Lp5/z;
+.field public final d:I
 
 .field public final e:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/security/interfaces/RSAPrivateCrtKey;Lp5/z;Lp5/z;I)V
+.method public constructor <init>(Ljava/security/interfaces/RSAPrivateCrtKey;III)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -31,7 +31,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {p2}, Lp5/m0;->d(Lp5/z;)V
+    invoke-static {p2}, Lp5/m0;->d(I)V
 
     .line 3
     invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateCrtKey;->getModulus()Ljava/math/BigInteger;
@@ -48,11 +48,11 @@
     iput-object p1, p0, Lp5/j0;->a:Ljava/security/interfaces/RSAPrivateCrtKey;
 
     .line 5
-    sget-object v0, Lp5/x;->j:Lp5/x;
+    sget-object v0, Lp5/z;->j:Lp5/z;
 
     const-string v1, "RSA"
 
-    invoke-virtual {v0, v1}, Lp5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lp5/z;->a(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -81,10 +81,10 @@
     iput-object p1, p0, Lp5/j0;->b:Ljava/security/interfaces/RSAPublicKey;
 
     .line 8
-    iput-object p2, p0, Lp5/j0;->c:Lp5/z;
+    iput p2, p0, Lp5/j0;->c:I
 
     .line 9
-    iput-object p3, p0, Lp5/j0;->d:Lp5/z;
+    iput p3, p0, Lp5/j0;->d:I
 
     .line 10
     iput p4, p0, Lp5/j0;->e:I
@@ -120,21 +120,21 @@
     sub-int/2addr v1, v2
 
     .line 2
-    iget-object v3, v0, Lp5/j0;->c:Lp5/z;
+    iget v3, v0, Lp5/j0;->c:I
 
-    invoke-static {v3}, Lp5/m0;->d(Lp5/z;)V
+    invoke-static {v3}, Lp5/m0;->d(I)V
 
     .line 3
-    sget-object v3, Lp5/x;->h:Lp5/x;
+    sget-object v3, Lp5/z;->h:Lp5/z;
 
-    iget-object v4, v0, Lp5/j0;->c:Lp5/z;
+    iget v4, v0, Lp5/j0;->c:I
 
     .line 4
-    invoke-static {v4}, Lp5/l0;->d(Lp5/z;)Ljava/lang/String;
+    invoke-static {v4}, Lp5/l0;->d(I)Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Lp5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v3, v4}, Lp5/z;->a(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -227,9 +227,9 @@
     invoke-static {v8, v12, v7, v9, v11}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 17
-    iget-object v8, v0, Lp5/j0;->d:Lp5/z;
+    iget v8, v0, Lp5/j0;->d:I
 
-    invoke-static {v3, v4, v8}, Lp5/l0;->c([BILp5/z;)[B
+    invoke-static {v3, v4, v8}, Lp5/l0;->c([BII)[B
 
     move-result-object v8
 
@@ -335,11 +335,11 @@
     aput-byte v2, v1, v5
 
     .line 27
-    sget-object v2, Lp5/x;->e:Lp5/x;
+    sget-object v2, Lp5/z;->e:Lp5/z;
 
     const-string v3, "RSA/ECB/NOPADDING"
 
-    invoke-virtual {v2, v3}, Lp5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v2, v3}, Lp5/z;->a(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -358,7 +358,7 @@
     move-result-object v4
 
     .line 30
-    invoke-virtual {v2, v3}, Lp5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v2, v3}, Lp5/z;->a(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 

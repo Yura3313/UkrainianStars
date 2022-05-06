@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic g:I
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Lcom/supercell/titan/GameApp$g;->a:I
+    iput p1, p0, Lcom/supercell/titan/GameApp$g;->g:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,7 +47,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/supercell/titan/GameApp$g;->a:I
+    iget v1, p0, Lcom/supercell/titan/GameApp$g;->g:I
 
     const/4 v2, 0x2
 

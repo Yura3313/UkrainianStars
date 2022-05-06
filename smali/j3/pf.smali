@@ -7,24 +7,24 @@
 
 
 # instance fields
-.field public final a:Lj3/hf;
+.field public final g:Lj3/lf;
 
-.field public final b:Z
+.field public final h:I
 
-.field public final h:J
+.field public final i:I
 
 
 # direct methods
-.method public constructor <init>(Lj3/hf;ZJ)V
+.method public constructor <init>(Lj3/lf;II)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj3/pf;->a:Lj3/hf;
+    iput-object p1, p0, Lj3/pf;->g:Lj3/lf;
 
-    iput-boolean p2, p0, Lj3/pf;->b:Z
+    iput p2, p0, Lj3/pf;->h:I
 
-    iput-wide p3, p0, Lj3/pf;->h:J
+    iput p3, p0, Lj3/pf;->i:I
 
     return-void
 .end method
@@ -32,18 +32,24 @@
 
 # virtual methods
 .method public final run()V
-    .locals 4
+    .locals 3
 
-    iget-object v0, p0, Lj3/pf;->a:Lj3/hf;
+    iget-object v0, p0, Lj3/pf;->g:Lj3/lf;
 
-    iget-boolean v1, p0, Lj3/pf;->b:Z
+    iget v1, p0, Lj3/pf;->h:I
 
-    iget-wide v2, p0, Lj3/pf;->h:J
+    iget v2, p0, Lj3/pf;->i:I
 
     .line 1
-    iget-object v0, v0, Lj3/hf;->h:Lj3/af;
+    iget-object v0, v0, Lj3/lf;->l:Lj3/me;
 
-    invoke-interface {v0, v1, v2, v3}, Lj3/af;->M(ZJ)V
+    if-eqz v0, :cond_0
 
+    .line 2
+    check-cast v0, Lj3/qe;
+
+    invoke-virtual {v0, v1, v2}, Lj3/qe;->e(II)V
+
+    :cond_0
     return-void
 .end method

@@ -52,7 +52,7 @@
     iget-object v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup$b;->d:Lcom/google/android/material/button/MaterialButtonToggleGroup;
 
     .line 5
-    sget v1, Lcom/google/android/material/button/MaterialButtonToggleGroup;->p:I
+    sget v1, Lcom/google/android/material/button/MaterialButtonToggleGroup;->q:I
 
     .line 6
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;

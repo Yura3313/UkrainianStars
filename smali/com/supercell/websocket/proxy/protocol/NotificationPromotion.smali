@@ -807,7 +807,7 @@
     invoke-static {p1}, Lcom/google/protobuf/a;->checkByteStringIsUtf8(Lcom/google/protobuf/i;)V
 
     .line 2
-    invoke-virtual {p1}, Lcom/google/protobuf/i;->s()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/protobuf/i;->r()Ljava/lang/String;
 
     move-result-object p1
 
@@ -835,7 +835,7 @@
     invoke-static {p1}, Lcom/google/protobuf/a;->checkByteStringIsUtf8(Lcom/google/protobuf/i;)V
 
     .line 2
-    invoke-virtual {p1}, Lcom/google/protobuf/i;->s()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/protobuf/i;->r()Ljava/lang/String;
 
     move-result-object p1
 
@@ -863,7 +863,7 @@
     invoke-static {p1}, Lcom/google/protobuf/a;->checkByteStringIsUtf8(Lcom/google/protobuf/i;)V
 
     .line 2
-    invoke-virtual {p1}, Lcom/google/protobuf/i;->s()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/protobuf/i;->r()Ljava/lang/String;
 
     move-result-object p1
 
@@ -891,7 +891,7 @@
     invoke-static {p1}, Lcom/google/protobuf/a;->checkByteStringIsUtf8(Lcom/google/protobuf/i;)V
 
     .line 2
-    invoke-virtual {p1}, Lcom/google/protobuf/i;->s()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/protobuf/i;->r()Ljava/lang/String;
 
     move-result-object p1
 
@@ -919,7 +919,7 @@
     invoke-static {p1}, Lcom/google/protobuf/a;->checkByteStringIsUtf8(Lcom/google/protobuf/i;)V
 
     .line 2
-    invoke-virtual {p1}, Lcom/google/protobuf/i;->s()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/protobuf/i;->r()Ljava/lang/String;
 
     move-result-object p1
 
@@ -947,7 +947,7 @@
     invoke-static {p1}, Lcom/google/protobuf/a;->checkByteStringIsUtf8(Lcom/google/protobuf/i;)V
 
     .line 2
-    invoke-virtual {p1}, Lcom/google/protobuf/i;->s()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/protobuf/i;->r()Ljava/lang/String;
 
     move-result-object p1
 
@@ -975,7 +975,7 @@
     invoke-static {p1}, Lcom/google/protobuf/a;->checkByteStringIsUtf8(Lcom/google/protobuf/i;)V
 
     .line 2
-    invoke-virtual {p1}, Lcom/google/protobuf/i;->s()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/protobuf/i;->r()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1003,7 +1003,7 @@
     invoke-static {p1}, Lcom/google/protobuf/a;->checkByteStringIsUtf8(Lcom/google/protobuf/i;)V
 
     .line 2
-    invoke-virtual {p1}, Lcom/google/protobuf/i;->s()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/protobuf/i;->r()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1018,13 +1018,9 @@
     .locals 1
 
     .line 1
-    sget-object p2, Lcom/supercell/websocket/proxy/protocol/NotificationPromotion$a;->a:[I
-
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
     move-result p1
-
-    aget p1, p2, p1
 
     const/4 p2, 0x1
 
@@ -1181,14 +1177,14 @@
     return-object p1
 
     :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
+    .packed-switch 0x0
         :pswitch_1
         :pswitch_0
+        :pswitch_4
+        :pswitch_6
+        :pswitch_5
+        :pswitch_3
+        :pswitch_2
     .end packed-switch
 .end method
 
@@ -1207,7 +1203,7 @@
     .line 1
     iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/NotificationPromotion;->bgImageKey_:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/protobuf/i;->e(Ljava/lang/String;)Lcom/google/protobuf/i;
+    invoke-static {v0}, Lcom/google/protobuf/i;->f(Ljava/lang/String;)Lcom/google/protobuf/i;
 
     move-result-object v0
 
@@ -1229,7 +1225,7 @@
     .line 1
     iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/NotificationPromotion;->dismissKey_:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/protobuf/i;->e(Ljava/lang/String;)Lcom/google/protobuf/i;
+    invoke-static {v0}, Lcom/google/protobuf/i;->f(Ljava/lang/String;)Lcom/google/protobuf/i;
 
     move-result-object v0
 
@@ -1251,7 +1247,7 @@
     .line 1
     iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/NotificationPromotion;->iconKey_:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/protobuf/i;->e(Ljava/lang/String;)Lcom/google/protobuf/i;
+    invoke-static {v0}, Lcom/google/protobuf/i;->f(Ljava/lang/String;)Lcom/google/protobuf/i;
 
     move-result-object v0
 
@@ -1273,7 +1269,7 @@
     .line 1
     iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/NotificationPromotion;->link_:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/protobuf/i;->e(Ljava/lang/String;)Lcom/google/protobuf/i;
+    invoke-static {v0}, Lcom/google/protobuf/i;->f(Ljava/lang/String;)Lcom/google/protobuf/i;
 
     move-result-object v0
 
@@ -1295,7 +1291,7 @@
     .line 1
     iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/NotificationPromotion;->messageKey_:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/protobuf/i;->e(Ljava/lang/String;)Lcom/google/protobuf/i;
+    invoke-static {v0}, Lcom/google/protobuf/i;->f(Ljava/lang/String;)Lcom/google/protobuf/i;
 
     move-result-object v0
 
@@ -1317,7 +1313,7 @@
     .line 1
     iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/NotificationPromotion;->openKey_:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/protobuf/i;->e(Ljava/lang/String;)Lcom/google/protobuf/i;
+    invoke-static {v0}, Lcom/google/protobuf/i;->f(Ljava/lang/String;)Lcom/google/protobuf/i;
 
     move-result-object v0
 
@@ -1339,7 +1335,7 @@
     .line 1
     iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/NotificationPromotion;->targetApplication_:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/protobuf/i;->e(Ljava/lang/String;)Lcom/google/protobuf/i;
+    invoke-static {v0}, Lcom/google/protobuf/i;->f(Ljava/lang/String;)Lcom/google/protobuf/i;
 
     move-result-object v0
 
@@ -1361,7 +1357,7 @@
     .line 1
     iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/NotificationPromotion;->token_:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/protobuf/i;->e(Ljava/lang/String;)Lcom/google/protobuf/i;
+    invoke-static {v0}, Lcom/google/protobuf/i;->f(Ljava/lang/String;)Lcom/google/protobuf/i;
 
     move-result-object v0
 

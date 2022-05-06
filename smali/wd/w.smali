@@ -1,69 +1,33 @@
 .class public final Lwd/w;
-.super Lle/j;
-.source "NetworkUtil.kt"
-
-# interfaces
-.implements Lke/l;
+.super Lwd/u0;
+.source "PresenceStorage.kt"
 
 
 # annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lwd/w$a;
+    }
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Landroid/graphics/Bitmap;",
-        "Landroid/graphics/Bitmap;",
-        ">;"
+        "Lwd/u0<",
+        "Ljava/util/Map<",
+        "Lqc/d0;",
+        "+",
+        "Lcom/supercell/id/model/IdPresenceStatus;",
+        ">;>;"
     }
 .end annotation
 
 
-# static fields
-.field public static final a:Lwd/w;
-
-
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lwd/w;
-
-    invoke-direct {v0}, Lwd/w;-><init>()V
-
-    sput-object v0, Lwd/w;->a:Lwd/w;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 1
-    check-cast p1, Landroid/graphics/Bitmap;
+    invoke-direct {p0}, Lwd/u0;-><init>()V
 
-    if-eqz p1, :cond_0
-
-    return-object p1
-
-    .line 2
-    :cond_0
-    new-instance p1, Ljava/lang/Exception;
-
-    const-string v0, "Invalid bitmap stream"
-
-    invoke-direct {p1, v0}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
-
-    throw p1
+    return-void
 .end method

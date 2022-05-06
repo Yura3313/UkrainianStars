@@ -20,13 +20,21 @@
 
 
 # virtual methods
-.method public abstract P0()Ljava/lang/String;
+.method public abstract A0()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/google/android/gms/games/appcontent/zzd;",
+            ">;"
+        }
+    .end annotation
 .end method
 
-.method public abstract e()Ljava/lang/String;
+.method public abstract R0()Ljava/lang/String;
 .end method
 
-.method public abstract g()Ljava/lang/String;
+.method public abstract f()Ljava/lang/String;
 .end method
 
 .method public abstract getExtras()Landroid/os/Bundle;
@@ -41,7 +49,10 @@
 .method public abstract getType()Ljava/lang/String;
 .end method
 
-.method public abstract o()Ljava/util/List;
+.method public abstract j()Ljava/lang/String;
+.end method
+
+.method public abstract q()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -52,23 +63,12 @@
     .end annotation
 .end method
 
-.method public abstract p()Ljava/util/List;
+.method public abstract r()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
             "Ljava/util/List<",
             "Lcom/google/android/gms/games/appcontent/zzc;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract y0()Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Lcom/google/android/gms/games/appcontent/zzd;",
             ">;"
         }
     .end annotation

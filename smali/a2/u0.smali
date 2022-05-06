@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final a:La2/r0;
+.field public final g:La2/r0;
 
-.field public final synthetic b:La2/s0;
+.field public final synthetic h:La2/s0;
 
 
 # direct methods
@@ -17,13 +17,13 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, La2/u0;->b:La2/s0;
+    iput-object p1, p0, La2/u0;->h:La2/s0;
 
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 3
-    iput-object p2, p0, La2/u0;->a:La2/r0;
+    iput-object p2, p0, La2/u0;->g:La2/r0;
 
     return-void
 .end method
@@ -34,9 +34,9 @@
     .locals 8
 
     .line 1
-    iget-object v0, p0, La2/u0;->b:La2/s0;
+    iget-object v0, p0, La2/u0;->h:La2/s0;
 
-    iget-boolean v0, v0, La2/s0;->b:Z
+    iget-boolean v0, v0, La2/s0;->h:Z
 
     if-nez v0, :cond_0
 
@@ -44,13 +44,13 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, La2/u0;->a:La2/r0;
+    iget-object v0, p0, La2/u0;->g:La2/r0;
 
     .line 3
     iget-object v0, v0, La2/r0;->b:Lcom/google/android/gms/common/ConnectionResult;
 
     .line 4
-    invoke-virtual {v0}, Lcom/google/android/gms/common/ConnectionResult;->x2()Z
+    invoke-virtual {v0}, Lcom/google/android/gms/common/ConnectionResult;->z2()Z
 
     move-result v1
 
@@ -61,9 +61,9 @@
     if-eqz v1, :cond_1
 
     .line 5
-    iget-object v1, p0, La2/u0;->b:La2/s0;
+    iget-object v1, p0, La2/u0;->h:La2/s0;
 
-    iget-object v4, v1, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->a:La2/i;
+    iget-object v4, v1, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->g:La2/i;
 
     .line 6
     invoke-virtual {v1}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->a()Landroid/app/Activity;
@@ -71,18 +71,18 @@
     move-result-object v1
 
     .line 7
-    iget-object v0, v0, Lcom/google/android/gms/common/ConnectionResult;->h:Landroid/app/PendingIntent;
+    iget-object v0, v0, Lcom/google/android/gms/common/ConnectionResult;->i:Landroid/app/PendingIntent;
 
     .line 8
     invoke-static {v0}, Lc2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v5, p0, La2/u0;->a:La2/r0;
+    iget-object v5, p0, La2/u0;->g:La2/r0;
 
     .line 9
     iget v5, v5, La2/r0;->a:I
 
     .line 10
-    sget v6, Lcom/google/android/gms/common/api/GoogleApiActivity;->b:I
+    sget v6, Lcom/google/android/gms/common/api/GoogleApiActivity;->h:I
 
     .line 11
     new-instance v6, Landroid/content/Intent;
@@ -113,9 +113,9 @@
 
     .line 16
     :cond_1
-    iget-object v1, p0, La2/u0;->b:La2/s0;
+    iget-object v1, p0, La2/u0;->h:La2/s0;
 
-    iget-object v4, v1, La2/s0;->j:Ly1/c;
+    iget-object v4, v1, La2/s0;->k:Ly1/c;
 
     .line 17
     invoke-virtual {v1}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->a()Landroid/app/Activity;
@@ -123,7 +123,7 @@
     move-result-object v1
 
     .line 18
-    iget v5, v0, Lcom/google/android/gms/common/ConnectionResult;->b:I
+    iget v5, v0, Lcom/google/android/gms/common/ConnectionResult;->h:I
 
     const/4 v6, 0x0
 
@@ -135,21 +135,21 @@
     if-eqz v1, :cond_2
 
     .line 20
-    iget-object v1, p0, La2/u0;->b:La2/s0;
+    iget-object v1, p0, La2/u0;->h:La2/s0;
 
-    iget-object v2, v1, La2/s0;->j:Ly1/c;
+    iget-object v2, v1, La2/s0;->k:Ly1/c;
 
     .line 21
     invoke-virtual {v1}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->a()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v3, p0, La2/u0;->b:La2/s0;
+    iget-object v3, p0, La2/u0;->h:La2/s0;
 
-    iget-object v4, v3, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->a:La2/i;
+    iget-object v4, v3, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->g:La2/i;
 
     .line 22
-    iget v0, v0, Lcom/google/android/gms/common/ConnectionResult;->b:I
+    iget v0, v0, Lcom/google/android/gms/common/ConnectionResult;->h:I
 
     .line 23
     invoke-virtual {v2, v1, v4, v0, v3}, Ly1/c;->k(Landroid/app/Activity;La2/i;ILandroid/content/DialogInterface$OnCancelListener;)Z
@@ -158,21 +158,21 @@
 
     .line 24
     :cond_2
-    iget v1, v0, Lcom/google/android/gms/common/ConnectionResult;->b:I
+    iget v1, v0, Lcom/google/android/gms/common/ConnectionResult;->h:I
 
     const/16 v4, 0x12
 
     if-ne v1, v4, :cond_5
 
     .line 25
-    iget-object v0, p0, La2/u0;->b:La2/s0;
+    iget-object v0, p0, La2/u0;->h:La2/s0;
 
     .line 26
     invoke-virtual {v0}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->a()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, La2/u0;->b:La2/s0;
+    iget-object v1, p0, La2/u0;->h:La2/s0;
 
     .line 27
     new-instance v5, Landroid/widget/ProgressBar;
@@ -219,9 +219,9 @@
     invoke-static {v0, v2, v3, v1}, Ly1/c;->i(Landroid/app/Activity;Landroid/app/Dialog;Ljava/lang/String;Landroid/content/DialogInterface$OnCancelListener;)V
 
     .line 37
-    iget-object v0, p0, La2/u0;->b:La2/s0;
+    iget-object v0, p0, La2/u0;->h:La2/s0;
 
-    iget-object v1, v0, La2/s0;->j:Ly1/c;
+    iget-object v1, v0, La2/s0;->k:Ly1/c;
 
     .line 38
     invoke-virtual {v0}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->a()Landroid/app/Activity;
@@ -272,7 +272,7 @@
     if-nez v0, :cond_4
 
     .line 46
-    iget-object v0, p0, La2/u0;->b:La2/s0;
+    iget-object v0, p0, La2/u0;->h:La2/s0;
 
     invoke-virtual {v0}, La2/s0;->i()V
 
@@ -295,9 +295,9 @@
 
     .line 50
     :cond_5
-    iget-object v1, p0, La2/u0;->b:La2/s0;
+    iget-object v1, p0, La2/u0;->h:La2/s0;
 
-    iget-object v2, p0, La2/u0;->a:La2/r0;
+    iget-object v2, p0, La2/u0;->g:La2/r0;
 
     .line 51
     iget v2, v2, La2/r0;->a:I
@@ -306,7 +306,7 @@
     check-cast v1, La2/z0;
 
     .line 53
-    iget-object v1, v1, La2/z0;->l:La2/f;
+    iget-object v1, v1, La2/z0;->m:La2/f;
 
     invoke-virtual {v1, v0, v2}, La2/f;->f(Lcom/google/android/gms/common/ConnectionResult;I)V
 

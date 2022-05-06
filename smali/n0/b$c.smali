@@ -1,5 +1,5 @@
 .class public Ln0/b$c;
-.super Landroidx/lifecycle/w;
+.super Landroidx/lifecycle/x;
 .source "LoaderManagerImpl.java"
 
 
@@ -15,14 +15,14 @@
 
 
 # static fields
-.field public static final e:Landroidx/lifecycle/y;
+.field public static final e:Landroidx/lifecycle/z;
 
 
 # instance fields
-.field public c:Lm/i;
+.field public c:Lm/h;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lm/i<",
+            "Lm/h<",
             "Ln0/b$a;",
             ">;"
         }
@@ -41,7 +41,7 @@
 
     invoke-direct {v0}, Ln0/b$c$a;-><init>()V
 
-    sput-object v0, Ln0/b$c;->e:Landroidx/lifecycle/y;
+    sput-object v0, Ln0/b$c;->e:Landroidx/lifecycle/z;
 
     return-void
 .end method
@@ -50,14 +50,14 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Landroidx/lifecycle/w;-><init>()V
+    invoke-direct {p0}, Landroidx/lifecycle/x;-><init>()V
 
     .line 2
-    new-instance v0, Lm/i;
+    new-instance v0, Lm/h;
 
-    invoke-direct {v0}, Lm/i;-><init>()V
+    invoke-direct {v0}, Lm/h;-><init>()V
 
-    iput-object v0, p0, Ln0/b$c;->c:Lm/i;
+    iput-object v0, p0, Ln0/b$c;->c:Lm/h;
 
     const/4 v0, 0x0
 
@@ -73,10 +73,10 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Ln0/b$c;->c:Lm/i;
+    iget-object v0, p0, Ln0/b$c;->c:Lm/h;
 
     .line 2
-    iget v0, v0, Lm/i;->h:I
+    iget v0, v0, Lm/h;->i:I
 
     const/4 v1, 0x0
 
@@ -86,10 +86,10 @@
     if-ge v2, v0, :cond_0
 
     .line 3
-    iget-object v3, p0, Ln0/b$c;->c:Lm/i;
+    iget-object v3, p0, Ln0/b$c;->c:Lm/h;
 
     .line 4
-    iget-object v3, v3, Lm/i;->b:[Ljava/lang/Object;
+    iget-object v3, v3, Lm/h;->h:[Ljava/lang/Object;
 
     aget-object v3, v3, v2
 
@@ -107,13 +107,13 @@
 
     .line 7
     :cond_0
-    iget-object v0, p0, Ln0/b$c;->c:Lm/i;
+    iget-object v0, p0, Ln0/b$c;->c:Lm/h;
 
     .line 8
-    iget v2, v0, Lm/i;->h:I
+    iget v2, v0, Lm/h;->i:I
 
     .line 9
-    iget-object v3, v0, Lm/i;->b:[Ljava/lang/Object;
+    iget-object v3, v0, Lm/h;->h:[Ljava/lang/Object;
 
     const/4 v4, 0x0
 
@@ -131,7 +131,7 @@
 
     .line 11
     :cond_1
-    iput v1, v0, Lm/i;->h:I
+    iput v1, v0, Lm/h;->i:I
 
     return-void
 .end method

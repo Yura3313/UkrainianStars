@@ -1,63 +1,41 @@
 .class public Lcom/google/android/material/internal/i$a;
-.super Ljava/lang/Object;
-.source "TextScale.java"
-
-# interfaces
-.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+.super Ljava/lang/Exception;
+.source "StaticLayoutBuilderCompat.java"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/internal/i;->k(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/material/internal/i;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1
-    name = null
+    accessFlags = 0x9
+    name = "a"
 .end annotation
 
 
-# instance fields
-.field public final synthetic a:Landroid/widget/TextView;
-
-
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/internal/i;Landroid/widget/TextView;)V
-    .locals 0
+.method public constructor <init>(Ljava/lang/Throwable;)V
+    .locals 2
+
+    const-string v0, "Error thrown initializing StaticLayout "
 
     .line 1
-    iput-object p2, p0, Lcom/google/android/material/internal/i$a;->a:Landroid/widget/TextView;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-result-object v0
 
-    return-void
-.end method
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
+    move-result-object v1
 
-# virtual methods
-.method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
-    .locals 1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v0
 
-    check-cast p1, Ljava/lang/Float;
-
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
-
-    move-result p1
-
-    .line 2
-    iget-object v0, p0, Lcom/google/android/material/internal/i$a;->a:Landroid/widget/TextView;
-
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setScaleX(F)V
-
-    .line 3
-    iget-object v0, p0, Lcom/google/android/material/internal/i$a;->a:Landroid/widget/TextView;
-
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setScaleY(F)V
+    invoke-direct {p0, v0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     return-void
 .end method

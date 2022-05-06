@@ -4,5 +4,5 @@
 
 
 # virtual methods
-.method public abstract a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;ZLa0/a;)V
+.method public abstract a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;ZLandroidx/lifecycle/n;)V
 .end method

@@ -1,11 +1,11 @@
 .class public Ld9/i$k;
-.super Ly7/g;
+.super Lz7/g;
 .source "ConversationalVM.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ld9/i;->N(Z)V
+    value = Ld9/i;->i()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,21 +15,17 @@
 
 
 # instance fields
-.field public final synthetic b:Z
-
-.field public final synthetic c:Ld9/i;
+.field public final synthetic b:Ld9/i;
 
 
 # direct methods
-.method public constructor <init>(Ld9/i;Z)V
+.method public constructor <init>(Ld9/i;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Ld9/i$k;->c:Ld9/i;
+    iput-object p1, p0, Ld9/i$k;->b:Ld9/i;
 
-    iput-boolean p2, p0, Ld9/i$k;->b:Z
-
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -37,81 +33,38 @@
 
 # virtual methods
 .method public a()V
-    .locals 2
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Ld9/i$k;->c:Ld9/i;
+    iget-object v0, p0, Ld9/i$k;->b:Ld9/i;
 
-    iget-object v1, v0, Ld9/i;->n:Ll8/k;
+    iget-object v0, v0, Ld9/i;->n:Lm8/m;
 
-    if-nez v1, :cond_0
-
-    return-void
+    if-eqz v0, :cond_0
 
     .line 2
-    :cond_0
-    iget-object v0, v0, Ld9/i;->k:Ll8/p;
-
-    invoke-virtual {v0}, Ll8/p;->c()Lo8/d;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lo8/d;->d()Z
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_1
-
-    iget-object v0, p0, Ld9/i$k;->c:Ld9/i;
-
-    iget-object v0, v0, Ld9/i;->k:Ll8/p;
+    check-cast v0, Loa/e0;
 
     .line 3
-    invoke-virtual {v0}, Ll8/p;->c()Lo8/d;
+    iget-object v1, v0, Loa/e0;->a:Landroid/widget/EditText;
 
-    move-result-object v0
+    const-string v2, ""
 
-    invoke-virtual {v0}, Lo8/d;->c()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    iget-object v0, p0, Ld9/i$k;->c:Ld9/i;
-
-    iget-boolean v0, v0, Ld9/i;->b:Z
-
-    if-eqz v0, :cond_3
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     .line 4
-    :cond_1
-    iget-object v0, p0, Ld9/i$k;->c:Ld9/i;
+    iget-object v0, v0, Loa/e0;->a:Landroid/widget/EditText;
 
-    iget-object v0, v0, Ld9/i;->k:Ll8/p;
+    invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
-    .line 5
-    invoke-virtual {v0}, Ll8/p;->k()Z
+    move-result-object v1
 
-    move-result v0
+    invoke-interface {v1}, Landroid/text/Editable;->length()I
 
-    if-nez v0, :cond_2
+    move-result v1
 
-    iget-boolean v0, p0, Ld9/i$k;->b:Z
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setSelection(I)V
 
-    if-eqz v0, :cond_3
-
-    :cond_2
-    const/4 v0, 0x1
-
-    const/4 v1, 0x1
-
-    .line 6
-    :cond_3
-    iget-object v0, p0, Ld9/i$k;->c:Ld9/i;
-
-    invoke-virtual {v0, v1}, Ld9/i;->W(Z)V
-
+    :cond_0
     return-void
 .end method

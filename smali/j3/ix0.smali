@@ -1,63 +1,69 @@
-.class public final Lj3/ix0;
+.class public interface abstract Lj3/ix0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# instance fields
-.field public a:[B
-
-.field public b:[I
-
-.field public c:[I
-
-.field public final d:Landroid/media/MediaCodec$CryptoInfo;
-
-.field public final e:Lj3/jx0;
+# static fields
+.field public static final a:Ljava/nio/ByteBuffer;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 4
+.method public static constructor <clinit>()V
+    .locals 2
+
+    const/4 v0, 0x0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {v0}, Ljava/nio/ByteBuffer;->allocateDirect(I)Ljava/nio/ByteBuffer;
 
-    .line 2
-    sget v0, Lj3/n11;->a:I
+    move-result-object v0
 
-    const/4 v1, 0x0
+    invoke-static {}, Ljava/nio/ByteOrder;->nativeOrder()Ljava/nio/ByteOrder;
 
-    const/16 v2, 0x10
+    move-result-object v1
 
-    if-lt v0, v2, :cond_0
+    invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
-    .line 3
-    new-instance v2, Landroid/media/MediaCodec$CryptoInfo;
+    move-result-object v0
 
-    invoke-direct {v2}, Landroid/media/MediaCodec$CryptoInfo;-><init>()V
-
-    goto :goto_0
-
-    :cond_0
-    move-object v2, v1
-
-    .line 4
-    :goto_0
-    iput-object v2, p0, Lj3/ix0;->d:Landroid/media/MediaCodec$CryptoInfo;
-
-    const/16 v3, 0x18
-
-    if-lt v0, v3, :cond_1
-
-    .line 5
-    new-instance v0, Lj3/jx0;
-
-    invoke-direct {v0, v2, v1}, Lj3/jx0;-><init>(Landroid/media/MediaCodec$CryptoInfo;Lj3/om0;)V
-
-    move-object v1, v0
-
-    :cond_1
-    iput-object v1, p0, Lj3/ix0;->e:Lj3/jx0;
+    sput-object v0, Lj3/ix0;->a:Ljava/nio/ByteBuffer;
 
     return-void
+.end method
+
+
+# virtual methods
+.method public abstract a(Ljava/nio/ByteBuffer;)V
+.end method
+
+.method public abstract b()V
+.end method
+
+.method public abstract c(III)Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzih;
+        }
+    .end annotation
+.end method
+
+.method public abstract d()Z
+.end method
+
+.method public abstract e()Ljava/nio/ByteBuffer;
+.end method
+
+.method public abstract f()I
+.end method
+
+.method public abstract flush()V
+.end method
+
+.method public abstract g()I
+.end method
+
+.method public abstract isActive()Z
+.end method
+
+.method public abstract reset()V
 .end method

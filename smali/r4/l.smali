@@ -242,7 +242,7 @@
     iget-object v2, p1, Lr4/g$a;->a:Lr4/g;
 
     .line 14
-    iget-object v2, v2, Lr4/g;->i:Ljava/util/BitSet;
+    iget-object v2, v2, Lr4/g;->j:Ljava/util/BitSet;
 
     .line 15
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -253,7 +253,7 @@
     iget-object p1, p1, Lr4/g$a;->a:Lr4/g;
 
     .line 17
-    iget-object p1, p1, Lr4/g;->b:[Lr4/n$f;
+    iget-object p1, p1, Lr4/g;->h:[Lr4/n$f;
 
     .line 18
     iget v2, v0, Lr4/n;->f:F
@@ -440,7 +440,7 @@
 
     iget-object v7, p0, Lr4/l;->g:Lr4/n;
 
-    invoke-virtual {v2, v1, v5, v6, v7}, Lr4/e;->f(FFFLr4/n;)V
+    invoke-virtual {v2, v1, v5, v6, v7}, Lr4/e;->c(FFFLr4/n;)V
 
     .line 26
     new-instance v1, Landroid/graphics/Path;
@@ -468,7 +468,7 @@
     if-lt v5, v6, :cond_4
 
     .line 29
-    invoke-virtual {v2}, Lr4/e;->c()Z
+    invoke-virtual {v2}, Lr4/e;->b()Z
 
     move-result v2
 
@@ -575,7 +575,7 @@
     iget-object v2, p1, Lr4/g$a;->a:Lr4/g;
 
     .line 45
-    iget-object v2, v2, Lr4/g;->i:Ljava/util/BitSet;
+    iget-object v2, v2, Lr4/g;->j:Ljava/util/BitSet;
 
     add-int/lit8 v3, p2, 0x4
 
@@ -588,7 +588,7 @@
     iget-object p1, p1, Lr4/g$a;->a:Lr4/g;
 
     .line 48
-    iget-object p1, p1, Lr4/g;->h:[Lr4/n$f;
+    iget-object p1, p1, Lr4/g;->i:[Lr4/n$f;
 
     .line 49
     iget v2, v0, Lr4/n;->f:F
@@ -940,25 +940,25 @@
     if-eq p2, v2, :cond_3
 
     .line 6
-    iget-object v0, v0, Lr4/k;->b:Lcom/google/android/gms/ads/i;
+    iget-object v0, v0, Lr4/k;->b:Li1/o;
 
     goto :goto_1
 
     .line 7
     :cond_3
-    iget-object v0, v0, Lr4/k;->a:Lcom/google/android/gms/ads/i;
+    iget-object v0, v0, Lr4/k;->a:Li1/o;
 
     goto :goto_1
 
     .line 8
     :cond_4
-    iget-object v0, v0, Lr4/k;->d:Lcom/google/android/gms/ads/i;
+    iget-object v0, v0, Lr4/k;->d:Li1/o;
 
     goto :goto_1
 
     .line 9
     :cond_5
-    iget-object v0, v0, Lr4/k;->c:Lcom/google/android/gms/ads/i;
+    iget-object v0, v0, Lr4/k;->c:Li1/o;
 
     .line 10
     :goto_1
@@ -980,7 +980,7 @@
 
     move-result v4
 
-    invoke-virtual {v0, v5, v6, v7, v4}, Lcom/google/android/gms/ads/i;->c(Lr4/n;FFF)V
+    invoke-virtual {v0, v5, v6, v7, v4}, Li1/o;->a(Lr4/n;FFF)V
 
     add-int/lit8 v0, p2, 0x1
 

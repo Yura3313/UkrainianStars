@@ -43,11 +43,11 @@
 .method public abstract getValue()J
 .end method
 
-.method public abstract i()Lcom/google/android/gms/games/Player;
-.end method
-
 .method public abstract isVisible()Z
 .end method
 
-.method public abstract o2()Ljava/lang/String;
+.method public abstract l()Lcom/google/android/gms/games/Player;
+.end method
+
+.method public abstract q2()Ljava/lang/String;
 .end method

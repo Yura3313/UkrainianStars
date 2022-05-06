@@ -321,7 +321,7 @@
     .line 36
     iget p1, p1, Landroid/os/Message;->arg2:I
 
-    invoke-interface {v0, p1}, Lcom/google/android/gms/common/internal/BaseGmsClient$a;->E0(I)V
+    invoke-interface {v0, p1}, Lcom/google/android/gms/common/internal/BaseGmsClient$a;->F0(I)V
 
     .line 37
     :cond_c
@@ -487,7 +487,7 @@
 
     const-string v2, "Don\'t know how to handle message: "
 
-    invoke-static {v1, v2, p1}, Lb0/c;->b(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, v2, p1}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 

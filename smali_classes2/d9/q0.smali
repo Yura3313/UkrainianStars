@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final a:Lc8/o;
+.field public final a:Ld8/r;
 
-.field public final b:Ly7/f;
+.field public final b:Lz7/f;
 
 .field public c:Ld9/r0;
 
@@ -14,7 +14,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lm8/a0;",
+            "Ln8/w;",
             ">;"
         }
     .end annotation
@@ -25,7 +25,7 @@
         value = {
             "Ljava/util/Map<",
             "Ljava/lang/Long;",
-            "Ll8/o;",
+            "Lm8/q;",
             ">;"
         }
     .end annotation
@@ -35,7 +35,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lc8/o;Ly7/f;)V
+.method public constructor <init>(Ld8/r;Lz7/f;)V
     .locals 1
 
     .line 1
@@ -49,19 +49,19 @@
     iput-object v0, p0, Ld9/q0;->e:Ljava/util/Map;
 
     .line 3
-    iput-object p1, p0, Ld9/q0;->a:Lc8/o;
+    iput-object p1, p0, Ld9/q0;->a:Ld8/r;
 
     .line 4
-    iput-object p2, p0, Ld9/q0;->b:Ly7/f;
+    iput-object p2, p0, Ld9/q0;->b:Lz7/f;
 
     .line 5
-    check-cast p1, Lc8/i;
+    check-cast p1, Ld8/j;
 
     .line 6
-    iget-object p1, p1, Lc8/i;->g:Lc8/m;
+    iget-object p1, p1, Ld8/j;->g:Ld8/p;
 
     .line 7
-    check-cast p1, Lc8/c;
+    check-cast p1, Ld8/c;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -116,10 +116,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lm8/a0;
+    check-cast v0, Ln8/w;
 
     .line 3
-    iget-boolean v0, v0, Lm8/a0;->a:Z
+    iget-boolean v0, v0, Ln8/w;->g:Z
 
     if-eqz v0, :cond_0
 
@@ -151,7 +151,7 @@
     check-cast p0, Ld9/i;
 
     .line 8
-    invoke-virtual {p0}, Ld9/i;->A()V
+    invoke-virtual {p0}, Ld9/i;->B()V
 
     :cond_3
     :goto_1
@@ -160,16 +160,16 @@
 
 
 # virtual methods
-.method public final b(Lm8/a0;Lm8/a0;ZZ)Ljava/util/List;
+.method public final b(Ln8/w;Ln8/w;ZZ)Ljava/util/List;
     .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lm8/a0;",
-            "Lm8/a0;",
+            "Ln8/w;",
+            "Ln8/w;",
             "ZZ)",
             "Ljava/util/List<",
-            "Lm8/l0;",
+            "Ln8/f0;",
             ">;"
         }
     .end annotation
@@ -206,7 +206,7 @@
     if-eqz v1, :cond_4
 
     .line 3
-    invoke-virtual {p0, p1, p2}, Ld9/q0;->q(Lm8/a0;Lm8/a0;)Z
+    invoke-virtual {p0, p1, p2}, Ld9/q0;->q(Ln8/w;Ln8/w;)Z
 
     move-result v5
 
@@ -216,20 +216,20 @@
 
     .line 4
     :cond_1
-    iget-object v3, v1, Lm8/a0;->l:Ljava/lang/Long;
+    iget-object v3, v1, Ln8/w;->m:Ljava/lang/Long;
 
     invoke-virtual {v3}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v5
 
-    invoke-virtual {p0, v5, v6}, Ld9/q0;->m(J)Ll8/o;
+    invoke-virtual {p0, v5, v6}, Ld9/q0;->m(J)Lm8/q;
 
     move-result-object v3
 
     if-eqz v3, :cond_2
 
     .line 5
-    iget-boolean v3, v3, Ll8/o;->g:Z
+    iget-boolean v3, v3, Lm8/q;->g:Z
 
     if-eqz v3, :cond_2
 
@@ -244,11 +244,11 @@
     if-nez v3, :cond_3
 
     .line 6
-    invoke-virtual {p0, p1}, Ld9/q0;->k(Lm8/a0;)Ls8/e;
+    invoke-virtual {p0, p1}, Ld9/q0;->k(Ln8/w;)Lt8/e;
 
     move-result-object v3
 
-    sget-object v5, Ls8/e;->REJECTED:Ls8/e;
+    sget-object v5, Lt8/e;->m:Lt8/e;
 
     if-ne v3, v5, :cond_3
 
@@ -264,20 +264,20 @@
     new-instance v5, Ljava/util/Date;
 
     .line 8
-    iget-wide v6, v2, Lm8/a0;->w:J
+    iget-wide v6, v2, Ln8/w;->x:J
 
     .line 9
     invoke-direct {v5, v6, v7}, Ljava/util/Date;-><init>(J)V
 
     .line 10
-    invoke-virtual {p0, v5, v3}, Ld9/q0;->h(Ljava/util/Date;Z)Lm8/k0;
+    invoke-virtual {p0, v5, v3}, Ld9/q0;->h(Ljava/util/Date;Z)Ln8/e0;
 
     move-result-object v3
 
     .line 11
-    iget-object v5, v2, Lm8/a0;->l:Ljava/lang/Long;
+    iget-object v5, v2, Ln8/w;->m:Ljava/lang/Long;
 
-    iput-object v5, v3, Lm8/a0;->l:Ljava/lang/Long;
+    iput-object v5, v3, Ln8/w;->m:Ljava/lang/Long;
 
     :cond_4
     :goto_2
@@ -288,7 +288,7 @@
 
     .line 13
     :cond_5
-    invoke-virtual {p0, p1, p2}, Ld9/q0;->q(Lm8/a0;Lm8/a0;)Z
+    invoke-virtual {p0, p1, p2}, Ld9/q0;->q(Ln8/w;Ln8/w;)Z
 
     move-result v3
 
@@ -296,26 +296,26 @@
     new-instance v11, Ljava/util/Date;
 
     .line 15
-    iget-wide v5, v2, Lm8/a0;->w:J
+    iget-wide v5, v2, Ln8/w;->x:J
 
     .line 16
     invoke-direct {v11, v5, v6}, Ljava/util/Date;-><init>(J)V
 
     .line 17
-    iget-object v5, v2, Lm8/a0;->l:Ljava/lang/Long;
+    iget-object v5, v2, Ln8/w;->m:Ljava/lang/Long;
 
     invoke-virtual {v5}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v5
 
-    invoke-virtual {p0, v5, v6}, Ld9/q0;->m(J)Ll8/o;
+    invoke-virtual {p0, v5, v6}, Ld9/q0;->m(J)Lm8/q;
 
     move-result-object v5
 
     if-eqz v5, :cond_6
 
     .line 18
-    iget-boolean v6, v5, Ll8/o;->g:Z
+    iget-boolean v6, v5, Lm8/q;->g:Z
 
     if-eqz v6, :cond_6
 
@@ -337,28 +337,28 @@
 
     .line 19
     :cond_7
-    invoke-virtual {p0, p1, p2}, Ld9/q0;->r(Lm8/a0;Lm8/a0;)Z
+    invoke-virtual {p0, p1, p2}, Ld9/q0;->r(Ln8/w;Ln8/w;)Z
 
     move-result v1
 
     if-eqz v1, :cond_b
 
     .line 20
-    instance-of v1, v2, Lm8/j0;
+    instance-of v1, v2, Ln8/d0;
 
     if-nez v1, :cond_b
 
     .line 21
-    iget-object v1, v2, Lm8/a0;->l:Ljava/lang/Long;
+    iget-object v1, v2, Ln8/w;->m:Ljava/lang/Long;
 
-    invoke-virtual {p0, v11, v8, v1}, Ld9/q0;->i(Ljava/util/Date;ZLjava/lang/Long;)Lm8/j0;
+    invoke-virtual {p0, v11, v8, v1}, Ld9/q0;->i(Ljava/util/Date;ZLjava/lang/Long;)Ln8/d0;
 
     move-result-object v1
 
     .line 22
-    iget-object v2, v2, Lm8/a0;->l:Ljava/lang/Long;
+    iget-object v2, v2, Ln8/w;->m:Ljava/lang/Long;
 
-    iput-object v2, v1, Lm8/a0;->l:Ljava/lang/Long;
+    iput-object v2, v1, Ln8/w;->m:Ljava/lang/Long;
 
     .line 23
     invoke-virtual {v9, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -372,14 +372,14 @@
     if-eqz p4, :cond_9
 
     .line 24
-    iget-boolean v1, v5, Ll8/o;->e:Z
+    iget-boolean v1, v5, Lm8/q;->e:Z
 
     if-nez v1, :cond_9
 
-    iget-object v1, v5, Ll8/o;->d:Ljava/lang/String;
+    iget-object v1, v5, Lm8/q;->d:Ljava/lang/String;
 
     .line 25
-    invoke-static {v1}, Landroidx/savedstate/d;->j(Ljava/lang/String;)Z
+    invoke-static {v1}, Lp5/c0;->h(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -394,9 +394,9 @@
     if-eqz v4, :cond_a
 
     .line 26
-    iget-object v4, v5, Ll8/o;->d:Ljava/lang/String;
+    iget-object v4, v5, Lm8/q;->d:Ljava/lang/String;
 
-    iget-object v1, v2, Lm8/a0;->l:Ljava/lang/Long;
+    iget-object v1, v2, Ln8/w;->m:Ljava/lang/Long;
 
     .line 27
     new-instance v3, Ljava/util/Date;
@@ -408,14 +408,14 @@
     invoke-direct {v3, v5, v6}, Ljava/util/Date;-><init>(J)V
 
     .line 28
-    sget-object v5, Lg8/b;->a:Lcom/helpshift/util/o;
+    sget-object v5, Lh8/b;->a:Lcom/helpshift/util/o;
 
     invoke-virtual {v5, v3}, Lcom/helpshift/util/o;->a(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v5
 
     .line 29
-    new-instance v12, Lm8/m0;
+    new-instance v12, Ln8/g0;
 
     .line 30
     invoke-virtual {p0, v5}, Ld9/q0;->j(Ljava/lang/String;)J
@@ -426,26 +426,26 @@
 
     move/from16 v8, p3
 
-    invoke-direct/range {v3 .. v8}, Lm8/m0;-><init>(Ljava/lang/String;Ljava/lang/String;JZ)V
+    invoke-direct/range {v3 .. v8}, Ln8/g0;-><init>(Ljava/lang/String;Ljava/lang/String;JZ)V
 
     .line 31
-    iget-object v3, v0, Ld9/q0;->b:Ly7/f;
+    iget-object v3, v0, Ld9/q0;->b:Lz7/f;
 
-    iget-object v4, v0, Ld9/q0;->a:Lc8/o;
+    iget-object v4, v0, Ld9/q0;->a:Ld8/r;
 
     .line 32
-    iput-object v3, v12, Lm8/a0;->t:Ly7/f;
+    iput-object v3, v12, Ln8/w;->u:Lz7/f;
 
     .line 33
-    iput-object v4, v12, Lm8/a0;->u:Lc8/o;
+    iput-object v4, v12, Ln8/w;->v:Ld8/r;
 
     .line 34
-    iput-object v1, v12, Lm8/a0;->l:Ljava/lang/Long;
+    iput-object v1, v12, Ln8/w;->m:Ljava/lang/Long;
 
     .line 35
-    iget-object v1, v2, Lm8/a0;->l:Ljava/lang/Long;
+    iget-object v1, v2, Ln8/w;->m:Ljava/lang/Long;
 
-    iput-object v1, v12, Lm8/a0;->l:Ljava/lang/Long;
+    iput-object v1, v12, Ln8/w;->m:Ljava/lang/Long;
 
     .line 36
     invoke-virtual {v9, v12}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -454,16 +454,16 @@
 
     .line 37
     :cond_a
-    iget-object v1, v2, Lm8/a0;->l:Ljava/lang/Long;
+    iget-object v1, v2, Ln8/w;->m:Ljava/lang/Long;
 
-    invoke-virtual {p0, v11, v8, v1}, Ld9/q0;->i(Ljava/util/Date;ZLjava/lang/Long;)Lm8/j0;
+    invoke-virtual {p0, v11, v8, v1}, Ld9/q0;->i(Ljava/util/Date;ZLjava/lang/Long;)Ln8/d0;
 
     move-result-object v1
 
     .line 38
-    iget-object v2, v2, Lm8/a0;->l:Ljava/lang/Long;
+    iget-object v2, v2, Ln8/w;->m:Ljava/lang/Long;
 
-    iput-object v2, v1, Lm8/a0;->l:Ljava/lang/Long;
+    iput-object v2, v1, Ln8/w;->m:Ljava/lang/Long;
 
     .line 39
     invoke-virtual {v9, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -473,7 +473,7 @@
     return-object v9
 .end method
 
-.method public final c(Lm8/a0;Lm8/a0;)Z
+.method public final c(Ln8/w;Ln8/w;)Z
     .locals 7
 
     const/4 v0, 0x0
@@ -486,9 +486,9 @@
 
     .line 1
     :cond_0
-    iget-object v1, p2, Lm8/a0;->j:Ljava/lang/String;
+    iget-object v1, p2, Ln8/w;->k:Ljava/lang/String;
 
-    invoke-static {v1}, Landroidx/savedstate/d;->j(Ljava/lang/String;)Z
+    invoke-static {v1}, Lp5/c0;->h(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -498,13 +498,13 @@
 
     .line 2
     :cond_1
-    invoke-virtual {p0, p1}, Ld9/q0;->s(Lm8/a0;)Z
+    invoke-virtual {p0, p1}, Ld9/q0;->s(Ln8/w;)Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    invoke-virtual {p0, p2}, Ld9/q0;->s(Lm8/a0;)Z
+    invoke-virtual {p0, p2}, Ld9/q0;->s(Ln8/w;)Z
 
     move-result v1
 
@@ -512,11 +512,11 @@
 
     .line 3
     :cond_2
-    iget-boolean v1, p1, Lm8/a0;->a:Z
+    iget-boolean v1, p1, Ln8/w;->g:Z
 
     if-eqz v1, :cond_c
 
-    iget-boolean v1, p2, Lm8/a0;->a:Z
+    iget-boolean v1, p2, Ln8/w;->g:Z
 
     if-nez v1, :cond_3
 
@@ -524,10 +524,10 @@
 
     .line 4
     :cond_3
-    iget-wide v1, p1, Lm8/a0;->w:J
+    iget-wide v1, p1, Ln8/w;->x:J
 
     .line 5
-    iget-wide v3, p2, Lm8/a0;->w:J
+    iget-wide v3, p2, Ln8/w;->x:J
 
     .line 6
     iget-wide v5, p0, Ld9/q0;->f:J
@@ -564,20 +564,20 @@
 
     .line 9
     :cond_5
-    invoke-virtual {p0, p1}, Ld9/q0;->s(Lm8/a0;)Z
+    invoke-virtual {p0, p1}, Ld9/q0;->s(Ln8/w;)Z
 
     move-result v1
 
     if-eqz v1, :cond_7
 
     .line 10
-    invoke-virtual {p0, p1}, Ld9/q0;->t(Lm8/a0;)Z
+    invoke-virtual {p0, p1}, Ld9/q0;->t(Ln8/w;)Z
 
     move-result p1
 
     if-eqz p1, :cond_6
 
-    invoke-virtual {p0, p2}, Ld9/q0;->t(Lm8/a0;)Z
+    invoke-virtual {p0, p2}, Ld9/q0;->t(Ln8/w;)Z
 
     move-result p1
 
@@ -590,33 +590,33 @@
 
     .line 11
     :cond_7
-    invoke-virtual {p1}, Lm8/a0;->e()Ljava/lang/String;
+    invoke-virtual {p1}, Ln8/w;->e()Ljava/lang/String;
 
     move-result-object v1
 
     .line 12
-    invoke-virtual {p2}, Lm8/a0;->e()Ljava/lang/String;
+    invoke-virtual {p2}, Ln8/w;->e()Ljava/lang/String;
 
     move-result-object v2
 
     .line 13
-    iget-object p1, p1, Lm8/a0;->k:Lm8/o;
+    iget-object p1, p1, Ln8/w;->l:Ln8/m;
 
-    iget-object p1, p1, Lm8/o;->b:Ljava/lang/String;
+    iget-object p1, p1, Ln8/m;->h:Ljava/lang/String;
 
     .line 14
-    iget-object p2, p2, Lm8/a0;->k:Lm8/o;
+    iget-object p2, p2, Ln8/w;->l:Ln8/m;
 
-    iget-object p2, p2, Lm8/o;->b:Ljava/lang/String;
+    iget-object p2, p2, Ln8/m;->h:Ljava/lang/String;
 
     .line 15
-    invoke-static {p1}, Landroidx/savedstate/d;->j(Ljava/lang/String;)Z
+    invoke-static {p1}, Lp5/c0;->h(Ljava/lang/String;)Z
 
     move-result v3
 
     if-nez v3, :cond_9
 
-    invoke-static {p2}, Landroidx/savedstate/d;->j(Ljava/lang/String;)Z
+    invoke-static {p2}, Lp5/c0;->h(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -660,19 +660,19 @@
     .locals 9
 
     .line 1
-    invoke-virtual {p0, p1}, Ld9/q0;->l(I)Lm8/a0;
+    invoke-virtual {p0, p1}, Ld9/q0;->l(I)Ln8/w;
 
     move-result-object v0
 
     add-int/lit8 v1, p1, 0x1
 
     .line 2
-    invoke-virtual {p0, v1}, Ld9/q0;->l(I)Lm8/a0;
+    invoke-virtual {p0, v1}, Ld9/q0;->l(I)Ln8/w;
 
     move-result-object v1
 
     .line 3
-    instance-of v0, v0, Lm8/j0;
+    instance-of v0, v0, Ln8/d0;
 
     const/4 v2, 0x0
 
@@ -683,7 +683,7 @@
     if-eqz v1, :cond_0
 
     .line 4
-    instance-of v0, v1, Lm8/j0;
+    instance-of v0, v1, Ln8/d0;
 
     if-eqz v0, :cond_1
 
@@ -704,14 +704,14 @@
 
     .line 6
     :goto_0
-    invoke-virtual {p0, p1}, Ld9/q0;->l(I)Lm8/a0;
+    invoke-virtual {p0, p1}, Ld9/q0;->l(I)Ln8/w;
 
     move-result-object v1
 
     add-int/lit8 v4, p1, -0x1
 
     .line 7
-    invoke-virtual {p0, v4}, Ld9/q0;->l(I)Lm8/a0;
+    invoke-virtual {p0, v4}, Ld9/q0;->l(I)Ln8/w;
 
     move-result-object v4
 
@@ -720,7 +720,7 @@
     if-eqz v1, :cond_5
 
     .line 8
-    instance-of v5, v1, Lm8/j0;
+    instance-of v5, v1, Ln8/d0;
 
     if-eqz v5, :cond_2
 
@@ -728,7 +728,7 @@
 
     .line 9
     :cond_2
-    invoke-virtual {p0, v4, v1}, Ld9/q0;->r(Lm8/a0;Lm8/a0;)Z
+    invoke-virtual {p0, v4, v1}, Ld9/q0;->r(Ln8/w;Ln8/w;)Z
 
     move-result v4
 
@@ -738,13 +738,13 @@
     new-instance v0, Ljava/util/Date;
 
     .line 11
-    iget-wide v4, v1, Lm8/a0;->w:J
+    iget-wide v4, v1, Ln8/w;->x:J
 
     .line 12
     invoke-direct {v0, v4, v5}, Ljava/util/Date;-><init>(J)V
 
     .line 13
-    iget-wide v4, v1, Lm8/a0;->w:J
+    iget-wide v4, v1, Ln8/w;->x:J
 
     const-wide/16 v6, -0x1
 
@@ -756,10 +756,10 @@
 
     .line 14
     :cond_3
-    iget-object v1, v1, Lm8/a0;->l:Ljava/lang/Long;
+    iget-object v1, v1, Ln8/w;->m:Ljava/lang/Long;
 
     .line 15
-    invoke-virtual {p0, v0, v2, v1}, Ld9/q0;->i(Ljava/util/Date;ZLjava/lang/Long;)Lm8/j0;
+    invoke-virtual {p0, v0, v2, v1}, Ld9/q0;->i(Ljava/util/Date;ZLjava/lang/Long;)Ln8/d0;
 
     move-result-object v0
 
@@ -787,7 +787,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lm8/a0;",
+            "Ln8/w;",
             ">;II)",
             "Lcom/helpshift/util/a0<",
             "Ljava/lang/Integer;",
@@ -844,7 +844,7 @@
 
     move-result-object v6
 
-    check-cast v6, Lm8/a0;
+    check-cast v6, Ln8/w;
 
     if-gez v5, :cond_1
 
@@ -867,7 +867,7 @@
 
     move-result-object v7
 
-    check-cast v7, Lm8/a0;
+    check-cast v7, Ln8/w;
 
     .line 7
     iget-object v8, p0, Ld9/q0;->d:Ljava/util/List;
@@ -878,10 +878,10 @@
 
     move-result-object v8
 
-    check-cast v8, Lm8/a0;
+    check-cast v8, Ln8/w;
 
     .line 8
-    invoke-virtual {p0, v8, v7}, Ld9/q0;->c(Lm8/a0;Lm8/a0;)Z
+    invoke-virtual {p0, v8, v7}, Ld9/q0;->c(Ln8/w;Ln8/w;)Z
 
     move-result v7
 
@@ -893,9 +893,9 @@
 
     move-result-object v8
 
-    check-cast v8, Lm8/a0;
+    check-cast v8, Ln8/w;
 
-    invoke-virtual {p0, v6, v8}, Ld9/q0;->c(Lm8/a0;Lm8/a0;)Z
+    invoke-virtual {p0, v6, v8}, Ld9/q0;->c(Ln8/w;Ln8/w;)Z
 
     move-result v8
 
@@ -910,7 +910,7 @@
 
     .line 10
     :goto_1
-    invoke-virtual {p0, v6, v7, v9}, Ld9/q0;->y(Lm8/a0;ZZ)Z
+    invoke-virtual {p0, v6, v7, v9}, Ld9/q0;->y(Ln8/w;ZZ)Z
 
     move-result v6
 
@@ -945,12 +945,12 @@
 
     move-result-object v8
 
-    check-cast v8, Lm8/a0;
+    check-cast v8, Ln8/w;
 
     if-ne p2, v0, :cond_6
 
     .line 12
-    invoke-virtual {p0, v8, v7, v2}, Ld9/q0;->y(Lm8/a0;ZZ)Z
+    invoke-virtual {p0, v8, v7, v2}, Ld9/q0;->y(Ln8/w;ZZ)Z
 
     move-result v8
 
@@ -964,17 +964,17 @@
 
     move-result-object v9
 
-    check-cast v9, Lm8/a0;
+    check-cast v9, Ln8/w;
 
     .line 14
-    invoke-virtual {p0, v8, v9}, Ld9/q0;->c(Lm8/a0;Lm8/a0;)Z
+    invoke-virtual {p0, v8, v9}, Ld9/q0;->c(Ln8/w;Ln8/w;)Z
 
     move-result v9
 
     if-eqz v9, :cond_7
 
     .line 15
-    invoke-virtual {p0, v8, v7, v1}, Ld9/q0;->y(Lm8/a0;ZZ)Z
+    invoke-virtual {p0, v8, v7, v1}, Ld9/q0;->y(Ln8/w;ZZ)Z
 
     move-result v8
 
@@ -984,7 +984,7 @@
 
     .line 16
     :cond_7
-    invoke-virtual {p0, v8, v7, v2}, Ld9/q0;->y(Lm8/a0;ZZ)Z
+    invoke-virtual {p0, v8, v7, v2}, Ld9/q0;->y(Ln8/w;ZZ)Z
 
     move-result v8
 
@@ -1050,10 +1050,10 @@
             "(",
             "Ljava/util/Collection<",
             "+",
-            "Lm8/a0;",
+            "Ln8/w;",
             ">;)",
             "Ljava/util/List<",
-            "Lm8/a0;",
+            "Ln8/w;",
             ">;"
         }
     .end annotation
@@ -1094,10 +1094,10 @@
 
     move-result-object v1
 
-    check-cast v1, Lm8/a0;
+    check-cast v1, Ln8/w;
 
     .line 4
-    invoke-virtual {v1}, Lm8/a0;->j()Z
+    invoke-virtual {v1}, Ln8/w;->j()Z
 
     move-result v2
 
@@ -1149,10 +1149,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lm8/a0;
+    check-cast v0, Ln8/w;
 
     .line 3
-    iget-wide v0, v0, Lm8/a0;->w:J
+    iget-wide v0, v0, Ln8/w;->x:J
 
     .line 4
     iget-object v2, p0, Ld9/q0;->d:Ljava/util/List;
@@ -1161,10 +1161,10 @@
 
     move-result-object v2
 
-    check-cast v2, Lm8/a0;
+    check-cast v2, Ln8/w;
 
     .line 5
-    iget-wide v2, v2, Lm8/a0;->w:J
+    iget-wide v2, v2, Ln8/w;->x:J
 
     cmp-long v4, p1, v0
 
@@ -1190,10 +1190,10 @@
 
     move-result-object v1
 
-    check-cast v1, Lm8/a0;
+    check-cast v1, Ln8/w;
 
     .line 7
-    iget-wide v1, v1, Lm8/a0;->w:J
+    iget-wide v1, v1, Ln8/w;->x:J
 
     cmp-long v3, v1, p1
 
@@ -1215,7 +1215,7 @@
     return p1
 .end method
 
-.method public final h(Ljava/util/Date;Z)Lm8/k0;
+.method public final h(Ljava/util/Date;Z)Ln8/e0;
     .locals 3
 
     .line 1
@@ -1228,37 +1228,37 @@
     invoke-direct {v0, v1, v2}, Ljava/util/Date;-><init>(J)V
 
     .line 2
-    sget-object p1, Lg8/b;->a:Lcom/helpshift/util/o;
+    sget-object p1, Lh8/b;->a:Lcom/helpshift/util/o;
 
     invoke-virtual {p1, v0}, Lcom/helpshift/util/o;->a(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object p1
 
     .line 3
-    new-instance v0, Lm8/k0;
+    new-instance v0, Ln8/e0;
 
     .line 4
     invoke-virtual {p0, p1}, Ld9/q0;->j(Ljava/lang/String;)J
 
     move-result-wide v1
 
-    invoke-direct {v0, p1, v1, v2, p2}, Lm8/k0;-><init>(Ljava/lang/String;JZ)V
+    invoke-direct {v0, p1, v1, v2, p2}, Ln8/e0;-><init>(Ljava/lang/String;JZ)V
 
     .line 5
-    iget-object p1, p0, Ld9/q0;->b:Ly7/f;
+    iget-object p1, p0, Ld9/q0;->b:Lz7/f;
 
-    iget-object p2, p0, Ld9/q0;->a:Lc8/o;
+    iget-object p2, p0, Ld9/q0;->a:Ld8/r;
 
     .line 6
-    iput-object p1, v0, Lm8/a0;->t:Ly7/f;
+    iput-object p1, v0, Ln8/w;->u:Lz7/f;
 
     .line 7
-    iput-object p2, v0, Lm8/a0;->u:Lc8/o;
+    iput-object p2, v0, Ln8/w;->v:Ld8/r;
 
     return-object v0
 .end method
 
-.method public final i(Ljava/util/Date;ZLjava/lang/Long;)Lm8/j0;
+.method public final i(Ljava/util/Date;ZLjava/lang/Long;)Ln8/d0;
     .locals 3
 
     .line 1
@@ -1271,35 +1271,35 @@
     invoke-direct {v0, v1, v2}, Ljava/util/Date;-><init>(J)V
 
     .line 2
-    sget-object p1, Lg8/b;->a:Lcom/helpshift/util/o;
+    sget-object p1, Lh8/b;->a:Lcom/helpshift/util/o;
 
     invoke-virtual {p1, v0}, Lcom/helpshift/util/o;->a(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object p1
 
     .line 3
-    new-instance v0, Lm8/j0;
+    new-instance v0, Ln8/d0;
 
     .line 4
     invoke-virtual {p0, p1}, Ld9/q0;->j(Ljava/lang/String;)J
 
     move-result-wide v1
 
-    invoke-direct {v0, p1, v1, v2, p2}, Lm8/j0;-><init>(Ljava/lang/String;JZ)V
+    invoke-direct {v0, p1, v1, v2, p2}, Ln8/d0;-><init>(Ljava/lang/String;JZ)V
 
     .line 5
-    iget-object p1, p0, Ld9/q0;->b:Ly7/f;
+    iget-object p1, p0, Ld9/q0;->b:Lz7/f;
 
-    iget-object p2, p0, Ld9/q0;->a:Lc8/o;
+    iget-object p2, p0, Ld9/q0;->a:Ld8/r;
 
     .line 6
-    iput-object p1, v0, Lm8/a0;->t:Ly7/f;
+    iput-object p1, v0, Ln8/w;->u:Lz7/f;
 
     .line 7
-    iput-object p2, v0, Lm8/a0;->u:Lc8/o;
+    iput-object p2, v0, Ln8/w;->v:Ld8/r;
 
     .line 8
-    iput-object p3, v0, Lm8/a0;->l:Ljava/lang/Long;
+    iput-object p3, v0, Ln8/w;->m:Ljava/lang/Long;
 
     return-object v0
 .end method
@@ -1308,7 +1308,7 @@
     .locals 4
 
     .line 1
-    invoke-static {p1}, Lg8/b;->b(Ljava/lang/String;)J
+    invoke-static {p1}, Lh8/b;->b(Ljava/lang/String;)J
 
     move-result-wide v0
 
@@ -1319,35 +1319,35 @@
     return-wide v0
 .end method
 
-.method public final k(Lm8/a0;)Ls8/e;
+.method public final k(Ln8/w;)Lt8/e;
     .locals 2
 
     .line 1
-    iget-object p1, p1, Lm8/a0;->l:Ljava/lang/Long;
+    iget-object p1, p1, Ln8/w;->m:Ljava/lang/Long;
 
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v0
 
-    invoke-virtual {p0, v0, v1}, Ld9/q0;->m(J)Ll8/o;
+    invoke-virtual {p0, v0, v1}, Ld9/q0;->m(J)Lm8/q;
 
     move-result-object p1
 
     if-nez p1, :cond_0
 
     .line 2
-    sget-object p1, Ls8/e;->UNKNOWN:Ls8/e;
+    sget-object p1, Lt8/e;->v:Lt8/e;
 
     return-object p1
 
     .line 3
     :cond_0
-    iget-object p1, p1, Ll8/o;->f:Ls8/e;
+    iget-object p1, p1, Lm8/q;->f:Lt8/e;
 
     return-object p1
 .end method
 
-.method public final l(I)Lm8/a0;
+.method public final l(I)Ln8/w;
     .locals 1
 
     if-ltz p1, :cond_1
@@ -1371,7 +1371,7 @@
 
     move-result-object p1
 
-    check-cast p1, Lm8/a0;
+    check-cast p1, Ln8/w;
 
     return-object p1
 
@@ -1382,7 +1382,7 @@
     return-object p1
 .end method
 
-.method public declared-synchronized m(J)Ll8/o;
+.method public declared-synchronized m(J)Lm8/q;
     .locals 1
 
     monitor-enter p0
@@ -1399,7 +1399,7 @@
 
     move-result-object p1
 
-    check-cast p1, Ll8/o;
+    check-cast p1, Lm8/q;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1421,10 +1421,10 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lm8/a0;",
+            "Ln8/w;",
             ">;)",
             "Ljava/util/List<",
-            "Lm8/a0;",
+            "Ln8/w;",
             ">;"
         }
     .end annotation
@@ -1438,7 +1438,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 2
-    invoke-static {p1}, Lid/g;->a(Ljava/util/List;)Z
+    invoke-static {p1}, Lk2/h;->a(Ljava/util/List;)Z
 
     move-result v1
     :try_end_0
@@ -1477,10 +1477,10 @@
 
     move-result-object v5
 
-    check-cast v5, Lm8/a0;
+    check-cast v5, Ln8/w;
 
     .line 5
-    instance-of v6, v5, Lm8/n0;
+    instance-of v6, v5, Ln8/h0;
 
     if-eqz v6, :cond_1
 
@@ -1489,7 +1489,7 @@
     .line 6
     move-object v3, v5
 
-    check-cast v3, Lm8/n0;
+    check-cast v3, Ln8/h0;
 
     goto :goto_0
 
@@ -1497,7 +1497,7 @@
     if-eqz v3, :cond_2
 
     .line 7
-    iput v4, v3, Lm8/n0;->z:I
+    iput v4, v3, Ln8/h0;->A:I
 
     .line 8
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -1516,7 +1516,7 @@
     if-eqz v3, :cond_4
 
     .line 10
-    iput v4, v3, Lm8/n0;->z:I
+    iput v4, v3, Ln8/h0;->A:I
 
     .line 11
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -1543,18 +1543,18 @@
     goto :goto_1
 .end method
 
-.method public final declared-synchronized o(Ljava/util/List;Lm8/a0;Z)Ljava/util/List;
+.method public final declared-synchronized o(Ljava/util/List;Ln8/w;Z)Ljava/util/List;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
-            "Lm8/a0;",
+            "Ln8/w;",
             ">;",
-            "Lm8/a0;",
+            "Ln8/w;",
             "Z)",
             "Ljava/util/List<",
-            "Lm8/a0;",
+            "Ln8/w;",
             ">;"
         }
     .end annotation
@@ -1568,15 +1568,15 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 2
-    iget-object v1, p0, Ld9/q0;->b:Ly7/f;
+    iget-object v1, p0, Ld9/q0;->b:Lz7/f;
 
     .line 3
-    iget-object v1, v1, Ly7/f;->f:Lh8/b;
+    iget-object v1, v1, Lz7/f;->f:Li8/b;
 
     const-string v2, "showConversationInfoScreen"
 
     .line 4
-    invoke-virtual {v1, v2}, Lh8/b;->c(Ljava/lang/String;)Z
+    invoke-virtual {v1, v2}, Li8/b;->c(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -1610,10 +1610,10 @@
 
     move-result-object v3
 
-    check-cast v3, Lm8/a0;
+    check-cast v3, Ln8/w;
 
     .line 6
-    invoke-virtual {p0, p2, v3, p3, v1}, Ld9/q0;->b(Lm8/a0;Lm8/a0;ZZ)Ljava/util/List;
+    invoke-virtual {p0, p2, v3, p3, v1}, Ld9/q0;->b(Ln8/w;Ln8/w;ZZ)Ljava/util/List;
 
     move-result-object p2
 
@@ -1651,7 +1651,7 @@
     goto :goto_2
 .end method
 
-.method public p(Lm8/a0;)V
+.method public p(Ln8/w;)V
     .locals 5
 
     .line 1
@@ -1669,7 +1669,7 @@
 
     .line 2
     :cond_0
-    iget-wide v2, p1, Lm8/a0;->w:J
+    iget-wide v2, p1, Ln8/w;->x:J
 
     add-int/lit8 v4, v0, -0x1
 
@@ -1716,15 +1716,15 @@
     return-void
 .end method
 
-.method public final q(Lm8/a0;Lm8/a0;)Z
+.method public final q(Ln8/w;Ln8/w;)Z
     .locals 0
 
     if-eqz p1, :cond_0
 
     .line 1
-    iget-object p1, p1, Lm8/a0;->l:Ljava/lang/Long;
+    iget-object p1, p1, Ln8/w;->m:Ljava/lang/Long;
 
-    iget-object p2, p2, Lm8/a0;->l:Ljava/lang/Long;
+    iget-object p2, p2, Ln8/w;->m:Ljava/lang/Long;
 
     invoke-virtual {p1, p2}, Ljava/lang/Long;->equals(Ljava/lang/Object;)Z
 
@@ -1740,15 +1740,15 @@
     return p1
 .end method
 
-.method public final r(Lm8/a0;Lm8/a0;)Z
+.method public final r(Ln8/w;Ln8/w;)Z
     .locals 4
 
     if-eqz p1, :cond_0
 
     .line 1
-    iget-wide v0, p1, Lm8/a0;->w:J
+    iget-wide v0, p1, Ln8/w;->x:J
 
-    iget-wide p1, p2, Lm8/a0;->w:J
+    iget-wide p1, p2, Ln8/w;->x:J
 
     .line 2
     iget-wide v2, p0, Ld9/q0;->f:J
@@ -1780,16 +1780,16 @@
     return p1
 .end method
 
-.method public final s(Lm8/a0;)Z
+.method public final s(Ln8/w;)Z
     .locals 1
 
     .line 1
-    iget-boolean v0, p1, Lm8/a0;->a:Z
+    iget-boolean v0, p1, Ln8/w;->g:Z
 
     if-nez v0, :cond_0
 
     .line 2
-    instance-of p1, p1, Lm8/l0;
+    instance-of p1, p1, Ln8/f0;
 
     if-nez p1, :cond_0
 
@@ -1804,73 +1804,67 @@
     return p1
 .end method
 
-.method public final t(Lm8/a0;)Z
-    .locals 4
+.method public final t(Ln8/w;)Z
+    .locals 5
 
     .line 1
-    iget-object v0, p1, Lm8/a0;->b:Lm8/b0;
+    iget v0, p1, Ln8/w;->h:I
 
-    sget-object v1, Lm8/b0;->USER_TEXT:Lm8/b0;
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
+    const/4 v2, 0x4
 
     const/4 v3, 0x0
 
     if-eq v0, v1, :cond_2
 
-    sget-object v1, Lm8/b0;->USER_RESP_FOR_TEXT_INPUT:Lm8/b0;
+    const/16 v4, 0x16
 
-    if-eq v0, v1, :cond_2
+    if-eq v0, v4, :cond_2
 
-    sget-object v1, Lm8/b0;->USER_RESP_FOR_OPTION_INPUT:Lm8/b0;
+    const/16 v4, 0x17
 
-    if-ne v0, v1, :cond_0
+    if-ne v0, v4, :cond_0
 
     goto :goto_1
 
-    .line 2
     :cond_0
-    sget-object v1, Lm8/b0;->SCREENSHOT:Lm8/b0;
+    const/16 v4, 0x9
 
-    if-ne v0, v1, :cond_1
+    if-ne v0, v4, :cond_1
 
-    .line 3
-    check-cast p1, Lm8/i0;
+    .line 2
+    check-cast p1, Ln8/b0;
 
-    iget-object p1, p1, Lm8/i0;->K:Lm8/v0;
+    iget p1, p1, Ln8/b0;->L:I
 
-    sget-object v0, Lm8/v0;->SENT:Lm8/v0;
-
-    if-ne p1, v0, :cond_1
+    if-ne p1, v2, :cond_1
 
     goto :goto_0
 
     :cond_1
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     :goto_0
-    return v2
+    return v1
 
-    .line 4
+    .line 3
     :cond_2
     :goto_1
-    check-cast p1, Lm8/u0;
+    check-cast p1, Ln8/m0;
 
-    .line 5
-    iget-object p1, p1, Lm8/u0;->z:Lm8/v0;
+    .line 4
+    iget p1, p1, Ln8/m0;->A:I
 
-    .line 6
-    sget-object v0, Lm8/v0;->SENT:Lm8/v0;
-
-    if-ne p1, v0, :cond_3
+    if-ne p1, v2, :cond_3
 
     goto :goto_2
 
     :cond_3
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     :goto_2
-    return v2
+    return v1
 .end method
 
 .method public u()V
@@ -1885,14 +1879,14 @@
     check-cast v0, Ld9/i;
 
     .line 3
-    iget-object v0, v0, Ld9/i;->n:Ll8/k;
+    iget-object v0, v0, Ld9/i;->n:Lm8/m;
 
     if-eqz v0, :cond_0
 
     .line 4
-    check-cast v0, Lqa/e0;
+    check-cast v0, Loa/e0;
 
-    invoke-virtual {v0}, Lqa/e0;->m()V
+    invoke-virtual {v0}, Loa/e0;->m()V
 
     :cond_0
     return-void
@@ -1922,13 +1916,13 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lm8/a0;",
+            "Ln8/w;",
             ">;Z)V"
         }
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lid/g;->a(Ljava/util/List;)Z
+    invoke-static {p1}, Lk2/h;->a(Ljava/util/List;)Z
 
     move-result v0
 
@@ -1937,13 +1931,13 @@
     if-nez p2, :cond_0
 
     .line 2
-    iget-object p1, p0, Ld9/q0;->b:Ly7/f;
+    iget-object p1, p0, Ld9/q0;->b:Lz7/f;
 
     new-instance p2, Ld9/o0;
 
     invoke-direct {p2, p0}, Ld9/o0;-><init>(Ld9/q0;)V
 
-    invoke-virtual {p1, p2}, Ly7/f;->g(Ly7/g;)V
+    invoke-virtual {p1, p2}, Lz7/f;->h(Lz7/g;)V
 
     :cond_0
     return-void
@@ -1970,7 +1964,7 @@
     const/4 v0, 0x0
 
     .line 7
-    invoke-virtual {p0, p1, v0, p2}, Ld9/q0;->o(Ljava/util/List;Lm8/a0;Z)Ljava/util/List;
+    invoke-virtual {p0, p1, v0, p2}, Ld9/q0;->o(Ljava/util/List;Ln8/w;Z)Ljava/util/List;
 
     move-result-object p1
 
@@ -1990,7 +1984,7 @@
     invoke-virtual {p0, p1, p2, v0}, Ld9/q0;->e(Ljava/util/List;II)Lcom/helpshift/util/a0;
 
     .line 9
-    invoke-static {p1}, Lid/g;->a(Ljava/util/List;)Z
+    invoke-static {p1}, Lk2/h;->a(Ljava/util/List;)Z
 
     move-result p2
 
@@ -2000,13 +1994,13 @@
 
     .line 10
     :cond_2
-    iget-object p2, p0, Ld9/q0;->b:Ly7/f;
+    iget-object p2, p0, Ld9/q0;->b:Lz7/f;
 
     new-instance v0, Ld9/p0;
 
     invoke-direct {v0, p0, p1}, Ld9/p0;-><init>(Ld9/q0;Ljava/util/List;)V
 
-    invoke-virtual {p2, v0}, Ly7/f;->g(Ly7/g;)V
+    invoke-virtual {p2, v0}, Lz7/f;->h(Lz7/g;)V
 
     :goto_0
     return-void
@@ -2018,7 +2012,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lm8/a0;",
+            "Ln8/w;",
             ">;)V"
         }
     .end annotation
@@ -2029,7 +2023,7 @@
     move-result-object p1
 
     .line 2
-    invoke-static {p1}, Lid/g;->a(Ljava/util/List;)Z
+    invoke-static {p1}, Lk2/h;->a(Ljava/util/List;)Z
 
     move-result v0
 
@@ -2039,22 +2033,22 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Ld9/q0;->b:Ly7/f;
+    iget-object v0, p0, Ld9/q0;->b:Lz7/f;
 
     new-instance v1, Ld9/q0$a;
 
     invoke-direct {v1, p0, p1}, Ld9/q0$a;-><init>(Ld9/q0;Ljava/util/List;)V
 
-    invoke-virtual {v0, v1}, Ly7/f;->g(Ly7/g;)V
+    invoke-virtual {v0, v1}, Lz7/f;->h(Lz7/g;)V
 
     return-void
 .end method
 
-.method public final y(Lm8/a0;ZZ)Z
+.method public final y(Ln8/w;ZZ)Z
     .locals 3
 
     .line 1
-    iget-object v0, p1, Lm8/a0;->h:Lm8/o0;
+    iget-object v0, p1, Ln8/w;->i:Ln8/i0;
 
     const/4 v1, 0x1
 
@@ -2065,21 +2059,21 @@
     if-eqz p3, :cond_0
 
     .line 2
-    new-instance p1, Lm8/o0;
+    new-instance p1, Ln8/i0;
 
-    invoke-direct {p1, v1, v2}, Lm8/o0;-><init>(ZZ)V
+    invoke-direct {p1, v1, v2}, Ln8/i0;-><init>(ZZ)V
 
     goto :goto_1
 
     .line 3
     :cond_0
-    new-instance p2, Lm8/o0;
+    new-instance p2, Ln8/i0;
 
-    invoke-virtual {p0, p1}, Ld9/q0;->s(Lm8/a0;)Z
+    invoke-virtual {p0, p1}, Ld9/q0;->s(Ln8/w;)Z
 
     move-result p1
 
-    invoke-direct {p2, v1, p1}, Lm8/o0;-><init>(ZZ)V
+    invoke-direct {p2, v1, p1}, Ln8/i0;-><init>(ZZ)V
 
     goto :goto_0
 
@@ -2087,13 +2081,13 @@
     if-eqz p3, :cond_2
 
     .line 4
-    new-instance p2, Lm8/o0;
+    new-instance p2, Ln8/i0;
 
     .line 5
-    iget-boolean p1, p1, Lm8/a0;->a:Z
+    iget-boolean p1, p1, Ln8/w;->g:Z
 
     .line 6
-    invoke-direct {p2, v2, p1}, Lm8/o0;-><init>(ZZ)V
+    invoke-direct {p2, v2, p1}, Ln8/i0;-><init>(ZZ)V
 
     :goto_0
     move-object p1, p2
@@ -2102,13 +2096,13 @@
 
     .line 7
     :cond_2
-    new-instance p1, Lm8/o0;
+    new-instance p1, Ln8/i0;
 
-    invoke-direct {p1, v2, v1}, Lm8/o0;-><init>(ZZ)V
+    invoke-direct {p1, v2, v1}, Ln8/i0;-><init>(ZZ)V
 
     .line 8
     :goto_1
-    invoke-virtual {v0, p1}, Lm8/o0;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Ln8/i0;->equals(Ljava/lang/Object;)Z
 
     move-result p2
 
@@ -2118,14 +2112,14 @@
 
     .line 9
     :cond_3
-    iget-boolean p2, p1, Lm8/o0;->a:Z
+    iget-boolean p2, p1, Ln8/i0;->g:Z
 
-    iput-boolean p2, v0, Lm8/o0;->a:Z
+    iput-boolean p2, v0, Ln8/i0;->g:Z
 
     .line 10
-    iget-boolean p1, p1, Lm8/o0;->b:Z
+    iget-boolean p1, p1, Ln8/i0;->h:Z
 
-    iput-boolean p1, v0, Lm8/o0;->b:Z
+    iput-boolean p1, v0, Ln8/i0;->h:Z
 
     return v1
 .end method
@@ -2136,7 +2130,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Ll8/o;",
+            "Lm8/q;",
             ">;)V"
         }
     .end annotation
@@ -2145,7 +2139,7 @@
 
     .line 1
     :try_start_0
-    invoke-static {p1}, Lid/g;->a(Ljava/util/List;)Z
+    invoke-static {p1}, Lk2/h;->a(Ljava/util/List;)Z
 
     move-result v0
     :try_end_0
@@ -2181,12 +2175,12 @@
 
     move-result-object v0
 
-    check-cast v0, Ll8/o;
+    check-cast v0, Lm8/q;
 
     .line 5
     iget-object v1, p0, Ld9/q0;->e:Ljava/util/Map;
 
-    iget-wide v2, v0, Ll8/o;->a:J
+    iget-wide v2, v0, Lm8/q;->a:J
 
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 

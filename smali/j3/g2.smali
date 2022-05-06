@@ -2,323 +2,79 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lj3/y2;
 
-# static fields
-.field public static final a:Lj3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/x2<",
-            "Lj3/ch;",
-            ">;"
-        }
-    .end annotation
-.end field
 
-.field public static final b:Lj3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/x2<",
-            "Lj3/ch;",
-            ">;"
-        }
-    .end annotation
-.end field
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj3/y2<",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
 
-.field public static final c:Lj3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/x2<",
-            "Lj3/ch;",
-            ">;"
-        }
-    .end annotation
-.end field
 
-.field public static final d:Lj3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/x2<",
-            "Lj3/ch;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final e:Lj3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/x2<",
-            "Lj3/ch;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final f:Lj3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/x2<",
-            "Lj3/ch;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final g:Lj3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/x2<",
-            "Lj3/ch;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final h:Lj3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/x2<",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final i:Lj3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/x2<",
-            "Lj3/ch;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final j:Lj3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/x2<",
-            "Lj3/ch;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final k:Lj3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/x2<",
-            "Lj3/ch;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final l:Lj3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/x2<",
-            "Lj3/ch;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final m:Lj3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/x2<",
-            "Lj3/af;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final n:Lj3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/x2<",
-            "Lj3/af;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final o:Lj3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/x2<",
-            "Lj3/ch;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final p:Lj3/d3;
-
-.field public static final q:Lj3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/x2<",
-            "Lj3/ch;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final r:Lj3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/x2<",
-            "Lj3/ch;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final s:Lj3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/x2<",
-            "Lj3/ch;",
-            ">;"
-        }
-    .end annotation
-.end field
+# instance fields
+.field public final g:Lj3/f2;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Lj3/f2;)V
+    .locals 0
 
     .line 1
-    sget-object v0, Lj3/j2;->a:Lj3/x2;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sput-object v0, Lj3/g2;->a:Lj3/x2;
+    iput-object p1, p0, Lj3/g2;->g:Lj3/f2;
 
-    .line 3
-    sget-object v0, Lj3/i2;->a:Lj3/x2;
+    return-void
+.end method
 
-    .line 4
-    sput-object v0, Lj3/g2;->b:Lj3/x2;
 
-    .line 5
-    sget-object v0, Lj3/l2;->a:Lj3/x2;
+# virtual methods
+.method public final b(Ljava/lang/Object;Ljava/util/Map;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
 
-    .line 6
-    sput-object v0, Lj3/g2;->c:Lj3/x2;
+    const-string p1, "name"
 
-    .line 7
-    sget-object v0, Lj3/k2;->a:Lj3/x2;
+    .line 1
+    invoke-interface {p2, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8
-    sput-object v0, Lj3/g2;->d:Lj3/x2;
+    move-result-object p1
 
-    .line 9
-    new-instance v0, Lj3/p2;
+    check-cast p1, Ljava/lang/String;
 
-    invoke-direct {v0}, Lj3/p2;-><init>()V
+    if-nez p1, :cond_0
 
-    sput-object v0, Lj3/g2;->e:Lj3/x2;
+    return-void
 
-    .line 10
-    new-instance v0, Lj3/o2;
+    .line 2
+    :cond_0
+    iget-object v0, p0, Lj3/g2;->g:Lj3/f2;
 
-    invoke-direct {v0}, Lj3/o2;-><init>()V
+    const-string v1, "info"
 
-    sput-object v0, Lj3/g2;->f:Lj3/x2;
+    invoke-interface {p2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 11
-    sget-object v0, Lj3/n2;->a:Lj3/x2;
+    move-result-object p2
 
-    .line 12
-    sput-object v0, Lj3/g2;->g:Lj3/x2;
+    check-cast p2, Ljava/lang/String;
 
-    .line 13
-    new-instance v0, Lj3/s2;
-
-    invoke-direct {v0}, Lj3/s2;-><init>()V
-
-    sput-object v0, Lj3/g2;->h:Lj3/x2;
-
-    .line 14
-    new-instance v0, Lj3/q2;
-
-    invoke-direct {v0}, Lj3/q2;-><init>()V
-
-    sput-object v0, Lj3/g2;->i:Lj3/x2;
-
-    .line 15
-    sget-object v0, Lj3/m2;->a:Lj3/x2;
-
-    .line 16
-    sput-object v0, Lj3/g2;->j:Lj3/x2;
-
-    .line 17
-    new-instance v0, Lj3/u2;
-
-    invoke-direct {v0}, Lj3/u2;-><init>()V
-
-    sput-object v0, Lj3/g2;->k:Lj3/x2;
-
-    .line 18
-    new-instance v0, Lj3/t2;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, Lj3/t2;-><init>(I)V
-
-    sput-object v0, Lj3/g2;->l:Lj3/x2;
-
-    .line 19
-    new-instance v0, Lj3/cg;
-
-    invoke-direct {v0}, Lj3/cg;-><init>()V
-
-    sput-object v0, Lj3/g2;->m:Lj3/x2;
-
-    .line 20
-    new-instance v0, Lj3/fg;
-
-    invoke-direct {v0}, Lj3/fg;-><init>()V
-
-    sput-object v0, Lj3/g2;->n:Lj3/x2;
-
-    .line 21
-    new-instance v0, Lj3/h2;
-
-    invoke-direct {v0}, Lj3/h2;-><init>()V
-
-    sput-object v0, Lj3/g2;->o:Lj3/x2;
-
-    .line 22
-    new-instance v0, Lj3/d3;
-
-    invoke-direct {v0}, Lj3/d3;-><init>()V
-
-    sput-object v0, Lj3/g2;->p:Lj3/d3;
-
-    .line 23
-    new-instance v0, Lj3/w2;
-
-    invoke-direct {v0}, Lj3/w2;-><init>()V
-
-    sput-object v0, Lj3/g2;->q:Lj3/x2;
-
-    .line 24
-    new-instance v0, Lj3/v2;
-
-    invoke-direct {v0}, Lj3/v2;-><init>()V
-
-    sput-object v0, Lj3/g2;->r:Lj3/x2;
-
-    .line 25
-    new-instance v0, Lj3/y2;
-
-    invoke-direct {v0}, Lj3/y2;-><init>()V
-
-    sput-object v0, Lj3/g2;->s:Lj3/x2;
+    invoke-interface {v0, p1, p2}, Lj3/f2;->k(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method

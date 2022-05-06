@@ -1,111 +1,87 @@
-.class public final Lj3/vm;
-.super Ljava/lang/Object;
+.class public Lj3/vm;
+.super Lj3/gv0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Lj3/bv0;
-
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final b:Lj3/fv0;
-
-.field public final c:Lj3/fv0;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lj3/fv0;Lj3/fv0;I)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    iput p3, p0, Lj3/vm;->a:I
+    const-class v0, Lj3/vm;
 
-    iput-object p1, p0, Lj3/vm;->b:Lj3/fv0;
-
-    iput-object p2, p0, Lj3/vm;->c:Lj3/fv0;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {v0}, Lj3/u7;->q(Ljava/lang/Class;)Lj3/u7;
 
     return-void
 .end method
 
-.method public static a(Lj3/fv0;Lj3/fv0;)Lj3/vm;
+.method public constructor <init>(Lj3/cg;Lj3/qn;)V
     .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
     .line 1
-    new-instance v0, Lj3/vm;
+    invoke-direct {p0}, Lj3/gv0;-><init>()V
 
-    const/4 v1, 0x1
+    .line 2
+    iget-object v0, p1, Lj3/cg;->g:Ljava/nio/ByteBuffer;
 
-    invoke-direct {v0, p0, p1, v1}, Lj3/vm;-><init>(Lj3/fv0;Lj3/fv0;I)V
+    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->limit()I
 
-    return-object v0
+    move-result v0
+
+    int-to-long v0, v0
+
+    .line 3
+    invoke-virtual {p0, p1, v0, v1, p2}, Lj3/gv0;->d(Lj3/cg;JLj3/qn;)V
+
+    return-void
 .end method
 
 
 # virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 3
-
-    iget v0, p0, Lj3/vm;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
+.method public close()V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/vm;->b:Lj3/fv0;
+    iget-object v0, p0, Lj3/gv0;->h:Lj3/cg;
 
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    move-result-object v0
+    return-void
+.end method
 
-    check-cast v0, Ljava/util/concurrent/ScheduledExecutorService;
+.method public toString()Ljava/lang/String;
+    .locals 4
 
-    iget-object v1, p0, Lj3/vm;->c:Lj3/fv0;
+    .line 1
+    iget-object v0, p0, Lj3/gv0;->h:Lj3/cg;
 
-    invoke-interface {v1}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lk2/c;
-
-    .line 2
-    new-instance v2, Lj3/zr;
-
-    invoke-direct {v2, v0, v1}, Lj3/zr;-><init>(Ljava/util/concurrent/ScheduledExecutorService;Lk2/c;)V
-
-    return-object v2
-
-    .line 3
-    :goto_0
-    iget-object v0, p0, Lj3/vm;->b:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    check-cast v0, Landroid/content/Context;
+    const/4 v1, 0x7
 
-    iget-object v1, p0, Lj3/vm;->c:Lj3/fv0;
+    invoke-static {v0, v1}, La1/e;->a(Ljava/lang/String;I)I
 
-    invoke-interface {v1}, Lj3/fv0;->get()Ljava/lang/Object;
+    move-result v1
 
-    move-result-object v1
+    const-string v2, "model("
 
-    check-cast v1, Lj3/o9;
+    const-string v3, ")"
 
-    .line 4
-    new-instance v2, Lj3/u20;
+    invoke-static {v1, v2, v0, v3}, Lh1/i;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-direct {v2, v0, v1}, Lj3/u20;-><init>(Landroid/content/Context;Lj3/o9;)V
+    move-result-object v0
 
-    return-object v2
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object v0
 .end method

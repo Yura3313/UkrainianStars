@@ -3,57 +3,97 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/gl0;
+.implements Ljava/util/concurrent/Callable;
 
 
 # instance fields
-.field public final a:Lj3/b20;
+.field public final synthetic a:I
 
-.field public final b:Lcom/google/android/gms/internal/ads/zzasp;
-
-.field public final c:I
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lj3/b20;Lcom/google/android/gms/internal/ads/zzasp;I)V
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
     .locals 0
 
+    .line 1
+    iput p2, p0, Lj3/a20;->a:I
+
+    iput-object p1, p0, Lj3/a20;->b:Ljava/lang/Object;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lj3/a20;->a:Lj3/b20;
-
-    iput-object p2, p0, Lj3/a20;->b:Lcom/google/android/gms/internal/ads/zzasp;
-
-    iput p3, p0, Lj3/a20;->c:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lj3/yl0;
+.method public final call()Ljava/lang/Object;
     .locals 3
 
-    iget-object v0, p0, Lj3/a20;->a:Lj3/b20;
+    iget v0, p0, Lj3/a20;->a:I
 
-    iget-object v1, p0, Lj3/a20;->b:Lcom/google/android/gms/internal/ads/zzasp;
+    packed-switch v0, :pswitch_data_0
 
-    iget v2, p0, Lj3/a20;->c:I
-
-    check-cast p1, Ljava/lang/Throwable;
+    goto :goto_1
 
     .line 1
-    iget-object p1, v0, Lj3/b20;->d:Lj3/xu0;
+    :pswitch_0
+    iget-object v0, p0, Lj3/a20;->b:Ljava/lang/Object;
 
-    invoke-interface {p1}, Lj3/xu0;->get()Ljava/lang/Object;
+    check-cast v0, Landroid/webkit/CookieManager;
 
-    move-result-object p1
+    if-nez v0, :cond_0
 
-    check-cast p1, Lcom/google/android/gms/internal/ads/zzcpj;
+    const-string v0, ""
 
-    invoke-virtual {p1, v1, v2}, Lcom/google/android/gms/internal/ads/zzcpj;->C7(Lcom/google/android/gms/internal/ads/zzasp;I)Lj3/yl0;
+    goto :goto_0
 
-    move-result-object p1
+    .line 2
+    :cond_0
+    sget-object v1, Lj3/n;->m0:Lj3/f;
 
-    return-object p1
+    .line 3
+    sget-object v2, Lj3/t51;->j:Lj3/t51;
+
+    iget-object v2, v2, Lj3/t51;->f:Lj3/l;
+
+    .line 4
+    invoke-virtual {v2, v1}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 5
+    check-cast v1, Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Landroid/webkit/CookieManager;->getCookie(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_0
+    return-object v0
+
+    .line 6
+    :goto_1
+    iget-object v0, p0, Lj3/a20;->b:Ljava/lang/Object;
+
+    check-cast v0, Lj3/fc0;
+
+    .line 7
+    new-instance v1, Lj3/q90;
+
+    iget-object v0, v0, Lj3/fc0;->b:Landroid/os/Bundle;
+
+    const/4 v2, 0x1
+
+    invoke-direct {v1, v0, v2}, Lj3/q90;-><init>(Ljava/lang/Object;I)V
+
+    return-object v1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

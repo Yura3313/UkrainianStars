@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final synthetic a:Lz0/b$a;
+.field public final synthetic g:Lz0/b$a;
 
-.field public final synthetic b:Lz0/b;
+.field public final synthetic h:Lz0/b;
 
 
 # direct methods
@@ -17,9 +17,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lz0/a;->b:Lz0/b;
+    iput-object p1, p0, Lz0/a;->h:Lz0/b;
 
-    iput-object p2, p0, Lz0/a;->a:Lz0/b$a;
+    iput-object p2, p0, Lz0/a;->g:Lz0/b$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,7 +32,7 @@
     .locals 13
 
     .line 1
-    iget-object v0, p0, Lz0/a;->b:Lz0/b;
+    iget-object v0, p0, Lz0/a;->h:Lz0/b;
 
     .line 2
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -597,11 +597,15 @@
 
     invoke-direct {v7, v5}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
+    invoke-static {v7, v5}, Lio/sentry/instrumentation/file/SentryFileInputStream$Factory;->create(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
+
+    move-result-object v5
+
     .line 52
-    invoke-virtual {v7, v6}, Ljava/io/InputStream;->read([B)I
+    invoke-virtual {v5, v6}, Ljava/io/InputStream;->read([B)I
 
     .line 53
-    invoke-virtual {v7}, Ljava/io/InputStream;->close()V
+    invoke-virtual {v5}, Ljava/io/InputStream;->close()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -849,9 +853,7 @@
     .line 77
     iget-object v6, v0, Lz0/b;->a:Landroid/content/Context;
 
-    iget-object v7, v5, Lz0/c;->a:Ljava/lang/Object;
-
-    check-cast v7, Ljava/lang/String;
+    iget-object v7, v5, Lz0/c;->a:Ljava/lang/String;
 
     .line 78
     :try_start_2
@@ -899,9 +901,7 @@
 
     .line 82
     :goto_15
-    iget-object v5, v5, Lz0/c;->b:Ljava/lang/Object;
-
-    check-cast v5, Ljava/lang/String;
+    iget-object v5, v5, Lz0/c;->b:Ljava/lang/String;
 
     if-nez v5, :cond_14
 
@@ -1035,24 +1035,24 @@
 
     .line 91
     :cond_1e
-    iget-object v0, p0, Lz0/a;->b:Lz0/b;
+    iget-object v0, p0, Lz0/a;->h:Lz0/b;
 
     .line 92
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 93
-    iget-object v0, p0, Lz0/a;->a:Lz0/b$a;
+    iget-object v0, p0, Lz0/a;->g:Lz0/b$a;
 
     if-eqz v0, :cond_1f
 
     .line 94
-    check-cast v0, Lcom/supercell/titan/d;
+    check-cast v0, Lcom/supercell/titan/e;
 
     .line 95
-    iget-object v0, v0, Lcom/supercell/titan/d;->a:Lcom/supercell/titan/GameApp;
+    iget-object v0, v0, Lcom/supercell/titan/e;->a:Lcom/supercell/titan/GameApp;
 
     .line 96
-    iput-boolean v1, v0, Lcom/supercell/titan/GameApp;->i:Z
+    iput-boolean v1, v0, Lcom/supercell/titan/GameApp;->j:Z
 
     :cond_1f
     return-void

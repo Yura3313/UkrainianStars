@@ -124,7 +124,7 @@
     const-string v0, "Serializing "
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -169,7 +169,7 @@
     throw v0
 .end method
 
-.method public getSerializedSize(Lcom/google/protobuf/j1;)I
+.method public getSerializedSize(Lcom/google/protobuf/i1;)I
     .locals 2
 
     .line 1
@@ -182,7 +182,7 @@
     if-ne v0, v1, :cond_0
 
     .line 2
-    invoke-interface {p1, p0}, Lcom/google/protobuf/j1;->g(Ljava/lang/Object;)I
+    invoke-interface {p1, p0}, Lcom/google/protobuf/i1;->g(Ljava/lang/Object;)I
 
     move-result v0
 
@@ -286,7 +286,7 @@
 
     move-result v0
 
-    sget-object v1, Lcom/google/protobuf/i;->b:Lcom/google/protobuf/i;
+    sget-object v1, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
 
     .line 2
     new-array v1, v0, [B

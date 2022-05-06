@@ -93,10 +93,10 @@
 
     const-string v3, "[DEFAULT]"
 
-    check-cast v2, Lm/h;
+    check-cast v2, Lm/g;
 
     .line 4
-    invoke-virtual {v2, v3}, Lm/h;->e(Ljava/lang/Object;)I
+    invoke-virtual {v2, v3}, Lm/g;->e(Ljava/lang/Object;)I
 
     move-result v2
 
@@ -115,7 +115,7 @@
     if-eqz v2, :cond_1
 
     .line 5
-    invoke-static {}, Lr5/b;->a()Lr5/b;
+    invoke-static {}, Lr5/b;->b()Lr5/b;
 
     monitor-exit v1
 
@@ -136,7 +136,7 @@
 
     .line 8
     :cond_2
-    invoke-static {v0, v2}, Lr5/b;->b(Landroid/content/Context;Lr5/c;)Lr5/b;
+    invoke-static {v0, v2}, Lr5/b;->c(Landroid/content/Context;Lr5/c;)Lr5/b;
 
     monitor-exit v1
 

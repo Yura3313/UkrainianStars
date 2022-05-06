@@ -1,125 +1,97 @@
 .class public final Ltd/b;
-.super Ltd/d;
-.source "TutorialPageFragment.kt"
+.super Lle/j;
+.source "YoungPlayerLoginConfirmPageFragment.kt"
+
+# interfaces
+.implements Lke/p;
 
 
-# instance fields
-.field public f0:Ljava/util/HashMap;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lle/j;",
+        "Lke/p<",
+        "Ltd/e;",
+        "Ljava/lang/Exception;",
+        "Lae/i;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final g:Ltd/b;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ltd/d;-><init>()V
+    new-instance v0, Ltd/b;
+
+    invoke-direct {v0}, Ltd/b;-><init>()V
+
+    sput-object v0, Ltd/b;->g:Ltd/b;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public W0()V
-    .locals 1
-
-    iget-object v0, p0, Ltd/b;->f0:Ljava/util/HashMap;
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public c1(I)Landroid/view/View;
+.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    iget-object v0, p0, Ltd/b;->f0:Ljava/util/HashMap;
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Ltd/b;->f0:Ljava/util/HashMap;
-
-    :cond_0
-    iget-object v0, p0, Ltd/b;->f0:Ljava/util/HashMap;
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/view/View;
-
-    if-nez v0, :cond_2
-
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    check-cast p1, Ltd/e;
 
-    if-nez v0, :cond_1
-
-    const/4 p1, 0x0
-
-    return-object p1
-
-    .line 2
-    :cond_1
-    invoke-virtual {v0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    iget-object v1, p0, Ltd/b;->f0:Ljava/util/HashMap;
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p1
-
-    invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    :cond_2
-    return-object v0
-.end method
-
-.method public g0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 1
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    sget p3, Lcom/supercell/id/R$layout;->fragment_tutorial_cover_page:I
+    check-cast p2, Ljava/lang/Exception;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    if-eqz p1, :cond_2
+
+    if-eqz p2, :cond_1
+
+    .line 2
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
+    if-eqz p1, :cond_0
+
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
+
+    .line 3
+    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->F(Ljava/lang/Exception;Lke/l;)V
+
+    .line 4
+    :cond_0
+    sget-object p1, Lae/i;->a:Lae/i;
+
     return-object p1
 
-    :cond_0
-    const-string p1, "inflater"
+    :cond_1
+    const-string p1, "it"
 
-    .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    .line 5
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    const/4 p1, 0x0
+    throw v0
 
-    throw p1
-.end method
+    :cond_2
+    const-string p1, "$receiver"
 
-.method public synthetic i0()V
-    .locals 0
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    invoke-super {p0}, Ltd/d;->i0()V
-
-    invoke-virtual {p0}, Ltd/b;->W0()V
-
-    return-void
+    throw v0
 .end method

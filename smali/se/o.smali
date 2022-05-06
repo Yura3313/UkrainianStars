@@ -3,7 +3,7 @@
 .source "CompletableDeferred.kt"
 
 # interfaces
-.implements Lse/h0;
+.implements Lse/f0;
 
 
 # annotations
@@ -13,7 +13,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lse/h0<",
+        "Lse/f0<",
         "TT;>;"
     }
 .end annotation

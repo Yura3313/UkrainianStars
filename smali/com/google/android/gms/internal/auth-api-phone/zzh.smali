@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method public final E0(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method public final F0(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -56,7 +56,7 @@
     :goto_0
     check-cast p1, Lcom/google/android/gms/common/api/Status;
 
-    invoke-interface {p0, p1}, Lcom/google/android/gms/internal/auth-api-phone/zzg;->G0(Lcom/google/android/gms/common/api/Status;)V
+    invoke-interface {p0, p1}, Lcom/google/android/gms/internal/auth-api-phone/zzg;->H0(Lcom/google/android/gms/common/api/Status;)V
 
     return p3
 

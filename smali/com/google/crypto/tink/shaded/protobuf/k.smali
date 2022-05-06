@@ -7,7 +7,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<T::",
-        "Lcom/google/crypto/tink/shaded/protobuf/m$b<",
+        "Lcom/google/crypto/tink/shaded/protobuf/m$a<",
         "TT;>;>",
         "Ljava/lang/Object;"
     }

@@ -1,6 +1,6 @@
-.class public final Lod/b$b;
-.super Lle/j;
-.source "FriendsFragment.kt"
+.class public final synthetic Lod/b$b;
+.super Lle/i;
+.source "RegisterEnterContactDetailsPageFragment.kt"
 
 # interfaces
 .implements Lke/l;
@@ -8,31 +8,27 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lod/b;->d1()V
+    value = Lod/b;->a0(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
+    accessFlags = 0x1019
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
+        "Lle/i;",
         "Lke/l<",
+        "Ljava/lang/Integer;",
         "Ljava/lang/String;",
-        "Lse/h0<",
-        "+",
-        "Ljava/util/List<",
-        "+",
-        "Ltc/e;",
-        ">;>;>;"
+        ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lod/b$b;
+.field public static final h:Lod/b$b;
 
 
 # direct methods
@@ -43,7 +39,7 @@
 
     invoke-direct {v0}, Lod/b$b;-><init>()V
 
-    sput-object v0, Lod/b$b;->a:Lod/b$b;
+    sput-object v0, Lod/b$b;->h:Lod/b$b;
 
     return-void
 .end method
@@ -53,96 +49,74 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, v0}, Lle/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 7
+.method public final getName()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "getTitleKey"
+
+    return-object v0
+.end method
+
+.method public final getOwner()Lpe/d;
+    .locals 3
+
+    const-class v0, Lod/c;
 
     .line 1
-    check-cast p1, Ljava/lang/String;
+    sget-object v1, Lle/t;->a:Lle/u;
 
-    if-eqz p1, :cond_0
+    const-string v2, "supercellId_release"
 
-    .line 2
-    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v1, v0, v2}, Lle/u;->a(Ljava/lang/Class;Ljava/lang/String;)Lpe/d;
 
     move-result-object v0
 
-    .line 3
-    iget-object v0, v0, Lwd/r;->o:Lpc/i0;
+    return-object v0
+.end method
 
-    .line 4
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+.method public final getSignature()Ljava/lang/String;
+    .locals 1
 
-    const-string v1, "scid"
+    const-string v0, "getTitleKey(I)Ljava/lang/String;"
 
-    .line 5
-    invoke-static {v1, p1}, Ljava/util/Collections;->singletonMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+    return-object v0
+.end method
 
-    move-result-object v3
+.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-    const-string p1, "java.util.Collections.si\u2026(pair.first, pair.second)"
+    .line 1
+    check-cast p1, Ljava/lang/Number;
 
-    invoke-static {v3, p1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
 
-    const/4 v4, 0x0
+    move-result p1
 
-    const/4 v5, 0x4
+    if-eqz p1, :cond_1
 
-    const/4 v6, 0x0
+    const/4 v0, 0x1
 
-    const-string v2, "v2/friends.list"
-
-    move-object v1, v0
-
-    .line 6
-    invoke-static/range {v1 .. v6}, Lpc/f;->e(Lpc/f;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;ILjava/lang/Object;)Lse/h0;
-
-    move-result-object p1
-
-    .line 7
-    new-instance v1, Lpc/n0;
-
-    invoke-direct {v1, v0}, Lpc/n0;-><init>(Lpc/i0;)V
-
-    invoke-static {p1, v1}, Lwd/e1;->p(Lse/h0;Lke/l;)Lse/h0;
-
-    move-result-object p1
-
-    .line 8
-    sget-object v0, Lpc/o0;->a:Lpc/o0;
-
-    invoke-static {p1, v0}, Lwd/e1;->p(Lse/h0;Lke/l;)Lse/h0;
-
-    move-result-object p1
-
-    .line 9
-    new-instance v0, Lpc/p0;
-
-    sget-object v1, Ltc/e;->i:Ltc/e$a;
-
-    invoke-direct {v0, v1}, Lpc/p0;-><init>(Ltc/e$a;)V
-
-    invoke-static {p1, v0}, Lwd/e1;->p(Lse/h0;Lke/l;)Lse/h0;
-
-    move-result-object p1
-
-    return-object p1
-
-    :cond_0
-    const-string p1, "it"
-
-    .line 10
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    if-eq p1, v0, :cond_0
 
     const/4 p1, 0x0
 
-    throw p1
+    goto :goto_0
+
+    :cond_0
+    const-string p1, "register_tab_phone"
+
+    goto :goto_0
+
+    :cond_1
+    const-string p1, "register_tab_email"
+
+    :goto_0
+    return-object p1
 .end method

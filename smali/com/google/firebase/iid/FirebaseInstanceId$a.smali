@@ -71,7 +71,7 @@
     iget-object v0, v0, Lcom/google/firebase/iid/FirebaseInstanceId;->b:Lr5/b;
 
     .line 6
-    invoke-virtual {v0}, Lr5/b;->e()V
+    invoke-virtual {v0}, Lr5/b;->f()V
 
     .line 7
     iget-object v0, v0, Lr5/b;->a:Landroid/content/Context;
@@ -127,7 +127,7 @@
     iget-object v1, v1, Lcom/google/firebase/iid/FirebaseInstanceId;->b:Lr5/b;
 
     .line 15
-    invoke-virtual {v1}, Lr5/b;->e()V
+    invoke-virtual {v1}, Lr5/b;->f()V
 
     .line 16
     iget-object v1, v1, Lr5/b;->a:Landroid/content/Context;
@@ -225,9 +225,9 @@
     if-eqz p1, :cond_3
 
     .line 28
-    new-instance p1, Lw5/h0;
+    new-instance p1, Lw5/f0;
 
-    invoke-direct {p1, p0}, Lw5/h0;-><init>(Lcom/google/firebase/iid/FirebaseInstanceId$a;)V
+    invoke-direct {p1, p0}, Lw5/f0;-><init>(Lcom/google/firebase/iid/FirebaseInstanceId$a;)V
 
     iput-object p1, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->c:Lv5/b;
 
@@ -277,7 +277,7 @@
     iget-object v0, v0, Lcom/google/firebase/iid/FirebaseInstanceId;->b:Lr5/b;
 
     .line 5
-    invoke-virtual {v0}, Lr5/b;->e()V
+    invoke-virtual {v0}, Lr5/b;->f()V
 
     .line 6
     iget-object v0, v0, Lr5/b;->i:Ljava/util/concurrent/atomic/AtomicBoolean;

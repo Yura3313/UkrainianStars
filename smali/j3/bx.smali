@@ -4,82 +4,28 @@
 
 
 # instance fields
-.field public final a:Lk2/c;
+.field public final a:Lcom/google/android/gms/internal/ads/zzani;
 
-.field public final b:Ljava/util/concurrent/Executor;
+.field public final b:Lcom/google/android/gms/internal/ads/zzand;
+
+.field public final c:Lcom/google/android/gms/internal/ads/zzanj;
 
 
 # direct methods
-.method public constructor <init>(Lj3/cc;Lk2/c;Ljava/util/concurrent/Executor;)V
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzani;Lcom/google/android/gms/internal/ads/zzand;Lcom/google/android/gms/internal/ads/zzanj;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p2, p0, Lj3/bx;->a:Lk2/c;
+    iput-object p1, p0, Lj3/bx;->a:Lcom/google/android/gms/internal/ads/zzani;
 
     .line 3
-    iput-object p3, p0, Lj3/bx;->b:Ljava/util/concurrent/Executor;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a([BLandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lj3/bx;->a:Lk2/c;
-
-    invoke-interface {v0}, Lk2/c;->b()J
-
-    .line 2
-    array-length v0, p1
-
-    const/4 v1, 0x0
-
-    .line 3
-    invoke-static {p1, v1, v0, p2}, Landroid/graphics/BitmapFactory;->decodeByteArray([BIILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
-
-    move-result-object p1
+    iput-object p2, p0, Lj3/bx;->b:Lcom/google/android/gms/internal/ads/zzand;
 
     .line 4
-    iget-object p2, p0, Lj3/bx;->a:Lk2/c;
+    iput-object p3, p0, Lj3/bx;->c:Lcom/google/android/gms/internal/ads/zzanj;
 
-    invoke-interface {p2}, Lk2/c;->b()J
-
-    .line 5
-    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v0, 0x13
-
-    if-lt p2, v0, :cond_0
-
-    if-eqz p1, :cond_0
-
-    .line 6
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
-
-    .line 7
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
-
-    .line 8
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getAllocationByteCount()I
-
-    .line 9
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
-
-    move-result-object p2
-
-    invoke-virtual {p2}, Landroid/os/Looper;->getThread()Ljava/lang/Thread;
-
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
-
-    .line 10
-    invoke-static {}, Lp0/d;->i()Z
-
-    :cond_0
-    return-object p1
+    return-void
 .end method

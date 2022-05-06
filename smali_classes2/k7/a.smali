@@ -12,7 +12,7 @@
 
 .field public d:Ljava/lang/String;
 
-.field public e:Ll7/a;
+.field public e:I
 
 
 # direct methods

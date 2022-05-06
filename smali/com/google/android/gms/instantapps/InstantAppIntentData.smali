@@ -23,11 +23,11 @@
 
 
 # instance fields
-.field public final a:Landroid/content/Intent;
+.field public final g:Landroid/content/Intent;
 
-.field public final b:I
+.field public final h:I
 
-.field public final h:Ljava/lang/String;
+.field public final i:Ljava/lang/String;
 
 
 # direct methods
@@ -60,13 +60,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->a:Landroid/content/Intent;
+    iput-object p1, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->g:Landroid/content/Intent;
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->b:I
+    iput p2, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->h:I
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->i:Ljava/lang/String;
 
     return-void
 .end method
@@ -86,7 +86,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->a:Landroid/content/Intent;
+    iget-object v2, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->g:Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -96,7 +96,7 @@
     const/4 p2, 0x2
 
     .line 4
-    iget v1, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->b:I
+    iget v1, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->h:I
 
     const/4 v2, 0x4
 
@@ -109,7 +109,7 @@
     const/4 p2, 0x3
 
     .line 7
-    iget-object v1, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/instantapps/InstantAppIntentData;->i:Ljava/lang/String;
 
     .line 8
     invoke-static {p1, p2, v1, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V

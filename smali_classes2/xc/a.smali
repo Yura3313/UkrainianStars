@@ -1,115 +1,300 @@
 .class public final Lxc/a;
 .super Ljava/lang/Object;
-.source "FaqFragment.kt"
+.source "IngameFriendRequestsFragment.kt"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lvd/j1;
 
 
 # instance fields
-.field public final synthetic a:Landroid/view/View;
+.field public final a:I
 
-.field public final synthetic b:Ljava/lang/String;
+.field public final b:Lqc/i;
+
+.field public final c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;Ljava/lang/String;)V
+.method public constructor <init>(Lqc/i;Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;)V
     .locals 0
 
-    iput-object p1, p0, Lxc/a;->a:Landroid/view/View;
-
-    iput-object p2, p0, Lxc/a;->b:Ljava/lang/String;
-
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lxc/a;->b:Lqc/i;
+
+    iput-object p2, p0, Lxc/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
+
+    .line 2
+    sget p1, Lcom/supercell/id/R$layout;->fragment_ingame_friend_requests_item_friend_request:I
+
+    iput p1, p0, Lxc/a;->a:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 9
+.method public a(Lvd/j1;)Z
+    .locals 3
+
+    if-eqz p1, :cond_2
 
     .line 1
-    iget-object p1, p0, Lxc/a;->a:Landroid/view/View;
+    instance-of v0, p1, Lxc/a;
 
-    const-string v0, "itemRow"
+    const/4 v1, 0x0
 
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    if-nez v0, :cond_0
 
-    sget v1, Lcom/supercell/id/R$id;->descriptionContainer:I
-
-    invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/supercell/id/view/ExpandableFrameLayout;
-
-    sget v2, Lcom/supercell/id/view/ExpandableFrameLayout;->j:I
+    return v1
 
     .line 2
-    invoke-virtual {p1}, Lcom/supercell/id/view/ExpandableFrameLayout;->b()Z
-
-    move-result v2
-
-    const/4 v3, 0x1
-
-    xor-int/2addr v2, v3
-
-    invoke-virtual {p1, v2, v3}, Lcom/supercell/id/view/ExpandableFrameLayout;->c(ZZ)V
+    :cond_0
+    iget-object v0, p0, Lxc/a;->b:Lqc/i;
 
     .line 3
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
-
-    move-result-object p1
+    iget-object v0, v0, Lqc/i;->b:Ljava/lang/String;
 
     .line 4
-    iget-object v2, p1, Lwd/r;->m:La2/a;
+    check-cast p1, Lxc/a;
 
     .line 5
-    iget-object v5, p0, Lxc/a;->b:Ljava/lang/String;
+    iget-object v2, p1, Lxc/a;->b:Lqc/i;
 
-    iget-object p1, p0, Lxc/a;->a:Landroid/view/View;
+    .line 6
+    iget-object v2, v2, Lqc/i;->b:Ljava/lang/String;
 
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 7
+    invoke-static {v0, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    move-result v0
 
-    move-result-object p1
+    if-eqz v0, :cond_1
 
-    check-cast p1, Lcom/supercell/id/view/ExpandableFrameLayout;
+    .line 8
+    iget-object v0, p0, Lxc/a;->b:Lqc/i;
 
-    invoke-virtual {p1}, Lcom/supercell/id/view/ExpandableFrameLayout;->b()Z
+    .line 9
+    iget-object v0, v0, Lqc/i;->c:Lcom/supercell/id/model/ProfileImage;
+
+    .line 10
+    iget-object v2, p1, Lxc/a;->b:Lqc/i;
+
+    .line 11
+    iget-object v2, v2, Lqc/i;->c:Lcom/supercell/id/model/ProfileImage;
+
+    .line 12
+    invoke-static {v0, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 13
+    iget-object v0, p0, Lxc/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
+
+    .line 14
+    iget-object v0, v0, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->g:Ljava/util/Date;
+
+    .line 15
+    iget-object p1, p1, Lxc/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
+
+    .line 16
+    iget-object p1, p1, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->g:Ljava/util/Date;
+
+    .line 17
+    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    const/4 v1, 0x1
+
+    :cond_1
+    return v1
+
+    :cond_2
+    const-string p1, "other"
+
+    .line 18
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public c()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lxc/a;->a:I
+
+    return v0
+.end method
+
+.method public d(Lvd/j1;)Z
+    .locals 1
+
+    if-eqz p1, :cond_1
+
+    .line 1
+    instance-of v0, p1, Lxc/a;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lxc/a;
+
+    .line 2
+    iget-object p1, p1, Lxc/a;->b:Lqc/i;
+
+    .line 3
+    iget-object p1, p1, Lqc/i;->a:Lqc/d0;
+
+    .line 4
+    iget-object v0, p0, Lxc/a;->b:Lqc/i;
+
+    .line 5
+    iget-object v0, v0, Lqc/i;->a:Lqc/d0;
+
+    .line 6
+    invoke-static {p1, v0}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    const-wide/16 v0, 0x1
+    const/4 p1, 0x1
 
     goto :goto_0
 
     :cond_0
-    const-wide/16 v0, 0x0
+    const/4 p1, 0x0
 
-    .line 6
     :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    return p1
 
-    move-result-object v6
-
-    const/4 v7, 0x0
-
-    const/16 v8, 0x10
-
-    const-string v3, "FAQ"
-
-    const-string v4, "click"
+    :cond_1
+    const-string p1, "other"
 
     .line 7
-    invoke-static/range {v2 .. v8}, La2/a;->b(La2/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    return-void
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    if-eq p0, p1, :cond_1
+
+    instance-of v0, p1, Lxc/a;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lxc/a;
+
+    iget-object v0, p0, Lxc/a;->b:Lqc/i;
+
+    iget-object v1, p1, Lxc/a;->b:Lqc/i;
+
+    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lxc/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
+
+    iget-object p1, p1, Lxc/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
+
+    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public hashCode()I
+    .locals 3
+
+    iget-object v0, p0, Lxc/a;->b:Lqc/i;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lqc/i;->hashCode()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Lxc/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    move-result v1
+
+    :cond_1
+    add-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    const-string v0, "FriendRow(friend="
+
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lxc/a;->b:Lqc/i;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", relationship="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lxc/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ")"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

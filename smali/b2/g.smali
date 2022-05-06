@@ -152,7 +152,7 @@
     invoke-direct/range {v3 .. v8}, Lcom/google/android/gms/common/data/DataHolder;-><init>(I[Ljava/lang/String;[Landroid/database/CursorWindow;ILandroid/os/Bundle;)V
 
     .line 13
-    invoke-virtual {p1}, Lcom/google/android/gms/common/data/DataHolder;->G2()V
+    invoke-virtual {p1}, Lcom/google/android/gms/common/data/DataHolder;->I2()V
 
     return-object p1
 .end method

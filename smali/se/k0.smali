@@ -1,10 +1,6 @@
-.class public final Lse/k0;
-.super Lse/m0;
+.class public abstract Lse/k0;
+.super Lue/g;
 .source "Dispatched.kt"
-
-# interfaces
-.implements Lfe/d;
-.implements Lde/d;
 
 
 # annotations
@@ -13,258 +9,48 @@
         "<T:",
         "Ljava/lang/Object;",
         ">",
-        "Lse/m0<",
-        "TT;>;",
-        "Lfe/d;",
-        "Lde/d<",
-        "TT;>;"
+        "Lue/g;"
     }
 .end annotation
 
 
 # instance fields
-.field public i:Ljava/lang/Object;
-
-.field public final j:Lfe/d;
-
-.field public final k:Ljava/lang/Object;
-
-.field public final l:Lse/w;
-
-.field public final m:Lde/d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lde/d<",
-            "TT;>;"
-        }
-    .end annotation
-.end field
+.field public i:I
 
 
 # direct methods
-.method public constructor <init>(Lse/w;Lde/d;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lse/w;",
-            "Lde/d<",
-            "-TT;>;)V"
-        }
-    .end annotation
-
-    const/4 v0, 0x0
+.method public constructor <init>(I)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0, v0}, Lse/m0;-><init>(I)V
+    invoke-direct {p0}, Lue/g;-><init>()V
 
-    iput-object p1, p0, Lse/k0;->l:Lse/w;
-
-    iput-object p2, p0, Lse/k0;->m:Lde/d;
-
-    .line 2
-    sget-object p1, Lse/l0;->a:Lp5/b0;
-
-    .line 3
-    iput-object p1, p0, Lse/k0;->i:Ljava/lang/Object;
-
-    .line 4
-    instance-of p1, p2, Lfe/d;
-
-    if-nez p1, :cond_0
-
-    const/4 p2, 0x0
-
-    :cond_0
-    check-cast p2, Lfe/d;
-
-    iput-object p2, p0, Lse/k0;->j:Lfe/d;
-
-    .line 5
-    invoke-virtual {p0}, Lse/k0;->getContext()Lde/f;
-
-    move-result-object p1
-
-    invoke-static {p1}, Lte/x;->b(Lde/f;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lse/k0;->k:Ljava/lang/Object;
+    iput p1, p0, Lse/k0;->i:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Lfe/d;
-    .locals 1
+.method public f(Ljava/lang/Object;Ljava/lang/Throwable;)V
+    .locals 0
 
-    .line 1
-    iget-object v0, p0, Lse/k0;->j:Lfe/d;
+    if-eqz p2, :cond_0
 
-    return-object v0
-.end method
-
-.method public b(Ljava/lang/Object;)V
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Lse/k0;->m:Lde/d;
-
-    invoke-interface {v0}, Lde/d;->getContext()Lde/f;
-
-    move-result-object v0
-
-    .line 2
-    invoke-static {p1}, Lbe/a;->d(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    .line 3
-    iget-object v2, p0, Lse/k0;->l:Lse/w;
-
-    invoke-virtual {v2, v0}, Lse/w;->isDispatchNeeded(Lde/f;)Z
-
-    move-result v2
-
-    const/4 v3, 0x0
-
-    if-eqz v2, :cond_0
-
-    .line 4
-    iput-object v1, p0, Lse/k0;->i:Ljava/lang/Object;
-
-    .line 5
-    iput v3, p0, Lse/m0;->h:I
-
-    .line 6
-    iget-object p1, p0, Lse/k0;->l:Lse/w;
-
-    invoke-virtual {p1, v0, p0}, Lse/w;->dispatch(Lde/f;Ljava/lang/Runnable;)V
-
-    goto :goto_1
-
-    .line 7
-    :cond_0
-    sget-object v0, Lse/r1;->b:Lse/r1;
-
-    invoke-static {}, Lse/r1;->a()Lse/r0;
-
-    move-result-object v0
-
-    .line 8
-    invoke-virtual {v0}, Lse/r0;->t()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    .line 9
-    iput-object v1, p0, Lse/k0;->i:Ljava/lang/Object;
-
-    .line 10
-    iput v3, p0, Lse/m0;->h:I
-
-    .line 11
-    invoke-virtual {v0, p0}, Lse/r0;->r(Lse/m0;)V
-
-    goto :goto_1
-
-    :cond_1
-    const/4 v1, 0x1
-
-    .line 12
-    invoke-virtual {v0, v1}, Lse/r0;->s(Z)V
-
-    .line 13
-    :try_start_0
-    invoke-virtual {p0}, Lse/k0;->getContext()Lde/f;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lse/k0;->k:Ljava/lang/Object;
-
-    .line 14
-    invoke-static {v2, v3}, Lte/x;->c(Lde/f;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v3
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    .line 15
-    :try_start_1
-    iget-object v4, p0, Lse/k0;->m:Lde/d;
-
-    invoke-interface {v4, p1}, Lde/d;->b(Ljava/lang/Object;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 16
-    :try_start_2
-    invoke-static {v2, v3}, Lte/x;->a(Lde/f;Ljava/lang/Object;)V
-
-    .line 17
-    :cond_2
-    invoke-virtual {v0}, Lse/r0;->u()Z
-
-    move-result p1
-
-    if-nez p1, :cond_2
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception p1
-
-    .line 18
-    invoke-static {v2, v3}, Lte/x;->a(Lde/f;Ljava/lang/Object;)V
-
-    throw p1
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    :catchall_1
-    move-exception p1
-
-    const/4 v2, 0x0
-
-    .line 19
-    :try_start_3
-    invoke-virtual {p0, p1, v2}, Lse/m0;->i(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_2
-
-    .line 20
-    :goto_0
-    invoke-virtual {v0, v1}, Lse/r0;->k(Z)V
-
-    :goto_1
     return-void
 
-    :catchall_2
-    move-exception p1
+    :cond_0
+    const-string p1, "cause"
 
-    invoke-virtual {v0, v1}, Lse/r0;->k(Z)V
+    .line 1
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    goto :goto_3
+    const/4 p1, 0x0
 
-    :goto_2
     throw p1
-
-    :goto_3
-    goto :goto_2
 .end method
 
-.method public c()Ljava/lang/StackTraceElement;
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public g()Lde/d;
-    .locals 0
+.method public abstract g()Lde/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -272,73 +58,335 @@
             "TT;>;"
         }
     .end annotation
-
-    return-object p0
 .end method
 
-.method public getContext()Lde/f;
-    .locals 1
+.method public h(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/lang/Object;",
+            ")TT;"
+        }
+    .end annotation
 
-    iget-object v0, p0, Lse/k0;->m:Lde/d;
-
-    invoke-interface {v0}, Lde/d;->getContext()Lde/f;
-
-    move-result-object v0
-
-    return-object v0
+    return-object p1
 .end method
 
-.method public j()Ljava/lang/Object;
+.method public final i(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
     .locals 2
 
+    if-nez p1, :cond_0
+
+    if-nez p2, :cond_0
+
+    return-void
+
+    :cond_0
+    if-eqz p1, :cond_1
+
+    if-eqz p2, :cond_1
+
     .line 1
-    iget-object v0, p0, Lse/k0;->i:Ljava/lang/Object;
+    invoke-static {p1, p2}, Lae/a;->a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+
+    :cond_1
+    if-eqz p1, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    move-object p1, p2
 
     .line 2
-    sget-boolean v1, Lse/e0;->a:Z
+    :goto_0
+    new-instance p2, Lse/b0;
 
-    .line 3
-    sget-object v1, Lse/l0;->a:Lp5/b0;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 4
-    iput-object v1, p0, Lse/k0;->i:Ljava/lang/Object;
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    return-object v0
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 2
-
-    const-string v0, "DispatchedContinuation["
-
-    .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lse/k0;->l:Lse/w;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", "
+    const-string v1, "Fatal exception in coroutines machinery for "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lse/k0;->m:Lde/d;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-static {v1}, Lbe/e;->h(Lde/d;)Ljava/lang/String;
-
-    move-result-object v1
+    const-string v1, ". "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/16 v1, 0x5d
+    const-string v1, "Please read KDoc to \'handleFatalException\' method and report this incident to maintainers"
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    return-object v0
+    if-eqz p1, :cond_3
+
+    invoke-direct {p2, v0, p1}, Lse/b0;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 3
+    invoke-virtual {p0}, Lse/k0;->g()Lde/d;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Lde/d;->getContext()Lde/f;
+
+    move-result-object p1
+
+    invoke-static {p1, p2}, Lcom/android/billingclient/api/v;->c(Lde/f;Ljava/lang/Throwable;)V
+
+    return-void
+
+    .line 4
+    :cond_3
+    invoke-static {}, Ls3/b;->g()V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public abstract j()Ljava/lang/Object;
+.end method
+
+.method public final run()V
+    .locals 9
+
+    .line 1
+    iget-object v0, p0, Lue/g;->h:Lue/h;
+
+    .line 2
+    :try_start_0
+    invoke-virtual {p0}, Lse/k0;->g()Lde/d;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_5
+
+    check-cast v1, Lse/i0;
+
+    .line 3
+    iget-object v2, v1, Lse/i0;->n:Lde/d;
+
+    .line 4
+    invoke-interface {v2}, Lde/d;->getContext()Lde/f;
+
+    move-result-object v3
+
+    .line 5
+    invoke-virtual {p0}, Lse/k0;->j()Ljava/lang/Object;
+
+    move-result-object v4
+
+    .line 6
+    iget-object v1, v1, Lse/i0;->l:Ljava/lang/Object;
+
+    .line 7
+    invoke-static {v3, v1}, Lte/y;->c(Lde/f;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_2
+
+    .line 8
+    :try_start_1
+    instance-of v5, v4, Lse/q;
+
+    const/4 v6, 0x0
+
+    if-nez v5, :cond_0
+
+    move-object v5, v6
+
+    goto :goto_0
+
+    :cond_0
+    move-object v5, v4
+
+    :goto_0
+    check-cast v5, Lse/q;
+
+    if-eqz v5, :cond_1
+
+    iget-object v5, v5, Lse/q;->a:Ljava/lang/Throwable;
+
+    goto :goto_1
+
+    :cond_1
+    move-object v5, v6
+
+    .line 9
+    :goto_1
+    iget v7, p0, Lse/k0;->i:I
+
+    invoke-static {v7}, Lm5/q;->a(I)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_2
+
+    sget-object v7, Lse/b1;->f:Lse/b1$b;
+
+    invoke-interface {v3, v7}, Lde/f;->get(Lde/f$c;)Lde/f$b;
+
+    move-result-object v7
+
+    check-cast v7, Lse/b1;
+
+    goto :goto_2
+
+    :cond_2
+    move-object v7, v6
+
+    :goto_2
+    if-nez v5, :cond_3
+
+    if-eqz v7, :cond_3
+
+    .line 10
+    invoke-interface {v7}, Lse/b1;->isActive()Z
+
+    move-result v8
+
+    if-nez v8, :cond_3
+
+    .line 11
+    invoke-interface {v7}, Lse/b1;->e()Ljava/util/concurrent/CancellationException;
+
+    move-result-object v5
+
+    .line 12
+    invoke-virtual {p0, v4, v5}, Lse/k0;->f(Ljava/lang/Object;Ljava/lang/Throwable;)V
+
+    .line 13
+    invoke-static {v5, v2}, Lte/v;->c(Ljava/lang/Throwable;Lde/d;)Ljava/lang/Throwable;
+
+    move-result-object v4
+
+    invoke-static {v4}, Lcom/android/billingclient/api/v;->b(Ljava/lang/Throwable;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    invoke-interface {v2, v4}, Lde/d;->b(Ljava/lang/Object;)V
+
+    goto :goto_3
+
+    :cond_3
+    if-eqz v5, :cond_4
+
+    .line 14
+    invoke-static {v5, v2}, Lte/v;->c(Ljava/lang/Throwable;Lde/d;)Ljava/lang/Throwable;
+
+    move-result-object v4
+
+    invoke-static {v4}, Lcom/android/billingclient/api/v;->b(Ljava/lang/Throwable;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    invoke-interface {v2, v4}, Lde/d;->b(Ljava/lang/Object;)V
+
+    goto :goto_3
+
+    .line 15
+    :cond_4
+    invoke-virtual {p0, v4}, Lse/k0;->h(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    invoke-interface {v2, v4}, Lde/d;->b(Ljava/lang/Object;)V
+
+    .line 16
+    :goto_3
+    sget-object v2, Lae/i;->a:Lae/i;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 17
+    :try_start_2
+    invoke-static {v3, v1}, Lte/y;->a(Lde/f;Ljava/lang/Object;)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
+
+    .line 18
+    :try_start_3
+    invoke-interface {v0}, Lue/h;->b()V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    goto :goto_4
+
+    :catchall_0
+    move-exception v0
+
+    invoke-static {v0}, Lcom/android/billingclient/api/v;->b(Ljava/lang/Throwable;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    .line 19
+    :goto_4
+    invoke-static {v2}, Lae/e;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v6, v0}, Lse/k0;->i(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+
+    goto :goto_6
+
+    :catchall_1
+    move-exception v2
+
+    .line 20
+    :try_start_4
+    invoke-static {v3, v1}, Lte/y;->a(Lde/f;Ljava/lang/Object;)V
+
+    throw v2
+
+    .line 21
+    :cond_5
+    new-instance v1, Lkotlin/TypeCastException;
+
+    const-string v2, "null cannot be cast to non-null type kotlinx.coroutines.DispatchedContinuation<T>"
+
+    invoke-direct {v1, v2}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_2
+
+    :catchall_2
+    move-exception v1
+
+    .line 22
+    :try_start_5
+    invoke-interface {v0}, Lue/h;->b()V
+
+    sget-object v0, Lae/i;->a:Lae/i;
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_3
+
+    goto :goto_5
+
+    :catchall_3
+    move-exception v0
+
+    invoke-static {v0}, Lcom/android/billingclient/api/v;->b(Ljava/lang/Throwable;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 23
+    :goto_5
+    invoke-static {v0}, Lae/e;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v1, v0}, Lse/k0;->i(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+
+    :goto_6
+    return-void
 .end method

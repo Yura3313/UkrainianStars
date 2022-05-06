@@ -145,7 +145,7 @@
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;I)V
+.method public constructor <init>(Ljava/lang/String;I)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -159,158 +159,13 @@
     return-void
 .end method
 
-.method public static downFrom(Landroidx/lifecycle/f$c;)Landroidx/lifecycle/f$b;
+.method public static c(Landroidx/lifecycle/f$c;)Landroidx/lifecycle/f$b;
     .locals 1
 
     .line 1
-    sget-object v0, Landroidx/lifecycle/f$a;->a:[I
-
     invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
 
     move-result p0
-
-    aget p0, v0, p0
-
-    const/4 v0, 0x1
-
-    if-eq p0, v0, :cond_2
-
-    const/4 v0, 0x2
-
-    if-eq p0, v0, :cond_1
-
-    const/4 v0, 0x3
-
-    if-eq p0, v0, :cond_0
-
-    const/4 p0, 0x0
-
-    return-object p0
-
-    .line 2
-    :cond_0
-    sget-object p0, Landroidx/lifecycle/f$b;->ON_PAUSE:Landroidx/lifecycle/f$b;
-
-    return-object p0
-
-    .line 3
-    :cond_1
-    sget-object p0, Landroidx/lifecycle/f$b;->ON_STOP:Landroidx/lifecycle/f$b;
-
-    return-object p0
-
-    .line 4
-    :cond_2
-    sget-object p0, Landroidx/lifecycle/f$b;->ON_DESTROY:Landroidx/lifecycle/f$b;
-
-    return-object p0
-.end method
-
-.method public static downTo(Landroidx/lifecycle/f$c;)Landroidx/lifecycle/f$b;
-    .locals 1
-
-    .line 1
-    sget-object v0, Landroidx/lifecycle/f$a;->a:[I
-
-    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
-
-    move-result p0
-
-    aget p0, v0, p0
-
-    const/4 v0, 0x1
-
-    if-eq p0, v0, :cond_2
-
-    const/4 v0, 0x2
-
-    if-eq p0, v0, :cond_1
-
-    const/4 v0, 0x4
-
-    if-eq p0, v0, :cond_0
-
-    const/4 p0, 0x0
-
-    return-object p0
-
-    .line 2
-    :cond_0
-    sget-object p0, Landroidx/lifecycle/f$b;->ON_DESTROY:Landroidx/lifecycle/f$b;
-
-    return-object p0
-
-    .line 3
-    :cond_1
-    sget-object p0, Landroidx/lifecycle/f$b;->ON_PAUSE:Landroidx/lifecycle/f$b;
-
-    return-object p0
-
-    .line 4
-    :cond_2
-    sget-object p0, Landroidx/lifecycle/f$b;->ON_STOP:Landroidx/lifecycle/f$b;
-
-    return-object p0
-.end method
-
-.method public static upFrom(Landroidx/lifecycle/f$c;)Landroidx/lifecycle/f$b;
-    .locals 1
-
-    .line 1
-    sget-object v0, Landroidx/lifecycle/f$a;->a:[I
-
-    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
-
-    move-result p0
-
-    aget p0, v0, p0
-
-    const/4 v0, 0x1
-
-    if-eq p0, v0, :cond_2
-
-    const/4 v0, 0x2
-
-    if-eq p0, v0, :cond_1
-
-    const/4 v0, 0x5
-
-    if-eq p0, v0, :cond_0
-
-    const/4 p0, 0x0
-
-    return-object p0
-
-    .line 2
-    :cond_0
-    sget-object p0, Landroidx/lifecycle/f$b;->ON_CREATE:Landroidx/lifecycle/f$b;
-
-    return-object p0
-
-    .line 3
-    :cond_1
-    sget-object p0, Landroidx/lifecycle/f$b;->ON_RESUME:Landroidx/lifecycle/f$b;
-
-    return-object p0
-
-    .line 4
-    :cond_2
-    sget-object p0, Landroidx/lifecycle/f$b;->ON_START:Landroidx/lifecycle/f$b;
-
-    return-object p0
-.end method
-
-.method public static upTo(Landroidx/lifecycle/f$c;)Landroidx/lifecycle/f$b;
-    .locals 1
-
-    .line 1
-    sget-object v0, Landroidx/lifecycle/f$a;->a:[I
-
-    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
-
-    move-result p0
-
-    aget p0, v0, p0
 
     const/4 v0, 0x1
 
@@ -379,7 +234,7 @@
 
 
 # virtual methods
-.method public getTargetState()Landroidx/lifecycle/f$c;
+.method public a()Landroidx/lifecycle/f$c;
     .locals 3
 
     .line 1
@@ -416,25 +271,25 @@
 
     .line 3
     :pswitch_0
-    sget-object v0, Landroidx/lifecycle/f$c;->DESTROYED:Landroidx/lifecycle/f$c;
+    sget-object v0, Landroidx/lifecycle/f$c;->g:Landroidx/lifecycle/f$c;
 
     return-object v0
 
     .line 4
     :pswitch_1
-    sget-object v0, Landroidx/lifecycle/f$c;->RESUMED:Landroidx/lifecycle/f$c;
+    sget-object v0, Landroidx/lifecycle/f$c;->k:Landroidx/lifecycle/f$c;
 
     return-object v0
 
     .line 5
     :pswitch_2
-    sget-object v0, Landroidx/lifecycle/f$c;->STARTED:Landroidx/lifecycle/f$c;
+    sget-object v0, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
 
     return-object v0
 
     .line 6
     :pswitch_3
-    sget-object v0, Landroidx/lifecycle/f$c;->CREATED:Landroidx/lifecycle/f$c;
+    sget-object v0, Landroidx/lifecycle/f$c;->i:Landroidx/lifecycle/f$c;
 
     return-object v0
 

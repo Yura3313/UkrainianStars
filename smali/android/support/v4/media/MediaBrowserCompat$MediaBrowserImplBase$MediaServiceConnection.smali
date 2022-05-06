@@ -111,13 +111,13 @@
 
     iget-object p1, p1, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mServiceComponent:Landroid/content/ComponentName;
 
-    invoke-static {p1}, Landroid/support/v4/media/a;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
 
     iget-object p1, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase$MediaServiceConnection;->this$0:Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;
 
     iget-object p1, p1, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mServiceConnection:Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase$MediaServiceConnection;
 
-    invoke-static {p1}, Landroid/support/v4/media/a;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 

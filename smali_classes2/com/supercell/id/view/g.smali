@@ -12,26 +12,26 @@
         "Lle/j;",
         "Lke/p<",
         "Landroid/graphics/drawable/Drawable;",
-        "Lqd/g;",
-        "Lbe/n;",
+        "Lpd/g;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
-.field public final synthetic b:Ljava/lang/ref/WeakReference;
+.field public final synthetic h:Ljava/lang/ref/WeakReference;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/ref/WeakReference;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/g;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/view/g;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/id/view/g;->b:Ljava/lang/ref/WeakReference;
+    iput-object p2, p0, Lcom/supercell/id/view/g;->h:Ljava/lang/ref/WeakReference;
 
     const/4 p1, 0x2
 
@@ -48,7 +48,7 @@
     .line 1
     check-cast p1, Landroid/graphics/drawable/Drawable;
 
-    check-cast p2, Lqd/g;
+    check-cast p2, Lpd/g;
 
     const/4 v0, 0x0
 
@@ -57,7 +57,7 @@
     if-eqz p2, :cond_1
 
     .line 2
-    iget-object p2, p0, Lcom/supercell/id/view/g;->b:Ljava/lang/ref/WeakReference;
+    iget-object p2, p0, Lcom/supercell/id/view/g;->h:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -67,13 +67,13 @@
 
     if-eqz p2, :cond_0
 
-    iget-object v0, p0, Lcom/supercell/id/view/g;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/view/g;->g:Ljava/lang/String;
 
     invoke-static {p2, p1, v0}, Lcom/supercell/id/view/ProgressBar;->l(Lcom/supercell/id/view/ProgressBar;Landroid/graphics/drawable/Drawable;Ljava/lang/String;)V
 
     .line 3
     :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -81,14 +81,14 @@
     const-string p1, "<anonymous parameter 1>"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_2
     const-string p1, "drawable"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

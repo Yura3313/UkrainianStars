@@ -4,15 +4,15 @@
 
 
 # static fields
-.field public static final n:I
-
 .field public static final o:I
+
+.field public static final p:I
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final b:Ljava/util/List;
+.field public final h:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -22,7 +22,7 @@
     .end annotation
 .end field
 
-.field public final h:Ljava/util/List;
+.field public final i:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -32,8 +32,6 @@
     .end annotation
 .end field
 
-.field public final i:I
-
 .field public final j:I
 
 .field public final k:I
@@ -41,6 +39,8 @@
 .field public final l:I
 
 .field public final m:I
+
+.field public final n:I
 
 
 # direct methods
@@ -66,10 +66,10 @@
     move-result v1
 
     .line 3
-    sput v1, Lcom/google/android/gms/internal/ads/zzadd;->n:I
+    sput v1, Lcom/google/android/gms/internal/ads/zzadd;->o:I
 
     .line 4
-    sput v0, Lcom/google/android/gms/internal/ads/zzadd;->o:I
+    sput v0, Lcom/google/android/gms/internal/ads/zzadd;->p:I
 
     return-void
 .end method
@@ -98,17 +98,17 @@
 
     invoke-direct {p8}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p8, p0, Lcom/google/android/gms/internal/ads/zzadd;->b:Ljava/util/List;
+    iput-object p8, p0, Lcom/google/android/gms/internal/ads/zzadd;->h:Ljava/util/List;
 
     .line 3
     new-instance p8, Ljava/util/ArrayList;
 
     invoke-direct {p8}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p8, p0, Lcom/google/android/gms/internal/ads/zzadd;->h:Ljava/util/List;
+    iput-object p8, p0, Lcom/google/android/gms/internal/ads/zzadd;->i:Ljava/util/List;
 
     .line 4
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzadd;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzadd;->g:Ljava/lang/String;
 
     const/4 p1, 0x0
 
@@ -128,12 +128,12 @@
     check-cast p8, Lcom/google/android/gms/internal/ads/zzadi;
 
     .line 7
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzadd;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzadd;->h:Ljava/util/List;
 
     invoke-interface {v0, p8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 8
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzadd;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzadd;->i:Ljava/util/List;
 
     invoke-interface {v0, p8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -152,10 +152,10 @@
     goto :goto_1
 
     :cond_1
-    sget p1, Lcom/google/android/gms/internal/ads/zzadd;->n:I
+    sget p1, Lcom/google/android/gms/internal/ads/zzadd;->o:I
 
     :goto_1
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzadd;->i:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzadd;->j:I
 
     if-eqz p4, :cond_2
 
@@ -167,10 +167,10 @@
     goto :goto_2
 
     :cond_2
-    sget p1, Lcom/google/android/gms/internal/ads/zzadd;->o:I
+    sget p1, Lcom/google/android/gms/internal/ads/zzadd;->p:I
 
     :goto_2
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzadd;->j:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzadd;->k:I
 
     if-eqz p5, :cond_3
 
@@ -185,20 +185,20 @@
     const/16 p1, 0xc
 
     :goto_3
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzadd;->k:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzadd;->l:I
 
     .line 12
-    iput p6, p0, Lcom/google/android/gms/internal/ads/zzadd;->l:I
+    iput p6, p0, Lcom/google/android/gms/internal/ads/zzadd;->m:I
 
     .line 13
-    iput p7, p0, Lcom/google/android/gms/internal/ads/zzadd;->m:I
+    iput p7, p0, Lcom/google/android/gms/internal/ads/zzadd;->n:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final g3()Ljava/util/List;
+.method public final h3()Ljava/util/List;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -210,16 +210,16 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzadd;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzadd;->i:Ljava/util/List;
 
     return-object v0
 .end method
 
-.method public final w1()Ljava/lang/String;
+.method public final x1()Ljava/lang/String;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzadd;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzadd;->g:Ljava/lang/String;
 
     return-object v0
 .end method

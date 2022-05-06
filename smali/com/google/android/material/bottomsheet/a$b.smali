@@ -47,7 +47,7 @@
     .line 4
     iget-object p1, p0, Lcom/google/android/material/bottomsheet/a$b;->d:Lcom/google/android/material/bottomsheet/a;
 
-    iget-boolean p1, p1, Lcom/google/android/material/bottomsheet/a;->j:Z
+    iget-boolean p1, p1, Lcom/google/android/material/bottomsheet/a;->k:Z
 
     if-eqz p1, :cond_0
 
@@ -85,7 +85,7 @@
     .line 1
     iget-object v0, p0, Lcom/google/android/material/bottomsheet/a$b;->d:Lcom/google/android/material/bottomsheet/a;
 
-    iget-boolean v1, v0, Lcom/google/android/material/bottomsheet/a;->j:Z
+    iget-boolean v1, v0, Lcom/google/android/material/bottomsheet/a;->k:Z
 
     if-eqz v1, :cond_0
 

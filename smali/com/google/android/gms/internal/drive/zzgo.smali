@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final b:I
+.field public final h:I
 
-.field public final h:Z
+.field public final i:Z
 
 
 # direct methods
@@ -43,13 +43,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/internal/drive/zzgo;->a:I
+    iput p1, p0, Lcom/google/android/gms/internal/drive/zzgo;->g:I
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/internal/drive/zzgo;->b:I
+    iput p2, p0, Lcom/google/android/gms/internal/drive/zzgo;->h:I
 
     .line 4
-    iput-boolean p3, p0, Lcom/google/android/gms/internal/drive/zzgo;->h:Z
+    iput-boolean p3, p0, Lcom/google/android/gms/internal/drive/zzgo;->i:Z
 
     return-void
 .end method
@@ -69,7 +69,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/internal/drive/zzgo;->a:I
+    iget v1, p0, Lcom/google/android/gms/internal/drive/zzgo;->g:I
 
     const/4 v2, 0x4
 
@@ -82,7 +82,7 @@
     const/4 v0, 0x3
 
     .line 5
-    iget v1, p0, Lcom/google/android/gms/internal/drive/zzgo;->b:I
+    iget v1, p0, Lcom/google/android/gms/internal/drive/zzgo;->h:I
 
     .line 6
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -91,7 +91,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 8
-    iget-boolean v0, p0, Lcom/google/android/gms/internal/drive/zzgo;->h:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/drive/zzgo;->i:Z
 
     .line 9
     invoke-static {p1, v2, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V

@@ -18,9 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Ljava/util/ArrayList;
+.field public final synthetic g:I
 
 .field public final synthetic h:Ljava/util/ArrayList;
 
@@ -28,21 +26,23 @@
 
 .field public final synthetic j:Ljava/util/ArrayList;
 
+.field public final synthetic k:Ljava/util/ArrayList;
+
 
 # direct methods
 .method public constructor <init>(Landroidx/fragment/app/p0;ILjava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 0
 
     .line 1
-    iput p2, p0, Landroidx/fragment/app/p0$a;->a:I
+    iput p2, p0, Landroidx/fragment/app/p0$a;->g:I
 
-    iput-object p3, p0, Landroidx/fragment/app/p0$a;->b:Ljava/util/ArrayList;
+    iput-object p3, p0, Landroidx/fragment/app/p0$a;->h:Ljava/util/ArrayList;
 
-    iput-object p4, p0, Landroidx/fragment/app/p0$a;->h:Ljava/util/ArrayList;
+    iput-object p4, p0, Landroidx/fragment/app/p0$a;->i:Ljava/util/ArrayList;
 
-    iput-object p5, p0, Landroidx/fragment/app/p0$a;->i:Ljava/util/ArrayList;
+    iput-object p5, p0, Landroidx/fragment/app/p0$a;->j:Ljava/util/ArrayList;
 
-    iput-object p6, p0, Landroidx/fragment/app/p0$a;->j:Ljava/util/ArrayList;
+    iput-object p6, p0, Landroidx/fragment/app/p0$a;->k:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,12 +58,12 @@
 
     .line 1
     :goto_0
-    iget v1, p0, Landroidx/fragment/app/p0$a;->a:I
+    iget v1, p0, Landroidx/fragment/app/p0$a;->g:I
 
     if-ge v0, v1, :cond_0
 
     .line 2
-    iget-object v1, p0, Landroidx/fragment/app/p0$a;->b:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroidx/fragment/app/p0$a;->h:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -71,7 +71,7 @@
 
     check-cast v1, Landroid/view/View;
 
-    iget-object v2, p0, Landroidx/fragment/app/p0$a;->h:Ljava/util/ArrayList;
+    iget-object v2, p0, Landroidx/fragment/app/p0$a;->i:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -79,10 +79,10 @@
 
     check-cast v2, Ljava/lang/String;
 
-    invoke-static {v1, v2}, Lf0/s;->G(Landroid/view/View;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lf0/r;->G(Landroid/view/View;Ljava/lang/String;)V
 
     .line 3
-    iget-object v1, p0, Landroidx/fragment/app/p0$a;->i:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroidx/fragment/app/p0$a;->j:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -90,7 +90,7 @@
 
     check-cast v1, Landroid/view/View;
 
-    iget-object v2, p0, Landroidx/fragment/app/p0$a;->j:Ljava/util/ArrayList;
+    iget-object v2, p0, Landroidx/fragment/app/p0$a;->k:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -98,7 +98,7 @@
 
     check-cast v2, Ljava/lang/String;
 
-    invoke-static {v1, v2}, Lf0/s;->G(Landroid/view/View;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lf0/r;->G(Landroid/view/View;Ljava/lang/String;)V
 
     add-int/lit8 v0, v0, 0x1
 

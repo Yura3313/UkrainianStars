@@ -391,7 +391,7 @@
     .line 48
     new-instance v0, Lio/sentry/protocol/Contexts;
 
-    iget-object v1, p0, Lio/sentry/Scope;->contexts:Lio/sentry/protocol/Contexts;
+    iget-object v1, p1, Lio/sentry/Scope;->contexts:Lio/sentry/protocol/Contexts;
 
     invoke-direct {v0, v1}, Lio/sentry/protocol/Contexts;-><init>(Lio/sentry/protocol/Contexts;)V
 
@@ -528,11 +528,11 @@
 
     move-result-object p2
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception p1
 
     .line 2
@@ -545,20 +545,20 @@
 
     sget-object v0, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
 
-    const-string v1, "The BeforeBreadcrumbCallback callback threw an exception. It will be added as breadcrumb and continue."
+    const-string v1, "The BeforeBreadcrumbCallback callback threw an exception. Exception details will be added to the breadcrumb."
 
     .line 4
     invoke-interface {p3, v0, v1, p1}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 5
-    invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p3
 
     if-eqz p3, :cond_0
 
     .line 6
-    invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p1
 

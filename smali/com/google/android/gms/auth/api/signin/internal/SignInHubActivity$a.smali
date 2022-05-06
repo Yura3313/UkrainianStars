@@ -31,7 +31,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;Lx1/r;)V
+.method public constructor <init>(Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;Lrc/b;)V
     .locals 0
 
     .line 1
@@ -100,10 +100,10 @@
     iget-object p1, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity$a;->a:Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;
 
     .line 3
-    iget p2, p1, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;->i:I
+    iget p2, p1, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;->j:I
 
     .line 4
-    iget-object v0, p1, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;->j:Landroid/content/Intent;
+    iget-object v0, p1, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;->k:Landroid/content/Intent;
 
     .line 5
     invoke-virtual {p1, p2, v0}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V

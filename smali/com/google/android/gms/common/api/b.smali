@@ -161,7 +161,7 @@
     iput-object p2, p0, Lcom/google/android/gms/common/api/b;->j:La2/f;
 
     .line 14
-    iget-object p3, p2, La2/f;->m:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object p3, p2, La2/f;->n:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p3}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
@@ -202,7 +202,7 @@
     const-string p4, "ConnectionlessLifecycleHelper"
 
     .line 21
-    invoke-interface {p1, p4, p3}, La2/i;->i(Ljava/lang/String;Ljava/lang/Class;)Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+    invoke-interface {p1, p4, p3}, La2/i;->g(Ljava/lang/String;Ljava/lang/Class;)Lcom/google/android/gms/common/api/internal/LifecycleCallback;
 
     move-result-object p3
 
@@ -217,7 +217,7 @@
 
     .line 23
     :cond_0
-    iget-object p1, p3, La2/z0;->k:Lm/c;
+    iget-object p1, p3, La2/z0;->l:Lm/c;
 
     invoke-virtual {p1, v2}, Lm/c;->add(Ljava/lang/Object;)Z
 
@@ -226,7 +226,7 @@
 
     .line 25
     :cond_1
-    iget-object p1, p2, La2/f;->s:Landroid/os/Handler;
+    iget-object p1, p2, La2/f;->t:Landroid/os/Handler;
 
     const/4 p2, 0x7
 
@@ -334,7 +334,7 @@
     iput-object p1, p0, Lcom/google/android/gms/common/api/b;->j:La2/f;
 
     .line 39
-    iget-object p2, p1, La2/f;->m:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object p2, p1, La2/f;->n:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p2}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
@@ -349,7 +349,7 @@
     iput-object p2, p0, Lcom/google/android/gms/common/api/b;->i:La2/a;
 
     .line 42
-    iget-object p1, p1, La2/f;->s:Landroid/os/Handler;
+    iget-object p1, p1, La2/f;->t:Landroid/os/Handler;
 
     const/4 p2, 0x7
 
@@ -605,14 +605,14 @@
     check-cast v1, Lcom/google/android/gms/common/api/a$d$b;
 
     .line 4
-    invoke-interface {v1}, Lcom/google/android/gms/common/api/a$d$b;->M0()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    invoke-interface {v1}, Lcom/google/android/gms/common/api/a$d$b;->P0()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     move-result-object v1
 
     if-eqz v1, :cond_1
 
     .line 5
-    iget-object v2, v1, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->i:Ljava/lang/String;
+    iget-object v2, v1, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->j:Ljava/lang/String;
 
     if-nez v2, :cond_0
 
@@ -621,7 +621,7 @@
     :cond_0
     new-instance v2, Landroid/accounts/Account;
 
-    iget-object v1, v1, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->i:Ljava/lang/String;
+    iget-object v1, v1, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->j:Ljava/lang/String;
 
     const-string v3, "com.google"
 
@@ -640,7 +640,7 @@
     .line 7
     check-cast v1, Lcom/google/android/gms/common/api/a$d$a;
 
-    invoke-interface {v1}, Lcom/google/android/gms/common/api/a$d$a;->j1()Landroid/accounts/Account;
+    invoke-interface {v1}, Lcom/google/android/gms/common/api/a$d$a;->l1()Landroid/accounts/Account;
 
     move-result-object v2
 
@@ -665,14 +665,14 @@
     check-cast v1, Lcom/google/android/gms/common/api/a$d$b;
 
     .line 11
-    invoke-interface {v1}, Lcom/google/android/gms/common/api/a$d$b;->M0()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    invoke-interface {v1}, Lcom/google/android/gms/common/api/a$d$b;->P0()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     move-result-object v1
 
     if-eqz v1, :cond_3
 
     .line 12
-    invoke-virtual {v1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->x2()Ljava/util/Set;
+    invoke-virtual {v1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->z2()Ljava/util/Set;
 
     move-result-object v1
 
@@ -713,7 +713,7 @@
     return-object v0
 .end method
 
-.method public final b(ILa2/p;)La4/f;
+.method public final b(ILa2/p;)Lb4/f;
     .locals 10
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -724,15 +724,15 @@
             ">(I",
             "La2/p<",
             "TA;TTResult;>;)",
-            "La4/f<",
+            "Lb4/f<",
             "TTResult;>;"
         }
     .end annotation
 
     .line 1
-    new-instance v0, La4/g;
+    new-instance v0, Lb4/g;
 
-    invoke-direct {v0}, La4/g;-><init>()V
+    invoke-direct {v0}, Lb4/g;-><init>()V
 
     .line 2
     iget-object v7, p0, Lcom/google/android/gms/common/api/b;->j:La2/f;
@@ -774,7 +774,7 @@
     if-eqz v1, :cond_4
 
     .line 8
-    iget-boolean v6, v1, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->b:Z
+    iget-boolean v6, v1, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->h:Z
 
     if-nez v6, :cond_1
 
@@ -782,10 +782,10 @@
 
     .line 9
     :cond_1
-    iget-boolean v1, v1, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->h:Z
+    iget-boolean v1, v1, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->i:Z
 
     .line 10
-    iget-object v6, v7, La2/f;->o:Ljava/util/Map;
+    iget-object v6, v7, La2/f;->p:Ljava/util/Map;
 
     invoke-interface {v6, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -796,7 +796,7 @@
     if-eqz v6, :cond_3
 
     .line 11
-    iget-object v9, v6, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v9, v6, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     .line 12
     invoke-interface {v9}, Lcom/google/android/gms/common/api/a$f;->isConnected()Z
@@ -806,7 +806,7 @@
     if-eqz v9, :cond_3
 
     .line 13
-    iget-object v9, v6, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v9, v6, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     .line 14
     instance-of v9, v9, Lcom/google/android/gms/common/internal/BaseGmsClient;
@@ -824,14 +824,14 @@
 
     .line 16
     :cond_2
-    iget v2, v6, La2/f$a;->q:I
+    iget v2, v6, La2/f$a;->r:I
 
     add-int/2addr v2, v5
 
-    iput v2, v6, La2/f$a;->q:I
+    iput v2, v6, La2/f$a;->r:I
 
     .line 17
-    iget-boolean v5, v1, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->h:Z
+    iget-boolean v5, v1, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->i:Z
 
     goto :goto_0
 
@@ -870,10 +870,10 @@
     if-eqz v2, :cond_6
 
     .line 20
-    iget-object v1, v0, La4/g;->a:La4/y;
+    iget-object v1, v0, Lb4/g;->a:Lb4/y;
 
     .line 21
-    iget-object v3, v7, La2/f;->s:Landroid/os/Handler;
+    iget-object v3, v7, La2/f;->t:Landroid/os/Handler;
 
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -883,35 +883,35 @@
     invoke-direct {v4, v3}, La2/s;-><init>(Landroid/os/Handler;)V
 
     .line 23
-    iget-object v3, v1, La4/y;->b:La4/v;
+    iget-object v3, v1, Lb4/y;->b:Lb4/v;
 
-    new-instance v5, La4/o;
+    new-instance v5, Lb4/o;
 
     .line 24
-    sget v6, La4/z;->a:I
+    sget v6, Lb4/z;->a:I
 
-    invoke-direct {v5, v4, v2}, La4/o;-><init>(Ljava/util/concurrent/Executor;La4/c;)V
+    invoke-direct {v5, v4, v2}, Lb4/o;-><init>(Ljava/util/concurrent/Executor;Lb4/c;)V
 
     .line 25
-    invoke-virtual {v3, v5}, La4/v;->b(La4/w;)V
+    invoke-virtual {v3, v5}, Lb4/v;->b(Lb4/w;)V
 
     .line 26
-    invoke-virtual {v1}, La4/y;->r()V
+    invoke-virtual {v1}, Lb4/y;->r()V
 
     .line 27
     :cond_6
     new-instance v1, La2/p0;
 
-    invoke-direct {v1, p1, p2, v0, v8}, La2/p0;-><init>(ILa2/p;La4/g;La2/a;)V
+    invoke-direct {v1, p1, p2, v0, v8}, La2/p0;-><init>(ILa2/p;Lb4/g;La2/a;)V
 
     .line 28
-    iget-object p1, v7, La2/f;->s:Landroid/os/Handler;
+    iget-object p1, v7, La2/f;->t:Landroid/os/Handler;
 
     const/4 p2, 0x4
 
     new-instance v2, La2/e0;
 
-    iget-object v3, v7, La2/f;->n:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v3, v7, La2/f;->o:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 29
     invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
@@ -929,7 +929,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
     .line 32
-    iget-object p1, v0, La4/g;->a:La4/y;
+    iget-object p1, v0, Lb4/g;->a:Lb4/y;
 
     return-object p1
 .end method
@@ -1075,11 +1075,11 @@
     invoke-direct {v1, p1, p2}, La2/n0;-><init>(ILcom/google/android/gms/common/api/internal/a;)V
 
     .line 4
-    iget-object p1, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object p1, v0, La2/f;->t:Landroid/os/Handler;
 
     new-instance v2, La2/e0;
 
-    iget-object v0, v0, La2/f;->n:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v0, v0, La2/f;->o:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 5
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I

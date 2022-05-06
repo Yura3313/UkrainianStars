@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field public a:Z
+.field public g:Z
 
 
 # direct methods

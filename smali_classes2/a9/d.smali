@@ -15,11 +15,10 @@
 
 
 # virtual methods
-.method public a()La9/p;
+.method public a()I
     .locals 1
 
-    .line 1
-    sget-object v0, La9/p;->ROOT_INTENT:La9/p;
+    const/4 v0, 0x1
 
-    return-object v0
+    return v0
 .end method

@@ -47,7 +47,7 @@
     .end param
 
     .line 1
-    invoke-virtual {p1}, Lcom/google/android/gms/common/ConnectionResult;->y2()Z
+    invoke-virtual {p1}, Lcom/google/android/gms/common/ConnectionResult;->A2()Z
 
     move-result v0
 
@@ -76,7 +76,7 @@
     if-eqz v0, :cond_1
 
     .line 5
-    invoke-interface {v0, p1}, Lcom/google/android/gms/common/internal/BaseGmsClient$b;->P0(Lcom/google/android/gms/common/ConnectionResult;)V
+    invoke-interface {v0, p1}, Lcom/google/android/gms/common/internal/BaseGmsClient$b;->Q0(Lcom/google/android/gms/common/ConnectionResult;)V
 
     :cond_1
     return-void

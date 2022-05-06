@@ -60,7 +60,7 @@
     .line 4
     iget-object p1, p1, Landroidx/lifecycle/k;->a:Li/a;
 
-    invoke-virtual {p1, p0}, Li/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Li/a;->f(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
     iget-object p1, p0, Landroidx/lifecycle/SavedStateHandleController$1;->b:Landroidx/savedstate/a;

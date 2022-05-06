@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final synthetic a:Landroid/content/Intent;
+.field public final synthetic g:Landroid/content/Intent;
 
-.field public final synthetic b:La2/i;
+.field public final synthetic h:La2/i;
 
 
 # direct methods
@@ -14,9 +14,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lc2/r;->a:Landroid/content/Intent;
+    iput-object p1, p0, Lc2/r;->g:Landroid/content/Intent;
 
-    iput-object p2, p0, Lc2/r;->b:La2/i;
+    iput-object p2, p0, Lc2/r;->h:La2/i;
 
     invoke-direct {p0}, Lc2/o;-><init>()V
 
@@ -29,12 +29,12 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lc2/r;->a:Landroid/content/Intent;
+    iget-object v0, p0, Lc2/r;->g:Landroid/content/Intent;
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v1, p0, Lc2/r;->b:La2/i;
+    iget-object v1, p0, Lc2/r;->h:La2/i;
 
     const/4 v2, 0x2
 

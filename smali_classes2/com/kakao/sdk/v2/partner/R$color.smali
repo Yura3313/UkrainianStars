@@ -14,21 +14,21 @@
 
 
 # static fields
-.field public static final browser_actions_bg_grey:I = 0x7f06002d
+.field public static final browser_actions_bg_grey:I = 0x7f06002e
 
-.field public static final browser_actions_divider_color:I = 0x7f06002e
+.field public static final browser_actions_divider_color:I = 0x7f06002f
 
-.field public static final browser_actions_text_color:I = 0x7f06002f
+.field public static final browser_actions_text_color:I = 0x7f060030
 
-.field public static final browser_actions_title_color:I = 0x7f060030
+.field public static final browser_actions_title_color:I = 0x7f060031
 
-.field public static final notification_action_color_filter:I = 0x7f060171
+.field public static final notification_action_color_filter:I = 0x7f060172
 
-.field public static final notification_icon_bg_color:I = 0x7f060172
+.field public static final notification_icon_bg_color:I = 0x7f060173
 
-.field public static final ripple_material_light:I = 0x7f06017e
+.field public static final ripple_material_light:I = 0x7f06017f
 
-.field public static final secondary_text_default_material_light:I = 0x7f060180
+.field public static final secondary_text_default_material_light:I = 0x7f060181
 
 
 # direct methods

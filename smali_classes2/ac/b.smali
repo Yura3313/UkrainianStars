@@ -1,25 +1,14 @@
-.class public interface abstract Lac/b;
+.class public Lac/b;
 .super Ljava/lang/Object;
-.source "MemoryCache.java"
+.source "FailReason.java"
 
 
-# virtual methods
-.method public abstract a(Ljava/lang/String;)Landroid/graphics/Bitmap;
-.end method
+# direct methods
+.method public constructor <init>(ILjava/lang/Throwable;)V
+    .locals 0
 
-.method public abstract b()Ljava/util/Collection;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Collection<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end method
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.method public abstract c(Ljava/lang/String;Landroid/graphics/Bitmap;)Z
-.end method
-
-.method public abstract remove(Ljava/lang/String;)Landroid/graphics/Bitmap;
+    return-void
 .end method

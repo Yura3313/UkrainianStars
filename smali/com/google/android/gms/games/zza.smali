@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
 
 # direct methods
@@ -43,7 +43,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zze;-><init>()V
 
     .line 4
-    iput p1, p0, Lcom/google/android/gms/games/zza;->a:I
+    iput p1, p0, Lcom/google/android/gms/games/zza;->g:I
 
     return-void
 .end method
@@ -57,44 +57,16 @@
     .line 2
     check-cast p1, Lcom/google/android/gms/games/zzb;
 
-    invoke-virtual {p1}, Lcom/google/android/gms/games/zzb;->p2()I
+    invoke-virtual {p1}, Lcom/google/android/gms/games/zzb;->r2()I
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/gms/games/zza;->a:I
+    iput p1, p0, Lcom/google/android/gms/games/zza;->g:I
 
     return-void
 .end method
 
-.method public static x2(Lcom/google/android/gms/games/CurrentPlayerInfo;)I
-    .locals 2
-
-    const/4 v0, 0x1
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 1
-    invoke-interface {p0}, Lcom/google/android/gms/games/CurrentPlayerInfo;->p2()I
-
-    move-result p0
-
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p0
-
-    const/4 v1, 0x0
-
-    aput-object p0, v0, v1
-
-    .line 2
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static y2(Lcom/google/android/gms/games/CurrentPlayerInfo;Ljava/lang/Object;)Z
+.method public static A2(Lcom/google/android/gms/games/CurrentPlayerInfo;Ljava/lang/Object;)Z
     .locals 2
 
     .line 1
@@ -118,11 +90,11 @@
     check-cast p1, Lcom/google/android/gms/games/CurrentPlayerInfo;
 
     .line 3
-    invoke-interface {p1}, Lcom/google/android/gms/games/CurrentPlayerInfo;->p2()I
+    invoke-interface {p1}, Lcom/google/android/gms/games/CurrentPlayerInfo;->r2()I
 
     move-result p1
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/CurrentPlayerInfo;->p2()I
+    invoke-interface {p0}, Lcom/google/android/gms/games/CurrentPlayerInfo;->r2()I
 
     move-result p0
 
@@ -134,7 +106,7 @@
     return v1
 .end method
 
-.method public static z2(Lcom/google/android/gms/games/CurrentPlayerInfo;)Ljava/lang/String;
+.method public static B2(Lcom/google/android/gms/games/CurrentPlayerInfo;)Ljava/lang/String;
     .locals 4
 
     .line 1
@@ -143,7 +115,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 2
-    invoke-interface {p0}, Lcom/google/android/gms/games/CurrentPlayerInfo;->p2()I
+    invoke-interface {p0}, Lcom/google/android/gms/games/CurrentPlayerInfo;->r2()I
 
     move-result v1
 
@@ -250,9 +222,37 @@
     return-object p0
 .end method
 
+.method public static z2(Lcom/google/android/gms/games/CurrentPlayerInfo;)I
+    .locals 2
+
+    const/4 v0, 0x1
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 1
+    invoke-interface {p0}, Lcom/google/android/gms/games/CurrentPlayerInfo;->r2()I
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+
+    const/4 v1, 0x0
+
+    aput-object p0, v0, v1
+
+    .line 2
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    move-result p0
+
+    return p0
+.end method
+
 
 # virtual methods
-.method public final bridge synthetic c2()Ljava/lang/Object;
+.method public final bridge synthetic e2()Ljava/lang/Object;
     .locals 0
 
     return-object p0
@@ -262,7 +262,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/google/android/gms/games/zza;->y2(Lcom/google/android/gms/games/CurrentPlayerInfo;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lcom/google/android/gms/games/zza;->A2(Lcom/google/android/gms/games/CurrentPlayerInfo;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -273,18 +273,18 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/zza;->x2(Lcom/google/android/gms/games/CurrentPlayerInfo;)I
+    invoke-static {p0}, Lcom/google/android/gms/games/zza;->z2(Lcom/google/android/gms/games/CurrentPlayerInfo;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final p2()I
+.method public final r2()I
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/gms/games/zza;->a:I
+    iget v0, p0, Lcom/google/android/gms/games/zza;->g:I
 
     return v0
 .end method
@@ -293,7 +293,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/gms/games/zza;->z2(Lcom/google/android/gms/games/CurrentPlayerInfo;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/android/gms/games/zza;->B2(Lcom/google/android/gms/games/CurrentPlayerInfo;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -313,7 +313,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/games/zza;->a:I
+    iget v1, p0, Lcom/google/android/gms/games/zza;->g:I
 
     const/4 v2, 0x4
 

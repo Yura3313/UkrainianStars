@@ -15,13 +15,13 @@
 
 
 # virtual methods
-.method public U0()V
+.method public V0()V
     .locals 0
 
     return-void
 .end method
 
-.method public Y3(ILjava/lang/String;)V
+.method public Z3(ILjava/lang/String;)V
     .locals 0
 
     return-void

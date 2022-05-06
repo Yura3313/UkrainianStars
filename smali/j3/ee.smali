@@ -7,23 +7,19 @@
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic g:I
 
-.field public final synthetic b:I
-
-.field public final synthetic h:Lj3/yd;
+.field public final h:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lj3/yd;II)V
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lj3/ee;->h:Lj3/yd;
+    iput p2, p0, Lj3/ee;->g:I
 
-    iput p2, p0, Lj3/ee;->a:I
-
-    iput p3, p0, Lj3/ee;->b:I
+    iput-object p1, p0, Lj3/ee;->h:Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,25 +29,46 @@
 
 # virtual methods
 .method public final run()V
-    .locals 3
+    .locals 1
+
+    iget v0, p0, Lj3/ee;->g:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
 
     .line 1
-    iget-object v0, p0, Lj3/ee;->h:Lj3/yd;
+    :pswitch_0
+    iget-object v0, p0, Lj3/ee;->h:Ljava/lang/Object;
+
+    check-cast v0, Lj3/ce;
 
     .line 2
-    iget-object v0, v0, Lj3/yd;->s:Lj3/ie;
+    iget-object v0, v0, Lj3/ce;->t:Lj3/me;
 
     if-eqz v0, :cond_0
 
     .line 3
-    iget v1, p0, Lj3/ee;->a:I
+    check-cast v0, Lj3/qe;
 
-    iget v2, p0, Lj3/ee;->b:I
-
-    check-cast v0, Lj3/me;
-
-    invoke-virtual {v0, v1, v2}, Lj3/me;->e(II)V
+    invoke-virtual {v0}, Lj3/qe;->d()V
 
     :cond_0
     return-void
+
+    .line 4
+    :goto_0
+    iget-object v0, p0, Lj3/ee;->h:Ljava/lang/Object;
+
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzdhl;
+
+    .line 5
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/zzdhl;->z7()V
+
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

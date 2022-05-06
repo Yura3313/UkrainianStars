@@ -94,7 +94,7 @@
     iput-object v0, p0, Landroidx/lifecycle/k;->c:Ljava/lang/ref/WeakReference;
 
     .line 8
-    sget-object p1, Landroidx/lifecycle/f$c;->INITIALIZED:Landroidx/lifecycle/f$c;
+    sget-object p1, Landroidx/lifecycle/f$c;->h:Landroidx/lifecycle/f$c;
 
     iput-object p1, p0, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
@@ -137,14 +137,14 @@
     .line 2
     iget-object v0, p0, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
-    sget-object v1, Landroidx/lifecycle/f$c;->DESTROYED:Landroidx/lifecycle/f$c;
+    sget-object v1, Landroidx/lifecycle/f$c;->g:Landroidx/lifecycle/f$c;
 
     if-ne v0, v1, :cond_0
 
     goto :goto_0
 
     :cond_0
-    sget-object v1, Landroidx/lifecycle/f$c;->INITIALIZED:Landroidx/lifecycle/f$c;
+    sget-object v1, Landroidx/lifecycle/f$c;->h:Landroidx/lifecycle/f$c;
 
     .line 3
     :goto_0
@@ -155,7 +155,7 @@
     .line 4
     iget-object v1, p0, Landroidx/lifecycle/k;->a:Li/a;
 
-    invoke-virtual {v1, p1, v0}, Li/a;->d(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, p1, v0}, Li/a;->e(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -226,7 +226,7 @@
     iget-object v3, p0, Landroidx/lifecycle/k;->a:Li/a;
 
     .line 10
-    iget-object v3, v3, Li/a;->j:Ljava/util/HashMap;
+    iget-object v3, v3, Li/a;->k:Ljava/util/HashMap;
 
     invoke-virtual {v3, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -245,7 +245,7 @@
     .line 13
     iget-object v3, v0, Landroidx/lifecycle/k$a;->a:Landroidx/lifecycle/f$c;
 
-    invoke-static {v3}, Landroidx/lifecycle/f$b;->upFrom(Landroidx/lifecycle/f$c;)Landroidx/lifecycle/f$b;
+    invoke-static {v3}, Landroidx/lifecycle/f$b;->c(Landroidx/lifecycle/f$c;)Landroidx/lifecycle/f$b;
 
     move-result-object v3
 
@@ -270,7 +270,7 @@
 
     const-string v1, "no event up from "
 
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -290,7 +290,7 @@
     if-nez v2, :cond_7
 
     .line 18
-    invoke-virtual {p0}, Landroidx/lifecycle/k;->j()V
+    invoke-virtual {p0}, Landroidx/lifecycle/k;->i()V
 
     .line 19
     :cond_7
@@ -314,7 +314,7 @@
     .line 2
     iget-object v0, p0, Landroidx/lifecycle/k;->a:Li/a;
 
-    invoke-virtual {v0, p1}, Li/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Li/a;->f(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -326,7 +326,7 @@
     iget-object v0, p0, Landroidx/lifecycle/k;->a:Li/a;
 
     .line 2
-    iget-object v1, v0, Li/a;->j:Ljava/util/HashMap;
+    iget-object v1, v0, Li/a;->k:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -337,7 +337,7 @@
     if-eqz v1, :cond_0
 
     .line 3
-    iget-object v0, v0, Li/a;->j:Ljava/util/HashMap;
+    iget-object v0, v0, Li/a;->k:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -345,7 +345,7 @@
 
     check-cast p1, Li/b$c;
 
-    iget-object p1, p1, Li/b$c;->i:Li/b$c;
+    iget-object p1, p1, Li/b$c;->j:Li/b$c;
 
     goto :goto_0
 
@@ -356,7 +356,7 @@
     if-eqz p1, :cond_1
 
     .line 4
-    iget-object p1, p1, Li/b$c;->b:Ljava/lang/Object;
+    iget-object p1, p1, Li/b$c;->h:Ljava/lang/Object;
 
     .line 5
     check-cast p1, Landroidx/lifecycle/k$a;
@@ -443,7 +443,7 @@
 
     const-string v2, " must be called on the main thread"
 
-    invoke-static {v1, p1, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p1, v2}, La1/e;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -465,7 +465,7 @@
     invoke-virtual {p0, v0}, Landroidx/lifecycle/k;->d(Ljava/lang/String;)V
 
     .line 2
-    invoke-virtual {p1}, Landroidx/lifecycle/f$b;->getTargetState()Landroidx/lifecycle/f$c;
+    invoke-virtual {p1}, Landroidx/lifecycle/f$b;->a()Landroidx/lifecycle/f$c;
 
     move-result-object p1
 
@@ -506,7 +506,7 @@
     iput-boolean v0, p0, Landroidx/lifecycle/k;->e:Z
 
     .line 5
-    invoke-virtual {p0}, Landroidx/lifecycle/k;->j()V
+    invoke-virtual {p0}, Landroidx/lifecycle/k;->i()V
 
     const/4 p1, 0x0
 
@@ -540,21 +540,7 @@
     return-void
 .end method
 
-.method public i(Landroidx/lifecycle/f$c;)V
-    .locals 1
-
-    const-string v0, "setCurrentState"
-
-    .line 1
-    invoke-virtual {p0, v0}, Landroidx/lifecycle/k;->d(Ljava/lang/String;)V
-
-    .line 2
-    invoke-virtual {p0, p1}, Landroidx/lifecycle/k;->g(Landroidx/lifecycle/f$c;)V
-
-    return-void
-.end method
-
-.method public final j()V
+.method public final i()V
     .locals 7
 
     .line 1
@@ -566,14 +552,14 @@
 
     check-cast v0, Landroidx/lifecycle/j;
 
-    if-eqz v0, :cond_9
+    if-eqz v0, :cond_c
 
     .line 2
     :cond_0
     iget-object v1, p0, Landroidx/lifecycle/k;->a:Li/a;
 
     .line 3
-    iget v2, v1, Li/b;->i:I
+    iget v2, v1, Li/b;->j:I
 
     const/4 v3, 0x1
 
@@ -585,10 +571,10 @@
 
     .line 4
     :cond_1
-    iget-object v2, v1, Li/b;->a:Li/b$c;
+    iget-object v2, v1, Li/b;->g:Li/b$c;
 
     .line 5
-    iget-object v2, v2, Li/b$c;->b:Ljava/lang/Object;
+    iget-object v2, v2, Li/b$c;->h:Ljava/lang/Object;
 
     .line 6
     check-cast v2, Landroidx/lifecycle/k$a;
@@ -596,10 +582,10 @@
     iget-object v2, v2, Landroidx/lifecycle/k$a;->a:Landroidx/lifecycle/f$c;
 
     .line 7
-    iget-object v5, v1, Li/b;->b:Li/b$c;
+    iget-object v5, v1, Li/b;->h:Li/b$c;
 
     .line 8
-    iget-object v5, v5, Li/b$c;->b:Ljava/lang/Object;
+    iget-object v5, v5, Li/b$c;->h:Ljava/lang/Object;
 
     .line 9
     check-cast v5, Landroidx/lifecycle/k$a;
@@ -619,7 +605,7 @@
     const/4 v3, 0x0
 
     :goto_0
-    if-nez v3, :cond_8
+    if-nez v3, :cond_b
 
     .line 11
     iput-boolean v4, p0, Landroidx/lifecycle/k;->f:Z
@@ -628,10 +614,10 @@
     iget-object v2, p0, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 13
-    iget-object v1, v1, Li/b;->a:Li/b$c;
+    iget-object v1, v1, Li/b;->g:Li/b$c;
 
     .line 14
-    iget-object v1, v1, Li/b$c;->b:Ljava/lang/Object;
+    iget-object v1, v1, Li/b$c;->h:Ljava/lang/Object;
 
     .line 15
     check-cast v1, Landroidx/lifecycle/k$a;
@@ -642,7 +628,7 @@
 
     move-result v1
 
-    if-gez v1, :cond_5
+    if-gez v1, :cond_8
 
     .line 16
     iget-object v1, p0, Landroidx/lifecycle/k;->a:Li/a;
@@ -650,14 +636,14 @@
     .line 17
     new-instance v2, Li/b$b;
 
-    iget-object v3, v1, Li/b;->b:Li/b$c;
+    iget-object v3, v1, Li/b;->h:Li/b$c;
 
-    iget-object v4, v1, Li/b;->a:Li/b$c;
+    iget-object v4, v1, Li/b;->g:Li/b$c;
 
     invoke-direct {v2, v3, v4}, Li/b$b;-><init>(Li/b$c;Li/b$c;)V
 
     .line 18
-    iget-object v1, v1, Li/b;->h:Ljava/util/WeakHashMap;
+    iget-object v1, v1, Li/b;->i:Ljava/util/WeakHashMap;
 
     sget-object v3, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
@@ -669,11 +655,11 @@
 
     move-result v1
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_8
 
     iget-boolean v1, p0, Landroidx/lifecycle/k;->f:Z
 
-    if-nez v1, :cond_5
+    if-nez v1, :cond_8
 
     .line 20
     invoke-virtual {v2}, Li/b$e;->next()Ljava/lang/Object;
@@ -721,37 +707,71 @@
     .line 24
     iget-object v4, v3, Landroidx/lifecycle/k$a;->a:Landroidx/lifecycle/f$c;
 
-    invoke-static {v4}, Landroidx/lifecycle/f$b;->downFrom(Landroidx/lifecycle/f$c;)Landroidx/lifecycle/f$b;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_4
-
     .line 25
-    invoke-virtual {v4}, Landroidx/lifecycle/f$b;->getTargetState()Landroidx/lifecycle/f$c;
+    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v4
+
+    const/4 v5, 0x2
+
+    if-eq v4, v5, :cond_6
+
+    const/4 v5, 0x3
+
+    if-eq v4, v5, :cond_5
+
+    const/4 v5, 0x4
+
+    if-eq v4, v5, :cond_4
+
+    const/4 v4, 0x0
+
+    goto :goto_2
+
+    .line 26
+    :cond_4
+    sget-object v4, Landroidx/lifecycle/f$b;->ON_PAUSE:Landroidx/lifecycle/f$b;
+
+    goto :goto_2
+
+    .line 27
+    :cond_5
+    sget-object v4, Landroidx/lifecycle/f$b;->ON_STOP:Landroidx/lifecycle/f$b;
+
+    goto :goto_2
+
+    .line 28
+    :cond_6
+    sget-object v4, Landroidx/lifecycle/f$b;->ON_DESTROY:Landroidx/lifecycle/f$b;
+
+    :goto_2
+    if-eqz v4, :cond_7
+
+    .line 29
+    invoke-virtual {v4}, Landroidx/lifecycle/f$b;->a()Landroidx/lifecycle/f$c;
 
     move-result-object v5
 
-    .line 26
+    .line 30
     iget-object v6, p0, Landroidx/lifecycle/k;->g:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 27
+    .line 31
     invoke-virtual {v3, v0, v4}, Landroidx/lifecycle/k$a;->a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
 
-    .line 28
+    .line 32
     invoke-virtual {p0}, Landroidx/lifecycle/k;->h()V
 
     goto :goto_1
 
-    .line 29
-    :cond_4
+    .line 33
+    :cond_7
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "no event down from "
 
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -767,14 +787,14 @@
 
     throw v0
 
-    .line 30
-    :cond_5
+    .line 34
+    :cond_8
     iget-object v1, p0, Landroidx/lifecycle/k;->a:Li/a;
 
-    .line 31
-    iget-object v1, v1, Li/b;->b:Li/b$c;
+    .line 35
+    iget-object v1, v1, Li/b;->h:Li/b$c;
 
-    .line 32
+    .line 36
     iget-boolean v2, p0, Landroidx/lifecycle/k;->f:Z
 
     if-nez v2, :cond_0
@@ -783,10 +803,10 @@
 
     iget-object v2, p0, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
-    .line 33
-    iget-object v1, v1, Li/b$c;->b:Ljava/lang/Object;
+    .line 37
+    iget-object v1, v1, Li/b$c;->h:Ljava/lang/Object;
 
-    .line 34
+    .line 38
     check-cast v1, Landroidx/lifecycle/k$a;
 
     iget-object v1, v1, Landroidx/lifecycle/k$a;->a:Landroidx/lifecycle/f$c;
@@ -797,16 +817,16 @@
 
     if-lez v1, :cond_0
 
-    .line 35
+    .line 39
     iget-object v1, p0, Landroidx/lifecycle/k;->a:Li/a;
 
-    .line 36
-    invoke-virtual {v1}, Li/b;->b()Li/b$d;
+    .line 40
+    invoke-virtual {v1}, Li/b;->c()Li/b$d;
 
     move-result-object v1
 
-    .line 37
-    :cond_6
+    .line 41
+    :cond_9
     invoke-virtual {v1}, Li/b$d;->hasNext()Z
 
     move-result v2
@@ -817,22 +837,22 @@
 
     if-nez v2, :cond_0
 
-    .line 38
+    .line 42
     invoke-virtual {v1}, Li/b$d;->next()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 39
+    .line 43
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Landroidx/lifecycle/k$a;
 
-    .line 40
-    :goto_2
+    .line 44
+    :goto_3
     iget-object v4, v3, Landroidx/lifecycle/k$a;->a:Landroidx/lifecycle/f$c;
 
     iget-object v5, p0, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
@@ -841,15 +861,15 @@
 
     move-result v4
 
-    if-gez v4, :cond_6
+    if-gez v4, :cond_9
 
     iget-boolean v4, p0, Landroidx/lifecycle/k;->f:Z
 
-    if-nez v4, :cond_6
+    if-nez v4, :cond_9
 
     iget-object v4, p0, Landroidx/lifecycle/k;->a:Li/a;
 
-    .line 41
+    .line 45
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v5
@@ -858,40 +878,40 @@
 
     move-result v4
 
-    if-eqz v4, :cond_6
+    if-eqz v4, :cond_9
 
-    .line 42
+    .line 46
     iget-object v4, v3, Landroidx/lifecycle/k$a;->a:Landroidx/lifecycle/f$c;
 
-    .line 43
+    .line 47
     iget-object v5, p0, Landroidx/lifecycle/k;->g:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 44
+    .line 48
     iget-object v4, v3, Landroidx/lifecycle/k$a;->a:Landroidx/lifecycle/f$c;
 
-    invoke-static {v4}, Landroidx/lifecycle/f$b;->upFrom(Landroidx/lifecycle/f$c;)Landroidx/lifecycle/f$b;
+    invoke-static {v4}, Landroidx/lifecycle/f$b;->c(Landroidx/lifecycle/f$c;)Landroidx/lifecycle/f$b;
 
     move-result-object v4
 
-    if-eqz v4, :cond_7
+    if-eqz v4, :cond_a
 
-    .line 45
+    .line 49
     invoke-virtual {v3, v0, v4}, Landroidx/lifecycle/k$a;->a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
 
-    .line 46
+    .line 50
     invoke-virtual {p0}, Landroidx/lifecycle/k;->h()V
 
-    goto :goto_2
+    goto :goto_3
 
-    .line 47
-    :cond_7
+    .line 51
+    :cond_a
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "no event up from "
 
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -907,25 +927,25 @@
 
     throw v0
 
-    .line 48
-    :cond_8
+    .line 52
+    :cond_b
     iput-boolean v4, p0, Landroidx/lifecycle/k;->f:Z
 
     return-void
 
-    .line 49
-    :cond_9
+    .line 53
+    :cond_c
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "LifecycleOwner of this LifecycleRegistry is alreadygarbage collected. It is too late to change lifecycle state."
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_4
-
-    :goto_3
-    throw v0
+    goto :goto_5
 
     :goto_4
-    goto :goto_3
+    throw v0
+
+    :goto_5
+    goto :goto_4
 .end method

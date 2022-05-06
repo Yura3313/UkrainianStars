@@ -61,11 +61,11 @@
 
     const-string v0, "view.tab_icon"
 
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x6
 
-    invoke-static {p1, v0}, Lwd/y1;->d(Landroid/widget/ImageView;I)V
+    invoke-static {p1, v0}, Lvd/z1;->d(Landroid/widget/ImageView;I)V
 
     :cond_0
     return-void
@@ -81,7 +81,7 @@
 
     const/4 v1, 0x1
 
-    sget v2, Lcom/supercell/id/view/FlatTabLayout;->d0:I
+    sget v2, Lcom/supercell/id/view/FlatTabLayout;->e0:I
 
     .line 2
     invoke-virtual {v0, p1, v1}, Lcom/supercell/id/view/FlatTabLayout;->r(Lcom/google/android/material/tabs/TabLayout$g;Z)V
@@ -105,12 +105,12 @@
 
     const-string v0, "view.tab_icon"
 
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x6
 
     .line 5
-    invoke-static {p1, v0}, Lwd/y1;->a(Landroid/widget/ImageView;I)Landroid/animation/Animator;
+    invoke-static {p1, v0}, Lvd/z1;->a(Landroid/widget/ImageView;I)Landroid/animation/Animator;
 
     move-result-object p1
 
@@ -136,7 +136,7 @@
 
     const/4 v1, 0x0
 
-    sget v2, Lcom/supercell/id/view/FlatTabLayout;->d0:I
+    sget v2, Lcom/supercell/id/view/FlatTabLayout;->e0:I
 
     .line 2
     invoke-virtual {v0, p1, v1}, Lcom/supercell/id/view/FlatTabLayout;->r(Lcom/google/android/material/tabs/TabLayout$g;Z)V

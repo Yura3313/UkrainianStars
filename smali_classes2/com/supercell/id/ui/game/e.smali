@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/game/GameFragment$a$m;
+.field public final synthetic g:Lcom/supercell/id/ui/game/GameFragment$a$m;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/game/GameFragment$a$m;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/e;->a:Lcom/supercell/id/ui/game/GameFragment$a$m;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/e;->g:Lcom/supercell/id/ui/game/GameFragment$a$m;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,15 +27,15 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/ui/game/e;->a:Lcom/supercell/id/ui/game/GameFragment$a$m;
+    iget-object p1, p0, Lcom/supercell/id/ui/game/e;->g:Lcom/supercell/id/ui/game/GameFragment$a$m;
 
-    iget-object p1, p1, Lcom/supercell/id/ui/game/GameFragment$a$m;->a:Lcom/supercell/id/ui/game/GameFragment$a;
+    iget-object p1, p1, Lcom/supercell/id/ui/game/GameFragment$a$m;->g:Lcom/supercell/id/ui/game/GameFragment$a;
 
     .line 2
-    iget-object p1, p1, Lwd/q;->f:Landroidx/fragment/app/Fragment;
+    iget-object p1, p1, Lvd/q;->f:Landroidx/fragment/app/Fragment;
 
     .line 3
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -43,25 +43,25 @@
 
     new-instance v0, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/game/e;->a:Lcom/supercell/id/ui/game/GameFragment$a$m;
+    iget-object v1, p0, Lcom/supercell/id/ui/game/e;->g:Lcom/supercell/id/ui/game/GameFragment$a$m;
 
-    iget-object v1, v1, Lcom/supercell/id/ui/game/GameFragment$a$m;->a:Lcom/supercell/id/ui/game/GameFragment$a;
+    iget-object v1, v1, Lcom/supercell/id/ui/game/GameFragment$a$m;->g:Lcom/supercell/id/ui/game/GameFragment$a;
 
     .line 4
-    iget-object v1, v1, Lcom/supercell/id/ui/game/GameFragment$a;->k:Ltc/g;
+    iget-object v1, v1, Lcom/supercell/id/ui/game/GameFragment$a;->k:Lqc/k;
 
     .line 5
-    iget-object v1, v1, Ltc/g;->k:Lcom/supercell/id/model/IdSystem;
+    iget-object v1, v1, Lqc/k;->k:Lcom/supercell/id/model/IdSystem;
 
     .line 6
     invoke-direct {v0, v1}, Lcom/supercell/id/ui/game/donate/DonateFragment$BackStackEntry;-><init>(Lcom/supercell/id/model/IdSystem;)V
 
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const/4 v1, 0x0
 
     .line 7
-    invoke-virtual {p1, v0, v1}, Lcom/supercell/id/ui/MainActivity;->y(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
+    invoke-virtual {p1, v0, v1}, Lcom/supercell/id/ui/MainActivity;->z(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
 
     :cond_0
     return-void

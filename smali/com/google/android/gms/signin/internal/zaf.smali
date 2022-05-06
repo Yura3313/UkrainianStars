@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method public final u6(Lcom/google/android/gms/signin/internal/zaj;Lcom/google/android/gms/signin/internal/zae;)V
+.method public final v6(Lcom/google/android/gms/signin/internal/zaj;Lcom/google/android/gms/signin/internal/zae;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -29,7 +29,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/base/zab;->E0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/base/zab;->F0()Landroid/os/Parcel;
 
     move-result-object v0
 
@@ -52,7 +52,7 @@
 
     .line 5
     :try_start_0
-    iget-object v1, p0, Lcom/google/android/gms/internal/base/zab;->a:Landroid/os/IBinder;
+    iget-object v1, p0, Lcom/google/android/gms/internal/base/zab;->g:Landroid/os/IBinder;
 
     const/4 v2, 0x0
 

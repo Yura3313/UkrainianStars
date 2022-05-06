@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final a:Landroidx/lifecycle/v;
+.field public final g:Landroidx/lifecycle/w;
 
 
 # direct methods
@@ -18,11 +18,11 @@
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
     .line 2
-    new-instance v0, Landroidx/lifecycle/v;
+    new-instance v0, Landroidx/lifecycle/w;
 
-    invoke-direct {v0, p0}, Landroidx/lifecycle/v;-><init>(Landroidx/lifecycle/j;)V
+    invoke-direct {v0, p0}, Landroidx/lifecycle/w;-><init>(Landroidx/lifecycle/j;)V
 
-    iput-object v0, p0, Landroidx/lifecycle/LifecycleService;->a:Landroidx/lifecycle/v;
+    iput-object v0, p0, Landroidx/lifecycle/LifecycleService;->g:Landroidx/lifecycle/w;
 
     return-void
 .end method
@@ -33,10 +33,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->a:Landroidx/lifecycle/v;
+    iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->g:Landroidx/lifecycle/w;
 
     .line 2
-    iget-object v0, v0, Landroidx/lifecycle/v;->a:Landroidx/lifecycle/k;
+    iget-object v0, v0, Landroidx/lifecycle/w;->a:Landroidx/lifecycle/k;
 
     return-object v0
 .end method
@@ -45,14 +45,12 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Landroidx/lifecycle/LifecycleService;->a:Landroidx/lifecycle/v;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object p1, p0, Landroidx/lifecycle/LifecycleService;->g:Landroidx/lifecycle/w;
 
     .line 2
     sget-object v0, Landroidx/lifecycle/f$b;->ON_START:Landroidx/lifecycle/f$b;
 
-    invoke-virtual {p1, v0}, Landroidx/lifecycle/v;->a(Landroidx/lifecycle/f$b;)V
+    invoke-virtual {p1, v0}, Landroidx/lifecycle/w;->a(Landroidx/lifecycle/f$b;)V
 
     const/4 p1, 0x0
 
@@ -63,14 +61,12 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->a:Landroidx/lifecycle/v;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->g:Landroidx/lifecycle/w;
 
     .line 2
     sget-object v1, Landroidx/lifecycle/f$b;->ON_CREATE:Landroidx/lifecycle/f$b;
 
-    invoke-virtual {v0, v1}, Landroidx/lifecycle/v;->a(Landroidx/lifecycle/f$b;)V
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/w;->a(Landroidx/lifecycle/f$b;)V
 
     .line 3
     invoke-super {p0}, Landroid/app/Service;->onCreate()V
@@ -82,19 +78,17 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->a:Landroidx/lifecycle/v;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->g:Landroidx/lifecycle/w;
 
     .line 2
     sget-object v1, Landroidx/lifecycle/f$b;->ON_STOP:Landroidx/lifecycle/f$b;
 
-    invoke-virtual {v0, v1}, Landroidx/lifecycle/v;->a(Landroidx/lifecycle/f$b;)V
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/w;->a(Landroidx/lifecycle/f$b;)V
 
     .line 3
     sget-object v1, Landroidx/lifecycle/f$b;->ON_DESTROY:Landroidx/lifecycle/f$b;
 
-    invoke-virtual {v0, v1}, Landroidx/lifecycle/v;->a(Landroidx/lifecycle/f$b;)V
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/w;->a(Landroidx/lifecycle/f$b;)V
 
     .line 4
     invoke-super {p0}, Landroid/app/Service;->onDestroy()V
@@ -106,14 +100,12 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->a:Landroidx/lifecycle/v;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->g:Landroidx/lifecycle/w;
 
     .line 2
     sget-object v1, Landroidx/lifecycle/f$b;->ON_START:Landroidx/lifecycle/f$b;
 
-    invoke-virtual {v0, v1}, Landroidx/lifecycle/v;->a(Landroidx/lifecycle/f$b;)V
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/w;->a(Landroidx/lifecycle/f$b;)V
 
     .line 3
     invoke-super {p0, p1, p2}, Landroid/app/Service;->onStart(Landroid/content/Intent;I)V

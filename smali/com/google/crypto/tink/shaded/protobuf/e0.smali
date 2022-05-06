@@ -19,15 +19,17 @@
 
 # virtual methods
 .method public a(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    .locals 2
 
     .line 1
     check-cast p1, Lcom/google/crypto/tink/shaded/protobuf/o;
 
-    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/o$f;->NEW_MUTABLE_INSTANCE:Lcom/google/crypto/tink/shaded/protobuf/o$f;
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/o$f;->j:Lcom/google/crypto/tink/shaded/protobuf/o$f;
+
+    const/4 v1, 0x0
 
     .line 2
-    invoke-virtual {p1, v0}, Lcom/google/crypto/tink/shaded/protobuf/o;->i(Lcom/google/crypto/tink/shaded/protobuf/o$f;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v1, v1}, Lcom/google/crypto/tink/shaded/protobuf/o;->i(Lcom/google/crypto/tink/shaded/protobuf/o$f;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -1,117 +1,259 @@
-.class public Lj3/uv0;
+.class public final Lj3/uv0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lj3/rv0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lj3/rv0<",
+        "Ljava/util/Set<",
+        "TT;>;>;"
+    }
+.end annotation
+
 
 # instance fields
-.field public final a:Lcom/google/android/gms/internal/ads/d7;
-
-.field public final b:Ljava/lang/String;
-
-.field public final c:Ljava/lang/String;
-
-.field public volatile d:Ljava/lang/reflect/Method;
-
-.field public final e:[Ljava/lang/Class;
+.field public final a:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "[",
-            "Ljava/lang/Class<",
-            "*>;"
+            "Ljava/util/List<",
+            "Lj3/vv0<",
+            "TT;>;>;"
         }
     .end annotation
 .end field
 
-.field public f:Ljava/util/concurrent/CountDownLatch;
+.field public final b:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lj3/vv0<",
+            "Ljava/util/Collection<",
+            "TT;>;>;>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public varargs constructor <init>(Lcom/google/android/gms/internal/ads/d7;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/google/android/gms/internal/ads/d7;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "[",
-            "Ljava/lang/Class<",
-            "*>;)V"
-        }
-    .end annotation
+.method public static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
 
-    const/4 v0, 0x0
+    move-result-object v0
 
-    .line 2
-    iput-object v0, p0, Lj3/uv0;->d:Ljava/lang/reflect/Method;
-
-    .line 3
-    new-instance v0, Ljava/util/concurrent/CountDownLatch;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, v1}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
-
-    iput-object v0, p0, Lj3/uv0;->f:Ljava/util/concurrent/CountDownLatch;
-
-    .line 4
-    iput-object p1, p0, Lj3/uv0;->a:Lcom/google/android/gms/internal/ads/d7;
-
-    .line 5
-    iput-object p2, p0, Lj3/uv0;->b:Ljava/lang/String;
-
-    .line 6
-    iput-object p3, p0, Lj3/uv0;->c:Ljava/lang/String;
-
-    .line 7
-    iput-object p4, p0, Lj3/uv0;->e:[Ljava/lang/Class;
-
-    .line 8
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/d7;->b:Ljava/util/concurrent/ExecutorService;
-
-    .line 9
-    new-instance p2, Lj3/qe;
-
-    const/4 p3, 0x3
-
-    invoke-direct {p2, p0, p3}, Lj3/qe;-><init>(Ljava/lang/Object;I)V
-
-    invoke-interface {p1, p2}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+    invoke-static {v0}, Lj3/qv0;->a(Ljava/lang/Object;)Lj3/rv0;
 
     return-void
 .end method
 
+.method public constructor <init>(Ljava/util/List;Ljava/util/List;Lj3/s5;)V
+    .locals 0
 
-# virtual methods
-.method public final a([BLjava/lang/String;)Ljava/lang/String;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lj3/uv0;->a:Ljava/util/List;
+
+    .line 3
+    iput-object p2, p0, Lj3/uv0;->b:Ljava/util/List;
+
+    return-void
+.end method
+
+.method public static a(II)Lj3/wd;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
         value = {
-            Lcom/google/android/gms/internal/ads/zzeh;,
-            Ljava/io/UnsupportedEncodingException;
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(II)",
+            "Lj3/wd;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lj3/uv0;->a:Lcom/google/android/gms/internal/ads/d7;
+    new-instance v0, Lj3/wd;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, p1, v1}, Lj3/wd;-><init>(IILj3/s5;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final get()Ljava/lang/Object;
+    .locals 7
+
+    .line 1
+    iget-object v0, p0, Lj3/uv0;->a:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
 
     .line 2
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/d7;->d:Lj3/ps0;
+    new-instance v1, Ljava/util/ArrayList;
+
+    iget-object v2, p0, Lj3/uv0;->b:Ljava/util/List;
 
     .line 3
-    invoke-virtual {v0, p1, p2}, Lj3/ps0;->b([BLjava/lang/String;)[B
+    invoke-interface {v2}, Ljava/util/List;->size()I
 
-    move-result-object p1
+    move-result v2
+
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 4
-    new-instance p2, Ljava/lang/String;
+    iget-object v2, p0, Lj3/uv0;->b:Ljava/util/List;
 
-    const-string v0, "UTF-8"
+    invoke-interface {v2}, Ljava/util/List;->size()I
 
-    invoke-direct {p2, p1, v0}, Ljava/lang/String;-><init>([BLjava/lang/String;)V
+    move-result v2
 
-    return-object p2
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    :goto_0
+    if-ge v4, v2, :cond_0
+
+    .line 5
+    iget-object v5, p0, Lj3/uv0;->b:Ljava/util/List;
+
+    invoke-interface {v5, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Lj3/vv0;
+
+    invoke-interface {v5}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/util/Collection;
+
+    .line 6
+    invoke-interface {v5}, Ljava/util/Collection;->size()I
+
+    move-result v6
+
+    add-int/2addr v0, v6
+
+    .line 7
+    invoke-virtual {v1, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    .line 8
+    :cond_0
+    new-instance v2, Ljava/util/HashSet;
+
+    invoke-static {v0}, Lj3/dc;->f(I)I
+
+    move-result v0
+
+    invoke-direct {v2, v0}, Ljava/util/HashSet;-><init>(I)V
+
+    .line 9
+    iget-object v0, p0, Lj3/uv0;->a:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    const/4 v4, 0x0
+
+    :goto_1
+    if-ge v4, v0, :cond_1
+
+    .line 10
+    iget-object v5, p0, Lj3/uv0;->a:Ljava/util/List;
+
+    invoke-interface {v5, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Lj3/vv0;
+
+    invoke-interface {v5}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v5
+
+    .line 11
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 12
+    invoke-virtual {v2, v5}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_1
+
+    .line 13
+    :cond_1
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    :goto_2
+    if-ge v3, v0, :cond_3
+
+    .line 14
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/Collection;
+
+    invoke-interface {v4}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+
+    move-result-object v4
+
+    :goto_3
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2
+
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v5
+
+    .line 15
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 16
+    invoke-virtual {v2, v5}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    goto :goto_3
+
+    :cond_2
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_2
+
+    .line 17
+    :cond_3
+    invoke-static {v2}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+
+    move-result-object v0
+
+    return-object v0
 .end method

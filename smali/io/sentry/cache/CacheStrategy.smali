@@ -18,27 +18,6 @@
 
 
 # direct methods
-.method private static synthetic $closeResource(Ljava/lang/Throwable;Ljava/lang/AutoCloseable;)V
-    .locals 0
-
-    if-eqz p0, :cond_0
-
-    .line 1
-    :try_start_0
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
-
-    :catchall_0
-    :goto_0
-    return-void
-.end method
-
 .method static constructor <clinit>()V
     .locals 1
 
@@ -621,19 +600,17 @@
 .end method
 
 .method private readEnvelope(Ljava/io/File;)Lio/sentry/SentryEnvelope;
-    .locals 4
-
-    const/4 v0, 0x0
+    .locals 3
 
     .line 1
     :try_start_0
-    new-instance v1, Ljava/io/BufferedInputStream;
+    new-instance v0, Ljava/io/BufferedInputStream;
 
-    new-instance v2, Ljava/io/FileInputStream;
+    new-instance v1, Ljava/io/FileInputStream;
 
-    invoke-direct {v2, p1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+    invoke-direct {v1, p1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
-    invoke-direct {v1, v2}, Ljava/io/BufferedInputStream;-><init>(Ljava/io/InputStream;)V
+    invoke-direct {v0, v1}, Ljava/io/BufferedInputStream;-><init>(Ljava/io/InputStream;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -641,7 +618,7 @@
     :try_start_1
     iget-object p1, p0, Lio/sentry/cache/CacheStrategy;->serializer:Lio/sentry/ISerializer;
 
-    invoke-interface {p1, v1}, Lio/sentry/ISerializer;->deserializeEnvelope(Ljava/io/InputStream;)Lio/sentry/SentryEnvelope;
+    invoke-interface {p1, v0}, Lio/sentry/ISerializer;->deserializeEnvelope(Ljava/io/InputStream;)Lio/sentry/SentryEnvelope;
 
     move-result-object p1
     :try_end_1
@@ -649,7 +626,7 @@
 
     .line 3
     :try_start_2
-    invoke-static {v0, v1}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v0}, Ljava/io/InputStream;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
 
@@ -660,75 +637,70 @@
 
     .line 4
     :try_start_3
-    throw p1
+    invoke-virtual {v0}, Ljava/io/InputStream;->close()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     :catchall_1
-    move-exception v2
-
-    .line 5
     :try_start_4
-    invoke-static {p1, v1}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    throw v2
+    throw p1
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
 
     :catch_0
     move-exception p1
 
-    .line 6
-    iget-object v1, p0, Lio/sentry/cache/CacheStrategy;->options:Lio/sentry/SentryOptions;
+    .line 5
+    iget-object v0, p0, Lio/sentry/cache/CacheStrategy;->options:Lio/sentry/SentryOptions;
 
-    invoke-virtual {v1}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {v0}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
 
-    move-result-object v1
+    move-result-object v0
 
-    sget-object v2, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
+    sget-object v1, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
 
-    const-string v3, "Failed to deserialize the envelope."
+    const-string v2, "Failed to deserialize the envelope."
 
-    invoke-interface {v1, v2, v3, p1}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {v0, v1, v2, p1}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    return-object v0
+    const/4 p1, 0x0
+
+    return-object p1
 .end method
 
 .method private readSession(Lio/sentry/SentryEnvelopeItem;)Lio/sentry/Session;
-    .locals 4
-
-    const/4 v0, 0x0
+    .locals 3
 
     .line 1
     :try_start_0
-    new-instance v1, Ljava/io/BufferedReader;
+    new-instance v0, Ljava/io/BufferedReader;
 
-    new-instance v2, Ljava/io/InputStreamReader;
+    new-instance v1, Ljava/io/InputStreamReader;
 
-    new-instance v3, Ljava/io/ByteArrayInputStream;
+    new-instance v2, Ljava/io/ByteArrayInputStream;
 
     .line 2
     invoke-virtual {p1}, Lio/sentry/SentryEnvelopeItem;->getData()[B
 
     move-result-object p1
 
-    invoke-direct {v3, p1}, Ljava/io/ByteArrayInputStream;-><init>([B)V
+    invoke-direct {v2, p1}, Ljava/io/ByteArrayInputStream;-><init>([B)V
 
     sget-object p1, Lio/sentry/cache/CacheStrategy;->UTF_8:Ljava/nio/charset/Charset;
 
-    invoke-direct {v2, v3, p1}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
+    invoke-direct {v1, v2, p1}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
 
-    invoke-direct {v1, v2}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
+    invoke-direct {v0, v1}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     .line 3
     :try_start_1
     iget-object p1, p0, Lio/sentry/cache/CacheStrategy;->serializer:Lio/sentry/ISerializer;
 
-    const-class v2, Lio/sentry/Session;
+    const-class v1, Lio/sentry/Session;
 
-    invoke-interface {p1, v1, v2}, Lio/sentry/ISerializer;->deserialize(Ljava/io/Reader;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-interface {p1, v0, v1}, Lio/sentry/ISerializer;->deserialize(Ljava/io/Reader;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -738,9 +710,9 @@
 
     .line 4
     :try_start_2
-    invoke-static {v0, v1}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v0}, Ljava/io/Reader;->close()V
     :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
     return-object p1
 
@@ -749,42 +721,39 @@
 
     .line 5
     :try_start_3
-    throw p1
+    invoke-virtual {v0}, Ljava/io/Reader;->close()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     :catchall_1
-    move-exception v2
-
-    .line 6
     :try_start_4
-    invoke-static {p1, v1}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    throw v2
+    throw p1
     :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
+    .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
-    :catch_0
+    :catchall_2
     move-exception p1
 
-    .line 7
-    iget-object v1, p0, Lio/sentry/cache/CacheStrategy;->options:Lio/sentry/SentryOptions;
+    .line 6
+    iget-object v0, p0, Lio/sentry/cache/CacheStrategy;->options:Lio/sentry/SentryOptions;
 
-    invoke-virtual {v1}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {v0}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
 
-    move-result-object v1
+    move-result-object v0
 
-    sget-object v2, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
+    sget-object v1, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
 
-    const-string v3, "Failed to deserialize the session."
+    const-string v2, "Failed to deserialize the session."
 
-    invoke-interface {v1, v2, v3, p1}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {v0, v1, v2, p1}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    return-object v0
+    const/4 p1, 0x0
+
+    return-object p1
 .end method
 
 .method private saveNewEnvelope(Lio/sentry/SentryEnvelope;Ljava/io/File;J)V
-    .locals 3
+    .locals 2
 
     .line 1
     :try_start_0
@@ -792,15 +761,13 @@
 
     invoke-direct {v0, p2}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    const/4 v1, 0x0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     .line 2
     :try_start_1
-    iget-object v2, p0, Lio/sentry/cache/CacheStrategy;->serializer:Lio/sentry/ISerializer;
+    iget-object v1, p0, Lio/sentry/cache/CacheStrategy;->serializer:Lio/sentry/ISerializer;
 
-    invoke-interface {v2, p1, v0}, Lio/sentry/ISerializer;->serialize(Lio/sentry/SentryEnvelope;Ljava/io/OutputStream;)V
+    invoke-interface {v1, p1, v0}, Lio/sentry/ISerializer;->serialize(Lio/sentry/SentryEnvelope;Ljava/io/OutputStream;)V
 
     .line 3
     invoke-virtual {p2, p3, p4}, Ljava/io/File;->setLastModified(J)Z
@@ -809,9 +776,9 @@
 
     .line 4
     :try_start_2
-    invoke-static {v1, v0}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
     :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
     goto :goto_0
 
@@ -820,25 +787,20 @@
 
     .line 5
     :try_start_3
-    throw p1
+    invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     :catchall_1
-    move-exception p2
-
-    .line 6
     :try_start_4
-    invoke-static {p1, v0}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    throw p2
+    throw p1
     :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
+    .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
-    :catch_0
+    :catchall_2
     move-exception p1
 
-    .line 7
+    .line 6
     iget-object p2, p0, Lio/sentry/cache/CacheStrategy;->options:Lio/sentry/SentryOptions;
 
     invoke-virtual {p2}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
@@ -866,7 +828,7 @@
     if-le v0, v1, :cond_0
 
     .line 2
-    sget-object v0, Lio/sentry/cache/a;->a:Lio/sentry/cache/a;
+    sget-object v0, Lio/sentry/cache/a;->g:Lio/sentry/cache/a;
 
     invoke-static {p1, v0}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 

@@ -486,20 +486,11 @@
 
     .line 33
     :try_start_2
-    throw p1
+    invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
     :catchall_1
-    move-exception p1
-
-    .line 34
-    :try_start_3
-    invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->close()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_2
-
-    :catchall_2
     goto :goto_7
 
     :goto_6

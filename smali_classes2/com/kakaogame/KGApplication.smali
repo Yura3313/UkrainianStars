@@ -52,7 +52,7 @@
 
     invoke-direct {v0, p1, p2, p0}, Lcom/kakaogame/KGApplication$7;-><init>(Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;)V
 
-    invoke-static {p3, v0}, Lcom/kakaogame/ui/ImageDownloader;->downloadImage(Ljava/lang/String;Ljc/a;)V
+    invoke-static {p3, v0}, Lcom/kakaogame/ui/ImageDownloader;->downloadImage(Ljava/lang/String;Lgc/a;)V
 
     return-void
 .end method

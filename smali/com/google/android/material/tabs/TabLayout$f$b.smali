@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic g:I
 
-.field public final synthetic b:Lcom/google/android/material/tabs/TabLayout$f;
+.field public final synthetic h:Lcom/google/android/material/tabs/TabLayout$f;
 
 
 # direct methods
@@ -25,9 +25,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$f$b;->b:Lcom/google/android/material/tabs/TabLayout$f;
+    iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$f$b;->h:Lcom/google/android/material/tabs/TabLayout$f;
 
-    iput p2, p0, Lcom/google/android/material/tabs/TabLayout$f$b;->a:I
+    iput p2, p0, Lcom/google/android/material/tabs/TabLayout$f$b;->g:I
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -40,16 +40,16 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$f$b;->b:Lcom/google/android/material/tabs/TabLayout$f;
+    iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$f$b;->h:Lcom/google/android/material/tabs/TabLayout$f;
 
-    iget v0, p0, Lcom/google/android/material/tabs/TabLayout$f$b;->a:I
+    iget v0, p0, Lcom/google/android/material/tabs/TabLayout$f$b;->g:I
 
-    iput v0, p1, Lcom/google/android/material/tabs/TabLayout$f;->i:I
+    iput v0, p1, Lcom/google/android/material/tabs/TabLayout$f;->j:I
 
     const/4 v0, 0x0
 
     .line 2
-    iput v0, p1, Lcom/google/android/material/tabs/TabLayout$f;->j:F
+    iput v0, p1, Lcom/google/android/material/tabs/TabLayout$f;->k:F
 
     return-void
 .end method
@@ -58,11 +58,11 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$f$b;->b:Lcom/google/android/material/tabs/TabLayout$f;
+    iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$f$b;->h:Lcom/google/android/material/tabs/TabLayout$f;
 
-    iget v0, p0, Lcom/google/android/material/tabs/TabLayout$f$b;->a:I
+    iget v0, p0, Lcom/google/android/material/tabs/TabLayout$f$b;->g:I
 
-    iput v0, p1, Lcom/google/android/material/tabs/TabLayout$f;->i:I
+    iput v0, p1, Lcom/google/android/material/tabs/TabLayout$f;->j:I
 
     return-void
 .end method

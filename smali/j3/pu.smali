@@ -1,191 +1,153 @@
-.class public final Lj3/pu;
+.class public Lj3/pu;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lj3/bv0;
-
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Ljava/lang/Object;
 
-.field public final b:Ljava/lang/Object;
+.field public b:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
-    .locals 0
+.method public synthetic constructor <init>()V
+    .locals 1
 
     .line 1
-    iput p2, p0, Lj3/pu;->a:I
-
-    iput-object p1, p0, Lj3/pu;->b:Ljava/lang/Object;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Lj3/pu;->a:Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public static a(Lj3/fv0;)Lj3/pu;
-    .locals 2
+.method public synthetic constructor <init>(Lj3/bv;)V
+    .locals 0
 
-    .line 1
-    new-instance v0, Lj3/pu;
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v1, 0x2
+    .line 4
+    iput-object p1, p0, Lj3/pu;->a:Ljava/lang/Object;
 
-    invoke-direct {v0, p0, v1}, Lj3/pu;-><init>(Ljava/lang/Object;I)V
+    const/4 p1, 0x0
 
-    return-object v0
+    .line 5
+    iput-object p1, p0, Lj3/pu;->b:Ljava/lang/Object;
+
+    return-void
 .end method
 
-.method public static b(Lj3/fv0;)Lj3/pu;
-    .locals 2
+.method public synthetic constructor <init>(Lj3/bv;Lj3/gh;)V
+    .locals 0
 
-    .line 1
-    new-instance v0, Lj3/pu;
+    .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v1, 0x3
+    .line 7
+    iput-object p1, p0, Lj3/pu;->a:Ljava/lang/Object;
 
-    invoke-direct {v0, p0, v1}, Lj3/pu;-><init>(Ljava/lang/Object;I)V
+    .line 8
+    iput-object p2, p0, Lj3/pu;->b:Ljava/lang/Object;
 
-    return-object v0
-.end method
-
-.method public static c(Lcom/google/android/gms/internal/ads/o;)Lj3/pu;
-    .locals 2
-
-    .line 1
-    new-instance v0, Lj3/pu;
-
-    const/4 v1, 0x4
-
-    invoke-direct {v0, p0, v1}, Lj3/pu;-><init>(Ljava/lang/Object;I)V
-
-    return-object v0
+    return-void
 .end method
 
 
 # virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 4
+.method public a(Lj3/hq;)Ljava/util/Set;
+    .locals 2
 
-    iget v0, p0, Lj3/pu;->a:I
+    .line 1
+    sget-object v0, Lj3/kd;->f:Lj3/km0;
 
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+    .line 2
+    new-instance v1, Lj3/yt;
 
-    packed-switch v0, :pswitch_data_0
+    invoke-direct {v1, p1, v0}, Lj3/yt;-><init>(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
+
+    .line 3
+    invoke-static {v1}, Ljava/util/Collections;->singleton(Ljava/lang/Object;)Ljava/util/Set;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public b(Lj3/hq;)Ljava/util/Set;
+    .locals 2
+
+    .line 1
+    sget-object v0, Lj3/kd;->f:Lj3/km0;
+
+    .line 2
+    new-instance v1, Lj3/yt;
+
+    invoke-direct {v1, p1, v0}, Lj3/yt;-><init>(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
+
+    .line 3
+    invoke-static {v1}, Ljava/util/Collections;->singleton(Ljava/lang/Object;)Ljava/util/Set;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public declared-synchronized c()Ljava/util/Map;
+    .locals 2
+
+    monitor-enter p0
+
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lj3/pu;->b:Ljava/lang/Object;
+
+    check-cast v0, Ljava/util/Map;
+
+    if-nez v0, :cond_0
+
+    .line 2
+    new-instance v0, Ljava/util/HashMap;
+
+    iget-object v1, p0, Lj3/pu;->a:Ljava/lang/Object;
+
+    check-cast v1, Ljava/util/Map;
+
+    invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
+
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lj3/pu;->b:Ljava/lang/Object;
 
     goto :goto_0
 
-    .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/pu;->b:Ljava/lang/Object;
+    :catchall_0
+    move-exception v0
 
-    check-cast v0, Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/Set;
-
-    .line 2
-    new-instance v1, Lj3/p90;
-
-    invoke-direct {v1, v0}, Lj3/p90;-><init>(Ljava/util/Set;)V
-
-    return-object v1
+    goto :goto_1
 
     .line 3
-    :pswitch_1
-    iget-object v0, p0, Lj3/pu;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/content/Context;
-
-    .line 4
-    new-instance v1, Lj3/p20;
-
-    invoke-direct {v1, v0}, Lj3/p20;-><init>(Landroid/content/Context;)V
-
-    return-object v1
-
-    .line 5
-    :pswitch_2
-    iget-object v0, p0, Lj3/pu;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lj3/eg0;
-
-    .line 6
-    new-instance v1, Lj3/rv;
-
-    invoke-direct {v1, v0}, Lj3/rv;-><init>(Lj3/eg0;)V
-
-    return-object v1
-
-    .line 7
-    :pswitch_3
-    iget-object v0, p0, Lj3/pu;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lj3/wu;
-
-    .line 8
-    sget-object v2, Lj3/gd;->f:Lj3/am0;
-
-    .line 9
-    new-instance v3, Lj3/rt;
-
-    invoke-direct {v3, v0, v2}, Lj3/rt;-><init>(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
-
-    .line 10
-    invoke-static {v3}, Ljava/util/Collections;->singleton(Ljava/lang/Object;)Ljava/util/Set;
-
-    move-result-object v0
-
-    .line 11
-    invoke-static {v0, v1}, Lj3/zo0;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-
-    return-object v0
-
-    .line 12
+    :cond_0
     :goto_0
     iget-object v0, p0, Lj3/pu;->b:Ljava/lang/Object;
 
-    check-cast v0, Lcom/google/android/gms/internal/ads/o;
+    check-cast v0, Ljava/util/Map;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 13
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/o;->b:Ljava/util/Set;
-
-    .line 14
-    invoke-static {v0, v1}, Lj3/zo0;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    monitor-exit p0
 
     return-object v0
 
-    nop
+    :goto_1
+    monitor-exit p0
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    throw v0
 .end method

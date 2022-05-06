@@ -1,134 +1,233 @@
-.class public final Lue/c;
-.super Lue/d;
+.class public Lue/c;
+.super Lse/t0;
 .source "Dispatcher.kt"
 
 
-# static fields
-.field public static final k:Lse/w;
+# instance fields
+.field public g:Lue/a;
 
-.field public static final l:Lue/c;
+.field public final h:I
+
+.field public final i:I
+
+.field public final j:J
+
+.field public final k:Ljava/lang/String;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 8
+.method public constructor <init>(IILjava/lang/String;I)V
+    .locals 6
+
+    and-int/lit8 p3, p4, 0x1
+
+    if-eqz p3, :cond_0
 
     .line 1
-    new-instance v0, Lue/c;
+    sget p1, Lue/j;->c:I
 
-    invoke-direct {v0}, Lue/c;-><init>()V
+    :cond_0
+    move v1, p1
 
-    sput-object v0, Lue/c;->l:Lue/c;
+    and-int/lit8 p1, p4, 0x2
+
+    if-eqz p1, :cond_1
 
     .line 2
-    sget v1, Lte/w;->a:I
+    sget p2, Lue/j;->d:I
 
-    const/16 v2, 0x40
+    :cond_1
+    move v2, p2
 
-    if-ge v2, v1, :cond_0
+    and-int/lit8 p1, p4, 0x4
 
-    move v3, v1
+    const/4 p2, 0x0
+
+    if-eqz p1, :cond_2
+
+    const-string p1, "DefaultDispatcher"
+
+    move-object v5, p1
 
     goto :goto_0
 
-    :cond_0
-    const/16 v1, 0x40
-
-    const/16 v3, 0x40
+    :cond_2
+    move-object v5, p2
 
     :goto_0
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    const/16 v6, 0xc
-
-    const/4 v7, 0x0
-
-    const-string v2, "kotlinx.coroutines.io.parallelism"
+    if-eqz v5, :cond_3
 
     .line 3
-    invoke-static/range {v2 .. v7}, Lqe/g;->d(Ljava/lang/String;IIIILjava/lang/Object;)I
-
-    move-result v1
-
-    if-lez v1, :cond_1
-
-    const/4 v2, 0x1
-
-    goto :goto_1
-
-    :cond_1
-    const/4 v2, 0x0
-
-    :goto_1
-    if-eqz v2, :cond_2
+    sget-wide v3, Lue/j;->e:J
 
     .line 4
-    new-instance v2, Lue/f;
+    invoke-direct {p0}, Lse/t0;-><init>()V
 
-    sget-object v3, Lue/l;->PROBABLY_BLOCKING:Lue/l;
+    iput v1, p0, Lue/c;->h:I
 
-    invoke-direct {v2, v0, v1, v3}, Lue/f;-><init>(Lue/d;ILue/l;)V
+    iput v2, p0, Lue/c;->i:I
+
+    iput-wide v3, p0, Lue/c;->j:J
+
+    iput-object v5, p0, Lue/c;->k:Ljava/lang/String;
 
     .line 5
-    sput-object v2, Lue/c;->k:Lse/w;
+    new-instance p1, Lue/a;
 
-    return-void
+    move-object v0, p1
 
-    :cond_2
-    const-string v0, "Expected positive parallelism level, but have "
+    invoke-direct/range {v0 .. v5}, Lue/a;-><init>(IIJLjava/lang/String;)V
 
     .line 6
-    invoke-static {v0, v1}, Landroid/support/v4/media/c;->a(Ljava/lang/String;I)Ljava/lang/String;
-
-    move-result-object v0
-
-    new-instance v1, Ljava/lang/IllegalArgumentException;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-direct {v1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v1
-.end method
-
-.method public constructor <init>()V
-    .locals 3
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x7
-
-    .line 1
-    invoke-direct {p0, v0, v0, v1, v2}, Lue/d;-><init>(IILjava/lang/String;I)V
+    iput-object p1, p0, Lue/c;->g:Lue/a;
 
     return-void
+
+    :cond_3
+    const-string p1, "schedulerName"
+
+    .line 7
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw p2
 .end method
 
 
 # virtual methods
-.method public close()V
-    .locals 2
+.method public dispatch(Lde/f;Ljava/lang/Runnable;)V
+    .locals 3
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_1
+
+    if-eqz p2, :cond_0
 
     .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    :try_start_0
+    iget-object p1, p0, Lue/c;->g:Lue/a;
 
-    const-string v1, "DefaultDispatcher cannot be closed"
+    const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    const/4 v2, 0x6
+
+    invoke-static {p1, p2, v0, v1, v2}, Lue/a;->i(Lue/a;Ljava/lang/Runnable;Lue/h;ZI)V
+    :try_end_0
+    .catch Ljava/util/concurrent/RejectedExecutionException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    .line 2
+    :catch_0
+    sget-object p1, Lse/d0;->m:Lse/d0;
+
+    .line 3
+    invoke-virtual {p1, p2}, Lse/q0;->x(Ljava/lang/Runnable;)V
+
+    :goto_0
+    return-void
+
+    :cond_0
+    const-string p1, "block"
+
+    .line 4
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_1
+    const-string p1, "context"
+
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public dispatchYield(Lde/f;Ljava/lang/Runnable;)V
+    .locals 4
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_1
+
+    if-eqz p2, :cond_0
+
+    .line 1
+    :try_start_0
+    iget-object v1, p0, Lue/c;->g:Lue/a;
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x2
+
+    invoke-static {v1, p2, v0, v2, v3}, Lue/a;->i(Lue/a;Ljava/lang/Runnable;Lue/h;ZI)V
+    :try_end_0
+    .catch Ljava/util/concurrent/RejectedExecutionException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    .line 2
+    :catch_0
+    sget-object v0, Lse/d0;->m:Lse/d0;
+
+    invoke-virtual {v0, p1, p2}, Lse/w;->dispatchYield(Lde/f;Ljava/lang/Runnable;)V
+
+    :goto_0
+    return-void
+
+    :cond_0
+    const-string p1, "block"
+
+    .line 3
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_1
+    const-string p1, "context"
+
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public final k(Ljava/lang/Runnable;Lue/h;Z)V
     .locals 1
 
-    const-string v0, "DefaultDispatcher"
+    if-eqz p1, :cond_0
 
-    return-object v0
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lue/c;->g:Lue/a;
+
+    invoke-virtual {v0, p1, p2, p3}, Lue/a;->h(Ljava/lang/Runnable;Lue/h;Z)V
+    :try_end_0
+    .catch Ljava/util/concurrent/RejectedExecutionException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    .line 2
+    :catch_0
+    sget-object p3, Lse/d0;->m:Lse/d0;
+
+    iget-object v0, p0, Lue/c;->g:Lue/a;
+
+    invoke-virtual {v0, p1, p2}, Lue/a;->f(Ljava/lang/Runnable;Lue/h;)Lue/g;
+
+    move-result-object p1
+
+    invoke-virtual {p3, p1}, Lse/q0;->x(Ljava/lang/Runnable;)V
+
+    :goto_0
+    return-void
+
+    :cond_0
+    const-string p1, "block"
+
+    .line 3
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
 .end method

@@ -124,7 +124,7 @@
     check-cast v0, Lg/c$c;
 
     .line 4
-    iget-object v0, v0, Lg/c$c;->a:Landroid/view/CollapsibleActionView;
+    iget-object v0, v0, Lg/c$c;->g:Landroid/view/CollapsibleActionView;
 
     check-cast v0, Landroid/view/View;
 

@@ -3,77 +3,103 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/wc0;
+.implements Lj3/bm0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lj3/wc0<",
-        "Lj3/b90;",
+        "Lj3/bm0<",
+        "Landroid/net/Uri;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lj3/am0;
-
-.field public final b:Landroid/content/Context;
-
-.field public final c:Lj3/pg0;
-
-.field public final d:Landroid/view/View;
+.field public final synthetic g:Lcom/google/android/gms/internal/ads/zzarc;
 
 
 # direct methods
-.method public constructor <init>(Lj3/am0;Landroid/content/Context;Lj3/pg0;Landroid/view/ViewGroup;)V
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzarc;)V
     .locals 0
 
     .line 1
+    iput-object p1, p0, Lj3/a90;->g:Lcom/google/android/gms/internal/ads/zzarc;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lj3/a90;->a:Lj3/am0;
-
-    .line 3
-    iput-object p2, p0, Lj3/a90;->b:Landroid/content/Context;
-
-    .line 4
-    iput-object p3, p0, Lj3/a90;->c:Lj3/pg0;
-
-    .line 5
-    iput-object p4, p0, Lj3/a90;->d:Landroid/view/View;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lj3/yl0;
+.method public final a(Ljava/lang/Throwable;)V
     .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lj3/yl0<",
-            "Lj3/b90;",
-            ">;"
-        }
-    .end annotation
 
     .line 1
-    iget-object v0, p0, Lj3/a90;->a:Lj3/am0;
+    :try_start_0
+    iget-object v0, p0, Lj3/a90;->g:Lcom/google/android/gms/internal/ads/zzarc;
 
-    new-instance v1, Lj3/d90;
+    const-string v1, "Internal error: "
 
-    const/4 v2, 0x0
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
-    invoke-direct {v1, p0, v2}, Lj3/d90;-><init>(Ljava/lang/Object;I)V
+    move-result-object p1
 
-    invoke-interface {v0, v1}, Lj3/am0;->a(Ljava/util/concurrent/Callable;)Lj3/yl0;
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p1
 
-    return-object v0
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    invoke-virtual {v1, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    goto :goto_0
+
+    :cond_0
+    new-instance p1, Ljava/lang/String;
+
+    invoke-direct {p1, v1}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+
+    :goto_0
+    invoke-interface {v0, p1}, Lcom/google/android/gms/internal/ads/zzarc;->onError(Ljava/lang/String;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    return-void
+.end method
+
+.method public final synthetic onSuccess(Ljava/lang/Object;)V
+    .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/Nonnull;
+        .end annotation
+    .end param
+
+    .line 1
+    check-cast p1, Landroid/net/Uri;
+
+    .line 2
+    :try_start_0
+    iget-object v0, p0, Lj3/a90;->g:Lcom/google/android/gms/internal/ads/zzarc;
+
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object p1
+
+    invoke-interface {v0, p1}, Lcom/google/android/gms/internal/ads/zzarc;->h4(Ljava/util/List;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    return-void
 .end method

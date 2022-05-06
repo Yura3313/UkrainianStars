@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method public final E0(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method public final F0(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -51,7 +51,7 @@
     check-cast p2, Lcom/google/android/gms/auth/api/identity/BeginSignInResult;
 
     .line 3
-    invoke-interface {p0, p1, p2}, Lcom/google/android/gms/internal/auth-api/zzaa;->n6(Lcom/google/android/gms/common/api/Status;Lcom/google/android/gms/auth/api/identity/BeginSignInResult;)V
+    invoke-interface {p0, p1, p2}, Lcom/google/android/gms/internal/auth-api/zzaa;->o6(Lcom/google/android/gms/common/api/Status;Lcom/google/android/gms/auth/api/identity/BeginSignInResult;)V
 
     return p3
 

@@ -42,7 +42,7 @@
     check-cast p1, Landroid/view/View;
 
     .line 2
-    sget-object v0, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 3
     invoke-virtual {p1}, Landroid/view/View;->getClipBounds()Landroid/graphics/Rect;
@@ -61,7 +61,7 @@
     check-cast p2, Landroid/graphics/Rect;
 
     .line 2
-    sget-object v0, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 3
     invoke-virtual {p1, p2}, Landroid/view/View;->setClipBounds(Landroid/graphics/Rect;)V

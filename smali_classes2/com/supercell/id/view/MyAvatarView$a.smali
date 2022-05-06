@@ -27,14 +27,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/view/MyAvatarView;
+.field public final synthetic g:Lcom/supercell/id/view/MyAvatarView;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/MyAvatarView;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarView$a;->a:Lcom/supercell/id/view/MyAvatarView;
+    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarView$a;->g:Lcom/supercell/id/view/MyAvatarView;
 
     const/4 p1, 0x0
 
@@ -49,7 +49,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarView$a;->a:Lcom/supercell/id/view/MyAvatarView;
+    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarView$a;->g:Lcom/supercell/id/view/MyAvatarView;
 
     sget v1, Lcom/supercell/id/R$id;->image:I
 

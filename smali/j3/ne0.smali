@@ -3,11 +3,11 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/wc0;
+.implements Lj3/yj0;
 
 
 # static fields
-.field public static final a:Lj3/wc0;
+.field public static final a:Lj3/yj0;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     invoke-direct {v0}, Lj3/ne0;-><init>()V
 
-    sput-object v0, Lj3/ne0;->a:Lj3/wc0;
+    sput-object v0, Lj3/ne0;->a:Lj3/yj0;
 
     return-void
 .end method
@@ -33,15 +33,14 @@
 
 
 # virtual methods
-.method public final a()Lj3/yl0;
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    .line 1
-    sget-object v0, Lj3/me0;->a:Lj3/uc0;
+    new-instance v0, Lj3/le0;
 
-    invoke-static {v0}, Lj3/ul0;->i(Ljava/lang/Object;)Lj3/yl0;
+    check-cast p1, Landroid/location/Location;
 
-    move-result-object v0
+    invoke-direct {v0, p1}, Lj3/le0;-><init>(Landroid/location/Location;)V
 
     return-object v0
 .end method

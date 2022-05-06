@@ -23,5 +23,5 @@
 .method public abstract getImageUrl()Ljava/lang/String;
 .end method
 
-.method public abstract v()Landroid/net/Uri;
+.method public abstract x()Landroid/net/Uri;
 .end method

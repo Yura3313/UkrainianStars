@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/material/circularreveal/c;
+.field public final synthetic g:Lcom/google/android/material/circularreveal/c;
 
 
 # direct methods
@@ -12,7 +12,7 @@
     .locals 0
 
     .line 1
-    iput-object p2, p0, Lcom/google/android/material/transformation/c;->a:Lcom/google/android/material/circularreveal/c;
+    iput-object p2, p0, Lcom/google/android/material/transformation/c;->g:Lcom/google/android/material/circularreveal/c;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -25,7 +25,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/transformation/c;->a:Lcom/google/android/material/circularreveal/c;
+    iget-object p1, p0, Lcom/google/android/material/transformation/c;->g:Lcom/google/android/material/circularreveal/c;
 
     invoke-interface {p1}, Lcom/google/android/material/circularreveal/c;->getRevealInfo()Lcom/google/android/material/circularreveal/c$e;
 
@@ -37,7 +37,7 @@
     iput v0, p1, Lcom/google/android/material/circularreveal/c$e;->c:F
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/transformation/c;->a:Lcom/google/android/material/circularreveal/c;
+    iget-object v0, p0, Lcom/google/android/material/transformation/c;->g:Lcom/google/android/material/circularreveal/c;
 
     invoke-interface {v0, p1}, Lcom/google/android/material/circularreveal/c;->setRevealInfo(Lcom/google/android/material/circularreveal/c$e;)V
 

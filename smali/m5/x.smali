@@ -1,32 +1,203 @@
 .class public final Lm5/x;
 .super Ljava/lang/Object;
-.source "StructuralMessageInfo.java"
-
-# interfaces
-.implements Lm5/l;
+.source "TextFormatEscaper.java"
 
 
-# virtual methods
-.method public a()Z
-    .locals 1
+# direct methods
+.method public static a(Lm5/c;)Ljava/lang/String;
+    .locals 5
 
-    const/4 v0, 0x0
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    return v0
-.end method
+    .line 2
+    invoke-virtual {p0}, Lm5/c;->size()I
 
-.method public b()Lcom/google/crypto/tink/shaded/protobuf/a0;
-    .locals 1
+    move-result v1
 
-    const/4 v0, 0x0
+    .line 3
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    return-object v0
-.end method
+    const/4 v1, 0x0
 
-.method public c()Lm5/t;
-    .locals 1
+    .line 4
+    :goto_0
+    invoke-virtual {p0}, Lm5/c;->size()I
 
-    const/4 v0, 0x0
+    move-result v2
 
-    return-object v0
+    if-ge v1, v2, :cond_4
+
+    .line 5
+    invoke-virtual {p0, v1}, Lm5/c;->a(I)B
+
+    move-result v2
+
+    const/16 v3, 0x22
+
+    if-eq v2, v3, :cond_3
+
+    const/16 v3, 0x27
+
+    if-eq v2, v3, :cond_2
+
+    const/16 v3, 0x5c
+
+    if-eq v2, v3, :cond_1
+
+    packed-switch v2, :pswitch_data_0
+
+    const/16 v4, 0x20
+
+    if-lt v2, v4, :cond_0
+
+    const/16 v4, 0x7e
+
+    if-gt v2, v4, :cond_0
+
+    int-to-char v2, v2
+
+    .line 6
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :pswitch_0
+    const-string v2, "\\r"
+
+    .line 7
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :pswitch_1
+    const-string v2, "\\f"
+
+    .line 8
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :pswitch_2
+    const-string v2, "\\v"
+
+    .line 9
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :pswitch_3
+    const-string v2, "\\n"
+
+    .line 10
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :pswitch_4
+    const-string v2, "\\t"
+
+    .line 11
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :pswitch_5
+    const-string v2, "\\b"
+
+    .line 12
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :pswitch_6
+    const-string v2, "\\a"
+
+    .line 13
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    .line 14
+    :cond_0
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    ushr-int/lit8 v3, v2, 0x6
+
+    and-int/lit8 v3, v3, 0x3
+
+    add-int/lit8 v3, v3, 0x30
+
+    int-to-char v3, v3
+
+    .line 15
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    ushr-int/lit8 v3, v2, 0x3
+
+    and-int/lit8 v3, v3, 0x7
+
+    add-int/lit8 v3, v3, 0x30
+
+    int-to-char v3, v3
+
+    .line 16
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    and-int/lit8 v2, v2, 0x7
+
+    add-int/lit8 v2, v2, 0x30
+
+    int-to-char v2, v2
+
+    .line 17
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :cond_1
+    const-string v2, "\\\\"
+
+    .line 18
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :cond_2
+    const-string v2, "\\\'"
+
+    .line 19
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :cond_3
+    const-string v2, "\\\""
+
+    .line 20
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    :goto_1
+    add-int/lit8 v1, v1, 0x1
+
+    goto/16 :goto_0
+
+    .line 21
+    :cond_4
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    :pswitch_data_0
+    .packed-switch 0x7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

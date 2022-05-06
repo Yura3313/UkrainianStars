@@ -1,25 +1,10 @@
 .class public final Lj3/hv0;
-.super Lj3/b60;
+.super Lj3/u7;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lj3/b60<",
-        "Ljava/lang/Integer;",
-        "Ljava/lang/Object;",
-        ">;"
-    }
-.end annotation
-
-
 # instance fields
-.field public a:Ljava/lang/Long;
-
-.field public b:Ljava/lang/Boolean;
-
-.field public c:Ljava/lang/Boolean;
+.field public a:Ljava/lang/String;
 
 
 # direct methods
@@ -27,124 +12,35 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lj3/b60;-><init>()V
+    invoke-direct {p0}, Lj3/u7;-><init>()V
 
     .line 2
-    invoke-virtual {p0, p1}, Lj3/hv0;->c(Ljava/lang/String;)V
+    iput-object p1, p0, Lj3/hv0;->a:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()Ljava/util/HashMap;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/HashMap<",
-            "Ljava/lang/Integer;",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
+.method public final p(Ljava/lang/String;)V
+    .locals 2
 
     .line 1
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    const/4 v1, 0x0
-
-    .line 2
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lj3/hv0;->a:Ljava/lang/Long;
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v0, p0, Lj3/hv0;->a:Ljava/lang/String;
 
     const/4 v1, 0x1
 
-    .line 3
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v0, v1}, La1/e;->a(Ljava/lang/String;I)I
 
-    move-result-object v1
+    move-result v0
 
-    iget-object v2, p0, Lj3/hv0;->b:Ljava/lang/Boolean;
+    invoke-static {p1, v0}, La1/e;->a(Ljava/lang/String;I)I
 
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-result p1
 
-    const/4 v1, 0x2
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 4
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-direct {v0, p1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    move-result-object v1
-
-    iget-object v2, p0, Lj3/hv0;->c:Ljava/lang/Boolean;
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    return-object v0
-.end method
-
-.method public final c(Ljava/lang/String;)V
-    .locals 1
-
-    .line 1
-    invoke-static {p1}, Lj3/b60;->a(Ljava/lang/String;)Ljava/util/HashMap;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    const/4 v0, 0x0
-
-    .line 2
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Long;
-
-    iput-object v0, p0, Lj3/hv0;->a:Ljava/lang/Long;
-
-    const/4 v0, 0x1
-
-    .line 3
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Boolean;
-
-    iput-object v0, p0, Lj3/hv0;->b:Ljava/lang/Boolean;
-
-    const/4 v0, 0x2
-
-    .line 4
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/Boolean;
-
-    iput-object p1, p0, Lj3/hv0;->c:Ljava/lang/Boolean;
-
-    :cond_0
     return-void
 .end method

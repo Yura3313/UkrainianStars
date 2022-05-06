@@ -52,7 +52,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    sget-object p1, Lcom/supercell/id/PresentationInfo$AddFriends;->a:Lcom/supercell/id/PresentationInfo$AddFriends;
+    sget-object p1, Lcom/supercell/id/PresentationInfo$AddFriends;->g:Lcom/supercell/id/PresentationInfo$AddFriends;
 
     return-object p1
 
@@ -60,7 +60,7 @@
     const-string p1, "source"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

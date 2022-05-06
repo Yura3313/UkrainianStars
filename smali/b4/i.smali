@@ -1,265 +1,270 @@
-.class public Lb4/i;
+.class public final Lb4/i;
 .super Ljava/lang/Object;
-.source "Positioning.java"
-
-# interfaces
-.implements Lj3/p5;
-.implements Lj3/vs;
-.implements Lj3/gf0;
-.implements Lj3/nr0;
-.implements Lx3/q3;
+.source "com.google.android.gms:play-services-tasks@@17.2.0"
 
 
-# static fields
-.field public static final a:Lj3/p5;
-
-.field public static final b:Lj3/vs;
-
-.field public static final h:Lj3/ez;
-
-.field public static final i:Lj3/gf0;
-
-.field public static final j:Lj3/nj;
-
-.field public static final k:[Ljava/lang/String;
-
-.field public static final l:[Ljava/lang/String;
-
-.field public static final m:Lx3/q3;
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lb4/i$a;
+    }
+.end annotation
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 13
+.method public static a(Lb4/f;)Ljava/lang/Object;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<TResult:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lb4/f<",
+            "TTResult;>;)TTResult;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/util/concurrent/ExecutionException;,
+            Ljava/lang/InterruptedException;
+        }
+    .end annotation
+
+    const-string v0, "Must not be called on the main application thread"
 
     .line 1
-    new-instance v0, Lb4/i;
+    invoke-static {v0}, Lc2/h;->g(Ljava/lang/String;)V
 
-    invoke-direct {v0}, Lb4/i;-><init>()V
-
-    sput-object v0, Lb4/i;->a:Lj3/p5;
+    const-string v0, "Task must not be null"
 
     .line 2
-    new-instance v0, Lb4/i;
-
-    invoke-direct {v0}, Lb4/i;-><init>()V
-
-    sput-object v0, Lb4/i;->b:Lj3/vs;
+    invoke-static {p0, v0}, Lc2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
-    new-instance v0, Lj3/ez;
+    invoke-virtual {p0}, Lb4/f;->k()Z
 
-    invoke-direct {v0}, Lj3/ez;-><init>()V
+    move-result v0
 
-    sput-object v0, Lb4/i;->h:Lj3/ez;
+    if-eqz v0, :cond_0
 
     .line 4
-    new-instance v0, Lb4/i;
+    invoke-static {p0}, Lb4/i;->d(Lb4/f;)Ljava/lang/Object;
 
-    invoke-direct {v0}, Lb4/i;-><init>()V
+    move-result-object p0
 
-    sput-object v0, Lb4/i;->i:Lj3/gf0;
+    return-object p0
 
     .line 5
-    new-instance v0, Lj3/nj;
+    :cond_0
+    new-instance v0, Lb4/i$a;
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lj3/nj;-><init>(I)V
-
-    sput-object v0, Lb4/i;->j:Lj3/nj;
-
-    const/16 v0, 0xa
-
-    new-array v1, v0, [Ljava/lang/String;
-
-    const-string v2, "firebase_last_notification"
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    const-string v2, "first_open_time"
-
-    const/4 v4, 0x1
-
-    aput-object v2, v1, v4
-
-    const-string v2, "first_visit_time"
-
-    const/4 v5, 0x2
-
-    aput-object v2, v1, v5
-
-    const-string v2, "last_deep_link_referrer"
-
-    const/4 v6, 0x3
-
-    aput-object v2, v1, v6
-
-    const-string v2, "user_id"
-
-    const/4 v7, 0x4
-
-    aput-object v2, v1, v7
-
-    const-string v2, "first_open_after_install"
-
-    const/4 v8, 0x5
-
-    aput-object v2, v1, v8
-
-    const-string v2, "lifetime_user_engagement"
-
-    const/4 v9, 0x6
-
-    aput-object v2, v1, v9
-
-    const-string v2, "google_allow_ad_personalization_signals"
-
-    const/4 v10, 0x7
-
-    aput-object v2, v1, v10
-
-    const-string v2, "session_number"
-
-    const/16 v11, 0x8
-
-    aput-object v2, v1, v11
-
-    const-string v2, "session_id"
-
-    const/16 v12, 0x9
-
-    aput-object v2, v1, v12
+    invoke-direct {v0, v1}, Lb4/i$a;-><init>(Lb4/a0;)V
 
     .line 6
-    sput-object v1, Lb4/i;->k:[Ljava/lang/String;
+    sget-object v1, Lb4/h;->b:Ljava/util/concurrent/Executor;
 
-    new-array v0, v0, [Ljava/lang/String;
-
-    const-string v1, "_ln"
-
-    aput-object v1, v0, v3
-
-    const-string v1, "_fot"
-
-    aput-object v1, v0, v4
-
-    const-string v1, "_fvt"
-
-    aput-object v1, v0, v5
-
-    const-string v1, "_ldl"
-
-    aput-object v1, v0, v6
-
-    const-string v1, "_id"
-
-    aput-object v1, v0, v7
-
-    const-string v1, "_fi"
-
-    aput-object v1, v0, v8
-
-    const-string v1, "_lte"
-
-    aput-object v1, v0, v9
-
-    const-string v1, "_ap"
-
-    aput-object v1, v0, v10
-
-    const-string v1, "_sno"
-
-    aput-object v1, v0, v11
-
-    const-string v1, "_sid"
-
-    aput-object v1, v0, v12
+    invoke-virtual {p0, v1, v0}, Lb4/f;->d(Ljava/util/concurrent/Executor;Lb4/e;)Lb4/f;
 
     .line 7
-    sput-object v0, Lb4/i;->l:[Ljava/lang/String;
+    invoke-virtual {p0, v1, v0}, Lb4/f;->c(Ljava/util/concurrent/Executor;Lb4/d;)Lb4/f;
 
     .line 8
-    new-instance v0, Lb4/i;
+    invoke-virtual {p0, v1, v0}, Lb4/f;->a(Ljava/util/concurrent/Executor;Lb4/b;)Lb4/f;
 
-    invoke-direct {v0}, Lb4/i;-><init>()V
+    .line 9
+    iget-object v0, v0, Lb4/i$a;->g:Ljava/util/concurrent/CountDownLatch;
 
-    sput-object v0, Lb4/i;->m:Lx3/q3;
+    invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->await()V
 
-    return-void
+    .line 10
+    invoke-static {p0}, Lb4/i;->d(Lb4/f;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
-.method public synthetic constructor <init>()V
-    .locals 0
+.method public static b(Lb4/f;JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<TResult:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lb4/f<",
+            "TTResult;>;J",
+            "Ljava/util/concurrent/TimeUnit;",
+            ")TTResult;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/util/concurrent/ExecutionException;,
+            Ljava/lang/InterruptedException;,
+            Ljava/util/concurrent/TimeoutException;
+        }
+    .end annotation
+
+    const-string v0, "Must not be called on the main application thread"
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {v0}, Lc2/h;->g(Ljava/lang/String;)V
 
-    return-void
-.end method
-
-.method public synthetic constructor <init>(IFF)V
-    .locals 0
+    const-string v0, "Task must not be null"
 
     .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {p0, v0}, Lc2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    return-void
+    const-string v0, "TimeUnit must not be null"
+
+    .line 3
+    invoke-static {p3, v0}, Lc2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    invoke-virtual {p0}, Lb4/f;->k()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 5
+    invoke-static {p0}, Lb4/i;->d(Lb4/f;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 6
+    :cond_0
+    new-instance v0, Lb4/i$a;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lb4/i$a;-><init>(Lb4/a0;)V
+
+    .line 7
+    sget-object v1, Lb4/h;->b:Ljava/util/concurrent/Executor;
+
+    invoke-virtual {p0, v1, v0}, Lb4/f;->d(Ljava/util/concurrent/Executor;Lb4/e;)Lb4/f;
+
+    .line 8
+    invoke-virtual {p0, v1, v0}, Lb4/f;->c(Ljava/util/concurrent/Executor;Lb4/d;)Lb4/f;
+
+    .line 9
+    invoke-virtual {p0, v1, v0}, Lb4/f;->a(Ljava/util/concurrent/Executor;Lb4/b;)Lb4/f;
+
+    .line 10
+    iget-object v0, v0, Lb4/i$a;->g:Ljava/util/concurrent/CountDownLatch;
+
+    invoke-virtual {v0, p1, p2, p3}, Ljava/util/concurrent/CountDownLatch;->await(JLjava/util/concurrent/TimeUnit;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    .line 11
+    invoke-static {p0}, Lb4/i;->d(Lb4/f;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 12
+    :cond_1
+    new-instance p0, Ljava/util/concurrent/TimeoutException;
+
+    const-string p1, "Timed out waiting for Task"
+
+    invoke-direct {p0, p1}, Ljava/util/concurrent/TimeoutException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method
 
-
-# virtual methods
-.method public a(Lorg/json/JSONObject;)Ljava/lang/Object;
-    .locals 2
-
-    sget-object v0, Lj3/q5;->a:Ljava/nio/charset/Charset;
+.method public static c(Ljava/lang/Object;)Lb4/f;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<TResult:",
+            "Ljava/lang/Object;",
+            ">(TTResult;)",
+            "Lb4/f<",
+            "TTResult;>;"
+        }
+    .end annotation
 
     .line 1
-    new-instance v0, Ljava/io/ByteArrayInputStream;
+    new-instance v0, Lb4/y;
 
-    invoke-virtual {p1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+    invoke-direct {v0}, Lb4/y;-><init>()V
 
-    move-result-object p1
-
-    sget-object v1, Lj3/q5;->a:Ljava/nio/charset/Charset;
-
-    invoke-virtual {p1, v1}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Ljava/io/ByteArrayInputStream;-><init>([B)V
+    .line 2
+    invoke-virtual {v0, p0}, Lb4/y;->o(Ljava/lang/Object;)V
 
     return-object v0
 .end method
 
-.method public b(Ljava/lang/Object;)V
-    .locals 0
+.method public static d(Lb4/f;)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<TResult:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lb4/f<",
+            "TTResult;>;)TTResult;"
+        }
+    .end annotation
 
-    check-cast p1, Lo1/a;
-
-    invoke-virtual {p1}, Lo1/a;->c()V
-
-    return-void
-.end method
-
-.method public c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-    .locals 0
-
-    const/4 p1, 0x0
-
-    return-object p1
-.end method
-
-.method public e(Ljava/lang/Object;)V
-    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/util/concurrent/ExecutionException;
+        }
+    .end annotation
 
     .line 1
-    check-cast p1, Lj3/tq;
+    invoke-virtual {p0}, Lb4/f;->l()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
 
     .line 2
-    invoke-interface {p1}, Lj3/tq;->z()V
+    invoke-virtual {p0}, Lb4/f;->h()Ljava/lang/Object;
 
-    return-void
+    move-result-object p0
+
+    return-object p0
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0}, Lb4/f;->j()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 4
+    new-instance p0, Ljava/util/concurrent/CancellationException;
+
+    const-string v0, "Task is already canceled"
+
+    invoke-direct {p0, v0}, Ljava/util/concurrent/CancellationException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+
+    .line 5
+    :cond_1
+    new-instance v0, Ljava/util/concurrent/ExecutionException;
+
+    invoke-virtual {p0}, Lb4/f;->g()Ljava/lang/Exception;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Ljava/util/concurrent/ExecutionException;-><init>(Ljava/lang/Throwable;)V
+
+    throw v0
 .end method

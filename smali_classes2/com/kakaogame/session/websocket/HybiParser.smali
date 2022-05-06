@@ -627,7 +627,7 @@
     const-string v1, "Got pong! "
 
     .line 30
-    invoke-static {v1, v0, v6}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0, v6}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_c
     :goto_2
@@ -1251,7 +1251,7 @@
 
     const-string v2, "Bad integer: "
 
-    invoke-static {v2, v0, v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;J)Ljava/lang/String;
+    invoke-static {v2, v0, v1}, Lcom/kakaogame/session/websocket/a;->a(Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object v0
 

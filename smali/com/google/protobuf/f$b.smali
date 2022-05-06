@@ -462,7 +462,7 @@
 
     move-result-wide v2
 
-    invoke-virtual {v0, v2, v3}, Lcom/google/protobuf/m;->b(D)V
+    invoke-virtual {v0, v2, v3}, Lcom/google/protobuf/m;->c(D)V
 
     goto :goto_0
 
@@ -480,7 +480,7 @@
 
     move-result-wide v1
 
-    invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/m;->b(D)V
+    invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/m;->c(D)V
 
     .line 11
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->P()Z
@@ -711,7 +711,7 @@
 
     move-result-wide v2
 
-    invoke-virtual {v0, v2, v3}, Lcom/google/protobuf/h0;->b(J)V
+    invoke-virtual {v0, v2, v3}, Lcom/google/protobuf/h0;->c(J)V
 
     goto :goto_0
 
@@ -729,7 +729,7 @@
 
     move-result-wide v1
 
-    invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/h0;->b(J)V
+    invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/h0;->c(J)V
 
     .line 11
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->P()Z
@@ -853,7 +853,7 @@
     return-void
 .end method
 
-.method public I(Ljava/util/List;Lcom/google/protobuf/j1;Lcom/google/protobuf/q;)V
+.method public I(Ljava/util/List;Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -862,7 +862,7 @@
             ">(",
             "Ljava/util/List<",
             "TT;>;",
-            "Lcom/google/protobuf/j1<",
+            "Lcom/google/protobuf/i1<",
             "TT;>;",
             "Lcom/google/protobuf/q;",
             ")V"
@@ -886,7 +886,7 @@
 
     .line 2
     :cond_0
-    invoke-virtual {p0, p2, p3}, Lcom/google/protobuf/f$b;->S(Lcom/google/protobuf/j1;Lcom/google/protobuf/q;)Ljava/lang/Object;
+    invoke-virtual {p0, p2, p3}, Lcom/google/protobuf/f$b;->S(Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -958,21 +958,21 @@
     invoke-virtual {p0, v0}, Lcom/google/protobuf/f$b;->f0(I)V
 
     .line 2
-    sget-object v0, Lcom/google/protobuf/f1;->c:Lcom/google/protobuf/f1;
+    sget-object v0, Lcom/google/protobuf/e1;->c:Lcom/google/protobuf/e1;
 
     .line 3
-    invoke-virtual {v0, p1}, Lcom/google/protobuf/f1;->a(Ljava/lang/Class;)Lcom/google/protobuf/j1;
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/e1;->a(Ljava/lang/Class;)Lcom/google/protobuf/i1;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/f$b;->X(Lcom/google/protobuf/j1;Lcom/google/protobuf/q;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/f$b;->X(Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public K(Ljava/util/List;Lcom/google/protobuf/j1;Lcom/google/protobuf/q;)V
+.method public K(Ljava/util/List;Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -981,7 +981,7 @@
             ">(",
             "Ljava/util/List<",
             "TT;>;",
-            "Lcom/google/protobuf/j1<",
+            "Lcom/google/protobuf/i1<",
             "TT;>;",
             "Lcom/google/protobuf/q;",
             ")V"
@@ -1005,7 +1005,7 @@
 
     .line 2
     :cond_0
-    invoke-virtual {p0, p2, p3}, Lcom/google/protobuf/f$b;->X(Lcom/google/protobuf/j1;Lcom/google/protobuf/q;)Ljava/lang/Object;
+    invoke-virtual {p0, p2, p3}, Lcom/google/protobuf/f$b;->X(Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -1051,14 +1051,14 @@
     goto :goto_0
 .end method
 
-.method public L(Lcom/google/protobuf/j1;Lcom/google/protobuf/q;)Ljava/lang/Object;
+.method public L(Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Lcom/google/protobuf/j1<",
+            "Lcom/google/protobuf/i1<",
             "TT;>;",
             "Lcom/google/protobuf/q;",
             ")TT;"
@@ -1077,7 +1077,7 @@
     invoke-virtual {p0, v0}, Lcom/google/protobuf/f$b;->f0(I)V
 
     .line 2
-    invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/f$b;->S(Lcom/google/protobuf/j1;Lcom/google/protobuf/q;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/f$b;->S(Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -1110,28 +1110,28 @@
     invoke-virtual {p0, v0}, Lcom/google/protobuf/f$b;->f0(I)V
 
     .line 2
-    sget-object v0, Lcom/google/protobuf/f1;->c:Lcom/google/protobuf/f1;
+    sget-object v0, Lcom/google/protobuf/e1;->c:Lcom/google/protobuf/e1;
 
     .line 3
-    invoke-virtual {v0, p1}, Lcom/google/protobuf/f1;->a(Ljava/lang/Class;)Lcom/google/protobuf/j1;
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/e1;->a(Ljava/lang/Class;)Lcom/google/protobuf/i1;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/f$b;->S(Lcom/google/protobuf/j1;Lcom/google/protobuf/q;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/f$b;->S(Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public N(Lcom/google/protobuf/j1;Lcom/google/protobuf/q;)Ljava/lang/Object;
+.method public N(Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Lcom/google/protobuf/j1<",
+            "Lcom/google/protobuf/i1<",
             "TT;>;",
             "Lcom/google/protobuf/q;",
             ")TT;"
@@ -1150,7 +1150,7 @@
     invoke-virtual {p0, v0}, Lcom/google/protobuf/f$b;->f0(I)V
 
     .line 2
-    invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/f$b;->X(Lcom/google/protobuf/j1;Lcom/google/protobuf/q;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/f$b;->X(Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -1261,7 +1261,7 @@
 
     .line 14
     :cond_2
-    iget-object v4, p2, Lcom/google/protobuf/j0$a;->c:Lcom/google/protobuf/y1$b;
+    iget-object v4, p2, Lcom/google/protobuf/j0$a;->c:Lcom/google/protobuf/x1$b;
 
     iget-object v5, p2, Lcom/google/protobuf/j0$a;->d:Ljava/lang/Object;
 
@@ -1271,7 +1271,7 @@
     move-result-object v5
 
     .line 16
-    invoke-virtual {p0, v4, v5, p3}, Lcom/google/protobuf/f$b;->R(Lcom/google/protobuf/y1$b;Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
+    invoke-virtual {p0, v4, v5, p3}, Lcom/google/protobuf/f$b;->R(Lcom/google/protobuf/x1$b;Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -1279,11 +1279,11 @@
 
     .line 17
     :cond_3
-    iget-object v4, p2, Lcom/google/protobuf/j0$a;->a:Lcom/google/protobuf/y1$b;
+    iget-object v4, p2, Lcom/google/protobuf/j0$a;->a:Lcom/google/protobuf/x1$b;
 
     const/4 v5, 0x0
 
-    invoke-virtual {p0, v4, v5, v5}, Lcom/google/protobuf/f$b;->R(Lcom/google/protobuf/y1$b;Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
+    invoke-virtual {p0, v4, v5, v5}, Lcom/google/protobuf/f$b;->R(Lcom/google/protobuf/x1$b;Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
 
     move-result-object v1
     :try_end_1
@@ -1385,12 +1385,12 @@
     throw v0
 .end method
 
-.method public final R(Lcom/google/protobuf/y1$b;Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
-    .locals 1
+.method public final R(Lcom/google/protobuf/x1$b;Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/protobuf/y1$b;",
+            "Lcom/google/protobuf/x1$b;",
             "Ljava/lang/Class<",
             "*>;",
             "Lcom/google/protobuf/q;",
@@ -1406,17 +1406,14 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/google/protobuf/f$a;->a:[I
-
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
     move-result p1
 
-    aget p1, v0, p1
-
     packed-switch p1, :pswitch_data_0
 
     .line 2
+    :pswitch_0
     new-instance p1, Ljava/lang/RuntimeException;
 
     const-string p2, "unsupported field type."
@@ -1426,7 +1423,7 @@
     throw p1
 
     .line 3
-    :pswitch_0
+    :pswitch_1
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->b()J
 
     move-result-wide p1
@@ -1438,7 +1435,7 @@
     return-object p1
 
     .line 4
-    :pswitch_1
+    :pswitch_2
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->k()I
 
     move-result p1
@@ -1449,7 +1446,7 @@
 
     return-object p1
 
-    :pswitch_2
+    :pswitch_3
     const/4 p1, 0x1
 
     .line 5
@@ -1460,7 +1457,7 @@
     return-object p1
 
     .line 6
-    :pswitch_3
+    :pswitch_4
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->s()J
 
     move-result-wide p1
@@ -1472,7 +1469,7 @@
     return-object p1
 
     .line 7
-    :pswitch_4
+    :pswitch_5
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->r()I
 
     move-result p1
@@ -1484,7 +1481,7 @@
     return-object p1
 
     .line 8
-    :pswitch_5
+    :pswitch_6
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->i()J
 
     move-result-wide p1
@@ -1496,7 +1493,7 @@
     return-object p1
 
     .line 9
-    :pswitch_6
+    :pswitch_7
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->C()I
 
     move-result p1
@@ -1508,7 +1505,7 @@
     return-object p1
 
     .line 10
-    :pswitch_7
+    :pswitch_8
     invoke-virtual {p0, p2, p3}, Lcom/google/protobuf/f$b;->J(Ljava/lang/Class;Lcom/google/protobuf/q;)Ljava/lang/Object;
 
     move-result-object p1
@@ -1516,7 +1513,7 @@
     return-object p1
 
     .line 11
-    :pswitch_8
+    :pswitch_9
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->F()J
 
     move-result-wide p1
@@ -1528,7 +1525,7 @@
     return-object p1
 
     .line 12
-    :pswitch_9
+    :pswitch_a
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->A()I
 
     move-result p1
@@ -1540,7 +1537,7 @@
     return-object p1
 
     .line 13
-    :pswitch_a
+    :pswitch_b
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->readFloat()F
 
     move-result p1
@@ -1552,7 +1549,7 @@
     return-object p1
 
     .line 14
-    :pswitch_b
+    :pswitch_c
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->c()J
 
     move-result-wide p1
@@ -1564,7 +1561,7 @@
     return-object p1
 
     .line 15
-    :pswitch_c
+    :pswitch_d
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->g()I
 
     move-result p1
@@ -1576,7 +1573,7 @@
     return-object p1
 
     .line 16
-    :pswitch_d
+    :pswitch_e
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->p()I
 
     move-result p1
@@ -1588,7 +1585,7 @@
     return-object p1
 
     .line 17
-    :pswitch_e
+    :pswitch_f
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->readDouble()D
 
     move-result-wide p1
@@ -1600,7 +1597,7 @@
     return-object p1
 
     .line 18
-    :pswitch_f
+    :pswitch_10
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->y()Lcom/google/protobuf/i;
 
     move-result-object p1
@@ -1608,7 +1605,7 @@
     return-object p1
 
     .line 19
-    :pswitch_10
+    :pswitch_11
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->h()Z
 
     move-result p1
@@ -1622,35 +1619,36 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_10
+    .packed-switch 0x0
         :pswitch_f
-        :pswitch_e
-        :pswitch_d
-        :pswitch_c
         :pswitch_b
-        :pswitch_a
         :pswitch_9
+        :pswitch_1
+        :pswitch_a
+        :pswitch_c
+        :pswitch_d
+        :pswitch_11
+        :pswitch_3
+        :pswitch_0
         :pswitch_8
+        :pswitch_10
+        :pswitch_2
+        :pswitch_e
         :pswitch_7
         :pswitch_6
         :pswitch_5
         :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
     .end packed-switch
 .end method
 
-.method public final S(Lcom/google/protobuf/j1;Lcom/google/protobuf/q;)Ljava/lang/Object;
+.method public final S(Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)Ljava/lang/Object;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Lcom/google/protobuf/j1<",
+            "Lcom/google/protobuf/i1<",
             "TT;>;",
             "Lcom/google/protobuf/q;",
             ")TT;"
@@ -1679,15 +1677,15 @@
 
     .line 3
     :try_start_0
-    invoke-interface {p1}, Lcom/google/protobuf/j1;->d()Ljava/lang/Object;
+    invoke-interface {p1}, Lcom/google/protobuf/i1;->d()Ljava/lang/Object;
 
     move-result-object v1
 
     .line 4
-    invoke-interface {p1, v1, p0, p2}, Lcom/google/protobuf/j1;->i(Ljava/lang/Object;Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)V
+    invoke-interface {p1, v1, p0, p2}, Lcom/google/protobuf/i1;->i(Ljava/lang/Object;Lcom/google/protobuf/h1;Lcom/google/protobuf/q;)V
 
     .line 5
-    invoke-interface {p1, v1}, Lcom/google/protobuf/j1;->e(Ljava/lang/Object;)V
+    invoke-interface {p1, v1}, Lcom/google/protobuf/i1;->e(Ljava/lang/Object;)V
 
     .line 6
     iget p1, p0, Lcom/google/protobuf/f$b;->e:I
@@ -1942,14 +1940,14 @@
     return-wide v0
 .end method
 
-.method public final X(Lcom/google/protobuf/j1;Lcom/google/protobuf/q;)Ljava/lang/Object;
+.method public final X(Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)Ljava/lang/Object;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Lcom/google/protobuf/j1<",
+            "Lcom/google/protobuf/i1<",
             "TT;>;",
             "Lcom/google/protobuf/q;",
             ")TT;"
@@ -1983,15 +1981,15 @@
 
     .line 6
     :try_start_0
-    invoke-interface {p1}, Lcom/google/protobuf/j1;->d()Ljava/lang/Object;
+    invoke-interface {p1}, Lcom/google/protobuf/i1;->d()Ljava/lang/Object;
 
     move-result-object v0
 
     .line 7
-    invoke-interface {p1, v0, p0, p2}, Lcom/google/protobuf/j1;->i(Ljava/lang/Object;Lcom/google/protobuf/i1;Lcom/google/protobuf/q;)V
+    invoke-interface {p1, v0, p0, p2}, Lcom/google/protobuf/i1;->i(Ljava/lang/Object;Lcom/google/protobuf/h1;Lcom/google/protobuf/q;)V
 
     .line 8
-    invoke-interface {p1, v0}, Lcom/google/protobuf/j1;->e(Ljava/lang/Object;)V
+    invoke-interface {p1, v0}, Lcom/google/protobuf/i1;->e(Ljava/lang/Object;)V
 
     .line 9
     iget p1, p0, Lcom/google/protobuf/f$b;->c:I
@@ -2063,7 +2061,7 @@
 
     add-int v2, v1, v0
 
-    invoke-static {p1, v1, v2}, Lcom/google/protobuf/w1;->i([BII)Z
+    invoke-static {p1, v1, v2}, Lcom/google/protobuf/v1;->i([BII)Z
 
     move-result p1
 
@@ -2146,7 +2144,7 @@
 
     move-result-object p1
 
-    invoke-interface {v0, p1}, Lcom/google/protobuf/f0;->U(Lcom/google/protobuf/i;)V
+    invoke-interface {v0, p1}, Lcom/google/protobuf/f0;->X(Lcom/google/protobuf/i;)V
 
     .line 5
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->P()Z
@@ -2290,7 +2288,7 @@
 
     move-result p1
 
-    invoke-virtual {v0, p1}, Lcom/google/protobuf/z;->b(I)V
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/z;->c(I)V
 
     goto :goto_0
 
@@ -2308,7 +2306,7 @@
 
     move-result p1
 
-    invoke-virtual {v0, p1}, Lcom/google/protobuf/z;->b(I)V
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/z;->c(I)V
 
     .line 10
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->P()Z
@@ -3035,7 +3033,7 @@
 
     move-result v0
 
-    invoke-virtual {p1, v0}, Lcom/google/protobuf/z;->b(I)V
+    invoke-virtual {p1, v0}, Lcom/google/protobuf/z;->c(I)V
 
     .line 5
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->P()Z
@@ -3098,7 +3096,7 @@
 
     move-result v0
 
-    invoke-virtual {p1, v0}, Lcom/google/protobuf/z;->b(I)V
+    invoke-virtual {p1, v0}, Lcom/google/protobuf/z;->c(I)V
 
     goto :goto_0
 
@@ -3290,7 +3288,7 @@
 
     move-result-wide v2
 
-    invoke-virtual {v0, v2, v3}, Lcom/google/protobuf/h0;->b(J)V
+    invoke-virtual {v0, v2, v3}, Lcom/google/protobuf/h0;->c(J)V
 
     goto :goto_0
 
@@ -3308,7 +3306,7 @@
 
     move-result-wide v1
 
-    invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/h0;->b(J)V
+    invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/h0;->c(J)V
 
     .line 10
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->P()Z
@@ -3516,7 +3514,7 @@
 
     move-result p1
 
-    invoke-virtual {v0, p1}, Lcom/google/protobuf/z;->b(I)V
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/z;->c(I)V
 
     goto :goto_0
 
@@ -3534,7 +3532,7 @@
 
     move-result p1
 
-    invoke-virtual {v0, p1}, Lcom/google/protobuf/z;->b(I)V
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/z;->c(I)V
 
     .line 10
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->P()Z
@@ -3890,7 +3888,7 @@
 
     move-result-wide v2
 
-    invoke-virtual {v0, v2, v3}, Lcom/google/protobuf/h0;->b(J)V
+    invoke-virtual {v0, v2, v3}, Lcom/google/protobuf/h0;->c(J)V
 
     goto :goto_0
 
@@ -3914,7 +3912,7 @@
 
     move-result-wide v1
 
-    invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/h0;->b(J)V
+    invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/h0;->c(J)V
 
     .line 11
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->P()Z
@@ -4119,7 +4117,7 @@
 
     move-result-wide v2
 
-    invoke-virtual {v0, v2, v3}, Lcom/google/protobuf/h0;->b(J)V
+    invoke-virtual {v0, v2, v3}, Lcom/google/protobuf/h0;->c(J)V
 
     goto :goto_0
 
@@ -4143,7 +4141,7 @@
 
     move-result-wide v1
 
-    invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/h0;->b(J)V
+    invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/h0;->c(J)V
 
     .line 11
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->P()Z
@@ -4332,7 +4330,7 @@
 
     move-result-wide v2
 
-    invoke-virtual {v0, v2, v3}, Lcom/google/protobuf/h0;->b(J)V
+    invoke-virtual {v0, v2, v3}, Lcom/google/protobuf/h0;->c(J)V
 
     goto :goto_0
 
@@ -4350,7 +4348,7 @@
 
     move-result-wide v1
 
-    invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/h0;->b(J)V
+    invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/h0;->c(J)V
 
     .line 11
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->P()Z
@@ -4533,7 +4531,7 @@
 
     move-result p1
 
-    invoke-virtual {v0, p1}, Lcom/google/protobuf/z;->b(I)V
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/z;->c(I)V
 
     goto :goto_0
 
@@ -4557,7 +4555,7 @@
 
     move-result p1
 
-    invoke-virtual {v0, p1}, Lcom/google/protobuf/z;->b(I)V
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/z;->c(I)V
 
     .line 11
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->P()Z
@@ -4741,7 +4739,7 @@
 
     move-result p1
 
-    invoke-virtual {v0, p1}, Lcom/google/protobuf/z;->b(I)V
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/z;->c(I)V
 
     goto :goto_0
 
@@ -4759,7 +4757,7 @@
 
     move-result p1
 
-    invoke-virtual {v0, p1}, Lcom/google/protobuf/z;->b(I)V
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/z;->c(I)V
 
     .line 10
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->P()Z
@@ -4945,7 +4943,7 @@
 
     move-result v0
 
-    invoke-virtual {p1, v0}, Lcom/google/protobuf/z;->b(I)V
+    invoke-virtual {p1, v0}, Lcom/google/protobuf/z;->c(I)V
 
     .line 5
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->P()Z
@@ -5008,7 +5006,7 @@
 
     move-result v0
 
-    invoke-virtual {p1, v0}, Lcom/google/protobuf/z;->b(I)V
+    invoke-virtual {p1, v0}, Lcom/google/protobuf/z;->c(I)V
 
     goto :goto_0
 
@@ -5280,7 +5278,7 @@
     const/4 p1, 0x0
 
     :goto_1
-    invoke-virtual {v0, p1}, Lcom/google/protobuf/g;->b(Z)V
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/g;->c(Z)V
 
     goto :goto_0
 
@@ -5304,7 +5302,7 @@
 
     move-result p1
 
-    invoke-virtual {v0, p1}, Lcom/google/protobuf/g;->b(Z)V
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/g;->c(Z)V
 
     .line 11
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->P()Z
@@ -5568,7 +5566,7 @@
     if-nez v0, :cond_0
 
     .line 3
-    sget-object v0, Lcom/google/protobuf/i;->b:Lcom/google/protobuf/i;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
 
     return-object v0
 
@@ -5586,7 +5584,7 @@
     iget v2, p0, Lcom/google/protobuf/f$b;->c:I
 
     .line 6
-    sget-object v3, Lcom/google/protobuf/i;->b:Lcom/google/protobuf/i;
+    sget-object v3, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
 
     .line 7
     new-instance v3, Lcom/google/protobuf/i$d;
@@ -5602,7 +5600,7 @@
     iget v2, p0, Lcom/google/protobuf/f$b;->c:I
 
     .line 9
-    invoke-static {v1, v2, v0}, Lcom/google/protobuf/i;->d([BII)Lcom/google/protobuf/i;
+    invoke-static {v1, v2, v0}, Lcom/google/protobuf/i;->e([BII)Lcom/google/protobuf/i;
 
     move-result-object v3
 
@@ -5661,7 +5659,7 @@
 
     move-result v0
 
-    invoke-virtual {p1, v0}, Lcom/google/protobuf/x;->b(F)V
+    invoke-virtual {p1, v0}, Lcom/google/protobuf/x;->c(F)V
 
     .line 5
     invoke-virtual {p0}, Lcom/google/protobuf/f$b;->P()Z
@@ -5728,7 +5726,7 @@
 
     move-result v0
 
-    invoke-virtual {p1, v0}, Lcom/google/protobuf/x;->b(F)V
+    invoke-virtual {p1, v0}, Lcom/google/protobuf/x;->c(F)V
 
     goto :goto_0
 

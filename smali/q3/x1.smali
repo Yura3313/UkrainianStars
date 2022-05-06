@@ -1,101 +1,174 @@
-.class public Lq3/x1;
-.super Ljava/lang/Object;
+.class public final Lq3/x1;
+.super Lq3/w1;
 
 
-# static fields
-.field public static final a:Lq3/x1;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lq3/w1<",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
-
-    :try_start_0
-    const-string v0, "com.google.protobuf.Extension"
+.method public constructor <init>()V
+    .locals 0
 
     .line 1
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-    :try_end_0
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 2
-    :catch_0
-    new-instance v0, Lq3/x1;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, v1}, Lq3/x1;-><init>(Z)V
-
-    sput-object v0, Lq3/x1;->a:Lq3/x1;
+    invoke-direct {p0}, Lq3/w1;-><init>()V
 
     return-void
 .end method
 
-.method public constructor <init>()V
+
+# virtual methods
+.method public final a(Ljava/util/Map$Entry;)I
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map$Entry<",
+            "**>;)I"
+        }
+    .end annotation
+
+    .line 1
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    .line 2
+    new-instance p1, Ljava/lang/NoSuchMethodError;
+
+    invoke-direct {p1}, Ljava/lang/NoSuchMethodError;-><init>()V
+
+    throw p1
+.end method
+
+.method public final b(Lq3/x4;Ljava/util/Map$Entry;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lq3/x4;",
+            "Ljava/util/Map$Entry<",
+            "**>;)V"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-interface {p2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    .line 2
+    new-instance p1, Ljava/lang/NoSuchMethodError;
+
+    invoke-direct {p1}, Ljava/lang/NoSuchMethodError;-><init>()V
+
+    throw p1
+.end method
+
+.method public final c(Ljava/lang/Object;)Lq3/a2;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            ")",
+            "Lq3/a2<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    check-cast p1, Lq3/g2$c;
+
+    iget-object p1, p1, Lq3/g2$c;->zzrw:Lq3/a2;
+
+    return-object p1
+.end method
+
+.method public final d(Ljava/lang/Object;)Lq3/a2;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            ")",
+            "Lq3/a2<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    check-cast p1, Lq3/g2$c;
+
+    .line 2
+    iget-object v0, p1, Lq3/g2$c;->zzrw:Lq3/a2;
+
+    .line 3
+    iget-boolean v1, v0, Lq3/a2;->b:Z
+
+    if-eqz v1, :cond_0
+
+    .line 4
+    invoke-virtual {v0}, Lq3/a2;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lq3/a2;
+
+    iput-object v0, p1, Lq3/g2$c;->zzrw:Lq3/a2;
+
+    .line 5
+    :cond_0
+    iget-object p1, p1, Lq3/g2$c;->zzrw:Lq3/a2;
+
+    return-object p1
+.end method
+
+.method public final e(Ljava/lang/Object;)V
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    check-cast p1, Lq3/g2$c;
+
+    iget-object p1, p1, Lq3/g2$c;->zzrw:Lq3/a2;
 
     .line 2
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    return-void
-.end method
-
-.method public constructor <init>(Z)V
-    .locals 0
-
-    .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
-
-    return-void
-.end method
-
-.method public static a()Lq3/x1;
-    .locals 4
-
-    .line 1
-    sget-object v0, Lq3/w1;->a:Ljava/lang/Class;
+    iget-boolean v0, p1, Lq3/a2;->b:Z
 
     if-eqz v0, :cond_0
-
-    :try_start_0
-    const-string v1, "getEmptyRegistry"
-
-    const/4 v2, 0x0
-
-    new-array v3, v2, [Ljava/lang/Class;
-
-    .line 2
-    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v0
-
-    new-array v1, v2, [Ljava/lang/Object;
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v2, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lq3/x1;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
     .line 3
-    :catch_0
     :cond_0
-    sget-object v0, Lq3/x1;->a:Lq3/x1;
+    iget-object v0, p1, Lq3/a2;->a:Lq3/w3;
+
+    invoke-virtual {v0}, Lq3/w3;->e()V
+
+    const/4 v0, 0x1
+
+    .line 4
+    iput-boolean v0, p1, Lq3/a2;->b:Z
 
     :goto_0
-    return-object v0
+    return-void
+.end method
+
+.method public final f(Lq3/f3;)Z
+    .locals 0
+
+    .line 1
+    instance-of p1, p1, Lq3/g2$c;
+
+    return p1
 .end method

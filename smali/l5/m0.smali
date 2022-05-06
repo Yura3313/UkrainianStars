@@ -7,12 +7,6 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Ll5/m0$b;
-    }
-.end annotation
-
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Enum<",
@@ -24,43 +18,23 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Ll5/m0;
+.field public static final enum h:Ll5/m0;
 
-.field public static final enum CURVE25519:Ll5/m0;
+.field public static final enum i:Ll5/m0;
 
-.field public static final CURVE25519_VALUE:I = 0x5
+.field public static final enum j:Ll5/m0;
 
-.field public static final enum NIST_P256:Ll5/m0;
+.field public static final enum k:Ll5/m0;
 
-.field public static final NIST_P256_VALUE:I = 0x2
+.field public static final enum l:Ll5/m0;
 
-.field public static final enum NIST_P384:Ll5/m0;
+.field public static final enum m:Ll5/m0;
 
-.field public static final NIST_P384_VALUE:I = 0x3
-
-.field public static final enum NIST_P521:Ll5/m0;
-
-.field public static final NIST_P521_VALUE:I = 0x4
-
-.field public static final enum UNKNOWN_CURVE:Ll5/m0;
-
-.field public static final UNKNOWN_CURVE_VALUE:I
-
-.field public static final enum UNRECOGNIZED:Ll5/m0;
-
-.field private static final internalValueMap:Lcom/google/crypto/tink/shaded/protobuf/q$b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/google/crypto/tink/shaded/protobuf/q$b<",
-            "Ll5/m0;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final synthetic n:[Ll5/m0;
 
 
 # instance fields
-.field private final value:I
+.field public final g:I
 
 
 # direct methods
@@ -76,7 +50,7 @@
 
     invoke-direct {v0, v1, v2, v2}, Ll5/m0;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Ll5/m0;->UNKNOWN_CURVE:Ll5/m0;
+    sput-object v0, Ll5/m0;->h:Ll5/m0;
 
     .line 2
     new-instance v1, Ll5/m0;
@@ -89,7 +63,7 @@
 
     invoke-direct {v1, v3, v4, v5}, Ll5/m0;-><init>(Ljava/lang/String;II)V
 
-    sput-object v1, Ll5/m0;->NIST_P256:Ll5/m0;
+    sput-object v1, Ll5/m0;->i:Ll5/m0;
 
     .line 3
     new-instance v3, Ll5/m0;
@@ -100,7 +74,7 @@
 
     invoke-direct {v3, v6, v5, v7}, Ll5/m0;-><init>(Ljava/lang/String;II)V
 
-    sput-object v3, Ll5/m0;->NIST_P384:Ll5/m0;
+    sput-object v3, Ll5/m0;->j:Ll5/m0;
 
     .line 4
     new-instance v6, Ll5/m0;
@@ -111,7 +85,7 @@
 
     invoke-direct {v6, v8, v7, v9}, Ll5/m0;-><init>(Ljava/lang/String;II)V
 
-    sput-object v6, Ll5/m0;->NIST_P521:Ll5/m0;
+    sput-object v6, Ll5/m0;->k:Ll5/m0;
 
     .line 5
     new-instance v8, Ll5/m0;
@@ -122,7 +96,7 @@
 
     invoke-direct {v8, v10, v9, v11}, Ll5/m0;-><init>(Ljava/lang/String;II)V
 
-    sput-object v8, Ll5/m0;->CURVE25519:Ll5/m0;
+    sput-object v8, Ll5/m0;->l:Ll5/m0;
 
     .line 6
     new-instance v10, Ll5/m0;
@@ -133,7 +107,7 @@
 
     invoke-direct {v10, v12, v11, v13}, Ll5/m0;-><init>(Ljava/lang/String;II)V
 
-    sput-object v10, Ll5/m0;->UNRECOGNIZED:Ll5/m0;
+    sput-object v10, Ll5/m0;->m:Ll5/m0;
 
     const/4 v12, 0x6
 
@@ -152,19 +126,12 @@
     aput-object v10, v12, v11
 
     .line 7
-    sput-object v12, Ll5/m0;->$VALUES:[Ll5/m0;
-
-    .line 8
-    new-instance v0, Ll5/m0$a;
-
-    invoke-direct {v0}, Ll5/m0$a;-><init>()V
-
-    sput-object v0, Ll5/m0;->internalValueMap:Lcom/google/crypto/tink/shaded/protobuf/q$b;
+    sput-object v12, Ll5/m0;->n:[Ll5/m0;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;II)V
+.method public constructor <init>(Ljava/lang/String;II)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -176,12 +143,12 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput p3, p0, Ll5/m0;->value:I
+    iput p3, p0, Ll5/m0;->g:I
 
     return-void
 .end method
 
-.method public static forNumber(I)Ll5/m0;
+.method public static a(I)Ll5/m0;
     .locals 1
 
     if-eqz p0, :cond_4
@@ -208,70 +175,31 @@
 
     .line 1
     :cond_0
-    sget-object p0, Ll5/m0;->CURVE25519:Ll5/m0;
+    sget-object p0, Ll5/m0;->l:Ll5/m0;
 
     return-object p0
 
     .line 2
     :cond_1
-    sget-object p0, Ll5/m0;->NIST_P521:Ll5/m0;
+    sget-object p0, Ll5/m0;->k:Ll5/m0;
 
     return-object p0
 
     .line 3
     :cond_2
-    sget-object p0, Ll5/m0;->NIST_P384:Ll5/m0;
+    sget-object p0, Ll5/m0;->j:Ll5/m0;
 
     return-object p0
 
     .line 4
     :cond_3
-    sget-object p0, Ll5/m0;->NIST_P256:Ll5/m0;
+    sget-object p0, Ll5/m0;->i:Ll5/m0;
 
     return-object p0
 
     .line 5
     :cond_4
-    sget-object p0, Ll5/m0;->UNKNOWN_CURVE:Ll5/m0;
-
-    return-object p0
-.end method
-
-.method public static internalGetValueMap()Lcom/google/crypto/tink/shaded/protobuf/q$b;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lcom/google/crypto/tink/shaded/protobuf/q$b<",
-            "Ll5/m0;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    sget-object v0, Ll5/m0;->internalValueMap:Lcom/google/crypto/tink/shaded/protobuf/q$b;
-
-    return-object v0
-.end method
-
-.method public static internalGetVerifier()Lcom/google/crypto/tink/shaded/protobuf/q$c;
-    .locals 1
-
-    .line 1
-    sget-object v0, Ll5/m0$b;->a:Lcom/google/crypto/tink/shaded/protobuf/q$c;
-
-    return-object v0
-.end method
-
-.method public static valueOf(I)Ll5/m0;
-    .locals 0
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    .line 2
-    invoke-static {p0}, Ll5/m0;->forNumber(I)Ll5/m0;
-
-    move-result-object p0
+    sget-object p0, Ll5/m0;->h:Ll5/m0;
 
     return-object p0
 .end method
@@ -295,7 +223,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Ll5/m0;->$VALUES:[Ll5/m0;
+    sget-object v0, Ll5/m0;->n:[Ll5/m0;
 
     invoke-virtual {v0}, [Ll5/m0;->clone()Ljava/lang/Object;
 
@@ -308,16 +236,16 @@
 
 
 # virtual methods
-.method public final getNumber()I
+.method public final b()I
     .locals 2
 
     .line 1
-    sget-object v0, Ll5/m0;->UNRECOGNIZED:Ll5/m0;
+    sget-object v0, Ll5/m0;->m:Ll5/m0;
 
     if-eq p0, v0, :cond_0
 
     .line 2
-    iget v0, p0, Ll5/m0;->value:I
+    iget v0, p0, Ll5/m0;->g:I
 
     return v0
 

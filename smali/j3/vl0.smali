@@ -1,75 +1,101 @@
-.class public final Lj3/vl0;
-.super Ljava/lang/Object;
+.class public final enum Lj3/vl0;
+.super Ljava/lang/Enum;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Ljava/util/concurrent/Executor;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<V:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
+        "Ljava/lang/Enum<",
+        "Lj3/vl0;",
+        ">;",
+        "Ljava/util/concurrent/Executor;"
     }
 .end annotation
 
 
-# instance fields
-.field public final a:Z
+# static fields
+.field public static final enum g:Lj3/vl0;
 
-.field public final b:Lj3/xj0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/xj0<",
-            "Lj3/yl0<",
-            "+TV;>;>;"
-        }
-    .end annotation
-.end field
+.field public static final synthetic h:[Lj3/vl0;
 
 
 # direct methods
-.method public constructor <init>(ZLj3/xj0;Lj3/tl0;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lj3/vl0;
+
+    const-string v1, "INSTANCE"
+
+    invoke-direct {v0, v1}, Lj3/vl0;-><init>(Ljava/lang/String;)V
+
+    sput-object v0, Lj3/vl0;->g:Lj3/vl0;
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [Lj3/vl0;
+
+    const/4 v2, 0x0
+
+    aput-object v0, v1, v2
 
     .line 2
-    iput-boolean p1, p0, Lj3/vl0;->a:Z
-
-    .line 3
-    iput-object p2, p0, Lj3/vl0;->b:Lj3/xj0;
+    sput-object v1, Lj3/vl0;->h:[Lj3/vl0;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(Ljava/util/concurrent/Callable;Ljava/util/concurrent/Executor;)Lj3/yl0;
-    .locals 3
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "<C:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/util/concurrent/Callable<",
-            "TC;>;",
-            "Ljava/util/concurrent/Executor;",
-            ")",
-            "Lj3/yl0<",
-            "TC;>;"
+            "()V"
         }
     .end annotation
 
+    const/4 v0, 0x0
+
     .line 1
-    new-instance v0, Lj3/kl0;
+    invoke-direct {p0, p1, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    iget-object v1, p0, Lj3/vl0;->b:Lj3/xj0;
+    return-void
+.end method
 
-    iget-boolean v2, p0, Lj3/vl0;->a:Z
+.method public static values()[Lj3/vl0;
+    .locals 1
 
-    invoke-direct {v0, v1, v2, p2, p1}, Lj3/kl0;-><init>(Lj3/wj0;ZLjava/util/concurrent/Executor;Ljava/util/concurrent/Callable;)V
+    .line 1
+    sget-object v0, Lj3/vl0;->h:[Lj3/vl0;
+
+    invoke-virtual {v0}, [Lj3/vl0;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Lj3/vl0;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final execute(Ljava/lang/Runnable;)V
+    .locals 0
+
+    .line 1
+    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
+
+    return-void
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "MoreExecutors.directExecutor()"
 
     return-object v0
 .end method

@@ -1,26 +1,41 @@
-.class public final enum Lj3/fu0;
-.super Lj3/gu0;
+.class public final Lj3/fu0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
+# interfaces
+.implements Lj3/bt0;
 
-# direct methods
-.method public constructor <init>(Ljava/lang/String;ILj3/ju0;I)V
-    .locals 6
 
-    const/16 v2, 0x8
-
-    const/4 v4, 0x2
-
-    const/4 v5, 0x0
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-object v3, p3
+# virtual methods
+.method public final a()I
+    .locals 1
 
     .line 1
-    invoke-direct/range {v0 .. v5}, Lj3/gu0;-><init>(Ljava/lang/String;ILj3/ju0;ILj3/du0;)V
+    new-instance v0, Ljava/lang/NoSuchMethodError;
 
-    return-void
+    invoke-direct {v0}, Ljava/lang/NoSuchMethodError;-><init>()V
+
+    throw v0
+.end method
+
+.method public final b()Z
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/NoSuchMethodError;
+
+    invoke-direct {v0}, Ljava/lang/NoSuchMethodError;-><init>()V
+
+    throw v0
+.end method
+
+.method public final c()Lj3/dt0;
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/NoSuchMethodError;
+
+    invoke-direct {v0}, Ljava/lang/NoSuchMethodError;-><init>()V
+
+    throw v0
 .end method

@@ -3,47 +3,54 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/gl0;
+.implements Ljava/util/concurrent/Callable;
 
 
 # instance fields
-.field public final a:Lj3/vc0;
+.field public final a:Lj3/im0;
+
+.field public final b:Lj3/im0;
 
 
 # direct methods
-.method public constructor <init>(Lj3/vc0;)V
+.method public constructor <init>(Lj3/im0;Lj3/im0;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj3/k30;->a:Lj3/vc0;
+    iput-object p1, p0, Lj3/k30;->a:Lj3/im0;
+
+    iput-object p2, p0, Lj3/k30;->b:Lj3/im0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lj3/yl0;
-    .locals 2
+.method public final call()Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lj3/k30;->a:Lj3/vc0;
+    iget-object v0, p0, Lj3/k30;->a:Lj3/im0;
 
-    check-cast p1, Landroid/os/Bundle;
+    iget-object v1, p0, Lj3/k30;->b:Lj3/im0;
 
     .line 2
-    sget-object v1, Lh1/o;->B:Lh1/o;
+    new-instance v2, Lj3/u30;
 
-    iget-object v1, v1, Lh1/o;->c:Lj3/xa;
+    invoke-interface {v0}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
 
-    .line 3
-    invoke-virtual {v1, p1}, Lj3/xa;->u(Landroid/os/Bundle;)Lorg/json/JSONObject;
+    move-result-object v0
 
-    move-result-object p1
+    check-cast v0, Lorg/json/JSONObject;
 
-    invoke-virtual {v0, p1}, Lj3/vc0;->a(Ljava/lang/Object;)Lj3/yl0;
+    invoke-interface {v1}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
 
-    move-result-object p1
+    move-result-object v1
 
-    return-object p1
+    check-cast v1, Lj3/m8;
+
+    invoke-direct {v2, v0, v1}, Lj3/u30;-><init>(Lorg/json/JSONObject;Lj3/m8;)V
+
+    return-object v2
 .end method

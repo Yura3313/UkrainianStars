@@ -1,19 +1,33 @@
 .class public Leb/b;
 .super Ljava/lang/Object;
-.source "SearchTokenDto.java"
+.source "PageIndexTrieNode.java"
+
+# interfaces
+.implements Ljava/io/Serializable;
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:C
 
-.field public final b:I
+.field public h:Z
 
-.field public final c:Ljava/util/Map;
+.field public i:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/Map<",
+            "Landroid/util/SparseArray<",
+            "Landroid/util/Pair<",
             "Ljava/lang/Integer;",
-            "Ljava/lang/Double;",
+            "Ljava/lang/Integer;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+.field public j:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Leb/b;",
             ">;"
         }
     .end annotation
@@ -21,31 +35,104 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;ILjava/util/Map;)V
+.method public constructor <init>(C)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "I",
-            "Ljava/util/Map<",
-            "Ljava/lang/Integer;",
-            "Ljava/lang/Double;",
-            ">;)V"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Leb/b;->a:Ljava/lang/String;
+    iput-char p1, p0, Leb/b;->g:C
 
     .line 3
-    iput p2, p0, Leb/b;->b:I
+    new-instance p1, Ljava/util/ArrayList;
+
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object p1, p0, Leb/b;->j:Ljava/util/List;
 
     .line 4
-    iput-object p3, p0, Leb/b;->c:Ljava/util/Map;
+    new-instance p1, Landroid/util/SparseArray;
+
+    invoke-direct {p1}, Landroid/util/SparseArray;-><init>()V
+
+    iput-object p1, p0, Leb/b;->i:Landroid/util/SparseArray;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(III)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Leb/b;->i:Landroid/util/SparseArray;
+
+    invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/util/Pair;
+
+    if-nez v0, :cond_0
+
+    .line 2
+    new-instance v0, Landroid/util/Pair;
+
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p2
+
+    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p3
+
+    invoke-direct {v0, p2, p3}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    .line 3
+    :cond_0
+    iget-object p3, v0, Landroid/util/Pair;->first:Ljava/lang/Object;
+
+    check-cast p3, Ljava/lang/Integer;
+
+    invoke-virtual {p3}, Ljava/lang/Integer;->intValue()I
+
+    move-result p3
+
+    .line 4
+    iget-object v0, v0, Landroid/util/Pair;->second:Ljava/lang/Object;
+
+    check-cast v0, Ljava/lang/Integer;
+
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    move-result v0
+
+    add-int/2addr p3, p2
+
+    .line 5
+    new-instance p2, Landroid/util/Pair;
+
+    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p3
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    invoke-direct {p2, p3, v0}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    move-object v0, p2
+
+    .line 6
+    :goto_0
+    iget-object p2, p0, Leb/b;->i:Landroid/util/SparseArray;
+
+    invoke-virtual {p2, p1, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     return-void
 .end method

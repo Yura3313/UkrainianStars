@@ -52,9 +52,11 @@
 .method public constructor <init>(Lio/sentry/Span;)V
     .locals 1
 
-    const/4 v0, 0x0
-
     .line 1
+    invoke-virtual {p1}, Lio/sentry/Span;->getData()Ljava/util/Map;
+
+    move-result-object v0
+
     invoke-direct {p0, p1, v0}, Lio/sentry/protocol/SentrySpan;-><init>(Lio/sentry/Span;Ljava/util/Map;)V
 
     return-void

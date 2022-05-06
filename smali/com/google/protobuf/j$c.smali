@@ -279,7 +279,7 @@
 
     .line 10
     :goto_1
-    invoke-static {v2, v1, v0}, Lcom/google/protobuf/w1;->c([BII)Ljava/lang/String;
+    invoke-static {v2, v1, v0}, Lcom/google/protobuf/v1;->c([BII)Ljava/lang/String;
 
     move-result-object v0
 
@@ -750,7 +750,7 @@
     move-exception p1
 
     .line 8
-    iput-boolean v3, p1, Lcom/google/protobuf/InvalidProtocolBufferException;->a:Z
+    iput-boolean v3, p1, Lcom/google/protobuf/InvalidProtocolBufferException;->g:Z
 
     .line 9
     throw p1
@@ -827,7 +827,7 @@
     move-exception p1
 
     .line 19
-    iput-boolean v3, p1, Lcom/google/protobuf/InvalidProtocolBufferException;->a:Z
+    iput-boolean v3, p1, Lcom/google/protobuf/InvalidProtocolBufferException;->g:Z
 
     .line 20
     throw p1
@@ -1729,7 +1729,7 @@
     move-exception p1
 
     .line 11
-    iput-boolean v1, p1, Lcom/google/protobuf/InvalidProtocolBufferException;->a:Z
+    iput-boolean v1, p1, Lcom/google/protobuf/InvalidProtocolBufferException;->g:Z
 
     .line 12
     throw p1
@@ -2026,7 +2026,7 @@
     move-exception p1
 
     .line 17
-    iput-boolean v5, p1, Lcom/google/protobuf/InvalidProtocolBufferException;->a:Z
+    iput-boolean v5, p1, Lcom/google/protobuf/InvalidProtocolBufferException;->g:Z
 
     .line 18
     throw p1
@@ -2039,7 +2039,7 @@
 
     const-string v2, " bytes were already available in buffer"
 
-    invoke-static {v1, p1, v2}, Lb0/c;->c(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p1, v2}, Lb0/c;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2262,7 +2262,7 @@
     .line 3
     iget-object v1, p0, Lcom/google/protobuf/j$c;->f:[B
 
-    invoke-static {v1, v2, v0}, Lcom/google/protobuf/i;->d([BII)Lcom/google/protobuf/i;
+    invoke-static {v1, v2, v0}, Lcom/google/protobuf/i;->e([BII)Lcom/google/protobuf/i;
 
     move-result-object v1
 
@@ -2279,7 +2279,7 @@
     if-nez v0, :cond_1
 
     .line 5
-    sget-object v0, Lcom/google/protobuf/i;->b:Lcom/google/protobuf/i;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
 
     return-object v0
 
@@ -2294,12 +2294,12 @@
     if-eqz v1, :cond_2
 
     .line 7
-    sget-object v0, Lcom/google/protobuf/i;->b:Lcom/google/protobuf/i;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
 
     .line 8
     array-length v0, v1
 
-    invoke-static {v1, v2, v0}, Lcom/google/protobuf/i;->d([BII)Lcom/google/protobuf/i;
+    invoke-static {v1, v2, v0}, Lcom/google/protobuf/i;->e([BII)Lcom/google/protobuf/i;
 
     move-result-object v0
 
@@ -2376,7 +2376,7 @@
 
     .line 20
     :cond_3
-    sget-object v1, Lcom/google/protobuf/i;->b:Lcom/google/protobuf/i;
+    sget-object v1, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
 
     .line 21
     new-instance v1, Lcom/google/protobuf/i$h;

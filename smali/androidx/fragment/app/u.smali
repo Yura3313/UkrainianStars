@@ -42,7 +42,7 @@
     .line 1
     iget-object v0, p0, Landroidx/fragment/app/u;->a:Landroidx/fragment/app/w;
 
-    iget-object v0, v0, Landroidx/fragment/app/w;->i:Landroidx/fragment/app/FragmentManager;
+    iget-object v0, v0, Landroidx/fragment/app/w;->j:Landroidx/fragment/app/FragmentManager;
 
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->Y()V
 

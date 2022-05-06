@@ -2,212 +2,290 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Landroid/media/AudioManager$OnAudioFocusChangeListener;
-
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0xe
-.end annotation
-
 
 # instance fields
-.field public final a:Landroid/media/AudioManager;
+.field public final a:Z
 
-.field public final b:Lj3/ef;
+.field public final b:I
 
-.field public c:Z
+.field public final c:I
 
-.field public d:Z
+.field public final d:I
 
-.field public e:Z
+.field public final e:I
 
-.field public f:F
+.field public final f:I
+
+.field public final g:I
+
+.field public final h:I
+
+.field public final i:Z
+
+.field public final j:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lj3/ef;)V
-    .locals 1
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/high16 v0, 0x3f800000    # 1.0f
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_0
 
     .line 2
-    iput v0, p0, Lj3/ff;->f:F
+    :try_start_0
+    new-instance v1, Lorg/json/JSONObject;
 
-    const-string v0, "audio"
+    invoke-direct {v1, p1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-object v0, v1
 
     .line 3
-    invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    :catch_0
+    :cond_0
+    sget-object p1, Lj3/n;->z:Lj3/f;
+
+    const-string v1, "aggressive_media_codec_release"
+
+    .line 4
+    invoke-static {v0, v1, p1}, Lj3/ff;->a(Lorg/json/JSONObject;Ljava/lang/String;Lj3/f;)Z
+
+    move-result p1
+
+    iput-boolean p1, p0, Lj3/ff;->a:Z
+
+    .line 5
+    sget-object p1, Lj3/n;->h:Lj3/f;
+
+    const-string v1, "byte_buffer_precache_limit"
+
+    .line 6
+    invoke-static {v0, v1, p1}, Lj3/ff;->b(Lorg/json/JSONObject;Ljava/lang/String;Lj3/f;)I
+
+    move-result p1
+
+    iput p1, p0, Lj3/ff;->b:I
+
+    .line 7
+    sget-object p1, Lj3/n;->o:Lj3/f;
+
+    const-string v1, "exo_cache_buffer_size"
+
+    invoke-static {v0, v1, p1}, Lj3/ff;->b(Lorg/json/JSONObject;Ljava/lang/String;Lj3/f;)I
+
+    move-result p1
+
+    iput p1, p0, Lj3/ff;->c:I
+
+    .line 8
+    sget-object p1, Lj3/n;->d:Lj3/f;
+
+    const-string v1, "exo_connect_timeout_millis"
+
+    .line 9
+    invoke-static {v0, v1, p1}, Lj3/ff;->b(Lorg/json/JSONObject;Ljava/lang/String;Lj3/f;)I
+
+    move-result p1
+
+    iput p1, p0, Lj3/ff;->d:I
+
+    const-string p1, "exo_player_version"
+
+    .line 10
+    sget-object v1, Lj3/n;->c:Lj3/f;
+
+    if-eqz v0, :cond_1
+
+    .line 11
+    :try_start_1
+    invoke-virtual {v0, p1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+    :try_end_1
+    .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_1
+
+    goto :goto_0
+
+    .line 12
+    :catch_1
+    :cond_1
+    sget-object p1, Lj3/t51;->j:Lj3/t51;
+
+    iget-object p1, p1, Lj3/t51;->f:Lj3/l;
+
+    .line 13
+    invoke-virtual {p1, v1}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Landroid/media/AudioManager;
+    .line 14
+    check-cast p1, Ljava/lang/String;
 
-    iput-object p1, p0, Lj3/ff;->a:Landroid/media/AudioManager;
+    .line 15
+    :goto_0
+    sget-object p1, Lj3/n;->e:Lj3/f;
 
-    .line 4
-    iput-object p2, p0, Lj3/ff;->b:Lj3/ef;
+    const-string v1, "exo_read_timeout_millis"
+
+    .line 16
+    invoke-static {v0, v1, p1}, Lj3/ff;->b(Lorg/json/JSONObject;Ljava/lang/String;Lj3/f;)I
+
+    move-result p1
+
+    iput p1, p0, Lj3/ff;->e:I
+
+    .line 17
+    sget-object p1, Lj3/n;->f:Lj3/f;
+
+    const-string v1, "load_check_interval_bytes"
+
+    .line 18
+    invoke-static {v0, v1, p1}, Lj3/ff;->b(Lorg/json/JSONObject;Ljava/lang/String;Lj3/f;)I
+
+    move-result p1
+
+    iput p1, p0, Lj3/ff;->f:I
+
+    .line 19
+    sget-object p1, Lj3/n;->g:Lj3/f;
+
+    const-string v1, "player_precache_limit"
+
+    invoke-static {v0, v1, p1}, Lj3/ff;->b(Lorg/json/JSONObject;Ljava/lang/String;Lj3/f;)I
+
+    move-result p1
+
+    iput p1, p0, Lj3/ff;->g:I
+
+    .line 20
+    sget-object p1, Lj3/n;->i:Lj3/f;
+
+    const-string v1, "socket_receive_buffer_size"
+
+    .line 21
+    invoke-static {v0, v1, p1}, Lj3/ff;->b(Lorg/json/JSONObject;Ljava/lang/String;Lj3/f;)I
+
+    move-result p1
+
+    iput p1, p0, Lj3/ff;->h:I
+
+    .line 22
+    sget-object p1, Lj3/n;->S1:Lj3/f;
+
+    const-string v1, "use_cache_data_source"
+
+    invoke-static {v0, v1, p1}, Lj3/ff;->a(Lorg/json/JSONObject;Ljava/lang/String;Lj3/f;)Z
+
+    move-result p1
+
+    iput-boolean p1, p0, Lj3/ff;->i:Z
+
+    .line 23
+    sget-object p1, Lj3/n;->k:Lj3/f;
+
+    const-string v1, "min_retry_count"
+
+    invoke-static {v0, v1, p1}, Lj3/ff;->b(Lorg/json/JSONObject;Ljava/lang/String;Lj3/f;)I
+
+    move-result p1
+
+    iput p1, p0, Lj3/ff;->j:I
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final a()V
-    .locals 5
+.method public static a(Lorg/json/JSONObject;Ljava/lang/String;Lj3/f;)Z
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lorg/json/JSONObject;",
+            "Ljava/lang/String;",
+            "Lj3/f<",
+            "Ljava/lang/Boolean;",
+            ">;)Z"
+        }
+    .end annotation
 
     .line 1
-    iget-boolean v0, p0, Lj3/ff;->d:Z
+    sget-object v0, Lj3/t51;->j:Lj3/t51;
 
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
-
-    if-eqz v0, :cond_0
-
-    iget-boolean v0, p0, Lj3/ff;->e:Z
-
-    if-nez v0, :cond_0
-
-    iget v0, p0, Lj3/ff;->f:F
-
-    const/4 v3, 0x0
-
-    cmpl-float v0, v0, v3
-
-    if-lez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    if-eqz v0, :cond_4
+    iget-object v0, v0, Lj3/t51;->f:Lj3/l;
 
     .line 2
-    iget-boolean v3, p0, Lj3/ff;->c:Z
+    invoke-virtual {v0, p2}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
 
-    if-nez v3, :cond_4
+    move-result-object p2
 
     .line 3
-    iget-object v0, p0, Lj3/ff;->a:Landroid/media/AudioManager;
+    check-cast p2, Ljava/lang/Boolean;
 
-    if-eqz v0, :cond_3
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
-    if-eqz v3, :cond_1
+    move-result p2
 
-    goto :goto_1
-
-    :cond_1
-    const/4 v3, 0x3
-
-    const/4 v4, 0x2
+    if-eqz p0, :cond_0
 
     .line 4
-    invoke-virtual {v0, p0, v3, v4}, Landroid/media/AudioManager;->requestAudioFocus(Landroid/media/AudioManager$OnAudioFocusChangeListener;II)I
+    :try_start_0
+    invoke-virtual {p0, p1}, Lorg/json/JSONObject;->getBoolean(Ljava/lang/String;)Z
 
-    move-result v0
+    move-result p2
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
-    if-ne v0, v2, :cond_2
-
-    const/4 v1, 0x1
-
-    .line 5
-    :cond_2
-    iput-boolean v1, p0, Lj3/ff;->c:Z
-
-    .line 6
-    :cond_3
-    :goto_1
-    iget-object v0, p0, Lj3/ff;->b:Lj3/ef;
-
-    invoke-interface {v0}, Lj3/ef;->b()V
-
-    return-void
-
-    :cond_4
-    if-nez v0, :cond_8
-
-    .line 7
-    iget-boolean v0, p0, Lj3/ff;->c:Z
-
-    if-eqz v0, :cond_8
-
-    .line 8
-    iget-object v3, p0, Lj3/ff;->a:Landroid/media/AudioManager;
-
-    if-eqz v3, :cond_7
-
-    if-nez v0, :cond_5
-
-    goto :goto_2
-
-    .line 9
-    :cond_5
-    invoke-virtual {v3, p0}, Landroid/media/AudioManager;->abandonAudioFocus(Landroid/media/AudioManager$OnAudioFocusChangeListener;)I
-
-    move-result v0
-
-    if-nez v0, :cond_6
-
-    const/4 v1, 0x1
-
-    .line 10
-    :cond_6
-    iput-boolean v1, p0, Lj3/ff;->c:Z
-
-    .line 11
-    :cond_7
-    :goto_2
-    iget-object v0, p0, Lj3/ff;->b:Lj3/ef;
-
-    invoke-interface {v0}, Lj3/ef;->b()V
-
-    :cond_8
-    return-void
-.end method
-
-.method public final b()V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 1
-    iput-boolean v0, p0, Lj3/ff;->d:Z
-
-    .line 2
-    invoke-virtual {p0}, Lj3/ff;->a()V
-
-    return-void
-.end method
-
-.method public final onAudioFocusChange(I)V
-    .locals 0
-
-    if-lez p1, :cond_0
-
-    const/4 p1, 0x1
-
-    goto :goto_0
-
+    :catch_0
     :cond_0
-    const/4 p1, 0x0
+    return p2
+.end method
+
+.method public static b(Lorg/json/JSONObject;Ljava/lang/String;Lj3/f;)I
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lorg/json/JSONObject;",
+            "Ljava/lang/String;",
+            "Lj3/f<",
+            "Ljava/lang/Integer;",
+            ">;)I"
+        }
+    .end annotation
+
+    if-eqz p0, :cond_0
 
     .line 1
-    :goto_0
-    iput-boolean p1, p0, Lj3/ff;->c:Z
+    :try_start_0
+    invoke-virtual {p0, p1}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
+
+    move-result p0
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return p0
 
     .line 2
-    iget-object p1, p0, Lj3/ff;->b:Lj3/ef;
+    :catch_0
+    :cond_0
+    sget-object p0, Lj3/t51;->j:Lj3/t51;
 
-    invoke-interface {p1}, Lj3/ef;->b()V
+    iget-object p0, p0, Lj3/t51;->f:Lj3/l;
 
-    return-void
+    .line 3
+    invoke-virtual {p0, p2}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    .line 4
+    check-cast p0, Ljava/lang/Integer;
+
+    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
+
+    move-result p0
+
+    return p0
 .end method

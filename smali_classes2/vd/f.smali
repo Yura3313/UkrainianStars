@@ -1,97 +1,64 @@
 .class public final Lvd/f;
-.super Lle/j;
-.source "YoungPlayerRegisterEnterPinPageFragment.kt"
-
-# interfaces
-.implements Lke/p;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lvd/i;",
-        "Ljava/lang/Exception;",
-        "Lbe/n;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final a:Lvd/f;
+.super Landroidx/recyclerview/widget/p;
+.source "RecyclerViewUtil.kt"
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 0
 
-    new-instance v0, Lvd/f;
-
-    invoke-direct {v0}, Lvd/f;-><init>()V
-
-    sput-object v0, Lvd/f;->a:Lvd/f;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    .line 1
+    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/p;-><init>(Landroid/content/Context;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public f(IIIII)I
+    .locals 0
+
+    sub-int/2addr p4, p3
 
     .line 1
-    check-cast p1, Lvd/i;
+    div-int/lit8 p4, p4, 0x2
 
-    check-cast p2, Ljava/lang/Exception;
+    add-int/2addr p4, p3
 
-    const/4 v0, 0x0
+    sub-int/2addr p2, p1
 
-    if-eqz p1, :cond_2
+    div-int/lit8 p2, p2, 0x2
 
-    if-eqz p2, :cond_1
+    add-int/2addr p2, p1
 
-    .line 2
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    sub-int/2addr p4, p2
 
-    move-result-object p1
+    return p4
+.end method
+
+.method public g(Landroid/util/DisplayMetrics;)F
+    .locals 1
 
     if-eqz p1, :cond_0
 
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    const/high16 v0, 0x41200000    # 10.0f
 
-    .line 3
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->E(Ljava/lang/Exception;Lke/l;)V
+    .line 1
+    iget p1, p1, Landroid/util/DisplayMetrics;->densityDpi:I
 
-    .line 4
+    int-to-float p1, p1
+
+    div-float/2addr v0, p1
+
+    return v0
+
     :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    const-string p1, "displayMetrics"
 
-    return-object p1
+    .line 2
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    :cond_1
-    const-string p1, "it"
+    const/4 p1, 0x0
 
-    .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "$receiver"
-
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
+    throw p1
 .end method

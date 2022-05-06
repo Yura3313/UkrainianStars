@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
 
 # direct methods
@@ -27,7 +27,7 @@
     .line 1
     invoke-direct {p0, v0}, Lcom/supercell/id/model/ProfileImage;-><init>(Lle/g;)V
 
-    iput-object p1, p0, Lcom/supercell/id/model/ProfileImage$Image;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/model/ProfileImage$Image;->g:Ljava/lang/String;
 
     return-void
 .end method
@@ -45,11 +45,11 @@
 
     check-cast p1, Lcom/supercell/id/model/ProfileImage$Image;
 
-    iget-object v0, p0, Lcom/supercell/id/model/ProfileImage$Image;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/model/ProfileImage$Image;->g:Ljava/lang/String;
 
-    iget-object p1, p1, Lcom/supercell/id/model/ProfileImage$Image;->a:Ljava/lang/String;
+    iget-object p1, p1, Lcom/supercell/id/model/ProfileImage$Image;->g:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -72,7 +72,7 @@
 .method public hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/model/ProfileImage$Image;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/model/ProfileImage$Image;->g:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
@@ -94,11 +94,11 @@
 
     const-string v0, "Image(url="
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/model/ProfileImage$Image;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/model/ProfileImage$Image;->g:Ljava/lang/String;
 
     const-string v2, ")"
 

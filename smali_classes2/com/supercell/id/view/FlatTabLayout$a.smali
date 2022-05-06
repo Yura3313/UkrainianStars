@@ -18,7 +18,7 @@
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/view/FlatTabLayout$a;
+.field public static final g:Lcom/supercell/id/view/FlatTabLayout$a;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/view/FlatTabLayout$a;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/view/FlatTabLayout$a;->a:Lcom/supercell/id/view/FlatTabLayout$a;
+    sput-object v0, Lcom/supercell/id/view/FlatTabLayout$a;->g:Lcom/supercell/id/view/FlatTabLayout$a;
 
     return-void
 .end method
@@ -50,17 +50,17 @@
     .line 1
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object p1
 
     .line 2
-    iget-object p1, p1, Lwd/r;->v:Lqc/a;
+    iget-object p1, p1, Lvd/r;->v:Lnc/a;
 
     .line 3
-    sget-object v0, Lqc/a$a;->TAB_SWITCH:Lqc/a$a;
+    sget-object v0, Lnc/a$a;->j:Lnc/a$a;
 
-    invoke-virtual {p1, v0}, Lqc/a;->b(Lqc/a$a;)V
+    invoke-virtual {p1, v0}, Lnc/a;->b(Lnc/a$a;)V
 
     return-void
 .end method

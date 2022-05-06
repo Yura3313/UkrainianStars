@@ -20,10 +20,10 @@
 
 
 # virtual methods
-.method public abstract W1()I
+.method public abstract Z1()I
 .end method
 
-.method public abstract Z0()Ljava/lang/String;
+.method public abstract b1()Ljava/lang/String;
 .end method
 
 .method public abstract getDescription()Ljava/lang/String;
@@ -54,20 +54,20 @@
     .end annotation
 .end method
 
-.method public abstract k()Ljava/lang/String;
+.method public abstract m()Ljava/lang/String;
 .end method
 
-.method public abstract m2()Lcom/google/android/gms/games/Player;
+.method public abstract o2()Lcom/google/android/gms/games/Player;
 .end method
 
-.method public abstract n1()F
+.method public abstract p1()F
 .end method
 
-.method public abstract s1()I
+.method public abstract u1()I
 .end method
 
-.method public abstract u()J
+.method public abstract w()J
 .end method
 
-.method public abstract w0()J
+.method public abstract y0()J
 .end method

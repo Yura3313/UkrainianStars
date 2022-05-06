@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/google/android/play/core/assetpacks/s2;
+.implements Lcom/google/android/play/core/assetpacks/t2;
 
 
 # static fields
@@ -87,7 +87,7 @@
 
     iput-object p2, p0, Lcom/google/android/play/core/assetpacks/o;->b:Lcom/google/android/play/core/assetpacks/r0;
 
-    invoke-static {p1}, Ly4/a0;->a(Landroid/content/Context;)Z
+    invoke-static {p1}, Ly4/c0;->a(Landroid/content/Context;)Z
 
     move-result p2
 
@@ -115,7 +115,7 @@
 
     sget-object v7, Lcom/google/android/play/core/assetpacks/o;->g:Landroid/content/Intent;
 
-    sget-object v5, Lb5/m;->a:Ly4/h;
+    sget-object v5, Lcom/google/android/play/core/assetpacks/u2;->g:Ly4/h;
 
     const-string v3, "AssetPackService"
 
@@ -147,7 +147,7 @@
 
     .line 4
     :goto_1
-    sget-object p1, Lcom/google/android/play/core/assetpacks/t2;->a:Ly4/h;
+    sget-object p1, Lb5/m;->h:Ly4/h;
 
     const-string v5, "AssetPackService-keepAlive"
 
@@ -429,7 +429,7 @@
     throw p2
 .end method
 
-.method public final declared-synchronized f0()V
+.method public final declared-synchronized g0()V
     .locals 5
 
     monitor-enter p0
@@ -525,7 +525,7 @@
     throw v0
 .end method
 
-.method public final u(Ljava/util/List;)V
+.method public final v(Ljava/util/List;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -574,7 +574,7 @@
     return-void
 .end method
 
-.method public final w0(I)V
+.method public final x0(I)V
     .locals 4
 
     iget-object v0, p0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/l;
@@ -619,7 +619,7 @@
     throw v0
 .end method
 
-.method public final x0(ILjava/lang/String;Ljava/lang/String;I)Lcom/google/android/play/core/tasks/Task;
+.method public final y0(ILjava/lang/String;Ljava/lang/String;I)Lcom/google/android/play/core/tasks/Task;
     .locals 12
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -717,7 +717,7 @@
     return-object v0
 .end method
 
-.method public final y0(ILjava/lang/String;Ljava/lang/String;I)V
+.method public final z0(ILjava/lang/String;Ljava/lang/String;I)V
     .locals 10
 
     iget-object v0, p0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/l;

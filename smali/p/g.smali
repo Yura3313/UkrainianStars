@@ -1,377 +1,128 @@
-.class public Lp/g;
+.class public final synthetic Lp/g;
 .super Ljava/lang/Object;
-.source "SolverVariable.java"
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lp/g$a;
-    }
-.end annotation
+.source "R8$$SyntheticClass"
 
 
 # static fields
-.field public static m:I = 0x1
-
-
-# instance fields
-.field public a:Z
-
-.field public b:I
-
-.field public c:I
-
-.field public d:I
-
-.field public e:F
-
-.field public f:Z
-
-.field public g:[F
-
-.field public h:[F
-
-.field public i:Lp/g$a;
-
-.field public j:[Lp/b;
-
-.field public k:I
-
-.field public l:I
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>(Lp/g$a;)V
-    .locals 3
+.method static synthetic constructor <clinit>()V
+    .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/16 v0, 0x31
 
-    const/4 v0, -0x1
+    new-array v0, v0, [I
 
-    .line 2
-    iput v0, p0, Lp/g;->b:I
+    fill-array-data v0, :array_0
 
-    .line 3
-    iput v0, p0, Lp/g;->c:I
-
-    const/4 v0, 0x0
-
-    .line 4
-    iput v0, p0, Lp/g;->d:I
-
-    .line 5
-    iput-boolean v0, p0, Lp/g;->f:Z
-
-    const/16 v1, 0x9
-
-    new-array v2, v1, [F
-
-    .line 6
-    iput-object v2, p0, Lp/g;->g:[F
-
-    new-array v1, v1, [F
-
-    .line 7
-    iput-object v1, p0, Lp/g;->h:[F
-
-    const/16 v1, 0x10
-
-    new-array v1, v1, [Lp/b;
-
-    .line 8
-    iput-object v1, p0, Lp/g;->j:[Lp/b;
-
-    .line 9
-    iput v0, p0, Lp/g;->k:I
-
-    .line 10
-    iput v0, p0, Lp/g;->l:I
-
-    .line 11
-    iput-object p1, p0, Lp/g;->i:Lp/g$a;
+    sput-object v0, Lp/g;->a:[I
 
     return-void
+
+    :array_0
+    .array-data 4
+        0x1
+        0x2
+        0x3
+        0x4
+        0x5
+        0x6
+        0x7
+        0x8
+        0x9
+        0xa
+        0xb
+        0xc
+        0xd
+        0xe
+        0xf
+        0x10
+        0x11
+        0x12
+        0x13
+        0x14
+        0x15
+        0x16
+        0x17
+        0x18
+        0x19
+        0x1a
+        0x1b
+        0x1c
+        0x1d
+        0x1e
+        0x1f
+        0x20
+        0x21
+        0x22
+        0x23
+        0x24
+        0x25
+        0x26
+        0x27
+        0x28
+        0x29
+        0x2a
+        0x2b
+        0x2c
+        0x2d
+        0x2e
+        0x2f
+        0x30
+        0x31
+    .end array-data
 .end method
 
+.method public static synthetic a(II)Z
+    .locals 0
 
-# virtual methods
-.method public final a(Lp/b;)V
-    .locals 3
+    if-eqz p0, :cond_1
 
-    const/4 v0, 0x0
+    if-ne p0, p1, :cond_0
 
-    .line 1
-    :goto_0
-    iget v1, p0, Lp/g;->k:I
-
-    if-ge v0, v1, :cond_1
-
-    .line 2
-    iget-object v1, p0, Lp/g;->j:[Lp/b;
-
-    aget-object v1, v1, v0
-
-    if-ne v1, p1, :cond_0
-
-    return-void
-
-    :cond_0
-    add-int/lit8 v0, v0, 0x1
+    const/4 p0, 0x1
 
     goto :goto_0
 
-    .line 3
-    :cond_1
-    iget-object v0, p0, Lp/g;->j:[Lp/b;
-
-    array-length v2, v0
-
-    if-lt v1, v2, :cond_2
-
-    .line 4
-    array-length v1, v0
-
-    mul-int/lit8 v1, v1, 0x2
-
-    invoke-static {v0, v1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, [Lp/b;
-
-    iput-object v0, p0, Lp/g;->j:[Lp/b;
-
-    .line 5
-    :cond_2
-    iget-object v0, p0, Lp/g;->j:[Lp/b;
-
-    iget v1, p0, Lp/g;->k:I
-
-    aput-object p1, v0, v1
-
-    add-int/lit8 v1, v1, 0x1
-
-    .line 6
-    iput v1, p0, Lp/g;->k:I
-
-    return-void
-.end method
-
-.method public final b(Lp/b;)V
-    .locals 4
-
-    .line 1
-    iget v0, p0, Lp/g;->k:I
-
-    const/4 v1, 0x0
+    :cond_0
+    const/4 p0, 0x0
 
     :goto_0
-    if-ge v1, v0, :cond_2
-
-    .line 2
-    iget-object v2, p0, Lp/g;->j:[Lp/b;
-
-    aget-object v2, v2, v1
-
-    if-ne v2, p1, :cond_1
-
-    :goto_1
-    add-int/lit8 p1, v0, -0x1
-
-    if-ge v1, p1, :cond_0
-
-    .line 3
-    iget-object p1, p0, Lp/g;->j:[Lp/b;
-
-    add-int/lit8 v2, v1, 0x1
-
-    aget-object v3, p1, v2
-
-    aput-object v3, p1, v1
-
-    move v1, v2
-
-    goto :goto_1
-
-    .line 4
-    :cond_0
-    iget p1, p0, Lp/g;->k:I
-
-    add-int/lit8 p1, p1, -0x1
-
-    iput p1, p0, Lp/g;->k:I
-
-    return-void
+    return p0
 
     :cond_1
-    add-int/lit8 v1, v1, 0x1
+    const/4 p0, 0x0
 
-    goto :goto_0
-
-    :cond_2
-    return-void
+    throw p0
 .end method
 
-.method public c()V
-    .locals 6
+.method public static synthetic b(I)I
+    .locals 0
 
-    .line 1
-    sget-object v0, Lp/g$a;->UNKNOWN:Lp/g$a;
+    if-eqz p0, :cond_0
 
-    iput-object v0, p0, Lp/g;->i:Lp/g$a;
+    add-int/lit8 p0, p0, -0x1
 
-    const/4 v0, 0x0
+    return p0
 
-    .line 2
-    iput v0, p0, Lp/g;->d:I
-
-    const/4 v1, -0x1
-
-    .line 3
-    iput v1, p0, Lp/g;->b:I
-
-    .line 4
-    iput v1, p0, Lp/g;->c:I
-
-    const/4 v1, 0x0
-
-    .line 5
-    iput v1, p0, Lp/g;->e:F
-
-    .line 6
-    iput-boolean v0, p0, Lp/g;->f:Z
-
-    .line 7
-    iget v2, p0, Lp/g;->k:I
-
-    const/4 v3, 0x0
-
-    :goto_0
-    if-ge v3, v2, :cond_0
-
-    .line 8
-    iget-object v4, p0, Lp/g;->j:[Lp/b;
-
-    const/4 v5, 0x0
-
-    aput-object v5, v4, v3
-
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_0
-
-    .line 9
     :cond_0
-    iput v0, p0, Lp/g;->k:I
+    const/4 p0, 0x0
 
-    .line 10
-    iput v0, p0, Lp/g;->l:I
-
-    .line 11
-    iput-boolean v0, p0, Lp/g;->a:Z
-
-    .line 12
-    iget-object v0, p0, Lp/g;->h:[F
-
-    invoke-static {v0, v1}, Ljava/util/Arrays;->fill([FF)V
-
-    return-void
+    throw p0
 .end method
 
-.method public d(Lp/d;F)V
+.method public static synthetic c(I)[I
     .locals 3
 
-    .line 1
-    iput p2, p0, Lp/g;->e:F
+    new-array v0, p0, [I
 
-    const/4 p2, 0x1
-
-    .line 2
-    iput-boolean p2, p0, Lp/g;->f:Z
-
-    .line 3
-    iget p2, p0, Lp/g;->k:I
-
-    const/4 v0, -0x1
-
-    .line 4
-    iput v0, p0, Lp/g;->c:I
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x0
-
-    :goto_0
-    if-ge v1, p2, :cond_0
-
-    .line 5
-    iget-object v2, p0, Lp/g;->j:[Lp/b;
-
-    aget-object v2, v2, v1
-
-    invoke-virtual {v2, p1, p0, v0}, Lp/b;->k(Lp/d;Lp/g;Z)V
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    .line 6
-    :cond_0
-    iput v0, p0, Lp/g;->k:I
-
-    return-void
-.end method
-
-.method public final e(Lp/d;Lp/b;)V
-    .locals 4
-
-    .line 1
-    iget v0, p0, Lp/g;->k:I
-
-    const/4 v1, 0x0
+    sget-object v1, Lp/g;->a:[I
 
     const/4 v2, 0x0
 
-    :goto_0
-    if-ge v2, v0, :cond_0
-
-    .line 2
-    iget-object v3, p0, Lp/g;->j:[Lp/b;
-
-    aget-object v3, v3, v2
-
-    invoke-virtual {v3, p1, p2, v1}, Lp/b;->l(Lp/d;Lp/b;Z)V
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    iput v1, p0, Lp/g;->k:I
-
-    return-void
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 2
-
-    const-string v0, ""
-
-    .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget v1, p0, Lp/g;->b:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
+    invoke-static {v1, v2, v0, v2, p0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     return-object v0
 .end method

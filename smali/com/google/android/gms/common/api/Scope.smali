@@ -22,9 +22,9 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final b:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
 
 # direct methods
@@ -53,10 +53,10 @@
     invoke-static {p2, v0}, Lc2/h;->f(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
     .line 3
-    iput p1, p0, Lcom/google/android/gms/common/api/Scope;->a:I
+    iput p1, p0, Lcom/google/android/gms/common/api/Scope;->g:I
 
     .line 4
-    iput-object p2, p0, Lcom/google/android/gms/common/api/Scope;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/common/api/Scope;->h:Ljava/lang/String;
 
     return-void
 .end method
@@ -79,10 +79,10 @@
     const/4 v0, 0x1
 
     .line 7
-    iput v0, p0, Lcom/google/android/gms/common/api/Scope;->a:I
+    iput v0, p0, Lcom/google/android/gms/common/api/Scope;->g:I
 
     .line 8
-    iput-object p1, p0, Lcom/google/android/gms/common/api/Scope;->b:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/common/api/Scope;->h:Ljava/lang/String;
 
     return-void
 .end method
@@ -110,11 +110,11 @@
 
     .line 2
     :cond_1
-    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->h:Ljava/lang/String;
 
     check-cast p1, Lcom/google/android/gms/common/api/Scope;
 
-    iget-object p1, p1, Lcom/google/android/gms/common/api/Scope;->b:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/common/api/Scope;->h:Ljava/lang/String;
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -127,7 +127,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->h:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
@@ -142,7 +142,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->h:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -160,14 +160,14 @@
     move-result p2
 
     .line 2
-    iget v0, p0, Lcom/google/android/gms/common/api/Scope;->a:I
+    iget v0, p0, Lcom/google/android/gms/common/api/Scope;->g:I
 
     const/4 v1, 0x1
 
     invoke-static {p1, v1, v0}, Ld2/b;->g(Landroid/os/Parcel;II)V
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->h:Ljava/lang/String;
 
     const/4 v1, 0x0
 

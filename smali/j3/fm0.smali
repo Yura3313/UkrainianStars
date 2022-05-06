@@ -1,92 +1,75 @@
 .class public final Lj3/fm0;
-.super Lj3/uk0$k;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lj3/uk0$k<",
-        "Ljava/lang/Void;",
-        ">;",
-        "Ljava/lang/Runnable;"
+        "<V:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
     }
 .end annotation
 
 
 # instance fields
-.field public final m:Ljava/lang/Runnable;
+.field public final a:Z
+
+.field public final b:Lj3/ik0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/ik0<",
+            "Lj3/im0<",
+            "+TV;>;>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Runnable;)V
+.method public constructor <init>(ZLj3/ik0;Lj3/dm0;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lj3/uk0$k;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iput-boolean p1, p0, Lj3/fm0;->a:Z
 
     .line 3
-    iput-object p1, p0, Lj3/fm0;->m:Ljava/lang/Runnable;
+    iput-object p2, p0, Lj3/fm0;->b:Lj3/ik0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
+.method public final a(Ljava/util/concurrent/Callable;Ljava/util/concurrent/Executor;)Lj3/im0;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<C:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/concurrent/Callable<",
+            "TC;>;",
+            "Ljava/util/concurrent/Executor;",
+            ")",
+            "Lj3/im0<",
+            "TC;>;"
+        }
+    .end annotation
 
     .line 1
-    :try_start_0
-    iget-object v0, p0, Lj3/fm0;->m:Ljava/lang/Runnable;
+    new-instance v0, Lj3/ul0;
 
-    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    iget-object v1, p0, Lj3/fm0;->b:Lj3/ik0;
 
-    return-void
+    iget-boolean v2, p0, Lj3/fm0;->a:Z
 
-    :catchall_0
-    move-exception v0
+    invoke-direct {v0, v1, v2, p2, p1}, Lj3/ul0;-><init>(Lj3/hk0;ZLjava/util/concurrent/Executor;Ljava/util/concurrent/Callable;)V
 
-    .line 2
-    invoke-virtual {p0, v0}, Lj3/uk0;->j(Ljava/lang/Throwable;)Z
-
-    .line 3
-    sget-object v1, Lj3/tj0;->a:Ljava/lang/Object;
-
-    .line 4
-    instance-of v1, v0, Ljava/lang/RuntimeException;
-
-    if-nez v1, :cond_1
-
-    .line 5
-    instance-of v1, v0, Ljava/lang/Error;
-
-    if-nez v1, :cond_0
-
-    .line 6
-    new-instance v1, Ljava/lang/RuntimeException;
-
-    invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
-
-    throw v1
-
-    .line 7
-    :cond_0
-    check-cast v0, Ljava/lang/Error;
-
-    throw v0
-
-    .line 8
-    :cond_1
-    check-cast v0, Ljava/lang/RuntimeException;
-
-    throw v0
+    return-object v0
 .end method

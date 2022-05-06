@@ -1,127 +1,38 @@
-.class public final Lj3/pi0;
-.super Lj3/ts;
+.class public final synthetic Lj3/pi0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/mi0;
+.implements Ljava/util/concurrent/Callable;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lj3/ts<",
-        "Lj3/qi0;",
-        ">;",
-        "Lj3/mi0<",
-        "Lj3/oi0;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final a:Lj3/ii0;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Set;)V
+.method public constructor <init>(Lj3/ii0;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Set<",
-            "Lj3/rt<",
-            "Lj3/qi0;",
-            ">;>;)V"
-        }
-    .end annotation
 
-    .line 1
-    invoke-direct {p0, p1}, Lj3/ts;-><init>(Ljava/util/Set;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lj3/pi0;->a:Lj3/ii0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final i(Lj3/di0;)V
+.method public final call()Ljava/lang/Object;
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/di0<",
-            "Lj3/oi0;",
-            "*>;)V"
-        }
-    .end annotation
 
     .line 1
-    new-instance v0, Lj3/m4;
+    iget-object v0, p0, Lj3/pi0;->a:Lj3/ii0;
 
-    invoke-direct {v0, p1}, Lj3/m4;-><init>(Ljava/lang/Object;)V
+    .line 2
+    invoke-interface {v0}, Lj3/ii0;->run()V
 
-    invoke-virtual {p0, v0}, Lj3/ts;->E0(Lj3/vs;)V
+    const/4 v0, 0x0
 
-    return-void
-.end method
-
-.method public final l0(Lj3/di0;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/di0<",
-            "Lj3/oi0;",
-            "*>;)V"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Lj3/b0;
-
-    invoke-direct {v0, p1}, Lj3/b0;-><init>(Ljava/lang/Object;)V
-
-    invoke-virtual {p0, v0}, Lj3/ts;->E0(Lj3/vs;)V
-
-    return-void
-.end method
-
-.method public final o0(Lj3/di0;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/di0<",
-            "Lj3/oi0;",
-            "*>;)V"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Lj3/vv;
-
-    invoke-direct {v0, p1}, Lj3/vv;-><init>(Ljava/lang/Object;)V
-
-    invoke-virtual {p0, v0}, Lj3/ts;->E0(Lj3/vs;)V
-
-    return-void
-.end method
-
-.method public final z(Lj3/di0;Ljava/lang/Throwable;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/di0<",
-            "Lj3/oi0;",
-            "*>;",
-            "Ljava/lang/Throwable;",
-            ")V"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Lj3/wf;
-
-    invoke-direct {v0, p1, p2}, Lj3/wf;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    invoke-virtual {p0, v0}, Lj3/ts;->E0(Lj3/vs;)V
-
-    return-void
+    return-object v0
 .end method

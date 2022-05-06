@@ -12,7 +12,7 @@
 
 
 # static fields
-.field private static final a:Lub/a;
+.field private static final a:Lsb/a;
 
 .field private static volatile b:Z
 
@@ -22,13 +22,13 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lub/a;
+    new-instance v0, Lsb/a;
 
     const-string v1, "com.linecorp.linesdk.sharedpreference.encryptionsalt"
 
-    invoke-direct {v0, v1}, Lub/a;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lsb/a;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/linecorp/linesdk/a/c;->a:Lub/a;
+    sput-object v0, Lcom/linecorp/linesdk/a/c;->a:Lsb/a;
 
     const/4 v0, 0x0
 
@@ -38,11 +38,11 @@
     return-void
 .end method
 
-.method public static a()Lub/a;
+.method public static a()Lsb/a;
     .locals 1
 
     .line 6
-    sget-object v0, Lcom/linecorp/linesdk/a/c;->a:Lub/a;
+    sget-object v0, Lcom/linecorp/linesdk/a/c;->a:Lsb/a;
 
     return-object v0
 .end method
@@ -81,11 +81,11 @@
     return-void
 .end method
 
-.method public static synthetic b()Lub/a;
+.method public static synthetic b()Lsb/a;
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/linecorp/linesdk/a/c;->a:Lub/a;
+    sget-object v0, Lcom/linecorp/linesdk/a/c;->a:Lsb/a;
 
     return-object v0
 .end method

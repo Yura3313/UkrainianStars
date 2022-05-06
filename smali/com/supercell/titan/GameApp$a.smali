@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic g:I
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Lcom/supercell/titan/GameApp$a;->a:I
+    iput p1, p0, Lcom/supercell/titan/GameApp$a;->g:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +53,7 @@
     move-result-object v1
 
     .line 3
-    iget v2, p0, Lcom/supercell/titan/GameApp$a;->a:I
+    iget v2, p0, Lcom/supercell/titan/GameApp$a;->g:I
 
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->preferredDisplayModeId:I
 

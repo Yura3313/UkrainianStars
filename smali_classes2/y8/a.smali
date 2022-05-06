@@ -8,7 +8,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lo8/d;",
+            "Lp8/d;",
             ">;"
         }
     .end annotation
@@ -18,7 +18,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lo8/d;",
+            "Lp8/d;",
             ">;"
         }
     .end annotation
@@ -28,7 +28,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lo8/d;",
+            "Lp8/d;",
             ">;"
         }
     .end annotation
@@ -38,7 +38,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
-            "Lo8/d;",
+            "Lp8/d;",
             "Ly8/c;",
             ">;"
         }
@@ -53,16 +53,16 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lo8/d;",
+            "Lp8/d;",
             ">;",
             "Ljava/util/List<",
-            "Lo8/d;",
+            "Lp8/d;",
             ">;",
             "Ljava/util/List<",
-            "Lo8/d;",
+            "Lp8/d;",
             ">;",
             "Ljava/util/Map<",
-            "Lo8/d;",
+            "Lp8/d;",
             "Ly8/c;",
             ">;)V"
         }

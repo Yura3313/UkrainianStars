@@ -98,11 +98,11 @@
 
     const/16 v2, 0x24
 
-    invoke-static {p0, v2}, Ly/b;->a(Ljava/lang/String;I)I
+    invoke-static {p0, v2}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v2
 
-    invoke-static {v0, v2}, Ly/b;->a(Ljava/lang/String;I)I
+    invoke-static {v0, v2}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v2
 

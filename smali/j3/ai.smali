@@ -4,14 +4,5 @@
 
 
 # virtual methods
-.method public abstract i0(ZILjava/lang/String;)V
-.end method
-
-.method public abstract l0(Lcom/google/android/gms/ads/internal/overlay/zzd;)V
-.end method
-
-.method public abstract w(ZI)V
-.end method
-
-.method public abstract y0(ZILjava/lang/String;Ljava/lang/String;)V
+.method public abstract q()Z
 .end method

@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/titan/GameApp;
+.field public final synthetic g:Lcom/supercell/titan/GameApp;
 
-.field public final synthetic b:Z
+.field public final synthetic h:Z
 
-.field public final synthetic h:Ljava/lang/String;
+.field public final synthetic i:Ljava/lang/String;
 
 
 # direct methods
@@ -30,11 +30,11 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/titan/VirtualKeyboardHandler$a;->a:Lcom/supercell/titan/GameApp;
+    iput-object p1, p0, Lcom/supercell/titan/VirtualKeyboardHandler$a;->g:Lcom/supercell/titan/GameApp;
 
-    iput-boolean p2, p0, Lcom/supercell/titan/VirtualKeyboardHandler$a;->b:Z
+    iput-boolean p2, p0, Lcom/supercell/titan/VirtualKeyboardHandler$a;->h:Z
 
-    iput-object p3, p0, Lcom/supercell/titan/VirtualKeyboardHandler$a;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/supercell/titan/VirtualKeyboardHandler$a;->i:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,7 +70,7 @@
     :cond_0
     new-instance v0, Lcom/supercell/titan/KeyboardDialog;
 
-    iget-object v1, p0, Lcom/supercell/titan/VirtualKeyboardHandler$a;->a:Lcom/supercell/titan/GameApp;
+    iget-object v1, p0, Lcom/supercell/titan/VirtualKeyboardHandler$a;->g:Lcom/supercell/titan/GameApp;
 
     invoke-direct {v0, v1}, Lcom/supercell/titan/KeyboardDialog;-><init>(Lcom/supercell/titan/GameApp;)V
 
@@ -82,9 +82,9 @@
     sget-object v0, Lcom/supercell/titan/VirtualKeyboardHandler;->d:Lcom/supercell/titan/KeyboardDialog;
 
     .line 8
-    iget-boolean v1, p0, Lcom/supercell/titan/VirtualKeyboardHandler$a;->b:Z
+    iget-boolean v1, p0, Lcom/supercell/titan/VirtualKeyboardHandler$a;->h:Z
 
-    iget-object v2, p0, Lcom/supercell/titan/VirtualKeyboardHandler$a;->h:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/titan/VirtualKeyboardHandler$a;->i:Ljava/lang/String;
 
     .line 9
     invoke-virtual {v0}, Lcom/supercell/titan/KeyboardDialog;->updateUIFlags()V
@@ -104,32 +104,32 @@
     if-eqz v1, :cond_2
 
     .line 10
-    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/p;
 
     sget v9, Lcom/supercell/titan/R$drawable;->edit_text_style:I
 
     invoke-virtual {v1, v9}, Landroid/widget/EditText;->setBackgroundResource(I)V
 
     .line 11
-    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/p;
 
-    iget-object v10, v0, Lcom/supercell/titan/KeyboardDialog;->a:Lcom/supercell/titan/GameApp;
+    iget-object v10, v0, Lcom/supercell/titan/KeyboardDialog;->g:Lcom/supercell/titan/GameApp;
 
     sget v11, Lcom/supercell/titan/R$style;->largeEdittextText:I
 
     invoke-virtual {v1, v10, v11}, Landroid/widget/EditText;->setTextAppearance(Landroid/content/Context;I)V
 
     .line 12
-    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/p;
 
-    iget v10, v0, Lcom/supercell/titan/KeyboardDialog;->k:I
+    iget v10, v0, Lcom/supercell/titan/KeyboardDialog;->l:I
 
     invoke-virtual {v1, v10}, Landroid/widget/EditText;->setWidth(I)V
 
     .line 13
-    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/p;
 
-    iget-object v10, v0, Lcom/supercell/titan/KeyboardDialog;->j:Landroid/graphics/Typeface;
+    iget-object v10, v0, Lcom/supercell/titan/KeyboardDialog;->k:Landroid/graphics/Typeface;
 
     invoke-virtual {v1, v10}, Landroid/widget/EditText;->setTypeface(Landroid/graphics/Typeface;)V
 
@@ -148,7 +148,7 @@
     move-result v10
 
     .line 16
-    iget-object v11, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v11, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/p;
 
     invoke-virtual {v11, v1, v10, v1, v10}, Landroid/widget/EditText;->setPadding(IIII)V
 
@@ -166,11 +166,11 @@
     if-lez v1, :cond_1
 
     .line 18
-    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->a:Lcom/supercell/titan/GameApp;
+    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->g:Lcom/supercell/titan/GameApp;
 
-    new-instance v10, Lcom/supercell/titan/h;
+    new-instance v10, Lcom/supercell/titan/i;
 
-    invoke-direct {v10, v0, v2}, Lcom/supercell/titan/h;-><init>(Lcom/supercell/titan/KeyboardDialog;Ljava/lang/String;)V
+    invoke-direct {v10, v0, v2}, Lcom/supercell/titan/i;-><init>(Lcom/supercell/titan/KeyboardDialog;Ljava/lang/String;)V
 
     invoke-virtual {v1, v10}, Lcom/supercell/titan/GameApp;->runOnView(Ljava/lang/Runnable;)V
 
@@ -183,19 +183,19 @@
     move-result v1
 
     .line 20
-    iget-object v2, v0, Lcom/supercell/titan/KeyboardDialog;->b:Landroid/widget/Button;
+    iget-object v2, v0, Lcom/supercell/titan/KeyboardDialog;->h:Landroid/widget/Button;
 
     invoke-virtual {v2, v9}, Landroid/widget/Button;->setBackgroundResource(I)V
 
     .line 21
-    iget-object v2, v0, Lcom/supercell/titan/KeyboardDialog;->b:Landroid/widget/Button;
+    iget-object v2, v0, Lcom/supercell/titan/KeyboardDialog;->h:Landroid/widget/Button;
 
     const-string v9, "\u2714"
 
     invoke-virtual {v2, v9}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
     .line 22
-    iget-object v2, v0, Lcom/supercell/titan/KeyboardDialog;->b:Landroid/widget/Button;
+    iget-object v2, v0, Lcom/supercell/titan/KeyboardDialog;->h:Landroid/widget/Button;
 
     invoke-virtual {v2, v1, v7, v1, v7}, Landroid/widget/Button;->setPadding(IIII)V
 
@@ -231,7 +231,7 @@
     invoke-virtual {v2, v5}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
 
     .line 30
-    iget-object v5, v0, Lcom/supercell/titan/KeyboardDialog;->b:Landroid/widget/Button;
+    iget-object v5, v0, Lcom/supercell/titan/KeyboardDialog;->h:Landroid/widget/Button;
 
     invoke-virtual {v5}, Landroid/widget/Button;->getId()I
 
@@ -240,14 +240,14 @@
     invoke-virtual {v1, v4, v5}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
     .line 31
-    iget-object v5, v0, Lcom/supercell/titan/KeyboardDialog;->b:Landroid/widget/Button;
+    iget-object v5, v0, Lcom/supercell/titan/KeyboardDialog;->h:Landroid/widget/Button;
 
     invoke-virtual {v5, v2}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 32
-    iget-object v2, v0, Lcom/supercell/titan/KeyboardDialog;->b:Landroid/widget/Button;
+    iget-object v2, v0, Lcom/supercell/titan/KeyboardDialog;->h:Landroid/widget/Button;
 
-    iget-object v5, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v5, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/p;
 
     invoke-virtual {v5}, Landroid/widget/EditText;->getHeight()I
 
@@ -256,7 +256,7 @@
     invoke-virtual {v2, v5}, Landroid/widget/Button;->setHeight(I)V
 
     .line 33
-    iget-object v2, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v2, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/p;
 
     invoke-virtual {v2, v1}, Landroid/widget/EditText;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -264,40 +264,40 @@
 
     .line 34
     :cond_2
-    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->b:Landroid/widget/Button;
+    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->h:Landroid/widget/Button;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 35
-    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->b:Landroid/widget/Button;
+    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->h:Landroid/widget/Button;
 
     const-string v9, ""
 
     invoke-virtual {v1, v9}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
     .line 36
-    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->b:Landroid/widget/Button;
+    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->h:Landroid/widget/Button;
 
     invoke-virtual {v1, v8}, Landroid/widget/Button;->setHeight(I)V
 
     .line 37
-    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/p;
 
     invoke-virtual {v1, v2}, Landroid/widget/EditText;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 38
-    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/p;
 
-    iget-object v2, v0, Lcom/supercell/titan/KeyboardDialog;->a:Lcom/supercell/titan/GameApp;
+    iget-object v2, v0, Lcom/supercell/titan/KeyboardDialog;->g:Lcom/supercell/titan/GameApp;
 
     sget v9, Lcom/supercell/titan/R$style;->invisibleText:I
 
     invoke-virtual {v1, v2, v9}, Landroid/widget/EditText;->setTextAppearance(Landroid/content/Context;I)V
 
     .line 39
-    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/p;
 
     invoke-virtual {v1, v8}, Landroid/widget/EditText;->setWidth(I)V
 
@@ -310,7 +310,7 @@
     invoke-virtual {v1, v5}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
 
     .line 42
-    iget-object v2, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v2, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/p;
 
     invoke-virtual {v2, v1}, Landroid/widget/EditText;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -335,12 +335,12 @@
     invoke-virtual {v1, v2}, Landroid/view/Window;->setSoftInputMode(I)V
 
     .line 46
-    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/p;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->requestFocus()Z
 
     .line 47
-    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->a:Lcom/supercell/titan/GameApp;
+    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->g:Lcom/supercell/titan/GameApp;
 
     const-string v2, "input_method"
 
@@ -351,7 +351,7 @@
     check-cast v1, Landroid/view/inputmethod/InputMethodManager;
 
     .line 48
-    iget-object v2, v0, Lcom/supercell/titan/KeyboardDialog;->h:Lcom/supercell/titan/j;
+    iget-object v2, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/k;
 
     invoke-virtual {v1, v2, v7}, Landroid/view/inputmethod/InputMethodManager;->showSoftInput(Landroid/view/View;I)Z
 
@@ -360,7 +360,7 @@
     if-nez v2, :cond_3
 
     .line 49
-    iget-object v0, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v0, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/p;
 
     invoke-virtual {v1, v0, v3}, Landroid/view/inputmethod/InputMethodManager;->showSoftInput(Landroid/view/View;I)Z
 

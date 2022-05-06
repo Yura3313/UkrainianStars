@@ -14,33 +14,31 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[La7/h;
+.field public static final enum h:La7/h;
 
-.field public static final enum ALPHANUMERIC:La7/h;
+.field public static final enum i:La7/h;
 
-.field public static final enum BYTE:La7/h;
+.field public static final enum j:La7/h;
 
-.field public static final enum ECI:La7/h;
+.field public static final enum k:La7/h;
 
-.field public static final enum FNC1_FIRST_POSITION:La7/h;
+.field public static final enum l:La7/h;
 
-.field public static final enum FNC1_SECOND_POSITION:La7/h;
+.field public static final enum m:La7/h;
 
-.field public static final enum HANZI:La7/h;
+.field public static final enum n:La7/h;
 
-.field public static final enum KANJI:La7/h;
+.field public static final enum o:La7/h;
 
-.field public static final enum NUMERIC:La7/h;
+.field public static final enum p:La7/h;
 
-.field public static final enum STRUCTURED_APPEND:La7/h;
+.field public static final enum q:La7/h;
 
-.field public static final enum TERMINATOR:La7/h;
+.field public static final synthetic r:[La7/h;
 
 
 # instance fields
-.field private final bits:I
-
-.field private final characterCountBitsForVersions:[I
+.field public final g:[I
 
 
 # direct methods
@@ -62,7 +60,7 @@
 
     invoke-direct {v0, v3, v4, v2, v4}, La7/h;-><init>(Ljava/lang/String;I[II)V
 
-    sput-object v0, La7/h;->TERMINATOR:La7/h;
+    sput-object v0, La7/h;->h:La7/h;
 
     .line 2
     new-instance v2, La7/h;
@@ -77,7 +75,7 @@
 
     invoke-direct {v2, v5, v6, v3, v6}, La7/h;-><init>(Ljava/lang/String;I[II)V
 
-    sput-object v2, La7/h;->NUMERIC:La7/h;
+    sput-object v2, La7/h;->i:La7/h;
 
     .line 3
     new-instance v3, La7/h;
@@ -92,7 +90,7 @@
 
     invoke-direct {v3, v7, v8, v5, v8}, La7/h;-><init>(Ljava/lang/String;I[II)V
 
-    sput-object v3, La7/h;->ALPHANUMERIC:La7/h;
+    sput-object v3, La7/h;->j:La7/h;
 
     .line 4
     new-instance v5, La7/h;
@@ -105,7 +103,7 @@
 
     invoke-direct {v5, v9, v1, v7, v1}, La7/h;-><init>(Ljava/lang/String;I[II)V
 
-    sput-object v5, La7/h;->STRUCTURED_APPEND:La7/h;
+    sput-object v5, La7/h;->k:La7/h;
 
     .line 5
     new-instance v7, La7/h;
@@ -120,7 +118,7 @@
 
     invoke-direct {v7, v10, v11, v9, v11}, La7/h;-><init>(Ljava/lang/String;I[II)V
 
-    sput-object v7, La7/h;->BYTE:La7/h;
+    sput-object v7, La7/h;->l:La7/h;
 
     .line 6
     new-instance v9, La7/h;
@@ -137,7 +135,7 @@
 
     invoke-direct {v9, v12, v13, v10, v14}, La7/h;-><init>(Ljava/lang/String;I[II)V
 
-    sput-object v9, La7/h;->ECI:La7/h;
+    sput-object v9, La7/h;->m:La7/h;
 
     .line 7
     new-instance v10, La7/h;
@@ -154,7 +152,7 @@
 
     invoke-direct {v10, v15, v11, v12, v8}, La7/h;-><init>(Ljava/lang/String;I[II)V
 
-    sput-object v10, La7/h;->KANJI:La7/h;
+    sput-object v10, La7/h;->n:La7/h;
 
     .line 8
     new-instance v12, La7/h;
@@ -167,7 +165,7 @@
 
     invoke-direct {v12, v11, v14, v15, v13}, La7/h;-><init>(Ljava/lang/String;I[II)V
 
-    sput-object v12, La7/h;->FNC1_FIRST_POSITION:La7/h;
+    sput-object v12, La7/h;->o:La7/h;
 
     .line 9
     new-instance v11, La7/h;
@@ -182,7 +180,7 @@
 
     invoke-direct {v11, v14, v8, v15, v13}, La7/h;-><init>(Ljava/lang/String;I[II)V
 
-    sput-object v11, La7/h;->FNC1_SECOND_POSITION:La7/h;
+    sput-object v11, La7/h;->p:La7/h;
 
     .line 10
     new-instance v14, La7/h;
@@ -197,7 +195,7 @@
 
     invoke-direct {v14, v8, v13, v15, v1}, La7/h;-><init>(Ljava/lang/String;I[II)V
 
-    sput-object v14, La7/h;->HANZI:La7/h;
+    sput-object v14, La7/h;->q:La7/h;
 
     const/16 v1, 0xa
 
@@ -238,7 +236,7 @@
     aput-object v14, v1, v13
 
     .line 11
-    sput-object v1, La7/h;->$VALUES:[La7/h;
+    sput-object v1, La7/h;->r:[La7/h;
 
     return-void
 
@@ -315,7 +313,7 @@
     .end array-data
 .end method
 
-.method private constructor <init>(Ljava/lang/String;I[II)V
+.method public constructor <init>(Ljava/lang/String;I[II)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -327,121 +325,9 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput-object p3, p0, La7/h;->characterCountBitsForVersions:[I
-
-    .line 3
-    iput p4, p0, La7/h;->bits:I
+    iput-object p3, p0, La7/h;->g:[I
 
     return-void
-.end method
-
-.method public static forBits(I)La7/h;
-    .locals 1
-
-    if-eqz p0, :cond_9
-
-    const/4 v0, 0x1
-
-    if-eq p0, v0, :cond_8
-
-    const/4 v0, 0x2
-
-    if-eq p0, v0, :cond_7
-
-    const/4 v0, 0x3
-
-    if-eq p0, v0, :cond_6
-
-    const/4 v0, 0x4
-
-    if-eq p0, v0, :cond_5
-
-    const/4 v0, 0x5
-
-    if-eq p0, v0, :cond_4
-
-    const/4 v0, 0x7
-
-    if-eq p0, v0, :cond_3
-
-    const/16 v0, 0x8
-
-    if-eq p0, v0, :cond_2
-
-    const/16 v0, 0x9
-
-    if-eq p0, v0, :cond_1
-
-    const/16 v0, 0xd
-
-    if-ne p0, v0, :cond_0
-
-    .line 1
-    sget-object p0, La7/h;->HANZI:La7/h;
-
-    return-object p0
-
-    .line 2
-    :cond_0
-    new-instance p0, Ljava/lang/IllegalArgumentException;
-
-    invoke-direct {p0}, Ljava/lang/IllegalArgumentException;-><init>()V
-
-    throw p0
-
-    .line 3
-    :cond_1
-    sget-object p0, La7/h;->FNC1_SECOND_POSITION:La7/h;
-
-    return-object p0
-
-    .line 4
-    :cond_2
-    sget-object p0, La7/h;->KANJI:La7/h;
-
-    return-object p0
-
-    .line 5
-    :cond_3
-    sget-object p0, La7/h;->ECI:La7/h;
-
-    return-object p0
-
-    .line 6
-    :cond_4
-    sget-object p0, La7/h;->FNC1_FIRST_POSITION:La7/h;
-
-    return-object p0
-
-    .line 7
-    :cond_5
-    sget-object p0, La7/h;->BYTE:La7/h;
-
-    return-object p0
-
-    .line 8
-    :cond_6
-    sget-object p0, La7/h;->STRUCTURED_APPEND:La7/h;
-
-    return-object p0
-
-    .line 9
-    :cond_7
-    sget-object p0, La7/h;->ALPHANUMERIC:La7/h;
-
-    return-object p0
-
-    .line 10
-    :cond_8
-    sget-object p0, La7/h;->NUMERIC:La7/h;
-
-    return-object p0
-
-    .line 11
-    :cond_9
-    sget-object p0, La7/h;->TERMINATOR:La7/h;
-
-    return-object p0
 .end method
 
 .method public static valueOf(Ljava/lang/String;)La7/h;
@@ -463,7 +349,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, La7/h;->$VALUES:[La7/h;
+    sget-object v0, La7/h;->r:[La7/h;
 
     invoke-virtual {v0}, [La7/h;->clone()Ljava/lang/Object;
 
@@ -476,16 +362,7 @@
 
 
 # virtual methods
-.method public getBits()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, La7/h;->bits:I
-
-    return v0
-.end method
-
-.method public getCharacterCountBits(La7/j;)I
+.method public a(La7/j;)I
     .locals 1
 
     .line 1
@@ -513,7 +390,7 @@
 
     .line 2
     :goto_0
-    iget-object v0, p0, La7/h;->characterCountBitsForVersions:[I
+    iget-object v0, p0, La7/h;->g:[I
 
     aget p1, v0, p1
 

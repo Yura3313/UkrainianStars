@@ -1,196 +1,82 @@
-.class public abstract Lu3/y5;
+.class public final Lu3/y5;
 .super Ljava/lang/Object;
 
 
-# instance fields
-.field public volatile a:I
+# static fields
+.field public static final a:[I
+
+.field public static final b:[J
+
+.field public static final c:[Ljava/lang/String;
+
+.field public static final d:[B
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, -0x1
-
-    .line 2
-    iput v0, p0, Lu3/y5;->a:I
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public abstract a(Lu3/s5;)Lu3/y5;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method public b(Lu3/t5;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public c()I
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 2
 
     const/4 v0, 0x0
 
-    return v0
-.end method
-
-.method public synthetic clone()Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/CloneNotSupportedException;
-        }
-    .end annotation
+    new-array v1, v0, [I
 
     .line 1
-    invoke-virtual {p0}, Lu3/y5;->e()Lu3/y5;
+    sput-object v1, Lu3/y5;->a:[I
 
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final d()I
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lu3/y5;->c()I
-
-    move-result v0
+    new-array v1, v0, [J
 
     .line 2
-    iput v0, p0, Lu3/y5;->a:I
+    sput-object v1, Lu3/y5;->b:[J
 
-    return v0
-.end method
-
-.method public e()Lu3/y5;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/CloneNotSupportedException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-super {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lu3/y5;
-
-    return-object v0
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 4
-
-    const-string v0, "Error printing proto: "
-
-    .line 1
-    new-instance v1, Ljava/lang/StringBuffer;
-
-    invoke-direct {v1}, Ljava/lang/StringBuffer;-><init>()V
-
-    const/4 v2, 0x0
-
-    .line 2
-    :try_start_0
-    new-instance v3, Ljava/lang/StringBuffer;
-
-    invoke-direct {v3}, Ljava/lang/StringBuffer;-><init>()V
-
-    invoke-static {v2, p0, v3, v1}, Lu3/z5;->a(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/lang/StringBuffer;)V
-    :try_end_0
-    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
+    new-array v1, v0, [Ljava/lang/String;
 
     .line 3
-    invoke-virtual {v1}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+    sput-object v1, Lu3/y5;->c:[Ljava/lang/String;
 
-    move-result-object v0
-
-    goto :goto_1
-
-    :catch_0
-    move-exception v1
+    new-array v0, v0, [B
 
     .line 4
-    invoke-virtual {v1}, Ljava/lang/reflect/InvocationTargetException;->getMessage()Ljava/lang/String;
+    sput-object v0, Lu3/y5;->d:[B
 
-    move-result-object v1
+    return-void
+.end method
 
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+.method public static final a(Lu3/p5;I)I
+    .locals 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
-    move-result-object v1
+    .line 1
+    iget v0, p0, Lu3/p5;->e:I
 
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
+    add-int/lit8 v0, v0, 0x0
+
+    .line 2
+    invoke-virtual {p0, p1}, Lu3/p5;->d(I)Z
+
+    const/4 v1, 0x1
+
+    .line 3
+    :goto_0
+    invoke-virtual {p0}, Lu3/p5;->i()I
 
     move-result v2
 
-    if-eqz v2, :cond_0
+    if-ne v2, p1, :cond_0
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    .line 4
+    invoke-virtual {p0, p1}, Lu3/p5;->d(I)Z
 
-    move-result-object v0
-
-    goto :goto_1
-
-    :cond_0
-    new-instance v1, Ljava/lang/String;
-
-    invoke-direct {v1, v0}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    :catch_1
-    move-exception v1
-
     .line 5
-    invoke-virtual {v1}, Ljava/lang/IllegalAccessException;->getMessage()Ljava/lang/String;
+    :cond_0
+    invoke-virtual {p0, v0, p1}, Lu3/p5;->h(II)V
 
-    move-result-object v1
-
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_1
-
-    :cond_1
-    new-instance v1, Ljava/lang/String;
-
-    invoke-direct {v1, v0}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
-
-    :goto_0
-    move-object v0, v1
-
-    :goto_1
-    return-object v0
+    return v1
 .end method

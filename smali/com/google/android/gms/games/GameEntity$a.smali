@@ -35,12 +35,12 @@
     sget-object v1, Lcom/google/android/gms/games/GameEntity;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 2
-    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->y2()Ljava/lang/Integer;
+    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->A2()Ljava/lang/Integer;
 
     const/4 v1, 0x0
 
     .line 3
-    invoke-static {v1}, Lcom/google/android/gms/games/internal/GamesDowngradeableSafeParcel;->z2(Ljava/lang/Integer;)Z
+    invoke-static {v1}, Lcom/google/android/gms/games/internal/GamesDowngradeableSafeParcel;->B2(Ljava/lang/Integer;)Z
 
     move-result v2
 
@@ -50,7 +50,7 @@
     const-class v2, Lcom/google/android/gms/games/GameEntity;
 
     .line 5
-    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->x2()Z
+    invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->z2()Z
 
     .line 6
     :cond_0

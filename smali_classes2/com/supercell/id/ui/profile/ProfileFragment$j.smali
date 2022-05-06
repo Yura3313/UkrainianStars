@@ -20,27 +20,27 @@
     value = {
         "Lle/j;",
         "Lke/l<",
-        "Lwd/k<",
+        "Lvd/k<",
         "+",
-        "Ltc/f;",
+        "Lqc/j;",
         "+",
         "Lcom/supercell/id/util/NormalizedError;",
         ">;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/profile/ProfileFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profile/ProfileFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$j;->a:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$j;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     const/4 p1, 0x1
 
@@ -55,20 +55,20 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lwd/k;
+    check-cast p1, Lvd/k;
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$j;->a:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$j;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     invoke-static {p1}, Lcom/supercell/id/ui/profile/ProfileFragment;->p1(Lcom/supercell/id/ui/profile/ProfileFragment;)V
 
     .line 3
-    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$j;->a:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$j;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     invoke-static {p1}, Lcom/supercell/id/ui/profile/ProfileFragment;->q1(Lcom/supercell/id/ui/profile/ProfileFragment;)V
 
     .line 4
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method

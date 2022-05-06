@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lse/j1;
+.field public static final a:Lse/i1;
 
 
 # direct methods
@@ -14,7 +14,7 @@
     const-string v0, "kotlinx.coroutines.fast.service.loader"
 
     .line 1
-    invoke-static {v0}, Lqe/g;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lp5/c0;->o(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -48,13 +48,13 @@
 
     const-string v3, "ServiceLoader.load(\n    \u2026             ).iterator()"
 
-    invoke-static {v0, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0}, Lqe/i;->f(Ljava/util/Iterator;)Lqe/d;
+    invoke-static {v0}, Lqe/h;->b(Ljava/util/Iterator;)Lqe/d;
 
     move-result-object v0
 
-    invoke-static {v0}, Lqe/k;->l(Lqe/d;)Ljava/util/List;
+    invoke-static {v0}, Lqe/j;->h(Lqe/d;)Ljava/util/List;
 
     move-result-object v0
 
@@ -140,7 +140,7 @@
 
     .line 17
     :try_start_1
-    invoke-interface {v4, v0}, Lkotlinx/coroutines/internal/MainDispatcherFactory;->createDispatcher(Ljava/util/List;)Lse/j1;
+    invoke-interface {v4, v0}, Lkotlinx/coroutines/internal/MainDispatcherFactory;->createDispatcher(Ljava/util/List;)Lse/i1;
 
     move-result-object v0
     :try_end_1
@@ -190,7 +190,7 @@
 
     .line 21
     :goto_2
-    sput-object v0, Lte/r;->a:Lse/j1;
+    sput-object v0, Lte/r;->a:Lse/i1;
 
     return-void
 .end method

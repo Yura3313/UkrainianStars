@@ -21,13 +21,13 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final b:I
+.field public final h:I
 
-.field public final h:Ljava/lang/String;
+.field public final i:Ljava/lang/String;
 
-.field public final i:J
+.field public final j:J
 
 
 # direct methods
@@ -35,9 +35,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lj3/m41;
+    new-instance v0, Lj3/j51;
 
-    invoke-direct {v0}, Lj3/m41;-><init>()V
+    invoke-direct {v0}, Lj3/j51;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzvl;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -51,16 +51,16 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzvl;->a:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzvl;->g:I
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/internal/ads/zzvl;->b:I
+    iput p2, p0, Lcom/google/android/gms/internal/ads/zzvl;->h:I
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/ads/zzvl;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/internal/ads/zzvl;->i:Ljava/lang/String;
 
     .line 5
-    iput-wide p4, p0, Lcom/google/android/gms/internal/ads/zzvl;->i:J
+    iput-wide p4, p0, Lcom/google/android/gms/internal/ads/zzvl;->j:J
 
     return-void
 .end method
@@ -80,7 +80,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzvl;->a:I
+    iget v1, p0, Lcom/google/android/gms/internal/ads/zzvl;->g:I
 
     const/4 v2, 0x4
 
@@ -93,7 +93,7 @@
     const/4 v0, 0x2
 
     .line 5
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzvl;->b:I
+    iget v1, p0, Lcom/google/android/gms/internal/ads/zzvl;->h:I
 
     .line 6
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -104,14 +104,14 @@
     const/4 v0, 0x3
 
     .line 8
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzvl;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzvl;->i:Ljava/lang/String;
 
     const/4 v3, 0x0
 
     invoke-static {p1, v0, v1, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 9
-    iget-wide v0, p0, Lcom/google/android/gms/internal/ads/zzvl;->i:J
+    iget-wide v0, p0, Lcom/google/android/gms/internal/ads/zzvl;->j:J
 
     const/16 v3, 0x8
 

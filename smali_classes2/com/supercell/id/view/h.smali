@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic a:Landroid/graphics/drawable/Drawable;
+.field public final synthetic g:Landroid/graphics/drawable/Drawable;
 
-.field public final synthetic b:Lcom/supercell/id/view/ProgressBarIcon;
+.field public final synthetic h:Lcom/supercell/id/view/ProgressBarIcon;
 
 
 # direct methods
 .method public constructor <init>(Landroid/graphics/drawable/Drawable;Lcom/supercell/id/view/ProgressBarIcon;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/h;->a:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Lcom/supercell/id/view/h;->g:Landroid/graphics/drawable/Drawable;
 
-    iput-object p2, p0, Lcom/supercell/id/view/h;->b:Lcom/supercell/id/view/ProgressBarIcon;
+    iput-object p2, p0, Lcom/supercell/id/view/h;->h:Lcom/supercell/id/view/ProgressBarIcon;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,15 +31,15 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/h;->b:Lcom/supercell/id/view/ProgressBarIcon;
+    iget-object v0, p0, Lcom/supercell/id/view/h;->h:Lcom/supercell/id/view/ProgressBarIcon;
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/view/ProgressBarIcon;->a:Landroid/widget/ImageView;
+    iget-object v0, v0, Lcom/supercell/id/view/ProgressBarIcon;->g:Landroid/widget/ImageView;
 
     const-string v1, "it"
 
     .line 3
-    invoke-static {p1, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
@@ -59,7 +59,7 @@
     goto :goto_0
 
     :cond_1
-    iget-object p1, p0, Lcom/supercell/id/view/h;->a:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/supercell/id/view/h;->g:Landroid/graphics/drawable/Drawable;
 
     :goto_0
     invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V

@@ -3,11 +3,11 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/x2;
+.implements Lj3/y2;
 
 
 # static fields
-.field public static final a:Lj3/x2;
+.field public static final g:Lj3/y2;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     invoke-direct {v0}, Lj3/j2;-><init>()V
 
-    sput-object v0, Lj3/j2;->a:Lj3/x2;
+    sput-object v0, Lj3/j2;->g:Lj3/y2;
 
     return-void
 .end method
@@ -34,45 +34,63 @@
 
 # virtual methods
 .method public final b(Ljava/lang/Object;Ljava/util/Map;)V
-    .locals 10
+    .locals 2
 
-    check-cast p1, Lj3/xh;
+    check-cast p1, Lj3/bi;
 
-    sget-object v0, Lj3/g2;->a:Lj3/x2;
-
-    const-string v0, "urls"
+    sget-object v0, Lj3/h2;->a:Lj3/y2;
 
     .line 1
+    sget-object v0, Lj3/n;->d4:Lj3/f;
+
+    .line 2
+    sget-object v1, Lj3/t51;->j:Lj3/t51;
+
+    iget-object v1, v1, Lj3/t51;->f:Lj3/l;
+
+    .line 3
+    invoke-virtual {v1, v0}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 4
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    const-string v0, "package_name"
+
+    .line 5
     invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
 
     check-cast p2, Ljava/lang/String;
 
-    .line 2
+    .line 6
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
-    goto :goto_3
+    goto :goto_1
 
-    :cond_0
-    const-string v0, ","
-
-    .line 3
-    invoke-virtual {p2, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object p2
-
-    .line 4
+    .line 7
+    :cond_1
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 5
-    invoke-interface {p1}, Lj3/xh;->getContext()Landroid/content/Context;
+    .line 8
+    invoke-interface {p1}, Lj3/bi;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -80,97 +98,36 @@
 
     move-result-object v1
 
-    .line 6
-    array-length v2, p2
-
-    const/4 v3, 0x0
-
-    const/4 v4, 0x0
-
-    :goto_0
-    if-ge v4, v2, :cond_3
-
-    aget-object v5, p2, v4
-
-    const/4 v6, 0x2
-
-    const-string v7, ";"
-
-    .line 7
-    invoke-virtual {v5, v7, v6}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
-
-    move-result-object v6
-
-    .line 8
-    aget-object v7, v6, v3
-
-    invoke-virtual {v7}, Ljava/lang/String;->trim()Ljava/lang/String;
-
-    move-result-object v7
-
     .line 9
-    array-length v8, v6
+    invoke-virtual {v1, p2}, Landroid/content/pm/PackageManager;->getLaunchIntentForPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    const/4 v9, 0x1
+    move-result-object v1
 
-    if-le v8, v9, :cond_1
+    if-eqz v1, :cond_2
 
-    aget-object v6, v6, v9
-
-    invoke-virtual {v6}, Ljava/lang/String;->trim()Ljava/lang/String;
-
-    move-result-object v6
-
-    goto :goto_1
-
-    :cond_1
-    const-string v6, "android.intent.action.VIEW"
-
-    .line 10
-    :goto_1
-    invoke-static {v7}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v7
-
-    .line 11
-    new-instance v8, Landroid/content/Intent;
-
-    invoke-direct {v8, v6, v7}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
-
-    const/high16 v6, 0x10000
-
-    .line 12
-    invoke-virtual {v1, v8, v6}, Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
-
-    move-result-object v6
-
-    if-eqz v6, :cond_2
-
-    goto :goto_2
-
-    :cond_2
-    const/4 v9, 0x0
-
-    .line 13
-    :goto_2
-    invoke-static {v9}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v6
-
-    invoke-virtual {v0, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    add-int/lit8 v4, v4, 0x1
+    const/4 v1, 0x1
 
     goto :goto_0
 
-    .line 14
-    :cond_3
-    check-cast p1, Lj3/z3;
+    :cond_2
+    const/4 v1, 0x0
 
-    const-string p2, "openableURLs"
+    .line 10
+    :goto_0
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    invoke-interface {p1, p2, v0}, Lj3/z3;->n(Ljava/lang/String;Ljava/util/Map;)V
+    move-result-object v1
 
-    :goto_3
+    .line 11
+    invoke-virtual {v0, p2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 12
+    check-cast p1, Lj3/a4;
+
+    const-string p2, "openableApp"
+
+    invoke-interface {p1, p2, v0}, Lj3/a4;->o(Ljava/lang/String;Ljava/util/Map;)V
+
+    :goto_1
     return-void
 .end method

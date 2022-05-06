@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/kakaogame/KGResult;
+.field public final synthetic g:Lcom/kakaogame/KGResult;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p2, p0, Lcom/supercell/titan/Kakao$d$c;->a:Lcom/kakaogame/KGResult;
+    iput-object p2, p0, Lcom/supercell/titan/Kakao$d$c;->g:Lcom/kakaogame/KGResult;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/Kakao$d$c;->a:Lcom/kakaogame/KGResult;
+    iget-object v0, p0, Lcom/supercell/titan/Kakao$d$c;->g:Lcom/kakaogame/KGResult;
 
     invoke-virtual {v0}, Lcom/kakaogame/KGResult;->toString()Ljava/lang/String;
 

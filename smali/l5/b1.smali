@@ -63,7 +63,7 @@
     .line 3
     const-class v1, Ll5/b1;
 
-    invoke-static {v1, v0}, Lcom/google/crypto/tink/shaded/protobuf/o;->q(Ljava/lang/Class;Lcom/google/crypto/tink/shaded/protobuf/o;)V
+    invoke-static {v1, v0}, Lcom/google/crypto/tink/shaded/protobuf/o;->p(Ljava/lang/Class;Lcom/google/crypto/tink/shaded/protobuf/o;)V
 
     return-void
 .end method
@@ -77,7 +77,7 @@
     return-void
 .end method
 
-.method public static synthetic r()Ll5/b1;
+.method public static synthetic q()Ll5/b1;
     .locals 1
 
     .line 1
@@ -86,7 +86,7 @@
     return-object v0
 .end method
 
-.method public static s(Ll5/b1;I)V
+.method public static r(Ll5/b1;I)V
     .locals 0
 
     .line 1
@@ -95,7 +95,7 @@
     return-void
 .end method
 
-.method public static t(Ll5/b1;Ll5/c1;)V
+.method public static s(Ll5/b1;Ll5/c1;)V
     .locals 0
 
     .line 1
@@ -110,7 +110,7 @@
     return-void
 .end method
 
-.method public static w()Ll5/b1$b;
+.method public static v()Ll5/b1$b;
     .locals 1
 
     .line 1
@@ -125,7 +125,7 @@
     return-object v0
 .end method
 
-.method public static x(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/b1;
+.method public static w(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/b1;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -136,7 +136,7 @@
     .line 1
     sget-object v0, Ll5/b1;->DEFAULT_INSTANCE:Ll5/b1;
 
-    invoke-static {v0, p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/o;->n(Lcom/google/crypto/tink/shaded/protobuf/o;Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Lcom/google/crypto/tink/shaded/protobuf/o;
+    invoke-static {v0, p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/o;->m(Lcom/google/crypto/tink/shaded/protobuf/o;Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Lcom/google/crypto/tink/shaded/protobuf/o;
 
     move-result-object p0
 
@@ -147,17 +147,13 @@
 
 
 # virtual methods
-.method public final j(Lcom/google/crypto/tink/shaded/protobuf/o$f;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final i(Lcom/google/crypto/tink/shaded/protobuf/o$f;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    sget-object p2, Ll5/b1$a;->a:[I
-
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
     move-result p1
-
-    aget p1, p2, p1
 
     const/4 p2, 0x1
 
@@ -172,45 +168,34 @@
 
     throw p1
 
-    :pswitch_0
-    return-object p3
-
     .line 3
-    :pswitch_1
-    invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
-
-    move-result-object p1
-
-    return-object p1
-
-    .line 4
-    :pswitch_2
+    :pswitch_0
     sget-object p1, Ll5/b1;->PARSER:Lm5/r;
 
     if-nez p1, :cond_1
 
-    .line 5
+    .line 4
     const-class p2, Ll5/b1;
 
     monitor-enter p2
 
-    .line 6
+    .line 5
     :try_start_0
     sget-object p1, Ll5/b1;->PARSER:Lm5/r;
 
     if-nez p1, :cond_0
 
-    .line 7
+    .line 6
     new-instance p1, Lcom/google/crypto/tink/shaded/protobuf/o$b;
 
     sget-object p3, Ll5/b1;->DEFAULT_INSTANCE:Ll5/b1;
 
     invoke-direct {p1, p3}, Lcom/google/crypto/tink/shaded/protobuf/o$b;-><init>(Lcom/google/crypto/tink/shaded/protobuf/o;)V
 
-    .line 8
+    .line 7
     sput-object p1, Ll5/b1;->PARSER:Lm5/r;
 
-    .line 9
+    .line 8
     :cond_0
     monitor-exit p2
 
@@ -229,9 +214,25 @@
     :goto_0
     return-object p1
 
-    .line 10
-    :pswitch_3
+    .line 9
+    :pswitch_1
     sget-object p1, Ll5/b1;->DEFAULT_INSTANCE:Ll5/b1;
+
+    return-object p1
+
+    .line 10
+    :pswitch_2
+    new-instance p1, Ll5/b1$b;
+
+    invoke-direct {p1, p3}, Ll5/b1$b;-><init>(Ll5/b1$a;)V
+
+    return-object p1
+
+    .line 11
+    :pswitch_3
+    new-instance p1, Ll5/b1;
+
+    invoke-direct {p1}, Ll5/b1;-><init>()V
 
     return-object p1
 
@@ -252,34 +253,29 @@
 
     const-string p2, "\u0000\u0002\u0000\u0000\u0001\u0002\u0002\u0000\u0000\u0000\u0001\u000b\u0002\t"
 
-    .line 11
+    .line 12
     sget-object p3, Ll5/b1;->DEFAULT_INSTANCE:Ll5/b1;
 
-    .line 12
-    new-instance v0, Lm5/v;
+    .line 13
+    new-instance v0, Lm5/u;
 
-    invoke-direct {v0, p3, p2, p1}, Lm5/v;-><init>(Lcom/google/crypto/tink/shaded/protobuf/a0;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-direct {v0, p3, p2, p1}, Lm5/u;-><init>(Lcom/google/crypto/tink/shaded/protobuf/a0;Ljava/lang/String;[Ljava/lang/Object;)V
 
     return-object v0
 
-    .line 13
     :pswitch_5
-    new-instance p1, Ll5/b1$b;
-
-    invoke-direct {p1, p3}, Ll5/b1$b;-><init>(Ll5/b1$a;)V
-
-    return-object p1
+    return-object p3
 
     .line 14
     :pswitch_6
-    new-instance p1, Ll5/b1;
+    invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
-    invoke-direct {p1}, Ll5/b1;-><init>()V
+    move-result-object p1
 
     return-object p1
 
     :pswitch_data_0
-    .packed-switch 0x1
+    .packed-switch 0x0
         :pswitch_6
         :pswitch_5
         :pswitch_4
@@ -290,7 +286,7 @@
     .end packed-switch
 .end method
 
-.method public u()Ll5/c1;
+.method public t()Ll5/c1;
     .locals 1
 
     .line 1
@@ -298,7 +294,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-static {}, Ll5/c1;->s()Ll5/c1;
+    invoke-static {}, Ll5/c1;->r()Ll5/c1;
 
     move-result-object v0
 
@@ -306,7 +302,7 @@
     return-object v0
 .end method
 
-.method public v()I
+.method public u()I
     .locals 1
 
     .line 1

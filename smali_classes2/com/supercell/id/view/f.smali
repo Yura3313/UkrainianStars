@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public a:Landroid/graphics/drawable/Drawable;
+.field public g:Landroid/graphics/drawable/Drawable;
 
 
 # direct methods
@@ -15,7 +15,7 @@
     invoke-direct/range {p0 .. p5}, Landroid/graphics/drawable/InsetDrawable;-><init>(Landroid/graphics/drawable/Drawable;IIII)V
 
     .line 2
-    iput-object p1, p0, Lcom/supercell/id/view/f;->a:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Lcom/supercell/id/view/f;->g:Landroid/graphics/drawable/Drawable;
 
     return-void
 .end method
@@ -26,7 +26,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/f;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/supercell/id/view/f;->g:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method

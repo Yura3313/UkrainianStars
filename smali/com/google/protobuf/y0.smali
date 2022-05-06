@@ -24,7 +24,7 @@
     .line 1
     check-cast p1, Lcom/google/protobuf/GeneratedMessageLite;
 
-    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$f;->NEW_MUTABLE_INSTANCE:Lcom/google/protobuf/GeneratedMessageLite$f;
+    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$f;->j:Lcom/google/protobuf/GeneratedMessageLite$f;
 
     .line 2
     invoke-virtual {p1, v0}, Lcom/google/protobuf/GeneratedMessageLite;->dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$f;)Ljava/lang/Object;

@@ -1,229 +1,132 @@
-.class public final synthetic Lj3/jb;
-.super Ljava/lang/Object;
+.class public Lj3/jb;
+.super Lj3/kb;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Landroid/view/View$OnApplyWindowInsetsListener;
 
-
-# instance fields
-.field public final a:Landroid/app/Activity;
+# annotations
+.annotation build Landroid/annotation/TargetApi;
+    value = 0x15
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Lj3/kb;Landroid/app/Activity;)V
+.method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p2, p0, Lj3/jb;->a:Landroid/app/Activity;
+    .line 1
+    invoke-direct {p0}, Lj3/kb;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onApplyWindowInsets(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
-    .locals 10
-
-    iget-object v0, p0, Lj3/jb;->a:Landroid/app/Activity;
+.method public final e(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/util/Map;Ljava/io/InputStream;)Landroid/webkit/WebResourceResponse;
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "I",
+            "Ljava/lang/String;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;",
+            "Ljava/io/InputStream;",
+            ")",
+            "Landroid/webkit/WebResourceResponse;"
+        }
+    .end annotation
 
     .line 1
-    sget-object v1, Lh1/o;->B:Lh1/o;
+    new-instance v7, Landroid/webkit/WebResourceResponse;
 
-    iget-object v1, v1, Lh1/o;->g:Lj3/ea;
+    move-object v0, v7
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move v3, p3
+
+    move-object v4, p4
+
+    move-object v5, p5
+
+    move-object v6, p6
+
+    invoke-direct/range {v0 .. v6}, Landroid/webkit/WebResourceResponse;-><init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/util/Map;Ljava/io/InputStream;)V
+
+    return-object v7
+.end method
+
+.method public final f(Lj3/gh;Lcom/google/android/gms/internal/ads/q7;Z)Lj3/jh;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lj3/fi;
+
+    invoke-direct {v0, p1, p2, p3}, Lj3/fi;-><init>(Lj3/gh;Lcom/google/android/gms/internal/ads/q7;Z)V
+
+    return-object v0
+.end method
+
+.method public final m(Landroid/content/Context;)Landroid/webkit/CookieManager;
+    .locals 3
+
+    .line 1
+    invoke-static {}, Lj3/eb;->q()Z
+
+    move-result p1
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_0
+
+    return-object v0
 
     .line 2
-    invoke-virtual {v1}, Lj3/ea;->e()Lj3/qa;
-
-    move-result-object v1
-
-    check-cast v1, Lj3/ta;
-
-    invoke-virtual {v1}, Lj3/ta;->A()Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    if-nez v1, :cond_4
-
-    .line 3
-    invoke-virtual {p2}, Landroid/view/WindowInsets;->getDisplayCutout()Landroid/view/DisplayCutout;
-
-    move-result-object v1
-
-    const-string v3, ""
-
-    if-eqz v1, :cond_3
-
-    .line 4
-    sget-object v4, Lh1/o;->B:Lh1/o;
-
-    iget-object v4, v4, Lh1/o;->g:Lj3/ea;
-
-    .line 5
-    invoke-virtual {v4}, Lj3/ea;->e()Lj3/qa;
-
-    move-result-object v4
-
-    .line 6
-    invoke-virtual {v1}, Landroid/view/DisplayCutout;->getBoundingRects()Ljava/util/List;
-
-    move-result-object v1
-
-    .line 7
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_2
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Landroid/graphics/Rect;
-
-    .line 8
-    sget-object v6, Ljava/util/Locale;->US:Ljava/util/Locale;
-
-    const/4 v7, 0x4
-
-    new-array v7, v7, [Ljava/lang/Object;
-
-    iget v8, v5, Landroid/graphics/Rect;->left:I
-
-    .line 9
-    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v8
-
-    aput-object v8, v7, v2
-
-    const/4 v8, 0x1
-
-    iget v9, v5, Landroid/graphics/Rect;->top:I
-
-    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v9
-
-    aput-object v9, v7, v8
-
-    const/4 v8, 0x2
-
-    iget v9, v5, Landroid/graphics/Rect;->right:I
-
-    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v9
-
-    aput-object v9, v7, v8
-
-    const/4 v8, 0x3
-
-    iget v5, v5, Landroid/graphics/Rect;->bottom:I
-
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v5
-
-    aput-object v5, v7, v8
-
-    const-string v5, "%d,%d,%d,%d"
-
-    .line 10
-    invoke-static {v6, v5, v7}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v5
-
-    .line 11
-    invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v6
-
-    if-nez v6, :cond_0
-
-    .line 12
-    invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string v6, "|"
-
-    invoke-virtual {v3, v6}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    .line 13
     :cond_0
-    invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v5}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/String;->length()I
-
-    move-result v6
-
-    if-eqz v6, :cond_1
-
-    invoke-virtual {v3, v5}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    goto :goto_0
-
-    :cond_1
-    new-instance v5, Ljava/lang/String;
-
-    invoke-direct {v5, v3}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
-
-    move-object v3, v5
-
-    goto :goto_0
-
-    .line 14
-    :cond_2
-    check-cast v4, Lj3/ta;
-
-    invoke-virtual {v4, v3}, Lj3/ta;->f(Ljava/lang/String;)V
-
-    goto :goto_1
-
-    .line 15
-    :cond_3
-    sget-object v1, Lh1/o;->B:Lh1/o;
-
-    iget-object v1, v1, Lh1/o;->g:Lj3/ea;
-
-    .line 16
-    invoke-virtual {v1}, Lj3/ea;->e()Lj3/qa;
-
-    move-result-object v1
-
-    check-cast v1, Lj3/ta;
-
-    invoke-virtual {v1, v3}, Lj3/ta;->f(Ljava/lang/String;)V
-
-    .line 17
-    :cond_4
-    :goto_1
-    invoke-static {v2, v0}, Lj3/kb;->t(ZLandroid/app/Activity;)V
-
-    .line 18
-    invoke-virtual {p1, p2}, Landroid/view/View;->onApplyWindowInsets(Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
+    :try_start_0
+    invoke-static {}, Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;
 
     move-result-object p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object p1
+
+    :catchall_0
+    move-exception p1
+
+    .line 3
+    sget-object v1, Lh1/o;->B:Lh1/o;
+
+    iget-object v1, v1, Lh1/o;->g:Lj3/ia;
+
+    .line 4
+    iget-object v2, v1, Lj3/ia;->e:Landroid/content/Context;
+
+    iget-object v1, v1, Lj3/ia;->f:Lcom/google/android/gms/internal/ads/zzbbg;
+
+    invoke-static {v2, v1}, Lj3/w7;->c(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzbbg;)Lj3/a8;
+
+    move-result-object v1
+
+    const-string v2, "ApiLevelUtil.getCookieManager"
+
+    .line 5
+    invoke-interface {v1, p1, v2}, Lj3/a8;->a(Ljava/lang/Throwable;Ljava/lang/String;)V
+
+    return-object v0
+.end method
+
+.method public final r()I
+    .locals 1
+
+    const v0, 0x1030226
+
+    return v0
 .end method

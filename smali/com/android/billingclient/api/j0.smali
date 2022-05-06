@@ -88,7 +88,7 @@
     iget-object v7, p0, Lcom/android/billingclient/api/j0;->d:Landroid/os/Bundle;
 
     .line 6
-    invoke-interface/range {v1 .. v7}, Lcom/google/android/gms/internal/play_billing/zzd;->q5(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
+    invoke-interface/range {v1 .. v7}, Lcom/google/android/gms/internal/play_billing/zzd;->r5(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
 
     move-result-object v0
 

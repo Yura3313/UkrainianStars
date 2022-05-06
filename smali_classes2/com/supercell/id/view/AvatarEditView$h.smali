@@ -21,21 +21,21 @@
         "Lle/j;",
         "Lke/l<",
         "Landroid/graphics/Bitmap;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/ref/WeakReference;
+.field public final synthetic g:Ljava/lang/ref/WeakReference;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/ref/WeakReference;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/AvatarEditView$h;->a:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lcom/supercell/id/view/AvatarEditView$h;->g:Ljava/lang/ref/WeakReference;
 
     const/4 p1, 0x1
 
@@ -55,7 +55,7 @@
     if-eqz p1, :cond_1
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView$h;->a:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView$h;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -70,7 +70,7 @@
 
     .line 4
     :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -78,7 +78,7 @@
     const-string p1, "bitmap"
 
     .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

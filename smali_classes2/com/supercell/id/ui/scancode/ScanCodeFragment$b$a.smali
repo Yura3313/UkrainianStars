@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;->b(Lqb/b;)V
+    value = Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;->a(Lob/b;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,22 +20,22 @@
     value = {
         "Lle/j;",
         "Lke/l<",
-        "Luc/d;",
-        "Lbe/n;",
+        "Lrc/e;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
+.field public final synthetic g:Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b$a;->a:Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
+    iput-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b$a;->g:Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
 
     const/4 p1, 0x1
 
@@ -50,22 +50,22 @@
     .locals 1
 
     .line 1
-    check-cast p1, Luc/d;
+    check-cast p1, Lrc/e;
 
     if-eqz p1, :cond_0
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b$a;->a:Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
+    iget-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b$a;->g:Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
 
     iget-object p1, p1, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;->a:Lcom/supercell/id/ui/scancode/ScanCodeFragment;
 
-    sget v0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->o0:I
+    sget v0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->p0:I
 
     .line 3
     invoke-virtual {p1}, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->p1()V
 
     .line 4
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -73,7 +73,7 @@
     const-string p1, "it"
 
     .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

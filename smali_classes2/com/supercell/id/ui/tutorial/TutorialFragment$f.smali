@@ -58,12 +58,12 @@
     const/16 v1, -0x14
 
     .line 2
-    invoke-static {v1}, Lc5/i;->c(I)F
+    invoke-static {v1}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v1
 
     .line 3
-    sget-object v2, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v2, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 4
     invoke-virtual {p3}, Landroid/view/View;->getLayoutDirection()I
@@ -163,7 +163,7 @@
     if-ne v3, v6, :cond_4
 
     .line 11
-    invoke-static {v5, v7}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v7}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v6, Lcom/supercell/id/R$id;->image:I
 
@@ -207,7 +207,7 @@
 
     .line 14
     :cond_4
-    invoke-static {v5, v7}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v7}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v6, Lcom/supercell/id/R$id;->image:I
 

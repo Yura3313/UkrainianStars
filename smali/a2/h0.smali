@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/gms/signin/internal/zak;
+.field public final synthetic g:Lcom/google/android/gms/signin/internal/zak;
 
-.field public final synthetic b:Lcom/google/android/gms/common/api/internal/zace;
+.field public final synthetic h:Lcom/google/android/gms/common/api/internal/zace;
 
 
 # direct methods
@@ -17,9 +17,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, La2/h0;->b:Lcom/google/android/gms/common/api/internal/zace;
+    iput-object p1, p0, La2/h0;->h:Lcom/google/android/gms/common/api/internal/zace;
 
-    iput-object p2, p0, La2/h0;->a:Lcom/google/android/gms/signin/internal/zak;
+    iput-object p2, p0, La2/h0;->g:Lcom/google/android/gms/signin/internal/zak;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,36 +32,36 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, La2/h0;->b:Lcom/google/android/gms/common/api/internal/zace;
+    iget-object v0, p0, La2/h0;->h:Lcom/google/android/gms/common/api/internal/zace;
 
-    iget-object v1, p0, La2/h0;->a:Lcom/google/android/gms/signin/internal/zak;
+    iget-object v1, p0, La2/h0;->g:Lcom/google/android/gms/signin/internal/zak;
 
-    sget-object v2, Lcom/google/android/gms/common/api/internal/zace;->m:Lcom/google/android/gms/common/api/a$a;
+    sget-object v2, Lcom/google/android/gms/common/api/internal/zace;->n:Lcom/google/android/gms/common/api/a$a;
 
     .line 2
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    iget-object v2, v1, Lcom/google/android/gms/signin/internal/zak;->b:Lcom/google/android/gms/common/ConnectionResult;
+    iget-object v2, v1, Lcom/google/android/gms/signin/internal/zak;->h:Lcom/google/android/gms/common/ConnectionResult;
 
     .line 4
-    invoke-virtual {v2}, Lcom/google/android/gms/common/ConnectionResult;->y2()Z
+    invoke-virtual {v2}, Lcom/google/android/gms/common/ConnectionResult;->A2()Z
 
     move-result v3
 
     if-eqz v3, :cond_3
 
     .line 5
-    iget-object v1, v1, Lcom/google/android/gms/signin/internal/zak;->h:Lcom/google/android/gms/common/internal/zau;
+    iget-object v1, v1, Lcom/google/android/gms/signin/internal/zak;->i:Lcom/google/android/gms/common/internal/zau;
 
     .line 6
     invoke-static {v1}, Lc2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 7
-    iget-object v2, v1, Lcom/google/android/gms/common/internal/zau;->h:Lcom/google/android/gms/common/ConnectionResult;
+    iget-object v2, v1, Lcom/google/android/gms/common/internal/zau;->i:Lcom/google/android/gms/common/ConnectionResult;
 
     .line 8
-    invoke-virtual {v2}, Lcom/google/android/gms/common/ConnectionResult;->y2()Z
+    invoke-virtual {v2}, Lcom/google/android/gms/common/ConnectionResult;->A2()Z
 
     move-result v3
 
@@ -80,7 +80,7 @@
 
     const-string v4, "Sign-in succeeded with resolve account failure: "
 
-    invoke-static {v3, v4, v1}, Landroid/support/v4/media/d;->a(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v4, v1}, La1/e;->b(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -93,14 +93,14 @@
     invoke-static {v4, v1, v3}, Landroid/util/Log;->wtf(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     .line 10
-    iget-object v1, v0, Lcom/google/android/gms/common/api/internal/zace;->l:La2/j0;
+    iget-object v1, v0, Lcom/google/android/gms/common/api/internal/zace;->m:La2/j0;
 
     check-cast v1, La2/f$c;
 
     invoke-virtual {v1, v2}, La2/f$c;->b(Lcom/google/android/gms/common/ConnectionResult;)V
 
     .line 11
-    iget-object v0, v0, Lcom/google/android/gms/common/api/internal/zace;->k:Ly3/d;
+    iget-object v0, v0, Lcom/google/android/gms/common/api/internal/zace;->l:Lz3/d;
 
     invoke-interface {v0}, Lcom/google/android/gms/common/api/a$f;->disconnect()V
 
@@ -108,13 +108,13 @@
 
     .line 12
     :cond_0
-    iget-object v2, v0, Lcom/google/android/gms/common/api/internal/zace;->l:La2/j0;
+    iget-object v2, v0, Lcom/google/android/gms/common/api/internal/zace;->m:La2/j0;
 
-    invoke-virtual {v1}, Lcom/google/android/gms/common/internal/zau;->x2()Lcom/google/android/gms/common/internal/IAccountAccessor;
+    invoke-virtual {v1}, Lcom/google/android/gms/common/internal/zau;->z2()Lcom/google/android/gms/common/internal/IAccountAccessor;
 
     move-result-object v1
 
-    iget-object v3, v0, Lcom/google/android/gms/common/api/internal/zace;->i:Ljava/util/Set;
+    iget-object v3, v0, Lcom/google/android/gms/common/api/internal/zace;->j:Ljava/util/Set;
 
     check-cast v2, La2/f$c;
 
@@ -171,7 +171,7 @@
 
     .line 19
     :cond_3
-    iget-object v1, v0, Lcom/google/android/gms/common/api/internal/zace;->l:La2/j0;
+    iget-object v1, v0, Lcom/google/android/gms/common/api/internal/zace;->m:La2/j0;
 
     check-cast v1, La2/f$c;
 
@@ -180,7 +180,7 @@
     .line 20
     :cond_4
     :goto_1
-    iget-object v0, v0, Lcom/google/android/gms/common/api/internal/zace;->k:Ly3/d;
+    iget-object v0, v0, Lcom/google/android/gms/common/api/internal/zace;->l:Lz3/d;
 
     invoke-interface {v0}, Lcom/google/android/gms/common/api/a$f;->disconnect()V
 

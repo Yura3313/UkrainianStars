@@ -25,9 +25,9 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final b:Landroid/net/Uri;
+.field public final h:Landroid/net/Uri;
 
 
 # direct methods
@@ -51,10 +51,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zze;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->g:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->b:Landroid/net/Uri;
+    iput-object p2, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->h:Landroid/net/Uri;
 
     return-void
 .end method
@@ -85,7 +85,7 @@
     check-cast p1, Lcom/google/android/gms/games/internal/player/StockProfileImage;
 
     .line 3
-    iget-object v2, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->g:Ljava/lang/String;
 
     invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/StockProfileImage;->getImageUrl()Ljava/lang/String;
 
@@ -97,10 +97,10 @@
 
     if-eqz v2, :cond_2
 
-    iget-object v2, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->b:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->h:Landroid/net/Uri;
 
     .line 4
-    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/StockProfileImage;->v()Landroid/net/Uri;
+    invoke-interface {p1}, Lcom/google/android/gms/games/internal/player/StockProfileImage;->x()Landroid/net/Uri;
 
     move-result-object p1
 
@@ -120,7 +120,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->g:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -133,13 +133,13 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->g:Ljava/lang/String;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->b:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->h:Landroid/net/Uri;
 
     const/4 v2, 0x1
 
@@ -164,14 +164,14 @@
     invoke-direct {v0, p0, v1}, Lc2/f$a;-><init>(Ljava/lang/Object;Lc2/n0;)V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->g:Ljava/lang/String;
 
     const-string v2, "ImageId"
 
     .line 3
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
-    iget-object v1, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->b:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->h:Landroid/net/Uri;
 
     const-string v2, "ImageUri"
 
@@ -182,15 +182,6 @@
     invoke-virtual {v0}, Lc2/f$a;->toString()Ljava/lang/String;
 
     move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final v()Landroid/net/Uri;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->b:Landroid/net/Uri;
 
     return-object v0
 .end method
@@ -208,7 +199,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->g:Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -218,7 +209,7 @@
     const/4 v1, 0x2
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->b:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->h:Landroid/net/Uri;
 
     .line 5
     invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
@@ -227,4 +218,13 @@
     invoke-static {p1, v0}, Ld2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
+.end method
+
+.method public final x()Landroid/net/Uri;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/StockProfileImageEntity;->h:Landroid/net/Uri;
+
+    return-object v0
 .end method

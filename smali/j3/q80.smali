@@ -3,44 +3,91 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/mj0;
+.implements Ljava/util/concurrent/Callable;
 
 
-# static fields
-.field public static final a:Lj3/mj0;
+# instance fields
+.field public final a:Lcom/google/android/gms/internal/ads/zzcyk;
+
+.field public final b:Landroid/net/Uri;
+
+.field public final c:Lcom/google/android/gms/dynamic/IObjectWrapper;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lj3/q80;
-
-    invoke-direct {v0}, Lj3/q80;-><init>()V
-
-    sput-object v0, Lj3/q80;->a:Lj3/mj0;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzcyk;Landroid/net/Uri;Lcom/google/android/gms/dynamic/IObjectWrapper;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lj3/q80;->a:Lcom/google/android/gms/internal/ads/zzcyk;
+
+    iput-object p2, p0, Lj3/q80;->b:Landroid/net/Uri;
+
+    iput-object p3, p0, Lj3/q80;->c:Lcom/google/android/gms/dynamic/IObjectWrapper;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final call()Ljava/lang/Object;
+    .locals 5
 
-    check-cast p1, Ljava/lang/Exception;
+    iget-object v0, p0, Lj3/q80;->a:Lcom/google/android/gms/internal/ads/zzcyk;
 
-    sget-object p1, Lcom/google/android/gms/internal/ads/zzcyk;->p:Ljava/util/List;
+    iget-object v1, p0, Lj3/q80;->b:Landroid/net/Uri;
 
-    const/4 p1, 0x0
+    iget-object v2, p0, Lj3/q80;->c:Lcom/google/android/gms/dynamic/IObjectWrapper;
 
-    return-object p1
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 1
+    :try_start_0
+    iget-object v3, v0, Lcom/google/android/gms/internal/ads/zzcyk;->i:Lj3/nr0;
+
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/zzcyk;->h:Landroid/content/Context;
+
+    .line 2
+    invoke-static {v2}, Lcom/google/android/gms/dynamic/ObjectWrapper;->Y0(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/view/View;
+
+    const/4 v4, 0x0
+
+    .line 3
+    invoke-virtual {v3, v1, v0, v2, v4}, Lj3/nr0;->a(Landroid/net/Uri;Landroid/content/Context;Landroid/view/View;Landroid/app/Activity;)Landroid/net/Uri;
+
+    move-result-object v1
+    :try_end_0
+    .catch Lcom/google/android/gms/internal/ads/zzef; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    nop
+
+    :goto_0
+    const-string v0, "ms"
+
+    .line 4
+    invoke-virtual {v1, v0}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    return-object v1
+
+    .line 5
+    :cond_0
+    new-instance v0, Ljava/lang/Exception;
+
+    const-string v1, "Failed to append spam signals to click url."
+
+    invoke-direct {v0, v1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+
+    throw v0
 .end method

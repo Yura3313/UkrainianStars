@@ -9,11 +9,11 @@
 
 
 # static fields
-.field public static final b:[I
+.field public static final h:[I
 
 
 # instance fields
-.field public a:Landroidx/appcompat/view/menu/e;
+.field public g:Landroidx/appcompat/view/menu/e;
 
 
 # direct methods
@@ -27,7 +27,7 @@
     .line 1
     fill-array-data v0, :array_0
 
-    sput-object v0, Landroidx/appcompat/view/menu/ExpandedMenuView;->b:[I
+    sput-object v0, Landroidx/appcompat/view/menu/ExpandedMenuView;->h:[I
 
     return-void
 
@@ -61,7 +61,7 @@
     invoke-virtual {p0, p0}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 4
-    sget-object v0, Landroidx/appcompat/view/menu/ExpandedMenuView;->b:[I
+    sget-object v0, Landroidx/appcompat/view/menu/ExpandedMenuView;->h:[I
 
     const/4 v1, 0x0
 
@@ -162,7 +162,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->a:Landroidx/appcompat/view/menu/e;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->g:Landroidx/appcompat/view/menu/e;
 
     const/4 v1, 0x0
 
@@ -180,7 +180,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->a:Landroidx/appcompat/view/menu/e;
+    iput-object p1, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->g:Landroidx/appcompat/view/menu/e;
 
     return-void
 .end method

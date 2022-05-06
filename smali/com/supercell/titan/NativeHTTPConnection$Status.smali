@@ -23,21 +23,19 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lcom/supercell/titan/NativeHTTPConnection$Status;
+.field public static final enum h:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
-.field public static final enum ACTIVE:Lcom/supercell/titan/NativeHTTPConnection$Status;
+.field public static final enum i:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
-.field public static final enum FAILED:Lcom/supercell/titan/NativeHTTPConnection$Status;
+.field public static final enum j:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
-.field public static final enum IDLE:Lcom/supercell/titan/NativeHTTPConnection$Status;
+.field public static final enum k:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
-.field public static final enum OK:Lcom/supercell/titan/NativeHTTPConnection$Status;
-
-.field public static final enum UNDEFINED:Lcom/supercell/titan/NativeHTTPConnection$Status;
+.field public static final synthetic l:[Lcom/supercell/titan/NativeHTTPConnection$Status;
 
 
 # instance fields
-.field private final code:I
+.field public final g:I
 
 
 # direct methods
@@ -55,8 +53,6 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/supercell/titan/NativeHTTPConnection$Status;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/supercell/titan/NativeHTTPConnection$Status;->UNDEFINED:Lcom/supercell/titan/NativeHTTPConnection$Status;
-
     new-instance v1, Lcom/supercell/titan/NativeHTTPConnection$Status;
 
     const-string v3, "IDLE"
@@ -65,7 +61,7 @@
 
     invoke-direct {v1, v3, v4, v2}, Lcom/supercell/titan/NativeHTTPConnection$Status;-><init>(Ljava/lang/String;II)V
 
-    sput-object v1, Lcom/supercell/titan/NativeHTTPConnection$Status;->IDLE:Lcom/supercell/titan/NativeHTTPConnection$Status;
+    sput-object v1, Lcom/supercell/titan/NativeHTTPConnection$Status;->h:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
     new-instance v3, Lcom/supercell/titan/NativeHTTPConnection$Status;
 
@@ -75,7 +71,7 @@
 
     invoke-direct {v3, v5, v6, v4}, Lcom/supercell/titan/NativeHTTPConnection$Status;-><init>(Ljava/lang/String;II)V
 
-    sput-object v3, Lcom/supercell/titan/NativeHTTPConnection$Status;->ACTIVE:Lcom/supercell/titan/NativeHTTPConnection$Status;
+    sput-object v3, Lcom/supercell/titan/NativeHTTPConnection$Status;->i:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
     new-instance v5, Lcom/supercell/titan/NativeHTTPConnection$Status;
 
@@ -85,7 +81,7 @@
 
     invoke-direct {v5, v7, v8, v6}, Lcom/supercell/titan/NativeHTTPConnection$Status;-><init>(Ljava/lang/String;II)V
 
-    sput-object v5, Lcom/supercell/titan/NativeHTTPConnection$Status;->OK:Lcom/supercell/titan/NativeHTTPConnection$Status;
+    sput-object v5, Lcom/supercell/titan/NativeHTTPConnection$Status;->j:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
     new-instance v7, Lcom/supercell/titan/NativeHTTPConnection$Status;
 
@@ -95,7 +91,7 @@
 
     invoke-direct {v7, v9, v10, v8}, Lcom/supercell/titan/NativeHTTPConnection$Status;-><init>(Ljava/lang/String;II)V
 
-    sput-object v7, Lcom/supercell/titan/NativeHTTPConnection$Status;->FAILED:Lcom/supercell/titan/NativeHTTPConnection$Status;
+    sput-object v7, Lcom/supercell/titan/NativeHTTPConnection$Status;->k:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
     const/4 v9, 0x5
 
@@ -112,12 +108,12 @@
     aput-object v7, v9, v10
 
     .line 2
-    sput-object v9, Lcom/supercell/titan/NativeHTTPConnection$Status;->$VALUES:[Lcom/supercell/titan/NativeHTTPConnection$Status;
+    sput-object v9, Lcom/supercell/titan/NativeHTTPConnection$Status;->l:[Lcom/supercell/titan/NativeHTTPConnection$Status;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;II)V
+.method public constructor <init>(Ljava/lang/String;II)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -129,7 +125,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput p3, p0, Lcom/supercell/titan/NativeHTTPConnection$Status;->code:I
+    iput p3, p0, Lcom/supercell/titan/NativeHTTPConnection$Status;->g:I
 
     return-void
 .end method
@@ -153,7 +149,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/supercell/titan/NativeHTTPConnection$Status;->$VALUES:[Lcom/supercell/titan/NativeHTTPConnection$Status;
+    sget-object v0, Lcom/supercell/titan/NativeHTTPConnection$Status;->l:[Lcom/supercell/titan/NativeHTTPConnection$Status;
 
     invoke-virtual {v0}, [Lcom/supercell/titan/NativeHTTPConnection$Status;->clone()Ljava/lang/Object;
 
@@ -170,7 +166,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/supercell/titan/NativeHTTPConnection$Status;->code:I
+    iget v0, p0, Lcom/supercell/titan/NativeHTTPConnection$Status;->g:I
 
     return v0
 .end method

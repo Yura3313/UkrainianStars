@@ -16,10 +16,10 @@
 
 
 # instance fields
-.field private mExtraDataMap:Lm/h;
+.field private mExtraDataMap:Lm/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lm/h<",
+            "Lm/g<",
             "Ljava/lang/Class<",
             "+",
             "Landroidx/core/app/ComponentActivity$a;",
@@ -41,11 +41,11 @@
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
     .line 2
-    new-instance v0, Lm/h;
+    new-instance v0, Lm/g;
 
-    invoke-direct {v0}, Lm/h;-><init>()V
+    invoke-direct {v0}, Lm/g;-><init>()V
 
-    iput-object v0, p0, Landroidx/core/app/ComponentActivity;->mExtraDataMap:Lm/h;
+    iput-object v0, p0, Landroidx/core/app/ComponentActivity;->mExtraDataMap:Lm/g;
 
     .line 3
     new-instance v0, Landroidx/lifecycle/k;
@@ -143,12 +143,12 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/core/app/ComponentActivity;->mExtraDataMap:Lm/h;
+    iget-object v0, p0, Landroidx/core/app/ComponentActivity;->mExtraDataMap:Lm/g;
 
     const/4 v1, 0x0
 
     .line 2
-    invoke-virtual {v0, p1, v1}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -179,7 +179,7 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 2
-    invoke-static {p0}, Landroidx/lifecycle/s;->c(Landroid/app/Activity;)V
+    invoke-static {p0}, Landroidx/lifecycle/t;->c(Landroid/app/Activity;)V
 
     return-void
 .end method
@@ -190,7 +190,7 @@
     .line 1
     iget-object v0, p0, Landroidx/core/app/ComponentActivity;->mLifecycleRegistry:Landroidx/lifecycle/k;
 
-    sget-object v1, Landroidx/lifecycle/f$c;->CREATED:Landroidx/lifecycle/f$c;
+    sget-object v1, Landroidx/lifecycle/f$c;->i:Landroidx/lifecycle/f$c;
 
     const-string v2, "markState"
 
@@ -217,13 +217,13 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/core/app/ComponentActivity;->mExtraDataMap:Lm/h;
+    iget-object v0, p0, Landroidx/core/app/ComponentActivity;->mExtraDataMap:Lm/g;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, p1}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p1}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

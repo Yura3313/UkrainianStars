@@ -14,33 +14,31 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lc6/d;
+.field public static final enum h:Lc6/d;
 
-.field public static final enum ALLOWED_EAN_EXTENSIONS:Lc6/d;
+.field public static final enum i:Lc6/d;
 
-.field public static final enum ALLOWED_LENGTHS:Lc6/d;
+.field public static final enum j:Lc6/d;
 
-.field public static final enum ASSUME_CODE_39_CHECK_DIGIT:Lc6/d;
+.field public static final enum k:Lc6/d;
 
-.field public static final enum ASSUME_GS1:Lc6/d;
+.field public static final enum l:Lc6/d;
 
-.field public static final enum CHARACTER_SET:Lc6/d;
+.field public static final enum m:Lc6/d;
 
-.field public static final enum NEED_RESULT_POINT_CALLBACK:Lc6/d;
+.field public static final enum n:Lc6/d;
 
-.field public static final enum OTHER:Lc6/d;
+.field public static final enum o:Lc6/d;
 
-.field public static final enum POSSIBLE_FORMATS:Lc6/d;
+.field public static final enum p:Lc6/d;
 
-.field public static final enum PURE_BARCODE:Lc6/d;
+.field public static final enum q:Lc6/d;
 
-.field public static final enum RETURN_CODABAR_START_END:Lc6/d;
-
-.field public static final enum TRY_HARDER:Lc6/d;
+.field public static final synthetic r:[Lc6/d;
 
 
 # instance fields
-.field private final valueType:Ljava/lang/Class;
+.field public final g:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -67,8 +65,6 @@
 
     invoke-direct {v1, v3, v4, v2}, Lc6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
 
-    sput-object v1, Lc6/d;->OTHER:Lc6/d;
-
     .line 2
     new-instance v2, Lc6/d;
 
@@ -80,7 +76,7 @@
 
     invoke-direct {v2, v5, v6, v3}, Lc6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
 
-    sput-object v2, Lc6/d;->PURE_BARCODE:Lc6/d;
+    sput-object v2, Lc6/d;->h:Lc6/d;
 
     .line 3
     new-instance v3, Lc6/d;
@@ -93,7 +89,7 @@
 
     invoke-direct {v3, v7, v8, v5}, Lc6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
 
-    sput-object v3, Lc6/d;->POSSIBLE_FORMATS:Lc6/d;
+    sput-object v3, Lc6/d;->i:Lc6/d;
 
     .line 4
     new-instance v5, Lc6/d;
@@ -106,7 +102,7 @@
 
     invoke-direct {v5, v9, v10, v7}, Lc6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
 
-    sput-object v5, Lc6/d;->TRY_HARDER:Lc6/d;
+    sput-object v5, Lc6/d;->j:Lc6/d;
 
     .line 5
     new-instance v7, Lc6/d;
@@ -119,7 +115,7 @@
 
     invoke-direct {v7, v11, v12, v9}, Lc6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
 
-    sput-object v7, Lc6/d;->CHARACTER_SET:Lc6/d;
+    sput-object v7, Lc6/d;->k:Lc6/d;
 
     .line 6
     new-instance v9, Lc6/d;
@@ -130,7 +126,7 @@
 
     invoke-direct {v9, v11, v13, v0}, Lc6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
 
-    sput-object v9, Lc6/d;->ALLOWED_LENGTHS:Lc6/d;
+    sput-object v9, Lc6/d;->l:Lc6/d;
 
     .line 7
     new-instance v11, Lc6/d;
@@ -143,7 +139,7 @@
 
     invoke-direct {v11, v15, v13, v14}, Lc6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
 
-    sput-object v11, Lc6/d;->ASSUME_CODE_39_CHECK_DIGIT:Lc6/d;
+    sput-object v11, Lc6/d;->m:Lc6/d;
 
     .line 8
     new-instance v14, Lc6/d;
@@ -156,7 +152,7 @@
 
     invoke-direct {v14, v13, v12, v15}, Lc6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
 
-    sput-object v14, Lc6/d;->ASSUME_GS1:Lc6/d;
+    sput-object v14, Lc6/d;->n:Lc6/d;
 
     .line 9
     new-instance v13, Lc6/d;
@@ -169,7 +165,7 @@
 
     invoke-direct {v13, v12, v10, v15}, Lc6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
 
-    sput-object v13, Lc6/d;->RETURN_CODABAR_START_END:Lc6/d;
+    sput-object v13, Lc6/d;->o:Lc6/d;
 
     .line 10
     new-instance v12, Lc6/d;
@@ -182,7 +178,7 @@
 
     invoke-direct {v12, v10, v8, v15}, Lc6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
 
-    sput-object v12, Lc6/d;->NEED_RESULT_POINT_CALLBACK:Lc6/d;
+    sput-object v12, Lc6/d;->p:Lc6/d;
 
     .line 11
     new-instance v10, Lc6/d;
@@ -193,7 +189,7 @@
 
     invoke-direct {v10, v15, v8, v0}, Lc6/d;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
 
-    sput-object v10, Lc6/d;->ALLOWED_EAN_EXTENSIONS:Lc6/d;
+    sput-object v10, Lc6/d;->q:Lc6/d;
 
     const/16 v0, 0xb
 
@@ -238,12 +234,12 @@
     aput-object v10, v0, v8
 
     .line 12
-    sput-object v0, Lc6/d;->$VALUES:[Lc6/d;
+    sput-object v0, Lc6/d;->r:[Lc6/d;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;ILjava/lang/Class;)V
+.method public constructor <init>(Ljava/lang/String;ILjava/lang/Class;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -257,7 +253,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput-object p3, p0, Lc6/d;->valueType:Ljava/lang/Class;
+    iput-object p3, p0, Lc6/d;->g:Ljava/lang/Class;
 
     return-void
 .end method
@@ -281,31 +277,13 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lc6/d;->$VALUES:[Lc6/d;
+    sget-object v0, Lc6/d;->r:[Lc6/d;
 
     invoke-virtual {v0}, [Lc6/d;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, [Lc6/d;
-
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public getValueType()Ljava/lang/Class;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/lang/Class<",
-            "*>;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lc6/d;->valueType:Ljava/lang/Class;
 
     return-object v0
 .end method

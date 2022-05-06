@@ -41,7 +41,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0, p1, p2}, Lcom/google/protobuf/v1;->r(Ljava/lang/Object;J)Ljava/lang/Object;
+    invoke-static {p0, p1, p2}, Lcom/google/protobuf/u1;->r(Ljava/lang/Object;J)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -61,7 +61,7 @@
     move-result-object p1
 
     .line 2
-    invoke-interface {p1}, Lcom/google/protobuf/a0$i;->j()V
+    invoke-interface {p1}, Lcom/google/protobuf/a0$i;->k()V
 
     return-void
 .end method
@@ -104,7 +104,7 @@
     if-lez v2, :cond_1
 
     .line 5
-    invoke-interface {v0}, Lcom/google/protobuf/a0$i;->A()Z
+    invoke-interface {v0}, Lcom/google/protobuf/a0$i;->C()Z
 
     move-result v3
 
@@ -113,7 +113,7 @@
     add-int/2addr v2, v1
 
     .line 6
-    invoke-interface {v0, v2}, Lcom/google/protobuf/a0$i;->m(I)Lcom/google/protobuf/a0$i;
+    invoke-interface {v0, v2}, Lcom/google/protobuf/a0$i;->o(I)Lcom/google/protobuf/a0$i;
 
     move-result-object v0
 
@@ -128,9 +128,9 @@
 
     .line 8
     :cond_2
-    sget-object v0, Lcom/google/protobuf/v1;->e:Lcom/google/protobuf/v1$e;
+    sget-object v0, Lcom/google/protobuf/u1;->e:Lcom/google/protobuf/u1$e;
 
-    invoke-virtual {v0, p1, p3, p4, p2}, Lcom/google/protobuf/v1$e;->s(Ljava/lang/Object;JLjava/lang/Object;)V
+    invoke-virtual {v0, p1, p3, p4, p2}, Lcom/google/protobuf/u1$e;->s(Ljava/lang/Object;JLjava/lang/Object;)V
 
     return-void
 .end method
@@ -157,7 +157,7 @@
     move-result-object v0
 
     .line 2
-    invoke-interface {v0}, Lcom/google/protobuf/a0$i;->A()Z
+    invoke-interface {v0}, Lcom/google/protobuf/a0$i;->C()Z
 
     move-result v1
 
@@ -179,14 +179,14 @@
 
     .line 4
     :goto_0
-    invoke-interface {v0, v1}, Lcom/google/protobuf/a0$i;->m(I)Lcom/google/protobuf/a0$i;
+    invoke-interface {v0, v1}, Lcom/google/protobuf/a0$i;->o(I)Lcom/google/protobuf/a0$i;
 
     move-result-object v0
 
     .line 5
-    sget-object v1, Lcom/google/protobuf/v1;->e:Lcom/google/protobuf/v1$e;
+    sget-object v1, Lcom/google/protobuf/u1;->e:Lcom/google/protobuf/u1$e;
 
-    invoke-virtual {v1, p1, p2, p3, v0}, Lcom/google/protobuf/v1$e;->s(Ljava/lang/Object;JLjava/lang/Object;)V
+    invoke-virtual {v1, p1, p2, p3, v0}, Lcom/google/protobuf/u1$e;->s(Ljava/lang/Object;JLjava/lang/Object;)V
 
     :cond_1
     return-object v0

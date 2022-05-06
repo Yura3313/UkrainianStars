@@ -49,7 +49,7 @@
     invoke-direct {p1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 3
-    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->h()Landroid/content/Intent;
+    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->b()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -84,7 +84,7 @@
     .line 8
     new-instance v0, Landroidx/activity/result/IntentSenderRequest$b;
 
-    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->r()Landroid/content/IntentSender;
+    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->o()Landroid/content/IntentSender;
 
     move-result-object v1
 
@@ -96,11 +96,11 @@
     invoke-virtual {v0, v1}, Landroidx/activity/result/IntentSenderRequest$b;->b(Landroid/content/Intent;)Landroidx/activity/result/IntentSenderRequest$b;
 
     .line 10
-    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->m()I
+    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->k()I
 
     move-result v1
 
-    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->j()I
+    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->i()I
 
     move-result p2
 

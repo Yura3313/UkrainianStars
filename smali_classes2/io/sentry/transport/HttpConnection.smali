@@ -18,27 +18,6 @@
 
 
 # direct methods
-.method private static synthetic $closeResource(Ljava/lang/Throwable;Ljava/lang/AutoCloseable;)V
-    .locals 0
-
-    if-eqz p0, :cond_0
-
-    .line 1
-    :try_start_0
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
-
-    :catchall_0
-    :goto_0
-    return-void
-.end method
-
 .method public static constructor <clinit>()V
     .locals 1
 
@@ -157,8 +136,10 @@
     .line 2
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->disconnect()V
 
+    .line 3
     throw v0
 
+    .line 4
     :catch_0
     :goto_0
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->disconnect()V
@@ -392,18 +373,16 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    const/4 v2, 0x0
-
     .line 8
     :try_start_3
-    invoke-static {v2, v0}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v0}, Ljava/io/BufferedReader;->close()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
     if-eqz p1, :cond_2
 
     :try_start_4
-    invoke-static {v2, p1}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {p1}, Ljava/io/InputStream;->close()V
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
 
@@ -415,41 +394,30 @@
 
     .line 9
     :try_start_5
-    throw v1
+    invoke-virtual {v0}, Ljava/io/BufferedReader;->close()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
     :catchall_1
-    move-exception v2
-
-    .line 10
     :try_start_6
-    invoke-static {v1, v0}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    throw v2
+    throw v1
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
     :catchall_2
     move-exception v0
 
-    .line 11
+    if-eqz p1, :cond_3
+
     :try_start_7
-    throw v0
+    invoke-virtual {p1}, Ljava/io/InputStream;->close()V
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_3
 
     :catchall_3
-    move-exception v1
-
-    if-eqz p1, :cond_3
-
-    .line 12
-    :try_start_8
-    invoke-static {v0, p1}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
     :cond_3
-    throw v1
+    :try_start_8
+    throw v0
     :try_end_8
     .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_0
 
@@ -630,6 +598,7 @@
     :goto_0
     invoke-direct {p0, p1}, Lio/sentry/transport/HttpConnection;->closeAndDisconnect(Ljava/net/HttpURLConnection;)V
 
+    .line 17
     throw v0
 .end method
 
@@ -688,7 +657,7 @@
 
     const-string v3, "Failed to parse Sentry Proxy port: "
 
-    invoke-static {v3}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
@@ -797,7 +766,6 @@
 
     move-result-object v1
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_4
 
     .line 3
@@ -820,20 +788,17 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    const/4 p1, 0x0
-
     .line 5
     :try_start_3
-    invoke-static {p1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v2}, Ljava/util/zip/GZIPOutputStream;->close()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
     if-eqz v1, :cond_1
 
     :try_start_4
-    invoke-static {p1, v1}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v1}, Ljava/io/OutputStream;->close()V
     :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
     .catchall {:try_start_4 .. :try_end_4} :catchall_4
 
     goto :goto_0
@@ -843,58 +808,41 @@
 
     .line 6
     :try_start_5
-    throw p1
+    invoke-virtual {v2}, Ljava/util/zip/GZIPOutputStream;->close()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
     :catchall_1
-    move-exception v3
-
-    .line 7
     :try_start_6
-    invoke-static {p1, v2}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    throw v3
+    throw p1
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
     :catchall_2
     move-exception p1
 
-    .line 8
+    if-eqz v1, :cond_0
+
     :try_start_7
-    throw p1
+    invoke-virtual {v1}, Ljava/io/OutputStream;->close()V
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_3
 
     :catchall_3
-    move-exception v2
-
-    if-eqz v1, :cond_0
-
-    .line 9
-    :try_start_8
-    invoke-static {p1, v1}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
     :cond_0
-    throw v2
+    :try_start_8
+    throw p1
     :try_end_8
-    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_0
     .catchall {:try_start_8 .. :try_end_8} :catchall_4
 
     :catchall_4
     move-exception p1
 
-    goto :goto_1
-
-    :catch_0
-    move-exception p1
-
-    .line 10
+    .line 7
     :try_start_9
     iget-object v1, p0, Lio/sentry/transport/HttpConnection;->options:Lio/sentry/SentryOptions;
 
-    .line 11
+    .line 8
     invoke-virtual {v1}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
 
     move-result-object v1
@@ -907,12 +855,12 @@
 
     new-array v4, v4, [Ljava/lang/Object;
 
-    .line 12
+    .line 9
     invoke-interface {v1, v2, p1, v3, v4}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
     :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_4
+    .catchall {:try_start_9 .. :try_end_9} :catchall_5
 
-    .line 13
+    .line 10
     :cond_1
     :goto_0
     invoke-direct {p0, v0}, Lio/sentry/transport/HttpConnection;->readAndLog(Ljava/net/HttpURLConnection;)Lio/sentry/transport/TransportResult;
@@ -921,9 +869,12 @@
 
     return-object p1
 
-    :goto_1
+    :catchall_5
+    move-exception p1
+
     invoke-direct {p0, v0}, Lio/sentry/transport/HttpConnection;->readAndLog(Ljava/net/HttpURLConnection;)Lio/sentry/transport/TransportResult;
 
+    .line 11
     throw p1
 .end method
 

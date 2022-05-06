@@ -60,7 +60,7 @@
     const-string v2, "CopyToClipboardHandler"
 
     .line 2
-    invoke-static {v1, v0, v2}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0, v2}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 3
     iget-object v1, p0, Lcom/kakaogame/web/protocol/CopyToClipboardHandler$1;->val$webView:Landroid/webkit/WebView;

@@ -29,7 +29,7 @@
 
 
 # instance fields
-.field public final a:Landroid/os/Bundle;
+.field public final g:Landroid/os/Bundle;
 
 
 # direct methods
@@ -37,9 +37,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lx3/f;
+    new-instance v0, Ly3/f;
 
-    invoke-direct {v0}, Lx3/f;-><init>()V
+    invoke-direct {v0}, Ly3/f;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/measurement/internal/zzad;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -53,20 +53,50 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/measurement/internal/zzad;->a:Landroid/os/Bundle;
+    iput-object p1, p0, Lcom/google/android/gms/measurement/internal/zzad;->g:Landroid/os/Bundle;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final A2()Landroid/os/Bundle;
+.method public final A2(Ljava/lang/String;)Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzad;->g:Landroid/os/Bundle;
+
+    invoke-virtual {v0, p1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final B2(Ljava/lang/String;)Ljava/lang/Double;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzad;->g:Landroid/os/Bundle;
+
+    invoke-virtual {v0, p1}, Landroid/os/Bundle;->getDouble(Ljava/lang/String;)D
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final C2()Landroid/os/Bundle;
     .locals 2
 
     .line 1
     new-instance v0, Landroid/os/Bundle;
 
-    iget-object v1, p0, Lcom/google/android/gms/measurement/internal/zzad;->a:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/google/android/gms/measurement/internal/zzad;->g:Landroid/os/Bundle;
 
     invoke-direct {v0, v1}, Landroid/os/Bundle;-><init>(Landroid/os/Bundle;)V
 
@@ -85,9 +115,9 @@
     .end annotation
 
     .line 1
-    new-instance v0, Lx3/e;
+    new-instance v0, Ly3/e;
 
-    invoke-direct {v0, p0}, Lx3/e;-><init>(Lcom/google/android/gms/measurement/internal/zzad;)V
+    invoke-direct {v0, p0}, Ly3/e;-><init>(Lcom/google/android/gms/measurement/internal/zzad;)V
 
     return-object v0
 .end method
@@ -96,7 +126,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzad;->a:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzad;->g:Landroid/os/Bundle;
 
     invoke-virtual {v0}, Landroid/os/Bundle;->size()I
 
@@ -109,7 +139,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzad;->a:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzad;->g:Landroid/os/Bundle;
 
     invoke-virtual {v0}, Landroid/os/Bundle;->toString()Ljava/lang/String;
 
@@ -131,7 +161,7 @@
     const/4 v0, 0x2
 
     .line 2
-    invoke-virtual {p0}, Lcom/google/android/gms/measurement/internal/zzad;->A2()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/google/android/gms/measurement/internal/zzad;->C2()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -146,47 +176,17 @@
     return-void
 .end method
 
-.method public final x2(Ljava/lang/String;)Ljava/lang/Long;
+.method public final z2(Ljava/lang/String;)Ljava/lang/Long;
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzad;->a:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzad;->g:Landroid/os/Bundle;
 
     invoke-virtual {v0, p1}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
 
     move-result-wide v0
 
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final y2(Ljava/lang/String;)Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzad;->a:Landroid/os/Bundle;
-
-    invoke-virtual {v0, p1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final z2(Ljava/lang/String;)Ljava/lang/Double;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzad;->a:Landroid/os/Bundle;
-
-    invoke-virtual {v0, p1}, Landroid/os/Bundle;->getDouble(Ljava/lang/String;)D
-
-    move-result-wide v0
-
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p1
 

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->i(Lwd/k1$a;ILwd/j1;)V
+    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->i(Lvd/k1$a;ILvd/j1;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+.field public final synthetic g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$f;->a:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$f;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,12 +40,12 @@
     .line 1
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object p1
 
     .line 2
-    iget-object v0, p1, Lwd/r;->m:La2/a;
+    iget-object v0, p1, Lvd/r;->m:Lcom/supercell/titan/h;
 
     const/4 v4, 0x0
 
@@ -60,38 +60,38 @@
     const-string v3, "Login with another account"
 
     .line 3
-    invoke-static/range {v0 .. v6}, La2/a;->b(La2/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static/range {v0 .. v6}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
 
     .line 4
-    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$f;->a:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$f;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
 
     .line 5
     iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
     .line 6
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$f;->a:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a$f;->g:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;
 
     .line 7
     iget-object v0, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$a;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
     .line 8
-    iget-boolean v0, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->j0:Z
+    iget-boolean v0, v0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->k0:Z
 
     const/4 v1, 0x0
 
     .line 9
-    invoke-virtual {p1, v1, v0}, Lcom/supercell/id/ui/MainActivity;->w(Lcom/supercell/id/IdLoginDetails;Z)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-virtual {p1, v1, v0}, Lcom/supercell/id/ui/MainActivity;->x(Lcom/supercell/id/IdLoginDetails;Z)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v0
 
     .line 10
-    invoke-virtual {p1, v0, v1}, Lcom/supercell/id/ui/MainActivity;->y(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
+    invoke-virtual {p1, v0, v1}, Lcom/supercell/id/ui/MainActivity;->z(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
 
     :cond_0
     return-void

@@ -1,32 +1,69 @@
-.class public interface abstract Lj3/qx0;
-.super Ljava/lang/Object;
+.class public final Lj3/qx0;
+.super Ljava/lang/Thread;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
+# instance fields
+.field public final synthetic g:Landroid/media/AudioTrack;
+
+.field public final synthetic h:Lj3/ox0;
+
+
+# direct methods
+.method public constructor <init>(Lj3/ox0;Landroid/media/AudioTrack;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lj3/qx0;->h:Lj3/ox0;
+
+    iput-object p2, p0, Lj3/qx0;->g:Landroid/media/AudioTrack;
+
+    invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
+
+    return-void
+.end method
+
+
 # virtual methods
-.method public abstract b(Lj3/tx0;)Z
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;,
-            Ljava/lang/InterruptedException;
-        }
-    .end annotation
-.end method
+.method public final run()V
+    .locals 2
 
-.method public abstract c(Lj3/sx0;)V
-.end method
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lj3/qx0;->g:Landroid/media/AudioTrack;
 
-.method public abstract e(JJ)V
-.end method
+    invoke-virtual {v0}, Landroid/media/AudioTrack;->flush()V
 
-.method public abstract g(Lj3/tx0;Lj3/wx0;)I
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;,
-            Ljava/lang/InterruptedException;
-        }
-    .end annotation
-.end method
+    .line 2
+    iget-object v0, p0, Lj3/qx0;->g:Landroid/media/AudioTrack;
 
-.method public abstract release()V
+    invoke-virtual {v0}, Landroid/media/AudioTrack;->release()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 3
+    iget-object v0, p0, Lj3/qx0;->h:Lj3/ox0;
+
+    .line 4
+    iget-object v0, v0, Lj3/ox0;->e:Landroid/os/ConditionVariable;
+
+    .line 5
+    invoke-virtual {v0}, Landroid/os/ConditionVariable;->open()V
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    .line 6
+    iget-object v1, p0, Lj3/qx0;->h:Lj3/ox0;
+
+    .line 7
+    iget-object v1, v1, Lj3/ox0;->e:Landroid/os/ConditionVariable;
+
+    .line 8
+    invoke-virtual {v1}, Landroid/os/ConditionVariable;->open()V
+
+    .line 9
+    throw v0
 .end method

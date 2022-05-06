@@ -22,13 +22,13 @@
 
 
 # virtual methods
-.method public abstract F1()Ljava/lang/String;
+.method public abstract I1()Ljava/lang/String;
 .end method
 
-.method public abstract c()J
+.method public abstract d()J
 .end method
 
-.method public abstract d()I
+.method public abstract e()I
 .end method
 
 .method public abstract getDescription()Ljava/lang/String;
@@ -37,11 +37,11 @@
 .method public abstract getStatus()I
 .end method
 
-.method public abstract i1()I
+.method public abstract k1()I
 .end method
 
-.method public abstract l()Ljava/lang/String;
+.method public abstract n()Ljava/lang/String;
 .end method
 
-.method public abstract s()Landroid/os/Bundle;
+.method public abstract u()Landroid/os/Bundle;
 .end method

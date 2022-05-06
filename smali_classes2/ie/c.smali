@@ -28,21 +28,42 @@
 # instance fields
 .field public final a:Ljava/io/File;
 
-.field public final b:Lie/e;
+.field public final b:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/io/File;Lie/e;)V
-    .locals 0
+.method public constructor <init>(Ljava/io/File;I)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_1
+
+    if-eqz p2, :cond_0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lie/c;->a:Ljava/io/File;
 
-    iput-object p2, p0, Lie/c;->b:Lie/e;
+    iput p2, p0, Lie/c;->b:I
 
     return-void
+
+    :cond_0
+    const-string p1, "direction"
+
+    .line 2
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_1
+    const-string p1, "start"
+
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
 .end method
 
 

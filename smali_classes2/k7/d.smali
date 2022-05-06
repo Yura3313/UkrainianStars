@@ -10,7 +10,7 @@
             "Ljava/util/concurrent/ConcurrentHashMap<",
             "Ljava/lang/String;",
             "Ljava/util/concurrent/ConcurrentLinkedQueue<",
-            "Ll7/d;",
+            "Ll7/b;",
             ">;>;"
         }
     .end annotation
@@ -22,7 +22,7 @@
             "Ljava/util/concurrent/ConcurrentHashMap<",
             "Ljava/lang/String;",
             "Ljava/util/concurrent/ConcurrentLinkedQueue<",
-            "Ll7/e;",
+            "Ll7/c;",
             ">;>;"
         }
     .end annotation
@@ -30,7 +30,7 @@
 
 .field public c:Ljava/util/concurrent/ThreadPoolExecutor;
 
-.field public d:Lj3/j5;
+.field public d:Ld8/s;
 
 .field public e:Ln7/c;
 
@@ -38,7 +38,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lj3/j5;Ljava/util/concurrent/ThreadPoolExecutor;)V
+.method public constructor <init>(Landroid/content/Context;Ld8/s;Ljava/util/concurrent/ThreadPoolExecutor;)V
     .locals 0
 
     .line 1
@@ -48,7 +48,7 @@
     iput-object p1, p0, Lk7/d;->f:Landroid/content/Context;
 
     .line 3
-    iput-object p2, p0, Lk7/d;->d:Lj3/j5;
+    iput-object p2, p0, Lk7/d;->d:Ld8/s;
 
     .line 4
     iput-object p3, p0, Lk7/d;->c:Ljava/util/concurrent/ThreadPoolExecutor;
@@ -70,7 +70,7 @@
     .line 7
     new-instance p1, Ln7/c;
 
-    invoke-direct {p1, p2}, Ln7/c;-><init>(Lj3/j5;)V
+    invoke-direct {p1, p2}, Ln7/c;-><init>(Ld8/s;)V
 
     iput-object p1, p0, Lk7/d;->e:Ln7/c;
 
@@ -125,7 +125,7 @@
     const-string v4, "Error checking for permission : android.permission.WRITE_EXTERNAL_STORAGE"
 
     .line 4
-    invoke-static {v3, v4, v0, v2}, Lce/z;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v4, v0, v2}, Lie/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     return v1
 .end method

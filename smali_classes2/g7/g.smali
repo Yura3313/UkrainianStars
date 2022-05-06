@@ -1,136 +1,308 @@
-.class public final enum Lg7/g;
-.super Ljava/lang/Enum;
-.source "UserSetupState.java"
+.class public Lg7/g;
+.super Ljava/lang/Object;
+.source "UserSyncDM.java"
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
+.annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        "Ljava/lang/Enum<",
-        "Lg7/g;",
-        ">;"
+        Lg7/g$c;
     }
 .end annotation
 
 
-# static fields
-.field private static final synthetic $VALUES:[Lg7/g;
+# instance fields
+.field public a:Ld8/r;
 
-.field public static final enum COMPLETED:Lg7/g;
+.field public b:Lz7/f;
 
-.field public static final enum FAILED:Lg7/g;
+.field public c:Lg7/c;
 
-.field public static final enum IN_PROGRESS:Lg7/g;
+.field public d:Lg7/d;
 
-.field public static final enum NON_STARTED:Lg7/g;
+.field public e:Lg7/b;
+
+.field public f:Ljava/lang/ref/WeakReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/ref/WeakReference<",
+            "Lg7/g$c;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 9
+.method public constructor <init>(Ld8/r;Lz7/f;Lg7/c;Lg7/d;Lg7/b;Lg7/g$c;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lg7/g;
-
-    const-string v1, "NON_STARTED"
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v2}, Lg7/g;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lg7/g;->NON_STARTED:Lg7/g;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v1, Lg7/g;
-
-    const-string v3, "IN_PROGRESS"
-
-    const/4 v4, 0x1
-
-    invoke-direct {v1, v3, v4}, Lg7/g;-><init>(Ljava/lang/String;I)V
-
-    sput-object v1, Lg7/g;->IN_PROGRESS:Lg7/g;
+    iput-object p1, p0, Lg7/g;->a:Ld8/r;
 
     .line 3
-    new-instance v3, Lg7/g;
-
-    const-string v5, "COMPLETED"
-
-    const/4 v6, 0x2
-
-    invoke-direct {v3, v5, v6}, Lg7/g;-><init>(Ljava/lang/String;I)V
-
-    sput-object v3, Lg7/g;->COMPLETED:Lg7/g;
+    iput-object p2, p0, Lg7/g;->b:Lz7/f;
 
     .line 4
-    new-instance v5, Lg7/g;
-
-    const-string v7, "FAILED"
-
-    const/4 v8, 0x3
-
-    invoke-direct {v5, v7, v8}, Lg7/g;-><init>(Ljava/lang/String;I)V
-
-    sput-object v5, Lg7/g;->FAILED:Lg7/g;
-
-    const/4 v7, 0x4
-
-    new-array v7, v7, [Lg7/g;
-
-    aput-object v0, v7, v2
-
-    aput-object v1, v7, v4
-
-    aput-object v3, v7, v6
-
-    aput-object v5, v7, v8
+    iput-object p3, p0, Lg7/g;->c:Lg7/c;
 
     .line 5
-    sput-object v7, Lg7/g;->$VALUES:[Lg7/g;
+    iput-object p4, p0, Lg7/g;->d:Lg7/d;
+
+    .line 6
+    iput-object p5, p0, Lg7/g;->e:Lg7/b;
+
+    .line 7
+    new-instance p1, Ljava/lang/ref/WeakReference;
+
+    invoke-direct {p1, p6}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Lg7/g;->f:Ljava/lang/ref/WeakReference;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;I)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
+
+# virtual methods
+.method public a()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iget-object v0, p0, Lg7/g;->c:Lg7/c;
 
-    return-void
-.end method
+    .line 2
+    iget-object v0, v0, Lg7/c;->q:Lg7/h;
 
-.method public static valueOf(Ljava/lang/String;)Lg7/g;
-    .locals 1
+    .line 3
+    sget-object v1, Lg7/h;->i:Lg7/h;
 
-    .line 1
-    const-class v0, Lg7/g;
+    if-eq v0, v1, :cond_1
 
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    sget-object v1, Lg7/h;->h:Lg7/h;
 
-    move-result-object p0
+    if-ne v0, v1, :cond_0
 
-    check-cast p0, Lg7/g;
+    goto :goto_0
 
-    return-object p0
-.end method
+    .line 4
+    :cond_0
+    iget-object v0, p0, Lg7/g;->b:Lz7/f;
 
-.method public static values()[Lg7/g;
-    .locals 1
+    new-instance v1, Lg7/g$b;
 
-    .line 1
-    sget-object v0, Lg7/g;->$VALUES:[Lg7/g;
+    invoke-direct {v1, p0}, Lg7/g$b;-><init>(Lg7/g;)V
 
-    invoke-virtual {v0}, [Lg7/g;->clone()Ljava/lang/Object;
+    .line 5
+    iget-object v0, v0, Lz7/f;->c:Lz7/m;
+
+    .line 6
+    invoke-interface {v0, v1}, Lz7/m;->a(Lz7/g;)Lz7/g;
 
     move-result-object v0
 
-    check-cast v0, [Lg7/g;
+    invoke-virtual {v0}, Lz7/g;->a()V
 
-    return-object v0
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method public final declared-synchronized b()V
+    .locals 6
+
+    sget-object v0, Lg7/h;->i:Lg7/h;
+
+    sget-object v1, Lg7/h;->j:Lg7/h;
+
+    monitor-enter p0
+
+    .line 1
+    :try_start_0
+    iget-object v2, p0, Lg7/g;->c:Lg7/c;
+
+    .line 2
+    iget-object v2, v2, Lg7/c;->q:Lg7/h;
+
+    .line 3
+    sget-object v3, Lg7/h;->g:Lg7/h;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-eq v2, v3, :cond_0
+
+    if-eq v2, v1, :cond_0
+
+    .line 4
+    monitor-exit p0
+
+    return-void
+
+    .line 5
+    :cond_0
+    :try_start_1
+    sget-object v3, Lg7/h;->h:Lg7/h;
+
+    invoke-virtual {p0, v2, v3}, Lg7/g;->c(Lg7/h;Lg7/h;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 6
+    :try_start_2
+    iget-object v3, p0, Lg7/g;->e:Lg7/b;
+
+    check-cast v3, Ls8/b;
+
+    invoke-virtual {v3}, Ls8/b;->k()V
+
+    .line 7
+    invoke-virtual {p0, v2, v0}, Lg7/g;->c(Lg7/h;Lg7/h;)V
+    :try_end_2
+    .catch Lcom/helpshift/common/exception/RootAPIException; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v3
+
+    .line 8
+    :try_start_3
+    invoke-virtual {v3}, Lcom/helpshift/common/exception/RootAPIException;->a()I
+
+    move-result v4
+
+    sget-object v5, Lb8/j;->f:Ljava/lang/Integer;
+
+    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
+
+    move-result v5
+
+    if-ne v4, v5, :cond_1
+
+    .line 9
+    invoke-virtual {p0, v2, v0}, Lg7/g;->c(Lg7/h;Lg7/h;)V
+
+    .line 10
+    iget-object v0, p0, Lg7/g;->d:Lg7/d;
+
+    iget-object v1, p0, Lg7/g;->c:Lg7/c;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Lg7/d;->q(Lg7/c;Z)V
+
+    .line 11
+    iget-object v0, p0, Lg7/g;->a:Ld8/r;
+
+    check-cast v0, Ld8/j;
+
+    invoke-virtual {v0}, Ld8/j;->d()Lr8/a;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lg7/g;->c:Lg7/c;
+
+    .line 12
+    iget-object v1, v1, Lg7/c;->g:Ljava/lang/Long;
+
+    .line 13
+    invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v3
+
+    check-cast v0, Ld8/b;
+
+    invoke-virtual {v0, v3, v4, v2}, Ld8/b;->e(JZ)V
+
+    goto :goto_0
+
+    .line 14
+    :cond_1
+    iget-object v0, v3, Lcom/helpshift/common/exception/RootAPIException;->i:Lc8/a;
+
+    sget-object v4, Lc8/b;->t:Lc8/b;
+
+    if-ne v0, v4, :cond_2
+
+    .line 15
+    invoke-virtual {p0, v2, v1}, Lg7/g;->c(Lg7/h;Lg7/h;)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    .line 16
+    :goto_0
+    monitor-exit p0
+
+    return-void
+
+    .line 17
+    :cond_2
+    :try_start_4
+    invoke-virtual {p0, v2, v1}, Lg7/g;->c(Lg7/h;Lg7/h;)V
+
+    .line 18
+    throw v3
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+.end method
+
+.method public final c(Lg7/h;Lg7/h;)V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lg7/g;->f:Ljava/lang/ref/WeakReference;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lg7/g$c;
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 3
+    :goto_0
+    iget-object v1, p0, Lg7/g;->d:Lg7/d;
+
+    iget-object v2, p0, Lg7/g;->c:Lg7/c;
+
+    invoke-virtual {v1, v2, p2}, Lg7/d;->r(Lg7/c;Lg7/h;)V
+
+    if-eqz v0, :cond_1
+
+    .line 4
+    iget-object v1, p0, Lg7/g;->b:Lz7/f;
+
+    new-instance v2, Lg7/g$a;
+
+    invoke-direct {v2, p0, v0, p1, p2}, Lg7/g$a;-><init>(Lg7/g;Lg7/g$c;Lg7/h;Lg7/h;)V
+
+    .line 5
+    iget-object p1, v1, Lz7/f;->b:Lz7/m;
+
+    .line 6
+    invoke-interface {p1, v2}, Lz7/m;->a(Lz7/g;)Lz7/g;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lz7/g;->a()V
+
+    :cond_1
+    return-void
 .end method

@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method public invoke(Lcom/kakao/sdk/auth/model/OAuthToken;Ljava/lang/Throwable;)Lbe/n;
+.method public invoke(Lcom/kakao/sdk/auth/model/OAuthToken;Ljava/lang/Throwable;)Lae/i;
     .locals 2
 
     const-string v0, "KGKakao2Auth"
@@ -134,7 +134,7 @@
 
     .line 12
     :goto_1
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method
@@ -147,7 +147,7 @@
 
     check-cast p2, Ljava/lang/Throwable;
 
-    invoke-virtual {p0, p1, p2}, Lcom/kakaogame/idp/KGKakao2Auth$9;->invoke(Lcom/kakao/sdk/auth/model/OAuthToken;Ljava/lang/Throwable;)Lbe/n;
+    invoke-virtual {p0, p1, p2}, Lcom/kakaogame/idp/KGKakao2Auth$9;->invoke(Lcom/kakao/sdk/auth/model/OAuthToken;Ljava/lang/Throwable;)Lae/i;
 
     move-result-object p1
 

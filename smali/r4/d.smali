@@ -1,5 +1,5 @@
 .class public Lr4/d;
-.super Lcom/google/android/gms/ads/i;
+.super Li1/o;
 .source "CutCornerTreatment.java"
 
 
@@ -8,14 +8,14 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/google/android/gms/ads/i;-><init>()V
+    invoke-direct {p0}, Li1/o;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public c(Lr4/n;FFF)V
+.method public a(Lr4/n;FFF)V
     .locals 6
 
     mul-float v0, p4, p3

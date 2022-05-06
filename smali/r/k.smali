@@ -156,11 +156,11 @@
 
     goto/16 :goto_8
 
-    .line 6
     :cond_0
-    sget-object v2, Lr/f$a;->BOTTOM:Lr/f$a;
+    const/4 v2, 0x7
 
-    iput-object v2, v1, Lr/f;->e:Lr/f$a;
+    .line 6
+    iput v2, v1, Lr/f;->e:I
 
     .line 7
     :goto_0
@@ -228,11 +228,11 @@
 
     goto/16 :goto_8
 
-    .line 15
     :cond_3
-    sget-object v2, Lr/f$a;->TOP:Lr/f$a;
+    const/4 v2, 0x6
 
-    iput-object v2, v1, Lr/f;->e:Lr/f$a;
+    .line 15
+    iput v2, v1, Lr/f;->e:I
 
     .line 16
     :goto_2
@@ -300,11 +300,11 @@
 
     goto/16 :goto_8
 
-    .line 24
     :cond_6
-    sget-object v2, Lr/f$a;->RIGHT:Lr/f$a;
+    const/4 v2, 0x5
 
-    iput-object v2, v1, Lr/f;->e:Lr/f$a;
+    .line 24
+    iput v2, v1, Lr/f;->e:I
 
     .line 25
     :goto_4
@@ -372,11 +372,11 @@
 
     goto :goto_8
 
-    .line 33
     :cond_9
-    sget-object v2, Lr/f$a;->LEFT:Lr/f$a;
+    const/4 v2, 0x4
 
-    iput-object v2, v1, Lr/f;->e:Lr/f$a;
+    .line 33
+    iput v2, v1, Lr/f;->e:I
 
     .line 34
     :goto_6

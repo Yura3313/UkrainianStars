@@ -195,7 +195,7 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p2}, Landroidx/lifecycle/f$b;->getTargetState()Landroidx/lifecycle/f$c;
+    invoke-virtual {p2}, Landroidx/lifecycle/f$b;->a()Landroidx/lifecycle/f$c;
 
     move-result-object v0
 

@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field public a:Landroid/os/ParcelFileDescriptor;
+.field public g:Landroid/os/ParcelFileDescriptor;
     .annotation build Ljavax/annotation/concurrent/GuardedBy;
         value = "this"
     .end annotation
@@ -28,9 +28,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lj3/n31;
+    new-instance v0, Lj3/g41;
 
-    invoke-direct {v0}, Lj3/n31;-><init>()V
+    invoke-direct {v0}, Lj3/g41;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzsv;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -46,7 +46,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzsv;->a:Landroid/os/ParcelFileDescriptor;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzsv;->g:Landroid/os/ParcelFileDescriptor;
 
     return-void
 .end method
@@ -58,13 +58,60 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 4
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzsv;->a:Landroid/os/ParcelFileDescriptor;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzsv;->g:Landroid/os/ParcelFileDescriptor;
 
     return-void
 .end method
 
 
 # virtual methods
+.method public final declared-synchronized A2()Ljava/io/InputStream;
+    .locals 3
+
+    monitor-enter p0
+
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzsv;->g:Landroid/os/ParcelFileDescriptor;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    .line 2
+    monitor-exit p0
+
+    return-object v1
+
+    .line 3
+    :cond_0
+    :try_start_1
+    new-instance v0, Landroid/os/ParcelFileDescriptor$AutoCloseInputStream;
+
+    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzsv;->g:Landroid/os/ParcelFileDescriptor;
+
+    invoke-direct {v0, v2}, Landroid/os/ParcelFileDescriptor$AutoCloseInputStream;-><init>(Landroid/os/ParcelFileDescriptor;)V
+
+    .line 4
+    iput-object v1, p0, Lcom/google/android/gms/internal/ads/zzsv;->g:Landroid/os/ParcelFileDescriptor;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 5
+    monitor-exit p0
+
+    return-object v0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+.end method
+
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
 
@@ -82,7 +129,7 @@
 
     .line 3
     :try_start_0
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzsv;->a:Landroid/os/ParcelFileDescriptor;
+    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzsv;->g:Landroid/os/ParcelFileDescriptor;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -107,14 +154,14 @@
     throw p1
 .end method
 
-.method public final declared-synchronized x2()Z
+.method public final declared-synchronized z2()Z
     .locals 1
 
     monitor-enter p0
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzsv;->a:Landroid/os/ParcelFileDescriptor;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzsv;->g:Landroid/os/ParcelFileDescriptor;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -144,51 +191,4 @@
 
     :goto_2
     goto :goto_1
-.end method
-
-.method public final declared-synchronized y2()Ljava/io/InputStream;
-    .locals 3
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzsv;->a:Landroid/os/ParcelFileDescriptor;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    .line 2
-    monitor-exit p0
-
-    return-object v1
-
-    .line 3
-    :cond_0
-    :try_start_1
-    new-instance v0, Landroid/os/ParcelFileDescriptor$AutoCloseInputStream;
-
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzsv;->a:Landroid/os/ParcelFileDescriptor;
-
-    invoke-direct {v0, v2}, Landroid/os/ParcelFileDescriptor$AutoCloseInputStream;-><init>(Landroid/os/ParcelFileDescriptor;)V
-
-    .line 4
-    iput-object v1, p0, Lcom/google/android/gms/internal/ads/zzsv;->a:Landroid/os/ParcelFileDescriptor;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 5
-    monitor-exit p0
-
-    return-object v0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
 .end method

@@ -3,22 +3,22 @@
 
 
 # instance fields
-.field public final synthetic b:Ljava/util/List;
+.field public final synthetic h:Ljava/util/List;
 
-.field public final synthetic h:Lcom/google/android/play/core/tasks/i;
+.field public final synthetic i:Lcom/google/android/play/core/tasks/i;
 
-.field public final synthetic i:Lcom/google/android/play/core/assetpacks/o;
+.field public final synthetic j:Lcom/google/android/play/core/assetpacks/o;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;Ljava/util/List;Lcom/google/android/play/core/tasks/i;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/b;->i:Lcom/google/android/play/core/assetpacks/o;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/b;->j:Lcom/google/android/play/core/assetpacks/o;
 
-    iput-object p3, p0, Lcom/google/android/play/core/assetpacks/b;->b:Ljava/util/List;
+    iput-object p3, p0, Lcom/google/android/play/core/assetpacks/b;->h:Ljava/util/List;
 
-    iput-object p4, p0, Lcom/google/android/play/core/assetpacks/b;->h:Lcom/google/android/play/core/tasks/i;
+    iput-object p4, p0, Lcom/google/android/play/core/assetpacks/b;->i:Lcom/google/android/play/core/tasks/i;
 
     invoke-direct {p0, p2}, Ly4/c;-><init>(Lcom/google/android/play/core/tasks/i;)V
 
@@ -30,7 +30,7 @@
 .method public final a()V
     .locals 8
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/b;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/b;->h:Ljava/util/List;
 
     .line 1
     new-instance v1, Ljava/util/ArrayList;
@@ -73,7 +73,7 @@
     .line 2
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/b;->i:Lcom/google/android/play/core/assetpacks/o;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/b;->j:Lcom/google/android/play/core/assetpacks/o;
 
     .line 3
     iget-object v2, v0, Lcom/google/android/play/core/assetpacks/o;->c:Ly4/l;
@@ -94,15 +94,15 @@
 
     new-instance v4, Lcom/google/android/play/core/assetpacks/j;
 
-    iget-object v5, p0, Lcom/google/android/play/core/assetpacks/b;->i:Lcom/google/android/play/core/assetpacks/o;
+    iget-object v5, p0, Lcom/google/android/play/core/assetpacks/b;->j:Lcom/google/android/play/core/assetpacks/o;
 
-    iget-object v6, p0, Lcom/google/android/play/core/assetpacks/b;->h:Lcom/google/android/play/core/tasks/i;
+    iget-object v6, p0, Lcom/google/android/play/core/assetpacks/b;->i:Lcom/google/android/play/core/tasks/i;
 
     const/4 v7, 0x0
 
     invoke-direct {v4, v5, v6, v7}, Lcom/google/android/play/core/assetpacks/j;-><init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;[B)V
 
-    invoke-interface {v2, v0, v1, v3, v4}, Lcom/google/android/play/core/internal/s;->p6(Ljava/lang/String;Ljava/util/List;Landroid/os/Bundle;Lcom/google/android/play/core/internal/u;)V
+    invoke-interface {v2, v0, v1, v3, v4}, Lcom/google/android/play/core/internal/s;->q6(Ljava/lang/String;Ljava/util/List;Landroid/os/Bundle;Lcom/google/android/play/core/internal/u;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -121,7 +121,7 @@
     const/4 v3, 0x0
 
     .line 9
-    iget-object v4, p0, Lcom/google/android/play/core/assetpacks/b;->b:Ljava/util/List;
+    iget-object v4, p0, Lcom/google/android/play/core/assetpacks/b;->h:Ljava/util/List;
 
     aput-object v4, v2, v3
 

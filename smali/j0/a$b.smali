@@ -20,7 +20,7 @@
     value = {
         "Ljava/lang/Object;",
         "Lj0/b$b<",
-        "Lm/i<",
+        "Lm/h<",
         "Lg0/b;",
         ">;",
         "Lg0/b;",

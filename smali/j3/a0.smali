@@ -163,10 +163,10 @@
     :cond_0
     sget-object v0, Lh1/o;->B:Lh1/o;
 
-    iget-object v0, v0, Lh1/o;->g:Lj3/ea;
+    iget-object v0, v0, Lh1/o;->g:Lj3/ia;
 
     .line 3
-    invoke-virtual {v0}, Lj3/ea;->d()Lj3/s;
+    invoke-virtual {v0}, Lj3/ia;->d()Lj3/s;
 
     move-result-object v0
 
@@ -392,10 +392,10 @@
     :try_start_0
     sget-object v1, Lh1/o;->B:Lh1/o;
 
-    iget-object v1, v1, Lh1/o;->g:Lj3/ea;
+    iget-object v1, v1, Lh1/o;->g:Lj3/ia;
 
     .line 3
-    invoke-virtual {v1}, Lj3/ea;->d()Lj3/s;
+    invoke-virtual {v1}, Lj3/ia;->d()Lj3/s;
 
     move-result-object v1
 

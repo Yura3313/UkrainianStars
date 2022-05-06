@@ -42,22 +42,18 @@
     check-cast p2, Lad/a;
 
     .line 2
-    iget-object p2, p2, Lad/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
+    invoke-virtual {p2}, Lad/a;->e()Ljava/util/Date;
 
-    .line 3
-    iget-object p2, p2, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->a:Ljava/util/Date;
+    move-result-object p2
 
-    .line 4
     check-cast p1, Lad/a;
 
-    .line 5
-    iget-object p1, p1, Lad/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
+    .line 3
+    invoke-virtual {p1}, Lad/a;->e()Ljava/util/Date;
 
-    .line 6
-    iget-object p1, p1, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->a:Ljava/util/Date;
+    move-result-object p1
 
-    .line 7
-    invoke-static {p2, p1}, Le0/a;->d(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
+    invoke-static {p2, p1}, Lce/a;->a(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
 
     move-result p1
 

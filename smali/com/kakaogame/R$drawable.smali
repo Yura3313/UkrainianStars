@@ -182,141 +182,141 @@
 
 .field public static final abc_vector_test:I = 0x7f08005b
 
-.field public static final ic_action_cancel_black:I = 0x7f0800d4
+.field public static final ic_action_cancel_black:I = 0x7f0800d9
 
-.field public static final ic_action_cancel_grey:I = 0x7f0800d5
+.field public static final ic_action_cancel_grey:I = 0x7f0800da
 
-.field public static final ic_action_previous_item_black:I = 0x7f0800d6
+.field public static final ic_action_previous_item_black:I = 0x7f0800db
 
-.field public static final ic_action_previous_item_grey:I = 0x7f0800d7
+.field public static final ic_action_previous_item_grey:I = 0x7f0800dc
 
-.field public static final kakao_game_daum_cafe_back:I = 0x7f0800ea
+.field public static final kakao_game_daum_cafe_back:I = 0x7f0800ef
 
-.field public static final kakao_game_daum_cafe_close:I = 0x7f0800eb
+.field public static final kakao_game_daum_cafe_close:I = 0x7f0800f0
 
-.field public static final kakao_game_daum_cafe_logo:I = 0x7f0800ec
+.field public static final kakao_game_daum_cafe_logo:I = 0x7f0800f1
 
-.field public static final kakao_game_screenshot_icon:I = 0x7f0800ed
+.field public static final kakao_game_screenshot_icon:I = 0x7f0800f2
 
-.field public static final kakao_game_screenshot_rectangle:I = 0x7f0800ee
+.field public static final kakao_game_screenshot_rectangle:I = 0x7f0800f3
 
-.field public static final kakao_game_screenshot_square:I = 0x7f0800ef
+.field public static final kakao_game_screenshot_square:I = 0x7f0800f4
 
-.field public static final kakao_game_sdk_close_icon:I = 0x7f0800f0
+.field public static final kakao_game_sdk_close_icon:I = 0x7f0800f5
 
-.field public static final kakao_game_sdk_off_icon:I = 0x7f0800f1
+.field public static final kakao_game_sdk_off_icon:I = 0x7f0800f6
 
-.field public static final kakao_game_sdk_on_icon:I = 0x7f0800f2
+.field public static final kakao_game_sdk_on_icon:I = 0x7f0800f7
 
-.field public static final kakao_game_sdk_watermark_img:I = 0x7f0800f3
+.field public static final kakao_game_sdk_watermark_img:I = 0x7f0800f8
 
-.field public static final loading:I = 0x7f0800ff
+.field public static final loading:I = 0x7f080104
 
-.field public static final login_bg_popup_box:I = 0x7f080100
+.field public static final login_bg_popup_box:I = 0x7f080105
 
-.field public static final login_bg_popup_fb:I = 0x7f080101
+.field public static final login_bg_popup_fb:I = 0x7f080106
 
-.field public static final login_bg_popup_google:I = 0x7f080102
+.field public static final login_bg_popup_google:I = 0x7f080107
 
-.field public static final login_bg_popup_guest:I = 0x7f080103
+.field public static final login_bg_popup_guest:I = 0x7f080108
 
-.field public static final login_bg_popup_layer:I = 0x7f080104
+.field public static final login_bg_popup_layer:I = 0x7f080109
 
-.field public static final login_bg_popup_talk:I = 0x7f080105
+.field public static final login_bg_popup_talk:I = 0x7f08010a
 
-.field public static final login_bg_start:I = 0x7f080106
+.field public static final login_bg_start:I = 0x7f08010b
 
-.field public static final login_ico_close:I = 0x7f080107
+.field public static final login_ico_close:I = 0x7f08010c
 
-.field public static final login_ico_fb:I = 0x7f080108
+.field public static final login_ico_fb:I = 0x7f08010d
 
-.field public static final login_ico_fb_blue:I = 0x7f080109
+.field public static final login_ico_fb_blue:I = 0x7f08010e
 
-.field public static final login_ico_fb_white:I = 0x7f08010a
+.field public static final login_ico_fb_white:I = 0x7f08010f
 
-.field public static final login_ico_google:I = 0x7f08010b
+.field public static final login_ico_google:I = 0x7f080110
 
-.field public static final login_ico_google_blue:I = 0x7f08010c
+.field public static final login_ico_google_blue:I = 0x7f080111
 
-.field public static final login_ico_google_white:I = 0x7f08010d
+.field public static final login_ico_google_white:I = 0x7f080112
 
-.field public static final login_ico_guest:I = 0x7f08010e
+.field public static final login_ico_guest:I = 0x7f080113
 
-.field public static final login_ico_guest2:I = 0x7f08010f
+.field public static final login_ico_guest2:I = 0x7f080114
 
-.field public static final login_ico_guest_black:I = 0x7f080110
+.field public static final login_ico_guest_black:I = 0x7f080115
 
-.field public static final login_ico_siwa:I = 0x7f080111
+.field public static final login_ico_siwa:I = 0x7f080116
 
-.field public static final login_ico_talk_black:I = 0x7f080112
+.field public static final login_ico_talk_black:I = 0x7f080117
 
-.field public static final login_ico_talk_brown:I = 0x7f080113
+.field public static final login_ico_talk_brown:I = 0x7f080118
 
-.field public static final login_ico_twitter:I = 0x7f080114
+.field public static final login_ico_twitter:I = 0x7f080119
 
-.field public static final login_img_logo:I = 0x7f080115
+.field public static final login_img_logo:I = 0x7f08011a
 
-.field public static final login_img_popup_bar_fb:I = 0x7f080116
+.field public static final login_img_popup_bar_fb:I = 0x7f08011b
 
-.field public static final login_img_popup_bar_google:I = 0x7f080117
+.field public static final login_img_popup_bar_google:I = 0x7f08011c
 
-.field public static final login_img_popup_bar_guest:I = 0x7f080118
+.field public static final login_img_popup_bar_guest:I = 0x7f08011d
 
-.field public static final login_img_popup_bar_talk:I = 0x7f080119
+.field public static final login_img_popup_bar_talk:I = 0x7f08011e
 
-.field public static final login_img_ryan:I = 0x7f08011a
+.field public static final login_img_ryan:I = 0x7f08011f
 
-.field public static final login_img_ryan_land:I = 0x7f08011b
+.field public static final login_img_ryan_land:I = 0x7f080120
 
-.field public static final notification_action_background:I = 0x7f080136
+.field public static final notification_action_background:I = 0x7f08013b
 
-.field public static final notification_bg:I = 0x7f080137
+.field public static final notification_bg:I = 0x7f08013c
 
-.field public static final notification_bg_low:I = 0x7f080138
+.field public static final notification_bg_low:I = 0x7f08013d
 
-.field public static final notification_bg_low_normal:I = 0x7f080139
+.field public static final notification_bg_low_normal:I = 0x7f08013e
 
-.field public static final notification_bg_low_pressed:I = 0x7f08013a
+.field public static final notification_bg_low_pressed:I = 0x7f08013f
 
-.field public static final notification_bg_normal:I = 0x7f08013b
+.field public static final notification_bg_normal:I = 0x7f080140
 
-.field public static final notification_bg_normal_pressed:I = 0x7f08013c
+.field public static final notification_bg_normal_pressed:I = 0x7f080141
 
-.field public static final notification_icon_background:I = 0x7f08013d
+.field public static final notification_icon_background:I = 0x7f080142
 
-.field public static final notification_template_icon_bg:I = 0x7f08013e
+.field public static final notification_template_icon_bg:I = 0x7f080143
 
-.field public static final notification_template_icon_low_bg:I = 0x7f08013f
+.field public static final notification_template_icon_low_bg:I = 0x7f080144
 
-.field public static final notification_tile_bg:I = 0x7f080140
+.field public static final notification_tile_bg:I = 0x7f080145
 
-.field public static final notify_panel_notification_icon_bg:I = 0x7f080141
+.field public static final notify_panel_notification_icon_bg:I = 0x7f080146
 
-.field public static final popup_coupon_inputbox:I = 0x7f080148
+.field public static final popup_coupon_inputbox:I = 0x7f08014d
 
-.field public static final popup_promotion_btn_check:I = 0x7f080149
+.field public static final popup_promotion_btn_check:I = 0x7f08014e
 
-.field public static final popup_promotion_btn_checked:I = 0x7f08014a
+.field public static final popup_promotion_btn_checked:I = 0x7f08014f
 
-.field public static final popup_promotion_btn_close:I = 0x7f08014b
+.field public static final popup_promotion_btn_close:I = 0x7f080150
 
-.field public static final tooltip_frame_dark:I = 0x7f080160
+.field public static final tooltip_frame_dark:I = 0x7f080167
 
-.field public static final tooltip_frame_light:I = 0x7f080161
+.field public static final tooltip_frame_light:I = 0x7f080168
 
-.field public static final zinny_sdk_popup_bg:I = 0x7f080167
+.field public static final zinny_sdk_popup_bg:I = 0x7f08016e
 
-.field public static final zinny_sdk_popup_bottom_bg:I = 0x7f080168
+.field public static final zinny_sdk_popup_bottom_bg:I = 0x7f08016f
 
-.field public static final zinny_sdk_popup_bottom_bg_left:I = 0x7f080169
+.field public static final zinny_sdk_popup_bottom_bg_left:I = 0x7f080170
 
-.field public static final zinny_sdk_popup_bottom_bg_right:I = 0x7f08016a
+.field public static final zinny_sdk_popup_bottom_bg_right:I = 0x7f080171
 
-.field public static final zinny_sdk_popup_item_grey:I = 0x7f08016b
+.field public static final zinny_sdk_popup_item_grey:I = 0x7f080172
 
-.field public static final zinny_sdk_popup_item_white:I = 0x7f08016c
+.field public static final zinny_sdk_popup_item_white:I = 0x7f080173
 
-.field public static final zinny_sdk_popup_item_yellow:I = 0x7f08016d
+.field public static final zinny_sdk_popup_item_yellow:I = 0x7f080174
 
 
 # direct methods

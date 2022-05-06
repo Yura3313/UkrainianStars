@@ -3,7 +3,7 @@
 .source "AbsActionBarView.java"
 
 # interfaces
-.implements Lf0/y;
+.implements Lf0/x;
 
 
 # annotations
@@ -71,7 +71,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p1, Landroidx/appcompat/widget/a;->k:Lf0/x;
+    iput-object v0, p1, Landroidx/appcompat/widget/a;->l:Lf0/w;
 
     .line 3
     iget v0, p0, Landroidx/appcompat/widget/a$a;->b:I
@@ -81,21 +81,7 @@
     return-void
 .end method
 
-.method public c(Lf0/x;I)Landroidx/appcompat/widget/a$a;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/a$a;->c:Landroidx/appcompat/widget/a;
-
-    iput-object p1, v0, Landroidx/appcompat/widget/a;->k:Lf0/x;
-
-    .line 2
-    iput p2, p0, Landroidx/appcompat/widget/a$a;->b:I
-
-    return-object p0
-.end method
-
-.method public g(Landroid/view/View;)V
+.method public c(Landroid/view/View;)V
     .locals 1
 
     .line 1
@@ -109,4 +95,18 @@
     iput-boolean v0, p0, Landroidx/appcompat/widget/a$a;->a:Z
 
     return-void
+.end method
+
+.method public d(Lf0/w;I)Landroidx/appcompat/widget/a$a;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/widget/a$a;->c:Landroidx/appcompat/widget/a;
+
+    iput-object p1, v0, Landroidx/appcompat/widget/a;->l:Lf0/w;
+
+    .line 2
+    iput p2, p0, Landroidx/appcompat/widget/a$a;->b:I
+
+    return-object p0
 .end method

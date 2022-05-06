@@ -71,7 +71,7 @@
     return p1
 
     :cond_1
-    invoke-static {}, Ly4/x;->j()V
+    invoke-static {}, Ls3/b;->g()V
 
     const/4 p1, 0x0
 

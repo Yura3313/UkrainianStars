@@ -1,6 +1,9 @@
 .class public abstract Lse/t0;
-.super Lse/r0;
-.source "EventLoop.kt"
+.super Lse/w;
+.source "Executors.kt"
+
+# interfaces
+.implements Ljava/io/Closeable;
 
 
 # direct methods
@@ -8,12 +11,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lse/r0;-><init>()V
+    invoke-direct {p0}, Lse/w;-><init>()V
 
     return-void
-.end method
-
-
-# virtual methods
-.method public abstract v()Ljava/lang/Thread;
 .end method

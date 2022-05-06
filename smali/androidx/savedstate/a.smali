@@ -123,7 +123,7 @@
     .line 1
     iget-object v0, p0, Landroidx/savedstate/a;->a:Li/b;
 
-    invoke-virtual {v0, p1, p2}, Li/b;->d(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Li/b;->e(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -203,7 +203,7 @@
 
     const-string v2, "Class"
 
-    invoke-static {v2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 

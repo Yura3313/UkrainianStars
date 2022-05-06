@@ -1,24 +1,24 @@
 .class public Ld9/n0;
-.super Ly7/g;
+.super Lz7/g;
 .source "MessageListVM.java"
 
 
 # instance fields
-.field public final synthetic b:Lm8/a0;
+.field public final synthetic b:Ln8/w;
 
 .field public final synthetic c:Ld9/q0;
 
 
 # direct methods
-.method public constructor <init>(Ld9/q0;Lm8/a0;)V
+.method public constructor <init>(Ld9/q0;Ln8/w;)V
     .locals 0
 
     .line 1
     iput-object p1, p0, Ld9/n0;->c:Ld9/q0;
 
-    iput-object p2, p0, Ld9/n0;->b:Lm8/a0;
+    iput-object p2, p0, Ld9/n0;->b:Ln8/w;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -33,7 +33,7 @@
 
     iget-object v0, v0, Ld9/q0;->d:Ljava/util/List;
 
-    iget-object v1, p0, Ld9/n0;->b:Lm8/a0;
+    iget-object v1, p0, Ld9/n0;->b:Ln8/w;
 
     invoke-interface {v0, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -44,7 +44,7 @@
     .line 2
     iget-object v0, p0, Ld9/n0;->c:Ld9/q0;
 
-    iget-object v1, p0, Ld9/n0;->b:Lm8/a0;
+    iget-object v1, p0, Ld9/n0;->b:Ln8/w;
 
     .line 3
     iget-object v2, v0, Ld9/q0;->d:Ljava/util/List;
@@ -61,7 +61,7 @@
 
     .line 4
     :cond_0
-    invoke-virtual {v0, v2}, Ld9/q0;->l(I)Lm8/a0;
+    invoke-virtual {v0, v2}, Ld9/q0;->l(I)Ln8/w;
 
     move-result-object v3
 
@@ -75,7 +75,7 @@
     add-int/lit8 v5, v2, -0x1
 
     .line 5
-    invoke-virtual {v0, v5}, Ld9/q0;->l(I)Lm8/a0;
+    invoke-virtual {v0, v5}, Ld9/q0;->l(I)Ln8/w;
 
     move-result-object v5
 
@@ -84,9 +84,9 @@
     if-eqz v5, :cond_2
 
     .line 6
-    iget-wide v7, v3, Lm8/a0;->w:J
+    iget-wide v7, v3, Ln8/w;->x:J
 
-    iget-wide v9, v5, Lm8/a0;->w:J
+    iget-wide v9, v5, Ln8/w;->x:J
 
     cmp-long v5, v7, v9
 
@@ -98,16 +98,16 @@
     add-int/lit8 v5, v2, 0x1
 
     .line 7
-    invoke-virtual {v0, v5}, Ld9/q0;->l(I)Lm8/a0;
+    invoke-virtual {v0, v5}, Ld9/q0;->l(I)Ln8/w;
 
     move-result-object v5
 
     if-eqz v5, :cond_3
 
     .line 8
-    iget-wide v7, v3, Lm8/a0;->w:J
+    iget-wide v7, v3, Ln8/w;->x:J
 
-    iget-wide v9, v5, Lm8/a0;->w:J
+    iget-wide v9, v5, Ln8/w;->x:J
 
     cmp-long v3, v7, v9
 
@@ -234,7 +234,7 @@
     invoke-virtual {v0, v5, v3, v2}, Ld9/q0;->e(Ljava/util/List;II)Lcom/helpshift/util/a0;
 
     .line 20
-    invoke-virtual {v0, v1}, Ld9/q0;->p(Lm8/a0;)V
+    invoke-virtual {v0, v1}, Ld9/q0;->p(Ln8/w;)V
 
     .line 21
     invoke-virtual {v0}, Ld9/q0;->u()V
@@ -245,16 +245,16 @@
     :cond_7
     iget-object v0, p0, Ld9/n0;->c:Ld9/q0;
 
-    iget-object v1, p0, Ld9/n0;->b:Lm8/a0;
+    iget-object v1, p0, Ld9/n0;->b:Ln8/w;
 
-    invoke-virtual {v0, v1}, Ld9/q0;->p(Lm8/a0;)V
+    invoke-virtual {v0, v1}, Ld9/q0;->p(Ln8/w;)V
 
     .line 23
     iget-object v0, p0, Ld9/n0;->c:Ld9/q0;
 
     new-instance v1, Ljava/util/ArrayList;
 
-    iget-object v2, p0, Ld9/n0;->b:Lm8/a0;
+    iget-object v2, p0, Ld9/n0;->b:Ln8/w;
 
     invoke-static {v2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 

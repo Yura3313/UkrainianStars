@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic g:I
 
 
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
 
-    iput p1, p0, Lk9/b;->a:I
+    iput p1, p0, Lk9/b;->g:I
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -24,10 +24,10 @@
 
 
 # virtual methods
-.method public b()Ljava/util/List;
+.method public c()Ljava/util/List;
     .locals 1
 
-    iget v0, p0, Lk9/b;->a:I
+    iget v0, p0, Lk9/b;->g:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -59,10 +59,10 @@
     .end packed-switch
 .end method
 
-.method public d()Ljava/lang/String;
+.method public f()Ljava/lang/String;
     .locals 2
 
-    iget v0, p0, Lk9/b;->a:I
+    iget v0, p0, Lk9/b;->g:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -70,7 +70,7 @@
 
     .line 1
     :pswitch_0
-    sget-object v0, Lva/a;->a:Ljava/util/Map;
+    sget-object v0, Lta/a;->a:Ljava/util/Map;
 
     const-string v1, "legacy_profile_db"
 
@@ -84,7 +84,7 @@
 
     .line 2
     :goto_0
-    sget-object v0, Lva/a;->a:Ljava/util/Map;
+    sget-object v0, Lta/a;->a:Ljava/util/Map;
 
     const-string v1, "support_kv_db"
 
@@ -102,10 +102,10 @@
     .end packed-switch
 .end method
 
-.method public f()Ljava/util/List;
+.method public g()Ljava/util/List;
     .locals 1
 
-    iget v0, p0, Lk9/b;->a:I
+    iget v0, p0, Lk9/b;->g:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -137,10 +137,34 @@
     .end packed-switch
 .end method
 
-.method public g(I)Ljava/util/List;
+.method public getTag()Ljava/lang/String;
+    .locals 1
+
+    iget v0, p0, Lk9/b;->g:I
+
+    packed-switch v0, :pswitch_data_0
+
+    const-string v0, "Helpshift_SupportKeyValueDB"
+
+    return-object v0
+
+    :pswitch_0
+    const-string v0, "Helpshift_LProfileDB"
+
+    return-object v0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public h(I)Ljava/util/List;
     .locals 2
 
-    iget v0, p0, Lk9/b;->a:I
+    iget v0, p0, Lk9/b;->g:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -194,34 +218,10 @@
     .end packed-switch
 .end method
 
-.method public getTag()Ljava/lang/String;
+.method public i()I
     .locals 1
 
-    iget v0, p0, Lk9/b;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    const-string v0, "Helpshift_SupportKeyValueDB"
-
-    return-object v0
-
-    :pswitch_0
-    const-string v0, "Helpshift_LProfileDB"
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public h()I
-    .locals 1
-
-    iget v0, p0, Lk9/b;->a:I
+    iget v0, p0, Lk9/b;->g:I
 
     packed-switch v0, :pswitch_data_0
 

@@ -32,13 +32,13 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/j;Landroidx/lifecycle/o;)V
+.method public constructor <init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/j;Landroidx/lifecycle/p;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/lifecycle/j;",
-            "Landroidx/lifecycle/o<",
+            "Landroidx/lifecycle/p<",
             "-TT;>;)V"
         }
     .end annotation
@@ -47,7 +47,7 @@
     iput-object p1, p0, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->f:Landroidx/lifecycle/LiveData;
 
     .line 2
-    invoke-direct {p0, p1, p3}, Landroidx/lifecycle/LiveData$c;-><init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/o;)V
+    invoke-direct {p0, p1, p3}, Landroidx/lifecycle/LiveData$c;-><init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/p;)V
 
     .line 3
     iput-object p2, p0, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->e:Landroidx/lifecycle/j;
@@ -58,7 +58,7 @@
 
 # virtual methods
 .method public a(Landroidx/lifecycle/j;Landroidx/lifecycle/f$b;)V
-    .locals 2
+    .locals 1
 
     .line 1
     iget-object p1, p0, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->e:Landroidx/lifecycle/j;
@@ -73,16 +73,16 @@
     iget-object p1, p1, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 3
-    sget-object p2, Landroidx/lifecycle/f$c;->DESTROYED:Landroidx/lifecycle/f$c;
+    sget-object p2, Landroidx/lifecycle/f$c;->g:Landroidx/lifecycle/f$c;
 
     if-ne p1, p2, :cond_0
 
     .line 4
     iget-object p1, p0, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->f:Landroidx/lifecycle/LiveData;
 
-    iget-object p2, p0, Landroidx/lifecycle/LiveData$c;->a:Landroidx/lifecycle/o;
+    iget-object p2, p0, Landroidx/lifecycle/LiveData$c;->a:Landroidx/lifecycle/p;
 
-    invoke-virtual {p1, p2}, Landroidx/lifecycle/LiveData;->h(Landroidx/lifecycle/o;)V
+    invoke-virtual {p1, p2}, Landroidx/lifecycle/LiveData;->h(Landroidx/lifecycle/p;)V
 
     return-void
 
@@ -93,28 +93,13 @@
     if-eq p2, p1, :cond_1
 
     .line 5
-    iget-object p2, p0, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->e:Landroidx/lifecycle/j;
-
-    invoke-interface {p2}, Landroidx/lifecycle/j;->getLifecycle()Landroidx/lifecycle/f;
-
-    move-result-object p2
-
-    check-cast p2, Landroidx/lifecycle/k;
-
-    .line 6
-    iget-object p2, p2, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
-
-    .line 7
-    sget-object v0, Landroidx/lifecycle/f$c;->STARTED:Landroidx/lifecycle/f$c;
-
-    invoke-virtual {p2, v0}, Landroidx/lifecycle/f$c;->isAtLeast(Landroidx/lifecycle/f$c;)Z
+    invoke-virtual {p0}, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->e()Z
 
     move-result p2
 
-    .line 8
     invoke-virtual {p0, p2}, Landroidx/lifecycle/LiveData$c;->b(Z)V
 
-    .line 9
+    .line 6
     iget-object p2, p0, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->e:Landroidx/lifecycle/j;
 
     invoke-interface {p2}, Landroidx/lifecycle/j;->getLifecycle()Landroidx/lifecycle/f;
@@ -123,14 +108,14 @@
 
     check-cast p2, Landroidx/lifecycle/k;
 
-    .line 10
+    .line 7
     iget-object p2, p2, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
-    move-object v1, p2
+    move-object v0, p2
 
     move-object p2, p1
 
-    move-object p1, v1
+    move-object p1, v0
 
     goto :goto_0
 
@@ -158,7 +143,7 @@
     .line 3
     iget-object v0, v0, Landroidx/lifecycle/k;->a:Li/a;
 
-    invoke-virtual {v0, p0}, Li/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0}, Li/a;->f(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -198,11 +183,22 @@
     iget-object v0, v0, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 3
-    sget-object v1, Landroidx/lifecycle/f$c;->STARTED:Landroidx/lifecycle/f$c;
+    sget-object v1, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
 
-    invoke-virtual {v0, v1}, Landroidx/lifecycle/f$c;->isAtLeast(Landroidx/lifecycle/f$c;)Z
+    .line 4
+    invoke-virtual {v0, v1}, Ljava/lang/Enum;->compareTo(Ljava/lang/Enum;)I
 
     move-result v0
 
+    if-ltz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
     return v0
 .end method

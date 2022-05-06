@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final i:I
+.field public final j:I
 
 
 # direct methods
@@ -36,7 +36,7 @@
     .line 1
     invoke-direct {p0, p2}, Lfe/c;-><init>(Lde/d;)V
 
-    iput p1, p0, Lfe/i;->i:I
+    iput p1, p0, Lfe/i;->j:I
 
     return-void
 .end method
@@ -47,7 +47,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lfe/i;->i:I
+    iget v0, p0, Lfe/i;->j:I
 
     return v0
 .end method
@@ -56,7 +56,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lfe/a;->a:Lde/d;
+    iget-object v0, p0, Lfe/a;->g:Lde/d;
 
     if-nez v0, :cond_0
 
@@ -70,7 +70,7 @@
     const-string v1, "Reflection.renderLambdaToString(this)"
 
     .line 3
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_0
 

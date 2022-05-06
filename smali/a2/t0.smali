@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final synthetic a:Landroid/app/Dialog;
+.field public final synthetic g:Landroid/app/Dialog;
 
-.field public final synthetic b:La2/u0;
+.field public final synthetic h:La2/u0;
 
 
 # direct methods
@@ -14,9 +14,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, La2/t0;->b:La2/u0;
+    iput-object p1, p0, La2/t0;->h:La2/u0;
 
-    iput-object p2, p0, La2/t0;->a:Landroid/app/Dialog;
+    iput-object p2, p0, La2/t0;->g:Landroid/app/Dialog;
 
     invoke-direct {p0}, La2/a0;-><init>()V
 

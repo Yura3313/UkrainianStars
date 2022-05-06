@@ -75,7 +75,7 @@
     const-string v1, "https://"
 
     .line 3
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -133,7 +133,7 @@
 
     const-string v3, "OkHttpClient.Builder()\n \u2026eptor(loggingInterceptor)"
 
-    invoke-static {v2, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v3, 0x0
 

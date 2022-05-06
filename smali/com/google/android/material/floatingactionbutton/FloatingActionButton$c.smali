@@ -28,10 +28,10 @@
 
 
 # instance fields
-.field public final a:Lb4/j;
+.field public final a:Lc4/i;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lb4/j<",
+            "Lc4/i<",
             "TT;>;"
         }
     .end annotation
@@ -41,12 +41,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Lb4/j;)V
+.method public constructor <init>(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Lc4/i;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lb4/j<",
+            "Lc4/i<",
             "TT;>;)V"
         }
     .end annotation
@@ -57,7 +57,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p2, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$c;->a:Lb4/j;
+    iput-object p2, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$c;->a:Lc4/i;
 
     return-void
 .end method
@@ -68,7 +68,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$c;->a:Lb4/j;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$c;->a:Lc4/i;
 
     iget-object v1, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$c;->b:Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
 
@@ -89,7 +89,7 @@
     move-result-object v3
 
     .line 4
-    iget v3, v3, Lcom/google/android/material/bottomappbar/e;->m:F
+    iget v3, v3, Lcom/google/android/material/bottomappbar/e;->l:F
 
     cmpl-float v3, v3, v2
 
@@ -103,13 +103,13 @@
     move-result-object v3
 
     .line 6
-    iput v2, v3, Lcom/google/android/material/bottomappbar/e;->m:F
+    iput v2, v3, Lcom/google/android/material/bottomappbar/e;->l:F
 
     .line 7
     iget-object v2, v0, Lcom/google/android/material/bottomappbar/BottomAppBar$b;->a:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     .line 8
-    iget-object v2, v2, Lcom/google/android/material/bottomappbar/BottomAppBar;->V:Lr4/g;
+    iget-object v2, v2, Lcom/google/android/material/bottomappbar/BottomAppBar;->W:Lr4/g;
 
     .line 9
     invoke-virtual {v2}, Lr4/g;->invalidateSelf()V
@@ -136,7 +136,7 @@
     move-result-object v4
 
     .line 12
-    iget v4, v4, Lcom/google/android/material/bottomappbar/e;->l:F
+    iget v4, v4, Lcom/google/android/material/bottomappbar/e;->k:F
 
     cmpl-float v4, v4, v2
 
@@ -149,13 +149,13 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v2}, Lcom/google/android/material/bottomappbar/e;->h(F)V
+    invoke-virtual {v4, v2}, Lcom/google/android/material/bottomappbar/e;->d(F)V
 
     .line 14
     iget-object v2, v0, Lcom/google/android/material/bottomappbar/BottomAppBar$b;->a:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     .line 15
-    iget-object v2, v2, Lcom/google/android/material/bottomappbar/BottomAppBar;->V:Lr4/g;
+    iget-object v2, v2, Lcom/google/android/material/bottomappbar/BottomAppBar;->W:Lr4/g;
 
     .line 16
     invoke-virtual {v2}, Lr4/g;->invalidateSelf()V
@@ -165,7 +165,7 @@
     iget-object v0, v0, Lcom/google/android/material/bottomappbar/BottomAppBar$b;->a:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     .line 18
-    iget-object v0, v0, Lcom/google/android/material/bottomappbar/BottomAppBar;->V:Lr4/g;
+    iget-object v0, v0, Lcom/google/android/material/bottomappbar/BottomAppBar;->W:Lr4/g;
 
     .line 19
     invoke-virtual {v1}, Landroid/widget/ImageButton;->getVisibility()I
@@ -189,7 +189,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$c;->a:Lb4/j;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$c;->a:Lc4/i;
 
     iget-object v1, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$c;->b:Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
 
@@ -201,7 +201,7 @@
     iget-object v0, v0, Lcom/google/android/material/bottomappbar/BottomAppBar$b;->a:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     .line 3
-    iget-object v0, v0, Lcom/google/android/material/bottomappbar/BottomAppBar;->V:Lr4/g;
+    iget-object v0, v0, Lcom/google/android/material/bottomappbar/BottomAppBar;->W:Lr4/g;
 
     .line 4
     invoke-virtual {v1}, Landroid/widget/ImageButton;->getVisibility()I
@@ -236,9 +236,9 @@
 
     check-cast p1, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$c;
 
-    iget-object p1, p1, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$c;->a:Lb4/j;
+    iget-object p1, p1, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$c;->a:Lc4/i;
 
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$c;->a:Lb4/j;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$c;->a:Lc4/i;
 
     .line 2
     invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -262,7 +262,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$c;->a:Lb4/j;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$c;->a:Lc4/i;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 

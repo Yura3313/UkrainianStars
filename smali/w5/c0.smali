@@ -1,30 +1,26 @@
-.class public final synthetic Lw5/c0;
+.class public final Lw5/c0;
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Ljava/util/concurrent/ThreadFactory;
+.implements Landroid/os/Parcelable$Creator;
 
 
-# static fields
-.field public static final a:Ljava/util/concurrent/ThreadFactory;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/firebase/iid/zzl;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lw5/c0;
-
-    invoke-direct {v0}, Lw5/c0;-><init>()V
-
-    sput-object v0, Lw5/c0;->a:Ljava/util/concurrent/ThreadFactory;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,17 +28,34 @@
 
 
 # virtual methods
-.method public final newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
-    .locals 2
-
-    sget-object v0, Lw5/b0;->a:Ljava/util/concurrent/Executor;
+.method public final synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/lang/Thread;
+    invoke-virtual {p1}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
-    const-string v1, "firebase-iid-executor"
+    move-result-object p1
 
-    invoke-direct {v0, p1, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
+    if-eqz p1, :cond_0
+
+    .line 2
+    new-instance v0, Lcom/google/firebase/iid/zzl;
+
+    invoke-direct {v0, p1}, Lcom/google/firebase/iid/zzl;-><init>(Landroid/os/IBinder;)V
 
     return-object v0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return-object p1
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    new-array p1, p1, [Lcom/google/firebase/iid/zzl;
+
+    return-object p1
 .end method

@@ -105,9 +105,9 @@
     invoke-virtual {v2, v1}, Lcom/adjust/sdk/AdjustConfig;->setUnbotifyLabel(Ljava/lang/Integer;)V
 
     .line 8
-    new-instance p2, Lcom/supercell/titan/k0;
+    new-instance p2, Lcom/supercell/titan/m0;
 
-    invoke-direct {p2, p0}, Lcom/supercell/titan/k0;-><init>(Lcom/supercell/titan/UnbotifyManager;)V
+    invoke-direct {p2, p0}, Lcom/supercell/titan/m0;-><init>(Lcom/supercell/titan/UnbotifyManager;)V
 
     invoke-virtual {v2, p2}, Lcom/adjust/sdk/AdjustConfig;->setOnObservationPackageListener(Lcom/adjust/sdk/OnObservationPackageListener;)V
 

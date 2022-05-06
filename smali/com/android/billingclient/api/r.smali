@@ -61,7 +61,7 @@
     iget-object p1, p0, Lcom/android/billingclient/api/r;->c:Lcom/android/billingclient/api/b;
 
     .line 2
-    invoke-static {p2}, Lcom/google/android/gms/internal/play_billing/zzc;->E0(Landroid/os/IBinder;)Lcom/google/android/gms/internal/play_billing/zzd;
+    invoke-static {p2}, Lcom/google/android/gms/internal/play_billing/zzc;->F0(Landroid/os/IBinder;)Lcom/google/android/gms/internal/play_billing/zzd;
 
     move-result-object p2
 
@@ -141,10 +141,10 @@
     if-eqz v0, :cond_0
 
     .line 5
-    check-cast v0, Lcom/supercell/titan/l;
+    check-cast v0, Lcom/supercell/titan/m;
 
     .line 6
-    iget-object v0, v0, Lcom/supercell/titan/l;->a:Lcom/supercell/titan/PurchaseManagerGoogle;
+    iget-object v0, v0, Lcom/supercell/titan/m;->a:Lcom/supercell/titan/PurchaseManagerGoogle;
 
     const/4 v1, 0x3
 

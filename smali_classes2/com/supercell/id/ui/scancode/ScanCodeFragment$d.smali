@@ -62,19 +62,19 @@
     const/4 v1, 0x0
 
     .line 3
-    iput-boolean v1, v0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->j0:Z
+    iput-boolean v1, v0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->k0:Z
 
     if-eqz p1, :cond_0
 
     .line 4
-    iget-boolean p1, v0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->k0:Z
+    iget-boolean p1, v0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->l0:Z
 
     if-nez p1, :cond_3
 
     const/4 p1, 0x1
 
     .line 5
-    iput-boolean p1, v0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->k0:Z
+    iput-boolean p1, v0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->l0:Z
 
     .line 6
     sget p1, Lcom/supercell/id/R$id;->camera_view:I
@@ -91,7 +91,7 @@
 
     .line 7
     :cond_0
-    iget-object p1, v0, Landroidx/fragment/app/Fragment;->y:Landroidx/fragment/app/w;
+    iget-object p1, v0, Landroidx/fragment/app/Fragment;->z:Landroidx/fragment/app/w;
 
     if-eqz p1, :cond_1
 
@@ -108,7 +108,7 @@
     .line 9
     iget-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$d;->a:Lcom/supercell/id/ui/scancode/ScanCodeFragment;
 
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -125,7 +125,7 @@
     :cond_2
     iget-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$d;->a:Lcom/supercell/id/ui/scancode/ScanCodeFragment;
 
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 

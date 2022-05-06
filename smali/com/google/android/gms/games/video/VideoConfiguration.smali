@@ -16,15 +16,15 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final b:I
-
-.field public final h:Z
+.field public final h:I
 
 .field public final i:Z
 
 .field public final j:Z
+
+.field public final k:Z
 
 
 # direct methods
@@ -94,19 +94,19 @@
     invoke-static {v0}, Lc2/h;->a(Z)V
 
     .line 4
-    iput p1, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->a:I
+    iput p1, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->g:I
 
     .line 5
-    iput p2, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->b:I
+    iput p2, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->h:I
 
     .line 6
-    iput-boolean p3, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->h:Z
+    iput-boolean p3, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->i:Z
 
     .line 7
-    iput-boolean p4, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->i:Z
+    iput-boolean p4, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->j:Z
 
     .line 8
-    iput-boolean p5, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->j:Z
+    iput-boolean p5, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->k:Z
 
     return-void
 .end method
@@ -126,7 +126,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->a:I
+    iget v1, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->g:I
 
     const/4 v2, 0x4
 
@@ -139,7 +139,7 @@
     const/4 v0, 0x2
 
     .line 5
-    iget v1, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->b:I
+    iget v1, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->h:I
 
     .line 6
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -150,7 +150,7 @@
     const/4 v0, 0x7
 
     .line 8
-    iget-boolean v1, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->h:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->i:Z
 
     .line 9
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -161,7 +161,7 @@
     const/16 v0, 0x8
 
     .line 11
-    iget-boolean v1, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->i:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->j:Z
 
     .line 12
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -172,7 +172,7 @@
     const/16 v0, 0x9
 
     .line 14
-    iget-boolean v1, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->j:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->k:Z
 
     .line 15
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V

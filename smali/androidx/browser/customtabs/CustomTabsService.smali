@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Ljava/util/Map;
+.field public final g:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -15,7 +15,7 @@
     .end annotation
 .end field
 
-.field public b:Landroid/support/customtabs/ICustomTabsService$Stub;
+.field public h:Landroid/support/customtabs/ICustomTabsService$Stub;
 
 
 # direct methods
@@ -30,14 +30,14 @@
 
     invoke-direct {v0}, Lm/a;-><init>()V
 
-    iput-object v0, p0, Landroidx/browser/customtabs/CustomTabsService;->a:Ljava/util/Map;
+    iput-object v0, p0, Landroidx/browser/customtabs/CustomTabsService;->g:Ljava/util/Map;
 
     .line 3
     new-instance v0, Landroidx/browser/customtabs/CustomTabsService$a;
 
     invoke-direct {v0, p0}, Landroidx/browser/customtabs/CustomTabsService$a;-><init>(Landroidx/browser/customtabs/CustomTabsService;)V
 
-    iput-object v0, p0, Landroidx/browser/customtabs/CustomTabsService;->b:Landroid/support/customtabs/ICustomTabsService$Stub;
+    iput-object v0, p0, Landroidx/browser/customtabs/CustomTabsService;->h:Landroid/support/customtabs/ICustomTabsService$Stub;
 
     return-void
 .end method
@@ -83,7 +83,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Landroidx/browser/customtabs/CustomTabsService;->b:Landroid/support/customtabs/ICustomTabsService$Stub;
+    iget-object p1, p0, Landroidx/browser/customtabs/CustomTabsService;->h:Landroid/support/customtabs/ICustomTabsService$Stub;
 
     return-object p1
 .end method

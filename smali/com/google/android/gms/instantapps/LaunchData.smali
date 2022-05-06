@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field public final a:Landroid/content/Intent;
-
-.field public final b:Ljava/lang/String;
+.field public final g:Landroid/content/Intent;
 
 .field public final h:Ljava/lang/String;
 
-.field public final i:Lcom/google/android/gms/common/data/BitmapTeleporter;
+.field public final i:Ljava/lang/String;
+
+.field public final j:Lcom/google/android/gms/common/data/BitmapTeleporter;
 
 
 # direct methods
@@ -45,21 +45,21 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/instantapps/LaunchData;->a:Landroid/content/Intent;
+    iput-object p1, p0, Lcom/google/android/gms/instantapps/LaunchData;->g:Landroid/content/Intent;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/instantapps/LaunchData;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/instantapps/LaunchData;->h:Ljava/lang/String;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/instantapps/LaunchData;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/instantapps/LaunchData;->i:Ljava/lang/String;
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/gms/instantapps/LaunchData;->i:Lcom/google/android/gms/common/data/BitmapTeleporter;
+    iput-object p4, p0, Lcom/google/android/gms/instantapps/LaunchData;->j:Lcom/google/android/gms/common/data/BitmapTeleporter;
 
     if-eqz p4, :cond_0
 
     .line 6
-    iget-boolean p1, p4, Lcom/google/android/gms/common/data/BitmapTeleporter;->j:Z
+    iget-boolean p1, p4, Lcom/google/android/gms/common/data/BitmapTeleporter;->k:Z
 
     if-nez p1, :cond_0
 
@@ -68,7 +68,7 @@
 
     new-instance p2, Landroid/os/ParcelFileDescriptor$AutoCloseInputStream;
 
-    iget-object p3, p4, Lcom/google/android/gms/common/data/BitmapTeleporter;->b:Landroid/os/ParcelFileDescriptor;
+    iget-object p3, p4, Lcom/google/android/gms/common/data/BitmapTeleporter;->h:Landroid/os/ParcelFileDescriptor;
 
     .line 8
     invoke-static {p3}, Lc2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
@@ -131,12 +131,12 @@
     invoke-virtual {p2, p1}, Landroid/graphics/Bitmap;->copyPixelsFromBuffer(Ljava/nio/Buffer;)V
 
     .line 18
-    iput-object p2, p4, Lcom/google/android/gms/common/data/BitmapTeleporter;->i:Landroid/graphics/Bitmap;
+    iput-object p2, p4, Lcom/google/android/gms/common/data/BitmapTeleporter;->j:Landroid/graphics/Bitmap;
 
     const/4 p1, 0x1
 
     .line 19
-    iput-boolean p1, p4, Lcom/google/android/gms/common/data/BitmapTeleporter;->j:Z
+    iput-boolean p1, p4, Lcom/google/android/gms/common/data/BitmapTeleporter;->k:Z
 
     goto :goto_1
 
@@ -191,7 +191,7 @@
     const/4 v1, 0x2
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/instantapps/LaunchData;->a:Landroid/content/Intent;
+    iget-object v2, p0, Lcom/google/android/gms/instantapps/LaunchData;->g:Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -201,7 +201,7 @@
     const/4 v1, 0x3
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/gms/instantapps/LaunchData;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/instantapps/LaunchData;->h:Ljava/lang/String;
 
     .line 5
     invoke-static {p1, v1, v2, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
@@ -209,7 +209,7 @@
     const/4 v1, 0x4
 
     .line 6
-    iget-object v2, p0, Lcom/google/android/gms/instantapps/LaunchData;->h:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/instantapps/LaunchData;->i:Ljava/lang/String;
 
     .line 7
     invoke-static {p1, v1, v2, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
@@ -217,7 +217,7 @@
     const/4 v1, 0x5
 
     .line 8
-    iget-object v2, p0, Lcom/google/android/gms/instantapps/LaunchData;->i:Lcom/google/android/gms/common/data/BitmapTeleporter;
+    iget-object v2, p0, Lcom/google/android/gms/instantapps/LaunchData;->j:Lcom/google/android/gms/common/data/BitmapTeleporter;
 
     invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 

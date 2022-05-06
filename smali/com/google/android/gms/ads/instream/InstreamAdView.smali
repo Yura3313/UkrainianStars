@@ -30,11 +30,11 @@
     if-eqz p1, :cond_0
 
     .line 1
-    check-cast p1, Lj3/x3;
+    check-cast p1, Lj3/y3;
 
     .line 2
     :try_start_0
-    iget-object p1, p1, Lj3/x3;->a:Lcom/google/android/gms/internal/ads/zzait;
+    iget-object p1, p1, Lj3/y3;->a:Lcom/google/android/gms/internal/ads/zzait;
 
     .line 3
     new-instance v0, Lcom/google/android/gms/dynamic/ObjectWrapper;
@@ -42,7 +42,7 @@
     invoke-direct {v0, p0}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
 
     .line 4
-    invoke-interface {p1, v0}, Lcom/google/android/gms/internal/ads/zzait;->u5(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+    invoke-interface {p1, v0}, Lcom/google/android/gms/internal/ads/zzait;->v5(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -54,7 +54,7 @@
     const-string v0, "#007 Could not call remote method."
 
     .line 5
-    invoke-static {v0, p1}, Lp0/d;->f(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, p1}, Lj3/cj;->j(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_0
     :goto_0

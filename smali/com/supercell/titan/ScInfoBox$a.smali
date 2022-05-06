@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic a:Landroid/app/Activity;
+.field public final synthetic g:Landroid/app/Activity;
 
-.field public final synthetic b:Lcom/supercell/titan/ScInfoBox;
+.field public final synthetic h:Lcom/supercell/titan/ScInfoBox;
 
 
 # direct methods
@@ -28,9 +28,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/titan/ScInfoBox$a;->b:Lcom/supercell/titan/ScInfoBox;
+    iput-object p1, p0, Lcom/supercell/titan/ScInfoBox$a;->h:Lcom/supercell/titan/ScInfoBox;
 
-    iput-object p2, p0, Lcom/supercell/titan/ScInfoBox$a;->a:Landroid/app/Activity;
+    iput-object p2, p0, Lcom/supercell/titan/ScInfoBox$a;->g:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,10 +43,10 @@
     .locals 8
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/ScInfoBox$a;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/supercell/titan/ScInfoBox$a;->g:Landroid/app/Activity;
 
     .line 2
-    sget v1, Lcom/supercell/titan/ScInfoBox;->f:I
+    sget v1, Lcom/supercell/titan/ScInfoBox;->e:I
 
     .line 3
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
@@ -62,7 +62,7 @@
     .line 4
     new-instance v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
-    iget-object v2, p0, Lcom/supercell/titan/ScInfoBox$a;->a:Landroid/app/Activity;
+    iget-object v2, p0, Lcom/supercell/titan/ScInfoBox$a;->g:Landroid/app/Activity;
 
     invoke-virtual {v2}, Landroid/app/Activity;->getBaseContext()Landroid/content/Context;
 
@@ -74,7 +74,7 @@
     invoke-direct {v0, v2, v3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 6
-    sget v2, Lcom/supercell/titan/ScInfoBox;->f:I
+    sget v2, Lcom/supercell/titan/ScInfoBox;->e:I
 
     .line 7
     invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->setId(I)V
@@ -90,21 +90,21 @@
     invoke-direct {v2, v3, v3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;-><init>(II)V
 
     .line 10
-    iget-object v3, p0, Lcom/supercell/titan/ScInfoBox$a;->a:Landroid/app/Activity;
+    iget-object v3, p0, Lcom/supercell/titan/ScInfoBox$a;->g:Landroid/app/Activity;
 
     invoke-virtual {v3, v0, v2}, Landroid/app/Activity;->addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 11
     :cond_0
-    iget-object v2, p0, Lcom/supercell/titan/ScInfoBox$a;->b:Lcom/supercell/titan/ScInfoBox;
+    iget-object v2, p0, Lcom/supercell/titan/ScInfoBox$a;->h:Lcom/supercell/titan/ScInfoBox;
 
     .line 12
-    iget-object v3, v2, Lcom/supercell/titan/ScInfoBox;->e:Landroid/widget/LinearLayout;
+    iget-object v3, v2, Lcom/supercell/titan/ScInfoBox;->d:Landroid/widget/LinearLayout;
 
     if-nez v3, :cond_1
 
     .line 13
-    iget-object v3, p0, Lcom/supercell/titan/ScInfoBox$a;->a:Landroid/app/Activity;
+    iget-object v3, p0, Lcom/supercell/titan/ScInfoBox$a;->g:Landroid/app/Activity;
 
     invoke-static {v3}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
@@ -119,14 +119,14 @@
     check-cast v3, Landroid/widget/LinearLayout;
 
     .line 14
-    iput-object v3, v2, Lcom/supercell/titan/ScInfoBox;->e:Landroid/widget/LinearLayout;
+    iput-object v3, v2, Lcom/supercell/titan/ScInfoBox;->d:Landroid/widget/LinearLayout;
 
     .line 15
     :cond_1
-    iget-object v2, p0, Lcom/supercell/titan/ScInfoBox$a;->b:Lcom/supercell/titan/ScInfoBox;
+    iget-object v2, p0, Lcom/supercell/titan/ScInfoBox$a;->h:Lcom/supercell/titan/ScInfoBox;
 
     .line 16
-    iget-object v2, v2, Lcom/supercell/titan/ScInfoBox;->e:Landroid/widget/LinearLayout;
+    iget-object v2, v2, Lcom/supercell/titan/ScInfoBox;->d:Landroid/widget/LinearLayout;
 
     .line 17
     invoke-static {}, Landroid/view/View;->generateViewId()I
@@ -136,10 +136,10 @@
     invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->setId(I)V
 
     .line 18
-    iget-object v2, p0, Lcom/supercell/titan/ScInfoBox$a;->b:Lcom/supercell/titan/ScInfoBox;
+    iget-object v2, p0, Lcom/supercell/titan/ScInfoBox$a;->h:Lcom/supercell/titan/ScInfoBox;
 
     .line 19
-    iget-object v2, v2, Lcom/supercell/titan/ScInfoBox;->e:Landroid/widget/LinearLayout;
+    iget-object v2, v2, Lcom/supercell/titan/ScInfoBox;->d:Landroid/widget/LinearLayout;
 
     .line 20
     sget v3, Lcom/supercell/titan/R$id;->infoBoxText:I
@@ -151,7 +151,7 @@
     check-cast v2, Landroid/widget/TextView;
 
     .line 21
-    iget-object v3, p0, Lcom/supercell/titan/ScInfoBox$a;->b:Lcom/supercell/titan/ScInfoBox;
+    iget-object v3, p0, Lcom/supercell/titan/ScInfoBox$a;->h:Lcom/supercell/titan/ScInfoBox;
 
     .line 22
     iget-object v3, v3, Lcom/supercell/titan/ScInfoBox;->a:Ljava/lang/String;
@@ -175,7 +175,7 @@
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 26
-    iget-object v3, p0, Lcom/supercell/titan/ScInfoBox$a;->b:Lcom/supercell/titan/ScInfoBox;
+    iget-object v3, p0, Lcom/supercell/titan/ScInfoBox$a;->h:Lcom/supercell/titan/ScInfoBox;
 
     .line 27
     iget-object v3, v3, Lcom/supercell/titan/ScInfoBox;->a:Ljava/lang/String;
@@ -185,10 +185,10 @@
 
     .line 29
     :goto_0
-    iget-object v2, p0, Lcom/supercell/titan/ScInfoBox$a;->b:Lcom/supercell/titan/ScInfoBox;
+    iget-object v2, p0, Lcom/supercell/titan/ScInfoBox$a;->h:Lcom/supercell/titan/ScInfoBox;
 
     .line 30
-    iget-object v2, v2, Lcom/supercell/titan/ScInfoBox;->e:Landroid/widget/LinearLayout;
+    iget-object v2, v2, Lcom/supercell/titan/ScInfoBox;->d:Landroid/widget/LinearLayout;
 
     .line 31
     sget v3, Lcom/supercell/titan/R$id;->infoBoxButton:I
@@ -200,7 +200,7 @@
     check-cast v2, Landroid/widget/Button;
 
     .line 32
-    iget-object v3, p0, Lcom/supercell/titan/ScInfoBox$a;->b:Lcom/supercell/titan/ScInfoBox;
+    iget-object v3, p0, Lcom/supercell/titan/ScInfoBox$a;->h:Lcom/supercell/titan/ScInfoBox;
 
     .line 33
     iget-object v3, v3, Lcom/supercell/titan/ScInfoBox;->b:Ljava/lang/String;
@@ -222,7 +222,7 @@
     invoke-virtual {v2, v1}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 37
-    iget-object v1, p0, Lcom/supercell/titan/ScInfoBox$a;->b:Lcom/supercell/titan/ScInfoBox;
+    iget-object v1, p0, Lcom/supercell/titan/ScInfoBox$a;->h:Lcom/supercell/titan/ScInfoBox;
 
     .line 38
     iget-object v1, v1, Lcom/supercell/titan/ScInfoBox;->b:Ljava/lang/String;
@@ -243,7 +243,7 @@
     const/high16 v2, 0x41000000    # 8.0f
 
     .line 41
-    iget-object v3, p0, Lcom/supercell/titan/ScInfoBox$a;->a:Landroid/app/Activity;
+    iget-object v3, p0, Lcom/supercell/titan/ScInfoBox$a;->g:Landroid/app/Activity;
 
     .line 42
     invoke-virtual {v3}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
@@ -318,20 +318,20 @@
     invoke-virtual {v2, v1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->b(Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;)V
 
     .line 54
-    iget-object v1, p0, Lcom/supercell/titan/ScInfoBox$a;->b:Lcom/supercell/titan/ScInfoBox;
+    iget-object v1, p0, Lcom/supercell/titan/ScInfoBox$a;->h:Lcom/supercell/titan/ScInfoBox;
 
     .line 55
-    iget-object v1, v1, Lcom/supercell/titan/ScInfoBox;->e:Landroid/widget/LinearLayout;
+    iget-object v1, v1, Lcom/supercell/titan/ScInfoBox;->d:Landroid/widget/LinearLayout;
 
     .line 56
     sget-object v5, Landroid/view/View;->ALPHA:Landroid/util/Property;
 
-    new-array v6, v3, [F
+    new-array v3, v3, [F
 
-    fill-array-data v6, :array_0
+    fill-array-data v3, :array_0
 
     .line 57
-    invoke-static {v1, v5, v6}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
+    invoke-static {v1, v5, v3}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
 
     move-result-object v1
 
@@ -341,97 +341,51 @@
     invoke-virtual {v1, v5, v6}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 59
-    iget-object v7, p0, Lcom/supercell/titan/ScInfoBox$a;->b:Lcom/supercell/titan/ScInfoBox;
+    iget-object v3, p0, Lcom/supercell/titan/ScInfoBox$a;->h:Lcom/supercell/titan/ScInfoBox;
 
     .line 60
-    iget-object v7, v7, Lcom/supercell/titan/ScInfoBox;->e:Landroid/widget/LinearLayout;
+    iget-object v3, v3, Lcom/supercell/titan/ScInfoBox;->d:Landroid/widget/LinearLayout;
 
     .line 61
-    invoke-virtual {v7}, Landroid/widget/LinearLayout;->getParent()Landroid/view/ViewParent;
+    invoke-virtual {v3}, Landroid/widget/LinearLayout;->getParent()Landroid/view/ViewParent;
 
-    move-result-object v7
+    move-result-object v3
 
-    check-cast v7, Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+    check-cast v3, Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
-    if-eqz v7, :cond_4
+    if-eqz v3, :cond_4
 
     return-void
 
     .line 62
     :cond_4
-    iget-object v7, p0, Lcom/supercell/titan/ScInfoBox$a;->b:Lcom/supercell/titan/ScInfoBox;
+    iget-object v3, p0, Lcom/supercell/titan/ScInfoBox$a;->h:Lcom/supercell/titan/ScInfoBox;
 
     .line 63
-    iget-object v7, v7, Lcom/supercell/titan/ScInfoBox;->e:Landroid/widget/LinearLayout;
+    iget-object v3, v3, Lcom/supercell/titan/ScInfoBox;->d:Landroid/widget/LinearLayout;
 
     .line 64
-    invoke-virtual {v7, v4}, Landroid/widget/LinearLayout;->setAlpha(F)V
+    invoke-virtual {v3, v4}, Landroid/widget/LinearLayout;->setAlpha(F)V
 
     .line 65
-    iget-object v4, p0, Lcom/supercell/titan/ScInfoBox$a;->b:Lcom/supercell/titan/ScInfoBox;
+    iget-object v3, p0, Lcom/supercell/titan/ScInfoBox$a;->h:Lcom/supercell/titan/ScInfoBox;
 
     .line 66
-    iget-object v4, v4, Lcom/supercell/titan/ScInfoBox;->e:Landroid/widget/LinearLayout;
+    iget-object v3, v3, Lcom/supercell/titan/ScInfoBox;->d:Landroid/widget/LinearLayout;
 
     .line 67
-    invoke-virtual {v0, v4, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v0, v3, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 68
     invoke-virtual {v1}, Landroid/animation/ObjectAnimator;->start()V
 
-    .line 69
-    iget-object v0, p0, Lcom/supercell/titan/ScInfoBox$a;->b:Lcom/supercell/titan/ScInfoBox;
-
-    .line 70
-    iget-object v0, v0, Lcom/supercell/titan/ScInfoBox;->e:Landroid/widget/LinearLayout;
-
-    .line 71
-    sget-object v1, Landroid/view/View;->ALPHA:Landroid/util/Property;
-
-    new-array v2, v3, [F
-
-    fill-array-data v2, :array_1
-
-    .line 72
-    invoke-static {v0, v1, v2}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
-
-    move-result-object v0
-
-    .line 73
-    invoke-virtual {v0, v5, v6}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
-
-    .line 74
-    iget-object v1, p0, Lcom/supercell/titan/ScInfoBox$a;->b:Lcom/supercell/titan/ScInfoBox;
-
-    .line 75
-    iget v1, v1, Lcom/supercell/titan/ScInfoBox;->c:I
-
-    int-to-long v1, v1
-
-    .line 76
-    invoke-virtual {v0, v1, v2}, Landroid/animation/ObjectAnimator;->setStartDelay(J)V
-
-    .line 77
-    invoke-virtual {v0}, Landroid/animation/ObjectAnimator;->start()V
-
-    .line 78
-    new-instance v1, Lcom/supercell/titan/ScInfoBox$a$c;
-
-    invoke-direct {v1, p0}, Lcom/supercell/titan/ScInfoBox$a$c;-><init>(Lcom/supercell/titan/ScInfoBox$a;)V
-
-    invoke-virtual {v0, v1}, Landroid/animation/ObjectAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
-
     return-void
+
+    nop
 
     :array_0
     .array-data 4
         0x0
         0x3f800000    # 1.0f
-    .end array-data
-
-    :array_1
-    .array-data 4
-        0x3f800000    # 1.0f
-        0x0
     .end array-data
 .end method

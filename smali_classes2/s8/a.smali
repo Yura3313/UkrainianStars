@@ -1,55 +1,48 @@
 .class public Ls8/a;
-.super Ljava/lang/Object;
-.source "AttachmentPickerFile.java"
+.super Lz7/g;
+.source "ConversationController.java"
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:Ljava/lang/Long;
-
-.field public c:Ljava/lang/Object;
-
-.field public d:Ljava/lang/String;
-
-.field public e:Z
-
-.field public f:I
+.field public final synthetic b:Ls8/b;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Long;)V
+.method public constructor <init>(Ls8/b;)V
     .locals 0
 
-    .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    iput-object p1, p0, Ls8/a;->b:Ls8/b;
 
-    .line 6
-    iput-object p1, p0, Ls8/a;->c:Ljava/lang/Object;
-
-    .line 7
-    iput-object p2, p0, Ls8/a;->a:Ljava/lang/String;
-
-    .line 8
-    iput-object p3, p0, Ls8/a;->b:Ljava/lang/Long;
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)V
-    .locals 0
+
+# virtual methods
+.method public declared-synchronized a()V
+    .locals 1
+
+    monitor-enter p0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    :try_start_0
+    iget-object v0, p0, Ls8/a;->b:Ls8/b;
+
+    invoke-virtual {v0}, Ls8/b;->l()Lt8/d;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 2
-    iput-object p1, p0, Ls8/a;->d:Ljava/lang/String;
-
-    .line 3
-    iput-object p2, p0, Ls8/a;->a:Ljava/lang/String;
-
-    .line 4
-    iput-object p3, p0, Ls8/a;->b:Ljava/lang/Long;
+    monitor-exit p0
 
     return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
 .end method

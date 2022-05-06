@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final a:Lae/c;
 
 .field public final b:Ljava/lang/String;
 
@@ -14,7 +14,9 @@
 
 .field public final e:Ljava/lang/String;
 
-.field public final f:Z
+.field public final f:Ljava/lang/String;
+
+.field public final g:Z
 
 
 # direct methods
@@ -26,25 +28,36 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/IdIngameFriend;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/IdIngameFriend;->b:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/id/IdIngameFriend;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/id/IdIngameFriend;->c:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/supercell/id/IdIngameFriend;->c:Ljava/lang/String;
+    iput-object p3, p0, Lcom/supercell/id/IdIngameFriend;->d:Ljava/lang/String;
 
-    iput-object p4, p0, Lcom/supercell/id/IdIngameFriend;->d:Ljava/lang/String;
+    iput-object p4, p0, Lcom/supercell/id/IdIngameFriend;->e:Ljava/lang/String;
 
-    iput-object p5, p0, Lcom/supercell/id/IdIngameFriend;->e:Ljava/lang/String;
+    iput-object p5, p0, Lcom/supercell/id/IdIngameFriend;->f:Ljava/lang/String;
 
-    iput-boolean p6, p0, Lcom/supercell/id/IdIngameFriend;->f:Z
+    iput-boolean p6, p0, Lcom/supercell/id/IdIngameFriend;->g:Z
+
+    .line 2
+    new-instance p1, Lcom/supercell/id/IdIngameFriend$a;
+
+    invoke-direct {p1, p0}, Lcom/supercell/id/IdIngameFriend$a;-><init>(Lcom/supercell/id/IdIngameFriend;)V
+
+    invoke-static {p1}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/supercell/id/IdIngameFriend;->a:Lae/c;
 
     return-void
 
     :cond_0
     const-string p1, "appAccount"
 
-    .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    .line 3
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -58,14 +71,14 @@
 
     if-eqz p8, :cond_0
 
-    iget-object p1, p0, Lcom/supercell/id/IdIngameFriend;->a:Ljava/lang/String;
+    iget-object p1, p0, Lcom/supercell/id/IdIngameFriend;->b:Ljava/lang/String;
 
     :cond_0
     and-int/lit8 p8, p7, 0x2
 
     if-eqz p8, :cond_1
 
-    iget-object p2, p0, Lcom/supercell/id/IdIngameFriend;->b:Ljava/lang/String;
+    iget-object p2, p0, Lcom/supercell/id/IdIngameFriend;->c:Ljava/lang/String;
 
     :cond_1
     move-object p8, p2
@@ -74,7 +87,7 @@
 
     if-eqz p2, :cond_2
 
-    iget-object p3, p0, Lcom/supercell/id/IdIngameFriend;->c:Ljava/lang/String;
+    iget-object p3, p0, Lcom/supercell/id/IdIngameFriend;->d:Ljava/lang/String;
 
     :cond_2
     move-object v0, p3
@@ -83,7 +96,7 @@
 
     if-eqz p2, :cond_3
 
-    iget-object p4, p0, Lcom/supercell/id/IdIngameFriend;->d:Ljava/lang/String;
+    iget-object p4, p0, Lcom/supercell/id/IdIngameFriend;->e:Ljava/lang/String;
 
     :cond_3
     move-object v1, p4
@@ -92,7 +105,7 @@
 
     if-eqz p2, :cond_4
 
-    iget-object p5, p0, Lcom/supercell/id/IdIngameFriend;->e:Ljava/lang/String;
+    iget-object p5, p0, Lcom/supercell/id/IdIngameFriend;->f:Ljava/lang/String;
 
     :cond_4
     move-object v2, p5
@@ -101,7 +114,7 @@
 
     if-eqz p2, :cond_5
 
-    iget-boolean p6, p0, Lcom/supercell/id/IdIngameFriend;->f:Z
+    iget-boolean p6, p0, Lcom/supercell/id/IdIngameFriend;->g:Z
 
     :cond_5
     move v3, p6
@@ -132,7 +145,7 @@
 .method public final component1()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->b:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -140,7 +153,7 @@
 .method public final component2()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->c:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -148,7 +161,7 @@
 .method public final component3()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->d:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -156,7 +169,7 @@
 .method public final component4()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->e:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -164,7 +177,7 @@
 .method public final component5()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->e:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->f:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -172,7 +185,7 @@
 .method public final component6()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/IdIngameFriend;->f:Z
+    iget-boolean v0, p0, Lcom/supercell/id/IdIngameFriend;->g:Z
 
     return v0
 .end method
@@ -206,7 +219,7 @@
     const-string p1, "appAccount"
 
     .line 1
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -217,30 +230,30 @@
     .locals 10
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->c:Ljava/lang/String;
 
-    invoke-static {v0}, Loc/i;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/billingclient/api/t;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->d:Ljava/lang/String;
 
-    invoke-static {v0}, Loc/i;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/billingclient/api/t;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->e:Ljava/lang/String;
 
-    invoke-static {v0}, Loc/i;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/billingclient/api/t;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->e:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->f:Ljava/lang/String;
 
-    invoke-static {v0}, Loc/i;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/billingclient/api/t;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -273,21 +286,11 @@
 
     check-cast p1, Lcom/supercell/id/IdIngameFriend;
 
-    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->a:Ljava/lang/String;
-
-    iget-object v1, p1, Lcom/supercell/id/IdIngameFriend;->a:Ljava/lang/String;
-
-    invoke-static {v0, v1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
     iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->b:Ljava/lang/String;
 
     iget-object v1, p1, Lcom/supercell/id/IdIngameFriend;->b:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -297,7 +300,7 @@
 
     iget-object v1, p1, Lcom/supercell/id/IdIngameFriend;->c:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -307,7 +310,7 @@
 
     iget-object v1, p1, Lcom/supercell/id/IdIngameFriend;->d:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -317,15 +320,25 @@
 
     iget-object v1, p1, Lcom/supercell/id/IdIngameFriend;->e:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/supercell/id/IdIngameFriend;->f:Z
+    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->f:Ljava/lang/String;
 
-    iget-boolean p1, p1, Lcom/supercell/id/IdIngameFriend;->f:Z
+    iget-object v1, p1, Lcom/supercell/id/IdIngameFriend;->f:Ljava/lang/String;
+
+    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-boolean v0, p0, Lcom/supercell/id/IdIngameFriend;->g:Z
+
+    iget-boolean p1, p1, Lcom/supercell/id/IdIngameFriend;->g:Z
 
     if-ne v0, p1, :cond_0
 
@@ -343,34 +356,21 @@
     return p1
 .end method
 
+.method public final getAccount()Lqc/d0;
+    .locals 1
+
+    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->a:Lae/c;
+
+    invoke-interface {v0}, Lae/c;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lqc/d0;
+
+    return-object v0
+.end method
+
 .method public final getAppAccount()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->a:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final getImageUrl()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->e:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final getRealname()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->d:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final getSupercellId()Ljava/lang/String;
     .locals 1
 
     .line 1
@@ -379,7 +379,25 @@
     return-object v0
 .end method
 
-.method public final getUsername()Ljava/lang/String;
+.method public final getImageUrl()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->f:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final getRealname()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->e:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final getSupercellId()Ljava/lang/String;
     .locals 1
 
     .line 1
@@ -388,10 +406,19 @@
     return-object v0
 .end method
 
+.method public final getUsername()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->d:Ljava/lang/String;
+
+    return-object v0
+.end method
+
 .method public hashCode()I
     .locals 3
 
-    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->b:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -409,7 +436,7 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/IdIngameFriend;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/IdIngameFriend;->c:Ljava/lang/String;
 
     if-eqz v2, :cond_1
 
@@ -427,7 +454,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/IdIngameFriend;->c:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/IdIngameFriend;->d:Ljava/lang/String;
 
     if-eqz v2, :cond_2
 
@@ -445,7 +472,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/IdIngameFriend;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/IdIngameFriend;->e:Ljava/lang/String;
 
     if-eqz v2, :cond_3
 
@@ -463,7 +490,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/IdIngameFriend;->e:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/IdIngameFriend;->f:Ljava/lang/String;
 
     if-eqz v2, :cond_4
 
@@ -476,7 +503,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-boolean v1, p0, Lcom/supercell/id/IdIngameFriend;->f:Z
+    iget-boolean v1, p0, Lcom/supercell/id/IdIngameFriend;->g:Z
 
     if-eqz v1, :cond_5
 
@@ -492,7 +519,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/supercell/id/IdIngameFriend;->f:Z
+    iget-boolean v0, p0, Lcom/supercell/id/IdIngameFriend;->g:Z
 
     return v0
 .end method
@@ -502,11 +529,11 @@
 
     const-string v0, "IdIngameFriend(appAccount="
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/IdIngameFriend;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/IdIngameFriend;->b:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -514,7 +541,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/IdIngameFriend;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/IdIngameFriend;->c:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -522,7 +549,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/IdIngameFriend;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/IdIngameFriend;->d:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -530,7 +557,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/IdIngameFriend;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/IdIngameFriend;->e:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -538,7 +565,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/IdIngameFriend;->e:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/IdIngameFriend;->f:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -546,11 +573,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/supercell/id/IdIngameFriend;->f:Z
+    iget-boolean v1, p0, Lcom/supercell/id/IdIngameFriend;->g:Z
 
     const-string v2, ")"
 
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/i;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/i;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

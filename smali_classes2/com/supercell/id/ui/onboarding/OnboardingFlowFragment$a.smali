@@ -23,21 +23,21 @@
         "[",
         "Lke/a<",
         "+",
-        "Luc/v;",
+        "Lrc/w;",
         ">;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$a;->a:Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$a;->g:Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
 
     const/4 p1, 0x0
 
@@ -56,35 +56,35 @@
     new-array v0, v0, [Lke/a;
 
     .line 1
-    sget-object v1, Lcom/supercell/id/ui/onboarding/a;->a:Lcom/supercell/id/ui/onboarding/a;
+    sget-object v1, Lcom/supercell/id/ui/onboarding/a;->g:Lcom/supercell/id/ui/onboarding/a;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
     .line 2
-    sget-object v1, Lcom/supercell/id/ui/onboarding/b;->a:Lcom/supercell/id/ui/onboarding/b;
+    sget-object v1, Lcom/supercell/id/ui/onboarding/b;->g:Lcom/supercell/id/ui/onboarding/b;
 
     const/4 v3, 0x1
 
     aput-object v1, v0, v3
 
     .line 3
-    sget-object v1, Lcom/supercell/id/ui/onboarding/c;->a:Lcom/supercell/id/ui/onboarding/c;
+    sget-object v1, Lcom/supercell/id/ui/onboarding/c;->g:Lcom/supercell/id/ui/onboarding/c;
 
     const/4 v3, 0x2
 
     aput-object v1, v0, v3
 
     .line 4
-    sget-object v1, Lcom/supercell/id/ui/onboarding/d;->a:Lcom/supercell/id/ui/onboarding/d;
+    sget-object v1, Lcom/supercell/id/ui/onboarding/d;->g:Lcom/supercell/id/ui/onboarding/d;
 
-    iget-object v3, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$a;->a:Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
+    iget-object v3, p0, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$a;->g:Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
 
-    sget v4, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->n0:I
+    sget v4, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->o0:I
 
     .line 5
-    invoke-static {v3}, Lb0/g;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-static {v3}, Lrc/b;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v3
 
@@ -95,7 +95,7 @@
     if-eqz v3, :cond_0
 
     .line 6
-    iget-boolean v3, v3, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->j:Z
+    iget-boolean v3, v3, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment$BackStackEntry;->k:Z
 
     .line 7
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -111,7 +111,7 @@
     :goto_0
     sget-object v5, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    invoke-static {v3, v5}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v5}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -128,7 +128,7 @@
     aput-object v1, v0, v3
 
     .line 9
-    invoke-static {v0}, Landroidx/savedstate/d;->x([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lb5/m;->o([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 

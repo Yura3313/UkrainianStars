@@ -3,7 +3,7 @@
 .source "AesCtrJceCipher.java"
 
 # interfaces
-.implements Lp5/c0;
+.implements Lp5/d0;
 
 
 # static fields
@@ -167,7 +167,7 @@
 
     const-string v0, "plaintext length can not exceed "
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

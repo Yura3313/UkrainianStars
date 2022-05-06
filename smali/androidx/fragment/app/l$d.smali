@@ -3,7 +3,7 @@
 .source "DialogFragment.java"
 
 # interfaces
-.implements Landroidx/lifecycle/o;
+.implements Landroidx/lifecycle/p;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Landroidx/lifecycle/o<",
+        "Landroidx/lifecycle/p<",
         "Landroidx/lifecycle/j;",
         ">;"
     }
@@ -61,12 +61,12 @@
     iget-object p1, p0, Landroidx/fragment/app/l$d;->a:Landroidx/fragment/app/l;
 
     .line 3
-    iget-boolean v0, p1, Landroidx/fragment/app/l;->i0:Z
+    iget-boolean v0, p1, Landroidx/fragment/app/l;->j0:Z
 
     if-eqz v0, :cond_2
 
     .line 4
-    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->F0()Landroid/view/View;
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->E0()Landroid/view/View;
 
     move-result-object p1
 
@@ -81,7 +81,7 @@
     iget-object v0, p0, Landroidx/fragment/app/l$d;->a:Landroidx/fragment/app/l;
 
     .line 7
-    iget-object v0, v0, Landroidx/fragment/app/l;->m0:Landroid/app/Dialog;
+    iget-object v0, v0, Landroidx/fragment/app/l;->n0:Landroid/app/Dialog;
 
     if-eqz v0, :cond_2
 
@@ -98,17 +98,17 @@
     iget-object v0, p0, Landroidx/fragment/app/l$d;->a:Landroidx/fragment/app/l;
 
     .line 10
-    iget-object v0, v0, Landroidx/fragment/app/l;->m0:Landroid/app/Dialog;
+    iget-object v0, v0, Landroidx/fragment/app/l;->n0:Landroid/app/Dialog;
 
     .line 11
-    invoke-static {v0}, Landroid/support/v4/media/a;->b(Ljava/lang/Object;)V
+    invoke-static {v0}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
 
     .line 12
     :cond_0
     iget-object v0, p0, Landroidx/fragment/app/l$d;->a:Landroidx/fragment/app/l;
 
     .line 13
-    iget-object v0, v0, Landroidx/fragment/app/l;->m0:Landroid/app/Dialog;
+    iget-object v0, v0, Landroidx/fragment/app/l;->n0:Landroid/app/Dialog;
 
     .line 14
     invoke-virtual {v0, p1}, Landroid/app/Dialog;->setContentView(Landroid/view/View;)V

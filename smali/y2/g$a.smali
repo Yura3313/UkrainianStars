@@ -24,7 +24,7 @@
 
 
 # instance fields
-.field public final a:La2/d;
+.field public final g:La2/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "La2/d<",
@@ -53,7 +53,7 @@
     .line 2
     invoke-static {p1, v0}, Lc2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iput-object p1, p0, Ly2/g$a;->a:La2/d;
+    iput-object p1, p0, Ly2/g$a;->g:La2/d;
 
     return-void
 .end method

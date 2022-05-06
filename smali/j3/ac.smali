@@ -2,129 +2,50 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
+
 
 # instance fields
-.field public final a:[Ljava/lang/String;
-
-.field public final b:[D
-
-.field public final c:[D
-
-.field public final d:[I
-
-.field public e:I
+.field public final synthetic g:Lj3/xb;
 
 
 # direct methods
-.method public constructor <init>(Lj3/u4;Lj3/zb;)V
-    .locals 2
+.method public constructor <init>(Lj3/xb;)V
+    .locals 0
 
     .line 1
+    iput-object p1, p0, Lj3/ac;->g:Lj3/xb;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iget-object p2, p1, Lj3/u4;->b:Ljava/lang/Object;
-
-    check-cast p2, Ljava/util/List;
-
-    .line 3
-    invoke-interface {p2}, Ljava/util/List;->size()I
-
-    move-result p2
-
-    .line 4
-    iget-object v0, p1, Lj3/u4;->a:Ljava/lang/Object;
-
-    check-cast v0, Ljava/util/List;
-
-    .line 5
-    new-array v1, p2, [Ljava/lang/String;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, [Ljava/lang/String;
-
-    iput-object v0, p0, Lj3/ac;->a:[Ljava/lang/String;
-
-    .line 6
-    iget-object v0, p1, Lj3/u4;->b:Ljava/lang/Object;
-
-    check-cast v0, Ljava/util/List;
-
-    .line 7
-    invoke-static {v0}, Lj3/ac;->a(Ljava/util/List;)[D
-
-    move-result-object v0
-
-    iput-object v0, p0, Lj3/ac;->b:[D
-
-    .line 8
-    iget-object p1, p1, Lj3/u4;->c:Ljava/lang/Object;
-
-    check-cast p1, Ljava/util/List;
-
-    .line 9
-    invoke-static {p1}, Lj3/ac;->a(Ljava/util/List;)[D
-
-    move-result-object p1
-
-    iput-object p1, p0, Lj3/ac;->c:[D
-
-    .line 10
-    new-array p1, p2, [I
-
-    iput-object p1, p0, Lj3/ac;->d:[I
-
-    const/4 p1, 0x0
-
-    .line 11
-    iput p1, p0, Lj3/ac;->e:I
 
     return-void
 .end method
 
-.method public static a(Ljava/util/List;)[D
-    .locals 5
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/Double;",
-            ">;)[D"
-        }
-    .end annotation
+
+# virtual methods
+.method public final onClick(Landroid/content/DialogInterface;I)V
+    .locals 0
 
     .line 1
-    invoke-interface {p0}, Ljava/util/List;->size()I
+    sget-object p1, Lh1/o;->B:Lh1/o;
 
-    move-result v0
-
-    new-array v1, v0, [D
-
-    const/4 v2, 0x0
-
-    :goto_0
-    if-ge v2, v0, :cond_0
+    iget-object p1, p1, Lh1/o;->c:Lj3/bb;
 
     .line 2
-    invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    iget-object p1, p0, Lj3/ac;->g:Lj3/xb;
 
-    move-result-object v3
+    iget-object p1, p1, Lj3/xb;->g:Landroid/content/Context;
 
-    check-cast v3, Ljava/lang/Double;
+    const-string p2, "https://support.google.com/dfp_premium/answer/7160685#push"
 
-    invoke-virtual {v3}, Ljava/lang/Double;->doubleValue()D
+    .line 3
+    invoke-static {p2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    move-result-wide v3
+    move-result-object p2
 
-    aput-wide v3, v1, v2
+    .line 4
+    invoke-static {p1, p2}, Lj3/bb;->e(Landroid/content/Context;Landroid/net/Uri;)V
 
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    return-object v1
+    return-void
 .end method

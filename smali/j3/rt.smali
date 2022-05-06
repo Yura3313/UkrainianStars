@@ -2,49 +2,54 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
-
-
-# instance fields
-.field public a:Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TT;"
-        }
-    .end annotation
-.end field
-
-.field public b:Ljava/util/concurrent/Executor;
+# interfaces
+.implements Lj3/vq;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
+.method public constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Ljava/util/concurrent/Executor;",
-            ")V"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Lj3/rt;->a:Ljava/lang/Object;
+    return-void
+.end method
 
-    .line 3
-    iput-object p2, p0, Lj3/rt;->b:Ljava/util/concurrent/Executor;
+
+# virtual methods
+.method public final A()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final D()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final P()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final d(Lcom/google/android/gms/internal/ads/zzatj;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final f0()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final h0()V
+    .locals 0
 
     return-void
 .end method

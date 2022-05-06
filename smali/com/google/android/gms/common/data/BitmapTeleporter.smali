@@ -22,15 +22,15 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public b:Landroid/os/ParcelFileDescriptor;
+.field public h:Landroid/os/ParcelFileDescriptor;
 
-.field public final h:I
+.field public final i:I
 
-.field public i:Landroid/graphics/Bitmap;
+.field public j:Landroid/graphics/Bitmap;
 
-.field public j:Z
+.field public k:Z
 
 
 # direct methods
@@ -54,23 +54,23 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->a:I
+    iput p1, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->g:I
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->b:Landroid/os/ParcelFileDescriptor;
+    iput-object p2, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->h:Landroid/os/ParcelFileDescriptor;
 
     .line 4
-    iput p3, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->h:I
+    iput p3, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->i:I
 
     const/4 p1, 0x0
 
     .line 5
-    iput-object p1, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->i:Landroid/graphics/Bitmap;
+    iput-object p1, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->j:Landroid/graphics/Bitmap;
 
     const/4 p1, 0x0
 
     .line 6
-    iput-boolean p1, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->j:Z
+    iput-boolean p1, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->k:Z
 
     return-void
 .end method
@@ -85,7 +85,7 @@
     .end param
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->b:Landroid/os/ParcelFileDescriptor;
+    iget-object v0, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->h:Landroid/os/ParcelFileDescriptor;
 
     if-eqz v0, :cond_0
 
@@ -101,7 +101,7 @@
     move-result v1
 
     .line 3
-    iget v2, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->a:I
+    iget v2, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->g:I
 
     const/4 v3, 0x4
 
@@ -114,7 +114,7 @@
     const/4 v0, 0x2
 
     .line 6
-    iget-object v2, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->b:Landroid/os/ParcelFileDescriptor;
+    iget-object v2, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->h:Landroid/os/ParcelFileDescriptor;
 
     const/4 v4, 0x0
 
@@ -123,7 +123,7 @@
     const/4 p2, 0x3
 
     .line 7
-    iget v0, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->h:I
+    iget v0, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->i:I
 
     .line 8
     invoke-static {p1, p2, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -137,13 +137,13 @@
     const/4 p1, 0x0
 
     .line 11
-    iput-object p1, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->b:Landroid/os/ParcelFileDescriptor;
+    iput-object p1, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->h:Landroid/os/ParcelFileDescriptor;
 
     return-void
 
     .line 12
     :cond_0
-    iget-object p1, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->i:Landroid/graphics/Bitmap;
+    iget-object p1, p0, Lcom/google/android/gms/common/data/BitmapTeleporter;->j:Landroid/graphics/Bitmap;
 
     invoke-static {p1}, Lc2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 

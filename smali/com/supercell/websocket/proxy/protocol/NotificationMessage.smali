@@ -9,8 +9,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/supercell/websocket/proxy/protocol/NotificationMessage$c;,
-        Lcom/supercell/websocket/proxy/protocol/NotificationMessage$b;
+        Lcom/supercell/websocket/proxy/protocol/NotificationMessage$b;,
+        Lcom/supercell/websocket/proxy/protocol/NotificationMessage$c;
     }
 .end annotation
 
@@ -88,7 +88,7 @@
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite;-><init>()V
 
     .line 2
-    sget-object v0, Lcom/google/protobuf/i;->b:Lcom/google/protobuf/i;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i;
 
     iput-object v0, p0, Lcom/supercell/websocket/proxy/protocol/NotificationMessage;->data_:Lcom/google/protobuf/i;
 
@@ -330,7 +330,7 @@
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$b;->d()V
 
     .line 7
-    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$b;->b:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$b;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     invoke-virtual {v0, v1, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->g(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/GeneratedMessageLite;)V
 
@@ -383,7 +383,7 @@
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$b;->d()V
 
     .line 7
-    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$b;->b:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$b;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     invoke-virtual {v0, v1, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->g(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/GeneratedMessageLite;)V
 
@@ -436,7 +436,7 @@
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$b;->d()V
 
     .line 7
-    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$b;->b:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$b;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     invoke-virtual {v0, v1, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->g(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/GeneratedMessageLite;)V
 
@@ -790,7 +790,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p1}, Lcom/supercell/websocket/proxy/protocol/NotificationMessage$c;->getNumber()I
+    invoke-virtual {p1}, Lcom/supercell/websocket/proxy/protocol/NotificationMessage$c;->b()I
 
     move-result p1
 
@@ -826,13 +826,9 @@
     .locals 1
 
     .line 1
-    sget-object p2, Lcom/supercell/websocket/proxy/protocol/NotificationMessage$a;->a:[I
-
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
     move-result p1
-
-    aget p1, p2, p1
 
     const/4 p2, 0x1
 
@@ -971,14 +967,14 @@
     return-object p1
 
     :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
+    .packed-switch 0x0
         :pswitch_1
         :pswitch_0
+        :pswitch_4
+        :pswitch_6
+        :pswitch_5
+        :pswitch_3
+        :pswitch_2
     .end packed-switch
 .end method
 
@@ -1029,14 +1025,14 @@
     .line 1
     iget v0, p0, Lcom/supercell/websocket/proxy/protocol/NotificationMessage;->kind_:I
 
-    invoke-static {v0}, Lcom/supercell/websocket/proxy/protocol/NotificationMessage$c;->forNumber(I)Lcom/supercell/websocket/proxy/protocol/NotificationMessage$c;
+    invoke-static {v0}, Lcom/supercell/websocket/proxy/protocol/NotificationMessage$c;->a(I)Lcom/supercell/websocket/proxy/protocol/NotificationMessage$c;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/NotificationMessage$c;->UNRECOGNIZED:Lcom/supercell/websocket/proxy/protocol/NotificationMessage$c;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/NotificationMessage$c;->y:Lcom/supercell/websocket/proxy/protocol/NotificationMessage$c;
 
     :cond_0
     return-object v0

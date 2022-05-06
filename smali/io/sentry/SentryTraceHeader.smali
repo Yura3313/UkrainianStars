@@ -115,11 +115,11 @@
 
     iput-object v1, p0, Lio/sentry/SentryTraceHeader;->spanId:Lio/sentry/SpanId;
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-void
 
-    :catch_0
+    :catchall_0
     move-exception v0
 
     .line 13

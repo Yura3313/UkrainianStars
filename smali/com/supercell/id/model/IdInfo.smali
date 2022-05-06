@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field public final a:Ljava/util/List;
+.field public final g:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -29,7 +29,7 @@
     .end annotation
 .end field
 
-.field public final b:Ljava/util/List;
+.field public final h:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -72,9 +72,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/model/IdInfo;->a:Ljava/util/List;
+    iput-object p1, p0, Lcom/supercell/id/model/IdInfo;->g:Ljava/util/List;
 
-    iput-object p2, p0, Lcom/supercell/id/model/IdInfo;->b:Ljava/util/List;
+    iput-object p2, p0, Lcom/supercell/id/model/IdInfo;->h:Ljava/util/List;
 
     return-void
 .end method
@@ -100,21 +100,21 @@
 
     check-cast p1, Lcom/supercell/id/model/IdInfo;
 
-    iget-object v0, p0, Lcom/supercell/id/model/IdInfo;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/supercell/id/model/IdInfo;->g:Ljava/util/List;
 
-    iget-object v1, p1, Lcom/supercell/id/model/IdInfo;->a:Ljava/util/List;
+    iget-object v1, p1, Lcom/supercell/id/model/IdInfo;->g:Ljava/util/List;
 
-    invoke-static {v0, v1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/supercell/id/model/IdInfo;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/supercell/id/model/IdInfo;->h:Ljava/util/List;
 
-    iget-object p1, p1, Lcom/supercell/id/model/IdInfo;->b:Ljava/util/List;
+    iget-object p1, p1, Lcom/supercell/id/model/IdInfo;->h:Ljava/util/List;
 
-    invoke-static {v0, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -137,7 +137,7 @@
 .method public hashCode()I
     .locals 3
 
-    iget-object v0, p0, Lcom/supercell/id/model/IdInfo;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/supercell/id/model/IdInfo;->g:Ljava/util/List;
 
     const/4 v1, 0x0
 
@@ -155,7 +155,7 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/model/IdInfo;->b:Ljava/util/List;
+    iget-object v2, p0, Lcom/supercell/id/model/IdInfo;->h:Ljava/util/List;
 
     if-eqz v2, :cond_1
 
@@ -174,11 +174,11 @@
 
     const-string v0, "IdInfo(availableSystems="
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/model/IdInfo;->a:Ljava/util/List;
+    iget-object v1, p0, Lcom/supercell/id/model/IdInfo;->g:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -186,7 +186,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/model/IdInfo;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/supercell/id/model/IdInfo;->h:Ljava/util/List;
 
     const-string v2, ")"
 
@@ -203,12 +203,12 @@
     if-eqz p1, :cond_0
 
     .line 1
-    iget-object p2, p0, Lcom/supercell/id/model/IdInfo;->a:Ljava/util/List;
+    iget-object p2, p0, Lcom/supercell/id/model/IdInfo;->g:Ljava/util/List;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeTypedList(Ljava/util/List;)V
 
     .line 2
-    iget-object p2, p0, Lcom/supercell/id/model/IdInfo;->b:Ljava/util/List;
+    iget-object p2, p0, Lcom/supercell/id/model/IdInfo;->h:Ljava/util/List;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeStringList(Ljava/util/List;)V
 
@@ -218,7 +218,7 @@
     const-string p1, "dest"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

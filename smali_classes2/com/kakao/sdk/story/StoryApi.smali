@@ -24,7 +24,7 @@
             "Ljava/lang/String;",
             ")",
             "Lxe/b<",
-            "Lbe/n;",
+            "Lae/i;",
             ">;"
         }
     .end annotation

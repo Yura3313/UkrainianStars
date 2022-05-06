@@ -20,29 +20,29 @@
     value = {
         "Lle/j;",
         "Lke/l<",
-        "Lwd/k<",
+        "Lvd/k<",
         "+",
         "Ljava/util/List<",
         "+",
-        "Lzc/e;",
+        "Lwc/e;",
         ">;+",
         "Lcom/supercell/id/util/NormalizedError;",
         ">;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/game/donate/DonateFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/game/donate/DonateFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/game/donate/DonateFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$b;->a:Lcom/supercell/id/ui/game/donate/DonateFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$b;->g:Lcom/supercell/id/ui/game/donate/DonateFragment;
 
     const/4 p1, 0x1
 
@@ -57,21 +57,21 @@
     .locals 1
 
     .line 1
-    check-cast p1, Lwd/k;
+    check-cast p1, Lvd/k;
 
     if-eqz p1, :cond_0
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$b;->a:Lcom/supercell/id/ui/game/donate/DonateFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$b;->g:Lcom/supercell/id/ui/game/donate/DonateFragment;
 
     .line 3
-    iput-object p1, v0, Lcom/supercell/id/ui/game/donate/DonateFragment;->l0:Lwd/k;
+    iput-object p1, v0, Lcom/supercell/id/ui/game/donate/DonateFragment;->m0:Lvd/k;
 
     .line 4
     invoke-virtual {v0}, Lcom/supercell/id/ui/game/donate/DonateFragment;->s1()V
 
     .line 5
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -79,7 +79,7 @@
     const-string p1, "it"
 
     .line 6
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

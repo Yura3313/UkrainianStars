@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method public final E0(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method public final F0(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -85,7 +85,7 @@
     check-cast v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;
 
     .line 5
-    iget-object v4, v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->a:Lcom/google/android/gms/common/internal/BaseGmsClient;
+    iget-object v4, v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->g:Lcom/google/android/gms/common/internal/BaseGmsClient;
 
     const-string v5, "onPostInitCompleteWithConnectionInfo can be called only once per call togetRemoteService"
 
@@ -98,22 +98,22 @@
     iput-object p2, v4, Lcom/google/android/gms/common/internal/BaseGmsClient;->v:Lcom/google/android/gms/common/internal/zzc;
 
     .line 8
-    iget-object p2, p2, Lcom/google/android/gms/common/internal/zzc;->a:Landroid/os/Bundle;
+    iget-object p2, p2, Lcom/google/android/gms/common/internal/zzc;->g:Landroid/os/Bundle;
 
     .line 9
-    iget-object v4, v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->a:Lcom/google/android/gms/common/internal/BaseGmsClient;
+    iget-object v4, v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->g:Lcom/google/android/gms/common/internal/BaseGmsClient;
 
     invoke-static {v4, v0}, Lc2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 10
-    iget-object v0, v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->a:Lcom/google/android/gms/common/internal/BaseGmsClient;
+    iget-object v0, v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->g:Lcom/google/android/gms/common/internal/BaseGmsClient;
 
-    iget v4, v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->b:I
+    iget v4, v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->h:I
 
     invoke-virtual {v0, p1, v2, p2, v4}, Lcom/google/android/gms/common/internal/BaseGmsClient;->A(ILandroid/os/IBinder;Landroid/os/Bundle;I)V
 
     .line 11
-    iput-object p4, v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->a:Lcom/google/android/gms/common/internal/BaseGmsClient;
+    iput-object p4, v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->g:Lcom/google/android/gms/common/internal/BaseGmsClient;
 
     goto :goto_0
 
@@ -179,19 +179,19 @@
     check-cast v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;
 
     .line 20
-    iget-object v4, v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->a:Lcom/google/android/gms/common/internal/BaseGmsClient;
+    iget-object v4, v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->g:Lcom/google/android/gms/common/internal/BaseGmsClient;
 
     invoke-static {v4, v0}, Lc2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 21
-    iget-object v0, v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->a:Lcom/google/android/gms/common/internal/BaseGmsClient;
+    iget-object v0, v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->g:Lcom/google/android/gms/common/internal/BaseGmsClient;
 
-    iget v4, v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->b:I
+    iget v4, v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->h:I
 
     invoke-virtual {v0, p1, v2, p2, v4}, Lcom/google/android/gms/common/internal/BaseGmsClient;->A(ILandroid/os/IBinder;Landroid/os/Bundle;I)V
 
     .line 22
-    iput-object p4, v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->a:Lcom/google/android/gms/common/internal/BaseGmsClient;
+    iput-object p4, v3, Lcom/google/android/gms/common/internal/BaseGmsClient$zze;->g:Lcom/google/android/gms/common/internal/BaseGmsClient;
 
     .line 23
     :goto_0

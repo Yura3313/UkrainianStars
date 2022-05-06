@@ -16,15 +16,15 @@
 
 
 # instance fields
-.field public final a:Z
-
-.field public final b:Z
+.field public final g:Z
 
 .field public final h:Z
 
-.field public final i:[Z
+.field public final i:Z
 
 .field public final j:[Z
+
+.field public final k:[Z
 
 
 # direct methods
@@ -48,19 +48,19 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zze;-><init>()V
 
     .line 2
-    iput-boolean p1, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->a:Z
+    iput-boolean p1, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->g:Z
 
     .line 3
-    iput-boolean p2, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->b:Z
+    iput-boolean p2, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->h:Z
 
     .line 4
-    iput-boolean p3, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->h:Z
+    iput-boolean p3, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->i:Z
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->i:[Z
+    iput-object p4, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->j:[Z
 
     .line 6
-    iput-object p5, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->j:[Z
+    iput-object p5, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->k:[Z
 
     return-void
 .end method
@@ -91,9 +91,9 @@
     check-cast p1, Lcom/google/android/gms/games/video/VideoCapabilities;
 
     .line 3
-    iget-object v2, p1, Lcom/google/android/gms/games/video/VideoCapabilities;->i:[Z
+    iget-object v2, p1, Lcom/google/android/gms/games/video/VideoCapabilities;->j:[Z
 
-    iget-object v3, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->i:[Z
+    iget-object v3, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->j:[Z
 
     .line 4
     invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -103,9 +103,9 @@
     if-eqz v2, :cond_2
 
     .line 5
-    iget-object v2, p1, Lcom/google/android/gms/games/video/VideoCapabilities;->j:[Z
+    iget-object v2, p1, Lcom/google/android/gms/games/video/VideoCapabilities;->k:[Z
 
-    iget-object v3, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->j:[Z
+    iget-object v3, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->k:[Z
 
     .line 6
     invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -115,7 +115,7 @@
     if-eqz v2, :cond_2
 
     .line 7
-    iget-boolean v2, p1, Lcom/google/android/gms/games/video/VideoCapabilities;->a:Z
+    iget-boolean v2, p1, Lcom/google/android/gms/games/video/VideoCapabilities;->g:Z
 
     .line 8
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -123,7 +123,7 @@
     move-result-object v2
 
     .line 9
-    iget-boolean v3, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->a:Z
+    iget-boolean v3, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->g:Z
 
     .line 10
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -137,7 +137,7 @@
     if-eqz v2, :cond_2
 
     .line 11
-    iget-boolean v2, p1, Lcom/google/android/gms/games/video/VideoCapabilities;->b:Z
+    iget-boolean v2, p1, Lcom/google/android/gms/games/video/VideoCapabilities;->h:Z
 
     .line 12
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -145,7 +145,7 @@
     move-result-object v2
 
     .line 13
-    iget-boolean v3, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->b:Z
+    iget-boolean v3, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->h:Z
 
     .line 14
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -159,7 +159,7 @@
     if-eqz v2, :cond_2
 
     .line 15
-    iget-boolean p1, p1, Lcom/google/android/gms/games/video/VideoCapabilities;->h:Z
+    iget-boolean p1, p1, Lcom/google/android/gms/games/video/VideoCapabilities;->i:Z
 
     .line 16
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -167,7 +167,7 @@
     move-result-object p1
 
     .line 17
-    iget-boolean v2, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->h:Z
+    iget-boolean v2, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->i:Z
 
     .line 18
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -194,7 +194,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->i:[Z
+    iget-object v1, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->j:[Z
 
     const/4 v2, 0x0
 
@@ -203,14 +203,14 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->j:[Z
+    iget-object v2, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->k:[Z
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x2
 
     .line 3
-    iget-boolean v2, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->a:Z
+    iget-boolean v2, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->g:Z
 
     .line 4
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -222,7 +222,7 @@
     const/4 v1, 0x3
 
     .line 5
-    iget-boolean v2, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->b:Z
+    iget-boolean v2, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->h:Z
 
     .line 6
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -234,7 +234,7 @@
     const/4 v1, 0x4
 
     .line 7
-    iget-boolean v2, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->h:Z
+    iget-boolean v2, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->i:Z
 
     .line 8
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -262,7 +262,7 @@
     invoke-direct {v0, p0, v1}, Lc2/f$a;-><init>(Ljava/lang/Object;Lc2/n0;)V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->i:[Z
+    iget-object v1, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->j:[Z
 
     const-string v2, "SupportedCaptureModes"
 
@@ -270,7 +270,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->j:[Z
+    iget-object v1, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->k:[Z
 
     const-string v2, "SupportedQualityLevels"
 
@@ -278,7 +278,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 6
-    iget-boolean v1, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->a:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->g:Z
 
     .line 7
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -290,7 +290,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 8
-    iget-boolean v1, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->b:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->h:Z
 
     .line 9
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -302,7 +302,7 @@
     invoke-virtual {v0, v2, v1}, Lc2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Lc2/f$a;
 
     .line 10
-    iget-boolean v1, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->h:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->i:Z
 
     .line 11
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -332,7 +332,7 @@
     move-result p2
 
     .line 2
-    iget-boolean v0, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->a:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->g:Z
 
     const/4 v1, 0x1
 
@@ -345,7 +345,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-boolean v0, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->b:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->h:Z
 
     const/4 v1, 0x2
 
@@ -356,7 +356,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 8
-    iget-boolean v0, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->h:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->i:Z
 
     const/4 v1, 0x3
 
@@ -367,7 +367,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 11
-    iget-object v0, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->i:[Z
+    iget-object v0, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->j:[Z
 
     if-nez v0, :cond_0
 
@@ -389,7 +389,7 @@
     const/4 v0, 0x5
 
     .line 15
-    iget-object v1, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->j:[Z
+    iget-object v1, p0, Lcom/google/android/gms/games/video/VideoCapabilities;->k:[Z
 
     if-nez v1, :cond_1
 

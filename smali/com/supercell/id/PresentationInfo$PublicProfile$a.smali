@@ -60,7 +60,7 @@
     move-result-object v1
 
     .line 3
-    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+    invoke-static {p1}, Lqc/e0;->a(Landroid/os/Parcel;)Lqc/d0;
 
     move-result-object v2
 
@@ -87,7 +87,7 @@
     goto :goto_0
 
     :cond_0
-    sget-object v0, Lcom/supercell/id/model/ProfileImage$Empty;->a:Lcom/supercell/id/model/ProfileImage$Empty;
+    sget-object v0, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
 
     :goto_0
     move-object v4, v0
@@ -100,7 +100,7 @@
     move-object v0, v6
 
     .line 7
-    invoke-direct/range {v0 .. v5}, Lcom/supercell/id/PresentationInfo$PublicProfile;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, Lcom/supercell/id/PresentationInfo$PublicProfile;-><init>(Ljava/lang/String;Lqc/d0;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Ljava/lang/String;)V
 
     return-object v6
 
@@ -108,7 +108,7 @@
     const-string p1, "source"
 
     .line 8
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

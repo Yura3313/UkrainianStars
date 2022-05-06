@@ -19,9 +19,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Ls2/j;
+    new-instance v0, Ls2/k;
 
-    invoke-direct {v0}, Ls2/j;-><init>()V
+    invoke-direct {v0}, Ls2/k;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/drive/query/internal/zzt;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -39,14 +39,14 @@
 
 
 # virtual methods
-.method public final Y1(Li1/o;)Ljava/lang/Object;
+.method public final B1(Lj3/y1;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
             "Ljava/lang/Object;",
             ">(",
-            "Li1/o;",
+            "Lj3/y1;",
             ")TF;"
         }
     .end annotation

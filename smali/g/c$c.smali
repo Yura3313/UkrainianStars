@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final a:Landroid/view/CollapsibleActionView;
+.field public final g:Landroid/view/CollapsibleActionView;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     check-cast v0, Landroid/view/CollapsibleActionView;
 
-    iput-object v0, p0, Lg/c$c;->a:Landroid/view/CollapsibleActionView;
+    iput-object v0, p0, Lg/c$c;->g:Landroid/view/CollapsibleActionView;
 
     .line 3
     invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
@@ -51,7 +51,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lg/c$c;->a:Landroid/view/CollapsibleActionView;
+    iget-object v0, p0, Lg/c$c;->g:Landroid/view/CollapsibleActionView;
 
     invoke-interface {v0}, Landroid/view/CollapsibleActionView;->onActionViewExpanded()V
 
@@ -62,7 +62,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lg/c$c;->a:Landroid/view/CollapsibleActionView;
+    iget-object v0, p0, Lg/c$c;->g:Landroid/view/CollapsibleActionView;
 
     invoke-interface {v0}, Landroid/view/CollapsibleActionView;->onActionViewCollapsed()V
 

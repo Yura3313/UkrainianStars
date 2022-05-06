@@ -100,7 +100,7 @@
     sput-object v2, Lu3/y;->b:Ljava/lang/reflect/Method;
 
     .line 7
-    sget-object v0, Li1/j;->b:Lu3/z;
+    sget-object v0, Lcom/google/android/gms/ads/g;->a:Lu3/z;
 
     sput-object v0, Lu3/y;->c:Lu3/z;
 

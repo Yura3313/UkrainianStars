@@ -71,12 +71,12 @@
 
     check-cast p0, Lcom/google/android/gms/common/internal/zam;
 
-    invoke-interface {p0, v2, v1}, Lcom/google/android/gms/common/internal/zam;->s6(Lcom/google/android/gms/dynamic/IObjectWrapper;Lcom/google/android/gms/common/internal/zaw;)Lcom/google/android/gms/dynamic/IObjectWrapper;
+    invoke-interface {p0, v2, v1}, Lcom/google/android/gms/common/internal/zam;->t6(Lcom/google/android/gms/dynamic/IObjectWrapper;Lcom/google/android/gms/common/internal/zaw;)Lcom/google/android/gms/dynamic/IObjectWrapper;
 
     move-result-object p0
 
     .line 5
-    invoke-static {p0}, Lcom/google/android/gms/dynamic/ObjectWrapper;->X0(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
+    invoke-static {p0}, Lcom/google/android/gms/dynamic/ObjectWrapper;->Y0(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
 
     move-result-object p0
 

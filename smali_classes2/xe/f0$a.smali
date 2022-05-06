@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/reflect/Type;
+.field public final g:Ljava/lang/reflect/Type;
 
 
 # direct methods
@@ -29,7 +29,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lxe/f0$a;->a:Ljava/lang/reflect/Type;
+    iput-object p1, p0, Lxe/f0$a;->g:Ljava/lang/reflect/Type;
 
     return-void
 .end method
@@ -68,7 +68,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lxe/f0$a;->a:Ljava/lang/reflect/Type;
+    iget-object v0, p0, Lxe/f0$a;->g:Ljava/lang/reflect/Type;
 
     return-object v0
 .end method
@@ -77,7 +77,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lxe/f0$a;->a:Ljava/lang/reflect/Type;
+    iget-object v0, p0, Lxe/f0$a;->g:Ljava/lang/reflect/Type;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -94,7 +94,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lxe/f0$a;->a:Ljava/lang/reflect/Type;
+    iget-object v1, p0, Lxe/f0$a;->g:Ljava/lang/reflect/Type;
 
     invoke-static {v1}, Lxe/f0;->q(Ljava/lang/reflect/Type;)Ljava/lang/String;
 

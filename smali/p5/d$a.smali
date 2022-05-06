@@ -39,11 +39,11 @@
 
     .line 1
     :try_start_0
-    sget-object v0, Lp5/x;->e:Lp5/x;
+    sget-object v0, Lp5/z;->e:Lp5/z;
 
     const-string v1, "AES/ECB/NOPADDING"
 
-    invoke-virtual {v0, v1}, Lp5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lp5/z;->a(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 

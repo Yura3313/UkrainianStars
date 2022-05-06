@@ -15,12 +15,12 @@
 
 
 # instance fields
-.field public final a:Lokhttp3/MediaType;
+.field public final g:Lokhttp3/MediaType;
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 .end field
 
-.field public final b:J
+.field public final h:J
 
 
 # direct methods
@@ -35,10 +35,10 @@
     invoke-direct {p0}, Lokhttp3/ResponseBody;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lxe/s$c;->a:Lokhttp3/MediaType;
+    iput-object p1, p0, Lxe/s$c;->g:Lokhttp3/MediaType;
 
     .line 3
-    iput-wide p2, p0, Lxe/s$c;->b:J
+    iput-wide p2, p0, Lxe/s$c;->h:J
 
     return-void
 .end method
@@ -49,7 +49,7 @@
     .locals 2
 
     .line 1
-    iget-wide v0, p0, Lxe/s$c;->b:J
+    iget-wide v0, p0, Lxe/s$c;->h:J
 
     return-wide v0
 .end method
@@ -58,7 +58,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lxe/s$c;->a:Lokhttp3/MediaType;
+    iget-object v0, p0, Lxe/s$c;->g:Lokhttp3/MediaType;
 
     return-object v0
 .end method

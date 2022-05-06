@@ -20,19 +20,22 @@
 
 
 # virtual methods
-.method public abstract B()J
+.method public abstract A()Ljava/lang/String;
 .end method
 
-.method public abstract J()Ljava/lang/String;
+.method public abstract D()J
 .end method
 
-.method public abstract R1()I
+.method public abstract L()Ljava/lang/String;
+.end method
+
+.method public abstract U1()I
 .end method
 
 .method public abstract a()Landroid/net/Uri;
 .end method
 
-.method public abstract b()Lcom/google/android/gms/games/Game;
+.method public abstract c()Lcom/google/android/gms/games/Game;
 .end method
 
 .method public abstract getIconImageUrl()Ljava/lang/String;
@@ -46,14 +49,11 @@
 .method public abstract getType()I
 .end method
 
-.method public abstract j0()Ljava/lang/String;
+.method public abstract l0()Ljava/lang/String;
 .end method
 
-.method public abstract n()J
+.method public abstract p()J
 .end method
 
-.method public abstract v1()J
-.end method
-
-.method public abstract x()Ljava/lang/String;
+.method public abstract x1()J
 .end method

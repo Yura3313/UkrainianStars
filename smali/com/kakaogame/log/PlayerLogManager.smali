@@ -211,7 +211,7 @@
     const-string v3, " : "
 
     .line 1
-    invoke-static {v1, p0, v2, p1, v3}, Ly/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, p0, v2, p1, v3}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -359,7 +359,7 @@
     const-string v1, "PlayerLogManager"
 
     .line 1
-    invoke-static {v0, p0, v1}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p0, v1}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
     sget-object v0, Lcom/kakaogame/log/PlayerLogManager;->playerGameDataMap:Ljava/util/Map;

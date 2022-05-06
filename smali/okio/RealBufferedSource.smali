@@ -916,7 +916,7 @@
 
     const-string v0, "byteCount < 0: "
 
-    invoke-static {v0, p2, p3}, Landroid/support/v4/media/e;->a(Ljava/lang/String;J)Ljava/lang/String;
+    invoke-static {v0, p2, p3}, Lcom/kakaogame/session/websocket/a;->a(Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object p2
 
@@ -2024,7 +2024,7 @@
 
     const-string v1, "\\n not found: limit="
 
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -2073,7 +2073,7 @@
 
     const-string v1, "limit < 0: "
 
-    invoke-static {v1, p1, p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;J)Ljava/lang/String;
+    invoke-static {v1, p1, p2}, Lcom/kakaogame/session/websocket/a;->a(Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2151,7 +2151,7 @@
 
     const-string v1, "byteCount < 0: "
 
-    invoke-static {v1, p1, p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;J)Ljava/lang/String;
+    invoke-static {v1, p1, p2}, Lcom/kakaogame/session/websocket/a;->a(Ljava/lang/String;J)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2394,7 +2394,7 @@
     const-string v0, "buffer("
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

@@ -3,58 +3,104 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
+.implements Lj3/y2;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lj3/bv0<",
-        "Lorg/json/JSONObject;",
+        "Lj3/y2<",
+        "Ljava/lang/Object;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lj3/hv;
+.field public g:Ljava/lang/ref/WeakReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/ref/WeakReference<",
+            "Lj3/hv;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lj3/hv;)V
+.method public constructor <init>(Lj3/hv;Lj3/lc;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj3/iv;->a:Lj3/hv;
+    new-instance p2, Ljava/lang/ref/WeakReference;
+
+    invoke-direct {p2, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p2, p0, Lj3/iv;->g:Ljava/lang/ref/WeakReference;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 2
+.method public final b(Ljava/lang/Object;Ljava/util/Map;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
-    iget-object v0, p0, Lj3/iv;->a:Lj3/hv;
+    iget-object p1, p0, Lj3/iv;->g:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {p1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lj3/hv;
+
+    if-nez p1, :cond_0
+
+    return-void
+
+    :cond_0
+    const-string v0, "eventName"
 
     .line 2
-    iget-object v0, v0, Lj3/hv;->a:Ljava/lang/Object;
+    invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    check-cast v0, Lorg/json/JSONObject;
+    move-result-object p2
 
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+    check-cast p2, Ljava/lang/String;
+
+    const-string v0, "_ac"
 
     .line 3
-    invoke-static {v0, v1}, Lj3/zo0;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-object v1, v0
+    move-result p2
 
-    check-cast v1, Lorg/json/JSONObject;
+    if-eqz p2, :cond_1
 
-    return-object v0
+    .line 4
+    iget-object p1, p1, Lj3/hv;->h:Lj3/uq;
+
+    .line 5
+    sget-object p2, Lj3/gy0;->g:Lj3/ct;
+
+    invoke-virtual {p1, p2}, Lj3/at;->E0(Lj3/ct;)V
+
+    :cond_1
+    return-void
 .end method

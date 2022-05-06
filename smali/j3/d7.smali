@@ -3,19 +3,19 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # instance fields
-.field public final synthetic a:Lj3/e7;
+.field public final synthetic g:Lj3/b7;
 
 
 # direct methods
-.method public constructor <init>(Lj3/e7;)V
+.method public constructor <init>(Lj3/b7;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lj3/d7;->a:Lj3/e7;
+    iput-object p1, p0, Lj3/d7;->g:Lj3/b7;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -24,15 +24,15 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 1
+.method public final onClick(Landroid/content/DialogInterface;I)V
+    .locals 0
 
     .line 1
-    iget-object p1, p0, Lj3/d7;->a:Lj3/e7;
+    iget-object p1, p0, Lj3/d7;->g:Lj3/b7;
 
-    const/4 v0, 0x1
+    const-string p2, "Operation denied by user."
 
-    invoke-virtual {p1, v0}, Lj3/e7;->p(Z)V
+    invoke-virtual {p1, p2}, Lj3/m7;->m(Ljava/lang/String;)V
 
     return-void
 .end method

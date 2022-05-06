@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field public final a:Lx3/p0;
+.field public final a:Ly3/q0;
 
 
 # direct methods
-.method public constructor <init>(Lx3/p0;)V
+.method public constructor <init>(Ly3/q0;)V
     .locals 1
 
     .line 1
@@ -20,7 +20,7 @@
     if-eqz p1, :cond_0
 
     .line 2
-    iput-object p1, p0, Lcom/google/firebase/analytics/FirebaseAnalytics;->a:Lx3/p0;
+    iput-object p1, p0, Lcom/google/firebase/analytics/FirebaseAnalytics;->a:Ly3/q0;
 
     return-void
 
@@ -59,14 +59,14 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-static {p0, v1}, Lx3/p0;->d(Landroid/content/Context;Lx3/j;)Lx3/p0;
+    invoke-static {p0, v1}, Ly3/q0;->f(Landroid/content/Context;Ly3/j;)Ly3/q0;
 
     move-result-object p0
 
     .line 5
     new-instance v1, Lcom/google/firebase/analytics/FirebaseAnalytics;
 
-    invoke-direct {v1, p0}, Lcom/google/firebase/analytics/FirebaseAnalytics;-><init>(Lx3/p0;)V
+    invoke-direct {v1, p0}, Lcom/google/firebase/analytics/FirebaseAnalytics;-><init>(Ly3/q0;)V
 
     sput-object v1, Lcom/google/firebase/analytics/FirebaseAnalytics;->b:Lcom/google/firebase/analytics/FirebaseAnalytics;
 
@@ -122,38 +122,38 @@
     .end annotation
 
     .line 1
-    invoke-static {}, Lu0/b;->d()Z
+    invoke-static {}, Lod/c;->d()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 2
-    iget-object p1, p0, Lcom/google/firebase/analytics/FirebaseAnalytics;->a:Lx3/p0;
+    iget-object p1, p0, Lcom/google/firebase/analytics/FirebaseAnalytics;->a:Ly3/q0;
 
-    invoke-virtual {p1}, Lx3/p0;->g()Lx3/o;
+    invoke-virtual {p1}, Ly3/q0;->e()Ly3/o;
 
     move-result-object p1
 
     .line 3
-    iget-object p1, p1, Lx3/o;->n:Lx3/q;
+    iget-object p1, p1, Ly3/o;->o:Ly3/q;
 
     const-string p2, "setCurrentScreen must be called from the main thread"
 
     .line 4
-    invoke-virtual {p1, p2}, Lx3/q;->a(Ljava/lang/String;)V
+    invoke-virtual {p1, p2}, Ly3/q;->a(Ljava/lang/String;)V
 
     return-void
 
     .line 5
     :cond_0
-    iget-object v0, p0, Lcom/google/firebase/analytics/FirebaseAnalytics;->a:Lx3/p0;
+    iget-object v0, p0, Lcom/google/firebase/analytics/FirebaseAnalytics;->a:Ly3/q0;
 
-    invoke-virtual {v0}, Lx3/p0;->o()Lx3/y1;
+    invoke-virtual {v0}, Ly3/q0;->o()Ly3/w1;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2, p3}, Lx3/y1;->p(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, p1, p2, p3}, Ly3/w1;->m(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method

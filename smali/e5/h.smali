@@ -75,7 +75,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Ll5/v0$c;->REMOTE:Ll5/v0$c;
+    sget-object v0, Ll5/v0$c;->l:Ll5/v0$c;
 
     return-object v0
 .end method
@@ -93,7 +93,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Ll5/b1;->x(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/b1;
+    invoke-static {p1, v0}, Ll5/b1;->w(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/b1;
 
     move-result-object p1
 
@@ -112,7 +112,7 @@
     check-cast p1, Ll5/b1;
 
     .line 2
-    invoke-virtual {p1}, Ll5/b1;->v()I
+    invoke-virtual {p1}, Ll5/b1;->u()I
 
     move-result p1
 

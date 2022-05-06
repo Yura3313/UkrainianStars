@@ -1,5 +1,5 @@
 .class public Landroidx/fragment/app/c$c;
-.super Landroidx/fragment/app/c$d;
+.super Ljava/lang/Object;
 .source "DefaultSpecialEffectsController.java"
 
 
@@ -15,82 +15,104 @@
 
 
 # instance fields
-.field public c:Z
+.field public final a:Landroidx/fragment/app/u0$d;
 
-.field public d:Z
-
-.field public e:Landroidx/fragment/app/s$a;
+.field public final b:Lb0/a;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/u0$e;Lb0/a;Z)V
+.method public constructor <init>(Landroidx/fragment/app/u0$d;Lb0/a;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Landroidx/fragment/app/c$d;-><init>(Landroidx/fragment/app/u0$e;Lb0/a;)V
-
-    const/4 p1, 0x0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-boolean p1, p0, Landroidx/fragment/app/c$c;->d:Z
+    iput-object p1, p0, Landroidx/fragment/app/c$c;->a:Landroidx/fragment/app/u0$d;
 
     .line 3
-    iput-boolean p3, p0, Landroidx/fragment/app/c$c;->c:Z
+    iput-object p2, p0, Landroidx/fragment/app/c$c;->b:Lb0/a;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public c(Landroid/content/Context;)Landroidx/fragment/app/s$a;
-    .locals 4
+.method public a()V
+    .locals 3
 
     .line 1
-    iget-boolean v0, p0, Landroidx/fragment/app/c$c;->d:Z
+    iget-object v0, p0, Landroidx/fragment/app/c$c;->a:Landroidx/fragment/app/u0$d;
 
-    if-eqz v0, :cond_0
+    iget-object v1, p0, Landroidx/fragment/app/c$c;->b:Lb0/a;
 
     .line 2
-    iget-object p1, p0, Landroidx/fragment/app/c$c;->e:Landroidx/fragment/app/s$a;
+    iget-object v2, v0, Landroidx/fragment/app/u0$d;->e:Ljava/util/HashSet;
 
-    return-object p1
+    invoke-virtual {v2, v1}, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, v0, Landroidx/fragment/app/u0$d;->e:Ljava/util/HashSet;
+
+    invoke-virtual {v1}, Ljava/util/HashSet;->isEmpty()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
 
     .line 3
+    invoke-virtual {v0}, Landroidx/fragment/app/u0$d;->b()V
+
     :cond_0
-    iget-object v0, p0, Landroidx/fragment/app/c$d;->a:Landroidx/fragment/app/u0$e;
+    return-void
+.end method
+
+.method public b()Z
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Landroidx/fragment/app/c$c;->a:Landroidx/fragment/app/u0$d;
+
+    .line 2
+    iget-object v0, v0, Landroidx/fragment/app/u0$d;->c:Landroidx/fragment/app/Fragment;
+
+    .line 3
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     .line 4
-    iget-object v1, v0, Landroidx/fragment/app/u0$e;->c:Landroidx/fragment/app/Fragment;
+    invoke-static {v0}, Landroidx/fragment/app/u0$d$c;->d(Landroid/view/View;)Landroidx/fragment/app/u0$d$c;
+
+    move-result-object v0
 
     .line 5
-    iget-object v0, v0, Landroidx/fragment/app/u0$e;->a:Landroidx/fragment/app/u0$e$c;
+    iget-object v1, p0, Landroidx/fragment/app/c$c;->a:Landroidx/fragment/app/u0$d;
 
     .line 6
-    sget-object v2, Landroidx/fragment/app/u0$e$c;->VISIBLE:Landroidx/fragment/app/u0$e$c;
+    iget-object v1, v1, Landroidx/fragment/app/u0$d;->a:Landroidx/fragment/app/u0$d$c;
 
-    const/4 v3, 0x1
+    if-eq v0, v1, :cond_1
 
-    if-ne v0, v2, :cond_1
+    .line 7
+    sget-object v2, Landroidx/fragment/app/u0$d$c;->h:Landroidx/fragment/app/u0$d$c;
 
-    const/4 v0, 0x1
+    if-eq v0, v2, :cond_0
+
+    if-eq v1, v2, :cond_0
 
     goto :goto_0
 
-    :cond_1
+    :cond_0
     const/4 v0, 0x0
 
+    goto :goto_1
+
+    :cond_1
     :goto_0
-    iget-boolean v2, p0, Landroidx/fragment/app/c$c;->c:Z
+    const/4 v0, 0x1
 
-    .line 7
-    invoke-static {p1, v1, v0, v2}, Landroidx/fragment/app/s;->a(Landroid/content/Context;Landroidx/fragment/app/Fragment;ZZ)Landroidx/fragment/app/s$a;
-
-    move-result-object p1
-
-    iput-object p1, p0, Landroidx/fragment/app/c$c;->e:Landroidx/fragment/app/s$a;
-
-    .line 8
-    iput-boolean v3, p0, Landroidx/fragment/app/c$c;->d:Z
-
-    return-object p1
+    :goto_1
+    return v0
 .end method

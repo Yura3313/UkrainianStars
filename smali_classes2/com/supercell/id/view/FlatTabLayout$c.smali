@@ -18,7 +18,7 @@
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/view/FlatTabLayout$c;
+.field public static final g:Lcom/supercell/id/view/FlatTabLayout$c;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/view/FlatTabLayout$c;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/view/FlatTabLayout$c;->a:Lcom/supercell/id/view/FlatTabLayout$c;
+    sput-object v0, Lcom/supercell/id/view/FlatTabLayout$c;->g:Lcom/supercell/id/view/FlatTabLayout$c;
 
     return-void
 .end method

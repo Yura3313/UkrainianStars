@@ -17,27 +17,6 @@
 
 
 # direct methods
-.method private static synthetic $closeResource(Ljava/lang/Throwable;Ljava/lang/AutoCloseable;)V
-    .locals 0
-
-    if-eqz p0, :cond_0
-
-    .line 1
-    :try_start_0
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
-
-    :catchall_0
-    :goto_0
-    return-void
-.end method
-
 .method public static constructor <clinit>()V
     .locals 1
 
@@ -473,10 +452,10 @@
 
     const-string v0, "The SentryEnvelope object is required."
 
-    .line 29
+    .line 26
     invoke-static {p1, v0}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 30
+    .line 27
     iget-object v0, p0, Lio/sentry/GsonSerializer;->gson:Lcom/google/gson/Gson;
 
     invoke-virtual {v0, p1}, Lcom/google/gson/Gson;->toJson(Ljava/lang/Object;)Ljava/lang/String;
@@ -487,7 +466,7 @@
 .end method
 
 .method public serialize(Lio/sentry/SentryEnvelope;Ljava/io/OutputStream;)V
-    .locals 8
+    .locals 7
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -525,19 +504,17 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_3
 
-    const/4 v3, 0x0
-
     .line 11
     :try_start_1
-    iget-object v4, p0, Lio/sentry/GsonSerializer;->gson:Lcom/google/gson/Gson;
+    iget-object v3, p0, Lio/sentry/GsonSerializer;->gson:Lcom/google/gson/Gson;
 
     invoke-virtual {p1}, Lio/sentry/SentryEnvelope;->getHeader()Lio/sentry/SentryEnvelopeHeader;
 
-    move-result-object v5
+    move-result-object v4
 
-    const-class v6, Lio/sentry/SentryEnvelopeHeader;
+    const-class v5, Lio/sentry/SentryEnvelopeHeader;
 
-    invoke-virtual {v4, v5, v6, v2}, Lcom/google/gson/Gson;->toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;Ljava/lang/Appendable;)V
+    invoke-virtual {v3, v4, v5, v2}, Lcom/google/gson/Gson;->toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;Ljava/lang/Appendable;)V
 
     .line 12
     invoke-virtual {v2, v0}, Ljava/io/Writer;->write(Ljava/lang/String;)V
@@ -554,34 +531,34 @@
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v4
+    move-result v3
 
-    if-eqz v4, :cond_0
+    if-eqz v3, :cond_0
 
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v3
 
-    check-cast v4, Lio/sentry/SentryEnvelopeItem;
+    check-cast v3, Lio/sentry/SentryEnvelopeItem;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     .line 14
     :try_start_2
-    invoke-virtual {v4}, Lio/sentry/SentryEnvelopeItem;->getData()[B
-
-    move-result-object v5
-
-    .line 15
-    iget-object v6, p0, Lio/sentry/GsonSerializer;->gson:Lcom/google/gson/Gson;
-
-    invoke-virtual {v4}, Lio/sentry/SentryEnvelopeItem;->getHeader()Lio/sentry/SentryEnvelopeItemHeader;
+    invoke-virtual {v3}, Lio/sentry/SentryEnvelopeItem;->getData()[B
 
     move-result-object v4
 
-    const-class v7, Lio/sentry/SentryEnvelopeItemHeader;
+    .line 15
+    iget-object v5, p0, Lio/sentry/GsonSerializer;->gson:Lcom/google/gson/Gson;
 
-    invoke-virtual {v6, v4, v7, v2}, Lcom/google/gson/Gson;->toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;Ljava/lang/Appendable;)V
+    invoke-virtual {v3}, Lio/sentry/SentryEnvelopeItem;->getHeader()Lio/sentry/SentryEnvelopeItemHeader;
+
+    move-result-object v3
+
+    const-class v6, Lio/sentry/SentryEnvelopeItemHeader;
+
+    invoke-virtual {v5, v3, v6, v2}, Lcom/google/gson/Gson;->toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;Ljava/lang/Appendable;)V
 
     .line 16
     invoke-virtual {v2, v0}, Ljava/io/Writer;->write(Ljava/lang/String;)V
@@ -590,34 +567,33 @@
     invoke-virtual {v2}, Ljava/io/Writer;->flush()V
 
     .line 18
-    invoke-virtual {p2, v5}, Ljava/io/OutputStream;->write([B)V
+    invoke-virtual {p2, v4}, Ljava/io/OutputStream;->write([B)V
 
     .line 19
     invoke-virtual {v2, v0}, Ljava/io/Writer;->write(Ljava/lang/String;)V
     :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     goto :goto_0
 
-    :catch_0
-    move-exception v4
+    :catchall_0
+    move-exception v3
 
     .line 20
     :try_start_3
-    iget-object v5, p0, Lio/sentry/GsonSerializer;->options:Lio/sentry/SentryOptions;
+    iget-object v4, p0, Lio/sentry/GsonSerializer;->options:Lio/sentry/SentryOptions;
 
     .line 21
-    invoke-virtual {v5}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {v4}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
 
-    move-result-object v5
+    move-result-object v4
 
-    sget-object v6, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
+    sget-object v5, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;
 
-    const-string v7, "Failed to create envelope item. Dropping it."
+    const-string v6, "Failed to create envelope item. Dropping it."
 
     .line 22
-    invoke-interface {v5, v6, v7, v4}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {v4, v5, v6, v3}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_0
 
@@ -629,63 +605,38 @@
 
     .line 24
     :try_start_4
-    invoke-static {v3, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v2}, Ljava/io/Writer;->close()V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_3
 
-    :try_start_5
-    invoke-interface {v1}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+    invoke-virtual {v1}, Ljava/io/BufferedOutputStream;->close()V
 
     return-void
-
-    :catchall_0
-    move-exception p1
-
-    throw p1
 
     :catchall_1
     move-exception p1
 
     .line 25
+    :try_start_5
+    invoke-virtual {v2}, Ljava/io/Writer;->close()V
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_2
+
+    :catchall_2
     :try_start_6
     throw p1
     :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_2
-
-    :catchall_2
-    move-exception p2
-
-    .line 26
-    :try_start_7
-    invoke-static {p1, v2}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    throw p2
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_3
+    .catchall {:try_start_6 .. :try_end_6} :catchall_3
 
     :catchall_3
     move-exception p1
 
-    .line 27
-    :try_start_8
-    throw p1
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_4
+    :try_start_7
+    invoke-virtual {v1}, Ljava/io/BufferedOutputStream;->close()V
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_4
 
     :catchall_4
-    move-exception p2
-
-    .line 28
-    :try_start_9
-    invoke-interface {v1}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_5
-
-    throw p2
-
-    :catchall_5
     goto :goto_2
 
     :goto_1

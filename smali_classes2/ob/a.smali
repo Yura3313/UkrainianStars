@@ -1,74 +1,19 @@
-.class public Lob/a;
+.class public interface abstract Lob/a;
 .super Ljava/lang/Object;
-.source "Address.java"
-
-
-# instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:I
-
-.field public transient c:Ljava/lang/String;
-
-
-# direct methods
-.method public constructor <init>(Ljava/lang/String;I)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lob/a;->a:Ljava/lang/String;
-
-    .line 3
-    iput p2, p0, Lob/a;->b:I
-
-    return-void
-.end method
+.source "BarcodeCallback.java"
 
 
 # virtual methods
-.method public toString()Ljava/lang/String;
-    .locals 3
+.method public abstract a(Lob/b;)V
+.end method
 
-    .line 1
-    iget-object v0, p0, Lob/a;->c:Ljava/lang/String;
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x2
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    const/4 v1, 0x0
-
-    .line 2
-    iget-object v2, p0, Lob/a;->a:Ljava/lang/String;
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x1
-
-    iget v2, p0, Lob/a;->b:I
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    const-string v1, "%s:%d"
-
-    invoke-static {v1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lob/a;->c:Ljava/lang/String;
-
-    .line 3
-    :cond_0
-    iget-object v0, p0, Lob/a;->c:Ljava/lang/String;
-
-    return-object v0
+.method public abstract b(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lc6/l;",
+            ">;)V"
+        }
+    .end annotation
 .end method

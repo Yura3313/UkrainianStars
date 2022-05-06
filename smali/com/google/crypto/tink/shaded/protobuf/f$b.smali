@@ -1243,7 +1243,7 @@
     .line 3
     iget-object v1, p0, Lcom/google/crypto/tink/shaded/protobuf/f$b;->d:[B
 
-    invoke-static {v1, v2, v0}, Lm5/c;->d([BII)Lm5/c;
+    invoke-static {v1, v2, v0}, Lm5/c;->e([BII)Lm5/c;
 
     move-result-object v1
 
@@ -1260,7 +1260,7 @@
     if-nez v0, :cond_1
 
     .line 5
-    sget-object v0, Lm5/c;->b:Lm5/c;
+    sget-object v0, Lm5/c;->h:Lm5/c;
 
     return-object v0
 
@@ -1300,7 +1300,7 @@
 
     .line 10
     :goto_0
-    sget-object v1, Lm5/c;->b:Lm5/c;
+    sget-object v1, Lm5/c;->h:Lm5/c;
 
     .line 11
     new-instance v1, Lm5/c$f;

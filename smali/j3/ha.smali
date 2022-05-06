@@ -1,209 +1,274 @@
-.class public final synthetic Lj3/ha;
+.class public final Lj3/ha;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Ljava/util/concurrent/Callable;
-
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Lk2/c;
 
-.field public final b:Ljava/lang/Object;
+.field public final b:Lj3/ra;
+
+.field public final c:Ljava/util/LinkedList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/LinkedList<",
+            "Lj3/ga;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "lock"
+    .end annotation
+.end field
+
+.field public final d:Ljava/lang/Object;
+
+.field public final e:Ljava/lang/String;
+
+.field public final f:Ljava/lang/String;
+
+.field public g:J
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "lock"
+    .end annotation
+.end field
+
+.field public h:J
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "lock"
+    .end annotation
+.end field
+
+.field public i:J
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "lock"
+    .end annotation
+.end field
+
+.field public j:J
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "lock"
+    .end annotation
+.end field
+
+.field public k:J
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "lock"
+    .end annotation
+.end field
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
-    .locals 0
+.method public constructor <init>(Lk2/c;Lj3/ra;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 4
 
     .line 1
-    iput p2, p0, Lj3/ha;->a:I
-
-    iput-object p1, p0, Lj3/ha;->b:Ljava/lang/Object;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v0, p0, Lj3/ha;->d:Ljava/lang/Object;
+
+    const-wide/16 v0, -0x1
+
+    .line 3
+    iput-wide v0, p0, Lj3/ha;->g:J
+
+    .line 4
+    iput-wide v0, p0, Lj3/ha;->h:J
+
+    const-wide/16 v2, 0x0
+
+    .line 5
+    iput-wide v2, p0, Lj3/ha;->i:J
+
+    .line 6
+    iput-wide v0, p0, Lj3/ha;->j:J
+
+    .line 7
+    iput-wide v0, p0, Lj3/ha;->k:J
+
+    .line 8
+    iput-object p1, p0, Lj3/ha;->a:Lk2/c;
+
+    .line 9
+    iput-object p2, p0, Lj3/ha;->b:Lj3/ra;
+
+    .line 10
+    iput-object p3, p0, Lj3/ha;->e:Ljava/lang/String;
+
+    .line 11
+    iput-object p4, p0, Lj3/ha;->f:Ljava/lang/String;
+
+    .line 12
+    new-instance p1, Ljava/util/LinkedList;
+
+    invoke-direct {p1}, Ljava/util/LinkedList;-><init>()V
+
+    iput-object p1, p0, Lj3/ha;->c:Ljava/util/LinkedList;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 5
-
-    iget v0, p0, Lj3/ha;->a:I
-
-    const/4 v1, 0x0
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_3
+.method public final a()Landroid/os/Bundle;
+    .locals 9
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/ha;->b:Ljava/lang/Object;
+    iget-object v0, p0, Lj3/ha;->d:Ljava/lang/Object;
 
-    check-cast v0, Lj3/rc0;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    monitor-enter v0
 
     .line 2
-    sget-object v2, Lj3/n;->a3:Lj3/f;
+    :try_start_0
+    new-instance v1, Landroid/os/Bundle;
+
+    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
+
+    const-string v2, "seq_num"
 
     .line 3
-    sget-object v3, Lj3/w41;->j:Lj3/w41;
+    iget-object v3, p0, Lj3/ha;->e:Ljava/lang/String;
 
-    iget-object v3, v3, Lj3/w41;->f:Lj3/l;
+    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v2, "slotid"
 
     .line 4
-    invoke-virtual {v3, v2}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+    iget-object v3, p0, Lj3/ha;->f:Ljava/lang/String;
 
-    move-result-object v2
+    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v2, "ismediation"
+
+    const/4 v3, 0x0
 
     .line 5
-    check-cast v2, Ljava/lang/String;
+    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+
+    const-string v2, "treq"
 
     .line 6
-    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    iget-wide v3, p0, Lj3/ha;->j:J
 
-    move-result v3
+    invoke-virtual {v1, v2, v3, v4}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
 
-    const/4 v4, 0x0
-
-    if-eqz v3, :cond_0
-
-    goto :goto_0
+    const-string v2, "tresponse"
 
     .line 7
-    :cond_0
-    :try_start_0
-    new-instance v3, Lorg/json/JSONArray;
+    iget-wide v3, p0, Lj3/ha;->k:J
 
-    invoke-direct {v3, v2}, Lorg/json/JSONArray;-><init>(Ljava/lang/String;)V
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {v1, v2, v3, v4}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+
+    const-string v2, "timp"
 
     .line 8
-    iget-object v0, v0, Lj3/rc0;->b:Landroid/content/Context;
+    iget-wide v3, p0, Lj3/ha;->g:J
 
-    invoke-static {v0, v3}, Lj3/rc0;->b(Landroid/content/Context;Lorg/json/JSONArray;)Landroid/os/Bundle;
+    invoke-virtual {v1, v2, v3, v4}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
 
-    move-result-object v0
+    const-string v2, "tload"
 
     .line 9
-    new-instance v4, Lj3/sc0;
+    iget-wide v3, p0, Lj3/ha;->h:J
 
-    invoke-direct {v4, v0, v1}, Lj3/sc0;-><init>(Ljava/lang/Object;I)V
+    invoke-virtual {v1, v2, v3, v4}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
 
-    :catch_0
-    :goto_0
-    return-object v4
+    const-string v2, "pcc"
 
     .line 10
-    :pswitch_1
-    iget-object v0, p0, Lj3/ha;->b:Ljava/lang/Object;
+    iget-wide v3, p0, Lj3/ha;->i:J
 
-    check-cast v0, Lj3/ea;
+    invoke-virtual {v1, v2, v3, v4}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+
+    const-string v2, "tfetch"
+
+    const-wide/16 v3, -0x1
 
     .line 11
-    iget-object v0, v0, Lj3/ea;->e:Landroid/content/Context;
+    invoke-virtual {v1, v2, v3, v4}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
 
     .line 12
-    invoke-static {v0}, Lj3/v8;->a(Landroid/content/Context;)Landroid/content/Context;
-
-    move-result-object v0
-
-    .line 13
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 14
-    :try_start_1
-    invoke-static {v0}, Lm2/c;->a(Landroid/content/Context;)Lm2/b;
+    .line 13
+    iget-object v3, p0, Lj3/ha;->c:Ljava/util/LinkedList;
+
+    invoke-virtual {v3}, Ljava/util/LinkedList;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
 
+    :goto_0
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lj3/ga;
+
+    .line 14
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 15
-    invoke-virtual {v0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+    new-instance v5, Landroid/os/Bundle;
 
-    move-result-object v0
-
-    iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
-
-    const/16 v4, 0x1000
+    invoke-direct {v5}, Landroid/os/Bundle;-><init>()V
 
     .line 16
-    invoke-virtual {v3, v0, v4}, Lm2/b;->c(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    iget-wide v6, v4, Lj3/ga;->a:J
 
-    move-result-object v0
-    :try_end_1
-    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
+    const-string v8, "topen"
+
+    invoke-virtual {v5, v8, v6, v7}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
 
     .line 17
-    iget-object v3, v0, Landroid/content/pm/PackageInfo;->requestedPermissions:[Ljava/lang/String;
+    iget-wide v6, v4, Lj3/ga;->b:J
 
-    if-eqz v3, :cond_3
+    const-string v4, "tclose"
 
-    iget-object v3, v0, Landroid/content/pm/PackageInfo;->requestedPermissionsFlags:[I
+    invoke-virtual {v5, v4, v6, v7}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
 
-    if-nez v3, :cond_1
+    .line 18
+    invoke-virtual {v2, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    :cond_0
+    const-string v3, "tclick"
+
+    .line 19
+    invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putParcelableArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
+
+    .line 20
+    monitor-exit v0
+
+    return-object v1
+
+    :catchall_0
+    move-exception v1
+
+    .line 21
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_2
 
-    .line 18
-    :cond_1
     :goto_1
-    iget-object v3, v0, Landroid/content/pm/PackageInfo;->requestedPermissions:[Ljava/lang/String;
+    throw v1
 
-    array-length v4, v3
-
-    if-ge v1, v4, :cond_3
-
-    .line 19
-    iget-object v4, v0, Landroid/content/pm/PackageInfo;->requestedPermissionsFlags:[I
-
-    aget v4, v4, v1
-
-    and-int/lit8 v4, v4, 0x2
-
-    if-eqz v4, :cond_2
-
-    .line 20
-    aget-object v3, v3, v1
-
-    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    :cond_2
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_1
-
-    :catch_1
-    :cond_3
     :goto_2
-    return-object v2
-
-    .line 21
-    :goto_3
-    iget-object v0, p0, Lj3/ha;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/zi0;
-
-    .line 22
-    iget-object v1, v0, Lj3/zi0;->d:Lj3/aj0;
-
-    iget-object v0, v0, Lj3/zi0;->a:Landroid/content/Context;
-
-    invoke-interface {v1, v0}, Lj3/aj0;->b(Landroid/content/Context;)Lcom/google/android/gms/internal/ads/c0;
-
-    move-result-object v0
-
-    return-object v0
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    goto :goto_1
 .end method

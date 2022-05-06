@@ -14,7 +14,7 @@
 
 
 # virtual methods
-.method public abstract c(Landroid/os/IBinder;)Ljava/lang/Object;
+.method public abstract a(Landroid/os/IBinder;)Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

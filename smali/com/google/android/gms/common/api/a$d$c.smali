@@ -27,7 +27,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/google/android/play/core/assetpacks/u;)V
+.method public constructor <init>(Lce/a;)V
     .locals 0
 
     .line 2

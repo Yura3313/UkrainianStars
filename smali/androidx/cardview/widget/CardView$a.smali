@@ -56,14 +56,14 @@
     .line 1
     iget-object v0, p0, Landroidx/cardview/widget/CardView$a;->b:Landroidx/cardview/widget/CardView;
 
-    iget-object v0, v0, Landroidx/cardview/widget/CardView;->k:Landroid/graphics/Rect;
+    iget-object v0, v0, Landroidx/cardview/widget/CardView;->l:Landroid/graphics/Rect;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Landroid/graphics/Rect;->set(IIII)V
 
     .line 2
     iget-object v0, p0, Landroidx/cardview/widget/CardView$a;->b:Landroidx/cardview/widget/CardView;
 
-    iget-object v1, v0, Landroidx/cardview/widget/CardView;->j:Landroid/graphics/Rect;
+    iget-object v1, v0, Landroidx/cardview/widget/CardView;->k:Landroid/graphics/Rect;
 
     iget v2, v1, Landroid/graphics/Rect;->left:I
 

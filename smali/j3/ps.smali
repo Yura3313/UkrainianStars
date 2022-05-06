@@ -1,38 +1,33 @@
-.class public final synthetic Lj3/ps;
-.super Ljava/lang/Object;
+.class public final Lj3/ps;
+.super Lj3/at;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lj3/vs;
 
-
-# instance fields
-.field public final a:Z
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lj3/at<",
+        "Lj3/ts;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Z)V
+.method public constructor <init>(Ljava/util/Set;)V
     .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-boolean p1, p0, Lj3/ps;->a:Z
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final e(Ljava/lang/Object;)V
-    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Set<",
+            "Lj3/yt<",
+            "Lj3/ts;",
+            ">;>;)V"
+        }
+    .end annotation
 
     .line 1
-    iget-boolean v0, p0, Lj3/ps;->a:Z
-
-    check-cast p1, Lj3/us;
-
-    .line 2
-    invoke-interface {p1, v0}, Lj3/us;->G(Z)V
+    invoke-direct {p0, p1}, Lj3/at;-><init>(Ljava/util/Set;)V
 
     return-void
 .end method

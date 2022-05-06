@@ -77,7 +77,7 @@
     .line 4
     check-cast p0, Lcom/google/protobuf/f0;
 
-    invoke-interface {p0}, Lcom/google/protobuf/f0;->r()Ljava/util/List;
+    invoke-interface {p0}, Lcom/google/protobuf/f0;->t()Ljava/util/List;
 
     move-result-object p0
 
@@ -110,7 +110,7 @@
     if-nez v3, :cond_1
 
     .line 8
-    invoke-static {v2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -160,7 +160,7 @@
     .line 13
     check-cast v3, Lcom/google/protobuf/i;
 
-    invoke-interface {v0, v3}, Lcom/google/protobuf/f0;->U(Lcom/google/protobuf/i;)V
+    invoke-interface {v0, v3}, Lcom/google/protobuf/f0;->X(Lcom/google/protobuf/i;)V
 
     goto :goto_0
 
@@ -241,7 +241,7 @@
     if-nez v3, :cond_7
 
     .line 21
-    invoke-static {v2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 

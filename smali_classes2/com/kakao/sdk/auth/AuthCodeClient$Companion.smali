@@ -106,7 +106,7 @@
 
     const-string v0, "Base64.encodeToString(\n \u202664.URL_SAFE\n            )"
 
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 
@@ -114,7 +114,7 @@
     const-string p1, "codeVerifier"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -142,7 +142,7 @@
 
     const-string v2, "UUID.randomUUID().toString()"
 
-    invoke-static {v1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v2, Lre/a;->a:Ljava/nio/charset/Charset;
 
@@ -152,7 +152,7 @@
 
     const-string v2, "(this as java.lang.String).getBytes(charset)"
 
-    invoke-static {v1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     invoke-virtual {v0, v1}, Ljava/security/MessageDigest;->digest([B)[B
@@ -168,7 +168,7 @@
 
     const-string v1, "Base64.encodeToString(\n \u2026.NO_PADDING\n            )"
 
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object v0
 .end method
@@ -176,7 +176,7 @@
 .method public final getInstance()Lcom/kakao/sdk/auth/AuthCodeClient;
     .locals 3
 
-    invoke-static {}, Lcom/kakao/sdk/auth/AuthCodeClient;->access$getInstance$cp()Lbe/c;
+    invoke-static {}, Lcom/kakao/sdk/auth/AuthCodeClient;->access$getInstance$cp()Lae/c;
 
     move-result-object v0
 
@@ -188,7 +188,7 @@
 
     aget-object v1, v1, v2
 
-    invoke-interface {v0}, Lbe/c;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Lae/c;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 

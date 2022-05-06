@@ -3,401 +3,228 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Landroid/hardware/SensorEventListener;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final a:Landroid/hardware/SensorManager;
+.field public final synthetic g:I
 
-.field public final b:Ljava/lang/Object;
-
-.field public final h:Landroid/view/Display;
-
-.field public final i:[F
-
-.field public final j:[F
-
-.field public k:[F
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "sensorThreadLock"
-    .end annotation
-.end field
-
-.field public l:Landroid/os/Handler;
-
-.field public m:Lj3/ze;
+.field public final h:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 1
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+    .locals 0
 
     .line 1
+    iput p2, p0, Lj3/xe;->g:I
+
+    iput-object p1, p0, Lj3/xe;->h:Ljava/lang/Object;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const-string v0, "sensor"
-
-    .line 2
-    invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/hardware/SensorManager;
-
-    iput-object v0, p0, Lj3/xe;->a:Landroid/hardware/SensorManager;
-
-    const-string v0, "window"
-
-    .line 3
-    invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/view/WindowManager;
-
-    .line 4
-    invoke-interface {p1}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lj3/xe;->h:Landroid/view/Display;
-
-    const/16 p1, 0x9
-
-    new-array v0, p1, [F
-
-    .line 5
-    iput-object v0, p0, Lj3/xe;->i:[F
-
-    new-array p1, p1, [F
-
-    .line 6
-    iput-object p1, p0, Lj3/xe;->j:[F
-
-    .line 7
-    new-instance p1, Ljava/lang/Object;
-
-    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lj3/xe;->b:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 2
+.method public final run()V
+    .locals 7
+
+    iget v0, p0, Lj3/xe;->g:I
+
+    const/4 v1, 0x1
+
+    packed-switch v0, :pswitch_data_0
+
+    goto/16 :goto_1
 
     .line 1
-    iget-object v0, p0, Lj3/xe;->l:Landroid/os/Handler;
+    :pswitch_0
+    iget-object v0, p0, Lj3/xe;->h:Ljava/lang/Object;
 
-    if-nez v0, :cond_0
+    check-cast v0, Lcom/google/android/gms/internal/ads/d6;
+
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/d6;->a:Landroid/content/Context;
+
+    invoke-static {v0}, Lj3/n;->a(Landroid/content/Context;)V
 
     return-void
 
     .line 2
-    :cond_0
-    iget-object v0, p0, Lj3/xe;->a:Landroid/hardware/SensorManager;
+    :pswitch_1
+    iget-object v0, p0, Lj3/xe;->h:Ljava/lang/Object;
 
-    invoke-virtual {v0, p0}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;)V
+    check-cast v0, Lj3/v20;
 
     .line 3
-    iget-object v0, p0, Lj3/xe;->l:Landroid/os/Handler;
-
-    new-instance v1, Lj3/we;
-
-    invoke-direct {v1}, Lj3/we;-><init>()V
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-
-    const/4 v0, 0x0
-
-    .line 4
-    iput-object v0, p0, Lj3/xe;->l:Landroid/os/Handler;
+    invoke-virtual {v0}, Lj3/u20;->a()V
 
     return-void
-.end method
-
-.method public final b([F)Z
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lj3/xe;->b:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    .line 2
-    :try_start_0
-    iget-object v1, p0, Lj3/xe;->k:[F
-
-    const/4 v2, 0x0
-
-    if-nez v1, :cond_0
-
-    .line 3
-    monitor-exit v0
-
-    return v2
 
     .line 4
-    :cond_0
-    array-length v3, v1
+    :pswitch_2
+    iget-object v0, p0, Lj3/xe;->h:Ljava/lang/Object;
 
-    invoke-static {v1, v2, p1, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    check-cast v0, Lj3/me;
 
-    const/4 p1, 0x1
+    check-cast v0, Lj3/qe;
 
     .line 5
-    monitor-exit v0
+    iget-boolean v2, v0, Lj3/qe;->m:Z
 
-    return p1
+    const/4 v3, 0x0
 
-    :catchall_0
-    move-exception p1
+    if-eqz v2, :cond_1
 
     .line 6
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    iget-object v2, v0, Lj3/qe;->v:Landroid/widget/ImageView;
 
-    throw p1
-.end method
+    invoke-virtual {v2}, Landroid/widget/ImageView;->getParent()Landroid/view/ViewParent;
 
-.method public final c(II)V
-    .locals 3
+    move-result-object v2
 
-    .line 1
-    iget-object v0, p0, Lj3/xe;->j:[F
+    if-eqz v2, :cond_0
 
-    aget v1, v0, p1
+    const/4 v2, 0x1
 
-    .line 2
-    aget v2, v0, p2
+    goto :goto_0
 
-    aput v2, v0, p1
-
-    .line 3
-    aput v1, v0, p2
-
-    return-void
-.end method
-
-.method public final onAccuracyChanged(Landroid/hardware/Sensor;I)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final onSensorChanged(Landroid/hardware/SensorEvent;)V
-    .locals 8
-
-    .line 1
-    iget-object p1, p1, Landroid/hardware/SensorEvent;->values:[F
-
-    const/4 v0, 0x0
-
-    .line 2
-    aget v1, p1, v0
-
+    :cond_0
     const/4 v2, 0x0
 
-    const/4 v3, 0x2
-
-    const/4 v4, 0x1
-
-    cmpl-float v1, v1, v2
-
-    if-nez v1, :cond_0
-
-    aget v1, p1, v4
-
-    cmpl-float v1, v1, v2
-
-    if-nez v1, :cond_0
-
-    aget v1, p1, v3
-
-    cmpl-float v1, v1, v2
-
-    if-eqz v1, :cond_5
-
-    .line 3
-    :cond_0
-    iget-object v1, p0, Lj3/xe;->b:Ljava/lang/Object;
-
-    monitor-enter v1
-
-    .line 4
-    :try_start_0
-    iget-object v2, p0, Lj3/xe;->k:[F
-
-    const/16 v5, 0x9
-
-    if-nez v2, :cond_1
-
-    new-array v2, v5, [F
-
-    .line 5
-    iput-object v2, p0, Lj3/xe;->k:[F
-
-    .line 6
-    :cond_1
-    monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_2
+    :goto_0
+    if-eqz v2, :cond_1
 
     .line 7
-    iget-object v1, p0, Lj3/xe;->i:[F
+    iget-object v2, v0, Lj3/qe;->h:Landroid/widget/FrameLayout;
 
-    invoke-static {v1, p1}, Landroid/hardware/SensorManager;->getRotationMatrixFromVector([F[F)V
+    iget-object v4, v0, Lj3/qe;->v:Landroid/widget/ImageView;
+
+    invoke-virtual {v2, v4}, Landroid/widget/FrameLayout;->removeView(Landroid/view/View;)V
 
     .line 8
-    iget-object p1, p0, Lj3/xe;->h:Landroid/view/Display;
+    :cond_1
+    iget-object v2, v0, Lj3/qe;->u:Landroid/graphics/Bitmap;
 
-    invoke-virtual {p1}, Landroid/view/Display;->getRotation()I
-
-    move-result p1
-
-    const/16 v1, 0x81
-
-    const/4 v2, 0x3
-
-    if-eq p1, v4, :cond_4
-
-    const/16 v6, 0x82
-
-    if-eq p1, v3, :cond_3
-
-    if-eq p1, v2, :cond_2
+    if-eqz v2, :cond_4
 
     .line 9
-    iget-object p1, p0, Lj3/xe;->i:[F
+    sget-object v2, Lh1/o;->B:Lh1/o;
 
-    iget-object v1, p0, Lj3/xe;->j:[F
-
-    invoke-static {p1, v0, v1, v0, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    goto :goto_0
+    iget-object v2, v2, Lh1/o;->j:Lk2/c;
 
     .line 10
-    :cond_2
-    iget-object p1, p0, Lj3/xe;->i:[F
+    invoke-interface {v2}, Lk2/c;->b()J
 
-    iget-object v1, p0, Lj3/xe;->j:[F
-
-    invoke-static {p1, v6, v4, v1}, Landroid/hardware/SensorManager;->remapCoordinateSystem([FII[F)Z
-
-    goto :goto_0
+    move-result-wide v4
 
     .line 11
-    :cond_3
-    iget-object p1, p0, Lj3/xe;->i:[F
+    iget-object v2, v0, Lj3/qe;->l:Lj3/oe;
 
-    iget-object v7, p0, Lj3/xe;->j:[F
+    iget-object v6, v0, Lj3/qe;->u:Landroid/graphics/Bitmap;
 
-    invoke-static {p1, v1, v6, v7}, Landroid/hardware/SensorManager;->remapCoordinateSystem([FII[F)Z
+    invoke-virtual {v2, v6}, Landroid/view/TextureView;->getBitmap(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
-    goto :goto_0
+    move-result-object v2
+
+    if-eqz v2, :cond_2
 
     .line 12
-    :cond_4
-    iget-object p1, p0, Lj3/xe;->i:[F
-
-    iget-object v6, p0, Lj3/xe;->j:[F
-
-    invoke-static {p1, v3, v1, v6}, Landroid/hardware/SensorManager;->remapCoordinateSystem([FII[F)Z
+    iput-boolean v1, v0, Lj3/qe;->w:Z
 
     .line 13
-    :goto_0
-    invoke-virtual {p0, v4, v2}, Lj3/xe;->c(II)V
+    :cond_2
+    sget-object v1, Lh1/o;->B:Lh1/o;
 
-    const/4 p1, 0x6
+    iget-object v1, v1, Lh1/o;->j:Lk2/c;
 
     .line 14
-    invoke-virtual {p0, v3, p1}, Lj3/xe;->c(II)V
+    invoke-interface {v1}, Lk2/c;->b()J
 
-    const/4 p1, 0x5
+    move-result-wide v1
 
-    const/4 v1, 0x7
+    sub-long/2addr v1, v4
 
     .line 15
-    invoke-virtual {p0, p1, v1}, Lj3/xe;->c(II)V
+    invoke-static {}, Lj3/cj;->l()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
 
     .line 16
-    iget-object p1, p0, Lj3/xe;->b:Ljava/lang/Object;
-
-    monitor-enter p1
+    invoke-static {}, Lj3/cj;->l()Z
 
     .line 17
-    :try_start_1
-    iget-object v1, p0, Lj3/xe;->j:[F
+    :cond_3
+    iget-wide v4, v0, Lj3/qe;->k:J
 
-    iget-object v2, p0, Lj3/xe;->k:[F
+    cmp-long v6, v1, v4
 
-    invoke-static {v1, v0, v2, v0, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    if-lez v6, :cond_4
 
     .line 18
-    monitor-exit p1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    iput-boolean v3, v0, Lj3/qe;->p:Z
+
+    const/4 v3, 0x0
 
     .line 19
-    iget-object p1, p0, Lj3/xe;->m:Lj3/ze;
-
-    if-eqz p1, :cond_5
+    iput-object v3, v0, Lj3/qe;->u:Landroid/graphics/Bitmap;
 
     .line 20
-    check-cast p1, Lj3/ye;
+    iget-object v0, v0, Lj3/qe;->i:Lj3/a0;
+
+    if-eqz v0, :cond_4
 
     .line 21
-    iget-object v0, p1, Lj3/ye;->z:Ljava/lang/Object;
+    invoke-static {v1, v2}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
-    monitor-enter v0
+    move-result-object v1
+
+    const-string v2, "spinner_jank"
 
     .line 22
-    :try_start_2
-    iget-object p1, p1, Lj3/ye;->z:Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Lj3/a0;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {p1}, Ljava/lang/Object;->notifyAll()V
-
-    .line 23
-    monitor-exit v0
-
-    goto :goto_1
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit v0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    throw p1
-
-    :cond_5
-    :goto_1
+    :cond_4
     return-void
 
-    :catchall_1
-    move-exception v0
+    .line 23
+    :goto_1
+    iget-object v0, p0, Lj3/xe;->h:Ljava/lang/Object;
+
+    move-object v2, v0
+
+    check-cast v2, Lcom/google/android/gms/internal/ads/zzzk;
 
     .line 24
-    :try_start_3
-    monitor-exit p1
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+    iget-object v2, v2, Lcom/google/android/gms/internal/ads/zzzk;->g:Lcom/google/android/gms/internal/ads/zzwl;
 
-    throw v0
-
-    :catchall_2
-    move-exception p1
+    if-eqz v2, :cond_5
 
     .line 25
-    :try_start_4
-    monitor-exit v1
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_2
+    :try_start_0
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzzk;
 
-    throw p1
+    .line 26
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/zzzk;->g:Lcom/google/android/gms/internal/ads/zzwl;
+
+    .line 27
+    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzwl;->I0(I)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :cond_5
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -494,7 +494,7 @@
 
     .line 3
     :cond_0
-    new-instance v1, Lp0/k;
+    new-instance v1, Lp0/i;
 
     .line 4
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
@@ -505,7 +505,7 @@
 
     move-result v3
 
-    invoke-direct {v1, v0, v2, v3}, Lp0/k;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v0, v2, v3}, Lp0/i;-><init>(Ljava/lang/String;II)V
 
     .line 5
     iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplApi21$ExtraSession;->this$0:Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplApi21;

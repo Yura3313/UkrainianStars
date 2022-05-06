@@ -78,7 +78,7 @@
 .method public final getInstance()Lcom/kakao/sdk/common/util/IntentResolveClient;
     .locals 3
 
-    invoke-static {}, Lcom/kakao/sdk/common/util/IntentResolveClient;->access$getInstance$cp()Lbe/c;
+    invoke-static {}, Lcom/kakao/sdk/common/util/IntentResolveClient;->access$getInstance$cp()Lae/c;
 
     move-result-object v0
 
@@ -90,7 +90,7 @@
 
     aget-object v1, v1, v2
 
-    invoke-interface {v0}, Lbe/c;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Lae/c;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 

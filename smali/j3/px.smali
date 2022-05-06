@@ -1,294 +1,110 @@
-.class public final Lj3/px;
+.class public final synthetic Lj3/px;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lj3/bv0<",
-        "Lj3/fx;",
-        ">;"
-    }
-.end annotation
+.implements Lj3/ql0;
 
 
 # instance fields
-.field public final a:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Landroid/content/Context;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic a:I
 
-.field public final b:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/bx;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final c:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/xq0;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final d:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lcom/google/android/gms/internal/ads/zzbbg;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final e:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lh1/b;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final f:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lcom/google/android/gms/internal/ads/q8;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final g:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/pg0;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final h:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/ux;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final i:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Ljava/util/concurrent/ScheduledExecutorService;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/fv0<",
-            "Landroid/content/Context;",
-            ">;",
-            "Lj3/fv0<",
-            "Lj3/bx;",
-            ">;",
-            "Lj3/fv0<",
-            "Lj3/xq0;",
-            ">;",
-            "Lj3/fv0<",
-            "Lcom/google/android/gms/internal/ads/zzbbg;",
-            ">;",
-            "Lj3/fv0<",
-            "Lh1/b;",
-            ">;",
-            "Lj3/fv0<",
-            "Lcom/google/android/gms/internal/ads/q8;",
-            ">;",
-            "Lj3/fv0<",
-            "Ljava/util/concurrent/Executor;",
-            ">;",
-            "Lj3/fv0<",
-            "Lj3/pg0;",
-            ">;",
-            "Lj3/fv0<",
-            "Lj3/ux;",
-            ">;",
-            "Lj3/fv0<",
-            "Ljava/util/concurrent/ScheduledExecutorService;",
-            ">;)V"
-        }
-    .end annotation
 
     .line 1
+    iput p2, p0, Lj3/px;->a:I
+
+    iput-object p1, p0, Lj3/px;->b:Ljava/lang/Object;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lj3/px;->a:Lj3/fv0;
-
-    .line 3
-    iput-object p2, p0, Lj3/px;->b:Lj3/fv0;
-
-    .line 4
-    iput-object p3, p0, Lj3/px;->c:Lj3/fv0;
-
-    .line 5
-    iput-object p4, p0, Lj3/px;->d:Lj3/fv0;
-
-    .line 6
-    iput-object p5, p0, Lj3/px;->e:Lj3/fv0;
-
-    .line 7
-    iput-object p6, p0, Lj3/px;->f:Lj3/fv0;
-
-    .line 8
-    iput-object p8, p0, Lj3/px;->g:Lj3/fv0;
-
-    .line 9
-    iput-object p9, p0, Lj3/px;->h:Lj3/fv0;
-
-    .line 10
-    iput-object p10, p0, Lj3/px;->i:Lj3/fv0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic get()Ljava/lang/Object;
-    .locals 12
+.method public final a(Ljava/lang/Object;)Lj3/im0;
+    .locals 3
+
+    iget v0, p0, Lj3/px;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
 
     .line 1
-    iget-object v0, p0, Lj3/px;->a:Lj3/fv0;
+    :pswitch_0
+    iget-object v0, p0, Lj3/px;->b:Ljava/lang/Object;
 
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
+    check-cast v0, Lj3/im0;
 
-    move-result-object v0
+    check-cast p1, Lj3/gh;
 
-    move-object v2, v0
-
-    check-cast v2, Landroid/content/Context;
-
-    iget-object v0, p0, Lj3/px;->b:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v3, v0
-
-    check-cast v3, Lj3/bx;
-
-    iget-object v0, p0, Lj3/px;->c:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v4, v0
-
-    check-cast v4, Lj3/xq0;
-
-    iget-object v0, p0, Lj3/px;->d:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v5, v0
-
-    check-cast v5, Lcom/google/android/gms/internal/ads/zzbbg;
-
-    iget-object v0, p0, Lj3/px;->e:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v6, v0
-
-    check-cast v6, Lh1/b;
-
-    iget-object v0, p0, Lj3/px;->f:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v7, v0
-
-    check-cast v7, Lcom/google/android/gms/internal/ads/q8;
+    if-eqz p1, :cond_0
 
     .line 2
-    invoke-static {}, Lj3/fp;->b()Lj3/am0;
+    invoke-interface {p1}, Lj3/gh;->h()Lcom/google/android/gms/internal/ads/zzbgk;
 
-    move-result-object v8
+    move-result-object p1
 
-    .line 3
-    iget-object v0, p0, Lj3/px;->g:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v9, v0
-
-    check-cast v9, Lj3/pg0;
-
-    iget-object v0, p0, Lj3/px;->h:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v10, v0
-
-    check-cast v10, Lj3/ux;
-
-    iget-object v0, p0, Lj3/px;->i:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v11, v0
-
-    check-cast v11, Ljava/util/concurrent/ScheduledExecutorService;
-
-    .line 4
-    new-instance v0, Lj3/fx;
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v11}, Lj3/fx;-><init>(Landroid/content/Context;Lj3/bx;Lj3/xq0;Lcom/google/android/gms/internal/ads/zzbbg;Lh1/b;Lcom/google/android/gms/internal/ads/q8;Ljava/util/concurrent/Executor;Lj3/pg0;Lj3/ux;Ljava/util/concurrent/ScheduledExecutorService;)V
+    if-eqz p1, :cond_0
 
     return-object v0
+
+    .line 3
+    :cond_0
+    new-instance p1, Lcom/google/android/gms/internal/ads/zzcuh;
+
+    const/4 v0, 0x1
+
+    const-string v1, "Retrieve video view in instream ad response failed."
+
+    invoke-direct {p1, v0, v1}, Lcom/google/android/gms/internal/ads/zzcuh;-><init>(ILjava/lang/String;)V
+
+    throw p1
+
+    .line 4
+    :goto_0
+    iget-object v0, p0, Lj3/px;->b:Ljava/lang/Object;
+
+    check-cast v0, Lj3/m20;
+
+    check-cast p1, Ljava/io/InputStream;
+
+    .line 5
+    new-instance v1, Lj3/ug0;
+
+    new-instance v2, Lj3/ty0;
+
+    iget-object v0, v0, Lj3/m20;->c:Lj3/wg0;
+
+    invoke-direct {v2, v0}, Lj3/ty0;-><init>(Ljava/lang/Object;)V
+
+    new-instance v0, Ljava/io/InputStreamReader;
+
+    invoke-direct {v0, p1}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V
+
+    .line 6
+    invoke-static {v0}, Lj3/sg0;->a(Ljava/io/Reader;)Lj3/sg0;
+
+    move-result-object p1
+
+    invoke-direct {v1, v2, p1}, Lj3/ug0;-><init>(Lj3/ty0;Lj3/sg0;)V
+
+    .line 7
+    invoke-static {v1}, Lj3/em0;->j(Ljava/lang/Object;)Lj3/im0;
+
+    move-result-object p1
+
+    return-object p1
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

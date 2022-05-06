@@ -156,7 +156,7 @@
     if-eqz v0, :cond_1
 
     .line 5
-    sget-boolean v0, Lcom/google/protobuf/v1;->f:Z
+    sget-boolean v0, Lcom/google/protobuf/u1;->f:Z
 
     if-eqz v0, :cond_1
 

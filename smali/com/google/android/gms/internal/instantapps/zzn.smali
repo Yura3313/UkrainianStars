@@ -15,15 +15,15 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final b:J
+.field public final h:J
 
-.field public final h:I
+.field public final i:I
 
-.field public final i:Landroid/accounts/Account;
+.field public final j:Landroid/accounts/Account;
 
-.field public final j:[Landroid/accounts/Account;
+.field public final k:[Landroid/accounts/Account;
 
 
 # direct methods
@@ -47,19 +47,19 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/internal/instantapps/zzn;->a:I
+    iput p1, p0, Lcom/google/android/gms/internal/instantapps/zzn;->g:I
 
     .line 3
-    iput-wide p2, p0, Lcom/google/android/gms/internal/instantapps/zzn;->b:J
+    iput-wide p2, p0, Lcom/google/android/gms/internal/instantapps/zzn;->h:J
 
     .line 4
-    iput p4, p0, Lcom/google/android/gms/internal/instantapps/zzn;->h:I
+    iput p4, p0, Lcom/google/android/gms/internal/instantapps/zzn;->i:I
 
     .line 5
-    iput-object p5, p0, Lcom/google/android/gms/internal/instantapps/zzn;->i:Landroid/accounts/Account;
+    iput-object p5, p0, Lcom/google/android/gms/internal/instantapps/zzn;->j:Landroid/accounts/Account;
 
     .line 6
-    iput-object p6, p0, Lcom/google/android/gms/internal/instantapps/zzn;->j:[Landroid/accounts/Account;
+    iput-object p6, p0, Lcom/google/android/gms/internal/instantapps/zzn;->k:[Landroid/accounts/Account;
 
     return-void
 .end method
@@ -79,7 +79,7 @@
     const/4 v1, 0x2
 
     .line 2
-    iget v2, p0, Lcom/google/android/gms/internal/instantapps/zzn;->a:I
+    iget v2, p0, Lcom/google/android/gms/internal/instantapps/zzn;->g:I
 
     const/4 v3, 0x4
 
@@ -92,7 +92,7 @@
     const/4 v1, 0x3
 
     .line 5
-    iget-wide v4, p0, Lcom/google/android/gms/internal/instantapps/zzn;->b:J
+    iget-wide v4, p0, Lcom/google/android/gms/internal/instantapps/zzn;->h:J
 
     const/16 v2, 0x8
 
@@ -103,7 +103,7 @@
     invoke-virtual {p1, v4, v5}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 8
-    iget v1, p0, Lcom/google/android/gms/internal/instantapps/zzn;->h:I
+    iget v1, p0, Lcom/google/android/gms/internal/instantapps/zzn;->i:I
 
     .line 9
     invoke-static {p1, v3, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -114,7 +114,7 @@
     const/4 v1, 0x5
 
     .line 11
-    iget-object v2, p0, Lcom/google/android/gms/internal/instantapps/zzn;->i:Landroid/accounts/Account;
+    iget-object v2, p0, Lcom/google/android/gms/internal/instantapps/zzn;->j:Landroid/accounts/Account;
 
     const/4 v3, 0x0
 
@@ -124,7 +124,7 @@
     const/4 v1, 0x6
 
     .line 13
-    iget-object v2, p0, Lcom/google/android/gms/internal/instantapps/zzn;->j:[Landroid/accounts/Account;
+    iget-object v2, p0, Lcom/google/android/gms/internal/instantapps/zzn;->k:[Landroid/accounts/Account;
 
     .line 14
     invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->p(Landroid/os/Parcel;I[Landroid/os/Parcelable;IZ)V

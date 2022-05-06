@@ -1,104 +1,294 @@
-.class public final Lj3/gm0;
-.super Lj3/sl0;
+.class public Lj3/gm0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/util/concurrent/ScheduledFuture;
+.implements Lj3/im0;
 
 
 # annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lj3/gm0$a;
+    }
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<V:",
         "Ljava/lang/Object;",
         ">",
-        "Lj3/sl0<",
-        "TV;>;",
-        "Ljava/util/concurrent/ScheduledFuture<",
+        "Ljava/lang/Object;",
+        "Lj3/im0<",
         "TV;>;"
     }
 .end annotation
 
 
-# instance fields
-.field public final b:Ljava/util/concurrent/ScheduledFuture;
+# static fields
+.field public static final h:Lj3/im0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/concurrent/ScheduledFuture<",
+            "Lj3/im0<",
             "*>;"
         }
     .end annotation
 .end field
 
+.field public static final i:Ljava/util/logging/Logger;
 
-# direct methods
-.method public constructor <init>(Lj3/yl0;Ljava/util/concurrent/ScheduledFuture;)V
-    .locals 0
+
+# instance fields
+.field public final g:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Lj3/yl0<",
-            "TV;>;",
-            "Ljava/util/concurrent/ScheduledFuture<",
-            "*>;)V"
+            "TV;"
+        }
+    .end annotation
+
+    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lj3/gm0;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lj3/gm0;-><init>(Ljava/lang/Object;)V
+
+    sput-object v0, Lj3/gm0;->h:Lj3/im0;
+
+    .line 2
+    const-class v0, Lj3/gm0;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
+
+    move-result-object v0
+
+    sput-object v0, Lj3/gm0;->i:Ljava/util/logging/Logger;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/Object;)V
+    .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TV;)V"
         }
     .end annotation
 
     .line 1
-    invoke-direct {p0, p1}, Lj3/sl0;-><init>(Lj3/yl0;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p2, p0, Lj3/gm0;->b:Ljava/util/concurrent/ScheduledFuture;
+    iput-object p1, p0, Lj3/gm0;->g:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final cancel(Z)Z
-    .locals 2
+.method public a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+    .locals 7
+
+    const-string v0, "Runnable was null."
 
     .line 1
-    invoke-super {p0, p1}, Lj3/ql0;->cancel(Z)Z
+    invoke-static {p1, v0}, Lj3/ck0;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "Executor was null."
+
+    .line 2
+    invoke-static {p2, v0}, Lj3/ck0;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 3
+    :try_start_0
+    invoke-interface {p2, p1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception v6
+
+    .line 4
+    sget-object v1, Lj3/gm0;->i:Ljava/util/logging/Logger;
+
+    sget-object v2, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;
+
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    add-int/lit8 v0, v0, 0x39
 
-    .line 2
-    iget-object v1, p0, Lj3/gm0;->b:Ljava/util/concurrent/ScheduledFuture;
+    invoke-virtual {p2}, Ljava/lang/String;->length()I
 
-    invoke-interface {v1, p1}, Ljava/util/concurrent/ScheduledFuture;->cancel(Z)Z
+    move-result v3
 
-    :cond_0
-    return v0
+    add-int/2addr v3, v0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0, v3}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string v3, "RuntimeException while executing runnable "
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p1, " with executor "
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v3, "com.google.common.util.concurrent.ImmediateFuture"
+
+    const-string v4, "addListener"
+
+    invoke-virtual/range {v1 .. v6}, Ljava/util/logging/Logger;->logp(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    return-void
 .end method
 
-.method public final synthetic compareTo(Ljava/lang/Object;)I
-    .locals 1
+.method public cancel(Z)Z
+    .locals 0
 
-    .line 1
-    check-cast p1, Ljava/util/concurrent/Delayed;
-
-    .line 2
-    iget-object v0, p0, Lj3/gm0;->b:Ljava/util/concurrent/ScheduledFuture;
-
-    invoke-interface {v0, p1}, Ljava/util/concurrent/ScheduledFuture;->compareTo(Ljava/lang/Object;)I
-
-    move-result p1
+    const/4 p1, 0x0
 
     return p1
 .end method
 
-.method public final getDelay(Ljava/util/concurrent/TimeUnit;)J
-    .locals 2
+.method public get()Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TV;"
+        }
+    .end annotation
+
+    .line 3
+    iget-object v0, p0, Lj3/gm0;->g:Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method public get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(J",
+            "Ljava/util/concurrent/TimeUnit;",
+            ")TV;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/util/concurrent/ExecutionException;
+        }
+    .end annotation
 
     .line 1
-    iget-object v0, p0, Lj3/gm0;->b:Ljava/util/concurrent/ScheduledFuture;
+    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-interface {v0, p1}, Ljava/util/concurrent/ScheduledFuture;->getDelay(Ljava/util/concurrent/TimeUnit;)J
+    .line 2
+    iget-object p1, p0, Lj3/gm0;->g:Ljava/lang/Object;
 
-    move-result-wide v0
+    return-object p1
+.end method
 
-    return-wide v0
+.method public isCancelled()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public isDone()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 4
+
+    .line 1
+    invoke-super {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lj3/gm0;->g:Ljava/lang/Object;
+
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const/16 v2, 0x1b
+
+    invoke-static {v0, v2}, La1/e;->a(Ljava/lang/String;I)I
+
+    move-result v2
+
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    add-int/2addr v3, v2
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "[status=SUCCESS, result=["
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "]]"
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

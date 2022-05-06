@@ -1,32 +1,28 @@
-.class public final Lj3/zf0;
+.class public interface abstract Lj3/zf0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lj3/pf0;
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<RequestComponentT:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
 
 
-# instance fields
-.field public a:Lj3/pg0;
-
-.field public b:Ljava/lang/String;
-
-
-# direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public constructor <init>(Lj3/xf0;)V
-    .locals 0
-
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
+# virtual methods
+.method public abstract f(Lj3/wf0;)Lj3/qq;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/wf0;",
+            ")",
+            "Lj3/qq<",
+            "TRequestComponentT;>;"
+        }
+    .end annotation
 .end method

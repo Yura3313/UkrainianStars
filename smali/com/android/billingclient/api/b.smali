@@ -10,7 +10,7 @@
 
 .field public final c:Landroid/os/Handler;
 
-.field public d:Lcom/android/billingclient/api/a0;
+.field public d:Lcom/android/billingclient/api/z;
 
 .field public e:Landroid/content/Context;
 
@@ -108,12 +108,12 @@
 
     iput-object p1, p0, Lcom/android/billingclient/api/b;->e:Landroid/content/Context;
 
-    new-instance p2, Lcom/android/billingclient/api/a0;
+    new-instance p2, Lcom/android/billingclient/api/z;
 
     .line 7
-    invoke-direct {p2, p1, p3}, Lcom/android/billingclient/api/a0;-><init>(Landroid/content/Context;Lcom/android/billingclient/api/h;)V
+    invoke-direct {p2, p1, p3}, Lcom/android/billingclient/api/z;-><init>(Landroid/content/Context;Lcom/android/billingclient/api/h;)V
 
-    iput-object p2, p0, Lcom/android/billingclient/api/b;->d:Lcom/android/billingclient/api/a0;
+    iput-object p2, p0, Lcom/android/billingclient/api/b;->d:Lcom/android/billingclient/api/z;
 
     iput-boolean v0, p0, Lcom/android/billingclient/api/b;->q:Z
 
@@ -179,7 +179,7 @@
 
     .line 7
     :cond_1
-    invoke-interface {v0, v1, v2, p1, v5}, Lcom/google/android/gms/internal/play_billing/zzd;->k6(ILjava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
+    invoke-interface {v0, v1, v2, p1, v5}, Lcom/google/android/gms/internal/play_billing/zzd;->l6(ILjava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -213,7 +213,7 @@
     move-result-object v2
 
     .line 12
-    invoke-interface {v0, v1, v2, p1}, Lcom/google/android/gms/internal/play_billing/zzd;->f5(ILjava/lang/String;Ljava/lang/String;)I
+    invoke-interface {v0, v1, v2, p1}, Lcom/google/android/gms/internal/play_billing/zzd;->g5(ILjava/lang/String;Ljava/lang/String;)I
 
     move-result v1
     :try_end_0
@@ -411,7 +411,9 @@
 
     new-instance v0, Lcom/android/billingclient/api/b0;
 
-    invoke-direct {v0, p2}, Lcom/android/billingclient/api/b0;-><init>(Lcom/android/billingclient/api/j;)V
+    const/4 v2, 0x0
+
+    invoke-direct {v0, p2, v2}, Lcom/android/billingclient/api/b0;-><init>(Ljava/lang/Object;I)V
 
     const-wide/16 v2, 0x7530
 
@@ -498,7 +500,7 @@
     return-object v0
 .end method
 
-.method public final e(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;)Lcom/android/billingclient/api/t;
+.method public final e(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;)Lcom/android/billingclient/api/u;
     .locals 16
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -509,7 +511,7 @@
             ">;",
             "Ljava/lang/String;",
             ")",
-            "Lcom/android/billingclient/api/t;"
+            "Lcom/android/billingclient/api/u;"
         }
     .end annotation
 
@@ -638,7 +640,7 @@
     move-object/from16 v13, p1
 
     .line 13
-    invoke-interface/range {v10 .. v15}, Lcom/google/android/gms/internal/play_billing/zzd;->Z3(ILjava/lang/String;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;)Landroid/os/Bundle;
+    invoke-interface/range {v10 .. v15}, Lcom/google/android/gms/internal/play_billing/zzd;->a4(ILjava/lang/String;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;)Landroid/os/Bundle;
 
     move-result-object v6
 
@@ -662,7 +664,7 @@
     move-object/from16 v10, p1
 
     .line 16
-    invoke-interface {v6, v7, v9, v10, v14}, Lcom/google/android/gms/internal/play_billing/zzd;->J5(ILjava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
+    invoke-interface {v6, v7, v9, v10, v14}, Lcom/google/android/gms/internal/play_billing/zzd;->K5(ILjava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
 
     move-result-object v6
     :try_end_0
@@ -678,10 +680,10 @@
     .line 17
     sget v0, Lv3/a;->a:I
 
-    new-instance v0, Lcom/android/billingclient/api/t;
+    new-instance v0, Lcom/android/billingclient/api/u;
 
     .line 18
-    invoke-direct {v0, v9, v7, v4}, Lcom/android/billingclient/api/t;-><init>(ILjava/lang/String;Ljava/util/List;)V
+    invoke-direct {v0, v9, v7, v4}, Lcom/android/billingclient/api/u;-><init>(ILjava/lang/String;Ljava/util/List;)V
 
     return-object v0
 
@@ -714,10 +716,10 @@
     .line 22
     sget v4, Lv3/a;->a:I
 
-    new-instance v4, Lcom/android/billingclient/api/t;
+    new-instance v4, Lcom/android/billingclient/api/u;
 
     .line 23
-    invoke-direct {v4, v3, v2, v0}, Lcom/android/billingclient/api/t;-><init>(ILjava/lang/String;Ljava/util/List;)V
+    invoke-direct {v4, v3, v2, v0}, Lcom/android/billingclient/api/u;-><init>(ILjava/lang/String;Ljava/util/List;)V
 
     return-object v4
 
@@ -725,10 +727,10 @@
     :cond_4
     sget v3, Lv3/a;->a:I
 
-    new-instance v3, Lcom/android/billingclient/api/t;
+    new-instance v3, Lcom/android/billingclient/api/u;
 
     .line 25
-    invoke-direct {v3, v13, v2, v0}, Lcom/android/billingclient/api/t;-><init>(ILjava/lang/String;Ljava/util/List;)V
+    invoke-direct {v3, v13, v2, v0}, Lcom/android/billingclient/api/u;-><init>(ILjava/lang/String;Ljava/util/List;)V
 
     return-object v3
 
@@ -793,12 +795,12 @@
     :catch_0
     sget v0, Lv3/a;->a:I
 
-    new-instance v0, Lcom/android/billingclient/api/t;
+    new-instance v0, Lcom/android/billingclient/api/u;
 
     const-string v2, "Error trying to decode SkuDetails."
 
     .line 33
-    invoke-direct {v0, v13, v2, v4}, Lcom/android/billingclient/api/t;-><init>(ILjava/lang/String;Ljava/util/List;)V
+    invoke-direct {v0, v13, v2, v4}, Lcom/android/billingclient/api/u;-><init>(ILjava/lang/String;Ljava/util/List;)V
 
     return-object v0
 
@@ -811,10 +813,10 @@
     :cond_7
     sget v0, Lv3/a;->a:I
 
-    new-instance v0, Lcom/android/billingclient/api/t;
+    new-instance v0, Lcom/android/billingclient/api/u;
 
     .line 35
-    invoke-direct {v0, v9, v7, v4}, Lcom/android/billingclient/api/t;-><init>(ILjava/lang/String;Ljava/util/List;)V
+    invoke-direct {v0, v9, v7, v4}, Lcom/android/billingclient/api/u;-><init>(ILjava/lang/String;Ljava/util/List;)V
 
     return-object v0
 
@@ -838,25 +840,25 @@
 
     sget v0, Lv3/a;->a:I
 
-    new-instance v0, Lcom/android/billingclient/api/t;
+    new-instance v0, Lcom/android/billingclient/api/u;
 
     const/4 v2, -0x1
 
     const-string v3, "Service connection is disconnected."
 
     .line 37
-    invoke-direct {v0, v2, v3, v4}, Lcom/android/billingclient/api/t;-><init>(ILjava/lang/String;Ljava/util/List;)V
+    invoke-direct {v0, v2, v3, v4}, Lcom/android/billingclient/api/u;-><init>(ILjava/lang/String;Ljava/util/List;)V
 
     return-object v0
 
     .line 38
     :cond_8
-    new-instance v2, Lcom/android/billingclient/api/t;
+    new-instance v2, Lcom/android/billingclient/api/u;
 
     const-string v4, ""
 
     .line 39
-    invoke-direct {v2, v3, v4, v0}, Lcom/android/billingclient/api/t;-><init>(ILjava/lang/String;Ljava/util/List;)V
+    invoke-direct {v2, v3, v4, v0}, Lcom/android/billingclient/api/u;-><init>(ILjava/lang/String;Ljava/util/List;)V
 
     return-object v2
 .end method
@@ -864,13 +866,13 @@
 .method public final g(Lcom/android/billingclient/api/e;)Lcom/android/billingclient/api/e;
     .locals 2
 
-    iget-object v0, p0, Lcom/android/billingclient/api/b;->d:Lcom/android/billingclient/api/a0;
+    iget-object v0, p0, Lcom/android/billingclient/api/b;->d:Lcom/android/billingclient/api/z;
 
     .line 1
-    iget-object v0, v0, Lcom/android/billingclient/api/a0;->b:Lcom/android/billingclient/api/z;
+    iget-object v0, v0, Lcom/android/billingclient/api/z;->b:Lcom/android/billingclient/api/y;
 
     .line 2
-    iget-object v0, v0, Lcom/android/billingclient/api/z;->a:Lcom/android/billingclient/api/h;
+    iget-object v0, v0, Lcom/android/billingclient/api/y;->a:Lcom/android/billingclient/api/h;
 
     .line 3
     check-cast v0, Lcom/supercell/titan/PurchaseManagerGoogle$a;

@@ -129,7 +129,7 @@
     :cond_1
     new-instance v0, Ljava/net/ProtocolException;
 
-    invoke-static {v3, p0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, p0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -141,7 +141,7 @@
     :cond_2
     new-instance v0, Ljava/net/ProtocolException;
 
-    invoke-static {v3, p0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, p0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -213,7 +213,7 @@
     :cond_4
     new-instance v0, Ljava/net/ProtocolException;
 
-    invoke-static {v3, p0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, p0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -236,7 +236,7 @@
     :catch_0
     new-instance v0, Ljava/net/ProtocolException;
 
-    invoke-static {v3, p0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, p0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -248,7 +248,7 @@
     :cond_6
     new-instance v0, Ljava/net/ProtocolException;
 
-    invoke-static {v3, p0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, p0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -260,7 +260,7 @@
     :cond_7
     new-instance v0, Ljava/net/ProtocolException;
 
-    invoke-static {v3, p0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, p0}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 

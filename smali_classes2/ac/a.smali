@@ -1,234 +1,165 @@
-.class public abstract Lac/a;
-.super Ljava/lang/Object;
-.source "LimitedMemoryCache.java"
-
-# interfaces
-.implements Lac/b;
+.class public Lac/a;
+.super Ljava/io/InputStream;
+.source "ContentLengthInputStream.java"
 
 
 # instance fields
-.field public final a:Ljava/util/Map;
+.field public final g:Ljava/io/InputStream;
 
-.field public final b:I
-
-.field public final h:Ljava/util/concurrent/atomic/AtomicInteger;
-
-.field public final i:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Landroid/graphics/Bitmap;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final h:I
 
 
 # direct methods
-.method public constructor <init>(I)V
-    .locals 3
+.method public constructor <init>(Ljava/io/InputStream;I)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
     .line 2
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    invoke-static {v0}, Ljava/util/Collections;->synchronizedMap(Ljava/util/Map;)Ljava/util/Map;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lac/a;->a:Ljava/util/Map;
+    iput-object p1, p0, Lac/a;->g:Ljava/io/InputStream;
 
     .line 3
-    new-instance v0, Ljava/util/LinkedList;
+    iput p2, p0, Lac/a;->h:I
 
-    invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
-
-    invoke-static {v0}, Ljava/util/Collections;->synchronizedList(Ljava/util/List;)Ljava/util/List;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lac/a;->i:Ljava/util/List;
-
-    .line 4
-    iput p1, p0, Lac/a;->b:I
-
-    .line 5
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
-
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
-
-    iput-object v0, p0, Lac/a;->h:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    const/high16 v0, 0x1000000
-
-    if-le p1, v0, :cond_0
-
-    const/4 p1, 0x1
-
-    new-array p1, p1, [Ljava/lang/Object;
-
-    const/4 v0, 0x0
-
-    const/16 v1, 0x10
-
-    .line 6
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    aput-object v1, p1, v0
-
-    const/4 v0, 0x5
-
-    const/4 v1, 0x0
-
-    const-string v2, "You set too large memory cache size (more than %1$d Mb)"
-
-    .line 7
-    invoke-static {v0, v1, v2, p1}, Ljc/c;->f(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
-
-    :cond_0
     return-void
-.end method
-
-.method private d(Ljava/lang/String;)Landroid/graphics/Bitmap;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lac/a;->a:Ljava/util/Map;
-
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/ref/Reference;
-
-    if-eqz p1, :cond_0
-
-    .line 2
-    invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/graphics/Bitmap;
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    :goto_0
-    return-object p1
 .end method
 
 
 # virtual methods
-.method public bridge synthetic a(Ljava/lang/String;)Landroid/graphics/Bitmap;
-    .locals 0
-
-    invoke-direct {p0, p1}, Lac/a;->d(Ljava/lang/String;)Landroid/graphics/Bitmap;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public b()Ljava/util/Collection;
-    .locals 3
+.method public available()I
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lac/a;->a:Ljava/util/Map;
+    iget v0, p0, Lac/a;->h:I
 
-    monitor-enter v0
-
-    .line 2
-    :try_start_0
-    new-instance v1, Ljava/util/HashSet;
-
-    iget-object v2, p0, Lac/a;->a:Ljava/util/Map;
-
-    invoke-interface {v2}, Ljava/util/Map;->keySet()Ljava/util/Set;
-
-    move-result-object v2
-
-    invoke-direct {v1, v2}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
-
-    monitor-exit v0
-
-    return-object v1
-
-    :catchall_0
-    move-exception v1
-
-    .line 3
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v1
+    return v0
 .end method
 
-.method public abstract e(Landroid/graphics/Bitmap;)I
-.end method
-
-.method public remove(Ljava/lang/String;)Landroid/graphics/Bitmap;
-    .locals 2
+.method public close()V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
     .line 1
-    invoke-direct {p0, p1}, Lac/a;->d(Ljava/lang/String;)Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lac/a;->g:Ljava/io/InputStream;
 
-    move-result-object v0
+    invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 
-    if-eqz v0, :cond_0
+    return-void
+.end method
 
-    .line 2
-    iget-object v1, p0, Lac/a;->i:Ljava/util/List;
+.method public mark(I)V
+    .locals 1
 
-    invoke-interface {v1, v0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
+    .line 1
+    iget-object v0, p0, Lac/a;->g:Ljava/io/InputStream;
 
-    move-result v1
+    invoke-virtual {v0, p1}, Ljava/io/InputStream;->mark(I)V
 
-    if-eqz v1, :cond_0
+    return-void
+.end method
 
-    .line 3
-    iget-object v1, p0, Lac/a;->h:Ljava/util/concurrent/atomic/AtomicInteger;
+.method public markSupported()Z
+    .locals 1
 
-    invoke-virtual {p0, v0}, Lac/a;->e(Landroid/graphics/Bitmap;)I
+    .line 1
+    iget-object v0, p0, Lac/a;->g:Ljava/io/InputStream;
+
+    invoke-virtual {v0}, Ljava/io/InputStream;->markSupported()Z
 
     move-result v0
 
-    neg-int v0, v0
+    return v0
+.end method
 
-    invoke-virtual {v1, v0}, Ljava/util/concurrent/atomic/AtomicInteger;->addAndGet(I)I
+.method public read()I
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
-    .line 4
-    :cond_0
-    iget-object v0, p0, Lac/a;->a:Ljava/util/Map;
+    .line 1
+    iget-object v0, p0, Lac/a;->g:Ljava/io/InputStream;
 
-    invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/io/InputStream;->read()I
 
-    move-result-object p1
+    move-result v0
 
-    check-cast p1, Ljava/lang/ref/Reference;
+    return v0
+.end method
 
-    if-nez p1, :cond_1
+.method public read([B)I
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
-    const/4 p1, 0x0
+    .line 2
+    iget-object v0, p0, Lac/a;->g:Ljava/io/InputStream;
 
-    goto :goto_0
+    invoke-virtual {v0, p1}, Ljava/io/InputStream;->read([B)I
 
-    .line 5
-    :cond_1
-    invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    move-result p1
 
-    move-result-object p1
+    return p1
+.end method
 
-    check-cast p1, Landroid/graphics/Bitmap;
+.method public read([BII)I
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
-    :goto_0
-    return-object p1
+    .line 3
+    iget-object v0, p0, Lac/a;->g:Ljava/io/InputStream;
+
+    invoke-virtual {v0, p1, p2, p3}, Ljava/io/InputStream;->read([BII)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public reset()V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lac/a;->g:Ljava/io/InputStream;
+
+    invoke-virtual {v0}, Ljava/io/InputStream;->reset()V
+
+    return-void
+.end method
+
+.method public skip(J)J
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lac/a;->g:Ljava/io/InputStream;
+
+    invoke-virtual {v0, p1, p2}, Ljava/io/InputStream;->skip(J)J
+
+    move-result-wide p1
+
+    return-wide p1
 .end method

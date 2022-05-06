@@ -428,9 +428,9 @@
 
     move-result-object v4
 
-    new-instance v5, Lcom/supercell/titan/k;
+    new-instance v5, Lcom/supercell/titan/l;
 
-    invoke-direct {v5, p0, p0}, Lcom/supercell/titan/k;-><init>(Lcom/supercell/titan/LocationService;Lcom/supercell/titan/LocationService;)V
+    invoke-direct {v5, p0, p0}, Lcom/supercell/titan/l;-><init>(Lcom/supercell/titan/LocationService;Lcom/supercell/titan/LocationService;)V
 
     invoke-virtual {v4, v5}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 

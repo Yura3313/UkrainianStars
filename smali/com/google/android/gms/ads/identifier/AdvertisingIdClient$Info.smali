@@ -59,7 +59,7 @@
 
     const/4 v2, 0x7
 
-    invoke-static {v0, v2}, Ly/b;->a(Ljava/lang/String;I)I
+    invoke-static {v0, v2}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v2
 

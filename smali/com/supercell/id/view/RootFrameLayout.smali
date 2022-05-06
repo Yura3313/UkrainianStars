@@ -12,9 +12,9 @@
 
 
 # instance fields
-.field public a:Landroid/graphics/Rect;
+.field public g:Landroid/graphics/Rect;
 
-.field public final b:Ljava/util/List;
+.field public final h:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -24,9 +24,9 @@
     .end annotation
 .end field
 
-.field public final h:Landroid/view/View$OnLayoutChangeListener;
+.field public final i:Landroid/view/View$OnLayoutChangeListener;
 
-.field public final i:Ljava/lang/Runnable;
+.field public final j:Ljava/lang/Runnable;
 
 
 # direct methods
@@ -47,28 +47,28 @@
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->a:Landroid/graphics/Rect;
+    iput-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->g:Landroid/graphics/Rect;
 
     .line 3
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->b:Ljava/util/List;
+    iput-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->h:Ljava/util/List;
 
     .line 4
     new-instance p1, Lcom/supercell/id/view/j;
 
     invoke-direct {p1, p0}, Lcom/supercell/id/view/j;-><init>(Lcom/supercell/id/view/RootFrameLayout;)V
 
-    iput-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->h:Landroid/view/View$OnLayoutChangeListener;
+    iput-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->i:Landroid/view/View$OnLayoutChangeListener;
 
     .line 5
     new-instance p1, Lcom/supercell/id/view/k;
 
     invoke-direct {p1, p0}, Lcom/supercell/id/view/k;-><init>(Lcom/supercell/id/view/RootFrameLayout;)V
 
-    iput-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->i:Ljava/lang/Runnable;
+    iput-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->j:Ljava/lang/Runnable;
 
     return-void
 
@@ -76,14 +76,14 @@
     const-string p1, "attrs"
 
     .line 6
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_1
     const-string p1, "context"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -105,28 +105,28 @@
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->a:Landroid/graphics/Rect;
+    iput-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->g:Landroid/graphics/Rect;
 
     .line 9
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->b:Ljava/util/List;
+    iput-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->h:Ljava/util/List;
 
     .line 10
     new-instance p1, Lcom/supercell/id/view/j;
 
     invoke-direct {p1, p0}, Lcom/supercell/id/view/j;-><init>(Lcom/supercell/id/view/RootFrameLayout;)V
 
-    iput-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->h:Landroid/view/View$OnLayoutChangeListener;
+    iput-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->i:Landroid/view/View$OnLayoutChangeListener;
 
     .line 11
     new-instance p1, Lcom/supercell/id/view/k;
 
     invoke-direct {p1, p0}, Lcom/supercell/id/view/k;-><init>(Lcom/supercell/id/view/RootFrameLayout;)V
 
-    iput-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->i:Ljava/lang/Runnable;
+    iput-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->j:Ljava/lang/Runnable;
 
     return-void
 
@@ -134,14 +134,14 @@
     const-string p1, "attrs"
 
     .line 12
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_1
     const-string p1, "context"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -154,10 +154,10 @@
     if-eqz p1, :cond_1
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->a:Landroid/graphics/Rect;
+    iput-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->g:Landroid/graphics/Rect;
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->b:Ljava/util/List;
+    iget-object p1, p0, Lcom/supercell/id/view/RootFrameLayout;->h:Ljava/util/List;
 
     .line 3
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -178,7 +178,7 @@
     check-cast v0, Lcom/supercell/id/view/RootFrameLayout$a;
 
     .line 4
-    iget-object v1, p0, Lcom/supercell/id/view/RootFrameLayout;->a:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/supercell/id/view/RootFrameLayout;->g:Landroid/graphics/Rect;
 
     invoke-interface {v0, v1}, Lcom/supercell/id/view/RootFrameLayout$a;->a(Landroid/graphics/Rect;)V
 
@@ -193,7 +193,7 @@
     const-string p1, "insets"
 
     .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -210,7 +210,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/RootFrameLayout;->h:Landroid/view/View$OnLayoutChangeListener;
+    iget-object v0, p0, Lcom/supercell/id/view/RootFrameLayout;->i:Landroid/view/View$OnLayoutChangeListener;
 
     return-object v0
 .end method
@@ -219,7 +219,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/RootFrameLayout;->i:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/supercell/id/view/RootFrameLayout;->j:Ljava/lang/Runnable;
 
     return-object v0
 .end method
@@ -228,7 +228,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/RootFrameLayout;->a:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/supercell/id/view/RootFrameLayout;->g:Landroid/graphics/Rect;
 
     return-object v0
 .end method
@@ -237,7 +237,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/RootFrameLayout;->h:Landroid/view/View$OnLayoutChangeListener;
+    iget-object v0, p0, Lcom/supercell/id/view/RootFrameLayout;->i:Landroid/view/View$OnLayoutChangeListener;
 
     invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
@@ -254,7 +254,7 @@
     invoke-super {p0}, Landroid/widget/FrameLayout;->onDetachedFromWindow()V
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/view/RootFrameLayout;->h:Landroid/view/View$OnLayoutChangeListener;
+    iget-object v0, p0, Lcom/supercell/id/view/RootFrameLayout;->i:Landroid/view/View$OnLayoutChangeListener;
 
     invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->removeOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 

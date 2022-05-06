@@ -22,11 +22,11 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final b:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
-.field public final h:I
+.field public final i:I
 
 
 # direct methods
@@ -54,13 +54,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/common/server/FavaDiagnosticsEntity;->a:I
+    iput p1, p0, Lcom/google/android/gms/common/server/FavaDiagnosticsEntity;->g:I
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/common/server/FavaDiagnosticsEntity;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/common/server/FavaDiagnosticsEntity;->h:Ljava/lang/String;
 
     .line 4
-    iput p3, p0, Lcom/google/android/gms/common/server/FavaDiagnosticsEntity;->h:I
+    iput p3, p0, Lcom/google/android/gms/common/server/FavaDiagnosticsEntity;->i:I
 
     return-void
 .end method
@@ -84,7 +84,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/common/server/FavaDiagnosticsEntity;->a:I
+    iget v1, p0, Lcom/google/android/gms/common/server/FavaDiagnosticsEntity;->g:I
 
     const/4 v2, 0x4
 
@@ -97,7 +97,7 @@
     const/4 v0, 0x2
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/gms/common/server/FavaDiagnosticsEntity;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/server/FavaDiagnosticsEntity;->h:Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -106,7 +106,7 @@
     const/4 v0, 0x3
 
     .line 6
-    iget v1, p0, Lcom/google/android/gms/common/server/FavaDiagnosticsEntity;->h:I
+    iget v1, p0, Lcom/google/android/gms/common/server/FavaDiagnosticsEntity;->i:I
 
     .line 7
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V

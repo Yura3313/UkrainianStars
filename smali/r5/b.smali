@@ -92,7 +92,7 @@
 
 .field public final c:Lr5/c;
 
-.field public final d:Lu5/h;
+.field public final d:Lu5/g;
 
 .field public final e:Landroid/content/SharedPreferences;
 
@@ -352,7 +352,7 @@
     move-result-object p2
 
     .line 22
-    new-instance v0, Lu5/h;
+    new-instance v0, Lu5/g;
 
     sget-object v2, Lr5/b;->q:Ljava/util/concurrent/Executor;
 
@@ -395,9 +395,9 @@
 
     aput-object p3, v3, p1
 
-    invoke-direct {v0, v2, p2, v3}, Lu5/h;-><init>(Ljava/util/concurrent/Executor;Ljava/lang/Iterable;[Lu5/a;)V
+    invoke-direct {v0, v2, p2, v3}, Lu5/g;-><init>(Ljava/util/concurrent/Executor;Ljava/lang/Iterable;[Lu5/a;)V
 
-    iput-object v0, p0, Lr5/b;->d:Lu5/h;
+    iput-object v0, p0, Lr5/b;->d:Lu5/g;
 
     .line 26
     const-class p1, Lv5/c;
@@ -423,7 +423,7 @@
     throw p1
 .end method
 
-.method public static a()Lr5/b;
+.method public static b()Lr5/b;
     .locals 4
 
     .line 1
@@ -437,9 +437,9 @@
 
     const-string v2, "[DEFAULT]"
 
-    check-cast v1, Lm/h;
+    check-cast v1, Lm/g;
 
-    invoke-virtual {v1, v2}, Lm/h;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Lm/g;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -492,7 +492,7 @@
     throw v1
 .end method
 
-.method public static b(Landroid/content/Context;Lr5/c;)Lr5/b;
+.method public static c(Landroid/content/Context;Lr5/c;)Lr5/b;
     .locals 6
 
     .line 1
@@ -528,10 +528,10 @@
     .line 6
     move-object v3, v2
 
-    check-cast v3, Lm/h;
+    check-cast v3, Lm/g;
 
     .line 7
-    invoke-virtual {v3, v0}, Lm/h;->e(Ljava/lang/Object;)I
+    invoke-virtual {v3, v0}, Lm/g;->e(Ljava/lang/Object;)I
 
     move-result v3
 
@@ -573,9 +573,9 @@
     invoke-direct {v3, p0, v0, p1}, Lr5/b;-><init>(Landroid/content/Context;Ljava/lang/String;Lr5/c;)V
 
     .line 11
-    check-cast v2, Lm/h;
+    check-cast v2, Lm/g;
 
-    invoke-virtual {v2, v0, v3}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v0, v3}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 12
     monitor-exit v1
@@ -583,7 +583,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 13
-    invoke-virtual {v3}, Lr5/b;->f()V
+    invoke-virtual {v3}, Lr5/b;->g()V
 
     return-object v3
 
@@ -599,7 +599,7 @@
     throw p0
 .end method
 
-.method public static d(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Iterable;Z)V
+.method public static e(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Iterable;Z)V
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -739,7 +739,7 @@
 
     const-string p1, "#getInstance has been removed by Proguard. Add keep rule to prevent it."
 
-    invoke-static {v0, p1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -767,7 +767,7 @@
 
     const-string p1, " is missing, but is required. Check if it has been removed by Proguard."
 
-    invoke-static {v0, p1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -781,11 +781,36 @@
 
 
 # virtual methods
-.method public c()Z
+.method public a(Ljava/lang/Class;)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/lang/Class<",
+            "TT;>;)TT;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lr5/b;->f()V
+
+    .line 2
+    iget-object v0, p0, Lr5/b;->d:Lu5/g;
+
+    invoke-virtual {v0, p1}, Landroidx/fragment/app/t;->d(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public d()Z
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lr5/b;->e()V
+    invoke-virtual {p0}, Lr5/b;->f()V
 
     .line 2
     iget-object v0, p0, Lr5/b;->b:Ljava/lang/String;
@@ -798,25 +823,6 @@
     move-result v0
 
     return v0
-.end method
-
-.method public final e()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lr5/b;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
-
-    move-result v0
-
-    xor-int/lit8 v0, v0, 0x1
-
-    const-string v1, "FirebaseApp was deleted"
-
-    invoke-static {v0, v1}, Lc2/h;->k(ZLjava/lang/Object;)V
-
-    return-void
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -838,7 +844,7 @@
     check-cast p1, Lr5/b;
 
     .line 3
-    invoke-virtual {p1}, Lr5/b;->e()V
+    invoke-virtual {p1}, Lr5/b;->f()V
 
     .line 4
     iget-object p1, p1, Lr5/b;->b:Ljava/lang/String;
@@ -852,6 +858,25 @@
 .end method
 
 .method public final f()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lr5/b;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    move-result v0
+
+    xor-int/lit8 v0, v0, 0x1
+
+    const-string v1, "FirebaseApp was deleted"
+
+    invoke-static {v0, v1}, Lc2/h;->k(ZLjava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public final g()V
     .locals 4
 
     .line 1
@@ -890,22 +915,22 @@
 
     .line 5
     :cond_1
-    iget-object v2, p0, Lr5/b;->d:Lu5/h;
+    iget-object v2, p0, Lr5/b;->d:Lu5/g;
 
-    invoke-virtual {p0}, Lr5/b;->c()Z
+    invoke-virtual {p0}, Lr5/b;->d()Z
 
     move-result v3
 
-    invoke-virtual {v2, v3}, Lu5/h;->l(Z)V
+    invoke-virtual {v2, v3}, Lu5/g;->l(Z)V
 
     .line 6
     :goto_1
     sget-object v2, Lr5/b;->k:Ljava/util/List;
 
-    invoke-static {v0, p0, v2, v1}, Lr5/b;->d(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Iterable;Z)V
+    invoke-static {v0, p0, v2, v1}, Lr5/b;->e(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Iterable;Z)V
 
     .line 7
-    invoke-virtual {p0}, Lr5/b;->c()Z
+    invoke-virtual {p0}, Lr5/b;->d()Z
 
     move-result v2
 
@@ -914,7 +939,7 @@
     .line 8
     sget-object v2, Lr5/b;->l:Ljava/util/List;
 
-    invoke-static {v0, p0, v2, v1}, Lr5/b;->d(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Iterable;Z)V
+    invoke-static {v0, p0, v2, v1}, Lr5/b;->e(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Iterable;Z)V
 
     .line 9
     const-class v0, Landroid/content/Context;
@@ -923,7 +948,7 @@
 
     sget-object v3, Lr5/b;->m:Ljava/util/List;
 
-    invoke-static {v0, v2, v3, v1}, Lr5/b;->d(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Iterable;Z)V
+    invoke-static {v0, v2, v3, v1}, Lr5/b;->e(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Iterable;Z)V
 
     :cond_2
     return-void

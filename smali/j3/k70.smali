@@ -1,29 +1,42 @@
-.class public interface abstract Lj3/k70;
+.class public final synthetic Lj3/k70;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lj3/jo;
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<AdT:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
+
+# static fields
+.field public static final a:Lj3/jo;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lj3/k70;
+
+    invoke-direct {v0}, Lj3/k70;-><init>()V
+
+    sput-object v0, Lj3/k70;->a:Lj3/jo;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract a(Lj3/ng0;Lj3/eg0;Landroid/view/View;Lj3/o70;)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/ng0;",
-            "Lj3/eg0;",
-            "Landroid/view/View;",
-            "Lj3/o70;",
-            ")TAdT;"
-        }
-    .end annotation
+.method public final getVideoController()Lcom/google/android/gms/internal/ads/zzyg;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
 .end method

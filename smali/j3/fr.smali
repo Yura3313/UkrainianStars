@@ -1,76 +1,178 @@
 .class public final Lj3/fr;
-.super Lj3/ts;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lj3/rv0;
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lj3/ts<",
-        "Lj3/gr;",
-        ">;"
-    }
-.end annotation
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final b:Lj3/vv0;
+
+.field public final c:Lj3/vv0;
+
+.field public final d:Lj3/vv0;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Set;)V
+.method public synthetic constructor <init>(Lj3/vv0;Lj3/vv0;Lj3/vv0;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Set<",
-            "Lj3/rt<",
-            "Lj3/gr;",
-            ">;>;)V"
-        }
-    .end annotation
 
     .line 1
-    invoke-direct {p0, p1}, Lj3/ts;-><init>(Ljava/util/Set;)V
+    iput p4, p0, Lj3/fr;->a:I
+
+    iput-object p1, p0, Lj3/fr;->b:Lj3/vv0;
+
+    iput-object p2, p0, Lj3/fr;->c:Lj3/vv0;
+
+    iput-object p3, p0, Lj3/fr;->d:Lj3/vv0;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
+.end method
+
+.method public static a(Lj3/vv0;Lj3/vv0;Lj3/vv0;)Lj3/fr;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lj3/fr;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, p1, p2, v1}, Lj3/fr;-><init>(Lj3/vv0;Lj3/vv0;Lj3/vv0;I)V
+
+    return-object v0
+.end method
+
+.method public static b(Lj3/vv0;Lj3/vv0;Lj3/vv0;)Lj3/fr;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lj3/fr;
+
+    const/4 v1, 0x2
+
+    invoke-direct {v0, p0, p1, p2, v1}, Lj3/fr;-><init>(Lj3/vv0;Lj3/vv0;Lj3/vv0;I)V
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final G0(Landroid/content/Context;)V
-    .locals 2
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 4
+
+    iget v0, p0, Lj3/fr;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
 
     .line 1
-    new-instance v0, Lv0/f;
+    :pswitch_0
+    iget-object v0, p0, Lj3/fr;->b:Lj3/vv0;
 
-    const/4 v1, 0x4
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    invoke-direct {v0, p1, v1}, Lv0/f;-><init>(Ljava/lang/Object;I)V
+    move-result-object v0
 
-    invoke-virtual {p0, v0}, Lj3/ts;->E0(Lj3/vs;)V
+    check-cast v0, Lj3/wg0;
 
-    return-void
-.end method
+    iget-object v1, p0, Lj3/fr;->c:Lj3/vv0;
 
-.method public final H0(Landroid/content/Context;)V
-    .locals 1
+    invoke-interface {v1}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    .line 1
-    new-instance v0, Lj3/j5;
+    move-result-object v1
 
-    invoke-direct {v0, p1}, Lj3/j5;-><init>(Ljava/lang/Object;)V
+    check-cast v1, Ljava/util/concurrent/Executor;
 
-    invoke-virtual {p0, v0}, Lj3/ts;->E0(Lj3/vs;)V
+    iget-object v2, p0, Lj3/fr;->d:Lj3/vv0;
 
-    return-void
-.end method
+    invoke-interface {v2}, Lj3/vv0;->get()Ljava/lang/Object;
 
-.method public final I0(Landroid/content/Context;)V
-    .locals 1
+    move-result-object v2
 
-    .line 1
-    new-instance v0, La1/g;
+    check-cast v2, Lj3/kz;
 
-    invoke-direct {v0, p1}, La1/g;-><init>(Ljava/lang/Object;)V
+    .line 2
+    new-instance v3, Lj3/yx;
 
-    invoke-virtual {p0, v0}, Lj3/ts;->E0(Lj3/vs;)V
+    invoke-direct {v3, v0, v1, v2}, Lj3/yx;-><init>(Lj3/wg0;Ljava/util/concurrent/Executor;Lj3/kz;)V
 
-    return-void
+    return-object v3
+
+    .line 3
+    :pswitch_1
+    iget-object v0, p0, Lj3/fr;->b:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lj3/dr;
+
+    iget-object v1, p0, Lj3/fr;->c:Lj3/vv0;
+
+    invoke-interface {v1}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/Set;
+
+    iget-object v2, p0, Lj3/fr;->d:Lj3/vv0;
+
+    invoke-interface {v2}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/util/concurrent/Executor;
+
+    .line 4
+    new-instance v3, Lj3/br;
+
+    invoke-direct {v3, v0, v1, v2}, Lj3/br;-><init>(Lj3/dr;Ljava/util/Set;Ljava/util/concurrent/Executor;)V
+
+    return-object v3
+
+    .line 5
+    :goto_0
+    iget-object v0, p0, Lj3/fr;->b:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lj3/km0;
+
+    iget-object v1, p0, Lj3/fr;->c:Lj3/vv0;
+
+    invoke-interface {v1}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/content/Context;
+
+    iget-object v2, p0, Lj3/fr;->d:Lj3/vv0;
+
+    invoke-interface {v2}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/util/Set;
+
+    .line 6
+    new-instance v3, Lj3/ac0;
+
+    invoke-direct {v3, v0, v1, v2}, Lj3/ac0;-><init>(Lj3/km0;Landroid/content/Context;Ljava/util/Set;)V
+
+    return-object v3
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

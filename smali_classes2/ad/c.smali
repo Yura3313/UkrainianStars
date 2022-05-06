@@ -1,74 +1,97 @@
 .class public final Lad/c;
 .super Lle/j;
-.source "IngameAddFriendsFragment.kt"
+.source "IngameFriendRequestsFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lke/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lle/j;",
-        "Lke/l<",
-        "Lcom/supercell/id/view/WidthAdjustingMultilineTextView;",
-        "Lbe/n;",
+        "Lke/p<",
+        "Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment;",
+        "Ljava/lang/Exception;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic a:Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
-
-.field public final synthetic b:Landroid/graphics/drawable/BitmapDrawable;
+# static fields
+.field public static final g:Lad/c;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/view/WidthAdjustingMultilineTextView;Landroid/graphics/drawable/BitmapDrawable;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lad/c;->a:Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
+    new-instance v0, Lad/c;
 
-    iput-object p2, p0, Lad/c;->b:Landroid/graphics/drawable/BitmapDrawable;
+    invoke-direct {v0}, Lad/c;-><init>()V
 
-    const/4 p1, 0x1
+    sput-object v0, Lad/c;->g:Lad/c;
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
     .line 1
-    check-cast p1, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
+    check-cast p1, Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment;
+
+    check-cast p2, Ljava/lang/Exception;
 
     const/4 v0, 0x0
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_2
+
+    if-eqz p2, :cond_1
 
     .line 2
-    iget-object p1, p0, Lad/c;->a:Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
-    iget-object v1, p0, Lad/c;->b:Landroid/graphics/drawable/BitmapDrawable;
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 3
-    invoke-virtual {p1, v1, v0, v0, v0}, Landroidx/appcompat/widget/AppCompatTextView;->setCompoundDrawablesRelative(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->F(Ljava/lang/Exception;Lke/l;)V
 
     .line 4
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    :cond_0
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
-    :cond_0
+    :cond_1
     const-string p1, "it"
 
     .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_2
+    const-string p1, "$receiver"
+
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

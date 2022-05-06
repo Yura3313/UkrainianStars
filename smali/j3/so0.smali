@@ -1,56 +1,56 @@
-.class public final Lj3/so0;
-.super Ljava/lang/ThreadLocal;
+.class public final synthetic Lj3/so0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/ThreadLocal<",
-        "Ljavax/crypto/Cipher;",
-        ">;"
-    }
-.end annotation
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final initialValue()Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    :try_start_0
-    sget-object v0, Lj3/hp0;->e:Lj3/hp0;
-
-    const-string v1, "AES/GCM/NoPadding"
-
-    invoke-virtual {v0, v1}, Lj3/hp0;->a(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {}, Lj3/xo0;->b()[I
 
     move-result-object v0
 
-    check-cast v0, Ljavax/crypto/Cipher;
-    :try_end_0
-    .catch Ljava/security/GeneralSecurityException; {:try_start_0 .. :try_end_0} :catch_0
+    array-length v0, v0
 
-    return-object v0
+    new-array v0, v0, [I
+
+    sput-object v0, Lj3/so0;->a:[I
+
+    const/4 v1, 0x1
+
+    :try_start_0
+    aput v1, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     :catch_0
-    move-exception v0
+    const/4 v0, 0x3
 
-    .line 2
-    new-instance v1, Ljava/lang/IllegalStateException;
+    :try_start_1
+    sget-object v1, Lj3/so0;->a:[I
 
-    invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/Throwable;)V
+    const/4 v2, 0x2
 
-    throw v1
+    aput v2, v1, v0
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
+    :try_start_2
+    sget-object v1, Lj3/so0;->a:[I
+
+    const/4 v2, 0x4
+
+    aput v0, v1, v2
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
+    return-void
 .end method

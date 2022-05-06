@@ -4,337 +4,173 @@
 
 
 # annotations
-.annotation runtime Ljavax/annotation/ParametersAreNonnullByDefault;
+.annotation build Landroid/annotation/TargetApi;
+    value = 0x10
 .end annotation
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
+.field public final a:Lj3/p21;
 
-.field public b:Lj3/m21;
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "activityTrackerLock"
-    .end annotation
-.end field
+.field public final b:Z
 
-.field public c:Z
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "activityTrackerLock"
-    .end annotation
-.end field
+.field public final c:J
+
+.field public final d:J
+
+.field public e:J
+
+.field public f:J
+
+.field public g:J
+
+.field public h:Z
+
+.field public i:J
+
+.field public j:J
+
+.field public k:J
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 5
+
+    const-string v0, "window"
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/WindowManager;
 
     .line 2
-    new-instance v0, Ljava/lang/Object;
+    invoke-interface {p1}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    move-result-object v0
 
-    iput-object v0, p0, Lj3/n21;->a:Ljava/lang/Object;
+    const-wide/high16 v1, -0x4010000000000000L    # -1.0
 
-    const/4 v0, 0x0
+    if-eqz v0, :cond_0
+
+    invoke-interface {p1}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/view/Display;->getRefreshRate()F
+
+    move-result p1
+
+    float-to-double v3, p1
+
+    goto :goto_0
+
+    :cond_0
+    move-wide v3, v1
 
     .line 3
-    iput-object v0, p0, Lj3/n21;->b:Lj3/m21;
+    :goto_0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
+    cmpl-double p1, v3, v1
+
+    if-eqz p1, :cond_1
+
+    const/4 p1, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 p1, 0x0
 
     .line 4
-    iput-boolean v0, p0, Lj3/n21;->c:Z
+    :goto_1
+    iput-boolean p1, p0, Lj3/n21;->b:Z
 
+    if-eqz p1, :cond_2
+
+    .line 5
+    sget-object p1, Lj3/p21;->k:Lj3/p21;
+
+    .line 6
+    iput-object p1, p0, Lj3/n21;->a:Lj3/p21;
+
+    const-wide v0, 0x41cdcd6500000000L    # 1.0E9
+
+    div-double/2addr v0, v3
+
+    double-to-long v0, v0
+
+    .line 7
+    iput-wide v0, p0, Lj3/n21;->c:J
+
+    const-wide/16 v2, 0x50
+
+    mul-long v0, v0, v2
+
+    const-wide/16 v2, 0x64
+
+    .line 8
+    div-long/2addr v0, v2
+
+    iput-wide v0, p0, Lj3/n21;->d:J
+
+    goto :goto_2
+
+    :cond_2
+    const/4 p1, 0x0
+
+    .line 9
+    iput-object p1, p0, Lj3/n21;->a:Lj3/p21;
+
+    const-wide/16 v0, -0x1
+
+    .line 10
+    iput-wide v0, p0, Lj3/n21;->c:J
+
+    .line 11
+    iput-wide v0, p0, Lj3/n21;->d:J
+
+    :goto_2
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Landroid/app/Activity;
+.method public final a(JJ)Z
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lj3/n21;->a:Ljava/lang/Object;
+    iget-wide v0, p0, Lj3/n21;->j:J
 
-    monitor-enter v0
-
-    .line 2
-    :try_start_0
-    iget-object v1, p0, Lj3/n21;->b:Lj3/m21;
-
-    if-eqz v1, :cond_0
-
-    .line 3
-    iget-object v1, v1, Lj3/m21;->a:Landroid/app/Activity;
-
-    .line 4
-    monitor-exit v0
-
-    return-object v1
-
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 5
-    monitor-exit v0
-
-    return-object v1
-
-    :catchall_0
-    move-exception v1
-
-    .line 6
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v1
-.end method
-
-.method public final b()Landroid/content/Context;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lj3/n21;->a:Ljava/lang/Object;
-
-    monitor-enter v0
+    sub-long/2addr p1, v0
 
     .line 2
-    :try_start_0
-    iget-object v1, p0, Lj3/n21;->b:Lj3/m21;
+    iget-wide v0, p0, Lj3/n21;->i:J
 
-    if-eqz v1, :cond_0
+    sub-long/2addr p3, v0
 
-    .line 3
-    iget-object v1, v1, Lj3/m21;->b:Landroid/content/Context;
-
-    .line 4
-    monitor-exit v0
-
-    return-object v1
-
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 5
-    monitor-exit v0
-
-    return-object v1
-
-    :catchall_0
-    move-exception v1
-
-    .line 6
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v1
-.end method
-
-.method public final c(Landroid/content/Context;)V
-    .locals 7
-
-    .line 1
-    iget-object v0, p0, Lj3/n21;->a:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    .line 2
-    :try_start_0
-    iget-boolean v1, p0, Lj3/n21;->c:Z
-
-    if-nez v1, :cond_6
-
-    const/4 v1, 0x0
+    sub-long/2addr p3, p1
 
     .line 3
-    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+    invoke-static {p3, p4}, Ljava/lang/Math;->abs(J)J
 
-    move-result-object v2
+    move-result-wide p1
 
-    if-nez v2, :cond_0
+    const-wide/32 p3, 0x1312d00
 
-    move-object v2, p1
+    cmp-long v0, p1, p3
 
-    .line 4
+    if-lez v0, :cond_0
+
+    const/4 p1, 0x1
+
+    return p1
+
     :cond_0
-    instance-of v3, v2, Landroid/app/Application;
+    const/4 p1, 0x0
 
-    if-eqz v3, :cond_1
-
-    .line 5
-    move-object v1, v2
-
-    check-cast v1, Landroid/app/Application;
-
-    :cond_1
-    if-nez v1, :cond_2
-
-    .line 6
-    monitor-exit v0
-
-    return-void
-
-    .line 7
-    :cond_2
-    iget-object v2, p0, Lj3/n21;->b:Lj3/m21;
-
-    if-nez v2, :cond_3
-
-    .line 8
-    new-instance v2, Lj3/m21;
-
-    invoke-direct {v2}, Lj3/m21;-><init>()V
-
-    iput-object v2, p0, Lj3/n21;->b:Lj3/m21;
-
-    .line 9
-    :cond_3
-    iget-object v2, p0, Lj3/n21;->b:Lj3/m21;
-
-    .line 10
-    iget-boolean v3, v2, Lj3/m21;->n:Z
-
-    const/4 v4, 0x1
-
-    if-nez v3, :cond_5
-
-    .line 11
-    invoke-virtual {v1, v2}, Landroid/app/Application;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
-
-    .line 12
-    instance-of v3, p1, Landroid/app/Activity;
-
-    if-eqz v3, :cond_4
-
-    .line 13
-    check-cast p1, Landroid/app/Activity;
-
-    invoke-virtual {v2, p1}, Lj3/m21;->a(Landroid/app/Activity;)V
-
-    .line 14
-    :cond_4
-    iput-object v1, v2, Lj3/m21;->b:Landroid/content/Context;
-
-    .line 15
-    sget-object p1, Lj3/n;->q0:Lj3/f;
-
-    .line 16
-    sget-object v1, Lj3/w41;->j:Lj3/w41;
-
-    iget-object v1, v1, Lj3/w41;->f:Lj3/l;
-
-    .line 17
-    invoke-virtual {v1, p1}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    .line 18
-    check-cast p1, Ljava/lang/Long;
-
-    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v5
-
-    iput-wide v5, v2, Lj3/m21;->o:J
-
-    .line 19
-    iput-boolean v4, v2, Lj3/m21;->n:Z
-
-    .line 20
-    :cond_5
-    iput-boolean v4, p0, Lj3/n21;->c:Z
-
-    .line 21
-    :cond_6
-    monitor-exit v0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p1
-.end method
-
-.method public final d(Lj3/o21;)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lj3/n21;->a:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    .line 2
-    :try_start_0
-    iget-object v1, p0, Lj3/n21;->b:Lj3/m21;
-
-    if-nez v1, :cond_0
-
-    .line 3
-    new-instance v1, Lj3/m21;
-
-    invoke-direct {v1}, Lj3/m21;-><init>()V
-
-    iput-object v1, p0, Lj3/n21;->b:Lj3/m21;
-
-    .line 4
-    :cond_0
-    iget-object v1, p0, Lj3/n21;->b:Lj3/m21;
-
-    .line 5
-    iget-object v2, v1, Lj3/m21;->h:Ljava/lang/Object;
-
-    monitor-enter v2
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    .line 6
-    :try_start_1
-    iget-object v1, v1, Lj3/m21;->k:Ljava/util/List;
-
-    invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 7
-    monitor-exit v2
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 8
-    :try_start_2
-    monitor-exit v0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    .line 9
-    :try_start_3
-    monitor-exit v2
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    :try_start_4
-    throw p1
-
-    :catchall_1
-    move-exception p1
-
-    .line 10
-    monitor-exit v0
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_1
-
-    throw p1
+    return p1
 .end method

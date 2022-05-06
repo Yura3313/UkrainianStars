@@ -41,7 +41,7 @@
     const-string p1, "input"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -82,7 +82,7 @@
     return-object v0
 
     :cond_1
-    invoke-static {}, Ly4/x;->j()V
+    invoke-static {}, Ls3/b;->g()V
 
     const/4 v0, 0x0
 
@@ -104,7 +104,7 @@
 
     move-result v0
 
-    invoke-static {v1, v0}, Lbe/a;->e(II)Loe/c;
+    invoke-static {v1, v0}, Lc2/n0;->e(II)Loe/c;
 
     move-result-object v0
 
@@ -175,7 +175,7 @@
 
     const-string v3, "matcher.pattern().matcher(input)"
 
-    invoke-static {v1, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object v3, p0, Lre/d;->c:Ljava/lang/CharSequence;
 

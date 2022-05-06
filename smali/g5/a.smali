@@ -75,7 +75,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Ll5/v0$c;->SYMMETRIC:Ll5/v0$c;
+    sget-object v0, Ll5/v0$c;->i:Ll5/v0$c;
 
     return-object v0
 .end method
@@ -93,7 +93,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Ll5/t;->x(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/t;
+    invoke-static {p1, v0}, Ll5/t;->w(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/t;
 
     move-result-object p1
 
@@ -112,7 +112,7 @@
     check-cast p1, Ll5/t;
 
     .line 2
-    invoke-virtual {p1}, Ll5/t;->v()I
+    invoke-virtual {p1}, Ll5/t;->u()I
 
     move-result v0
 
@@ -121,7 +121,7 @@
     invoke-static {v0, v1}, Lp5/m0;->e(II)V
 
     .line 3
-    invoke-virtual {p1}, Ll5/t;->u()Lm5/c;
+    invoke-virtual {p1}, Ll5/t;->t()Lm5/c;
 
     move-result-object v0
 
@@ -141,12 +141,12 @@
 
     const-string v1, "invalid key size: "
 
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
     .line 5
-    invoke-virtual {p1}, Ll5/t;->u()Lm5/c;
+    invoke-virtual {p1}, Ll5/t;->t()Lm5/c;
 
     move-result-object p1
 

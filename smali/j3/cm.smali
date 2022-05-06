@@ -3,676 +3,778 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Li1/k;
-.implements Lj3/er;
-.implements Lj3/gr;
-.implements Lj3/j21;
+.implements Lj3/o5;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj3/o5<",
+        "Lj3/gm;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Lj3/tl;
+.field public final g:Landroid/content/Context;
 
-.field public final b:Lj3/am;
+.field public final h:Lj3/x21;
 
-.field public final h:Ljava/util/Set;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Set<",
-            "Lj3/ch;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final i:Lj3/b6;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/b6<",
-            "Lorg/json/JSONObject;",
-            "Lorg/json/JSONObject;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final j:Ljava/util/concurrent/Executor;
-
-.field public final k:Lk2/c;
-
-.field public final l:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-.field public final m:Lj3/em;
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "this"
-    .end annotation
-.end field
-
-.field public n:Z
-
-.field public o:Ljava/lang/ref/WeakReference;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/ref/WeakReference<",
-            "*>;"
-        }
-    .end annotation
-.end field
+.field public final i:Landroid/os/PowerManager;
 
 
 # direct methods
-.method public constructor <init>(Lj3/w5;Lj3/am;Ljava/util/concurrent/Executor;Lj3/tl;Lk2/c;)V
-    .locals 2
+.method public constructor <init>(Landroid/content/Context;Lj3/x21;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v0, Ljava/util/HashSet;
-
-    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
-
-    iput-object v0, p0, Lj3/cm;->h:Ljava/util/Set;
+    iput-object p1, p0, Lj3/cm;->g:Landroid/content/Context;
 
     .line 3
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object p2, p0, Lj3/cm;->h:Lj3/x21;
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
-
-    iput-object v0, p0, Lj3/cm;->l:Ljava/util/concurrent/atomic/AtomicBoolean;
+    const-string p2, "power"
 
     .line 4
-    new-instance v0, Lj3/em;
+    invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
-    invoke-direct {v0}, Lj3/em;-><init>()V
+    move-result-object p1
 
-    iput-object v0, p0, Lj3/cm;->m:Lj3/em;
+    check-cast p1, Landroid/os/PowerManager;
 
-    .line 5
-    iput-boolean v1, p0, Lj3/cm;->n:Z
-
-    .line 6
-    new-instance v0, Ljava/lang/ref/WeakReference;
-
-    invoke-direct {v0, p0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
-
-    iput-object v0, p0, Lj3/cm;->o:Ljava/lang/ref/WeakReference;
-
-    .line 7
-    iput-object p4, p0, Lj3/cm;->a:Lj3/tl;
-
-    .line 8
-    sget-object p4, Lj3/q5;->b:Lj3/r5;
-
-    .line 9
-    invoke-virtual {p1}, Lj3/w5;->a()V
-
-    .line 10
-    new-instance v0, Lj3/b6;
-
-    iget-object p1, p1, Lj3/w5;->b:Lj3/yl0;
-
-    const-string v1, "google.afma.activeView.handleUpdate"
-
-    invoke-direct {v0, p1, v1, p4, p4}, Lj3/b6;-><init>(Lj3/yl0;Ljava/lang/String;Lj3/o5;Lj3/p5;)V
-
-    .line 11
-    iput-object v0, p0, Lj3/cm;->i:Lj3/b6;
-
-    .line 12
-    iput-object p2, p0, Lj3/cm;->b:Lj3/am;
-
-    .line 13
-    iput-object p3, p0, Lj3/cm;->j:Ljava/util/concurrent/Executor;
-
-    .line 14
-    iput-object p5, p0, Lj3/cm;->k:Lk2/c;
+    iput-object p1, p0, Lj3/cm;->i:Landroid/os/PowerManager;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final declared-synchronized I()V
-    .locals 3
-
-    monitor-enter p0
+.method public final a(Lj3/gm;)Lorg/json/JSONObject;
+    .locals 12
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lorg/json/JSONException;
+        }
+    .end annotation
 
     .line 1
-    :try_start_0
-    iget-object v0, p0, Lj3/cm;->l:Ljava/util/concurrent/atomic/AtomicBoolean;
+    new-instance v0, Lorg/json/JSONArray;
 
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
+    invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
 
     .line 2
-    iget-object v0, p0, Lj3/cm;->a:Lj3/tl;
+    new-instance v1, Lorg/json/JSONObject;
 
-    invoke-virtual {v0, p0}, Lj3/tl;->a(Lj3/cm;)V
+    invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
 
     .line 3
-    invoke-virtual {p0}, Lj3/cm;->j()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    iget-object v2, p1, Lj3/gm;->e:Lj3/z21;
+
+    if-nez v2, :cond_0
 
     .line 4
-    :cond_0
-    monitor-exit p0
+    new-instance p1, Lorg/json/JSONObject;
 
-    return-void
+    invoke-direct {p1}, Lorg/json/JSONObject;-><init>()V
 
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public final declared-synchronized K(Lj3/g21;)V
-    .locals 2
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lj3/cm;->m:Lj3/em;
-
-    iget-boolean v1, p1, Lj3/g21;->j:Z
-
-    iput-boolean v1, v0, Lj3/em;->a:Z
-
-    .line 2
-    iput-object p1, v0, Lj3/em;->e:Lj3/g21;
-
-    .line 3
-    invoke-virtual {p0}, Lj3/cm;->j()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 4
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
-.end method
-
-.method public final M()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final T()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final declared-synchronized f(Landroid/content/Context;)V
-    .locals 1
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-object p1, p0, Lj3/cm;->m:Lj3/em;
-
-    const/4 v0, 0x1
-
-    iput-boolean v0, p1, Lj3/em;->b:Z
-
-    .line 2
-    invoke-virtual {p0}, Lj3/cm;->j()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
-.end method
-
-.method public final declared-synchronized i(Landroid/content/Context;)V
-    .locals 1
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-object p1, p0, Lj3/cm;->m:Lj3/em;
-
-    const-string v0, "u"
-
-    iput-object v0, p1, Lj3/em;->d:Ljava/lang/String;
-
-    .line 2
-    invoke-virtual {p0}, Lj3/cm;->j()V
-
-    .line 3
-    invoke-virtual {p0}, Lj3/cm;->n()V
-
-    const/4 p1, 0x1
-
-    .line 4
-    iput-boolean p1, p0, Lj3/cm;->n:Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    goto/16 :goto_2
 
     .line 5
-    monitor-exit p0
+    :cond_0
+    iget-object v3, p0, Lj3/cm;->h:Lj3/x21;
 
-    return-void
+    .line 6
+    iget-object v3, v3, Lj3/x21;->b:Lorg/json/JSONObject;
 
-    :catchall_0
-    move-exception p1
+    if-eqz v3, :cond_5
 
-    monitor-exit p0
+    .line 7
+    iget-boolean v3, v2, Lj3/z21;->a:Z
 
-    throw p1
-.end method
+    .line 8
+    new-instance v4, Lorg/json/JSONObject;
 
-.method public final declared-synchronized j()V
-    .locals 7
+    invoke-direct {v4}, Lorg/json/JSONObject;-><init>()V
 
-    monitor-enter p0
+    .line 9
+    iget-object v5, p0, Lj3/cm;->h:Lj3/x21;
 
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lj3/cm;->o:Ljava/lang/ref/WeakReference;
+    .line 10
+    iget-object v5, v5, Lj3/x21;->d:Ljava/lang/String;
 
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    const-string v6, "afmaVersion"
 
-    move-result-object v0
+    .line 11
+    invoke-virtual {v4, v6, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    const/4 v1, 0x1
+    move-result-object v5
 
-    if-eqz v0, :cond_0
+    iget-object v6, p0, Lj3/cm;->h:Lj3/x21;
 
-    const/4 v0, 0x1
+    .line 12
+    iget-object v6, v6, Lj3/x21;->b:Lorg/json/JSONObject;
+
+    const-string v7, "activeViewJSON"
+
+    .line 13
+    invoke-virtual {v5, v7, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    move-result-object v5
+
+    iget-wide v6, p1, Lj3/gm;->c:J
+
+    const-string v8, "timestamp"
+
+    .line 14
+    invoke-virtual {v5, v8, v6, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    move-result-object v5
+
+    iget-object v6, p0, Lj3/cm;->h:Lj3/x21;
+
+    .line 15
+    iget-object v6, v6, Lj3/x21;->a:Ljava/lang/String;
+
+    const-string v7, "adFormat"
+
+    .line 16
+    invoke-virtual {v5, v7, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    move-result-object v5
+
+    iget-object v6, p0, Lj3/cm;->h:Lj3/x21;
+
+    .line 17
+    iget-object v6, v6, Lj3/x21;->c:Ljava/lang/String;
+
+    const-string v7, "hashCode"
+
+    .line 18
+    invoke-virtual {v5, v7, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    move-result-object v5
+
+    const/4 v6, 0x0
+
+    const-string v7, "isMraid"
+
+    .line 19
+    invoke-virtual {v5, v7, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    move-result-object v5
+
+    const-string v7, "isStopped"
+
+    .line 20
+    invoke-virtual {v5, v7, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    move-result-object v5
+
+    iget-boolean v6, p1, Lj3/gm;->b:Z
+
+    const-string v7, "isPaused"
+
+    .line 21
+    invoke-virtual {v5, v7, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    move-result-object v5
+
+    iget-object v6, p0, Lj3/cm;->h:Lj3/x21;
+
+    .line 22
+    iget-boolean v6, v6, Lj3/x21;->e:Z
+
+    const-string v7, "isNative"
+
+    .line 23
+    invoke-virtual {v5, v7, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    move-result-object v5
+
+    .line 24
+    sget v6, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v7, 0x14
+
+    if-lt v6, v7, :cond_1
+
+    .line 25
+    iget-object v6, p0, Lj3/cm;->i:Landroid/os/PowerManager;
+
+    invoke-virtual {v6}, Landroid/os/PowerManager;->isInteractive()Z
+
+    move-result v6
 
     goto :goto_0
 
-    :cond_0
-    const/4 v0, 0x0
+    .line 26
+    :cond_1
+    iget-object v6, p0, Lj3/cm;->i:Landroid/os/PowerManager;
+
+    invoke-virtual {v6}, Landroid/os/PowerManager;->isScreenOn()Z
+
+    move-result v6
 
     :goto_0
-    if-nez v0, :cond_1
+    const-string v7, "isScreenOn"
 
-    .line 2
-    monitor-enter p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+    .line 27
+    invoke-virtual {v5, v7, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
 
-    .line 3
-    :try_start_1
-    invoke-virtual {p0}, Lj3/cm;->n()V
+    move-result-object v5
 
-    .line 4
-    iput-boolean v1, p0, Lj3/cm;->n:Z
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    .line 28
+    sget-object v6, Lh1/o;->B:Lh1/o;
 
-    .line 5
-    :try_start_2
-    monitor-exit p0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+    iget-object v6, v6, Lh1/o;->h:Lj3/qb;
 
-    .line 6
-    monitor-exit p0
+    .line 29
+    invoke-virtual {v6}, Lj3/qb;->c()Z
 
-    return-void
+    move-result v6
 
-    :catchall_0
-    move-exception v0
+    const-string v7, "appMuted"
 
-    .line 7
-    :try_start_3
-    monitor-exit p0
+    invoke-virtual {v5, v7, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
 
-    throw v0
+    move-result-object v5
 
-    .line 8
-    :cond_1
-    iget-boolean v0, p0, Lj3/cm;->n:Z
+    .line 30
+    sget-object v6, Lh1/o;->B:Lh1/o;
 
-    if-nez v0, :cond_3
+    iget-object v6, v6, Lh1/o;->h:Lj3/qb;
 
-    iget-object v0, p0, Lj3/cm;->l:Ljava/util/concurrent/atomic/AtomicBoolean;
+    .line 31
+    invoke-virtual {v6}, Lj3/qb;->b()F
 
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+    move-result v6
 
-    move-result v0
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+    float-to-double v6, v6
 
-    if-eqz v0, :cond_3
+    const-string v8, "appVolume"
 
-    .line 9
-    :try_start_4
-    iget-object v0, p0, Lj3/cm;->m:Lj3/em;
+    invoke-virtual {v5, v8, v6, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;D)Lorg/json/JSONObject;
 
-    iget-object v2, p0, Lj3/cm;->k:Lk2/c;
+    move-result-object v5
 
-    invoke-interface {v2}, Lk2/c;->b()J
+    iget-object v6, p0, Lj3/cm;->g:Landroid/content/Context;
 
-    move-result-wide v2
+    .line 32
+    invoke-virtual {v6}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
-    iput-wide v2, v0, Lj3/em;->c:J
+    move-result-object v6
 
-    .line 10
-    iget-object v0, p0, Lj3/cm;->b:Lj3/am;
+    invoke-static {v6}, Lj3/qb;->a(Landroid/content/Context;)F
 
-    iget-object v2, p0, Lj3/cm;->m:Lj3/em;
+    move-result v6
 
-    invoke-virtual {v0, v2}, Lj3/am;->a(Lj3/em;)Lorg/json/JSONObject;
+    float-to-double v6, v6
 
-    move-result-object v0
+    const-string v8, "deviceVolume"
 
-    .line 11
-    iget-object v2, p0, Lj3/cm;->h:Ljava/util/Set;
+    invoke-virtual {v5, v8, v6, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;D)Lorg/json/JSONObject;
 
-    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    .line 33
+    new-instance v5, Landroid/graphics/Rect;
+
+    invoke-direct {v5}, Landroid/graphics/Rect;-><init>()V
+
+    .line 34
+    iget-object v6, p0, Lj3/cm;->g:Landroid/content/Context;
+
+    const-string v7, "window"
+
+    invoke-virtual {v6, v7}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Landroid/view/WindowManager;
+
+    .line 35
+    invoke-interface {v6}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+
+    move-result-object v6
+
+    .line 36
+    invoke-virtual {v6}, Landroid/view/Display;->getWidth()I
+
+    move-result v7
+
+    iput v7, v5, Landroid/graphics/Rect;->right:I
+
+    .line 37
+    invoke-virtual {v6}, Landroid/view/Display;->getHeight()I
+
+    move-result v6
+
+    iput v6, v5, Landroid/graphics/Rect;->bottom:I
+
+    .line 38
+    iget-object v5, p0, Lj3/cm;->g:Landroid/content/Context;
+
+    invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object v5
+
+    .line 39
+    iget v6, v2, Lj3/z21;->b:I
+
+    const-string v7, "windowVisibility"
+
+    .line 40
+    invoke-virtual {v4, v7, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    const-string v7, "isAttachedToWindow"
+
+    .line 41
+    invoke-virtual {v6, v7, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    move-result-object v3
+
+    new-instance v6, Lorg/json/JSONObject;
+
+    invoke-direct {v6}, Lorg/json/JSONObject;-><init>()V
+
+    iget-object v7, v2, Lj3/z21;->c:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->top:I
+
+    const-string v8, "top"
+
+    .line 42
+    invoke-virtual {v6, v8, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    iget-object v7, v2, Lj3/z21;->c:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->bottom:I
+
+    const-string v9, "bottom"
+
+    .line 43
+    invoke-virtual {v6, v9, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    iget-object v7, v2, Lj3/z21;->c:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->left:I
+
+    const-string v10, "left"
+
+    .line 44
+    invoke-virtual {v6, v10, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    iget-object v7, v2, Lj3/z21;->c:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->right:I
+
+    const-string v11, "right"
+
+    .line 45
+    invoke-virtual {v6, v11, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    const-string v7, "viewBox"
+
+    .line 46
+    invoke-virtual {v3, v7, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    move-result-object v3
+
+    new-instance v6, Lorg/json/JSONObject;
+
+    invoke-direct {v6}, Lorg/json/JSONObject;-><init>()V
+
+    iget-object v7, v2, Lj3/z21;->d:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->top:I
+
+    .line 47
+    invoke-virtual {v6, v8, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    iget-object v7, v2, Lj3/z21;->d:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->bottom:I
+
+    .line 48
+    invoke-virtual {v6, v9, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    iget-object v7, v2, Lj3/z21;->d:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->left:I
+
+    .line 49
+    invoke-virtual {v6, v10, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    iget-object v7, v2, Lj3/z21;->d:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->right:I
+
+    .line 50
+    invoke-virtual {v6, v11, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    const-string v7, "adBox"
+
+    .line 51
+    invoke-virtual {v3, v7, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    move-result-object v3
+
+    new-instance v6, Lorg/json/JSONObject;
+
+    invoke-direct {v6}, Lorg/json/JSONObject;-><init>()V
+
+    iget-object v7, v2, Lj3/z21;->e:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->top:I
+
+    .line 52
+    invoke-virtual {v6, v8, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    iget-object v7, v2, Lj3/z21;->e:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->bottom:I
+
+    .line 53
+    invoke-virtual {v6, v9, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    iget-object v7, v2, Lj3/z21;->e:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->left:I
+
+    .line 54
+    invoke-virtual {v6, v10, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    iget-object v7, v2, Lj3/z21;->e:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->right:I
+
+    .line 55
+    invoke-virtual {v6, v11, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    const-string v7, "globalVisibleBox"
+
+    .line 56
+    invoke-virtual {v3, v7, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    move-result-object v3
+
+    iget-boolean v6, v2, Lj3/z21;->f:Z
+
+    const-string v7, "globalVisibleBoxVisible"
+
+    .line 57
+    invoke-virtual {v3, v7, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    move-result-object v3
+
+    new-instance v6, Lorg/json/JSONObject;
+
+    invoke-direct {v6}, Lorg/json/JSONObject;-><init>()V
+
+    iget-object v7, v2, Lj3/z21;->g:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->top:I
+
+    .line 58
+    invoke-virtual {v6, v8, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    iget-object v7, v2, Lj3/z21;->g:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->bottom:I
+
+    .line 59
+    invoke-virtual {v6, v9, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    iget-object v7, v2, Lj3/z21;->g:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->left:I
+
+    .line 60
+    invoke-virtual {v6, v10, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    iget-object v7, v2, Lj3/z21;->g:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->right:I
+
+    .line 61
+    invoke-virtual {v6, v11, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    const-string v7, "localVisibleBox"
+
+    .line 62
+    invoke-virtual {v3, v7, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    move-result-object v3
+
+    iget-boolean v6, v2, Lj3/z21;->h:Z
+
+    const-string v7, "localVisibleBoxVisible"
+
+    .line 63
+    invoke-virtual {v3, v7, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    move-result-object v3
+
+    new-instance v6, Lorg/json/JSONObject;
+
+    invoke-direct {v6}, Lorg/json/JSONObject;-><init>()V
+
+    iget-object v7, v2, Lj3/z21;->i:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->top:I
+
+    .line 64
+    invoke-virtual {v6, v8, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    iget-object v7, v2, Lj3/z21;->i:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->bottom:I
+
+    .line 65
+    invoke-virtual {v6, v9, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    iget-object v7, v2, Lj3/z21;->i:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->left:I
+
+    .line 66
+    invoke-virtual {v6, v10, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    iget-object v7, v2, Lj3/z21;->i:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->right:I
+
+    .line 67
+    invoke-virtual {v6, v11, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    const-string v7, "hitBox"
+
+    .line 68
+    invoke-virtual {v3, v7, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    move-result-object v3
+
+    iget v5, v5, Landroid/util/DisplayMetrics;->density:F
+
+    float-to-double v5, v5
+
+    const-string v7, "screenDensity"
+
+    .line 69
+    invoke-virtual {v3, v7, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;D)Lorg/json/JSONObject;
+
+    .line 70
+    iget-boolean v3, p1, Lj3/gm;->a:Z
+
+    const-string v5, "isVisible"
+
+    invoke-virtual {v4, v5, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    .line 71
+    sget-object v3, Lj3/n;->H0:Lj3/f;
+
+    .line 72
+    sget-object v5, Lj3/t51;->j:Lj3/t51;
+
+    iget-object v5, v5, Lj3/t51;->f:Lj3/l;
+
+    .line 73
+    invoke-virtual {v5, v3}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    .line 74
+    check-cast v3, Ljava/lang/Boolean;
+
+    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    .line 75
+    new-instance v3, Lorg/json/JSONArray;
+
+    invoke-direct {v3}, Lorg/json/JSONArray;-><init>()V
+
+    .line 76
+    iget-object v2, v2, Lj3/z21;->k:Ljava/util/List;
+
+    if-eqz v2, :cond_2
+
+    .line 77
+    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
 
     :goto_1
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v3
+    move-result v5
 
-    if-eqz v3, :cond_2
+    if-eqz v5, :cond_2
 
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v5
 
-    check-cast v3, Lj3/ch;
+    check-cast v5, Landroid/graphics/Rect;
 
-    .line 12
-    iget-object v4, p0, Lj3/cm;->j:Ljava/util/concurrent/Executor;
+    .line 78
+    new-instance v6, Lorg/json/JSONObject;
 
-    new-instance v5, Lj3/c21;
+    invoke-direct {v6}, Lorg/json/JSONObject;-><init>()V
 
-    const/4 v6, 0x3
+    iget v7, v5, Landroid/graphics/Rect;->top:I
 
-    invoke-direct {v5, v3, v0, v6}, Lj3/c21;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+    .line 79
+    invoke-virtual {v6, v8, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
-    invoke-interface {v4, v5}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+    move-result-object v6
+
+    iget v7, v5, Landroid/graphics/Rect;->bottom:I
+
+    .line 80
+    invoke-virtual {v6, v9, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    iget v7, v5, Landroid/graphics/Rect;->left:I
+
+    .line 81
+    invoke-virtual {v6, v10, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    iget v5, v5, Landroid/graphics/Rect;->right:I
+
+    .line 82
+    invoke-virtual {v6, v11, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    move-result-object v5
+
+    .line 83
+    invoke-virtual {v3, v5}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
     goto :goto_1
 
-    .line 13
     :cond_2
-    iget-object v2, p0, Lj3/cm;->i:Lj3/b6;
+    const-string v2, "scrollableContainerBoxes"
 
-    .line 14
-    iget-object v3, v2, Lj3/b6;->d:Lj3/yl0;
+    .line 84
+    invoke-virtual {v4, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    new-instance v4, Lj3/a6;
-
-    invoke-direct {v4, v2, v0}, Lj3/a6;-><init>(Lj3/b6;Ljava/lang/Object;)V
-
-    .line 15
-    sget-object v0, Lj3/gd;->f:Lj3/am0;
-
-    .line 16
-    invoke-static {v3, v4, v0}, Lj3/ul0;->k(Lj3/yl0;Lj3/gl0;Ljava/util/concurrent/Executor;)Lj3/yl0;
-
-    move-result-object v2
-
-    const-string v3, "ActiveViewListener.callActiveViewJs"
-
-    .line 17
-    new-instance v4, Lj3/j5;
-
-    invoke-direct {v4, v3}, Lj3/j5;-><init>(Ljava/lang/Object;)V
-
-    .line 18
-    new-instance v3, Lj3/a4;
-
-    invoke-direct {v3, v2, v4, v1}, Lj3/a4;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
-
-    check-cast v2, Lj3/uk0;
-
-    invoke-virtual {v2, v3, v0}, Lj3/uk0;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
-    :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
-    .catchall {:try_start_4 .. :try_end_4} :catchall_1
-
-    .line 19
-    monitor-exit p0
-
-    return-void
-
-    .line 20
-    :catch_0
-    :try_start_5
-    invoke-static {}, Lp0/d;->i()Z
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_1
-
-    .line 21
+    .line 85
     :cond_3
-    monitor-exit p0
+    iget-object p1, p1, Lj3/gm;->d:Ljava/lang/String;
 
-    return-void
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    :catchall_1
-    move-exception v0
+    move-result p1
 
-    monitor-exit p0
+    if-nez p1, :cond_4
 
-    goto :goto_3
+    const-string p1, "doneReasonCode"
 
+    const-string v2, "u"
+
+    .line 86
+    invoke-virtual {v4, p1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    :cond_4
+    move-object p1, v4
+
+    .line 87
     :goto_2
-    throw v0
+    invoke-virtual {v0, p1}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
+
+    const-string p1, "units"
+
+    .line 88
+    invoke-virtual {v1, p1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    return-object v1
+
+    .line 89
+    :cond_5
+    new-instance p1, Lorg/json/JSONException;
+
+    const-string v0, "Active view Info cannot be null."
+
+    invoke-direct {p1, v0}, Lorg/json/JSONException;-><init>(Ljava/lang/String;)V
+
+    goto :goto_4
 
     :goto_3
-    goto :goto_2
-.end method
-
-.method public final n()V
-    .locals 7
-
-    .line 1
-    iget-object v0, p0, Lj3/cm;->h:Ljava/util/Set;
-
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    const-string v2, "/untrackActiveViewUnit"
-
-    const-string v3, "/updateActiveView"
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lj3/ch;
-
-    .line 2
-    iget-object v4, p0, Lj3/cm;->a:Lj3/tl;
-
-    .line 3
-    iget-object v5, v4, Lj3/tl;->e:Lj3/x2;
-
-    invoke-interface {v1, v3, v5}, Lj3/ch;->k(Ljava/lang/String;Lj3/x2;)V
-
-    .line 4
-    iget-object v3, v4, Lj3/tl;->f:Lj3/x2;
-
-    invoke-interface {v1, v2, v3}, Lj3/ch;->k(Ljava/lang/String;Lj3/x2;)V
-
-    goto :goto_0
-
-    .line 5
-    :cond_0
-    iget-object v0, p0, Lj3/cm;->a:Lj3/tl;
-
-    .line 6
-    iget-object v1, v0, Lj3/tl;->b:Lj3/w5;
-
-    iget-object v4, v0, Lj3/tl;->e:Lj3/x2;
-
-    .line 7
-    iget-object v5, v1, Lj3/w5;->b:Lj3/yl0;
-
-    new-instance v6, Lj3/y5;
-
-    invoke-direct {v6, v3, v4}, Lj3/y5;-><init>(Ljava/lang/String;Lj3/x2;)V
-
-    .line 8
-    sget-object v3, Lj3/gd;->f:Lj3/am0;
-
-    .line 9
-    invoke-static {v5, v6, v3}, Lj3/ul0;->j(Lj3/yl0;Lj3/mj0;Ljava/util/concurrent/Executor;)Lj3/yl0;
-
-    move-result-object v4
-
-    iput-object v4, v1, Lj3/w5;->b:Lj3/yl0;
-
-    .line 10
-    iget-object v1, v0, Lj3/tl;->b:Lj3/w5;
-
-    iget-object v0, v0, Lj3/tl;->f:Lj3/x2;
-
-    .line 11
-    iget-object v4, v1, Lj3/w5;->b:Lj3/yl0;
-
-    new-instance v5, Lj3/y5;
-
-    invoke-direct {v5, v2, v0}, Lj3/y5;-><init>(Ljava/lang/String;Lj3/x2;)V
-
-    .line 12
-    invoke-static {v4, v5, v3}, Lj3/ul0;->j(Lj3/yl0;Lj3/mj0;Ljava/util/concurrent/Executor;)Lj3/yl0;
-
-    move-result-object v0
-
-    iput-object v0, v1, Lj3/w5;->b:Lj3/yl0;
-
-    return-void
-.end method
-
-.method public final declared-synchronized onPause()V
-    .locals 2
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lj3/cm;->m:Lj3/em;
-
-    const/4 v1, 0x1
-
-    iput-boolean v1, v0, Lj3/em;->b:Z
-
-    .line 2
-    invoke-virtual {p0}, Lj3/cm;->j()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public final declared-synchronized onResume()V
-    .locals 2
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lj3/cm;->m:Lj3/em;
-
-    const/4 v1, 0x0
-
-    iput-boolean v1, v0, Lj3/em;->b:Z
-
-    .line 2
-    invoke-virtual {p0}, Lj3/cm;->j()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public final declared-synchronized v(Landroid/content/Context;)V
-    .locals 1
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-object p1, p0, Lj3/cm;->m:Lj3/em;
-
-    const/4 v0, 0x0
-
-    iput-boolean v0, p1, Lj3/em;->b:Z
-
-    .line 2
-    invoke-virtual {p0}, Lj3/cm;->j()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
     throw p1
+
+    :goto_4
+    goto :goto_3
+.end method
+
+.method public final synthetic d(Ljava/lang/Object;)Lorg/json/JSONObject;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lorg/json/JSONException;
+        }
+    .end annotation
+
+    .line 1
+    check-cast p1, Lj3/gm;
+
+    invoke-virtual {p0, p1}, Lj3/cm;->a(Lj3/gm;)Lorg/json/JSONObject;
+
+    move-result-object p1
+
+    return-object p1
 .end method

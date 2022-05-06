@@ -11,14 +11,14 @@
     value = {
         "Ljava/lang/Object;",
         "Ljava/util/Comparator<",
-        "Lm8/a0;",
+        "Ln8/w;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Ld9/q0;
+.field public final synthetic g:Ld9/q0;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Ld9/l0;->a:Ld9/q0;
+    iput-object p1, p0, Ld9/l0;->g:Ld9/q0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,33 +39,33 @@
     .locals 6
 
     .line 1
-    check-cast p1, Lm8/a0;
+    check-cast p1, Ln8/w;
 
-    check-cast p2, Lm8/a0;
+    check-cast p2, Ln8/w;
 
     .line 2
-    iget-object v0, p0, Ld9/l0;->a:Ld9/q0;
+    iget-object v0, p0, Ld9/l0;->g:Ld9/q0;
 
-    iget-object v1, p1, Lm8/a0;->l:Ljava/lang/Long;
+    iget-object v1, p1, Ln8/w;->m:Ljava/lang/Long;
 
     invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v1
 
-    invoke-virtual {v0, v1, v2}, Ld9/q0;->m(J)Ll8/o;
+    invoke-virtual {v0, v1, v2}, Ld9/q0;->m(J)Lm8/q;
 
     move-result-object v0
 
     .line 3
-    iget-object v1, p0, Ld9/l0;->a:Ld9/q0;
+    iget-object v1, p0, Ld9/l0;->g:Ld9/q0;
 
-    iget-object v2, p2, Lm8/a0;->l:Ljava/lang/Long;
+    iget-object v2, p2, Ln8/w;->m:Ljava/lang/Long;
 
     invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v2
 
-    invoke-virtual {v1, v2, v3}, Ld9/q0;->m(J)Ll8/o;
+    invoke-virtual {v1, v2, v3}, Ld9/q0;->m(J)Lm8/q;
 
     move-result-object v1
 
@@ -79,14 +79,14 @@
 
     .line 4
     :cond_0
-    iget v0, v0, Ll8/o;->b:I
+    iget v0, v0, Lm8/q;->b:I
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
     .line 5
-    iget v1, v1, Ll8/o;->b:I
+    iget v1, v1, Lm8/q;->b:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -131,10 +131,10 @@
 
     .line 8
     :cond_2
-    iget-wide v0, p1, Lm8/a0;->w:J
+    iget-wide v0, p1, Ln8/w;->x:J
 
     .line 9
-    iget-wide p1, p2, Lm8/a0;->w:J
+    iget-wide p1, p2, Ln8/w;->x:J
 
     cmp-long v4, v0, p1
 

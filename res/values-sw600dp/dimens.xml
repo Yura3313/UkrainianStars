@@ -23,9 +23,6 @@
     <dimen name="checkbox_width">28.5dip</dimen>
     <dimen name="connected_game_checkmark_size">32.0dip</dimen>
     <dimen name="connected_game_icon_size">46.0dip</dimen>
-    <dimen name="design_fab_image_size">48.0dip</dimen>
-    <dimen name="design_fab_size_mini">44.0dip</dimen>
-    <dimen name="design_fab_size_normal">64.0dip</dimen>
     <dimen name="design_navigation_max_width">320.0dip</dimen>
     <dimen name="design_snackbar_action_inline_max_width">0.0dip</dimen>
     <dimen name="design_snackbar_background_corner_radius">2.0dip</dimen>

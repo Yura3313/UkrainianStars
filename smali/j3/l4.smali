@@ -1,325 +1,230 @@
-.class public final Lj3/l4;
+.class public final synthetic Lj3/l4;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/f4;
-.implements Lj3/j4;
-
-
-# annotations
-.annotation runtime Ljavax/annotation/ParametersAreNonnullByDefault;
-.end annotation
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final a:Lj3/ch;
+.field public final synthetic g:I
+
+.field public final h:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzbbg;Lj3/xq0;)V
-    .locals 14
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/android/gms/internal/ads/zzbgc;
-        }
-    .end annotation
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+    .locals 0
 
     .line 1
+    iput p2, p0, Lj3/l4;->g:I
+
+    iput-object p1, p0, Lj3/l4;->h:Ljava/lang/Object;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    sget-object v0, Lh1/o;->B:Lh1/o;
-
-    iget-object v0, v0, Lh1/o;->d:Lj3/jh;
-
-    .line 3
-    invoke-static {}, Lj3/li;->a()Lj3/li;
-
-    move-result-object v2
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    const/4 v7, 0x0
-
-    const/4 v9, 0x0
-
-    const/4 v10, 0x0
-
-    .line 4
-    new-instance v11, Lcom/google/android/gms/internal/ads/q8;
-
-    invoke-direct {v11}, Lcom/google/android/gms/internal/ads/q8;-><init>()V
-
-    const/4 v12, 0x0
-
-    const/4 v13, 0x0
-
-    const-string v3, ""
-
-    move-object v1, p1
-
-    move-object/from16 v6, p3
-
-    move-object/from16 v8, p2
-
-    .line 5
-    invoke-static/range {v1 .. v13}, Lj3/jh;->a(Landroid/content/Context;Lj3/li;Ljava/lang/String;ZZLj3/xq0;Lj3/c0;Lcom/google/android/gms/internal/ads/zzbbg;Lh1/j;Lh1/b;Lcom/google/android/gms/internal/ads/q8;Lj3/eu;Z)Lj3/ch;
-
-    move-result-object v0
-
-    move-object v1, p0
-
-    iput-object v0, v1, Lj3/l4;->a:Lj3/ch;
-
-    .line 6
-    invoke-interface {v0}, Lj3/ch;->getView()Landroid/view/View;
-
-    move-result-object v0
-
-    const/4 v2, 0x1
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->setWillNotDraw(Z)V
-
-    return-void
-.end method
-
-.method public static j(Ljava/lang/Runnable;)V
-    .locals 1
-
-    .line 1
-    sget-object v0, Lj3/w41;->j:Lj3/w41;
-
-    iget-object v0, v0, Lj3/w41;->a:Lj3/xc;
-
-    .line 2
-    invoke-static {}, Lj3/xc;->m()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 3
-    invoke-interface {p0}, Ljava/lang/Runnable;->run()V
-
-    return-void
-
-    .line 4
-    :cond_0
-    sget-object v0, Lj3/xa;->h:Lj3/jj0;
-
-    invoke-virtual {v0, p0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final C()Lj3/k5;
-    .locals 1
+.method public final run()V
+    .locals 6
+
+    iget v0, p0, Lj3/l4;->g:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
 
     .line 1
-    new-instance v0, Lj3/m5;
+    :pswitch_0
+    iget-object v0, p0, Lj3/l4;->h:Ljava/lang/Object;
 
-    invoke-direct {v0, p0}, Lj3/m5;-><init>(Lj3/l5;)V
+    check-cast v0, Lcom/google/android/gms/internal/ads/a1;
 
-    return-object v0
-.end method
+    .line 2
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/a1;->d:Lj3/cf0;
 
-.method public final F(Ljava/lang/String;)V
-    .locals 3
-
-    const/4 v0, 0x1
-
-    new-array v1, v0, [Ljava/lang/Object;
+    const/4 v1, 0x6
 
     const/4 v2, 0x0
 
-    aput-object p1, v1, v2
+    .line 3
+    invoke-static {v1, v2, v2}, Lj3/ex0;->f(ILjava/lang/String;Lcom/google/android/gms/internal/ads/zzuw;)Lcom/google/android/gms/internal/ads/zzuw;
 
-    const-string p1, "<!DOCTYPE html><html><head><script src=\"%s\"></script></head><body></body></html>"
+    move-result-object v1
 
-    .line 1
-    invoke-static {p1, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 2
-    new-instance v1, Lj3/d21;
-
-    invoke-direct {v1, p0, p1, v0}, Lj3/d21;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
-
-    invoke-static {v1}, Lj3/l4;->j(Ljava/lang/Runnable;)V
+    .line 4
+    invoke-virtual {v0, v1}, Lj3/cf0;->y0(Lcom/google/android/gms/internal/ads/zzuw;)V
 
     return-void
-.end method
 
-.method public final T(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
+    .line 5
+    :pswitch_1
+    iget-object v0, p0, Lj3/l4;->h:Ljava/lang/Object;
 
-    invoke-static {p0, p1, p2}, Lpd/c;->c(Lj3/f4;Ljava/lang/String;Ljava/lang/String;)V
+    check-cast v0, Lj3/e00;
 
-    return-void
-.end method
-
-.method public final U(Ljava/lang/String;Lorg/json/JSONObject;)V
-    .locals 0
-
-    invoke-static {p0, p1, p2}, Lpd/c;->e(Lj3/f4;Ljava/lang/String;Lorg/json/JSONObject;)V
+    .line 6
+    invoke-virtual {v0}, Lj3/e00;->a()V
 
     return-void
-.end method
 
-.method public final c0(Ljava/lang/String;)V
-    .locals 1
+    .line 7
+    :pswitch_2
+    iget-object v0, p0, Lj3/l4;->h:Ljava/lang/Object;
 
-    .line 1
-    new-instance v0, Lj3/o4;
+    check-cast v0, Ljava/lang/String;
 
-    invoke-direct {v0, p0, p1}, Lj3/o4;-><init>(Lj3/l4;Ljava/lang/String;)V
+    .line 8
+    sget-object v1, Lh1/o;->B:Lh1/o;
 
-    invoke-static {v0}, Lj3/l4;->j(Ljava/lang/Runnable;)V
+    iget-object v1, v1, Lh1/o;->g:Lj3/ia;
 
-    return-void
-.end method
+    .line 9
+    invoke-virtual {v1}, Lj3/ia;->d()Lj3/s;
 
-.method public final destroy()V
-    .locals 1
+    move-result-object v1
 
-    .line 1
-    iget-object v0, p0, Lj3/l4;->a:Lj3/ch;
+    const/4 v2, 0x1
 
-    invoke-interface {v0}, Lj3/ch;->destroy()V
-
-    return-void
-.end method
-
-.method public final f(Ljava/lang/String;)V
-    .locals 2
-
-    .line 1
-    new-instance v0, Lj3/c21;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, p0, p1, v1}, Lj3/c21;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
-
-    invoke-static {v0}, Lj3/l4;->j(Ljava/lang/Runnable;)V
-
-    return-void
-.end method
-
-.method public final g(Ljava/lang/String;Lj3/x2;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Lj3/x2<",
-            "-",
-            "Lj3/l5;",
-            ">;)V"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lj3/l4;->a:Lj3/ch;
-
-    new-instance v1, Lj3/q4;
-
-    invoke-direct {v1, p0, p2}, Lj3/q4;-><init>(Lj3/l4;Lj3/x2;)V
-
-    invoke-interface {v0, p1, v1}, Lj3/ch;->g(Ljava/lang/String;Lj3/x2;)V
-
-    return-void
-.end method
-
-.method public final i(Ljava/lang/String;Lorg/json/JSONObject;)V
-    .locals 0
-
-    invoke-static {p0, p1, p2}, Lpd/c;->h(Lj3/f4;Ljava/lang/String;Lorg/json/JSONObject;)V
-
-    return-void
-.end method
-
-.method public final j0(Lj3/u4;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lj3/l4;->a:Lj3/ch;
-
-    invoke-interface {v0}, Lj3/ch;->Q()Lj3/fi;
+    invoke-virtual {v0, v2}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
-    new-instance v1, Lj3/m4;
-
-    invoke-direct {v1, p1}, Lj3/m4;-><init>(Ljava/lang/Object;)V
-
-    .line 3
-    invoke-interface {v0, v1}, Lj3/fi;->d(Lj3/hi;)V
+    invoke-virtual {v1, v0}, Lj3/s;->c(Ljava/lang/String;)V
 
     return-void
-.end method
 
-.method public final k(Ljava/lang/String;Lj3/x2;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Lj3/x2<",
-            "-",
-            "Lj3/l5;",
-            ">;)V"
-        }
-    .end annotation
+    .line 10
+    :goto_0
+    iget-object v0, p0, Lj3/l4;->h:Ljava/lang/Object;
 
-    .line 1
-    iget-object v0, p0, Lj3/l4;->a:Lj3/ch;
+    check-cast v0, Lcom/google/android/gms/internal/ads/q1;
 
-    new-instance v1, Lj3/b0;
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/q1;->b:Ljava/lang/Boolean;
 
-    invoke-direct {v1, p2}, Lj3/b0;-><init>(Ljava/lang/Object;)V
+    if-eqz v0, :cond_0
 
-    invoke-interface {v0, p1, v1}, Lj3/ch;->Z(Ljava/lang/String;Lj3/b0;)V
+    goto :goto_2
 
+    .line 11
+    :cond_0
+    sget-object v0, Lcom/google/android/gms/internal/ads/q1;->c:Landroid/os/ConditionVariable;
+
+    .line 12
+    monitor-enter v0
+
+    .line 13
+    :try_start_0
+    iget-object v1, p0, Lj3/l4;->h:Ljava/lang/Object;
+
+    check-cast v1, Lcom/google/android/gms/internal/ads/q1;
+
+    iget-object v1, v1, Lcom/google/android/gms/internal/ads/q1;->b:Ljava/lang/Boolean;
+
+    if-eqz v1, :cond_1
+
+    .line 14
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    goto :goto_2
+
+    :cond_1
+    const/4 v1, 0x0
+
+    .line 15
+    :try_start_1
+    sget-object v2, Lj3/n;->a1:Lj3/i0;
+
+    invoke-virtual {v2}, Lj3/i0;->a()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/Boolean;
+
+    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v2
+    :try_end_1
+    .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    goto :goto_1
+
+    :catch_0
+    const/4 v2, 0x0
+
+    :goto_1
+    if-eqz v2, :cond_2
+
+    .line 16
+    :try_start_2
+    new-instance v3, Lj3/r41;
+
+    iget-object v4, p0, Lj3/l4;->h:Ljava/lang/Object;
+
+    check-cast v4, Lcom/google/android/gms/internal/ads/q1;
+
+    .line 17
+    iget-object v4, v4, Lcom/google/android/gms/internal/ads/q1;->a:Lcom/google/android/gms/internal/ads/d6;
+
+    .line 18
+    iget-object v4, v4, Lcom/google/android/gms/internal/ads/d6;->a:Landroid/content/Context;
+
+    const-string v5, "ADSHIELD"
+
+    .line 19
+    invoke-direct {v3, v4, v5}, Lj3/r41;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+
+    sput-object v3, Lcom/google/android/gms/internal/ads/q1;->d:Lj3/r41;
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    :cond_2
+    move v1, v2
+
+    .line 20
+    :catchall_0
+    :try_start_3
+    iget-object v2, p0, Lj3/l4;->h:Ljava/lang/Object;
+
+    check-cast v2, Lcom/google/android/gms/internal/ads/q1;
+
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    iput-object v1, v2, Lcom/google/android/gms/internal/ads/q1;->b:Ljava/lang/Boolean;
+
+    .line 21
+    sget-object v1, Lcom/google/android/gms/internal/ads/q1;->c:Landroid/os/ConditionVariable;
+
+    .line 22
+    invoke-virtual {v1}, Landroid/os/ConditionVariable;->open()V
+
+    .line 23
+    monitor-exit v0
+
+    :goto_2
     return-void
-.end method
 
-.method public final l()Z
-    .locals 1
+    :catchall_1
+    move-exception v1
 
-    .line 1
-    iget-object v0, p0, Lj3/l4;->a:Lj3/ch;
+    monitor-exit v0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    invoke-interface {v0}, Lj3/ch;->l()Z
+    throw v1
 
-    move-result v0
-
-    return v0
-.end method
-
-.method public final n(Ljava/lang/String;Ljava/util/Map;)V
-    .locals 0
-
-    invoke-static {p0, p1, p2}, Lpd/c;->d(Lj3/f4;Ljava/lang/String;Ljava/util/Map;)V
-
-    return-void
-.end method
-
-.method public final x(Ljava/lang/String;)V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lj3/n4;
-
-    invoke-direct {v0, p0, p1}, Lj3/n4;-><init>(Lj3/l4;Ljava/lang/String;)V
-
-    invoke-static {v0}, Lj3/l4;->j(Ljava/lang/Runnable;)V
-
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

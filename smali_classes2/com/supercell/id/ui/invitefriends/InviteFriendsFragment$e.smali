@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$e;->a:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$e;->g:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,12 +40,12 @@
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
     .line 2
-    iget-object v1, v0, Lwd/r;->m:La2/a;
+    iget-object v1, v0, Lvd/r;->m:Lcom/supercell/titan/h;
 
     const/4 v5, 0x0
 
@@ -60,12 +60,12 @@
     const-string v4, "My QR code info"
 
     .line 3
-    invoke-static/range {v1 .. v7}, La2/a;->b(La2/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    invoke-static/range {v1 .. v7}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$e;->a:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$e;->g:Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment;
 
-    invoke-static {v0}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v0}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
@@ -73,9 +73,9 @@
 
     const-string v1, "it"
 
-    invoke-static {p1, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0, p1}, Lab/b;->d(Lcom/supercell/id/ui/MainActivity;Landroid/view/View;)V
+    invoke-static {v0, p1}, Lcom/google/android/gms/ads/s;->b(Lcom/supercell/id/ui/MainActivity;Landroid/view/View;)V
 
     :cond_0
     return-void

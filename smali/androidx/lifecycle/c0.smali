@@ -9,7 +9,7 @@
         value = {
             "Ljava/util/HashMap<",
             "Ljava/lang/String;",
-            "Landroidx/lifecycle/w;",
+            "Landroidx/lifecycle/x;",
             ">;"
         }
     .end annotation
@@ -60,15 +60,15 @@
 
     move-result-object v1
 
-    check-cast v1, Landroidx/lifecycle/w;
+    check-cast v1, Landroidx/lifecycle/x;
 
     const/4 v2, 0x1
 
     .line 2
-    iput-boolean v2, v1, Landroidx/lifecycle/w;->b:Z
+    iput-boolean v2, v1, Landroidx/lifecycle/x;->b:Z
 
     .line 3
-    iget-object v2, v1, Landroidx/lifecycle/w;->a:Ljava/util/Map;
+    iget-object v2, v1, Landroidx/lifecycle/x;->a:Ljava/util/Map;
 
     if-eqz v2, :cond_2
 
@@ -77,7 +77,7 @@
 
     .line 5
     :try_start_0
-    iget-object v3, v1, Landroidx/lifecycle/w;->a:Ljava/util/Map;
+    iget-object v3, v1, Landroidx/lifecycle/x;->a:Ljava/util/Map;
 
     invoke-interface {v3}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -146,7 +146,7 @@
     .line 10
     :cond_2
     :goto_2
-    invoke-virtual {v1}, Landroidx/lifecycle/w;->a()V
+    invoke-virtual {v1}, Landroidx/lifecycle/x;->a()V
 
     goto :goto_0
 

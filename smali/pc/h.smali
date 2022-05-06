@@ -1,121 +1,103 @@
-.class public Lpc/h;
-.super Lpc/f;
-.source "EventApiClient.kt"
+.class public final Lpc/h;
+.super Lle/j;
+.source "HeadBackgroundDrawable.kt"
+
+# interfaces
+.implements Lke/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lle/j;",
+        "Lke/a<",
+        "Landroid/graphics/Bitmap;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic g:Lpc/c;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
+.method public constructor <init>(Lpc/c;)V
+    .locals 0
 
-    if-eqz p1, :cond_0
-
-    const-string v0, "/v1"
-
-    .line 1
-    invoke-static {p1, v0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p0, p1, p2}, Lpc/f;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    return-void
-
-    :cond_0
-    const-string p1, "url"
-
-    .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    iput-object p1, p0, Lpc/h;->g:Lpc/c;
 
     const/4 p1, 0x0
 
-    throw p1
+    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+
+    return-void
 .end method
 
 
 # virtual methods
-.method public final g(Ljava/lang/String;Ljava/lang/String;)Lse/h0;
+.method public invoke()Ljava/lang/Object;
     .locals 5
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ")",
-            "Lse/h0<",
-            "Lorg/json/JSONObject;",
-            ">;"
-        }
-    .end annotation
-
-    const-string v0, "token"
-
-    if-eqz p2, :cond_0
-
-    const/4 v1, 0x2
-
-    new-array v1, v1, [Lbe/g;
-
-    const/4 v2, 0x0
 
     .line 1
-    new-instance v3, Lbe/g;
-
-    const-string v4, "event"
-
-    invoke-direct {v3, v4, p1}, Lbe/g;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    aput-object v3, v1, v2
-
-    const/4 p1, 0x1
-
-    new-instance v2, Lbe/g;
-
-    invoke-direct {v2, v0, p2}, Lbe/g;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    aput-object v2, v1, p1
+    iget-object v0, p0, Lpc/h;->g:Lpc/c;
 
     .line 2
-    invoke-static {v1}, Lce/v;->e([Lbe/g;)Ljava/util/Map;
+    iget v1, v0, Lpc/c;->N:I
 
-    move-result-object p1
+    const/16 v2, 0x64
 
     .line 3
-    sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
-
-    move-result-object p2
+    iget-object v0, v0, Lpc/c;->z:Ljava/util/Map;
 
     .line 4
-    iget-object p2, p2, Lwd/r;->j:Lcom/supercell/id/IdConfiguration;
+    invoke-interface {v0}, Ljava/util/Map;->size()I
+
+    move-result v0
 
     .line 5
-    invoke-virtual {p2}, Lcom/supercell/id/IdConfiguration;->getGameAccountToken()Ljava/lang/String;
-
-    move-result-object p2
-
-    const-string v0, "notification.ack"
-
-    invoke-virtual {p0, v0, p1, p2}, Lpc/f;->d(Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lse/h0;
-
-    move-result-object p1
+    :goto_0
+    iget-object v3, p0, Lpc/h;->g:Lpc/c;
 
     .line 6
-    new-instance p2, Lpc/h$a;
+    iget v4, v3, Lpc/c;->N:I
 
-    invoke-direct {p2, p0}, Lpc/h$a;-><init>(Lpc/h;)V
+    if-ne v1, v4, :cond_0
 
-    invoke-static {p1, p2}, Lwd/e1;->p(Lse/h0;Lke/l;)Lse/h0;
-
-    move-result-object p1
-
-    return-object p1
+    if-lez v2, :cond_0
 
     .line 7
+    sget-object v1, Lne/c;->b:Lne/c$a;
+
+    invoke-virtual {v1, v0}, Lne/c$a;->a(I)I
+
+    move-result v1
+
+    add-int/lit8 v2, v2, -0x1
+
+    goto :goto_0
+
+    .line 8
     :cond_0
-    invoke-static {v0}, Ly4/x;->k(Ljava/lang/String;)V
+    iput v1, v3, Lpc/c;->N:I
 
-    const/4 p1, 0x0
+    .line 9
+    iget-object v0, v3, Lpc/c;->z:Ljava/util/Map;
 
-    throw p1
+    .line 10
+    invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lbe/k;->V(Ljava/lang/Iterable;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/graphics/Bitmap;
+
+    return-object v0
 .end method

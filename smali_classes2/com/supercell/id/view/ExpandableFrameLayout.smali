@@ -13,17 +13,17 @@
 
 
 # static fields
-.field public static final synthetic j:I
+.field public static final synthetic k:I
 
 
 # instance fields
-.field public a:F
+.field public g:F
 
-.field public b:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+.field public h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
-.field public h:Landroid/animation/ValueAnimator;
+.field public i:Landroid/animation/ValueAnimator;
 
-.field public i:Lke/p;
+.field public j:Lke/p;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lke/p<",
@@ -31,7 +31,7 @@
             "Ljava/lang/Float;",
             "-",
             "Lcom/supercell/id/view/ExpandableFrameLayout$b;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;"
         }
     .end annotation
@@ -48,9 +48,9 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 2
-    sget-object p1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->COLLAPSED:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sget-object p1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->g:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
-    iput-object p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->b:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    iput-object p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     .line 3
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->isInEditMode()Z
@@ -73,7 +73,7 @@
     const-string p1, "context"
 
     .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -90,95 +90,93 @@
 .end method
 
 .method private final setExpansion(F)V
-    .locals 4
+    .locals 5
 
     .line 1
-    iget v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->a:F
+    sget-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->g:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
-    cmpg-float v1, v0, p1
+    iget v1, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->g:F
 
-    if-nez v1, :cond_0
+    cmpg-float v2, v1, p1
+
+    if-nez v2, :cond_0
 
     return-void
 
     :cond_0
-    sub-float v0, p1, v0
-
-    const/4 v1, 0x0
+    sub-float v1, p1, v1
 
     const/4 v2, 0x0
 
-    cmpg-float v1, p1, v1
+    const/4 v3, 0x0
 
-    if-nez v1, :cond_1
+    cmpg-float v2, p1, v2
+
+    if-nez v2, :cond_1
 
     .line 2
-    sget-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->COLLAPSED:Lcom/supercell/id/view/ExpandableFrameLayout$b;
-
-    iput-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->b:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    iput-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     goto :goto_0
 
     :cond_1
-    const/high16 v1, 0x3f800000    # 1.0f
+    const/high16 v2, 0x3f800000    # 1.0f
 
-    cmpg-float v1, p1, v1
+    cmpg-float v2, p1, v2
 
-    if-nez v1, :cond_2
+    if-nez v2, :cond_2
 
     .line 3
-    sget-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->EXPANDED:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sget-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->j:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
-    iput-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->b:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    iput-object v1, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     goto :goto_0
 
     :cond_2
-    int-to-float v1, v2
+    int-to-float v2, v3
 
-    cmpg-float v3, v0, v1
+    cmpg-float v4, v1, v2
 
-    if-gez v3, :cond_3
+    if-gez v4, :cond_3
 
     .line 4
-    sget-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->COLLAPSING:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sget-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
-    iput-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->b:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    iput-object v1, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     goto :goto_0
 
     :cond_3
-    cmpl-float v0, v0, v1
+    cmpl-float v1, v1, v2
 
-    if-lez v0, :cond_4
+    if-lez v1, :cond_4
 
     .line 5
-    sget-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->EXPANDING:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sget-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->i:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
-    iput-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->b:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    iput-object v1, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     .line 6
     :cond_4
     :goto_0
-    iget-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->b:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    iget-object v1, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
-    sget-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->COLLAPSED:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    if-ne v1, v0, :cond_5
 
-    if-ne v0, v1, :cond_5
-
-    const/16 v2, 0x8
+    const/16 v3, 0x8
 
     :cond_5
-    invoke-virtual {p0, v2}, Landroid/widget/FrameLayout;->setVisibility(I)V
+    invoke-virtual {p0, v3}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
     .line 7
-    iput p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->a:F
+    iput p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->g:F
 
     .line 8
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->requestLayout()V
 
     .line 9
-    iget-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->i:Lke/p;
+    iget-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->j:Lke/p;
 
     if-eqz v0, :cond_6
 
@@ -186,13 +184,13 @@
 
     move-result-object p1
 
-    iget-object v1, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->b:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    iget-object v1, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     invoke-interface {v0, p1, v1}, Lke/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lbe/n;
+    check-cast p1, Lae/i;
 
     :cond_6
     return-void
@@ -204,13 +202,13 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->b:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    iget-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
-    sget-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->EXPANDING:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sget-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->i:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     if-eq v0, v1, :cond_1
 
-    sget-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->EXPANDED:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sget-object v1, Lcom/supercell/id/view/ExpandableFrameLayout$b;->j:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     if-ne v0, v1, :cond_0
 
@@ -243,7 +241,7 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->h:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->i:Landroid/animation/ValueAnimator;
 
     if-eqz v0, :cond_1
 
@@ -253,7 +251,7 @@
     const/4 v0, 0x0
 
     .line 3
-    iput-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->h:Landroid/animation/ValueAnimator;
+    iput-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->i:Landroid/animation/ValueAnimator;
 
     if-eqz p2, :cond_2
 
@@ -264,7 +262,7 @@
     const/4 v0, 0x0
 
     .line 4
-    iget v1, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->a:F
+    iget v1, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->g:F
 
     aput v1, p2, v0
 
@@ -279,7 +277,7 @@
     move-result-object p2
 
     .line 5
-    sget-object v0, Lrc/a;->b:Landroid/view/animation/Interpolator;
+    sget-object v0, Loc/a;->b:Landroid/view/animation/Interpolator;
 
     .line 6
     invoke-virtual {p2, v0}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
@@ -307,7 +305,7 @@
     invoke-virtual {p2}, Landroid/animation/ValueAnimator;->start()V
 
     .line 11
-    iput-object p2, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->h:Landroid/animation/ValueAnimator;
+    iput-object p2, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->i:Landroid/animation/ValueAnimator;
 
     goto :goto_0
 
@@ -325,7 +323,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->a:F
+    iget v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->g:F
 
     return v0
 .end method
@@ -334,7 +332,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->b:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    iget-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     return-object v0
 .end method
@@ -345,7 +343,7 @@
     if-eqz p1, :cond_1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->h:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->i:Landroid/animation/ValueAnimator;
 
     if-eqz v0, :cond_0
 
@@ -361,7 +359,7 @@
     const-string p1, "newConfig"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -385,7 +383,7 @@
     move-result p2
 
     .line 4
-    iget v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->a:F
+    iget v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->g:F
 
     const/4 v1, 0x0
 
@@ -408,11 +406,11 @@
     int-to-float v0, p2
 
     .line 5
-    iget v1, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->a:F
+    iget v1, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->g:F
 
     mul-float v0, v0, v1
 
-    invoke-static {v0}, Lc2/n0;->e(F)I
+    invoke-static {v0}, Lb5/m;->r(F)I
 
     move-result v0
 
@@ -441,7 +439,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->a:F
+    iput v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->g:F
 
     const/high16 v1, 0x3f800000    # 1.0f
 
@@ -450,15 +448,15 @@
     if-nez v0, :cond_0
 
     .line 3
-    sget-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->EXPANDED:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sget-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->j:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     goto :goto_0
 
     :cond_0
-    sget-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->COLLAPSED:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sget-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->g:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     :goto_0
-    iput-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->b:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    iput-object v0, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     const-string v0, "super_state"
 
@@ -476,7 +474,7 @@
     const-string p1, "parcelable"
 
     .line 6
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -511,7 +509,7 @@
     const/4 v2, 0x0
 
     :goto_0
-    iput v2, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->a:F
+    iput v2, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->g:F
 
     const-string v3, "expansionFraction"
 
@@ -547,7 +545,7 @@
             "Ljava/lang/Float;",
             "-",
             "Lcom/supercell/id/view/ExpandableFrameLayout$b;",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -555,7 +553,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->i:Lke/p;
+    iput-object p1, p0, Lcom/supercell/id/view/ExpandableFrameLayout;->j:Lke/p;
 
     return-void
 
@@ -563,7 +561,7 @@
     const-string p1, "listener"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

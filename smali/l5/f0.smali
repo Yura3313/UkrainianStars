@@ -67,7 +67,7 @@
     .line 3
     const-class v1, Ll5/f0;
 
-    invoke-static {v1, v0}, Lcom/google/crypto/tink/shaded/protobuf/o;->q(Ljava/lang/Class;Lcom/google/crypto/tink/shaded/protobuf/o;)V
+    invoke-static {v1, v0}, Lcom/google/crypto/tink/shaded/protobuf/o;->p(Ljava/lang/Class;Lcom/google/crypto/tink/shaded/protobuf/o;)V
 
     return-void
 .end method
@@ -81,7 +81,7 @@
     return-void
 .end method
 
-.method public static synthetic r()Ll5/f0;
+.method public static synthetic q()Ll5/f0;
     .locals 1
 
     .line 1
@@ -90,7 +90,7 @@
     return-object v0
 .end method
 
-.method public static s()Ll5/f0;
+.method public static r()Ll5/f0;
     .locals 1
 
     .line 1
@@ -101,17 +101,13 @@
 
 
 # virtual methods
-.method public final j(Lcom/google/crypto/tink/shaded/protobuf/o$f;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final i(Lcom/google/crypto/tink/shaded/protobuf/o$f;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    sget-object p2, Ll5/f0$a;->a:[I
-
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
     move-result p1
-
-    aget p1, p2, p1
 
     const/4 p2, 0x1
 
@@ -126,45 +122,34 @@
 
     throw p1
 
-    :pswitch_0
-    return-object p3
-
     .line 3
-    :pswitch_1
-    invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
-
-    move-result-object p1
-
-    return-object p1
-
-    .line 4
-    :pswitch_2
+    :pswitch_0
     sget-object p1, Ll5/f0;->PARSER:Lm5/r;
 
     if-nez p1, :cond_1
 
-    .line 5
+    .line 4
     const-class p2, Ll5/f0;
 
     monitor-enter p2
 
-    .line 6
+    .line 5
     :try_start_0
     sget-object p1, Ll5/f0;->PARSER:Lm5/r;
 
     if-nez p1, :cond_0
 
-    .line 7
+    .line 6
     new-instance p1, Lcom/google/crypto/tink/shaded/protobuf/o$b;
 
     sget-object p3, Ll5/f0;->DEFAULT_INSTANCE:Ll5/f0;
 
     invoke-direct {p1, p3}, Lcom/google/crypto/tink/shaded/protobuf/o$b;-><init>(Lcom/google/crypto/tink/shaded/protobuf/o;)V
 
-    .line 8
+    .line 7
     sput-object p1, Ll5/f0;->PARSER:Lm5/r;
 
-    .line 9
+    .line 8
     :cond_0
     monitor-exit p2
 
@@ -183,9 +168,25 @@
     :goto_0
     return-object p1
 
-    .line 10
-    :pswitch_3
+    .line 9
+    :pswitch_1
     sget-object p1, Ll5/f0;->DEFAULT_INSTANCE:Ll5/f0;
+
+    return-object p1
+
+    .line 10
+    :pswitch_2
+    new-instance p1, Ll5/f0$b;
+
+    invoke-direct {p1, p3}, Ll5/f0$b;-><init>(Ll5/f0$a;)V
+
+    return-object p1
+
+    .line 11
+    :pswitch_3
+    new-instance p1, Ll5/f0;
+
+    invoke-direct {p1}, Ll5/f0;-><init>()V
 
     return-object p1
 
@@ -212,36 +213,31 @@
 
     const-string p2, "\u0000\u0003\u0000\u0000\u0001\u0003\u0003\u0000\u0000\u0000\u0001\t\u0002\t\u0003\u000c"
 
-    .line 11
+    .line 12
     sget-object p3, Ll5/f0;->DEFAULT_INSTANCE:Ll5/f0;
 
-    .line 12
-    new-instance v0, Lm5/v;
+    .line 13
+    new-instance v0, Lm5/u;
 
-    invoke-direct {v0, p3, p2, p1}, Lm5/v;-><init>(Lcom/google/crypto/tink/shaded/protobuf/a0;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-direct {v0, p3, p2, p1}, Lm5/u;-><init>(Lcom/google/crypto/tink/shaded/protobuf/a0;Ljava/lang/String;[Ljava/lang/Object;)V
 
     return-object v0
 
-    .line 13
     :pswitch_5
-    new-instance p1, Ll5/f0$b;
-
-    invoke-direct {p1, p3}, Ll5/f0$b;-><init>(Ll5/f0$a;)V
-
-    return-object p1
+    return-object p3
 
     .line 14
     :pswitch_6
-    new-instance p1, Ll5/f0;
+    invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
-    invoke-direct {p1}, Ll5/f0;-><init>()V
+    move-result-object p1
 
     return-object p1
 
     nop
 
     :pswitch_data_0
-    .packed-switch 0x1
+    .packed-switch 0x0
         :pswitch_6
         :pswitch_5
         :pswitch_4
@@ -252,7 +248,7 @@
     .end packed-switch
 .end method
 
-.method public t()Ll5/d0;
+.method public s()Ll5/d0;
     .locals 1
 
     .line 1
@@ -260,7 +256,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-static {}, Ll5/d0;->t()Ll5/d0;
+    invoke-static {}, Ll5/d0;->s()Ll5/d0;
 
     move-result-object v0
 
@@ -268,26 +264,26 @@
     return-object v0
 .end method
 
-.method public u()Ll5/x;
+.method public t()Ll5/x;
     .locals 1
 
     .line 1
     iget v0, p0, Ll5/f0;->ecPointFormat_:I
 
-    invoke-static {v0}, Ll5/x;->forNumber(I)Ll5/x;
+    invoke-static {v0}, Ll5/x;->a(I)Ll5/x;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Ll5/x;->UNRECOGNIZED:Ll5/x;
+    sget-object v0, Ll5/x;->l:Ll5/x;
 
     :cond_0
     return-object v0
 .end method
 
-.method public v()Ll5/i0;
+.method public u()Ll5/i0;
     .locals 1
 
     .line 1
@@ -295,7 +291,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-static {}, Ll5/i0;->t()Ll5/i0;
+    invoke-static {}, Ll5/i0;->s()Ll5/i0;
 
     move-result-object v0
 

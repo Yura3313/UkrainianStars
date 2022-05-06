@@ -32,11 +32,11 @@
 
     move-result-object p0
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object p0
 
-    :catch_0
+    :catchall_0
     move-exception p0
 
     .line 2

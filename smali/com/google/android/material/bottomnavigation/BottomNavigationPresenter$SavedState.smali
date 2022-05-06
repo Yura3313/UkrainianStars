@@ -30,9 +30,9 @@
 
 
 # instance fields
-.field public a:I
+.field public g:I
 
-.field public b:Lcom/google/android/material/internal/ParcelableSparseArray;
+.field public h:Lcom/google/android/material/internal/ParcelableSparseArray;
 
 
 # direct methods
@@ -69,7 +69,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->a:I
+    iput v0, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->g:I
 
     .line 4
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -86,7 +86,7 @@
 
     check-cast p1, Lcom/google/android/material/internal/ParcelableSparseArray;
 
-    iput-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->b:Lcom/google/android/material/internal/ParcelableSparseArray;
+    iput-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->h:Lcom/google/android/material/internal/ParcelableSparseArray;
 
     return-void
 .end method
@@ -105,12 +105,12 @@
     .locals 1
 
     .line 1
-    iget p2, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->a:I
+    iget p2, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->g:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->b:Lcom/google/android/material/internal/ParcelableSparseArray;
+    iget-object p2, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->h:Lcom/google/android/material/internal/ParcelableSparseArray;
 
     const/4 v0, 0x0
 

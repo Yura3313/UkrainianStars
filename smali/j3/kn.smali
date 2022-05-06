@@ -3,54 +3,44 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
+.implements Lj3/rv0;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final b:Lj3/fv0;
+.field public final b:Lj3/vv0;
 
 .field public final c:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lj3/fv0;Lj3/fv0;)V
-    .locals 1
+.method public synthetic constructor <init>(Ljava/lang/Object;Lj3/vv0;I)V
+    .locals 0
 
-    const/4 v0, 0x1
+    .line 1
+    iput p3, p0, Lj3/kn;->a:I
 
-    iput v0, p0, Lj3/kn;->a:I
+    iput-object p1, p0, Lj3/kn;->c:Ljava/lang/Object;
 
-    .line 4
+    iput-object p2, p0, Lj3/kn;->b:Lj3/vv0;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 5
-    iput-object p1, p0, Lj3/kn;->b:Lj3/fv0;
-
-    .line 6
-    iput-object p2, p0, Lj3/kn;->c:Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public constructor <init>(Lj3/ym;Lj3/fv0;)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Lj3/kn;->a:I
+.method public static a(Li1/n;Lj3/vv0;)Lj3/kn;
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lj3/kn;
 
-    .line 2
-    iput-object p1, p0, Lj3/kn;->c:Ljava/lang/Object;
+    const/4 v1, 0x1
 
-    .line 3
-    iput-object p2, p0, Lj3/kn;->b:Lj3/fv0;
+    invoke-direct {v0, p0, p1, v1}, Lj3/kn;-><init>(Ljava/lang/Object;Lj3/vv0;I)V
 
-    return-void
+    return-object v0
 .end method
 
 
@@ -66,62 +56,43 @@
 
     .line 1
     :pswitch_0
-    iget-object v0, p0, Lj3/kn;->b:Lj3/fv0;
+    iget-object v0, p0, Lj3/kn;->b:Lj3/vv0;
 
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
     move-result-object v0
-
-    check-cast v0, Lj3/ao;
 
     .line 2
-    new-instance v1, Lj3/rt;
-
-    .line 3
-    sget-object v2, Lj3/gd;->f:Lj3/am0;
-
-    .line 4
-    invoke-direct {v1, v0, v2}, Lj3/rt;-><init>(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
-
-    invoke-static {v1}, Ljava/util/Collections;->singleton(Ljava/lang/Object;)Ljava/util/Set;
-
-    move-result-object v0
+    check-cast v0, Lj3/an;
 
     const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
-    .line 5
-    invoke-static {v0, v1}, Lj3/zo0;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    .line 3
+    invoke-static {v0, v1}, Lj3/u6;->h(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     return-object v0
 
-    .line 6
+    .line 4
     :goto_0
-    iget-object v0, p0, Lj3/kn;->b:Lj3/fv0;
+    iget-object v0, p0, Lj3/kn;->b:Lj3/vv0;
 
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lj3/xr;
+    .line 5
+    check-cast v0, Lj3/kq;
 
-    iget-object v1, p0, Lj3/kn;->c:Ljava/lang/Object;
-
-    check-cast v1, Lj3/fv0;
-
-    invoke-interface {v1}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/util/concurrent/Executor;
+    .line 6
+    new-instance v1, Lj3/yt;
 
     .line 7
-    new-instance v2, Lj3/rt;
+    sget-object v2, Lj3/kd;->f:Lj3/km0;
 
-    invoke-direct {v2, v0, v1}, Lj3/rt;-><init>(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
+    .line 8
+    invoke-direct {v1, v0, v2}, Lj3/yt;-><init>(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
 
-    return-object v2
-
-    nop
+    return-object v1
 
     :pswitch_data_0
     .packed-switch 0x0

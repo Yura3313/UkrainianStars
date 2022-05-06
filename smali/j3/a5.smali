@@ -1,25 +1,44 @@
-.class public final synthetic Lj3/a5;
+.class public final Lj3/a5;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lj3/y2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj3/y2<",
+        "Lj3/l5;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic g:Lj3/nr0;
 
-.field public final b:Ljava/lang/Object;
+.field public final synthetic h:Lj3/k4;
+
+.field public final synthetic i:Lj3/ty0;
+
+.field public final synthetic j:Lj3/t4;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method public constructor <init>(Lj3/t4;Lj3/nr0;Lj3/k4;Lj3/ty0;)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lj3/a5;->a:I
+    iput-object p1, p0, Lj3/a5;->j:Lj3/t4;
 
-    iput-object p1, p0, Lj3/a5;->b:Ljava/lang/Object;
+    iput-object p2, p0, Lj3/a5;->g:Lj3/nr0;
+
+    iput-object p3, p0, Lj3/a5;->h:Lj3/k4;
+
+    iput-object p4, p0, Lj3/a5;->i:Lj3/ty0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,50 +47,71 @@
 
 
 # virtual methods
-.method public final run()V
-    .locals 1
-
-    iget v0, p0, Lj3/a5;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
+.method public final b(Ljava/lang/Object;Ljava/util/Map;)V
+    .locals 2
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/a5;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/p20;
+    check-cast p1, Lj3/l5;
 
     .line 2
-    invoke-virtual {v0}, Lj3/r20;->a()V
-
-    return-void
+    iget-object p1, p0, Lj3/a5;->j:Lj3/t4;
 
     .line 3
-    :pswitch_1
-    iget-object v0, p0, Lj3/a5;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/j4;
-
-    invoke-interface {v0}, Lj3/j4;->destroy()V
-
-    return-void
+    iget-object p1, p1, Lj3/t4;->a:Ljava/lang/Object;
 
     .line 4
-    :goto_0
-    iget-object v0, p0, Lj3/a5;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/r70;
+    monitor-enter p1
 
     .line 5
-    invoke-virtual {v0}, Lj3/r70;->a()V
+    :try_start_0
+    iget-object p2, p0, Lj3/a5;->j:Lj3/t4;
+
+    .line 6
+    iget v0, p2, Lj3/t4;->h:I
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x2
+
+    .line 7
+    iput v0, p2, Lj3/t4;->h:I
+
+    .line 8
+    iget-object v0, p0, Lj3/a5;->g:Lj3/nr0;
+
+    invoke-virtual {p2, v0}, Lj3/t4;->a(Lj3/nr0;)Lj3/f5;
+
+    .line 9
+    :cond_0
+    iget-object p2, p0, Lj3/a5;->h:Lj3/k4;
+
+    const-string v0, "/requestReload"
+
+    iget-object v1, p0, Lj3/a5;->i:Lj3/ty0;
+
+    .line 10
+    iget-object v1, v1, Lj3/ty0;->g:Ljava/lang/Object;
+
+    .line 11
+    check-cast v1, Lj3/y2;
+
+    .line 12
+    invoke-interface {p2, v0, v1}, Lj3/l5;->j(Ljava/lang/String;Lj3/y2;)V
+
+    .line 13
+    monitor-exit p1
 
     return-void
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    :goto_0
+    monitor-exit p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p2
+
+    :catchall_0
+    move-exception p2
+
+    goto :goto_0
 .end method

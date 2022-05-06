@@ -107,7 +107,7 @@
     .line 1
     check-cast p1, Lcom/google/crypto/tink/shaded/protobuf/o$c;
 
-    invoke-virtual {p1}, Lcom/google/crypto/tink/shaded/protobuf/o$c;->r()Lcom/google/crypto/tink/shaded/protobuf/m;
+    invoke-virtual {p1}, Lcom/google/crypto/tink/shaded/protobuf/o$c;->q()Lcom/google/crypto/tink/shaded/protobuf/m;
 
     move-result-object p1
 
@@ -257,10 +257,8 @@
     .line 2
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 3
-    sget-object p1, Lcom/google/crypto/tink/shaded/protobuf/l$a;->a:[I
-
     const/4 p1, 0x0
 
+    .line 3
     throw p1
 .end method

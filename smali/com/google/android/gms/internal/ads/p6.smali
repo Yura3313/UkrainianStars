@@ -1,269 +1,92 @@
 .class public final Lcom/google/android/gms/internal/ads/p6;
-.super Lj3/ar0;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lj3/ar0<",
-        "Lcom/google/android/gms/internal/ads/q6$c;",
-        ">;"
-    }
-.end annotation
+.super Lcom/google/android/gms/internal/ads/d7;
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/d6;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/internal/ads/a0$a;I)V
+    .locals 7
+
+    const/16 v6, 0xb
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v3, p3
+
+    move-object v4, p4
+
+    move v5, p5
 
     .line 1
-    invoke-direct {p0}, Lj3/ar0;-><init>()V
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/internal/ads/d7;-><init>(Lcom/google/android/gms/internal/ads/d6;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/internal/ads/a0$a;II)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/util/Map$Entry;)I
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Map$Entry<",
-            "**>;)I"
-        }
-    .end annotation
-
-    .line 1
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/google/android/gms/internal/ads/q6$c;
-
-    .line 2
-    new-instance p1, Ljava/lang/NoSuchMethodError;
-
-    invoke-direct {p1}, Ljava/lang/NoSuchMethodError;-><init>()V
-
-    throw p1
-.end method
-
-.method public final b(Lcom/google/android/gms/internal/ads/o6;Lj3/os0;I)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/o6;->a:Ljava/util/Map;
-
-    new-instance v0, Lcom/google/android/gms/internal/ads/o6$a;
-
-    invoke-direct {v0, p2, p3}, Lcom/google/android/gms/internal/ads/o6$a;-><init>(Ljava/lang/Object;I)V
-
-    .line 2
-    invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/google/android/gms/internal/ads/q6$f;
-
-    return-object p1
-.end method
-
-.method public final c(Lj3/wq0;Ljava/lang/Object;Lcom/google/android/gms/internal/ads/o6;Lj3/dr0;Ljava/lang/Object;Lj3/rt0;)Ljava/lang/Object;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<UT:",
-            "Ljava/lang/Object;",
-            "UB:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lj3/wq0;",
-            "Ljava/lang/Object;",
-            "Lcom/google/android/gms/internal/ads/o6;",
-            "Lj3/dr0<",
-            "Lcom/google/android/gms/internal/ads/q6$c;",
-            ">;TUB;",
-            "Lj3/rt0<",
-            "TUT;TUB;>;)TUB;"
-        }
-    .end annotation
-
+.method public final a()V
+    .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Ljava/io/IOException;
+            Ljava/lang/IllegalAccessException;,
+            Ljava/lang/reflect/InvocationTargetException;
         }
     .end annotation
 
     .line 1
-    check-cast p2, Lcom/google/android/gms/internal/ads/q6$f;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/d7;->d:Lcom/google/android/gms/internal/ads/a0$a;
+
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/d7;->e:Ljava/lang/reflect/Method;
+
+    const/4 v2, 0x1
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    iget-object v3, p0, Lcom/google/android/gms/internal/ads/d7;->a:Lcom/google/android/gms/internal/ads/d6;
 
     .line 2
-    new-instance p1, Ljava/lang/NoSuchMethodError;
+    iget-object v3, v3, Lcom/google/android/gms/internal/ads/d6;->a:Landroid/content/Context;
 
-    invoke-direct {p1}, Ljava/lang/NoSuchMethodError;-><init>()V
+    const/4 v4, 0x0
 
-    throw p1
-.end method
+    aput-object v3, v2, v4
 
-.method public final d(Lj3/lq0;Ljava/lang/Object;Lcom/google/android/gms/internal/ads/o6;Lj3/dr0;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/lq0;",
-            "Ljava/lang/Object;",
-            "Lcom/google/android/gms/internal/ads/o6;",
-            "Lj3/dr0<",
-            "Lcom/google/android/gms/internal/ads/q6$c;",
-            ">;)V"
-        }
-    .end annotation
+    const/4 v3, 0x0
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    .line 3
+    invoke-virtual {v1, v3, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1
-    check-cast p2, Lcom/google/android/gms/internal/ads/q6$f;
+    move-result-object v1
 
-    .line 2
-    new-instance p1, Ljava/lang/NoSuchMethodError;
+    check-cast v1, Ljava/lang/Long;
 
-    invoke-direct {p1}, Ljava/lang/NoSuchMethodError;-><init>()V
+    invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
 
-    throw p1
-.end method
+    move-result-wide v1
 
-.method public final e(Lj3/wq0;Ljava/lang/Object;Lcom/google/android/gms/internal/ads/o6;Lj3/dr0;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/wq0;",
-            "Ljava/lang/Object;",
-            "Lcom/google/android/gms/internal/ads/o6;",
-            "Lj3/dr0<",
-            "Lcom/google/android/gms/internal/ads/q6$c;",
-            ">;)V"
-        }
-    .end annotation
+    .line 4
+    iget-boolean v3, v0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    if-eqz v3, :cond_0
 
-    .line 1
-    check-cast p2, Lcom/google/android/gms/internal/ads/q6$f;
+    .line 5
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
 
-    .line 2
-    new-instance p1, Ljava/lang/NoSuchMethodError;
+    .line 6
+    iput-boolean v4, v0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
 
-    invoke-direct {p1}, Ljava/lang/NoSuchMethodError;-><init>()V
+    .line 7
+    :cond_0
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
 
-    throw p1
-.end method
+    check-cast v0, Lcom/google/android/gms/internal/ads/a0;
 
-.method public final f(Lj3/mu0;Ljava/util/Map$Entry;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lj3/mu0;",
-            "Ljava/util/Map$Entry<",
-            "**>;)V"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-interface {p2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/google/android/gms/internal/ads/q6$c;
-
-    .line 2
-    new-instance p1, Ljava/lang/NoSuchMethodError;
-
-    invoke-direct {p1}, Ljava/lang/NoSuchMethodError;-><init>()V
-
-    throw p1
-.end method
-
-.method public final g(Ljava/lang/Object;)Lj3/dr0;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Object;",
-            ")",
-            "Lj3/dr0<",
-            "Lcom/google/android/gms/internal/ads/q6$c;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    check-cast p1, Lcom/google/android/gms/internal/ads/q6$d;
-
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/q6$d;->zzifv:Lj3/dr0;
-
-    return-object p1
-.end method
-
-.method public final h(Ljava/lang/Object;)Lj3/dr0;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Object;",
-            ")",
-            "Lj3/dr0<",
-            "Lcom/google/android/gms/internal/ads/q6$c;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    check-cast p1, Lcom/google/android/gms/internal/ads/q6$d;
-
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/q6$d;->x()Lj3/dr0;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final i(Ljava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    check-cast p1, Lcom/google/android/gms/internal/ads/q6$d;
-
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/q6$d;->zzifv:Lj3/dr0;
-
-    .line 2
-    invoke-virtual {p1}, Lj3/dr0;->k()V
+    invoke-static {v0, v1, v2}, Lcom/google/android/gms/internal/ads/a0;->g0(Lcom/google/android/gms/internal/ads/a0;J)V
 
     return-void
-.end method
-
-.method public final j(Lj3/os0;)Z
-    .locals 0
-
-    .line 1
-    instance-of p1, p1, Lcom/google/android/gms/internal/ads/q6$d;
-
-    return p1
 .end method

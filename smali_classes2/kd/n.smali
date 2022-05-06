@@ -1,26 +1,27 @@
 .class public final Lkd/n;
-.super Lle/j;
-.source "OnboardingNicknamePageFragment.kt"
+.super Ljava/lang/Object;
+.source "FriendsFragment.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Ljava/util/Comparator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lkd/k;",
-        "Ljava/lang/Exception;",
-        "Lbe/n;",
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "Lkd/h;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lkd/n;
+.field public static final g:Lkd/n;
 
 
 # direct methods
@@ -31,67 +32,63 @@
 
     invoke-direct {v0}, Lkd/n;-><init>()V
 
-    sput-object v0, Lkd/n;->a:Lkd/n;
+    sput-object v0, Lkd/n;->g:Lkd/n;
 
     return-void
 .end method
 
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 0
 
     .line 1
-    check-cast p1, Lkd/k;
+    check-cast p1, Lkd/h;
 
-    check-cast p2, Ljava/lang/Exception;
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_2
-
-    if-eqz p2, :cond_1
+    check-cast p2, Lkd/h;
 
     .line 2
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-virtual {p1}, Lkd/h;->e()Lkd/h$a;
 
     move-result-object p1
 
-    if-eqz p1, :cond_0
-
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    instance-of p1, p1, Lkd/h$a$c;
 
     .line 3
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->E(Ljava/lang/Exception;Lke/l;)V
+    invoke-virtual {p2}, Lkd/h;->e()Lkd/h$a;
 
-    .line 4
+    move-result-object p2
+
+    instance-of p2, p2, Lkd/h$a$c;
+
+    if-eqz p1, :cond_0
+
+    if-nez p2, :cond_0
+
+    const/4 p1, -0x1
+
+    goto :goto_0
+
     :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    if-nez p1, :cond_1
 
-    return-object p1
+    if-eqz p2, :cond_1
+
+    const/4 p1, 0x1
+
+    goto :goto_0
 
     :cond_1
-    const-string p1, "it"
+    const/4 p1, 0x0
 
-    .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "$receiver"
-
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
+    :goto_0
+    return p1
 .end method

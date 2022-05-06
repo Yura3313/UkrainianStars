@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field public final a:La7/f;
+.field public final a:I
 
 .field public final b:B
 
@@ -478,7 +478,7 @@
 .end method
 
 .method public constructor <init>(I)V
-    .locals 1
+    .locals 3
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -487,21 +487,37 @@
 
     and-int/lit8 v0, v0, 0x3
 
+    if-ltz v0, :cond_0
+
     .line 2
-    invoke-static {v0}, La7/f;->forBits(I)La7/f;
+    sget-object v1, La7/f;->a:[I
 
-    move-result-object v0
+    array-length v2, v1
 
-    iput-object v0, p0, La7/g;->a:La7/f;
+    if-ge v0, v2, :cond_0
+
+    .line 3
+    aget v0, v1, v0
+
+    .line 4
+    iput v0, p0, La7/g;->a:I
 
     and-int/lit8 p1, p1, 0x7
 
     int-to-byte p1, p1
 
-    .line 3
+    .line 5
     iput-byte p1, p0, La7/g;->b:B
 
     return-void
+
+    .line 6
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    invoke-direct {p1}, Ljava/lang/IllegalArgumentException;-><init>()V
+
+    throw p1
 .end method
 
 .method public static a(II)La7/g;
@@ -632,9 +648,9 @@
     check-cast p1, La7/g;
 
     .line 3
-    iget-object v0, p0, La7/g;->a:La7/f;
+    iget v0, p0, La7/g;->a:I
 
-    iget-object v2, p1, La7/g;->a:La7/f;
+    iget v2, p1, La7/g;->a:I
 
     if-ne v0, v2, :cond_1
 
@@ -656,9 +672,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, La7/g;->a:La7/f;
+    iget v0, p0, La7/g;->a:I
 
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+    invoke-static {v0}, Lp/g;->b(I)I
 
     move-result v0
 

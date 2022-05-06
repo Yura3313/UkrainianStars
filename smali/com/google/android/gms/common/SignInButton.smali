@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field public a:I
+.field public g:I
 
-.field public b:I
+.field public h:I
 
-.field public h:Landroid/view/View;
+.field public i:Landroid/view/View;
 
-.field public i:Landroid/view/View$OnClickListener;
+.field public j:Landroid/view/View$OnClickListener;
 
 
 # direct methods
@@ -45,7 +45,7 @@
     const/4 p3, 0x0
 
     .line 3
-    iput-object p3, p0, Lcom/google/android/gms/common/SignInButton;->i:Landroid/view/View$OnClickListener;
+    iput-object p3, p0, Lcom/google/android/gms/common/SignInButton;->j:Landroid/view/View$OnClickListener;
 
     .line 4
     invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
@@ -68,7 +68,7 @@
 
     move-result p2
 
-    iput p2, p0, Lcom/google/android/gms/common/SignInButton;->a:I
+    iput p2, p0, Lcom/google/android/gms/common/SignInButton;->g:I
 
     .line 6
     sget p2, Lcom/google/android/gms/base/R$styleable;->SignInButton_colorScheme:I
@@ -79,7 +79,7 @@
 
     move-result p2
 
-    iput p2, p0, Lcom/google/android/gms/common/SignInButton;->b:I
+    iput p2, p0, Lcom/google/android/gms/common/SignInButton;->h:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -87,9 +87,9 @@
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 8
-    iget p1, p0, Lcom/google/android/gms/common/SignInButton;->a:I
+    iget p1, p0, Lcom/google/android/gms/common/SignInButton;->g:I
 
-    iget p2, p0, Lcom/google/android/gms/common/SignInButton;->b:I
+    iget p2, p0, Lcom/google/android/gms/common/SignInButton;->h:I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/gms/common/SignInButton;->a(II)V
 
@@ -111,10 +111,10 @@
     .locals 8
 
     .line 1
-    iput p1, p0, Lcom/google/android/gms/common/SignInButton;->a:I
+    iput p1, p0, Lcom/google/android/gms/common/SignInButton;->g:I
 
     .line 2
-    iput p2, p0, Lcom/google/android/gms/common/SignInButton;->b:I
+    iput p2, p0, Lcom/google/android/gms/common/SignInButton;->h:I
 
     .line 3
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
@@ -122,7 +122,7 @@
     move-result-object p1
 
     .line 4
-    iget-object p2, p0, Lcom/google/android/gms/common/SignInButton;->h:Landroid/view/View;
+    iget-object p2, p0, Lcom/google/android/gms/common/SignInButton;->i:Landroid/view/View;
 
     if-eqz p2, :cond_0
 
@@ -132,15 +132,15 @@
     .line 6
     :cond_0
     :try_start_0
-    iget p2, p0, Lcom/google/android/gms/common/SignInButton;->a:I
+    iget p2, p0, Lcom/google/android/gms/common/SignInButton;->g:I
 
-    iget v0, p0, Lcom/google/android/gms/common/SignInButton;->b:I
+    iget v0, p0, Lcom/google/android/gms/common/SignInButton;->h:I
 
     invoke-static {p1, p2, v0}, Lc2/z;->c(Landroid/content/Context;II)Landroid/view/View;
 
     move-result-object p2
 
-    iput-object p2, p0, Lcom/google/android/gms/common/SignInButton;->h:Landroid/view/View;
+    iput-object p2, p0, Lcom/google/android/gms/common/SignInButton;->i:Landroid/view/View;
     :try_end_0
     .catch Lcom/google/android/gms/dynamic/RemoteCreator$RemoteCreatorException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -150,9 +150,9 @@
     nop
 
     .line 7
-    iget p2, p0, Lcom/google/android/gms/common/SignInButton;->a:I
+    iget p2, p0, Lcom/google/android/gms/common/SignInButton;->g:I
 
-    iget v0, p0, Lcom/google/android/gms/common/SignInButton;->b:I
+    iget v0, p0, Lcom/google/android/gms/common/SignInButton;->h:I
 
     .line 8
     new-instance v1, Lc2/l;
@@ -236,7 +236,7 @@
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    invoke-static {v5, v4, p2}, Lb0/c;->b(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v5, v4, p2}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p2
 
@@ -312,7 +312,7 @@
     :cond_3
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    invoke-static {v5, v4, p2}, Lb0/c;->b(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v5, v4, p2}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p2
 
@@ -364,16 +364,16 @@
 
     .line 35
     :cond_6
-    iput-object v1, p0, Lcom/google/android/gms/common/SignInButton;->h:Landroid/view/View;
+    iput-object v1, p0, Lcom/google/android/gms/common/SignInButton;->i:Landroid/view/View;
 
     .line 36
     :goto_2
-    iget-object p1, p0, Lcom/google/android/gms/common/SignInButton;->h:Landroid/view/View;
+    iget-object p1, p0, Lcom/google/android/gms/common/SignInButton;->i:Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
 
     .line 37
-    iget-object p1, p0, Lcom/google/android/gms/common/SignInButton;->h:Landroid/view/View;
+    iget-object p1, p0, Lcom/google/android/gms/common/SignInButton;->i:Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->isEnabled()Z
 
@@ -382,7 +382,7 @@
     invoke-virtual {p1, p2}, Landroid/view/View;->setEnabled(Z)V
 
     .line 38
-    iget-object p1, p0, Lcom/google/android/gms/common/SignInButton;->h:Landroid/view/View;
+    iget-object p1, p0, Lcom/google/android/gms/common/SignInButton;->i:Landroid/view/View;
 
     invoke-virtual {p1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -397,11 +397,11 @@
     .end param
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/SignInButton;->i:Landroid/view/View$OnClickListener;
+    iget-object v0, p0, Lcom/google/android/gms/common/SignInButton;->j:Landroid/view/View$OnClickListener;
 
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/google/android/gms/common/SignInButton;->h:Landroid/view/View;
+    iget-object v1, p0, Lcom/google/android/gms/common/SignInButton;->i:Landroid/view/View;
 
     if-ne p1, v1, :cond_0
 
@@ -416,7 +416,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/gms/common/SignInButton;->a:I
+    iget v0, p0, Lcom/google/android/gms/common/SignInButton;->g:I
 
     invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/common/SignInButton;->a(II)V
 
@@ -430,7 +430,7 @@
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->setEnabled(Z)V
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/gms/common/SignInButton;->h:Landroid/view/View;
+    iget-object v0, p0, Lcom/google/android/gms/common/SignInButton;->i:Landroid/view/View;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setEnabled(Z)V
 
@@ -441,10 +441,10 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/gms/common/SignInButton;->i:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Lcom/google/android/gms/common/SignInButton;->j:Landroid/view/View$OnClickListener;
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/gms/common/SignInButton;->h:Landroid/view/View;
+    iget-object p1, p0, Lcom/google/android/gms/common/SignInButton;->i:Landroid/view/View;
 
     if-eqz p1, :cond_0
 
@@ -465,9 +465,9 @@
     .end annotation
 
     .line 1
-    iget p1, p0, Lcom/google/android/gms/common/SignInButton;->a:I
+    iget p1, p0, Lcom/google/android/gms/common/SignInButton;->g:I
 
-    iget v0, p0, Lcom/google/android/gms/common/SignInButton;->b:I
+    iget v0, p0, Lcom/google/android/gms/common/SignInButton;->h:I
 
     invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/common/SignInButton;->a(II)V
 
@@ -478,7 +478,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/gms/common/SignInButton;->b:I
+    iget v0, p0, Lcom/google/android/gms/common/SignInButton;->h:I
 
     invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/common/SignInButton;->a(II)V
 

@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public abstract g3()Ljava/util/List;
+.method public abstract h3()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -24,7 +24,7 @@
     .end annotation
 .end method
 
-.method public abstract w1()Ljava/lang/String;
+.method public abstract x1()Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

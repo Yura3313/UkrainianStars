@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public a:Lq/e$b;
+.field public a:Lq/e$a;
 
-.field public b:Lq/e$b;
+.field public b:Lq/e$a;
 
 .field public c:I
 

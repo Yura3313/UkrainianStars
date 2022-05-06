@@ -1,115 +1,109 @@
-.class public abstract Lod/m;
-.super Ljava/lang/Object;
-.source "PublicProfileFragment.kt"
+.class public final Lod/m;
+.super Lle/j;
+.source "RegisterEnterPinPageFragment.kt"
+
+# interfaces
+.implements Lke/p;
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
+.annotation system Ldalvik/annotation/Signature;
     value = {
-        Lod/m$a;,
-        Lod/m$b;,
-        Lod/m$c;
+        "Lle/j;",
+        "Lke/p<",
+        "Lod/q;",
+        "Ljava/lang/String;",
+        "Lae/i;",
+        ">;"
     }
 .end annotation
 
 
-# direct methods
-.method public constructor <init>(Lle/g;)V
-    .locals 0
+# static fields
+.field public static final g:Lod/m;
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lod/m;
+
+    invoke-direct {v0}, Lod/m;-><init>()V
+
+    sput-object v0, Lod/m;->g:Lod/m;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a()Z
-.end method
-
-.method public abstract b()Lcom/supercell/id/model/ProfileImage;
-.end method
-
-.method public abstract c()Ljava/lang/String;
-.end method
-
-.method public final d()Z
+.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lod/m;->e()Lcom/supercell/id/model/IdPresenceStatus;
+    check-cast p1, Lod/q;
 
-    move-result-object v0
+    check-cast p2, Ljava/lang/String;
 
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
     const/4 v0, 0x0
 
-    :goto_0
-    return v0
-.end method
+    if-eqz p1, :cond_2
 
-.method public abstract e()Lcom/supercell/id/model/IdPresenceStatus;
-.end method
-
-.method public final f()Lod/m;
-    .locals 1
-
-    .line 1
-    instance-of v0, p0, Lod/m$c;
-
-    if-eqz v0, :cond_0
-
-    move-object v0, p0
-
-    check-cast v0, Lod/m$c;
+    if-eqz p2, :cond_1
 
     .line 2
-    iget-object v0, v0, Lod/m$c;->a:Lod/m;
+    sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->clearPendingRegistration$supercellId_release()V
 
     .line 3
-    invoke-virtual {v0}, Lod/m;->f()Lod/m;
+    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->updateSharedServices$supercellId_release()V
 
-    move-result-object v0
+    .line 4
+    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
-    goto :goto_0
+    move-result-object p2
 
+    invoke-virtual {p2}, Lvd/r;->m()Lse/f0;
+
+    .line 5
+    invoke-virtual {p1}, Lod/r;->f1()Lcom/supercell/id/ui/register/RegisterFlowFragment;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Lcom/supercell/id/ui/FlowFragment;->s1()V
+
+    .line 6
     :cond_0
-    move-object v0, p0
+    sget-object p1, Lae/i;->a:Lae/i;
 
-    :goto_0
-    return-object v0
-.end method
+    return-object p1
 
-.method public abstract g()Ljava/lang/String;
-.end method
+    :cond_1
+    const-string p1, "it"
 
-.method public abstract h()Lcom/supercell/id/model/IdRelationshipStatus;
-.end method
+    .line 7
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-.method public abstract i()Ljava/lang/String;
-.end method
+    throw v0
 
-.method public final j()Ljava/lang/String;
-    .locals 1
+    :cond_2
+    const-string p1, "$receiver"
 
-    .line 1
-    invoke-virtual {p0}, Lod/m;->i()Ljava/lang/String;
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    move-result-object v0
-
-    invoke-static {v0}, La2/a;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public abstract k()Ljava/lang/String;
+    throw v0
 .end method

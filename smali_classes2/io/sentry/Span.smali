@@ -14,6 +14,17 @@
 # instance fields
 .field private final context:Lio/sentry/SpanContext;
 
+.field private final data:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field private final finished:Ljava/util/concurrent/atomic/AtomicBoolean;
 
 .field private final hub:Lio/sentry/IHub;
@@ -35,10 +46,10 @@
     .annotation build Lorg/jetbrains/annotations/VisibleForTesting;
     .end annotation
 
-    .line 10
+    .line 11
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 11
+    .line 12
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
@@ -47,9 +58,16 @@
 
     iput-object v0, p0, Lio/sentry/Span;->finished:Ljava/util/concurrent/atomic/AtomicBoolean;
 
+    .line 13
+    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+
+    iput-object v0, p0, Lio/sentry/Span;->data:Ljava/util/Map;
+
     const-string v0, "context is required"
 
-    .line 12
+    .line 14
     invoke-static {p1, v0}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -60,7 +78,7 @@
 
     const-string p1, "sentryTracer is required"
 
-    .line 13
+    .line 15
     invoke-static {p2, p1}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -71,7 +89,7 @@
 
     const-string p1, "hub is required"
 
-    .line 14
+    .line 16
     invoke-static {p3, p1}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -84,7 +102,7 @@
 
     goto :goto_0
 
-    .line 15
+    .line 17
     :cond_0
     invoke-static {}, Lio/sentry/DateUtils;->getCurrentDateTime()Ljava/util/Date;
 
@@ -95,7 +113,7 @@
 
     const/4 p1, 0x0
 
-    .line 16
+    .line 18
     iput-object p1, p0, Lio/sentry/Span;->spanFinishedCallback:Lio/sentry/SpanFinishedCallback;
 
     return-void
@@ -127,7 +145,7 @@
 .end method
 
 .method public constructor <init>(Lio/sentry/protocol/SentryId;Lio/sentry/SpanId;Lio/sentry/SentryTracer;Ljava/lang/String;Lio/sentry/IHub;Ljava/util/Date;Lio/sentry/SpanFinishedCallback;)V
-    .locals 8
+    .locals 7
 
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -142,32 +160,39 @@
     iput-object v0, p0, Lio/sentry/Span;->finished:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 4
-    new-instance v0, Lio/sentry/SpanContext;
+    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
-    new-instance v4, Lio/sentry/SpanId;
+    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    invoke-direct {v4}, Lio/sentry/SpanId;-><init>()V
+    iput-object v0, p0, Lio/sentry/Span;->data:Ljava/util/Map;
 
     .line 5
+    new-instance v0, Lio/sentry/SpanContext;
+
+    new-instance v3, Lio/sentry/SpanId;
+
+    invoke-direct {v3}, Lio/sentry/SpanId;-><init>()V
+
+    .line 6
     invoke-virtual {p3}, Lio/sentry/SentryTracer;->isSampled()Ljava/lang/Boolean;
 
-    move-result-object v7
+    move-result-object v6
 
-    move-object v2, v0
+    move-object v1, v0
 
-    move-object v3, p1
+    move-object v2, p1
 
-    move-object v5, p4
+    move-object v4, p4
 
-    move-object v6, p2
+    move-object v5, p2
 
-    invoke-direct/range {v2 .. v7}, Lio/sentry/SpanContext;-><init>(Lio/sentry/protocol/SentryId;Lio/sentry/SpanId;Ljava/lang/String;Lio/sentry/SpanId;Ljava/lang/Boolean;)V
+    invoke-direct/range {v1 .. v6}, Lio/sentry/SpanContext;-><init>(Lio/sentry/protocol/SentryId;Lio/sentry/SpanId;Ljava/lang/String;Lio/sentry/SpanId;Ljava/lang/Boolean;)V
 
     iput-object v0, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
 
     const-string p1, "transaction is required"
 
-    .line 6
+    .line 7
     invoke-static {p3, p1}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -180,7 +205,7 @@
 
     goto :goto_0
 
-    .line 7
+    .line 8
     :cond_0
     invoke-static {}, Lio/sentry/DateUtils;->getCurrentDateTime()Ljava/util/Date;
 
@@ -191,7 +216,7 @@
 
     const-string p1, "hub is required"
 
-    .line 8
+    .line 9
     invoke-static {p5, p1}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -200,7 +225,7 @@
 
     iput-object p1, p0, Lio/sentry/Span;->hub:Lio/sentry/IHub;
 
-    .line 9
+    .line 10
     iput-object p7, p0, Lio/sentry/Span;->spanFinishedCallback:Lio/sentry/SpanFinishedCallback;
 
     return-void
@@ -224,9 +249,22 @@
 .end method
 
 .method public finish(Lio/sentry/SpanStatus;)V
-    .locals 3
+    .locals 1
 
     .line 2
+    invoke-static {}, Lio/sentry/DateUtils;->getCurrentDateTime()Ljava/util/Date;
+
+    move-result-object v0
+
+    invoke-virtual {p0, p1, v0}, Lio/sentry/Span;->finish(Lio/sentry/SpanStatus;Ljava/util/Date;)V
+
+    return-void
+.end method
+
+.method public finish(Lio/sentry/SpanStatus;Ljava/util/Date;)V
+    .locals 3
+
+    .line 3
     iget-object v0, p0, Lio/sentry/Span;->finished:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
@@ -241,46 +279,73 @@
 
     return-void
 
-    .line 3
+    .line 4
     :cond_0
     iget-object v0, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
 
     invoke-virtual {v0, p1}, Lio/sentry/SpanContext;->setStatus(Lio/sentry/SpanStatus;)V
 
-    .line 4
-    invoke-static {}, Lio/sentry/DateUtils;->getCurrentDateTime()Ljava/util/Date;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lio/sentry/Span;->timestamp:Ljava/util/Date;
-
     .line 5
+    iput-object p2, p0, Lio/sentry/Span;->timestamp:Ljava/util/Date;
+
+    .line 6
     iget-object p1, p0, Lio/sentry/Span;->throwable:Ljava/lang/Throwable;
 
     if-eqz p1, :cond_1
 
-    .line 6
-    iget-object v0, p0, Lio/sentry/Span;->hub:Lio/sentry/IHub;
-
-    iget-object v1, p0, Lio/sentry/Span;->transaction:Lio/sentry/SentryTracer;
-
-    invoke-virtual {v1}, Lio/sentry/SentryTracer;->getName()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-interface {v0, p1, p0, v1}, Lio/sentry/IHub;->setSpanContext(Ljava/lang/Throwable;Lio/sentry/ISpan;Ljava/lang/String;)V
-
     .line 7
+    iget-object p2, p0, Lio/sentry/Span;->hub:Lio/sentry/IHub;
+
+    iget-object v0, p0, Lio/sentry/Span;->transaction:Lio/sentry/SentryTracer;
+
+    invoke-virtual {v0}, Lio/sentry/SentryTracer;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {p2, p1, p0, v0}, Lio/sentry/IHub;->setSpanContext(Ljava/lang/Throwable;Lio/sentry/ISpan;Ljava/lang/String;)V
+
+    .line 8
     :cond_1
     iget-object p1, p0, Lio/sentry/Span;->spanFinishedCallback:Lio/sentry/SpanFinishedCallback;
 
     if-eqz p1, :cond_2
 
-    .line 8
+    .line 9
     invoke-interface {p1, p0}, Lio/sentry/SpanFinishedCallback;->execute(Lio/sentry/Span;)V
 
     :cond_2
     return-void
+.end method
+
+.method public getData(Ljava/lang/String;)Ljava/lang/Object;
+    .locals 1
+
+    .line 2
+    iget-object v0, p0, Lio/sentry/Span;->data:Ljava/util/Map;
+
+    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public getData()Ljava/util/Map;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/Span;->data:Ljava/util/Map;
+
+    return-object v0
 .end method
 
 .method public getDescription()Ljava/lang/String;
@@ -464,10 +529,45 @@
     return-object v0
 .end method
 
+.method public setData(Ljava/lang/String;Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/Span;->finished:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
+    iget-object v0, p0, Lio/sentry/Span;->data:Ljava/util/Map;
+
+    invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+.end method
+
 .method public setDescription(Ljava/lang/String;)V
     .locals 1
 
     .line 1
+    iget-object v0, p0, Lio/sentry/Span;->finished:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
     iget-object v0, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
 
     invoke-virtual {v0, p1}, Lio/sentry/SpanContext;->setDescription(Ljava/lang/String;)V
@@ -479,6 +579,18 @@
     .locals 1
 
     .line 1
+    iget-object v0, p0, Lio/sentry/Span;->finished:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
     iget-object v0, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
 
     invoke-virtual {v0, p1}, Lio/sentry/SpanContext;->setOperation(Ljava/lang/String;)V
@@ -490,6 +602,18 @@
     .locals 1
 
     .line 1
+    iget-object v0, p0, Lio/sentry/Span;->finished:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
     iget-object v0, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
 
     invoke-virtual {v0, p1}, Lio/sentry/SpanContext;->setStatus(Lio/sentry/SpanStatus;)V
@@ -501,6 +625,18 @@
     .locals 1
 
     .line 1
+    iget-object v0, p0, Lio/sentry/Span;->finished:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
     iget-object v0, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
 
     invoke-virtual {v0, p1, p2}, Lio/sentry/SpanContext;->setTag(Ljava/lang/String;Ljava/lang/String;)V
@@ -509,9 +645,21 @@
 .end method
 
 .method public setThrowable(Ljava/lang/Throwable;)V
-    .locals 0
+    .locals 1
 
     .line 1
+    iget-object v0, p0, Lio/sentry/Span;->finished:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
     iput-object p1, p0, Lio/sentry/Span;->throwable:Ljava/lang/Throwable;
 
     return-void
@@ -533,7 +681,24 @@
 .method public startChild(Ljava/lang/String;Ljava/lang/String;)Lio/sentry/ISpan;
     .locals 2
 
-    .line 3
+    .line 5
+    iget-object v0, p0, Lio/sentry/Span;->finished:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 6
+    invoke-static {}, Lio/sentry/NoOpSpan;->getInstance()Lio/sentry/NoOpSpan;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 7
+    :cond_0
     iget-object v0, p0, Lio/sentry/Span;->transaction:Lio/sentry/SentryTracer;
 
     iget-object v1, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
@@ -553,6 +718,23 @@
     .locals 2
 
     .line 2
+    iget-object v0, p0, Lio/sentry/Span;->finished:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    invoke-static {}, Lio/sentry/NoOpSpan;->getInstance()Lio/sentry/NoOpSpan;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 4
+    :cond_0
     iget-object v0, p0, Lio/sentry/Span;->transaction:Lio/sentry/SentryTracer;
 
     iget-object v1, p0, Lio/sentry/Span;->context:Lio/sentry/SpanContext;
@@ -593,6 +775,32 @@
     move-result-object v3
 
     invoke-direct {v0, v1, v2, v3}, Lio/sentry/SentryTraceHeader;-><init>(Lio/sentry/protocol/SentryId;Lio/sentry/SpanId;Ljava/lang/Boolean;)V
+
+    return-object v0
+.end method
+
+.method public toTraceStateHeader()Lio/sentry/TraceStateHeader;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/Span;->transaction:Lio/sentry/SentryTracer;
+
+    invoke-virtual {v0}, Lio/sentry/SentryTracer;->toTraceStateHeader()Lio/sentry/TraceStateHeader;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public traceState()Lio/sentry/TraceState;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/Span;->transaction:Lio/sentry/SentryTracer;
+
+    invoke-virtual {v0}, Lio/sentry/SentryTracer;->traceState()Lio/sentry/TraceState;
+
+    move-result-object v0
 
     return-object v0
 .end method

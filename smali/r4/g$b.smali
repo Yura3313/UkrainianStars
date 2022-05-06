@@ -17,7 +17,7 @@
 # instance fields
 .field public a:Lr4/k;
 
-.field public b:Lj4/a;
+.field public b:Lk4/a;
 
 .field public c:Landroid/graphics/ColorFilter;
 
@@ -141,9 +141,9 @@
     iput-object v0, p0, Lr4/g$b;->a:Lr4/k;
 
     .line 42
-    iget-object v0, p1, Lr4/g$b;->b:Lj4/a;
+    iget-object v0, p1, Lr4/g$b;->b:Lk4/a;
 
-    iput-object v0, p0, Lr4/g$b;->b:Lj4/a;
+    iput-object v0, p0, Lr4/g$b;->b:Lk4/a;
 
     .line 43
     iget v0, p1, Lr4/g$b;->l:F
@@ -258,7 +258,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lr4/k;Lj4/a;)V
+.method public constructor <init>(Lr4/k;Lk4/a;)V
     .locals 1
 
     .line 1
@@ -336,7 +336,7 @@
     iput-object p1, p0, Lr4/g$b;->a:Lr4/k;
 
     .line 21
-    iput-object p2, p0, Lr4/g$b;->b:Lj4/a;
+    iput-object p2, p0, Lr4/g$b;->b:Lk4/a;
 
     return-void
 .end method
@@ -363,7 +363,7 @@
     const/4 v1, 0x1
 
     .line 3
-    iput-boolean v1, v0, Lr4/g;->j:Z
+    iput-boolean v1, v0, Lr4/g;->k:Z
 
     return-object v0
 .end method

@@ -16,9 +16,9 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final b:Ljava/util/HashMap;
+.field public final h:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -31,7 +31,7 @@
     .end annotation
 .end field
 
-.field public final h:Ljava/lang/String;
+.field public final i:Ljava/lang/String;
 
 
 # direct methods
@@ -65,7 +65,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/common/server/response/zaj;->a:I
+    iput p1, p0, Lcom/google/android/gms/common/server/response/zaj;->g:I
 
     .line 3
     new-instance p1, Ljava/util/HashMap;
@@ -92,7 +92,7 @@
     check-cast v3, Lcom/google/android/gms/common/server/response/zam;
 
     .line 6
-    iget-object v4, v3, Lcom/google/android/gms/common/server/response/zam;->b:Ljava/lang/String;
+    iget-object v4, v3, Lcom/google/android/gms/common/server/response/zam;->h:Ljava/lang/String;
 
     .line 7
     new-instance v5, Ljava/util/HashMap;
@@ -100,7 +100,7 @@
     invoke-direct {v5}, Ljava/util/HashMap;-><init>()V
 
     .line 8
-    iget-object v6, v3, Lcom/google/android/gms/common/server/response/zam;->h:Ljava/util/ArrayList;
+    iget-object v6, v3, Lcom/google/android/gms/common/server/response/zam;->i:Ljava/util/ArrayList;
 
     invoke-static {v6}, Lc2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -118,7 +118,7 @@
     if-ge v7, v6, :cond_0
 
     .line 9
-    iget-object v8, v3, Lcom/google/android/gms/common/server/response/zam;->h:Ljava/util/ArrayList;
+    iget-object v8, v3, Lcom/google/android/gms/common/server/response/zam;->i:Ljava/util/ArrayList;
 
     invoke-virtual {v8, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -127,9 +127,9 @@
     check-cast v8, Lcom/google/android/gms/common/server/response/zal;
 
     .line 10
-    iget-object v9, v8, Lcom/google/android/gms/common/server/response/zal;->b:Ljava/lang/String;
+    iget-object v9, v8, Lcom/google/android/gms/common/server/response/zal;->h:Ljava/lang/String;
 
-    iget-object v8, v8, Lcom/google/android/gms/common/server/response/zal;->h:Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
+    iget-object v8, v8, Lcom/google/android/gms/common/server/response/zal;->i:Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
 
     invoke-virtual {v5, v9, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -147,12 +147,12 @@
 
     .line 12
     :cond_1
-    iput-object p1, p0, Lcom/google/android/gms/common/server/response/zaj;->b:Ljava/util/HashMap;
+    iput-object p1, p0, Lcom/google/android/gms/common/server/response/zaj;->h:Ljava/util/HashMap;
 
     if-eqz p3, :cond_4
 
     .line 13
-    iput-object p3, p0, Lcom/google/android/gms/common/server/response/zaj;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/common/server/response/zaj;->i:Ljava/lang/String;
 
     .line 14
     invoke-virtual {p1}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
@@ -177,7 +177,7 @@
     check-cast p2, Ljava/lang/String;
 
     .line 15
-    iget-object p3, p0, Lcom/google/android/gms/common/server/response/zaj;->b:Ljava/util/HashMap;
+    iget-object p3, p0, Lcom/google/android/gms/common/server/response/zaj;->h:Ljava/util/HashMap;
 
     invoke-virtual {p3, p2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -215,7 +215,7 @@
     check-cast v0, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;
 
     .line 18
-    iput-object p0, v0, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->o:Lcom/google/android/gms/common/server/response/zaj;
+    iput-object p0, v0, Lcom/google/android/gms/common/server/response/FastJsonResponse$Field;->p:Lcom/google/android/gms/common/server/response/zaj;
 
     goto :goto_2
 
@@ -250,7 +250,7 @@
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/common/server/response/zaj;->b:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/google/android/gms/common/server/response/zaj;->h:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
@@ -281,7 +281,7 @@
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 4
-    iget-object v3, p0, Lcom/google/android/gms/common/server/response/zaj;->b:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/google/android/gms/common/server/response/zaj;->h:Ljava/util/HashMap;
 
     invoke-virtual {v3, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -353,7 +353,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/common/server/response/zaj;->a:I
+    iget v1, p0, Lcom/google/android/gms/common/server/response/zaj;->g:I
 
     const/4 v2, 0x4
 
@@ -371,7 +371,7 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 6
-    iget-object v2, p0, Lcom/google/android/gms/common/server/response/zaj;->b:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/google/android/gms/common/server/response/zaj;->h:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
@@ -397,7 +397,7 @@
     .line 7
     new-instance v4, Lcom/google/android/gms/common/server/response/zam;
 
-    iget-object v5, p0, Lcom/google/android/gms/common/server/response/zaj;->b:Ljava/util/HashMap;
+    iget-object v5, p0, Lcom/google/android/gms/common/server/response/zaj;->h:Ljava/util/HashMap;
 
     invoke-virtual {v5, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -421,7 +421,7 @@
     const/4 v0, 0x3
 
     .line 10
-    iget-object v1, p0, Lcom/google/android/gms/common/server/response/zaj;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/server/response/zaj;->i:Ljava/lang/String;
 
     .line 11
     invoke-static {p1, v0, v1, v2}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
@@ -432,7 +432,7 @@
     return-void
 .end method
 
-.method public final x2(Ljava/lang/String;)Ljava/util/Map;
+.method public final z2(Ljava/lang/String;)Ljava/util/Map;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -447,7 +447,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/server/response/zaj;->b:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/google/android/gms/common/server/response/zaj;->h:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

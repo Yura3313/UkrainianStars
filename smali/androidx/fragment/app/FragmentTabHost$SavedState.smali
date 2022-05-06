@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field public g:Ljava/lang/String;
 
 
 # direct methods
@@ -55,7 +55,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/fragment/app/FragmentTabHost$SavedState;->a:Ljava/lang/String;
+    iput-object p1, p0, Landroidx/fragment/app/FragmentTabHost$SavedState;->g:Ljava/lang/String;
 
     return-void
 .end method
@@ -77,7 +77,7 @@
     const-string v0, "FragmentTabHost.SavedState{"
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -96,7 +96,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Landroidx/fragment/app/FragmentTabHost$SavedState;->a:Ljava/lang/String;
+    iget-object v1, p0, Landroidx/fragment/app/FragmentTabHost$SavedState;->g:Ljava/lang/String;
 
     const-string v2, "}"
 
@@ -114,7 +114,7 @@
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 2
-    iget-object p2, p0, Landroidx/fragment/app/FragmentTabHost$SavedState;->a:Ljava/lang/String;
+    iget-object p2, p0, Landroidx/fragment/app/FragmentTabHost$SavedState;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 

@@ -16,7 +16,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/kakao/sdk/network/ApiCallback<",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
@@ -40,7 +40,7 @@
 
 
 # virtual methods
-.method public onComplete(Lbe/n;Ljava/lang/Throwable;)V
+.method public onComplete(Lae/i;Ljava/lang/Throwable;)V
     .locals 0
 
     .line 2
@@ -55,9 +55,9 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lbe/n;
+    check-cast p1, Lae/i;
 
-    invoke-virtual {p0, p1, p2}, Lcom/kakao/sdk/user/UserApiClient$signup$1;->onComplete(Lbe/n;Ljava/lang/Throwable;)V
+    invoke-virtual {p0, p1, p2}, Lcom/kakao/sdk/user/UserApiClient$signup$1;->onComplete(Lae/i;Ljava/lang/Throwable;)V
 
     return-void
 .end method

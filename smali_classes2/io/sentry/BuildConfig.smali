@@ -6,7 +6,7 @@
 # static fields
 .field public static final SENTRY_JAVA_SDK_NAME:Ljava/lang/String; = "sentry.java"
 
-.field public static final VERSION_NAME:Ljava/lang/String; = "5.1.2"
+.field public static final VERSION_NAME:Ljava/lang/String; = "5.7.1"
 
 
 # direct methods

@@ -1,14 +1,14 @@
 .class public final Ld6/a;
-.super La2/x0;
+.super Lj3/pc;
 .source "AztecDetectorResult.java"
 
 
 # instance fields
-.field public final h:Z
+.field public final c:Z
 
-.field public final i:I
+.field public final d:I
 
-.field public final j:I
+.field public final e:I
 
 
 # direct methods
@@ -16,16 +16,16 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, La2/x0;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {p0, p1, p2}, Lj3/pc;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 2
-    iput-boolean p3, p0, Ld6/a;->h:Z
+    iput-boolean p3, p0, Ld6/a;->c:Z
 
     .line 3
-    iput p4, p0, Ld6/a;->i:I
+    iput p4, p0, Ld6/a;->d:I
 
     .line 4
-    iput p5, p0, Ld6/a;->j:I
+    iput p5, p0, Ld6/a;->e:I
 
     return-void
 .end method

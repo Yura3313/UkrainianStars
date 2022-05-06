@@ -1,187 +1,112 @@
-.class public final Lj3/o31;
+.class public abstract Lj3/o31;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
-
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/internal/ads/zzta;",
-        ">;"
-    }
+.annotation runtime Ljavax/annotation/ParametersAreNonnullByDefault;
 .end annotation
+
+
+# static fields
+.field public static b:Ljava/security/MessageDigest;
+
+
+# instance fields
+.field public a:Ljava/lang/Object;
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v0, p0, Lj3/o31;->a:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 17
+.method public abstract a(Ljava/lang/String;)[B
+.end method
 
-    move-object/from16 v0, p1
+.method public final b()Ljava/security/MessageDigest;
+    .locals 3
 
     .line 1
-    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    iget-object v0, p0, Lj3/o31;->a:Ljava/lang/Object;
 
-    move-result v1
-
-    const-wide/16 v2, 0x0
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    move-wide v8, v2
-
-    move-wide v15, v8
-
-    move-object v7, v4
-
-    move-object v10, v7
-
-    move-object v11, v10
-
-    move-object v12, v11
-
-    move-object v13, v12
-
-    const/4 v14, 0x0
+    monitor-enter v0
 
     .line 2
-    :goto_0
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->dataPosition()I
+    :try_start_0
+    sget-object v1, Lj3/o31;->b:Ljava/security/MessageDigest;
 
-    move-result v2
-
-    if-ge v2, v1, :cond_0
+    if-eqz v1, :cond_0
 
     .line 3
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    move-result v2
+    return-object v1
 
-    const v3, 0xffff
+    :cond_0
+    const/4 v1, 0x0
 
-    and-int/2addr v3, v2
+    :goto_0
+    const/4 v2, 0x2
 
-    packed-switch v3, :pswitch_data_0
+    if-ge v1, v2, :cond_1
+
+    :try_start_1
+    const-string v2, "MD5"
 
     .line 4
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+    invoke-static {v2}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v2
+
+    sput-object v2, Lj3/o31;->b:Ljava/security/MessageDigest;
+    :try_end_1
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :catch_0
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
     .line 5
-    :pswitch_0
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->t(Landroid/os/Parcel;I)J
+    :cond_1
+    :try_start_2
+    sget-object v1, Lj3/o31;->b:Ljava/security/MessageDigest;
 
-    move-result-wide v15
+    monitor-exit v0
 
-    goto :goto_0
+    return-object v1
+
+    :catchall_0
+    move-exception v1
 
     .line 6
-    :pswitch_1
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+    monitor-exit v0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    move-result v14
+    goto :goto_2
 
-    goto :goto_0
+    :goto_1
+    throw v1
 
-    .line 7
-    :pswitch_2
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->d(Landroid/os/Parcel;I)Landroid/os/Bundle;
-
-    move-result-object v13
-
-    goto :goto_0
-
-    .line 8
-    :pswitch_3
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
-
-    move-result-object v12
-
-    goto :goto_0
-
-    .line 9
-    :pswitch_4
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
-
-    move-result-object v11
-
-    goto :goto_0
-
-    .line 10
-    :pswitch_5
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
-
-    move-result-object v10
-
-    goto :goto_0
-
-    .line 11
-    :pswitch_6
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->t(Landroid/os/Parcel;I)J
-
-    move-result-wide v8
-
-    goto :goto_0
-
-    .line 12
-    :pswitch_7
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
-
-    move-result-object v7
-
-    goto :goto_0
-
-    .line 13
-    :cond_0
-    invoke-static {v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
-
-    .line 14
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzta;
-
-    move-object v6, v0
-
-    invoke-direct/range {v6 .. v16}, Lcom/google/android/gms/internal/ads/zzta;-><init>(Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;ZJ)V
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x2
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    new-array p1, p1, [Lcom/google/android/gms/internal/ads/zzta;
-
-    return-object p1
+    :goto_2
+    goto :goto_1
 .end method

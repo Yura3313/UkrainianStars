@@ -1,95 +1,97 @@
-.class public final enum Lb8/e;
-.super Ljava/lang/Enum;
-.source "PollerException.java"
+.class public Lb8/e;
+.super Ljava/lang/Object;
+.source "GuardAgainstConversationReOpenExpiryNetwork.java"
 
 # interfaces
-.implements Lb8/a;
+.implements Lb8/i;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "Lb8/e;",
-        ">;",
-        "Lb8/a;"
-    }
-.end annotation
+# instance fields
+.field public final g:Lb8/i;
 
-
-# static fields
-.field private static final synthetic $VALUES:[Lb8/e;
-
-.field public static final enum SYNC_FAILURE_MAX_LIMIT_REACHED:Lb8/e;
+.field public final h:Le8/j;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Lb8/i;Ld8/r;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lb8/e;
-
-    const-string v1, "SYNC_FAILURE_MAX_LIMIT_REACHED"
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v2}, Lb8/e;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lb8/e;->SYNC_FAILURE_MAX_LIMIT_REACHED:Lb8/e;
-
-    const/4 v1, 0x1
-
-    new-array v1, v1, [Lb8/e;
-
-    aput-object v0, v1, v2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sput-object v1, Lb8/e;->$VALUES:[Lb8/e;
+    iput-object p1, p0, Lb8/e;->g:Lb8/i;
+
+    .line 3
+    check-cast p2, Ld8/j;
+
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    new-instance p1, Ld8/k;
+
+    invoke-direct {p1}, Ld8/k;-><init>()V
+
+    .line 5
+    iput-object p1, p0, Lb8/e;->h:Le8/j;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;I)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
+
+# virtual methods
+.method public e(Lj3/lk;)Le8/i;
+    .locals 2
 
     .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iget-object v0, p0, Lb8/e;->g:Lb8/i;
 
-    return-void
-.end method
+    invoke-interface {v0, p1}, Lb8/i;->e(Lj3/lk;)Le8/i;
 
-.method public static valueOf(Ljava/lang/String;)Lb8/e;
-    .locals 1
+    move-result-object p1
 
-    .line 1
-    const-class v0, Lb8/e;
+    .line 2
+    iget v0, p1, Le8/i;->a:I
 
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    const/16 v1, 0x19a
 
-    move-result-object p0
+    if-ne v0, v1, :cond_1
 
-    check-cast p0, Lb8/e;
+    .line 3
+    iget-object v0, p0, Lb8/e;->h:Le8/j;
 
-    return-object p0
-.end method
+    iget-object v1, p1, Le8/i;->b:Ljava/lang/String;
 
-.method public static values()[Lb8/e;
-    .locals 1
+    check-cast v0, Ld8/k;
 
-    .line 1
-    sget-object v0, Lb8/e;->$VALUES:[Lb8/e;
-
-    invoke-virtual {v0}, [Lb8/e;->clone()Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ld8/k;->u(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    check-cast v0, [Lb8/e;
+    const-string v1, "resolution question timer expired"
 
-    return-object v0
+    .line 4
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 5
+    sget-object v0, Lc8/b;->v:Lc8/b;
+
+    invoke-static {p1, v0}, Lcom/helpshift/common/exception/RootAPIException;->c(Ljava/lang/Exception;Lc8/a;)Lcom/helpshift/common/exception/RootAPIException;
+
+    move-result-object p1
+
+    throw p1
+
+    :cond_1
+    :goto_0
+    return-object p1
 .end method

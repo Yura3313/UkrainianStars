@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final transient b:Lxe/a0;
+.field public final transient h:Lxe/a0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lxe/a0<",
@@ -30,7 +30,7 @@
     const-string v0, "HTTP "
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -73,7 +73,7 @@
     move-result v0
 
     .line 8
-    iput v0, p0, Lretrofit2/HttpException;->a:I
+    iput v0, p0, Lretrofit2/HttpException;->g:I
 
     .line 9
     iget-object v0, p1, Lxe/a0;->a:Lokhttp3/Response;
@@ -81,7 +81,7 @@
     invoke-virtual {v0}, Lokhttp3/Response;->message()Ljava/lang/String;
 
     .line 10
-    iput-object p1, p0, Lretrofit2/HttpException;->b:Lxe/a0;
+    iput-object p1, p0, Lretrofit2/HttpException;->h:Lxe/a0;
 
     return-void
 .end method

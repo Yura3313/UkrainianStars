@@ -1,44 +1,63 @@
-.class public final synthetic Lie/d;
-.super Ljava/lang/Object;
-
-
-# static fields
-.field public static final synthetic a:[I
+.class public Lie/d;
+.super Lcom/android/billingclient/api/t;
+.source "Utils.kt"
 
 
 # direct methods
-.method public static synthetic constructor <clinit>()V
+.method public static final f(Ljava/io/File;)Z
     .locals 3
 
-    invoke-static {}, Lie/e;->values()[Lie/e;
+    const/4 v0, 0x2
 
-    move-result-object v0
+    .line 1
+    new-instance v1, Lie/c;
 
-    array-length v0, v0
+    invoke-direct {v1, p0, v0}, Lie/c;-><init>(Ljava/io/File;I)V
 
-    new-array v0, v0, [I
+    .line 2
+    invoke-interface {v1}, Lqe/d;->iterator()Ljava/util/Iterator;
 
-    sput-object v0, Lie/d;->a:[I
+    move-result-object p0
 
-    sget-object v1, Lie/e;->TOP_DOWN:Lie/e;
+    :goto_0
+    const/4 v0, 0x1
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    aput v2, v0, v1
-
-    sget-object v1, Lie/e;->BOTTOM_UP:Lie/e;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    :goto_1
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
-    const/4 v2, 0x2
+    if-eqz v1, :cond_2
 
-    aput v2, v0, v1
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    return-void
+    move-result-object v1
+
+    check-cast v1, Ljava/io/File;
+
+    .line 3
+    invoke-virtual {v1}, Ljava/io/File;->delete()Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    invoke-virtual {v1}, Ljava/io/File;->exists()Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    :cond_0
+    if-eqz v0, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_1
+
+    :cond_2
+    return v0
 .end method

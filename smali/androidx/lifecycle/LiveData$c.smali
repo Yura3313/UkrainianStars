@@ -15,10 +15,10 @@
 
 
 # instance fields
-.field public final a:Landroidx/lifecycle/o;
+.field public final a:Landroidx/lifecycle/p;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/lifecycle/o<",
+            "Landroidx/lifecycle/p<",
             "-TT;>;"
         }
     .end annotation
@@ -32,12 +32,12 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/o;)V
+.method public constructor <init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/p;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/lifecycle/o<",
+            "Landroidx/lifecycle/p<",
             "-TT;>;)V"
         }
     .end annotation
@@ -53,7 +53,7 @@
     iput p1, p0, Landroidx/lifecycle/LiveData$c;->c:I
 
     .line 3
-    iput-object p2, p0, Landroidx/lifecycle/LiveData$c;->a:Landroidx/lifecycle/o;
+    iput-object p2, p0, Landroidx/lifecycle/LiveData$c;->a:Landroidx/lifecycle/p;
 
     return-void
 .end method

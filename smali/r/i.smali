@@ -326,27 +326,27 @@
     return-object p0
 .end method
 
-.method public static c(Lq/e$b;Lq/e$b;Lq/e$b;Lq/e$b;)Z
+.method public static c(Lq/e$a;Lq/e$a;Lq/e$a;Lq/e$a;)Z
     .locals 5
 
     .line 1
-    sget-object v0, Lq/e$b;->FIXED:Lq/e$b;
+    sget-object v0, Lq/e$a;->j:Lq/e$a;
 
-    const/4 v1, 0x0
+    sget-object v1, Lq/e$a;->h:Lq/e$a;
 
-    const/4 v2, 0x1
+    sget-object v2, Lq/e$a;->g:Lq/e$a;
 
-    if-eq p2, v0, :cond_1
+    const/4 v3, 0x0
 
-    sget-object v3, Lq/e$b;->WRAP_CONTENT:Lq/e$b;
+    const/4 v4, 0x1
 
-    if-eq p2, v3, :cond_1
+    if-eq p2, v2, :cond_1
 
-    sget-object v4, Lq/e$b;->MATCH_PARENT:Lq/e$b;
+    if-eq p2, v1, :cond_1
 
-    if-ne p2, v4, :cond_0
+    if-ne p2, v0, :cond_0
 
-    if-eq p0, v3, :cond_0
+    if-eq p0, v1, :cond_0
 
     goto :goto_0
 
@@ -360,18 +360,13 @@
     const/4 p0, 0x1
 
     :goto_1
-    if-eq p3, v0, :cond_3
+    if-eq p3, v2, :cond_3
 
-    .line 2
-    sget-object p2, Lq/e$b;->WRAP_CONTENT:Lq/e$b;
-
-    if-eq p3, p2, :cond_3
-
-    sget-object v0, Lq/e$b;->MATCH_PARENT:Lq/e$b;
+    if-eq p3, v1, :cond_3
 
     if-ne p3, v0, :cond_2
 
-    if-eq p1, p2, :cond_2
+    if-eq p1, v1, :cond_2
 
     goto :goto_2
 
@@ -392,9 +387,9 @@
     goto :goto_4
 
     :cond_4
-    return v1
+    return v3
 
     :cond_5
     :goto_4
-    return v2
+    return v4
 .end method

@@ -1,24 +1,22 @@
-.class public interface abstract Lj3/fv0;
-.super Ljava/lang/Object;
+.class public final Lj3/fv0;
+.super Lj3/ev0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lj3/ev0;-><init>(Ljava/lang/String;)V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract get()Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TT;"
-        }
-    .end annotation
+.method public final e(Ljava/nio/ByteBuffer;)V
+    .locals 0
+
+    return-void
 .end method

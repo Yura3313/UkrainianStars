@@ -454,7 +454,7 @@
     check-cast p1, Lcom/google/crypto/tink/shaded/protobuf/o$c;
 
     .line 6
-    invoke-virtual {p1}, Lcom/google/crypto/tink/shaded/protobuf/o$c;->r()Lcom/google/crypto/tink/shaded/protobuf/m;
+    invoke-virtual {p1}, Lcom/google/crypto/tink/shaded/protobuf/o$c;->q()Lcom/google/crypto/tink/shaded/protobuf/m;
 
     const/4 p1, 0x0
 
@@ -518,7 +518,7 @@
 
     .line 12
     :cond_1
-    sget-object p2, Lm5/u;->c:Lm5/u;
+    sget-object p2, Lm5/t;->c:Lm5/t;
 
     .line 13
     throw p1
@@ -578,7 +578,7 @@
 
     .line 19
     :cond_5
-    sget-object p2, Lm5/u;->c:Lm5/u;
+    sget-object p2, Lm5/t;->c:Lm5/t;
 
     .line 20
     throw p1
@@ -710,24 +710,24 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/google/crypto/tink/shaded/protobuf/m$b;
+    check-cast v2, Lcom/google/crypto/tink/shaded/protobuf/m$a;
 
     .line 6
-    invoke-interface {v2}, Lcom/google/crypto/tink/shaded/protobuf/m$b;->r()Lm5/e0;
+    invoke-interface {v2}, Lcom/google/crypto/tink/shaded/protobuf/m$a;->y()Lm5/c0;
 
     move-result-object v3
 
-    sget-object v4, Lm5/e0;->MESSAGE:Lm5/e0;
+    sget-object v4, Lm5/c0;->p:Lm5/c0;
 
     if-ne v3, v4, :cond_1
 
-    invoke-interface {v2}, Lcom/google/crypto/tink/shaded/protobuf/m$b;->h()Z
+    invoke-interface {v2}, Lcom/google/crypto/tink/shaded/protobuf/m$a;->k()Z
 
     move-result v3
 
     if-nez v3, :cond_1
 
-    invoke-interface {v2}, Lcom/google/crypto/tink/shaded/protobuf/m$b;->isPacked()Z
+    invoke-interface {v2}, Lcom/google/crypto/tink/shaded/protobuf/m$a;->B()Z
 
     move-result v3
 
@@ -739,14 +739,14 @@
     if-eqz v3, :cond_0
 
     .line 8
-    invoke-interface {v2}, Lcom/google/crypto/tink/shaded/protobuf/m$b;->getNumber()I
+    invoke-interface {v2}, Lcom/google/crypto/tink/shaded/protobuf/m$a;->b()I
 
     move-result v2
 
     check-cast v1, Lcom/google/crypto/tink/shaded/protobuf/r$b;
 
     .line 9
-    iget-object v1, v1, Lcom/google/crypto/tink/shaded/protobuf/r$b;->a:Ljava/util/Map$Entry;
+    iget-object v1, v1, Lcom/google/crypto/tink/shaded/protobuf/r$b;->g:Ljava/util/Map$Entry;
 
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -770,7 +770,7 @@
 
     .line 12
     :cond_0
-    invoke-interface {v2}, Lcom/google/crypto/tink/shaded/protobuf/m$b;->getNumber()I
+    invoke-interface {v2}, Lcom/google/crypto/tink/shaded/protobuf/m$a;->b()I
 
     move-result v2
 
@@ -916,7 +916,7 @@
             "UB:",
             "Ljava/lang/Object;",
             "ET::",
-            "Lcom/google/crypto/tink/shaded/protobuf/m$b<",
+            "Lcom/google/crypto/tink/shaded/protobuf/m$a<",
             "TET;>;>(",
             "Lcom/google/crypto/tink/shaded/protobuf/g0;",
             "Lcom/google/crypto/tink/shaded/protobuf/j;",

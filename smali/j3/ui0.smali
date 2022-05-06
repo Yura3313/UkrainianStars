@@ -1,39 +1,24 @@
-.class public final synthetic Lj3/ui0;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-gass@@19.3.0"
-
-# interfaces
-.implements Ljava/util/concurrent/Callable;
+.class public final Lj3/ui0;
+.super Lj3/ki0;
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# instance fields
-.field public final a:Landroid/content/Context;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lj3/ki0<",
+        "Lj3/vi0;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
+.method public constructor <init>(Lj3/km0;Ljava/util/concurrent/ScheduledExecutorService;Lj3/wi0;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lj3/ui0;->a:Landroid/content/Context;
+    .line 1
+    invoke-direct {p0, p1, p2, p3}, Lj3/ki0;-><init>(Lj3/km0;Ljava/util/concurrent/ScheduledExecutorService;Lj3/ti0;)V
 
     return-void
-.end method
-
-
-# virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 3
-
-    iget-object v0, p0, Lj3/ui0;->a:Landroid/content/Context;
-
-    .line 1
-    new-instance v1, Lj3/y31;
-
-    const-string v2, "GLAS"
-
-    invoke-direct {v1, v0, v2}, Lj3/y31;-><init>(Landroid/content/Context;Ljava/lang/String;)V
-
-    return-object v1
 .end method

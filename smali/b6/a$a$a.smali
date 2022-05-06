@@ -22,7 +22,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lb6/a$a;
+.field public final synthetic g:Lb6/a$a;
 
 
 # direct methods
@@ -30,7 +30,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lb6/a$a$a;->a:Lb6/a$a;
+    iput-object p1, p0, Lb6/a$a$a;->g:Lb6/a$a;
 
     invoke-direct {p0, p2, p3, p4}, Ljava/util/LinkedHashMap;-><init>(IFZ)V
 
@@ -54,7 +54,7 @@
 
     move-result p1
 
-    iget-object v0, p0, Lb6/a$a$a;->a:Lb6/a$a;
+    iget-object v0, p0, Lb6/a$a$a;->g:Lb6/a$a;
 
     .line 2
     iget v0, v0, Lb6/a$a;->b:I

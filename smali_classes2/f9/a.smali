@@ -6,16 +6,15 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lf9/a$a;,
-        Lf9/a$b;
+        Lf9/a$a;
     }
 .end annotation
 
 
 # instance fields
-.field public a:Lf9/b;
+.field public g:Lf9/b;
 
-.field public b:Lf9/a$a;
+.field public h:Lf9/a$a;
 
 
 # direct methods
@@ -23,11 +22,11 @@
     .locals 3
 
     .line 1
-    invoke-interface {p2}, Lf9/b;->d()Ljava/lang/String;
+    invoke-interface {p2}, Lf9/b;->f()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-interface {p2}, Lf9/b;->h()I
+    invoke-interface {p2}, Lf9/b;->i()I
 
     move-result v1
 
@@ -36,7 +35,7 @@
     invoke-direct {p0, p1, v0, v2, v1}, Landroid/database/sqlite/SQLiteOpenHelper;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
 
     .line 2
-    iput-object p2, p0, Lf9/a;->a:Lf9/b;
+    iput-object p2, p0, Lf9/a;->g:Lf9/b;
 
     return-void
 .end method
@@ -47,9 +46,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lf9/a;->a:Lf9/b;
+    iget-object v0, p0, Lf9/a;->g:Lf9/b;
 
-    invoke-interface {v0}, Lf9/b;->b()Ljava/util/List;
+    invoke-interface {v0}, Lf9/b;->c()Ljava/util/List;
 
     move-result-object v0
 
@@ -83,9 +82,9 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lf9/a;->a:Lf9/b;
+    iget-object v0, p0, Lf9/a;->g:Lf9/b;
 
-    invoke-interface {v0}, Lf9/b;->f()Ljava/util/List;
+    invoke-interface {v0}, Lf9/b;->g()Ljava/util/List;
 
     move-result-object v0
 
@@ -178,15 +177,15 @@
     move-exception p1
 
     .line 8
-    iget-object v2, p0, Lf9/a;->a:Lf9/b;
+    iget-object v2, p0, Lf9/a;->g:Lf9/b;
 
     invoke-interface {v2}, Lf9/b;->getTag()Ljava/lang/String;
 
     move-result-object v2
 
-    new-array v1, v1, [Lz9/a;
+    new-array v1, v1, [Ly9/a;
 
-    invoke-static {v2, v0, p1, v1}, Lce/z;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v0, p1, v1}, Lie/a;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     goto :goto_3
 
@@ -200,7 +199,7 @@
 
     .line 9
     :try_start_2
-    iget-object v3, p0, Lf9/a;->a:Lf9/b;
+    iget-object v3, p0, Lf9/a;->g:Lf9/b;
 
     invoke-interface {v3}, Lf9/b;->getTag()Ljava/lang/String;
 
@@ -214,10 +213,10 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v5, p0, Lf9/a;->a:Lf9/b;
+    iget-object v5, p0, Lf9/a;->g:Lf9/b;
 
     .line 10
-    invoke-interface {v5}, Lf9/b;->h()I
+    invoke-interface {v5}, Lf9/b;->i()I
 
     move-result v5
 
@@ -227,10 +226,10 @@
 
     move-result-object v4
 
-    new-array v5, v1, [Lz9/a;
+    new-array v5, v1, [Ly9/a;
 
     .line 11
-    invoke-static {v3, v4, v2, v5}, Lce/z;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v4, v2, v5}, Lie/a;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -253,15 +252,15 @@
     move-exception p1
 
     .line 14
-    iget-object v2, p0, Lf9/a;->a:Lf9/b;
+    iget-object v2, p0, Lf9/a;->g:Lf9/b;
 
     invoke-interface {v2}, Lf9/b;->getTag()Ljava/lang/String;
 
     move-result-object v2
 
-    new-array v3, v1, [Lz9/a;
+    new-array v3, v1, [Ly9/a;
 
-    invoke-static {v2, v0, p1, v3}, Lce/z;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v0, p1, v3}, Lie/a;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     :cond_0
     :goto_0
@@ -287,15 +286,15 @@
     move-exception p1
 
     .line 17
-    iget-object v3, p0, Lf9/a;->a:Lf9/b;
+    iget-object v3, p0, Lf9/a;->g:Lf9/b;
 
     invoke-interface {v3}, Lf9/b;->getTag()Ljava/lang/String;
 
     move-result-object v3
 
-    new-array v1, v1, [Lz9/a;
+    new-array v1, v1, [Ly9/a;
 
-    invoke-static {v3, v0, p1, v1}, Lce/z;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v0, p1, v1}, Lie/a;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     .line 18
     :cond_1
@@ -329,7 +328,7 @@
     move-exception p1
 
     .line 3
-    iget-object v0, p0, Lf9/a;->a:Lf9/b;
+    iget-object v0, p0, Lf9/a;->g:Lf9/b;
 
     invoke-interface {v0}, Lf9/b;->getTag()Ljava/lang/String;
 
@@ -337,14 +336,14 @@
 
     const-string v1, "Exception while recreating tables on DB upgrade/downgrade: version: "
 
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    iget-object v2, p0, Lf9/a;->a:Lf9/b;
+    iget-object v2, p0, Lf9/a;->g:Lf9/b;
 
     .line 4
-    invoke-interface {v2}, Lf9/b;->h()I
+    invoke-interface {v2}, Lf9/b;->i()I
 
     move-result v2
 
@@ -356,10 +355,10 @@
 
     const/4 v2, 0x0
 
-    new-array v2, v2, [Lz9/a;
+    new-array v2, v2, [Ly9/a;
 
     .line 5
-    invoke-static {v0, v1, p1, v2}, Lce/z;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v1, p1, v2}, Lie/a;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     .line 6
     throw p1
@@ -403,15 +402,15 @@
     move-exception p1
 
     .line 6
-    iget-object v2, p0, Lf9/a;->a:Lf9/b;
+    iget-object v2, p0, Lf9/a;->g:Lf9/b;
 
     invoke-interface {v2}, Lf9/b;->getTag()Ljava/lang/String;
 
     move-result-object v2
 
-    new-array v1, v1, [Lz9/a;
+    new-array v1, v1, [Ly9/a;
 
-    invoke-static {v2, v0, p1, v1}, Lce/z;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v0, p1, v1}, Lie/a;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     :cond_0
     :goto_0
@@ -439,15 +438,15 @@
     move-exception p1
 
     .line 9
-    iget-object v3, p0, Lf9/a;->a:Lf9/b;
+    iget-object v3, p0, Lf9/a;->g:Lf9/b;
 
     invoke-interface {v3}, Lf9/b;->getTag()Ljava/lang/String;
 
     move-result-object v3
 
-    new-array v1, v1, [Lz9/a;
+    new-array v1, v1, [Ly9/a;
 
-    invoke-static {v3, v0, p1, v1}, Lce/z;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v0, p1, v1}, Lie/a;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     .line 10
     :cond_1
@@ -462,19 +461,17 @@
     invoke-virtual {p0, p1}, Lf9/a;->d(Landroid/database/sqlite/SQLiteDatabase;)Z
 
     .line 2
-    iget-object p1, p0, Lf9/a;->b:Lf9/a$a;
+    iget-object p1, p0, Lf9/a;->h:Lf9/a$a;
 
     if-eqz p1, :cond_0
 
     .line 3
-    sget-object p1, Lf9/a$b;->DOWNGRADE:Lf9/a$b;
+    iget-object p1, p0, Lf9/a;->g:Lf9/b;
 
-    iget-object p1, p0, Lf9/a;->a:Lf9/b;
-
-    invoke-interface {p1}, Lf9/b;->d()Ljava/lang/String;
+    invoke-interface {p1}, Lf9/b;->f()Ljava/lang/String;
 
     .line 4
-    sget-object p1, Lcom/helpshift/util/r;->c:Lc7/a;
+    sget-object p1, Lcom/helpshift/util/q;->c:Lc7/a;
 
     .line 5
     check-cast p1, Lc7/h;
@@ -489,14 +486,14 @@
     .locals 4
 
     .line 1
-    iget-object p3, p0, Lf9/a;->a:Lf9/b;
+    iget-object p3, p0, Lf9/a;->g:Lf9/b;
 
-    invoke-interface {p3, p2}, Lf9/b;->g(I)Ljava/util/List;
+    invoke-interface {p3, p2}, Lf9/b;->h(I)Ljava/util/List;
 
     move-result-object p3
 
     .line 2
-    invoke-static {p3}, Lid/g;->a(Ljava/util/List;)Z
+    invoke-static {p3}, Lk2/h;->a(Ljava/util/List;)Z
 
     move-result v0
 
@@ -539,7 +536,7 @@
     move-exception p3
 
     .line 5
-    iget-object v1, p0, Lf9/a;->a:Lf9/b;
+    iget-object v1, p0, Lf9/a;->g:Lf9/b;
 
     invoke-interface {v1}, Lf9/b;->getTag()Ljava/lang/String;
 
@@ -547,14 +544,14 @@
 
     const-string v2, "Exception while migrating "
 
-    invoke-static {v2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    iget-object v3, p0, Lf9/a;->a:Lf9/b;
+    iget-object v3, p0, Lf9/a;->g:Lf9/b;
 
     .line 6
-    invoke-interface {v3}, Lf9/b;->d()Ljava/lang/String;
+    invoke-interface {v3}, Lf9/b;->f()Ljava/lang/String;
 
     move-result-object v3
 
@@ -570,10 +567,10 @@
 
     invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p2, p0, Lf9/a;->a:Lf9/b;
+    iget-object p2, p0, Lf9/a;->g:Lf9/b;
 
     .line 7
-    invoke-interface {p2}, Lf9/b;->h()I
+    invoke-interface {p2}, Lf9/b;->i()I
 
     move-result p2
 
@@ -583,10 +580,10 @@
 
     move-result-object p2
 
-    new-array v2, v0, [Lz9/a;
+    new-array v2, v0, [Ly9/a;
 
     .line 8
-    invoke-static {v1, p2, p3, v2}, Lce/z;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, p2, p3, v2}, Lie/a;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Ly9/a;)V
 
     :goto_1
     if-nez v0, :cond_1
@@ -596,46 +593,29 @@
 
     .line 10
     :cond_1
-    iget-object p1, p0, Lf9/a;->b:Lf9/a$a;
+    iget-object p1, p0, Lf9/a;->h:Lf9/a$a;
 
     if-eqz p1, :cond_3
 
     if-eqz v0, :cond_2
 
     .line 11
-    sget-object p1, Lf9/a$b;->UPGRADE:Lf9/a$b;
+    iget-object p1, p0, Lf9/a;->g:Lf9/b;
 
-    iget-object p2, p0, Lf9/a;->a:Lf9/b;
-
-    invoke-interface {p2}, Lf9/b;->d()Ljava/lang/String;
-
-    .line 12
-    sget-object p2, Lf9/a$b;->DOWNGRADE:Lf9/a$b;
-
-    if-ne p1, p2, :cond_3
-
-    .line 13
-    sget-object p1, Lcom/helpshift/util/r;->c:Lc7/a;
-
-    .line 14
-    check-cast p1, Lc7/h;
-
-    invoke-virtual {p1}, Lc7/h;->j()V
+    invoke-interface {p1}, Lf9/b;->f()Ljava/lang/String;
 
     goto :goto_2
 
-    .line 15
+    .line 12
     :cond_2
-    sget-object p1, Lf9/a$b;->UPGRADE:Lf9/a$b;
+    iget-object p1, p0, Lf9/a;->g:Lf9/b;
 
-    iget-object p1, p0, Lf9/a;->a:Lf9/b;
+    invoke-interface {p1}, Lf9/b;->f()Ljava/lang/String;
 
-    invoke-interface {p1}, Lf9/b;->d()Ljava/lang/String;
+    .line 13
+    sget-object p1, Lcom/helpshift/util/q;->c:Lc7/a;
 
-    .line 16
-    sget-object p1, Lcom/helpshift/util/r;->c:Lc7/a;
-
-    .line 17
+    .line 14
     check-cast p1, Lc7/h;
 
     invoke-virtual {p1}, Lc7/h;->j()V

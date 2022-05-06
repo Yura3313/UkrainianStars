@@ -91,7 +91,7 @@
     iget-object v0, v0, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
 
     .line 9
-    invoke-static {p0}, Lj3/uo0;->d(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lj3/ym0;->b(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object p0
 

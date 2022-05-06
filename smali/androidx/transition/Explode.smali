@@ -4,13 +4,13 @@
 
 
 # static fields
-.field public static final G:Landroid/animation/TimeInterpolator;
-
 .field public static final H:Landroid/animation/TimeInterpolator;
+
+.field public static final I:Landroid/animation/TimeInterpolator;
 
 
 # instance fields
-.field public F:[I
+.field public G:[I
 
 
 # direct methods
@@ -22,14 +22,14 @@
 
     invoke-direct {v0}, Landroid/view/animation/DecelerateInterpolator;-><init>()V
 
-    sput-object v0, Landroidx/transition/Explode;->G:Landroid/animation/TimeInterpolator;
+    sput-object v0, Landroidx/transition/Explode;->H:Landroid/animation/TimeInterpolator;
 
     .line 2
     new-instance v0, Landroid/view/animation/AccelerateInterpolator;
 
     invoke-direct {v0}, Landroid/view/animation/AccelerateInterpolator;-><init>()V
 
-    sput-object v0, Landroidx/transition/Explode;->H:Landroid/animation/TimeInterpolator;
+    sput-object v0, Landroidx/transition/Explode;->I:Landroid/animation/TimeInterpolator;
 
     return-void
 .end method
@@ -45,7 +45,7 @@
     new-array v0, v0, [I
 
     .line 2
-    iput-object v0, p0, Landroidx/transition/Explode;->F:[I
+    iput-object v0, p0, Landroidx/transition/Explode;->G:[I
 
     .line 3
     new-instance v0, Lv0/b;
@@ -53,7 +53,7 @@
     invoke-direct {v0}, Lv0/b;-><init>()V
 
     .line 4
-    iput-object v0, p0, Landroidx/transition/Transition;->x:Landroidx/fragment/app/t;
+    iput-object v0, p0, Landroidx/transition/Transition;->y:Landroidx/fragment/app/t;
 
     return-void
 .end method
@@ -69,7 +69,7 @@
     new-array p1, p1, [I
 
     .line 6
-    iput-object p1, p0, Landroidx/transition/Explode;->F:[I
+    iput-object p1, p0, Landroidx/transition/Explode;->G:[I
 
     .line 7
     new-instance p1, Lv0/b;
@@ -77,24 +77,24 @@
     invoke-direct {p1}, Lv0/b;-><init>()V
 
     .line 8
-    iput-object p1, p0, Landroidx/transition/Transition;->x:Landroidx/fragment/app/t;
+    iput-object p1, p0, Landroidx/transition/Transition;->y:Landroidx/fragment/app/t;
 
     return-void
 .end method
 
-.method private I(Lv0/s;)V
+.method private J(Lv0/s;)V
     .locals 5
 
     .line 1
     iget-object v0, p1, Lv0/s;->b:Landroid/view/View;
 
     .line 2
-    iget-object v1, p0, Landroidx/transition/Explode;->F:[I
+    iget-object v1, p0, Landroidx/transition/Explode;->G:[I
 
     invoke-virtual {v0, v1}, Landroid/view/View;->getLocationOnScreen([I)V
 
     .line 3
-    iget-object v1, p0, Landroidx/transition/Explode;->F:[I
+    iget-object v1, p0, Landroidx/transition/Explode;->G:[I
 
     const/4 v2, 0x0
 
@@ -160,12 +160,12 @@
     move-result v7
 
     .line 4
-    iget-object v0, p0, Landroidx/transition/Explode;->F:[I
+    iget-object v0, p0, Landroidx/transition/Explode;->G:[I
 
-    invoke-virtual {p0, p1, p3, v0}, Landroidx/transition/Explode;->O(Landroid/view/View;Landroid/graphics/Rect;[I)V
+    invoke-virtual {p0, p1, p3, v0}, Landroidx/transition/Explode;->P(Landroid/view/View;Landroid/graphics/Rect;[I)V
 
     .line 5
-    iget-object p1, p0, Landroidx/transition/Explode;->F:[I
+    iget-object p1, p0, Landroidx/transition/Explode;->G:[I
 
     const/4 v0, 0x0
 
@@ -189,7 +189,7 @@
 
     iget v3, p3, Landroid/graphics/Rect;->top:I
 
-    sget-object v8, Landroidx/transition/Explode;->G:Landroid/animation/TimeInterpolator;
+    sget-object v8, Landroidx/transition/Explode;->H:Landroid/animation/TimeInterpolator;
 
     move-object v0, p2
 
@@ -204,7 +204,7 @@
     return-object p1
 .end method
 
-.method public M(Landroid/view/ViewGroup;Landroid/view/View;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+.method public N(Landroid/view/ViewGroup;Landroid/view/View;Lv0/s;Lv0/s;)Landroid/animation/Animator;
     .locals 10
 
     .line 1
@@ -289,12 +289,12 @@
 
     .line 10
     :goto_0
-    iget-object v0, p0, Landroidx/transition/Explode;->F:[I
+    iget-object v0, p0, Landroidx/transition/Explode;->G:[I
 
-    invoke-virtual {p0, p1, p4, v0}, Landroidx/transition/Explode;->O(Landroid/view/View;Landroid/graphics/Rect;[I)V
+    invoke-virtual {p0, p1, p4, v0}, Landroidx/transition/Explode;->P(Landroid/view/View;Landroid/graphics/Rect;[I)V
 
     .line 11
-    iget-object p1, p0, Landroidx/transition/Explode;->F:[I
+    iget-object p1, p0, Landroidx/transition/Explode;->G:[I
 
     aget p4, p1, v6
 
@@ -310,7 +310,7 @@
     add-float v7, v8, p1
 
     .line 13
-    sget-object v8, Landroidx/transition/Explode;->H:Landroid/animation/TimeInterpolator;
+    sget-object v8, Landroidx/transition/Explode;->I:Landroid/animation/TimeInterpolator;
 
     move-object v0, p2
 
@@ -325,16 +325,16 @@
     return-object p1
 .end method
 
-.method public final O(Landroid/view/View;Landroid/graphics/Rect;[I)V
+.method public final P(Landroid/view/View;Landroid/graphics/Rect;[I)V
     .locals 12
 
     .line 1
-    iget-object v0, p0, Landroidx/transition/Explode;->F:[I
+    iget-object v0, p0, Landroidx/transition/Explode;->G:[I
 
     invoke-virtual {p1, v0}, Landroid/view/View;->getLocationOnScreen([I)V
 
     .line 2
-    iget-object v0, p0, Landroidx/transition/Explode;->F:[I
+    iget-object v0, p0, Landroidx/transition/Explode;->G:[I
 
     const/4 v1, 0x0
 
@@ -346,7 +346,7 @@
     aget v0, v0, v3
 
     .line 4
-    invoke-virtual {p0}, Landroidx/transition/Transition;->n()Landroid/graphics/Rect;
+    invoke-virtual {p0}, Landroidx/transition/Transition;->o()Landroid/graphics/Rect;
 
     move-result-object v4
 
@@ -556,10 +556,10 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/Visibility;->I(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/Visibility;->J(Lv0/s;)V
 
     .line 2
-    invoke-direct {p0, p1}, Landroidx/transition/Explode;->I(Lv0/s;)V
+    invoke-direct {p0, p1}, Landroidx/transition/Explode;->J(Lv0/s;)V
 
     return-void
 .end method
@@ -568,10 +568,10 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/Visibility;->I(Lv0/s;)V
+    invoke-virtual {p0, p1}, Landroidx/transition/Visibility;->J(Lv0/s;)V
 
     .line 2
-    invoke-direct {p0, p1}, Landroidx/transition/Explode;->I(Lv0/s;)V
+    invoke-direct {p0, p1}, Landroidx/transition/Explode;->J(Lv0/s;)V
 
     return-void
 .end method

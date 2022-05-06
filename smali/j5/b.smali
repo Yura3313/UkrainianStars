@@ -48,7 +48,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Ll5/u0;->u()I
+    invoke-virtual {p0}, Ll5/u0;->t()I
 
     move-result v0
 
@@ -57,17 +57,13 @@
     if-lt v0, v1, :cond_6
 
     .line 2
-    sget-object v0, Lj5/b$c;->a:[I
+    invoke-virtual {p0}, Ll5/u0;->s()Ll5/o0;
 
-    invoke-virtual {p0}, Ll5/u0;->t()Ll5/o0;
+    move-result-object v0
 
-    move-result-object v1
+    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    aget v0, v0, v1
+    move-result v0
 
     const/4 v1, 0x1
 
@@ -75,16 +71,16 @@
 
     if-eq v0, v1, :cond_4
 
-    const/4 v1, 0x2
+    const/4 v1, 0x3
 
     if-eq v0, v1, :cond_2
 
-    const/4 v1, 0x3
+    const/4 v1, 0x4
 
     if-ne v0, v1, :cond_1
 
     .line 3
-    invoke-virtual {p0}, Ll5/u0;->u()I
+    invoke-virtual {p0}, Ll5/u0;->t()I
 
     move-result p0
 
@@ -114,7 +110,7 @@
 
     .line 6
     :cond_2
-    invoke-virtual {p0}, Ll5/u0;->u()I
+    invoke-virtual {p0}, Ll5/u0;->t()I
 
     move-result p0
 
@@ -134,7 +130,7 @@
 
     .line 8
     :cond_4
-    invoke-virtual {p0}, Ll5/u0;->u()I
+    invoke-virtual {p0}, Ll5/u0;->t()I
 
     move-result p0
 
@@ -200,7 +196,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Ll5/v0$c;->SYMMETRIC:Ll5/v0$c;
+    sget-object v0, Ll5/v0$c;->i:Ll5/v0$c;
 
     return-object v0
 .end method
@@ -218,7 +214,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Ll5/s0;->A(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/s0;
+    invoke-static {p1, v0}, Ll5/s0;->z(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/s0;
 
     move-result-object p1
 
@@ -250,7 +246,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, Ll5/s0;->y()I
+    invoke-virtual {p1}, Ll5/s0;->x()I
 
     move-result v0
 
@@ -259,7 +255,7 @@
     invoke-static {v0, v1}, Lp5/m0;->e(II)V
 
     .line 2
-    invoke-virtual {p1}, Ll5/s0;->w()Lm5/c;
+    invoke-virtual {p1}, Ll5/s0;->v()Lm5/c;
 
     move-result-object v0
 
@@ -272,7 +268,7 @@
     if-lt v0, v1, :cond_0
 
     .line 3
-    invoke-virtual {p1}, Ll5/s0;->x()Ll5/u0;
+    invoke-virtual {p1}, Ll5/s0;->w()Ll5/u0;
 
     move-result-object p1
 

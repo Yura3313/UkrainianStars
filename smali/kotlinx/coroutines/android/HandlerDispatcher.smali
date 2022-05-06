@@ -1,9 +1,9 @@
 .class public abstract Lkotlinx/coroutines/android/HandlerDispatcher;
-.super Lse/j1;
+.super Lse/i1;
 .source "HandlerDispatcher.kt"
 
 # interfaces
-.implements Lse/j0;
+.implements Lse/h0;
 
 
 # direct methods
@@ -11,7 +11,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lse/j1;-><init>()V
+    invoke-direct {p0}, Lse/i1;-><init>()V
 
     return-void
 .end method
@@ -34,7 +34,7 @@
             "(J",
             "Lde/d<",
             "-",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -47,7 +47,7 @@
     if-gtz v2, :cond_0
 
     .line 1
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     goto :goto_0
 
@@ -55,7 +55,7 @@
     :cond_0
     new-instance v0, Lse/g;
 
-    invoke-static {p3}, Le0/f;->j(Lde/d;)Lde/d;
+    invoke-static {p3}, Lee/d;->e(Lde/d;)Lde/d;
 
     move-result-object p3
 
@@ -64,15 +64,12 @@
     invoke-direct {v0, p3, v1}, Lse/g;-><init>(Lde/d;I)V
 
     .line 3
-    invoke-interface {p0, p1, p2, v0}, Lse/j0;->scheduleResumeAfterDelay(JLse/f;)V
+    invoke-interface {p0, p1, p2, v0}, Lse/h0;->scheduleResumeAfterDelay(JLse/f;)V
 
     .line 4
     invoke-virtual {v0}, Lse/g;->o()Ljava/lang/Object;
 
     move-result-object p1
-
-    .line 5
-    sget-object p2, Lee/a;->COROUTINE_SUSPENDED:Lee/a;
 
     :goto_0
     return-object p1
@@ -81,19 +78,19 @@
 .method public abstract getImmediate()Lkotlinx/coroutines/android/HandlerDispatcher;
 .end method
 
-.method public invokeOnTimeout(JLjava/lang/Runnable;)Lse/o0;
+.method public invokeOnTimeout(JLjava/lang/Runnable;)Lse/m0;
     .locals 1
 
     if-eqz p3, :cond_0
 
     .line 1
-    sget-object v0, Lse/g0;->a:Lse/j0;
+    sget-object v0, Lse/e0;->a:Lse/h0;
 
     .line 2
-    check-cast v0, Lse/f0;
+    check-cast v0, Lse/d0;
 
     .line 3
-    invoke-virtual {v0, p1, p2, p3}, Lse/s0;->D(JLjava/lang/Runnable;)Lse/o0;
+    invoke-virtual {v0, p1, p2, p3}, Lse/q0;->E(JLjava/lang/Runnable;)Lse/m0;
 
     move-result-object p1
 
@@ -103,7 +100,7 @@
     const-string p1, "block"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -116,7 +113,7 @@
             "(J",
             "Lse/f<",
             "-",
-            "Lbe/n;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation

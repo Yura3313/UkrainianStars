@@ -22,7 +22,7 @@
         "Lke/p<",
         "Lcom/kakao/sdk/auth/model/OAuthToken;",
         "Ljava/lang/Throwable;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
@@ -57,7 +57,7 @@
 
     invoke-virtual {p0, p1, p2}, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1$1$1;->invoke(Lcom/kakao/sdk/auth/model/OAuthToken;Ljava/lang/Throwable;)V
 
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method
@@ -72,12 +72,12 @@
 
     iget-object v1, v0, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;->$token:Lle/s;
 
-    iput-object p1, v1, Lle/s;->a:Ljava/lang/Object;
+    iput-object p1, v1, Lle/s;->g:Ljava/lang/Object;
 
     .line 3
     iget-object p1, v0, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;->$error:Lle/s;
 
-    iput-object p2, p1, Lle/s;->a:Ljava/lang/Object;
+    iput-object p2, p1, Lle/s;->g:Ljava/lang/Object;
 
     .line 4
     iget-object p1, v0, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;->$latch:Ljava/util/concurrent/CountDownLatch;

@@ -1,169 +1,96 @@
-.class public final Lcom/google/android/gms/internal/ads/x2;
-.super Lcom/google/android/gms/internal/ads/h2;
+.class public final synthetic Lcom/google/android/gms/internal/ads/x2;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lcom/google/android/gms/internal/ads/h2<",
-        "Lcom/google/android/gms/internal/ads/i4;",
-        ">;"
-    }
-.end annotation
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 4
+.method public static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    const-class v0, Lcom/google/android/gms/internal/ads/i4;
+    invoke-static {}, Lcom/google/android/gms/internal/ads/v5$e;->a()[I
+
+    move-result-object v0
+
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    sput-object v0, Lcom/google/android/gms/internal/ads/x2;->a:[I
 
     const/4 v1, 0x1
 
-    new-array v1, v1, [Lj3/xm0;
+    const/4 v2, 0x3
 
-    new-instance v2, Lj3/jn0;
+    :try_start_0
+    aput v1, v0, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
-    const-class v3, Lj3/rm0;
+    :catch_0
+    const/4 v0, 0x2
 
-    invoke-direct {v2, v3}, Lj3/jn0;-><init>(Ljava/lang/Class;)V
+    const/4 v3, 0x4
+
+    :try_start_1
+    sget-object v4, Lcom/google/android/gms/internal/ads/x2;->a:[I
+
+    aput v0, v4, v3
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
+    :try_start_2
+    sget-object v4, Lcom/google/android/gms/internal/ads/x2;->a:[I
+
+    aput v2, v4, v0
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
+    const/4 v0, 0x5
+
+    :try_start_3
+    sget-object v2, Lcom/google/android/gms/internal/ads/x2;->a:[I
+
+    aput v3, v2, v0
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    :catch_3
+    const/4 v2, 0x6
+
+    :try_start_4
+    sget-object v3, Lcom/google/android/gms/internal/ads/x2;->a:[I
+
+    aput v0, v3, v2
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
+    :try_start_5
+    sget-object v0, Lcom/google/android/gms/internal/ads/x2;->a:[I
 
     const/4 v3, 0x0
 
-    aput-object v2, v1, v3
+    aput v2, v0, v3
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
 
-    invoke-direct {p0, v0, v1}, Lcom/google/android/gms/internal/ads/h2;-><init>(Ljava/lang/Class;[Lj3/xm0;)V
+    :catch_5
+    :try_start_6
+    sget-object v0, Lcom/google/android/gms/internal/ads/x2;->a:[I
 
+    const/4 v2, 0x7
+
+    aput v2, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    :catch_6
     return-void
-.end method
-
-
-# virtual methods
-.method public final a()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "type.googleapis.com/google.crypto.tink.AesEaxKey"
-
-    return-object v0
-.end method
-
-.method public final c()Lcom/google/android/gms/internal/ads/o5$a;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lcom/google/android/gms/internal/ads/o5$a;->zzhwb:Lcom/google/android/gms/internal/ads/o5$a;
-
-    return-object v0
-.end method
-
-.method public final e()Lj3/zd;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lj3/zd;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Lcom/google/android/gms/internal/ads/z2;
-
-    const-class v1, Lcom/google/android/gms/internal/ads/j4;
-
-    invoke-direct {v0, p0, v1}, Lcom/google/android/gms/internal/ads/z2;-><init>(Lcom/google/android/gms/internal/ads/x2;Ljava/lang/Class;)V
-
-    return-object v0
-.end method
-
-.method public final synthetic f(Lj3/os0;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
-
-    .line 1
-    check-cast p1, Lcom/google/android/gms/internal/ads/i4;
-
-    .line 2
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/i4;->x()I
-
-    move-result v0
-
-    invoke-static {v0}, Lj3/up0;->b(I)V
-
-    .line 3
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/i4;->B()Lj3/lq0;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lj3/lq0;->size()I
-
-    move-result v0
-
-    invoke-static {v0}, Lj3/up0;->a(I)V
-
-    .line 4
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/i4;->C()Lcom/google/android/gms/internal/ads/m4;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/m4;->x()I
-
-    move-result v0
-
-    const/16 v1, 0xc
-
-    if-eq v0, v1, :cond_1
-
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/i4;->C()Lcom/google/android/gms/internal/ads/m4;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/m4;->x()I
-
-    move-result p1
-
-    const/16 v0, 0x10
-
-    if-ne p1, v0, :cond_0
-
-    goto :goto_0
-
-    .line 5
-    :cond_0
-    new-instance p1, Ljava/security/GeneralSecurityException;
-
-    const-string v0, "invalid IV size; acceptable values have 12 or 16 bytes"
-
-    invoke-direct {p1, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_1
-    :goto_0
-    return-void
-.end method
-
-.method public final synthetic g(Lj3/lq0;)Lj3/os0;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/android/gms/internal/ads/zzegz;
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {}, Lcom/google/android/gms/internal/ads/o6;->a()Lcom/google/android/gms/internal/ads/o6;
-
-    move-result-object v0
-
-    invoke-static {p1, v0}, Lcom/google/android/gms/internal/ads/i4;->F(Lj3/lq0;Lcom/google/android/gms/internal/ads/o6;)Lcom/google/android/gms/internal/ads/i4;
-
-    move-result-object p1
-
-    return-object p1
 .end method

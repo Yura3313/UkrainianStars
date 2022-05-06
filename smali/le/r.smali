@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public a:I
+.field public g:I
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lle/r;->a:I
+    iget v0, p0, Lle/r;->g:I
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 

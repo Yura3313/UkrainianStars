@@ -29,14 +29,14 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->E0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->F0()Landroid/os/Parcel;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
     .line 2
-    invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->P0(ILandroid/os/Parcel;)Landroid/os/Parcel;
+    invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->Q0(ILandroid/os/Parcel;)Landroid/os/Parcel;
 
     move-result-object v0
 
@@ -51,7 +51,7 @@
     return-object v1
 .end method
 
-.method public final h7()Ljava/lang/String;
+.method public final i7()Ljava/lang/String;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -60,14 +60,14 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->E0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgu;->F0()Landroid/os/Parcel;
 
     move-result-object v0
 
     const/4 v1, 0x2
 
     .line 2
-    invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->P0(ILandroid/os/Parcel;)Landroid/os/Parcel;
+    invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/internal/ads/zzgu;->Q0(ILandroid/os/Parcel;)Landroid/os/Parcel;
 
     move-result-object v0
 

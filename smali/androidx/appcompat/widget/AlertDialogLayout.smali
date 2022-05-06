@@ -17,7 +17,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 2
     invoke-virtual {p0}, Landroid/view/View;->getMinimumHeight()I
@@ -220,7 +220,7 @@
 
     .line 18
     :cond_3
-    sget-object v8, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v8, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 19
     invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I

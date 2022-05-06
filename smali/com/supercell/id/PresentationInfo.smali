@@ -15,7 +15,9 @@
         Lcom/supercell/id/PresentationInfo$Connect;,
         Lcom/supercell/id/PresentationInfo$IngameFriends;,
         Lcom/supercell/id/PresentationInfo$AddFriends;,
+        Lcom/supercell/id/PresentationInfo$FriendRequests;,
         Lcom/supercell/id/PresentationInfo$ProfileSelector;,
+        Lcom/supercell/id/PresentationInfo$Chat;,
         Lcom/supercell/id/PresentationInfo$Messages;
     }
 .end annotation

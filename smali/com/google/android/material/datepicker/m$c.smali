@@ -46,7 +46,7 @@
     iget-object v0, p0, Lcom/google/android/material/datepicker/m$c;->a:Lcom/google/android/material/datepicker/m;
 
     .line 2
-    iget-object v0, v0, Lcom/google/android/material/datepicker/m;->H0:Landroid/widget/Button;
+    iget-object v0, v0, Lcom/google/android/material/datepicker/m;->I0:Landroid/widget/Button;
 
     const/4 v1, 0x0
 
@@ -67,7 +67,7 @@
     .line 1
     iget-object p1, p0, Lcom/google/android/material/datepicker/m$c;->a:Lcom/google/android/material/datepicker/m;
 
-    sget v0, Lcom/google/android/material/datepicker/m;->I0:I
+    sget v0, Lcom/google/android/material/datepicker/m;->J0:I
 
     .line 2
     invoke-virtual {p1}, Lcom/google/android/material/datepicker/m;->g1()V
@@ -76,13 +76,13 @@
     iget-object p1, p0, Lcom/google/android/material/datepicker/m$c;->a:Lcom/google/android/material/datepicker/m;
 
     .line 4
-    iget-object v0, p1, Lcom/google/android/material/datepicker/m;->H0:Landroid/widget/Button;
+    iget-object v0, p1, Lcom/google/android/material/datepicker/m;->I0:Landroid/widget/Button;
 
     .line 5
-    iget-object p1, p1, Lcom/google/android/material/datepicker/m;->w0:Lcom/google/android/material/datepicker/DateSelector;
+    iget-object p1, p1, Lcom/google/android/material/datepicker/m;->x0:Lcom/google/android/material/datepicker/DateSelector;
 
     .line 6
-    invoke-interface {p1}, Lcom/google/android/material/datepicker/DateSelector;->D1()Z
+    invoke-interface {p1}, Lcom/google/android/material/datepicker/DateSelector;->G1()Z
 
     move-result p1
 

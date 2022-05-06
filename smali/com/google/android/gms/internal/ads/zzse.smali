@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public final f2()V
+.method public final g2()V
     .locals 1
 
     const/4 v0, 0x0

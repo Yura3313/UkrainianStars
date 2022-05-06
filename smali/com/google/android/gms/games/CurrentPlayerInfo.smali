@@ -20,5 +20,5 @@
 
 
 # virtual methods
-.method public abstract p2()I
+.method public abstract r2()I
 .end method

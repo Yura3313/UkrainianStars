@@ -120,7 +120,7 @@
 
     .line 8
     :cond_0
-    iget v0, v0, Lcom/linecorp/linesdk/auth/internal/d;->i:I
+    iget v0, v0, Lcom/linecorp/linesdk/auth/internal/d;->j:I
 
     const/4 v1, 0x2
 
@@ -169,7 +169,7 @@
     iget-object p2, p0, Lcom/linecorp/linesdk/auth/internal/LineAuthenticationActivity;->b:Lcom/linecorp/linesdk/auth/internal/d;
 
     .line 3
-    iget p2, p2, Lcom/linecorp/linesdk/auth/internal/d;->i:I
+    iget p2, p2, Lcom/linecorp/linesdk/auth/internal/d;->j:I
 
     const/4 p3, 0x2
 
@@ -186,7 +186,7 @@
     iget-object p1, p2, Lcom/linecorp/linesdk/auth/internal/c;->h:Lcom/linecorp/linesdk/auth/internal/d;
 
     .line 6
-    iget p1, p1, Lcom/linecorp/linesdk/auth/internal/d;->i:I
+    iget p1, p1, Lcom/linecorp/linesdk/auth/internal/d;->j:I
 
     if-ne p1, p3, :cond_0
 
@@ -321,7 +321,7 @@
     iget-object v0, p0, Lcom/linecorp/linesdk/auth/internal/LineAuthenticationActivity;->b:Lcom/linecorp/linesdk/auth/internal/d;
 
     .line 3
-    iget v0, v0, Lcom/linecorp/linesdk/auth/internal/d;->i:I
+    iget v0, v0, Lcom/linecorp/linesdk/auth/internal/d;->j:I
 
     const/4 v1, 0x2
 
@@ -336,7 +336,7 @@
     const/4 v2, 0x3
 
     .line 6
-    iput v2, v1, Lcom/linecorp/linesdk/auth/internal/d;->i:I
+    iput v2, v1, Lcom/linecorp/linesdk/auth/internal/d;->j:I
 
     .line 7
     iget-object v1, v0, Lcom/linecorp/linesdk/auth/internal/c;->e:Lcom/linecorp/linesdk/auth/internal/a;
@@ -368,7 +368,7 @@
     iget-object v1, v1, Lcom/linecorp/linesdk/auth/internal/a;->a:Lcom/linecorp/linesdk/auth/internal/d;
 
     .line 11
-    iget-object v1, v1, Lcom/linecorp/linesdk/auth/internal/d;->h:Ljava/lang/String;
+    iget-object v1, v1, Lcom/linecorp/linesdk/auth/internal/d;->i:Ljava/lang/String;
 
     const-string v5, "state"
 
@@ -459,7 +459,7 @@
     const/4 v4, 0x4
 
     .line 23
-    iput v4, v1, Lcom/linecorp/linesdk/auth/internal/d;->i:I
+    iput v4, v1, Lcom/linecorp/linesdk/auth/internal/d;->j:I
 
     .line 24
     iget-object v0, v0, Lcom/linecorp/linesdk/auth/internal/c;->a:Lcom/linecorp/linesdk/auth/internal/LineAuthenticationActivity;
@@ -602,7 +602,7 @@
     iget-object v0, p0, Lcom/linecorp/linesdk/auth/internal/LineAuthenticationActivity;->b:Lcom/linecorp/linesdk/auth/internal/d;
 
     .line 3
-    iget v0, v0, Lcom/linecorp/linesdk/auth/internal/d;->i:I
+    iget v0, v0, Lcom/linecorp/linesdk/auth/internal/d;->j:I
 
     const/4 v1, 0x0
 
@@ -619,7 +619,7 @@
     const/4 v3, 0x2
 
     .line 6
-    iput v3, v2, Lcom/linecorp/linesdk/auth/internal/d;->i:I
+    iput v3, v2, Lcom/linecorp/linesdk/auth/internal/d;->j:I
 
     .line 7
     new-instance v2, Lcom/linecorp/linesdk/auth/internal/c$c;

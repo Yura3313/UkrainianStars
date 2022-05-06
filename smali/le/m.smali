@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/Class;
+.field public final g:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -39,7 +39,7 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lle/m;->a:Ljava/lang/Class;
+    iput-object p1, p0, Lle/m;->g:Ljava/lang/Class;
 
     return-void
 
@@ -47,14 +47,14 @@
     const-string p1, "moduleName"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_1
     const-string p1, "jClass"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -72,7 +72,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lle/m;->a:Ljava/lang/Class;
+    iget-object v0, p0, Lle/m;->g:Ljava/lang/Class;
 
     return-object v0
 .end method
@@ -86,16 +86,16 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lle/m;->a:Ljava/lang/Class;
+    iget-object v0, p0, Lle/m;->g:Ljava/lang/Class;
 
     .line 3
     check-cast p1, Lle/m;
 
     .line 4
-    iget-object p1, p1, Lle/m;->a:Ljava/lang/Class;
+    iget-object p1, p1, Lle/m;->g:Ljava/lang/Class;
 
     .line 5
-    invoke-static {v0, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -116,7 +116,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lle/m;->a:Ljava/lang/Class;
+    iget-object v0, p0, Lle/m;->g:Ljava/lang/Class;
 
     .line 2
     invoke-virtual {v0}, Ljava/lang/Class;->hashCode()I
@@ -135,7 +135,7 @@
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 2
-    iget-object v1, p0, Lle/m;->a:Ljava/lang/Class;
+    iget-object v1, p0, Lle/m;->g:Ljava/lang/Class;
 
     .line 3
     invoke-virtual {v1}, Ljava/lang/Class;->toString()Ljava/lang/String;

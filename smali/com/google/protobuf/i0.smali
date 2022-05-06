@@ -3,7 +3,7 @@
 .source "ManifestSchemaFactory.java"
 
 # interfaces
-.implements Lcom/google/protobuf/k1;
+.implements Lcom/google/protobuf/j1;
 
 
 # annotations

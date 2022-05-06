@@ -42,7 +42,7 @@
 
     const-string v1, "Looper.getMainLooper()"
 
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v1, 0x1
 
@@ -60,14 +60,14 @@
     const-string p1, "allFactories"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public bridge synthetic createDispatcher(Ljava/util/List;)Lse/j1;
+.method public bridge synthetic createDispatcher(Ljava/util/List;)Lse/i1;
     .locals 0
 
     .line 1

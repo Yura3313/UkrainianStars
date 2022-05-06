@@ -313,7 +313,7 @@
 
     int-to-byte p1, p1
 
-    invoke-static {v2, v3, v4, p1}, Lcom/google/protobuf/v1;->u([BJB)V
+    invoke-static {v2, v3, v4, p1}, Lcom/google/protobuf/u1;->u([BJB)V
 
     .line 4
     iget p1, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
@@ -351,7 +351,7 @@
 
     int-to-byte v5, v5
 
-    invoke-static {v2, v3, v4, v5}, Lcom/google/protobuf/v1;->u([BJB)V
+    invoke-static {v2, v3, v4, v5}, Lcom/google/protobuf/u1;->u([BJB)V
 
     ushr-int/lit8 p1, p1, 0x7
 
@@ -456,7 +456,7 @@
 
     int-to-byte p1, p2
 
-    invoke-static {v0, v1, v2, p1}, Lcom/google/protobuf/v1;->u([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lcom/google/protobuf/u1;->u([BJB)V
 
     .line 4
     iget p1, p0, Lcom/google/protobuf/CodedOutputStream$b;->f:I
@@ -496,7 +496,7 @@
 
     int-to-byte v10, v10
 
-    invoke-static {v0, v8, v9, v10}, Lcom/google/protobuf/v1;->u([BJB)V
+    invoke-static {v0, v8, v9, v10}, Lcom/google/protobuf/u1;->u([BJB)V
 
     ushr-long/2addr p1, v1
 

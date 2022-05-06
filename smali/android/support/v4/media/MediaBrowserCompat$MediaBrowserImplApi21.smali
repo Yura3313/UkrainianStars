@@ -502,7 +502,7 @@
     const/4 v0, 0x0
 
     .line 3
-    invoke-virtual {p1, p2, v0}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, p2, v0}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -694,7 +694,7 @@
     nop
 
     .line 6
-    invoke-static {p2}, Landroid/support/v4/media/a;->b(Ljava/lang/Object;)V
+    invoke-static {p2}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
 
     if-eqz p3, :cond_1
 
@@ -757,7 +757,7 @@
     const/4 v1, 0x0
 
     .line 2
-    invoke-virtual {v0, p1, v1}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -774,7 +774,7 @@
     .line 5
     iget-object v2, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21;->mSubscriptions:Lm/a;
 
-    invoke-virtual {v2, p1, v0}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, p1, v0}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     :cond_0
@@ -833,7 +833,7 @@
     const/4 v1, 0x0
 
     .line 2
-    invoke-virtual {v0, p1, v1}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v1}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -992,7 +992,7 @@
     :cond_8
     iget-object p2, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21;->mSubscriptions:Lm/a;
 
-    invoke-virtual {p2, p1}, Lm/h;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p2, p1}, Lm/g;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_9
     return-void

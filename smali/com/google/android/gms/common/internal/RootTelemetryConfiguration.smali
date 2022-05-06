@@ -19,15 +19,15 @@
 
 
 # instance fields
-.field public final a:I
-
-.field public final b:Z
+.field public final g:I
 
 .field public final h:Z
 
-.field public final i:I
+.field public final i:Z
 
 .field public final j:I
+
+.field public final k:I
 
 
 # direct methods
@@ -51,19 +51,19 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->a:I
+    iput p1, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->g:I
 
     .line 3
-    iput-boolean p2, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->b:Z
+    iput-boolean p2, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->h:Z
 
     .line 4
-    iput-boolean p3, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->h:Z
+    iput-boolean p3, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->i:Z
 
     .line 5
-    iput p4, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->i:I
+    iput p4, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->j:I
 
     .line 6
-    iput p5, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->j:I
+    iput p5, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->k:I
 
     return-void
 .end method
@@ -83,7 +83,7 @@
     move-result p2
 
     .line 2
-    iget v0, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->a:I
+    iget v0, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->g:I
 
     const/4 v1, 0x1
 
@@ -91,7 +91,7 @@
     invoke-static {p1, v1, v0}, Ld2/b;->g(Landroid/os/Parcel;II)V
 
     .line 4
-    iget-boolean v0, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->b:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->h:Z
 
     const/4 v1, 0x2
 
@@ -99,7 +99,7 @@
     invoke-static {p1, v1, v0}, Ld2/b;->c(Landroid/os/Parcel;IZ)V
 
     .line 6
-    iget-boolean v0, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->h:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->i:Z
 
     const/4 v1, 0x3
 
@@ -107,7 +107,7 @@
     invoke-static {p1, v1, v0}, Ld2/b;->c(Landroid/os/Parcel;IZ)V
 
     .line 8
-    iget v0, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->i:I
+    iget v0, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->j:I
 
     const/4 v1, 0x4
 
@@ -115,7 +115,7 @@
     invoke-static {p1, v1, v0}, Ld2/b;->g(Landroid/os/Parcel;II)V
 
     .line 10
-    iget v0, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->j:I
+    iget v0, p0, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;->k:I
 
     const/4 v1, 0x5
 

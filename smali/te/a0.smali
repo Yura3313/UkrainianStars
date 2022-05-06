@@ -1,29 +1,31 @@
-.class public final Lte/a0;
+.class public interface abstract Lte/a0;
 .super Ljava/lang/Object;
-.source "ThreadContext.kt"
+.source "ThreadSafeHeap.kt"
 
 
-# instance fields
-.field public a:[Ljava/lang/Object;
+# virtual methods
+.method public abstract c(I)V
+.end method
 
-.field public b:I
+.method public abstract d()Lte/z;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lte/z<",
+            "*>;"
+        }
+    .end annotation
+.end method
 
-.field public final c:Lde/f;
+.method public abstract e()I
+.end method
 
-
-# direct methods
-.method public constructor <init>(Lde/f;I)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lte/a0;->c:Lde/f;
-
-    .line 2
-    new-array p1, p2, [Ljava/lang/Object;
-
-    iput-object p1, p0, Lte/a0;->a:[Ljava/lang/Object;
-
-    return-void
+.method public abstract f(Lte/z;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lte/z<",
+            "*>;)V"
+        }
+    .end annotation
 .end method

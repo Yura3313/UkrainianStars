@@ -56,7 +56,7 @@
 
     const-string v2, "Locale.ENGLISH"
 
-    invoke-static {v0, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
 
@@ -64,36 +64,30 @@
 
     const-string v1, "(this as java.lang.String).toUpperCase(locale)"
 
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0}, Ltc/g0;->valueOf(Ljava/lang/String;)Ltc/g0;
+    invoke-static {v0}, Lqc/j0;->valueOf(Ljava/lang/String;)Lqc/j0;
 
     move-result-object v0
 
     :cond_0
     if-eqz v0, :cond_5
 
-    sget-object v1, Ltc/t;->a:[I
-
     invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
 
     move-result v0
 
-    aget v0, v1, v0
+    if-eqz v0, :cond_4
 
     const/4 v1, 0x1
 
-    if-eq v0, v1, :cond_4
+    if-eq v0, v1, :cond_3
 
     const/4 v1, 0x2
 
-    if-eq v0, v1, :cond_3
-
-    const/4 v1, 0x3
-
     if-eq v0, v1, :cond_2
 
-    const/4 v1, 0x4
+    const/4 v1, 0x3
 
     if-ne v0, v1, :cond_1
 
@@ -154,7 +148,7 @@
 
     .line 6
     :cond_4
-    sget-object v0, Lcom/supercell/id/model/IdRelationshipStatus$Strangers;->a:Lcom/supercell/id/model/IdRelationshipStatus$Strangers;
+    sget-object v0, Lcom/supercell/id/model/IdRelationshipStatus$Strangers;->g:Lcom/supercell/id/model/IdRelationshipStatus$Strangers;
 
     :goto_0
     return-object v0
@@ -173,7 +167,7 @@
     const-string p1, "parcel"
 
     .line 8
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method

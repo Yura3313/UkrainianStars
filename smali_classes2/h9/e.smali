@@ -92,13 +92,13 @@
     move-result-object v4
 
     .line 8
-    invoke-static {v3}, Landroidx/savedstate/d;->j(Ljava/lang/String;)Z
+    invoke-static {v3}, Lp5/c0;->h(Ljava/lang/String;)Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
-    invoke-static {v4}, Landroidx/savedstate/d;->j(Ljava/lang/String;)Z
+    invoke-static {v4}, Lp5/c0;->h(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -134,7 +134,7 @@
     const-string v4, "Failed to read db conversations"
 
     .line 11
-    invoke-static {v3, v4, v2}, Lce/z;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v3, v4, v2}, Lie/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

@@ -1,76 +1,53 @@
-.class public final synthetic Lcom/google/android/play/core/assetpacks/t2;
+.class public interface abstract Lcom/google/android/play/core/assetpacks/t2;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Ly4/h;
-.implements Ly4/t;
-
-
-# static fields
-.field public static final a:Ly4/h;
-
-
-# direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lcom/google/android/play/core/assetpacks/t2;
-
-    invoke-direct {v0}, Lcom/google/android/play/core/assetpacks/t2;-><init>()V
-
-    sput-object v0, Lcom/google/android/play/core/assetpacks/t2;->a:Ly4/h;
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>()V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
 
 
 # virtual methods
-.method public a(Ljava/lang/Object;Ljava/util/List;Ljava/util/List;)[Ljava/lang/Object;
-    .locals 9
-
-    const-class v2, [Ljava/lang/Object;
-
-    const-class v3, Ljava/util/List;
-
-    const-class v5, Ljava/io/File;
-
-    const-class v7, Ljava/util/List;
-
-    const-string v1, "makePathElements"
-
-    const/4 v6, 0x0
-
-    move-object v0, p1
-
-    move-object v4, p2
-
-    move-object v8, p3
-
-    invoke-static/range {v0 .. v8}, Ly4/z;->c(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, [Ljava/lang/Object;
-
-    return-object p1
+.method public abstract a()Lcom/google/android/play/core/tasks/Task;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/android/play/core/tasks/Task<",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;>;"
+        }
+    .end annotation
 .end method
 
-.method public c(Landroid/os/IBinder;)Ljava/lang/Object;
-    .locals 0
+.method public abstract b(ILjava/lang/String;)V
+.end method
 
-    invoke-static {p1}, Lcom/google/android/play/core/internal/r;->P0(Landroid/os/IBinder;)Lcom/google/android/play/core/internal/s;
+.method public abstract g0()V
+.end method
 
-    move-result-object p1
+.method public abstract v(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+.end method
 
-    return-object p1
+.method public abstract x0(I)V
+.end method
+
+.method public abstract y0(ILjava/lang/String;Ljava/lang/String;I)Lcom/google/android/play/core/tasks/Task;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "I)",
+            "Lcom/google/android/play/core/tasks/Task<",
+            "Landroid/os/ParcelFileDescriptor;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract z0(ILjava/lang/String;Ljava/lang/String;I)V
 .end method

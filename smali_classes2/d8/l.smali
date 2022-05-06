@@ -1,50 +1,57 @@
 .class public Ld8/l;
-.super Ld8/h;
-.source "UploadRequest.java"
+.super Ljava/lang/Object;
+.source "AndroidSupportDownloader.java"
+
+# interfaces
+.implements Ll7/a;
 
 
 # instance fields
-.field public final e:Ljava/util/Map;
+.field public final synthetic a:Lb8/a;
+
+
+# direct methods
+.method public constructor <init>(Ld8/o;Lb8/a;)V
+    .locals 0
+
+    .line 1
+    iput-object p2, p0, Ld8/l;->a:Lb8/a;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ljava/util/Map;)Ljava/util/Map;
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
-.end field
 
-.field public final f:Ljava/lang/String;
-
-
-# direct methods
-.method public constructor <init>(Ld8/d;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;Ljava/util/List;I)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "(",
-            "Ld8/d;",
-            "Ljava/lang/String;",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;",
-            "Ljava/lang/String;",
-            "Ljava/util/List<",
-            "Ld8/c;",
-            ">;I)V"
+            Ljava/security/GeneralSecurityException;
         }
     .end annotation
 
     .line 1
-    invoke-direct {p0, p1, p2, p5, p6}, Ld8/h;-><init>(Ld8/d;Ljava/lang/String;Ljava/util/List;I)V
+    iget-object v0, p0, Ld8/l;->a:Lb8/a;
 
-    .line 2
-    iput-object p3, p0, Ld8/l;->e:Ljava/util/Map;
+    const/4 v1, 0x2
 
-    .line 3
-    iput-object p4, p0, Ld8/l;->f:Ljava/lang/String;
+    invoke-virtual {v0, v1, p1}, Lb8/a;->a(ILjava/util/Map;)Ljava/util/Map;
 
-    return-void
+    return-object p1
 .end method

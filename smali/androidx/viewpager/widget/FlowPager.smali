@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field public r0:Z
+.field public s0:Z
 
 
 # direct methods
@@ -135,7 +135,7 @@
     const-string p1, "context"
 
     .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v1
 .end method
@@ -146,7 +146,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Landroidx/viewpager/widget/FlowPager;->r0:Z
+    iget-boolean v0, p0, Landroidx/viewpager/widget/FlowPager;->s0:Z
 
     if-eqz v0, :cond_0
 
@@ -167,7 +167,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Landroidx/viewpager/widget/FlowPager;->r0:Z
+    iget-boolean v0, p0, Landroidx/viewpager/widget/FlowPager;->s0:Z
 
     if-eqz v0, :cond_0
 
@@ -190,7 +190,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Landroidx/viewpager/widget/FlowPager;->r0:Z
+    iget-boolean v0, p0, Landroidx/viewpager/widget/FlowPager;->s0:Z
 
     return v0
 .end method
@@ -208,7 +208,7 @@
     const-string p1, "event"
 
     .line 1
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -235,12 +235,12 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Landroidx/viewpager/widget/FlowPager;->r0:Z
+    iget-boolean v0, p0, Landroidx/viewpager/widget/FlowPager;->s0:Z
 
     if-eq v0, p1, :cond_1
 
     .line 2
-    iput-boolean p1, p0, Landroidx/viewpager/widget/FlowPager;->r0:Z
+    iput-boolean p1, p0, Landroidx/viewpager/widget/FlowPager;->s0:Z
 
     if-eqz p1, :cond_0
 

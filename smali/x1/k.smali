@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lx1/h;
+.field public final synthetic g:Lx1/h;
 
 
 # direct methods
@@ -12,7 +12,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lx1/k;->a:Lx1/h;
+    iput-object p1, p0, Lx1/k;->g:Lx1/h;
 
     invoke-direct {p0}, Lcom/google/android/gms/auth/api/signin/internal/zzc;-><init>()V
 
@@ -21,7 +21,7 @@
 
 
 # virtual methods
-.method public final f3(Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;Lcom/google/android/gms/common/api/Status;)V
+.method public final g3(Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;Lcom/google/android/gms/common/api/Status;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -32,7 +32,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    iget-object v0, p0, Lx1/k;->a:Lx1/h;
+    iget-object v0, p0, Lx1/k;->g:Lx1/h;
 
     iget-object v0, v0, Lx1/h;->l:Landroid/content/Context;
 
@@ -40,7 +40,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lx1/k;->a:Lx1/h;
+    iget-object v1, p0, Lx1/k;->g:Lx1/h;
 
     iget-object v1, v1, Lx1/h;->m:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
@@ -76,11 +76,11 @@
     .line 7
     :cond_0
     :goto_0
-    iget-object v0, p0, Lx1/k;->a:Lx1/h;
+    iget-object v0, p0, Lx1/k;->g:Lx1/h;
 
-    new-instance v1, Lw1/d;
+    new-instance v1, Lw1/c;
 
-    invoke-direct {v1, p1, p2}, Lw1/d;-><init>(Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;Lcom/google/android/gms/common/api/Status;)V
+    invoke-direct {v1, p1, p2}, Lw1/c;-><init>(Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;Lcom/google/android/gms/common/api/Status;)V
 
     invoke-virtual {v0, v1}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->g(Lz1/g;)V
 

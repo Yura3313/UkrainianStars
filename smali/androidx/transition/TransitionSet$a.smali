@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/transition/TransitionSet;->z()V
+    value = Landroidx/transition/TransitionSet;->A()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/transition/Transition;
+.field public final synthetic g:Landroidx/transition/Transition;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 0
 
     .line 1
-    iput-object p2, p0, Landroidx/transition/TransitionSet$a;->a:Landroidx/transition/Transition;
+    iput-object p2, p0, Landroidx/transition/TransitionSet$a;->g:Landroidx/transition/Transition;
 
     invoke-direct {p0}, Landroidx/transition/d;-><init>()V
 
@@ -36,12 +36,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/transition/TransitionSet$a;->a:Landroidx/transition/Transition;
+    iget-object v0, p0, Landroidx/transition/TransitionSet$a;->g:Landroidx/transition/Transition;
 
-    invoke-virtual {v0}, Landroidx/transition/Transition;->z()V
+    invoke-virtual {v0}, Landroidx/transition/Transition;->A()V
 
     .line 2
-    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->w(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
+    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->x(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
 
     return-void
 .end method

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/transition/Fade;->O(Landroid/view/View;FF)Landroid/animation/Animator;
+    value = Landroidx/transition/Fade;->P(Landroid/view/View;FF)Landroid/animation/Animator;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroid/view/View;
+.field public final synthetic g:Landroid/view/View;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 0
 
     .line 1
-    iput-object p2, p0, Landroidx/transition/Fade$a;->a:Landroid/view/View;
+    iput-object p2, p0, Landroidx/transition/Fade$a;->g:Landroid/view/View;
 
     invoke-direct {p0}, Landroidx/transition/d;-><init>()V
 
@@ -36,7 +36,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/transition/Fade$a;->a:Landroid/view/View;
+    iget-object v0, p0, Landroidx/transition/Fade$a;->g:Landroid/view/View;
 
     .line 2
     sget-object v1, Lv0/x;->a:Lv0/d0;
@@ -46,13 +46,13 @@
     invoke-virtual {v1, v0, v2}, Lv0/d0;->f(Landroid/view/View;F)V
 
     .line 3
-    iget-object v0, p0, Landroidx/transition/Fade$a;->a:Landroid/view/View;
+    iget-object v0, p0, Landroidx/transition/Fade$a;->g:Landroid/view/View;
 
     .line 4
     invoke-virtual {v1, v0}, Lv0/d0;->a(Landroid/view/View;)V
 
     .line 5
-    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->w(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
+    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->x(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
 
     return-void
 .end method

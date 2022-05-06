@@ -399,7 +399,7 @@
 
     const-string v3, "@Path parameters shouldn\'t perform path traversal (\'.\' or \'..\'): "
 
-    invoke-static {v3, v2}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v2}, Lb0/c;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -423,7 +423,7 @@
 
     const-string v4, "Path parameter \""
 
-    invoke-static {v4}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v4}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 

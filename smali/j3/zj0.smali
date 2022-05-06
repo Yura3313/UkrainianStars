@@ -1,39 +1,26 @@
 .class public final Lj3/zj0;
-.super Lj3/vj0;
-.source "com.google.android.gms:play-services-gass@@19.3.0"
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<E:",
-        "Ljava/lang/Object;",
-        ">",
-        "Lj3/vj0<",
-        "TE;>;"
-    }
-.end annotation
+# instance fields
+.field public a:Ljava/lang/Object;
+    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .end annotation
+.end field
+
+.field public b:Lj3/zj0;
+    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x4
-
-    .line 1
-    invoke-direct {p0, v0}, Lj3/vj0;-><init>(I)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final synthetic d(Ljava/lang/Object;)Lj3/s7;
+.method public constructor <init>(Lj3/lc;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Lj3/vj0;->s(Ljava/lang/Object;)Lj3/vj0;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-object p0
+    return-void
 .end method

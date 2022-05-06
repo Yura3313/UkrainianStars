@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lq3/j3;
+.implements Lq3/g3;
 
 
 # annotations
@@ -14,7 +14,7 @@
         "Lq3/m1<",
         "TMessageType;TBuilderType;>;>",
         "Ljava/lang/Object;",
-        "Lq3/j3;"
+        "Lq3/g3;"
     }
 .end annotation
 

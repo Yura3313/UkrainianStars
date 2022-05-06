@@ -20,14 +20,14 @@
     value = {
         "Lle/j;",
         "Lke/a<",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/SupercellId$f;
+.field public static final g:Lcom/supercell/id/SupercellId$f;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/SupercellId$f;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/SupercellId$f;->a:Lcom/supercell/id/SupercellId$f;
+    sput-object v0, Lcom/supercell/id/SupercellId$f;->g:Lcom/supercell/id/SupercellId$f;
 
     return-void
 .end method
@@ -61,29 +61,26 @@
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lwd/r;->s:Lqd/j;
+    iget-object v0, v0, Lvd/r;->s:Lpd/i;
 
     .line 3
-    invoke-virtual {v0}, Lqd/j;->a()V
+    invoke-virtual {v0}, Lpd/i;->a()V
 
     .line 4
-    sget-object v0, Lwd/x;->c:Lwd/x;
+    sget-object v0, Lvd/x;->c:Lvd/x;
 
     .line 5
-    sget-object v0, Lwd/x;->b:Lwd/b1;
+    sget-object v0, Lvd/x;->b:Landroidx/appcompat/widget/m;
+
+    invoke-virtual {v0}, Landroidx/appcompat/widget/m;->a()V
 
     .line 6
-    iget-object v0, v0, Lwd/b1;->a:Ljava/util/concurrent/ConcurrentHashMap;
-
-    invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentHashMap;->clear()V
-
-    .line 7
-    sget-object v0, Lbe/n;->a:Lbe/n;
+    sget-object v0, Lae/i;->a:Lae/i;
 
     return-object v0
 .end method

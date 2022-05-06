@@ -3,7 +3,7 @@
 .source "CaptureManager.java"
 
 # interfaces
-.implements Lqb/a;
+.implements Lob/a;
 
 
 # annotations
@@ -35,21 +35,7 @@
 
 
 # virtual methods
-.method public a(Ljava/util/List;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Lc6/l;",
-            ">;)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public b(Lqb/b;)V
+.method public a(Lob/b;)V
     .locals 2
 
     .line 1
@@ -59,7 +45,7 @@
     iget-object v0, v0, Lcom/journeyapps/barcodescanner/b;->b:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
 
     .line 3
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->a:Lcom/journeyapps/barcodescanner/BarcodeView;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
 
     invoke-virtual {v0}, Lcom/journeyapps/barcodescanner/BarcodeView;->d()V
 
@@ -96,7 +82,7 @@
     .line 12
     new-instance v1, Lcom/journeyapps/barcodescanner/b$a$a;
 
-    invoke-direct {v1, p0, p1}, Lcom/journeyapps/barcodescanner/b$a$a;-><init>(Lcom/journeyapps/barcodescanner/b$a;Lqb/b;)V
+    invoke-direct {v1, p0, p1}, Lcom/journeyapps/barcodescanner/b$a$a;-><init>(Lcom/journeyapps/barcodescanner/b$a;Lob/b;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -109,4 +95,18 @@
     monitor-exit v0
 
     throw p1
+.end method
+
+.method public b(Ljava/util/List;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lc6/l;",
+            ">;)V"
+        }
+    .end annotation
+
+    return-void
 .end method

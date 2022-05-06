@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final a:Landroid/graphics/Path;
+.field public final g:Landroid/graphics/Path;
 
-.field public final b:Landroid/graphics/RectF;
+.field public final h:Landroid/graphics/RectF;
 
-.field public final h:F
+.field public final i:F
 
 
 # direct methods
@@ -90,7 +90,7 @@
 
     invoke-direct {p5}, Landroid/graphics/Path;-><init>()V
 
-    iput-object p5, p0, Lcom/supercell/id/view/RoundedFrameLayout;->a:Landroid/graphics/Path;
+    iput-object p5, p0, Lcom/supercell/id/view/RoundedFrameLayout;->g:Landroid/graphics/Path;
 
     .line 3
     new-instance p5, Landroid/graphics/RectF;
@@ -99,7 +99,7 @@
 
     invoke-direct {p5, v0, v0, v0, v0}, Landroid/graphics/RectF;-><init>(FFFF)V
 
-    iput-object p5, p0, Lcom/supercell/id/view/RoundedFrameLayout;->b:Landroid/graphics/RectF;
+    iput-object p5, p0, Lcom/supercell/id/view/RoundedFrameLayout;->h:Landroid/graphics/RectF;
 
     .line 4
     invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
@@ -120,7 +120,7 @@
 
     move-result p2
 
-    iput p2, p0, Lcom/supercell/id/view/RoundedFrameLayout;->h:F
+    iput p2, p0, Lcom/supercell/id/view/RoundedFrameLayout;->i:F
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -128,7 +128,7 @@
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 7
-    invoke-static {p0}, Lwd/f2;->d(Landroid/view/View;)I
+    invoke-static {p0}, Lvd/g2;->d(Landroid/view/View;)I
 
     move-result p1
 
@@ -148,7 +148,7 @@
     const-string p1, "context"
 
     .line 9
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v1
 .end method
@@ -166,7 +166,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/view/RoundedFrameLayout;->a:Landroid/graphics/Path;
+    iget-object v1, p0, Lcom/supercell/id/view/RoundedFrameLayout;->g:Landroid/graphics/Path;
 
     invoke-virtual {p1, v1}, Landroid/graphics/Canvas;->clipPath(Landroid/graphics/Path;)Z
 
@@ -182,7 +182,7 @@
     const-string p1, "canvas"
 
     .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -201,12 +201,12 @@
 
     .line 2
     :cond_0
-    iget-object p3, p0, Lcom/supercell/id/view/RoundedFrameLayout;->a:Landroid/graphics/Path;
+    iget-object p3, p0, Lcom/supercell/id/view/RoundedFrameLayout;->g:Landroid/graphics/Path;
 
     invoke-virtual {p3}, Landroid/graphics/Path;->reset()V
 
     .line 3
-    iget-object p3, p0, Lcom/supercell/id/view/RoundedFrameLayout;->b:Landroid/graphics/RectF;
+    iget-object p3, p0, Lcom/supercell/id/view/RoundedFrameLayout;->h:Landroid/graphics/RectF;
 
     int-to-float p1, p1
 
@@ -218,9 +218,9 @@
     iput p1, p3, Landroid/graphics/RectF;->bottom:F
 
     .line 5
-    iget-object p1, p0, Lcom/supercell/id/view/RoundedFrameLayout;->a:Landroid/graphics/Path;
+    iget-object p1, p0, Lcom/supercell/id/view/RoundedFrameLayout;->g:Landroid/graphics/Path;
 
-    iget p2, p0, Lcom/supercell/id/view/RoundedFrameLayout;->h:F
+    iget p2, p0, Lcom/supercell/id/view/RoundedFrameLayout;->i:F
 
     sget-object p4, Landroid/graphics/Path$Direction;->CW:Landroid/graphics/Path$Direction;
 

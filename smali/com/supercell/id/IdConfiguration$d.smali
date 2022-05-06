@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/IdConfiguration;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JJZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/String;Z)V
+    value = Lcom/supercell/id/IdConfiguration;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JJZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZLjava/lang/String;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,14 +27,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/IdConfiguration;
+.field public final synthetic g:Lcom/supercell/id/IdConfiguration;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/IdConfiguration;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/IdConfiguration$d;->a:Lcom/supercell/id/IdConfiguration;
+    iput-object p1, p0, Lcom/supercell/id/IdConfiguration$d;->g:Lcom/supercell/id/IdConfiguration;
 
     const/4 p1, 0x0
 
@@ -49,7 +49,7 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/IdConfiguration$d;->a:Lcom/supercell/id/IdConfiguration;
+    iget-object v0, p0, Lcom/supercell/id/IdConfiguration$d;->g:Lcom/supercell/id/IdConfiguration;
 
     invoke-virtual {v0}, Lcom/supercell/id/IdConfiguration;->get_gameAccountToken()Ljava/lang/String;
 
@@ -71,12 +71,12 @@
     aput-char v4, v3, v5
 
     .line 2
-    invoke-static {v0, v3, v5, v5}, Lre/s;->E(Ljava/lang/CharSequence;[CZI)Ljava/util/List;
+    invoke-static {v0, v3, v5, v5}, Lre/r;->y(Ljava/lang/CharSequence;[CZI)Ljava/util/List;
 
     move-result-object v0
 
     .line 3
-    invoke-static {v0, v2}, Lce/l;->R(Ljava/util/List;I)Ljava/lang/Object;
+    invoke-static {v0, v2}, Lbe/k;->G(Ljava/util/List;I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -97,7 +97,7 @@
     const-string v3, "decodedBytes"
 
     .line 6
-    invoke-static {v0, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v3, Lre/a;->a:Ljava/nio/charset/Charset;
 
@@ -131,7 +131,7 @@
     .line 9
     sget-object v2, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v0, v2}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -159,7 +159,7 @@
     const-string v0, "jwtToken"
 
     .line 11
-    invoke-static {v0}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {v0}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v1
 .end method

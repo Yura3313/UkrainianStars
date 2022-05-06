@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field public final a:Lcom/google/android/play/core/assetpacks/x;
+.field public final a:Lcom/google/android/play/core/assetpacks/y;
 
-.field public final b:Ly4/j0;
+.field public final b:Ly4/l0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ly4/j0<",
-            "Lcom/google/android/play/core/assetpacks/s2;",
+            "Ly4/l0<",
+            "Lcom/google/android/play/core/assetpacks/t2;",
             ">;"
         }
     .end annotation
@@ -21,10 +21,10 @@
 
 .field public final c:Lcom/google/android/play/core/assetpacks/r0;
 
-.field public final d:Ly4/j0;
+.field public final d:Ly4/l0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ly4/j0<",
+            "Ly4/l0<",
             "Ljava/util/concurrent/Executor;",
             ">;"
         }
@@ -60,17 +60,17 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/google/android/play/core/assetpacks/x;Ly4/j0;Lcom/google/android/play/core/assetpacks/r0;Ly4/j0;)V
+.method public constructor <init>(Lcom/google/android/play/core/assetpacks/y;Ly4/l0;Lcom/google/android/play/core/assetpacks/r0;Ly4/l0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/android/play/core/assetpacks/x;",
-            "Ly4/j0<",
-            "Lcom/google/android/play/core/assetpacks/s2;",
+            "Lcom/google/android/play/core/assetpacks/y;",
+            "Ly4/l0<",
+            "Lcom/google/android/play/core/assetpacks/t2;",
             ">;",
             "Lcom/google/android/play/core/assetpacks/r0;",
-            "Ly4/j0<",
+            "Ly4/l0<",
             "Ljava/util/concurrent/Executor;",
             ">;)V"
         }
@@ -78,13 +78,13 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/c1;->a:Lcom/google/android/play/core/assetpacks/x;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/c1;->a:Lcom/google/android/play/core/assetpacks/y;
 
-    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/c1;->b:Ly4/j0;
+    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/c1;->b:Ly4/l0;
 
     iput-object p3, p0, Lcom/google/android/play/core/assetpacks/c1;->c:Lcom/google/android/play/core/assetpacks/r0;
 
-    iput-object p4, p0, Lcom/google/android/play/core/assetpacks/c1;->d:Ly4/j0;
+    iput-object p4, p0, Lcom/google/android/play/core/assetpacks/c1;->d:Ly4/l0;
 
     new-instance p1, Ljava/util/HashMap;
 

@@ -1,97 +1,81 @@
 .class public final Ljd/f;
-.super Lle/j;
-.source "MessagesTabFriendsFragment.kt"
+.super Ljava/lang/Object;
+.source "OnboardingInviteFriendsPageFragment.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Landroid/view/View$OnLayoutChangeListener;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Ljd/b;",
-        "Ljava/lang/Exception;",
-        "Lbe/n;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final synthetic a:Landroid/view/View;
 
+.field public final synthetic b:I
 
-# static fields
-.field public static final a:Ljd/f;
+.field public final synthetic c:Ljd/c;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Landroid/view/View;ILjd/c;)V
+    .locals 0
 
-    new-instance v0, Ljd/f;
+    iput-object p1, p0, Ljd/f;->a:Landroid/view/View;
 
-    invoke-direct {v0}, Ljd/f;-><init>()V
+    iput p2, p0, Ljd/f;->b:I
 
-    sput-object v0, Ljd/f;->a:Ljd/f;
+    iput-object p3, p0, Ljd/f;->c:Ljd/c;
 
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
+    .locals 0
 
     .line 1
-    check-cast p1, Ljd/b;
+    iget-object p1, p0, Ljd/f;->c:Ljd/c;
 
-    check-cast p2, Ljava/lang/Exception;
+    sget p2, Lcom/supercell/id/R$id;->friends_list:I
 
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_2
-
-    if-eqz p2, :cond_1
-
-    .line 2
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-virtual {p1, p2}, Ljd/c;->e1(I)Landroid/view/View;
 
     move-result-object p1
 
+    check-cast p1, Landroidx/recyclerview/widget/RecyclerView;
+
     if-eqz p1, :cond_0
 
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    .line 2
+    iget-object p2, p0, Ljd/f;->a:Landroid/view/View;
+
+    const-string p3, "selectAllBackground"
+
+    invoke-static {p2, p3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p2}, Landroid/view/View;->getBottom()I
+
+    move-result p2
+
+    iget p3, p0, Ljd/f;->b:I
+
+    add-int/2addr p2, p3
 
     .line 3
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->E(Ljava/lang/Exception;Lke/l;)V
+    invoke-static {p1}, Lvd/g2;->f(Landroid/view/View;)I
+
+    move-result p3
+
+    if-eq p2, p3, :cond_0
 
     .line 4
+    new-instance p3, Ljd/f$a;
+
+    invoke-direct {p3, p1, p2}, Ljd/f$a;-><init>(Landroidx/recyclerview/widget/RecyclerView;I)V
+
+    invoke-virtual {p1, p3}, Landroid/view/ViewGroup;->post(Ljava/lang/Runnable;)Z
+
     :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
-
-    return-object p1
-
-    :cond_1
-    const-string p1, "it"
-
-    .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "$receiver"
-
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
+    return-void
 .end method

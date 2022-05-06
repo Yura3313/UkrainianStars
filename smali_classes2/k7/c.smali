@@ -3,7 +3,7 @@
 .source "DownloadManager.java"
 
 # interfaces
-.implements Ll7/e;
+.implements Ll7/c;
 
 
 # instance fields
@@ -60,12 +60,12 @@
 
     move-result-object v1
 
-    check-cast v1, Ll7/e;
+    check-cast v1, Ll7/c;
 
     if-eqz v1, :cond_0
 
     .line 6
-    invoke-interface {v1, p1, p2}, Ll7/e;->a(Ljava/lang/String;I)V
+    invoke-interface {v1, p1, p2}, Ll7/c;->a(Ljava/lang/String;I)V
 
     goto :goto_0
 

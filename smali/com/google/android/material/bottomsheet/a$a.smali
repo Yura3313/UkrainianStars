@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/material/bottomsheet/a;
+.field public final synthetic g:Lcom/google/android/material/bottomsheet/a;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/bottomsheet/a$a;->a:Lcom/google/android/material/bottomsheet/a;
+    iput-object p1, p0, Lcom/google/android/material/bottomsheet/a$a;->g:Lcom/google/android/material/bottomsheet/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,9 +39,9 @@
     .locals 5
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/bottomsheet/a$a;->a:Lcom/google/android/material/bottomsheet/a;
+    iget-object p1, p0, Lcom/google/android/material/bottomsheet/a$a;->g:Lcom/google/android/material/bottomsheet/a;
 
-    iget-boolean v0, p1, Lcom/google/android/material/bottomsheet/a;->j:Z
+    iget-boolean v0, p1, Lcom/google/android/material/bottomsheet/a;->k:Z
 
     if-eqz v0, :cond_1
 
@@ -51,10 +51,10 @@
 
     if-eqz p1, :cond_1
 
-    iget-object p1, p0, Lcom/google/android/material/bottomsheet/a$a;->a:Lcom/google/android/material/bottomsheet/a;
+    iget-object p1, p0, Lcom/google/android/material/bottomsheet/a$a;->g:Lcom/google/android/material/bottomsheet/a;
 
     .line 2
-    iget-boolean v0, p1, Lcom/google/android/material/bottomsheet/a;->l:Z
+    iget-boolean v0, p1, Lcom/google/android/material/bottomsheet/a;->m:Z
 
     if-nez v0, :cond_0
 
@@ -83,22 +83,22 @@
 
     move-result v2
 
-    iput-boolean v2, p1, Lcom/google/android/material/bottomsheet/a;->k:Z
+    iput-boolean v2, p1, Lcom/google/android/material/bottomsheet/a;->l:Z
 
     .line 6
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 7
-    iput-boolean v1, p1, Lcom/google/android/material/bottomsheet/a;->l:Z
+    iput-boolean v1, p1, Lcom/google/android/material/bottomsheet/a;->m:Z
 
     .line 8
     :cond_0
-    iget-boolean p1, p1, Lcom/google/android/material/bottomsheet/a;->k:Z
+    iget-boolean p1, p1, Lcom/google/android/material/bottomsheet/a;->l:Z
 
     if-eqz p1, :cond_1
 
     .line 9
-    iget-object p1, p0, Lcom/google/android/material/bottomsheet/a$a;->a:Lcom/google/android/material/bottomsheet/a;
+    iget-object p1, p0, Lcom/google/android/material/bottomsheet/a$a;->g:Lcom/google/android/material/bottomsheet/a;
 
     invoke-virtual {p1}, Lcom/google/android/material/bottomsheet/a;->cancel()V
 

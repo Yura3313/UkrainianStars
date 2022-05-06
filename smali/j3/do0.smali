@@ -1,57 +1,33 @@
-.class public Lj3/do0;
-.super Ljava/lang/Object;
+.class public final Lj3/do0;
+.super Lj3/hn0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Lj3/cn0;
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lj3/do0$a;
-    }
-.end annotation
-
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/lang/Object;",
-        "Lj3/cn0<",
-        "Lj3/an0;",
+        "Lj3/hn0<",
+        "Lj3/bn0;",
+        "Lcom/google/android/gms/internal/ads/o5;",
         ">;"
     }
 .end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    const-class v0, Lj3/do0;
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Ljava/lang/Class;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Lj3/hn0;-><init>(Ljava/lang/Class;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic a(Lcom/google/android/gms/internal/ads/j2;)Ljava/lang/Object;
-    .locals 2
+.method public final synthetic a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/GeneralSecurityException;
@@ -59,28 +35,20 @@
     .end annotation
 
     .line 1
-    new-instance v0, Lj3/do0$a;
+    check-cast p1, Lcom/google/android/gms/internal/ads/o5;
 
-    const/4 v1, 0x0
+    .line 2
+    new-instance v0, Lj3/iq0;
 
-    invoke-direct {v0, p1, v1}, Lj3/do0$a;-><init>(Lcom/google/android/gms/internal/ads/j2;Lj3/t6;)V
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/o5;->B()Lj3/ar0;
 
-    return-object v0
-.end method
+    move-result-object p1
 
-.method public final b()Ljava/lang/Class;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/lang/Class<",
-            "Lj3/an0;",
-            ">;"
-        }
-    .end annotation
+    invoke-virtual {p1}, Lj3/ar0;->a()[B
 
-    .line 1
-    const-class v0, Lj3/an0;
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Lj3/iq0;-><init>([B)V
 
     return-object v0
 .end method

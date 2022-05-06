@@ -58,7 +58,7 @@
     move-result-object v2
 
     .line 3
-    iget-object v3, v2, La2/x0;->b:Ljava/lang/Object;
+    iget-object v3, v2, Lj3/pc;->b:Ljava/lang/Object;
 
     check-cast v3, [Lc6/l;
     :try_end_0
@@ -134,7 +134,7 @@
     move-result-object v0
 
     .line 6
-    iget-object v1, v0, La2/x0;->b:Ljava/lang/Object;
+    iget-object v1, v0, Lj3/pc;->b:Ljava/lang/Object;
 
     move-object v4, v1
 
@@ -185,7 +185,7 @@
     if-eqz p2, :cond_3
 
     .line 11
-    sget-object v0, Lc6/d;->NEED_RESULT_POINT_CALLBACK:Lc6/d;
+    sget-object v0, Lc6/d;->p:Lc6/d;
 
     invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -224,7 +224,7 @@
     iget v5, v1, Lj6/e;->b:I
 
     .line 18
-    sget-object v7, Lc6/a;->AZTEC:Lc6/a;
+    sget-object v7, Lc6/a;->g:Lc6/a;
 
     .line 19
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -241,7 +241,7 @@
     if-eqz p2, :cond_4
 
     .line 21
-    sget-object v0, Lc6/k;->BYTE_SEGMENTS:Lc6/k;
+    sget-object v0, Lc6/k;->h:Lc6/k;
 
     invoke-virtual {p1, v0, p2}, Lc6/j;->b(Lc6/k;Ljava/lang/Object;)V
 
@@ -252,7 +252,7 @@
     if-eqz p2, :cond_5
 
     .line 23
-    sget-object v0, Lc6/k;->ERROR_CORRECTION_LEVEL:Lc6/k;
+    sget-object v0, Lc6/k;->i:Lc6/k;
 
     invoke-virtual {p1, v0, p2}, Lc6/j;->b(Lc6/k;Ljava/lang/Object;)V
 

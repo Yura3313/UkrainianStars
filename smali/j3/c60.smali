@@ -2,138 +2,160 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lj3/rv0;
+
 
 # instance fields
-.field public final a:Lk2/c;
+.field public final synthetic a:I
 
-.field public final b:Lj3/d60;
+.field public final b:Lj3/vv0;
 
-.field public final c:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final c:Lj3/vv0;
 
-.field public final d:Z
+.field public final d:Lj3/vv0;
+
+.field public final e:Lj3/vv0;
 
 
 # direct methods
-.method public constructor <init>(Lk2/c;Lj3/d60;)V
-    .locals 1
+.method public synthetic constructor <init>(Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;I)V
+    .locals 0
 
     .line 1
+    iput p5, p0, Lj3/c60;->a:I
+
+    iput-object p1, p0, Lj3/c60;->b:Lj3/vv0;
+
+    iput-object p2, p0, Lj3/c60;->c:Lj3/vv0;
+
+    iput-object p3, p0, Lj3/c60;->d:Lj3/vv0;
+
+    iput-object p4, p0, Lj3/c60;->e:Lj3/vv0;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    invoke-static {v0}, Ljava/util/Collections;->synchronizedList(Ljava/util/List;)Ljava/util/List;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lj3/c60;->c:Ljava/util/List;
-
-    .line 3
-    iput-object p1, p0, Lj3/c60;->a:Lk2/c;
-
-    .line 4
-    iput-object p2, p0, Lj3/c60;->b:Lj3/d60;
-
-    .line 5
-    sget-object p1, Lj3/n;->H3:Lj3/f;
-
-    .line 6
-    sget-object p2, Lj3/w41;->j:Lj3/w41;
-
-    iget-object p2, p2, Lj3/w41;->f:Lj3/l;
-
-    .line 7
-    invoke-virtual {p2, p1}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    .line 8
-    check-cast p1, Ljava/lang/Boolean;
-
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p1
-
-    iput-boolean p1, p0, Lj3/c60;->d:Z
 
     return-void
 .end method
 
-.method public static a(Lj3/c60;Ljava/lang/String;IJLjava/lang/String;)V
-    .locals 2
+.method public static a(Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;)Lj3/c60;
+    .locals 7
 
     .line 1
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    new-instance v6, Lj3/c60;
 
-    .line 2
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    const/4 v5, 0x1
+
+    move-object v0, v6
+
+    move-object v1, p0
+
+    move-object v2, p1
+
+    move-object v3, p2
+
+    move-object v4, p3
+
+    invoke-direct/range {v0 .. v5}, Lj3/c60;-><init>(Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;I)V
+
+    return-object v6
+.end method
+
+
+# virtual methods
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 5
+
+    iget v0, p0, Lj3/c60;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
+
+    .line 1
+    :pswitch_0
+    iget-object v0, p0, Lj3/c60;->b:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
+    check-cast v0, Lj3/gv;
 
-    move-result v0
+    iget-object v1, p0, Lj3/c60;->c:Lj3/vv0;
 
-    add-int/lit8 v0, v0, 0x21
+    invoke-interface {v1}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
+    check-cast v1, Lj3/km0;
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v2, p0, Lj3/c60;->d:Lj3/vv0;
 
-    const-string p1, "."
+    invoke-interface {v2}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    check-cast v2, Lj3/gx;
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v3, p0, Lj3/c60;->e:Lj3/vv0;
 
-    invoke-virtual {v1, p3, p4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-interface {v3}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object p2
+    check-cast v3, Lj3/ch0;
+
+    .line 2
+    new-instance v4, Lj3/x50;
+
+    invoke-direct {v4, v0, v1, v2, v3}, Lj3/x50;-><init>(Lj3/gv;Lj3/km0;Lj3/gx;Lj3/ch0;)V
+
+    return-object v4
 
     .line 3
-    invoke-static {p5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    :goto_0
+    iget-object v0, p0, Lj3/c60;->b:Lj3/vv0;
 
-    move-result p3
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    if-nez p3, :cond_0
+    move-result-object v0
 
-    const/4 p3, 0x1
+    check-cast v0, Lj3/ui0;
+
+    iget-object v1, p0, Lj3/c60;->c:Lj3/vv0;
+
+    invoke-interface {v1}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lj3/km0;
+
+    iget-object v2, p0, Lj3/c60;->d:Lj3/vv0;
+
+    invoke-interface {v2}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lj3/i40;
+
+    iget-object v3, p0, Lj3/c60;->e:Lj3/vv0;
+
+    invoke-interface {v3}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lj3/k40;
 
     .line 4
-    invoke-static {p2, p3}, Ly/b;->a(Ljava/lang/String;I)I
+    new-instance v4, Lj3/f70;
 
-    move-result p3
+    invoke-direct {v4, v0, v1, v2, v3}, Lj3/f70;-><init>(Lj3/ui0;Lj3/km0;Lj3/i40;Lj3/k40;)V
 
-    invoke-static {p5, p3}, Ly/b;->a(Ljava/lang/String;I)I
+    return-object v4
 
-    move-result p3
-
-    invoke-static {p3, p2, p1, p5}, Lh1/i;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p2
-
-    .line 5
-    :cond_0
-    iget-object p0, p0, Lj3/c60;->c:Ljava/util/List;
-
-    invoke-interface {p0, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

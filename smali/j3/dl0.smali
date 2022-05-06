@@ -1,147 +1,81 @@
-.class public abstract Lj3/dl0;
-.super Lj3/uk0$k;
+.class public final Lj3/dl0;
+.super Lj3/el0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lj3/dl0$c;,
-        Lj3/dl0$a;,
-        Lj3/dl0$b;
-    }
-.end annotation
-
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<OutputT:",
+        "<V:",
         "Ljava/lang/Object;",
+        "X:",
+        "Ljava/lang/Throwable;",
         ">",
-        "Lj3/uk0$k<",
-        "TOutputT;>;"
+        "Lj3/el0<",
+        "TV;TX;",
+        "Lj3/ql0<",
+        "-TX;+TV;>;",
+        "Lj3/im0<",
+        "+TV;>;>;"
     }
 .end annotation
-
-
-# static fields
-.field public static final o:Lj3/dl0$b;
-
-.field public static final p:Ljava/util/logging/Logger;
-
-
-# instance fields
-.field public volatile m:Ljava/util/Set;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Set<",
-            "Ljava/lang/Throwable;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public volatile n:I
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 9
+.method public constructor <init>(Lj3/im0;Ljava/lang/Class;Lj3/ql0;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/im0<",
+            "+TV;>;",
+            "Ljava/lang/Class<",
+            "TX;>;",
+            "Lj3/ql0<",
+            "-TX;+TV;>;)V"
+        }
+    .end annotation
 
     .line 1
-    const-class v0, Lj3/dl0;
+    invoke-direct {p0, p1, p2, p3}, Lj3/el0;-><init>(Lj3/im0;Ljava/lang/Class;Ljava/lang/Object;)V
 
-    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
-
-    move-result-object v0
-
-    sput-object v0, Lj3/dl0;->p:Ljava/util/logging/Logger;
-
-    const/4 v0, 0x0
-
-    .line 2
-    :try_start_0
-    new-instance v1, Lj3/dl0$a;
-
-    const-class v2, Lj3/dl0;
-
-    const-class v3, Ljava/util/Set;
-
-    const-string v4, "m"
-
-    .line 3
-    invoke-static {v2, v3, v4}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
-
-    move-result-object v2
-
-    const-class v3, Lj3/dl0;
-
-    const-string v4, "n"
-
-    .line 4
-    invoke-static {v3, v4}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
-
-    move-result-object v3
-
-    invoke-direct {v1, v2, v3}, Lj3/dl0$a;-><init>(Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    move-object v8, v0
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception v1
-
-    .line 5
-    new-instance v2, Lj3/dl0$c;
-
-    invoke-direct {v2, v0}, Lj3/dl0$c;-><init>(Lab/b;)V
-
-    move-object v8, v1
-
-    move-object v1, v2
-
-    .line 6
-    :goto_0
-    sput-object v1, Lj3/dl0;->o:Lj3/dl0$b;
-
-    if-eqz v8, :cond_0
-
-    .line 7
-    sget-object v3, Lj3/dl0;->p:Ljava/util/logging/Logger;
-
-    sget-object v4, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;
-
-    const-string v5, "com.google.common.util.concurrent.AggregateFutureState"
-
-    const-string v6, "<clinit>"
-
-    const-string v7, "SafeAtomicHelper is broken!"
-
-    invoke-virtual/range {v3 .. v8}, Ljava/util/logging/Logger;->logp(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    :cond_0
     return-void
 .end method
 
-.method public constructor <init>(I)V
-    .locals 1
+
+# virtual methods
+.method public final synthetic w(Ljava/lang/Object;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Lj3/uk0$k;-><init>()V
-
-    const/4 v0, 0x0
+    check-cast p1, Lj3/im0;
 
     .line 2
-    iput-object v0, p0, Lj3/dl0;->m:Ljava/util/Set;
-
-    .line 3
-    iput p1, p0, Lj3/dl0;->n:I
+    invoke-virtual {p0, p1}, Lj3/fl0;->k(Lj3/im0;)Z
 
     return-void
+.end method
+
+.method public final synthetic x(Ljava/lang/Object;Ljava/lang/Throwable;)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1
+    check-cast p1, Lj3/ql0;
+
+    .line 2
+    invoke-interface {p1, p2}, Lj3/ql0;->a(Ljava/lang/Object;)Lj3/im0;
+
+    move-result-object p2
+
+    const-string v0, "AsyncFunction.apply returned null instead of a Future. Did you mean to return immediateFuture(null)? %s"
+
+    .line 3
+    invoke-static {p2, v0, p1}, Lj3/ck0;->b(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-object p2
 .end method

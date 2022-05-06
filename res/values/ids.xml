@@ -140,6 +140,7 @@
     <item type="id" name="body" />
     <item type="id" name="body_dimmer" />
     <item type="id" name="bottomGuide" />
+    <item type="id" name="bottomStartGuide" />
     <item type="id" name="browser_actions_header_text" />
     <item type="id" name="browser_actions_menu_item_icon" />
     <item type="id" name="browser_actions_menu_item_text" />
@@ -166,7 +167,6 @@
     <item type="id" name="camera_view" />
     <item type="id" name="cancel" />
     <item type="id" name="cancelButton" />
-    <item type="id" name="cancelRequestButton" />
     <item type="id" name="cancel_action" />
     <item type="id" name="cancel_button" />
     <item type="id" name="cancel_custom_image_button" />
@@ -244,6 +244,7 @@
     <item type="id" name="descriptionLogo" />
     <item type="id" name="descriptionSpacer" />
     <item type="id" name="descriptionTextView" />
+    <item type="id" name="descriptionToButtonSpacer" />
     <item type="id" name="design_bottom_sheet" />
     <item type="id" name="design_menu_item_action_area" />
     <item type="id" name="design_menu_item_action_area_stub" />
@@ -274,6 +275,7 @@
     <item type="id" name="download_button" />
     <item type="id" name="download_progressbar" />
     <item type="id" name="download_progressbar_container" />
+    <item type="id" name="editMessageView" />
     <item type="id" name="edit_query" />
     <item type="id" name="emailEditText" />
     <item type="id" name="end_padder" />
@@ -352,6 +354,9 @@
     <item type="id" name="generic_attachment_preview" />
     <item type="id" name="ghost_view" />
     <item type="id" name="ghost_view_holder" />
+    <item type="id" name="glowGuide" />
+    <item type="id" name="glow_one" />
+    <item type="id" name="glow_two" />
     <item type="id" name="group_divider" />
     <item type="id" name="guide_0" />
     <item type="id" name="guide_1" />
@@ -379,6 +384,7 @@
     <item type="id" name="head_tab_friends" />
     <item type="id" name="head_tab_my_games" />
     <item type="id" name="head_upload_custom_image_button" />
+    <item type="id" name="headingTextView" />
     <item type="id" name="height_guide" />
     <item type="id" name="helpful_button" />
     <item type="id" name="history_loading_layout_view" />
@@ -465,6 +471,7 @@
     <item type="id" name="illustrationImageView" />
     <item type="id" name="image" />
     <item type="id" name="imagePager" />
+    <item type="id" name="imageToTitleSpacer" />
     <item type="id" name="imageView" />
     <item type="id" name="image_outer_circle" />
     <item type="id" name="image_under_review_icon" />
@@ -583,10 +590,12 @@
     <item type="id" name="media_actions" />
     <item type="id" name="message" />
     <item type="id" name="messageContainer" />
+    <item type="id" name="messageLabel" />
     <item type="id" name="messageTextView" />
     <item type="id" name="message_image" />
     <item type="id" name="message_text" />
     <item type="id" name="messagesList" />
+    <item type="id" name="middleGuide" />
     <item type="id" name="month_grid" />
     <item type="id" name="month_navigation_bar" />
     <item type="id" name="month_navigation_fragment_toggle" />
@@ -688,6 +697,19 @@
     <item type="id" name="picker_list" />
     <item type="id" name="pinEditText" />
     <item type="id" name="privacyTextView" />
+    <item type="id" name="productBackground" />
+    <item type="id" name="productCard" />
+    <item type="id" name="productCardGuide" />
+    <item type="id" name="productDescriptionBottomGuide" />
+    <item type="id" name="productDescriptionTextView" />
+    <item type="id" name="productImageToTitleGuide" />
+    <item type="id" name="productImageView" />
+    <item type="id" name="productLogoBottomGuide" />
+    <item type="id" name="productLogoImageView" />
+    <item type="id" name="productLogoTopGuide" />
+    <item type="id" name="productTextGuide" />
+    <item type="id" name="productTitleTextView" />
+    <item type="id" name="productTitleToDescriptionGuide" />
     <item type="id" name="profileAccountView" />
     <item type="id" name="profileInfoView" />
     <item type="id" name="profileList" />
@@ -734,6 +756,9 @@
     <item type="id" name="qr_code_quide_top" />
     <item type="id" name="qr_code_title" />
     <item type="id" name="qr_code_view" />
+    <item type="id" name="quantityGroup" />
+    <item type="id" name="quantityTextView" />
+    <item type="id" name="quantityToDescriptionSpacer" />
     <item type="id" name="question_footer" />
     <item type="id" name="question_footer_message" />
     <item type="id" name="question_list" />
@@ -831,7 +856,14 @@
     <item type="id" name="selectable_option_skip" />
     <item type="id" name="selectable_option_text" />
     <item type="id" name="selectable_options_container" />
+    <item type="id" name="sendMessageButton" />
+    <item type="id" name="sendMessageContainer" />
     <item type="id" name="send_anyway_button" />
+    <item type="id" name="senderGuide" />
+    <item type="id" name="senderImageView" />
+    <item type="id" name="senderNameLabel" />
+    <item type="id" name="senderProfileImageView" />
+    <item type="id" name="senderTextView" />
     <item type="id" name="separator_1" />
     <item type="id" name="separator_2" />
     <item type="id" name="separator_3" />
@@ -861,7 +893,6 @@
     <item type="id" name="split_action_bar" />
     <item type="id" name="start_button" />
     <item type="id" name="statusGuide" />
-    <item type="id" name="statusLabel" />
     <item type="id" name="status_bar_latest_event_content" />
     <item type="id" name="sticky_header_container" />
     <item type="id" name="submenuarrow" />
@@ -870,6 +901,8 @@
     <item type="id" name="subscriptionsScrollView" />
     <item type="id" name="subtitleTextView" />
     <item type="id" name="suggestionsListStub" />
+    <item type="id" name="supercellStoreStartGuide" />
+    <item type="id" name="supercellStoreTextView" />
     <item type="id" name="support_fragment_container" />
     <item type="id" name="systemImageView" />
     <item type="id" name="systemLevelLabel" />
@@ -928,6 +961,7 @@
     <item type="id" name="titleDividerNoCustom" />
     <item type="id" name="titleRow" />
     <item type="id" name="titleTextView" />
+    <item type="id" name="titleToQuantitySpacer" />
     <item type="id" name="title_template" />
     <item type="id" name="toolbar" />
     <item type="id" name="toolbarGuide" />
@@ -944,8 +978,11 @@
     <item type="id" name="toolbar_title" />
     <item type="id" name="toolbar_wrapper" />
     <item type="id" name="topBarrier" />
+    <item type="id" name="topEndGuide" />
     <item type="id" name="topGuide" />
     <item type="id" name="topPanel" />
+    <item type="id" name="topStartGuide" />
+    <item type="id" name="topToTitleSpacer" />
     <item type="id" name="top_friends_label" />
     <item type="id" name="top_guideline" />
     <item type="id" name="touchInterceptor" />

@@ -137,7 +137,7 @@
     iget-object v1, v0, Lcom/linecorp/linesdk/auth/internal/c;->h:Lcom/linecorp/linesdk/auth/internal/d;
 
     .line 5
-    iput v2, v1, Lcom/linecorp/linesdk/auth/internal/d;->i:I
+    iput v2, v1, Lcom/linecorp/linesdk/auth/internal/d;->j:I
 
     .line 6
     iget-object v0, v0, Lcom/linecorp/linesdk/auth/internal/c;->a:Lcom/linecorp/linesdk/auth/internal/LineAuthenticationActivity;
@@ -166,7 +166,7 @@
     iget-object v3, v1, Lcom/linecorp/linesdk/auth/internal/c;->h:Lcom/linecorp/linesdk/auth/internal/d;
 
     .line 11
-    iput-object p1, v3, Lcom/linecorp/linesdk/auth/internal/d;->a:Lcom/linecorp/linesdk/a/f;
+    iput-object p1, v3, Lcom/linecorp/linesdk/auth/internal/d;->g:Lcom/linecorp/linesdk/a/f;
 
     .line 12
     :try_start_0
@@ -226,7 +226,7 @@
     iget-object v3, v3, Lcom/linecorp/linesdk/auth/internal/a;->a:Lcom/linecorp/linesdk/auth/internal/d;
 
     .line 20
-    iput-object v6, v3, Lcom/linecorp/linesdk/auth/internal/d;->h:Ljava/lang/String;
+    iput-object v6, v3, Lcom/linecorp/linesdk/auth/internal/d;->i:Ljava/lang/String;
 
     .line 21
     new-instance v3, Ljava/lang/StringBuilder;
@@ -594,7 +594,7 @@
     iget-object p1, p1, Lcom/linecorp/linesdk/auth/internal/c;->h:Lcom/linecorp/linesdk/auth/internal/d;
 
     .line 70
-    iput-object v3, p1, Lcom/linecorp/linesdk/auth/internal/d;->b:Ljava/lang/String;
+    iput-object v3, p1, Lcom/linecorp/linesdk/auth/internal/d;->h:Ljava/lang/String;
 
     return-void
 
@@ -630,7 +630,7 @@
     iget-object v1, v0, Lcom/linecorp/linesdk/auth/internal/c;->h:Lcom/linecorp/linesdk/auth/internal/d;
 
     .line 74
-    iput v2, v1, Lcom/linecorp/linesdk/auth/internal/d;->i:I
+    iput v2, v1, Lcom/linecorp/linesdk/auth/internal/d;->j:I
 
     .line 75
     iget-object v0, v0, Lcom/linecorp/linesdk/auth/internal/c;->a:Lcom/linecorp/linesdk/auth/internal/LineAuthenticationActivity;

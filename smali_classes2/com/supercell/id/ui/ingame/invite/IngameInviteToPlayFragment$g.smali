@@ -32,15 +32,15 @@
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lwd/r;->d()Lxd/i;
+    invoke-virtual {v0}, Lvd/r;->d()Lwd/i;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lxd/i;->l()Lse/h0;
+    invoke-virtual {v0}, Lwd/i;->m()Lse/f0;
 
     return-void
 .end method

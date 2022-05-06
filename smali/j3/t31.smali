@@ -1,145 +1,262 @@
-.class public final synthetic Lj3/t31;
+.class public final Lj3/t31;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Ljava/lang/Runnable;
 
-
-# instance fields
-.field public final a:Lj3/u31;
-
-.field public final b:Lj3/m31;
-
-.field public final h:Lcom/google/android/gms/internal/ads/zzta;
-
-.field public final i:Lj3/md;
+# annotations
+.annotation runtime Ljavax/annotation/ParametersAreNonnullByDefault;
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Lj3/u31;Lj3/m31;Lcom/google/android/gms/internal/ads/zzta;Lj3/md;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lj3/t31;->a:Lj3/u31;
-
-    iput-object p2, p0, Lj3/t31;->b:Lj3/m31;
-
-    iput-object p3, p0, Lj3/t31;->h:Lcom/google/android/gms/internal/ads/zzta;
-
-    iput-object p4, p0, Lj3/t31;->i:Lj3/md;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final run()V
+.method public static a(JI)J
     .locals 5
 
+    if-nez p2, :cond_0
+
+    const-wide/16 p0, 0x1
+
+    return-wide p0
+
+    :cond_0
+    const/4 v0, 0x1
+
+    if-ne p2, v0, :cond_1
+
+    return-wide p0
+
     .line 1
-    iget-object v0, p0, Lj3/t31;->a:Lj3/u31;
+    :cond_1
+    rem-int/lit8 v0, p2, 0x2
 
-    iget-object v1, p0, Lj3/t31;->b:Lj3/m31;
+    const-wide/32 v1, 0x4000ffff
 
-    iget-object v2, p0, Lj3/t31;->h:Lcom/google/android/gms/internal/ads/zzta;
+    if-nez v0, :cond_2
 
-    iget-object v3, p0, Lj3/t31;->i:Lj3/md;
+    mul-long p0, p0, p0
 
     .line 2
-    :try_start_0
-    invoke-virtual {v1}, Lcom/google/android/gms/common/internal/BaseGmsClient;->v()Landroid/os/IInterface;
+    rem-long/2addr p0, v1
 
-    move-result-object v1
+    div-int/lit8 p2, p2, 0x2
 
-    check-cast v1, Lcom/google/android/gms/internal/ads/zztb;
+    invoke-static {p0, p1, p2}, Lj3/t31;->a(JI)J
+
+    move-result-wide p0
+
+    rem-long/2addr p0, v1
+
+    return-wide p0
+
+    :cond_2
+    mul-long v3, p0, p0
 
     .line 3
-    invoke-interface {v1, v2}, Lcom/google/android/gms/internal/ads/zztb;->K6(Lcom/google/android/gms/internal/ads/zzta;)Lcom/google/android/gms/internal/ads/zzsv;
+    rem-long/2addr v3, v1
 
-    move-result-object v1
+    div-int/lit8 p2, p2, 0x2
+
+    invoke-static {v3, v4, p2}, Lj3/t31;->a(JI)J
+
+    move-result-wide v3
+
+    rem-long/2addr v3, v1
+
+    mul-long v3, v3, p0
+
+    rem-long/2addr v3, v1
+
+    return-wide v3
+.end method
+
+.method public static b([Ljava/lang/String;II)Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    array-length v0, p0
+
+    add-int/2addr p2, p1
+
+    if-ge v0, p2, :cond_0
+
+    const-string p0, ""
+
+    return-object p0
+
+    .line 2
+    :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    :goto_0
+    add-int/lit8 v1, p2, -0x1
+
+    if-ge p1, v1, :cond_1
+
+    .line 3
+    aget-object v1, p0, p1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x20
 
     .line 4
-    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/zzsv;->x2()Z
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    .line 5
-    new-instance v1, Ljava/lang/RuntimeException;
-
-    const-string v2, "No entry contents."
-
-    invoke-direct {v1, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v3, v1}, Lj3/md;->c(Ljava/lang/Throwable;)Z
-
-    .line 6
-    iget-object v1, v0, Lj3/u31;->c:Lj3/s31;
-
-    invoke-static {v1}, Lj3/s31;->a(Lj3/s31;)V
-
-    return-void
-
-    .line 7
-    :cond_0
-    new-instance v2, Lj3/v31;
-
-    .line 8
-    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/zzsv;->y2()Ljava/io/InputStream;
-
-    move-result-object v1
-
-    invoke-direct {v2, v0, v1}, Lj3/v31;-><init>(Lj3/u31;Ljava/io/InputStream;)V
-
-    .line 9
-    invoke-virtual {v2}, Ljava/io/PushbackInputStream;->read()I
-
-    move-result v1
-
-    const/4 v4, -0x1
-
-    if-eq v1, v4, :cond_1
-
-    .line 10
-    invoke-virtual {v2, v1}, Ljava/io/PushbackInputStream;->unread(I)V
-
-    .line 11
-    invoke-virtual {v3, v2}, Lj3/md;->b(Ljava/lang/Object;)Z
-
-    return-void
-
-    .line 12
-    :cond_1
-    new-instance v1, Ljava/io/IOException;
-
-    const-string v2, "Unable to read from cache."
-
-    invoke-direct {v1, v2}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
-
-    throw v1
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    move-exception v1
+    add-int/lit8 p1, p1, 0x1
 
     goto :goto_0
 
-    :catch_1
-    move-exception v1
+    .line 5
+    :cond_1
+    aget-object p0, p0, v1
 
-    .line 13
-    :goto_0
-    invoke-virtual {v3, v1}, Lj3/md;->c(Ljava/lang/Throwable;)Z
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 14
-    iget-object v0, v0, Lj3/u31;->c:Lj3/s31;
+    .line 6
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-static {v0}, Lj3/s31;->a(Lj3/s31;)V
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static c(IJLjava/lang/String;ILjava/util/PriorityQueue;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(IJ",
+            "Ljava/lang/String;",
+            "I",
+            "Ljava/util/PriorityQueue<",
+            "Lj3/w31;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Lj3/w31;
+
+    invoke-direct {v0, p1, p2, p3, p4}, Lj3/w31;-><init>(JLjava/lang/String;I)V
+
+    .line 2
+    invoke-virtual {p5}, Ljava/util/PriorityQueue;->size()I
+
+    move-result p3
+
+    if-ne p3, p0, :cond_1
+
+    .line 3
+    invoke-virtual {p5}, Ljava/util/PriorityQueue;->peek()Ljava/lang/Object;
+
+    move-result-object p3
+
+    check-cast p3, Lj3/w31;
+
+    iget p3, p3, Lj3/w31;->c:I
+
+    if-gt p3, p4, :cond_0
+
+    invoke-virtual {p5}, Ljava/util/PriorityQueue;->peek()Ljava/lang/Object;
+
+    move-result-object p3
+
+    check-cast p3, Lj3/w31;
+
+    iget-wide p3, p3, Lj3/w31;->a:J
+
+    cmp-long v1, p3, p1
+
+    if-lez v1, :cond_1
+
+    :cond_0
+    return-void
+
+    .line 4
+    :cond_1
+    invoke-virtual {p5, v0}, Ljava/util/PriorityQueue;->contains(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
 
     return-void
+
+    .line 5
+    :cond_2
+    invoke-virtual {p5, v0}, Ljava/util/PriorityQueue;->add(Ljava/lang/Object;)Z
+
+    .line 6
+    invoke-virtual {p5}, Ljava/util/PriorityQueue;->size()I
+
+    move-result p1
+
+    if-le p1, p0, :cond_3
+
+    .line 7
+    invoke-virtual {p5}, Ljava/util/PriorityQueue;->poll()Ljava/lang/Object;
+
+    :cond_3
+    return-void
+.end method
+
+.method public static d([Ljava/lang/String;I)J
+    .locals 9
+
+    const/4 v0, 0x0
+
+    .line 1
+    aget-object v0, p0, v0
+
+    invoke-static {v0}, Lj3/s31;->a(Ljava/lang/String;)I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    const-wide/32 v2, 0x7fffffff
+
+    add-long/2addr v0, v2
+
+    const-wide/32 v4, 0x4000ffff
+
+    rem-long/2addr v0, v4
+
+    const/4 v6, 0x1
+
+    :goto_0
+    if-ge v6, p1, :cond_0
+
+    const-wide/32 v7, 0x1001fff
+
+    mul-long v0, v0, v7
+
+    .line 2
+    rem-long/2addr v0, v4
+
+    .line 3
+    aget-object v7, p0, v6
+
+    invoke-static {v7}, Lj3/s31;->a(Ljava/lang/String;)I
+
+    move-result v7
+
+    int-to-long v7, v7
+
+    add-long/2addr v7, v2
+
+    rem-long/2addr v7, v4
+
+    add-long/2addr v7, v0
+
+    .line 4
+    rem-long v0, v7, v4
+
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-wide v0
 .end method

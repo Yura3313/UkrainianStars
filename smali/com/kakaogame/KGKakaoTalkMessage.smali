@@ -27,10 +27,10 @@
     return-void
 .end method
 
-.method public static synthetic a(Lcom/kakaogame/KGResultCallback;Lcom/kakao/sdk/link/model/LinkResult;Ljava/lang/Throwable;)Lbe/n;
+.method public static synthetic a(Lcom/kakaogame/KGResultCallback;Lcom/kakao/sdk/link/model/LinkResult;Ljava/lang/Throwable;)Lae/i;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lcom/kakaogame/KGKakaoTalkMessage;->lambda$sendTextTemplateMessage$0(Lcom/kakaogame/KGResultCallback;Lcom/kakao/sdk/link/model/LinkResult;Ljava/lang/Throwable;)Lbe/n;
+    invoke-static {p0, p1, p2}, Lcom/kakaogame/KGKakaoTalkMessage;->lambda$sendTextTemplateMessage$0(Lcom/kakaogame/KGResultCallback;Lcom/kakao/sdk/link/model/LinkResult;Ljava/lang/Throwable;)Lae/i;
 
     move-result-object p0
 
@@ -214,7 +214,7 @@
     return-void
 .end method
 
-.method private static synthetic lambda$sendTextTemplateMessage$0(Lcom/kakaogame/KGResultCallback;Lcom/kakao/sdk/link/model/LinkResult;Ljava/lang/Throwable;)Lbe/n;
+.method private static synthetic lambda$sendTextTemplateMessage$0(Lcom/kakaogame/KGResultCallback;Lcom/kakao/sdk/link/model/LinkResult;Ljava/lang/Throwable;)Lae/i;
     .locals 1
 
     const-string v0, "sendTextTemplateMessage"
@@ -273,7 +273,7 @@
     .line 9
     :cond_1
     :goto_0
-    sget-object p0, Lbe/n;->a:Lbe/n;
+    sget-object p0, Lae/i;->a:Lae/i;
 
     return-object p0
 .end method
@@ -711,12 +711,16 @@
 
     .line 91
     :try_start_a
-    new-instance v6, Ljava/io/FileOutputStream;
+    new-instance v0, Ljava/io/FileOutputStream;
 
-    invoke-direct {v6, v7}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+    invoke-direct {v0, v7}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+
+    invoke-static {v0, v7}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;)Ljava/io/FileOutputStream;
+
+    move-result-object v6
     :try_end_a
     .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_4
-    .catchall {:try_start_a .. :try_end_a} :catchall_1
+    .catchall {:try_start_a .. :try_end_a} :catchall_0
 
     .line 92
     :try_start_b
@@ -730,7 +734,7 @@
     invoke-virtual {v6}, Ljava/io/FileOutputStream;->flush()V
     :try_end_b
     .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_3
-    .catchall {:try_start_b .. :try_end_b} :catchall_0
+    .catchall {:try_start_b .. :try_end_b} :catchall_1
 
     .line 94
     :try_start_c
@@ -1154,17 +1158,12 @@
 
     return-object v0
 
-    :catchall_0
-    move-exception v0
-
-    goto :goto_5
-
     :catch_3
     move-exception v0
 
     goto :goto_4
 
-    :catchall_1
+    :catchall_0
     move-exception v0
 
     move-object v6, v5
@@ -1187,7 +1186,7 @@
 
     move-result-object v0
     :try_end_13
-    .catchall {:try_start_13 .. :try_end_13} :catchall_0
+    .catchall {:try_start_13 .. :try_end_13} :catchall_1
 
     if-eqz v6, :cond_e
 
@@ -1214,6 +1213,9 @@
     invoke-static {v1, v5, v2, v3}, Lcom/kakaogame/core/KGResultUtil;->writeClientApiCall(Ljava/lang/String;Lcom/kakaogame/KGResult;J)V
 
     return-object v0
+
+    :catchall_1
+    move-exception v0
 
     :goto_5
     if-eqz v6, :cond_f
@@ -4224,7 +4226,7 @@
     const-string v1, "required_scopes: "
 
     .line 6
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -4285,7 +4287,7 @@
     const-string p0, "updateScope Fail: "
 
     .line 12
-    invoke-static {p0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 

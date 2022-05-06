@@ -63,7 +63,7 @@
     new-array v2, v1, [B
 
     .line 2
-    sget-object v3, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->b:Ljava/util/logging/Logger;
+    sget-object v3, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->h:Ljava/util/logging/Logger;
 
     .line 3
     new-instance v3, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;
@@ -154,7 +154,7 @@
     const-string v0, "Serializing "
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -210,13 +210,13 @@
 
     move-result v1
 
-    sget-object v2, Lm5/c;->b:Lm5/c;
+    sget-object v2, Lm5/c;->h:Lm5/c;
 
     .line 2
     new-array v2, v1, [B
 
     .line 3
-    sget-object v3, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->b:Ljava/util/logging/Logger;
+    sget-object v3, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->h:Ljava/util/logging/Logger;
 
     .line 4
     new-instance v3, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;

@@ -1,56 +1,18 @@
-.class public final Lwd/x;
+.class public abstract Lwd/x;
 .super Ljava/lang/Object;
-.source "NetworkUtil.kt"
+.source "ProfileStorage.kt"
 
 
-# static fields
-.field public static final a:Ljava/lang/String;
-
-.field public static final b:Lwd/b1;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lwd/b1<",
-            "Landroid/graphics/Bitmap;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final c:Lwd/x;
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lwd/x$a;,
+        Lwd/x$b;
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Lwd/x;
-
-    invoke-direct {v0}, Lwd/x;-><init>()V
-
-    sput-object v0, Lwd/x;->c:Lwd/x;
-
-    .line 2
-    const-class v0, Lwd/x;
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lwd/x;->a:Ljava/lang/String;
-
-    .line 3
-    new-instance v0, Lwd/b1;
-
-    sget-object v1, Lwd/x$a;->a:Lwd/x$a;
-
-    invoke-direct {v0, v1}, Lwd/b1;-><init>(Lke/l;)V
-
-    sput-object v0, Lwd/x;->b:Lwd/b1;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
     .locals 0
 
@@ -60,102 +22,169 @@
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(Ljava/lang/String;)Lse/h0;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            ")",
-            "Lse/h0<",
-            "Landroid/graphics/Bitmap;",
-            ">;"
-        }
-    .end annotation
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    sget-object v0, Lwd/x;->b:Lwd/b1;
-
-    invoke-virtual {v0, p1}, Lwd/b1;->a(Ljava/lang/String;)Lse/h0;
-
-    move-result-object p1
-
-    return-object p1
-
-    :cond_0
-    const-string p1, "url"
+.method public constructor <init>(Lle/g;)V
+    .locals 0
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 p1, 0x0
-
-    throw p1
+    return-void
 .end method
 
-.method public final b(Ljava/lang/String;ZLke/l;)Lse/h0;
-    .locals 7
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<R:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/lang/String;",
-            "Z",
-            "Lke/l<",
-            "-",
-            "Ljava/io/InputStream;",
-            "+TR;>;)",
-            "Lse/h0<",
-            "TR;>;"
-        }
-    .end annotation
 
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_1
-
-    if-eqz p3, :cond_0
+# virtual methods
+.method public final a()Lcom/supercell/id/model/IdProfile;
+    .locals 2
 
     .line 1
-    sget-object v1, Lse/w0;->a:Lse/w0;
+    instance-of v0, p0, Lwd/x$a;
+
+    if-eqz v0, :cond_1
+
+    move-object v0, p0
+
+    check-cast v0, Lwd/x$a;
 
     .line 2
-    sget-object v2, Lse/n0;->c:Lse/w;
+    iget-object v1, v0, Lwd/x$a;->b:Lcom/supercell/id/model/IdProfile;
 
-    const/4 v3, 0x0
+    if-eqz v1, :cond_0
+
+    goto :goto_0
 
     .line 3
-    new-instance v4, Lwd/x$b;
-
-    invoke-direct {v4, p1, p2, p3, v0}, Lwd/x$b;-><init>(Ljava/lang/String;ZLke/l;Lde/d;)V
-
-    const/4 v5, 0x2
-
-    const/4 v6, 0x0
-
-    invoke-static/range {v1 .. v6}, Ly4/x;->b(Lse/a0;Lde/f;Lse/c0;Lke/p;ILjava/lang/Object;)Lse/h0;
-
-    move-result-object p1
-
-    return-object p1
-
     :cond_0
-    const-string p1, "transform"
+    iget-object v1, v0, Lwd/x$a;->a:Lcom/supercell/id/model/IdProfile;
+
+    goto :goto_0
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
-
     :cond_1
-    const-string p1, "url"
+    instance-of v0, p0, Lwd/x$b;
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    if-eqz v0, :cond_3
+
+    move-object v0, p0
+
+    check-cast v0, Lwd/x$b;
+
+    .line 5
+    iget-object v1, v0, Lwd/x$b;->b:Lcom/supercell/id/model/IdProfile;
+
+    if-eqz v1, :cond_2
+
+    goto :goto_0
+
+    .line 6
+    :cond_2
+    iget-object v1, v0, Lwd/x$b;->a:Lcom/supercell/id/model/IdProfile;
+
+    :goto_0
+    return-object v1
+
+    .line 7
+    :cond_3
+    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
+
+    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
 
     throw v0
+.end method
+
+.method public final b()Lcom/supercell/id/model/IdProfile;
+    .locals 1
+
+    .line 1
+    instance-of v0, p0, Lwd/x$b;
+
+    if-eqz v0, :cond_0
+
+    move-object v0, p0
+
+    check-cast v0, Lwd/x$b;
+
+    .line 2
+    iget-object v0, v0, Lwd/x$b;->a:Lcom/supercell/id/model/IdProfile;
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return-object v0
+.end method
+
+.method public final c(Lcom/supercell/id/model/IdProfile;)Lwd/x;
+    .locals 2
+
+    .line 1
+    instance-of v0, p0, Lwd/x$a;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_1
+
+    move-object v0, p0
+
+    check-cast v0, Lwd/x$a;
+
+    .line 2
+    iget-object v0, v0, Lwd/x$a;->a:Lcom/supercell/id/model/IdProfile;
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    new-instance v1, Lwd/x$a;
+
+    invoke-direct {v1, v0, p1}, Lwd/x$a;-><init>(Lcom/supercell/id/model/IdProfile;Lcom/supercell/id/model/IdProfile;)V
+
+    goto :goto_0
+
+    :cond_0
+    const-string p1, "fromPersistentStorage"
+
+    .line 4
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 5
+    :cond_1
+    instance-of v0, p0, Lwd/x$b;
+
+    if-eqz v0, :cond_3
+
+    move-object v0, p0
+
+    check-cast v0, Lwd/x$b;
+
+    .line 6
+    iget-object v0, v0, Lwd/x$b;->a:Lcom/supercell/id/model/IdProfile;
+
+    if-eqz v0, :cond_2
+
+    .line 7
+    new-instance v1, Lwd/x$b;
+
+    invoke-direct {v1, v0, p1}, Lwd/x$b;-><init>(Lcom/supercell/id/model/IdProfile;Lcom/supercell/id/model/IdProfile;)V
+
+    :goto_0
+    return-object v1
+
+    :cond_2
+    const-string p1, "fromServer"
+
+    .line 8
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 9
+    :cond_3
+    new-instance p1, Lkotlin/NoWhenBranchMatchedException;
+
+    invoke-direct {p1}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
+
+    throw p1
 .end method

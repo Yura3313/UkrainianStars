@@ -3,74 +3,52 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/lh0;
+.implements Ljava/lang/Cloneable;
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public g:Z
+
+.field public h:Z
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lj3/nh0;->a:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
+.method public final clone()Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/CloneNotSupportedException;
+        }
+    .end annotation
 
     .line 1
-    instance-of v0, p1, Lj3/nh0;
+    :try_start_0
+    invoke-super {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
-    if-nez v0, :cond_0
+    move-result-object v0
 
-    const/4 p1, 0x0
-
-    return p1
-
-    .line 2
-    :cond_0
-    check-cast p1, Lj3/nh0;
-
-    .line 3
-    iget-object v0, p0, Lj3/nh0;->a:Ljava/lang/String;
-
-    iget-object p1, p1, Lj3/nh0;->a:Ljava/lang/String;
-
-    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lj3/nh0;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lj3/nh0;->a:Ljava/lang/String;
+    check-cast v0, Lj3/nh0;
+    :try_end_0
+    .catch Ljava/lang/CloneNotSupportedException; {:try_start_0 .. :try_end_0} :catch_0
 
     return-object v0
+
+    .line 2
+    :catch_0
+    new-instance v0, Ljava/lang/AssertionError;
+
+    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
+
+    throw v0
 .end method

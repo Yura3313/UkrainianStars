@@ -4,20 +4,24 @@
 
 
 # instance fields
-.field public b:I
+.field public h:I
 
-.field public final synthetic h:Lde/d;
+.field public final synthetic i:Lde/d;
 
-.field public final synthetic i:Lke/l;
+.field public final synthetic j:Lke/p;
+
+.field public final synthetic k:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lde/d;Lde/d;Lke/l;)V
+.method public constructor <init>(Lde/d;Lde/d;Lke/p;Ljava/lang/Object;)V
     .locals 0
 
-    iput-object p1, p0, Lee/b;->h:Lde/d;
+    iput-object p1, p0, Lee/b;->i:Lde/d;
 
-    iput-object p3, p0, Lee/b;->i:Lke/l;
+    iput-object p3, p0, Lee/b;->j:Lke/p;
+
+    iput-object p4, p0, Lee/b;->k:Ljava/lang/Object;
 
     .line 1
     invoke-direct {p0, p2}, Lfe/g;-><init>(Lde/d;)V
@@ -28,24 +32,24 @@
 
 # virtual methods
 .method public f(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+    .locals 3
 
     .line 1
-    iget v0, p0, Lee/b;->b:I
+    iget v0, p0, Lee/b;->h:I
 
-    const/4 v1, 0x1
+    const/4 v1, 0x2
+
+    const/4 v2, 0x1
 
     if-eqz v0, :cond_1
 
-    if-ne v0, v1, :cond_0
-
-    const/4 v0, 0x2
+    if-ne v0, v2, :cond_0
 
     .line 2
-    iput v0, p0, Lee/b;->b:I
+    iput v1, p0, Lee/b;->h:I
 
     .line 3
-    invoke-static {p1}, Lbe/e;->g(Ljava/lang/Object;)V
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->e(Ljava/lang/Object;)V
 
     goto :goto_0
 
@@ -65,21 +69,23 @@
 
     .line 5
     :cond_1
-    iput v1, p0, Lee/b;->b:I
+    iput v2, p0, Lee/b;->h:I
 
     .line 6
-    invoke-static {p1}, Lbe/e;->g(Ljava/lang/Object;)V
+    invoke-static {p1}, Lcom/android/billingclient/api/v;->e(Ljava/lang/Object;)V
 
     .line 7
-    iget-object p1, p0, Lee/b;->i:Lke/l;
+    iget-object p1, p0, Lee/b;->j:Lke/p;
 
     if-eqz p1, :cond_2
 
     invoke-static {p1, v1}, Lle/v;->b(Ljava/lang/Object;I)Ljava/lang/Object;
 
-    check-cast p1, Lke/l;
+    check-cast p1, Lke/p;
 
-    invoke-interface {p1, p0}, Lke/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v0, p0, Lee/b;->k:Ljava/lang/Object;
+
+    invoke-interface {p1, v0, p0}, Lke/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -89,7 +95,7 @@
     :cond_2
     new-instance p1, Lkotlin/TypeCastException;
 
-    const-string v0, "null cannot be cast to non-null type (kotlin.coroutines.Continuation<T>) -> kotlin.Any?"
+    const-string v0, "null cannot be cast to non-null type (R, kotlin.coroutines.Continuation<T>) -> kotlin.Any?"
 
     invoke-direct {p1, v0}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
 

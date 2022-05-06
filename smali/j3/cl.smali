@@ -3,29 +3,59 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
+.implements Lj3/rv0;
 
 
 # instance fields
 .field public final synthetic a:I
 
+.field public final b:Lj3/vv0;
+
 
 # direct methods
-.method public synthetic constructor <init>(I)V
+.method public synthetic constructor <init>(Lj3/vv0;I)V
     .locals 0
 
     .line 1
-    iput p1, p0, Lj3/cl;->a:I
+    iput p2, p0, Lj3/cl;->a:I
+
+    iput-object p1, p0, Lj3/cl;->b:Lj3/vv0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
+.method public static a(Lj3/vv0;)Lj3/cl;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lj3/cl;
+
+    const/4 v1, 0x2
+
+    invoke-direct {v0, p0, v1}, Lj3/cl;-><init>(Lj3/vv0;I)V
+
+    return-object v0
+.end method
+
+.method public static b(Lj3/vv0;)Lj3/cl;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lj3/cl;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, p0, v1}, Lj3/cl;-><init>(Lj3/vv0;I)V
+
+    return-object v0
+.end method
+
 
 # virtual methods
 .method public final get()Ljava/lang/Object;
-    .locals 4
+    .locals 2
 
     iget v0, p0, Lj3/cl;->a:I
 
@@ -35,44 +65,57 @@
 
     .line 1
     :pswitch_0
-    new-instance v0, Lj3/eu;
+    iget-object v0, p0, Lj3/cl;->b:Lj3/vv0;
 
-    invoke-direct {v0}, Lj3/eu;-><init>()V
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    return-object v0
+    move-result-object v0
 
-    :pswitch_1
-    const-string v0, "app_open_ad"
-
-    return-object v0
+    check-cast v0, Ljava/util/Set;
 
     .line 2
-    :pswitch_2
-    new-instance v0, Lj3/n7;
+    new-instance v1, Lj3/ms;
 
-    invoke-direct {v0}, Lj3/n7;-><init>()V
+    invoke-direct {v1, v0}, Lj3/ms;-><init>(Ljava/util/Set;)V
 
-    return-object v0
+    return-object v1
 
     .line 3
+    :pswitch_1
+    iget-object v0, p0, Lj3/cl;->b:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    .line 4
+    new-instance v1, Lj3/jd;
+
+    invoke-direct {v1, v0}, Lj3/jd;-><init>(Ljava/lang/String;)V
+
+    return-object v1
+
+    .line 5
     :goto_0
-    new-instance v0, Lj3/k00;
+    iget-object v0, p0, Lj3/cl;->b:Lj3/vv0;
 
-    sget-object v1, Lj3/x31;->zzbwv:Lj3/x31;
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    sget-object v2, Lj3/x31;->zzbww:Lj3/x31;
+    move-result-object v0
 
-    sget-object v3, Lj3/x31;->zzbwx:Lj3/x31;
+    check-cast v0, Lj3/c40;
 
-    invoke-direct {v0, v1, v2, v3}, Lj3/k00;-><init>(Lj3/x31;Lj3/x31;Lj3/x31;)V
+    .line 6
+    new-instance v1, Lj3/d40;
 
-    return-object v0
+    invoke-direct {v1, v0}, Lj3/d40;-><init>(Lj3/c40;)V
 
-    nop
+    return-object v1
 
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_2
         :pswitch_1
         :pswitch_0
     .end packed-switch

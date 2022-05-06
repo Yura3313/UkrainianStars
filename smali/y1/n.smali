@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final i:Ljava/lang/ref/WeakReference;
+.field public static final j:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public h:Ljava/lang/ref/WeakReference;
+.field public i:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -36,7 +36,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    sput-object v0, Ly1/n;->i:Ljava/lang/ref/WeakReference;
+    sput-object v0, Ly1/n;->j:Ljava/lang/ref/WeakReference;
 
     return-void
 .end method
@@ -48,16 +48,16 @@
     invoke-direct {p0, p1}, Ly1/l;-><init>([B)V
 
     .line 2
-    sget-object p1, Ly1/n;->i:Ljava/lang/ref/WeakReference;
+    sget-object p1, Ly1/n;->j:Ljava/lang/ref/WeakReference;
 
-    iput-object p1, p0, Ly1/n;->h:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Ly1/n;->i:Ljava/lang/ref/WeakReference;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final P0()[B
+.method public final Q0()[B
     .locals 2
 
     .line 1
@@ -65,7 +65,7 @@
 
     .line 2
     :try_start_0
-    iget-object v0, p0, Ly1/n;->h:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Ly1/n;->i:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -76,7 +76,7 @@
     if-nez v0, :cond_0
 
     .line 3
-    invoke-virtual {p0}, Ly1/n;->X1()[B
+    invoke-virtual {p0}, Ly1/n;->Y1()[B
 
     move-result-object v0
 
@@ -85,7 +85,7 @@
 
     invoke-direct {v1, v0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v1, p0, Ly1/n;->h:Ljava/lang/ref/WeakReference;
+    iput-object v1, p0, Ly1/n;->i:Ljava/lang/ref/WeakReference;
 
     .line 5
     :cond_0
@@ -104,5 +104,5 @@
     throw v0
 .end method
 
-.method public abstract X1()[B
+.method public abstract Y1()[B
 .end method

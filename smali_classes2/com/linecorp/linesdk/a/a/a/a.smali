@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private final b:Lvb/a;
+.field private final b:Ltb/a;
 
 .field private final c:Lcom/linecorp/linesdk/a/a/a/d;
 
@@ -35,23 +35,23 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lvb/a;
+    new-instance v0, Ltb/a;
 
-    invoke-direct {v0, p1, p2}, Lvb/a;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v0, p1, p2}, Ltb/a;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    invoke-direct {p0, v0}, Lcom/linecorp/linesdk/a/a/a/a;-><init>(Lvb/a;)V
+    invoke-direct {p0, v0}, Lcom/linecorp/linesdk/a/a/a/a;-><init>(Ltb/a;)V
 
     return-void
 .end method
 
-.method private constructor <init>(Lvb/a;)V
+.method private constructor <init>(Ltb/a;)V
     .locals 1
 
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 3
-    iput-object p1, p0, Lcom/linecorp/linesdk/a/a/a/a;->b:Lvb/a;
+    iput-object p1, p0, Lcom/linecorp/linesdk/a/a/a/a;->b:Ltb/a;
 
     .line 4
     new-instance p1, Lcom/linecorp/linesdk/a/a/a/d;
@@ -288,14 +288,14 @@
     check-cast v0, Ljavax/net/ssl/HttpsURLConnection;
 
     .line 28
-    new-instance p0, Ltb/a;
+    new-instance p0, Lrb/a;
 
     .line 29
     invoke-virtual {v0}, Ljavax/net/ssl/HttpsURLConnection;->getSSLSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Ltb/a;-><init>(Ljavax/net/ssl/SSLSocketFactory;)V
+    invoke-direct {p0, v1}, Lrb/a;-><init>(Ljavax/net/ssl/SSLSocketFactory;)V
 
     .line 30
     invoke-virtual {v0, p0}, Ljavax/net/ssl/HttpsURLConnection;->setSSLSocketFactory(Ljavax/net/ssl/SSLSocketFactory;)V
@@ -536,9 +536,9 @@
     const-string v3, "User-Agent"
 
     .line 5
-    iget-object v4, p0, Lcom/linecorp/linesdk/a/a/a/a;->b:Lvb/a;
+    iget-object v4, p0, Lcom/linecorp/linesdk/a/a/a/a;->b:Ltb/a;
 
-    invoke-virtual {v4}, Lvb/a;->a()Ljava/lang/String;
+    invoke-virtual {v4}, Ltb/a;->a()Ljava/lang/String;
 
     move-result-object v4
 
@@ -765,9 +765,9 @@
     const-string v0, "User-Agent"
 
     .line 7
-    iget-object v1, p0, Lcom/linecorp/linesdk/a/a/a/a;->b:Lvb/a;
+    iget-object v1, p0, Lcom/linecorp/linesdk/a/a/a/a;->b:Ltb/a;
 
-    invoke-virtual {v1}, Lvb/a;->a()Ljava/lang/String;
+    invoke-virtual {v1}, Ltb/a;->a()Ljava/lang/String;
 
     move-result-object v1
 

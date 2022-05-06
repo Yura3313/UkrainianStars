@@ -280,14 +280,14 @@
     .line 22
     invoke-virtual {p0, v5, v6}, Lio/sentry/DirectoryProcessor;->processFile(Ljava/io/File;Ljava/lang/Object;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :goto_2
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_1
 
-    :catch_0
+    :catchall_0
     move-exception v2
 
     .line 23

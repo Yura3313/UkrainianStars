@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method public final X2(Lcom/google/android/gms/internal/drive/zzfp;)V
+.method public final Y2(Lcom/google/android/gms/internal/drive/zzfp;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -29,7 +29,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/drive/zzfp;->x2()Lcom/google/android/gms/drive/events/DriveEvent;
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/drive/zzfp;->z2()Lcom/google/android/gms/drive/events/DriveEvent;
 
     move-result-object p1
 

@@ -4,13 +4,13 @@
 
 
 # static fields
-.field public static final synthetic c0:I
+.field public static final synthetic d0:I
 
 
 # instance fields
-.field public V:Landroidx/viewpager/widget/ViewPager;
+.field public W:Landroidx/viewpager/widget/ViewPager;
 
-.field public W:Lke/l;
+.field public a0:Lke/l;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lke/l<",
@@ -22,7 +22,7 @@
     .end annotation
 .end field
 
-.field public a0:Lke/l;
+.field public b0:Lke/l;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lke/l<",
@@ -37,7 +37,7 @@
     .end annotation
 .end field
 
-.field public final b0:Lcom/supercell/id/view/SubPageTabLayout$d;
+.field public final c0:Lcom/supercell/id/view/SubPageTabLayout$d;
 
 
 # direct methods
@@ -61,21 +61,21 @@
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/material/tabs/TabLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 3
-    sget-object p1, Lcom/supercell/id/view/SubPageTabLayout$b;->a:Lcom/supercell/id/view/SubPageTabLayout$b;
-
-    iput-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout;->W:Lke/l;
-
-    .line 4
-    sget-object p1, Lcom/supercell/id/view/SubPageTabLayout$c;->a:Lcom/supercell/id/view/SubPageTabLayout$c;
+    sget-object p1, Lcom/supercell/id/view/SubPageTabLayout$b;->g:Lcom/supercell/id/view/SubPageTabLayout$b;
 
     iput-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout;->a0:Lke/l;
+
+    .line 4
+    sget-object p1, Lcom/supercell/id/view/SubPageTabLayout$c;->g:Lcom/supercell/id/view/SubPageTabLayout$c;
+
+    iput-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout;->b0:Lke/l;
 
     .line 5
     new-instance p1, Lcom/supercell/id/view/SubPageTabLayout$d;
 
     invoke-direct {p1, p0}, Lcom/supercell/id/view/SubPageTabLayout$d;-><init>(Lcom/supercell/id/view/SubPageTabLayout;)V
 
-    iput-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout;->b0:Lcom/supercell/id/view/SubPageTabLayout$d;
+    iput-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout;->c0:Lcom/supercell/id/view/SubPageTabLayout$d;
 
     return-void
 
@@ -83,7 +83,7 @@
     const-string p1, "context"
 
     .line 6
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -113,7 +113,7 @@
     if-eqz p3, :cond_1
 
     .line 4
-    iget-object v1, p0, Lcom/supercell/id/view/SubPageTabLayout;->W:Lke/l;
+    iget-object v1, p0, Lcom/supercell/id/view/SubPageTabLayout;->a0:Lke/l;
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -138,9 +138,9 @@
 
     const-string v2, "view.tab_title"
 
-    invoke-static {p3, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v2, p0, Lcom/supercell/id/view/SubPageTabLayout;->a0:Lke/l;
+    iget-object v2, p0, Lcom/supercell/id/view/SubPageTabLayout;->b0:Lke/l;
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -157,11 +157,11 @@
     goto :goto_0
 
     :cond_0
-    sget-object v2, Lce/o;->a:Lce/o;
+    sget-object v2, Lbe/n;->g:Lbe/n;
 
     .line 6
     :goto_0
-    invoke-static {p3, v1, v2, v0}, Lqd/e0;->h(Landroid/widget/TextView;Ljava/lang/String;Ljava/util/Map;Lke/l;)V
+    invoke-static {p3, v1, v2, v0}, Lpd/d0;->i(Landroid/widget/TextView;Ljava/lang/String;Ljava/util/Map;Lke/l;)V
 
     .line 7
     :cond_1
@@ -193,7 +193,7 @@
 
     .line 10
     :cond_3
-    iget-object v0, p0, Lcom/supercell/id/view/SubPageTabLayout;->V:Landroidx/viewpager/widget/ViewPager;
+    iget-object v0, p0, Lcom/supercell/id/view/SubPageTabLayout;->W:Landroidx/viewpager/widget/ViewPager;
 
     if-eqz v0, :cond_4
 
@@ -223,7 +223,7 @@
     const-string p1, "tab"
 
     .line 12
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -241,7 +241,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/SubPageTabLayout;->W:Lke/l;
+    iget-object v0, p0, Lcom/supercell/id/view/SubPageTabLayout;->a0:Lke/l;
 
     return-object v0
 .end method
@@ -261,7 +261,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/SubPageTabLayout;->a0:Lke/l;
+    iget-object v0, p0, Lcom/supercell/id/view/SubPageTabLayout;->b0:Lke/l;
 
     return-object v0
 .end method
@@ -270,7 +270,7 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout;->V:Landroidx/viewpager/widget/ViewPager;
+    iput-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout;->W:Landroidx/viewpager/widget/ViewPager;
 
     const/4 v0, 0x0
 
@@ -278,18 +278,18 @@
     invoke-virtual {p0, p1, p2, v0}, Lcom/google/android/material/tabs/TabLayout;->n(Landroidx/viewpager/widget/ViewPager;ZZ)V
 
     .line 3
-    iget-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout;->b0:Lcom/supercell/id/view/SubPageTabLayout$d;
+    iget-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout;->c0:Lcom/supercell/id/view/SubPageTabLayout$d;
 
     .line 4
-    iget-object p2, p0, Lcom/google/android/material/tabs/TabLayout;->J:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/google/android/material/tabs/TabLayout;->K:Ljava/util/ArrayList;
 
     invoke-virtual {p2, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     .line 5
-    iget-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout;->b0:Lcom/supercell/id/view/SubPageTabLayout$d;
+    iget-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout;->c0:Lcom/supercell/id/view/SubPageTabLayout$d;
 
     .line 6
-    iget-object p2, p0, Lcom/google/android/material/tabs/TabLayout;->J:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/google/android/material/tabs/TabLayout;->K:Ljava/util/ArrayList;
 
     invoke-virtual {p2, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -298,7 +298,7 @@
     if-nez p2, :cond_0
 
     .line 7
-    iget-object p2, p0, Lcom/google/android/material/tabs/TabLayout;->J:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/google/android/material/tabs/TabLayout;->K:Ljava/util/ArrayList;
 
     invoke-virtual {p2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -313,7 +313,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/SubPageTabLayout;->V:Landroidx/viewpager/widget/ViewPager;
+    iget-object v0, p0, Lcom/supercell/id/view/SubPageTabLayout;->W:Landroidx/viewpager/widget/ViewPager;
 
     if-eqz v0, :cond_1
 
@@ -427,7 +427,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout;->W:Lke/l;
+    iput-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout;->a0:Lke/l;
 
     return-void
 
@@ -435,7 +435,7 @@
     const-string p1, "<set-?>"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -461,7 +461,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout;->a0:Lke/l;
+    iput-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout;->b0:Lke/l;
 
     return-void
 
@@ -469,7 +469,7 @@
     const-string p1, "<set-?>"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -482,16 +482,16 @@
     const/4 v0, 0x0
 
     .line 1
-    iput-object v0, p0, Lcom/supercell/id/view/SubPageTabLayout;->V:Landroidx/viewpager/widget/ViewPager;
+    iput-object v0, p0, Lcom/supercell/id/view/SubPageTabLayout;->W:Landroidx/viewpager/widget/ViewPager;
 
     .line 2
     invoke-super {p0, v0}, Lcom/google/android/material/tabs/TabLayout;->setupWithViewPager(Landroidx/viewpager/widget/ViewPager;)V
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/view/SubPageTabLayout;->b0:Lcom/supercell/id/view/SubPageTabLayout$d;
+    iget-object v0, p0, Lcom/supercell/id/view/SubPageTabLayout;->c0:Lcom/supercell/id/view/SubPageTabLayout$d;
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/material/tabs/TabLayout;->J:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/google/android/material/tabs/TabLayout;->K:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -501,14 +501,14 @@
     move-result-object v0
 
     .line 6
-    iget-object v1, p0, Lcom/google/android/material/tabs/TabLayout;->a:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/google/android/material/tabs/TabLayout;->g:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v1
 
     .line 7
-    iget-object v2, p0, Lcom/google/android/material/tabs/TabLayout;->a:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/google/android/material/tabs/TabLayout;->g:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 

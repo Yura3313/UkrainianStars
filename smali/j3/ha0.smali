@@ -1,137 +1,170 @@
-.class public final Lj3/ha0;
+.class public final synthetic Lj3/ha0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/uc0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lj3/uc0<",
-        "Landroid/os/Bundle;",
-        ">;"
-    }
-.end annotation
+.implements Lj3/cd0;
 
 
 # instance fields
-.field public final a:I
+.field public final a:Lj3/ia0;
 
-.field public final b:Z
-
-.field public final c:Z
-
-.field public final d:I
-
-.field public final e:I
-
-.field public final f:I
-
-.field public final g:F
-
-.field public final h:Z
+.field public final b:Landroid/os/Bundle;
 
 
 # direct methods
-.method public constructor <init>(IZZIIIFZ)V
+.method public constructor <init>(Lj3/ia0;Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput p1, p0, Lj3/ha0;->a:I
+    iput-object p1, p0, Lj3/ha0;->a:Lj3/ia0;
 
-    .line 3
-    iput-boolean p2, p0, Lj3/ha0;->b:Z
-
-    .line 4
-    iput-boolean p3, p0, Lj3/ha0;->c:Z
-
-    .line 5
-    iput p4, p0, Lj3/ha0;->d:I
-
-    .line 6
-    iput p5, p0, Lj3/ha0;->e:I
-
-    .line 7
-    iput p6, p0, Lj3/ha0;->f:I
-
-    .line 8
-    iput p7, p0, Lj3/ha0;->g:F
-
-    .line 9
-    iput-boolean p8, p0, Lj3/ha0;->h:Z
+    iput-object p2, p0, Lj3/ha0;->b:Landroid/os/Bundle;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic b(Ljava/lang/Object;)V
-    .locals 2
+.method public final b(Ljava/lang/Object;)V
+    .locals 4
 
-    .line 1
+    iget-object v0, p0, Lj3/ha0;->a:Lj3/ia0;
+
+    iget-object v1, p0, Lj3/ha0;->b:Landroid/os/Bundle;
+
     check-cast p1, Landroid/os/Bundle;
 
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 1
+    sget-object v2, Lj3/n;->E2:Lj3/f;
+
     .line 2
-    iget v0, p0, Lj3/ha0;->a:I
+    sget-object v3, Lj3/t51;->j:Lj3/t51;
 
-    const-string v1, "am"
-
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    iget-object v3, v3, Lj3/t51;->f:Lj3/l;
 
     .line 3
-    iget-boolean v0, p0, Lj3/ha0;->b:Z
+    invoke-virtual {v3, v2}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
 
-    const-string v1, "ma"
-
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+    move-result-object v2
 
     .line 4
-    iget-boolean v0, p0, Lj3/ha0;->c:Z
+    check-cast v2, Ljava/lang/Boolean;
 
-    const-string v1, "sp"
+    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
 
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    const-string v2, "quality_signals"
 
     .line 5
-    iget v0, p0, Lj3/ha0;->d:I
+    invoke-virtual {p1, v2, v1}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 
-    const-string v1, "muv"
-
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    goto :goto_0
 
     .line 6
-    iget v0, p0, Lj3/ha0;->e:I
-
-    const-string v1, "rm"
-
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    :cond_0
+    sget-object v1, Lj3/n;->D2:Lj3/f;
 
     .line 7
-    iget v0, p0, Lj3/ha0;->f:I
+    sget-object v2, Lj3/t51;->j:Lj3/t51;
 
-    const-string v1, "riv"
-
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    iget-object v2, v2, Lj3/t51;->f:Lj3/l;
 
     .line 8
-    iget v0, p0, Lj3/ha0;->g:F
+    invoke-virtual {v2, v1}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
 
-    const-string v1, "android_app_volume"
-
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putFloat(Ljava/lang/String;F)V
+    move-result-object v1
 
     .line 9
-    iget-boolean v0, p0, Lj3/ha0;->h:Z
+    check-cast v1, Ljava/lang/Boolean;
 
-    const-string v1, "android_app_muted"
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 10
+    sget-object v1, Lj3/ia0;->f:Ljava/lang/Object;
+
+    monitor-enter v1
+
+    .line 11
+    :try_start_0
+    iget-object v2, v0, Lj3/ia0;->c:Lj3/kp;
+
+    iget-object v3, v0, Lj3/ia0;->e:Lj3/wg0;
+
+    iget-object v3, v3, Lj3/wg0;->d:Lcom/google/android/gms/internal/ads/zzvc;
+
+    invoke-virtual {v2, v3}, Lj3/kp;->a(Lcom/google/android/gms/internal/ads/zzvc;)V
+
+    const-string v2, "quality_signals"
+
+    .line 12
+    iget-object v3, v0, Lj3/ia0;->d:Lj3/eh0;
+
+    invoke-virtual {v3}, Lj3/eh0;->a()Landroid/os/Bundle;
+
+    move-result-object v3
+
+    invoke-virtual {p1, v2, v3}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
+
+    .line 13
+    monitor-exit v1
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+
+    .line 14
+    :cond_1
+    iget-object v1, v0, Lj3/ia0;->c:Lj3/kp;
+
+    iget-object v2, v0, Lj3/ia0;->e:Lj3/wg0;
+
+    iget-object v2, v2, Lj3/wg0;->d:Lcom/google/android/gms/internal/ads/zzvc;
+
+    invoke-virtual {v1, v2}, Lj3/kp;->a(Lcom/google/android/gms/internal/ads/zzvc;)V
+
+    const-string v1, "quality_signals"
+
+    .line 15
+    iget-object v2, v0, Lj3/ia0;->d:Lj3/eh0;
+
+    invoke-virtual {v2}, Lj3/eh0;->a()Landroid/os/Bundle;
+
+    move-result-object v2
+
+    invoke-virtual {p1, v1, v2}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
+
+    :goto_0
+    const-string v1, "seq_num"
+
+    .line 16
+    iget-object v2, v0, Lj3/ia0;->a:Ljava/lang/String;
+
+    invoke-virtual {p1, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v1, "session_id"
+
+    .line 17
+    iget-object v0, v0, Lj3/ia0;->b:Ljava/lang/String;
+
+    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method

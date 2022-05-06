@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
 
 # direct methods
@@ -14,7 +14,7 @@
 
     const/4 p1, -0x1
 
-    iput p1, p0, Lcom/google/android/play/core/assetpacks/o0;->a:I
+    iput p1, p0, Lcom/google/android/play/core/assetpacks/o0;->g:I
 
     return-void
 .end method
@@ -24,7 +24,7 @@
 
     invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    iput p2, p0, Lcom/google/android/play/core/assetpacks/o0;->a:I
+    iput p2, p0, Lcom/google/android/play/core/assetpacks/o0;->g:I
 
     return-void
 .end method
@@ -36,7 +36,7 @@
 
     const/4 p1, -0x1
 
-    iput p1, p0, Lcom/google/android/play/core/assetpacks/o0;->a:I
+    iput p1, p0, Lcom/google/android/play/core/assetpacks/o0;->g:I
 
     return-void
 .end method
@@ -46,7 +46,7 @@
 
     invoke-direct {p0, p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    iput p3, p0, Lcom/google/android/play/core/assetpacks/o0;->a:I
+    iput p3, p0, Lcom/google/android/play/core/assetpacks/o0;->g:I
 
     return-void
 .end method

@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public a:I
+.field public g:I
 
-.field public final synthetic b:Landroidx/appcompat/view/menu/c;
+.field public final synthetic h:Landroidx/appcompat/view/menu/c;
 
 
 # direct methods
@@ -25,14 +25,14 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/view/menu/c$a;->b:Landroidx/appcompat/view/menu/c;
+    iput-object p1, p0, Landroidx/appcompat/view/menu/c$a;->h:Landroidx/appcompat/view/menu/c;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     const/4 p1, -0x1
 
     .line 2
-    iput p1, p0, Landroidx/appcompat/view/menu/c$a;->a:I
+    iput p1, p0, Landroidx/appcompat/view/menu/c$a;->g:I
 
     .line 3
     invoke-virtual {p0}, Landroidx/appcompat/view/menu/c$a;->a()V
@@ -46,9 +46,9 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/c$a;->b:Landroidx/appcompat/view/menu/c;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/c$a;->h:Landroidx/appcompat/view/menu/c;
 
-    iget-object v0, v0, Landroidx/appcompat/view/menu/c;->h:Landroidx/appcompat/view/menu/e;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/c;->i:Landroidx/appcompat/view/menu/e;
 
     .line 2
     iget-object v1, v0, Landroidx/appcompat/view/menu/e;->v:Landroidx/appcompat/view/menu/g;
@@ -81,7 +81,7 @@
     if-ne v4, v1, :cond_0
 
     .line 7
-    iput v3, p0, Landroidx/appcompat/view/menu/c$a;->a:I
+    iput v3, p0, Landroidx/appcompat/view/menu/c$a;->g:I
 
     return-void
 
@@ -94,7 +94,7 @@
     const/4 v0, -0x1
 
     .line 8
-    iput v0, p0, Landroidx/appcompat/view/menu/c$a;->a:I
+    iput v0, p0, Landroidx/appcompat/view/menu/c$a;->g:I
 
     return-void
 .end method
@@ -103,9 +103,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/c$a;->b:Landroidx/appcompat/view/menu/c;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/c$a;->h:Landroidx/appcompat/view/menu/c;
 
-    iget-object v0, v0, Landroidx/appcompat/view/menu/c;->h:Landroidx/appcompat/view/menu/e;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/c;->i:Landroidx/appcompat/view/menu/e;
 
     .line 2
     invoke-virtual {v0}, Landroidx/appcompat/view/menu/e;->j()V
@@ -114,14 +114,14 @@
     iget-object v0, v0, Landroidx/appcompat/view/menu/e;->j:Ljava/util/ArrayList;
 
     .line 4
-    iget-object v1, p0, Landroidx/appcompat/view/menu/c$a;->b:Landroidx/appcompat/view/menu/c;
+    iget-object v1, p0, Landroidx/appcompat/view/menu/c$a;->h:Landroidx/appcompat/view/menu/c;
 
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     add-int/lit8 p1, p1, 0x0
 
     .line 5
-    iget v1, p0, Landroidx/appcompat/view/menu/c$a;->a:I
+    iget v1, p0, Landroidx/appcompat/view/menu/c$a;->g:I
 
     if-ltz v1, :cond_0
 
@@ -144,9 +144,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/c$a;->b:Landroidx/appcompat/view/menu/c;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/c$a;->h:Landroidx/appcompat/view/menu/c;
 
-    iget-object v0, v0, Landroidx/appcompat/view/menu/c;->h:Landroidx/appcompat/view/menu/e;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/c;->i:Landroidx/appcompat/view/menu/e;
 
     .line 2
     invoke-virtual {v0}, Landroidx/appcompat/view/menu/e;->j()V
@@ -159,14 +159,14 @@
 
     move-result v0
 
-    iget-object v1, p0, Landroidx/appcompat/view/menu/c$a;->b:Landroidx/appcompat/view/menu/c;
+    iget-object v1, p0, Landroidx/appcompat/view/menu/c$a;->h:Landroidx/appcompat/view/menu/c;
 
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     add-int/lit8 v0, v0, 0x0
 
     .line 5
-    iget v1, p0, Landroidx/appcompat/view/menu/c$a;->a:I
+    iget v1, p0, Landroidx/appcompat/view/menu/c$a;->g:I
 
     if-gez v1, :cond_0
 
@@ -205,11 +205,11 @@
     if-nez p2, :cond_0
 
     .line 1
-    iget-object p2, p0, Landroidx/appcompat/view/menu/c$a;->b:Landroidx/appcompat/view/menu/c;
+    iget-object p2, p0, Landroidx/appcompat/view/menu/c$a;->h:Landroidx/appcompat/view/menu/c;
 
-    iget-object v1, p2, Landroidx/appcompat/view/menu/c;->b:Landroid/view/LayoutInflater;
+    iget-object v1, p2, Landroidx/appcompat/view/menu/c;->h:Landroid/view/LayoutInflater;
 
-    iget p2, p2, Landroidx/appcompat/view/menu/c;->j:I
+    iget p2, p2, Landroidx/appcompat/view/menu/c;->k:I
 
     invoke-virtual {v1, p2, p3, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 

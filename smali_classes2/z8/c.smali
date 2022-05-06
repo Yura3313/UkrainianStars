@@ -9,7 +9,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lo8/d;",
+            "Lp8/d;",
             ">;)",
             "Ly8/a;"
         }

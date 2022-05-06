@@ -1,56 +1,149 @@
 .class public final Lcom/google/android/gms/internal/ads/j0;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-gass@@19.3.0"
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/qr0;
+.implements Lj3/xi0;
 
 
-# static fields
-.field public static final a:Lj3/qr0;
+# instance fields
+.field public g:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Lj3/vi0;",
+            "Lj3/o00;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public h:Lcom/google/android/gms/internal/ads/q7;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lcom/google/android/gms/internal/ads/j0;
-
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/j0;-><init>()V
-
-    sput-object v0, Lcom/google/android/gms/internal/ads/j0;->a:Lj3/qr0;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/q7;Ljava/util/Map;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/gms/internal/ads/q7;",
+            "Ljava/util/Map<",
+            "Lj3/vi0;",
+            "Lj3/o00;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/j0;->g:Ljava/util/Map;
+
+    .line 3
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/j0;->h:Lcom/google/android/gms/internal/ads/q7;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(I)Z
+.method public final a(Lj3/vi0;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 0
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/internal/ads/c0$b;->zzk(I)Lcom/google/android/gms/internal/ads/c0$b;
+    iget-object p2, p0, Lcom/google/android/gms/internal/ads/j0;->g:Ljava/util/Map;
+
+    invoke-interface {p2, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_0
+
+    .line 2
+    iget-object p2, p0, Lcom/google/android/gms/internal/ads/j0;->h:Lcom/google/android/gms/internal/ads/q7;
+
+    iget-object p3, p0, Lcom/google/android/gms/internal/ads/j0;->g:Ljava/util/Map;
+
+    invoke-interface {p3, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    if-eqz p1, :cond_0
+    check-cast p1, Lj3/o00;
 
-    const/4 p1, 0x1
+    iget p1, p1, Lj3/o00;->c:I
 
-    return p1
+    invoke-virtual {p2, p1}, Lcom/google/android/gms/internal/ads/q7;->b(I)V
 
     :cond_0
-    const/4 p1, 0x0
+    return-void
+.end method
 
-    return p1
+.method public final b(Lj3/vi0;Ljava/lang/String;)V
+    .locals 1
+
+    .line 1
+    iget-object p2, p0, Lcom/google/android/gms/internal/ads/j0;->g:Ljava/util/Map;
+
+    invoke-interface {p2, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_0
+
+    .line 2
+    iget-object p2, p0, Lcom/google/android/gms/internal/ads/j0;->h:Lcom/google/android/gms/internal/ads/q7;
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/j0;->g:Ljava/util/Map;
+
+    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lj3/o00;
+
+    iget p1, p1, Lj3/o00;->a:I
+
+    invoke-virtual {p2, p1}, Lcom/google/android/gms/internal/ads/q7;->b(I)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final c(Lj3/vi0;Ljava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final e(Lj3/vi0;Ljava/lang/String;)V
+    .locals 1
+
+    .line 1
+    iget-object p2, p0, Lcom/google/android/gms/internal/ads/j0;->g:Ljava/util/Map;
+
+    invoke-interface {p2, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_0
+
+    .line 2
+    iget-object p2, p0, Lcom/google/android/gms/internal/ads/j0;->h:Lcom/google/android/gms/internal/ads/q7;
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/j0;->g:Ljava/util/Map;
+
+    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lj3/o00;
+
+    iget p1, p1, Lj3/o00;->b:I
+
+    invoke-virtual {p2, p1}, Lcom/google/android/gms/internal/ads/q7;->b(I)V
+
+    :cond_0
+    return-void
 .end method

@@ -16,11 +16,11 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final b:[B
+.field public final h:[B
 
-.field public final h:I
+.field public final i:I
 
 
 # direct methods
@@ -28,9 +28,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lj3/gj0;
+    new-instance v0, Lj3/sj0;
 
-    invoke-direct {v0}, Lj3/gj0;-><init>()V
+    invoke-direct {v0}, Lj3/sj0;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzdru;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -57,7 +57,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzdru;->a:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzdru;->g:I
 
     if-nez p2, :cond_0
 
@@ -74,10 +74,10 @@
     move-result-object p1
 
     :goto_0
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzdru;->b:[B
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzdru;->h:[B
 
     .line 4
-    iput p3, p0, Lcom/google/android/gms/internal/ads/zzdru;->h:I
+    iput p3, p0, Lcom/google/android/gms/internal/ads/zzdru;->i:I
 
     return-void
 .end method
@@ -97,7 +97,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzdru;->a:I
+    iget v1, p0, Lcom/google/android/gms/internal/ads/zzdru;->g:I
 
     const/4 v2, 0x4
 
@@ -110,7 +110,7 @@
     const/4 v0, 0x2
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzdru;->b:[B
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzdru;->h:[B
 
     const/4 v3, 0x0
 
@@ -119,7 +119,7 @@
     const/4 v0, 0x3
 
     .line 6
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzdru;->h:I
+    iget v1, p0, Lcom/google/android/gms/internal/ads/zzdru;->i:I
 
     .line 7
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V

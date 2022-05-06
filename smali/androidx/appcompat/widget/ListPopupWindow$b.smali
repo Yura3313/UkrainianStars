@@ -47,7 +47,7 @@
     .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow$b;->a:Landroidx/appcompat/widget/ListPopupWindow;
 
-    invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->L()V
+    invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->M()V
 
     :cond_0
     return-void

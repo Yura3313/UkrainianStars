@@ -128,7 +128,7 @@
     invoke-static {p2, v1, v0, v1}, Ljava/util/Arrays;->fill([IIII)V
 
     .line 3
-    iget v2, p0, Lj6/a;->b:I
+    iget v2, p0, Lj6/a;->h:I
 
     if-ge p1, v2, :cond_4
 
@@ -149,7 +149,9 @@
 
     move-result v5
 
-    if-eq v5, v3, :cond_0
+    xor-int/2addr v5, v3
+
+    if-eqz v5, :cond_0
 
     .line 6
     aget v5, p2, v1
@@ -188,7 +190,7 @@
 
     .line 8
     :cond_2
-    sget-object p0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 9
     throw p0
@@ -199,7 +201,7 @@
 
     .line 10
     :cond_4
-    sget-object p0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 11
     goto :goto_4
@@ -260,7 +262,7 @@
 
     .line 5
     :cond_2
-    sget-object p0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 6
     goto :goto_2
@@ -295,6 +297,8 @@
     .end annotation
 
     .line 1
+    sget-object v0, Lc6/k;->g:Lc6/k;
+
     :try_start_0
     invoke-virtual {p0, p1, p2}, Lr6/j;->d(Lc6/c;Ljava/util/Map;)Lc6/j;
 
@@ -305,57 +309,57 @@
     return-object p1
 
     :catch_0
-    move-exception v0
+    move-exception v1
 
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
     if-eqz p2, :cond_0
 
     .line 2
-    sget-object v2, Lc6/d;->TRY_HARDER:Lc6/d;
+    sget-object v3, Lc6/d;->j:Lc6/d;
 
-    invoke-interface {p2, v2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-interface {p2, v3}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_0
+    if-eqz v3, :cond_0
 
-    const/4 v2, 0x1
+    const/4 v3, 0x1
 
     goto :goto_0
 
     :cond_0
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
     :goto_0
-    if-eqz v2, :cond_3
+    if-eqz v3, :cond_3
 
     .line 3
-    iget-object v2, p1, Lc6/c;->a:Lc6/b;
+    iget-object v3, p1, Lc6/c;->a:Lc6/b;
 
     .line 4
-    iget-object v2, v2, Lc6/b;->a:Lc6/f;
+    iget-object v3, v3, Lc6/b;->a:Lc6/f;
 
     .line 5
-    invoke-virtual {v2}, Lc6/f;->d()Z
+    invoke-virtual {v3}, Lc6/f;->d()Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_3
+    if-eqz v3, :cond_3
 
     .line 6
-    iget-object v0, p1, Lc6/c;->a:Lc6/b;
+    iget-object v1, p1, Lc6/c;->a:Lc6/b;
 
     .line 7
-    iget-object v0, v0, Lc6/b;->a:Lc6/f;
+    iget-object v1, v1, Lc6/b;->a:Lc6/f;
 
     .line 8
-    invoke-virtual {v0}, Lc6/f;->e()Lc6/f;
+    invoke-virtual {v1}, Lc6/f;->e()Lc6/f;
 
-    move-result-object v0
+    move-result-object v1
 
     .line 9
-    new-instance v2, Lc6/c;
+    new-instance v3, Lc6/c;
 
     iget-object p1, p1, Lc6/c;->a:Lc6/b;
 
@@ -366,34 +370,32 @@
     .line 10
     new-instance p1, Lj6/g;
 
-    invoke-direct {p1, v0}, Lj6/g;-><init>(Lc6/f;)V
+    invoke-direct {p1, v1}, Lj6/g;-><init>(Lc6/f;)V
 
     .line 11
-    invoke-direct {v2, p1}, Lc6/c;-><init>(Lc6/b;)V
+    invoke-direct {v3, p1}, Lc6/c;-><init>(Lc6/b;)V
 
     .line 12
-    invoke-virtual {p0, v2, p2}, Lr6/j;->d(Lc6/c;Ljava/util/Map;)Lc6/j;
+    invoke-virtual {p0, v3, p2}, Lr6/j;->d(Lc6/c;Ljava/util/Map;)Lc6/j;
 
     move-result-object p1
 
     .line 13
     iget-object p2, p1, Lc6/j;->e:Ljava/util/Map;
 
-    const/16 v2, 0x10e
+    const/16 v3, 0x10e
 
     if-eqz p2, :cond_1
 
     .line 14
-    sget-object v3, Lc6/k;->ORIENTATION:Lc6/k;
-
-    invoke-interface {p2, v3}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-interface {p2, v0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_1
 
     .line 15
-    invoke-interface {p2, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
 
@@ -403,19 +405,17 @@
 
     move-result p2
 
-    add-int/2addr p2, v2
+    add-int/2addr p2, v3
 
-    rem-int/lit16 v2, p2, 0x168
+    rem-int/lit16 v3, p2, 0x168
 
     .line 16
     :cond_1
-    sget-object p2, Lc6/k;->ORIENTATION:Lc6/k;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object p2
 
-    move-result-object v2
-
-    invoke-virtual {p1, p2, v2}, Lc6/j;->b(Lc6/k;Ljava/lang/Object;)V
+    invoke-virtual {p1, v0, p2}, Lc6/j;->b(Lc6/k;Ljava/lang/Object;)V
 
     .line 17
     iget-object p2, p1, Lc6/j;->c:[Lc6/l;
@@ -423,20 +423,20 @@
     if-eqz p2, :cond_2
 
     .line 18
-    iget v0, v0, Lc6/f;->b:I
+    iget v0, v1, Lc6/f;->b:I
 
     .line 19
     :goto_1
-    array-length v2, p2
+    array-length v1, p2
 
-    if-ge v1, v2, :cond_2
+    if-ge v2, v1, :cond_2
 
     .line 20
-    new-instance v2, Lc6/l;
+    new-instance v1, Lc6/l;
 
     int-to-float v3, v0
 
-    aget-object v4, p2, v1
+    aget-object v4, p2, v2
 
     .line 21
     iget v4, v4, Lc6/l;->b:F
@@ -448,17 +448,17 @@
     sub-float/2addr v3, v4
 
     .line 22
-    aget-object v4, p2, v1
+    aget-object v4, p2, v2
 
     .line 23
     iget v4, v4, Lc6/l;->a:F
 
     .line 24
-    invoke-direct {v2, v3, v4}, Lc6/l;-><init>(FF)V
+    invoke-direct {v1, v3, v4}, Lc6/l;-><init>(FF)V
 
-    aput-object v2, p2, v1
+    aput-object v1, p2, v2
 
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
@@ -470,7 +470,7 @@
     goto :goto_3
 
     :goto_2
-    throw v0
+    throw v1
 
     :goto_3
     goto :goto_2
@@ -556,67 +556,66 @@
 
     invoke-direct {v4, v3}, Lj6/a;-><init>(I)V
 
-    const/4 v5, 0x0
+    shr-int/lit8 v5, v2, 0x1
 
-    const/4 v6, 0x1
+    const/4 v6, 0x0
+
+    const/4 v7, 0x1
 
     if-eqz v1, :cond_0
 
     .line 6
-    sget-object v7, Lc6/d;->TRY_HARDER:Lc6/d;
+    sget-object v8, Lc6/d;->j:Lc6/d;
 
-    invoke-interface {v1, v7}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-interface {v1, v8}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
-    move-result v7
+    move-result v8
 
-    if-eqz v7, :cond_0
+    if-eqz v8, :cond_0
 
-    const/4 v7, 0x1
+    const/4 v8, 0x1
 
     goto :goto_0
 
     :cond_0
-    const/4 v7, 0x0
+    const/4 v8, 0x0
 
     :goto_0
-    if-eqz v7, :cond_1
+    if-eqz v8, :cond_1
 
-    const/16 v8, 0x8
+    const/16 v9, 0x8
 
     goto :goto_1
 
     :cond_1
-    const/4 v8, 0x5
+    const/4 v9, 0x5
 
     :goto_1
-    shr-int v8, v2, v8
+    shr-int v9, v2, v9
 
     .line 7
-    invoke-static {v6, v8}, Ljava/lang/Math;->max(II)I
+    invoke-static {v7, v9}, Ljava/lang/Math;->max(II)I
 
-    move-result v8
+    move-result v9
 
-    if-eqz v7, :cond_2
+    if-eqz v8, :cond_2
 
-    move v7, v2
+    move v8, v2
 
     goto :goto_2
 
     :cond_2
-    const/16 v7, 0xf
+    const/16 v8, 0xf
 
-    .line 8
     :goto_2
-    div-int/lit8 v9, v2, 0x2
-
     const/4 v10, 0x0
 
     :goto_3
-    if-ge v10, v7, :cond_8
+    if-ge v10, v8, :cond_8
 
     add-int/lit8 v11, v10, 0x1
 
-    .line 9
+    .line 8
     div-int/lit8 v12, v11, 0x2
 
     and-int/lit8 v10, v10, 0x1
@@ -639,15 +638,15 @@
     neg-int v12, v12
 
     :goto_5
-    mul-int v12, v12, v8
+    mul-int v12, v12, v9
 
-    add-int/2addr v12, v9
+    add-int/2addr v12, v5
 
     if-ltz v12, :cond_8
 
     if-ge v12, v2, :cond_8
 
-    .line 10
+    .line 9
     :try_start_0
     invoke-virtual {v0, v12, v4}, Lc6/c;->b(ILj6/a;)Lj6/a;
 
@@ -662,15 +661,15 @@
 
     if-ge v10, v13, :cond_7
 
-    if-ne v10, v6, :cond_5
+    if-ne v10, v7, :cond_5
 
-    .line 11
+    .line 10
     invoke-virtual {v4}, Lj6/a;->e()V
 
     if-eqz v1, :cond_5
 
-    .line 12
-    sget-object v13, Lc6/d;->NEED_RESULT_POINT_CALLBACK:Lc6/d;
+    .line 11
+    sget-object v13, Lc6/d;->p:Lc6/d;
 
     invoke-interface {v1, v13}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -678,17 +677,17 @@
 
     if-eqz v14, :cond_5
 
-    .line 13
+    .line 12
     new-instance v14, Ljava/util/EnumMap;
 
     const-class v15, Lc6/d;
 
     invoke-direct {v14, v15}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
-    .line 14
+    .line 13
     invoke-virtual {v14, v1}, Ljava/util/EnumMap;->putAll(Ljava/util/Map;)V
 
-    .line 15
+    .line 14
     invoke-virtual {v14, v13}, Ljava/util/EnumMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-object/from16 v13, p0
@@ -700,32 +699,32 @@
     :cond_5
     move-object/from16 v13, p0
 
-    .line 16
+    .line 15
     :goto_7
     :try_start_1
     invoke-virtual {v13, v12, v4, v1}, Lr6/j;->c(ILj6/a;Ljava/util/Map;)Lc6/j;
 
     move-result-object v14
 
-    if-ne v10, v6, :cond_6
+    if-ne v10, v7, :cond_6
 
-    .line 17
-    sget-object v15, Lc6/k;->ORIENTATION:Lc6/k;
+    .line 16
+    sget-object v15, Lc6/k;->g:Lc6/k;
 
     const/16 v16, 0xb4
 
     invoke-static/range {v16 .. v16}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-virtual {v14, v15, v6}, Lc6/j;->b(Lc6/k;Ljava/lang/Object;)V
+    invoke-virtual {v14, v15, v7}, Lc6/j;->b(Lc6/k;Ljava/lang/Object;)V
+
+    .line 17
+    iget-object v7, v14, Lc6/j;->c:[Lc6/l;
+
+    if-eqz v7, :cond_6
 
     .line 18
-    iget-object v6, v14, Lc6/j;->c:[Lc6/l;
-
-    if-eqz v6, :cond_6
-
-    .line 19
     new-instance v15, Lc6/l;
     :try_end_1
     .catch Lcom/google/zxing/ReaderException; {:try_start_1 .. :try_end_1} :catch_0
@@ -735,9 +734,9 @@
     move-object/from16 v16, v1
 
     :try_start_2
-    aget-object v1, v6, v5
+    aget-object v1, v7, v6
 
-    .line 20
+    .line 19
     iget v1, v1, Lc6/l;->a:F
     :try_end_2
     .catch Lcom/google/zxing/ReaderException; {:try_start_2 .. :try_end_2} :catch_1
@@ -750,19 +749,19 @@
 
     move/from16 v18, v2
 
-    .line 21
+    .line 20
     :try_start_3
-    aget-object v2, v6, v5
+    aget-object v2, v7, v6
 
-    .line 22
+    .line 21
     iget v2, v2, Lc6/l;->b:F
 
-    .line 23
+    .line 22
     invoke-direct {v15, v1, v2}, Lc6/l;-><init>(FF)V
 
-    aput-object v15, v6, v5
+    aput-object v15, v7, v6
 
-    .line 24
+    .line 23
     new-instance v1, Lc6/l;
     :try_end_3
     .catch Lcom/google/zxing/ReaderException; {:try_start_3 .. :try_end_3} :catch_2
@@ -770,25 +769,25 @@
     const/4 v2, 0x1
 
     :try_start_4
-    aget-object v15, v6, v2
+    aget-object v15, v7, v2
 
-    .line 25
+    .line 24
     iget v15, v15, Lc6/l;->a:F
 
     sub-float/2addr v0, v15
 
     sub-float v0, v0, v17
 
-    .line 26
-    aget-object v15, v6, v2
+    .line 25
+    aget-object v15, v7, v2
 
-    .line 27
+    .line 26
     iget v15, v15, Lc6/l;->b:F
 
-    .line 28
+    .line 27
     invoke-direct {v1, v0, v15}, Lc6/l;-><init>(FF)V
 
-    aput-object v1, v6, v2
+    aput-object v1, v7, v2
     :try_end_4
     .catch Lcom/google/zxing/ReaderException; {:try_start_4 .. :try_end_4} :catch_3
 
@@ -813,7 +812,7 @@
 
     move/from16 v2, v18
 
-    const/4 v6, 0x1
+    const/4 v7, 0x1
 
     goto :goto_6
 
@@ -831,17 +830,17 @@
 
     move/from16 v2, v18
 
-    const/4 v6, 0x1
+    const/4 v7, 0x1
 
     goto/16 :goto_3
 
     :cond_8
     move-object/from16 v13, p0
 
-    .line 29
-    sget-object v0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    .line 28
+    sget-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
-    .line 30
+    .line 29
     goto :goto_9
 
     :goto_8

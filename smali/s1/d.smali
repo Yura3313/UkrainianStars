@@ -222,7 +222,7 @@
 
     const-string v3, "Overread allowed size end="
 
-    invoke-static {v2, v3, v0}, Lb0/c;->b(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v2, v3, v0}, Landroid/support/v4/media/a;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 

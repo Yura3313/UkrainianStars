@@ -27,14 +27,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/game/GameFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/game/GameFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/game/GameFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$o;->a:Lcom/supercell/id/ui/game/GameFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$o;->g:Lcom/supercell/id/ui/game/GameFragment;
 
     const/4 p1, 0x0
 
@@ -49,12 +49,12 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$o;->a:Lcom/supercell/id/ui/game/GameFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$o;->g:Lcom/supercell/id/ui/game/GameFragment;
 
-    sget v1, Lcom/supercell/id/ui/game/GameFragment;->z0:I
+    sget v1, Lcom/supercell/id/ui/game/GameFragment;->A0:I
 
     .line 2
-    invoke-virtual {v0}, Lcom/supercell/id/ui/game/GameFragment;->r1()Ltc/g;
+    invoke-virtual {v0}, Lcom/supercell/id/ui/game/GameFragment;->r1()Lqc/k;
 
     move-result-object v0
 
@@ -63,13 +63,13 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-boolean v0, v0, Ltc/g;->a:Z
+    iget-boolean v0, v0, Lqc/k;->a:Z
 
     if-eq v0, v1, :cond_2
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$o;->a:Lcom/supercell/id/ui/game/GameFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$o;->g:Lcom/supercell/id/ui/game/GameFragment;
 
     invoke-static {v0}, Lcom/supercell/id/ui/game/GameFragment;->q1(Lcom/supercell/id/ui/game/GameFragment;)Ljava/lang/String;
 
@@ -81,13 +81,13 @@
 
     sget-object v3, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v3}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lwd/h;
+    invoke-virtual {v3}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lvd/h;
 
     move-result-object v3
 
-    sget-object v4, Lwd/i1;->SHOW_GAME_REWARD:Lwd/i1;
+    const/16 v4, 0x9
 
-    invoke-virtual {v3, v4}, Lwd/h;->c(Lwd/i1;)Ljava/util/List;
+    invoke-virtual {v3, v4}, Lvd/h;->d(I)Ljava/util/List;
 
     move-result-object v3
 
@@ -104,7 +104,7 @@
     :cond_1
     sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    invoke-static {v2, v0}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v0}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 

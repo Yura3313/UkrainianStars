@@ -9,7 +9,7 @@
 
 
 # instance fields
-.field public a:Landroid/graphics/Rect;
+.field public g:Landroid/graphics/Rect;
 
 
 # direct methods
@@ -238,7 +238,7 @@
 
     .line 5
     :goto_0
-    iget-object p2, p2, Landroidx/appcompat/view/menu/d;->a:Landroidx/appcompat/view/menu/e;
+    iget-object p2, p2, Landroidx/appcompat/view/menu/d;->g:Landroidx/appcompat/view/menu/e;
 
     .line 6
     invoke-interface {p1, p3}, Landroid/widget/ListAdapter;->getItem(I)Ljava/lang/Object;

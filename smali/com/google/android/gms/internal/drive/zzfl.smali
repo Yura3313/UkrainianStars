@@ -13,7 +13,7 @@
     .end annotation
 .end field
 
-.field public static final j:Ljava/util/List;
+.field public static final k:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -25,13 +25,13 @@
 
 
 # instance fields
-.field public final a:J
+.field public final g:J
 
-.field public final b:J
+.field public final h:J
 
-.field public final h:I
+.field public final i:I
 
-.field public final i:Ljava/util/List;
+.field public final j:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -51,7 +51,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/android/gms/internal/drive/zzfl;->j:Ljava/util/List;
+    sput-object v0, Lcom/google/android/gms/internal/drive/zzfl;->k:Ljava/util/List;
 
     .line 2
     new-instance v0, Lq3/q;
@@ -78,16 +78,16 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-wide p1, p0, Lcom/google/android/gms/internal/drive/zzfl;->a:J
+    iput-wide p1, p0, Lcom/google/android/gms/internal/drive/zzfl;->g:J
 
     .line 3
-    iput-wide p3, p0, Lcom/google/android/gms/internal/drive/zzfl;->b:J
+    iput-wide p3, p0, Lcom/google/android/gms/internal/drive/zzfl;->h:J
 
     .line 4
-    iput p5, p0, Lcom/google/android/gms/internal/drive/zzfl;->h:I
+    iput p5, p0, Lcom/google/android/gms/internal/drive/zzfl;->i:I
 
     .line 5
-    iput-object p6, p0, Lcom/google/android/gms/internal/drive/zzfl;->i:Ljava/util/List;
+    iput-object p6, p0, Lcom/google/android/gms/internal/drive/zzfl;->j:Ljava/util/List;
 
     return-void
 .end method
@@ -107,7 +107,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iget-wide v1, p0, Lcom/google/android/gms/internal/drive/zzfl;->a:J
+    iget-wide v1, p0, Lcom/google/android/gms/internal/drive/zzfl;->g:J
 
     const/16 v3, 0x8
 
@@ -120,7 +120,7 @@
     const/4 v0, 0x3
 
     .line 5
-    iget-wide v1, p0, Lcom/google/android/gms/internal/drive/zzfl;->b:J
+    iget-wide v1, p0, Lcom/google/android/gms/internal/drive/zzfl;->h:J
 
     .line 6
     invoke-static {p1, v0, v3}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -129,7 +129,7 @@
     invoke-virtual {p1, v1, v2}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 8
-    iget v0, p0, Lcom/google/android/gms/internal/drive/zzfl;->h:I
+    iget v0, p0, Lcom/google/android/gms/internal/drive/zzfl;->i:I
 
     const/4 v1, 0x4
 
@@ -142,7 +142,7 @@
     const/4 v0, 0x5
 
     .line 11
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzfl;->i:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzfl;->j:Ljava/util/List;
 
     const/4 v2, 0x0
 

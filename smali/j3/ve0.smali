@@ -1,208 +1,132 @@
-.class public final Lj3/ve0;
+.class public final synthetic Lj3/ve0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/wq;
-.implements Lj3/tr;
-.implements Lj3/nf0;
+.implements Ljava/util/concurrent/Callable;
 
 
-# instance fields
-.field public final a:Lj3/ah0;
-
-.field public final b:Ljava/util/concurrent/atomic/AtomicReference;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/concurrent/atomic/AtomicReference<",
-            "Lcom/google/android/gms/internal/ads/zzsi;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final h:Ljava/util/concurrent/atomic/AtomicReference;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/concurrent/atomic/AtomicReference<",
-            "Lcom/google/android/gms/internal/ads/zzsj;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final i:Ljava/util/concurrent/atomic/AtomicReference;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/concurrent/atomic/AtomicReference<",
-            "Lj3/tr;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public j:Lj3/ve0;
+# static fields
+.field public static final a:Ljava/util/concurrent/Callable;
 
 
 # direct methods
-.method public constructor <init>(Lj3/ah0;)V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
+    new-instance v0, Lj3/ve0;
+
+    invoke-direct {v0}, Lj3/ve0;-><init>()V
+
+    sput-object v0, Lj3/ve0;->a:Ljava/util/concurrent/Callable;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
-
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
-
-    iput-object v0, p0, Lj3/ve0;->b:Ljava/util/concurrent/atomic/AtomicReference;
-
-    .line 3
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
-
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
-
-    iput-object v0, p0, Lj3/ve0;->h:Ljava/util/concurrent/atomic/AtomicReference;
-
-    .line 4
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
-
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
-
-    iput-object v0, p0, Lj3/ve0;->i:Ljava/util/concurrent/atomic/AtomicReference;
-
-    const/4 v0, 0x0
-
-    .line 5
-    iput-object v0, p0, Lj3/ve0;->j:Lj3/ve0;
-
-    .line 6
-    iput-object p1, p0, Lj3/ve0;->a:Lj3/ah0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final X1()V
-    .locals 2
-
-    move-object v0, p0
+.method public final call()Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    :goto_0
-    iget-object v1, v0, Lj3/ve0;->j:Lj3/ve0;
+    new-instance v0, Ljava/util/HashMap;
 
-    if-eqz v1, :cond_0
-
-    move-object v0, v1
-
-    goto :goto_0
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 2
-    :cond_0
-    iget-object v0, v0, Lj3/ve0;->i:Ljava/util/concurrent/atomic/AtomicReference;
-
-    sget-object v1, Landroidx/lifecycle/a0;->i:Lj3/gf0;
-
-    invoke-static {v0, v1}, Lj3/t6;->a(Ljava/util/concurrent/atomic/AtomicReference;Lj3/gf0;)V
-
-    return-void
-.end method
-
-.method public final b(Lj3/nf0;)V
-    .locals 0
-
-    .line 1
-    check-cast p1, Lj3/ve0;
-
-    iput-object p1, p0, Lj3/ve0;->j:Lj3/ve0;
-
-    return-void
-.end method
-
-.method public final y0(Lcom/google/android/gms/internal/ads/zzuw;)V
-    .locals 4
-
-    move-object v0, p0
-
-    .line 1
-    :goto_0
-    iget-object v1, v0, Lj3/ve0;->j:Lj3/ve0;
-
-    if-eqz v1, :cond_0
-
-    move-object v0, v1
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    iget-object v1, v0, Lj3/ve0;->b:Ljava/util/concurrent/atomic/AtomicReference;
+    sget-object v1, Lj3/n;->B:Lj3/f;
 
     .line 3
-    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+    sget-object v2, Lj3/t51;->j:Lj3/t51;
+
+    iget-object v2, v2, Lj3/t51;->f:Lj3/l;
+
+    .line 4
+    invoke-virtual {v2, v1}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
 
     move-result-object v1
 
-    const-string v2, "#007 Could not call remote method."
-
-    if-nez v1, :cond_1
-
-    goto :goto_1
-
-    .line 4
-    :cond_1
-    :try_start_0
-    check-cast v1, Lcom/google/android/gms/internal/ads/zzsi;
-
     .line 5
-    iget v3, p1, Lcom/google/android/gms/internal/ads/zzuw;->a:I
+    check-cast v1, Ljava/lang/String;
 
-    invoke-interface {v1, v3}, Lcom/google/android/gms/internal/ads/zzsi;->c5(I)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_1
-
-    :catch_0
-    move-exception v1
+    if-eqz v1, :cond_0
 
     .line 6
-    invoke-static {v2, v1}, Lp0/d;->f(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
 
     .line 7
-    :goto_1
-    iget-object v0, v0, Lj3/ve0;->b:Ljava/util/concurrent/atomic/AtomicReference;
+    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    sget-object v3, Lj3/n;->C:Lj3/f;
 
     .line 8
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+    sget-object v4, Lj3/t51;->j:Lj3/t51;
 
-    move-result-object v0
-
-    if-nez v0, :cond_2
-
-    goto :goto_2
+    iget-object v4, v4, Lj3/t51;->f:Lj3/l;
 
     .line 9
-    :cond_2
-    :try_start_1
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzsi;
+    invoke-virtual {v4, v3}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+
+    move-result-object v3
 
     .line 10
-    invoke-interface {v0, p1}, Lcom/google/android/gms/internal/ads/zzsi;->e1(Lcom/google/android/gms/internal/ads/zzuw;)V
-    :try_end_1
-    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
+    check-cast v3, Ljava/lang/Integer;
 
-    goto :goto_2
+    invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
 
-    :catch_1
-    move-exception p1
+    move-result v3
+
+    if-lt v2, v3, :cond_0
+
+    const/4 v2, -0x1
+
+    const-string v3, ","
 
     .line 11
-    invoke-static {v2, p1}, Lp0/d;->f(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-virtual {v1, v3, v2}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
 
-    :goto_2
-    return-void
+    move-result-object v1
+
+    array-length v2, v1
+
+    const/4 v3, 0x0
+
+    :goto_0
+    if-ge v3, v2, :cond_0
+
+    aget-object v4, v1, v3
+
+    .line 12
+    invoke-static {v4}, Lj3/ad;->b(Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v5
+
+    .line 13
+    invoke-virtual {v0, v4, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    .line 14
+    :cond_0
+    new-instance v1, Lj3/v90;
+
+    const/4 v2, 0x1
+
+    invoke-direct {v1, v0, v2}, Lj3/v90;-><init>(Ljava/lang/Object;I)V
+
+    return-object v1
 .end method

@@ -1,25 +1,29 @@
-.class public final synthetic Lj3/p8;
+.class public final Lj3/p8;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/mj0;
+.implements Ljava/util/concurrent/Callable;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final b:Ljava/lang/Object;
+.field public final b:Landroid/content/Context;
+
+.field public final c:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method public synthetic constructor <init>(Ljava/lang/Object;Landroid/content/Context;I)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lj3/p8;->a:I
+    iput p3, p0, Lj3/p8;->a:I
 
-    iput-object p1, p0, Lj3/p8;->b:Ljava/lang/Object;
+    iput-object p1, p0, Lj3/p8;->c:Ljava/lang/Object;
+
+    iput-object p2, p0, Lj3/p8;->b:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,153 +32,146 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final call()Ljava/lang/Object;
     .locals 6
 
     iget v0, p0, Lj3/p8;->a:I
 
     packed-switch v0, :pswitch_data_0
 
-    goto :goto_1
+    goto :goto_2
 
     .line 1
     :pswitch_0
-    iget-object v0, p0, Lj3/p8;->b:Ljava/lang/Object;
+    iget-object v0, p0, Lj3/p8;->c:Ljava/lang/Object;
 
-    check-cast v0, Lj3/q8;
-
-    check-cast p1, Lorg/json/JSONObject;
+    check-cast v0, Lf7/a;
 
     .line 2
-    iget-object v1, v0, Lj3/q8;->b:Landroid/content/Context;
+    iget-object v0, v0, Lf7/a;->g:Ljava/lang/Object;
 
-    sget-object v2, Lj3/n;->a:Lj3/f;
+    check-cast v0, Ljava/util/WeakHashMap;
 
     .line 3
-    sget-object v2, Lj3/w41;->j:Lj3/w41;
+    iget-object v1, p0, Lj3/p8;->b:Landroid/content/Context;
 
-    iget-object v2, v2, Lj3/w41;->e:Lj3/m;
+    invoke-virtual {v0, v1}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/4 v2, 0x0
+    move-result-object v0
 
-    const-string v3, "google_ads_flags"
+    check-cast v0, Lj3/o8;
+
+    if-eqz v0, :cond_1
 
     .line 4
-    invoke-virtual {v1, v3, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    iget-wide v1, v0, Lj3/o8;->a:J
 
-    move-result-object v1
+    sget-object v3, Lj3/l0;->a:Lj3/i0;
 
-    .line 5
-    invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    move-result-object v1
-
-    .line 6
-    sget-object v2, Lj3/w41;->j:Lj3/w41;
-
-    iget-object v2, v2, Lj3/w41;->d:Lj3/k;
-
-    .line 7
-    iget-object v2, v2, Lj3/k;->a:Ljava/util/Collection;
-
-    invoke-interface {v2}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
-
-    move-result-object v2
-
-    :cond_0
-    :goto_0
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-virtual {v3}, Lj3/i0;->a()Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Lj3/f;
+    check-cast v3, Ljava/lang/Long;
 
-    .line 8
-    iget v4, v3, Lj3/f;->a:I
+    invoke-virtual {v3}, Ljava/lang/Long;->longValue()J
 
-    const/4 v5, 0x1
+    move-result-wide v3
 
-    if-ne v4, v5, :cond_0
+    add-long/2addr v3, v1
 
-    .line 9
-    invoke-virtual {v3, p1}, Lj3/f;->h(Lorg/json/JSONObject;)Ljava/lang/Object;
+    .line 5
+    sget-object v1, Lh1/o;->B:Lh1/o;
 
-    move-result-object v4
+    iget-object v1, v1, Lh1/o;->j:Lk2/c;
 
-    invoke-virtual {v3, v1, v4}, Lj3/f;->e(Landroid/content/SharedPreferences$Editor;Ljava/lang/Object;)V
+    .line 6
+    invoke-interface {v1}, Lk2/c;->a()J
+
+    move-result-wide v1
+
+    cmp-long v5, v3, v1
+
+    if-gez v5, :cond_0
+
+    const/4 v1, 0x1
 
     goto :goto_0
 
+    :cond_0
+    const/4 v1, 0x0
+
+    :goto_0
+    if-nez v1, :cond_1
+
+    .line 7
+    new-instance v1, Lj3/n8;
+
+    iget-object v2, p0, Lj3/p8;->b:Landroid/content/Context;
+
+    iget-object v0, v0, Lj3/o8;->b:Lj3/l8;
+
+    invoke-direct {v1, v2, v0}, Lj3/n8;-><init>(Landroid/content/Context;Lj3/l8;)V
+
+    invoke-virtual {v1}, Lj3/n8;->c()Lj3/l8;
+
+    move-result-object v0
+
+    goto :goto_1
+
+    .line 8
     :cond_1
-    if-eqz p1, :cond_2
+    new-instance v0, Lj3/n8;
+
+    iget-object v1, p0, Lj3/p8;->b:Landroid/content/Context;
+
+    invoke-direct {v0, v1}, Lj3/n8;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0}, Lj3/n8;->c()Lj3/l8;
+
+    move-result-object v0
+
+    .line 9
+    :goto_1
+    iget-object v1, p0, Lj3/p8;->c:Ljava/lang/Object;
+
+    check-cast v1, Lf7/a;
 
     .line 10
-    invoke-virtual {p1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+    iget-object v1, v1, Lf7/a;->g:Ljava/lang/Object;
 
-    move-result-object p1
-
-    const-string v2, "flag_configuration"
-
-    invoke-interface {v1, v2, p1}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    check-cast v1, Ljava/util/WeakHashMap;
 
     .line 11
-    :cond_2
-    sget-object p1, Lj3/w41;->j:Lj3/w41;
+    iget-object v2, p0, Lj3/p8;->b:Landroid/content/Context;
 
-    iget-object p1, p1, Lj3/w41;->e:Lj3/m;
+    new-instance v3, Lj3/o8;
+
+    invoke-direct {v3, v0}, Lj3/o8;-><init>(Lj3/l8;)V
+
+    invoke-virtual {v1, v2, v3}, Ljava/util/WeakHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-object v0
 
     .line 12
-    invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    :goto_2
+    iget-object v0, p0, Lj3/p8;->c:Ljava/lang/Object;
+
+    check-cast v0, Lj3/nr0;
+
+    iget-object v1, p0, Lj3/p8;->b:Landroid/content/Context;
 
     .line 13
-    iget-object p1, v0, Lj3/q8;->c:Landroid/content/SharedPreferences;
+    iget-object v0, v0, Lj3/nr0;->b:Lj3/nm0;
 
     .line 14
-    invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    invoke-interface {v0, v1}, Lj3/nm0;->d(Landroid/content/Context;)Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v0
 
-    .line 15
-    sget-object v0, Lh1/o;->B:Lh1/o;
+    return-object v0
 
-    iget-object v0, v0, Lh1/o;->j:Lk2/c;
-
-    .line 16
-    invoke-interface {v0}, Lk2/c;->a()J
-
-    move-result-wide v0
-
-    const-string v2, "js_last_update"
-
-    invoke-interface {p1, v2, v0, v1}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
-
-    move-result-object p1
-
-    .line 17
-    invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->apply()V
-
-    const/4 p1, 0x0
-
-    return-object p1
-
-    .line 18
-    :goto_1
-    iget-object p1, p0, Lj3/p8;->b:Ljava/lang/Object;
-
-    check-cast p1, Lj3/pm;
-
-    .line 19
-    invoke-virtual {p1}, Lj3/pm;->v()Lj3/wm;
-
-    move-result-object p1
-
-    return-object p1
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0

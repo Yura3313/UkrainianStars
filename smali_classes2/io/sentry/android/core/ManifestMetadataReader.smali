@@ -24,6 +24,8 @@
 
 .field public static final BREADCRUMBS_SYSTEM_EVENTS_ENABLE:Ljava/lang/String; = "io.sentry.breadcrumbs.system-events"
 
+.field public static final BREADCRUMBS_USER_INTERACTION_ENABLE:Ljava/lang/String; = "io.sentry.breadcrumbs.user-interaction"
+
 .field public static final DEBUG:Ljava/lang/String; = "io.sentry.debug"
 
 .field public static final DEBUG_LEVEL:Ljava/lang/String; = "io.sentry.debug.level"
@@ -35,6 +37,8 @@
 .field public static final NDK_ENABLE:Ljava/lang/String; = "io.sentry.ndk.enable"
 
 .field public static final NDK_SCOPE_SYNC_ENABLE:Ljava/lang/String; = "io.sentry.ndk.scope-sync.enable"
+
+.field public static final PROGUARD_UUID:Ljava/lang/String; = "io.sentry.proguard-uuid"
 
 .field public static final RELEASE:Ljava/lang/String; = "io.sentry.release"
 
@@ -49,6 +53,13 @@
 .field public static final TRACES_ACTIVITY_ENABLE:Ljava/lang/String; = "io.sentry.traces.activity.enable"
 
 .field public static final TRACES_SAMPLE_RATE:Ljava/lang/String; = "io.sentry.traces.sample-rate"
+
+.field public static final TRACE_SAMPLING:Ljava/lang/String; = "io.sentry.traces.trace-sampling"
+    .annotation build Lorg/jetbrains/annotations/ApiStatus$Experimental;
+    .end annotation
+.end field
+
+.field public static final TRACING_ORIGINS:Ljava/lang/String; = "io.sentry.traces.tracing-origins"
 
 .field public static final UNCAUGHT_EXCEPTION_HANDLER_ENABLE:Ljava/lang/String; = "io.sentry.uncaught-exception-handler.enable"
 
@@ -89,7 +100,7 @@
 
     const/4 v1, 0x0
 
-    if-eqz p0, :cond_5
+    if-eqz p0, :cond_6
 
     const-string v2, "io.sentry.debug"
 
@@ -427,10 +438,10 @@
     .line 49
     invoke-virtual {p1, v2}, Lio/sentry/android/core/SentryAndroidOptions;->setEnableAppComponentBreadcrumbs(Z)V
 
-    const-string v2, "io.sentry.uncaught-exception-handler.enable"
+    const-string v2, "io.sentry.breadcrumbs.user-interaction"
 
     .line 50
-    invoke-virtual {p1}, Lio/sentry/SentryOptions;->isEnableUncaughtExceptionHandler()Z
+    invoke-virtual {p1}, Lio/sentry/android/core/SentryAndroidOptions;->isEnableUserInteractionBreadcrumbs()Z
 
     move-result v5
 
@@ -439,16 +450,31 @@
 
     move-result v2
 
+    .line 52
+    invoke-virtual {p1, v2}, Lio/sentry/android/core/SentryAndroidOptions;->setEnableUserInteractionBreadcrumbs(Z)V
+
+    const-string v2, "io.sentry.uncaught-exception-handler.enable"
+
+    .line 53
+    invoke-virtual {p1}, Lio/sentry/SentryOptions;->isEnableUncaughtExceptionHandler()Z
+
+    move-result v5
+
+    .line 54
+    invoke-static {p0, v0, v2, v5}, Lio/sentry/android/core/ManifestMetadataReader;->readBool(Landroid/os/Bundle;Lio/sentry/ILogger;Ljava/lang/String;Z)Z
+
+    move-result v2
+
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v2
 
-    .line 52
+    .line 55
     invoke-virtual {p1, v2}, Lio/sentry/SentryOptions;->setEnableUncaughtExceptionHandler(Ljava/lang/Boolean;)V
 
     const-string v2, "io.sentry.attach-threads"
 
-    .line 53
+    .line 56
     invoke-virtual {p1}, Lio/sentry/SentryOptions;->isAttachThreads()Z
 
     move-result v5
@@ -457,10 +483,10 @@
 
     move-result v2
 
-    .line 54
+    .line 57
     invoke-virtual {p1, v2}, Lio/sentry/SentryOptions;->setAttachThreads(Z)V
 
-    .line 55
+    .line 58
     invoke-virtual {p1}, Lio/sentry/SentryOptions;->getTracesSampleRate()Ljava/lang/Double;
 
     move-result-object v2
@@ -469,12 +495,12 @@
 
     const-string v2, "io.sentry.traces.sample-rate"
 
-    .line 56
+    .line 59
     invoke-static {p0, v0, v2}, Lio/sentry/android/core/ManifestMetadataReader;->readDouble(Landroid/os/Bundle;Lio/sentry/ILogger;Ljava/lang/String;)Ljava/lang/Double;
 
     move-result-object v2
 
-    .line 57
+    .line 60
     invoke-virtual {v2}, Ljava/lang/Double;->doubleValue()D
 
     move-result-wide v5
@@ -483,42 +509,103 @@
 
     if-eqz v7, :cond_4
 
-    .line 58
+    .line 61
     invoke-virtual {p1, v2}, Lio/sentry/SentryOptions;->setTracesSampleRate(Ljava/lang/Double;)V
 
     :cond_4
-    const-string v2, "io.sentry.traces.activity.enable"
+    const-string v2, "io.sentry.traces.trace-sampling"
 
-    .line 59
-    invoke-virtual {p1}, Lio/sentry/android/core/SentryAndroidOptions;->isEnableAutoActivityLifecycleTracing()Z
+    .line 62
+    invoke-virtual {p1}, Lio/sentry/SentryOptions;->isTraceSampling()Z
 
     move-result v3
 
-    .line 60
     invoke-static {p0, v0, v2, v3}, Lio/sentry/android/core/ManifestMetadataReader;->readBool(Landroid/os/Bundle;Lio/sentry/ILogger;Ljava/lang/String;Z)Z
 
     move-result v2
 
-    .line 61
+    .line 63
+    invoke-virtual {p1, v2}, Lio/sentry/SentryOptions;->setTraceSampling(Z)V
+
+    const-string v2, "io.sentry.traces.activity.enable"
+
+    .line 64
+    invoke-virtual {p1}, Lio/sentry/android/core/SentryAndroidOptions;->isEnableAutoActivityLifecycleTracing()Z
+
+    move-result v3
+
+    .line 65
+    invoke-static {p0, v0, v2, v3}, Lio/sentry/android/core/ManifestMetadataReader;->readBool(Landroid/os/Bundle;Lio/sentry/ILogger;Ljava/lang/String;Z)Z
+
+    move-result v2
+
+    .line 66
     invoke-virtual {p1, v2}, Lio/sentry/android/core/SentryAndroidOptions;->setEnableAutoActivityLifecycleTracing(Z)V
 
     const-string v2, "io.sentry.traces.activity.auto-finish.enable"
 
-    .line 62
+    .line 67
     invoke-virtual {p1}, Lio/sentry/android/core/SentryAndroidOptions;->isEnableActivityLifecycleTracingAutoFinish()Z
 
     move-result v3
 
-    .line 63
+    .line 68
     invoke-static {p0, v0, v2, v3}, Lio/sentry/android/core/ManifestMetadataReader;->readBool(Landroid/os/Bundle;Lio/sentry/ILogger;Ljava/lang/String;Z)Z
 
-    move-result p0
+    move-result v2
 
-    .line 64
-    invoke-virtual {p1, p0}, Lio/sentry/android/core/SentryAndroidOptions;->setEnableActivityLifecycleTracingAutoFinish(Z)V
+    .line 69
+    invoke-virtual {p1, v2}, Lio/sentry/android/core/SentryAndroidOptions;->setEnableActivityLifecycleTracingAutoFinish(Z)V
 
-    .line 65
+    const-string v2, "io.sentry.traces.tracing-origins"
+
+    .line 70
+    invoke-static {p0, v0, v2}, Lio/sentry/android/core/ManifestMetadataReader;->readList(Landroid/os/Bundle;Lio/sentry/ILogger;Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_5
+
+    .line 71
+    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_1
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_5
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
+
+    .line 72
+    invoke-virtual {p1, v3}, Lio/sentry/SentryOptions;->addTracingOrigin(Ljava/lang/String;)V
+
+    goto :goto_1
+
     :cond_5
+    const-string v2, "io.sentry.proguard-uuid"
+
+    .line 73
+    invoke-virtual {p1}, Lio/sentry/SentryOptions;->getProguardUuid()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {p0, v0, v2, v3}, Lio/sentry/android/core/ManifestMetadataReader;->readString(Landroid/os/Bundle;Lio/sentry/ILogger;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 74
+    invoke-virtual {p1, p0}, Lio/sentry/SentryOptions;->setProguardUuid(Ljava/lang/String;)V
+
+    .line 75
+    :cond_6
     invoke-virtual {p1}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
 
     move-result-object p0
@@ -529,17 +616,17 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    .line 66
+    .line 76
     invoke-interface {p0, v0, v2, v1}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    goto :goto_1
+    goto :goto_2
 
-    :catch_0
+    :catchall_0
     move-exception p0
 
-    .line 67
+    .line 77
     invoke-virtual {p1}, Lio/sentry/SentryOptions;->getLogger()Lio/sentry/ILogger;
 
     move-result-object p1
@@ -548,10 +635,10 @@
 
     const-string v1, "Failed to read configuration from android manifest metadata."
 
-    .line 68
+    .line 78
     invoke-interface {p1, v0, v1, p0}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    :goto_1
+    :goto_2
     return-void
 .end method
 
@@ -622,11 +709,11 @@
 
     invoke-interface {p1, p0, v1, v2}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception p0
 
     .line 5
@@ -714,6 +801,68 @@
     const-string p2, "%s read: %s"
 
     invoke-interface {p1, v0, p2, v1}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    return-object p0
+.end method
+
+.method private static readList(Landroid/os/Bundle;Lio/sentry/ILogger;Ljava/lang/String;)Ljava/util/List;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/os/Bundle;",
+            "Lio/sentry/ILogger;",
+            "Ljava/lang/String;",
+            ")",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0, p2}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 2
+    sget-object v0, Lio/sentry/SentryLevel;->DEBUG:Lio/sentry/SentryLevel;
+
+    const/4 v1, 0x2
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    const/4 v2, 0x0
+
+    aput-object p2, v1, v2
+
+    const/4 p2, 0x1
+
+    aput-object p0, v1, p2
+
+    const-string p2, "%s read: %s"
+
+    invoke-interface {p1, v0, p2, v1}, Lio/sentry/ILogger;->log(Lio/sentry/SentryLevel;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    if-eqz p0, :cond_0
+
+    const/4 p1, -0x1
+
+    const-string p2, ","
+
+    .line 3
+    invoke-virtual {p0, p2, p1}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_0
+    const/4 p0, 0x0
 
     return-object p0
 .end method

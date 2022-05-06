@@ -26,7 +26,7 @@
 
 .field public i:Z
 
-.field public j:Lqb/a;
+.field public j:Lob/a;
 
 .field public final k:Lcom/journeyapps/barcodescanner/CameraPreview$e;
 
@@ -61,7 +61,7 @@
 
     invoke-direct {v1, p0}, Lcom/journeyapps/barcodescanner/b$a;-><init>(Lcom/journeyapps/barcodescanner/b;)V
 
-    iput-object v1, p0, Lcom/journeyapps/barcodescanner/b;->j:Lqb/a;
+    iput-object v1, p0, Lcom/journeyapps/barcodescanner/b;->j:Lob/a;
 
     .line 7
     new-instance v1, Lcom/journeyapps/barcodescanner/b$b;
@@ -85,7 +85,7 @@
     move-result-object p2
 
     .line 12
-    iget-object p2, p2, Lcom/journeyapps/barcodescanner/CameraPreview;->o:Ljava/util/List;
+    iget-object p2, p2, Lcom/journeyapps/barcodescanner/CameraPreview;->p:Ljava/util/List;
 
     invoke-interface {p2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -130,14 +130,14 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->a:Lrb/d;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->g:Lpb/d;
 
     const/4 v1, 0x1
 
     if-eqz v0, :cond_1
 
     .line 3
-    iget-boolean v0, v0, Lrb/d;->g:Z
+    iget-boolean v0, v0, Lpb/d;->g:Z
 
     if-eqz v0, :cond_0
 
@@ -171,7 +171,7 @@
     iget-object v0, p0, Lcom/journeyapps/barcodescanner/b;->b:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
 
     .line 7
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->a:Lcom/journeyapps/barcodescanner/BarcodeView;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
 
     invoke-virtual {v0}, Lcom/journeyapps/barcodescanner/BarcodeView;->d()V
 

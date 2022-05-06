@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/view/PinEntryView;
+.field public final synthetic g:Lcom/supercell/id/view/PinEntryView;
 
-.field public final synthetic b:Landroid/content/Context;
+.field public final synthetic h:Landroid/content/Context;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/PinEntryView;Landroid/content/Context;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/PinEntryView$b;->a:Lcom/supercell/id/view/PinEntryView;
+    iput-object p1, p0, Lcom/supercell/id/view/PinEntryView$b;->g:Lcom/supercell/id/view/PinEntryView;
 
-    iput-object p2, p0, Lcom/supercell/id/view/PinEntryView$b;->b:Landroid/content/Context;
+    iput-object p2, p0, Lcom/supercell/id/view/PinEntryView$b;->h:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/view/PinEntryView$b;->b:Landroid/content/Context;
+    iget-object p1, p0, Lcom/supercell/id/view/PinEntryView$b;->h:Landroid/content/Context;
 
     const-string v0, "input_method"
 
@@ -59,10 +59,10 @@
     if-eqz p2, :cond_0
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/view/PinEntryView$b;->a:Lcom/supercell/id/view/PinEntryView;
+    iget-object v1, p0, Lcom/supercell/id/view/PinEntryView$b;->g:Lcom/supercell/id/view/PinEntryView;
 
     .line 3
-    iget-object v1, v1, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
+    iget-object v1, v1, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
 
     .line 4
     invoke-virtual {p1, v1, v0}, Landroid/view/inputmethod/InputMethodManager;->showSoftInput(Landroid/view/View;I)Z
@@ -71,10 +71,10 @@
 
     .line 5
     :cond_0
-    iget-object v1, p0, Lcom/supercell/id/view/PinEntryView$b;->a:Lcom/supercell/id/view/PinEntryView;
+    iget-object v1, p0, Lcom/supercell/id/view/PinEntryView$b;->g:Lcom/supercell/id/view/PinEntryView;
 
     .line 6
-    iget-object v1, v1, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
+    iget-object v1, v1, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
 
     .line 7
     invoke-virtual {v1}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
@@ -85,10 +85,10 @@
 
     .line 8
     :goto_0
-    iget-object p1, p0, Lcom/supercell/id/view/PinEntryView$b;->a:Lcom/supercell/id/view/PinEntryView;
+    iget-object p1, p0, Lcom/supercell/id/view/PinEntryView$b;->g:Lcom/supercell/id/view/PinEntryView;
 
     .line 9
-    iget-object v0, p1, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
+    iget-object v0, p1, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
 
     .line 10
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -98,10 +98,10 @@
     invoke-static {p1, v0, p2}, Lcom/supercell/id/view/PinEntryView;->a(Lcom/supercell/id/view/PinEntryView;Ljava/lang/CharSequence;Z)V
 
     .line 11
-    iget-object p1, p0, Lcom/supercell/id/view/PinEntryView$b;->a:Lcom/supercell/id/view/PinEntryView;
+    iget-object p1, p0, Lcom/supercell/id/view/PinEntryView$b;->g:Lcom/supercell/id/view/PinEntryView;
 
     .line 12
-    iget-object p1, p1, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
+    iget-object p1, p1, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
 
     .line 13
     invoke-virtual {p1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -113,19 +113,19 @@
     move-result p1
 
     .line 14
-    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView$b;->a:Lcom/supercell/id/view/PinEntryView;
+    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView$b;->g:Lcom/supercell/id/view/PinEntryView;
 
     .line 15
-    iget-object v0, v0, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
+    iget-object v0, v0, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
 
     .line 16
     invoke-virtual {v0, p1}, Landroid/widget/EditText;->setSelection(I)V
 
     .line 17
-    iget-object p1, p0, Lcom/supercell/id/view/PinEntryView$b;->a:Lcom/supercell/id/view/PinEntryView;
+    iget-object p1, p0, Lcom/supercell/id/view/PinEntryView$b;->g:Lcom/supercell/id/view/PinEntryView;
 
     .line 18
-    iget-object v0, p1, Lcom/supercell/id/view/PinEntryView;->m:Landroid/view/View$OnFocusChangeListener;
+    iget-object v0, p1, Lcom/supercell/id/view/PinEntryView;->n:Landroid/view/View$OnFocusChangeListener;
 
     if-eqz v0, :cond_1
 

@@ -28,7 +28,7 @@
 
 
 # virtual methods
-.method public isMasked(II)Z
+.method public a(II)Z
     .locals 0
 
     add-int/2addr p1, p2

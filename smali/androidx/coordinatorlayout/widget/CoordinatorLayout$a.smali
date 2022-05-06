@@ -3,7 +3,7 @@
 .source "CoordinatorLayout.java"
 
 # interfaces
-.implements Lf0/o;
+.implements Lf0/n;
 
 
 # annotations
@@ -35,13 +35,13 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;Lf0/a0;)Lf0/a0;
+.method public a(Landroid/view/View;Lf0/z;)Lf0/z;
     .locals 0
 
     .line 1
     iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$a;->a:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
-    invoke-virtual {p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->C(Lf0/a0;)Lf0/a0;
+    invoke-virtual {p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->C(Lf0/z;)Lf0/z;
 
     move-result-object p1
 

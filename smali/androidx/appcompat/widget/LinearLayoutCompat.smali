@@ -12,9 +12,7 @@
 
 
 # instance fields
-.field public a:Z
-
-.field public b:I
+.field public g:Z
 
 .field public h:I
 
@@ -24,23 +22,25 @@
 
 .field public k:I
 
-.field public l:F
+.field public l:I
 
-.field public m:Z
+.field public m:F
 
-.field public n:[I
+.field public n:Z
 
 .field public o:[I
 
-.field public p:Landroid/graphics/drawable/Drawable;
+.field public p:[I
 
-.field public q:I
+.field public q:Landroid/graphics/drawable/Drawable;
 
 .field public r:I
 
 .field public s:I
 
 .field public t:I
+
+.field public u:I
 
 
 # direct methods
@@ -75,22 +75,22 @@
     const/4 v0, 0x1
 
     .line 4
-    iput-boolean v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->a:Z
+    iput-boolean v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->g:Z
 
     const/4 v1, -0x1
 
     .line 5
-    iput v1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->b:I
+    iput v1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->h:I
 
     const/4 v2, 0x0
 
     .line 6
-    iput v2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->h:I
+    iput v2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->i:I
 
     const v3, 0x800033
 
     .line 7
-    iput v3, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
+    iput v3, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
 
     .line 8
     sget-object v6, Landroidx/appcompat/R$styleable;->LinearLayoutCompat:[I
@@ -113,7 +113,7 @@
     move v9, p3
 
     .line 10
-    invoke-static/range {v4 .. v10}, Lf0/s;->z(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
+    invoke-static/range {v4 .. v10}, Lf0/r;->z(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
 
     .line 11
     sget p2, Landroidx/appcompat/R$styleable;->LinearLayoutCompat_android_orientation:I
@@ -168,7 +168,7 @@
     move-result p2
 
     .line 22
-    iput p2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->l:F
+    iput p2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->m:F
 
     .line 23
     sget p2, Landroidx/appcompat/R$styleable;->LinearLayoutCompat_android_baselineAlignedChildIndex:I
@@ -179,7 +179,7 @@
     move-result p2
 
     .line 25
-    iput p2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->b:I
+    iput p2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->h:I
 
     .line 26
     sget p2, Landroidx/appcompat/R$styleable;->LinearLayoutCompat_measureWithLargestChild:I
@@ -190,7 +190,7 @@
     move-result p2
 
     .line 28
-    iput-boolean p2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->m:Z
+    iput-boolean p2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->n:Z
 
     .line 29
     sget p2, Landroidx/appcompat/R$styleable;->LinearLayoutCompat_divider:I
@@ -235,7 +235,7 @@
     move-result p1
 
     .line 37
-    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->s:I
+    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->t:I
 
     .line 38
     sget p1, Landroidx/appcompat/R$styleable;->LinearLayoutCompat_dividerPadding:I
@@ -246,7 +246,7 @@
     move-result p1
 
     .line 40
-    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->t:I
+    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->u:I
 
     .line 41
     invoke-virtual {v3}, Landroid/content/res/TypedArray;->recycle()V
@@ -269,13 +269,13 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->p:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->q:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
 
     move-result v1
 
-    iget v2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->t:I
+    iget v2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->u:I
 
     add-int/2addr v1, v2
 
@@ -290,11 +290,11 @@
 
     sub-int/2addr v2, v3
 
-    iget v3, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->t:I
+    iget v3, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->u:I
 
     sub-int/2addr v2, v3
 
-    iget v3, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->r:I
+    iget v3, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->s:I
 
     add-int/2addr v3, p2
 
@@ -302,7 +302,7 @@
     invoke-virtual {v0, v1, p2, v2, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 4
-    iget-object p2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->p:Landroid/graphics/drawable/Drawable;
+    iget-object p2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->q:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p2, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
@@ -313,17 +313,17 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->p:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->q:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingTop()I
 
     move-result v1
 
-    iget v2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->t:I
+    iget v2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->u:I
 
     add-int/2addr v1, v2
 
-    iget v2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->q:I
+    iget v2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->r:I
 
     add-int/2addr v2, p2
 
@@ -338,7 +338,7 @@
 
     sub-int/2addr v3, v4
 
-    iget v4, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->t:I
+    iget v4, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->u:I
 
     sub-int/2addr v3, v4
 
@@ -346,7 +346,7 @@
     invoke-virtual {v0, p2, v1, v2, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 4
-    iget-object p2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->p:Landroid/graphics/drawable/Drawable;
+    iget-object p2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->q:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p2, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
@@ -390,7 +390,7 @@
     .locals 5
 
     .line 1
-    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->b:I
+    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->h:I
 
     if-gez v0, :cond_0
 
@@ -407,7 +407,7 @@
 
     move-result v0
 
-    iget v1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->b:I
+    iget v1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->h:I
 
     if-le v0, v1, :cond_6
 
@@ -426,7 +426,7 @@
     if-ne v1, v2, :cond_2
 
     .line 6
-    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->b:I
+    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->h:I
 
     if-nez v0, :cond_1
 
@@ -444,17 +444,17 @@
 
     .line 8
     :cond_2
-    iget v2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->h:I
+    iget v2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->i:I
 
     .line 9
-    iget v3, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->i:I
+    iget v3, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
 
     const/4 v4, 0x1
 
     if-ne v3, v4, :cond_5
 
     .line 10
-    iget v3, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
+    iget v3, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
 
     and-int/lit8 v3, v3, 0x70
 
@@ -490,7 +490,7 @@
 
     sub-int/2addr v2, v3
 
-    iget v3, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v3, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     sub-int/2addr v2, v3
 
@@ -520,7 +520,7 @@
 
     sub-int/2addr v3, v4
 
-    iget v4, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v4, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     sub-int/2addr v3, v4
 
@@ -561,7 +561,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->b:I
+    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->h:I
 
     return v0
 .end method
@@ -570,7 +570,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->p:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->q:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method
@@ -579,7 +579,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->t:I
+    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->u:I
 
     return v0
 .end method
@@ -588,7 +588,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->q:I
+    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->r:I
 
     return v0
 .end method
@@ -597,7 +597,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
+    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
 
     return v0
 .end method
@@ -606,7 +606,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->i:I
+    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
 
     return v0
 .end method
@@ -615,7 +615,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->s:I
+    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->t:I
 
     return v0
 .end method
@@ -635,7 +635,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->l:F
+    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->m:F
 
     return v0
 .end method
@@ -644,7 +644,7 @@
     .locals 3
 
     .line 1
-    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->i:I
+    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
 
     const/4 v1, -0x2
 
@@ -713,7 +713,7 @@
     if-nez p1, :cond_1
 
     .line 1
-    iget p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->s:I
+    iget p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->t:I
 
     and-int/2addr p1, v1
 
@@ -733,7 +733,7 @@
     if-ne p1, v2, :cond_3
 
     .line 3
-    iget p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->s:I
+    iget p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->t:I
 
     and-int/lit8 p1, p1, 0x4
 
@@ -746,7 +746,7 @@
 
     .line 4
     :cond_3
-    iget v2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->s:I
+    iget v2, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->t:I
 
     and-int/lit8 v2, v2, 0x2
 
@@ -788,7 +788,7 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->p:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->q:Landroid/graphics/drawable/Drawable;
 
     if-nez v0, :cond_0
 
@@ -796,7 +796,7 @@
 
     .line 2
     :cond_0
-    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->i:I
+    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
 
     const/16 v1, 0x8
 
@@ -851,7 +851,7 @@
 
     sub-int/2addr v3, v4
 
-    iget v4, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->r:I
+    iget v4, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->s:I
 
     sub-int/2addr v3, v4
 
@@ -891,7 +891,7 @@
 
     sub-int/2addr v0, v1
 
-    iget v1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->r:I
+    iget v1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->s:I
 
     sub-int/2addr v0, v1
 
@@ -985,7 +985,7 @@
 
     sub-int/2addr v4, v5
 
-    iget v5, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->q:I
+    iget v5, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->r:I
 
     sub-int/2addr v4, v5
 
@@ -1036,7 +1036,7 @@
 
     sub-int/2addr v0, v1
 
-    iget v1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->q:I
+    iget v1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->r:I
 
     goto :goto_4
 
@@ -1059,7 +1059,7 @@
 
     sub-int/2addr v0, v1
 
-    iget v1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->q:I
+    iget v1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->r:I
 
     :goto_4
     sub-int/2addr v0, v1
@@ -1119,7 +1119,7 @@
     move-object/from16 v0, p0
 
     .line 1
-    iget v1, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->i:I
+    iget v1, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
 
     const/16 v2, 0x50
 
@@ -1164,7 +1164,7 @@
     move-result v10
 
     .line 6
-    iget v11, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
+    iget v11, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
 
     and-int/lit8 v12, v11, 0x70
 
@@ -1191,7 +1191,7 @@
 
     sub-int v2, v2, p3
 
-    iget v3, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v3, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     sub-int/2addr v2, v3
 
@@ -1205,7 +1205,7 @@
 
     sub-int v3, p5, p3
 
-    iget v11, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v11, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     sub-int/2addr v3, v11
 
@@ -1264,7 +1264,7 @@
 
     .line 16
     :cond_3
-    sget-object v15, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v15, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 17
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getLayoutDirection()I
@@ -1323,7 +1323,7 @@
     if-eqz v14, :cond_6
 
     .line 23
-    iget v14, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->r:I
+    iget v14, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->s:I
 
     add-int/2addr v2, v14
 
@@ -1398,23 +1398,23 @@
     move-result v5
 
     .line 32
-    iget v8, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
+    iget v8, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
 
     and-int/2addr v6, v8
 
     and-int/lit8 v8, v8, 0x70
 
     .line 33
-    iget-boolean v9, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->a:Z
+    iget-boolean v9, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->g:Z
 
     .line 34
-    iget-object v10, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->n:[I
+    iget-object v10, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->o:[I
 
     .line 35
-    iget-object v11, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->o:[I
+    iget-object v11, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->p:[I
 
     .line 36
-    sget-object v12, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v12, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 37
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getLayoutDirection()I
@@ -1449,7 +1449,7 @@
 
     sub-int v6, v6, p2
 
-    iget v7, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v7, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     sub-int/2addr v6, v7
 
@@ -1463,7 +1463,7 @@
 
     sub-int v7, p4, p2
 
-    iget v12, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v12, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     sub-int/2addr v7, v12
 
@@ -1680,7 +1680,7 @@
     if-eqz v7, :cond_15
 
     .line 57
-    iget v7, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->q:I
+    iget v7, v0, Landroidx/appcompat/widget/LinearLayoutCompat;->r:I
 
     add-int/2addr v6, v7
 
@@ -1753,7 +1753,7 @@
     move/from16 v8, p2
 
     .line 1
-    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->i:I
+    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
 
     const/4 v1, -0x2
 
@@ -1772,7 +1772,7 @@
     if-ne v0, v9, :cond_2a
 
     .line 2
-    iput v10, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v10, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     .line 3
     invoke-virtual/range {p0 .. p0}, Landroidx/appcompat/widget/LinearLayoutCompat;->getVirtualChildCount()I
@@ -1790,10 +1790,10 @@
     move-result v12
 
     .line 6
-    iget v13, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->b:I
+    iget v13, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->h:I
 
     .line 7
-    iget-boolean v14, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->m:Z
+    iget-boolean v14, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->n:Z
 
     const/4 v0, 0x0
 
@@ -1842,11 +1842,11 @@
     if-nez v18, :cond_0
 
     .line 9
-    iget v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     add-int/2addr v1, v0
 
-    iput v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     goto :goto_1
 
@@ -1876,13 +1876,13 @@
     if-eqz v0, :cond_2
 
     .line 12
-    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
-    iget v3, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->r:I
+    iget v3, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->s:I
 
     add-int/2addr v0, v3
 
-    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     .line 13
     :cond_2
@@ -1911,7 +1911,7 @@
     if-lez v5, :cond_3
 
     .line 16
-    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     .line 17
     iget v1, v3, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
@@ -1926,7 +1926,7 @@
 
     move-result v0
 
-    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     const/16 v20, 0x1
 
@@ -1972,7 +1972,7 @@
     if-nez v0, :cond_5
 
     .line 20
-    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     move/from16 v24, v0
 
@@ -2023,7 +2023,7 @@
     move-result v0
 
     .line 24
-    iget v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     add-int v2, v1, v0
 
@@ -2042,7 +2042,7 @@
 
     move-result v1
 
-    iput v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     if-eqz v14, :cond_7
 
@@ -2060,9 +2060,9 @@
     if-ne v13, v0, :cond_8
 
     .line 27
-    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
-    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->h:I
+    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->i:I
 
     :cond_8
     if-ge v10, v13, :cond_a
@@ -2253,7 +2253,7 @@
     move/from16 v9, v17
 
     .line 40
-    iget v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     move/from16 v10, v23
 
@@ -2266,13 +2266,13 @@
     if-eqz v1, :cond_11
 
     .line 41
-    iget v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
-    iget v2, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->r:I
+    iget v2, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->s:I
 
     add-int/2addr v1, v2
 
-    iput v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     :cond_11
     if-eqz v14, :cond_15
@@ -2289,7 +2289,7 @@
     const/4 v1, 0x0
 
     .line 42
-    iput v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     const/4 v3, 0x0
 
@@ -2304,11 +2304,11 @@
     if-nez v4, :cond_13
 
     .line 44
-    iget v4, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v4, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     add-int/2addr v4, v1
 
-    iput v4, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v4, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     goto :goto_d
 
@@ -2335,7 +2335,7 @@
     check-cast v1, Landroidx/appcompat/widget/LinearLayoutCompat$LayoutParams;
 
     .line 47
-    iget v4, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v4, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     add-int v5, v4, v7
 
@@ -2354,7 +2354,7 @@
 
     move-result v1
 
-    iput v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     :goto_d
     add-int/lit8 v3, v3, 0x1
@@ -2368,7 +2368,7 @@
 
     .line 49
     :cond_16
-    iget v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getPaddingTop()I
 
@@ -2382,7 +2382,7 @@
 
     add-int/2addr v4, v1
 
-    iput v4, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v4, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     .line 50
     invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getSuggestedMinimumHeight()I
@@ -2407,7 +2407,7 @@
     and-int/2addr v3, v1
 
     .line 52
-    iget v4, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v4, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     sub-int/2addr v3, v4
 
@@ -2510,7 +2510,7 @@
     .line 61
     :cond_1b
     :goto_10
-    iget v4, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:F
+    iget v4, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->m:F
 
     const/4 v5, 0x0
 
@@ -2524,7 +2524,7 @@
     const/4 v4, 0x0
 
     .line 62
-    iput v4, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v4, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     move/from16 v32, v8
 
@@ -2764,7 +2764,7 @@
 
     .line 83
     :goto_19
-    iget v9, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v9, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     .line 84
     invoke-virtual {v5}, Landroid/view/View;->getMeasuredHeight()I
@@ -2787,7 +2787,7 @@
 
     move-result v5
 
-    iput v5, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v5, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     move/from16 v21, v0
 
@@ -2806,7 +2806,7 @@
     move/from16 v12, p1
 
     .line 85
-    iget v2, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v2, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getPaddingTop()I
 
@@ -2820,7 +2820,7 @@
 
     add-int/2addr v4, v2
 
-    iput v4, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v4, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     move v2, v15
 
@@ -2961,7 +2961,7 @@
     const/4 v0, 0x0
 
     .line 98
-    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     .line 99
     invoke-virtual/range {p0 .. p0}, Landroidx/appcompat/widget/LinearLayoutCompat;->getVirtualChildCount()I
@@ -2979,13 +2979,13 @@
     move-result v10
 
     .line 102
-    iget-object v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->n:[I
+    iget-object v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->o:[I
 
     const/4 v1, 0x4
 
     if-eqz v0, :cond_2b
 
-    iget-object v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->o:[I
+    iget-object v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->p:[I
 
     if-nez v0, :cond_2c
 
@@ -2993,19 +2993,19 @@
     new-array v0, v1, [I
 
     .line 103
-    iput-object v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->n:[I
+    iput-object v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->o:[I
 
     new-array v0, v1, [I
 
     .line 104
-    iput-object v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->o:[I
+    iput-object v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->p:[I
 
     .line 105
     :cond_2c
-    iget-object v11, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->n:[I
+    iget-object v11, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->o:[I
 
     .line 106
-    iget-object v13, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->o:[I
+    iget-object v13, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->p:[I
 
     const/4 v0, 0x3
 
@@ -3034,10 +3034,10 @@
     aput v1, v13, v2
 
     .line 109
-    iget-boolean v15, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->a:Z
+    iget-boolean v15, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->g:Z
 
     .line 110
-    iget-boolean v5, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->m:Z
+    iget-boolean v5, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->n:Z
 
     const/high16 v0, 0x40000000    # 2.0f
 
@@ -3100,11 +3100,11 @@
     if-nez v5, :cond_2e
 
     .line 112
-    iget v5, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v5, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     add-int/lit8 v5, v5, 0x0
 
-    iput v5, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v5, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     move/from16 v23, v0
 
@@ -3146,13 +3146,13 @@
     if-eqz v0, :cond_30
 
     .line 115
-    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
-    iget v3, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->q:I
+    iget v3, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->r:I
 
     add-int/2addr v0, v3
 
-    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     .line 116
     :cond_30
@@ -3187,7 +3187,7 @@
     if-eqz v16, :cond_31
 
     .line 119
-    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     iget v1, v3, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
@@ -3199,7 +3199,7 @@
 
     add-int/2addr v1, v0
 
-    iput v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v1, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     goto :goto_21
 
@@ -3207,7 +3207,7 @@
     move/from16 v26, v2
 
     .line 120
-    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     .line 121
     iget v1, v3, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
@@ -3222,7 +3222,7 @@
 
     move-result v0
 
-    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     :goto_21
     if-eqz v15, :cond_32
@@ -3315,7 +3315,7 @@
     if-nez v0, :cond_36
 
     .line 126
-    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     move/from16 v27, v0
 
@@ -3387,7 +3387,7 @@
     if-eqz v16, :cond_38
 
     .line 130
-    iget v2, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v2, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     iget v3, v0, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
@@ -3402,13 +3402,13 @@
     move-result v2
 
     .line 131
-    iput v2, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v2, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     goto :goto_25
 
     .line 132
     :cond_38
-    iget v2, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v2, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     add-int v3, v2, v1
 
@@ -3427,7 +3427,7 @@
 
     move-result v2
 
-    iput v2, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v2, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     :goto_25
     if-eqz v22, :cond_39
@@ -3505,7 +3505,7 @@
 
     if-gez v14, :cond_3b
 
-    iget v14, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
+    iget v14, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
 
     :cond_3b
     and-int/lit8 v14, v14, 0x70
@@ -3646,7 +3646,7 @@
     move v9, v4
 
     .line 148
-    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     if-lez v0, :cond_42
 
@@ -3657,13 +3657,13 @@
     if-eqz v0, :cond_42
 
     .line 149
-    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
-    iget v3, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->q:I
+    iget v3, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->r:I
 
     add-int/2addr v0, v3
 
-    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     :cond_42
     const/4 v0, 0x1
@@ -3788,7 +3788,7 @@
     const/4 v0, 0x0
 
     .line 160
-    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     const/4 v4, 0x0
 
@@ -3803,11 +3803,11 @@
     if-nez v5, :cond_46
 
     .line 162
-    iget v5, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v5, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     add-int/2addr v5, v0
 
-    iput v5, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v5, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     move/from16 v24, v4
 
@@ -3838,7 +3838,7 @@
     if-eqz v16, :cond_48
 
     .line 165
-    iget v5, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v5, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     iget v14, v0, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
@@ -3855,7 +3855,7 @@
     move-result v0
 
     .line 166
-    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     goto :goto_33
 
@@ -3863,7 +3863,7 @@
     move/from16 v24, v4
 
     .line 167
-    iget v4, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v4, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     add-int v5, v4, v12
 
@@ -3882,7 +3882,7 @@
 
     move-result v0
 
-    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     :goto_33
     move/from16 v4, v24
@@ -3899,7 +3899,7 @@
 
     .line 169
     :cond_4a
-    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
 
@@ -3913,7 +3913,7 @@
 
     add-int/2addr v5, v0
 
-    iput v5, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v5, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     .line 170
     invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getSuggestedMinimumWidth()I
@@ -3938,7 +3938,7 @@
     and-int/2addr v4, v0
 
     .line 172
-    iget v14, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v14, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     sub-int/2addr v4, v14
 
@@ -4045,7 +4045,7 @@
     .line 181
     :cond_4f
     :goto_37
-    iget v7, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:F
+    iget v7, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->m:F
 
     const/4 v9, 0x0
 
@@ -4087,7 +4087,7 @@
     aput v9, v13, v14
 
     .line 184
-    iput v14, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v14, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     const/4 v7, -0x1
 
@@ -4279,7 +4279,7 @@
     if-eqz v16, :cond_57
 
     .line 198
-    iget v8, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v8, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     invoke-virtual {v12}, Landroid/view/View;->getMeasuredWidth()I
 
@@ -4304,7 +4304,7 @@
     move-result v0
 
     .line 199
-    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     goto :goto_3e
 
@@ -4316,7 +4316,7 @@
     move/from16 v25, v3
 
     .line 200
-    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     .line 201
     invoke-virtual {v12}, Landroid/view/View;->getMeasuredWidth()I
@@ -4339,7 +4339,7 @@
 
     move-result v0
 
-    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     :goto_3e
     const/high16 v0, 0x40000000    # 2.0f
@@ -4427,7 +4427,7 @@
 
     if-gez v2, :cond_5c
 
-    iget v2, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
+    iget v2, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
 
     :cond_5c
     and-int/lit8 v2, v2, 0x70
@@ -4504,7 +4504,7 @@
     move/from16 v19, v8
 
     .line 212
-    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iget v0, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
 
@@ -4518,7 +4518,7 @@
 
     add-int/2addr v3, v0
 
-    iput v3, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
+    iput v3, v6, Landroidx/appcompat/widget/LinearLayoutCompat;->l:I
 
     const/4 v0, 0x1
 
@@ -4764,7 +4764,7 @@
     .locals 0
 
     .line 1
-    iput-boolean p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->a:Z
+    iput-boolean p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->g:Z
 
     return-void
 .end method
@@ -4782,7 +4782,7 @@
     if-ge p1, v0, :cond_0
 
     .line 2
-    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->b:I
+    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->h:I
 
     return-void
 
@@ -4792,7 +4792,7 @@
 
     const-string v0, "base aligned child index out of range (0, "
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -4820,7 +4820,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->p:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->q:Landroid/graphics/drawable/Drawable;
 
     if-ne p1, v0, :cond_0
 
@@ -4828,7 +4828,7 @@
 
     .line 2
     :cond_0
-    iput-object p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->p:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->q:Landroid/graphics/drawable/Drawable;
 
     const/4 v0, 0x0
 
@@ -4839,23 +4839,23 @@
 
     move-result v1
 
-    iput v1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->q:I
+    iput v1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->r:I
 
     .line 4
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v1
 
-    iput v1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->r:I
+    iput v1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->s:I
 
     goto :goto_0
 
     .line 5
     :cond_1
-    iput v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->q:I
+    iput v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->r:I
 
     .line 6
-    iput v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->r:I
+    iput v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->s:I
 
     :goto_0
     if-nez p1, :cond_2
@@ -4876,7 +4876,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->t:I
+    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->u:I
 
     return-void
 .end method
@@ -4885,7 +4885,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
+    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
 
     if-eq v0, p1, :cond_2
 
@@ -4908,7 +4908,7 @@
 
     .line 2
     :cond_1
-    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
+    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
 
     .line 3
     invoke-virtual {p0}, Landroid/view/ViewGroup;->requestLayout()V
@@ -4925,7 +4925,7 @@
     and-int/2addr p1, v0
 
     .line 1
-    iget v1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
+    iget v1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
 
     and-int/2addr v0, v1
 
@@ -4938,7 +4938,7 @@
     or-int/2addr p1, v0
 
     .line 2
-    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
+    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
 
     .line 3
     invoke-virtual {p0}, Landroid/view/ViewGroup;->requestLayout()V
@@ -4951,7 +4951,7 @@
     .locals 0
 
     .line 1
-    iput-boolean p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->m:Z
+    iput-boolean p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->n:Z
 
     return-void
 .end method
@@ -4960,12 +4960,12 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->i:I
+    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
 
     if-eq v0, p1, :cond_0
 
     .line 2
-    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->i:I
+    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
 
     .line 3
     invoke-virtual {p0}, Landroid/view/ViewGroup;->requestLayout()V
@@ -4978,7 +4978,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->s:I
+    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->t:I
 
     if-eq p1, v0, :cond_0
 
@@ -4987,7 +4987,7 @@
 
     .line 3
     :cond_0
-    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->s:I
+    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->t:I
 
     return-void
 .end method
@@ -4998,7 +4998,7 @@
     and-int/lit8 p1, p1, 0x70
 
     .line 1
-    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
+    iget v0, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
 
     and-int/lit8 v1, v0, 0x70
 
@@ -5009,7 +5009,7 @@
     or-int/2addr p1, v0
 
     .line 2
-    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->j:I
+    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->k:I
 
     .line 3
     invoke-virtual {p0}, Landroid/view/ViewGroup;->requestLayout()V
@@ -5028,7 +5028,7 @@
 
     move-result p1
 
-    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->l:F
+    iput p1, p0, Landroidx/appcompat/widget/LinearLayoutCompat;->m:F
 
     return-void
 .end method

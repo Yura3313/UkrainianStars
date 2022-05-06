@@ -49,11 +49,11 @@
     .line 2
     new-instance v0, Lcom/google/android/play/core/assetpacks/v1;
 
-    invoke-virtual {p1}, Ll5/l0;->v()Lm5/c;
+    invoke-virtual {p1}, Ll5/l0;->u()Lm5/c;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lm5/c;->n()[B
+    invoke-virtual {p1}, Lm5/c;->m()[B
 
     move-result-object p1
 

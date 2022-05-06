@@ -84,7 +84,7 @@
     invoke-interface {p2, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 7
-    iget p2, p1, Landroidx/fragment/app/Fragment;->a:I
+    iget p2, p1, Landroidx/fragment/app/Fragment;->g:I
 
     const/4 v1, 0x5
 

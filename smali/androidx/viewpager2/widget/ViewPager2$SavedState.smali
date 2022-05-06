@@ -27,11 +27,11 @@
 
 
 # instance fields
-.field public a:I
+.field public g:I
 
-.field public b:I
+.field public h:I
 
-.field public h:Landroid/os/Parcelable;
+.field public i:Landroid/os/Parcelable;
 
 
 # direct methods
@@ -59,14 +59,14 @@
 
     move-result v0
 
-    iput v0, p0, Landroidx/viewpager2/widget/ViewPager2$SavedState;->a:I
+    iput v0, p0, Landroidx/viewpager2/widget/ViewPager2$SavedState;->g:I
 
     .line 7
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Landroidx/viewpager2/widget/ViewPager2$SavedState;->b:I
+    iput v0, p0, Landroidx/viewpager2/widget/ViewPager2$SavedState;->h:I
 
     const/4 v0, 0x0
 
@@ -75,7 +75,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$SavedState;->h:Landroid/os/Parcelable;
+    iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$SavedState;->i:Landroid/os/Parcelable;
 
     return-void
 .end method
@@ -91,21 +91,21 @@
 
     move-result v0
 
-    iput v0, p0, Landroidx/viewpager2/widget/ViewPager2$SavedState;->a:I
+    iput v0, p0, Landroidx/viewpager2/widget/ViewPager2$SavedState;->g:I
 
     .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Landroidx/viewpager2/widget/ViewPager2$SavedState;->b:I
+    iput v0, p0, Landroidx/viewpager2/widget/ViewPager2$SavedState;->h:I
 
     .line 4
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$SavedState;->h:Landroid/os/Parcelable;
+    iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$SavedState;->i:Landroid/os/Parcelable;
 
     return-void
 .end method
@@ -128,17 +128,17 @@
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 2
-    iget v0, p0, Landroidx/viewpager2/widget/ViewPager2$SavedState;->a:I
+    iget v0, p0, Landroidx/viewpager2/widget/ViewPager2$SavedState;->g:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 3
-    iget v0, p0, Landroidx/viewpager2/widget/ViewPager2$SavedState;->b:I
+    iget v0, p0, Landroidx/viewpager2/widget/ViewPager2$SavedState;->h:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 4
-    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$SavedState;->h:Landroid/os/Parcelable;
+    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$SavedState;->i:Landroid/os/Parcelable;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 

@@ -1,57 +1,8 @@
-.class public Lf0/n;
+.class public interface abstract Lf0/n;
 .super Ljava/lang/Object;
-.source "NestedScrollingParentHelper.java"
-
-
-# instance fields
-.field public a:I
-
-.field public b:I
-
-
-# direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
+.source "OnApplyWindowInsetsListener.java"
 
 
 # virtual methods
-.method public a()I
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lf0/n;->a:I
-
-    iget v1, p0, Lf0/n;->b:I
-
-    or-int/2addr v0, v1
-
-    return v0
-.end method
-
-.method public b(I)V
-    .locals 2
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x1
-
-    if-ne p1, v1, :cond_0
-
-    .line 1
-    iput v0, p0, Lf0/n;->b:I
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    iput v0, p0, Lf0/n;->a:I
-
-    :goto_0
-    return-void
+.method public abstract a(Landroid/view/View;Lf0/z;)Lf0/z;
 .end method

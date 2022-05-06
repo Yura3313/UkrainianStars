@@ -1,285 +1,137 @@
 .class public Landroidx/lifecycle/s;
-.super Landroid/app/Fragment;
-.source "ReportFragment.java"
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Landroidx/lifecycle/s$b;,
-        Landroidx/lifecycle/s$a;
-    }
-.end annotation
-
-
-# static fields
-.field public static final synthetic b:I
+.super Landroidx/lifecycle/c;
+.source "ProcessLifecycleOwner.java"
 
 
 # instance fields
-.field public a:Landroidx/lifecycle/s$a;
+.field public final synthetic this$0:Landroidx/lifecycle/r;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Landroidx/lifecycle/r;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroid/app/Fragment;-><init>()V
+    iput-object p1, p0, Landroidx/lifecycle/s;->this$0:Landroidx/lifecycle/r;
 
-    return-void
-.end method
+    invoke-direct {p0}, Landroidx/lifecycle/c;-><init>()V
 
-.method public static a(Landroid/app/Activity;Landroidx/lifecycle/f$b;)V
-    .locals 2
-
-    .line 1
-    instance-of v0, p0, Landroidx/lifecycle/l;
-
-    const-string v1, "handleLifecycleEvent"
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    check-cast p0, Landroidx/lifecycle/l;
-
-    invoke-interface {p0}, Landroidx/lifecycle/l;->getLifecycle()Landroidx/lifecycle/k;
-
-    move-result-object p0
-
-    .line 3
-    invoke-virtual {p0, v1}, Landroidx/lifecycle/k;->d(Ljava/lang/String;)V
-
-    .line 4
-    invoke-virtual {p1}, Landroidx/lifecycle/f$b;->getTargetState()Landroidx/lifecycle/f$c;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Landroidx/lifecycle/k;->g(Landroidx/lifecycle/f$c;)V
-
-    return-void
-
-    .line 5
-    :cond_0
-    instance-of v0, p0, Landroidx/lifecycle/j;
-
-    if-eqz v0, :cond_1
-
-    .line 6
-    check-cast p0, Landroidx/lifecycle/j;
-
-    invoke-interface {p0}, Landroidx/lifecycle/j;->getLifecycle()Landroidx/lifecycle/f;
-
-    move-result-object p0
-
-    .line 7
-    instance-of v0, p0, Landroidx/lifecycle/k;
-
-    if-eqz v0, :cond_1
-
-    .line 8
-    check-cast p0, Landroidx/lifecycle/k;
-
-    .line 9
-    invoke-virtual {p0, v1}, Landroidx/lifecycle/k;->d(Ljava/lang/String;)V
-
-    .line 10
-    invoke-virtual {p1}, Landroidx/lifecycle/f$b;->getTargetState()Landroidx/lifecycle/f$c;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Landroidx/lifecycle/k;->g(Landroidx/lifecycle/f$c;)V
-
-    :cond_1
-    return-void
-.end method
-
-.method public static c(Landroid/app/Activity;)V
-    .locals 3
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x1d
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
-    invoke-static {p0}, Landroidx/lifecycle/s$b;->registerIn(Landroid/app/Activity;)V
-
-    .line 3
-    :cond_0
-    invoke-virtual {p0}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
-
-    move-result-object p0
-
-    const-string v0, "androidx.lifecycle.LifecycleDispatcher.report_fragment_tag"
-
-    .line 4
-    invoke-virtual {p0, v0}, Landroid/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroid/app/Fragment;
-
-    move-result-object v1
-
-    if-nez v1, :cond_1
-
-    .line 5
-    invoke-virtual {p0}, Landroid/app/FragmentManager;->beginTransaction()Landroid/app/FragmentTransaction;
-
-    move-result-object v1
-
-    new-instance v2, Landroidx/lifecycle/s;
-
-    invoke-direct {v2}, Landroidx/lifecycle/s;-><init>()V
-
-    invoke-virtual {v1, v2, v0}, Landroid/app/FragmentTransaction;->add(Landroid/app/Fragment;Ljava/lang/String;)Landroid/app/FragmentTransaction;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/app/FragmentTransaction;->commit()I
-
-    .line 6
-    invoke-virtual {p0}, Landroid/app/FragmentManager;->executePendingTransactions()Z
-
-    :cond_1
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Landroidx/lifecycle/f$b;)V
-    .locals 2
+.method public onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
+    .locals 1
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/16 v1, 0x1d
+    const/16 v0, 0x1d
 
-    if-ge v0, v1, :cond_0
+    if-ge p2, v0, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    sget p2, Landroidx/lifecycle/t;->h:I
 
-    move-result-object v0
+    .line 3
+    invoke-virtual {p1}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
 
-    invoke-static {v0, p1}, Landroidx/lifecycle/s;->a(Landroid/app/Activity;Landroidx/lifecycle/f$b;)V
+    move-result-object p1
+
+    const-string p2, "androidx.lifecycle.LifecycleDispatcher.report_fragment_tag"
+
+    invoke-virtual {p1, p2}, Landroid/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroid/app/Fragment;
+
+    move-result-object p1
+
+    check-cast p1, Landroidx/lifecycle/t;
+
+    .line 4
+    iget-object p2, p0, Landroidx/lifecycle/s;->this$0:Landroidx/lifecycle/r;
+
+    iget-object p2, p2, Landroidx/lifecycle/r;->n:Landroidx/lifecycle/t$a;
+
+    .line 5
+    iput-object p2, p1, Landroidx/lifecycle/t;->g:Landroidx/lifecycle/t$a;
 
     :cond_0
     return-void
 .end method
 
-.method public onActivityCreated(Landroid/os/Bundle;)V
+.method public onActivityPaused(Landroid/app/Activity;)V
+    .locals 3
+
+    .line 1
+    iget-object p1, p0, Landroidx/lifecycle/s;->this$0:Landroidx/lifecycle/r;
+
+    .line 2
+    iget v0, p1, Landroidx/lifecycle/r;->h:I
+
+    add-int/lit8 v0, v0, -0x1
+
+    iput v0, p1, Landroidx/lifecycle/r;->h:I
+
+    if-nez v0, :cond_0
+
+    .line 3
+    iget-object v0, p1, Landroidx/lifecycle/r;->k:Landroid/os/Handler;
+
+    iget-object p1, p1, Landroidx/lifecycle/r;->m:Ljava/lang/Runnable;
+
+    const-wide/16 v1, 0x2bc
+
+    invoke-virtual {v0, p1, v1, v2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    :cond_0
+    return-void
+.end method
+
+.method public onActivityPreCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
+    new-instance p2, Landroidx/lifecycle/s$a;
 
-    .line 2
-    sget-object p1, Landroidx/lifecycle/f$b;->ON_CREATE:Landroidx/lifecycle/f$b;
+    invoke-direct {p2, p0}, Landroidx/lifecycle/s$a;-><init>(Landroidx/lifecycle/s;)V
 
-    invoke-virtual {p0, p1}, Landroidx/lifecycle/s;->b(Landroidx/lifecycle/f$b;)V
+    invoke-virtual {p1, p2}, Landroid/app/Activity;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
 
     return-void
 .end method
 
-.method public onDestroy()V
-    .locals 1
+.method public onActivityStopped(Landroid/app/Activity;)V
+    .locals 3
 
     .line 1
-    invoke-super {p0}, Landroid/app/Fragment;->onDestroy()V
+    iget-object p1, p0, Landroidx/lifecycle/s;->this$0:Landroidx/lifecycle/r;
 
     .line 2
-    sget-object v0, Landroidx/lifecycle/f$b;->ON_DESTROY:Landroidx/lifecycle/f$b;
+    iget v0, p1, Landroidx/lifecycle/r;->g:I
 
-    invoke-virtual {p0, v0}, Landroidx/lifecycle/s;->b(Landroidx/lifecycle/f$b;)V
+    const/4 v1, 0x1
 
-    const/4 v0, 0x0
+    sub-int/2addr v0, v1
+
+    iput v0, p1, Landroidx/lifecycle/r;->g:I
+
+    if-nez v0, :cond_0
 
     .line 3
-    iput-object v0, p0, Landroidx/lifecycle/s;->a:Landroidx/lifecycle/s$a;
-
-    return-void
-.end method
-
-.method public onPause()V
-    .locals 1
-
-    .line 1
-    invoke-super {p0}, Landroid/app/Fragment;->onPause()V
-
-    .line 2
-    sget-object v0, Landroidx/lifecycle/f$b;->ON_PAUSE:Landroidx/lifecycle/f$b;
-
-    invoke-virtual {p0, v0}, Landroidx/lifecycle/s;->b(Landroidx/lifecycle/f$b;)V
-
-    return-void
-.end method
-
-.method public onResume()V
-    .locals 1
-
-    .line 1
-    invoke-super {p0}, Landroid/app/Fragment;->onResume()V
-
-    .line 2
-    iget-object v0, p0, Landroidx/lifecycle/s;->a:Landroidx/lifecycle/s$a;
+    iget-boolean v0, p1, Landroidx/lifecycle/r;->i:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
-    check-cast v0, Landroidx/lifecycle/q$b;
-
     .line 4
-    iget-object v0, v0, Landroidx/lifecycle/q$b;->a:Landroidx/lifecycle/q;
+    iget-object v0, p1, Landroidx/lifecycle/r;->l:Landroidx/lifecycle/k;
 
-    invoke-virtual {v0}, Landroidx/lifecycle/q;->a()V
+    sget-object v2, Landroidx/lifecycle/f$b;->ON_STOP:Landroidx/lifecycle/f$b;
+
+    invoke-virtual {v0, v2}, Landroidx/lifecycle/k;->e(Landroidx/lifecycle/f$b;)V
 
     .line 5
+    iput-boolean v1, p1, Landroidx/lifecycle/r;->j:Z
+
     :cond_0
-    sget-object v0, Landroidx/lifecycle/f$b;->ON_RESUME:Landroidx/lifecycle/f$b;
-
-    invoke-virtual {p0, v0}, Landroidx/lifecycle/s;->b(Landroidx/lifecycle/f$b;)V
-
-    return-void
-.end method
-
-.method public onStart()V
-    .locals 1
-
-    .line 1
-    invoke-super {p0}, Landroid/app/Fragment;->onStart()V
-
-    .line 2
-    iget-object v0, p0, Landroidx/lifecycle/s;->a:Landroidx/lifecycle/s$a;
-
-    if-eqz v0, :cond_0
-
-    .line 3
-    check-cast v0, Landroidx/lifecycle/q$b;
-
-    .line 4
-    iget-object v0, v0, Landroidx/lifecycle/q$b;->a:Landroidx/lifecycle/q;
-
-    invoke-virtual {v0}, Landroidx/lifecycle/q;->b()V
-
-    .line 5
-    :cond_0
-    sget-object v0, Landroidx/lifecycle/f$b;->ON_START:Landroidx/lifecycle/f$b;
-
-    invoke-virtual {p0, v0}, Landroidx/lifecycle/s;->b(Landroidx/lifecycle/f$b;)V
-
-    return-void
-.end method
-
-.method public onStop()V
-    .locals 1
-
-    .line 1
-    invoke-super {p0}, Landroid/app/Fragment;->onStop()V
-
-    .line 2
-    sget-object v0, Landroidx/lifecycle/f$b;->ON_STOP:Landroidx/lifecycle/f$b;
-
-    invoke-virtual {p0, v0}, Landroidx/lifecycle/s;->b(Landroidx/lifecycle/f$b;)V
-
     return-void
 .end method

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lm/c;
+.field public static final g:Lm/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lm/c<",
@@ -15,7 +15,7 @@
     .end annotation
 .end field
 
-.field public static final b:Ljava/lang/Object;
+.field public static final h:Ljava/lang/Object;
 
 
 # direct methods
@@ -31,14 +31,14 @@
     invoke-direct {v0, v1}, Lm/c;-><init>(I)V
 
     .line 3
-    sput-object v0, Landroidx/appcompat/app/h;->a:Lm/c;
+    sput-object v0, Landroidx/appcompat/app/h;->g:Lm/c;
 
     .line 4
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Landroidx/appcompat/app/h;->b:Ljava/lang/Object;
+    sput-object v0, Landroidx/appcompat/app/h;->h:Ljava/lang/Object;
 
     return-void
 .end method
@@ -56,13 +56,13 @@
     .locals 3
 
     .line 1
-    sget-object v0, Landroidx/appcompat/app/h;->b:Ljava/lang/Object;
+    sget-object v0, Landroidx/appcompat/app/h;->h:Ljava/lang/Object;
 
     monitor-enter v0
 
     .line 2
     :try_start_0
-    sget-object v1, Landroidx/appcompat/app/h;->a:Lm/c;
+    sget-object v1, Landroidx/appcompat/app/h;->g:Lm/c;
 
     invoke-virtual {v1}, Lm/c;->iterator()Ljava/util/Iterator;
 

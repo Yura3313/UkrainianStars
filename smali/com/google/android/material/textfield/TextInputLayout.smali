@@ -15,63 +15,65 @@
 
 
 # static fields
-.field public static final N0:I
+.field public static final O0:I
 
 
 # instance fields
-.field public final A:Landroid/widget/TextView;
+.field public A:Ljava/lang/CharSequence;
 
 .field public A0:I
 
-.field public B:Ljava/lang/CharSequence;
+.field public final B:Landroid/widget/TextView;
 
-.field public B0:Landroid/content/res/ColorStateList;
+.field public B0:I
 
-.field public final C:Landroid/widget/TextView;
+.field public C:Ljava/lang/CharSequence;
 
-.field public C0:I
+.field public C0:Landroid/content/res/ColorStateList;
 
-.field public D:Z
+.field public final D:Landroid/widget/TextView;
 
 .field public D0:I
 
-.field public E:Ljava/lang/CharSequence;
+.field public E:Z
 
 .field public E0:I
 
-.field public F:Z
+.field public F:Ljava/lang/CharSequence;
 
 .field public F0:I
 
-.field public G:Lr4/g;
+.field public G:Z
 
 .field public G0:I
 
 .field public H:Lr4/g;
 
-.field public H0:Z
+.field public H0:I
 
-.field public I:Lr4/k;
+.field public I:Lr4/g;
 
-.field public final I0:Lcom/google/android/material/internal/a;
+.field public I0:Z
 
-.field public final J:I
+.field public J:Lr4/k;
 
-.field public J0:Z
+.field public final J0:Lcom/google/android/material/internal/a;
 
-.field public K:I
+.field public final K:I
 
-.field public K0:Landroid/animation/ValueAnimator;
+.field public K0:Z
 
-.field public final L:I
+.field public L:I
 
-.field public L0:Z
+.field public L0:Landroid/animation/ValueAnimator;
 
-.field public M:I
+.field public final M:I
 
 .field public M0:Z
 
 .field public N:I
+
+.field public N0:Z
 
 .field public O:I
 
@@ -79,35 +81,37 @@
 
 .field public Q:I
 
-.field public final R:Landroid/graphics/Rect;
+.field public R:I
 
 .field public final S:Landroid/graphics/Rect;
 
-.field public final T:Landroid/graphics/RectF;
+.field public final T:Landroid/graphics/Rect;
 
-.field public U:Landroid/graphics/Typeface;
+.field public final U:Landroid/graphics/RectF;
 
-.field public final V:Lcom/google/android/material/internal/CheckableImageButton;
+.field public V:Landroid/graphics/Typeface;
 
-.field public W:Landroid/content/res/ColorStateList;
+.field public final W:Lcom/google/android/material/internal/CheckableImageButton;
 
-.field public final a:Landroid/widget/FrameLayout;
+.field public a0:Landroid/content/res/ColorStateList;
 
-.field public a0:Z
+.field public b0:Z
 
-.field public final b:Landroid/widget/LinearLayout;
+.field public c0:Landroid/graphics/PorterDuff$Mode;
 
-.field public b0:Landroid/graphics/PorterDuff$Mode;
+.field public d0:Z
 
-.field public c0:Z
+.field public e0:Landroid/graphics/drawable/Drawable;
 
-.field public d0:Landroid/graphics/drawable/Drawable;
+.field public f0:I
 
-.field public e0:I
+.field public final g:Landroid/widget/FrameLayout;
 
-.field public f0:Landroid/view/View$OnLongClickListener;
+.field public g0:Landroid/view/View$OnLongClickListener;
 
-.field public final g0:Ljava/util/LinkedHashSet;
+.field public final h:Landroid/widget/LinearLayout;
+
+.field public final h0:Ljava/util/LinkedHashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/LinkedHashSet<",
@@ -117,13 +121,13 @@
     .end annotation
 .end field
 
-.field public final h:Landroid/widget/LinearLayout;
+.field public final i:Landroid/widget/LinearLayout;
 
-.field public h0:I
+.field public i0:I
 
-.field public final i:Landroid/widget/FrameLayout;
+.field public final j:Landroid/widget/FrameLayout;
 
-.field public final i0:Landroid/util/SparseArray;
+.field public final j0:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray<",
@@ -133,13 +137,13 @@
     .end annotation
 .end field
 
-.field public j:Landroid/widget/EditText;
+.field public k:Landroid/widget/EditText;
 
-.field public final j0:Lcom/google/android/material/internal/CheckableImageButton;
+.field public final k0:Lcom/google/android/material/internal/CheckableImageButton;
 
-.field public k:Ljava/lang/CharSequence;
+.field public l:Ljava/lang/CharSequence;
 
-.field public final k0:Ljava/util/LinkedHashSet;
+.field public final l0:Ljava/util/LinkedHashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/LinkedHashSet<",
@@ -149,63 +153,59 @@
     .end annotation
 .end field
 
-.field public final l:Lcom/google/android/material/textfield/n;
+.field public final m:Lcom/google/android/material/textfield/n;
 
-.field public l0:Landroid/content/res/ColorStateList;
+.field public m0:Landroid/content/res/ColorStateList;
 
-.field public m:Z
+.field public n:Z
 
-.field public m0:Z
+.field public n0:Z
 
-.field public n:I
+.field public o:I
 
-.field public n0:Landroid/graphics/PorterDuff$Mode;
+.field public o0:Landroid/graphics/PorterDuff$Mode;
 
-.field public o:Z
+.field public p:Z
 
-.field public o0:Z
+.field public p0:Z
 
-.field public p:Landroid/widget/TextView;
+.field public q:Landroid/widget/TextView;
 
-.field public p0:Landroid/graphics/drawable/Drawable;
-
-.field public q:I
-
-.field public q0:I
+.field public q0:Landroid/graphics/drawable/Drawable;
 
 .field public r:I
 
-.field public r0:Landroid/graphics/drawable/Drawable;
+.field public r0:I
 
-.field public s:Ljava/lang/CharSequence;
+.field public s:I
 
-.field public s0:Landroid/view/View$OnLongClickListener;
+.field public s0:Landroid/graphics/drawable/Drawable;
 
-.field public t:Z
+.field public t:Ljava/lang/CharSequence;
 
 .field public t0:Landroid/view/View$OnLongClickListener;
 
-.field public u:Landroid/widget/TextView;
+.field public u:Z
 
-.field public final u0:Lcom/google/android/material/internal/CheckableImageButton;
+.field public u0:Landroid/view/View$OnLongClickListener;
 
-.field public v:Landroid/content/res/ColorStateList;
+.field public v:Landroid/widget/TextView;
 
-.field public v0:Landroid/content/res/ColorStateList;
+.field public final v0:Lcom/google/android/material/internal/CheckableImageButton;
 
-.field public w:I
+.field public w:Landroid/content/res/ColorStateList;
 
 .field public w0:Landroid/content/res/ColorStateList;
 
-.field public x:Landroid/content/res/ColorStateList;
+.field public x:I
 
 .field public x0:Landroid/content/res/ColorStateList;
 
 .field public y:Landroid/content/res/ColorStateList;
 
-.field public y0:I
+.field public y0:Landroid/content/res/ColorStateList;
 
-.field public z:Ljava/lang/CharSequence;
+.field public z:Landroid/content/res/ColorStateList;
 
 .field public z0:I
 
@@ -217,7 +217,7 @@
     .line 1
     sget v0, Lcom/google/android/material/R$style;->Widget_Design_TextInputLayout:I
 
-    sput v0, Lcom/google/android/material/textfield/TextInputLayout;->N0:I
+    sput v0, Lcom/google/android/material/textfield/TextInputLayout;->O0:I
 
     return-void
 .end method
@@ -243,7 +243,7 @@
     move/from16 v8, p3
 
     .line 2
-    sget v9, Lcom/google/android/material/textfield/TextInputLayout;->N0:I
+    sget v9, Lcom/google/android/material/textfield/TextInputLayout;->O0:I
 
     move-object/from16 v1, p1
 
@@ -258,61 +258,61 @@
 
     invoke-direct {v1, v0}, Lcom/google/android/material/textfield/n;-><init>(Lcom/google/android/material/textfield/TextInputLayout;)V
 
-    iput-object v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iput-object v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 4
     new-instance v1, Landroid/graphics/Rect;
 
     invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->R:Landroid/graphics/Rect;
+    iput-object v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->S:Landroid/graphics/Rect;
 
     .line 5
     new-instance v1, Landroid/graphics/Rect;
 
     invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->S:Landroid/graphics/Rect;
+    iput-object v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->T:Landroid/graphics/Rect;
 
     .line 6
     new-instance v1, Landroid/graphics/RectF;
 
     invoke-direct {v1}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->T:Landroid/graphics/RectF;
+    iput-object v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->U:Landroid/graphics/RectF;
 
     .line 7
     new-instance v1, Ljava/util/LinkedHashSet;
 
     invoke-direct {v1}, Ljava/util/LinkedHashSet;-><init>()V
 
-    iput-object v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->g0:Ljava/util/LinkedHashSet;
+    iput-object v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->h0:Ljava/util/LinkedHashSet;
 
     const/4 v10, 0x0
 
     .line 8
-    iput v10, v0, Lcom/google/android/material/textfield/TextInputLayout;->h0:I
+    iput v10, v0, Lcom/google/android/material/textfield/TextInputLayout;->i0:I
 
     .line 9
     new-instance v11, Landroid/util/SparseArray;
 
     invoke-direct {v11}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v11, v0, Lcom/google/android/material/textfield/TextInputLayout;->i0:Landroid/util/SparseArray;
+    iput-object v11, v0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Landroid/util/SparseArray;
 
     .line 10
     new-instance v1, Ljava/util/LinkedHashSet;
 
     invoke-direct {v1}, Ljava/util/LinkedHashSet;-><init>()V
 
-    iput-object v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Ljava/util/LinkedHashSet;
+    iput-object v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->l0:Ljava/util/LinkedHashSet;
 
     .line 11
     new-instance v1, Lcom/google/android/material/internal/a;
 
     invoke-direct {v1, v0}, Lcom/google/android/material/internal/a;-><init>(Landroid/view/View;)V
 
-    iput-object v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iput-object v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     .line 12
     invoke-virtual/range {p0 .. p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
@@ -335,7 +335,7 @@
 
     invoke-direct {v2, v12}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
-    iput-object v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->a:Landroid/widget/FrameLayout;
+    iput-object v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->g:Landroid/widget/FrameLayout;
 
     .line 17
     invoke-virtual {v2, v13}, Landroid/widget/FrameLayout;->setAddStatesFromChildren(Z)V
@@ -348,7 +348,7 @@
 
     invoke-direct {v14, v12}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
-    iput-object v14, v0, Lcom/google/android/material/textfield/TextInputLayout;->b:Landroid/widget/LinearLayout;
+    iput-object v14, v0, Lcom/google/android/material/textfield/TextInputLayout;->h:Landroid/widget/LinearLayout;
 
     .line 20
     invoke-virtual {v14, v10}, Landroid/widget/LinearLayout;->setOrientation(I)V
@@ -374,7 +374,7 @@
 
     invoke-direct {v5, v12}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
-    iput-object v5, v0, Lcom/google/android/material/textfield/TextInputLayout;->h:Landroid/widget/LinearLayout;
+    iput-object v5, v0, Lcom/google/android/material/textfield/TextInputLayout;->i:Landroid/widget/LinearLayout;
 
     .line 24
     invoke-virtual {v5, v10}, Landroid/widget/LinearLayout;->setOrientation(I)V
@@ -396,7 +396,7 @@
 
     invoke-direct {v4, v12}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
-    iput-object v4, v0, Lcom/google/android/material/textfield/TextInputLayout;->i:Landroid/widget/FrameLayout;
+    iput-object v4, v0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/FrameLayout;
 
     .line 28
     new-instance v2, Landroid/widget/FrameLayout$LayoutParams;
@@ -406,7 +406,7 @@
     invoke-virtual {v4, v2}, Landroid/widget/FrameLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 29
-    sget-object v2, Lb4/a;->a:Landroid/animation/TimeInterpolator;
+    sget-object v2, Lc4/a;->a:Landroid/animation/TimeInterpolator;
 
     .line 30
     iput-object v2, v1, Lcom/google/android/material/internal/a;->I:Landroid/animation/TimeInterpolator;
@@ -487,7 +487,7 @@
     move-object/from16 v6, v18
 
     .line 36
-    invoke-static/range {v1 .. v6}, Lcom/google/android/material/internal/j;->e(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroidx/appcompat/widget/i0;
+    invoke-static/range {v1 .. v6}, Lcom/google/android/material/internal/l;->e(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroidx/appcompat/widget/i0;
 
     move-result-object v1
 
@@ -500,7 +500,7 @@
 
     move-result v2
 
-    iput-boolean v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->D:Z
+    iput-boolean v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->E:Z
 
     .line 38
     sget v2, Lcom/google/android/material/R$styleable;->TextInputLayout_android_hint:I
@@ -518,7 +518,7 @@
 
     move-result v2
 
-    iput-boolean v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Z
+    iput-boolean v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->K0:Z
 
     .line 40
     invoke-static {v12, v7, v8, v9}, Lr4/k;->b(Landroid/content/Context;Landroid/util/AttributeSet;II)Lr4/k$b;
@@ -529,7 +529,7 @@
 
     move-result-object v2
 
-    iput-object v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->I:Lr4/k;
+    iput-object v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->J:Lr4/k;
 
     .line 41
     invoke-virtual {v12}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -543,7 +543,7 @@
 
     move-result v2
 
-    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->J:I
+    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
 
     .line 43
     sget v2, Lcom/google/android/material/R$styleable;->TextInputLayout_boxCollapsedPaddingTop:I
@@ -555,7 +555,7 @@
 
     move-result v2
 
-    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
+    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->M:I
 
     .line 45
     sget v2, Lcom/google/android/material/R$styleable;->TextInputLayout_boxStrokeWidth:I
@@ -577,7 +577,7 @@
 
     move-result v2
 
-    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->N:I
+    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->O:I
 
     .line 49
     sget v2, Lcom/google/android/material/R$styleable;->TextInputLayout_boxStrokeWidthFocused:I
@@ -599,12 +599,12 @@
 
     move-result v2
 
-    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->O:I
+    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->P:I
 
     .line 53
-    iget v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->N:I
+    iget v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->O:I
 
-    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->M:I
+    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->N:I
 
     .line 54
     sget v2, Lcom/google/android/material/R$styleable;->TextInputLayout_boxCornerRadiusTopStart:I
@@ -641,7 +641,7 @@
     move-result v3
 
     .line 62
-    iget-object v6, v0, Lcom/google/android/material/textfield/TextInputLayout;->I:Lr4/k;
+    iget-object v6, v0, Lcom/google/android/material/textfield/TextInputLayout;->J:Lr4/k;
 
     invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -689,7 +689,7 @@
 
     move-result-object v2
 
-    iput-object v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->I:Lr4/k;
+    iput-object v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->J:Lr4/k;
 
     .line 69
     sget v2, Lcom/google/android/material/R$styleable;->TextInputLayout_boxBackgroundColor:I
@@ -706,10 +706,10 @@
 
     move-result v3
 
-    iput v3, v0, Lcom/google/android/material/textfield/TextInputLayout;->C0:I
+    iput v3, v0, Lcom/google/android/material/textfield/TextInputLayout;->D0:I
 
     .line 72
-    iput v3, v0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
+    iput v3, v0, Lcom/google/android/material/textfield/TextInputLayout;->R:I
 
     .line 73
     invoke-virtual {v2}, Landroid/content/res/ColorStateList;->isStateful()Z
@@ -733,7 +733,7 @@
 
     move-result v3
 
-    iput v3, v0, Lcom/google/android/material/textfield/TextInputLayout;->D0:I
+    iput v3, v0, Lcom/google/android/material/textfield/TextInputLayout;->E0:I
 
     const/4 v3, 0x2
 
@@ -747,7 +747,7 @@
 
     move-result v4
 
-    iput v4, v0, Lcom/google/android/material/textfield/TextInputLayout;->E0:I
+    iput v4, v0, Lcom/google/android/material/textfield/TextInputLayout;->F0:I
 
     new-array v4, v3, [I
 
@@ -759,15 +759,15 @@
 
     move-result v2
 
-    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->F0:I
+    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->G0:I
 
     goto :goto_0
 
     .line 79
     :cond_4
-    iget v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->C0:I
+    iget v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->D0:I
 
-    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->E0:I
+    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->F0:I
 
     .line 80
     sget v2, Lcom/google/android/material/R$color;->mtrl_filled_background_color:I
@@ -790,7 +790,7 @@
 
     move-result v4
 
-    iput v4, v0, Lcom/google/android/material/textfield/TextInputLayout;->D0:I
+    iput v4, v0, Lcom/google/android/material/textfield/TextInputLayout;->E0:I
 
     new-array v4, v3, [I
 
@@ -803,7 +803,7 @@
 
     move-result v2
 
-    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->F0:I
+    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->G0:I
 
     goto :goto_0
 
@@ -811,19 +811,19 @@
     const/4 v6, 0x0
 
     .line 84
-    iput v6, v0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
+    iput v6, v0, Lcom/google/android/material/textfield/TextInputLayout;->R:I
 
     .line 85
-    iput v6, v0, Lcom/google/android/material/textfield/TextInputLayout;->C0:I
-
-    .line 86
     iput v6, v0, Lcom/google/android/material/textfield/TextInputLayout;->D0:I
 
-    .line 87
+    .line 86
     iput v6, v0, Lcom/google/android/material/textfield/TextInputLayout;->E0:I
 
-    .line 88
+    .line 87
     iput v6, v0, Lcom/google/android/material/textfield/TextInputLayout;->F0:I
+
+    .line 88
+    iput v6, v0, Lcom/google/android/material/textfield/TextInputLayout;->G0:I
 
     .line 89
     :goto_0
@@ -840,9 +840,9 @@
 
     move-result-object v2
 
-    iput-object v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->x0:Landroid/content/res/ColorStateList;
+    iput-object v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->y0:Landroid/content/res/ColorStateList;
 
-    iput-object v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->w0:Landroid/content/res/ColorStateList;
+    iput-object v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->x0:Landroid/content/res/ColorStateList;
 
     .line 91
     :cond_6
@@ -860,7 +860,7 @@
 
     move-result v2
 
-    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->A0:I
+    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->B0:I
 
     .line 94
     sget v2, Lcom/google/android/material/R$color;->mtrl_textinput_default_box_stroke_color:I
@@ -870,7 +870,7 @@
 
     move-result v2
 
-    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->y0:I
+    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->z0:I
 
     .line 96
     sget v2, Lcom/google/android/material/R$color;->mtrl_textinput_disabled_color:I
@@ -879,7 +879,7 @@
 
     move-result v2
 
-    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->G0:I
+    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->H0:I
 
     .line 97
     sget v2, Lcom/google/android/material/R$color;->mtrl_textinput_hovered_box_stroke_color:I
@@ -889,7 +889,7 @@
 
     move-result v2
 
-    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->z0:I
+    iput v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->A0:I
 
     if-eqz v3, :cond_7
 
@@ -975,7 +975,7 @@
 
     check-cast v6, Lcom/google/android/material/internal/CheckableImageButton;
 
-    iput-object v6, v0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Lcom/google/android/material/internal/CheckableImageButton;
+    iput-object v6, v0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Lcom/google/android/material/internal/CheckableImageButton;
 
     const/16 v2, 0x8
 
@@ -1034,7 +1034,7 @@
     move-result v8
 
     .line 119
-    invoke-static {v8, v10}, Lcom/google/android/material/internal/n;->g(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
+    invoke-static {v8, v10}, Lcom/google/android/material/internal/p;->g(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
 
     move-result-object v8
 
@@ -1059,7 +1059,7 @@
     const/4 v8, 0x2
 
     .line 123
-    invoke-static {v6, v8}, Lf0/s;->D(Landroid/view/View;I)V
+    invoke-static {v6, v8}, Lf0/r;->D(Landroid/view/View;I)V
 
     const/4 v8, 0x0
 
@@ -1178,7 +1178,7 @@
 
     move-result v8
 
-    iput v8, v0, Lcom/google/android/material/textfield/TextInputLayout;->r:I
+    iput v8, v0, Lcom/google/android/material/textfield/TextInputLayout;->s:I
 
     move/from16 v8, v20
 
@@ -1187,7 +1187,7 @@
 
     move-result v8
 
-    iput v8, v0, Lcom/google/android/material/textfield/TextInputLayout;->q:I
+    iput v8, v0, Lcom/google/android/material/textfield/TextInputLayout;->r:I
 
     .line 144
     invoke-virtual/range {p0 .. p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
@@ -1213,7 +1213,7 @@
 
     check-cast v8, Lcom/google/android/material/internal/CheckableImageButton;
 
-    iput-object v8, v0, Lcom/google/android/material/textfield/TextInputLayout;->V:Lcom/google/android/material/internal/CheckableImageButton;
+    iput-object v8, v0, Lcom/google/android/material/textfield/TextInputLayout;->W:Lcom/google/android/material/internal/CheckableImageButton;
 
     const/16 v10, 0x8
 
@@ -1311,7 +1311,7 @@
     const/4 v14, 0x0
 
     .line 160
-    invoke-static {v10, v14}, Lcom/google/android/material/internal/n;->g(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
+    invoke-static {v10, v14}, Lcom/google/android/material/internal/p;->g(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
 
     move-result-object v10
 
@@ -1352,7 +1352,7 @@
 
     check-cast v7, Lcom/google/android/material/internal/CheckableImageButton;
 
-    iput-object v7, v0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iput-object v7, v0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     .line 167
     invoke-virtual {v4, v7}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
@@ -1552,7 +1552,7 @@
     const/4 v10, 0x0
 
     .line 194
-    invoke-static {v7, v10}, Lcom/google/android/material/internal/n;->g(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
+    invoke-static {v7, v10}, Lcom/google/android/material/internal/p;->g(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
 
     move-result-object v7
 
@@ -1607,7 +1607,7 @@
     const/4 v10, 0x0
 
     .line 202
-    invoke-static {v7, v10}, Lcom/google/android/material/internal/n;->g(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
+    invoke-static {v7, v10}, Lcom/google/android/material/internal/p;->g(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;
 
     move-result-object v7
 
@@ -1627,7 +1627,7 @@
     invoke-direct {v7, v12, v10}, Landroidx/appcompat/widget/AppCompatTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 206
-    iput-object v7, v0, Lcom/google/android/material/textfield/TextInputLayout;->A:Landroid/widget/TextView;
+    iput-object v7, v0, Lcom/google/android/material/textfield/TextInputLayout;->B:Landroid/widget/TextView;
 
     .line 207
     sget v14, Lcom/google/android/material/R$id;->textinput_prefix_text:I
@@ -1646,7 +1646,7 @@
     const/4 v10, 0x1
 
     .line 209
-    invoke-static {v7, v10}, Lf0/s;->B(Landroid/view/View;I)V
+    invoke-static {v7, v10}, Lf0/r;->B(Landroid/view/View;I)V
 
     .line 210
     invoke-virtual {v2, v8}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
@@ -1663,7 +1663,7 @@
     invoke-direct {v2, v12, v7}, Landroidx/appcompat/widget/AppCompatTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 214
-    iput-object v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->C:Landroid/widget/TextView;
+    iput-object v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->D:Landroid/widget/TextView;
 
     .line 215
     sget v7, Lcom/google/android/material/R$id;->textinput_suffix_text:I
@@ -1684,7 +1684,7 @@
     const/4 v7, 0x1
 
     .line 217
-    invoke-static {v2, v7}, Lf0/s;->B(Landroid/view/View;I)V
+    invoke-static {v2, v7}, Lf0/r;->B(Landroid/view/View;I)V
 
     .line 218
     invoke-virtual {v15, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
@@ -1716,12 +1716,12 @@
     invoke-virtual {v0, v2}, Lcom/google/android/material/textfield/TextInputLayout;->setErrorContentDescription(Ljava/lang/CharSequence;)V
 
     .line 227
-    iget v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->r:I
+    iget v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->s:I
 
     invoke-virtual {v0, v2}, Lcom/google/android/material/textfield/TextInputLayout;->setCounterTextAppearance(I)V
 
     .line 228
-    iget v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->q:I
+    iget v2, v0, Lcom/google/android/material/textfield/TextInputLayout;->r:I
 
     invoke-virtual {v0, v2}, Lcom/google/android/material/textfield/TextInputLayout;->setCounterOverflowTextAppearance(I)V
 
@@ -1917,7 +1917,7 @@
     const/4 v1, 0x2
 
     .line 256
-    invoke-static {v0, v1}, Lf0/s;->D(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lf0/r;->D(Landroid/view/View;I)V
 
     return-void
 
@@ -1940,9 +1940,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->i0:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Landroid/util/SparseArray;
 
-    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->h0:I
+    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->i0:I
 
     invoke-virtual {v0, v1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -1956,7 +1956,7 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->i0:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Landroid/util/SparseArray;
 
     const/4 v1, 0x0
 
@@ -1974,7 +1974,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0}, Landroid/widget/ImageButton;->getVisibility()I
 
@@ -1983,7 +1983,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Lcom/google/android/material/internal/CheckableImageButton;
 
     return-object v0
 
@@ -2002,7 +2002,7 @@
     if-eqz v0, :cond_1
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     return-object v0
 
@@ -2056,7 +2056,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 2
     invoke-virtual {p0}, Landroid/view/View;->hasOnClickListeners()Z
@@ -2106,7 +2106,7 @@
 
     .line 7
     :goto_1
-    invoke-static {p0, v2}, Lf0/s;->D(Landroid/view/View;I)V
+    invoke-static {p0, v2}, Lf0/r;->D(Landroid/view/View;I)V
 
     return-void
 .end method
@@ -2115,12 +2115,12 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-nez v0, :cond_8
 
     .line 2
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->h0:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->i0:I
 
     const/4 v1, 0x3
 
@@ -2130,7 +2130,7 @@
 
     .line 3
     :cond_0
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     .line 4
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->m()V
@@ -2143,9 +2143,9 @@
     invoke-virtual {p0, v0}, Lcom/google/android/material/textfield/TextInputLayout;->setTextInputAccessibilityDelegate(Lcom/google/android/material/textfield/TextInputLayout$e;)V
 
     .line 6
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getTypeface()Landroid/graphics/Typeface;
 
@@ -2154,9 +2154,9 @@
     invoke-virtual {v0, v1}, Lcom/google/android/material/internal/a;->A(Landroid/graphics/Typeface;)V
 
     .line 7
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getTextSize()F
 
@@ -2177,14 +2177,14 @@
 
     .line 11
     :cond_1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getGravity()I
 
     move-result v0
 
     .line 12
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     and-int/lit8 v2, v0, -0x71
 
@@ -2193,12 +2193,12 @@
     invoke-virtual {v1, v2}, Lcom/google/android/material/internal/a;->q(I)V
 
     .line 13
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-virtual {v1, v0}, Lcom/google/android/material/internal/a;->u(I)V
 
     .line 14
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     new-instance v1, Lcom/google/android/material/textfield/TextInputLayout$a;
 
@@ -2207,29 +2207,29 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 15
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->w0:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->x0:Landroid/content/res/ColorStateList;
 
     if-nez v0, :cond_2
 
     .line 16
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getHintTextColors()Landroid/content/res/ColorStateList;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->w0:Landroid/content/res/ColorStateList;
+    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->x0:Landroid/content/res/ColorStateList;
 
     .line 17
     :cond_2
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->E:Z
 
     const/4 v1, 0x1
 
     if-eqz v0, :cond_4
 
     .line 18
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->E:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->F:Ljava/lang/CharSequence;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -2238,19 +2238,19 @@
     if-eqz v0, :cond_3
 
     .line 19
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getHint()Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Ljava/lang/CharSequence;
 
     .line 20
     invoke-virtual {p0, v0}, Lcom/google/android/material/textfield/TextInputLayout;->setHint(Ljava/lang/CharSequence;)V
 
     .line 21
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     const/4 v2, 0x0
 
@@ -2258,16 +2258,16 @@
 
     .line 22
     :cond_3
-    iput-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->F:Z
+    iput-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Z
 
     .line 23
     :cond_4
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     if-eqz v0, :cond_5
 
     .line 24
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -2284,32 +2284,32 @@
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->v()V
 
     .line 26
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     invoke-virtual {v0}, Lcom/google/android/material/textfield/n;->b()V
 
     .line 27
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->b:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v0}, Landroid/widget/LinearLayout;->bringToFront()V
-
-    .line 28
     iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->h:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->bringToFront()V
 
+    .line 28
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->i:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v0}, Landroid/widget/LinearLayout;->bringToFront()V
+
     .line 29
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->i:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->bringToFront()V
 
     .line 30
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0}, Landroid/widget/ImageButton;->bringToFront()V
 
     .line 31
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->g0:Ljava/util/LinkedHashSet;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->h0:Ljava/util/LinkedHashSet;
 
     invoke-virtual {v0}, Ljava/util/LinkedHashSet;->iterator()Ljava/util/Iterator;
 
@@ -2379,7 +2379,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Lcom/google/android/material/internal/CheckableImageButton;
 
     const/4 v1, 0x0
 
@@ -2398,7 +2398,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/ImageButton;->setVisibility(I)V
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->i:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/FrameLayout;
 
     if-eqz p1, :cond_1
 
@@ -2428,7 +2428,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->E:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->F:Ljava/lang/CharSequence;
 
     invoke-static {p1, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -2437,15 +2437,15 @@
     if-nez v0, :cond_0
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->E:Ljava/lang/CharSequence;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->F:Ljava/lang/CharSequence;
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/internal/a;->z(Ljava/lang/CharSequence;)V
 
     .line 4
-    iget-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->H0:Z
+    iget-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Z
 
     if-nez p1, :cond_0
 
@@ -2460,7 +2460,7 @@
     .locals 3
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->t:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Z
 
     if-ne v0, p1, :cond_0
 
@@ -2482,7 +2482,7 @@
     invoke-direct {v1, v2, v0}, Landroidx/appcompat/widget/AppCompatTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 4
-    iput-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Landroid/widget/TextView;
+    iput-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/widget/TextView;
 
     .line 5
     sget v0, Lcom/google/android/material/R$id;->textinput_placeholder:I
@@ -2490,34 +2490,34 @@
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setId(I)V
 
     .line 6
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/widget/TextView;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lf0/s;->B(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lf0/r;->B(Landroid/view/View;I)V
 
     .line 7
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->w:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->x:I
 
     invoke-virtual {p0, v0}, Lcom/google/android/material/textfield/TextInputLayout;->setPlaceholderTextAppearance(I)V
 
     .line 8
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->w:Landroid/content/res/ColorStateList;
 
     invoke-virtual {p0, v0}, Lcom/google/android/material/textfield/TextInputLayout;->setPlaceholderTextColor(Landroid/content/res/ColorStateList;)V
 
     .line 9
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/widget/TextView;
 
     if-eqz v0, :cond_3
 
     .line 10
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->a:Landroid/widget/FrameLayout;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->g:Landroid/widget/FrameLayout;
 
     invoke-virtual {v1, v0}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
 
     .line 11
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
@@ -2527,7 +2527,7 @@
 
     .line 12
     :cond_1
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/widget/TextView;
 
     if-eqz v1, :cond_2
 
@@ -2538,12 +2538,12 @@
 
     .line 14
     :cond_2
-    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/widget/TextView;
 
     .line 15
     :cond_3
     :goto_0
-    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->t:Z
+    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Z
 
     return-void
 .end method
@@ -2554,7 +2554,7 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-nez v0, :cond_0
 
@@ -2562,7 +2562,7 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->V:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->W:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0}, Landroid/widget/ImageButton;->getVisibility()I
 
@@ -2588,9 +2588,9 @@
 
     .line 3
     :cond_2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
-    sget-object v2, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v2, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 4
     invoke-virtual {v0}, Landroid/view/View;->getPaddingStart()I
@@ -2599,16 +2599,16 @@
 
     .line 5
     :goto_1
-    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->A:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->B:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     .line 6
     invoke-virtual {v3}, Landroid/widget/EditText;->getCompoundPaddingTop()I
 
     move-result v3
 
-    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     .line 7
     invoke-virtual {v4}, Landroid/widget/EditText;->getCompoundPaddingBottom()I
@@ -2616,7 +2616,7 @@
     move-result v4
 
     .line 8
-    sget-object v5, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v5, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 9
     invoke-virtual {v2, v0, v3, v1, v4}, Landroid/view/View;->setPaddingRelative(IIII)V
@@ -2628,14 +2628,14 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->A:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->B:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->z:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->A:Ljava/lang/CharSequence;
 
     if-eqz v1, :cond_0
 
     .line 2
-    iget-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->H0:Z
+    iget-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Z
 
     if-nez v1, :cond_0
 
@@ -2660,14 +2660,14 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->B0:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->C0:Landroid/content/res/ColorStateList;
 
     invoke-virtual {v0}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->B0:Landroid/content/res/ColorStateList;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->C0:Landroid/content/res/ColorStateList;
 
     const/4 v2, 0x2
 
@@ -2681,7 +2681,7 @@
     move-result v1
 
     .line 4
-    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->B0:Landroid/content/res/ColorStateList;
+    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->C0:Landroid/content/res/ColorStateList;
 
     new-array v2, v2, [I
 
@@ -2695,7 +2695,7 @@
     if-eqz p1, :cond_0
 
     .line 6
-    iput v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->P:I
+    iput v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
 
     goto :goto_0
 
@@ -2703,13 +2703,13 @@
     if-eqz p2, :cond_1
 
     .line 7
-    iput v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->P:I
+    iput v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
 
     goto :goto_0
 
     .line 8
     :cond_1
-    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->P:I
+    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
 
     :goto_0
     return-void
@@ -2731,7 +2731,7 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-nez v0, :cond_0
 
@@ -2748,7 +2748,7 @@
     if-nez v0, :cond_3
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0}, Landroid/widget/ImageButton;->getVisibility()I
 
@@ -2770,9 +2770,9 @@
 
     .line 4
     :cond_2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
-    sget-object v2, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v2, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 5
     invoke-virtual {v0}, Landroid/view/View;->getPaddingEnd()I
@@ -2787,23 +2787,23 @@
 
     .line 6
     :goto_2
-    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->C:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     .line 7
     invoke-virtual {v3}, Landroid/widget/EditText;->getPaddingTop()I
 
     move-result v3
 
-    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v4}, Landroid/widget/EditText;->getPaddingBottom()I
 
     move-result v4
 
     .line 8
-    sget-object v5, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v5, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 9
     invoke-virtual {v2, v1, v3, v0, v4}, Landroid/view/View;->setPaddingRelative(IIII)V
@@ -2815,21 +2815,21 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->C:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getVisibility()I
 
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->B:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->C:Ljava/lang/CharSequence;
 
     const/4 v2, 0x0
 
     if-eqz v1, :cond_0
 
     .line 3
-    iget-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->H0:Z
+    iget-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Z
 
     if-nez v1, :cond_0
 
@@ -2842,7 +2842,7 @@
 
     .line 4
     :goto_0
-    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->C:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Landroid/widget/TextView;
 
     if-eqz v1, :cond_1
 
@@ -2855,7 +2855,7 @@
     invoke-virtual {v3, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 5
-    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->C:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getVisibility()I
 
@@ -2881,11 +2881,11 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
     if-eqz v0, :cond_14
 
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     if-nez v0, :cond_0
 
@@ -2903,7 +2903,7 @@
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz v0, :cond_1
 
@@ -2932,7 +2932,7 @@
 
     if-nez v3, :cond_4
 
-    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz v3, :cond_3
 
@@ -2962,15 +2962,15 @@
     if-nez v4, :cond_5
 
     .line 5
-    iget v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->G0:I
+    iget v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->H0:I
 
-    iput v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->P:I
+    iput v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
 
     goto :goto_4
 
     .line 6
     :cond_5
-    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     invoke-virtual {v4}, Lcom/google/android/material/textfield/n;->e()Z
 
@@ -2979,7 +2979,7 @@
     if-eqz v4, :cond_7
 
     .line 7
-    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->B0:Landroid/content/res/ColorStateList;
+    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->C0:Landroid/content/res/ColorStateList;
 
     if-eqz v4, :cond_6
 
@@ -2990,28 +2990,28 @@
 
     .line 9
     :cond_6
-    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     invoke-virtual {v4}, Lcom/google/android/material/textfield/n;->g()I
 
     move-result v4
 
-    iput v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->P:I
+    iput v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
 
     goto :goto_4
 
     .line 10
     :cond_7
-    iget-boolean v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:Z
+    iget-boolean v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Z
 
     if-eqz v4, :cond_9
 
-    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     if-eqz v4, :cond_9
 
     .line 11
-    iget-object v5, p0, Lcom/google/android/material/textfield/TextInputLayout;->B0:Landroid/content/res/ColorStateList;
+    iget-object v5, p0, Lcom/google/android/material/textfield/TextInputLayout;->C0:Landroid/content/res/ColorStateList;
 
     if-eqz v5, :cond_8
 
@@ -3026,7 +3026,7 @@
 
     move-result v4
 
-    iput v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->P:I
+    iput v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
 
     goto :goto_4
 
@@ -3034,9 +3034,9 @@
     if-eqz v0, :cond_a
 
     .line 14
-    iget v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->A0:I
+    iget v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->B0:I
 
-    iput v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->P:I
+    iput v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
 
     goto :goto_4
 
@@ -3044,17 +3044,17 @@
     if-eqz v3, :cond_b
 
     .line 15
-    iget v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->z0:I
+    iget v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->A0:I
 
-    iput v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->P:I
+    iput v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
 
     goto :goto_4
 
     .line 16
     :cond_b
-    iget v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->y0:I
+    iget v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->z0:I
 
-    iput v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->P:I
+    iput v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
 
     .line 17
     :goto_4
@@ -3064,7 +3064,7 @@
 
     if-eqz v4, :cond_c
 
-    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 18
     iget-boolean v5, v4, Lcom/google/android/material/textfield/n;->l:Z
@@ -3085,23 +3085,23 @@
     invoke-direct {p0, v1}, Lcom/google/android/material/textfield/TextInputLayout;->setErrorIconVisible(Z)V
 
     .line 21
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Lcom/google/android/material/internal/CheckableImageButton;
 
-    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Landroid/content/res/ColorStateList;
+    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->w0:Landroid/content/res/ColorStateList;
 
     invoke-virtual {p0, v1, v4}, Lcom/google/android/material/textfield/TextInputLayout;->w(Lcom/google/android/material/internal/CheckableImageButton;Landroid/content/res/ColorStateList;)V
 
     .line 22
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->V:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->W:Lcom/google/android/material/internal/CheckableImageButton;
 
-    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->W:Landroid/content/res/ColorStateList;
+    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->a0:Landroid/content/res/ColorStateList;
 
     invoke-virtual {p0, v1, v4}, Lcom/google/android/material/textfield/TextInputLayout;->w(Lcom/google/android/material/internal/CheckableImageButton;Landroid/content/res/ColorStateList;)V
 
     .line 23
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
-    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->l0:Landroid/content/res/ColorStateList;
+    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->m0:Landroid/content/res/ColorStateList;
 
     invoke-virtual {p0, v1, v4}, Lcom/google/android/material/textfield/TextInputLayout;->w(Lcom/google/android/material/internal/CheckableImageButton;Landroid/content/res/ColorStateList;)V
 
@@ -3118,7 +3118,7 @@
     if-eqz v1, :cond_e
 
     .line 26
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     invoke-virtual {v1}, Lcom/google/android/material/textfield/n;->e()Z
 
@@ -3147,7 +3147,7 @@
     move-result-object v1
 
     .line 29
-    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 30
     invoke-virtual {v4}, Lcom/google/android/material/textfield/n;->g()I
@@ -3158,7 +3158,7 @@
     invoke-static {v1, v4}, Ly/a;->h(Landroid/graphics/drawable/Drawable;I)V
 
     .line 32
-    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v4, v1}, Landroidx/appcompat/widget/AppCompatImageButton;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
@@ -3180,21 +3180,21 @@
     if-eqz v1, :cond_f
 
     .line 35
-    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->O:I
+    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->P:I
 
-    iput v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->M:I
+    iput v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->N:I
 
     goto :goto_6
 
     .line 36
     :cond_f
-    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->N:I
+    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->O:I
 
-    iput v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->M:I
+    iput v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->N:I
 
     .line 37
     :goto_6
-    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     if-ne v1, v2, :cond_13
 
@@ -3206,9 +3206,9 @@
     if-nez v1, :cond_10
 
     .line 39
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->D0:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->E0:I
 
-    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
+    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->R:I
 
     goto :goto_7
 
@@ -3218,9 +3218,9 @@
     if-nez v0, :cond_11
 
     .line 40
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->F0:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->G0:I
 
-    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
+    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->R:I
 
     goto :goto_7
 
@@ -3228,17 +3228,17 @@
     if-eqz v0, :cond_12
 
     .line 41
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->E0:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->F0:I
 
-    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
+    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->R:I
 
     goto :goto_7
 
     .line 42
     :cond_12
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->C0:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->D0:I
 
-    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
+    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->R:I
 
     .line 43
     :cond_13
@@ -3254,12 +3254,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->g0:Ljava/util/LinkedHashSet;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->h0:Ljava/util/LinkedHashSet;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedHashSet;->add(Ljava/lang/Object;)Z
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz v0, :cond_0
 
@@ -3293,12 +3293,12 @@
     iput v0, p2, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->a:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->g:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, p1, p2}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 5
-    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->a:Landroid/widget/FrameLayout;
+    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->g:Landroid/widget/FrameLayout;
 
     invoke-virtual {p2, p3}, Landroid/widget/FrameLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -3324,7 +3324,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     .line 2
     iget v0, v0, Lcom/google/android/material/internal/a;->c:F
@@ -3337,7 +3337,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->K0:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->L0:Landroid/animation/ValueAnimator;
 
     if-nez v0, :cond_1
 
@@ -3346,22 +3346,22 @@
 
     invoke-direct {v0}, Landroid/animation/ValueAnimator;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->K0:Landroid/animation/ValueAnimator;
+    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->L0:Landroid/animation/ValueAnimator;
 
     .line 5
-    sget-object v1, Lb4/a;->b:Landroid/animation/TimeInterpolator;
+    sget-object v1, Lc4/a;->b:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 6
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->K0:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->L0:Landroid/animation/ValueAnimator;
 
     const-wide/16 v1, 0xa7
 
     invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     .line 7
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->K0:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->L0:Landroid/animation/ValueAnimator;
 
     new-instance v1, Lcom/google/android/material/textfield/TextInputLayout$d;
 
@@ -3371,7 +3371,7 @@
 
     .line 8
     :cond_1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->K0:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->L0:Landroid/animation/ValueAnimator;
 
     const/4 v1, 0x2
 
@@ -3379,7 +3379,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     .line 9
     iget v3, v3, Lcom/google/android/material/internal/a;->c:F
@@ -3394,7 +3394,7 @@
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->setFloatValues([F)V
 
     .line 11
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->K0:Landroid/animation/ValueAnimator;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->L0:Landroid/animation/ValueAnimator;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->start()V
 
@@ -3405,7 +3405,7 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
     if-nez v0, :cond_0
 
@@ -3413,12 +3413,12 @@
 
     .line 2
     :cond_0
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I:Lr4/k;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->J:Lr4/k;
 
     invoke-virtual {v0, v1}, Lr4/g;->setShapeAppearanceModel(Lr4/k;)V
 
     .line 3
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     const/4 v1, 0x2
 
@@ -3431,11 +3431,11 @@
     if-ne v0, v1, :cond_2
 
     .line 4
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->M:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->N:I
 
     if-le v0, v2, :cond_1
 
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->P:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
 
     if-eqz v0, :cond_1
 
@@ -3460,22 +3460,22 @@
     if-eqz v0, :cond_3
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
-    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->M:I
+    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->N:I
 
     int-to-float v1, v1
 
-    iget v5, p0, Lcom/google/android/material/textfield/TextInputLayout;->P:I
+    iget v5, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
 
     invoke-virtual {v0, v1, v5}, Lr4/g;->w(FI)V
 
     .line 6
     :cond_3
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->R:I
 
     .line 7
-    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     if-ne v1, v4, :cond_4
 
@@ -3487,12 +3487,12 @@
 
     move-result-object v1
 
-    invoke-static {v1, v0, v3}, Lcom/google/android/gms/ads/r;->a(Landroid/content/Context;II)I
+    invoke-static {v1, v0, v3}, Lh4/a;->d(Landroid/content/Context;II)I
 
     move-result v0
 
     .line 10
-    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
+    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->R:I
 
     .line 11
     invoke-static {v1, v0}, Lx/a;->b(II)I
@@ -3501,10 +3501,10 @@
 
     .line 12
     :cond_4
-    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
+    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->R:I
 
     .line 13
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
     invoke-static {v0}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
@@ -3513,14 +3513,14 @@
     invoke-virtual {v1, v0}, Lr4/g;->q(Landroid/content/res/ColorStateList;)V
 
     .line 14
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->h0:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->i0:I
 
     const/4 v1, 0x3
 
     if-ne v0, v1, :cond_5
 
     .line 15
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getBackground()Landroid/graphics/drawable/Drawable;
 
@@ -3530,7 +3530,7 @@
 
     .line 16
     :cond_5
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->I:Lr4/g;
 
     if-nez v0, :cond_6
 
@@ -3538,11 +3538,11 @@
 
     .line 17
     :cond_6
-    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->M:I
+    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->N:I
 
     if-le v1, v2, :cond_7
 
-    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->P:I
+    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
 
     if-eqz v1, :cond_7
 
@@ -3552,7 +3552,7 @@
     if-eqz v3, :cond_8
 
     .line 18
-    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->P:I
+    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
 
     invoke-static {v1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
@@ -3575,15 +3575,15 @@
     .locals 6
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
-    iget-boolean v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->m0:Z
+    iget-boolean v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->n0:Z
 
-    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->l0:Landroid/content/res/ColorStateList;
+    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->m0:Landroid/content/res/ColorStateList;
 
-    iget-boolean v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->o0:Z
+    iget-boolean v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->p0:Z
 
-    iget-object v5, p0, Lcom/google/android/material/textfield/TextInputLayout;->n0:Landroid/graphics/PorterDuff$Mode;
+    iget-object v5, p0, Lcom/google/android/material/textfield/TextInputLayout;->o0:Landroid/graphics/PorterDuff$Mode;
 
     move-object v0, p0
 
@@ -3596,11 +3596,11 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-nez v0, :cond_0
 
@@ -3608,12 +3608,12 @@
 
     .line 2
     :cond_0
-    iget-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->F:Z
+    iget-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Z
 
     const/4 v2, 0x0
 
     .line 3
-    iput-boolean v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->F:Z
+    iput-boolean v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Z
 
     .line 4
     invoke-virtual {v0}, Landroid/widget/EditText;->getHint()Ljava/lang/CharSequence;
@@ -3621,9 +3621,9 @@
     move-result-object v0
 
     .line 5
-    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
-    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Ljava/lang/CharSequence;
+    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Ljava/lang/CharSequence;
 
     invoke-virtual {v2, v3}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
 
@@ -3634,12 +3634,12 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 7
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {p1, v0}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
 
     .line 8
-    iput-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->F:Z
+    iput-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Z
 
     return-void
 
@@ -3647,12 +3647,12 @@
     move-exception p1
 
     .line 9
-    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {p2, v0}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
 
     .line 10
-    iput-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->F:Z
+    iput-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Z
 
     .line 11
     throw p1
@@ -3679,7 +3679,7 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->M0:Z
+    iput-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->N0:Z
 
     .line 2
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->dispatchRestoreInstanceState(Landroid/util/SparseArray;)V
@@ -3687,7 +3687,7 @@
     const/4 p1, 0x0
 
     .line 3
-    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->M0:Z
+    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->N0:Z
 
     return-void
 .end method
@@ -3699,18 +3699,18 @@
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->draw(Landroid/graphics/Canvas;)V
 
     .line 2
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->E:Z
 
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/internal/a;->g(Landroid/graphics/Canvas;)V
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->I:Lr4/g;
 
     if-eqz v0, :cond_1
 
@@ -3722,14 +3722,14 @@
     .line 6
     iget v1, v0, Landroid/graphics/Rect;->bottom:I
 
-    iget v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->M:I
+    iget v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->N:I
 
     sub-int/2addr v1, v2
 
     iput v1, v0, Landroid/graphics/Rect;->top:I
 
     .line 7
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->I:Lr4/g;
 
     invoke-virtual {v0, p1}, Lr4/g;->draw(Landroid/graphics/Canvas;)V
 
@@ -3741,7 +3741,7 @@
     .locals 4
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->L0:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->M0:Z
 
     if-eqz v0, :cond_0
 
@@ -3751,7 +3751,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->L0:Z
+    iput-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->M0:Z
 
     .line 3
     invoke-super {p0}, Landroid/widget/LinearLayout;->drawableStateChanged()V
@@ -3762,7 +3762,7 @@
     move-result-object v1
 
     .line 5
-    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     const/4 v3, 0x0
 
@@ -3782,12 +3782,12 @@
 
     .line 7
     :goto_0
-    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz v2, :cond_3
 
     .line 8
-    invoke-static {p0}, Lf0/s;->p(Landroid/view/View;)Z
+    invoke-static {p0}, Lf0/r;->p(Landroid/view/View;)Z
 
     move-result v2
 
@@ -3822,7 +3822,7 @@
 
     .line 13
     :cond_4
-    iput-boolean v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->L0:Z
+    iput-boolean v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->M0:Z
 
     return-void
 .end method
@@ -3881,15 +3881,15 @@
     .locals 6
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->V:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->W:Lcom/google/android/material/internal/CheckableImageButton;
 
-    iget-boolean v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->a0:Z
+    iget-boolean v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->b0:Z
 
-    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->W:Landroid/content/res/ColorStateList;
+    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->a0:Landroid/content/res/ColorStateList;
 
-    iget-boolean v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->c0:Z
+    iget-boolean v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->d0:Z
 
-    iget-object v5, p0, Lcom/google/android/material/textfield/TextInputLayout;->b0:Landroid/graphics/PorterDuff$Mode;
+    iget-object v5, p0, Lcom/google/android/material/textfield/TextInputLayout;->c0:Landroid/graphics/PorterDuff$Mode;
 
     move-object v0, p0
 
@@ -3902,7 +3902,7 @@
     .locals 3
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->E:Z
 
     const/4 v1, 0x0
 
@@ -3912,7 +3912,7 @@
 
     .line 2
     :cond_0
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     if-eqz v0, :cond_2
 
@@ -3928,7 +3928,7 @@
 
     .line 3
     :cond_1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-virtual {v0}, Lcom/google/android/material/internal/a;->h()F
 
@@ -3945,7 +3945,7 @@
 
     .line 4
     :cond_2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-virtual {v0}, Lcom/google/android/material/internal/a;->h()F
 
@@ -3958,7 +3958,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz v0, :cond_0
 
@@ -3994,7 +3994,7 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     const/4 v1, 0x1
 
@@ -4017,7 +4017,7 @@
     .line 3
     :cond_1
     :goto_0
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
     return-object v0
 .end method
@@ -4026,7 +4026,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->R:I
 
     return v0
 .end method
@@ -4035,7 +4035,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     return v0
 .end method
@@ -4044,10 +4044,10 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
     .line 2
-    iget-object v1, v0, Lr4/g;->a:Lr4/g$b;
+    iget-object v1, v0, Lr4/g;->g:Lr4/g$b;
 
     iget-object v1, v1, Lr4/g$b;->a:Lr4/k;
 
@@ -4070,10 +4070,10 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
     .line 2
-    iget-object v1, v0, Lr4/g;->a:Lr4/g$b;
+    iget-object v1, v0, Lr4/g;->g:Lr4/g$b;
 
     iget-object v1, v1, Lr4/g$b;->a:Lr4/k;
 
@@ -4096,10 +4096,10 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
     .line 2
-    iget-object v1, v0, Lr4/g;->a:Lr4/g$b;
+    iget-object v1, v0, Lr4/g;->g:Lr4/g$b;
 
     iget-object v1, v1, Lr4/g$b;->a:Lr4/k;
 
@@ -4122,7 +4122,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
     invoke-virtual {v0}, Lr4/g;->l()F
 
@@ -4135,7 +4135,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->A0:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->B0:I
 
     return v0
 .end method
@@ -4144,7 +4144,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->B0:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->C0:Landroid/content/res/ColorStateList;
 
     return-object v0
 .end method
@@ -4153,7 +4153,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->N:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->O:I
 
     return v0
 .end method
@@ -4162,7 +4162,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->O:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->P:I
 
     return v0
 .end method
@@ -4171,7 +4171,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->n:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:I
 
     return v0
 .end method
@@ -4180,15 +4180,15 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->n:Z
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     if-eqz v0, :cond_0
 
@@ -4209,7 +4209,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->x:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->y:Landroid/content/res/ColorStateList;
 
     return-object v0
 .end method
@@ -4218,7 +4218,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->x:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->y:Landroid/content/res/ColorStateList;
 
     return-object v0
 .end method
@@ -4227,7 +4227,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->w0:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->x0:Landroid/content/res/ColorStateList;
 
     return-object v0
 .end method
@@ -4236,7 +4236,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -4245,7 +4245,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0}, Landroid/widget/ImageButton;->getContentDescription()Ljava/lang/CharSequence;
 
@@ -4258,7 +4258,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0}, Landroid/widget/ImageButton;->getDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -4271,7 +4271,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->h0:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->i0:I
 
     return v0
 .end method
@@ -4280,7 +4280,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     return-object v0
 .end method
@@ -4289,7 +4289,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 2
     iget-boolean v1, v0, Lcom/google/android/material/textfield/n;->l:Z
@@ -4312,7 +4312,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 2
     iget-object v0, v0, Lcom/google/android/material/textfield/n;->n:Ljava/lang/CharSequence;
@@ -4324,7 +4324,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     invoke-virtual {v0}, Lcom/google/android/material/textfield/n;->g()I
 
@@ -4337,7 +4337,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0}, Landroid/widget/ImageButton;->getDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -4350,7 +4350,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     invoke-virtual {v0}, Lcom/google/android/material/textfield/n;->g()I
 
@@ -4363,7 +4363,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 2
     iget-boolean v1, v0, Lcom/google/android/material/textfield/n;->r:Z
@@ -4386,7 +4386,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 2
     iget-object v0, v0, Lcom/google/android/material/textfield/n;->s:Landroid/widget/TextView;
@@ -4410,11 +4410,11 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->E:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->E:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->F:Ljava/lang/CharSequence;
 
     goto :goto_0
 
@@ -4429,7 +4429,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-virtual {v0}, Lcom/google/android/material/internal/a;->h()F
 
@@ -4442,7 +4442,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-virtual {v0}, Lcom/google/android/material/internal/a;->i()I
 
@@ -4455,7 +4455,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->x0:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->y0:Landroid/content/res/ColorStateList;
 
     return-object v0
 .end method
@@ -4466,7 +4466,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0}, Landroid/widget/ImageButton;->getContentDescription()Ljava/lang/CharSequence;
 
@@ -4481,7 +4481,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0}, Landroid/widget/ImageButton;->getDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -4494,11 +4494,11 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->t:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->s:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->t:Ljava/lang/CharSequence;
 
     goto :goto_0
 
@@ -4513,7 +4513,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->w:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->x:I
 
     return v0
 .end method
@@ -4522,7 +4522,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->w:Landroid/content/res/ColorStateList;
 
     return-object v0
 .end method
@@ -4531,7 +4531,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->z:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->A:Ljava/lang/CharSequence;
 
     return-object v0
 .end method
@@ -4540,7 +4540,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->A:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->B:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getTextColors()Landroid/content/res/ColorStateList;
 
@@ -4553,7 +4553,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->A:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->B:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -4562,7 +4562,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->V:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->W:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0}, Landroid/widget/ImageButton;->getContentDescription()Ljava/lang/CharSequence;
 
@@ -4575,7 +4575,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->V:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->W:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0}, Landroid/widget/ImageButton;->getDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -4588,7 +4588,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->B:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->C:Ljava/lang/CharSequence;
 
     return-object v0
 .end method
@@ -4597,7 +4597,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->C:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getTextColors()Landroid/content/res/ColorStateList;
 
@@ -4610,7 +4610,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->C:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -4619,7 +4619,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->U:Landroid/graphics/Typeface;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->V:Landroid/graphics/Typeface;
 
     return-object v0
 .end method
@@ -4628,11 +4628,11 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->E:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->E:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->F:Ljava/lang/CharSequence;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -4640,7 +4640,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
     instance-of v0, v0, Lcom/google/android/material/textfield/g;
 
@@ -4661,7 +4661,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getCompoundPaddingLeft()I
 
@@ -4670,14 +4670,14 @@
     add-int/2addr v0, p1
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->z:Ljava/lang/CharSequence;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->A:Ljava/lang/CharSequence;
 
     if-eqz p1, :cond_0
 
     if-nez p2, :cond_0
 
     .line 3
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->A:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->B:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getMeasuredWidth()I
 
@@ -4685,7 +4685,7 @@
 
     sub-int/2addr v0, p1
 
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->A:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->B:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getPaddingLeft()I
 
@@ -4701,7 +4701,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getCompoundPaddingRight()I
 
@@ -4710,20 +4710,20 @@
     sub-int/2addr p1, v0
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->z:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->A:Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_0
 
     if-eqz p2, :cond_0
 
     .line 3
-    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->A:Landroid/widget/TextView;
+    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->B:Landroid/widget/TextView;
 
     invoke-virtual {p2}, Landroid/widget/TextView;->getMeasuredWidth()I
 
     move-result p2
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->A:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->B:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getPaddingRight()I
 
@@ -4741,7 +4741,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->h0:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->i0:I
 
     if-eqz v0, :cond_0
 
@@ -4760,7 +4760,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->i:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->getVisibility()I
 
@@ -4768,7 +4768,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0}, Landroid/widget/ImageButton;->getVisibility()I
 
@@ -4791,7 +4791,7 @@
     .locals 4
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     const/4 v1, 0x0
 
@@ -4806,11 +4806,11 @@
     if-ne v0, v3, :cond_1
 
     .line 2
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->E:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
     instance-of v0, v0, Lcom/google/android/material/textfield/g;
 
@@ -4819,11 +4819,11 @@
     .line 3
     new-instance v0, Lcom/google/android/material/textfield/g;
 
-    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->I:Lr4/k;
+    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->J:Lr4/k;
 
     invoke-direct {v0, v3}, Lcom/google/android/material/textfield/g;-><init>(Lr4/k;)V
 
-    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
     goto :goto_0
 
@@ -4831,15 +4831,15 @@
     :cond_0
     new-instance v0, Lr4/g;
 
-    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->I:Lr4/k;
+    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->J:Lr4/k;
 
     invoke-direct {v0, v3}, Lr4/g;-><init>(Lr4/k;)V
 
-    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
     .line 5
     :goto_0
-    iput-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
+    iput-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I:Lr4/g;
 
     goto :goto_1
 
@@ -4851,11 +4851,11 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     const-string v3, " is illegal; only @BoxBackgroundMode constants are supported."
 
-    invoke-static {v1, v2, v3}, Landroid/support/v4/media/d;->b(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2, v3}, Landroid/support/v4/media/d;->a(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -4867,35 +4867,35 @@
     :cond_2
     new-instance v0, Lr4/g;
 
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I:Lr4/k;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->J:Lr4/k;
 
     invoke-direct {v0, v1}, Lr4/g;-><init>(Lr4/k;)V
 
-    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
     .line 8
     new-instance v0, Lr4/g;
 
     invoke-direct {v0}, Lr4/g;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
+    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->I:Lr4/g;
 
     goto :goto_1
 
     .line 9
     :cond_3
-    iput-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iput-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
     .line 10
-    iput-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
+    iput-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I:Lr4/g;
 
     .line 11
     :goto_1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz v0, :cond_4
 
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
     if-eqz v1, :cond_4
 
@@ -4906,7 +4906,7 @@
 
     if-nez v0, :cond_4
 
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     if-eqz v0, :cond_4
 
@@ -4919,11 +4919,11 @@
     if-eqz v2, :cond_5
 
     .line 13
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
-    sget-object v2, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v2, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 14
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
@@ -4933,7 +4933,7 @@
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->F()V
 
     .line 16
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     if-eqz v0, :cond_6
 
@@ -4958,19 +4958,19 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->T:Landroid/graphics/RectF;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->U:Landroid/graphics/RectF;
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
-    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     .line 4
     invoke-virtual {v2}, Landroid/widget/EditText;->getWidth()I
 
     move-result v2
 
-    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v3}, Landroid/widget/EditText;->getGravity()I
 
@@ -5190,7 +5190,7 @@
     .line 16
     iget v2, v0, Landroid/graphics/RectF;->left:F
 
-    iget v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->J:I
+    iget v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
 
     int-to-float v3, v3
 
@@ -5237,7 +5237,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/graphics/RectF;->offset(FF)V
 
     .line 21
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
     check-cast v1, Lcom/google/android/material/textfield/g;
 
@@ -5264,25 +5264,25 @@
     invoke-super/range {p0 .. p5}, Landroid/widget/LinearLayout;->onLayout(ZIIII)V
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz p1, :cond_d
 
     .line 3
-    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->R:Landroid/graphics/Rect;
+    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->S:Landroid/graphics/Rect;
 
     .line 4
     invoke-static {p0, p1, p2}, Lcom/google/android/material/internal/b;->a(Landroid/view/ViewGroup;Landroid/view/View;Landroid/graphics/Rect;)V
 
     .line 5
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I:Lr4/g;
 
     if-eqz p1, :cond_0
 
     .line 6
     iget p3, p2, Landroid/graphics/Rect;->bottom:I
 
-    iget p4, p0, Lcom/google/android/material/textfield/TextInputLayout;->O:I
+    iget p4, p0, Lcom/google/android/material/textfield/TextInputLayout;->P:I
 
     sub-int p4, p3, p4
 
@@ -5295,14 +5295,14 @@
 
     .line 8
     :cond_0
-    iget-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Z
+    iget-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->E:Z
 
     if-eqz p1, :cond_d
 
     .line 9
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
-    iget-object p3, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p3, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {p3}, Landroid/widget/EditText;->getTextSize()F
 
@@ -5323,14 +5323,14 @@
 
     .line 13
     :cond_1
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {p1}, Landroid/widget/EditText;->getGravity()I
 
     move-result p1
 
     .line 14
-    iget-object p3, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object p3, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     and-int/lit8 p4, p1, -0x71
 
@@ -5339,23 +5339,23 @@
     invoke-virtual {p3, p4}, Lcom/google/android/material/internal/a;->q(I)V
 
     .line 15
-    iget-object p3, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object p3, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-virtual {p3, p1}, Lcom/google/android/material/internal/a;->u(I)V
 
     .line 16
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     .line 17
-    iget-object p3, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p3, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz p3, :cond_c
 
     .line 18
-    iget-object p3, p0, Lcom/google/android/material/textfield/TextInputLayout;->S:Landroid/graphics/Rect;
+    iget-object p3, p0, Lcom/google/android/material/textfield/TextInputLayout;->T:Landroid/graphics/Rect;
 
     .line 19
-    sget-object p4, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object p4, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 20
     invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
@@ -5382,7 +5382,7 @@
     iput v1, p3, Landroid/graphics/Rect;->bottom:I
 
     .line 22
-    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     if-eq v1, v0, :cond_4
 
@@ -5421,7 +5421,7 @@
     :cond_3
     iget p4, p2, Landroid/graphics/Rect;->left:I
 
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getPaddingLeft()I
 
@@ -5445,7 +5445,7 @@
     .line 28
     iget p4, p2, Landroid/graphics/Rect;->right:I
 
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getPaddingRight()I
 
@@ -5470,7 +5470,7 @@
     .line 30
     iget v1, p2, Landroid/graphics/Rect;->top:I
 
-    iget v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
+    iget v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->M:I
 
     add-int/2addr v1, v2
 
@@ -5520,15 +5520,15 @@
 
     .line 38
     :cond_5
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     .line 39
-    iget-object p3, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p3, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz p3, :cond_b
 
     .line 40
-    iget-object p3, p0, Lcom/google/android/material/textfield/TextInputLayout;->S:Landroid/graphics/Rect;
+    iget-object p3, p0, Lcom/google/android/material/textfield/TextInputLayout;->T:Landroid/graphics/Rect;
 
     .line 41
     iget-object p4, p1, Lcom/google/android/material/internal/a;->G:Landroid/text/TextPaint;
@@ -5555,7 +5555,7 @@
     .line 45
     iget v1, p2, Landroid/graphics/Rect;->left:I
 
-    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getCompoundPaddingLeft()I
 
@@ -5566,11 +5566,11 @@
     iput v2, p3, Landroid/graphics/Rect;->left:I
 
     .line 46
-    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     if-ne v1, v0, :cond_6
 
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     .line 47
     invoke-virtual {v1}, Landroid/widget/EditText;->getMinLines()I
@@ -5610,7 +5610,7 @@
     :cond_7
     iget v1, p2, Landroid/graphics/Rect;->top:I
 
-    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getCompoundPaddingTop()I
 
@@ -5625,7 +5625,7 @@
     .line 51
     iget v1, p2, Landroid/graphics/Rect;->right:I
 
-    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getCompoundPaddingRight()I
 
@@ -5636,11 +5636,11 @@
     iput v1, p3, Landroid/graphics/Rect;->right:I
 
     .line 52
-    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     if-ne v1, v0, :cond_8
 
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     .line 53
     invoke-virtual {v1}, Landroid/widget/EditText;->getMinLines()I
@@ -5669,7 +5669,7 @@
     :cond_9
     iget p2, p2, Landroid/graphics/Rect;->bottom:I
 
-    iget-object p4, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p4, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {p4}, Landroid/widget/EditText;->getCompoundPaddingBottom()I
 
@@ -5710,7 +5710,7 @@
 
     .line 62
     :cond_a
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-virtual {p1}, Lcom/google/android/material/internal/a;->m()V
 
@@ -5721,7 +5721,7 @@
 
     if-eqz p1, :cond_d
 
-    iget-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->H0:Z
+    iget-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Z
 
     if-nez p1, :cond_d
 
@@ -5758,7 +5758,7 @@
     invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     const/4 p2, 0x0
 
@@ -5768,13 +5768,13 @@
 
     .line 3
     :cond_0
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->h:Landroid/widget/LinearLayout;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->i:Landroid/widget/LinearLayout;
 
     invoke-virtual {p1}, Landroid/widget/LinearLayout;->getMeasuredHeight()I
 
     move-result p1
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->b:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->h:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->getMeasuredHeight()I
 
@@ -5785,7 +5785,7 @@
     move-result p1
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getMeasuredHeight()I
 
@@ -5794,7 +5794,7 @@
     if-ge v0, p1, :cond_1
 
     .line 5
-    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {p2, p1}, Landroid/widget/EditText;->setMinimumHeight(I)V
 
@@ -5813,7 +5813,7 @@
 
     .line 7
     :cond_2
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     new-instance p2, Lcom/google/android/material/textfield/TextInputLayout$c;
 
@@ -5823,11 +5823,11 @@
 
     .line 8
     :cond_3
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/widget/TextView;
 
     if-eqz p1, :cond_4
 
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz p1, :cond_4
 
@@ -5837,35 +5837,35 @@
     move-result p1
 
     .line 10
-    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Landroid/widget/TextView;
+    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/widget/TextView;
 
     invoke-virtual {p2, p1}, Landroid/widget/TextView;->setGravity(I)V
 
     .line 11
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/widget/TextView;
 
-    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     .line 12
     invoke-virtual {p2}, Landroid/widget/EditText;->getCompoundPaddingLeft()I
 
     move-result p2
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     .line 13
     invoke-virtual {v0}, Landroid/widget/EditText;->getCompoundPaddingTop()I
 
     move-result v0
 
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     .line 14
     invoke-virtual {v1}, Landroid/widget/EditText;->getCompoundPaddingRight()I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     .line 15
     invoke-virtual {v2}, Landroid/widget/EditText;->getCompoundPaddingBottom()I
@@ -5903,23 +5903,23 @@
     check-cast p1, Lcom/google/android/material/textfield/TextInputLayout$SavedState;
 
     .line 4
-    iget-object v0, p1, Landroidx/customview/view/AbsSavedState;->a:Landroid/os/Parcelable;
+    iget-object v0, p1, Landroidx/customview/view/AbsSavedState;->g:Landroid/os/Parcelable;
 
     .line 5
     invoke-super {p0, v0}, Landroid/widget/LinearLayout;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     .line 6
-    iget-object v0, p1, Lcom/google/android/material/textfield/TextInputLayout$SavedState;->h:Ljava/lang/CharSequence;
+    iget-object v0, p1, Lcom/google/android/material/textfield/TextInputLayout$SavedState;->i:Ljava/lang/CharSequence;
 
     invoke-virtual {p0, v0}, Lcom/google/android/material/textfield/TextInputLayout;->setError(Ljava/lang/CharSequence;)V
 
     .line 7
-    iget-boolean p1, p1, Lcom/google/android/material/textfield/TextInputLayout$SavedState;->i:Z
+    iget-boolean p1, p1, Lcom/google/android/material/textfield/TextInputLayout$SavedState;->j:Z
 
     if-eqz p1, :cond_1
 
     .line 8
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     new-instance v0, Lcom/google/android/material/textfield/TextInputLayout$b;
 
@@ -5948,7 +5948,7 @@
     invoke-direct {v1, v0}, Lcom/google/android/material/textfield/TextInputLayout$SavedState;-><init>(Landroid/os/Parcelable;)V
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     invoke-virtual {v0}, Lcom/google/android/material/textfield/n;->e()Z
 
@@ -5961,7 +5961,7 @@
 
     move-result-object v0
 
-    iput-object v0, v1, Lcom/google/android/material/textfield/TextInputLayout$SavedState;->h:Ljava/lang/CharSequence;
+    iput-object v0, v1, Lcom/google/android/material/textfield/TextInputLayout$SavedState;->i:Ljava/lang/CharSequence;
 
     .line 5
     :cond_0
@@ -5971,7 +5971,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0}, Lcom/google/android/material/internal/CheckableImageButton;->isChecked()Z
 
@@ -5987,7 +5987,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iput-boolean v0, v1, Lcom/google/android/material/textfield/TextInputLayout$SavedState;->i:Z
+    iput-boolean v0, v1, Lcom/google/android/material/textfield/TextInputLayout$SavedState;->j:Z
 
     return-object v1
 .end method
@@ -6064,12 +6064,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     if-eqz v0, :cond_1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-nez v0, :cond_0
 
@@ -6097,10 +6097,10 @@
     .locals 11
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Z
 
     .line 2
-    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->n:I
+    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:I
 
     const/4 v2, 0x0
 
@@ -6111,7 +6111,7 @@
     if-ne v1, v4, :cond_0
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -6120,12 +6120,12 @@
     invoke-virtual {v1, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 4
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     invoke-virtual {p1, v2}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 5
-    iput-boolean v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:Z
+    iput-boolean v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Z
 
     goto :goto_3
 
@@ -6143,18 +6143,18 @@
 
     .line 6
     :goto_0
-    iput-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:Z
+    iput-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Z
 
     .line 7
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    iget-object v5, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object v5, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
-    iget v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->n:I
+    iget v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:I
 
-    iget-boolean v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:Z
+    iget-boolean v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Z
 
     if-eqz v7, :cond_2
 
@@ -6194,7 +6194,7 @@
     invoke-virtual {v5, v1}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 13
-    iget-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:Z
+    iget-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Z
 
     if-eq v0, v1, :cond_3
 
@@ -6208,7 +6208,7 @@
     move-result-object v1
 
     .line 16
-    iget-object v5, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object v5, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     .line 17
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
@@ -6226,7 +6226,7 @@
 
     aput-object p1, v8, v3
 
-    iget p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->n:I
+    iget p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:I
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -6261,11 +6261,11 @@
 
     .line 22
     :goto_3
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz p1, :cond_5
 
-    iget-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:Z
+    iget-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Z
 
     if-eq v0, p1, :cond_5
 
@@ -6286,21 +6286,21 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->R:I
 
     if-eq v0, p1, :cond_0
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
+    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->R:I
 
     .line 3
-    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->C0:I
+    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->D0:I
 
     .line 4
-    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->E0:I
+    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->F0:I
 
     .line 5
-    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->F0:I
+    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->G0:I
 
     .line 6
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->c()V
@@ -6334,10 +6334,10 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->C0:I
+    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->D0:I
 
     .line 2
-    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->Q:I
+    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->R:I
 
     const/4 v0, 0x1
 
@@ -6356,7 +6356,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->D0:I
+    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->E0:I
 
     const/4 v0, 0x2
 
@@ -6370,7 +6370,7 @@
 
     move-result v2
 
-    iput v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->E0:I
+    iput v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->F0:I
 
     new-array v0, v0, [I
 
@@ -6382,7 +6382,7 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->F0:I
+    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->G0:I
 
     .line 8
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->c()V
@@ -6408,7 +6408,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     if-ne p1, v0, :cond_0
 
@@ -6416,10 +6416,10 @@
 
     .line 2
     :cond_0
-    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     .line 3
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz p1, :cond_1
 
@@ -6434,12 +6434,12 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->A0:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->B0:I
 
     if-eq v0, p1, :cond_0
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->A0:I
+    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->B0:I
 
     .line 3
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->F()V
@@ -6463,7 +6463,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->y0:I
+    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->z0:I
 
     const/4 v0, 0x1
 
@@ -6482,7 +6482,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->G0:I
+    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H0:I
 
     const/4 v0, 0x2
 
@@ -6496,7 +6496,7 @@
 
     move-result v2
 
-    iput v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->z0:I
+    iput v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->A0:I
 
     new-array v0, v0, [I
 
@@ -6508,13 +6508,13 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->A0:I
+    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->B0:I
 
     goto :goto_0
 
     .line 8
     :cond_0
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->A0:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->B0:I
 
     invoke-virtual {p1}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 
@@ -6527,7 +6527,7 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->A0:I
+    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->B0:I
 
     .line 10
     :cond_1
@@ -6553,12 +6553,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->B0:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->C0:Landroid/content/res/ColorStateList;
 
     if-eq v0, p1, :cond_0
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->B0:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->C0:Landroid/content/res/ColorStateList;
 
     .line 3
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->F()V
@@ -6571,7 +6571,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->N:I
+    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->O:I
 
     .line 2
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->F()V
@@ -6583,7 +6583,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->O:I
+    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->P:I
 
     .line 2
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->F()V
@@ -6629,7 +6629,7 @@
     .locals 4
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->n:Z
 
     if-eq v0, p1, :cond_2
 
@@ -6650,7 +6650,7 @@
     invoke-direct {v2, v3, v0}, Landroidx/appcompat/widget/AppCompatTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 4
-    iput-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iput-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     .line 5
     sget v0, Lcom/google/android/material/R$id;->textinput_counter:I
@@ -6658,32 +6658,32 @@
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setId(I)V
 
     .line 6
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->U:Landroid/graphics/Typeface;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->V:Landroid/graphics/Typeface;
 
     if-eqz v0, :cond_0
 
     .line 7
-    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
     .line 8
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setMaxLines(I)V
 
     .line 9
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
-    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2, v1}, Lcom/google/android/material/textfield/n;->a(Landroid/widget/TextView;I)V
 
     .line 10
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     .line 11
     invoke-virtual {v0}, Landroid/widget/TextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -6716,18 +6716,18 @@
 
     .line 16
     :cond_1
-    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
-    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     invoke-virtual {v2, v3, v1}, Lcom/google/android/material/textfield/n;->i(Landroid/widget/TextView;I)V
 
     .line 17
-    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     .line 18
     :goto_0
-    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Z
+    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->n:Z
 
     :cond_2
     return-void
@@ -6737,14 +6737,14 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->n:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:I
 
     if-eq v0, p1, :cond_1
 
     if-lez p1, :cond_0
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->n:I
+    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:I
 
     goto :goto_0
 
@@ -6752,11 +6752,11 @@
     const/4 p1, -0x1
 
     .line 3
-    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->n:I
+    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:I
 
     .line 4
     :goto_0
-    iget-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Z
+    iget-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->n:Z
 
     if-eqz p1, :cond_1
 
@@ -6768,42 +6768,6 @@
 .end method
 
 .method public setCounterOverflowTextAppearance(I)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:I
-
-    if-eq v0, p1, :cond_0
-
-    .line 2
-    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:I
-
-    .line 3
-    invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->t()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public setCounterOverflowTextColor(Landroid/content/res/ColorStateList;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->y:Landroid/content/res/ColorStateList;
-
-    if-eq v0, p1, :cond_0
-
-    .line 2
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->y:Landroid/content/res/ColorStateList;
-
-    .line 3
-    invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->t()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public setCounterTextAppearance(I)V
     .locals 1
 
     .line 1
@@ -6821,16 +6785,52 @@
     return-void
 .end method
 
-.method public setCounterTextColor(Landroid/content/res/ColorStateList;)V
+.method public setCounterOverflowTextColor(Landroid/content/res/ColorStateList;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->x:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->z:Landroid/content/res/ColorStateList;
 
     if-eq v0, p1, :cond_0
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->x:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->z:Landroid/content/res/ColorStateList;
+
+    .line 3
+    invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->t()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public setCounterTextAppearance(I)V
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->s:I
+
+    if-eq v0, p1, :cond_0
+
+    .line 2
+    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->s:I
+
+    .line 3
+    invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->t()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public setCounterTextColor(Landroid/content/res/ColorStateList;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->y:Landroid/content/res/ColorStateList;
+
+    if-eq v0, p1, :cond_0
+
+    .line 2
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->y:Landroid/content/res/ColorStateList;
 
     .line 3
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->t()V
@@ -6843,13 +6843,13 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->w0:Landroid/content/res/ColorStateList;
-
-    .line 2
     iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->x0:Landroid/content/res/ColorStateList;
 
+    .line 2
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->y0:Landroid/content/res/ColorStateList;
+
     .line 3
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz p1, :cond_0
 
@@ -6878,7 +6878,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageButton;->setActivated(Z)V
 
@@ -6889,7 +6889,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/internal/CheckableImageButton;->setCheckable(Z)V
 
@@ -6932,7 +6932,7 @@
     if-eq v0, p1, :cond_0
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageButton;->setContentDescription(Ljava/lang/CharSequence;)V
 
@@ -6969,7 +6969,7 @@
     .locals 1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/AppCompatImageButton;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
@@ -6980,13 +6980,13 @@
     .locals 3
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->h0:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->i0:I
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->h0:I
+    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->i0:I
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Ljava/util/LinkedHashSet;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->l0:Ljava/util/LinkedHashSet;
 
     invoke-virtual {v1}, Ljava/util/LinkedHashSet;->iterator()Ljava/util/Iterator;
 
@@ -7029,7 +7029,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     invoke-virtual {v0, v1}, Lcom/google/android/material/textfield/m;->b(I)Z
 
@@ -7055,11 +7055,11 @@
 
     const-string v1, "The current box background mode "
 
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    iget v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -7088,9 +7088,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->s0:Landroid/view/View$OnLongClickListener;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->t0:Landroid/view/View$OnLongClickListener;
 
     .line 2
     invoke-virtual {v0, p1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
@@ -7105,10 +7105,10 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->s0:Landroid/view/View$OnLongClickListener;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->t0:Landroid/view/View$OnLongClickListener;
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     .line 3
     invoke-virtual {v0, p1}, Landroid/widget/ImageButton;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
@@ -7123,17 +7123,17 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l0:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m0:Landroid/content/res/ColorStateList;
 
     if-eq v0, p1, :cond_0
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->l0:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->m0:Landroid/content/res/ColorStateList;
 
     const/4 p1, 0x1
 
     .line 3
-    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->m0:Z
+    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->n0:Z
 
     .line 4
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->d()V
@@ -7146,17 +7146,17 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->n0:Landroid/graphics/PorterDuff$Mode;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->o0:Landroid/graphics/PorterDuff$Mode;
 
     if-eq v0, p1, :cond_0
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->n0:Landroid/graphics/PorterDuff$Mode;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->o0:Landroid/graphics/PorterDuff$Mode;
 
     const/4 p1, 0x1
 
     .line 3
-    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->o0:Z
+    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->p0:Z
 
     .line 4
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->d()V
@@ -7176,7 +7176,7 @@
     if-eq v0, p1, :cond_1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     if-eqz p1, :cond_0
 
@@ -7204,7 +7204,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 2
     iget-boolean v0, v0, Lcom/google/android/material/textfield/n;->l:Z
@@ -7235,7 +7235,7 @@
     if-nez v0, :cond_3
 
     .line 6
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 7
     invoke-virtual {v0}, Lcom/google/android/material/textfield/n;->c()V
@@ -7274,7 +7274,7 @@
 
     .line 15
     :cond_3
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     invoke-virtual {p1}, Lcom/google/android/material/textfield/n;->h()V
 
@@ -7286,7 +7286,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 2
     iput-object p1, v0, Lcom/google/android/material/textfield/n;->n:Ljava/lang/CharSequence;
@@ -7307,7 +7307,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 2
     iget-boolean v1, v0, Lcom/google/android/material/textfield/n;->l:Z
@@ -7421,7 +7421,7 @@
 
     const/4 v3, 0x1
 
-    invoke-static {v1, v3}, Lf0/s;->B(Landroid/view/View;I)V
+    invoke-static {v1, v3}, Lf0/r;->B(Landroid/view/View;I)V
 
     .line 25
     iget-object v1, v0, Lcom/google/android/material/textfield/n;->m:Landroid/widget/TextView;
@@ -7489,14 +7489,14 @@
     .locals 1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/AppCompatImageButton;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     if-eqz p1, :cond_0
 
     .line 3
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 4
     iget-boolean p1, p1, Lcom/google/android/material/textfield/n;->l:Z
@@ -7521,9 +7521,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Lcom/google/android/material/internal/CheckableImageButton;
 
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->t0:Landroid/view/View$OnLongClickListener;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Landroid/view/View$OnLongClickListener;
 
     .line 2
     invoke-virtual {v0, p1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
@@ -7538,10 +7538,10 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->t0:Landroid/view/View$OnLongClickListener;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Landroid/view/View$OnLongClickListener;
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Lcom/google/android/material/internal/CheckableImageButton;
 
     .line 3
     invoke-virtual {v0, p1}, Landroid/widget/ImageButton;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
@@ -7556,10 +7556,10 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->w0:Landroid/content/res/ColorStateList;
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0}, Landroid/widget/ImageButton;->getDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -7581,7 +7581,7 @@
 
     .line 5
     :cond_0
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {p1}, Landroid/widget/ImageButton;->getDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -7590,7 +7590,7 @@
     if-eq p1, v0, :cond_1
 
     .line 6
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {p1, v0}, Landroidx/appcompat/widget/AppCompatImageButton;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
@@ -7602,7 +7602,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0}, Landroid/widget/ImageButton;->getDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -7624,7 +7624,7 @@
 
     .line 4
     :cond_0
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {p1}, Landroid/widget/ImageButton;->getDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -7633,7 +7633,7 @@
     if-eq p1, v0, :cond_1
 
     .line 5
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {p1, v0}, Landroidx/appcompat/widget/AppCompatImageButton;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
@@ -7645,7 +7645,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 2
     iput p1, v0, Lcom/google/android/material/textfield/n;->o:I
@@ -7668,7 +7668,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 2
     iput-object p1, v0, Lcom/google/android/material/textfield/n;->p:Landroid/content/res/ColorStateList;
@@ -7698,7 +7698,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 3
     iget-boolean p1, p1, Lcom/google/android/material/textfield/n;->r:Z
@@ -7714,7 +7714,7 @@
 
     .line 5
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 6
     iget-boolean v0, v0, Lcom/google/android/material/textfield/n;->r:Z
@@ -7728,7 +7728,7 @@
 
     .line 8
     :cond_1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 9
     invoke-virtual {v0}, Lcom/google/android/material/textfield/n;->c()V
@@ -7774,7 +7774,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 2
     iput-object p1, v0, Lcom/google/android/material/textfield/n;->u:Landroid/content/res/ColorStateList;
@@ -7797,7 +7797,7 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 2
     iget-boolean v1, v0, Lcom/google/android/material/textfield/n;->r:Z
@@ -7860,7 +7860,7 @@
     .line 12
     iget-object v2, v0, Lcom/google/android/material/textfield/n;->s:Landroid/widget/TextView;
 
-    invoke-static {v2, v1}, Lf0/s;->B(Landroid/view/View;I)V
+    invoke-static {v2, v1}, Lf0/r;->B(Landroid/view/View;I)V
 
     .line 13
     iget v2, v0, Lcom/google/android/material/textfield/n;->t:I
@@ -7961,7 +7961,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 2
     iput p1, v0, Lcom/google/android/material/textfield/n;->t:I
@@ -7982,7 +7982,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->E:Z
 
     if-eqz v0, :cond_0
 
@@ -8002,7 +8002,7 @@
     .locals 0
 
     .line 1
-    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Z
+    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->K0:Z
 
     return-void
 .end method
@@ -8011,12 +8011,12 @@
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->E:Z
 
     if-eq p1, v0, :cond_4
 
     .line 2
-    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Z
+    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->E:Z
 
     const/4 v0, 0x0
 
@@ -8025,10 +8025,10 @@
     const/4 p1, 0x0
 
     .line 3
-    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->F:Z
+    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Z
 
     .line 4
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->E:Ljava/lang/CharSequence;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->F:Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -8036,7 +8036,7 @@
 
     if-nez p1, :cond_0
 
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {p1}, Landroid/widget/EditText;->getHint()Ljava/lang/CharSequence;
 
@@ -8049,9 +8049,9 @@
     if-eqz p1, :cond_0
 
     .line 5
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->E:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->F:Ljava/lang/CharSequence;
 
     invoke-virtual {p1, v1}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
 
@@ -8063,7 +8063,7 @@
 
     .line 7
     :cond_1
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {p1}, Landroid/widget/EditText;->getHint()Ljava/lang/CharSequence;
 
@@ -8077,7 +8077,7 @@
     if-nez v1, :cond_3
 
     .line 9
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->E:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->F:Ljava/lang/CharSequence;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -8090,7 +8090,7 @@
 
     .line 11
     :cond_2
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {p1, v0}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
 
@@ -8098,11 +8098,11 @@
     const/4 p1, 0x1
 
     .line 12
-    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->F:Z
+    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Z
 
     .line 13
     :goto_0
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz p1, :cond_4
 
@@ -8117,21 +8117,21 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/internal/a;->o(I)V
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     .line 3
     iget-object p1, p1, Lcom/google/android/material/internal/a;->l:Landroid/content/res/ColorStateList;
 
     .line 4
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->x0:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->y0:Landroid/content/res/ColorStateList;
 
     .line 5
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz p1, :cond_0
 
@@ -8151,17 +8151,17 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->x0:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->y0:Landroid/content/res/ColorStateList;
 
     if-eq v0, p1, :cond_1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->w0:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->x0:Landroid/content/res/ColorStateList;
 
     if-nez v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     .line 4
     iget-object v1, v0, Lcom/google/android/material/internal/a;->l:Landroid/content/res/ColorStateList;
@@ -8176,10 +8176,10 @@
 
     .line 7
     :cond_0
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->x0:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->y0:Landroid/content/res/ColorStateList;
 
     .line 8
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz p1, :cond_1
 
@@ -8226,7 +8226,7 @@
     .end annotation
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageButton;->setContentDescription(Ljava/lang/CharSequence;)V
 
@@ -8267,7 +8267,7 @@
     .end annotation
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/AppCompatImageButton;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
@@ -8282,7 +8282,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->h0:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->i0:I
 
     const/4 v1, 0x1
 
@@ -8312,12 +8312,12 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->l0:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->m0:Landroid/content/res/ColorStateList;
 
     const/4 p1, 0x1
 
     .line 2
-    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->m0:Z
+    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->n0:Z
 
     .line 3
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->d()V
@@ -8331,12 +8331,12 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->n0:Landroid/graphics/PorterDuff$Mode;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->o0:Landroid/graphics/PorterDuff$Mode;
 
     const/4 p1, 0x1
 
     .line 2
-    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->o0:Z
+    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->p0:Z
 
     .line 3
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->d()V
@@ -8348,7 +8348,7 @@
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->t:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Z
 
     const/4 v1, 0x0
 
@@ -8367,7 +8367,7 @@
 
     .line 3
     :cond_0
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->t:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Z
 
     if-nez v0, :cond_1
 
@@ -8378,11 +8378,11 @@
 
     .line 5
     :cond_1
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->s:Ljava/lang/CharSequence;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->t:Ljava/lang/CharSequence;
 
     .line 6
     :goto_0
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-nez p1, :cond_2
 
@@ -8407,10 +8407,10 @@
     .locals 1
 
     .line 1
-    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->w:I
+    iput p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->x:I
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/widget/TextView;
 
     if-eqz v0, :cond_0
 
@@ -8425,15 +8425,15 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->w:Landroid/content/res/ColorStateList;
 
     if-eq v0, p1, :cond_0
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->w:Landroid/content/res/ColorStateList;
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/widget/TextView;
 
     if-eqz v0, :cond_0
 
@@ -8464,10 +8464,10 @@
     move-object v0, p1
 
     :goto_0
-    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->z:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->A:Ljava/lang/CharSequence;
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->A:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->B:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -8481,7 +8481,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->A:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->B:Landroid/widget/TextView;
 
     invoke-static {v0, p1}, Landroidx/core/widget/h;->f(Landroid/widget/TextView;I)V
 
@@ -8492,7 +8492,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->A:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->B:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
 
@@ -8503,7 +8503,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->V:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->W:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/internal/CheckableImageButton;->setCheckable(Z)V
 
@@ -8546,7 +8546,7 @@
     if-eq v0, p1, :cond_0
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->V:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->W:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageButton;->setContentDescription(Ljava/lang/CharSequence;)V
 
@@ -8583,7 +8583,7 @@
     .locals 1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->V:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->W:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/AppCompatImageButton;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
@@ -8624,9 +8624,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->V:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->W:Lcom/google/android/material/internal/CheckableImageButton;
 
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->f0:Landroid/view/View$OnLongClickListener;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->g0:Landroid/view/View$OnLongClickListener;
 
     .line 2
     invoke-virtual {v0, p1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
@@ -8641,10 +8641,10 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->f0:Landroid/view/View$OnLongClickListener;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->g0:Landroid/view/View$OnLongClickListener;
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->V:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->W:Lcom/google/android/material/internal/CheckableImageButton;
 
     .line 3
     invoke-virtual {v0, p1}, Landroid/widget/ImageButton;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
@@ -8659,17 +8659,17 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->W:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->a0:Landroid/content/res/ColorStateList;
 
     if-eq v0, p1, :cond_0
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->W:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->a0:Landroid/content/res/ColorStateList;
 
     const/4 p1, 0x1
 
     .line 3
-    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->a0:Z
+    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->b0:Z
 
     .line 4
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->f()V
@@ -8682,17 +8682,17 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->b0:Landroid/graphics/PorterDuff$Mode;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->c0:Landroid/graphics/PorterDuff$Mode;
 
     if-eq v0, p1, :cond_0
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->b0:Landroid/graphics/PorterDuff$Mode;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->c0:Landroid/graphics/PorterDuff$Mode;
 
     const/4 p1, 0x1
 
     .line 3
-    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->c0:Z
+    iput-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->d0:Z
 
     .line 4
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->f()V
@@ -8705,7 +8705,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->V:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->W:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0}, Landroid/widget/ImageButton;->getVisibility()I
 
@@ -8726,7 +8726,7 @@
     if-eq v0, p1, :cond_2
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->V:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->W:Lcom/google/android/material/internal/CheckableImageButton;
 
     if-eqz p1, :cond_1
 
@@ -8766,10 +8766,10 @@
     move-object v0, p1
 
     :goto_0
-    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->B:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->C:Ljava/lang/CharSequence;
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->C:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -8783,7 +8783,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->C:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Landroid/widget/TextView;
 
     invoke-static {v0, p1}, Landroidx/core/widget/h;->f(Landroid/widget/TextView;I)V
 
@@ -8794,7 +8794,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->C:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
 
@@ -8805,12 +8805,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-static {v0, p1}, Lf0/s;->A(Landroid/view/View;Lf0/a;)V
+    invoke-static {v0, p1}, Lf0/r;->A(Landroid/view/View;Lf0/a;)V
 
     :cond_0
     return-void
@@ -8820,20 +8820,20 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->U:Landroid/graphics/Typeface;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->V:Landroid/graphics/Typeface;
 
     if-eq p1, v0, :cond_2
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->U:Landroid/graphics/Typeface;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->V:Landroid/graphics/Typeface;
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/internal/a;->A(Landroid/graphics/Typeface;)V
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 5
     iget-object v1, v0, Lcom/google/android/material/textfield/n;->v:Landroid/graphics/Typeface;
@@ -8862,7 +8862,7 @@
 
     .line 11
     :cond_1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     if-eqz v0, :cond_2
 
@@ -8877,51 +8877,51 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     if-eqz v0, :cond_2
 
     .line 2
-    iget-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:Z
+    iget-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Z
 
     if-eqz v1, :cond_0
 
-    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:I
+    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->r:I
 
     goto :goto_0
 
     :cond_0
-    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->r:I
+    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->s:I
 
     :goto_0
     invoke-virtual {p0, v0, v1}, Lcom/google/android/material/textfield/TextInputLayout;->q(Landroid/widget/TextView;I)V
 
     .line 3
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Z
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->x:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->y:Landroid/content/res/ColorStateList;
 
     if-eqz v0, :cond_1
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
 
     .line 5
     :cond_1
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Z
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->y:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->z:Landroid/content/res/ColorStateList;
 
     if-eqz v0, :cond_2
 
     .line 6
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
 
@@ -8933,7 +8933,7 @@
     .locals 10
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     const/4 v1, 0x0
 
@@ -8951,12 +8951,12 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->z:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->A:Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_2
 
     :cond_1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->b:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->h:Landroid/widget/LinearLayout;
 
     .line 3
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->getMeasuredWidth()I
@@ -8982,13 +8982,13 @@
     if-eqz v0, :cond_6
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->b:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->h:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->getMeasuredWidth()I
 
     move-result v0
 
-    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v6}, Landroid/widget/EditText;->getPaddingLeft()I
 
@@ -8997,11 +8997,11 @@
     sub-int/2addr v0, v6
 
     .line 5
-    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->d0:Landroid/graphics/drawable/Drawable;
+    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->e0:Landroid/graphics/drawable/Drawable;
 
     if-eqz v6, :cond_3
 
-    iget v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->e0:I
+    iget v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->f0:I
 
     if-eq v6, v0, :cond_4
 
@@ -9011,17 +9011,17 @@
 
     invoke-direct {v6}, Landroid/graphics/drawable/ColorDrawable;-><init>()V
 
-    iput-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->d0:Landroid/graphics/drawable/Drawable;
+    iput-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->e0:Landroid/graphics/drawable/Drawable;
 
     .line 7
-    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->e0:I
+    iput v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->f0:I
 
     .line 8
     invoke-virtual {v6, v1, v1, v0, v2}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 9
     :cond_4
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     .line 10
     invoke-virtual {v0}, Landroid/widget/TextView;->getCompoundDrawablesRelative()[Landroid/graphics/drawable/Drawable;
@@ -9031,12 +9031,12 @@
     .line 11
     aget-object v6, v0, v1
 
-    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->d0:Landroid/graphics/drawable/Drawable;
+    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->e0:Landroid/graphics/drawable/Drawable;
 
     if-eq v6, v7, :cond_5
 
     .line 12
-    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     aget-object v8, v0, v2
 
@@ -9059,12 +9059,12 @@
 
     .line 14
     :cond_6
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->d0:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->e0:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_5
 
     .line 15
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     .line 16
     invoke-virtual {v0}, Landroid/widget/TextView;->getCompoundDrawablesRelative()[Landroid/graphics/drawable/Drawable;
@@ -9072,7 +9072,7 @@
     move-result-object v0
 
     .line 17
-    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     aget-object v7, v0, v2
 
@@ -9084,13 +9084,13 @@
     invoke-virtual {v6, v3, v7, v8, v0}, Landroid/widget/TextView;->setCompoundDrawablesRelative(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     .line 19
-    iput-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->d0:Landroid/graphics/drawable/Drawable;
+    iput-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->e0:Landroid/graphics/drawable/Drawable;
 
     goto :goto_1
 
     .line 20
     :goto_2
-    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->u0:Lcom/google/android/material/internal/CheckableImageButton;
+    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->v0:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v6}, Landroid/widget/ImageButton;->getVisibility()I
 
@@ -9112,12 +9112,12 @@
     if-nez v6, :cond_8
 
     :cond_7
-    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->B:Ljava/lang/CharSequence;
+    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->C:Ljava/lang/CharSequence;
 
     if-eqz v6, :cond_9
 
     :cond_8
-    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->h:Landroid/widget/LinearLayout;
+    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->i:Landroid/widget/LinearLayout;
 
     .line 22
     invoke-virtual {v6}, Landroid/widget/LinearLayout;->getMeasuredWidth()I
@@ -9137,13 +9137,13 @@
     if-eqz v6, :cond_e
 
     .line 23
-    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->C:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->D:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->getMeasuredWidth()I
 
     move-result v3
 
-    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v6}, Landroid/widget/EditText;->getPaddingRight()I
 
@@ -9181,7 +9181,7 @@
 
     .line 28
     :cond_a
-    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     .line 29
     invoke-virtual {v6}, Landroid/widget/TextView;->getCompoundDrawablesRelative()[Landroid/graphics/drawable/Drawable;
@@ -9189,28 +9189,28 @@
     move-result-object v6
 
     .line 30
-    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->p0:Landroid/graphics/drawable/Drawable;
+    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->q0:Landroid/graphics/drawable/Drawable;
 
     if-eqz v7, :cond_b
 
-    iget v8, p0, Lcom/google/android/material/textfield/TextInputLayout;->q0:I
+    iget v8, p0, Lcom/google/android/material/textfield/TextInputLayout;->r0:I
 
     if-eq v8, v3, :cond_b
 
     .line 31
-    iput v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->q0:I
+    iput v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->r0:I
 
     .line 32
     invoke-virtual {v7, v1, v1, v3, v2}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 33
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     aget-object v1, v6, v1
 
     aget-object v3, v6, v2
 
-    iget-object v5, p0, Lcom/google/android/material/textfield/TextInputLayout;->p0:Landroid/graphics/drawable/Drawable;
+    iget-object v5, p0, Lcom/google/android/material/textfield/TextInputLayout;->q0:Landroid/graphics/drawable/Drawable;
 
     aget-object v4, v6, v4
 
@@ -9227,10 +9227,10 @@
 
     invoke-direct {v7}, Landroid/graphics/drawable/ColorDrawable;-><init>()V
 
-    iput-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->p0:Landroid/graphics/drawable/Drawable;
+    iput-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->q0:Landroid/graphics/drawable/Drawable;
 
     .line 36
-    iput v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->q0:I
+    iput v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->r0:I
 
     .line 37
     invoke-virtual {v7, v1, v1, v3, v2}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
@@ -9239,17 +9239,17 @@
     :cond_c
     aget-object v3, v6, v5
 
-    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->p0:Landroid/graphics/drawable/Drawable;
+    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->q0:Landroid/graphics/drawable/Drawable;
 
     if-eq v3, v7, :cond_d
 
     .line 39
     aget-object v0, v6, v5
 
-    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->r0:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->s0:Landroid/graphics/drawable/Drawable;
 
     .line 40
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     aget-object v1, v6, v1
 
@@ -9269,12 +9269,12 @@
 
     .line 42
     :cond_e
-    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->p0:Landroid/graphics/drawable/Drawable;
+    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->q0:Landroid/graphics/drawable/Drawable;
 
     if-eqz v6, :cond_10
 
     .line 43
-    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     .line 44
     invoke-virtual {v6}, Landroid/widget/TextView;->getCompoundDrawablesRelative()[Landroid/graphics/drawable/Drawable;
@@ -9284,18 +9284,18 @@
     .line 45
     aget-object v5, v6, v5
 
-    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->p0:Landroid/graphics/drawable/Drawable;
+    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->q0:Landroid/graphics/drawable/Drawable;
 
     if-ne v5, v7, :cond_f
 
     .line 46
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     aget-object v1, v6, v1
 
     aget-object v5, v6, v2
 
-    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->r0:Landroid/graphics/drawable/Drawable;
+    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->s0:Landroid/graphics/drawable/Drawable;
 
     aget-object v4, v6, v4
 
@@ -9309,7 +9309,7 @@
 
     .line 48
     :goto_4
-    iput-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->p0:Landroid/graphics/drawable/Drawable;
+    iput-object v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->q0:Landroid/graphics/drawable/Drawable;
 
     :goto_5
     move v0, v2
@@ -9322,11 +9322,11 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz v0, :cond_5
 
-    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     if-eqz v1, :cond_0
 
@@ -9357,7 +9357,7 @@
 
     .line 5
     :cond_2
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     invoke-virtual {v1}, Lcom/google/android/material/textfield/n;->e()Z
 
@@ -9366,7 +9366,7 @@
     if-eqz v1, :cond_3
 
     .line 6
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 7
     invoke-virtual {v1}, Lcom/google/android/material/textfield/n;->g()I
@@ -9387,11 +9387,11 @@
 
     .line 10
     :cond_3
-    iget-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:Z
+    iget-boolean v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Z
 
     if-eqz v1, :cond_4
 
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     if-eqz v1, :cond_4
 
@@ -9417,7 +9417,7 @@
     invoke-static {v0}, Ly/a;->a(Landroid/graphics/drawable/Drawable;)V
 
     .line 15
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->refreshDrawableState()V
 
@@ -9493,14 +9493,14 @@
     .locals 3
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->K:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->L:I
 
     const/4 v1, 0x1
 
     if-eq v0, v1, :cond_0
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->a:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->g:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -9522,7 +9522,7 @@
     iput v1, v0, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
     .line 6
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->a:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->g:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->requestLayout()V
 
@@ -9539,7 +9539,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     const/4 v2, 0x1
 
@@ -9566,7 +9566,7 @@
 
     .line 3
     :goto_0
-    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v4, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-eqz v4, :cond_1
 
@@ -9585,26 +9585,26 @@
 
     .line 4
     :goto_1
-    iget-object v5, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v5, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     invoke-virtual {v5}, Lcom/google/android/material/textfield/n;->e()Z
 
     move-result v5
 
     .line 5
-    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->w0:Landroid/content/res/ColorStateList;
+    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->x0:Landroid/content/res/ColorStateList;
 
     if-eqz v6, :cond_2
 
     .line 6
-    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-virtual {v7, v6}, Lcom/google/android/material/internal/a;->p(Landroid/content/res/ColorStateList;)V
 
     .line 7
-    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v6, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
-    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->w0:Landroid/content/res/ColorStateList;
+    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->x0:Landroid/content/res/ColorStateList;
 
     invoke-virtual {v6, v7}, Lcom/google/android/material/internal/a;->t(Landroid/content/res/ColorStateList;)V
 
@@ -9614,7 +9614,7 @@
     if-nez v0, :cond_4
 
     .line 8
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->w0:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->x0:Landroid/content/res/ColorStateList;
 
     if-eqz v0, :cond_3
 
@@ -9624,7 +9624,7 @@
 
     aput v8, v7, v3
 
-    iget v8, p0, Lcom/google/android/material/textfield/TextInputLayout;->G0:I
+    iget v8, p0, Lcom/google/android/material/textfield/TextInputLayout;->H0:I
 
     .line 9
     invoke-virtual {v0, v7, v8}, Landroid/content/res/ColorStateList;->getColorForState([II)I
@@ -9634,11 +9634,11 @@
     goto :goto_2
 
     :cond_3
-    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->G0:I
+    iget v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->H0:I
 
     .line 10
     :goto_2
-    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-static {v0}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
@@ -9647,7 +9647,7 @@
     invoke-virtual {v7, v8}, Lcom/google/android/material/internal/a;->p(Landroid/content/res/ColorStateList;)V
 
     .line 11
-    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-static {v0}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
@@ -9661,9 +9661,9 @@
     if-eqz v5, :cond_6
 
     .line 12
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
-    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->l:Lcom/google/android/material/textfield/n;
+    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->m:Lcom/google/android/material/textfield/n;
 
     .line 13
     iget-object v7, v7, Lcom/google/android/material/textfield/n;->m:Landroid/widget/TextView;
@@ -9687,16 +9687,16 @@
 
     .line 15
     :cond_6
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->o:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Z
 
     if-eqz v0, :cond_7
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->q:Landroid/widget/TextView;
 
     if-eqz v0, :cond_7
 
     .line 16
-    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getTextColors()Landroid/content/res/ColorStateList;
 
@@ -9710,12 +9710,12 @@
     if-eqz v4, :cond_8
 
     .line 17
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->x0:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->y0:Landroid/content/res/ColorStateList;
 
     if-eqz v0, :cond_8
 
     .line 18
-    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object v7, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-virtual {v7, v0}, Lcom/google/android/material/internal/a;->p(Landroid/content/res/ColorStateList;)V
 
@@ -9740,13 +9740,13 @@
     if-nez p2, :cond_a
 
     .line 20
-    iget-boolean p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->H0:Z
+    iget-boolean p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Z
 
     if-nez p2, :cond_15
 
     .line 21
     :cond_a
-    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->K0:Landroid/animation/ValueAnimator;
+    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->L0:Landroid/animation/ValueAnimator;
 
     if-eqz p2, :cond_b
 
@@ -9757,7 +9757,7 @@
     if-eqz p2, :cond_b
 
     .line 22
-    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->K0:Landroid/animation/ValueAnimator;
+    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->L0:Landroid/animation/ValueAnimator;
 
     invoke-virtual {p2}, Landroid/animation/ValueAnimator;->cancel()V
 
@@ -9767,7 +9767,7 @@
     if-eqz p1, :cond_c
 
     .line 23
-    iget-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Z
+    iget-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->K0:Z
 
     if-eqz p1, :cond_c
 
@@ -9778,7 +9778,7 @@
 
     .line 25
     :cond_c
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-virtual {p1, p2}, Lcom/google/android/material/internal/a;->w(F)V
 
@@ -9790,12 +9790,12 @@
 
     if-eqz p1, :cond_d
 
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
     check-cast p1, Lcom/google/android/material/textfield/g;
 
     .line 27
-    iget-object p1, p1, Lcom/google/android/material/textfield/g;->D:Landroid/graphics/RectF;
+    iget-object p1, p1, Lcom/google/android/material/textfield/g;->E:Landroid/graphics/RectF;
 
     invoke-virtual {p1}, Landroid/graphics/RectF;->isEmpty()Z
 
@@ -9813,7 +9813,7 @@
     if-eqz p1, :cond_d
 
     .line 29
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->G:Lr4/g;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->H:Lr4/g;
 
     check-cast p1, Lcom/google/android/material/textfield/g;
 
@@ -9822,14 +9822,14 @@
 
     .line 31
     :cond_d
-    iput-boolean v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->H0:Z
+    iput-boolean v2, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Z
 
     .line 32
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/widget/TextView;
 
     if-eqz p1, :cond_e
 
-    iget-boolean p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->t:Z
+    iget-boolean p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Z
 
     if-eqz p2, :cond_e
 
@@ -9837,7 +9837,7 @@
     invoke-virtual {p1, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 34
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/widget/TextView;
 
     const/4 p2, 0x4
 
@@ -9857,13 +9857,13 @@
     if-nez p2, :cond_10
 
     .line 37
-    iget-boolean p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->H0:Z
+    iget-boolean p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Z
 
     if-eqz p2, :cond_15
 
     .line 38
     :cond_10
-    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->K0:Landroid/animation/ValueAnimator;
+    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->L0:Landroid/animation/ValueAnimator;
 
     if-eqz p2, :cond_11
 
@@ -9874,7 +9874,7 @@
     if-eqz p2, :cond_11
 
     .line 39
-    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->K0:Landroid/animation/ValueAnimator;
+    iget-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout;->L0:Landroid/animation/ValueAnimator;
 
     invoke-virtual {p2}, Landroid/animation/ValueAnimator;->cancel()V
 
@@ -9884,7 +9884,7 @@
     if-eqz p1, :cond_12
 
     .line 40
-    iget-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Z
+    iget-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->K0:Z
 
     if-eqz p1, :cond_12
 
@@ -9895,13 +9895,13 @@
 
     .line 42
     :cond_12
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Lcom/google/android/material/internal/a;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->J0:Lcom/google/android/material/internal/a;
 
     invoke-virtual {p1, p2}, Lcom/google/android/material/internal/a;->w(F)V
 
     .line 43
     :goto_7
-    iput-boolean v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->H0:Z
+    iput-boolean v3, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Z
 
     .line 44
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->h()Z
@@ -9915,7 +9915,7 @@
 
     .line 46
     :cond_13
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     if-nez p1, :cond_14
 
@@ -9950,33 +9950,33 @@
     if-nez p1, :cond_0
 
     .line 1
-    iget-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->H0:Z
+    iget-boolean p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->I0:Z
 
     if-nez p1, :cond_0
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/widget/TextView;
 
     if-eqz p1, :cond_1
 
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->t:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Z
 
     if-eqz v0, :cond_1
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->s:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->t:Ljava/lang/CharSequence;
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 4
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/widget/TextView;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 5
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->bringToFront()V
 
@@ -9984,11 +9984,11 @@
 
     .line 6
     :cond_0
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/widget/TextView;
 
     if-eqz p1, :cond_1
 
-    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->t:Z
+    iget-boolean v0, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Z
 
     if-eqz v0, :cond_1
 
@@ -9998,7 +9998,7 @@
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 8
-    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->u:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout;->v:Landroid/widget/TextView;
 
     const/4 v0, 0x4
 

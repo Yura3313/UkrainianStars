@@ -3,35 +3,106 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lj3/rv0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj3/rv0<",
+        "Lj3/ew;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Lj3/ly;
-
-.field public final b:Lk2/c;
-
-.field public h:Lcom/google/android/gms/internal/ads/zzafr;
-
-.field public i:Lj3/x2;
+.field public final a:Lj3/vv0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lj3/x2<",
-            "Ljava/lang/Object;",
+            "Lj3/vv0<",
+            "Lj3/ua;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public j:Ljava/lang/String;
-
-.field public k:Ljava/lang/Long;
-
-.field public l:Ljava/lang/ref/WeakReference;
+.field public final b:Lj3/vv0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/lang/ref/WeakReference<",
-            "Landroid/view/View;",
+            "Lj3/vv0<",
+            "Lj3/wg0;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/wv;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final d:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/uv;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final e:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/jw;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final f:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/ow;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final g:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final h:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final i:Lj3/vv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/vv0<",
+            "Lj3/tv;",
             ">;"
         }
     .end annotation
@@ -39,154 +110,240 @@
 
 
 # direct methods
-.method public constructor <init>(Lj3/ly;Lk2/c;)V
+.method public constructor <init>(Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/vv0<",
+            "Lj3/ua;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/wg0;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/wv;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/uv;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/jw;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/ow;",
+            ">;",
+            "Lj3/vv0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;",
+            "Lj3/vv0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/tv;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj3/fw;->a:Lj3/ly;
+    iput-object p1, p0, Lj3/fw;->a:Lj3/vv0;
 
     .line 3
-    iput-object p2, p0, Lj3/fw;->b:Lk2/c;
+    iput-object p2, p0, Lj3/fw;->b:Lj3/vv0;
+
+    .line 4
+    iput-object p3, p0, Lj3/fw;->c:Lj3/vv0;
+
+    .line 5
+    iput-object p4, p0, Lj3/fw;->d:Lj3/vv0;
+
+    .line 6
+    iput-object p5, p0, Lj3/fw;->e:Lj3/vv0;
+
+    .line 7
+    iput-object p6, p0, Lj3/fw;->f:Lj3/vv0;
+
+    .line 8
+    iput-object p7, p0, Lj3/fw;->g:Lj3/vv0;
+
+    .line 9
+    iput-object p8, p0, Lj3/fw;->h:Lj3/vv0;
+
+    .line 10
+    iput-object p9, p0, Lj3/fw;->i:Lj3/vv0;
 
     return-void
+.end method
+
+.method public static a(Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;)Lj3/fw;
+    .locals 11
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/vv0<",
+            "Lj3/ua;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/wg0;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/wv;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/uv;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/jw;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/ow;",
+            ">;",
+            "Lj3/vv0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;",
+            "Lj3/vv0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;",
+            "Lj3/vv0<",
+            "Lj3/tv;",
+            ">;)",
+            "Lj3/fw;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v10, Lj3/fw;
+
+    move-object v0, v10
+
+    move-object v1, p0
+
+    move-object v2, p1
+
+    move-object v3, p2
+
+    move-object v4, p3
+
+    move-object v5, p4
+
+    move-object/from16 v6, p5
+
+    move-object/from16 v7, p6
+
+    move-object/from16 v8, p7
+
+    move-object/from16 v9, p8
+
+    invoke-direct/range {v0 .. v9}, Lj3/fw;-><init>(Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;Lj3/vv0;)V
+
+    return-object v10
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 3
-
-    const/4 v0, 0x0
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 11
 
     .line 1
-    iput-object v0, p0, Lj3/fw;->j:Ljava/lang/String;
+    iget-object v0, p0, Lj3/fw;->a:Lj3/vv0;
 
-    .line 2
-    iput-object v0, p0, Lj3/fw;->k:Ljava/lang/Long;
-
-    .line 3
-    iget-object v1, p0, Lj3/fw;->l:Ljava/lang/ref/WeakReference;
-
-    if-nez v1, :cond_0
-
-    return-void
-
-    .line 4
-    :cond_0
-    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/view/View;
-
-    if-nez v1, :cond_1
-
-    return-void
-
-    :cond_1
-    const/4 v2, 0x0
-
-    .line 5
-    invoke-virtual {v1, v2}, Landroid/view/View;->setClickable(Z)V
-
-    .line 6
-    invoke-virtual {v1, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 7
-    iput-object v0, p0, Lj3/fw;->l:Ljava/lang/ref/WeakReference;
-
-    return-void
-.end method
-
-.method public final onClick(Landroid/view/View;)V
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lj3/fw;->l:Ljava/lang/ref/WeakReference;
-
-    if-eqz v0, :cond_3
-
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    if-eq v0, p1, :cond_0
+    move-object v2, v0
 
-    goto :goto_1
+    check-cast v2, Lj3/ua;
 
-    .line 2
-    :cond_0
-    iget-object p1, p0, Lj3/fw;->j:Ljava/lang/String;
+    iget-object v0, p0, Lj3/fw;->b:Lj3/vv0;
 
-    if-eqz p1, :cond_2
-
-    iget-object p1, p0, Lj3/fw;->k:Ljava/lang/Long;
-
-    if-nez p1, :cond_1
-
-    goto :goto_0
-
-    .line 3
-    :cond_1
-    new-instance p1, Ljava/util/HashMap;
-
-    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
-
-    .line 4
-    iget-object v0, p0, Lj3/fw;->j:Ljava/lang/String;
-
-    const-string v1, "id"
-
-    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 5
-    iget-object v0, p0, Lj3/fw;->b:Lk2/c;
-
-    .line 6
-    invoke-interface {v0}, Lk2/c;->a()J
-
-    move-result-wide v0
-
-    iget-object v2, p0, Lj3/fw;->k:Ljava/lang/Long;
-
-    invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v2
-
-    sub-long/2addr v0, v2
-
-    invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    const-string v1, "time_interval"
+    move-object v3, v0
 
-    .line 7
-    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast v3, Lj3/wg0;
 
-    const-string v0, "messageType"
+    iget-object v0, p0, Lj3/fw;->c:Lj3/vv0;
 
-    const-string v1, "onePointFiveClick"
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    .line 8
-    invoke-virtual {p1, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v0
 
-    .line 9
-    iget-object v0, p0, Lj3/fw;->a:Lj3/ly;
+    move-object v4, v0
 
-    const-string v1, "sendMessageToNativeJs"
+    check-cast v4, Lj3/wv;
 
-    invoke-virtual {v0, v1, p1}, Lj3/ly;->b(Ljava/lang/String;Ljava/util/Map;)V
+    iget-object v0, p0, Lj3/fw;->d:Lj3/vv0;
 
-    .line 10
-    :cond_2
-    :goto_0
-    invoke-virtual {p0}, Lj3/fw;->a()V
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
 
-    :cond_3
-    :goto_1
-    return-void
+    move-result-object v0
+
+    move-object v5, v0
+
+    check-cast v5, Lj3/uv;
+
+    iget-object v0, p0, Lj3/fw;->e:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v6, v0
+
+    check-cast v6, Lj3/jw;
+
+    iget-object v0, p0, Lj3/fw;->f:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v7, v0
+
+    check-cast v7, Lj3/ow;
+
+    iget-object v0, p0, Lj3/fw;->g:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v8, v0
+
+    check-cast v8, Ljava/util/concurrent/Executor;
+
+    iget-object v0, p0, Lj3/fw;->h:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v9, v0
+
+    check-cast v9, Ljava/util/concurrent/Executor;
+
+    iget-object v0, p0, Lj3/fw;->i:Lj3/vv0;
+
+    invoke-interface {v0}, Lj3/vv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v10, v0
+
+    check-cast v10, Lj3/tv;
+
+    .line 2
+    new-instance v0, Lj3/ew;
+
+    move-object v1, v0
+
+    invoke-direct/range {v1 .. v10}, Lj3/ew;-><init>(Lj3/ua;Lj3/wg0;Lj3/wv;Lj3/uv;Lj3/jw;Lj3/ow;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Lj3/tv;)V
+
+    return-object v0
 .end method

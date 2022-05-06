@@ -10,7 +10,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/drive/query/internal/zzx;",
+        "Lcom/google/android/gms/drive/query/internal/zzv;",
         ">;"
     }
 .end annotation
@@ -66,20 +66,25 @@
 
     .line 5
     :cond_0
-    invoke-static {p1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+    sget-object v1, Lcom/google/android/gms/drive/query/internal/FilterHolder;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 6
+    invoke-static {p1, v2, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object v1
 
+    check-cast v1, Lcom/google/android/gms/drive/query/internal/FilterHolder;
+
     goto :goto_0
 
-    .line 6
+    .line 7
     :cond_1
     invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
 
-    .line 7
-    new-instance p1, Lcom/google/android/gms/drive/query/internal/zzx;
+    .line 8
+    new-instance p1, Lcom/google/android/gms/drive/query/internal/zzv;
 
-    invoke-direct {p1, v1}, Lcom/google/android/gms/drive/query/internal/zzx;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, v1}, Lcom/google/android/gms/drive/query/internal/zzv;-><init>(Lcom/google/android/gms/drive/query/internal/FilterHolder;)V
 
     return-object p1
 .end method
@@ -88,7 +93,7 @@
     .locals 0
 
     .line 1
-    new-array p1, p1, [Lcom/google/android/gms/drive/query/internal/zzx;
+    new-array p1, p1, [Lcom/google/android/gms/drive/query/internal/zzv;
 
     return-object p1
 .end method

@@ -3,7 +3,7 @@
 .source "AbstractProtobufList.java"
 
 # interfaces
-.implements Lcom/google/crypto/tink/shaded/protobuf/q$d;
+.implements Lcom/google/crypto/tink/shaded/protobuf/q$c;
 
 
 # annotations
@@ -14,14 +14,14 @@
         ">",
         "Ljava/util/AbstractList<",
         "TE;>;",
-        "Lcom/google/crypto/tink/shaded/protobuf/q$d<",
+        "Lcom/google/crypto/tink/shaded/protobuf/q$c<",
         "TE;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public a:Z
+.field public g:Z
 
 
 # direct methods
@@ -34,18 +34,18 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->a:Z
+    iput-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->g:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public A()Z
+.method public C()Z
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->a:Z
+    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->g:Z
 
     return v0
 .end method
@@ -54,7 +54,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->a:Z
+    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->g:Z
 
     if-eqz v0, :cond_0
 
@@ -260,13 +260,13 @@
     return v1
 .end method
 
-.method public final j()V
+.method public final k()V
     .locals 1
 
     const/4 v0, 0x0
 
     .line 1
-    iput-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->a:Z
+    iput-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->g:Z
 
     return-void
 .end method

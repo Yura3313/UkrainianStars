@@ -1,129 +1,115 @@
 .class public final Lmd/g;
 .super Lle/j;
-.source "ProfileImageEditorFragment.kt"
+.source "ProfileSelectorFragment.kt"
 
 # interfaces
-.implements Lke/p;
+.implements Lke/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lle/j;",
-        "Lke/p<",
-        "Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;",
-        "Ljava/lang/Exception;",
-        "Lbe/n;",
+        "Lke/l<",
+        "Lrc/m0;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final a:Lmd/g;
+# instance fields
+.field public final synthetic g:Lcom/supercell/id/IdAccount;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lcom/supercell/id/IdAccount;)V
+    .locals 0
 
-    new-instance v0, Lmd/g;
+    iput-object p1, p0, Lmd/g;->g:Lcom/supercell/id/IdAccount;
 
-    invoke-direct {v0}, Lmd/g;-><init>()V
+    const/4 p1, 0x1
 
-    sput-object v0, Lmd/g;->a:Lmd/g;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 8
 
     .line 1
-    check-cast p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    check-cast p1, Lrc/m0;
 
-    check-cast p2, Ljava/lang/Exception;
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_4
-
-    if-eqz p2, :cond_3
+    if-eqz p1, :cond_0
 
     .line 2
-    invoke-virtual {p2}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+
+    move-result-object v0
+
+    .line 3
+    iget-object v1, v0, Lvd/r;->m:Lcom/supercell/titan/h;
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x1
+
+    const/16 v7, 0x8
+
+    const-string v2, "Saved Credentials"
+
+    const-string v3, "click"
+
+    const-string v4, "Confirm logout"
+
+    .line 4
+    invoke-static/range {v1 .. v7}, Lcom/supercell/titan/h;->a(Lcom/supercell/titan/h;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+
+    .line 5
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lmd/g;->g:Lcom/supercell/id/IdAccount;
+
+    invoke-virtual {v1}, Lcom/supercell/id/IdAccount;->getSupercellId()Ljava/lang/String;
 
     move-result-object v1
 
-    const-string v2, "profile_image_rejected"
-
-    invoke-static {v1, v2}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    .line 3
-    iget-object v1, p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->i0:Lcom/supercell/id/model/MyProfileImage;
-
-    if-eqz v1, :cond_0
-
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    sget-object v1, Lcom/supercell/id/model/MyProfileImage$Empty;->a:Lcom/supercell/id/model/MyProfileImage$Empty;
-
-    .line 5
-    :goto_0
-    invoke-virtual {p1, v1}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->C1(Lcom/supercell/id/model/MyProfileImage;)V
+    invoke-virtual {v0, v1}, Lvd/r;->o(Ljava/lang/String;)V
 
     .line 6
-    invoke-virtual {p1, v0}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->A1(Lcom/supercell/id/model/MyProfileImage;)V
+    iget-object v0, p0, Lmd/g;->g:Lcom/supercell/id/IdAccount;
+
+    invoke-virtual {v0}, Lcom/supercell/id/IdAccount;->getSupercellId()Ljava/lang/String;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lmd/g;->g:Lcom/supercell/id/IdAccount;
+
+    invoke-virtual {v1}, Lcom/supercell/id/IdAccount;->getEmail()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v0, v1}, Lcom/supercell/id/SupercellId;->forgetAccount$supercellId_release(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 7
-    :cond_1
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_2
-
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
-
-    .line 8
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->E(Ljava/lang/Exception;Lke/l;)V
-
-    .line 9
-    :cond_2
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
-    :cond_3
+    :cond_0
     const-string p1, "it"
 
-    .line 10
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    .line 8
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    throw v0
+    const/4 p1, 0x0
 
-    :cond_4
-    const-string p1, "$receiver"
-
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
+    throw p1
 .end method

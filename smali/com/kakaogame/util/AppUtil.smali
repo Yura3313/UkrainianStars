@@ -150,7 +150,7 @@
     const-string v2, "AppUtil"
 
     .line 1
-    invoke-static {v1, p1, v2}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, p1, v2}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v1, 0x0
 
@@ -439,7 +439,7 @@
     const-string v2, "AppUtil"
 
     .line 1
-    invoke-static {v1, p1, v2}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, p1, v2}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v1, 0x0
 

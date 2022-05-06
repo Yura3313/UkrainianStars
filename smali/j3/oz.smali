@@ -3,47 +3,38 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lj3/a51;
 
 
 # instance fields
-.field public final a:Lj3/hz;
+.field public final g:Lj3/mz;
 
 
 # direct methods
-.method public constructor <init>(Lj3/hz;)V
+.method public constructor <init>(Lj3/mz;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj3/oz;->a:Lj3/hz;
+    iput-object p1, p0, Lj3/oz;->g:Lj3/mz;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final o()V
     .locals 2
 
-    iget-object p1, p0, Lj3/oz;->a:Lj3/hz;
+    iget-object v0, p0, Lj3/oz;->g:Lj3/mz;
 
     .line 1
-    iget-object v0, p1, Lj3/hz;->i:Lh1/a;
-
-    const/4 v1, 0x1
+    iget-object v0, v0, Lj3/mz;->a:Lj3/uq;
 
     .line 2
-    iput-boolean v1, v0, Lh1/a;->b:Z
+    sget-object v1, Lj3/gy0;->g:Lj3/ct;
 
-    .line 3
-    iget-object p1, p1, Lj3/hz;->k:Lj3/i9;
+    invoke-virtual {v0, v1}, Lj3/at;->E0(Lj3/ct;)V
 
-    if-eqz p1, :cond_0
-
-    .line 4
-    invoke-interface {p1}, Lj3/i9;->g()V
-
-    :cond_0
     return-void
 .end method

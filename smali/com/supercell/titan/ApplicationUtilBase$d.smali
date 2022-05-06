@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/titan/GameApp;
+.field public final synthetic g:Lcom/supercell/titan/GameApp;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/titan/ApplicationUtilBase$d;->a:Lcom/supercell/titan/GameApp;
+    iput-object p1, p0, Lcom/supercell/titan/ApplicationUtilBase$d;->g:Lcom/supercell/titan/GameApp;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -84,7 +84,7 @@
     if-nez v2, :cond_4
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/titan/ApplicationUtilBase$d;->a:Lcom/supercell/titan/GameApp;
+    iget-object v0, p0, Lcom/supercell/titan/ApplicationUtilBase$d;->g:Lcom/supercell/titan/GameApp;
 
     const/4 v3, 0x7
 
@@ -96,7 +96,7 @@
     if-nez v1, :cond_5
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/titan/ApplicationUtilBase$d;->a:Lcom/supercell/titan/GameApp;
+    iget-object v0, p0, Lcom/supercell/titan/ApplicationUtilBase$d;->g:Lcom/supercell/titan/GameApp;
 
     const/4 v1, 0x6
 

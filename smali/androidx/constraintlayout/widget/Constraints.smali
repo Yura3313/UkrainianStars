@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field public a:Landroidx/constraintlayout/widget/b;
+.field public g:Landroidx/constraintlayout/widget/a;
 
 
 # direct methods
@@ -85,24 +85,24 @@
     return-object v0
 .end method
 
-.method public getConstraintSet()Landroidx/constraintlayout/widget/b;
+.method public getConstraintSet()Landroidx/constraintlayout/widget/a;
     .locals 9
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/widget/Constraints;->a:Landroidx/constraintlayout/widget/b;
+    iget-object v0, p0, Landroidx/constraintlayout/widget/Constraints;->g:Landroidx/constraintlayout/widget/a;
 
     if-nez v0, :cond_0
 
     .line 2
-    new-instance v0, Landroidx/constraintlayout/widget/b;
+    new-instance v0, Landroidx/constraintlayout/widget/a;
 
-    invoke-direct {v0}, Landroidx/constraintlayout/widget/b;-><init>()V
+    invoke-direct {v0}, Landroidx/constraintlayout/widget/a;-><init>()V
 
-    iput-object v0, p0, Landroidx/constraintlayout/widget/Constraints;->a:Landroidx/constraintlayout/widget/b;
+    iput-object v0, p0, Landroidx/constraintlayout/widget/Constraints;->g:Landroidx/constraintlayout/widget/a;
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/constraintlayout/widget/Constraints;->a:Landroidx/constraintlayout/widget/b;
+    iget-object v0, p0, Landroidx/constraintlayout/widget/Constraints;->g:Landroidx/constraintlayout/widget/a;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -112,7 +112,7 @@
     move-result v1
 
     .line 5
-    iget-object v2, v0, Landroidx/constraintlayout/widget/b;->c:Ljava/util/HashMap;
+    iget-object v2, v0, Landroidx/constraintlayout/widget/a;->c:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->clear()V
 
@@ -139,7 +139,7 @@
     move-result v5
 
     .line 9
-    iget-boolean v6, v0, Landroidx/constraintlayout/widget/b;->b:Z
+    iget-boolean v6, v0, Landroidx/constraintlayout/widget/a;->b:Z
 
     if-eqz v6, :cond_2
 
@@ -162,7 +162,7 @@
     .line 11
     :cond_2
     :goto_1
-    iget-object v6, v0, Landroidx/constraintlayout/widget/b;->c:Ljava/util/HashMap;
+    iget-object v6, v0, Landroidx/constraintlayout/widget/a;->c:Ljava/util/HashMap;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -175,21 +175,21 @@
     if-nez v6, :cond_3
 
     .line 12
-    iget-object v6, v0, Landroidx/constraintlayout/widget/b;->c:Ljava/util/HashMap;
+    iget-object v6, v0, Landroidx/constraintlayout/widget/a;->c:Ljava/util/HashMap;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v7
 
-    new-instance v8, Landroidx/constraintlayout/widget/b$a;
+    new-instance v8, Landroidx/constraintlayout/widget/a$a;
 
-    invoke-direct {v8}, Landroidx/constraintlayout/widget/b$a;-><init>()V
+    invoke-direct {v8}, Landroidx/constraintlayout/widget/a$a;-><init>()V
 
     invoke-virtual {v6, v7, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 13
     :cond_3
-    iget-object v6, v0, Landroidx/constraintlayout/widget/b;->c:Ljava/util/HashMap;
+    iget-object v6, v0, Landroidx/constraintlayout/widget/a;->c:Ljava/util/HashMap;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -199,7 +199,7 @@
 
     move-result-object v6
 
-    check-cast v6, Landroidx/constraintlayout/widget/b$a;
+    check-cast v6, Landroidx/constraintlayout/widget/a$a;
 
     .line 14
     instance-of v7, v3, Landroidx/constraintlayout/widget/ConstraintHelper;
@@ -210,7 +210,7 @@
     check-cast v3, Landroidx/constraintlayout/widget/ConstraintHelper;
 
     .line 16
-    invoke-virtual {v6, v5, v4}, Landroidx/constraintlayout/widget/b$a;->c(ILandroidx/constraintlayout/widget/Constraints$LayoutParams;)V
+    invoke-virtual {v6, v5, v4}, Landroidx/constraintlayout/widget/a$a;->c(ILandroidx/constraintlayout/widget/Constraints$LayoutParams;)V
 
     .line 17
     instance-of v7, v3, Landroidx/constraintlayout/widget/Barrier;
@@ -218,11 +218,11 @@
     if-eqz v7, :cond_4
 
     .line 18
-    iget-object v7, v6, Landroidx/constraintlayout/widget/b$a;->d:Landroidx/constraintlayout/widget/b$b;
+    iget-object v7, v6, Landroidx/constraintlayout/widget/a$a;->d:Landroidx/constraintlayout/widget/a$b;
 
     const/4 v8, 0x1
 
-    iput v8, v7, Landroidx/constraintlayout/widget/b$b;->d0:I
+    iput v8, v7, Landroidx/constraintlayout/widget/a$b;->d0:I
 
     .line 19
     check-cast v3, Landroidx/constraintlayout/widget/Barrier;
@@ -232,29 +232,29 @@
 
     move-result v8
 
-    iput v8, v7, Landroidx/constraintlayout/widget/b$b;->b0:I
+    iput v8, v7, Landroidx/constraintlayout/widget/a$b;->b0:I
 
     .line 21
-    iget-object v7, v6, Landroidx/constraintlayout/widget/b$a;->d:Landroidx/constraintlayout/widget/b$b;
+    iget-object v7, v6, Landroidx/constraintlayout/widget/a$a;->d:Landroidx/constraintlayout/widget/a$b;
 
     invoke-virtual {v3}, Landroidx/constraintlayout/widget/ConstraintHelper;->getReferencedIds()[I
 
     move-result-object v8
 
-    iput-object v8, v7, Landroidx/constraintlayout/widget/b$b;->e0:[I
+    iput-object v8, v7, Landroidx/constraintlayout/widget/a$b;->e0:[I
 
     .line 22
-    iget-object v7, v6, Landroidx/constraintlayout/widget/b$a;->d:Landroidx/constraintlayout/widget/b$b;
+    iget-object v7, v6, Landroidx/constraintlayout/widget/a$a;->d:Landroidx/constraintlayout/widget/a$b;
 
     invoke-virtual {v3}, Landroidx/constraintlayout/widget/Barrier;->getMargin()I
 
     move-result v3
 
-    iput v3, v7, Landroidx/constraintlayout/widget/b$b;->c0:I
+    iput v3, v7, Landroidx/constraintlayout/widget/a$b;->c0:I
 
     .line 23
     :cond_4
-    invoke-virtual {v6, v5, v4}, Landroidx/constraintlayout/widget/b$a;->c(ILandroidx/constraintlayout/widget/Constraints$LayoutParams;)V
+    invoke-virtual {v6, v5, v4}, Landroidx/constraintlayout/widget/a$a;->c(ILandroidx/constraintlayout/widget/Constraints$LayoutParams;)V
 
     add-int/lit8 v2, v2, 0x1
 
@@ -262,7 +262,7 @@
 
     .line 24
     :cond_5
-    iget-object v0, p0, Landroidx/constraintlayout/widget/Constraints;->a:Landroidx/constraintlayout/widget/b;
+    iget-object v0, p0, Landroidx/constraintlayout/widget/Constraints;->g:Landroidx/constraintlayout/widget/a;
 
     return-object v0
 .end method

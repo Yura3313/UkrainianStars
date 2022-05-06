@@ -1,361 +1,139 @@
 .class public final Lzd/b;
 .super Ljava/lang/Object;
-.source "InflateRequest.kt"
+.source "-InterceptorChain.kt"
+
+# interfaces
+.implements Lyd/d$a;
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final a:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lyd/d;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final b:Landroid/content/Context;
+.field public final b:I
 
-.field public final c:Landroid/util/AttributeSet;
-
-.field public final d:Landroid/view/View;
-
-.field public final e:Lzd/a;
+.field public final c:Lyd/b;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;Landroid/view/View;Lzd/a;)V
-    .locals 1
+.method public constructor <init>(Ljava/util/List;ILyd/b;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "+",
+            "Lyd/d;",
+            ">;I",
+            "Lyd/b;",
+            ")V"
+        }
+    .end annotation
 
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_2
-
-    if-eqz p2, :cond_1
-
-    if-eqz p5, :cond_0
+    if-eqz p1, :cond_0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lzd/b;->a:Ljava/lang/String;
+    iput-object p1, p0, Lzd/b;->a:Ljava/util/List;
 
-    iput-object p2, p0, Lzd/b;->b:Landroid/content/Context;
+    iput p2, p0, Lzd/b;->b:I
 
-    iput-object p3, p0, Lzd/b;->c:Landroid/util/AttributeSet;
-
-    iput-object p4, p0, Lzd/b;->d:Landroid/view/View;
-
-    iput-object p5, p0, Lzd/b;->e:Lzd/a;
+    iput-object p3, p0, Lzd/b;->c:Lyd/b;
 
     return-void
 
     :cond_0
-    const-string p1, "fallbackViewCreator"
+    const-string p1, "interceptors"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    throw v0
+    const/4 p1, 0x0
 
-    :cond_1
-    const-string p1, "context"
-
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    const-string p1, "name"
-
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public synthetic constructor <init>(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;Landroid/view/View;Lzd/a;I)V
-    .locals 6
-
-    and-int/lit8 p4, p6, 0x4
-
-    if-eqz p4, :cond_0
-
-    const/4 p3, 0x0
-
-    :cond_0
-    move-object v3, p3
-
-    const/4 v4, 0x0
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move-object v5, p5
-
-    .line 3
-    invoke-direct/range {v0 .. v5}, Lzd/b;-><init>(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;Landroid/view/View;Lzd/a;)V
-
-    return-void
+    throw p1
 .end method
 
 
 # virtual methods
-.method public final a()Landroid/util/AttributeSet;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lzd/b;->c:Landroid/util/AttributeSet;
-
-    return-object v0
-.end method
-
-.method public final b()Landroid/content/Context;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lzd/b;->b:Landroid/content/Context;
-
-    return-object v0
-.end method
-
-.method public final c()Lzd/a;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lzd/b;->e:Lzd/a;
-
-    return-object v0
-.end method
-
-.method public final d()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lzd/b;->a:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final e()Landroid/view/View;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lzd/b;->d:Landroid/view/View;
-
-    return-object v0
-.end method
-
-.method public equals(Ljava/lang/Object;)Z
-    .locals 2
-
-    if-eq p0, p1, :cond_1
-
-    instance-of v0, p1, Lzd/b;
-
-    if-eqz v0, :cond_0
-
-    check-cast p1, Lzd/b;
-
-    iget-object v0, p0, Lzd/b;->a:Ljava/lang/String;
-
-    iget-object v1, p1, Lzd/b;->a:Ljava/lang/String;
-
-    invoke-static {v0, v1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lzd/b;->b:Landroid/content/Context;
-
-    iget-object v1, p1, Lzd/b;->b:Landroid/content/Context;
-
-    invoke-static {v0, v1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lzd/b;->c:Landroid/util/AttributeSet;
-
-    iget-object v1, p1, Lzd/b;->c:Landroid/util/AttributeSet;
-
-    invoke-static {v0, v1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lzd/b;->d:Landroid/view/View;
-
-    iget-object v1, p1, Lzd/b;->d:Landroid/view/View;
-
-    invoke-static {v0, v1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lzd/b;->e:Lzd/a;
-
-    iget-object p1, p1, Lzd/b;->e:Lzd/a;
-
-    invoke-static {v0, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return p1
-
-    :cond_1
-    :goto_0
-    const/4 p1, 0x1
-
-    return p1
-.end method
-
-.method public hashCode()I
+.method public a(Lyd/b;)Lyd/c;
     .locals 3
 
-    iget-object v0, p0, Lzd/b;->a:Ljava/lang/String;
+    if-eqz p1, :cond_1
 
-    const/4 v1, 0x0
+    .line 1
+    iget v0, p0, Lzd/b;->b:I
 
-    if-eqz v0, :cond_0
+    iget-object v1, p0, Lzd/b;->a:Ljava/util/List;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    move-result v0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Lzd/b;->b:Landroid/content/Context;
-
-    if-eqz v2, :cond_1
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v2
-
-    goto :goto_1
-
-    :cond_1
-    const/4 v2, 0x0
-
-    :goto_1
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Lzd/b;->c:Landroid/util/AttributeSet;
-
-    if-eqz v2, :cond_2
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v2
-
-    goto :goto_2
-
-    :cond_2
-    const/4 v2, 0x0
-
-    :goto_2
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Lzd/b;->d:Landroid/view/View;
-
-    if-eqz v2, :cond_3
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v2
-
-    goto :goto_3
-
-    :cond_3
-    const/4 v2, 0x0
-
-    :goto_3
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Lzd/b;->e:Lzd/a;
-
-    if-eqz v2, :cond_4
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+    invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v1
 
-    :cond_4
-    add-int/2addr v0, v1
+    if-ge v0, v1, :cond_0
 
-    return v0
+    .line 2
+    new-instance v0, Lzd/b;
+
+    iget-object v1, p0, Lzd/b;->a:Ljava/util/List;
+
+    iget v2, p0, Lzd/b;->b:I
+
+    add-int/lit8 v2, v2, 0x1
+
+    invoke-direct {v0, v1, v2, p1}, Lzd/b;-><init>(Ljava/util/List;ILyd/b;)V
+
+    .line 3
+    iget-object p1, p0, Lzd/b;->a:Ljava/util/List;
+
+    iget v1, p0, Lzd/b;->b:I
+
+    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lyd/d;
+
+    .line 4
+    invoke-interface {p1, v0}, Lyd/d;->a(Lyd/d$a;)Lyd/c;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 5
+    :cond_0
+    new-instance p1, Ljava/lang/AssertionError;
+
+    const-string v0, "no interceptors added to the chain"
+
+    invoke-direct {p1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
+
+    throw p1
+
+    :cond_1
+    const-string p1, "request"
+
+    .line 6
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
 .end method
 
-.method public toString()Ljava/lang/String;
-    .locals 2
+.method public request()Lyd/b;
+    .locals 1
 
-    const-string v0, "InflateRequest(name="
-
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lzd/b;->a:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", context="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lzd/b;->b:Landroid/content/Context;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", attrs="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lzd/b;->c:Landroid/util/AttributeSet;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", parent="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lzd/b;->d:Landroid/view/View;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", fallbackViewCreator="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lzd/b;->e:Lzd/a;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ")"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
+    .line 1
+    iget-object v0, p0, Lzd/b;->c:Lyd/b;
 
     return-object v0
 .end method

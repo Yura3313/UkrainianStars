@@ -1,112 +1,171 @@
-.class public final Lu3/q1;
+.class public abstract Lu3/q1;
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lu3/f1;
+.implements Lu3/u3;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<MessageType:",
+        "Lu3/q1<",
+        "TMessageType;TBuilderType;>;BuilderType:",
+        "Lu3/r1<",
+        "TMessageType;TBuilderType;>;>",
+        "Ljava/lang/Object;",
+        "Lu3/u3;"
+    }
+.end annotation
 
 
 # static fields
-.field public static final i:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Lu3/q1;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private static zzbtj:Z
 
 
 # instance fields
-.field public final a:Landroid/content/SharedPreferences;
-
-.field public final b:Ljava/lang/Object;
-
-.field public volatile h:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "*>;"
-        }
-    .end annotation
-.end field
+.field public zzbti:I
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method public constructor <init>()V
     .locals 1
 
     .line 1
-    new-instance v0, Ljava/util/HashMap;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    const/4 v0, 0x0
 
-    sput-object v0, Lu3/q1;->i:Ljava/util/Map;
+    .line 2
+    iput v0, p0, Lu3/q1;->zzbti:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;)Ljava/lang/Object;
-    .locals 2
+.method public final E()Lu3/x1;
+    .locals 7
 
     .line 1
-    iget-object v0, p0, Lu3/q1;->h:Ljava/util/Map;
+    :try_start_0
+    move-object v0, p0
 
-    if-nez v0, :cond_1
+    check-cast v0, Lu3/u2;
+
+    invoke-virtual {v0}, Lu3/u2;->c()I
+
+    move-result v1
+
+    sget-object v2, Lu3/x1;->h:Lu3/x1;
 
     .line 2
-    iget-object v1, p0, Lu3/q1;->b:Ljava/lang/Object;
-
-    monitor-enter v1
+    new-array v2, v1, [B
 
     .line 3
-    :try_start_0
-    iget-object v0, p0, Lu3/q1;->h:Ljava/util/Map;
+    sget-object v3, Lcom/google/android/gms/internal/measurement/zztv;->b:Ljava/util/logging/Logger;
+
+    .line 4
+    new-instance v3, Lcom/google/android/gms/internal/measurement/zztv$a;
+
+    const/4 v4, 0x0
+
+    invoke-direct {v3, v2, v4, v1}, Lcom/google/android/gms/internal/measurement/zztv$a;-><init>([BII)V
+
+    .line 5
+    invoke-virtual {v0, v3}, Lu3/u2;->b(Lcom/google/android/gms/internal/measurement/zztv;)V
+
+    .line 6
+    invoke-virtual {v3}, Lcom/google/android/gms/internal/measurement/zztv;->f0()I
+
+    move-result v0
 
     if-nez v0, :cond_0
 
-    .line 4
-    iget-object v0, p0, Lu3/q1;->a:Landroid/content/SharedPreferences;
+    .line 7
+    new-instance v0, Lu3/a2;
 
-    invoke-interface {v0}, Landroid/content/SharedPreferences;->getAll()Ljava/util/Map;
+    invoke-direct {v0, v2}, Lu3/a2;-><init>([B)V
 
-    move-result-object v0
+    return-object v0
 
-    .line 5
-    iput-object v0, p0, Lu3/q1;->h:Ljava/util/Map;
-
-    .line 6
+    .line 8
     :cond_0
-    monitor-exit v1
+    new-instance v0, Ljava/lang/IllegalStateException;
 
-    goto :goto_0
+    const-string v1, "Did not write as much data as expected."
 
-    :catchall_0
-    move-exception p1
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    monitor-exit v1
+    throw v0
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    move-exception v0
+
+    .line 9
+    new-instance v1, Ljava/lang/RuntimeException;
+
+    const-string v2, "ByteString"
+
+    .line 10
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/String;->length()I
+
+    move-result v4
+
+    add-int/lit8 v4, v4, 0x3e
+
+    add-int/lit8 v4, v4, 0xa
+
+    const-string v5, "Serializing "
+
+    const-string v6, " to a "
+
+    invoke-static {v4, v5, v3, v6, v2}, Lq1/a;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, " threw an IOException (should never happen)."
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 11
+    invoke-direct {v1, v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v1
+.end method
+
+.method public f(I)V
+    .locals 0
+
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     throw p1
+.end method
 
-    :cond_1
-    :goto_0
-    if-eqz v0, :cond_2
+.method public g()I
+    .locals 1
 
-    .line 7
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 1
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    move-result-object p1
+    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    return-object p1
-
-    :cond_2
-    const/4 p1, 0x0
-
-    return-object p1
+    throw v0
 .end method

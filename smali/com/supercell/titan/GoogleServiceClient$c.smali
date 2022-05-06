@@ -3,7 +3,7 @@
 .source "GoogleServiceClient.java"
 
 # interfaces
-.implements La4/c;
+.implements Lb4/c;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La4/c<",
+        "Lb4/c<",
         "Ljava/lang/Void;",
         ">;"
     }
@@ -44,12 +44,12 @@
 
 
 # virtual methods
-.method public a(La4/f;)V
+.method public a(Lb4/f;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "La4/f<",
+            "Lb4/f<",
             "Ljava/lang/Void;",
             ">;)V"
         }

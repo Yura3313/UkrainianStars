@@ -1,137 +1,108 @@
-.class public final synthetic Lj3/r10;
-.super Ljava/lang/Object;
+.class public final Lj3/r10;
+.super Lcom/google/android/gms/internal/ads/zzaik;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Ljava/util/concurrent/Callable;
 
 
 # instance fields
-.field public final a:Lj3/s10;
+.field public final synthetic g:Ljava/lang/Object;
 
-.field public final b:Lcom/google/android/gms/internal/ads/zzasp;
+.field public final synthetic h:Ljava/lang/String;
+
+.field public final synthetic i:J
+
+.field public final synthetic j:Lj3/qd;
+
+.field public final synthetic k:Lj3/j10;
 
 
 # direct methods
-.method public constructor <init>(Lj3/s10;Lcom/google/android/gms/internal/ads/zzasp;)V
+.method public constructor <init>(Lj3/j10;Ljava/lang/Object;Ljava/lang/String;JLj3/qd;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    iput-object p1, p0, Lj3/r10;->k:Lj3/j10;
 
-    iput-object p1, p0, Lj3/r10;->a:Lj3/s10;
+    iput-object p2, p0, Lj3/r10;->g:Ljava/lang/Object;
 
-    iput-object p2, p0, Lj3/r10;->b:Lcom/google/android/gms/internal/ads/zzasp;
+    iput-object p3, p0, Lj3/r10;->h:Ljava/lang/String;
+
+    iput-wide p4, p0, Lj3/r10;->i:J
+
+    iput-object p6, p0, Lj3/r10;->j:Lj3/qd;
+
+    invoke-direct {p0}, Lcom/google/android/gms/internal/ads/zzaik;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 5
-
-    iget-object v0, p0, Lj3/r10;->a:Lj3/s10;
-
-    iget-object v1, p0, Lj3/r10;->b:Lcom/google/android/gms/internal/ads/zzasp;
+.method public final I2(Ljava/lang/String;)V
+    .locals 8
 
     .line 1
-    iget-object v0, v0, Lj3/s10;->c:Lj3/p20;
+    iget-object v0, p0, Lj3/r10;->g:Ljava/lang/Object;
+
+    monitor-enter v0
 
     .line 2
-    iget-object v2, v0, Lj3/r20;->b:Ljava/lang/Object;
+    :try_start_0
+    iget-object v1, p0, Lj3/r10;->k:Lj3/j10;
 
-    monitor-enter v2
+    iget-object v2, p0, Lj3/r10;->h:Ljava/lang/String;
+
+    const/4 v3, 0x0
 
     .line 3
-    :try_start_0
-    iget-boolean v3, v0, Lj3/r20;->c:Z
+    sget-object v4, Lh1/o;->B:Lh1/o;
 
-    if-eqz v3, :cond_0
+    iget-object v4, v4, Lh1/o;->j:Lk2/c;
 
     .line 4
-    iget-object v0, v0, Lj3/r20;->a:Lj3/md;
+    invoke-interface {v4}, Lk2/c;->b()J
 
-    monitor-exit v2
+    move-result-wide v4
 
-    goto :goto_0
+    iget-wide v6, p0, Lj3/r10;->i:J
 
-    :cond_0
-    const/4 v3, 0x1
+    sub-long/2addr v4, v6
+
+    long-to-int v5, v4
 
     .line 5
-    iput-boolean v3, v0, Lj3/r20;->c:Z
+    invoke-static {v1, v2, v3, p1, v5}, Lj3/j10;->a(Lj3/j10;Ljava/lang/String;ZLjava/lang/String;I)V
 
     .line 6
-    iput-object v1, v0, Lj3/r20;->e:Lcom/google/android/gms/internal/ads/zzasp;
+    iget-object p1, p0, Lj3/r10;->k:Lj3/j10;
 
     .line 7
-    iget-object v1, v0, Lj3/r20;->f:Lj3/a8;
-
-    invoke-virtual {v1}, Lcom/google/android/gms/common/internal/BaseGmsClient;->o()V
+    iget-object p1, p1, Lj3/j10;->k:Lj3/b10;
 
     .line 8
-    iget-object v1, v0, Lj3/r20;->a:Lj3/md;
+    iget-object v1, p0, Lj3/r10;->h:Ljava/lang/String;
 
-    new-instance v4, Lj3/a5;
+    const-string v2, "error"
 
-    invoke-direct {v4, v0, v3}, Lj3/a5;-><init>(Ljava/lang/Object;I)V
+    invoke-virtual {p1, v1, v2}, Lj3/b10;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 9
-    sget-object v3, Lj3/gd;->f:Lj3/am0;
+    iget-object p1, p0, Lj3/r10;->j:Lj3/qd;
+
+    sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-virtual {p1, v1}, Lj3/qd;->b(Ljava/lang/Object;)Z
 
     .line 10
-    iget-object v1, v1, Lj3/md;->a:Lj3/im0;
+    monitor-exit v0
 
-    invoke-virtual {v1, v4, v3}, Lj3/uk0;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+    return-void
 
-    .line 11
-    iget-object v0, v0, Lj3/r20;->a:Lj3/md;
+    :catchall_0
+    move-exception p1
 
-    monitor-exit v2
+    monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 12
-    :goto_0
-    sget-object v1, Lj3/n;->B2:Lj3/f;
-
-    .line 13
-    sget-object v2, Lj3/w41;->j:Lj3/w41;
-
-    iget-object v2, v2, Lj3/w41;->f:Lj3/l;
-
-    .line 14
-    invoke-virtual {v2, v1}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    .line 15
-    check-cast v1, Ljava/lang/Integer;
-
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
-
-    move-result v1
-
-    int-to-long v1, v1
-
-    sget-object v3, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
-
-    invoke-virtual {v0, v1, v2, v3}, Lj3/md;->get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/io/InputStream;
-
-    return-object v0
-
-    :catchall_0
-    move-exception v0
-
-    .line 16
-    :try_start_1
-    monitor-exit v2
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw v0
+    throw p1
 .end method

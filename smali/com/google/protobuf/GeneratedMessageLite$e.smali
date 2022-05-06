@@ -67,10 +67,10 @@
     if-eqz p1, :cond_2
 
     .line 2
-    iget-object v0, p4, Lcom/google/protobuf/GeneratedMessageLite$d;->h:Lcom/google/protobuf/y1$b;
+    iget-object v0, p4, Lcom/google/protobuf/GeneratedMessageLite$d;->i:Lcom/google/protobuf/x1$b;
 
     .line 3
-    sget-object v1, Lcom/google/protobuf/y1$b;->MESSAGE:Lcom/google/protobuf/y1$b;
+    sget-object v1, Lcom/google/protobuf/x1$b;->s:Lcom/google/protobuf/x1$b;
 
     if-ne v0, v1, :cond_1
 
@@ -118,23 +118,24 @@
 
 # virtual methods
 .method public a(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+    .locals 3
 
     .line 1
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$e;->d:Lcom/google/protobuf/GeneratedMessageLite$d;
 
-    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$d;->r()Lcom/google/protobuf/y1$c;
-
-    move-result-object v0
-
-    sget-object v1, Lcom/google/protobuf/y1$c;->ENUM:Lcom/google/protobuf/y1$c;
-
-    if-ne v0, v1, :cond_0
-
     .line 2
-    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$e;->d:Lcom/google/protobuf/GeneratedMessageLite$d;
+    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$d;->i:Lcom/google/protobuf/x1$b;
 
-    iget-object v0, v0, Lcom/google/protobuf/GeneratedMessageLite$d;->a:Lcom/google/protobuf/a0$d;
+    .line 3
+    iget-object v1, v1, Lcom/google/protobuf/x1$b;->g:Lcom/google/protobuf/x1$c;
+
+    .line 4
+    sget-object v2, Lcom/google/protobuf/x1$c;->o:Lcom/google/protobuf/x1$c;
+
+    if-ne v1, v2, :cond_0
+
+    .line 5
+    iget-object v0, v0, Lcom/google/protobuf/GeneratedMessageLite$d;->g:Lcom/google/protobuf/a0$d;
 
     check-cast p1, Ljava/lang/Integer;
 
@@ -156,18 +157,21 @@
     .line 1
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$e;->d:Lcom/google/protobuf/GeneratedMessageLite$d;
 
-    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$d;->r()Lcom/google/protobuf/y1$c;
+    .line 2
+    iget-object v0, v0, Lcom/google/protobuf/GeneratedMessageLite$d;->i:Lcom/google/protobuf/x1$b;
 
-    move-result-object v0
+    .line 3
+    iget-object v0, v0, Lcom/google/protobuf/x1$b;->g:Lcom/google/protobuf/x1$c;
 
-    sget-object v1, Lcom/google/protobuf/y1$c;->ENUM:Lcom/google/protobuf/y1$c;
+    .line 4
+    sget-object v1, Lcom/google/protobuf/x1$c;->o:Lcom/google/protobuf/x1$c;
 
     if-ne v0, v1, :cond_0
 
-    .line 2
+    .line 5
     check-cast p1, Lcom/google/protobuf/a0$c;
 
-    invoke-interface {p1}, Lcom/google/protobuf/a0$c;->getNumber()I
+    invoke-interface {p1}, Lcom/google/protobuf/a0$c;->b()I
 
     move-result p1
 

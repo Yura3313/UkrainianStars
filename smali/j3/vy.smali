@@ -1,127 +1,108 @@
 .class public final Lj3/vy;
-.super Lcom/google/android/gms/ads/p$a;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Lj3/y2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lj3/y2<",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Lj3/pv;
+.field public final g:Ljava/lang/ref/WeakReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/ref/WeakReference<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+.field public final h:Ljava/lang/String;
+
+.field public final i:Lj3/y2;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/y2<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+.field public final synthetic j:Lj3/qy;
 
 
 # direct methods
-.method public constructor <init>(Lj3/pv;)V
+.method public constructor <init>(Lj3/qy;Ljava/lang/ref/WeakReference;Ljava/lang/String;Lj3/y2;Lj3/cj;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/google/android/gms/ads/p$a;-><init>()V
+    iput-object p1, p0, Lj3/vy;->j:Lj3/qy;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj3/vy;->a:Lj3/pv;
+    iput-object p2, p0, Lj3/vy;->g:Ljava/lang/ref/WeakReference;
+
+    .line 3
+    iput-object p3, p0, Lj3/vy;->h:Ljava/lang/String;
+
+    .line 4
+    iput-object p4, p0, Lj3/vy;->i:Lj3/y2;
 
     return-void
-.end method
-
-.method public static d(Lj3/pv;)Lcom/google/android/gms/internal/ads/zzyl;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lj3/pv;->h()Lcom/google/android/gms/internal/ads/zzyg;
-
-    move-result-object p0
-
-    const/4 v0, 0x0
-
-    if-nez p0, :cond_0
-
-    return-object v0
-
-    .line 2
-    :cond_0
-    :try_start_0
-    invoke-interface {p0}, Lcom/google/android/gms/internal/ads/zzyg;->C5()Lcom/google/android/gms/internal/ads/zzyl;
-
-    move-result-object p0
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object p0
-
-    :catch_0
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()V
+.method public final b(Ljava/lang/Object;Ljava/util/Map;)V
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
-    iget-object v0, p0, Lj3/vy;->a:Lj3/pv;
+    iget-object p1, p0, Lj3/vy;->g:Ljava/lang/ref/WeakReference;
 
-    invoke-static {v0}, Lj3/vy;->d(Lj3/pv;)Lcom/google/android/gms/internal/ads/zzyl;
+    invoke-virtual {p1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object p1
 
-    if-nez v0, :cond_0
-
-    return-void
+    if-nez p1, :cond_0
 
     .line 2
+    iget-object p1, p0, Lj3/vy;->j:Lj3/qy;
+
+    iget-object p2, p0, Lj3/vy;->h:Ljava/lang/String;
+
+    invoke-virtual {p1, p2, p0}, Lj3/qy;->d(Ljava/lang/String;Lj3/y2;)V
+
+    return-void
+
+    .line 3
     :cond_0
-    :try_start_0
-    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzyl;->y0()V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    iget-object v0, p0, Lj3/vy;->i:Lj3/y2;
 
-    :catch_0
-    return-void
-.end method
+    invoke-interface {v0, p1, p2}, Lj3/y2;->b(Ljava/lang/Object;Ljava/util/Map;)V
 
-.method public final b()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lj3/vy;->a:Lj3/pv;
-
-    invoke-static {v0}, Lj3/vy;->d(Lj3/pv;)Lcom/google/android/gms/internal/ads/zzyl;
-
-    move-result-object v0
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    :try_start_0
-    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzyl;->b0()V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    return-void
-.end method
-
-.method public final c()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lj3/vy;->a:Lj3/pv;
-
-    invoke-static {v0}, Lj3/vy;->d(Lj3/pv;)Lcom/google/android/gms/internal/ads/zzyl;
-
-    move-result-object v0
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    :try_start_0
-    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzyl;->g5()V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
     return-void
 .end method

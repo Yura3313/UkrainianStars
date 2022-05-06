@@ -25,7 +25,7 @@
 
     move-result-object p1
 
-    sget-object v0, Lde/g;->a:Lde/g;
+    sget-object v0, Lde/g;->g:Lde/g;
 
     if-ne p1, v0, :cond_0
 
@@ -65,7 +65,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lde/g;->a:Lde/g;
+    sget-object v0, Lde/g;->g:Lde/g;
 
     return-object v0
 .end method

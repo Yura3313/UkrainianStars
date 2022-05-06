@@ -1,206 +1,358 @@
-.class public Lbe/a;
+.class public abstract Lbe/a;
 .super Ljava/lang/Object;
-.source "Exceptions.kt"
+.source "AbstractCollection.kt"
+
+# interfaces
+.implements Ljava/util/Collection;
+.implements Lme/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<E:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/util/Collection<",
+        "TE;>;",
+        "Lme/a;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static final a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
-    .locals 1
+.method public constructor <init>()V
+    .locals 0
 
     .line 1
-    sget-object v0, Lge/b;->a:Lge/a;
-
-    invoke-virtual {v0, p0, p1}, Lge/a;->a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static final b(JJ)J
-    .locals 1
 
-    cmp-long v0, p0, p2
-
-    if-lez v0, :cond_0
-
-    move-wide p0, p2
-
-    :cond_0
-    return-wide p0
+# virtual methods
+.method public abstract a()I
 .end method
 
-.method public static final c(III)I
+.method public add(Ljava/lang/Object;)Z
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TE;)Z"
+        }
+    .end annotation
+
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    const-string v0, "Operation is not supported for read-only collection"
+
+    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public addAll(Ljava/util/Collection;)Z
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Collection<",
+            "+TE;>;)Z"
+        }
+    .end annotation
+
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    const-string v0, "Operation is not supported for read-only collection"
+
+    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public clear()V
     .locals 2
 
-    if-gt p1, p2, :cond_2
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    if-ge p0, p1, :cond_0
+    const-string v1, "Operation is not supported for read-only collection"
 
-    return p1
+    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
-    :cond_0
-    if-le p0, p2, :cond_1
-
-    return p2
-
-    :cond_1
-    return p0
-
-    .line 1
-    :cond_2
-    new-instance p0, Ljava/lang/IllegalArgumentException;
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "Cannot coerce value to an empty range: maximum "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string p2, " is less than minimum "
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const/16 p1, 0x2e
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p0
+    throw v0
 .end method
 
-.method public static final d(Ljava/lang/Object;)Ljava/lang/Object;
+.method public contains(Ljava/lang/Object;)Z
     .locals 3
 
     .line 1
-    instance-of v0, p0, Lbe/h$a;
+    invoke-interface {p0}, Ljava/util/Collection;->isEmpty()Z
 
-    xor-int/lit8 v0, v0, 0x1
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-static {p0}, Lbe/e;->g(Ljava/lang/Object;)V
-
-    goto :goto_0
-
-    :cond_0
-    new-instance v0, Lse/q;
-
-    invoke-static {p0}, Lbe/h;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_1
+    move-result v0
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x2
+    if-eqz v0, :cond_0
 
-    invoke-direct {v0, p0, v1, v2}, Lse/q;-><init>(Ljava/lang/Throwable;ZI)V
-
-    move-object p0, v0
-
-    :goto_0
-    return-object p0
-
-    :cond_1
-    invoke-static {}, Ly4/x;->j()V
-
-    const/4 p0, 0x0
-
-    throw p0
-.end method
-
-.method public static final e(II)Loe/c;
-    .locals 1
-
-    const/high16 v0, -0x80000000
-
-    if-gt p1, v0, :cond_0
-
-    .line 1
-    sget-object p0, Loe/c;->j:Loe/c;
+    goto :goto_0
 
     .line 2
-    sget-object p0, Loe/c;->i:Loe/c;
+    :cond_0
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    return-object p0
+    move-result-object v0
+
+    :cond_1
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
 
     .line 3
-    :cond_0
-    new-instance v0, Loe/c;
+    invoke-static {v2, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    add-int/lit8 p1, p1, -0x1
+    move-result v2
 
-    invoke-direct {v0, p0, p1}, Loe/c;-><init>(II)V
+    if-eqz v2, :cond_1
 
-    return-object v0
+    const/4 v1, 0x1
+
+    :cond_2
+    :goto_0
+    return v1
 .end method
 
-.method public static f(Ljava/lang/String;)Z
-    .locals 3
+.method public containsAll(Ljava/util/Collection;)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Collection<",
+            "+",
+            "Ljava/lang/Object;",
+            ">;)Z"
+        }
+    .end annotation
+
+    if-eqz p1, :cond_3
 
     .line 1
-    invoke-static {p0}, Lc2/n0;->c(Ljava/lang/CharSequence;)Z
+    invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v0
 
     const/4 v1, 0x1
 
-    const/4 v2, 0x0
+    if-eqz v0, :cond_0
 
-    if-nez v0, :cond_1
-
-    const-string v0, "^[\\p{L}\\p{N}-]+_platform_\\d{17}-[0-9a-z]{15}$"
+    goto :goto_0
 
     .line 2
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+    :cond_0
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :cond_1
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
     .line 3
-    invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+    invoke-virtual {p0, v0}, Lbe/a;->contains(Ljava/lang/Object;)Z
 
-    move-result-object v0
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const/4 v1, 0x0
+
+    :cond_2
+    :goto_0
+    return v1
+
+    :cond_3
+    const-string p1, "elements"
 
     .line 4
-    invoke-static {p0}, Lc2/n0;->c(Ljava/lang/CharSequence;)Z
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    move-result p0
+    const/4 p1, 0x0
 
-    if-nez p0, :cond_0
+    goto :goto_2
 
-    invoke-virtual {v0}, Ljava/util/regex/Matcher;->matches()Z
+    :goto_1
+    throw p1
 
-    move-result p0
+    :goto_2
+    goto :goto_1
+.end method
 
-    if-eqz p0, :cond_0
+.method public isEmpty()Z
+    .locals 1
 
-    const/4 p0, 0x1
+    .line 1
+    invoke-virtual {p0}, Lbe/a;->a()I
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
 
     goto :goto_0
 
     :cond_0
-    const/4 p0, 0x0
+    const/4 v0, 0x0
 
     :goto_0
-    if-eqz p0, :cond_1
+    return v0
+.end method
 
-    goto :goto_1
+.method public remove(Ljava/lang/Object;)Z
+    .locals 1
 
-    :cond_1
-    const/4 v1, 0x0
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    :goto_1
-    return v1
+    const-string v0, "Operation is not supported for read-only collection"
+
+    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public removeAll(Ljava/util/Collection;)Z
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Collection<",
+            "+",
+            "Ljava/lang/Object;",
+            ">;)Z"
+        }
+    .end annotation
+
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    const-string v0, "Operation is not supported for read-only collection"
+
+    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public retainAll(Ljava/util/Collection;)Z
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Collection<",
+            "+",
+            "Ljava/lang/Object;",
+            ">;)Z"
+        }
+    .end annotation
+
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    const-string v0, "Operation is not supported for read-only collection"
+
+    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public final bridge size()I
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lbe/a;->a()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public toArray()[Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-static {p0}, Lle/f;->a(Ljava/util/Collection;)[Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">([TT;)[TT;"
+        }
+    .end annotation
+
+    if-eqz p1, :cond_0
+
+    .line 2
+    invoke-static {p0, p1}, Lle/f;->b(Ljava/util/Collection;[Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+
+    :cond_0
+    const-string p1, "array"
+
+    .line 3
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 8
+
+    .line 1
+    new-instance v6, Lbe/a$a;
+
+    invoke-direct {v6, p0}, Lbe/a$a;-><init>(Lbe/a;)V
+
+    const-string v1, ", "
+
+    const-string v2, "["
+
+    const-string v3, "]"
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/16 v7, 0x18
+
+    move-object v0, p0
+
+    invoke-static/range {v0 .. v7}, Lbe/k;->K(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lke/l;I)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

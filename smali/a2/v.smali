@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic a:La2/f$a;
+.field public final synthetic g:La2/f$a;
 
 
 # direct methods
@@ -15,7 +15,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, La2/v;->a:La2/f$a;
+    iput-object p1, p0, La2/v;->g:La2/f$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,7 +28,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, La2/v;->a:La2/f$a;
+    iget-object v0, p0, La2/v;->g:La2/f$a;
 
     .line 2
     invoke-virtual {v0}, La2/f$a;->q()V

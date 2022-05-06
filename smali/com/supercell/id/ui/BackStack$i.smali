@@ -22,14 +22,14 @@
         "Lke/p<",
         "Lcom/supercell/id/ui/BackStack;",
         "Ljava/lang/Object;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/ui/BackStack$i;
+.field public static final g:Lcom/supercell/id/ui/BackStack$i;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/BackStack$i;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/BackStack$i;->a:Lcom/supercell/id/ui/BackStack$i;
+    sput-object v0, Lcom/supercell/id/ui/BackStack$i;->g:Lcom/supercell/id/ui/BackStack$i;
 
     return-void
 .end method
@@ -72,7 +72,7 @@
     invoke-interface {p1}, Lke/a;->invoke()Ljava/lang/Object;
 
     .line 4
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 
@@ -80,7 +80,7 @@
     const-string p1, "$receiver"
 
     .line 5
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

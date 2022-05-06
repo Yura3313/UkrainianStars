@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field public final a:Ljava/security/interfaces/RSAPublicKey;
+.field public final g:Ljava/security/interfaces/RSAPublicKey;
 
-.field public final b:Lp5/z;
+.field public final h:I
 
-.field public final c:Lp5/z;
+.field public final i:I
 
-.field public final d:I
+.field public final j:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/security/interfaces/RSAPublicKey;Lp5/z;Lp5/z;I)V
+.method public constructor <init>(Ljava/security/interfaces/RSAPublicKey;III)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -29,7 +29,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {p2}, Lp5/m0;->d(Lp5/z;)V
+    invoke-static {p2}, Lp5/m0;->d(I)V
 
     .line 3
     invoke-interface {p1}, Ljava/security/interfaces/RSAPublicKey;->getModulus()Ljava/math/BigInteger;
@@ -43,16 +43,16 @@
     invoke-static {v0}, Lp5/m0;->c(I)V
 
     .line 4
-    iput-object p1, p0, Lp5/k0;->a:Ljava/security/interfaces/RSAPublicKey;
+    iput-object p1, p0, Lp5/k0;->g:Ljava/security/interfaces/RSAPublicKey;
 
     .line 5
-    iput-object p2, p0, Lp5/k0;->b:Lp5/z;
+    iput p2, p0, Lp5/k0;->h:I
 
     .line 6
-    iput-object p3, p0, Lp5/k0;->c:Lp5/z;
+    iput p3, p0, Lp5/k0;->i:I
 
     .line 7
-    iput p4, p0, Lp5/k0;->d:I
+    iput p4, p0, Lp5/k0;->j:I
 
     return-void
 .end method
@@ -72,14 +72,14 @@
     move-object/from16 v1, p1
 
     .line 1
-    iget-object v2, v0, Lp5/k0;->a:Ljava/security/interfaces/RSAPublicKey;
+    iget-object v2, v0, Lp5/k0;->g:Ljava/security/interfaces/RSAPublicKey;
 
     invoke-interface {v2}, Ljava/security/interfaces/RSAPublicKey;->getPublicExponent()Ljava/math/BigInteger;
 
     move-result-object v2
 
     .line 2
-    iget-object v3, v0, Lp5/k0;->a:Ljava/security/interfaces/RSAPublicKey;
+    iget-object v3, v0, Lp5/k0;->g:Ljava/security/interfaces/RSAPublicKey;
 
     invoke-interface {v3}, Ljava/security/interfaces/RSAPublicKey;->getModulus()Ljava/math/BigInteger;
 
@@ -144,21 +144,21 @@
     sub-int/2addr v2, v7
 
     .line 11
-    iget-object v3, v0, Lp5/k0;->b:Lp5/z;
+    iget v3, v0, Lp5/k0;->h:I
 
-    invoke-static {v3}, Lp5/m0;->d(Lp5/z;)V
+    invoke-static {v3}, Lp5/m0;->d(I)V
 
     .line 12
-    sget-object v3, Lp5/x;->h:Lp5/x;
+    sget-object v3, Lp5/z;->h:Lp5/z;
 
-    iget-object v4, v0, Lp5/k0;->b:Lp5/z;
+    iget v4, v0, Lp5/k0;->h:I
 
     .line 13
-    invoke-static {v4}, Lp5/l0;->d(Lp5/z;)Ljava/lang/String;
+    invoke-static {v4}, Lp5/l0;->d(I)Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Lp5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v3, v4}, Lp5/z;->a(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -180,7 +180,7 @@
     array-length v8, v1
 
     .line 17
-    iget v9, v0, Lp5/k0;->d:I
+    iget v9, v0, Lp5/k0;->j:I
 
     add-int/2addr v9, v6
 
@@ -283,9 +283,9 @@
 
     .line 25
     :cond_1
-    iget-object v2, v0, Lp5/k0;->c:Lp5/z;
+    iget v2, v0, Lp5/k0;->i:I
 
-    invoke-static {v1, v11, v2}, Lp5/l0;->c([BILp5/z;)[B
+    invoke-static {v1, v11, v2}, Lp5/l0;->c([BII)[B
 
     move-result-object v2
 
@@ -356,7 +356,7 @@
 
     .line 31
     :goto_3
-    iget v7, v0, Lp5/k0;->d:I
+    iget v7, v0, Lp5/k0;->j:I
 
     sub-int v8, v9, v7
 
@@ -401,7 +401,7 @@
     add-int/lit8 v6, p1, 0x8
 
     .line 36
-    iget v7, v0, Lp5/k0;->d:I
+    iget v7, v0, Lp5/k0;->j:I
 
     add-int/2addr v7, v6
 
@@ -425,7 +425,7 @@
     move-result-object v2
 
     .line 40
-    invoke-static {v2, v1}, Lp5/i;->b([B[B)Z
+    invoke-static {v2, v1}, Lp5/j;->b([B[B)Z
 
     move-result v1
 

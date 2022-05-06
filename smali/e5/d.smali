@@ -26,7 +26,7 @@
 
     new-instance v2, Le5/d$a;
 
-    const-class v3, Lp5/c0;
+    const-class v3, Lp5/d0;
 
     invoke-direct {v2, v3}, Le5/d$a;-><init>(Ljava/lang/Class;)V
 
@@ -75,7 +75,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Ll5/v0$c;->SYMMETRIC:Ll5/v0$c;
+    sget-object v0, Ll5/v0$c;->i:Ll5/v0$c;
 
     return-object v0
 .end method
@@ -93,7 +93,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Ll5/i;->A(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/i;
+    invoke-static {p1, v0}, Ll5/i;->z(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/i;
 
     move-result-object p1
 
@@ -125,7 +125,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, Ll5/i;->y()I
+    invoke-virtual {p1}, Ll5/i;->x()I
 
     move-result v0
 
@@ -134,7 +134,7 @@
     invoke-static {v0, v1}, Lp5/m0;->e(II)V
 
     .line 2
-    invoke-virtual {p1}, Ll5/i;->w()Lm5/c;
+    invoke-virtual {p1}, Ll5/i;->v()Lm5/c;
 
     move-result-object v0
 
@@ -145,7 +145,7 @@
     invoke-static {v0}, Lp5/m0;->a(I)V
 
     .line 3
-    invoke-virtual {p1}, Ll5/i;->x()Ll5/k;
+    invoke-virtual {p1}, Ll5/i;->w()Ll5/k;
 
     move-result-object p1
 
@@ -163,7 +163,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, Ll5/k;->t()I
+    invoke-virtual {p1}, Ll5/k;->s()I
 
     move-result v0
 
@@ -171,7 +171,7 @@
 
     if-lt v0, v1, :cond_0
 
-    invoke-virtual {p1}, Ll5/k;->t()I
+    invoke-virtual {p1}, Ll5/k;->s()I
 
     move-result p1
 

@@ -1,20 +1,10 @@
 .class public final Lse/r1;
-.super Ljava/lang/Object;
-.source "EventLoop.common.kt"
+.super Lse/w;
+.source "Unconfined.kt"
 
 
 # static fields
-.field public static final a:Ljava/lang/ThreadLocal;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/ThreadLocal<",
-            "Lse/r0;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final b:Lse/r1;
+.field public static final g:Lse/r1;
 
 
 # direct methods
@@ -22,48 +12,82 @@
     .locals 1
 
     .line 1
-    new-instance v0, Ljava/lang/ThreadLocal;
+    new-instance v0, Lse/r1;
 
-    invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
+    invoke-direct {v0}, Lse/r1;-><init>()V
 
-    sput-object v0, Lse/r1;->a:Ljava/lang/ThreadLocal;
+    sput-object v0, Lse/r1;->g:Lse/r1;
 
     return-void
 .end method
 
-.method public static final a()Lse/r0;
-    .locals 4
+.method public constructor <init>()V
+    .locals 0
 
     .line 1
-    sget-object v0, Lse/r1;->a:Ljava/lang/ThreadLocal;
+    invoke-direct {p0}, Lse/w;-><init>()V
 
-    invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
+    return-void
+.end method
 
-    move-result-object v1
 
-    check-cast v1, Lse/r0;
+# virtual methods
+.method public dispatch(Lde/f;Ljava/lang/Runnable;)V
+    .locals 1
 
-    if-eqz v1, :cond_0
+    const/4 v0, 0x0
 
-    goto :goto_0
+    if-eqz p1, :cond_1
+
+    if-eqz p2, :cond_0
+
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p1
+
+    :cond_0
+    const-string p1, "block"
 
     .line 2
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_1
+    const-string p1, "context"
+
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public isDispatchNeeded(Lde/f;)Z
+    .locals 0
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x0
+
+    return p1
+
     :cond_0
-    new-instance v1, Lse/c;
+    const-string p1, "context"
 
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+    .line 1
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    move-result-object v2
+    const/4 p1, 0x0
 
-    const-string v3, "Thread.currentThread()"
+    throw p1
+.end method
 
-    invoke-static {v2, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+.method public toString()Ljava/lang/String;
+    .locals 1
 
-    invoke-direct {v1, v2}, Lse/c;-><init>(Ljava/lang/Thread;)V
+    const-string v0, "Unconfined"
 
-    .line 3
-    invoke-virtual {v0, v1}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
-
-    :goto_0
-    return-object v1
+    return-object v0
 .end method

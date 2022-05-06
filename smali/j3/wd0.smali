@@ -1,74 +1,57 @@
-.class public final Lj3/wd0;
+.class public final synthetic Lj3/wd0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/wc0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lj3/wc0<",
-        "Lj3/ud0;",
-        ">;"
-    }
-.end annotation
+.implements Ljava/util/concurrent/Callable;
 
 
 # instance fields
-.field public a:Lj3/p31;
-
-.field public b:Lj3/am0;
-
-.field public c:Landroid/content/Context;
+.field public final a:Lj3/xd0;
 
 
 # direct methods
-.method public constructor <init>(Lj3/p31;Lj3/am0;Landroid/content/Context;)V
+.method public constructor <init>(Lj3/xd0;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Lj3/wd0;->a:Lj3/p31;
-
-    .line 3
-    iput-object p2, p0, Lj3/wd0;->b:Lj3/am0;
-
-    .line 4
-    iput-object p3, p0, Lj3/wd0;->c:Landroid/content/Context;
+    iput-object p1, p0, Lj3/wd0;->a:Lj3/xd0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lj3/yl0;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lj3/yl0<",
-            "Lj3/ud0;",
-            ">;"
-        }
-    .end annotation
+.method public final call()Ljava/lang/Object;
+    .locals 4
+
+    iget-object v0, p0, Lj3/wd0;->a:Lj3/xd0;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 1
-    iget-object v0, p0, Lj3/wd0;->b:Lj3/am0;
+    new-instance v1, Lorg/json/JSONObject;
 
-    new-instance v1, Lj3/db0;
+    invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
 
-    const/4 v2, 0x1
+    .line 2
+    iget-object v2, v0, Lj3/xd0;->a:Lj3/k8;
 
-    invoke-direct {v1, p0, v2}, Lj3/db0;-><init>(Ljava/lang/Object;I)V
+    if-eqz v2, :cond_0
 
-    invoke-interface {v0, v1}, Lj3/am0;->a(Ljava/util/concurrent/Callable;)Lj3/yl0;
+    .line 3
+    iget-object v3, v0, Lj3/xd0;->b:Landroid/content/Context;
 
-    move-result-object v0
+    iget-object v0, v0, Lj3/xd0;->c:Ljava/lang/String;
+
+    invoke-interface {v2, v3, v0, v1}, Lj3/k8;->a(Landroid/content/Context;Ljava/lang/String;Lorg/json/JSONObject;)V
+
+    .line 4
+    :cond_0
+    new-instance v0, Lj3/ud0;
+
+    invoke-direct {v0, v1}, Lj3/ud0;-><init>(Lorg/json/JSONObject;)V
 
     return-object v0
 .end method

@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field public final a:Landroid/app/Activity;
+.field public final g:Landroid/app/Activity;
 
-.field public final b:Landroid/content/Context;
+.field public final h:Landroid/content/Context;
 
-.field public final h:Landroid/os/Handler;
+.field public final i:Landroid/os/Handler;
 
-.field public final i:Landroidx/fragment/app/FragmentManager;
+.field public final j:Landroidx/fragment/app/FragmentManager;
 
 
 # direct methods
@@ -41,20 +41,20 @@
 
     invoke-direct {v1}, Landroidx/fragment/app/z;-><init>()V
 
-    iput-object v1, p0, Landroidx/fragment/app/w;->i:Landroidx/fragment/app/FragmentManager;
+    iput-object v1, p0, Landroidx/fragment/app/w;->j:Landroidx/fragment/app/FragmentManager;
 
     .line 4
-    iput-object p1, p0, Landroidx/fragment/app/w;->a:Landroid/app/Activity;
+    iput-object p1, p0, Landroidx/fragment/app/w;->g:Landroid/app/Activity;
 
     const-string v1, "context == null"
 
     .line 5
-    invoke-static {p1, v1}, Le0/f;->c(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v1}, Lb5/m;->g(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iput-object p1, p0, Landroidx/fragment/app/w;->b:Landroid/content/Context;
+    iput-object p1, p0, Landroidx/fragment/app/w;->h:Landroid/content/Context;
 
     .line 6
-    iput-object v0, p0, Landroidx/fragment/app/w;->h:Landroid/os/Handler;
+    iput-object v0, p0, Landroidx/fragment/app/w;->i:Landroid/os/Handler;
 
     return-void
 .end method

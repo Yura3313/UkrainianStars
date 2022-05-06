@@ -24,6 +24,8 @@
 
 .field private enableSystemEventBreadcrumbs:Z
 
+.field private enableUserInteractionBreadcrumbs:Z
+
 
 # direct methods
 .method public constructor <init>()V
@@ -60,31 +62,34 @@
     iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAppComponentBreadcrumbs:Z
 
     .line 9
-    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAutoActivityLifecycleTracing:Z
+    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableUserInteractionBreadcrumbs:Z
 
     .line 10
-    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableActivityLifecycleTracingAutoFinish:Z
+    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAutoActivityLifecycleTracing:Z
 
     .line 11
+    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableActivityLifecycleTracingAutoFinish:Z
+
+    .line 12
     invoke-static {}, Lio/sentry/android/core/NoOpDebugImagesLoader;->getInstance()Lio/sentry/android/core/NoOpDebugImagesLoader;
 
     move-result-object v0
 
     iput-object v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->debugImagesLoader:Lio/sentry/android/core/IDebugImagesLoader;
 
-    const-string v0, "sentry.java.android/5.1.2"
-
-    .line 12
-    invoke-virtual {p0, v0}, Lio/sentry/SentryOptions;->setSentryClientName(Ljava/lang/String;)V
+    const-string v0, "sentry.java.android/5.7.1"
 
     .line 13
+    invoke-virtual {p0, v0}, Lio/sentry/SentryOptions;->setSentryClientName(Ljava/lang/String;)V
+
+    .line 14
     invoke-direct {p0}, Lio/sentry/android/core/SentryAndroidOptions;->createSdkVersion()Lio/sentry/protocol/SdkVersion;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lio/sentry/SentryOptions;->setSdkVersion(Lio/sentry/protocol/SdkVersion;)V
 
-    .line 14
+    .line 15
     invoke-virtual {p0, v1}, Lio/sentry/SentryOptions;->setAttachServerName(Z)V
 
     return-void
@@ -100,7 +105,7 @@
 
     const-string v1, "sentry.java.android"
 
-    const-string v2, "5.1.2"
+    const-string v2, "5.7.1"
 
     .line 2
     invoke-static {v0, v1, v2}, Lio/sentry/protocol/SdkVersion;->updateSdkVersion(Lio/sentry/protocol/SdkVersion;Ljava/lang/String;Ljava/lang/String;)Lio/sentry/protocol/SdkVersion;
@@ -131,6 +136,9 @@
 
     .line 4
     iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAppLifecycleBreadcrumbs:Z
+
+    .line 5
+    iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableUserInteractionBreadcrumbs:Z
 
     return-void
 .end method
@@ -221,6 +229,15 @@
 
     .line 1
     iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableSystemEventBreadcrumbs:Z
+
+    return v0
+.end method
+
+.method public isEnableUserInteractionBreadcrumbs()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableUserInteractionBreadcrumbs:Z
 
     return v0
 .end method
@@ -321,6 +338,15 @@
 
     .line 1
     iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableSystemEventBreadcrumbs:Z
+
+    return-void
+.end method
+
+.method public setEnableUserInteractionBreadcrumbs(Z)V
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableUserInteractionBreadcrumbs:Z
 
     return-void
 .end method

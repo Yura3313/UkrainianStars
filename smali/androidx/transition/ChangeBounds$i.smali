@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/transition/ChangeBounds;->k(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
+    value = Landroidx/transition/ChangeBounds;->l(Landroid/view/ViewGroup;Lv0/s;Lv0/s;)Landroid/animation/Animator;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public a:Z
+.field public g:Z
 
-.field public final synthetic b:Landroid/view/ViewGroup;
+.field public final synthetic h:Landroid/view/ViewGroup;
 
 
 # direct methods
@@ -25,14 +25,14 @@
     .locals 0
 
     .line 1
-    iput-object p2, p0, Landroidx/transition/ChangeBounds$i;->b:Landroid/view/ViewGroup;
+    iput-object p2, p0, Landroidx/transition/ChangeBounds$i;->h:Landroid/view/ViewGroup;
 
     invoke-direct {p0}, Landroidx/transition/d;-><init>()V
 
     const/4 p1, 0x0
 
     .line 2
-    iput-boolean p1, p0, Landroidx/transition/ChangeBounds$i;->a:Z
+    iput-boolean p1, p0, Landroidx/transition/ChangeBounds$i;->g:Z
 
     return-void
 .end method
@@ -43,7 +43,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Landroidx/transition/ChangeBounds$i;->b:Landroid/view/ViewGroup;
+    iget-object p1, p0, Landroidx/transition/ChangeBounds$i;->h:Landroid/view/ViewGroup;
 
     const/4 v0, 0x0
 
@@ -56,12 +56,12 @@
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Landroidx/transition/ChangeBounds$i;->a:Z
+    iget-boolean v0, p0, Landroidx/transition/ChangeBounds$i;->g:Z
 
     if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Landroidx/transition/ChangeBounds$i;->b:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroidx/transition/ChangeBounds$i;->h:Landroid/view/ViewGroup;
 
     const/4 v1, 0x0
 
@@ -69,7 +69,7 @@
 
     .line 3
     :cond_0
-    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->w(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
+    invoke-virtual {p1, p0}, Landroidx/transition/Transition;->x(Landroidx/transition/Transition$d;)Landroidx/transition/Transition;
 
     return-void
 .end method
@@ -78,7 +78,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Landroidx/transition/ChangeBounds$i;->b:Landroid/view/ViewGroup;
+    iget-object p1, p0, Landroidx/transition/ChangeBounds$i;->h:Landroid/view/ViewGroup;
 
     const/4 v0, 0x0
 
@@ -87,7 +87,7 @@
     const/4 p1, 0x1
 
     .line 2
-    iput-boolean p1, p0, Landroidx/transition/ChangeBounds$i;->a:Z
+    iput-boolean p1, p0, Landroidx/transition/ChangeBounds$i;->g:Z
 
     return-void
 .end method
@@ -96,7 +96,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Landroidx/transition/ChangeBounds$i;->b:Landroid/view/ViewGroup;
+    iget-object p1, p0, Landroidx/transition/ChangeBounds$i;->h:Landroid/view/ViewGroup;
 
     const/4 v0, 0x1
 

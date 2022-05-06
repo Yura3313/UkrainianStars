@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/transition/Transition;
+.field public final synthetic g:Landroidx/transition/Transition;
 
 
 # direct methods
@@ -12,7 +12,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lv0/r;->a:Landroidx/transition/Transition;
+    iput-object p1, p0, Lv0/r;->g:Landroidx/transition/Transition;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -25,9 +25,9 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lv0/r;->a:Landroidx/transition/Transition;
+    iget-object v0, p0, Lv0/r;->g:Landroidx/transition/Transition;
 
-    invoke-virtual {v0}, Landroidx/transition/Transition;->m()V
+    invoke-virtual {v0}, Landroidx/transition/Transition;->n()V
 
     .line 2
     invoke-virtual {p1, p0}, Landroid/animation/Animator;->removeListener(Landroid/animation/Animator$AnimatorListener;)V

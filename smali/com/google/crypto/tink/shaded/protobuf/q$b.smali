@@ -13,11 +13,7 @@
     name = "b"
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T::",
-        "Lcom/google/crypto/tink/shaded/protobuf/q$a;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
+
+# virtual methods
+.method public abstract a(I)Z
+.end method

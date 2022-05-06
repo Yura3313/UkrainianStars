@@ -23,21 +23,21 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lcom/google/protobuf/GeneratedMessageLite$f;
+.field public static final enum g:Lcom/google/protobuf/GeneratedMessageLite$f;
 
-.field public static final enum BUILD_MESSAGE_INFO:Lcom/google/protobuf/GeneratedMessageLite$f;
+.field public static final enum h:Lcom/google/protobuf/GeneratedMessageLite$f;
 
-.field public static final enum GET_DEFAULT_INSTANCE:Lcom/google/protobuf/GeneratedMessageLite$f;
+.field public static final enum i:Lcom/google/protobuf/GeneratedMessageLite$f;
 
-.field public static final enum GET_MEMOIZED_IS_INITIALIZED:Lcom/google/protobuf/GeneratedMessageLite$f;
+.field public static final enum j:Lcom/google/protobuf/GeneratedMessageLite$f;
 
-.field public static final enum GET_PARSER:Lcom/google/protobuf/GeneratedMessageLite$f;
+.field public static final enum k:Lcom/google/protobuf/GeneratedMessageLite$f;
 
-.field public static final enum NEW_BUILDER:Lcom/google/protobuf/GeneratedMessageLite$f;
+.field public static final enum l:Lcom/google/protobuf/GeneratedMessageLite$f;
 
-.field public static final enum NEW_MUTABLE_INSTANCE:Lcom/google/protobuf/GeneratedMessageLite$f;
+.field public static final enum m:Lcom/google/protobuf/GeneratedMessageLite$f;
 
-.field public static final enum SET_MEMOIZED_IS_INITIALIZED:Lcom/google/protobuf/GeneratedMessageLite$f;
+.field public static final synthetic n:[Lcom/google/protobuf/GeneratedMessageLite$f;
 
 
 # direct methods
@@ -53,7 +53,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessageLite$f;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/google/protobuf/GeneratedMessageLite$f;->GET_MEMOIZED_IS_INITIALIZED:Lcom/google/protobuf/GeneratedMessageLite$f;
+    sput-object v0, Lcom/google/protobuf/GeneratedMessageLite$f;->g:Lcom/google/protobuf/GeneratedMessageLite$f;
 
     .line 2
     new-instance v1, Lcom/google/protobuf/GeneratedMessageLite$f;
@@ -64,7 +64,7 @@
 
     invoke-direct {v1, v3, v4}, Lcom/google/protobuf/GeneratedMessageLite$f;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/google/protobuf/GeneratedMessageLite$f;->SET_MEMOIZED_IS_INITIALIZED:Lcom/google/protobuf/GeneratedMessageLite$f;
+    sput-object v1, Lcom/google/protobuf/GeneratedMessageLite$f;->h:Lcom/google/protobuf/GeneratedMessageLite$f;
 
     .line 3
     new-instance v3, Lcom/google/protobuf/GeneratedMessageLite$f;
@@ -75,7 +75,7 @@
 
     invoke-direct {v3, v5, v6}, Lcom/google/protobuf/GeneratedMessageLite$f;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Lcom/google/protobuf/GeneratedMessageLite$f;->BUILD_MESSAGE_INFO:Lcom/google/protobuf/GeneratedMessageLite$f;
+    sput-object v3, Lcom/google/protobuf/GeneratedMessageLite$f;->i:Lcom/google/protobuf/GeneratedMessageLite$f;
 
     .line 4
     new-instance v5, Lcom/google/protobuf/GeneratedMessageLite$f;
@@ -86,7 +86,7 @@
 
     invoke-direct {v5, v7, v8}, Lcom/google/protobuf/GeneratedMessageLite$f;-><init>(Ljava/lang/String;I)V
 
-    sput-object v5, Lcom/google/protobuf/GeneratedMessageLite$f;->NEW_MUTABLE_INSTANCE:Lcom/google/protobuf/GeneratedMessageLite$f;
+    sput-object v5, Lcom/google/protobuf/GeneratedMessageLite$f;->j:Lcom/google/protobuf/GeneratedMessageLite$f;
 
     .line 5
     new-instance v7, Lcom/google/protobuf/GeneratedMessageLite$f;
@@ -97,7 +97,7 @@
 
     invoke-direct {v7, v9, v10}, Lcom/google/protobuf/GeneratedMessageLite$f;-><init>(Ljava/lang/String;I)V
 
-    sput-object v7, Lcom/google/protobuf/GeneratedMessageLite$f;->NEW_BUILDER:Lcom/google/protobuf/GeneratedMessageLite$f;
+    sput-object v7, Lcom/google/protobuf/GeneratedMessageLite$f;->k:Lcom/google/protobuf/GeneratedMessageLite$f;
 
     .line 6
     new-instance v9, Lcom/google/protobuf/GeneratedMessageLite$f;
@@ -108,7 +108,7 @@
 
     invoke-direct {v9, v11, v12}, Lcom/google/protobuf/GeneratedMessageLite$f;-><init>(Ljava/lang/String;I)V
 
-    sput-object v9, Lcom/google/protobuf/GeneratedMessageLite$f;->GET_DEFAULT_INSTANCE:Lcom/google/protobuf/GeneratedMessageLite$f;
+    sput-object v9, Lcom/google/protobuf/GeneratedMessageLite$f;->l:Lcom/google/protobuf/GeneratedMessageLite$f;
 
     .line 7
     new-instance v11, Lcom/google/protobuf/GeneratedMessageLite$f;
@@ -119,7 +119,7 @@
 
     invoke-direct {v11, v13, v14}, Lcom/google/protobuf/GeneratedMessageLite$f;-><init>(Ljava/lang/String;I)V
 
-    sput-object v11, Lcom/google/protobuf/GeneratedMessageLite$f;->GET_PARSER:Lcom/google/protobuf/GeneratedMessageLite$f;
+    sput-object v11, Lcom/google/protobuf/GeneratedMessageLite$f;->m:Lcom/google/protobuf/GeneratedMessageLite$f;
 
     const/4 v13, 0x7
 
@@ -140,12 +140,12 @@
     aput-object v11, v13, v14
 
     .line 8
-    sput-object v13, Lcom/google/protobuf/GeneratedMessageLite$f;->$VALUES:[Lcom/google/protobuf/GeneratedMessageLite$f;
+    sput-object v13, Lcom/google/protobuf/GeneratedMessageLite$f;->n:[Lcom/google/protobuf/GeneratedMessageLite$f;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;I)V
+.method public constructor <init>(Ljava/lang/String;I)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -178,7 +178,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$f;->$VALUES:[Lcom/google/protobuf/GeneratedMessageLite$f;
+    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$f;->n:[Lcom/google/protobuf/GeneratedMessageLite$f;
 
     invoke-virtual {v0}, [Lcom/google/protobuf/GeneratedMessageLite$f;->clone()Ljava/lang/Object;
 

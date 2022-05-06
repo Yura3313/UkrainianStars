@@ -1,189 +1,501 @@
 .class public final Lud/i;
-.super Lle/j;
-.source "YoungPlayerLoginEnterPinPageFragment.kt"
+.super Lud/k;
+.source "YoungPlayerRegisterEnterPinPageFragment.kt"
 
 # interfaces
-.implements Lke/l;
+.implements Lrc/u;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/l<",
-        "Ltc/j;",
-        "Lbe/n;",
-        ">;"
-    }
-.end annotation
+# static fields
+.field public static final synthetic e0:I
 
 
 # instance fields
-.field public final synthetic a:Ljava/lang/ref/WeakReference;
-
-.field public final synthetic b:Ljava/lang/String;
+.field public d0:Ljava/util/HashMap;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/ref/WeakReference;Ljava/lang/String;)V
+.method public constructor <init>()V
     .locals 0
 
-    iput-object p1, p0, Lud/i;->a:Ljava/lang/ref/WeakReference;
-
-    iput-object p2, p0, Lud/i;->b:Ljava/lang/String;
-
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    .line 1
+    invoke-direct {p0}, Lud/k;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+.method public W0()V
+    .locals 1
+
+    iget-object v0, p0, Lud/i;->d0:Ljava/util/HashMap;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public Z0()V
+    .locals 1
 
     .line 1
-    check-cast p1, Ltc/j;
+    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    const/4 v0, 0x0
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
-    if-eqz p1, :cond_7
+    move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lud/i;->a:Ljava/lang/ref/WeakReference;
+    iget-object v0, v0, Lvd/r;->m:Lcom/supercell/titan/h;
 
-    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    return-void
+.end method
+
+.method public c(Lrc/e;)V
+    .locals 2
+
+    if-eqz p1, :cond_0
+
+    .line 1
+    sget p1, Lcom/supercell/id/R$id;->okButton:I
+
+    invoke-virtual {p0, p1}, Lud/i;->f1(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
+
+    const-string v0, "okButton"
+
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p1, v0}, Landroid/widget/Button;->setEnabled(Z)V
+
+    .line 2
+    sget p1, Lcom/supercell/id/R$id;->cancelButton:I
+
+    invoke-virtual {p0, p1}, Lud/i;->f1(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
+
+    const-string v1, "cancelButton"
+
+    invoke-static {p1, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1, v0}, Landroid/widget/Button;->setEnabled(Z)V
+
+    return-void
+
+    :cond_0
+    const-string p1, "dialog"
+
+    .line 3
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public c1()V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Lud/i;->g1()V
+
+    .line 2
+    sget v0, Lcom/supercell/id/R$id;->pinEditText:I
+
+    invoke-virtual {p0, v0}, Lud/i;->f1(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/supercell/id/view/PinEntryView;
+
+    if-eqz v0, :cond_0
+
+    const-string v1, ""
+
+    invoke-virtual {v0, v1}, Lcom/supercell/id/view/PinEntryView;->setPin(Ljava/lang/String;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public f1(I)Landroid/view/View;
+    .locals 2
+
+    iget-object v0, p0, Lud/i;->d0:Ljava/util/HashMap;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Lud/i;->d0:Ljava/util/HashMap;
+
+    :cond_0
+    iget-object v0, p0, Lud/i;->d0:Ljava/util/HashMap;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
 
-    check-cast v1, Lud/k;
+    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    if-eqz v1, :cond_6
+    move-result-object v0
 
-    .line 3
-    iget-object v2, p0, Lud/i;->b:Ljava/lang/String;
+    check-cast v0, Landroid/view/View;
 
-    if-eqz v2, :cond_5
+    if-nez v0, :cond_2
 
-    .line 4
-    invoke-virtual {v1}, Lud/l;->g1()Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;
+    .line 1
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
-    move-result-object v3
+    if-nez v0, :cond_1
 
-    if-eqz v3, :cond_0
-
-    .line 5
-    iput-object v2, v3, Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;->l0:Ljava/lang/String;
-
-    .line 6
-    :cond_0
-    iget-boolean v2, p1, Ltc/j;->a:Z
-
-    .line 7
-    invoke-virtual {v1}, Lud/l;->g1()Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_1
-
-    .line 8
-    iput-boolean v2, v3, Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;->m0:Z
-
-    .line 9
-    :cond_1
-    iget-object p1, p1, Ltc/j;->b:Lcom/supercell/id/model/IdConnectedSystem;
-
-    .line 10
-    invoke-virtual {v1}, Lud/l;->g1()Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_2
-
-    .line 11
-    iput-object p1, v2, Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;->n0:Lcom/supercell/id/model/IdConnectedSystem;
-
-    .line 12
-    :cond_2
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->clearPendingLogin$supercellId_release()V
-
-    .line 13
-    invoke-virtual {v1}, Lud/l;->d1()Z
-
-    move-result v2
-
-    if-nez v2, :cond_4
-
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
-
-    move-result-object p1
-
-    .line 14
-    iget-object p1, p1, Lwd/r;->j:Lcom/supercell/id/IdConfiguration;
-
-    .line 15
-    invoke-virtual {p1}, Lcom/supercell/id/IdConfiguration;->getHasGameAccountToken()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_3
-
-    goto :goto_0
-
-    .line 16
-    :cond_3
-    invoke-static {v1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_6
-
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
-
-    const-string v1, "binding_not_found"
-
-    .line 17
-    invoke-virtual {p1, v1, v0}, Lcom/supercell/id/ui/MainActivity;->F(Ljava/lang/String;Lke/l;)V
-
-    goto :goto_1
-
-    .line 18
-    :cond_4
-    :goto_0
-    invoke-virtual {v1}, Lud/l;->g1()Lcom/supercell/id/ui/youngplayer/login/YoungPlayerLoginFlowFragment;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_6
-
-    invoke-virtual {p1}, Lcom/supercell/id/ui/FlowFragment;->s1()V
-
-    goto :goto_1
-
-    :cond_5
-    const-string p1, "value"
-
-    .line 19
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 20
-    :cond_6
-    :goto_1
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    const/4 p1, 0x0
 
     return-object p1
 
-    :cond_7
-    const-string p1, "response"
+    .line 2
+    :cond_1
+    invoke-virtual {v0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    .line 21
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    move-result-object v0
 
-    throw v0
+    iget-object v1, p0, Lud/i;->d0:Ljava/util/HashMap;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_2
+    return-object v0
+.end method
+
+.method public g0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    .locals 1
+
+    if-eqz p1, :cond_0
+
+    .line 1
+    sget p3, Lcom/supercell/id/R$layout;->fragment_young_player_register_enter_pin_page:I
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p1
+
+    return-object p1
+
+    :cond_0
+    const-string p1, "inflater"
+
+    .line 2
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final g1()V
+    .locals 9
+
+    .line 1
+    invoke-virtual {p0}, Lud/k;->d1()Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    sget v1, Lcom/supercell/id/R$id;->subtitleTextView:I
+
+    invoke-virtual {p0, v1}, Lud/i;->f1(I)Landroid/view/View;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/widget/TextView;
+
+    if-eqz v1, :cond_0
+
+    const/4 v2, 0x1
+
+    new-array v2, v2, [Lae/d;
+
+    const/4 v3, 0x0
+
+    .line 3
+    new-instance v4, Landroid/text/SpannableStringBuilder;
+
+    invoke-direct {v4}, Landroid/text/SpannableStringBuilder;-><init>()V
+
+    .line 4
+    sget-object v5, Lvd/l;->b:Lvd/l;
+
+    invoke-static {v0}, Lvd/l;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 5
+    new-instance v5, Landroid/text/style/ForegroundColorSpan;
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->M()Landroid/content/res/Resources;
+
+    move-result-object v6
+
+    sget v7, Lcom/supercell/id/R$color;->text_green:I
+
+    const/4 v8, 0x0
+
+    invoke-static {v6, v7, v8}, Lw/e;->a(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)I
+
+    move-result v6
+
+    invoke-direct {v5, v6}, Landroid/text/style/ForegroundColorSpan;-><init>(I)V
+
+    const/16 v6, 0x21
+
+    .line 6
+    invoke-static {v4, v0, v5, v6}, Landroidx/lifecycle/e0;->b(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;Ljava/lang/Object;I)Landroid/text/SpannableStringBuilder;
+
+    .line 7
+    new-instance v0, Lae/d;
+
+    const-string v5, "email address"
+
+    invoke-direct {v0, v5, v4}, Lae/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    aput-object v0, v2, v3
+
+    const-string v0, "young_player_register_pin_description_v2"
+
+    .line 8
+    invoke-static {v1, v0, v2, v8}, Lpd/d0;->k(Landroid/widget/TextView;Ljava/lang/String;[Lae/d;Lke/l;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public i0()V
+    .locals 1
+
+    .line 1
+    invoke-super {p0}, Lud/k;->i0()V
+
+    .line 2
+    invoke-static {p0}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0, p0}, Lcom/supercell/id/ui/MainActivity;->J(Lrc/u;)V
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0}, Lud/i;->W0()V
+
+    return-void
+.end method
+
+.method public o0()V
+    .locals 4
+
+    .line 1
+    invoke-super {p0}, Lrc/q1;->o0()V
+
+    .line 2
+    sget v0, Lcom/supercell/id/R$id;->pinEditText:I
+
+    invoke-virtual {p0, v0}, Lud/i;->f1(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/supercell/id/view/PinEntryView;
+
+    if-eqz v0, :cond_0
+
+    new-instance v1, Lud/i$a;
+
+    invoke-direct {v1, v0}, Lud/i$a;-><init>(Lcom/supercell/id/view/PinEntryView;)V
+
+    new-instance v2, La2/i0;
+
+    const/4 v3, 0x1
+
+    invoke-direct {v2, v1, v3}, La2/i0;-><init>(Ljava/lang/Object;I)V
+
+    invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->post(Ljava/lang/Runnable;)Z
+
+    :cond_0
+    return-void
+.end method
+
+.method public s0(Landroid/view/View;Landroid/os/Bundle;)V
+    .locals 3
+
+    if-eqz p1, :cond_1
+
+    .line 1
+    invoke-super {p0, p1, p2}, Lrc/w;->s0(Landroid/view/View;Landroid/os/Bundle;)V
+
+    .line 2
+    invoke-static {p0}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1, p0}, Lcom/supercell/id/ui/MainActivity;->A(Lrc/u;)V
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0}, Lud/i;->g1()V
+
+    .line 4
+    sget p1, Lcom/supercell/id/R$id;->cancelButton:I
+
+    invoke-virtual {p0, p1}, Lud/i;->f1(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
+
+    new-instance p2, Lud/i$b;
+
+    invoke-direct {p2, p0}, Lud/i$b;-><init>(Lud/i;)V
+
+    invoke-virtual {p1, p2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 5
+    sget p1, Lcom/supercell/id/R$id;->okButton:I
+
+    invoke-virtual {p0, p1}, Lud/i;->f1(I)Landroid/view/View;
+
+    move-result-object p2
+
+    check-cast p2, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
+
+    new-instance v0, Lud/i$c;
+
+    invoke-direct {v0, p0}, Lud/i$c;-><init>(Lud/i;)V
+
+    invoke-virtual {p2, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 6
+    invoke-virtual {p0, p1}, Lud/i;->f1(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
+
+    const-string p2, "okButton"
+
+    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget p2, Lcom/supercell/id/R$id;->pinEditText:I
+
+    invoke-virtual {p0, p2}, Lud/i;->f1(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/supercell/id/view/PinEntryView;
+
+    invoke-virtual {v0}, Lcom/supercell/id/view/PinEntryView;->d()Z
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    xor-int/2addr v0, v1
+
+    invoke-static {p1, v0}, Lvd/g2;->l(Landroidx/appcompat/widget/AppCompatButton;Z)V
+
+    .line 7
+    invoke-virtual {p0, p2}, Lud/i;->f1(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/supercell/id/view/PinEntryView;
+
+    new-instance p2, Lud/i$d;
+
+    invoke-direct {p2, p0}, Lud/i$d;-><init>(Lud/i;)V
+
+    invoke-virtual {p1, p2}, Lcom/supercell/id/view/PinEntryView;->setOnPinChangedListener(Lke/p;)V
+
+    .line 8
+    sget p1, Lcom/supercell/id/R$id;->privacyTextView:I
+
+    invoke-virtual {p0, p1}, Lud/i;->f1(I)Landroid/view/View;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/widget/TextView;
+
+    const-string v0, "privacyTextView"
+
+    invoke-static {p2, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {}, Landroid/text/method/LinkMovementMethod;->getInstance()Landroid/text/method/MovementMethod;
+
+    move-result-object v2
+
+    invoke-virtual {p2, v2}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
+
+    .line 9
+    invoke-virtual {p0, p1}, Lud/i;->f1(I)Landroid/view/View;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/widget/TextView;
+
+    invoke-static {p2, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p2, v1}, Landroid/widget/TextView;->setLinksClickable(Z)V
+
+    .line 10
+    invoke-virtual {p0, p1}, Lud/i;->f1(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/widget/TextView;
+
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object p2, Lud/i$e;->g:Lud/i$e;
+
+    const-string v0, "young_player_register_pin_privacy_text"
+
+    invoke-static {p1, v0, p2}, Lpd/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lke/p;)V
+
+    return-void
+
+    :cond_1
+    const-string p1, "view"
+
+    .line 11
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
 .end method

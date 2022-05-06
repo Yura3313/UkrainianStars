@@ -294,7 +294,7 @@
     move/from16 v6, p2
 
     .line 6
-    invoke-static/range {v1 .. v7}, Lf0/s;->z(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
+    invoke-static/range {v1 .. v7}, Lf0/r;->z(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
 
     .line 7
     sget v1, Landroidx/appcompat/R$styleable;->AppCompatTextHelper_android_textAppearance:I
@@ -967,7 +967,7 @@
 
     move/from16 v6, p2
 
-    invoke-static/range {v1 .. v7}, Lf0/s;->z(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
+    invoke-static/range {v1 .. v7}, Lf0/r;->z(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
 
     .line 84
     sget v1, Landroidx/appcompat/R$styleable;->AppCompatTextView_autoSizeTextType:I
@@ -1207,7 +1207,7 @@
     .line 113
     :cond_2b
     :goto_11
-    sget-boolean v1, Landroidx/core/widget/b;->c:Z
+    sget-boolean v1, Landroidx/core/widget/b;->a:Z
 
     if-eqz v1, :cond_2d
 
@@ -2100,7 +2100,7 @@
 
     const-string v0, "None of the preset sizes is valid: "
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

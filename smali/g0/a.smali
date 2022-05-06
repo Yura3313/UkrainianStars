@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final b:Lg0/b;
+.field public final h:Lg0/b;
 
-.field public final h:I
+.field public final i:I
 
 
 # direct methods
@@ -19,13 +19,13 @@
     invoke-direct {p0}, Landroid/text/style/ClickableSpan;-><init>()V
 
     .line 2
-    iput p1, p0, Lg0/a;->a:I
+    iput p1, p0, Lg0/a;->g:I
 
     .line 3
-    iput-object p2, p0, Lg0/a;->b:Lg0/b;
+    iput-object p2, p0, Lg0/a;->h:Lg0/b;
 
     .line 4
-    iput p3, p0, Lg0/a;->h:I
+    iput p3, p0, Lg0/a;->i:I
 
     return-void
 .end method
@@ -41,16 +41,16 @@
     invoke-direct {p1}, Landroid/os/Bundle;-><init>()V
 
     .line 2
-    iget v0, p0, Lg0/a;->a:I
+    iget v0, p0, Lg0/a;->g:I
 
     const-string v1, "ACCESSIBILITY_CLICKABLE_SPAN_ID"
 
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 3
-    iget-object v0, p0, Lg0/a;->b:Lg0/b;
+    iget-object v0, p0, Lg0/a;->h:Lg0/b;
 
-    iget v1, p0, Lg0/a;->h:I
+    iget v1, p0, Lg0/a;->i:I
 
     .line 4
     iget-object v0, v0, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;

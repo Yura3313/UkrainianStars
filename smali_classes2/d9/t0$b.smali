@@ -1,5 +1,5 @@
 .class public Ld9/t0$b;
-.super Ly7/g;
+.super Lz7/g;
 .source "NewConversationVM.java"
 
 
@@ -25,7 +25,7 @@
     .line 1
     iput-object p1, p0, Ld9/t0$b;->b:Ld9/t0;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method

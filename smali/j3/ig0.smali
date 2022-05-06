@@ -1,89 +1,59 @@
 .class public final Lj3/ig0;
-.super Ljava/lang/Object;
+.super Lo1/a;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Lj3/kc;
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final synthetic a:Lcom/google/android/gms/internal/ads/zzxb;
 
-.field public final b:Ljava/lang/String;
-
-.field public final c:Lorg/json/JSONObject;
-
-.field public final d:Lorg/json/JSONObject;
+.field public final synthetic b:Lcom/google/android/gms/internal/ads/zzdkr;
 
 
 # direct methods
-.method public constructor <init>(Landroid/util/JsonReader;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/IllegalStateException;,
-            Ljava/io/IOException;,
-            Lorg/json/JSONException;,
-            Ljava/lang/NumberFormatException;
-        }
-    .end annotation
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzdkr;Lcom/google/android/gms/internal/ads/zzxb;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lj3/ig0;->b:Lcom/google/android/gms/internal/ads/zzdkr;
 
-    .line 2
-    invoke-static {p1}, Lj3/jc;->l(Landroid/util/JsonReader;)Lorg/json/JSONObject;
+    iput-object p2, p0, Lj3/ig0;->a:Lcom/google/android/gms/internal/ads/zzxb;
 
-    move-result-object p1
-
-    iput-object p1, p0, Lj3/ig0;->d:Lorg/json/JSONObject;
-
-    const-string v0, "ad_html"
-
-    const/4 v1, 0x0
-
-    .line 3
-    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lj3/ig0;->a:Ljava/lang/String;
-
-    const-string v0, "ad_base_url"
-
-    .line 4
-    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lj3/ig0;->b:Ljava/lang/String;
-
-    const-string v0, "ad_json"
-
-    .line 5
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lj3/ig0;->c:Lorg/json/JSONObject;
+    invoke-direct {p0}, Lo1/a;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/util/JsonWriter;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+.method public final c()V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lj3/ig0;->d:Lorg/json/JSONObject;
+    iget-object v0, p0, Lj3/ig0;->b:Lcom/google/android/gms/internal/ads/zzdkr;
 
-    invoke-static {p1, v0}, Lj3/jc;->g(Landroid/util/JsonWriter;Lorg/json/JSONObject;)V
+    .line 2
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/zzdkr;->j:Lj3/cz;
 
+    if-eqz v0, :cond_0
+
+    .line 3
+    :try_start_0
+    iget-object v0, p0, Lj3/ig0;->a:Lcom/google/android/gms/internal/ads/zzxb;
+
+    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzxb;->D0()V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    const-string v1, "#007 Could not call remote method."
+
+    .line 4
+    invoke-static {v1, v0}, Lj3/cj;->j(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    :cond_0
     return-void
 .end method

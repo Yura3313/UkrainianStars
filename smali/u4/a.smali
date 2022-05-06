@@ -3,23 +3,21 @@
 .source "TooltipDrawable.java"
 
 # interfaces
-.implements Lcom/google/android/material/internal/h$b;
+.implements Lcom/google/android/material/internal/j$b;
 
 
 # instance fields
-.field public C:Ljava/lang/CharSequence;
+.field public D:Ljava/lang/CharSequence;
 
-.field public final D:Landroid/content/Context;
+.field public final E:Landroid/content/Context;
 
-.field public final E:Landroid/graphics/Paint$FontMetrics;
+.field public final F:Landroid/graphics/Paint$FontMetrics;
 
-.field public final F:Lcom/google/android/material/internal/h;
+.field public final G:Lcom/google/android/material/internal/j;
 
-.field public final G:Landroid/view/View$OnLayoutChangeListener;
+.field public final H:Landroid/view/View$OnLayoutChangeListener;
 
-.field public final H:Landroid/graphics/Rect;
-
-.field public I:I
+.field public final I:Landroid/graphics/Rect;
 
 .field public J:I
 
@@ -30,6 +28,8 @@
 .field public M:I
 
 .field public N:I
+
+.field public O:I
 
 
 # direct methods
@@ -44,34 +44,34 @@
 
     invoke-direct {p2}, Landroid/graphics/Paint$FontMetrics;-><init>()V
 
-    iput-object p2, p0, Lu4/a;->E:Landroid/graphics/Paint$FontMetrics;
+    iput-object p2, p0, Lu4/a;->F:Landroid/graphics/Paint$FontMetrics;
 
     .line 3
-    new-instance p2, Lcom/google/android/material/internal/h;
+    new-instance p2, Lcom/google/android/material/internal/j;
 
-    invoke-direct {p2, p0}, Lcom/google/android/material/internal/h;-><init>(Lcom/google/android/material/internal/h$b;)V
+    invoke-direct {p2, p0}, Lcom/google/android/material/internal/j;-><init>(Lcom/google/android/material/internal/j$b;)V
 
-    iput-object p2, p0, Lu4/a;->F:Lcom/google/android/material/internal/h;
+    iput-object p2, p0, Lu4/a;->G:Lcom/google/android/material/internal/j;
 
     .line 4
     new-instance p3, Lu4/a$a;
 
     invoke-direct {p3, p0}, Lu4/a$a;-><init>(Lu4/a;)V
 
-    iput-object p3, p0, Lu4/a;->G:Landroid/view/View$OnLayoutChangeListener;
+    iput-object p3, p0, Lu4/a;->H:Landroid/view/View$OnLayoutChangeListener;
 
     .line 5
     new-instance p3, Landroid/graphics/Rect;
 
     invoke-direct {p3}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object p3, p0, Lu4/a;->H:Landroid/graphics/Rect;
+    iput-object p3, p0, Lu4/a;->I:Landroid/graphics/Rect;
 
     .line 6
-    iput-object p1, p0, Lu4/a;->D:Landroid/content/Context;
+    iput-object p1, p0, Lu4/a;->E:Landroid/content/Context;
 
     .line 7
-    iget-object p3, p2, Lcom/google/android/material/internal/h;->a:Landroid/text/TextPaint;
+    iget-object p3, p2, Lcom/google/android/material/internal/j;->a:Landroid/text/TextPaint;
 
     .line 8
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -87,7 +87,7 @@
     iput p1, p3, Landroid/text/TextPaint;->density:F
 
     .line 9
-    iget-object p1, p2, Lcom/google/android/material/internal/h;->a:Landroid/text/TextPaint;
+    iget-object p1, p2, Lcom/google/android/material/internal/j;->a:Landroid/text/TextPaint;
 
     .line 10
     sget-object p2, Landroid/graphics/Paint$Align;->CENTER:Landroid/graphics/Paint$Align;
@@ -103,7 +103,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lu4/a;->H:Landroid/graphics/Rect;
+    iget-object v0, p0, Lu4/a;->I:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->right:I
 
@@ -115,18 +115,18 @@
 
     sub-int/2addr v0, v1
 
-    iget v1, p0, Lu4/a;->N:I
+    iget v1, p0, Lu4/a;->O:I
 
     sub-int/2addr v0, v1
 
-    iget v1, p0, Lu4/a;->L:I
+    iget v1, p0, Lu4/a;->M:I
 
     sub-int/2addr v0, v1
 
     if-gez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lu4/a;->H:Landroid/graphics/Rect;
+    iget-object v0, p0, Lu4/a;->I:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->right:I
 
@@ -138,11 +138,11 @@
 
     sub-int/2addr v0, v1
 
-    iget v1, p0, Lu4/a;->N:I
+    iget v1, p0, Lu4/a;->O:I
 
     sub-int/2addr v0, v1
 
-    iget v1, p0, Lu4/a;->L:I
+    iget v1, p0, Lu4/a;->M:I
 
     sub-int/2addr v0, v1
 
@@ -153,7 +153,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lu4/a;->H:Landroid/graphics/Rect;
+    iget-object v0, p0, Lu4/a;->I:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->left:I
 
@@ -165,18 +165,18 @@
 
     sub-int/2addr v0, v1
 
-    iget v1, p0, Lu4/a;->N:I
+    iget v1, p0, Lu4/a;->O:I
 
     sub-int/2addr v0, v1
 
-    iget v1, p0, Lu4/a;->L:I
+    iget v1, p0, Lu4/a;->M:I
 
     add-int/2addr v0, v1
 
     if-lez v0, :cond_1
 
     .line 4
-    iget-object v0, p0, Lu4/a;->H:Landroid/graphics/Rect;
+    iget-object v0, p0, Lu4/a;->I:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->left:I
 
@@ -188,11 +188,11 @@
 
     sub-int/2addr v0, v1
 
-    iget v1, p0, Lu4/a;->N:I
+    iget v1, p0, Lu4/a;->O:I
 
     sub-int/2addr v0, v1
 
-    iget v1, p0, Lu4/a;->L:I
+    iget v1, p0, Lu4/a;->M:I
 
     add-int/2addr v0, v1
 
@@ -226,7 +226,7 @@
 
     int-to-double v1, v1
 
-    iget v3, p0, Lu4/a;->M:I
+    iget v3, p0, Lu4/a;->N:I
 
     int-to-double v3, v3
 
@@ -267,7 +267,7 @@
 
     new-instance v2, Lr4/f;
 
-    iget v3, p0, Lu4/a;->M:I
+    iget v3, p0, Lu4/a;->N:I
 
     int-to-float v3, v3
 
@@ -299,7 +299,7 @@
     move-result v0
 
     .line 3
-    iget v1, p0, Lu4/a;->M:I
+    iget v1, p0, Lu4/a;->N:I
 
     int-to-double v1, v1
 
@@ -313,7 +313,7 @@
 
     mul-double v3, v3, v1
 
-    iget v1, p0, Lu4/a;->M:I
+    iget v1, p0, Lu4/a;->N:I
 
     int-to-double v1, v1
 
@@ -332,7 +332,7 @@
     invoke-super {p0, p1}, Lr4/g;->draw(Landroid/graphics/Canvas;)V
 
     .line 6
-    iget-object v0, p0, Lu4/a;->C:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lu4/a;->D:Ljava/lang/CharSequence;
 
     if-nez v0, :cond_0
 
@@ -352,18 +352,18 @@
     int-to-float v1, v1
 
     .line 9
-    iget-object v2, p0, Lu4/a;->F:Lcom/google/android/material/internal/h;
+    iget-object v2, p0, Lu4/a;->G:Lcom/google/android/material/internal/j;
 
     .line 10
-    iget-object v2, v2, Lcom/google/android/material/internal/h;->a:Landroid/text/TextPaint;
+    iget-object v2, v2, Lcom/google/android/material/internal/j;->a:Landroid/text/TextPaint;
 
     .line 11
-    iget-object v3, p0, Lu4/a;->E:Landroid/graphics/Paint$FontMetrics;
+    iget-object v3, p0, Lu4/a;->F:Landroid/graphics/Paint$FontMetrics;
 
     invoke-virtual {v2, v3}, Landroid/text/TextPaint;->getFontMetrics(Landroid/graphics/Paint$FontMetrics;)F
 
     .line 12
-    iget-object v2, p0, Lu4/a;->E:Landroid/graphics/Paint$FontMetrics;
+    iget-object v2, p0, Lu4/a;->F:Landroid/graphics/Paint$FontMetrics;
 
     iget v3, v2, Landroid/graphics/Paint$FontMetrics;->descent:F
 
@@ -380,15 +380,15 @@
     float-to-int v1, v1
 
     .line 13
-    iget-object v2, p0, Lu4/a;->F:Lcom/google/android/material/internal/h;
+    iget-object v2, p0, Lu4/a;->G:Lcom/google/android/material/internal/j;
 
     .line 14
-    iget-object v3, v2, Lcom/google/android/material/internal/h;->f:Lo4/d;
+    iget-object v3, v2, Lcom/google/android/material/internal/j;->f:Lo4/d;
 
     if-eqz v3, :cond_1
 
     .line 15
-    iget-object v2, v2, Lcom/google/android/material/internal/h;->a:Landroid/text/TextPaint;
+    iget-object v2, v2, Lcom/google/android/material/internal/j;->a:Landroid/text/TextPaint;
 
     .line 16
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getState()[I
@@ -398,22 +398,22 @@
     iput-object v3, v2, Landroid/text/TextPaint;->drawableState:[I
 
     .line 17
-    iget-object v2, p0, Lu4/a;->F:Lcom/google/android/material/internal/h;
+    iget-object v2, p0, Lu4/a;->G:Lcom/google/android/material/internal/j;
 
-    iget-object v3, p0, Lu4/a;->D:Landroid/content/Context;
+    iget-object v3, p0, Lu4/a;->E:Landroid/content/Context;
 
     .line 18
-    iget-object v4, v2, Lcom/google/android/material/internal/h;->f:Lo4/d;
+    iget-object v4, v2, Lcom/google/android/material/internal/j;->f:Lo4/d;
 
-    iget-object v5, v2, Lcom/google/android/material/internal/h;->a:Landroid/text/TextPaint;
+    iget-object v5, v2, Lcom/google/android/material/internal/j;->a:Landroid/text/TextPaint;
 
-    iget-object v2, v2, Lcom/google/android/material/internal/h;->b:La2/a0;
+    iget-object v2, v2, Lcom/google/android/material/internal/j;->b:La2/a0;
 
     invoke-virtual {v4, v3, v5, v2}, Lo4/d;->c(Landroid/content/Context;Landroid/text/TextPaint;La2/a0;)V
 
     .line 19
     :cond_1
-    iget-object v7, p0, Lu4/a;->C:Ljava/lang/CharSequence;
+    iget-object v7, p0, Lu4/a;->D:Ljava/lang/CharSequence;
 
     const/4 v8, 0x0
 
@@ -429,10 +429,10 @@
 
     int-to-float v11, v1
 
-    iget-object v0, p0, Lu4/a;->F:Lcom/google/android/material/internal/h;
+    iget-object v0, p0, Lu4/a;->G:Lcom/google/android/material/internal/j;
 
     .line 20
-    iget-object v12, v0, Lcom/google/android/material/internal/h;->a:Landroid/text/TextPaint;
+    iget-object v12, v0, Lcom/google/android/material/internal/j;->a:Landroid/text/TextPaint;
 
     move-object v6, p1
 
@@ -450,17 +450,17 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lu4/a;->F:Lcom/google/android/material/internal/h;
+    iget-object v0, p0, Lu4/a;->G:Lcom/google/android/material/internal/j;
 
     .line 2
-    iget-object v0, v0, Lcom/google/android/material/internal/h;->a:Landroid/text/TextPaint;
+    iget-object v0, v0, Lcom/google/android/material/internal/j;->a:Landroid/text/TextPaint;
 
     .line 3
     invoke-virtual {v0}, Landroid/text/TextPaint;->getTextSize()F
 
     move-result v0
 
-    iget v1, p0, Lu4/a;->K:I
+    iget v1, p0, Lu4/a;->L:I
 
     int-to-float v1, v1
 
@@ -477,14 +477,14 @@
     .locals 3
 
     .line 1
-    iget v0, p0, Lu4/a;->I:I
+    iget v0, p0, Lu4/a;->J:I
 
     mul-int/lit8 v0, v0, 0x2
 
     int-to-float v0, v0
 
     .line 2
-    iget-object v1, p0, Lu4/a;->C:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lu4/a;->D:Ljava/lang/CharSequence;
 
     if-nez v1, :cond_0
 
@@ -494,13 +494,13 @@
 
     .line 3
     :cond_0
-    iget-object v2, p0, Lu4/a;->F:Lcom/google/android/material/internal/h;
+    iget-object v2, p0, Lu4/a;->G:Lcom/google/android/material/internal/j;
 
     invoke-interface {v1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v2, v1}, Lcom/google/android/material/internal/h;->a(Ljava/lang/String;)F
+    invoke-virtual {v2, v1}, Lcom/google/android/material/internal/j;->a(Ljava/lang/String;)F
 
     move-result v1
 
@@ -508,7 +508,7 @@
     add-float/2addr v0, v1
 
     .line 4
-    iget v1, p0, Lu4/a;->J:I
+    iget v1, p0, Lu4/a;->K:I
 
     int-to-float v1, v1
 
@@ -528,7 +528,7 @@
     invoke-super {p0, p1}, Lr4/g;->onBoundsChange(Landroid/graphics/Rect;)V
 
     .line 2
-    iget-object p1, p0, Lr4/g;->a:Lr4/g$b;
+    iget-object p1, p0, Lr4/g;->g:Lr4/g$b;
 
     iget-object p1, p1, Lr4/g$b;->a:Lr4/k;
 
@@ -554,7 +554,7 @@
     move-result-object p1
 
     .line 8
-    iget-object v0, p0, Lr4/g;->a:Lr4/g$b;
+    iget-object v0, p0, Lr4/g;->g:Lr4/g$b;
 
     iput-object p1, v0, Lr4/g$b;->a:Lr4/k;
 

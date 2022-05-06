@@ -28,7 +28,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lwd/u1;)V
+.method public constructor <init>(Lvd/v1;)V
     .locals 1
 
     const/4 v0, 0x1
@@ -51,7 +51,7 @@
 .method public final getOwner()Lpe/d;
     .locals 1
 
-    const-class v0, Lwd/u1;
+    const-class v0, Lvd/v1;
 
     invoke-static {v0}, Lle/t;->a(Ljava/lang/Class;)Lpe/c;
 
@@ -81,10 +81,10 @@
     .line 2
     iget-object v0, p0, Lle/c;->receiver:Ljava/lang/Object;
 
-    check-cast v0, Lwd/u1;
+    check-cast v0, Lvd/v1;
 
     .line 3
-    invoke-virtual {v0, p1}, Lwd/u1;->x(I)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lvd/v1;->x(I)Ljava/lang/String;
 
     move-result-object p1
 

@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public a:I
+.field public g:I
 
-.field public b:I
+.field public h:I
 
-.field public h:Z
+.field public i:Z
 
-.field public i:I
+.field public j:I
 
 
 # direct methods
@@ -34,7 +34,7 @@
     const/4 p3, 0x0
 
     .line 3
-    iput-boolean p3, p0, Lcom/google/android/material/internal/FlowLayout;->h:Z
+    iput-boolean p3, p0, Lcom/google/android/material/internal/FlowLayout;->i:Z
 
     .line 4
     invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
@@ -54,7 +54,7 @@
 
     move-result p2
 
-    iput p2, p0, Lcom/google/android/material/internal/FlowLayout;->a:I
+    iput p2, p0, Lcom/google/android/material/internal/FlowLayout;->g:I
 
     .line 6
     sget p2, Lcom/google/android/material/R$styleable;->FlowLayout_itemSpacing:I
@@ -63,7 +63,7 @@
 
     move-result p2
 
-    iput p2, p0, Lcom/google/android/material/internal/FlowLayout;->b:I
+    iput p2, p0, Lcom/google/android/material/internal/FlowLayout;->h:I
 
     .line 7
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
@@ -77,7 +77,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/internal/FlowLayout;->h:Z
+    iget-boolean v0, p0, Lcom/google/android/material/internal/FlowLayout;->i:Z
 
     return v0
 .end method
@@ -86,7 +86,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/internal/FlowLayout;->b:I
+    iget v0, p0, Lcom/google/android/material/internal/FlowLayout;->h:I
 
     return v0
 .end method
@@ -95,7 +95,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/internal/FlowLayout;->a:I
+    iget v0, p0, Lcom/google/android/material/internal/FlowLayout;->g:I
 
     return v0
 .end method
@@ -104,7 +104,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/internal/FlowLayout;->i:I
+    iget v0, p0, Lcom/google/android/material/internal/FlowLayout;->j:I
 
     return v0
 .end method
@@ -122,7 +122,7 @@
     if-nez p1, :cond_0
 
     .line 2
-    iput p3, p0, Lcom/google/android/material/internal/FlowLayout;->i:I
+    iput p3, p0, Lcom/google/android/material/internal/FlowLayout;->j:I
 
     return-void
 
@@ -130,10 +130,10 @@
     const/4 p1, 0x1
 
     .line 3
-    iput p1, p0, Lcom/google/android/material/internal/FlowLayout;->i:I
+    iput p1, p0, Lcom/google/android/material/internal/FlowLayout;->j:I
 
     .line 4
-    sget-object p5, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object p5, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 5
     invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
@@ -272,23 +272,23 @@
     add-int/2addr v8, v7
 
     .line 19
-    iget-boolean v7, p0, Lcom/google/android/material/internal/FlowLayout;->h:Z
+    iget-boolean v7, p0, Lcom/google/android/material/internal/FlowLayout;->i:Z
 
     if-nez v7, :cond_6
 
     if-le v8, p4, :cond_6
 
     .line 20
-    iget p2, p0, Lcom/google/android/material/internal/FlowLayout;->a:I
+    iget p2, p0, Lcom/google/android/material/internal/FlowLayout;->g:I
 
     add-int/2addr p2, v2
 
     .line 21
-    iget v2, p0, Lcom/google/android/material/internal/FlowLayout;->i:I
+    iget v2, p0, Lcom/google/android/material/internal/FlowLayout;->j:I
 
     add-int/2addr v2, p1
 
-    iput v2, p0, Lcom/google/android/material/internal/FlowLayout;->i:I
+    iput v2, p0, Lcom/google/android/material/internal/FlowLayout;->j:I
 
     move v3, v0
 
@@ -296,7 +296,7 @@
     :cond_6
     sget v2, Lcom/google/android/material/R$id;->row_index_key:I
 
-    iget v7, p0, Lcom/google/android/material/internal/FlowLayout;->i:I
+    iget v7, p0, Lcom/google/android/material/internal/FlowLayout;->j:I
 
     sub-int/2addr v7, p1
 
@@ -349,7 +349,7 @@
 
     add-int/2addr v2, v6
 
-    iget v4, p0, Lcom/google/android/material/internal/FlowLayout;->b:I
+    iget v4, p0, Lcom/google/android/material/internal/FlowLayout;->h:I
 
     add-int/2addr v2, v4
 
@@ -529,7 +529,7 @@
     move-result v8
 
     .line 20
-    iget v6, v0, Lcom/google/android/material/internal/FlowLayout;->a:I
+    iget v6, v0, Lcom/google/android/material/internal/FlowLayout;->g:I
 
     add-int v11, v9, v6
 
@@ -564,7 +564,7 @@
 
     add-int/2addr v9, v10
 
-    iget v10, v0, Lcom/google/android/material/internal/FlowLayout;->b:I
+    iget v10, v0, Lcom/google/android/material/internal/FlowLayout;->h:I
 
     add-int/2addr v9, v10
 
@@ -658,7 +658,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Lcom/google/android/material/internal/FlowLayout;->b:I
+    iput p1, p0, Lcom/google/android/material/internal/FlowLayout;->h:I
 
     return-void
 .end method
@@ -667,7 +667,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Lcom/google/android/material/internal/FlowLayout;->a:I
+    iput p1, p0, Lcom/google/android/material/internal/FlowLayout;->g:I
 
     return-void
 .end method
@@ -676,7 +676,7 @@
     .locals 0
 
     .line 1
-    iput-boolean p1, p0, Lcom/google/android/material/internal/FlowLayout;->h:Z
+    iput-boolean p1, p0, Lcom/google/android/material/internal/FlowLayout;->i:Z
 
     return-void
 .end method

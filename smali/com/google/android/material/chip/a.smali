@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroid/graphics/drawable/Drawable$Callback;
-.implements Lcom/google/android/material/internal/h$b;
+.implements Lcom/google/android/material/internal/j$b;
 
 
 # annotations
@@ -16,35 +16,37 @@
 
 
 # static fields
-.field public static final L0:[I
+.field public static final M0:[I
 
-.field public static final M0:Landroid/graphics/drawable/ShapeDrawable;
+.field public static final N0:Landroid/graphics/drawable/ShapeDrawable;
 
 
 # instance fields
-.field public A0:Landroid/graphics/PorterDuffColorFilter;
+.field public A0:Landroid/graphics/ColorFilter;
 
-.field public B0:Landroid/content/res/ColorStateList;
+.field public B0:Landroid/graphics/PorterDuffColorFilter;
 
-.field public C:Landroid/content/res/ColorStateList;
-
-.field public C0:Landroid/graphics/PorterDuff$Mode;
+.field public C0:Landroid/content/res/ColorStateList;
 
 .field public D:Landroid/content/res/ColorStateList;
 
-.field public D0:[I
+.field public D0:Landroid/graphics/PorterDuff$Mode;
 
-.field public E:F
+.field public E:Landroid/content/res/ColorStateList;
 
-.field public E0:Z
+.field public E0:[I
 
 .field public F:F
 
-.field public F0:Landroid/content/res/ColorStateList;
+.field public F0:Z
 
-.field public G:Landroid/content/res/ColorStateList;
+.field public G:F
 
-.field public G0:Ljava/lang/ref/WeakReference;
+.field public G0:Landroid/content/res/ColorStateList;
+
+.field public H:Landroid/content/res/ColorStateList;
+
+.field public H0:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -54,55 +56,53 @@
     .end annotation
 .end field
 
-.field public H:F
+.field public I:F
 
-.field public H0:Landroid/text/TextUtils$TruncateAt;
+.field public I0:Landroid/text/TextUtils$TruncateAt;
 
-.field public I:Landroid/content/res/ColorStateList;
+.field public J:Landroid/content/res/ColorStateList;
 
-.field public I0:Z
+.field public J0:Z
 
-.field public J:Ljava/lang/CharSequence;
+.field public K:Ljava/lang/CharSequence;
 
-.field public J0:I
+.field public K0:I
 
-.field public K:Z
+.field public L:Z
 
-.field public K0:Z
+.field public L0:Z
 
-.field public L:Landroid/graphics/drawable/Drawable;
+.field public M:Landroid/graphics/drawable/Drawable;
 
-.field public M:Landroid/content/res/ColorStateList;
+.field public N:Landroid/content/res/ColorStateList;
 
-.field public N:F
-
-.field public O:Z
+.field public O:F
 
 .field public P:Z
 
-.field public Q:Landroid/graphics/drawable/Drawable;
+.field public Q:Z
 
 .field public R:Landroid/graphics/drawable/Drawable;
 
-.field public S:Landroid/content/res/ColorStateList;
+.field public S:Landroid/graphics/drawable/Drawable;
 
-.field public T:F
+.field public T:Landroid/content/res/ColorStateList;
 
-.field public U:Ljava/lang/CharSequence;
+.field public U:F
 
-.field public V:Z
+.field public V:Ljava/lang/CharSequence;
 
 .field public W:Z
 
-.field public X:Landroid/graphics/drawable/Drawable;
+.field public X:Z
 
-.field public Y:Landroid/content/res/ColorStateList;
+.field public Y:Landroid/graphics/drawable/Drawable;
 
-.field public Z:Lb4/g;
+.field public Z:Landroid/content/res/ColorStateList;
 
-.field public a0:Lb4/g;
+.field public a0:Lc4/g;
 
-.field public b0:F
+.field public b0:Lc4/g;
 
 .field public c0:F
 
@@ -118,21 +118,21 @@
 
 .field public i0:F
 
-.field public final j0:Landroid/content/Context;
+.field public j0:F
 
-.field public final k0:Landroid/graphics/Paint;
+.field public final k0:Landroid/content/Context;
 
-.field public final l0:Landroid/graphics/Paint$FontMetrics;
+.field public final l0:Landroid/graphics/Paint;
 
-.field public final m0:Landroid/graphics/RectF;
+.field public final m0:Landroid/graphics/Paint$FontMetrics;
 
-.field public final n0:Landroid/graphics/PointF;
+.field public final n0:Landroid/graphics/RectF;
 
-.field public final o0:Landroid/graphics/Path;
+.field public final o0:Landroid/graphics/PointF;
 
-.field public final p0:Lcom/google/android/material/internal/h;
+.field public final p0:Landroid/graphics/Path;
 
-.field public q0:I
+.field public final q0:Lcom/google/android/material/internal/j;
 
 .field public r0:I
 
@@ -144,13 +144,13 @@
 
 .field public v0:I
 
-.field public w0:Z
+.field public w0:I
 
-.field public x0:I
+.field public x0:Z
 
 .field public y0:I
 
-.field public z0:Landroid/graphics/ColorFilter;
+.field public z0:I
 
 
 # direct methods
@@ -168,7 +168,7 @@
     aput v2, v0, v1
 
     .line 1
-    sput-object v0, Lcom/google/android/material/chip/a;->L0:[I
+    sput-object v0, Lcom/google/android/material/chip/a;->M0:[I
 
     .line 2
     new-instance v0, Landroid/graphics/drawable/ShapeDrawable;
@@ -179,7 +179,7 @@
 
     invoke-direct {v0, v1}, Landroid/graphics/drawable/ShapeDrawable;-><init>(Landroid/graphics/drawable/shapes/Shape;)V
 
-    sput-object v0, Lcom/google/android/material/chip/a;->M0:Landroid/graphics/drawable/ShapeDrawable;
+    sput-object v0, Lcom/google/android/material/chip/a;->N0:Landroid/graphics/drawable/ShapeDrawable;
 
     return-void
 .end method
@@ -193,7 +193,7 @@
     const/high16 p2, -0x40800000    # -1.0f
 
     .line 2
-    iput p2, p0, Lcom/google/android/material/chip/a;->F:F
+    iput p2, p0, Lcom/google/android/material/chip/a;->G:F
 
     .line 3
     new-instance p2, Landroid/graphics/Paint;
@@ -202,45 +202,45 @@
 
     invoke-direct {p2, p3}, Landroid/graphics/Paint;-><init>(I)V
 
-    iput-object p2, p0, Lcom/google/android/material/chip/a;->k0:Landroid/graphics/Paint;
+    iput-object p2, p0, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint;
 
     .line 4
     new-instance p2, Landroid/graphics/Paint$FontMetrics;
 
     invoke-direct {p2}, Landroid/graphics/Paint$FontMetrics;-><init>()V
 
-    iput-object p2, p0, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint$FontMetrics;
+    iput-object p2, p0, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/Paint$FontMetrics;
 
     .line 5
     new-instance p2, Landroid/graphics/RectF;
 
     invoke-direct {p2}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object p2, p0, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iput-object p2, p0, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     .line 6
     new-instance p2, Landroid/graphics/PointF;
 
     invoke-direct {p2}, Landroid/graphics/PointF;-><init>()V
 
-    iput-object p2, p0, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/PointF;
+    iput-object p2, p0, Lcom/google/android/material/chip/a;->o0:Landroid/graphics/PointF;
 
     .line 7
     new-instance p2, Landroid/graphics/Path;
 
     invoke-direct {p2}, Landroid/graphics/Path;-><init>()V
 
-    iput-object p2, p0, Lcom/google/android/material/chip/a;->o0:Landroid/graphics/Path;
+    iput-object p2, p0, Lcom/google/android/material/chip/a;->p0:Landroid/graphics/Path;
 
     const/16 p2, 0xff
 
     .line 8
-    iput p2, p0, Lcom/google/android/material/chip/a;->y0:I
+    iput p2, p0, Lcom/google/android/material/chip/a;->z0:I
 
     .line 9
     sget-object p2, Landroid/graphics/PorterDuff$Mode;->SRC_IN:Landroid/graphics/PorterDuff$Mode;
 
-    iput-object p2, p0, Lcom/google/android/material/chip/a;->C0:Landroid/graphics/PorterDuff$Mode;
+    iput-object p2, p0, Lcom/google/android/material/chip/a;->D0:Landroid/graphics/PorterDuff$Mode;
 
     .line 10
     new-instance p2, Ljava/lang/ref/WeakReference;
@@ -249,37 +249,37 @@
 
     invoke-direct {p2, p4}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object p2, p0, Lcom/google/android/material/chip/a;->G0:Ljava/lang/ref/WeakReference;
+    iput-object p2, p0, Lcom/google/android/material/chip/a;->H0:Ljava/lang/ref/WeakReference;
 
     .line 11
-    iget-object p2, p0, Lr4/g;->a:Lr4/g$b;
+    iget-object p2, p0, Lr4/g;->g:Lr4/g$b;
 
-    new-instance p4, Lj4/a;
+    new-instance p4, Lk4/a;
 
-    invoke-direct {p4, p1}, Lj4/a;-><init>(Landroid/content/Context;)V
+    invoke-direct {p4, p1}, Lk4/a;-><init>(Landroid/content/Context;)V
 
-    iput-object p4, p2, Lr4/g$b;->b:Lj4/a;
+    iput-object p4, p2, Lr4/g$b;->b:Lk4/a;
 
     .line 12
     invoke-virtual {p0}, Lr4/g;->C()V
 
     .line 13
-    iput-object p1, p0, Lcom/google/android/material/chip/a;->j0:Landroid/content/Context;
+    iput-object p1, p0, Lcom/google/android/material/chip/a;->k0:Landroid/content/Context;
 
     .line 14
-    new-instance p2, Lcom/google/android/material/internal/h;
+    new-instance p2, Lcom/google/android/material/internal/j;
 
-    invoke-direct {p2, p0}, Lcom/google/android/material/internal/h;-><init>(Lcom/google/android/material/internal/h$b;)V
+    invoke-direct {p2, p0}, Lcom/google/android/material/internal/j;-><init>(Lcom/google/android/material/internal/j$b;)V
 
-    iput-object p2, p0, Lcom/google/android/material/chip/a;->p0:Lcom/google/android/material/internal/h;
+    iput-object p2, p0, Lcom/google/android/material/chip/a;->q0:Lcom/google/android/material/internal/j;
 
     const-string p4, ""
 
     .line 15
-    iput-object p4, p0, Lcom/google/android/material/chip/a;->J:Ljava/lang/CharSequence;
+    iput-object p4, p0, Lcom/google/android/material/chip/a;->K:Ljava/lang/CharSequence;
 
     .line 16
-    iget-object p2, p2, Lcom/google/android/material/internal/h;->a:Landroid/text/TextPaint;
+    iget-object p2, p2, Lcom/google/android/material/internal/j;->a:Landroid/text/TextPaint;
 
     .line 17
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -295,7 +295,7 @@
     iput p1, p2, Landroid/text/TextPaint;->density:F
 
     .line 18
-    sget-object p1, Lcom/google/android/material/chip/a;->L0:[I
+    sget-object p1, Lcom/google/android/material/chip/a;->M0:[I
 
     invoke-virtual {p0, p1}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
@@ -303,7 +303,7 @@
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/a;->i0([I)Z
 
     .line 20
-    iput-boolean p3, p0, Lcom/google/android/material/chip/a;->I0:Z
+    iput-boolean p3, p0, Lcom/google/android/material/chip/a;->J0:Z
 
     .line 21
     sget-boolean p1, Lp4/b;->a:Z
@@ -311,7 +311,7 @@
     if-eqz p1, :cond_0
 
     .line 22
-    sget-object p1, Lcom/google/android/material/chip/a;->M0:Landroid/graphics/drawable/ShapeDrawable;
+    sget-object p1, Lcom/google/android/material/chip/a;->N0:Landroid/graphics/drawable/ShapeDrawable;
 
     const/4 p2, -0x1
 
@@ -404,7 +404,7 @@
     invoke-virtual {p1, v0, v1}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->Q:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
 
     if-ne p1, v0, :cond_2
 
@@ -416,14 +416,14 @@
     if-eqz v0, :cond_1
 
     .line 7
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->D0:[I
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->E0:[I
 
     .line 8
     invoke-virtual {p1, v0}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
     .line 9
     :cond_1
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->S:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->T:Landroid/content/res/ColorStateList;
 
     invoke-static {p1, v0}, Ly/a;->i(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
 
@@ -446,16 +446,16 @@
 
     .line 12
     :cond_3
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->L:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->M:Landroid/graphics/drawable/Drawable;
 
     if-ne p1, v0, :cond_4
 
-    iget-boolean p1, p0, Lcom/google/android/material/chip/a;->O:Z
+    iget-boolean p1, p0, Lcom/google/android/material/chip/a;->P:Z
 
     if-eqz p1, :cond_4
 
     .line 13
-    iget-object p1, p0, Lcom/google/android/material/chip/a;->M:Landroid/content/res/ColorStateList;
+    iget-object p1, p0, Lcom/google/android/material/chip/a;->N:Landroid/content/res/ColorStateList;
 
     invoke-static {v0, p1}, Ly/a;->i(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
 
@@ -484,9 +484,9 @@
 
     .line 3
     :cond_0
-    iget v0, p0, Lcom/google/android/material/chip/a;->b0:F
+    iget v0, p0, Lcom/google/android/material/chip/a;->c0:F
 
-    iget v1, p0, Lcom/google/android/material/chip/a;->c0:F
+    iget v1, p0, Lcom/google/android/material/chip/a;->d0:F
 
     add-float/2addr v0, v1
 
@@ -507,7 +507,7 @@
     iput v1, p2, Landroid/graphics/RectF;->left:F
 
     .line 6
-    iget v0, p0, Lcom/google/android/material/chip/a;->N:F
+    iget v0, p0, Lcom/google/android/material/chip/a;->O:F
 
     add-float/2addr v1, v0
 
@@ -526,7 +526,7 @@
     iput v1, p2, Landroid/graphics/RectF;->right:F
 
     .line 8
-    iget v0, p0, Lcom/google/android/material/chip/a;->N:F
+    iget v0, p0, Lcom/google/android/material/chip/a;->O:F
 
     sub-float/2addr v1, v0
 
@@ -538,7 +538,7 @@
 
     move-result p1
 
-    iget v0, p0, Lcom/google/android/material/chip/a;->N:F
+    iget v0, p0, Lcom/google/android/material/chip/a;->O:F
 
     const/high16 v1, 0x40000000    # 2.0f
 
@@ -583,13 +583,13 @@
     .line 2
     :cond_1
     :goto_0
-    iget v0, p0, Lcom/google/android/material/chip/a;->c0:F
+    iget v0, p0, Lcom/google/android/material/chip/a;->d0:F
 
-    iget v1, p0, Lcom/google/android/material/chip/a;->N:F
+    iget v1, p0, Lcom/google/android/material/chip/a;->O:F
 
     add-float/2addr v0, v1
 
-    iget v1, p0, Lcom/google/android/material/chip/a;->d0:F
+    iget v1, p0, Lcom/google/android/material/chip/a;->e0:F
 
     add-float/2addr v0, v1
 
@@ -610,9 +610,9 @@
     if-eqz v0, :cond_1
 
     .line 3
-    iget v0, p0, Lcom/google/android/material/chip/a;->i0:F
+    iget v0, p0, Lcom/google/android/material/chip/a;->j0:F
 
-    iget v1, p0, Lcom/google/android/material/chip/a;->h0:F
+    iget v1, p0, Lcom/google/android/material/chip/a;->i0:F
 
     add-float/2addr v0, v1
 
@@ -633,7 +633,7 @@
     iput v1, p2, Landroid/graphics/RectF;->right:F
 
     .line 6
-    iget v0, p0, Lcom/google/android/material/chip/a;->T:F
+    iget v0, p0, Lcom/google/android/material/chip/a;->U:F
 
     sub-float/2addr v1, v0
 
@@ -652,7 +652,7 @@
     iput v1, p2, Landroid/graphics/RectF;->left:F
 
     .line 8
-    iget v0, p0, Lcom/google/android/material/chip/a;->T:F
+    iget v0, p0, Lcom/google/android/material/chip/a;->U:F
 
     add-float/2addr v1, v0
 
@@ -664,7 +664,7 @@
 
     move-result p1
 
-    iget v0, p0, Lcom/google/android/material/chip/a;->T:F
+    iget v0, p0, Lcom/google/android/material/chip/a;->U:F
 
     const/high16 v1, 0x40000000    # 2.0f
 
@@ -697,21 +697,21 @@
     if-eqz v0, :cond_1
 
     .line 3
-    iget v0, p0, Lcom/google/android/material/chip/a;->i0:F
+    iget v0, p0, Lcom/google/android/material/chip/a;->j0:F
+
+    iget v1, p0, Lcom/google/android/material/chip/a;->i0:F
+
+    add-float/2addr v0, v1
+
+    iget v1, p0, Lcom/google/android/material/chip/a;->U:F
+
+    add-float/2addr v0, v1
 
     iget v1, p0, Lcom/google/android/material/chip/a;->h0:F
 
     add-float/2addr v0, v1
 
-    iget v1, p0, Lcom/google/android/material/chip/a;->T:F
-
-    add-float/2addr v0, v1
-
     iget v1, p0, Lcom/google/android/material/chip/a;->g0:F
-
-    add-float/2addr v0, v1
-
-    iget v1, p0, Lcom/google/android/material/chip/a;->f0:F
 
     add-float/2addr v0, v1
 
@@ -781,13 +781,13 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget v0, p0, Lcom/google/android/material/chip/a;->g0:F
+    iget v0, p0, Lcom/google/android/material/chip/a;->h0:F
 
-    iget v1, p0, Lcom/google/android/material/chip/a;->T:F
+    iget v1, p0, Lcom/google/android/material/chip/a;->U:F
 
     add-float/2addr v0, v1
 
-    iget v1, p0, Lcom/google/android/material/chip/a;->h0:F
+    iget v1, p0, Lcom/google/android/material/chip/a;->i0:F
 
     add-float/2addr v0, v1
 
@@ -803,7 +803,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->K0:Z
+    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->L0:Z
 
     if-eqz v0, :cond_0
 
@@ -814,7 +814,7 @@
     goto :goto_0
 
     :cond_0
-    iget v0, p0, Lcom/google/android/material/chip/a;->F:F
+    iget v0, p0, Lcom/google/android/material/chip/a;->G:F
 
     :goto_0
     return v0
@@ -824,7 +824,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->Q:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -845,7 +845,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->G0:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->H0:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -871,13 +871,13 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/material/chip/a;->C:Landroid/content/res/ColorStateList;
+    iget-object v1, p0, Lcom/google/android/material/chip/a;->D:Landroid/content/res/ColorStateList;
 
     const/4 v2, 0x0
 
     if-eqz v1, :cond_0
 
-    iget v3, p0, Lcom/google/android/material/chip/a;->q0:I
+    iget v3, p0, Lcom/google/android/material/chip/a;->r0:I
 
     .line 3
     invoke-virtual {v1, p1, v3}, Landroid/content/res/ColorStateList;->getColorForState([II)I
@@ -891,24 +891,24 @@
 
     .line 4
     :goto_0
-    iget v3, p0, Lcom/google/android/material/chip/a;->q0:I
+    iget v3, p0, Lcom/google/android/material/chip/a;->r0:I
 
     const/4 v4, 0x1
 
     if-eq v3, v1, :cond_1
 
     .line 5
-    iput v1, p0, Lcom/google/android/material/chip/a;->q0:I
+    iput v1, p0, Lcom/google/android/material/chip/a;->r0:I
 
     const/4 v0, 0x1
 
     .line 6
     :cond_1
-    iget-object v3, p0, Lcom/google/android/material/chip/a;->D:Landroid/content/res/ColorStateList;
+    iget-object v3, p0, Lcom/google/android/material/chip/a;->E:Landroid/content/res/ColorStateList;
 
     if-eqz v3, :cond_2
 
-    iget v5, p0, Lcom/google/android/material/chip/a;->r0:I
+    iget v5, p0, Lcom/google/android/material/chip/a;->s0:I
 
     .line 7
     invoke-virtual {v3, p1, v5}, Landroid/content/res/ColorStateList;->getColorForState([II)I
@@ -922,12 +922,12 @@
 
     .line 8
     :goto_1
-    iget v5, p0, Lcom/google/android/material/chip/a;->r0:I
+    iget v5, p0, Lcom/google/android/material/chip/a;->s0:I
 
     if-eq v5, v3, :cond_3
 
     .line 9
-    iput v3, p0, Lcom/google/android/material/chip/a;->r0:I
+    iput v3, p0, Lcom/google/android/material/chip/a;->s0:I
 
     const/4 v0, 0x1
 
@@ -938,7 +938,7 @@
     move-result v1
 
     .line 11
-    iget v3, p0, Lcom/google/android/material/chip/a;->s0:I
+    iget v3, p0, Lcom/google/android/material/chip/a;->t0:I
 
     if-eq v3, v1, :cond_4
 
@@ -951,7 +951,7 @@
 
     .line 12
     :goto_2
-    iget-object v5, p0, Lr4/g;->a:Lr4/g$b;
+    iget-object v5, p0, Lr4/g;->g:Lr4/g$b;
 
     iget-object v5, v5, Lr4/g$b;->d:Landroid/content/res/ColorStateList;
 
@@ -970,7 +970,7 @@
     if-eqz v3, :cond_6
 
     .line 13
-    iput v1, p0, Lcom/google/android/material/chip/a;->s0:I
+    iput v1, p0, Lcom/google/android/material/chip/a;->t0:I
 
     .line 14
     invoke-static {v1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
@@ -983,11 +983,11 @@
 
     .line 15
     :cond_6
-    iget-object v1, p0, Lcom/google/android/material/chip/a;->G:Landroid/content/res/ColorStateList;
+    iget-object v1, p0, Lcom/google/android/material/chip/a;->H:Landroid/content/res/ColorStateList;
 
     if-eqz v1, :cond_7
 
-    iget v3, p0, Lcom/google/android/material/chip/a;->t0:I
+    iget v3, p0, Lcom/google/android/material/chip/a;->u0:I
 
     .line 16
     invoke-virtual {v1, p1, v3}, Landroid/content/res/ColorStateList;->getColorForState([II)I
@@ -1001,18 +1001,18 @@
 
     .line 17
     :goto_4
-    iget v3, p0, Lcom/google/android/material/chip/a;->t0:I
+    iget v3, p0, Lcom/google/android/material/chip/a;->u0:I
 
     if-eq v3, v1, :cond_8
 
     .line 18
-    iput v1, p0, Lcom/google/android/material/chip/a;->t0:I
+    iput v1, p0, Lcom/google/android/material/chip/a;->u0:I
 
     const/4 v0, 0x1
 
     .line 19
     :cond_8
-    iget-object v1, p0, Lcom/google/android/material/chip/a;->F0:Landroid/content/res/ColorStateList;
+    iget-object v1, p0, Lcom/google/android/material/chip/a;->G0:Landroid/content/res/ColorStateList;
 
     if-eqz v1, :cond_9
 
@@ -1023,9 +1023,9 @@
 
     if-eqz v1, :cond_9
 
-    iget-object v1, p0, Lcom/google/android/material/chip/a;->F0:Landroid/content/res/ColorStateList;
+    iget-object v1, p0, Lcom/google/android/material/chip/a;->G0:Landroid/content/res/ColorStateList;
 
-    iget v3, p0, Lcom/google/android/material/chip/a;->u0:I
+    iget v3, p0, Lcom/google/android/material/chip/a;->v0:I
 
     .line 21
     invoke-virtual {v1, p1, v3}, Landroid/content/res/ColorStateList;->getColorForState([II)I
@@ -1039,15 +1039,15 @@
 
     .line 22
     :goto_5
-    iget v3, p0, Lcom/google/android/material/chip/a;->u0:I
+    iget v3, p0, Lcom/google/android/material/chip/a;->v0:I
 
     if-eq v3, v1, :cond_a
 
     .line 23
-    iput v1, p0, Lcom/google/android/material/chip/a;->u0:I
+    iput v1, p0, Lcom/google/android/material/chip/a;->v0:I
 
     .line 24
-    iget-boolean v1, p0, Lcom/google/android/material/chip/a;->E0:Z
+    iget-boolean v1, p0, Lcom/google/android/material/chip/a;->F0:Z
 
     if-eqz v1, :cond_a
 
@@ -1055,10 +1055,10 @@
 
     .line 25
     :cond_a
-    iget-object v1, p0, Lcom/google/android/material/chip/a;->p0:Lcom/google/android/material/internal/h;
+    iget-object v1, p0, Lcom/google/android/material/chip/a;->q0:Lcom/google/android/material/internal/j;
 
     .line 26
-    iget-object v1, v1, Lcom/google/android/material/internal/h;->f:Lo4/d;
+    iget-object v1, v1, Lcom/google/android/material/internal/j;->f:Lo4/d;
 
     if-eqz v1, :cond_b
 
@@ -1068,7 +1068,7 @@
     if-eqz v1, :cond_b
 
     .line 28
-    iget v3, p0, Lcom/google/android/material/chip/a;->v0:I
+    iget v3, p0, Lcom/google/android/material/chip/a;->w0:I
 
     .line 29
     invoke-virtual {v1, p1, v3}, Landroid/content/res/ColorStateList;->getColorForState([II)I
@@ -1082,12 +1082,12 @@
 
     .line 30
     :goto_6
-    iget v3, p0, Lcom/google/android/material/chip/a;->v0:I
+    iget v3, p0, Lcom/google/android/material/chip/a;->w0:I
 
     if-eq v3, v1, :cond_c
 
     .line 31
-    iput v1, p0, Lcom/google/android/material/chip/a;->v0:I
+    iput v1, p0, Lcom/google/android/material/chip/a;->w0:I
 
     const/4 v0, 0x1
 
@@ -1132,7 +1132,7 @@
     if-eqz v1, :cond_10
 
     .line 34
-    iget-boolean v1, p0, Lcom/google/android/material/chip/a;->V:Z
+    iget-boolean v1, p0, Lcom/google/android/material/chip/a;->W:Z
 
     if-eqz v1, :cond_10
 
@@ -1145,11 +1145,11 @@
 
     .line 35
     :goto_9
-    iget-boolean v3, p0, Lcom/google/android/material/chip/a;->w0:Z
+    iget-boolean v3, p0, Lcom/google/android/material/chip/a;->x0:Z
 
     if-eq v3, v1, :cond_12
 
-    iget-object v3, p0, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
+    iget-object v3, p0, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
 
     if-eqz v3, :cond_12
 
@@ -1159,7 +1159,7 @@
     move-result v0
 
     .line 37
-    iput-boolean v1, p0, Lcom/google/android/material/chip/a;->w0:Z
+    iput-boolean v1, p0, Lcom/google/android/material/chip/a;->x0:Z
 
     .line 38
     invoke-virtual {p0}, Lcom/google/android/material/chip/a;->F()F
@@ -1184,11 +1184,11 @@
 
     .line 39
     :goto_a
-    iget-object v3, p0, Lcom/google/android/material/chip/a;->B0:Landroid/content/res/ColorStateList;
+    iget-object v3, p0, Lcom/google/android/material/chip/a;->C0:Landroid/content/res/ColorStateList;
 
     if-eqz v3, :cond_13
 
-    iget v5, p0, Lcom/google/android/material/chip/a;->x0:I
+    iget v5, p0, Lcom/google/android/material/chip/a;->y0:I
 
     invoke-virtual {v3, p1, v5}, Landroid/content/res/ColorStateList;->getColorForState([II)I
 
@@ -1201,23 +1201,23 @@
 
     .line 40
     :goto_b
-    iget v5, p0, Lcom/google/android/material/chip/a;->x0:I
+    iget v5, p0, Lcom/google/android/material/chip/a;->y0:I
 
     if-eq v5, v3, :cond_14
 
     .line 41
-    iput v3, p0, Lcom/google/android/material/chip/a;->x0:I
+    iput v3, p0, Lcom/google/android/material/chip/a;->y0:I
 
     .line 42
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->B0:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->C0:Landroid/content/res/ColorStateList;
 
-    iget-object v3, p0, Lcom/google/android/material/chip/a;->C0:Landroid/graphics/PorterDuff$Mode;
+    iget-object v3, p0, Lcom/google/android/material/chip/a;->D0:Landroid/graphics/PorterDuff$Mode;
 
-    invoke-static {p0, v0, v3}, Li4/a;->a(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;Landroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuffColorFilter;
+    invoke-static {p0, v0, v3}, Lj4/a;->a(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;Landroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuffColorFilter;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/material/chip/a;->A0:Landroid/graphics/PorterDuffColorFilter;
+    iput-object v0, p0, Lcom/google/android/material/chip/a;->B0:Landroid/graphics/PorterDuffColorFilter;
 
     goto :goto_c
 
@@ -1226,7 +1226,7 @@
 
     .line 43
     :goto_c
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->L:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->M:Landroid/graphics/drawable/Drawable;
 
     invoke-static {v0}, Lcom/google/android/material/chip/a;->M(Landroid/graphics/drawable/Drawable;)Z
 
@@ -1235,7 +1235,7 @@
     if-eqz v0, :cond_15
 
     .line 44
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->L:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->M:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
@@ -1245,7 +1245,7 @@
 
     .line 45
     :cond_15
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
 
     invoke-static {v0}, Lcom/google/android/material/chip/a;->M(Landroid/graphics/drawable/Drawable;)Z
 
@@ -1254,7 +1254,7 @@
     if-eqz v0, :cond_16
 
     .line 46
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
@@ -1264,7 +1264,7 @@
 
     .line 47
     :cond_16
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->Q:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
 
     invoke-static {v0}, Lcom/google/android/material/chip/a;->M(Landroid/graphics/drawable/Drawable;)Z
 
@@ -1294,7 +1294,7 @@
     invoke-static {p2, v2, v0, p1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 51
-    iget-object p1, p0, Lcom/google/android/material/chip/a;->Q:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p1, v0}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
@@ -1308,7 +1308,7 @@
 
     if-eqz p1, :cond_18
 
-    iget-object p1, p0, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/material/chip/a;->S:Landroid/graphics/drawable/Drawable;
 
     invoke-static {p1}, Lcom/google/android/material/chip/a;->M(Landroid/graphics/drawable/Drawable;)Z
 
@@ -1317,7 +1317,7 @@
     if-eqz p1, :cond_18
 
     .line 53
-    iget-object p1, p0, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/material/chip/a;->S:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p1, p2}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
@@ -1345,12 +1345,12 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->V:Z
+    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->W:Z
 
     if-eq v0, p1, :cond_1
 
     .line 2
-    iput-boolean p1, p0, Lcom/google/android/material/chip/a;->V:Z
+    iput-boolean p1, p0, Lcom/google/android/material/chip/a;->W:Z
 
     .line 3
     invoke-virtual {p0}, Lcom/google/android/material/chip/a;->F()F
@@ -1360,14 +1360,14 @@
     if-nez p1, :cond_0
 
     .line 4
-    iget-boolean p1, p0, Lcom/google/android/material/chip/a;->w0:Z
+    iget-boolean p1, p0, Lcom/google/android/material/chip/a;->x0:Z
 
     if-eqz p1, :cond_0
 
     const/4 p1, 0x0
 
     .line 5
-    iput-boolean p1, p0, Lcom/google/android/material/chip/a;->w0:Z
+    iput-boolean p1, p0, Lcom/google/android/material/chip/a;->x0:Z
 
     .line 6
     :cond_0
@@ -1393,7 +1393,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
 
     if-eq v0, p1, :cond_0
 
@@ -1403,7 +1403,7 @@
     move-result v0
 
     .line 3
-    iput-object p1, p0, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
 
     .line 4
     invoke-virtual {p0}, Lcom/google/android/material/chip/a;->F()F
@@ -1411,12 +1411,12 @@
     move-result p1
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0, v1}, Lcom/google/android/material/chip/a;->w0(Landroid/graphics/drawable/Drawable;)V
 
     .line 6
-    iget-object v1, p0, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0, v1}, Lcom/google/android/material/chip/a;->D(Landroid/graphics/drawable/Drawable;)V
 
@@ -1438,23 +1438,23 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->Y:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->Z:Landroid/content/res/ColorStateList;
 
     if-eq v0, p1, :cond_2
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/chip/a;->Y:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/chip/a;->Z:Landroid/content/res/ColorStateList;
 
     .line 3
+    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->X:Z
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
+
+    if-eqz v0, :cond_0
+
     iget-boolean v0, p0, Lcom/google/android/material/chip/a;->W:Z
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
-
-    if-eqz v0, :cond_0
-
-    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->V:Z
 
     if-eqz v0, :cond_0
 
@@ -1469,7 +1469,7 @@
     if-eqz v0, :cond_1
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
 
     invoke-static {v0, p1}, Ly/a;->i(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
 
@@ -1489,7 +1489,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->W:Z
+    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->X:Z
 
     if-eq v0, p1, :cond_2
 
@@ -1499,7 +1499,7 @@
     move-result v0
 
     .line 3
-    iput-boolean p1, p0, Lcom/google/android/material/chip/a;->W:Z
+    iput-boolean p1, p0, Lcom/google/android/material/chip/a;->X:Z
 
     .line 4
     invoke-virtual {p0}, Lcom/google/android/material/chip/a;->t0()Z
@@ -1521,7 +1521,7 @@
     if-eqz p1, :cond_1
 
     .line 5
-    iget-object p1, p0, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/a;->D(Landroid/graphics/drawable/Drawable;)V
 
@@ -1529,7 +1529,7 @@
 
     .line 6
     :cond_1
-    iget-object p1, p0, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/a;->w0(Landroid/graphics/drawable/Drawable;)V
 
@@ -1548,12 +1548,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->D:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->E:Landroid/content/res/ColorStateList;
 
     if-eq v0, p1, :cond_0
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/chip/a;->D:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/chip/a;->E:Landroid/content/res/ColorStateList;
 
     .line 3
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getState()[I
@@ -1572,17 +1572,17 @@
     .end annotation
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/chip/a;->F:F
+    iget v0, p0, Lcom/google/android/material/chip/a;->G:F
 
     cmpl-float v0, v0, p1
 
     if-eqz v0, :cond_0
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/chip/a;->F:F
+    iput p1, p0, Lcom/google/android/material/chip/a;->G:F
 
     .line 3
-    iget-object v0, p0, Lr4/g;->a:Lr4/g$b;
+    iget-object v0, p0, Lr4/g;->g:Lr4/g$b;
 
     iget-object v0, v0, Lr4/g$b;->a:Lr4/k;
 
@@ -1592,7 +1592,7 @@
     move-result-object p1
 
     .line 5
-    iget-object v0, p0, Lr4/g;->a:Lr4/g$b;
+    iget-object v0, p0, Lr4/g;->g:Lr4/g$b;
 
     iput-object p1, v0, Lr4/g$b;->a:Lr4/k;
 
@@ -1607,14 +1607,14 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/chip/a;->i0:F
+    iget v0, p0, Lcom/google/android/material/chip/a;->j0:F
 
     cmpl-float v0, v0, p1
 
     if-eqz v0, :cond_0
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/chip/a;->i0:F
+    iput p1, p0, Lcom/google/android/material/chip/a;->j0:F
 
     .line 3
     invoke-virtual {p0}, Lr4/g;->invalidateSelf()V
@@ -1630,7 +1630,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->L:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->M:Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x0
 
@@ -1665,7 +1665,7 @@
     move-result-object v1
 
     :cond_1
-    iput-object v1, p0, Lcom/google/android/material/chip/a;->L:Landroid/graphics/drawable/Drawable;
+    iput-object v1, p0, Lcom/google/android/material/chip/a;->M:Landroid/graphics/drawable/Drawable;
 
     .line 4
     invoke-virtual {p0}, Lcom/google/android/material/chip/a;->F()F
@@ -1683,7 +1683,7 @@
     if-eqz v0, :cond_2
 
     .line 7
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->L:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->M:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0, v0}, Lcom/google/android/material/chip/a;->D(Landroid/graphics/drawable/Drawable;)V
 
@@ -1706,7 +1706,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/chip/a;->N:F
+    iget v0, p0, Lcom/google/android/material/chip/a;->O:F
 
     cmpl-float v0, v0, p1
 
@@ -1718,7 +1718,7 @@
     move-result v0
 
     .line 3
-    iput p1, p0, Lcom/google/android/material/chip/a;->N:F
+    iput p1, p0, Lcom/google/android/material/chip/a;->O:F
 
     .line 4
     invoke-virtual {p0}, Lcom/google/android/material/chip/a;->F()F
@@ -1745,15 +1745,15 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Lcom/google/android/material/chip/a;->O:Z
+    iput-boolean v0, p0, Lcom/google/android/material/chip/a;->P:Z
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->M:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->N:Landroid/content/res/ColorStateList;
 
     if-eq v0, p1, :cond_1
 
     .line 3
-    iput-object p1, p0, Lcom/google/android/material/chip/a;->M:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/chip/a;->N:Landroid/content/res/ColorStateList;
 
     .line 4
     invoke-virtual {p0}, Lcom/google/android/material/chip/a;->u0()Z
@@ -1763,7 +1763,7 @@
     if-eqz v0, :cond_0
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->L:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->M:Landroid/graphics/drawable/Drawable;
 
     invoke-static {v0, p1}, Ly/a;->i(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
 
@@ -1783,7 +1783,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->K:Z
+    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->L:Z
 
     if-eq v0, p1, :cond_2
 
@@ -1793,7 +1793,7 @@
     move-result v0
 
     .line 3
-    iput-boolean p1, p0, Lcom/google/android/material/chip/a;->K:Z
+    iput-boolean p1, p0, Lcom/google/android/material/chip/a;->L:Z
 
     .line 4
     invoke-virtual {p0}, Lcom/google/android/material/chip/a;->u0()Z
@@ -1815,7 +1815,7 @@
     if-eqz p1, :cond_1
 
     .line 5
-    iget-object p1, p0, Lcom/google/android/material/chip/a;->L:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/material/chip/a;->M:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/a;->D(Landroid/graphics/drawable/Drawable;)V
 
@@ -1823,7 +1823,7 @@
 
     .line 6
     :cond_1
-    iget-object p1, p0, Lcom/google/android/material/chip/a;->L:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/material/chip/a;->M:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/a;->w0(Landroid/graphics/drawable/Drawable;)V
 
@@ -1854,14 +1854,14 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/chip/a;->E:F
+    iget v0, p0, Lcom/google/android/material/chip/a;->F:F
 
     cmpl-float v0, v0, p1
 
     if-eqz v0, :cond_0
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/chip/a;->E:F
+    iput p1, p0, Lcom/google/android/material/chip/a;->F:F
 
     .line 3
     invoke-virtual {p0}, Lr4/g;->invalidateSelf()V
@@ -1877,14 +1877,14 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/chip/a;->b0:F
+    iget v0, p0, Lcom/google/android/material/chip/a;->c0:F
 
     cmpl-float v0, v0, p1
 
     if-eqz v0, :cond_0
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/chip/a;->b0:F
+    iput p1, p0, Lcom/google/android/material/chip/a;->c0:F
 
     .line 3
     invoke-virtual {p0}, Lr4/g;->invalidateSelf()V
@@ -1900,15 +1900,15 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->G:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->H:Landroid/content/res/ColorStateList;
 
     if-eq v0, p1, :cond_1
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/chip/a;->G:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/chip/a;->H:Landroid/content/res/ColorStateList;
 
     .line 3
-    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->K0:Z
+    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->L0:Z
 
     if-eqz v0, :cond_0
 
@@ -1931,27 +1931,27 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/chip/a;->H:F
+    iget v0, p0, Lcom/google/android/material/chip/a;->I:F
 
     cmpl-float v0, v0, p1
 
     if-eqz v0, :cond_1
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/chip/a;->H:F
+    iput p1, p0, Lcom/google/android/material/chip/a;->I:F
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->k0:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
     .line 4
-    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->K0:Z
+    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->L0:Z
 
     if-eqz v0, :cond_0
 
     .line 5
-    iget-object v0, p0, Lr4/g;->a:Lr4/g$b;
+    iget-object v0, p0, Lr4/g;->g:Lr4/g$b;
 
     iput p1, v0, Lr4/g$b;->l:F
 
@@ -1986,7 +1986,7 @@
     if-nez v0, :cond_19
 
     .line 3
-    iget v12, v6, Lcom/google/android/material/chip/a;->y0:I
+    iget v12, v6, Lcom/google/android/material/chip/a;->z0:I
 
     if-nez v12, :cond_0
 
@@ -2080,31 +2080,31 @@
 
     .line 8
     :goto_1
-    iget-boolean v0, v6, Lcom/google/android/material/chip/a;->K0:Z
+    iget-boolean v0, v6, Lcom/google/android/material/chip/a;->L0:Z
 
     if-nez v0, :cond_3
 
     .line 9
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->k0:Landroid/graphics/Paint;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint;
 
-    iget v1, v6, Lcom/google/android/material/chip/a;->q0:I
+    iget v1, v6, Lcom/google/android/material/chip/a;->r0:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 10
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->k0:Landroid/graphics/Paint;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 11
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     invoke-virtual {v0, v15}, Landroid/graphics/RectF;->set(Landroid/graphics/Rect;)V
 
     .line 12
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/material/chip/a;->J()F
 
@@ -2114,54 +2114,54 @@
 
     move-result v2
 
-    iget-object v3, v6, Lcom/google/android/material/chip/a;->k0:Landroid/graphics/Paint;
+    iget-object v3, v6, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint;
 
     invoke-virtual {v14, v0, v1, v2, v3}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
 
     .line 13
     :cond_3
-    iget-boolean v0, v6, Lcom/google/android/material/chip/a;->K0:Z
+    iget-boolean v0, v6, Lcom/google/android/material/chip/a;->L0:Z
 
     if-nez v0, :cond_5
 
     .line 14
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->k0:Landroid/graphics/Paint;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint;
 
-    iget v1, v6, Lcom/google/android/material/chip/a;->r0:I
+    iget v1, v6, Lcom/google/android/material/chip/a;->s0:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 15
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->k0:Landroid/graphics/Paint;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 16
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->k0:Landroid/graphics/Paint;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint;
 
     .line 17
-    iget-object v1, v6, Lcom/google/android/material/chip/a;->z0:Landroid/graphics/ColorFilter;
+    iget-object v1, v6, Lcom/google/android/material/chip/a;->A0:Landroid/graphics/ColorFilter;
 
     if-eqz v1, :cond_4
 
     goto :goto_2
 
     :cond_4
-    iget-object v1, v6, Lcom/google/android/material/chip/a;->A0:Landroid/graphics/PorterDuffColorFilter;
+    iget-object v1, v6, Lcom/google/android/material/chip/a;->B0:Landroid/graphics/PorterDuffColorFilter;
 
     .line 18
     :goto_2
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
 
     .line 19
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     invoke-virtual {v0, v15}, Landroid/graphics/RectF;->set(Landroid/graphics/Rect;)V
 
     .line 20
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/material/chip/a;->J()F
 
@@ -2171,13 +2171,13 @@
 
     move-result v2
 
-    iget-object v3, v6, Lcom/google/android/material/chip/a;->k0:Landroid/graphics/Paint;
+    iget-object v3, v6, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint;
 
     invoke-virtual {v14, v0, v1, v2, v3}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
 
     .line 21
     :cond_5
-    iget-boolean v0, v6, Lcom/google/android/material/chip/a;->K0:Z
+    iget-boolean v0, v6, Lcom/google/android/material/chip/a;->L0:Z
 
     if-eqz v0, :cond_6
 
@@ -2186,7 +2186,7 @@
 
     .line 23
     :cond_6
-    iget v0, v6, Lcom/google/android/material/chip/a;->H:F
+    iget v0, v6, Lcom/google/android/material/chip/a;->I:F
 
     const/high16 v7, 0x40000000    # 2.0f
 
@@ -2196,41 +2196,41 @@
 
     if-lez v0, :cond_9
 
-    iget-boolean v0, v6, Lcom/google/android/material/chip/a;->K0:Z
+    iget-boolean v0, v6, Lcom/google/android/material/chip/a;->L0:Z
 
     if-nez v0, :cond_9
 
     .line 24
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->k0:Landroid/graphics/Paint;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint;
 
-    iget v1, v6, Lcom/google/android/material/chip/a;->t0:I
+    iget v1, v6, Lcom/google/android/material/chip/a;->u0:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 25
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->k0:Landroid/graphics/Paint;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 26
-    iget-boolean v0, v6, Lcom/google/android/material/chip/a;->K0:Z
+    iget-boolean v0, v6, Lcom/google/android/material/chip/a;->L0:Z
 
     if-nez v0, :cond_8
 
     .line 27
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->k0:Landroid/graphics/Paint;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint;
 
     .line 28
-    iget-object v1, v6, Lcom/google/android/material/chip/a;->z0:Landroid/graphics/ColorFilter;
+    iget-object v1, v6, Lcom/google/android/material/chip/a;->A0:Landroid/graphics/ColorFilter;
 
     if-eqz v1, :cond_7
 
     goto :goto_3
 
     :cond_7
-    iget-object v1, v6, Lcom/google/android/material/chip/a;->A0:Landroid/graphics/PorterDuffColorFilter;
+    iget-object v1, v6, Lcom/google/android/material/chip/a;->B0:Landroid/graphics/PorterDuffColorFilter;
 
     .line 29
     :goto_3
@@ -2238,13 +2238,13 @@
 
     .line 30
     :cond_8
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     iget v1, v15, Landroid/graphics/Rect;->left:I
 
     int-to-float v1, v1
 
-    iget v2, v6, Lcom/google/android/material/chip/a;->H:F
+    iget v2, v6, Lcom/google/android/material/chip/a;->I:F
 
     div-float/2addr v2, v7
 
@@ -2271,48 +2271,48 @@
     invoke-virtual {v0, v1, v3, v9, v10}, Landroid/graphics/RectF;->set(FFFF)V
 
     .line 31
-    iget v0, v6, Lcom/google/android/material/chip/a;->F:F
+    iget v0, v6, Lcom/google/android/material/chip/a;->G:F
 
-    iget v1, v6, Lcom/google/android/material/chip/a;->H:F
+    iget v1, v6, Lcom/google/android/material/chip/a;->I:F
 
     div-float/2addr v1, v7
 
     sub-float/2addr v0, v1
 
     .line 32
-    iget-object v1, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v1, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
-    iget-object v2, v6, Lcom/google/android/material/chip/a;->k0:Landroid/graphics/Paint;
+    iget-object v2, v6, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint;
 
     invoke-virtual {v14, v1, v0, v0, v2}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
 
     .line 33
     :cond_9
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->k0:Landroid/graphics/Paint;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint;
 
-    iget v1, v6, Lcom/google/android/material/chip/a;->u0:I
+    iget v1, v6, Lcom/google/android/material/chip/a;->v0:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 34
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->k0:Landroid/graphics/Paint;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 35
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     invoke-virtual {v0, v15}, Landroid/graphics/RectF;->set(Landroid/graphics/Rect;)V
 
     .line 36
-    iget-boolean v0, v6, Lcom/google/android/material/chip/a;->K0:Z
+    iget-boolean v0, v6, Lcom/google/android/material/chip/a;->L0:Z
 
     if-nez v0, :cond_a
 
     .line 37
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/material/chip/a;->J()F
 
@@ -2322,7 +2322,7 @@
 
     move-result v2
 
-    iget-object v3, v6, Lcom/google/android/material/chip/a;->k0:Landroid/graphics/Paint;
+    iget-object v3, v6, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint;
 
     invoke-virtual {v14, v0, v1, v2, v3}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
 
@@ -2338,21 +2338,21 @@
 
     invoke-direct {v0, v15}, Landroid/graphics/RectF;-><init>(Landroid/graphics/Rect;)V
 
-    iget-object v1, v6, Lcom/google/android/material/chip/a;->o0:Landroid/graphics/Path;
+    iget-object v1, v6, Lcom/google/android/material/chip/a;->p0:Landroid/graphics/Path;
 
     invoke-virtual {v6, v0, v1}, Lr4/g;->c(Landroid/graphics/RectF;Landroid/graphics/Path;)V
 
     .line 39
-    iget-object v2, v6, Lcom/google/android/material/chip/a;->k0:Landroid/graphics/Paint;
+    iget-object v2, v6, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint;
 
-    iget-object v3, v6, Lcom/google/android/material/chip/a;->o0:Landroid/graphics/Path;
+    iget-object v3, v6, Lcom/google/android/material/chip/a;->p0:Landroid/graphics/Path;
 
     invoke-virtual/range {p0 .. p0}, Lr4/g;->h()Landroid/graphics/RectF;
 
     move-result-object v9
 
     .line 40
-    iget-object v0, v6, Lr4/g;->a:Lr4/g$b;
+    iget-object v0, v6, Lr4/g;->g:Lr4/g$b;
 
     iget-object v10, v0, Lr4/g$b;->a:Lr4/k;
 
@@ -2379,12 +2379,12 @@
     if-eqz v0, :cond_b
 
     .line 42
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     invoke-virtual {v6, v15, v0}, Lcom/google/android/material/chip/a;->E(Landroid/graphics/Rect;Landroid/graphics/RectF;)V
 
     .line 43
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     iget v1, v0, Landroid/graphics/RectF;->left:F
 
@@ -2395,9 +2395,9 @@
     invoke-virtual {v14, v1, v0}, Landroid/graphics/Canvas;->translate(FF)V
 
     .line 46
-    iget-object v2, v6, Lcom/google/android/material/chip/a;->L:Landroid/graphics/drawable/Drawable;
+    iget-object v2, v6, Lcom/google/android/material/chip/a;->M:Landroid/graphics/drawable/Drawable;
 
-    iget-object v3, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v3, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     invoke-virtual {v3}, Landroid/graphics/RectF;->width()F
 
@@ -2405,7 +2405,7 @@
 
     float-to-int v3, v3
 
-    iget-object v4, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v4, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     invoke-virtual {v4}, Landroid/graphics/RectF;->height()F
 
@@ -2416,7 +2416,7 @@
     invoke-virtual {v2, v11, v11, v3, v4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 47
-    iget-object v2, v6, Lcom/google/android/material/chip/a;->L:Landroid/graphics/drawable/Drawable;
+    iget-object v2, v6, Lcom/google/android/material/chip/a;->M:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v2, v14}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
@@ -2436,12 +2436,12 @@
     if-eqz v0, :cond_c
 
     .line 50
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     invoke-virtual {v6, v15, v0}, Lcom/google/android/material/chip/a;->E(Landroid/graphics/Rect;Landroid/graphics/RectF;)V
 
     .line 51
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     iget v1, v0, Landroid/graphics/RectF;->left:F
 
@@ -2452,9 +2452,9 @@
     invoke-virtual {v14, v1, v0}, Landroid/graphics/Canvas;->translate(FF)V
 
     .line 54
-    iget-object v2, v6, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
+    iget-object v2, v6, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
 
-    iget-object v3, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v3, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     invoke-virtual {v3}, Landroid/graphics/RectF;->width()F
 
@@ -2462,7 +2462,7 @@
 
     float-to-int v3, v3
 
-    iget-object v4, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v4, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     invoke-virtual {v4}, Landroid/graphics/RectF;->height()F
 
@@ -2473,7 +2473,7 @@
     invoke-virtual {v2, v11, v11, v3, v4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 55
-    iget-object v2, v6, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
+    iget-object v2, v6, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v2, v14}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
@@ -2486,17 +2486,17 @@
 
     .line 57
     :cond_c
-    iget-boolean v0, v6, Lcom/google/android/material/chip/a;->I0:Z
+    iget-boolean v0, v6, Lcom/google/android/material/chip/a;->J0:Z
 
     if-eqz v0, :cond_15
 
     .line 58
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->J:Ljava/lang/CharSequence;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->K:Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_15
 
     .line 59
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/PointF;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->o0:Landroid/graphics/PointF;
 
     .line 60
     invoke-virtual {v0, v8, v8}, Landroid/graphics/PointF;->set(FF)V
@@ -2505,12 +2505,12 @@
     sget-object v1, Landroid/graphics/Paint$Align;->LEFT:Landroid/graphics/Paint$Align;
 
     .line 62
-    iget-object v2, v6, Lcom/google/android/material/chip/a;->J:Ljava/lang/CharSequence;
+    iget-object v2, v6, Lcom/google/android/material/chip/a;->K:Ljava/lang/CharSequence;
 
     if-eqz v2, :cond_e
 
     .line 63
-    iget v1, v6, Lcom/google/android/material/chip/a;->b0:F
+    iget v1, v6, Lcom/google/android/material/chip/a;->c0:F
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/material/chip/a;->F()F
 
@@ -2518,7 +2518,7 @@
 
     add-float/2addr v2, v1
 
-    iget v1, v6, Lcom/google/android/material/chip/a;->e0:F
+    iget v1, v6, Lcom/google/android/material/chip/a;->f0:F
 
     add-float/2addr v2, v1
 
@@ -2565,18 +2565,18 @@
     int-to-float v2, v2
 
     .line 70
-    iget-object v3, v6, Lcom/google/android/material/chip/a;->p0:Lcom/google/android/material/internal/h;
+    iget-object v3, v6, Lcom/google/android/material/chip/a;->q0:Lcom/google/android/material/internal/j;
 
     .line 71
-    iget-object v3, v3, Lcom/google/android/material/internal/h;->a:Landroid/text/TextPaint;
+    iget-object v3, v3, Lcom/google/android/material/internal/j;->a:Landroid/text/TextPaint;
 
     .line 72
-    iget-object v4, v6, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint$FontMetrics;
+    iget-object v4, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/Paint$FontMetrics;
 
     invoke-virtual {v3, v4}, Landroid/text/TextPaint;->getFontMetrics(Landroid/graphics/Paint$FontMetrics;)F
 
     .line 73
-    iget-object v3, v6, Lcom/google/android/material/chip/a;->l0:Landroid/graphics/Paint$FontMetrics;
+    iget-object v3, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/Paint$FontMetrics;
 
     iget v4, v3, Landroid/graphics/Paint$FontMetrics;->descent:F
 
@@ -2593,18 +2593,18 @@
 
     .line 75
     :cond_e
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     .line 76
     invoke-virtual {v0}, Landroid/graphics/RectF;->setEmpty()V
 
     .line 77
-    iget-object v2, v6, Lcom/google/android/material/chip/a;->J:Ljava/lang/CharSequence;
+    iget-object v2, v6, Lcom/google/android/material/chip/a;->K:Ljava/lang/CharSequence;
 
     if-eqz v2, :cond_10
 
     .line 78
-    iget v2, v6, Lcom/google/android/material/chip/a;->b0:F
+    iget v2, v6, Lcom/google/android/material/chip/a;->c0:F
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/material/chip/a;->F()F
 
@@ -2612,12 +2612,12 @@
 
     add-float/2addr v3, v2
 
-    iget v2, v6, Lcom/google/android/material/chip/a;->e0:F
+    iget v2, v6, Lcom/google/android/material/chip/a;->f0:F
 
     add-float/2addr v3, v2
 
     .line 79
-    iget v2, v6, Lcom/google/android/material/chip/a;->i0:F
+    iget v2, v6, Lcom/google/android/material/chip/a;->j0:F
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/material/chip/a;->I()F
 
@@ -2625,7 +2625,7 @@
 
     add-float/2addr v4, v2
 
-    iget v2, v6, Lcom/google/android/material/chip/a;->f0:F
+    iget v2, v6, Lcom/google/android/material/chip/a;->g0:F
 
     add-float/2addr v4, v2
 
@@ -2692,15 +2692,15 @@
 
     .line 87
     :cond_10
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->p0:Lcom/google/android/material/internal/h;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->q0:Lcom/google/android/material/internal/j;
 
     .line 88
-    iget-object v2, v0, Lcom/google/android/material/internal/h;->f:Lo4/d;
+    iget-object v2, v0, Lcom/google/android/material/internal/j;->f:Lo4/d;
 
     if-eqz v2, :cond_11
 
     .line 89
-    iget-object v0, v0, Lcom/google/android/material/internal/h;->a:Landroid/text/TextPaint;
+    iget-object v0, v0, Lcom/google/android/material/internal/j;->a:Landroid/text/TextPaint;
 
     .line 90
     invoke-virtual/range {p0 .. p0}, Landroid/graphics/drawable/Drawable;->getState()[I
@@ -2710,41 +2710,41 @@
     iput-object v2, v0, Landroid/text/TextPaint;->drawableState:[I
 
     .line 91
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->p0:Lcom/google/android/material/internal/h;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->q0:Lcom/google/android/material/internal/j;
 
-    iget-object v2, v6, Lcom/google/android/material/chip/a;->j0:Landroid/content/Context;
+    iget-object v2, v6, Lcom/google/android/material/chip/a;->k0:Landroid/content/Context;
 
     .line 92
-    iget-object v3, v0, Lcom/google/android/material/internal/h;->f:Lo4/d;
+    iget-object v3, v0, Lcom/google/android/material/internal/j;->f:Lo4/d;
 
-    iget-object v4, v0, Lcom/google/android/material/internal/h;->a:Landroid/text/TextPaint;
+    iget-object v4, v0, Lcom/google/android/material/internal/j;->a:Landroid/text/TextPaint;
 
-    iget-object v0, v0, Lcom/google/android/material/internal/h;->b:La2/a0;
+    iget-object v0, v0, Lcom/google/android/material/internal/j;->b:La2/a0;
 
     invoke-virtual {v3, v2, v4, v0}, Lo4/d;->c(Landroid/content/Context;Landroid/text/TextPaint;La2/a0;)V
 
     .line 93
     :cond_11
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->p0:Lcom/google/android/material/internal/h;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->q0:Lcom/google/android/material/internal/j;
 
     .line 94
-    iget-object v0, v0, Lcom/google/android/material/internal/h;->a:Landroid/text/TextPaint;
+    iget-object v0, v0, Lcom/google/android/material/internal/j;->a:Landroid/text/TextPaint;
 
     .line 95
     invoke-virtual {v0, v1}, Landroid/text/TextPaint;->setTextAlign(Landroid/graphics/Paint$Align;)V
 
     .line 96
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->p0:Lcom/google/android/material/internal/h;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->q0:Lcom/google/android/material/internal/j;
 
     .line 97
-    iget-object v1, v6, Lcom/google/android/material/chip/a;->J:Ljava/lang/CharSequence;
+    iget-object v1, v6, Lcom/google/android/material/chip/a;->K:Ljava/lang/CharSequence;
 
     .line 98
     invoke-interface {v1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/google/android/material/internal/h;->a(Ljava/lang/String;)F
+    invoke-virtual {v0, v1}, Lcom/google/android/material/internal/j;->a(Ljava/lang/String;)F
 
     move-result v0
 
@@ -2752,7 +2752,7 @@
 
     move-result v0
 
-    iget-object v1, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v1, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     .line 99
     invoke-virtual {v1}, Landroid/graphics/RectF;->width()F
@@ -2781,7 +2781,7 @@
     move-result v1
 
     .line 101
-    iget-object v2, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v2, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     invoke-virtual {v14, v2}, Landroid/graphics/Canvas;->clipRect(Landroid/graphics/RectF;)Z
 
@@ -2792,29 +2792,29 @@
 
     .line 102
     :goto_8
-    iget-object v2, v6, Lcom/google/android/material/chip/a;->J:Ljava/lang/CharSequence;
+    iget-object v2, v6, Lcom/google/android/material/chip/a;->K:Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_14
 
     .line 103
-    iget-object v3, v6, Lcom/google/android/material/chip/a;->H0:Landroid/text/TextUtils$TruncateAt;
+    iget-object v3, v6, Lcom/google/android/material/chip/a;->I0:Landroid/text/TextUtils$TruncateAt;
 
     if-eqz v3, :cond_14
 
     .line 104
-    iget-object v3, v6, Lcom/google/android/material/chip/a;->p0:Lcom/google/android/material/internal/h;
+    iget-object v3, v6, Lcom/google/android/material/chip/a;->q0:Lcom/google/android/material/internal/j;
 
     .line 105
-    iget-object v3, v3, Lcom/google/android/material/internal/h;->a:Landroid/text/TextPaint;
+    iget-object v3, v3, Lcom/google/android/material/internal/j;->a:Landroid/text/TextPaint;
 
     .line 106
-    iget-object v4, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v4, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     invoke-virtual {v4}, Landroid/graphics/RectF;->width()F
 
     move-result v4
 
-    iget-object v5, v6, Lcom/google/android/material/chip/a;->H0:Landroid/text/TextUtils$TruncateAt;
+    iget-object v5, v6, Lcom/google/android/material/chip/a;->I0:Landroid/text/TextUtils$TruncateAt;
 
     invoke-static {v2, v3, v4, v5}, Landroid/text/TextUtils;->ellipsize(Ljava/lang/CharSequence;Landroid/text/TextPaint;FLandroid/text/TextUtils$TruncateAt;)Ljava/lang/CharSequence;
 
@@ -2830,16 +2830,16 @@
 
     move-result v10
 
-    iget-object v2, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/PointF;
+    iget-object v2, v6, Lcom/google/android/material/chip/a;->o0:Landroid/graphics/PointF;
 
     iget v3, v2, Landroid/graphics/PointF;->x:F
 
     iget v2, v2, Landroid/graphics/PointF;->y:F
 
-    iget-object v4, v6, Lcom/google/android/material/chip/a;->p0:Lcom/google/android/material/internal/h;
+    iget-object v4, v6, Lcom/google/android/material/chip/a;->q0:Lcom/google/android/material/internal/j;
 
     .line 108
-    iget-object v4, v4, Lcom/google/android/material/internal/h;->a:Landroid/text/TextPaint;
+    iget-object v4, v4, Lcom/google/android/material/internal/j;->a:Landroid/text/TextPaint;
 
     move-object/from16 v7, p1
 
@@ -2882,12 +2882,12 @@
     if-eqz v0, :cond_18
 
     .line 112
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     invoke-virtual {v6, v15, v0}, Lcom/google/android/material/chip/a;->G(Landroid/graphics/Rect;Landroid/graphics/RectF;)V
 
     .line 113
-    iget-object v0, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v0, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     iget v1, v0, Landroid/graphics/RectF;->left:F
 
@@ -2898,9 +2898,9 @@
     invoke-virtual {v14, v1, v0}, Landroid/graphics/Canvas;->translate(FF)V
 
     .line 116
-    iget-object v4, v6, Lcom/google/android/material/chip/a;->Q:Landroid/graphics/drawable/Drawable;
+    iget-object v4, v6, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
 
-    iget-object v7, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v7, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     invoke-virtual {v7}, Landroid/graphics/RectF;->width()F
 
@@ -2908,7 +2908,7 @@
 
     float-to-int v7, v7
 
-    iget-object v8, v6, Lcom/google/android/material/chip/a;->m0:Landroid/graphics/RectF;
+    iget-object v8, v6, Lcom/google/android/material/chip/a;->n0:Landroid/graphics/RectF;
 
     invoke-virtual {v8}, Landroid/graphics/RectF;->height()F
 
@@ -2924,9 +2924,9 @@
     if-eqz v4, :cond_17
 
     .line 118
-    iget-object v4, v6, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
+    iget-object v4, v6, Lcom/google/android/material/chip/a;->S:Landroid/graphics/drawable/Drawable;
 
-    iget-object v5, v6, Lcom/google/android/material/chip/a;->Q:Landroid/graphics/drawable/Drawable;
+    iget-object v5, v6, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v5}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
 
@@ -2935,12 +2935,12 @@
     invoke-virtual {v4, v5}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
     .line 119
-    iget-object v4, v6, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
+    iget-object v4, v6, Lcom/google/android/material/chip/a;->S:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v4}, Landroid/graphics/drawable/Drawable;->jumpToCurrentState()V
 
     .line 120
-    iget-object v4, v6, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
+    iget-object v4, v6, Lcom/google/android/material/chip/a;->S:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v4, v14}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
@@ -2948,7 +2948,7 @@
 
     .line 121
     :cond_17
-    iget-object v4, v6, Lcom/google/android/material/chip/a;->Q:Landroid/graphics/drawable/Drawable;
+    iget-object v4, v6, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v4, v14}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
@@ -2962,7 +2962,7 @@
 
     .line 123
     :cond_18
-    iget v0, v6, Lcom/google/android/material/chip/a;->y0:I
+    iget v0, v6, Lcom/google/android/material/chip/a;->z0:I
 
     if-ge v0, v3, :cond_19
 
@@ -3006,7 +3006,7 @@
     const/4 p1, 0x0
 
     :goto_0
-    iput-object p1, p0, Lcom/google/android/material/chip/a;->Q:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
 
     .line 4
     sget-boolean p1, Lp4/b;->a:Z
@@ -3017,20 +3017,20 @@
     new-instance p1, Landroid/graphics/drawable/RippleDrawable;
 
     .line 6
-    iget-object v2, p0, Lcom/google/android/material/chip/a;->I:Landroid/content/res/ColorStateList;
+    iget-object v2, p0, Lcom/google/android/material/chip/a;->J:Landroid/content/res/ColorStateList;
 
     .line 7
     invoke-static {v2}, Lp4/b;->c(Landroid/content/res/ColorStateList;)Landroid/content/res/ColorStateList;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/google/android/material/chip/a;->Q:Landroid/graphics/drawable/Drawable;
+    iget-object v3, p0, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
 
-    sget-object v4, Lcom/google/android/material/chip/a;->M0:Landroid/graphics/drawable/ShapeDrawable;
+    sget-object v4, Lcom/google/android/material/chip/a;->N0:Landroid/graphics/drawable/ShapeDrawable;
 
     invoke-direct {p1, v2, v3, v4}, Landroid/graphics/drawable/RippleDrawable;-><init>(Landroid/content/res/ColorStateList;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    iput-object p1, p0, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Lcom/google/android/material/chip/a;->S:Landroid/graphics/drawable/Drawable;
 
     .line 8
     :cond_1
@@ -3049,7 +3049,7 @@
     if-eqz v0, :cond_2
 
     .line 11
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->Q:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0, v0}, Lcom/google/android/material/chip/a;->D(Landroid/graphics/drawable/Drawable;)V
 
@@ -3069,6 +3069,240 @@
 .end method
 
 .method public f0(F)V
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/material/chip/a;->i0:F
+
+    cmpl-float v0, v0, p1
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iput p1, p0, Lcom/google/android/material/chip/a;->i0:F
+
+    .line 3
+    invoke-virtual {p0}, Lr4/g;->invalidateSelf()V
+
+    .line 4
+    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->v0()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 5
+    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->N()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public g0(F)V
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/material/chip/a;->U:F
+
+    cmpl-float v0, v0, p1
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iput p1, p0, Lcom/google/android/material/chip/a;->U:F
+
+    .line 3
+    invoke-virtual {p0}, Lr4/g;->invalidateSelf()V
+
+    .line 4
+    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->v0()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 5
+    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->N()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public getAlpha()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/material/chip/a;->z0:I
+
+    return v0
+.end method
+
+.method public getColorFilter()Landroid/graphics/ColorFilter;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->A0:Landroid/graphics/ColorFilter;
+
+    return-object v0
+.end method
+
+.method public getIntrinsicHeight()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/material/chip/a;->F:F
+
+    float-to-int v0, v0
+
+    return v0
+.end method
+
+.method public getIntrinsicWidth()I
+    .locals 3
+
+    .line 1
+    iget v0, p0, Lcom/google/android/material/chip/a;->c0:F
+
+    .line 2
+    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->F()F
+
+    move-result v1
+
+    add-float/2addr v1, v0
+
+    iget v0, p0, Lcom/google/android/material/chip/a;->f0:F
+
+    add-float/2addr v1, v0
+
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->q0:Lcom/google/android/material/internal/j;
+
+    .line 3
+    iget-object v2, p0, Lcom/google/android/material/chip/a;->K:Ljava/lang/CharSequence;
+
+    .line 4
+    invoke-interface {v2}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Lcom/google/android/material/internal/j;->a(Ljava/lang/String;)F
+
+    move-result v0
+
+    add-float/2addr v0, v1
+
+    iget v1, p0, Lcom/google/android/material/chip/a;->g0:F
+
+    add-float/2addr v0, v1
+
+    .line 5
+    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->I()F
+
+    move-result v1
+
+    add-float/2addr v1, v0
+
+    iget v0, p0, Lcom/google/android/material/chip/a;->j0:F
+
+    add-float/2addr v1, v0
+
+    .line 6
+    invoke-static {v1}, Ljava/lang/Math;->round(F)I
+
+    move-result v0
+
+    .line 7
+    iget v1, p0, Lcom/google/android/material/chip/a;->K0:I
+
+    invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getOpacity()I
+    .locals 1
+
+    const/4 v0, -0x3
+
+    return v0
+.end method
+
+.method public getOutline(Landroid/graphics/Outline;)V
+    .locals 8
+    .annotation build Landroid/annotation/TargetApi;
+        value = 0x15
+    .end annotation
+
+    .line 1
+    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->L0:Z
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-super {p0, p1}, Lr4/g;->getOutline(Landroid/graphics/Outline;)V
+
+    return-void
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
+
+    move-result-object v0
+
+    .line 4
+    invoke-virtual {v0}, Landroid/graphics/Rect;->isEmpty()Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    .line 5
+    iget v1, p0, Lcom/google/android/material/chip/a;->G:F
+
+    invoke-virtual {p1, v0, v1}, Landroid/graphics/Outline;->setRoundRect(Landroid/graphics/Rect;F)V
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    .line 6
+    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->getIntrinsicWidth()I
+
+    move-result v5
+
+    .line 7
+    iget v0, p0, Lcom/google/android/material/chip/a;->F:F
+
+    float-to-int v6, v0
+
+    .line 8
+    iget v7, p0, Lcom/google/android/material/chip/a;->G:F
+
+    move-object v2, p1
+
+    invoke-virtual/range {v2 .. v7}, Landroid/graphics/Outline;->setRoundRect(IIIIF)V
+
+    .line 9
+    :goto_0
+    iget v0, p0, Lcom/google/android/material/chip/a;->z0:I
+
+    int-to-float v0, v0
+
+    const/high16 v1, 0x437f0000    # 255.0f
+
+    div-float/2addr v0, v1
+
+    .line 10
+    invoke-virtual {p1, v0}, Landroid/graphics/Outline;->setAlpha(F)V
+
+    return-void
+.end method
+
+.method public h0(F)V
     .locals 1
 
     .line 1
@@ -3098,245 +3332,11 @@
     return-void
 .end method
 
-.method public g0(F)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/material/chip/a;->T:F
-
-    cmpl-float v0, v0, p1
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iput p1, p0, Lcom/google/android/material/chip/a;->T:F
-
-    .line 3
-    invoke-virtual {p0}, Lr4/g;->invalidateSelf()V
-
-    .line 4
-    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->v0()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    .line 5
-    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->N()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public getAlpha()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/material/chip/a;->y0:I
-
-    return v0
-.end method
-
-.method public getColorFilter()Landroid/graphics/ColorFilter;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->z0:Landroid/graphics/ColorFilter;
-
-    return-object v0
-.end method
-
-.method public getIntrinsicHeight()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/material/chip/a;->E:F
-
-    float-to-int v0, v0
-
-    return v0
-.end method
-
-.method public getIntrinsicWidth()I
-    .locals 3
-
-    .line 1
-    iget v0, p0, Lcom/google/android/material/chip/a;->b0:F
-
-    .line 2
-    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->F()F
-
-    move-result v1
-
-    add-float/2addr v1, v0
-
-    iget v0, p0, Lcom/google/android/material/chip/a;->e0:F
-
-    add-float/2addr v1, v0
-
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->p0:Lcom/google/android/material/internal/h;
-
-    .line 3
-    iget-object v2, p0, Lcom/google/android/material/chip/a;->J:Ljava/lang/CharSequence;
-
-    .line 4
-    invoke-interface {v2}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Lcom/google/android/material/internal/h;->a(Ljava/lang/String;)F
-
-    move-result v0
-
-    add-float/2addr v0, v1
-
-    iget v1, p0, Lcom/google/android/material/chip/a;->f0:F
-
-    add-float/2addr v0, v1
-
-    .line 5
-    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->I()F
-
-    move-result v1
-
-    add-float/2addr v1, v0
-
-    iget v0, p0, Lcom/google/android/material/chip/a;->i0:F
-
-    add-float/2addr v1, v0
-
-    .line 6
-    invoke-static {v1}, Ljava/lang/Math;->round(F)I
-
-    move-result v0
-
-    .line 7
-    iget v1, p0, Lcom/google/android/material/chip/a;->J0:I
-
-    invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public getOpacity()I
-    .locals 1
-
-    const/4 v0, -0x3
-
-    return v0
-.end method
-
-.method public getOutline(Landroid/graphics/Outline;)V
-    .locals 8
-    .annotation build Landroid/annotation/TargetApi;
-        value = 0x15
-    .end annotation
-
-    .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->K0:Z
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-super {p0, p1}, Lr4/g;->getOutline(Landroid/graphics/Outline;)V
-
-    return-void
-
-    .line 3
-    :cond_0
-    invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
-
-    move-result-object v0
-
-    .line 4
-    invoke-virtual {v0}, Landroid/graphics/Rect;->isEmpty()Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    .line 5
-    iget v1, p0, Lcom/google/android/material/chip/a;->F:F
-
-    invoke-virtual {p1, v0, v1}, Landroid/graphics/Outline;->setRoundRect(Landroid/graphics/Rect;F)V
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v3, 0x0
-
-    const/4 v4, 0x0
-
-    .line 6
-    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->getIntrinsicWidth()I
-
-    move-result v5
-
-    .line 7
-    iget v0, p0, Lcom/google/android/material/chip/a;->E:F
-
-    float-to-int v6, v0
-
-    .line 8
-    iget v7, p0, Lcom/google/android/material/chip/a;->F:F
-
-    move-object v2, p1
-
-    invoke-virtual/range {v2 .. v7}, Landroid/graphics/Outline;->setRoundRect(IIIIF)V
-
-    .line 9
-    :goto_0
-    iget v0, p0, Lcom/google/android/material/chip/a;->y0:I
-
-    int-to-float v0, v0
-
-    const/high16 v1, 0x437f0000    # 255.0f
-
-    div-float/2addr v0, v1
-
-    .line 10
-    invoke-virtual {p1, v0}, Landroid/graphics/Outline;->setAlpha(F)V
-
-    return-void
-.end method
-
-.method public h0(F)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/material/chip/a;->g0:F
-
-    cmpl-float v0, v0, p1
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iput p1, p0, Lcom/google/android/material/chip/a;->g0:F
-
-    .line 3
-    invoke-virtual {p0}, Lr4/g;->invalidateSelf()V
-
-    .line 4
-    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->v0()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    .line 5
-    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->N()V
-
-    :cond_0
-    return-void
-.end method
-
 .method public i0([I)Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->D0:[I
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->E0:[I
 
     invoke-static {v0, p1}, Ljava/util/Arrays;->equals([I[I)Z
 
@@ -3345,7 +3345,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/chip/a;->D0:[I
+    iput-object p1, p0, Lcom/google/android/material/chip/a;->E0:[I
 
     .line 3
     invoke-virtual {p0}, Lcom/google/android/material/chip/a;->v0()Z
@@ -3392,7 +3392,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->C:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->D:Landroid/content/res/ColorStateList;
 
     invoke-static {v0}, Lcom/google/android/material/chip/a;->L(Landroid/content/res/ColorStateList;)Z
 
@@ -3404,7 +3404,7 @@
 
     if-nez v0, :cond_4
 
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->D:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->E:Landroid/content/res/ColorStateList;
 
     .line 2
     invoke-static {v0}, Lcom/google/android/material/chip/a;->L(Landroid/content/res/ColorStateList;)Z
@@ -3413,7 +3413,7 @@
 
     if-nez v0, :cond_4
 
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->G:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->H:Landroid/content/res/ColorStateList;
 
     .line 3
     invoke-static {v0}, Lcom/google/android/material/chip/a;->L(Landroid/content/res/ColorStateList;)Z
@@ -3422,11 +3422,11 @@
 
     if-nez v0, :cond_4
 
-    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->E0:Z
+    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->F0:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->F0:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->G0:Landroid/content/res/ColorStateList;
 
     .line 4
     invoke-static {v0}, Lcom/google/android/material/chip/a;->L(Landroid/content/res/ColorStateList;)Z
@@ -3436,10 +3436,10 @@
     if-nez v0, :cond_4
 
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->p0:Lcom/google/android/material/internal/h;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->q0:Lcom/google/android/material/internal/j;
 
     .line 5
-    iget-object v0, v0, Lcom/google/android/material/internal/h;->f:Lo4/d;
+    iget-object v0, v0, Lcom/google/android/material/internal/j;->f:Lo4/d;
 
     if-eqz v0, :cond_1
 
@@ -3466,15 +3466,15 @@
     if-nez v0, :cond_4
 
     .line 8
+    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->X:Z
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
+
+    if-eqz v0, :cond_2
+
     iget-boolean v0, p0, Lcom/google/android/material/chip/a;->W:Z
-
-    if-eqz v0, :cond_2
-
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
-
-    if-eqz v0, :cond_2
-
-    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->V:Z
 
     if-eqz v0, :cond_2
 
@@ -3489,7 +3489,7 @@
     if-nez v0, :cond_4
 
     .line 9
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->L:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->M:Landroid/graphics/drawable/Drawable;
 
     .line 10
     invoke-static {v0}, Lcom/google/android/material/chip/a;->M(Landroid/graphics/drawable/Drawable;)Z
@@ -3498,7 +3498,7 @@
 
     if-nez v0, :cond_4
 
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
 
     .line 11
     invoke-static {v0}, Lcom/google/android/material/chip/a;->M(Landroid/graphics/drawable/Drawable;)Z
@@ -3507,7 +3507,7 @@
 
     if-nez v0, :cond_4
 
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->B0:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->C0:Landroid/content/res/ColorStateList;
 
     .line 12
     invoke-static {v0}, Lcom/google/android/material/chip/a;->L(Landroid/content/res/ColorStateList;)Z
@@ -3530,12 +3530,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->S:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->T:Landroid/content/res/ColorStateList;
 
     if-eq v0, p1, :cond_1
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/chip/a;->S:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/chip/a;->T:Landroid/content/res/ColorStateList;
 
     .line 3
     invoke-virtual {p0}, Lcom/google/android/material/chip/a;->v0()Z
@@ -3545,7 +3545,7 @@
     if-eqz v0, :cond_0
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->Q:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
 
     invoke-static {v0, p1}, Ly/a;->i(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
 
@@ -3565,7 +3565,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->P:Z
+    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->Q:Z
 
     if-eq v0, p1, :cond_2
 
@@ -3575,7 +3575,7 @@
     move-result v0
 
     .line 3
-    iput-boolean p1, p0, Lcom/google/android/material/chip/a;->P:Z
+    iput-boolean p1, p0, Lcom/google/android/material/chip/a;->Q:Z
 
     .line 4
     invoke-virtual {p0}, Lcom/google/android/material/chip/a;->v0()Z
@@ -3597,7 +3597,7 @@
     if-eqz p1, :cond_1
 
     .line 5
-    iget-object p1, p0, Lcom/google/android/material/chip/a;->Q:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/a;->D(Landroid/graphics/drawable/Drawable;)V
 
@@ -3605,7 +3605,7 @@
 
     .line 6
     :cond_1
-    iget-object p1, p0, Lcom/google/android/material/chip/a;->Q:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/a;->w0(Landroid/graphics/drawable/Drawable;)V
 
@@ -3621,6 +3621,43 @@
 .end method
 
 .method public l0(F)V
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/material/chip/a;->e0:F
+
+    cmpl-float v0, v0, p1
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->F()F
+
+    move-result v0
+
+    .line 3
+    iput p1, p0, Lcom/google/android/material/chip/a;->e0:F
+
+    .line 4
+    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->F()F
+
+    move-result p1
+
+    .line 5
+    invoke-virtual {p0}, Lr4/g;->invalidateSelf()V
+
+    cmpl-float p1, v0, p1
+
+    if-eqz p1, :cond_0
+
+    .line 6
+    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->N()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public m0(F)V
     .locals 1
 
     .line 1
@@ -3657,56 +3694,19 @@
     return-void
 .end method
 
-.method public m0(F)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/material/chip/a;->c0:F
-
-    cmpl-float v0, v0, p1
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->F()F
-
-    move-result v0
-
-    .line 3
-    iput p1, p0, Lcom/google/android/material/chip/a;->c0:F
-
-    .line 4
-    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->F()F
-
-    move-result p1
-
-    .line 5
-    invoke-virtual {p0}, Lr4/g;->invalidateSelf()V
-
-    cmpl-float p1, v0, p1
-
-    if-eqz p1, :cond_0
-
-    .line 6
-    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->N()V
-
-    :cond_0
-    return-void
-.end method
-
 .method public n0(Landroid/content/res/ColorStateList;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->I:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->J:Landroid/content/res/ColorStateList;
 
     if-eq v0, p1, :cond_1
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/chip/a;->I:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/chip/a;->J:Landroid/content/res/ColorStateList;
 
     .line 3
-    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->E0:Z
+    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->F0:Z
 
     if-eqz v0, :cond_0
 
@@ -3721,7 +3721,7 @@
     const/4 p1, 0x0
 
     :goto_0
-    iput-object p1, p0, Lcom/google/android/material/chip/a;->F0:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/chip/a;->G0:Landroid/content/res/ColorStateList;
 
     .line 5
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getState()[I
@@ -3743,7 +3743,7 @@
 
     .line 1
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->J:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->K:Ljava/lang/CharSequence;
 
     invoke-static {v0, p1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -3752,15 +3752,15 @@
     if-nez v0, :cond_1
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/chip/a;->J:Ljava/lang/CharSequence;
+    iput-object p1, p0, Lcom/google/android/material/chip/a;->K:Ljava/lang/CharSequence;
 
     .line 3
-    iget-object p1, p0, Lcom/google/android/material/chip/a;->p0:Lcom/google/android/material/internal/h;
+    iget-object p1, p0, Lcom/google/android/material/chip/a;->q0:Lcom/google/android/material/internal/j;
 
     const/4 v0, 0x1
 
     .line 4
-    iput-boolean v0, p1, Lcom/google/android/material/internal/h;->d:Z
+    iput-boolean v0, p1, Lcom/google/android/material/internal/j;->d:Z
 
     .line 5
     invoke-virtual {p0}, Lr4/g;->invalidateSelf()V
@@ -3788,7 +3788,7 @@
     if-eqz v1, :cond_0
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/material/chip/a;->L:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/google/android/material/chip/a;->M:Landroid/graphics/drawable/Drawable;
 
     invoke-static {v1, p1}, Ly/a;->g(Landroid/graphics/drawable/Drawable;I)Z
 
@@ -3805,7 +3805,7 @@
     if-eqz v1, :cond_1
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
 
     invoke-static {v1, p1}, Ly/a;->g(Landroid/graphics/drawable/Drawable;I)Z
 
@@ -3822,7 +3822,7 @@
     if-eqz v1, :cond_2
 
     .line 7
-    iget-object v1, p0, Lcom/google/android/material/chip/a;->Q:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
 
     invoke-static {v1, p1}, Ly/a;->g(Landroid/graphics/drawable/Drawable;I)Z
 
@@ -3858,7 +3858,7 @@
     if-eqz v1, :cond_0
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/material/chip/a;->L:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/google/android/material/chip/a;->M:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, p1}, Landroid/graphics/drawable/Drawable;->setLevel(I)Z
 
@@ -3875,7 +3875,7 @@
     if-eqz v1, :cond_1
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, p1}, Landroid/graphics/drawable/Drawable;->setLevel(I)Z
 
@@ -3892,7 +3892,7 @@
     if-eqz v1, :cond_2
 
     .line 7
-    iget-object v1, p0, Lcom/google/android/material/chip/a;->Q:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, p1}, Landroid/graphics/drawable/Drawable;->setLevel(I)Z
 
@@ -3914,7 +3914,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->K0:Z
+    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->L0:Z
 
     if-eqz v0, :cond_0
 
@@ -3923,7 +3923,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->D0:[I
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->E0:[I
 
     .line 4
     invoke-virtual {p0, p1, v0}, Lcom/google/android/material/chip/a;->O([I[I)Z
@@ -3937,16 +3937,39 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->p0:Lcom/google/android/material/internal/h;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->q0:Lcom/google/android/material/internal/j;
 
-    iget-object v1, p0, Lcom/google/android/material/chip/a;->j0:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/android/material/chip/a;->k0:Landroid/content/Context;
 
-    invoke-virtual {v0, p1, v1}, Lcom/google/android/material/internal/h;->b(Lo4/d;Landroid/content/Context;)V
+    invoke-virtual {v0, p1, v1}, Lcom/google/android/material/internal/j;->b(Lo4/d;Landroid/content/Context;)V
 
     return-void
 .end method
 
 .method public q0(F)V
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/material/chip/a;->g0:F
+
+    cmpl-float v0, v0, p1
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iput p1, p0, Lcom/google/android/material/chip/a;->g0:F
+
+    .line 3
+    invoke-virtual {p0}, Lr4/g;->invalidateSelf()V
+
+    .line 4
+    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->N()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public r0(F)V
     .locals 1
 
     .line 1
@@ -3969,44 +3992,21 @@
     return-void
 .end method
 
-.method public r0(F)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/material/chip/a;->e0:F
-
-    cmpl-float v0, v0, p1
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iput p1, p0, Lcom/google/android/material/chip/a;->e0:F
-
-    .line 3
-    invoke-virtual {p0}, Lr4/g;->invalidateSelf()V
-
-    .line 4
-    invoke-virtual {p0}, Lcom/google/android/material/chip/a;->N()V
-
-    :cond_0
-    return-void
-.end method
-
 .method public s0(Z)V
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->E0:Z
+    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->F0:Z
 
     if-eq v0, p1, :cond_1
 
     .line 2
-    iput-boolean p1, p0, Lcom/google/android/material/chip/a;->E0:Z
+    iput-boolean p1, p0, Lcom/google/android/material/chip/a;->F0:Z
 
     if-eqz p1, :cond_0
 
     .line 3
-    iget-object p1, p0, Lcom/google/android/material/chip/a;->I:Landroid/content/res/ColorStateList;
+    iget-object p1, p0, Lcom/google/android/material/chip/a;->J:Landroid/content/res/ColorStateList;
 
     .line 4
     invoke-static {p1}, Lp4/b;->c(Landroid/content/res/ColorStateList;)Landroid/content/res/ColorStateList;
@@ -4019,7 +4019,7 @@
     const/4 p1, 0x0
 
     :goto_0
-    iput-object p1, p0, Lcom/google/android/material/chip/a;->F0:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/chip/a;->G0:Landroid/content/res/ColorStateList;
 
     .line 5
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getState()[I
@@ -4053,12 +4053,12 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/chip/a;->y0:I
+    iget v0, p0, Lcom/google/android/material/chip/a;->z0:I
 
     if-eq v0, p1, :cond_0
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/chip/a;->y0:I
+    iput p1, p0, Lcom/google/android/material/chip/a;->z0:I
 
     .line 3
     invoke-virtual {p0}, Lr4/g;->invalidateSelf()V
@@ -4071,12 +4071,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->z0:Landroid/graphics/ColorFilter;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->A0:Landroid/graphics/ColorFilter;
 
     if-eq v0, p1, :cond_0
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/chip/a;->z0:Landroid/graphics/ColorFilter;
+    iput-object p1, p0, Lcom/google/android/material/chip/a;->A0:Landroid/graphics/ColorFilter;
 
     .line 3
     invoke-virtual {p0}, Lr4/g;->invalidateSelf()V
@@ -4089,12 +4089,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->B0:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->C0:Landroid/content/res/ColorStateList;
 
     if-eq v0, p1, :cond_0
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/chip/a;->B0:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/chip/a;->C0:Landroid/content/res/ColorStateList;
 
     .line 3
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getState()[I
@@ -4111,21 +4111,21 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->C0:Landroid/graphics/PorterDuff$Mode;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->D0:Landroid/graphics/PorterDuff$Mode;
 
     if-eq v0, p1, :cond_0
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/chip/a;->C0:Landroid/graphics/PorterDuff$Mode;
+    iput-object p1, p0, Lcom/google/android/material/chip/a;->D0:Landroid/graphics/PorterDuff$Mode;
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->B0:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->C0:Landroid/content/res/ColorStateList;
 
-    invoke-static {p0, v0, p1}, Li4/a;->a(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;Landroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuffColorFilter;
+    invoke-static {p0, v0, p1}, Lj4/a;->a(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;Landroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuffColorFilter;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/material/chip/a;->A0:Landroid/graphics/PorterDuffColorFilter;
+    iput-object p1, p0, Lcom/google/android/material/chip/a;->B0:Landroid/graphics/PorterDuffColorFilter;
 
     .line 4
     invoke-virtual {p0}, Lr4/g;->invalidateSelf()V
@@ -4150,7 +4150,7 @@
     if-eqz v1, :cond_0
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/material/chip/a;->L:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/google/android/material/chip/a;->M:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, p1, p2}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
@@ -4167,7 +4167,7 @@
     if-eqz v1, :cond_1
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, p1, p2}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
@@ -4184,7 +4184,7 @@
     if-eqz v1, :cond_2
 
     .line 7
-    iget-object v1, p0, Lcom/google/android/material/chip/a;->Q:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, p1, p2}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
@@ -4206,15 +4206,15 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->W:Z
+    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->X:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->X:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->Y:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->w0:Z
+    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->x0:Z
 
     if-eqz v0, :cond_0
 
@@ -4233,11 +4233,11 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->K:Z
+    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->L:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->L:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->M:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -4273,11 +4273,11 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->P:Z
+    iget-boolean v0, p0, Lcom/google/android/material/chip/a;->Q:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/android/material/chip/a;->Q:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/chip/a;->R:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 

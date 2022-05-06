@@ -45,7 +45,7 @@
 
     const/16 v0, 0x20
 
-    new-array v0, v0, [Lp/g;
+    new-array v0, v0, [Lp/h;
 
     .line 6
     iput-object v0, p0, Lp/c;->d:Ljava/lang/Object;
@@ -53,7 +53,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj3/u60;Lj3/ng0;Lj3/eg0;Lj3/f40;)V
+.method public synthetic constructor <init>(Lj3/z60;Lj3/ug0;Lj3/lg0;Lj3/j40;)V
     .locals 0
 
     .line 1

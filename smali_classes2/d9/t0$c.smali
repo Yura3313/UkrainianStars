@@ -1,5 +1,5 @@
 .class public Ld9/t0$c;
-.super Ly7/g;
+.super Lz7/g;
 .source "NewConversationVM.java"
 
 
@@ -29,7 +29,7 @@
 
     iput-wide p2, p0, Ld9/t0$c;->b:J
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -64,11 +64,11 @@
     .line 3
     iget-object v1, p0, Ld9/t0$c;->c:Ld9/t0;
 
-    iget-object v1, v1, Ld9/t0;->b:Lh8/b;
+    iget-object v1, v1, Ld9/t0;->b:Li8/b;
 
     const-string v2, "gotoConversationAfterContactUs"
 
-    invoke-virtual {v1, v2}, Lh8/b;->c(Ljava/lang/String;)Z
+    invoke-virtual {v1, v2}, Li8/b;->c(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -76,12 +76,12 @@
 
     iget-object v1, p0, Ld9/t0$c;->c:Ld9/t0;
 
-    iget-object v1, v1, Ld9/t0;->b:Lh8/b;
+    iget-object v1, v1, Ld9/t0;->b:Li8/b;
 
     const-string v2, "disableInAppConversation"
 
     .line 4
-    invoke-virtual {v1, v2}, Lh8/b;->c(Ljava/lang/String;)Z
+    invoke-virtual {v1, v2}, Li8/b;->c(Ljava/lang/String;)Z
 
     move-result v1
 

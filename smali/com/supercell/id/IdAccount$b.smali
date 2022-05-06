@@ -46,7 +46,7 @@
 
     move-result v1
 
-    invoke-static {v0, v1}, Lbe/a;->e(II)Loe/c;
+    invoke-static {v0, v1}, Lc2/n0;->e(II)Loe/c;
 
     move-result-object v0
 
@@ -70,9 +70,9 @@
 
     move-object v2, v0
 
-    check-cast v2, Lce/u;
+    check-cast v2, Lbe/t;
 
-    invoke-virtual {v2}, Lce/u;->b()I
+    invoke-virtual {v2}, Lbe/t;->b()I
 
     move-result v2
 

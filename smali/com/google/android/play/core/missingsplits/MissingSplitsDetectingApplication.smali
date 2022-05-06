@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field public a:Z
+.field public g:Z
 
 
 # direct methods
@@ -14,7 +14,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/google/android/play/core/missingsplits/MissingSplitsDetectingApplication;->a:Z
+    iput-boolean v0, p0, Lcom/google/android/play/core/missingsplits/MissingSplitsDetectingApplication;->g:Z
 
     return-void
 .end method
@@ -24,13 +24,13 @@
 .method public final onCreate()V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/google/android/play/core/missingsplits/MissingSplitsDetectingApplication;->a:Z
+    iget-boolean v0, p0, Lcom/google/android/play/core/missingsplits/MissingSplitsDetectingApplication;->g:Z
 
     if-nez v0, :cond_1
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/android/play/core/missingsplits/MissingSplitsDetectingApplication;->a:Z
+    iput-boolean v0, p0, Lcom/google/android/play/core/missingsplits/MissingSplitsDetectingApplication;->g:Z
 
     invoke-static {p0}, La5/b;->a(Landroid/content/Context;)La5/a;
 

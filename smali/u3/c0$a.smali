@@ -1,8 +1,8 @@
 .class public final Lu3/c0$a;
-.super Lu3/v2$a;
+.super Lu3/u2$a;
 
 # interfaces
-.implements Lu3/y3;
+.implements Lu3/w3;
 
 
 # annotations
@@ -17,11 +17,11 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lu3/v2$a<",
+        "Lu3/u2$a<",
         "Lu3/c0;",
         "Lu3/c0$a;",
         ">;",
-        "Lu3/y3;"
+        "Lu3/w3;"
     }
 .end annotation
 
@@ -35,7 +35,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lu3/v2$a;-><init>(Lu3/v2;)V
+    invoke-direct {p0, v0}, Lu3/u2$a;-><init>(Lu3/u2;)V
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     move-result-object p1
 
-    invoke-direct {p0, p1}, Lu3/v2$a;-><init>(Lu3/v2;)V
+    invoke-direct {p0, p1}, Lu3/u2$a;-><init>(Lu3/u2;)V
 
     return-void
 .end method

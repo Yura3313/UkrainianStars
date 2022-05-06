@@ -1,141 +1,107 @@
-.class public final Lj3/xr0;
+.class public final synthetic Lj3/xr0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
-# interfaces
-.implements Ljava/util/Map$Entry;
 
+# static fields
+.field public static final synthetic a:[I
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<K:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Map$Entry<",
-        "TK;",
-        "Ljava/lang/Object;",
-        ">;"
-    }
-.end annotation
-
-
-# instance fields
-.field public a:Ljava/util/Map$Entry;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map$Entry<",
-            "TK;",
-            "Lj3/vr0;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final synthetic b:[I
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Map$Entry;Lcom/helpshift/util/s;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {}, Lj3/js0;->values()[Lj3/js0;
+
+    move-result-object v0
+
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    sput-object v0, Lj3/xr0;->b:[I
+
+    const/4 v1, 0x1
+
+    :try_start_0
+    sget-object v2, Lj3/js0;->p:Lj3/js0;
+
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v2
+
+    aput v1, v0, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    const/4 v0, 0x2
+
+    :try_start_1
+    sget-object v2, Lj3/xr0;->b:[I
+
+    sget-object v3, Lj3/js0;->r:Lj3/js0;
+
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v3
+
+    aput v0, v2, v3
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
+    const/4 v2, 0x3
+
+    :try_start_2
+    sget-object v3, Lj3/xr0;->b:[I
+
+    sget-object v4, Lj3/js0;->o:Lj3/js0;
+
+    const/4 v4, 0x6
+
+    aput v2, v3, v4
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
     .line 2
-    iput-object p1, p0, Lj3/xr0;->a:Ljava/util/Map$Entry;
+    :catch_2
+    invoke-static {}, Lj3/wr0;->b()[I
 
+    move-result-object v3
+
+    array-length v3, v3
+
+    new-array v3, v3, [I
+
+    sput-object v3, Lj3/xr0;->a:[I
+
+    :try_start_3
+    aput v1, v3, v2
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    :catch_3
+    :try_start_4
+    sget-object v3, Lj3/xr0;->a:[I
+
+    aput v0, v3, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
+    :try_start_5
+    sget-object v0, Lj3/xr0;->a:[I
+
+    const/4 v1, 0x0
+
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    :catch_5
     return-void
-.end method
-
-
-# virtual methods
-.method public final getKey()Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TK;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lj3/xr0;->a:Ljava/util/Map$Entry;
-
-    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final getValue()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lj3/xr0;->a:Ljava/util/Map$Entry;
-
-    invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lj3/vr0;
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x0
-
-    return-object v0
-
-    .line 2
-    :cond_0
-    sget v0, Lj3/vr0;->c:I
-
-    .line 3
-    new-instance v0, Ljava/lang/NoSuchMethodError;
-
-    invoke-direct {v0}, Ljava/lang/NoSuchMethodError;-><init>()V
-
-    throw v0
-.end method
-
-.method public final setValue(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
-
-    .line 1
-    instance-of v0, p1, Lj3/os0;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iget-object v0, p0, Lj3/xr0;->a:Ljava/util/Map$Entry;
-
-    invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lj3/vr0;
-
-    check-cast p1, Lj3/os0;
-
-    .line 3
-    iget-object v1, v0, Lj3/zr0;->a:Lj3/os0;
-
-    const/4 v2, 0x0
-
-    .line 4
-    iput-object v2, v0, Lj3/zr0;->b:Lj3/lq0;
-
-    .line 5
-    iput-object p1, v0, Lj3/zr0;->a:Lj3/os0;
-
-    return-object v1
-
-    .line 6
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    const-string v0, "LazyField now only used for MessageSet, and the value of MessageSet must be an instance of MessageLite"
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method

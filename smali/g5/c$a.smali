@@ -100,7 +100,7 @@
     aput-object p1, v0, v1
 
     .line 8
-    invoke-static {v0}, Lp5/i;->a([[B)[B
+    invoke-static {v0}, Lp5/j;->a([[B)[B
 
     move-result-object p1
 
@@ -187,7 +187,7 @@
     const-string v4, "ciphertext prefix matches a key, but cannot decrypt: "
 
     .line 11
-    invoke-static {v4}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v4}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 

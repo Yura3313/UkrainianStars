@@ -213,7 +213,7 @@
     throw v0
 .end method
 
-.method public static d(Lp5/z;)V
+.method public static d(I)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -221,14 +221,9 @@
         }
     .end annotation
 
-    .line 1
-    sget-object v0, Lp5/m0$a;->a:[I
+    if-eqz p0, :cond_2
 
-    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    aget v0, v0, v1
+    add-int/lit8 v0, p0, -0x1
 
     const/4 v1, 0x1
 
@@ -244,17 +239,17 @@
 
     goto :goto_0
 
-    .line 2
+    .line 1
     :cond_0
     new-instance v0, Ljava/security/GeneralSecurityException;
 
     const-string v1, "Unsupported hash: "
 
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Ljava/lang/Enum;->name()Ljava/lang/String;
+    invoke-static {p0}, Lp5/b0;->a(I)Ljava/lang/String;
 
     move-result-object p0
 
@@ -271,6 +266,12 @@
     :cond_1
     :goto_0
     return-void
+
+    :cond_2
+    const/4 p0, 0x0
+
+    .line 2
+    throw p0
 .end method
 
 .method public static e(II)V

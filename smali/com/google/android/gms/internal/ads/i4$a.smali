@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/internal/ads/i4$a;
-.super Lcom/google/android/gms/internal/ads/q6$b;
+.super Lcom/google/android/gms/internal/ads/v5$b;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/google/android/gms/internal/ads/q6$b<",
+        "Lcom/google/android/gms/internal/ads/v5$b<",
         "Lcom/google/android/gms/internal/ads/i4;",
         "Lcom/google/android/gms/internal/ads/i4$a;",
         ">;"
@@ -28,11 +28,11 @@
     .locals 1
 
     .line 1
-    invoke-static {}, Lcom/google/android/gms/internal/ads/i4;->E()Lcom/google/android/gms/internal/ads/i4;
+    invoke-static {}, Lcom/google/android/gms/internal/ads/i4;->F()Lcom/google/android/gms/internal/ads/i4;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/q6$b;-><init>(Lcom/google/android/gms/internal/ads/q6;)V
+    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/v5$b;-><init>(Lcom/google/android/gms/internal/ads/v5;)V
 
     return-void
 .end method
@@ -41,11 +41,11 @@
     .locals 0
 
     .line 2
-    invoke-static {}, Lcom/google/android/gms/internal/ads/i4;->E()Lcom/google/android/gms/internal/ads/i4;
+    invoke-static {}, Lcom/google/android/gms/internal/ads/i4;->F()Lcom/google/android/gms/internal/ads/i4;
 
     move-result-object p1
 
-    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/ads/q6$b;-><init>(Lcom/google/android/gms/internal/ads/q6;)V
+    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/ads/v5$b;-><init>(Lcom/google/android/gms/internal/ads/v5;)V
 
     return-void
 .end method

@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public abstract b()Ljava/util/List;
+.method public abstract c()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -15,10 +15,10 @@
     .end annotation
 .end method
 
-.method public abstract d()Ljava/lang/String;
+.method public abstract f()Ljava/lang/String;
 .end method
 
-.method public abstract f()Ljava/util/List;
+.method public abstract g()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -29,7 +29,10 @@
     .end annotation
 .end method
 
-.method public abstract g(I)Ljava/util/List;
+.method public abstract getTag()Ljava/lang/String;
+.end method
+
+.method public abstract h(I)Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -40,8 +43,5 @@
     .end annotation
 .end method
 
-.method public abstract getTag()Ljava/lang/String;
-.end method
-
-.method public abstract h()I
+.method public abstract i()I
 .end method

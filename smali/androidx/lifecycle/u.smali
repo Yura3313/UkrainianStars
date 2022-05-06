@@ -1,611 +1,331 @@
 .class public final Landroidx/lifecycle/u;
-.super Landroidx/lifecycle/z;
-.source "SavedStateViewModelFactory.java"
+.super Ljava/lang/Object;
+.source "SavedStateHandle.java"
 
 
 # static fields
-.field public static final k:[Ljava/lang/Class;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "[",
-            "Ljava/lang/Class<",
-            "*>;"
-        }
-    .end annotation
-.end field
-
-.field public static final l:[Ljava/lang/Class;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "[",
-            "Ljava/lang/Class<",
-            "*>;"
-        }
-    .end annotation
-.end field
+.field public static final e:[Ljava/lang/Class;
 
 
 # instance fields
-.field public final a:Landroid/app/Application;
+.field public final a:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final b:Landroidx/lifecycle/y;
+.field public final b:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Landroidx/savedstate/a$b;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final h:Landroid/os/Bundle;
+.field public final c:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final i:Landroidx/lifecycle/f;
-
-.field public final j:Landroidx/savedstate/a;
+.field public final d:Landroidx/savedstate/a$b;
 
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 4
+    .locals 6
+
+    const/16 v0, 0x1d
+
+    new-array v0, v0, [Ljava/lang/Class;
 
     .line 1
-    const-class v0, Landroidx/lifecycle/t;
+    sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
-    const/4 v1, 0x2
+    const/4 v2, 0x0
 
-    new-array v1, v1, [Ljava/lang/Class;
+    aput-object v1, v0, v2
 
-    const-class v2, Landroid/app/Application;
+    const/4 v1, 0x1
 
-    const/4 v3, 0x0
+    const-class v2, [Z
 
-    aput-object v2, v1, v3
+    aput-object v2, v0, v1
 
-    const/4 v2, 0x1
-
-    aput-object v0, v1, v2
-
-    sput-object v1, Landroidx/lifecycle/u;->k:[Ljava/lang/Class;
-
-    new-array v1, v2, [Ljava/lang/Class;
-
-    aput-object v0, v1, v3
-
-    .line 2
-    sput-object v1, Landroidx/lifecycle/u;->l:[Ljava/lang/Class;
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/app/Application;Landroidx/savedstate/c;Landroid/os/Bundle;)V
-    .locals 1
-    .annotation build Landroid/annotation/SuppressLint;
-        value = {
-            "LambdaLast"
-        }
-    .end annotation
-
-    .line 1
-    invoke-direct {p0}, Landroidx/lifecycle/z;-><init>()V
-
-    .line 2
-    invoke-interface {p2}, Landroidx/savedstate/c;->getSavedStateRegistry()Landroidx/savedstate/a;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/lifecycle/u;->j:Landroidx/savedstate/a;
-
-    .line 3
-    invoke-interface {p2}, Landroidx/lifecycle/j;->getLifecycle()Landroidx/lifecycle/f;
-
-    move-result-object p2
-
-    iput-object p2, p0, Landroidx/lifecycle/u;->i:Landroidx/lifecycle/f;
-
-    .line 4
-    iput-object p3, p0, Landroidx/lifecycle/u;->h:Landroid/os/Bundle;
-
-    .line 5
-    iput-object p1, p0, Landroidx/lifecycle/u;->a:Landroid/app/Application;
-
-    if-eqz p1, :cond_1
-
-    .line 6
-    sget-object p2, Landroidx/lifecycle/x;->k:Landroidx/lifecycle/x;
-
-    if-nez p2, :cond_0
-
-    .line 7
-    new-instance p2, Landroidx/lifecycle/x;
-
-    invoke-direct {p2, p1}, Landroidx/lifecycle/x;-><init>(Landroid/app/Application;)V
-
-    sput-object p2, Landroidx/lifecycle/x;->k:Landroidx/lifecycle/x;
-
-    .line 8
-    :cond_0
-    sget-object p1, Landroidx/lifecycle/x;->k:Landroidx/lifecycle/x;
-
-    goto :goto_0
-
-    .line 9
-    :cond_1
-    sget-object p1, Landroidx/lifecycle/a0;->a:Landroidx/lifecycle/a0;
-
-    if-nez p1, :cond_2
-
-    .line 10
-    new-instance p1, Landroidx/lifecycle/a0;
-
-    invoke-direct {p1}, Landroidx/lifecycle/a0;-><init>()V
-
-    sput-object p1, Landroidx/lifecycle/a0;->a:Landroidx/lifecycle/a0;
-
-    .line 11
-    :cond_2
-    sget-object p1, Landroidx/lifecycle/a0;->a:Landroidx/lifecycle/a0;
-
-    .line 12
-    :goto_0
-    iput-object p1, p0, Landroidx/lifecycle/u;->b:Landroidx/lifecycle/y;
-
-    return-void
-.end method
-
-.method public static d(Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/lang/Class<",
-            "TT;>;[",
-            "Ljava/lang/Class<",
-            "*>;)",
-            "Ljava/lang/reflect/Constructor<",
-            "TT;>;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Ljava/lang/Class;->getConstructors()[Ljava/lang/reflect/Constructor;
-
-    move-result-object p0
-
-    array-length v0, p0
-
-    const/4 v1, 0x0
-
-    :goto_0
-    if-ge v1, v0, :cond_1
-
-    aget-object v2, p0, v1
-
-    .line 2
-    invoke-virtual {v2}, Ljava/lang/reflect/Constructor;->getParameterTypes()[Ljava/lang/Class;
-
-    move-result-object v3
-
-    .line 3
-    invoke-static {p1, v3}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    return-object v2
-
-    :cond_0
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p0, 0x0
-
-    return-object p0
-.end method
-
-
-# virtual methods
-.method public a(Ljava/lang/Class;)Landroidx/lifecycle/w;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Landroidx/lifecycle/w;",
-            ">(",
-            "Ljava/lang/Class<",
-            "TT;>;)TT;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-virtual {p0, v0, p1}, Landroidx/lifecycle/u;->c(Ljava/lang/String;Ljava/lang/Class;)Landroidx/lifecycle/w;
-
-    move-result-object p1
-
-    return-object p1
-
-    .line 3
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    const-string v0, "Local and anonymous classes can not be ViewModels"
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public b(Landroidx/lifecycle/w;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Landroidx/lifecycle/u;->j:Landroidx/savedstate/a;
-
-    iget-object v1, p0, Landroidx/lifecycle/u;->i:Landroidx/lifecycle/f;
-
-    invoke-static {p1, v0, v1}, Landroidx/lifecycle/SavedStateHandleController;->b(Landroidx/lifecycle/w;Landroidx/savedstate/a;Landroidx/lifecycle/f;)V
-
-    return-void
-.end method
-
-.method public c(Ljava/lang/String;Ljava/lang/Class;)Landroidx/lifecycle/w;
-    .locals 11
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Landroidx/lifecycle/w;",
-            ">(",
-            "Ljava/lang/String;",
-            "Ljava/lang/Class<",
-            "TT;>;)TT;"
-        }
-    .end annotation
-
-    .line 1
-    const-class v0, Landroidx/lifecycle/a;
-
-    invoke-virtual {v0, p2}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iget-object v1, p0, Landroidx/lifecycle/u;->a:Landroid/app/Application;
-
-    if-eqz v1, :cond_0
-
-    .line 3
-    sget-object v1, Landroidx/lifecycle/u;->k:[Ljava/lang/Class;
-
-    invoke-static {p2, v1}, Landroidx/lifecycle/u;->d(Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
-
-    move-result-object v1
-
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    sget-object v1, Landroidx/lifecycle/u;->l:[Ljava/lang/Class;
-
-    invoke-static {p2, v1}, Landroidx/lifecycle/u;->d(Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
-
-    move-result-object v1
-
-    :goto_0
-    if-nez v1, :cond_1
-
-    .line 5
-    iget-object p1, p0, Landroidx/lifecycle/u;->b:Landroidx/lifecycle/y;
-
-    invoke-interface {p1, p2}, Landroidx/lifecycle/y;->a(Ljava/lang/Class;)Landroidx/lifecycle/w;
-
-    move-result-object p1
-
-    return-object p1
-
-    .line 6
-    :cond_1
-    iget-object v2, p0, Landroidx/lifecycle/u;->j:Landroidx/savedstate/a;
-
-    iget-object v3, p0, Landroidx/lifecycle/u;->i:Landroidx/lifecycle/f;
-
-    iget-object v4, p0, Landroidx/lifecycle/u;->h:Landroid/os/Bundle;
-
-    .line 7
-    invoke-virtual {v2, p1}, Landroidx/savedstate/a;->a(Ljava/lang/String;)Landroid/os/Bundle;
-
-    move-result-object v5
-
-    .line 8
-    sget-object v6, Landroidx/lifecycle/t;->e:[Ljava/lang/Class;
-
-    const/4 v6, 0x0
-
-    if-nez v5, :cond_2
-
-    if-nez v4, :cond_2
-
-    .line 9
-    new-instance v4, Landroidx/lifecycle/t;
-
-    invoke-direct {v4}, Landroidx/lifecycle/t;-><init>()V
-
-    goto :goto_3
-
-    .line 10
-    :cond_2
-    new-instance v7, Ljava/util/HashMap;
-
-    invoke-direct {v7}, Ljava/util/HashMap;-><init>()V
-
-    if-eqz v4, :cond_3
-
-    .line 11
-    invoke-virtual {v4}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
-
-    move-result-object v8
-
-    invoke-interface {v8}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v8
-
-    :goto_1
-    invoke-interface {v8}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v9
-
-    if-eqz v9, :cond_3
-
-    invoke-interface {v8}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v9
-
-    check-cast v9, Ljava/lang/String;
-
-    .line 12
-    invoke-virtual {v4, v9}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v10
-
-    invoke-virtual {v7, v9, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    goto :goto_1
-
-    :cond_3
-    if-nez v5, :cond_4
-
-    .line 13
-    new-instance v4, Landroidx/lifecycle/t;
-
-    invoke-direct {v4, v7}, Landroidx/lifecycle/t;-><init>(Ljava/util/Map;)V
-
-    goto :goto_3
-
-    :cond_4
-    const-string v4, "keys"
-
-    .line 14
-    invoke-virtual {v5, v4}, Landroid/os/Bundle;->getParcelableArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
-
-    move-result-object v4
-
-    const-string v8, "values"
-
-    .line 15
-    invoke-virtual {v5, v8}, Landroid/os/Bundle;->getParcelableArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
-
-    move-result-object v5
-
-    if-eqz v4, :cond_7
-
-    if-eqz v5, :cond_7
-
-    .line 16
-    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
-
-    move-result v8
-
-    invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
-
-    move-result v9
-
-    if-ne v8, v9, :cond_7
-
-    const/4 v8, 0x0
-
-    .line 17
-    :goto_2
-    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
-
-    move-result v9
-
-    if-ge v8, v9, :cond_5
-
-    .line 18
-    invoke-virtual {v4, v8}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v9
-
-    check-cast v9, Ljava/lang/String;
-
-    invoke-virtual {v5, v8}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v10
-
-    invoke-virtual {v7, v9, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    add-int/lit8 v8, v8, 0x1
-
-    goto :goto_2
-
-    .line 19
-    :cond_5
-    new-instance v4, Landroidx/lifecycle/t;
-
-    invoke-direct {v4, v7}, Landroidx/lifecycle/t;-><init>(Ljava/util/Map;)V
-
-    .line 20
-    :goto_3
-    new-instance v5, Landroidx/lifecycle/SavedStateHandleController;
-
-    invoke-direct {v5, p1, v4}, Landroidx/lifecycle/SavedStateHandleController;-><init>(Ljava/lang/String;Landroidx/lifecycle/t;)V
-
-    .line 21
-    invoke-virtual {v5, v2, v3}, Landroidx/lifecycle/SavedStateHandleController;->c(Landroidx/savedstate/a;Landroidx/lifecycle/f;)V
-
-    .line 22
-    invoke-static {v2, v3}, Landroidx/lifecycle/SavedStateHandleController;->d(Landroidx/savedstate/a;Landroidx/lifecycle/f;)V
-
-    const/4 p1, 0x1
-
-    if-eqz v0, :cond_6
-
-    .line 23
-    :try_start_0
-    iget-object v0, p0, Landroidx/lifecycle/u;->a:Landroid/app/Application;
-
-    if-eqz v0, :cond_6
+    sget-object v1, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
 
     const/4 v2, 0x2
 
-    new-array v2, v2, [Ljava/lang/Object;
+    aput-object v1, v0, v2
 
-    aput-object v0, v2, v6
+    const/4 v1, 0x3
 
-    aput-object v4, v2, p1
+    const-class v2, [D
 
-    .line 24
-    invoke-virtual {v1, v2}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    aput-object v2, v0, v1
 
-    move-result-object p1
+    sget-object v1, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    check-cast p1, Landroidx/lifecycle/w;
+    const/4 v2, 0x4
 
-    goto :goto_4
+    aput-object v1, v0, v2
 
-    :cond_6
-    new-array p1, p1, [Ljava/lang/Object;
+    const/4 v2, 0x5
 
-    aput-object v4, p1, v6
+    const-class v3, [I
 
-    .line 25
-    invoke-virtual {v1, p1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    aput-object v3, v0, v2
 
-    move-result-object p1
+    sget-object v2, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
-    check-cast p1, Landroidx/lifecycle/w;
+    const/4 v3, 0x6
 
-    :goto_4
-    const-string v0, "androidx.lifecycle.savedstate.vm.tag"
+    aput-object v2, v0, v3
 
-    .line 26
-    invoke-virtual {p1, v0, v5}, Landroidx/lifecycle/w;->b(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_0
-    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
+    const/4 v2, 0x7
 
-    return-object p1
+    const-class v3, [J
 
-    :catch_0
-    move-exception p1
+    aput-object v3, v0, v2
 
-    .line 27
-    new-instance v0, Ljava/lang/RuntimeException;
+    const/16 v2, 0x8
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    const-class v3, Ljava/lang/String;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    aput-object v3, v0, v2
 
-    const-string v2, "An exception happened in constructor of "
+    const/16 v2, 0x9
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-class v3, [Ljava/lang/String;
 
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    aput-object v3, v0, v2
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/16 v2, 0xa
 
-    move-result-object p2
+    const-class v3, Landroid/os/Binder;
 
-    .line 28
-    invoke-virtual {p1}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
+    aput-object v3, v0, v2
 
-    move-result-object p1
+    const/16 v2, 0xb
 
-    invoke-direct {v0, p2, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    const-class v3, Landroid/os/Bundle;
 
-    throw v0
+    aput-object v3, v0, v2
 
-    :catch_1
-    move-exception p1
+    sget-object v2, Ljava/lang/Byte;->TYPE:Ljava/lang/Class;
 
-    .line 29
-    new-instance v0, Ljava/lang/RuntimeException;
+    const/16 v3, 0xc
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    aput-object v2, v0, v3
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    const/16 v2, 0xd
 
-    const-string v2, "A "
+    const-class v3, [B
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aput-object v3, v0, v2
 
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    sget-object v2, Ljava/lang/Character;->TYPE:Ljava/lang/Class;
 
-    const-string p2, " cannot be instantiated."
+    const/16 v3, 0xe
 
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aput-object v2, v0, v3
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/16 v2, 0xf
 
-    move-result-object p2
+    const-class v3, [C
 
-    invoke-direct {v0, p2, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    aput-object v3, v0, v2
 
-    throw v0
+    const/16 v2, 0x10
 
-    :catch_2
-    move-exception p1
+    const-class v3, Ljava/lang/CharSequence;
 
-    .line 30
-    new-instance v0, Ljava/lang/RuntimeException;
+    aput-object v3, v0, v2
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    const/16 v2, 0x11
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    const-class v3, [Ljava/lang/CharSequence;
 
-    const-string v2, "Failed to access "
+    aput-object v3, v0, v2
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/16 v2, 0x12
 
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-class v3, Ljava/util/ArrayList;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    aput-object v3, v0, v2
 
-    move-result-object p2
+    sget-object v2, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
-    invoke-direct {v0, p2, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    const/16 v3, 0x13
 
-    throw v0
+    aput-object v2, v0, v3
 
-    .line 31
-    :cond_7
-    new-instance p1, Ljava/lang/IllegalStateException;
+    const/16 v2, 0x14
 
-    const-string p2, "Invalid bundle passed as restored state"
+    const-class v3, [F
 
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    aput-object v3, v0, v2
 
-    goto :goto_6
+    const-class v2, Landroid/os/Parcelable;
 
-    :goto_5
-    throw p1
+    const/16 v3, 0x15
 
-    :goto_6
-    goto :goto_5
+    aput-object v2, v0, v3
+
+    const/16 v2, 0x16
+
+    const-class v4, [Landroid/os/Parcelable;
+
+    aput-object v4, v0, v2
+
+    const/16 v2, 0x17
+
+    const-class v4, Ljava/io/Serializable;
+
+    aput-object v4, v0, v2
+
+    sget-object v2, Ljava/lang/Short;->TYPE:Ljava/lang/Class;
+
+    const/16 v4, 0x18
+
+    aput-object v2, v0, v4
+
+    const/16 v2, 0x19
+
+    const-class v4, [S
+
+    aput-object v4, v0, v2
+
+    const/16 v2, 0x1a
+
+    const-class v4, Landroid/util/SparseArray;
+
+    aput-object v4, v0, v2
+
+    .line 2
+    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    if-lt v2, v3, :cond_0
+
+    const-class v4, Landroid/util/Size;
+
+    goto :goto_0
+
+    :cond_0
+    move-object v4, v1
+
+    :goto_0
+    const/16 v5, 0x1b
+
+    aput-object v4, v0, v5
+
+    const/16 v4, 0x1c
+
+    if-lt v2, v3, :cond_1
+
+    .line 3
+    const-class v1, Landroid/util/SizeF;
+
+    :cond_1
+    aput-object v1, v0, v4
+
+    sput-object v0, Landroidx/lifecycle/u;->e:[Ljava/lang/Class;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 7
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Landroidx/lifecycle/u;->b:Ljava/util/Map;
+
+    .line 8
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Landroidx/lifecycle/u;->c:Ljava/util/Map;
+
+    .line 9
+    new-instance v0, Landroidx/lifecycle/u$a;
+
+    invoke-direct {v0, p0}, Landroidx/lifecycle/u$a;-><init>(Landroidx/lifecycle/u;)V
+
+    iput-object v0, p0, Landroidx/lifecycle/u;->d:Landroidx/savedstate/a$b;
+
+    .line 10
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Landroidx/lifecycle/u;->a:Ljava/util/Map;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/Map;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Landroidx/lifecycle/u;->b:Ljava/util/Map;
+
+    .line 3
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Landroidx/lifecycle/u;->c:Ljava/util/Map;
+
+    .line 4
+    new-instance v0, Landroidx/lifecycle/u$a;
+
+    invoke-direct {v0, p0}, Landroidx/lifecycle/u$a;-><init>(Landroidx/lifecycle/u;)V
+
+    iput-object v0, p0, Landroidx/lifecycle/u;->d:Landroidx/savedstate/a$b;
+
+    .line 5
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0, p1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
+
+    iput-object v0, p0, Landroidx/lifecycle/u;->a:Ljava/util/Map;
+
+    return-void
 .end method

@@ -3,255 +3,259 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final g:Lj3/pb;
 
-.field public final b:Ljava/lang/Object;
+.field public final h:I
+
+.field public final i:I
+
+.field public final j:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method public constructor <init>(Lj3/pb;III)V
     .locals 0
 
-    .line 1
-    iput p2, p0, Lj3/sb;->a:I
-
-    iput-object p1, p0, Lj3/sb;->b:Ljava/lang/Object;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lj3/sb;->g:Lj3/pb;
+
+    iput p2, p0, Lj3/sb;->h:I
+
+    iput p3, p0, Lj3/sb;->i:I
+
+    iput p4, p0, Lj3/sb;->j:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 9
+.method public final onClick(Landroid/content/DialogInterface;I)V
+    .locals 4
 
-    iget v0, p0, Lj3/sb;->a:I
+    iget-object p1, p0, Lj3/sb;->g:Lj3/pb;
 
-    const/4 v1, 0x1
+    iget v0, p0, Lj3/sb;->h:I
 
-    packed-switch v0, :pswitch_data_0
+    iget v1, p0, Lj3/sb;->i:I
 
-    goto/16 :goto_3
+    iget v2, p0, Lj3/sb;->j:I
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    if-ne p2, v0, :cond_3
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/sb;->b:Ljava/lang/Object;
+    iget-object p2, p1, Lj3/pb;->a:Landroid/content/Context;
 
-    check-cast v0, Lj3/lb;
+    instance-of p2, p2, Landroid/app/Activity;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    if-nez p2, :cond_0
+
+    goto/16 :goto_2
 
     .line 2
-    sget-object v2, Lh1/o;->B:Lh1/o;
-
-    iget-object v2, v2, Lh1/o;->m:Lj3/ub;
+    :cond_0
+    iget-object p2, p1, Lj3/pb;->b:Ljava/lang/String;
 
     .line 3
-    iget-object v3, v0, Lj3/lb;->a:Landroid/content/Context;
+    invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    iget-object v4, v0, Lj3/lb;->c:Ljava/lang/String;
+    move-result v0
 
-    iget-object v0, v0, Lj3/lb;->d:Ljava/lang/String;
+    if-nez v0, :cond_2
 
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const-string v0, "\\+"
+
+    const-string v1, "%20"
 
     .line 4
-    sget-object v5, Lj3/n;->d2:Lj3/f;
+    invoke-virtual {p2, v0, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p2
 
     .line 5
-    sget-object v6, Lj3/w41;->j:Lj3/w41;
+    new-instance v0, Landroid/net/Uri$Builder;
 
-    iget-object v6, v6, Lj3/w41;->f:Lj3/l;
+    invoke-direct {v0}, Landroid/net/Uri$Builder;-><init>()V
+
+    invoke-virtual {v0, p2}, Landroid/net/Uri$Builder;->encodedQuery(Ljava/lang/String;)Landroid/net/Uri$Builder;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
+
+    move-result-object p2
 
     .line 6
-    invoke-virtual {v6, v5}, Lj3/l;->a(Lj3/f;)Ljava/lang/Object;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 7
-    check-cast v5, Ljava/lang/String;
+    sget-object v1, Lh1/o;->B:Lh1/o;
+
+    iget-object v1, v1, Lh1/o;->c:Lj3/bb;
 
     .line 8
-    invoke-virtual {v2, v3, v5, v4, v0}, Lj3/ub;->d(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
+    invoke-static {p2}, Lj3/bb;->C(Landroid/net/Uri;)Ljava/util/Map;
 
-    move-result-object v5
+    move-result-object p2
 
     .line 9
-    invoke-virtual {v5}, Landroid/net/Uri;->toString()Ljava/lang/String;
+    invoke-interface {p2}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
-    move-result-object v5
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
 
     .line 10
-    invoke-static {v3, v5, v0}, Lj3/ub;->e(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    const-string v3, " = "
 
     .line 11
-    invoke-static {v5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result v6
+    .line 12
+    invoke-interface {p2, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/4 v7, 0x0
+    move-result-object v2
 
-    if-eqz v6, :cond_0
+    check-cast v2, Ljava/lang/String;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "\n\n"
+
+    .line 13
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_0
 
-    .line 12
-    :cond_0
-    invoke-virtual {v5}, Ljava/lang/String;->trim()Ljava/lang/String;
-
-    move-result-object v5
-
-    .line 13
-    :try_start_0
-    new-instance v6, Lorg/json/JSONObject;
-
-    invoke-direct {v6, v5}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
-
-    const-string v5, "gct"
-
     .line 14
-    invoke-virtual {v6, v5}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+    :cond_1
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object p2
 
-    const-string v8, "status"
+    invoke-virtual {p2}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    move-result-object p2
 
     .line 15
-    invoke-virtual {v6, v8}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result-object v6
+    move-result v0
 
-    iput-object v6, v2, Lj3/ub;->e:Ljava/lang/String;
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 16
-    iget-object v6, v2, Lj3/ub;->a:Ljava/lang/Object;
-
-    monitor-enter v6
-
-    .line 17
-    :try_start_1
-    iput-object v5, v2, Lj3/ub;->c:Ljava/lang/String;
-
-    .line 18
-    monitor-exit v6
-
-    const/4 v5, 0x1
+    if-nez v0, :cond_2
 
     goto :goto_1
 
-    :catchall_0
-    move-exception v0
+    :cond_2
+    const-string p2, "No debug information"
 
-    monitor-exit v6
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw v0
-
-    :catch_0
-    :goto_0
-    const/4 v5, 0x0
-
+    .line 16
     :goto_1
-    if-nez v5, :cond_1
+    new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    const-string v0, "In-app preview failed to load because of a system error. Please try again later."
+    iget-object v1, p1, Lj3/pb;->a:Landroid/content/Context;
+
+    invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+
+    .line 17
+    invoke-virtual {v0, p2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    const-string v1, "Ad Information"
+
+    .line 18
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     .line 19
-    invoke-virtual {v2, v3, v0, v1, v1}, Lj3/ub;->a(Landroid/content/Context;Ljava/lang/String;ZZ)V
+    new-instance v1, Lj3/ub;
 
-    goto :goto_2
+    invoke-direct {v1, p1, p2}, Lj3/ub;-><init>(Lj3/pb;Ljava/lang/String;)V
 
-    :cond_1
-    const-string v5, "2"
+    const-string p1, "Share"
+
+    invoke-virtual {v0, p1, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 20
-    iget-object v6, v2, Lj3/ub;->e:Ljava/lang/String;
+    sget-object p1, Lj3/tb;->g:Landroid/content/DialogInterface$OnClickListener;
 
-    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    const-string p2, "Close"
 
-    move-result v5
-
-    if-eqz v5, :cond_2
-
-    const-string v0, "There was no creative pushed from DFP to the device."
+    invoke-virtual {v0, p2, p1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 21
-    invoke-virtual {v2, v3, v0, v7, v7}, Lj3/ub;->a(Landroid/content/Context;Ljava/lang/String;ZZ)V
+    invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
-    goto :goto_2
-
-    :cond_2
-    const-string v5, "1"
+    move-result-object p1
 
     .line 22
-    iget-object v6, v2, Lj3/ub;->e:Ljava/lang/String;
-
-    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_3
-
-    .line 23
-    invoke-virtual {v2, v3, v4, v0}, Lj3/ub;->f(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1}, Landroid/app/AlertDialog;->show()V
 
     goto :goto_2
 
     :cond_3
-    const-string v0, "0"
+    const/4 v0, 0x0
+
+    if-ne p2, v1, :cond_4
+
+    .line 23
+    sget-object p2, Lj3/kd;->a:Lj3/km0;
+
+    new-instance v1, Lj3/wb;
+
+    invoke-direct {v1, p1, v0}, Lj3/wb;-><init>(Ljava/lang/Object;I)V
+
+    check-cast p2, Lj3/od;
 
     .line 24
-    iget-object v4, v2, Lj3/ub;->e:Ljava/lang/String;
+    iget-object p1, p2, Lj3/od;->g:Ljava/util/concurrent/Executor;
 
-    invoke-virtual {v0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-interface {p1, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
-    move-result v0
-
-    if-eqz v0, :cond_4
-
-    const-string v0, "The device is successfully linked for creative preview."
-
-    .line 25
-    invoke-virtual {v2, v3, v0, v7, v1}, Lj3/ub;->a(Landroid/content/Context;Ljava/lang/String;ZZ)V
+    goto :goto_2
 
     :cond_4
-    :goto_2
-    return-void
+    if-ne p2, v2, :cond_5
+
+    .line 25
+    sget-object p2, Lj3/kd;->a:Lj3/km0;
+
+    new-instance v1, Lj3/vb;
+
+    invoke-direct {v1, p1, v0}, Lj3/vb;-><init>(Ljava/lang/Object;I)V
+
+    check-cast p2, Lj3/od;
 
     .line 26
-    :goto_3
-    iget-object v0, p0, Lj3/sb;->b:Ljava/lang/Object;
+    iget-object p1, p2, Lj3/od;->g:Ljava/util/concurrent/Executor;
 
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzdhl;
+    invoke-interface {p1, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
-    .line 27
-    iget-object v2, v0, Lcom/google/android/gms/internal/ads/zzdhl;->a:Lj3/bj;
-
-    invoke-virtual {v2}, Lj3/bj;->d()Ljava/util/concurrent/Executor;
-
-    move-result-object v2
-
-    new-instance v3, Lj3/ae;
-
-    invoke-direct {v3, v0, v1}, Lj3/ae;-><init>(Ljava/lang/Object;I)V
-
-    invoke-interface {v2, v3}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-
+    :cond_5
+    :goto_2
     return-void
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

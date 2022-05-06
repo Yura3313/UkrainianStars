@@ -1,56 +1,50 @@
-.class public final Li1/f;
-.super Landroid/widget/RelativeLayout;
+.class public final synthetic Li1/f;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public a:Lj3/lb;
+.field public final g:Li1/g;
 
-.field public b:Z
+.field public final h:Landroid/graphics/drawable/Drawable;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
+.method public constructor <init>(Li1/g;Landroid/graphics/drawable/Drawable;)V
+    .locals 0
 
-    .line 1
-    invoke-direct {p0, p1}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    new-instance v0, Lj3/lb;
+    iput-object p1, p0, Li1/f;->g:Li1/g;
 
-    .line 3
-    invoke-direct {v0, p1}, Lj3/lb;-><init>(Landroid/content/Context;)V
-
-    .line 4
-    iput-object p2, v0, Lj3/lb;->b:Ljava/lang/String;
-
-    .line 5
-    iput-object v0, p0, Li1/f;->a:Lj3/lb;
-
-    .line 6
-    iput-object p3, v0, Lj3/lb;->d:Ljava/lang/String;
+    iput-object p2, p0, Li1/f;->h:Landroid/graphics/drawable/Drawable;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
-    .locals 1
+.method public final run()V
+    .locals 2
 
     .line 1
-    iget-boolean v0, p0, Li1/f;->b:Z
+    iget-object v0, p0, Li1/f;->g:Li1/g;
 
-    if-nez v0, :cond_0
+    iget-object v1, p0, Li1/f;->h:Landroid/graphics/drawable/Drawable;
 
     .line 2
-    iget-object v0, p0, Li1/f;->a:Lj3/lb;
+    iget-object v0, v0, Li1/g;->b:Lcom/google/android/gms/ads/internal/overlay/zzc;
 
-    invoke-virtual {v0, p1}, Lj3/lb;->c(Landroid/view/MotionEvent;)V
+    iget-object v0, v0, Lcom/google/android/gms/ads/internal/overlay/zzc;->h:Landroid/app/Activity;
 
-    :cond_0
-    const/4 p1, 0x0
+    invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
-    return p1
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Landroid/view/Window;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    return-void
 .end method

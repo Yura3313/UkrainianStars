@@ -42,7 +42,7 @@
     iget-object p1, p1, Landroidx/fragment/app/FragmentManager;->q:Landroidx/fragment/app/w;
 
     .line 3
-    iget-object v0, p1, Landroidx/fragment/app/w;->b:Landroid/content/Context;
+    iget-object v0, p1, Landroidx/fragment/app/w;->h:Landroid/content/Context;
 
     const/4 v1, 0x0
 

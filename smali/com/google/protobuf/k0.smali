@@ -18,11 +18,11 @@
 
 
 # static fields
-.field public static final b:Lcom/google/protobuf/k0;
+.field public static final h:Lcom/google/protobuf/k0;
 
 
 # instance fields
-.field public a:Z
+.field public g:Z
 
 
 # direct methods
@@ -34,12 +34,12 @@
 
     invoke-direct {v0}, Lcom/google/protobuf/k0;-><init>()V
 
-    sput-object v0, Lcom/google/protobuf/k0;->b:Lcom/google/protobuf/k0;
+    sput-object v0, Lcom/google/protobuf/k0;->h:Lcom/google/protobuf/k0;
 
     const/4 v1, 0x0
 
     .line 2
-    iput-boolean v1, v0, Lcom/google/protobuf/k0;->a:Z
+    iput-boolean v1, v0, Lcom/google/protobuf/k0;->g:Z
 
     return-void
 .end method
@@ -53,7 +53,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Lcom/google/protobuf/k0;->a:Z
+    iput-boolean v0, p0, Lcom/google/protobuf/k0;->g:Z
 
     return-void
 .end method
@@ -74,7 +74,7 @@
     const/4 p1, 0x1
 
     .line 4
-    iput-boolean p1, p0, Lcom/google/protobuf/k0;->a:Z
+    iput-boolean p1, p0, Lcom/google/protobuf/k0;->g:Z
 
     return-void
 .end method
@@ -159,7 +159,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/protobuf/k0;->a:Z
+    iget-boolean v0, p0, Lcom/google/protobuf/k0;->g:Z
 
     if-eqz v0, :cond_0
 

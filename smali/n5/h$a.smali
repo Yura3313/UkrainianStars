@@ -47,11 +47,11 @@
     check-cast p1, Ll5/k1;
 
     .line 2
-    sget-object v0, Lp5/x;->j:Lp5/x;
+    sget-object v0, Lp5/z;->j:Lp5/z;
 
     const-string v1, "RSA"
 
-    invoke-virtual {v0, v1}, Lp5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lp5/z;->a(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -60,11 +60,11 @@
     .line 3
     new-instance v1, Ljava/math/BigInteger;
 
-    invoke-virtual {p1}, Ll5/k1;->y()Lm5/c;
+    invoke-virtual {p1}, Ll5/k1;->x()Lm5/c;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lm5/c;->n()[B
+    invoke-virtual {v2}, Lm5/c;->m()[B
 
     move-result-object v2
 
@@ -75,11 +75,11 @@
     .line 4
     new-instance v2, Ljava/math/BigInteger;
 
-    invoke-virtual {p1}, Ll5/k1;->x()Lm5/c;
+    invoke-virtual {p1}, Ll5/k1;->w()Lm5/c;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lm5/c;->n()[B
+    invoke-virtual {v4}, Lm5/c;->m()[B
 
     move-result-object v4
 
@@ -101,19 +101,19 @@
     new-instance v1, Lp5/i0;
 
     .line 8
-    invoke-virtual {p1}, Ll5/k1;->z()Ll5/i1;
+    invoke-virtual {p1}, Ll5/k1;->y()Ll5/i1;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Ll5/i1;->t()Ll5/o0;
+    invoke-virtual {p1}, Ll5/i1;->s()Ll5/o0;
 
     move-result-object p1
 
-    invoke-static {p1}, Ln5/k;->c(Ll5/o0;)Lp5/z;
+    invoke-static {p1}, Ln5/k;->c(Ll5/o0;)I
 
-    move-result-object p1
+    move-result p1
 
-    invoke-direct {v1, v0, p1}, Lp5/i0;-><init>(Ljava/security/interfaces/RSAPublicKey;Lp5/z;)V
+    invoke-direct {v1, v0, p1}, Lp5/i0;-><init>(Ljava/security/interfaces/RSAPublicKey;I)V
 
     return-object v1
 .end method

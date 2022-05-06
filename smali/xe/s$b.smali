@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public final a:Lokhttp3/ResponseBody;
+.field public final g:Lokhttp3/ResponseBody;
 
-.field public final b:Lokio/BufferedSource;
+.field public final h:Lokio/BufferedSource;
 
-.field public h:Ljava/io/IOException;
+.field public i:Ljava/io/IOException;
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 .end field
@@ -33,7 +33,7 @@
     invoke-direct {p0}, Lokhttp3/ResponseBody;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lxe/s$b;->a:Lokhttp3/ResponseBody;
+    iput-object p1, p0, Lxe/s$b;->g:Lokhttp3/ResponseBody;
 
     .line 3
     new-instance v0, Lxe/s$b$a;
@@ -48,7 +48,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lxe/s$b;->b:Lokio/BufferedSource;
+    iput-object p1, p0, Lxe/s$b;->h:Lokio/BufferedSource;
 
     return-void
 .end method
@@ -59,7 +59,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lxe/s$b;->a:Lokhttp3/ResponseBody;
+    iget-object v0, p0, Lxe/s$b;->g:Lokhttp3/ResponseBody;
 
     invoke-virtual {v0}, Lokhttp3/ResponseBody;->close()V
 
@@ -70,7 +70,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lxe/s$b;->a:Lokhttp3/ResponseBody;
+    iget-object v0, p0, Lxe/s$b;->g:Lokhttp3/ResponseBody;
 
     invoke-virtual {v0}, Lokhttp3/ResponseBody;->contentLength()J
 
@@ -83,7 +83,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lxe/s$b;->a:Lokhttp3/ResponseBody;
+    iget-object v0, p0, Lxe/s$b;->g:Lokhttp3/ResponseBody;
 
     invoke-virtual {v0}, Lokhttp3/ResponseBody;->contentType()Lokhttp3/MediaType;
 
@@ -96,7 +96,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lxe/s$b;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lxe/s$b;->h:Lokio/BufferedSource;
 
     return-object v0
 .end method

@@ -67,7 +67,7 @@
 
     const-string v1, "Task is not yet complete"
 
-    invoke-static {v0, v1}, Lie/a;->c(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Ls3/g;->c(ZLjava/lang/Object;)V
 
     return-void
 .end method
@@ -81,7 +81,7 @@
 
     const-string v1, "Task is already complete"
 
-    invoke-static {v0, v1}, Lie/a;->c(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Ls3/g;->c(ZLjava/lang/Object;)V
 
     return-void
 .end method
@@ -131,7 +131,7 @@
 
     const-string v0, "Exception must not be null"
 
-    invoke-static {p1, v0}, Lie/a;->b(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, v0}, Ls3/g;->b(Ljava/lang/Object;Ljava/lang/Object;)V
 
     iget-object v0, p0, Lcom/google/android/play/core/tasks/m;->a:Ljava/lang/Object;
 
@@ -357,7 +357,7 @@
 
     const-string v0, "Exception must not be null"
 
-    invoke-static {p1, v0}, Lie/a;->b(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, v0}, Ls3/g;->b(Ljava/lang/Object;Ljava/lang/Object;)V
 
     iget-object v0, p0, Lcom/google/android/play/core/tasks/m;->a:Ljava/lang/Object;
 

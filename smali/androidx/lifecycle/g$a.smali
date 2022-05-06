@@ -30,7 +30,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1}, Landroidx/lifecycle/s;->c(Landroid/app/Activity;)V
+    invoke-static {p1}, Landroidx/lifecycle/t;->c(Landroid/app/Activity;)V
 
     return-void
 .end method

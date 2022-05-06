@@ -1,5 +1,5 @@
 .class public Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
-.super Ll4/a;
+.super Lm4/a;
 .source "ExtendedFloatingActionButton.java"
 
 
@@ -23,14 +23,14 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Lj3/p;Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;Z)V
+.method public constructor <init>(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Lf1/i;Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;Z)V
     .locals 0
 
     .line 1
     iput-object p1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->i:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     .line 2
-    invoke-direct {p0, p1, p2}, Ll4/a;-><init>(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Lj3/p;)V
+    invoke-direct {p0, p1, p2}, Lm4/a;-><init>(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Lf1/i;)V
 
     .line 3
     iput-object p3, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->g:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$i;
@@ -61,7 +61,7 @@
     iget-boolean v1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->h:Z
 
     .line 2
-    iput-boolean v1, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->C:Z
+    iput-boolean v1, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->D:Z
 
     .line 3
     invoke-virtual {v0}, Landroid/widget/Button;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -112,7 +112,7 @@
     iget-object v1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->i:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     .line 2
-    iget-boolean v2, v1, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->C:Z
+    iget-boolean v2, v1, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->D:Z
 
     if-eq v0, v2, :cond_1
 
@@ -154,7 +154,7 @@
     .locals 2
 
     .line 1
-    invoke-super {p0}, Ll4/a;->e()V
+    invoke-super {p0}, Lm4/a;->e()V
 
     .line 2
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->i:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
@@ -204,14 +204,14 @@
     .locals 9
 
     .line 1
-    invoke-virtual {p0}, Ll4/a;->i()Lb4/g;
+    invoke-virtual {p0}, Lm4/a;->i()Lc4/g;
 
     move-result-object v0
 
     const-string v1, "width"
 
     .line 2
-    invoke-virtual {v0, v1}, Lb4/g;->g(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Lc4/g;->g(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -224,7 +224,7 @@
     if-eqz v2, :cond_0
 
     .line 3
-    invoke-virtual {v0, v1}, Lb4/g;->e(Ljava/lang/String;)[Landroid/animation/PropertyValuesHolder;
+    invoke-virtual {v0, v1}, Lc4/g;->e(Ljava/lang/String;)[Landroid/animation/PropertyValuesHolder;
 
     move-result-object v2
 
@@ -256,22 +256,22 @@
     invoke-virtual {v6, v7}, Landroid/animation/PropertyValuesHolder;->setFloatValues([F)V
 
     .line 5
-    iget-object v6, v0, Lb4/g;->b:Lm/h;
+    iget-object v6, v0, Lc4/g;->b:Lm/g;
 
-    invoke-virtual {v6, v1, v2}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v6, v1, v2}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
     const-string v1, "height"
 
     .line 6
-    invoke-virtual {v0, v1}, Lb4/g;->g(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Lc4/g;->g(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
     .line 7
-    invoke-virtual {v0, v1}, Lb4/g;->e(Ljava/lang/String;)[Landroid/animation/PropertyValuesHolder;
+    invoke-virtual {v0, v1}, Lc4/g;->e(Ljava/lang/String;)[Landroid/animation/PropertyValuesHolder;
 
     move-result-object v2
 
@@ -303,13 +303,13 @@
     invoke-virtual {v6, v4}, Landroid/animation/PropertyValuesHolder;->setFloatValues([F)V
 
     .line 9
-    iget-object v3, v0, Lb4/g;->b:Lm/h;
+    iget-object v3, v0, Lc4/g;->b:Lm/g;
 
-    invoke-virtual {v3, v1, v2}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v1, v2}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 10
     :cond_1
-    invoke-virtual {p0, v0}, Ll4/a;->h(Lb4/g;)Landroid/animation/AnimatorSet;
+    invoke-virtual {p0, v0}, Lm4/a;->h(Lc4/g;)Landroid/animation/AnimatorSet;
 
     move-result-object v0
 
@@ -326,10 +326,10 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Ll4/a;->d:Lj3/p;
+    iget-object v0, p0, Lm4/a;->d:Lf1/i;
 
     .line 2
-    iget-object v1, v0, Lj3/p;->a:Ljava/lang/Object;
+    iget-object v1, v0, Lf1/i;->g:Ljava/lang/Object;
 
     check-cast v1, Landroid/animation/Animator;
 
@@ -340,7 +340,7 @@
 
     .line 4
     :cond_0
-    iput-object p1, v0, Lj3/p;->a:Ljava/lang/Object;
+    iput-object p1, v0, Lf1/i;->g:Ljava/lang/Object;
 
     .line 5
     iget-object p1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->i:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
@@ -348,7 +348,7 @@
     iget-boolean v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->h:Z
 
     .line 6
-    iput-boolean v0, p1, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->C:Z
+    iput-boolean v0, p1, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->D:Z
 
     const/4 v0, 0x1
 

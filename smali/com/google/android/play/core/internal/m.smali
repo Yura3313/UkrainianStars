@@ -6,7 +6,7 @@
 
 
 # direct methods
-.method public static P0(Landroid/os/IBinder;)Lcom/google/android/play/core/internal/n;
+.method public static Q0(Landroid/os/IBinder;)Lcom/google/android/play/core/internal/n;
     .locals 2
 
     if-eqz p0, :cond_1

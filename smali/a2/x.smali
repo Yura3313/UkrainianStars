@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic a:La2/w;
+.field public final synthetic g:La2/w;
 
 
 # direct methods
@@ -15,7 +15,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, La2/x;->a:La2/w;
+    iput-object p1, p0, La2/x;->g:La2/w;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,12 +28,12 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, La2/x;->a:La2/w;
+    iget-object v0, p0, La2/x;->g:La2/w;
 
     iget-object v0, v0, La2/w;->a:La2/f$a;
 
     .line 2
-    iget-object v0, v0, La2/f$a;->b:Lcom/google/android/gms/common/api/a$f;
+    iget-object v0, v0, La2/f$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;

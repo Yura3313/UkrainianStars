@@ -38,22 +38,22 @@
 
     iget-object v1, p0, Lio/sentry/android/core/AndroidTransportGate;->logger:Lio/sentry/ILogger;
 
-    invoke-static {v0, v1}, Lio/sentry/android/core/util/ConnectivityChecker;->getConnectionStatus(Landroid/content/Context;Lio/sentry/ILogger;)Lio/sentry/android/core/util/ConnectivityChecker$Status;
+    invoke-static {v0, v1}, Lio/sentry/android/core/internal/util/ConnectivityChecker;->getConnectionStatus(Landroid/content/Context;Lio/sentry/ILogger;)Lio/sentry/android/core/internal/util/ConnectivityChecker$Status;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lio/sentry/android/core/AndroidTransportGate;->isConnected(Lio/sentry/android/core/util/ConnectivityChecker$Status;)Z
+    invoke-virtual {p0, v0}, Lio/sentry/android/core/AndroidTransportGate;->isConnected(Lio/sentry/android/core/internal/util/ConnectivityChecker$Status;)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public isConnected(Lio/sentry/android/core/util/ConnectivityChecker$Status;)Z
+.method public isConnected(Lio/sentry/android/core/internal/util/ConnectivityChecker$Status;)Z
     .locals 2
 
     .line 2
-    sget-object v0, Lio/sentry/android/core/AndroidTransportGate$1;->$SwitchMap$io$sentry$android$core$util$ConnectivityChecker$Status:[I
+    sget-object v0, Lio/sentry/android/core/AndroidTransportGate$1;->$SwitchMap$io$sentry$android$core$internal$util$ConnectivityChecker$Status:[I
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 

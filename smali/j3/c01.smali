@@ -1,142 +1,89 @@
 .class public final Lj3/c01;
-.super Lj3/mw0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-
-# static fields
-.field public static final d:Ljava/lang/Object;
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final b:J
+.field public final synthetic g:I
 
-.field public final c:J
+.field public final synthetic h:Ljava/lang/Object;
+
+.field public final synthetic i:Ljava/lang/Object;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Ljava/lang/Object;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    sput-object v0, Lj3/c01;->d:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(JZ)V
+.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lj3/mw0;-><init>()V
+    iput p3, p0, Lj3/c01;->g:I
 
-    .line 2
-    iput-wide p1, p0, Lj3/c01;->b:J
+    iput-object p1, p0, Lj3/c01;->i:Ljava/lang/Object;
 
-    .line 3
-    iput-wide p1, p0, Lj3/c01;->c:J
+    iput-object p2, p0, Lj3/c01;->h:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(ILj3/ow0;Z)Lj3/ow0;
-    .locals 4
+.method public final run()V
+    .locals 3
 
-    const/4 v0, 0x1
+    iget v0, p0, Lj3/c01;->g:I
 
-    .line 1
-    invoke-static {p1, v0}, Lj3/om0;->l(II)I
-
-    if-eqz p3, :cond_0
-
-    .line 2
-    sget-object p1, Lj3/c01;->d:Ljava/lang/Object;
+    packed-switch v0, :pswitch_data_0
 
     goto :goto_0
 
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 3
-    :goto_0
-    iget-wide v0, p0, Lj3/c01;->b:J
-
-    const-wide/16 v2, 0x0
-
-    .line 4
-    iput-object p1, p2, Lj3/ow0;->a:Ljava/lang/Object;
-
-    .line 5
-    iput-object p1, p2, Lj3/ow0;->b:Ljava/lang/Object;
-
-    .line 6
-    iput-wide v0, p2, Lj3/ow0;->c:J
-
-    .line 7
-    iput-wide v2, p2, Lj3/ow0;->d:J
-
-    return-object p2
-.end method
-
-.method public final e(ILj3/qw0;ZJ)Lj3/qw0;
-    .locals 0
-
-    const/4 p3, 0x1
-
     .line 1
-    invoke-static {p1, p3}, Lj3/om0;->l(II)I
+    :pswitch_0
+    iget-object v0, p0, Lj3/c01;->i:Ljava/lang/Object;
+
+    check-cast v0, Lj3/b01;
 
     .line 2
-    iget-wide p3, p0, Lj3/c01;->c:J
+    iget-object v0, v0, Lj3/b01;->k:Lj3/xf;
 
     .line 3
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v1, p0, Lj3/c01;->h:Ljava/lang/Object;
+
+    check-cast v1, Ljava/io/IOException;
 
     .line 4
-    iput-wide p3, p2, Lj3/qw0;->a:J
+    iget-object v0, v0, Lj3/xf;->p:Lj3/bg;
 
-    return-object p2
-.end method
+    if-eqz v0, :cond_0
 
-.method public final f(Ljava/lang/Object;)I
-    .locals 1
+    const-string v2, "onLoadError"
 
-    .line 1
-    sget-object v0, Lj3/c01;->d:Ljava/lang/Object;
-
-    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x0
-
-    return p1
+    .line 5
+    invoke-interface {v0, v2, v1}, Lj3/bg;->d(Ljava/lang/String;Ljava/lang/Exception;)V
 
     :cond_0
-    const/4 p1, -0x1
+    return-void
 
-    return p1
-.end method
+    .line 6
+    :goto_0
+    iget-object v0, p0, Lj3/c01;->i:Ljava/lang/Object;
 
-.method public final g()I
-    .locals 1
+    check-cast v0, Lj3/q21;
 
-    const/4 v0, 0x1
+    .line 7
+    iget-object v0, v0, Lj3/q21;->b:Lj3/xf;
 
-    return v0
-.end method
+    .line 8
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-.method public final h()I
-    .locals 1
+    return-void
 
-    const/4 v0, 0x1
-
-    return v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

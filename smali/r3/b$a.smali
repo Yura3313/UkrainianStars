@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method public final w(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+.method public final t(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
     .locals 0
 
     return-void

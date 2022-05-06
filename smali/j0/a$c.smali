@@ -229,7 +229,7 @@
     :cond_7
     iget-object p1, v0, Lj0/a;->i:Landroid/view/View;
 
-    sget-object v0, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 13
     invoke-virtual {p1, p2, p3}, Landroid/view/View;->performAccessibilityAction(ILandroid/os/Bundle;)Z

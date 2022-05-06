@@ -1,852 +1,289 @@
-.class public final Lj3/jr0;
-.super Lj3/hq0;
+.class public abstract Lj3/jr0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
-
-# interfaces
-.implements Lj3/ws0;
-.implements Ljava/util/RandomAccess;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lj3/hq0<",
-        "Ljava/lang/Float;",
-        ">;",
-        "Lj3/ws0;",
-        "Ljava/util/RandomAccess;"
-    }
-.end annotation
 
 
 # instance fields
-.field public b:[F
+.field public a:I
 
-.field public h:I
+.field public b:I
+
+.field public c:I
+
+.field public d:Lj3/mr0;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
-
-    .line 1
-    new-instance v0, Lj3/jr0;
-
-    const/4 v1, 0x0
-
-    new-array v2, v1, [F
-
-    invoke-direct {v0, v2, v1}, Lj3/jr0;-><init>([FI)V
-
-    .line 2
-    iput-boolean v1, v0, Lj3/hq0;->a:Z
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/16 v0, 0xa
-
-    new-array v0, v0, [F
-
-    .line 1
-    invoke-direct {p0}, Lj3/hq0;-><init>()V
-
-    .line 2
-    iput-object v0, p0, Lj3/jr0;->b:[F
-
-    const/4 v0, 0x0
-
-    .line 3
-    iput v0, p0, Lj3/jr0;->h:I
-
-    return-void
-.end method
-
-.method public constructor <init>([FI)V
+.method public constructor <init>(Lj3/s5;)V
     .locals 0
 
-    .line 4
-    invoke-direct {p0}, Lj3/hq0;-><init>()V
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5
-    iput-object p1, p0, Lj3/jr0;->b:[F
+    const/16 p1, 0x64
 
-    .line 6
-    iput p2, p0, Lj3/jr0;->h:I
+    .line 2
+    iput p1, p0, Lj3/jr0;->b:I
+
+    const p1, 0x7fffffff
+
+    .line 3
+    iput p1, p0, Lj3/jr0;->c:I
 
     return-void
+.end method
+
+.method public static A(I)I
+    .locals 1
+
+    ushr-int/lit8 v0, p0, 0x1
+
+    and-int/lit8 p0, p0, 0x1
+
+    neg-int p0, p0
+
+    xor-int/2addr p0, v0
+
+    return p0
+.end method
+
+.method public static d([BIIZ)Lj3/jr0;
+    .locals 7
+
+    .line 1
+    new-instance v6, Lj3/kr0;
+
+    const/4 v5, 0x0
+
+    move-object v0, v6
+
+    move-object v1, p0
+
+    move v2, p1
+
+    move v3, p2
+
+    move v4, p3
+
+    invoke-direct/range {v0 .. v5}, Lj3/kr0;-><init>([BIIZLj3/s5;)V
+
+    .line 2
+    :try_start_0
+    invoke-virtual {v6, p2}, Lj3/kr0;->y(I)I
+    :try_end_0
+    .catch Lcom/google/android/gms/internal/ads/zzegz; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v6
+
+    :catch_0
+    move-exception p0
+
+    .line 3
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    invoke-direct {p1, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/Throwable;)V
+
+    throw p1
+.end method
+
+.method public static v(J)J
+    .locals 4
+
+    const/4 v0, 0x1
+
+    ushr-long v0, p0, v0
+
+    const-wide/16 v2, 0x1
+
+    and-long/2addr p0, v2
+
+    neg-long p0, p0
+
+    xor-long/2addr p0, v0
+
+    return-wide p0
 .end method
 
 
 # virtual methods
-.method public final synthetic D(I)Lj3/tr0;
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lj3/jr0;->h:I
-
-    if-lt p1, v0, :cond_0
-
-    .line 2
-    new-instance v0, Lj3/jr0;
-
-    iget-object v1, p0, Lj3/jr0;->b:[F
-
-    invoke-static {v1, p1}, Ljava/util/Arrays;->copyOf([FI)[F
-
-    move-result-object p1
-
-    iget v1, p0, Lj3/jr0;->h:I
-
-    invoke-direct {v0, p1, v1}, Lj3/jr0;-><init>([FI)V
-
-    return-object v0
-
-    .line 3
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    invoke-direct {p1}, Ljava/lang/IllegalArgumentException;-><init>()V
-
-    throw p1
-.end method
-
-.method public final synthetic add(ILjava/lang/Object;)V
-    .locals 5
-
-    .line 1
-    check-cast p2, Ljava/lang/Float;
-
-    .line 2
-    invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
-
-    move-result p2
-
-    .line 3
-    invoke-virtual {p0}, Lj3/hq0;->a()V
-
-    if-ltz p1, :cond_1
-
-    .line 4
-    iget v0, p0, Lj3/jr0;->h:I
-
-    if-gt p1, v0, :cond_1
-
-    .line 5
-    iget-object v1, p0, Lj3/jr0;->b:[F
-
-    array-length v2, v1
-
-    if-ge v0, v2, :cond_0
-
-    add-int/lit8 v2, p1, 0x1
-
-    sub-int/2addr v0, p1
-
-    .line 6
-    invoke-static {v1, p1, v1, v2, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v2, 0x3
-
-    const/4 v3, 0x2
-
-    const/4 v4, 0x1
-
-    invoke-static {v0, v2, v3, v4}, Landroid/support/v4/media/a;->a(IIII)I
-
-    move-result v0
-
-    .line 7
-    new-array v0, v0, [F
-
-    const/4 v2, 0x0
-
-    .line 8
-    invoke-static {v1, v2, v0, v2, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 9
-    iget-object v1, p0, Lj3/jr0;->b:[F
-
-    add-int/lit8 v2, p1, 0x1
-
-    iget v3, p0, Lj3/jr0;->h:I
-
-    sub-int/2addr v3, p1
-
-    invoke-static {v1, p1, v0, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 10
-    iput-object v0, p0, Lj3/jr0;->b:[F
-
-    .line 11
-    :goto_0
-    iget-object v0, p0, Lj3/jr0;->b:[F
-
-    aput p2, v0, p1
-
-    .line 12
-    iget p1, p0, Lj3/jr0;->h:I
-
-    add-int/lit8 p1, p1, 0x1
-
-    iput p1, p0, Lj3/jr0;->h:I
-
-    .line 13
-    iget p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    add-int/lit8 p1, p1, 0x1
-
-    iput p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    return-void
-
-    .line 14
-    :cond_1
-    new-instance p2, Ljava/lang/IndexOutOfBoundsException;
-
-    invoke-virtual {p0, p1}, Lj3/jr0;->c(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p2, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
-
-    throw p2
-.end method
-
-.method public final synthetic add(Ljava/lang/Object;)Z
-    .locals 0
-
-    .line 15
-    check-cast p1, Ljava/lang/Float;
-
-    .line 16
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
-
-    move-result p1
-
-    invoke-virtual {p0, p1}, Lj3/jr0;->d(F)V
-
-    const/4 p1, 0x1
-
-    return p1
-.end method
-
-.method public final addAll(Ljava/util/Collection;)Z
-    .locals 5
-    .annotation system Ldalvik/annotation/Signature;
+.method public abstract a()D
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "(",
-            "Ljava/util/Collection<",
-            "+",
-            "Ljava/lang/Float;",
-            ">;)Z"
+            Ljava/io/IOException;
         }
     .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Lj3/hq0;->a()V
-
-    .line 2
-    sget-object v0, Lj3/lr0;->a:Ljava/nio/charset/Charset;
-
-    .line 3
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 4
-    instance-of v0, p1, Lj3/jr0;
-
-    if-nez v0, :cond_0
-
-    .line 5
-    invoke-super {p0, p1}, Lj3/hq0;->addAll(Ljava/util/Collection;)Z
-
-    move-result p1
-
-    return p1
-
-    .line 6
-    :cond_0
-    check-cast p1, Lj3/jr0;
-
-    .line 7
-    iget v0, p1, Lj3/jr0;->h:I
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_1
-
-    return v1
-
-    :cond_1
-    const v2, 0x7fffffff
-
-    .line 8
-    iget v3, p0, Lj3/jr0;->h:I
-
-    sub-int/2addr v2, v3
-
-    if-lt v2, v0, :cond_3
-
-    add-int/2addr v3, v0
-
-    .line 9
-    iget-object v0, p0, Lj3/jr0;->b:[F
-
-    array-length v2, v0
-
-    if-le v3, v2, :cond_2
-
-    .line 10
-    invoke-static {v0, v3}, Ljava/util/Arrays;->copyOf([FI)[F
-
-    move-result-object v0
-
-    iput-object v0, p0, Lj3/jr0;->b:[F
-
-    .line 11
-    :cond_2
-    iget-object v0, p1, Lj3/jr0;->b:[F
-
-    iget-object v2, p0, Lj3/jr0;->b:[F
-
-    iget v4, p0, Lj3/jr0;->h:I
-
-    iget p1, p1, Lj3/jr0;->h:I
-
-    invoke-static {v0, v1, v2, v4, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 12
-    iput v3, p0, Lj3/jr0;->h:I
-
-    .line 13
-    iget p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    const/4 v0, 0x1
-
-    add-int/2addr p1, v0
-
-    iput p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    return v0
-
-    .line 14
-    :cond_3
-    new-instance p1, Ljava/lang/OutOfMemoryError;
-
-    invoke-direct {p1}, Ljava/lang/OutOfMemoryError;-><init>()V
-
-    throw p1
 .end method
 
-.method public final b(I)V
-    .locals 1
-
-    if-ltz p1, :cond_0
-
-    .line 1
-    iget v0, p0, Lj3/jr0;->h:I
-
-    if-ge p1, v0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    new-instance v0, Ljava/lang/IndexOutOfBoundsException;
-
-    invoke-virtual {p0, p1}, Lj3/jr0;->c(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+.method public abstract b()F
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 .end method
 
-.method public final c(I)Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    iget v0, p0, Lj3/jr0;->h:I
-
-    const/16 v1, 0x23
-
-    const-string v2, "Index:"
-
-    const-string v3, ", Size:"
-
-    invoke-static {v1, v2, p1, v3, v0}, Ld2/a;->a(ILjava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
-
-    move-result-object p1
-
-    return-object p1
+.method public abstract c()Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 .end method
 
-.method public final contains(Ljava/lang/Object;)Z
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0, p1}, Lj3/jr0;->indexOf(Ljava/lang/Object;)I
-
-    move-result p1
-
-    const/4 v0, -0x1
-
-    if-eq p1, v0, :cond_0
-
-    const/4 p1, 0x1
-
-    return p1
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return p1
+.method public abstract e()I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 .end method
 
-.method public final d(F)V
-    .locals 5
-
-    .line 1
-    invoke-virtual {p0}, Lj3/hq0;->a()V
-
-    .line 2
-    iget v0, p0, Lj3/jr0;->h:I
-
-    iget-object v1, p0, Lj3/jr0;->b:[F
-
-    array-length v2, v1
-
-    if-ne v0, v2, :cond_0
-
-    const/4 v2, 0x3
-
-    const/4 v3, 0x2
-
-    const/4 v4, 0x1
-
-    invoke-static {v0, v2, v3, v4}, Landroid/support/v4/media/a;->a(IIII)I
-
-    move-result v2
-
-    .line 3
-    new-array v2, v2, [F
-
-    const/4 v3, 0x0
-
-    .line 4
-    invoke-static {v1, v3, v2, v3, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 5
-    iput-object v2, p0, Lj3/jr0;->b:[F
-
-    .line 6
-    :cond_0
-    iget-object v0, p0, Lj3/jr0;->b:[F
-
-    iget v1, p0, Lj3/jr0;->h:I
-
-    add-int/lit8 v2, v1, 0x1
-
-    iput v2, p0, Lj3/jr0;->h:I
-
-    aput p1, v0, v1
-
-    return-void
+.method public abstract f()J
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 .end method
 
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 5
-
-    const/4 v0, 0x1
-
-    if-ne p0, p1, :cond_0
-
-    return v0
-
-    .line 1
-    :cond_0
-    instance-of v1, p1, Lj3/jr0;
-
-    if-nez v1, :cond_1
-
-    .line 2
-    invoke-super {p0, p1}, Lj3/hq0;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    return p1
-
-    .line 3
-    :cond_1
-    check-cast p1, Lj3/jr0;
-
-    .line 4
-    iget v1, p0, Lj3/jr0;->h:I
-
-    iget v2, p1, Lj3/jr0;->h:I
-
-    const/4 v3, 0x0
-
-    if-eq v1, v2, :cond_2
-
-    return v3
-
-    .line 5
-    :cond_2
-    iget-object p1, p1, Lj3/jr0;->b:[F
-
-    const/4 v1, 0x0
-
-    .line 6
-    :goto_0
-    iget v2, p0, Lj3/jr0;->h:I
-
-    if-ge v1, v2, :cond_4
-
-    .line 7
-    iget-object v2, p0, Lj3/jr0;->b:[F
-
-    aget v2, v2, v1
-
-    invoke-static {v2}, Ljava/lang/Float;->floatToIntBits(F)I
-
-    move-result v2
-
-    aget v4, p1, v1
-
-    invoke-static {v4}, Ljava/lang/Float;->floatToIntBits(F)I
-
-    move-result v4
-
-    if-eq v2, v4, :cond_3
-
-    return v3
-
-    :cond_3
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_4
-    return v0
+.method public abstract g()J
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 .end method
 
-.method public final synthetic get(I)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0, p1}, Lj3/jr0;->b(I)V
-
-    .line 2
-    iget-object v0, p0, Lj3/jr0;->b:[F
-
-    aget p1, v0, p1
-
-    .line 3
-    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object p1
-
-    return-object p1
+.method public abstract h()I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 .end method
 
-.method public final hashCode()I
-    .locals 3
-
-    const/4 v0, 0x1
-
-    const/4 v1, 0x0
-
-    .line 1
-    :goto_0
-    iget v2, p0, Lj3/jr0;->h:I
-
-    if-ge v1, v2, :cond_0
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 2
-    iget-object v2, p0, Lj3/jr0;->b:[F
-
-    aget v2, v2, v1
-
-    invoke-static {v2}, Ljava/lang/Float;->floatToIntBits(F)I
-
-    move-result v2
-
-    add-int/2addr v0, v2
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    return v0
+.method public abstract i()J
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 .end method
 
-.method public final indexOf(Ljava/lang/Object;)I
-    .locals 4
-
-    .line 1
-    instance-of v0, p1, Ljava/lang/Float;
-
-    const/4 v1, -0x1
-
-    if-nez v0, :cond_0
-
-    return v1
-
-    .line 2
-    :cond_0
-    check-cast p1, Ljava/lang/Float;
-
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
-
-    move-result p1
-
-    .line 3
-    iget v0, p0, Lj3/jr0;->h:I
-
-    const/4 v2, 0x0
-
-    :goto_0
-    if-ge v2, v0, :cond_2
-
-    .line 4
-    iget-object v3, p0, Lj3/jr0;->b:[F
-
-    aget v3, v3, v2
-
-    cmpl-float v3, v3, p1
-
-    if-nez v3, :cond_1
-
-    return v2
-
-    :cond_1
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_2
-    return v1
+.method public abstract j()I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 .end method
 
-.method public final synthetic remove(I)Ljava/lang/Object;
-    .locals 4
-
-    .line 7
-    invoke-virtual {p0}, Lj3/hq0;->a()V
-
-    .line 8
-    invoke-virtual {p0, p1}, Lj3/jr0;->b(I)V
-
-    .line 9
-    iget-object v0, p0, Lj3/jr0;->b:[F
-
-    aget v1, v0, p1
-
-    .line 10
-    iget v2, p0, Lj3/jr0;->h:I
-
-    add-int/lit8 v3, v2, -0x1
-
-    if-ge p1, v3, :cond_0
-
-    add-int/lit8 v3, p1, 0x1
-
-    sub-int/2addr v2, p1
-
-    add-int/lit8 v2, v2, -0x1
-
-    .line 11
-    invoke-static {v0, v3, v0, p1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 12
-    :cond_0
-    iget p1, p0, Lj3/jr0;->h:I
-
-    add-int/lit8 p1, p1, -0x1
-
-    iput p1, p0, Lj3/jr0;->h:I
-
-    .line 13
-    iget p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    add-int/lit8 p1, p1, 0x1
-
-    iput p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    .line 14
-    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object p1
-
-    return-object p1
+.method public abstract k()Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 .end method
 
-.method public final remove(Ljava/lang/Object;)Z
-    .locals 4
-
-    .line 1
-    invoke-virtual {p0}, Lj3/hq0;->a()V
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x0
-
-    .line 2
-    :goto_0
-    iget v2, p0, Lj3/jr0;->h:I
-
-    if-ge v1, v2, :cond_1
-
-    .line 3
-    iget-object v2, p0, Lj3/jr0;->b:[F
-
-    aget v2, v2, v1
-
-    invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v2
-
-    invoke-virtual {p1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    .line 4
-    iget-object p1, p0, Lj3/jr0;->b:[F
-
-    add-int/lit8 v0, v1, 0x1
-
-    iget v2, p0, Lj3/jr0;->h:I
-
-    sub-int/2addr v2, v1
-
-    const/4 v3, 0x1
-
-    sub-int/2addr v2, v3
-
-    invoke-static {p1, v0, p1, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 5
-    iget p1, p0, Lj3/jr0;->h:I
-
-    sub-int/2addr p1, v3
-
-    iput p1, p0, Lj3/jr0;->h:I
-
-    .line 6
-    iget p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    add-int/2addr p1, v3
-
-    iput p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    return v3
-
-    :cond_0
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    return v0
+.method public abstract l()Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 .end method
 
-.method public final removeRange(II)V
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0}, Lj3/hq0;->a()V
-
-    if-lt p2, p1, :cond_0
-
-    .line 2
-    iget-object v0, p0, Lj3/jr0;->b:[F
-
-    iget v1, p0, Lj3/jr0;->h:I
-
-    sub-int/2addr v1, p2
-
-    invoke-static {v0, p2, v0, p1, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 3
-    iget v0, p0, Lj3/jr0;->h:I
-
-    sub-int/2addr p2, p1
-
-    sub-int/2addr v0, p2
-
-    iput v0, p0, Lj3/jr0;->h:I
-
-    .line 4
-    iget p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    add-int/lit8 p1, p1, 0x1
-
-    iput p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    return-void
-
-    .line 5
-    :cond_0
-    new-instance p1, Ljava/lang/IndexOutOfBoundsException;
-
-    const-string p2, "toIndex < fromIndex"
-
-    invoke-direct {p1, p2}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
-
-    throw p1
+.method public abstract m()Lj3/ar0;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 .end method
 
-.method public final synthetic set(ILjava/lang/Object;)Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    check-cast p2, Ljava/lang/Float;
-
-    .line 2
-    invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
-
-    move-result p2
-
-    .line 3
-    invoke-virtual {p0}, Lj3/hq0;->a()V
-
-    .line 4
-    invoke-virtual {p0, p1}, Lj3/jr0;->b(I)V
-
-    .line 5
-    iget-object v0, p0, Lj3/jr0;->b:[F
-
-    aget v1, v0, p1
-
-    .line 6
-    aput p2, v0, p1
-
-    .line 7
-    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object p1
-
-    return-object p1
+.method public abstract n()I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 .end method
 
-.method public final size()I
-    .locals 1
+.method public abstract o()I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
 
-    .line 1
-    iget v0, p0, Lj3/jr0;->h:I
+.method public abstract p()I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
 
-    return v0
+.method public abstract q()J
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
+
+.method public abstract r()I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
+
+.method public abstract s()J
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
+
+.method public abstract t()Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
+
+.method public abstract u()I
+.end method
+
+.method public abstract w(I)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzegz;
+        }
+    .end annotation
+.end method
+
+.method public abstract x(I)Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
+
+.method public abstract y(I)I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzegz;
+        }
+    .end annotation
+.end method
+
+.method public abstract z(I)V
 .end method

@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field public a:Ly2/g;
+.field public g:Ly2/g;
 
-.field public b:Ly2/e;
+.field public h:Ly2/e;
 
-.field public h:Ljava/lang/ref/WeakReference;
+.field public i:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -22,7 +22,7 @@
     .end annotation
 .end field
 
-.field public i:Z
+.field public j:Z
 
 
 # direct methods
@@ -35,10 +35,10 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Ly2/c;->i:Z
+    iput-boolean v0, p0, Ly2/c;->j:Z
 
     .line 3
-    iput-object p1, p0, Ly2/c;->a:Ly2/g;
+    iput-object p1, p0, Ly2/c;->g:Ly2/g;
 
     .line 4
     new-instance p1, Ly2/e;
@@ -47,7 +47,7 @@
 
     invoke-direct {p1, p2, v0}, Ly2/e;-><init>(ILandroid/os/IBinder;)V
 
-    iput-object p1, p0, Ly2/c;->b:Ly2/e;
+    iput-object p1, p0, Ly2/c;->h:Ly2/e;
 
     return-void
 .end method
@@ -101,7 +101,7 @@
     move-result p1
 
     .line 7
-    iget-object v4, p0, Ly2/c;->b:Ly2/e;
+    iget-object v4, p0, Ly2/c;->h:Ly2/e;
 
     iput v0, v4, Ly2/e;->c:I
 
@@ -137,7 +137,7 @@
     iput v0, v4, Ly2/e;->g:I
 
     .line 13
-    iget-boolean p1, p0, Ly2/c;->i:Z
+    iget-boolean p1, p0, Ly2/c;->j:Z
 
     if-eqz p1, :cond_1
 
@@ -152,14 +152,14 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Ly2/c;->b:Ly2/e;
+    iget-object v0, p0, Ly2/c;->h:Ly2/e;
 
     iget-object v1, v0, Ly2/e;->a:Landroid/os/IBinder;
 
     if-eqz v1, :cond_1
 
     .line 2
-    iget-object v2, p0, Ly2/c;->a:Ly2/g;
+    iget-object v2, p0, Ly2/c;->g:Ly2/g;
 
     .line 3
     invoke-virtual {v0}, Ly2/e;->a()Landroid/os/Bundle;
@@ -181,7 +181,7 @@
 
     check-cast v2, Lcom/google/android/gms/games/internal/zzbo;
 
-    invoke-interface {v2, v1, v0}, Lcom/google/android/gms/games/internal/zzbo;->V5(Landroid/os/IBinder;Landroid/os/Bundle;)V
+    invoke-interface {v2, v1, v0}, Lcom/google/android/gms/games/internal/zzbo;->W5(Landroid/os/IBinder;Landroid/os/Bundle;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -198,7 +198,7 @@
     const/4 v0, 0x0
 
     .line 7
-    iput-boolean v0, p0, Ly2/c;->i:Z
+    iput-boolean v0, p0, Ly2/c;->j:Z
 
     return-void
 
@@ -206,7 +206,7 @@
     const/4 v0, 0x1
 
     .line 8
-    iput-boolean v0, p0, Ly2/c;->i:Z
+    iput-boolean v0, p0, Ly2/c;->j:Z
 
     return-void
 .end method
@@ -215,7 +215,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Ly2/c;->h:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Ly2/c;->i:Ljava/lang/ref/WeakReference;
 
     if-nez v0, :cond_0
 
@@ -253,7 +253,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Ly2/c;->a:Ly2/g;
+    iget-object v0, p0, Ly2/c;->g:Ly2/g;
 
     invoke-virtual {v0}, Ly2/g;->L()V
 

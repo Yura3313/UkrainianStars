@@ -20,25 +20,25 @@
 
 
 # virtual methods
-.method public abstract C0()Lcom/google/android/gms/games/PlayerLevelInfo;
+.method public abstract F0()Lcom/google/android/gms/games/PlayerLevelInfo;
 .end method
 
-.method public abstract H()Landroid/net/Uri;
+.method public abstract J()Landroid/net/Uri;
 .end method
 
-.method public abstract H1()Lcom/google/android/gms/games/PlayerRelationshipInfo;
+.method public abstract J0()Lcom/google/android/gms/games/internal/player/zza;
 .end method
 
-.method public abstract I0()Lcom/google/android/gms/games/internal/player/zza;
+.method public abstract K1()Lcom/google/android/gms/games/PlayerRelationshipInfo;
 .end method
 
-.method public abstract M()Z
+.method public abstract N()Z
 .end method
 
-.method public abstract N0()Z
+.method public abstract O0()Z
 .end method
 
-.method public abstract S0()I
+.method public abstract T0()I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end method
@@ -46,13 +46,7 @@
 .method public abstract a()Landroid/net/Uri;
 .end method
 
-.method public abstract b0()J
-.end method
-
-.method public abstract f()Landroid/net/Uri;
-.end method
-
-.method public abstract g0()Landroid/net/Uri;
+.method public abstract g0()J
 .end method
 
 .method public abstract getBannerImageLandscapeUrl()Ljava/lang/String;
@@ -96,19 +90,25 @@
 .method public abstract getTitle()Ljava/lang/String;
 .end method
 
-.method public abstract n0()J
+.method public abstract h()Landroid/net/Uri;
 .end method
 
-.method public abstract q2()Ljava/lang/String;
+.method public abstract i0()Landroid/net/Uri;
 .end method
 
-.method public abstract s0()Lcom/google/android/gms/games/CurrentPlayerInfo;
+.method public abstract o0()J
 .end method
 
-.method public abstract x0()J
+.method public abstract s2()Ljava/lang/String;
+.end method
+
+.method public abstract u0()Lcom/google/android/gms/games/CurrentPlayerInfo;
+.end method
+
+.method public abstract z()Ljava/lang/String;
+.end method
+
+.method public abstract z0()J
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
-.end method
-
-.method public abstract y()Ljava/lang/String;
 .end method

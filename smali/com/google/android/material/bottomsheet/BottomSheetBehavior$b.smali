@@ -69,7 +69,7 @@
 
     .line 3
     :goto_0
-    invoke-static {p2, p1, p3}, La0/a;->c(III)I
+    invoke-static {p2, p1, p3}, La0/a;->b(III)I
 
     move-result p1
 

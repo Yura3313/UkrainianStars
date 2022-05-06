@@ -418,7 +418,7 @@
 
     invoke-direct {v2, p0}, Lcom/kakaogame/promotion/view/StartingPromotionFragment$6;-><init>(Lcom/kakaogame/promotion/view/StartingPromotionFragment;)V
 
-    invoke-static {v0, v1, v2}, Lcom/kakaogame/ui/ImageDownloader;->displayImage(Ljava/lang/String;Landroid/widget/ImageView;Ljc/a;)V
+    invoke-static {v0, v1, v2}, Lcom/kakaogame/ui/ImageDownloader;->displayImage(Ljava/lang/String;Landroid/widget/ImageView;Lgc/a;)V
 
     return-void
 .end method
@@ -559,7 +559,7 @@
     const-string v0, "handleClick: "
 
     .line 3
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -654,7 +654,7 @@
     const-string v0, "onConfigurationChanged!! : "
 
     .line 8
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

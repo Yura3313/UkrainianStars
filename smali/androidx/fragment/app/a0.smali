@@ -1,10 +1,10 @@
 .class public final Landroidx/fragment/app/a0;
-.super Landroidx/lifecycle/w;
+.super Landroidx/lifecycle/x;
 .source "FragmentManagerViewModel.java"
 
 
 # static fields
-.field public static final i:Landroidx/lifecycle/y;
+.field public static final i:Landroidx/lifecycle/z;
 
 
 # instance fields
@@ -57,7 +57,7 @@
 
     invoke-direct {v0}, Landroidx/fragment/app/a0$a;-><init>()V
 
-    sput-object v0, Landroidx/fragment/app/a0;->i:Landroidx/lifecycle/y;
+    sput-object v0, Landroidx/fragment/app/a0;->i:Landroidx/lifecycle/z;
 
     return-void
 .end method
@@ -66,7 +66,7 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Landroidx/lifecycle/w;-><init>()V
+    invoke-direct {p0}, Landroidx/lifecycle/x;-><init>()V
 
     .line 2
     new-instance v0, Ljava/util/HashMap;
@@ -143,7 +143,7 @@
     :cond_0
     iget-object v0, p0, Landroidx/fragment/app/a0;->c:Ljava/util/HashMap;
 
-    iget-object v1, p1, Landroidx/fragment/app/Fragment;->k:Ljava/lang/String;
+    iget-object v1, p1, Landroidx/fragment/app/Fragment;->l:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -157,7 +157,7 @@
     :cond_1
     iget-object v0, p0, Landroidx/fragment/app/a0;->c:Ljava/util/HashMap;
 
-    iget-object v1, p1, Landroidx/fragment/app/Fragment;->k:Ljava/lang/String;
+    iget-object v1, p1, Landroidx/fragment/app/Fragment;->l:Ljava/lang/String;
 
     invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -191,7 +191,7 @@
     :cond_0
     iget-object v0, p0, Landroidx/fragment/app/a0;->c:Ljava/util/HashMap;
 
-    iget-object v1, p1, Landroidx/fragment/app/Fragment;->k:Ljava/lang/String;
+    iget-object v1, p1, Landroidx/fragment/app/Fragment;->l:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -231,7 +231,7 @@
     .line 1
     iget-object v0, p0, Landroidx/fragment/app/a0;->c:Ljava/util/HashMap;
 
-    iget-object p1, p1, Landroidx/fragment/app/Fragment;->k:Ljava/lang/String;
+    iget-object p1, p1, Landroidx/fragment/app/Fragment;->l:Ljava/lang/String;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 

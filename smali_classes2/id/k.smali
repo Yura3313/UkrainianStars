@@ -1,135 +1,99 @@
 .class public final Lid/k;
-.super Lle/j;
-.source "LoginEnterEmailTabPageFragment.kt"
-
-# interfaces
-.implements Lke/p;
+.super Ljava/lang/Object;
+.source "MessagesTabFriendsFragment.kt"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lid/m;",
-        "Ljava/lang/Boolean;",
-        "Lbe/n;",
-        ">;"
-    }
-.end annotation
-
-
-# instance fields
-.field public final synthetic a:Ljava/lang/String;
-
-.field public final synthetic b:Z
+# static fields
+.field public static final a:Lvd/j;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Z)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 3
 
-    iput-object p1, p0, Lid/k;->a:Ljava/lang/String;
+    .line 1
+    new-instance v0, Lvd/j;
 
-    iput-boolean p2, p0, Lid/k;->b:Z
+    const/4 v1, 0x0
 
-    const/4 p1, 0x2
+    const/4 v2, 0x1
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {v0, v1, v2}, Lvd/j;-><init>(II)V
+
+    sput-object v0, Lid/k;->a:Lvd/j;
 
     return-void
 .end method
 
+.method public static final a(Landroid/widget/TextView;Lqc/y;Landroid/graphics/drawable/BitmapDrawable;)V
+    .locals 3
 
-# virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 7
+    const-string v0, "account_messages_donation_"
 
     .line 1
-    check-cast p1, Lid/m;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    check-cast p2, Ljava/lang/Boolean;
-
-    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    if-eqz p1, :cond_2
+    move-result-object v0
 
     .line 2
-    sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    iget-object v0, p0, Lid/k;->a:Ljava/lang/String;
-
-    iget-boolean v1, p0, Lid/k;->b:Z
-
-    invoke-virtual {p2, v0, v1}, Lcom/supercell/id/SupercellId;->setPendingLoginWithEmail$supercellId_release(Ljava/lang/String;Z)V
+    iget-object v1, p1, Lqc/y;->d:Ljava/util/List;
 
     .line 3
-    invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-static {v1}, Lbe/k;->D(Ljava/util/List;)Ljava/lang/Object;
 
-    move-result-object p2
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x5f
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 4
-    iget-object v0, p2, Lwd/r;->m:La2/a;
+    iget-object p1, p1, Lqc/y;->c:Lqc/y$a;
 
     .line 5
-    iget-boolean p2, p0, Lid/k;->b:Z
-
-    if-eqz p2, :cond_0
-
-    const-string p2, "true"
-
-    goto :goto_0
-
-    :cond_0
-    const-string p2, "false"
-
-    :goto_0
-    move-object v3, p2
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    const/16 v6, 0x18
-
-    const-string v1, "Remember me"
-
-    const-string v2, "Selection"
-
-    invoke-static/range {v0 .. v6}, La2/a;->b(La2/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZI)V
+    iget-object p1, p1, Lqc/y$a;->g:Ljava/lang/String;
 
     .line 6
-    iget-object p2, p0, Lid/k;->a:Ljava/lang/String;
+    sget-object v1, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
-    invoke-virtual {p1, p2}, Lid/u;->k1(Ljava/lang/String;)V
+    const-string v2, "Locale.ENGLISH"
 
-    .line 7
-    iget-boolean p2, p0, Lid/k;->b:Z
+    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p1, p2}, Lid/u;->l1(Z)V
+    if-eqz p1, :cond_0
 
-    .line 8
-    invoke-virtual {p1}, Lid/m;->g1()Lcom/supercell/id/ui/login/LoginFlowFragment;
+    invoke-virtual {p1, v1}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
 
     move-result-object p1
 
-    if-eqz p1, :cond_1
+    const-string v1, "(this as java.lang.String).toLowerCase(locale)"
 
-    invoke-virtual {p1}, Lcom/supercell/id/ui/FlowFragment;->s1()V
+    invoke-static {p1, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 9
-    :cond_1
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    return-object p1
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    :cond_2
-    const-string p1, "$receiver"
+    move-result-object p1
 
-    .line 10
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    new-instance v0, Lid/k$a;
 
-    const/4 p1, 0x0
+    invoke-direct {v0, p2}, Lid/k$a;-><init>(Landroid/graphics/drawable/BitmapDrawable;)V
 
-    throw p1
+    invoke-static {p0, p1, v0}, Lpd/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lke/p;)V
+
+    return-void
+
+    :cond_0
+    new-instance p0, Lkotlin/TypeCastException;
+
+    const-string p1, "null cannot be cast to non-null type java.lang.String"
+
+    invoke-direct {p0, p1}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method

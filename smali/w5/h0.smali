@@ -2,63 +2,70 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lv5/b;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final a:Lcom/google/firebase/iid/FirebaseInstanceId$a;
+.field public final g:Lw5/g0;
+
+.field public final h:Landroid/os/Bundle;
+
+.field public final i:Lb4/g;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/firebase/iid/FirebaseInstanceId$a;)V
+.method public constructor <init>(Lw5/g0;Landroid/os/Bundle;Lb4/g;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lw5/h0;->a:Lcom/google/firebase/iid/FirebaseInstanceId$a;
+    iput-object p1, p0, Lw5/h0;->g:Lw5/g0;
+
+    iput-object p2, p0, Lw5/h0;->h:Landroid/os/Bundle;
+
+    iput-object p3, p0, Lw5/h0;->i:Lb4/g;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lv5/a;)V
-    .locals 2
+.method public final run()V
+    .locals 3
+
+    iget-object v0, p0, Lw5/h0;->g:Lw5/g0;
+
+    iget-object v1, p0, Lw5/h0;->h:Landroid/os/Bundle;
+
+    iget-object v2, p0, Lw5/h0;->i:Lb4/g;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 1
-    iget-object p1, p0, Lw5/h0;->a:Lcom/google/firebase/iid/FirebaseInstanceId$a;
+    :try_start_0
+    iget-object v0, v0, Lw5/g0;->c:Lcom/google/firebase/iid/a;
+
+    invoke-virtual {v0, v1}, Lcom/google/firebase/iid/a;->b(Landroid/os/Bundle;)Landroid/os/Bundle;
+
+    move-result-object v0
 
     .line 2
-    monitor-enter p1
+    iget-object v1, v2, Lb4/g;->a:Lb4/y;
 
-    .line 3
-    :try_start_0
-    invoke-virtual {p1}, Lcom/google/firebase/iid/FirebaseInstanceId$a;->a()Z
+    invoke-virtual {v1, v0}, Lb4/y;->o(Ljava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result v0
+    goto :goto_0
 
-    if-eqz v0, :cond_0
-
-    .line 4
-    iget-object v0, p1, Lcom/google/firebase/iid/FirebaseInstanceId$a;->e:Lcom/google/firebase/iid/FirebaseInstanceId;
-
-    sget-object v1, Lcom/google/firebase/iid/FirebaseInstanceId;->j:Lw5/q;
-
-    .line 5
-    invoke-virtual {v0}, Lcom/google/firebase/iid/FirebaseInstanceId;->j()V
-
-    .line 6
-    :cond_0
-    monitor-exit p1
-
-    return-void
-
-    :catchall_0
+    :catch_0
     move-exception v0
 
-    monitor-exit p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .line 3
+    iget-object v1, v2, Lb4/g;->a:Lb4/y;
 
-    throw v0
+    invoke-virtual {v1, v0}, Lb4/y;->n(Ljava/lang/Exception;)V
+
+    :goto_0
+    return-void
 .end method

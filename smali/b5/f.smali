@@ -6,7 +6,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lb5/q;
+.field public final synthetic a:Lb5/o;
 
 .field public final synthetic b:Ljava/util/Set;
 
@@ -16,12 +16,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lb5/l;Lb5/q;Ljava/util/Set;Ljava/util/concurrent/atomic/AtomicBoolean;)V
+.method public constructor <init>(Lb5/l;Lb5/o;Ljava/util/Set;Ljava/util/concurrent/atomic/AtomicBoolean;)V
     .locals 0
 
     iput-object p1, p0, Lb5/f;->d:Lb5/l;
 
-    iput-object p2, p0, Lb5/f;->a:Lb5/q;
+    iput-object p2, p0, Lb5/f;->a:Lb5/o;
 
     iput-object p3, p0, Lb5/f;->b:Ljava/util/Set;
 
@@ -54,7 +54,7 @@
 
     iget-object p1, p0, Lb5/f;->d:Lb5/l;
 
-    iget-object v0, p0, Lb5/f;->a:Lb5/q;
+    iget-object v0, p0, Lb5/f;->a:Lb5/o;
 
     .line 1
     invoke-interface {p2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
@@ -77,7 +77,7 @@
 
     iget-object v2, p1, Lb5/l;->a:Lb5/e;
 
-    invoke-virtual {v0}, Lb5/q;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lb5/o;->b()Ljava/lang/String;
 
     move-result-object v3
 

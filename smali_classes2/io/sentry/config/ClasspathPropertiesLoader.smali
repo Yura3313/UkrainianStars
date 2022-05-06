@@ -15,27 +15,6 @@
 
 
 # direct methods
-.method private static synthetic $closeResource(Ljava/lang/Throwable;Ljava/lang/AutoCloseable;)V
-    .locals 0
-
-    if-eqz p0, :cond_0
-
-    .line 1
-    :try_start_0
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
-
-    :catchall_0
-    :goto_0
-    return-void
-.end method
-
 .method public constructor <init>(Lio/sentry/ILogger;)V
     .locals 2
 
@@ -113,13 +92,13 @@
 
     .line 5
     :try_start_3
-    invoke-static {v0, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v2}, Ljava/io/BufferedInputStream;->close()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
     .line 6
     :try_start_4
-    invoke-static {v0, v1}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
 
@@ -130,43 +109,34 @@
 
     .line 7
     :try_start_5
-    throw v3
+    invoke-virtual {v2}, Ljava/io/BufferedInputStream;->close()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
     :catchall_1
-    move-exception v4
-
-    .line 8
     :try_start_6
-    invoke-static {v3, v2}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    throw v4
+    throw v3
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
     :catchall_2
     move-exception v2
 
-    .line 9
+    .line 8
     :try_start_7
-    throw v2
+    invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_3
 
     :catchall_3
-    move-exception v3
-
-    .line 10
     :try_start_8
-    invoke-static {v2, v1}, Landroid/support/v4/media/c;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    throw v3
+    throw v2
 
     :cond_0
     if-eqz v1, :cond_1
 
-    invoke-static {v0, v1}, Landroid/support/v4/media/b;->b(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    .line 9
+    invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_8
     .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_0
 
@@ -176,7 +146,7 @@
     :catch_0
     move-exception v1
 
-    .line 11
+    .line 10
     iget-object v2, p0, Lio/sentry/config/ClasspathPropertiesLoader;->logger:Lio/sentry/ILogger;
 
     sget-object v3, Lio/sentry/SentryLevel;->ERROR:Lio/sentry/SentryLevel;

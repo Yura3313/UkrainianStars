@@ -1,5 +1,5 @@
 .class public Ld9/i$e;
-.super Ly7/g;
+.super Lz7/g;
 .source "ConversationalVM.java"
 
 
@@ -25,7 +25,7 @@
     .line 1
     iput-object p1, p0, Ld9/i$e;->b:Ld9/i;
 
-    invoke-direct {p0}, Ly7/g;-><init>()V
+    invoke-direct {p0}, Lz7/g;-><init>()V
 
     return-void
 .end method
@@ -33,7 +33,7 @@
 
 # virtual methods
 .method public a()V
-    .locals 2
+    .locals 3
 
     .line 1
     iget-object v0, p0, Ld9/i$e;->b:Ld9/i;
@@ -45,7 +45,7 @@
     .line 2
     iget-object v0, p0, Ld9/i$e;->b:Ld9/i;
 
-    iget-object v1, v0, Ld9/i;->n:Ll8/k;
+    iget-object v1, v0, Ld9/i;->n:Lm8/m;
 
     if-eqz v1, :cond_2
 
@@ -70,7 +70,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lm8/a0;
+    check-cast v0, Ln8/w;
 
     goto :goto_0
 
@@ -79,17 +79,17 @@
 
     .line 6
     :goto_0
-    instance-of v1, v0, Lm8/u0;
+    instance-of v1, v0, Ln8/m0;
+
+    const/4 v2, 0x1
 
     if-eqz v1, :cond_1
 
     .line 7
-    check-cast v0, Lm8/u0;
+    check-cast v0, Ln8/m0;
 
     .line 8
-    sget-object v1, Lm8/v0;->UNSENT_RETRYABLE:Lm8/v0;
-
-    invoke-virtual {v0, v1}, Lm8/u0;->w(Lm8/v0;)V
+    invoke-virtual {v0, v2}, Ln8/m0;->w(I)V
 
     .line 9
     :cond_1
@@ -100,13 +100,11 @@
     if-nez v1, :cond_2
 
     .line 10
-    iget-object v0, v0, Ld9/i;->n:Ll8/k;
+    iget-object v0, v0, Ld9/i;->n:Lm8/m;
 
-    const/4 v1, 0x1
+    check-cast v0, Loa/e0;
 
-    check-cast v0, Lqa/e0;
-
-    invoke-virtual {v0, v1}, Lqa/e0;->t(I)V
+    invoke-virtual {v0, v2}, Loa/e0;->t(I)V
 
     :cond_2
     return-void

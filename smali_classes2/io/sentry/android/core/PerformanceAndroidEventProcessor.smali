@@ -9,9 +9,9 @@
 # instance fields
 .field private final activityFramesTracker:Lio/sentry/android/core/ActivityFramesTracker;
 
-.field private sentStartMeasurement:Z
+.field private final options:Lio/sentry/android/core/SentryAndroidOptions;
 
-.field private final tracingEnabled:Z
+.field private sentStartMeasurement:Z
 
 
 # direct methods
@@ -26,12 +26,16 @@
     .line 2
     iput-boolean v0, p0, Lio/sentry/android/core/PerformanceAndroidEventProcessor;->sentStartMeasurement:Z
 
+    const-string v0, "SentryAndroidOptions is required"
+
     .line 3
-    invoke-virtual {p1}, Lio/sentry/SentryOptions;->isTracingEnabled()Z
+    invoke-static {p1, v0}, Lio/sentry/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    move-result p1
+    move-result-object p1
 
-    iput-boolean p1, p0, Lio/sentry/android/core/PerformanceAndroidEventProcessor;->tracingEnabled:Z
+    check-cast p1, Lio/sentry/android/core/SentryAndroidOptions;
+
+    iput-object p1, p0, Lio/sentry/android/core/PerformanceAndroidEventProcessor;->options:Lio/sentry/android/core/SentryAndroidOptions;
 
     const-string p1, "ActivityFramesTracker is required"
 
@@ -115,12 +119,8 @@
 
 
 # virtual methods
-.method public synthetic process(Lio/sentry/SentryEvent;Ljava/lang/Object;)Lio/sentry/SentryEvent;
+.method public process(Lio/sentry/SentryEvent;Ljava/lang/Object;)Lio/sentry/SentryEvent;
     .locals 0
-
-    invoke-static {p0, p1, p2}, Lio/sentry/b;->a(Lio/sentry/EventProcessor;Lio/sentry/SentryEvent;Ljava/lang/Object;)Lio/sentry/SentryEvent;
-
-    move-result-object p1
 
     return-object p1
 .end method
@@ -132,7 +132,11 @@
 
     .line 1
     :try_start_0
-    iget-boolean p2, p0, Lio/sentry/android/core/PerformanceAndroidEventProcessor;->tracingEnabled:Z
+    iget-object p2, p0, Lio/sentry/android/core/PerformanceAndroidEventProcessor;->options:Lio/sentry/android/core/SentryAndroidOptions;
+
+    invoke-virtual {p2}, Lio/sentry/SentryOptions;->isTracingEnabled()Z
+
+    move-result p2
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -187,7 +191,11 @@
 
     move-result-object p2
 
-    invoke-virtual {p2}, Lio/sentry/android/core/AppStartState;->isColdStart()Z
+    invoke-virtual {p2}, Lio/sentry/android/core/AppStartState;->isColdStart()Ljava/lang/Boolean;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p2
 

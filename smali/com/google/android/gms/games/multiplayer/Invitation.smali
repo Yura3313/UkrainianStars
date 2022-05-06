@@ -22,23 +22,23 @@
 
 
 # virtual methods
-.method public abstract Y()I
+.method public abstract a0()I
 .end method
 
-.method public abstract b()Lcom/google/android/gms/games/Game;
+.method public abstract c()Lcom/google/android/gms/games/Game;
 .end method
 
-.method public abstract c()J
+.method public abstract d()J
 .end method
 
-.method public abstract d()I
+.method public abstract e()I
 .end method
 
-.method public abstract f2()Ljava/lang/String;
+.method public abstract h2()Ljava/lang/String;
 .end method
 
-.method public abstract l0()Lcom/google/android/gms/games/multiplayer/Participant;
+.method public abstract p0()Lcom/google/android/gms/games/multiplayer/Participant;
 .end method
 
-.method public abstract t()I
+.method public abstract v()I
 .end method

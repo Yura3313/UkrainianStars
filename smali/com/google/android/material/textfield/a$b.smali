@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/material/textfield/a;
+.field public final synthetic g:Lcom/google/android/material/textfield/a;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/textfield/a$b;->a:Lcom/google/android/material/textfield/a;
+    iput-object p1, p0, Lcom/google/android/material/textfield/a$b;->g:Lcom/google/android/material/textfield/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,7 +54,7 @@
     xor-int/2addr p1, v0
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/material/textfield/a$b;->a:Lcom/google/android/material/textfield/a;
+    iget-object v1, p0, Lcom/google/android/material/textfield/a$b;->g:Lcom/google/android/material/textfield/a;
 
     if-eqz p1, :cond_0
 

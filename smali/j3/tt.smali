@@ -3,11 +3,11 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/vs;
+.implements Lj3/ct;
 
 
 # static fields
-.field public static final a:Lj3/vs;
+.field public static final g:Lj3/ct;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     invoke-direct {v0}, Lj3/tt;-><init>()V
 
-    sput-object v0, Lj3/tt;->a:Lj3/vs;
+    sput-object v0, Lj3/tt;->g:Lj3/ct;
 
     return-void
 .end method
@@ -33,14 +33,14 @@
 
 
 # virtual methods
-.method public final e(Ljava/lang/Object;)V
+.method public final d(Ljava/lang/Object;)V
     .locals 0
 
     .line 1
-    check-cast p1, Lj3/vt;
+    check-cast p1, Lj3/st;
 
     .line 2
-    invoke-interface {p1}, Lj3/vt;->a()V
+    invoke-interface {p1}, Lj3/st;->b()V
 
     return-void
 .end method

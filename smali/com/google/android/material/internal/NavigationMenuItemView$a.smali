@@ -47,7 +47,7 @@
     .line 4
     iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView$a;->d:Lcom/google/android/material/internal/NavigationMenuItemView;
 
-    iget-boolean p1, p1, Lcom/google/android/material/internal/NavigationMenuItemView;->C:Z
+    iget-boolean p1, p1, Lcom/google/android/material/internal/NavigationMenuItemView;->D:Z
 
     .line 5
     iget-object p2, p2, Lg0/b;->a:Landroid/view/accessibility/AccessibilityNodeInfo;

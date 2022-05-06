@@ -1,6 +1,9 @@
-.class public synthetic Lkb/a$a;
+.class public Lkb/a$a;
 .super Ljava/lang/Object;
-.source "AttachmentPicker.java"
+.source "FontApplier.java"
+
+# interfaces
+.implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
 
 # annotations
@@ -9,75 +12,61 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1009
-    name = null
+    accessFlags = 0x9
+    name = "a"
 .end annotation
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final g:Ljava/lang/ref/WeakReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/ref/WeakReference<",
+            "Landroid/view/View;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Landroid/view/View;)V
+    .locals 1
 
     .line 1
-    invoke-static {}, Lc8/m$a;->values()[Lc8/m$a;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    new-instance v0, Ljava/lang/ref/WeakReference;
+
+    invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lkb/a$a;->g:Ljava/lang/ref/WeakReference;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onGlobalLayout()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lkb/a$a;->g:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    array-length v0, v0
+    check-cast v0, Landroid/view/View;
 
-    new-array v0, v0, [I
+    if-nez v0, :cond_0
 
-    sput-object v0, Lkb/a$a;->a:[I
+    return-void
 
-    :try_start_0
-    sget-object v1, Lc8/m$a;->AVAILABLE:Lc8/m$a;
+    .line 2
+    :cond_0
+    invoke-static {v0}, Lkb/a;->c(Landroid/view/View;)V
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :try_start_1
-    sget-object v0, Lkb/a$a;->a:[I
-
-    sget-object v1, Lc8/m$a;->UNAVAILABLE:Lc8/m$a;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
-    :try_start_2
-    sget-object v0, Lkb/a$a;->a:[I
-
-    sget-object v1, Lc8/m$a;->REQUESTABLE:Lc8/m$a;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x3
-
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    :catch_2
     return-void
 .end method

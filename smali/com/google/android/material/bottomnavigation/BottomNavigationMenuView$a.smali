@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
+.field public final synthetic g:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView$a;->a:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
+    iput-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView$a;->g:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,13 +47,13 @@
     move-result-object p1
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView$a;->a:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
+    iget-object v0, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView$a;->g:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
 
     .line 4
-    iget-object v1, v0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->D:Landroidx/appcompat/view/menu/e;
+    iget-object v1, v0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->E:Landroidx/appcompat/view/menu/e;
 
     .line 5
-    iget-object v0, v0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->C:Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;
+    iget-object v0, v0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->D:Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter;
 
     const/4 v2, 0x0
 

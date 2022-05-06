@@ -1,98 +1,95 @@
-.class public final Lod/r;
-.super Lle/j;
-.source "PublicProfileFragment.kt"
-
-# interfaces
-.implements Lke/p;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/p<",
-        "Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;",
-        "Ljava/lang/Exception;",
-        "Lbe/n;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final a:Lod/r;
+.class public abstract Lod/r;
+.super Lrc/w;
+.source "RegisterFlow.kt"
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lod/r;
-
-    invoke-direct {v0}, Lod/r;-><init>()V
-
-    sput-object v0, Lod/r;->a:Lod/r;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
+    .line 1
+    invoke-direct {p0}, Lrc/w;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public W0()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final d1()Ljava/lang/String;
+    .locals 1
 
     .line 1
-    check-cast p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
-
-    check-cast p2, Ljava/lang/Exception;
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_2
-
-    if-eqz p2, :cond_1
-
-    .line 2
-    invoke-static {p1}, Landroidx/savedstate/d;->h(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-virtual {p0}, Lod/r;->f1()Lcom/supercell/id/ui/register/RegisterFlowFragment;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    new-instance v1, Lod/q;
+    .line 2
+    iget-object v0, v0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->l0:Ljava/lang/String;
 
-    invoke-direct {v1, p1}, Lod/q;-><init>(Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;)V
+    goto :goto_0
 
-    invoke-virtual {v0, p2, v1}, Lcom/supercell/id/ui/MainActivity;->E(Ljava/lang/Exception;Lke/l;)V
-
-    .line 3
     :cond_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    const/4 v0, 0x0
 
-    return-object p1
+    :goto_0
+    return-object v0
+.end method
 
-    :cond_1
-    const-string p1, "it"
+.method public final e1()Ljava/lang/String;
+    .locals 1
 
-    .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    .line 1
+    invoke-virtual {p0}, Lod/r;->f1()Lcom/supercell/id/ui/register/RegisterFlowFragment;
 
-    throw v0
+    move-result-object v0
 
-    :cond_2
-    const-string p1, "$receiver"
+    if-eqz v0, :cond_0
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    .line 2
+    iget-object v0, v0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->m0:Ljava/lang/String;
 
-    throw v0
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return-object v0
+.end method
+
+.method public f1()Lcom/supercell/id/ui/register/RegisterFlowFragment;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
+
+    .line 2
+    instance-of v1, v0, Lcom/supercell/id/ui/register/RegisterFlowFragment;
+
+    if-nez v1, :cond_0
+
+    const/4 v0, 0x0
+
+    :cond_0
+    check-cast v0, Lcom/supercell/id/ui/register/RegisterFlowFragment;
+
+    return-object v0
+.end method
+
+.method public synthetic i0()V
+    .locals 0
+
+    invoke-super {p0}, Lrc/w;->i0()V
+
+    invoke-virtual {p0}, Lod/r;->W0()V
+
+    return-void
 .end method

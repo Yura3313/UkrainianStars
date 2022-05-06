@@ -195,7 +195,7 @@
     .end annotation
 
     .line 1
-    sget-object p1, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object p1, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 2
     invoke-virtual {p2}, Landroid/view/View;->getImportantForAccessibility()I
@@ -207,12 +207,12 @@
     const/4 p1, 0x1
 
     .line 3
-    invoke-static {p2, p1}, Lf0/s;->D(Landroid/view/View;I)V
+    invoke-static {p2, p1}, Lf0/r;->D(Landroid/view/View;I)V
 
     const/high16 p1, 0x100000
 
     .line 4
-    invoke-static {p2, p1}, Lf0/s;->v(Landroid/view/View;I)V
+    invoke-static {p2, p1}, Lf0/r;->v(Landroid/view/View;I)V
 
     .line 5
     invoke-virtual {p0, p2}, Lcom/google/android/material/behavior/SwipeDismissBehavior;->t(Landroid/view/View;)Z
@@ -230,7 +230,7 @@
 
     invoke-direct {v0, p0}, Lcom/google/android/material/behavior/a;-><init>(Lcom/google/android/material/behavior/SwipeDismissBehavior;)V
 
-    invoke-static {p2, p1, p3, v0}, Lf0/s;->x(Landroid/view/View;Lg0/b$a;Ljava/lang/CharSequence;Lg0/d;)V
+    invoke-static {p2, p1, p3, v0}, Lf0/r;->x(Landroid/view/View;Lg0/b$a;Ljava/lang/CharSequence;Lg0/d;)V
 
     :cond_0
     const/4 p1, 0x0

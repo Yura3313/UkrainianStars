@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/drive/Contents;
+.field public final g:Lcom/google/android/gms/drive/Contents;
 
-.field public final b:Ljava/lang/Boolean;
+.field public final h:Ljava/lang/Boolean;
 
-.field public final h:I
+.field public final i:I
 
 
 # direct methods
@@ -27,9 +27,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lq3/c5;
+    new-instance v0, Lq3/y4;
 
-    invoke-direct {v0}, Lq3/c5;-><init>()V
+    invoke-direct {v0}, Lq3/y4;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/drive/zzo;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -43,13 +43,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzo;->a:Lcom/google/android/gms/drive/Contents;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzo;->g:Lcom/google/android/gms/drive/Contents;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/drive/zzo;->b:Ljava/lang/Boolean;
+    iput-object p2, p0, Lcom/google/android/gms/internal/drive/zzo;->h:Ljava/lang/Boolean;
 
     .line 4
-    iput p3, p0, Lcom/google/android/gms/internal/drive/zzo;->h:I
+    iput p3, p0, Lcom/google/android/gms/internal/drive/zzo;->i:I
 
     return-void
 .end method
@@ -69,7 +69,7 @@
     const/4 v1, 0x2
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzo;->a:Lcom/google/android/gms/drive/Contents;
+    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzo;->g:Lcom/google/android/gms/drive/Contents;
 
     const/4 v3, 0x0
 
@@ -78,7 +78,7 @@
     const/4 p2, 0x3
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzo;->b:Ljava/lang/Boolean;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzo;->h:Ljava/lang/Boolean;
 
     const/4 v2, 0x4
 
@@ -99,7 +99,7 @@
 
     .line 6
     :goto_0
-    iget p2, p0, Lcom/google/android/gms/internal/drive/zzo;->h:I
+    iget p2, p0, Lcom/google/android/gms/internal/drive/zzo;->i:I
 
     .line 7
     invoke-static {p1, v2, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V

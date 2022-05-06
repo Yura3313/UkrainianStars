@@ -46,9 +46,9 @@
 
     iget-object v1, p0, Lkotlinx/coroutines/android/HandlerContext$scheduleResumeAfterDelay$$inlined$Runnable$1;->this$0:Lkotlinx/coroutines/android/HandlerContext;
 
-    sget-object v2, Lbe/n;->a:Lbe/n;
+    sget-object v2, Lae/i;->a:Lae/i;
 
-    invoke-interface {v0, v1, v2}, Lse/f;->d(Lse/w;Ljava/lang/Object;)V
+    invoke-interface {v0, v1, v2}, Lse/f;->c(Lse/w;Ljava/lang/Object;)V
 
     return-void
 .end method

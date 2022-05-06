@@ -1,129 +1,104 @@
 .class public Ln8/b;
 .super Ljava/lang/Object;
-.source "Input.java"
+.source "AdminActionCardMessageDM.java"
+
+# interfaces
+.implements Lr9/b;
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final synthetic a:Ld8/r;
 
-.field public final b:Z
-
-.field public final h:Ljava/lang/String;
-
-.field public final i:Ljava/lang/String;
+.field public final synthetic b:Ln8/c;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(Ln8/c;Ld8/r;)V
     .locals 0
 
     .line 1
+    iput-object p1, p0, Ln8/b;->b:Ln8/c;
+
+    iput-object p2, p0, Ln8/b;->a:Ld8/r;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Ln8/b;->a:Ljava/lang/String;
-
-    .line 3
-    iput-boolean p2, p0, Ln8/b;->b:Z
-
-    .line 4
-    iput-object p3, p0, Ln8/b;->h:Ljava/lang/String;
-
-    .line 5
-    iput-object p4, p0, Ln8/b;->i:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ln8/b;)V
-    .locals 1
-
-    .line 6
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 7
-    iget-object v0, p1, Ln8/b;->a:Ljava/lang/String;
-
-    iput-object v0, p0, Ln8/b;->a:Ljava/lang/String;
-
-    .line 8
-    iget-boolean v0, p1, Ln8/b;->b:Z
-
-    iput-boolean v0, p0, Ln8/b;->b:Z
-
-    .line 9
-    iget-object v0, p1, Ln8/b;->h:Ljava/lang/String;
-
-    iput-object v0, p0, Ln8/b;->h:Ljava/lang/String;
-
-    .line 10
-    iget-object p1, p1, Ln8/b;->i:Ljava/lang/String;
-
-    iput-object p1, p0, Ln8/b;->i:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public equals(Ljava/lang/Object;)Z
-    .locals 3
+.method public a(Ljava/lang/String;I)V
+    .locals 1
 
     .line 1
-    instance-of v0, p1, Ln8/b;
+    iget-object p1, p0, Ln8/b;->b:Ln8/c;
 
-    const/4 v1, 0x0
+    const/4 v0, 0x1
 
-    if-nez v0, :cond_0
-
-    return v1
+    invoke-virtual {p1, v0}, Ln8/c;->s(I)V
 
     .line 2
-    :cond_0
-    check-cast p1, Ln8/b;
+    sget-object p1, Lb8/j;->l:Ljava/util/Set;
 
-    .line 3
-    iget-boolean v0, p1, Ln8/b;->b:Z
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    iget-boolean v2, p0, Ln8/b;->b:Z
+    move-result-object p2
 
-    if-ne v0, v2, :cond_1
+    check-cast p1, Ljava/util/HashSet;
 
-    iget-object v0, p1, Ln8/b;->h:Ljava/lang/String;
-
-    iget-object v2, p0, Ln8/b;->h:Ljava/lang/String;
-
-    .line 4
-    invoke-static {v0, v2}, Landroidx/savedstate/d;->l(Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p1, Ln8/b;->i:Ljava/lang/String;
-
-    iget-object v2, p0, Ln8/b;->i:Ljava/lang/String;
-
-    .line 5
-    invoke-static {v0, v2}, Landroidx/savedstate/d;->l(Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object p1, p1, Ln8/b;->a:Ljava/lang/String;
-
-    iget-object v0, p0, Ln8/b;->a:Ljava/lang/String;
-
-    .line 6
-    invoke-static {p1, v0}, Landroidx/savedstate/d;->l(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-virtual {p1, p2}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_1
+    if-nez p1, :cond_0
 
-    const/4 v1, 0x1
+    .line 3
+    iget-object p1, p0, Ln8/b;->b:Ln8/c;
 
-    :cond_1
-    return v1
+    iget-object p2, p0, Ln8/b;->a:Ld8/r;
+
+    invoke-virtual {p1, p2}, Ln8/c;->r(Ld8/r;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iget-object p1, p0, Ln8/b;->b:Ln8/c;
+
+    const/4 p3, 0x3
+
+    invoke-virtual {p1, p3}, Ln8/c;->s(I)V
+
+    .line 2
+    iget-object p1, p0, Ln8/b;->b:Ln8/c;
+
+    iget-object p1, p1, Ln8/c;->B:Lp8/b;
+
+    iput-object p2, p1, Lp8/b;->l:Ljava/lang/String;
+
+    .line 3
+    iget-object p1, p0, Ln8/b;->a:Ld8/r;
+
+    check-cast p1, Ld8/j;
+
+    invoke-virtual {p1}, Ld8/j;->c()Ld8/a;
+
+    move-result-object p1
+
+    iget-object p2, p0, Ln8/b;->b:Ln8/c;
+
+    invoke-virtual {p1, p2}, Ld8/a;->e(Ln8/w;)V
+
+    return-void
+.end method
+
+.method public c(Ljava/lang/String;I)V
+    .locals 0
+
+    return-void
 .end method

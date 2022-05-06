@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public volatile b:Z
+.field public volatile h:Z
 
-.field public final h:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final i:Ljava/util/concurrent/atomic/AtomicReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/atomic/AtomicReference<",
@@ -19,9 +19,9 @@
     .end annotation
 .end field
 
-.field public final i:Landroid/os/Handler;
+.field public final j:Landroid/os/Handler;
 
-.field public final j:Ly1/c;
+.field public final k:Ly1/c;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {p1, v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object p1, p0, La2/s0;->h:Ljava/util/concurrent/atomic/AtomicReference;
+    iput-object p1, p0, La2/s0;->i:Ljava/util/concurrent/atomic/AtomicReference;
 
     .line 3
     new-instance p1, Lo3/c;
@@ -49,10 +49,10 @@
 
     invoke-direct {p1, v0}, Lo3/c;-><init>(Landroid/os/Looper;)V
 
-    iput-object p1, p0, La2/s0;->i:Landroid/os/Handler;
+    iput-object p1, p0, La2/s0;->j:Landroid/os/Handler;
 
     .line 4
-    iput-object p2, p0, La2/s0;->j:Ly1/c;
+    iput-object p2, p0, La2/s0;->k:Ly1/c;
 
     return-void
 .end method
@@ -63,7 +63,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, La2/s0;->h:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, La2/s0;->i:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -85,7 +85,7 @@
 
     .line 2
     :cond_0
-    iget-object p1, p0, La2/s0;->j:Ly1/c;
+    iget-object p1, p0, La2/s0;->k:Ly1/c;
 
     invoke-virtual {p0}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->a()Landroid/app/Activity;
 
@@ -109,7 +109,7 @@
     iget-object p2, v0, La2/r0;->b:Lcom/google/android/gms/common/ConnectionResult;
 
     .line 4
-    iget p2, p2, Lcom/google/android/gms/common/ConnectionResult;->b:I
+    iget p2, p2, Lcom/google/android/gms/common/ConnectionResult;->h:I
 
     const/16 p3, 0x12
 
@@ -172,7 +172,7 @@
     invoke-direct {p2, p3, p1}, La2/r0;-><init>(Lcom/google/android/gms/common/ConnectionResult;I)V
 
     .line 11
-    iget-object p1, p0, La2/s0;->h:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object p1, p0, La2/s0;->i:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {p1, p2}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
@@ -202,7 +202,7 @@
     check-cast p3, La2/z0;
 
     .line 16
-    iget-object p3, p3, La2/z0;->l:La2/f;
+    iget-object p3, p3, La2/z0;->m:La2/f;
 
     invoke-virtual {p3, p1, p2}, La2/f;->f(Lcom/google/android/gms/common/ConnectionResult;I)V
 
@@ -216,7 +216,7 @@
     if-eqz p1, :cond_1
 
     .line 1
-    iget-object v0, p0, La2/s0;->h:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, La2/s0;->i:Ljava/util/concurrent/atomic/AtomicReference;
 
     const/4 v1, 0x0
 
@@ -280,7 +280,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, La2/s0;->h:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, La2/s0;->i:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -309,7 +309,7 @@
     iget-object v1, v0, La2/r0;->b:Lcom/google/android/gms/common/ConnectionResult;
 
     .line 6
-    iget v1, v1, Lcom/google/android/gms/common/ConnectionResult;->b:I
+    iget v1, v1, Lcom/google/android/gms/common/ConnectionResult;->h:I
 
     const-string v2, "failed_status"
 
@@ -320,7 +320,7 @@
     iget-object v0, v0, La2/r0;->b:Lcom/google/android/gms/common/ConnectionResult;
 
     .line 9
-    iget-object v0, v0, Lcom/google/android/gms/common/ConnectionResult;->h:Landroid/app/PendingIntent;
+    iget-object v0, v0, Lcom/google/android/gms/common/ConnectionResult;->i:Landroid/app/PendingIntent;
 
     const-string v1, "failed_resolution"
 
@@ -335,7 +335,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, La2/s0;->h:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, La2/s0;->i:Ljava/util/concurrent/atomic/AtomicReference;
 
     const/4 v1, 0x0
 
@@ -347,10 +347,10 @@
     check-cast v0, La2/z0;
 
     .line 3
-    iget-object v0, v0, La2/z0;->l:La2/f;
+    iget-object v0, v0, La2/z0;->m:La2/f;
 
     .line 4
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     const/4 v1, 0x3
 
@@ -372,7 +372,7 @@
     invoke-direct {v0, p1, p2}, La2/r0;-><init>(Lcom/google/android/gms/common/ConnectionResult;I)V
 
     .line 2
-    iget-object p1, p0, La2/s0;->h:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object p1, p0, La2/s0;->i:Ljava/util/concurrent/atomic/AtomicReference;
 
     const/4 p2, 0x0
 
@@ -383,7 +383,7 @@
     if-eqz p1, :cond_0
 
     .line 3
-    iget-object p1, p0, La2/s0;->i:Landroid/os/Handler;
+    iget-object p1, p0, La2/s0;->j:Landroid/os/Handler;
 
     new-instance p2, La2/u0;
 
@@ -407,7 +407,7 @@
 
     invoke-direct {p1, v0, v1}, Lcom/google/android/gms/common/ConnectionResult;-><init>(ILandroid/app/PendingIntent;)V
 
-    iget-object v0, p0, La2/s0;->h:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, La2/s0;->i:Ljava/util/concurrent/atomic/AtomicReference;
 
     .line 2
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -433,7 +433,7 @@
     check-cast v1, La2/z0;
 
     .line 5
-    iget-object v1, v1, La2/z0;->l:La2/f;
+    iget-object v1, v1, La2/z0;->m:La2/f;
 
     invoke-virtual {v1, p1, v0}, La2/f;->f(Lcom/google/android/gms/common/ConnectionResult;I)V
 

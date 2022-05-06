@@ -20,22 +20,22 @@
     value = {
         "Lle/j;",
         "Lke/l<",
-        "Lxd/b0;",
-        "Lbe/n;",
+        "Lwd/x;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$e;->a:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$e;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
     const/4 p1, 0x1
 
@@ -50,10 +50,10 @@
     .locals 3
 
     .line 1
-    check-cast p1, Lxd/b0;
+    check-cast p1, Lwd/x;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$e;->a:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$e;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->U()Z
 
@@ -67,29 +67,29 @@
     if-eqz p1, :cond_2
 
     .line 3
-    invoke-virtual {p1}, Lxd/b0;->a()Lcom/supercell/id/model/IdProfile;
+    invoke-virtual {p1}, Lwd/x;->a()Lcom/supercell/id/model/IdProfile;
 
     move-result-object p1
 
     if-eqz p1, :cond_2
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$e;->a:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$e;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
-    invoke-virtual {p1}, Lcom/supercell/id/model/IdProfile;->j()Lcom/supercell/id/model/MyProfileImage;
+    invoke-virtual {p1}, Lcom/supercell/id/model/IdProfile;->i()Lcom/supercell/id/model/MyProfileImage;
 
     move-result-object p1
 
     .line 5
-    iget-object v1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$e;->a:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    iget-object v1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$e;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
     .line 6
-    iget-object v2, v1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->j0:Lcom/supercell/id/model/MyProfileImage;
+    iget-object v2, v1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->k0:Lcom/supercell/id/model/MyProfileImage;
 
     if-nez v2, :cond_1
 
     .line 7
-    invoke-virtual {v1, p1}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->C1(Lcom/supercell/id/model/MyProfileImage;)V
+    invoke-virtual {v1, p1}, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->D1(Lcom/supercell/id/model/MyProfileImage;)V
 
     .line 8
     :cond_1
@@ -98,7 +98,7 @@
     .line 9
     :cond_2
     :goto_0
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method

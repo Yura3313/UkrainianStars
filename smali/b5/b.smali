@@ -51,7 +51,7 @@
 
     const-class v4, Ljava/lang/String;
 
-    invoke-static {p0, v2, v3, v4, v1}, Ly4/z;->b(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0, v2, v3, v4, v1}, Ly4/b0;->b(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 

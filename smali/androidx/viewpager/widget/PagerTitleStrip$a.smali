@@ -91,7 +91,7 @@
     .line 2
     iget-object p1, p0, Landroidx/viewpager/widget/PagerTitleStrip$a;->b:Landroidx/viewpager/widget/PagerTitleStrip;
 
-    iget-object v0, p1, Landroidx/viewpager/widget/PagerTitleStrip;->a:Landroidx/viewpager/widget/ViewPager;
+    iget-object v0, p1, Landroidx/viewpager/widget/PagerTitleStrip;->g:Landroidx/viewpager/widget/ViewPager;
 
     invoke-virtual {v0}, Landroidx/viewpager/widget/ViewPager;->getCurrentItem()I
 
@@ -99,7 +99,7 @@
 
     iget-object v1, p0, Landroidx/viewpager/widget/PagerTitleStrip$a;->b:Landroidx/viewpager/widget/PagerTitleStrip;
 
-    iget-object v1, v1, Landroidx/viewpager/widget/PagerTitleStrip;->a:Landroidx/viewpager/widget/ViewPager;
+    iget-object v1, v1, Landroidx/viewpager/widget/PagerTitleStrip;->g:Landroidx/viewpager/widget/ViewPager;
 
     invoke-virtual {v1}, Landroidx/viewpager/widget/ViewPager;->getAdapter()Ly0/b;
 
@@ -110,7 +110,7 @@
     .line 3
     iget-object p1, p0, Landroidx/viewpager/widget/PagerTitleStrip$a;->b:Landroidx/viewpager/widget/PagerTitleStrip;
 
-    iget v0, p1, Landroidx/viewpager/widget/PagerTitleStrip;->k:F
+    iget v0, p1, Landroidx/viewpager/widget/PagerTitleStrip;->l:F
 
     const/4 v1, 0x0
 
@@ -125,7 +125,7 @@
 
     .line 4
     :goto_0
-    iget-object v1, p1, Landroidx/viewpager/widget/PagerTitleStrip;->a:Landroidx/viewpager/widget/ViewPager;
+    iget-object v1, p1, Landroidx/viewpager/widget/PagerTitleStrip;->g:Landroidx/viewpager/widget/ViewPager;
 
     invoke-virtual {v1}, Landroidx/viewpager/widget/ViewPager;->getCurrentItem()I
 
@@ -145,7 +145,7 @@
     .line 1
     iget-object v0, p0, Landroidx/viewpager/widget/PagerTitleStrip$a;->b:Landroidx/viewpager/widget/PagerTitleStrip;
 
-    iget-object v1, v0, Landroidx/viewpager/widget/PagerTitleStrip;->a:Landroidx/viewpager/widget/ViewPager;
+    iget-object v1, v0, Landroidx/viewpager/widget/PagerTitleStrip;->g:Landroidx/viewpager/widget/ViewPager;
 
     invoke-virtual {v1}, Landroidx/viewpager/widget/ViewPager;->getCurrentItem()I
 
@@ -153,7 +153,7 @@
 
     iget-object v2, p0, Landroidx/viewpager/widget/PagerTitleStrip$a;->b:Landroidx/viewpager/widget/PagerTitleStrip;
 
-    iget-object v2, v2, Landroidx/viewpager/widget/PagerTitleStrip;->a:Landroidx/viewpager/widget/ViewPager;
+    iget-object v2, v2, Landroidx/viewpager/widget/PagerTitleStrip;->g:Landroidx/viewpager/widget/ViewPager;
 
     invoke-virtual {v2}, Landroidx/viewpager/widget/ViewPager;->getAdapter()Ly0/b;
 
@@ -164,7 +164,7 @@
     .line 2
     iget-object v0, p0, Landroidx/viewpager/widget/PagerTitleStrip$a;->b:Landroidx/viewpager/widget/PagerTitleStrip;
 
-    iget v1, v0, Landroidx/viewpager/widget/PagerTitleStrip;->k:F
+    iget v1, v0, Landroidx/viewpager/widget/PagerTitleStrip;->l:F
 
     const/4 v2, 0x0
 
@@ -179,7 +179,7 @@
 
     .line 3
     :goto_0
-    iget-object v2, v0, Landroidx/viewpager/widget/PagerTitleStrip;->a:Landroidx/viewpager/widget/ViewPager;
+    iget-object v2, v0, Landroidx/viewpager/widget/PagerTitleStrip;->g:Landroidx/viewpager/widget/ViewPager;
 
     invoke-virtual {v2}, Landroidx/viewpager/widget/ViewPager;->getCurrentItem()I
 

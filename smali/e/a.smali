@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public a:Ljava/util/Locale;
+.field public g:Ljava/util/Locale;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     iget-object p1, p1, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
 
-    iput-object p1, p0, Le/a;->a:Ljava/util/Locale;
+    iput-object p1, p0, Le/a;->g:Ljava/util/Locale;
 
     return-void
 .end method
@@ -45,7 +45,7 @@
 
     move-result-object p1
 
-    iget-object p2, p0, Le/a;->a:Ljava/util/Locale;
+    iget-object p2, p0, Le/a;->g:Ljava/util/Locale;
 
     invoke-virtual {p1, p2}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
 

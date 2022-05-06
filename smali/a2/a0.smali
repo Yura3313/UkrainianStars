@@ -18,22 +18,22 @@
 
 
 # virtual methods
-.method public abstract A(Ljava/lang/CharSequence;[BII)I
+.method public abstract B(Ljava/lang/CharSequence;[BII)I
 .end method
 
 .method public abstract C(Ljava/lang/Object;)La2/a0;
 .end method
 
-.method public abstract h(I)V
+.method public abstract b(I)V
 .end method
 
-.method public abstract j(Landroid/graphics/Typeface;Z)V
+.method public abstract i(Landroid/graphics/Typeface;Z)V
 .end method
 
-.method public abstract m(I)Z
+.method public abstract k(I)Z
 .end method
 
-.method public r(Ljava/lang/Iterable;)La2/a0;
+.method public o(Ljava/lang/Iterable;)La2/a0;
     .locals 1
 
     .line 1
@@ -61,8 +61,8 @@
     return-object p0
 .end method
 
-.method public abstract w(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+.method public abstract t(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 .end method
 
-.method public abstract z(I[BII)I
+.method public abstract y(I[BII)I
 .end method

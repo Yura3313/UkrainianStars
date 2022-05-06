@@ -13,7 +13,7 @@
     .locals 5
 
     .line 1
-    invoke-static {}, Lu3/c3;->values()[Lu3/c3;
+    invoke-static {}, Lu3/a3;->values()[Lu3/a3;
 
     move-result-object v0
 
@@ -26,7 +26,7 @@
     const/4 v1, 0x1
 
     :try_start_0
-    sget-object v2, Lu3/c3;->zzbzl:Lu3/c3;
+    sget-object v2, Lu3/a3;->p:Lu3/a3;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -42,7 +42,7 @@
     :try_start_1
     sget-object v2, Lu3/q2;->b:[I
 
-    sget-object v3, Lu3/c3;->zzbzn:Lu3/c3;
+    sget-object v3, Lu3/a3;->r:Lu3/a3;
 
     invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
@@ -58,11 +58,9 @@
     :try_start_2
     sget-object v3, Lu3/q2;->b:[I
 
-    sget-object v4, Lu3/c3;->zzbzk:Lu3/c3;
+    sget-object v4, Lu3/a3;->o:Lu3/a3;
 
-    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v4
+    const/4 v4, 0x6
 
     aput v2, v3, v4
     :try_end_2
@@ -70,7 +68,7 @@
 
     .line 2
     :catch_2
-    invoke-static {}, Lu3/r2;->values()[Lu3/r2;
+    invoke-static {}, La6/c;->a()[I
 
     move-result-object v3
 
@@ -81,27 +79,15 @@
     sput-object v3, Lu3/q2;->a:[I
 
     :try_start_3
-    sget-object v4, Lu3/r2;->zzbxw:Lu3/r2;
-
-    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v4
-
-    aput v1, v3, v4
+    aput v1, v3, v2
     :try_end_3
     .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
 
     :catch_3
     :try_start_4
-    sget-object v1, Lu3/q2;->a:[I
+    sget-object v3, Lu3/q2;->a:[I
 
-    sget-object v3, Lu3/r2;->zzbxu:Lu3/r2;
-
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v3
-
-    aput v0, v1, v3
+    aput v0, v3, v1
     :try_end_4
     .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
 
@@ -109,11 +95,7 @@
     :try_start_5
     sget-object v0, Lu3/q2;->a:[I
 
-    sget-object v1, Lu3/r2;->zzbxt:Lu3/r2;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
+    const/4 v1, 0x0
 
     aput v2, v0, v1
     :try_end_5

@@ -83,9 +83,9 @@
     if-lt v1, v2, :cond_0
 
     .line 7
-    new-instance v1, Lr3/f;
+    new-instance v1, Lr3/e;
 
-    invoke-direct {v1}, Lr3/f;-><init>()V
+    invoke-direct {v1}, Lr3/e;-><init>()V
 
     goto :goto_2
 
@@ -102,9 +102,9 @@
     if-eqz v1, :cond_1
 
     .line 9
-    new-instance v1, Lr3/e;
+    new-instance v1, Lr3/d;
 
-    invoke-direct {v1}, Lr3/e;-><init>()V
+    invoke-direct {v1}, Lr3/d;-><init>()V
 
     goto :goto_2
 

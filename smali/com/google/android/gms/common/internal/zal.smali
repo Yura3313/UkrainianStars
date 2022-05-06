@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method public final s6(Lcom/google/android/gms/dynamic/IObjectWrapper;Lcom/google/android/gms/common/internal/zaw;)Lcom/google/android/gms/dynamic/IObjectWrapper;
+.method public final t6(Lcom/google/android/gms/dynamic/IObjectWrapper;Lcom/google/android/gms/common/internal/zaw;)Lcom/google/android/gms/dynamic/IObjectWrapper;
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -29,7 +29,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/base/zab;->E0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/base/zab;->F0()Landroid/os/Parcel;
 
     move-result-object v0
 
@@ -53,7 +53,7 @@
 
     .line 6
     :try_start_0
-    iget-object p2, p0, Lcom/google/android/gms/internal/base/zab;->a:Landroid/os/IBinder;
+    iget-object p2, p0, Lcom/google/android/gms/internal/base/zab;->g:Landroid/os/IBinder;
 
     const/4 v1, 0x2
 
@@ -75,7 +75,7 @@
 
     move-result-object p2
 
-    invoke-static {p2}, Lcom/google/android/gms/dynamic/IObjectWrapper$Stub;->P0(Landroid/os/IBinder;)Lcom/google/android/gms/dynamic/IObjectWrapper;
+    invoke-static {p2}, Lcom/google/android/gms/dynamic/IObjectWrapper$Stub;->Q0(Landroid/os/IBinder;)Lcom/google/android/gms/dynamic/IObjectWrapper;
 
     move-result-object p2
 

@@ -118,7 +118,7 @@
     iget-object p2, p0, Lw0/b$b;->b:Lw0/h;
 
     .line 11
-    iput-boolean v1, p2, Lw0/h;->k:Z
+    iput-boolean v1, p2, Lw0/h;->l:Z
 
     .line 12
     :cond_1
@@ -168,7 +168,7 @@
     const/4 v3, 0x0
 
     .line 19
-    invoke-virtual {v2, p3, v3}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, p3, v3}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p3
 
@@ -179,14 +179,14 @@
     iget-object v2, p0, Lw0/b$b;->b:Lw0/h;
 
     .line 22
-    iget-object v2, v2, Lw0/h;->b:Lw0/h$h;
+    iget-object v2, v2, Lw0/h;->h:Lw0/h$h;
 
     iget-object v2, v2, Lw0/h$h;->b:Lw0/h$g;
 
     iget-object v2, v2, Lw0/h$g;->p:Lm/a;
 
     .line 23
-    invoke-virtual {v2, p3, v3}, Lm/h;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, p3, v3}, Lm/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -201,7 +201,7 @@
     .line 26
     iget-object v2, p0, Lw0/b$b;->e:Lm/a;
 
-    invoke-virtual {v2, v0, p3}, Lm/h;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v0, p3}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int/lit8 v1, v1, 0x1
 

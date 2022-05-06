@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public a:Lp/g;
+.field public g:Lp/h;
 
-.field public final synthetic b:Lp/f;
+.field public final synthetic h:Lp/f;
 
 
 # direct methods
@@ -28,7 +28,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lp/f$b;->b:Lp/f;
+    iput-object p1, p0, Lp/f$b;->h:Lp/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,14 +41,14 @@
     .locals 1
 
     .line 1
-    check-cast p1, Lp/g;
+    check-cast p1, Lp/h;
 
     .line 2
-    iget-object v0, p0, Lp/f$b;->a:Lp/g;
+    iget-object v0, p0, Lp/f$b;->g:Lp/h;
 
-    iget v0, v0, Lp/g;->b:I
+    iget v0, v0, Lp/h;->b:I
 
-    iget p1, p1, Lp/g;->b:I
+    iget p1, p1, Lp/h;->b:I
 
     sub-int/2addr v0, p1
 
@@ -59,7 +59,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lp/f$b;->a:Lp/g;
+    iget-object v0, p0, Lp/f$b;->g:Lp/h;
 
     const-string v1, "[ "
 
@@ -73,13 +73,13 @@
     if-ge v0, v2, :cond_0
 
     .line 2
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    iget-object v2, p0, Lp/f$b;->a:Lp/g;
+    iget-object v2, p0, Lp/f$b;->g:Lp/h;
 
-    iget-object v2, v2, Lp/g;->h:[F
+    iget-object v2, v2, Lp/h;->h:[F
 
     aget v2, v2, v0
 
@@ -101,11 +101,11 @@
     const-string v0, "] "
 
     .line 3
-    invoke-static {v1, v0}, Lh1/i;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, v0}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Lp/f$b;->a:Lp/g;
+    iget-object v1, p0, Lp/f$b;->g:Lp/h;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

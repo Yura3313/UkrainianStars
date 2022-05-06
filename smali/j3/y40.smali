@@ -3,52 +3,52 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/uu;
+.implements Lj3/jo;
 
 
 # instance fields
-.field public final a:Lj3/md;
+.field public final a:Lj3/j40;
 
 
 # direct methods
-.method public constructor <init>(Lj3/md;)V
+.method public constructor <init>(Lj3/j40;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj3/y40;->a:Lj3/md;
+    iput-object p1, p0, Lj3/y40;->a:Lj3/j40;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(ZLandroid/content/Context;)V
-    .locals 1
+.method public final getVideoController()Lcom/google/android/gms/internal/ads/zzyg;
+    .locals 2
+
+    iget-object v0, p0, Lj3/y40;->a:Lj3/j40;
 
     .line 1
-    iget-object p1, p0, Lj3/y40;->a:Lj3/md;
-
-    .line 2
     :try_start_0
-    sget-object v0, Lh1/o;->B:Lh1/o;
+    iget-object v0, v0, Lj3/j40;->b:Ljava/lang/Object;
 
-    iget-object v0, v0, Lh1/o;->b:Li1/j;
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzapa;
 
-    .line 3
-    invoke-virtual {p1}, Lj3/md;->get()Ljava/lang/Object;
+    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzapa;->getVideoController()Lcom/google/android/gms/internal/ads/zzyg;
 
-    move-result-object p1
-
-    check-cast p1, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;
-
-    const/4 v0, 0x1
-
-    .line 4
-    invoke-static {p2, p1, v0}, Li1/j;->b(Landroid/content/Context;Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;Z)V
+    move-result-object v0
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
 
     :catch_0
-    return-void
+    move-exception v0
+
+    .line 2
+    new-instance v1, Lcom/google/android/gms/internal/ads/zzdlr;
+
+    invoke-direct {v1, v0}, Lcom/google/android/gms/internal/ads/zzdlr;-><init>(Ljava/lang/Throwable;)V
+
+    throw v1
 .end method

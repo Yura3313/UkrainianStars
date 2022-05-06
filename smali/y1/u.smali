@@ -1,179 +1,139 @@
-.class public final enum Ly1/u;
-.super Ljava/lang/Enum;
+.class public final Ly1/u;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-basement@@17.5.0"
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/lang/Enum<",
-        "Ly1/u;",
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/common/zzq;",
         ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final enum zza:Ly1/u;
-
-.field private static final enum zzc:Ly1/u;
-
-.field private static final enum zzd:Ly1/u;
-
-.field private static final enum zze:Ly1/u;
-
-.field private static final enum zzf:Ly1/u;
-
-.field private static final synthetic zzg:[Ly1/u;
-
-
-# instance fields
-.field public final zzb:I
-
-
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 11
+.method public constructor <init>()V
+    .locals 0
 
     .line 1
-    new-instance v0, Ly1/u;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-string v1, "DEFAULT"
+    return-void
+.end method
+
+
+# virtual methods
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 8
+
+    .line 1
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+
+    move-result v0
+
+    const/4 v1, 0x0
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, v1, v2, v2}, Ly1/u;-><init>(Ljava/lang/String;II)V
+    move-object v3, v2
 
-    sput-object v0, Ly1/u;->zzc:Ly1/u;
+    move-object v4, v3
+
+    const/4 v2, 0x0
 
     .line 2
-    new-instance v1, Ly1/u;
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    const-string v3, "UNKNOWN_CERT"
+    move-result v5
 
-    const/4 v4, 0x1
-
-    invoke-direct {v1, v3, v4, v4}, Ly1/u;-><init>(Ljava/lang/String;II)V
-
-    sput-object v1, Ly1/u;->zzd:Ly1/u;
+    if-ge v5, v0, :cond_4
 
     .line 3
-    new-instance v3, Ly1/u;
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    const-string v5, "TEST_KEYS_REJECTED"
+    move-result v5
 
-    const/4 v6, 0x2
+    const v6, 0xffff
 
-    invoke-direct {v3, v5, v6, v6}, Ly1/u;-><init>(Ljava/lang/String;II)V
+    and-int/2addr v6, v5
 
-    sput-object v3, Ly1/u;->zze:Ly1/u;
+    const/4 v7, 0x1
+
+    if-eq v6, v7, :cond_3
+
+    const/4 v7, 0x2
+
+    if-eq v6, v7, :cond_2
+
+    const/4 v7, 0x3
+
+    if-eq v6, v7, :cond_1
+
+    const/4 v7, 0x4
+
+    if-eq v6, v7, :cond_0
 
     .line 4
-    new-instance v5, Ly1/u;
-
-    const-string v7, "PACKAGE_NOT_FOUND"
-
-    const/4 v8, 0x3
-
-    invoke-direct {v5, v7, v8, v8}, Ly1/u;-><init>(Ljava/lang/String;II)V
-
-    sput-object v5, Ly1/u;->zza:Ly1/u;
-
-    .line 5
-    new-instance v7, Ly1/u;
-
-    const-string v9, "GENERIC_ERROR"
-
-    const/4 v10, 0x4
-
-    invoke-direct {v7, v9, v10, v10}, Ly1/u;-><init>(Ljava/lang/String;II)V
-
-    sput-object v7, Ly1/u;->zzf:Ly1/u;
-
-    const/4 v9, 0x5
-
-    new-array v9, v9, [Ly1/u;
-
-    aput-object v0, v9, v2
-
-    aput-object v1, v9, v4
-
-    aput-object v3, v9, v6
-
-    aput-object v5, v9, v8
-
-    aput-object v7, v9, v10
-
-    .line 6
-    sput-object v9, Ly1/u;->zzg:[Ly1/u;
-
-    return-void
-.end method
-
-.method private constructor <init>(Ljava/lang/String;II)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I)V"
-        }
-    .end annotation
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    iput p3, p0, Ly1/u;->zzb:I
-
-    return-void
-.end method
-
-.method public static values()[Ly1/u;
-    .locals 1
-
-    .line 1
-    sget-object v0, Ly1/u;->zzg:[Ly1/u;
-
-    invoke-virtual {v0}, [Ly1/u;->clone()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, [Ly1/u;
-
-    return-object v0
-.end method
-
-.method public static zza(I)Ly1/u;
-    .locals 5
-
-    .line 1
-    invoke-static {}, Ly1/u;->values()[Ly1/u;
-
-    move-result-object v0
-
-    array-length v1, v0
-
-    const/4 v2, 0x0
-
-    :goto_0
-    if-ge v2, v1, :cond_1
-
-    aget-object v3, v0, v2
-
-    .line 2
-    iget v4, v3, Ly1/u;->zzb:I
-
-    if-ne v4, p0, :cond_0
-
-    return-object v3
-
-    :cond_0
-    add-int/lit8 v2, v2, 0x1
+    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
-    .line 3
-    :cond_1
-    sget-object p0, Ly1/u;->zzc:Ly1/u;
+    .line 5
+    :cond_0
+    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
 
-    return-object p0
+    move-result v2
+
+    goto :goto_0
+
+    .line 6
+    :cond_1
+    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+
+    move-result v1
+
+    goto :goto_0
+
+    .line 7
+    :cond_2
+    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->q(Landroid/os/Parcel;I)Landroid/os/IBinder;
+
+    move-result-object v4
+
+    goto :goto_0
+
+    .line 8
+    :cond_3
+    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v3
+
+    goto :goto_0
+
+    .line 9
+    :cond_4
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+
+    .line 10
+    new-instance p1, Lcom/google/android/gms/common/zzq;
+
+    invoke-direct {p1, v3, v4, v1, v2}, Lcom/google/android/gms/common/zzq;-><init>(Ljava/lang/String;Landroid/os/IBinder;ZZ)V
+
+    return-object p1
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    new-array p1, p1, [Lcom/google/android/gms/common/zzq;
+
+    return-object p1
 .end method

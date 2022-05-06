@@ -45,7 +45,7 @@
 
     .line 1
     :try_start_0
-    sget-object v0, Lp5/x;->f:Lp5/x;
+    sget-object v0, Lp5/z;->f:Lp5/z;
 
     iget-object v1, p0, Lp5/e0$a;->a:Lp5/e0;
 
@@ -53,7 +53,7 @@
     iget-object v1, v1, Lp5/e0;->b:Ljava/lang/String;
 
     .line 3
-    invoke-virtual {v0, v1}, Lp5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lp5/z;->a(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 

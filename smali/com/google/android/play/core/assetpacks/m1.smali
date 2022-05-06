@@ -19,7 +19,7 @@
 
     if-nez v1, :cond_1
 
-    new-instance v1, Lcom/google/android/play/core/assetpacks/l2;
+    new-instance v1, Lcom/google/android/play/core/assetpacks/m2;
 
     .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -32,12 +32,12 @@
 
     .line 2
     :cond_0
-    invoke-direct {v1, p0}, Lcom/google/android/play/core/assetpacks/l2;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, p0}, Lcom/google/android/play/core/assetpacks/m2;-><init>(Landroid/content/Context;)V
 
     .line 3
     new-instance p0, Lcom/google/android/play/core/assetpacks/k0;
 
-    invoke-direct {p0, v1}, Lcom/google/android/play/core/assetpacks/k0;-><init>(Lcom/google/android/play/core/assetpacks/l2;)V
+    invoke-direct {p0, v1}, Lcom/google/android/play/core/assetpacks/k0;-><init>(Lcom/google/android/play/core/assetpacks/m2;)V
 
     .line 4
     sput-object p0, Lcom/google/android/play/core/assetpacks/m1;->a:Lcom/google/android/play/core/assetpacks/k0;
@@ -109,29 +109,33 @@
 
     invoke-direct {v3, v2}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
+    invoke-static {v3, v2}, Lio/sentry/instrumentation/file/SentryFileInputStream$Factory;->create(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
+
+    move-result-object v2
+
     :cond_0
     :try_start_0
-    invoke-virtual {v3, v1}, Ljava/io/InputStream;->read([B)I
+    invoke-virtual {v2, v1}, Ljava/io/InputStream;->read([B)I
 
-    move-result v2
+    move-result v3
 
-    if-gtz v2, :cond_1
+    if-gtz v3, :cond_1
 
     goto :goto_1
 
     :cond_1
     const/4 v4, 0x0
 
-    invoke-virtual {v0, v1, v4, v2}, Ljava/security/MessageDigest;->update([BII)V
+    invoke-virtual {v0, v1, v4, v3}, Ljava/security/MessageDigest;->update([BII)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :goto_1
     const/4 v4, -0x1
 
-    if-ne v2, v4, :cond_0
+    if-ne v3, v4, :cond_0
 
-    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
+    invoke-virtual {v2}, Ljava/io/InputStream;->close()V
 
     goto :goto_0
 
@@ -139,7 +143,7 @@
     move-exception p0
 
     :try_start_1
-    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
+    invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
@@ -149,7 +153,7 @@
     move-exception v0
 
     .line 1
-    sget-object v1, Ly4/i0;->a:Landroidx/fragment/app/t;
+    sget-object v1, Ly4/k0;->a:Landroidx/fragment/app/t;
 
     invoke-virtual {v1, p0, v0}, Landroidx/fragment/app/t;->b(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 

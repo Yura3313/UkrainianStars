@@ -2,126 +2,102 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Ljava/lang/Runnable;
-
 
 # instance fields
-.field public final synthetic a:I
+.field public a:I
 
-.field public final b:Ljava/lang/Object;
-
-.field public final h:Ljava/lang/Object;
+.field public b:[J
 
 
 # direct methods
-.method public constructor <init>(Lj3/x11;Lcom/google/android/gms/internal/ads/zzho;)V
+.method public constructor <init>()V
     .locals 1
 
-    const/4 v0, 0x0
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput v0, p0, Lj3/y11;->a:I
+    const/16 v0, 0x20
+
+    new-array v0, v0, [J
 
     .line 2
-    iput-object p1, p0, Lj3/y11;->h:Ljava/lang/Object;
-
-    iput-object p2, p0, Lj3/y11;->b:Ljava/lang/Object;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;I)V
-    .locals 0
-
-    .line 1
-    iput p3, p0, Lj3/y11;->a:I
-
-    iput-object p1, p0, Lj3/y11;->b:Ljava/lang/Object;
-
-    iput-object p2, p0, Lj3/y11;->h:Ljava/lang/Object;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object v0, p0, Lj3/y11;->b:[J
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
-
-    iget v0, p0, Lj3/y11;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
+.method public final a(J)V
+    .locals 3
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lj3/y11;->b:Ljava/lang/Object;
+    iget v0, p0, Lj3/y11;->a:I
 
-    check-cast v0, Lj3/h80;
+    iget-object v1, p0, Lj3/y11;->b:[J
 
-    iget-object v1, p0, Lj3/y11;->h:Ljava/lang/Object;
+    array-length v2, v1
 
-    check-cast v1, Lcom/google/android/gms/internal/ads/zzuw;
+    if-ne v0, v2, :cond_0
+
+    shl-int/lit8 v0, v0, 0x1
 
     .line 2
-    iget-object v0, v0, Lj3/h80;->h:Ljava/lang/Object;
+    invoke-static {v1, v0}, Ljava/util/Arrays;->copyOf([JI)[J
 
-    check-cast v0, Lcom/google/android/gms/internal/ads/e1;
+    move-result-object v0
+
+    iput-object v0, p0, Lj3/y11;->b:[J
 
     .line 3
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/e1;->d:Lj3/c80;
+    :cond_0
+    iget-object v0, p0, Lj3/y11;->b:[J
 
-    .line 4
-    iget-object v0, v0, Lj3/c80;->c:Lj3/wq;
+    iget v1, p0, Lj3/y11;->a:I
 
-    .line 5
-    invoke-interface {v0, v1}, Lj3/wq;->y0(Lcom/google/android/gms/internal/ads/zzuw;)V
+    add-int/lit8 v2, v1, 0x1
 
-    return-void
+    iput v2, p0, Lj3/y11;->a:I
 
-    .line 6
-    :pswitch_1
-    iget-object v0, p0, Lj3/y11;->h:Ljava/lang/Object;
-
-    check-cast v0, Lj3/x11;
-
-    .line 7
-    iget-object v0, v0, Lj3/x11;->b:Lj3/tf;
-
-    .line 8
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    aput-wide p1, v0, v1
 
     return-void
+.end method
 
-    .line 9
-    :goto_0
-    iget-object v0, p0, Lj3/y11;->b:Ljava/lang/Object;
+.method public final b(I)J
+    .locals 5
 
-    check-cast v0, Lj3/hi0;
+    if-ltz p1, :cond_0
 
-    iget-object v1, p0, Lj3/y11;->h:Ljava/lang/Object;
+    .line 1
+    iget v0, p0, Lj3/y11;->a:I
 
-    check-cast v1, Lj3/di0;
+    if-ge p1, v0, :cond_0
 
-    .line 10
-    iget-object v0, v0, Lj3/hi0;->f:Lj3/ci0;
+    .line 2
+    iget-object v0, p0, Lj3/y11;->b:[J
 
-    .line 11
-    iget-object v0, v0, Lj3/ci0;->c:Lj3/mi0;
+    aget-wide v1, v0, p1
 
-    .line 12
-    invoke-interface {v0, v1}, Lj3/mi0;->o0(Lj3/di0;)V
+    return-wide v1
 
-    return-void
+    .line 3
+    :cond_0
+    new-instance v0, Ljava/lang/IndexOutOfBoundsException;
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    iget v1, p0, Lj3/y11;->a:I
+
+    const/16 v2, 0x2e
+
+    const-string v3, "Invalid index "
+
+    const-string v4, ", size is "
+
+    invoke-static {v2, v3, p1, v4, v1}, Ld2/a;->a(ILjava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    throw v0
 .end method

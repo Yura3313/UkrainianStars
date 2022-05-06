@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/browser/customtabs/CustomTabsService;
+.field public final synthetic g:Landroidx/browser/customtabs/CustomTabsService;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/browser/customtabs/CustomTabsService$a;->a:Landroidx/browser/customtabs/CustomTabsService;
+    iput-object p1, p0, Landroidx/browser/customtabs/CustomTabsService$a;->g:Landroidx/browser/customtabs/CustomTabsService;
 
     invoke-direct {p0}, Landroid/support/customtabs/ICustomTabsService$Stub;-><init>()V
 
@@ -36,7 +36,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/browser/customtabs/CustomTabsService$a;->a:Landroidx/browser/customtabs/CustomTabsService;
+    iget-object v0, p0, Landroidx/browser/customtabs/CustomTabsService$a;->g:Landroidx/browser/customtabs/CustomTabsService;
 
     invoke-virtual {v0, p1, p2}, Landroidx/browser/customtabs/CustomTabsService;->a(Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
 
@@ -60,7 +60,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/browser/customtabs/CustomTabsService$a;->a:Landroidx/browser/customtabs/CustomTabsService;
+    iget-object v0, p0, Landroidx/browser/customtabs/CustomTabsService$a;->g:Landroidx/browser/customtabs/CustomTabsService;
 
     new-instance v1, Lk/d;
 
@@ -90,9 +90,9 @@
     invoke-direct {v2, p0, v0}, Landroidx/browser/customtabs/CustomTabsService$a$a;-><init>(Landroidx/browser/customtabs/CustomTabsService$a;Lk/d;)V
 
     .line 3
-    iget-object v3, p0, Landroidx/browser/customtabs/CustomTabsService$a;->a:Landroidx/browser/customtabs/CustomTabsService;
+    iget-object v3, p0, Landroidx/browser/customtabs/CustomTabsService$a;->g:Landroidx/browser/customtabs/CustomTabsService;
 
-    iget-object v3, v3, Landroidx/browser/customtabs/CustomTabsService;->a:Ljava/util/Map;
+    iget-object v3, v3, Landroidx/browser/customtabs/CustomTabsService;->g:Ljava/util/Map;
 
     monitor-enter v3
     :try_end_0
@@ -107,9 +107,9 @@
     invoke-interface {v4, v2, v1}, Landroid/os/IBinder;->linkToDeath(Landroid/os/IBinder$DeathRecipient;I)V
 
     .line 5
-    iget-object v4, p0, Landroidx/browser/customtabs/CustomTabsService$a;->a:Landroidx/browser/customtabs/CustomTabsService;
+    iget-object v4, p0, Landroidx/browser/customtabs/CustomTabsService$a;->g:Landroidx/browser/customtabs/CustomTabsService;
 
-    iget-object v4, v4, Landroidx/browser/customtabs/CustomTabsService;->a:Ljava/util/Map;
+    iget-object v4, v4, Landroidx/browser/customtabs/CustomTabsService;->g:Ljava/util/Map;
 
     invoke-interface {p1}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
 
@@ -124,7 +124,7 @@
 
     .line 7
     :try_start_2
-    iget-object p1, p0, Landroidx/browser/customtabs/CustomTabsService$a;->a:Landroidx/browser/customtabs/CustomTabsService;
+    iget-object p1, p0, Landroidx/browser/customtabs/CustomTabsService$a;->g:Landroidx/browser/customtabs/CustomTabsService;
 
     invoke-virtual {p1, v0}, Landroidx/browser/customtabs/CustomTabsService;->c(Lk/d;)Z
 
@@ -156,7 +156,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/browser/customtabs/CustomTabsService$a;->a:Landroidx/browser/customtabs/CustomTabsService;
+    iget-object v0, p0, Landroidx/browser/customtabs/CustomTabsService$a;->g:Landroidx/browser/customtabs/CustomTabsService;
 
     new-instance v1, Lk/d;
 
@@ -173,7 +173,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/browser/customtabs/CustomTabsService$a;->a:Landroidx/browser/customtabs/CustomTabsService;
+    iget-object v0, p0, Landroidx/browser/customtabs/CustomTabsService$a;->g:Landroidx/browser/customtabs/CustomTabsService;
 
     new-instance v1, Lk/d;
 
@@ -190,7 +190,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/browser/customtabs/CustomTabsService$a;->a:Landroidx/browser/customtabs/CustomTabsService;
+    iget-object v0, p0, Landroidx/browser/customtabs/CustomTabsService$a;->g:Landroidx/browser/customtabs/CustomTabsService;
 
     new-instance v1, Lk/d;
 
@@ -207,7 +207,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/browser/customtabs/CustomTabsService$a;->a:Landroidx/browser/customtabs/CustomTabsService;
+    iget-object v0, p0, Landroidx/browser/customtabs/CustomTabsService$a;->g:Landroidx/browser/customtabs/CustomTabsService;
 
     new-instance v1, Lk/d;
 
@@ -224,7 +224,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/browser/customtabs/CustomTabsService$a;->a:Landroidx/browser/customtabs/CustomTabsService;
+    iget-object v0, p0, Landroidx/browser/customtabs/CustomTabsService$a;->g:Landroidx/browser/customtabs/CustomTabsService;
 
     invoke-virtual {v0, p1, p2}, Landroidx/browser/customtabs/CustomTabsService;->h(J)Z
 

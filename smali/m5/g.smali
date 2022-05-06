@@ -62,18 +62,21 @@
     move-result-object v0
 
     .line 3
-    invoke-static {v0}, Lcom/google/crypto/tink/shaded/protobuf/o;->k(Ljava/lang/Class;)Lcom/google/crypto/tink/shaded/protobuf/o;
+    invoke-static {v0}, Lcom/google/crypto/tink/shaded/protobuf/o;->j(Ljava/lang/Class;)Lcom/google/crypto/tink/shaded/protobuf/o;
 
     move-result-object v0
 
     .line 4
-    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/o$f;->BUILD_MESSAGE_INFO:Lcom/google/crypto/tink/shaded/protobuf/o$f;
+    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/o$f;->i:Lcom/google/crypto/tink/shaded/protobuf/o$f;
 
-    invoke-virtual {v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/o;->i(Lcom/google/crypto/tink/shaded/protobuf/o$f;)Ljava/lang/Object;
+    const/4 v2, 0x0
+
+    .line 5
+    invoke-virtual {v0, v1, v2, v2}, Lcom/google/crypto/tink/shaded/protobuf/o;->i(Lcom/google/crypto/tink/shaded/protobuf/o$f;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 5
+    .line 6
     check-cast v0, Lm5/l;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -83,12 +86,12 @@
     :catch_0
     move-exception v0
 
-    .line 6
+    .line 7
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string v2, "Unable to get message info for "
 
-    invoke-static {v2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -106,13 +109,13 @@
 
     throw v1
 
-    .line 7
+    .line 8
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "Unsupported message type: "
 
-    invoke-static {v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 

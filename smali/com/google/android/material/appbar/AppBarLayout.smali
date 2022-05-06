@@ -20,25 +20,25 @@
 
 
 # static fields
-.field public static final v:I
+.field public static final w:I
 
 
 # instance fields
-.field public a:I
-
-.field public b:I
+.field public g:I
 
 .field public h:I
 
 .field public i:I
 
-.field public j:Z
+.field public j:I
 
-.field public k:I
+.field public k:Z
 
-.field public l:Lf0/a0;
+.field public l:I
 
-.field public m:Ljava/util/List;
+.field public m:Lf0/z;
+
+.field public n:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -48,15 +48,15 @@
     .end annotation
 .end field
 
-.field public n:Z
-
 .field public o:Z
 
 .field public p:Z
 
-.field public q:I
+.field public q:Z
 
-.field public r:Ljava/lang/ref/WeakReference;
+.field public r:I
+
+.field public s:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -66,11 +66,11 @@
     .end annotation
 .end field
 
-.field public s:Landroid/animation/ValueAnimator;
+.field public t:Landroid/animation/ValueAnimator;
 
-.field public t:[I
+.field public u:[I
 
-.field public u:Landroid/graphics/drawable/Drawable;
+.field public v:Landroid/graphics/drawable/Drawable;
 
 
 # direct methods
@@ -80,7 +80,7 @@
     .line 1
     sget v0, Lcom/google/android/material/R$style;->Widget_Design_AppBarLayout:I
 
-    sput v0, Lcom/google/android/material/appbar/AppBarLayout;->v:I
+    sput v0, Lcom/google/android/material/appbar/AppBarLayout;->w:I
 
     return-void
 .end method
@@ -100,7 +100,7 @@
     .locals 12
 
     .line 2
-    sget v6, Lcom/google/android/material/appbar/AppBarLayout;->v:I
+    sget v6, Lcom/google/android/material/appbar/AppBarLayout;->w:I
 
     invoke-static {p1, p2, p3, v6}, Lt4/a;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
 
@@ -111,18 +111,18 @@
     const/4 p1, -0x1
 
     .line 3
-    iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->b:I
-
-    .line 4
     iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->h:I
 
-    .line 5
+    .line 4
     iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->i:I
+
+    .line 5
+    iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->j:I
 
     const/4 v7, 0x0
 
     .line 6
-    iput v7, p0, Lcom/google/android/material/appbar/AppBarLayout;->k:I
+    iput v7, p0, Lcom/google/android/material/appbar/AppBarLayout;->l:I
 
     .line 7
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
@@ -165,7 +165,7 @@
     move v4, v6
 
     .line 13
-    invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/j;->d(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
+    invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/l;->d(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object v0
 
@@ -221,7 +221,7 @@
     move v4, v6
 
     .line 20
-    invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/j;->d(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
+    invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/l;->d(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object p2
 
@@ -232,7 +232,7 @@
 
     move-result-object p3
 
-    sget-object v0, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 22
     invoke-virtual {p0, p3}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
@@ -270,13 +270,13 @@
     invoke-virtual {v0, p3}, Lr4/g;->q(Landroid/content/res/ColorStateList;)V
 
     .line 27
-    iget-object p3, v0, Lr4/g;->a:Lr4/g$b;
+    iget-object p3, v0, Lr4/g;->g:Lr4/g$b;
 
-    new-instance v1, Lj4/a;
+    new-instance v1, Lk4/a;
 
-    invoke-direct {v1, v8}, Lj4/a;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, v8}, Lk4/a;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p3, Lr4/g$b;->b:Lj4/a;
+    iput-object v1, p3, Lr4/g$b;->b:Lk4/a;
 
     .line 28
     invoke-virtual {v0}, Lr4/g;->C()V
@@ -372,7 +372,7 @@
 
     move-result p3
 
-    iput-boolean p3, p0, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
+    iput-boolean p3, p0, Lcom/google/android/material/appbar/AppBarLayout;->q:Z
 
     .line 43
     sget p3, Lcom/google/android/material/R$styleable;->AppBarLayout_liftOnScrollTargetViewId:I
@@ -382,7 +382,7 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->q:I
+    iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->r:I
 
     .line 45
     sget p1, Lcom/google/android/material/R$styleable;->AppBarLayout_statusBarForeground:I
@@ -401,7 +401,7 @@
 
     invoke-direct {p1, p0}, Lcom/google/android/material/appbar/AppBarLayout$a;-><init>(Lcom/google/android/material/appbar/AppBarLayout;)V
 
-    invoke-static {p0, p1}, Lf0/s;->E(Landroid/view/View;Lf0/o;)V
+    invoke-static {p0, p1}, Lf0/r;->E(Landroid/view/View;Lf0/n;)V
 
     return-void
 .end method
@@ -459,7 +459,7 @@
     .locals 3
 
     .line 1
-    iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->a:I
+    iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->g:I
 
     .line 2
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->willNotDraw()Z
@@ -469,14 +469,14 @@
     if-nez v0, :cond_0
 
     .line 3
-    sget-object v0, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 4
     invoke-virtual {p0}, Landroid/view/View;->postInvalidateOnAnimation()V
 
     .line 5
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->m:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->n:Ljava/util/List;
 
     if-eqz v0, :cond_2
 
@@ -491,7 +491,7 @@
     if-ge v1, v0, :cond_2
 
     .line 7
-    iget-object v2, p0, Lcom/google/android/material/appbar/AppBarLayout;->m:Ljava/util/List;
+    iget-object v2, p0, Lcom/google/android/material/appbar/AppBarLayout;->n:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -548,7 +548,7 @@
     or-int/2addr p1, v0
 
     .line 1
-    iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->k:I
+    iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->l:I
 
     .line 2
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->requestLayout()V
@@ -569,20 +569,20 @@
     .locals 6
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->o:Z
+    iget-boolean v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
 
     const/4 v1, 0x0
 
     if-eq v0, p1, :cond_4
 
     .line 2
-    iput-boolean p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->o:Z
+    iput-boolean p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
 
     .line 3
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->refreshDrawableState()V
 
     .line 4
-    iget-boolean v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
+    iget-boolean v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->q:Z
 
     const/4 v2, 0x1
 
@@ -635,7 +635,7 @@
 
     .line 7
     :goto_1
-    iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->s:Landroid/animation/ValueAnimator;
+    iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->t:Landroid/animation/ValueAnimator;
 
     if-eqz p1, :cond_2
 
@@ -656,7 +656,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->s:Landroid/animation/ValueAnimator;
+    iput-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->t:Landroid/animation/ValueAnimator;
 
     .line 10
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getResources()Landroid/content/res/Resources;
@@ -675,14 +675,14 @@
     invoke-virtual {p1, v3, v4}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     .line 12
-    iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->s:Landroid/animation/ValueAnimator;
+    iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->t:Landroid/animation/ValueAnimator;
 
-    sget-object v1, Lb4/a;->a:Landroid/animation/TimeInterpolator;
+    sget-object v1, Lc4/a;->a:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {p1, v1}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 13
-    iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->s:Landroid/animation/ValueAnimator;
+    iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->t:Landroid/animation/ValueAnimator;
 
     new-instance v1, Lcom/google/android/material/appbar/a;
 
@@ -691,7 +691,7 @@
     invoke-virtual {p1, v1}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
     .line 14
-    iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->s:Landroid/animation/ValueAnimator;
+    iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->t:Landroid/animation/ValueAnimator;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->start()V
 
@@ -709,7 +709,7 @@
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->draw(Landroid/graphics/Canvas;)V
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->v:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -737,7 +737,7 @@
     const/4 v1, 0x0
 
     .line 4
-    iget v2, p0, Lcom/google/android/material/appbar/AppBarLayout;->a:I
+    iget v2, p0, Lcom/google/android/material/appbar/AppBarLayout;->g:I
 
     neg-int v2, v2
 
@@ -746,7 +746,7 @@
     invoke-virtual {p1, v1, v2}, Landroid/graphics/Canvas;->translate(FF)V
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/material/appbar/AppBarLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/google/android/material/appbar/AppBarLayout;->v:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
@@ -769,7 +769,7 @@
     move-result-object v0
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/material/appbar/AppBarLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/google/android/material/appbar/AppBarLayout;->v:Landroid/graphics/drawable/Drawable;
 
     if-eqz v1, :cond_0
 
@@ -797,7 +797,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->r:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->s:Ljava/lang/ref/WeakReference;
 
     const/4 v1, 0x0
 
@@ -805,7 +805,7 @@
 
     if-nez v0, :cond_2
 
-    iget v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->q:I
+    iget v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->r:I
 
     if-eq v0, v2, :cond_2
 
@@ -840,7 +840,7 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iget v3, p0, Lcom/google/android/material/appbar/AppBarLayout;->q:I
+    iget v3, p0, Lcom/google/android/material/appbar/AppBarLayout;->r:I
 
     invoke-virtual {v0, v3}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -854,11 +854,11 @@
 
     invoke-direct {v3, v0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v3, p0, Lcom/google/android/material/appbar/AppBarLayout;->r:Ljava/lang/ref/WeakReference;
+    iput-object v3, p0, Lcom/google/android/material/appbar/AppBarLayout;->s:Ljava/lang/ref/WeakReference;
 
     .line 6
     :cond_2
-    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->r:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->s:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_3
 
@@ -932,7 +932,7 @@
 
     if-eq v2, v3, :cond_0
 
-    sget-object v2, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v2, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 4
     invoke-virtual {v0}, Landroid/view/View;->getFitsSystemWindows()Z
@@ -951,7 +951,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->v:Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x1
 
@@ -1084,7 +1084,7 @@
     .locals 9
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->h:I
+    iget v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->i:I
 
     const/4 v1, -0x1
 
@@ -1145,7 +1145,7 @@
     if-eqz v4, :cond_1
 
     .line 8
-    sget-object v4, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v4, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 9
     invoke-virtual {v3}, Landroid/view/View;->getMinimumHeight()I
@@ -1162,7 +1162,7 @@
     if-eqz v4, :cond_2
 
     .line 10
-    sget-object v4, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v4, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 11
     invoke-virtual {v3}, Landroid/view/View;->getMinimumHeight()I
@@ -1182,7 +1182,7 @@
     if-nez v0, :cond_3
 
     .line 12
-    sget-object v4, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v4, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 13
     invoke-virtual {v3}, Landroid/view/View;->getFitsSystemWindows()Z
@@ -1225,7 +1225,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->h:I
+    iput v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->i:I
 
     return v0
 .end method
@@ -1234,7 +1234,7 @@
     .locals 9
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->i:I
+    iget v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->j:I
 
     const/4 v1, -0x1
 
@@ -1297,7 +1297,7 @@
     if-eqz v5, :cond_1
 
     .line 8
-    sget-object v0, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 9
     invoke-virtual {v4}, Landroid/view/View;->getMinimumHeight()I
@@ -1320,7 +1320,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->i:I
+    iput v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->j:I
 
     return v0
 .end method
@@ -1329,7 +1329,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->q:I
+    iget v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->r:I
 
     return v0
 .end method
@@ -1343,7 +1343,7 @@
     move-result v0
 
     .line 2
-    sget-object v1, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 3
     invoke-virtual {p0}, Landroid/view/View;->getMinimumHeight()I
@@ -1406,7 +1406,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->k:I
+    iget v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->l:I
 
     return v0
 .end method
@@ -1415,7 +1415,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->v:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method
@@ -1434,11 +1434,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->l:Lf0/a0;
+    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->m:Lf0/z;
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lf0/a0;->g()I
+    invoke-virtual {v0}, Lf0/z;->g()I
 
     move-result v0
 
@@ -1455,7 +1455,7 @@
     .locals 9
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->b:I
+    iget v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->h:I
 
     const/4 v1, -0x1
 
@@ -1516,7 +1516,7 @@
     if-nez v2, :cond_1
 
     .line 8
-    sget-object v3, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v3, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 9
     invoke-virtual {v4}, Landroid/view/View;->getFitsSystemWindows()Z
@@ -1540,7 +1540,7 @@
     if-eqz v5, :cond_2
 
     .line 11
-    sget-object v0, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 12
     invoke-virtual {v4}, Landroid/view/View;->getMinimumHeight()I
@@ -1563,7 +1563,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->b:I
+    iput v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->h:I
 
     return v0
 .end method
@@ -1598,7 +1598,7 @@
     .line 4
     check-cast v0, Lr4/g;
 
-    invoke-static {p0, v0}, Lcom/google/android/gms/ads/s;->w(Landroid/view/View;Lr4/g;)V
+    invoke-static {p0, v0}, Lj3/tj;->c(Landroid/view/View;Lr4/g;)V
 
     :cond_0
     return-void
@@ -1608,7 +1608,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->t:[I
+    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->u:[I
 
     if-nez v0, :cond_0
 
@@ -1617,11 +1617,11 @@
     new-array v0, v0, [I
 
     .line 2
-    iput-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->t:[I
+    iput-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->u:[I
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->t:[I
+    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->u:[I
 
     .line 4
     array-length v1, v0
@@ -1635,7 +1635,7 @@
     const/4 v1, 0x0
 
     .line 5
-    iget-boolean v2, p0, Lcom/google/android/material/appbar/AppBarLayout;->n:Z
+    iget-boolean v2, p0, Lcom/google/android/material/appbar/AppBarLayout;->o:Z
 
     sget v3, Lcom/google/android/material/R$attr;->state_liftable:I
 
@@ -1654,7 +1654,7 @@
     if-eqz v2, :cond_2
 
     .line 6
-    iget-boolean v3, p0, Lcom/google/android/material/appbar/AppBarLayout;->o:Z
+    iget-boolean v3, p0, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
 
     if-eqz v3, :cond_2
 
@@ -1690,7 +1690,7 @@
     if-eqz v2, :cond_4
 
     .line 8
-    iget-boolean v2, p0, Lcom/google/android/material/appbar/AppBarLayout;->o:Z
+    iget-boolean v2, p0, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
 
     if-eqz v2, :cond_4
 
@@ -1721,7 +1721,7 @@
     invoke-super {p0}, Landroid/widget/LinearLayout;->onDetachedFromWindow()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->r:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->s:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_0
 
@@ -1732,7 +1732,7 @@
     const/4 v0, 0x0
 
     .line 4
-    iput-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->r:Ljava/lang/ref/WeakReference;
+    iput-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->s:Ljava/lang/ref/WeakReference;
 
     return-void
 .end method
@@ -1744,7 +1744,7 @@
     invoke-super/range {p0 .. p5}, Landroid/widget/LinearLayout;->onLayout(ZIIII)V
 
     .line 2
-    sget-object p1, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object p1, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 3
     invoke-virtual {p0}, Landroid/view/View;->getFitsSystemWindows()Z
@@ -1782,7 +1782,7 @@
 
     move-result-object p4
 
-    invoke-static {p4, p1}, Lf0/s;->t(Landroid/view/View;I)V
+    invoke-static {p4, p1}, Lf0/r;->t(Landroid/view/View;I)V
 
     add-int/lit8 p3, p3, -0x1
 
@@ -1792,18 +1792,18 @@
     const/4 p1, -0x1
 
     .line 8
-    iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->b:I
-
-    .line 9
     iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->h:I
 
-    .line 10
+    .line 9
     iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->i:I
+
+    .line 10
+    iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->j:I
 
     const/4 p1, 0x0
 
     .line 11
-    iput-boolean p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->j:Z
+    iput-boolean p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->k:Z
 
     .line 12
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getChildCount()I
@@ -1833,7 +1833,7 @@
     if-eqz p5, :cond_1
 
     .line 16
-    iput-boolean p2, p0, Lcom/google/android/material/appbar/AppBarLayout;->j:Z
+    iput-boolean p2, p0, Lcom/google/android/material/appbar/AppBarLayout;->k:Z
 
     goto :goto_2
 
@@ -1845,7 +1845,7 @@
     .line 17
     :cond_2
     :goto_2
-    iget-object p3, p0, Lcom/google/android/material/appbar/AppBarLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object p3, p0, Lcom/google/android/material/appbar/AppBarLayout;->v:Landroid/graphics/drawable/Drawable;
 
     if-eqz p3, :cond_3
 
@@ -1862,7 +1862,7 @@
 
     .line 19
     :cond_3
-    iget-boolean p3, p0, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
+    iget-boolean p3, p0, Lcom/google/android/material/appbar/AppBarLayout;->q:Z
 
     if-nez p3, :cond_8
 
@@ -1931,12 +1931,12 @@
     .line 23
     :cond_8
     :goto_6
-    iget-boolean p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->n:Z
+    iget-boolean p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->o:Z
 
     if-eq p1, p2, :cond_9
 
     .line 24
-    iput-boolean p2, p0, Lcom/google/android/material/appbar/AppBarLayout;->n:Z
+    iput-boolean p2, p0, Lcom/google/android/material/appbar/AppBarLayout;->o:Z
 
     .line 25
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->refreshDrawableState()V
@@ -1961,7 +1961,7 @@
     if-eq p1, v0, :cond_2
 
     .line 3
-    sget-object v0, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 4
     invoke-virtual {p0}, Landroid/view/View;->getFitsSystemWindows()Z
@@ -2019,7 +2019,7 @@
     move-result p2
 
     .line 9
-    invoke-static {v0, p1, p2}, La0/a;->c(III)I
+    invoke-static {v0, p1, p2}, La0/a;->b(III)I
 
     move-result v0
 
@@ -2035,13 +2035,13 @@
     const/4 p1, -0x1
 
     .line 11
-    iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->b:I
-
-    .line 12
     iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->h:I
 
-    .line 13
+    .line 12
     iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->i:I
+
+    .line 13
+    iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->j:I
 
     return-void
 .end method
@@ -2053,7 +2053,7 @@
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->setElevation(F)V
 
     .line 2
-    invoke-static {p0, p1}, Lcom/google/android/gms/ads/s;->v(Landroid/view/View;F)V
+    invoke-static {p0, p1}, Lj3/tj;->b(Landroid/view/View;F)V
 
     return-void
 .end method
@@ -2062,7 +2062,7 @@
     .locals 2
 
     .line 1
-    invoke-static {p0}, Lf0/s;->p(Landroid/view/View;)Z
+    invoke-static {p0}, Lf0/r;->p(Landroid/view/View;)Z
 
     move-result v0
 
@@ -2078,7 +2078,7 @@
     .locals 0
 
     .line 1
-    iput-boolean p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
+    iput-boolean p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->q:Z
 
     return-void
 .end method
@@ -2087,10 +2087,10 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->q:I
+    iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->r:I
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->r:Ljava/lang/ref/WeakReference;
+    iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->s:Ljava/lang/ref/WeakReference;
 
     if-eqz p1, :cond_0
 
@@ -2101,7 +2101,7 @@
     const/4 p1, 0x0
 
     .line 4
-    iput-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->r:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->s:Ljava/lang/ref/WeakReference;
 
     return-void
 .end method
@@ -2133,7 +2133,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->v:Landroid/graphics/drawable/Drawable;
 
     if-eq v0, p1, :cond_5
 
@@ -2153,7 +2153,7 @@
     move-result-object v1
 
     :cond_1
-    iput-object v1, p0, Lcom/google/android/material/appbar/AppBarLayout;->u:Landroid/graphics/drawable/Drawable;
+    iput-object v1, p0, Lcom/google/android/material/appbar/AppBarLayout;->v:Landroid/graphics/drawable/Drawable;
 
     if-eqz v1, :cond_4
 
@@ -2165,7 +2165,7 @@
     if-eqz p1, :cond_2
 
     .line 5
-    iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->v:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getDrawableState()[I
 
@@ -2175,9 +2175,9 @@
 
     .line 6
     :cond_2
-    iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->v:Landroid/graphics/drawable/Drawable;
 
-    sget-object v0, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 7
     invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
@@ -2188,7 +2188,7 @@
     invoke-static {p1, v0}, Ly/a;->g(Landroid/graphics/drawable/Drawable;I)Z
 
     .line 9
-    iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->v:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getVisibility()I
 
@@ -2209,7 +2209,7 @@
     invoke-virtual {p1, v0, v1}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
     .line 10
-    iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout;->v:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p1, p0}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
 
@@ -2218,7 +2218,7 @@
     invoke-virtual {p0}, Lcom/google/android/material/appbar/AppBarLayout;->g()V
 
     .line 12
-    sget-object p1, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object p1, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 13
     invoke-virtual {p0}, Landroid/view/View;->postInvalidateOnAnimation()V
@@ -2295,7 +2295,7 @@
 
     .line 2
     :goto_0
-    iget-object v1, p0, Lcom/google/android/material/appbar/AppBarLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/google/android/material/appbar/AppBarLayout;->v:Landroid/graphics/drawable/Drawable;
 
     if-eqz v1, :cond_1
 
@@ -2316,7 +2316,7 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->v:Landroid/graphics/drawable/Drawable;
 
     if-ne p1, v0, :cond_0
 

@@ -3,23 +3,31 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lcom/google/android/gms/common/internal/BaseGmsClient$a;
+.implements Lj3/ql0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj3/ql0<",
+        "Lcom/google/android/gms/internal/ads/zzahx;",
+        "Landroid/os/ParcelFileDescriptor;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:Lj3/md;
-
-.field public final synthetic b:Lj3/m3;
+.field public final synthetic a:Lcom/google/android/gms/internal/ads/zzahr;
 
 
 # direct methods
-.method public constructor <init>(Lj3/m3;Lj3/md;)V
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzahr;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lj3/q3;->b:Lj3/m3;
-
-    iput-object p2, p0, Lj3/q3;->a:Lj3/md;
+    iput-object p1, p0, Lj3/q3;->a:Lcom/google/android/gms/internal/ads/zzahr;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,62 +36,30 @@
 
 
 # virtual methods
-.method public final E0(I)V
-    .locals 4
+.method public final synthetic a(Ljava/lang/Object;)Lj3/im0;
+    .locals 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
 
     .line 1
-    iget-object v0, p0, Lj3/q3;->a:Lj3/md;
-
-    new-instance v1, Ljava/lang/RuntimeException;
-
-    const/16 v2, 0x22
-
-    const-string v3, "onConnectionSuspended: "
-
-    invoke-static {v2, v3, p1}, Lb0/c;->b(ILjava/lang/String;I)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v1, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0, v1}, Lj3/md;->c(Ljava/lang/Throwable;)Z
-
-    return-void
-.end method
-
-.method public final X0(Landroid/os/Bundle;)V
-    .locals 1
-
-    .line 1
-    :try_start_0
-    iget-object p1, p0, Lj3/q3;->a:Lj3/md;
-
-    iget-object v0, p0, Lj3/q3;->b:Lj3/m3;
+    check-cast p1, Lcom/google/android/gms/internal/ads/zzahx;
 
     .line 2
-    iget-object v0, v0, Lj3/m3;->a:Lj3/j3;
+    new-instance v0, Lj3/qd;
+
+    invoke-direct {v0}, Lj3/qd;-><init>()V
 
     .line 3
-    invoke-virtual {v0}, Lcom/google/android/gms/common/internal/BaseGmsClient;->v()Landroid/os/IInterface;
+    iget-object v1, p0, Lj3/q3;->a:Lcom/google/android/gms/internal/ads/zzahr;
 
-    move-result-object v0
+    new-instance v2, Lj3/p3;
 
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzahx;
+    invoke-direct {v2, v0}, Lj3/p3;-><init>(Lj3/qd;)V
 
-    .line 4
-    invoke-virtual {p1, v0}, Lj3/md;->b(Ljava/lang/Object;)Z
-    :try_end_0
-    .catch Landroid/os/DeadObjectException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-interface {p1, v1, v2}, Lcom/google/android/gms/internal/ads/zzahx;->y6(Lcom/google/android/gms/internal/ads/zzahr;Lcom/google/android/gms/internal/ads/zzahv;)V
 
-    return-void
-
-    :catch_0
-    move-exception p1
-
-    .line 5
-    iget-object v0, p0, Lj3/q3;->a:Lj3/md;
-
-    invoke-virtual {v0, p1}, Lj3/md;->c(Ljava/lang/Throwable;)Z
-
-    return-void
+    return-object v0
 .end method

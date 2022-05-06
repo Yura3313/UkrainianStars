@@ -79,7 +79,7 @@
 
     iget-object v10, v10, Lcom/google/android/play/core/assetpacks/y0;->a:Ljava/lang/String;
 
-    invoke-static {v7, v10}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v7, v10}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -133,15 +133,15 @@
 
     if-ne v2, v5, :cond_1
 
-    iget-object v1, v1, Lcom/google/android/play/core/assetpacks/c1;->b:Ly4/j0;
+    iget-object v1, v1, Lcom/google/android/play/core/assetpacks/c1;->b:Ly4/l0;
 
-    invoke-interface {v1}, Ly4/j0;->a()Ljava/lang/Object;
+    invoke-interface {v1}, Ly4/l0;->a()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lcom/google/android/play/core/assetpacks/s2;
+    check-cast v1, Lcom/google/android/play/core/assetpacks/t2;
 
-    invoke-interface {v1, v3, v4}, Lcom/google/android/play/core/assetpacks/s2;->b(ILjava/lang/String;)V
+    invoke-interface {v1, v3, v4}, Lcom/google/android/play/core/assetpacks/t2;->b(ILjava/lang/String;)V
 
     goto/16 :goto_6
 
@@ -150,15 +150,15 @@
 
     if-ne v2, v5, :cond_2
 
-    iget-object v1, v1, Lcom/google/android/play/core/assetpacks/c1;->b:Ly4/j0;
+    iget-object v1, v1, Lcom/google/android/play/core/assetpacks/c1;->b:Ly4/l0;
 
-    invoke-interface {v1}, Ly4/j0;->a()Ljava/lang/Object;
+    invoke-interface {v1}, Ly4/l0;->a()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lcom/google/android/play/core/assetpacks/s2;
+    check-cast v1, Lcom/google/android/play/core/assetpacks/t2;
 
-    invoke-interface {v1, v3}, Lcom/google/android/play/core/assetpacks/s2;->w0(I)V
+    invoke-interface {v1, v3}, Lcom/google/android/play/core/assetpacks/t2;->x0(I)V
 
     goto/16 :goto_6
 
@@ -167,13 +167,13 @@
 
     if-ne v2, v3, :cond_f
 
-    iget-object v1, v1, Lcom/google/android/play/core/assetpacks/c1;->b:Ly4/j0;
+    iget-object v1, v1, Lcom/google/android/play/core/assetpacks/c1;->b:Ly4/l0;
 
-    invoke-interface {v1}, Ly4/j0;->a()Ljava/lang/Object;
+    invoke-interface {v1}, Ly4/l0;->a()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lcom/google/android/play/core/assetpacks/s2;
+    check-cast v1, Lcom/google/android/play/core/assetpacks/t2;
 
     new-array v2, v8, [Ljava/lang/String;
 
@@ -183,7 +183,7 @@
 
     move-result-object v2
 
-    invoke-interface {v1, v2}, Lcom/google/android/play/core/assetpacks/s2;->u(Ljava/util/List;)V
+    invoke-interface {v1, v2}, Lcom/google/android/play/core/assetpacks/t2;->v(Ljava/util/List;)V
 
     goto/16 :goto_6
 
@@ -242,7 +242,7 @@
 
     iget-object v11, v7, Lcom/google/android/play/core/assetpacks/a1;->a:Ljava/lang/String;
 
-    invoke-static {v6, v10, v11}, Ly4/p0;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v6, v10, v11}, Ly4/r0;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v10
 
@@ -310,7 +310,7 @@
 
     const-string v4, "pack_version"
 
-    invoke-static {v4, v11}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v11}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -318,7 +318,7 @@
 
     move-result-wide v12
 
-    invoke-static {v7, v11}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v7, v11}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -328,7 +328,7 @@
 
     const-string v4, "total_bytes_to_download"
 
-    invoke-static {v4, v11}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v11}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -338,7 +338,7 @@
 
     const-string v4, "slice_ids"
 
-    invoke-static {v4, v11}, Ly4/p0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v11}, Ly4/r0;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -376,7 +376,7 @@
 
     check-cast v7, Ljava/lang/String;
 
-    invoke-static {v6, v11, v7}, Ly4/p0;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v6, v11, v7}, Ly4/r0;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v10
 
@@ -434,7 +434,7 @@
     :cond_c
     const-string v0, "uncompressed_hash_sha256"
 
-    invoke-static {v0, v11, v7}, Ly4/p0;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v11, v7}, Ly4/r0;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -444,7 +444,7 @@
 
     const-string v0, "uncompressed_size"
 
-    invoke-static {v0, v11, v7}, Ly4/p0;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v11, v7}, Ly4/r0;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -454,7 +454,7 @@
 
     const-string v0, "patch_format"
 
-    invoke-static {v0, v11, v7}, Ly4/p0;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v11, v7}, Ly4/r0;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -468,7 +468,7 @@
 
     const-string v0, "compression_format"
 
-    invoke-static {v0, v11, v7}, Ly4/p0;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v11, v7}, Ly4/r0;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

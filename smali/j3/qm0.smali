@@ -1,54 +1,104 @@
-.class public interface abstract Lj3/qm0;
-.super Ljava/lang/Object;
+.class public final Lj3/qm0;
+.super Lj3/cm0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Ljava/util/concurrent/ScheduledFuture;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<P:",
+        "<V:",
         "Ljava/lang/Object;",
         ">",
-        "Ljava/lang/Object;"
+        "Lj3/cm0<",
+        "TV;>;",
+        "Ljava/util/concurrent/ScheduledFuture<",
+        "TV;>;"
     }
 .end annotation
 
-.annotation runtime Ljava/lang/Deprecated;
-.end annotation
+
+# instance fields
+.field public final h:Ljava/util/concurrent/ScheduledFuture;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/ScheduledFuture<",
+            "*>;"
+        }
+    .end annotation
+.end field
 
 
-# virtual methods
-.method public abstract a(Ljava/lang/String;Ljava/lang/String;I)Lj3/vm0;
+# direct methods
+.method public constructor <init>(Lj3/im0;Ljava/util/concurrent/ScheduledFuture;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "I)",
-            "Lj3/vm0<",
-            "TP;>;"
+            "Lj3/im0<",
+            "TV;>;",
+            "Ljava/util/concurrent/ScheduledFuture<",
+            "*>;)V"
         }
     .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
+    .line 1
+    invoke-direct {p0, p1}, Lj3/cm0;-><init>(Lj3/im0;)V
+
+    .line 2
+    iput-object p2, p0, Lj3/qm0;->h:Ljava/util/concurrent/ScheduledFuture;
+
+    return-void
 .end method
 
-.method public abstract b()Lj3/cn0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lj3/cn0<",
-            "TP;>;"
-        }
-    .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
+# virtual methods
+.method public final cancel(Z)Z
+    .locals 2
+
+    .line 1
+    invoke-super {p0, p1}, Lj3/am0;->cancel(Z)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-object v1, p0, Lj3/qm0;->h:Ljava/util/concurrent/ScheduledFuture;
+
+    invoke-interface {v1, p1}, Ljava/util/concurrent/ScheduledFuture;->cancel(Z)Z
+
+    :cond_0
+    return v0
+.end method
+
+.method public final synthetic compareTo(Ljava/lang/Object;)I
+    .locals 1
+
+    .line 1
+    check-cast p1, Ljava/util/concurrent/Delayed;
+
+    .line 2
+    iget-object v0, p0, Lj3/qm0;->h:Ljava/util/concurrent/ScheduledFuture;
+
+    invoke-interface {v0, p1}, Ljava/util/concurrent/ScheduledFuture;->compareTo(Ljava/lang/Object;)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final getDelay(Ljava/util/concurrent/TimeUnit;)J
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lj3/qm0;->h:Ljava/util/concurrent/ScheduledFuture;
+
+    invoke-interface {v0, p1}, Ljava/util/concurrent/ScheduledFuture;->getDelay(Ljava/util/concurrent/TimeUnit;)J
+
+    move-result-wide v0
+
+    return-wide v0
 .end method

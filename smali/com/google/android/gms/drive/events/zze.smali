@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public final a:I
+.field public final g:I
 
-.field public final b:Z
+.field public final h:Z
 
-.field public final h:Ljava/util/List;
+.field public final i:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -59,13 +59,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/drive/events/zze;->a:I
+    iput p1, p0, Lcom/google/android/gms/drive/events/zze;->g:I
 
     .line 3
-    iput-boolean p2, p0, Lcom/google/android/gms/drive/events/zze;->b:Z
+    iput-boolean p2, p0, Lcom/google/android/gms/drive/events/zze;->h:Z
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/drive/events/zze;->h:Ljava/util/List;
+    iput-object p3, p0, Lcom/google/android/gms/drive/events/zze;->i:Ljava/util/List;
 
     return-void
 .end method
@@ -102,9 +102,9 @@
     check-cast p1, Lcom/google/android/gms/drive/events/zze;
 
     .line 3
-    iget-object v2, p0, Lcom/google/android/gms/drive/events/zze;->h:Ljava/util/List;
+    iget-object v2, p0, Lcom/google/android/gms/drive/events/zze;->i:Ljava/util/List;
 
-    iget-object v3, p1, Lcom/google/android/gms/drive/events/zze;->h:Ljava/util/List;
+    iget-object v3, p1, Lcom/google/android/gms/drive/events/zze;->i:Ljava/util/List;
 
     invoke-static {v2, v3}, Lc2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -112,15 +112,15 @@
 
     if-eqz v2, :cond_2
 
-    iget v2, p0, Lcom/google/android/gms/drive/events/zze;->a:I
+    iget v2, p0, Lcom/google/android/gms/drive/events/zze;->g:I
 
-    iget v3, p1, Lcom/google/android/gms/drive/events/zze;->a:I
+    iget v3, p1, Lcom/google/android/gms/drive/events/zze;->g:I
 
     if-ne v2, v3, :cond_2
 
-    iget-boolean v2, p0, Lcom/google/android/gms/drive/events/zze;->b:Z
+    iget-boolean v2, p0, Lcom/google/android/gms/drive/events/zze;->h:Z
 
-    iget-boolean p1, p1, Lcom/google/android/gms/drive/events/zze;->b:Z
+    iget-boolean p1, p1, Lcom/google/android/gms/drive/events/zze;->h:Z
 
     if-ne v2, p1, :cond_2
 
@@ -139,13 +139,13 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/drive/events/zze;->h:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/drive/events/zze;->i:Ljava/util/List;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
-    iget v1, p0, Lcom/google/android/gms/drive/events/zze;->a:I
+    iget v1, p0, Lcom/google/android/gms/drive/events/zze;->g:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -155,7 +155,7 @@
 
     aput-object v1, v0, v2
 
-    iget-boolean v1, p0, Lcom/google/android/gms/drive/events/zze;->b:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/drive/events/zze;->h:Z
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -186,7 +186,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/drive/events/zze;->a:I
+    iget v1, p0, Lcom/google/android/gms/drive/events/zze;->g:I
 
     const/4 v2, 0x4
 
@@ -199,7 +199,7 @@
     const/4 v0, 0x3
 
     .line 5
-    iget-boolean v1, p0, Lcom/google/android/gms/drive/events/zze;->b:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/drive/events/zze;->h:Z
 
     .line 6
     invoke-static {p1, v0, v2}, Ld2/b;->s(Landroid/os/Parcel;II)V
@@ -208,7 +208,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 8
-    iget-object v0, p0, Lcom/google/android/gms/drive/events/zze;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/drive/events/zze;->i:Ljava/util/List;
 
     const/4 v1, 0x0
 

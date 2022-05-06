@@ -3,252 +3,140 @@
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 # interfaces
-.implements Ljava/util/Iterator;
+.implements Lj3/bt0;
 
 
 # instance fields
-.field public a:I
+.field public final a:Lj3/dt0;
 
-.field public b:Z
+.field public final b:Ljava/lang/String;
 
-.field public h:Ljava/util/Iterator;
+.field public final c:[Ljava/lang/Object;
 
-.field public final synthetic i:Lj3/kt0;
+.field public final d:I
 
 
 # direct methods
-.method public constructor <init>(Lj3/kt0;Lj3/it0;)V
-    .locals 0
+.method public constructor <init>(Lj3/dt0;Ljava/lang/String;[Ljava/lang/Object;)V
+    .locals 3
 
     .line 1
-    iput-object p1, p0, Lj3/pt0;->i:Lj3/kt0;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 p1, -0x1
-
     .line 2
-    iput p1, p0, Lj3/pt0;->a:I
+    iput-object p1, p0, Lj3/pt0;->a:Lj3/dt0;
+
+    .line 3
+    iput-object p2, p0, Lj3/pt0;->b:Ljava/lang/String;
+
+    .line 4
+    iput-object p3, p0, Lj3/pt0;->c:[Ljava/lang/Object;
+
+    const/4 p1, 0x0
+
+    .line 5
+    invoke-virtual {p2, p1}, Ljava/lang/String;->charAt(I)C
+
+    move-result p1
+
+    const p3, 0xd800
+
+    if-ge p1, p3, :cond_0
+
+    .line 6
+    iput p1, p0, Lj3/pt0;->d:I
+
+    return-void
+
+    :cond_0
+    and-int/lit16 p1, p1, 0x1fff
+
+    const/16 v0, 0xd
+
+    const/4 v1, 0x1
+
+    :goto_0
+    add-int/lit8 v2, v1, 0x1
+
+    .line 7
+    invoke-virtual {p2, v1}, Ljava/lang/String;->charAt(I)C
+
+    move-result v1
+
+    if-lt v1, p3, :cond_1
+
+    and-int/lit16 v1, v1, 0x1fff
+
+    shl-int/2addr v1, v0
+
+    or-int/2addr p1, v1
+
+    add-int/lit8 v0, v0, 0xd
+
+    move v1, v2
+
+    goto :goto_0
+
+    :cond_1
+    shl-int p2, v1, v0
+
+    or-int/2addr p1, p2
+
+    .line 8
+    iput p1, p0, Lj3/pt0;->d:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()Ljava/util/Iterator;
-    .locals 1
+.method public final a()I
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lj3/pt0;->h:Ljava/util/Iterator;
-
-    if-nez v0, :cond_0
-
-    .line 2
-    iget-object v0, p0, Lj3/pt0;->i:Lj3/kt0;
-
-    .line 3
-    iget-object v0, v0, Lj3/kt0;->h:Ljava/util/Map;
-
-    .line 4
-    invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lj3/pt0;->h:Ljava/util/Iterator;
-
-    .line 5
-    :cond_0
-    iget-object v0, p0, Lj3/pt0;->h:Ljava/util/Iterator;
-
-    return-object v0
-.end method
-
-.method public final hasNext()Z
-    .locals 3
-
-    .line 1
-    iget v0, p0, Lj3/pt0;->a:I
+    iget v0, p0, Lj3/pt0;->d:I
 
     const/4 v1, 0x1
 
-    add-int/2addr v0, v1
+    and-int/2addr v0, v1
 
-    iget-object v2, p0, Lj3/pt0;->i:Lj3/kt0;
+    if-ne v0, v1, :cond_0
 
-    .line 2
-    iget-object v2, v2, Lj3/kt0;->b:Ljava/util/List;
+    return v1
 
-    .line 3
-    invoke-interface {v2}, Ljava/util/List;->size()I
+    :cond_0
+    const/4 v0, 0x2
 
-    move-result v2
+    return v0
+.end method
 
-    if-lt v0, v2, :cond_1
+.method public final b()Z
+    .locals 2
 
-    iget-object v0, p0, Lj3/pt0;->i:Lj3/kt0;
+    .line 1
+    iget v0, p0, Lj3/pt0;->d:I
 
-    .line 4
-    iget-object v0, v0, Lj3/kt0;->h:Ljava/util/Map;
+    const/4 v1, 0x2
 
-    .line 5
-    invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
+    and-int/2addr v0, v1
 
-    move-result v0
+    if-ne v0, v1, :cond_0
 
-    if-nez v0, :cond_0
+    const/4 v0, 0x1
 
-    invoke-virtual {p0}, Lj3/pt0;->b()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
+    return v0
 
     :cond_0
     const/4 v0, 0x0
 
     return v0
-
-    :cond_1
-    :goto_0
-    return v1
 .end method
 
-.method public final synthetic next()Ljava/lang/Object;
-    .locals 2
-
-    const/4 v0, 0x1
+.method public final c()Lj3/dt0;
+    .locals 1
 
     .line 1
-    iput-boolean v0, p0, Lj3/pt0;->b:Z
-
-    .line 2
-    iget v1, p0, Lj3/pt0;->a:I
-
-    add-int/2addr v1, v0
-
-    iput v1, p0, Lj3/pt0;->a:I
-
-    iget-object v0, p0, Lj3/pt0;->i:Lj3/kt0;
-
-    .line 3
-    iget-object v0, v0, Lj3/kt0;->b:Ljava/util/List;
-
-    .line 4
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    if-ge v1, v0, :cond_0
-
-    .line 5
-    iget-object v0, p0, Lj3/pt0;->i:Lj3/kt0;
-
-    .line 6
-    iget-object v0, v0, Lj3/kt0;->b:Ljava/util/List;
-
-    .line 7
-    iget v1, p0, Lj3/pt0;->a:I
-
-    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/Map$Entry;
+    iget-object v0, p0, Lj3/pt0;->a:Lj3/dt0;
 
     return-object v0
-
-    .line 8
-    :cond_0
-    invoke-virtual {p0}, Lj3/pt0;->b()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/Map$Entry;
-
-    return-object v0
-.end method
-
-.method public final remove()V
-    .locals 3
-
-    .line 1
-    iget-boolean v0, p0, Lj3/pt0;->b:Z
-
-    if-eqz v0, :cond_1
-
-    const/4 v0, 0x0
-
-    .line 2
-    iput-boolean v0, p0, Lj3/pt0;->b:Z
-
-    .line 3
-    iget-object v0, p0, Lj3/pt0;->i:Lj3/kt0;
-
-    sget v1, Lj3/kt0;->l:I
-
-    .line 4
-    invoke-virtual {v0}, Lj3/kt0;->f()V
-
-    .line 5
-    iget v0, p0, Lj3/pt0;->a:I
-
-    iget-object v1, p0, Lj3/pt0;->i:Lj3/kt0;
-
-    .line 6
-    iget-object v1, v1, Lj3/kt0;->b:Ljava/util/List;
-
-    .line 7
-    invoke-interface {v1}, Ljava/util/List;->size()I
-
-    move-result v1
-
-    if-ge v0, v1, :cond_0
-
-    .line 8
-    iget-object v0, p0, Lj3/pt0;->i:Lj3/kt0;
-
-    iget v1, p0, Lj3/pt0;->a:I
-
-    add-int/lit8 v2, v1, -0x1
-
-    iput v2, p0, Lj3/pt0;->a:I
-
-    .line 9
-    invoke-virtual {v0, v1}, Lj3/kt0;->i(I)Ljava/lang/Object;
-
-    return-void
-
-    .line 10
-    :cond_0
-    invoke-virtual {p0}, Lj3/pt0;->b()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->remove()V
-
-    return-void
-
-    .line 11
-    :cond_1
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    const-string v1, "remove() was called before next()"
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
 .end method

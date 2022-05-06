@@ -1,46 +1,50 @@
-.class public final synthetic Lj3/yt;
+.class public final Lj3/yt;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lj3/vs;
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
 
 
-# static fields
-.field public static final a:Lj3/vs;
+# instance fields
+.field public a:Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TT;"
+        }
+    .end annotation
+.end field
+
+.field public b:Ljava/util/concurrent/Executor;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lj3/yt;
-
-    invoke-direct {v0}, Lj3/yt;-><init>()V
-
-    sput-object v0, Lj3/yt;->a:Lj3/vs;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
     .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final e(Ljava/lang/Object;)V
-    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Ljava/util/concurrent/Executor;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    check-cast p1, Lj3/h3;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-interface {p1}, Lj3/h3;->D()V
+    iput-object p1, p0, Lj3/yt;->a:Ljava/lang/Object;
+
+    .line 3
+    iput-object p2, p0, Lj3/yt;->b:Ljava/util/concurrent/Executor;
 
     return-void
 .end method

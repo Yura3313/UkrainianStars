@@ -20,7 +20,7 @@
 
 
 # instance fields
-.field public final b:Ljava/util/List;
+.field public final h:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -46,7 +46,7 @@
     const/4 v1, 0x0
 
     .line 3
-    iput-boolean v1, v0, Lcom/google/crypto/tink/shaded/protobuf/c;->a:Z
+    iput-boolean v1, v0, Lcom/google/crypto/tink/shaded/protobuf/c;->g:Z
 
     return-void
 .end method
@@ -63,7 +63,7 @@
     invoke-direct {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;-><init>()V
 
     .line 3
-    iput-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->b:Ljava/util/List;
+    iput-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->h:Ljava/util/List;
 
     return-void
 .end method
@@ -83,12 +83,12 @@
     invoke-direct {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;-><init>()V
 
     .line 5
-    iput-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->b:Ljava/util/List;
+    iput-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->h:Ljava/util/List;
 
     return-void
 .end method
 
-.method public static b(Ljava/lang/Object;)Ljava/lang/String;
+.method public static c(Ljava/lang/Object;)Ljava/lang/String;
     .locals 2
 
     .line 1
@@ -127,7 +127,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-virtual {p0, v0}, Lm5/c;->o(Ljava/nio/charset/Charset;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lm5/c;->n(Ljava/nio/charset/Charset;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -150,6 +150,19 @@
 
 
 # virtual methods
+.method public B(I)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->h:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
 .method public add(ILjava/lang/Object;)V
     .locals 1
 
@@ -160,7 +173,7 @@
     invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
 
     .line 3
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->h:Ljava/util/List;
 
     invoke-interface {v0, p1, p2}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
@@ -196,13 +209,13 @@
 
     check-cast p2, Lm5/i;
 
-    invoke-interface {p2}, Lm5/i;->r()Ljava/util/List;
+    invoke-interface {p2}, Lm5/i;->t()Ljava/util/List;
 
     move-result-object p2
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->h:Ljava/util/List;
 
     invoke-interface {v0, p1, p2}, Ljava/util/List;->addAll(ILjava/util/Collection;)Z
 
@@ -249,7 +262,7 @@
     invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->h:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
@@ -267,7 +280,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->h:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -310,20 +323,20 @@
     goto :goto_0
 
     :cond_1
-    invoke-virtual {v0, v1}, Lm5/c;->o(Ljava/nio/charset/Charset;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lm5/c;->n(Ljava/nio/charset/Charset;)Ljava/lang/String;
 
     move-result-object v1
 
     .line 9
     :goto_0
-    invoke-virtual {v0}, Lm5/c;->g()Z
+    invoke-virtual {v0}, Lm5/c;->h()Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
     .line 10
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->h:Ljava/util/List;
 
     invoke-interface {v0, p1, v1}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
@@ -360,7 +373,7 @@
     if-eqz v4, :cond_4
 
     .line 15
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->h:Ljava/util/List;
 
     invoke-interface {v0, p1, v1}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
@@ -372,7 +385,7 @@
     return-object v0
 .end method
 
-.method public m(I)Lcom/google/crypto/tink/shaded/protobuf/q$d;
+.method public o(I)Lcom/google/crypto/tink/shaded/protobuf/q$c;
     .locals 1
 
     .line 1
@@ -388,7 +401,7 @@
     invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 3
-    iget-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->b:Ljava/util/List;
+    iget-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->h:Ljava/util/List;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
@@ -408,47 +421,6 @@
     throw p1
 .end method
 
-.method public q0(Lm5/c;)V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
-
-    .line 2
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->b:Ljava/util/List;
-
-    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 3
-    iget p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    add-int/lit8 p1, p1, 0x1
-
-    iput p1, p0, Ljava/util/AbstractList;->modCount:I
-
-    return-void
-.end method
-
-.method public r()Ljava/util/List;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "*>;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->b:Ljava/util/List;
-
-    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
 .method public remove(I)Ljava/lang/Object;
     .locals 1
 
@@ -456,7 +428,7 @@
     invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->h:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
@@ -470,7 +442,7 @@
     iput v0, p0, Ljava/util/AbstractList;->modCount:I
 
     .line 4
-    invoke-static {p1}, Lcom/google/crypto/tink/shaded/protobuf/t;->b(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/google/crypto/tink/shaded/protobuf/t;->c(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -487,14 +459,14 @@
     invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
 
     .line 3
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->h:Ljava/util/List;
 
     invoke-interface {v0, p1, p2}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     .line 4
-    invoke-static {p1}, Lcom/google/crypto/tink/shaded/protobuf/t;->b(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/google/crypto/tink/shaded/protobuf/t;->c(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -505,7 +477,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->h:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -514,34 +486,62 @@
     return v0
 .end method
 
-.method public w()Lm5/i;
+.method public t()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "*>;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->h:Ljava/util/List;
+
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public t0(Lm5/c;)V
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->a:Z
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->a()V
+
+    .line 2
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->h:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 3
+    iget p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    add-int/lit8 p1, p1, 0x1
+
+    iput p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    return-void
+.end method
+
+.method public y()Lm5/i;
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->g:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    new-instance v0, Lm5/a0;
+    new-instance v0, Lm5/z;
 
-    invoke-direct {v0, p0}, Lm5/a0;-><init>(Lm5/i;)V
+    invoke-direct {v0, p0}, Lm5/z;-><init>(Lm5/i;)V
 
     return-object v0
 
     :cond_0
     return-object p0
-.end method
-
-.method public z(I)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/t;->b:Ljava/util/List;
-
-    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
 .end method

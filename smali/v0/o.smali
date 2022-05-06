@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public b:I
+.field public h:I
 
 
 # direct methods
@@ -17,7 +17,7 @@
     const/16 v0, 0x50
 
     .line 2
-    iput v0, p0, Lv0/o;->b:I
+    iput v0, p0, Lv0/o;->h:I
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     .line 1
     :cond_0
-    invoke-virtual/range {p2 .. p2}, Landroidx/transition/Transition;->n()Landroid/graphics/Rect;
+    invoke-virtual/range {p2 .. p2}, Landroidx/transition/Transition;->o()Landroid/graphics/Rect;
 
     move-result-object v4
 
@@ -164,7 +164,7 @@
 
     .line 14
     :goto_2
-    iget v15, v0, Lv0/o;->b:I
+    iget v15, v0, Lv0/o;->h:I
 
     const v7, 0x800005
 
@@ -175,7 +175,7 @@
     if-ne v15, v2, :cond_5
 
     .line 15
-    sget-object v15, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v15, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 16
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getLayoutDirection()I
@@ -198,7 +198,7 @@
     if-ne v15, v7, :cond_9
 
     .line 17
-    sget-object v15, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v15, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 18
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getLayoutDirection()I
@@ -302,7 +302,7 @@
     int-to-float v1, v1
 
     .line 23
-    iget v4, v0, Lv0/o;->b:I
+    iget v4, v0, Lv0/o;->h:I
 
     if-eq v4, v3, :cond_e
 
@@ -335,7 +335,7 @@
     move-object/from16 v2, p2
 
     .line 26
-    iget-wide v2, v2, Landroidx/transition/Transition;->h:J
+    iget-wide v2, v2, Landroidx/transition/Transition;->i:J
 
     const-wide/16 v4, 0x0
 

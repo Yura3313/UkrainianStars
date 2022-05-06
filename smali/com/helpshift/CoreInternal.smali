@@ -21,7 +21,7 @@
     .locals 2
 
     .line 1
-    invoke-static {}, Lcom/helpshift/util/r;->b()Z
+    invoke-static {}, Lcom/helpshift/util/q;->c()Z
 
     move-result v0
 
@@ -31,17 +31,17 @@
 
     .line 2
     :cond_0
-    sget-object v0, Llb/b;->a:Llb/a;
+    sget-object v0, Ljb/b;->a:Ljb/a;
 
     .line 3
     new-instance v1, Lcom/helpshift/CoreInternal$c;
 
     invoke-direct {v1, p0, p1}, Lcom/helpshift/CoreInternal$c;-><init>(Landroid/content/Context;Landroid/content/Intent;)V
 
-    check-cast v0, Llb/c;
+    check-cast v0, Ljb/c;
 
     .line 4
-    iget-object p0, v0, Llb/c;->c:Landroid/os/Handler;
+    iget-object p0, v0, Ljb/c;->c:Landroid/os/Handler;
 
     invoke-virtual {p0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -108,20 +108,20 @@
 
     .line 6
     :cond_1
-    invoke-static {}, Lcom/helpshift/util/r;->a()Lc8/o;
+    invoke-static {}, Lcom/helpshift/util/q;->b()Ld8/r;
 
     move-result-object p1
 
-    invoke-interface {p1}, Lc8/o;->a()Ld8/e;
+    invoke-interface {p1}, Ld8/r;->a()Le8/e;
 
     move-result-object p1
 
-    invoke-interface {p1}, Ld8/e;->a()F
+    invoke-interface {p1}, Le8/e;->a()F
 
     move-result p1
 
     .line 7
-    invoke-static {p0}, Le0/f;->k(Landroid/content/Context;)Z
+    invoke-static {p0}, Lee/d;->f(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -136,14 +136,14 @@
 
     .line 8
     :goto_1
-    sget-object v3, Lcom/helpshift/util/r;->c:Lc7/a;
+    sget-object v3, Lcom/helpshift/util/q;->c:Lc7/a;
 
     .line 9
-    invoke-interface {v3}, Lc7/a;->a()Lh8/b;
+    invoke-interface {v3}, Lc7/a;->a()Li8/b;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lh8/b;->j()I
+    invoke-virtual {v3}, Li8/b;->j()I
 
     move-result v3
 
@@ -157,25 +157,25 @@
     invoke-direct {v4, p0, v5, v6}, Lw9/e;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 11
-    sput-object v4, Lce/z;->a:Lw9/c;
+    sput-object v4, Lie/a;->g:Lw9/c;
 
     .line 12
     invoke-interface {v4, v1}, Lw9/c;->f(I)V
 
     .line 13
-    sget-object v1, Lce/z;->a:Lw9/c;
+    sget-object v1, Lie/a;->g:Lw9/c;
 
-    invoke-interface {v1, v3}, Lw9/c;->e(I)V
+    invoke-interface {v1, v3}, Lw9/c;->b(I)V
 
     .line 14
-    new-instance v1, Lm5/y;
+    new-instance v1, Le9/a;
 
-    invoke-direct {v1}, Lm5/y;-><init>()V
+    invoke-direct {v1}, Le9/a;-><init>()V
 
-    invoke-static {v1}, Lz9/b;->c(Lm5/y;)V
+    invoke-static {v1}, Ly9/b;->c(Le9/a;)V
 
     .line 15
-    sget-object v1, Lce/z;->a:Lw9/c;
+    sget-object v1, Lie/a;->g:Lw9/c;
 
     float-to-long v3, p1
 
@@ -188,7 +188,7 @@
     xor-int/lit8 p1, v2, 0x1
 
     .line 16
-    sget-object v1, Lce/z;->a:Lw9/c;
+    sget-object v1, Lie/a;->g:Lw9/c;
 
     if-eqz v1, :cond_3
 
@@ -197,7 +197,7 @@
 
     .line 18
     :cond_3
-    invoke-static {p1}, Lja/a;->a(Z)V
+    invoke-static {p1}, Lha/a;->a(Z)V
 
     if-nez v2, :cond_4
 
@@ -212,7 +212,7 @@
     .locals 2
 
     .line 1
-    invoke-static {}, Lcom/helpshift/util/r;->b()Z
+    invoke-static {}, Lcom/helpshift/util/q;->c()Z
 
     move-result v0
 
@@ -222,17 +222,17 @@
 
     .line 2
     :cond_0
-    sget-object v0, Llb/b;->a:Llb/a;
+    sget-object v0, Ljb/b;->a:Ljb/a;
 
     .line 3
     new-instance v1, Lcom/helpshift/CoreInternal$b;
 
     invoke-direct {v1}, Lcom/helpshift/CoreInternal$b;-><init>()V
 
-    check-cast v0, Llb/c;
+    check-cast v0, Ljb/c;
 
     .line 4
-    iget-object v0, v0, Llb/c;->c:Landroid/os/Handler;
+    iget-object v0, v0, Ljb/c;->c:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -243,7 +243,7 @@
     .locals 2
 
     .line 1
-    invoke-static {}, Lcom/helpshift/util/r;->b()Z
+    invoke-static {}, Lcom/helpshift/util/q;->c()Z
 
     move-result v0
 
@@ -253,17 +253,17 @@
 
     .line 2
     :cond_0
-    sget-object v0, Llb/b;->a:Llb/a;
+    sget-object v0, Ljb/b;->a:Ljb/a;
 
     .line 3
     new-instance v1, Lcom/helpshift/CoreInternal$a;
 
     invoke-direct {v1}, Lcom/helpshift/CoreInternal$a;-><init>()V
 
-    check-cast v0, Llb/c;
+    check-cast v0, Ljb/c;
 
     .line 4
-    iget-object v0, v0, Llb/c;->c:Landroid/os/Handler;
+    iget-object v0, v0, Ljb/c;->c:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

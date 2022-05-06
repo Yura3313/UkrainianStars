@@ -1991,7 +1991,7 @@
     if-eqz v1, :cond_0
 
     .line 1
-    sget-object v4, Lc6/d;->ASSUME_GS1:Lc6/d;
+    sget-object v4, Lc6/d;->n:Lc6/d;
 
     invoke-interface {v1, v4}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -2008,7 +2008,7 @@
 
     .line 2
     :goto_0
-    iget v4, v0, Lj6/a;->b:I
+    iget v4, v0, Lj6/a;->h:I
 
     .line 3
     invoke-virtual {v0, v3}, Lj6/a;->b(I)I
@@ -2033,7 +2033,9 @@
 
     move-result v11
 
-    if-eq v11, v9, :cond_1
+    xor-int/2addr v11, v9
+
+    if-eqz v11, :cond_1
 
     .line 5
     aget v11, v7, v10
@@ -2042,7 +2044,7 @@
 
     aput v11, v7, v10
 
-    move/from16 v11, p1
+    move/from16 v12, p1
 
     const/4 v2, 0x0
 
@@ -2055,63 +2057,63 @@
 
     if-ne v10, v11, :cond_29
 
-    const/16 v14, 0x67
+    const/16 v15, 0x67
 
-    const/4 v15, -0x1
+    const/16 v16, -0x1
 
-    const/high16 v16, 0x3e800000    # 0.25f
+    const/high16 v17, 0x3e800000    # 0.25f
 
     :goto_2
-    const/16 v12, 0x69
+    const/16 v13, 0x69
 
-    const v13, 0x3f333333    # 0.7f
+    const v14, 0x3f333333    # 0.7f
 
-    if-gt v14, v12, :cond_3
+    if-gt v15, v13, :cond_3
 
     .line 6
-    sget-object v12, Lr6/b;->a:[[I
+    sget-object v13, Lr6/b;->a:[[I
 
-    aget-object v12, v12, v14
+    aget-object v13, v13, v15
 
-    invoke-static {v7, v12, v13}, Lr6/j;->e([I[IF)F
+    invoke-static {v7, v13, v14}, Lr6/j;->e([I[IF)F
 
-    move-result v12
+    move-result v13
 
-    cmpg-float v13, v12, v16
+    cmpg-float v14, v13, v17
 
-    if-gez v13, :cond_2
+    if-gez v14, :cond_2
 
-    move/from16 v16, v12
+    move/from16 v17, v13
 
-    move v15, v14
+    move/from16 v16, v15
 
     :cond_2
-    add-int/lit8 v14, v14, 0x1
+    add-int/lit8 v15, v15, 0x1
 
     goto :goto_2
 
     :cond_3
-    const/4 v12, 0x2
+    const/4 v13, 0x2
 
-    if-ltz v15, :cond_28
+    if-ltz v16, :cond_28
 
-    sub-int v14, v5, v8
+    sub-int v15, v5, v8
 
     .line 7
-    div-int/2addr v14, v12
+    div-int/2addr v15, v13
 
-    sub-int v14, v8, v14
+    sub-int v15, v8, v15
 
     .line 8
-    invoke-static {v3, v14}, Ljava/lang/Math;->max(II)I
+    invoke-static {v3, v15}, Ljava/lang/Math;->max(II)I
 
-    move-result v14
+    move-result v15
 
-    invoke-virtual {v0, v14, v8, v3}, Lj6/a;->d(IIZ)Z
+    invoke-virtual {v0, v15, v8, v3}, Lj6/a;->d(IIZ)Z
 
-    move-result v14
+    move-result v15
 
-    if-eqz v14, :cond_28
+    if-eqz v15, :cond_28
 
     const/4 v4, 0x3
 
@@ -2121,10 +2123,10 @@
 
     aput v5, v4, v2
 
-    aput v15, v4, v12
+    aput v16, v4, v13
 
     .line 9
-    aget v5, v4, v12
+    aget v5, v4, v13
 
     .line 10
     new-instance v7, Ljava/util/ArrayList;
@@ -2178,9 +2180,9 @@
 
     new-array v2, v6, [I
 
-    move v11, v15
+    move v12, v15
 
-    const/4 v12, 0x0
+    const/4 v13, 0x0
 
     const/16 v18, 0x0
 
@@ -2204,7 +2206,7 @@
     .line 16
     invoke-static {v0, v8, v2}, Lr6/j;->f(Lj6/a;I[I)V
 
-    const/4 v14, -0x1
+    const/4 v11, -0x1
 
     const/4 v15, 0x0
 
@@ -2222,7 +2224,7 @@
     aget-object v6, v10, v15
 
     .line 19
-    invoke-static {v2, v6, v13}, Lr6/j;->e([I[IF)F
+    invoke-static {v2, v6, v14}, Lr6/j;->e([I[IF)F
 
     move-result v6
 
@@ -2232,7 +2234,7 @@
 
     move/from16 v23, v6
 
-    move v14, v15
+    move v11, v15
 
     :cond_4
     add-int/lit8 v15, v15, 0x1
@@ -2242,9 +2244,9 @@
     goto :goto_5
 
     :cond_5
-    if-ltz v14, :cond_20
+    if-ltz v11, :cond_20
 
-    int-to-byte v6, v14
+    int-to-byte v6, v11
 
     .line 20
     invoke-static {v6}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
@@ -2255,16 +2257,16 @@
 
     const/16 v6, 0x6a
 
-    if-eq v14, v6, :cond_6
+    if-eq v11, v6, :cond_6
 
     const/16 v19, 0x1
 
     :cond_6
-    if-eq v14, v6, :cond_7
+    if-eq v11, v6, :cond_7
 
     add-int/lit8 v22, v22, 0x1
 
-    mul-int v10, v22, v14
+    mul-int v10, v22, v11
 
     add-int/2addr v10, v5
 
@@ -2275,10 +2277,10 @@
 
     const/4 v10, 0x0
 
-    const/4 v13, 0x6
+    const/4 v14, 0x6
 
     :goto_6
-    if-ge v10, v13, :cond_8
+    if-ge v10, v14, :cond_8
 
     .line 21
     aget v23, v2, v10
@@ -2290,13 +2292,13 @@
     goto :goto_6
 
     :cond_8
-    packed-switch v14, :pswitch_data_1
+    packed-switch v11, :pswitch_data_1
 
     const/16 v10, 0x60
 
-    const-string v13, "]C1"
+    const-string v14, "]C1"
 
-    packed-switch v11, :pswitch_data_2
+    packed-switch v12, :pswitch_data_2
 
     goto/16 :goto_a
 
@@ -2311,11 +2313,11 @@
     :pswitch_4
     const/16 v6, 0x40
 
-    if-ge v14, v6, :cond_a
+    if-ge v11, v6, :cond_a
 
-    if-ne v3, v12, :cond_9
+    if-ne v3, v13, :cond_9
 
-    add-int/lit8 v3, v14, 0x20
+    add-int/lit8 v3, v11, 0x20
 
     int-to-char v3, v3
 
@@ -2325,7 +2327,7 @@
     goto/16 :goto_7
 
     :cond_9
-    add-int/lit8 v3, v14, 0x20
+    add-int/lit8 v3, v11, 0x20
 
     add-int/lit16 v3, v3, 0x80
 
@@ -2337,11 +2339,11 @@
     goto :goto_7
 
     :cond_a
-    if-ge v14, v10, :cond_c
+    if-ge v11, v10, :cond_c
 
-    if-ne v3, v12, :cond_b
+    if-ne v3, v13, :cond_b
 
-    add-int/lit8 v3, v14, -0x40
+    add-int/lit8 v3, v11, -0x40
 
     int-to-char v3, v3
 
@@ -2351,7 +2353,7 @@
     goto :goto_7
 
     :cond_b
-    add-int/lit8 v3, v14, 0x40
+    add-int/lit8 v3, v11, 0x40
 
     int-to-char v3, v3
 
@@ -2363,14 +2365,14 @@
     :cond_c
     const/16 v6, 0x6a
 
-    if-eq v14, v6, :cond_d
+    if-eq v11, v6, :cond_d
 
     const/16 v19, 0x0
 
     :cond_d
-    if-eq v14, v6, :cond_10
+    if-eq v11, v6, :cond_10
 
-    packed-switch v14, :pswitch_data_3
+    packed-switch v11, :pswitch_data_3
 
     goto/16 :goto_a
 
@@ -2385,7 +2387,7 @@
     if-nez v6, :cond_e
 
     .line 28
-    invoke-virtual {v9, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto/16 :goto_a
 
@@ -2398,14 +2400,14 @@
     goto/16 :goto_a
 
     :pswitch_6
-    if-nez v12, :cond_f
+    if-nez v13, :cond_f
 
     if-eqz v3, :cond_f
 
     goto :goto_8
 
     :cond_f
-    if-eqz v12, :cond_16
+    if-eqz v13, :cond_16
 
     if-eqz v3, :cond_16
 
@@ -2429,11 +2431,11 @@
     goto :goto_a
 
     :pswitch_9
-    if-ge v14, v10, :cond_12
+    if-ge v11, v10, :cond_12
 
-    if-ne v3, v12, :cond_11
+    if-ne v3, v13, :cond_11
 
-    add-int/lit8 v3, v14, 0x20
+    add-int/lit8 v3, v11, 0x20
 
     int-to-char v3, v3
 
@@ -2443,7 +2445,7 @@
     goto :goto_7
 
     :cond_11
-    add-int/lit8 v3, v14, 0x20
+    add-int/lit8 v3, v11, 0x20
 
     add-int/lit16 v3, v3, 0x80
 
@@ -2460,14 +2462,14 @@
     :cond_12
     const/16 v6, 0x6a
 
-    if-eq v14, v6, :cond_13
+    if-eq v11, v6, :cond_13
 
     const/16 v19, 0x0
 
     :cond_13
-    if-eq v14, v6, :cond_10
+    if-eq v11, v6, :cond_10
 
-    packed-switch v14, :pswitch_data_4
+    packed-switch v11, :pswitch_data_4
 
     goto :goto_a
 
@@ -2482,7 +2484,7 @@
     if-nez v6, :cond_14
 
     .line 33
-    invoke-virtual {v9, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_a
 
@@ -2500,7 +2502,7 @@
     goto :goto_b
 
     :pswitch_c
-    if-nez v12, :cond_15
+    if-nez v13, :cond_15
 
     if-eqz v3, :cond_15
 
@@ -2511,12 +2513,12 @@
 
     const/4 v10, 0x0
 
-    const/4 v12, 0x1
+    const/4 v13, 0x1
 
     goto :goto_10
 
     :cond_15
-    if-eqz v12, :cond_16
+    if-eqz v13, :cond_16
 
     if-eqz v3, :cond_16
 
@@ -2527,7 +2529,7 @@
 
     const/4 v10, 0x0
 
-    const/4 v12, 0x0
+    const/4 v13, 0x0
 
     goto :goto_10
 
@@ -2541,7 +2543,7 @@
 
     const/4 v10, 0x0
 
-    const/16 v11, 0x63
+    const/16 v12, 0x63
 
     goto :goto_10
 
@@ -2562,11 +2564,11 @@
     :pswitch_10
     const/16 v6, 0x64
 
-    if-ge v14, v6, :cond_19
+    if-ge v11, v6, :cond_19
 
     const/16 v10, 0xa
 
-    if-ge v14, v10, :cond_18
+    if-ge v11, v10, :cond_18
 
     const/16 v10, 0x30
 
@@ -2575,21 +2577,21 @@
 
     .line 36
     :cond_18
-    invoke-virtual {v9, v14}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v11}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     goto :goto_f
 
     :cond_19
     const/16 v10, 0x6a
 
-    if-eq v14, v10, :cond_1a
+    if-eq v11, v10, :cond_1a
 
     const/16 v19, 0x0
 
     :cond_1a
-    if-eq v14, v10, :cond_1c
+    if-eq v11, v10, :cond_1c
 
-    packed-switch v14, :pswitch_data_5
+    packed-switch v11, :pswitch_data_5
 
     goto :goto_f
 
@@ -2604,7 +2606,7 @@
     if-nez v10, :cond_1b
 
     .line 38
-    invoke-virtual {v9, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_f
 
@@ -2621,7 +2623,7 @@
     const/4 v10, 0x0
 
     :goto_c
-    const/16 v11, 0x65
+    const/16 v12, 0x65
 
     goto :goto_10
 
@@ -2630,7 +2632,7 @@
     const/4 v10, 0x0
 
     :goto_e
-    const/16 v11, 0x64
+    const/16 v12, 0x64
 
     goto :goto_10
 
@@ -2646,18 +2648,18 @@
     const/4 v10, 0x0
 
     :goto_10
-    const/16 v13, 0x65
+    const/16 v14, 0x65
 
     if-eqz v20, :cond_1f
 
-    if-ne v11, v13, :cond_1e
+    if-ne v12, v14, :cond_1e
 
-    const/16 v11, 0x64
+    const/16 v12, 0x64
 
     goto :goto_11
 
     :cond_1e
-    const/16 v11, 0x65
+    const/16 v12, 0x65
 
     :cond_1f
     :goto_11
@@ -2667,9 +2669,9 @@
 
     const/4 v6, 0x6
 
-    const v13, 0x3f333333    # 0.7f
+    const v14, 0x3f333333    # 0.7f
 
-    move/from16 v21, v14
+    move/from16 v21, v11
 
     move/from16 v24, v15
 
@@ -2681,7 +2683,7 @@
 
     .line 40
     :cond_20
-    sget-object v0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 41
     throw v0
@@ -2695,7 +2697,7 @@
     move-result v2
 
     .line 43
-    iget v3, v0, Lj6/a;->b:I
+    iget v3, v0, Lj6/a;->h:I
 
     sub-int v6, v2, v15
 
@@ -2745,7 +2747,7 @@
 
     const/16 v2, 0x63
 
-    if-ne v11, v2, :cond_22
+    if-ne v12, v2, :cond_22
 
     add-int/lit8 v2, v0, -0x2
 
@@ -2832,9 +2834,9 @@
 
     new-instance v6, Lc6/l;
 
-    move/from16 v11, p1
+    move/from16 v12, p1
 
-    int-to-float v7, v11
+    int-to-float v7, v12
 
     invoke-direct {v6, v0, v7}, Lc6/l;-><init>(FF)V
 
@@ -2850,7 +2852,7 @@
 
     aput-object v0, v5, v1
 
-    sget-object v0, Lc6/a;->CODE_128:Lc6/a;
+    sget-object v0, Lc6/a;->k:Lc6/a;
 
     invoke-direct {v2, v4, v3, v5, v0}, Lc6/j;-><init>(Ljava/lang/String;[B[Lc6/l;Lc6/a;)V
 
@@ -2858,7 +2860,7 @@
 
     .line 56
     :cond_25
-    sget-object v0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 57
     throw v0
@@ -2873,13 +2875,13 @@
 
     .line 59
     :cond_27
-    sget-object v0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 60
     throw v0
 
     :cond_28
-    move/from16 v11, p1
+    move/from16 v12, p1
 
     const/4 v2, 0x0
 
@@ -2888,31 +2890,29 @@
 
     const/4 v6, 0x1
 
-    aget v12, v7, v6
+    aget v13, v7, v6
 
-    add-int/2addr v3, v12
+    add-int/2addr v3, v13
 
     add-int/2addr v8, v3
 
-    add-int/lit8 v3, v10, -0x1
+    const/4 v3, 0x4
 
     const/4 v6, 0x2
 
     .line 62
     invoke-static {v7, v6, v7, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 63
     aput v2, v7, v3
 
-    .line 64
-    aput v2, v7, v10
+    aput v2, v7, v11
 
-    move v10, v3
+    add-int/lit8 v10, v10, -0x1
 
     goto :goto_14
 
     :cond_29
-    move/from16 v11, p1
+    move/from16 v12, p1
 
     const/4 v2, 0x0
 
@@ -2921,7 +2921,7 @@
     :goto_14
     const/4 v3, 0x1
 
-    .line 65
+    .line 63
     aput v3, v7, v10
 
     xor-int/lit8 v9, v9, 0x1
@@ -2937,11 +2937,11 @@
 
     goto/16 :goto_1
 
-    .line 66
+    .line 64
     :cond_2a
-    sget-object v0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
-    .line 67
+    .line 65
     goto :goto_17
 
     :goto_16
@@ -2949,8 +2949,6 @@
 
     :goto_17
     goto :goto_16
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x67

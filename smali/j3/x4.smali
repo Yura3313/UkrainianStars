@@ -3,27 +3,38 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lj3/y2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lj3/y2<",
+        "Lj3/l5;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:Lj3/e5;
+.field public final synthetic g:Lj3/f5;
 
-.field public final synthetic b:Lj3/j4;
+.field public final synthetic h:Lj3/k4;
 
-.field public final synthetic h:Lj3/s4;
+.field public final synthetic i:Lj3/t4;
 
 
 # direct methods
-.method public constructor <init>(Lj3/s4;Lj3/e5;Lj3/j4;)V
+.method public constructor <init>(Lj3/t4;Lj3/f5;Lj3/k4;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lj3/x4;->h:Lj3/s4;
+    iput-object p1, p0, Lj3/x4;->i:Lj3/t4;
 
-    iput-object p2, p0, Lj3/x4;->a:Lj3/e5;
+    iput-object p2, p0, Lj3/x4;->g:Lj3/f5;
 
-    iput-object p3, p0, Lj3/x4;->b:Lj3/j4;
+    iput-object p3, p0, Lj3/x4;->h:Lj3/k4;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,93 +43,105 @@
 
 
 # virtual methods
-.method public final run()V
-    .locals 5
+.method public final b(Ljava/lang/Object;Ljava/util/Map;)V
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lj3/x4;->h:Lj3/s4;
+    check-cast p1, Lj3/l5;
 
     .line 2
-    iget-object v0, v0, Lj3/s4;->a:Ljava/lang/Object;
+    iget-object p1, p0, Lj3/x4;->i:Lj3/t4;
 
     .line 3
-    monitor-enter v0
+    iget-object p1, p1, Lj3/t4;->a:Ljava/lang/Object;
 
     .line 4
-    :try_start_0
-    iget-object v1, p0, Lj3/x4;->a:Lj3/e5;
-
-    invoke-virtual {v1}, Lj3/sd;->a()I
-
-    move-result v1
-
-    const/4 v2, -0x1
-
-    if-eq v1, v2, :cond_1
-
-    iget-object v1, p0, Lj3/x4;->a:Lj3/e5;
+    monitor-enter p1
 
     .line 5
-    invoke-virtual {v1}, Lj3/sd;->a()I
+    :try_start_0
+    iget-object p2, p0, Lj3/x4;->g:Lj3/f5;
 
-    move-result v1
+    invoke-virtual {p2}, Lj3/wd;->b()I
 
-    const/4 v2, 0x1
+    move-result p2
 
-    if-ne v1, v2, :cond_0
+    const/4 v0, -0x1
+
+    if-eq p2, v0, :cond_1
+
+    iget-object p2, p0, Lj3/x4;->g:Lj3/f5;
+
+    .line 6
+    invoke-virtual {p2}, Lj3/wd;->b()I
+
+    move-result p2
+
+    const/4 v0, 0x1
+
+    if-ne p2, v0, :cond_0
 
     goto :goto_0
 
-    .line 6
-    :cond_0
-    iget-object v1, p0, Lj3/x4;->a:Lj3/e5;
-
-    invoke-virtual {v1}, Lj3/sd;->b()V
-
     .line 7
-    sget-object v1, Lj3/gd;->e:Lj3/am0;
+    :cond_0
+    iget-object p2, p0, Lj3/x4;->i:Lj3/t4;
 
-    iget-object v2, p0, Lj3/x4;->b:Lj3/j4;
-
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/4 v0, 0x0
 
     .line 8
-    new-instance v3, Lj3/a5;
-
-    const/4 v4, 0x0
-
-    invoke-direct {v3, v2, v4}, Lj3/a5;-><init>(Ljava/lang/Object;I)V
+    iput v0, p2, Lj3/t4;->h:I
 
     .line 9
-    check-cast v1, Lj3/ld;
+    iget-object p2, p2, Lj3/t4;->e:Lj3/bc;
 
     .line 10
-    iget-object v1, v1, Lj3/ld;->a:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lj3/x4;->h:Lj3/k4;
 
-    invoke-interface {v1, v3}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+    invoke-interface {p2, v0}, Lj3/bc;->c(Ljava/lang/Object;)V
 
     .line 11
-    invoke-static {}, Lp0/d;->i()Z
+    iget-object p2, p0, Lj3/x4;->g:Lj3/f5;
+
+    iget-object v0, p0, Lj3/x4;->h:Lj3/k4;
 
     .line 12
-    monitor-exit v0
+    iget-object p2, p2, Lj3/wd;->g:Ljava/lang/Object;
+
+    check-cast p2, Lj3/qd;
+
+    invoke-virtual {p2, v0}, Lj3/qd;->b(Ljava/lang/Object;)Z
+
+    .line 13
+    iget-object p2, p0, Lj3/x4;->i:Lj3/t4;
+
+    iget-object v0, p0, Lj3/x4;->g:Lj3/f5;
+
+    .line 14
+    iput-object v0, p2, Lj3/t4;->g:Lj3/f5;
+
+    .line 15
+    invoke-static {}, Lj3/cj;->l()Z
+
+    .line 16
+    monitor-exit p1
 
     return-void
 
-    .line 13
+    .line 17
     :cond_1
     :goto_0
-    monitor-exit v0
+    monitor-exit p1
 
     return-void
 
     :catchall_0
-    move-exception v1
+    move-exception p2
 
-    .line 14
-    monitor-exit v0
+    .line 18
+    monitor-exit p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    throw v1
+    throw p2
 .end method

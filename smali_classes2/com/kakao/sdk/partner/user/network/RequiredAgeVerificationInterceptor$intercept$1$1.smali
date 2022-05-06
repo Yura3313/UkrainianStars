@@ -21,7 +21,7 @@
         "Lle/j;",
         "Lke/l<",
         "Ljava/lang/Throwable;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
@@ -58,7 +58,7 @@
 
     invoke-virtual {p0, p1}, Lcom/kakao/sdk/partner/user/network/RequiredAgeVerificationInterceptor$intercept$1$1;->invoke(Ljava/lang/Throwable;)V
 
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method
@@ -69,7 +69,7 @@
     .line 2
     iget-object v0, p0, Lcom/kakao/sdk/partner/user/network/RequiredAgeVerificationInterceptor$intercept$1$1;->$error:Lle/s;
 
-    iput-object p1, v0, Lle/s;->a:Ljava/lang/Object;
+    iput-object p1, v0, Lle/s;->g:Ljava/lang/Object;
 
     iget-object p1, p0, Lcom/kakao/sdk/partner/user/network/RequiredAgeVerificationInterceptor$intercept$1$1;->$latch:Ljava/util/concurrent/CountDownLatch;
 

@@ -1,69 +1,33 @@
 .class public final Lzc/b;
-.super Ljava/lang/Object;
-.source "DonateFragment.kt"
-
-# interfaces
-.implements Ljava/util/Comparator;
+.super Landroid/animation/AnimatorListenerAdapter;
+.source "ErrorDialog.kt"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "Lzc/e;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final a:Lzc/b;
+# instance fields
+.field public final synthetic g:Lzc/a;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lzc/b;
-
-    invoke-direct {v0}, Lzc/b;-><init>()V
-
-    sput-object v0, Lzc/b;->a:Lzc/b;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lzc/a;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lzc/b;->g:Lzc/a;
+
+    .line 1
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 0
 
     .line 1
-    check-cast p1, Lzc/e;
+    iget-object p1, p0, Lzc/b;->g:Lzc/a;
 
-    check-cast p2, Lzc/e;
+    invoke-virtual {p1}, Landroid/app/Dialog;->dismiss()V
 
-    .line 2
-    iget-object p1, p1, Lzc/e;->c:Ljava/lang/String;
-
-    iget-object p2, p2, Lzc/e;->c:Ljava/lang/String;
-
-    .line 3
-    invoke-static {p1, p2}, Lr5/a;->f(Ljava/lang/String;Ljava/lang/String;)I
-
-    move-result p1
-
-    return p1
+    return-void
 .end method

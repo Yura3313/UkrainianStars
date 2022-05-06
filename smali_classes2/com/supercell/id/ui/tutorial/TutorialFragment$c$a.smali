@@ -20,14 +20,14 @@
     value = {
         "Lle/j;",
         "Lke/a<",
-        "Ltd/c;",
+        "Lsd/c;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/ui/tutorial/TutorialFragment$c$a;
+.field public static final g:Lcom/supercell/id/ui/tutorial/TutorialFragment$c$a;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/tutorial/TutorialFragment$c$a;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$c$a;->a:Lcom/supercell/id/ui/tutorial/TutorialFragment$c$a;
+    sput-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$c$a;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$c$a;
 
     return-void
 .end method
@@ -61,7 +61,7 @@
     const-string v0, "tutorial_1.png"
 
     .line 1
-    invoke-static {v0}, Ltd/c;->c1(Ljava/lang/String;)Ltd/c;
+    invoke-static {v0}, Lsd/c;->c1(Ljava/lang/String;)Lsd/c;
 
     move-result-object v0
 

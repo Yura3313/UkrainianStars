@@ -1,28 +1,28 @@
 .class public final Lj3/yq0;
-.super Lj3/hq0;
+.super Lj3/vq0;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 # interfaces
-.implements Lj3/ws0;
+.implements Lj3/lt0;
 .implements Ljava/util/RandomAccess;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lj3/hq0<",
-        "Ljava/lang/Double;",
+        "Lj3/vq0<",
+        "Ljava/lang/Boolean;",
         ">;",
-        "Lj3/ws0;",
+        "Lj3/lt0;",
         "Ljava/util/RandomAccess;"
     }
 .end annotation
 
 
 # instance fields
-.field public b:[D
+.field public h:[Z
 
-.field public h:I
+.field public i:I
 
 
 # direct methods
@@ -34,12 +34,12 @@
 
     const/4 v1, 0x0
 
-    new-array v2, v1, [D
+    new-array v2, v1, [Z
 
-    invoke-direct {v0, v2, v1}, Lj3/yq0;-><init>([DI)V
+    invoke-direct {v0, v2, v1}, Lj3/yq0;-><init>([ZI)V
 
     .line 2
-    iput-boolean v1, v0, Lj3/hq0;->a:Z
+    iput-boolean v1, v0, Lj3/vq0;->g:Z
 
     return-void
 .end method
@@ -49,59 +49,59 @@
 
     const/16 v0, 0xa
 
-    new-array v0, v0, [D
+    new-array v0, v0, [Z
 
     .line 1
-    invoke-direct {p0}, Lj3/hq0;-><init>()V
+    invoke-direct {p0}, Lj3/vq0;-><init>()V
 
     .line 2
-    iput-object v0, p0, Lj3/yq0;->b:[D
+    iput-object v0, p0, Lj3/yq0;->h:[Z
 
     const/4 v0, 0x0
 
     .line 3
-    iput v0, p0, Lj3/yq0;->h:I
+    iput v0, p0, Lj3/yq0;->i:I
 
     return-void
 .end method
 
-.method public constructor <init>([DI)V
+.method public constructor <init>([ZI)V
     .locals 0
 
     .line 4
-    invoke-direct {p0}, Lj3/hq0;-><init>()V
+    invoke-direct {p0}, Lj3/vq0;-><init>()V
 
     .line 5
-    iput-object p1, p0, Lj3/yq0;->b:[D
+    iput-object p1, p0, Lj3/yq0;->h:[Z
 
     .line 6
-    iput p2, p0, Lj3/yq0;->h:I
+    iput p2, p0, Lj3/yq0;->i:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic D(I)Lj3/tr0;
+.method public final synthetic G(I)Lj3/is0;
     .locals 2
 
     .line 1
-    iget v0, p0, Lj3/yq0;->h:I
+    iget v0, p0, Lj3/yq0;->i:I
 
     if-lt p1, v0, :cond_0
 
     .line 2
     new-instance v0, Lj3/yq0;
 
-    iget-object v1, p0, Lj3/yq0;->b:[D
+    iget-object v1, p0, Lj3/yq0;->h:[Z
 
-    invoke-static {v1, p1}, Ljava/util/Arrays;->copyOf([DI)[D
+    invoke-static {v1, p1}, Ljava/util/Arrays;->copyOf([ZI)[Z
 
     move-result-object p1
 
-    iget v1, p0, Lj3/yq0;->h:I
+    iget v1, p0, Lj3/yq0;->i:I
 
-    invoke-direct {v0, p1, v1}, Lj3/yq0;-><init>([DI)V
+    invoke-direct {v0, p1, v1}, Lj3/yq0;-><init>([ZI)V
 
     return-object v0
 
@@ -115,87 +115,87 @@
 .end method
 
 .method public final synthetic add(ILjava/lang/Object;)V
-    .locals 6
+    .locals 5
 
     .line 1
-    check-cast p2, Ljava/lang/Double;
+    check-cast p2, Ljava/lang/Boolean;
 
     .line 2
-    invoke-virtual {p2}, Ljava/lang/Double;->doubleValue()D
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result-wide v0
+    move-result p2
 
     .line 3
-    invoke-virtual {p0}, Lj3/hq0;->a()V
+    invoke-virtual {p0}, Lj3/vq0;->a()V
 
     if-ltz p1, :cond_1
 
     .line 4
-    iget p2, p0, Lj3/yq0;->h:I
+    iget v0, p0, Lj3/yq0;->i:I
 
-    if-gt p1, p2, :cond_1
+    if-gt p1, v0, :cond_1
 
     .line 5
-    iget-object v2, p0, Lj3/yq0;->b:[D
+    iget-object v1, p0, Lj3/yq0;->h:[Z
 
-    array-length v3, v2
+    array-length v2, v1
 
-    if-ge p2, v3, :cond_0
+    if-ge v0, v2, :cond_0
 
-    add-int/lit8 v3, p1, 0x1
+    add-int/lit8 v2, p1, 0x1
 
-    sub-int/2addr p2, p1
+    sub-int/2addr v0, p1
 
     .line 6
-    invoke-static {v2, p1, v2, v3, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v1, p1, v1, v2, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     goto :goto_0
 
     :cond_0
-    const/4 v3, 0x3
+    const/4 v2, 0x3
 
-    const/4 v4, 0x2
+    const/4 v3, 0x2
 
-    const/4 v5, 0x1
+    const/4 v4, 0x1
 
-    invoke-static {p2, v3, v4, v5}, Landroid/support/v4/media/a;->a(IIII)I
+    invoke-static {v0, v2, v3, v4}, Lj3/xq0;->a(IIII)I
 
-    move-result p2
+    move-result v0
 
     .line 7
-    new-array p2, p2, [D
+    new-array v0, v0, [Z
 
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     .line 8
-    invoke-static {v2, v3, p2, v3, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v1, v2, v0, v2, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 9
-    iget-object v2, p0, Lj3/yq0;->b:[D
+    iget-object v1, p0, Lj3/yq0;->h:[Z
 
-    add-int/lit8 v3, p1, 0x1
+    add-int/lit8 v2, p1, 0x1
 
-    iget v4, p0, Lj3/yq0;->h:I
+    iget v3, p0, Lj3/yq0;->i:I
 
-    sub-int/2addr v4, p1
+    sub-int/2addr v3, p1
 
-    invoke-static {v2, p1, p2, v3, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v1, p1, v0, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 10
-    iput-object p2, p0, Lj3/yq0;->b:[D
+    iput-object v0, p0, Lj3/yq0;->h:[Z
 
     .line 11
     :goto_0
-    iget-object p2, p0, Lj3/yq0;->b:[D
+    iget-object v0, p0, Lj3/yq0;->h:[Z
 
-    aput-wide v0, p2, p1
+    aput-boolean p2, v0, p1
 
     .line 12
-    iget p1, p0, Lj3/yq0;->h:I
+    iget p1, p0, Lj3/yq0;->i:I
 
     add-int/lit8 p1, p1, 0x1
 
-    iput p1, p0, Lj3/yq0;->h:I
+    iput p1, p0, Lj3/yq0;->i:I
 
     .line 13
     iget p1, p0, Ljava/util/AbstractList;->modCount:I
@@ -210,7 +210,7 @@
     :cond_1
     new-instance p2, Ljava/lang/IndexOutOfBoundsException;
 
-    invoke-virtual {p0, p1}, Lj3/yq0;->d(I)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Lj3/yq0;->e(I)Ljava/lang/String;
 
     move-result-object p1
 
@@ -220,17 +220,17 @@
 .end method
 
 .method public final synthetic add(Ljava/lang/Object;)Z
-    .locals 2
+    .locals 0
 
     .line 15
-    check-cast p1, Ljava/lang/Double;
+    check-cast p1, Ljava/lang/Boolean;
 
     .line 16
-    invoke-virtual {p1}, Ljava/lang/Double;->doubleValue()D
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result-wide v0
+    move-result p1
 
-    invoke-virtual {p0, v0, v1}, Lj3/yq0;->b(D)V
+    invoke-virtual {p0, p1}, Lj3/yq0;->c(Z)V
 
     const/4 p1, 0x1
 
@@ -244,16 +244,16 @@
             "(",
             "Ljava/util/Collection<",
             "+",
-            "Ljava/lang/Double;",
+            "Ljava/lang/Boolean;",
             ">;)Z"
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lj3/hq0;->a()V
+    invoke-virtual {p0}, Lj3/vq0;->a()V
 
     .line 2
-    sget-object v0, Lj3/lr0;->a:Ljava/nio/charset/Charset;
+    sget-object v0, Lj3/bs0;->a:Ljava/nio/charset/Charset;
 
     .line 3
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -264,7 +264,7 @@
     if-nez v0, :cond_0
 
     .line 5
-    invoke-super {p0, p1}, Lj3/hq0;->addAll(Ljava/util/Collection;)Z
+    invoke-super {p0, p1}, Lj3/vq0;->addAll(Ljava/util/Collection;)Z
 
     move-result p1
 
@@ -275,7 +275,7 @@
     check-cast p1, Lj3/yq0;
 
     .line 7
-    iget v0, p1, Lj3/yq0;->h:I
+    iget v0, p1, Lj3/yq0;->i:I
 
     const/4 v1, 0x0
 
@@ -287,7 +287,7 @@
     const v2, 0x7fffffff
 
     .line 8
-    iget v3, p0, Lj3/yq0;->h:I
+    iget v3, p0, Lj3/yq0;->i:I
 
     sub-int/2addr v2, v3
 
@@ -296,33 +296,33 @@
     add-int/2addr v3, v0
 
     .line 9
-    iget-object v0, p0, Lj3/yq0;->b:[D
+    iget-object v0, p0, Lj3/yq0;->h:[Z
 
     array-length v2, v0
 
     if-le v3, v2, :cond_2
 
     .line 10
-    invoke-static {v0, v3}, Ljava/util/Arrays;->copyOf([DI)[D
+    invoke-static {v0, v3}, Ljava/util/Arrays;->copyOf([ZI)[Z
 
     move-result-object v0
 
-    iput-object v0, p0, Lj3/yq0;->b:[D
+    iput-object v0, p0, Lj3/yq0;->h:[Z
 
     .line 11
     :cond_2
-    iget-object v0, p1, Lj3/yq0;->b:[D
+    iget-object v0, p1, Lj3/yq0;->h:[Z
 
-    iget-object v2, p0, Lj3/yq0;->b:[D
+    iget-object v2, p0, Lj3/yq0;->h:[Z
 
-    iget v4, p0, Lj3/yq0;->h:I
+    iget v4, p0, Lj3/yq0;->i:I
 
-    iget p1, p1, Lj3/yq0;->h:I
+    iget p1, p1, Lj3/yq0;->i:I
 
     invoke-static {v0, v1, v2, v4, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 12
-    iput v3, p0, Lj3/yq0;->h:I
+    iput v3, p0, Lj3/yq0;->i:I
 
     .line 13
     iget p1, p0, Ljava/util/AbstractList;->modCount:I
@@ -344,16 +344,16 @@
     throw p1
 .end method
 
-.method public final b(D)V
+.method public final c(Z)V
     .locals 5
 
     .line 1
-    invoke-virtual {p0}, Lj3/hq0;->a()V
+    invoke-virtual {p0}, Lj3/vq0;->a()V
 
     .line 2
-    iget v0, p0, Lj3/yq0;->h:I
+    iget v0, p0, Lj3/yq0;->i:I
 
-    iget-object v1, p0, Lj3/yq0;->b:[D
+    iget-object v1, p0, Lj3/yq0;->h:[Z
 
     array-length v2, v1
 
@@ -365,12 +365,12 @@
 
     const/4 v4, 0x1
 
-    invoke-static {v0, v2, v3, v4}, Landroid/support/v4/media/a;->a(IIII)I
+    invoke-static {v0, v2, v3, v4}, Lj3/xq0;->a(IIII)I
 
     move-result v2
 
     .line 3
-    new-array v2, v2, [D
+    new-array v2, v2, [Z
 
     const/4 v3, 0x0
 
@@ -378,46 +378,21 @@
     invoke-static {v1, v3, v2, v3, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 5
-    iput-object v2, p0, Lj3/yq0;->b:[D
+    iput-object v2, p0, Lj3/yq0;->h:[Z
 
     .line 6
     :cond_0
-    iget-object v0, p0, Lj3/yq0;->b:[D
+    iget-object v0, p0, Lj3/yq0;->h:[Z
 
-    iget v1, p0, Lj3/yq0;->h:I
+    iget v1, p0, Lj3/yq0;->i:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lj3/yq0;->h:I
+    iput v2, p0, Lj3/yq0;->i:I
 
-    aput-wide p1, v0, v1
-
-    return-void
-.end method
-
-.method public final c(I)V
-    .locals 1
-
-    if-ltz p1, :cond_0
-
-    .line 1
-    iget v0, p0, Lj3/yq0;->h:I
-
-    if-ge p1, v0, :cond_0
+    aput-boolean p1, v0, v1
 
     return-void
-
-    .line 2
-    :cond_0
-    new-instance v0, Ljava/lang/IndexOutOfBoundsException;
-
-    invoke-virtual {p0, p1}, Lj3/yq0;->d(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method public final contains(Ljava/lang/Object;)Z
@@ -442,11 +417,36 @@
     return p1
 .end method
 
-.method public final d(I)Ljava/lang/String;
+.method public final d(I)V
+    .locals 1
+
+    if-ltz p1, :cond_0
+
+    .line 1
+    iget v0, p0, Lj3/yq0;->i:I
+
+    if-ge p1, v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
+    new-instance v0, Ljava/lang/IndexOutOfBoundsException;
+
+    invoke-virtual {p0, p1}, Lj3/yq0;->e(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public final e(I)Ljava/lang/String;
     .locals 4
 
     .line 1
-    iget v0, p0, Lj3/yq0;->h:I
+    iget v0, p0, Lj3/yq0;->i:I
 
     const/16 v1, 0x23
 
@@ -462,7 +462,7 @@
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 8
+    .locals 5
 
     const/4 v0, 0x1
 
@@ -477,7 +477,7 @@
     if-nez v1, :cond_1
 
     .line 2
-    invoke-super {p0, p1}, Lj3/hq0;->equals(Ljava/lang/Object;)Z
+    invoke-super {p0, p1}, Lj3/vq0;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -488,9 +488,9 @@
     check-cast p1, Lj3/yq0;
 
     .line 4
-    iget v1, p0, Lj3/yq0;->h:I
+    iget v1, p0, Lj3/yq0;->i:I
 
-    iget v2, p1, Lj3/yq0;->h:I
+    iget v2, p1, Lj3/yq0;->i:I
 
     const/4 v3, 0x0
 
@@ -500,34 +500,24 @@
 
     .line 5
     :cond_2
-    iget-object p1, p1, Lj3/yq0;->b:[D
+    iget-object p1, p1, Lj3/yq0;->h:[Z
 
     const/4 v1, 0x0
 
     .line 6
     :goto_0
-    iget v2, p0, Lj3/yq0;->h:I
+    iget v2, p0, Lj3/yq0;->i:I
 
     if-ge v1, v2, :cond_4
 
     .line 7
-    iget-object v2, p0, Lj3/yq0;->b:[D
+    iget-object v2, p0, Lj3/yq0;->h:[Z
 
-    aget-wide v4, v2, v1
+    aget-boolean v2, v2, v1
 
-    invoke-static {v4, v5}, Ljava/lang/Double;->doubleToLongBits(D)J
+    aget-boolean v4, p1, v1
 
-    move-result-wide v4
-
-    aget-wide v6, p1, v1
-
-    invoke-static {v6, v7}, Ljava/lang/Double;->doubleToLongBits(D)J
-
-    move-result-wide v6
-
-    cmp-long v2, v4, v6
-
-    if-eqz v2, :cond_3
+    if-eq v2, v4, :cond_3
 
     return v3
 
@@ -541,18 +531,18 @@
 .end method
 
 .method public final synthetic get(I)Ljava/lang/Object;
-    .locals 3
+    .locals 1
 
     .line 1
-    invoke-virtual {p0, p1}, Lj3/yq0;->c(I)V
+    invoke-virtual {p0, p1}, Lj3/yq0;->d(I)V
 
     .line 2
-    iget-object v0, p0, Lj3/yq0;->b:[D
+    iget-object v0, p0, Lj3/yq0;->h:[Z
 
-    aget-wide v1, v0, p1
+    aget-boolean p1, v0, p1
 
     .line 3
-    invoke-static {v1, v2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
 
@@ -560,7 +550,7 @@
 .end method
 
 .method public final hashCode()I
-    .locals 5
+    .locals 3
 
     const/4 v0, 0x1
 
@@ -568,23 +558,18 @@
 
     .line 1
     :goto_0
-    iget v2, p0, Lj3/yq0;->h:I
+    iget v2, p0, Lj3/yq0;->i:I
 
     if-ge v1, v2, :cond_0
 
-    .line 2
-    iget-object v2, p0, Lj3/yq0;->b:[D
-
-    aget-wide v3, v2, v1
-
-    invoke-static {v3, v4}, Ljava/lang/Double;->doubleToLongBits(D)J
-
-    move-result-wide v2
-
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 3
-    invoke-static {v2, v3}, Lj3/lr0;->c(J)I
+    .line 2
+    iget-object v2, p0, Lj3/yq0;->h:[Z
+
+    aget-boolean v2, v2, v1
+
+    invoke-static {v2}, Lj3/bs0;->a(Z)I
 
     move-result v2
 
@@ -599,10 +584,10 @@
 .end method
 
 .method public final indexOf(Ljava/lang/Object;)I
-    .locals 7
+    .locals 4
 
     .line 1
-    instance-of v0, p1, Ljava/lang/Double;
+    instance-of v0, p1, Ljava/lang/Boolean;
 
     const/4 v1, -0x1
 
@@ -612,33 +597,31 @@
 
     .line 2
     :cond_0
-    check-cast p1, Ljava/lang/Double;
+    check-cast p1, Ljava/lang/Boolean;
 
-    invoke-virtual {p1}, Ljava/lang/Double;->doubleValue()D
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result-wide v2
+    move-result p1
 
     .line 3
-    iget p1, p0, Lj3/yq0;->h:I
+    iget v0, p0, Lj3/yq0;->i:I
 
-    const/4 v0, 0x0
+    const/4 v2, 0x0
 
     :goto_0
-    if-ge v0, p1, :cond_2
+    if-ge v2, v0, :cond_2
 
     .line 4
-    iget-object v4, p0, Lj3/yq0;->b:[D
+    iget-object v3, p0, Lj3/yq0;->h:[Z
 
-    aget-wide v5, v4, v0
+    aget-boolean v3, v3, v2
 
-    cmpl-double v4, v5, v2
+    if-ne v3, p1, :cond_1
 
-    if-nez v4, :cond_1
-
-    return v0
+    return v2
 
     :cond_1
-    add-int/lit8 v0, v0, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
@@ -647,42 +630,42 @@
 .end method
 
 .method public final synthetic remove(I)Ljava/lang/Object;
-    .locals 5
+    .locals 4
 
     .line 7
-    invoke-virtual {p0}, Lj3/hq0;->a()V
+    invoke-virtual {p0}, Lj3/vq0;->a()V
 
     .line 8
-    invoke-virtual {p0, p1}, Lj3/yq0;->c(I)V
+    invoke-virtual {p0, p1}, Lj3/yq0;->d(I)V
 
     .line 9
-    iget-object v0, p0, Lj3/yq0;->b:[D
+    iget-object v0, p0, Lj3/yq0;->h:[Z
 
-    aget-wide v1, v0, p1
+    aget-boolean v1, v0, p1
 
     .line 10
-    iget v3, p0, Lj3/yq0;->h:I
+    iget v2, p0, Lj3/yq0;->i:I
 
-    add-int/lit8 v4, v3, -0x1
+    add-int/lit8 v3, v2, -0x1
 
-    if-ge p1, v4, :cond_0
+    if-ge p1, v3, :cond_0
 
-    add-int/lit8 v4, p1, 0x1
+    add-int/lit8 v3, p1, 0x1
 
-    sub-int/2addr v3, p1
+    sub-int/2addr v2, p1
 
-    add-int/lit8 v3, v3, -0x1
+    add-int/lit8 v2, v2, -0x1
 
     .line 11
-    invoke-static {v0, v4, v0, p1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v0, v3, v0, p1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 12
     :cond_0
-    iget p1, p0, Lj3/yq0;->h:I
+    iget p1, p0, Lj3/yq0;->i:I
 
     add-int/lit8 p1, p1, -0x1
 
-    iput p1, p0, Lj3/yq0;->h:I
+    iput p1, p0, Lj3/yq0;->i:I
 
     .line 13
     iget p1, p0, Ljava/util/AbstractList;->modCount:I
@@ -692,7 +675,7 @@
     iput p1, p0, Ljava/util/AbstractList;->modCount:I
 
     .line 14
-    invoke-static {v1, v2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
 
@@ -700,10 +683,10 @@
 .end method
 
 .method public final remove(Ljava/lang/Object;)Z
-    .locals 5
+    .locals 4
 
     .line 1
-    invoke-virtual {p0}, Lj3/hq0;->a()V
+    invoke-virtual {p0}, Lj3/vq0;->a()V
 
     const/4 v0, 0x0
 
@@ -711,16 +694,16 @@
 
     .line 2
     :goto_0
-    iget v2, p0, Lj3/yq0;->h:I
+    iget v2, p0, Lj3/yq0;->i:I
 
     if-ge v1, v2, :cond_1
 
     .line 3
-    iget-object v2, p0, Lj3/yq0;->b:[D
+    iget-object v2, p0, Lj3/yq0;->h:[Z
 
-    aget-wide v3, v2, v1
+    aget-boolean v2, v2, v1
 
-    invoke-static {v3, v4}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v2
 
@@ -731,11 +714,11 @@
     if-eqz v2, :cond_0
 
     .line 4
-    iget-object p1, p0, Lj3/yq0;->b:[D
+    iget-object p1, p0, Lj3/yq0;->h:[Z
 
     add-int/lit8 v0, v1, 0x1
 
-    iget v2, p0, Lj3/yq0;->h:I
+    iget v2, p0, Lj3/yq0;->i:I
 
     sub-int/2addr v2, v1
 
@@ -746,11 +729,11 @@
     invoke-static {p1, v0, p1, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 5
-    iget p1, p0, Lj3/yq0;->h:I
+    iget p1, p0, Lj3/yq0;->i:I
 
     sub-int/2addr p1, v3
 
-    iput p1, p0, Lj3/yq0;->h:I
+    iput p1, p0, Lj3/yq0;->i:I
 
     .line 6
     iget p1, p0, Ljava/util/AbstractList;->modCount:I
@@ -774,27 +757,27 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lj3/hq0;->a()V
+    invoke-virtual {p0}, Lj3/vq0;->a()V
 
     if-lt p2, p1, :cond_0
 
     .line 2
-    iget-object v0, p0, Lj3/yq0;->b:[D
+    iget-object v0, p0, Lj3/yq0;->h:[Z
 
-    iget v1, p0, Lj3/yq0;->h:I
+    iget v1, p0, Lj3/yq0;->i:I
 
     sub-int/2addr v1, p2
 
     invoke-static {v0, p2, v0, p1, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 3
-    iget v0, p0, Lj3/yq0;->h:I
+    iget v0, p0, Lj3/yq0;->i:I
 
     sub-int/2addr p2, p1
 
     sub-int/2addr v0, p2
 
-    iput v0, p0, Lj3/yq0;->h:I
+    iput v0, p0, Lj3/yq0;->i:I
 
     .line 4
     iget p1, p0, Ljava/util/AbstractList;->modCount:I
@@ -817,32 +800,32 @@
 .end method
 
 .method public final synthetic set(ILjava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+    .locals 2
 
     .line 1
-    check-cast p2, Ljava/lang/Double;
+    check-cast p2, Ljava/lang/Boolean;
 
     .line 2
-    invoke-virtual {p2}, Ljava/lang/Double;->doubleValue()D
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result-wide v0
+    move-result p2
 
     .line 3
-    invoke-virtual {p0}, Lj3/hq0;->a()V
+    invoke-virtual {p0}, Lj3/vq0;->a()V
 
     .line 4
-    invoke-virtual {p0, p1}, Lj3/yq0;->c(I)V
+    invoke-virtual {p0, p1}, Lj3/yq0;->d(I)V
 
     .line 5
-    iget-object p2, p0, Lj3/yq0;->b:[D
+    iget-object v0, p0, Lj3/yq0;->h:[Z
 
-    aget-wide v2, p2, p1
+    aget-boolean v1, v0, p1
 
     .line 6
-    aput-wide v0, p2, p1
+    aput-boolean p2, v0, p1
 
     .line 7
-    invoke-static {v2, v3}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
 
@@ -853,7 +836,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lj3/yq0;->h:I
+    iget v0, p0, Lj3/yq0;->i:I
 
     return v0
 .end method

@@ -65,7 +65,7 @@
     .line 5
     iget-object v1, v1, Landroidx/fragment/app/u;->a:Landroidx/fragment/app/w;
 
-    iget-object v1, v1, Landroidx/fragment/app/w;->i:Landroidx/fragment/app/FragmentManager;
+    iget-object v1, v1, Landroidx/fragment/app/w;->j:Landroidx/fragment/app/FragmentManager;
 
     invoke-virtual {v1}, Landroidx/fragment/app/FragmentManager;->g0()Landroid/os/Parcelable;
 

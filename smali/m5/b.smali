@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public a:I
+.field public g:I
 
-.field public final b:I
+.field public final h:I
 
-.field public final synthetic h:Lm5/c;
+.field public final synthetic i:Lm5/c;
 
 
 # direct methods
@@ -16,21 +16,21 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lm5/b;->h:Lm5/c;
+    iput-object p1, p0, Lm5/b;->i:Lm5/c;
 
     invoke-direct {p0}, Lm5/c$a;-><init>()V
 
     const/4 v0, 0x0
 
     .line 2
-    iput v0, p0, Lm5/b;->a:I
+    iput v0, p0, Lm5/b;->g:I
 
     .line 3
     invoke-virtual {p1}, Lm5/c;->size()I
 
     move-result p1
 
-    iput p1, p0, Lm5/b;->b:I
+    iput p1, p0, Lm5/b;->h:I
 
     return-void
 .end method
@@ -41,22 +41,22 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lm5/b;->a:I
+    iget v0, p0, Lm5/b;->g:I
 
     .line 2
-    iget v1, p0, Lm5/b;->b:I
+    iget v1, p0, Lm5/b;->h:I
 
     if-ge v0, v1, :cond_0
 
     add-int/lit8 v1, v0, 0x1
 
     .line 3
-    iput v1, p0, Lm5/b;->a:I
+    iput v1, p0, Lm5/b;->g:I
 
     .line 4
-    iget-object v1, p0, Lm5/b;->h:Lm5/c;
+    iget-object v1, p0, Lm5/b;->i:Lm5/c;
 
-    invoke-virtual {v1, v0}, Lm5/c;->f(I)B
+    invoke-virtual {v1, v0}, Lm5/c;->g(I)B
 
     move-result v0
 
@@ -75,9 +75,9 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lm5/b;->a:I
+    iget v0, p0, Lm5/b;->g:I
 
-    iget v1, p0, Lm5/b;->b:I
+    iget v1, p0, Lm5/b;->h:I
 
     if-ge v0, v1, :cond_0
 

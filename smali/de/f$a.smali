@@ -19,7 +19,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lde/g;->a:Lde/g;
+    sget-object v0, Lde/g;->g:Lde/g;
 
     if-ne p1, v0, :cond_0
 
@@ -27,7 +27,7 @@
 
     .line 2
     :cond_0
-    sget-object v0, Lde/f$a$a;->a:Lde/f$a$a;
+    sget-object v0, Lde/f$a$a;->g:Lde/f$a$a;
 
     invoke-interface {p1, p0, v0}, Lde/f;->fold(Ljava/lang/Object;Lke/p;)Ljava/lang/Object;
 

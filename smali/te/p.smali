@@ -62,14 +62,14 @@
 
 # virtual methods
 .method public final a(Ljava/lang/Object;)Z
-    .locals 3
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)Z"
         }
     .end annotation
 
-    if-eqz p1, :cond_3
+    if-eqz p1, :cond_5
 
     .line 1
     :goto_0
@@ -84,7 +84,7 @@
 
     const/4 v2, 0x1
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_4
 
     if-eq v1, v2, :cond_1
 
@@ -105,20 +105,34 @@
 
     invoke-virtual {v0}, Lte/q;->e()Lte/q;
 
-    move-result-object v2
+    move-result-object v3
 
-    invoke-virtual {v1, p0, v0, v2}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
+    :cond_2
+    invoke-virtual {v1, p0, v0, v3}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
 
     goto :goto_0
 
-    :cond_2
+    :cond_3
+    invoke-virtual {v1, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    if-eq v2, v0, :cond_2
+
+    goto :goto_0
+
+    :cond_4
     return v2
 
-    :cond_3
+    :cond_5
     const-string p1, "element"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -163,7 +177,7 @@
     if-eqz v8, :cond_1
 
     .line 3
-    sget-object v7, Lte/q;->g:Lp5/b0;
+    sget-object v7, Lte/q;->g:Lte/w;
 
     goto :goto_4
 
@@ -293,7 +307,7 @@
 
     .line 15
     :goto_4
-    sget-object v1, Lte/q;->g:Lp5/b0;
+    sget-object v1, Lte/q;->g:Lte/w;
 
     if-eq v7, v1, :cond_8
 
@@ -307,7 +321,21 @@
 
     move-result-object v2
 
+    :cond_9
     invoke-virtual {v1, p0, v0, v2}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    move-result v3
+
+    if-eqz v3, :cond_a
+
     goto :goto_0
+
+    :cond_a
+    invoke-virtual {v1, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    if-eq v3, v0, :cond_9
+
+    goto/16 :goto_0
 .end method

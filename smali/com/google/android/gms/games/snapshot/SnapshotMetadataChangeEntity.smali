@@ -22,15 +22,15 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final b:Ljava/lang/Long;
+.field public final h:Ljava/lang/Long;
 
-.field public final h:Landroid/net/Uri;
+.field public final i:Landroid/net/Uri;
 
-.field public i:Lcom/google/android/gms/common/data/BitmapTeleporter;
+.field public j:Lcom/google/android/gms/common/data/BitmapTeleporter;
 
-.field public final j:Ljava/lang/Long;
+.field public final k:Ljava/lang/Long;
 
 
 # direct methods
@@ -75,19 +75,19 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zze;-><init>()V
 
     .line 3
-    iput-object p1, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->g:Ljava/lang/String;
 
     .line 4
-    iput-object p2, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->b:Ljava/lang/Long;
+    iput-object p2, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->h:Ljava/lang/Long;
 
     .line 5
-    iput-object p3, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->i:Lcom/google/android/gms/common/data/BitmapTeleporter;
+    iput-object p3, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->j:Lcom/google/android/gms/common/data/BitmapTeleporter;
 
     .line 6
-    iput-object p4, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->h:Landroid/net/Uri;
+    iput-object p4, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->i:Landroid/net/Uri;
 
     .line 7
-    iput-object p5, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->j:Ljava/lang/Long;
+    iput-object p5, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->k:Ljava/lang/Long;
 
     if-eqz p3, :cond_1
 
@@ -128,7 +128,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->g:Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -138,7 +138,7 @@
     const/4 v1, 0x2
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->b:Ljava/lang/Long;
+    iget-object v2, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->h:Ljava/lang/Long;
 
     .line 5
     invoke-static {p1, v1, v2, v3}, Ld2/b;->k(Landroid/os/Parcel;ILjava/lang/Long;Z)V
@@ -146,7 +146,7 @@
     const/4 v1, 0x4
 
     .line 6
-    iget-object v2, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->h:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->i:Landroid/net/Uri;
 
     .line 7
     invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
@@ -154,7 +154,7 @@
     const/4 v1, 0x5
 
     .line 8
-    iget-object v2, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->i:Lcom/google/android/gms/common/data/BitmapTeleporter;
+    iget-object v2, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->j:Lcom/google/android/gms/common/data/BitmapTeleporter;
 
     .line 9
     invoke-static {p1, v1, v2, p2, v3}, Ld2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
@@ -162,7 +162,7 @@
     const/4 p2, 0x6
 
     .line 10
-    iget-object v1, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->j:Ljava/lang/Long;
+    iget-object v1, p0, Lcom/google/android/gms/games/snapshot/SnapshotMetadataChangeEntity;->k:Ljava/lang/Long;
 
     .line 11
     invoke-static {p1, p2, v1, v3}, Ld2/b;->k(Landroid/os/Parcel;ILjava/lang/Long;Z)V

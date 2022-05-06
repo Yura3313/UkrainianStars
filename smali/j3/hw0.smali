@@ -1,36 +1,34 @@
 .class public final Lj3/hw0;
-.super Ljava/lang/Object;
+.super Landroid/content/BroadcastReceiver;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # instance fields
-.field public final a:I
-
-.field public final b:J
-
-.field public volatile c:J
-
-.field public volatile d:J
+.field public final synthetic a:Lj3/gw0;
 
 
 # direct methods
-.method public constructor <init>(IJ)V
+.method public constructor <init>(Lj3/gw0;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lj3/hw0;->a:Lj3/gw0;
+
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 0
+
+    .line 1
+    iget-object p1, p0, Lj3/hw0;->a:Lj3/gw0;
 
     .line 2
-    iput p1, p0, Lj3/hw0;->a:I
-
-    .line 3
-    iput-wide p2, p0, Lj3/hw0;->b:J
-
-    .line 4
-    iput-wide p2, p0, Lj3/hw0;->c:J
-
-    .line 5
-    iput-wide p2, p0, Lj3/hw0;->d:J
+    invoke-virtual {p1}, Lj3/gw0;->d()V
 
     return-void
 .end method

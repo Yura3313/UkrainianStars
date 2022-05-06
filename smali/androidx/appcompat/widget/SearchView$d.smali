@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/appcompat/widget/SearchView;
+.field public final synthetic g:Landroidx/appcompat/widget/SearchView;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$d;->a:Landroidx/appcompat/widget/SearchView;
+    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$d;->g:Landroidx/appcompat/widget/SearchView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,9 +39,9 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/SearchView$d;->a:Landroidx/appcompat/widget/SearchView;
+    iget-object p1, p0, Landroidx/appcompat/widget/SearchView$d;->g:Landroidx/appcompat/widget/SearchView;
 
-    iget-object v0, p1, Landroidx/appcompat/widget/SearchView;->R:Landroid/view/View$OnFocusChangeListener;
+    iget-object v0, p1, Landroidx/appcompat/widget/SearchView;->S:Landroid/view/View$OnFocusChangeListener;
 
     if-eqz v0, :cond_0
 

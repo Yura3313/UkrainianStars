@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final a:Landroid/graphics/Paint;
+.field public final g:Landroid/graphics/Paint;
 
-.field public final b:Landroid/graphics/Matrix;
+.field public final h:Landroid/graphics/Matrix;
 
-.field public h:Landroid/graphics/BitmapShader;
+.field public i:Landroid/graphics/BitmapShader;
 
 
 # direct methods
@@ -36,14 +36,14 @@
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->a:Landroid/graphics/Paint;
+    iput-object p1, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->g:Landroid/graphics/Paint;
 
     .line 4
     new-instance p2, Landroid/graphics/Matrix;
 
     invoke-direct {p2}, Landroid/graphics/Matrix;-><init>()V
 
-    iput-object p2, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->b:Landroid/graphics/Matrix;
+    iput-object p2, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->h:Landroid/graphics/Matrix;
 
     const/4 p2, 0x1
 
@@ -59,7 +59,7 @@
     const-string p1, "context"
 
     .line 7
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -88,7 +88,7 @@
     if-eqz v0, :cond_5
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->h:Landroid/graphics/BitmapShader;
+    iget-object v1, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->i:Landroid/graphics/BitmapShader;
 
     if-eqz v1, :cond_5
 
@@ -101,7 +101,7 @@
 
     const/4 v3, 0x2
 
-    invoke-static {v3}, Lc5/i;->c(I)F
+    invoke-static {v3}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v4
 
@@ -114,7 +114,7 @@
 
     int-to-float v2, v2
 
-    invoke-static {v3}, Lc5/i;->c(I)F
+    invoke-static {v3}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v3
 
@@ -126,14 +126,14 @@
     move-result-object v0
 
     .line 6
-    iget-object v2, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->b:Landroid/graphics/Matrix;
+    iget-object v2, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->h:Landroid/graphics/Matrix;
 
     invoke-virtual {v2}, Landroid/graphics/Matrix;->reset()V
 
     const-string v2, "bitmap"
 
     .line 7
-    invoke-static {v0, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -159,12 +159,12 @@
     div-float v2, v9, v2
 
     .line 9
-    iget-object v3, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->b:Landroid/graphics/Matrix;
+    iget-object v3, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->h:Landroid/graphics/Matrix;
 
     invoke-virtual {v3, v2, v2}, Landroid/graphics/Matrix;->setScale(FF)V
 
     .line 10
-    iget-object v3, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->b:Landroid/graphics/Matrix;
+    iget-object v3, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->h:Landroid/graphics/Matrix;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -193,12 +193,12 @@
     div-float v2, v8, v2
 
     .line 12
-    iget-object v3, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->b:Landroid/graphics/Matrix;
+    iget-object v3, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->h:Landroid/graphics/Matrix;
 
     invoke-virtual {v3, v2, v2}, Landroid/graphics/Matrix;->setScale(FF)V
 
     .line 13
-    iget-object v3, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->b:Landroid/graphics/Matrix;
+    iget-object v3, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->h:Landroid/graphics/Matrix;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
 
@@ -216,12 +216,12 @@
 
     .line 14
     :goto_0
-    iget-object v0, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->b:Landroid/graphics/Matrix;
+    iget-object v0, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->h:Landroid/graphics/Matrix;
 
     invoke-virtual {v1, v0}, Landroid/graphics/BitmapShader;->setLocalMatrix(Landroid/graphics/Matrix;)V
 
     .line 15
-    iget-object v0, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->a:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->g:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
 
@@ -236,11 +236,11 @@
     const/4 v0, 0x1
 
     .line 17
-    invoke-static {v0}, Lc5/i;->c(I)F
+    invoke-static {v0}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v1
 
-    invoke-static {v0}, Lc5/i;->c(I)F
+    invoke-static {v0}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v0
 
@@ -254,7 +254,7 @@
     const/4 v7, 0x0
 
     .line 18
-    iget-object v10, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->a:Landroid/graphics/Paint;
+    iget-object v10, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->g:Landroid/graphics/Paint;
 
     move-object v5, p1
 
@@ -305,7 +305,7 @@
 
     .line 4
     :cond_1
-    iput-object v1, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->h:Landroid/graphics/BitmapShader;
+    iput-object v1, p0, Lcom/supercell/id/view/EdgeAntialiasingImageView;->i:Landroid/graphics/BitmapShader;
 
     return-void
 .end method

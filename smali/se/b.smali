@@ -3,11 +3,11 @@
 .source "CancellableContinuationImpl.kt"
 
 # interfaces
-.implements Lse/m1;
+.implements Lse/l1;
 
 
 # static fields
-.field public static final a:Lse/b;
+.field public static final g:Lse/b;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     invoke-direct {v0}, Lse/b;-><init>()V
 
-    sput-object v0, Lse/b;->a:Lse/b;
+    sput-object v0, Lse/b;->g:Lse/b;
 
     return-void
 .end method

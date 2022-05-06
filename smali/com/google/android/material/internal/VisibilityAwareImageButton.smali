@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field public a:I
+.field public g:I
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/material/internal/VisibilityAwareImageButton;->a:I
+    iput p1, p0, Lcom/google/android/material/internal/VisibilityAwareImageButton;->g:I
 
     return-void
 .end method
@@ -54,7 +54,7 @@
     if-eqz p2, :cond_0
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/internal/VisibilityAwareImageButton;->a:I
+    iput p1, p0, Lcom/google/android/material/internal/VisibilityAwareImageButton;->g:I
 
     :cond_0
     return-void
@@ -64,7 +64,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/internal/VisibilityAwareImageButton;->a:I
+    iget v0, p0, Lcom/google/android/material/internal/VisibilityAwareImageButton;->g:I
 
     return v0
 .end method
@@ -76,7 +76,7 @@
     invoke-super {p0, p1}, Landroid/widget/ImageButton;->setVisibility(I)V
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/internal/VisibilityAwareImageButton;->a:I
+    iput p1, p0, Lcom/google/android/material/internal/VisibilityAwareImageButton;->g:I
 
     return-void
 .end method

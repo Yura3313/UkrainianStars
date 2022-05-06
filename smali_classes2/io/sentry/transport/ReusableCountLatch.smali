@@ -52,7 +52,7 @@
 
     const-string v2, "\' is not allowed"
 
-    invoke-static {v1, p1, v2}, Lb0/c;->c(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p1, v2}, Lb0/c;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field public final a:J
+.field public final g:J
 
 
 # direct methods
@@ -43,13 +43,34 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-wide p1, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->a:J
+    iput-wide p1, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->g:J
 
     return-void
 .end method
 
 
 # virtual methods
+.method public A1(J)Z
+    .locals 3
+
+    .line 1
+    iget-wide v0, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->g:J
+
+    cmp-long v2, p1, v0
+
+    if-gtz v2, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
+    return p1
+.end method
+
 .method public describeContents()I
     .locals 1
 
@@ -82,9 +103,9 @@
     check-cast p1, Lcom/google/android/material/datepicker/DateValidatorPointBackward;
 
     .line 3
-    iget-wide v3, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->a:J
+    iget-wide v3, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->g:J
 
-    iget-wide v5, p1, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->a:J
+    iget-wide v5, p1, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->g:J
 
     cmp-long p1, v3, v5
 
@@ -107,7 +128,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-wide v1, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->a:J
+    iget-wide v1, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->g:J
 
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -129,30 +150,9 @@
     .locals 2
 
     .line 1
-    iget-wide v0, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->a:J
+    iget-wide v0, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->g:J
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     return-void
-.end method
-
-.method public y1(J)Z
-    .locals 3
-
-    .line 1
-    iget-wide v0, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->a:J
-
-    cmp-long v2, p1, v0
-
-    if-gtz v2, :cond_0
-
-    const/4 p1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    :goto_0
-    return p1
 .end method

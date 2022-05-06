@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method public final C3(Lcom/google/android/gms/common/zzj;)Lcom/google/android/gms/common/zzl;
+.method public final D3(Lcom/google/android/gms/common/zzj;)Lcom/google/android/gms/common/zzl;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -29,7 +29,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/common/zzb;->E0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/common/zzb;->F0()Landroid/os/Parcel;
 
     move-result-object v0
 
@@ -49,7 +49,7 @@
     const/4 p1, 0x6
 
     .line 5
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/common/zzb;->P0(ILandroid/os/Parcel;)Landroid/os/Parcel;
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/common/zzb;->Q0(ILandroid/os/Parcel;)Landroid/os/Parcel;
 
     move-result-object p1
 
@@ -68,7 +68,7 @@
     return-object v0
 .end method
 
-.method public final p()Z
+.method public final q()Z
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -77,14 +77,14 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/common/zzb;->E0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/common/zzb;->F0()Landroid/os/Parcel;
 
     move-result-object v0
 
     const/4 v1, 0x7
 
     .line 2
-    invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/internal/common/zzb;->P0(ILandroid/os/Parcel;)Landroid/os/Parcel;
+    invoke-virtual {p0, v1, v0}, Lcom/google/android/gms/internal/common/zzb;->Q0(ILandroid/os/Parcel;)Landroid/os/Parcel;
 
     move-result-object v0
 
@@ -112,7 +112,7 @@
     return v1
 .end method
 
-.method public final t3(Lcom/google/android/gms/common/zzq;Lcom/google/android/gms/dynamic/IObjectWrapper;)Z
+.method public final u3(Lcom/google/android/gms/common/zzq;Lcom/google/android/gms/dynamic/IObjectWrapper;)Z
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -121,7 +121,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/common/zzb;->E0()Landroid/os/Parcel;
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/common/zzb;->F0()Landroid/os/Parcel;
 
     move-result-object v0
 
@@ -144,7 +144,7 @@
     const/4 p1, 0x5
 
     .line 6
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/common/zzb;->P0(ILandroid/os/Parcel;)Landroid/os/Parcel;
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/common/zzb;->Q0(ILandroid/os/Parcel;)Landroid/os/Parcel;
 
     move-result-object p1
 

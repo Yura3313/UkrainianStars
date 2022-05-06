@@ -1,76 +1,97 @@
 .class public final Lod/e;
 .super Lle/j;
-.source "FriendsFragment.kt"
+.source "RegisterEnterEmailPageFragment.kt"
 
 # interfaces
-.implements Lke/a;
+.implements Lke/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lle/j;",
-        "Lke/a<",
-        "Lwd/m1;",
+        "Lke/p<",
+        "Lod/f;",
+        "Ljava/lang/Exception;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic a:Ljava/util/List;
+# static fields
+.field public static final g:Lod/e;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lod/e;->a:Ljava/util/List;
+    new-instance v0, Lod/e;
 
-    const/4 p1, 0x0
+    invoke-direct {v0}, Lod/e;-><init>()V
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    sput-object v0, Lod/e;->g:Lod/e;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lle/j;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke()Ljava/lang/Object;
-    .locals 5
+.method public invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    new-instance v0, Lwd/m1;
+    check-cast p1, Lod/f;
 
-    iget-object v1, p0, Lod/e;->a:Ljava/util/List;
+    check-cast p2, Ljava/lang/Exception;
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_2
+
+    if-eqz p2, :cond_1
 
     .line 2
-    new-instance v2, Lwd/l1;
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
-    if-eqz v1, :cond_0
+    move-result-object p1
 
-    move-object v3, v1
+    if-eqz p1, :cond_0
 
-    goto :goto_0
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 3
-    :cond_0
-    sget-object v3, Lce/n;->a:Lce/n;
-
-    :goto_0
-    sget-object v4, Lce/n;->a:Lce/n;
+    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->F(Ljava/lang/Exception;Lke/l;)V
 
     .line 4
-    invoke-direct {v2, v3, v4}, Lwd/l1;-><init>(Ljava/util/List;Ljava/util/List;)V
+    :cond_0
+    sget-object p1, Lae/i;->a:Lae/i;
+
+    return-object p1
+
+    :cond_1
+    const-string p1, "it"
 
     .line 5
-    invoke-static {v2}, Landroidx/recyclerview/widget/l;->a(Landroidx/recyclerview/widget/l$b;)Landroidx/recyclerview/widget/l$c;
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    move-result-object v2
+    throw v0
 
-    const/4 v3, 0x0
+    :cond_2
+    const-string p1, "$receiver"
 
-    invoke-direct {v0, v1, v3, v2}, Lwd/m1;-><init>(Ljava/util/List;Ljava/util/List;Landroidx/recyclerview/widget/l$c;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
-    return-object v0
+    throw v0
 .end method

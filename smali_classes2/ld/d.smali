@@ -1,513 +1,133 @@
 .class public final Lld/d;
-.super Lle/j;
-.source "ConnectedGamesFragment.kt"
+.super Ljava/lang/Object;
+.source "AvatarAdapters.kt"
 
 # interfaces
-.implements Lke/a;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lle/j;",
-        "Lke/a<",
-        "Lbe/n;",
-        ">;"
-    }
-.end annotation
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field public final synthetic a:Lld/b$c;
+.field public final synthetic g:Lld/c$a;
 
-.field public final synthetic b:Lxd/b0;
+.field public final synthetic h:Ljava/lang/String;
+
+.field public final synthetic i:Lld/c;
 
 
 # direct methods
-.method public constructor <init>(Lld/b$c;Lxd/b0;)V
+.method public constructor <init>(Lld/c$a;Ljava/lang/String;Lld/c;I)V
     .locals 0
 
-    iput-object p1, p0, Lld/d;->a:Lld/b$c;
+    iput-object p1, p0, Lld/d;->g:Lld/c$a;
 
-    iput-object p2, p0, Lld/d;->b:Lxd/b0;
+    iput-object p2, p0, Lld/d;->h:Ljava/lang/String;
 
-    const/4 p1, 0x0
+    iput-object p3, p0, Lld/d;->i:Lld/c;
 
-    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invoke()Ljava/lang/Object;
-    .locals 11
+.method public final onClick(Landroid/view/View;)V
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lld/d;->b:Lxd/b0;
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_e
-
-    invoke-virtual {v0}, Lxd/b0;->a()Lcom/supercell/id/model/IdProfile;
-
-    move-result-object v0
+    iget-object p1, p0, Lld/d;->i:Lld/c;
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/model/IdProfile;->v:Ljava/util/List;
+    iget v0, p1, Lld/c;->d:I
 
     .line 3
-    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+    iget-object v1, p0, Lld/d;->g:Lld/c$a;
 
-    move-result v0
+    invoke-virtual {v1}, Landroidx/recyclerview/widget/RecyclerView$z;->e()I
 
-    if-eqz v0, :cond_0
+    move-result v1
 
-    goto/16 :goto_8
+    invoke-virtual {p1, v1}, Lld/c;->i(I)V
 
     .line 4
-    :cond_0
-    iget-object v0, p0, Lld/d;->a:Lld/b$c;
-
-    iget-object v0, v0, Lld/b$c;->a:Lld/b;
-
-    iget-object v2, p0, Lld/d;->b:Lxd/b0;
-
-    invoke-virtual {v2}, Lxd/b0;->a()Lcom/supercell/id/model/IdProfile;
-
-    move-result-object v2
-
-    sget v3, Lld/b;->k0:I
+    iget-object p1, p0, Lld/d;->i:Lld/c;
 
     .line 5
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v1, p1, Lld/c;->f:Lke/p;
 
     .line 6
-    sget-object v3, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {v3}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lwd/h;
-
-    move-result-object v3
-
-    sget-object v4, Lwd/i1;->HIDE_NOT_CONNECTED_GAMES:Lwd/i1;
-
-    invoke-virtual {v3, v4}, Lwd/h;->a(Lwd/i1;)Z
-
-    move-result v3
+    iget-object v2, p0, Lld/d;->h:Ljava/lang/String;
 
     .line 7
-    iget-object v4, v2, Lcom/supercell/id/model/IdProfile;->b:Ljava/util/List;
+    iget p1, p1, Lld/c;->d:I
 
-    .line 8
-    new-instance v5, Ljava/util/ArrayList;
+    if-eq v0, p1, :cond_3
 
-    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
-
-    .line 9
-    invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v4
-
-    :cond_1
-    :goto_0
-    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v6
-
-    const/4 v7, 0x1
-
-    if-eqz v6, :cond_3
-
-    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v6
-
-    move-object v8, v6
-
-    check-cast v8, Ltc/g;
-
-    if-eqz v3, :cond_2
-
-    .line 10
-    iget-boolean v7, v8, Ltc/g;->a:Z
-
-    :cond_2
-    if-eqz v7, :cond_1
-
-    .line 11
-    invoke-virtual {v5, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
-
-    .line 12
-    :cond_3
-    sget-object v3, Lld/f;->a:Lld/f;
-
-    invoke-static {v5, v3}, Lce/l;->c0(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
-
-    move-result-object v3
-
-    .line 13
-    new-instance v4, Ljava/util/LinkedHashMap;
-
-    invoke-direct {v4}, Ljava/util/LinkedHashMap;-><init>()V
-
-    .line 14
-    invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v3
-
-    :goto_1
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_5
-
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v5
-
-    .line 15
-    move-object v6, v5
-
-    check-cast v6, Ltc/g;
-
-    .line 16
-    invoke-virtual {v6}, Ltc/g;->c()Z
-
-    move-result v6
-
-    invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v6
-
-    .line 17
-    invoke-virtual {v4, v6}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v8
-
-    if-nez v8, :cond_4
-
-    .line 18
-    new-instance v8, Ljava/util/ArrayList;
-
-    invoke-direct {v8}, Ljava/util/ArrayList;-><init>()V
-
-    .line 19
-    invoke-interface {v4, v6, v8}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 20
-    :cond_4
-    check-cast v8, Ljava/util/List;
-
-    .line 21
-    invoke-interface {v8, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    if-gez v0, :cond_0
 
     goto :goto_1
 
-    .line 22
-    :cond_5
-    sget-object v3, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    :cond_0
+    if-le v0, p1, :cond_1
 
-    invoke-virtual {v4, v3}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 p1, 0x1
 
-    move-result-object v3
+    goto :goto_0
 
-    check-cast v3, Ljava/util/List;
+    :cond_1
+    const/4 p1, 0x0
 
-    const/16 v5, 0xa
+    .line 8
+    :goto_0
+    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    if-eqz v3, :cond_6
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
-    .line 23
-    new-instance v6, Ljava/util/ArrayList;
+    move-result-object v0
 
-    invoke-static {v3, v5}, Lce/h;->E(Ljava/lang/Iterable;I)I
+    .line 9
+    iget-object v0, v0, Lvd/r;->j:Lcom/supercell/id/IdConfiguration;
 
-    move-result v8
+    .line 10
+    invoke-virtual {v0}, Lcom/supercell/id/IdConfiguration;->isRTL()Z
 
-    invoke-direct {v6, v8}, Ljava/util/ArrayList;-><init>(I)V
+    move-result v0
 
-    .line 24
-    invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    if-ne p1, v0, :cond_2
 
-    move-result-object v3
-
-    :goto_2
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v8
-
-    if-eqz v8, :cond_7
-
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v8
-
-    .line 25
-    check-cast v8, Ltc/g;
-
-    .line 26
-    new-instance v9, Lld/d0;
-
-    invoke-direct {v9, v8}, Lld/d0;-><init>(Ltc/g;)V
-
-    invoke-virtual {v6, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    sget-object p1, Lcom/supercell/id/view/AvatarEditView$b;->i:Lcom/supercell/id/view/AvatarEditView$b;
 
     goto :goto_2
 
-    :cond_6
-    move-object v6, v1
+    .line 11
+    :cond_2
+    sget-object p1, Lcom/supercell/id/view/AvatarEditView$b;->h:Lcom/supercell/id/view/AvatarEditView$b;
 
-    .line 27
-    :cond_7
-    sget-object v3, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    goto :goto_2
 
-    invoke-virtual {v4, v3}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 12
+    :cond_3
+    :goto_1
+    sget-object p1, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
 
-    move-result-object v3
+    .line 13
+    :goto_2
+    invoke-interface {v1, v2, p1}, Lke/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    check-cast v3, Ljava/util/List;
+    .line 14
+    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    if-eqz v3, :cond_8
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
-    .line 28
-    new-instance v1, Ljava/util/ArrayList;
+    move-result-object p1
 
-    invoke-static {v3, v5}, Lce/h;->E(Ljava/lang/Iterable;I)I
+    .line 15
+    iget-object p1, p1, Lvd/r;->v:Lnc/a;
 
-    move-result v4
+    .line 16
+    sget-object v0, Lnc/a$a;->h:Lnc/a$a;
 
-    invoke-direct {v1, v4}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-virtual {p1, v0}, Lnc/a;->b(Lnc/a$a;)V
 
-    .line 29
-    invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v3
-
-    :goto_3
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_8
-
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v4
-
-    .line 30
-    check-cast v4, Ltc/g;
-
-    .line 31
-    new-instance v8, Lld/y;
-
-    invoke-direct {v8, v4}, Lld/y;-><init>(Ltc/g;)V
-
-    invoke-virtual {v1, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_3
-
-    .line 32
-    :cond_8
-    iput-object v2, v0, Lld/b;->c0:Lcom/supercell/id/model/IdProfile;
-
-    const/4 v2, 0x2
-
-    new-array v3, v2, [Ljava/util/List;
-
-    const/4 v4, 0x0
-
-    aput-object v6, v3, v4
-
-    aput-object v1, v3, v7
-
-    .line 33
-    invoke-static {v3}, Landroidx/savedstate/d;->x([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v1
-
-    .line 34
-    new-instance v3, Ljava/util/ArrayList;
-
-    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
-
-    .line 35
-    check-cast v1, Ljava/util/ArrayList;
-
-    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :cond_9
-    :goto_4
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v6
-
-    if-eqz v6, :cond_a
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v6
-
-    move-object v8, v6
-
-    check-cast v8, Ljava/util/List;
-
-    .line 36
-    invoke-interface {v8}, Ljava/util/Collection;->isEmpty()Z
-
-    move-result v8
-
-    xor-int/2addr v8, v7
-
-    if-eqz v8, :cond_9
-
-    invoke-virtual {v3, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_4
-
-    .line 37
-    :cond_a
-    new-instance v1, Ljava/util/ArrayList;
-
-    invoke-static {v3, v5}, Lce/h;->E(Ljava/lang/Iterable;I)I
-
-    move-result v5
-
-    invoke-direct {v1, v5}, Ljava/util/ArrayList;-><init>(I)V
-
-    .line 38
-    invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v3
-
-    :goto_5
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_d
-
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v5
-
-    .line 39
-    check-cast v5, Ljava/util/List;
-
-    .line 40
-    sget-object v6, Lld/g;->a:Lwd/j;
-
-    .line 41
-    invoke-static {v5}, Lce/l;->l0(Ljava/lang/Iterable;)Ljava/lang/Iterable;
-
-    move-result-object v5
-
-    .line 42
-    new-instance v6, Ljava/util/ArrayList;
-
-    invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
-
-    .line 43
-    check-cast v5, Lce/s;
-
-    invoke-virtual {v5}, Lce/s;->iterator()Ljava/util/Iterator;
-
-    move-result-object v5
-
-    :goto_6
-    move-object v8, v5
-
-    check-cast v8, Lce/t;
-
-    invoke-virtual {v8}, Lce/t;->hasNext()Z
-
-    move-result v9
-
-    if-eqz v9, :cond_c
-
-    invoke-virtual {v8}, Lce/t;->next()Ljava/lang/Object;
-
-    move-result-object v8
-
-    .line 44
-    check-cast v8, Lce/r;
-
-    .line 45
-    iget v9, v8, Lce/r;->a:I
-
-    if-nez v9, :cond_b
-
-    .line 46
-    iget-object v8, v8, Lce/r;->b:Ljava/lang/Object;
-
-    .line 47
-    invoke-static {v8}, Landroidx/savedstate/d;->u(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v8
-
-    goto :goto_7
-
-    :cond_b
-    new-array v9, v2, [Lwd/j1;
-
-    sget-object v10, Lld/g;->a:Lwd/j;
-
-    aput-object v10, v9, v4
-
-    .line 48
-    iget-object v8, v8, Lce/r;->b:Ljava/lang/Object;
-
-    .line 49
-    check-cast v8, Lwd/j1;
-
-    aput-object v8, v9, v7
-
-    invoke-static {v9}, Landroidx/savedstate/d;->v([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v8
-
-    .line 50
-    :goto_7
-    invoke-static {v6, v8}, Lce/j;->I(Ljava/util/Collection;Ljava/lang/Iterable;)Z
-
-    goto :goto_6
-
-    .line 51
-    :cond_c
-    invoke-virtual {v1, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_5
-
-    .line 52
-    :cond_d
-    invoke-static {v1}, Lce/h;->G(Ljava/lang/Iterable;)Ljava/util/List;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lld/b;->d1(Ljava/util/List;)V
-
-    goto :goto_9
-
-    .line 53
-    :cond_e
-    :goto_8
-    iget-object v0, p0, Lld/d;->a:Lld/b$c;
-
-    iget-object v0, v0, Lld/b$c;->a:Lld/b;
-
-    sget v2, Lld/b;->k0:I
-
-    .line 54
-    invoke-virtual {v0, v1}, Lld/b;->d1(Ljava/util/List;)V
-
-    .line 55
-    :goto_9
-    sget-object v0, Lbe/n;->a:Lbe/n;
-
-    return-object v0
+    return-void
 .end method

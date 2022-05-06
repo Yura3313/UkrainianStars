@@ -1,65 +1,109 @@
 .class public final Ls0/c;
 .super Ljava/lang/Object;
-.source "MasterKeys.java"
+.source "MasterKey.java"
 
 
 # annotations
-.annotation runtime Ljava/lang/Deprecated;
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Ls0/c$a;
+    }
 .end annotation
 
 
-# static fields
-.field public static final synthetic a:I
+# instance fields
+.field public final a:Ljava/lang/String;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Object;)V
+    .locals 1
 
     .line 1
-    new-instance v0, Landroid/security/keystore/KeyGenParameterSpec$Builder;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v1, 0x3
+    .line 2
+    iput-object p1, p0, Ls0/c;->a:Ljava/lang/String;
 
-    const-string v2, "_androidx_security_master_key_"
+    .line 3
+    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    invoke-direct {v0, v2, v1}, Landroid/security/keystore/KeyGenParameterSpec$Builder;-><init>(Ljava/lang/String;I)V
+    const/16 v0, 0x17
 
-    const/4 v1, 0x1
+    if-lt p1, v0, :cond_0
 
-    new-array v2, v1, [Ljava/lang/String;
+    .line 4
+    check-cast p2, Landroid/security/keystore/KeyGenParameterSpec;
+
+    :cond_0
+    return-void
+.end method
+
+
+# virtual methods
+.method public toString()Ljava/lang/String;
+    .locals 4
+
+    const-string v0, "MasterKey{keyAlias="
+
+    .line 1
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-object v1, p0, Ls0/c;->a:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", isKeyStoreBacked="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/4 v2, 0x0
+
+    const/16 v3, 0x17
+
+    if-ge v1, v3, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    :try_start_0
+    const-string v1, "AndroidKeyStore"
+
+    .line 3
+    invoke-static {v1}, Ljava/security/KeyStore;->getInstance(Ljava/lang/String;)Ljava/security/KeyStore;
+
+    move-result-object v1
 
     const/4 v3, 0x0
 
-    const-string v4, "GCM"
-
-    aput-object v4, v2, v3
-
-    .line 2
-    invoke-virtual {v0, v2}, Landroid/security/keystore/KeyGenParameterSpec$Builder;->setBlockModes([Ljava/lang/String;)Landroid/security/keystore/KeyGenParameterSpec$Builder;
-
-    move-result-object v0
-
-    new-array v1, v1, [Ljava/lang/String;
-
-    const-string v2, "NoPadding"
-
-    aput-object v2, v1, v3
-
-    .line 3
-    invoke-virtual {v0, v1}, Landroid/security/keystore/KeyGenParameterSpec$Builder;->setEncryptionPaddings([Ljava/lang/String;)Landroid/security/keystore/KeyGenParameterSpec$Builder;
-
-    move-result-object v0
-
-    const/16 v1, 0x100
-
     .line 4
-    invoke-virtual {v0, v1}, Landroid/security/keystore/KeyGenParameterSpec$Builder;->setKeySize(I)Landroid/security/keystore/KeyGenParameterSpec$Builder;
-
-    move-result-object v0
+    invoke-virtual {v1, v3}, Ljava/security/KeyStore;->load(Ljava/security/KeyStore$LoadStoreParameter;)V
 
     .line 5
-    invoke-virtual {v0}, Landroid/security/keystore/KeyGenParameterSpec$Builder;->build()Landroid/security/keystore/KeyGenParameterSpec;
+    iget-object v3, p0, Ls0/c;->a:Ljava/lang/String;
 
-    return-void
+    invoke-virtual {v1, v3}, Ljava/security/KeyStore;->containsAlias(Ljava/lang/String;)Z
+
+    move-result v2
+    :try_end_0
+    .catch Ljava/security/KeyStoreException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/security/cert/CertificateException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :goto_0
+    const-string v1, "}"
+
+    .line 6
+    invoke-static {v0, v2, v1}, Landroidx/appcompat/app/i;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

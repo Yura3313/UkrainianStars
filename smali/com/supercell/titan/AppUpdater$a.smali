@@ -36,7 +36,7 @@
     check-cast p1, Lw4/a;
 
     .line 2
-    invoke-static {p1}, Landroid/support/v4/media/a;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
 
     return-void
 .end method

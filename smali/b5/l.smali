@@ -40,7 +40,7 @@
     return-void
 .end method
 
-.method public static b(Lb5/q;Lb5/i;)V
+.method public static b(Lb5/o;Lb5/i;)V
     .locals 12
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -51,7 +51,7 @@
     :try_start_0
     new-instance v0, Ljava/util/zip/ZipFile;
 
-    invoke-virtual {p0}, Lb5/q;->a()Ljava/io/File;
+    invoke-virtual {p0}, Lb5/o;->a()Ljava/io/File;
 
     move-result-object v1
 
@@ -60,7 +60,7 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
 
     :try_start_1
-    invoke-virtual {p0}, Lb5/q;->b()Ljava/lang/String;
+    invoke-virtual {p0}, Lb5/o;->b()Ljava/lang/String;
 
     move-result-object p0
 
@@ -302,7 +302,7 @@
     move-exception p1
 
     .line 1
-    sget-object v0, Ly4/i0;->a:Landroidx/fragment/app/t;
+    sget-object v0, Ly4/k0;->a:Landroidx/fragment/app/t;
 
     invoke-virtual {v0, p0, p1}, Landroidx/fragment/app/t;->b(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
@@ -429,9 +429,9 @@
 
     move-result-object v6
 
-    check-cast v6, Lb5/q;
+    check-cast v6, Lb5/o;
 
-    invoke-virtual {v6}, Lb5/q;->b()Ljava/lang/String;
+    invoke-virtual {v6}, Lb5/o;->b()Ljava/lang/String;
 
     move-result-object v6
 
@@ -491,7 +491,7 @@
 
     move-result-object v2
 
-    check-cast v2, Lb5/q;
+    check-cast v2, Lb5/o;
 
     new-instance v5, Ljava/util/HashSet;
 
@@ -499,13 +499,13 @@
 
     new-instance v6, Lb5/g;
 
-    invoke-direct {v6, p0, v5, v2}, Lb5/g;-><init>(Lb5/l;Ljava/util/Set;Lb5/q;)V
+    invoke-direct {v6, p0, v5, v2}, Lb5/g;-><init>(Lb5/l;Ljava/util/Set;Lb5/o;)V
 
-    invoke-static {v2, v6}, Lb5/l;->b(Lb5/q;Lb5/i;)V
+    invoke-static {v2, v6}, Lb5/l;->b(Lb5/o;Lb5/i;)V
 
     iget-object v6, p0, Lb5/l;->a:Lb5/e;
 
-    invoke-virtual {v2}, Lb5/q;->b()Ljava/lang/String;
+    invoke-virtual {v2}, Lb5/o;->b()Ljava/lang/String;
 
     move-result-object v7
 
@@ -595,7 +595,7 @@
 
     aput-object v9, v8, v3
 
-    invoke-virtual {v2}, Lb5/q;->b()Ljava/lang/String;
+    invoke-virtual {v2}, Lb5/o;->b()Ljava/lang/String;
 
     move-result-object v9
 
@@ -603,7 +603,7 @@
 
     const/4 v9, 0x2
 
-    invoke-virtual {v2}, Lb5/q;->a()Ljava/io/File;
+    invoke-virtual {v2}, Lb5/o;->a()Ljava/io/File;
 
     move-result-object v10
 
@@ -640,7 +640,7 @@
 
     const-string v9, "File to remove is not a native library"
 
-    invoke-static {v8, v9}, Lie/a;->c(ZLjava/lang/Object;)V
+    invoke-static {v8, v9}, Ls3/g;->c(ZLjava/lang/Object;)V
 
     invoke-static {v7}, Lb5/e;->e(Ljava/io/File;)V
 
@@ -656,12 +656,12 @@
     return-object v1
 .end method
 
-.method public final c(Lb5/q;Ljava/util/Set;Lb5/j;)V
+.method public final c(Lb5/o;Ljava/util/Set;Lb5/j;)V
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lb5/q;",
+            "Lb5/o;",
             "Ljava/util/Set<",
             "Lb5/k;",
             ">;",
@@ -695,7 +695,7 @@
 
     iget-object v1, p0, Lb5/l;->a:Lb5/e;
 
-    invoke-virtual {p1}, Lb5/q;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lb5/o;->b()Ljava/lang/String;
 
     move-result-object v2
 

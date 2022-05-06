@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public a:J
+.field public g:J
 
 
 # direct methods
@@ -28,7 +28,7 @@
     const-wide/16 p1, -0x1
 
     .line 2
-    iput-wide p1, p0, Lr0/g$a;->a:J
+    iput-wide p1, p0, Lr0/g$a;->g:J
 
     return-void
 .end method

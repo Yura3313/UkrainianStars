@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/material/chip/Chip;
+.field public final synthetic g:Lcom/google/android/material/chip/Chip;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/chip/Chip$a;->a:Lcom/google/android/material/chip/Chip;
+    iput-object p1, p0, Lcom/google/android/material/chip/Chip$a;->g:Lcom/google/android/material/chip/Chip;
 
     invoke-direct {p0}, La2/a0;-><init>()V
 
@@ -32,28 +32,28 @@
 
 
 # virtual methods
-.method public h(I)V
+.method public b(I)V
     .locals 0
 
     return-void
 .end method
 
-.method public j(Landroid/graphics/Typeface;Z)V
+.method public i(Landroid/graphics/Typeface;Z)V
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/chip/Chip$a;->a:Lcom/google/android/material/chip/Chip;
+    iget-object p1, p0, Lcom/google/android/material/chip/Chip$a;->g:Lcom/google/android/material/chip/Chip;
 
     .line 2
-    iget-object p2, p1, Lcom/google/android/material/chip/Chip;->i:Lcom/google/android/material/chip/a;
+    iget-object p2, p1, Lcom/google/android/material/chip/Chip;->j:Lcom/google/android/material/chip/a;
 
     .line 3
-    iget-boolean v0, p2, Lcom/google/android/material/chip/a;->I0:Z
+    iget-boolean v0, p2, Lcom/google/android/material/chip/a;->J0:Z
 
     if-eqz v0, :cond_0
 
     .line 4
-    iget-object p2, p2, Lcom/google/android/material/chip/a;->J:Ljava/lang/CharSequence;
+    iget-object p2, p2, Lcom/google/android/material/chip/a;->K:Ljava/lang/CharSequence;
 
     goto :goto_0
 
@@ -67,12 +67,12 @@
     invoke-virtual {p1, p2}, Landroid/widget/CheckBox;->setText(Ljava/lang/CharSequence;)V
 
     .line 6
-    iget-object p1, p0, Lcom/google/android/material/chip/Chip$a;->a:Lcom/google/android/material/chip/Chip;
+    iget-object p1, p0, Lcom/google/android/material/chip/Chip$a;->g:Lcom/google/android/material/chip/Chip;
 
     invoke-virtual {p1}, Landroid/widget/CheckBox;->requestLayout()V
 
     .line 7
-    iget-object p1, p0, Lcom/google/android/material/chip/Chip$a;->a:Lcom/google/android/material/chip/Chip;
+    iget-object p1, p0, Lcom/google/android/material/chip/Chip$a;->g:Lcom/google/android/material/chip/Chip;
 
     invoke-virtual {p1}, Landroid/widget/CheckBox;->invalidate()V
 

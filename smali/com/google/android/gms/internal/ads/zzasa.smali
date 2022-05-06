@@ -21,9 +21,9 @@
 
 
 # instance fields
-.field public final a:Z
+.field public final g:Z
 
-.field public final b:Ljava/util/List;
+.field public final h:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -39,9 +39,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lj3/e8;
+    new-instance v0, Lj3/g8;
 
-    invoke-direct {v0}, Lj3/e8;-><init>()V
+    invoke-direct {v0}, Lj3/g8;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzasa;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -62,10 +62,10 @@
     const/4 v1, 0x0
 
     .line 3
-    iput-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzasa;->a:Z
+    iput-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzasa;->g:Z
 
     .line 4
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzasa;->b:Ljava/util/List;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzasa;->h:Ljava/util/List;
 
     return-void
 .end method
@@ -85,10 +85,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 6
-    iput-boolean p1, p0, Lcom/google/android/gms/internal/ads/zzasa;->a:Z
+    iput-boolean p1, p0, Lcom/google/android/gms/internal/ads/zzasa;->g:Z
 
     .line 7
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzasa;->b:Ljava/util/List;
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzasa;->h:Ljava/util/List;
 
     return-void
 .end method
@@ -108,7 +108,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iget-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzasa;->a:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzasa;->g:Z
 
     const/4 v2, 0x4
 
@@ -121,7 +121,7 @@
     const/4 v0, 0x3
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzasa;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzasa;->h:Ljava/util/List;
 
     const/4 v2, 0x0
 

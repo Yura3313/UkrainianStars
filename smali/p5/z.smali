@@ -1,28 +1,119 @@
-.class public final enum Lp5/z;
-.super Ljava/lang/Enum;
-.source "Enums.java"
+.class public final Lp5/z;
+.super Ljava/lang/Object;
+.source "EngineFactory.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/lang/Enum<",
-        "Lp5/z;",
-        ">;"
+        "<T_WRAPPER::",
+        "Lp5/a0<",
+        "TT_ENGINE;>;T_ENGINE:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
     }
 .end annotation
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lp5/z;
+.field public static final c:Ljava/util/logging/Logger;
 
-.field public static final enum SHA1:Lp5/z;
+.field public static final d:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/security/Provider;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public static final enum SHA256:Lp5/z;
+.field public static final e:Lp5/z;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lp5/z<",
+            "Lp5/a0$a;",
+            "Ljavax/crypto/Cipher;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public static final enum SHA384:Lp5/z;
+.field public static final f:Lp5/z;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lp5/z<",
+            "Lp5/a0$d;",
+            "Ljavax/crypto/Mac;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public static final enum SHA512:Lp5/z;
+.field public static final g:Lp5/z;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lp5/z<",
+            "Lp5/a0$f;",
+            "Ljava/security/Signature;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final h:Lp5/z;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lp5/z<",
+            "Lp5/a0$e;",
+            "Ljava/security/MessageDigest;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final i:Lp5/z;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lp5/z<",
+            "Lp5/a0$c;",
+            "Ljava/security/KeyPairGenerator;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final j:Lp5/z;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lp5/z<",
+            "Lp5/a0$b;",
+            "Ljava/security/KeyFactory;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field public a:Lp5/a0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TT_WRAPPER;"
+        }
+    .end annotation
+.end field
+
+.field public b:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/security/Provider;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
@@ -30,107 +121,264 @@
     .locals 9
 
     .line 1
-    new-instance v0, Lp5/z;
+    const-class v0, Lp5/z;
 
-    const-string v1, "SHA1"
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
-    const/4 v2, 0x0
+    move-result-object v0
 
-    invoke-direct {v0, v1, v2}, Lp5/z;-><init>(Ljava/lang/String;I)V
+    invoke-static {v0}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
 
-    sput-object v0, Lp5/z;->SHA1:Lp5/z;
+    move-result-object v0
+
+    sput-object v0, Lp5/z;->c:Ljava/util/logging/Logger;
 
     .line 2
-    new-instance v1, Lp5/z;
+    invoke-static {}, Lp5/l0;->b()Z
 
-    const-string v3, "SHA256"
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    const/4 v0, 0x2
+
+    new-array v1, v0, [Ljava/lang/String;
+
+    const-string v2, "GmsCore_OpenSSL"
+
+    const/4 v3, 0x0
+
+    aput-object v2, v1, v3
+
+    const-string v2, "AndroidOpenSSL"
 
     const/4 v4, 0x1
 
-    invoke-direct {v1, v3, v4}, Lp5/z;-><init>(Ljava/lang/String;I)V
-
-    sput-object v1, Lp5/z;->SHA256:Lp5/z;
+    aput-object v2, v1, v4
 
     .line 3
-    new-instance v3, Lp5/z;
+    new-instance v2, Ljava/util/ArrayList;
 
-    const-string v5, "SHA384"
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    const/4 v6, 0x2
+    const/4 v5, 0x0
 
-    invoke-direct {v3, v5, v6}, Lp5/z;-><init>(Ljava/lang/String;I)V
-
-    sput-object v3, Lp5/z;->SHA384:Lp5/z;
+    :goto_0
+    if-ge v5, v0, :cond_1
 
     .line 4
-    new-instance v5, Lp5/z;
-
-    const-string v7, "SHA512"
-
-    const/4 v8, 0x3
-
-    invoke-direct {v5, v7, v8}, Lp5/z;-><init>(Ljava/lang/String;I)V
-
-    sput-object v5, Lp5/z;->SHA512:Lp5/z;
-
-    const/4 v7, 0x4
-
-    new-array v7, v7, [Lp5/z;
-
-    aput-object v0, v7, v2
-
-    aput-object v1, v7, v4
-
-    aput-object v3, v7, v6
-
-    aput-object v5, v7, v8
+    aget-object v6, v1, v5
 
     .line 5
-    sput-object v7, Lp5/z;->$VALUES:[Lp5/z;
+    invoke-static {v6}, Ljava/security/Security;->getProvider(Ljava/lang/String;)Ljava/security/Provider;
+
+    move-result-object v7
+
+    if-eqz v7, :cond_0
+
+    .line 6
+    invoke-interface {v2, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_1
+
+    .line 7
+    :cond_0
+    sget-object v7, Lp5/z;->c:Ljava/util/logging/Logger;
+
+    new-array v8, v4, [Ljava/lang/Object;
+
+    aput-object v6, v8, v3
+
+    const-string v6, "Provider %s not available"
+
+    invoke-static {v6, v8}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v7, v6}, Ljava/util/logging/Logger;->info(Ljava/lang/String;)V
+
+    :goto_1
+    add-int/lit8 v5, v5, 0x1
+
+    goto :goto_0
+
+    .line 8
+    :cond_1
+    sput-object v2, Lp5/z;->d:Ljava/util/List;
+
+    goto :goto_2
+
+    .line 9
+    :cond_2
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    sput-object v0, Lp5/z;->d:Ljava/util/List;
+
+    .line 10
+    :goto_2
+    new-instance v0, Lp5/z;
+
+    new-instance v1, Lp5/a0$a;
+
+    invoke-direct {v1}, Lp5/a0$a;-><init>()V
+
+    invoke-direct {v0, v1}, Lp5/z;-><init>(Lp5/a0;)V
+
+    sput-object v0, Lp5/z;->e:Lp5/z;
+
+    .line 11
+    new-instance v0, Lp5/z;
+
+    new-instance v1, Lp5/a0$d;
+
+    invoke-direct {v1}, Lp5/a0$d;-><init>()V
+
+    invoke-direct {v0, v1}, Lp5/z;-><init>(Lp5/a0;)V
+
+    sput-object v0, Lp5/z;->f:Lp5/z;
+
+    .line 12
+    new-instance v0, Lp5/z;
+
+    new-instance v1, Lp5/a0$f;
+
+    invoke-direct {v1}, Lp5/a0$f;-><init>()V
+
+    invoke-direct {v0, v1}, Lp5/z;-><init>(Lp5/a0;)V
+
+    sput-object v0, Lp5/z;->g:Lp5/z;
+
+    .line 13
+    new-instance v0, Lp5/z;
+
+    new-instance v1, Lp5/a0$e;
+
+    invoke-direct {v1}, Lp5/a0$e;-><init>()V
+
+    invoke-direct {v0, v1}, Lp5/z;-><init>(Lp5/a0;)V
+
+    sput-object v0, Lp5/z;->h:Lp5/z;
+
+    .line 14
+    new-instance v0, Lp5/z;
+
+    new-instance v1, Lp5/a0$c;
+
+    invoke-direct {v1}, Lp5/a0$c;-><init>()V
+
+    invoke-direct {v0, v1}, Lp5/z;-><init>(Lp5/a0;)V
+
+    sput-object v0, Lp5/z;->i:Lp5/z;
+
+    .line 15
+    new-instance v0, Lp5/z;
+
+    new-instance v1, Lp5/a0$b;
+
+    invoke-direct {v1}, Lp5/a0$b;-><init>()V
+
+    invoke-direct {v0, v1}, Lp5/z;-><init>(Lp5/a0;)V
+
+    sput-object v0, Lp5/z;->j:Lp5/z;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;I)V
+.method public constructor <init>(Lp5/a0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()V"
+            "(TT_WRAPPER;)V"
         }
     .end annotation
 
     .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lp5/z;->a:Lp5/a0;
+
+    .line 3
+    sget-object p1, Lp5/z;->d:Ljava/util/List;
+
+    iput-object p1, p0, Lp5/z;->b:Ljava/util/List;
 
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lp5/z;
-    .locals 1
+
+# virtual methods
+.method public a(Ljava/lang/String;)Ljava/lang/Object;
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")TT_ENGINE;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
 
     .line 1
-    const-class v0, Lp5/z;
+    iget-object v0, p0, Lp5/z;->b:Ljava/util/List;
 
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    move-result-object p0
-
-    check-cast p0, Lp5/z;
-
-    return-object p0
-.end method
-
-.method public static values()[Lp5/z;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lp5/z;->$VALUES:[Lp5/z;
-
-    invoke-virtual {v0}, [Lp5/z;->clone()Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    check-cast v0, [Lp5/z;
+    const/4 v1, 0x0
 
-    return-object v0
+    move-object v2, v1
+
+    :cond_0
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/security/Provider;
+
+    .line 2
+    :try_start_0
+    iget-object v4, p0, Lp5/z;->a:Lp5/a0;
+
+    invoke-interface {v4, p1, v3}, Lp5/a0;->a(Ljava/lang/String;Ljava/security/Provider;)Ljava/lang/Object;
+
+    move-result-object p1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p1
+
+    :catch_0
+    move-exception v3
+
+    if-nez v2, :cond_0
+
+    move-object v2, v3
+
+    goto :goto_0
+
+    .line 3
+    :cond_1
+    iget-object v0, p0, Lp5/z;->a:Lp5/a0;
+
+    invoke-interface {v0, p1, v1}, Lp5/a0;->a(Ljava/lang/String;Ljava/security/Provider;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
 .end method

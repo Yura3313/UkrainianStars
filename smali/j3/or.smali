@@ -1,81 +1,439 @@
 .class public final Lj3/or;
-.super Lj3/ts;
+.super Lj3/ev0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Lj3/c2;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lj3/ts<",
-        "Lo1/a;",
-        ">;",
-        "Lj3/c2;"
-    }
-.end annotation
 
 
 # instance fields
-.field public b:Landroid/os/Bundle;
+.field public o:I
+
+.field public p:Ljava/util/Date;
+
+.field public q:Ljava/util/Date;
+
+.field public r:J
+
+.field public s:J
+
+.field public t:D
+
+.field public u:F
+
+.field public v:Lj3/lv0;
+
+.field public w:J
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Set;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Set<",
-            "Lj3/rt<",
-            "Lo1/a;",
-            ">;>;)V"
-        }
-    .end annotation
+.method public constructor <init>()V
+    .locals 2
+
+    const-string v0, "mvhd"
 
     .line 1
-    invoke-direct {p0, p1}, Lj3/ts;-><init>(Ljava/util/Set;)V
+    invoke-direct {p0, v0}, Lj3/ev0;-><init>(Ljava/lang/String;)V
+
+    const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
 
     .line 2
-    new-instance p1, Landroid/os/Bundle;
+    iput-wide v0, p0, Lj3/or;->t:D
 
-    invoke-direct {p1}, Landroid/os/Bundle;-><init>()V
+    const/high16 v0, 0x3f800000    # 1.0f
 
-    iput-object p1, p0, Lj3/or;->b:Landroid/os/Bundle;
+    .line 3
+    iput v0, p0, Lj3/or;->u:F
+
+    .line 4
+    sget-object v0, Lj3/lv0;->j:Lj3/lv0;
+
+    iput-object v0, p0, Lj3/or;->v:Lj3/lv0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final declared-synchronized x(Ljava/lang/String;Landroid/os/Bundle;)V
-    .locals 0
+.method public final e(Ljava/nio/ByteBuffer;)V
+    .locals 23
 
-    monitor-enter p0
+    move-object/from16 v0, p0
 
     .line 1
-    :try_start_0
-    iget-object p1, p0, Lj3/or;->b:Landroid/os/Bundle;
+    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->get()B
 
-    invoke-virtual {p1, p2}, Landroid/os/Bundle;->putAll(Landroid/os/Bundle;)V
+    move-result v1
+
+    if-gez v1, :cond_0
+
+    add-int/lit16 v1, v1, 0x100
 
     .line 2
-    sget-object p1, Li1/o;->b:Lj3/vs;
-
-    invoke-virtual {p0, p1}, Lj3/ts;->E0(Lj3/vs;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :cond_0
+    iput v1, v0, Lj3/or;->o:I
 
     .line 3
-    monitor-exit p0
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->j(Ljava/nio/ByteBuffer;)I
+
+    .line 4
+    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->get()B
+
+    .line 5
+    iget-boolean v1, v0, Lj3/ev0;->h:Z
+
+    if-nez v1, :cond_1
+
+    .line 6
+    invoke-virtual/range {p0 .. p0}, Lj3/ev0;->d()V
+
+    .line 7
+    :cond_1
+    iget v1, v0, Lj3/or;->o:I
+
+    const/4 v2, 0x1
+
+    if-ne v1, v2, :cond_2
+
+    .line 8
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->k(Ljava/nio/ByteBuffer;)J
+
+    move-result-wide v3
+
+    invoke-static {v3, v4}, Lj3/pr;->a(J)Ljava/util/Date;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lj3/or;->p:Ljava/util/Date;
+
+    .line 9
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->k(Ljava/nio/ByteBuffer;)J
+
+    move-result-wide v3
+
+    invoke-static {v3, v4}, Lj3/pr;->a(J)Ljava/util/Date;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lj3/or;->q:Ljava/util/Date;
+
+    .line 10
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->i(Ljava/nio/ByteBuffer;)J
+
+    move-result-wide v3
+
+    iput-wide v3, v0, Lj3/or;->r:J
+
+    .line 11
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->k(Ljava/nio/ByteBuffer;)J
+
+    move-result-wide v3
+
+    iput-wide v3, v0, Lj3/or;->s:J
+
+    goto :goto_0
+
+    .line 12
+    :cond_2
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->i(Ljava/nio/ByteBuffer;)J
+
+    move-result-wide v3
+
+    invoke-static {v3, v4}, Lj3/pr;->a(J)Ljava/util/Date;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lj3/or;->p:Ljava/util/Date;
+
+    .line 13
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->i(Ljava/nio/ByteBuffer;)J
+
+    move-result-wide v3
+
+    invoke-static {v3, v4}, Lj3/pr;->a(J)Ljava/util/Date;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lj3/or;->q:Ljava/util/Date;
+
+    .line 14
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->i(Ljava/nio/ByteBuffer;)J
+
+    move-result-wide v3
+
+    iput-wide v3, v0, Lj3/or;->r:J
+
+    .line 15
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->i(Ljava/nio/ByteBuffer;)J
+
+    move-result-wide v3
+
+    iput-wide v3, v0, Lj3/or;->s:J
+
+    .line 16
+    :goto_0
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->l(Ljava/nio/ByteBuffer;)D
+
+    move-result-wide v3
+
+    iput-wide v3, v0, Lj3/or;->t:D
+
+    const/4 v1, 0x2
+
+    new-array v1, v1, [B
+
+    move-object/from16 v3, p1
+
+    .line 17
+    invoke-virtual {v3, v1}, Ljava/nio/ByteBuffer;->get([B)Ljava/nio/ByteBuffer;
+
+    const/4 v4, 0x0
+
+    .line 18
+    aget-byte v5, v1, v4
+
+    shl-int/lit8 v5, v5, 0x8
+
+    const v6, 0xff00
+
+    and-int/2addr v5, v6
+
+    or-int/2addr v4, v5
+
+    int-to-short v4, v4
+
+    .line 19
+    aget-byte v1, v1, v2
+
+    and-int/lit16 v1, v1, 0xff
+
+    or-int/2addr v1, v4
+
+    int-to-short v1, v1
+
+    int-to-float v1, v1
+
+    const/high16 v2, 0x43800000    # 256.0f
+
+    div-float/2addr v1, v2
+
+    .line 20
+    iput v1, v0, Lj3/or;->u:F
+
+    .line 21
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->j(Ljava/nio/ByteBuffer;)I
+
+    .line 22
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->i(Ljava/nio/ByteBuffer;)J
+
+    .line 23
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->i(Ljava/nio/ByteBuffer;)J
+
+    .line 24
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->l(Ljava/nio/ByteBuffer;)D
+
+    move-result-wide v5
+
+    .line 25
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->l(Ljava/nio/ByteBuffer;)D
+
+    move-result-wide v7
+
+    .line 26
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->m(Ljava/nio/ByteBuffer;)D
+
+    move-result-wide v13
+
+    .line 27
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->l(Ljava/nio/ByteBuffer;)D
+
+    move-result-wide v9
+
+    .line 28
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->l(Ljava/nio/ByteBuffer;)D
+
+    move-result-wide v11
+
+    .line 29
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->m(Ljava/nio/ByteBuffer;)D
+
+    move-result-wide v15
+
+    .line 30
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->l(Ljava/nio/ByteBuffer;)D
+
+    move-result-wide v19
+
+    .line 31
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->l(Ljava/nio/ByteBuffer;)D
+
+    move-result-wide v21
+
+    .line 32
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->m(Ljava/nio/ByteBuffer;)D
+
+    move-result-wide v17
+
+    .line 33
+    new-instance v1, Lj3/lv0;
+
+    move-object v4, v1
+
+    invoke-direct/range {v4 .. v22}, Lj3/lv0;-><init>(DDDDDDDDD)V
+
+    .line 34
+    iput-object v1, v0, Lj3/or;->v:Lj3/lv0;
+
+    .line 35
+    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->getInt()I
+
+    .line 36
+    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->getInt()I
+
+    .line 37
+    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->getInt()I
+
+    .line 38
+    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->getInt()I
+
+    .line 39
+    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->getInt()I
+
+    .line 40
+    invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->getInt()I
+
+    .line 41
+    invoke-static/range {p1 .. p1}, Lj3/ex0;->i(Ljava/nio/ByteBuffer;)J
+
+    move-result-wide v1
+
+    iput-wide v1, v0, Lj3/or;->w:J
 
     return-void
+.end method
 
-    :catchall_0
-    move-exception p1
+.method public final toString()Ljava/lang/String;
+    .locals 4
 
-    monitor-exit p0
+    const-string v0, "MovieHeaderBox["
 
-    throw p1
+    const-string v1, "creationTime="
+
+    .line 1
+    invoke-static {v0, v1}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 2
+    iget-object v1, p0, Lj3/or;->p:Ljava/util/Date;
+
+    .line 3
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ";"
+
+    .line 4
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "modificationTime="
+
+    .line 5
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 6
+    iget-object v2, p0, Lj3/or;->q:Ljava/util/Date;
+
+    .line 7
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 8
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "timescale="
+
+    .line 9
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 10
+    iget-wide v2, p0, Lj3/or;->r:J
+
+    .line 11
+    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 12
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "duration="
+
+    .line 13
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 14
+    iget-wide v2, p0, Lj3/or;->s:J
+
+    .line 15
+    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 16
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "rate="
+
+    .line 17
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 18
+    iget-wide v2, p0, Lj3/or;->t:D
+
+    .line 19
+    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
+
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "volume="
+
+    .line 21
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 22
+    iget v2, p0, Lj3/or;->u:F
+
+    .line 23
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 24
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "matrix="
+
+    .line 25
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lj3/or;->v:Lj3/lv0;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 26
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, "nextTrackId="
+
+    .line 27
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 28
+    iget-wide v1, p0, Lj3/or;->w:J
+
+    .line 29
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    const-string v1, "]"
+
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 31
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

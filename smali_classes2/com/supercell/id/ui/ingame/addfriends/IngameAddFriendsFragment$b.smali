@@ -20,27 +20,27 @@
     value = {
         "Lle/j;",
         "Lke/l<",
-        "Lwd/k<",
+        "Lvd/k<",
         "+",
-        "Ltc/f;",
+        "Lqc/j;",
         "+",
         "Lcom/supercell/id/util/NormalizedError;",
         ">;",
-        "Lbe/n;",
+        "Lae/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$b;->a:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$b;->g:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
 
     const/4 p1, 0x1
 
@@ -55,23 +55,23 @@
     .locals 3
 
     .line 1
-    check-cast p1, Lwd/k;
+    check-cast p1, Lvd/k;
 
     const/4 v0, 0x0
 
     if-eqz p1, :cond_0
 
     .line 2
-    invoke-virtual {p1}, Lwd/k;->a()Ljava/lang/Object;
+    invoke-virtual {p1}, Lvd/k;->a()Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Ltc/f;
+    check-cast p1, Lqc/j;
 
     if-eqz p1, :cond_0
 
     .line 3
-    iget-object p1, p1, Ltc/f;->c:Ljava/util/List;
+    iget-object p1, p1, Lqc/j;->c:Ljava/util/List;
 
     if-eqz p1, :cond_0
 
@@ -87,7 +87,7 @@
 
     .line 5
     :goto_0
-    iget-object v1, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$b;->a:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
+    iget-object v1, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$b;->g:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
 
     sget v2, Lcom/supercell/id/R$id;->friend_requests_notification:I
 
@@ -121,7 +121,7 @@
 
     .line 8
     :cond_2
-    iget-object v1, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$b;->a:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
+    iget-object v1, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$b;->g:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
 
     sget v2, Lcom/supercell/id/R$id;->add_friends_friend_requests_icon:I
 
@@ -138,17 +138,17 @@
     const/4 p1, 0x4
 
     .line 9
-    invoke-static {p1}, Lc5/i;->c(I)F
+    invoke-static {p1}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result p1
 
-    invoke-static {p1}, Lc2/n0;->e(F)I
+    invoke-static {p1}, Lb5/m;->r(F)I
 
     move-result v0
 
     .line 10
     :cond_3
-    invoke-static {v1}, Lwd/f2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
+    invoke-static {v1}, Lvd/g2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
 
     move-result-object p1
 
@@ -168,7 +168,7 @@
 
     .line 13
     :cond_5
-    sget-object p1, Lbe/n;->a:Lbe/n;
+    sget-object p1, Lae/i;->a:Lae/i;
 
     return-object p1
 .end method

@@ -1,99 +1,88 @@
-.class public synthetic Landroidx/fragment/app/c$a;
+.class public Landroidx/fragment/app/c$a;
 .super Ljava/lang/Object;
 .source "DefaultSpecialEffectsController.java"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Landroidx/fragment/app/c;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/fragment/app/c;->b(Ljava/util/List;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1009
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final synthetic g:Ljava/util/List;
+
+.field public final synthetic h:Landroidx/fragment/app/u0$d;
+
+.field public final synthetic i:Landroidx/fragment/app/c;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Landroidx/fragment/app/c;Ljava/util/List;Landroidx/fragment/app/u0$d;)V
+    .locals 0
 
     .line 1
-    invoke-static {}, Landroidx/fragment/app/u0$e$c;->values()[Landroidx/fragment/app/u0$e$c;
+    iput-object p1, p0, Landroidx/fragment/app/c$a;->i:Landroidx/fragment/app/c;
 
-    move-result-object v0
+    iput-object p2, p0, Landroidx/fragment/app/c$a;->g:Ljava/util/List;
 
-    array-length v0, v0
+    iput-object p3, p0, Landroidx/fragment/app/c$a;->h:Landroidx/fragment/app/u0$d;
 
-    new-array v0, v0, [I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Landroidx/fragment/app/c$a;->a:[I
+    return-void
+.end method
 
-    :try_start_0
-    sget-object v1, Landroidx/fragment/app/u0$e$c;->GONE:Landroidx/fragment/app/u0$e$c;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+# virtual methods
+.method public run()V
+    .locals 2
 
-    move-result v1
+    .line 1
+    iget-object v0, p0, Landroidx/fragment/app/c$a;->g:Ljava/util/List;
 
-    const/4 v2, 0x1
+    iget-object v1, p0, Landroidx/fragment/app/c$a;->h:Landroidx/fragment/app/u0$d;
 
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-interface {v0, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
-    :catch_0
-    :try_start_1
-    sget-object v0, Landroidx/fragment/app/c$a;->a:[I
+    move-result v0
 
-    sget-object v1, Landroidx/fragment/app/u0$e$c;->INVISIBLE:Landroidx/fragment/app/u0$e$c;
+    if-eqz v0, :cond_0
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    .line 2
+    iget-object v0, p0, Landroidx/fragment/app/c$a;->g:Ljava/util/List;
 
-    move-result v1
+    iget-object v1, p0, Landroidx/fragment/app/c$a;->h:Landroidx/fragment/app/u0$d;
 
-    const/4 v2, 0x2
+    invoke-interface {v0, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    .line 3
+    iget-object v0, p0, Landroidx/fragment/app/c$a;->i:Landroidx/fragment/app/c;
 
-    :catch_1
-    :try_start_2
-    sget-object v0, Landroidx/fragment/app/c$a;->a:[I
+    iget-object v1, p0, Landroidx/fragment/app/c$a;->h:Landroidx/fragment/app/u0$d;
 
-    sget-object v1, Landroidx/fragment/app/u0$e$c;->REMOVED:Landroidx/fragment/app/u0$e$c;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    .line 4
+    iget-object v0, v1, Landroidx/fragment/app/u0$d;->c:Landroidx/fragment/app/Fragment;
 
-    move-result v1
+    .line 5
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
-    const/4 v2, 0x3
+    .line 6
+    iget-object v1, v1, Landroidx/fragment/app/u0$d;->a:Landroidx/fragment/app/u0$d$c;
 
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    .line 7
+    invoke-virtual {v1, v0}, Landroidx/fragment/app/u0$d$c;->a(Landroid/view/View;)V
 
-    :catch_2
-    :try_start_3
-    sget-object v0, Landroidx/fragment/app/c$a;->a:[I
-
-    sget-object v1, Landroidx/fragment/app/u0$e$c;->VISIBLE:Landroidx/fragment/app/u0$e$c;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x4
-
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    :catch_3
+    :cond_0
     return-void
 .end method

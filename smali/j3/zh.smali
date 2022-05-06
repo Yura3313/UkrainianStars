@@ -1,35 +1,76 @@
 .class public final Lj3/zh;
-.super Lj3/yh;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Lj3/sd;
 
 
 # annotations
 .annotation build Landroid/annotation/TargetApi;
-    value = 0xb
+    value = 0x11
 .end annotation
 
 
+# instance fields
+.field public final g:Ljava/lang/Object;
+
+.field public final h:Ljava/lang/Object;
+
+
 # direct methods
-.method public constructor <init>(Lj3/ch;Lcom/google/android/gms/internal/ads/q8;Z)V
+.method public synthetic constructor <init>(Lj3/bi;Lu3/g1;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iput-object p2, p0, Lj3/zh;->g:Ljava/lang/Object;
+
+    .line 4
+    iput-object p1, p0, Lj3/zh;->h:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lj3/qd;Lj3/d5;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2, p3}, Lj3/yh;-><init>(Lj3/ch;Lcom/google/android/gms/internal/ads/q8;Z)V
+    iput-object p1, p0, Lj3/zh;->g:Ljava/lang/Object;
+
+    iput-object p2, p0, Lj3/zh;->h:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final shouldInterceptRequest(Landroid/webkit/WebView;Ljava/lang/String;)Landroid/webkit/WebResourceResponse;
-    .locals 1
-
-    const/4 v0, 0x0
+.method public run()V
+    .locals 3
 
     .line 1
-    invoke-virtual {p0, p1, p2, v0}, Lj3/yh;->B(Landroid/webkit/WebView;Ljava/lang/String;Ljava/util/Map;)Landroid/webkit/WebResourceResponse;
+    iget-object v0, p0, Lj3/zh;->g:Ljava/lang/Object;
 
-    move-result-object p1
+    check-cast v0, Lj3/qd;
 
-    return-object p1
+    new-instance v1, Lcom/google/android/gms/internal/ads/zzalj;
+
+    const-string v2, "Unable to obtain a JavascriptEngine."
+
+    invoke-direct {v1, v2}, Lcom/google/android/gms/internal/ads/zzalj;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Lj3/qd;->c(Ljava/lang/Throwable;)Z
+
+    .line 2
+    iget-object v0, p0, Lj3/zh;->h:Ljava/lang/Object;
+
+    check-cast v0, Lj3/d5;
+
+    invoke-virtual {v0}, Lj3/d5;->h()V
+
+    return-void
 .end method

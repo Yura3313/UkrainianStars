@@ -1,141 +1,71 @@
-.class public final Lj3/cm0;
-.super Lj3/em0;
+.class public Lj3/cm0;
+.super Lj3/am0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/util/concurrent/ScheduledExecutorService;
+.implements Lj3/im0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<V:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lj3/am0<",
+        "Ljava/lang/Object;",
+        ">;",
+        "Lj3/im0<",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final b:Ljava/util/concurrent/ScheduledExecutorService;
+.field public final g:Lj3/im0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj3/im0<",
+            "TV;>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/ScheduledExecutorService;)V
+.method public constructor <init>(Lj3/im0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lj3/im0<",
+            "TV;>;)V"
+        }
+    .end annotation
 
     .line 1
-    invoke-direct {p0, p1}, Lj3/em0;-><init>(Ljava/util/concurrent/ExecutorService;)V
+    invoke-direct {p0}, Lj3/am0;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj3/cm0;->b:Ljava/util/concurrent/ScheduledExecutorService;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 3
+    iput-object p1, p0, Lj3/cm0;->g:Lj3/im0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
-    .locals 2
-
-    .line 4
-    new-instance v0, Lj3/km0;
-
-    const/4 v1, 0x0
-
-    invoke-static {p1, v1}, Ljava/util/concurrent/Executors;->callable(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Callable;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Lj3/km0;-><init>(Ljava/util/concurrent/Callable;)V
-
-    .line 5
-    iget-object p1, p0, Lj3/cm0;->b:Ljava/util/concurrent/ScheduledExecutorService;
-
-    invoke-interface {p1, v0, p2, p3, p4}, Ljava/util/concurrent/ScheduledExecutorService;->schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
-
-    move-result-object p1
-
-    .line 6
-    new-instance p2, Lj3/gm0;
-
-    invoke-direct {p2, v0, p1}, Lj3/gm0;-><init>(Lj3/yl0;Ljava/util/concurrent/ScheduledFuture;)V
-
-    return-object p2
-.end method
-
-.method public final schedule(Ljava/util/concurrent/Callable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+.method public a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
     .locals 1
 
     .line 1
-    new-instance v0, Lj3/km0;
-
-    invoke-direct {v0, p1}, Lj3/km0;-><init>(Ljava/util/concurrent/Callable;)V
+    iget-object v0, p0, Lj3/cm0;->g:Lj3/im0;
 
     .line 2
-    iget-object p1, p0, Lj3/cm0;->b:Ljava/util/concurrent/ScheduledExecutorService;
+    invoke-interface {v0, p1, p2}, Lj3/im0;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
 
-    invoke-interface {p1, v0, p2, p3, p4}, Ljava/util/concurrent/ScheduledExecutorService;->schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
-
-    move-result-object p1
-
-    .line 3
-    new-instance p2, Lj3/gm0;
-
-    invoke-direct {p2, v0, p1}, Lj3/gm0;-><init>(Lj3/yl0;Ljava/util/concurrent/ScheduledFuture;)V
-
-    return-object p2
-.end method
-
-.method public final synthetic scheduleAtFixedRate(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
-    .locals 8
-
-    .line 1
-    new-instance v7, Lj3/fm0;
-
-    invoke-direct {v7, p1}, Lj3/fm0;-><init>(Ljava/lang/Runnable;)V
-
-    .line 2
-    iget-object v0, p0, Lj3/cm0;->b:Ljava/util/concurrent/ScheduledExecutorService;
-
-    move-object v1, v7
-
-    move-wide v2, p2
-
-    move-wide v4, p4
-
-    move-object v6, p6
-
-    invoke-interface/range {v0 .. v6}, Ljava/util/concurrent/ScheduledExecutorService;->scheduleAtFixedRate(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
-
-    move-result-object p1
-
-    .line 3
-    new-instance p2, Lj3/gm0;
-
-    invoke-direct {p2, v7, p1}, Lj3/gm0;-><init>(Lj3/yl0;Ljava/util/concurrent/ScheduledFuture;)V
-
-    return-object p2
-.end method
-
-.method public final synthetic scheduleWithFixedDelay(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
-    .locals 8
-
-    .line 1
-    new-instance v7, Lj3/fm0;
-
-    invoke-direct {v7, p1}, Lj3/fm0;-><init>(Ljava/lang/Runnable;)V
-
-    .line 2
-    iget-object v0, p0, Lj3/cm0;->b:Ljava/util/concurrent/ScheduledExecutorService;
-
-    move-object v1, v7
-
-    move-wide v2, p2
-
-    move-wide v4, p4
-
-    move-object v6, p6
-
-    .line 3
-    invoke-interface/range {v0 .. v6}, Ljava/util/concurrent/ScheduledExecutorService;->scheduleWithFixedDelay(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
-
-    move-result-object p1
-
-    .line 4
-    new-instance p2, Lj3/gm0;
-
-    invoke-direct {p2, v7, p1}, Lj3/gm0;-><init>(Lj3/yl0;Ljava/util/concurrent/ScheduledFuture;)V
-
-    return-object p2
+    return-void
 .end method

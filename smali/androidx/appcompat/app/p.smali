@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public Y0(Landroid/os/Bundle;)Landroid/app/Dialog;
+.method public X0(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 2
 
     .line 1
@@ -26,7 +26,7 @@
     move-result-object v0
 
     .line 2
-    iget v1, p0, Landroidx/fragment/app/l;->g0:I
+    iget v1, p0, Landroidx/fragment/app/l;->h0:I
 
     .line 3
     invoke-direct {p1, v0, v1}, Landroidx/appcompat/app/o;-><init>(Landroid/content/Context;I)V

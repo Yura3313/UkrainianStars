@@ -2,147 +2,139 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lj3/rv0;
+
 
 # instance fields
-.field public final a:Ljava/lang/Object;
-
-.field public final b:Ljava/lang/Object;
+.field public final synthetic a:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/os/Handler;Lj3/tw0;)V
+.method public synthetic constructor <init>(I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 p1, 0x0
-
-    .line 2
-    iput-object p1, p0, Lj3/fi0;->a:Ljava/lang/Object;
-
-    .line 3
-    iput-object p1, p0, Lj3/fi0;->b:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(Lj3/ci0;Ljava/lang/Object;Lcom/google/android/gms/ads/s;)V
-    .locals 0
-
-    .line 4
-    iput-object p1, p0, Lj3/fi0;->b:Ljava/lang/Object;
+    iput p1, p0, Lj3/fi0;->a:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 5
-    iput-object p2, p0, Lj3/fi0;->a:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lj3/ai0;Lj3/am0;)Lj3/hi0;
-    .locals 1
+.method public final get()Ljava/lang/Object;
+    .locals 9
+
+    iget v0, p0, Lj3/fi0;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_2
 
     .line 1
-    new-instance v0, Lj3/ii0;
+    :pswitch_0
+    new-instance v0, Lj3/ca;
 
-    invoke-direct {v0, p1}, Lj3/ii0;-><init>(Lj3/ai0;)V
+    invoke-direct {v0}, Lj3/ca;-><init>()V
 
-    invoke-virtual {p0, v0, p2}, Lj3/fi0;->b(Ljava/util/concurrent/Callable;Lj3/am0;)Lj3/hi0;
+    return-object v0
 
-    move-result-object p1
+    .line 2
+    :pswitch_1
+    invoke-static {}, Ljava/util/concurrent/Executors;->defaultThreadFactory()Ljava/util/concurrent/ThreadFactory;
 
-    return-object p1
-.end method
+    move-result-object v8
 
-.method public b(Ljava/util/concurrent/Callable;Lj3/am0;)Lj3/hi0;
-    .locals 7
+    .line 3
+    new-instance v0, Ljava/util/concurrent/ThreadPoolExecutor;
 
-    .line 1
-    new-instance v6, Lj3/hi0;
+    sget-object v6, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
-    iget-object v0, p0, Lj3/fi0;->b:Ljava/lang/Object;
+    new-instance v7, Ljava/util/concurrent/LinkedBlockingQueue;
+
+    invoke-direct {v7}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x1
+
+    const-wide/16 v4, 0x3c
 
     move-object v1, v0
 
-    check-cast v1, Lj3/ci0;
+    invoke-direct/range {v1 .. v8}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
 
-    iget-object v2, p0, Lj3/fi0;->a:Ljava/lang/Object;
+    const/4 v1, 0x1
 
-    .line 2
-    sget-object v3, Lj3/ci0;->d:Lj3/yl0;
+    .line 4
+    invoke-virtual {v0, v1}, Ljava/util/concurrent/ThreadPoolExecutor;->allowCoreThreadTimeOut(Z)V
 
-    .line 3
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+    .line 5
+    invoke-static {v0}, Ljava/util/concurrent/Executors;->unconfigurableExecutorService(Ljava/util/concurrent/ExecutorService;)Ljava/util/concurrent/ExecutorService;
 
-    move-result-object v4
+    move-result-object v0
 
-    invoke-interface {p2, p1}, Lj3/am0;->a(Ljava/util/concurrent/Callable;)Lj3/yl0;
+    .line 6
+    instance-of v1, v0, Lj3/km0;
 
-    move-result-object v5
+    if-eqz v1, :cond_0
 
-    move-object v0, v6
+    .line 7
+    check-cast v0, Lj3/km0;
 
-    invoke-direct/range {v0 .. v5}, Lj3/hi0;-><init>(Lj3/ci0;Ljava/lang/Object;Lj3/yl0;Ljava/util/List;Lj3/yl0;)V
+    goto :goto_1
 
-    return-object v6
-.end method
-
-.method public c(Lj3/lx0;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lj3/fi0;->b:Ljava/lang/Object;
-
-    check-cast v0, Lj3/tw0;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iget-object v0, p0, Lj3/fi0;->a:Ljava/lang/Object;
-
-    check-cast v0, Landroid/os/Handler;
-
-    new-instance v1, Lj3/vw0;
-
-    invoke-direct {v1, p0, p1}, Lj3/vw0;-><init>(Lj3/fi0;Lj3/lx0;)V
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-
+    .line 8
     :cond_0
-    return-void
-.end method
+    instance-of v1, v0, Ljava/util/concurrent/ScheduledExecutorService;
 
-.method public d(Lj3/yl0;)Lj3/hi0;
-    .locals 7
+    if-eqz v1, :cond_1
 
-    .line 1
-    new-instance v6, Lj3/hi0;
+    .line 9
+    new-instance v1, Lj3/mm0;
 
-    iget-object v0, p0, Lj3/fi0;->b:Ljava/lang/Object;
+    check-cast v0, Ljava/util/concurrent/ScheduledExecutorService;
 
-    move-object v1, v0
+    invoke-direct {v1, v0}, Lj3/mm0;-><init>(Ljava/util/concurrent/ScheduledExecutorService;)V
 
-    check-cast v1, Lj3/ci0;
+    goto :goto_0
 
-    iget-object v2, p0, Lj3/fi0;->a:Ljava/lang/Object;
+    .line 10
+    :cond_1
+    new-instance v1, Lj3/om0;
 
-    .line 2
-    sget-object v3, Lj3/ci0;->d:Lj3/yl0;
+    invoke-direct {v1, v0}, Lj3/om0;-><init>(Ljava/util/concurrent/ExecutorService;)V
 
-    .line 3
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+    :goto_0
+    move-object v0, v1
 
-    move-result-object v4
+    :goto_1
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
-    move-object v0, v6
+    .line 11
+    invoke-static {v0, v1}, Lj3/u6;->h(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    move-object v5, p1
+    return-object v0
 
-    invoke-direct/range {v0 .. v5}, Lj3/hi0;-><init>(Lj3/ci0;Ljava/lang/Object;Lj3/yl0;Ljava/util/List;Lj3/yl0;)V
+    .line 12
+    :goto_2
+    new-instance v0, Lj3/o00;
 
-    return-object v6
+    const/16 v1, 0xd
+
+    const/16 v2, 0xe
+
+    const/16 v3, 0x1f
+
+    invoke-direct {v0, v1, v2, v3}, Lj3/o00;-><init>(III)V
+
+    return-object v0
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

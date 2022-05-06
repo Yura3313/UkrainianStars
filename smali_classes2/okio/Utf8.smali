@@ -154,7 +154,7 @@
 
     const-string v1, " > "
 
-    invoke-static {v0, p2, v1}, Landroid/support/v4/media/e;->c(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p2, v1}, Lqc/a0;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
@@ -181,7 +181,7 @@
 
     const-string v1, " < "
 
-    invoke-static {v0, p2, v1, p1}, Landroidx/appcompat/app/i;->a(Ljava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, p2, v1, p1}, Landroid/support/v4/media/a;->b(Ljava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 

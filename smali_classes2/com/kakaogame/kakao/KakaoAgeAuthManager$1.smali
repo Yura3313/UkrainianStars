@@ -33,17 +33,17 @@
     return-void
 .end method
 
-.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;Ljava/lang/Throwable;)Lbe/n;
+.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;Ljava/lang/Throwable;)Lae/i;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lcom/kakaogame/kakao/KakaoAgeAuthManager$1;->lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;Ljava/lang/Throwable;)Lbe/n;
+    invoke-static {p0, p1, p2}, Lcom/kakaogame/kakao/KakaoAgeAuthManager$1;->lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;Ljava/lang/Throwable;)Lae/i;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private static synthetic lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;Ljava/lang/Throwable;)Lbe/n;
+.method private static synthetic lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;Ljava/lang/Throwable;)Lae/i;
     .locals 2
 
     const-string v0, "KakaoAgeAuthManager"
@@ -101,7 +101,7 @@
     const-string p2, "Success AgeAuthInfo: "
 
     .line 6
-    invoke-static {p2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
@@ -130,7 +130,7 @@
 
     .line 10
     :goto_0
-    sget-object p0, Lbe/n;->a:Lbe/n;
+    sget-object p0, Lae/i;->a:Lae/i;
 
     return-object p0
 .end method

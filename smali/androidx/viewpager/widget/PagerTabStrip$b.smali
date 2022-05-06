@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/viewpager/widget/PagerTabStrip;
+.field public final synthetic g:Landroidx/viewpager/widget/PagerTabStrip;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/viewpager/widget/PagerTabStrip$b;->a:Landroidx/viewpager/widget/PagerTabStrip;
+    iput-object p1, p0, Landroidx/viewpager/widget/PagerTabStrip$b;->g:Landroidx/viewpager/widget/PagerTabStrip;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,9 +39,9 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Landroidx/viewpager/widget/PagerTabStrip$b;->a:Landroidx/viewpager/widget/PagerTabStrip;
+    iget-object p1, p0, Landroidx/viewpager/widget/PagerTabStrip$b;->g:Landroidx/viewpager/widget/PagerTabStrip;
 
-    iget-object p1, p1, Landroidx/viewpager/widget/PagerTitleStrip;->a:Landroidx/viewpager/widget/ViewPager;
+    iget-object p1, p1, Landroidx/viewpager/widget/PagerTitleStrip;->g:Landroidx/viewpager/widget/ViewPager;
 
     invoke-virtual {p1}, Landroidx/viewpager/widget/ViewPager;->getCurrentItem()I
 

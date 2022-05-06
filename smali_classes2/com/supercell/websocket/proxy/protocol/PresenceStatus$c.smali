@@ -23,51 +23,18 @@
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
+.field public static final enum g:Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
 
-.field public static final enum APPACCOUNT:Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
+.field public static final enum h:Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
 
-.field public static final enum ID_NOT_SET:Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
+.field public static final enum i:Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
 
-.field public static final enum SCID:Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
-
-
-# instance fields
-.field private final value:I
+.field public static final synthetic j:[Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
 
 
 # direct methods
-.method private static synthetic $values()[Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
-    .locals 3
-
-    const/4 v0, 0x3
-
-    new-array v0, v0, [Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
-
-    .line 1
-    sget-object v1, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->SCID:Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->APPACCOUNT:Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->ID_NOT_SET:Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
-
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
-
-    return-object v0
-.end method
-
 .method public static constructor <clinit>()V
-    .locals 5
+    .locals 7
 
     .line 1
     new-instance v0, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
@@ -80,39 +47,45 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->SCID:Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
+    sput-object v0, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->g:Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
 
     .line 2
-    new-instance v0, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
+    new-instance v1, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
 
-    const-string v1, "APPACCOUNT"
+    const-string v4, "APPACCOUNT"
 
-    const/4 v4, 0x2
+    const/4 v5, 0x2
 
-    invoke-direct {v0, v1, v3, v4}, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v4, v3, v5}, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->APPACCOUNT:Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
+    sput-object v1, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->h:Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
 
     .line 3
-    new-instance v0, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
+    new-instance v4, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
 
-    const-string v1, "ID_NOT_SET"
+    const-string v6, "ID_NOT_SET"
 
-    invoke-direct {v0, v1, v4, v2}, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v4, v6, v5, v2}, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->ID_NOT_SET:Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
+    sput-object v4, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->i:Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
+
+    const/4 v6, 0x3
+
+    new-array v6, v6, [Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
+
+    aput-object v0, v6, v2
+
+    aput-object v1, v6, v3
+
+    aput-object v4, v6, v5
 
     .line 4
-    invoke-static {}, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->$values()[Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->$VALUES:[Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
+    sput-object v6, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->j:[Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;II)V
+.method public constructor <init>(Ljava/lang/String;II)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -123,59 +96,7 @@
     .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
-    iput p3, p0, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->value:I
-
     return-void
-.end method
-
-.method public static forNumber(I)Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
-    .locals 1
-
-    if-eqz p0, :cond_2
-
-    const/4 v0, 0x1
-
-    if-eq p0, v0, :cond_1
-
-    const/4 v0, 0x2
-
-    if-eq p0, v0, :cond_0
-
-    const/4 p0, 0x0
-
-    return-object p0
-
-    .line 1
-    :cond_0
-    sget-object p0, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->APPACCOUNT:Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
-
-    return-object p0
-
-    .line 2
-    :cond_1
-    sget-object p0, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->SCID:Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
-
-    return-object p0
-
-    .line 3
-    :cond_2
-    sget-object p0, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->ID_NOT_SET:Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
-
-    return-object p0
-.end method
-
-.method public static valueOf(I)Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
-    .locals 0
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    .line 2
-    invoke-static {p0}, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->forNumber(I)Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
-
-    move-result-object p0
-
-    return-object p0
 .end method
 
 .method public static valueOf(Ljava/lang/String;)Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
@@ -197,7 +118,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->$VALUES:[Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->j:[Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
 
     invoke-virtual {v0}, [Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->clone()Ljava/lang/Object;
 
@@ -206,15 +127,4 @@
     check-cast v0, [Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;
 
     return-object v0
-.end method
-
-
-# virtual methods
-.method public getNumber()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/supercell/websocket/proxy/protocol/PresenceStatus$c;->value:I
-
-    return v0
 .end method

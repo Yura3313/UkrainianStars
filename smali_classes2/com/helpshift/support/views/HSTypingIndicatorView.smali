@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field public a:[Landroid/animation/Animator;
+.field public g:[Landroid/animation/Animator;
 
-.field public b:Landroid/animation/AnimatorSet;
+.field public h:Landroid/animation/AnimatorSet;
 
-.field public h:F
+.field public i:F
 
-.field public i:[Lcom/helpshift/support/views/DotView;
+.field public j:[Lcom/helpshift/support/views/DotView;
 
-.field public j:I
+.field public k:I
 
-.field public k:F
+.field public l:F
 
 
 # direct methods
@@ -40,7 +40,7 @@
     new-array p3, p3, [Landroid/animation/Animator;
 
     .line 3
-    iput-object p3, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->a:[Landroid/animation/Animator;
+    iput-object p3, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->g:[Landroid/animation/Animator;
 
     .line 4
     invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
@@ -84,7 +84,7 @@
 
     move-result p2
 
-    iput p2, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->j:I
+    iput p2, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->k:I
 
     .line 10
     sget p2, Lcom/helpshift/R$styleable;->HSTypingIndicatorView_hs__interDotPadding:I
@@ -95,7 +95,7 @@
 
     move-result p2
 
-    iput p2, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->k:F
+    iput p2, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->l:F
 
     .line 11
     sget p2, Lcom/helpshift/R$styleable;->HSTypingIndicatorView_hs__dotDiameter:I
@@ -104,7 +104,7 @@
 
     move-result p2
 
-    iput p2, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->h:F
+    iput p2, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->i:F
 
     .line 12
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
@@ -125,7 +125,7 @@
     new-array v1, v0, [Lcom/helpshift/support/views/DotView;
 
     .line 1
-    iput-object v1, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->i:[Lcom/helpshift/support/views/DotView;
+    iput-object v1, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->j:[Lcom/helpshift/support/views/DotView;
 
     const/4 v1, 0x0
 
@@ -135,7 +135,7 @@
     if-ge v2, v0, :cond_3
 
     .line 2
-    iget-object v3, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->i:[Lcom/helpshift/support/views/DotView;
+    iget-object v3, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->j:[Lcom/helpshift/support/views/DotView;
 
     new-instance v4, Lcom/helpshift/support/views/DotView;
 
@@ -143,14 +143,14 @@
 
     move-result-object v5
 
-    iget v6, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->j:I
+    iget v6, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->k:I
 
     invoke-direct {v4, v5, v6}, Lcom/helpshift/support/views/DotView;-><init>(Landroid/content/Context;I)V
 
     aput-object v4, v3, v2
 
     .line 3
-    iget v3, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->k:F
+    iget v3, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->l:F
 
     const/high16 v4, 0x40000000    # 2.0f
 
@@ -193,7 +193,7 @@
     :goto_1
     new-instance v4, Landroid/widget/LinearLayout$LayoutParams;
 
-    iget v8, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->h:F
+    iget v8, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->i:F
 
     float-to-int v9, v8
 
@@ -209,16 +209,16 @@
     invoke-virtual {v4, v5, v1, v3, v1}, Landroid/widget/LinearLayout$LayoutParams;->setMargins(IIII)V
 
     .line 6
-    iget-object v3, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->i:[Lcom/helpshift/support/views/DotView;
+    iget-object v3, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->j:[Lcom/helpshift/support/views/DotView;
 
     aget-object v3, v3, v2
 
     invoke-virtual {p0, v3, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 7
-    iget-object v3, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->a:[Landroid/animation/Animator;
+    iget-object v3, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->g:[Landroid/animation/Animator;
 
-    iget-object v4, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->i:[Lcom/helpshift/support/views/DotView;
+    iget-object v4, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->j:[Lcom/helpshift/support/views/DotView;
 
     aget-object v4, v4, v2
 
@@ -271,7 +271,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->b:Landroid/animation/AnimatorSet;
+    iget-object v0, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->h:Landroid/animation/AnimatorSet;
 
     if-nez v0, :cond_0
 
@@ -280,15 +280,15 @@
 
     invoke-direct {v0}, Landroid/animation/AnimatorSet;-><init>()V
 
-    iput-object v0, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->b:Landroid/animation/AnimatorSet;
+    iput-object v0, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->h:Landroid/animation/AnimatorSet;
 
     .line 3
-    iget-object v1, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->a:[Landroid/animation/Animator;
+    iget-object v1, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->g:[Landroid/animation/Animator;
 
     invoke-virtual {v0, v1}, Landroid/animation/AnimatorSet;->playTogether([Landroid/animation/Animator;)V
 
     .line 4
-    iget-object v0, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->b:Landroid/animation/AnimatorSet;
+    iget-object v0, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->h:Landroid/animation/AnimatorSet;
 
     new-instance v1, Lcom/helpshift/support/views/HSTypingIndicatorView$a;
 
@@ -297,7 +297,7 @@
     invoke-virtual {v0, v1}, Landroid/animation/AnimatorSet;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     .line 5
-    iget-object v0, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->b:Landroid/animation/AnimatorSet;
+    iget-object v0, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->h:Landroid/animation/AnimatorSet;
 
     invoke-virtual {v0}, Landroid/animation/AnimatorSet;->start()V
 
@@ -320,7 +320,7 @@
 
     .line 3
     :cond_0
-    iget-object p1, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->b:Landroid/animation/AnimatorSet;
+    iget-object p1, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->h:Landroid/animation/AnimatorSet;
 
     if-eqz p1, :cond_2
 
@@ -353,22 +353,22 @@
 
     .line 6
     :cond_1
-    iget-object p1, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->b:Landroid/animation/AnimatorSet;
+    iget-object p1, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->h:Landroid/animation/AnimatorSet;
 
     invoke-virtual {p1}, Landroid/animation/AnimatorSet;->cancel()V
 
     .line 7
-    iget-object p1, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->b:Landroid/animation/AnimatorSet;
+    iget-object p1, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->h:Landroid/animation/AnimatorSet;
 
     invoke-virtual {p1}, Landroid/animation/AnimatorSet;->removeAllListeners()V
 
     const/4 p1, 0x0
 
     .line 8
-    iput-object p1, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->b:Landroid/animation/AnimatorSet;
+    iput-object p1, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->h:Landroid/animation/AnimatorSet;
 
     .line 9
-    iget-object p1, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->i:[Lcom/helpshift/support/views/DotView;
+    iget-object p1, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->j:[Lcom/helpshift/support/views/DotView;
 
     array-length v0, p1
 
@@ -380,7 +380,7 @@
     aget-object v2, p1, v1
 
     .line 10
-    iget v3, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->j:I
+    iget v3, p0, Lcom/helpshift/support/views/HSTypingIndicatorView;->k:I
 
     invoke-virtual {v2, v3}, Lcom/helpshift/support/views/DotView;->setDotColor(I)V
 

@@ -53,7 +53,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Ll5/v0$c;->ASYMMETRIC_PUBLIC:Ll5/v0$c;
+    sget-object v0, Ll5/v0$c;->k:Ll5/v0$c;
 
     return-object v0
 .end method
@@ -71,7 +71,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Ll5/l0;->y(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/l0;
+    invoke-static {p1, v0}, Ll5/l0;->x(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/l0;
 
     move-result-object p1
 
@@ -103,7 +103,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, Ll5/l0;->w()I
+    invoke-virtual {p1}, Ll5/l0;->v()I
 
     move-result v0
 
@@ -112,7 +112,7 @@
     invoke-static {v0, v1}, Lp5/m0;->e(II)V
 
     .line 2
-    invoke-virtual {p1}, Ll5/l0;->v()Lm5/c;
+    invoke-virtual {p1}, Ll5/l0;->u()Lm5/c;
 
     move-result-object p1
 

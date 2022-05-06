@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static s:Ljava/lang/ref/WeakReference;
+.field public static t:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -25,53 +25,53 @@
     .end annotation
 .end field
 
-.field public static final t:Lcom/supercell/id/ui/MainActivity$a;
+.field public static final u:Lcom/supercell/id/ui/MainActivity$a;
 
 
 # instance fields
-.field public a:Lcom/supercell/id/PresentationInfo;
+.field public g:Lcom/supercell/id/PresentationInfo;
 
-.field public b:Lcom/supercell/id/ui/BackStack;
+.field public h:Lcom/supercell/id/ui/BackStack;
 
-.field public final h:Lbe/c;
+.field public final i:Lae/c;
 
-.field public final i:Ljava/util/WeakHashMap;
+.field public final j:Ljava/util/WeakHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/WeakHashMap<",
-            "Luc/t;",
+            "Lrc/u;",
             "Ljava/lang/Integer;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final j:Lbe/c;
+.field public final k:Lae/c;
 
-.field public final k:Ljava/util/WeakHashMap;
+.field public final l:Ljava/util/WeakHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/WeakHashMap<",
-            "Lwc/f;",
+            "Ltc/f;",
             "Ljava/lang/Integer;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public l:Landroid/graphics/Rect;
+.field public m:Landroid/graphics/Rect;
 
-.field public final m:Lbe/c;
+.field public final n:Lae/c;
 
-.field public final n:Landroid/view/View$OnLayoutChangeListener;
+.field public final o:Landroid/view/View$OnLayoutChangeListener;
 
-.field public final o:Lbe/c;
-
-.field public p:Landroid/animation/Animator;
+.field public final p:Lae/c;
 
 .field public q:Landroid/animation/Animator;
 
-.field public r:Ljava/util/HashMap;
+.field public r:Landroid/animation/Animator;
+
+.field public s:Ljava/util/HashMap;
 
 
 # direct methods
@@ -84,7 +84,7 @@
 
     invoke-direct {v0, v1}, Lcom/supercell/id/ui/MainActivity$a;-><init>(Lle/g;)V
 
-    sput-object v0, Lcom/supercell/id/ui/MainActivity;->t:Lcom/supercell/id/ui/MainActivity$a;
+    sput-object v0, Lcom/supercell/id/ui/MainActivity;->u:Lcom/supercell/id/ui/MainActivity$a;
 
     return-void
 .end method
@@ -100,70 +100,70 @@
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/MainActivity$e;-><init>(Lcom/supercell/id/ui/MainActivity;)V
 
-    invoke-static {v0}, Lbe/e;->f(Lke/a;)Lbe/c;
+    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/supercell/id/ui/MainActivity;->h:Lbe/c;
+    iput-object v0, p0, Lcom/supercell/id/ui/MainActivity;->i:Lae/c;
 
     .line 3
     new-instance v0, Ljava/util/WeakHashMap;
 
     invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/MainActivity;->i:Ljava/util/WeakHashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/MainActivity;->j:Ljava/util/WeakHashMap;
 
     .line 4
     new-instance v0, Lcom/supercell/id/ui/MainActivity$g;
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/MainActivity$g;-><init>(Lcom/supercell/id/ui/MainActivity;)V
 
-    invoke-static {v0}, Lbe/e;->f(Lke/a;)Lbe/c;
+    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/supercell/id/ui/MainActivity;->j:Lbe/c;
+    iput-object v0, p0, Lcom/supercell/id/ui/MainActivity;->k:Lae/c;
 
     .line 5
     new-instance v0, Ljava/util/WeakHashMap;
 
     invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/MainActivity;->k:Ljava/util/WeakHashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/MainActivity;->l:Ljava/util/WeakHashMap;
 
     .line 6
     new-instance v0, Lcom/supercell/id/ui/MainActivity$l;
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/MainActivity$l;-><init>(Lcom/supercell/id/ui/MainActivity;)V
 
-    invoke-static {v0}, Lbe/e;->f(Lke/a;)Lbe/c;
+    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/supercell/id/ui/MainActivity;->m:Lbe/c;
+    iput-object v0, p0, Lcom/supercell/id/ui/MainActivity;->n:Lae/c;
 
     .line 7
     new-instance v0, Lcom/supercell/id/ui/MainActivity$f;
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/MainActivity$f;-><init>(Lcom/supercell/id/ui/MainActivity;)V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/MainActivity;->n:Landroid/view/View$OnLayoutChangeListener;
+    iput-object v0, p0, Lcom/supercell/id/ui/MainActivity;->o:Landroid/view/View$OnLayoutChangeListener;
 
     .line 8
     new-instance v0, Lcom/supercell/id/ui/MainActivity$b;
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/MainActivity$b;-><init>(Lcom/supercell/id/ui/MainActivity;)V
 
-    invoke-static {v0}, Lbe/e;->f(Lke/a;)Lbe/c;
+    invoke-static {v0}, Lcom/android/billingclient/api/t;->c(Lke/a;)Lae/c;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/supercell/id/ui/MainActivity;->o:Lbe/c;
+    iput-object v0, p0, Lcom/supercell/id/ui/MainActivity;->p:Lae/c;
 
     return-void
 .end method
 
-.method public static D(Lcom/supercell/id/ui/MainActivity;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lke/p;Lke/a;Lke/l;I)Luc/q;
+.method public static E(Lcom/supercell/id/ui/MainActivity;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lke/p;Lke/a;Lke/l;I)Lrc/q;
     .locals 1
 
     and-int/lit8 p7, p8, 0x10
@@ -183,42 +183,42 @@
 
     .line 1
     :cond_1
-    invoke-static {p1, p2, p3, p4}, Luc/q;->i1(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Luc/q;
+    invoke-static {p1, p2, p3, p4}, Lrc/q;->i1(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lrc/q;
 
     move-result-object p1
 
     .line 2
-    invoke-virtual {p1, p5}, Luc/q;->k1(Lke/p;)V
+    invoke-virtual {p1, p5}, Lrc/q;->k1(Lke/p;)V
 
     .line 3
-    invoke-virtual {p1, p6}, Luc/q;->j1(Lke/a;)V
+    invoke-virtual {p1, p6}, Lrc/q;->j1(Lke/a;)V
 
     .line 4
-    invoke-virtual {p1, v0}, Luc/d;->g1(Lke/l;)V
+    invoke-virtual {p1, v0}, Lrc/e;->g1(Lke/l;)V
 
     const-string p2, "popupDialog"
 
     .line 5
-    invoke-virtual {p0, p1, p2}, Lcom/supercell/id/ui/MainActivity;->H(Luc/d;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, p2}, Lcom/supercell/id/ui/MainActivity;->I(Lrc/e;Ljava/lang/String;)V
 
     return-object p1
 .end method
 
-.method public static G(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lke/l;I)V
+.method public static H(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lke/l;I)V
     .locals 0
 
     const/4 p4, 0x0
 
     .line 1
-    invoke-static {p1, p2, p3}, Luc/x;->i1(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Luc/x;
+    invoke-static {p1, p2, p3}, Lrc/y;->i1(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lrc/y;
 
     move-result-object p1
 
-    invoke-virtual {p1, p4}, Luc/d;->g1(Lke/l;)V
+    invoke-virtual {p1, p4}, Lrc/e;->g1(Lke/l;)V
 
     const-string p2, "errorDialog"
 
-    invoke-virtual {p0, p1, p2}, Lcom/supercell/id/ui/MainActivity;->H(Luc/d;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, p2}, Lcom/supercell/id/ui/MainActivity;->I(Lrc/e;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -227,7 +227,7 @@
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object p0, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     if-eqz p0, :cond_0
 
@@ -236,7 +236,7 @@
     :cond_0
     const-string p0, "backStack"
 
-    invoke-static {p0}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {p0}, Ls3/b;->i(Ljava/lang/String;)V
 
     const/4 p0, 0x0
 
@@ -247,7 +247,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->t()I
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->u()I
 
     move-result p0
 
@@ -260,7 +260,7 @@
     :cond_0
     const/16 p0, 0xc
 
-    invoke-static {p0}, Lc5/i;->c(I)F
+    invoke-static {p0}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result p0
 
@@ -274,7 +274,7 @@
     const-string v0, "resources"
 
     .line 1
-    invoke-static {p0, v0}, Lsc/i;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
+    invoke-static {p0, v0}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -283,7 +283,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->p()Ljava/lang/Integer;
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->q()Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -302,7 +302,7 @@
 
     check-cast v3, Landroid/widget/FrameLayout;
 
-    invoke-static {v3, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v3}, Landroid/widget/FrameLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -323,7 +323,7 @@
 
     .line 5
     :cond_0
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->o()Ljava/lang/Integer;
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->p()Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -342,7 +342,7 @@
 
     check-cast v3, Landroid/widget/FrameLayout;
 
-    invoke-static {v3, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v3}, Landroid/widget/FrameLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -370,7 +370,7 @@
     const-string v0, "resources"
 
     .line 1
-    invoke-static {p0, v0}, Lsc/i;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
+    invoke-static {p0, v0}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -387,15 +387,15 @@
 
     check-cast v1, Landroid/widget/FrameLayout;
 
-    invoke-static {v1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v1}, Lwd/f2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
+    invoke-static {v1}, Lvd/g2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->s()I
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->t()I
 
     move-result v2
 
@@ -419,9 +419,9 @@
 
     move-result-object v1
 
-    invoke-static {v1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v1}, Landroidx/savedstate/d;->s(Landroid/content/res/Resources;)Z
+    invoke-static {v1}, Lcom/android/billingclient/api/a0;->k(Landroid/content/res/Resources;)Z
 
     move-result v0
 
@@ -436,15 +436,15 @@
 
     check-cast v1, Landroid/widget/FrameLayout;
 
-    invoke-static {v1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v1}, Lwd/f2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
+    invoke-static {v1}, Lvd/g2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
 
     move-result-object v1
 
     if-eqz v1, :cond_2
 
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->t()I
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->u()I
 
     move-result v2
 
@@ -452,12 +452,12 @@
 
     .line 6
     :cond_2
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->m()Lsc/d;
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->n()Lpc/c;
 
     move-result-object v1
 
     .line 7
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->t()I
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->u()I
 
     move-result v2
 
@@ -470,13 +470,13 @@
     :cond_3
     const/16 v2, 0xc
 
-    invoke-static {v2}, Lc5/i;->c(I)F
+    invoke-static {v2}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v2
 
     .line 8
     :goto_0
-    invoke-virtual {v1, v2}, Lsc/d;->j(F)V
+    invoke-virtual {v1, v2}, Lpc/c;->j(F)V
 
     .line 9
     invoke-virtual {p0, v0}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
@@ -492,7 +492,7 @@
     return-void
 .end method
 
-.method public static synthetic x(Lcom/supercell/id/ui/MainActivity;Lcom/supercell/id/IdLoginDetails;ZI)Lcom/supercell/id/ui/BackStack$Entry;
+.method public static synthetic y(Lcom/supercell/id/ui/MainActivity;Lcom/supercell/id/IdLoginDetails;ZI)Lcom/supercell/id/ui/BackStack$Entry;
     .locals 1
 
     and-int/lit8 v0, p3, 0x1
@@ -510,7 +510,7 @@
 
     .line 1
     :cond_1
-    invoke-virtual {p0, p1, p2}, Lcom/supercell/id/ui/MainActivity;->w(Lcom/supercell/id/IdLoginDetails;Z)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-virtual {p0, p1, p2}, Lcom/supercell/id/ui/MainActivity;->x(Lcom/supercell/id/IdLoginDetails;Z)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object p0
 
@@ -519,18 +519,35 @@
 
 
 # virtual methods
-.method public final A(Lcom/supercell/id/IdPendingRegistration;)Lcom/supercell/id/ui/BackStack$Entry;
+.method public final A(Lrc/u;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->j:Ljava/util/WeakHashMap;
+
+    const/4 v1, 0x0
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-interface {v0, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public final B(Lcom/supercell/id/IdPendingRegistration;)Lcom/supercell/id/ui/BackStack$Entry;
     .locals 1
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lwd/r;->j:Lcom/supercell/id/IdConfiguration;
+    iget-object v0, v0, Lvd/r;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 3
     invoke-virtual {v0}, Lcom/supercell/id/IdConfiguration;->isYoungPlayer()Z
@@ -556,11 +573,11 @@
     return-object v0
 .end method
 
-.method public final B(Lcom/supercell/id/ui/BackStack$Entry;)V
+.method public final C(Lcom/supercell/id/ui/BackStack$Entry;)V
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->q()Z
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->r()Z
 
     move-result v0
 
@@ -570,7 +587,7 @@
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {p1}, Lcom/supercell/id/ui/BackStack$Entry;->R()Z
+    invoke-virtual {p1}, Lcom/supercell/id/ui/BackStack$Entry;->M()Z
 
     move-result v0
 
@@ -580,7 +597,7 @@
 
     .line 2
     :cond_0
-    iget-object p1, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object p1, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     if-eqz p1, :cond_1
 
@@ -593,14 +610,14 @@
     goto :goto_1
 
     :cond_1
-    invoke-static {v1}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {v1}, Ls3/b;->i(Ljava/lang/String;)V
 
     throw v2
 
     .line 3
     :cond_2
     :goto_0
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     if-eqz v0, :cond_3
 
@@ -610,12 +627,12 @@
     return-void
 
     :cond_3
-    invoke-static {v1}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {v1}, Ls3/b;->i(Ljava/lang/String;)V
 
     throw v2
 .end method
 
-.method public final varargs C([Lcom/supercell/id/ui/BackStack$Entry;)V
+.method public final varargs D([Lcom/supercell/id/ui/BackStack$Entry;)V
     .locals 8
 
     const/4 v0, 0x0
@@ -623,7 +640,7 @@
     if-eqz p1, :cond_7
 
     .line 1
-    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     if-eqz v1, :cond_6
 
@@ -642,13 +659,13 @@
     aget-object v6, p1, v5
 
     .line 3
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->q()Z
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->r()Z
 
     move-result v7
 
     if-eqz v7, :cond_4
 
-    invoke-virtual {v6}, Lcom/supercell/id/ui/BackStack$Entry;->R()Z
+    invoke-virtual {v6}, Lcom/supercell/id/ui/BackStack$Entry;->M()Z
 
     move-result v7
 
@@ -699,7 +716,7 @@
 
     invoke-direct {v6}, Lcom/supercell/id/ui/MaintenanceModeFragment$BackStackEntry;-><init>()V
 
-    invoke-static {v3, v6}, Lce/g;->m([Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-static {v3, v6}, Lbe/f;->i([Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v3
 
@@ -710,7 +727,7 @@
     .line 7
     :cond_4
     :goto_3
-    invoke-static {v3, v6}, Lce/g;->m([Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-static {v3, v6}, Lbe/f;->i([Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v3
 
@@ -739,7 +756,7 @@
     :cond_6
     const-string p1, "backStack"
 
-    invoke-static {p1}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->i(Ljava/lang/String;)V
 
     throw v0
 
@@ -747,7 +764,7 @@
     const-string p1, "stack"
 
     .line 10
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     goto :goto_6
 
@@ -758,7 +775,7 @@
     goto :goto_5
 .end method
 
-.method public final E(Ljava/lang/Exception;Lke/l;)V
+.method public final F(Ljava/lang/Exception;Lke/l;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -766,8 +783,8 @@
             "Ljava/lang/Exception;",
             "Lke/l<",
             "-",
-            "Luc/d;",
-            "Lbe/n;",
+            "Lrc/e;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -778,22 +795,22 @@
     invoke-static {p1}, Landroid/util/Log;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
 
     .line 2
-    sget-object v0, Lcom/supercell/id/util/NormalizedError;->l:Lcom/supercell/id/util/NormalizedError;
+    sget-object v0, Lcom/supercell/id/util/NormalizedError;->m:Lcom/supercell/id/util/NormalizedError;
 
-    invoke-static {p1}, Lcom/supercell/id/util/NormalizedError;->h(Ljava/lang/Exception;)Lcom/supercell/id/util/NormalizedError;
+    invoke-static {p1}, Lcom/supercell/id/util/NormalizedError;->b(Ljava/lang/Exception;)Lcom/supercell/id/util/NormalizedError;
 
     move-result-object p1
 
     .line 3
-    invoke-static {p1}, Luc/u;->i1(Lcom/supercell/id/util/NormalizedError;)Luc/u;
+    invoke-static {p1}, Lrc/v;->i1(Lcom/supercell/id/util/NormalizedError;)Lrc/v;
 
     move-result-object p1
 
-    invoke-virtual {p1, p2}, Luc/d;->g1(Lke/l;)V
+    invoke-virtual {p1, p2}, Lrc/e;->g1(Lke/l;)V
 
     const-string p2, "errorDialog"
 
-    invoke-virtual {p0, p1, p2}, Lcom/supercell/id/ui/MainActivity;->H(Luc/d;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, p2}, Lcom/supercell/id/ui/MainActivity;->I(Lrc/e;Ljava/lang/String;)V
 
     return-void
 
@@ -801,14 +818,14 @@
     const-string p1, "error"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public final F(Ljava/lang/String;Lke/l;)V
+.method public final G(Ljava/lang/String;Lke/l;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -816,8 +833,8 @@
             "Ljava/lang/String;",
             "Lke/l<",
             "-",
-            "Luc/d;",
-            "Lbe/n;",
+            "Lrc/e;",
+            "Lae/i;",
             ">;)V"
         }
     .end annotation
@@ -825,22 +842,22 @@
     if-eqz p1, :cond_0
 
     .line 1
-    sget-object v0, Lcom/supercell/id/util/NormalizedError;->l:Lcom/supercell/id/util/NormalizedError;
+    sget-object v0, Lcom/supercell/id/util/NormalizedError;->m:Lcom/supercell/id/util/NormalizedError;
 
-    invoke-static {p1}, Lcom/supercell/id/util/NormalizedError;->j(Ljava/lang/String;)Lcom/supercell/id/util/NormalizedError;
+    invoke-static {p1}, Lcom/supercell/id/util/NormalizedError;->i(Ljava/lang/String;)Lcom/supercell/id/util/NormalizedError;
 
     move-result-object p1
 
     .line 2
-    invoke-static {p1}, Luc/u;->i1(Lcom/supercell/id/util/NormalizedError;)Luc/u;
+    invoke-static {p1}, Lrc/v;->i1(Lcom/supercell/id/util/NormalizedError;)Lrc/v;
 
     move-result-object p1
 
-    invoke-virtual {p1, p2}, Luc/d;->g1(Lke/l;)V
+    invoke-virtual {p1, p2}, Lrc/e;->g1(Lke/l;)V
 
     const-string p2, "errorDialog"
 
-    invoke-virtual {p0, p1, p2}, Lcom/supercell/id/ui/MainActivity;->H(Luc/d;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, p2}, Lcom/supercell/id/ui/MainActivity;->I(Lrc/e;Ljava/lang/String;)V
 
     return-void
 
@@ -848,14 +865,14 @@
     const-string p1, "error"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
     throw p1
 .end method
 
-.method public final H(Luc/d;Ljava/lang/String;)V
+.method public final I(Lrc/e;Ljava/lang/String;)V
     .locals 2
 
     const/4 v0, 0x0
@@ -871,7 +888,7 @@
 
     const-string v1, "supportFragmentManager"
 
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->U()Z
 
@@ -916,23 +933,23 @@
     const-string p1, "tag"
 
     .line 7
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     :cond_3
     const-string p1, "dialogFragment"
 
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
 
-.method public final I(Luc/t;)V
+.method public final J(Lrc/u;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->i:Ljava/util/WeakHashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->j:Ljava/util/WeakHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/WeakHashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -941,7 +958,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->i:Ljava/util/WeakHashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->j:Ljava/util/WeakHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/WeakHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -952,7 +969,7 @@
 .method public _$_findCachedViewById(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->r:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -960,10 +977,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/MainActivity;->r:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->r:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -981,7 +998,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity;->r:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1027,12 +1044,12 @@
 
     .line 3
     :cond_0
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
     .line 4
-    iget-object v0, v0, Lwd/r;->j:Lcom/supercell/id/IdConfiguration;
+    iget-object v0, v0, Lvd/r;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 5
     invoke-virtual {v0}, Lcom/supercell/id/IdConfiguration;->getLocale()Ljava/util/Locale;
@@ -1049,7 +1066,7 @@
 
     const-string v3, "res"
 
-    invoke-static {v1, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
 
@@ -1068,9 +1085,9 @@
     const-string v0, "context"
 
     .line 10
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1}, Lzd/g;->a(Landroid/content/Context;)Landroid/content/ContextWrapper;
+    invoke-static {p1}, Lyd/g;->a(Landroid/content/Context;)Landroid/content/ContextWrapper;
 
     move-result-object p1
 
@@ -1082,7 +1099,7 @@
     const-string p1, "newBase"
 
     .line 11
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -1097,7 +1114,7 @@
     if-eqz p1, :cond_2
 
     .line 1
-    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     if-eqz v1, :cond_1
 
@@ -1123,7 +1140,7 @@
     const-string p1, "backStack"
 
     .line 3
-    invoke-static {p1}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->i(Ljava/lang/String;)V
 
     throw v0
 
@@ -1131,7 +1148,7 @@
     const-string p1, "ev"
 
     .line 4
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -1140,10 +1157,10 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Landroidx/savedstate/d;->i(Landroid/app/Activity;)V
+    invoke-static {p0}, Lcom/android/billingclient/api/a0;->f(Landroid/app/Activity;)V
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     if-eqz v0, :cond_1
 
@@ -1165,7 +1182,7 @@
     const-string v0, "backStack"
 
     .line 4
-    invoke-static {v0}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {v0}, Ls3/b;->i(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -1192,31 +1209,31 @@
     move-object/from16 v0, p0
 
     .line 1
-    iget-object v1, v0, Lcom/supercell/id/ui/MainActivity;->a:Lcom/supercell/id/PresentationInfo;
+    iget-object v1, v0, Lcom/supercell/id/ui/MainActivity;->g:Lcom/supercell/id/PresentationInfo;
 
     .line 2
-    sget-object v2, Lcom/supercell/id/PresentationInfo$Login;->a:Lcom/supercell/id/PresentationInfo$Login;
+    sget-object v2, Lcom/supercell/id/PresentationInfo$Login;->g:Lcom/supercell/id/PresentationInfo$Login;
 
-    invoke-static {v1, v2}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
-    const/4 v3, 0x2
+    const/4 v3, 0x1
 
     const/4 v4, 0x0
 
-    const/4 v5, 0x1
+    const/4 v5, 0x2
 
     if-eqz v2, :cond_4
 
     .line 3
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lwd/r;->j()Ljava/util/List;
+    invoke-virtual {v2}, Lvd/r;->j()Ljava/util/List;
 
     move-result-object v2
 
@@ -1224,7 +1241,7 @@
 
     move-result v2
 
-    xor-int/2addr v2, v5
+    xor-int/2addr v2, v3
 
     if-nez v2, :cond_2
 
@@ -1245,27 +1262,27 @@
     const/4 v2, 0x0
 
     :goto_0
-    xor-int/2addr v2, v5
+    xor-int/2addr v2, v3
 
     if-eqz v2, :cond_1
 
     goto :goto_1
 
     :cond_1
-    new-array v2, v5, [Lcom/supercell/id/ui/BackStack$Entry;
+    new-array v2, v3, [Lcom/supercell/id/ui/BackStack$Entry;
 
     .line 5
     invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getPendingLogin$supercellId_release()Lcom/supercell/id/IdLoginDetails;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, v5}, Lcom/supercell/id/ui/MainActivity;->w(Lcom/supercell/id/IdLoginDetails;Z)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-virtual {v0, v1, v3}, Lcom/supercell/id/ui/MainActivity;->x(Lcom/supercell/id/IdLoginDetails;Z)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v1
 
     aput-object v1, v2, v4
 
-    goto/16 :goto_d
+    goto/16 :goto_a
 
     .line 6
     :cond_2
@@ -1276,167 +1293,188 @@
 
     if-eqz v1, :cond_3
 
-    new-array v2, v3, [Lcom/supercell/id/ui/BackStack$Entry;
+    new-array v2, v5, [Lcom/supercell/id/ui/BackStack$Entry;
 
     .line 7
-    new-instance v3, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;
+    new-instance v5, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;
 
-    invoke-direct {v3, v5}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;-><init>(Z)V
+    invoke-direct {v5, v3}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;-><init>(Z)V
 
-    aput-object v3, v2, v4
+    aput-object v5, v2, v4
 
-    invoke-virtual {v0, v1, v5}, Lcom/supercell/id/ui/MainActivity;->w(Lcom/supercell/id/IdLoginDetails;Z)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-virtual {v0, v1, v3}, Lcom/supercell/id/ui/MainActivity;->x(Lcom/supercell/id/IdLoginDetails;Z)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v1
 
-    aput-object v1, v2, v5
+    aput-object v1, v2, v3
 
-    goto/16 :goto_d
+    goto/16 :goto_a
 
     :cond_3
-    new-array v2, v5, [Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;
+    new-array v2, v3, [Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;
 
     .line 8
     new-instance v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;
 
-    invoke-direct {v1, v5}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;-><init>(Z)V
+    invoke-direct {v1, v3}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;-><init>(Z)V
 
     aput-object v1, v2, v4
 
-    goto/16 :goto_d
+    goto/16 :goto_a
 
     .line 9
     :cond_4
-    sget-object v2, Lcom/supercell/id/PresentationInfo$ProfileSelector;->a:Lcom/supercell/id/PresentationInfo$ProfileSelector;
+    sget-object v2, Lcom/supercell/id/PresentationInfo$FriendRequests;->g:Lcom/supercell/id/PresentationInfo$FriendRequests;
 
-    invoke-static {v1, v2}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_6
-
-    .line 10
-    sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
-
-    move-result-object v2
-
-    .line 11
-    iget-object v2, v2, Lwd/r;->j:Lcom/supercell/id/IdConfiguration;
-
-    .line 12
-    invoke-virtual {v2}, Lcom/supercell/id/IdConfiguration;->getHasGameAccountToken()Z
+    invoke-static {v1, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_5
 
-    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    new-array v2, v3, [Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment$BackStackEntry;
+
+    .line 10
+    new-instance v1, Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment$BackStackEntry;
+
+    invoke-direct {v1}, Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment$BackStackEntry;-><init>()V
+
+    aput-object v1, v2, v4
+
+    goto/16 :goto_a
+
+    .line 11
+    :cond_5
+    sget-object v2, Lcom/supercell/id/PresentationInfo$ProfileSelector;->g:Lcom/supercell/id/PresentationInfo$ProfileSelector;
+
+    invoke-static {v1, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_7
+
+    .line 12
+    sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+
+    move-result-object v2
+
+    .line 13
+    iget-object v2, v2, Lvd/r;->j:Lcom/supercell/id/IdConfiguration;
+
+    .line 14
+    invoke-virtual {v2}, Lcom/supercell/id/IdConfiguration;->getHasGameAccountToken()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_6
+
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v1
 
-    .line 13
-    iget-object v1, v1, Lwd/r;->l:Lcom/supercell/id/IdAccount;
+    .line 15
+    iget-object v1, v1, Lvd/r;->l:Lcom/supercell/id/IdAccount;
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_6
 
-    .line 14
+    .line 16
     invoke-virtual {v1}, Lcom/supercell/id/IdAccount;->getCanShowProfile$supercellId_release()Z
 
     move-result v1
 
-    if-ne v1, v5, :cond_5
+    if-ne v1, v3, :cond_6
 
     const/4 v1, 0x1
 
     goto :goto_2
 
-    :cond_5
+    :cond_6
     const/4 v1, 0x0
 
     :goto_2
-    new-array v2, v5, [Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;
+    new-array v2, v3, [Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;
 
-    .line 15
+    .line 17
     new-instance v3, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;
 
     invoke-direct {v3, v1}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;-><init>(Z)V
 
     aput-object v3, v2, v4
 
-    goto/16 :goto_d
+    goto/16 :goto_a
 
-    .line 16
-    :cond_6
+    .line 18
+    :cond_7
     sget-object v2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v6
 
-    .line 17
-    iget-object v6, v6, Lwd/r;->j:Lcom/supercell/id/IdConfiguration;
+    .line 19
+    iget-object v6, v6, Lvd/r;->j:Lcom/supercell/id/IdConfiguration;
 
-    .line 18
+    .line 20
     invoke-virtual {v6}, Lcom/supercell/id/IdConfiguration;->getHasGameAccountToken()Z
 
     move-result v6
 
     if-eqz v6, :cond_17
 
-    .line 19
-    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
-
-    move-result-object v6
-
-    .line 20
-    iget-object v6, v6, Lwd/r;->l:Lcom/supercell/id/IdAccount;
-
-    if-eqz v6, :cond_10
-
     .line 21
-    invoke-virtual {v6}, Lcom/supercell/id/IdAccount;->getCanShowProfile$supercellId_release()Z
+    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
-    move-result v6
-
-    if-ne v6, v5, :cond_10
+    move-result-object v2
 
     .line 22
+    iget-object v2, v2, Lvd/r;->l:Lcom/supercell/id/IdAccount;
+
+    if-eqz v2, :cond_12
+
+    .line 23
+    invoke-virtual {v2}, Lcom/supercell/id/IdAccount;->getCanShowProfile$supercellId_release()Z
+
+    move-result v2
+
+    if-ne v2, v3, :cond_12
+
+    .line 24
     instance-of v2, v1, Lcom/supercell/id/PresentationInfo$InviteToPlay;
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_8
 
-    new-array v2, v5, [Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$BackStackEntry;
+    new-array v2, v3, [Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$BackStackEntry;
 
     new-instance v3, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$BackStackEntry;
 
     check-cast v1, Lcom/supercell/id/PresentationInfo$InviteToPlay;
 
-    .line 23
-    iget-object v5, v1, Lcom/supercell/id/PresentationInfo$InviteToPlay;->a:Ljava/lang/String;
-
-    .line 24
-    iget-object v1, v1, Lcom/supercell/id/PresentationInfo$InviteToPlay;->b:Ljava/lang/String;
-
     .line 25
+    iget-object v5, v1, Lcom/supercell/id/PresentationInfo$InviteToPlay;->g:Ljava/lang/String;
+
+    .line 26
+    iget-object v1, v1, Lcom/supercell/id/PresentationInfo$InviteToPlay;->h:Ljava/lang/String;
+
+    .line 27
     invoke-direct {v3, v5, v1}, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$BackStackEntry;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     aput-object v3, v2, v4
 
-    goto/16 :goto_d
+    goto/16 :goto_a
 
-    .line 26
-    :cond_7
-    sget-object v2, Lcom/supercell/id/PresentationInfo$AddFriends;->a:Lcom/supercell/id/PresentationInfo$AddFriends;
+    .line 28
+    :cond_8
+    sget-object v2, Lcom/supercell/id/PresentationInfo$AddFriends;->g:Lcom/supercell/id/PresentationInfo$AddFriends;
 
-    invoke-static {v1, v2}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_8
+    if-eqz v2, :cond_9
 
-    new-array v2, v5, [Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$BackStackEntry;
+    new-array v2, v3, [Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$BackStackEntry;
 
     new-instance v1, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$BackStackEntry;
 
@@ -1444,17 +1482,17 @@
 
     aput-object v1, v2, v4
 
-    goto/16 :goto_d
+    goto/16 :goto_a
 
-    .line 27
-    :cond_8
-    sget-object v2, Lcom/supercell/id/PresentationInfo$IngameFriends;->a:Lcom/supercell/id/PresentationInfo$IngameFriends;
+    .line 29
+    :cond_9
+    sget-object v2, Lcom/supercell/id/PresentationInfo$IngameFriends;->g:Lcom/supercell/id/PresentationInfo$IngameFriends;
 
-    invoke-static {v1, v2}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_9
+    if-eqz v2, :cond_a
 
     const/4 v1, 0x3
 
@@ -1470,37 +1508,59 @@
 
     invoke-direct {v1}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$BackStackEntry;-><init>()V
 
-    aput-object v1, v2, v5
+    aput-object v1, v2, v3
 
     new-instance v1, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$BackStackEntry;
 
     invoke-direct {v1}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$BackStackEntry;-><init>()V
 
-    aput-object v1, v2, v3
+    aput-object v1, v2, v5
 
-    goto/16 :goto_d
+    goto/16 :goto_a
 
-    .line 28
-    :cond_9
+    .line 30
+    :cond_a
+    instance-of v2, v1, Lcom/supercell/id/PresentationInfo$Chat;
+
+    if-eqz v2, :cond_b
+
+    new-array v2, v3, [Lcom/supercell/id/ui/ingamechat/ChatFragment$BackStackEntry;
+
+    new-instance v3, Lcom/supercell/id/ui/ingamechat/ChatFragment$BackStackEntry;
+
+    check-cast v1, Lcom/supercell/id/PresentationInfo$Chat;
+
+    .line 31
+    iget-object v1, v1, Lcom/supercell/id/PresentationInfo$Chat;->g:Ljava/lang/String;
+
+    .line 32
+    invoke-direct {v3, v1}, Lcom/supercell/id/ui/ingamechat/ChatFragment$BackStackEntry;-><init>(Ljava/lang/String;)V
+
+    aput-object v3, v2, v4
+
+    goto/16 :goto_a
+
+    .line 33
+    :cond_b
     instance-of v2, v1, Lcom/supercell/id/PresentationInfo$PublicProfile;
 
-    if-eqz v2, :cond_a
+    if-eqz v2, :cond_c
 
     new-instance v2, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;
 
     check-cast v1, Lcom/supercell/id/PresentationInfo$PublicProfile;
 
-    .line 29
-    iget-object v7, v1, Lcom/supercell/id/PresentationInfo$PublicProfile;->a:Ljava/lang/String;
+    .line 34
+    iget-object v7, v1, Lcom/supercell/id/PresentationInfo$PublicProfile;->g:Ljava/lang/String;
 
-    .line 30
-    iget-object v8, v1, Lcom/supercell/id/PresentationInfo$PublicProfile;->b:Ljava/lang/String;
+    .line 35
+    iget-object v8, v1, Lcom/supercell/id/PresentationInfo$PublicProfile;->h:Lqc/d0;
 
-    .line 31
-    iget-object v9, v1, Lcom/supercell/id/PresentationInfo$PublicProfile;->h:Ljava/lang/String;
+    .line 36
+    iget-object v9, v1, Lcom/supercell/id/PresentationInfo$PublicProfile;->i:Ljava/lang/String;
 
-    .line 32
-    iget-object v10, v1, Lcom/supercell/id/PresentationInfo$PublicProfile;->i:Lcom/supercell/id/model/ProfileImage;
+    .line 37
+    iget-object v10, v1, Lcom/supercell/id/PresentationInfo$PublicProfile;->j:Lcom/supercell/id/model/ProfileImage;
 
     const/4 v11, 0x0
 
@@ -1508,8 +1568,8 @@
 
     const/4 v13, 0x0
 
-    .line 33
-    iget-object v14, v1, Lcom/supercell/id/PresentationInfo$PublicProfile;->j:Ljava/lang/String;
+    .line 38
+    iget-object v14, v1, Lcom/supercell/id/PresentationInfo$PublicProfile;->k:Ljava/lang/String;
 
     const/4 v15, 0x0
 
@@ -1517,16 +1577,16 @@
 
     move-object v6, v2
 
-    .line 34
-    invoke-direct/range {v6 .. v16}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdRelationshipStatus;Lcom/supercell/id/model/IdPresenceStatus;ZLjava/lang/String;ZI)V
+    .line 39
+    invoke-direct/range {v6 .. v16}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;-><init>(Ljava/lang/String;Lqc/d0;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdRelationshipStatus;Lcom/supercell/id/model/IdPresenceStatus;ZLjava/lang/String;ZI)V
 
     goto :goto_3
 
-    .line 35
-    :cond_a
+    .line 40
+    :cond_c
     instance-of v1, v1, Lcom/supercell/id/PresentationInfo$Messages;
 
-    if-eqz v1, :cond_b
+    if-eqz v1, :cond_d
 
     new-instance v2, Lcom/supercell/id/ui/messages/MessagesFragment$BackStackEntry;
 
@@ -1534,89 +1594,89 @@
 
     goto :goto_3
 
-    :cond_b
+    :cond_d
     const/4 v2, 0x0
 
     :goto_3
     const-string v1, "resources"
 
-    .line 36
-    invoke-static {v0, v1}, Lsc/i;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
+    .line 41
+    invoke-static {v0, v1}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_e
+    if-eqz v1, :cond_10
 
-    .line 37
+    .line 42
     instance-of v1, v2, Lcom/supercell/id/ui/messages/MessagesFragment$BackStackEntry;
 
-    if-eqz v1, :cond_c
+    if-eqz v1, :cond_e
 
     goto :goto_4
 
-    :cond_c
+    :cond_e
     instance-of v1, v2, Lcom/supercell/id/ui/settings/SettingsFragment$BackStackEntry;
 
-    if-eqz v1, :cond_d
+    if-eqz v1, :cond_f
 
     :goto_4
-    invoke-static {v2}, Landroidx/savedstate/d;->u(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v2}, Lb5/m;->l(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v1
 
     goto :goto_5
 
-    :cond_d
-    new-array v1, v3, [Lcom/supercell/id/ui/BackStack$Entry;
+    :cond_f
+    new-array v1, v5, [Lcom/supercell/id/ui/BackStack$Entry;
 
-    .line 38
-    new-instance v3, Lcom/supercell/id/ui/profile/ProfileFragment$BackStackEntry;
+    .line 43
+    new-instance v5, Lcom/supercell/id/ui/profile/ProfileFragment$BackStackEntry;
 
-    invoke-direct {v3}, Lcom/supercell/id/ui/profile/ProfileFragment$BackStackEntry;-><init>()V
+    invoke-direct {v5}, Lcom/supercell/id/ui/profile/ProfileFragment$BackStackEntry;-><init>()V
 
-    aput-object v3, v1, v4
+    aput-object v5, v1, v4
 
-    aput-object v2, v1, v5
+    aput-object v2, v1, v3
 
-    invoke-static {v1}, Landroidx/savedstate/d;->x([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v1}, Lb5/m;->o([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v1
 
     goto :goto_5
 
-    :cond_e
-    new-array v1, v3, [Lcom/supercell/id/ui/BackStack$Entry;
+    :cond_10
+    new-array v1, v5, [Lcom/supercell/id/ui/BackStack$Entry;
 
-    .line 39
-    new-instance v3, Lcom/supercell/id/ui/profile/ProfileFragment$BackStackEntry;
+    .line 44
+    new-instance v5, Lcom/supercell/id/ui/profile/ProfileFragment$BackStackEntry;
 
-    invoke-direct {v3}, Lcom/supercell/id/ui/profile/ProfileFragment$BackStackEntry;-><init>()V
+    invoke-direct {v5}, Lcom/supercell/id/ui/profile/ProfileFragment$BackStackEntry;-><init>()V
 
-    aput-object v3, v1, v4
+    aput-object v5, v1, v4
 
-    aput-object v2, v1, v5
+    aput-object v2, v1, v3
 
-    invoke-static {v1}, Landroidx/savedstate/d;->x([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v1}, Lb5/m;->o([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v1
 
     :goto_5
     new-array v2, v4, [Lcom/supercell/id/ui/BackStack$Entry;
 
-    .line 40
+    .line 45
     invoke-interface {v1, v2}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v1
 
-    if-eqz v1, :cond_f
+    if-eqz v1, :cond_11
 
     move-object v2, v1
 
     check-cast v2, [Lcom/supercell/id/ui/BackStack$Entry;
 
-    goto/16 :goto_d
+    goto/16 :goto_a
 
-    :cond_f
+    :cond_11
     new-instance v1, Lkotlin/TypeCastException;
 
     const-string v2, "null cannot be cast to non-null type kotlin.Array<T>"
@@ -1625,148 +1685,143 @@
 
     throw v1
 
-    .line 41
-    :cond_10
-    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getPendingLogin$supercellId_release()Lcom/supercell/id/IdLoginDetails;
+    .line 46
+    :cond_12
+    invoke-static/range {p0 .. p0}, Lcom/android/billingclient/api/a0;->c(Lcom/supercell/id/ui/MainActivity;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_16
+
+    .line 47
+    instance-of v2, v1, Lcom/supercell/id/PresentationInfo$InviteToPlay;
+
+    if-eqz v2, :cond_13
+
+    new-array v2, v3, [Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$BackStackEntry;
+
+    new-instance v3, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$BackStackEntry;
+
+    check-cast v1, Lcom/supercell/id/PresentationInfo$InviteToPlay;
+
+    .line 48
+    iget-object v5, v1, Lcom/supercell/id/PresentationInfo$InviteToPlay;->g:Ljava/lang/String;
+
+    .line 49
+    iget-object v1, v1, Lcom/supercell/id/PresentationInfo$InviteToPlay;->h:Ljava/lang/String;
+
+    .line 50
+    invoke-direct {v3, v5, v1}, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$BackStackEntry;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    aput-object v3, v2, v4
+
+    goto/16 :goto_a
+
+    .line 51
+    :cond_13
+    instance-of v2, v1, Lcom/supercell/id/PresentationInfo$PublicProfile;
+
+    if-eqz v2, :cond_14
+
+    new-array v2, v3, [Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;
+
+    new-instance v3, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;
+
+    check-cast v1, Lcom/supercell/id/PresentationInfo$PublicProfile;
+
+    .line 52
+    iget-object v6, v1, Lcom/supercell/id/PresentationInfo$PublicProfile;->g:Ljava/lang/String;
+
+    .line 53
+    iget-object v7, v1, Lcom/supercell/id/PresentationInfo$PublicProfile;->h:Lqc/d0;
+
+    .line 54
+    iget-object v8, v1, Lcom/supercell/id/PresentationInfo$PublicProfile;->i:Ljava/lang/String;
+
+    .line 55
+    iget-object v9, v1, Lcom/supercell/id/PresentationInfo$PublicProfile;->j:Lcom/supercell/id/model/ProfileImage;
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    .line 56
+    iget-object v13, v1, Lcom/supercell/id/PresentationInfo$PublicProfile;->k:Ljava/lang/String;
+
+    const/4 v14, 0x0
+
+    const/16 v15, 0x100
+
+    move-object v5, v3
+
+    .line 57
+    invoke-direct/range {v5 .. v15}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;-><init>(Ljava/lang/String;Lqc/d0;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdRelationshipStatus;Lcom/supercell/id/model/IdPresenceStatus;ZLjava/lang/String;ZI)V
+
+    aput-object v3, v2, v4
+
+    goto/16 :goto_a
+
+    .line 58
+    :cond_14
+    instance-of v2, v1, Lcom/supercell/id/PresentationInfo$Chat;
+
+    if-eqz v2, :cond_15
+
+    new-array v2, v3, [Lcom/supercell/id/ui/ingamechat/ChatFragment$BackStackEntry;
+
+    new-instance v3, Lcom/supercell/id/ui/ingamechat/ChatFragment$BackStackEntry;
+
+    check-cast v1, Lcom/supercell/id/PresentationInfo$Chat;
+
+    .line 59
+    iget-object v1, v1, Lcom/supercell/id/PresentationInfo$Chat;->g:Ljava/lang/String;
+
+    .line 60
+    invoke-direct {v3, v1}, Lcom/supercell/id/ui/ingamechat/ChatFragment$BackStackEntry;-><init>(Ljava/lang/String;)V
+
+    aput-object v3, v2, v4
+
+    goto :goto_a
+
+    .line 61
+    :cond_15
+    invoke-virtual/range {p0 .. p0}, Lcom/supercell/id/ui/MainActivity;->h()[Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v1
-
-    .line 42
-    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getPendingRegistration$supercellId_release()Lcom/supercell/id/IdPendingRegistration;
-
-    move-result-object v6
-
-    .line 43
-    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getAccounts()[Lcom/supercell/id/IdAccount;
-
-    move-result-object v7
-
-    array-length v7, v7
-
-    if-nez v7, :cond_11
-
-    const/4 v7, 0x1
 
     goto :goto_6
 
-    :cond_11
-    const/4 v7, 0x0
-
-    :goto_6
-    xor-int/2addr v7, v5
-
-    if-nez v7, :cond_13
-
-    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Lwd/r;->j()Ljava/util/List;
-
-    move-result-object v7
-
-    invoke-interface {v7}, Ljava/util/Collection;->isEmpty()Z
-
-    move-result v7
-
-    xor-int/2addr v7, v5
-
-    if-eqz v7, :cond_12
-
-    goto :goto_7
-
-    :cond_12
-    new-instance v7, Lcom/supercell/id/ui/authentication/AuthenticationFragment$BackStackEntry;
-
-    invoke-direct {v7, v4, v5}, Lcom/supercell/id/ui/authentication/AuthenticationFragment$BackStackEntry;-><init>(ZI)V
-
-    goto :goto_8
-
-    :cond_13
-    :goto_7
-    new-instance v7, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;
-
-    invoke-direct {v7, v4, v5}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;-><init>(ZI)V
-
-    :goto_8
-    if-eqz v1, :cond_14
-
-    new-array v2, v3, [Lcom/supercell/id/ui/BackStack$Entry;
-
-    aput-object v7, v2, v4
-
-    .line 44
-    invoke-static {v0, v1, v4, v3}, Lcom/supercell/id/ui/MainActivity;->x(Lcom/supercell/id/ui/MainActivity;Lcom/supercell/id/IdLoginDetails;ZI)Lcom/supercell/id/ui/BackStack$Entry;
+    .line 62
+    :cond_16
+    invoke-virtual/range {p0 .. p0}, Lcom/supercell/id/ui/MainActivity;->h()[Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v1
 
-    aput-object v1, v2, v5
-
-    goto/16 :goto_d
-
-    :cond_14
-    if-eqz v6, :cond_15
-
-    new-array v1, v3, [Lcom/supercell/id/ui/BackStack$Entry;
-
-    aput-object v7, v1, v4
-
-    .line 45
-    invoke-virtual {v0, v6}, Lcom/supercell/id/ui/MainActivity;->A(Lcom/supercell/id/IdPendingRegistration;)Lcom/supercell/id/ui/BackStack$Entry;
-
-    move-result-object v2
-
-    aput-object v2, v1, v5
-
-    :goto_9
+    :goto_6
     move-object v2, v1
 
-    goto/16 :goto_d
+    goto :goto_a
 
-    .line 46
-    :cond_15
-    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->isTutorialComplete$supercellId_release()Z
-
-    move-result v1
-
-    if-nez v1, :cond_16
-
-    new-array v1, v5, [Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;
-
-    .line 47
-    new-instance v2, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;
-
-    invoke-direct {v2, v5}, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;-><init>(Z)V
-
-    aput-object v2, v1, v4
-
-    goto :goto_9
-
-    :cond_16
-    new-array v1, v5, [Lcom/supercell/id/ui/BackStack$Entry;
-
-    aput-object v7, v1, v4
-
-    goto :goto_9
-
-    .line 48
+    .line 63
     :cond_17
     invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getPendingLogin$supercellId_release()Lcom/supercell/id/IdLoginDetails;
 
     move-result-object v1
 
-    .line 49
-    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    .line 64
+    invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v6
 
-    invoke-virtual {v6}, Lwd/r;->j()Ljava/util/List;
+    invoke-virtual {v6}, Lvd/r;->j()Ljava/util/List;
 
     move-result-object v6
 
     if-eqz v1, :cond_1a
 
-    .line 50
+    .line 65
     invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getAccounts()[Lcom/supercell/id/IdAccount;
 
     move-result-object v7
@@ -1777,13 +1832,13 @@
 
     const/4 v7, 0x1
 
-    goto :goto_a
+    goto :goto_7
 
     :cond_18
     const/4 v7, 0x0
 
-    :goto_a
-    xor-int/2addr v7, v5
+    :goto_7
+    xor-int/2addr v7, v3
 
     if-nez v7, :cond_19
 
@@ -1791,29 +1846,29 @@
 
     move-result v7
 
-    xor-int/2addr v7, v5
+    xor-int/2addr v7, v3
 
     if-eqz v7, :cond_1a
 
     :cond_19
-    new-array v2, v3, [Lcom/supercell/id/ui/BackStack$Entry;
+    new-array v2, v5, [Lcom/supercell/id/ui/BackStack$Entry;
 
-    .line 51
+    .line 66
     new-instance v6, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;
 
-    invoke-direct {v6, v4, v5}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;-><init>(ZI)V
+    invoke-direct {v6, v4, v3}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;-><init>(ZI)V
 
     aput-object v6, v2, v4
 
-    invoke-static {v0, v1, v4, v3}, Lcom/supercell/id/ui/MainActivity;->x(Lcom/supercell/id/ui/MainActivity;Lcom/supercell/id/IdLoginDetails;ZI)Lcom/supercell/id/ui/BackStack$Entry;
+    invoke-static {v0, v1, v4, v5}, Lcom/supercell/id/ui/MainActivity;->y(Lcom/supercell/id/ui/MainActivity;Lcom/supercell/id/IdLoginDetails;ZI)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v1
 
-    aput-object v1, v2, v5
+    aput-object v1, v2, v3
 
-    goto :goto_d
+    goto :goto_a
 
-    .line 52
+    .line 67
     :cond_1a
     invoke-virtual {v2}, Lcom/supercell/id/SupercellId;->getAccounts()[Lcom/supercell/id/IdAccount;
 
@@ -1825,13 +1880,13 @@
 
     const/4 v2, 0x1
 
-    goto :goto_b
+    goto :goto_8
 
     :cond_1b
     const/4 v2, 0x0
 
-    :goto_b
-    xor-int/2addr v2, v5
+    :goto_8
+    xor-int/2addr v2, v3
 
     if-nez v2, :cond_1d
 
@@ -1839,40 +1894,173 @@
 
     move-result v2
 
-    xor-int/2addr v2, v5
+    xor-int/2addr v2, v3
 
     if-eqz v2, :cond_1c
 
-    goto :goto_c
+    goto :goto_9
 
     :cond_1c
-    new-array v2, v5, [Lcom/supercell/id/ui/BackStack$Entry;
+    new-array v2, v3, [Lcom/supercell/id/ui/BackStack$Entry;
 
-    .line 53
-    invoke-static {v0, v1, v4, v3}, Lcom/supercell/id/ui/MainActivity;->x(Lcom/supercell/id/ui/MainActivity;Lcom/supercell/id/IdLoginDetails;ZI)Lcom/supercell/id/ui/BackStack$Entry;
+    .line 68
+    invoke-static {v0, v1, v4, v5}, Lcom/supercell/id/ui/MainActivity;->y(Lcom/supercell/id/ui/MainActivity;Lcom/supercell/id/IdLoginDetails;ZI)Lcom/supercell/id/ui/BackStack$Entry;
 
     move-result-object v1
 
     aput-object v1, v2, v4
 
-    goto :goto_d
+    goto :goto_a
 
     :cond_1d
-    :goto_c
-    new-array v2, v5, [Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;
+    :goto_9
+    new-array v2, v3, [Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;
 
-    .line 54
+    .line 69
     new-instance v1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;
 
-    invoke-direct {v1, v4, v5}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;-><init>(ZI)V
+    invoke-direct {v1, v4, v3}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;-><init>(ZI)V
 
     aput-object v1, v2, v4
 
-    :goto_d
+    :goto_a
     return-object v2
 .end method
 
-.method public final h()Ljava/util/List;
+.method public final h()[Lcom/supercell/id/ui/BackStack$Entry;
+    .locals 7
+
+    .line 1
+    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getPendingLogin$supercellId_release()Lcom/supercell/id/IdLoginDetails;
+
+    move-result-object v1
+
+    .line 2
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getPendingRegistration$supercellId_release()Lcom/supercell/id/IdPendingRegistration;
+
+    move-result-object v2
+
+    .line 3
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getAccounts()[Lcom/supercell/id/IdAccount;
+
+    move-result-object v3
+
+    array-length v3, v3
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x1
+
+    if-nez v3, :cond_0
+
+    const/4 v3, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v3, 0x0
+
+    :goto_0
+    xor-int/2addr v3, v5
+
+    if-nez v3, :cond_2
+
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lvd/r;->j()Ljava/util/List;
+
+    move-result-object v3
+
+    invoke-interface {v3}, Ljava/util/Collection;->isEmpty()Z
+
+    move-result v3
+
+    xor-int/2addr v3, v5
+
+    if-eqz v3, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    new-instance v3, Lcom/supercell/id/ui/authentication/AuthenticationFragment$BackStackEntry;
+
+    invoke-direct {v3, v4, v5}, Lcom/supercell/id/ui/authentication/AuthenticationFragment$BackStackEntry;-><init>(ZI)V
+
+    goto :goto_2
+
+    :cond_2
+    :goto_1
+    new-instance v3, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;
+
+    invoke-direct {v3, v4, v5}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;-><init>(ZI)V
+
+    :goto_2
+    const/4 v6, 0x2
+
+    if-eqz v1, :cond_3
+
+    new-array v0, v6, [Lcom/supercell/id/ui/BackStack$Entry;
+
+    aput-object v3, v0, v4
+
+    .line 4
+    invoke-static {p0, v1, v4, v6}, Lcom/supercell/id/ui/MainActivity;->y(Lcom/supercell/id/ui/MainActivity;Lcom/supercell/id/IdLoginDetails;ZI)Lcom/supercell/id/ui/BackStack$Entry;
+
+    move-result-object v1
+
+    aput-object v1, v0, v5
+
+    goto :goto_3
+
+    :cond_3
+    if-eqz v2, :cond_4
+
+    new-array v0, v6, [Lcom/supercell/id/ui/BackStack$Entry;
+
+    aput-object v3, v0, v4
+
+    .line 5
+    invoke-virtual {p0, v2}, Lcom/supercell/id/ui/MainActivity;->B(Lcom/supercell/id/IdPendingRegistration;)Lcom/supercell/id/ui/BackStack$Entry;
+
+    move-result-object v1
+
+    aput-object v1, v0, v5
+
+    goto :goto_3
+
+    .line 6
+    :cond_4
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->isTutorialComplete$supercellId_release()Z
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    new-array v0, v5, [Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;
+
+    .line 7
+    new-instance v1, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;
+
+    invoke-direct {v1, v5}, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;-><init>(Z)V
+
+    aput-object v1, v0, v4
+
+    goto :goto_3
+
+    :cond_5
+    new-array v0, v5, [Lcom/supercell/id/ui/BackStack$Entry;
+
+    aput-object v3, v0, v4
+
+    :goto_3
+    return-object v0
+.end method
+
+.method public final i()Ljava/util/List;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1884,7 +2072,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     if-eqz v0, :cond_0
 
@@ -1897,18 +2085,18 @@
     const-string v0, "backStack"
 
     .line 3
-    invoke-static {v0}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {v0}, Ls3/b;->i(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     throw v0
 .end method
 
-.method public final i()I
+.method public final j()I
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     if-eqz v0, :cond_0
 
@@ -1925,14 +2113,14 @@
     :cond_0
     const-string v0, "backStack"
 
-    invoke-static {v0}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {v0}, Ls3/b;->i(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     throw v0
 .end method
 
-.method public final j()Landroid/view/View;
+.method public final k()Landroid/view/View;
     .locals 1
 
     .line 1
@@ -1945,13 +2133,13 @@
     return-object v0
 .end method
 
-.method public final k()I
+.method public final l()I
     .locals 2
 
     const-string v0, "resources"
 
     .line 1
-    invoke-static {p0, v0}, Lsc/i;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
+    invoke-static {p0, v0}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1980,11 +2168,11 @@
     return v0
 .end method
 
-.method public final l()Z
+.method public final m()Z
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->s()I
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->t()I
 
     move-result v0
 
@@ -2001,36 +2189,36 @@
     return v0
 .end method
 
-.method public final m()Lsc/d;
+.method public final n()Lpc/c;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->h:Lbe/c;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->i:Lae/c;
 
-    invoke-interface {v0}, Lbe/c;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Lae/c;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lsc/d;
+    check-cast v0, Lpc/c;
 
     return-object v0
 .end method
 
-.method public final n()I
+.method public final o()I
     .locals 1
 
     const-string v0, "resources"
 
     .line 1
-    invoke-static {p0, v0}, Lsc/i;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
+    invoke-static {p0, v0}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->j:Lbe/c;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->k:Lae/c;
 
-    invoke-interface {v0}, Lbe/c;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Lae/c;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -2049,108 +2237,11 @@
     return v0
 .end method
 
-.method public final o()Ljava/lang/Integer;
-    .locals 6
-
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_1
-
-    invoke-virtual {v0}, Lcom/supercell/id/ui/BackStack;->j()Lcom/supercell/id/ui/BackStack$Entry;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    sget v1, Lcom/supercell/id/R$id;->root_layout:I
-
-    invoke-virtual {p0, v1}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/supercell/id/view/RootFrameLayout;
-
-    const-string v3, "root_layout"
-
-    invoke-static {v2, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v2}, Landroid/widget/FrameLayout;->getHeight()I
-
-    move-result v2
-
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->t()I
-
-    move-result v3
-
-    sub-int/2addr v2, v3
-
-    const/4 v3, 0x0
-
-    .line 3
-    invoke-virtual {p0, v1}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
-
-    move-result-object v4
-
-    check-cast v4, Lcom/supercell/id/view/RootFrameLayout;
-
-    invoke-virtual {v4}, Lcom/supercell/id/view/RootFrameLayout;->getSystemWindowInsets()Landroid/graphics/Rect;
-
-    move-result-object v4
-
-    iget v4, v4, Landroid/graphics/Rect;->top:I
-
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->t()I
-
-    move-result v5
-
-    sub-int/2addr v4, v5
-
-    invoke-static {v3, v4}, Ljava/lang/Math;->max(II)I
-
-    move-result v3
-
-    .line 4
-    invoke-virtual {p0, v1}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/supercell/id/view/RootFrameLayout;
-
-    invoke-virtual {v1}, Lcom/supercell/id/view/RootFrameLayout;->getSystemWindowInsets()Landroid/graphics/Rect;
-
-    move-result-object v1
-
-    iget v1, v1, Landroid/graphics/Rect;->bottom:I
-
-    .line 5
-    invoke-virtual {v0, p0, v2, v3, v1}, Lcom/supercell/id/ui/BackStack$Entry;->D(Lcom/supercell/id/ui/MainActivity;III)I
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    :cond_0
-    return-object v1
-
-    :cond_1
-    const-string v0, "backStack"
-
-    invoke-static {v0}, Ly4/x;->l(Ljava/lang/String;)V
-
-    throw v1
-.end method
-
 .method public onBackPressed()V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     const/4 v1, 0x0
 
@@ -2166,7 +2257,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Lcom/supercell/id/ui/BackStack$Entry;->m()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/supercell/id/ui/BackStack$Entry;->k()Ljava/lang/String;
 
     move-result-object v0
 
@@ -2204,7 +2295,7 @@
     const-string v0, "backStack"
 
     .line 3
-    invoke-static {v0}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {v0}, Ls3/b;->i(Ljava/lang/String;)V
 
     throw v1
 .end method
@@ -2213,7 +2304,7 @@
     .locals 8
 
     .line 1
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const/4 v1, 0x0
 
@@ -2228,7 +2319,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-static {v0, p0}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p0}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -2253,7 +2344,7 @@
     invoke-direct {v0, p0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     .line 4
-    sput-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sput-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 5
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
@@ -2279,12 +2370,12 @@
     invoke-virtual {p0, v2}, Landroidx/appcompat/app/AppCompatActivity;->setContentView(I)V
 
     .line 9
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
     .line 10
-    iget-object v0, v0, Lwd/r;->j:Lcom/supercell/id/IdConfiguration;
+    iget-object v0, v0, Lvd/r;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 11
     invoke-virtual {v0}, Lcom/supercell/id/IdConfiguration;->getProductionScidEnabled()Z
@@ -2306,7 +2397,7 @@
 
     const-string v3, "envTextView"
 
-    invoke-static {v0, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
@@ -2318,11 +2409,11 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->m()Lsc/d;
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->n()Lpc/c;
 
     move-result-object v3
 
-    sget-object v4, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v4, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 14
     invoke-virtual {v0, v3}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
@@ -2362,7 +2453,7 @@
 
     check-cast v3, Landroid/widget/FrameLayout;
 
-    iget-object v4, p0, Lcom/supercell/id/ui/MainActivity;->n:Landroid/view/View$OnLayoutChangeListener;
+    iget-object v4, p0, Lcom/supercell/id/ui/MainActivity;->o:Landroid/view/View$OnLayoutChangeListener;
 
     invoke-virtual {v3, v4}, Landroid/widget/FrameLayout;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
@@ -2414,7 +2505,7 @@
     const-string v0, "resources"
 
     .line 21
-    invoke-static {p0, v0}, Lsc/i;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
+    invoke-static {p0, v0}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
 
     move-result v3
 
@@ -2481,7 +2572,7 @@
     check-cast v4, Lcom/supercell/id/PresentationInfo;
 
     :goto_2
-    iput-object v4, p0, Lcom/supercell/id/ui/MainActivity;->a:Lcom/supercell/id/PresentationInfo;
+    iput-object v4, p0, Lcom/supercell/id/ui/MainActivity;->g:Lcom/supercell/id/PresentationInfo;
 
     const-string v3, "supportFragmentManager"
 
@@ -2492,7 +2583,7 @@
 
     move-result-object v4
 
-    invoke-static {v4, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v5, Lcom/supercell/id/ui/MainActivity$h;
 
@@ -2563,7 +2654,7 @@
 
     move-result-object v4
 
-    invoke-static {v4, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v3, Lcom/supercell/id/ui/MainActivity$i;
 
@@ -2584,7 +2675,7 @@
     invoke-direct {v7, p0, v4, v3, v5}, Lcom/supercell/id/ui/BackStack;-><init>(Lcom/supercell/id/ui/MainActivity;Landroidx/fragment/app/FragmentManager;Lke/a;[Lcom/supercell/id/ui/BackStack$Entry;)V
 
     :goto_4
-    iput-object v7, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iput-object v7, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     .line 33
     invoke-virtual {v7}, Lcom/supercell/id/ui/BackStack;->i()V
@@ -2592,7 +2683,7 @@
     if-nez p1, :cond_c
 
     .line 34
-    iget-object p1, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object p1, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     if-eqz p1, :cond_b
 
@@ -2607,11 +2698,11 @@
 
     check-cast p1, Lcom/supercell/id/view/RootFrameLayout;
 
-    new-instance v3, Luc/r0;
+    new-instance v3, Lrc/s0;
 
-    invoke-direct {v3, p0}, Luc/r0;-><init>(Lcom/supercell/id/ui/MainActivity;)V
+    invoke-direct {v3, p0}, Lrc/s0;-><init>(Lcom/supercell/id/ui/MainActivity;)V
 
-    invoke-static {p1, v3}, Lwd/f2;->a(Landroid/view/View;Lke/l;)V
+    invoke-static {p1, v3}, Lvd/g2;->a(Landroid/view/View;Lke/l;)V
 
     goto :goto_5
 
@@ -2619,7 +2710,7 @@
     const-string p1, "backStack"
 
     .line 36
-    invoke-static {p1}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->i(Ljava/lang/String;)V
 
     throw v1
 
@@ -2633,15 +2724,15 @@
 
     check-cast p1, Lcom/supercell/id/view/RootFrameLayout;
 
-    new-instance v3, Luc/z0;
+    new-instance v3, Lrc/a1;
 
-    invoke-direct {v3, p0}, Luc/z0;-><init>(Lcom/supercell/id/ui/MainActivity;)V
+    invoke-direct {v3, p0}, Lrc/a1;-><init>(Lcom/supercell/id/ui/MainActivity;)V
 
-    invoke-static {p1, v3}, Lwd/f2;->a(Landroid/view/View;Lke/l;)V
+    invoke-static {p1, v3}, Lvd/g2;->a(Landroid/view/View;Lke/l;)V
 
     .line 38
     :goto_5
-    invoke-virtual {p0, v2}, Lcom/supercell/id/ui/MainActivity;->u(Z)V
+    invoke-virtual {p0, v2}, Lcom/supercell/id/ui/MainActivity;->v(Z)V
 
     .line 39
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -2649,7 +2740,7 @@
     invoke-virtual {p1, p0}, Lcom/supercell/id/SupercellId;->addConfigurationListener$supercellId_release(Lcom/supercell/id/SupercellId$a;)V
 
     .line 40
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->n()I
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->o()I
 
     move-result p1
 
@@ -2665,13 +2756,13 @@
     check-cast p1, Landroid/widget/FrameLayout;
 
     .line 42
-    invoke-static {p1}, Lwd/f2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
+    invoke-static {p1}, Lvd/g2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
 
     move-result-object v2
 
     if-eqz v2, :cond_d
 
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->n()I
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->o()I
 
     move-result v3
 
@@ -2693,7 +2784,7 @@
 
     move-result v4
 
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->n()I
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->o()I
 
     move-result v5
 
@@ -2714,15 +2805,15 @@
 
     const-string v2, "head_background"
 
-    invoke-static {p1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1}, Lwd/f2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
+    invoke-static {p1}, Lvd/g2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
 
     move-result-object p1
 
     if-eqz p1, :cond_e
 
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->n()I
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->o()I
 
     move-result v2
 
@@ -2730,7 +2821,7 @@
 
     .line 45
     :cond_e
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->k()I
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->l()I
 
     move-result p1
 
@@ -2746,13 +2837,13 @@
     check-cast p1, Landroid/widget/FrameLayout;
 
     .line 47
-    invoke-static {p1}, Lwd/f2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
+    invoke-static {p1}, Lvd/g2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
 
     move-result-object v2
 
     if-eqz v2, :cond_f
 
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->k()I
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->l()I
 
     move-result v3
 
@@ -2770,7 +2861,7 @@
 
     move-result v3
 
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->k()I
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->l()I
 
     move-result v4
 
@@ -2796,13 +2887,13 @@
 
     if-eqz p1, :cond_11
 
-    sget-object v2, Lcom/supercell/id/ui/MainActivity$j;->a:Lcom/supercell/id/ui/MainActivity$j;
+    sget-object v2, Lcom/supercell/id/ui/MainActivity$j;->g:Lcom/supercell/id/ui/MainActivity$j;
 
     invoke-virtual {p1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 50
     :cond_11
-    invoke-static {p0, v0}, Lsc/i;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
+    invoke-static {p0, v0}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
 
     move-result p1
 
@@ -2818,9 +2909,9 @@
     check-cast p1, Lcom/supercell/id/view/RootFrameLayout;
 
     .line 52
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->m:Lbe/c;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->n:Lae/c;
 
-    invoke-interface {v0}, Lbe/c;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Lae/c;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -2829,12 +2920,12 @@
     if-eqz v0, :cond_12
 
     .line 53
-    iget-object v1, p1, Lcom/supercell/id/view/RootFrameLayout;->b:Ljava/util/List;
+    iget-object v1, p1, Lcom/supercell/id/view/RootFrameLayout;->h:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 54
-    iget-object p1, p1, Lcom/supercell/id/view/RootFrameLayout;->a:Landroid/graphics/Rect;
+    iget-object p1, p1, Lcom/supercell/id/view/RootFrameLayout;->g:Landroid/graphics/Rect;
 
     invoke-virtual {v0, p1}, Lcom/supercell/id/ui/b;->a(Landroid/graphics/Rect;)V
 
@@ -2844,7 +2935,7 @@
     const-string p1, "listener"
 
     .line 55
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v1
 
@@ -2873,9 +2964,9 @@
     if-eqz v0, :cond_1
 
     .line 3
-    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity;->m:Lbe/c;
+    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity;->n:Lae/c;
 
-    invoke-interface {v1}, Lbe/c;->getValue()Ljava/lang/Object;
+    invoke-interface {v1}, Lae/c;->getValue()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -2884,7 +2975,7 @@
     if-eqz v1, :cond_0
 
     .line 4
-    iget-object v0, v0, Lcom/supercell/id/view/RootFrameLayout;->b:Ljava/util/List;
+    iget-object v0, v0, Lcom/supercell/id/view/RootFrameLayout;->h:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
@@ -2894,7 +2985,7 @@
     const-string v0, "listener"
 
     .line 5
-    invoke-static {v0}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {v0}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -2927,14 +3018,14 @@
     if-eqz p1, :cond_2
 
     .line 1
-    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity;->a:Lcom/supercell/id/PresentationInfo;
+    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity;->g:Lcom/supercell/id/PresentationInfo;
 
     const-string v2, "INFO"
 
     invoke-virtual {p1, v2, v1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     const-string v2, "backStack"
 
@@ -2957,13 +3048,13 @@
 
     .line 6
     :cond_0
-    invoke-static {v2}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {v2}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 
     .line 7
     :cond_1
-    invoke-static {v2}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {v2}, Ls3/b;->i(Ljava/lang/String;)V
 
     throw v0
 
@@ -2971,7 +3062,7 @@
     const-string p1, "outState"
 
     .line 8
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -2985,7 +3076,7 @@
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->onWindowClientStart$supercellId_release()V
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     const/4 v1, 0x0
 
@@ -2996,11 +3087,11 @@
     move-result-object v0
 
     .line 3
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->m()Lsc/d;
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->n()Lpc/c;
 
     move-result-object v2
 
-    invoke-static {p0}, Landroidx/savedstate/d;->e(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/billingclient/api/a0;->a(Landroid/content/Context;)Z
 
     move-result v3
 
@@ -3012,7 +3103,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0, p0}, Lcom/supercell/id/ui/BackStack$Entry;->z0(Lcom/supercell/id/ui/MainActivity;)Z
+    invoke-virtual {v0, p0}, Lcom/supercell/id/ui/BackStack$Entry;->w0(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result v3
 
@@ -3033,35 +3124,35 @@
 
     .line 4
     :goto_1
-    invoke-virtual {v2, v3}, Lsc/d;->k(Z)V
+    invoke-virtual {v2, v3}, Lpc/c;->k(Z)V
 
     .line 5
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->m()Lsc/d;
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->n()Lpc/c;
 
     move-result-object v2
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {v0, p0}, Lcom/supercell/id/ui/BackStack$Entry;->u0(Lcom/supercell/id/ui/MainActivity;)Z
+    invoke-virtual {v0, p0}, Lcom/supercell/id/ui/BackStack$Entry;->t0(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result v4
 
     :cond_2
-    invoke-virtual {v2, v4, v5}, Lsc/d;->m(ZZ)V
+    invoke-virtual {v2, v4, v5}, Lpc/c;->m(ZZ)V
 
     .line 6
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->m()Lsc/d;
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->n()Lpc/c;
 
     move-result-object v2
 
     if-eqz v0, :cond_3
 
-    invoke-virtual {v0, p0}, Lcom/supercell/id/ui/BackStack$Entry;->z(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/String;
+    invoke-virtual {v0, p0}, Lcom/supercell/id/ui/BackStack$Entry;->y(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/String;
 
     move-result-object v1
 
     :cond_3
-    invoke-virtual {v2, v1, v5}, Lsc/d;->i(Ljava/lang/String;Z)V
+    invoke-virtual {v2, v1, v5}, Lpc/c;->i(Ljava/lang/String;Z)V
 
     .line 7
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onStart()V
@@ -3072,7 +3163,7 @@
     const-string v0, "backStack"
 
     .line 8
-    invoke-static {v0}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {v0}, Ls3/b;->i(Ljava/lang/String;)V
 
     throw v1
 .end method
@@ -3081,13 +3172,13 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->m()Lsc/d;
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->n()Lpc/c;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lsc/d;->k(Z)V
+    invoke-virtual {v0, v1}, Lpc/c;->k(Z)V
 
     .line 2
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -3147,10 +3238,107 @@
 .end method
 
 .method public final p()Ljava/lang/Integer;
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0}, Lcom/supercell/id/ui/BackStack;->j()Lcom/supercell/id/ui/BackStack$Entry;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    sget v1, Lcom/supercell/id/R$id;->root_layout:I
+
+    invoke-virtual {p0, v1}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/supercell/id/view/RootFrameLayout;
+
+    const-string v3, "root_layout"
+
+    invoke-static {v2, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v2}, Landroid/widget/FrameLayout;->getHeight()I
+
+    move-result v2
+
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->u()I
+
+    move-result v3
+
+    sub-int/2addr v2, v3
+
+    const/4 v3, 0x0
+
+    .line 3
+    invoke-virtual {p0, v1}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/supercell/id/view/RootFrameLayout;
+
+    invoke-virtual {v4}, Lcom/supercell/id/view/RootFrameLayout;->getSystemWindowInsets()Landroid/graphics/Rect;
+
+    move-result-object v4
+
+    iget v4, v4, Landroid/graphics/Rect;->top:I
+
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->u()I
+
+    move-result v5
+
+    sub-int/2addr v4, v5
+
+    invoke-static {v3, v4}, Ljava/lang/Math;->max(II)I
+
+    move-result v3
+
+    .line 4
+    invoke-virtual {p0, v1}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/supercell/id/view/RootFrameLayout;
+
+    invoke-virtual {v1}, Lcom/supercell/id/view/RootFrameLayout;->getSystemWindowInsets()Landroid/graphics/Rect;
+
+    move-result-object v1
+
+    iget v1, v1, Landroid/graphics/Rect;->bottom:I
+
+    .line 5
+    invoke-virtual {v0, p0, v2, v3, v1}, Lcom/supercell/id/ui/BackStack$Entry;->E(Lcom/supercell/id/ui/MainActivity;III)I
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    :cond_0
+    return-object v1
+
+    :cond_1
+    const-string v0, "backStack"
+
+    invoke-static {v0}, Ls3/b;->i(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public final q()Ljava/lang/Integer;
     .locals 9
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     const/4 v1, 0x0
 
@@ -3163,7 +3351,7 @@
     if-eqz v0, :cond_4
 
     .line 2
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->s()I
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->t()I
 
     move-result v1
 
@@ -3211,7 +3399,7 @@
     check-cast v6, Lcom/supercell/id/view/RootFrameLayout;
 
     .line 6
-    sget-object v7, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v7, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 7
     invoke-virtual {v6}, Landroid/view/View;->getLayoutDirection()I
@@ -3274,7 +3462,7 @@
 
     const-string v4, "root_layout"
 
-    invoke-static {v2, v4}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Landroid/widget/FrameLayout;->getWidth()I
 
@@ -3288,7 +3476,7 @@
     move-result v0
 
     .line 12
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->n()I
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->o()I
 
     move-result v1
 
@@ -3305,31 +3493,31 @@
     const-string v0, "backStack"
 
     .line 13
-    invoke-static {v0}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {v0}, Ls3/b;->i(Ljava/lang/String;)V
 
     throw v1
 .end method
 
-.method public final q()Z
+.method public final r()Z
     .locals 2
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lwd/h;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lvd/h;
 
     move-result-object v0
 
-    sget-object v1, Lwd/i1;->MAINTENANCE:Lwd/i1;
+    const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lwd/h;->a(Lwd/i1;)Z
+    invoke-virtual {v0, v1}, Lvd/h;->a(I)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public final r()I
+.method public final s()I
     .locals 5
 
     .line 1
@@ -3343,7 +3531,7 @@
 
     const-string v2, "root_layout"
 
-    invoke-static {v1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1}, Landroid/widget/FrameLayout;->getHeight()I
 
@@ -3378,11 +3566,11 @@
     const/16 v3, 0x41
 
     .line 4
-    invoke-static {v3}, Lc5/i;->c(I)F
+    invoke-static {v3}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v3
 
-    invoke-static {v3}, Lc2/n0;->e(F)I
+    invoke-static {v3}, Lb5/m;->r(F)I
 
     move-result v3
 
@@ -3393,11 +3581,11 @@
     const/16 v0, 0xf0
 
     .line 5
-    invoke-static {v0}, Lc5/i;->c(I)F
+    invoke-static {v0}, Lcom/android/billingclient/api/a0;->b(I)F
 
     move-result v0
 
-    invoke-static {v0}, Lc2/n0;->e(F)I
+    invoke-static {v0}, Lb5/m;->r(F)I
 
     move-result v0
 
@@ -3414,7 +3602,7 @@
     div-int/lit8 v1, v1, 0x3
 
     .line 6
-    invoke-static {v0, v4}, Ly4/x;->g(II)I
+    invoke-static {v0, v4}, Ls3/b;->e(II)I
 
     move-result v3
 
@@ -3425,7 +3613,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-static {v0, v1}, Ly4/x;->g(II)I
+    invoke-static {v0, v1}, Ls3/b;->e(II)I
 
     move-result v3
 
@@ -3440,13 +3628,13 @@
     return v2
 .end method
 
-.method public final s()I
+.method public final t()I
     .locals 4
 
     const-string v0, "resources"
 
     .line 1
-    invoke-static {p0, v0}, Lsc/i;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
+    invoke-static {p0, v0}, Landroidx/fragment/app/a;->b(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -3457,7 +3645,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     if-eqz v0, :cond_2
 
@@ -3478,7 +3666,7 @@
 
     const-string v3, "root_layout"
 
-    invoke-static {v2, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Landroid/widget/FrameLayout;->getWidth()I
 
@@ -3511,7 +3699,7 @@
     iget v1, v1, Landroid/graphics/Rect;->right:I
 
     .line 5
-    invoke-virtual {v0, p0, v2, v3, v1}, Lcom/supercell/id/ui/BackStack$Entry;->m0(Lcom/supercell/id/ui/MainActivity;III)I
+    invoke-virtual {v0, p0, v2, v3, v1}, Lcom/supercell/id/ui/BackStack$Entry;->k0(Lcom/supercell/id/ui/MainActivity;III)I
 
     move-result v1
 
@@ -3522,14 +3710,14 @@
     :cond_2
     const-string v0, "backStack"
 
-    invoke-static {v0}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {v0}, Ls3/b;->i(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     throw v0
 .end method
 
-.method public final t()I
+.method public final u()I
     .locals 4
 
     .line 1
@@ -3539,9 +3727,9 @@
 
     const-string v1, "resources"
 
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0}, Landroidx/savedstate/d;->n(Landroid/content/res/Resources;)Z
+    invoke-static {v0}, Lcom/android/billingclient/api/a0;->h(Landroid/content/res/Resources;)Z
 
     move-result v0
 
@@ -3553,9 +3741,9 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0}, Landroidx/savedstate/d;->s(Landroid/content/res/Resources;)Z
+    invoke-static {v0}, Lcom/android/billingclient/api/a0;->k(Landroid/content/res/Resources;)Z
 
     move-result v0
 
@@ -3564,7 +3752,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     if-eqz v0, :cond_1
 
@@ -3585,7 +3773,7 @@
 
     const-string v3, "root_layout"
 
-    invoke-static {v2, v3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Landroid/widget/FrameLayout;->getHeight()I
 
@@ -3618,7 +3806,7 @@
     iget v1, v1, Landroid/graphics/Rect;->bottom:I
 
     .line 5
-    invoke-virtual {v0, p0, v2, v3, v1}, Lcom/supercell/id/ui/BackStack$Entry;->q0(Lcom/supercell/id/ui/MainActivity;III)I
+    invoke-virtual {v0, p0, v2, v3, v1}, Lcom/supercell/id/ui/BackStack$Entry;->n0(Lcom/supercell/id/ui/MainActivity;III)I
 
     move-result v2
 
@@ -3627,7 +3815,7 @@
     :cond_1
     const-string v0, "backStack"
 
-    invoke-static {v0}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {v0}, Ls3/b;->i(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -3638,31 +3826,29 @@
     return v2
 .end method
 
-.method public final u(Z)V
+.method public final v(Z)V
     .locals 7
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lwd/h;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getRemoteConfiguration$supercellId_release()Lvd/h;
 
     move-result-object v1
 
-    sget-object v2, Lwd/i1;->MAINTENANCE:Lwd/i1;
+    const/4 v2, 0x1
 
-    invoke-virtual {v1, v2}, Lwd/h;->a(Lwd/i1;)Z
+    invoke-virtual {v1, v2}, Lvd/h;->a(I)Z
 
     move-result v1
 
-    const/4 v2, 0x1
-
     if-nez v1, :cond_0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity;->a:Lcom/supercell/id/PresentationInfo;
+    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity;->g:Lcom/supercell/id/PresentationInfo;
 
-    sget-object v3, Lcom/supercell/id/PresentationInfo$Login;->a:Lcom/supercell/id/PresentationInfo$Login;
+    sget-object v3, Lcom/supercell/id/PresentationInfo$Login;->g:Lcom/supercell/id/PresentationInfo$Login;
 
-    invoke-static {v1, v3}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -3670,11 +3856,11 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity;->a:Lcom/supercell/id/PresentationInfo;
+    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity;->g:Lcom/supercell/id/PresentationInfo;
 
-    sget-object v3, Lcom/supercell/id/PresentationInfo$ProfileSelector;->a:Lcom/supercell/id/PresentationInfo$ProfileSelector;
+    sget-object v3, Lcom/supercell/id/PresentationInfo$ProfileSelector;->g:Lcom/supercell/id/PresentationInfo$ProfileSelector;
 
-    invoke-static {v1, v3}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -3683,11 +3869,11 @@
     if-eqz v1, :cond_0
 
     .line 2
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lwd/r;->e()Z
+    invoke-virtual {v1}, Lvd/r;->e()Z
 
     move-result v1
 
@@ -3702,15 +3888,15 @@
     if-eqz v2, :cond_1
 
     .line 3
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lwd/r;->i()Lxd/e0;
+    invoke-virtual {v0}, Lvd/r;->i()Lwd/z;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lxd/e0;->j()Lse/h0;
+    invoke-virtual {v0}, Lwd/z;->j()Lse/f0;
 
     move-result-object v1
 
@@ -3720,7 +3906,7 @@
     invoke-direct {v3, p1}, Lcom/supercell/id/ui/MainActivity$c;-><init>(Z)V
 
     .line 5
-    sget-object v4, Lcom/supercell/id/ui/MainActivity$d;->a:Lcom/supercell/id/ui/MainActivity$d;
+    sget-object v4, Lcom/supercell/id/ui/MainActivity$d;->g:Lcom/supercell/id/ui/MainActivity$d;
 
     const/4 v5, 0x0
 
@@ -3729,17 +3915,17 @@
     move-object v2, p0
 
     .line 6
-    invoke-static/range {v1 .. v6}, Lwd/e1;->k(Lse/h0;Ljava/lang/Object;Lke/p;Lke/p;Lke/l;I)Lse/h0;
+    invoke-static/range {v1 .. v6}, Lvd/e1;->j(Lse/f0;Ljava/lang/Object;Lke/p;Lke/p;Lke/l;I)Lse/f0;
 
     :cond_1
     return-void
 .end method
 
-.method public final v(Luc/d;)V
+.method public final w(Lrc/e;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->i:Ljava/util/WeakHashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->j:Ljava/util/WeakHashMap;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -3767,9 +3953,9 @@
 
     move-result-object v1
 
-    check-cast v1, Luc/t;
+    check-cast v1, Lrc/u;
 
-    invoke-interface {v1, p1}, Luc/t;->o(Luc/d;)V
+    invoke-interface {v1, p1}, Lrc/u;->c(Lrc/e;)V
 
     goto :goto_0
 
@@ -3777,18 +3963,18 @@
     return-void
 .end method
 
-.method public final w(Lcom/supercell/id/IdLoginDetails;Z)Lcom/supercell/id/ui/BackStack$Entry;
+.method public final x(Lcom/supercell/id/IdLoginDetails;Z)Lcom/supercell/id/ui/BackStack$Entry;
     .locals 1
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lwd/r;
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lvd/r;
 
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lwd/r;->j:Lcom/supercell/id/IdConfiguration;
+    iget-object v0, v0, Lvd/r;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 3
     invoke-virtual {v0}, Lcom/supercell/id/IdConfiguration;->isYoungPlayer()Z
@@ -3814,7 +4000,7 @@
     return-object v0
 .end method
 
-.method public final y(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
+.method public final z(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
     .locals 3
 
     const/4 v0, 0x0
@@ -3822,7 +4008,7 @@
     if-eqz p1, :cond_8
 
     .line 1
-    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->q()Z
+    invoke-virtual {p0}, Lcom/supercell/id/ui/MainActivity;->r()Z
 
     move-result v1
 
@@ -3830,7 +4016,7 @@
 
     if-eqz v1, :cond_5
 
-    invoke-virtual {p1}, Lcom/supercell/id/ui/BackStack$Entry;->R()Z
+    invoke-virtual {p1}, Lcom/supercell/id/ui/BackStack$Entry;->M()Z
 
     move-result v1
 
@@ -3840,7 +4026,7 @@
 
     .line 2
     :cond_0
-    iget-object p1, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object p1, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     if-eqz p1, :cond_4
 
@@ -3850,7 +4036,7 @@
 
     if-eqz p1, :cond_2
 
-    iget-object p1, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object p1, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     if-eqz p1, :cond_1
 
@@ -3865,14 +4051,14 @@
     goto :goto_0
 
     :cond_1
-    invoke-static {v2}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {v2}, Ls3/b;->i(Ljava/lang/String;)V
 
     throw v0
 
     .line 3
     :cond_2
     :goto_0
-    iget-object p1, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object p1, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     if-eqz p1, :cond_3
 
@@ -3887,20 +4073,20 @@
     goto :goto_2
 
     :cond_3
-    invoke-static {v2}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {v2}, Ls3/b;->i(Ljava/lang/String;)V
 
     throw v0
 
     .line 4
     :cond_4
-    invoke-static {v2}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {v2}, Ls3/b;->i(Ljava/lang/String;)V
 
     throw v0
 
     .line 5
     :cond_5
     :goto_1
-    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity;->b:Lcom/supercell/id/ui/BackStack;
+    iget-object v1, p0, Lcom/supercell/id/ui/MainActivity;->h:Lcom/supercell/id/ui/BackStack;
 
     if-eqz v1, :cond_7
 
@@ -3911,7 +4097,7 @@
     return-void
 
     :cond_7
-    invoke-static {v2}, Ly4/x;->l(Ljava/lang/String;)V
+    invoke-static {v2}, Ls3/b;->i(Ljava/lang/String;)V
 
     throw v0
 
@@ -3919,24 +4105,7 @@
     const-string p1, "entry"
 
     .line 6
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     throw v0
-.end method
-
-.method public final z(Luc/t;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/MainActivity;->i:Ljava/util/WeakHashMap;
-
-    const/4 v1, 0x0
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    invoke-interface {v0, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    return-void
 .end method

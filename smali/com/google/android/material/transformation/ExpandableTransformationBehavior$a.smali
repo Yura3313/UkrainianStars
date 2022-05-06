@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/material/transformation/ExpandableTransformationBehavior;
+.field public final synthetic g:Lcom/google/android/material/transformation/ExpandableTransformationBehavior;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/transformation/ExpandableTransformationBehavior$a;->a:Lcom/google/android/material/transformation/ExpandableTransformationBehavior;
+    iput-object p1, p0, Lcom/google/android/material/transformation/ExpandableTransformationBehavior$a;->g:Lcom/google/android/material/transformation/ExpandableTransformationBehavior;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -36,7 +36,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/transformation/ExpandableTransformationBehavior$a;->a:Lcom/google/android/material/transformation/ExpandableTransformationBehavior;
+    iget-object p1, p0, Lcom/google/android/material/transformation/ExpandableTransformationBehavior$a;->g:Lcom/google/android/material/transformation/ExpandableTransformationBehavior;
 
     const/4 v0, 0x0
 

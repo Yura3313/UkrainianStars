@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/fragment/app/u0;->a(Landroidx/fragment/app/u0$e$c;Landroidx/fragment/app/u0$e$b;Landroidx/fragment/app/d0;)V
+    value = Landroidx/fragment/app/u0;->a(Landroidx/fragment/app/u0$d$c;Landroidx/fragment/app/u0$d$b;Landroidx/fragment/app/d0;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,19 +18,19 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/fragment/app/u0$d;
+.field public final synthetic g:Landroidx/fragment/app/u0$c;
 
-.field public final synthetic b:Landroidx/fragment/app/u0;
+.field public final synthetic h:Landroidx/fragment/app/u0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/fragment/app/u0;Landroidx/fragment/app/u0$d;)V
+.method public constructor <init>(Landroidx/fragment/app/u0;Landroidx/fragment/app/u0$c;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/fragment/app/u0$a;->b:Landroidx/fragment/app/u0;
+    iput-object p1, p0, Landroidx/fragment/app/u0$a;->h:Landroidx/fragment/app/u0;
 
-    iput-object p2, p0, Landroidx/fragment/app/u0$a;->a:Landroidx/fragment/app/u0$d;
+    iput-object p2, p0, Landroidx/fragment/app/u0$a;->g:Landroidx/fragment/app/u0$c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,11 +43,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/u0$a;->b:Landroidx/fragment/app/u0;
+    iget-object v0, p0, Landroidx/fragment/app/u0$a;->h:Landroidx/fragment/app/u0;
 
     iget-object v0, v0, Landroidx/fragment/app/u0;->b:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Landroidx/fragment/app/u0$a;->a:Landroidx/fragment/app/u0$d;
+    iget-object v1, p0, Landroidx/fragment/app/u0$a;->g:Landroidx/fragment/app/u0$c;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -56,18 +56,18 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Landroidx/fragment/app/u0$a;->a:Landroidx/fragment/app/u0$d;
+    iget-object v0, p0, Landroidx/fragment/app/u0$a;->g:Landroidx/fragment/app/u0$c;
 
     .line 3
-    iget-object v1, v0, Landroidx/fragment/app/u0$e;->a:Landroidx/fragment/app/u0$e$c;
+    iget-object v1, v0, Landroidx/fragment/app/u0$d;->a:Landroidx/fragment/app/u0$d$c;
 
     .line 4
-    iget-object v0, v0, Landroidx/fragment/app/u0$e;->c:Landroidx/fragment/app/Fragment;
+    iget-object v0, v0, Landroidx/fragment/app/u0$d;->c:Landroidx/fragment/app/Fragment;
 
     .line 5
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
-    invoke-virtual {v1, v0}, Landroidx/fragment/app/u0$e$c;->applyState(Landroid/view/View;)V
+    invoke-virtual {v1, v0}, Landroidx/fragment/app/u0$d$c;->a(Landroid/view/View;)V
 
     :cond_0
     return-void

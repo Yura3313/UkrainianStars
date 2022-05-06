@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public final i:[B
+.field public final j:[B
 
-.field public final j:I
+.field public final k:I
 
-.field public k:I
+.field public l:I
 
 
 # direct methods
@@ -47,13 +47,13 @@
     if-ltz v0, :cond_0
 
     .line 3
-    iput-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iput-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
     .line 4
-    iput p2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput p2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     .line 5
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
 
     return-void
 
@@ -120,9 +120,9 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:I
+    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     sub-int/2addr v0, v1
 
@@ -139,13 +139,13 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     aput-byte p1, v0, v1
     :try_end_0
@@ -165,7 +165,7 @@
 
     const/4 v2, 0x0
 
-    iget v3, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v3, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     .line 3
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -174,7 +174,7 @@
 
     aput-object v3, v1, v2
 
-    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:I
+    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -278,13 +278,13 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     and-int/lit16 v3, p1, 0xff
 
@@ -295,7 +295,7 @@
     add-int/lit8 v1, v2, 0x1
 
     .line 2
-    iput v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     shr-int/lit8 v3, p1, 0x8
 
@@ -308,7 +308,7 @@
     add-int/lit8 v2, v1, 0x1
 
     .line 3
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     shr-int/lit8 v3, p1, 0x10
 
@@ -321,7 +321,7 @@
     add-int/lit8 v1, v2, 0x1
 
     .line 4
-    iput v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     shr-int/lit8 p1, p1, 0x18
 
@@ -347,7 +347,7 @@
 
     const/4 v2, 0x0
 
-    iget v3, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v3, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     .line 6
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -356,7 +356,7 @@
 
     aput-object v3, v1, v2
 
-    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:I
+    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -416,13 +416,13 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     long-to-int v3, p1
 
@@ -435,7 +435,7 @@
     add-int/lit8 v1, v2, 0x1
 
     .line 2
-    iput v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     const/16 v3, 0x8
 
@@ -452,7 +452,7 @@
     add-int/lit8 v2, v1, 0x1
 
     .line 3
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     const/16 v3, 0x10
 
@@ -469,7 +469,7 @@
     add-int/lit8 v1, v2, 0x1
 
     .line 4
-    iput v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     const/16 v3, 0x18
 
@@ -486,7 +486,7 @@
     add-int/lit8 v2, v1, 0x1
 
     .line 5
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     const/16 v3, 0x20
 
@@ -503,7 +503,7 @@
     add-int/lit8 v1, v2, 0x1
 
     .line 6
-    iput v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     const/16 v3, 0x28
 
@@ -520,7 +520,7 @@
     add-int/lit8 v2, v1, 0x1
 
     .line 7
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     const/16 v3, 0x30
 
@@ -537,7 +537,7 @@
     add-int/lit8 v1, v2, 0x1
 
     .line 8
-    iput v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     const/16 v1, 0x38
 
@@ -567,7 +567,7 @@
 
     const/4 v1, 0x0
 
-    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     .line 10
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -576,7 +576,7 @@
 
     aput-object v2, v0, v1
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -689,7 +689,7 @@
     invoke-virtual {p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->e0(I)V
 
     .line 3
-    iget-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->a:Lcom/google/crypto/tink/shaded/protobuf/h;
+    iget-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->g:Lcom/google/crypto/tink/shaded/protobuf/h;
 
     invoke-interface {p3, p2, p1}, Lcom/google/crypto/tink/shaded/protobuf/h0;->i(Ljava/lang/Object;Lcom/google/crypto/tink/shaded/protobuf/o0;)V
 
@@ -839,7 +839,7 @@
     .end annotation
 
     .line 1
-    sget-boolean v0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->h:Z
+    sget-boolean v0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->i:Z
 
     if-eqz v0, :cond_4
 
@@ -864,31 +864,31 @@
     if-nez v0, :cond_0
 
     .line 4
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     int-to-long v1, v1
 
     int-to-byte p1, p1
 
-    invoke-static {v0, v1, v2, p1}, Lm5/b0;->q([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lm5/a0;->q([BJB)V
 
     return-void
 
     .line 5
     :cond_0
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     int-to-long v1, v1
 
@@ -896,7 +896,7 @@
 
     int-to-byte v3, v3
 
-    invoke-static {v0, v1, v2, v3}, Lm5/b0;->q([BJB)V
+    invoke-static {v0, v1, v2, v3}, Lm5/a0;->q([BJB)V
 
     ushr-int/lit8 p1, p1, 0x7
 
@@ -905,31 +905,31 @@
     if-nez v0, :cond_1
 
     .line 6
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     int-to-long v1, v1
 
     int-to-byte p1, p1
 
-    invoke-static {v0, v1, v2, p1}, Lm5/b0;->q([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lm5/a0;->q([BJB)V
 
     return-void
 
     .line 7
     :cond_1
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     int-to-long v1, v1
 
@@ -937,7 +937,7 @@
 
     int-to-byte v3, v3
 
-    invoke-static {v0, v1, v2, v3}, Lm5/b0;->q([BJB)V
+    invoke-static {v0, v1, v2, v3}, Lm5/a0;->q([BJB)V
 
     ushr-int/lit8 p1, p1, 0x7
 
@@ -946,31 +946,31 @@
     if-nez v0, :cond_2
 
     .line 8
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     int-to-long v1, v1
 
     int-to-byte p1, p1
 
-    invoke-static {v0, v1, v2, p1}, Lm5/b0;->q([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lm5/a0;->q([BJB)V
 
     return-void
 
     .line 9
     :cond_2
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     int-to-long v1, v1
 
@@ -978,7 +978,7 @@
 
     int-to-byte v3, v3
 
-    invoke-static {v0, v1, v2, v3}, Lm5/b0;->q([BJB)V
+    invoke-static {v0, v1, v2, v3}, Lm5/a0;->q([BJB)V
 
     ushr-int/lit8 p1, p1, 0x7
 
@@ -987,31 +987,31 @@
     if-nez v0, :cond_3
 
     .line 10
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     int-to-long v1, v1
 
     int-to-byte p1, p1
 
-    invoke-static {v0, v1, v2, p1}, Lm5/b0;->q([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lm5/a0;->q([BJB)V
 
     return-void
 
     .line 11
     :cond_3
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     int-to-long v1, v1
 
@@ -1019,24 +1019,24 @@
 
     int-to-byte v3, v3
 
-    invoke-static {v0, v1, v2, v3}, Lm5/b0;->q([BJB)V
+    invoke-static {v0, v1, v2, v3}, Lm5/a0;->q([BJB)V
 
     ushr-int/lit8 p1, p1, 0x7
 
     .line 12
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     int-to-long v1, v1
 
     int-to-byte p1, p1
 
-    invoke-static {v0, v1, v2, p1}, Lm5/b0;->q([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lm5/a0;->q([BJB)V
 
     return-void
 
@@ -1048,13 +1048,13 @@
 
     .line 13
     :try_start_0
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     int-to-byte p1, p1
 
@@ -1064,13 +1064,13 @@
 
     .line 14
     :cond_5
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     and-int/lit8 v2, p1, 0x7f
 
@@ -1098,7 +1098,7 @@
 
     const/4 v2, 0x0
 
-    iget v3, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v3, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     .line 16
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1107,7 +1107,7 @@
 
     aput-object v3, v1, v2
 
-    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:I
+    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1172,7 +1172,7 @@
     .end annotation
 
     .line 1
-    sget-boolean v0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->h:Z
+    sget-boolean v0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->i:Z
 
     const/4 v1, 0x7
 
@@ -1199,13 +1199,13 @@
     if-nez v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     int-to-long v1, v1
 
@@ -1213,19 +1213,19 @@
 
     int-to-byte p1, p2
 
-    invoke-static {v0, v1, v2, p1}, Lm5/b0;->q([BJB)V
+    invoke-static {v0, v1, v2, p1}, Lm5/a0;->q([BJB)V
 
     return-void
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v6, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v6, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/lit8 v7, v6, 0x1
 
-    iput v7, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v7, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     int-to-long v6, v6
 
@@ -1237,7 +1237,7 @@
 
     int-to-byte v8, v8
 
-    invoke-static {v0, v6, v7, v8}, Lm5/b0;->q([BJB)V
+    invoke-static {v0, v6, v7, v8}, Lm5/a0;->q([BJB)V
 
     ushr-long/2addr p1, v1
 
@@ -1253,13 +1253,13 @@
 
     .line 5
     :try_start_0
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     long-to-int p2, p1
 
@@ -1271,13 +1271,13 @@
 
     .line 6
     :cond_2
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v6, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v6, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/lit8 v7, v6, 0x1
 
-    iput v7, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v7, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     long-to-int v7, p1
 
@@ -1307,7 +1307,7 @@
 
     const/4 v1, 0x0
 
-    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     .line 8
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1316,7 +1316,7 @@
 
     aput-object v2, v0, v1
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1361,18 +1361,18 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     invoke-static {p1, p2, v0, v1, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 2
-    iget p1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget p1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     add-int/2addr p1, p3
 
-    iput p1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput p1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
     :try_end_0
     .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1390,7 +1390,7 @@
 
     const/4 v1, 0x0
 
-    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     .line 4
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1401,7 +1401,7 @@
 
     const/4 v1, 0x1
 
-    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:I
+    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1458,7 +1458,7 @@
     .end annotation
 
     .line 1
-    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     .line 2
     :try_start_0
@@ -1487,10 +1487,10 @@
     add-int v1, v0, v2
 
     .line 5
-    iput v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     .line 6
-    iget-object v3, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v3, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
     invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->O()I
 
@@ -1504,7 +1504,7 @@
     move-result v1
 
     .line 8
-    iput v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     sub-int v3, v1, v0
 
@@ -1514,7 +1514,7 @@
     invoke-virtual {p0, v3}, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->e0(I)V
 
     .line 10
-    iput v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     goto :goto_0
 
@@ -1528,9 +1528,9 @@
     invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->e0(I)V
 
     .line 13
-    iget-object v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->i:[B
+    iget-object v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->j:[B
 
-    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->O()I
 
@@ -1544,7 +1544,7 @@
     move-result v1
 
     .line 15
-    iput v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v1, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
     :try_end_0
     .catch Lcom/google/crypto/tink/shaded/protobuf/n0$d; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1565,10 +1565,10 @@
     move-exception v1
 
     .line 17
-    iput v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->k:I
+    iput v0, p0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream$b;->l:I
 
     .line 18
-    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->b:Ljava/util/logging/Logger;
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/CodedOutputStream;->h:Ljava/util/logging/Logger;
 
     sget-object v2, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 

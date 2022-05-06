@@ -6,26 +6,26 @@
 
 
 # instance fields
-.field public final synthetic a:Lc5/a;
-
-.field public final synthetic b:I
+.field public final synthetic g:Lc5/a;
 
 .field public final synthetic h:I
 
-.field public final synthetic i:Lc5/e;
+.field public final synthetic i:I
+
+.field public final synthetic j:Lc5/e;
 
 
 # direct methods
 .method public constructor <init>(Lc5/e;Lc5/a;II)V
     .locals 0
 
-    iput-object p1, p0, Lc5/d;->i:Lc5/e;
+    iput-object p1, p0, Lc5/d;->j:Lc5/e;
 
-    iput-object p2, p0, Lc5/d;->a:Lc5/a;
+    iput-object p2, p0, Lc5/d;->g:Lc5/a;
 
-    iput p3, p0, Lc5/d;->b:I
+    iput p3, p0, Lc5/d;->h:I
 
-    iput p4, p0, Lc5/d;->h:I
+    iput p4, p0, Lc5/d;->i:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,13 +37,13 @@
 .method public final run()V
     .locals 15
 
-    iget-object v0, p0, Lc5/d;->i:Lc5/e;
+    iget-object v0, p0, Lc5/d;->j:Lc5/e;
 
-    iget-object v1, p0, Lc5/d;->a:Lc5/a;
+    iget-object v1, p0, Lc5/d;->g:Lc5/a;
 
-    iget v4, p0, Lc5/d;->b:I
+    iget v4, p0, Lc5/d;->h:I
 
-    iget v5, p0, Lc5/d;->h:I
+    iget v5, p0, Lc5/d;->i:I
 
     new-instance v14, Lc5/b;
 

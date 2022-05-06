@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic j:Lcom/google/android/material/floatingactionbutton/e;
+.field public final synthetic k:Lcom/google/android/material/floatingactionbutton/e;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/floatingactionbutton/e$g;->j:Lcom/google/android/material/floatingactionbutton/e;
+    iput-object p1, p0, Lcom/google/android/material/floatingactionbutton/e$g;->k:Lcom/google/android/material/floatingactionbutton/e;
 
     const/4 v0, 0x0
 
@@ -38,7 +38,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/e$g;->j:Lcom/google/android/material/floatingactionbutton/e;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/e$g;->k:Lcom/google/android/material/floatingactionbutton/e;
 
     iget v0, v0, Lcom/google/android/material/floatingactionbutton/e;->h:F
 

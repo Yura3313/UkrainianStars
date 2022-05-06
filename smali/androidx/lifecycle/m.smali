@@ -381,13 +381,13 @@
     aget-object v9, v6, v8
 
     .line 24
-    const-class v10, Landroidx/lifecycle/p;
+    const-class v10, Landroidx/lifecycle/q;
 
     invoke-virtual {v9, v10}, Ljava/lang/reflect/Method;->getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
 
     move-result-object v9
 
-    check-cast v9, Landroidx/lifecycle/p;
+    check-cast v9, Landroidx/lifecycle/q;
 
     if-eqz v9, :cond_8
 

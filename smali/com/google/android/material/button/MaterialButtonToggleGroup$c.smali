@@ -42,7 +42,7 @@
     iget-object v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup$c;->a:Lcom/google/android/material/button/MaterialButtonToggleGroup;
 
     .line 2
-    iget-boolean v1, v0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->l:Z
+    iget-boolean v1, v0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->m:Z
 
     if-eqz v1, :cond_0
 
@@ -50,7 +50,7 @@
 
     .line 3
     :cond_0
-    iget-boolean v1, v0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->m:Z
+    iget-boolean v1, v0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->n:Z
 
     if-eqz v1, :cond_2
 
@@ -68,7 +68,7 @@
 
     .line 5
     :goto_0
-    iput v1, v0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->o:I
+    iput v1, v0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->p:I
 
     .line 6
     :cond_2

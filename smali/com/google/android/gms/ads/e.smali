@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field public final a:Lj3/a51;
+.field public final a:Lj3/x51;
 
 
 # direct methods
@@ -23,15 +23,15 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance p2, Lj3/a51;
+    new-instance p2, Lj3/x51;
 
     .line 3
-    iget-object p1, p1, Lcom/google/android/gms/ads/e$a;->a:Lj3/d51;
+    iget-object p1, p1, Lcom/google/android/gms/ads/e$a;->a:Lj3/a61;
 
     .line 4
-    invoke-direct {p2, p1}, Lj3/a51;-><init>(Lj3/d51;)V
+    invoke-direct {p2, p1}, Lj3/x51;-><init>(Lj3/a61;)V
 
-    iput-object p2, p0, Lcom/google/android/gms/ads/e;->a:Lj3/a51;
+    iput-object p2, p0, Lcom/google/android/gms/ads/e;->a:Lj3/x51;
 
     return-void
 .end method

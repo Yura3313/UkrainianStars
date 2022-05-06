@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final a:Ljava/util/regex/Pattern;
+.field public final g:Ljava/util/regex/Pattern;
 
 
 # direct methods
@@ -29,12 +29,12 @@
 
     const-string v0, "Pattern.compile(pattern)"
 
-    invoke-static {p1, v0}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lre/e;->a:Ljava/util/regex/Pattern;
+    iput-object p1, p0, Lre/e;->g:Ljava/util/regex/Pattern;
 
     return-void
 .end method
@@ -45,7 +45,7 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lre/e;->a:Ljava/util/regex/Pattern;
+    iput-object p1, p0, Lre/e;->g:Ljava/util/regex/Pattern;
 
     return-void
 .end method
@@ -68,9 +68,9 @@
 
     invoke-direct {p3, p0, p1, p2}, Lre/f;-><init>(Lre/e;Ljava/lang/CharSequence;I)V
 
-    sget-object p0, Lre/g;->b:Lre/g;
+    sget-object p0, Lre/g;->h:Lre/g;
 
-    invoke-static {p3, p0}, Lqe/i;->g(Lke/a;Lke/l;)Lqe/d;
+    invoke-static {p3, p0}, Lqe/h;->c(Lke/a;Lke/l;)Lqe/d;
 
     move-result-object p0
 
@@ -83,7 +83,7 @@
     .line 1
     new-instance v0, Lre/e$a;
 
-    iget-object v1, p0, Lre/e;->a:Ljava/util/regex/Pattern;
+    iget-object v1, p0, Lre/e;->g:Ljava/util/regex/Pattern;
 
     invoke-virtual {v1}, Ljava/util/regex/Pattern;->pattern()Ljava/lang/String;
 
@@ -91,9 +91,9 @@
 
     const-string v2, "nativePattern.pattern()"
 
-    invoke-static {v1, v2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v2, p0, Lre/e;->a:Ljava/util/regex/Pattern;
+    iget-object v2, p0, Lre/e;->g:Ljava/util/regex/Pattern;
 
     invoke-virtual {v2}, Ljava/util/regex/Pattern;->flags()I
 
@@ -112,7 +112,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    iget-object v0, p0, Lre/e;->a:Ljava/util/regex/Pattern;
+    iget-object v0, p0, Lre/e;->g:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -128,7 +128,7 @@
     const-string p1, "input"
 
     .line 2
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -139,7 +139,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lre/e;->a:Ljava/util/regex/Pattern;
+    iget-object v0, p0, Lre/e;->g:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -151,7 +151,7 @@
 
     const-string p2, "nativePattern.matcher(in\u2026).replaceAll(replacement)"
 
-    invoke-static {p1, p2}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 .end method
@@ -160,7 +160,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lre/e;->a:Ljava/util/regex/Pattern;
+    iget-object v0, p0, Lre/e;->g:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0}, Ljava/util/regex/Pattern;->toString()Ljava/lang/String;
 
@@ -168,7 +168,7 @@
 
     const-string v1, "nativePattern.toString()"
 
-    invoke-static {v0, v1}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object v0
 .end method

@@ -84,7 +84,7 @@
 .method public final getInstance()Lcom/kakao/sdk/auth/TokenManagerProvider;
     .locals 3
 
-    invoke-static {}, Lcom/kakao/sdk/auth/TokenManagerProvider;->access$getInstance$cp()Lbe/c;
+    invoke-static {}, Lcom/kakao/sdk/auth/TokenManagerProvider;->access$getInstance$cp()Lae/c;
 
     move-result-object v0
 
@@ -96,7 +96,7 @@
 
     aget-object v1, v1, v2
 
-    invoke-interface {v0}, Lbe/c;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Lae/c;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 

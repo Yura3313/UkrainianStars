@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lf/b;
+.field public final synthetic g:Lf/b;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p2, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->a:Lf/b;
+    iput-object p2, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->g:Lf/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->a:Lf/b;
+    iget-object p1, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->g:Lf/b;
 
     invoke-virtual {p1}, Lf/b;->c()V
 

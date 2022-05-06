@@ -7,5 +7,5 @@
 .method public abstract a()Lfe/d;
 .end method
 
-.method public abstract c()Ljava/lang/StackTraceElement;
+.method public abstract d()Ljava/lang/StackTraceElement;
 .end method

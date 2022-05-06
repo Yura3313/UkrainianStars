@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+.field public final synthetic g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
 
 # direct methods
@@ -12,7 +12,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Ls4/c;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    iput-object p1, p0, Ls4/c;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -25,7 +25,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Ls4/c;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    iget-object p1, p0, Ls4/c;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     invoke-virtual {p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->e()V
 
@@ -36,7 +36,7 @@
     .locals 7
 
     .line 1
-    iget-object p1, p0, Ls4/c;->a:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    iget-object p1, p0, Ls4/c;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     .line 2
     iget-object p1, p1, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->d:Ls4/f;
@@ -45,14 +45,14 @@
     check-cast p1, Lcom/google/android/material/snackbar/SnackbarContentLayout;
 
     .line 4
-    iget-object v0, p1, Lcom/google/android/material/snackbar/SnackbarContentLayout;->a:Landroid/widget/TextView;
+    iget-object v0, p1, Lcom/google/android/material/snackbar/SnackbarContentLayout;->g:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setAlpha(F)V
 
     .line 5
-    iget-object v0, p1, Lcom/google/android/material/snackbar/SnackbarContentLayout;->a:Landroid/widget/TextView;
+    iget-object v0, p1, Lcom/google/android/material/snackbar/SnackbarContentLayout;->g:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -83,7 +83,7 @@
     invoke-virtual {v0}, Landroid/view/ViewPropertyAnimator;->start()V
 
     .line 6
-    iget-object v0, p1, Lcom/google/android/material/snackbar/SnackbarContentLayout;->b:Landroid/widget/Button;
+    iget-object v0, p1, Lcom/google/android/material/snackbar/SnackbarContentLayout;->h:Landroid/widget/Button;
 
     invoke-virtual {v0}, Landroid/widget/Button;->getVisibility()I
 
@@ -92,12 +92,12 @@
     if-nez v0, :cond_0
 
     .line 7
-    iget-object v0, p1, Lcom/google/android/material/snackbar/SnackbarContentLayout;->b:Landroid/widget/Button;
+    iget-object v0, p1, Lcom/google/android/material/snackbar/SnackbarContentLayout;->h:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setAlpha(F)V
 
     .line 8
-    iget-object p1, p1, Lcom/google/android/material/snackbar/SnackbarContentLayout;->b:Landroid/widget/Button;
+    iget-object p1, p1, Lcom/google/android/material/snackbar/SnackbarContentLayout;->h:Landroid/widget/Button;
 
     invoke-virtual {p1}, Landroid/widget/Button;->animate()Landroid/view/ViewPropertyAnimator;
 

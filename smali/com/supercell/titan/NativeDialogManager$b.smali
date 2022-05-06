@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/supercell/titan/NativeDialogManager;
+.field public final synthetic g:Lcom/supercell/titan/NativeDialogManager;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/titan/NativeDialogManager$b;->a:Lcom/supercell/titan/NativeDialogManager;
+    iput-object p1, p0, Lcom/supercell/titan/NativeDialogManager$b;->g:Lcom/supercell/titan/NativeDialogManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,10 +60,10 @@
 
     .line 1
     :goto_0
-    iget-object p2, p0, Lcom/supercell/titan/NativeDialogManager$b;->a:Lcom/supercell/titan/NativeDialogManager;
+    iget-object p2, p0, Lcom/supercell/titan/NativeDialogManager$b;->g:Lcom/supercell/titan/NativeDialogManager;
 
     .line 2
-    iget v0, p2, Lcom/supercell/titan/NativeDialogManager;->a:I
+    iget v0, p2, Lcom/supercell/titan/NativeDialogManager;->g:I
 
     .line 3
     invoke-virtual {p2, v0, p1}, Lcom/supercell/titan/NativeDialogManager;->b(II)V

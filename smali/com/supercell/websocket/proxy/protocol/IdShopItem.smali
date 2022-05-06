@@ -9,8 +9,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;,
-        Lcom/supercell/websocket/proxy/protocol/IdShopItem$b;
+        Lcom/supercell/websocket/proxy/protocol/IdShopItem$b;,
+        Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
     }
 .end annotation
 
@@ -326,7 +326,7 @@
     .line 3
     iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/IdShopItem;->applications_:Lcom/google/protobuf/a0$i;
 
-    invoke-virtual {p1}, Lcom/google/protobuf/i;->s()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/protobuf/i;->r()Ljava/lang/String;
 
     move-result-object p1
 
@@ -411,7 +411,7 @@
     iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/IdShopItem;->applications_:Lcom/google/protobuf/a0$i;
 
     .line 2
-    invoke-interface {v0}, Lcom/google/protobuf/a0$i;->A()Z
+    invoke-interface {v0}, Lcom/google/protobuf/a0$i;->C()Z
 
     move-result v1
 
@@ -467,7 +467,7 @@
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$b;->d()V
 
     .line 7
-    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$b;->b:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$b;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     invoke-virtual {v0, v1, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->g(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/GeneratedMessageLite;)V
 
@@ -817,7 +817,7 @@
     invoke-static {p1}, Lcom/google/protobuf/a;->checkByteStringIsUtf8(Lcom/google/protobuf/i;)V
 
     .line 2
-    invoke-virtual {p1}, Lcom/google/protobuf/i;->s()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/protobuf/i;->r()Ljava/lang/String;
 
     move-result-object p1
 
@@ -845,7 +845,7 @@
     invoke-static {p1}, Lcom/google/protobuf/a;->checkByteStringIsUtf8(Lcom/google/protobuf/i;)V
 
     .line 2
-    invoke-virtual {p1}, Lcom/google/protobuf/i;->s()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/protobuf/i;->r()Ljava/lang/String;
 
     move-result-object p1
 
@@ -870,7 +870,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p1}, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->getNumber()I
+    invoke-virtual {p1}, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->b()I
 
     move-result p1
 
@@ -894,13 +894,9 @@
     .locals 1
 
     .line 1
-    sget-object p2, Lcom/supercell/websocket/proxy/protocol/IdShopItem$a;->a:[I
-
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
     move-result p1
-
-    aget p1, p2, p1
 
     const/4 p2, 0x1
 
@@ -1039,14 +1035,14 @@
     return-object p1
 
     :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
+    .packed-switch 0x0
         :pswitch_1
         :pswitch_0
+        :pswitch_4
+        :pswitch_6
+        :pswitch_5
+        :pswitch_3
+        :pswitch_2
     .end packed-switch
 .end method
 
@@ -1079,7 +1075,7 @@
     check-cast p1, Ljava/lang/String;
 
     .line 3
-    invoke-static {p1}, Lcom/google/protobuf/i;->e(Ljava/lang/String;)Lcom/google/protobuf/i;
+    invoke-static {p1}, Lcom/google/protobuf/i;->f(Ljava/lang/String;)Lcom/google/protobuf/i;
 
     move-result-object p1
 
@@ -1131,7 +1127,7 @@
     .line 1
     iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/IdShopItem;->id_:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/protobuf/i;->e(Ljava/lang/String;)Lcom/google/protobuf/i;
+    invoke-static {v0}, Lcom/google/protobuf/i;->f(Ljava/lang/String;)Lcom/google/protobuf/i;
 
     move-result-object v0
 
@@ -1153,7 +1149,7 @@
     .line 1
     iget-object v0, p0, Lcom/supercell/websocket/proxy/protocol/IdShopItem;->productId_:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/protobuf/i;->e(Ljava/lang/String;)Lcom/google/protobuf/i;
+    invoke-static {v0}, Lcom/google/protobuf/i;->f(Ljava/lang/String;)Lcom/google/protobuf/i;
 
     move-result-object v0
 
@@ -1177,21 +1173,38 @@
 .end method
 
 .method public getType()Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
-    .locals 1
+    .locals 2
 
     .line 1
     iget v0, p0, Lcom/supercell/websocket/proxy/protocol/IdShopItem;->type_:I
 
-    invoke-static {v0}, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->forNumber(I)Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
+    if-eqz v0, :cond_1
 
-    move-result-object v0
+    const/4 v1, 0x1
 
-    if-nez v0, :cond_0
+    if-eq v0, v1, :cond_0
+
+    const/4 v0, 0x0
+
+    goto :goto_0
 
     .line 2
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->UNRECOGNIZED:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
-
     :cond_0
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->i:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
+
+    goto :goto_0
+
+    .line 3
+    :cond_1
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->h:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
+
+    :goto_0
+    if-nez v0, :cond_2
+
+    .line 4
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;->j:Lcom/supercell/websocket/proxy/protocol/IdShopItem$c;
+
+    :cond_2
     return-object v0
 .end method
 

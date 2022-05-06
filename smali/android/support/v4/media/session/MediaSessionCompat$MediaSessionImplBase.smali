@@ -90,7 +90,7 @@
 
 .field public final mRcc:Landroid/media/RemoteControlClient;
 
-.field private mRemoteUserInfo:Lp0/k;
+.field private mRemoteUserInfo:Lp0/i;
 
 .field public mRepeatMode:I
 
@@ -106,9 +106,9 @@
 
 .field private final mToken:Landroid/support/v4/media/session/MediaSessionCompat$Token;
 
-.field private mVolumeCallback:Lp0/o$a;
+.field private mVolumeCallback:Lp0/m$a;
 
-.field public mVolumeProvider:Lp0/o;
+.field public mVolumeProvider:Lp0/m;
 
 .field public mVolumeType:I
 
@@ -153,7 +153,7 @@
 
     invoke-direct {v1, p0}, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase$1;-><init>(Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;)V
 
-    iput-object v1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mVolumeCallback:Lp0/o$a;
+    iput-object v1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mVolumeCallback:Lp0/m$a;
 
     if-eqz p3, :cond_0
 
@@ -1068,7 +1068,7 @@
     return-object v0
 .end method
 
-.method public getCurrentControllerInfo()Lp0/k;
+.method public getCurrentControllerInfo()Lp0/i;
     .locals 2
 
     .line 1
@@ -1078,7 +1078,7 @@
 
     .line 2
     :try_start_0
-    iget-object v1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mRemoteUserInfo:Lp0/k;
+    iget-object v1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mRemoteUserInfo:Lp0/i;
 
     monitor-exit v0
 
@@ -1621,7 +1621,7 @@
     return-void
 .end method
 
-.method public setCurrentControllerInfo(Lp0/k;)V
+.method public setCurrentControllerInfo(Lp0/i;)V
     .locals 1
 
     .line 1
@@ -1631,7 +1631,7 @@
 
     .line 2
     :try_start_0
-    iput-object p1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mRemoteUserInfo:Lp0/k;
+    iput-object p1, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase;->mRemoteUserInfo:Lp0/i;
 
     .line 3
     monitor-exit v0
@@ -1901,7 +1901,7 @@
     return-void
 .end method
 
-.method public setPlaybackToRemote(Lp0/o;)V
+.method public setPlaybackToRemote(Lp0/m;)V
     .locals 1
 
     .line 1

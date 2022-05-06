@@ -16,27 +16,27 @@
 
 
 # instance fields
-.field public a:I
-
-.field public b:Ljava/lang/String;
+.field public g:I
 
 .field public h:Ljava/lang/String;
 
-.field public final i:Ljava/lang/String;
+.field public i:Ljava/lang/String;
 
-.field public j:Lcom/supercell/titan/NativeHTTPConnection$Method;
+.field public final j:Ljava/lang/String;
 
-.field public final k:Landroid/os/Handler;
+.field public k:Lcom/supercell/titan/NativeHTTPConnection$Method;
 
-.field public l:[B
+.field public final l:Landroid/os/Handler;
 
-.field public m:Lcom/supercell/titan/NativeHTTPConnection$Status;
+.field public m:[B
 
-.field public n:[B
+.field public n:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
-.field public final o:Ljava/lang/String;
+.field public o:[B
 
-.field public p:I
+.field public final p:Ljava/lang/String;
+
+.field public q:I
 
 
 # direct methods
@@ -64,24 +64,24 @@
     const-string v0, ""
 
     .line 3
-    iput-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->b:Ljava/lang/String;
-
-    .line 4
     iput-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->h:Ljava/lang/String;
 
-    .line 5
-    sget-object v0, Lcom/supercell/titan/NativeHTTPConnection$Status;->IDLE:Lcom/supercell/titan/NativeHTTPConnection$Status;
+    .line 4
+    iput-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->i:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->m:Lcom/supercell/titan/NativeHTTPConnection$Status;
+    .line 5
+    sget-object v0, Lcom/supercell/titan/NativeHTTPConnection$Status;->h:Lcom/supercell/titan/NativeHTTPConnection$Status;
+
+    iput-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->n:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
     .line 6
-    iput-object p1, p0, Lcom/supercell/titan/NativeHTTPConnection;->k:Landroid/os/Handler;
+    iput-object p1, p0, Lcom/supercell/titan/NativeHTTPConnection;->l:Landroid/os/Handler;
 
     .line 7
-    iput-object p2, p0, Lcom/supercell/titan/NativeHTTPConnection;->i:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/titan/NativeHTTPConnection;->j:Ljava/lang/String;
 
     .line 8
-    iput-object p3, p0, Lcom/supercell/titan/NativeHTTPConnection;->o:Ljava/lang/String;
+    iput-object p3, p0, Lcom/supercell/titan/NativeHTTPConnection;->p:Ljava/lang/String;
 
     return-void
 .end method
@@ -175,7 +175,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->h:Ljava/lang/String;
 
     .line 2
     invoke-static {v0}, Lcom/supercell/titan/NativeHTTPConnection;->a(Ljava/lang/String;)Ljava/net/HttpURLConnection;
@@ -207,10 +207,10 @@
 
     move-result v3
 
-    iput v3, p0, Lcom/supercell/titan/NativeHTTPConnection;->p:I
+    iput v3, p0, Lcom/supercell/titan/NativeHTTPConnection;->q:I
 
     .line 7
-    iget-object v3, p0, Lcom/supercell/titan/NativeHTTPConnection;->o:Ljava/lang/String;
+    iget-object v3, p0, Lcom/supercell/titan/NativeHTTPConnection;->p:Ljava/lang/String;
 
     invoke-virtual {v3}, Ljava/lang/String;->isEmpty()Z
 
@@ -223,19 +223,19 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/supercell/titan/NativeHTTPConnection;->n:[B
+    iput-object v2, p0, Lcom/supercell/titan/NativeHTTPConnection;->o:[B
 
     goto/16 :goto_8
 
     .line 9
     :cond_0
-    iget-object v3, p0, Lcom/supercell/titan/NativeHTTPConnection;->i:Ljava/lang/String;
+    iget-object v3, p0, Lcom/supercell/titan/NativeHTTPConnection;->j:Ljava/lang/String;
 
     invoke-virtual {v3}, Ljava/lang/String;->isEmpty()Z
 
     move-result v3
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_2
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     const/4 v4, 0x0
 
@@ -250,7 +250,7 @@
     move-result-object v3
     :try_end_1
     .catch Ljava/security/NoSuchAlgorithmException; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_2
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     goto :goto_0
 
@@ -283,27 +283,28 @@
 
     move-result-object v5
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
     .line 14
     :try_start_3
     new-instance v6, Ljava/io/FileOutputStream;
 
     invoke-direct {v6, v5}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    const/16 v4, 0x400
+    invoke-static {v6, v5}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;)Ljava/io/FileOutputStream;
 
-    :try_start_4
-    new-array v7, v4, [B
+    move-result-object v4
+
+    const/16 v6, 0x400
+
+    new-array v7, v6, [B
 
     :cond_2
     :goto_1
     const/4 v8, 0x0
 
     .line 15
-    invoke-virtual {v2, v7, v8, v4}, Ljava/io/InputStream;->read([BII)I
+    invoke-virtual {v2, v7, v8, v6}, Ljava/io/InputStream;->read([BII)I
 
     move-result v9
 
@@ -312,60 +313,63 @@
     if-eq v9, v10, :cond_3
 
     .line 16
-    invoke-virtual {v6, v7, v8, v9}, Ljava/io/FileOutputStream;->write([BII)V
+    invoke-virtual {v4, v7, v8, v9}, Ljava/io/FileOutputStream;->write([BII)V
 
     if-eqz v3, :cond_2
 
     .line 17
     invoke-virtual {v3, v7, v8, v9}, Ljava/security/MessageDigest;->update([BII)V
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     goto :goto_1
 
-    .line 18
     :cond_3
-    :try_start_5
-    invoke-virtual {v6}, Ljava/io/FileOutputStream;->close()V
+    if-eqz v4, :cond_4
+
+    .line 18
+    :try_start_4
+    invoke-virtual {v4}, Ljava/io/FileOutputStream;->close()V
 
     .line 19
-    iget-object v2, p0, Lcom/supercell/titan/NativeHTTPConnection;->i:Ljava/lang/String;
+    :cond_4
+    iget-object v2, p0, Lcom/supercell/titan/NativeHTTPConnection;->j:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->isEmpty()Z
 
     move-result v2
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_2
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    if-nez v2, :cond_7
+    if-nez v2, :cond_8
 
-    if-eqz v3, :cond_7
+    if-eqz v3, :cond_8
 
     .line 20
-    :try_start_6
+    :try_start_5
     invoke-virtual {v3}, Ljava/security/MessageDigest;->digest()[B
 
     move-result-object v2
 
-    if-nez v2, :cond_4
+    if-nez v2, :cond_5
 
     goto :goto_3
 
     .line 21
-    :cond_4
+    :cond_5
     new-instance v3, Ljava/lang/StringBuilder;
 
-    const/16 v6, 0x28
+    const/16 v4, 0x28
 
-    invoke-direct {v3, v6}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(I)V
 
     .line 22
-    array-length v6, v2
+    array-length v4, v2
 
     const/4 v7, 0x0
 
     :goto_2
-    if-ge v7, v6, :cond_5
+    if-ge v7, v4, :cond_6
 
     aget-byte v9, v2, v7
 
@@ -393,26 +397,26 @@
     goto :goto_2
 
     .line 24
-    :cond_5
+    :cond_6
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
 
     .line 25
-    iget-object v3, p0, Lcom/supercell/titan/NativeHTTPConnection;->i:Ljava/lang/String;
+    iget-object v3, p0, Lcom/supercell/titan/NativeHTTPConnection;->j:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v2
-    :try_end_6
-    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_1
-    .catchall {:try_start_6 .. :try_end_6} :catchall_2
+    :try_end_5
+    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_1
+    .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
-    if-eqz v2, :cond_6
+    if-eqz v2, :cond_7
 
     goto :goto_3
 
-    :cond_6
+    :cond_7
     const/4 v2, 0x0
 
     goto :goto_4
@@ -421,67 +425,75 @@
     move-exception v2
 
     .line 26
-    :try_start_7
+    :try_start_6
     invoke-static {v2}, Lcom/supercell/titan/GameApp;->debuggerException(Ljava/lang/Exception;)V
 
-    :cond_7
+    :cond_8
     :goto_3
     const/4 v2, 0x1
 
     :goto_4
-    if-eqz v2, :cond_b
+    if-eqz v2, :cond_c
 
     .line 27
     new-instance v3, Ljava/io/File;
 
-    iget-object v6, p0, Lcom/supercell/titan/NativeHTTPConnection;->o:Ljava/lang/String;
+    iget-object v4, p0, Lcom/supercell/titan/NativeHTTPConnection;->p:Ljava/lang/String;
 
-    invoke-direct {v3, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 28
     invoke-virtual {v5, v3}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
 
-    move-result v6
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_2
+    move-result v4
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
-    if-nez v6, :cond_9
+    if-nez v4, :cond_a
 
     .line 29
-    :try_start_8
-    new-instance v6, Ljava/io/FileInputStream;
+    :try_start_7
+    new-instance v4, Ljava/io/FileInputStream;
 
-    invoke-direct {v6, v5}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+    invoke-direct {v4, v5}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+
+    invoke-static {v4, v5}, Lio/sentry/instrumentation/file/SentryFileInputStream$Factory;->create(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
+
+    move-result-object v4
 
     .line 30
     new-instance v7, Ljava/io/FileOutputStream;
 
     invoke-direct {v7, v3}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
-    new-array v4, v4, [B
+    invoke-static {v7, v3}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;)Ljava/io/FileOutputStream;
+
+    move-result-object v7
+
+    new-array v6, v6, [B
 
     .line 31
     :goto_5
-    invoke-virtual {v6, v4}, Ljava/io/FileInputStream;->read([B)I
+    invoke-virtual {v4, v6}, Ljava/io/FileInputStream;->read([B)I
 
     move-result v9
 
-    if-lez v9, :cond_8
+    if-lez v9, :cond_9
 
     .line 32
-    invoke-virtual {v7, v4, v8, v9}, Ljava/io/FileOutputStream;->write([BII)V
+    invoke-virtual {v7, v6, v8, v9}, Ljava/io/FileOutputStream;->write([BII)V
 
     goto :goto_5
 
     .line 33
-    :cond_8
-    invoke-virtual {v6}, Ljava/io/FileInputStream;->close()V
+    :cond_9
+    invoke-virtual {v4}, Ljava/io/FileInputStream;->close()V
 
     .line 34
     invoke-virtual {v7}, Ljava/io/FileOutputStream;->close()V
-    :try_end_8
-    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_2
-    .catchall {:try_start_8 .. :try_end_8} :catchall_2
+    :try_end_7
+    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_2
+    .catchall {:try_start_7 .. :try_end_7} :catchall_1
 
     const/4 v3, 0x1
 
@@ -489,38 +501,38 @@
 
     .line 35
     :catch_2
-    :try_start_9
+    :try_start_8
     invoke-virtual {v3}, Ljava/io/File;->delete()Z
 
     const/4 v3, 0x0
 
     :goto_6
-    if-eqz v3, :cond_a
+    if-eqz v3, :cond_b
 
     move v8, v2
 
     goto :goto_7
 
-    :cond_9
+    :cond_a
     move v8, v2
 
     const/4 v1, 0x0
 
-    :cond_a
+    :cond_b
     :goto_7
     move v2, v8
 
-    :cond_b
-    if-eqz v1, :cond_c
+    :cond_c
+    if-eqz v1, :cond_d
 
     .line 36
     invoke-virtual {v5}, Ljava/io/File;->delete()Z
 
     move-result v1
-    :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_2
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_1
 
-    :cond_c
+    :cond_d
     move v1, v2
 
     .line 37
@@ -532,40 +544,32 @@
     :catchall_0
     move-exception v1
 
-    move-object v4, v6
-
-    goto :goto_9
-
-    :catchall_1
-    move-exception v1
-
-    :goto_9
-    if-eqz v4, :cond_d
+    if-eqz v4, :cond_e
 
     .line 38
-    :try_start_a
+    :try_start_9
     invoke-virtual {v4}, Ljava/io/FileOutputStream;->close()V
 
     .line 39
-    :cond_d
+    :cond_e
     throw v1
-    :try_end_a
-    .catchall {:try_start_a .. :try_end_a} :catchall_2
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_1
 
-    :catchall_2
+    :catchall_1
     move-exception v1
 
     .line 40
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->disconnect()V
 
     .line 41
-    goto :goto_b
+    goto :goto_a
 
-    :goto_a
+    :goto_9
     throw v1
 
-    :goto_b
-    goto :goto_a
+    :goto_a
+    goto :goto_9
 .end method
 
 .method public final c()Z
@@ -577,7 +581,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->h:Ljava/lang/String;
 
     .line 2
     invoke-static {v0}, Lcom/supercell/titan/NativeHTTPConnection;->createConnectionForPost(Ljava/lang/String;)Ljava/net/HttpURLConnection;
@@ -588,12 +592,12 @@
     const-string v1, "X-timestamp"
 
     .line 3
-    iget-object v2, p0, Lcom/supercell/titan/NativeHTTPConnection;->h:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/titan/NativeHTTPConnection;->i:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4
-    iget-object v1, p0, Lcom/supercell/titan/NativeHTTPConnection;->l:[B
+    iget-object v1, p0, Lcom/supercell/titan/NativeHTTPConnection;->m:[B
 
     array-length v1, v1
 
@@ -609,7 +613,7 @@
     invoke-direct {v1, v2}, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;)V
 
     .line 6
-    iget-object v2, p0, Lcom/supercell/titan/NativeHTTPConnection;->l:[B
+    iget-object v2, p0, Lcom/supercell/titan/NativeHTTPConnection;->m:[B
 
     invoke-virtual {v1, v2}, Ljava/io/BufferedOutputStream;->write([B)V
 
@@ -630,7 +634,7 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/supercell/titan/NativeHTTPConnection;->n:[B
+    iput-object v2, p0, Lcom/supercell/titan/NativeHTTPConnection;->o:[B
 
     .line 10
     invoke-virtual {v1}, Ljava/io/BufferedInputStream;->close()V
@@ -640,7 +644,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/supercell/titan/NativeHTTPConnection;->p:I
+    iput v1, p0, Lcom/supercell/titan/NativeHTTPConnection;->q:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -726,7 +730,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->j:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -735,7 +739,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->j:Lcom/supercell/titan/NativeHTTPConnection$Method;
+    iget-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->k:Lcom/supercell/titan/NativeHTTPConnection$Method;
 
     return-object v0
 .end method
@@ -744,7 +748,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->n:[B
+    iget-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->o:[B
 
     return-object v0
 .end method
@@ -753,7 +757,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->p:I
+    iget v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->q:I
 
     return v0
 .end method
@@ -762,7 +766,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->m:Lcom/supercell/titan/NativeHTTPConnection$Status;
+    iget-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->n:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
     return-object v0
 .end method
@@ -771,20 +775,20 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/supercell/titan/NativeHTTPConnection$Method;->GET:Lcom/supercell/titan/NativeHTTPConnection$Method;
+    sget-object v0, Lcom/supercell/titan/NativeHTTPConnection$Method;->g:Lcom/supercell/titan/NativeHTTPConnection$Method;
 
-    iput-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->j:Lcom/supercell/titan/NativeHTTPConnection$Method;
+    iput-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->k:Lcom/supercell/titan/NativeHTTPConnection$Method;
 
     .line 2
-    iput-object p1, p0, Lcom/supercell/titan/NativeHTTPConnection;->b:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/titan/NativeHTTPConnection;->h:Ljava/lang/String;
 
     const/4 p1, 0x0
 
     .line 3
-    iput-object p1, p0, Lcom/supercell/titan/NativeHTTPConnection;->l:[B
+    iput-object p1, p0, Lcom/supercell/titan/NativeHTTPConnection;->m:[B
 
     .line 4
-    iput-object p2, p0, Lcom/supercell/titan/NativeHTTPConnection;->h:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/titan/NativeHTTPConnection;->i:Ljava/lang/String;
 
     return-void
 .end method
@@ -793,78 +797,78 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/supercell/titan/NativeHTTPConnection$Method;->POST:Lcom/supercell/titan/NativeHTTPConnection$Method;
+    sget-object v0, Lcom/supercell/titan/NativeHTTPConnection$Method;->h:Lcom/supercell/titan/NativeHTTPConnection$Method;
 
-    iput-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->j:Lcom/supercell/titan/NativeHTTPConnection$Method;
+    iput-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->k:Lcom/supercell/titan/NativeHTTPConnection$Method;
 
     .line 2
-    iput-object p1, p0, Lcom/supercell/titan/NativeHTTPConnection;->b:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/titan/NativeHTTPConnection;->h:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lcom/supercell/titan/NativeHTTPConnection;->l:[B
+    iput-object p2, p0, Lcom/supercell/titan/NativeHTTPConnection;->m:[B
 
     .line 4
-    iput-object p3, p0, Lcom/supercell/titan/NativeHTTPConnection;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/supercell/titan/NativeHTTPConnection;->i:Ljava/lang/String;
 
     return-void
 .end method
 
 .method public run()V
-    .locals 3
+    .locals 5
 
     .line 1
-    sget-object v0, Lcom/supercell/titan/NativeHTTPConnection$Status;->ACTIVE:Lcom/supercell/titan/NativeHTTPConnection$Status;
+    sget-object v0, Lcom/supercell/titan/NativeHTTPConnection$Status;->j:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
-    iput-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->m:Lcom/supercell/titan/NativeHTTPConnection$Status;
+    sget-object v1, Lcom/supercell/titan/NativeHTTPConnection$Status;->k:Lcom/supercell/titan/NativeHTTPConnection$Status;
+
+    sget-object v2, Lcom/supercell/titan/NativeHTTPConnection$Status;->i:Lcom/supercell/titan/NativeHTTPConnection$Status;
+
+    iput-object v2, p0, Lcom/supercell/titan/NativeHTTPConnection;->n:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->j:Lcom/supercell/titan/NativeHTTPConnection$Method;
+    iget-object v2, p0, Lcom/supercell/titan/NativeHTTPConnection;->k:Lcom/supercell/titan/NativeHTTPConnection$Method;
 
-    sget-object v1, Lcom/supercell/titan/NativeHTTPConnection$Method;->GET:Lcom/supercell/titan/NativeHTTPConnection$Method;
+    sget-object v3, Lcom/supercell/titan/NativeHTTPConnection$Method;->g:Lcom/supercell/titan/NativeHTTPConnection$Method;
 
-    const/4 v2, 0x0
+    const/4 v4, 0x0
 
-    if-ne v0, v1, :cond_1
+    if-ne v2, v3, :cond_1
 
     .line 3
     :try_start_0
     invoke-virtual {p0}, Lcom/supercell/titan/NativeHTTPConnection;->b()Z
 
-    move-result v2
+    move-result v4
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
     :catch_0
-    move-exception v0
+    move-exception v2
 
     .line 4
-    invoke-static {v0}, Lcom/supercell/titan/GameApp;->debuggerException(Ljava/lang/Exception;)V
+    invoke-static {v2}, Lcom/supercell/titan/GameApp;->debuggerException(Ljava/lang/Exception;)V
 
     :goto_0
-    if-eqz v2, :cond_0
+    if-eqz v4, :cond_0
 
     .line 5
-    sget-object v0, Lcom/supercell/titan/NativeHTTPConnection$Status;->OK:Lcom/supercell/titan/NativeHTTPConnection$Status;
-
-    iput-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->m:Lcom/supercell/titan/NativeHTTPConnection$Status;
+    iput-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->n:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
     goto :goto_2
 
     .line 6
     :cond_0
-    sget-object v0, Lcom/supercell/titan/NativeHTTPConnection$Status;->FAILED:Lcom/supercell/titan/NativeHTTPConnection$Status;
-
-    iput-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->m:Lcom/supercell/titan/NativeHTTPConnection$Status;
+    iput-object v1, p0, Lcom/supercell/titan/NativeHTTPConnection;->n:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
     goto :goto_2
 
     .line 7
     :cond_1
-    sget-object v1, Lcom/supercell/titan/NativeHTTPConnection$Method;->POST:Lcom/supercell/titan/NativeHTTPConnection$Method;
+    sget-object v3, Lcom/supercell/titan/NativeHTTPConnection$Method;->h:Lcom/supercell/titan/NativeHTTPConnection$Method;
 
-    if-ne v0, v1, :cond_3
+    if-ne v2, v3, :cond_3
 
     .line 8
     :try_start_1
@@ -872,7 +876,7 @@
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
     goto :goto_1
 
@@ -880,28 +884,22 @@
     nop
 
     :goto_1
-    if-eqz v2, :cond_2
+    if-eqz v4, :cond_2
 
     .line 9
-    sget-object v0, Lcom/supercell/titan/NativeHTTPConnection$Status;->OK:Lcom/supercell/titan/NativeHTTPConnection$Status;
-
-    iput-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->m:Lcom/supercell/titan/NativeHTTPConnection$Status;
+    iput-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->n:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
     goto :goto_2
 
     .line 10
     :cond_2
-    sget-object v0, Lcom/supercell/titan/NativeHTTPConnection$Status;->FAILED:Lcom/supercell/titan/NativeHTTPConnection$Status;
-
-    iput-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->m:Lcom/supercell/titan/NativeHTTPConnection$Status;
+    iput-object v1, p0, Lcom/supercell/titan/NativeHTTPConnection;->n:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
     goto :goto_2
 
     .line 11
     :cond_3
-    sget-object v0, Lcom/supercell/titan/NativeHTTPConnection$Status;->FAILED:Lcom/supercell/titan/NativeHTTPConnection$Status;
-
-    iput-object v0, p0, Lcom/supercell/titan/NativeHTTPConnection;->m:Lcom/supercell/titan/NativeHTTPConnection$Status;
+    iput-object v1, p0, Lcom/supercell/titan/NativeHTTPConnection;->n:Lcom/supercell/titan/NativeHTTPConnection$Status;
 
     .line 12
     :goto_2
@@ -913,7 +911,7 @@
     iput-object p0, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     .line 14
-    iget-object v1, p0, Lcom/supercell/titan/NativeHTTPConnection;->k:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/supercell/titan/NativeHTTPConnection;->l:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 

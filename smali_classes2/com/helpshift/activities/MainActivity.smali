@@ -19,7 +19,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/helpshift/util/r;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object v0, Lcom/helpshift/util/q;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -28,7 +28,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-static {p1}, Lcom/helpshift/util/w;->a(Landroid/content/Context;)Landroid/content/Context;
+    invoke-static {p1}, Lcom/helpshift/util/u;->a(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object p1
 
@@ -46,7 +46,7 @@
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 2
-    sget-object p1, Lcom/helpshift/util/r;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object p1, Lcom/helpshift/util/q;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -55,27 +55,27 @@
     if-nez p1, :cond_1
 
     .line 3
-    invoke-static {}, Lcom/helpshift/util/r;->b()Z
+    invoke-static {}, Lcom/helpshift/util/q;->c()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
     .line 4
-    sget-object p1, Llb/b;->a:Llb/a;
+    sget-object p1, Ljb/b;->a:Ljb/a;
 
     .line 5
-    check-cast p1, Llb/c;
+    check-cast p1, Ljb/c;
 
     .line 6
-    new-instance v0, Llb/d;
+    new-instance v0, Ljb/d;
 
-    invoke-direct {v0, p1}, Llb/d;-><init>(Llb/c;)V
+    invoke-direct {v0, p1}, Ljb/d;-><init>(Ljb/c;)V
 
-    invoke-virtual {p1, v0}, Llb/c;->b(Ljava/lang/Runnable;)V
+    invoke-virtual {p1, v0}, Ljb/c;->b(Ljava/lang/Runnable;)V
 
     .line 7
-    sget-object p1, Lcom/helpshift/util/r;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object p1, Lcom/helpshift/util/q;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -121,12 +121,12 @@
     .line 11
     :cond_2
     :try_start_0
-    sget-object p1, Lfa/b$a;->a:Lfa/b;
+    sget-object p1, Lea/b$a;->a:Lea/b;
 
     .line 12
-    iget-object p1, p1, Lfa/b;->a:Lfa/a;
+    iget-object p1, p1, Lea/b;->a:Lea/a;
 
-    iget-object p1, p1, Lfa/a;->b:Ljava/lang/Integer;
+    iget-object p1, p1, Lea/a;->b:Ljava/lang/Integer;
 
     if-eqz p1, :cond_3
 
@@ -156,7 +156,7 @@
     const-string v0, "Unable to set the requested orientation : "
 
     .line 15
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -172,24 +172,22 @@
 
     const-string v0, "Helpshift_MainActvty"
 
-    invoke-static {v0, p1}, Lce/z;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lie/a;->g(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 16
     :cond_3
     :goto_0
-    sget-object p1, Lfa/b$a;->a:Lfa/b;
+    sget-object p1, Lea/b$a;->a:Lea/b;
 
     .line 17
-    iget-object p1, p1, Lfa/b;->b:Lj3/dw;
+    iget-object p1, p1, Lea/b;->b:Lea/c;
 
     .line 18
-    iget-object p1, p1, Lj3/dw;->b:Ljava/lang/Object;
-
-    check-cast p1, Lka/c;
+    iget-object p1, p1, Lea/c;->b:Lia/c;
 
     const-string v0, "sdk-theme"
 
-    invoke-interface {p1, v0}, Lka/c;->a(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-interface {p1, v0}, Lia/c;->a(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 

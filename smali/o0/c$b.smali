@@ -1,5 +1,5 @@
 .class public Lo0/c$b;
-.super Lo0/c$h;
+.super Lo0/c$f;
 .source "ModernAsyncTask.java"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lo0/c$h<",
+        "Lo0/c$f<",
         "TParams;TResult;>;"
     }
 .end annotation
@@ -32,7 +32,7 @@
     .line 1
     iput-object p1, p0, Lo0/c$b;->b:Lo0/c;
 
-    invoke-direct {p0}, Lo0/c$h;-><init>()V
+    invoke-direct {p0}, Lo0/c$f;-><init>()V
 
     return-void
 .end method
@@ -56,7 +56,7 @@
     .line 1
     iget-object v0, p0, Lo0/c$b;->b:Lo0/c;
 
-    iget-object v0, v0, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, v0, Lo0/c;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
 
@@ -73,7 +73,7 @@
     .line 3
     iget-object v0, p0, Lo0/c$b;->b:Lo0/c;
 
-    iget-object v3, p0, Lo0/c$h;->a:[Ljava/lang/Object;
+    iget-object v3, p0, Lo0/c$f;->a:[Ljava/lang/Object;
 
     invoke-virtual {v0, v3}, Lo0/c;->a([Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -98,7 +98,7 @@
     :try_start_1
     iget-object v3, p0, Lo0/c$b;->b:Lo0/c;
 
-    iget-object v3, v3, Lo0/c;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v3, v3, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v3, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 

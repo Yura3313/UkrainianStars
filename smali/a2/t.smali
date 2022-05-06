@@ -31,7 +31,7 @@
     iget-object v0, p0, La2/t;->a:La2/f;
 
     .line 2
-    iget-object v0, v0, La2/f;->s:Landroid/os/Handler;
+    iget-object v0, v0, La2/f;->t:Landroid/os/Handler;
 
     const/4 v1, 0x1
 

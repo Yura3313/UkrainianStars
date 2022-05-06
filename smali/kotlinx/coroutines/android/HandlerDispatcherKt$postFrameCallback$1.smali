@@ -40,17 +40,17 @@
     .line 1
     iget-object v0, p0, Lkotlinx/coroutines/android/HandlerDispatcherKt$postFrameCallback$1;->$cont:Lse/f;
 
-    sget-object v1, Lse/n0;->a:Lse/w;
+    sget-object v1, Lse/l0;->a:Lse/w;
 
     .line 2
-    sget-object v1, Lte/r;->a:Lse/j1;
+    sget-object v1, Lte/r;->a:Lse/i1;
 
     .line 3
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
 
-    invoke-interface {v0, v1, p1}, Lse/f;->d(Lse/w;Ljava/lang/Object;)V
+    invoke-interface {v0, v1, p1}, Lse/f;->c(Lse/w;Ljava/lang/Object;)V
 
     return-void
 .end method

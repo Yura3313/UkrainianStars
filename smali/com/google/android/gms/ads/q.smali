@@ -19,17 +19,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iget-boolean v0, p1, Lcom/google/android/gms/internal/ads/zzaac;->a:Z
+    iget-boolean v0, p1, Lcom/google/android/gms/internal/ads/zzaac;->g:Z
 
     iput-boolean v0, p0, Lcom/google/android/gms/ads/q;->a:Z
 
     .line 3
-    iget-boolean v0, p1, Lcom/google/android/gms/internal/ads/zzaac;->b:Z
+    iget-boolean v0, p1, Lcom/google/android/gms/internal/ads/zzaac;->h:Z
 
     iput-boolean v0, p0, Lcom/google/android/gms/ads/q;->b:Z
 
     .line 4
-    iget-boolean p1, p1, Lcom/google/android/gms/internal/ads/zzaac;->h:Z
+    iget-boolean p1, p1, Lcom/google/android/gms/internal/ads/zzaac;->i:Z
 
     iput-boolean p1, p0, Lcom/google/android/gms/ads/q;->c:Z
 

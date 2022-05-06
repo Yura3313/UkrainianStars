@@ -1,6 +1,8 @@
 .class public interface abstract Lyd/a;
 .super Ljava/lang/Object;
-.source "IdPendingFriendOrBuilder.java"
+.source "FallbackViewCreator.kt"
 
-# interfaces
-.implements Lcom/google/protobuf/r0;
+
+# virtual methods
+.method public abstract onCreateView(Landroid/view/View;Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;
+.end method

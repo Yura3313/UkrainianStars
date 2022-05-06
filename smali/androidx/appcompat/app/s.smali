@@ -231,7 +231,7 @@
 
     iget-object v1, p0, Landroidx/appcompat/app/s;->g:Ljava/lang/Runnable;
 
-    sget-object v2, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v2, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 3
     invoke-virtual {v0, v1}, Landroid/view/View;->postOnAnimation(Ljava/lang/Runnable;)V
@@ -410,7 +410,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Lf0/s;->C(Landroid/view/View;F)V
+    invoke-static {v0, p1}, Lf0/r;->C(Landroid/view/View;F)V
 
     return-void
 .end method

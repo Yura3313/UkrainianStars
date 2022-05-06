@@ -3,71 +3,48 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/util/concurrent/Callable;
+.implements Lj3/cd0;
 
 
-# instance fields
-.field public final a:Ljava/util/List;
-
-.field public final b:Ljava/lang/Object;
+# static fields
+.field public static final a:Lj3/cd0;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;Ljava/lang/Object;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lj3/xc0;
+
+    invoke-direct {v0}, Lj3/xc0;-><init>()V
+
+    sput-object v0, Lj3/xc0;->a:Lj3/cd0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lj3/xc0;->a:Ljava/util/List;
-
-    iput-object p2, p0, Lj3/xc0;->b:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 3
+.method public final b(Ljava/lang/Object;)V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lj3/xc0;->a:Ljava/util/List;
+    check-cast p1, Landroid/os/Bundle;
 
-    iget-object v1, p0, Lj3/xc0;->b:Ljava/lang/Object;
+    const-string v0, "sdk_prefetch"
+
+    const/4 v1, 0x1
 
     .line 2
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    move-result-object v0
-
-    :cond_0
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lj3/yl0;
-
-    .line 3
-    invoke-interface {v2}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lj3/uc0;
-
-    if-eqz v2, :cond_0
-
-    .line 4
-    invoke-interface {v2, v1}, Lj3/uc0;->b(Ljava/lang/Object;)V
-
-    goto :goto_0
-
-    :cond_1
-    return-object v1
+    return-void
 .end method

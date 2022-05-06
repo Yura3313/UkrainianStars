@@ -1,47 +1,139 @@
-.class public Lcom/google/android/material/internal/c;
-.super Landroidx/appcompat/view/menu/e;
-.source "NavigationMenu.java"
+.class public final synthetic Lcom/google/android/material/internal/c;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 0
+.method public static a(I)I
+    .locals 6
 
     .line 1
-    invoke-direct {p0, p1}, Landroidx/appcompat/view/menu/e;-><init>(Landroid/content/Context;)V
+    invoke-static {}, Lcom/google/android/material/internal/c;->b()[I
+
+    move-result-object v0
+
+    array-length v1, v0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    :goto_0
+    if-ge v3, v1, :cond_1
+
+    aget v4, v0, v3
+
+    .line 2
+    invoke-static {v4}, Lp/g;->b(I)I
+
+    move-result v5
+
+    if-ne v5, p0, :cond_0
+
+    return v4
+
+    :cond_0
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    return v2
+.end method
+
+.method public static b()[I
+    .locals 1
+
+    const/4 v0, 0x4
+
+    .line 1
+    invoke-static {v0}, Lp/g;->c(I)[I
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static c(Ljava/util/HashSet;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    invoke-virtual {p0, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    invoke-virtual {p0, p2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    invoke-virtual {p0, p3}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    invoke-virtual {p0, p4}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     return-void
 .end method
 
+.method public static synthetic d(I)Ljava/lang/String;
+    .locals 1
 
-# virtual methods
-.method public addSubMenu(IIILjava/lang/CharSequence;)Landroid/view/SubMenu;
-    .locals 0
+    const/4 v0, 0x1
 
-    .line 1
-    invoke-virtual {p0, p1, p2, p3, p4}, Landroidx/appcompat/view/menu/e;->a(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
+    if-ne p0, v0, :cond_0
 
-    move-result-object p1
+    const-string p0, "AGGRESSIVE"
 
-    check-cast p1, Landroidx/appcompat/view/menu/g;
+    return-object p0
 
-    .line 2
-    new-instance p2, Lcom/google/android/material/internal/e;
+    :cond_0
+    const/4 v0, 0x2
 
-    .line 3
-    iget-object p3, p0, Landroidx/appcompat/view/menu/e;->a:Landroid/content/Context;
+    if-ne p0, v0, :cond_1
 
-    .line 4
-    invoke-direct {p2, p3, p0, p1}, Lcom/google/android/material/internal/e;-><init>(Landroid/content/Context;Lcom/google/android/material/internal/c;Landroidx/appcompat/view/menu/g;)V
+    const-string p0, "CONSERVATIVE"
 
-    .line 5
-    iput-object p2, p1, Landroidx/appcompat/view/menu/g;->o:Landroidx/appcompat/view/menu/l;
+    return-object p0
 
-    .line 6
-    iget-object p1, p1, Landroidx/appcompat/view/menu/g;->e:Ljava/lang/CharSequence;
+    :cond_1
+    const/4 v0, 0x3
 
-    .line 7
-    invoke-virtual {p2, p1}, Landroidx/appcompat/view/menu/l;->setHeaderTitle(Ljava/lang/CharSequence;)Landroid/view/SubMenu;
+    if-ne p0, v0, :cond_2
 
-    return-object p2
+    const-string p0, "PASSIVE"
+
+    return-object p0
+
+    :cond_2
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+.method public static synthetic e(I)Ljava/lang/String;
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-ne p0, v0, :cond_0
+
+    const-string p0, "AGGRESSIVE"
+
+    return-object p0
+
+    :cond_0
+    const/4 v0, 0x2
+
+    if-ne p0, v0, :cond_1
+
+    const-string p0, "CONSERVATIVE"
+
+    return-object p0
+
+    :cond_1
+    const/4 v0, 0x3
+
+    if-ne p0, v0, :cond_2
+
+    const-string p0, "PASSIVE"
+
+    return-object p0
+
+    :cond_2
+    const-string p0, "null"
+
+    return-object p0
 .end method

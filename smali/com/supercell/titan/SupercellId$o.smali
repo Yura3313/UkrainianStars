@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/titan/SupercellId;->setOnline(Z)V
+    value = Lcom/supercell/titan/SupercellId;->setNotificationsAllowed(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,15 +18,19 @@
 
 
 # instance fields
-.field public final synthetic a:Z
+.field public final synthetic g:Z
+
+.field public final synthetic h:Lcom/supercell/titan/GameApp;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/titan/SupercellId;Z)V
+.method public constructor <init>(Lcom/supercell/titan/SupercellId;ZLcom/supercell/titan/GameApp;)V
     .locals 0
 
     .line 1
-    iput-boolean p2, p0, Lcom/supercell/titan/SupercellId$o;->a:Z
+    iput-boolean p2, p0, Lcom/supercell/titan/SupercellId$o;->g:Z
+
+    iput-object p3, p0, Lcom/supercell/titan/SupercellId$o;->h:Lcom/supercell/titan/GameApp;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,15 +40,17 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 3
 
     .line 1
-    iget-boolean v0, p0, Lcom/supercell/titan/SupercellId$o;->a:Z
+    iget-boolean v0, p0, Lcom/supercell/titan/SupercellId$o;->g:Z
 
     .line 2
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v1, v0}, Lcom/supercell/id/SupercellId;->setOnline(Z)V
+    iget-object v2, p0, Lcom/supercell/titan/SupercellId$o;->h:Lcom/supercell/titan/GameApp;
+
+    invoke-virtual {v1, v2, v0}, Lcom/supercell/id/SupercellId;->setNotificationsAllowed(Landroid/app/Activity;Z)V
 
     return-void
 .end method

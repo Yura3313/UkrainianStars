@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Lm/a;
+.field public final g:Lm/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lm/a<",
@@ -27,15 +27,15 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/common/api/AvailabilityException;->a:Lm/a;
+    iget-object v1, p0, Lcom/google/android/gms/common/api/AvailabilityException;->g:Lm/a;
 
     invoke-virtual {v1}, Lm/a;->keySet()Ljava/util/Set;
 
     move-result-object v1
 
-    check-cast v1, Lm/g$c;
+    check-cast v1, Lm/f$c;
 
-    invoke-virtual {v1}, Lm/g$c;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v1}, Lm/f$c;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
@@ -44,24 +44,24 @@
     :goto_0
     move-object v3, v1
 
-    check-cast v3, Lm/g$a;
+    check-cast v3, Lm/f$a;
 
-    invoke-virtual {v3}, Lm/g$a;->hasNext()Z
+    invoke-virtual {v3}, Lm/f$a;->hasNext()Z
 
     move-result v4
 
     if-eqz v4, :cond_1
 
-    invoke-virtual {v3}, Lm/g$a;->next()Ljava/lang/Object;
+    invoke-virtual {v3}, Lm/f$a;->next()Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, La2/b;
 
     .line 3
-    iget-object v4, p0, Lcom/google/android/gms/common/api/AvailabilityException;->a:Lm/a;
+    iget-object v4, p0, Lcom/google/android/gms/common/api/AvailabilityException;->g:Lm/a;
 
-    invoke-virtual {v4, v3}, Lm/h;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v3}, Lm/g;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -70,7 +70,7 @@
     invoke-static {v4}, Lc2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    invoke-virtual {v4}, Lcom/google/android/gms/common/ConnectionResult;->y2()Z
+    invoke-virtual {v4}, Lcom/google/android/gms/common/ConnectionResult;->A2()Z
 
     move-result v5
 
@@ -92,7 +92,7 @@
 
     const/4 v5, 0x2
 
-    invoke-static {v3, v5}, Ly/b;->a(Ljava/lang/String;I)I
+    invoke-static {v3, v5}, La1/e;->a(Ljava/lang/String;I)I
 
     move-result v5
 

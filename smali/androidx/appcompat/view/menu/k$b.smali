@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/appcompat/view/menu/k;
+.field public final synthetic g:Landroidx/appcompat/view/menu/k;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/view/menu/k$b;->a:Landroidx/appcompat/view/menu/k;
+    iput-object p1, p0, Landroidx/appcompat/view/menu/k$b;->g:Landroidx/appcompat/view/menu/k;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,9 +45,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/k$b;->a:Landroidx/appcompat/view/menu/k;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/k$b;->g:Landroidx/appcompat/view/menu/k;
 
-    iget-object v0, v0, Landroidx/appcompat/view/menu/k;->u:Landroid/view/ViewTreeObserver;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/k;->v:Landroid/view/ViewTreeObserver;
 
     if-eqz v0, :cond_1
 
@@ -58,21 +58,21 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Landroidx/appcompat/view/menu/k$b;->a:Landroidx/appcompat/view/menu/k;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/k$b;->g:Landroidx/appcompat/view/menu/k;
 
     invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v1
 
-    iput-object v1, v0, Landroidx/appcompat/view/menu/k;->u:Landroid/view/ViewTreeObserver;
+    iput-object v1, v0, Landroidx/appcompat/view/menu/k;->v:Landroid/view/ViewTreeObserver;
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/view/menu/k$b;->a:Landroidx/appcompat/view/menu/k;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/k$b;->g:Landroidx/appcompat/view/menu/k;
 
-    iget-object v1, v0, Landroidx/appcompat/view/menu/k;->u:Landroid/view/ViewTreeObserver;
+    iget-object v1, v0, Landroidx/appcompat/view/menu/k;->v:Landroid/view/ViewTreeObserver;
 
-    iget-object v0, v0, Landroidx/appcompat/view/menu/k;->o:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/k;->p:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
     invoke-virtual {v1, v0}, Landroid/view/ViewTreeObserver;->removeGlobalOnLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 

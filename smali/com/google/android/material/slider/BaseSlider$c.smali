@@ -206,7 +206,7 @@
     .line 4
     iget-object p3, p0, Lcom/google/android/material/slider/BaseSlider$c;->q:Lcom/google/android/material/slider/BaseSlider;
 
-    sget v0, Lcom/google/android/material/slider/BaseSlider;->W:I
+    sget v0, Lcom/google/android/material/slider/BaseSlider;->a0:I
 
     .line 5
     invoke-virtual {p3, p1, p2}, Lcom/google/android/material/slider/BaseSlider;->q(IF)Z
@@ -241,7 +241,7 @@
 
     const/16 v0, 0x14
 
-    sget v4, Lcom/google/android/material/slider/BaseSlider;->W:I
+    sget v4, Lcom/google/android/material/slider/BaseSlider;->a0:I
 
     .line 11
     invoke-virtual {p3, v0}, Lcom/google/android/material/slider/BaseSlider;->b(I)F
@@ -300,7 +300,7 @@
     move-result v0
 
     .line 17
-    invoke-static {p2, p3, v0}, La0/a;->b(FFF)F
+    invoke-static {p2, p3, v0}, La0/a;->a(FFF)F
 
     move-result p2
 

@@ -18,6 +18,14 @@ TID_QUEST_DESC_3,<AMOUNT> 피해 주기
 TID_QUEST_DESC_4,<AMOUNT>HP 회복
 TID_QUEST_DESC_5,\q다시 플레이\q\n<NUM>회 사용
 TID_QUEST_DESC_6,팀으로 <NUM>번 전투
+TID_QUEST_DESC_7_MODE_0,<AMOUNT>초 동안 보석 <LIMIT>개 이상 보유
+TID_QUEST_DESC_7_MODE_2,금고에 <AMOUNT> 피해 주기
+TID_QUEST_DESC_7_MODE_3,별 <LIMIT>개 이상으로 전투 <AMOUNT>회 완료
+TID_QUEST_DESC_7_MODE_5,공 <AMOUNT>번 패스
+TID_QUEST_DESC_7_MODE_6,파워 큐브 <AMOUNT>개 모으기
+TID_QUEST_DESC_7_MODE_9,두 플레이어가 모두 살아있는 동안 파워 큐브 <AMOUNT>개 모으기
+TID_QUEST_DESC_7_MODE_17,<AMOUNT>초 동안 거점 점령
+TID_QUEST_DESC_7_MODE_20,처치되지 않고 <AMOUNT>라운드 완료
 TID_QUEST_DESC_1_LEVELED,레벨 완료
 TID_QUEST_DESC_1_BIG_GAME,전투 <AMOUNT>회 승리
 TID_QUEST_DESC_1_BIG_GAME_SINGLE,전투 <AMOUNT>회 승리
@@ -44,7 +52,7 @@ TID_PURCHASE_BRAWL_PASS_PROGRESS_INFO,토큰 <NUM>개를 구매해 다음 티어
 TID_PURCHASE_BRAWL_PASS_TITLE,브롤 패스 구매
 TID_PURCHASE_BRAWL_PASS_TITLE_PLAIN,브롤 패스
 TID_PURCHASE_BRAWL_PASS_TITLE_BUNDLE,브롤 패스 번들
-TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,브롤 패스 보상과 추가 퀘스트를\n잠금 해제하세요.
+TID_PURCHASE_BRAWL_PASS_INFO_PLAIN,"브롤 패스 보상, 추가 퀘스트, 및 매주 2개의 추가 리롤 잠금 해제"
 TID_PURCHASE_BRAWL_PASS_INFO_BUNDLE,브롤 패스 + <NUM> 티어
 TID_BRAWL_PASS_CANNOT_PURCHASE_BRAWL_PASS_FOR_PAST_SEASON,지난 브롤 패스 시즌은 구매할 수 없습니다.
 TID_BRAWL_PASS_CANNOT_PURCHASE_NO_SEASON_FOUND,현재의 브롤 패스 시즌을 찾을 수 없습니다. 나중에 다시 시도해 주세요.
@@ -763,6 +771,8 @@ TID_GATCHA_SCREEN_HERO_POWER_LEVEL_UP_UNLOCKED,업그레이드 잠금 해제!
 TID_GATCHA_SCREEN_HERO_POWER_LEVEL_UP_AVAILABLE,업그레이드 가능!
 TID_GATCHA_SCREEN_VANITY_ITEM_DROP_TITLE_52,핀
 TID_GATCHA_SCREEN_VANITY_ITEM_DROP_DESC_52,핀을 수집해 자신을 표현해 보세요!
+TID_GATCHA_SCREEN_VANITY_ITEM_DROP_TITLE_68,스프레이
+TID_GATCHA_SCREEN_VANITY_ITEM_DROP_DESC_68,스프레이를 수집해 자신을 표현해 보세요!
 TID_GATCHA_SCREEN_BOX_COUNTER_BONUS,보너스
 TID_GATCHA_SCREEN_STAR_POINT_DROP_TITLE,스타 포인트
 TID_GATCHA_SCREEN_STAR_POINT_DROP_DESC,스타 포인트를 사용해 상점에서 특별한 아이템을 구매할 수 있습니다.
@@ -1303,6 +1313,10 @@ TID_SHOP_OFFER_TITLE_21,핀 팩
 TID_SHOP_OFFER_TITLE_22,브롤러 핀:
 TID_SHOP_OFFER_TITLE_23,<RARITY> 핀
 TID_SHOP_OFFER_TITLE_27,<RARITY> 핀 팩
+TID_SHOP_OFFER_TITLE_35,신규 스프레이
+TID_SHOP_OFFER_TITLE_36,스프레이
+TID_SHOP_OFFER_INFO_36,스프레이로 전투에서 자신을 표현하세요!
+TID_SHOP_OFFER_TITLE_37,추가 스프레이 슬롯
 TID_EMOTE_RARITY_0,일반
 TID_EMOTE_RARITY_1,희귀
 TID_EMOTE_RARITY_2,영웅
@@ -1347,6 +1361,8 @@ TID_SHOP_OFFER_INFO_30,<LVL>레벨로 업그레이드된 새 브롤러를 잠금
 TID_SHOP_OFFER_INFO_31,<LVL>레벨로 업그레이드된 무작위 <RARITY> 브롤러를 잠금 해제하세요!
 TID_SHOP_OFFER_INFO_32,기어 토큰을 사용해 기어를 제작하고 업그레이드하세요!
 TID_SHOP_OFFER_INFO_33,기어 스크랩을 사용해 기어를 제작하고 업그레이드하세요!
+TID_SHOP_OFFER_INFO_35,스프레이를 사용해 레벨을 장식하세요!
+TID_SHOP_OFFER_INFO_37,스프레이를 위한 1개의 추가 슬롯입니다!
 TID_SHOP_OFFER_HOR_NEW,신규
 TID_SHOP_OFFER_HOR_RARITY,<c<COLOR>><NAME></c>
 TID_SHOP_OFFER_HOR_BRAWLER,브롤러
@@ -3199,6 +3215,7 @@ TID_MRP_AGENT_SKIN,에이전트 P
 TID_MRP_AGENT_SKIN_SHOP,에이전트 P
 TID_HERO_INFO_ATTACK_DAMAGE_MULTIPLIER,<AMMO> x <DAMAGE>
 TID_HERO_INFO_DURATION,지속 시간
+TID_HERO_INFO_CHANGE_CHARACTER_DURATION,변신 소요 시간
 TID_HERO_INFO_DAMAGE_REDUCTION,피해 감소량
 TID_HERO_INFO_LIFE_STEAL,HP 흡수
 TID_SPAWN_BUILDING_HEALTH,거점 HP
@@ -3604,6 +3621,7 @@ TID_BRAWL_PASS_TAB_PAST_REWARDS,이전 시즌
 TID_BRAWL_PASS_PREMIUM,브롤 패스
 TID_BRAWL_PASS_FREE,무료
 TID_BRAWL_PASS_BUY,활성화
+TID_BRAWL_PASS_UNLOCK_ITEM_AT_TIER,티어 <NUM>에 <ITEM> 잠금 해제
 TID_BRAWL_PASS_SEASON_HEADER,브롤 패스 시즌
 TID_QUEST_NEW_BATCH_IN,신규 퀘스트 잠금 해제까지:
 TID_QUEST_NEW_DAILY_IN,일일 퀘스트 초기화까지:
@@ -3613,8 +3631,10 @@ TID_BRAWL_PASS_TIER_SHORTCUT,티어 <NUM>: <REWARD>
 TID_BRAWL_PASS_TAIL_TITLE,보너스 대형 상자!
 TID_BRAWL_PASS_TAIL_INFO,"브롤 패스를 완료하면, 토큰 <NUM>개마다 대형 상자를 1개씩 획득합니다!"
 TID_BRAWL_PASS_PURCHASE_OR,또는
-TID_EMOTES_POPUP_TITLE,전투 핀
+TID_EMOTES_POPUP_TITLE,핀
 TID_EMOTES_POPUP_TEXT,전투에서 사용할 핀을 선택하세요.
+TID_SPRAYS_POPUP_TITLE,스프레이
+TID_SPRAYS_POPUP_TEXT,전투에서 사용할 스프레이를 선택하세요.
 TID_BRAWL_PASS_INFO_TITLE_0,브롤 패스 정보
 TID_BRAWL_PASS_INFO_TEXT_0,수많은 추가 보상을 획득하세요!\n\n신규 크로마틱 희귀도 브롤러: 게일!\n\n한정판 스킨: 상인 게일!\n\n한정판 핀: 게일\n\n메가 상자 <NUM>개!\n\n코인 및 PP!\n\n\n추가 퀘스트로 브롤 패스를 더 빠르게 완료하세요!
 TID_EVIL_GENE_SKIN,이블 진
@@ -3693,6 +3713,7 @@ TID_REGION_CHINA,중국
 TID_QUALIFIED_TITLE_CHINA,线上资格赛已解锁！
 TID_QUALIFIED_INFO_CHINA,您已成功完成全球锦标赛挑战，真棒！\n您可以前往<cFFE400><URL></c>，通过引导完成赛事报名，继续荒野乱斗全球锦标赛之旅！
 TID_CHINA_REAL_NAME_REGULATION,실명으로 등록됨
+TID_CHINA_LOGIN_DESC,本公司积极履行《网络游戏行业防沉迷自律公约》抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》、《关于进一步严格管理切实防止未成年人沉迷网络游戏的通知》，所有网络游戏用户均需使用有效身份信息完成账号实名注册后方可进入游戏，认证为未成年的玩家将受到防沉迷功能限制。沪网文【2018】8544-517号、新出网证（沪）字33号 著作权人：SUPERCELL OY 出版单位：上海游族信息技术有限公司 运营单位：上海游族信息技术有限公司 国新出审【2020】552号 出版物号：ISBN 978-7-498-07472-0
 TID_POWER_LEVELER,서지
 TID_POWER_LEVELER_SHORT_DESC,대미지 딜러
 TID_POWER_LEVELER_DESC,파티의 수호자인 서지는 닿으면 둘로 분열되는 에너지 드링크를 발사해 적을 공격합니다. 특수 공격으로 3단계에 걸쳐 능력과 모습이 업그레이드됩니다!
@@ -3761,10 +3782,21 @@ TID_EMOTE_CATEGORY_4,1번 슬롯
 TID_EMOTE_CATEGORY_5,2번 슬롯
 TID_EMOTE_CATEGORY_BRAWLER_PINS,<BRAWLER> 핀
 TID_EMOTE_CATEGORY_PLAYER_PINS,플레이어 핀
+TID_SPRAY_CATEGORY_BRAWLER,<BRAWLER> 스프레이
+TID_SPRAY_CATEGORY_SHARED,공유 스프레이
+TID_SPRAY_CATEGORY_1,1번 슬롯
+TID_SPRAY_CATEGORY_2,1번 슬롯
+TID_SPRAY_CATEGORY_3,2번 슬롯
+TID_SPRAY_CATEGORY_4,3번 슬롯
+TID_SPRAY_CATEGORY_5,4번 슬롯
+TID_SPRAY_EQUIP_NOT_OWNED,아직 잠금 해제하지 않은 스프레이입니다!
+TID_SPRAY_BRAWLER_EQUIP_NOT_OWNED,이 스프레이를 상점에서 찾아보세요!
+TID_SPRAY_SLOT_LOCKED,이 스프레이 슬롯은 트로피 <NUM>개에 잠금 해제됩니다!
 TID_EDIT_MUTE_EMOTES,전투에서 핀 음소거
 TID_ACCESSORY_BLOCKED_INVISIBILITY_ALREADY_ACTIVE,이미 무적 상태입니다!
 TID_ACCESSORY_BLOCKED_SHIELD_ALREADY_ACTIVE,보호막이 이미 활성화되어 있습니다!
 TID_ACCESSORY_BLOCKED_ALREADY_ACTIVE,이미 활성화되어 있습니다!
+TID_ACCESSORY_BLOCKED_ALREADY_MAX_LEVEL,이미 최고 레벨입니다!
 TID_SETTINGS_PLAYER_ID,플레이어 ID: <ID>
 TID_NAME_COLOR_REQUIRES_BRAWL_PASS,브롤 패스를 구매하고 시즌 내내 크로마틱 이름 색상을 사용하세요!
 TID_RANK_COLLECT_PREVIOUS_REWARD_SPECIFIC,이전 보상을\n먼저 수령하세요!
@@ -3956,7 +3988,7 @@ TID_SUPPORT_NEW_VERSION_TITLE,업데이트 필요!
 TID_SUPPORT_NEW_VERSION_TEXT,새로운 버전이 출시되었습니다. 도움말 및 지원 기능을 이용하기 위해 게임 업데이트가 필요합니다.
 TID_SUPPORT_NEW_VERSION_BUTTON,업데이트
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_TITLE,정보
-TID_TENCENT_LOGIN_AGREEMENT_POPUP,"Tencent 서비스를 이용하기 전, <TOS>, <PP>, <CHILDREN>, 및 <THIRDPARTY>의 내용을 주의 깊게 읽고 모든 항목 및 처리 규정을 완전히 이해했는지 확인해 주시길 바랍니다. 본 동의 사항 중 당사의 책임을 면제 또는 제한하는 항목, 고객님의 권리를 제한하는 항목, 분쟁 해결 및 관할권에 관한 조항을 필히 확인하시길 바랍니다. 해당 <TOS>, <PP>, <CHILDREN> 및 <THIRDPARTY>의 내용에 동의하시면 \q동의\q를 눌러주세요."
+TID_TENCENT_LOGIN_AGREEMENT_POPUP,"Tencent 서비스를 이용하기 전, <TOS>, <PP>, <CHILDREN>, 및 <THIRDPARTY>의 내용을 주의 깊게 읽고 모든 항목 및 처리 규정을 완전히 이해했는지 확인해 주세요. 본 동의 사항 중 당사의 책임을 면제 또는 제한하는 항목, 고객님의 권리를 제한하는 항목, 분쟁 해결 및 관할권에 관한 조항을 필히 확인하시길 바랍니다. 해당 <TOS>, <PP>, <CHILDREN> 및 <THIRDPARTY>의 내용에 동의하시면 \q동의\q를 눌러주세요."
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_AGREE,동의
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_REFUSE,거절
 TID_TENCENT_LOGIN_AGREEMENT_POPUP_2_TITLE,중요 공지
@@ -3968,7 +4000,7 @@ TID_BRAWL_PASS_INFO_TEXT_2,엄청난 추가 보상!\n\n신규 크로마틱 희�
 TID_BRAWL_PASS_SEASON_3,연말 휴가
 TID_BRAWL_PASS_INFO_TEXT_3,엄청난 추가 보상!\n\n신규 크로마틱 희귀도 브롤러: <BRAWLER>!\n\n한정판 스킨: <SKIN_1>!\n\n한정판 스킨: <SKIN_2>!\n\n한정판 핀: <BRAWLER>!\n\n메가 박스 <NUM>개!\n\n추가 코인 및 PP!\n\n추가 퀘스트로 브롤 패스를 더 빠르게 완료!\n\n시즌 내내 전용 크로마틱 이름 색상 이용 가능!
 TID_BRAWL_PASS_SEASON_4,스타 포스!
-TID_BRAWL_PASS_INFO_TEXT_GENERIC,엄청난 추가 보상!\n\n신규 크로마틱 브롤러: <BRAWLER>!\n\n한정판 스킨: <SKIN_1>!\n\n한정판 스킨: <SKIN_2>!\n\n한정판 핀: <BRAWLER>!\n\n메가 박스 <NUM>개!\n\n추가 코인 및 PP!\n\n추가 퀘스트로 브롤 패스를 더 빠르게 완료!\n\n시즌 내내 전용 크로마틱 이름 색상 이용 가능!
+TID_BRAWL_PASS_INFO_TEXT_GENERIC,엄청난 추가 보상!\n\n<BRAWLER>- 신규 크로마틱 브롤러!\n\n기간 한정판 스킨: <SKIN_1>!\n\n기간 한정판 스킨: <SKIN_2>!\n\n기간 한정판 <BRAWLER> 핀\n\n기간 한정판 스프레이\n\n<NUM> 메가 상자!\n\n추가 코인 및 PP!\n\n\n추가 퀘스트로 브롤 패스를 더 빠르게 완료!\n\n<NUM> 매주 추가 퀘스트 리롤\n\n시즌 내내 전용 크로마틱 이름 이용 가능!
 TID_QUESTS_MORE,모든 퀘스트 보기
 TID_QUESTS_MORE_NEXT_SEASON,시즌 <THIS_SEASON> 퀘스트를 모두 완료했습니다. 시즌 <NEXT_SEASON> 시작 시 새로운 퀘스트를 받을 수 있습니다.
 TID_BRAWL_PASS_AUTOCOLLECT_TITLE,시즌 <NUM> 보상
@@ -4073,6 +4105,7 @@ TID_BANKHEIST_29T,역전
 TID_EMOTE_BUNDLE_ROSALLOWEEN,브롤로윈 로사 핀
 TID_EMOTE_BUNDLE_WF,월드 파이널 핀
 TID_EMOTE_PLAYERS,플레이어
+TID_SPRAY_PLAYERS,스프레이
 TID_KING_OF_HILL_30,전방 주의
 TID_KING_OF_HILL_31,불타는 놀라움
 TID_PLAYER_MAP_SLOT_CREATE_NEW_TITLE,신규 생성
@@ -4315,11 +4348,11 @@ TID_ICE_DUDE_DESC,말 그대로 '쿨한 남자' 루는 온갖 차가운 것들�
 TID_ICE_DUDE_WEAPON,머리가 띵
 TID_ICE_DUDE_WEAPON_DESC,꽁꽁 얼린 빙수로 상대를 집중 공격해 결국엔 <accumulatedStun>초 동안 완전히 얼려버립니다.
 TID_ICE_DUDE_ULTI,꽁꽁 시럽
-TID_ICE_DUDE_ULTI_DESC,차가운 시럽이 담긴 캔을 던져 미끄러운 얼음 지역을 생성합니다. 발이 빠른 상대에게 효과적이죠!
+TID_ICE_DUDE_ULTI_DESC,차가운 시럽이 담긴 캔을 던져 미끄러운 얼음 지역을 생성합니다. 이렇게 만들어진 얼음 지역은 적을 천천히 얼어붙게 만들기도 합니다. 발이 빠른 상대에게 효과적이죠!
 TID_SPEC_ABI_ICE_DUDE_1,빙결 지대
-TID_SPEC_ABI_ICE_DUDE_1_DESC,특수 공격의 효과 지역에 서 있는 적이 서서히 얼어붙습니다.
+TID_SPEC_ABI_ICE_DUDE_1_DESC,루의 특수 공격 지역에 서 있는 적이 <c00cc00><VALUE1>%</c> 더 빨리 얼어붙습니다.
 TID_SPEC_ABI_ICE_DUDE_2,저체온증
-TID_SPEC_ABI_ICE_DUDE_2_DESC,루의 공격으로 얼어붙은 정도에 따라 적의 재장전 속도가 최대 <c00cc00><VALUE1>%</c>까지 느려집니다.
+TID_SPEC_ABI_ICE_DUDE_2_DESC,루의 공격으로 얼어붙은 정도에 따라 적이 입히는 피해량이 최대 <c00cc00><VALUE1>%</c>까지 감소합니다.
 TID_ACCESSORY_ICE_DUDE_GADGET,얼음 방패
 TID_ACCESSORY_ICE_DUDE_GADGET_DESC,얼음으로 자기 자신을 보호해 <c00cc00><VALUE1></c>초 동안 무적 상태가 됩니다.
 TID_INVITE_CLAN_TOKEN_ERROR_FULL,초대 실패: 클럽 인원이 가득 찼습니다.
@@ -4702,7 +4735,7 @@ TID_SPEC_ABI_STICKY_BOMB_1_DESC,폭발 범위 안에 있는 적의 수만큼 끈
 TID_SPEC_ABI_STICKY_BOMB_2,초강력 끈끈이
 TID_SPEC_ABI_STICKY_BOMB_2_DESC,빅 젤 폭탄에서 분리된 두 번째 끈끈이 젤 폭탄에 맞은 적이 <c00cc00><VALUE2></c>초 동안 느려집니다.
 TID_ACCESSORY_STICKY_BOMB_RANGE,와인드업
-TID_ACCESSORY_STICKY_BOMB_RANGE_DESC,다음 끈끈이 젤 폭탄의 사정거리가 <c00cc00><VALUE1>%</c> 증가합니다.
+TID_ACCESSORY_STICKY_BOMB_RANGE_DESC,다음 끈끈이 젤 폭탄이 <c00cc00><VALUE2>%</c> 더 큰 피해를 주며 사정거리가 <c00cc00><VALUE1>%</c> 증가합니다.
 TID_RANKED2_CONFIRM_QUESTION,선택할까요?
 TID_RANKED_PICK_ERROR_BRAWLER_NOT_OWNED,해당 브롤러를 보유하고 있지 않습니다!
 TID_RANKED_PICK_ERROR_BRAWLER_BANNED,해당 브롤러가 이미 금지되었습니다. 다른 브롤러를 선택하세요!
@@ -5209,7 +5242,7 @@ TID_EMOTE_BUNDLE_RETRO_PACK,레트로폴리스 핀
 TID_SKIN_INFO_CAMPAIGN_RETRO,레트로폴리스 스킨
 TID_SKIN_INFO_CAMPAIGN_RETRO_TITLE,백 투 더 레트로폴리스
 TID_RETRO_SKINS_INFO,스킨 세트
-TID_EMOTE_SKINS_PACK_REWARD,해당 세트의 모든 스킨을 보유하면 한정판 핀 팩 획득!
+TID_EMOTE_SKINS_PACK_REWARD,이 세트의 모든 스킨을 보유하고 한정판 핀 팩을 획득할 수 있습니다!
 TID_RANDOM_SKIN_SWITCH_TITLE,랜덤 스킨
 TID_SKIN_GROUP_POPUP_BP,브롤 패스 한정판 스킨
 TID_SKIN_GROUP_POPUP_CHALLENGE,챌린지에서 스킨을 획득하세요!
@@ -5224,7 +5257,7 @@ TID_GEAR_TOKEN_SHIELD,보호막 토큰
 TID_GEAR_TOKEN_SPEED,속도 토큰
 TID_GEAR_TOKEN_TYPE_DAMAGE,피해
 TID_GEAR_TOKEN_TYPE_HEAL,회복
-TID_GEAR_TOKEN_TYPE_RESISTANCE,저항
+TID_GEAR_TOKEN_TYPE_VISION,시야
 TID_GEAR_TOKEN_TYPE_SHIELD,보호막
 TID_GEAR_TOKEN_TYPE_SPEED,속도
 TID_GEAR_TOKEN,기어 토큰
@@ -5238,22 +5271,22 @@ TID_GEAR_UPGRADE_BUTTON,업그레이드
 TID_GEAR_FOREST_SPEED_TITLE,속도
 TID_GEAR_STANDING_HEAL_TITLE,회복
 TID_GEAR_LOW_HEALTH_DAMAGE_TITLE,피해
-TID_GEAR_SLOW_RESISTANCE_TITLE,저항
+TID_GEAR_VISION_TITLE,시야
 TID_GEAR_SHIELD_TITLE,보호막
 TID_GEAR_FOREST_SPEED_INFO,덤불 속에서 이동할 때 속도가 <NUM>% 증가합니다.
-TID_GEAR_STANDING_HEAL_INFO,HP 회복 속도가 <NUM>% 더 빨라집니다.
+TID_GEAR_STANDING_HEAL_INFO,HP를 <NUM>% 더 효과적으로 회복합니다.
 TID_GEAR_LOW_HEALTH_DAMAGE_INFO,HP가 50% 미만일 때 <NUM>%의 추가 피해를 줍니다.
-TID_GEAR_SLOW_RESISTANCE_INFO,"기절 효과 지속 시간이 줄고, 감속 효과가 <NUM>% 감소합니다."
+TID_GEAR_VISION_INFO,피해를 입힌 적을 <NUM>초 동안 노출시킵니다.
 TID_GEAR_SHIELD_INFO,"소모성 보호막으로서 <NUM>HP를 추가로 얻습니다. 브롤러의 HP가 가득 차면, 10초 후 보호막이 완전히 회복됩니다."
 TID_GEAR_FOREST_SPEED_UPGRADE_INFO,덤불 내 이동 속도가 증가합니다.
-TID_GEAR_STANDING_HEAL_UPGRADE_INFO,움직이지 않는 동안 HP를 회복합니다.
+TID_GEAR_STANDING_HEAL_UPGRADE_INFO,HP를 더 효과적으로 회복합니다.
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_INFO,HP가 50% 미만일 때 추가 피해를 줍니다.
-TID_GEAR_SLOW_RESISTANCE_UPGRADE_INFO,기절 효과 지속 시간 및 감속 효과가 감소합니다.
+TID_GEAR_VISION_UPGRADE_INFO,피해를 입힌 적을 노출시킵니다.
 TID_GEAR_SHIELD_UPGRADE_INFO,HP를 올려주는 보호막을 얻습니다.
 TID_GEAR_FOREST_SPEED_UPGRADE_TARGET,이동 속도 증가
-TID_GEAR_STANDING_HEAL_UPGRADE_TARGET,HP 회복
+TID_GEAR_STANDING_HEAL_UPGRADE_TARGET,회복 보너스
 TID_GEAR_LOW_HEALTH_DAMAGE_UPGRADE_TARGET,추가 피해
-TID_GEAR_SLOW_RESISTANCE_UPGRADE_TARGET,저항
+TID_GEAR_VISION_UPGRADE_TARGET,노출 시간(초)
 TID_GEAR_SHIELD_UPGRADE_TARGET,보호막 HP
 TID_GEAR_UPGRADED,기어가 업그레이드되었습니다!
 TID_GEAR_TITLE,기어
@@ -5748,7 +5781,7 @@ TID_KICKER_DUDE_WEAPON_DESC,"재빠르게 발차기를 날리며, 대상을 빗�
 TID_KICKER_DUDE_ULTI,플라잉 킥
 TID_KICKER_DUDE_ULTI_DESC,적에게 날아가서 초강력 발차기를 날립니다. 적중하면 가까이 있는 적에게 연속으로 3번 더 발차기를 날립니다.
 TID_SPEC_ABI_KICKER_DUDE_1,충전 킥
-TID_SPEC_ABI_KICKER_DUDE_1_DESC,특수 공격으로 적을 처치하면 즉시 충전되어 다시 특수 공격을 사용할 수 있습니다.
+TID_SPEC_ABI_KICKER_DUDE_1_DESC,특수 공격으로 적 브롤러를 처치하면 즉시 충전되어 다시 특수 공격을 사용할 수 있습니다.
 TID_SPEC_ABI_KICKER_DUDE_2,신성한 신발
 TID_SPEC_ABI_KICKER_DUDE_2_DESC,받는 피해량이 <c00cc00><VALUE1></c>초마다 <c00cc00><VALUE2></c>만큼 감소합니다. 최대 감소량은 받는 피해량의 <c00cc00><VALUE3>%</c>입니다.
 TID_ACCESSORY_KICKER_DUDE_GADGET,팝콘 폭탄
@@ -5925,7 +5958,7 @@ TID_GAME_MODE_25_DESC,적을 처치해 점수를 모으세요. <MAX_SCORE>점에
 TID_DEATHMATCH_INTRO_TEXT,적을 처치하세요!
 TID_NOTIFICATION_DEATHMATCH,신규 클린 아웃 맵 플레이 가능! 새 보상을 획득하세요!
 TID_GAME_MODE_26,페이로드
-TID_GAME_MODE_26_DESC,팀의 광산 열차 근처에 서서 밀어내세요! 광산 열차가 목표 지점에 먼저 닿는 팀이 경기에서 승리합니다. 상대의 광산 열차 근처에 서면 속도를 늦춰 방해할 수 있습니다. 시간이 다 되면 광산 열차를 더 멀리 민 팀이 승리합니다!
+TID_GAME_MODE_26_DESC,팀의 광산 열차 근처에 서서 열차를 미세요! 광산 열차가 목표 지점에 먼저 닿는 팀이 경기에서 승리합니다. 상대의 광산 열차 근처에 서면 열차의 속도를 늦춰 방해할 수 있습니다. 시간이 다 되면 광산 열차를 더 멀리 민 팀이 승리합니다!
 TID_PAYLOAD_INTRO_TEXT,광산 열차를 밀어내세요!
 TID_NOTIFICATION_PAYLOAD,신규 페이로드 맵 플레이 가능! 새 보상을 획득하세요!
 TID_ACCESSORY_PERCENTER_LIFESTEAL,딱 걸렸어!
@@ -5942,21 +5975,21 @@ TID_OPPONENT_ONE_POINT_FROM_VICTORY,패배까지 남은 테이크다운: 1!
 TID_VICTORY_MATCH_OVER,승리!
 TID_LOSS_MATCH_OVER,패배!
 TID_SKIN_INFO_CAMPAIGN_LUNAR_BRAWL_2022,2022 설날 스킨
-TID_LOGIN_CALENDAR_LEFT_TITLE,일일 보상
-TID_LOGIN_CALENDAR_LEFT_SUBTITLE,<cfffc11>15일 연속</c> 로그인해 매일 <cfffc11>무료 보상</c>을 받으세요.
+TID_LOGIN_CALENDAR_LEFT_TITLE,연속 일일 선물
+TID_LOGIN_CALENDAR_LEFT_SUBTITLE,<cfffc11>15일 동안 매일 로그인해</c> <cfffc11>무료 선물</c>을 획득하세요! 연속 기록을 잃지 않으려면 <cfffc11>단 하루도 놓치지 말고 로그인하세요</c>!
 TID_LOGIN_CALENDAR_RIGHT_TITLE,오늘의 보상
 TID_LOGIN_CALENDAR_BUTTON_CLAIM,받기
 TID_LOGIN_CALENDAR_BUTTON_CLOSE,닫기
 TID_LOGIN_CALENDAR_AVAILABLE_IN_TIMER,다음 보상까지: <TIME>
 TID_LOGIN_CALENDAR_CARD_DAY_NUM,<NUM>일 차
 TID_LOGIN_CALENDAR_CARD_AVAILABLE_IN_TIMER,다음 보상까지: <TIME>
-TID_LOGIN_CALENDAR_CARD_TIME_TO_CLAIM,보상 받기까지 남은 시간: <TIME>
-TID_LOGIN_CALENDAR_REWARD_BRAWLER_CHOICE,브롤러를 선택하세요
-TID_LOGIN_CALENDAR_REWARD_LEVEL_UPGRADE,브롤러를 업그레이드하세요
+TID_LOGIN_CALENDAR_CARD_TIME_TO_CLAIM,수령 종료까지: <TIME>
+TID_LOGIN_CALENDAR_REWARD_BRAWLER_CHOICE,브롤러 선택
+TID_LOGIN_CALENDAR_REWARD_LEVEL_UPGRADE,브롤러\n업그레이드
 TID_LOGIN_CALENDAR_REWARD_PIN,신규 핀
 TID_LOGIN_CALENDAR_REWARD_SKIN,신규 스킨
-TID_LOGIN_CALENDAR_REWARD_GADGET_CHOICE,가젯을 선택하세요
-TID_LOGIN_CALENDAR_REWARD_PIN_X2,2개의 신규 핀
+TID_LOGIN_CALENDAR_REWARD_GADGET_CHOICE,가젯 선택
+TID_LOGIN_CALENDAR_REWARD_PIN_X2,신규 핀 2개
 TID_LOGIN_CALENDAR_REWARD_STARPOWER_CHOICE,스타 파워를 선택하세요
 TID_LOGIN_CALENDAR_REWARD_DESC_BRAWLER_CHOICE,<HERONAME1> 또는 <HERONAME2>을(를) 선택해 잠금 해제하세요.
 TID_LOGIN_CALENDAR_REWARD_DESC_LEVEL_UPGRADE,<HERONAME>을(를) <VALUE> 파워 레벨로 업그레이드하기
@@ -5975,7 +6008,7 @@ TID_ACCESSORY_SNAKE_OIL_SPREAD,부스터 샷
 TID_ACCESSORY_SNAKE_OIL_SPREAD_DESC,"다음 일반 공격에서 원래의 1개 대신 <c00cc00><VALUE1></c>개의 다트가 발사됩니다. 단, 각 다트의 피해량은 <ccc0000><VALUE2>%</c>, 치유량은 <ccc0000><VALUE3>%</c> 감소합니다."
 TID_GEMGRAB_48,사파이어 대지
 TID_ACCESSORY_STICKY_BOMB_VISION,불순물
-TID_ACCESSORY_STICKY_BOMB_VISION_DESC,다음에 폭발하는 끈끈이 젤 폭탄이 아군에게 <c00cc00><VALUE1></c>초 동안 덤불 속을 볼 수 있게 해줍니다.
+TID_ACCESSORY_STICKY_BOMB_VISION_DESC,다음에 폭발하는 끈끈이 젤 폭탄이 불순물 영역을 남겨 적의 속도를 늦추고 아군에게 <c00cc00><VALUE1></c>초 동안 덤불 속을 볼 수 있게 해줍니다.
 TID_ACCESSORY_ELECTRO_SNIPER_BOUNCE,역극성
 TID_ACCESSORY_ELECTRO_SNIPER_BOUNCE_DESC,다음 전기 볼트가 벽에서 튕깁니다.
 TID_TUTORIAL_SD_FIRSTBATTLE,마지막에 살아남은 브롤러가 승리합니다! 상자에서 파워 큐브를 수집해 브롤러를 강화하세요. 독 구름이 다가오니 계속 움직이세요!
@@ -6011,7 +6044,7 @@ TID_LOGIN_CALENDAR_TIP_PINS,전투에서 핀을 활용해 기분을 표현해 �
 TID_LOGIN_CALENDAR_TIP_GADGET,가젯은 전투당 최대 3번 사용할 수 있는 추가 능력입니다.
 TID_LOGIN_CALENDAR_TIP_STAR_POWER,스타 파워는 브롤러를 위한 특별한 패시브 능력입니다.
 TID_LOGIN_CALENDAR_PINS_DESCRIPTION,다음 핀은 <VALUE>일 차에 등장합니다.\n매일 로그인해 이 컬렉션을 완료하세요.
-TID_LOGIN_CALENDAR_BUTTON_TITLE,<VALUE>일 차 보상까지:
+TID_LOGIN_CALENDAR_BUTTON_TITLE,다음 일일 선물까지:
 TID_LOGIN_CALENDAR_REMINDER_1_TITLE,14일 동안 <HERONAME>의 무료 보상
 TID_LOGIN_CALENDAR_REMINDER_1_DESCRIPTION,매일 로그인해 <HERONAME>의 진행을 가속하고 멋진 스킨을 획득하세요!
 TID_LOGIN_CALENDAR_REMINDER_1_BUTTON,다음
@@ -6098,13 +6131,248 @@ TID_SHOWDOWN_69,협곡의 강
 TID_SHOWDOWN_70,공동묘지
 TID_RANKED_BATTLE_END_EPIC,월등한 승리!
 TID_RANKED_BATTLE_END_CLOSE,팽팽한 전투!
+TID_JETPACK_GIRL,자넷
+TID_JETPACK_GIRL_SHORT_DESC,대미지 딜러
+TID_JETPACK_GIRL_DESC,자넷은 자타가 공인하는 대스타입니다. 주위 사람들의 모든 시선을 은근히 즐기곤 하죠.\n\n동생 보니가 계속 말썽만 피우지 않으면 좋을 텐데요...
+TID_JETPACK_GIRL_WEAPON,고음
+TID_JETPACK_GIRL_WEAPON_DESC,고음으로 노래합니다. 음을 길게 뽑아낼수록 집중도가 높아져 더 멀리 뻗어갑니다.
+TID_JETPACK_GIRL_ULTI,크레센도
+TID_JETPACK_GIRL_ULTI_DESC,제트팩을 이용해 잠시 동안 하늘로 날아오릅니다. 지속 시간 내내 공중에서 적을 공격합니다.
+TID_SPEC_ABI_JETPACK_GIRL_1,무대인사
+TID_SPEC_ABI_JETPACK_GIRL_1_DESC,제트팩을 이용해 공중에 떠 있는 동안 주변의 넓은 덤불 지역을 노출시킵니다.
+TID_SPEC_ABI_JETPACK_GIRL_2,발성연습
+TID_SPEC_ABI_JETPACK_GIRL_2_DESC,자넷의 일반 공격이 <c00cc00><VALUE1>%</c> 더 빠르게 집중됩니다.
+TID_ACCESSORY_JETPACK_GIRL_GADGET_1,강력한 베이스
+TID_ACCESSORY_JETPACK_GIRL_GADGET_1_DESC,초당 <c00cc00><VALUE1></c> 피해를 가하는 스피커를 배치합니다. 스피커는 파괴될 때까지 주변의 모든 적에게 피해를 입힙니다.
+TID_ACCESSORY_JETPACK_GIRL_GADGET_2,백스테이지 통행증
+TID_ACCESSORY_JETPACK_GIRL_GADGET_2_DESC,"다음 고음이 자넷을 멀리, 심지어 벽 위까지 밀어냅니다. 자넷의 공격이 더 집중될수록 더 멀리 밀려갑니다."
+TID_CANNON_GIRL,보니
+TID_CANNON_GIRL_SHORT_DESC,하이브리드
+TID_CANNON_GIRL_DESC,보니와 그녀의 대포 클라이드는 항상 나쁜 짓을 꾸밉니다. 이 작고 귀여운 소녀가 엄청난 사고뭉치일 줄은 그 누구도 상상하지 못했을걸요?
+TID_CANNON_GIRL_WEAPON,흔들흔들 치아
+TID_CANNON_GIRL_WEAPON_DESC,보니가 클라이드를 사용해 적들을 향하여 커다란 치아를 발사합니다.
+TID_CANNON_GIRL_ULTI,스타 런처
+TID_CANNON_GIRL_ULTI_DESC,"클라이드가 보니를 공중으로 쏘아 올립니다. 보니는 장애물을 넘을 수 있으며, 착지할 때 근처의 적들에게 피해를 줍니다."
+TID_CANNON_GIRL_SMALL_WEAPON,항공 점퍼
+TID_CANNON_GIRL_SMALL_WEAPON_DESC,소매에서 작은 수류탄 뭉치를 날립니다.
+TID_CANNON_GIRL_SMALL_ULTI,클라이드
+TID_CANNON_GIRL_SMALL_ULTI_DESC,보니가 클라이드를 불러 안으로 뛰어들어가서 대포를 조종합니다.
+TID_SPEC_ABI_CANNON_GIRL_1,검은 화약
+TID_SPEC_ABI_CANNON_GIRL_1_DESC,보니의 스타 런처 사거리가 <c00cc00><VALUE1>%</c> 증가합니다.
+TID_SPEC_ABI_CANNON_GIRL_2,사랑니
+TID_SPEC_ABI_CANNON_GIRL_2_DESC,흔들리는 치아가 적에게 명중 시 산산조각 나 근처의 적에게 <c00cc00><VALUE1>%</c>의 추가 피해를 입힙니다.
+TID_ACCESSORY_CANNON_GIRL_SPEED,슈가 러시
+TID_ACCESSORY_CANNON_GIRL_SPEED_DESC,클라이드의 이동 속도와 재장전 속도가 <c00cc00><VALUE2></c>초 동안<c00cc00><VALUE1>%</c> 증가합니다.
+TID_ACCESSORY_CANNON_GIRL_DASH,충돌 테스트
+TID_ACCESSORY_CANNON_GIRL_DASH_DESC,보니가 앞으로 돌진하면서 적을 나가떨어지게 하며 타격당 <c00cc00><VALUE1></c> 피해를 입힙니다.
+TID_ACCESSORY_BLOCKED_REQUIRES_CANNON,클라이드가 필요합니다!
+TID_ACCESSORY_BLOCKED_REQUIRES_ASSASSIN,보니가 필요합니다!
+TID_LOGIN_CALENDAR_MISSED,남은 로그인 보상을 놓쳤습니다.
+TID_ACCESSORY_POWER_LEVELER_EXTRA_LEVELS,파워 서지
+TID_ACCESSORY_POWER_LEVELER_EXTRA_LEVELS_DESC,자신의 회로에 과부하를 걸어 업그레이드 레벨이 <c00cc00><VALUE2></c>초 동안 <c00cc00><VALUE1></c> 증가합니다.
+TID_ACCESSORY_POWER_LEVELER_SHIELD,파워 실드
+TID_ACCESSORY_POWER_LEVELER_SHIELD_DESC,다음 <c00cc00><VALUE1></c>초 동안 받는 피해를 <c00cc00><VALUE2>%</c> 줄이고 <c00cc00><VALUE3></c>개의 탄환을 재장전합니다.
+TID_GAME_MODE_27,봇 드롭
+TID_GAME_MODE_27_DESC,로봇의 침략을 방어하세요. 로봇을 파괴하고 볼트를 수집하세요. 먼저 볼트 <MAX_SCORE>개를 수집하는 팀이 전투에서 승리합니다!
+TID_INVASION_INTRO_TEXT,로봇을 파괴하라!
+TID_NOTIFICATION_INVASION,새로운 봇 드롭 맵 이용 가능! 새 보상을 획득하세요!
+TID_INVASION_1,권력 이양
+TID_INVASION_2,분열
+TID_INVASION_3,발베르데
+TID_INVASION_4,사분면
+TID_INVASION_5,세계의 브롤
+TID_INVASION_6,킬존
+TID_INVASION_7,불스아이
+TID_INVASION_8,피카부
+TID_INVASION_9,로봇의 공격!
+TID_INVASION_10,선형 블록
+TID_INVASION_11,복도
+TID_INVASION_12,리버사이드
+TID_INVASION_13,출국장
+TID_INVASION_14,요새
+TID_INVASION_15,봇
+TID_INVASION_16,시끌벅적
+TID_SPRAYS_TUTORIAL_TITLE,스프레이
+TID_SPRAYS_TUTORIAL_HEADER,전투에서 자신을 표현하세요!
+TID_BRAWL_PASS_CANCEL_QUEST_REROLL,리롤 취소
+TID_BRAWL_PASS_REROLL_QUEST,퀘스트 리롤
+TID_BRAWL_PASS_QUEST_REROLL_COUNT,리롤 <num>/<max>번 이용 가능
+TID_BRAWL_PASS_QUEST_REROLL_REFRESH_TIME,새로고침까지 <time>
+TID_YOU_HAVE_USED_ALL_REROLLS,리롤을 모두 사용했습니다! 더 이용하려면 브롤 패스를 구입하세요
+TID_YOU_HAVE_USED_ALL_REROLLS_HAS_PREMIUM,이용 가능한 리롤을 모두 사용했습니다!
+TID_QUEST_REROLL_INTRO,리롤할 퀘스트를 선택하세요
+TID_QUEST_REROLL_ACCEPT,확인
+TID_QUEST_REROLL_REJECT,취소
+TID_REROLL_NOT_POSSIBLE_FOR_ITEM,이 퀘스트는 리롤할 수 없습니다
+TID_CONFIRM_QUEST_REROLL,퀘스트를 리롤할까요?
+TID_CONFIRM_QUEST_REROLL_DESC,새로 나타나는 퀘스트는 <char> 또는<type> 관련 요구 조건을 포함하지 않습니다.\n남은 리롤: <rerolls>
+TID_CONFIRM_QUEST_REROLL_DESC_ONLY_TYPE,새로 나타나는 퀘스트는 <type> 관련 요구 조건을 포함하지 않습니다.\n남은 리롤: <rerolls>
+TID_QUEST_TYPE_REQ_WIN,승리
+TID_QUEST_TYPE_REQ_KILL,적 처치
+TID_QUEST_TYPE_REQ_DEAL_DAMAGE,피해 주기
+TID_QUEST_TYPE_REQ_HEAL,회복
+TID_QUEST_TYPE_REQ_PLAY_AGAIN,다시 플레이
+TID_QUEST_TYPE_REQ_TEAM_PLAY,팀 플레이
+TID_QUEST_TYPE_REQ_MODE_SPECIFIC,게임 모드
+TID_CHINA_PRIVACY_SHOW_IN_LEADERBOARDS,순위표에 표시
+TID_CHINA_PRIVACY_SHOW_PLAYER_PROFILE,플레이어 프로필 표시
+TID_CHINA_PRIVACY_SHOW_CLUB_DETAILS,클럽 정보 표시
+TID_CHINA_PRIVACY_ALLOW_SPECTATE,관전 허용
+TID_CHINA_PRIVACY_INFO_OLD_PLAYERS_TITLE,중요 공지
+TID_CHINA_PRIVACY_INFO_OLD_PLAYERS_DESC,브롤스타즈 플레이어에게 알립니다.\n게임에 프라이버시 설정을 추가했습니다. 해당 설정은 기본으로 사용함으로 설정되어 있습니다. 변경하시려면 설정 -> 프라이버시 설정으로 가서 조정하시면 됩니다.
+TID_CHINA_PRIVACY_INFO_NEW_PLAYERS_TITLE,중요 공지
+TID_CHINA_PRIVACY_INFO_NEW_PLAYERS_DESC,브롤스타즈 플레이어에게 알립니다.\n게임에 프라이버시 설정을 추가했습니다. 해당 설정은 기본으로 사용 안 함으로 설정되어 있습니다. 사용함으로 변경하시겠습니까?
+TID_CHINA_PRIVACY_INFO_NEW_PLAYERS_BUTTON_ACCEPT,확인
+TID_CHAT_JUST_DISABLED,부적절한 발언으로 다른 플레이어에 의해 신고되었습니다. <TIME> 동안 채팅을 이용하실 수 없습니다.
+TID_CHAT_UNAVAILABLE,<TIME> 동안 채팅 이용 불가
+TID_CHAT_BANNED_REASON,부적절한 발언으로 다른 플레이어에 의해 신고되었습니다.
+TID_CHAT_BANNED_PERIOD_OF,전체 채팅에서 음소거 됩니다. 적용 시간:
+TID_CHAT_FAIL_BANNED,<TIME> 동안 채팅에서 음소거 되었습니다.
+TID_CHAT_JUST_BANNED,부적절한 발언으로 다른 플레이어에 의해 신고되었습니다. <TIME> 동안 채팅에서 음소거됩니다.
+TID_TENCENT_CUSTOMER_SUPPORT,Tencent 고객 지원
+TID_SELF_SERVICE_BUTTON,자가 지원
+TID_REPORT_CLUB_CONFIRMATION_TITLE,<NAME> 님을 신고하시겠습니까?
+TID_REPORT_CLUB_CONFIRMATION,<NAME> 님을 부적절한 행위로 신고하시겠습니까?
+TID_REPORT_PLAYER_CONFIRMATION_TITLE,<NAME> 님을 신고하시겠습니까?
+TID_REPORT_PLAYER_CONFIRMATION,<NAME> 님을 부적절한 행위로 신고하시겠습니까?
+TID_REPORT_BATTLE_PLAYER_CONFIRMATION_TITLE,<NAME> 님을 신고하시겠습니까?
+TID_REPORT_BATTLE_PLAYER_CONFIRMATION,<NAME> 님을 부적절한 행위로 신고하시겠습니까?
+TID_DELETE_ACCOUNT_TITLE,내 계정 삭제
+TID_UGC_INPUT_FEATURE_UNAVAILABLE,현재 해당 기능을 사용할 수 없습니다
+TID_PLAYER_PROFILE_PRIVATE,프로필이 비공개로 설정된 플레이어입니다
+TID_PLAYER_CLUB_INFO_PRIVATE,클럽 정보가 비공개로 설정된 플레이어입니다
+TID_CLAN_RESPONSE_111,현재 해당 기능을 사용할 수 없습니다
+TID_CLAN_RESPONSE_120,설명에 허용되지 않는 내용이 포함되어 있습니다 다른 내용을 입력하세요.
+TID_CHINA_LOGIN_DESC_YOOZOO,本公司积极履行《网络游戏行业防沉迷自律公约》抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》、《关于进一步严格管理切实防止未成年人沉迷网络游戏的通知》，所有网络游戏用户均需使用有效身份信息完成账号实名注册后方可进入游戏，认证为未成年的玩家将受到防沉迷功能限制。沪网文【2018】8544-517号、新出网证（沪）字33号 著作权人：SUPERCELL OY 出版单位：上海游族信息技术有限公司 运营单位：上海游族信息技术有限公司 批准文号：国新出审【2020】552号 出版物号：ISBN 978-7-498-07472-0
+TID_YOOZOO_LOGIN_AGREEMENTS,"<TOS>, <PP>, <CHILDREN>, 및 <THIRDPARTY>의 내용을 주의 깊게 읽었으며 이에 동의합니다."
+TID_YOOZOO_TERMS_CHILDREN,Yoozoo 미성년자 개인정보 보호 가이드라인
+TID_TERMS_CHILDREN_BUTTON_YOOZOO,Yoozoo 미성년자 개인정보 보호 가이드라인
+TID_YOOZOO_THIRDPARTY_INFO,제3자 정보 공유 목록
+TID_THIRD_PARTY_SHARING_BUTTON_YOOZOO,제3자 정보 공유 목록
+TID_YOOZOO_SYSTEM_SETTINGS_BUTTON,시스템 설정
+TID_SKIN_PIN_INCLUDED,+ 한정판 핀!
+TID_SKIN_PINS_INCLUDED,+ 한정판 핀 팩!
+TID_OWN_TEAM_BANS,블루 팀 사용 금지
+TID_ENEMY_TEAM_BANS,레드 팀 사용 금지
+TID_PRE_PICK_YOUR_BRAWLER,브롤러 사전 선택
+TID_PRE_PICK,사전 선택
+TID_CANCEL,취소
+TID_WANTS_TO_PLAY,플레이 희망
+TID_WANT_TO_PLAY,플레이 희망
+TID_WANTS_TO_PLAY_MULTIPLE_TEAMMATES,팀원 <num>명
+TID_BRAWL_PASS_SEASON_11,스턴트 쇼
+TID_SHOP_STUNTSHOW_SKINS,스턴트 쇼 스킨
+TID_SHOP_STUNTSHOW_TITLE,스턴트 쇼
+TID_SHOP_STUNTSHOW_INFO,스킨 세트
+TID_SKIN_INFO_CAMPAIGN_STUNTSHOW,스턴트 쇼 스킨
+TID_EMOTE_BUNDLE_STUNTSHOW_PACK,스턴트 쇼 스킨 핀
+TID_EMOTE_BUNDLE_GOLDENWEEK_PACK,골든 위크 스킨 핀
+TID_SKIN_INFO_CAMPAIGN_GOLDENWEEK,골든 위크 스킨
+TID_SHOP_GOLDENWEEK_SKINS,골든 위크 스킨
+TID_SHOP_GOLDENWEEK_TITLE,골든 위크
+TID_SHOP_GOLDENWEEK_INFO,스킨 세트
+TID_SPRAY_BRAWLER_COMING_SOON,브롤러 스프레이 곧 공개
+TID_SHOP_VILLAINS_SKINS,악당 스킨
+TID_SHOP_VILLAINS_TITLE,악당
+TID_SHOP_VILLAINS_INFO,스킨 세트
+TID_EMOTE_BUNDLE_VILLAINS_PACK,악당 스킨 핀
+TID_SKIN_INFO_CAMPAIGN_VILLAINS,악당 스킨
+TID_HOTZONE_33,오픈 존
+TID_KNOCKOUT_18,새로운 시각
+TID_TRUE_GOLD_BELLE_SKIN,트루 골드 벨
+TID_TRUE_GOLD_BELLE_SKIN_SHOP,트루 골드 벨
+TID_TRUE_SILVER_BELLE_SKIN,트루 실버 벨
+TID_TRUE_SILVER_BELLE_SKIN_SHOP,트트루 실버 벨
+TID_TRUE_GOLD_STU_SKIN,트루 골드 스튜
+TID_TRUE_GOLD_STU_SKIN_SHOP,트루 골드 스튜
+TID_TRUE_SILVER_STU_SKIN,트루 실버 스튜
+TID_TRUE_SILVER_STU_SKIN_SHOP,트루 실버 스튜
+TID_TRUE_GOLD_ASH_SKIN,트루 골드 애쉬
+TID_TRUE_GOLD_ASH_SKIN_SHOP,트루 골드 애쉬
+TID_TRUE_SILVER_ASH_SKIN,트루 실버 애쉬
+TID_TRUE_SILVER_ASH_SKIN_SHOP,트루 실버 애쉬
+TID_TRUE_GOLD_MEG_SKIN,트루 골드 메그
+TID_TRUE_GOLD_MEG_SKIN_SHOP,트루 골드 메그
+TID_TRUE_SILVER_MEG_SKIN,트루 실버 메그
+TID_TRUE_SILVER_MEG_SKIN_SHOP,트루 실버 메그
+TID_TRUE_GOLD_LOLA_SKIN,트루 골드 롤라
+TID_TRUE_GOLD_LOLA_SKIN_SHOP,트루 골드 롤라
+TID_TRUE_SILVER_LOLA_SKIN,트루 실버 롤라
+TID_TRUE_SILVER_LOLA_SKIN_SHOP,트루 실버 롤라
+TID_CRASH_TEST_DARRYL_SKIN,충돌 테스트 대릴
+TID_CRASH_TEST_DARRYL_SKIN_SHOP,충돌 테스트\n대릴
+TID_BIKER_CARL_SKIN,바이커 칼
+TID_BIKER_CARL_SKIN_SHOP,바이커 칼
+TID_PYRO_SPIKE_SKIN,화염 스파이크
+TID_PYRO_SPIKE_SKIN_SHOP,화염 스파이크
+TID_MONSTER_TRUCK_MEG_SKIN,몬스터 트럭 메그
+TID_MONSTER_TRUCK_MEG_SKIN_SHOP,몬스터 트럭\n메그
+TID_OVERLORD_BYRON_SKIN,대군주 바이런
+TID_OVERLORD_BYRON_SKIN_SHOP,대군주 바이런
+TID_GALAXY_STORM_LOLA_SKIN,갤럭시 스톰 롤라
+TID_GALAXY_STORM_LOLA_SKIN_SHOP,갤럭시 스톰\n롤라
+TID_EMPRESS_BONNIE_SKIN,여제 보니
+TID_EMPRESS_BONNIE_SKIN_SHOP,여제 보니
+TID_TEMPEST_TARA_SKIN,템페스트 타라
+TID_TEMPEST_TARA_SKIN_SHOP,템페스트 타라
+TID_VALKYRIE_JANET_SKIN,발키리 자넷
+TID_VALKYRIE_JANET_SKIN_SHOP,발키리 자넷
+TID_DARUMA_MRP_SKIN,다루마 P
+TID_DARUMA_MRP_SKIN_SHOP,다루마 P
+TID_SKIN_INFO_CAMPAIGN_LANTERN,랜턴 브롤 스킨
+TID_ACCESSORY_DRILLER_REBUILD,재건
+TID_ACCESSORY_DRILLER_REBUILD_DESC,자기 주변의 작은 반경 내의 파괴된 지형물을 재건합니다.
+TID_ACCESSORY_ASSAULT_SHOTGUN_PROJECTILES,코인 샤워
+TID_ACCESSORY_ASSAULT_SHOTGUN_PROJECTILES_DESC,다음 동전 던지기에서 <c00cc00><VALUE1>%</c> 더 많은 동전을 쏩니다.
+TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD,춤추는 불꽃
+TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD_DESC,자기 주변을 빙빙 도는 불꽃 <c00cc00><VALUE3></c>개를 만들어 <c00cc00><VALUE2></c>초 동안 주위의 적에게 타격당<c00cc00><VALUE1></c>의 피해를 입힙니다.
+TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD,공구함
+TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD_DESC,공구함을 떨어뜨려 근처 아군의 재장전 속도를 높입니다. 공구함이 파괴될 때까지 아군의 재장전 속도가 <c00cc00><VALUE1>%</c> 증가합니다.
+TID_ACCESSORY_ROPE_DUDE_VISION,엑스레이 고글
+TID_ACCESSORY_ROPE_DUDE_VISION_DESC,<c00cc00><VALUE1></c>초 동안 모든 덤불 속을 볼 수 있습니다.
+TID_LOGIN_CALENDAR_ALREADY_HAVE_BRAWLER,이미 보유한 브롤러입니다
+TID_LOGIN_CALENDAR_ALREADY_HAVE_GADGET,이미 보유한 가젯입니다
+TID_LOGIN_CALENDAR_ALREADY_HAVE_STAR_POWER,이미 보유한 스타 파워입니다
+TID_LOGIN_CALENDAR_FINAL_REWARD_MESSAGE,15일차에 무료 <cFF92F9>영웅</c> 브롤러 등장
+TID_LOGIN_CALENDAR_WARNING_MESSAGE,<cFFB820>단 하루라도 빠뜨리면</c> 나머지 선물이 모두 사라집니다!
+TID_POWER_LEAGUE_BRAWLER_REQUIREMENT_SELECT,이 이벤트를 플레이하려면 최소 12개 이상의 브롤러를 보유해야 합니다
+TID_TEAM_ERROR_134,이 이벤트를 플레이하려면 최소 12명의 브롤러를 보유해야 합니다
+TID_MATCHMAKE_FAILED_25,이 이벤트를 플레이하려면 최소 12명의 브롤러를 보유해야 합니다
+TID_POWER_LEAGUE_BRAWLER_REQUIREMENT_INVITE,플레이어가 보유한 브롤러가 부족해 이 이벤트를 플레이할 수 없습니다
+TID_TEAM_ERROR_133,플레이어가 보유한 브롤러 수가 부족해 이 이벤트를 플레이할 수 없습니다
+TID_REWARD_SPRAY_SLOT,추가 스프레이 슬롯
+TID_SPRAY_SLOT_TITLE,스프레이 슬롯
+TID_KNOCKOUT_19,X 표식
+TID_BANKHEIST_31,범접 불가
+TID_LOGIN_CALENDAR_FINAL_REWARD,무료 <cFF92F9>영웅</c> 브롤러
+TID_LOGIN_CALENDAR_OR,또는
+TID_LOGIN_CALENDAR_BRAWLER_UPGRADED,브롤러 업그레이드!
+TID_LOGIN_CALENDAR_TOOLTIP_SKIN,이 새로운 브롤러 스킨을 잠금 해제하세요\n\n잠금 해제 후에는 브롤러 화면에서 스킨을 장착할 수 있습니다. 브롤러에게 1개 이상의 스킨이 있다면 브롤러를 선택한 후 옷걸이 아이콘 버튼을 누르세요.
+TID_LOGIN_CALENDAR_TOOLTIP_CHOOSE_BRAWLER,다음으로 잠금 해제할 브롤러를 선택하세요!
+TID_LOGIN_CALENDAR_TOOLTIP_UPGRADE_BRAWLER,"브롤러를 업그레이드하세요! 새로운 파워 레벨이 될 때마다 HP, 일반 공격 피해량, 특수 공격 피해량이 증가합니다. 브롤러의 가젯 슬롯은 파워 레벨 7에 잠금 해제되며, 스타 파워 슬롯은 파워 레벨 9에 잠금 해제됩니다."
+TID_LOGIN_CALENDAR_TOOLTIP_PIN_1,핀을 활용해 전투에서 기분을 표현해 보세요. 핀은 브롤러 스킨에서 장착할 수 있습니다.
+TID_LOGIN_CALENDAR_TOOLTIP_PIN_2,핀을 활용해 전투에서 기분을 표현해 보세요. 핀은 브롤러 스킨에서 장착할 수 있습니다.
+TID_LOGIN_CALENDAR_TOOLTIP_GADGETS,브롤러의 가젯을 선택하세요. 가젯은 전투당 최대 3번까지 사용할 수 있는 추가 능력입니다. 모든 브롤러는 각기 고유한 스타 파워를 가집니다.
+TID_LOGIN_CALENDAR_TOOLTIP_STAR_POWER,브롤러의 스타 파워를 선택하세요. 스타 파워는 브롤러의 추가 패시브 능력입니다. 모든 브롤러는 각기 고유한 스타 파워를 가집니다.
+TID_LOGIN_CALENDAR_TUTORIAL_TOOLTIP,첫 번째 일일선물이 기다립니다.\눌러서 수집하세요.
+TID_BRAWL_PASS_INFO_TEXT_10,엄청난 추가 보상!\n\n신규 크로마틱 브롤러: <BRAWLER>!\n\n한정판 스킨: <SKIN_1>!\n\n한정판 스킨: <SKIN_2>!\n\n한정판 <BRAWLER> 핀!\n\n메가 상자 <NUM>개!\n\n추가 코인 및 PP!\n\n\n추가 퀘스트로 브롤 패스를 더 빠르게 완료!\n\n매주 추가 퀘스트 리롤<NUM>개\n\n시즌 내내 전용 크로마틱 이름 색상 이용 가능!
+TID_LOGIN_CALENDAR_STARR_PARK,스타 파크
+TID_LOGIN_CALENDAR_LOYALTY_PROGRAM,로열티 프로그램
+TID_LOGIN_CALENDAR_TITLE,스타 파크 로열티 프로그램
+TID_REWARD_DESC_PLAYER_ICON_REGULAR,플레이어 아이콘
+TID_CLUB_LEAGUE_CLUB_COINS_HOW_TO_GET,클럽 리그에서 경쟁하고 클럽 코인을 획득하세요.
+TID_SHOP_OFFER_INFO_25,새로운 플레이어 아이콘!
+TID_LOGIN_CALENDAR_TUTORIAL_COME_BACK,연속 기록이 사라지지 않도록 <cFFB820>내일 다시 돌아와</c> 이 선물을 수령하세요!
+TID_BRAWLBALL_49,추가 탄성
+TID_BRAWLBALL_50,완전한 경사
+TID_BRAWLBALL_51,하이스코어
+TID_BRAWLBALL_52,핑퐁
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,
 TID_REGION_CUSTOM4,
 TID_REGION_CUSTOM5,
 TID_HERO_INFO_GENERICS_HEADER,
-TID_CHINA_LOGIN_DESC,
 TID_VOTE_MAP_REWARD_LABEL,
 TID_RANKED_QUEST_PROGRESS,
 TID_ONLINE_CL_TEAMS,

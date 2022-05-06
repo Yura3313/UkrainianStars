@@ -1,5 +1,5 @@
 .class public Lp5/n0;
-.super Lp5/k;
+.super Lp5/l;
 .source "XChaCha20.java"
 
 
@@ -13,7 +13,7 @@
     .end annotation
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lp5/k;-><init>([BI)V
+    invoke-direct {p0, p1, p2}, Lp5/l;-><init>([BI)V
 
     return-void
 .end method
@@ -39,12 +39,12 @@
     new-array v4, v0, [I
 
     .line 2
-    iget-object v5, p0, Lp5/k;->a:[I
+    iget-object v5, p0, Lp5/l;->a:[I
 
     new-array v0, v0, [I
 
     .line 3
-    invoke-static {v0, v5}, Lp5/k;->k([I[I)V
+    invoke-static {v0, v5}, Lp5/l;->k([I[I)V
 
     .line 4
     aget v5, p1, v3
@@ -79,7 +79,7 @@
     aput v1, v0, v8
 
     .line 8
-    invoke-static {v0}, Lp5/k;->l([I)V
+    invoke-static {v0}, Lp5/l;->l([I)V
 
     .line 9
     aget v1, v0, v6
@@ -115,7 +115,7 @@
     move-result-object v0
 
     .line 14
-    invoke-static {v4, v0}, Lp5/k;->k([I[I)V
+    invoke-static {v4, v0}, Lp5/l;->k([I[I)V
 
     aput p2, v4, v6
 

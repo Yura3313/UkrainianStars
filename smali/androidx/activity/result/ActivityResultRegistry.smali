@@ -285,20 +285,31 @@
     iget-object v2, v1, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 4
-    sget-object v3, Landroidx/lifecycle/f$c;->STARTED:Landroidx/lifecycle/f$c;
+    sget-object v3, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
 
-    invoke-virtual {v2, v3}, Landroidx/lifecycle/f$c;->isAtLeast(Landroidx/lifecycle/f$c;)Z
+    .line 5
+    invoke-virtual {v2, v3}, Ljava/lang/Enum;->compareTo(Ljava/lang/Enum;)I
 
     move-result v2
 
-    if-nez v2, :cond_1
+    if-ltz v2, :cond_0
 
-    .line 5
+    const/4 v2, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v2, 0x0
+
+    :goto_0
+    if-nez v2, :cond_2
+
+    .line 6
     invoke-virtual {p0, p1}, Landroidx/activity/result/ActivityResultRegistry;->e(Ljava/lang/String;)I
 
     move-result p2
 
-    .line 6
+    .line 7
     iget-object v1, p0, Landroidx/activity/result/ActivityResultRegistry;->d:Ljava/util/Map;
 
     invoke-interface {v1, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -307,43 +318,43 @@
 
     check-cast v1, Landroidx/activity/result/ActivityResultRegistry$d;
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
-    .line 7
+    .line 8
     new-instance v1, Landroidx/activity/result/ActivityResultRegistry$d;
 
     invoke-direct {v1, v0}, Landroidx/activity/result/ActivityResultRegistry$d;-><init>(Landroidx/lifecycle/f;)V
 
-    .line 8
-    :cond_0
+    .line 9
+    :cond_1
     new-instance v0, Landroidx/activity/result/ActivityResultRegistry$1;
 
     invoke-direct {v0, p0, p1, p4, p3}, Landroidx/activity/result/ActivityResultRegistry$1;-><init>(Landroidx/activity/result/ActivityResultRegistry;Ljava/lang/String;Landroidx/activity/result/a;Lb/a;)V
 
-    .line 9
+    .line 10
     iget-object p4, v1, Landroidx/activity/result/ActivityResultRegistry$d;->a:Landroidx/lifecycle/f;
 
     invoke-virtual {p4, v0}, Landroidx/lifecycle/f;->a(Landroidx/lifecycle/i;)V
 
-    .line 10
+    .line 11
     iget-object p4, v1, Landroidx/activity/result/ActivityResultRegistry$d;->b:Ljava/util/ArrayList;
 
     invoke-virtual {p4, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 11
+    .line 12
     iget-object p4, p0, Landroidx/activity/result/ActivityResultRegistry;->d:Ljava/util/Map;
 
     invoke-interface {p4, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 12
+    .line 13
     new-instance p4, Landroidx/activity/result/ActivityResultRegistry$a;
 
     invoke-direct {p4, p0, p1, p2, p3}, Landroidx/activity/result/ActivityResultRegistry$a;-><init>(Landroidx/activity/result/ActivityResultRegistry;Ljava/lang/String;ILb/a;)V
 
     return-object p4
 
-    .line 13
-    :cond_1
+    .line 14
+    :cond_2
     new-instance p1, Ljava/lang/IllegalStateException;
 
     new-instance p3, Ljava/lang/StringBuilder;
@@ -360,10 +371,10 @@
 
     invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 14
+    .line 15
     iget-object p2, v1, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
-    .line 15
+    .line 16
     invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     const-string p2, ". LifecycleOwners must call register before they are STARTED."
@@ -454,10 +465,10 @@
     invoke-virtual {v2, p1}, Landroid/os/Bundle;->remove(Ljava/lang/String;)V
 
     .line 9
-    iget v2, v1, Landroidx/activity/result/ActivityResult;->a:I
+    iget v2, v1, Landroidx/activity/result/ActivityResult;->g:I
 
     .line 10
-    iget-object v1, v1, Landroidx/activity/result/ActivityResult;->b:Landroid/content/Intent;
+    iget-object v1, v1, Landroidx/activity/result/ActivityResult;->h:Landroid/content/Intent;
 
     .line 11
     invoke-virtual {p2, v2, v1}, Lb/a;->c(ILandroid/content/Intent;)Ljava/lang/Object;
@@ -606,7 +617,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Landroid/support/v4/media/a;->b(Ljava/lang/Object;)V
+    invoke-static {v0}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
 
     .line 8
     iget-object v0, p0, Landroidx/activity/result/ActivityResultRegistry;->g:Ljava/util/Map;
@@ -631,7 +642,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Landroid/support/v4/media/a;->b(Ljava/lang/Object;)V
+    invoke-static {v0}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
 
     .line 12
     iget-object v0, p0, Landroidx/activity/result/ActivityResultRegistry;->h:Landroid/os/Bundle;

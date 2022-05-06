@@ -3,93 +3,57 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lj3/bv0;
+.implements Lj3/ed0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
+        "<S::",
+        "Lj3/cd0<",
+        "*>;>",
         "Ljava/lang/Object;",
-        "Lj3/bv0<",
-        "Lj3/ta0;",
-        ">;"
+        "Lj3/ed0<",
+        "TS;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lj3/fv0;
+.field public final a:Ljava/util/concurrent/atomic/AtomicReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lj3/fv0<",
-            "Lj3/c6;",
-            ">;"
+            "Ljava/util/concurrent/atomic/AtomicReference<",
+            "Lj3/wa0<",
+            "TS;>;>;"
         }
     .end annotation
 .end field
 
-.field public final b:Lj3/fv0;
+.field public final b:Lk2/c;
+
+.field public final c:Lj3/ed0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lj3/fv0<",
-            "Ljava/util/concurrent/ScheduledExecutorService;",
-            ">;"
+            "Lj3/ed0<",
+            "TS;>;"
         }
     .end annotation
 .end field
 
-.field public final c:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/qa;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final d:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Landroid/content/pm/ApplicationInfo;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final e:Lj3/fv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lj3/fv0<",
-            "Lj3/pg0;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final d:J
 
 
 # direct methods
-.method public constructor <init>(Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;)V
-    .locals 0
+.method public constructor <init>(Lj3/ed0;JLk2/c;)V
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lj3/fv0<",
-            "Lj3/c6;",
-            ">;",
-            "Lj3/fv0<",
-            "Ljava/util/concurrent/ScheduledExecutorService;",
-            ">;",
-            "Lj3/fv0<",
-            "Lj3/qa;",
-            ">;",
-            "Lj3/fv0<",
-            "Landroid/content/pm/ApplicationInfo;",
-            ">;",
-            "Lj3/fv0<",
-            "Lj3/pg0;",
-            ">;)V"
+            "Lj3/ed0<",
+            "TS;>;J",
+            "Lk2/c;",
+            ")V"
         }
     .end annotation
 
@@ -97,129 +61,94 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj3/xa0;->a:Lj3/fv0;
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    iput-object v0, p0, Lj3/xa0;->a:Ljava/util/concurrent/atomic/AtomicReference;
 
     .line 3
-    iput-object p2, p0, Lj3/xa0;->b:Lj3/fv0;
+    iput-object p4, p0, Lj3/xa0;->b:Lk2/c;
 
     .line 4
-    iput-object p3, p0, Lj3/xa0;->c:Lj3/fv0;
+    iput-object p1, p0, Lj3/xa0;->c:Lj3/ed0;
 
     .line 5
-    iput-object p4, p0, Lj3/xa0;->d:Lj3/fv0;
-
-    .line 6
-    iput-object p5, p0, Lj3/xa0;->e:Lj3/fv0;
+    iput-wide p2, p0, Lj3/xa0;->d:J
 
     return-void
 .end method
 
-.method public static a(Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;)Lj3/xa0;
-    .locals 7
+
+# virtual methods
+.method public final a()Lj3/im0;
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Lj3/fv0<",
-            "Lj3/c6;",
-            ">;",
-            "Lj3/fv0<",
-            "Ljava/util/concurrent/ScheduledExecutorService;",
-            ">;",
-            "Lj3/fv0<",
-            "Lj3/qa;",
-            ">;",
-            "Lj3/fv0<",
-            "Landroid/content/pm/ApplicationInfo;",
-            ">;",
-            "Lj3/fv0<",
-            "Lj3/pg0;",
-            ">;)",
-            "Lj3/xa0;"
+            "()",
+            "Lj3/im0<",
+            "TS;>;"
         }
     .end annotation
 
     .line 1
-    new-instance v6, Lj3/xa0;
+    iget-object v0, p0, Lj3/xa0;->a:Ljava/util/concurrent/atomic/AtomicReference;
 
-    move-object v0, v6
-
-    move-object v1, p0
-
-    move-object v2, p1
-
-    move-object v3, p2
-
-    move-object v4, p3
-
-    move-object v5, p4
-
-    invoke-direct/range {v0 .. v5}, Lj3/xa0;-><init>(Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;Lj3/fv0;)V
-
-    return-object v6
-.end method
-
-
-# virtual methods
-.method public final synthetic get()Ljava/lang/Object;
-    .locals 7
-
-    .line 1
-    iget-object v0, p0, Lj3/xa0;->a:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    move-object v2, v0
+    check-cast v0, Lj3/wa0;
 
-    check-cast v2, Lj3/c6;
-
-    iget-object v0, p0, Lj3/xa0;->b:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v3, v0
-
-    check-cast v3, Ljava/util/concurrent/ScheduledExecutorService;
-
-    iget-object v0, p0, Lj3/xa0;->c:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v4, v0
-
-    check-cast v4, Lj3/qa;
-
-    iget-object v0, p0, Lj3/xa0;->d:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v5, v0
-
-    check-cast v5, Landroid/content/pm/ApplicationInfo;
-
-    iget-object v0, p0, Lj3/xa0;->e:Lj3/fv0;
-
-    invoke-interface {v0}, Lj3/fv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v6, v0
-
-    check-cast v6, Lj3/pg0;
+    if-eqz v0, :cond_1
 
     .line 2
-    new-instance v0, Lj3/ta0;
+    iget-wide v1, v0, Lj3/wa0;->b:J
 
-    move-object v1, v0
+    iget-object v3, v0, Lj3/wa0;->c:Lk2/c;
 
-    invoke-direct/range {v1 .. v6}, Lj3/ta0;-><init>(Lj3/c6;Ljava/util/concurrent/ScheduledExecutorService;Lj3/qa;Landroid/content/pm/ApplicationInfo;Lj3/pg0;)V
+    invoke-interface {v3}, Lk2/c;->b()J
+
+    move-result-wide v3
+
+    cmp-long v5, v1, v3
+
+    if-gez v5, :cond_0
+
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    :goto_0
+    if-eqz v1, :cond_2
+
+    .line 3
+    :cond_1
+    new-instance v0, Lj3/wa0;
+
+    iget-object v1, p0, Lj3/xa0;->c:Lj3/ed0;
+
+    invoke-interface {v1}, Lj3/ed0;->a()Lj3/im0;
+
+    move-result-object v1
+
+    iget-wide v2, p0, Lj3/xa0;->d:J
+
+    iget-object v4, p0, Lj3/xa0;->b:Lk2/c;
+
+    invoke-direct {v0, v1, v2, v3, v4}, Lj3/wa0;-><init>(Lj3/im0;JLk2/c;)V
+
+    .line 4
+    iget-object v1, p0, Lj3/xa0;->a:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v1, v0}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
+
+    .line 5
+    :cond_2
+    iget-object v0, v0, Lj3/wa0;->a:Lj3/im0;
 
     return-object v0
 .end method

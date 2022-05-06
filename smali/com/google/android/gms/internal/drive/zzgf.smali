@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public final a:Landroid/os/ParcelFileDescriptor;
+.field public final g:Landroid/os/ParcelFileDescriptor;
 
-.field public final b:Landroid/os/IBinder;
+.field public final h:Landroid/os/IBinder;
 
-.field public final h:Ljava/lang/String;
+.field public final i:Ljava/lang/String;
 
 
 # direct methods
@@ -43,13 +43,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzgf;->a:Landroid/os/ParcelFileDescriptor;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzgf;->g:Landroid/os/ParcelFileDescriptor;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/drive/zzgf;->b:Landroid/os/IBinder;
+    iput-object p2, p0, Lcom/google/android/gms/internal/drive/zzgf;->h:Landroid/os/IBinder;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/drive/zzgf;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/internal/drive/zzgf;->i:Ljava/lang/String;
 
     return-void
 .end method
@@ -71,7 +71,7 @@
     const/4 v1, 0x2
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzgf;->a:Landroid/os/ParcelFileDescriptor;
+    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzgf;->g:Landroid/os/ParcelFileDescriptor;
 
     const/4 v3, 0x0
 
@@ -80,14 +80,14 @@
     const/4 p2, 0x3
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzgf;->b:Landroid/os/IBinder;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzgf;->h:Landroid/os/IBinder;
 
     invoke-static {p1, p2, v1, v3}, Ld2/b;->f(Landroid/os/Parcel;ILandroid/os/IBinder;Z)V
 
     const/4 p2, 0x4
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzgf;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzgf;->i:Ljava/lang/String;
 
     invoke-static {p1, p2, v1, v3}, Ld2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 

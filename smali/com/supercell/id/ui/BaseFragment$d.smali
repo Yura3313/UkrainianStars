@@ -15,11 +15,11 @@
 
 
 # virtual methods
-.method public abstract a()Lse/h0;
+.method public abstract a()Lse/f0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lse/h0<",
+            "Lse/f0<",
             "*>;"
         }
     .end annotation

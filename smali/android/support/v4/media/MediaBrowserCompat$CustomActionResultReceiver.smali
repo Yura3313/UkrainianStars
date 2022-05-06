@@ -70,9 +70,9 @@
     .line 3
     iget-object p1, p0, Landroid/support/v4/media/MediaBrowserCompat$CustomActionResultReceiver;->mExtras:Landroid/os/Bundle;
 
-    invoke-static {p1}, Landroid/support/v4/media/a;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
 
-    invoke-static {p2}, Landroid/support/v4/media/a;->b(Ljava/lang/Object;)V
+    invoke-static {p2}, Landroid/support/v4/media/a;->c(Ljava/lang/Object;)V
 
     goto :goto_0
 

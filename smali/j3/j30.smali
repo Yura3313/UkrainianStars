@@ -7,24 +7,24 @@
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/internal/ads/zzcpj;
+.field public final a:Lj3/im0;
 
-.field public final b:Lj3/yl0;
+.field public final b:Lj3/im0;
 
-.field public final c:Lj3/yl0;
+.field public final c:Lj3/im0;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzcpj;Lj3/yl0;Lj3/yl0;)V
+.method public constructor <init>(Lj3/im0;Lj3/im0;Lj3/im0;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj3/j30;->a:Lcom/google/android/gms/internal/ads/zzcpj;
+    iput-object p1, p0, Lj3/j30;->a:Lj3/im0;
 
-    iput-object p2, p0, Lj3/j30;->b:Lj3/yl0;
+    iput-object p2, p0, Lj3/j30;->b:Lj3/im0;
 
-    iput-object p3, p0, Lj3/j30;->c:Lj3/yl0;
+    iput-object p3, p0, Lj3/j30;->c:Lj3/im0;
 
     return-void
 .end method
@@ -32,58 +32,38 @@
 
 # virtual methods
 .method public final call()Ljava/lang/Object;
-    .locals 5
-
-    iget-object v0, p0, Lj3/j30;->a:Lcom/google/android/gms/internal/ads/zzcpj;
-
-    iget-object v1, p0, Lj3/j30;->b:Lj3/yl0;
-
-    iget-object v2, p0, Lj3/j30;->c:Lj3/yl0;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .locals 4
 
     .line 1
-    invoke-interface {v1}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
+    iget-object v0, p0, Lj3/j30;->a:Lj3/im0;
 
-    move-result-object v3
+    iget-object v1, p0, Lj3/j30;->b:Lj3/im0;
 
-    check-cast v3, Lj3/k8;
+    iget-object v2, p0, Lj3/j30;->c:Lj3/im0;
 
     .line 2
-    iget-object v3, v3, Lj3/k8;->h:Ljava/lang/String;
+    new-instance v3, Lj3/q30;
 
     .line 3
+    invoke-interface {v0}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lj3/w30;
+
+    invoke-interface {v1}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/json/JSONObject;
+
     invoke-interface {v2}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Lorg/json/JSONObject;
+    check-cast v2, Lj3/m8;
 
-    .line 4
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/zzcpj;->k:Ljava/util/HashMap;
+    invoke-direct {v3, v0, v1, v2}, Lj3/q30;-><init>(Lj3/w30;Lorg/json/JSONObject;Lj3/m8;)V
 
-    new-instance v4, Lj3/n30;
-
-    invoke-interface {v1}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lj3/k8;
-
-    invoke-direct {v4, v1, v2}, Lj3/n30;-><init>(Lj3/k8;Lorg/json/JSONObject;)V
-
-    invoke-virtual {v0, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 5
-    new-instance v0, Ljava/io/ByteArrayInputStream;
-
-    sget-object v1, Lj3/kj0;->a:Ljava/nio/charset/Charset;
-
-    invoke-virtual {v3, v1}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/io/ByteArrayInputStream;-><init>([B)V
-
-    return-object v0
+    return-object v3
 .end method

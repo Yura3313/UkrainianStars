@@ -1,108 +1,148 @@
-.class public final synthetic Lj3/g60;
+.class public abstract Lj3/g60;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lj3/gl0;
 
-
-# instance fields
-.field public final a:Lj3/h60;
-
-.field public final b:Lj3/ng0;
-
-.field public final c:Lj3/eg0;
-
-.field public final d:Lj3/d40;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<K:",
+        "Ljava/lang/Object;",
+        "V:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Lj3/h60;Lj3/ng0;Lj3/eg0;Lj3/d40;)V
+.method public constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lj3/g60;->a:Lj3/h60;
-
-    iput-object p2, p0, Lj3/g60;->b:Lj3/ng0;
-
-    iput-object p3, p0, Lj3/g60;->c:Lj3/eg0;
-
-    iput-object p4, p0, Lj3/g60;->d:Lj3/d40;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(Ljava/lang/Object;)Lj3/yl0;
-    .locals 9
-
-    iget-object v0, p0, Lj3/g60;->a:Lj3/h60;
-
-    iget-object v1, p0, Lj3/g60;->b:Lj3/ng0;
-
-    iget-object v7, p0, Lj3/g60;->c:Lj3/eg0;
-
-    iget-object v2, p0, Lj3/g60;->d:Lj3/d40;
-
-    check-cast p1, Ljava/lang/Throwable;
+.method public static a(Ljava/lang/String;)Ljava/util/HashMap;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<K:",
+            "Ljava/lang/Object;",
+            "V:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/lang/String;",
+            ")",
+            "Ljava/util/HashMap<",
+            "TK;TV;>;"
+        }
+    .end annotation
 
     .line 1
-    iget-object v3, v0, Lj3/h60;->g:Lj3/c60;
+    :try_start_0
+    invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    iget-object p1, v1, Lj3/ng0;->b:Lj3/lg0;
+    move-result v0
 
-    iget-object v8, p1, Lj3/lg0;->b:Lj3/fg0;
+    if-nez v0, :cond_0
 
     .line 2
-    invoke-interface {v2, v1, v7}, Lj3/d40;->b(Lj3/ng0;Lj3/eg0;)Lj3/yl0;
-
-    move-result-object p1
-
-    iget v1, v7, Lj3/eg0;->L:I
-
-    int-to-long v1, v1
-
-    sget-object v4, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
-
-    iget-object v0, v0, Lj3/h60;->e:Ljava/util/concurrent/ScheduledExecutorService;
+    new-instance v0, Ljava/io/ByteArrayInputStream;
 
     .line 3
-    invoke-static {p1, v1, v2, v4, v0}, Lj3/ul0;->f(Lj3/yl0;JLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/ScheduledExecutorService;)Lj3/yl0;
+    invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
-    move-result-object p1
+    move-result-object p0
+
+    const/4 v1, 0x0
+
+    invoke-static {p0, v1}, Landroid/util/Base64;->decode([BI)[B
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Ljava/io/ByteArrayInputStream;-><init>([B)V
 
     .line 4
-    iget-object v0, v3, Lj3/c60;->a:Lk2/c;
+    new-instance p0, Ljava/io/ObjectInputStream;
 
-    invoke-interface {v0}, Lk2/c;->b()J
-
-    move-result-wide v5
+    invoke-direct {p0, v0}, Ljava/io/ObjectInputStream;-><init>(Ljava/io/InputStream;)V
 
     .line 5
-    iget-object v4, v7, Lj3/eg0;->v:Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
 
-    if-eqz v4, :cond_0
+    move-result-object p0
 
-    .line 6
-    new-instance v0, Lj3/e60;
+    check-cast p0, Ljava/util/HashMap;
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-object v2, v0
+    return-object p0
 
-    invoke-direct/range {v2 .. v8}, Lj3/e60;-><init>(Lj3/c60;Ljava/lang/String;JLj3/eg0;Lj3/fg0;)V
-
-    sget-object v1, Lj3/gd;->f:Lj3/am0;
-
-    .line 7
-    new-instance v2, Lj3/a4;
-
-    const/4 v3, 0x1
-
-    invoke-direct {v2, p1, v0, v3}, Lj3/a4;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
-
-    invoke-interface {p1, v2, v1}, Lj3/yl0;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
-
+    :catch_0
     :cond_0
-    return-object p1
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public abstract b()Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/HashMap<",
+            "TK;TV;>;"
+        }
+    .end annotation
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    :try_start_0
+    new-instance v0, Ljava/io/ByteArrayOutputStream;
+
+    invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
+
+    .line 2
+    new-instance v1, Ljava/io/ObjectOutputStream;
+
+    invoke-direct {v1, v0}, Ljava/io/ObjectOutputStream;-><init>(Ljava/io/OutputStream;)V
+
+    .line 3
+    invoke-virtual {p0}, Lj3/g60;->b()Ljava/util/HashMap;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
+
+    .line 4
+    invoke-virtual {v1}, Ljava/io/ObjectOutputStream;->close()V
+
+    .line 5
+    invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
+
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    const/4 v0, 0x0
+
+    return-object v0
 .end method

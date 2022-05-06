@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field public h:Z
+.field public i:Z
 
 
 # direct methods
@@ -63,7 +63,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Landroidx/appcompat/widget/SearchView$SavedState;->h:Z
+    iput-boolean p1, p0, Landroidx/appcompat/widget/SearchView$SavedState;->i:Z
 
     return-void
 .end method
@@ -85,7 +85,7 @@
     const-string v0, "SearchView.SavedState{"
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -104,11 +104,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Landroidx/appcompat/widget/SearchView$SavedState;->h:Z
+    iget-boolean v1, p0, Landroidx/appcompat/widget/SearchView$SavedState;->i:Z
 
     const-string v2, "}"
 
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/i;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/i;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -119,12 +119,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->a:Landroid/os/Parcelable;
+    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->g:Landroid/os/Parcelable;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
-    iget-boolean p2, p0, Landroidx/appcompat/widget/SearchView$SavedState;->h:Z
+    iget-boolean p2, p0, Landroidx/appcompat/widget/SearchView$SavedState;->i:Z
 
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 

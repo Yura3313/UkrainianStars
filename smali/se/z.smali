@@ -12,7 +12,7 @@
 
 
 # static fields
-.field public static final a:Lse/z$a;
+.field public static final g:Lse/z$a;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     invoke-direct {v0, v1}, Lse/z$a;-><init>(Lle/g;)V
 
-    sput-object v0, Lse/z;->a:Lse/z$a;
+    sput-object v0, Lse/z;->g:Lse/z$a;
 
     return-void
 .end method
@@ -47,7 +47,7 @@
 
     const/4 p1, 0x0
 
-    invoke-static {p1, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 

@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static final p:I
+.field public static final q:I
 
 
 # instance fields
-.field public final a:Ljava/util/List;
+.field public final g:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -29,11 +29,11 @@
     .end annotation
 .end field
 
-.field public final b:Lcom/google/android/material/button/MaterialButtonToggleGroup$c;
+.field public final h:Lcom/google/android/material/button/MaterialButtonToggleGroup$c;
 
-.field public final h:Lcom/google/android/material/button/MaterialButtonToggleGroup$f;
+.field public final i:Lcom/google/android/material/button/MaterialButtonToggleGroup$f;
 
-.field public final i:Ljava/util/LinkedHashSet;
+.field public final j:Ljava/util/LinkedHashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/LinkedHashSet<",
@@ -43,7 +43,7 @@
     .end annotation
 .end field
 
-.field public final j:Ljava/util/Comparator;
+.field public final k:Ljava/util/Comparator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Comparator<",
@@ -53,15 +53,15 @@
     .end annotation
 .end field
 
-.field public k:[Ljava/lang/Integer;
-
-.field public l:Z
+.field public l:[Ljava/lang/Integer;
 
 .field public m:Z
 
 .field public n:Z
 
-.field public o:I
+.field public o:Z
+
+.field public p:I
 
 
 # direct methods
@@ -74,7 +74,7 @@
     .line 2
     sget v0, Lcom/google/android/material/R$style;->Widget_MaterialComponents_MaterialButtonToggleGroup:I
 
-    sput v0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->p:I
+    sput v0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->q:I
 
     return-void
 .end method
@@ -94,7 +94,7 @@
     .locals 6
 
     .line 2
-    sget v4, Lcom/google/android/material/button/MaterialButtonToggleGroup;->p:I
+    sget v4, Lcom/google/android/material/button/MaterialButtonToggleGroup;->q:I
 
     invoke-static {p1, p2, p3, v4}, Lt4/a;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
 
@@ -107,7 +107,7 @@
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->a:Ljava/util/List;
+    iput-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->g:Ljava/util/List;
 
     .line 4
     new-instance p1, Lcom/google/android/material/button/MaterialButtonToggleGroup$c;
@@ -116,33 +116,33 @@
 
     invoke-direct {p1, p0, v0}, Lcom/google/android/material/button/MaterialButtonToggleGroup$c;-><init>(Lcom/google/android/material/button/MaterialButtonToggleGroup;Lcom/google/android/material/button/MaterialButtonToggleGroup$a;)V
 
-    iput-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->b:Lcom/google/android/material/button/MaterialButtonToggleGroup$c;
+    iput-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->h:Lcom/google/android/material/button/MaterialButtonToggleGroup$c;
 
     .line 5
     new-instance p1, Lcom/google/android/material/button/MaterialButtonToggleGroup$f;
 
     invoke-direct {p1, p0, v0}, Lcom/google/android/material/button/MaterialButtonToggleGroup$f;-><init>(Lcom/google/android/material/button/MaterialButtonToggleGroup;Lcom/google/android/material/button/MaterialButtonToggleGroup$a;)V
 
-    iput-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->h:Lcom/google/android/material/button/MaterialButtonToggleGroup$f;
+    iput-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->i:Lcom/google/android/material/button/MaterialButtonToggleGroup$f;
 
     .line 6
     new-instance p1, Ljava/util/LinkedHashSet;
 
     invoke-direct {p1}, Ljava/util/LinkedHashSet;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->i:Ljava/util/LinkedHashSet;
+    iput-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->j:Ljava/util/LinkedHashSet;
 
     .line 7
     new-instance p1, Lcom/google/android/material/button/MaterialButtonToggleGroup$a;
 
     invoke-direct {p1, p0}, Lcom/google/android/material/button/MaterialButtonToggleGroup$a;-><init>(Lcom/google/android/material/button/MaterialButtonToggleGroup;)V
 
-    iput-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->j:Ljava/util/Comparator;
+    iput-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->k:Ljava/util/Comparator;
 
     const/4 p1, 0x0
 
     .line 8
-    iput-boolean p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->l:Z
+    iput-boolean p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->m:Z
 
     .line 9
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
@@ -159,7 +159,7 @@
     move v3, p3
 
     .line 11
-    invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/j;->d(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
+    invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/l;->d(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object p2
 
@@ -184,7 +184,7 @@
 
     move-result p3
 
-    iput p3, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->o:I
+    iput p3, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->p:I
 
     .line 17
     sget p3, Lcom/google/android/material/R$styleable;->MaterialButtonToggleGroup_selectionRequired:I
@@ -194,7 +194,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->n:Z
+    iput-boolean p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->o:Z
 
     const/4 p1, 0x1
 
@@ -205,7 +205,7 @@
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 21
-    invoke-static {p0, p1}, Lf0/s;->D(Landroid/view/View;I)V
+    invoke-static {p0, p1}, Lf0/r;->D(Landroid/view/View;I)V
 
     return-void
 .end method
@@ -321,7 +321,7 @@
     .locals 1
 
     .line 1
-    iput p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->o:I
+    iput p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->p:I
 
     const/4 v0, 0x1
 
@@ -344,7 +344,7 @@
     if-ne v0, v1, :cond_0
 
     .line 2
-    sget-object v0, Lf0/s;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 
     .line 3
     invoke-static {}, Landroid/view/View;->generateViewId()I
@@ -375,15 +375,15 @@
     invoke-virtual {p1, v0}, Lcom/google/android/material/button/MaterialButton;->setCheckable(Z)V
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->b:Lcom/google/android/material/button/MaterialButtonToggleGroup$c;
+    iget-object v1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->h:Lcom/google/android/material/button/MaterialButtonToggleGroup$c;
 
     .line 5
-    iget-object v2, p1, Lcom/google/android/material/button/MaterialButton;->i:Ljava/util/LinkedHashSet;
+    iget-object v2, p1, Lcom/google/android/material/button/MaterialButton;->j:Ljava/util/LinkedHashSet;
 
     invoke-virtual {v2, v1}, Ljava/util/LinkedHashSet;->add(Ljava/lang/Object;)Z
 
     .line 6
-    iget-object v1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->h:Lcom/google/android/material/button/MaterialButtonToggleGroup$f;
+    iget-object v1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->i:Lcom/google/android/material/button/MaterialButtonToggleGroup$f;
 
     invoke-virtual {p1, v1}, Lcom/google/android/material/button/MaterialButton;->setOnPressedChangeListenerInternal(Lcom/google/android/material/button/MaterialButton$b;)V
 
@@ -624,7 +624,7 @@
     move-result-object p2
 
     .line 10
-    iget-object p3, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->a:Ljava/util/List;
+    iget-object p3, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->g:Ljava/util/List;
 
     new-instance v0, Lcom/google/android/material/button/MaterialButtonToggleGroup$d;
 
@@ -651,7 +651,7 @@
 
     invoke-direct {p2, p0}, Lcom/google/android/material/button/MaterialButtonToggleGroup$b;-><init>(Lcom/google/android/material/button/MaterialButtonToggleGroup;)V
 
-    invoke-static {p1, p2}, Lf0/s;->A(Landroid/view/View;Lf0/a;)V
+    invoke-static {p1, p2}, Lf0/r;->A(Landroid/view/View;Lf0/a;)V
 
     return-void
 .end method
@@ -660,7 +660,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->i:Ljava/util/LinkedHashSet;
+    iget-object v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->j:Ljava/util/LinkedHashSet;
 
     invoke-virtual {v0}, Ljava/util/LinkedHashSet;->iterator()Ljava/util/Iterator;
 
@@ -735,7 +735,7 @@
     .line 1
     new-instance v0, Ljava/util/TreeMap;
 
-    iget-object v1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->j:Ljava/util/Comparator;
+    iget-object v1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->k:Ljava/util/Comparator;
 
     invoke-direct {v0, v1}, Ljava/util/TreeMap;-><init>(Ljava/util/Comparator;)V
 
@@ -780,7 +780,7 @@
 
     check-cast v0, [Ljava/lang/Integer;
 
-    iput-object v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->k:[Ljava/lang/Integer;
+    iput-object v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->l:[Ljava/lang/Integer;
 
     .line 5
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->dispatchDraw(Landroid/graphics/Canvas;)V
@@ -804,7 +804,7 @@
     const/4 v0, 0x1
 
     .line 3
-    iput-boolean v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->l:Z
+    iput-boolean v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->m:Z
 
     .line 4
     check-cast p1, Lcom/google/android/material/button/MaterialButton;
@@ -814,7 +814,7 @@
     const/4 p1, 0x0
 
     .line 5
-    iput-boolean p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->l:Z
+    iput-boolean p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->m:Z
 
     :cond_0
     return-void
@@ -829,7 +829,7 @@
     move-result-object v0
 
     .line 2
-    iget-boolean v1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->n:Z
+    iget-boolean v1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->o:Z
 
     const/4 v2, 0x1
 
@@ -847,7 +847,7 @@
     invoke-virtual {p0, p1, v2}, Lcom/google/android/material/button/MaterialButtonToggleGroup;->e(IZ)V
 
     .line 4
-    iput p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->o:I
+    iput p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->p:I
 
     return v3
 
@@ -855,7 +855,7 @@
     if-eqz p2, :cond_1
 
     .line 5
-    iget-boolean p2, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->m:Z
+    iget-boolean p2, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->n:Z
 
     if-eqz p2, :cond_1
 
@@ -955,7 +955,7 @@
     invoke-direct {v7, v6}, Lr4/k$b;-><init>(Lr4/k;)V
 
     .line 8
-    iget-object v6, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->a:Ljava/util/List;
+    iget-object v6, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->g:Ljava/util/List;
 
     invoke-interface {v6, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -988,7 +988,7 @@
     if-eqz v8, :cond_4
 
     .line 10
-    invoke-static {p0}, Lcom/google/android/material/internal/n;->f(Landroid/view/View;)Z
+    invoke-static {p0}, Lcom/google/android/material/internal/p;->f(Landroid/view/View;)Z
 
     move-result v8
 
@@ -1044,7 +1044,7 @@
     if-eqz v8, :cond_7
 
     .line 14
-    invoke-static {p0}, Lcom/google/android/material/internal/n;->f(Landroid/view/View;)Z
+    invoke-static {p0}, Lcom/google/android/material/internal/p;->f(Landroid/view/View;)Z
 
     move-result v8
 
@@ -1163,11 +1163,11 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->m:Z
+    iget-boolean v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->n:Z
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->o:I
+    iget v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->p:I
 
     goto :goto_0
 
@@ -1240,7 +1240,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->k:[Ljava/lang/Integer;
+    iget-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->l:[Ljava/lang/Integer;
 
     if-eqz p1, :cond_1
 
@@ -1272,7 +1272,7 @@
     invoke-super {p0}, Landroid/widget/LinearLayout;->onFinishInflate()V
 
     .line 2
-    iget v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->o:I
+    iget v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->p:I
 
     const/4 v1, -0x1
 
@@ -1307,7 +1307,7 @@
     const/4 v1, 0x0
 
     .line 3
-    iget-boolean v2, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->m:Z
+    iget-boolean v2, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->n:Z
 
     const/4 v3, 0x1
 
@@ -1376,10 +1376,10 @@
 
     check-cast v0, Lcom/google/android/material/button/MaterialButton;
 
-    iget-object v1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->b:Lcom/google/android/material/button/MaterialButtonToggleGroup$c;
+    iget-object v1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->h:Lcom/google/android/material/button/MaterialButtonToggleGroup$c;
 
     .line 4
-    iget-object v2, v0, Lcom/google/android/material/button/MaterialButton;->i:Ljava/util/LinkedHashSet;
+    iget-object v2, v0, Lcom/google/android/material/button/MaterialButton;->j:Ljava/util/LinkedHashSet;
 
     invoke-virtual {v2, v1}, Ljava/util/LinkedHashSet;->remove(Ljava/lang/Object;)Z
 
@@ -1397,7 +1397,7 @@
     if-ltz p1, :cond_1
 
     .line 7
-    iget-object v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->g:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
@@ -1415,7 +1415,7 @@
     .locals 0
 
     .line 1
-    iput-boolean p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->n:Z
+    iput-boolean p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->o:Z
 
     return-void
 .end method
@@ -1441,17 +1441,17 @@
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->m:Z
+    iget-boolean v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->n:Z
 
     if-eq v0, p1, :cond_1
 
     .line 2
-    iput-boolean p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->m:Z
+    iput-boolean p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->n:Z
 
     const/4 p1, 0x1
 
     .line 3
-    iput-boolean p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->l:Z
+    iput-boolean p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->m:Z
 
     const/4 p1, 0x0
 
@@ -1486,7 +1486,7 @@
 
     .line 8
     :cond_0
-    iput-boolean p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->l:Z
+    iput-boolean p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup;->m:Z
 
     const/4 p1, -0x1
 

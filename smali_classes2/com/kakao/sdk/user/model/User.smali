@@ -358,7 +358,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/user/model/User;->properties:Ljava/util/Map;
 
-    invoke-static {v1, v3}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -368,7 +368,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/user/model/User;->kakaoAccount:Lcom/kakao/sdk/user/model/Account;
 
-    invoke-static {v1, v3}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -378,7 +378,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/user/model/User;->groupUserToken:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -388,7 +388,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/user/model/User;->connectedAt:Ljava/util/Date;
 
-    invoke-static {v1, v3}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -398,7 +398,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/user/model/User;->synchedAt:Ljava/util/Date;
 
-    invoke-static {v1, v3}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -408,7 +408,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/user/model/User;->hasSignedUp:Ljava/lang/Boolean;
 
-    invoke-static {v1, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ls3/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -622,7 +622,7 @@
 
     const-string v0, "User(id="
 
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -785,7 +785,7 @@
 
     if-eqz p2, :cond_3
 
-    invoke-static {p1, v0, p2}, Lsb/a;->a(Landroid/os/Parcel;ILjava/lang/Boolean;)V
+    invoke-static {p1, v0, p2}, Lj3/ap0;->e(Landroid/os/Parcel;ILjava/lang/Boolean;)V
 
     goto :goto_2
 
@@ -799,7 +799,7 @@
     const-string p1, "parcel"
 
     .line 1
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    invoke-static {p1}, Ls3/b;->h(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

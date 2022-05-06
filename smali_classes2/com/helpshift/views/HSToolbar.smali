@@ -11,7 +11,7 @@
     invoke-direct {p0, p1, p2}, Landroidx/appcompat/widget/Toolbar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 2
-    invoke-static {p0}, Lmb/a;->a(Landroid/view/View;)V
+    invoke-static {p0}, Lkb/a;->a(Landroid/view/View;)V
 
     return-void
 .end method
@@ -23,7 +23,7 @@
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/Toolbar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 4
-    invoke-static {p0}, Lmb/a;->a(Landroid/view/View;)V
+    invoke-static {p0}, Lkb/a;->a(Landroid/view/View;)V
 
     return-void
 .end method

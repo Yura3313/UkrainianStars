@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public k:Ljava/lang/String;
+.field public l:Ljava/lang/String;
 
-.field public l:Z
+.field public m:Z
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Ll7/b;Ljava/lang/String;ZLn7/b;Ll7/c;Ll7/e;Ll7/d;)V
+.method public constructor <init>(Landroid/content/Context;Lj3/h70;Ljava/lang/String;ZLn7/b;Ll7/a;Ll7/c;Ll7/b;)V
     .locals 6
 
     move-object v0, p0
@@ -26,13 +26,13 @@
     move-object v5, p8
 
     .line 1
-    invoke-direct/range {v0 .. v5}, Lm7/g;-><init>(Ll7/b;Ln7/b;Ll7/c;Ll7/e;Ll7/d;)V
+    invoke-direct/range {v0 .. v5}, Lm7/g;-><init>(Lj3/h70;Ln7/b;Ll7/a;Ll7/c;Ll7/b;)V
 
     .line 2
-    iput-object p3, p0, Lm7/b;->k:Ljava/lang/String;
+    iput-object p3, p0, Lm7/b;->l:Ljava/lang/String;
 
     .line 3
-    iput-boolean p4, p0, Lm7/b;->l:Z
+    iput-boolean p4, p0, Lm7/b;->m:Z
 
     return-void
 .end method
@@ -43,7 +43,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lm7/b;->k:Ljava/lang/String;
+    iget-object v0, p0, Lm7/b;->l:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -62,7 +62,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lm7/b;->k:Ljava/lang/String;
+    iget-object v0, p0, Lm7/b;->l:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/os/Environment;->getExternalStoragePublicDirectory(Ljava/lang/String;)Ljava/io/File;
 
@@ -75,12 +75,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lm7/b;->k:Ljava/lang/String;
+    iget-object v0, p0, Lm7/b;->l:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-boolean v0, p0, Lm7/b;->l:Z
+    iget-boolean v0, p0, Lm7/b;->m:Z
 
     return v0
 

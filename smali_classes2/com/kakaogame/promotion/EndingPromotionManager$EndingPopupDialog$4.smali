@@ -3,7 +3,7 @@
 .source "EndingPromotionManager.java"
 
 # interfaces
-.implements Ljc/a;
+.implements Lgc/a;
 
 
 # annotations
@@ -83,7 +83,7 @@
     return-void
 .end method
 
-.method public onLoadingFailed(Ljava/lang/String;Landroid/view/View;Ldc/b;)V
+.method public onLoadingFailed(Ljava/lang/String;Landroid/view/View;Lac/b;)V
     .locals 0
 
     .line 1
@@ -116,7 +116,7 @@
     const-string v0, "EndingPopupDialog"
 
     .line 1
-    invoke-static {p2, p1, v0}, Lcom/kakaogame/c;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p2, p1, v0}, Lcom/kakaogame/c;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method

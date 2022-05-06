@@ -14,7 +14,7 @@
     .end annotation
 .end field
 
-.field public static final b:Lw1/b;
+.field public static final b:Lw1/a;
 
 
 # direct methods
@@ -45,7 +45,7 @@
 
     invoke-direct {v0}, Lx1/g;-><init>()V
 
-    sput-object v0, Lr1/a;->b:Lw1/b;
+    sput-object v0, Lr1/a;->b:Lw1/a;
 
     return-void
 .end method

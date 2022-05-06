@@ -48,7 +48,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Ll5/c;->t()I
+    invoke-virtual {p0}, Ll5/c;->s()I
 
     move-result v0
 
@@ -57,7 +57,7 @@
     if-lt v0, v1, :cond_1
 
     .line 2
-    invoke-virtual {p0}, Ll5/c;->t()I
+    invoke-virtual {p0}, Ll5/c;->s()I
 
     move-result p0
 
@@ -124,7 +124,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Ll5/v0$c;->SYMMETRIC:Ll5/v0$c;
+    sget-object v0, Ll5/v0$c;->i:Ll5/v0$c;
 
     return-object v0
 .end method
@@ -142,7 +142,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Ll5/a;->z(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/a;
+    invoke-static {p1, v0}, Ll5/a;->y(Lm5/c;Lcom/google/crypto/tink/shaded/protobuf/j;)Ll5/a;
 
     move-result-object p1
 
@@ -161,7 +161,7 @@
     check-cast p1, Ll5/a;
 
     .line 2
-    invoke-virtual {p1}, Ll5/a;->x()I
+    invoke-virtual {p1}, Ll5/a;->w()I
 
     move-result v0
 
@@ -170,7 +170,7 @@
     invoke-static {v0, v1}, Lp5/m0;->e(II)V
 
     .line 3
-    invoke-virtual {p1}, Ll5/a;->v()Lm5/c;
+    invoke-virtual {p1}, Ll5/a;->u()Lm5/c;
 
     move-result-object v0
 
@@ -183,7 +183,7 @@
     if-ne v0, v1, :cond_0
 
     .line 4
-    invoke-virtual {p1}, Ll5/a;->w()Ll5/c;
+    invoke-virtual {p1}, Ll5/a;->v()Ll5/c;
 
     move-result-object p1
 

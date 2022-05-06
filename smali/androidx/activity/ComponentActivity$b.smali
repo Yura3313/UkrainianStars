@@ -185,21 +185,21 @@
 
     .line 15
     :try_start_0
-    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->r()Landroid/content/IntentSender;
+    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->o()Landroid/content/IntentSender;
 
     move-result-object v1
 
     .line 16
-    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->h()Landroid/content/Intent;
+    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->b()Landroid/content/Intent;
 
     move-result-object v3
 
-    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->j()I
+    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->i()I
 
     move-result v4
 
     .line 17
-    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->m()I
+    invoke-virtual {p2}, Landroidx/activity/result/IntentSenderRequest;->k()I
 
     move-result v5
 

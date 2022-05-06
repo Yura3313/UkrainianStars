@@ -20,14 +20,14 @@
     value = {
         "Lle/j;",
         "Lke/a<",
-        "Lvd/i;",
+        "Lud/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;
+.field public static final g:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;->a:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;
+    sput-object v0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;->g:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;
 
     return-void
 .end method
@@ -59,9 +59,9 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lvd/i;
+    new-instance v0, Lud/i;
 
-    invoke-direct {v0}, Lvd/i;-><init>()V
+    invoke-direct {v0}, Lud/i;-><init>()V
 
     return-object v0
 .end method

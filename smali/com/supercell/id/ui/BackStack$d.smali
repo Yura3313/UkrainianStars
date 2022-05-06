@@ -18,10 +18,10 @@
 
 
 # instance fields
-.field public final a:Lse/h0;
+.field public final a:Lse/f0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lse/h0<",
+            "Lse/f0<",
             "*>;"
         }
     .end annotation
@@ -36,32 +36,32 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sget-object v0, Lbe/n;->a:Lbe/n;
+    sget-object v0, Lae/i;->a:Lae/i;
 
     .line 3
-    invoke-static {v0}, Lcom/android/billingclient/api/w;->a(Ljava/lang/Object;)Lse/o;
+    invoke-static {v0}, Lp5/h;->a(Ljava/lang/Object;)Lse/o;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/supercell/id/ui/BackStack$d;->a:Lse/h0;
+    iput-object v0, p0, Lcom/supercell/id/ui/BackStack$d;->a:Lse/f0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Lse/h0;
+.method public a()Lse/f0;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lse/h0<",
+            "Lse/f0<",
             "*>;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$d;->a:Lse/h0;
+    iget-object v0, p0, Lcom/supercell/id/ui/BackStack$d;->a:Lse/f0;
 
     return-object v0
 .end method

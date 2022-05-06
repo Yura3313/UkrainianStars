@@ -40,10 +40,10 @@
     .line 1
     iget-object p1, p0, Lcom/supercell/id/ui/MainActivity$f;->a:Lcom/supercell/id/ui/MainActivity;
 
-    sget-object p2, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object p2, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 2
-    invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->m()Lsc/d;
+    invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->n()Lpc/c;
 
     move-result-object p1
 
@@ -60,7 +60,7 @@
 
     const-string p4, "head"
 
-    invoke-static {p2, p4}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p2}, Landroid/widget/FrameLayout;->getPaddingLeft()I
 
@@ -74,7 +74,7 @@
 
     check-cast p5, Landroid/widget/FrameLayout;
 
-    invoke-static {p5, p4}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p5, p4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p5}, Landroid/widget/FrameLayout;->getPaddingTop()I
 
@@ -88,7 +88,7 @@
 
     check-cast p6, Landroid/widget/FrameLayout;
 
-    invoke-static {p6, p4}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p6, p4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p6}, Landroid/widget/FrameLayout;->getPaddingRight()I
 
@@ -102,41 +102,41 @@
 
     check-cast p3, Landroid/widget/FrameLayout;
 
-    invoke-static {p3, p4}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, p4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p3}, Landroid/widget/FrameLayout;->getPaddingBottom()I
 
     move-result p3
 
     .line 4
-    iget p4, p1, Lsc/d;->s:I
+    iget p4, p1, Lpc/c;->s:I
 
     if-ne p2, p4, :cond_0
 
-    iget p4, p1, Lsc/d;->q:I
+    iget p4, p1, Lpc/c;->q:I
 
     if-ne p5, p4, :cond_0
 
-    iget p4, p1, Lsc/d;->t:I
+    iget p4, p1, Lpc/c;->t:I
 
     if-ne p6, p4, :cond_0
 
-    iget p4, p1, Lsc/d;->r:I
+    iget p4, p1, Lpc/c;->r:I
 
     if-eq p3, p4, :cond_1
 
     .line 5
     :cond_0
-    iput p2, p1, Lsc/d;->s:I
+    iput p2, p1, Lpc/c;->s:I
 
     .line 6
-    iput p5, p1, Lsc/d;->q:I
+    iput p5, p1, Lpc/c;->q:I
 
     .line 7
-    iput p6, p1, Lsc/d;->t:I
+    iput p6, p1, Lpc/c;->t:I
 
     .line 8
-    iput p3, p1, Lsc/d;->r:I
+    iput p3, p1, Lpc/c;->r:I
 
     .line 9
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
@@ -145,9 +145,9 @@
 
     const-string p3, "bounds"
 
-    invoke-static {p2, p3}, Ly4/x;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p3}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p1, p2}, Lsc/d;->p(Landroid/graphics/Rect;)V
+    invoke-virtual {p1, p2}, Lpc/c;->p(Landroid/graphics/Rect;)V
 
     :cond_1
     return-void

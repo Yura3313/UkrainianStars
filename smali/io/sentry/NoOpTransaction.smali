@@ -72,6 +72,14 @@
     return-object v0
 .end method
 
+.method public getData(Ljava/lang/String;)Ljava/lang/Object;
+    .locals 0
+
+    const/4 p1, 0x0
+
+    return-object p1
+.end method
+
 .method public getDescription()Ljava/lang/String;
     .locals 1
 
@@ -208,6 +216,12 @@
     return-object v0
 .end method
 
+.method public setData(Ljava/lang/String;Ljava/lang/Object;)V
+    .locals 0
+
+    return-void
+.end method
+
 .method public setDescription(Ljava/lang/String;)V
     .locals 0
 
@@ -301,6 +315,34 @@
     sget-object v3, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     invoke-direct {v0, v1, v2, v3}, Lio/sentry/SentryTraceHeader;-><init>(Lio/sentry/protocol/SentryId;Lio/sentry/SpanId;Ljava/lang/Boolean;)V
+
+    return-object v0
+.end method
+
+.method public toTraceStateHeader()Lio/sentry/TraceStateHeader;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lio/sentry/TraceStateHeader;
+
+    const-string v1, ""
+
+    invoke-direct {v0, v1}, Lio/sentry/TraceStateHeader;-><init>(Ljava/lang/String;)V
+
+    return-object v0
+.end method
+
+.method public traceState()Lio/sentry/TraceState;
+    .locals 3
+
+    .line 1
+    new-instance v0, Lio/sentry/TraceState;
+
+    sget-object v1, Lio/sentry/protocol/SentryId;->EMPTY_ID:Lio/sentry/protocol/SentryId;
+
+    const-string v2, ""
+
+    invoke-direct {v0, v1, v2}, Lio/sentry/TraceState;-><init>(Lio/sentry/protocol/SentryId;Ljava/lang/String;)V
 
     return-object v0
 .end method

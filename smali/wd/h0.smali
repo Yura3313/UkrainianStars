@@ -1,927 +1,545 @@
 .class public final Lwd/h0;
-.super Lwd/t;
-.source "ViewUtil.kt"
+.super Lle/j;
+.source "ProfileStorage.kt"
+
+# interfaces
+.implements Lke/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lle/j;",
+        "Lke/a<",
+        "Ljava/lang/Integer;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public b:Landroid/view/View;
+.field public final synthetic g:Lwd/z;
 
-.field public h:Landroid/widget/ScrollView;
-
-.field public i:Landroidx/core/widget/NestedScrollView;
-
-.field public j:Landroid/view/View;
-
-.field public k:Landroid/view/View;
-
-.field public l:Ljava/lang/Integer;
-
-.field public m:Ljava/lang/Integer;
-
-.field public n:Ljava/lang/Integer;
-
-.field public o:Ljava/lang/Integer;
-
-.field public final p:I
-
-.field public final q:Z
-
-.field public final r:I
+.field public final synthetic h:Lcom/supercell/id/model/IdProfile;
 
 
 # direct methods
-.method public constructor <init>(IZI)V
+.method public constructor <init>(Lwd/z;Lcom/supercell/id/model/IdProfile;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Lwd/t;-><init>()V
+    iput-object p1, p0, Lwd/h0;->g:Lwd/z;
 
-    iput p1, p0, Lwd/h0;->p:I
+    iput-object p2, p0, Lwd/h0;->h:Lcom/supercell/id/model/IdProfile;
 
-    iput-boolean p2, p0, Lwd/h0;->q:Z
+    const/4 p1, 0x0
 
-    iput p3, p0, Lwd/h0;->r:I
+    invoke-direct {p0, p1}, Lle/j;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Landroid/graphics/Rect;)V
-    .locals 13
-
-    if-eqz p1, :cond_1b
+.method public invoke()Ljava/lang/Object;
+    .locals 12
 
     .line 1
-    iget-object v0, p0, Lwd/h0;->j:Landroid/view/View;
-
-    if-eqz v0, :cond_1a
+    iget-object v0, p0, Lwd/h0;->g:Lwd/z;
 
     .line 2
-    iget-object v1, p0, Lwd/h0;->k:Landroid/view/View;
+    iget-object v0, v0, Lwd/z;->d:Landroid/content/Context;
 
-    if-eqz v1, :cond_1a
+    const/4 v1, 0x0
+
+    const-string v2, "IdProfiles"
 
     .line 3
-    iget-object v2, p0, Lwd/h0;->l:Ljava/lang/Integer;
-
-    if-eqz v2, :cond_1a
-
-    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
-
-    move-result v2
-
-    .line 4
-    iget-object v3, p0, Lwd/h0;->m:Ljava/lang/Integer;
-
-    if-eqz v3, :cond_1a
-
-    invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
-
-    move-result v3
-
-    .line 5
-    iget-object v4, p0, Lwd/h0;->n:Ljava/lang/Integer;
-
-    if-eqz v4, :cond_1a
-
-    invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
-
-    move-result v4
-
-    .line 6
-    iget-object v5, p0, Lwd/h0;->o:Ljava/lang/Integer;
-
-    if-eqz v5, :cond_1a
-
-    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
-
-    move-result v5
-
-    .line 7
-    iget-object v6, p0, Lwd/t;->a:Lcom/supercell/id/view/RootFrameLayout;
-
-    if-eqz v6, :cond_1a
-
-    .line 8
-    iget-boolean v7, p0, Lwd/h0;->q:Z
-
-    if-eqz v7, :cond_0
-
-    new-instance v7, Landroid/graphics/Rect;
-
-    invoke-direct {v7}, Landroid/graphics/Rect;-><init>()V
-
-    goto :goto_0
-
-    :cond_0
-    invoke-static {v6}, Lwd/f2;->b(Landroid/view/View;)Landroid/graphics/Rect;
-
-    move-result-object v7
-
-    .line 9
-    :goto_0
-    iget-boolean v8, p0, Lwd/h0;->q:Z
-
-    if-eqz v8, :cond_1
-
-    move-object v0, v7
-
-    goto :goto_1
-
-    :cond_1
-    invoke-static {v0}, Lwd/f2;->b(Landroid/view/View;)Landroid/graphics/Rect;
+    invoke-virtual {v0, v2, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v0
+
+    .line 4
+    iget-object v1, p0, Lwd/h0;->g:Lwd/z;
+
+    .line 5
+    iget-object v1, v1, Lwd/z;->e:Ljava/lang/String;
+
+    .line 6
+    iget-object v2, p0, Lwd/h0;->h:Lcom/supercell/id/model/IdProfile;
+
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 7
+    new-instance v3, Lorg/json/JSONObject;
+
+    invoke-direct {v3}, Lorg/json/JSONObject;-><init>()V
+
+    .line 8
+    iget-object v4, v2, Lcom/supercell/id/model/IdProfile;->i:Ljava/lang/String;
+
+    const-string v5, "scid"
+
+    invoke-virtual {v3, v5, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 9
+    iget-object v4, v2, Lcom/supercell/id/model/IdProfile;->j:Ljava/lang/String;
+
+    const-string v5, "changeAllowed"
+
+    if-eqz v4, :cond_0
+
     .line 10
-    :goto_1
-    sget-object v8, Lf0/s;->a:Ljava/util/WeakHashMap;
+    new-instance v6, Lorg/json/JSONObject;
+
+    invoke-direct {v6}, Lorg/json/JSONObject;-><init>()V
+
+    const-string v7, "name"
 
     .line 11
-    invoke-virtual {v6}, Landroid/view/View;->getLayoutDirection()I
-
-    move-result v8
-
-    const/4 v9, 0x1
-
-    const/4 v10, 0x0
-
-    if-ne v8, v9, :cond_2
-
-    const/4 v8, 0x1
-
-    goto :goto_2
-
-    :cond_2
-    const/4 v8, 0x0
-
-    :goto_2
-    if-eqz v8, :cond_3
-
-    const/16 v8, 0x20
-
-    goto :goto_3
-
-    :cond_3
-    const/16 v8, 0x10
+    invoke-virtual {v6, v7, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 12
-    :goto_3
-    invoke-virtual {v6}, Landroid/view/View;->getLayoutDirection()I
+    iget-object v4, v2, Lcom/supercell/id/model/IdProfile;->k:Ljava/util/Date;
 
-    move-result v6
+    invoke-virtual {v4}, Ljava/util/Date;->getTime()J
 
-    if-ne v6, v9, :cond_4
+    move-result-wide v8
 
-    const/4 v6, 0x1
-
-    goto :goto_4
-
-    :cond_4
-    const/4 v6, 0x0
-
-    :goto_4
-    if-eqz v6, :cond_5
-
-    const/16 v6, 0x8
-
-    goto :goto_5
-
-    :cond_5
-    const/4 v6, 0x4
+    invoke-virtual {v6, v5, v8, v9}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
     .line 13
-    :goto_5
-    iget v11, p0, Lwd/h0;->p:I
-
-    or-int/2addr v8, v11
-
-    if-ne v8, v11, :cond_6
-
-    const/4 v8, 0x1
-
-    goto :goto_6
-
-    :cond_6
-    const/4 v8, 0x0
-
-    :goto_6
-    if-eqz v8, :cond_9
-
-    iget v8, v7, Landroid/graphics/Rect;->left:I
-
-    iget v11, p1, Landroid/graphics/Rect;->left:I
-
-    add-int/2addr v8, v11
-
-    iget v12, v0, Landroid/graphics/Rect;->left:I
-
-    sub-int/2addr v8, v12
+    invoke-virtual {v3, v7, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 14
-    invoke-static {v8, v10}, Ly4/x;->g(II)I
+    :cond_0
+    iget-object v4, v2, Lcom/supercell/id/model/IdProfile;->l:Ljava/lang/String;
 
-    move-result v12
-
-    if-gez v12, :cond_7
-
-    goto :goto_7
-
-    :cond_7
-    invoke-static {v8, v11}, Ly4/x;->g(II)I
-
-    move-result v12
-
-    if-lez v12, :cond_8
-
-    goto :goto_8
-
-    :cond_8
-    move v11, v8
-
-    goto :goto_8
-
-    :cond_9
-    :goto_7
-    const/4 v11, 0x0
-
-    :goto_8
-    add-int/2addr v3, v11
+    if-eqz v4, :cond_1
 
     .line 15
-    iget v8, p0, Lwd/h0;->p:I
+    new-instance v6, Lorg/json/JSONObject;
 
-    or-int/lit8 v11, v8, 0x1
+    invoke-direct {v6}, Lorg/json/JSONObject;-><init>()V
 
-    if-ne v11, v8, :cond_a
-
-    const/4 v8, 0x1
-
-    goto :goto_9
-
-    :cond_a
-    const/4 v8, 0x0
-
-    :goto_9
-    if-eqz v8, :cond_d
-
-    iget v8, v7, Landroid/graphics/Rect;->top:I
-
-    iget v11, p1, Landroid/graphics/Rect;->top:I
-
-    add-int/2addr v8, v11
-
-    iget v12, v0, Landroid/graphics/Rect;->top:I
-
-    sub-int/2addr v8, v12
+    const-string v7, "image"
 
     .line 16
-    invoke-static {v8, v10}, Ly4/x;->g(II)I
+    invoke-virtual {v6, v7, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    move-result v12
-
-    if-gez v12, :cond_b
-
-    goto :goto_a
-
-    :cond_b
-    invoke-static {v8, v11}, Ly4/x;->g(II)I
-
-    move-result v12
-
-    if-lez v12, :cond_c
-
-    goto :goto_b
-
-    :cond_c
-    move v11, v8
-
-    goto :goto_b
-
-    :cond_d
-    :goto_a
-    const/4 v11, 0x0
-
-    :goto_b
-    add-int/2addr v2, v11
+    const-string v4, "avatarImage"
 
     .line 17
-    iget v8, p0, Lwd/h0;->p:I
-
-    or-int/2addr v6, v8
-
-    if-ne v6, v8, :cond_e
-
-    const/4 v6, 0x1
-
-    goto :goto_c
-
-    :cond_e
-    const/4 v6, 0x0
-
-    :goto_c
-    if-eqz v6, :cond_11
-
-    iget v6, v0, Landroid/graphics/Rect;->right:I
-
-    iget v8, v7, Landroid/graphics/Rect;->right:I
-
-    iget v11, p1, Landroid/graphics/Rect;->right:I
-
-    sub-int/2addr v8, v11
-
-    sub-int/2addr v6, v8
+    invoke-virtual {v3, v4, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 18
-    invoke-static {v6, v10}, Ly4/x;->g(II)I
+    :cond_1
+    iget-object v4, v2, Lcom/supercell/id/model/IdProfile;->m:Ljava/lang/String;
 
-    move-result v8
+    const-string v6, "URL"
 
-    if-gez v8, :cond_f
-
-    goto :goto_d
-
-    :cond_f
-    invoke-static {v6, v11}, Ly4/x;->g(II)I
-
-    move-result v8
-
-    if-lez v8, :cond_10
-
-    goto :goto_e
-
-    :cond_10
-    move v11, v6
-
-    goto :goto_e
-
-    :cond_11
-    :goto_d
-    const/4 v11, 0x0
-
-    :goto_e
-    add-int/2addr v4, v11
+    if-eqz v4, :cond_2
 
     .line 19
-    iget v6, p0, Lwd/h0;->p:I
+    new-instance v7, Lorg/json/JSONObject;
 
-    or-int/lit8 v8, v6, 0x2
-
-    if-ne v8, v6, :cond_12
-
-    const/4 v6, 0x1
-
-    goto :goto_f
-
-    :cond_12
-    const/4 v6, 0x0
-
-    :goto_f
-    if-eqz v6, :cond_15
-
-    iget v0, v0, Landroid/graphics/Rect;->bottom:I
-
-    iget v6, v7, Landroid/graphics/Rect;->bottom:I
-
-    iget p1, p1, Landroid/graphics/Rect;->bottom:I
-
-    sub-int/2addr v6, p1
-
-    sub-int/2addr v0, v6
+    invoke-direct {v7}, Lorg/json/JSONObject;-><init>()V
 
     .line 20
-    invoke-static {v0, v10}, Ly4/x;->g(II)I
-
-    move-result v6
-
-    if-gez v6, :cond_13
-
-    goto :goto_10
-
-    :cond_13
-    invoke-static {v0, p1}, Ly4/x;->g(II)I
-
-    move-result v6
-
-    if-lez v6, :cond_14
-
-    goto :goto_11
-
-    :cond_14
-    move p1, v0
-
-    goto :goto_11
-
-    :cond_15
-    :goto_10
-    const/4 p1, 0x0
-
-    :goto_11
-    add-int/2addr v5, p1
+    invoke-virtual {v7, v6, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 21
-    invoke-virtual {v1}, Landroid/view/View;->getPaddingBottom()I
+    iget-object v4, v2, Lcom/supercell/id/model/IdProfile;->o:Ljava/util/Date;
 
-    move-result p1
+    invoke-virtual {v4}, Ljava/util/Date;->getTime()J
 
-    if-le v5, p1, :cond_16
+    move-result-wide v8
 
-    const/4 p1, 0x1
+    invoke-virtual {v7, v5, v8, v9}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
-    goto :goto_12
-
-    :cond_16
-    const/4 p1, 0x0
+    const-string v4, "imageURL"
 
     .line 22
-    :goto_12
-    invoke-static {v1, v3, v2, v4, v5}, Lwd/f2;->v(Landroid/view/View;IIII)V
-
-    if-eqz p1, :cond_1a
+    invoke-virtual {v3, v4, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 23
-    iget-object p1, p0, Lwd/h0;->b:Landroid/view/View;
+    :cond_2
+    iget-object v4, v2, Lcom/supercell/id/model/IdProfile;->p:Ljava/lang/String;
 
-    invoke-static {v1, p1}, Ly4/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    xor-int/2addr p1, v9
-
-    if-eqz p1, :cond_18
+    if-eqz v4, :cond_3
 
     .line 24
-    iget-object p1, p0, Lwd/h0;->h:Landroid/widget/ScrollView;
+    new-instance v5, Lorg/json/JSONObject;
 
-    if-eqz p1, :cond_17
+    invoke-direct {v5}, Lorg/json/JSONObject;-><init>()V
 
     .line 25
-    invoke-static {p1, v5}, Lwd/f2;->j(Landroid/widget/ScrollView;I)V
+    invoke-virtual {v5, v6, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 26
-    :cond_17
-    iget-object p1, p0, Lwd/h0;->i:Landroidx/core/widget/NestedScrollView;
+    iget-object v4, v2, Lcom/supercell/id/model/IdProfile;->q:Ljava/lang/String;
 
-    if-eqz p1, :cond_1a
+    const-string v6, "imageId"
+
+    invoke-virtual {v5, v6, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string v4, "underReviewImageURL"
 
     .line 27
-    invoke-static {p1, v5}, Lwd/f2;->k(Landroidx/core/widget/NestedScrollView;I)V
-
-    goto :goto_13
+    invoke-virtual {v3, v4, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 28
-    :cond_18
-    iget-object p1, p0, Lwd/h0;->h:Landroid/widget/ScrollView;
+    :cond_3
+    iget-object v4, v2, Lcom/supercell/id/model/IdProfile;->r:Ljava/lang/String;
 
-    if-eqz p1, :cond_19
+    const-string v5, "qrCodeURL"
+
+    invoke-virtual {v3, v5, v4}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 29
-    invoke-static {p1, v10}, Lwd/f2;->j(Landroid/widget/ScrollView;I)V
+    iget-object v4, v2, Lcom/supercell/id/model/IdProfile;->s:Ljava/lang/String;
+
+    const-string v5, "universalLink"
+
+    invoke-virtual {v3, v5, v4}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 30
-    :cond_19
-    iget-object p1, p0, Lwd/h0;->i:Landroidx/core/widget/NestedScrollView;
+    iget-boolean v4, v2, Lcom/supercell/id/model/IdProfile;->t:Z
 
-    if-eqz p1, :cond_1a
+    const-string v5, "forcedOfflineStatus"
+
+    invoke-virtual {v3, v5, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
 
     .line 31
-    invoke-static {p1, v10}, Lwd/f2;->k(Landroidx/core/widget/NestedScrollView;I)V
+    iget-boolean v4, v2, Lcom/supercell/id/model/IdProfile;->u:Z
 
-    :cond_1a
-    :goto_13
-    return-void
+    const-string v5, "blockIncomingFriendRequests"
 
-    :cond_1b
-    const-string p1, "systemWindowInsets"
+    invoke-virtual {v3, v5, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
 
     .line 32
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
+    new-instance v4, Lorg/json/JSONArray;
 
-    const/4 p1, 0x0
+    invoke-direct {v4}, Lorg/json/JSONArray;-><init>()V
 
-    throw p1
-.end method
+    .line 33
+    iget-object v5, v2, Lcom/supercell/id/model/IdProfile;->v:Ljava/util/List;
 
-.method public final b()Ljava/lang/Integer;
-    .locals 1
+    .line 34
+    invoke-interface {v5}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    .line 1
-    iget-object v0, p0, Lwd/h0;->l:Ljava/lang/Integer;
-
-    return-object v0
-.end method
-
-.method public final c(Ljava/lang/Integer;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lwd/h0;->l:Ljava/lang/Integer;
-
-    return-void
-.end method
-
-.method public equals(Ljava/lang/Object;)Z
-    .locals 2
-
-    if-eq p0, p1, :cond_1
-
-    instance-of v0, p1, Lwd/h0;
-
-    if-eqz v0, :cond_0
-
-    check-cast p1, Lwd/h0;
-
-    iget v0, p0, Lwd/h0;->p:I
-
-    iget v1, p1, Lwd/h0;->p:I
-
-    if-ne v0, v1, :cond_0
-
-    iget-boolean v0, p0, Lwd/h0;->q:Z
-
-    iget-boolean v1, p1, Lwd/h0;->q:Z
-
-    if-ne v0, v1, :cond_0
-
-    iget v0, p0, Lwd/h0;->r:I
-
-    iget p1, p1, Lwd/h0;->r:I
-
-    if-ne v0, p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return p1
-
-    :cond_1
-    :goto_0
-    const/4 p1, 0x1
-
-    return p1
-.end method
-
-.method public hashCode()I
-    .locals 2
-
-    iget v0, p0, Lwd/h0;->p:I
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-boolean v1, p0, Lwd/h0;->q:Z
-
-    if-eqz v1, :cond_0
-
-    const/4 v1, 0x1
-
-    :cond_0
-    add-int/2addr v0, v1
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget v1, p0, Lwd/h0;->r:I
-
-    add-int/2addr v0, v1
-
-    return v0
-.end method
-
-.method public onViewAttachedToWindow(Landroid/view/View;)V
-    .locals 5
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_10
-
-    .line 1
-    iput-object p1, p0, Lwd/h0;->b:Landroid/view/View;
-
-    .line 2
-    instance-of v1, p1, Landroid/widget/ScrollView;
-
-    if-nez v1, :cond_0
-
-    move-object v1, v0
-
-    goto :goto_0
-
-    :cond_0
-    move-object v1, p1
+    move-result-object v5
 
     :goto_0
-    check-cast v1, Landroid/widget/ScrollView;
+    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
 
-    iput-object v1, p0, Lwd/h0;->h:Landroid/widget/ScrollView;
+    move-result v6
 
-    .line 3
-    instance-of v1, p1, Landroidx/core/widget/NestedScrollView;
+    const-string v7, "system"
 
-    if-nez v1, :cond_1
+    if-eqz v6, :cond_6
 
-    move-object v1, v0
+    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Lcom/supercell/id/model/IdSystem;
+
+    .line 35
+    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 36
+    new-instance v8, Lorg/json/JSONObject;
+
+    invoke-direct {v8}, Lorg/json/JSONObject;-><init>()V
+
+    .line 37
+    iget-object v9, v6, Lcom/supercell/id/model/IdSystem;->g:Ljava/lang/String;
+
+    invoke-virtual {v8, v7, v9}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 38
+    iget-boolean v7, v6, Lcom/supercell/id/model/IdSystem;->h:Z
+
+    const-string v9, "new"
+
+    invoke-virtual {v8, v9, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    .line 39
+    iget-object v7, v6, Lcom/supercell/id/model/IdSystem;->i:Ljava/lang/String;
+
+    if-eqz v7, :cond_4
+
+    .line 40
+    new-instance v9, Lorg/json/JSONObject;
+
+    invoke-direct {v9}, Lorg/json/JSONObject;-><init>()V
+
+    const-string v10, "android"
+
+    .line 41
+    invoke-virtual {v9, v10, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string v7, "appStoreLinks"
+
+    .line 42
+    invoke-virtual {v8, v7, v9}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 43
+    :cond_4
+    iget-object v7, v6, Lcom/supercell/id/model/IdSystem;->j:Ljava/lang/String;
+
+    const-string v9, "deeplink"
+
+    invoke-virtual {v8, v9, v7}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 44
+    iget-object v7, v6, Lcom/supercell/id/model/IdSystem;->k:Ljava/lang/String;
+
+    const-string v9, "seasonPassDeeplink"
+
+    invoke-virtual {v8, v9, v7}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 45
+    iget-object v6, v6, Lcom/supercell/id/model/IdSystem;->l:Lcom/supercell/id/model/IdSeason;
+
+    if-eqz v6, :cond_5
+
+    .line 46
+    new-instance v7, Lorg/json/JSONObject;
+
+    invoke-direct {v7}, Lorg/json/JSONObject;-><init>()V
+
+    .line 47
+    iget-object v9, v6, Lcom/supercell/id/model/IdSeason;->g:Ljava/util/Date;
+
+    invoke-virtual {v9}, Ljava/util/Date;->getTime()J
+
+    move-result-wide v9
+
+    const-string v11, "startTime"
+
+    invoke-virtual {v7, v11, v9, v10}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    .line 48
+    iget-object v6, v6, Lcom/supercell/id/model/IdSeason;->h:Ljava/util/Date;
+
+    invoke-virtual {v6}, Ljava/util/Date;->getTime()J
+
+    move-result-wide v9
+
+    const-string v6, "endTime"
+
+    invoke-virtual {v7, v6, v9, v10}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
     goto :goto_1
 
-    :cond_1
-    move-object v1, p1
+    :cond_5
+    const/4 v7, 0x0
 
     :goto_1
-    check-cast v1, Landroidx/core/widget/NestedScrollView;
+    const-string v6, "season"
 
-    iput-object v1, p0, Lwd/h0;->i:Landroidx/core/widget/NestedScrollView;
+    .line 49
+    invoke-virtual {v8, v6, v7}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 4
-    iget v1, p0, Lwd/h0;->r:I
+    .line 50
+    invoke-virtual {v4, v8}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
-    sget-object v2, Lwd/f2;->a:Lbe/c;
+    goto :goto_0
 
-    if-gtz v1, :cond_2
+    :cond_6
+    const-string v5, "availableSystems"
+
+    .line 51
+    invoke-virtual {v3, v5, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 52
+    new-instance v4, Lorg/json/JSONArray;
+
+    invoke-direct {v4}, Lorg/json/JSONArray;-><init>()V
+
+    .line 53
+    iget-object v5, v2, Lcom/supercell/id/model/IdProfile;->w:Ljava/util/List;
+
+    .line 54
+    invoke-interface {v5}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v5
+
+    :goto_2
+    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_c
+
+    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Lcom/supercell/id/model/IdConnectedSystem;
+
+    .line 55
+    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 56
+    new-instance v8, Lorg/json/JSONObject;
+
+    invoke-direct {v8}, Lorg/json/JSONObject;-><init>()V
+
+    .line 57
+    iget-object v9, v6, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
+
+    invoke-virtual {v8, v7, v9}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 58
+    iget-object v9, v6, Lcom/supercell/id/model/IdConnectedSystem;->h:Ljava/lang/String;
+
+    if-eqz v9, :cond_7
+
+    const-string v10, "username"
+
+    invoke-virtual {v8, v10, v9}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 59
+    :cond_7
+    iget-object v9, v6, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/util/List;
+
+    if-eqz v9, :cond_9
+
+    new-instance v9, Lorg/json/JSONArray;
+
+    invoke-direct {v9}, Lorg/json/JSONArray;-><init>()V
+
+    .line 60
+    iget-object v10, v6, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/util/List;
+
+    .line 61
+    invoke-interface {v10}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v10
+
+    :goto_3
+    invoke-interface {v10}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v11
+
+    if-eqz v11, :cond_8
+
+    invoke-interface {v10}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v11
+
+    check-cast v11, Ljava/lang/String;
+
+    .line 62
+    invoke-virtual {v9, v11}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
     goto :goto_3
 
-    .line 5
-    :cond_2
-    invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+    :cond_8
+    const-string v10, "progress"
 
-    move-result-object v2
+    .line 63
+    invoke-virtual {v8, v10, v9}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    :goto_2
-    if-eqz v2, :cond_4
+    .line 64
+    :cond_9
+    iget-object v9, v6, Lcom/supercell/id/model/IdConnectedSystem;->j:Ljava/lang/Integer;
 
-    .line 6
-    instance-of v3, v2, Landroid/view/View;
+    if-eqz v9, :cond_a
 
-    if-eqz v3, :cond_4
+    invoke-virtual {v9}, Ljava/lang/Integer;->intValue()I
 
-    .line 7
-    check-cast v2, Landroid/view/View;
+    move-result v9
 
-    invoke-virtual {v2}, Landroid/view/View;->getId()I
+    const-string v10, "score"
 
-    move-result v3
+    invoke-virtual {v8, v10, v9}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
-    if-ne v3, v1, :cond_3
+    .line 65
+    :cond_a
+    iget-object v6, v6, Lcom/supercell/id/model/IdConnectedSystem;->k:Ljava/lang/Boolean;
 
-    goto :goto_4
+    if-eqz v6, :cond_b
 
-    .line 8
-    :cond_3
-    invoke-virtual {v2}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+    invoke-virtual {v6}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result-object v2
+    move-result v6
+
+    const-string v9, "seasonPassActive"
+
+    invoke-virtual {v8, v9, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    .line 66
+    :cond_b
+    invoke-virtual {v4, v8}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
     goto :goto_2
 
-    :cond_4
-    :goto_3
-    move-object v2, v0
+    :cond_c
+    const-string v5, "connectedSystems"
 
-    :goto_4
-    if-eqz v2, :cond_5
+    .line 67
+    invoke-virtual {v3, v5, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    goto :goto_5
+    .line 68
+    iget v4, v2, Lcom/supercell/id/model/IdProfile;->x:I
 
-    :cond_5
-    move-object v2, p1
+    const-string v5, "supportTier"
 
-    .line 9
-    :goto_5
-    iput-object v2, p0, Lwd/h0;->j:Landroid/view/View;
+    invoke-virtual {v3, v5, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
-    .line 10
-    iget-object v1, p0, Lwd/h0;->h:Landroid/widget/ScrollView;
+    .line 69
+    iget-boolean v2, v2, Lcom/supercell/id/model/IdProfile;->y:Z
 
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    const-string v4, "hasYoungPlayerAccountsConnected"
 
-    const/16 v3, 0x1c
+    invoke-virtual {v3, v4, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
 
-    const/4 v4, 0x0
-
-    if-ge v2, v3, :cond_6
-
-    const/4 v2, 0x1
-
-    goto :goto_6
-
-    :cond_6
-    const/4 v2, 0x0
-
-    :goto_6
-    if-eqz v2, :cond_7
-
-    goto :goto_7
-
-    :cond_7
-    move-object v1, v0
-
-    :goto_7
-    if-eqz v1, :cond_8
-
-    invoke-virtual {v1, v4}, Landroid/widget/ScrollView;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_8
-
-    goto :goto_8
-
-    :cond_8
-    move-object v1, p1
-
-    .line 11
-    :goto_8
-    iput-object v1, p0, Lwd/h0;->k:Landroid/view/View;
-
-    .line 12
-    iget-object v2, p0, Lwd/h0;->l:Ljava/lang/Integer;
-
-    if-eqz v2, :cond_9
-
-    goto :goto_9
-
-    :cond_9
-    invoke-virtual {v1}, Landroid/view/View;->getPaddingTop()I
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 70
+    invoke-virtual {v3}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
     move-result-object v2
 
-    :goto_9
-    iput-object v2, p0, Lwd/h0;->l:Ljava/lang/Integer;
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 13
-    iget-object v1, p0, Lwd/h0;->m:Ljava/lang/Integer;
+    .line 71
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    if-eqz v1, :cond_a
+    .line 72
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    goto :goto_a
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    :cond_a
-    iget-object v1, p0, Lwd/h0;->k:Landroid/view/View;
+    const-string v1, "saved to persistent storage "
 
-    if-eqz v1, :cond_b
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Landroid/view/View;->getPaddingLeft()I
+    iget-object v1, p0, Lwd/h0;->g:Lwd/z;
 
-    move-result v1
+    .line 73
+    iget-object v1, v1, Lwd/z;->e:Ljava/lang/String;
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 74
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    goto :goto_a
+    move-result-object v0
 
-    :cond_b
-    move-object v1, v0
+    const-string v1, "ProfileStorage"
 
-    :goto_a
-    iput-object v1, p0, Lwd/h0;->m:Ljava/lang/Integer;
-
-    .line 14
-    iget-object v1, p0, Lwd/h0;->n:Ljava/lang/Integer;
-
-    if-eqz v1, :cond_c
-
-    goto :goto_b
-
-    :cond_c
-    iget-object v1, p0, Lwd/h0;->k:Landroid/view/View;
-
-    if-eqz v1, :cond_d
-
-    invoke-virtual {v1}, Landroid/view/View;->getPaddingRight()I
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    goto :goto_b
-
-    :cond_d
-    move-object v1, v0
-
-    :goto_b
-    iput-object v1, p0, Lwd/h0;->n:Ljava/lang/Integer;
-
-    .line 15
-    iget-object v1, p0, Lwd/h0;->o:Ljava/lang/Integer;
-
-    if-eqz v1, :cond_e
-
-    move-object v0, v1
-
-    goto :goto_c
-
-    :cond_e
-    iget-object v1, p0, Lwd/h0;->k:Landroid/view/View;
-
-    if-eqz v1, :cond_f
-
-    invoke-virtual {v1}, Landroid/view/View;->getPaddingBottom()I
+    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v0
 
+    .line 75
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    :cond_f
-    :goto_c
-    iput-object v0, p0, Lwd/h0;->o:Ljava/lang/Integer;
-
-    .line 16
-    invoke-super {p0, p1}, Lwd/t;->onViewAttachedToWindow(Landroid/view/View;)V
-
-    return-void
-
-    :cond_10
-    const-string p1, "v"
-
-    .line 17
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    goto :goto_e
-
-    :goto_d
-    throw v0
-
-    :goto_e
-    goto :goto_d
-.end method
-
-.method public onViewDetachedFromWindow(Landroid/view/View;)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    iput-object v0, p0, Lwd/h0;->b:Landroid/view/View;
-
-    .line 2
-    iput-object v0, p0, Lwd/h0;->h:Landroid/widget/ScrollView;
-
-    .line 3
-    iput-object v0, p0, Lwd/h0;->i:Landroidx/core/widget/NestedScrollView;
-
-    .line 4
-    iput-object v0, p0, Lwd/h0;->j:Landroid/view/View;
-
-    .line 5
-    iput-object v0, p0, Lwd/h0;->k:Landroid/view/View;
-
-    .line 6
-    invoke-super {p0, p1}, Lwd/t;->onViewDetachedFromWindow(Landroid/view/View;)V
-
-    return-void
-
-    :cond_0
-    const-string p1, "v"
-
-    .line 7
-    invoke-static {p1}, Ly4/x;->k(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 3
-
-    const-string v0, "PaddingInsetUpdater(insetFlags="
-
-    invoke-static {v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget v1, p0, Lwd/h0;->p:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, ", force="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v1, p0, Lwd/h0;->q:Z
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v1, ", insetParent="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lwd/h0;->r:I
-
-    const-string v2, ")"
-
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/d;->b(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

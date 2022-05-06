@@ -56,10 +56,10 @@
     .line 4
     aget p3, p3, p4
 
-    iput p3, p2, Lu4/a;->N:I
+    iput p3, p2, Lu4/a;->O:I
 
     .line 5
-    iget-object p2, p2, Lu4/a;->H:Landroid/graphics/Rect;
+    iget-object p2, p2, Lu4/a;->I:Landroid/graphics/Rect;
 
     invoke-virtual {p1, p2}, Landroid/view/View;->getWindowVisibleDisplayFrame(Landroid/graphics/Rect;)V
 

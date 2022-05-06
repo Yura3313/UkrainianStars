@@ -9,11 +9,11 @@
 
 
 # instance fields
-.field public final a:Lh1/g;
-
-.field public final b:Ljava/lang/String;
+.field public final g:Lh1/g;
 
 .field public final h:Ljava/lang/String;
+
+.field public final i:Ljava/lang/String;
 
 
 # direct methods
@@ -24,13 +24,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/internal/ads/zzabo;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzabj;->a:Lh1/g;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzabj;->g:Lh1/g;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzabj;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzabj;->h:Ljava/lang/String;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/ads/zzabj;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/internal/ads/zzabj;->i:Ljava/lang/String;
 
     return-void
 .end method
