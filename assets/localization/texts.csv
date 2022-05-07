@@ -1,4 +1,4 @@
-TID,UA
+TID,EN
 string,string
 TID_BATTLE_END_QUESTS_COMPLETED,Квестів виконано: <NUM>
 TID_BATTLE_END_QUESTS_PROGRESSED,Квестів прогресовано: <NUM>
@@ -406,7 +406,7 @@ TID_STAT_HAMMER_DAMAGE,Пошкодження за 0.2 сек
 TID_STAT_DAMAGE_OR_HEAL,Пошкодження / зцілення
 TID_HERO_INFO_MAX_BOUNCES,Максимальне відскакування
 ,Зменшення зцілення
-TID_BATTLE,ГОТОВИЙ
+TID_BATTLE,ГОТОВІ
 TID_QUIT,Вийти
 TID_MATCHMAKING_QUIT,Вийти
 TID_MATCHMAKING_HEADING,Пошук гравців
@@ -461,7 +461,7 @@ TID_ERROR_POP_UP_CONNECTION_LOST,"Будь ласка, спробуйте уві
 TID_ERROR_POP_UP_CONNECTION_LOST_BUTTON,Повторити вхід
 TID_TROPHIES,Кубки
 TID_PRACTICE,ПРАКТИКА
-TID_READY,Готовий
+TID_READY,ГОТОВІ
 TID_BATTLE_END_TITLE_VICTORY,ВИГРАШ!
 TID_BATTLE_END_TITLE_DEFEAT,ПРОГРАШ
 TID_BATTLE_END_TITLE_DRAW,НІЧИЯ
@@ -1967,7 +1967,7 @@ TID_HINT_26,"Пенні може завдати великої шкоди сво
 TID_HINT_27,Зібрати команду перед матчем дозволяє вам спланувати перед матчем і вибрати гарну комбінацію бійців.
 TID_HINT_28,"Спробуйте грати в дружні битви, щоб відпрацьовувати події, влаштовувати дружні змагання та багато іншого!"
 TID_HINT_29,"Після гарного матчу з новими товаришами по команді, ви можете натиснути кнопку Грати знову, щоб зіграти з ними ще один матч!"
-TID_HINT_30,Дружні битви дозволяють вибрати будь-яку подію та карту. Brawlers також будуть повністю оновлені!
+TID_HINT_30,Дружні битви дозволяють вибрати будь-яку подію та карту. Бравлери також будуть повністю оновлені!
 TID_HINT_31,"Френк зупиняється, щоб виконати атаку і Супер, даючи можливість суперникам вийти за межі його дії."
 TID_EXPERIENCE,Досвіт
 TID_HINT_32,"Особливі події не нагороджують трофеями. Грайте в них, щоб виграти жетони для Brawl Pass."
@@ -2087,7 +2087,7 @@ TID_HINT_40,Connect to Supercell ID from the settings screen to keep your accoun
 TID_GACHA_VIDEO_REWARD_RECEIVED,Extra rewards added!
 TID_BUTTON_NAVI_SHOP,МАГАЗИН
 TID_BUTTON_NAVI_SOCIAL,СОЦІАЛ
-TID_BUTTON_NAVI_BRAWLERS,BRAWLERS
+TID_BUTTON_NAVI_BRAWLERS,БРАВЛЕРИ
 TID_BUTTON_NAVI_ESPORTS,ESPORTS
 TID_BRAWL_TICKETS_BUTTON,PLAY
 TID_HOME_SCREEN_INVITE,INVITE
@@ -2492,7 +2492,7 @@ TID_NEWS_TAB_VIDEOS,VIDEOS
 TID_NEWS_TAB_ESPORTS,ESPORTS
 TID_NEWS_TAB_COMMUNITY,COMMUNITY
 TID_NEWS_TAB_VIDEOS_LIVESTREAM_CHINA,视频/直播
-TID_NEWS_NOTIFICATION_LIVE,LIVE
+TID_NEWS_NOTIFICATION_LIVE,ПРЯМИЙ ЕФІР
 TID_EPORTS_INFO_NEW_TOURNAMENT,A new tournament has been unlocked!
 TID_VS_TRAINING,Starr Park\nEntrance
 TID_TRAINING_DPS,Damage per second:
@@ -6140,8 +6140,8 @@ TID_SHOWDOWN_69,Річки каньйону
 TID_SHOWDOWN_70,Цвинтар
 TID_RANKED_BATTLE_END_EPIC,Епічна перемога!
 TID_RANKED_BATTLE_END_CLOSE,Близький матч!
-TID_JETPACK_GIRL,JANET
-TID_JETPACK_GIRL_SHORT_DESC,DAMAGE DEALER
+TID_JETPACK_GIRL,ДЖАНЕТ
+TID_JETPACK_GIRL_SHORT_DESC,ВОЇН
 TID_JETPACK_GIRL_DESC,"Janet is the star of the show, and she's not afraid to let everyone around her know about it.\n\nIf only her sister Bonnie wouldn't constantly get into trouble..."
 TID_JETPACK_GIRL_WEAPON,HIGH NOTE
 TID_JETPACK_GIRL_WEAPON_DESC,"Janet sings a loud note. The longer she holds the note, the more focused it will become and the farther it will fly."
@@ -6155,8 +6155,8 @@ TID_ACCESSORY_JETPACK_GIRL_GADGET_1,DROP THE BASS
 TID_ACCESSORY_JETPACK_GIRL_GADGET_1_DESC,Janet deploys a speaker that deals <c00cc00><VALUE1></c> damage per second to all enemies in the area until it gets destroyed.
 TID_ACCESSORY_JETPACK_GIRL_GADGET_2,BACKSTAGE PASS
 TID_ACCESSORY_JETPACK_GIRL_GADGET_2_DESC,"Janet's next High Note pushes her back, even over walls. The more focused her attack is, the further she'll be pushed back."
-TID_CANNON_GIRL,BONNIE
-TID_CANNON_GIRL_SHORT_DESC,HYBRID
+TID_CANNON_GIRL,БОНІ
+TID_CANNON_GIRL_SHORT_DESC,ГІБРИД
 TID_CANNON_GIRL_DESC,Bonnie and her inanimate cannon \qClyde\q are usually up to no good. Who would have thought that this cute little girl would cause so much mayhem?
 TID_CANNON_GIRL_WEAPON,LOOSE TOOTH
 TID_CANNON_GIRL_WEAPON_DESC,Bonnie shoots a HUGE tooth from Clyde towards her enemies.
@@ -6164,56 +6164,56 @@ TID_CANNON_GIRL_ULTI,STAR LAUNCHER
 TID_CANNON_GIRL_ULTI_DESC,Clyde is launching Bonnie into the air. She can cross obstacles and deals damage to nearby enemies on landing.
 TID_CANNON_GIRL_SMALL_WEAPON,BOMBER JACKET
 TID_CANNON_GIRL_SMALL_WEAPON_DESC,Bonnie flings a cluster of small grenades from her sleeves.
-TID_CANNON_GIRL_SMALL_ULTI,CLYDE
+TID_CANNON_GIRL_SMALL_ULTI,КЛАЙД
 TID_CANNON_GIRL_SMALL_ULTI_DESC,"Bonnie calls Clyde and jumps into it, taking control of the cannon."
 TID_SPEC_ABI_CANNON_GIRL_1,BLACK POWDER
 TID_SPEC_ABI_CANNON_GIRL_1_DESC,The range of Bonnie's Star Launcher is increased by <c00cc00><VALUE1>%</c>.
 TID_SPEC_ABI_CANNON_GIRL_2,WISDOM TOOTH
 TID_SPEC_ABI_CANNON_GIRL_2_DESC,"Loose Tooth shatters on hit, dealing <c00cc00><VALUE1>%</c> extra damage to nearby enemies."
-TID_ACCESSORY_CANNON_GIRL_SPEED,SUGAR RUSH
+TID_ACCESSORY_CANNON_GIRL_SPEED,ЦУКРОВИЙ ПЕРЕБІР
 TID_ACCESSORY_CANNON_GIRL_SPEED_DESC,Clyde's movement and reload speed are increased by <c00cc00><VALUE1>%</c> for <c00cc00><VALUE2></c> seconds.
-TID_ACCESSORY_CANNON_GIRL_DASH,CRASH TEST
+TID_ACCESSORY_CANNON_GIRL_DASH,КРАШ-ТЕСТ
 TID_ACCESSORY_CANNON_GIRL_DASH_DESC,"Bonnie dashes forward, knocking back enemies and dealing <c00cc00><VALUE1></c> damage on hit."
 TID_ACCESSORY_BLOCKED_REQUIRES_CANNON,Clyde required!
 TID_ACCESSORY_BLOCKED_REQUIRES_ASSASSIN,Bonnie required!
 TID_LOGIN_CALENDAR_MISSED,You missed the remaining login rewards.
-TID_ACCESSORY_POWER_LEVELER_EXTRA_LEVELS,POWER SURGE
+TID_ACCESSORY_POWER_LEVELER_EXTRA_LEVELS,НАПРУГА
 TID_ACCESSORY_POWER_LEVELER_EXTRA_LEVELS_DESC,Surge overloads his circuits and increases his upgrade level by <c00cc00><VALUE1></c> for <c00cc00><VALUE2></c> seconds.
-TID_ACCESSORY_POWER_LEVELER_SHIELD,POWER SHIELD
+TID_ACCESSORY_POWER_LEVELER_SHIELD,ЩИТ СИЛИ
 TID_ACCESSORY_POWER_LEVELER_SHIELD_DESC,"Within the next <c00cc00><VALUE1></c> seconds, Surge consumes <c00cc00><VALUE2>%</c> of the damage of the next incoming hit and uses the energy to reload <c00cc00><VALUE3></c> ammo."
-TID_GAME_MODE_27,BOT DROP
+TID_GAME_MODE_27,Битви Ботів
 TID_GAME_MODE_27_DESC,Defend against the robot invasion. Destroy robots and collect bolts. First team to collect <MAX_SCORE> bolts wins the match!
 TID_INVASION_INTRO_TEXT,Destroy the robots!
 TID_NOTIFICATION_INVASION,A new BOT DROP map is available! Time to win new Rewards!
-TID_INVASION_1,Devolution
-TID_INVASION_2,Divided
-TID_INVASION_3,Val Verde
-TID_INVASION_4,Quadrants
-TID_INVASION_5,Brawl of the Worlds
-TID_INVASION_6,Killzone
-TID_INVASION_7,Bullseye
-TID_INVASION_8,Peekaboo
-TID_INVASION_9,Bots Attack!
-TID_INVASION_10,Linear Blocks
-TID_INVASION_11,Corridors
-TID_INVASION_12,Riverside
-TID_INVASION_13,Departure
-TID_INVASION_14,Forts
-TID_INVASION_15,The Bot
-TID_INVASION_16,A Loud Place
+TID_INVASION_1,Передача повноважень
+TID_INVASION_2,Розділене
+TID_INVASION_3,Валь Верде
+TID_INVASION_4,Квадрати
+TID_INVASION_5,Бійка світів
+TID_INVASION_6,Зона ураження
+TID_INVASION_7,Яблучко
+TID_INVASION_8,Пікабу
+TID_INVASION_9,Боти атакують!
+TID_INVASION_10,Лінійні блоки
+TID_INVASION_11,Коридори
+TID_INVASION_12,Коло річки
+TID_INVASION_13,Від'їзд
+TID_INVASION_14,Фортеці
+TID_INVASION_15,Той самий Бот
+TID_INVASION_16,Гучне місце
 TID_SPRAYS_TUTORIAL_TITLE,SPRAYS
 TID_SPRAYS_TUTORIAL_HEADER,EXPRESS YOURSELF IN BATTLE!
-TID_BRAWL_PASS_CANCEL_QUEST_REROLL,CANCEL REROLL
-TID_BRAWL_PASS_REROLL_QUEST,REROLL QUEST
+TID_BRAWL_PASS_CANCEL_QUEST_REROLL,СКАСУВАТИ ЗМІНЕННЯ
+TID_BRAWL_PASS_REROLL_QUEST,ЗМІНИТИ КВЕСТ
 TID_BRAWL_PASS_QUEST_REROLL_COUNT,<num>/<max> rerolls available
 TID_BRAWL_PASS_QUEST_REROLL_REFRESH_TIME,Refreshes in <time>
 TID_YOU_HAVE_USED_ALL_REROLLS,You have used all rerolls! Get more with Brawl Pass
 TID_YOU_HAVE_USED_ALL_REROLLS_HAS_PREMIUM,You have used all available rerolls!
-TID_QUEST_REROLL_INTRO,CHOOSE A QUEST TO REROLL
-TID_QUEST_REROLL_ACCEPT,ACCEPT
-TID_QUEST_REROLL_REJECT,REJECT
+TID_QUEST_REROLL_INTRO,ВИБЕРІТЬ КВЕСТ ДЛЯ ЗМІНИ
+TID_QUEST_REROLL_ACCEPT,ПРИЙНЯТИ
+TID_QUEST_REROLL_REJECT,ВІДХІДИТИ
 TID_REROLL_NOT_POSSIBLE_FOR_ITEM,Can't reroll this item
-TID_CONFIRM_QUEST_REROLL,REROLL QUEST?
+TID_CONFIRM_QUEST_REROLL,ЗМІНИТИ КВЕСТ?
 TID_CONFIRM_QUEST_REROLL_DESC,Your new quest will not feature <char> or <type> requirements....\nRerolls remaining: <rerolls>
 TID_CONFIRM_QUEST_REROLL_DESC_ONLY_TYPE,Your new quest will not feature <type> requirements....\nRerolls remaining: <rerolls>
 TID_QUEST_TYPE_REQ_WIN,WIN
@@ -6288,46 +6288,46 @@ TID_EMOTE_BUNDLE_VILLAINS_PACK,The Worst Bunch Skin Pins
 TID_SKIN_INFO_CAMPAIGN_VILLAINS,Worst Bunch Skin
 TID_HOTZONE_33,Open Zone
 TID_KNOCKOUT_18,New Perspective
-TID_TRUE_GOLD_BELLE_SKIN,TRUE GOLD BELLE
-TID_TRUE_GOLD_BELLE_SKIN_SHOP,TRUE GOLD\nBELLE
-TID_TRUE_SILVER_BELLE_SKIN,TRUE SILVER BELLE
-TID_TRUE_SILVER_BELLE_SKIN_SHOP,TRUE SILVER\nBELLE
-TID_TRUE_GOLD_STU_SKIN,TRUE GOLD STU
-TID_TRUE_GOLD_STU_SKIN_SHOP,TRUE GOLD\nSTU
-TID_TRUE_SILVER_STU_SKIN,TRUE SILVER STU
-TID_TRUE_SILVER_STU_SKIN_SHOP,TRUE SILVER\nSTU
-TID_TRUE_GOLD_ASH_SKIN,TRUE GOLD ASH
-TID_TRUE_GOLD_ASH_SKIN_SHOP,TRUE GOLD\nASH
-TID_TRUE_SILVER_ASH_SKIN,TRUE SILVER ASH
-TID_TRUE_SILVER_ASH_SKIN_SHOP,TRUE SILVER\nASH
-TID_TRUE_GOLD_MEG_SKIN,TRUE GOLD MEG
-TID_TRUE_GOLD_MEG_SKIN_SHOP,TRUE GOLD\nMEG
-TID_TRUE_SILVER_MEG_SKIN,TRUE SILVER MEG
-TID_TRUE_SILVER_MEG_SKIN_SHOP,TRUE SILVER\nMEG
-TID_TRUE_GOLD_LOLA_SKIN,TRUE GOLD LOLA
-TID_TRUE_GOLD_LOLA_SKIN_SHOP,TRUE GOLD\nLOLA
-TID_TRUE_SILVER_LOLA_SKIN,TRUE SILVER LOLA
-TID_TRUE_SILVER_LOLA_SKIN_SHOP,TRUE SILVER\nLOLA
-TID_CRASH_TEST_DARRYL_SKIN,CRASH TEST DARRYL
-TID_CRASH_TEST_DARRYL_SKIN_SHOP,CRASH TEST\nDARRYL
-TID_BIKER_CARL_SKIN,BIKER CARL
-TID_BIKER_CARL_SKIN_SHOP,BIKER CARL
-TID_PYRO_SPIKE_SKIN,PYRO SPIKE
-TID_PYRO_SPIKE_SKIN_SHOP,PYRO SPIKE
-TID_MONSTER_TRUCK_MEG_SKIN,MONSTER TRUCK MEG
-TID_MONSTER_TRUCK_MEG_SKIN_SHOP,MONSTER TRUCK\nMEG
-TID_OVERLORD_BYRON_SKIN,OVERLORD BYRON
-TID_OVERLORD_BYRON_SKIN_SHOP,OVERLORD\nBYRON
-TID_GALAXY_STORM_LOLA_SKIN,GALAXY STORM LOLA
-TID_GALAXY_STORM_LOLA_SKIN_SHOP,GALAXY STORM\nLOLA
-TID_EMPRESS_BONNIE_SKIN,EMPRESS BONNIE
-TID_EMPRESS_BONNIE_SKIN_SHOP,EMPRESS\nBONNIE
-TID_TEMPEST_TARA_SKIN,TEMPEST TARA
-TID_TEMPEST_TARA_SKIN_SHOP,TEMPEST\nTARA
-TID_VALKYRIE_JANET_SKIN,VALKYRIE JANET
-TID_VALKYRIE_JANET_SKIN_SHOP,VALKYRIE\nJANET
-TID_DARUMA_MRP_SKIN,DARUMA MR. P
-TID_DARUMA_MRP_SKIN_SHOP,DARUMA\nMR. P
+TID_TRUE_GOLD_BELLE_SKIN,СПРАВЖНЯ ЗОЛОТА БЕЛЛЬ
+TID_TRUE_GOLD_BELLE_SKIN_SHOP,СПРАВЖНЯ ЗОЛОТА\nБЕЛЛЬ
+TID_TRUE_SILVER_BELLE_SKIN,СПРАВЖНЯ СРІБНА БЕЛЛЬ
+TID_TRUE_SILVER_BELLE_SKIN_SHOP,СПРАВЖНЯ СРІБНА\nБЕЛЛЬ
+TID_TRUE_GOLD_STU_SKIN,СПРАВЖНІЙ ЗОЛОТИЙ СТУ
+TID_TRUE_GOLD_STU_SKIN_SHOP,СПРАВЖНІЙ ЗОЛОТИЙ\nСТУ
+TID_TRUE_SILVER_STU_SKIN,СПРАВЖНІЙ СРІБЛИЙ СТУ
+TID_TRUE_SILVER_STU_SKIN_SHOP,СПРАВЖНІЙ СРІБЛИЙ\nСТУ
+TID_TRUE_GOLD_ASH_SKIN,СПРАВЖНІЙ ЗОЛОТИЙ ЕШ
+TID_TRUE_GOLD_ASH_SKIN_SHOP,СПРАВЖНІЙ ЗОЛОТИЙ\nЕШ
+TID_TRUE_SILVER_ASH_SKIN,СПРАВЖНИЙ СРІБНИЙ ЕШ
+TID_TRUE_SILVER_ASH_SKIN_SHOP,СПРАВЖНІЙ СРІБНИЙ\nЕШ
+TID_TRUE_GOLD_MEG_SKIN,СПРАВЖНЯ ЗОЛОТА МЕГ
+TID_TRUE_GOLD_MEG_SKIN_SHOP,СПРАВЖНЯ ЗОЛОТА\nМЕГ
+TID_TRUE_SILVER_MEG_SKIN,СПРАВЖНЯ СРІБНА МЕГ
+TID_TRUE_SILVER_MEG_SKIN_SHOP,СПРАВЖНЯ СРІБНА\nМЕГ
+TID_TRUE_GOLD_LOLA_SKIN,СПРАВЖНЯ ЗОЛОТА ЛОЛА
+TID_TRUE_GOLD_LOLA_SKIN_SHOP,СПРАВЖНЯ ЗОЛОТА\nЛОЛА
+TID_TRUE_SILVER_LOLA_SKIN,СПРАВЖНЯ СРІБНА ЛОЛА
+TID_TRUE_SILVER_LOLA_SKIN_SHOP,СПРАВЖНЯ СРІБЛА\nЛОЛА
+TID_CRASH_TEST_DARRYL_SKIN,КРАШ-ТЕСТ ДЕРІЛ
+TID_CRASH_TEST_DARRYL_SKIN_SHOP,КРАШ-ТЕСТ\nДЕРІЛ
+TID_BIKER_CARL_SKIN,РОВЕРИСТ КАРЛ
+TID_BIKER_CARL_SKIN_SHOP,РОВЕРИСТ КАРЛ
+TID_PYRO_SPIKE_SKIN,ПІРО СПАЙК
+TID_PYRO_SPIKE_SKIN_SHOP,ПІРО СПАЙК
+TID_MONSTER_TRUCK_MEG_SKIN,МОНСТР-ТРАК МЕГ
+TID_MONSTER_TRUCK_MEG_SKIN_SHOP,МОНСТР ТРАК\nМЕГ
+TID_OVERLORD_BYRON_SKIN,ПОВЕЛИТЕЛЬ БАЙРОН
+TID_OVERLORD_BYRON_SKIN_SHOP,ПОВЕЛИТЕЛЬ\nБАЙРОН
+TID_GALAXY_STORM_LOLA_SKIN,ГАЛАКТИЧНА БУРЯ ЛОЛА
+TID_GALAXY_STORM_LOLA_SKIN_SHOP,ГАЛАКТИЧНА БУРЯ\nЛОЛА
+TID_EMPRESS_BONNIE_SKIN,ІМПЕРАТРИЦЯ БОННІ
+TID_EMPRESS_BONNIE_SKIN_SHOP,ІМПЕРАТРИЦЯ \nBONNIE
+TID_TEMPEST_TARA_SKIN,БУЙНА ТАРА
+TID_TEMPEST_TARA_SKIN_SHOP,БУЙНА\nТАРА
+TID_VALKYRIE_JANET_SKIN,ВАЛКІРІЯ ДЖЕНЕТ
+TID_VALKYRIE_JANET_SKIN_SHOP,ВАЛКІРІЯ\nДЖЕНЕТ
+TID_DARUMA_MRP_SKIN,ДАРУМА П.
+TID_DARUMA_MRP_SKIN_SHOP,DARUMA\nП.
 TID_SKIN_INFO_CAMPAIGN_LANTERN,Lantern Brawl Skin
 TID_ACCESSORY_DRILLER_REBUILD,REBUILD
 TID_ACCESSORY_DRILLER_REBUILD_DESC,Jacky rebuilds the environment in a small radius around her.
