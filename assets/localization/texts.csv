@@ -1290,7 +1290,7 @@ TID_SHOP_ARCHIVE_SKINS_RARE,РІДКИЙ ШАНС!
 TID_SHOP_ARCHIVE_SKINS_LAST,ОСТАННІЙ ШАНС!
 TID_SHOP_LEGENDARY_SKINS,ЗОРЯНИЙ МАГАЗИН
 TID_SHOP_STAR_BOXES,ЗОРЯНІ БОКСИ
-TID_SHOP_FREE,БЕЗКОШТОВНО
+TID_SHOP_FREE,БЕЗК.
 TID_SHOP_CLAIM,ПРЕТЕНЗІЯ
 TID_SHOP_NEW_DAILY_OFFERS_AVAILABLE_IN,<TIME>
 TID_SHOP_TICKETS_AVAILABLE_FOR,<TIME>
@@ -2034,15 +2034,15 @@ TID_BANKHEIST_7,Cactus Corridor
 TID_BATTLE_ROYALE_9,Східний вітер
 TID_BATTLE_ROYALE_10,Дрейф дюн
 TID_NO_FRIENDS_GO_TO_FRIENDS,Go to Friends
-TID_EVENT_MODIFIER_1,ENERGY DRINK
-TID_EVENT_MODIFIER_2,ANGRY ROBO
-TID_EVENT_MODIFIER_3,METEOR SHOWER
-TID_EVENT_MODIFIER_4,GRAVEYARD SHIFT
-TID_EVENT_MODIFIER_13,SUPER CHARGE
-TID_EVENT_MODIFIER_14,FAST BRAWLERS
-TID_EVENT_MODIFIER_DESC_1,"If you're lonely, an ED might appear nearby. Grab it to boost your Brawler's damage and speed for a short while!"
-TID_EVENT_MODIFIER_DESC_2,An angry robot will randomly show up and attack the nearest Brawler. Watch out!
-TID_EVENT_MODIFIER_DESC_3,"This is not a meteor shower that you want to stop and admire. Watch out for big, falling rocks!"
+TID_EVENT_MODIFIER_1,ЕНЕРГЕТИЧНИЙ НАПИТОК
+TID_EVENT_MODIFIER_2,ЗЛИЙ БОТ
+TID_EVENT_MODIFIER_3,ДОЩ МЕТЕОРИТІВ
+TID_EVENT_MODIFIER_4,ЗМІНА КЛАДУ
+TID_EVENT_MODIFIER_13,СУПЕР ЗАРЯДКА
+TID_EVENT_MODIFIER_14,ШВИДКІ БРАВЛЕРИ
+TID_EVENT_MODIFIER_DESC_1,"Якщо ви самотні, поруч може з’явитися КОКТЕЙЛЬ. Візьміть його, щоб ненадовго підвищити шкоду та швидкість вашого бравлера!"
+TID_EVENT_MODIFIER_DESC_2,Розгніваний робот випадковим чином з’явиться і атакує найближчого Бравлера. Стережись!
+TID_EVENT_MODIFIER_DESC_3,"Це не метеорний дощ, яким хочеться зупинитися і помилуватися. Остерігайтеся великих каменів, що падають!"
 TID_BALL_4,Підступні поля
 TID_EVENT_MODIFIER_DESC_4,"You lose health constantly, but dealing damage to enemy Brawlers will restore some of your health. Defeating a Brawler will restore you to full health! All healing abilities have reduced effectiveness."
 TID_EVENT_MODIFIER_DESC_13,Super charges much faster!
@@ -2072,9 +2072,9 @@ TID_TEAM_ERROR_ALREADY_IN_ROOM,Player is already in your team!
 TID_TEAM_ERROR_ALREADY_INVITED,Player is already invited!
 TID_BATTLE_ROYALE_D2,Бурхливі рівнини
 TID_UNDERTAKER_GREASER_SKIN,РОКЗІРКА МОРТІС
-TID_COMMUNITY_PROPS,Community map!\n\nConcept by:\n<cff8000><CREDIT></c>
-TID_PLAYER_MAP_PROPS,Player map by:\n<cff8000><CREDIT></c>
-TID_PLAYER_MAP_WINNER_SLOT_PROPS,WINNER OF THE DAY!\n\nConcept by:\n<cff8000><CREDIT></c>
+TID_COMMUNITY_PROPS,Карта спільноти!\n\nКонцепція від:\n<cff8000><CREDIT></c>
+TID_PLAYER_MAP_PROPS,Карта гравця:\n<cff8000><CREDIT></c>
+TID_PLAYER_MAP_WINNER_SLOT_PROPS,ПЕРЕМОЖЕЦЬ ДНЯ!\n\nКонцепт:\n<cff8000><CREDIT></c>
 TID_BATTLE_ROYALE_12,Гарячий лабіринт
 TID_TEAM_INVITE_ALREADY_IN_TEAM,Player is already in a team!
 TID_HINT_38,A rotating blue circle under a Brawler means their Super is ready!
@@ -2088,7 +2088,7 @@ TID_GACHA_VIDEO_REWARD_RECEIVED,Extra rewards added!
 TID_BUTTON_NAVI_SHOP,МАГАЗИН
 TID_BUTTON_NAVI_SOCIAL,СОЦІАЛ
 TID_BUTTON_NAVI_BRAWLERS,БРАВЛЕРИ
-TID_BUTTON_NAVI_ESPORTS,ESPORTS
+TID_BUTTON_NAVI_ESPORTS,КІБЕР СПОРТ
 TID_BRAWL_TICKETS_BUTTON,PLAY
 TID_HOME_SCREEN_INVITE,INVITE
 TID_HINT_41,Your Total trophy count is a combination of all your Brawlers' individual trophies.
@@ -2139,26 +2139,26 @@ TID_ALL_TEAM_MATES_GONE,<cee0000>Both teammates defeated!</c>
 TID_RAID_BOSS_ENRAGE_1,<c99bb22bb>Boss is ANGRY!</c>
 TID_RAID_BOSS_ENRAGE_2,<c99bb2222>Boss is FURIOUS!</c>
 TID_RAID_BOSS_ENRAGE_3,<c99bbbb22>Boss is ENRAGED!</c>
-TID_RAID_BOSS_DIFFICULTY_0,Normal
-TID_RAID_BOSS_DIFFICULTY_1,Hard
-TID_RAID_BOSS_DIFFICULTY_2,Expert
-TID_RAID_BOSS_DIFFICULTY_3,Master
-TID_RAID_BOSS_DIFFICULTY_4,Insane
-TID_RAID_BOSS_DIFFICULTY_5,Insane II
-TID_RAID_BOSS_DIFFICULTY_6,Insane III
-TID_RAID_BOSS_DIFFICULTY_7,Insane IV
-TID_RAID_BOSS_DIFFICULTY_8,Insane V
-TID_RAID_BOSS_DIFFICULTY_9,Insane VI
-TID_RAID_BOSS_DIFFICULTY_10,Insane VII
-TID_RAID_BOSS_DIFFICULTY_11,Insane VIII
-TID_RAID_BOSS_DIFFICULTY_12,Insane IX
-TID_RAID_BOSS_DIFFICULTY_13,Insane X
-TID_RAID_BOSS_DIFFICULTY_14,Insane XI
-TID_RAID_BOSS_DIFFICULTY_15,Insane XII
-TID_RAID_BOSS_DIFFICULTY_16,Insane XIII
-TID_RAID_BOSS_DIFFICULTY_17,Insane XIV
-TID_RAID_BOSS_DIFFICULTY_18,Insane XV
-TID_RAID_BOSS_DIFFICULTY_19,Insane XVI
+TID_RAID_BOSS_DIFFICULTY_0,Нормальний
+TID_RAID_BOSS_DIFFICULTY_1,Важкий
+TID_RAID_BOSS_DIFFICULTY_2,Експерт
+TID_RAID_BOSS_DIFFICULTY_3,Майстер
+TID_RAID_BOSS_DIFFICULTY_4,Божевільний
+TID_RAID_BOSS_DIFFICULTY_5,Божевільний II
+TID_RAID_BOSS_DIFFICULTY_6,Божевільний III
+TID_RAID_BOSS_DIFFICULTY_7,Божевільний IV
+TID_RAID_BOSS_DIFFICULTY_8,Божевільний В
+TID_RAID_BOSS_DIFFICULTY_9,Божевільний В.І
+TID_RAID_BOSS_DIFFICULTY_10,Божевільний VII
+TID_RAID_BOSS_DIFFICULTY_11,Божевільний VIII
+TID_RAID_BOSS_DIFFICULTY_12,Божевільний IX
+TID_RAID_BOSS_DIFFICULTY_13,Божевільний X
+TID_RAID_BOSS_DIFFICULTY_14,Божевільний XI
+TID_RAID_BOSS_DIFFICULTY_15,Божевільний XII
+TID_RAID_BOSS_DIFFICULTY_16,Божевільний XIII
+TID_RAID_BOSS_DIFFICULTY_17,Божевільний XIV
+TID_RAID_BOSS_DIFFICULTY_18,Божевільний XV
+TID_RAID_BOSS_DIFFICULTY_19,Божевільний XVI
 TID_RAID_BOSS_DIFFICULTY_20,YOU GUYS ROCK!
 TID_MODES_NEW_EVENT,НОВА ПОДІЯ!
 TID_MODES_NEW_EVENTS,НОВІ ПОДІЇ!
@@ -2224,7 +2224,7 @@ TID_DYNAMIKE_SANTA_SKIN_SHOP,ПОМІЧНИЦЯ\nПЕННІ
 TID_DYNAMIKE_CHEF_SKIN_SHOP,САНТА\nМАЙК
 TID_BROCK_BOOMBOX_SKIN_SHOP,ГОСТРИЙ\nМАЙК
 TID_NITA_REINDEER_SKIN_SHOP,БУМ БОКС\nБРОК
-TID_EVENT_STARTS_IN,Event Starts in: <TIME>
+TID_EVENT_STARTS_IN,Нова подія через: <TIME>
 TID_UNDERTAKER_HAT_SKIN,ШАПКОВИЙ МОРТІС
 TID_CREATE_ROOM_CODE,CREATE TEAM CODE
 TID_EVENT_LOCKED_TEAM,This event doesn't support playing in Teams!
@@ -2248,7 +2248,7 @@ TID_GOLDRUSH_XMAS_8,Frozen Lake
 TID_GOLDRUSH_XMAS_9,Frosty Crystals
 TID_GOLDRUSH_XMAS_10,Treasure Hunt
 TID_RAID_BOSS_DIFFICULTY_CAP,"Your Difficulty level has been lowered to match those of your Team. While the difficulty is lowered, completing the level will not grant progress towards your Quest."
-TID_RAID_BOSS_DIFFICULTY,Челенж:
+TID_RAID_BOSS_DIFFICULTY,Важкість:
 TID_BOSS_3,Chew Out
 TID_BOSS_4,Team Day
 TID_BOSS_5,Table Flip
@@ -2275,7 +2275,7 @@ TID_HERO_INFO_LEVEL_WITH_NUMBER,POWER <NUMBER>
 TID_HERO_INFO_LEVEL_WITH_NUMBER_LONG,POWER LEVEL <NUMBER>
 TID_IN_YOUR_TEAM,YOUR TEAM
 TID_TEAM_REQEST_JOIN_FAIL_TEAM_FULL,Cannot send join request. Your team is full
-TID_EVENT_ENDS_IN,Event Ends in: <TIME>
+TID_EVENT_ENDS_IN,Подія закінчується через: <TIME>
 TID_EVENT_LOCKED_CAN_CLAIM_WARNING,Unlock Event from the Trophy Road screen
 TID_EVENT_LOCKED_CAN_CLAIM,Congratulations! You can now unlock the Event from the Trophy Road screen
 TID_BATTLE_ROYALE_3D,Долина Смерті
@@ -2537,7 +2537,7 @@ TID_PENNY_BUNNY_SKIN_SHOP,ЗАЙЧИК ПЕННІ
 TID_PURCHASE_POPUP_CONFIRM_OFFER,BUY OFFER?
 TID_PURCHASE_POPUP_CONFIRM_SKIN,КУПИТИ СКІН?
 TID_PURCHASE_POPUP_CONFIRM_HERO,BUY BRAWLER?
-TID_BUTTON_NAME_COLOR,NAME COLOR
+TID_BUTTON_NAME_COLOR,КОЛІР ІМ'Я
 TID_SELECT_COLOR_TITLE,SELECT COLOR
 TID_PROFILE_COLOR,COLOR
 TID_POPUP_BRAWLTV_TITLE,БРАВЛ ТВ
@@ -3339,9 +3339,9 @@ TID_ACCESSORY_BLOCKED_REQUIRES_WALL,Потрібен активний хедж!
 TID_ACCESSORY_BLOCKED_ULTI_ALREADY_CHARGED,Супер вже заряджено!
 TID_ACCESSORY_BLOCKED_MISSING_LOU_ULTI,Потрібен сироп на землі!
 TID_ACCESSORY_BLOCKED_MISSING_OPPONENT_IN_AREA,Немає суперників на сиропі!
-TID_ACCESSORY_BLOCKED_REQUIRES_RAGE,Потрібно більше Rage!
+TID_ACCESSORY_BLOCKED_REQUIRES_RAGE,Потрібно більше злості!
 TID_ACCESSORY_BLOCKED_SUPER_REQUIRED,Потрібен супер заряд!
-TID_ACCESSORY_BLOCKED_REQUIRES_MECHA,Потрібна форма MECHA!
+TID_ACCESSORY_BLOCKED_REQUIRES_MECHA,Потрібна форма МЕХА!
 TID_ACCESSORY_BLOCKED_REQUIRES_DUPLICATE,Потрібне Его Лоли!
 TID_ACCESSORY_BLOCKED_DUPLICATE_TOO_FAR,Его Лоли занадто далеко!
 TID_WALLY_SHORT_DESC,ПІДТРИМКА
@@ -3380,7 +3380,7 @@ TID_ACCESSORY_MAX_DASH_DESC,Макс кидається вперед і стає
 TID_ACCESSORY_SHELLY_DASH_DESC,"Шеллі мчить вперед, пропускаючи кілька непотрібних кроків!"
 TID_ACCESSORY_DRILLER_SPEED_BOOST_DESC,Джекі отримує приплив енергії та рухається <c00cc00><VALUE1></c>% швидше протягом <c00cc00><VALUE2></c> секунд.
 TID_ACCESSORY_TOWER_BURST_HEAL_DESC,"Пем запускає свою вежу, щоб випромінювати імпульс, який зцілює союзників у радіусі дії вежі, включно з нею, на здоров’я <c00cc00><VALUE1></c>."
-TID_ACCESSORY_TNT_SPIN_DESC,Динамік шалено обертається зі збільшеною швидкістю і кидає навколо себе кілька паличок динаміту. Кожен динаміт завдає ворогам шкоди <c00cc00><VALUE1></c>.
+TID_ACCESSORY_TNT_SPIN_DESC,Динамайк шалено обертається зі збільшеною швидкістю і кидає навколо себе кілька паличок динаміту. Кожен динаміт завдає ворогам шкоди <c00cc00><VALUE1></c>.
 TID_ACCESSORY_TELEPORT_TO_PET_DESC,8-Bit миттєво телепортується до свого підсилювача пошкоджень.
 TID_ACCESSORY_BARREL_SPIN_DESC,"Дерріл обертається і розбризкує шквал пострілів у всіх напрямках. Кожен постріл завдає шкоди <c00cc00><VALUE1></c> і перезаряджає його супер на <c00cc00><VALUE2>%</c>, якщо вразить ворогів!"
 TID_ACCESSORY_FRANK_CC_IMMUNITY_DESC,"Френк знімає з себе будь-який негативний вплив і на мить стає несприйнятливим до оглушення, сповільнення та відкидання."
@@ -3391,49 +3391,49 @@ TID_ACCESSORY_MORTIS_SWING_DESC,"Мортіс крутить свою лопат
 TID_ACCESSORY_TARA_VISION_DESC,"Тара та її союзники можуть бачити всіх ворогів, навіть всередині кущів, протягом <c00cc00><VALUE1></c> секунд."
 TID_ACCESSORY_POCO_REGEN_DESC,Поко та всі сусідні союзники зцілюють <c00cc00><VALUE1></c> здоров’я за секунду протягом <c00cc00><VALUE2></c> секунд.
 TID_ACCESSORY_SNIPER_HANDGUN_DESC,"Пайпер робить оборонний постріл у найближчого ворога, завдаючи шкоди <c00cc00><VALUE2></c>, а також відштовхуючи його назад і сповільнюючи його."
-TID_ACCESSORY_SPAWNER_DUDE_PROMOTE_DESC,"Містер P покращує свого поточного вантажника, збільшуючи його шкоду на <c00cc00><VALUE1></c> і здоров’я на <c00cc00><VALUE2></c>."
+TID_ACCESSORY_SPAWNER_DUDE_PROMOTE_DESC,"Містер П. покращує свого поточного вантажника, збільшуючи його шкоду на <c00cc00><VALUE1></c> і здоров’я на <c00cc00><VALUE2></c>."
 TID_ACCESSORY_SANDY_SLEEP_DESC,"Сенді засинає на <c00cc00><VALUE1></c> секунд, і його здоров'я повністю відновлено."
 TID_ACCESSORY_BEE_SNIPER_SLOW_DESC,"Беа кидає вулик, навколо якого бризкає липкий мед. Мед уповільнює ворогів, які в нього вступають."
-TID_ACCESSORY_BULL_HEAL_DESC,Бик миттєво омолоджується для <c00cc00><VALUE1></c> здоров’я.
-TID_ACCESSORY_GUNSLINGER_RELOAD_DESC,Colt миттєво перезаряджає <c00cc00><VALUE1></c> боєприпаси.
+TID_ACCESSORY_BULL_HEAL_DESC,Булл миттєво омолоджується для <c00cc00><VALUE1></c> здоров’я.
+TID_ACCESSORY_GUNSLINGER_RELOAD_DESC,Кольт миттєво перезаряджає <c00cc00><VALUE1></c> боєприпаси.
 TID_ACCESSORY_MUMMY_PUSH_DESC,"Емз відштовхує всіх ворогів навколо себе, а також завдає шкоди <c00cc00><VALUE1></c>."
 TID_ACCESSORY_NINJA_FAKE_DESC,"Леон створює ілюзію себе, щоб збити з пантелику своїх ворогів."
 TID_ACCESSORY_BASEBALL_HEAL_DESC,Бібі зцілює <c00cc00><VALUE1></c> здоров’я за секунду протягом <c00cc00><VALUE2></c> секунд.
-TID_ACCESSORY_GROW_BUSH,GROW LIGHT
-TID_ACCESSORY_CROW_SHIELD,DEFENSE BOOSTER
-TID_ACCESSORY_WALLY_HEAL,GARDEN MULCHER
-TID_ACCESSORY_ROCKET_JUMP,ROCKET LACES
-TID_ACCESSORY_RICO_SHOOT_AROUND,MULTIBALL LAUNCHER
-TID_ACCESSORY_CACTUS_SHOOT_AROUND,POPPING PINCUSHION
-TID_ACCESSORY_ARTILLERY_DESTROY_PET,POCKET DETONATOR
-TID_ACCESSORY_PET_SLAM,BEAR PAWS
-TID_ACCESSORY_BARKEEP_SLOW,STICKY SYRUP MIXER
-TID_ACCESSORY_JESSIE_SLOW,SPARK PLUG
-TID_ACCESSORY_GENE_PUSH,LAMP BLOWOUT
-TID_ACCESSORY_TICK_EXTRA_MINES,MINE MANIA
-TID_ACCESSORY_MAX_DASH,PHASE SHIFTER
-TID_ACCESSORY_SHELLY_DASH,FAST FORWARD
-TID_ACCESSORY_DRILLER_SPEED_BOOST,PNEUMATIC BOOSTER
-TID_ACCESSORY_TOWER_BURST_HEAL,PULSE MODULATOR
-TID_ACCESSORY_TNT_SPIN,FIDGET SPINNER
-TID_ACCESSORY_TELEPORT_TO_PET,CHEAT CARTRIDGE
-TID_ACCESSORY_BARREL_SPIN,RECOILING ROTATOR
-TID_ACCESSORY_FRANK_CC_IMMUNITY,ACTIVE NOISE CANCELING
-TID_ACCESSORY_CARL_TRAIL,HEAT EJECTOR
-TID_ACCESSORY_BOW_TOTEM,SUPER TOTEM
-TID_ACCESSORY_PRIMO_GRAB,SUPLEX SUPPLEMENT
-TID_ACCESSORY_MORTIS_SWING,COMBO SPINNER
-TID_ACCESSORY_TARA_VISION,PSYCHIC ENHANCER
-TID_ACCESSORY_POCO_REGEN,TUNING FORK
-TID_ACCESSORY_SNIPER_HANDGUN,AUTO AIMER
-TID_ACCESSORY_SPAWNER_DUDE_PROMOTE,SERVICE BELL
-TID_ACCESSORY_SANDY_SLEEP,SLEEP STIMULATOR
-TID_ACCESSORY_BEE_SNIPER_SLOW,HONEY MOLASSES
-TID_ACCESSORY_BULL_HEAL,T-BONE INJECTOR
-TID_ACCESSORY_GUNSLINGER_RELOAD,SPEEDLOADER
-TID_ACCESSORY_MUMMY_PUSH,FRIENDZONER
-TID_ACCESSORY_NINJA_FAKE,CLONE PROJECTOR
-TID_ACCESSORY_BASEBALL_HEAL,VITAMIN BOOSTER
+TID_ACCESSORY_GROW_BUSH,РОСТУЙ СВІТЛО
+TID_ACCESSORY_CROW_SHIELD,ПІДСИЛЮВАЧ ОБОРОНИ
+TID_ACCESSORY_WALLY_HEAL,САДОВИЙ МУЛЬЧЕР
+TID_ACCESSORY_ROCKET_JUMP,ШНУРКИ-РАКЕТИ
+TID_ACCESSORY_RICO_SHOOT_AROUND,БАГАТО М'ЯЧОВИЙ ЗАПУСК
+TID_ACCESSORY_CACTUS_SHOOT_AROUND,ВИБУХАЮЧА ПОДУШКА
+TID_ACCESSORY_ARTILLERY_DESTROY_PET,КИШЕНЬКОВИЙ ДЕТОНАТОР
+TID_ACCESSORY_PET_SLAM,ВЕДМЕДЕЖИНІ ЛАПИ
+TID_ACCESSORY_BARKEEP_SLOW,ЛИПКА СУМІШ
+TID_ACCESSORY_JESSIE_SLOW,СВІЧКА ЗАПАЛЮВАННЯ
+TID_ACCESSORY_GENE_PUSH,ВИГОРАННЯ ЛАМПИ
+TID_ACCESSORY_TICK_EXTRA_MINES,МІНО МАНІЯ
+TID_ACCESSORY_MAX_DASH,ФАЗОЗМІН
+TID_ACCESSORY_SHELLY_DASH,ШВИДКИЙ ВПЕРЕД
+TID_ACCESSORY_DRILLER_SPEED_BOOST,ПНЕВМАТИЧНИЙ ПІДСИЛЬНИК
+TID_ACCESSORY_TOWER_BURST_HEAL,ІМПУЛЬСНИЙ МОДУЛЯТОР
+TID_ACCESSORY_TNT_SPIN,СПІНЕР
+TID_ACCESSORY_TELEPORT_TO_PET,ЧІТИ
+TID_ACCESSORY_BARREL_SPIN,ПЕРЕВЕРТАЮЧА АТАКА
+TID_ACCESSORY_FRANK_CC_IMMUNITY,АКТИВНЕ ШУМОПОГЛИНАННЯ
+TID_ACCESSORY_CARL_TRAIL,ТЕПЛОВИДАВАЛЬНИК
+TID_ACCESSORY_BOW_TOTEM,СУПЕР ТОТЕМ
+TID_ACCESSORY_PRIMO_GRAB,ПЕРЕКИДАННЯ
+TID_ACCESSORY_MORTIS_SWING,КОМБО СПІННЕР
+TID_ACCESSORY_TARA_VISION,ПСИХІЧНИЙ ПІДСИЛЬНИК
+TID_ACCESSORY_POCO_REGEN,КАМЕРТОН
+TID_ACCESSORY_SNIPER_HANDGUN,РУЧНИЙ ПІСТОЛЬ
+TID_ACCESSORY_SPAWNER_DUDE_PROMOTE,СЕРВІСНИЙ ДЗВІНОК
+TID_ACCESSORY_SANDY_SLEEP,СТИМУЛЯТОР СНУ
+TID_ACCESSORY_BEE_SNIPER_SLOW,МЕДОВА МЕЛЯСА
+TID_ACCESSORY_BULL_HEAL,ІНЖЕКТОР Т-КІСТКИ
+TID_ACCESSORY_GUNSLINGER_RELOAD,ШВИДКОВАНТАЖНИК
+TID_ACCESSORY_MUMMY_PUSH,ДРУЖНЯ ЗОНА
+TID_ACCESSORY_NINJA_FAKE,ПРОЕКТОР КЛОНА
+TID_ACCESSORY_BASEBALL_HEAL,ВІТАМІНОВИЙ БУСТЕР
 TID_KAKAO_TEAM_INVITE,INVITE
 TID_KAKAO_TEAM_INVITING,INVITING
 TID_KAKAO_TEAM_INVITED_SUCCESS,Team invite sent!
@@ -3480,16 +3480,16 @@ TID_BALL_32,Добре вирізане
 TID_BALL_33,Центральне поле
 TID_BALL_34,Викривлений пляж
 TID_BATTLE_ROYALE_44,Тисяча озер
-TID_ACCESSORY_BLOCKED_PORTER_ALREADY_PROMOTED,Porter already buffed!
-TID_ACCESSORY_BLOCKED_TARGET_ALREADY_ACTIVE,Target already active!
-TID_ACCESSORY_BLOCKED_FULL_AMMO,Already at full ammo!
+TID_ACCESSORY_BLOCKED_PORTER_ALREADY_PROMOTED,Портер уже покращений!
+TID_ACCESSORY_BLOCKED_TARGET_ALREADY_ACTIVE,Ціль уже активна!
+TID_ACCESSORY_BLOCKED_FULL_AMMO,Вже повні боєприпаси!
 TID_ENTER_BIRTHDAY_BUTTON,Enter Birthday
 TID_FREE_TEXT_CHAT_MUTED_OTHER,Another player has text chat muted
 TID_FREE_TEXT_CHAT_MUTED_LFG,Text chat is muted when using Looking for a Team
 TID_FREE_TEXT_CHAT_MUTED_YOU,You have muted text chat. Go to Online Players menu to unmute it.
 TID_SKIN_INFO_CAMPAIGN_6_NOT_AVAILABLE,PSG skin
 TID_KAKAO_TEAM_INVITED,INVITED
-TID_ACCESSORY_CHARGES_PER_MATCH,Charges per match: <NUM>
+TID_ACCESSORY_CHARGES_PER_MATCH,Використань за матч: <NUM>
 TID_SKIN_INFO_CAMPAIGN_7_NOT_AVAILABLE,Supercell Make skin\n\nConcept by:\n<cff8000><CREDIT></c>
 TID_CLAN_CANNOT_JOIN_NON_FF_CLAN,Can't join a Club that's not Family Friendly
 TID_ALLIANCE_FF_FAILED_NO_RIGHTS,Only Club President can change the club to Family Friendly
@@ -3539,7 +3539,7 @@ TID_SPEC_ABI_CONTROLLER_1,AUTOFOCUS
 TID_SPEC_ABI_CONTROLLER_1_DESC,Peep deals up to <c00cc00><VALUE1></c> extra damage based on his travel distance.
 TID_SPEC_ABI_CONTROLLER_2,TEMPERED STEEL
 TID_SPEC_ABI_CONTROLLER_2_DESC,Nani takes <c00cc00><VALUE1></c>% less damage while her Super is active.
-TID_EDIT_CONTROLS,Edit Controls
+TID_EDIT_CONTROLS,Змінити керування
 TID_EDIT_SAVE,Save
 TID_EDIT_MOVEMENT,MOVEMENT
 TID_EDIT_ATTACK,ATTACKING
@@ -3554,11 +3554,11 @@ TID_YOOZOO_LOGIN_PP,Privacy Policy
 TID_YOOZOO_LOGIN_BUTTON,Log in
 TID_YOOZOO_LOGIN_DESC,本网络游戏适合年满12周岁以上的用户使用，\n请您确认已如实进行实名认证。为了您的健康，请合理控制游戏时间。\n健康游戏忠告 抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当\n适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活
 TID_SETTINGS_LOGOUT_BUTTON,Log Out
-TID_ACCESSORY_BLOWER_TRAMPOLINE,SPRING EJECTOR
-TID_ACCESSORY_BLOWER_TRAMPOLINE_DESC,"Gale drops a bounce pad underfoot, launching friend and foe alike into the air."
-TID_ACCESSORY_CONTROLLER_EXPLODE,WARP BLAST
-TID_ACCESSORY_CONTROLLER_EXPLODE_DESC,Nani detonates Peep and teleports to his last location.
-TID_ACCESSORY_BLOCKED_MISSING_GUIDED_PROJECTILE,Super not activated!
+TID_ACCESSORY_BLOWER_TRAMPOLINE,ПРУЖИННИЙ ЕЖЕКТОР
+TID_ACCESSORY_BLOWER_TRAMPOLINE_DESC,"Гейл кидає під ноги стрибковий майданчик, кидаючи в повітря як друга, так і ворога."
+TID_ACCESSORY_CONTROLLER_EXPLODE,ТЕЛЕПОРТ
+TID_ACCESSORY_CONTROLLER_EXPLODE_DESC,Нані підриває Піпа і телепортується до свого останнього місця.
+TID_ACCESSORY_BLOCKED_MISSING_GUIDED_PROJECTILE,Супер не активовано!
 TID_ANTIADDICTION_NO_REAL_NAME_VERIFIED_1,由于您是未成年人，根据国家防沉迷系统的要求，您在此时段无法进行游戏
 TID_ANTIADDICTION_NO_REAL_NAME_VERIFIED_2,由于您是未成年人，根据国家防沉迷系统的要求，您在此时段无法进行游戏
 TID_ANTIADDICTION_NO_REAL_NAME_VERIFIED_3,由于您是未成年人，根据国家防沉迷系统的要求，您在此时段无法进行游戏
@@ -3579,7 +3579,7 @@ TID_SETTINGS_BUTTON_WECHAT_LOGOUT,Log out
 TID_SETTINGS_BUTTON_QQ_LOGOUT,Log out
 TID_SETTINGS_WECHAT_NOT_INSTALLED,You haven't installed WeChat yet
 TID_BRAWL_PASS_BUTTON,БРАВЛ ПАС
-TID_ACCESSORY_BLOCKED_INVALID_SPAWN_POSITION,Can't drop Gadget here!
+TID_ACCESSORY_BLOCKED_INVALID_SPAWN_POSITION,Не можна використати гаджет тут!
 TID_TENCENT_MULTIPLE_LOGINS,You can only log in to one account at a time. Please log out first.
 TID_TENCENT_CONFIRM_LOG_OUT_TITLE,Log out
 TID_TENCENT_CONFIRM_LOG_OUT,Do you want to log out of the current account?
@@ -3731,8 +3731,8 @@ TID_SPEC_ABI_POWER_LEVELER_1,TO THE MAX!
 TID_SPEC_ABI_POWER_LEVELER_1_DESC,Surge's main attack now splits when hitting walls.
 TID_SPEC_ABI_POWER_LEVELER_2,SERVE ICE COLD
 TID_SPEC_ABI_POWER_LEVELER_2_DESC,Surge keeps his STAGE 1 Super upgrade for the full match duration.
-TID_ACCESSORY_POWER_LEVELER_BLINK,POWER SURGE
-TID_ACCESSORY_POWER_LEVELER_BLINK_DESC,Surge overloads his circuits and teleports a short distance forward.
+TID_ACCESSORY_POWER_LEVELER_BLINK,СКЛАД НАПРУГИ
+TID_ACCESSORY_POWER_LEVELER_BLINK_DESC,Вольт перевантажує його ланцюги і телепортується на коротку відстань вперед.
 TID_FRIEND_INVITE_POST_SHARE_TITLE,Let's play together!
 TID_YOOZOO_TERMS_CHECK_REQUIRED,"In order to ensure your personal privacy and security,\nplease read and agree to the user agreement and privacy policy first."
 TID_POPUP_BRAWLTV_TEXT_CN,Watch top players play Brawl Stars!
@@ -5356,8 +5356,8 @@ TID_HEIST_30,Diagonal Alley
 TID_HEIST_32,Rattlesnake Ravine
 TID_HOTZONE_29,Night at the Museum
 TID_HOTZONE_31,Danger Zone
-TID_CLUB_LEAGUE_TITLE,CLUB LEAGUE
-TID_CLUB_LEAGUE_HOMESCREEN_TITLE,CLUB LEAGUE
+TID_CLUB_LEAGUE_TITLE,КЛУБОВА ЛІГА
+TID_CLUB_LEAGUE_HOMESCREEN_TITLE,КЛУБОВА ЛІГА
 TID_CLUB_LEAGUE_NAME,<LEAGUE> LEAGUE
 TID_CLUB_LEAGUE_TAB_PROGRESS,PROGRESS
 TID_CLUB_LEAGUE_TAB_REWARDS,REWARDS
@@ -5366,9 +5366,9 @@ TID_CLUB_LEAGUE_EVENT_DAY,EVENT DAY <NUM>/<MAX>
 TID_CLUB_LEAGUES_BUTTON_EVENT_DAY,Event Day <DAY>
 TID_CLUB_LEAGUES_BUTTON_DAY_NEW,NEW DAY!
 TID_CLUB_LEAGUES_BUTTON_NEXT_EVENTS,NEXT EVENTS
-TID_CLUB_LEAGUES_BUTTON_RACE_COOLDOWN_DESC,Next Event Day in:
+TID_CLUB_LEAGUES_BUTTON_RACE_COOLDOWN_DESC,Наступний день подій через:
 TID_CLUB_LEAGUES_BUTTON_SEASON_COOLDOWN_DESC,Next Season starts in:
-TID_CLUB_LEAGUES_BUTTON_SEASON_RANK,Season rank: <RANK>
+TID_CLUB_LEAGUES_BUTTON_SEASON_RANK,Ранг сезону: <RANK>
 TID_CLUB_LEAGUES_BUTTON_SEASON_RANK_NOT_RANKED,Не рейтинговані в сезоні
 TID_CLUB_LEAGUES_BUTTON_JOIN_CLUB_DESC,Join a Club to play
 TID_CLUB_LEAGUES_BUTTON_REGISTRATION_CLOSED,Registration closed
@@ -5376,7 +5376,7 @@ TID_CLUB_LEAGUE_EVENT_TIME_LEFT,<TIME> left
 TID_CLUB_LEAGUE_EVENT_RACE_COOLDOWN_DESC,Next Event Day Starts in:
 TID_CLUB_LEAGUE_EVENT_RACE_COOLDOWN_TIME,<TIME>
 TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TIME,Season starts in: <TIME>
-TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TITLE,CLUB LEAGUE
+TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TITLE,КЛУБОВА ЛІГА
 TID_CLUB_LEAGUE_EVENT_SEASON_NEXT_EVENTS,Next season events:
 TID_CLUB_LEAGUE_TICKETS_PER_PLAY,<NUM><cA4B7E0>/PLAY</c>
 TID_CLUB_LEAGUE_TROPHIES_MAX_PER_WIN,Max/Win
@@ -5475,7 +5475,7 @@ TID_ACCESSORY_DUPLICATOR_GADGET_DESC,Lola's Ego stops moving to strike a pose! G
 TID_CLUB_UNLOCK_TITLE_CLUBS,CLUBS
 TID_CLUB_UNLOCK_TITLE_UNLOCKED,Unlocked!
 TID_CLUB_UNLOCK_SEARCHING_FOR_CLUB,Searching for the best Club for you...
-TID_CLUB_UNLOCK_CLUB_LEAGUE_TITLE,CLUB LEAGUE
+TID_CLUB_UNLOCK_CLUB_LEAGUE_TITLE,КЛУБОВА ЛІГА
 TID_CLUB_UNLOCK_JOIN_NEXT_SEASON,Join next season to win exclusive rewards!
 TID_CLUB_UNLOCK_CLUB_FOUND,CLUB FOUND!
 TID_CLUB_UNLOCK_WELCOME_TO_CLUB,WELCOME TO THE CLUB!
@@ -5491,7 +5491,7 @@ TID_SHOP_BRAWLOWEEN_INFO,Skin set
 TID_SKIN_INFO_BRAWLOWEEN,Brawl-o-ween skins
 TID_CLUB_LEAGUE_FLOW_NEW_SEASON,New Season!
 TID_CLUB_LEAGUE_FLOW_SEASON_ENDED,Season has ended
-TID_CLUB_LEAGUE_FLOW_CLUB_LEAGUE,CLUB LEAGUE
+TID_CLUB_LEAGUE_FLOW_CLUB_LEAGUE,КЛУБОВА ЛІГА
 TID_CLUB_LEAGUE_FLOW_DAY_NEW,NEW!
 TID_CLUB_LEAGUE_FLOW_EVENT_DAY_STARTED,EVENT DAY <NUM> STARTED!
 TID_CLUB_LEAGUE_FLOW_EVENT_DAY_ENDED,EVENT DAY <NUM> ENDED!
@@ -5564,7 +5564,7 @@ TID_CLUB_LEAGUE_INFO_PAGE_4_IMAGE_1,VISIT THE CLUB SHOP FOR...
 TID_CLUB_LEAGUE_INFO_PAGE_4_IMAGE_2,EXCLUSIVE SKINS!
 TID_CLUB_LEAGUE_INFO_PAGE_4_IMAGE_3,POWER POINTS FOR ANY BRAWLER!
 TID_CLUB_LEAGUE_INFO_PAGE_4_IMAGE_4,GEAR ITEMS FOR BRAWLERS OVER POWER LEVEL 10!
-TID_CLUB_LEAGUE_ONBOARDING_TITLE,CLUB LEAGUE
+TID_CLUB_LEAGUE_ONBOARDING_TITLE,КЛУБОВА ЛІГА
 TID_CLUB_LEAGUE_ONBOARDING_WELCOME,Weekly Club competition
 TID_CLUB_LEAGUE_ONBOARDING_COMPETE_DESC,8 Clubs compete each season
 TID_CLUB_LEAGUE_ONBOARDING_TAP_TO_CONTINUE,Tap to continue
@@ -5636,7 +5636,7 @@ TID_REWARD_DESC_GEAR_SCRAP,GEAR SCRAP
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_RACE_MESSAGE,Hey! Looks like you're too late to play in this season.\n\nFeel free to still look around & spectate your Club before the next season starts!
 TID_CLUB_LEAGUE_REGISTRATION_CLOSED_SHOP_MESSAGE,Come check out what's in the Club Shop!
 TID_CLUB_LEAGUE_FLOW_END_OF_SEASON_LEADERBOARD_TITLE,Final Results:
-TID_CLUB_LEAGUE_TEASER_TITLE,CLUB LEAGUE
+TID_CLUB_LEAGUE_TEASER_TITLE,КЛУБОВА ЛІГА
 TID_CLUB_LEAGUE_TEASER_JOIN_CLUB,JOIN A CLUB
 TID_CLUB_LEAGUE_TEASER_MESSAGE,Compete with your Club to boost your progress & earn exclusive skins!
 TID_CLUB_LEAGUE_TEASER_REACH_TROPHIES_TO_UNLOCK,Reach <NUM> trophies to unlock Clubs
