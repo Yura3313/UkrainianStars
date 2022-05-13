@@ -2357,7 +2357,7 @@ TID_NOT_ENOUGH_GOLD_TEXT,Buy the missing <NUM> Coins?
 TID_NOT_ENOUGH_GOLD_TEXT_ONE,Buy the missing Coin?
 TID_TEAM_INVITATION_POPUP_MUTE_ALL,BLOCK ALL INVITES FOR THE NEXT 1 HOUR
 TID_TEAM_INVITATION_SETTING_MUTE,Block all team invites
-TID_BUTTON_TEAM_DND,DO NOT DISTURB
+TID_BUTTON_TEAM_DND,НЕ ТУРБУВАТИ
 TID_SHOP_VALENTINE_OFFER,Valentine's Day Offer
 TID_SHOP_BRAWLER_BUNDLE,Brawler Bundle
 TID_SHOP_SEASONAL_SKIN_OFFER,Seasonal Skin Offer
@@ -2401,7 +2401,7 @@ TID_HERO_SORTING_RARITY,By Rarity
 TID_HERO_SORTING_RARITY_DESC,By Rarity Descending
 TID_HERO_SORTING_POWER_DESC,Power Level
 TID_HERO_SORTING_RANKUP,Closest to Next Rank
-TID_MUTE_INVITES_LABEL,Do Not Disturb:
+TID_MUTE_INVITES_LABEL,НЕ ТУРБУВАТИ
 TID_GEM_BALANCE_TITLE,Gem Balance
 TID_JP_BUTTON,Gem Balance
 TID_GEM_BALANCE,Current Gem Balance: <total>\n\nFree Gems: <free>\n\nBought Gems: <paid>
@@ -2502,8 +2502,8 @@ TID_SHOP_SHORTCUT_NOT_USED,BOXES
 TID_SHOP_SHORTCUT_3,СКІНИ
 TID_SHOP_SHORTCUT_4,STAR SHOP
 TID_SHOP_SHORTCUT_5,RESOURCES
-TID_SHOP_NOTIFICATION_NEW,NEW!
-TID_SHOP_NOTIFICATION_FREE,FREE!
+TID_SHOP_NOTIFICATION_NEW,НОВЕ!
+TID_SHOP_NOTIFICATION_FREE,БЕЗПЛ.!
 TID_SKIN_INFO_INCLUDES,Skin includes:\n
 TID_SKIN_INFO_NORMAL,- Custom Brawler model
 TID_SKIN_INFO_NORMAL_PET,- Custom Brawler model\n- Custom pet model
@@ -2912,7 +2912,7 @@ TID_EVENT_MODIFIER_10,BOSS ROCKETS
 TID_EVENT_MODIFIER_DESC_10,Boss shoots rockets.
 TID_STAT_DAMAGE_PER_HALF_SECOND,Damage per half a second
 TID_FRIENDS_PAGE_BUTTON_INVITE,INVITE
-TID_TEAM_ROOM_CODE,Team Code:
+TID_TEAM_ROOM_CODE,Код команди:
 TID_TEAM_ROOM_CODE_SHORT,TEAM:\n<NUM>
 TID_FRIENDS_PAGE_SOCIAL_NETWORKS,SOCIAL NETWORKS
 TID_CLAN_TAB_MEMBERS,Members <NUM>/<TOTAL>
@@ -3267,28 +3267,28 @@ TID_HERO_SCREEN_ITEM,GADGET
 TID_HERO_SCREEN_STAR_POWER,STAR POWER
 TID_TYPE_AGE_GATE_EXT_URL_TITLE,NOTICE
 TID_TYPE_AGE_GATE_EXT_URL_TEXT,We're about to send you to somewhere outside of Brawl Stars
-TID_NOTIFICATION_CC_STARTED,CHAMPIONSHIP CHALLENGE has started!
-TID_NOTIFICATION_CC_ENDING,CHAMPIONSHIP CHALLENGE will end soon. You can still beat it!
-TID_NOTIFICATION_PSG_STARTED,PSG CUP has started! Beat it to win a free skin!
-TID_NOTIFICATION_PSG_ENDING,PSG CUP is about to end. You have still time to win it!
-TID_NOTIFICATION_CHALLENGE_STARTED,<CHALLENGE> has started!
-TID_NOTIFICATION_CHALLENGE_ENDING,<CHALLENGE> is about to end. You still have time to win it!
-TID_NOTIFICATION_COIN_RUSH,New GEM GRAB map available! Come get new rewards!
-TID_NOTIFICATION_ATTACK_DEFEND,HEIST is available! Time to win new Rewards!
-TID_NOTIFICATION_BOUNTY_HUNTER,BOUNTY is available! Time to win new Rewards!
-TID_NOTIFICATION_LASER_BALL,New BRAWL BALL map is open! Time to win new Rewards!
-TID_NOTIFICATION_BATTLE_ROYAL,New SHOWDOWN map is open! Be the last to survive!
-TID_NOTIFICATION_BOSS,BIG GAME has opened up! Great rewards available!
-TID_NOTIFICATION_COOP,ROBO RUMBLE has started! Beat the bots and win rewards!
-TID_NOTIFICATION_RAID_BOSS,BOSS FIGHT is back! How far can you get?
-TID_NOTIFICATION_ROBO_WARS,SIEGE is available! Time to win new Rewards!
-TID_NOTIFICATION_BOSS_RACE,New TAKEDOWN map is open! Time to win new Rewards!
-TID_NOTIFICATION_LONE_STAR,New LONE STAR map is open! Time to win new Rewards!
-TID_NOTIFICATION_CTF,New PRESENT PLUNDER is open! Time to win new Rewards!
-TID_NOTIFICATION_KING_OF_HILL,New HOT ZONE map is available! Time to win new Rewards!
-TID_NOTIFICATION_TOWN_CRUSHER,BOSS FIGHT is back! How far can you get?
-TID_NOTIFICATION_MULTIPLE_MODES,<PARAM> new maps open! Come and win new Rewards!
-TID_NOTIFICATION_CLUB_LEAGUE_EVENT_DAY_STARTED,New CLUB LEAGUE Event day has started. Come and play!
+TID_NOTIFICATION_CC_STARTED,ЧЕМПІОНАТ РОЗПОЧАВСЯ!
+TID_NOTIFICATION_CC_ENDING,ЧЕМПІОНАТскоро закінчиться. Ви все ще можете перемогти!
+TID_NOTIFICATION_PSG_STARTED,"КУБОК ПСЖ розпочався! Пройдіть, щоб отримати безкоштовний скін!"
+TID_NOTIFICATION_PSG_ENDING,"КУБОК ПСЖ ось-ось закінчиться. У вас ще є час, щоб виграти!"
+TID_NOTIFICATION_CHALLENGE_STARTED,<CHALLENGE> розпочався!
+TID_NOTIFICATION_CHALLENGE_ENDING,"<CHALLENGE> ось-ось закінчиться. У вас ще є час, щоб виграти!"
+TID_NOTIFICATION_COIN_RUSH,Доступна нова карта ЗБОРУ КРИСТАЛІВ! Приходьте отримувати нові нагороди!
+TID_NOTIFICATION_ATTACK_DEFEND,ПОГРАБУВАННЯ доступне! Час вигравати нові нагороди!
+TID_NOTIFICATION_BOUNTY_HUNTER,Винагорода за вбивство доступна! Час вигравати нові нагороди!
+TID_NOTIFICATION_LASER_BALL,Нова карта Бравл Бол відкрита! Час вигравати нові нагороди!
+TID_NOTIFICATION_BATTLE_ROYAL,"Нова карта Зіткнення відкрита! Будь останнім, хто вижив!"
+TID_NOTIFICATION_BOSS,ВЕЛИКА ГРА відкрилася! Доступні чудові винагороди!
+TID_NOTIFICATION_COOP,Робо-Рубка розпочався! Перемагайте ботів і вигравайте нагороди!
+TID_NOTIFICATION_RAID_BOSS,БИТВА БОСА повертається! Як далеко ви можете зайти?
+TID_NOTIFICATION_ROBO_WARS,Робо-Битва доступна! Час вигравати нові нагороди!
+TID_NOTIFICATION_BOSS_RACE,Нова карта ТЕЙКДАУНА відкрита! Час вигравати нові нагороди!
+TID_NOTIFICATION_LONE_STAR,Нова карта САМОТНЬОЇ ЗІРКИ відкрита! Час вигравати нові нагороди!
+TID_NOTIFICATION_CTF,Новий КРАДІЖ ПОДАРУНКІВ відкрито! Час вигравати нові нагороди!
+TID_NOTIFICATION_KING_OF_HILL,Доступна нова карта ГАРЯЧОЇ ЗОНИ! Час вигравати нові нагороди!
+TID_NOTIFICATION_TOWN_CRUSHER,БИТВА БОСА повертається! Як далеко ви можете зайти?
+TID_NOTIFICATION_MULTIPLE_MODES,<PARAM> нових карт відкрито! Приходьте та вигравайте нові нагороди!
+TID_NOTIFICATION_CLUB_LEAGUE_EVENT_DAY_STARTED,Розпочався новий день подій КЛУБ ЛІГИ. Приходь і грай!
 TID_FREE_BOX_AVAILABLE_0,Your free reward is waiting for you!
 TID_FREE_BOX_AVAILABLE_1,Claim your free reward now!
 TID_FREE_BOX_AVAILABLE_2,Get your free reward before it disappears!
@@ -3441,7 +3441,7 @@ TID_KAKAO_TEAM_INVITED_FAILED_DISABLED,"Invite failed, player is not accepting m
 TID_KAKAO_TEAM_INVITED_FAILED_DAILY_LIMIT,"Invite failed, daily invite limit reached!"
 TID_KAKAO_TEAM_INVITED_FAILED_MONTHLY_LIMIT,"Invite failed, monthly invite limit to this player reached!"
 TID_KAKAO_TEAM_INVITED_FAILED_GENERIC,"Invite failed, please try again later!"
-TID_MUTE_FREE_TEXT_CHAT,Mute text chat
+TID_MUTE_FREE_TEXT_CHAT,Вимкнути текстовий чат
 TID_QUICK_MESSAGE_LETS_CHAT,Want to chat?
 TID_FAMILY_FRIENDLY,FAMILY FRIENDLY
 TID_CLAN_INFO_FF_NOTICE,This setting can't be changed later
@@ -5243,7 +5243,7 @@ TID_DND_DISABLED_LOOKING_FOR_PLAYERS,Cannot change this setting while you have e
 TID_LFT_DISABLED_LOOKING_FOR_TEAM,Cannot change this setting while in a Team!
 TID_ONLINE_LOOKING_FOR_A_TEAM,Looking for a Team
 TID_ONLINE_LOOKING_FOR_PLAYERS,Looking for players
-TID_ONLINE_LOOKING_FOR_A_TEAM_SETTING,Looking for a Team:
+TID_ONLINE_LOOKING_FOR_A_TEAM_SETTING,Фукає команду
 TID_ONLINE_LOOKING_FOR_PLAYERS_SETTING,Looking for players:
 TID_CHINA_LOGIN_AA_POPUP_DESC_TENCENT,1）本游戏是一款多人实时对战类游戏，适用于年满12周岁及以上的用户，\n建议未成年人在家长监护下使用游戏产品。\n\n2）游戏无明显背景，需要玩家操作各种英雄与队友配合取得胜利，\n游戏有丰富多样的玩法，包含角色养成、竞技等，需要投入一定的时间和精力。\n游戏中存在基于文字的陌生人社交系统，且社交系统的管理遵循相关法律法规。\n\n3）根据国家相关要求，游戏中有用户实名认证系统，未通过实名认证的用户不可进入游戏；\n认证为未成年人的用户除周五、周六、周日及法定节假日每日20时至21时外其他时间均不可进入游戏。游戏中部分玩法和道具需要付费。根据腾讯健康系统管理规定，认证为未成年人的用户将接受以下管理：未满12周岁的用户不能付费；12周岁以上未满16周岁的未成年人用户，单次充值金额不得超过50元人民币，每月充值金额累计不得超过200元人民币；16周岁以上的未成年人用户，单次充值金额不得超过100元人民币，每月充值金额累计不得超过400元人民币。\n\n4）游戏以竞技为主题，画面精美，玩法多样，能够带给玩家轻松愉悦的游戏氛围，\n游戏中的排位赛有助于调动玩家的积极情绪，在比赛中获胜能够提升玩家的自信心。\n游戏提供了丰富的社交系统，包括战队、好友等，玩家之间可以互相交流，互相配合，\n共同完成游戏任务，有助于促进玩家的社会交流，维持良好的社群关系。
 TID_CHINA_LOGIN_AA_POPUP_DESC_YOOZOO,1）本游戏是一款多人实时对战类游戏，适用于年满12周岁及以上的用户，\n建议未成年人在家长监护下使用游戏产品。\n\n2）游戏无明显背景，需要玩家操作各种英雄与队友配合取得胜利，\n游戏有丰富多样的玩法，包含角色养成、竞技等，需要投入一定的时间和精力。\n游戏中存在基于文字的陌生人社交系统，且社交系统的管理遵循相关法律法规。\n\n3）本游戏中有用户实名认证系统，认证为未成年人的用户将接受以下管理：\n游戏中部分玩法和道具需要付费。未满8周岁的用户不能付费：8周岁以上未满16周岁的未成年人用户，单次充值不得超过50元人民币，每月充值金额累计不得超过200元人民币；16周岁以上的未成年人用户，单次充值金额不得超过100元人民币，每月充值金额累计不得超过400元人民币。未成年人仅可在周五、周六、周日和法定节假日每日20时至21时体检1小时网络游戏服务。\n\n4）游戏以竞技为主题，画面精美，玩法多样，能够带给玩家轻松愉悦的游戏氛围，\n游戏中的排位赛有助于调动玩家的积极情绪，在比赛中获胜能够提升玩家的自信心。\n游戏提供了丰富的社交系统，包括战队、好友等，玩家之间可以互相交流，互相配合，\n共同完成游戏任务，有助于促进玩家的社会交流，维持良好的社群关系。
@@ -5337,7 +5337,7 @@ TID_GLADIATOR_COLETTE_SKIN_SHOP,ГЛАДІАТОР\nКОЛЕТ
 TID_V8-BIT_SKIN,V8-БІТ
 TID_V8-BIT_SKIN_SHOP,V8-БІТ
 TID_TEAM_LOOKING_2,Team is looking for players:
-TID_TEAM_PLAYER_2,I'm looking for a team:
+TID_TEAM_PLAYER_2,Я шукаю команду:
 TID_TEAM_INVITE_TEAM_UP,<NAME> wants to team up with you!
 TID_TEAM_INVITE_API,You have been invited to join a tournament match!
 TID_SHOWDOWN_63,Dried Up River
@@ -5595,7 +5595,7 @@ TID_CLUB_LEAGUE_SEASON_REWARD_TABLE_SUBTITLE,Play all your Tickets in a season t
 TID_CLUB_LEAGUE_SEASON_REWARD_MAX,MAX
 TID_CLUB_LEAGUE_SEASON_PROMOTING_DESC,Promoting to higher League
 TID_CLUB_LEAGUE_SEASON_DEMOTING_DESC,Demoting to lower League
-TID_CLUB_LEAGUE_LOOKING_FOR_TEAM,Looking for a Team:
+TID_CLUB_LEAGUE_LOOKING_FOR_TEAM,Я шукаю команду
 TID_CLUB_LEAGUE_LOOKING_FOR_PLAYERS,Looking for Players:
 TID_CLUB_INFO_TAB_PLAYER_RANKS,PLAYER RANKS
 TID_CLUB_INFO_TAB_LEAGUE_SEASON,CLUB LEAGUE SEASON
