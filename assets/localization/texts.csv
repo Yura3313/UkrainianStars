@@ -205,7 +205,7 @@ TID_BATTLE_LOG_AGE,<TIME> тому
 TID_BATTLE_LOG_HERO_LEVEL_LABEL,РІВЕНЬ
 TID_BATTLE_LOG_TVST_VERSUS,ПРОТИ
 TID_BATTLE_LOG_TITLE,РЕПЛЕЇ БИТВ
-TID_BATTLE_LOG_REPLAY,ПЕРЕГРАТИ
+TID_BATTLE_LOG_REPLAY,ПЕРЕГЛЯНУТИ
 TID_BATTLE_LOG_MVP,ЗІРКОВИЙ ГРАВЕЦЬ
 TID_BATTLE_LOG_FRIENDLY,ДРУЖНІЙ
 TID_BATTLE_LOG_TOURNAMENT,ТУРНІР
@@ -897,7 +897,7 @@ TID_FRIEND_STATUS_HOME_IN_GAMEROOM,<cffffff>В команді</c>
 TID_FRIEND_STATUS_BATTLE_NO_TIME,<cffffff>В битві</c>
 TID_FRIEND_STATUS_MENUS,В меню
 TID_FRIEND_STATUS_HOME_NO_GAMEROOM,<EMPTY>
-TID_ONLINE_FRIENDS_POPUP_TITLE_INVITE,TEAM UP!
+TID_ONLINE_FRIENDS_POPUP_TITLE_INVITE,СФОРМУЙТЕ КОМАНДУ
 TID_ONLINE_FRIENDS_POPUP_TITLE,ДРУЗІ ОНЛАЙН
 TID_ONLINE_FRIENDS_POPUP_NO_ONLINE_FRIENDS,"Немає друзів або членів Клубу, доступних для запрошення."
 TID_ONLINE_FRIENDS_POPUP_NO_FRIENDS,Немає друзів чи членів клубу в мережі. Нещодавно грали з кимось чудовим? Додайте їх у друзі!
@@ -1248,7 +1248,7 @@ TID_SHOP_ACTIVE,Активний
 TID_SHOP_CHALLENGE,Чемпіонат
 TID_SHOP_CHALLENGE_SOON,Починається в
 TID_SHOP_DOUBLE_COINS_TITLE,ДВІЙНИК ТОКЕНІВ
-TID_SHOP_DOUBLE_COINS_INFO,Подвоює наступні монети
+TID_SHOP_DOUBLE_COINS_INFO,Подвоює наступні
 TID_SHOP_DOUBLE_COINS_INFO_2,зароблені в битвах
 TID_SHOP_DOUBLE_COINS_INFO_COMBINED,Подвоює наступні <AMOUNT> токенів які ти заробив у битвах
 TID_SHOP_DOUBLE_COINS_COINS_REMAINING,Залишилися токени:
@@ -1313,7 +1313,7 @@ TID_SHOP_OFFER_TITLE_21,ПАКЕТ ЕМОЗІ
 TID_SHOP_OFFER_TITLE_22,ПАКЕТ ЕМОЗІ ДЛЯ
 TID_SHOP_OFFER_TITLE_23,<RARITY> ЕМОЗІ
 TID_SHOP_OFFER_TITLE_27,<RARITY> НАБІР ЕМОЗІ
-TID_SHOP_OFFER_TITLE_35,НОВИЙ СПРЕЙ
+TID_SHOP_OFFER_TITLE_35,НОВИЙ СПРЕЙ НА:
 TID_SHOP_OFFER_TITLE_36,СПРЕЇ
 TID_SHOP_OFFER_INFO_36,Виразіть себе в бою за допомогою спреїв!
 TID_SHOP_OFFER_TITLE_37,ДОДАТКОВИЙ СЛОТ СПРЕЮ
@@ -2193,7 +2193,7 @@ TID_ALLIANCE_CHAT_TAB_NOT_IN_ALLIANCE,Join a Club to access the Club Chat
 TID_TEAM_CHAT_TAB_NOT_IN_TEAM,Team Up with other players to access Team Chat
 TID_NO_BAND_GO_TO_BANDS,Go to Clubs
 TID_SHARE_TEAM_CODE_NO_CODE,Wait for the code to be generated before sharing!
-TID_TEAM_TEAMCODE_YOURS,Your team code
+TID_TEAM_TEAMCODE_YOURS,Твій код команди
 TID_BACK_BUTTON,LEAVE TEAM
 TID_BARLEY_WIZARD_SKIN,ЧАРОДІЙ БАРЛІ
 TID_EVENT_LOCKED_TROPHIES,Win more trophies to unlock Event
@@ -2204,7 +2204,7 @@ TID_BUTTON_PARTY_MODE,ДРУЖНЯ БИТВА
 TID_LEAVE_TEAM_TITLE,TEAM
 TID_LEAVE_TEAM_TXT,LEAVE
 TID_PARTY_MODE_DESC,"Friendly battles don't reward trophies, but you can practice any regular event or set up a friendly competition!\n\nAll Brawlers are fully upgraded in Friendly battles."
-TID_HEROES_TO_BE_UNLOCKED,BRAWLERS TO BE UNLOCKED
+TID_HEROES_TO_BE_UNLOCKED,ЩЕ НЕ РОЗБЛОКОВАНІ
 TID_NITA_REINDEER_SKIN,ЧЕРВОНО НОСА НІТА
 TID_PENNY_ELF_SKIN,ПОМІЧНИЦЯ ПЕННІ
 TID_DYNAMIKE_SANTA_SKIN,САНТА МАЙК
@@ -2226,7 +2226,7 @@ TID_BROCK_BOOMBOX_SKIN_SHOP,ГОСТРИЙ\nМАЙК
 TID_NITA_REINDEER_SKIN_SHOP,БУМ БОКС\nБРОК
 TID_EVENT_STARTS_IN,Нова подія через: <TIME>
 TID_UNDERTAKER_HAT_SKIN,ШАПКОВИЙ МОРТІС
-TID_CREATE_ROOM_CODE,CREATE TEAM CODE
+TID_CREATE_ROOM_CODE,Створити код кімнати
 TID_EVENT_LOCKED_TEAM,This event doesn't support playing in Teams!
 TID_EVENT_PREVIEW_TITLE,EVENT INFO
 TID_EVENT_POPUP_GAME_MODE_6_SOLO_DUO,Survive the Arena
@@ -2259,9 +2259,9 @@ TID_COOP_5,Broken Transit
 TID_COOP_6,Keep Safe
 TID_RAID_2,Machine Zone
 TID_RAID_3,Metal Scrap
-TID_BUTTON_INVITE_PLAYER,INVITE
-TID_BUTTON_JOIN_TEAM,ASK TO JOIN
-TID_BUTTON_TEAM_FULL,FULL
+TID_BUTTON_INVITE_PLAYER,ЗАПРОСИТИ
+TID_BUTTON_JOIN_TEAM,ПРИЄДНАТИСЯ
+TID_BUTTON_TEAM_FULL,ПОВНО
 TID_DECIMAL_MARK,.
 TID_RARITY_HEADER_0,TROPHY ROAD REWARD
 TID_RARITY_HEADER_1,РІДКІСНИЙ
@@ -2273,7 +2273,7 @@ TID_RARITY_HEADER_6,ХРОМАТИК
 TID_SETTINGS_KAKAO,KAKAO FRIENDS
 TID_HERO_INFO_LEVEL_WITH_NUMBER,POWER <NUMBER>
 TID_HERO_INFO_LEVEL_WITH_NUMBER_LONG,POWER LEVEL <NUMBER>
-TID_IN_YOUR_TEAM,YOUR TEAM
+TID_IN_YOUR_TEAM,В ТВОЇЙ КОМАНДІ
 TID_TEAM_REQEST_JOIN_FAIL_TEAM_FULL,Cannot send join request. Your team is full
 TID_EVENT_ENDS_IN,Подія закінчується через: <TIME>
 TID_EVENT_LOCKED_CAN_CLAIM_WARNING,Unlock Event from the Trophy Road screen
@@ -2293,7 +2293,7 @@ TID_RAID_BOSS_ENRAGE_WARNING_1,Boss gets <cffbb22bb>ANGRY</c> in:
 TID_RAID_BOSS_ENRAGE_WARNING_2,Boss gets <cffbb2222>FURIOUS</c> in:
 TID_RAID_BOSS_ENRAGE_WARNING_3,Boss gets <cffbbbb22>ENRAGED</c> in:
 TID_RAID_BOSS_ENRAGE_WARNING_4,Boss goes <cffffffff>GOD MODE</c> in:
-TID_HERO_INFO_LOCKED_INFO_SHORT,Open Brawl Boxes to unlock
+TID_HERO_INFO_LOCKED_INFO_SHORT,Відкривай бокси щоб розблокувати
 TID_ROBO_WARS_1,Swedish Siege
 TID_ROBO_WARS_INTRO_TEXT,Destroy enemy base
 TID_ROBO_WARS_SCRAP,Bolts:
@@ -2496,12 +2496,12 @@ TID_NEWS_NOTIFICATION_LIVE,ПРЯМИЙ ЕФІР
 TID_EPORTS_INFO_NEW_TOURNAMENT,A new tournament has been unlocked!
 TID_VS_TRAINING,Starr Park\nEntrance
 TID_TRAINING_DPS,Damage per second:
-TID_SHOP_SHORTCUT_1,OFFERS
-TID_SHOP_SHORTCUT_2,DAILY DEALS
-TID_SHOP_SHORTCUT_NOT_USED,BOXES
+TID_SHOP_SHORTCUT_1,ПРОПОЗИЦІЇ
+TID_SHOP_SHORTCUT_2,ДЕННІ ПРОПОЗИЦІЇ
+TID_SHOP_SHORTCUT_NOT_USED,БОКСИ
 TID_SHOP_SHORTCUT_3,СКІНИ
-TID_SHOP_SHORTCUT_4,STAR SHOP
-TID_SHOP_SHORTCUT_5,RESOURCES
+TID_SHOP_SHORTCUT_4,ЗІРКОВИЙ МАГАЗИН
+TID_SHOP_SHORTCUT_5,РЕСУРСИ
 TID_SHOP_NOTIFICATION_NEW,НОВЕ!
 TID_SHOP_NOTIFICATION_FREE,БЕЗПЛ.!
 TID_SKIN_INFO_INCLUDES,Skin includes:\n
@@ -2566,7 +2566,7 @@ TID_BALL_19,Впевнений постріл
 TID_BALL_20,Недільні розборки
 TID_BALL_21,Кривий м'яч
 TID_SUPPORT_CREATOR_BUTTON,Support a Creator
-TID_SUPPORT_CREATOR_LABEL,Supported: <NAME>
+TID_SUPPORT_CREATOR_LABEL,Підтримуєш: <NAME>
 TID_SUPPORT_CREATOR_POPUP_TITLE,CONTENT CREATOR BOOST
 TID_SUPPORT_CREATOR_POPUP_TEXT,Support your favorite Creator. Any gems you spend will help support this Creator.
 TID_SUPPORT_CREATOR_POPUP_ENTER_CODE,Enter creator code:
@@ -2889,7 +2889,7 @@ TID_SPEC_ABI_TICK_DMG_GROW,BAD KARMA
 TID_SPEC_ABI_TICK_DMG_GROW_DESC,"Enemies that stay within the cloud of Emz's toxic hair spray suffer increasing damage, <c00cc00><VALUE1>%</c> per hit."
 TID_SPEC_ABI_HEAL_SUPER_DMG,HYPE
 TID_SPEC_ABI_HEAL_SUPER_DMG_DESC,Emz recovers <c00cc00><VALUE1></c> health per second for each enemy brawler inside her Super's area of effect.
-TID_FRIEND_ADD_YOUR_ID,Your ID: <ID>
+TID_FRIEND_ADD_YOUR_ID,Твоє ІД: <ID>
 TID_FRIEND_ADD_BUTTON,ADD\nFRIEND
 TID_FRIEND_ADD_BUTTON_SHORT,ADD
 TID_FRIEND_ADD_DEFAULT_TEXT,Enter Player ID
@@ -3255,7 +3255,7 @@ TID_HERO_INFO_DEFENSE_LABEL,DEFENSE
 TID_UNDERTAKER_HAT_SKIN_SHOP,ЦІЛІНДР\nМОРТІС
 TID_BARLEY_WIZARD_SKIN_SHOP,ЧАКЛУН\nБАРЛІ
 TID_SHOTGUN_STAR_SKIN_SHOP,ЗОРЯНА\nШЕЛІ
-TID_QUICK_MESSAGE_ONE_MOMENT,One moment
+TID_QUICK_MESSAGE_ONE_MOMENT,Один момент...
 TID_QUICK_MESSAGE_ASK_STAR_TOKEN_HELP,Could you help me get the star token?
 TID_HERO_SORTING_LATEST,Latest Brawlers
 TID_IAP_BUNDLE_OFFER,Special Offer
@@ -3625,7 +3625,7 @@ TID_BRAWL_PASS_TAB_REWARDS,REWARDS
 TID_BRAWL_PASS_TAB_QUESTS,QUESTS
 TID_BRAWL_PASS_TAB_PAST_REWARDS,PREVIOUS SEASON
 TID_BRAWL_PASS_PREMIUM,БРАВЛ ПАС
-TID_BRAWL_PASS_FREE,\n\nDaily Box purchases done: <AMOUNT>. Limited to <MAX>.
+TID_BRAWL_PASS_FREE,
 TID_BRAWL_PASS_BUY,ACTIVATE
 TID_BRAWL_PASS_UNLOCK_ITEM_AT_TIER,UNLOCK <ITEM> AT TIER <NUM>
 TID_BRAWL_PASS_SEASON_HEADER,BRAWL PASS SEASON
@@ -3746,7 +3746,7 @@ TID_TENCENT_TEAM_INVITED_FAILED_901204,Invite failed. Receiver's invite limit re
 TID_TENCENT_TEAM_INVITED_FAILED_901205,Invite failed. You can only send one message to each friend per day!
 TID_EVENT_POPUP_GMV_LABEL_RAID_BOSS_TOWN_CRUSHER,Three players vs the MEGA MONSTER
 TID_BUILDINGS_LEFT,Buildings left: <num>
-TID_ONLINE_FRIENDS_POPUP_CODE_TITLE,TEAM UP!
+TID_ONLINE_FRIENDS_POPUP_CODE_TITLE,СТВОРІТЬ КОМАНДУ
 TID_TEAM_INVITE_BUTTON_LABEL_SHORT,TEAM INVITE
 TID_CLAN_INTRO_INVITE_SHORT,INVITE
 TID_ALLIANCE_INVITE_TITLE,JOIN MY CLUB
@@ -5165,12 +5165,12 @@ TID_ONLINE_TEAMS,TEAMS
 TID_ONLINE_FRIENDLY_TEAMS,FRIENDLY BATTLES
 TID_ONLINE_CL_TEAMS,
 TID_ONLINE_PLAYERS,PLAYERS NOT IN A TEAM (<NUM>)
-TID_ONLINE_YOUR_TEAM,YOUR TEAM
-TID_ONLINE_YOUR_TEAM_ITEM,YOUR TEAM!
+TID_ONLINE_YOUR_TEAM,ТВОЯ КОМАНДА
+TID_ONLINE_YOUR_TEAM_ITEM,ТВОЯ КОМАНДА!
 TID_ONLINE_YOUR_NAME,<NAME> (YOU)
 TID_CHAT_TEAM_UP_DESCRIPTION,Start a team and play with your friends or Club mates!
-TID_CHAT_TEAM_UP_BTN,TEAM UP
-TID_CHAT_STREAM_TEAM_UP_BTN,TEAM UP!
+TID_CHAT_TEAM_UP_BTN,СТВОРІТЬ КОМАНДУ
+TID_CHAT_STREAM_TEAM_UP_BTN,СТВОРІТЬ КОМАНДУ!
 TID_CHAT_CLUB_PROMO_DESC,Share brawling glory and honors by joining a Club or forming your own!
 TID_CHAT_CLUB_PROMO_BTN,GO
 TID_CHAT_TAB_TEAM,TEAM
@@ -5227,7 +5227,7 @@ TID_CHAT_BUBBLE_ELLIPSIS,. . .
 TID_TEAM_CHAT_PINNED,Team chat pinned to stay open
 TID_TEAM_CHAT_UNPINNED,Team chat unpinned
 TID_TEAMS_NO_PLAYERS_ONLINE,"No players online to invite, try again later!"
-TID_BP_VALUE_UPTO,Up to
+TID_BP_VALUE_UPTO,До
 TID_TEAM_REQEST_INVITE_FAIL_PENDING_JOIN_REQUEST,Cannot invite. You have a pending join request
 TID_TEAM_REQUEST_INVITE_FAIL_TEAM_FULL,Cannot invite. Your team is full
 TID_TEAM_ERROR_126,Cannot select event. Event is not available to all Team members.
@@ -5243,7 +5243,7 @@ TID_DND_DISABLED_LOOKING_FOR_PLAYERS,Cannot change this setting while you have e
 TID_LFT_DISABLED_LOOKING_FOR_TEAM,Cannot change this setting while in a Team!
 TID_ONLINE_LOOKING_FOR_A_TEAM,Looking for a Team
 TID_ONLINE_LOOKING_FOR_PLAYERS,Looking for players
-TID_ONLINE_LOOKING_FOR_A_TEAM_SETTING,Фукає команду
+TID_ONLINE_LOOKING_FOR_A_TEAM_SETTING,Шукаєш команду
 TID_ONLINE_LOOKING_FOR_PLAYERS_SETTING,Looking for players:
 TID_CHINA_LOGIN_AA_POPUP_DESC_TENCENT,1）本游戏是一款多人实时对战类游戏，适用于年满12周岁及以上的用户，\n建议未成年人在家长监护下使用游戏产品。\n\n2）游戏无明显背景，需要玩家操作各种英雄与队友配合取得胜利，\n游戏有丰富多样的玩法，包含角色养成、竞技等，需要投入一定的时间和精力。\n游戏中存在基于文字的陌生人社交系统，且社交系统的管理遵循相关法律法规。\n\n3）根据国家相关要求，游戏中有用户实名认证系统，未通过实名认证的用户不可进入游戏；\n认证为未成年人的用户除周五、周六、周日及法定节假日每日20时至21时外其他时间均不可进入游戏。游戏中部分玩法和道具需要付费。根据腾讯健康系统管理规定，认证为未成年人的用户将接受以下管理：未满12周岁的用户不能付费；12周岁以上未满16周岁的未成年人用户，单次充值金额不得超过50元人民币，每月充值金额累计不得超过200元人民币；16周岁以上的未成年人用户，单次充值金额不得超过100元人民币，每月充值金额累计不得超过400元人民币。\n\n4）游戏以竞技为主题，画面精美，玩法多样，能够带给玩家轻松愉悦的游戏氛围，\n游戏中的排位赛有助于调动玩家的积极情绪，在比赛中获胜能够提升玩家的自信心。\n游戏提供了丰富的社交系统，包括战队、好友等，玩家之间可以互相交流，互相配合，\n共同完成游戏任务，有助于促进玩家的社会交流，维持良好的社群关系。
 TID_CHINA_LOGIN_AA_POPUP_DESC_YOOZOO,1）本游戏是一款多人实时对战类游戏，适用于年满12周岁及以上的用户，\n建议未成年人在家长监护下使用游戏产品。\n\n2）游戏无明显背景，需要玩家操作各种英雄与队友配合取得胜利，\n游戏有丰富多样的玩法，包含角色养成、竞技等，需要投入一定的时间和精力。\n游戏中存在基于文字的陌生人社交系统，且社交系统的管理遵循相关法律法规。\n\n3）本游戏中有用户实名认证系统，认证为未成年人的用户将接受以下管理：\n游戏中部分玩法和道具需要付费。未满8周岁的用户不能付费：8周岁以上未满16周岁的未成年人用户，单次充值不得超过50元人民币，每月充值金额累计不得超过200元人民币；16周岁以上的未成年人用户，单次充值金额不得超过100元人民币，每月充值金额累计不得超过400元人民币。未成年人仅可在周五、周六、周日和法定节假日每日20时至21时体检1小时网络游戏服务。\n\n4）游戏以竞技为主题，画面精美，玩法多样，能够带给玩家轻松愉悦的游戏氛围，\n游戏中的排位赛有助于调动玩家的积极情绪，在比赛中获胜能够提升玩家的自信心。\n游戏提供了丰富的社交系统，包括战队、好友等，玩家之间可以互相交流，互相配合，\n共同完成游戏任务，有助于促进玩家的社会交流，维持良好的社群关系。
@@ -5311,7 +5311,7 @@ TID_GEAR_UPGRADE_VALUE,<OLDNUM> <c00ff00>+<NUM></c>
 TID_GEAR_UPGRADE_VALUE_PERCENT,<OLDNUM>% <c00ff00>+<NUM>%</c>
 TID_GEAR_INFO,Gear: <cde9700><NAME></c>\n<DESC>
 TID_ITEMS_TITLE,ITEMS
-TID_TEAMUP_YOUR_SETTINGS_TITLE,PERSONAL SETTINGS
+TID_TEAMUP_YOUR_SETTINGS_TITLE,ПЕРСОНАЛЬНІ НАЛАШТУВАННЯ
 TID_TRUE_SILVER_BROCK_SKIN,СПРАВЖНІЙ СРІБНИЙ БРОК
 TID_TRUE_GOLD_BROCK_SKIN,СПРАВЖНІЙ ЗОЛОТИЙ БРОК
 TID_TRUE_SILVER_BROCK_SKIN_SHOP,СПРАВЖНІЙ СРІБНИЙ\nБРОК
@@ -6269,7 +6269,7 @@ TID_CANCEL,CANCEL
 TID_WANTS_TO_PLAY,WANTS TO PLAY
 TID_WANT_TO_PLAY,WANT TO PLAY
 TID_WANTS_TO_PLAY_MULTIPLE_TEAMMATES,<num> TEAM MATES
-TID_BRAWL_PASS_SEASON_11,THE STUNTSHOW
+TID_BRAWL_PASS_SEASON_11,ТРЮК-ШОУ
 TID_SHOP_STUNTSHOW_SKINS,The Stunt Show Skins
 TID_SHOP_STUNTSHOW_TITLE,STUNT SHOW
 TID_SHOP_STUNTSHOW_INFO,Skin set
