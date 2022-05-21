@@ -204,7 +204,7 @@ TID_BATTLE_LOG_DEATHMATCH_RESULT_2,<ccccccc>РАНГ <RANK></c>
 TID_BATTLE_LOG_AGE,<TIME> тому
 TID_BATTLE_LOG_HERO_LEVEL_LABEL,РІВЕНЬ
 TID_BATTLE_LOG_TVST_VERSUS,ПРОТИ
-TID_BATTLE_LOG_TITLE,РЕПЛЕЇ БИТВ
+TID_BATTLE_LOG_TITLE,ЗАПИСИ БИТВ
 TID_BATTLE_LOG_REPLAY,ПЕРЕГЛЯНУТИ
 TID_BATTLE_LOG_MVP,ЗІРКОВИЙ ГРАВЕЦЬ
 TID_BATTLE_LOG_FRIENDLY,ДРУЖНІЙ
@@ -1213,8 +1213,8 @@ TID_NAME_CHANGE_ALREADY_USED,Ви вже змінили своє ім’я од�
 TID_NAME_CHANGED_SUCCESS,Ваше ім'я було змінено!
 TID_NAME_CHANGE_IN_PROGRESS,Не можна змінити ім'я. Попередня зміна назви триває.
 TID_NAME_CHANGE_EXP_LEVEL_TOO_LOW,"Зміна імені доступна, починаючи з рівня досвіду <level>"
-TID_CONFIRM_CONFIRM,"Введіть \q<confirmword>\q та натисніть кнопку Гаразд, щоб завершити дію"
-TID_CONFIRM_WORD,ПІДТВЕРДИТИ
+TID_CONFIRM_CONFIRM,"Введіть \q<confirmword>\q та натисніть кнопку ДОБРЕ, щоб завершити дію"
+TID_CONFIRM_WORD,ДОБРЕ
 TID_SETTINGS_PLAYERNAME_CONFIRM_NEW,"Введіть нове ім’я ще раз, щоб підтвердити зміну імені.\nВашим новим ім’ям буде:"
 TID_BUTTON_CONFIRM,Підтвердити
 TID_EVENTS_TIME,<cFFFFFF><TIME></c>
@@ -1969,7 +1969,7 @@ TID_HINT_28,"Спробуйте грати в дружні битви, щоб в
 TID_HINT_29,"Після гарного матчу з новими товаришами по команді, ви можете натиснути кнопку Грати знову, щоб зіграти з ними ще один матч!"
 TID_HINT_30,Дружні битви дозволяють вибрати будь-яку подію та карту. Бравлери також будуть повністю оновлені!
 TID_HINT_31,"Френк зупиняється, щоб виконати атаку і Супер, даючи можливість суперникам вийти за межі його дії."
-TID_EXPERIENCE,Досвіт
+TID_EXPERIENCE,Досвід
 TID_HINT_32,"Особливі події не нагороджують трофеями. Грайте в них, щоб виграти жетони для Brawl Pass."
 TID_HINT_33,Ви можете запросити членів Клубу стати вашими друзями зі списку членів Клубу.
 TID_HINT_34,Ви можете запросити людей із вашої команди стати вашими друзями.
@@ -2130,7 +2130,7 @@ TID_STAT_INVISIBLE,Smoke Bomb
 TID_STAT_SHIELD,Shield
 TID_SELECT_HERO_INFO_RAID_BOSS,<c2288ff>Players vs Boss</c>
 TID_EVENT_POPUP_GMV_LABEL_RAID_BOSS,Three players vs BOSS ROBOT
-TID_GAME_MODE_10,BOSS FIGHT
+TID_GAME_MODE_10,БИТВА З БОСОМ
 TID_RAID_BOSS_INTRO_TEXT,Defeat the Boss
 TID_RAID_1,Boss Robot Arena
 TID_GAME_MODE_10_DESC,"Can you beat the formidable Boss Robot? Join forces with two teammates and take down this monster. You can get back in the fight as long as at least one of your teammates is standing. If everyone falls, it's game over!\n\nBoss Fights increase in Challenge, from Normal all the way to Insane, every time you manage to beat the Boss."
@@ -2182,9 +2182,9 @@ TID_NEW_EVENT_IN,Зміна через: <TIME>
 TID_NEW_EVENT_NOW,ДОСТУПНА НОВА ПОДІЯ!
 TID_NEW_EVENT_ICON_PREFIX,Next:
 TID_NEW_EVENT_ICON_SUFFIX,Через <TIME>
-TID_SHOP_TITLE,SHOP
+TID_SHOP_TITLE,МАГАЗИН
 TID_SELECT_EVENT_TITLE,CHOOSE EVENT
-TID_HERO_LIST_LABEL_NEW,BRAWLERS <c53C5F7><COUNT>/<TOTAL></c>
+TID_HERO_LIST_LABEL_NEW,<c53C5F7><COUNT>БРАВЛЕРІВ ІЗ /<TOTAL></c>
 TID_KEY_COUNTER,<VALUE><c7984a8>/<MAX></c>
 TID_ONLINE_TAB_1,ONLINE PLAYERS
 TID_ONLINE_TAB_2,TEAM CHAT
@@ -2249,16 +2249,16 @@ TID_GOLDRUSH_XMAS_9,Frosty Crystals
 TID_GOLDRUSH_XMAS_10,Treasure Hunt
 TID_RAID_BOSS_DIFFICULTY_CAP,"Your Difficulty level has been lowered to match those of your Team. While the difficulty is lowered, completing the level will not grant progress towards your Quest."
 TID_RAID_BOSS_DIFFICULTY,Важкість:
-TID_BOSS_3,Chew Out
-TID_BOSS_4,Team Day
-TID_BOSS_5,Table Flip
-TID_BOSS_6,Hunting Party
-TID_COOP_3,Vault Defenders
-TID_COOP_4,Boonies
-TID_COOP_5,Broken Transit
-TID_COOP_6,Keep Safe
-TID_RAID_2,Machine Zone
-TID_RAID_3,Metal Scrap
+TID_BOSS_3,Пережований
+TID_BOSS_4,День команди
+TID_BOSS_5,Перевертання столу
+TID_BOSS_6,Мисливська вечірка
+TID_COOP_3,Захисники сховища
+TID_COOP_4,Буні
+TID_COOP_5,Зламаний транзит
+TID_COOP_6,Зберігати в таємниці
+TID_RAID_2,Машинна зона
+TID_RAID_3,Металобрухт
 TID_BUTTON_INVITE_PLAYER,ЗАПРОСИТИ
 TID_BUTTON_JOIN_TEAM,ПРИЄДНАТИСЯ
 TID_BUTTON_TEAM_FULL,ПОВНО
@@ -2395,12 +2395,12 @@ TID_SPEC_ABI_PROJECTILE_SPEED,POWER THROW
 TID_SPEC_ABI_PROJECTILE_SPEED_DESC,"Carl throws his Pickaxe with <c00cc00><VALUE1>%</c> more speed, allowing it to travel faster and return faster."
 TID_SPEC_ABI_SUPERSPEED,ROLLIN'
 TID_SPEC_ABI_SUPERSPEED_DESC,Carl's spinning cart gains more speed while his super is active!
-TID_HERO_SORTING_TROPHIES,Least Trophies
-TID_HERO_SORTING_TROPHIES_DESC,Most Trophies
-TID_HERO_SORTING_RARITY,By Rarity
-TID_HERO_SORTING_RARITY_DESC,By Rarity Descending
-TID_HERO_SORTING_POWER_DESC,Power Level
-TID_HERO_SORTING_RANKUP,Closest to Next Rank
+TID_HERO_SORTING_TROPHIES,Найменше трофеїв
+TID_HERO_SORTING_TROPHIES_DESC,Найбільше трофеїв
+TID_HERO_SORTING_RARITY,За рідкістю
+TID_HERO_SORTING_RARITY_DESC,За зменшенням рідкості
+TID_HERO_SORTING_POWER_DESC,Рівень сили
+TID_HERO_SORTING_RANKUP,Найближчий до наст. рангу
 TID_MUTE_INVITES_LABEL,НЕ ТУРБУВАТИ
 TID_GEM_BALANCE_TITLE,Gem Balance
 TID_JP_BUTTON,Gem Balance
@@ -2471,14 +2471,14 @@ TID_BALL_13,Без квадратне
 TID_BALL_14,Ігровий автомат
 TID_BALL_15,Мрії про пінбол
 TID_BALL_16,Бочковий сховище
-TID_GOLDRUSH_19,Spring Trap
-TID_GOLDRUSH_20,Bishop to King 4
-TID_GOLDRUSH_21,Cross Cut
-TID_GOLDRUSH_22,Acute Angle
-TID_GOLDRUSH_23,Bouncing Diner
-TID_GOLDRUSH_24,Cell Division
-TID_GOLDRUSH_25,Double Swoosh
-TID_GOLDRUSH_26,Yin Yang
+TID_GOLDRUSH_19,Весняна пастка
+TID_GOLDRUSH_20,Від пішака до короля
+TID_GOLDRUSH_21,Перехресний розріз
+TID_GOLDRUSH_22,Гострий кут
+TID_GOLDRUSH_23,"Закусочна, що підстрибує"
+TID_GOLDRUSH_24,Клітинний поділ
+TID_GOLDRUSH_25,Подвійна галочка
+TID_GOLDRUSH_26,Інь Янь
 TID_ROBO_HEALTH,SIEGE BOT:
 TID_TEAMING_WARNING,<c99dd3333>ATTACK ENEMIES</c> or get hit by <c99dd3333>SUPER METEORS</c>!!!
 TID_FREE_NAME_CHANGE_INTRO_TEXT,"You only get one free name change. Use it wisely, as future name changes will cost you Gems."
@@ -2776,9 +2776,9 @@ TID_STAT_DAMAGE_PER_BEAM,Damage per beam
 TID_SPEC_ABI_LARGER_AREA_ULTI,BOOSTED BOOSTER
 TID_SPEC_ABI_LARGER_AREA_ULTI_DESC,Increases the Damage Booster's range by <c00cc00><VALUE1>%</c> and boosts damage by an additional <c00cc00><VALUE2>%</c>.
 TID_DAMAGE_BOOSTER_HEALTH,Damage Booster Health
-TID_BEST_VALUE_DISCOUNT,<VALUE>%\nOFF!
-TID_BEST_VALUE_EXTRA,<VALUE>%\nEXTRA
-TID_BEST_VALUE_BONUS,<VALUE>%\nBONUS
+TID_BEST_VALUE_DISCOUNT,<VALUE>%\nЗНИЖКИ!
+TID_BEST_VALUE_EXTRA,<VALUE>%\nДОДАНО
+TID_BEST_VALUE_BONUS,<VALUE>%\nБОНУС
 TID_PROMOCODE_PACK,Promo Code Pack
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
@@ -3165,11 +3165,11 @@ TID_EVENT_MODIFIER_DESC_11,"The floor tilts, making movement faster or slower de
 TID_QUICK_MESSAGE_ASK_BRAWLER_SPLIT,Which brawler should I pick?
 TID_QUICK_MESSAGE_ASK_MODE_SPLIT,What event should we play?
 TID_DRILLER,ДЖЕККІ
-TID_GAME_MODE_17,HOT ZONE
-TID_KING_OF_HILL_1,One Point
-TID_KING_OF_HILL_2,Two Point
+TID_GAME_MODE_17,ГАРЯЧА ЗОНА
+TID_KING_OF_HILL_1,Одна точка
+TID_KING_OF_HILL_2,Дві Точки
 TID_GAME_MODE_17_DESC,"Capture all the Hot Zones to win!\n\nCapture each point by staying in the Hot Zone. The first team to completely capture all points on the map wins! Both teams can capture Hot Zones at the same time, so make sure to keep the enemy team at bay. If time runs out, the team with the highest completion rate of captured zones wins."
-TID_KING_OF_HILL_INTRO_TEXT,Capture all the Hot Zones!
+TID_KING_OF_HILL_INTRO_TEXT,Захопіть усі гарячі зони!
 TID_IAP_LNY2020,LUNAR BRAWL
 TID_IAP_TGS2020,OFFER
 TID_IAP_VD2020,HAPPY VALENTINE'S!
@@ -3257,8 +3257,8 @@ TID_BARLEY_WIZARD_SKIN_SHOP,ЧАКЛУН\nБАРЛІ
 TID_SHOTGUN_STAR_SKIN_SHOP,ЗОРЯНА\nШЕЛІ
 TID_QUICK_MESSAGE_ONE_MOMENT,Один момент...
 TID_QUICK_MESSAGE_ASK_STAR_TOKEN_HELP,Could you help me get the star token?
-TID_HERO_SORTING_LATEST,Latest Brawlers
-TID_IAP_BUNDLE_OFFER,Special Offer
+TID_HERO_SORTING_LATEST,Остані Бравлери
+TID_IAP_BUNDLE_OFFER,Особлива пропозиція
 TID_WALLY,СПРАУТ
 TID_SETTINGS_FIND_FRIENDS,ГРАЙ З ДРУЗЯМИ
 TID_KAKAO_ACCOUNT_BIND_INFO_TITLE,Connect KakaoTalk
@@ -3621,7 +3621,7 @@ TID_HOMEPAGE_GUIDE_QUESTS_UNLOCKED,Quests unlocked!
 TID_HOMEPAGE_GUIDE_CLUB_FEATURE_UNLOCKABLE,Clubs unlocked!
 TID_HOMEPAGE_GUIDE_CLUB_FEATURE_UNLOCKED,Find your Club here!
 TID_BRAWL_PASS_SEASON_0,TARA'S BAZAAR
-TID_BRAWL_PASS_TAB_REWARDS,REWARDS
+TID_BRAWL_PASS_TAB_REWARDS,НАГОРОДИ
 TID_BRAWL_PASS_TAB_QUESTS,QUESTS
 TID_BRAWL_PASS_TAB_PAST_REWARDS,PREVIOUS SEASON
 TID_BRAWL_PASS_PREMIUM,БРАВЛ ПАС
@@ -3701,12 +3701,12 @@ TID_GOLDRUSH_53,Bizarre Bazaar
 TID_QUESTS_NEXT_BATCH_IN,New Quests in <time>
 TID_QUESTS_THIS_BATCH_IN,Starts in <time>
 TID_QUESTS_BATCH_EXPIRES_IN,ENDS IN <time>
-TID_QUESTS_DAILY_REFRESH_IN,REFRESHES IN <time>
-TID_BRAWL_PASS_SEASON_END_TITLE,SEASON ENDS IN
-TID_QUESTS_DAILY,DAILY QUESTS
-TID_QUESTS_SEASON,SEASON QUESTS
-TID_QUESTS_SPECIAL,SPECIAL EVENT QUESTS
-TID_QUESTS_CHRONOS,SPECIAL QUESTS
+TID_QUESTS_DAILY_REFRESH_IN,ЗМІНА ЗА: <time>
+TID_BRAWL_PASS_SEASON_END_TITLE,СЕЗОН ЗАКІНЧУЄТСЯ ЗА
+TID_QUESTS_DAILY,ЩОДЕННІ КВЕСТИ
+TID_QUESTS_SEASON,СЕЗОННІ КВЕСТИ
+TID_QUESTS_SPECIAL,КВЕСТИ НА СПЕЦІАЛЬНІ РЕЖИМИ
+TID_QUESTS_CHRONOS,СПЕЦІАЛЬНІ КВЕСТИ
 TID_QUESTS_LVL,LVL: <NUM>
 TID_CONTEXT_MENU_INVITE_ONLINE,ЗАПРОСИТИ ОНЛАЙН
 TID_CONTEXT_MENU_INVITE_TO_TEAM,ЗАПРОСИТИ ДО КОМАНДИ
@@ -4101,11 +4101,11 @@ TID_ACCESSORY_FIRE_DUDE_SPILL,FIRE STARTERS
 TID_ACCESSORY_FIRE_DUDE_SPILL_DESC,"Amber runs fast for <c00cc00><VALUE1></c> seconds while spilling her fire fluid, which she can then ignite."
 TID_EMOTE_EQUIP_ALREADY_IN_USE,This Pin is already in use!
 TID_ALLIANCE_CHAT_DISABLED_FOR_YP_IN_NON_FF,You can only chat in Family Friendly Clubs
-TID_KING_OF_HILL_15F,Mosh Pit
-TID_KING_OF_HILL_16F,Ring of Fire
-TID_KING_OF_HILL_17F,Pain Point
-TID_KING_OF_HILL_18F,The Funnel
-TID_KING_OF_HILL_19F,Checkpoint
+TID_KING_OF_HILL_15F,Яма смерті
+TID_KING_OF_HILL_16F,Кільце вогню
+TID_KING_OF_HILL_17F,Більна точка
+TID_KING_OF_HILL_18F,Воронка
+TID_KING_OF_HILL_19F,Чекпоінт
 TID_WANTED_30T,Швидкий пропуск
 TID_BANKHEIST_29T,Turnaround
 TID_EMOTE_BUNDLE_ROSALLOWEEN,BRAWL-O-WEEN ROSA PINS
@@ -4114,8 +4114,8 @@ TID_EMOTE_PLAYERS,PLAYER'S
 TID_SPRAY_PLAYERS,СПРЕЙ
 TID_KING_OF_HILL_30,Watch Out
 TID_KING_OF_HILL_31,Sizzling Surprise
-TID_PLAYER_MAP_SLOT_CREATE_NEW_TITLE,CREATE NEW!
-TID_PLAYER_MAP_SLOT_CREATE_NEW_DESC,Map Maker
+TID_PLAYER_MAP_SLOT_CREATE_NEW_TITLE,СТВОРИ НОВУ
+TID_PLAYER_MAP_SLOT_CREATE_NEW_DESC,Мап Мейкер
 TID_KING_OF_HILL_20F,Dueling Beetles
 TID_CONTEXT_MENU_EDIT,РЕДАГУВАТИ
 TID_CONTEXT_MENU_RENAME,ПЕРЕЙМЕНУВАТИ
@@ -4166,7 +4166,7 @@ TID_MAP_EDITOR_HOT_ZONE_AREA,Ви повинні розмістити деякі
 TID_MAP_EDITOR_SIEGE_BOLT,Ви повинні розмістити кілька місць для болтів
 TID_MAP_EDITOR_MODIFIERS_TITLE,Модифікації
 TID_PLAYER_MAP_SLOT_MAPS_MADE,Maps made: <NUM>/<MAX>
-TID_PLAYER_MAP_SLOT_DRAFT_MAPS,Draft maps: <NUM>/<MAX>
+TID_PLAYER_MAP_SLOT_DRAFT_MAPS,Карт - чернкток: <NUM>/<MAX>
 TID_PLAYER_MAP_SLOT_STATUS,Status: <STATUS>
 TID_PLAYER_MAP_SLOT_STATUS_UNKNOWN,Unknown
 TID_PLAYER_MAP_SLOT_STATUS_DRAFT,Draft
@@ -4840,8 +4840,8 @@ TID_GAME_MODE_20_DESC,"Перемагайте команду суперника 
 TID_KNOCKOUT_INTRO_TEXT,Перемагайте ворожих бравлерів!
 TID_INBOX_CAPTION_72_28,DONATION: ICON
 TID_RANKED_YOUR_TURN,ТВОЯ ЧЕРГА!
-TID_RANKED_BAN_YOUR_TURN,ТВІЙ БАН!
-TID_RANKED_PICK_YOUR_TURN,ТВІЙ ВИБІР!
+TID_RANKED_BAN_YOUR_TURN,БАНЬ!
+TID_RANKED_PICK_YOUR_TURN,ВИБИРАЙ!
 TID_KNOCKOUT_TIEBREAK_BAR,тай-брейк
 TID_HOMESCREEN_INFO_RANKED_SOLO,"Вигравайте битви ПАВЕР ЛІГИ, щоб досягти вищих рангів і отримати кращі нагороди.\n\nПоточний СОЛО РАНГ:\n<RANK>"
 TID_HOMESCREEN_INFO_RANKED_TEAM,"Вигравайте битви ПАВЕР ЛІГИ, щоб досягти вищих рангів і отримати кращі нагороди.\n\nПоточний КОМАНДНИЙ РАНГ:\n<RANK>"
@@ -5164,7 +5164,7 @@ TID_SKIN_INFO_CAMPAIGN_C1A,China 1 Year Anniversary
 TID_ONLINE_TEAMS,TEAMS
 TID_ONLINE_FRIENDLY_TEAMS,FRIENDLY BATTLES
 TID_ONLINE_CL_TEAMS,
-TID_ONLINE_PLAYERS,PLAYERS NOT IN A TEAM (<NUM>)
+TID_ONLINE_PLAYERS,ГРАВЦІ НЕ В КОМАНДАХ(<NUM>)
 TID_ONLINE_YOUR_TEAM,ТВОЯ КОМАНДА
 TID_ONLINE_YOUR_TEAM_ITEM,ТВОЯ КОМАНДА!
 TID_ONLINE_YOUR_NAME,<NAME> (YOU)
@@ -5175,7 +5175,7 @@ TID_CHAT_CLUB_PROMO_DESC,Share brawling glory and honors by joining a Club or fo
 TID_CHAT_CLUB_PROMO_BTN,GO
 TID_CHAT_TAB_TEAM,TEAM
 TID_CHAT_TAB_CLUB,CLUB
-TID_CHAT_TAB_CLUB_ONLINE_TITLE,ONLINE:
+TID_CHAT_TAB_CLUB_ONLINE_TITLE,ОНЛАЙН:
 TID_CHAT_TAB_CLUB_ONLINE_COUNT,<NUM>/<MAX>
 TID_CHAT_TAB_TEAM_CODE_TITLE,Team Code
 TID_TEAMS_LOOKING_FOR_TEAM,Looking for Team
@@ -5252,7 +5252,7 @@ TID_SKIN_INFO_CAMPAIGN_RETRO,Retropolis
 TID_SKIN_INFO_CAMPAIGN_RETRO_TITLE,Return to Retropolis
 TID_RETRO_SKINS_INFO,Skin Set
 TID_EMOTE_SKINS_PACK_REWARD,Own all the skins in this set and get the exclusive pin pack!
-TID_RANDOM_SKIN_SWITCH_TITLE,RANDOM SKIN
+TID_RANDOM_SKIN_SWITCH_TITLE,ВИПІДКОВИЙ СКІН
 TID_SKIN_GROUP_POPUP_BP,Brawl Pass exclusive Skin
 TID_SKIN_GROUP_POPUP_CHALLENGE,Win the skin from the Challenge
 TID_SKIN_GROUP_POPUP_CHALLENGE_LOCKED,Reach <NUM> trophies to unlock Challenges
@@ -5338,7 +5338,7 @@ TID_V8-BIT_SKIN,V8-БІТ
 TID_V8-BIT_SKIN_SHOP,V8-БІТ
 TID_TEAM_LOOKING_2,Team is looking for players:
 TID_TEAM_PLAYER_2,Я шукаю команду:
-TID_TEAM_INVITE_TEAM_UP,<NAME> wants to team up with you!
+TID_TEAM_INVITE_TEAM_UP,<NAME> запрошує тебе до команди!
 TID_TEAM_INVITE_API,You have been invited to join a tournament match!
 TID_SHOWDOWN_63,Dried Up River
 TID_SHOWDOWN_66,Ruins
@@ -5366,7 +5366,7 @@ TID_CLUB_LEAGUE_EVENT_DAY,EVENT DAY <NUM>/<MAX>
 TID_CLUB_LEAGUES_BUTTON_EVENT_DAY,Event Day <DAY>
 TID_CLUB_LEAGUES_BUTTON_DAY_NEW,NEW DAY!
 TID_CLUB_LEAGUES_BUTTON_NEXT_EVENTS,NEXT EVENTS
-TID_CLUB_LEAGUES_BUTTON_RACE_COOLDOWN_DESC,Наступний день подій через:
+TID_CLUB_LEAGUES_BUTTON_RACE_COOLDOWN_DESC,Наступний день через:
 TID_CLUB_LEAGUES_BUTTON_SEASON_COOLDOWN_DESC,Next Season starts in:
 TID_CLUB_LEAGUES_BUTTON_SEASON_RANK,Ранг сезону: <RANK>
 TID_CLUB_LEAGUES_BUTTON_SEASON_RANK_NOT_RANKED,Не рейтинговані в сезоні
@@ -5378,7 +5378,7 @@ TID_CLUB_LEAGUE_EVENT_RACE_COOLDOWN_TIME,<TIME>
 TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TIME,Season starts in: <TIME>
 TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TITLE,КЛУБОВА ЛІГА
 TID_CLUB_LEAGUE_EVENT_SEASON_NEXT_EVENTS,Next season events:
-TID_CLUB_LEAGUE_TICKETS_PER_PLAY,<NUM><cA4B7E0>/PLAY</c>
+TID_CLUB_LEAGUE_TICKETS_PER_PLAY,<NUM><cA4B7E0>/ГРУ</c>
 TID_CLUB_LEAGUE_TROPHIES_MAX_PER_WIN,Max/Win
 TID_CLUB_LEAGUE_EVENT_TROPHY_WIN_DESC,Win with Club team:
 TID_CLUB_LEAGUE_TEAM_MEMBERS_NO_TEAM,Not in Club Team
@@ -5513,7 +5513,7 @@ TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_1,Purchase failed
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_NOT_ENOUGH_COINS,Not enough coins!
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_NOT_ENOUGH_GEMS,Not enough gems!
 TID_CLUB_LEAGUE_BUY_GOLD_TICKETS_ERROR_3,No tickets available for purchase!
-TID_CLUB_LEAGUE_SEASON_ENDS_IN_TIME,Season ends in <TIME>
+TID_CLUB_LEAGUE_SEASON_ENDS_IN_TIME,СЕЗОН ЗАКІНЧУЄТЬСЯ ЗА:<TIME>
 TID_CLUB_LEAGUE_TICKET_SHOP_TITLE,GOLDEN TICKETS
 TID_CLUB_LEAGUE_TICKET_SHOP_INFO,You can play up to <cFEA305><NUM> Golden Tickets</c> during a Club League season. Use them to play extra matches and earn more Club Trophies. Golden Tickets can improve your Club's daily rank for the Event Day they're used.\n\nAny Golden Tickets remaining at season end will be automatically transferred to the next season.\n\nGolden Tickets are not considered when calculating season end rewards.
 TID_CLUB_LEAGUE_TICKETS_GET_MORE,Get more...
@@ -5597,10 +5597,10 @@ TID_CLUB_LEAGUE_SEASON_PROMOTING_DESC,Promoting to higher League
 TID_CLUB_LEAGUE_SEASON_DEMOTING_DESC,Demoting to lower League
 TID_CLUB_LEAGUE_LOOKING_FOR_TEAM,Я шукаю команду
 TID_CLUB_LEAGUE_LOOKING_FOR_PLAYERS,Looking for Players:
-TID_CLUB_INFO_TAB_PLAYER_RANKS,PLAYER RANKS
-TID_CLUB_INFO_TAB_LEAGUE_SEASON,CLUB LEAGUE SEASON
-TID_CLUB_INFO_TAB_LEAGUE_EVENT_DAY,EVENT DAY <NUM>
-TID_CLUB_INFO_TAB_LEAGUE_EVENT_DAY_NONE,EVENT DAY
+TID_CLUB_INFO_TAB_PLAYER_RANKS,РАНГИ ГРАВЦІВ
+TID_CLUB_INFO_TAB_LEAGUE_SEASON,СЕЗОН КЛУБНОЇ ЛІГИ
+TID_CLUB_INFO_TAB_LEAGUE_EVENT_DAY,ДЕНЬ ПОДІЙ №<NUM>
+TID_CLUB_INFO_TAB_LEAGUE_EVENT_DAY_NONE,ДЕНЬ ПОДІЙ
 TID_CLUB_MEMBER_LEAGUE_TICKETS,<NUM>/<MAX>
 TID_CLUB_UNLOCK_ALREADY_IN_CLUB,You're already in a Club!
 TID_LOOKING_FOR_CLUB_TEAM_FOUND_SUGGESTION,There's already a Club team!
@@ -5613,11 +5613,11 @@ TID_FRIEND_STATUS_POWER_MATCH,Power Match
 TID_CLAN_MEMBER_ONLINE_STATUS_16,<cE8004C>POWER MATCH</c>
 TID_TEAM_MEMBER_STATUS_16,<cE8004C>POWER MATCH</c>
 TID_TEAM_MEMBER_STATUS_NEW_16,POWER MATCH
-TID_CLUB_INFO_COLUMN_TROPHIES,TROPHIES
-TID_CLUB_INFO_COLUMN_POWER_LEAGUE_RANK,POWER LEAGUE RANK
-TID_CLUB_INFO_COLUMN_LAST_ONLINE,LAST ONLINE
+TID_CLUB_INFO_COLUMN_TROPHIES,ТРОФЕЇ
+TID_CLUB_INFO_COLUMN_POWER_LEAGUE_RANK,РАНК ПАВЕР ЛІГИ
+TID_CLUB_INFO_COLUMN_LAST_ONLINE,ОСТАНІЙ ОНЛАЙН
 TID_CLUB_INFO_COLUMN_NAME,NAME
-TID_CLUB_INFO_COLUMN_TICKETS_USED,TICKETS USED
+TID_CLUB_INFO_COLUMN_TICKETS_USED,ВИКОРИСТАНО КВИТКІВ
 TID_CLUB_INFO_COLUMN_CLUB_TROPHIES,CLUB TROPHIES
 TID_BATTLE_LOG_RANKED_CLUB_LEAGUE,CLUB LEAGUE POWER MATCH
 TID_BATTLE_LOG_REPLAY_INFO_REPLAYS_RANKED_CLUB_LEAGUE,Reach RANK <RANK> to unlock Power Match replays
@@ -5648,7 +5648,7 @@ TID_CLUB_LEAGUE_EVENTS_DAY_STARTS_IN,Starts in: <TIME>
 TID_CLUB_LEAGUE_EVENTS_DAY_ENDS_IN,Ends in: <TIME>
 TID_CLUB_LEAGUE_EVENTS_INFO_BUTTON,WHAT IS CLUB LEAGUE?
 TID_CLUBS_MEMBERS_CLUB_TROPHIES,Club Trophies
-TID_CLUBS_MEMBERS_TICKETS_USED,Tickets Used
+TID_CLUBS_MEMBERS_TICKETS_USED,ВИКОРИСТАНО КВИТКІВ
 TID_CLUBS_MEMBERS_POWER_LEAGUE_RANK,Power League Rank
 TID_CLUB_TEAM_INVITE,TEAM UP WITH YOUR CLUB MATES
 TID_SHOP_SCMAKE_INFO,Skin set
@@ -6205,7 +6205,7 @@ TID_SPRAYS_TUTORIAL_TITLE,SPRAYS
 TID_SPRAYS_TUTORIAL_HEADER,EXPRESS YOURSELF IN BATTLE!
 TID_BRAWL_PASS_CANCEL_QUEST_REROLL,СКАСУВАТИ ЗМІНЕННЯ
 TID_BRAWL_PASS_REROLL_QUEST,ЗМІНИТИ КВЕСТ
-TID_BRAWL_PASS_QUEST_REROLL_COUNT,<num>/<max> rerolls available
+TID_BRAWL_PASS_QUEST_REROLL_COUNT,<num>/<max> змін доступно
 TID_BRAWL_PASS_QUEST_REROLL_REFRESH_TIME,Refreshes in <time>
 TID_YOU_HAVE_USED_ALL_REROLLS,You have used all rerolls! Get more with Brawl Pass
 TID_YOU_HAVE_USED_ALL_REROLLS_HAS_PREMIUM,You have used all available rerolls!
@@ -6286,8 +6286,8 @@ TID_SHOP_VILLAINS_TITLE,THE WORST BUNCH
 TID_SHOP_VILLAINS_INFO,Skin set
 TID_EMOTE_BUNDLE_VILLAINS_PACK,The Worst Bunch Skin Pins
 TID_SKIN_INFO_CAMPAIGN_VILLAINS,Worst Bunch Skin
-TID_HOTZONE_33,Open Zone
-TID_KNOCKOUT_18,New Perspective
+TID_HOTZONE_33,Відкрита зона
+TID_KNOCKOUT_18,Нова перспектива
 TID_TRUE_GOLD_BELLE_SKIN,СПРАВЖНЯ ЗОЛОТА БЕЛЛЬ
 TID_TRUE_GOLD_BELLE_SKIN_SHOP,СПРАВЖНЯ ЗОЛОТА\nБЕЛЛЬ
 TID_TRUE_SILVER_BELLE_SKIN,СПРАВЖНЯ СРІБНА БЕЛЛЬ
