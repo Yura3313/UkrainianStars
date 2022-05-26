@@ -6,7 +6,7 @@ TID_TICKET_COMPENSATION_TITLE,Сповіщення оновлення
 TID_TICKET_COMPENSATION_INFO,От вам кілька кристалів! Ми забрали квитки тому дали вам компенсацію в кристалах
 TID_TICKET_COMPENSATION_CLAIM,ЗАБРАТИ
 TID_BRAWL_PASS_OLD_BOXES_TITLE,ВІДКРИТИ РЕШТУ ЯЩИКІВ
-TID_BRAWL_PASS_QUESTS_LABEL,КВЕСТ
+TID_BRAWL_PASS_QUESTS_LABEL,КВЕСТИ
 TID_BRAWL_PASS_QUESTS_INFO_LOCKED,Досягни <TROPHIES> Трофеїв щоб відкрити Квести!
 TID_BRAWL_PASS_QUESTS_INFO_UNCLAIMED,Квести відкриваються просуванням по Трофейній Дорозі!
 TID_BRAWL_PASS_QUESTS_UNCLAIMED_FLOATER,Відкрий Трофейну Дорогу для відкритя Квестів
@@ -14,7 +14,7 @@ TID_BRAWL_PASS_BUY_PROGRESS_LABEL,КУПИТИ РІВЕНЬ
 TID_QUESTS_TITLE,КВЕСТИ
 TID_QUEST_DESC_1,ВИГРАЙ <AMOUNT> БИТВ
 TID_QUEST_DESC_2,ПЕРЕМОЖИ <AMOUNT> ВОРОГІВ
-TID_QUEST_DESC_3,ЗАВДАЙ <AMOUNT> ОЧІКВ ШКОДИ
+TID_QUEST_DESC_3,ЗАВДАЙ <AMOUNT> ОЧОК ШКОДИ
 TID_QUEST_DESC_4,ЗЦІЛИ <AMOUNT> ОЧКІВ ЖИТТЯ
 TID_QUEST_DESC_5,ВИКОРИСТАЙ \qГРАТИ ЩЕРАЗ\q <NUM> РАЗІВ
 TID_QUEST_DESC_6,ПОГРАЙ <NUM> ІГОР В КОМАНДІ
@@ -93,7 +93,7 @@ TID_CC_POPUP_BUY_LIVES,Купити <NUM> більше?
 TID_CC_POPUP_COMPLETED,ЧЕМПІОНАТ ПРОЙДЕНО
 TID_CC_POPUP_LEVEL,Рівень <LEVEL>
 TID_CC_POPUP_WIN,ВИГРАШ
-TID_CC_POPUP_LOSSES,ПРОГРАШ
+TID_CC_POPUP_LOSSES,ПРОГРАШІВ
 TID_QUALIFIED_TITLE,Онлайн кваліфікацію розблоковано
 TID_QUALIFIED_INFO,"Ого, ти пройшов чемпіонат! Чудово! \n\nЩоб продовжити свій шлях до чемпіонату, іди до<cFFE400><URL></c>"
 TID_QUALIFIED_INFO_HUB,"Ого, ти пройшов чемпіонат! Чудово! \n\nЩоб продовжити свій шлях до чемпіонату, клікни на кнопку кіберспорт на головномі екрані"
@@ -1313,7 +1313,7 @@ TID_SHOP_OFFER_TITLE_21,ПАКЕТ ЕМОЗІ
 TID_SHOP_OFFER_TITLE_22,ПАКЕТ ЕМОЗІ ДЛЯ
 TID_SHOP_OFFER_TITLE_23,<RARITY> ЕМОЗІ
 TID_SHOP_OFFER_TITLE_27,<RARITY> НАБІР ЕМОЗІ
-TID_SHOP_OFFER_TITLE_35,НОВИЙ СПРЕЙ НА:
+TID_SHOP_OFFER_TITLE_35,НОВИЙ СПРЕЙ
 TID_SHOP_OFFER_TITLE_36,СПРЕЇ
 TID_SHOP_OFFER_INFO_36,Виразіть себе в бою за допомогою спреїв!
 TID_SHOP_OFFER_TITLE_37,ДОДАТКОВИЙ СЛОТ СПРЕЮ
@@ -1834,7 +1834,7 @@ TID_BUTTON_CHANGE,Змінити
 TID_CLAN_JOIN_FAILED_IN_TUTORIAL,"Завершіть навчання, щоб приєднатися до клубу"
 TID_CLAN_JOIN_FAILED_FEATURE_LOCKED,Клуби повинні бути розблоковані першими з трофейної дороги!
 TID_CLUB_FEATURE_LOCKED_TROPHIES,Клуби розблоковуються за трофеями <TROPHES>!
-TID_CLAN_INTRO_INVITE,ПОДІЛІТЬСЯ ЗАПРОШЕННЯМ
+TID_CLAN_INTRO_INVITE,ПОДІЛИТИСЯ
 TID_INVITE_CLAN_TOKEN_ERROR,Помилка створення запрошення
 TID_ALLIANCE_INVITE_FAILED_NO_RIGHTS,Тільки президенти клубу можуть запрошувати нових членів
 TID_FRIENDS_FACEBOOK_CONNECT,Підключити
@@ -2184,8 +2184,8 @@ TID_NEW_EVENT_ICON_PREFIX,Next:
 TID_NEW_EVENT_ICON_SUFFIX,Через <TIME>
 TID_SHOP_TITLE,МАГАЗИН
 TID_SELECT_EVENT_TITLE,CHOOSE EVENT
-TID_HERO_LIST_LABEL_NEW,<c53C5F7><COUNT>БРАВЛЕРІВ ІЗ /<TOTAL></c>
-TID_KEY_COUNTER,<VALUE><c7984a8>/<MAX></c>
+TID_HERO_LIST_LABEL_NEW,<c53C5F7><COUNT> БРАВЛЕРІВ ІЗ /<TOTAL></c>
+TID_KEY_COUNTER,"Якщо ви самотні, поруч може з’явитися КОКТЕЙЛЬ. Візьміть його, щоб ненадовго підвищити шкоду та швидкість вашого бравлера!"
 TID_ONLINE_TAB_1,ONLINE PLAYERS
 TID_ONLINE_TAB_2,TEAM CHAT
 TID_ONLINE_TAB_3,CLUB CHAT
@@ -2565,26 +2565,26 @@ TID_BALL_18,Заплутатися
 TID_BALL_19,Впевнений постріл
 TID_BALL_20,Недільні розборки
 TID_BALL_21,Кривий м'яч
-TID_SUPPORT_CREATOR_BUTTON,Support a Creator
+TID_SUPPORT_CREATOR_BUTTON,ПІ
 TID_SUPPORT_CREATOR_LABEL,Підтримуєш: <NAME>
-TID_SUPPORT_CREATOR_POPUP_TITLE,CONTENT CREATOR BOOST
-TID_SUPPORT_CREATOR_POPUP_TEXT,Support your favorite Creator. Any gems you spend will help support this Creator.
-TID_SUPPORT_CREATOR_POPUP_ENTER_CODE,Enter creator code:
-TID_SUPPORT_CREATOR_POPUP_INPUT_CODE,Input creator code here
-TID_SUPPORT_CREATOR_POPUP_BUTTON,ENTER
-TID_SUPPORT_CREATOR_POPUP_BUTTON_MORE,More Info
-TID_SUPPORT_CREATOR_POPUP_INVALID_NAME,Invalid creator code! Please check!
-TID_SUPPORT_SUCCESS_FLOATER,You're now supporting <NAME>!
-TID_SUPPORT_LINK_FAIL_FLOATER,Creator support link invalid or expired!
-TID_SUPPORT_CREATOR_SHOP_TITLE,CONTENT CREATOR BOOST
-TID_SUPPORT_CREATOR_BTN_SUPPORT,ENTER CODE
-TID_SUPPORT_CREATOR_BTN_CHANGE,CHANGE
-TID_SUPPORT_CREATOR_BTN_STOP,STOP
-TID_SUPPORT_CREATOR_INFO,Support a Content Creator when you make in-app purchases by entering their Creator Code!
-TID_SUPPORT_CREATOR_SUPPORTING,Currently supporting:
-TID_SUPPORT_CREATOR_NOT_SUPPORTING,You are currently not supporting any Content Creator.
-TID_STOP_SUPPORTING_CREATOR_TITLE,Stop Content Creator support
-TID_STOP_SUPPORTING_CREATOR_DESC,Do you wish to stop supporting <NAME>?
+TID_SUPPORT_CREATOR_POPUP_TITLE,ПІДТРИМКА ЮТУБЕРА
+TID_SUPPORT_CREATOR_POPUP_TEXT,"підтримай свого улюленого ютубера, вводячи його код"
+TID_SUPPORT_CREATOR_POPUP_ENTER_CODE,введи код
+TID_SUPPORT_CREATOR_POPUP_INPUT_CODE,введи код тут
+TID_SUPPORT_CREATOR_POPUP_BUTTON,ПІДТВЕРДИТИ
+TID_SUPPORT_CREATOR_POPUP_BUTTON_MORE,Більше інформації
+TID_SUPPORT_CREATOR_POPUP_INVALID_NAME,Недійсний код ютубера!
+TID_SUPPORT_SUCCESS_FLOATER,Ти тепер підтримуєш <NAME>!
+TID_SUPPORT_LINK_FAIL_FLOATER,Недійсний код ютубера!
+TID_SUPPORT_CREATOR_SHOP_TITLE,ПІДТРИМАТИ ЮТУБЕРА
+TID_SUPPORT_CREATOR_BTN_SUPPORT,ВВЕСТИ КОД
+TID_SUPPORT_CREATOR_BTN_CHANGE,ЗМІНИТИ
+TID_SUPPORT_CREATOR_BTN_STOP,ПРИПИНИТИ
+TID_SUPPORT_CREATOR_INFO,"Підтримуйте ютубера, коли ви робите покупки в додатку, вводячи його код!"
+TID_SUPPORT_CREATOR_SUPPORTING,зараз підтримуєш: <NAME>
+TID_SUPPORT_CREATOR_NOT_SUPPORTING,Ти не підтримуєш жодного ютубера
+TID_STOP_SUPPORTING_CREATOR_TITLE,Припинити підтримувати
+TID_STOP_SUPPORTING_CREATOR_DESC,Ти хочеш припинити підтримувати <NAME>?
 TID_STAT_DAMAGE_PER_PROXIMITY_MINE,Damage per mine
 TID_OFFER_POPUP_CONFIRMATION_POPUP,Are you sure you want to buy <offer_name>?
 TID_OFFER_POPUP_CONFIRMATION_POPUP_NO_NAME,Are you sure you want to buy the offer?
@@ -2793,12 +2793,12 @@ TID_GOLDRUSH_24A,Royal Flush
 TID_WANTED_17A,Зарослий оазис
 TID_BALL_14A,Гол з поля
 TID_BALL_15A,Поспішність
-TID_SHOP_LABEL_BEST_VALUE,BEST VALUE
-TID_SHOP_LABEL_MOST_POPULAR,MOST POPULAR
-TID_SHOP_LABEL_EXCLUSIVE_OFFER,EXCLUSIVE OFFER
-TID_SHOP_LABEL_POPULAR,POPULAR
+TID_SHOP_LABEL_BEST_VALUE,НАЙКРАЩА ВАРТІСТЬ
+TID_SHOP_LABEL_MOST_POPULAR,НАЙПОПУЛЯРНІША
+TID_SHOP_LABEL_EXCLUSIVE_OFFER,ЕКСКЛЮЗИВ
+TID_SHOP_LABEL_POPULAR,ПОПУЛЯРНА
 TID_SHOP_LABEL_PERCENT_BONUS,<VALUE>% BONUS
-TID_SHOP_LABEL_PERCENT_EXTRA,<VALUE>% <cFFDB4F>EXTRA</c>
+TID_SHOP_LABEL_PERCENT_EXTRA,<VALUE>% <cFFDB4F>БОНУСУ</c>
 TID_BATTLE_ROYALE_25A,Survisland
 TID_BATTLE_ROYALE_26A,Mercury High
 TID_BATTLE_ROYALE_27A,Dropkick
@@ -3626,7 +3626,7 @@ TID_BRAWL_PASS_TAB_QUESTS,QUESTS
 TID_BRAWL_PASS_TAB_PAST_REWARDS,PREVIOUS SEASON
 TID_BRAWL_PASS_PREMIUM,БРАВЛ ПАС
 TID_BRAWL_PASS_FREE,
-TID_BRAWL_PASS_BUY,ACTIVATE
+TID_BRAWL_PASS_BUY,АКТИВУВАТИ
 TID_BRAWL_PASS_UNLOCK_ITEM_AT_TIER,UNLOCK <ITEM> AT TIER <NUM>
 TID_BRAWL_PASS_SEASON_HEADER,BRAWL PASS SEASON
 TID_QUEST_NEW_BATCH_IN,New Quests will unlock in:
@@ -3698,7 +3698,7 @@ TID_GOLDRUSH_50,Pickpocket's Paradise
 TID_GOLDRUSH_51,Emerald Escapade
 TID_GOLDRUSH_52,Rugs and Rubies
 TID_GOLDRUSH_53,Bizarre Bazaar
-TID_QUESTS_NEXT_BATCH_IN,New Quests in <time>
+TID_QUESTS_NEXT_BATCH_IN,Нові квести за <time>
 TID_QUESTS_THIS_BATCH_IN,Starts in <time>
 TID_QUESTS_BATCH_EXPIRES_IN,ENDS IN <time>
 TID_QUESTS_DAILY_REFRESH_IN,ЗМІНА ЗА: <time>
@@ -5168,9 +5168,9 @@ TID_ONLINE_PLAYERS,ГРАВЦІ НЕ В КОМАНДАХ(<NUM>)
 TID_ONLINE_YOUR_TEAM,ТВОЯ КОМАНДА
 TID_ONLINE_YOUR_TEAM_ITEM,ТВОЯ КОМАНДА!
 TID_ONLINE_YOUR_NAME,<NAME> (YOU)
-TID_CHAT_TEAM_UP_DESCRIPTION,Start a team and play with your friends or Club mates!
-TID_CHAT_TEAM_UP_BTN,СТВОРІТЬ КОМАНДУ
-TID_CHAT_STREAM_TEAM_UP_BTN,СТВОРІТЬ КОМАНДУ!
+TID_CHAT_TEAM_UP_DESCRIPTION,Створи команду і грай з друзями або учасниками клубу
+TID_CHAT_TEAM_UP_BTN,СТВОРИТИ КОМАНДУ!
+TID_CHAT_STREAM_TEAM_UP_BTN,СТВОРИТИ КОМАНДУ!
 TID_CHAT_CLUB_PROMO_DESC,Share brawling glory and honors by joining a Club or forming your own!
 TID_CHAT_CLUB_PROMO_BTN,GO
 TID_CHAT_TAB_TEAM,TEAM
@@ -5362,7 +5362,7 @@ TID_CLUB_LEAGUE_NAME,<LEAGUE> LEAGUE
 TID_CLUB_LEAGUE_TAB_PROGRESS,PROGRESS
 TID_CLUB_LEAGUE_TAB_REWARDS,REWARDS
 TID_CLUB_LEAGUE_BUTTON_TICKETS,Tickets:
-TID_CLUB_LEAGUE_EVENT_DAY,EVENT DAY <NUM>/<MAX>
+TID_CLUB_LEAGUE_EVENT_DAY,ДЕНЬ ПОДІЙ <NUM>/<MAX>
 TID_CLUB_LEAGUES_BUTTON_EVENT_DAY,Event Day <DAY>
 TID_CLUB_LEAGUES_BUTTON_DAY_NEW,NEW DAY!
 TID_CLUB_LEAGUES_BUTTON_NEXT_EVENTS,NEXT EVENTS
@@ -5616,9 +5616,9 @@ TID_TEAM_MEMBER_STATUS_NEW_16,POWER MATCH
 TID_CLUB_INFO_COLUMN_TROPHIES,ТРОФЕЇ
 TID_CLUB_INFO_COLUMN_POWER_LEAGUE_RANK,РАНК ПАВЕР ЛІГИ
 TID_CLUB_INFO_COLUMN_LAST_ONLINE,ОСТАНІЙ ОНЛАЙН
-TID_CLUB_INFO_COLUMN_NAME,NAME
+TID_CLUB_INFO_COLUMN_NAME,ІМ'Я
 TID_CLUB_INFO_COLUMN_TICKETS_USED,ВИКОРИСТАНО КВИТКІВ
-TID_CLUB_INFO_COLUMN_CLUB_TROPHIES,CLUB TROPHIES
+TID_CLUB_INFO_COLUMN_CLUB_TROPHIES,КЛУБНІ ТРОФЕЇ
 TID_BATTLE_LOG_RANKED_CLUB_LEAGUE,CLUB LEAGUE POWER MATCH
 TID_BATTLE_LOG_REPLAY_INFO_REPLAYS_RANKED_CLUB_LEAGUE,Reach RANK <RANK> to unlock Power Match replays
 TID_RANKED_COOLDOWN_FLOATER_CLUB_LEAGUE,Can't start match. You are suspended from Club League Power Matches for <TIME>.
@@ -5795,10 +5795,10 @@ TID_SPEC_ABI_KICKER_DUDE_2,DIVINE SOLES
 TID_SPEC_ABI_KICKER_DUDE_2_DESC,Reduce <c00cc00><VALUE2></c> damage from incoming hits once every <c00cc00><VALUE1></c> seconds. Maximum reduction is <c00cc00><VALUE3>%</c> of the incoming damage.
 TID_ACCESSORY_KICKER_DUDE_GADGET,CORN-FU
 TID_ACCESSORY_KICKER_DUDE_GADGET_DESC,"Fang tosses a handful of corn kernels into the air, making it rain popcorn! Each kernel pop deals <c00cc00><VALUE1></c> damage."
-TID_GAME_MODE_24,DUELS
+TID_GAME_MODE_24,ДУЕЛІ
 TID_GAME_MODE_24_DESC,"Assemble a team of 3 brawlers to battle against an opposing team in an elimination format Duel. Each round is a 1 vs 1 battle, and ends when a brawler is defeated. Win 3 rounds to win the match!\n\nPicking an effective squad of brawlers in the right order can greatly enhance your chances of winning."
-TID_NOTIFICATION_TAG_TEAM,A new DUELS map is available! Time to win new Rewards!
-TID_TAG_TEAM_INTRO_TEXT,Defeat all enemy brawlers!
+TID_NOTIFICATION_TAG_TEAM,Нова карта дуелей доступна
+TID_TAG_TEAM_INTRO_TEXT,Вбий усіх ворожих бравлерів!
 TID_REWARD_INFO_RESOURCE_CLUBCOINS,<AMOUNT> Club Coins claimed
 TID_REWARD_INFO_RESOURCE_GEARSCRAP,<AMOUNT> Scrap claimed
 TID_SKIN_INFO_PIRATES,Pirate Skins
@@ -5806,7 +5806,7 @@ TID_SKIN_INFO_BRAWLENTINES,Brawlentine's Skins
 TID_SHOP_BRAWLIDAYS_TITLE,BRAWLIDAYS
 TID_SHOP_BRAWLIDAYS_INFO,Skin Set
 TID_DONATION_GEAR_AND_LEVEL,Gear donation: <NAME> (Level <LEVEL>)
-TID_BRAWLER_INDEX,BRAWLER <NUM>
+TID_BRAWLER_INDEX,БРАВЛЕР <NUM>
 TID_DUPLICATE_HERO_START_GAME,Each Brawler can only be picked once!
 TID_SHOP_BRAWLENTINES_SKINS,Brawlentine's Skins
 TID_SHOP_BRAWLENTINES_TITLE,BRAWLENTINE'S
@@ -6206,7 +6206,7 @@ TID_SPRAYS_TUTORIAL_HEADER,EXPRESS YOURSELF IN BATTLE!
 TID_BRAWL_PASS_CANCEL_QUEST_REROLL,СКАСУВАТИ ЗМІНЕННЯ
 TID_BRAWL_PASS_REROLL_QUEST,ЗМІНИТИ КВЕСТ
 TID_BRAWL_PASS_QUEST_REROLL_COUNT,<num>/<max> змін доступно
-TID_BRAWL_PASS_QUEST_REROLL_REFRESH_TIME,Refreshes in <time>
+TID_BRAWL_PASS_QUEST_REROLL_REFRESH_TIME,Зміна за <time>
 TID_YOU_HAVE_USED_ALL_REROLLS,You have used all rerolls! Get more with Brawl Pass
 TID_YOU_HAVE_USED_ALL_REROLLS_HAS_PREMIUM,You have used all available rerolls!
 TID_QUEST_REROLL_INTRO,ВИБЕРІТЬ КВЕСТ ДЛЯ ЗМІНИ
