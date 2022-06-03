@@ -111,7 +111,7 @@
 
     add-float/2addr v0, p2
 
-    const p2, 0x3f0e5604    # 0.556f
+    const p2, 0x3f0e5604
 
     int-to-float v1, p0
 
@@ -170,7 +170,7 @@
 
     int-to-float p0, p0
 
-    const v0, 0x3dcccccd    # 0.1f
+    const v0, 0x3dcccccd
 
     mul-float p0, p0, v0
 

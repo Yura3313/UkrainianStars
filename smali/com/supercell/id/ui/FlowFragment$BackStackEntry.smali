@@ -127,7 +127,7 @@
 
     move-result p4
 
-    const v0, 0x3e4ccccd    # 0.2f
+    const v0, 0x3e4ccccd
 
     mul-float p1, p1, v0
 

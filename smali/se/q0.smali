@@ -401,7 +401,7 @@
     :cond_b
     add-int/lit8 v9, v14, 0x1
 
-    const v12, 0x3fffffff    # 1.9999999f
+    const v12, 0x3fffffff
 
     and-int/2addr v12, v9
 

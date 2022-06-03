@@ -318,7 +318,7 @@
     .line 8
     iget-boolean v10, v7, Lp/h;->a:Z
 
-    const v11, 0x38d1b717    # 1.0E-4f
+    const v11, 0x38d1b717
 
     const/16 v12, 0x9
 

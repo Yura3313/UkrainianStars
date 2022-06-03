@@ -965,7 +965,7 @@
 
     invoke-static {v4, v7}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    const v4, 0x3e4ccccd    # 0.2f
+    const v4, 0x3e4ccccd
 
     mul-float v4, v4, v6
 

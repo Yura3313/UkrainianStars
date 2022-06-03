@@ -740,7 +740,7 @@
 
     move-result p1
 
-    const v2, 0x38d1b717    # 1.0E-4f
+    const v2, 0x38d1b717
 
     add-float/2addr v1, v2
 

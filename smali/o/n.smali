@@ -833,7 +833,7 @@
 
     move-result p1
 
-    const p2, 0x358637bd    # 1.0E-6f
+    const p2, 0x358637bd
 
     cmpl-float p1, p1, p2
 

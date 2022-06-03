@@ -203,7 +203,7 @@
     .line 19
     iget-object p1, p0, Landroidx/core/widget/a;->k:[F
 
-    const v1, 0x3e4ccccd    # 0.2f
+    const v1, 0x3e4ccccd
 
     aput v1, p1, v4
 
@@ -213,7 +213,7 @@
     .line 21
     iget-object p1, p0, Landroidx/core/widget/a;->o:[F
 
-    const v1, 0x3a83126f    # 0.001f
+    const v1, 0x3a83126f
 
     aput v1, p1, v4
 

@@ -199,13 +199,13 @@
 
     move-result-wide v0
 
-    const v2, -0x457ced91    # -0.001f
+    const v2, -0x457ced91
 
     cmpl-float v2, p0, v2
 
     if-lez v2, :cond_0
 
-    const v2, 0x3a83126f    # 0.001f
+    const v2, 0x3a83126f
 
     cmpg-float v2, p0, v2
 

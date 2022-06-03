@@ -53,7 +53,7 @@
 
     if-eqz p3, :cond_8
 
-    const v0, 0x3f333333    # 0.7f
+    const v0, 0x3f333333
 
     const/16 v1, -0x14
 
@@ -119,7 +119,7 @@
 
     const/high16 v4, 0x3f800000    # 1.0f
 
-    const v5, 0x3e99999a    # 0.3f
+    const v5, 0x3e99999a
 
     mul-float v5, v5, v2
 

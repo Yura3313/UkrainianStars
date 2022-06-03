@@ -219,7 +219,7 @@
 
     const/4 v0, 0x1
 
-    const v5, 0x3f0a3d71    # 0.54f
+    const v5, 0x3f0a3d71
 
     .line 7
     invoke-static {v2, v1, v5}, Lh4/a;->f(IIF)I
@@ -230,7 +230,7 @@
 
     const/4 v0, 0x2
 
-    const v5, 0x3ec28f5c    # 0.38f
+    const v5, 0x3ec28f5c
 
     .line 8
     invoke-static {v2, v1, v5}, Lh4/a;->f(IIF)I

@@ -941,7 +941,7 @@
 
     move-result-object v1
 
-    const v2, 0x3f6147ae    # 0.88f
+    const v2, 0x3f6147ae
 
     .line 5
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->dimAmount:F

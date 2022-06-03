@@ -971,7 +971,7 @@
 
     invoke-direct {v0}, Landroid/graphics/drawable/GradientDrawable;-><init>()V
 
-    const v1, 0x3727c5ac    # 1.0E-5f
+    const v1, 0x3727c5ac
 
     .line 10
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/GradientDrawable;->setCornerRadius(F)V

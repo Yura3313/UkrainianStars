@@ -422,7 +422,7 @@
 
     move-result-object p1
 
-    const p2, 0x3f733333    # 0.95f
+    const p2, 0x3f733333
 
     invoke-virtual {p1, p2}, Landroid/view/ViewPropertyAnimator;->scaleX(F)Landroid/view/ViewPropertyAnimator;
 

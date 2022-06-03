@@ -224,7 +224,7 @@
 
     int-to-float p0, p0
 
-    const p2, 0x3ea8f5c3    # 0.33f
+    const p2, 0x3ea8f5c3
 
     mul-float p0, p0, p2
 
@@ -283,7 +283,7 @@
 
     int-to-float p0, p0
 
-    const p2, 0x3ddb22d1    # 0.107f
+    const p2, 0x3ddb22d1
 
     mul-float p0, p0, p2
 

@@ -796,7 +796,7 @@
     .line 12
     iget v2, p0, Lcom/google/android/gms/internal/ads/k7;->M:I
 
-    const v5, -0x40000001    # -1.9999999f
+    const v5, -0x40000001
 
     and-int/2addr v2, v5
 

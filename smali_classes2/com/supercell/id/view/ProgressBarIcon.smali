@@ -99,7 +99,7 @@
 
     move-result-object p3
 
-    const v3, 0x3f266666    # 0.65f
+    const v3, 0x3f266666
 
     const/high16 v4, 0x3f000000    # 0.5f
 
@@ -142,9 +142,9 @@
 
     move-result-object v3
 
-    const v8, 0x3dcccccd    # 0.1f
+    const v8, 0x3dcccccd
 
-    const v9, 0x3eb33333    # 0.35f
+    const v9, 0x3eb33333
 
     .line 14
     invoke-static {v9, v8, v9, v5}, Lh0/b;->a(FFFF)Landroid/view/animation/Interpolator;
@@ -183,7 +183,7 @@
 
     move-result-object v1
 
-    const v8, 0x3f59999a    # 0.85f
+    const v8, 0x3f59999a
 
     .line 19
     invoke-static {v8, p1, v4, v5}, Lh0/b;->a(FFFF)Landroid/view/animation/Interpolator;
@@ -500,7 +500,7 @@
 
     sub-float/2addr v2, v3
 
-    const v0, 0x3f733333    # 0.95f
+    const v0, 0x3f733333
 
     mul-float v0, v0, v2
 

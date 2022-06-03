@@ -109,7 +109,7 @@
     :try_start_2
     invoke-virtual {v7}, Landroid/content/res/AssetFileDescriptor;->close()V
 
-    const v0, 0x3dcccccd    # 0.1f
+    const v0, 0x3dcccccd
 
     .line 8
     invoke-virtual {v6, v0, v0}, Landroid/media/MediaPlayer;->setVolume(FF)V

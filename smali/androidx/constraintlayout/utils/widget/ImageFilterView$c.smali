@@ -138,15 +138,15 @@
 
     sub-float v24, v4, v1
 
-    const v25, 0x3e998c7e    # 0.2999f
+    const v25, 0x3e998c7e
 
     mul-float v25, v25, v24
 
-    const v26, 0x3f1645a2    # 0.587f
+    const v26, 0x3f1645a2
 
     mul-float v26, v26, v24
 
-    const v27, 0x3de978d5    # 0.114f
+    const v27, 0x3de978d5
 
     mul-float v24, v24, v27
 
@@ -270,7 +270,7 @@
 
     if-gtz v1, :cond_2
 
-    const v5, 0x3c23d70a    # 0.01f
+    const v5, 0x3c23d70a
 
     :cond_2
     const v1, 0x459c4000    # 5000.0f

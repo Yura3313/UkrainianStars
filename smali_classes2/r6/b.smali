@@ -2066,7 +2066,7 @@
     :goto_2
     const/16 v13, 0x69
 
-    const v14, 0x3f333333    # 0.7f
+    const v14, 0x3f333333
 
     if-gt v15, v13, :cond_3
 
@@ -2669,7 +2669,7 @@
 
     const/4 v6, 0x6
 
-    const v14, 0x3f333333    # 0.7f
+    const v14, 0x3f333333
 
     move/from16 v21, v11
 

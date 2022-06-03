@@ -119,7 +119,7 @@
 
     if-eqz v5, :cond_1b
 
-    const v6, 0x3fb33333    # 1.4f
+    const v6, 0x3fb33333
 
     mul-float v1, v1, v6
 

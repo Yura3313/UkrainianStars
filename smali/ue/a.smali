@@ -1968,7 +1968,7 @@
 
     sub-int/2addr v3, v0
 
-    const v0, 0x3fffffff    # 1.9999999f
+    const v0, 0x3fffffff
 
     and-int/2addr v0, v3
 

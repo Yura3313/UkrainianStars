@@ -257,7 +257,7 @@
 .method public final b(F)V
     .locals 6
 
-    const v0, 0x3ea3d70a    # 0.32f
+    const v0, 0x3ea3d70a
 
     div-float v1, p1, v0
 
@@ -289,7 +289,7 @@
     :goto_0
     sub-float/2addr p1, v0
 
-    const v0, 0x3f2e147b    # 0.68f
+    const v0, 0x3f2e147b
 
     div-float/2addr p1, v0
 

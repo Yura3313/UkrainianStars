@@ -232,7 +232,7 @@
 
     int-to-float p2, p2
 
-    const p3, 0x3f99999a    # 1.2f
+    const p3, 0x3f99999a
 
     mul-float p2, p2, p3
 

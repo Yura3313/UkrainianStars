@@ -150,7 +150,7 @@
 
     if-ne v0, v1, :cond_4
 
-    const v0, 0x5368d4a5    # 1.0E12f
+    const v0, 0x5368d4a5
 
     goto :goto_1
 

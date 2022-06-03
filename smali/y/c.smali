@@ -491,7 +491,7 @@
 
     iget v0, p0, Ly/c;->g:F
 
-    const v1, 0x3d4ccccd    # 0.05f
+    const v1, 0x3d4ccccd
 
     cmpl-float v0, v0, v1
 

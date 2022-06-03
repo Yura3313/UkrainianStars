@@ -222,7 +222,7 @@
 
     :array_1
     .array-data 4
-        0x3f4ccccd    # 0.8f
+        0x3f4ccccd
         0x3f800000    # 1.0f
     .end array-data
 .end method

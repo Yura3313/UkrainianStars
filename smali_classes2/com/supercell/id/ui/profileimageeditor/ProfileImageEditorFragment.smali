@@ -786,7 +786,7 @@
 
     invoke-static {v0, v1}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v1, 0x3ecccccd    # 0.4f
+    const v1, 0x3ecccccd
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setAlpha(F)V
 

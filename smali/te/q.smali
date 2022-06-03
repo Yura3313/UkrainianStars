@@ -125,7 +125,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x3fffffff    # 1.9999999f
+    const v2, 0x3fffffff
 
     if-gt p2, v2, :cond_0
 
@@ -336,7 +336,7 @@
     :cond_3
     iget-boolean v8, v6, Lte/q;->d:Z
 
-    const v13, 0x3fffffff    # 1.9999999f
+    const v13, 0x3fffffff
 
     if-nez v8, :cond_5
 

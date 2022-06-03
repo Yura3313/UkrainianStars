@@ -174,7 +174,7 @@
 
     int-to-float v4, v4
 
-    const v5, 0x400ccccd    # 2.2f
+    const v5, 0x400ccccd
 
     mul-float v4, v4, v5
 
@@ -293,7 +293,7 @@
     :array_0
     .array-data 4
         0x3f800000    # 1.0f
-        0x3e99999a    # 0.3f
+        0x3e99999a
     .end array-data
 
     :array_1

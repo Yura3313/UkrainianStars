@@ -28,9 +28,9 @@
 
     move-result-object v1
 
-    const v3, 0x3eb33333    # 0.35f
+    const v3, 0x3eb33333
 
-    const v4, 0x3dcccccd    # 0.1f
+    const v4, 0x3dcccccd
 
     const/high16 v5, 0x3f800000    # 1.0f
 
@@ -59,7 +59,7 @@
 
     move-result-object p0
 
-    const p1, 0x3f59999a    # 0.85f
+    const p1, 0x3f59999a
 
     const/high16 v3, 0x3f000000    # 0.5f
 

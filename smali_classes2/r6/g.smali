@@ -273,7 +273,7 @@
 
     array-length v0, v0
 
-    const v1, 0x3ec28f5c    # 0.38f
+    const v1, 0x3ec28f5c
 
     const/4 v2, -0x1
 
@@ -287,7 +287,7 @@
 
     aget-object v4, v4, v3
 
-    const v5, 0x3f47ae14    # 0.78f
+    const v5, 0x3f47ae14
 
     .line 3
     invoke-static {p0, v4, v5}, Lr6/j;->e([I[IF)F
@@ -379,14 +379,14 @@
 
     if-ne v6, v7, :cond_2
 
-    const v9, 0x3f47ae14    # 0.78f
+    const v9, 0x3f47ae14
 
     .line 6
     invoke-static {v1, p2, v9}, Lr6/j;->e([I[IF)F
 
     move-result v9
 
-    const v10, 0x3ec28f5c    # 0.38f
+    const v10, 0x3ec28f5c
 
     const/4 v11, 0x2
 

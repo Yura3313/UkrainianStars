@@ -146,7 +146,7 @@
     :cond_6
     add-int/lit8 v3, v8, 0x1
 
-    const v6, 0x3fffffff    # 1.9999999f
+    const v6, 0x3fffffff
 
     and-int v10, v3, v6
 

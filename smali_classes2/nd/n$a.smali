@@ -164,7 +164,7 @@
 
     invoke-virtual {p1, v2}, Landroid/widget/FrameLayout;->setTranslationY(F)V
 
-    const v0, 0x3f333333    # 0.7f
+    const v0, 0x3f333333
 
     .line 9
     invoke-virtual {p1, v0}, Landroid/widget/FrameLayout;->setScaleX(F)V

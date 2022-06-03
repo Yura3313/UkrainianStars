@@ -443,7 +443,7 @@
 
     move-result v17
 
-    const v19, 0x3dcccccd    # 0.1f
+    const v19, 0x3dcccccd
 
     invoke-static {v11}, Lcom/android/billingclient/api/a0;->b(I)F
 
@@ -986,7 +986,7 @@
 
     invoke-virtual {v0}, Landroid/widget/EditText;->clearFocus()V
 
-    const v0, 0x3fb33333    # 1.4f
+    const v0, 0x3fb33333
 
     .line 10
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->setScaleX(F)V

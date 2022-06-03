@@ -14,7 +14,7 @@
     .line 1
     invoke-direct {p0}, Lr4/e;-><init>()V
 
-    const v0, 0x3a83126f    # 0.001f
+    const v0, 0x3a83126f
 
     sub-float/2addr p1, v0
 

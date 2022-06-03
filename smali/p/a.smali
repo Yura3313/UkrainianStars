@@ -458,9 +458,9 @@
 .method public b(Lp/h;FZ)V
     .locals 11
 
-    const v0, 0x3a83126f    # 0.001f
+    const v0, 0x3a83126f
 
-    const v1, -0x457ced91    # -0.001f
+    const v1, -0x457ced91
 
     cmpl-float v2, p2, v1
 

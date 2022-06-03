@@ -3,7 +3,7 @@ Built-By: Generated-by-ADT
 Created-By: Android Gradle 3.5.0
 
 Name: AndroidManifest.xml
-SHA1-Digest: N6TLsud/ueE6gteGYdMreh8jFZQ=
+SHA1-Digest: egrOQArBJMGf2BiLMf7d0OF3g1I=
 
 Name: META-INF/services/kotlinx.coroutines.CoroutineExceptionHandler
 SHA1-Digest: Zyskm/+Jn6RpKJguN7Ai2JvKIgA=
@@ -67,13 +67,13 @@ Name: assets/csv_client/bp_purchase_popup.csv
 SHA1-Digest: ffbpbuFiHs+8YjwsUepPyljcAf0=
 
 Name: assets/csv_client/client_globals.csv
-SHA1-Digest: IK/0Et/3+1HShEkQ/kUVd3xb7uU=
+SHA1-Digest: vVI4PvENHH0b4hMI7WtsQWiyw08=
 
 Name: assets/csv_client/color_gradients.csv
 SHA1-Digest: 0MD2xggnLcSP1w0sJfm/kwJ5TbY=
 
 Name: assets/csv_client/credits.csv
-SHA1-Digest: X/04wpX0TlYP1lg62L/fSpikHvY=
+SHA1-Digest: Tb07wQB+VhNJhXuMGaWyYT4P5qU=
 
 Name: assets/csv_client/effects.csv
 SHA1-Digest: n5z/oWiWdqxl0NGxS+GX9onznOs=
@@ -115,7 +115,7 @@ Name: assets/csv_client/tutorial.csv
 SHA1-Digest: oFfXA5MsX3HCBVITIRUXHTyCDg8=
 
 Name: assets/csv_logic/accessories.csv
-SHA1-Digest: 767dvHiEOe2KJeWTAKFsh6bL4Xg=
+SHA1-Digest: nNDV1kj50lMuvmld2LDmY5Rd0zU=
 
 Name: assets/csv_logic/alliance_badges.csv
 SHA1-Digest: pbBOtHHDQW2MosMFiegilql0Cmg=
@@ -130,7 +130,7 @@ Name: assets/csv_logic/alliance_roles.csv
 SHA1-Digest: vBHAYyBYcAFo2BLCzQeHBiRYRxA=
 
 Name: assets/csv_logic/area_effects.csv
-SHA1-Digest: C/Y7XTaLe/ttAlF3J2ObpIcotCQ=
+SHA1-Digest: SSKRGNLTZDhaffEJpvIRzsYs7qI=
 
 Name: assets/csv_logic/bosses.csv
 SHA1-Digest: Ejxzm7RZjPHXagDl5KH+w5/6ry8=
@@ -148,7 +148,7 @@ Name: assets/csv_logic/challenges.csv
 SHA1-Digest: bLTz24rHp+EW3JVwEpl73XCSPc4=
 
 Name: assets/csv_logic/characters.csv
-SHA1-Digest: YYlvDS6JjtaYq602L5ARBbsyGlY=
+SHA1-Digest: GZ3pym/Dfk+NodG1LavEUrZqFL8=
 
 Name: assets/csv_logic/emote_bundles.csv
 SHA1-Digest: tsigvKO5y3A/CRh7ryF+vuutELw=
@@ -253,7 +253,7 @@ Name: assets/deferred.yml
 SHA1-Digest: lUsSFNgsAk3cOCMU75btF5719IA=
 
 Name: assets/fingerprint.json
-SHA1-Digest: RZ0+nc3UserJVNuOcM9l0cubRyw=
+SHA1-Digest: /X7xOVisaun6HInOtzcPpLXTIk8=
 
 Name: assets/font/Brawl_Stars_Deputy.otf
 SHA1-Digest: e/LGyVBULzWnNZyGdrgpbXJVucg=
@@ -460,7 +460,7 @@ Name: assets/sc/background_ramadan22_tex.sc
 SHA1-Digest: ghrg1c9abuJLtFE5ToS2Yu+BFdM=
 
 Name: assets/sc/background_stuntshow.sc
-SHA1-Digest: RFoN5zr95zcJwjyvl+fmSL5HVvs=
+SHA1-Digest: LEpdzggedVGO3oLTJ+UCr08W9lM=
 
 Name: assets/sc/background_stuntshow_tex.sc
 SHA1-Digest: dzwAPCIshkyDKwDsUZ4QvqE1/Vs=
@@ -520,7 +520,7 @@ Name: assets/sc/supercell_id_tex.sc
 SHA1-Digest: Y/QOZO9NWIwpqfhZKCWcCIKzzs8=
 
 Name: assets/sc/ui.sc
-SHA1-Digest: ZdgjVbdLFtqMrNfTRXLD9PzJLfc=
+SHA1-Digest: RgdtfFgDo5ZhPpXAePlKWfa4llA=
 
 Name: assets/sc/ui_tex.sc
 SHA1-Digest: eCCw7tTAA4VsrlKeVK7JkgDKB4Y=
@@ -10244,7 +10244,7 @@ Name: assets/sc3d/wooden_fence_town.scw
 SHA1-Digest: m4/4nuC2OirRtfT4Y9D4YCULkZg=
 
 Name: assets/sentry-debug-meta.properties
-SHA1-Digest: gVqmBlPMCFrpmZ6OiS7osB6J21Q=
+SHA1-Digest: R6MvDKcvIiWBqS6lRemJDuludaM=
 
 Name: assets/sfx/100coins_01.ogg
 SHA1-Digest: 9Q7ChybGXpEAKOlKIsQFYW1i2WU=
@@ -15072,7 +15072,7 @@ Name: build-data.properties
 SHA1-Digest: HH9p8Bhdg6vAr6gc4d4S2zc+mmo=
 
 Name: classes.dex
-SHA1-Digest: 8AUr3Wa+6wBBeunRKCTb3unY81Y=
+SHA1-Digest: 6yYixM4CDFmpe+bgbBKj44XTu+Q=
 
 Name: classes2.dex
 SHA1-Digest: AoooQMJQyiwDoqN7aAZ5mGfVW4U=
@@ -16829,20 +16829,11 @@ SHA1-Digest: cZsLFkzGQfMKVV+cwGttW95Sji4=
 Name: kotlin/reflect/reflect.kotlin_builtins
 SHA1-Digest: l6f8dPGlWhhg7zs+V6/uTMWKa3I=
 
-Name: lib/armeabi-v7a/libbsd.c.so
-SHA1-Digest: 49jhO1xPZpJI9V9LdkW7Q2LpEak=
-
-Name: lib/armeabi-v7a/libbsd.s.so
-SHA1-Digest: +j9hIiAN2L+8Y3VqUhv3/HySP9A=
-
-Name: lib/armeabi-v7a/libbsd.so
-SHA1-Digest: ebq49udVH8fk9yzh34Xkb2U3y+8=
-
 Name: lib/armeabi-v7a/libfmod.so
 SHA1-Digest: 3nu2+pXl6UlBM6XwcFL1idY1IUQ=
 
 Name: lib/armeabi-v7a/libg.so
-SHA1-Digest: Pg5gnnUiWVhlb6gLwQutGPBUfes=
+SHA1-Digest: PAZRWerNaMb0+lenHmEUl9Z/Zhs=
 
 Name: lib/armeabi-v7a/libnova_cpp.so
 SHA1-Digest: e/XPEYGn/dLzX0k6R0N0m4ncQkE=

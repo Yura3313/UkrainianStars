@@ -115,7 +115,7 @@
 
     move-result v12
 
-    const v13, 0x3dcccccd    # 0.1f
+    const v13, 0x3dcccccd
 
     const/16 v16, 0x10
 
@@ -152,7 +152,7 @@
 
     move-result v2
 
-    const v10, 0x3dcccccd    # 0.1f
+    const v10, 0x3dcccccd
 
     invoke-static/range {v16 .. v16}, Lcom/android/billingclient/api/a0;->b(I)F
 

@@ -246,7 +246,7 @@
     :cond_4
     add-int/lit8 v2, v8, 0x1
 
-    const v5, 0x3fffffff    # 1.9999999f
+    const v5, 0x3fffffff
 
     and-int v10, v2, v5
 

@@ -971,7 +971,7 @@
 
     int-to-long v7, v6
 
-    const v9, 0x3f666666    # 0.9f
+    const v9, 0x3f666666
 
     cmp-long v10, v3, v7
 
@@ -1187,7 +1187,7 @@
 
     int-to-float v9, v9
 
-    const v10, 0x3f666666    # 0.9f
+    const v10, 0x3f666666
 
     mul-float v9, v9, v10
 
@@ -1200,7 +1200,7 @@
     :cond_3
     move-wide/from16 v10, p1
 
-    const v9, 0x3f666666    # 0.9f
+    const v9, 0x3f666666
 
     goto :goto_0
 

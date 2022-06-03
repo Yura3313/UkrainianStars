@@ -569,7 +569,7 @@
 
     move-result v0
 
-    const v2, 0x3c23d70a    # 0.01f
+    const v2, 0x3c23d70a
 
     cmpl-float v0, v0, v2
 

@@ -815,7 +815,7 @@
 
     mul-float v1, v1, v0
 
-    const v0, 0x3e4ccccd    # 0.2f
+    const v0, 0x3e4ccccd
 
     mul-float v1, v1, v0
 

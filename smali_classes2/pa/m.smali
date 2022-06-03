@@ -103,7 +103,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;I)V
 
-    const v1, 0x3f0ccccd    # 0.55f
+    const v1, 0x3f0ccccd
 
     .line 10
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setAlpha(F)V

@@ -228,7 +228,7 @@
     .line 23
     iget-object v0, v1, Lm4/b;->b:Landroid/graphics/Paint;
 
-    const v3, 0x3faaa993    # 1.3333f
+    const v3, 0x3faaa993
 
     mul-float p4, p4, v3
 

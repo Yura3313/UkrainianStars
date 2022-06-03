@@ -262,7 +262,7 @@
 
     iput p2, p0, Landroidx/viewpager/widget/PagerTitleStrip;->t:I
 
-    const p2, 0x3f19999a    # 0.6f
+    const p2, 0x3f19999a
 
     .line 25
     invoke-virtual {p0, p2}, Landroidx/viewpager/widget/PagerTitleStrip;->setNonPrimaryAlpha(F)V
@@ -548,7 +548,7 @@
 
     int-to-float p2, p2
 
-    const v1, 0x3f4ccccd    # 0.8f
+    const v1, 0x3f4ccccd
 
     mul-float p2, p2, v1
 
@@ -1196,7 +1196,7 @@
 
     int-to-float v5, v4
 
-    const v6, 0x3e4ccccd    # 0.2f
+    const v6, 0x3e4ccccd
 
     mul-float v5, v5, v6
 

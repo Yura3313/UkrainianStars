@@ -227,7 +227,7 @@
 
     const/high16 v4, 0x3f800000    # 1.0f
 
-    const v5, 0x3dcccccd    # 0.1f
+    const v5, 0x3dcccccd
 
     const/high16 v6, 0x41000000    # 8.0f
 

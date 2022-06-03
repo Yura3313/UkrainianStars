@@ -3982,10 +3982,6 @@
     .line 80
     invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 
-    const-string v0, "bsd"
-
-    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
-
     .line 81
     iput-boolean v2, v14, Lcom/supercell/titan/GameApp;->p:Z
     :try_end_5
@@ -4295,6 +4291,8 @@
     invoke-virtual {v14, v0}, Lcom/supercell/titan/GameApp;->handleDeepLink(Ljava/lang/String;)V
 
     return-void
+
+    nop
 
     :array_0
     .array-data 4

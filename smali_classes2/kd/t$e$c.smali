@@ -390,7 +390,7 @@
 
     int-to-float v0, v0
 
-    const v1, 0x358637bd    # 1.0E-6f
+    const v1, 0x358637bd
 
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 

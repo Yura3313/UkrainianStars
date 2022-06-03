@@ -438,7 +438,7 @@
     goto :goto_5
 
     :cond_6
-    const v3, 0x3ecccccd    # 0.4f
+    const v3, 0x3ecccccd
 
     goto :goto_6
 

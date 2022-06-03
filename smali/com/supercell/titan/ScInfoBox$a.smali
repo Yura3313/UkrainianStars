@@ -288,7 +288,7 @@
 
     const/4 v4, 0x0
 
-    const v5, 0x3f19999a    # 0.6f
+    const v5, 0x3f19999a
 
     const/high16 v6, 0x3f800000    # 1.0f
 

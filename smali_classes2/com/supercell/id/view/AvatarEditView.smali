@@ -971,7 +971,7 @@
 
     const/high16 v1, 0x3f000000    # 0.5f
 
-    const v2, 0x3f266666    # 0.65f
+    const v2, 0x3f266666
 
     const/high16 v3, 0x3f800000    # 1.0f
 

@@ -410,7 +410,7 @@
 
     if-gtz v3, :cond_0
 
-    const v3, 0x3f4ccccd    # 0.8f
+    const v3, 0x3f4ccccd
 
     mul-float v0, v0, v3
 

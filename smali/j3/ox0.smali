@@ -1172,7 +1172,7 @@
 
     move-result v2
 
-    const v4, 0x3dcccccd    # 0.1f
+    const v4, 0x3dcccccd
 
     invoke-static {v4, v2}, Ljava/lang/Math;->max(FF)F
 

@@ -58,7 +58,7 @@
 
     move-result p3
 
-    const p4, 0x3b03126f    # 0.002f
+    const p4, 0x3b03126f
 
     div-float p4, p3, p4
 

@@ -930,7 +930,7 @@
 
     div-float/2addr v0, v1
 
-    const v1, 0x40533333    # 3.3f
+    const v1, 0x40533333
 
     div-float/2addr v0, v1
 

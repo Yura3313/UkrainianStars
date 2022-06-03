@@ -179,7 +179,7 @@
     .line 1
     iget-boolean v0, p0, Lt0/d;->l:Z
 
-    const v1, 0x3c23d70a    # 0.01f
+    const v1, 0x3c23d70a
 
     if-eqz v0, :cond_0
 
@@ -189,7 +189,7 @@
     .line 3
     iget p3, p2, Lt0/d$a;->m:F
 
-    const v0, 0x3f4ccccd    # 0.8f
+    const v0, 0x3f4ccccd
 
     div-float/2addr p3, v0
 
@@ -251,7 +251,7 @@
     :cond_1
     iget p3, p2, Lt0/d$a;->m:F
 
-    const v2, 0x3f4a3d71    # 0.79f
+    const v2, 0x3f4a3d71
 
     const/high16 v3, 0x3f000000    # 0.5f
 
@@ -317,7 +317,7 @@
     move v0, v6
 
     :goto_0
-    const v1, 0x3e570a3c    # 0.20999998f
+    const v1, 0x3e570a3c
 
     mul-float v1, v1, p1
 

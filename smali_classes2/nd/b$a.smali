@@ -467,7 +467,7 @@
 
     if-eqz v1, :cond_e
 
-    const v1, 0x3ecccccd    # 0.4f
+    const v1, 0x3ecccccd
 
     goto :goto_7
 

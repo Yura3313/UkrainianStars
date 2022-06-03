@@ -303,7 +303,7 @@
     .line 14
     iput v2, p0, Landroidx/constraintlayout/motion/widget/b;->p:F
 
-    const v2, 0x3f99999a    # 1.2f
+    const v2, 0x3f99999a
 
     .line 15
     iput v2, p0, Landroidx/constraintlayout/motion/widget/b;->q:F

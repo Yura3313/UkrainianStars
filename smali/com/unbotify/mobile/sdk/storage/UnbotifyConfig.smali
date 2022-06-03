@@ -657,19 +657,19 @@
 
     move-result-object p0
 
-    const v5, 0x3cf5c28f    # 0.03f
+    const v5, 0x3cf5c28f
 
     invoke-virtual {p0, v8, v5}, Lcom/unbotify/mobile/sdk/storage/UnbotifyConfig$Builder;->setEpsilon(Lcom/unbotify/mobile/sdk/model/EventType;F)Lcom/unbotify/mobile/sdk/storage/UnbotifyConfig$Builder;
 
     move-result-object p0
 
-    const v5, 0x3ba3d70a    # 0.005f
+    const v5, 0x3ba3d70a
 
     invoke-virtual {p0, v10, v5}, Lcom/unbotify/mobile/sdk/storage/UnbotifyConfig$Builder;->setEpsilon(Lcom/unbotify/mobile/sdk/model/EventType;F)Lcom/unbotify/mobile/sdk/storage/UnbotifyConfig$Builder;
 
     move-result-object p0
 
-    const v5, 0x3c23d70a    # 0.01f
+    const v5, 0x3c23d70a
 
     invoke-virtual {p0, v11, v5}, Lcom/unbotify/mobile/sdk/storage/UnbotifyConfig$Builder;->setEpsilon(Lcom/unbotify/mobile/sdk/model/EventType;F)Lcom/unbotify/mobile/sdk/storage/UnbotifyConfig$Builder;
 
@@ -683,7 +683,7 @@
 
     sget-object v5, Lcom/unbotify/mobile/sdk/model/EventType;->ON_PRESSURE:Lcom/unbotify/mobile/sdk/model/EventType;
 
-    const v6, 0x3dcccccd    # 0.1f
+    const v6, 0x3dcccccd
 
     invoke-virtual {p0, v5, v6}, Lcom/unbotify/mobile/sdk/storage/UnbotifyConfig$Builder;->setEpsilon(Lcom/unbotify/mobile/sdk/model/EventType;F)Lcom/unbotify/mobile/sdk/storage/UnbotifyConfig$Builder;
 
@@ -703,19 +703,19 @@
 
     move-result-object p0
 
-    const v6, 0x3bf5c28f    # 0.0075f
+    const v6, 0x3bf5c28f
 
     invoke-virtual {p0, v8, v6}, Lcom/unbotify/mobile/sdk/storage/UnbotifyConfig$Builder;->setBoostEpsilon(Lcom/unbotify/mobile/sdk/model/EventType;F)Lcom/unbotify/mobile/sdk/storage/UnbotifyConfig$Builder;
 
     move-result-object p0
 
-    const v6, 0x3aa3d70a    # 0.00125f
+    const v6, 0x3aa3d70a
 
     invoke-virtual {p0, v10, v6}, Lcom/unbotify/mobile/sdk/storage/UnbotifyConfig$Builder;->setBoostEpsilon(Lcom/unbotify/mobile/sdk/model/EventType;F)Lcom/unbotify/mobile/sdk/storage/UnbotifyConfig$Builder;
 
     move-result-object p0
 
-    const v6, 0x3b23d70a    # 0.0025f
+    const v6, 0x3b23d70a
 
     invoke-virtual {p0, v11, v6}, Lcom/unbotify/mobile/sdk/storage/UnbotifyConfig$Builder;->setBoostEpsilon(Lcom/unbotify/mobile/sdk/model/EventType;F)Lcom/unbotify/mobile/sdk/storage/UnbotifyConfig$Builder;
 
@@ -727,7 +727,7 @@
 
     move-result-object p0
 
-    const v6, 0x3ccccccd    # 0.025f
+    const v6, 0x3ccccccd
 
     invoke-virtual {p0, v5, v6}, Lcom/unbotify/mobile/sdk/storage/UnbotifyConfig$Builder;->setBoostEpsilon(Lcom/unbotify/mobile/sdk/model/EventType;F)Lcom/unbotify/mobile/sdk/storage/UnbotifyConfig$Builder;
 

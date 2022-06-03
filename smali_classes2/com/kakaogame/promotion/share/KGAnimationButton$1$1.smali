@@ -43,7 +43,7 @@
 
     iget-object p1, p1, Lcom/kakaogame/promotion/share/KGAnimationButton$1;->this$0:Lcom/kakaogame/promotion/share/KGAnimationButton;
 
-    const v0, 0x3f666666    # 0.9f
+    const v0, 0x3f666666
 
     invoke-virtual {p1, v0}, Landroid/widget/FrameLayout;->setScaleX(F)V
 

@@ -869,7 +869,7 @@
     :goto_0
     const-wide/16 v10, 0x0
 
-    const-wide v15, -0x38e38e38e38e38eL    # -2.772000429909333E291
+    const-wide v15, -0x38e38e38e38e38eL
 
     move-wide/from16 v17, v15
 

@@ -5535,12 +5535,12 @@
 
     if-lt v8, p1, :cond_d
 
-    const p1, 0x3ecccccd    # 0.4f
+    const p1, 0x3ecccccd
 
     goto :goto_1
 
     :cond_d
-    const p1, 0x3f19999a    # 0.6f
+    const p1, 0x3f19999a
 
     :goto_1
     add-float/2addr v5, p1

@@ -239,7 +239,7 @@
 
     if-nez v1, :cond_0
 
-    const p1, 0x38d1b717    # 1.0E-4f
+    const p1, 0x38d1b717
 
     .line 1
     :cond_0

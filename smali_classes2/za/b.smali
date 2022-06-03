@@ -34,7 +34,7 @@
 
     long-to-float v0, v0
 
-    const v1, 0x3e19999a    # 0.15f
+    const v1, 0x3e19999a
 
     mul-float v0, v0, v1
 

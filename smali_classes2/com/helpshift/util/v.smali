@@ -647,9 +647,9 @@
     move p4, p1
 
     :goto_1
-    const v4, 0x3ed70a3d    # 0.42f
+    const v4, 0x3ed70a3d
 
-    const v5, 0x3f4ccccd    # 0.8f
+    const v5, 0x3f4ccccd
 
     const/4 v6, 0x2
 

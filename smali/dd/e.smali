@@ -390,7 +390,7 @@
 
     new-array v2, v2, [F
 
-    const v15, 0x3f4ccccd    # 0.8f
+    const v15, 0x3f4ccccd
 
     aput v15, v2, v9
 
@@ -445,7 +445,7 @@
 
     new-array v9, v12, [F
 
-    const v12, 0x3f4ccccd    # 0.8f
+    const v12, 0x3f4ccccd
 
     aput v12, v9, v20
 
@@ -1135,7 +1135,7 @@
     .line 141
     invoke-static {v3, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v4, 0x3f4ccccd    # 0.8f
+    const v4, 0x3f4ccccd
 
     invoke-virtual {v3, v4}, Landroid/view/ViewGroup;->setScaleX(F)V
 
@@ -1160,7 +1160,7 @@
 
     invoke-static {v6, v7}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v9, 0x3e99999a    # 0.3f
+    const v9, 0x3e99999a
 
     invoke-virtual {v6, v9}, Ll0/e;->a(F)Ll0/e;
 

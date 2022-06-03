@@ -707,7 +707,7 @@
 
     move-result p5
 
-    const v2, 0x38d1b717    # 1.0E-4f
+    const v2, 0x38d1b717
 
     cmpl-float p5, p5, v2
 

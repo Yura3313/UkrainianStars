@@ -1783,7 +1783,7 @@
 
     long-to-float v9, v9
 
-    const v10, 0x3089705f    # 1.0E-9f
+    const v10, 0x3089705f
 
     mul-float v9, v9, v10
 
@@ -3842,7 +3842,7 @@
     .line 17
     iget v10, v4, Landroidx/constraintlayout/motion/widget/b;->i:F
 
-    const v11, 0x33d6bf95    # 1.0E-7f
+    const v11, 0x33d6bf95
 
     cmpl-float v12, v10, v8
 
@@ -4062,7 +4062,7 @@
     .line 44
     iget-object v11, v4, Landroidx/constraintlayout/motion/widget/b;->l:[F
 
-    const v12, 0x3c23d70a    # 0.01f
+    const v12, 0x3c23d70a
 
     aput v12, v11, v9
 
@@ -5262,7 +5262,7 @@
 
     instance-of v7, v6, Ln/g;
 
-    const v8, 0x3089705f    # 1.0E-9f
+    const v8, 0x3089705f
 
     const/4 v9, 0x0
 
@@ -5867,7 +5867,7 @@
     goto :goto_3
 
     :cond_e
-    const v8, 0x3f8ccccd    # 1.1f
+    const v8, 0x3f8ccccd
 
     :goto_3
     mul-float v7, v7, v8
@@ -6390,7 +6390,7 @@
     .line 102
     iget-object v10, v3, Landroidx/constraintlayout/motion/widget/b;->l:[F
 
-    const v11, 0x3c23d70a    # 0.01f
+    const v11, 0x3c23d70a
 
     const/4 v12, 0x0
 
@@ -7244,7 +7244,7 @@
 
     instance-of v11, v6, Lo/q;
 
-    const v12, 0x3089705f    # 1.0E-9f
+    const v12, 0x3089705f
 
     if-nez v11, :cond_3
 
@@ -7332,7 +7332,7 @@
     .line 19
     iput-wide v9, v0, Landroidx/constraintlayout/motion/widget/MotionLayout;->N:J
 
-    const v15, 0x3727c5ac    # 1.0E-5f
+    const v15, 0x3727c5ac
 
     if-eqz v6, :cond_d
 

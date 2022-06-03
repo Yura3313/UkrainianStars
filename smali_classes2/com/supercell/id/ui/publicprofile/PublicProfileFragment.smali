@@ -2525,13 +2525,13 @@
 
     invoke-static {v9, v10, v11}, Ls3/k;->c(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
-    const v10, 0x40395326    # 2.8957f
+    const v10, 0x40395326
 
     invoke-static {v10}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v10
 
-    const v11, 0x4017cb92    # 2.3718f
+    const v11, 0x4017cb92
 
     invoke-static {v11}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -2539,7 +2539,7 @@
 
     invoke-static {v9, v10, v11}, Ls3/k;->k(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
-    const v10, 0x40c3566d    # 6.1043f
+    const v10, 0x40c3566d
 
     invoke-static {v10}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -2629,7 +2629,7 @@
 
     invoke-direct {v9}, Landroid/graphics/Path;-><init>()V
 
-    const v10, 0x4101999a    # 8.1f
+    const v10, 0x4101999a
 
     .line 71
     invoke-static {v10}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -2644,7 +2644,7 @@
 
     invoke-static {v9, v10, v11}, Ls3/k;->c(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
-    const v10, 0x3fe66666    # 1.8f
+    const v10, 0x3fe66666
 
     invoke-static {v10}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -2660,7 +2660,7 @@
 
     invoke-static {v9, v10}, Ls3/k;->s(Landroid/graphics/Path;Ljava/lang/Number;)Landroid/graphics/Path;
 
-    const v10, -0x4019999a    # -1.8f
+    const v10, -0x4019999a
 
     invoke-static {v10}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -2671,14 +2671,14 @@
     .line 72
     invoke-virtual {v9}, Landroid/graphics/Path;->close()V
 
-    const v10, 0x41026666    # 8.15f
+    const v10, 0x41026666
 
     .line 73
     invoke-static {v10}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v10
 
-    const v11, 0x412ccccd    # 10.8f
+    const v11, 0x412ccccd
 
     invoke-static {v11}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -2692,7 +2692,7 @@
 
     move-result-object v11
 
-    const v12, -0x3f266666    # -6.8f
+    const v12, -0x3f266666
 
     invoke-static {v12}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -2700,7 +2700,7 @@
 
     invoke-static {v9, v11, v12}, Ls3/k;->k(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
-    const v11, 0x400ccccd    # 2.2f
+    const v11, 0x400ccccd
 
     invoke-static {v11}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -2712,7 +2712,7 @@
 
     move-result-object v10
 
-    const v11, 0x40d9999a    # 6.8f
+    const v11, 0x40d9999a
 
     invoke-static {v11}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -2836,7 +2836,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v4, 0x3ecccccd    # 0.4f
+    const v4, 0x3ecccccd
 
     if-eqz v2, :cond_27
 

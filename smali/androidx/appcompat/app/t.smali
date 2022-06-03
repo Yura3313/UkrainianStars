@@ -114,7 +114,7 @@
 
     div-double/2addr v9, v11
 
-    const v4, 0x3a6bedfa    # 9.0E-4f
+    const v4, 0x3a6bedfa
 
     sub-float/2addr v3, v4
 

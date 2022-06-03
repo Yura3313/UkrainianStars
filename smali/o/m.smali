@@ -83,7 +83,7 @@
     .line 8
     iput-object v0, p0, Lo/m;->k:Landroid/view/View;
 
-    const v0, 0x3dcccccd    # 0.1f
+    const v0, 0x3dcccccd
 
     .line 9
     iput v0, p0, Lo/m;->l:F

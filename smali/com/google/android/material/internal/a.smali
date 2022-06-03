@@ -801,7 +801,7 @@
 
     move-result v2
 
-    const v3, 0x3a83126f    # 0.001f
+    const v3, 0x3a83126f
 
     const/4 v4, 0x0
 

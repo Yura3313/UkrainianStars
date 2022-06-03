@@ -2248,13 +2248,13 @@
 
     div-float/2addr p2, v0
 
-    const v0, 0x3dcccccd    # 0.1f
+    const v0, 0x3dcccccd
 
     cmpl-float v1, p2, v0
 
     if-lez v1, :cond_2
 
-    const v1, 0x3f666666    # 0.9f
+    const v1, 0x3f666666
 
     cmpg-float v1, p2, v1
 

@@ -995,7 +995,7 @@
 
     :cond_4
     :goto_1
-    const p1, 0x3f4ccccd    # 0.8f
+    const p1, 0x3f4ccccd
 
     mul-float v0, v2, p1
 
@@ -1044,7 +1044,7 @@
 
     const/high16 p1, -0x41800000    # -0.25f
 
-    const v0, 0x3ecccccd    # 0.4f
+    const v0, 0x3ecccccd
 
     mul-float v2, v2, v0
 

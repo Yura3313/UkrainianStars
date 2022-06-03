@@ -683,7 +683,7 @@
 
     int-to-float v9, v9
 
-    const v11, 0x3f7ae148    # 0.98f
+    const v11, 0x3f7ae148
 
     mul-float v9, v9, v11
 

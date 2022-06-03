@@ -577,7 +577,7 @@
     :try_start_1
     iget v0, p0, Lokhttp3/internal/http2/Http2Connection;->nextStreamId:I
 
-    const v1, 0x3fffffff    # 1.9999999f
+    const v1, 0x3fffffff
 
     if-le v0, v1, :cond_0
 

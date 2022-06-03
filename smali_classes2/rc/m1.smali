@@ -81,7 +81,7 @@
     .line 6
     invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
 
-    const v1, 0x3f333333    # 0.7f
+    const v1, 0x3f333333
 
     .line 7
     invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->scaleX(F)Landroid/view/ViewPropertyAnimator;
@@ -406,7 +406,7 @@
     .line 14
     invoke-static {p1, p2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const p2, 0x3f4ccccd    # 0.8f
+    const p2, 0x3f4ccccd
 
     invoke-virtual {p1, p2}, Landroid/widget/FrameLayout;->setScaleX(F)V
 
@@ -430,7 +430,7 @@
     .line 18
     invoke-static {v0, v2}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v3, 0x3e99999a    # 0.3f
+    const v3, 0x3e99999a
 
     invoke-virtual {v0, v3}, Ll0/e;->a(F)Ll0/e;
 

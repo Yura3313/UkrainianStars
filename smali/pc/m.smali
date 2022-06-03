@@ -485,7 +485,7 @@
 
     move-result-object v7
 
-    const v8, 0x414147ae    # 12.08f
+    const v8, 0x414147ae
 
     invoke-static {v8}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -505,7 +505,7 @@
 
     move-result-object v6
 
-    const v7, 0x41ff5c29    # 31.92f
+    const v7, 0x41ff5c29
 
     invoke-static {v7}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -1267,11 +1267,11 @@
     .line 12
     sget v5, Lcom/android/billingclient/api/a0;->a:F
 
-    const v8, 0x4019999a    # 2.4f
+    const v8, 0x4019999a
 
     mul-float v8, v8, v5
 
-    const v9, 0x41accccd    # 21.6f
+    const v9, 0x41accccd
 
     mul-float v5, v5, v9
 
@@ -1318,14 +1318,14 @@
 
     invoke-direct {v4}, Landroid/graphics/Path;-><init>()V
 
-    const v5, 0x40ee7bb3    # 7.4526f
+    const v5, 0x40ee7bb3
 
     .line 20
     invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v5
 
-    const v8, 0x4140fd22    # 12.0618f
+    const v8, 0x4140fd22
 
     invoke-static {v8}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -1333,7 +1333,7 @@
 
     invoke-static {v4, v5, v8}, Ls3/k;->c(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
-    const v5, 0x4052bee0    # 3.2929f
+    const v5, 0x4052bee0
 
     invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -1345,13 +1345,13 @@
 
     invoke-static {v4, v8, v5}, Ls3/k;->k(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
-    const v5, 0x40cf7cee    # 6.484f
+    const v5, 0x40cf7cee
 
     invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v5
 
-    const v8, -0x3f33a36e    # -6.3863f
+    const v8, -0x3f33a36e
 
     invoke-static {v8}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -2636,7 +2636,7 @@
 
     invoke-direct {v3}, Landroid/graphics/Path;-><init>()V
 
-    const v4, 0x4101999a    # 8.1f
+    const v4, 0x4101999a
 
     .line 10
     invoke-static {v4}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -2651,7 +2651,7 @@
 
     invoke-static {v3, v4, v5}, Ls3/k;->c(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
-    const v4, 0x3fe66666    # 1.8f
+    const v4, 0x3fe66666
 
     invoke-static {v4}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -2667,7 +2667,7 @@
 
     invoke-static {v3, v4}, Ls3/k;->s(Landroid/graphics/Path;Ljava/lang/Number;)Landroid/graphics/Path;
 
-    const v4, -0x4019999a    # -1.8f
+    const v4, -0x4019999a
 
     invoke-static {v4}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -2678,14 +2678,14 @@
     .line 11
     invoke-virtual {v3}, Landroid/graphics/Path;->close()V
 
-    const v4, 0x41026666    # 8.15f
+    const v4, 0x41026666
 
     .line 12
     invoke-static {v4}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v4
 
-    const v5, 0x412ccccd    # 10.8f
+    const v5, 0x412ccccd
 
     invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -2699,7 +2699,7 @@
 
     move-result-object v5
 
-    const v7, -0x3f266666    # -6.8f
+    const v7, -0x3f266666
 
     invoke-static {v7}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -2707,7 +2707,7 @@
 
     invoke-static {v3, v5, v7}, Ls3/k;->k(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
-    const v5, 0x400ccccd    # 2.2f
+    const v5, 0x400ccccd
 
     invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -2719,7 +2719,7 @@
 
     move-result-object v4
 
-    const v5, 0x40d9999a    # 6.8f
+    const v5, 0x40d9999a
 
     invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -3051,7 +3051,7 @@
     .line 9
     sget v7, Lcom/android/billingclient/api/a0;->a:F
 
-    const v15, 0x4145538f    # 12.3329f
+    const v15, 0x4145538f
 
     mul-float v7, v7, v15
 
@@ -3062,7 +3062,7 @@
 
     invoke-static {v13, v6, v7}, Ls3/k;->c(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
-    const v6, 0x4246872b    # 49.632f
+    const v6, 0x4246872b
 
     .line 11
     sget v7, Lcom/android/billingclient/api/a0;->a:F
@@ -3089,7 +3089,7 @@
     .line 15
     sget v6, Lcom/android/billingclient/api/a0;->a:F
 
-    const v17, 0x423bb766    # 46.9291f
+    const v17, 0x423bb766
 
     mul-float v6, v6, v17
 
@@ -3150,7 +3150,7 @@
 
     move-result-object v7
 
-    const v6, 0x4026e2eb    # 2.6076f
+    const v6, 0x4026e2eb
 
     .line 25
     sget v8, Lcom/android/billingclient/api/a0;->a:F
@@ -3162,7 +3162,7 @@
 
     move-result-object v8
 
-    const v6, 0x41f9d66d    # 31.2297f
+    const v6, 0x41f9d66d
 
     .line 27
     sget v9, Lcom/android/billingclient/api/a0;->a:F
@@ -3246,7 +3246,7 @@
 
     move-result-object v9
 
-    const v6, 0x4026ee63    # 2.6083f
+    const v6, 0x4026ee63
 
     .line 41
     sget v10, Lcom/android/billingclient/api/a0;->a:F
@@ -3287,7 +3287,7 @@
     .line 47
     sget v6, Lcom/android/billingclient/api/a0;->a:F
 
-    const v20, 0x404487fd    # 3.0708f
+    const v20, 0x404487fd
 
     mul-float v6, v6, v20
 
@@ -3309,7 +3309,7 @@
     .line 51
     sget v6, Lcom/android/billingclient/api/a0;->a:F
 
-    const v18, 0x3ebc5d64    # 0.3679f
+    const v18, 0x3ebc5d64
 
     mul-float v6, v6, v18
 
@@ -3331,7 +3331,7 @@
     .line 55
     sget v6, Lcom/android/billingclient/api/a0;->a:F
 
-    const v16, 0x3e828f5c    # 0.255f
+    const v16, 0x3e828f5c
 
     mul-float v6, v6, v16
 
@@ -3357,7 +3357,7 @@
     .line 59
     sget v6, Lcom/android/billingclient/api/a0;->a:F
 
-    const v7, -0x4251eb85    # -0.085f
+    const v7, -0x4251eb85
 
     mul-float v6, v6, v7
 
@@ -3413,7 +3413,7 @@
     .line 69
     sget v6, Lcom/android/billingclient/api/a0;->a:F
 
-    const v16, 0x415aac71    # 13.6671f
+    const v16, 0x415aac71
 
     mul-float v6, v6, v16
 
@@ -3805,7 +3805,7 @@
     .line 131
     sget v6, Lcom/android/billingclient/api/a0;->a:F
 
-    const v7, 0x4248570a    # 50.085f
+    const v7, 0x4248570a
 
     mul-float v6, v6, v7
 
@@ -3919,7 +3919,7 @@
 
     move-result-object v7
 
-    const v6, 0x41987d22    # 19.0611f
+    const v6, 0x41987d22
 
     .line 150
     sget v8, Lcom/android/billingclient/api/a0;->a:F
@@ -4059,7 +4059,7 @@
 
     move-result-object v7
 
-    const v6, 0x40de0b78    # 6.9389f
+    const v6, 0x40de0b78
 
     .line 174
     sget v8, Lcom/android/billingclient/api/a0;->a:F
@@ -4193,7 +4193,7 @@
     .line 197
     sget v6, Lcom/android/billingclient/api/a0;->a:F
 
-    const v14, 0x40189375    # 2.384f
+    const v14, 0x40189375
 
     mul-float v6, v6, v14
 
@@ -4205,7 +4205,7 @@
     .line 199
     sget v7, Lcom/android/billingclient/api/a0;->a:F
 
-    const v15, 0x414ffe5d    # 12.9996f
+    const v15, 0x414ffe5d
 
     mul-float v7, v7, v15
 
@@ -4216,7 +4216,7 @@
 
     invoke-static {v13, v6, v7}, Ls3/k;->c(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
-    const v6, 0x405a00d2    # 3.4063f
+    const v6, 0x405a00d2
 
     .line 201
     sget v7, Lcom/android/billingclient/api/a0;->a:F
@@ -4240,7 +4240,7 @@
 
     move-result-object v8
 
-    const v6, 0x40b34af5    # 5.6029f
+    const v6, 0x40b34af5
 
     .line 205
     sget v9, Lcom/android/billingclient/api/a0;->a:F
@@ -4316,7 +4316,7 @@
 
     move-result-object v8
 
-    const v6, 0x414ea993    # 12.9164f
+    const v6, 0x414ea993
 
     .line 217
     sget v9, Lcom/android/billingclient/api/a0;->a:F
@@ -4328,7 +4328,7 @@
 
     move-result-object v9
 
-    const v6, 0x40a25e35    # 5.074f
+    const v6, 0x40a25e35
 
     .line 219
     sget v10, Lcom/android/billingclient/api/a0;->a:F
@@ -4340,7 +4340,7 @@
 
     move-result-object v10
 
-    const v6, 0x417abda5    # 15.6713f
+    const v6, 0x417abda5
 
     .line 221
     sget v11, Lcom/android/billingclient/api/a0;->a:F
@@ -4352,7 +4352,7 @@
 
     move-result-object v11
 
-    const v6, 0x407d2f1b    # 3.956f
+    const v6, 0x407d2f1b
 
     .line 223
     sget v12, Lcom/android/billingclient/api/a0;->a:F
@@ -4368,7 +4368,7 @@
 
     invoke-static/range {v6 .. v12}, Ls3/k;->a(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
-    const v6, 0x412c5c29    # 10.7725f
+    const v6, 0x412c5c29
 
     .line 225
     sget v7, Lcom/android/billingclient/api/a0;->a:F
@@ -4544,7 +4544,7 @@
 
     move-result-object v8
 
-    const v6, 0x405a703b    # 3.4131f
+    const v6, 0x405a703b
 
     .line 253
     sget v9, Lcom/android/billingclient/api/a0;->a:F
@@ -4633,7 +4633,7 @@
 
     move-result-object v7
 
-    const v6, 0x419bea7f    # 19.4895f
+    const v6, 0x419bea7f
 
     .line 268
     sget v8, Lcom/android/billingclient/api/a0;->a:F
@@ -4709,7 +4709,7 @@
 
     move-result-object v7
 
-    const v6, 0x4187f03b    # 16.9923f
+    const v6, 0x4187f03b
 
     .line 280
     sget v8, Lcom/android/billingclient/api/a0;->a:F
@@ -4757,7 +4757,7 @@
 
     move-result-object v11
 
-    const v6, 0x407d3405    # 3.9563f
+    const v6, 0x407d3405
 
     .line 288
     sget v12, Lcom/android/billingclient/api/a0;->a:F
@@ -4809,7 +4809,7 @@
 
     move-result-object v9
 
-    const v6, 0x40cfc0ec    # 6.4923f
+    const v6, 0x40cfc0ec
 
     .line 296
     sget v10, Lcom/android/billingclient/api/a0;->a:F
@@ -4833,7 +4833,7 @@
 
     move-result-object v11
 
-    const v6, 0x40f96d5d    # 7.7946f
+    const v6, 0x40f96d5d
 
     .line 300
     sget v12, Lcom/android/billingclient/api/a0;->a:F
@@ -4909,7 +4909,7 @@
 
     move-result-object v11
 
-    const v6, 0x4150013b    # 13.0003f
+    const v6, 0x4150013b
 
     .line 312
     sget v12, Lcom/android/billingclient/api/a0;->a:F
@@ -5027,7 +5027,7 @@
     .line 331
     sget v8, Lcom/android/billingclient/api/a0;->a:F
 
-    const v9, 0x414fff97    # 12.9999f
+    const v9, 0x414fff97
 
     mul-float v8, v8, v9
 
@@ -5060,7 +5060,7 @@
 
     move-result-object v16
 
-    const v6, 0x41b1f1aa    # 22.243f
+    const v6, 0x41b1f1aa
 
     .line 337
     sget v10, Lcom/android/billingclient/api/a0;->a:F
@@ -5075,7 +5075,7 @@
     .line 339
     sget v6, Lcom/android/billingclient/api/a0;->a:F
 
-    const v10, 0x418fffcc    # 17.9999f
+    const v10, 0x418fffcc
 
     mul-float v6, v6, v10
 
@@ -5108,7 +5108,7 @@
 
     invoke-static/range {v14 .. v20}, Ls3/k;->a(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
-    const v6, 0x41de0e56    # 27.757f
+    const v6, 0x41de0e56
 
     .line 345
     sget v11, Lcom/android/billingclient/api/a0;->a:F
@@ -5196,7 +5196,7 @@
 
     move-result-object v16
 
-    const v6, 0x41de0e56    # 27.757f
+    const v6, 0x41de0e56
 
     .line 361
     sget v8, Lcom/android/billingclient/api/a0;->a:F
@@ -5211,7 +5211,7 @@
     .line 363
     sget v6, Lcom/android/billingclient/api/a0;->a:F
 
-    const v8, 0x40ffff97    # 7.99995f
+    const v8, 0x40ffff97
 
     mul-float v6, v6, v8
 
@@ -5242,7 +5242,7 @@
 
     invoke-static/range {v14 .. v20}, Ls3/k;->a(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
-    const v6, 0x41b1f1aa    # 22.243f
+    const v6, 0x41b1f1aa
 
     .line 369
     sget v10, Lcom/android/billingclient/api/a0;->a:F
@@ -5372,7 +5372,7 @@
     .line 392
     sget v6, Lcom/android/billingclient/api/a0;->a:F
 
-    const v8, 0x417fff97    # 15.9999f
+    const v8, 0x417fff97
 
     mul-float v6, v6, v8
 
@@ -5508,7 +5508,7 @@
     .line 416
     sget v6, Lcom/android/billingclient/api/a0;->a:F
 
-    const v8, 0x411fffcc    # 9.99995f
+    const v8, 0x411fffcc
 
     mul-float v6, v6, v8
 
@@ -5835,14 +5835,14 @@
 
     invoke-direct {v4}, Landroid/graphics/Path;-><init>()V
 
-    const v6, 0x414b3333    # 12.7f
+    const v6, 0x414b3333
 
     .line 9
     invoke-static {v6}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v6
 
-    const v9, 0x415b3333    # 13.7f
+    const v9, 0x415b3333
 
     invoke-static {v9}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 

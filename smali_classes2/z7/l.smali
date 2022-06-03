@@ -65,7 +65,7 @@
     .line 8
     iget-object v5, v0, Lg8/c$a;->a:Lg8/b$a;
 
-    const v6, 0x3dcccccd    # 0.1f
+    const v6, 0x3dcccccd
 
     .line 9
     iput v6, v5, Lg8/b$a;->c:F

@@ -287,8 +287,8 @@
     :array_0
     .array-data 4
         0x0
-        0x3e6353f8    # 0.222f
-        0x3f0e978d    # 0.557f
+        0x3e6353f8
+        0x3f0e978d
         0x3f800000    # 1.0f
     .end array-data
 .end method
@@ -741,7 +741,7 @@
     .line 5
     iget v3, p0, Lpc/c;->J:F
 
-    const v4, 0x3f666666    # 0.9f
+    const v4, 0x3f666666
 
     mul-float v5, v3, v4
 
@@ -749,7 +749,7 @@
 
     if-gtz v5, :cond_2
 
-    const v5, 0x3f59999a    # 0.85f
+    const v5, 0x3f59999a
 
     mul-float v5, v5, v3
 
@@ -762,7 +762,7 @@
 
     div-float/2addr v3, v0
 
-    const v0, 0x3c23d70a    # 0.01f
+    const v0, 0x3c23d70a
 
     const/high16 v4, 0x40000000    # 2.0f
 
@@ -773,7 +773,7 @@
 
     if-gez v0, :cond_3
 
-    const v3, 0x3c23d70a    # 0.01f
+    const v3, 0x3c23d70a
 
     goto :goto_1
 
@@ -835,7 +835,7 @@
 
     invoke-virtual {p0, v1, v3, v0}, Lpc/c;->g(ZFLjava/lang/String;)V
 
-    const v0, 0x3e99999a    # 0.3f
+    const v0, 0x3e99999a
 
     .line 11
     new-instance v3, Lpc/h;
@@ -1552,12 +1552,12 @@
 
     if-eqz p2, :cond_6
 
-    const v1, 0x3f19999a    # 0.6f
+    const v1, 0x3f19999a
 
     goto :goto_6
 
     :cond_6
-    const v1, 0x3ecccccd    # 0.4f
+    const v1, 0x3ecccccd
 
     :goto_6
     const/high16 v2, 0x3f800000    # 1.0f

@@ -79,9 +79,9 @@
 
     if-eqz v6, :cond_1
 
-    const v7, 0x3f4ccccd    # 0.8f
+    const v7, 0x3f4ccccd
 
-    const v14, 0x3f4ccccd    # 0.8f
+    const v14, 0x3f4ccccd
 
     goto :goto_0
 

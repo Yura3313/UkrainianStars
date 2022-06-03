@@ -28,7 +28,7 @@
 
     const/16 v0, 0xa
 
-    const v1, 0x3f8ccccd    # 1.1f
+    const v1, 0x3f8ccccd
 
     const/4 v2, 0x1
 

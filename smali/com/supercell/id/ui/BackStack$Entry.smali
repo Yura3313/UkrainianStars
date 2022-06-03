@@ -36,7 +36,7 @@
 
     int-to-float p0, p0
 
-    const p2, 0x3ee66666    # 0.45f
+    const p2, 0x3ee66666
 
     mul-float p2, p2, p0
 

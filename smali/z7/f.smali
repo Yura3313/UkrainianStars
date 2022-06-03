@@ -98,7 +98,7 @@
     .line 7
     invoke-virtual {v0, v1}, Lg8/c$a;->c(I)Lg8/c$a;
 
-    const v1, 0x3dcccccd    # 0.1f
+    const v1, 0x3dcccccd
 
     .line 8
     invoke-virtual {v0, v1}, Lg8/c$a;->f(F)Lg8/c$a;

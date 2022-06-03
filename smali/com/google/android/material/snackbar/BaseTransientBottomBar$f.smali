@@ -34,7 +34,7 @@
 
     const/4 v0, 0x0
 
-    const v1, 0x3dcccccd    # 0.1f
+    const v1, 0x3dcccccd
 
     const/high16 v2, 0x3f800000    # 1.0f
 
@@ -45,7 +45,7 @@
 
     iput v1, p1, Lcom/google/android/material/behavior/SwipeDismissBehavior;->f:F
 
-    const v1, 0x3f19999a    # 0.6f
+    const v1, 0x3f19999a
 
     .line 3
     invoke-static {v0, v1, v2}, Lcom/google/android/material/behavior/SwipeDismissBehavior;->u(FFF)F

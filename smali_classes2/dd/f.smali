@@ -63,6 +63,6 @@
     :array_0
     .array-data 4
         0x0
-        0x3ecccccd    # 0.4f
+        0x3ecccccd
     .end array-data
 .end method

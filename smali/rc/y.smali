@@ -328,7 +328,7 @@
     .line 9
     invoke-static {v3, v4}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v4, 0x3f4ccccd    # 0.8f
+    const v4, 0x3f4ccccd
 
     invoke-virtual {v3, v4}, Landroid/widget/LinearLayout;->setScaleX(F)V
 
@@ -352,7 +352,7 @@
     .line 13
     invoke-static {v5, v7}, Ls3/b;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v8, 0x3e99999a    # 0.3f
+    const v8, 0x3e99999a
 
     invoke-virtual {v5, v8}, Ll0/e;->a(F)Ll0/e;
 

@@ -1395,7 +1395,7 @@
 
     const p2, 0x1010030
 
-    const v0, 0x42233333    # 40.8f
+    const v0, 0x42233333
 
     .line 10
     invoke-static {v0}, Ljava/lang/Math;->round(F)I

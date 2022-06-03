@@ -236,7 +236,7 @@
 
     int-to-float v3, v5
 
-    const v5, 0x3ee66666    # 0.45f
+    const v5, 0x3ee66666
 
     mul-float v5, v5, v3
 

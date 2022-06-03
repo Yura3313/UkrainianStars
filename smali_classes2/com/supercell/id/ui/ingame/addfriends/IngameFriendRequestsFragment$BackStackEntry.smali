@@ -283,7 +283,7 @@
 
     int-to-float p1, p2
 
-    const p2, 0x3dcccccd    # 0.1f
+    const p2, 0x3dcccccd
 
     mul-float p1, p1, p2
 

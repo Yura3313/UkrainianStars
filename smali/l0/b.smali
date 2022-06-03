@@ -257,7 +257,7 @@
 
     :cond_4
     :goto_1
-    const p1, 0x3dcccccd    # 0.1f
+    const p1, 0x3dcccccd
 
     .line 17
     iput p1, p0, Ll0/b;->h:F

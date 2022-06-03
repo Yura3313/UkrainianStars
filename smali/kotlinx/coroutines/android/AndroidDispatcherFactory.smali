@@ -81,7 +81,7 @@
 .method public getLoadPriority()I
     .locals 1
 
-    const v0, 0x3fffffff    # 1.9999999f
+    const v0, 0x3fffffff
 
     return v0
 .end method

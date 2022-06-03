@@ -531,7 +531,7 @@
 
     div-float v12, v3, v5
 
-    const v13, 0x3dcccccd    # 0.1f
+    const v13, 0x3dcccccd
 
     add-float v14, v2, v8
 
@@ -677,7 +677,7 @@
     return-void
 
     :cond_4
-    const v5, 0x3e99999a    # 0.3f
+    const v5, 0x3e99999a
 
     mul-float v5, v5, v1
 

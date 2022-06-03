@@ -323,7 +323,7 @@
 
     if-eqz v10, :cond_2
 
-    const v8, 0x3727c5ac    # 1.0E-5f
+    const v8, 0x3727c5ac
 
     .line 17
     iget v10, v7, Landroidx/constraintlayout/motion/widget/MotionLayout;->O:F
@@ -1163,11 +1163,11 @@
 
     :array_0
     .array-data 4
-        0x3dcccccd    # 0.1f
+        0x3dcccccd
         0x3e800000    # 0.25f
         0x3f000000    # 0.5f
         0x3f400000    # 0.75f
-        0x3f666666    # 0.9f
+        0x3f666666
     .end array-data
 .end method
 
